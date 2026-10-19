@@ -145,6 +145,19 @@ Ren 的原话以引文标出，其余是 AI 的阐述。
 - **不加前提的规律。** 以下对每个展开成立，不加任何关于它的前提（[Becoming.Change](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)，[coming-and-ceasing-keep-pace](../results/records/coming-and-ceasing-keep-pace.md)）。一个规定跨一步开始成立或不再成立；形成的生起与止息、依存的形成与消解、条件开始与不再作为条件而在，是这同一种变化分别读于活动、依存与水平。任一段步上，一个量在终点加上其间的下降，等于在起点加上其间的上升。量不低于零，所以有限家族中下降复现就需要上升复现：每个展开中，有限多个条件持续下降就持续上升；量有界时，上升复现也需要下降复现。于是在有限家族中开始成立与不再成立同步：任一段步上，终点成立的成员连同其间不再成立的，恰是起点成立的成员连同其间开始成立的，两者之差不超过成员数，一方复现恰当另一方复现。形成有限多且活动可判定时，生起复现恰当止息复现（某个形成在任意晚的步生起，恰当某个形成在任意晚的步止息）；条件开始作为条件而在复现，恰当不再作为条件而在复现，这不需要任何前提。有限性起作用：无尽的新可以只生起而不止息（`Accretion`），无尽的初始可以只止息而不生起（`Attrition`）。下面各条都写明它们加的前提，前提划出整个空间的一部分。表示的方法承诺另行公开：离散的步、自然数的量、计数时的可判定性。
 - **依存的变化。** 依存本身属于展开：一个形成依存于哪些条件、所需多少，可以跨步形成、维持、断裂与消解，变化总发生在某一步上（[Becoming.Dependence](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)）。在形成只在有支持处活跃的前提（`Dependent`，排除缓冲与滞后）下，定理把损失之后的三种结局联系起来，它们既不穷尽也不互斥：以不弱于先前的依存继续，意味着条件已恢复；无回程的损失之后仍活跃，意味着依存已转化；依存不变则终止。同一过程、同一配置下，在同一步断裂同一依存（按步首约定读）之后，三种结局都可实现：断裂的读法不决定后继配置，构成断裂的那一步选定结局（[becoming-dependence-dynamics](../results/records/becoming-dependence-dynamics.md)）。`Dependent` 恰是零储备：储备在形成不被支持时不上升、在其间活跃时下降，有储备时形成越过支持至多再活跃其储备那么多次，损失与共灭之后的终结推迟而不逃脱，储备衰减时共灭沿任意长的依存之链逐环有界（食物链这样的有限链在内），不衰减时以排中律为假设，链上每个关系项仍终结而没有界；储备可以就是所持条件的水平，同一展开也可以读作依存转化到所持的条件上（[Becoming.Reserve](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean)，[reserve-defers-ending](../results/records/reserve-defers-ending.md)）。这是表示内的定义与约束，不是第一句话的证明。
 - **跨步的同一。** 一步的哪个形成延续前一步的哪个，由表示的命名规定，每一步的关系并不确定它（[Becoming.Identity](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean)，[identity-across-steps](../results/records/identity-across-steps.md)）。改名保持由关系定义的读法（检查了五种）：标签不承载任何东西，名字跨步的模式承载同一。每一步的关系、每个条件的类、取用者的数目与“更多”不依赖跨步的同一；形成在整段上的类、依存的任期与侵蚀、转化与“一个终结而另一个形成”之分、生起与不息依赖它。只改动谁延续谁，这些就全部改变（`Turnover`）；单由命名造成的生起可以满足下文“继续生成”的全部前提（`TideFlip`）。以旧命名为参照保持跨步持续活动与持续依存的名字，改认不制造生起，也不去掉侵蚀；新命名仍可把终结者与在该步或其后开始者接起来，即接续：谱系的成员分开命名时不息地生起，合为一个时没有生起（`Lineage`）；后继者接续前任者时，前任者失去之后的汲取每一步都侵蚀（`Succession`）。双向保持连续时，生起与侵蚀恰被保持，单步的接续被排除（`no_join`），但跨过休眠的接续仍改变形成的类（`Dormancy`）。谱系与成员是同一展开的两个层次；部分与整体的一种关系由整体陈述：整体恰在某个部分活跃时活跃，这是活动的重合，不是构成，谱系是其成员的整体（[Becoming.Wholes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean)，[whole-persists-through-generation](../results/records/whole-persists-through-generation.md)）。从某步起每步活跃的整体，若部分短暂（从不在相隔 d 步的两步都活跃），或部分终结且同时活跃的部分有限（活动都终结且活跃的部分可有限列出），部分就不断生起：整体经由部分的生成而持续；部分短暂时这可以是同样的部分反复生起（`Layered`），部分终结时是不断新的部分（`needs_new`），都不是数目增长；有永不终结的部分或无穷的同时储备时则不然（`Immortal`、`Countless`），部分不息地生起也不使整体持续（`Gaps`）。接续经延续的已形成关系读，“生生不息”读在整体的层次：不息是经更新而复现的生起，生生不息是生生继续而仍有更多能形成，只回返、复制已有形式的整体有不息而无生生不息（AI 的读法，经修订，[D5](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md)）。在普查、`present` 不重复与 Taking 之下，由“更多”迫使的不息在每种一对一的命名下成立（`More.unceasing_reidentified`），在每种没有形成延续为两个的延续关系下更多也迫使生起（`More.unceasingFrom`，合并允许）。没有分裂是充分条件，不是必要条件：一次分裂不必使生起失效（`Fork`），把新形成读作萌出时结论不成立（`Budding`）；没有普查时，没有分裂也不够（`Dormant`）。跨一步，条件是精确的：不论步前与步后是哪些形成，更多迫使生起恰当没有形成延续为两个；在每个没有分裂的延续下迫使生起，恰当步后的多于步前的（`forces_iff_noSplit`、`forced_iff_more`）。普查定律也不依赖名字规定的同一：延续下，一个形成止息，若步后没有活跃的形成延续它；在普查之下，没有分裂时步后活跃的连同止息的至多是步前活跃的连同生起的，没有合并时至少如此，两者都没有时恰好相等；所以没有分裂时止息复现需要生起复现，没有合并且计数有界时反之。同一个每步两个形成的展开，读作每个形成只延续自身时每步一个生起、一个止息，读作萌出时止息复现而从不生起，读作合并时生起复现而从不止息（`Census.balanceFrom`、`Tandem`，[census-balance-under-continuation](../results/records/census-balance-under-continuation.md)）。
+- **九句的归与不归。** 早期仓库以九句开篇（[README，“古文前言”](../../../sources/07-shengsheng-buxi/ssbx-repo/README.md)）：
+
+  > 天未生而元立, 元一而无对。
+  > 一动而有自, 自之与他, 由是生焉。
+  > 动而归者谓之极, 极者收, 收而熄。
+  > 动而不归者谓之中, 中者续, 续而生。
+  > 中之相续, 是为轨。
+  > 异轨同根, 是为仁。
+  > 轨续而能仁, 是为生生。
+  > 生生不止, 是为不息。
+  > 道, 止此而已。
+
+  第三、四句把动分为两种：动而归者为极，收而熄；动而不归者为中，续而生。九句分两种之处，脊柱分三种（AI 的读法，D49）。其一，无损的回归：在有限多个配置之内，不合并任何东西的律使每个配置返回（`Law.Lossless.returns`）。这是无所收的归：生起可以在其中复现，所以这样的整体有不息而无生生，不足以是生生不息（D5）。其二，被吸入：被吸入一个吸收区域的配置永不返回（`Law.Drawn.not_returns`）；在有限多个配置之内，一个配置恰在某步失去时被吸入（`Law.drawn_iff_lost`）。这是第三句的“收”，而它是不归。其三，永不回转：没有列表容纳一个永不重访任何配置的历程（`unheld_of_new`），每步都多于此刻需要开放的世界（`more_needs_open`）。只有在这里，不归才是能“生”的继续，而无尽的更多需要来自每个有界部分之外的流入（`Flow.new_beyond_every`，D5）。所以二分把“收”放在归的一边，而在脊柱上，被吸入不是返回，无损的回归也无所收；不归则兼含被吸入与走向新者，只有后者是“续”。“极”读作律不改变的配置，每步都返回：它是静，即同时成立者，不是熄，熄是交换终止处，即停（D45）。
 - **一个关系项的两种角色。** 形成与条件是同一个关系项的两种角色，不是两类存在（[Becoming.Roles](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)，[life-as-condition-of-life](../results/records/life-as-condition-of-life.md)）。两类的表示嵌入没有形成作为条件的一类读法：这样读，列出的读法与估值的连通都不变，其中曾活跃的形成既不体现（恰在活跃时作为条件而在）也不承担自身。一类读法另需一个对应：哪个条件就是哪个形成。它由共同的索引给出，是表示的前提，两类读法检查不到它（`relabel`）；体现与承担自身是在这一对应下的读法。在活动需要支持（`Dependent`）之下，依存于体现关系项的形成只在它活跃时活跃，活动沿依存链传递，一个关系项的终结终结每个依存链到达它的形成（`coextinct`）。体现的关系项的生起就是它作为条件的水平的上升，所以生成本身就是补充（[generation-is-replenishment](../results/records/generation-is-replenishment.md)）。
 
 **吸引。** 一般因果系统的说明列出路径依赖与吸引子；在脊柱上，两者是同一条规律，对每个确定的律成立，不加前提（[Becoming.Attraction](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean)）。律从不离开的区域是吸收区域（`Law.Absorbing`）；其外的配置若轨道进入它，就被吸入它（`Law.DrawnInto`），被吸入者构成它的吸引域。被吸入者不再回来（`Law.DrawnInto.never_back`）；而且配置被某个吸收区域吸入，恰当它不返回（`Law.drawn_iff_not_returns`）：它的前方就是一个它在第一步进入的吸收区域。未来收窄：n 步后可得者构成吸收区域，到第 n 步丧失的每个可能都被吸入它（`Law.reachable_absorbing`、`Law.lost_drawn`）。被合并的两个配置不都返回，这不需要有限性（`Law.Merges.not_both_return`），所以不都逃过被吸入；哪一个被吸入需要判定，只以双重否定陈述（`Law.merge_draws`）。有限多配置之内，吸引即合并：有配置被吸入，律就合并并丧失一个可能，相等可判定时两者等价；返回者的区域吸入其余一切（`Law.Drawn.not_lossless`、`Law.lossless_iff_none_drawn`、`Law.drawnInto_returning`）。开放的世界把两者分开：往上数吸入而不合并，往下数吸入而保留每个可能（`Law.succ_drawn_lossless`、`Law.pred_drawn_keeps`）。对每个过程，进入不变区域之后，其外的配置不再可达（`Invariant.locks_out`）；区域不变，恰当每个动作都保持它，离开需要一个不保持它的动作（`invariant_iff_every_move`、`Run.leaving_needs`、`Exit`）。读法（AI 的）：锁定就是不返回；未来收窄，吸引子是展开收窄自己的未来；Capture 中规则所持的结果是规则中的吸收区域。主律近乎定义，所复用的是有限集上轨道最终周期的数学；实际展开进入哪些区域、吸引域多深多宽，都不推出。见[研究 §89](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#89-吸引被吸入者不再回来每个律恰吸入不返回者p67)与 [attraction-is-not-returning](../results/records/attraction-is-not-returning.md)。
@@ -1017,7 +1030,7 @@ Ren 2026-10-11 问：“can we reduce is "for anything, its continuation into th
 
 **采用的读法**
 
-下面每项是一个读法：对已检查内容的解释，由 AI 连同其论证采用。论证与会改变每项读法的东西在[决定记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md)中，编号 D1–D45。诸读法作为一个说明成立，每项由它在其中的位置决定，两项不合处由这个说明在其间决定（D45，下面最后一项）。它们不改动任何定理，也不给任何规律加前提，更好的论证修订它们。
+下面每项是一个读法：对已检查内容的解释，由 AI 连同其论证采用。论证与会改变每项读法的东西在[决定记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md)中，编号 D1–D50。诸读法作为一个说明成立，每项由它在其中的位置决定，两项不合处由这个说明在其间决定（D45，下面最后一项）。它们不改动任何定理，也不给任何规律加前提，更好的论证修订它们。
 
 - 生生读作生成者生成新的生成：所形成者保存、恢复、传递或创造进一步形成的条件与生成者，所以一个进程连同状态一起改变能形成者与形成的能力；生成的空间是当下能形成者，生生的方向以其扩大比较；2026-10-07 的三种范围是所计者的范围；生命意义与 C 共用这一读法，继续之间以可能性比较（D1、D22，2026-10-18 修订）。
 - “生成的”“退化的”指部分对能形成者的扩大与缩小，保持不变是中性的，互相超出是混合的；在形成的层次上是更新的形成与消耗的形成；活动的读法不采用，生起／止息仍是它的名称（D2）。
@@ -1033,6 +1046,7 @@ Ren 2026-10-11 问：“can we reduce is "for anything, its continuation into th
 - 名称：AI 拟定的工作名称在陈述有其确切意义处采用，生起／止息作为中文采用（D36）。
 - 不被给予任何东西的外推所确定者、不确定之律下够的边界与过程的运行何时安定，以确切范围读：在由列表容纳的世界中，前缀确定经映射的未来，读法是函数，不是被持有的模型；够是过程与目标的关系，因运行不断变化而不能停息不是无明；不永远变化不是安定（D40-D42）。
 - 按每条定理所示保留、收窄或减弱（D43）：步的指标是关系的一种读法，不是其根基（R1）；计数是一种关系（R2）；只有回路使差别失控，而每个每步耦合的回路只在强度为自然数时如此，受阻尼的回路不必（P118，收窄）；截断失去更长路线所携带的，复现耦合的回路不必失控（P120、P123）；观察在下游之内（P125，减弱；观察不是依赖之外的第二种关系是猜想）；尾的强度，对这样的整体与相关的整体（P126）；靠回转而延续，一般情形是依赖选择（P127）；运行是这一包的形式之根，不是世界之下的根基，因为其步指标是关系项自身进程的读法（P130，按 R1 修订）；反事实是同一律生成的进程（P130）；接合的读法（U、U2）；有限分支处的提升（I4b-4）；整体优先，读作判断有多完整的次序。`Novelty` 的量化与 `BoundaryInvariant` 的相似只是类比。
+- 闭与开（D49）：早期闭的类型与开的四相安放在已落地的律上（§10“闭与开：对照”），按焦点的开度与一切判词不取：成闭是锁定；元闭是规则持住结果；伪开三型是从部分、一段或状态读出的开；护闭是关节律，尚未证明。未是本章的开放，可是进程继续，应是响应，转是回归、转化与重合，“开非更多”是保住每种可能而不返回。转读作回归时蕴含可，稳与元闭是同一结构、两种判词。九句的归与不归在脊柱上是三种情形：无损的回归（有不息而无生生）、被吸入（收，不再回来）与永不回转，后者只有开放的世界允许（§1）。
 - 一个说明（D45）：诸读法构成一个说明，分五环，各以其定理为据：一个展开、生成、延续及其范围、知、对齐。在知这一环中，耦合是原初的：形成依存于一个条件处经阈耦合入它，观察它处经水平耦合入它；律的敏感（D37）与耦合强度（D39）度量耦合。识是一个形成自身的进一步历程经其自身耦合所成之归并而行，理在形式上是世界经它同去的归并。知足是在律所不变的状态被满足的目标，知止是这一边界之内的目标，使追逐因够而止，不因耗尽而止。无明是锁定在不能停息之目标上的寻求；每个形成作选择所在的位置既不是缺陷也不是无明，是这一寻求在其所耦合入者之外造成的损失不经其自身的反馈到达它的缘由。明是接到选择上、及于支持所不标记者的耦合（D26，修订）。§7 的读法此前开放，是知这一环用于选择，以 §7 所说的范围采用。`obs` 与依存都是耦合，经水平与经阈；`obs` 可由依存推出，仍是猜想（见下）。
 
 **一个猜想，不是读法**（[observation-is-a-route](../results/records/observation-is-a-route.md)、[where-a-level-couples](../results/records/where-a-level-couples.md)）：观察不是依存之外的第二种关系，即 `obs` 可由依存推出。`obs` 是给出的，`apart_only_downstream` 只表明观察在下游之内（D43）。所采用的是较弱的意义：`obs` 标出水平经水平耦合入形成之处，如依存标出经阈耦合之处，所以两者都是耦合；律的敏感是它所经的最小的耦合（D37）；耦合界定回应而不确定它（`ExchangeLaw.response_not_fixed_by_coupling`；D45）。
@@ -1506,6 +1520,39 @@ Ren 2026-10-11 问：“can we reduce is "for anything, its continuation into th
 | `Learnable.withWorld`, `…At`; `Parting.worldLearner` | `Learnable.fromLaw`, `…At`; `Parting.fromProcess` |
 | `Viability.Answering.registers`; `Viability.Matching.registered`, `…blind` | `Viability.Answering.keeps`; `Viability.Matching.keepsBit`, `…keepsNothing` |
 | `Negation.register`; `Revising.registration`; `ReferencePlan.registered` | `Negation.course`; `Revising.linkProcess`; `ReferencePlan.alikeOnInstalled` |
+
+### 闭与开：对照
+
+语料词汇表记录三套闭的词汇（成闭／护闭／元闭／伪开，成生之限／绝生之限，英文的“close / keep open”）曾流通而无对照（英文版的“Crosswalk to the corpus glossary”）。本节给出它。早期文本在间生论（[四、开闭](../../../sources/07-shengsheng-buxi/ssbx-repo/史料/生生不息论_三本文完整版/04_补篇二_间生论_主篇/06_四、开闭.md)）、补篇一（[十、开闭；十一、伪开三型](../../../sources/07-shengsheng-buxi/ssbx-repo/史料/生生不息论_三本文完整版/03_补篇一_间开本_致知版/04_卷三_判准.md)）与正篇（[卷六 开、闭、稳、真](../../../sources/07-shengsheng-buxi/ssbx-repo/史料/生生不息论_三本文完整版/01_正篇_v13.2形式项总清与类型校正版/08_卷六_开、闭、稳、真.md)）中为闭分型、为开下定义。下面两表把每一型闭与开的每一相安放在脊柱已落地的律上，另两套词汇也一并安放。早期定义中有两样不取。一是按焦点的开度（以焦点为下标的开，度量 O_F = Ω(U, A, R, T) 及其阈值），它把开分给各自独立的所有者。二是写进定义的判词：成闭为恶，护闭为中，伪开为闭之诈。这里只对照结构：进程如何继续、回来、被吸入或响应。一种闭是支持、丰富还是损害生生，由 §6.15 的条件之下的比较来说（“生成的／退化的”一行，D2），不由类型来说。这些对应是 AI 的读法（[D49](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.zh.md#d49-闭与开的对照九句的归与不归--closing-and-opening-on-the-spine)），首先由[早期仓库审读](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md)第 2 节提出。
+
+**闭。**
+
+| 早期用语 | 脊柱上的结构 | Lean |
+|---|---|---|
+| 闭，一般 | 下面开的否定：未、可、应、转都不复存在。闭本身是律从不离开的区域（吸收区域；对过程是不变量），每个确定的律恰吸入不返回的配置。返回者本身是吸收区域，所以闭的区域可以持有所保持者，闭就其形式而言不是损失。语料所说“闭本身不是恶”，结构就是这个。 | `Law.Absorbing`、`Law.drawn_iff_not_returns`、`Law.returning_absorbing` |
+| 成闭（闭而不复开） | 锁定。被吸入吸收区域者不再回来，被吸入的配置永不返回。n 步之后可得者是一个吸收区域，到第 n 步所失去的每种可能都被吸入它。在每个过程之下，一旦进入不变区域，其外者不再可得。 | `Law.DrawnInto.never_back`、`Law.Drawn.not_returns`、`Law.lost_drawn`、`Invariant.locks_out`、`Run.locked_in` |
+| 护闭（暂闭一处以护更大之开） | 在路径分支处去掉那些步：经过它们之后某配置不再可得，使它保持可达。**尚未证明。** 候选是审读中的关节律（第 3.2 节，其中的 G1）：x 对 s 是关节，当 s 可从 x 再得，且 x 既有之后 s 仍可再得的步，也有之后 s 不可再得的步；s 的每次失去都经过一个关节（以双重否定的形式；配置可列、步可判定时为存在）；只保留之后 s 仍可再得的步，保住 s，并且是保住 s 的最大子过程。已落地的：可能被吸入的配置可以在另一条历程上返回；离开不变区域需要一个不保持它的动作。照此读法，护闭与成闭是关节处的同一种操作，去掉失去之步或保持之步，二者都不带估值。哪个配置值得保持（早期例子中的膜、拒侵犯、隔传染）不在律中。 | 尚无；对照 `Branching.possiblyDrawn_iff`、`Branching.OneWay.possibly_not_necessarily`、`Run.leaving_needs` |
+| 元闭（生间之法源冻结） | 规则持住结果（`Becoming.Capture`）。规则保持自身之处，带某一规则的配置是律从不离开的区域。下一配置只依规则而不依状态之处，单扰动状态被吸回规则所持者，从下一步起进程如同未被扰动；扰动规则则改变结果。所以持久的改变与反向回路都须及于规则（§4、§7.3）。 | `Law.rule_absorbing`、`Captured.state_perturbation_drawn`、`Law.perturbation_reabsorbed`、`Captured.rule_perturbation_drawn` |
+| 伪开（外显为开，内成其闭） | 从部分、一段或状态读出、而整个进程并没有的开。下面三型是取这种读法的三处。早期的“夺”（一个焦点的开度随他者的下降而上升）经按焦点的开度陈述，不对照；作为选择的夺取见“劫持”一行。 | 见下面三行 |
+| 伪开 I：局部开，整体闭 | 部分成立者不决定整体成立者。每个形成可以在该步所给之内取用，而合起来取得更多。更新依存于所更新者之处，使水平落到某需要之下的联合超出，终结这一更新，并终结每个在该需要处依存于该条件的形成，取用者也在其中（`Becoming.Continuation`）。配置的一部分可以承载整体所没有的律（`Coarse`），整体也可以有其状态单独的任何读法都没有的律（`Switching`）。 | `Pair.own_not_joint`、`Flow.joint_excess_ends`、`Coarse.carries`、`Switching.no_state_law` |
+| 伪开 II：短期开，长时闭 | 有限的一段不决定一次运行的类。对每个视界，有两次运行在其前相同，焦点形成在那里的每个事件在两者中都在更新之内，而此后一次在整个运行上更新，另一次消耗（`Becoming.Horizon`）。断裂之前，一个存量只经阈耦合入一个形成之处，耦合入该形成的任何东西都不界定断裂有多近（`Becoming.Runaway`）。 | `Renewable.prefix_does_not_decide`、`Web.break_not_bounded` |
+| 伪开 III：表层开，元间闭 | 从状态看的元闭。状态可以变、可以被扰动，单对它的每次扰动都被吸回规则所持者；只有及于规则的改变才改变结果。 | `Law.rule_absorbing`、`Captured.state_perturbation_drawn`、`Law.perturbation_reabsorbed` |
+| 成生之限／绝生之限（[2026 年 9 月的语料词汇表](../../../_process/history/2026-09-consolidation/GLOSSARY.md)） | 限制约步。绝生之限（语料的例子：垄断入口、消灭替代、使后来者依附于一个控制者）是成闭：它所围者不能离开，其外者不再可得。成生之限（一个承诺、一次训练、制止一次侵犯）约束某些步，而所约束者仍可得，是护闭的结构。一个限是哪一种，取决于它对可再得者做了什么，不取决于它的名称。 | 同成闭与护闭 |
+| close / keep open（英文） | 语料对闭与护开的英译，取上面各行与下面各相。本章的“开放”是另一个用语（“开放”一行），只对应“未”一相。 | — |
+
+**开。** 早期文本把开定义为四相并在：未（尚有未成之域）、可（仍有生成之可）、应（仍能回应）、转（仍能修正、回返、变通），并说“开之四相不可缺一”“开非更多，闭非更少”（[间生论·四](../../../sources/07-shengsheng-buxi/ssbx-repo/史料/生生不息论_三本文完整版/04_补篇二_间生论_主篇/06_四、开闭.md)）。
+
+| 相 | 脊柱上的结构 | Lean |
+|---|---|---|
+| 未（尚有未成之域；开维） | 仍有更多能来。在有普查、关系项都体现、流平衡且耗散的世界中，无尽的生起与从某步起每步都被围住不相容。在第一定律下，一个家族每步都新之处，容纳它的每个有界家族在任意晚的步，经其余或越过其边界，得到多于所取者。本章的开放就是这一相。 | `World.arising_opens`、`Flow.new_beyond_every` |
+| 可（仍有生成之可） | 进程继续。在有限多个配置之内，一次运行恰在一条与列表等长的历程开始之处开始，不用判定，也不用选择。 | `Onward.run_iff_continues` |
+| 应（仍能回应） | 交换响应一个水平：至多在该水平上不同的两段历史给出交换的正差（`Becoming.LevelCoupling`）。耦合界定响应而不固定它。 | `ExchangeLaw.RespondsTo`、`ExchangeLaw.response_not_fixed_by_coupling` |
+| 转（仍能修正、回返、变通） | 每个词一种结构。回返：配置返回，当从它出发的某步通向一个能再得到它的配置；依存回程，当它再被满足（“回程”一行）。变通：失而不返之后，仍活跃的形成已减弱或消解其依存（`Becoming.Dependence`）。修正一个动作之所为：有与无此动作的两条进程，只经一个在两者中交换不同、把它们耦合分开的形成而重合（`Becoming.Rejoining`）。 | `Branching.Returns`、`Web.Returns`、`Becoming.Dependence`、`Flow.closes_through_coupling_apart` |
+| 开非更多 | 可得者多少不决定转。在三个各能移动的配置中，每个配置每步都可得，而有一个永不返回。 | `Branching.Transit.keeps_not_returns` |
+
+在脊柱上四相并不像“不可缺一”所设想的那样彼此独立。转读作回归时，不加前提就蕴含可：从返回的配置出发，一次运行开始（`Onward.run_of_returning`）。在有限多个配置之内，反之亦然：一次运行恰在一条历程通向一个回归之处开始（`Onward.run_iff_returning`）。所以在那里，可就是到达一个回归，而未需要开放的世界（`unheld_of_new`）；§1 中九句的读法陈述由此得出的三种情形。
+
+稳与元闭是同一结构。正篇把稳（“扰后不坍、回观不败、仍续”，卷六 六四）算作好，把元闭算作一种闭。在脊柱上二者都是扰动被吸回规则所持者（`Law.perturbation_reabsorbed`）：同一条律，从规则所持者一侧读是稳定，从想要及于规则的改变一侧读是冻结的规则。判词不同而结构相同，所以估值只经 §6.15 的条件之下的比较进入，从不经由定义。
 
 <a id="11-既有章节的位置--where-the-earlier-chapters-stand"></a>
 ## 11. 既有章节的位置
