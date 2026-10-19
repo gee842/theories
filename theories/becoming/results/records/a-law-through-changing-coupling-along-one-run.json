@@ -104,7 +104,7 @@
   ],
   "counterexamples": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughChangingCoupling.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughChangingCoupling.lean",
       "detail": {
         "en": "Neither law gives the other where dependences change: Changing (dissolving_consistent with dissolving_fixed_inconsistent; forming_fixed_consistent with forming_inconsistent).",
         "zh": "依赖改变之处两种规律互不给出：Changing（dissolving_consistent 与 dissolving_fixed_inconsistent；forming_fixed_consistent 与 forming_inconsistent）。"
@@ -131,7 +131,7 @@
     "en": "The chapter's open programme (section 8.2, Selection, causes and experiment) named \"the criterion through coupling that changes along the run\", which a-law-through-coupling-along-one-run left in does_not_show. Ren, 18 October 2026: \"you have permission now, please see what else is there to do - keep pushing the frontier till finishing\"; 19 October: \"continue\" (provenance, not warrant); the AI chose the item. Reading (the AI's): a law at a formation's coupling along a course is a law at the coupling it has on each occasion; reading the course through the dependence of one moment can find a law its own coupling does not carry, or miss one it does.",
     "zh": "本章开放纲领（第 8.2 节，选择、原因与实验）列出“the criterion through coupling that changes along the run”，a-law-through-coupling-along-one-run 把它列在 does_not_show。Ren，2026年10月18日：“you have permission now, please see what else is there to do - keep pushing the frontier till finishing”；10月19日：“continue”（来历，不是根据）；条目由 AI 选择。读法（AI 的）：沿进程在一个形成耦合上的规律，是在它每个场合所有耦合上的规律；经某一时刻的依赖读进程，可能找到它自己的耦合不承载的规律，也可能错过它承载的规律。"
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughChangingCoupling.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughChangingCoupling.lean",
   "aliases": [
     "law through changing coupling",
     "经改变的耦合的规律",
@@ -161,7 +161,7 @@
           "en": "An equivalence.",
           "zh": "一个等价关系。"
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean"
       }
     },
     {
@@ -245,7 +245,7 @@
   ],
   "references": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughChangingCoupling.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughChangingCoupling.lean",
       "role": "proof",
       "declarations": [
         "Becoming.Changing.determined",
@@ -287,7 +287,7 @@
       "sha256": "d722292ed358d15e483b87382395eecd243ee5c8f5ab52c7c4bb47e0e6bd7f6b"
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
       "role": "proof",
       "declarations": [
         "Becoming.Run.ConsistentUnder",
@@ -430,14 +430,14 @@
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughChangingCoupling.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughChangingCoupling.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T003752.845229Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LawThroughChangingCoupling",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T003752.845229Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LawThroughCoupling",
       "success_pointer": "/status",

@@ -417,6 +417,24 @@
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPlanFrames.lean"
     },
     {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughChangingCoupling.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughChangingCoupling.lean",
+      "sha256": "d722292ed358d15e483b87382395eecd243ee5c8f5ab52c7c4bb47e0e6bd7f6b",
+      "blob": "09146f52d6986cba82eca530594dd512b2bb8b37",
+      "batch": "R33-history",
+      "reason": "R33 (20 October 2026): joined into Becoming.LawAlongRun (G4, one law along a run), every declaration kept there under its name; bytes as on main 7950e8798",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughChangingCoupling.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
+      "sha256": "348381d9c34513f479875ea171946280f447c5c6c70abefe3f51eac2b2175466",
+      "blob": "f766f214e91b94692db2423d64e701808702b92f",
+      "batch": "R33-history",
+      "reason": "R33 (20 October 2026): joined into Becoming.LawAlongRun (G4, one law along a run), every declaration kept there under its name; bytes as on main 7950e8798",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean"
+    },
+    {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelWebs.lean",
       "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LevelWebs.lean",
       "sha256": "f7277d27b4e1a3f30854e8985014ff7257ab2f5fe097816dc5a315f4acf18991",

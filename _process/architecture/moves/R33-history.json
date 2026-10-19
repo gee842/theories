@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "batch": "R33-history",
+  "date": "2026-10-19T23:53:40+00:00",
+  "base_commit": "7950e8798c9f03b114fb475e8b74839c7273e364",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
+      "sha256": "348381d9c34513f479875ea171946280f447c5c6c70abefe3f51eac2b2175466",
+      "blob": "f766f214e91b94692db2423d64e701808702b92f",
+      "reason": "R33 (20 October 2026): joined into Becoming.LawAlongRun (G4, one law along a run), every declaration kept there under its name; bytes as on main 7950e8798",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughChangingCoupling.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughChangingCoupling.lean",
+      "sha256": "d722292ed358d15e483b87382395eecd243ee5c8f5ab52c7c4bb47e0e6bd7f6b",
+      "blob": "09146f52d6986cba82eca530594dd512b2bb8b37",
+      "reason": "R33 (20 October 2026): joined into Becoming.LawAlongRun (G4, one law along a run), every declaration kept there under its name; bytes as on main 7950e8798",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughChangingCoupling.lean"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
+      "old_sha256": "50654f620cf5d5302dc2c04a24a145f23a33d01fdea9c956494cc97aef7c33b2",
+      "new_sha256": "cde48b366d1da242e75a65afad80cded355642ba72f061fd8e4f5943911b165e",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "old_sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec",
+      "new_sha256": "004600a5c6105558cb17bd3abc191c4f4a4c1554e52faeb212bbec68084d765d",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/results/records/a-law-through-changing-coupling-along-one-run.json",
+      "old_sha256": "133597a008dcb876e84a5a70f1f9d879bb13523ea41b186f9d4129a3e18e0d10",
+      "new_sha256": "2d15426212d9c110f95e22ac4638d3fd0aece62b85a3fff780565f08db39ee6a",
+      "references": 7
+    },
+    {
+      "path": "theories/becoming/results/records/a-law-through-coupling-along-one-run.json",
+      "old_sha256": "081eaa6e088169e2893594d7a1b8aa407e86f2917b490c86f3e993f6d98c0e78",
+      "new_sha256": "586b5c7aca868c7e48f5a5dbd6e7e7e08117bee68bc8f027c691e505be8c26b2",
+      "references": 4
+    }
+  ],
+  "history_roots": [
+    "experiments/integrated-correction/general-framework/generative-basis/lean/history"
+  ],
+  "generated_pages_to_rerender": [
+    "RESULTS.md",
+    "theories/becoming/results/LEAN-DECLARATIONS.md",
+    "theories/becoming/results/LEAN-INDEX.md",
+    "theories/becoming/results/data/lean-index.json",
+    "theories/becoming/results/data/source-index.json",
+    "theories/becoming/results/lean-declarations/becoming-core.md",
+    "theories/becoming/results/records/a-law-through-changing-coupling-along-one-run.md",
+    "theories/becoming/results/records/a-law-through-coupling-along-one-run.md"
+  ],
+  "verification_errors": []
+}

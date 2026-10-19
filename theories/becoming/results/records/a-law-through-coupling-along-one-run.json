@@ -92,7 +92,7 @@
   ],
   "counterexamples": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
       "detail": {
         "en": "A determined process with no law at a formation's coupling along a run: Unseen (Unseen.determined, Unseen.no_law).",
         "zh": "确定的过程而沿运行在形成的耦合上无规律：Unseen（Unseen.determined、Unseen.no_law）。"
@@ -119,7 +119,7 @@
     "en": "The chapter's open programme (section 8.2, Selection, causes and experiment) named \"the instance of the criterion along one run with Becoming.Testing's registration as the projection\"; a-law-through-a-projection-along-one-run left it in does_not_show. Registration is now called coupling (Web.AlikeThrough); it is a relation, and an equality of what is coupled would need propext, so the criterion is stated up to a relation. Ren, 18 October 2026: \"Yes: claim G4 on the board — the criterion along one run with Becoming.Testing's registration as the projection — and prove it in scratch while the queue runs.\" (provenance, not warrant). Reading (the AI's): a formation's own course is evidence of a law at its coupling exactly as far as it agrees with itself; where what it does not couple into decides its next coupling, it meets no law at its coupling, only a record.",
     "zh": "本章开放纲领（第 8.2 节，选择、原因与实验）列出“the instance of the criterion along one run with Becoming.Testing's registration as the projection”；a-law-through-a-projection-along-one-run 把它列在 does_not_show。识现称耦合（Web.AlikeThrough）；它是关系，所耦合者的相等需要 propext，所以判据到关系为止陈述。Ren，2026年10月18日：“Yes: claim G4 on the board — the criterion along one run with Becoming.Testing's registration as the projection — and prove it in scratch while the queue runs.”（来历，不是根据）。读法（AI 的）：一个形成自己的进程在多大程度上与自身一致，就在多大程度上是其耦合上规律的证据；它不耦合者决定其下一步耦合之处，它在其耦合上遇不到规律，只有记录。"
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
   "aliases": [
     "law through coupling",
     "经耦合的规律",
@@ -265,7 +265,7 @@
   ],
   "references": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
       "role": "proof",
       "declarations": [
         "Becoming.Conditions.AdmitsAt",
@@ -434,7 +434,7 @@
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T200007.370225Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LawThroughCoupling",
       "success_pointer": "/status",
