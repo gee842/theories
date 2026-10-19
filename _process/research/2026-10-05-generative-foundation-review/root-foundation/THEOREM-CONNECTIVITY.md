@@ -301,3 +301,34 @@ Rerun with R30, one notion, one name (receipt 20261019T194851.524223Z, 20 Octobe
 Rerun with R31, layers and one prelude (receipt 20261019T213206.644158Z, 20 October 2026, on `cd8374a4c`), it counts 481 of 11,566 (489 of 11,658 before), 35 of them prelude-only statements (43 before). The whole fall is in the prelude-only class: copies that stood apart were removed, and their users now read the prelude's names. `Becoming.Prelude` has 5 of its 99 theorems apart, and the other modules R31 added or split have none. The families are unchanged (World reaches Process; Process, Flow and Web reach neither), and 866 statements are on both families. Two register entries are no longer apart roots: `ListTests.length_append` and `Naturals.add_sub_cancel_left` are now used on the base through the users of the removed copies. Their entries moved to [the R31 kit's apart-retired.json](development/r31-support/apart-retired.json). `Copying.le_of_add_le_add`, whose only user was a removed copy, is a new root with its reason. Every entry's module follows the receipt ([apart.py](development/r31-support/apart.py), [study section 222](BECOMING-RENEWAL-READING.md#222-layers-and-one-prelude-r31)). There are 346 apart roots, 10 of them restatements; 65 dependency components, 16 spine theorems outside the main one.
 
 Records: [worlds-are-runs](../../../../theories/becoming/results/records/worlds-are-runs.md), [becoming-spine-instances](../../../../theories/becoming/results/records/becoming-spine-instances.md).
+
+<a id="11-r32-the-measure-stops-rewarding-restatement"></a>
+## 11. R32: the measure stops rewarding restatement
+
+20 October 2026, board item R32 (the twentieth review's B8 and G3). Until R32 a general law reached the class "used by a theorem on the base" as soon as a one-line theorem on the base named it, so a named forwarder, which adds no statement, moved a law out of "apart". And a statement on `Law.run` of a law private to its module counted as a statement on the Process family, although the run there only carries the module's own course. The script and the dump change in four ways. No class is renamed, and the old classes keep their meaning for every theorem the changes do not touch.
+
+- **Pure forwarders are read off the compiled proofs.** The dump reports, for each theorem that is a pure forwarder, the theorem its whole proof applies (field `f`). Under at most as many binders as its type has leading foralls, the proof is a theorem of the run applied to arguments in which every explicit argument is one of those binders and no argument names a closed value of the run (a witness model, a constructor without arguments) or a literal, possibly under `Iff.mp`, `Iff.mpr` or a `symm` (`fk`). This reads the compiled term, not the source.
+- **A recorded instance connects; a forwarder does not use.** A forwarder on the base no longer counts as using its target. The new class **instance on the base recorded** holds a theorem whose instance on the base is recorded and which no theorem on the base otherwise uses. Its instance is recorded where a pure forwarder on the base applies it, where the register's `instances` list in [THEOREM-CONNECTIVITY-APART.json](THEOREM-CONNECTIVITY-APART.json) names it (each entry with the base constants its instance's statement uses, which `--check` requires the run to have), or where a Lean `example` whose statement is on the base applies it; a law such a theorem uses is in the class too. An example makes no constant: the script reads the examples from the sources and resolves their names through the namespaces and `open`s in scope. So removing a forwarder and recording its instance changes no class, and a law's class no longer depends on whether its instance has a name.
+- **Statements on the base only through a law of their own module** (G3) are a class of their own, checked first. The statement reaches the base only through the determined-law vocabulary (`Law.*`, `Assurance.ofMap`, `Assurance.ofPartial`) and the fields of the run or process it makes (`Run.state`, `Run.act`, `Process.step`), and the law given to that vocabulary (dump field `w`) is defined in the theorem's module, directly or through a definition of the module. Such a statement reads the module's own carrier through a run. It is on the base in Lean's sense and is reported apart from the statement classes.
+- **Apart by design is reported apart.** `apart_general_structure_by_design` counts the apart theorems all of whose apart roots (itself, if it is a root) the register calls general structure; `apart_otherwise` counts the rest. `pure_forwarders` and `recorded_instances` report the counts behind the new class, and `statement_through_own_law_by_module` where the G3 class lies.
+
+**The baseline: main's tree under the new measure.** On `7f7fc96f8`, the measure's commit, whose Lean is main `ad2efa757`'s (core receipt 20261019T213206.644158Z), against the old measure on the same sources:
+
+| Class | Old measure | New measure |
+|---|---:|---:|
+| Statement on both families | 866 | 866 |
+| Statement on Process/Frame/Run/Trace | 3,121 | 2,949 |
+| Statement on World/Flow/Web | 2,614 | 2,614 |
+| Statement on the base only through a law of its own module | — | 172 |
+| Proof through a family | 151 | 151 |
+| Used by a theorem on the base | 4,333 | 4,186 |
+| Instance on the base recorded | — | 147 |
+| Apart: own vocabulary | 446 | 446 |
+| Apart: prelude-only statement | 35 | 35 |
+| **Apart, total** | **481** | **481** |
+| **Theorems** | **11,566** | **11,566** |
+
+- **Forwarders.** 220 spine theorems are pure forwarders, 190 of them on the base. 147 theorems were "used by a theorem on the base" only through a forwarder on the base, as its target or as what the target uses; they are now "instance on the base recorded". Removing those forwarders with their instances recorded leaves these counts as they are, so a drop after R32 is not an artifact of forwarders.
+- **Own-module laws (G3).** 172 statements read their module's own law through a run: HexagramLaws 26, Undecided 23, Pace 22, Withholding 21, Hexagrams 15, SharedCodes 15, LoopReturn 14, Tolerance 13, Dephasing 11, HexagramSequences 5, Attraction 4 and Recurrence 3 (the laws of `Law.withHistory`). Closing them by instance theorems to the World family is R33's (G6, G7).
+- **Apart by design.** Of the 481 apart, 50 are general structure by design and 431 are apart otherwise. The roots' categories are unchanged: model witness 205, support 86, general structure 33, logical strength 10, restates 10, calibration 2.
+- **Records by best class.** Two records' best theorem is in the G3 class (113 on the Process family, 115 before); the rest are unchanged. The periphery has no forwarder target or G3 statement, and its classes are unchanged.
