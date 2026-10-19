@@ -9,8 +9,8 @@
   "unclean": [],
   "audits": {
     "Becoming.HexagramSequences": {
-      "theorems": 94,
-      "declarations": 162,
+      "theorems": 98,
+      "declarations": 168,
       "with_axioms": {}
     }
   }

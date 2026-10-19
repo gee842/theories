@@ -72,9 +72,10 @@ along runs.
   (`changes_run_never_rests`).
 * **The stations of 說卦 ch. 5.** No law running the eight stations from 震 commutes with 錯, 綜,
   both or the rotation of the three lines (`Trigram.stations_not_commutes`), so no three-cell rule
-  on a ring of three runs them, with the wrap read straight or turned
-  (`Trigram.stations_not_rules`); of the four pairs of opposite stations only 離 and 坎 are
-  complements, while each of the four pairs of 說卦 ch. 3 is (`Trigram.opposite_stations`).
+  on a ring of three runs them, with the wrap read straight or turned, nor any rearrangement of the
+  heights with a mask (`Trigram.stations_not_rules`, `Trigram.rearrange3_not_stations`); of the four
+  pairs of opposite stations only 離 and 坎 are complements, while each of the four pairs of 說卦
+  ch. 3 is (`Trigram.opposite_stations`).
 * **交.** 否 is 泰 changed in every line and turned over (`pi_of_tai`), so every reading the
   complement keeps reads them alike along every run of waxing and waning from them (`kept_alike`,
   by `Law.Commutes.iterate`); 交, the line of the lower trigram unbroken and that of the upper
@@ -1110,6 +1111,41 @@ theorem stations_not_rules (ρ : Bool → Bool → Bool → Bool) :
     have down : ρ false false true = false :=
       congrArg (fun x => x.2.2) (follows _ (.tail _ (.tail _ (.tail _ (.head _)))))
     Bool.noConfusion (up.symm.trans down)⟩
+
+/-- The line of three at a height. -/
+def line3 : Height → Bool × Bool × Bool → Bool
+  | .low, (a, _, _) => a
+  | .mid, (_, b, _) => b
+  | .high, (_, _, c) => c
+
+theorem line3_complement : ∀ (h : Height) (x : Bool × Bool × Bool), line3 h (complement3 x) = !line3 h x
+  | .low, (_, _, _) => rfl
+  | .mid, (_, _, _) => rfl
+  | .high, (_, _, _) => rfl
+
+theorem triple_ext {a a' b b' c c' : Bool} :
+    a = a' → b = b' → c = c' → ((a, b, c) : Bool × Bool × Bool) = (a', b', c')
+  | rfl, rfl, rfl => rfl
+
+/-- The heights read through a map of heights, and the lines turned where a mask is unbroken. -/
+def rearrange3 (σ : Height → Height) (mask : Bool × Bool × Bool) (x : Bool × Bool × Bool) :
+    Bool × Bool × Bool :=
+  (turnedBy (line3 (σ .low) x) (line3 .low mask), turnedBy (line3 (σ .mid) x) (line3 .mid mask),
+    turnedBy (line3 (σ .high) x) (line3 .high mask))
+
+/-- **Every rearrangement of the heights with a mask commutes with 錯.** -/
+theorem rearrange3_complement (σ : Height → Height) (mask : Bool × Bool × Bool) :
+    Law.Commutes (rearrange3 σ mask) complement3 :=
+  fun x =>
+    have turned : ∀ h, turnedBy (line3 (σ h) (complement3 x)) (line3 h mask) =
+        !turnedBy (line3 (σ h) x) (line3 h mask) := fun h =>
+      (congrArg (fun b => turnedBy b (line3 h mask)) (line3_complement (σ h) x)).trans (turnedBy_not _ _)
+    triple_ext (turned .low) (turned .mid) (turned .high)
+
+/-- **So none runs the stations.** -/
+theorem rearrange3_not_stations (σ : Height → Height) (mask : Bool × Bool × Bool) :
+    ¬ RunsThrough (rearrange3 σ mask) stations :=
+  fun runs => (stations_not_commutes runs).1 (rearrange3_complement σ mask)
 
 /-- **Of the four opposite stations only 離 and 坎 are complements; each of the four pairs of
 說卦 ch. 3 (天地定位，山澤通氣，雷風相薄，水火不相射) is.** -/

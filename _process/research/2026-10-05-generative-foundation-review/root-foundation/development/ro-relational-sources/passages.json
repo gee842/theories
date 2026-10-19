@@ -514,12 +514,23 @@
     "Becoming.Hexagram.phaseCount_parity",
     "Becoming.Hexagram.flip",
     "Becoming.Learning.goAlike_iff_lumped",
-    "Becoming.Hexagram.pairs_goAlike"
+    "Becoming.Hexagram.pairs_goAlike",
+    "Becoming.Hexagram.yangOdd",
+    "Becoming.Hexagram.yangOdd_lumped",
+    "Becoming.Hexagram.yangOdd_goAlike",
+    "Becoming.Hexagram.yangOdd_goAlike_changes",
+    "Becoming.Hexagram.phaseCount_yangOdd",
+    "Becoming.Hexagram.count3",
+    "Becoming.Hexagram.strokes3",
+    "Becoming.Hexagram.odd3_iff",
+    "Becoming.Hexagram.trigramOdd_flip",
+    "Becoming.Hexagram.changes_run_trigram"
    ],
    "records": [
     "hexagrams-on-the-spine",
     "place-relations-in-context",
-    "generalization-through-lumping"
+    "generalization-through-lumping",
+    "hexagram-arrangements-and-laws"
    ],
    "atlas_ids": [
     {
@@ -532,7 +543,7 @@
     }
    ],
    "relational": "The trigrams are classed by a relation among their lines: 陽卦 (乾 震 坎 艮) have an odd count of unbroken lines, 陰卦 (坤 巽 離 兌) an even one; counting strokes, a broken line as two, gives the same parity. The class is a relation of three lines, not an essence.",
-   "reading": "AI读法：计算核对：震坎艮各一阳二阴、乾三阳，阳爻数奇；巽离兑各二阳、坤零阳，偶；以笔画计（阴爻两画）奇偶相同。脊柱上，阳爻之数本身不是消息之律通行的归并（yang_not_goAlike），但其奇偶是：每一步消息、每一次一爻之变都改变奇偶。这在 phaseCount_parity 中以\"当位之数\"的坐标已证，二者只差一个恒等式（当位数 ≡ 阳爻数 + 1 mod 2），所以奇偶两类是律通行的归并（理）。于是此句的\"多阴/多阳\"（数）不承载律，\"奇/偶\"（奇偶）承载，这是范围的修正。三爻层面的陈述与阳爻数的陈述脊柱尚无，见 gap。",
+   "reading": "AI读法：Y5 在 Lean 中写成（odd3_iff）：震坎艮各一阳二阴、乾三阳，阳爻数奇；巽离兑各二阳、坤零阳，偶；以笔画计（阴爻两画）奇偶相同。脊柱上，阳爻之数本身不是消息之律通行的归并（yang_not_goAlike），但其奇偶是：每一步消息、每一次一爻之变都改变奇偶。这在 phaseCount_parity 中以\"当位之数\"的坐标已证，二者只差一个恒等式（当位数 ≡ 阳爻数 + 1 mod 2），所以奇偶两类是律通行的归并（理）；Y5 以阳爻数直接写出（yangOdd_goAlike、yangOdd_goAlike_changes、phaseCount_yangOdd）。于是此句的\"多阴/多阳\"（数）不承载律，\"奇/偶\"（奇偶）承载，这是范围的修正。三爻层面的陈述由 Y5 写成：一爻之变使其所在之卦由阳卦为阴卦或反之，另一卦不变（changes_run_trigram）。",
    "reading_en": "AI reading: the trigram classes are the parity of the unbroken-line count; the count is not a lumping the law goes alike across, but its parity is, changing at every step and every one-line change (proved as phaseCount_parity in another coordinate). 奇/偶 carries law where 多/少 does not.",
    "mapper": "yi",
    "gap": {
@@ -544,8 +555,10 @@
      "Becoming.Hexagram.flip",
      "Becoming.Hexagram.pairs_goAlike"
     ],
-    "why_it_matters": "繫辭下 ch. 3 classes the trigrams by parity (陽卦奇，陰卦偶), and 說卦 ch. 10 generates them by one-line changes (一索、再索、三索); the statement joins the two passages, shows that the parity carries law where the count (多陰、多陽) does not, and gives the hexagram law a second lumping beside the complement pairs."
-   }
+    "why_it_matters": "繫辭下 ch. 3 classes the trigrams by parity (陽卦奇，陰卦偶), and 說卦 ch. 10 generates them by one-line changes (一索、再索、三索); the statement joins the two passages, shows that the parity carries law where the count (多陰、多陽) does not, and gives the hexagram law a second lumping beside the complement pairs.",
+    "closed": "Y5 (Becoming.HexagramSequences): odd3_iff, yangOdd_goAlike, yangOdd_goAlike_changes, changes_run_trigram."
+   },
+   "corrected": "Y5 proved in Lean what the reading computed and what its gap named"
   },
   {
    "id": "xici-yijun-ermin",
@@ -601,11 +614,14 @@
     "Becoming.Hexagram.xian_opposed",
     "Becoming.Hexagram.heng_opposed",
     "Becoming.Hexagram.weiJi_opposed",
-    "Becoming.Hexagram.waxWane_complement"
+    "Becoming.Hexagram.waxWane_complement",
+    "Becoming.Hexagram.Trigram.complement3",
+    "Becoming.Hexagram.Trigram.opposite_stations"
    ],
    "records": [
     "place-relations-in-context",
-    "what-a-commuting-law-keeps-apart"
+    "what-a-commuting-law-keeps-apart",
+    "hexagram-arrangements-and-laws"
    ],
    "atlas_ids": [
     {
@@ -622,9 +638,10 @@
     }
    ],
    "relational": "Four pairs of trigrams (天地, 山澤, 雷風, 水火), each a trigram and its line-by-line opposite, are said to stand, pass, press and not repel each other; change and the completion of things come through the pairs relating, not through any one trigram.",
-   "reading": "AI读法：计算核对：四对恰是三爻层面的四对互补（乾坤、艮兑、震巽、坎离）。把一对上下相叠，得到每个高度都\"对\"的八卦：泰否咸损恒益既济未济。脊柱已证：三个高度上的\"对\"恰在每个高度都对（上下卦互补）或都不对（重卦）时粘合（oppositions_glue_iff），没有无上下文的断言之框适合这些高度（halves_no_free_frame），咸、恒、未济每个高度皆对（xian_opposed、heng_opposed、weiJi_opposed）。\"相错\"在这里是互补，不是相斥；消息之律与互补交换（waxWane_complement）。\"然后能变化\"的因果句脊柱未证，一致的只是配对结构。",
+   "reading": "AI读法：Y5 在 Lean 中写成（Trigram.opposite_stations）：四对恰是三爻层面的四对互补（乾坤、艮兑、震巽、坎离）。把一对上下相叠，得到每个高度都\"对\"的八卦：泰否咸损恒益既济未济。脊柱已证：三个高度上的\"对\"恰在每个高度都对（上下卦互补）或都不对（重卦）时粘合（oppositions_glue_iff），没有无上下文的断言之框适合这些高度（halves_no_free_frame），咸、恒、未济每个高度皆对（xian_opposed、heng_opposed、weiJi_opposed）。\"相错\"在这里是互补，不是相斥；消息之律与互补交换（waxWane_complement）。\"然后能变化\"的因果句脊柱未证，一致的只是配对结构。",
    "reading_en": "AI reading: the four pairs are exactly the four trigram complements; stacked they give the eight hexagrams opposed at every height, where the oppositions glue; 相錯 is the complement relation, which the law commutes with. The causal \"然後能變化\" is not proved, only the pairing.",
-   "mapper": "yi"
+   "mapper": "yi",
+   "corrected": "Y5 proved in Lean what the reading computed"
   },
   {
    "id": "shuogua-shuwang-zhilai",
@@ -681,12 +698,20 @@
     "Becoming.Hexagram.order_paired",
     "Becoming.exists_law_iff",
     "Becoming.Run.keepHistory_shown",
-    "Becoming.shown_le_iff"
+    "Becoming.shown_le_iff",
+    "Becoming.Hexagram.Trigram.stations",
+    "Becoming.Hexagram.Trigram.stations_not_commutes",
+    "Becoming.Hexagram.Trigram.ringRule3_rotate",
+    "Becoming.Hexagram.Trigram.stations_not_rules",
+    "Becoming.Hexagram.Trigram.rearrange3_complement",
+    "Becoming.Hexagram.Trigram.rearrange3_not_stations",
+    "Becoming.Hexagram.Trigram.opposite_stations"
    ],
    "records": [
     "place-relations-in-context",
     "histories-fix-law-up-to-dead-ends",
-    "process-and-frame-as-readings"
+    "process-and-frame-as-readings",
+    "hexagram-arrangements-and-laws"
    ],
    "atlas_ids": [
     {
@@ -703,7 +728,7 @@
     }
    ],
    "relational": "A cycle of the eight trigrams through stations and seasons. The 傳 itself glosses 帝 as the ten thousand things coming forth (萬物出乎震) and 戰 as yin and yang pressing on each other (陰陽相薄), so its glosses are relational; the assignment of trigrams to stations is asserted.",
-   "reading": "AI读法：两点。其一，传文自己把\"帝\"解为万物之出、把\"战\"解为阴阳相薄，是关系的，\"帝出\"不应读成一个意志之主。其二，八卦的这个循环是指派，不是由组态关系导出：计算核对，震→巽→离→坤→兑→乾→坎→艮→震不是任何\"置换各爻并加掩码\"之律的运行（最多合 4/8 步），也不是任何三格局部规则（循环或扭转）的运行（最多 5/8）；圆上四对对位中只有离坎互补，而第三章的四对全是互补。所以同一传中第三章的排列承载互补之结构，第五章的不承载。按 exists_law_iff，这个循环当然是它自己所显之律的运行，但那条律只接纳这一历史（Run.keepHistory_shown）。方位时令的配属不评价（atlas OW-R045 不把它与后世先后天图等同）。",
+   "reading": "AI读法：两点。其一，传文自己把\"帝\"解为万物之出、把\"战\"解为阴阳相薄，是关系的，\"帝出\"不应读成一个意志之主。其二，八卦的这个循环是指派，不是由组态关系导出：Y5 在 Lean 中证明：运行震→巽→离→坤→兑→乾→坎→艮之律不与互补、翻转、二者或三爻之轮转交换（Trigram.stations_not_commutes），所以没有三格局部规则（循环或扭转）、也没有\"置换各爻并加掩码\"之律运行它（Trigram.stations_not_rules、Trigram.rearrange3_not_stations）；圆上四对对位中只有离坎互补，而第三章的四对全是互补（Trigram.opposite_stations）。脚本另算部分相合：置换加掩码之律最多合 4/8 步，三格局部规则最多 5/8。所以同一传中第三章的排列承载互补之结构，第五章的不承载。按 exists_law_iff，这个循环当然是它自己所显之律的运行，但那条律只接纳这一历史（Run.keepHistory_shown）。方位时令的配属不评价（atlas OW-R045 不把它与后世先后天图等同）。",
    "reading_en": "AI reading: the 傳 glosses 帝 and 戰 relationally (things coming forth, yin and yang pressing), so no personal will is asserted; but the cycle is assigned, not derived: it is a run of no place-permutation-with-mask law and no three-cell local rule, and only one of its four diametric pairs (離坎) is a complement, whereas every pair of chapter 3 is.",
    "mapper": "yi",
    "gap": {
@@ -713,8 +738,10 @@
      "Becoming.Hexagram.order_paired",
      "Becoming.exists_law_iff"
     ],
-    "why_it_matters": "Within one 傳, chapter 3 arranges the trigrams by the complement relation and chapter 5 by an assigned cycle of stations; the statement makes that difference checked rather than asserted, as for the received order."
-   }
+    "why_it_matters": "Within one 傳, chapter 3 arranges the trigrams by the complement relation and chapter 5 by an assigned cycle of stations; the statement makes that difference checked rather than asserted, as for the received order.",
+    "closed": "Y5 (Becoming.HexagramSequences): Trigram.stations_not_commutes, Trigram.stations_not_rules, Trigram.rearrange3_not_stations, Trigram.opposite_stations; the best partial agreements stay script computations."
+   },
+   "corrected": "Y5 proved in Lean what the reading computed"
   },
   {
    "id": "shuogua-yi-suo",
@@ -810,11 +837,17 @@
     "Becoming.Hexagram.order_paired",
     "Becoming.Hexagram.order_paired_by_law",
     "Becoming.Hexagram.both_fixed_iff",
-    "Becoming.Hexagram.reverse_waxWane"
+    "Becoming.Hexagram.reverse_waxWane",
+    "Becoming.Hexagram.bo",
+    "Becoming.Hexagram.fu",
+    "Becoming.Hexagram.bo_fu",
+    "Becoming.Hexagram.ringRule",
+    "Becoming.Hexagram.waxWane_twisted"
    ],
    "records": [
     "hexagrams-on-the-spine",
-    "hexagram-world-laws"
+    "hexagram-world-laws",
+    "hexagram-arrangements-and-laws"
    ],
    "atlas_ids": [
     {
@@ -843,9 +876,10 @@
     }
    ],
    "relational": "Within each pair of the order, the second hexagram is the first turned over, or, where turning over changes nothing, changed in every line; the 序卦 reason \"a thing cannot end in X\" names that turn.",
-   "reading": "AI读法：序卦用\"物不可（以）终X / 不可穷\"十一次。计算核对：其中七次落在一对之内（终通 泰→否、终尽 剥→复、终遁 遁→大壮、终难 蹇→解、终动 震→艮、终离 涣→节、不可穷 既济→未济），后卦都是前卦翻转或全变（order_paired、order_paired_by_law）。\"剥穷上反下\"字面就是翻转：剥唯一的阳爻在上，翻过来在下，即复；损翻转即益。翻转把律倒过来走（reverse_waxWane）。所以序卦在对内所说的\"不可终\"与律有确切对应。泰否、既济未济既是翻转又是全变（both_fixed_iff）。没有断言每个通都必转为否（atlas OW-R034）。",
+   "reading": "AI读法：序卦用\"物不可（以）终X / 不可穷\"十一次。计算核对：其中七次落在一对之内（终通 泰→否、终尽 剥→复、终遁 遁→大壮、终难 蹇→解、终动 震→艮、终离 涣→节、不可穷 既济→未济），后卦都是前卦翻转或全变（order_paired、order_paired_by_law）。\"剥穷上反下\"字面就是翻转：剥唯一的阳爻在上，翻过来在下，即复；损翻转即益。它也是读直之环上的移位：各爻上升一位、上爻不变而入初位，一步由剥至复；消息之律上爻入初时变其刚柔，由剥一步至坤，再一步至复（bo_fu，Y5）。翻转把律倒过来走（reverse_waxWane）。所以序卦在对内所说的\"不可终\"与律有确切对应。泰否、既济未济既是翻转又是全变（both_fixed_iff）。没有断言每个通都必转为否（atlas OW-R034）。",
    "reading_en": "AI reading: seven of the eleven \"cannot end in X\" steps fall inside a pair, where the next hexagram is the first turned over or changed in every line (order_paired); 剝窮上反下 names the turn literally (剝 turned over is 復). This part of 序卦 is lawful.",
-   "mapper": "yi"
+   "mapper": "yi",
+   "corrected": "Y5: 剝窮上反下 is also one step of the straight ring shift, where waxing and waning passes through 坤 (bo_fu)"
   },
   {
    "id": "xugua-between-pairs",
@@ -865,12 +899,27 @@
     "Becoming.shown_le_iff",
     "Becoming.Hexagram.order_paired",
     "Becoming.Hexagram.mem_order",
-    "Becoming.Hexagram.kept_history_unlisted"
+    "Becoming.Hexagram.kept_history_unlisted",
+    "Becoming.Hexagram.RunsOrder",
+    "Becoming.Hexagram.orderNext",
+    "Becoming.Hexagram.orderNext_runsOrder",
+    "Becoming.Hexagram.runsOrder_agrees",
+    "Becoming.Hexagram.runsOrder_lossless_iff",
+    "Becoming.Hexagram.orderNext_one_orbit",
+    "Becoming.Hexagram.runsOrder_reads",
+    "Becoming.Hexagram.runsOrder_blind_not_lumped",
+    "Becoming.Hexagram.ringRule_not_runsOrder",
+    "Becoming.Hexagram.twistedRule_not_runsOrder",
+    "Becoming.Hexagram.waxWane_not_runsOrder",
+    "Becoming.Hexagram.runsOrder_not_commutes",
+    "Becoming.Hexagram.rearrange_not_runsOrder",
+    "Becoming.Hexagram.runsOrder_not_lumped"
    ],
    "records": [
     "histories-fix-law-up-to-dead-ends",
     "process-and-frame-as-readings",
-    "hexagrams-on-the-spine"
+    "hexagrams-on-the-spine",
+    "hexagram-arrangements-and-laws"
    ],
    "atlas_ids": [
     {
@@ -899,7 +948,7 @@
     }
    ],
    "relational": "Between pairs the 序卦 gives reasons of the same form (cannot end in 否, so 同人; eating and drinking bring dispute, so 訟), but consecutive pairs stand in no relation the text names or a simple law gives.",
-   "reading": "AI读法：另四次\"不可终X\"落在两对之间（终否 否→同人、终过 大过→坎、终壮 大壮→晋、终止 艮→渐），在组态上没有已检查的关系。计算核对：受传卦序不是任何三格局部规则（256 条，循环或扭转边界）的运行，最多合 9/63 步；也不是任何\"置换六位并加掩码\"之律（720×64 条）的运行，最好的是翻转，只合 28/63 步，恰是对内翻转的那些；对与对之间的过渡改变一到六爻不等。所以序卦对对间次序给出的理由（饮食必有讼之类）是加在一个列表上的读法，不是组态所承载的承继之律。这回答 Yi 章 §8 的开放问题：卦序在对间是断言而非导出，只有对内是律。按 exists_law_iff，列表当然是它自己所显之律的运行，但那条律只接纳它自己（Run.keepHistory_shown），这正是\"断言\"的形式意义。",
+   "reading": "AI读法：另四次\"不可终X\"落在两对之间（终否 否→同人、终过 大过→坎、终壮 大壮→晋、终止 艮→渐），在组态上没有已检查的关系。Y5 在 Lean 中证明：运行受传卦序之律，除未济一处外都与取每卦至其后一卦之律相同，其中恰取未济至乾者不合并，六十四卦成一轨（runsOrder_agrees、runsOrder_lossless_iff、orderNext_one_orbit）；但这样的律每一爻皆读每一爻（runsOrder_reads），所以没有三格局部规则（循环或扭转边界，消息之律在内）运行它（ringRule_not_runsOrder、twistedRule_not_runsOrder、waxWane_not_runsOrder）；它不与翻转、全变或二者交换（runsOrder_not_commutes），而一切\"置换六位并加掩码\"之律都与全变交换，所以也没有这样的律运行它（rearrange_not_runsOrder）。脚本另算部分相合：三格局部规则最多合 9/63 步；置换加掩码之律最好的是翻转，合 28/63 步，恰是对内翻转的那些；对与对之间的过渡改变一到六爻不等。所以序卦对对间次序给出的理由（饮食必有讼之类）是加在一个列表上的读法，不是组态所承载的承继之律。这回答 Yi 章 §8 的开放问题，并改正那里“卦序本身不是任何律的轨道”之说：卦序是一张表之律的运行，不是只读部分构形或保持对称之律的运行；在对间是断言而非导出，只有对内是律。按 exists_law_iff，列表当然是它自己所显之律的运行，但那条律只接纳它自己（Run.keepHistory_shown），这正是\"断言\"的形式意义。",
    "reading_en": "AI reading: the received order is a run of no three-cell local rule (best 9 of 63 steps) and of no place-permutation-with-mask law (best 28 of 63, exactly the turned-over steps inside pairs); between pairs the order is asserted, its 序卦 reasons readings laid over a list. It is a run only of the law it shows, which admits only it.",
    "mapper": "yi",
    "gap": {
@@ -911,8 +960,10 @@
      "Becoming.Run.keepHistory_shown",
      "Becoming.shown_le_iff"
     ],
-    "why_it_matters": "It closes the open item of the Yi chapter (§8, why the order is as it is) with a checked negative: the 序卦 reasons are lawful inside the pairs and asserted between them. It is the strongest counterexample in this slice to reading the received text as relational law throughout, and it keeps the integrator from building a law of succession on the order."
-   }
+    "why_it_matters": "It closes the open item of the Yi chapter (§8, why the order is as it is) with a checked negative: the 序卦 reasons are lawful inside the pairs and asserted between them. It is the strongest counterexample in this slice to reading the received text as relational law throughout, and it keeps the integrator from building a law of succession on the order.",
+    "closed": "Y5 (Becoming.HexagramSequences), in a stronger form: (a) and (b) as runsOrder_reads, ringRule_not_runsOrder, twistedRule_not_runsOrder, runsOrder_not_commutes and rearrange_not_runsOrder, with the laws running the order characterized (runsOrder_agrees, runsOrder_lossless_iff, orderNext_one_orbit); the best partial agreements (9 and 28 of 63) and (c) stay script computations."
+   },
+   "corrected": "Y5 proved in Lean what the reading computed, in a stronger form, and corrected the 易传 chapter's claim that the order is the orbit of no law"
   },
   {
    "id": "xugua-fuzi-junchen",
@@ -969,11 +1020,22 @@
     "Becoming.Hexagram.both_fixed_iff",
     "Becoming.Hexagram.reverse",
     "Becoming.Hexagram.complement",
-    "Becoming.Hexagram.mem_order"
+    "Becoming.Hexagram.mem_order",
+    "Becoming.Hexagram.zagua",
+    "Becoming.Hexagram.zagua_every",
+    "Becoming.Hexagram.partner",
+    "Becoming.Hexagram.paired_iff_partner",
+    "Becoming.Hexagram.partner_partner",
+    "Becoming.Hexagram.partner_run",
+    "Becoming.Hexagram.order_partners",
+    "Becoming.Hexagram.zagua_partners",
+    "Becoming.Hexagram.zagua_last_eight",
+    "Becoming.Hexagram.zagua_not_commutes"
    ],
    "records": [
     "hexagrams-on-the-spine",
-    "hexagram-world-laws"
+    "hexagram-world-laws",
+    "hexagram-arrangements-and-laws"
    ],
    "atlas_ids": [
     {
@@ -1006,7 +1068,7 @@
     }
    ],
    "relational": "Each named pair is set side by side as a contrast: 剝 rots, 復 returns; 否 and 泰 reverse their kind; 革 removes the old, 鼎 takes the new. The contrast is between the two members of a pair, which the configurations relate by turning over or changing every line.",
-   "reading": "AI读法：计算核对：杂卦六十四名恰是受传卦序的同样三十二对；前五十六名是二十八个相邻对（随蛊、否泰兼翻转与全变；乾坤、小过中孚、离坎为全变；其余为翻转），末八名（大过 姤 渐 颐 既济 归妹 未济 夬）把余下四对交错排列，相邻者无一成对。所以杂卦所对举的，是脊柱已有的配对（order_paired、both_fixed_iff）；它保留对，丢掉对与对之间的次序，与 xugua-between-pairs（对间次序是断言）相合。\"反其类\"在否泰：二者既是翻转又是全变，\"反\"在两种意义上都成立。对举不是因果（atlas OW-R041、OW-R044）。Y1 未存杂卦原文。",
+   "reading": "AI读法：Y5 在 Lean 中写成（zagua_every、order_partners、zagua_partners、zagua_last_eight，其序由易传章的检查脚本与所存杂卦核对）：杂卦六十四名恰是受传卦序的同样三十二对；前五十六名是二十八个相邻对（随蛊、否泰兼翻转与全变；乾坤、小过中孚、离坎为全变；其余为翻转），末八名（大过 姤 渐 颐 既济 归妹 未济 夬）把余下四对交错排列，相邻者无一成对。所以杂卦所对举的，是脊柱已有的配对（order_paired、both_fixed_iff）；它保留对，丢掉对与对之间的次序，与 xugua-between-pairs（对间次序是断言）相合；运行杂卦之序的律也不与翻转、全变或二者交换（zagua_not_commutes）。\"反其类\"在否泰：二者既是翻转又是全变，\"反\"在两种意义上都成立。对举不是因果（atlas OW-R041、OW-R044）。Y1 未存杂卦原文，Y5 以本图谱所存之文核对。",
    "reading_en": "AI reading: 雜卦 holds the same 32 pairs as the received order, 28 adjacent and 4 interleaved in its last eight; its contrasts are the spine pairing (turned over or changed in every line). It keeps the pairs and drops the order between them.",
    "mapper": "yi",
    "gap": {
@@ -1017,8 +1079,10 @@
      "Becoming.Hexagram.both_fixed_iff",
      "Becoming.Hexagram.mem_order"
     ],
-    "why_it_matters": "It shows that the second arrangement in the 傳 keeps the pairs and drops the order between them, which separates what the 傳 layer carries (the pairing, lawful) from what it arranges (the sequence, asserted), and locates the one place the pairing is broken up (the close)."
-   }
+    "why_it_matters": "It shows that the second arrangement in the 傳 keeps the pairs and drops the order between them, which separates what the 傳 layer carries (the pairing, lawful) from what it arranges (the sequence, asserted), and locates the one place the pairing is broken up (the close).",
+    "closed": "Y5 (Becoming.HexagramSequences): zagua_every, zagua_partners and zagua_last_eight."
+   },
+   "corrected": "Y5 proved in Lean what the reading computed"
   },
   {
    "id": "zagua-guai-end",
@@ -1079,13 +1143,19 @@
     "Becoming.Flow.uncoupled_beyond_coupling",
     "Becoming.Flow.system_whole_of_common",
     "Becoming.Flow.unreached_within_system",
-    "Becoming.Withholding.withholding_absorbs"
+    "Becoming.Withholding.withholding_absorbs",
+    "Becoming.Hexagram.meets",
+    "Becoming.Hexagram.meets_tai_pi",
+    "Becoming.Hexagram.pi_of_tai",
+    "Becoming.Hexagram.kept_alike",
+    "Becoming.Hexagram.tai_pi_runs"
    ],
    "records": [
     "place-relations-in-context",
     "testing-within-registration",
     "levels-of-closure",
-    "giving-that-waits-on-giving"
+    "giving-that-waits-on-giving",
+    "hexagram-arrangements-and-laws"
    ],
    "atlas_ids": [
     {
@@ -1110,7 +1180,7 @@
     }
    ],
    "relational": "Passage among all things depends on whether upper and lower meet (交): where they meet, things pass through; where they do not, nothing passes and there is no common realm.",
-   "reading": "AI读法：后果一半有确切范围：在耦合闭包之外的部分，对闭包内每个形成都读不出差别（uncoupled_beyond_coupling）；一个共同条件使系统成为整体（system_whole_of_common）；系统之外的部分到达不了系统之内（unreached_within_system）；一处扣留在其所达之族中终止一切给予（withholding_absorbs）。\"不交而万物不通\"即：不在同一耦合闭包中，就没有通过。但\"交/不交\"不能从脊柱现有的位之关系读出：泰与否在每个高度都\"对\"（oppositions_glue_iff），二者在\"对\"之下完全相同。区别它们要把一个方向读入两值（天升地降，故天在下则交），这是额外前提，见 gap，交给 Y2–Y4。",
+   "reading": "AI读法：后果一半有确切范围：在耦合闭包之外的部分，对闭包内每个形成都读不出差别（uncoupled_beyond_coupling）；一个共同条件使系统成为整体（system_whole_of_common）；系统之外的部分到达不了系统之内（unreached_within_system）；一处扣留在其所达之族中终止一切给予（withholding_absorbs）。\"不交而万物不通\"即：不在同一耦合闭包中，就没有通过。但\"交/不交\"不能从为全变所保持的位之关系读出：泰与否在每个高度都\"对\"（oppositions_glue_iff），否是泰之全变，凡全变所保持之读法沿二者的消息历程每一步都相同（kept_alike、tai_pi_runs）。区别它们要把一个方向读入两值（天升地降，故天在下则交）：Y5 写作交（meets），泰三个高度皆交、否皆不交（meets_tai_pi）；这是一个读法，全变不保持它。",
    "reading_en": "AI reading: \"no meeting, no passage\" matches the coupling-closure laws (nothing beyond the closure reaches within; one withholding ends giving in its family). But 交 is not the opposition relation: 泰 and 否 are both opposed at every height; telling them apart needs a direction read into the values.",
    "mapper": "yi",
    "gap": {
@@ -1120,8 +1190,10 @@
      "Becoming.Hexagram.oppositions_glue_iff",
      "Becoming.Hexagram.halves_glues_iff"
     ],
-    "why_it_matters": "泰 and 否 are alike under every relation the spine states between the halves; the 彖’s 交/不交 separates them only by reading a direction into the two values. Stating it makes the added premise explicit. It belongs with the owners of the line relations (Y2–Y4)."
-   }
+    "why_it_matters": "泰 and 否 are alike under every relation the spine states between the halves; the 彖’s 交/不交 separates them only by reading a direction into the two values. Stating it makes the added premise explicit. It belongs with the owners of the line relations (Y2–Y4).",
+    "closed": "Y5 (Becoming.HexagramSequences): meets, meets_tai_pi, kept_alike, tai_pi_runs."
+   },
+   "corrected": "Y5 stated the direction the reading named as a gap"
   },
   {
    "id": "tuan-tai-junzi-xiaoren",
@@ -1259,12 +1331,24 @@
     "Becoming.Flow.Balances.rise_given",
     "Becoming.Flow.Balances.fall_taken",
     "Becoming.Flow.Balances.accumulates",
-    "Becoming.Hexagram.flip"
+    "Becoming.Hexagram.flip",
+    "Becoming.Hexagram.swap",
+    "Becoming.Hexagram.yang_swap",
+    "Becoming.Hexagram.across",
+    "Becoming.Hexagram.passing",
+    "Becoming.Hexagram.across_exchange",
+    "Becoming.Hexagram.named_exchanges",
+    "Becoming.Hexagram.exchangesRun",
+    "Becoming.Hexagram.exchangeWorld_balances",
+    "Becoming.Hexagram.exchangeWorld_rise_fall",
+    "Becoming.Hexagram.three_iff",
+    "Becoming.Hexagram.exchanges_from_tai_pi"
    ],
    "records": [
     "process-and-frame-as-readings",
     "rising-and-falling-in-one-exchange",
-    "becoming-dependence-dynamics"
+    "becoming-dependence-dynamics",
+    "hexagram-arrangements-and-laws"
    ],
    "atlas_ids": [
     {
@@ -1289,7 +1373,7 @@
     }
    ],
    "relational": "Decrease and increase are one movement read from its two ends: what the lower loses the upper gains (損), and the reverse (益); which is fitting depends on the time.",
-   "reading": "AI读法：计算核对：损即泰交换第三、六爻（一根阳爻由下卦移至上卦：损下益上），益即否交换第一、四爻（损上益下），阳爻总数不变。脊柱：平衡之流中每一升都有所给，每一降都有所取（rise_given、fall_taken），一段步上存量与摄取、补充相抵（accumulates），世界平衡当且仅当其所立按交换之律运行（balances_iff_exchange、exchange_step_iff）。所以损益在脊柱上不是\"失\"与\"得\"两种结果，而是一次交换从两端读。范围：这只在交换平衡时成立；\"与时偕行\"说明哪一端该增减取决于步，律不给出普遍的\"益下为善\"。atlas HX-R013 提醒不要从彖读出物质守恒：这里守恒的是交换两爻时的爻数，是组态的事实，不是彖的断言。卦变（交换两爻）脊柱无，见 gap。",
+   "reading": "AI读法：Y5 在 Lean 中写成（named_exchanges、yang_swap）：损即泰交换第三、六爻（一根阳爻由下卦移至上卦：损下益上），益即否交换第一、四爻（损上益下），阳爻总数不变。脊柱：平衡之流中每一升都有所给，每一降都有所取（rise_given、fall_taken），一段步上存量与摄取、补充相抵（accumulates），世界平衡当且仅当其所立按交换之律运行（balances_iff_exchange、exchange_step_iff）。所以损益在脊柱上不是\"失\"与\"得\"两种结果，而是一次交换从两端读。范围：这只在交换平衡时成立；\"与时偕行\"说明哪一端该增减取决于步，律不给出普遍的\"益下为善\"。atlas HX-R013 提醒不要从彖读出物质守恒：这里守恒的是交换两爻时的爻数，是组态的事实，不是彖的断言。卦变（交换两爻）已由 Y5 写成：下卦与上卦之间的相易是两卦之间交换之律的一步（across_exchange），一切相易之历程读为世界皆平衡（exchangeWorld_balances）；三阳三阴之卦二十，恰是泰、否与由之一易所得之十八卦，自泰否起的相易不出其外（three_iff、exchanges_from_tai_pi）。",
    "reading_en": "AI reading: 損 is 泰 with lines 3 and 6 exchanged (an unbroken line moves from the lower half to the upper), 益 is 否 with lines 1 and 4 exchanged; on the spine this is one balanced exchange read from its two ends, not loss and gain, and which end should rise depends on the step. The line exchange (卦變) is not on the spine.",
    "mapper": "yi",
    "gap": {
@@ -1301,8 +1385,10 @@
      "Becoming.Flow.Balances.fall_taken",
      "Becoming.Hexagram.yang"
     ],
-    "why_it_matters": "卦變 is the other open item of the Yi chapter (§8). The 彖 states movements of lines between the halves (損下益上, 損上益下, and in 恒, 咸, 隨, 蠱, 賁, 渙 剛上/柔下/柔來); the swap is the one structure under which these statements are exact, and it makes 損 and 益 one exchange read from two ends, joining the hexagram line to the Flow base. The conservation is of the line count under the swap, a fact of the configurations, not a claim of the text (atlas HX-R013)."
-   }
+    "why_it_matters": "卦變 is the other open item of the Yi chapter (§8). The 彖 states movements of lines between the halves (損下益上, 損上益下, and in 恒, 咸, 隨, 蠱, 賁, 渙 剛上/柔下/柔來); the swap is the one structure under which these statements are exact, and it makes 損 and 益 one exchange read from two ends, joining the hexagram line to the Flow base. The conservation is of the line count under the swap, a fact of the configurations, not a claim of the text (atlas HX-R013).",
+    "closed": "Y5 (Becoming.HexagramSequences): yang_swap, across_exchange, named_exchanges, exchangeWorld_balances, three_iff."
+   },
+   "corrected": "Y5 proved in Lean what the reading computed and what its gap named"
   },
   {
    "id": "cy-yi-xiahou",
@@ -1403,13 +1489,18 @@
     "Becoming.Hexagram.waxWane_returns",
     "Becoming.Flow.Balances.runs_down",
     "Becoming.Flow.uptake_needs_replenishment",
-    "Becoming.Web.dissipation_generation_not_recurring"
+    "Becoming.Web.dissipation_generation_not_recurring",
+    "Becoming.Hexagram.waxWane_moves",
+    "Becoming.Hexagram.run_never_rests",
+    "Becoming.Hexagram.never_comes_to_rest",
+    "Becoming.Hexagram.changes_run_never_rests"
    ],
    "records": [
     "seeking-boundary",
     "hexagrams-on-the-spine",
     "generation-is-replenishment",
-    "unceasing-generation-needs-renewal"
+    "unceasing-generation-needs-renewal",
+    "hexagram-arrangements-and-laws"
    ],
    "atlas_ids": [
     {
@@ -1426,7 +1517,7 @@
     }
    ],
    "relational": "Completion is not a resting place: stopping at the end brings disorder; the unfinished is what does not carry its course through to the end.",
-   "reading": "AI读法：已有图谱映射了既济\"刚柔正而位当\"与序卦\"受之以未济；终焉\"；\"终止则乱\"与\"不续终\"未映射。脊柱：确定之律的运行静止，当且仅当它到达一个律不改变的组态（rests_iff）；消息之律下没有这样的组态，六步即全变（six_steps），每个组态都回来（waxWane_returns），所以既济不是静止处。在流上：耗散之下存量每步下降（Balances.runs_down），持续摄取需要持续补充（uptake_needs_replenishment），只耗散而不恢复则生成不能不息（dissipation_generation_not_recurring），\"终止则乱\"即停止补充的展开衰退。消息之律无不动点，脊柱没有单独命名的引理，见 gap。",
+   "reading": "AI读法：已有图谱映射了既济\"刚柔正而位当\"与序卦\"受之以未济；终焉\"；\"终止则乱\"与\"不续终\"未映射。脊柱：确定之律的运行静止，当且仅当它到达一个律不改变的组态（rests_iff）；消息之律下没有这样的组态，六步即全变（six_steps），每个组态都回来（waxWane_returns），所以既济不是静止处。在流上：耗散之下存量每步下降（Balances.runs_down），持续摄取需要持续补充（uptake_needs_replenishment），只耗散而不恢复则生成不能不息（dissipation_generation_not_recurring），\"终止则乱\"即停止补充的展开衰退。消息之律无不动点，由 Y5 写成：没有构形为其不动点（waxWane_moves），其运行在任何一步都不止，也不自某步起止（run_never_rests、never_comes_to_rest），一爻之变的历程亦然（changes_run_never_rests）。",
    "reading_en": "AI reading: under the hexagram law no configuration is a rest (six steps change every line), so 既濟 is no resting place; on flows, stopping replenishment runs the stock down and generation cannot be unceasing. \"終止則亂\" matches.",
    "mapper": "yi",
    "gap": {
@@ -1437,8 +1528,10 @@
      "Becoming.Law.rests_iff",
      "Becoming.Hexagram.waxWane_returns"
     ],
-    "why_it_matters": "It states in one lemma what 既濟 \"終止則亂\" and Cheng Yi’s 无常止 claim of the hexagram world; the spine has it only through six_steps. Small."
-   }
+    "why_it_matters": "It states in one lemma what 既濟 \"終止則亂\" and Cheng Yi’s 无常止 claim of the hexagram world; the spine has it only through six_steps. Small.",
+    "closed": "Y5 (Becoming.HexagramSequences): waxWane_moves, run_never_rests, never_comes_to_rest, changes_run_never_rests."
+   },
+   "corrected": "Y5 stated the lemma the reading named as a gap"
   },
   {
    "id": "cy-jiji-wuchangzhi",
