@@ -119,6 +119,7 @@ Aliases: `the sixty-four hexagrams on the spine`, `六十四卦在脊柱上`, `�
 - 19 October 2026, Y3: the related record hexagram-world-laws added (study section 198, decision D51); YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 added its passages, widened four passages of Y1 to its declarations, and added its chapter text, study section and section 1 paragraph). The claim is unchanged.
 - 19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section; THE-THEORY-OF-BECOMING.md: SG added the section 1 paragraphs on where a configuration is lost and what a commuting law keeps apart, the section 3 item on the liar with a third value, glossary rows, section 8.2 and 8.3 items, and revised the section 9 receipt and connectivity text). The claim is unchanged.
 - 19 October 2026, Y3 follow-up after SG: YI-ZHUAN-AND-BECOMING.md, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 states two of its laws as instances of SG's Law.Commutes.iterate and Law.Commutes.apart; study section 198 and the chapter on the 易传 say so). The claim is unchanged.
+- 19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.
 
 </details>
 

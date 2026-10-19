@@ -262,8 +262,8 @@
       "kind": "correspondence"
     },
     {
-      "en": "The ranks of the places (尊位, 貴賤); whether the bottom and top places have a place (初上无位); one line answered by all others (上下應之, 乘五剛); statements of place outside the four censuses; 王弼's 《周易略例》, not preserved here.",
-      "zh": "位的尊卑（尊位、贵贱），初上两位是否有位（初上无位），一爻为众爻所应（上下應之、乘五剛），以及四项普查之外关于位的言说（爻辞、大象、文言）；王弼《周易略例》未存于本库，未对照。",
+      "en": "The ranks of the places (尊位, 貴賤); whether the bottom and top places have a place (初上无位); one line answered by all others (上下應之, 乘五剛); statements of place outside the four censuses; 王弼's 《周易略例》, not preserved here. The censuses of the sixty-four by each count, which the earlier repository states.",
+      "zh": "位的尊卑（尊位、贵贱），初上两位是否有位（初上无位），一爻为众爻所应（上下應之、乘五剛），以及四项普查之外关于位的言说（爻辞、大象、文言）；王弼《周易略例》未存于本库，未对照。六十四卦按各计数的普查（早期仓库已陈述）也未重述。",
       "kind": "scope"
     },
     {
@@ -666,13 +666,25 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "4ebebd483628097c348bac4b1f04e9065041e22bc9e47d86ddc60eb44b707f71"
+      "sha256": "b5f428f44cba764c421865385b6deb0ba648e99df070b6bdc050cdecbdcce8bc"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
       "sha256": "b16b6506806af57b61b098d014126b21c22903a314fc8ae9d9fed943be168a12"
+    },
+    {
+      "path": "sources/07-shengsheng-buxi/ssbx-repo/formal-notes/zhouyi-position-operator-report.md",
+      "role": "provenance",
+      "declarations": [],
+      "sha256": "2756622016e4314bc299253776f46322655b2fad78ebcf53213f44ffee6f81e3"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md",
+      "role": "review",
+      "declarations": [],
+      "sha256": "8d59eec11ae07e213b069462f4b2eee39d70571c71dbc368a4ce30005487ed11"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -780,6 +792,10 @@
     {
       "en": "19 October 2026, Y3 follow-up after SG: YI-ZHUAN-AND-BECOMING.md, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 states two of its laws as instances of SG's Law.Commutes.iterate and Law.Commutes.apart; study section 198 and the chapter on the 易传 say so). The claim is unchanged.",
       "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，YI-ZHUAN-AND-BECOMING.md、BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向（Y3 把其两条律写作 SG 的 Law.Commutes.iterate 与 Law.Commutes.apart 之实例）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 follow-up: the earlier work on the places, the 生生不息 repository's HexagramPosition.lean (its commit efd892a5; its Lean is not preserved here), its preserved report on places and operators and item H6 of the review of that repository, is cited in study section 195: where the definitions agree, where they part (its 比 counts neighbours of one kind), what is proved here that it left unproved, and the review's H6 revised (the pattern of 應 is a lumping, its count is not). The references to the report and the review are added and the study reference re-pointed. The claim is unchanged.",
+      "zh": "2026年10月19日，Y2 补记：早期关于爻位的工作，即《生生不息》仓库的 HexagramPosition.lean（其提交 efd892a5；其 Lean 未保存于本库）、所存的位与算子报告、该仓库审读的 H6 项，在研究第 195 节中注明：定义相合之处、相分之处（其「比」数同性相邻）、此处证明而彼处未证的、审读 H6 的修订（應的样式是聚合，其数目不是）。新增对报告与审读的引用，研究的引用重新指向。论断不变。"
     }
   ]
 }

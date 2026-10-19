@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """Move Y2's row from the live board to the history file (board rule 4), in place, for the landing commit.
 
-usage (from the repository root): python3 -B board_move.py STATE
+usage (from the repository root): python3 -B board_move.py STATE [PREFIX]
   STATE  the new state cell, written with links relative to the live board (they are re-rooted for the history file)
+  PREFIX the start of the row to move (default: Y2's row; Y2b passes its own)
 The landing commit holds the move, so the state names the receipt and record, not the commit's own hash."""
 import sys
 from pathlib import Path
 
 BOARD = '_process/BECOMING-WORKBOARD.md'
 HISTORY = '_process/history/workboard/BECOMING-WORKBOARD-2026-10-11_to_2026-10-17.md'
-PREFIX = '| **Y2: the relations of the places in the Changes** '
+PREFIX = sys.argv[2] if len(sys.argv) > 2 else '| **Y2: the relations of the places in the Changes** '
 state = sys.argv[1]
 board = Path(BOARD).read_text(encoding='utf-8')
 history = Path(HISTORY).read_text(encoding='utf-8')
@@ -27,4 +28,4 @@ last = max(i for i, line in enumerate(hist[:stop]) if line.startswith('| **'))
 hist.insert(last + 1, row)
 Path(BOARD).write_text('\n'.join(lines), encoding='utf-8')
 Path(HISTORY).write_text('\n'.join(hist), encoding='utf-8')
-print('moved Y2 row to', HISTORY, 'after line', last + 1)
+print('moved', PREFIX.strip(), 'to', HISTORY, 'after line', last + 1)

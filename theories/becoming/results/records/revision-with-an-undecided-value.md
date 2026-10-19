@@ -85,6 +85,7 @@ Aliases: `revision with an undecided value`, `带未定值的修正`, `the gap r
 
 - 19 October 2026: added (SG, general law G3 of the review of the earlier 生生不息 repository), on Ren's request that the earlier repository be read for what can be integrated ("please take a look of this … many insights can be integrated", abridged as quoted with the review); study section 199.
 - 19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198; THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.
+- 19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.
 
 </details>
 

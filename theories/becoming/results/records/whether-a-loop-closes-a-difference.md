@@ -85,6 +85,7 @@ Aliases: `whether a loop closes a difference`, `回路是否闭合差别`, `clos
 - 19 October 2026, Y3 (Becoming.HexagramLaws): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y3 added a study section). The claim is unchanged.
 - 19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section). The claim is unchanged.
 - 19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198). The claim is unchanged.
+- 19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.
 
 </details>
 

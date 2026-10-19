@@ -106,6 +106,7 @@ Aliases: `what a commuting law keeps apart`, `交换之律保持什么分开`, `
 - 19 October 2026: added (SG, general law G2 of the review of the earlier 生生不息 repository), on Ren's request that the earlier repository be read for what can be integrated ("please take a look of this … many insights can be integrated", abridged as quoted with the review); study section 199.
 - 19 October 2026, Y3 follow-up: Becoming.HexagramLaws states its two laws of 互 under the symmetries as instances of Law.Commutes.iterate and Law.Commutes.apart (study section 198), so the related record hexagram-world-laws is named and 互 leaves the next delta; groups of symmetries stay. The claim is unchanged.
 - 19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198; THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.
+- 19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.
 
 </details>
 

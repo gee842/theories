@@ -33,7 +33,7 @@
 ## Does not show
 
 - What any passage says of the places beyond these relations; the passage map of the chapter states, passage by passage, agreement, exact scope or divergence, and its readings are the AI's.
-- The ranks of the places (尊位, 貴賤); whether the bottom and top places have a place (初上无位); one line answered by all others (上下應之, 乘五剛); statements of place outside the four censuses; 王弼's 《周易略例》, not preserved here.
+- The ranks of the places (尊位, 貴賤); whether the bottom and top places have a place (初上无位); one line answered by all others (上下應之, 乘五剛); statements of place outside the four censuses; 王弼's 《周易略例》, not preserved here. The censuses of the sixty-four by each count, which the earlier repository states.
 - That being in phase, opposed, central or rising is good, fortunate or supports 生生; the module has no ethical predicate and no judgment of fortune.
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
@@ -95,6 +95,8 @@ Continues hexagrams-on-the-spine (Y1), which listed the relations of the places 
 | integration | [verify_mapping.py](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
+| provenance | [zhouyi-position-operator-report.md](../../../../sources/07-shengsheng-buxi/ssbx-repo/formal-notes/zhouyi-position-operator-report.md) | — |
+| review | [SSBX-REPOSITORY-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md) | — |
 | provenance | [PROVENANCE.json](../../../../sources/zhouyi-yizhuan/PROVENANCE.json) | — |
 | provenance | [2026-10-19-the-changes-on-the-spine.md](../../../../sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json) | — |
@@ -113,6 +115,7 @@ Aliases: `the relations of the places`, `爻位之关系`, `應`, `应`, `比`, 
 - 19 October 2026, Y3: the nuclear law and the cast, listed in the next delta, are now the record hexagram-world-laws (study section 198, decision D51), stated on the configurations; reading them on these sites stays next; YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 added its passages, chapter text, study section and section 1 paragraph). The claim is unchanged.
 - 19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section; THE-THEORY-OF-BECOMING.md: SG added the section 1 paragraphs on where a configuration is lost and what a commuting law keeps apart, the section 3 item on the liar with a third value, glossary rows, section 8.2 and 8.3 items, and revised the section 9 receipt and connectivity text). The claim is unchanged.
 - 19 October 2026, Y3 follow-up after SG: YI-ZHUAN-AND-BECOMING.md, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 states two of its laws as instances of SG's Law.Commutes.iterate and Law.Commutes.apart; study section 198 and the chapter on the 易传 say so). The claim is unchanged.
+- 19 October 2026, Y2 follow-up: the earlier work on the places, the 生生不息 repository's HexagramPosition.lean (its commit efd892a5; its Lean is not preserved here), its preserved report on places and operators and item H6 of the review of that repository, is cited in study section 195: where the definitions agree, where they part (its 比 counts neighbours of one kind), what is proved here that it left unproved, and the review's H6 revised (the pattern of 應 is a lumping, its count is not). The references to the report and the review are added and the study reference re-pointed. The claim is unchanged.
 
 </details>
 
