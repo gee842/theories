@@ -332,3 +332,25 @@ Records: [worlds-are-runs](../../../../theories/becoming/results/records/worlds-
 - **Own-module laws (G3).** 172 statements read their module's own law through a run: HexagramLaws 26, Undecided 23, Pace 22, Withholding 21, Hexagrams 15, SharedCodes 15, LoopReturn 14, Tolerance 13, Dephasing 11, HexagramSequences 5, Attraction 4 and Recurrence 3 (the laws of `Law.withHistory`). Closing them by instance theorems to the World family is R33's (G6, G7).
 - **Apart by design.** Of the 481 apart, 50 are general structure by design and 431 are apart otherwise. The roots' categories are unchanged: model witness 205, support 86, general structure 33, logical strength 10, restates 10, calibration 2.
 - **Records by best class.** Two records' best theorem is in the G3 class (113 on the Process family, 115 before); the rest are unchanged. The periphery has no forwarder target or G3 statement, and its classes are unchanged.
+
+**After R32: the tree without forwarders, copies and reading modules.** On `31ad67cec` (core receipt 20261019T225814.056669Z), after R32 removed 173 pure forwarders, 61 copies of statements stated elsewhere and two helpers only a removed copy used, and folded 26 reading and small modules into the modules they read ([study §223](BECOMING-RENEWAL-READING.md#223-forwarders-copies-and-reading-modules-r32)), against the baseline above:
+
+| Class | Baseline (R31's tree) | After R32 |
+|---|---:|---:|
+| Statement on both families | 866 | 850 |
+| Statement on Process/Frame/Run/Trace | 2,949 | 2,856 |
+| Statement on World/Flow/Web | 2,614 | 2,571 |
+| Statement on the base only through a law of its own module | 172 | 172 |
+| Proof through a family | 151 | 150 |
+| Used by a theorem on the base | 4,186 | 4,108 |
+| Instance on the base recorded | 147 | 150 |
+| Apart: own vocabulary | 446 | 440 |
+| Apart: prelude-only statement | 35 | 33 |
+| **Apart, total** | **481** | **473** |
+| **Theorems** | **11,566** | **11,330** |
+
+- **What left.** The 236 theorems removed were 93 statements on the Process family, 43 on the World family, 16 on both, 76 used by a theorem on the base, one proved through a family and seven apart: six forwarders whose register entries said they restated or witnessed a law of their own vocabulary, and one copy of a prelude-only statement. Of the theorems that stay, four changed class. `ChanceFloors.or_true`, now stated once in `Becoming.Prelude`, is used on the base through the former users of its copy (it was apart, prelude-only). Three laws whose forwarder on the base was removed are now "instance on the base recorded" instead of "used by a theorem on the base".
+- **Instances kept as data.** Where a removed forwarder on the base was the only record of its law's instance, the register's `instances` list keeps it: 92 entries, each naming the base constants the forwarder's statement used and the forwarder ([`instances.py`](development/r32-folds/instances.py)). Without them those laws would stand apart although their instances were stated until R32. With them no law's class drops because a name was removed.
+- **Forwarders left.** 47 pure forwarders remain, 40 of them on the base. Twenty-two are cited by text that is not re-pointed: the chapter, the chapters on the Chinese sources and the 易传, OPENING, and the checked passage maps. Thirteen name a witness. Twelve are kept for dot notation or because their uses need their statement ([`table.py`](development/r32-folds/table.py) lists them with the reason).
+- **Apart by design.** Of the 473 apart, 49 are general structure by design and 424 are apart otherwise. The roots' categories: model witness 205, support 83, general structure 33, logical strength 10, restates 9, calibration 2. Seven register entries naming removed theorems moved to the kit's [apart-retired.json](development/r32-folds/apart-retired.json), and three laws the removed forwarders restated took their entries.
+- **Records by best class.** Two records whose best theorem was on the World family now have as best a law whose instance the register records; the rest are unchanged. `finite-joining-tree-lifting` still rests only on apart theorems.
