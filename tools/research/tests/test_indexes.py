@@ -112,6 +112,17 @@ class IndexTests(unittest.TestCase):
         self.assertEqual(status('K.md'), 'kept')
         self.assertEqual(status('CLAIMS.md', {'theories/becoming/chapters/CLAIMS.md'}), 'generated')
 
+    def test_stated_date_reads_the_first_date_in_any_of_three_forms(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            for name, head in (('a.md', '# A\n\n19 October 2026. See [x](../2026-10-06-x/README.md).'),
+                               ('b.md', '# B\n\nWritten 2026-10-19.'),
+                               ('c.md', '# C\n\n2026年10月9日。审读，见 [x](../2026-10-06-x/README.md)。'),
+                               ('d.md', '# D\n\nNo date.')):
+                (root / name).write_text(head)
+            self.assertEqual([indexes.stated_date(n, root) for n in ('a.md', 'b.md', 'c.md', 'd.md')],
+                             ['2026-10-19', '2026-10-19', '2026-10-09', ''])
+
     def test_section_11_table_is_read(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

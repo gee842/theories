@@ -261,17 +261,20 @@ ROOT_KINDS = [
 
 
 def stated_date(path: str, root: Path = ROOT) -> str:
-    """The first date a document states in its opening lines (`17 October 2026` or `2026-10-17`)."""
+    """The first date a document states in its opening lines (`17 October 2026`, `2026-10-17` or `2026年10月17日`)."""
     months = 'January February March April May June July August September October November December'.split()
     try:
         head = '\n'.join((root / path).read_text(errors='replace').splitlines()[:25])
     except OSError:
         return ''
-    m = re.search(r'\b(20\d\d)-(\d\d)-(\d\d)\b|\b(\d{1,2}) (' + '|'.join(months) + r') (20\d\d)\b', head)
+    m = re.search(r'\b(20\d\d)-(\d\d)-(\d\d)\b|\b(\d{1,2}) (' + '|'.join(months) + r') (20\d\d)\b'
+                  r'|(20\d\d)年(\d{1,2})月(\d{1,2})日', head)
     if not m:
         return ''
     if m.group(1):
         return '-'.join(m.group(1, 2, 3))
+    if m.group(7):
+        return f'{m.group(7)}-{int(m.group(8)):02d}-{int(m.group(9)):02d}'
     return f'{m.group(6)}-{months.index(m.group(5)) + 1:02d}-{int(m.group(4)):02d}'
 
 
