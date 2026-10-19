@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-269 registered results: 253 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 681 curated edges join 223 results to the results they draw on.
+270 registered results: 254 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 684 curated edges join 224 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -118,6 +118,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [learning-by-refutation][] ← <a id="learning-by-refutation--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="learning-by-refutation--testing-within-registration"></a>[testing-within-registration][] *(interpretive)*
 - [least-footprint-where-idleness-decided][] ← <a id="least-footprint-where-idleness-decided--order-of-exchanges-is-the-invariant"></a>[order-of-exchanges-is-the-invariant][]
 - [least-loss-from-entropy-production][] ← <a id="least-loss-from-entropy-production--entropy-history-and-record"></a>[entropy-history-and-record][] · <a id="least-loss-from-entropy-production--rest-at-every-resolution"></a>[rest-at-every-resolution][] · <a id="least-loss-from-entropy-production--continued-change-needs-openness"></a>[continued-change-needs-openness][]
+- [least-loss-rest][] ← <a id="least-loss-rest--no-finite-part-bears-taking"></a>[no-finite-part-bears-taking][] · <a id="least-loss-rest--continued-change-needs-openness"></a>[continued-change-needs-openness][] · <a id="least-loss-rest--space-and-its-parts"></a>[space-and-its-parts][]
 - [levels-of-closure][] ← <a id="levels-of-closure--feeding-closure"></a>[feeding-closure][] · <a id="levels-of-closure--loss-beyond-a-region"></a>[loss-beyond-a-region][] · <a id="levels-of-closure--one-axiom-yields-g0"></a>[one-axiom-yields-g0][] · <a id="levels-of-closure--becoming-spine-instances"></a>[becoming-spine-instances][]
 - [life-as-condition-of-life][] ← <a id="life-as-condition-of-life--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][] · <a id="life-as-condition-of-life--more-needs-renewers"></a>[more-needs-renewers][] · <a id="life-as-condition-of-life--condition-correspondence-discipline"></a>[condition-correspondence-discipline][] · <a id="life-as-condition-of-life--metaethical-core-characterization"></a>[metaethical-core-characterization][]
 - [lifting-where-branching-is-finite][] ← <a id="lifting-where-branching-is-finite--tests-fix-likeness-where-determined"></a>[tests-fix-likeness-where-determined][]
@@ -356,6 +357,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [learning-by-refutation]: theories/becoming/results/records/learning-by-refutation.md
 [least-footprint-where-idleness-decided]: theories/becoming/results/records/least-footprint-where-idleness-decided.md
 [least-loss-from-entropy-production]: theories/becoming/results/records/least-loss-from-entropy-production.md
+[least-loss-rest]: theories/becoming/results/records/least-loss-rest.md
 [levels-of-closure]: theories/becoming/results/records/levels-of-closure.md
 [life-as-condition-of-life]: theories/becoming/results/records/life-as-condition-of-life.md
 [lifting-where-branching-is-finite]: theories/becoming/results/records/lifting-where-branching-is-finite.md

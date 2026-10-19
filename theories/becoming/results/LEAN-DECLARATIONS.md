@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 286 | 10,994 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 287 | 11,068 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -489,6 +489,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Learning.lean](lean-declarations/becoming-core.md#module-d65f42130cd4) | Becoming pure core |
 | [LearningCorrespondence.lean](lean-declarations/ethics.md#module-2aadf9f9573e) | Normative grounding and generative direction |
 | [LearningRuns.lean](lean-declarations/becoming-core.md#module-9f33b42f8566) | Becoming pure core |
+| [LeastLoss.lean](lean-declarations/becoming-core.md#module-359473829457) | Becoming pure core |
 | [LegacyReconciliation.lean](lean-declarations/other.md#module-b662dec55785) | Other formal studies |
 | [LevelCoupling.lean](lean-declarations/becoming-core.md#module-41d793a8ed35) | Becoming pure core |
 | [LevelWebs.lean](lean-declarations/becoming-core.md#module-b2bdcc78226b) | Becoming pure core |

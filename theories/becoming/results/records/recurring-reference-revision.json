@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "4e5547d2b3e38a0545c17ac38c72e361e230489cc39a04628b2d09cfd2f12e64",
+      "sha256": "6385793b149a375f3f07cc59667d9feb8451e4c1d2538d4adf3e5c43fbe4124a",
       "declarations": []
     },
     {
@@ -701,6 +701,10 @@
     {
       "en": "19 October 2026, PT1 (place/transition nets on the spine): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: PT1 added a section 8.7 bullet on place/transition nets, a rerun sentence in the section 8.2 integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
       "zh": "2026年10月19日，PT1（脊柱上的库所/变迁网）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, LL1 (the least loss as a premise of rest): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only where LL1 added text: LL1 added to the dissipation row and the natural-number amounts row where the least loss is a premise (Becoming.LeastLoss); LL1 restated the last sentence of \"Limits of the rest theorem\" as the least-loss law, the approach to rest and the join with recurrence; LL1 added to the entropy and recurrence row (its open item and the record least-loss-rest), a rerun sentence in the integration row, and sentences in sections 8.6 and 8.7; LL1 revised the receipt sentence and counts; LL1 extended the sentence of item 4 on the rest theorem's whole unit with the least-loss law, the approach to rest and the join with recurrence. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，LL1（最小损失作为停息的前提）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在 LL1 加文之处改动：第 0 节（LL1 在耗散行与自然数量行加入最小损失作为前提之处）；第 1 节（LL1 把“停息定理的界限”末句重述为最小损失律、趋近停息与复现的连接）；第 8 节（LL1 在熵与复现行加入开放项与记录 least-loss-rest，在整合行加入一句重跑，在第 8.6、8.7 节加句）；第 9 节（LL1 更新回执句与计数）；完整陈述（LL1 在第 4 条关于整数单位的一句后加入最小损失律、趋近停息与复现的连接）。重新指向前已读。论断不变。"
     }
   ]
 }
