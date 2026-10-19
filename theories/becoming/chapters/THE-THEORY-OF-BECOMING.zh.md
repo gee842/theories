@@ -626,7 +626,7 @@ AI 的分析把提议分为两半：动力学定出一个想要延续者必须�
 - **整体优先**（[whole-first-and-bounded-centers](../results/records/whole-first-and-bounded-centers.md)）。有意义者越少，保留的越多（`Web.Retains.of_fewer`）；以区域为界的意义，保留的是区域之内被接纳的（`Web.retains_bounded_iff`）。在条件之下，在整体中保留的，在每个区域内都保留，无论是系统的还是自身的（`Web.Retains.within`）；在系统内成立的，在其内每个区域都成立（`Web.AdmitsWithin.narrow`）。反过来不成立。在 `Clearing` 中，让每个形成的意义止于其延续所依存的：从清除者的立场，它的部分在每一步都保留有意义者；从栖居者的立场，它失去栖居者（`Clearing.centers_disagree`）。在条件之下，从每个立场它都失去栖居者；而无此部分时每个形成每步都被接纳，清除者每步都被支持，所以扣留这个部分不终结任何东西（`Clearing.free_rider_loses`，一个构造的世界中的见证，清除者被规定为活跃）。这给出 Ren 的层级次序（整体，其次是所在的系统，然后是自身），作为判断完整性的次序，不是生命实际做什么〔AI 读法，D43〕。
 - **所表示的动力学不推出意义。** 没有任何东西有意义时，每条水平路径保留每一条，没有一条增加，生命意义在任何活的事件上都不成立；一切都有意义时它成立（`Web.significance_undetermined`）。定理比较处处成立的意义与处处不成立的意义，这是一个不由 `World` 数据构造的自由参数。它表明不含意义的所表示动力学不推出意义；它不是生成／变化使意义不定的证据。以区域为界的意义与条件一样，也是被给出的。Ren 说自身“can not justify itself without some sort of "belief"”，这里读作：以自身为界的意义也是一个前提。
 
-**读 Ren 的话。** `Unrestricted` 读 Ren 提议的条件：形成的索引读“anything”，形成在一步的延续读“its continuation into the future”，立场的索引读“has significance”不加限定、没有哪个中心特殊。意义不分等级，也如 Ren 所说不必是正面的。保留读“as long as not harm”：有部分的水平保留无它时的有意义者，部分就不损。增加读“create more significance”与“more possibilities of becoming”：还增加时，部分是生成的。在条件之下，§6.7 的读法（自身意义为想要，立场中立为中心）是推论：条件给出每个立场的自身意义与立场中立。
+**读 Ren 的话**〔AI 读法，D16〕。 `Unrestricted` 读 Ren 提议的条件：形成的索引读“anything”，形成在一步的延续读“its continuation into the future”，立场的索引读“has significance”不加限定、没有哪个中心特殊。意义不分等级，也如 Ren 所说不必是正面的。保留读“as long as not harm”：有部分的水平保留无它时的有意义者，部分就不损。增加读“create more significance”与“more possibilities of becoming”：还增加时，部分是生成的。在条件之下，§6.7 的读法（自身意义为想要，立场中立为中心）是推论：条件给出每个立场的自身意义与立场中立。
 
 **这一步不推出的。** 从意义到理由的一步（A）、提升（L）与实践判断（实践承诺）；为混合部分定序的度量；形成在哪个层次个体化（成员或谱系），它决定什么算失去；生命意义的 `living` 指哪种读法（`Preemption` 表明两种读法不同）；条件本身的规范根据。承认与动机属于不用公理的路线（§6.9）。在 `Clearing.centers_disagree` 中，以其实际依存为所表示边界的中心仍容许搭便车者；§6.9 表明，没有条件时，只有依存到达所关闭者，这一损失才显出。以条件为假设，生命意义是定理，在主张层面直接推出；经不用公理的规律，“不损”与“生成”有了精确的形式。生命意义本身不是公理（§5、§6.12）。
 
@@ -645,9 +645,9 @@ AI 还提出两种不需要前提的机制：“selection between wholes: wholes
 - **约束沿供给而行**（[consumption-ends-with-feeders](../results/records/consumption-ends-with-feeders.md)）。供给者都不被支持时，消耗随之终结（`Flow.Balances.consumption_ends_with_feeders`）。`Overshoot` 中，一个在其所需条件上保住支持的形成，经其供给者终结（`Overshoot.ends_through_feeder`）；`Clearing` 中，栖居者终结，而清除者的闭包延续（`Clearing.closure_supported`）。
 - **路线与条件在哪里相合**（[closure-verdict-meets-axiom](../results/records/closure-verdict-meets-axiom.md)）。以整体为界的意义就是条件（`bounded_whole`）。另一条路径接纳的每个形成都在区域之内、或被第一条接纳之处，以区域为界的意义与包含一样保留（`Web.retains_bounded_iff_includes`）；在条件之下，两个判断此时一致（`Web.retains_bounded_iff_retains`）。在条件之下，一个形成的供给闭包是整体时，闭包内的判断在每个比较上都是条件的判断（`Flow.within_closure_iff_retains`），如 `Overshoot`（`Overshoot.within_closure_iff_retains`）。在条件之下，它的判断决定每个区域内的判断（`Web.Retains.within`）。`Clearing` 中两者分开：从清除者的立场，它的部分保留其闭包内的有意义者；在条件之下它失去栖居者；从栖居者的立场、在栖居者自己的闭包内，它也失去栖居者（`Clearing.within_closure_yet_loses`）。
 
-**读法。** 供给闭包读“what it actually depends on”。它不用公理就到达；中心怎样表示它没有建模。想要自身延续、并表示其闭包的中心，有它自己的理由保留闭包之内的：那里的损失可以返回到它，如 `Overshoot`。这解释动机，不是根据。约束沿供给而行：损失经供给者返回中心，闭包之外的不向闭包内供给。整体之间的选择保留延续的整体：它淘汰 `Overshoot` 的整体，因为那个整体终结；保留 `Clearing` 的整体，那里清除者延续而栖居者终结。两种机制都到不了返回不到任何人的损失。
+**读法**〔AI 读法，D17、D18、D19〕。 供给闭包读“what it actually depends on”。它不用公理就到达；中心怎样表示它没有建模。想要自身延续、并表示其闭包的中心，有它自己的理由保留闭包之内的：那里的损失可以返回到它，如 `Overshoot`。这解释动机，不是根据。约束沿供给而行：损失经供给者返回中心，闭包之外的不向闭包内供给。整体之间的选择保留延续的整体：它淘汰 `Overshoot` 的整体，因为那个整体终结；保留 `Clearing` 的整体，那里清除者延续而栖居者终结。两种机制都到不了返回不到任何人的损失。
 
-层次由反馈与所及的结果分开（§2、§6.10）。供给闭包在影响闭包之内，影响闭包与所及闭包都在系统之内，每个包含都可以是严格的（`Clearing.levels`、`Clearing.reach_middle`、`Trophic.mediates`）。系统不读 Ren 中间的层次“the system that one is in”：每个形成都参与一个条件时，系统就是整体；系统划分形成，没有嵌套，也没有中心。为那一读法提供的是所及闭包（§6.10）〔AI 读法〕。`Becoming.Interdependence` 的模块说明也这样说：供给闭包不读作那个系统，`Becoming.Feedback` 提供所及闭包。
+层次由反馈与所及的结果分开（§2、§6.10）。供给闭包在影响闭包之内，影响闭包与所及闭包都在系统之内，每个包含都可以是严格的（`Clearing.levels`、`Clearing.reach_middle`、`Trophic.mediates`）。系统不读 Ren 中间的层次“the system that one is in”：每个形成都参与一个条件时，系统就是整体；系统划分形成，没有嵌套，也没有中心。为那一读法提供的是所及闭包（§6.10）〔AI 读法，D20〕。`Becoming.Interdependence` 的模块说明也这样说：供给闭包不读作那个系统，`Becoming.Feedback` 提供所及闭包。
 
 所以路线 (b) 到达自身及其所依存的；只在整体是一个供给闭包时到达整体，那时它的判断就是条件的判断。条件所加的，是那些损失返回不到任何人的延续的意义，如栖居者的。Ren 写道整体可以实现自身，“like us, we recognize that "we" are the universe/ecosystem that realizes its own existence”。以整体为所表示边界的中心，持有的就是条件的意义（`bounded_whole`）；路线 (b) 要求所表示的边界与实际依存一致，所以只在依存到达整体时给出这一意义。
 
@@ -671,7 +671,7 @@ AI 对留下的问题的回答（同一来源，AI 的话）提出：供给闭�
 - **比较在所及之内决定**（[comparison-within-reach](../results/records/comparison-within-reach.md)）。在平衡的流中，以扣留后的水平，覆盖部分在每步之前已到达者的任何意义，对这个部分作与条件相同的比较：保留恰如包含，不增加恰如不超出（`Flow.Balances.comparison_within_reach`；条件之下的比较见 `Web.retains_iff_includes`、`Web.adds_iff_exceeds`）。这推进 §6.9 的 `Web.retains_bounded_iff_includes`：那里要求另一条路径接纳的每个形成都在区域之内、或被第一条接纳；这里只要求意义覆盖部分所到达的（[closure-verdict-meets-axiom](../results/records/closure-verdict-meets-axiom.md)）。以对影响封闭的区域为界的意义，对区域之内的每个部分作与条件相同的比较（`Flow.Balances.closed_comparison`）；每个中心的系统都是整体时，以系统为界的意义就是条件（`Flow.bounded_system_whole`）。`Clearing` 中，以各影响闭包为界，清除者的部分保留；以各所及闭包为界，它失去栖居者，与条件之下一样，而这一意义不是条件（`Clearing.system_counts_dweller`、`Clearing.reach_counts_dweller`）。起始相同的任意两个流，其比较在两者的差别所到达者之内决定（`Flow.Balances.comparison_within_difference`）。
 - **两种反事实。** 以扣留水平的比较固定其余交换：它只随部分直接的交换。经他者回应的效果，如狼群经鹿对森林的作用，只出现在他者有回应的比较中。其余交换固定时，狼群的部分缩小，到达不了森林；对照鹿有回应的流，它是混合的（`Trophic.mediated_uncoupled`、`Trophic.responsive_mixed`、`Trophic.difference_reaches_forest`）。部分给出他者所取时，无此部分的水平可以不存在，就没有这样的比较（`Clearing.no_levels_without_source`）。
 
-**读法。**
+**读法**〔AI 读法，D20〕。
 - 影响闭包读一个形成自身的反馈所能及的，此时效果经他者的支持与活动传递。其余交换固定时，只有到达它的部分显出。
 - 反馈与部分的交换方向相反。形成的反馈至多及于其影响闭包，即能影响它的；它自身的部分到达其所及闭包，即它能影响的。只看重其反馈所及者的中心，在部分只到达那个闭包之内时，对自身部分作与条件相同的比较（`Flow.Balances.comparison_local`）；部分到达其外时，它可以误判，如清除者；到达其外本身不使它误判（`Margin.reach_without_misjudgment`）。这读 Ren 的“still need situational awareness”，Ren 把它系于“the full truth set”：要比较自身的部分，中心须知道部分在其反馈之外所到达的。
 - 系统界定每个效果，但不读 Ren 中间的“the system that one is in”：每个形成都参与一个条件时它就是整体；系统划分形成，没有嵌套，也没有中心。为那一读法提供的是所及闭包：中心的交换逐环所影响的。它有中心、可嵌套，在系统之内，在 `Clearing` 中严格介于清除者与整体之间；它指向前方，不必含中心所依存的。它不是不用公理的路线所到达的供给闭包（§6.9）。
@@ -697,7 +697,7 @@ AI 以它自己的话提出（[来源](../../../sources/15-codex-theory-conversa
 - **所及之内的部分。** 沿一个含影响的关系次真时，预设对中心闭包之内的每个部分作与条件相同的比较（`Flow.Balances.presupposed_comparison`）：沿影响，是所及闭包之内的每个部分（`Flow.Balances.presupposed_reach_comparison`）；沿共享条件，是系统之内的每个部分。不用不变，也不用超真。沿共享条件次真推出沿影响次真（`Flow.presupposition_order`），所以沿影响的前提较弱。次真依赖关系，超真不依赖（`Clearing.levels_differ`）。清除者自己的预设，沿共享条件划出，或不论怎样划都成立，从它自己的立场给出它的部分失去栖居者；划在供给闭包处，则有一个使部分保留的意义满足它（`Clearing.own_presupposition`）。这些是 §6.10 的比较的推论（[comparison-within-reach](../results/records/comparison-within-reach.md)）。
 - **闭包是整体之处。** 每个形成都在每个中心沿一个关系的闭包之内时，整体是唯一的边界，所以不变平凡地成立，条件就是每个立场上次真的预设（`unrestricted_iff_presupposed_of_whole`）。沿共享条件，每个形成都参与一个条件时就是这样（`Flow.unrestricted_iff_system_presupposed`、`Flow.unrestricted_iff_presupposed_of_common`），如 `Clearing`（`Clearing.system_presupposition`）。这一步在那里没有被消除，而是移进了把自身的边界划成对关系封闭这一点。
 
-**读法。**
+**读法**〔AI 读法，D21〕。
 - 预设读 Ren 所说自身“can not justify itself without some sort of "belief"”中的 belief。Ren 写的是自身的限度；把这一 belief 用作前提，是 AI 的一步；而沿一个关系次真，远强于某个延续有意义。
 - 覆盖：Ren 说“we”是“the universe/ecosystem that realizes its own existence”，支持把整体作为“we”的一种划法；“There is no absolute self”本身不给出覆盖。沿一个关系，覆盖成立，是因为含中心的每个封闭区域，整体在内，都算作自身的一种可容许划法。这一可容许性是实质的选择，也是可容许类不是对日常的、模糊的“自身”的超赋值的原因：它没有确定的非成员。
 - Ren 的“for all beings”最直接地读作对立场不变，即立场中立的规则；有了预设与覆盖，对边界不变与它等价。Ren 的“universal invariations”是规律跨宇宙的不变；把它推广到意义，是 AI 的读法。否认这一步，就是认为预设只相对于一种划法或一个立场为真，或者，因为这一步两头都走，放弃预设。这一步取代此前路线的容差（[审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)），并像容差连同 Chain 一样，承载条件在预设之外的全部内容，只是一步，而不是许多小步。从行动者的立场到不偏的伦理的论证，正是在这一步上受到争议：行动者相对与行动者中立的理由（Nagel 1970），Gewirth（1978）的类属一致性原则及其批评；Parfit（1984）把没有深层的自我读作削弱自利理论的特权，这里对应覆盖。它也不消解 Sidgwick 所说实践理性的二元，只把二元定位在这一步上。这一在文献中的定位是论证的，不是形式的。
@@ -721,7 +721,7 @@ AI 以它自己的话提出（[来源](../../../sources/15-codex-theory-conversa
 
 **正面相关从意义读出。** 正面相关就是已实现的活的内容的意义（`Frame.relevance`），不是另一种读法：另一种读法会是理论中没有任何东西固定的参数，而从意义读出，它在条件之下是满足生命意义的最小的相关（`relevance_least`）。意义不必是正面的，条件与 `G0` 的参数 `positive` 都不提供价值取向（`relevance_least`）。AI 一度把活的内容读作生生；D1 的修订撤回了这一读法，因为 `living` 的读法不含进一步的生成，生生的方向另行读出，以扩大比较。这样读 Ren 的“doesn't have to be positive”是 AI 的，现有的每种 `living` 读法读出的都是不含进一步生成的“不损”（§6.3）。可能性读法读“有意义的，就是能形成的”（§6.8）与 Ren 的“more possibilities of becoming”；它计能形成的，不计形成了的。
 
-**继续之间以可能性比较**，这一读法因下列理由采用。一个继续扩展另一个，恰当它的水平容许后者所容许的每个形成，并多容许一个。理由：
+**继续之间以可能性比较**，这一读法因下列理由采用〔AI 读法，D1〕。一个继续扩展另一个，恰当它的水平容许后者所容许的每个形成，并多容许一个。理由：
 1. 在条件之下，它就是条件自身的比较，保留且增加有意义者（`Ranking.possible_extends_iff`），不另加前提；另两种各加一个前提：`living` 的一种读法，或一个次序。条件不被断言（§6.15），所以这一理由只有条件地成立；理由 2–4 不用它。
 2. 它是生成的空间的比较：可能性是接下来能形成的（[来源](../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)），生成的，是一个部分的“existence creates more possibilities of becoming”（Ren 的话，在 §6.13 读）。
 3. 它排在上面的，正是该排在上面的：过度汲取者的不在场、节制（有第三个形成时亦然）与共享（`Ranking.possible_ranks`、`Ranking.possible_restraint`、`Ranking.ThirdParty.possible_extends`、`Ranking.possible_contest`），而不扣下任何事件（`Ranking.malignant_possible`）。
