@@ -1,4 +1,5 @@
 import Becoming.World
+import Becoming.Reordering
 
 /-!
 # Interleavings: the step index read off the relata's own courses
@@ -33,7 +34,8 @@ relatum's own (`ownCourse`, `Interleaves`). No premise beyond what each theorem 
   listed and a list of exchanges, `world` is a `World` of the spine (`World.of`): at step `t` each
   relatum stands where the first `t` exchanges leave it (`runUpTo`, `world_level`), is active where
   the exchange at `t` touches it, and takes or gives to itself what the step changes, so with every
-  relatum listed once each step balances (`world_balances`). Two interleavings of the same own
+  relatum listed once each step balances (`world_balances`); the activity is the touch, decided
+  (`touchAt`, `world_active_iff`). Two interleavings of the same own
   courses give every relatum the same course of standings, the standings after each of its own
   exchanges in order (`standings_of_courses`, `standings_of_interleavings`), and the same standing
   from both lengths on (`world_final`). Exchanging two adjacent exchanges sharing no relatum leaves
@@ -51,8 +53,36 @@ relatum's own (`ownCourse`, `Interleaves`). No premise beyond what each theorem 
   the map sends `t + 1` to the step after the one at which it takes the same exchange in the other
   (`exchangeAt_own`, `firstAt_succ_step`, `index_matches`). Every property of a standing that a
   relatum has at some step, or at every step, of one world it has at some step, or at every step,
-  of the other (`world_reads_alike`). The map is one for each relatum: no one renumbering of the
-  steps is claimed.
+  of the other (`world_reads_alike`).
+* **One renumbering of all the steps.** Where every exchange of two interleavings of the same
+  courses touches some relatum (`Touching`), the lists have one length (`length_of_courses`) and
+  the `k`-th taking of an exchange in one is the `k`-th in the other at every relatum it touches
+  (`occurrence_matches`, `step_of_ownCount`). `renumber` sends each step to the step of the
+  other list taking the same exchange so (`renumber_spec`, `renumber_exchange`,
+  `renumber_count`); on the steps of every relatum the exchange touches it is that relatum's
+  index map, one step back (`renumber_index`). It is undone by the renumbering the other way at
+  every step (`renumber_renumber`), takes the steps below the length among themselves and fixes
+  every step from it on (`renumber_lt`, `renumber_beyond`), so it `Reindexes` the steps
+  (`renumber_reindexes`). Through it the worlds agree: activity at every relatum
+  (`world_renumber_active`), the exchange itself, present relata and what each takes and gives
+  (`world_renumber_flow`, `Flow.SameExchange`), and the standing of every relatum the exchange
+  touches before it and after it (`runUpTo_renumber`, `world_renumber_level`), so every relation
+  reading those relata at one step, however many, reads alike (`reads_renumber`,
+  `world_renumber_reads`). A relation reading relata that the step's exchange does not touch is
+  not so read: in `Pair.apart_differs` one relatum stands below another at a step of one world
+  and at no step of the other. An exchange touching no relatum is matched by none
+  (`Pair.idle_unmatched`).
+* **The correspondence with `Becoming.Reordering`.** The renumbering keeps the order of
+  exchanges sharing a relatum (`renumber_keeps`: `Keeps` for the footprint of the touches,
+  `touchAt`), and the footprint moves with it (`touchAt_renumber`). The footprint of the touches
+  contains the exchanges exactly where no relatum is touched at a step after one not touching it
+  (`touch_contains_iff`; `Pair.touch_not_contains`): the world's activity is the touch of the
+  exchange across a step, so it changes across every step after which a relatum's taking part
+  begins. The footprint around each step, the relata the exchange at the step or at the next
+  touches (`touchAround`), contains them (`around_contains`), but joins every two consecutive
+  exchanges (`around_joined`), so the only renumbering keeping its order fixes every step
+  (`keeps_consecutive`, `around_keeps_identity`): Reordering's commutations relate the world of
+  an interleaving to no other interleaving's, and the relation between them is the renumbering.
 
 Reading (the AI's, D43): the shared index of steps is a reading of the relations, not
 their ground. What each relatum undergoes, and in what order, is its own course; a global index
@@ -62,18 +92,16 @@ relatum; elsewhere it is a commitment of the representation, a choice among inte
 the relations leave open and the configurations do not read. With the index map, what a world
 says of a relatum is read through the relatum's own steps, and that reading is the same for
 every interleaving: the choice of interleaving moves where on the shared index a standing falls,
-not which standings a relatum passes through or in what order.
+not which standings a relatum passes through or in what order. With the renumbering, what a
+world says at one step of the relata that step's exchange touches is the same for every
+interleaving, however many relata it reads; what it says at one step of relata no exchange there
+connects is a reading of the chosen interleaving.
 
 Not shown: courses without end (the courses here are finite lists); exchanges that read relata
 they do not change, in a footprint of their own (here what an exchange reads and what it may
-change are one footprint); one renumbering of all the steps carrying one interleaving's world to
-the other's, which the index maps, one for each relatum, do not give, and with it the
-correspondence with `Becoming.Reordering`'s footprint (`Footprinted`): there a relatum a step
-does not touch must be unmoved across it, activity included, while this world marks a relatum
-active exactly at the steps whose exchange touches it, so the footprint of the exchanges does not
-contain them; and the renumbering `Reindexes` asks for would match each exchange's occurrence in
-the two lists, which needs the maps of the relata an exchange touches to agree. No ethical
-predicate, ranking or axiom occurs.
+change are one footprint); a reading of activity as a state of a relatum between steps, under
+which Reordering's commutations could relate two interleavings' worlds (here activity is taking
+part in the exchange across a step). No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -1349,6 +1377,14 @@ theorem index_matches {c : X → List E} {L M : List E} (inL : law.Interleaves c
     exact ⟨p, by unfold indexMap; rw [own.2]; exact first, at_p⟩
 
 variable (law) in
+/-- **Whether the exchange at step `t` of a list touches a relatum**, decided: no exchange there
+touches none. -/
+def touchAt (L : List E) (t : Nat) (x : X) : Bool :=
+  match exchangeAt L t with
+  | none => false
+  | some e => law.touches e x
+
+variable (law) in
 /-- The relata of a list that an exchange touches. -/
 def touchedIn (e : E) : List X → List X
   | [] => []
@@ -1367,8 +1403,9 @@ def rise (l l' : X → Nat) (f c : X) : Nat := if f = c then l' c - l c else 0
 /-- The world an interleaving builds, from a local law on whole-number standings, the relata
 listed, a list of exchanges and a start. Its relata are the relata; at step `t` each stands at
 what the first `t` exchanges make of the start, and is active where the exchange at `t` touches
-it; its move at `t` has present the listed relata the exchange touches, each taking from itself
-its fall and giving to itself its rise. Nothing is required, needed or drawn. -/
+it, decided (`touchAt`, `world_active_iff`); its move at `t` has present the listed relata the
+exchange touches, each taking from itself its fall and giving to itself its rise. Nothing is
+required, needed or drawn. -/
 def world (law : LocalLaw X E Nat) (xs : List X) (L : List E) (s : X → Nat) : World :=
   World.of X
     ⟨fun t => match exchangeAt L t with
@@ -1377,7 +1414,7 @@ def world (law : LocalLaw X E Nat) (xs : List X) (L : List E) (s : X → Nat) : 
      fun t => fall (law.runUpTo L s t) (law.runUpTo L s (t + 1)),
      fun t => rise (law.runUpTo L s t) (law.runUpTo L s (t + 1))⟩
     ⟨fun t => law.runUpTo L s t,
-     fun t x => ∃ e, exchangeAt L t = some e ∧ law.touches e x = true,
+     fun t x => law.touchAt L t x = true,
      fun _ _ _ => False, fun _ _ _ => 0, fun _ _ _ => False⟩
 
 variable {law' : LocalLaw X E Nat}
@@ -1653,7 +1690,842 @@ theorem world_reads_alike {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X �
     fun all t => Eq.mp (congrArg P (world_index (xs' := xs') listed inL inM s x t).symm)
       (all (law'.indexMap x L M t))⟩⟩
 
+/-! ## One renumbering of all the steps
+
+Two interleavings of the same courses, every exchange of each touching some relatum (`Touching`),
+take each exchange the same number of times, and the `k`-th taking of an exchange in one is the
+`k`-th in the other at every relatum it touches: where `L` has an exchange at step `t`, `M` has
+it at a step at which each relatum it touches has taken as many of its own exchanges
+(`occurrence_matches`), and only at one (`step_of_ownCount`). `renumber` sends `t` there, read
+off the first listed relatum the exchange touches; every relatum it touches gives the same step
+(`renumber_spec`, `renumber_index`: the index map of each such relatum sends `t + 1` to the step
+after). The renumbering is one of all the steps: it is undone by the renumbering the other way
+(`renumber_renumber`), takes the steps below the length among themselves (`renumber_lt`,
+`length_of_courses`, `renumber_reindexes`: `Reindexes` of `Becoming.Reordering`) and fixes
+every step from the length on (`renumber_beyond`). -/
+
+section Renumbering
+
+omit [DecidableEq X]
+
+/-- A list holds each exchange it has at a step. -/
+theorem exchangeAt_mem : ∀ {L : List E} {t : Nat} {e : E}, exchangeAt L t = some e → e ∈ L
+  | [], _, _, h => nomatch h
+  | a :: L, 0, e, h => by
+    have same : a = e := Option.some.inj h
+    subst same
+    exact .head L
+  | a :: L, t + 1, _, h => .tail a (exchangeAt_mem (L := L) (t := t) h)
+
+/-- Before a list's length, appending more leaves the exchange at a step as it was. -/
+theorem exchangeAt_append_lt : ∀ (A R : List E) {k : Nat}, k < A.length →
+    exchangeAt (A ++ R) k = exchangeAt A k
+  | [], _, _, lt => absurd lt (Nat.not_lt_zero _)
+  | _ :: _, _, 0, _ => rfl
+  | _ :: A, R, _ + 1, lt => exchangeAt_append_lt A R (Nat.lt_of_succ_lt_succ lt)
+
+/-- After a list, the exchange at a step is the rest's. -/
+theorem exchangeAt_append : ∀ (A R : List E) (k : Nat),
+    exchangeAt (A ++ R) (A.length + k) = exchangeAt R k
+  | [], _, k => congrArg (exchangeAt _) (Nat.zero_add k)
+  | _ :: A, R, k =>
+    (congrArg (exchangeAt _) (Nat.succ_add A.length k)).trans (exchangeAt_append A R k)
+
+/-- From a list's length on, a list has no exchange. -/
+theorem exchangeAt_beyond : ∀ (L : List E) {t : Nat}, L.length ≤ t → exchangeAt L t = none
+  | [], _, _ => rfl
+  | _ :: _, 0, le => absurd le (Nat.not_succ_le_zero _)
+  | _ :: L, _ + 1, le => exchangeAt_beyond L (Nat.le_of_succ_le_succ le)
+
+/-- Where a list has no exchange, the step is at least its length. -/
+theorem exchangeAt_none : ∀ {L : List E} {t : Nat}, exchangeAt L t = none → L.length ≤ t
+  | [], _, _ => Nat.zero_le _
+  | _ :: _, 0, h => nomatch h
+  | _ :: L, t + 1, h => Nat.succ_le_succ (exchangeAt_none (L := L) (t := t) h)
+
+/-- Before its length, a list has an exchange at every step. -/
+theorem exchangeAt_some : ∀ (L : List E) {t : Nat}, t < L.length → ∃ e, exchangeAt L t = some e
+  | [], _, lt => absurd lt (Nat.not_lt_zero _)
+  | a :: _, 0, _ => ⟨a, rfl⟩
+  | _ :: L, _ + 1, lt => exchangeAt_some L (Nat.lt_of_succ_lt_succ lt)
+
+/-- An exchange put into a list lengthens it by one. -/
+theorem length_insert : ∀ (A B : List E) (a : E), (A ++ a :: B).length = (A ++ B).length + 1
+  | [], _, _ => rfl
+  | _ :: A, B, a => congrArg (· + 1) (length_insert A B a)
+
+/-- Up to a list's length, appending more leaves the own exchanges counted as they were. -/
+theorem ownCount_append_le (x : X) : ∀ (A R : List E) (k : Nat), k ≤ A.length →
+    law.ownCount x (A ++ R) k = law.ownCount x A k
+  | [], [], _, _ => rfl
+  | [], _ :: _, 0, _ => rfl
+  | [], _ :: _, _ + 1, le => absurd le (Nat.not_succ_le_zero _)
+  | _ :: _, _, 0, _ => rfl
+  | a :: A, R, k + 1, le => by
+    show law.ownCount x (a :: (A ++ R)) (k + 1) = law.ownCount x (a :: A) (k + 1)
+    cases touch : law.touches a x with
+    | true =>
+      rw [ownCount_true _ _ touch, ownCount_true _ _ touch,
+        ownCount_append_le x A R k (Nat.le_of_succ_le_succ le)]
+    | false =>
+      rw [ownCount_false _ _ touch, ownCount_false _ _ touch,
+        ownCount_append_le x A R k (Nat.le_of_succ_le_succ le)]
+
+/-- After a list, the own exchanges counted are the list's and the rest's. -/
+theorem ownCount_append (x : X) : ∀ (A R : List E) (k : Nat),
+    law.ownCount x (A ++ R) (A.length + k) = law.ownCount x A A.length + law.ownCount x R k
+  | [], R, k => by
+    show law.ownCount x R (0 + k) = 0 + law.ownCount x R k
+    rw [Nat.zero_add, Nat.zero_add]
+  | a :: A, R, k => by
+    show law.ownCount x (a :: (A ++ R)) (A.length + 1 + k) =
+      law.ownCount x (a :: A) (A.length + 1) + law.ownCount x R k
+    rw [Nat.add_right_comm A.length 1 k]
+    cases touch : law.touches a x with
+    | true =>
+      rw [ownCount_true _ _ touch, ownCount_true _ _ touch, ownCount_append x A R k]
+      exact Nat.add_right_comm _ _ _
+    | false =>
+      rw [ownCount_false _ _ touch, ownCount_false _ _ touch, ownCount_append x A R k]
+
+/-- A list none of whose exchanges touches a relatum counts none of its own. -/
+theorem ownCount_untouched (x : X) {A : List E} (absent : ∀ a, a ∈ A → law.touches a x = false)
+    (k : Nat) : law.ownCount x A k = 0 :=
+  Nat.eq_zero_of_le_zero (Nat.le_trans (ownCount_le x A k)
+    (Nat.le_of_eq (congrArg List.length (ownCourse_untouched absent))))
+
+/-- The own exchanges counted never fall along the steps. -/
+theorem ownCount_mono (x : X) : ∀ (L : List E) {t t' : Nat}, t ≤ t' →
+    law.ownCount x L t ≤ law.ownCount x L t'
+  | [], _, _, _ => Nat.le_refl 0
+  | _ :: _, 0, _, _ => Nat.zero_le _
+  | _ :: _, _ + 1, 0, le => absurd le (Nat.not_succ_le_zero _)
+  | e :: L, t + 1, t' + 1, le => by
+    cases touch : law.touches e x with
+    | true =>
+      rw [ownCount_true L t touch, ownCount_true L t' touch]
+      exact Nat.succ_le_succ (ownCount_mono x L (Nat.le_of_succ_le_succ le))
+    | false =>
+      rw [ownCount_false L t touch, ownCount_false L t' touch]
+      exact ownCount_mono x L (Nat.le_of_succ_le_succ le)
+
+/-- **A relatum's own exchanges fall at distinct steps**: two steps at which it takes an exchange,
+having taken equally many before, are one. -/
+theorem step_of_ownCount (x : X) (L : List E) {t t' : Nat} {e e' : E}
+    (at_t : exchangeAt L t = some e) (touch : law.touches e x = true)
+    (at_t' : exchangeAt L t' = some e') (touch' : law.touches e' x = true)
+    (same : law.ownCount x L t = law.ownCount x L t') : t = t' :=
+  have later : ∀ {a b : Nat} {f : E}, exchangeAt L a = some f → law.touches f x = true →
+      law.ownCount x L a = law.ownCount x L b → ¬ a < b := fun at_a touchF eq lt => by
+    have h := ownCount_mono (law := law) x L (Nat.succ_le_of_lt lt)
+    rw [(exchangeAt_own x L _ at_a touchF).2, ← eq] at h
+    exact Nat.not_succ_le_self _ h
+  match Nat.lt_or_ge t t' with
+  | .inl lt => absurd lt (later at_t touch same)
+  | .inr ge => match Nat.lt_or_ge t' t with
+    | .inl lt => absurd lt (later at_t' touch' same.symm)
+    | .inr ge' => Nat.le_antisymm ge' ge
+
+/-- **The least step after the `n`-th own exchange.** Where a relatum takes an exchange at step `p`,
+the least step at which it has taken one more than before `p` is `p + 1`. -/
+theorem firstAt_after (x : X) (M : List E) {p : Nat} {e : E} (at_p : exchangeAt M p = some e)
+    (touch : law.touches e x = true) :
+    law.firstAt x M (law.ownCount x M p + 1) = p + 1 :=
+  have step := (exchangeAt_own x M p at_p touch).2
+  have hq : law.ownCount x M (law.firstAt x M (law.ownCount x M p + 1)) = law.ownCount x M p + 1 :=
+    ownCount_firstAt x M _ (Nat.le_trans (Nat.le_of_eq step.symm) (ownCount_le x M (p + 1)))
+  Nat.le_antisymm (firstAt_least x M _ (p + 1) step)
+    (match Nat.lt_or_ge p (law.firstAt x M (law.ownCount x M p + 1)) with
+    | .inl lt => lt
+    | .inr ge => absurd (Nat.le_trans (Nat.le_of_eq hq.symm) (ownCount_mono (law := law) x M ge))
+        (Nat.not_succ_le_self _))
+
+/-- **Each taking of an exchange is matched across two lists with the same own courses.** With the
+relata listed, where `L` has at step `t` an exchange touching some relatum, `M` has the same
+exchange at a step at which every relatum it touches has taken as many of its own exchanges as at
+`t` in `L`. -/
+theorem occurrence_matches {xs : List X} (listed : ∀ x, x ∈ xs) : ∀ (L M : List E),
+    (∀ x, law.ownCourse x L = law.ownCourse x M) → ∀ (t : Nat) {e : E},
+    exchangeAt L t = some e → (∃ x, law.touches e x = true) →
+    ∃ p, exchangeAt M p = some e ∧
+      ∀ x, law.touches e x = true → law.ownCount x M p = law.ownCount x L t
+  | [], _, _, _, _, at_t, _ => nomatch at_t
+  | a :: L, M, same, t, e, at_t, ⟨x₀, touch₀⟩ => by
+    cases hit : law.shares xs a a with
+    | false =>
+      have untouched := untouched_of_shares listed hit
+      have rest : ∀ y, law.ownCourse y L = law.ownCourse y M := fun y =>
+        (ownCourse_false L (untouched y)).symm.trans (same y)
+      match t, at_t with
+      | 0, at_0 =>
+        have heads : a = e := Option.some.inj at_0
+        subst heads
+        exact bool_absurd touch₀ (untouched x₀)
+      | t + 1, at_t =>
+        match occurrence_matches listed L M rest t at_t ⟨x₀, touch₀⟩ with
+        | ⟨p, at_p, counts⟩ =>
+          exact ⟨p, at_p, fun x touch =>
+            (counts x touch).trans (ownCount_false L t (untouched x)).symm⟩
+    | true =>
+      match exists_of_shares hit with
+      | ⟨_, touchA, _⟩ =>
+        match split_heads listed touchA (M := M)
+          (fun y touchY => ⟨law.ownCourse y L, (same y).symm.trans (ownCourse_true L touchY)⟩)
+        with
+        | ⟨A, B, split, apartA, onTouched, onOther⟩ =>
+          have rest : ∀ y, law.ownCourse y L = law.ownCourse y (A ++ B) := fun y => by
+            cases touchY : law.touches a y with
+            | true =>
+              exact cons_tails
+                ((ownCourse_true L touchY).symm.trans ((same y).trans (onTouched y touchY)))
+            | false =>
+              exact (ownCourse_false L touchY).symm.trans ((same y).trans (onOther y touchY))
+          subst split
+          match t, at_t with
+          | 0, at_0 =>
+            have heads : a = e := Option.some.inj at_0
+            subst heads
+            refine ⟨A.length, ?_, fun x touch => ?_⟩
+            · exact (congrArg (exchangeAt _) (Nat.add_zero A.length).symm).trans
+                (exchangeAt_append A _ 0)
+            · rw [ownCount_append_le x A _ A.length (Nat.le_refl _)]
+              exact ownCount_untouched x (fun b mem => apartA b mem x touch) A.length
+          | t + 1, at_t =>
+            match occurrence_matches listed L (A ++ B) rest t at_t ⟨x₀, touch₀⟩ with
+            | ⟨q, at_q, counts⟩ =>
+              match Nat.lt_or_ge q A.length with
+              | .inl before =>
+                have inA : exchangeAt A q = some e :=
+                  (exchangeAt_append_lt A B before).symm.trans at_q
+                refine ⟨q, (exchangeAt_append_lt A _ before).trans inA, fun x touch => ?_⟩
+                have away : law.touches a x = false :=
+                  (apartA e (exchangeAt_mem inA)).symm x touch
+                rw [ownCount_append_le x A _ q (Nat.le_of_lt before), ownCount_false L t away,
+                  ← counts x touch, ownCount_append_le x A B q (Nat.le_of_lt before)]
+              | .inr after =>
+                match le_dest after with
+                | ⟨k, eq⟩ =>
+                  subst eq
+                  refine ⟨A.length + (k + 1), ?_, fun x touch => ?_⟩
+                  · exact (exchangeAt_append A _ (k + 1)).trans
+                      ((exchangeAt_append A B k).symm.trans at_q)
+                  · cases touchX : law.touches a x with
+                    | true =>
+                      rw [ownCount_append x A _ (k + 1), ownCount_true B k touchX,
+                        ownCount_true L t touchX, ← counts x touch, ownCount_append x A B k]
+                      exact (Nat.add_assoc _ _ _).symm
+                    | false =>
+                      rw [ownCount_append x A _ (k + 1), ownCount_false B k touchX,
+                        ownCount_false L t touchX, ← counts x touch, ownCount_append x A B k]
+
+variable (law) in
+/-- **Every exchange of a list touches some relatum.** -/
+def Touching (L : List E) : Prop :=
+  ∀ t e, exchangeAt L t = some e → ∃ x, law.touches e x = true
+
+theorem Touching.tail {a : E} {L : List E} (touching : law.Touching (a :: L)) : law.Touching L :=
+  fun t e at_t => touching (t + 1) e at_t
+
+theorem Touching.remove {A B : List E} {a : E} (touching : law.Touching (A ++ a :: B)) :
+    law.Touching (A ++ B) :=
+  fun q f at_q => match Nat.lt_or_ge q A.length with
+  | .inl before => touching q f ((exchangeAt_append_lt A _ before).trans
+      ((exchangeAt_append_lt A B before).symm.trans at_q))
+  | .inr after => match le_dest after with
+    | ⟨k, eq⟩ => touching (A.length + (k + 1)) f ((exchangeAt_append A _ (k + 1)).trans
+        ((exchangeAt_append A B k).symm.trans ((congrArg (exchangeAt (A ++ B)) eq).symm.trans at_q)))
+
+/-- **Two lists with the same own courses, every exchange touching a relatum, have one length.** -/
+theorem length_of_courses {xs : List X} (listed : ∀ x, x ∈ xs) : ∀ (L M : List E),
+    law.Touching L → law.Touching M → (∀ x, law.ownCourse x L = law.ownCourse x M) →
+    L.length = M.length
+  | [], [], _, _, _ => rfl
+  | [], f :: _, _, touchM, same => match touchM 0 f rfl with
+    | ⟨x, touch⟩ => absurd ((same x).trans (ownCourse_true _ touch)).symm cons_ne_nil
+  | a :: L, M, touchL, touchM, same => match touchL 0 a rfl with
+    | ⟨_, touch₀⟩ =>
+      match split_heads listed touch₀ (M := M)
+        (fun y touchY => ⟨law.ownCourse y L, (same y).symm.trans (ownCourse_true L touchY)⟩) with
+      | ⟨A, B, split, _, onTouched, onOther⟩ => by
+        have rest : ∀ y, law.ownCourse y L = law.ownCourse y (A ++ B) := fun y => by
+          cases touchY : law.touches a y with
+          | true =>
+            exact cons_tails
+              ((ownCourse_true L touchY).symm.trans ((same y).trans (onTouched y touchY)))
+          | false =>
+            exact (ownCourse_false L touchY).symm.trans ((same y).trans (onOther y touchY))
+        subst split
+        exact (congrArg (· + 1) (length_of_courses listed L (A ++ B) touchL.tail touchM.remove
+          rest)).trans (length_insert A B a).symm
+
+/-- Every relatum among those of a listing an exchange touches is touched by it. -/
+theorem touches_of_touchedIn {e : E} {c : X} : ∀ {xs : List X}, c ∈ law.touchedIn e xs →
+    law.touches e c = true
+  | [], mem => nomatch mem
+  | x :: xs, mem => by
+    have h : c ∈ (match law.touches e x with
+      | true => x :: law.touchedIn e xs
+      | false => law.touchedIn e xs) := mem
+    cases touchX : law.touches e x with
+    | true =>
+      rw [touchX] at h
+      match mem_cons_cases h with
+      | .inl same => rw [same]; exact touchX
+      | .inr later => exact touches_of_touchedIn later
+    | false =>
+      rw [touchX] at h
+      exact touches_of_touchedIn h
+
+variable (law) in
+/-- **One renumbering of all the steps.** A step of `L` holding an exchange goes to the step of `M`
+at which the first listed relatum the exchange touches takes the same own exchange: one less than
+that relatum's index map at the step after. Every other step stays. -/
+def renumber (xs : List X) (L M : List E) (t : Nat) : Nat :=
+  match exchangeAt L t with
+  | none => t
+  | some e => match law.touchedIn e xs with
+    | [] => t
+    | x :: _ => law.indexMap x L M (t + 1) - 1
+
+theorem renumber_none {xs : List X} {L M : List E} {t : Nat} (idle : exchangeAt L t = none) :
+    law.renumber xs L M t = t := by
+  show (match exchangeAt L t with
+    | none => t
+    | some e => match law.touchedIn e xs with
+      | [] => t
+      | x :: _ => law.indexMap x L M (t + 1) - 1) = t
+  rw [idle]
+
+theorem renumber_lead {xs : List X} {L M : List E} {t : Nat} {e : E} {x : X} {rest : List X}
+    (at_t : exchangeAt L t = some e) (lead : law.touchedIn e xs = x :: rest) :
+    law.renumber xs L M t = law.indexMap x L M (t + 1) - 1 := by
+  show (match exchangeAt L t with
+    | none => t
+    | some e => match law.touchedIn e xs with
+      | [] => t
+      | x :: _ => law.indexMap x L M (t + 1) - 1) = _
+  rw [at_t]
+  show (match law.touchedIn e xs with
+    | [] => t
+    | x :: _ => law.indexMap x L M (t + 1) - 1) = _
+  rw [lead]
+
+/-- **Where the renumbering sends a step holding an exchange.** With the relata listed and the own
+courses the same, where `L` has at step `t` an exchange touching some relatum, `M` has that exchange
+at the renumbered step; there every relatum it touches has taken as many of its own exchanges as at
+`t` in `L`, and that relatum's index map sends `t + 1` to the step after. -/
+theorem renumber_spec {xs : List X} (listed : ∀ x, x ∈ xs) {L M : List E}
+    (same : ∀ x, law.ownCourse x L = law.ownCourse x M) {t : Nat} {e : E}
+    (at_t : exchangeAt L t = some e) (touching : ∃ x, law.touches e x = true) :
+    exchangeAt M (law.renumber xs L M t) = some e ∧
+      ∀ x, law.touches e x = true →
+        law.ownCount x M (law.renumber xs L M t) = law.ownCount x L t ∧
+        law.indexMap x L M (t + 1) = law.renumber xs L M t + 1 :=
+  match occurrence_matches listed L M same t at_t touching with
+  | ⟨p, at_p, counts⟩ =>
+    have index : ∀ x, law.touches e x = true → law.indexMap x L M (t + 1) = p + 1 :=
+      fun x touch => by
+        show law.firstAt x M (law.ownCount x L (t + 1)) = p + 1
+        rw [(exchangeAt_own x L t at_t touch).2, ← counts x touch]
+        exact firstAt_after x M at_p touch
+    have lands : law.renumber xs L M t = p := match touching with
+      | ⟨x₀, touch₀⟩ =>
+        match h : law.touchedIn e xs with
+        | [] => by
+          have mem := touchedIn_mem (listed x₀) touch₀
+          rw [h] at mem
+          exact nomatch mem
+        | y :: rest =>
+          have touchY : law.touches e y = true :=
+            touches_of_touchedIn (show y ∈ law.touchedIn e xs by rw [h]; exact .head rest)
+          (renumber_lead (M := M) at_t h).trans (congrArg (· - 1) (index y touchY))
+    ⟨(congrArg (exchangeAt M) lands).trans at_p, fun x touch =>
+      ⟨(congrArg (law.ownCount x M) lands).trans (counts x touch),
+       (index x touch).trans (congrArg (· + 1) lands.symm)⟩⟩
+
+/-- **The renumbering takes each exchange where the other list has it.** With the relata listed,
+for two interleavings of the same courses every exchange of each touching a relatum, the exchange
+at the renumbered step of `M` is the exchange at step `t` of `L`, at every step. -/
+theorem renumber_exchange {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) (touchL : law.Touching L)
+    (touchM : law.Touching M) (t : Nat) :
+    exchangeAt M (law.renumber xs L M t) = exchangeAt L t :=
+  match h : exchangeAt L t with
+  | none =>
+    (congrArg (exchangeAt M) (renumber_none h)).trans (exchangeAt_beyond M (Nat.le_trans
+      (Nat.le_of_eq (length_of_courses listed L M touchL touchM
+        (fun y => (inL y).trans (inM y).symm)).symm) (exchangeAt_none h)))
+  | some e => (renumber_spec listed (fun y => (inL y).trans (inM y).symm) h (touchL t e h)).1
+
+/-- **The own exchanges match through the renumbering**: where the exchange at step `t` of `L`
+touches a relatum, the relatum has taken as many of its own exchanges at the renumbered step of
+`M`. -/
+theorem renumber_count {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) {t : Nat} {e : E}
+    (at_t : exchangeAt L t = some e) {x : X} (touch : law.touches e x = true) :
+    law.ownCount x M (law.renumber xs L M t) = law.ownCount x L t :=
+  ((renumber_spec listed (fun y => (inL y).trans (inM y).symm) at_t ⟨x, touch⟩).2 x touch).1
+
+/-- **On each relatum's steps the renumbering is its index map**: where the exchange at step `t`
+of `L` touches a relatum, the relatum's index map sends `t + 1` to the step after the renumbered
+step. -/
+theorem renumber_index {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) {t : Nat} {e : E}
+    (at_t : exchangeAt L t = some e) {x : X} (touch : law.touches e x = true) :
+    law.indexMap x L M (t + 1) = law.renumber xs L M t + 1 :=
+  ((renumber_spec listed (fun y => (inL y).trans (inM y).symm) at_t ⟨x, touch⟩).2 x touch).2
+
+/-- **The renumbering the other way undoes it**, at every step. -/
+theorem renumber_renumber {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) (touchL : law.Touching L)
+    (touchM : law.Touching M) (t : Nat) :
+    law.renumber xs M L (law.renumber xs L M t) = t :=
+  match h : exchangeAt L t with
+  | none =>
+    have none' : exchangeAt M t = none := exchangeAt_beyond M (Nat.le_trans
+      (Nat.le_of_eq (length_of_courses listed L M touchL touchM
+        (fun y => (inL y).trans (inM y).symm)).symm) (exchangeAt_none h))
+    (congrArg (law.renumber xs M L) (renumber_none h)).trans (renumber_none none')
+  | some e =>
+    match touchL t e h with
+    | ⟨x₀, touch₀⟩ =>
+      have fwd := renumber_spec listed (fun y => (inL y).trans (inM y).symm) h ⟨x₀, touch₀⟩
+      have back := renumber_spec listed (fun y => (inM y).trans (inL y).symm) fwd.1 ⟨x₀, touch₀⟩
+      step_of_ownCount x₀ L back.1 touch₀ h touch₀ ((back.2 x₀ touch₀).1.trans (fwd.2 x₀ touch₀).1)
+
+/-- From the length on, the renumbering fixes every step. -/
+theorem renumber_beyond {xs : List X} {L M : List E} {t : Nat} (after : L.length ≤ t) :
+    law.renumber xs L M t = t :=
+  renumber_none (exchangeAt_beyond L after)
+
+/-- Below the length, the renumbering stays below the other list's length. -/
+theorem renumber_lt {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) (touchL : law.Touching L)
+    (touchM : law.Touching M) {t : Nat} (below : t < L.length) :
+    law.renumber xs L M t < M.length :=
+  match exchangeAt_some L below with
+  | ⟨_, at_t⟩ => exchangeAt_lt ((renumber_exchange listed inL inM touchL touchM t).trans at_t)
+
+/-- **The renumbering is one of all the steps below the length**: with the renumbering the other
+way it `Reindexes` them (`Becoming.Reordering`). -/
+theorem renumber_reindexes {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) (touchL : law.Touching L)
+    (touchM : law.Touching M) :
+    Reindexes 0 L.length (law.renumber xs L M) (law.renumber xs M L) :=
+  have lengths := length_of_courses listed L M touchL touchM (fun y => (inL y).trans (inM y).symm)
+  fun i _ below =>
+    have belowL : i < L.length := Nat.lt_of_lt_of_le below (Nat.le_of_eq (Nat.zero_add _))
+    have belowM : i < M.length := Nat.lt_of_lt_of_le belowL (Nat.le_of_eq lengths)
+    ⟨⟨Nat.zero_le _, Nat.lt_of_lt_of_le (renumber_lt listed inL inM touchL touchM belowL)
+        (Nat.le_of_eq (lengths.symm.trans (Nat.zero_add _).symm)),
+      renumber_renumber listed inL inM touchL touchM i⟩,
+     ⟨Nat.zero_le _, Nat.lt_of_lt_of_le (renumber_lt listed inM inL touchM touchL belowM)
+        (Nat.le_of_eq (Nat.zero_add _).symm),
+      renumber_renumber listed inM inL touchM touchL i⟩⟩
+
+/-! ### Agreement through the renumbering -/
+
+theorem touchAt_some {L : List E} {t : Nat} {e : E} (at_t : exchangeAt L t = some e) (x : X) :
+    law.touchAt L t x = law.touches e x := by
+  show (match exchangeAt L t with
+    | none => false
+    | some e => law.touches e x) = _
+  rw [at_t]
+
+theorem touchAt_none {L : List E} {t : Nat} (idle : exchangeAt L t = none) (x : X) :
+    law.touchAt L t x = false := by
+  show (match exchangeAt L t with
+    | none => false
+    | some e => law.touches e x) = _
+  rw [idle]
+
+/-- **The decided touch is the touch of the exchange at the step.** -/
+theorem touchAt_iff {L : List E} {t : Nat} {x : X} :
+    law.touchAt L t x = true ↔ ∃ e, exchangeAt L t = some e ∧ law.touches e x = true :=
+  ⟨fun yes => match h : exchangeAt L t with
+    | none => bool_absurd yes (touchAt_none h x)
+    | some e => ⟨e, rfl, (touchAt_some h x).symm.trans yes⟩,
+   fun ⟨_, at_t, touch⟩ => (touchAt_some at_t x).trans touch⟩
+
+/-- **The footprint moves with the renumbering**: the renumbered step of `M` touches what step `t`
+of `L` touches. -/
+theorem touchAt_renumber {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) (touchL : law.Touching L)
+    (touchM : law.Touching M) (t : Nat) (x : X) :
+    law.touchAt M (law.renumber xs L M t) x = law.touchAt L t x := by
+  show (match exchangeAt M (law.renumber xs L M t) with
+    | none => false
+    | some e => law.touches e x) = (match exchangeAt L t with
+    | none => false
+    | some e => law.touches e x)
+  rw [renumber_exchange listed inL inM touchL touchM t]
+
+/-- A relatum the exchange at a step does not touch stands across it as before. -/
+theorem runUpTo_untouched (L : List E) (s : X → σ) {t : Nat} {x : X}
+    (no : law.touchAt L t x = false) : law.runUpTo L s (t + 1) x = law.runUpTo L s t x := by
+  have step := runUpTo_succ (law := law) L s t
+  cases at_t : exchangeAt L t with
+  | none =>
+    rw [at_t] at step
+    exact congrArg (· x) step
+  | some e =>
+    rw [at_t] at step
+    have step : law.runUpTo L s (t + 1) = law.act e (law.runUpTo L s t) := step
+    exact (congrArg (· x) step).trans (law.keeps e _ x ((touchAt_some at_t x).symm.trans no))
+
+/-- **What the exchange touches stands alike through the renumbering**, before and after it: where
+the exchange at step `t` of `L` touches a relatum, the relatum stands at `t` and `t + 1` of `L`
+where it stands at the renumbered step of `M` and the step after. -/
+theorem runUpTo_renumber {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) (s : X → σ) {t : Nat} {e : E}
+    (at_t : exchangeAt L t = some e) {x : X} (touch : law.touches e x = true) :
+    law.runUpTo L s t x = law.runUpTo M s (law.renumber xs L M t) x ∧
+      law.runUpTo L s (t + 1) x = law.runUpTo M s (law.renumber xs L M t + 1) x :=
+  have spec := renumber_spec listed (fun y => (inL y).trans (inM y).symm) at_t ⟨x, touch⟩
+  have counts := (spec.2 x touch).1
+  ⟨runUpTo_of_own listed inL inM s x counts.symm,
+   runUpTo_of_own listed inL inM s x ((exchangeAt_own x L t at_t touch).2.trans
+     ((congrArg (· + 1) counts.symm).trans
+       (exchangeAt_own x M _ spec.1 touch).2.symm))⟩
+
+/-- **A relation reading the relata an exchange touches reads alike through the renumbering**,
+before the exchange and after it, however many relata it reads. -/
+theorem reads_renumber {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) (s : X → σ) {t : Nat} {e : E}
+    (at_t : exchangeAt L t = some e) (R : (X → σ) → Prop)
+    (reads : ∀ l l', (∀ y, law.touches e y = true → l y = l' y) → R l → R l') :
+    (R (law.runUpTo L s t) ↔ R (law.runUpTo M s (law.renumber xs L M t))) ∧
+      (R (law.runUpTo L s (t + 1)) ↔ R (law.runUpTo M s (law.renumber xs L M t + 1))) :=
+  ⟨⟨reads _ _ fun _ touch => (runUpTo_renumber listed inL inM s at_t touch).1,
+    reads _ _ fun _ touch => (runUpTo_renumber listed inL inM s at_t touch).1.symm⟩,
+   ⟨reads _ _ fun _ touch => (runUpTo_renumber listed inL inM s at_t touch).2,
+    reads _ _ fun _ touch => (runUpTo_renumber listed inL inM s at_t touch).2.symm⟩⟩
+
+/-- **Each relatum's standing changes alike through the renumbering**: either the relatum stands
+alike before and after the step in both, or it stands across the step as before in both. -/
+theorem change_renumber {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) (touchL : law.Touching L)
+    (touchM : law.Touching M) (s : X → σ) (t : Nat) (x : X) :
+    (law.runUpTo M s (law.renumber xs L M t) x = law.runUpTo L s t x ∧
+        law.runUpTo M s (law.renumber xs L M t + 1) x = law.runUpTo L s (t + 1) x) ∨
+      (law.runUpTo L s (t + 1) x = law.runUpTo L s t x ∧
+        law.runUpTo M s (law.renumber xs L M t + 1) x =
+          law.runUpTo M s (law.renumber xs L M t) x) :=
+  match h : law.touchAt L t x with
+  | true => match touchAt_iff.1 h with
+    | ⟨_, at_t, touch⟩ =>
+      .inl ⟨(runUpTo_renumber listed inL inM s at_t touch).1.symm,
+        (runUpTo_renumber listed inL inM s at_t touch).2.symm⟩
+  | false =>
+    .inr ⟨runUpTo_untouched L s h, runUpTo_untouched M s
+      ((touchAt_renumber listed inL inM touchL touchM t x).trans h)⟩
+
+end Renumbering
+
+/-! ### The worlds of two interleavings through the renumbering -/
+
+/-- **The world's activity is the decided touch**: a relatum is active at step `t` exactly where the
+exchange at `t` touches it. -/
+theorem world_active_iff (xs : List X) (L : List E) (s : X → Nat) (t : Nat) (x : X) :
+    (world law' xs L s).web.active t x ↔ ∃ e, exchangeAt L t = some e ∧ law'.touches e x = true :=
+  touchAt_iff
+
+/-- **Activity agrees through the renumbering**, for every relatum at every step: a relatum is
+active at step `t` of one world exactly where it is active at the renumbered step of the other. -/
+theorem world_renumber_active {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → List E}
+    {L M : List E} (inL : law'.Interleaves c L) (inM : law'.Interleaves c M)
+    (touchL : law'.Touching L) (touchM : law'.Touching M) (s : X → Nat) (t : Nat) (x : X) :
+    (world law' xs' L s).web.active t x =
+      (world law' xs' M s).web.active (law'.renumber xs L M t) x :=
+  congrArg (· = true) (touchAt_renumber listed inL inM touchL touchM t x).symm
+
+/-- **Levels agree through the renumbering** on what the step's exchange touches, before it and
+after it. -/
+theorem world_renumber_level {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → List E}
+    {L M : List E} (inL : law'.Interleaves c L) (inM : law'.Interleaves c M) (s : X → Nat)
+    {t : Nat} {e : E} (at_t : exchangeAt L t = some e) {x : X} (touch : law'.touches e x = true) :
+    (world law' xs' L s).web.level t x =
+        (world law' xs' M s).web.level (law'.renumber xs L M t) x ∧
+      (world law' xs' L s).web.level (t + 1) x =
+        (world law' xs' M s).web.level (law'.renumber xs L M t + 1) x :=
+  runUpTo_renumber listed inL inM s at_t touch
+
+/-- **Every relation read at one step on what its exchange touches reads alike through the
+renumbering**, however many relata it reads. -/
+theorem world_renumber_reads {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → List E}
+    {L M : List E} (inL : law'.Interleaves c L) (inM : law'.Interleaves c M) (s : X → Nat)
+    {t : Nat} {e : E} (at_t : exchangeAt L t = some e) (R : (X → Nat) → Prop)
+    (reads : ∀ l l', (∀ y, law'.touches e y = true → l y = l' y) → R l → R l') :
+    (R ((world law' xs' L s).web.level t) ↔
+        R ((world law' xs' M s).web.level (law'.renumber xs L M t))) ∧
+      (R ((world law' xs' L s).web.level (t + 1)) ↔
+        R ((world law' xs' M s).web.level (law'.renumber xs L M t + 1))) :=
+  reads_renumber listed inL inM s at_t R reads
+
+theorem fall_of_change {l l' m m' : X → Nat} {c : X} (same : m c - m' c = l c - l' c) (f : X) :
+    fall m m' f c = fall l l' f c := by
+  show (if f = c then m c - m' c else 0) = (if f = c then l c - l' c else 0)
+  rw [same]
+
+theorem rise_of_change {l l' m m' : X → Nat} {c : X} (same : m' c - m c = l' c - l c) (f : X) :
+    rise m m' f c = rise l l' f c := by
+  show (if f = c then m' c - m c else 0) = (if f = c then l' c - l c else 0)
+  rw [same]
+
+/-- **The renumbered step takes the same exchange**: the same relata present, each taking and
+giving the same (`Flow.SameExchange` of `Becoming.Reordering`), at every step. -/
+theorem world_renumber_flow {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → List E}
+    {L M : List E} (inL : law'.Interleaves c L) (inM : law'.Interleaves c M)
+    (touchL : law'.Touching L) (touchM : law'.Touching M) (s : X → Nat) (t : Nat) :
+    (world law' xs' L s).flow.SameExchange t (world law' xs' M s).flow (law'.renumber xs L M t) :=
+  have both : ∀ c', (law'.runUpTo M s (law'.renumber xs L M t) c' -
+        law'.runUpTo M s (law'.renumber xs L M t + 1) c' =
+        law'.runUpTo L s t c' - law'.runUpTo L s (t + 1) c') ∧
+      (law'.runUpTo M s (law'.renumber xs L M t + 1) c' -
+        law'.runUpTo M s (law'.renumber xs L M t) c' =
+        law'.runUpTo L s (t + 1) c' - law'.runUpTo L s t c') := fun c' =>
+    match change_renumber listed inL inM touchL touchM s t c' with
+    | .inl ⟨before, after⟩ => by rw [before, after]; exact ⟨rfl, rfl⟩
+    | .inr ⟨stillL, stillM⟩ => by rw [stillL, stillM, Nat.sub_self, Nat.sub_self]; exact ⟨rfl, rfl⟩
+  ⟨by
+    show (match exchangeAt M (law'.renumber xs L M t) with
+      | none => []
+      | some e => law'.touchedIn e xs') = (match exchangeAt L t with
+      | none => []
+      | some e => law'.touchedIn e xs')
+    rw [renumber_exchange listed inL inM touchL touchM t],
+   fun f c' => ⟨fall_of_change (X := X) (both c').1 f, rise_of_change (X := X) (both c').2 f⟩⟩
+
+/-! ### The correspondence with `Becoming.Reordering` -/
+
+/-- The world an interleaving builds, with a footprint. -/
+def footprinted (law : LocalLaw X E Nat) (xs : List X) (L : List E) (s : X → Nat)
+    (touch : Nat → X → Bool) : Footprinted X :=
+  ⟨(world law xs L s).flow, (world law xs L s).web, touch⟩
+
+variable (law) in
+/-- **The footprint around a step**: the relata the exchange at the step or at the next touches. -/
+def touchAround (L : List E) (t : Nat) (x : X) : Bool :=
+  law.touchAt L t x || law.touchAt L (t + 1) x
+
+omit [DecidableEq X] in
+theorem bool_or_false_left : ∀ {a b : Bool}, (a || b) = false → a = false
+  | false, _, _ => rfl
+  | true, _, h => Bool.noConfusion h
+
+omit [DecidableEq X] in
+theorem bool_or_false_right : ∀ {a b : Bool}, (a || b) = false → b = false
+  | _, false, _ => rfl
+  | false, true, h => Bool.noConfusion h
+  | true, true, h => Bool.noConfusion h
+
+omit [DecidableEq X] in
+theorem bool_or_of_left : ∀ {a : Bool} (b : Bool), a = true → (a || b) = true
+  | true, _, _ => rfl
+
+omit [DecidableEq X] in
+theorem bool_or_of_right : ∀ (a : Bool) {b : Bool}, b = true → (a || b) = true
+  | false, true, _ => rfl
+  | true, true, _ => rfl
+
+/-- A relatum untouched at a step and at the next takes no part in the step and is unmoved
+across it, activity included. -/
+theorem untouched_unmoved {xs : List X} {L : List E} {s : X → Nat} {touch : Nat → X → Bool}
+    {n : Nat} {x : X} (here : law'.touchAt L n x = false)
+    (next : law'.touchAt L (n + 1) x = false) :
+    ¬ x ∈ (footprinted law' xs L s touch).flow.present n ∧
+      (footprinted law' xs L s touch).web.Unmoved n x := by
+  refine ⟨fun mem => ?_, runUpTo_untouched L s here,
+    congrArg (· = true) (next.trans here.symm), fun _ => ⟨rfl, rfl, rfl⟩⟩
+  have mem : x ∈ (match exchangeAt L n with
+    | none => []
+    | some e => law'.touchedIn e xs) := mem
+  cases at_n : exchangeAt L n with
+  | none =>
+    rw [at_n] at mem
+    exact nomatch mem
+  | some e =>
+    rw [at_n] at mem
+    exact touchedIn_not_mem ((touchAt_some at_n x).symm.trans here) mem
+
+/-- **The footprint of the touches contains the exchanges exactly where no relatum is touched at a
+step after one that does not touch it.** The world marks a relatum active at the steps whose
+exchange touches it, so across a step not touching a relatum its activity changes wherever the
+next step touches it, and `Contains` asks it unmoved. -/
+theorem touch_contains_iff (xs : List X) (L : List E) (s : X → Nat) :
+    (footprinted law' xs L s (law'.touchAt L)).Contains ↔
+      ∀ n x, law'.touchAt L n x = false → law'.touchAt L (n + 1) x = false :=
+  ⟨fun contains n x no => match h : law'.touchAt L (n + 1) x with
+    | false => rfl
+    | true => bool_absurd (cast (contains n x no).2.2.1 h) no,
+   fun later _ _ no => untouched_unmoved no (later _ _ no)⟩
+
+/-- **The footprint around each step contains the exchanges**, activity included. -/
+theorem around_contains (xs : List X) (L : List E) (s : X → Nat) :
+    (footprinted law' xs L s (law'.touchAround L)).Contains :=
+  fun _ _ no => untouched_unmoved (bool_or_false_left no) (bool_or_false_right no)
+
+/-- **Around each step, every two consecutive exchanges are joined**: the footprint around a step
+and around the next both hold what the next exchange touches. -/
+theorem around_joined (xs : List X) {L : List E} (s : X → Nat) (touchL : law'.Touching L)
+    {t : Nat} (below : t + 1 < L.length) :
+    (footprinted law' xs L s (law'.touchAround L)).Joined t (t + 1) :=
+  match exchangeAt_some L below with
+  | ⟨e, at_next⟩ => match touchL (t + 1) e at_next with
+    | ⟨x, touch⟩ =>
+      have next : law'.touchAt L (t + 1) x = true := (touchAt_some at_next x).trans touch
+      .inl ⟨x, bool_or_of_right _ next, bool_or_of_left _ next⟩
+
+omit [DecidableEq X] in
+/-- **Where every two consecutive steps of a stretch from `0` are joined, the only renumbering
+keeping the order is none**: it fixes every step of the stretch. -/
+theorem keeps_consecutive {r : Footprinted X} {m : Nat} {π ρ : Nat → Nat}
+    (joined : ∀ i, i + 1 < m → r.Joined i (i + 1)) (reindex : Reindexes 0 m π ρ)
+    (keeps : r.Keeps 0 m π) : ∀ i, i < m → π i = i :=
+  have toZero : ∀ {i : Nat}, i < m → i < 0 + m := fun lt =>
+    Nat.lt_of_lt_of_le lt (Nat.le_of_eq (Nat.zero_add m).symm)
+  have inc : ∀ i, i + 1 < m → π i < π (i + 1) := fun i lt =>
+    keeps i (i + 1) (Nat.zero_le _) (toZero lt) (Nat.lt_succ_self i) (joined i lt)
+  have range : ∀ i, i < m → π i < m := fun i lt =>
+    Nat.lt_of_lt_of_le (reindex i (Nat.zero_le _) (toZero lt)).1.2.1
+      (Nat.le_of_eq (Nat.zero_add m))
+  have lower : ∀ i, i < m → i ≤ π i := fun i => Nat.rec (motive := fun i => i < m → i ≤ π i)
+    (fun _ => Nat.zero_le _)
+    (fun i earlier lt => Nat.succ_le_of_lt (Nat.lt_of_le_of_lt
+      (earlier (Nat.lt_trans (Nat.lt_succ_self i) lt)) (inc i lt))) i
+  have upper : ∀ k i, i + k < m → π i + k < m := fun k => Nat.rec
+    (motive := fun k => ∀ i, i + k < m → π i + k < m) (fun i lt => range i lt)
+    (fun k earlier i lt =>
+      have lt' : i + 1 + k < m := Nat.lt_of_le_of_lt (Nat.le_of_eq (Nat.add_right_comm i 1 k)) lt
+      have step : π i + 1 ≤ π (i + 1) :=
+        inc i (Nat.lt_of_le_of_lt (Nat.add_le_add_left (Nat.succ_le_succ (Nat.zero_le k)) i) lt)
+      Nat.lt_of_le_of_lt (Nat.le_trans (Nat.le_of_eq (Nat.add_right_comm (π i) 1 k).symm)
+        (Nat.add_le_add_right step k)) (earlier (i + 1) lt')) k
+  fun i lt => match le_dest (Nat.succ_le_of_lt lt) with
+    | ⟨k, eq⟩ =>
+      have bound : π i + k < i + 1 + k :=
+        Nat.lt_of_lt_of_le (upper k i (Nat.lt_of_lt_of_le (Nat.add_lt_add_right
+          (Nat.lt_succ_self i) k) (Nat.le_of_eq eq.symm))) (Nat.le_of_eq eq)
+      Nat.le_antisymm (Nat.le_of_lt_succ (Nat.lt_of_add_lt_add_right bound)) (lower i lt)
+
+/-- **Around each step, the only renumbering of the steps keeping the order is none**: for a list
+every exchange of which touches a relatum, a renumbering of the steps below its length keeping the
+order of the footprint around each step fixes every step. -/
+theorem around_keeps_identity (xs : List X) {L : List E} (s : X → Nat) (touchL : law'.Touching L)
+    {π ρ : Nat → Nat} (reindex : Reindexes 0 L.length π ρ)
+    (keeps : (footprinted law' xs L s (law'.touchAround L)).Keeps 0 L.length π) :
+    ∀ i, i < L.length → π i = i :=
+  keeps_consecutive (fun _ below => around_joined xs s touchL below) reindex keeps
+
+/-- **The renumbering keeps the order of exchanges sharing a relatum**: it `Keeps` the order of the
+footprint of the touches, in which two exchanges are joined exactly where they touch a relatum in
+common (the world requiring nothing). -/
+theorem renumber_keeps {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law'.Interleaves c L) (inM : law'.Interleaves c M) (s : X → Nat) :
+    (footprinted law' xs' L s (law'.touchAt L)).Keeps 0 L.length (law'.renumber xs L M) :=
+  fun i j _ _ lt joined => match joined with
+  | .inl ⟨x, ti, tj⟩ => match touchAt_iff.1 ti, touchAt_iff.1 tj with
+    | ⟨_, at_i, touchI⟩, ⟨_, at_j, touchJ⟩ =>
+      have countI := renumber_count listed inL inM at_i touchI
+      have countJ := renumber_count listed inL inM at_j touchJ
+      have more : law'.ownCount x L i + 1 ≤ law'.ownCount x L j :=
+        Nat.le_trans (Nat.le_of_eq (exchangeAt_own x L i at_i touchI).2.symm)
+          (ownCount_mono (law := law') x L (Nat.succ_le_of_lt lt))
+      match Nat.lt_or_ge (law'.renumber xs L M i) (law'.renumber xs L M j) with
+      | .inl done => done
+      | .inr ge => absurd (Nat.le_trans more (Nat.le_trans (Nat.le_of_eq countJ.symm)
+          (Nat.le_trans (ownCount_mono (law := law') x M ge) (Nat.le_of_eq countI))))
+          (Nat.not_succ_le_self _)
+  | .inr (.inl ⟨_, _, _, _, requires⟩) => match requires with
+    | .inl no => (no : False).elim
+    | .inr no => (no : False).elim
+  | .inr (.inr ⟨_, _, _, _, requires⟩) => match requires with
+    | .inl no => (no : False).elim
+    | .inr no => (no : False).elim
+
 end LocalLaw
+
+/-! ## Witnesses -/
+
+namespace Pair
+
+/-- Two relata, `false` and `true`; exchange `0` touches `false`, exchange `1` touches `true`, and
+every other exchange touches neither. -/
+def touches : Nat → Bool → Bool
+  | 0, x => !x
+  | n + 1, x => match n with
+    | 0 => x
+    | _ + 1 => false
+
+/-- An exchange raises each relatum it touches by one. -/
+def act (e : Nat) (s : Bool → Nat) (x : Bool) : Nat :=
+  match touches e x with
+  | true => s x + 1
+  | false => s x
+
+theorem keeps (e : Nat) (s : Bool → Nat) (x : Bool) (no : touches e x = false) :
+    act e s x = s x := by
+  show (match touches e x with
+    | true => s x + 1
+    | false => s x) = s x
+  rw [no]
+
+theorem reads (e : Nat) (s s' : Bool → Nat) (x : Bool)
+    (same : ∀ y, touches e y = true → s y = s' y) (touch : touches e x = true) :
+    act e s x = act e s' x := by
+  show (match touches e x with
+    | true => s x + 1
+    | false => s x) = (match touches e x with
+    | true => s' x + 1
+    | false => s' x)
+  rw [touch, same x touch]
+
+/-- The local law of the pair. -/
+def law : LocalLaw Bool Nat Nat := ⟨touches, act, keeps, reads⟩
+
+/-- Both relata start at nothing. -/
+def start : Bool → Nat := fun _ => 0
+
+/-- **What two relata no exchange connects stand at, read at one step, is not the same for every
+interleaving.** `[0, 1]` and `[1, 0]` interleave the same courses and the renumbering exchanges
+their two steps; at step `1` of the first world `true` stands below `false`, and at no step of
+the second does. -/
+theorem apart_differs :
+    law.Interleaves (fun x => law.ownCourse x [0, 1]) [1, 0] ∧
+      law.renumber [false, true] [0, 1] [1, 0] 0 = 1 ∧
+      law.renumber [false, true] [0, 1] [1, 0] 1 = 0 ∧
+      (LocalLaw.world law [false, true] [0, 1] start).web.level 1 true <
+        (LocalLaw.world law [false, true] [0, 1] start).web.level 1 false ∧
+      ¬ ∃ t, (LocalLaw.world law [false, true] [1, 0] start).web.level t true <
+        (LocalLaw.world law [false, true] [1, 0] start).web.level t false :=
+  ⟨fun x => match x with
+    | false => rfl
+    | true => rfl,
+   rfl, rfl, Nat.lt_succ_self 0,
+   fun ⟨t, lt⟩ => match t, lt with
+    | 0, lt => Nat.lt_irrefl 0 lt
+    | 1, lt => Nat.not_succ_le_zero 1 lt
+    | _ + 2, lt => Nat.lt_irrefl 1 lt⟩
+
+/-- **The footprint of the touches does not contain the exchanges of `[0, 1]`**: `true` is
+untouched at step `0` and touched at step `1`, so its activity changes across a step not
+touching it. -/
+theorem touch_not_contains :
+    ¬ (LocalLaw.footprinted law [false, true] [0, 1] start (law.touchAt [0, 1])).Contains :=
+  fun contains => Bool.noConfusion
+    ((LocalLaw.touch_contains_iff [false, true] [0, 1] start).1 contains 0 true rfl)
+
+/-- **An exchange touching no relatum is matched by none**: `[2]` and `[]` give every relatum the
+same own course, while `[2]` has an exchange at step `0` that `[]` has at no step. -/
+theorem idle_unmatched :
+    (∀ x, law.ownCourse x [2] = law.ownCourse x []) ∧ LocalLaw.exchangeAt [2] 0 = some 2 ∧
+      ¬ ∃ p, LocalLaw.exchangeAt ([] : List Nat) p = some 2 :=
+  ⟨fun x => match x with
+    | false => rfl
+    | true => rfl,
+   rfl, fun ⟨_, h⟩ => nomatch h⟩
+
+end Pair
 
 end Interleavings
 

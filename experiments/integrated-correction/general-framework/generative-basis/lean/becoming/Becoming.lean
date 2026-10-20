@@ -2304,7 +2304,17 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   stands at the step of the other at which it has taken as many of its own exchanges (the index
   map, `world_index`), the map sends the step after each of its exchanges to the step after the
   same exchange in the other (`index_matches`), and what is read through its own steps is the
-  same for every interleaving (`world_reads_alike`).
+  same for every interleaving (`world_reads_alike`). Where every exchange touches a relatum, one
+  renumbering of all the steps (`LocalLaw.renumber`) matches each taking of an exchange at every
+  relatum it touches, is each such relatum's index map, and `Reindexes` the steps; through it
+  activity, the exchange and the standings of what it touches agree, so every relation read at
+  one step on those relata is the same for every interleaving (`world_renumber_reads`), while one
+  read on relata the step's exchange does not touch is not (`Pair.apart_differs`). It keeps the
+  order of exchanges sharing a relatum (`renumber_keeps`); the footprint of the touches contains
+  the exchanges exactly where no relatum is touched after a step not touching it
+  (`touch_contains_iff`), and the footprint around each step contains them but joins every two
+  consecutive exchanges, so Reordering's commutations reach no other interleaving
+  (`around_keeps_identity`).
 * `Becoming.CensusCounts` (L1): the laws of counting where the counts exist, with no decision
   procedure for activity and for every property of the counts. The counts of a census are taken as
   relations (`Counts`); across a step a ceasing or coming count exists exactly where, for each
