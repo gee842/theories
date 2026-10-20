@@ -1,11 +1,11 @@
 {
- "commit": "5e4825932cfd5f87c7a40b8f172a62f78174881c",
+ "commit": "236bbadd26b9c3bc52bdbe33e8027900d50a71d2",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261020T060542.295041Z",
+ "core_receipt_at_commit": "20261020T065352.292900Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
  "tracked_modules": 284,
- "constants": 35648,
- "spine_theorems": 11426,
+ "constants": 35654,
+ "spine_theorems": 11428,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -26,7 +26,7 @@
   "Process reaches World family": false
  },
  "classes": {
-  "statement on both families": 916,
+  "statement on both families": 918,
   "statement on Process/Frame/Run/Trace": 2862,
   "statement on World/Flow/Web": 2596,
   "statement on the base only through a law of its own module": 176,
@@ -109,13 +109,13 @@
   "Becoming.CourseRoles": 10,
   "Becoming.PlaceTransitionNets": 10,
   "Becoming.Listing": 9,
+  "Becoming.Direction": 9,
   "Becoming.Joint": 8,
   "Becoming.LabelledRoles": 8,
   "Becoming.Regrouping": 8,
   "Becoming.FrontierWorlds": 8,
   "Becoming.IdleRemoval": 7,
   "Becoming.Reading": 7,
-  "Becoming.Direction": 7,
   "Becoming.FormedLoops": 7,
   "Becoming.LawAlongRun": 6,
   "Becoming.Reordering": 6,
@@ -524,10 +524,10 @@
  "rings": {
   "core": {
    "modules": 268,
-   "theorems": 10680,
+   "theorems": 10682,
    "apart": 398,
    "classes": {
-    "statement on both families": 902,
+    "statement on both families": 904,
     "statement on Process/Frame/Run/Trace": 2651,
     "statement on World/Flow/Web": 2571,
     "statement on the base only through a law of its own module": 130,
@@ -10214,6 +10214,8 @@
   "Becoming.Direction.narrowed_not_chosen": "statement on both families",
   "Becoming.Direction.widening_not_not_better": "statement on both families",
   "Becoming.Direction.widening_selected_by_pool": "statement on World/Flow/Web",
+  "Becoming.Web.unrestricted_iff_grounds_beyond": "statement on both families",
+  "Becoming.Direction.grounded_widening_selected": "statement on both families",
   "Becoming.Clearing.spared_widens": "statement on World/Flow/Web",
   "Becoming.Clearing.direction": "statement on both families",
   "Becoming.ScoreRepresentation.extension_shape": "statement on Process/Frame/Run/Trace",
