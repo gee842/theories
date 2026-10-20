@@ -2,12 +2,12 @@
 
 # The completion criterion, run
 
-The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T120729.506720Z` and the connectivity measure of `d84fd32b4` (core receipt `20261020T115958.613759Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
+The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T120729.506720Z` and the connectivity measure of `b348862ad` (core receipt `20261020T120729.506720Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
 
 | | Criterion | Met | Findings |
 |---|---|---|---:|
-| K1 | Coverage | no | 1 |
-| K2 | Unity | no | 1 |
+| K1 | Coverage | yes | 0 |
+| K2 | Unity | yes | 0 |
 | K3 | Premises | yes | 0 |
 | K4 | Representation | yes | 0 |
 | K5 | Enclosure | yes | 0 |
@@ -36,13 +36,13 @@ The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_pro
 | Significance | domain | `unrestricted_iff_livingSignificance`, `Web.widens_iff_retains_adds`, `Web.paths_comparison_widens`, `Web.paths_one_object`, `Weighting.widens_iff_every_positive` | [continuation-condition-yields-living-significance](../records/continuation-condition-yields-living-significance.md), [significance-retained-within-margin](../records/significance-retained-within-margin.md), [comparison-by-widening](../records/comparison-by-widening.md), [continuation-condition-decomposition](../records/continuation-condition-decomposition.md), [widening-as-what-every-weighting-ranks](../records/widening-as-what-every-weighting-ranks.md) | §6.1, §6.2, §6.4, §6.5 | proved | 2, 12 |
 | Alignment | domain | `Flow.unselected_beyond_coupling`, `Flow.unselected_beyond_pool`, `Flow.act_selected_by_pool`, `ExchangeLaw.response_not_fixed_by_coupling`, `Direction.extension_iff_widens`, `Direction.widening_selected_by_pool`, `Flow.Balances.widens_iff_others_within` | [selection-through-couplings](../records/selection-through-couplings.md), [the-gap-for-ones-own-act](../records/the-gap-for-ones-own-act.md), [what-pooled-coupling-reaches](../records/what-pooled-coupling-reaches.md), [what-a-pools-acts-respond-to](../records/what-a-pools-acts-respond-to.md), [alignment-direction-under-widening](../records/alignment-direction-under-widening.md), [own-widening-within-the-margin](../records/own-widening-within-the-margin.md) | §7.1, §7.2, §7.3, §7.4, §7.5 | proved | 4 |
 
-## K1. Coverage: not met
+## K1. Coverage: met
 
-- evaluation: Becoming.forced_iff_center stands apart from both base families (apart: own vocabulary)
+No finding.
 
-## K2. Unity: not met
+## K2. Unity: met
 
-- evaluation: Becoming.forced_iff_center: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed (listed: Becoming.Web.admitsWithin_forced_iff)
+No finding.
 
 ## K3. Premises: met
 
