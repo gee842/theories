@@ -1,5 +1,7 @@
 import Becoming.FrontierFrames
 import Becoming.SelectionPool
+import Becoming.ValuationFrames
+import Becoming.Relevance
 
 /-!
 # The direction on a web's moves
@@ -35,6 +37,15 @@ with the moves as its steps, so the options at any configuration are the moves' 
   (`Direction.widening_selected_by_pool`). So a selection that realizes the direction, choosing the
   widening move over the narrowed one by the admission that differs, goes through a member
   coupled into that formation.
+* **The direction from the evaluation row.** On a web whose valuation is connected, with living
+  decided, the continuation condition is exactly the evaluation's grounds (a seed and both
+  neutralities, `Valuation.significant_iff`) with significance for what does not live
+  (`Web.unrestricted_iff_grounds_beyond`, the converse of `Valuation.premises_of_unrestricted`).
+  From these, a widening is an extension of the moves' frame that retains and adds what has
+  significance from every standpoint, and the admission that tells the widening world from the
+  narrowed one is the continuation of a formation with significance from every standpoint,
+  selected as above (`Direction.grounded_widening_selected`): one derivation from the evaluation
+  row through the one object of the paths to the pool law.
 * **`Clearing`.** Clearing and sparing the habitat are two moves of the clearer; sparing widens
   clearing (`Clearing.spared_widens`); under J1/J2 with no basic admission, clearing is not chosen,
   and the dweller's admission that tells them apart is selected through every pool holding the
@@ -45,7 +56,9 @@ core asserts it nowhere), C read as widening through the moves' frame, the decis
 widening adds a basic admission, and the law of exchange of `Flow.act_selected_by_pool`. Under the
 continuation condition every admission compared is a continuation with significance from every
 standpoint (`Web.paths_one_object`), which fixes the scope; the order is C's and J's. The
-continuation condition is not used here, and no valuation occurs. Reading a move by the levels it
+schema and the pool law use neither the continuation condition nor a valuation; the direction from
+the evaluation row takes the condition in two parts, the grounds and significance for what does
+not live, and C's order is used nowhere. Reading a move by the levels it
 leads to, and the selection of the moves by a pool's couplings, is the AI's reading of alignment's
 direction (§7.5 of the chapter). Every declaration has an empty axiom report.
 -/
@@ -158,6 +171,86 @@ theorem Direction.widening_selected_by_pool (through : law.Through W obs part)
       present start acts fun same => lost (same.mpr admitted)⟩
 
 end Pool
+
+section Scope
+
+variable {F C Pos : Type} {sig : Pos → Nat → F → Prop} {W : Web F C}
+
+/-- **The continuation condition is the evaluation's grounds widened to what does not live.** On a
+web whose valuation is connected, with something living and a standpoint, and where it is decided
+of each formation at a step whether it lives there (active and not undermining), the continuation
+condition holds exactly where the grounds of the evaluation hold (a seed, N_rel and N_std,
+`Valuation.significant_iff`) and the continuation of whatever does not live has significance from
+every standpoint. The forward direction needs neither connection nor decision
+(`Valuation.premises_of_unrestricted`); the converse uses the connection to carry the grounds to
+every living formation and the decision to split the rest. -/
+theorem Web.unrestricted_iff_grounds_beyond (own : Pos → F × Nat → Prop)
+    (connected : (W.valuation own fun p e => sig p e.2 e.1).Connected) (p₀ : Pos)
+    {e₀ : F × Nat} (alive₀ : W.active e₀.2 e₀.1 ∧ ¬ W.UnderminingAt e₀.2 e₀.1)
+    (decided : ∀ e : F × Nat, (W.active e.2 e.1 ∧ ¬ W.UnderminingAt e.2 e.1) ∨
+      ¬ (W.active e.2 e.1 ∧ ¬ W.UnderminingAt e.2 e.1)) :
+    Unrestricted sig ↔ (W.valuation own fun p e => sig p e.2 e.1).Grounds ∧
+      ∀ p (e : F × Nat), ¬ (W.active e.2 e.1 ∧ ¬ W.UnderminingAt e.2 e.1) → sig p e.2 e.1 :=
+  ⟨fun unrestricted =>
+    ⟨(Valuation.significant_iff connected p₀ alive₀).mp
+      (Valuation.premises_of_unrestricted (V := W.valuation own fun p e => sig p e.2 e.1)
+        unrestricted Prod.fst Prod.snd fun _ _ held => held).1,
+     fun p e _ => unrestricted (p, e.2, e.1)⟩,
+   fun ⟨grounds, beyond⟩ ⟨p, t, f⟩ =>
+    match decided (f, t) with
+    | .inl alive => (Valuation.significant_iff connected p₀ alive₀).mpr grounds p (f, t) alive
+    | .inr dead => beyond p (f, t) dead⟩
+
+/-- **The direction from the evaluation row.** Where the evaluation's grounds hold on a connected
+web and the continuation of what does not live has significance, decided as in
+`Web.unrestricted_iff_grounds_beyond`, the continuation condition holds; so on the web's level
+paths it is living significance over admission, and a widening is an extension of the moves'
+frame and retains and adds what has significance from every standpoint (`Web.paths_one_object`,
+`Direction.extension_iff_widens`). Under the conditions of `Direction.widening_selected_by_pool`,
+the admission that tells the widening world from the narrowed one is the continuation of a
+formation with significance from every standpoint, admitted by the widening world and not by the
+other, beyond the acting group's coupling closure, selected through the pooled coupling of every
+group holding it from its step on and through no pool within that closure. The scope comes from
+the grounds widened to what does not live; the order, calling the widening better, is C's and is
+not used: the theorem says what a selection realizing C's order goes through, not that it occurs. -/
+theorem Direction.grounded_widening_selected {A : Type} {law : ExchangeLaw F C}
+    {L L' : Flow F C} {W' : Web F C} {obs : F → C → Prop} {part : F → Bool}
+    {group : F → Prop} (own : Pos → F × Nat → Prop)
+    (connected : (W.valuation own fun p e => sig p e.2 e.1).Connected) (p₀ : Pos)
+    {e₀ : F × Nat} (alive₀ : W.active e₀.2 e₀.1 ∧ ¬ W.UnderminingAt e₀.2 e₀.1)
+    (decided : ∀ e : F × Nat, (W.active e.2 e.1 ∧ ¬ W.UnderminingAt e.2 e.1) ∨
+      ¬ (W.active e.2 e.1 ∧ ¬ W.UnderminingAt e.2 e.1))
+    (grounds : (W.valuation own fun p e => sig p e.2 e.1).Grounds)
+    (beyond : ∀ p (e : F × Nat), ¬ (W.active e.2 e.1 ∧ ¬ W.UnderminingAt e.2 e.1) →
+      sig p e.2 e.1)
+    (through : law.Through W obs part)
+    (follows : L.Follows law part W.level) (follows' : L'.Follows law part W'.level)
+    (balances : L.Balances W) (balances' : L'.Balances W')
+    (present : ∀ t, L.present t = L'.present t) (start : ∀ c, W.level 0 c = W'.level 0 c)
+    (acts : ∀ f, group f → L.ActsAlikeWithin L' W W' obs part f)
+    (widens : W.Widens W'.level W.level) :
+    LivingSignificance W.paths (fun _ => True) (fun _ e => ∀ p, sig p e.2 e.1) ∧
+      (∀ outcome : A → Nat → C → Nat,
+        Extension (Direction.frame W outcome) (fun _ => True) W.level W'.level) ∧
+      (∀ p, W.Retains sig p W'.level W.level ∧ W.Adds sig p W'.level W.level) ∧
+      ∃ s x, (∀ p, sig p s x) ∧ W.Admits (W'.level s) s x ∧ ¬ W.Admits (W.level s) s x ∧
+        ¬ WithinClosureOf (L.CoupledFromEither W L' obs) group x ∧
+        (∀ pool : F → Prop, pool x → ∀ t, s ≤ t →
+          W.SelectsThroughAll obs pool t (fun l => W.Admits (l s) s x)) ∧
+        ∀ pool : F → Prop,
+          (∀ g, pool g → WithinClosureOf (L.CoupledFromEither W L' obs) group g) →
+          ∀ t, ¬ W.SelectsThroughAll obs pool t (fun l => W.Admits (l s) s x) :=
+  have unrestricted : Unrestricted sig :=
+    (Web.unrestricted_iff_grounds_beyond own connected p₀ alive₀ decided).mpr ⟨grounds, beyond⟩
+  have one := W.paths_one_object (sig := sig)
+  match Direction.widening_selected_by_pool through follows follows' balances balances' present
+    start acts widens with
+  | ⟨s, x, admitted, lost, rest⟩ =>
+    ⟨one.1.mp unrestricted, fun _ => Direction.extension_iff_widens.mpr widens,
+     fun p => (one.2.2 unrestricted p W'.level W.level).mp widens,
+     s, x, fun p => unrestricted (p, s, x), admitted, lost, rest⟩
+
+end Scope
 
 namespace Clearing
 

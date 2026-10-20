@@ -15,8 +15,8 @@
   },
   "hypotheses": [
     {
-      "en": "The continuation condition fixes scope: every admission compared is a continuation with significance from every standpoint (Web.paths_one_object). C read as widening orders. J1–J4: J1/J2 as Priority on the moves' frame; for J3/J4 the moves listed, the comparison weakly decided and the admission decided. The core schema does not use the condition.",
-      "zh": "延续条件定范围：所比较的每个接纳都是从每个立场有意义的延续（Web.paths_one_object）。读作扩大的 C 定次序。J1–J4：J1/J2 是动作之框架上的 Priority；J3/J4 需动作列出、比较弱可判定、接纳可判定。核心模式不用条件。"
+      "en": "The continuation condition fixes scope: every admission compared is a continuation with significance from every standpoint (Web.paths_one_object). C read as widening orders. J1–J4: J1/J2 as Priority on the moves' frame; for J3/J4 the moves listed, the comparison weakly decided and the admission decided. The schema does not use the condition; the direction from the evaluation row (Direction.grounded_widening_selected) takes it in two parts, the evaluation's grounds on a connected web and significance for what does not live, with living decided.",
+      "zh": "延续条件定范围：所比较的每个接纳都是从每个立场有意义的延续（Web.paths_one_object）。读作扩大的 C 定次序。J1–J4：J1/J2 是动作之框架上的 Priority；J3/J4 需动作列出、比较弱可判定、接纳可判定。这一模式不用条件；从评价一行出发的方向（Direction.grounded_widening_selected）分两部分取它：连通之网上评价的根据，以及不生者的意义，生与否可判定。"
     },
     {
       "en": "The pool part takes the premises of Flow.act_selected_by_pool: balance, the rest following one law of exchange reading through coupling, the part acting alike within its group's coupling closure. Reading a move by the levels it leads to is the AI's. E includes warrant for basic classifications, actual protection, valid undertakings and authority.",
@@ -32,7 +32,8 @@
     "Becoming.alignment_better_iff_betterAt (retired module)",
     "Becoming.alignment_frontier_iff (retired module)",
     "Becoming.Direction.narrowed_not_chosen",
-    "Becoming.Direction.widening_selected_by_pool"
+    "Becoming.Direction.widening_selected_by_pool",
+    "Becoming.Direction.grounded_widening_selected"
   ],
   "dependencies": [
     {
@@ -151,8 +152,8 @@
     }
   ],
   "validation_scope": {
-    "en": "The existing independent review accepts the direction argument and independently rebuilt 9 new theorems/16 new audits plus 46 inherited audits. The core schema (Becoming.Direction) is machine-checked with empty axiom reports (receipt 20261020T005554.047169Z); not independently reviewed.",
-    "zh": "既有独立审查接受方向论证，并独立重编译9项新定理／16项新审计及46项继承审计。核心模式（Becoming.Direction）经实查，公理报告为空（回执 20261020T005554.047169Z）；未经独立审查。"
+    "en": "The existing independent review accepts the direction argument and independently rebuilt 9 new theorems/16 new audits plus 46 inherited audits. The core schema (Becoming.Direction) is machine-checked with empty axiom reports (receipt 20261020T065352.292900Z, with the direction from the evaluation row since R40); not independently reviewed.",
+    "zh": "既有独立审查接受方向论证，并独立重编译9项新定理／16项新审计及46项继承审计。核心模式（Becoming.Direction）经实查，公理报告为空（回执 20261020T065352.292900Z，自 R40 起含从评价一行出发的方向）；未经独立审查。"
   },
   "references": [
     {
@@ -166,7 +167,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Direction.lean",
       "role": "proof",
-      "sha256": "f9637243eb1855738a0c79294ae29968ee36c6c4e48505d2ada5af1b31bd5519",
+      "sha256": "303428e13cd0548d8de715d6805923f842f26790fc596e56204e546e1d23664f",
       "declarations": [
         "Becoming.Direction.frame",
         "Becoming.Direction.options_iff",
@@ -178,7 +179,9 @@
         "Becoming.Direction.widening_selected_by_pool",
         "Becoming.Clearing.spareOutcome",
         "Becoming.Clearing.spared_widens",
-        "Becoming.Clearing.direction"
+        "Becoming.Clearing.direction",
+        "Becoming.Web.unrestricted_iff_grounds_beyond",
+        "Becoming.Direction.grounded_widening_selected"
       ]
     },
     {
@@ -322,6 +325,12 @@
       "role": "integration",
       "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T065352.292900Z/verification.json",
+      "role": "receipt",
+      "sha256": "80d321d88cc38999b97571eff6114af18b9fff9ec2a0dbf0675eef5550787d0f",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -348,7 +357,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Direction.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T065352.292900Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Direction",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -419,6 +428,10 @@
     {
       "en": "20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (AlignmentDirection and Bridge) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Direction, Becoming.Frontier, Becoming.FrontierFrames, Becoming.Lexical and Becoming.Relevance). 2 aliases naming retired declarations are marked \"(retired module)\". The claim is unchanged.",
       "zh": "20 October 2026, R35 (twentieth review, E8)：对已被取代的外围模块（AlignmentDirection and Bridge）的证明引用改为来源（provenance），保留其声明，删去其绑定；当前证明是本记录仍作为证明引用的模块（Becoming.Direction, Becoming.Frontier, Becoming.FrontierFrames, Becoming.Lexical and Becoming.Relevance）。2 个指向退役声明的别名标为“(retired module)”。主张不变。"
+    },
+    {
+      "en": "20 October 2026, R40 (study section 232): a law added, the direction from the evaluation row (Web.unrestricted_iff_grounds_beyond: on a connected web with living decided, the continuation condition is exactly the evaluation's grounds with significance for what does not live; Direction.grounded_widening_selected: from these, the scope of a widening and the pool's selection of its added admission), with its alias; the first hypothesis says where the condition enters. The schema's claim is unchanged; receipt 20261020T065352.292900Z.",
+      "zh": "2026年10月20日，R40（研究第232节）：增加一条规律，从评价一行出发的方向（Web.unrestricted_iff_grounds_beyond：在连通、生与否可判定的网上，延续条件恰是评价的根据加上不生者的意义；Direction.grounded_widening_selected：由此得扩大的范围及合起来之耦合对其所增接纳的选择），并加其别名；第一条假设说明条件从何处进入。模式的主张不变；回执 20261020T065352.292900Z。"
     }
   ],
   "text_versions": [
@@ -484,6 +497,14 @@
       "zh": "其余依循一条经耦合读取的交换之律时，区分两个动作的接纳在行动组的耦合闭包之外，经持有该形成的每个组的合起来的耦合被选择，而不经闭包之内任何组的。",
       "declarations": [
         "Becoming.Direction.widening_selected_by_pool"
+      ]
+    },
+    {
+      "en": "On a web whose valuation is connected, with living decided, the continuation condition is exactly the evaluation's grounds (a seed and both neutralities) with significance for what does not live. From these, a widening is an extension of the moves' frame that retains and adds what has significance from every standpoint, and the admission telling the widening world from the narrowed one, the continuation of a formation with significance from every standpoint, is selected through every pool holding it and no pool within the acting group's coupling closure. C's order is not used.",
+      "zh": "在估值连通、生与否可判定的网上，延续条件恰是评价的根据（一个种子与两个中立性）加上不生者的意义。由此，扩大是动作框架上的延伸，从每个立场保留并增加有意义者；区分扩大世界与被缩小世界的接纳，即一个从每个立场都有意义的形成之延续，经持有它的每个组被选择，而不经行动组耦合闭包之内的任何组。不用 C 的次序。",
+      "declarations": [
+        "Becoming.Web.unrestricted_iff_grounds_beyond",
+        "Becoming.Direction.grounded_widening_selected"
       ]
     },
     {

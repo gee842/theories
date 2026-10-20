@@ -13,8 +13,8 @@ measure, the records and chapter section 8.1, and reports each criterion met or 
                      over dense amounts or a counterexample
   K5 enclosure       every parameter a central statement leaves supplied is a named condition that chapter
                      section 0 states
-  K6 ethics chain    each step after the first reaches an earlier step through its proof (the source's
-                     references), so the steps form one derivation; every normative hypothesis they use is named
+  K6 ethics chain    the last step reaches every earlier step through its proof (the source's references),
+                     so the steps are one derivation of it; every normative hypothesis they use is named
   K7 open register   each item of chapter 8.1 has one class from the register, a distinct title and an open part
 
 An unmet criterion is a finding, not an error. Errors are what makes the report meaningless: a malformed
@@ -301,6 +301,8 @@ def k4(cov, decls):
     for law in cov['representation']['natural_number_laws']:
         if not law.get('dense'):
             findings.append(f'{law["law"]}: no form over dense amounts or counterexample ({law.get("note", "")})')
+        elif law.get('kind') not in ('form', 'counterexample'):
+            findings.append(f'{law["law"]}: {law["dense"]} is listed without saying whether it is a form or a counterexample')
     return findings, tags
 
 
@@ -321,7 +323,8 @@ def k5(cov, decls, chapter):
 
 def _references(decls):
     """Each declaration's proof references, resolved as Lean resolves names: an unqualified or qualified name
-    against the declaration's namespace and each enclosing one; otherwise a qualified name (field notation after a
+    against the declaration's namespace and each enclosing one, dropping projections after a qualified name
+    (`Foo.bar_iff.mpr`); otherwise a qualified name (field notation after a
     variable, `W.law`) by its last components where exactly one declaration ends with them."""
     by_last = collections.defaultdict(set)
     for full in decls:
@@ -330,10 +333,14 @@ def _references(decls):
 
     def resolve(tok, ns):
         parts = ns.split('.') if ns else []
-        for i in range(len(parts), -1, -1):
-            cand = '.'.join(parts[:i] + [tok])
-            if cand in decls:
-                return cand
+        comps = tok.split('.')
+        # the whole name, then a qualified name with projections after it dropped (`Foo.bar_iff.mpr`)
+        for k in [len(comps)] + list(range(len(comps) - 1, 1, -1)):
+            name = '.'.join(comps[:k])
+            for i in range(len(parts), -1, -1):
+                cand = '.'.join(parts[:i] + [name])
+                if cand in decls:
+                    return cand
         head, _, rest = tok.partition('.')
         if rest:
             hits = [f for f in by_last.get(rest.rsplit('.', 1)[-1], ()) if f.endswith('.' + rest)]
@@ -365,15 +372,18 @@ def reaches(decls, start, target, limit=40000):
 
 
 def k6(cov, decls):
-    """Each step after the first reaches some earlier step through its proof, so the steps form one derivation
-    rooted at the first (the evaluation row); every normative hypothesis their statements use is named."""
+    """The last step, the conclusion, reaches every earlier step through its proof, so every step is used in
+    one derivation of it, rooted at the first (the evaluation row); every normative hypothesis their statements
+    use is named. A step need not reach the step listed before it: lemmas joined by a later step are one
+    derivation too."""
     findings, links = [], []
     steps = cov['ethics_chain']['steps']
     for i, b in enumerate(steps[1:], 1):
-        earlier = [a for a in steps[:i] if reaches(decls, b, a)]
-        links.append((b, earlier))
-        if not earlier:
-            findings.append(f'{b} reaches no earlier step of the chain through its proof')
+        links.append((b, [a for a in steps[:i] if reaches(decls, b, a)]))
+    last = steps[-1]
+    for a in steps[:-1]:
+        if not reaches(decls, last, a):
+            findings.append(f'the conclusion {last} does not reach {a} through its proof')
     used = set()
     for name in steps:
         st = reading(decls.get(name, {}))
@@ -433,7 +443,7 @@ def evaluate() -> dict:
         'receipt': receipt.get('utc'), 'connectivity_commit': conn.get('commit'),
         'connectivity_receipt': conn.get('core_receipt_at_commit'),
         'met': {k: not v for k, v in criteria.items()}, 'findings': criteria,
-        'rows': cov['rows'], 'premises_used': used, 'modelling': tags, 'parameters': params,
+        'rows': cov['rows'], 'natural_number_laws': cov['representation']['natural_number_laws'], 'premises_used': used, 'modelling': tags, 'parameters': params,
         'chain_start': cov['ethics_chain']['steps'][0], 'chain': links, 'normative_hypotheses': normative, 'open_items': items,
     }
 
@@ -467,6 +477,9 @@ def render_report(result: dict) -> str:
         if k == 'K4':
             counts = collections.Counter(t for v in result['modelling'].values() for t in v)
             out += ['Modelling choices found in central statements: ' + '; '.join(f'{t} ({n})' for t, n in counts.most_common()) + '.', '']
+            out += ['Natural-number laws: ' + '; '.join(
+                f'`{x["law"].removeprefix("Becoming.")}`: ' + (f'{x["kind"]} `{x["dense"].removeprefix("Becoming.")}`' if x.get('dense') else 'none')
+                for x in result['natural_number_laws']) + '.', '']
         if k == 'K5':
             out += ['Only the parameters the coverage file lists are looked for; a parameter of another name is not found.', '']
         if k == 'K5' and result['parameters']:

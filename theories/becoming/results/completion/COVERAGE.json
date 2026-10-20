@@ -590,7 +590,7 @@
     ]
   },
   "representation": {
-    "about": "K4. Modelling choices of chapter section 0, block A, and the pattern that finds each in a central statement; the natural-number laws (whose truth depends on whole-number amounts) with their form over dense amounts or a counterexample. A statement with no choice found is a law over any type (of configurations, claims or standpoints) that uses none of them.",
+    "about": "K4. Modelling choices of chapter section 0, block A, and the pattern that finds each in a central statement; the natural-number laws (whose truth depends on whole-number amounts) with their form over dense amounts or a counterexample (kind: form or counterexample). A statement with no choice found is a law over any type (of configurations, claims or standpoints) that uses none of them.",
     "choices": [
       {
         "name": "natural-number amounts",
@@ -621,27 +621,32 @@
       {
         "law": "Becoming.falls_not_recurring",
         "dense": "Becoming.Amounts.rests",
+        "kind": "form",
         "note": "proved from the least-loss law at whole numbers (whole_falls_not_recurring)"
       },
       {
         "law": "Becoming.World.comes_to_rest_unrefuted",
         "dense": "Becoming.Amounts.family_rests",
+        "kind": "form",
         "note": "the rest family is the whole-number instance of the least-loss law"
       },
       {
         "law": "Becoming.rising_recurs",
-        "dense": null,
-        "note": "open: a form over dense amounts or a counterexample (chapter 8.1 item 6)"
+        "dense": "Becoming.Halving.never_rests",
+        "kind": "counterexample",
+        "note": "over dyadic amounts a stock falls at every step and never rises; with a least loss, falls of at least it do not recur without rises (Amounts.rests)"
       },
       {
         "law": "Becoming.Flow.excess_bounded",
-        "dense": null,
-        "note": "open: a form over dense amounts or a counterexample (chapter 8.1 item 6)"
+        "dense": "Becoming.Amounts.losses_within",
+        "kind": "form",
+        "note": "for one amount: the level after n steps with the excesses summed is within the level before; the unit bound fails without a least loss (Halving.no_least_loss); flows over any amounts are open (chapter 8.1 item 6)"
       },
       {
         "law": "Becoming.Flow.More.replenishment_unbounded",
         "dense": null,
-        "note": "uses that each taker takes at least one unit per step"
+        "kind": null,
+        "note": "uses that each taker takes at least one unit per step; open: a form with a least take over Archimedean amounts, or a counterexample with takes that halve (chapter 8.1 item 6)"
       }
     ]
   },
@@ -686,15 +691,17 @@
     ]
   },
   "ethics_chain": {
-    "about": "K6. One chain from the evaluation row to the conclusions chapter 7.5 uses: each step after the first should reach an earlier step through its proof, so the steps are one derivation rooted at the evaluation row; every normative hypothesis their statements use is named.",
+    "about": "K6. One chain from the evaluation row to the conclusions chapter 7.5 uses: the last step, the conclusion, should reach every earlier step through its proof, so the steps are one derivation of it rooted at the evaluation row; every normative hypothesis their statements use is named.",
     "steps": [
       "Becoming.Valuation.significant_iff",
+      "Becoming.Web.unrestricted_iff_grounds_beyond",
       "Becoming.unrestricted_iff_livingSignificance",
       "Becoming.Web.widens_iff_retains_adds",
       "Becoming.Web.paths_extension_iff_widens",
       "Becoming.Web.paths_one_object",
       "Becoming.Direction.extension_iff_widens",
-      "Becoming.Direction.widening_selected_by_pool"
+      "Becoming.Direction.widening_selected_by_pool",
+      "Becoming.Direction.grounded_widening_selected"
     ],
     "normative_hypotheses": [
       {

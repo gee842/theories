@@ -2,16 +2,16 @@
 
 # The completion criterion, run
 
-The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T060542.295041Z` and the connectivity measure of `5e4825932` (core receipt `20261020T060542.295041Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
+The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T065352.292900Z` and the connectivity measure of `5e4825932` (core receipt `20261020T060542.295041Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
 
 | | Criterion | Met | Findings |
 |---|---|---|---:|
 | K1 | Coverage | yes | 0 |
 | K2 | Unity | no | 18 |
 | K3 | Premises | no | 2 |
-| K4 | Representation | no | 3 |
+| K4 | Representation | no | 1 |
 | K5 | Enclosure | yes | 0 |
-| K6 | The ethics chain | no | 4 |
+| K6 | The ethics chain | yes | 0 |
 | K7 | Open register | yes | 0 |
 
 ## K1. Coverage
@@ -72,9 +72,9 @@ Premises found in central statements: C, the widening comparison (1); a census (
 
 Modelling choices found in central statements: discrete steps (75); natural-number amounts (49); supplied observation (9); a fixed type of formations (8); decidedness (4); naming (1).
 
-- Becoming.rising_recurs: no form over dense amounts or counterexample (open: a form over dense amounts or a counterexample (chapter 8.1 item 6))
-- Becoming.Flow.excess_bounded: no form over dense amounts or counterexample (open: a form over dense amounts or a counterexample (chapter 8.1 item 6))
-- Becoming.Flow.More.replenishment_unbounded: no form over dense amounts or counterexample (uses that each taker takes at least one unit per step)
+Natural-number laws: `falls_not_recurring`: form `Amounts.rests`; `World.comes_to_rest_unrefuted`: form `Amounts.family_rests`; `rising_recurs`: counterexample `Halving.never_rests`; `Flow.excess_bounded`: form `Amounts.losses_within`; `Flow.More.replenishment_unbounded`: none.
+
+- Becoming.Flow.More.replenishment_unbounded: no form over dense amounts or counterexample (uses that each taker takes at least one unit per step; open: a form with a least take over Archimedean amounts, or a counterexample with takes that halve (chapter 8.1 item 6))
 
 ## K5. Enclosure: met
 
@@ -84,23 +84,22 @@ Supplied parameters found in central statements, each a named condition of secti
 
 No finding.
 
-## K6. The ethics chain: not met
+## K6. The ethics chain: met
 
-Steps: `Valuation.significant_iff` → `unrestricted_iff_livingSignificance` → `Web.widens_iff_retains_adds` → `Web.paths_extension_iff_widens` → `Web.paths_one_object` → `Direction.extension_iff_widens` → `Direction.widening_selected_by_pool`.
+Steps: `Valuation.significant_iff` → `Web.unrestricted_iff_grounds_beyond` → `unrestricted_iff_livingSignificance` → `Web.widens_iff_retains_adds` → `Web.paths_extension_iff_widens` → `Web.paths_one_object` → `Direction.extension_iff_widens` → `Direction.widening_selected_by_pool` → `Direction.grounded_widening_selected`.
 
+- `Web.unrestricted_iff_grounds_beyond` reaches `Valuation.significant_iff`
 - `unrestricted_iff_livingSignificance` reaches no earlier step
 - `Web.widens_iff_retains_adds` reaches no earlier step
 - `Web.paths_extension_iff_widens` reaches no earlier step
 - `Web.paths_one_object` reaches `unrestricted_iff_livingSignificance`, `Web.widens_iff_retains_adds`, `Web.paths_extension_iff_widens`
 - `Direction.extension_iff_widens` reaches `Web.paths_extension_iff_widens`
 - `Direction.widening_selected_by_pool` reaches no earlier step
+- `Direction.grounded_widening_selected` reaches `Valuation.significant_iff`, `Web.unrestricted_iff_grounds_beyond`, `unrestricted_iff_livingSignificance`, `Web.widens_iff_retains_adds`, `Web.paths_extension_iff_widens`, `Web.paths_one_object`, `Direction.extension_iff_widens`, `Direction.widening_selected_by_pool`
 
 Normative hypotheses in its statements: living significance, the continuation condition.
 
-- Becoming.unrestricted_iff_livingSignificance reaches no earlier step of the chain through its proof
-- Becoming.Web.widens_iff_retains_adds reaches no earlier step of the chain through its proof
-- Becoming.Web.paths_extension_iff_widens reaches no earlier step of the chain through its proof
-- Becoming.Direction.widening_selected_by_pool reaches no earlier step of the chain through its proof
+No finding.
 
 ## K7. Open register: met
 

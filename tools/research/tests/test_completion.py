@@ -54,6 +54,11 @@ class ParserTests(unittest.TestCase):
         self.assertTrue(completion.reaches(self.decls, 'Becoming.Inner.deeper', 'Becoming.Web.base'))
         self.assertFalse(completion.reaches(self.decls, 'Becoming.Web.base', 'Becoming.Web.next'))
 
+    def test_references_drop_projections_after_a_qualified_name(self):
+        decls = {'Becoming.Web.base_iff': {'proof': 'Iff.rfl'},
+                 'Becoming.Other.uses': {'proof': 'Web.base_iff.mpr held'}}
+        self.assertEqual(completion._references(decls)('Becoming.Other.uses'), frozenset({'Becoming.Web.base_iff'}))
+
 
 class RegisterTests(unittest.TestCase):
     def cov(self):

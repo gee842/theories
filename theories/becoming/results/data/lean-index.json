@@ -28,8 +28,8 @@
       "imported-archive": 23,
       "working-source": 855
     },
-    "working_named_theorem_lemma_occurrences": 22784,
-    "working_explicit_named_declaration_occurrences": 34201,
+    "working_named_theorem_lemma_occurrences": 22786,
+    "working_explicit_named_declaration_occurrences": 34203,
     "working_groups": {
       "abstraction": 45,
       "becoming-core": 271,
@@ -5400,7 +5400,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Direction.lean",
-      "sha256": "f9637243eb1855738a0c79294ae29968ee36c6c4e48505d2ada5af1b31bd5519",
+      "sha256": "303428e13cd0548d8de715d6805923f842f26790fc596e56204e546e1d23664f",
       "role": "working-source",
       "group": "becoming-core",
       "receipt_layer": "core",
@@ -79670,6 +79670,108 @@
         "unsafe": []
       },
       "print_axioms_commands": 18
+    },
+    "303428e13cd0548d8de715d6805923f842f26790fc596e56204e546e1d23664f": {
+      "byte_size": 19215,
+      "line_count": 301,
+      "imports": [
+        "Becoming.FrontierFrames",
+        "Becoming.SelectionPool",
+        "Becoming.ValuationFrames",
+        "Becoming.Relevance"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "frame",
+          "qualified_name_hint": "Becoming.Direction.frame",
+          "line": 77
+        },
+        {
+          "kind": "theorem",
+          "name": "options_iff",
+          "qualified_name_hint": "Becoming.Direction.options_iff",
+          "line": 83
+        },
+        {
+          "kind": "theorem",
+          "name": "extension_iff_widens",
+          "qualified_name_hint": "Becoming.Direction.extension_iff_widens",
+          "line": 89
+        },
+        {
+          "kind": "theorem",
+          "name": "chosen_keeps_basic",
+          "qualified_name_hint": "Becoming.Direction.chosen_keeps_basic",
+          "line": 98
+        },
+        {
+          "kind": "theorem",
+          "name": "kept_required",
+          "qualified_name_hint": "Becoming.Direction.kept_required",
+          "line": 110
+        },
+        {
+          "kind": "theorem",
+          "name": "narrowed_not_chosen",
+          "qualified_name_hint": "Becoming.Direction.narrowed_not_chosen",
+          "line": 126
+        },
+        {
+          "kind": "theorem",
+          "name": "widening_not_not_better",
+          "qualified_name_hint": "Becoming.Direction.widening_not_not_better",
+          "line": 135
+        },
+        {
+          "kind": "theorem",
+          "name": "Direction.widening_selected_by_pool",
+          "qualified_name_hint": "Becoming.Direction.widening_selected_by_pool",
+          "line": 155
+        },
+        {
+          "kind": "theorem",
+          "name": "Web.unrestricted_iff_grounds_beyond",
+          "qualified_name_hint": "Becoming.Web.unrestricted_iff_grounds_beyond",
+          "line": 187
+        },
+        {
+          "kind": "theorem",
+          "name": "Direction.grounded_widening_selected",
+          "qualified_name_hint": "Becoming.Direction.grounded_widening_selected",
+          "line": 216
+        },
+        {
+          "kind": "def",
+          "name": "spareOutcome",
+          "qualified_name_hint": "Becoming.Clearing.spareOutcome",
+          "line": 260
+        },
+        {
+          "kind": "theorem",
+          "name": "spared_widens",
+          "qualified_name_hint": "Becoming.Clearing.spared_widens",
+          "line": 266
+        },
+        {
+          "kind": "theorem",
+          "name": "direction",
+          "qualified_name_hint": "Becoming.Clearing.direction",
+          "line": 282
+        }
+      ],
+      "declaration_counts": {
+        "def": 2,
+        "theorem": 11
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
     },
     "308ba46d3bbbf63bf68ed1624e2bf691b1b3cf1dd3f3a7a84403a05511ee59b5": {
       "byte_size": 20822,
@@ -352747,94 +352849,6 @@
         "unsafe": []
       },
       "print_axioms_commands": 55
-    },
-    "f9637243eb1855738a0c79294ae29968ee36c6c4e48505d2ada5af1b31bd5519": {
-      "byte_size": 12622,
-      "line_count": 208,
-      "imports": [
-        "Becoming.FrontierFrames",
-        "Becoming.SelectionPool"
-      ],
-      "declarations": [
-        {
-          "kind": "def",
-          "name": "frame",
-          "qualified_name_hint": "Becoming.Direction.frame",
-          "line": 64
-        },
-        {
-          "kind": "theorem",
-          "name": "options_iff",
-          "qualified_name_hint": "Becoming.Direction.options_iff",
-          "line": 70
-        },
-        {
-          "kind": "theorem",
-          "name": "extension_iff_widens",
-          "qualified_name_hint": "Becoming.Direction.extension_iff_widens",
-          "line": 76
-        },
-        {
-          "kind": "theorem",
-          "name": "chosen_keeps_basic",
-          "qualified_name_hint": "Becoming.Direction.chosen_keeps_basic",
-          "line": 85
-        },
-        {
-          "kind": "theorem",
-          "name": "kept_required",
-          "qualified_name_hint": "Becoming.Direction.kept_required",
-          "line": 97
-        },
-        {
-          "kind": "theorem",
-          "name": "narrowed_not_chosen",
-          "qualified_name_hint": "Becoming.Direction.narrowed_not_chosen",
-          "line": 113
-        },
-        {
-          "kind": "theorem",
-          "name": "widening_not_not_better",
-          "qualified_name_hint": "Becoming.Direction.widening_not_not_better",
-          "line": 122
-        },
-        {
-          "kind": "theorem",
-          "name": "Direction.widening_selected_by_pool",
-          "qualified_name_hint": "Becoming.Direction.widening_selected_by_pool",
-          "line": 142
-        },
-        {
-          "kind": "def",
-          "name": "spareOutcome",
-          "qualified_name_hint": "Becoming.Clearing.spareOutcome",
-          "line": 167
-        },
-        {
-          "kind": "theorem",
-          "name": "spared_widens",
-          "qualified_name_hint": "Becoming.Clearing.spared_widens",
-          "line": 173
-        },
-        {
-          "kind": "theorem",
-          "name": "direction",
-          "qualified_name_hint": "Becoming.Clearing.direction",
-          "line": 189
-        }
-      ],
-      "declaration_counts": {
-        "def": 2,
-        "theorem": 9
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
     },
     "f96768c6d651d4cb8c4ecf5bbdbc10e4d5791c2c25228d43c99b1b3cb0188e0f": {
       "byte_size": 38284,
