@@ -1,0 +1,7 @@
+moved 26 [('Becoming.CensusBinding', 'Becoming.Counting'), ('Becoming.CensusCounts', 'Becoming.CensusTable'), ('Becoming.CensusCounts', 'Becoming.Counting'), ('Becoming.Counting', 'Becoming.CensusTable'), ('Becoming.Standing', 'Becoming.CensusTable')]
+changed Lean ['CensusBinding.lean', 'CensusCounts.lean', 'CensusTable.lean', 'Counting.lean', 'Standing.lean']
+counting-standing-and-dependence 5 2 ['Counting.lean', 'Standing.lean'] 2 
+counting-under-enclosure 3 0 ['Counting.lean'] 1 
+counting-where-the-counts-exist 19 1 ['CensusBinding.lean', 'CensusCounts.lean'] 2 
+whole-law-of-counting 1 0 ['Counting.lean'] 1 
+4 records changed

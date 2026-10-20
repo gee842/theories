@@ -1716,6 +1716,16 @@
    "module": "Becoming.Frequency",
    "category": "support",
    "reason": "a counting lemma of the module's own `count`: marking the steps from `T`, `r` are counted by `T + r`; since R37 the onset's doubling is stated once, by `Closing.Onset.amount_after`, which does not use it"
+  },
+  "Becoming.counting_laws": {
+   "module": "Becoming.Population",
+   "category": "general-structure",
+   "reason": "the tally is the whole law of counting for any listing of any type, with the marks a procedure gives: a law of every listed family, with no world; the census tables of Becoming.CensusTable state what a class of worlds adds for the listings a world has, and since R37b no longer go through it"
+  },
+  "Becoming.counted_laws": {
+   "module": "Becoming.CensusCounts",
+   "category": "general-structure",
+   "reason": "the tally is the whole law of counting for any listing of any type, counts as relations: a law of every listed family, with no world; the census tables of Becoming.CensusTable state what a class of worlds adds for the listings a world has, and since R37b no longer go through it"
   }
  },
  "instances": {

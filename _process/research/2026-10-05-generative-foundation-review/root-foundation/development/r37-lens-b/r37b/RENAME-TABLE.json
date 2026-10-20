@@ -1,0 +1,61 @@
+{
+  "removed": [
+    {
+      "old": "Becoming.World.openQueue_countsOf",
+      "kept": "Becoming.World.countsOf_decided",
+      "item": "B11",
+      "why": "a helper the census tables leave unused: the witness lemmas give the marks of the witness worlds as counts of their censuses"
+    },
+    {
+      "old": "Becoming.World.drivenQueue_countsOf",
+      "kept": "Becoming.World.countsOf_decided",
+      "item": "B11",
+      "why": "a helper the census tables leave unused: the witness lemmas give the marks of the witness worlds as counts of their censuses"
+    },
+    {
+      "old": "Becoming.World.enclosedQueue_countsOf",
+      "kept": "Becoming.World.countsOf_decided",
+      "item": "B11",
+      "why": "a helper the census tables leave unused: the witness lemmas give the marks of the witness worlds as counts of their censuses"
+    },
+    {
+      "old": "Becoming.World.closingQueue_countsOf",
+      "kept": "Becoming.World.countsOf_decided",
+      "item": "B11",
+      "why": "a helper the census tables leave unused: the witness lemmas give the marks of the witness worlds as counts of their censuses"
+    },
+    {
+      "old": "Becoming.World.finiteQueue_countsOf",
+      "kept": "Becoming.World.countsOf_decided",
+      "item": "B11",
+      "why": "a helper the census tables leave unused: the witness lemmas give the marks of the witness worlds as counts of their censuses"
+    },
+    {
+      "old": "Becoming.World.countsOf_eq",
+      "kept": "Becoming.FamilyCounts.of_eq",
+      "item": "B11",
+      "why": "a helper the census tables leave unused: the witness lemmas give the marks of the witness worlds as counts of their censuses"
+    },
+    {
+      "old": "Becoming.World.embodiedQueue_stands",
+      "kept": "Becoming.World.enclosed_standing_counting_under_witnessed",
+      "item": "B11",
+      "why": "a helper the census table of what stands leaves unused: the witness lemma reads the queue standing while active on what stands"
+    },
+    {
+      "old": "Becoming.World.Embodied.tally_of_stands",
+      "kept": "Becoming.World.Embodied.standsObey_iff",
+      "item": "B11",
+      "why": "a corollary of standsObey_iff the census table of what stands leaves unused"
+    },
+    {
+      "old": "Becoming.World.company_of",
+      "kept": "Becoming.FamilyCounts.company",
+      "item": "B11",
+      "why": "the same statement for the census of activity; the census table states it once for any listed family"
+    }
+  ],
+  "renamed": [],
+  "moved": [],
+  "generalized": []
+}

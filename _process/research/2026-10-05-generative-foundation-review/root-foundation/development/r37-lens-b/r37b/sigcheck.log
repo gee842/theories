@@ -1,0 +1,83 @@
+kept or replaced: 11372 agree, 0 differ (same name), 9 differ (replaced by a kept name), 0 missing, 0 removed with no replacement
+GENERAL Becoming.World.Embodied.tally_of_stands -> Becoming.World.Embodied.standsObey_iff
+  OLD ∀ {w : Becoming.World} {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)], w.Embodied → Becoming.Pointwise Q → ∀ {alive : Nat → List w.Relatum}, w.web.Census alive → ∀ {n c a : Nat → Nat}, (∀ (t : Nat), (alive t).length = n t ∧ Becoming.ceasings (alive t) (fun x s => w.web.active s x) t = c t ∧ Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t = a t) → w.StandsObey Q → Q n c a
+  NEW ∀ {w : Becoming.World} {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} [decided : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)], w.Embodied → Becoming.Pointwise Q → (w.StandsObey Q ↔ w.CountsObey Q)
+GENERAL Becoming.World.embodiedQueue_stands -> Becoming.World.enclosed_standing_counting_under_witnessed
+  OLD ∀ {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} {n c a : Nat → Nat}, Becoming.Tally n c a → Becoming.Pointwise Q → (Becoming.World.embodiedQueue n c).StandsObey Q → Q n c a
+  NEW ∀ (S : Becoming.World.Premise → Bool), Becoming.World.Witnessed (fun w x t => 0 < w.web.level t x) (fun w => w.Meets S ∧ ∃ T, ∀ (t : Nat), T ≤ t → w.flow.Enclosed t) fun n c a => (Becoming.World.BindsCounting S → ∀ (t : Nat), 0 < a t → 0 < n t) ∧ (Becoming.World.BoundsStanding S → ∃ T B, Becoming.ChangeBound T B n c a ∧ ∀ (t : Nat), T ≤ t → 0 < a t → 0 < n t)
+GENERAL Becoming.World.openQueue_countsOf -> Becoming.World.countsOf_decided
+  OLD ∀ {n c a : Nat → Nat}, Becoming.Tally n c a → (Becoming.World.openQueue n c).CountsOf (fun t => List.map Becoming.OpenQueue.Relatum.member (Becoming.Queue.line n c t)) n c a
+  NEW ∀ {w : Becoming.World} [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)] (alive : Nat → List w.Relatum), w.CountsOf alive (fun t => (alive t).length) (fun t => Becoming.ceasings (alive t) (fun x s => w.web.active s x) t) fun t => Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t
+GENERAL Becoming.World.drivenQueue_countsOf -> Becoming.World.countsOf_decided
+  OLD ∀ {n c a : Nat → Nat}, Becoming.Tally n c a → (Becoming.World.drivenQueue n c).CountsOf (fun t => List.map Becoming.OpenQueue.Relatum.member (Becoming.Queue.line n c t)) n c a
+  NEW ∀ {w : Becoming.World} [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)] (alive : Nat → List w.Relatum), w.CountsOf alive (fun t => (alive t).length) (fun t => Becoming.ceasings (alive t) (fun x s => w.web.active s x) t) fun t => Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t
+GENERAL Becoming.World.company_of -> Becoming.FamilyCounts.company
+  OLD ∀ {w : Becoming.World} {alive : Nat → List w.Relatum} {n c a : Nat → Nat}, w.CountsOf alive n c a → ∀ {t : Nat}, (∀ (x : w.Relatum), x ∈ alive (t + 1) → Becoming.ComesToBe (fun s => w.web.active s x) t → 0 < (alive t).length) → 0 < a t → 0 < n t
+  NEW ∀ {α : Type} {p : α → Nat → Prop} {l : Nat → List α} {n c a : Nat → Nat}, Becoming.FamilyCounts p l n c a → ∀ {t : Nat}, (∀ (x : α), x ∈ l (t + 1) → Becoming.ComesToBe (p x) t → 0 < (l t).length) → 0 < a t → 0 < n t
+GENERAL Becoming.World.enclosedQueue_countsOf -> Becoming.World.countsOf_decided
+  OLD ∀ {n c a : Nat → Nat} (B : Nat), Becoming.Tally n c a → (Becoming.World.enclosedQueue n c a B).CountsOf (Becoming.Queue.line n c) n c a
+  NEW ∀ {w : Becoming.World} [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)] (alive : Nat → List w.Relatum), w.CountsOf alive (fun t => (alive t).length) (fun t => Becoming.ceasings (alive t) (fun x s => w.web.active s x) t) fun t => Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t
+GENERAL Becoming.World.closingQueue_countsOf -> Becoming.World.countsOf_decided
+  OLD ∀ {n c a : Nat → Nat} (B T : Nat), Becoming.Tally n c a → (Becoming.World.closingQueue n c a B T).CountsOf (Becoming.Queue.line n c) n c a
+  NEW ∀ {w : Becoming.World} [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)] (alive : Nat → List w.Relatum), w.CountsOf alive (fun t => (alive t).length) (fun t => Becoming.ceasings (alive t) (fun x s => w.web.active s x) t) fun t => Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t
+GENERAL Becoming.World.finiteQueue_countsOf -> Becoming.World.countsOf_decided
+  OLD ∀ {n c a : Nat → Nat} {B : Nat}, Becoming.Tally n c a → Becoming.ChangeBound 0 B n c a → (Becoming.World.finiteQueue n c a B).CountsOf (Becoming.FiniteQueue.alive n c B) n c a
+  NEW ∀ {w : Becoming.World} [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)] (alive : Nat → List w.Relatum), w.CountsOf alive (fun t => (alive t).length) (fun t => Becoming.ceasings (alive t) (fun x s => w.web.active s x) t) fun t => Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t
+GENERAL Becoming.World.countsOf_eq -> Becoming.FamilyCounts.of_eq
+  OLD ∀ {w : Becoming.World} [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)] {alive : Nat → List w.Relatum} {n c a : Nat → Nat}, (∀ (t : Nat), (alive t).length = n t ∧ Becoming.ceasings (alive t) (fun x s => w.web.active s x) t = c t ∧ Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t = a t) → w.CountsOf alive n c a
+  NEW ∀ {α : Type} {p : α → Nat → Prop} {l : Nat → List α} {n c a n' c' a' : Nat → Nat}, Becoming.FamilyCounts p l n c a → (∀ (t : Nat), n t = n' t ∧ c t = c' t ∧ a t = a' t) → Becoming.FamilyCounts p l n' c' a'
+new names: 54
+NEW Becoming.Counts.congr
+NEW Becoming.FamilyCounts.company
+NEW Becoming.FamilyCounts.congr
+NEW Becoming.Indicates.congr
+NEW Becoming.Listed.congr
+NEW Becoming.World.WitnessedAt.congr
+NEW Becoming.World.binding_counting_sound
+NEW Becoming.World.binding_counting_under_sound
+NEW Becoming.World.binding_counting_under_witnessed
+NEW Becoming.World.binding_counting_witnessed
+NEW Becoming.World.census_table_holds₂
+NEW Becoming.World.census_table_holds₃
+NEW Becoming.World.census_table_obeys
+NEW Becoming.World.census_table_obeys_free
+NEW Becoming.World.census_table_obeys₂
+NEW Becoming.World.census_table_obeys₃
+NEW Becoming.World.counting_free_witnessed
+NEW Becoming.World.counting_under_sound
+NEW Becoming.World.counting_under_witnessed
+NEW Becoming.World.dependence_witnessed
+NEW Becoming.World.enclosed_binding_counting_sound
+NEW Becoming.World.enclosed_binding_counting_under_sound
+NEW Becoming.World.enclosed_binding_counting_under_witnessed
+NEW Becoming.World.enclosed_binding_counting_witnessed
+NEW Becoming.World.enclosed_counting_sound
+NEW Becoming.World.enclosed_counting_under_sound
+NEW Becoming.World.enclosed_counting_under_witnessed
+NEW Becoming.World.enclosed_counting_witnessed
+NEW Becoming.World.enclosed_standing_counting_under_sound
+NEW Becoming.World.enclosed_standing_counting_under_witnessed
+NEW Becoming.World.enclosure_bounds_standing_counted
+NEW Becoming.World.finite_binding_counting_sound
+NEW Becoming.World.finite_binding_counting_under_sound
+NEW Becoming.World.finite_binding_counting_under_witnessed
+NEW Becoming.World.finite_binding_counting_witnessed
+NEW Becoming.World.finite_counting_sound
+NEW Becoming.World.finite_counting_under_sound
+NEW Becoming.World.finite_counting_under_witnessed
+NEW Becoming.World.finite_counting_witnessed
+NEW Becoming.World.finite_dependence_counting_sound
+NEW Becoming.World.finite_dependence_counting_witnessed
+NEW Becoming.World.finite_standing_counting_under_sound
+NEW Becoming.World.finite_standing_counting_under_witnessed
+NEW Becoming.World.listingObeys_of_obeys
+NEW Becoming.World.premised_counting_sound
+NEW Becoming.World.premised_counting_witnessed
+NEW Becoming.World.standing_counting_under_sound
+NEW Becoming.World.standing_counting_under_witnessed
+NEW Becoming.World.standing_of_coming_enclosed
+NEW Becoming.World.table_holds
+NEW Becoming.World.table_holds_free
+NEW Becoming.World.table_obeys
+NEW Becoming.World.table_obeys_free
+NEW Becoming.World.witnessedAt_of

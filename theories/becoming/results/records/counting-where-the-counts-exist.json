@@ -94,7 +94,7 @@
         "Becoming.World.CountsOf.company_binding",
         "Becoming.World.CountsOf.acts_of_binding",
         "Becoming.World.CountsOf.joint_of_binding",
-        "Becoming.World.countsOf_eq"
+        "Becoming.FamilyCounts.of_eq"
       ]
     },
     {
@@ -203,36 +203,57 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusCounts.lean",
       "role": "proof",
       "declarations": [
-        "Becoming.FamilyCounts",
-        "Becoming.FamilyCounts.tally",
-        "Becoming.World.CountsHold",
-        "Becoming.World.CountsHold.obey",
-        "Becoming.World.CountsOf",
-        "Becoming.World.CountsOf.tally",
-        "Becoming.World.active_of_coming_enclosed",
-        "Becoming.World.active_of_coming_jointly",
-        "Becoming.World.active_of_coming_taking",
         "Becoming.World.ceasings_exist_iff_listed",
         "Becoming.World.comings_exist_iff",
         "Becoming.World.comings_exist_iff_listed",
         "Becoming.World.counting_binds_iff_counted",
         "Becoming.World.counting_free_counted",
         "Becoming.World.counting_under_counted",
-        "Becoming.World.countsHold_of_obey",
-        "Becoming.World.countsOf_decided",
         "Becoming.World.enclosed_change_bound_iff_counted",
         "Becoming.World.enclosed_counting_counted",
         "Becoming.World.enclosed_counting_under_counted",
-        "Becoming.World.enclosure_bounds_change_counted",
         "Becoming.World.finite_change_bound_iff_counted",
         "Becoming.World.finite_counting_binds_iff_counted",
         "Becoming.World.finite_counting_counted",
         "Becoming.World.finite_counting_under_counted",
         "Becoming.World.premised_counting_counted",
-        "Becoming.counted_laws",
-        "Becoming.tally_step"
+        "Becoming.counted_laws"
       ],
-      "sha256": "b3032e50a390ae0db6421a897992607d7fe2d085be76855318dd705a771205ca"
+      "sha256": "bdd45e529bf1a5b12d50938f2555f9e21c564882dcfa1371f6d0f60a20bd192e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "role": "proof",
+      "sha256": "6ec66255167b62c371a69951659be416f36e223e133b241db12a2029392ed074",
+      "declarations": [
+        "Becoming.World.active_of_coming_enclosed",
+        "Becoming.World.active_of_coming_jointly",
+        "Becoming.World.active_of_coming_taking",
+        "Becoming.World.enclosure_bounds_change_counted",
+        "Becoming.World.CountsOf.active_pos",
+        "Becoming.World.CountsOf.acts_of_binding",
+        "Becoming.World.CountsOf.arising_pos",
+        "Becoming.World.CountsOf.company_binding",
+        "Becoming.World.CountsOf.joint_of_binding",
+        "Becoming.World.binds_arising_counted"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusTable.lean",
+      "role": "proof",
+      "sha256": "3a8e3ed452a4f0989c2917dbb13ab785fca79e5c4089d29b052fd1f71f8629e8",
+      "declarations": [
+        "Becoming.FamilyCounts",
+        "Becoming.FamilyCounts.tally",
+        "Becoming.World.CountsHold",
+        "Becoming.World.CountsHold.obey",
+        "Becoming.World.CountsOf",
+        "Becoming.World.CountsOf.tally",
+        "Becoming.World.countsHold_of_obey",
+        "Becoming.World.countsOf_decided",
+        "Becoming.tally_step",
+        "Becoming.FamilyCounts.of_eq"
+      ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
@@ -251,21 +272,14 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusBinding.lean",
       "role": "proof",
       "declarations": [
-        "Becoming.World.CountsOf.active_pos",
-        "Becoming.World.CountsOf.acts_of_binding",
-        "Becoming.World.CountsOf.arising_pos",
-        "Becoming.World.CountsOf.company_binding",
-        "Becoming.World.CountsOf.joint_of_binding",
         "Becoming.World.binding_activity_iff_counted",
         "Becoming.World.binding_arising_iff_counted",
         "Becoming.World.binding_counting_counted",
         "Becoming.World.binding_counting_under_counted",
         "Becoming.World.binding_joint_iff_counted",
         "Becoming.World.binds_adds_counted",
-        "Becoming.World.binds_arising_counted",
         "Becoming.World.counting_binds_jointly_counted",
         "Becoming.World.counting_free_parts_counted",
-        "Becoming.World.countsOf_eq",
         "Becoming.World.enclosed_binding_activity_iff_counted",
         "Becoming.World.enclosed_binding_arising_iff_counted",
         "Becoming.World.enclosed_binding_counting_counted",
@@ -281,7 +295,7 @@
         "Becoming.World.finite_binding_joint_iff_counted",
         "Becoming.World.standing_iff_counting_counted"
       ],
-      "sha256": "6f4c8b032363f0c37092b2fe0b144d9f21ae1a841a888c0134f0f4884ad01e80"
+      "sha256": "f626c7641e4e9950fbac7f2072017546a19394d4f3bb53e2c3e51df3ccd49db5"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T060442.434639Z/verification.json",
@@ -314,19 +328,25 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
+      "role": "receipt",
+      "sha256": "a47fa21097a69fd4ab35cecaa0a5ccef5ebb0f2d37b166856bad77506cc4b9af",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusCounts.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.CensusCounts",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusBinding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T060442.434639Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.CensusBinding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -335,6 +355,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Decidedness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusTable.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.CensusTable",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counting",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -369,6 +403,10 @@
     {
       "en": "2026-10-20: 17 bookkeeping notes condensed from 18 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/9b9b0bfeb271c2f7/counting-where-the-counts-exist.json and in git.",
       "zh": "2026-10-20：17 条记账性说明合并（18 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/9b9b0bfeb271c2f7/counting-where-the-counts-exist.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R37b (B11 of the twentieth review: one census table for any listing, the laws of counting what is active, what stands and what depends its instances, the counted and decided forms from one soundness and one witness): Moved with their full names: from CensusBinding.lean to Counting.lean, World.CountsOf.active_pos, World.CountsOf.acts_of_binding, World.CountsOf.arising_pos, World.CountsOf.company_binding, World.CountsOf.joint_of_binding, World.binds_arising_counted; from CensusCounts.lean to CensusTable.lean, FamilyCounts, FamilyCounts.tally, World.CountsHold, World.CountsHold.obey, World.CountsOf, World.CountsOf.tally, World.countsHold_of_obey, World.countsOf_decided, tally_step; from CensusCounts.lean to Counting.lean, World.active_of_coming_enclosed, World.active_of_coming_jointly, World.active_of_coming_taking, World.enclosure_bounds_change_counted. Replaced by the name stating it now, the same statement or its general form, or renamed (development/r37-lens-b/r37b/RENAME-TABLE.json): World.countsOf_eq (now FamilyCounts.of_eq). Proof bindings (CensusBinding.lean, CensusCounts.lean) rebound to core receipt 20261020T060542.295041Z. Re-pointed after reading the change: CensusBinding.lean: each counted binding law the census table of its decided form in Counting; the binding steps moved to Counting; kept statements unchanged; CensusCounts.lean: each counted law the census table of its decided form in Counting; the census of activity moved to CensusTable, the binding steps to Counting; helpers left unused removed; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R37b（第二十次评审的 B11：任一列举的一个普查表，计数所活动、所立与所依的规律为其实例，计数式与判定式由一个可靠性与一个见证给出）：连同完整名称移动：从 CensusBinding.lean 到 Counting.lean：World.CountsOf.active_pos、World.CountsOf.acts_of_binding、World.CountsOf.arising_pos、World.CountsOf.company_binding、World.CountsOf.joint_of_binding、World.binds_arising_counted；从 CensusCounts.lean 到 CensusTable.lean：FamilyCounts、FamilyCounts.tally、World.CountsHold、World.CountsHold.obey、World.CountsOf、World.CountsOf.tally、World.countsHold_of_obey、World.countsOf_decided、tally_step；从 CensusCounts.lean 到 Counting.lean：World.active_of_coming_enclosed、World.active_of_coming_jointly、World.active_of_coming_taking、World.enclosure_bounds_change_counted。以现在陈述它的名称取代（陈述相同或为其一般形式）或改名（development/r37-lens-b/r37b/RENAME-TABLE.json）：World.countsOf_eq（现为 FamilyCounts.of_eq）。证明绑定（CensusBinding.lean、CensusCounts.lean）改到核心回执 20261020T060542.295041Z。读过改动后重新指向：CensusBinding.lean：每条计数式约束规律为 Counting 中其判定形式的普查表；约束步骤移至 Counting；保留的陈述不变；CensusCounts.lean：每条计数式规律为 Counting 中其判定形式的普查表；活动普查移至 CensusTable，约束步骤移至 Counting；不再使用的辅助引理删去；保留的陈述不变。论断不变。"
     }
   ],
   "text_versions": [

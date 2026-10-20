@@ -13,12 +13,13 @@ checker's Signatures steps print it (`#check @X`), read from two receipts and co
 * New names are listed.
 usage: python3 -B sigcheck.py BASE_RECEIPT NEW_RECEIPT"""
 import json
+import os
 import re
 import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-TABLE = json.load(open(HERE / 'RENAME-TABLE.json'))
+TABLE = json.load(open(os.environ.get('RENAME_TABLE', HERE / 'RENAME-TABLE.json')))  # R37b passes r37b/RENAME-TABLE.json
 NOW = {r['old']: r['kept'] for r in TABLE['removed'] if r['kept']}
 NOW.update({r['old']: r['new'] for r in TABLE['renamed']})
 GONE = {r['old'] for r in TABLE['removed'] if not r['kept']}

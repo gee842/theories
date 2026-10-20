@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "utc": "20261020T051144.879480Z",
+  "utc": "20261020T060542.295041Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "becoming-checks/20261020T051144.879480Z",
+  "retained_run": "becoming-checks/20261020T060542.295041Z",
   "spine_modules": [
     "Becoming.Prelude",
     "Becoming.World",
@@ -65,6 +65,7 @@
     "Becoming.Openness",
     "Becoming.Decidedness",
     "Becoming.Refinement",
+    "Becoming.CensusTable",
     "Becoming.Counting",
     "Becoming.Standing",
     "Becoming.Resolution",
@@ -347,6 +348,7 @@
     "Becoming.Openness",
     "Becoming.Decidedness",
     "Becoming.Refinement",
+    "Becoming.CensusTable",
     "Becoming.Counting",
     "Becoming.Standing",
     "Becoming.Resolution",
@@ -641,6 +643,7 @@
     "Becoming.Reordering",
     "Becoming.IdleRemoval",
     "Becoming.OrderNormal",
+    "Becoming.CensusTable",
     "Becoming.Counting",
     "Becoming.OneStep",
     "Becoming.Weighted",
@@ -926,6 +929,7 @@
     "Becoming.Reordering",
     "Becoming.IdleRemoval",
     "Becoming.OrderNormal",
+    "Becoming.CensusTable",
     "Becoming.Counting",
     "Becoming.OneStep",
     "Becoming.Weighted",
@@ -1211,6 +1215,7 @@
     "Becoming.Reordering": "becoming/Becoming/Reordering.lean",
     "Becoming.IdleRemoval": "becoming/Becoming/IdleRemoval.lean",
     "Becoming.OrderNormal": "becoming/Becoming/OrderNormal.lean",
+    "Becoming.CensusTable": "becoming/Becoming/CensusTable.lean",
     "Becoming.Counting": "becoming/Becoming/Counting.lean",
     "Becoming.OneStep": "becoming/Becoming/OneStep.lean",
     "Becoming.Weighted": "becoming/Becoming/Weighted.lean",
@@ -1496,7 +1501,8 @@
     "Becoming.Reordering": "72adbc08546ed505f267db376a96975728150ed719f941491095075bfe688f93",
     "Becoming.IdleRemoval": "d9f61f76ba9ad70aa0ad453db9f846e177826c43a4a6462a7030f6fc60987fd0",
     "Becoming.OrderNormal": "f233c6800d90c4554f572a85d5ce73b7e48107bfc1b9012ec4a8490d6f78f1e1",
-    "Becoming.Counting": "0a505062f5fc26773a0dad2e4b982f019323e7ec7d8a7edd48c8f5c61c760ffd",
+    "Becoming.CensusTable": "3a8e3ed452a4f0989c2917dbb13ab785fca79e5c4089d29b052fd1f71f8629e8",
+    "Becoming.Counting": "6ec66255167b62c371a69951659be416f36e223e133b241db12a2029392ed074",
     "Becoming.OneStep": "a3573dad850874daa486c38d69f7ae02201572aac6f019785653bfdc45a4f10a",
     "Becoming.Weighted": "0a73e620d493cadc46e730187cf7c02f948df35b1b1ef91e0b78e7d96ee9b81c",
     "Becoming.Transmission": "27bc4019c0952ecbb9889613cd0cd39fe9274e7dea81165b790d28deee612bf7",
@@ -1510,7 +1516,7 @@
     "Becoming.LabelledRoles": "14c9ba70a2fa06dd16975d92c7f76391a53f7ed5c7f894de1fe7724deb5355c0",
     "Becoming.Tower": "0431ef99ed2a930dddd46ad87acda128b3b2c23df6b11ef4493b58f6ba285bb8",
     "Becoming.Refinement": "2caf87de1b7f4d5523a93bc979e0039c6208d800d590297f76b44c1667fe636c",
-    "Becoming.Standing": "c4756869c76d8ece6ff141b723628f0f6cc5e0f19d38028ab98e362e006133e2",
+    "Becoming.Standing": "b3991260454611c4c8fa7f36b5e5ca25489ed5b9126b9be0522fb92df74354c9",
     "Becoming.LeastLoss": "c86df98f2a1246acb96b7390b86012771260e6913d1c6da9140a8f9037a635ce",
     "Becoming.Entropy": "d6c950deed4a243e979261f6fd6ec0273b50e415eaf6baa9758ca6f16e1e4b57",
     "Becoming.Units": "c3b36e83d5087ba111fd31340fb7625a70a507d84d323ea618e944cbcdd3c6e9",
@@ -1648,8 +1654,8 @@
     "Becoming.Observation": "8049282015d17b6c40607a8c56a2cf9d5bc777ae18513e921e9b87883ff3fa72",
     "Becoming.LevelCoupling": "0286f75247c669f70056b6b223e96e163d81efab9aa27b32032e46ecae457cd4",
     "Becoming.Interleavings": "bd9c4d334d5a6d3c25b4860d680481f4c60caa063439e2a4877ec019c9051539",
-    "Becoming.CensusCounts": "b3032e50a390ae0db6421a897992607d7fe2d085be76855318dd705a771205ca",
-    "Becoming.CensusBinding": "6f4c8b032363f0c37092b2fe0b144d9f21ae1a841a888c0134f0f4884ad01e80",
+    "Becoming.CensusCounts": "bdd45e529bf1a5b12d50938f2555f9e21c564882dcfa1371f6d0f60a20bd192e",
+    "Becoming.CensusBinding": "f626c7641e4e9950fbac7f2072017546a19394d4f3bb53e2c3e51df3ccd49db5",
     "Becoming.MutualDependence": "dfddbf4d3784792ce9c7c80f8905f96c2b6318c680b6991d7d408d318f9b1752",
     "Becoming.Gain": "6a3b1fe2c5f8de7b0a51088b1a2c15302ed38e4bef7744bebeee16430f3602ff",
     "Becoming.Gluing": "6a64877360ada15adf99b1143d7a91bce0e4078422f35ca9bb912825e8161a73",
@@ -1716,107 +1722,20 @@
     "Becoming.Coverage": "cb6bfd626354610d1bcf6c7a6be3518dd54bd3246db56c806fefb26f8c5d75a6",
     "Becoming.PlaceTransitionNets": "e6293a8d5ca23f901278b557e5f627df8237ca81f1ea4b376fc49001751130fc",
     "Becoming.ResponseLearning": "3f570198fcae3a551c9ca5807d58353cec3d393a00d37a21d89a98c789a725d2",
-    "Becoming": "17874bfc56db547137bfa140ba217a506094988da7dd50b18ef9990080b11c39"
+    "Becoming": "d11bc972e7b0a615b9d329f810a778ffd8374f3b0453d47a1722810e3abac9db"
   },
   "checker_sha256": {
-    "check_becoming.py": "1182f03f5acdb4aa5116ac30df2ec4ab8769c10d7024a168fa836d213a35eb96",
+    "check_becoming.py": "0ec5f5d29188d939958f7044444f493578897ed7bbbf221de39d02fdd3a3c61c",
     "check.py": "4f9cb94de69bd0e7da6bc7ab1ae1cfd26e2d5848dabda5cbb88aebc36ac52da3"
   },
   "source_commit": {
-    "main": "218dfd3e86387df2f703fa360ed582d06ee4c530",
+    "main": "f83b912412569869b470123d4d1cd4ff708f1328",
     "copied": [
-      "Becoming.Admission.lean",
-      "Becoming.Alternatives.lean",
-      "Becoming.Arising.lean",
-      "Becoming.AssurancePlans.lean",
-      "Becoming.Attraction.lean",
-      "Becoming.Branching.lean",
-      "Becoming.Bundles.lean",
-      "Becoming.Carriers.lean",
-      "Becoming.Change.lean",
-      "Becoming.Clearing.lean",
-      "Becoming.Composition.lean",
-      "Becoming.Continuation.lean",
-      "Becoming.Copying.lean",
-      "Becoming.Correspondence.lean",
+      "Becoming.CensusBinding.lean",
+      "Becoming.CensusCounts.lean",
+      "Becoming.CensusTable.lean",
       "Becoming.Counting.lean",
-      "Becoming.CouplingTraces.lean",
-      "Becoming.Courses.lean",
-      "Becoming.CrossSituational.lean",
-      "Becoming.Dependence.lean",
-      "Becoming.Enough.lean",
-      "Becoming.Entropy.lean",
-      "Becoming.Exclusion.lean",
-      "Becoming.Exhaustion.lean",
-      "Becoming.Extension.lean",
-      "Becoming.Feedback.lean",
-      "Becoming.Feeding.lean",
-      "Becoming.FinerTraces.lean",
-      "Becoming.Flow.lean",
-      "Becoming.Frequency.lean",
-      "Becoming.Granularity.lean",
-      "Becoming.Handoff.lean",
-      "Becoming.HexagramPlaces.lean",
-      "Becoming.HexagramSequences.lean",
-      "Becoming.HistorySums.lean",
-      "Becoming.Identification.lean",
-      "Becoming.Identity.lean",
-      "Becoming.Irreversibility.lean",
-      "Becoming.Joining.lean",
-      "Becoming.JoiningRoles.lean",
-      "Becoming.JointCorrespondence.lean",
-      "Becoming.Junctures.lean",
-      "Becoming.Labelled.lean",
-      "Becoming.Lasting.lean",
-      "Becoming.LawAlongRun.lean",
-      "Becoming.Learning.lean",
-      "Becoming.Likeness.lean",
-      "Becoming.Listing.lean",
-      "Becoming.Loops.lean",
-      "Becoming.LossMatching.lean",
-      "Becoming.MoveFormation.lean",
-      "Becoming.MoveOutcomeProcesses.lean",
-      "Becoming.OneStep.lean",
-      "Becoming.Openness.lean",
-      "Becoming.OrderNormal.lean",
-      "Becoming.Pace.lean",
-      "Becoming.PatternPassing.lean",
-      "Becoming.Persistence.lean",
-      "Becoming.PlaceTransitionNets.lean",
-      "Becoming.Population.lean",
-      "Becoming.Prelude.lean",
-      "Becoming.Premises.lean",
-      "Becoming.Propagation.lean",
-      "Becoming.Ranking.lean",
-      "Becoming.Refinement.lean",
-      "Becoming.Regulation.lean",
-      "Becoming.Rejoining.lean",
-      "Becoming.RelativePosition.lean",
-      "Becoming.Reordering.lean",
-      "Becoming.Reserve.lean",
-      "Becoming.Response.lean",
-      "Becoming.Roles.lean",
-      "Becoming.RouteTraces.lean",
-      "Becoming.Routes.lean",
-      "Becoming.RuleCapture.lean",
-      "Becoming.Sampling.lean",
-      "Becoming.Selection.lean",
-      "Becoming.Settling.lean",
-      "Becoming.SharedCodes.lean",
-      "Becoming.SituationTraces.lean",
-      "Becoming.Situations.lean",
-      "Becoming.Space.lean",
-      "Becoming.Stuttering.lean",
-      "Becoming.Tail.lean",
-      "Becoming.Testing.lean",
-      "Becoming.TypicalRuns.lean",
-      "Becoming.Typicality.lean",
-      "Becoming.Undecided.lean",
-      "Becoming.Viability.lean",
-      "Becoming.Weighted.lean",
-      "Becoming.Wholes.lean",
-      "Becoming.Witnesses.lean",
-      "Becoming.World.lean",
+      "Becoming.Standing.lean",
       "Becoming.lean",
       "check_becoming.py"
     ]
@@ -1827,11 +1746,28 @@
     "fresh": false,
     "ran": [
       "version.log",
-      "Becoming.log",
+      "BecomingCensusTableAxiomAudit.log",
+      "BecomingCensusTableSignatures.log",
+      "BecomingCountingAxiomAudit.log",
+      "BecomingCountingSignatures.log",
+      "BecomingOneStepAxiomAudit.log",
+      "BecomingOneStepSignatures.log",
+      "BecomingStandingAxiomAudit.log",
+      "BecomingStandingSignatures.log",
+      "BecomingCensusCountsAxiomAudit.log",
+      "BecomingCensusCountsSignatures.log",
+      "BecomingCensusBindingAxiomAudit.log",
+      "BecomingCensusBindingSignatures.log",
       "BecomingAxiomAudit.log",
       "BecomingSignatures.log",
       "EnvironmentAudit.log",
       "Controls.log",
+      "Becoming.CensusTable.PreludeOnly.log",
+      "Becoming.Counting.PreludeOnly.log",
+      "Becoming.OneStep.PreludeOnly.log",
+      "Becoming.Standing.PreludeOnly.log",
+      "Becoming.CensusCounts.PreludeOnly.log",
+      "Becoming.CensusBinding.PreludeOnly.log",
       "Becoming.PreludeOnly.log"
     ],
     "reused": {
@@ -2567,29 +2503,17 @@
         "utc": "20261020T050905.003306Z",
         "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
       },
-      "Becoming.Counting.log": {
-        "utc": "20261020T050614.220775Z",
+      "Becoming.CensusTable.log": {
+        "utc": "20261020T060520.277795Z",
         "retained": "R37 buildall, not retained"
       },
-      "BecomingCountingAxiomAudit.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
-      },
-      "BecomingCountingSignatures.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
+      "Becoming.Counting.log": {
+        "utc": "20261020T060520.277795Z",
+        "retained": "R37 buildall, not retained"
       },
       "Becoming.OneStep.log": {
-        "utc": "20261020T050614.220775Z",
+        "utc": "20261020T060520.277795Z",
         "retained": "R37 buildall, not retained"
-      },
-      "BecomingOneStepAxiomAudit.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
-      },
-      "BecomingOneStepSignatures.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
       },
       "Becoming.Weighted.log": {
         "utc": "20261020T050614.220775Z",
@@ -2736,16 +2660,8 @@
         "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
       },
       "Becoming.Standing.log": {
-        "utc": "20261020T050614.220775Z",
+        "utc": "20261020T060520.277795Z",
         "retained": "R37 buildall, not retained"
-      },
-      "BecomingStandingAxiomAudit.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
-      },
-      "BecomingStandingSignatures.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
       },
       "Becoming.LeastLoss.log": {
         "utc": "20261020T050614.220775Z",
@@ -4392,28 +4308,12 @@
         "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
       },
       "Becoming.CensusCounts.log": {
-        "utc": "20261020T050614.220775Z",
+        "utc": "20261020T060520.277795Z",
         "retained": "R37 buildall, not retained"
-      },
-      "BecomingCensusCountsAxiomAudit.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
-      },
-      "BecomingCensusCountsSignatures.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
       },
       "Becoming.CensusBinding.log": {
-        "utc": "20261020T050614.220775Z",
+        "utc": "20261020T060520.277795Z",
         "retained": "R37 buildall, not retained"
-      },
-      "BecomingCensusBindingAxiomAudit.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
-      },
-      "BecomingCensusBindingSignatures.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
       },
       "Becoming.MutualDependence.log": {
         "utc": "20261020T050614.220775Z",
@@ -5207,6 +5107,10 @@
         "utc": "20261020T050905.003306Z",
         "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
       },
+      "Becoming.log": {
+        "utc": "20261020T060520.277795Z",
+        "retained": "R37 buildall, not retained"
+      },
       "Becoming.Prelude.PreludeOnly.log": {
         "utc": "20261020T050738.417824Z",
         "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050738.417824Z"
@@ -5455,14 +5359,6 @@
         "utc": "20261020T050905.003306Z",
         "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
       },
-      "Becoming.Counting.PreludeOnly.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
-      },
-      "Becoming.OneStep.PreludeOnly.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
-      },
       "Becoming.Weighted.PreludeOnly.log": {
         "utc": "20261020T050738.417824Z",
         "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050738.417824Z"
@@ -5510,10 +5406,6 @@
       "Becoming.Refinement.PreludeOnly.log": {
         "utc": "20261020T050738.417824Z",
         "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050738.417824Z"
-      },
-      "Becoming.Standing.PreludeOnly.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
       },
       "Becoming.LeastLoss.PreludeOnly.log": {
         "utc": "20261020T050905.003306Z",
@@ -6063,14 +5955,6 @@
         "utc": "20261020T050738.417824Z",
         "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050738.417824Z"
       },
-      "Becoming.CensusCounts.PreludeOnly.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
-      },
-      "Becoming.CensusBinding.PreludeOnly.log": {
-        "utc": "20261020T050905.003306Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
-      },
       "Becoming.MutualDependence.PreludeOnly.log": {
         "utc": "20261020T050905.003306Z",
         "retained": "/Users/ren/theories/.claude/worktrees/infallible-perlman-9d342a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T050905.003306Z"
@@ -6520,12 +6404,15 @@
       "Becoming.OrderNormal.log": "0d5ecef9ffc8ad3903d5028be79be7bee8587730ed2bbdc7af5ec9588afb7685",
       "BecomingOrderNormalAxiomAudit.log": "c4586b44f4414dd69359e78eb143276ae90f372c233b3eb5ab423f1a43f53258",
       "BecomingOrderNormalSignatures.log": "2c434153a253c14bcf1feb206482cf0c4da5b593a8810a2d9c07b3714d5bb724",
-      "Becoming.Counting.log": "7d8427eb3b0b0c4a81e28a9118acdce931338849be5dad0758ae5eb80cfe0ca6",
-      "BecomingCountingAxiomAudit.log": "e223672c58346ea5dd7101e7c96bcc98d756480d8c27408b75d4a3ba4178fb68",
-      "BecomingCountingSignatures.log": "fc13b3215074240b594c4aa61bac31a86d36326f6807fe99411e40ff8e8cb502",
-      "Becoming.OneStep.log": "ce9728a95a09489d0979d5720505441ba779a16c1f055071b8344bebe6a4ee45",
-      "BecomingOneStepAxiomAudit.log": "ac8d750ec8753768759559af847d8b6ea23ef8fe3c60fd915ba850658f28f5eb",
-      "BecomingOneStepSignatures.log": "5d70e94a4509334f41f4ef566b03caadd36594cf93a13431930c86e59ac1b429",
+      "Becoming.CensusTable.log": "4386b07cbb9c87e114e653863ad13204e8fc83cd1064c15a7480d7f610366c43",
+      "BecomingCensusTableAxiomAudit.log": "7e656b25a70dee2ddf42d46b10bb7e810e24d3fcbdcf06ef1aea6f124fcbd93a",
+      "BecomingCensusTableSignatures.log": "577812f8ce8620797acf965dc05d168313c13b3371501cca0b0cbe4dfd564537",
+      "Becoming.Counting.log": "0df0bb4b7357742d33a2d793fcc0fe96bf3bfd31346f46faf600be976e13b293",
+      "BecomingCountingAxiomAudit.log": "c312852850360eb91d158c56715792863857cd36ad5800d21b34c16a41623005",
+      "BecomingCountingSignatures.log": "15550e22e36419a5f13ccd41929df611f5f6daa6f7a5f3b6ad193405471a85f2",
+      "Becoming.OneStep.log": "885f15e1ff4893e0148af814e5119f1e0424713a37211b25e6859c227394fa89",
+      "BecomingOneStepAxiomAudit.log": "67f8e9894683543649cfbb2865863cc63b25314544474412c8bde41ef65a4f1d",
+      "BecomingOneStepSignatures.log": "8927597194d2a94e64e30deffafc91e585e0af64038c8cb8daf4d4ec38165448",
       "Becoming.Weighted.log": "19bbd02f4b209eef4a0edba57e8e3f9248c5815c8c094fc574f4ae396b980a40",
       "BecomingWeightedAxiomAudit.log": "9206721f36f5f630c7c72c2b1400296c65c0f1a29f085579c6cc202041b53558",
       "BecomingWeightedSignatures.log": "9d074b6802c4f7d46869d9eb68d7be10a732ffa4ab8bb4616d57d8d6bde605b9",
@@ -6562,9 +6449,9 @@
       "Becoming.Refinement.log": "e447a6f218e41f6027d1b8e5f515ea4bb8c57afa1c6912ecc47994f7a548c60b",
       "BecomingRefinementAxiomAudit.log": "95e361c4756a10b8d84ecf2b9cd84fb94f742a9ffdfd7a69250172c9aa2f8e13",
       "BecomingRefinementSignatures.log": "33c33e9d79bbccf70f683ac03fa016c7fc0e9047b9583adf59338ab5b7b10535",
-      "Becoming.Standing.log": "6a91c6b3f721592432e2a6fe30dc53eaa53a0af2be7bf9e0a50e43a0f58d31cf",
-      "BecomingStandingAxiomAudit.log": "7465d6ce20fc49dd0b710a389c0720bdc8366e43cb54db4916cb8e15d673ae8e",
-      "BecomingStandingSignatures.log": "58d8b9123ffb5d730d53f397e48291f7634e1f6af61781f23739f75306e7c612",
+      "Becoming.Standing.log": "77818baa71e6bb1c1fc82df6dc127cd06d86629d5856da13df0fb317901cb910",
+      "BecomingStandingAxiomAudit.log": "43197f8eba3ab7537c0cdb687fb643fad0cef189a54bc678e700da7258dabb8f",
+      "BecomingStandingSignatures.log": "c9f78017e71aedeed9f8f5c8f1f4da7294b38ffe7cf0ec86f953b6dabb15f114",
       "Becoming.LeastLoss.log": "22a9d8ddfeb3f89fadf3f46e4be88889fec5cbdfd6099546be519654dc031966",
       "BecomingLeastLossAxiomAudit.log": "0a960296e5705571c926ae07512783e3df030fffb4199b3eeb657c595343c08f",
       "BecomingLeastLossSignatures.log": "08cb4026a921b4141d43e6b8241d71eb9ac80139df3222130149cf58ebb56386",
@@ -6976,12 +6863,12 @@
       "Becoming.Interleavings.log": "836ac7a7f260027bc0fe2ab75e0a84539f7be06d3e1e814efeab0c2da8e863d5",
       "BecomingInterleavingsAxiomAudit.log": "752423370888dd9d519ab8cdb429714dacc0dbb2f0858e6f6661fb09c2a35b93",
       "BecomingInterleavingsSignatures.log": "5129c8ff37da0fd97612ab023f4fc337f13b099b3aee2ad26277320ac6fb5c72",
-      "Becoming.CensusCounts.log": "4eb4597f6104cf34d4371bbb186964bf2491bba19d7f00901145f544fe8641b1",
-      "BecomingCensusCountsAxiomAudit.log": "d5de43312f3a52b29f63cd1c27469e757d3c75f74c8cdecfef402da2e6b2e4d9",
-      "BecomingCensusCountsSignatures.log": "ea943a7bb16c1cd984169b32b1233a6369ca3165f35812f3dffffdc6f3027e1a",
-      "Becoming.CensusBinding.log": "22d9508f9ac4131a3b1e955646cb2501d6422681b2020127d9f81bdad805dc0e",
-      "BecomingCensusBindingAxiomAudit.log": "47766a1757c467e674720a7ee2dd08be4cf97954e4a52fad82f2359ed48bc775",
-      "BecomingCensusBindingSignatures.log": "c8e55cf11d8ff1aaf915db5272d34c6208cecaa46616bf1e381434a0643baec9",
+      "Becoming.CensusCounts.log": "1942a1b3bc1a63e5616a7242dbdbcf501dd8bc2763dc05119907100d77396987",
+      "BecomingCensusCountsAxiomAudit.log": "45eb27699ed597c705b74185383fe1391b727e20c70e5ea2bc28989e8bbfe61c",
+      "BecomingCensusCountsSignatures.log": "4a24e43c19b3a252f02fce1561c94ee568a02254693047accebe836400ff47d8",
+      "Becoming.CensusBinding.log": "4c1a24440122fb0b72c10eaa6b5268827765aed99f6b97edae7d084c4007a5ef",
+      "BecomingCensusBindingAxiomAudit.log": "788b71e1ae93c31efcd36be9de51966542818f160dde45ebbbe1e1cc1ba7fc50",
+      "BecomingCensusBindingSignatures.log": "3a20c20c354f0fd002e5fedf6bd4ab60b855ba22cf38fae5d6e315fe6a72b40d",
       "Becoming.MutualDependence.log": "f946c372d499a8db220c15e6194c0a6f38e30bdef1f2675747985101360e8f39",
       "BecomingMutualDependenceAxiomAudit.log": "385343a1403f69b18a168d74b260c6b4bf5359baf6e2e1510816c225369a146b",
       "BecomingMutualDependenceSignatures.log": "da7286b8eb7e93e024be16b1c6a9284469ab33e718f50a0f4919fb8452377c10",
@@ -7180,11 +7067,11 @@
       "Becoming.ResponseLearning.log": "6c6ba2ec1223ef046076e53a4bcf324dd7e67a8ed102718f172a9adb077f5b06",
       "BecomingResponseLearningAxiomAudit.log": "fb1bbfd7db2503d43ee0759a788dc5f98bf20d5acb44f61200940ea7b9848dd5",
       "BecomingResponseLearningSignatures.log": "b2c7a8258e52e03cd643f936bc92098b41b0bdc53829289c3654dcf2432bc423",
-      "Becoming.log": "1183e1c9c166cea67a0f762e2f35cee8ad083dee2b02d42230c4ccb05305c2ed",
-      "BecomingAxiomAudit.log": "d524fb5b442526e3de44662d098f595e875b3066b9b59659e7660e6793946a96",
-      "BecomingSignatures.log": "0c236b9502f48b405835825bd91d594687211a652a188e3760e73514523bc51d",
-      "EnvironmentAudit.log": "8f1e83db6433b55cc2052909d0ab5c07183af8bb816d490c6d9a2967d1e0ae0e",
-      "Controls.log": "cb9a714ea890ed3b799fbc09e8579d03a5d0cab74b52fed579f646267b291f4d",
+      "Becoming.log": "9853ab4142280bf1a342eeecb2757f37b25cc50a1a487bf046cf67a9fa8d067d",
+      "BecomingAxiomAudit.log": "acbfad3c74cd977f1efe623b8071163d336c91581009cca9da4de624b65a6949",
+      "BecomingSignatures.log": "0cf43784390c9ba7e1cc7793c7d48d7cb49d59f9db76e42db57b6b37d7087868",
+      "EnvironmentAudit.log": "38e21cdfd9015f03ec0332569c8f21508f0f1cd19dad6987b3925733205d32dd",
+      "Controls.log": "a2760828195edb84368109320a8fdb82358c7a7038de9ae8f16fa88f6f12de4b",
       "Becoming.Prelude.PreludeOnly.log": "32cdefc822715fda696890cf48603bd3ed560a8e6422e1777f6539627cc082a7",
       "GenerativeCore.PreludeOnly.log": "8b89f7b1018f5a43ae9994a797db0fc12d2d5fa076f5da8d895ce648ccee4367",
       "Becoming.Frame.PreludeOnly.log": "1b43bab6561e330ce00d2488685c57d774b24641d2a2817df8ea21f0bc6d1896",
@@ -7247,8 +7134,9 @@
       "Becoming.Reordering.PreludeOnly.log": "19c5d0e3932864b328696bd2c704cfcb658dc5d4257ab1c26ae7695ee82d82a8",
       "Becoming.IdleRemoval.PreludeOnly.log": "1431bf540bd75692bc99c7adaf5fcedd317c3cea256690dfc2d4e842bdbf24ff",
       "Becoming.OrderNormal.PreludeOnly.log": "2981432e84e8ee6233d1e05093b14f79e22981c4ba6a91960fade8e056f0e0bc",
-      "Becoming.Counting.PreludeOnly.log": "60a7e68f13a96144dfc4c5087061307ec15b21f1ca20ae5be1e31cd267346990",
-      "Becoming.OneStep.PreludeOnly.log": "1f1a829b62b154f1e74b7d2dff2fca6bc6c839dfa4949819f5ea46274f899c1b",
+      "Becoming.CensusTable.PreludeOnly.log": "f6da122a2bbeaba160b0c4a76d480f6820928d13b1a4a63eb37b8a40765e10a4",
+      "Becoming.Counting.PreludeOnly.log": "0ec0278871dbb974eda84f3b1fdc537bd1dd55d2a4bbb93c6cf138940981aeeb",
+      "Becoming.OneStep.PreludeOnly.log": "41be50fce596a5d621c2ddd8e77eb90c891aee9bbe9617cd43837c2b2946283a",
       "Becoming.Weighted.PreludeOnly.log": "d507da1238664540f23b228e13bd9d8cd12e6bb3dac59f878a8ea3f9e8350095",
       "Becoming.Transmission.PreludeOnly.log": "a9712d712635cf4b313b90a9bb71a7212aa20ee5840ee5eb34d43bf1546a4ad5",
       "Becoming.Succession.PreludeOnly.log": "61baa9e358fe800d12f3ab68c7b9650e624b5e6b6f424b2cd4399500cfb3fbd1",
@@ -7261,7 +7149,7 @@
       "Becoming.LabelledRoles.PreludeOnly.log": "c9d7f4604a3697f0ad42ff8309a8d1c485a4391fd64dbf2dad30c0f78c4962e0",
       "Becoming.Tower.PreludeOnly.log": "9ba64e586fea10a6693fa4caf82851b1f1c1db94a6f7b4badd24d010903d3cf6",
       "Becoming.Refinement.PreludeOnly.log": "0e9010e05a4dba98de27c9faea33329f9c9c06014d9b467c3854978b2d177dae",
-      "Becoming.Standing.PreludeOnly.log": "09e2627c4f543ef72ec060ae24fa5db172196c11d802105ddb423538313a3c07",
+      "Becoming.Standing.PreludeOnly.log": "2f9652f78ec9136e7a43508b2c175243a6f1985e134ac2fe0e1a77d96c6af180",
       "Becoming.LeastLoss.PreludeOnly.log": "22948e184b48469dd27c07b241d841a5eed6d806ea9e5ad7f251e0321406480f",
       "Becoming.Entropy.PreludeOnly.log": "8e851799bb82224ee0c059e884dbce7a26163ebc46e4bc9c875caa92c92cf856",
       "Becoming.Units.PreludeOnly.log": "8433fde1ec7ecbd2fabdac0e9d169e347431fb24ceef7aa405cbf44ab0837207",
@@ -7399,8 +7287,8 @@
       "Becoming.Observation.PreludeOnly.log": "2462f73e946d5918f52092d393f62e55d6f553e7de5391c1a4969ae4d3c33596",
       "Becoming.LevelCoupling.PreludeOnly.log": "9b1f2ab7a0ce7c93a74cd34fe7e2c3c914f458e48da47635b7f8b9b8f5a910ea",
       "Becoming.Interleavings.PreludeOnly.log": "744f66eda1c43d70a2726a5764e134332da11cb34140a3864f8d84c5d9ddd21e",
-      "Becoming.CensusCounts.PreludeOnly.log": "4d9fa3b2b058f82b68a3e5f1ce475cdcac4c5eafcbd4dfac78c739e72fbb32c3",
-      "Becoming.CensusBinding.PreludeOnly.log": "9d2cf3ab8744c0bfa8428d4352d18fdea5bc8caa3440d2066d8055ecb3c82361",
+      "Becoming.CensusCounts.PreludeOnly.log": "89156226dc4507bba7ef566548c4d43d054c060dce360a97b1a019686dd300b9",
+      "Becoming.CensusBinding.PreludeOnly.log": "135ba1f9026b0916d872017688f8a9674c16d1c5a61d99fe396967e608ecec0f",
       "Becoming.MutualDependence.PreludeOnly.log": "d1fdf3dc362a6eb01892f6857ab14ca48d33fee628b165de8cbb267978b9cb06",
       "Becoming.Gain.PreludeOnly.log": "0b6fc587fe6789de44652b9878e289a4e2883b9c308713e00d6259495aba5504",
       "Becoming.Gluing.PreludeOnly.log": "7c06c2173ec2aaab98f6e60cb529b04cea40da0debf77fcce962e659ae02ab0a",
@@ -7467,7 +7355,7 @@
       "Becoming.Coverage.PreludeOnly.log": "c0ee2a408c193c9f9a12c42743841f00eb35e3e9992f6a920e1ef14bca0851ee",
       "Becoming.PlaceTransitionNets.PreludeOnly.log": "b00b5290c10851d8056a9ae0df2e8cd819ec64ab402aba051861d65e30baef96",
       "Becoming.ResponseLearning.PreludeOnly.log": "3200b2d1c26665b31ef00d83991205c887b839e94d3eb3fbb18e1b35f3b3521d",
-      "Becoming.PreludeOnly.log": "a03e7c5657f57870e1cb8499e647d9a2bc41320fc1ecf06c6c44ea9aa6ed82df"
+      "Becoming.PreludeOnly.log": "b0bcb9ddca8f0045e35da222a9bdb4f5cca10192d5de65e4c0d02f6b82b2bd75"
     }
   },
   "superseded_modules": {
@@ -8821,9 +8709,9 @@
     "Becoming.Counting": {
       "private": [],
       "unnamed_instance_lines": [
-        1694,
-        3016,
-        3683
+        1869,
+        3310,
+        4018
       ],
       "covered_by": "core environment audit"
     },
@@ -8938,7 +8826,8 @@
     "Becoming.Reordering": 420,
     "Becoming.IdleRemoval": 30,
     "Becoming.OrderNormal": 232,
-    "Becoming.Counting": 843,
+    "Becoming.CensusTable": 51,
+    "Becoming.Counting": 890,
     "Becoming.OneStep": 851,
     "Becoming.Weighted": 175,
     "Becoming.Transmission": 168,
@@ -8952,7 +8841,7 @@
     "Becoming.LabelledRoles": 18,
     "Becoming.Tower": 33,
     "Becoming.Refinement": 45,
-    "Becoming.Standing": 154,
+    "Becoming.Standing": 170,
     "Becoming.LeastLoss": 93,
     "Becoming.Entropy": 393,
     "Becoming.Units": 72,
@@ -9090,8 +8979,8 @@
     "Becoming.Observation": 50,
     "Becoming.LevelCoupling": 71,
     "Becoming.Interleavings": 253,
-    "Becoming.CensusCounts": 107,
-    "Becoming.CensusBinding": 153,
+    "Becoming.CensusCounts": 39,
+    "Becoming.CensusBinding": 107,
     "Becoming.MutualDependence": 56,
     "Becoming.Gain": 59,
     "Becoming.Gluing": 242,
@@ -33236,15 +33125,212 @@
       "kernel_checked": true
     },
     {
-      "module": "Becoming.Counting",
+      "module": "Becoming.CensusTable",
       "spine": true,
       "layer": "core",
-      "theorems": 215,
+      "theorems": 30,
       "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Becoming.tally_step"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.FamilyCounts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.FamilyCounts.tally"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.familyCounts_decided"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.FamilyCounts.of_eq"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.comesToBe_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ceasesToBe_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ceasings_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.comings_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Indicates.congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Counts.congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Listed.congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.FamilyCounts.congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.FamilyCounts.company"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.World.ListingHolds"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.World.ListingObeys"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.World.WitnessedAt"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.World.Witnessed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.witnessedAt_of"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.WitnessedAt.congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.listingObeys_of_obeys"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.table_holds"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.table_obeys"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.table_holds_free"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.table_obeys_free"
+        },
         {
           "kind": "def",
           "name": "Becoming.World.CountsObey"
         },
+        {
+          "kind": "abbrev",
+          "name": "Becoming.World.CountsOf"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.World.CountsHold"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.CountsOf.tally"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.countsOf_decided"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.CountsHold.obey"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.countsHold_of_obey"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.census_table_obeys"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.census_table_obeys_free"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.census_table_holds₂"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.census_table_obeys₂"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.census_table_holds₃"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.census_table_obeys₃"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.tally_step": [],
+        "Becoming.FamilyCounts": [],
+        "Becoming.FamilyCounts.tally": [],
+        "Becoming.familyCounts_decided": [],
+        "Becoming.FamilyCounts.of_eq": [],
+        "Becoming.comesToBe_congr": [],
+        "Becoming.ceasesToBe_congr": [],
+        "Becoming.ceasings_congr": [],
+        "Becoming.comings_congr": [],
+        "Becoming.Indicates.congr": [],
+        "Becoming.Counts.congr": [],
+        "Becoming.Listed.congr": [],
+        "Becoming.FamilyCounts.congr": [],
+        "Becoming.FamilyCounts.company": [],
+        "Becoming.World.ListingHolds": [],
+        "Becoming.World.ListingObeys": [],
+        "Becoming.World.WitnessedAt": [],
+        "Becoming.World.Witnessed": [],
+        "Becoming.World.witnessedAt_of": [],
+        "Becoming.World.WitnessedAt.congr": [],
+        "Becoming.World.listingObeys_of_obeys": [],
+        "Becoming.World.table_holds": [],
+        "Becoming.World.table_obeys": [],
+        "Becoming.World.table_holds_free": [],
+        "Becoming.World.table_obeys_free": [],
+        "Becoming.World.CountsObey": [],
+        "Becoming.World.CountsOf": [],
+        "Becoming.World.CountsHold": [],
+        "Becoming.World.CountsOf.tally": [],
+        "Becoming.World.countsOf_decided": [],
+        "Becoming.World.CountsHold.obey": [],
+        "Becoming.World.countsHold_of_obey": [],
+        "Becoming.World.census_table_obeys": [],
+        "Becoming.World.census_table_obeys_free": [],
+        "Becoming.World.census_table_holds₂": [],
+        "Becoming.World.census_table_obeys₂": [],
+        "Becoming.World.census_table_holds₃": [],
+        "Becoming.World.census_table_obeys₃": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.Counting",
+      "spine": true,
+      "layer": "core",
+      "theorems": 248,
+      "declarations": [
         {
           "kind": "def",
           "name": "Becoming.Queue.web"
@@ -33291,11 +33377,23 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.counting_free_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.counting_free"
         },
         {
           "kind": "theorem",
           "name": "Becoming.World.counting_binds_jointly"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.active_of_coming_jointly"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.active_of_coming_taking"
         },
         {
           "kind": "inductive",
@@ -33363,6 +33461,14 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.premised_counting_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.premised_counting_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.premised_counting"
         },
         {
@@ -33423,6 +33529,14 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.counting_under_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.counting_under_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.counting_under"
         },
         {
@@ -33436,6 +33550,14 @@
         {
           "kind": "theorem",
           "name": "Becoming.World.enclosure_bounds_change"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.enclosure_bounds_change_counted"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.active_of_coming_enclosed"
         },
         {
           "kind": "def",
@@ -33567,6 +33689,14 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.enclosed_counting_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.enclosed_counting_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.enclosed_counting"
         },
         {
@@ -33643,6 +33773,14 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.finite_counting_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.finite_counting_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.finite_counting"
         },
         {
@@ -33703,19 +33841,19 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.enclosed_counting_under_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.enclosed_counting_under_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.enclosed_counting_under"
         },
         {
           "kind": "theorem",
           "name": "Becoming.World.enclosed_change_bound_iff"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.comesToBe_congr"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.ceasesToBe_congr"
         },
         {
           "kind": "def",
@@ -33863,6 +34001,14 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.finite_counting_under_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.finite_counting_under_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.finite_counting_under"
         },
         {
@@ -33999,6 +34145,22 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.CountsOf.arising_pos"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.binds_arising_counted"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.binding_counting_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.binding_counting_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.binding_counting"
         },
         {
@@ -34040,6 +34202,22 @@
         {
           "kind": "theorem",
           "name": "Becoming.World.counts_arising"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.CountsOf.active_pos"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.CountsOf.company_binding"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.CountsOf.acts_of_binding"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.CountsOf.joint_of_binding"
         },
         {
           "kind": "theorem",
@@ -34143,6 +34321,14 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.binding_counting_under_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.binding_counting_under_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.binding_counting_under"
         },
         {
@@ -34167,11 +34353,27 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.finite_binding_counting_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.finite_binding_counting_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.finite_binding_counting"
         },
         {
           "kind": "theorem",
           "name": "Becoming.World.enclosedQueue_saturated_binds"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.enclosed_binding_counting_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.enclosed_binding_counting_witnessed"
         },
         {
           "kind": "theorem",
@@ -34312,6 +34514,14 @@
         {
           "kind": "theorem",
           "name": "Becoming.World.finite_binding_census"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.finite_binding_counting_under_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.finite_binding_counting_under_witnessed"
         },
         {
           "kind": "theorem",
@@ -34467,6 +34677,14 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.enclosed_binding_counting_under_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.enclosed_binding_counting_under_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.enclosed_binding_counting_under"
         },
         {
@@ -34507,7 +34725,6 @@
         }
       ],
       "axiom_dependencies": {
-        "Becoming.World.CountsObey": [],
         "Becoming.Queue.web": [],
         "Becoming.Queue.embodied": [],
         "Becoming.Queue.lone": [],
@@ -34519,8 +34736,11 @@
         "Becoming.World.embodiedQueue_decided": [],
         "Becoming.World.queue_premised": [],
         "Becoming.World.embodiedQueue_premised": [],
+        "Becoming.World.counting_free_witnessed": [],
         "Becoming.World.counting_free": [],
         "Becoming.World.counting_binds_jointly": [],
+        "Becoming.World.active_of_coming_jointly": [],
+        "Becoming.World.active_of_coming_taking": [],
         "Becoming.OpenQueue.Relatum": [],
         "Becoming.OpenQueue.web": [],
         "Becoming.OpenQueue.flow": [],
@@ -34537,6 +34757,8 @@
         "Becoming.World.openQueue_counts": [],
         "Becoming.World.openQueue_holds": [],
         "Becoming.World.openQueue_premised": [],
+        "Becoming.World.premised_counting_sound": [],
+        "Becoming.World.premised_counting_witnessed": [],
         "Becoming.World.premised_counting": [],
         "Becoming.World.openQueue_not_binds": [],
         "Becoming.World.binds_arising": [],
@@ -34552,10 +34774,14 @@
         "Becoming.World.embodiedQueue_meets": [],
         "Becoming.World.openQueue_meets": [],
         "Becoming.World.drivenQueue_meets": [],
+        "Becoming.World.counting_under_sound": [],
+        "Becoming.World.counting_under_witnessed": [],
         "Becoming.World.counting_under": [],
         "Becoming.World.counting_binds_iff": [],
         "Becoming.World.length_le_stock": [],
         "Becoming.World.enclosure_bounds_change": [],
+        "Becoming.World.enclosure_bounds_change_counted": [],
+        "Becoming.World.active_of_coming_enclosed": [],
         "Becoming.EnclosedQueue.store": [],
         "Becoming.EnclosedQueue.place": [],
         "Becoming.EnclosedQueue.level": [],
@@ -34588,6 +34814,8 @@
         "Becoming.World.enclosedQueue_dissipative": [],
         "Becoming.World.enclosedQueue_premised": [],
         "Becoming.World.enclosedQueue_enclosed": [],
+        "Becoming.World.enclosed_counting_sound": [],
+        "Becoming.World.enclosed_counting_witnessed": [],
         "Becoming.World.enclosed_counting": [],
         "Becoming.placesBelow": [],
         "Becoming.mem_placesBelow": [],
@@ -34607,6 +34835,8 @@
         "Becoming.World.finiteQueue_census": [],
         "Becoming.World.finiteQueue_counts": [],
         "Becoming.World.finiteQueue_premised": [],
+        "Becoming.World.finite_counting_sound": [],
+        "Becoming.World.finite_counting_witnessed": [],
         "Becoming.World.finite_counting": [],
         "Becoming.World.enclosed_iff_finite_counting": [],
         "Becoming.World.replaced": [],
@@ -34622,10 +34852,10 @@
         "Becoming.World.closingQueue_dissipative": [],
         "Becoming.World.BoundsChange": [],
         "Becoming.World.still_enclosed": [],
+        "Becoming.World.enclosed_counting_under_sound": [],
+        "Becoming.World.enclosed_counting_under_witnessed": [],
         "Becoming.World.enclosed_counting_under": [],
         "Becoming.World.enclosed_change_bound_iff": [],
-        "Becoming.comesToBe_congr": [],
-        "Becoming.ceasesToBe_congr": [],
         "Becoming.Ring.slot": [],
         "Becoming.Ring.slot_step": [],
         "Becoming.Ring.slot_lt": [],
@@ -34662,6 +34892,8 @@
         "Becoming.World.ring_meets": [],
         "Becoming.World.embodiedRing_meets": [],
         "Becoming.World.balancedRing_meets": [],
+        "Becoming.World.finite_counting_under_sound": [],
+        "Becoming.World.finite_counting_under_witnessed": [],
         "Becoming.World.finite_counting_under": [],
         "Becoming.World.finite_counting_binds_iff": [],
         "Becoming.World.finite_change_bound_iff": [],
@@ -34696,6 +34928,10 @@
         "Becoming.World.onceClosedQueue_dissipative": [],
         "Becoming.World.onceClosedQueue_premised": [],
         "Becoming.World.onceClosedQueue_binds": [],
+        "Becoming.World.CountsOf.arising_pos": [],
+        "Becoming.World.binds_arising_counted": [],
+        "Becoming.World.binding_counting_sound": [],
+        "Becoming.World.binding_counting_witnessed": [],
         "Becoming.World.binding_counting": [],
         "Becoming.World.binding_contingent": [],
         "Becoming.Web.saturated": [],
@@ -34707,6 +34943,10 @@
         "Becoming.World.Premised.saturated": [],
         "Becoming.World.counts_active": [],
         "Becoming.World.counts_arising": [],
+        "Becoming.World.CountsOf.active_pos": [],
+        "Becoming.World.CountsOf.company_binding": [],
+        "Becoming.World.CountsOf.acts_of_binding": [],
+        "Becoming.World.CountsOf.joint_of_binding": [],
         "Becoming.OpenQueue.level_le": [],
         "Becoming.LossyQueue.exchanged": [],
         "Becoming.LossyQueue.lost": [],
@@ -34732,14 +34972,20 @@
         "Becoming.World.relayQueue_binding": [],
         "Becoming.World.onceClosedQueue_binding": [],
         "Becoming.World.openQueue_saturated_binding": [],
+        "Becoming.World.binding_counting_under_sound": [],
+        "Becoming.World.binding_counting_under_witnessed": [],
         "Becoming.World.binding_counting_under": [],
         "Becoming.World.binding_activity_iff": [],
         "Becoming.World.binding_arising_iff": [],
         "Becoming.World.binding_joint_iff": [],
         "Becoming.EnclosedQueue.level_le": [],
         "Becoming.World.finiteQueue_saturated_binds": [],
+        "Becoming.World.finite_binding_counting_sound": [],
+        "Becoming.World.finite_binding_counting_witnessed": [],
         "Becoming.World.finite_binding_counting": [],
         "Becoming.World.enclosedQueue_saturated_binds": [],
+        "Becoming.World.enclosed_binding_counting_sound": [],
+        "Becoming.World.enclosed_binding_counting_witnessed": [],
         "Becoming.World.enclosed_binding_counting": [],
         "Becoming.RelayRing.taken": [],
         "Becoming.RelayRing.given": [],
@@ -34775,6 +35021,8 @@
         "Becoming.World.exchangingRing_binds": [],
         "Becoming.World.exchangingRing_binding": [],
         "Becoming.World.finite_binding_census": [],
+        "Becoming.World.finite_binding_counting_under_sound": [],
+        "Becoming.World.finite_binding_counting_under_witnessed": [],
         "Becoming.World.finite_binding_counting_under": [],
         "Becoming.World.finite_binding_activity_iff": [],
         "Becoming.World.finite_binding_arising_iff": [],
@@ -34813,6 +35061,8 @@
         "Becoming.World.sheddingQueue_dissipative": [],
         "Becoming.World.sheddingQueue_binds": [],
         "Becoming.World.sheddingQueue_binding": [],
+        "Becoming.World.enclosed_binding_counting_under_sound": [],
+        "Becoming.World.enclosed_binding_counting_under_witnessed": [],
         "Becoming.World.enclosed_binding_counting_under": [],
         "Becoming.World.enclosed_binding_activity_iff": [],
         "Becoming.World.enclosed_binding_arising_iff": [],
@@ -39963,16 +40213,8 @@
       "module": "Becoming.Standing",
       "spine": true,
       "layer": "core",
-      "theorems": 37,
+      "theorems": 44,
       "declarations": [
-        {
-          "kind": "theorem",
-          "name": "Becoming.ceasings_congr"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.comings_congr"
-        },
         {
           "kind": "def",
           "name": "Becoming.pairs"
@@ -39992,10 +40234,6 @@
         {
           "kind": "theorem",
           "name": "Becoming.World.Embodied.standsObey_iff"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.Embodied.tally_of_stands"
         },
         {
           "kind": "def",
@@ -40023,6 +40261,14 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.standing_counting_under_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.standing_counting_under_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.standing_counting_under"
         },
         {
@@ -40035,7 +40281,15 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.enclosure_bounds_standing_counted"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.enclosure_bounds_standing"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.standing_of_coming_enclosed"
         },
         {
           "kind": "theorem",
@@ -40075,7 +40329,11 @@
         },
         {
           "kind": "theorem",
-          "name": "Becoming.World.embodiedQueue_stands"
+          "name": "Becoming.World.enclosed_standing_counting_under_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.enclosed_standing_counting_under_witnessed"
         },
         {
           "kind": "theorem",
@@ -40100,6 +40358,14 @@
         {
           "kind": "theorem",
           "name": "Becoming.World.activeRing_counts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.finite_standing_counting_under_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.finite_standing_counting_under_witnessed"
         },
         {
           "kind": "theorem",
@@ -40147,6 +40413,10 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.dependence_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.dependence_counting"
         },
         {
@@ -40179,28 +40449,37 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.finite_dependence_counting_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.finite_dependence_counting_witnessed"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.finite_dependence_counting"
         }
       ],
       "axiom_dependencies": {
-        "Becoming.ceasings_congr": [],
-        "Becoming.comings_congr": [],
         "Becoming.pairs": [],
         "Becoming.mem_pairs": [],
         "Becoming.World.StandsObey": [],
         "Becoming.World.Embodied.decided": [],
         "Becoming.World.Embodied.standsObey_iff": [],
-        "Becoming.World.Embodied.tally_of_stands": [],
         "Becoming.OpenQueue.sourced": [],
         "Becoming.World.sourcedQueue": [],
         "Becoming.World.sourcedQueue_holds": [],
         "Becoming.World.sourcedQueue_meets": [],
         "Becoming.World.sourcedQueue_standing": [],
         "Becoming.World.sourcedQueue_counts": [],
+        "Becoming.World.standing_counting_under_sound": [],
+        "Becoming.World.standing_counting_under_witnessed": [],
         "Becoming.World.standing_counting_under": [],
         "Becoming.World.standing_iff_counting": [],
         "Becoming.World.standing_binds_iff": [],
+        "Becoming.World.enclosure_bounds_standing_counted": [],
         "Becoming.World.enclosure_bounds_standing": [],
+        "Becoming.World.standing_of_coming_enclosed": [],
         "Becoming.World.enclosed_binds_standing": [],
         "Becoming.World.BoundsStanding": [],
         "Becoming.EnclosedQueue.waiting": [],
@@ -40210,13 +40489,16 @@
         "Becoming.World.waitingQueue_meets": [],
         "Becoming.World.waitingQueue_standing": [],
         "Becoming.World.waitingQueue_counts": [],
-        "Becoming.World.embodiedQueue_stands": [],
+        "Becoming.World.enclosed_standing_counting_under_sound": [],
+        "Becoming.World.enclosed_standing_counting_under_witnessed": [],
         "Becoming.World.enclosed_standing_counting_under": [],
         "Becoming.World.enclosed_standing_bound_iff": [],
         "Becoming.World.activeRing": [],
         "Becoming.World.activeRing_holds": [],
         "Becoming.World.activeRing_meets": [],
         "Becoming.World.activeRing_counts": [],
+        "Becoming.World.finite_standing_counting_under_sound": [],
+        "Becoming.World.finite_standing_counting_under_witnessed": [],
         "Becoming.World.finite_standing_counting_under": [],
         "Becoming.World.finite_standing_binds_iff": [],
         "Becoming.World.finite_standing_bound_iff": [],
@@ -40228,6 +40510,7 @@
         "Becoming.World.dependingQueue_premised": [],
         "Becoming.World.dependingQueue_census": [],
         "Becoming.World.dependingQueue_counts": [],
+        "Becoming.World.dependence_witnessed": [],
         "Becoming.World.dependence_counting": [],
         "Becoming.World.enclosed_dependence_counting": [],
         "Becoming.Ring.first": [],
@@ -40236,6 +40519,8 @@
         "Becoming.World.dependingRing_decided": [],
         "Becoming.World.dependingRing_premised": [],
         "Becoming.World.dependingRing_counts": [],
+        "Becoming.World.finite_dependence_counting_sound": [],
+        "Becoming.World.finite_dependence_counting_witnessed": [],
         "Becoming.World.finite_dependence_counting": []
       },
       "kernel_checked": true
@@ -76611,43 +76896,11 @@
       "module": "Becoming.CensusCounts",
       "spine": true,
       "layer": "core",
-      "theorems": 38,
+      "theorems": 20,
       "declarations": [
         {
           "kind": "theorem",
-          "name": "Becoming.tally_step"
-        },
-        {
-          "kind": "def",
-          "name": "Becoming.FamilyCounts"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.FamilyCounts.tally"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.familyCounts_decided"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.FamilyCounts.of_eq"
-        },
-        {
-          "kind": "theorem",
           "name": "Becoming.counted_laws"
-        },
-        {
-          "kind": "abbrev",
-          "name": "Becoming.World.CountsOf"
-        },
-        {
-          "kind": "def",
-          "name": "Becoming.World.CountsHold"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.CountsOf.tally"
         },
         {
           "kind": "theorem",
@@ -76663,39 +76916,11 @@
         },
         {
           "kind": "theorem",
-          "name": "Becoming.World.countsOf_decided"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.CountsHold.obey"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.countsHold_of_obey"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.active_of_coming_jointly"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.active_of_coming_taking"
-        },
-        {
-          "kind": "theorem",
           "name": "Becoming.World.queue_countsOf"
         },
         {
           "kind": "theorem",
           "name": "Becoming.World.embodiedQueue_countsOf"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.openQueue_countsOf"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.drivenQueue_countsOf"
         },
         {
           "kind": "theorem",
@@ -76712,30 +76937,6 @@
         {
           "kind": "theorem",
           "name": "Becoming.World.counting_binds_iff_counted"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.enclosure_bounds_change_counted"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.active_of_coming_enclosed"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.company_of"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.enclosedQueue_countsOf"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.closingQueue_countsOf"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.finiteQueue_countsOf"
         },
         {
           "kind": "theorem",
@@ -76779,37 +76980,16 @@
         }
       ],
       "axiom_dependencies": {
-        "Becoming.tally_step": [],
-        "Becoming.FamilyCounts": [],
-        "Becoming.FamilyCounts.tally": [],
-        "Becoming.familyCounts_decided": [],
-        "Becoming.FamilyCounts.of_eq": [],
         "Becoming.counted_laws": [],
-        "Becoming.World.CountsOf": [],
-        "Becoming.World.CountsHold": [],
-        "Becoming.World.CountsOf.tally": [],
         "Becoming.World.comings_exist_iff": [],
         "Becoming.World.ceasings_exist_iff_listed": [],
         "Becoming.World.comings_exist_iff_listed": [],
-        "Becoming.World.countsOf_decided": [],
-        "Becoming.World.CountsHold.obey": [],
-        "Becoming.World.countsHold_of_obey": [],
-        "Becoming.World.active_of_coming_jointly": [],
-        "Becoming.World.active_of_coming_taking": [],
         "Becoming.World.queue_countsOf": [],
         "Becoming.World.embodiedQueue_countsOf": [],
-        "Becoming.World.openQueue_countsOf": [],
-        "Becoming.World.drivenQueue_countsOf": [],
         "Becoming.World.counting_free_counted": [],
         "Becoming.World.counting_under_counted": [],
         "Becoming.World.premised_counting_counted": [],
         "Becoming.World.counting_binds_iff_counted": [],
-        "Becoming.World.enclosure_bounds_change_counted": [],
-        "Becoming.World.active_of_coming_enclosed": [],
-        "Becoming.World.company_of": [],
-        "Becoming.World.enclosedQueue_countsOf": [],
-        "Becoming.World.closingQueue_countsOf": [],
-        "Becoming.World.finiteQueue_countsOf": [],
         "Becoming.World.ring_countsOf": [],
         "Becoming.World.embodiedRing_countsOf": [],
         "Becoming.World.balancedRing_countsOf": [],
@@ -76827,39 +77007,11 @@
       "module": "Becoming.CensusBinding",
       "spine": true,
       "layer": "core",
-      "theorems": 29,
+      "theorems": 22,
       "declarations": [
         {
           "kind": "theorem",
-          "name": "Becoming.World.countsOf_eq"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.CountsOf.active_pos"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.CountsOf.arising_pos"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.binds_arising_counted"
-        },
-        {
-          "kind": "theorem",
           "name": "Becoming.World.binds_adds_counted"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.CountsOf.company_binding"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.CountsOf.acts_of_binding"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.World.CountsOf.joint_of_binding"
         },
         {
           "kind": "theorem",
@@ -76947,14 +77099,7 @@
         }
       ],
       "axiom_dependencies": {
-        "Becoming.World.countsOf_eq": [],
-        "Becoming.World.CountsOf.active_pos": [],
-        "Becoming.World.CountsOf.arising_pos": [],
-        "Becoming.World.binds_arising_counted": [],
         "Becoming.World.binds_adds_counted": [],
-        "Becoming.World.CountsOf.company_binding": [],
-        "Becoming.World.CountsOf.acts_of_binding": [],
-        "Becoming.World.CountsOf.joint_of_binding": [],
         "Becoming.World.binding_counting_counted": [],
         "Becoming.World.binding_counting_under_counted": [],
         "Becoming.World.binding_activity_iff_counted": [],
@@ -91941,110 +92086,52 @@
     }
   ],
   "artifact_sha256": {
-    "Becoming.Admission.lean": "5824b1de37fb2fcce72f0f4df0804ddb0802de74a5fa289a6fad95746b72b411",
-    "Becoming.Alternatives.lean": "9eadb20600d8c26388141ea7ef7d0f38131828bffe49907e9241180a72b29e5c",
-    "Becoming.Arising.lean": "cf6c388ea4a739f6f3ec97b50c9fe639b77acc73a4b10439481dbe70358435a6",
-    "Becoming.AssurancePlans.lean": "86a96eb70b6d92d5b8270810d68eb41fa55c7366d436e9950e4b2962896dcef2",
-    "Becoming.Attraction.lean": "b1e56bc07a60f925fa968987f9f3a2fa78ea8098f52f35aacf96f84788472770",
-    "Becoming.Branching.lean": "0f8ef260bc3919fb9468207af73f6128fa71dd88454848d4a8c22ec8059500e8",
-    "Becoming.Bundles.lean": "4055d193bbc130905a315a149089f831af9bf49cd5d9b57a8196be531b98634c",
-    "Becoming.Carriers.lean": "b7838837e6f9b18add59168d211337fcd303b73427d0283947495c2f272c7a4c",
-    "Becoming.Change.lean": "9ecb1747568c0ac4dd9befc0cdaad0511321b439cea7e60ecfc4726b57be037f",
-    "Becoming.Clearing.lean": "9f0cf4d878594390bdfa25dd337094d3767faba8cd2ad23782e513a451ede8f1",
-    "Becoming.Composition.lean": "08ae38e607c91b205c8b99bbcb49c0678e39f36d89b6cfb9af49bbc602ba4a49",
-    "Becoming.Continuation.lean": "b7405bce742da657308ed1cb3a962823d9aaa3a560f9aaa92b1c3ad1338b4ed1",
-    "Becoming.Copying.lean": "f05c8e7eab737d11ff41ec49d4340699005259586189ac88b0b1890685a188f5",
-    "Becoming.Correspondence.lean": "9ccd67d5006b1b4f5fee9914b6fdad62bfee17fb61cb2c95c41ed8e5436f34de",
-    "Becoming.Counting.lean": "0a505062f5fc26773a0dad2e4b982f019323e7ec7d8a7edd48c8f5c61c760ffd",
-    "Becoming.CouplingTraces.lean": "4878619d8ebb7b906d72d03cf427411ea1be67b52271d38a69eaad230e0ca8fc",
-    "Becoming.Courses.lean": "72fd570fa32c3fc6bd0458f4b0793bb7ce9365f7b1276aaddf323ca05b2afc86",
-    "Becoming.CrossSituational.lean": "402e2de8c945ee033006718beedc27b76eb7e266050f5b794c7bb51970551a79",
-    "Becoming.Dependence.lean": "1c85d21fa7ec00debcac668785b51fdd7cdc3a97a66d50c6700047956cdaf5df",
-    "Becoming.Enough.lean": "a8ff1be68d2d282631c49c9890b547b02633ccda7545a4fd0e18f1871ca23547",
-    "Becoming.Entropy.lean": "d6c950deed4a243e979261f6fd6ec0273b50e415eaf6baa9758ca6f16e1e4b57",
-    "Becoming.Exclusion.lean": "f5ccca1a63e56f58cbd44fd173280c075d7534ab86f2397b78f22171c101e43b",
-    "Becoming.Exhaustion.lean": "a6b9951e0599059b6e4f5d3aa18f91714a688c0f031723ea264e70950aa2102f",
-    "Becoming.Extension.lean": "4d3afe46d3d4b297acc6a1e6b126ad2e0f2d08dfa9205fdcf2aa32bb7b5bcbf1",
-    "Becoming.Feedback.lean": "cb86cadd870f66707432b21b9b7f2d469a498fd413ab5cb4d4311d6c371d4f4a",
-    "Becoming.Feeding.lean": "d92c72578b3fb86892a625bf3e7ed4d71636f0d511a0154b1c84b654bae0ec25",
-    "Becoming.FinerTraces.lean": "6f3f309c8f383201b1f3db72e1412207534815263ec36a626e957b0c198a685c",
-    "Becoming.Flow.lean": "7364d547b7d4349fe7fcff8868e81ce2464e1ee430387f0918cbfee5ab05a3bd",
-    "Becoming.Frequency.lean": "5f99b203eb6e274510a097fd49368d96eeb7a31faefb6c429ab4b016540f9c5e",
-    "Becoming.Granularity.lean": "e249c3d2d6c14426148b24bd19ab2a2b7f2ecc52e2008a1ebd533ec73b6d3945",
-    "Becoming.Handoff.lean": "b062315f1166b61ea22a0b6c5b1f832378dad9ae05810b98df271639c409afc8",
-    "Becoming.HexagramPlaces.lean": "aa427ab127e80e367b511154ab86a22d300ca1ce400f8b864a682ab56e7ef9e8",
-    "Becoming.HexagramSequences.lean": "54e1cc277a2d8c730b5ad6932c9e984b9e0e4e004265b6d80d78e568f006804b",
-    "Becoming.HistorySums.lean": "a07f48940f7046df5673be9d70bcc83bf9ed185701bba411836fe1052f852f64",
-    "Becoming.Identification.lean": "9f74e1c04abf294a9f4853f3e56257c265afc0f4190d3778566cec67fa2e9591",
-    "Becoming.Identity.lean": "b6a67d9b5352190bb80ec53b5217f9c278398112afab1a9b0452e430e450609d",
-    "Becoming.Irreversibility.lean": "88cecd0a1457caffbbb3f975e63ee821a0f0b2e674b4e3685d1e5d18e689c2b6",
-    "Becoming.Joining.lean": "21ba2468426712d6c8410ad2d7960675a6e561cfa07d43ab6782cf9ffc2b10a6",
-    "Becoming.JoiningRoles.lean": "721bbba16a2eed321383c4183954f41425ca91b92fc3f25ee8f4c6147b4bcb96",
-    "Becoming.JointCorrespondence.lean": "17e241e3301af75312e9e921205a9905e85af5e2ba29bf9d38b1a0d523e694a7",
-    "Becoming.Junctures.lean": "5b342a5ffb26121ca959115c80f3de78153ee71898429619954d7d154d9d09d0",
-    "Becoming.Labelled.lean": "f2c55215f94a1ddf795d238cf4a37c041d66540ef56c83ce4a0c3319dfa19d7d",
-    "Becoming.Lasting.lean": "ead33dc198328da7040d9c39b0a9c3ab27778d268af34ccdeea4500541eba3c9",
-    "Becoming.LawAlongRun.lean": "89444651632aed744d6ac9bbe680ae1b22ea79afdabdca405930a9f189fea24a",
-    "Becoming.Learning.lean": "3d9ad0576877a20f53a72c582acc350355e99e6d0b27bb9075a5422c70aa1aab",
-    "Becoming.Likeness.lean": "c2ce8ed970473ced65a6addb9ef5ff6a0a994f33507d2d24316a7f79888858e1",
-    "Becoming.Listing.lean": "7a7e1d52082da79408bdb6d9a7ccae0b2612e8bd17f8b4f2885b748bc64cf19c",
-    "Becoming.Loops.lean": "750252e9e2d6d4dfa5714a9ac2f797b35d0c792f39616130c32020604e9f430f",
-    "Becoming.LossMatching.lean": "78500ebbcb1796ede7fe03dd25341010cb810f3fc55ee2eadc208e4d4f3eeb66",
-    "Becoming.MoveFormation.lean": "3fbeef77b2a8d9de09d0eca9353a14501af671008a541eebce3550bac44624e9",
-    "Becoming.MoveOutcomeProcesses.lean": "e1ed73c1333483201e73a20e4a9d082ff13772612e28f1d16d414a3e7cb8afcb",
-    "Becoming.OneStep.lean": "a3573dad850874daa486c38d69f7ae02201572aac6f019785653bfdc45a4f10a",
-    "Becoming.Openness.lean": "0ac04cc1aac333c62a4fd410ede5ddd1e15da0e42e7fe2eb41f5f7696c52735e",
-    "Becoming.OrderNormal.lean": "f233c6800d90c4554f572a85d5ce73b7e48107bfc1b9012ec4a8490d6f78f1e1",
-    "Becoming.Pace.lean": "950af3e13f76620ce65a0cde19ada6bc7c2576eef619d0ce7e6ed664ded449ba",
-    "Becoming.PatternPassing.lean": "bd88bcfa58b2ec4c36ef0b5712b36eebb0b906719fa7a8281ca48af39604311b",
-    "Becoming.Persistence.lean": "7729f29523cafc07e3d76b3a8df578559c906efc8daffd2312d665cf3d88c7a3",
-    "Becoming.PlaceTransitionNets.lean": "e6293a8d5ca23f901278b557e5f627df8237ca81f1ea4b376fc49001751130fc",
-    "Becoming.Population.lean": "df1e36a3a90ebab3af01572de71f5aa14c3d32f1c015b209e29114fda2385e7d",
-    "Becoming.Prelude.lean": "806e95fad20b5a22ad532429698511ec066b63e9160a1018f1b7a736e6724176",
+    "Becoming.CensusBinding.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.CensusBinding.lean": "f626c7641e4e9950fbac7f2072017546a19394d4f3bb53e2c3e51df3ccd49db5",
+    "Becoming.CensusCounts.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.CensusCounts.lean": "bdd45e529bf1a5b12d50938f2555f9e21c564882dcfa1371f6d0f60a20bd192e",
+    "Becoming.CensusTable.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.CensusTable.lean": "3a8e3ed452a4f0989c2917dbb13ab785fca79e5c4089d29b052fd1f71f8629e8",
+    "Becoming.Counting.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Counting.lean": "6ec66255167b62c371a69951659be416f36e223e133b241db12a2029392ed074",
+    "Becoming.OneStep.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Premises.lean": "0d3fddd65f43d3ea25d5086497771f0234e484eff60b68690a52264f9c1da74e",
-    "Becoming.Propagation.lean": "077b798206c9cd4c3087d24c77c6eafc264dca96013e3716ee2c44ea0c57f1d3",
-    "Becoming.Ranking.lean": "75acb287d81d786e1ebbe70f35e93c687b4ca1104667c10d09346e3087896852",
-    "Becoming.Refinement.lean": "2caf87de1b7f4d5523a93bc979e0039c6208d800d590297f76b44c1667fe636c",
-    "Becoming.Regulation.lean": "4bff73082522e9f1c28d099beab8946494a5d3645d8a06145432ccfa19019716",
-    "Becoming.Rejoining.lean": "0b1f3628d4360420bdb928d801b455e580e6134071b67d5566a80d62f7a5ba56",
-    "Becoming.RelativePosition.lean": "4026d42e327a2ba98bd2ea2f246f13802154eb56bd287dda343f5cba85dd87e0",
-    "Becoming.Reordering.lean": "72adbc08546ed505f267db376a96975728150ed719f941491095075bfe688f93",
-    "Becoming.Reserve.lean": "b6cf1bcbc4bb2789534857e75e1e3dae51f2a9e60c5eaf6cc61221dd71ee862a",
-    "Becoming.Response.lean": "d9f8d20e13767514c7db803bf7b8cdbd97469049eb0a15fae2f6f2e5a39609a0",
-    "Becoming.Roles.lean": "6e0fdea63dbd3bc1d92d6df2d8e68216436e1a916d1f36ce9872da25c3fe64eb",
-    "Becoming.RouteTraces.lean": "fa73adf83d2ea1b119e6c64fcbf1014c4c2ad8bfa648010877602b77f923ff4a",
-    "Becoming.Routes.lean": "91840d0f1dcfb77baa6b121672e7ebbc742c86cf034ea9029b9808e08810a0b1",
-    "Becoming.RuleCapture.lean": "68bd784a3af4d22a133ba01145857d7850960ddc172193ee55736a9fb68b72a8",
-    "Becoming.Sampling.lean": "9d27490407360695af1bbbf9008b20ed9c42eeae3c749a38d9a53cb4480c7744",
-    "Becoming.Selection.lean": "8f41fcf1bdbab92ede8b09ba5e9ce414ef8c42ea7be46f596eaf54bfec2287ce",
-    "Becoming.Settling.lean": "f6fe0bc4461279f43b1435b1bec0e568b0fb34e687a8e7e04bb73676163ed774",
-    "Becoming.SharedCodes.lean": "95e24544ddc46a4ed88b0edcbdd4f72621a94f12d41a3e04acf9ea10ae6d2ddc",
-    "Becoming.SituationTraces.lean": "e82e19efae7370c69fe944b654dbad7ab5347576fdfaabf7899805000bb2267c",
-    "Becoming.Situations.lean": "dd5b7e9415e7ba7147292fdbab3e776cea7bb8bcf1cdfab865719fa5333176a1",
-    "Becoming.Space.lean": "d7cf70544495c135366166d401bf10bdfd0be55bf362bdd59b2b186258cff6cd",
-    "Becoming.Stuttering.lean": "a5bb713a4cb5f4e7ff653af254484a0a56ef0c1583c60555099c5783b30416de",
-    "Becoming.Tail.lean": "c3299be85cf01866d2080ce1dfb20511ebefbcd2203c3156d5b40fe31b0403ea",
-    "Becoming.Testing.lean": "aba84f9ec26501aedb0c4f266c90619fcca2305f268e843a82d5603468d51b44",
-    "Becoming.TypicalRuns.lean": "5e95abec2155ca03b3e8fb8c965633bfc74aec0bfd9017fe1fa678853fc216a4",
-    "Becoming.Typicality.lean": "904976890149379d5d5e061cebf97235035ed94091985003ff51801b52e1d8a3",
-    "Becoming.Undecided.lean": "a43085b56e3075f3ac0bcb6eb47b52c8e2e2be3479f0285c6b20579734e1e2e4",
-    "Becoming.Viability.lean": "83fa2be908e4412c877f839c4fcf4763e7e2f36349eb0ccfe844d04bcb75556b",
-    "Becoming.Weighted.lean": "0a73e620d493cadc46e730187cf7c02f948df35b1b1ef91e0b78e7d96ee9b81c",
-    "Becoming.Wholes.lean": "b79a2125bbdfc3b5ec9dd254a14232535259e98cd3468675e45a41609e75eedd",
-    "Becoming.Witnesses.lean": "a9be4cf09e2d1a6a60fd88ed7a72c3799f7919e981a7e1894f4ec48b8637d6db",
-    "Becoming.World.lean": "9d05b714c28d3497235330e5d5fb4221415ea3ae25ec32d730425299b5479428",
-    "Becoming.lean": "17874bfc56db547137bfa140ba217a506094988da7dd50b18ef9990080b11c39",
-    "Becoming.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Standing.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Standing.lean": "b3991260454611c4c8fa7f36b5e5ca25489ed5b9126b9be0522fb92df74354c9",
+    "Becoming.lean": "d11bc972e7b0a615b9d329f810a778ffd8374f3b0453d47a1722810e3abac9db",
     "BecomingAxiomAudit.lean": "2a7bf199bf7a79a47a4f3057083c0b43f6c30c82bbab52299d38d436c6077bcb",
     "BecomingAxiomAudit.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "BecomingCensusBindingAxiomAudit.lean": "9c20f1c7c7e9b8d63ba57486734370d238d8112a89f0ecf08cd6c6645d37f493",
+    "BecomingCensusBindingAxiomAudit.log": "665d879f162a6fa6df8dafdad2a1e113475e9d33b7d21ccaccbaa0738978a2cd",
+    "BecomingCensusBindingSignatures.lean": "c8196ad167776295983d7d21e0c5fac908265bcfe1ac76a544e7d9ad5ca452b7",
+    "BecomingCensusBindingSignatures.log": "98c9f5f58f8fcffee6c90a7b8a0a827b781b856734ec3da67ea378f0b24f550a",
+    "BecomingCensusCountsAxiomAudit.lean": "bb51d445dcff7ffa17a2286c9bd6d0b83bdf01bf9514461dbc3070c5d0239eb8",
+    "BecomingCensusCountsAxiomAudit.log": "839a9adcd34949f3ed8972012455d48d174ceb60d1aa31a54a31843fdc0ad98d",
+    "BecomingCensusCountsSignatures.lean": "ac9e6fea29d9ab9fc611abb63eed365a343cf552be68866b19b49a8516ccbbe1",
+    "BecomingCensusCountsSignatures.log": "047025f202c55e304dd517796305c7748a76027a525c569e764cec9c249bbd54",
+    "BecomingCensusTableAxiomAudit.lean": "4ab26bbb24f8daeb344368c6ebf07981fee648147f60baaba87434d1cec9705c",
+    "BecomingCensusTableAxiomAudit.log": "87234187685444a5a6dd2e08e8c6f4fa75ac6938d7a749092dd26d10fdff4a08",
+    "BecomingCensusTableSignatures.lean": "dfc77426a21b6206887546b33d4c4e9c0516cbb48d18e7c0ea4e52d4609d7a73",
+    "BecomingCensusTableSignatures.log": "5f35488c149d092dc982cf75b7692490366c342bcef6d3134853bff750d82c99",
+    "BecomingCountingAxiomAudit.lean": "4523c1d3f4e8c7ebb9bf0cd5b6df7691641997dc911129205def506de27db5f5",
+    "BecomingCountingAxiomAudit.log": "803e5ef838007c224df3e9094162a697e9974ff99754c7e909624d8ebf2df517",
+    "BecomingCountingSignatures.lean": "772bb7e71bb1233e278491e2472137551e7457d6420ed2b6ae12ca09b462c5a7",
+    "BecomingCountingSignatures.log": "be211ba51f422525d6090a8e72d050658ef815dfd56fc9c73788fec299e7adaa",
+    "BecomingOneStepAxiomAudit.lean": "8ed5e81668f1ee52828da85656b400a2b12711507c387f68be8b97f67aa1fafa",
+    "BecomingOneStepAxiomAudit.log": "75d46b0a13f0eb79dc24c6d31f35a75fc920f335b7023604f9efd824bdccdde0",
+    "BecomingOneStepSignatures.lean": "fbbffccfa1498190b5d0818434c361eaca7f5fb9a04f00ea2e49413e9aeb3190",
+    "BecomingOneStepSignatures.log": "c21152489cf508155cc7946215b744b6074188cd1dc826372bf9db5d2bdc896e",
     "BecomingSignatures.lean": "2a7bf199bf7a79a47a4f3057083c0b43f6c30c82bbab52299d38d436c6077bcb",
     "BecomingSignatures.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "BecomingStandingAxiomAudit.lean": "0c4aaa3d119021c654d7a66214b00b13b26108df499b3b77cf4dff7c4b12fb14",
+    "BecomingStandingAxiomAudit.log": "dabae8cb638f67f2061b2e236375ac62b763d57d1d056e90793f419633969260",
+    "BecomingStandingSignatures.lean": "0cab9b9372f7121f90e5eeaf32f90be9090f6c5d57a1691d988f36cffe38dcf6",
+    "BecomingStandingSignatures.log": "1b89a158e64f07fc33e6bd35a4952432c0771815df1bc728334189ab8aab80e9",
     "Controls.lean": "b6d4d1772f4c923833bc713f3b9f170a10ef362d699f4b854401adb21fe22f57",
     "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "EnvironmentAudit.lean": "878193161ab4eb9f96d7cb5988ff998501fc308662976f33bb10b15326a23499",
-    "EnvironmentAudit.log": "25c5ab4b65955639dfd0dd96daa4131202b56e33632d2eb0ad8bb07638b8dad2",
-    "check_becoming.py": "1182f03f5acdb4aa5116ac30df2ec4ab8769c10d7024a168fa836d213a35eb96",
+    "EnvironmentAudit.lean": "087f3f7bbc8e84cad4f7a2740ef075d4f09dc09723023e1a014010f1f0b6eac2",
+    "EnvironmentAudit.log": "bc4b032d4cc0e972dbe20796b5684037959f8bde337c502a265fdeb0ee483fd9",
+    "check_becoming.py": "0ec5f5d29188d939958f7044444f493578897ed7bbbf221de39d02fdd3a3c61c",
     "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
   }
 }

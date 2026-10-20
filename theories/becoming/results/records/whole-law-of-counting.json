@@ -718,9 +718,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "role": "proof",
-      "sha256": "0a505062f5fc26773a0dad2e4b982f019323e7ec7d8a7edd48c8f5c61c760ffd",
+      "sha256": "6ec66255167b62c371a69951659be416f36e223e133b241db12a2029392ed074",
       "declarations": [
-        "Becoming.World.CountsObey",
         "Becoming.Queue.web",
         "Becoming.Queue.embodied",
         "Becoming.Queue.lone",
@@ -834,6 +833,14 @@
         "Becoming.EnclosedQueue.level_le",
         "Becoming.World.finiteQueue_saturated_binds",
         "Becoming.World.finite_binding_counting"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusTable.lean",
+      "role": "proof",
+      "sha256": "3a8e3ed452a4f0989c2917dbb13ab785fca79e5c4089d29b052fd1f71f8629e8",
+      "declarations": [
+        "Becoming.World.CountsObey"
       ]
     },
     {
@@ -1041,6 +1048,12 @@
       "role": "receipt",
       "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
+      "role": "receipt",
+      "sha256": "a47fa21097a69fd4ab35cecaa0a5ccef5ebb0f2d37b166856bad77506cc4b9af",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -1067,7 +1080,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counting",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1125,6 +1138,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusTable.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.CensusTable",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1245,6 +1265,10 @@
     {
       "en": "20 October 2026, R37 (lens B of the twentieth review: the witness models as instances of one library, one bisimulation theory for a family of relations, the definition twins and copies stated once): Moved with their full names: from Flow.lean to Prelude.lean, steps; from Population.lean to Prelude.lean, Distinct. Proof bindings (Change.lean, Counting.lean, Dependence.lean, Flow.lean, Openness.lean, Population.lean, Prelude.lean, Premises.lean, Roles.lean, Space.lean, World.lean) rebound to core receipt 20261020T051144.879480Z. Re-pointed after reading the change: Change.lean, Counting.lean, Dependence.lean, Flow.lean, Openness.lean, Population.lean, Premises.lean, Roles.lean, Space.lean, World.lean: twin definitions, witness models or copies replaced by the definition stated once, the instance of Witnesses or the kept name; kept statements unchanged; Prelude.lean: the definitions and statements stated once (Distinct, total, steps, nonzero, Copying.nth, Law.memberAt, Settling.consAct, DistinctUnder, downFrom and their laws) moved here; other statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R37（第二十次评审的 B 视角：见证模型为一个库的实例，为一族关系的一个互模拟理论，孪生定义与副本只陈述一次）：连同完整名称移动：从 Flow.lean 到 Prelude.lean：steps；从 Population.lean 到 Prelude.lean：Distinct。证明绑定（Change.lean、Counting.lean、Dependence.lean、Flow.lean、Openness.lean、Population.lean、Prelude.lean、Premises.lean、Roles.lean、Space.lean、World.lean）改到核心回执 20261020T051144.879480Z。读过改动后重新指向：Change.lean、Counting.lean、Dependence.lean、Flow.lean、Openness.lean、Population.lean、Premises.lean、Roles.lean、Space.lean、World.lean：孪生定义、见证模型或副本由只陈述一次的定义、Witnesses 的实例或保留的名称取代；保留的陈述不变；Prelude.lean：只陈述一次的定义与陈述（Distinct、total、steps、nonzero、Copying.nth、Law.memberAt、Settling.consAct、DistinctUnder、downFrom 及其规律）移入；其他陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R37b (B11 of the twentieth review: one census table for any listing, the laws of counting what is active, what stands and what depends its instances, the counted and decided forms from one soundness and one witness): Moved with their full names: from Counting.lean to CensusTable.lean, World.CountsObey. Proof bindings (Counting.lean) rebound to core receipt 20261020T060542.295041Z. Re-pointed after reading the change: Counting.lean: each law of counting a census table, from a counted soundness and a witness lemma; the counted binding steps moved here from CensusCounts and CensusBinding; statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R37b（第二十次评审的 B11：任一列举的一个普查表，计数所活动、所立与所依的规律为其实例，计数式与判定式由一个可靠性与一个见证给出）：连同完整名称移动：从 Counting.lean 到 CensusTable.lean：World.CountsObey。证明绑定（Counting.lean）改到核心回执 20261020T060542.295041Z。读过改动后重新指向：Counting.lean：每条计数规律为一个普查表，由计数式的可靠性与见证引理给出；计数式的约束步骤从 CensusCounts 与 CensusBinding 移入；陈述不变。论断不变。"
     }
   ],
   "text_versions": [
