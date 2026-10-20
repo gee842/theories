@@ -1621,7 +1621,14 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   centers' continuation is forced to have significance, the condition only where every formation is a
   center; a standpoint's own presupposition forces exactly its closure; drawn along being related at
   all the self can exceed every single relation's closure (`Chain`); in `Clearing` the narrower scope
-  retains where the condition loses the dweller. The readings are the AI's (D59).
+  retains where the condition loses the dweller. A content held de se, a property each standpoint
+  ascribes to itself, is standpoint-invariant exactly where its readings at the centers agree; held de
+  se the presupposition gives each center its own closure, held de dicto the step forces the union of
+  closures, and the two agree exactly where the closures do (`selfAscribed_iff_withinSome`). Invariant
+  grades give invariant standing, not conversely (`Partial`); a strictly increasing transform of
+  levels of continuation ranks every widening higher, one strictly concave up to a bound decides
+  transfers C leaves mixed, and a threshold of sufficiency ties above it. The readings are the AI's
+  (D59, D60).
 * `Becoming.Relevance` (L2): the uses of living significance under the continuation condition. Read from significance,
   positive relevance is realized living content whose continuation has significance;
   under the continuation condition living significance holds on every frame for every reading of `living`, this relevance

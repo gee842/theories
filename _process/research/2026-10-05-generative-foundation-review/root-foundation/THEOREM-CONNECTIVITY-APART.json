@@ -1892,11 +1892,6 @@
    "category": "general-structure",
    "reason": "where every item one course admits beyond another weighs nothing the two weigh the same: a law of any finite listing and weighting, with no world"
   },
-  "Becoming.forced_iff_center": {
-   "module": "Becoming.Weightings",
-   "category": "general-structure",
-   "reason": "what each standpoint's presupposition about its own center and standpoint-invariance force is exactly the centers' continuation: a law of every significance over any standpoints and formations; the base supplies no reading of which formations are centers"
-  },
   "Becoming.unrestricted_atCenters_iff": {
    "module": "Becoming.Weightings",
    "category": "general-structure",
@@ -1961,6 +1956,91 @@
    "module": "Becoming.PropositionIdentity",
    "category": "support",
    "reason": "PE1: about the proof language (what identifying interderivable propositions keeps and loses), not a law of the unfolding; transport along rfl is the identity by computation"
+  },
+  "Becoming.standpointInvariant_iff_shared": {
+   "module": "Becoming.Weightings",
+   "category": "general-structure",
+   "reason": "a significance is standpoint-invariant exactly when it is one shared content: a law of every significance over any standpoints and formations, with no world"
+  },
+  "Becoming.selfAscribed_standpointInvariant_iff": {
+   "module": "Becoming.Weightings",
+   "category": "general-structure",
+   "reason": "a content held de se is standpoint-invariant exactly where its readings at the centers agree: a law of every property of a self and any center map, with no world"
+  },
+  "Becoming.ownClosure_presupposed": {
+   "module": "Becoming.Weightings",
+   "category": "general-structure",
+   "reason": "the own closure held de se meets each standpoint's presupposition: a law of every relation and center map; the base supplies relations (feeding, affecting) as cases"
+  },
+  "Becoming.ownClosure_unrestricted_of_whole": {
+   "module": "Becoming.Weightings",
+   "category": "general-structure",
+   "reason": "held de se the presupposition is the condition where every center's closure is the whole: a law of every relation and center map, with no world"
+  },
+  "Becoming.selfAscribed_iff_withinSome": {
+   "module": "Becoming.Weightings",
+   "category": "general-structure",
+   "reason": "the de se and de dicto readings agree exactly where the centers' closures agree: a law of every relation and center map, with no world"
+  },
+  "Becoming.Weighting.standingInvariant_of_gradeInvariant": {
+   "module": "Becoming.Weightings",
+   "category": "general-structure",
+   "reason": "invariant grades have invariant standing: a law of any natural grades over any standpoints and items, with no world"
+  },
+  "Becoming.Weighting.ranks_alike_of_gradeInvariant": {
+   "module": "Becoming.Weightings",
+   "category": "general-structure",
+   "reason": "invariant grades rank alike from every standpoint: a law of any finite listing and grades, with no world"
+  },
+  "Becoming.Weighting.prior_lt_of_widens": {
+   "module": "Becoming.Weightings",
+   "category": "general-structure",
+   "reason": "a strictly increasing transform of levels ranks every widening higher: a law of any finite listing of items and formations, with no world; Web.widens_iff_every_weighting carries the listing to webs"
+  },
+  "Becoming.Weighting.sufficient_ties": {
+   "module": "Becoming.Weightings",
+   "category": "general-structure",
+   "reason": "a transform rising no further from a threshold ties levels at or above it: a law of any listed formations and levels, with no world"
+  },
+  "Becoming.Divided.selfAscribed_not_invariant": {
+   "module": "Becoming.Weightings",
+   "category": "model-witness",
+   "reason": "two standpoints, each its own center along the empty relation, where the presupposition held de se is not standpoint-invariant; a fact about one constructed family, not a law of the unfolding"
+  },
+  "Becoming.Divided.withinSome_both": {
+   "module": "Becoming.Weightings",
+   "category": "model-witness",
+   "reason": "in the same family, held de dicto both continuations have significance from both standpoints; a fact about one constructed family"
+  },
+  "Becoming.Partial.standing": {
+   "module": "Becoming.Weightings",
+   "category": "model-witness",
+   "reason": "two standpoints grading their own formation two and the other one: standing invariant; a fact about one constructed grading"
+  },
+  "Becoming.Partial.not_gradeInvariant": {
+   "module": "Becoming.Weightings",
+   "category": "model-witness",
+   "reason": "in the same grading the grades are not invariant; a fact about one constructed grading"
+  },
+  "Becoming.Partial.ranks_differ": {
+   "module": "Becoming.Weightings",
+   "category": "model-witness",
+   "reason": "in the same grading two standpoints rank a mixed comparison opposite ways; a fact about one constructed grading"
+  },
+  "Becoming.LevelTransfer.mixed": {
+   "module": "Becoming.Weightings",
+   "category": "model-witness",
+   "reason": "two formations over three steps, continuations of two and two against three and one: the comparison is mixed; a fact about one constructed listing"
+  },
+  "Becoming.LevelTransfer.decided": {
+   "module": "Becoming.Weightings",
+   "category": "model-witness",
+   "reason": "in the same listing a concave transform ranks the even course higher, the sum of levels ties, a convex transform ranks the uneven higher; computed facts about one listing"
+  },
+  "Becoming.LevelTransfer.by_law": {
+   "module": "Becoming.Weightings",
+   "category": "model-witness",
+   "reason": "in the same listing prior_transfer decides the comparison: the general law applied to one constructed listing"
   }
  },
  "instances": {
