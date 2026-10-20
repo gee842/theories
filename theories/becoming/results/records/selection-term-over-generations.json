@@ -251,6 +251,13 @@
         "en": "Selection on offspring number itself (the variance form), offspring numbers bounded by what is given and taken, and a lineage within a closed family that ends.",
         "zh": "对后代数本身的选择（方差形式）、受给予与所取之量约束的后代数，以及在封闭族内终止的世系。"
       }
+    },
+    {
+      "id": "selection-within-and-among-groups",
+      "detail": {
+        "en": "The selection term divided into selection within groups and among them, for groups of equal size.",
+        "zh": "对等大小之组，选择项分为组内选择与组间选择。"
+      }
     }
   ],
   "references": [
@@ -380,7 +387,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a927d29b0cb6865209957967bcbcdc1899b145c246bfb564f945ddd7c5dac237"
+      "sha256": "e23780bf2177e3ef260700b30e13972ede8433fb8fad1c1a3e0dc0ae12fad328"
     }
   ],
   "proof_bindings": [
@@ -400,6 +407,14 @@
     {
       "en": "20 October 2026, EV2: the variance form and the bound on offspring numbers are stated in Becoming.Reproduction (record what-bounds-offspring-numbers, study section 244); the scope item naming them now points there and the next step is revised. The claim is unchanged.",
       "zh": "2026年10月20日，EV2：方差形式与后代数之界陈述于 Becoming.Reproduction（记录 what-bounds-offspring-numbers，研究第 244 节）；列出它们的范围项现指向那里，下一步相应修订。论断不变。"
+    },
+    {
+      "en": "20 October 2026, EV4: the multilevel form of the selection term is stated in Becoming.SelectionLevels (record selection-within-and-among-groups, study section 248). The claim is unchanged.",
+      "zh": "2026年10月20日，EV4：选择项的多层形式陈述于 Becoming.SelectionLevels（记录 selection-within-and-among-groups，研究第 248 节）。论断不变。"
+    },
+    {
+      "en": "20 October 2026, EV4 and EV5 (selection within and among groups; among groups by ending): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only by EV4's and EV5's additions: in 2.4 a bullet for each of Becoming.SelectionLevels and Becoming.GroupEnding and the record list; two rows of the record table; 8.1 item 9; and section 9's receipt and counts. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月20日，EV4 与 EV5（组内与组间选择；经由终止的组间选择）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只因 EV4 与 EV5 的增补而改动：2.4 的 Becoming.SelectionLevels 与 Becoming.GroupEnding 各一条与记录列表；记录表的两行；8.1 第 9 项；以及第 9 节的回执与计数。重新指向前已读。论断不变。"
     }
   ]
 }

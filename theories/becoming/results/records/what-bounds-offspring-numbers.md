@@ -89,6 +89,7 @@ Aliases: `what bounds offspring numbers`, `什么约束后代数`, `selection on
 ### History
 
 - 20 October 2026: added (EV2), section 8.1 item 9's bound on offspring numbers and the variance form; study section 244.
+- 20 October 2026, EV4 and EV5 (selection within and among groups; among groups by ending): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only by EV4's and EV5's additions: in 2.4 a bullet for each of Becoming.SelectionLevels and Becoming.GroupEnding and the record list; two rows of the record table; 8.1 item 9; and section 9's receipt and counts. Read before re-pointing. The claim is unchanged.
 
 </details>
 

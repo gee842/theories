@@ -53,6 +53,8 @@ import Becoming.Evolution
 import Becoming.Capture
 import Becoming.SelectionTerm
 import Becoming.Reproduction
+import Becoming.SelectionLevels
+import Becoming.GroupEnding
 import Becoming.Space
 import Becoming.Premises
 import Becoming.Sampling
@@ -686,6 +688,29 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   lineage within a family balanced and dissipated on at each step reproduces at most its stock
   many steps and ends; read by offspring number, one that began reproducing has a step at which
   transmission lowered offspring number by more than selection on it and what it raised.
+* `Becoming.SelectionLevels` (L1): selection within groups and among them, the multilevel form
+  of Price's equation (no premise beyond groups of equal size). Over a family listed as k groups
+  of m members, the whole's concordance, with k times the groups' own discordance and the
+  discordance among groups read by their totals, is the whole's discordance with k times the
+  groups' own concordance and the concordance among groups: divided through, the whole's
+  covariance is the mean of the groups' covariances with the covariance of their means. So an
+  amount selected against within the groups is selected for in the whole only where selection
+  among the groups goes for it, and conversely; groups uniform in amount leave only selection
+  among them, groups alike in total only k times selection within. Over listed generations with
+  exact transmission, a generation listed as such groups raises its mean exactly where, read by
+  offspring number, the two levels together select for the amount. Witnesses: two groups of two
+  with one member holding back, the whole going either way.
+* `Becoming.GroupEnding` (L1): selection among groups through conditions of their own. Where
+  every group with less of an amount than another leaves no offspring, nothing is discordant
+  among the groups, so the whole selects for the amount exactly where k times the within-group
+  discordance is below k times the within-group concordance with the concordance among groups,
+  and with groups uniform in it never against it. On the base, where only active formations
+  give, a formation not active leaves no descendant; a member depending on a condition whose
+  gated renewal ran into joint excess leaves none from then on; over generations of descent with
+  exact transmission, where the groups with less of the amount are not active and a group with
+  more leaves offspring, the mean rises; where every member is not active (one condition shared
+  by every group), the next generation is empty. Witnesses: selection within the keeping group
+  outweighed, and outweighing.
 * `Becoming.Space` (L1): the whole and its parts, one structure for Ren's proposal (an AI
   reading). The space is every world, a world being relata read with one kind, their flow
   and their web. The laws stated with no premise hold of every world; in a finite world

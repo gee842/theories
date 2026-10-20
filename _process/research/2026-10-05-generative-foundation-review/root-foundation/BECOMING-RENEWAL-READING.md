@@ -10589,3 +10589,92 @@ Output → input: which of several self-consistent outcomes learners coupled int
 
 Drafted by the CG1 line and applied with R44, which edits the same section and record, so the text
 stands on R44's version rather than beside it.
+
+## 248. Selection within groups and among them (EV4)
+
+```text
+Result(s): the selection term proper of a family listed as k groups of equal size divides exactly into selection
+       within the groups and selection among them: the whole's concordance, with k times the groups' own discordance
+       and the discordance among groups read by their totals, is the whole's discordance with k times the groups'
+       own concordance and the concordance among groups (Becoming.SelectionLevels: levels); so the whole selects for
+       an amount exactly where the two levels together do (rises_iff, none_iff); selected against within the groups
+       it is selected for in the whole only where selection among them goes for it, and conversely
+       (among_for_of_rises, within_for_of_rises); uniform groups leave selection among them alone, groups alike in
+       total k times selection within (levels_of_uniform, levels_of_alike); over listed generations with exact
+       transmission the mean rises exactly where the two levels together select for the amount, read by offspring
+       number (rises_exact_iff_levels, among_for_of_raises); witnesses where the same within-group counts give
+       either verdict (AmongWins, WithinWins); record selection-within-and-among-groups.
+Delta: the evolution chapter's requirements 2 and 4 (recovery of known results; changed units of selection) and the
+       theory's collective concern: Becoming.SelectionTerm read one family; here the family is listed by groups and
+       its selection term divided by level.
+Premises: none beyond groups of equal size for the division and its corollaries; over generations, discrete
+       generations listed as offspring of the last, one generation listed as such groups, exact transmission.
+Evidence: core receipt 20261020T094300.398321Z (passed; Becoming.SelectionLevels 21 theorems in 31 declarations,
+       every axiom report empty; core 275 modules and 10,984 theorems, instances 7 and 567, applications 6 and 179; 7 Lean steps ran, 1,157 reused); the connectivity rerun (529 of 11,730 apart, 11 of the module's 21 (the module has no world; the rest are used by
+       Becoming.GroupEnding's base laws, landed with it), every root registered; register check passes); render, check, links and tests.
+Boundary: natural-number weights and amounts, finite families as lists, groups of equal size (with unequal sizes
+       each group's own term is weighted by the whole's size over the group's, not stated); exact transmission for
+       the generational form. Which level wins is read off the counts; what the groups are, why offspring numbers
+       differ and how groups form, persist or mix are not read. No base reading.
+Output → input: groups read on the base as lineages within their own families (EV2) with what each draws from a
+       shared condition (RB1's DrawnBeyond) would say when selection within groups against keeping a shared condition
+       is outweighed among groups by what the condition supports; unequal sizes; inexact transmission through the
+       transmission term of SelectionTerm.mean_step.
+```
+
+The kit is [`development/ev4-selection-levels/`](development/ev4-selection-levels/): the module's source (`tree/`), its join to the package (`integrate.py`), the apart register's entries (`apart.py`), this landing's text (`apply_text.py`, `study_ev4.txt`) and record (`make_record.py`), and the checker and connectivity logs.
+
+- **The family by groups.** `whole gs` lists the groups one after another; a total over it is the sum of the groups' totals (`whole_total`, by `total_append`), so are its weighted total and its number of members (`whole_weighted`, `whole_length`), and with k groups of m members it has km members (`whole_length_of_equal`).
+- **The division.** Three covariations meet. The whole's (`SelectionTerm.covariation` on `whole gs`, with km members): km times the sum of the groups' weighted totals, with the whole's discordance, is the product of the totals with the whole's concordance. Each group's, summed and multiplied by k: km times the same sum, with k times the groups' discordance, is k times the sum of the groups' products of totals with k times the groups' concordance. The groups', read by their totals: k times that sum of products, with the discordance among groups, is the product of the totals with the concordance among groups. Added, the shared terms cancel (`add_right_cancel` after two rearrangements, `lhs_shape` and `rhs_shape`), leaving `levels`. Over the rationals, dividing by (km)^2 gives the law of total covariance: the whole's covariance is the mean of the groups' covariances with the covariance of the groups' means, Price's partition (1972) of selection into within-group and between-group parts.
+- **Which level wins.** `levels` has the balance form of `lt_iff_of_balance`, so the whole's discordance is below its concordance exactly where k times the groups' discordance with the discordance among groups is below k times the groups' concordance with the concordance among groups (`rises_iff`; `none_iff` for equality). Where the groups' concordance is at most their discordance, the among-group part must carry the inequality (`among_for_of_rises`); where the among-group concordance is at most the discordance, the within-group part must (`within_for_of_rises`, through `lt_of_mul_lt_mul`). Groups uniform in amount have no within-group pairs that differ (`concord_alike`, `discord_alike`, `levels_of_uniform`); groups alike in total have no among-group pairs that differ (`levels_of_alike`).
+- **Over generations.** With exact transmission `Generations.raises_exact_iff` reads the rise of the mean as selection proper on offspring number; with the generation listed as groups (`whole gs = G.family t`), `rises_iff` divides it (`rises_exact_iff_levels`, `among_for_of_raises`).
+- **Witnesses.** Two groups of two, the amount one at a member holding back (`holds`). `AmongWins`: offspring 2 and 3 in its group, none in the other; within, discordance one; among, concordance five; the whole, concordance four against discordance one, so it selects for holding back although every group selects against it. `WithinWins`: the other group leaves three each; among, discordance one, and the whole has discordance three and no concordance. The within-group counts are the same in both: within-group selection does not decide the whole.
+- **Connectivity and naming.** The division holds of any finite family listed by groups, with no world; its roots are registered as general structure and the witnesses as model witnesses (`apart.py`). "Fitness", "altruism" and "group benefit" are not used: the reading is weights and amounts, the witness member "holds back" in the counts only, and nothing ranks the levels.
+
+**Self-review.** The identity is the standard one and the proof is arithmetic; the step taken on the spine is that the selection term proper, already shown to be the covariance in counting form, divides by level with no premise beyond equal sizes, and that this division reads the theory's collective concern exactly: selection within each group against an amount (say, against keeping a shared condition) can be outweighed only among groups. The witnesses are stipulated counts and show both verdicts possible with the same within-group counts, not that either occurs. The generational form inherits exact transmission from `raises_exact_iff`; with inexact transmission the transmission term enters as in `mean_step` and is not divided by level here.
+
+## 249. Selection among groups by ending, through conditions of their own (EV5)
+
+```text
+Result(s): where every group with less of an amount than another leaves no offspring (Ended), nothing is discordant
+       among the groups (Becoming.GroupEnding: among_not_against), so the whole selects for the amount exactly where
+       k times the within-group discordance is below k times the within-group concordance with the concordance among
+       groups (rises_iff_ended), and with groups uniform in it never against it and for it wherever a group with more
+       of it leaves offspring beside one with less (not_against_of_ended, rises_of_ended); on the base, where only
+       active formations give, a formation not active leaves no descendant (Flow.inactive_childless); a member
+       depending on a condition whose gated renewal ran into joint excess leaves none from then on
+       (Flow.excess_childless, through Flow.joint_excess_ends); over generations of descent a group whose members
+       are not active leaves no offspring (Flow.group_childless, Flow.ended_of_inactive), and with exact
+       transmission and uniform groups the mean rises (Flow.raises_of_inactive); where every member is not active,
+       one condition shared by every group having ended them, the next generation is empty (Flow.all_end);
+       witnesses where selection within the keeping group is outweighed and where it outweighs (Outweighed,
+       Outweighs); record selection-among-groups-by-ending.
+Delta: the evolution chapter's next connection 1 (groups on the base): Becoming.SelectionLevels read off the counts
+       which level wins; here the among-group part is fixed by what the base does to groups whose conditions ran
+       into joint excess.
+Premises: groups of equal size for the division; Ended, or on the base: only active formations give (Acting),
+       activity needs support (Dependent) and balance where joint excess enters, each member depending on its
+       group's condition at a need the gate names; over generations, descent (SelectionTerm.Flow.Descended), the
+       generation listed as the groups, exact transmission and groups uniform in the amount where named.
+Evidence: core receipt 20261020T094300.398321Z (passed; Becoming.GroupEnding 19 theorems in 24 declarations, every
+       axiom report empty; core 275 modules and 10,984 theorems, instances 7 and 567, applications 6 and 179; 7 Lean steps ran, 1,157 reused); the connectivity rerun (529 of 11,730 apart, 7 of the module's 19, every root registered; register check passes); render, check, links and tests.
+Boundary: which group's condition runs into joint excess, and why, is a hypothesis; so is that members depend on
+       their own group's condition. The generational law needs uniform groups and exact transmission; with mixed
+       groups the within-group part enters (rises_iff_ended) and can outweigh (Outweighs). Discrete steps,
+       natural-number amounts, finite lists, groups of equal size.
+Output → input: where groups keep conditions of their own, ending is the among-group selection the base supplies;
+       where one condition is shared by every group, its ending ends every group and supplies none (all_end), the
+       base side of the commons test's negative verdict (CG1, D2b). Next: groups whose conditions are coupled
+       (a neighbour reseeding, CG1's scope prediction), inexact transmission (mixing between groups), and how
+       groups form.
+```
+
+The kit is [`development/ev5-group-ending/`](development/ev5-group-ending/): the module's source (`tree/`), its join to the package (`integrate.py`), the apart register's entries (`apart.py`), this landing's text (`apply_text.py`, `study_ev5.txt`) and record (`make_record.py`), and the checker and connectivity logs.
+
+- **Ending decides the among-group part.** `Ended gs w a` says a group with less of the amount than another has weight total nothing. Then no pair of groups is discordant (`discord_zero_of_below` read on group totals: the one with less of the amount has the least weight), so `SelectionLevels.rises_iff` loses its among-group discordance (`rises_iff_ended`). With groups uniform in the amount, `levels_of_uniform` leaves the whole equal to the among-group part, which has no discordance, so the whole never selects against the amount (`not_against_of_ended`); a group with more of it and positive offspring total beside one with less gives one positive concordant pair among groups, through `excess_pos_of_lt` and `pairs_pos` (`rises_of_ended`).
+- **On the base.** `DescendsAt` asks that the parent take part and give; under `Acting` giving makes it active, so a formation not active leaves no descendant (`Flow.inactive_childless`). `Flow.joint_excess_ends` makes every formation depending on the condition at a need of at least `m` inactive from `T + n` on, so it leaves no descendant there (`Flow.excess_childless`). Over generations of descent an inactive member has no kids (`Flow.offspring_zero`), a group of them has offspring total nothing (`Flow.group_childless`), and with the groups listed as the generation (`mem_whole`) `Ended` holds wherever the groups with less of the amount are inactive (`Flow.ended_of_inactive`). Through `Generations.raises_exact_iff` the mean then rises (`Flow.raises_of_inactive`).
+- **One shared condition.** If every member of a generation is inactive, every offspring number is nothing and by `born_eq` the next generation is empty (`Flow.all_end`): where every group depends on one condition that ran into joint excess, there is no group left to select among.
+- **Witnesses.** The groups of `SelectionLevels`' witnesses, read with `keeps` (one at both members of the first group). `Outweighed`: offspring 1 and 2 in the keeping group, none in the other; within, discordance one for holding back; among, concordance three; the whole, concordance two against one, and read with keeping the whole selects for it (`keeping_rises`). `Outweighs`: the groupmate leaves five; within, discordance four, so k times it (eight) exceeds the among-group concordance six, and the whole goes against holding back (concordance two, discordance four) although the other group ended.
+- **Connectivity and naming.** The base laws (`Flow.*`) go through `Flow.Acting`, `DescendsAt` and the gated laws; the counting laws are used by them. "Altruism", "cooperation" and "group benefit" are not used: the reading is keeping (holding back from a condition) in the counts, and nothing ranks the levels.
+
+**Self-review.** The counting step is short: ending removes the among-group discordance. What the module adds is the base reason for it, through the existing gated-renewal law and the definition of descent, and the shared-condition corollary, which says exactly why one commons shared by every group gives no among-group selection that keeps it. The generational law assumes uniform groups and exact transmission, which keep within-group selection out; `Outweighs` shows that with a mixed surviving group the within part can win. Which groups' conditions run into joint excess is supposed, not derived; the witnesses are counts, not worlds.

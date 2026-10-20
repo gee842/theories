@@ -1,0 +1,270 @@
+{
+  "schema_version": 2,
+  "id": "selection-within-and-among-groups",
+  "title": {
+    "en": "Selection within groups and among them",
+    "zh": "组内选择与组间选择"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-20T09:46:22+00:00",
+  "statement": {
+    "en": "For a family listed as groups of equal size, the selection term proper divides exactly into selection within the groups and selection among them; an amount selected against within every group is selected for in the whole only where selection among groups goes for it.",
+    "zh": "对列为等大小之组的族，真正的选择项恰好分为组内选择与组间选择；在各组内被逆向选择之量，只在组间选择偏向它时才在整体中被选择。"
+  },
+  "laws": [
+    {
+      "en": "A family listed group by group has as its totals, weighted total and number of members the sums of the groups'; with k groups of m members each it has k times m members.",
+      "zh": "逐组列出的族，其总量、加权总量与成员数是各组的之和；k 个组各有 m 个成员时，族有 k 乘 m 个成员。",
+      "declarations": [
+        "Becoming.SelectionLevels.whole_total",
+        "Becoming.SelectionLevels.whole_weighted",
+        "Becoming.SelectionLevels.whole_length",
+        "Becoming.SelectionLevels.total_eq_of_mem",
+        "Becoming.SelectionLevels.whole_length_of_equal"
+      ]
+    },
+    {
+      "en": "With no premise beyond groups of equal size: the whole's concordance, with k times the groups' own discordance and the discordance among groups read by their totals, is the whole's discordance with k times the groups' own concordance and the concordance among groups. Divided through, the whole's covariance of weight and amount is the mean of the groups' covariances with the covariance of their means.",
+      "zh": "除各组大小相等外不加前提：整体的一致度，加上 k 倍各组自身的不一致度与以组总量读的组间不一致度，等于整体的不一致度加上 k 倍各组自身的一致度与组间一致度。除尽后，整体的协方差等于各组协方差的均值加组均值的协方差。",
+      "declarations": [
+        "Becoming.SelectionLevels.levels",
+        "Becoming.SelectionLevels.lhs_shape",
+        "Becoming.SelectionLevels.rhs_shape"
+      ]
+    },
+    {
+      "en": "So the whole selects for the amount exactly where the two levels together do, and nothing exactly where they balance. Selected against within the groups, an amount is selected for in the whole only where selection among the groups goes for it; selected against among them, only where selection within goes for it.",
+      "zh": "故整体恰在两层合起来选择某量时选择它，恰在两层相抵时不选择。在组内被逆向选择之量，只在组间选择偏向它时才在整体中被选择；在组间被逆向选择之量，只在组内选择偏向它时。",
+      "declarations": [
+        "Becoming.SelectionLevels.rises_iff",
+        "Becoming.SelectionLevels.none_iff",
+        "Becoming.SelectionLevels.among_for_of_rises",
+        "Becoming.SelectionLevels.within_for_of_rises"
+      ]
+    },
+    {
+      "en": "Where every group is uniform in amount nothing is selected within them and the whole's selection is selection among groups alone; where the groups' totals are alike nothing is selected among them and the whole's selection is k times selection within.",
+      "zh": "每组在该量上均匀之处，组内无选择，整体的选择只是组间选择；各组总量相同之处，组间无选择，整体的选择是 k 倍组内选择。",
+      "declarations": [
+        "Becoming.SelectionLevels.within_none_of_uniform",
+        "Becoming.SelectionLevels.levels_of_uniform",
+        "Becoming.SelectionLevels.among_none_of_alike",
+        "Becoming.SelectionLevels.levels_of_alike"
+      ]
+    },
+    {
+      "en": "Over listed generations with exact transmission, a generation listed as groups of equal size raises its mean amount across the step exactly where, read by offspring number, the two levels together select for the amount; selected against within the groups, its mean rises only where selection among them goes for it.",
+      "zh": "在传递精确的列出世代中，列为等大小之组的一代，其平均量跨一步恰在以后代数读的两层合起来选择该量时上升；在组内被逆向选择时，其均值只在组间选择偏向它时上升。",
+      "declarations": [
+        "Becoming.SelectionLevels.rises_exact_iff_levels",
+        "Becoming.SelectionLevels.among_for_of_raises"
+      ]
+    },
+    {
+      "en": "Witnesses: two groups of two, the amount one at a member holding back. It leaves fewer offspring than its groupmate, so selection within goes against it; where the other group leaves none, selection among groups goes for it and the whole selects for it; where the other group leaves three each, both levels go against it and so does the whole.",
+      "zh": "见证：两个两人组，保留者处该量为一。它留下的后代少于同组者，故组内选择逆向于它；另一组无后代时，组间选择偏向它，整体选择它；另一组每人留下三个时，两层皆逆向于它，整体亦然。",
+      "declarations": [
+        "Becoming.SelectionLevels.equal",
+        "Becoming.SelectionLevels.AmongWins.among_wins",
+        "Becoming.SelectionLevels.WithinWins.within_wins"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Any finite family listed as groups, natural-number weights and amounts; groups of equal size for the division and what follows from it. Over generations: discrete generations listed as offspring of the last, one generation listed as such groups, exact transmission where named.",
+      "zh": "不加公理。任意列为组的有限族、自然数权重与量；划分及其推论需各组大小相等。世代：离散的世代，每一代列为上一代的后代，其中一代列为这样的组，所列处传递精确。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Groups of unequal size: there the division weights each group's own term by the whole's size over the group's, which is not stated.",
+      "zh": "大小不等的组：此时划分以整体规模比组规模来加权各组自身的项，未陈述。",
+      "kind": "scope"
+    },
+    {
+      "en": "What the groups are, why their members' offspring numbers differ, or how groups form, persist or mix: which level wins is read off the counts, not explained. No base reading (groups as lineages within their own families) is given.",
+      "zh": "组是什么、其成员的后代数为何不同、组如何形成、持续或混合：哪一层胜出是从计数读出的，不是解释。未给出流上的读法（组为各自族内的世系）。",
+      "kind": "scope"
+    },
+    {
+      "en": "Transmission that is not exact: the generational form is stated with exact transmission only.",
+      "zh": "不精确的传递：世代形式只在传递精确时陈述。",
+      "kind": "scope"
+    },
+    {
+      "en": "That selection among groups ought to win, or that holding back is better: the division is an identity of counts; ranking goes through the comparison C, not through it.",
+      "zh": "组间选择应当胜出，或保留更好：划分是计数的恒等式；排序经由比较 C，不经由它。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionLevels.lean",
+      "detail": {
+        "en": "Selection within the groups against an amount does not decide the whole: with the same groups and the same within-group counts the whole selects for it (AmongWins.among_wins) or against it (WithinWins.within_wins), according to selection among the groups.",
+        "zh": "组内对某量的逆向选择不决定整体：同样的组、同样的组内计数，整体选择它（AmongWins.among_wins）或逆向于它（WithinWins.within_wins），取决于组间选择。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T094300.398321Z): the 31 declarations of Becoming.SelectionLevels, 21 of them theorems, have empty axiom reports; the checker verifies core purity. Built and reviewed in one session, with no separate reviewer; author review in study section 248; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T094300.398321Z）：Becoming.SelectionLevels 的 31 项声明（21 项定理）公理报告为空；检查器并核对核心纯净。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 248 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Groups of unequal size; groups read on the base as lineages within their own families, with what each draws from a shared condition (DrawnBeyond); transmission that is not exact; an independent review.",
+    "zh": "大小不等的组；在流上把组读作各自族内的世系，连同各自从共同条件所取之量（DrawnBeyond）；不精确的传递；独立审查。"
+  },
+  "correspondence": {
+    "en": "The multilevel form of Price's equation (Price 1972; Hamilton 1975), the law of total covariance: with equal group sizes, Cov(w, z) = E_g[Cov_g(w, z)] + Cov_g(E[w], E[z]). levels is this with denominators cleared over ordered pairs (the whole's pairs number (km)^2, a group's m^2, the groups' k^2). Readings (the AI's): where selection within each group goes against what keeps a shared condition, the whole keeps it only through selection among groups.",
+    "zh": "Price 方程的多层形式（Price 1972；Hamilton 1975），即总协方差律：组大小相等时，Cov(w, z) = E_g[Cov_g(w, z)] + Cov_g(E[w], E[z])。levels 是它在有序对上消去分母的形式（整体的对数为 (km)^2，一组为 m^2，组间为 k^2）。读法（AI 的）：在每组内的选择逆向于维持共同条件之物处，整体只经由组间选择维持它。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionLevels.lean",
+  "aliases": [
+    "selection within groups and among them",
+    "组内选择与组间选择",
+    "multilevel Price equation",
+    "multilevel selection",
+    "law of total covariance",
+    "Becoming.SelectionLevels.levels",
+    "Becoming.SelectionLevels.among_for_of_rises",
+    "Becoming.SelectionLevels.rises_exact_iff_levels"
+  ],
+  "dependencies": [
+    {
+      "id": "selection-term-over-generations",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Becoming.SelectionTerm's covariation (applied to the whole, to each group and to the groups read by their totals), its balance lemmas, uniform-amount laws, listed generations and exact transmission (Generations.raises_exact_iff).",
+        "zh": "复用 Becoming.SelectionTerm 的协变（用于整体、各组与以总量读的组）、其平衡引理、均匀量之律、列出的世代与精确传递（Generations.raises_exact_iff）。"
+      },
+      "interface": {
+        "output": {
+          "en": "The selection term proper of any finite family, and its course over generations.",
+          "zh": "任意有限族的真正选择项，及其在世代中的进程。"
+        },
+        "input": {
+          "en": "The selection term divided by level: within groups and among them.",
+          "zh": "按层划分的选择项：组内与组间。"
+        },
+        "conditions": {
+          "en": "Groups of equal size; exact transmission where named.",
+          "zh": "各组大小相等；所列处传递精确。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionTerm.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "selection-term-over-generations",
+      "detail": {
+        "en": "The selection term proper divided by level.",
+        "zh": "按层划分的真正选择项。"
+      }
+    },
+    {
+      "id": "evolution-on-descent",
+      "detail": {
+        "en": "Selection over generations read where a generation is listed as groups.",
+        "zh": "一代列为组时所读的世代选择。"
+      }
+    },
+    {
+      "id": "selection-among-groups-by-ending",
+      "detail": {
+        "en": "The among-group part fixed by ending: groups whose own condition ran into joint excess leave no offspring.",
+        "zh": "由终止所定的组间部分：自身条件遭遇共同过度的组不留后代。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionLevels.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.SelectionLevels.AmongWins.among_wins",
+        "Becoming.SelectionLevels.AmongWins.offspring",
+        "Becoming.SelectionLevels.Member",
+        "Becoming.SelectionLevels.WithinWins.offspring",
+        "Becoming.SelectionLevels.WithinWins.within_wins",
+        "Becoming.SelectionLevels.among_for_of_raises",
+        "Becoming.SelectionLevels.among_for_of_rises",
+        "Becoming.SelectionLevels.among_none_of_alike",
+        "Becoming.SelectionLevels.concordAmong",
+        "Becoming.SelectionLevels.concordWithin",
+        "Becoming.SelectionLevels.discordAmong",
+        "Becoming.SelectionLevels.discordWithin",
+        "Becoming.SelectionLevels.equal",
+        "Becoming.SelectionLevels.groups",
+        "Becoming.SelectionLevels.holds",
+        "Becoming.SelectionLevels.levels",
+        "Becoming.SelectionLevels.levels_of_alike",
+        "Becoming.SelectionLevels.levels_of_uniform",
+        "Becoming.SelectionLevels.lhs_shape",
+        "Becoming.SelectionLevels.none_iff",
+        "Becoming.SelectionLevels.rhs_shape",
+        "Becoming.SelectionLevels.rises_exact_iff_levels",
+        "Becoming.SelectionLevels.rises_iff",
+        "Becoming.SelectionLevels.total_eq_of_mem",
+        "Becoming.SelectionLevels.whole",
+        "Becoming.SelectionLevels.whole_length",
+        "Becoming.SelectionLevels.whole_length_of_equal",
+        "Becoming.SelectionLevels.whole_total",
+        "Becoming.SelectionLevels.whole_weighted",
+        "Becoming.SelectionLevels.within_for_of_rises",
+        "Becoming.SelectionLevels.within_none_of_uniform"
+      ],
+      "sha256": "246a8b7e2e1f643c44626e6a5991ec412293fda673422002878d30e2029e6602"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionTerm.lean",
+      "role": "proof",
+      "sha256": "d15e7af183adb0363e93f83759c0e2a9f4d1f94b40f331067e6d339d431dc8fe"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T094300.398321Z/verification.json",
+      "role": "receipt",
+      "sha256": "b1f3534320c36f0e4151b30f17ae3f73d3b424f03a10ae1b6090caa49e2c64e7"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "9882edf7d8c09d386564f021a713cfe37b65421b3415753af0019ad2f2a867c9"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "e23780bf2177e3ef260700b30e13972ede8433fb8fad1c1a3e0dc0ae12fad328"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionLevels.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T094300.398321Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SelectionLevels",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "20 October 2026: added (EV4), the multilevel form of the selection term; study section 248.",
+      "zh": "2026年10月20日：新增（EV4），选择项的多层形式；研究第 248 节。"
+    },
+    {
+      "en": "20 October 2026, EV5: the base reading of groups, by ending, is stated in Becoming.GroupEnding (record selection-among-groups-by-ending, study section 249). The claim is unchanged.",
+      "zh": "2026年10月20日，EV5：组在流上的读法（经由终止）陈述于 Becoming.GroupEnding（记录 selection-among-groups-by-ending，研究第 249 节）。论断不变。"
+    }
+  ]
+}

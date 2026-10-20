@@ -378,6 +378,8 @@
         "evolution-on-descent",
         "selection-term-over-generations",
         "what-bounds-offspring-numbers",
+        "selection-within-and-among-groups",
+        "selection-among-groups-by-ending",
         "transmission-is-inheritance-and-need"
       ],
       "declarations": [
@@ -391,7 +393,13 @@
         "Becoming.SelectionTerm.Flow.support_moved_rises",
         "Becoming.Reproduction.Flow.number_within_take",
         "Becoming.Reproduction.Flow.lineage_ends",
-        "Becoming.Reproduction.Flow.closed_lineage_lowered"
+        "Becoming.Reproduction.Flow.closed_lineage_lowered",
+        "Becoming.SelectionLevels.levels",
+        "Becoming.SelectionLevels.among_for_of_rises",
+        "Becoming.SelectionLevels.rises_exact_iff_levels",
+        "Becoming.GroupEnding.rises_iff_ended",
+        "Becoming.GroupEnding.Flow.excess_childless",
+        "Becoming.GroupEnding.Flow.all_end"
       ],
       "status": "proved",
       "open_items": [

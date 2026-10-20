@@ -1,0 +1,18 @@
+{
+ "Becoming.SelectionLevels.equal": {
+  "module": "Becoming.SelectionLevels",
+  "category": "model-witness",
+  "reason": "the two groups of the witnesses have two members each; a fact about one constructed listing, not a law of the unfolding"
+ },
+ "Becoming.SelectionLevels.levels_of_uniform": {
+  "module": "Becoming.SelectionLevels",
+  "category": "general-structure",
+  "reason": "with groups uniform in amount the whole's selection is selection among groups alone: a law of any finite family listed as groups of equal size and read with weights and amounts, with no world; a generation of descent listed by groups, read by offspring number, is one case"
+ },
+ "Becoming.Requirement.Handover.expansion_has_real_gain": {
+  "module": "Becoming.Frontier",
+  "category": "model-witness",
+  "reason": "a fact about the constructed handover model: expansion realizes a gain the alternative lacks (AlignmentDirection, ported by F3J)",
+  "retired_by": "EV4/EV5 landing: no longer an apart root after R44 (a core instance uses it)"
+ }
+}

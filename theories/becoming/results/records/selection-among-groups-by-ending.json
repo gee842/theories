@@ -1,0 +1,281 @@
+{
+  "schema_version": 2,
+  "id": "selection-among-groups-by-ending",
+  "title": {
+    "en": "Selection among groups by ending",
+    "zh": "经由终止的组间选择"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-20T09:46:23+00:00",
+  "statement": {
+    "en": "Where groups with less of an amount leave no offspring, nothing is selected against it among groups; on the base, a group whose own condition ran into joint excess leaves none. One condition shared by every group ends every group, so it supplies no selection among them.",
+    "zh": "某量较少的组不留后代时，组间无逆向于它的选择；在流上，自身条件遭遇共同过度的组不留后代。每个组共享的一个条件终止每个组，故不提供组间选择。"
+  },
+  "laws": [
+    {
+      "en": "Where every group with less of an amount than another leaves no offspring, nothing is discordant among the groups; so the whole selects for the amount exactly where k times the within-group discordance is below k times the within-group concordance with the concordance among groups.",
+      "zh": "每个某量少于另一组的组都不留后代时，组间无不一致；故整体恰在 k 倍组内不一致度低于 k 倍组内一致度加组间一致度时选择该量。",
+      "declarations": [
+        "Becoming.GroupEnding.Ended",
+        "Becoming.GroupEnding.excess_pos_of_lt",
+        "Becoming.GroupEnding.among_not_against",
+        "Becoming.GroupEnding.rises_iff_ended"
+      ]
+    },
+    {
+      "en": "With groups uniform in the amount as well, the whole never selects against it, and selects for it wherever a group with more of it leaves offspring beside one with less.",
+      "zh": "各组在该量上也均匀时，整体从不逆向于它；凡有某量较多且留下后代的组与较少的组并存，整体就选择它。",
+      "declarations": [
+        "Becoming.GroupEnding.not_against_of_ended",
+        "Becoming.GroupEnding.pairs_pos",
+        "Becoming.GroupEnding.rises_of_ended"
+      ]
+    },
+    {
+      "en": "Where only active formations give, a formation not active at a step leaves no descendant across it; a member depending, at a need of at least m, on a condition whose gated renewal ran into joint excess leaves none from then on.",
+      "zh": "只有活跃的形成给予时，在某一步不活跃的形成不跨该步留下后代；以至少 m 的需要依存于其门控更新遭遇共同过度之条件的成员，此后不留后代。",
+      "declarations": [
+        "Becoming.GroupEnding.Flow.inactive_childless",
+        "Becoming.GroupEnding.Flow.excess_childless"
+      ]
+    },
+    {
+      "en": "Over generations of descent a member not active has offspring number nothing, a group of such members leaves no offspring, and where the groups with less of the amount are such groups, those groups leave nothing.",
+      "zh": "在世系世代中，不活跃的成员后代数为零，由这样的成员组成的组不留后代；某量较少的组皆为这样的组时，它们不留任何后代。",
+      "declarations": [
+        "Becoming.GroupEnding.Flow.offspring_zero",
+        "Becoming.GroupEnding.Flow.group_childless",
+        "Becoming.GroupEnding.mem_whole",
+        "Becoming.GroupEnding.Flow.ended_of_inactive"
+      ]
+    },
+    {
+      "en": "With exact transmission and groups uniform in the amount, where the groups with less of it are not active and a group with more of it leaves offspring beside one with less, the mean amount rises across the step.",
+      "zh": "传递精确且各组在该量上均匀时，若某量较少的组不活跃，且有某量较多、留下后代的组与较少的组并存，则平均量跨该步上升。",
+      "declarations": [
+        "Becoming.GroupEnding.Flow.raises_of_inactive"
+      ]
+    },
+    {
+      "en": "Where every member of a generation is not active, as where every group depends on one condition that ran into joint excess, the next generation is empty: one shared condition leaves no group to select among.",
+      "zh": "一代的每个成员都不活跃时，例如每个组都依存于同一个遭遇共同过度的条件，下一代为空：一个共同条件不留下可供组间选择的组。",
+      "declarations": [
+        "Becoming.GroupEnding.Flow.all_end"
+      ]
+    },
+    {
+      "en": "Witnesses: the keeping group and a group whose condition ended. With the member holding back leaving one offspring and its groupmate two, selection among groups outweighs selection within and the whole selects for holding back; with the groupmate leaving five, selection within outweighs and the whole goes against it.",
+      "zh": "见证：保持之组与条件已终止之组。保留者留下一个后代、同组者两个时，组间选择胜过组内选择，整体选择保留；同组者留下五个时，组内选择胜出，整体逆向于保留。",
+      "declarations": [
+        "Becoming.GroupEnding.keepingFirst",
+        "Becoming.GroupEnding.keeps",
+        "Becoming.GroupEnding.uniform",
+        "Becoming.GroupEnding.equal",
+        "Becoming.GroupEnding.Outweighed.outweighed",
+        "Becoming.GroupEnding.Outweighed.keeping_rises",
+        "Becoming.GroupEnding.Outweighs.outweighs"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Groups of equal size for the division. On the base: only active formations give, activity needs support, balance at the condition, the gate (whatever gives to it depends on it at a need of at least m), n steps of joint excess from a level below n + m, members depending on the condition at such a need. Over generations: descent, the generation listed as the groups, groups uniform in the amount and exact transmission where named.",
+      "zh": "不加公理。划分需各组大小相等。流上：只有活跃的形成给予、活动需要支持、该条件处的平衡、门控（给予它的都以至少 m 的需要依存于它）、自低于 n + m 的水平起 n 步共同过度、成员以这样的需要依存于该条件。世代：世系、该代列为这些组、所列处各组在该量上均匀且传递精确。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Which group's condition runs into joint excess, or why: it is a hypothesis wherever it enters, as is that members depend on their own group's condition.",
+      "zh": "哪个组的条件遭遇共同过度，或为什么：凡出现处都是假设；成员依存于本组条件亦然。",
+      "kind": "scope"
+    },
+    {
+      "en": "Mixed groups and inexact transmission: there selection within the surviving groups enters and can outweigh (Outweighs); mixing between groups and groups whose conditions are coupled are not stated.",
+      "zh": "混合的组与不精确的传递：此时幸存组内的选择进入并可能胜出（Outweighs）；组间混合与条件相互耦合的组未陈述。",
+      "kind": "scope"
+    },
+    {
+      "en": "How groups form, or that keeping a condition is better: ending is read in the counts; ranking goes through the comparison C.",
+      "zh": "组如何形成，或维持条件更好：终止在计数中读出；排序经由比较 C。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean",
+      "detail": {
+        "en": "Ending among groups does not decide the whole: with the other group ended, a groupmate leaving five against one holding back leaving one makes the whole select against holding back (Outweighs.outweighs).",
+        "zh": "组间的终止不决定整体：另一组已终止时，同组者留下五个、保留者留下一个，使整体逆向于保留（Outweighs.outweighs）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T094300.398321Z): the 24 declarations of Becoming.GroupEnding, 19 of them theorems, have empty axiom reports; the checker verifies core purity. Built and reviewed in one session, with no separate reviewer; author review in study section 249; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T094300.398321Z）：Becoming.GroupEnding 的 24 项声明（19 项定理）公理报告为空；检查器并核对核心纯净。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 249 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Groups whose conditions are coupled (a neighbour reseeding); mixing between groups; how groups form; an independent review.",
+    "zh": "条件相互耦合的组（邻居补种）；组间混合；组如何形成；独立审查。"
+  },
+  "correspondence": {
+    "en": "Group selection by differential extinction (Wright 1945; Levins 1970 on metapopulation extinction; Wilson and Sober 1994): groups whose members overuse a resource of their own go extinct, while within each group selection may favour overuse. Here extinction is the gated ending of the group's own condition, and the shared-condition corollary is the tragedy of the commons read with descent (Hardin 1968). Readings (the AI's): a condition of one's own is what lets ending select among groups; a commons shared by all ends all.",
+    "zh": "经由差异性灭绝的组选择（Wright 1945；Levins 1970 论集合种群灭绝；Wilson 与 Sober 1994）：成员过度使用自身资源的组灭绝，而各组内的选择可能偏向过度使用。此处灭绝即组自身条件的门控终止；共同条件的推论即连同世系读出的公地悲剧（Hardin 1968）。读法（AI 的）：自身的条件使终止能在组间选择；所有人共享的公地终止所有人。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean",
+  "aliases": [
+    "selection among groups by ending",
+    "经由终止的组间选择",
+    "group selection by extinction",
+    "Becoming.GroupEnding.rises_iff_ended",
+    "Becoming.GroupEnding.Flow.excess_childless",
+    "Becoming.GroupEnding.Flow.raises_of_inactive",
+    "Becoming.GroupEnding.Flow.all_end"
+  ],
+  "dependencies": [
+    {
+      "id": "selection-within-and-among-groups",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Becoming.SelectionLevels' division of the selection term (levels, rises_iff, levels_of_uniform) and the family listed by groups (whole).",
+        "zh": "复用 Becoming.SelectionLevels 对选择项的划分（levels、rises_iff、levels_of_uniform）与逐组列出的族（whole）。"
+      },
+      "interface": {
+        "output": {
+          "en": "The selection term divided into within-group and among-group parts.",
+          "zh": "分为组内与组间两部分的选择项。"
+        },
+        "input": {
+          "en": "The among-group part fixed by ending.",
+          "zh": "由终止所定的组间部分。"
+        },
+        "conditions": {
+          "en": "Groups of equal size.",
+          "zh": "各组大小相等。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionLevels.lean"
+      }
+    },
+    {
+      "id": "own-count-misses-joint-excess",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Becoming.Continuation's Flow.joint_excess_ends: joint excess ends gated renewal and every formation depending on the condition at such a need.",
+        "zh": "复用 Becoming.Continuation 的 Flow.joint_excess_ends：共同过度终止门控更新，以及以这样的需要依存于该条件的每个形成。"
+      },
+      "interface": {
+        "output": {
+          "en": "Members depending on a condition that ran into joint excess are not active from then on.",
+          "zh": "依存于遭遇共同过度之条件的成员此后不活跃。"
+        },
+        "input": {
+          "en": "Such members leave no descendants, and their group no offspring.",
+          "zh": "这样的成员不留后代，其组不留后代。"
+        },
+        "conditions": {
+          "en": "Balance, only active formations giving, activity needing support, the gate.",
+          "zh": "平衡、只有活跃的形成给予、活动需要支持、门控。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "selection-within-and-among-groups",
+      "detail": {
+        "en": "Its among-group part fixed by ending on the base.",
+        "zh": "其组间部分由流上的终止所定。"
+      }
+    },
+    {
+      "id": "what-bounds-offspring-numbers",
+      "detail": {
+        "en": "Lineages ending within closed families, read here for groups on conditions of their own.",
+        "zh": "在封闭族内终止的世系，此处对依存于自身条件的组读出。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.GroupEnding.Ended",
+        "Becoming.GroupEnding.Flow.all_end",
+        "Becoming.GroupEnding.Flow.ended_of_inactive",
+        "Becoming.GroupEnding.Flow.excess_childless",
+        "Becoming.GroupEnding.Flow.group_childless",
+        "Becoming.GroupEnding.Flow.inactive_childless",
+        "Becoming.GroupEnding.Flow.offspring_zero",
+        "Becoming.GroupEnding.Flow.raises_of_inactive",
+        "Becoming.GroupEnding.Outweighed.keeping_rises",
+        "Becoming.GroupEnding.Outweighed.offspring",
+        "Becoming.GroupEnding.Outweighed.outweighed",
+        "Becoming.GroupEnding.Outweighs.offspring",
+        "Becoming.GroupEnding.Outweighs.outweighs",
+        "Becoming.GroupEnding.among_not_against",
+        "Becoming.GroupEnding.equal",
+        "Becoming.GroupEnding.excess_pos_of_lt",
+        "Becoming.GroupEnding.keepingFirst",
+        "Becoming.GroupEnding.keeps",
+        "Becoming.GroupEnding.mem_whole",
+        "Becoming.GroupEnding.not_against_of_ended",
+        "Becoming.GroupEnding.pairs_pos",
+        "Becoming.GroupEnding.rises_iff_ended",
+        "Becoming.GroupEnding.rises_of_ended",
+        "Becoming.GroupEnding.uniform"
+      ],
+      "sha256": "7d0f60ebe4fe95a87b8312af2916172afb185f69a36733af84a03b5ccb5d8595"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionLevels.lean",
+      "role": "proof",
+      "sha256": "246a8b7e2e1f643c44626e6a5991ec412293fda673422002878d30e2029e6602"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "b7405bce742da657308ed1cb3a962823d9aaa3a560f9aaa92b1c3ad1338b4ed1"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T094300.398321Z/verification.json",
+      "role": "receipt",
+      "sha256": "b1f3534320c36f0e4151b30f17ae3f73d3b424f03a10ae1b6090caa49e2c64e7"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "9882edf7d8c09d386564f021a713cfe37b65421b3415753af0019ad2f2a867c9"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "e23780bf2177e3ef260700b30e13972ede8433fb8fad1c1a3e0dc0ae12fad328"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T094300.398321Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.GroupEnding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "20 October 2026: added (EV5), selection among groups fixed by ending on the base; study section 249.",
+      "zh": "2026年10月20日：新增（EV5），由流上的终止所定的组间选择；研究第 249 节。"
+    }
+  ]
+}
