@@ -15,7 +15,7 @@ module states both on `Pace.paced`, with no premise beyond the hypotheses each s
   what lies beyond (`Unread`), two courses from starts alike in share and rule have the same share
   and the same rule at every step, whatever lies beyond (`unread_course`). The share's own
   two-level law with a step beyond it (`join`, `joinRead`) runs the share and the rule exactly as
-  the share's law alone does (`join_course`). Conversely, courses from starts alike in share and
+  the share's law alone does (`join_course`), whatever its loss at the start (`join_alike`). Conversely, courses from starts alike in share and
   rule that come apart in either read beyond the share (`reads_beyond_of_apart`).
 * **A locked loop outlives its loss.** Where every step adds at least one to what lies beyond
   (`Accrues`), from a locked configuration the loss at step `t` is at least `t` above where it
@@ -117,6 +117,16 @@ def joinRead (hA : A → R → R) (p : A × B) (g : R) : R := hA p.1 g
 theorem join_unread (fA : A → R → A) (fB : A × B → R → B) (hA : A → R → R) :
     Unread (join fA fB) (joinRead hA) :=
   ⟨fun _ _ _ _ => rfl, fun _ _ _ _ => rfl⟩
+
+/-- **The loss's start changes nothing in the joined loop**: joined courses from starts differing only
+in what lies beyond have the same share and the same rule at every step. -/
+theorem join_alike (fA : A → R → A) (fB : A × B → R → B) (hA : A → R → R) (reads : Nat → Bool) (a : A)
+    (b b' : B) (g : R) (t : Nat) :
+    (paced (join fA fB) (joinRead hA) reads ((a, b), g) t).1.1 =
+        (paced (join fA fB) (joinRead hA) reads ((a, b'), g) t).1.1 ∧
+      (paced (join fA fB) (joinRead hA) reads ((a, b), g) t).2 =
+        (paced (join fA fB) (joinRead hA) reads ((a, b'), g) t).2 :=
+  unread_course (c := ((a, b), g)) (c' := ((a, b'), g)) (join_unread fA fB hA) reads rfl rfl t
 
 /-- One joined turn is the share's own turn on the share and the rule. -/
 theorem turn_join (fA : A → R → A) (fB : A × B → R → B) (hA : A → R → R) :

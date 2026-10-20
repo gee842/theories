@@ -78,7 +78,7 @@ laws = [
      '回路不读的不改变它：在 Pace 的两速历程上，快构形为一对，即份额与份额之外者；下一份额与读出的规则都不读份额之外者时（Unread），'
      '份额与规则相同的起点，其进程每一步在两者上都相同；分开了的进程读份额之外者；带份额之外一步的合并之律与份额自身之律同样运行。',
      [C + 'Unread', C + 'turn_unread', C + 'unread_course', C + 'reads_beyond_of_apart', C + 'join', C + 'joinRead',
-      C + 'join_unread', C + 'turn_join', C + 'join_course']),
+      C + 'join_unread', C + 'join_alike', C + 'turn_join', C + 'join_course']),
     ('A locked loop outlives its loss: where every step adds at least one to what lies beyond (Accrues), from a locked '
      'configuration the loss at step t is at least t above where it started, so it passes every bound, while the course '
      'stays locked and neither the share nor the rule is ever below where it started.',
