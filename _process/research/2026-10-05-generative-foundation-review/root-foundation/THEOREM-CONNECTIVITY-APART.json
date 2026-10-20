@@ -1117,11 +1117,6 @@
    "category": "support",
    "reason": "a list lemma proved without `propext`: a filter every member passes keeps the list (F3C's constructive support for the family)"
   },
-  "Becoming.Naturals.ne_of_lt": {
-   "module": "Becoming.Prelude",
-   "category": "support",
-   "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
-  },
   "Becoming.PooledEnvelopes.diagnosis_not_identifying": {
    "module": "Becoming.PooledEnvelopes",
    "category": "model-witness",
@@ -1876,6 +1871,11 @@
    "module": "Becoming.Interleavings",
    "category": "model-witness",
    "reason": "the lists [2] and [] of the pair give every relatum the same own course, while [2] has at step 0 an exchange that [] has at no step: a fact about one constructed model, showing the premise `Touching` of the renumbering is needed"
+  },
+  "Becoming.Halving.stock_unlisted": {
+   "module": "Becoming.LeastLoss",
+   "category": "model-witness",
+   "reason": "the halving stock in one constructed model of the amounts has values no list holds, read through Amounts.rests_of_finite_reading: falls that recur need an unbounded reading; a fact about one model, which the base does not read"
   }
  },
  "instances": {
