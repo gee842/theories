@@ -114,7 +114,8 @@ strength of `Becoming.Propagation`, and around a cycle the product of the coupli
   balance on a condition and, from step `s`, their exchanges respond to the gap between the two
   courses by a map `f` (`LoopReturn.RespondsByReturn`: each course's level with what it gives and
   what the other takes stand at `f` of the gap), the gap at `s + n` is `f`'s course after `n` turns,
-  one turn a step (`LoopReturn.gap_course`, from `LoopReturn.gap_succ`). A response linear in the
+  one turn a step (`LoopReturn.gap_course`, from `LoopReturn.gap_succ`); the premise is exactly
+  that the gap after each step is `f` of the gap before (`LoopReturn.responds_iff`). A response linear in the
   gap is a loop of multiplying links: the gap is the product of the factors to the `n` times the
   gap at `s` (`LoopReturn.gap_scaling`), so `whole_factors` applies. In Rejoining's witness the
   responder's exchange responds by taking one off from the act on
@@ -966,6 +967,17 @@ theorem gap_succ {F C : Type} {L L' : Flow F C} {W W' : Web F C} {c : C} {t : Na
   (gap_add_right _ _ _).symm.trans (Naturals.add_congr
     (congr (congrArg HSub.hSub first) second) (congr (congrArg HSub.hSub second) first))
 
+/-- **The premise is exactly the gap's step.** Where two flows balance on `c` at every step, their
+exchanges respond to the gap by `f` from step `s` exactly where, across every step from `s`, the
+gap after is `f` of the gap before. -/
+theorem responds_iff {F C : Type} {L L' : Flow F C} {W W' : Web F C} {c : C} {f : Nat → Nat}
+    {s : Nat} (bal : ∀ t, L.BalancesOn W [c] t) (bal' : ∀ t, L'.BalancesOn W' [c] t) :
+    RespondsByReturn L L' W W' c f s ↔
+      ∀ t, s ≤ t →
+        gap (W.level (t + 1) c) (W'.level (t + 1) c) = f (gap (W.level t c) (W'.level t c)) :=
+  ⟨fun responds t le => (gap_succ (bal t) (bal' t)).trans (responds t le),
+   fun steps t le => (gap_succ (bal t) (bal' t)).symm.trans (steps t le)⟩
+
 /-- **Rejoining's gap follows a return map.** Where two flows balance on `c` and their exchanges
 respond to the gap by `f` from step `s`, the gap at `s + n` is the course of `f` from the gap at
 `s` after `n` turns, one turn a step. -/
@@ -985,7 +997,8 @@ every bound from a positive gap (`whole_factors`). -/
 theorem gap_scaling {F C : Type} {L L' : Flow F C} {W W' : Web F C} {c : C} {as : List Nat}
     {s : Nat} (bal : ∀ t, L.BalancesOn W [c] t) (bal' : ∀ t, L'.BalancesOn W' [c] t)
     (responds : RespondsByReturn L L' W W' c (returnMap (scaling as)) s) (n : Nat) :
-    gap (W.level (s + n) c) (W'.level (s + n) c) = factor as ^ n * gap (W.level s c) (W'.level s c) :=
+    gap (W.level (s + n) c) (W'.level (s + n) c) =
+      factor as ^ n * gap (W.level s c) (W'.level s c) :=
   (gap_course bal bal' responds n).trans (orbit_scaling as _ n)
 
 /-- In `Becoming.Rejoining`'s witness, after the act the responder's exchange responds to the gap
