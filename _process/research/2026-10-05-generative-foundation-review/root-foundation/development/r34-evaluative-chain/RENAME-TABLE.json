@@ -1,6 +1,13 @@
 {
   "about": "R34, board item of the twentieth review (one evaluative chain), 20 October 2026: the declarations removed because, once Ranking, Relevance and ActiveReading read their worlds as webs (F9), each became the same statement as another one, which is kept; no aliases (the pure core has no `alias`, and a copy would count as a theorem), so this table is the lookup for every removed name. sigcheck.py reads it. Restated declarations (same name, new statement) are listed in study section 225, old -> new.",
-  "renamed": [],
+  "renamed": [
+    {
+      "old": "Becoming.Ranking.ThirdParty.unfolding",
+      "new": "Becoming.Ranking.ThirdParty.web",
+      "kind": "decl",
+      "reason": "F9: the three-formation family's course is a web (Web.static of the foundation law's unfolding), so the definition names what it is; restated (it was the foundation unfolding, now the web read from it). No record cites it."
+    }
+  ],
   "removed": [
     {
       "old": "Becoming.ActiveReading.livingSignificance_wholeRun_web_iff",
