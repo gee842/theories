@@ -892,7 +892,10 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   many configurations a process that merges nothing loses nothing along a run, and so a law that
   merges nothing along an orbit, so a loss above nothing needs a merge: rest belongs to
   descriptions that lump and dissipate, and a finite law that merges nothing returns
-  (`Becoming.Recurrence`).
+  (`Becoming.Recurrence`). Read off configurations a list holds, an amount that does not rise
+  falls strictly at most as often as the list is long, over any amounts, so rest needs no least
+  loss there; and under a law that merges nothing a part's narrowing is kept by the rest, the
+  possibilities being kept apart, so a part reset at every step needs a whole no list holds.
 * `Becoming.Entropy` (L1): what becoming leaves, and what holding it costs. In a balanced
   flow every change of a level is an exchange, so the history of exchanges grows at every
   change without a dissipation premise, and an exchange and its reverse restore every level but not the

@@ -2,6 +2,7 @@ import Becoming.Amounts
 import Becoming.Resolution
 import Becoming.Recurrence
 import Becoming.Branching
+import Becoming.Likeness
 
 /-!
 # Least loss: rest over amounts that may be dense
@@ -49,16 +50,33 @@ dense, with what the whole numbers supplied named as two premises.
   (`Law.loss_needs_merge`). The same holds along a run of every process
   (`Branching.Lossless.loses_nothing`, `Branching.loss_needs_merge`). Rest is a law of descriptions that lump configurations and dissipate;
   a finite world that merges nothing returns rather than rests.
+* **Rest from a finite reading.** Where a list holds the configurations an amount is read off,
+  steps across which it falls strictly do not recur, and of any `l.length + 1` steps not every one
+  falls (`Amounts.rests_of_finite_reading`, `Amounts.falls_within_reading`), over any amounts: no
+  least loss, no Archimedean property, no totality and no decision. A strict fall leaves a
+  configuration the amount never reads again (pigeonhole, `revisits_within`). So falls that recur
+  need a reading no list holds, as the halving stock's values (`Halving.stock_unlisted`). Along a
+  run of every process held by a list (`Branching.rests_along_run`), a run's falls come to rest,
+  and where the process merges nothing it loses nothing at all.
+* **A part's merge, kept by the rest.** Read a whole's configurations by a part and a rest that
+  together tell them apart. Under a law that merges nothing, possibilities no two alike stay so
+  (`Law.Lossless.keeps_apart`), so `k` of them, their parts held by `ps` and their rests by `es`,
+  number at most `ps.length * es.length` (`Law.distinct_within`, `Law.Lossless.narrowing_spreads`): a
+  part narrowed is matched by the rest's spread, Landauer's count with no energy. A part reset to one
+  configuration at every step, inside a whole that merges nothing, needs a whole no list holds
+  (`Law.Lossless.reset_unlisted`); in `Reset` the part merges at every step, the whole merges
+  nothing, and the rest is the part's kept history, which no list holds (`Reset.kept_by_rest`).
 
 What the whole numbers carry in the rest family is exactly these two premises: a least loss at
 each change, and every stock within finitely many least losses. Approach to rest needs no least
 loss, only Archimedean amounts; rest, the change counted not recurring, needs the least loss as
-well. Physics supplies amounts of energy in real numbers, and the second law, a non-negative production of entropy, names no least
+well, unless the amount is read off finitely many configurations, where it needs none. Physics supplies amounts of energy in real numbers, and the second law, a non-negative production of entropy, names no least
 loss per step; so in a continuous reading the rest laws hold where some least loss per change is
 given (a least gap between the levels of a bounded quantised system, a threshold of detection,
 Landauer's bound `kT ln 2` per erased bit at a temperature bounded below are candidates), and
 fail, as in `Halving`, where losses shrink without a floor. Which physical systems have a least
-loss is not settled here. `Flow`, `Web` and `World` still read their levels in whole numbers;
+loss is not settled here; finite distinguishability (finitely many states read at a resolution) is the
+premise that makes it unnecessary. `Flow`, `Web` and `World` still read their levels in whole numbers;
 this module states the step on which the rest laws turn for any amounts, not those structures
 over any amounts. `Becoming.Resolution` reads the same boundary at a unit that may split, and its
 `Asymptote` and `Dwindle` are halving at a refining unit. Real numbers are not constructed in the
@@ -396,6 +414,118 @@ theorem not_archimedean : ¬ amounts.Archimedean :=
 
 end Layered
 
+/-! ## Rest from a finite reading: no least loss -/
+
+namespace Amounts
+
+variable {A : Type} {M : Amounts A} {S : Type}
+
+/-- Steps rising one after another, `f i < f (i + 1)` below `K`, lie at least as far apart as
+their indices. -/
+theorem rising_apart {f : Nat → Nat} {K : Nat} (rising : ∀ i, i < K → f i < f (i + 1)) (i : Nat) :
+    ∀ d, i + d ≤ K → f i + d ≤ f (i + d)
+  | 0, _ => Nat.le_refl _
+  | d + 1, within => Nat.le_trans (Nat.succ_le_succ (rising_apart rising i d
+      (Nat.le_of_succ_le within))) (rising (i + d) within)
+
+/-- **A finite reading counts the falls.** Read an amount `q` off configurations `g t` that a
+list `l` holds, and let it not rise across any step from `T` on. Then of any `l.length + 1`
+steps `f 0 < f 1 < ⋯` from `T` on, not every one is a step across which the amount falls
+strictly (is not, after the step, back within its value before): at most `l.length` steps fall
+strictly. No least loss is asked, no Archimedean property, no totality and no decision: a strict
+fall leaves a configuration the amount never reads again, and the list has room for only so many. -/
+theorem falls_within_reading {g : Nat → S} {q : S → A} {l : List S} {T : Nat}
+    (held : ∀ t, g t ∈ l) (still : ∀ t, T ≤ t → M.le (q (g (t + 1))) (q (g t)))
+    {f : Nat → Nat} (start : T ≤ f 0) (rising : ∀ i, i < l.length → f i < f (i + 1)) :
+    ¬ ∀ i, i ≤ l.length → ¬ M.le (q (g (f i))) (q (g (f i + 1))) := fun falls =>
+  match revisits_within l (fun i => g (f i)) (fun n _ => held (f n)) with
+  | ⟨i, j, lt, le, same⟩ =>
+    match gap_of_lt lt with
+    | ⟨d, at_j⟩ =>
+      have from_i : T ≤ f i := Nat.le_trans start
+        (Nat.le_trans (Nat.le_add_left (f 0) i)
+          (Nat.le_trans (Nat.le_of_eq (Nat.add_comm i (f 0)))
+            (Nat.le_trans (rising_apart rising 0 i
+              (Nat.le_trans (Nat.le_of_eq (Nat.zero_add i)) (Nat.le_trans (Nat.le_of_lt lt) le)))
+              (Nat.le_of_eq (congrArg f (Nat.zero_add i))))))
+      have apart : f i + 1 ≤ f j :=
+        Nat.le_trans (Nat.succ_le_succ (Nat.le_add_right (f i) d))
+          (Nat.le_trans (rising_apart rising i (d + 1) (Nat.le_trans (Nat.le_of_eq at_j.symm) le))
+            (Nat.le_of_eq (congrArg f at_j.symm)))
+      match le_dest apart with
+      | ⟨e, at_fj⟩ =>
+        have down : M.le (q (g (f j))) (q (g (f i + 1))) :=
+          Eq.subst (motive := fun x => M.le (q (g x)) (q (g (f i + 1)))) at_fj.symm
+            (still_within (s := fun t => q (g t)) still e (f i + 1) (Nat.le_succ_of_le from_i))
+        falls i (Nat.le_trans (Nat.le_of_lt lt) le)
+          (Eq.subst (motive := fun x => M.le (q x) (q (g (f i + 1)))) same.symm down)
+
+/-- **Rest from a finite reading.** Where a list holds the configurations an amount is read off
+and the amount does not rise across any step from `T` on, steps across which it falls strictly
+do not recur. Over any amounts: no least loss, no Archimedean property, no totality of the order
+and no decision is asked. The least loss on which `Amounts.rests` turns is needed only where the
+amount reads configurations no list holds: falls that recur need an unbounded reading
+(`Halving.stock_unlisted`). -/
+theorem rests_of_finite_reading {g : Nat → S} {q : S → A} {l : List S} {T : Nat}
+    (held : ∀ t, g t ∈ l) (still : ∀ t, T ≤ t → M.le (q (g (t + 1))) (q (g t))) :
+    ¬ ∀ N, ∃ t, N ≤ t ∧ ¬ M.le (q (g t)) (q (g (t + 1))) := fun recurs =>
+  have chain : ∀ m, ∃ f : Nat → Nat, T ≤ f 0 ∧ (∀ i, i < m → f i < f (i + 1)) ∧
+      ∀ i, i ≤ m → ¬ M.le (q (g (f i))) (q (g (f i + 1))) := fun m => by
+    induction m with
+    | zero =>
+      match recurs T with
+      | ⟨t, after, fall⟩ =>
+        exact ⟨fun _ => t, after, fun i below => absurd below (Nat.not_lt_zero i), fun _ _ => fall⟩
+    | succ m ih =>
+      match ih with
+      | ⟨f, start, rising, falls⟩ =>
+        match recurs (f m + 1) with
+        | ⟨t, after, fall⟩ =>
+          refine ⟨fun i => if i ≤ m then f i else t, ?_, ?_, ?_⟩
+          · exact Eq.subst (motive := fun x => T ≤ x) (if_pos (Nat.zero_le m)).symm start
+          · intro i below
+            have at_i : (if i ≤ m then f i else t) = f i := if_pos (Nat.le_of_lt_succ below)
+            show (if i ≤ m then f i else t) < (if i + 1 ≤ m then f (i + 1) else t)
+            rw [at_i]
+            match Nat.decLe (i + 1) m with
+            | isTrue next =>
+              rw [if_pos next]
+              exact rising i next
+            | isFalse past =>
+              rw [if_neg past]
+              have same : i = m := Nat.le_antisymm (Nat.le_of_lt_succ below)
+                (Nat.le_of_lt_succ (Nat.gt_of_not_le past))
+              rw [same]
+              exact after
+          · intro i within
+            match Nat.decLe i m with
+            | isTrue earlier =>
+              show ¬ M.le (q (g (if i ≤ m then f i else t)))
+                (q (g ((if i ≤ m then f i else t) + 1)))
+              rw [if_pos earlier]
+              exact falls i earlier
+            | isFalse later =>
+              show ¬ M.le (q (g (if i ≤ m then f i else t)))
+                (q (g ((if i ≤ m then f i else t) + 1)))
+              rw [if_neg later]
+              exact fall
+  match chain l.length with
+  | ⟨f, start, rising, falls⟩ => falls_within_reading held still start rising falls
+
+end Amounts
+
+namespace Halving
+
+/-- **Falls that recur need an unbounded reading.** The halving stock falls strictly at every
+step, so no list holds its values: by `Amounts.rests_of_finite_reading`, a list holding them would
+bring its falls to rest. Halving's lack of a least loss and the unbounded count of its values are
+one fact read twice. -/
+theorem stock_unlisted : ¬ ∃ l : List Dyadic, ∀ t, stock t ∈ l := fun ⟨_, held⟩ =>
+  Amounts.rests_of_finite_reading (M := Dyadic.amounts) (q := fun x => x) (T := 0) held
+    (fun t _ => never_rests.2.1 t) (fun N => ⟨N, Nat.le_refl N, falls_strictly N⟩)
+
+end Halving
+
 /-! ## Rest and return: dissipation needs a law that merges -/
 
 namespace Branching
@@ -433,6 +563,16 @@ theorem loss_needs_merge (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ l
     {d : Nat → A} (falls : ∀ n, M.le (M.add (q (r.state (n + 1))) (d n)) (q (r.state n)))
     {n : Nat} (positive : ¬ M.le (d n) M.zero) : ¬ Lossless P :=
   fun lossless => positive (lossless.loses_nothing r held falls n)
+
+/-- **Rest from a finite reading, along a run of every process.** Where a list holds every
+configuration of a run and an amount read off them does not rise from `T` on, steps across which
+it falls strictly do not recur, whether or not the process merges: `Amounts.rests_of_finite_reading`
+along the run. With `Branching.loss_needs_merge`, a run within finitely many configurations either
+loses nothing (where the process merges nothing) or comes to rest, with no least loss. -/
+theorem rests_along_run (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ l) {q : S → A} {T : Nat}
+    (still : ∀ t, T ≤ t → M.le (q (r.state (t + 1))) (q (r.state t))) :
+    ¬ ∀ N, ∃ t, N ≤ t ∧ ¬ M.le (q (r.state t)) (q (r.state (t + 1))) :=
+  Amounts.rests_of_finite_reading held still
 
 end Branching
 
@@ -482,5 +622,114 @@ theorem loss_needs_merge {next : S → S} {all : List S} (every : ∀ s, s ∈ a
 
 end Law
 
+
+/-! ## A part's merge, kept by the rest -/
+
+namespace Law
+
+variable {S : Type} {P : Type} {E : Type}
+
+/-- **Distinct configurations need room in their readings.** Where two readings, a part `part`
+and a rest `rest`, together tell every configuration apart, `k` configurations no two of which
+coincide, with their parts held by `ps` and their rests by `es`, number at most
+`ps.length * es.length`. -/
+theorem distinct_within {part : S → P} {rest : S → E}
+    (tells : ∀ x y, part x = part y → rest x = rest y → x = y)
+    {h : Nat → S} {k : Nat} (distinct : ∀ i j, i < j → j < k → h i ≠ h j)
+    {ps : List P} {es : List E} (inP : ∀ i, i < k → part (h i) ∈ ps)
+    (inE : ∀ i, i < k → rest (h i) ∈ es) : ¬ ps.length * es.length < k := fun beyond =>
+  have size : (pairsOf ps es).length = ps.length * es.length :=
+    (length_pairsOf es ps).trans (Nat.mul_comm _ _)
+  have room : ∀ n, n ≤ (pairsOf ps es).length → (part (h n), rest (h n)) ∈ pairsOf ps es :=
+    fun n le =>
+      have below : n < k := Nat.lt_of_le_of_lt (Nat.le_trans le (Nat.le_of_eq size)) beyond
+      mem_pairsOf (inP n below) (inE n below)
+  match revisits_within (pairsOf ps es) (fun n => (part (h n), rest (h n))) room with
+  | ⟨i, j, lt, le, same⟩ =>
+    distinct i j lt (Nat.lt_of_le_of_lt (Nat.le_trans le (Nat.le_of_eq size)) beyond)
+      (tells _ _ (congrArg Prod.fst same) (congrArg Prod.snd same))
+
+/-- **Merging nothing, a law keeps the possibilities apart.** Under a law that merges nothing,
+configurations no two of which coincide are, any number of steps on, still no two alike. -/
+theorem Lossless.keeps_apart {next : S → S} (lossless : Lossless next) {h : Nat → S} {k : Nat}
+    (distinct : ∀ i j, i < j → j < k → h i ≠ h j) (n : Nat) :
+    ∀ i j, i < j → j < k → orbit next (h i) n ≠ orbit next (h j) n :=
+  fun i j lt below same => distinct i j lt below (lossless.cancel n same)
+
+/-- **A part's narrowing spreads the rest.** Under a law that merges nothing, read every
+configuration by a part and a rest that together tell configurations apart. Of `k` possibilities
+no two alike, if `n` steps on their parts are held by `ps` and their rests by `es`, then `k` is at
+most `ps.length * es.length`: the possibilities are conserved, so where the part is narrowed to
+fewer configurations the rest must hold correspondingly more: where the parts of `k` possibilities
+are narrowed to one configuration (`ps` of length one), every list holding their rests has at least
+`k` members, and where every rest lies in a list of `N`, the parts need a list of at least `k / N`.
+This is Landauer's count, with no energy, temperature or probability, from the law's merging
+nothing alone. -/
+theorem Lossless.narrowing_spreads {next : S → S} (lossless : Lossless next) {part : S → P}
+    {rest : S → E} (tells : ∀ x y, part x = part y → rest x = rest y → x = y)
+    {h : Nat → S} {k : Nat} (distinct : ∀ i j, i < j → j < k → h i ≠ h j) (n : Nat)
+    {ps : List P} {es : List E} (inP : ∀ i, i < k → part (orbit next (h i) n) ∈ ps)
+    (inE : ∀ i, i < k → rest (orbit next (h i) n) ∈ es) : ¬ ps.length * es.length < k :=
+  distinct_within tells (lossless.keeps_apart distinct n) inP inE
+
+/-- **Resetting a part at every step needs an unbounded whole.** Where a law merges nothing and,
+after every step, a part reads one configuration `p`, then if any configuration has another part,
+no list holds every configuration: within finitely many configurations the law would return every
+configuration (`Law.Lossless.returns`), each would come after a step, and its part would be `p`.
+A part whose reading merges at every step, inside a whole that merges nothing, passes what it
+loses into a rest that grows without bound. -/
+theorem Lossless.reset_unlisted {next : S → S} (lossless : Lossless next) {part : S → P} {p : P}
+    (reset : ∀ x, part (next x) = p) {y : S} (other : part y ≠ p) :
+    ¬ ∃ all : List S, ∀ s, s ∈ all := fun ⟨_, every⟩ =>
+  match returns_iff.mp (lossless.returns every y) with
+  | ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
+  | ⟨k + 1, _, back⟩ =>
+    other (Eq.subst (motive := fun x => part x = p) back (reset (orbit next y k)))
+
+end Law
+
+/-! ## Reset: a part merged at every step, a whole that merges nothing -/
+
+namespace Reset
+
+/-- The part, one bit, is set to `false` at every step, and the bit it held passes onto the rest,
+a list kept: the history of what the part held. -/
+def next (x : Bool × List Bool) : Bool × List Bool := (false, x.1 :: x.2)
+
+/-- The whole merges nothing. -/
+theorem lossless : Law.Lossless next := Law.lossless_iff.mpr fun x y same => by
+  cases x with
+  | mk a h =>
+    cases y with
+    | mk b h' =>
+      injection same with _ rest
+      injection rest with bit hist
+      subst bit
+      subst hist
+      rfl
+
+/-- The part merges at every step: whatever it held, it reads `false` after the step. -/
+theorem part_merges (x : Bool × List Bool) : (next x).1 = false := rfl
+
+/-- The rest grows by one at every step. -/
+theorem rest_length (x : Bool × List Bool) : ∀ n, (Law.orbit next x n).2.length = x.2.length + n
+  | 0 => rfl
+  | n + 1 => congrArg Nat.succ (rest_length x n)
+
+/-- **The part's merges kept by the rest.** The part merges at every step and the whole merges
+nothing; the rest of every run never repeats, so no list holds it, as `Law.Lossless.reset_unlisted`
+requires of every such law. -/
+theorem kept_by_rest :
+    Law.Lossless next ∧ (∀ x, (next x).1 = false) ∧ (next (true, [])).1 = (next (false, [])).1 ∧
+    (∀ x, ¬ ∃ l : List (List Bool), ∀ n, (Law.orbit next x n).2 ∈ l) ∧
+    ¬ ∃ all : List (Bool × List Bool), ∀ s, s ∈ all :=
+  ⟨lossless, part_merges, rfl,
+   fun x => unlisted_of_new (g := fun n => (Law.orbit next x n).2) fun i j lt same =>
+     Naturals.ne_of_lt lt (Naturals.add_left_cancel ((rest_length x i).symm.trans
+       ((congrArg List.length same).trans (rest_length x j)))),
+   lossless.reset_unlisted (part := Prod.fst) (p := false) part_merges (y := (true, []))
+     (fun same => Bool.noConfusion same)⟩
+
+end Reset
 
 end Becoming
