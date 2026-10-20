@@ -287,6 +287,9 @@
       "instances": {
         "Becoming.Valuation.significant_iff_held": [
           "Becoming.Web.significant_iff_self"
+        ],
+        "Becoming.forced_iff_center": [
+          "Becoming.Web.admitsWithin_forced_iff"
         ]
       }
     },

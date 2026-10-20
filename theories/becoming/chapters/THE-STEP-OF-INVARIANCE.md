@@ -210,11 +210,11 @@ None is settled by formal work. Each is stated so that an argument settles it.
 | Zero weight ties; equal weights count | `Weighting.weighed_eq_of_unweighted`, `Weighting.neutral_ranks_by_number` | `Becoming.Weightings` | landed |
 | Closing is never required | `Web.not_widens_of_closes` | `Becoming.Weightings` | landed |
 | The narrower scope's comparison and where it parts from the condition | `Web.retains_atCenters_iff`, `Clearing.centers_retain_yet_loses` | `Becoming.Weightings` | landed |
-| Standpoint-invariance is one shared content; de se content is invariant where its readings agree | `standpointInvariant_iff_shared`, `selfAscribed_standpointInvariant_iff` | `Becoming.Weightings` | IV2 |
-| Held de se, the presupposition gives each center its closure, invariant where closures agree, the condition where each is the whole | `ownClosure_presupposed`, `ownClosure_standpointInvariant_iff`, `ownClosure_unrestricted_iff`, `ownClosure_unrestricted_of_whole` | `Becoming.Weightings` | IV2 |
-| Held de dicto, the step forces the union of closures; where the readings part | `forced_iff_within_some`, `selfAscribed_iff_withinSome`, `Divided` | `Becoming.Weightings` | IV2 |
-| Invariant grades give invariant standing and rank alike; not conversely | `Weighting.standingInvariant_of_gradeInvariant`, `Weighting.ranks_alike_of_gradeInvariant`, `Partial.ranks_differ` | `Becoming.Weightings` | IV2 |
-| Priority on levels agrees with C and decides transfers; sufficiency ties above the threshold | `Weighting.prior_lt_of_widens`, `Weighting.prior_transfer`, `Weighting.sufficient_ties`, `LevelTransfer.by_law` | `Becoming.Weightings` | IV2 |
+| Standpoint-invariance is one shared content; de se content is invariant where its readings agree | `standpointInvariant_iff_shared`, `selfAscribed_standpointInvariant_iff` | `Becoming.Weightings` | landed |
+| Held de se, the presupposition gives each center its closure, invariant where closures agree, the condition where each is the whole | `ownClosure_presupposed`, `ownClosure_standpointInvariant_iff`, `ownClosure_unrestricted_iff`, `ownClosure_unrestricted_of_whole` | `Becoming.Weightings` | landed |
+| Held de dicto, the step forces the union of closures; where the readings part | `forced_iff_within_some`, `selfAscribed_iff_withinSome`, `Divided` | `Becoming.Weightings` | landed |
+| Invariant grades give invariant standing and rank alike; not conversely | `Weighting.standingInvariant_of_gradeInvariant`, `Weighting.ranks_alike_of_gradeInvariant`, `Partial.ranks_differ` | `Becoming.Weightings` | landed |
+| Priority on levels agrees with C and decides transfers; sufficiency ties above the threshold | `Weighting.prior_lt_of_widens`, `Weighting.prior_transfer`, `Weighting.sufficient_ties`, `LevelTransfer.by_law` | `Becoming.Weightings` | landed |
 
 The records are [what-the-step-across-standpoints-reaches](../results/records/what-the-step-across-standpoints-reaches.md), [widening-as-what-every-weighting-ranks](../results/records/widening-as-what-every-weighting-ranks.md) and [graded-significance-and-priority](../results/records/graded-significance-and-priority.md).
 
