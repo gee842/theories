@@ -1,11 +1,11 @@
 {
- "commit": "fa43f6d539579fa74c5120de25cf02270985c77b",
+ "commit": "f6a029f32edac2152d38147d45e68787d19b6ef8",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261020T093308.742793Z",
+ "core_receipt_at_commit": "20261020T094300.398321Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
- "tracked_modules": 289,
- "constants": 36262,
- "spine_theorems": 11690,
+ "tracked_modules": 291,
+ "constants": 36356,
+ "spine_theorems": 11730,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -28,19 +28,19 @@
  "classes": {
   "statement on both families": 927,
   "statement on Process/Frame/Run/Trace": 2877,
-  "statement on World/Flow/Web": 2682,
+  "statement on World/Flow/Web": 2689,
   "statement on the base only through a law of its own module": 180,
   "proof through a base family": 154,
-  "used by a theorem on the base": 4206,
+  "used by a theorem on the base": 4224,
   "instance on the base recorded": 150,
-  "apart: own vocabulary": 480,
+  "apart: own vocabulary": 495,
   "apart: prelude-only statement": 34
  },
- "apart": 514,
- "apart_general_structure_by_design": 88,
- "apart_otherwise": 426,
+ "apart": 529,
+ "apart_general_structure_by_design": 95,
+ "apart_otherwise": 434,
  "pure_forwarders": {
-  "spine theorems that are pure forwarders": 56,
+  "spine theorems that are pure forwarders": 57,
   "of them on the base": 49,
   "their targets, by class": {
    "statement on Process/Frame/Run/Trace": 11,
@@ -71,12 +71,12 @@
   "Becoming.Attraction": 4,
   "Becoming.Recurrence": 3
  },
- "apart_used_by_nothing": 361,
- "apart_roots": 362,
+ "apart_used_by_nothing": 371,
+ "apart_roots": 372,
  "apart_roots_by_category": {
-  "model-witness": 210,
+  "model-witness": 215,
   "support": 81,
-  "general-structure": 50,
+  "general-structure": 55,
   "logical-strength": 10,
   "restates": 9,
   "calibration": 2
@@ -158,10 +158,6 @@
    23,
    98
   ],
-  "Becoming.SelectionTerm": [
-   20,
-   67
-  ],
   "Becoming.HexagramPlaces": [
    20,
    109
@@ -169,6 +165,10 @@
   "Becoming.Frontier": [
    18,
    70
+  ],
+  "Becoming.SelectionTerm": [
+   17,
+   67
   ],
   "Becoming.Reproduction": [
    16,
@@ -193,6 +193,10 @@
   "Becoming.Acceptance": [
    12,
    17
+  ],
+  "Becoming.SelectionLevels": [
+   11,
+   21
   ],
   "Becoming.StrictTransport": [
    11,
@@ -245,6 +249,10 @@
   "Becoming.Derivation": [
    7,
    26
+  ],
+  "Becoming.GroupEnding": [
+   7,
+   19
   ],
   "Becoming.Reconfiguration": [
    7,
@@ -541,18 +549,18 @@
  },
  "rings": {
   "core": {
-   "modules": 273,
-   "theorems": 10944,
-   "apart": 434,
+   "modules": 275,
+   "theorems": 10984,
+   "apart": 449,
    "classes": {
     "statement on both families": 913,
     "statement on Process/Frame/Run/Trace": 2666,
-    "statement on World/Flow/Web": 2657,
+    "statement on World/Flow/Web": 2664,
     "statement on the base only through a law of its own module": 134,
     "proof through a base family": 143,
-    "used by a theorem on the base": 3847,
+    "used by a theorem on the base": 3865,
     "instance on the base recorded": 150,
-    "apart: own vocabulary": 401,
+    "apart: own vocabulary": 416,
     "apart: prelude-only statement": 33
    }
   },
@@ -642,10 +650,10 @@
  "records_by_best_alias_class": {
   "statement on both families": 67,
   "statement on Process/Frame/Run/Trace": 113,
-  "statement on World/Flow/Web": 67,
+  "statement on World/Flow/Web": 68,
   "statement on the base only through a law of its own module": 1,
   "proof through a base family": 1,
-  "used by a theorem on the base": 6,
+  "used by a theorem on the base": 7,
   "instance on the base recorded": 2,
   "apart: own vocabulary": 1
  },
@@ -3507,8 +3515,8 @@
   "Becoming.SelectionTerm.pairs_zero": "used by a theorem on the base",
   "Becoming.SelectionTerm.concord_uniform": "apart: own vocabulary",
   "Becoming.SelectionTerm.discord_uniform": "apart: own vocabulary",
-  "Becoming.SelectionTerm.concord_alike": "apart: own vocabulary",
-  "Becoming.SelectionTerm.discord_alike": "apart: own vocabulary",
+  "Becoming.SelectionTerm.concord_alike": "used by a theorem on the base",
+  "Becoming.SelectionTerm.discord_alike": "used by a theorem on the base",
   "Becoming.SelectionTerm.selection_covariation": "used by a theorem on the base",
   "Becoming.SelectionTerm.selection_exceeds_iff": "apart: own vocabulary",
   "Becoming.SelectionTerm.selection_none_iff": "apart: own vocabulary",
@@ -3535,7 +3543,7 @@
   "Becoming.SelectionTerm.Generations.not_lower": "used by a theorem on the base",
   "Becoming.SelectionTerm.Generations.moved_unbalanced": "used by a theorem on the base",
   "Becoming.SelectionTerm.Generations.balanced_exact_iff": "used by a theorem on the base",
-  "Becoming.SelectionTerm.Generations.raises_exact_iff": "apart: own vocabulary",
+  "Becoming.SelectionTerm.Generations.raises_exact_iff": "used by a theorem on the base",
   "Becoming.SelectionTerm.Generations.moved_by_selection": "used by a theorem on the base",
   "Becoming.SelectionTerm.Generations.balanced_uniform_iff": "apart: own vocabulary",
   "Becoming.SelectionTerm.Generations.moved_by_transmission": "apart: own vocabulary",
@@ -3598,6 +3606,46 @@
   "Becoming.Reproduction.Relay.descends": "statement on World/Flow/Web",
   "Becoming.Reproduction.Relay.descended": "statement on World/Flow/Web",
   "Becoming.Reproduction.Relay.relay": "statement on World/Flow/Web",
+  "Becoming.SelectionLevels.whole_total": "used by a theorem on the base",
+  "Becoming.SelectionLevels.whole_weighted": "used by a theorem on the base",
+  "Becoming.SelectionLevels.whole_length": "used by a theorem on the base",
+  "Becoming.SelectionLevels.total_eq_of_mem": "used by a theorem on the base",
+  "Becoming.SelectionLevels.whole_length_of_equal": "used by a theorem on the base",
+  "Becoming.SelectionLevels.lhs_shape": "used by a theorem on the base",
+  "Becoming.SelectionLevels.rhs_shape": "used by a theorem on the base",
+  "Becoming.SelectionLevels.levels": "used by a theorem on the base",
+  "Becoming.SelectionLevels.rises_iff": "apart: own vocabulary",
+  "Becoming.SelectionLevels.none_iff": "apart: own vocabulary",
+  "Becoming.SelectionLevels.among_for_of_rises": "apart: own vocabulary",
+  "Becoming.SelectionLevels.within_for_of_rises": "apart: own vocabulary",
+  "Becoming.SelectionLevels.within_none_of_uniform": "used by a theorem on the base",
+  "Becoming.SelectionLevels.levels_of_uniform": "used by a theorem on the base",
+  "Becoming.SelectionLevels.among_none_of_alike": "apart: own vocabulary",
+  "Becoming.SelectionLevels.levels_of_alike": "apart: own vocabulary",
+  "Becoming.SelectionLevels.rises_exact_iff_levels": "apart: own vocabulary",
+  "Becoming.SelectionLevels.among_for_of_raises": "apart: own vocabulary",
+  "Becoming.SelectionLevels.equal": "apart: own vocabulary",
+  "Becoming.SelectionLevels.AmongWins.among_wins": "apart: own vocabulary",
+  "Becoming.SelectionLevels.WithinWins.within_wins": "apart: own vocabulary",
+  "Becoming.GroupEnding.excess_pos_of_lt": "used by a theorem on the base",
+  "Becoming.GroupEnding.among_not_against": "used by a theorem on the base",
+  "Becoming.GroupEnding.rises_iff_ended": "apart: own vocabulary",
+  "Becoming.GroupEnding.not_against_of_ended": "apart: own vocabulary",
+  "Becoming.GroupEnding.pairs_pos": "used by a theorem on the base",
+  "Becoming.GroupEnding.rises_of_ended": "used by a theorem on the base",
+  "Becoming.GroupEnding.mem_whole": "used by a theorem on the base",
+  "Becoming.GroupEnding.Flow.inactive_childless": "statement on World/Flow/Web",
+  "Becoming.GroupEnding.Flow.excess_childless": "statement on World/Flow/Web",
+  "Becoming.GroupEnding.Flow.offspring_zero": "statement on World/Flow/Web",
+  "Becoming.GroupEnding.Flow.group_childless": "statement on World/Flow/Web",
+  "Becoming.GroupEnding.Flow.ended_of_inactive": "statement on World/Flow/Web",
+  "Becoming.GroupEnding.Flow.raises_of_inactive": "statement on World/Flow/Web",
+  "Becoming.GroupEnding.Flow.all_end": "statement on World/Flow/Web",
+  "Becoming.GroupEnding.uniform": "apart: own vocabulary",
+  "Becoming.GroupEnding.equal": "apart: own vocabulary",
+  "Becoming.GroupEnding.Outweighed.outweighed": "apart: own vocabulary",
+  "Becoming.GroupEnding.Outweighed.keeping_rises": "apart: own vocabulary",
+  "Becoming.GroupEnding.Outweighs.outweighs": "apart: own vocabulary",
   "Becoming.Flow.still_dissipative": "statement on World/Flow/Web",
   "Becoming.quiet_of_once": "used by a theorem on the base",
   "Becoming.still_le": "apart: prelude-only statement",

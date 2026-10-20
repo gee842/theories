@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 276 | 11,018 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 278 | 11,058 |
 | [Becoming instances and applications](lean-declarations/becoming-ring.md) | 13 | 746 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -405,6 +405,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Granularity.lean](lean-declarations/becoming-core.md#module-78a06760a6af) | Becoming pure core |
 | [GroundRelationTransport.lean](lean-declarations/core.md#module-e5e3937cc286) | Generative core and relational structure |
 | [GroundingContract.lean](lean-declarations/concern.md#module-618302908b9f) | Concern and shared activity |
+| [GroupEnding.lean](lean-declarations/becoming-core.md#module-607b442f3647) | Becoming pure core |
 | [GrownFragmentation.lean](lean-declarations/ethics.md#module-93d3383fc37b) | Normative grounding and generative direction |
 | [GuardHorizon.lean](lean-declarations/becoming-ring.md#module-de2c4a4581b2) | Becoming instances and applications |
 | [Handoff.lean](lean-declarations/becoming-core.md#module-96dbcca36f4a) | Becoming pure core |
@@ -795,6 +796,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Segmentation.lean](lean-declarations/becoming-core.md#module-6e0ec291c7d2) | Becoming pure core |
 | [Selection.lean](lean-declarations/becoming-core.md#module-8b0687844bea) | Becoming pure core |
 | [SelectionGap.lean](lean-declarations/becoming-core.md#module-bff05f8dbe13) | Becoming pure core |
+| [SelectionLevels.lean](lean-declarations/becoming-core.md#module-0babad5be0a3) | Becoming pure core |
 | [SelectionPool.lean](lean-declarations/becoming-core.md#module-2ab3fe374991) | Becoming pure core |
 | [SelectionReach.lean](lean-declarations/becoming-core.md#module-fbecd7401f01) | Becoming pure core |
 | [SelectionRelabelCorrespondence.lean](lean-declarations/abstraction.md#module-d28f30cfca89) | Abstraction, applicability and constitution |
