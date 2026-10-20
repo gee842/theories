@@ -126,7 +126,8 @@
       "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence (verbatim identical to the former first “counterexample”, which was a scope boundary) was split into 3 typed does-not-show items, absorbing that duplicate entry; 2 progress lines link the existing five-condition assessment and root acceptance. No claim, premise, status, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/conditional-foundation-assessment.md); the exact earlier record is text_versions[0]."
     },
     {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in FIXED-FINISH-LINE-AUDIT.md, FOUNDATION-COMPOSITION.md, FOUNDATION-ROOT-ACCEPTANCE.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+      "en": "2026-10-20: 1 bookkeeping notes condensed of 17 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/2ff694982fcbe63b/conditional-foundation-assessment.json and in git.",
+      "zh": "2026-10-20：1 条记账性说明合并（17 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/2ff694982fcbe63b/conditional-foundation-assessment.json 和 git 中。"
     }
   ],
   "text_versions": [
@@ -136,6 +137,14 @@
       "note": {
         "zh": "可读性迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the readability migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/2ff694982fcbe63b/conditional-foundation-assessment.json",
+      "sha256": "2ff694982fcbe63ba1a4e591f73587a408582941e34bef40789c6c72bbd516a6",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
   ],

@@ -1,0 +1,1078 @@
+{
+  "schema_version": 2,
+  "id": "how-often-couplings-act",
+  "title": {
+    "zh": "耦合多常作用：安定、失控与其速度",
+    "en": "How often couplings act: settling, runaway and its rate"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
+  "statement": {
+    "zh": "能到达的最大差别至多是 D·(1 + M)^a，a 是有耦合作用的步数，由自环达到；强度为自然数时，每次返回至少使之加倍：返回频繁则失控，耦合稀少则保持多项式；每个时程都安定恰是 Σ⁰₂ 排中。",
+    "en": "The most difference that can arrive is at most D·(1 + M)^a, a the steps where anything couples, attained by a self-loop; with natural-number strengths each return at least doubles it: frequent returns run away, rare couplings stay polynomial; every schedule settling is exactly Σ⁰₂ excluded middle."
+  },
+  "laws": [
+    {
+      "zh": "时程标出一些步，其计数是第 t 步之前标出的步数：随 t 不减，每步至多加一，至多是 t；计数越过第 N 步的值时，第 N 步起有一步被标出，所以计数无界的时程标出的步要多晚有多晚。",
+      "en": "A schedule marks steps, and its count is the number of marked steps before t: it does not fall, rises by at most one a step and is at most t; where the count passes its value at N, a step from N on is marked, so a schedule with unbounded count marks steps as late as one likes.",
+      "declarations": [
+        "Becoming.Frequency.count",
+        "Becoming.Frequency.count_succ_on",
+        "Becoming.Frequency.count_succ_off",
+        "Becoming.cond_le_one",
+        "Becoming.Frequency.bif_le",
+        "Becoming.Frequency.count_le_succ",
+        "Becoming.Frequency.count_mono",
+        "Becoming.Frequency.count_le",
+        "Becoming.Frequency.marked_between",
+        "Becoming.Frequency.recurs_of_unbounded"
+      ]
+    },
+    {
+      "zh": "部分在起始之后不给差、起始之差至多 D、每步进入每个条件的强度至多 M 且在未标出的步为零时，所携带的量至多是 D·(1 + M)^a，a 是之前标出的步数；2^a 至多是 A·(t + 1)^n 时它至多是 D·A^M·(t + 1)^(nM)。条件全部列出时，有耦合作用的步就是这样的时程。",
+      "en": "With the part giving no gap after the start, starting gaps at most D, and the strengths into each condition at most M at each step and zero at unmarked steps, the carried amount is at most D·(1 + M)^a, a the marked steps before; where 2^a is at most A·(t + 1)^n it is at most D·A^M·(t + 1)^(nM). With every condition listed, the steps at which anything couples are such a schedule.",
+      "declarations": [
+        "Becoming.Frequency.step_eq",
+        "Becoming.Frequency.succ_le_two_pow",
+        "Becoming.Frequency.pow_le_two_pow_pow",
+        "Becoming.inflow_congr_strength",
+        "Becoming.carried_le_count",
+        "Becoming.carried_le_of_rare",
+        "Becoming.Frequency.coupling",
+        "Becoming.Frequency.quiet_coupling",
+        "Becoming.carried_le_coupling"
+      ]
+    },
+    {
+      "zh": "一个条件以强度 M 在时程标出的步把水平送回自身：恰在这些步耦合，每次耦合是一次返回，标出的步要多晚有多晚时复现，恰好携带 D·(1 + M)^a；强度与起始之差为正时，它有多项式界恰在 2^a 有多项式界处，不论强度。",
+      "en": "A condition returning its level to itself with strength M at a schedule's marked steps couples exactly there, each coupling a return, recurs where marked steps come as late as one likes, and carries exactly D·(1 + M)^a; with positive strength and start, it is bounded by a polynomial exactly where 2^a is, whatever the strength.",
+      "declarations": [
+        "Becoming.Frequency.SelfLoop.strengths",
+        "Becoming.Frequency.SelfLoop.strengths_on",
+        "Becoming.Frequency.SelfLoop.strengths_off",
+        "Becoming.Frequency.SelfLoop.give",
+        "Becoming.Frequency.SelfLoop.inflow_eq",
+        "Becoming.Frequency.SelfLoop.into",
+        "Becoming.Frequency.SelfLoop.quiet",
+        "Becoming.Frequency.SelfLoop.carried_eq",
+        "Becoming.Frequency.SelfLoop.polynomial_iff",
+        "Becoming.Frequency.SelfLoop.couplesAt",
+        "Becoming.Frequency.SelfLoop.recurs",
+        "Becoming.Frequency.SelfLoop.roundTrip",
+        "Becoming.Frequency.SelfLoop.couplesAt_iff"
+      ]
+    },
+    {
+      "zh": "一个耦合读 d 在第 s 步的水平进入 c 时，c 处跨这一步至少增加 d 到第 s 步所携带的。按时间次序的链把到达其起点者带到终点；从一个条件回到它的这种链是一次返回，每次返回至少使到达者加倍，R 次至少乘以 2^R；返回在第 T i 步、2^i 超过 T i 的每个多项式、且有所到达时，没有多项式界，不论强度。",
+      "en": "A coupling reading d's level at step s into c adds at least what had reached d by s. A chain in time order carries what reached its start to its end; one back to where it began is a return, and each return at least doubles what had reached it, R returns by 2^R; where something arrived and returns come at steps T i with 2^i outgrowing every polynomial in T i, no polynomial bounds it, whatever the strengths.",
+      "declarations": [
+        "Becoming.carried_step_ge_at",
+        "Becoming.ChainInTime",
+        "Becoming.ChainInTime.start_le",
+        "Becoming.carried_along_in_time",
+        "Becoming.RoundTrip",
+        "Becoming.RoundTrip.of_couplesAt",
+        "Becoming.carried_doubles_roundTrip",
+        "Becoming.carried_roundTrip",
+        "Becoming.runaway_of_roundTrip"
+      ]
+    },
+    {
+      "zh": "稀疏的时程标出 0、1、3、7、……：之前标出 c 步时 t + 1 ≤ 2^c ≤ 2t + 1，所以 2^a ≤ 2(t + 1)，计数无界。在这些步以正的强度耦合的自环复现，从正的起始每个有限阶都有所漏，所携带的量却至多是 D·2^M·(t + 1)^M。",
+      "en": "The sparse schedule marks 0, 1, 3, 7, …: with c steps marked before t, t + 1 ≤ 2^c ≤ 2t + 1, so 2^a ≤ 2(t + 1), and its count is unbounded. The self-loop coupling there with positive strength recurs, so from a positive start every finite order misses something, yet it carries at most D·2^M·(t + 1)^M.",
+      "declarations": [
+        "Becoming.Frequency.Sparse.marks",
+        "Becoming.Frequency.Sparse.on",
+        "Becoming.Frequency.Sparse.count_eq",
+        "Becoming.Frequency.Sparse.bounds",
+        "Becoming.Frequency.Sparse.double_eq",
+        "Becoming.Frequency.Sparse.rare",
+        "Becoming.Frequency.Sparse.unbounded",
+        "Becoming.Frequency.Sparse.often",
+        "Becoming.Frequency.Sparse.recurs",
+        "Becoming.Frequency.Sparse.inexact",
+        "Becoming.Frequency.Sparse.polynomial"
+      ]
+    },
+    {
+      "zh": "耦合到第 N 步停止，是说它的耦合都不读第 N 步起的水平：停止的耦合不复现，到每个更晚的步都停止。条件全部列出、每对条件的耦合复现或到某步停止时，时程到某步已安定：有限多对的界相加。",
+      "en": "A coupling stops by N where none of its couplings reads a level from N on: one that stops does not recur, and stops by every later step. With every condition listed, where each pair's coupling recurs or stops by some step, the schedule has settled by some step, the finitely many bounds added.",
+      "declarations": [
+        "Becoming.StopsBy",
+        "Becoming.StopsBy.mono",
+        "Becoming.StopsBy.not_recurs",
+        "Becoming.Frequency.bound_list",
+        "Becoming.settled_of_each"
+      ]
+    },
+    {
+      "zh": "第 m 步一个耦合是否读第 n 步起的水平是判定的。二分“对每个判定的二元族，每行在某处为真，或某行处处为假”给出有限全知原则；给定它，条件全部列出时每个耦合复现或停止，每个时程都安定。",
+      "en": "Whether a coupling at step m reads a level from step n on is decided. The dichotomy that every decided two-place family has every row true somewhere or some row false throughout gives the limited principle of omniscience; given it, with every condition listed each coupling recurs or stops, and every schedule settles.",
+      "declarations": [
+        "Becoming.Frequency.readsLate",
+        "Becoming.Frequency.readsLate_of_couplesAt",
+        "Becoming.Frequency.couplesAt_of_readsLate",
+        "Becoming.RecursOrStops",
+        "Becoming.RecursOrStops.lpo",
+        "Becoming.recurs_or_stops",
+        "Becoming.settled_of_recursOrStops"
+      ]
+    },
+    {
+      "zh": "在判定的序列 q 第一次为真之步耦合的自环至多耦合一次，不复现；它安定时 q 某处为真或处处为假。所以这些各至多耦合一次的时程都安定，就给出有限全知原则。",
+      "en": "The self-loop coupling at the first step at which a decided sequence q is true couples at most once and does not recur; where it settles, q is true somewhere or false throughout. So that these schedules, each coupling at most once, all settle gives the limited principle of omniscience.",
+      "declarations": [
+        "Becoming.Frequency.First.strengths",
+        "Becoming.Frequency.First.of_couplesAt",
+        "Becoming.Frequency.First.couplesAt_first",
+        "Becoming.Frequency.First.once",
+        "Becoming.Frequency.First.not_recurs",
+        "Becoming.Frequency.First.decides",
+        "Becoming.lpo_of_settled"
+      ]
+    },
+    {
+      "zh": "在第 s 步之后、到第 s 行的各行都已在某处为真之步读第 s 步水平的自环，复现恰在每行都在某处为真处；它安定时，有限全知原则判定到其安定之步的各行，二分成立。所以一个条件回到自身的每个时程都安定，与条件全部列出的每个世界的每个时程都安定，各恰是这一二分。",
+      "en": "The self-loop reading level s once every row up to s has been true somewhere recurs exactly where every row is; where it settles, the limited principle of omniscience decides the rows up to its settling step, and the dichotomy follows. So every schedule of one condition returning to itself settling, and every schedule of every world with its conditions listed settling, are each exactly the dichotomy.",
+      "declarations": [
+        "Becoming.ListTests.or_cases",
+        "Becoming.ListTests.or_left",
+        "Becoming.ListTests.or_right",
+        "Becoming.Frequency.Rows.anyUpTo",
+        "Becoming.Frequency.Rows.allUpTo",
+        "Becoming.Frequency.Rows.anyUpTo_of",
+        "Becoming.Frequency.Rows.anyUpTo_true",
+        "Becoming.Frequency.Rows.allUpTo_true",
+        "Becoming.Frequency.Rows.allUpTo_of",
+        "Becoming.Frequency.Rows.found",
+        "Becoming.Frequency.Rows.strengths",
+        "Becoming.Frequency.Rows.found_of_couplesAt",
+        "Becoming.Frequency.Rows.couplesAt_of_found",
+        "Becoming.Frequency.Rows.witnessed",
+        "Becoming.Frequency.Rows.couplesAt_of_rows",
+        "Becoming.Frequency.Rows.recurs_iff",
+        "Becoming.Frequency.Rows.decide_rows",
+        "Becoming.settled_iff_recursOrStops",
+        "Becoming.settled_every_iff"
+      ]
+    },
+    {
+      "zh": "Becoming.Loops 的自环每步耦合，携带 D·(1 + M)^t；Becoming.Closing 在第 T 步形成的回路自 T 起每步耦合，在 T + r 携带 D·2^r。经 gap_le_carried，速度约束每个有这些强度的律中两个平衡的流之差。",
+      "en": "The self-loop of Becoming.Loops couples at every step and carries D·(1 + M)^t; the loop of Becoming.Closing forming at T couples at every step from T and carries D·2^r at T + r. Through gap_le_carried the rate bounds every gap between two balanced flows of every law with the strengths.",
+      "declarations": [
+        "Becoming.Frequency.count_always",
+        "Becoming.Frequency.count_before",
+        "Becoming.Frequency.count_from",
+        "Becoming.Frequency.SelfLoop.always",
+        "Becoming.Frequency.SelfLoop.always_carried",
+        "Becoming.Frequency.SelfLoop.onset",
+        "Becoming.Frequency.SelfLoop.onset_amount",
+        "Becoming.gap_le_count"
+      ]
+    },
+    {
+      "zh": "在世界中：在时程标记之步以强度 M 耦合、起始之差为 D 的自环世界平衡，其位是 D·(1 + M)^a，a 是至今标记的步数；M、D 至少为一时，其位有多项式界恰在 2^a 有处；稀疏时程上 M、D 为正时，耦合复现，位至多 D·2^M·(t + 1)^M，所携带的量没有一个有限阶精确。",
+      "en": "In a world: the world of a self-loop of strength M coupling at the steps a schedule marks, from a gap D, balances and stands at D·(1 + M)^a, a the marked steps so far; with M and D at least one its standing is polynomially bounded exactly where 2^a is; on the sparse schedule, M and D positive, its coupling recurs, its standing is at most D·2^M·(t + 1)^M, and no finite order of the carried amount is exact.",
+      "declarations": [
+        "Becoming.FormedLoops.scheduleWorld",
+        "Becoming.FormedLoops.scheduleWorld_course",
+        "Becoming.FormedLoops.sparseWorld_course"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。耦合强度 k 是给出的界，时程 on 是给出的判定的序列；条件的列表任意，列出每个条件只在写入 every 的定理中。",
+      "en": "No axiom. The coupling strengths k are supplied bounds and the schedule on a supplied decided sequence; the list of conditions is arbitrary, every condition being listed only where a theorem writes every."
+    },
+    {
+      "zh": "速度的定理中部分在起始之后不给差、起始之差至多 D、每步进入每个条件的强度至多 M、在未标出的步为零；二分 RecursOrStops 用到时作为假设写入，不假定，安定的时程亦然。",
+      "en": "In the rate, the part giving no gap after the start, starting gaps at most D, and the strengths into each condition at most M at each step and zero at unmarked steps; the dichotomy RecursOrStops, where used, is written in as a hypothesis, never assumed, and so are settled schedules."
+    },
+    {
+      "zh": "对一切律的速度（gap_le_count）中条件全部列出，条件的相等可判定只在其证明中经 gap_le_carried 用到。",
+      "en": "In the rate for every law (gap_le_count), every condition listed, with decided equality of conditions used only in its proof, through gap_le_carried."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "每个时程都安定：它恰是 RecursOrStops，给出有限全知原则；读作 Σ⁰₂ 排中（Akama、Berardi、Hayashi、Kohlenbach 2004）是引用，未在 Lean 中证明。",
+      "en": "That every schedule settles: it is exactly RecursOrStops, which gives the limited principle of omniscience; reading it as Σ⁰₂ excluded middle (Akama, Berardi, Hayashi and Kohlenbach 2004) is cited, not proved in Lean.",
+      "kind": "scope"
+    },
+    {
+      "zh": "上游有复现耦合的回路不推出失控：稀疏的自环复现，所携带的量却有多项式界。",
+      "en": "A loop of recurring couplings upstream does not imply runaway: the sparse self-loop recurs, yet its carried amount is bounded by a polynomial.",
+      "kind": "non-implication",
+      "witness": "Becoming.Frequency.Sparse.polynomial"
+    },
+    {
+      "zh": "自环之外，能到达的最大差别是否达到按返回的下界或按耦合之步的上界；给定强度的谱半径。",
+      "en": "Whether, beyond the self-loop, the most difference that can arrive meets the bound by returns or the bound by coupling steps; the spectral radius of given strengths.",
+      "kind": "scope"
+    },
+    {
+      "zh": "实数的量（正的强度可小于一，收缩的强度可使频繁的返回不失控）；一个给定的律的耦合多常作用；连续时间。",
+      "en": "Real amounts, where a positive strength may be below one and shrinking strengths could keep frequent returns from running away; how often a given law's couplings act; continuous time.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
+      "detail": {
+        "zh": "稀疏的自环：一个条件在第 0、1、3、7、……步把水平送回自身；耦合复现，每个有限阶都有所漏，所携带的量却至多是 D·2^M·(t + 1)^M：复现耦合的回路不一定失控。",
+        "en": "The sparse self-loop: one condition returning its level to itself at steps 0, 1, 3, 7, …; its coupling recurs and every finite order misses something, yet the carried amount is at most D·2^M·(t + 1)^M: a loop of recurring couplings need not run away."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
+      "detail": {
+        "zh": "第一个真者的自环：在判定的序列第一次为真之步耦合，至多一次；这些时程都安定就给出有限全知原则：每个时程都安定至少与这一原则一样强。",
+        "en": "The self-loop at the first true step: it couples at the step a decided sequence is first true, at most once; that all these schedules settle gives the limited principle of omniscience: every schedule settling is at least as strong as that principle."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T220109.090247Z）：Becoming.Frequency 的 98 项声明（83 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §158；经第十八次审查（AI，只读，未重建 Lean）审阅，其更正已处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T220109.090247Z): the 98 declarations of Becoming.Frequency, 83 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 158; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
+  },
+  "next_delta": {
+    "zh": "自环之外，按返回的下界与按耦合之步的上界何者达到；自环之外，多项式增长是否只取决于哪些耦合作用、不取决于其正的强度；给定强度的谱半径（实数的量）；从进程读出的强度多常作用；独立审查。",
+    "en": "Which of the bound by returns and the bound by coupling steps is met beyond the self-loop; whether, beyond it, polynomial growth depends only on which couplings act, not on their positive strengths; the spectral radius of given strengths (real amounts); how often strengths read off the course act; an independent review."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-12 问回路：“how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”；2026-10-16 Ren 称 AI 对“只有回路使差别失控”的读法是对的（“your read on this is right”），那一读法把只在某些步成立的耦合留为开放。本结果回答 what-a-cut-loses 的 next_delta 前两项。读法（AI 的，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：失控多快由耦合多常作用定：返回频繁则失控（强度为自然数、正的强度至少为一时；强度小于一时不必如此），耦合之步稀少则不论强度都是多项式，强度只改变大小；对自环，耦合多常作用恰好决定。只在某些步耦合的情形两个方向都已关闭：只有继续着的耦合的回路能使之失控，这样的回路不一定失控。每个时程都安定是一个推理原则，不是理论对展开断言或否认的事实。数学是标准的：只计作用之步的离散 Grönwall 型界，每次返回的加倍，以及 Σ⁰₂ 形式的排中。",
+    "en": "Ren, 12 October 2026, on the loops: “how how accurate can we do that uh what is the limitation do we have losses”, with the goal “move towards 100%”; on 16 October Ren called the AI's reading of “only a loop makes a difference run away” right (“your read on this is right”), a reading that left couplings at only some steps open. This result answers the first two items of what-a-cut-loses' next_delta. Readings (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): how fast a difference runs away is set by how often couplings act: frequent returns make it run away (with natural-number strengths, each positive one at least one; with strengths below one this need not follow) and rare coupling steps keep it polynomial whatever the strengths, strength changing only how large; for a self-loop how often it couples decides exactly. Couplings at only some steps are closed both ways: only a loop of the couplings that go on can make it run away, and such a loop need not. That every schedule settles is a principle of reasoning, not a fact the theory asserts or denies of the unfolding. The mathematics is standard: a discrete Grönwall bound counting only the steps that act, doubling at each return, and a Σ⁰₂ form of excluded middle."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
+  "aliases": [
+    "how often couplings act",
+    "耦合多常作用",
+    "frequency of couplings",
+    "耦合的频度",
+    "rate of a runaway",
+    "失控的速度",
+    "return around a loop",
+    "绕回路的返回",
+    "sparse self-loop",
+    "稀疏的自环",
+    "recurs or stops",
+    "复现或停止",
+    "every schedule settles",
+    "每个时程都安定",
+    "settling needs omniscience",
+    "安定需要全知"
+  ],
+  "dependencies": [
+    {
+      "id": "what-a-cut-loses",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用耦合（CouplesAt）、复现的耦合（CouplingRecurs）、安定的时程（SettledFrom）、couples_strengthsFrom_iff 与 carriedWithin_lt_of_recurring_loop：安定与失控按这些陈述。",
+        "en": "Reuses couplings at a step (CouplesAt), recurring couplings (CouplingRecurs), settled schedules (SettledFrom), couples_strengthsFrom_iff and carriedWithin_lt_of_recurring_loop: settling and runaway are stated through them."
+      },
+      "interface": {
+        "output": {
+          "zh": "一步的耦合；复现的耦合；安定的时程；复现耦合的回路使每个有限阶都有所漏。",
+          "en": "Couplings at a step; recurring couplings; settled schedules; a loop of recurring couplings making every finite order miss something."
+        },
+        "input": {
+          "zh": "按时间次序的返回；停止的耦合与局部的安定；安定恰是二分；稀疏的自环每个有限阶都有所漏。",
+          "en": "Returns in time order; couplings that stop and settling as local; settling as exactly the dichotomy; every finite order of the sparse self-loop missing something."
+        },
+        "conditions": {
+          "zh": "耦合强度是给出的界；条件的列表任意。",
+          "en": "The coupling strengths as supplied bounds; any list of conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean"
+      }
+    },
+    {
+      "id": "how-a-carried-difference-grows",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 inflow、total_give_le_inflow、carried_mono_steps、carriedGive_of_rest、carriedWithin、自环与幂的引理：速度是 carried_le_geomBound 只在作用之步计的同一归纳。",
+        "en": "Reuses inflow, total_give_le_inflow, carried_mono_steps, carriedGive_of_rest, carriedWithin, the self-loop and the lemmas on powers: the rate is the induction of carried_le_geomBound counting only the steps that act."
+      },
+      "interface": {
+        "output": {
+          "zh": "进入一个条件的强度；一步的给出至多是它乘以所读的；自环；幂的单调与乘法。",
+          "en": "The strengths into a condition; a step's giving at most these times what is read; the self-loop; monotonicity and products of powers."
+        },
+        "input": {
+          "zh": "按耦合作用之步计数的速度；时程上的自环；Loops 的自环作为每步耦合的实例。",
+          "en": "The rate counting the steps at which couplings act; the self-loop on a schedule; Loops' self-loop as the instance coupling at every step."
+        },
+        "conditions": {
+          "zh": "部分在起始之后不给差；起始之差与强度的界给出。",
+          "en": "The part giving no gap after the start; bounds on starting gaps and strengths supplied."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean"
+      }
+    },
+    {
+      "id": "how-loops-form",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 carriedGive_congr_strength、Naturals.ble_false_of_lt 与 Closing.Onset：在 T 形成的回路是自 T 起耦合的时程。",
+        "en": "Reuses carriedGive_congr_strength, Naturals.ble_false_of_lt and Closing.Onset: the loop forming at T is the schedule coupling from T on."
+      },
+      "interface": {
+        "output": {
+          "zh": "强度逐点相同时给出相同；在 T 形成的自环及其量。",
+          "en": "Equal giving under pointwise equal strengths; the self-loop forming at T and its amount."
+        },
+        "input": {
+          "zh": "时程上的自环；形成之后的量作为实例。",
+          "en": "The self-loop on a schedule; the amount after formation as an instance."
+        },
+        "conditions": {
+          "zh": "强度是给出的。",
+          "en": "The strengths supplied."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean"
+      }
+    },
+    {
+      "id": "how-much-difference-arrives",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 carried、carriedGive、carried_succ、gap、Conveyed 与 gap_le_carried：速度经 gap_le_carried 约束每个律之差。",
+        "en": "Reuses carried, carriedGive, carried_succ, gap, Conveyed and gap_le_carried: through gap_le_carried the rate bounds the gaps of every law."
+      },
+      "interface": {
+        "output": {
+          "zh": "所携带的量及其一步；它约束每个有这些强度的律之差。",
+          "en": "The carried amount and its step; it bounds the gaps of every law with the strengths."
+        },
+        "input": {
+          "zh": "速度、返回的加倍与对一切律的速度。",
+          "en": "The rate, the doubling at returns and the rate for every law."
+        },
+        "conditions": {
+          "zh": "对一切律时条件全部列出，条件的相等可判定只在证明中。",
+          "en": "For every law, every condition listed, with decided equality of conditions only in proofs."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean"
+      }
+    },
+    {
+      "id": "coming-and-ceasing-keep-pace",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 LPO、clear 与第一个真者的引理（Clear.or_first、Clear.first_of_true、Clear.first_unique 等）：只耦合一次的自环与二分给出有限全知原则。",
+        "en": "Reuses LPO, clear and the lemmas on the first true step (Clear.or_first, Clear.first_of_true, Clear.first_unique and others): the self-loop coupling once and the dichotomy give the limited principle of omniscience."
+      },
+      "interface": {
+        "output": {
+          "zh": "有限全知原则；判定序列中至今未真之标记与第一个真者。",
+          "en": "The limited principle of omniscience; the mark of a decided sequence not yet true, and its first true step."
+        },
+        "input": {
+          "zh": "每个时程都安定给出有限全知原则；二分给出它；有限全知原则判定有限多行。",
+          "en": "Every schedule settling gives the limited principle of omniscience; so does the dichotomy; that principle decides finitely many rows."
+        },
+        "conditions": {
+          "zh": "序列是判定的。",
+          "en": "The sequences decided."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 le_succ_cases：至多 n + 1 者至多 n 或等于 n + 1。",
+        "en": "Reuses le_succ_cases: what is at most n + 1 is at most n or equals n + 1."
+      },
+      "interface": {
+        "output": {
+          "zh": "自然数的分情形。",
+          "en": "Case analysis on natural numbers."
+        },
+        "input": {
+          "zh": "稀疏的时程的界与计数。",
+          "en": "The bounds and the count of the sparse schedule."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "what-a-cut-loses",
+      "detail": {
+        "zh": "回答其下一步的前两项：每个时程都安定恰是一个推理原则；复现耦合的回路不一定失控，返回频繁时失控，速度按耦合作用之步计。",
+        "en": "Answers the first two items of its next step: every schedule settling is exactly a principle of reasoning; a loop of recurring couplings need not run away, runs away where returns are frequent, and the rate counts the steps at which couplings act."
+      }
+    },
+    {
+      "id": "how-a-carried-difference-grows",
+      "detail": {
+        "zh": "其几何之界只在耦合作用之步计数仍成立且由自环达到；Ren 认为对的读法“只有回路使差别失控”中只在某些步成立的耦合，两个方向都已关闭。",
+        "en": "Its geometric bound holds counting only the steps at which couplings act and is attained by a self-loop; in the reading Ren called right, “only a loop makes a difference run away”, couplings at only some steps are closed both ways."
+      }
+    },
+    {
+      "id": "how-loops-form",
+      "detail": {
+        "zh": "在 T 形成的自环是自 T 起每步耦合的时程，形成之后加倍是速度的实例。",
+        "en": "The self-loop forming at T is the schedule coupling at every step from T, and its doubling after formation is an instance of the rate."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
+      "role": "proof",
+      "sha256": "2b8c53d86dae3e457ebe44d584f6344a059d8c431a47e638b65a28aefedc1df1",
+      "declarations": [
+        "Becoming.Frequency.count",
+        "Becoming.Frequency.count_succ_on",
+        "Becoming.Frequency.count_succ_off",
+        "Becoming.Frequency.bif_le",
+        "Becoming.Frequency.count_le_succ",
+        "Becoming.Frequency.count_mono",
+        "Becoming.Frequency.count_le",
+        "Becoming.Frequency.marked_between",
+        "Becoming.Frequency.recurs_of_unbounded",
+        "Becoming.Frequency.step_eq",
+        "Becoming.Frequency.succ_le_two_pow",
+        "Becoming.Frequency.pow_le_two_pow_pow",
+        "Becoming.inflow_congr_strength",
+        "Becoming.carried_le_count",
+        "Becoming.carried_le_of_rare",
+        "Becoming.Frequency.coupling",
+        "Becoming.Frequency.quiet_coupling",
+        "Becoming.carried_le_coupling",
+        "Becoming.Frequency.SelfLoop.strengths",
+        "Becoming.Frequency.SelfLoop.strengths_on",
+        "Becoming.Frequency.SelfLoop.strengths_off",
+        "Becoming.Frequency.SelfLoop.give",
+        "Becoming.Frequency.SelfLoop.inflow_eq",
+        "Becoming.Frequency.SelfLoop.into",
+        "Becoming.Frequency.SelfLoop.quiet",
+        "Becoming.Frequency.SelfLoop.carried_eq",
+        "Becoming.Frequency.SelfLoop.polynomial_iff",
+        "Becoming.carried_step_ge_at",
+        "Becoming.ChainInTime",
+        "Becoming.ChainInTime.start_le",
+        "Becoming.carried_along_in_time",
+        "Becoming.RoundTrip",
+        "Becoming.RoundTrip.of_couplesAt",
+        "Becoming.carried_doubles_roundTrip",
+        "Becoming.carried_roundTrip",
+        "Becoming.runaway_of_roundTrip",
+        "Becoming.Frequency.SelfLoop.couplesAt",
+        "Becoming.Frequency.SelfLoop.recurs",
+        "Becoming.Frequency.SelfLoop.roundTrip",
+        "Becoming.Frequency.SelfLoop.couplesAt_iff",
+        "Becoming.Frequency.Sparse.marks",
+        "Becoming.Frequency.Sparse.on",
+        "Becoming.Frequency.Sparse.count_eq",
+        "Becoming.Frequency.Sparse.bounds",
+        "Becoming.Frequency.Sparse.double_eq",
+        "Becoming.Frequency.Sparse.rare",
+        "Becoming.Frequency.Sparse.unbounded",
+        "Becoming.Frequency.Sparse.often",
+        "Becoming.Frequency.Sparse.recurs",
+        "Becoming.Frequency.Sparse.inexact",
+        "Becoming.Frequency.Sparse.polynomial",
+        "Becoming.StopsBy",
+        "Becoming.StopsBy.mono",
+        "Becoming.StopsBy.not_recurs",
+        "Becoming.Frequency.bound_list",
+        "Becoming.settled_of_each",
+        "Becoming.Frequency.readsLate",
+        "Becoming.Frequency.readsLate_of_couplesAt",
+        "Becoming.Frequency.couplesAt_of_readsLate",
+        "Becoming.RecursOrStops",
+        "Becoming.RecursOrStops.lpo",
+        "Becoming.recurs_or_stops",
+        "Becoming.settled_of_recursOrStops",
+        "Becoming.Frequency.First.strengths",
+        "Becoming.Frequency.First.of_couplesAt",
+        "Becoming.Frequency.First.couplesAt_first",
+        "Becoming.Frequency.First.once",
+        "Becoming.Frequency.First.not_recurs",
+        "Becoming.Frequency.First.decides",
+        "Becoming.lpo_of_settled",
+        "Becoming.Frequency.Rows.anyUpTo",
+        "Becoming.Frequency.Rows.allUpTo",
+        "Becoming.Frequency.Rows.anyUpTo_of",
+        "Becoming.Frequency.Rows.anyUpTo_true",
+        "Becoming.Frequency.Rows.allUpTo_true",
+        "Becoming.Frequency.Rows.allUpTo_of",
+        "Becoming.Frequency.Rows.found",
+        "Becoming.Frequency.Rows.strengths",
+        "Becoming.Frequency.Rows.found_of_couplesAt",
+        "Becoming.Frequency.Rows.couplesAt_of_found",
+        "Becoming.Frequency.Rows.witnessed",
+        "Becoming.Frequency.Rows.couplesAt_of_rows",
+        "Becoming.Frequency.Rows.recurs_iff",
+        "Becoming.Frequency.Rows.decide_rows",
+        "Becoming.settled_iff_recursOrStops",
+        "Becoming.settled_every_iff",
+        "Becoming.Frequency.count_always",
+        "Becoming.Frequency.count_before",
+        "Becoming.Frequency.count_from",
+        "Becoming.Frequency.SelfLoop.always",
+        "Becoming.Frequency.SelfLoop.always_carried",
+        "Becoming.Frequency.SelfLoop.onset",
+        "Becoming.Frequency.SelfLoop.onset_amount",
+        "Becoming.gap_le_count"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "declarations": [
+        "Becoming.ListTests.or_cases",
+        "Becoming.ListTests.or_left",
+        "Becoming.ListTests.or_right",
+        "Becoming.beq_self",
+        "Becoming.mul_assoc_nat",
+        "Becoming.add_mul_split",
+        "Becoming.mul_turn",
+        "Becoming.Naturals.ble_false_of_lt",
+        "Becoming.Naturals.add_congr",
+        "Becoming.ListTests.and_left",
+        "Becoming.ListTests.and_right",
+        "Becoming.cond_le_one"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
+      "role": "proof",
+      "sha256": "665ab3fcf678fb6185171e434427f714cab81c90b5c962150d9924319bcad206",
+      "declarations": [
+        "Becoming.CouplesAt",
+        "Becoming.CouplingRecurs",
+        "Becoming.SettledFrom",
+        "Becoming.carriedWithin_lt_of_recurring_loop",
+        "Becoming.couples_strengthsFrom_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "role": "proof",
+      "sha256": "bf7312467205ebaa7b4a2a30150d520bc01edbbc548adc8e50a58dbf2b00106f",
+      "declarations": [
+        "Becoming.inflow",
+        "Becoming.total_give_le_inflow",
+        "Becoming.carriedWithin",
+        "Becoming.carriedGive_of_rest",
+        "Becoming.carried_mono_steps",
+        "Becoming.Loops.zero_or_pos",
+        "Becoming.Loops.le_mul_of_pos",
+        "Becoming.Loops.one_add_mul",
+        "Becoming.Loops.pow_mul_nat",
+        "Becoming.Loops.mul_pow_nat",
+        "Becoming.Loops.pow_le_pow_base",
+        "Becoming.Loops.pow_le_pow_exp",
+        "Becoming.Loops.two_pow_succ",
+        "Becoming.Loops.lt_two_pow",
+        "Becoming.Loops.SelfLoop.strengths",
+        "Becoming.Loops.SelfLoop.give",
+        "Becoming.Loops.SelfLoop.inflow_eq"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
+      "role": "proof",
+      "sha256": "5c27208d99979b3943bc949437c36db1a4f79e54aa008eed76d3578350b59d32",
+      "declarations": [
+        "Becoming.carriedGive_congr_strength",
+        "Becoming.Closing.Onset.strengths",
+        "Becoming.Closing.Onset.amount"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "role": "proof",
+      "sha256": "999c73a26839f1bc5c36c2cd1ca48c49cad0f428b35e6728e73d97b20a95dcf4",
+      "declarations": [
+        "Becoming.carried",
+        "Becoming.carriedGive",
+        "Becoming.carried_succ",
+        "Becoming.gap",
+        "Becoming.gap_le_carried",
+        "Becoming.Conveyed",
+        "Becoming.Flow.exchangeGap",
+        "Becoming.ExchangeLaw.RespondsWithin",
+        "Becoming.Propagation.cond_same",
+        "Becoming.Propagation.mem_steps_upto",
+        "Becoming.Propagation.le_of_mem_steps_upto"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "sha256": "1be380343ae5a2b019fb355cee08c038404c14b9fcb2e1681e6e61b236a3fa00",
+      "declarations": [
+        "Becoming.LPO",
+        "Becoming.clear",
+        "Becoming.Clear.false_of_not",
+        "Becoming.Clear.not_both",
+        "Becoming.Clear.and_both",
+        "Becoming.Clear.false_before",
+        "Becoming.Clear.or_first",
+        "Becoming.Clear.first_of_true",
+        "Becoming.Clear.first_unique"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b",
+      "declarations": [
+        "Becoming.le_succ_cases"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024",
+      "declarations": [
+        "Becoming.Flow.Balances",
+        "Becoming.steps",
+        "Becoming.total_congr",
+        "Becoming.total_pos",
+        "Becoming.total_pos_of_mem",
+        "Becoming.le_total_of_mem"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "role": "proof",
+      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe",
+      "declarations": [
+        "Becoming.Flow",
+        "Becoming.Web",
+        "Becoming.total"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "c4916cbf4ee72134c14a7573780ac76acbde0d256ca2799012253f5e23d89fd8",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.ExchangeLaw.Nonanticipating",
+        "Becoming.Flow.Follows"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
+      "role": "provenance",
+      "sha256": "cf83ac3219b39f47641327d95eb072286d6bd0b21452ab9351642abd895879bc"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T220109.090247Z/verification.json",
+      "role": "receipt",
+      "sha256": "328a01d620debc9fe488dd86618d2cd889219c422292ec1493eade23e2fe7cad",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FormedLoops.lean",
+      "role": "proof",
+      "sha256": "98b203dced0b1ef1438953f2b4e73ad86ab7f0297d177303b024ba52ccf10da9",
+      "declarations": [
+        "Becoming.FormedLoops.scheduleWorld",
+        "Becoming.FormedLoops.scheduleWorld_course",
+        "Becoming.FormedLoops.sparseWorld_course"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "role": "receipt",
+      "sha256": "2904fa10cde6e9a5fd2db9bc2cfd798f510246af636b3f60985b78e9cb12d4fa",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frequency",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Remainder",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Loops",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Closing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Propagation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Change",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FormedLoops.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FormedLoops",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.World",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，回答 what-a-cut-loses 的 next_delta 前两项（每个时程是否安定及其确切强度；复现耦合的回路是否都使之失控、多快）（P123）；研究 §158。",
+      "en": "16 October 2026: added, answering the first two items of what-a-cut-loses' next_delta (whether every schedule settles and the exact strength of that claim; whether every loop of recurring couplings makes the difference run away, and how fast) (P123); study section 158."
+    },
+    {
+      "zh": "2026年10月16日，P125（Becoming.Observation，研究第159节）落地，并带 Ren 对 P124 读法的同意：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（加入第159节（Becoming.Observation）及英文段；第157节加 Ren 的决定一段；此前各节其余不变）。",
+      "en": "16 October 2026, landing P125 (Becoming.Observation, study section 159) with Ren's agreement with P124's readings: rebound to the new receipt and rehashed: BECOMING-RENEWAL-READING.md (section 159 (Becoming.Observation) and its English paragraph added; section 157 gains a paragraph on Ren's decision; earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P126（Becoming.Tail，研究第160节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入整体而无部分之律一段，§8 的反馈与所及（反例存在的确切强度已给出），§9 加一行与术语；回执与合计改据新运行（7061 项定理、9713 项声明审计，核心闭包 125 个模块，包 130 个））。",
+      "en": "16 October 2026, landing P126 (Becoming.Tail, study section 160): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on a law of the whole and no part, §8 under feedback and reach (the exact strength of a counterexample's existence is given), §9 gains a row and glossary entries; receipt and totals moved to the new run (7061 theorems, 9713 declaration audits, core closure 125 modules, package 130))."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：陈述原说“不论强度，返回频繁则失控”：加倍只因强度为自然数、正的强度至少为一（审查第 25 项，O4；does_not_show 3 已承认实数的情形）；陈述与读法改为自然数的情形，“不论强度”只留给耦合稀少的多项式界。RecursOrStops 是 Σ⁰₂ 层级的排中：它推出 Σ⁰₂ 排中，反过来 Σ⁰₂ 排中给出有限全知原则从而给出 Markov 原则，再给出 RecursOrStops；这一等同是标准论证，未经 Lean 检查。陈述与 does_not_show 0 现在写“恰是 Σ⁰₂ 排中”，并记 Akama–Berardi–Hayashi–Kohlenbach 2004（第 30 项，U3、K4）。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): the statement said frequent returns run away “whatever the strengths”: the doubling holds only because strengths are natural numbers, a positive one at least one (review item 25, O4; does_not_show 3 already conceded real amounts); the statement and the reading now state the natural-number case, “whatever the strengths” staying with the polynomial bound for rare couplings. RecursOrStops is excluded middle at level Σ⁰₂: it gives Σ⁰₂ excluded middle, and conversely Σ⁰₂ excluded middle gives LPO, hence Markov's principle, hence RecursOrStops; this identification is the standard argument, not Lean-checked. The statement and does_not_show 0 now say “exactly Σ⁰₂ excluded middle”, naming Akama–Berardi–Hayashi–Kohlenbach 2004 (item 30, U3 and K4). Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Frequency.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Remainder.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Loops.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Propagation.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Frequency.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Remainder.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Loops.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Propagation.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.FormedLoops 把自环与稀疏时程的见证陈述为平衡的世界（scheduleWorld），其律引自 Frequency，不再证明；新增一条律及其 3 项声明，绑定回执 20261016T124157.989030Z；研究 §165，记录 two-act-worlds-carry-the-difference（其中按耦合之步的界与失控陈述在两种作为的世界上）。安定的校准对每个时程量化，没有在世界上重述。断言与状态不变。",
+      "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.FormedLoops states the self-loop and sparse-schedule witnesses as balanced worlds (scheduleWorld), their laws cited from Frequency, not proved again; one law with its 3 declarations added, bound to receipt 20261016T124157.989030Z; study section 165, record two-act-worlds-carry-the-difference (where the bound by coupling steps and the runaway are stated on two acts' worlds). The settling calibrations quantify over every schedule and are not restated on worlds. Claim and status unchanged."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 B6、C10、records-a-l-16 项：验证范围原说“未经独立审查”，而第十八次审查（R18）已审阅并更正本记录；R18 是 AI 的只读审查，未重建 Lean，所以写作“经第十八次审查（AI，只读）审阅”，不写“独立”。下一步中的独立审查保留：R18 是否算作所要求的审查由 Ren 定；家族由 F07（显式公理下的实践判断，前提 G0/J）改为 F01（关系核心）：本记录不用伦理前提、不用公理，是第一部分的结构结果；会话图尚无第一部分专属家族，F01 是现有家族中正确的一个；未表明 1 写明 RecursOrStops 与 Σ⁰₂ 排中的等同是引用的读法，不是 Lean 定理（Frequency.lean 只证 settled_every_iff 与 lpo_of_settled）。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items B6, C10, records-a-l-16: the validation scope said \"not independently reviewed\", while the eighteenth review (R18) read and corrected this record; R18 is an AI read-only review with no Lean rebuild, so it now says \"reviewed by the eighteenth review (AI, read-only)\", not \"independently\". The independent review in the next step stays: whether R18 counts as the review asked for is Ren's decision; family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one; does_not_show 1 now says that identifying RecursOrStops with Σ⁰₂ excluded middle is a cited reading, not a Lean theorem (Frequency.lean proves settled_every_iff and lpo_of_settled only). Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: “Ren's judgment on the readings” replaced by “a judgment on the readings”, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Closing.lean, Frequency.lean, Loops.lean, Propagation.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Counterfactual.lean, ExchangeLaw.courseWeb is added and ExchangeLaw.world is now World.ofKind of the course's flow and that web, definitionally the same; in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Counterfactual.lean, Propagation.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the readings taken by Ren with the natural-number scope already in them (DELEGATED-CHOICES D43); the judgment on the readings leaves the next step. The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：读法由 Ren 取，自然数的范围已在读法之中（DELEGATED-CHOICES D43）；对读法的判断移出下一步。论断不变。"
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G3（Becoming.LawAlongRun）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: Flow from Flow.lean to World.lean; Web from Dependence.lean to World.lean; total from Generation.lean to World.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Flow.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Closing.lean, Counterfactual.lean, Propagation.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the \"Seeking, capture and runaway\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, G5 (Becoming.LawThroughChangingCoupling): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，G5（Becoming.LawThroughChangingCoupling）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
+      "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R19 (the review of 19 October, fixed): THE-THEORY-OF-BECOMING.md re-pointed after reading the change. R19 changed wording only: living significance is stated as the Lean shows (significance from every standpoint, no valence; the `living` readings do not include further generation); reasons replace Ren's past words where they served as warrant or standing; review bookkeeping was dropped; a link follows a chapter moved to history. No line this record relies on changed its content. The claim is unchanged.",
+      "zh": "2026年10月19日，R19（10月19日审查的修正）：THE-THEORY-OF-BECOMING.md 读过改动后重新指向。R19 只改措辞：生命意义按 Lean 所证陈述（从每个立足点都有意义，不带正负；`living` 的读法不含继续生成）；以理由取代把 Ren 过去的话当作依据或地位之处；删去审查记账；一处链接随移入历史的章节更新。本记录所依的文字内容未变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V (what a collective's continuation needs): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: V added the section 4 subsection on what a collective's continuation needs, answered the section 7.7 question for loops, added a section 8.2 row and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，V（集体延续所需）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 (Becoming.HexagramPlaces): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: Y2 added the section 1 paragraph on the relations of the places with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2（Becoming.HexagramPlaces）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V2 (thresholds of waiting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: V2 added the section 4 paragraph on thresholds of waiting and the laws that restore giving, revised the section 4 table row and reading on cooperation among strangers and the section 8.2 \"Collective continuation\" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，V2（等待的阈值）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, HS (sums over histories by support, horizon and exact order): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: HS added the paragraph on support, splitting, exact orders and the steps between after the orders as a sum over histories, narrowed the open grouping by exactly i responses in the section 8.2 row of laws of exchange, coupling and loops and linked its record there, added a rerun to the section 8.2 integration row, and updated the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，HS（历史之和：支撑、视界与确切阶）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Closing.lean, Counterfactual.lean, FormedLoops.lean, Propagation.lean, Recurrence.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): Frequency.lean, Propagation.lean, Remainder.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Frequency.lean, documentation only (no name, statement or proof changed): readings labelled D43; Propagation.lean, documentation only (no name, statement or proof changed): readings labelled D39; Remainder.lean, documentation only (no name, statement or proof changed): readings labelled D43. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Frequency.lean、Propagation.lean、Remainder.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Frequency.lean，只改说明（名称、陈述与证明不变）：读法标为 D43；Propagation.lean，只改说明（名称、陈述与证明不变）：读法标为 D39；Remainder.lean，只改说明（名称、陈述与证明不变）：读法标为 D43。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：THE-THEORY-OF-BECOMING.md，第十九次审查的修正：措辞对齐 Lean 所陈述的，读法标上其决定，§8.8 与 §9 的根、计数与回执更新。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Recurrence.lean, World.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged; World.lean, Dependence and WebAt moved in; Web is Dependence Nat; World is a relatum type with its history, a run of every step, read by World.web, World.flow and World.move, built by World.of; imports the frame; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Recurrence.lean、World.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变；World.lean，Dependence 与 WebAt 移入；Web 即 Dependence Nat；World 是关系项类型及其历史（每一步之运行），由 World.web、World.flow、World.move 读出，由 World.of 构造；导入框架；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Counterfactual.lean, Recurrence.lean, Remainder.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; Remainder.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Counterfactual.lean、Recurrence.lean、Remainder.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；Remainder.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Frequency.SelfLoop.returns (now Frequency.SelfLoop.roundTrip); Returns (now RoundTrip); Returns.of_couplesAt (now RoundTrip.of_couplesAt); carried_doubles_return (now carried_doubles_roundTrip); carried_returns (now carried_roundTrip); runaway_of_returns (now runaway_of_roundTrip). Proof bindings (Flow.lean, Frequency.lean, Recurrence.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Frequency.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Frequency.SelfLoop.returns（现为 Frequency.SelfLoop.roundTrip）；Returns（现为 RoundTrip）；Returns.of_couplesAt（现为 RoundTrip.of_couplesAt）；carried_doubles_return（现为 carried_doubles_roundTrip）；carried_returns（现为 carried_roundTrip）；runaway_of_returns（现为 runaway_of_roundTrip）。证明绑定（Flow.lean、Frequency.lean、Recurrence.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Frequency.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Removed, with the statement kept under one name: Clear.and_left (now ListTests.and_left); Clear.and_right (now ListTests.and_right); Closing.ble_false_of_lt (now Naturals.ble_false_of_lt); Frequency.Rows.or_cases (now ListTests.or_cases); Frequency.Rows.or_left (now ListTests.or_left); Frequency.Rows.or_right (now ListTests.or_right); Loops.add_mul_nat (now add_mul_split); Loops.beq_self (now beq_self); Loops.mul_assoc_nat (now mul_assoc_nat); Loops.mul_left_comm_nat (now mul_turn); Propagation.add_congr (now Naturals.add_congr). The sentence that named a removed declaration names the kept one. Proof bindings (Change.lean, Closing.lean, Counterfactual.lean, Frequency.lean, Loops.lean, Propagation.lean, Remainder.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Change.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Closing.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Counterfactual.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Frequency.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Loops.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Propagation.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Remainder.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：删去，陈述以一个名称保留：Clear.and_left（现为 ListTests.and_left）；Clear.and_right（现为 ListTests.and_right）；Closing.ble_false_of_lt（现为 Naturals.ble_false_of_lt）；Frequency.Rows.or_cases（现为 ListTests.or_cases）；Frequency.Rows.or_left（现为 ListTests.or_left）；Frequency.Rows.or_right（现为 ListTests.or_right）；Loops.add_mul_nat（现为 add_mul_split）；Loops.beq_self（现为 beq_self）；Loops.mul_assoc_nat（现为 mul_assoc_nat）；Loops.mul_left_comm_nat（现为 mul_turn）；Propagation.add_congr（现为 Naturals.add_congr）。提到删去之声明的句子改提保留者。证明绑定（Change.lean、Closing.lean、Counterfactual.lean、Frequency.lean、Loops.lean、Propagation.lean、Remainder.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Change.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Closing.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Counterfactual.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Frequency.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Loops.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Propagation.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Remainder.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed, with the statement kept under one name: Frequency.bif_le_one (now cond_le_one). Proof bindings (Change.lean, Closing.lean, Counterfactual.lean, FormedLoops.lean, Frequency.lean, Loops.lean, Prelude.lean, Propagation.lean, Recurrence.lean, Remainder.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Change.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Closing.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Counterfactual.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; FormedLoops.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Frequency.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Loops.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Propagation.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Remainder.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：删去，陈述以一个名称保留：Frequency.bif_le_one（现为 cond_le_one）。证明绑定（Change.lean、Closing.lean、Counterfactual.lean、FormedLoops.lean、Frequency.lean、Loops.lean、Prelude.lean、Propagation.lean、Recurrence.lean、Remainder.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Change.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Closing.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Counterfactual.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；FormedLoops.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Frequency.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Loops.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Propagation.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Remainder.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/d0fe65197f275056/how-often-couplings-act.json",
+      "sha256": "d0fe65197f2750560b882a87814cd2e3b30f1cdeeed9c012f4b4893860934935",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
+}

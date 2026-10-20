@@ -329,39 +329,12 @@
       "en": "2026-10-13: reviewed new study §11; original §§1–10, theorem, hypotheses and historical receipt remain unchanged. Reconciled only the study-source hash after interpretive continuation; this result’s scientific content and original review time are unchanged."
     },
     {
-      "zh": "2026-10-13 P92：复用同律响应、回应闭包及原有限界，新增原生关系接续与成功／忽略信号见证；扩展既有成果而不另计独立发现，原源文及回执保留。",
-      "en": "2026-10-13 P92: reused common-law response, responsive closure and the original finite bound; added the native relational composition and successful/ignored-signal witnesses. Extends this result rather than counting a new independent discovery; original source and receipt retained."
-    },
-    {
       "zh": "2026-10-13 P94：按 Ren 的结论开放方向检验P92的平衡前提，保留原定量界，增加共同非零余项下的定性推广与遗漏／补记见证；依旧只扩展同一成果。",
       "en": "2026-10-13 P94: under Ren’s open-verdict direction, tested P92’s balance premise, retained its quantitative bound, and added qualitative generalization under common nonzero residuals with omission/accounting witnesses; extends the same result only."
     },
     {
-      "zh": "2026-10-13 P97：核读并接纳原研究新增§14，只协调研究来源指纹与后续入口；P94及更早的形式主张、源码、回执、证明前提和审阅时间保持。新增来源评估不被当作本结果的经验验证。",
-      "en": "2026-10-13 P97: reviewed and integrated study §14, reconciling its source fingerprint and next-work pointer only. P94 and earlier formal claims, sources, receipts, proof premises and review time remain unchanged. The source assessment is not treated as empirical validation of this result."
-    },
-    {
-      "zh": "2026-10-13 P101：核读研究新增§15，只协调来源指纹与接续入口。形式主张、前提、源码、回执及审阅时间保持；来源对应不是本定理的经验验证。",
-      "en": "2026-10-13 P101: reviewed new study section 15 and reconciled only its source fingerprint and next-work pointer. Formal claims, premises, sources, receipts and review time remain unchanged; source correspondence is not empirical validation of this theorem."
-    },
-    {
-      "zh": "2026-10-13 P104：移除新增导入和追加段可逐字恢复原外围；核读§16并更新当前回执绑定及模块数量。原定理范围不变，新增时间结论另有身份。",
-      "en": "2026-10-13 P104: removing the new import and appended section byte-recovers the old periphery. Reviewed section 16 and updated current receipt binding/counts. Original scope unchanged; temporal conclusion has its own identity."
-    },
-    {
-      "zh": "2026-10-13 P105：原理论段落逐字保留；更新新增划界讨论后的文档指纹，形式主张、前提与原通过回执不变。",
-      "en": "2026-10-13 P105: prior substantive passages are byte-preserved; refresh document bindings after appended demarcation discussion, with formal claims, premises and passed receipts unchanged."
-    },
-    {
       "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `FallibleInquiry.error_budgets_require_reach` → `FallibleInquiry.error_bounds_require_reach`；陈述、证明与定理数不变；Lean 源：FallibleInquiry 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）。本记录的主张、前提与状态不变，不记作重新证明。",
       "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `FallibleInquiry.error_budgets_require_reach` → `FallibleInquiry.error_bounds_require_reach`; statements, proofs and theorem counts unchanged; Lean sources: FallibleInquiry only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope). This record's claim, premises and status are unchanged; no reproof is credited."
-    },
-    {
-      "zh": "2026-10-16 I5（检查器加固，基础设施，不是成果）：check_fallible_inquiry.py 改用共享的继承回执结构匹配（已通过的回执须把模块名或路径映射到当前 sha256）、共享的 Lean 解析（`LEAN`、`elan which lean` 或默认路径）与 `BECOMING_OUT`；已读其差异。FallibleInquiry.lean 字节未变；重跑得回执 20261016T120403.241963Z（通过，31 项定理、37 项声明审计，公理同前；43 个继承模块的当前字节各有已通过的回执），绑定移到该回执，旧回执保留。主张、前提与状态不变，不记作重新证明。",
-      "en": "16 October 2026, I5 (checker hardening; infrastructure, not a result): check_fallible_inquiry.py now uses the shared structural match of inherited receipts (a passed receipt mapping the module's name or path to its current sha256), the shared Lean resolution (`LEAN`, `elan which lean` or the default path) and `BECOMING_OUT`; its diff was read. FallibleInquiry.lean's bytes are unchanged; the rerun gives receipt 20261016T120403.241963Z (passed, 31 theorems, 37 declaration audits, the same axioms; each of the 43 inherited modules' current bytes has a passed receipt), the binding moves to it and the older receipts are kept. The claim, premises and status are unchanged; no reproof is credited."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in SCIENTIFIC-INQUIRY-CONDITIONS.md, SCIENTIFIC-PHILOSOPHY-SOURCES.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     },
     {
       "en": "17 October 2026, wording of the public fields: the P-number P94 removed, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
@@ -371,6 +344,10 @@
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean. Rebound to receipt 20261019T000109.055377Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "2026-10-20: 7 bookkeeping notes condensed from 2026-10-13 to 17 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/cdaaecc8fafcb0bd/finite-fallible-inquiry-necessity.json and in git.",
+      "zh": "2026-10-20：7 条记账性说明合并（2026-10-13 至 17 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/cdaaecc8fafcb0bd/finite-fallible-inquiry-necessity.json 和 git 中。"
     }
   ]
 }

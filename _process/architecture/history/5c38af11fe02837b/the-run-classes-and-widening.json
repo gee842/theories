@@ -1,0 +1,270 @@
+{
+  "schema_version": 2,
+  "id": "the-run-classes-and-widening",
+  "title": {
+    "en": "The run classes and widening",
+    "zh": "整段的类与扩大"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-20T01:01:20+00:00",
+  "statement": {
+    "en": "Where only active formations take, a part whose draws fall on conditions renewed over the run does not narrow what can form, and a consumed dependence the levels without a part meet makes a part that opens nothing narrow. Neither class decides alone.",
+    "zh": "只有活跃的形成取用时，汲取都落在整段上被更新之条件上的部分不缩小能形成者；无此部分的水平所满足的被消耗依存，使不打开什么的部分缩小。两个类单独都不决定。"
+  },
+  "laws": [
+    {
+      "en": "In a balanced flow where only active formations take, and only from what they draw on, let every condition a member of a part draws on at some step be renewed over the run (every dependence on it kept at every step). Then the levels with the part include those without it, so the part does not narrow; a part of formations renewing over the run is a case.",
+      "zh": "在平衡的流中，只有活跃的形成取用，且只从它所汲取者取用；设部分的成员在某步所汲取的每个条件都在整段上被更新（对它的每个依存在每步都被满足）。则有此部分的水平包含无它的水平，部分不缩小；整段上更新的形成所成的部分是一个情形。",
+      "declarations": [
+        "Becoming.Flow.Balances.includes_of_renewed",
+        "Becoming.Flow.Balances.not_narrows_of_renewed",
+        "Becoming.Flow.Balances.includes_of_renewingIn"
+      ]
+    },
+    {
+      "en": "Let a dependence held at T be met at no step after it, let the part give each condition at every step no more than it takes, and let the levels without the part admit at a later step the formation whose dependence it was, held there at no smaller need. Then the levels without the part widen those with it.",
+      "zh": "设一个在 T 被持有的依存此后在任何一步都不被满足，部分在每步对每个条件所给不多于所取，无此部分的水平在后来某步接纳其依存所属的形成、该依存在那里以不小的所需被持有。则无此部分的水平扩大有它的水平。",
+      "declarations": [
+        "Becoming.Flow.Balances.narrows_of_consumed"
+      ]
+    },
+    {
+      "en": "The stepwise class does not decide: in Preemption the drawer's event at the first step is within renewal, the drawer is consuming over the run and does not renew over it, and the levels without its part widen those with it.",
+      "zh": "逐步的类不决定：Preemption 中汲取者在第一步的事件在更新之内，汲取者在整段上是消耗的、不更新，无其部分的水平扩大有它的水平。",
+      "declarations": [
+        "Becoming.Preemption.renewingAt_consuming_narrows",
+        "Becoming.Preemption.within_renewal_yet_loses"
+      ]
+    },
+    {
+      "en": "The consuming class alone does not narrow: in Untaken a formation draws on a condition that stays at zero below its need, so it is consuming over the run, yet nothing is taken or given, the flow balances, and the levels with and without its part keep what can form the same.",
+      "zh": "单是消耗的类不缩小：Untaken 中一个形成汲取一个始终为零、低于其所需的条件，所以它在整段上是消耗的；但没有取用与给予，流平衡，有无其部分的水平保持能形成者相同。",
+      "declarations": [
+        "Becoming.Untaken.flow",
+        "Becoming.Untaken.web",
+        "Becoming.Untaken.part",
+        "Becoming.Untaken.consuming_keeps"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "Balance (Flow.Balances); only active formations take, and only from what they draw on (Flow.Taking); the levels without the part (WithheldLevels). The consuming law needs no Taking but needs the part to give no more than it takes and the levels without it to meet the consumed dependence later.",
+      "zh": "平衡（Flow.Balances）；只有活跃的形成取用，且只从它所汲取者取用（Flow.Taking）；无此部分的水平（WithheldLevels）。消耗之律不需 Taking，但需部分所给不多于所取，且无它的水平后来满足被消耗的依存。"
+    },
+    {
+      "en": "Discrete steps from step zero; natural-number levels, needs and amounts; a part is a decided family (part : F → Bool); a formation's class over a run is read with identity fixed by naming.",
+      "zh": "离散的步，从第零步起；自然数的水平、所需与量；部分是可判定的族（part : F → Bool）；形成在整段上的类以命名所定的同一来读。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That renewing widens: keeping what can form is not widening; whether a part opens anything is its net give.",
+      "zh": "更新即扩大：保持能形成者不是扩大；部分是否打开什么在于它的净给予。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "That consuming alone narrows: Untaken is consuming and keeps what can form.",
+      "zh": "单是消耗就缩小：Untaken 是消耗的，却保持能形成者。",
+      "kind": "non-implication",
+      "witness": "Becoming.Untaken.consuming_keeps"
+    },
+    {
+      "en": "That being within renewal at a step keeps what can form: Preemption's drawer is, and its part narrows.",
+      "zh": "一步上在更新之内就保持能形成者：Preemption 的汲取者如此，其部分却缩小。",
+      "kind": "non-implication",
+      "witness": "Becoming.Preemption.renewingAt_consuming_narrows"
+    },
+    {
+      "en": "The class of arising over a run and the order; a valuation of either class.",
+      "zh": "整段上生起的类与次序；对任一类的评价。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean",
+      "detail": {
+        "en": "Within renewal at a step, consuming over the run, narrowing: Preemption (renewingAt_consuming_narrows).",
+        "zh": "一步上在更新之内、整段上消耗、缩小：Preemption（renewingAt_consuming_narrows）。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean",
+      "detail": {
+        "en": "Consuming over the run and keeping what can form: Untaken (consuming_keeps).",
+        "zh": "整段上消耗而保持能形成者：Untaken（consuming_keeps）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "discrete-steps",
+    "no-evaluation",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T005554.047169Z): the cited declarations of Becoming.Retaining have empty axiom reports; the checker verifies core purity. Author self-review in study section 225; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T005554.047169Z）：所引 Becoming.Retaining 的声明公理报告为空；检查器并核对核心纯净。作者自审见研究第 225 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "The class of arising over a run and the order; identity from continuity rather than naming, on which a class over a run depends; an independent review.",
+    "zh": "整段上生起的类与次序；由延续而非命名的同一（整段上的类依赖它）；独立审查。"
+  },
+  "correspondence": {
+    "en": "The twentieth review's D2 and F13 asked how a part's class over a run relates to its widening, under named premises with Preemption as the boundary. The answer is one direction each: renewal over the run closes nothing where only active formations take, and a consumed dependence narrows where the levels without the part meet it; the stepwise class and the consuming class alone each have a witness against them. Reading (the AI's, D2 revised): renewing and consuming are classes of a formation over a run, related to the order by these laws, not the formation-level meaning of generative and degenerative.",
+    "zh": "第二十次审查的 D2 与 F13 问：在写明的前提下、以 Preemption 为界，部分在整段上的类与它的扩大怎样相关。答案是各一个方向：只有活跃的形成取用时，整段上的更新不关闭什么；无此部分的水平满足被消耗的依存时，它缩小；逐步的类与单是消耗的类各有反例。读法（AI 的，D2 修订）：更新与消耗是形成在整段上的类，经这些规律与次序相关，不是生成的与退化的在形成层次上的含义。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean",
+  "aliases": [
+    "the run classes and widening",
+    "整段的类与扩大",
+    "Becoming.Flow.Balances.not_narrows_of_renewed",
+    "Becoming.Flow.Balances.narrows_of_consumed"
+  ],
+  "dependencies": [
+    {
+      "id": "four-cases-of-a-part",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the four cases (Web.Widens, Web.Includes) and Flow.Balances.opens_nothing, the withheld levels and their balance.",
+        "zh": "复用四种情形（Web.Widens、Web.Includes）与 Flow.Balances.opens_nothing、被扣下的水平及其平衡。"
+      },
+      "interface": {
+        "output": {
+          "en": "The order on what can form and when a part opens nothing.",
+          "zh": "能形成者上的次序，及部分何时不打开什么。"
+        },
+        "input": {
+          "en": "What the run classes are related to.",
+          "zh": "整段的类与之相关者。"
+        },
+        "conditions": {
+          "en": "Balance; the levels without the part.",
+          "zh": "平衡；无此部分的水平。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean"
+      }
+    },
+    {
+      "id": "significance-retained-within-margin",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Preemption and within_renewal_yet_loses, the witness that renewal at a step is no sign of keeping.",
+        "zh": "复用 Preemption 与 within_renewal_yet_loses，即一步上的更新不是保持之标志的见证。"
+      },
+      "interface": {
+        "output": {
+          "en": "The preempting drawer within renewal whose part loses.",
+          "zh": "在更新之内而其部分失去的先占汲取者。"
+        },
+        "input": {
+          "en": "The boundary of the run-class law: the stepwise class overlaps the run class there.",
+          "zh": "整段类之律的边界：逐步的类在那里与整段的类重叠。"
+        },
+        "conditions": {
+          "en": "None beyond the witness.",
+          "zh": "见证之外无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean"
+      }
+    },
+    {
+      "id": "life-as-condition-of-life",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the run classes of a web: Web.Renewed, Web.Consumed, Web.ConsumingIn and Web.RenewingIn.",
+        "zh": "复用网的整段之类：Web.Renewed、Web.Consumed、Web.ConsumingIn 与 Web.RenewingIn。"
+      },
+      "interface": {
+        "output": {
+          "en": "A formation's class over a run.",
+          "zh": "形成在整段上的类。"
+        },
+        "input": {
+          "en": "What a part whose members renew or whose dependence is consumed does to what can form.",
+          "zh": "成员更新或依存被消耗的部分对能形成者做什么。"
+        },
+        "conditions": {
+          "en": "Identity fixed by naming.",
+          "zh": "同一由命名所定。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "comparison-by-widening",
+      "detail": {
+        "en": "On level paths the condition, significance and C read one object, admission; the run classes are related to that order here.",
+        "zh": "在水平路径上，条件、意义与 C 读同一个对象，即接纳；这里整段的类与这一次序相关。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean",
+      "role": "proof",
+      "sha256": "09ed88eb0b7acfb3cb5b60d6d2a37c41735de26266b1ff03d5b422a9574a7c28",
+      "declarations": [
+        "Becoming.Flow.Balances.includes_of_renewed",
+        "Becoming.Flow.Balances.not_narrows_of_renewed",
+        "Becoming.Flow.Balances.includes_of_renewingIn",
+        "Becoming.Flow.Balances.narrows_of_consumed",
+        "Becoming.Preemption.renewingAt_consuming_narrows",
+        "Becoming.Preemption.within_renewal_yet_loses",
+        "Becoming.Untaken.flow",
+        "Becoming.Untaken.web",
+        "Becoming.Untaken.part",
+        "Becoming.Untaken.consuming_keeps"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-TWENTIETH-REVIEW.md",
+      "role": "provenance",
+      "sha256": "36e57d34ae56349c206d781ccc2f0abd845787af036893feb4b42ed4fa63b3e9",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Retaining",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "20 October 2026: added (R34, D2 and F13 of the twentieth review): the run classes related to widening under named premises, with Preemption and Untaken as boundaries; study section 225.",
+      "zh": "2026年10月20日：新增（R34，第二十次审查 D2 与 F13）：整段的类在写明的前提下与扩大相关，以 Preemption 与 Untaken 为界；研究第 225 节。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

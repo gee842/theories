@@ -14,43 +14,12 @@
       "en": "2026-10-09: continued the existing joining study; all new mathematical claims, counterexamples and repair conditions actually checked in Lean."
     },
     {
-      "zh": "2026-10-15，整合 I3b（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Granularity 的“配方”）。配方在所到达的配置处选择：一个动作、在路径所在处的检验、先后两配方或二者之一（Recipe、Recipe.Leads）；其路径是框架的路径，检验与选择不加动作（Recipe.Leads.trace）。配方是否通向某检验成立之处，恰是有限多个分支检验之一成立，不加前提（Recipe.leads_iff_afterAny），所以同测的配置对每个配方问题回答相同（SameBranchingTests.leads_iff）。把配方读作单一检验（经否定与合取），在检验已定处精确（Recipe.holds_after）；对每个框架都精确，恰是排中律（Recipe.holds_after_iff_em）：外围的 holds_either 用经典推理，而这一用法不能去掉。在前段使检验在其通向的每个配置保持之处，先检验即后检验（Recipe.branch_earlier_iff）。桥接：外围的程序即核心的配方（Recipe.ofProgram、Recipe.leads_ofProgram），diamond 即 Recipe.after（Recipe.toTest_after）；diamond_correct 在检验已定处成立（diamond_correct_of_decided），对每个模型恰是排中律（diamond_correct_iff_em）；以 em 为具名假设，compile_correct、finite_program_endpoints、guarded_history_matches 逐字成立；word_program_exact、execution_has_native_trace、branch_executes、guard_hoisting_sound 不加假设。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围。",
-      "en": "15 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): stated on the spine (the recipes of Becoming.Granularity). A recipe chooses at the configuration reached: one move, a test where the course stands, one recipe after another, or either of two (Recipe, Recipe.Leads); its courses are courses of the frame, and tests and choices add no move (Recipe.Leads.trace). Whether a recipe leads to where a test holds is exactly one of finitely many branching tests holding, with no premise (Recipe.leads_iff_afterAny), so configurations passing the same tests answer every recipe question alike (SameBranchingTests.leads_iff). Read as one test, through negation and conjunction, a recipe is exact where the tests are decided (Recipe.holds_after); exact for every frame, it is exactly excluded middle (Recipe.holds_after_iff_em): the periphery’s holds_either reasons classically, and that use cannot be dropped. Testing before a prefix is testing after it where the prefix keeps the test at every configuration it leads to (Recipe.branch_earlier_iff). In the bridge, the periphery’s programs are the core’s recipes (Recipe.ofProgram, Recipe.leads_ofProgram) and diamond is Recipe.after (Recipe.toTest_after); diamond_correct holds where the tests are decided (diamond_correct_of_decided) and, for every model, is exactly excluded middle (diamond_correct_iff_em); with em named, compile_correct, finite_program_endpoints and guarded_history_matches hold as stated; word_program_exact, execution_has_native_trace, branch_executes and guard_hoisting_sound need nothing. Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proofs and their receipts keep their scope."
-    },
-    {
       "zh": "2026-10-16，整合 I4c（Ren 选择“Add the notes”）：ExplanatoryResumptionCases.lean 的第一行加一条注释，指向脊柱上陈述其主定理的声明；陈述与证明不变，行号不变。其反例引用改用新的哈希；ExplanatoryGuardedPrograms 的证明绑定不变。",
       "en": "16 October 2026, integration I4c (Ren selected “Add the notes”): the first line of ExplanatoryResumptionCases.lean gains a comment naming the spine declarations that state its main theorem; statements, proofs and line numbers are unchanged. Its counterexample reference takes the new hash; the proof binding of ExplanatoryGuardedPrograms is unchanged."
     },
     {
-      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Granularity.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；GranularityBridge.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
-      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Granularity.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); GranularityBridge.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (GranularityBridge.lean: the fold). The claim is unchanged.",
-      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, F3 sweep step 1 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (GranularityBridge.lean: the readings of the superseded ExplanatoryResiduals left the module; the declarations the record cites are unchanged). The claim is unchanged.",
-      "zh": "2026年10月19日，F3 清扫 step 1：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Granularity; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
-      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（Granularity），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
-    },
-    {
-      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): GranularityBridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
-      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): GranularityBridge.lean, in the Lean history folder with its bytes, is bound to receipt 20261018T222948.779875Z, which elaborates Becoming.guarded_history_matches_of_em, so the alias stays checked. Proof bindings (Granularity.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Granularity.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：GranularityBridge.lean（连同字节在 Lean 历史目录中）绑定到回执 20261018T222948.779875Z，它精化了 Becoming.guarded_history_matches_of_em，别名因此仍受检查。证明绑定（Granularity.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Granularity.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Granularity.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Granularity.lean, takes as its final section Grains, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
-      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Granularity.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Granularity.lean，以末节收入 Grains（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+      "en": "2026-10-20: 9 bookkeeping notes condensed from 15 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/c295bfe845190e3e/guarded-program-question-recovery.json and in git.",
+      "zh": "2026-10-20：9 条记账性说明合并（15 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/c295bfe845190e3e/guarded-program-question-recovery.json 和 git 中。"
     }
   ],
   "validation_scope": {

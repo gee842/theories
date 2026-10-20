@@ -1,0 +1,168 @@
+{
+  "schema_version": 2,
+  "id": "constitutive-binding-assessment",
+  "kind": "assessment",
+  "status": "reviewed-scoped",
+  "family": "F11",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
+  "title": {
+    "zh": "绑定的构成性说明及无前提推广的限度",
+    "en": "Constitutive binding and the limits of presuppositionless promotion"
+  },
+  "statement": {
+    "zh": "新引用可由引入活动设立；实际承接及代入在内容与认可要求保持时，解释局部根据传递，无需逐次另加认可命题。",
+    "en": "A fresh reference can be instituted by its introduction; actual retention and insertion under unchanged content and assessment explain local support transmission without a fresh endorsement proposition at each use."
+  },
+  "hypotheses": [
+    {
+      "zh": "以当前表达与承接的实际活动为起点；公开使用既有语言、辨认和假设比较，不以新命名保证所有实际接入成功。",
+      "en": "Begins with actual expression and continuation, openly using existing language, identification and hypothetical comparison; fresh designation does not guarantee every uptake."
+    },
+    {
+      "zh": "局部传递保持内容、指定依存与认可要求；假设保证及输入根据的充分性另须成立。",
+      "en": "Local transmission retains content, designated dependence and assessment; the hypothetical guarantee and adequacy of the supplied ground must also hold."
+    }
+  ],
+  "correspondence": {
+    "zh": "引入、承接、辨认和推理根据是同一活动中的不同关系。形式代入刻画给定语言下的求值保持，不直接证明实际指向、历史身份或完整的认识根据。",
+    "en": "Introduction, continuation, recognition and inferential warrant distinguish relations within one activity. Formal substitution characterizes evaluation preservation in the supplied language, not actual reference, historical identity or complete epistemic entitlement."
+  },
+  "canonical_source": "theories/becoming/chapters/GENERATED-LOGIC.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "binding-preserving-substitution",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用已有代入机制及误接界限；解释性连接不把形式定理升级为构成性奠基证明。",
+        "en": "Reuses the substitution mechanism and capture bounds; this interpretive connection does not upgrade the theorem into a constitutive grounding proof."
+      },
+      "interface": {
+        "output": {
+          "zh": "给定解释下，保留原位置根据的代入保持所有消费者求值；误接及偶然同值控制。",
+          "en": "Under the supplied interpretation, position-preserving substitution retains every consumer evaluation, with capture and coincident-value controls."
+        },
+        "input": {
+          "zh": "局部构成性解释中，生产出的根据怎样继续消费者原指定的依存。",
+          "en": "How a produced ground continues the consumer’s designated dependence in the local constitutive account."
+        },
+        "conditions": {
+          "zh": "语法、绑定解释及认可条件不变；实际角色和推理根据的哲学说明保持独立义务。",
+          "en": "Syntax, binding interpretation and assessment remain unchanged; the philosophical account of actual roles and warrant remains a separate obligation."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "detail": {
+        "zh": "保留绑定但采用更严格结论标准的对手；同类型误接、同值遮蔽及不受约束的用语自我担保，分别限制不同推广。",
+        "en": "Retained binding with a stricter conclusion standard, same-type capture, coincident values and unrestricted constitutive self-certification restrict distinct generalizations."
+      }
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "这项构成性说明没有证明解释它所用的全部元推理资源均已无前提正当化，不是严格无前提元逻辑奠基的完成。",
+      "en": "The account does not justify every metainferential resource used to explain it without presuppositions; it is not completed presuppositionless metalogic.",
+      "kind": "scope"
+    },
+    {
+      "zh": "未建立一般语言、辨认、假设推理和充分根据评估的全套无前提正当性。",
+      "en": "It does not supply comprehensive presuppositionless warrant for language, identification, hypothetical inference and assessment of adequate grounds.",
+      "kind": "scope"
+    },
+    {
+      "zh": "也不是严格无前提元逻辑奠基的不可能性证明。",
+      "en": "Nor is it an impossibility proof for presuppositionless metalogic.",
+      "kind": "non-implication"
+    }
+  ],
+  "progress": [
+    {
+      "zh": "正面论证：新称谓设立角色，未变的使用保持它，代入保持消费者所指定的依存；每步范围写明。",
+      "en": "Affirmative argument: a fresh designation institutes a role, an unchanged use retains it, and insertion retains the consumer's designated dependence, with each step's scope stated.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#102-the-affirmative-argument-with-each-steps-scope"
+    },
+    {
+      "zh": "对手与路线：保持相关活动的对手及通向更强结论的三条路线逐一评估；均未提供到全套元推理根据的过渡。",
+      "en": "Rivals and routes: target-preserving rivals and three routes to the stronger conclusion are assessed; none supplies the passage to comprehensive warrant for the metainferences used.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#104-three-routes-to-the-stronger-conclusion-actually-assessed"
+    },
+    {
+      "zh": "处置：区分设立、执行、辨认与根据，撤下笼统的“每个绑定须另有最终证书”要求；论证自身所用资源逐项审计。",
+      "en": "Disposition: institution, execution, recognition and warrant are distinguished, retiring the vague demand for a final certificate of every binding; the argument's own resources are audited item by item.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#107-disposition-and-completion-scope"
+    }
+  ],
+  "validation_scope": {
+    "zh": "作者实质反审及 Carroll、Boghossian 原典比较；零新增数学声明。三份既有 Lean 回执（反身同一、承认约束、推论代入）的源码绑定已复核，记在研究的 BINDING-CONSTITUTION-CHECKS.json；本记录不绑定它们，未重编，未认领独立验收。",
+    "en": "Author counterreview and primary-source comparison with Carroll and Boghossian; zero new mathematical claims. The source bindings of three existing Lean receipts (reflective identity, recognitional binding, inferential substitution) were rechecked, as recorded in the study's BINDING-CONSTITUTION-CHECKS.json; this record binds none of them, and nothing was recompiled or independently accepted."
+  },
+  "references": [
+    {
+      "path": "theories/becoming/chapters/GENERATED-LOGIC.md",
+      "role": "statement",
+      "sha256": "066f766742fd6978b7e4ddb93a1d439957cfd3cf9f133232af9789fb1c6283f8",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "role": "review",
+      "sha256": "7565fa3f6e3f74a2775c05afdc8bd47ce3c02ae1a1fcd53e0f3a6a2370d6f1a0",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "role": "provenance",
+      "sha256": "1508261e4e9249b4e3c6b9c45f21f3c9a57522bebb1bb22f959507212cf120fc",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [],
+  "next_delta": {
+    "zh": "为严格目标正面说明从局部引用构成到本论证所用元推理资源之充分根据的连接；重复代入定理，或把能够反对等同于接受整套逻辑，都不提供此连接。",
+    "en": "For the strict target, give a positive account of the passage from local reference constitution to adequate warrant for the metainferential resources used here; repeating substitution, or equating intelligible challenge with acceptance of the entire logic, does not supply it."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：迁移并完成既有绑定研究第2、5、7、9节候选的第10节评估；区分设立、执行、辨认和根据，撤下笼统的绑定最终证书要求。不是新的独立数学成果。",
+      "en": "2026-10-09: migrates and completes in section 10 the candidate from sections 2, 5, 7 and 9, distinguishing institution, execution, recognition and warrant and retiring the vague final-certificate demand. Not a new independent mathematical result."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：主张第一句成为陈述，第二句与限制句分为 3 项分类“未表明”（两项范围；一项不可能性证明之否定）；“局部论证的完整评估”由状态表达；3 行“已接通”链接研究第10节的正面论证、路线评估与处置；下一步改为正面表述，内容不变。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/constitutive-binding-assessment.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim's first sentence became the statement; its second sentence and the limitations became 3 typed does-not-show items (two of scope; one denying an impossibility proof); “a completed assessment of the local argument” is carried by the status; 3 progress lines link the study's section-10 affirmative argument, route assessment and disposition; the next step is restated positively with the same content. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/constitutive-binding-assessment.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 records-a-l-17 项：验证范围原说“复核三份既有 Lean 回执”，而本记录不引用、不绑定任何回执；改为写明三份回执是哪些、复核记在何处，以及本记录不绑定它们。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item records-a-l-17: the validation scope said it \"checks three existing Lean receipts\", while the record references and binds none; it now names the three receipts, where the recheck is recorded, and that this record binds none of them. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in GENERATED-LOGIC.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): GENERATED-LOGIC.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/9840beaa7834e2cf/constitutive-binding-assessment.json",
+      "sha256": "9840beaa7834e2cfed801a637d3be6045db739177ea510a4703c0fe67fdae0fc",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/9e9a104163a2ca65/constitutive-binding-assessment.json",
+      "sha256": "9e9a104163a2ca65facb8a47b5b18495d774b32b158ecbefcf6b15ec6ac8909b",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
+}

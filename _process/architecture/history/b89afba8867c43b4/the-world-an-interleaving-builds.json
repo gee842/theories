@@ -1,0 +1,285 @@
+{
+  "schema_version": 2,
+  "id": "the-world-an-interleaving-builds",
+  "title": {
+    "en": "The world an interleaving builds",
+    "zh": "交错所构造的世界"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-20T00:09:49+00:00",
+  "statement": {
+    "en": "From a local law and a list of exchanges a World of the spine is built whose steps balance. Interleavings of the same own courses give each relatum the same course of standings and the same end; swapping two adjacent apart exchanges changes only the step between.",
+    "zh": "由局部律与交换之列构造出脊柱的一个世界，其各步平衡。同一自身进程的交错给每个关系项同一串所立与同一终点；交换两个相邻而不相交的交换只改变其间一步。"
+  },
+  "laws": [
+    {
+      "en": "The configuration after the first t exchanges of a list changes across step t by the exchange at t, is the whole list's from its length on, is unchanged up to a list's length by appending, is after a list the rest's from where the list ends, and agrees where the starts agree.",
+      "zh": "一列交换的前 t 个之后的构形，跨第 t 步按第 t 个交换改变，从列长起是整列之构形，到列长为止不因追加而变，一列之后是余下者从该列终点出发的构形，起点一致则一致。",
+      "declarations": [
+        "Becoming.Interleavings.LocalLaw.exchangeAt",
+        "Becoming.Interleavings.LocalLaw.runUpTo",
+        "Becoming.Interleavings.LocalLaw.runUpTo_succ",
+        "Becoming.Interleavings.LocalLaw.runUpTo_whole",
+        "Becoming.Interleavings.LocalLaw.runUpTo_append_le",
+        "Becoming.Interleavings.LocalLaw.runUpTo_append",
+        "Becoming.Interleavings.LocalLaw.runUpTo_agree"
+      ]
+    },
+    {
+      "en": "The world of a local law on whole-number standings, the relata listed, a list and a start: at step t each relatum stands where the first t exchanges leave it, is active where the exchange at t touches it, and the move at t has present the listed relata it touches, each taking its fall and giving its rise; nothing is required, needed or drawn.",
+      "zh": "整数所立上的局部律、所列关系项、交换之列与起点的世界：在第 t 步每个关系项立于前 t 个交换使它所在之处，被第 t 个交换触及处为活跃，第 t 步之动在场者为它触及的所列关系项，各取其降、给其升；无所求、所需或所汲。",
+      "declarations": [
+        "Becoming.Interleavings.LocalLaw.touchedIn",
+        "Becoming.Interleavings.LocalLaw.fall",
+        "Becoming.Interleavings.LocalLaw.rise",
+        "Becoming.Interleavings.LocalLaw.world",
+        "Becoming.Interleavings.LocalLaw.world_level",
+        "Becoming.Interleavings.LocalLaw.touchedIn_mem",
+        "Becoming.Interleavings.LocalLaw.touchedIn_not_mem",
+        "Becoming.Interleavings.LocalLaw.touchedIn_mem_of",
+        "Becoming.Interleavings.LocalLaw.touchedIn_pairwise",
+        "Becoming.Interleavings.LocalLaw.total_zero_of",
+        "Becoming.Interleavings.LocalLaw.total_single",
+        "Becoming.Interleavings.LocalLaw.total_absent"
+      ]
+    },
+    {
+      "en": "With every relatum listed once, every step of the world balances: the standing after the step with what the relatum took is the standing before with what it gave.",
+      "zh": "每个关系项恰列一次时，世界每一步都平衡：步后所立加所取，等于步前所立加所给。",
+      "declarations": [
+        "Becoming.Interleavings.LocalLaw.world_balances"
+      ]
+    },
+    {
+      "en": "A relatum's course of standings is its standing after each exchange of its own course, in order. Moving an exchange forward past exchanges sharing no relatum with it keeps every course of standings, so with the relata listed two lists giving every relatum the same own course, and two interleavings of the same courses, give every relatum the same course of standings.",
+      "zh": "关系项的一串所立，是它在自身进程的每个交换之后依次所立。把一个交换前移越过与它不共享关系项的交换，保持每串所立；所以关系项列出时，给每个关系项同一自身进程的两列，以及同一进程的两个交错，给每个关系项同一串所立。",
+      "declarations": [
+        "Becoming.Interleavings.LocalLaw.standings",
+        "Becoming.Interleavings.LocalLaw.standings_true",
+        "Becoming.Interleavings.LocalLaw.standings_false",
+        "Becoming.Interleavings.LocalLaw.standings_agree",
+        "Becoming.Interleavings.LocalLaw.standings_move",
+        "Becoming.Interleavings.LocalLaw.standings_idle",
+        "Becoming.Interleavings.LocalLaw.standings_of_courses",
+        "Becoming.Interleavings.LocalLaw.standings_of_interleavings"
+      ]
+    },
+    {
+      "en": "With the relata listed, the worlds of two lists giving every relatum the same own course stand alike at every step from both lengths on.",
+      "zh": "关系项列出时，给每个关系项同一自身进程的两列，其世界从两者长度起每一步所立相同。",
+      "declarations": [
+        "Becoming.Interleavings.LocalLaw.world_final"
+      ]
+    },
+    {
+      "en": "Two adjacent exchanges sharing no relatum, taken in either order, leave the worlds alike at every step but the one between them; there a relatum the first touches stands, in the world taking it first, where it stands after both in the other, and where it stood before both in the other; one neither touches stands alike.",
+      "zh": "两个相邻、不共享关系项的交换，以任一次序取用，世界在它们之间那一步以外每步相同；在那一步，先取第一个交换的世界中，它触及的关系项立于另一世界两者之后所立处，另一世界中则立于两者之前；两者都不触及者相同。",
+      "declarations": [
+        "Becoming.Interleavings.LocalLaw.world_swap",
+        "Becoming.Interleavings.LocalLaw.world_swap_between"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. A local law on whole-number standings (an exchange changes only the relata it touches, as their states determine); the relata listed, once where balance is stated; relata told apart for the move. The courses are finite lists.",
+      "zh": "不加公理。整数所立上的局部律（交换只按所触及关系项的状态改变它们）；关系项列出，陈述平衡处恰列一次；为动区分关系项。进程是有限列。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "A step-by-step relation between the worlds of two interleavings differing by more than one exchange of adjacent apart exchanges; what is shown for them is the course of standings and the end.",
+      "zh": "相差不止一次相邻不相交交换之对调的两个交错，其世界之间逐步的关系；对它们所证者是所立之串与终点。",
+      "kind": "scope"
+    },
+    {
+      "en": "The correspondence with the footprint and the order of joined exchanges of Becoming.Order.",
+      "zh": "与 Becoming.Order 的足迹及相连交换之次序的对应。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "Courses without end; footprints that read relata they do not change.",
+      "zh": "无尽的进程；读而不改关系项的足迹。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T235844.485705Z): the cited declarations of Becoming.Interleavings have empty axiom reports; the checker verifies core purity. Author self-review in study section 224; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T235844.485705Z）：所引 Becoming.Interleavings 的声明公理报告为空；检查器并核对核心纯净。作者自审见研究第 224 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "A step-by-step relation between the worlds of any two interleavings of the same courses (by the moves of split_heads); the correspondence with Becoming.Order; an independent review.",
+    "zh": "同一进程任意两个交错之世界逐步的关系（经 split_heads 的移动）；与 Becoming.Order 的对应；独立审查。"
+  },
+  "correspondence": {
+    "en": "The twentieth review's G10 asked that Interleavings, which reads the step index off the relata's own courses, construct the World, so that one shared index is a reading on the premise card. Reading (the AI's): the spine's World, with its one index, is what an interleaving of the relata's own courses builds; what the interleaving adds beyond the courses moves only where exchanges share no relatum, and there each relatum stands in one world where it stands a step earlier or later in the other.",
+    "zh": "第二十次审查 G10 要求从关系项自身进程读出步指标的 Interleavings 构造世界，使唯一的共同指标在前提卡上成为一个读法。读法（AI 的）：带唯一指标的脊柱世界，是关系项自身进程的一个交错所构造者；交错在进程之外所加者只在交换不共享关系项处移动，且在那里每个关系项在一个世界中立于它在另一世界早一步或晚一步所立处。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
+  "aliases": [
+    "the world an interleaving builds",
+    "交错所构造的世界",
+    "course of standings",
+    "所立之串",
+    "Becoming.Interleavings.LocalLaw.world_swap",
+    "Becoming.Interleavings.LocalLaw.world_balances"
+  ],
+  "dependencies": [
+    {
+      "id": "the-step-index-from-own-courses",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses LocalLaw, ownCourse, run, act_comm, act_agree, split_heads, untouched_of_shares and run_of_courses: own courses and the moves past exchanges sharing no relatum.",
+        "zh": "复用 LocalLaw、ownCourse、run、act_comm、act_agree、split_heads、untouched_of_shares 与 run_of_courses：自身进程及越过不共享关系项之交换的移动。"
+      },
+      "interface": {
+        "output": {
+          "en": "Equal own courses reach the same configuration; apart exchanges commute.",
+          "zh": "自身进程同则构形同；不相交的交换可交换。"
+        },
+        "input": {
+          "en": "The standings and the end the worlds share, and the adjacent swap.",
+          "zh": "世界共有的所立与终点，以及相邻对调。"
+        },
+        "conditions": {
+          "en": "The relata listed.",
+          "zh": "关系项列出。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean"
+      }
+    },
+    {
+      "id": "worlds-are-runs",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses World.of: a World built from a flow and a web.",
+        "zh": "复用 World.of：由流与网构造的世界。"
+      },
+      "interface": {
+        "output": {
+          "en": "A World of the spine from a flow and a web.",
+          "zh": "由流与网得到的脊柱世界。"
+        },
+        "input": {
+          "en": "The world an interleaving builds.",
+          "zh": "交错所构造的世界。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean"
+      }
+    }
+  ],
+  "related": [],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
+      "role": "proof",
+      "sha256": "bd9c4d334d5a6d3c25b4860d680481f4c60caa063439e2a4877ec019c9051539",
+      "declarations": [
+        "Becoming.Interleavings.LocalLaw.exchangeAt",
+        "Becoming.Interleavings.LocalLaw.runUpTo",
+        "Becoming.Interleavings.LocalLaw.runUpTo_succ",
+        "Becoming.Interleavings.LocalLaw.runUpTo_whole",
+        "Becoming.Interleavings.LocalLaw.runUpTo_append_le",
+        "Becoming.Interleavings.LocalLaw.runUpTo_append",
+        "Becoming.Interleavings.LocalLaw.runUpTo_agree",
+        "Becoming.Interleavings.LocalLaw.touchedIn",
+        "Becoming.Interleavings.LocalLaw.fall",
+        "Becoming.Interleavings.LocalLaw.rise",
+        "Becoming.Interleavings.LocalLaw.world",
+        "Becoming.Interleavings.LocalLaw.world_level",
+        "Becoming.Interleavings.LocalLaw.touchedIn_mem",
+        "Becoming.Interleavings.LocalLaw.touchedIn_not_mem",
+        "Becoming.Interleavings.LocalLaw.touchedIn_mem_of",
+        "Becoming.Interleavings.LocalLaw.touchedIn_pairwise",
+        "Becoming.Interleavings.LocalLaw.total_zero_of",
+        "Becoming.Interleavings.LocalLaw.total_single",
+        "Becoming.Interleavings.LocalLaw.total_absent",
+        "Becoming.Interleavings.LocalLaw.world_balances",
+        "Becoming.Interleavings.LocalLaw.standings",
+        "Becoming.Interleavings.LocalLaw.standings_true",
+        "Becoming.Interleavings.LocalLaw.standings_false",
+        "Becoming.Interleavings.LocalLaw.standings_agree",
+        "Becoming.Interleavings.LocalLaw.standings_move",
+        "Becoming.Interleavings.LocalLaw.standings_idle",
+        "Becoming.Interleavings.LocalLaw.standings_of_courses",
+        "Becoming.Interleavings.LocalLaw.standings_of_interleavings",
+        "Becoming.Interleavings.LocalLaw.world_final",
+        "Becoming.Interleavings.LocalLaw.world_swap",
+        "Becoming.Interleavings.LocalLaw.world_swap_between"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "role": "proof",
+      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe",
+      "declarations": [
+        "Becoming.World.of"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "role": "receipt",
+      "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/twentieth-review/G-FRONTIER.md",
+      "role": "provenance",
+      "sha256": "da01ce81baf8c68de4024ab741a3fbafdac12546b5d6f6319277e5a2e4060ab1",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Interleavings",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.World",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "20 October 2026: added (R33, G10 of the twentieth review, interleavings build the World): the construction, its balance, the course of standings and the end shared by interleavings of the same courses, and the adjacent swap; the general step-by-step relation is open (study section 224).",
+      "zh": "2026年10月20日：新增（R33，第二十次审查 G10，交错构造世界）：构造、其平衡、同一进程之交错共有的所立之串与终点，以及相邻对调；一般的逐步关系待解（研究第 224 节）。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

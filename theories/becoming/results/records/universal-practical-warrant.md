@@ -99,13 +99,14 @@ Aliases: —
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item bilingual-16: the Chinese title's 普遍实践权威 (authority) becomes 普遍实践根据 (warrant), matching the English warrant and the Chinese statement's 根据 (AGENTS.md keeps warrant and authority distinct). Earlier text in text_versions.
 - 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. The claim is unchanged.
-- 3 rebinding entries (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](universal-practical-warrant.json).
+- 2 rebinding entries (2026-10-17 to 2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](universal-practical-warrant.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text
 
 - [universal-practical-warrant.json](../../../../_process/architecture/history/ad319e7c0aa96fab/universal-practical-warrant.json) (sha256 `ad319e7c0aa96fab…`): Exact record bytes before the migration (schema 1).
 - [universal-practical-warrant.json](../../../../_process/architecture/history/735de5280c33f42f/universal-practical-warrant.json) (sha256 `735de5280c33f42f…`): Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2).
+- [universal-practical-warrant.json](../../../../_process/architecture/history/4338855735cfa81a/universal-practical-warrant.json) (sha256 `4338855735cfa81a…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

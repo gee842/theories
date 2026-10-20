@@ -1,0 +1,671 @@
+{
+  "schema_version": 2,
+  "id": "what-a-pools-acts-respond-to",
+  "title": {
+    "zh": "一组的动作回应什么",
+    "en": "What a pool's acts respond to"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F04",
+  "reviewed_at_utc": "2026-10-18T17:35:31+00:00",
+  "statement": {
+    "en": "Where each member's law reads through its coupling, what a pool decides by its acts is a selection through its pooled coupling, and nothing within the pool's coupling closure responds to a difference staying beyond it. Coupling bounds the response exactly and does not fix it.",
+    "zh": "每个成员的律都经其耦合而读时，一组以其动作所决定的是经其合起来之耦合的选择；一组耦合闭包之内无物回应留在闭包之外的差别。耦合精确地界定回应，而不确定回应。"
+  },
+  "laws": [
+    {
+      "en": "A selection through a group's acts under a law of exchange up to a step selects alike the histories under which every member exchanges alike, by the law, across every step up to it. Where the law reads through the coupling of each formation outside a part and the members lie outside it, such a selection is a selection through the group's pooled coupling.",
+      "zh": "一组在一个交换律下到某步为止经其动作的选择，把每个成员在到该步为止的每一步都按此律交换相同的历史选得相同。此律经部分之外每个形成的耦合而读、成员都在部分之外时，这样的选择就是经这组合起来之耦合的选择。",
+      "declarations": [
+        "Becoming.ExchangeLaw.SelectsThroughActs",
+        "Becoming.ExchangeLaw.Through.acts_alike_all",
+        "Becoming.ExchangeLaw.Through.selectsThroughAll"
+      ]
+    },
+    {
+      "en": "Under the same conditions, a member that exchanges differently under two histories across a step couples them apart up to that step. Where the group's acts separate two histories its members do not all couple them alike, and, with the members listed and each member's coupling of the two decided, some member couples them apart.",
+      "zh": "在同样的条件下，在某步对两段历史交换不同的成员，到该步为止把它们耦合得有别。这组的动作分开两段历史时，并非每个成员都把它们耦合得无别；成员由列表列出、每个成员对两者的耦合已判定时，有某个成员把它们耦合得有别。",
+      "declarations": [
+        "Becoming.ExchangeLaw.Through.apart_of_acts",
+        "Becoming.ExchangeLaw.Through.acts_separate",
+        "Becoming.ExchangeLaw.Through.acts_separate_member"
+      ]
+    },
+    {
+      "en": "Where it is decided, for each formation, step and history, whether the formation couples the history alike with l up to that step, the law taking one unit of each condition exactly where the history lies in the formation's class of l reads through every coupling, and under it a formation takes alike under l and l' across a step exactly when it couples them alike up to that step.",
+      "zh": "对每个形成、每一步与每段历史，已判定该形成到该步为止是否把这段历史与 l 耦合得无别时，恰在历史落在该形成之 l 类中时取每个条件一个单位的律经每个耦合而读；在此律之下，一个形成在某步于 l 与 l' 之下取得相同，恰当它到该步为止把两者耦合得无别。",
+      "declarations": [
+        "Becoming.ExchangeLaw.ofClass",
+        "Becoming.ExchangeLaw.ofClass_through",
+        "Becoming.ExchangeLaw.ofClass_take_iff"
+      ]
+    },
+    {
+      "en": "So, with the classes decided, a condition given and the members outside a part, the members exchange alike under two histories across a step by every law reading through the coupling of each formation outside the part exactly when they all couple the two alike up to that step: the bound is exact.",
+      "zh": "所以，类已判定、给定一个条件、成员都在部分之外时，成员在某步按每个经部分之外各形成之耦合而读的律对两段历史交换相同，恰当他们到该步为止都把两者耦合得无别：此界是精确的。",
+      "declarations": [
+        "Becoming.ExchangeLaw.acts_alike_all_iff"
+      ]
+    },
+    {
+      "en": "The law that exchanges nothing reads through every coupling. Where a formation couples two histories apart up to a step and the classes are decided, some law reading through every coupling takes differently from a given condition under the two across that step, and some exchanges alike under every two histories at every step: coupling bounds response and does not fix it.",
+      "zh": "什么也不交换的律经每个耦合而读。一个形成到某步为止把两段历史耦合得有别、类已判定时，有一个经每个耦合而读的律在该步对两者从给定条件取得不同，也有一个在每一步对任何两段历史都交换相同：耦合界定回应，不确定回应。",
+      "declarations": [
+        "Becoming.ExchangeLaw.zero",
+        "Becoming.ExchangeLaw.zero_through",
+        "Becoming.ExchangeLaw.response_not_fixed_by_coupling"
+      ]
+    },
+    {
+      "en": "Under the conditions of the gap for a pool's act (Flow.act_alike_pool), every formation within the pool's coupling closure, drawn through both flows, and outside the acting part exchanges alike in the two flows with every condition at every step, and every selection through the acts of a group within the closure and outside the part selects the two flows alike.",
+      "zh": "在一组之动作的缺口的条件下（Flow.act_alike_pool），这组经两条流所取的耦合闭包之内、行动部分之外的每个形成，在每一步同每个条件在两条流中交换相同；闭包之内、部分之外任一组经其动作的每个选择都把两条流选得相同。",
+      "declarations": [
+        "Becoming.Flow.response_alike_pool",
+        "Becoming.Flow.act_unselected_by_acts_pool"
+      ]
+    },
+    {
+      "en": "With both acts laws, nothing is supplied: the acting part's own law gives alike under the levels of the two generated courses for each member of the part within the pool's coupling closure, and every formation within the closure outside the part exchanges alike in the two courses. The part may be the pool itself, acting jointly.",
+      "zh": "两个动作都是律时，不另给任何东西：对这组耦合闭包之内的部分成员，行动部分自身的律在两条生成进程的水平之下给出相同；闭包之内、部分之外的每个形成在两条进程中交换相同。部分可以就是这组自身，合起来动作。",
+      "declarations": [
+        "Becoming.act_courses_response_alike_pool"
+      ]
+    },
+    {
+      "en": "Some member of a group lies within a part's responsive reach between two flows exactly when some member of the part lies within the group's coupling closure drawn through both flows. Under Flow.alike_beyond_response's hypotheses, the response premise supplied, a group with no member within the reach couples the flows alike up to every step, its pooled selections select them alike, and each member exchanges alike.",
+      "zh": "一组的某个成员在一个部分于两条流之间的回应所及之内，恰当该部分的某个成员在这组经两条流所取的耦合闭包之内。在 Flow.alike_beyond_response 的假设下（回应前提为所给），没有成员在此所及之内的组到每一步都把两条流耦合得无别，其合起来的选择把它们选得相同，每个成员交换相同。",
+      "declarations": [
+        "Becoming.Flow.pool_within_response_iff",
+        "Becoming.Flow.pool_alike_beyond_response"
+      ]
+    },
+    {
+      "en": "Under the conditions of TimedResponse.coupling_alike_before, where no route from the source has entered by D what any member of a group couples into, every member couples the two courses alike up to D, every selection through the pooled coupling up to D selects them alike, and each member exchanges alike across each step before D at which it is not a source.",
+      "zh": "在 TimedResponse.coupling_alike_before 的条件下，到 D 为止没有来自源的路径进入一组任何成员所耦合入者时，每个成员到 D 为止把两条进程耦合得无别，到 D 为止经合起来之耦合的每个选择把它们选得相同，每个成员在 D 之前、它不是源的每一步交换相同。",
+      "declarations": [
+        "Becoming.TimedResponse.pool_alike_before"
+      ]
+    },
+    {
+      "en": "In Clearing every pool holding the dweller separates the cleared and the spared world by the dweller's admission at the third step, and its members do not all couple the two alike from that step on, while the source and the dweller follow one law reading through every coupling and every formation outside the clearer's part exchanges alike in the two worlds: separated, not responded.",
+      "zh": "Clearing 中，每个含有栖居者的组以栖居者在第三步的接纳分开清除的与不清除的世界，从那一步起其成员并非都把两者耦合得无别；而来源与栖居者遵从一个经每个耦合而读的律，清除者部分之外的每个形成在两个世界中交换相同：被分开，未被回应。",
+      "declarations": [
+        "Becoming.Clearing.separated_unresponded"
+      ]
+    },
+    {
+      "en": "In Loop the second follows, in both flows, a law reading through coupling outside the first's part. It couples the first's act apart up to the second step and takes from the first's condition across that step differently with and without it, so it lies within the first's coupling closure; the first then couples the flows apart up to the third step, unsupported with the act and supported without it.",
+      "zh": "Loop 中，第二者在两条流中都遵从一个经第一者部分之外各形成之耦合而读的律。它到第二步为止把第一者的动作耦合得有别，并在那一步有与无此动作时从第一者的条件取得不同，所以它在第一者的耦合闭包之内；第一者随后到第三步为止把两条流耦合得有别，有此动作时不被支持，无此动作时被支持。",
+      "declarations": [
+        "Becoming.Loop.response_returns"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. That each member follows a law of exchange reading through coupling (ExchangeLaw.Through) is a hypothesis wherever it enters; for the gap, balance, the same formations present and a common start, as in the-gap-for-ones-own-act; for exactness and for coupling not fixing response, each formation's coupling classes decided and a condition to exchange with; for the member-level converse, a list holding exactly the members and each member's coupling decided.",
+      "zh": "不加公理。每个成员遵从一个经耦合而读的交换律（ExchangeLaw.Through）在其进入之处都是假设；就缺口而言，平衡、出现的形成相同、起点相同，如 the-gap-for-ones-own-act；就精确与“耦合不确定回应”而言，每个形成的耦合类已判定，并给定一个可交换的条件；就成员层面的逆向陈述而言，一个恰列出成员的列表，以及每个成员的耦合已判定。"
+    },
+    {
+      "en": "The law of a pool beyond a part's responsive reach takes the response premise of comparison-where-the-rest-responds (Flow.RespondsThroughCoupling) as supplied, which a law reading through coupling gives (ExchangeLaw.Through.responds); the timing law takes the hypotheses of TimedResponse.coupling_alike_before.",
+      "zh": "在一个部分的回应所及之外的组的规律，取 comparison-where-the-rest-responds 的回应前提（Flow.RespondsThroughCoupling）为所给，经耦合而读的律给出它（ExchangeLaw.Through.responds）；时间的规律取 TimedResponse.coupling_alike_before 的假设。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That a pool's response closes any difference, or which responses do; which law a member follows, or that it reads through coupling; which formations pool, or how a pool forms, lasts or resists capture.",
+      "zh": "一组的回应闭合任何差别，或哪些回应如此；成员遵从哪个律，或它经耦合而读；哪些形成合起来，一组怎样形成、持续或抵抗劫持。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Members reading one another's coupling directly: here members coordinate only through conditions they couple into.",
+      "zh": "成员直接读彼此的耦合：这里成员只经其所耦合入的条件协调。",
+      "kind": "scope"
+    },
+    {
+      "en": "That the class-marking law is feasible: it takes one unit of each condition whatever stands, and serves to show that the bound is attained.",
+      "zh": "标记类的律可行：它不论所立如何都取每个条件一个单位，只用来表明此界可达。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PoolResponse.lean",
+      "detail": {
+        "en": "ExchangeLaw.response_not_fixed_by_coupling and Clearing.separated_unresponded: coupling a difference apart does not make a member respond to it. The law that exchanges nothing reads through every coupling, and in Clearing every pool holding the dweller separates the two worlds while everything outside the clearer's part exchanges alike in them.",
+        "zh": "ExchangeLaw.response_not_fixed_by_coupling 与 Clearing.separated_unresponded：把一个差别耦合得有别，并不使成员回应它。什么也不交换的律经每个耦合而读；Clearing 中每个含有栖居者的组分开两个世界，而清除者部分之外的一切在其中交换相同。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261018T165934.927469Z): the 21 declarations of Becoming.PoolResponse, 18 of them theorems, have empty axiom reports; the checker verifies core purity. Author self-review in study section 184; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T165934.927469Z）：Becoming.PoolResponse 的 21 项声明（18 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 184 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "Which law closes rather than widens a difference a pool separates (where the two courses rejoin, and through whom, is stated in where-two-courses-rejoin); how a member's law comes to respond to what it couples into (training); members reading one another's coupling directly; how pools form and last (target-capture); an independent review.",
+    "zh": "哪个律闭合而非扩大一组所分开的差别（两个进程在何处、经谁重合，见 where-two-courses-rejoin）；成员的律怎样变得回应其所耦合入者（训练）；成员直接读彼此的耦合；组怎样形成与持续（target-capture）；独立审查。"
+  },
+  "correspondence": {
+    "en": "The chapter's section 7.4 read that what any member's acts do beyond its own coupling closure couples into some member of the pool \"and can be corrected there\", and what-pooled-coupling-reaches left open whether a pool's selection responds to what it separates; section 7.7 listed \"Coupling is not compliance\". Ren, 18 October 2026: \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\" (provenance, not warrant); the AI chose the item. Reading (the AI's, adopted in one account with the scope of chapter section 7, DELEGATED-CHOICES D45): what a pool does is a selection through its pooled coupling, so its acts respond to nothing beyond the union of its members' coupling closures, and within it only through members that couple a difference apart; a response reaches an actor's own act only through the actor's coupling closure, the structure that closing a difference and widening it share.",
+    "zh": "本章第 7.4 节读到，任何成员的动作在其自身耦合闭包之外所做的，耦合入组中的某个成员“并能在那里被纠正”；what-pooled-coupling-reaches 留下开放：一组的选择是否回应它所分开者；第 7.7 节列出“耦合不是服从”。Ren，2026年10月18日：\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"，以及\"please make your own pareto frontier decisions, and push the frontier\"（来历，不是根据）；此项由 AI 选定。读法（AI 的，以理论第 7 节的范围在一个说明中采用，DELEGATED-CHOICES D45）：一组所做的是经其合起来之耦合的选择，所以它的动作不回应其成员耦合闭包之并以外的任何东西，在其内也只经把差别耦合得有别的成员；回应只经行动者的耦合闭包及于其自身的动作，这是闭合差别与扩大差别共有的结构。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PoolResponse.lean",
+  "aliases": [
+    "what a pool's acts respond to",
+    "一组的动作回应什么",
+    "the gap for a pool's response",
+    "一组之回应的缺口",
+    "coupling bounds response and does not fix it",
+    "耦合界定回应而不确定回应",
+    "separated, not responded",
+    "被分开，未被回应"
+  ],
+  "dependencies": [
+    {
+      "id": "what-pooled-coupling-reaches",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses withinClosureOf_iff, WithinClosureOf.of_member, Web.separates_all_iff, Web.separates_all_iff_member, Web.admission_separates_all, Flow.act_alike_pool, Flow.act_unselected_pool and act_courses_unselected_pool; the delta derives the pooled-selection premise for what a pool decides by its acts, and turns the gap for a pool's act into the gap for its response.",
+        "zh": "复用 withinClosureOf_iff、WithinClosureOf.of_member、Web.separates_all_iff、Web.separates_all_iff_member、Web.admission_separates_all、Flow.act_alike_pool、Flow.act_unselected_pool 与 act_courses_unselected_pool；增量是为一组以其动作所决定者推出合起来之选择的前提，并把一组之动作的缺口变为其回应的缺口。"
+      },
+      "interface": {
+        "output": {
+          "en": "What a pool's selections reach, the selection through its pooled coupling supplied; the gap for a pool's act.",
+          "zh": "一组的选择及于什么，经其合起来之耦合的选择为所给；一组之动作的缺口。"
+        },
+        "input": {
+          "en": "The same bound for what a pool decides by its acts, the premise derived; the gap for a pool's response.",
+          "zh": "对一组以其动作所决定者的同一界，前提由推导得出；一组之回应的缺口。"
+        },
+        "conditions": {
+          "en": "Each member's law reads through coupling; balance; the same formations present; a common start.",
+          "zh": "每个成员的律经耦合而读；平衡；出现的形成相同；起点相同。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionPool.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses ExchangeLaw, ExchangeLaw.GivesAlike, ExchangeLaw.Through, ExchangeLaw.Through.responds, the generated courses (ExchangeLaw.withAct, ExchangeLaw.course, ExchangeLaw.levels, ExchangeLaw.withAct_follows) and Loop.replyLaw; the delta reads a pool's act as what its members exchange under the law and states the class-marking and the empty law.",
+        "zh": "复用 ExchangeLaw、ExchangeLaw.GivesAlike、ExchangeLaw.Through、ExchangeLaw.Through.responds、生成的进程（ExchangeLaw.withAct、ExchangeLaw.course、ExchangeLaw.levels、ExchangeLaw.withAct_follows）与 Loop.replyLaw；增量是把一组的动作读作其成员在此律下所交换的，并陈述标记类的律与什么也不交换的律。"
+      },
+      "interface": {
+        "output": {
+          "en": "Laws of exchange reading through coupling, the response they give, and the courses they generate.",
+          "zh": "经耦合而读的交换律、它们给出的回应，以及它们生成的进程。"
+        },
+        "input": {
+          "en": "A pool's acts as exchanges under such a law, and the laws attaining and emptying the bound.",
+          "zh": "一组的动作作为在这样的律下的交换，以及达到此界与使之为空的律。"
+        },
+        "conditions": {
+          "en": "The law reads through the coupling of each formation outside the part.",
+          "zh": "此律经部分之外每个形成的耦合而读。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    },
+    {
+      "id": "comparison-where-the-rest-responds",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Flow.WithinResponse, Flow.RespondsThroughCoupling, Flow.withinResponse_iff_coupling, Flow.alike_beyond_response and Flow.exchange_alike_beyond_response; the delta states that a pool meets a part's responsive reach exactly where the part meets the pool's closure, and that a pool beyond the reach does not respond.",
+        "zh": "复用 Flow.WithinResponse、Flow.RespondsThroughCoupling、Flow.withinResponse_iff_coupling、Flow.alike_beyond_response 与 Flow.exchange_alike_beyond_response；增量是陈述一组与一个部分的回应所及相交，恰当该部分与这组的闭包相交，以及在此所及之外的组不回应。"
+      },
+      "interface": {
+        "output": {
+          "en": "A part's responsive reach, and confinement beyond it.",
+          "zh": "一个部分的回应所及，以及其外的限制。"
+        },
+        "input": {
+          "en": "The same reach met by a pool exactly where the part meets the pool's closure.",
+          "zh": "一组恰在该部分与其闭包相交之处与此所及相交。"
+        },
+        "conditions": {
+          "en": "The response premise, supplied or given by a law reading through coupling; balance on what lies beyond the reach; the same formations present; a common start there.",
+          "zh": "回应前提，为所给或由经耦合而读的律给出；在所及之外者上平衡；出现的形成相同；在那里起点相同。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean"
+      }
+    },
+    {
+      "id": "timely-response-necessity",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses TimedResponse.ReachedBy and TimedResponse.coupling_alike_before; the delta states it for every member of a pool and its pooled selections.",
+        "zh": "复用 TimedResponse.ReachedBy 与 TimedResponse.coupling_alike_before；增量是对一组的每个成员及其合起来的选择陈述它。"
+      },
+      "interface": {
+        "output": {
+          "en": "No difference before ordered propagation reaches what a formation couples into.",
+          "zh": "有序传播及于一个形成所耦合入者之前没有差别。"
+        },
+        "input": {
+          "en": "No response of any member of a pool before then.",
+          "zh": "在此之前一组的任何成员都不回应。"
+        },
+        "conditions": {
+          "en": "Balance, presence and a common start before the deadline; response through coupling outside the source.",
+          "zh": "截止前平衡、在场相同、起点相同；源之外经耦合回应。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "the-gap-for-ones-own-act",
+      "detail": {
+        "en": "There the gap for one's own act, with the response derived from the law; here the response of a pool, and the gap read with the responder as the acting part and the actor as the pool.",
+        "zh": "那里是自身动作的缺口，回应由律推出；这里是一组的回应，以及把回应者读作行动部分、把行动者读作组的缺口。"
+      }
+    },
+    {
+      "id": "selection-through-registration",
+      "detail": {
+        "en": "Its pooled selections (Web.SelectsThroughAll) are the selections a pool's acts make where each member's law reads through its coupling.",
+        "zh": "其合起来的选择（Web.SelectsThroughAll）正是每个成员之律都经其耦合而读时一组的动作所作的选择。"
+      }
+    },
+    {
+      "id": "where-two-courses-rejoin",
+      "detail": {
+        "en": "States what a response must do for the two courses to rejoin: a difference closes only through a different exchange with the condition, by exactly the gap, and where the rest reads through its coupling, through a formation that couples the two courses apart.",
+        "zh": "陈述回应要使两个进程重合须做什么：差别只经与该条件的不同交换而闭合，所交换的恰是差距；其余经其耦合而读时，经一个把两个进程耦合得有别的形成。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PoolResponse.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Clearing.separated_unresponded",
+        "Becoming.ExchangeLaw.SelectsThroughActs",
+        "Becoming.ExchangeLaw.Through.acts_alike_all",
+        "Becoming.ExchangeLaw.Through.acts_separate",
+        "Becoming.ExchangeLaw.Through.acts_separate_member",
+        "Becoming.ExchangeLaw.Through.apart_of_acts",
+        "Becoming.ExchangeLaw.Through.selectsThroughAll",
+        "Becoming.ExchangeLaw.acts_alike_all_iff",
+        "Becoming.ExchangeLaw.ofClass",
+        "Becoming.ExchangeLaw.ofClass_take_iff",
+        "Becoming.ExchangeLaw.ofClass_through",
+        "Becoming.ExchangeLaw.response_not_fixed_by_coupling",
+        "Becoming.ExchangeLaw.zero",
+        "Becoming.ExchangeLaw.zero_through",
+        "Becoming.Flow.act_unselected_by_acts_pool",
+        "Becoming.Flow.pool_alike_beyond_response",
+        "Becoming.Flow.pool_within_response_iff",
+        "Becoming.Flow.response_alike_pool",
+        "Becoming.Loop.response_returns",
+        "Becoming.TimedResponse.pool_alike_before",
+        "Becoming.act_courses_response_alike_pool"
+      ],
+      "sha256": "13bce2617ad84cfa4a540f657673fdf803abb323eb15ee30f0a8d3fbbdfbf873"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.ExchangeLaw.GivesAlike",
+        "Becoming.ExchangeLaw.Nonanticipating",
+        "Becoming.ExchangeLaw.Through",
+        "Becoming.ExchangeLaw.Through.responds",
+        "Becoming.ExchangeLaw.withAct",
+        "Becoming.ExchangeLaw.withAct_follows",
+        "Becoming.ExchangeLaw.course",
+        "Becoming.ExchangeLaw.levels",
+        "Becoming.ExchangeLaw.Feasible",
+        "Becoming.Flow.Follows",
+        "Becoming.Loop.replyLaw",
+        "Becoming.Loop.replyLaw_through",
+        "Becoming.Loop.escalation_follows",
+        "Becoming.Loop.quiet_follows"
+      ],
+      "sha256": "c4916cbf4ee72134c14a7573780ac76acbde0d256ca2799012253f5e23d89fd8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionPool.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Web.separates_all_iff",
+        "Becoming.Web.separates_all_iff_member",
+        "Becoming.Web.admission_separates_all",
+        "Becoming.Flow.act_alike_pool",
+        "Becoming.Flow.act_unselected_pool",
+        "Becoming.act_courses_unselected_pool",
+        "Becoming.Clearing.restLaw",
+        "Becoming.Clearing.rest_follows_spared"
+      ],
+      "sha256": "8eaa75ce391c1e3ac87a6509eb9bb7464b4c96f358f4e4d3726ab95c23e0f09e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionGap.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.ActsAlikeWithin",
+        "Becoming.act_courses_unselected"
+      ],
+      "sha256": "400222ef8f8d216a7be6b1314193321808c9ce71d0934e86bbcd615603772ec0"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.WithinResponse",
+        "Becoming.Flow.RespondsThroughCoupling",
+        "Becoming.Flow.withinResponse_iff_coupling",
+        "Becoming.Flow.alike_beyond_response",
+        "Becoming.Flow.exchange_alike_beyond_response",
+        "Becoming.Loop.paired",
+        "Becoming.Loop.firstPart",
+        "Becoming.Loop.escalation",
+        "Becoming.Loop.quiet",
+        "Becoming.Loop.web",
+        "Becoming.Loop.quietWeb"
+      ],
+      "sha256": "fc25cc715d0eb60205939acf67a28ee56f66195a2213ebb3ffeaf4691746827c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.TimedResponse.ReachedBy",
+        "Becoming.TimedResponse.coupling_alike_before"
+      ],
+      "sha256": "247d0910222d42c9d23862f7828f1b966613e47e1552e40d419dfc9329008a1f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Web.SelectsThroughAll",
+        "Becoming.Web.selects_alike_iff",
+        "Becoming.Web.AlikeThroughUpTo.trans",
+        "Becoming.Clearing.dweller_spared",
+        "Becoming.WithinClosureOf",
+        "Becoming.WithinClosureOf.of_member",
+        "Becoming.withinClosureOf_iff"
+      ],
+      "sha256": "319c94e1443e563dd60eadf127b18980644c89c735c248733928f954a089a5cb"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Web.AlikeThrough",
+        "Becoming.Web.AlikeThrough.refl",
+        "Becoming.Web.AlikeThroughUpTo",
+        "Becoming.Web.AlikeThroughUpTo.symm",
+        "Becoming.Web.AlikeThroughUpTo.earlier",
+        "Becoming.Web.AlikeThroughAll",
+        "Becoming.Web.CoupledInto",
+        "Becoming.Flow.CoupledFromEither",
+        "Becoming.thresholdOnly"
+      ],
+      "sha256": "679f7dfa4433804a6230660ebfe0ddd93eb283223ad7d2af5e72112e75879808"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.WithinClosure",
+        "Becoming.WithinClosure.of_rel",
+        "Becoming.Clearing.sparedFlow",
+        "Becoming.Clearing.sparedWeb"
+      ],
+      "sha256": "c9345a3054da6f494ee9209dfcebce5b1abb8577189b730fdda513f1ce3f1baa"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Clearing.lean",
+      "role": "proof",
+      "sha256": "920cc4a0657a68494c9bc523c24b903db9385de3425d92e134bb75a2956d8852",
+      "declarations": [
+        "Becoming.Clearing.clearerPart",
+        "Becoming.Clearing.unsupported_with"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.mark",
+        "Becoming.mark_cases",
+        "Becoming.mark_pos",
+        "Becoming.mark_iff"
+      ],
+      "sha256": "1be380343ae5a2b019fb355cee08c038404c14b9fcb2e1681e6e61b236a3fa00"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Decided"
+      ],
+      "sha256": "e7c3fd01f372115c0b598aad9aafc697c1974efc81aaef7000a588804ed232a7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T165934.927469Z/verification.json",
+      "role": "receipt",
+      "sha256": "f41b0f28fd73baffd701e06375044773534d178e2647f0aa5da07228f9c2329a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
+      "role": "provenance",
+      "sha256": "95ff59e72deb41238deea58d3192ae8bf4b22b75831324d7f6cd23d375b50b47"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
+      "role": "provenance",
+      "sha256": "a5296e9a8fb43255176faf4b9df88bed625bb14a09c2e3a4ec6fc22be3771b86"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PoolResponse.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.PoolResponse",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Selection",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Clearing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Clearing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "18 October 2026: added (M3), on Ren's \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\", the AI choosing the item; study section 184.",
+      "zh": "2026年10月18日：新增（M3），按 Ren 的\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"与\"please make your own pareto frontier decisions, and push the frontier\"，此项由 AI 选定；研究第 184 节。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 1 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts and connectivity follow the sweep run, and its list of checks names the superseded register). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 1：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the fold; THE-THEORY-OF-BECOMING.md: section 9's layers start from Becoming.World and name Becoming.Labelled; the P69 paragraph says where the readings now live; counts, receipt and connectivity follow the W1 run; Testing.lean: the fold). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F2, joins into the core (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): declarations moved with their full Lean names. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G4 added a study section). The claim is unchanged.",
+      "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the \"Selection, causes and experiment\" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：G4 修订“选择、原因与实验”行（陈述了沿一个运行经耦合的判据，链接其记录）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Counterfactual.lean, Feedback.lean, Response.lean, Selection.lean, THE-THEORY-OF-BECOMING.md, Testing.lean, TimedResponse.lean. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: C2 added a study section; THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the \"Seeking, capture and runaway\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, C2 follow-up (D46): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: section 186 (C2) now states its readings as D46 rather than waiting on Ren). The claim is unchanged.",
+      "zh": "2026年10月19日，C2 后续（D46）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, G5 (Becoming.LawThroughChangingCoupling): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G5 added a study section; THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，G5（Becoming.LawThroughChangingCoupling）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): next_delta updated, since where-two-courses-rejoin states when the courses with and without an act rejoin (only through a different exchange with the condition, and where the rest reads through its coupling, through a formation coupling the courses apart); which law closes rather than widens a difference stays open. \"Correct\" is no longer used for this: the course without the act is a comparison, not a standard (Ren, 19 October 2026: \"correct? this is a dualist word, are we drifting off?\"); the reading and the first boundary are worded likewise. The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：next_delta 更新，因为 where-two-courses-rejoin 陈述了有动作与无动作的进程何时重合（只经与该条件的不同交换；其余经其耦合而读时，经把进程耦合得有别的形成）；哪个律闭合而非扩大差别仍开放。此处不再用“纠正”：无动作的进程是比较，不是标准（Ren，2026年10月19日：“correct? this is a dualist word, are we drifting off?”）。读法与第一条界限照此措辞。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: M4 added a study section; THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The reading is adopted with the scope of chapter section 7, whose readings were marked open until 19 October 2026 (DELEGATED-CHOICES D45 (2)). The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：读法以理论第 7 节的范围采用，该节的读法在 2026年10月19日之前标为开放（DELEGATED-CHOICES D45 (2)）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: A4-L added a study section; THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
+      "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V (what a collective's continuation needs): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): V added Widening to the \"Selection, causes and experiment\" row, a \"Collective continuation\" row and a rerun sentence in the integration row. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，V（集体延续所需）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：V 在“选择、原因与实验”行加入 Widening，新增“集体延续”行，并在整合行加入一句重跑。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 (Becoming.HexagramPlaces): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: Y2 added the section 1 paragraph on the relations of the places with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2（Becoming.HexagramPlaces）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V2 (thresholds of waiting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: V2 added the section 4 paragraph on thresholds of waiting and the laws that restore giving, revised the section 4 table row and reading on cooperation among strangers and the section 8.2 \"Collective continuation\" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，V2（等待的阈值）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Selection.lean, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Selection.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Selection.lean、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (PoolResponse.lean). Re-pointed after reading the change (Counterfactual.lean: declarations moved in or out by W2; Decidedness.lean: declarations moved in or out by W2; Feedback.lean: declarations moved in or out by W2; Response.lean: declarations moved in or out by W2; SelectionPool.lean: declarations moved in or out by W2; Testing.lean: declarations moved in or out by W2; TimedResponse.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：THE-THEORY-OF-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R23 (the refutation laws however a family is listed): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R23 changed them: THE-THEORY-OF-BECOMING.md, the listing paragraph and §8.2 row name Becoming.ListingRefutations; §9 counts and receipt follow R23. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R23（否证律对任何列出方式成立）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R23 改动之处改动：THE-THEORY-OF-BECOMING.md，列出一次一段与 §8.2 行写入 Becoming.ListingRefutations；§9 计数与回执随 R23。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the paragraph on what a finite stretch refutes cites Refutable.not_not, proved in Horizon from the law for points; §9 counts and receipt follow R26. The claim is unchanged.",
+      "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，有限片段所否证者一段改引 Refutable.not_not（Horizon 由点的律证明）；§9 计数与回执随 R26。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R27 (the stepwise classes and loss): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, §6.8 gains the bullet on the stepwise classes and loss; §9 counts and receipt follow R27. The claim is unchanged.",
+      "zh": "2026年10月20日，R27（逐步类别与失去）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，§6.8 新增逐步类别与失去一条；§9 计数与回执随 R27。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Moved with their full names: from SelectionPool.lean to Selection.lean, WithinClosureOf, WithinClosureOf.of_member, withinClosureOf_iff. Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Decidedness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Selection.lean, the pool closure (WithinClosureOf, withinClosureOf_iff, withinClosureOf_single, Flow.WithinPoolCoupling, Flow.beyond_pool_coupling, Flow.uncoupled_beyond_pool, Flow.unselected_beyond_pool) moved in; Flow.unselected_beyond_coupling_all proved at the singleton pool, statement unchanged; SelectionPool.lean, the pool closure moved to Selection.lean; Flow.unselected_beyond_coupling_all_of_pool removed; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：连同完整名称移动：从 SelectionPool.lean 到 Selection.lean：WithinClosureOf、WithinClosureOf.of_member、withinClosureOf_iff。读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Decidedness.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Selection.lean，池的闭包（WithinClosureOf、withinClosureOf_iff、withinClosureOf_single、Flow.WithinPoolCoupling、Flow.beyond_pool_coupling、Flow.uncoupled_beyond_pool、Flow.unselected_beyond_pool）移入；Flow.unselected_beyond_coupling_all 在单元素池上证明，陈述不变；SelectionPool.lean，池的闭包移到 Selection.lean；删去 Flow.unselected_beyond_coupling_all_of_pool；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Regions.lean to Clearing.lean, Clearing.clearerPart, Clearing.unsupported_with. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Change.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Counterfactual.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Decidedness.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Feedback.lean, the conditional theorems moved to BoundedSignificance.lean; comparison_within_reach proved with no condition, statement unchanged; Regions.lean, Clearing's losing beyond the dependence moved to Clearing.lean; Response.lean, responsive_comparison proves the two excesses itself, with no condition, statement unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Regions.lean 到 Clearing.lean：Clearing.clearerPart、Clearing.unsupported_with。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Change.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Counterfactual.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Decidedness.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Feedback.lean，条件定理移到 BoundedSignificance.lean；comparison_within_reach 不经条件证明，陈述不变；Regions.lean，Clearing 的依存之外的失去移到 Clearing.lean；Response.lean，responsive_comparison 自证两个超出，不经条件，陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Change.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Counterfactual.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Decidedness.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Response.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Change.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Counterfactual.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Decidedness.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Response.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; Testing.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；Testing.lean，只改说明（任何类型的立场、obs 是第二个给出的关系、固定类型的界、整段的类）或导入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

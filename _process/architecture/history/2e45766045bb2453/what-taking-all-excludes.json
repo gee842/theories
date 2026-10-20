@@ -1,0 +1,338 @@
+{
+  "schema_version": 2,
+  "id": "what-taking-all-excludes",
+  "title": {
+    "zh": "取尽所给所排除的",
+    "en": "What taking all that is given excludes"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-18T16:04:59+00:00",
+  "statement": {
+    "en": "Where renewal depends on what it renews, a formation that takes all that is given and continues excludes every other taker through a window as long as the level: one living by taking ends. Taking jointly within what is given keeps all; the levels still admit the excluded where it ends.",
+    "zh": "更新依存于所更新者之处，取尽所给且持续的形成，在与水平一样长的窗口内排除每个其他取用者：以取用为生者终结。联合地在所给之内取用则全都保持；被排除者终结之处，水平仍容纳它。"
+  },
+  "laws": [
+    {
+      "en": "A formation takes all that is given to a condition across a step where it takes part and takes from the condition at least all that the step gives to it; alongside it, any other taker makes the joint taking exceed what is given. So where renewal depends on what it renews, full taking alongside another taker at each of n steps, from a level below n + m, ends every formation depending on the condition at a need of at least m, the full taker included.",
+      "zh": "一个形成在一步中参与、且从一个条件取用至少该步给予该条件的全部，称为取尽所给；与它同在，任何其他取用者都使联合取用超出所给。所以更新依存于所更新者之处，取尽所给与另一取用者同在 n 步、自低于 n + m 的水平起，终结每个以至少 m 的需要依存于该条件的形成，取尽者也在内。",
+      "declarations": [
+        "Becoming.mem_of_mem_cons_ne",
+        "Becoming.add_le_total_of_mem",
+        "Becoming.Flow.TakesAll",
+        "Becoming.Flow.excess_of_takesAll",
+        "Becoming.Flow.full_taking_ends_at",
+        "Becoming.Flow.full_taking_ends"
+      ]
+    },
+    {
+      "en": "Competitive exclusion: a full taker that continues, depending on the condition at such a need, leaves no other formation taking from it at each of the level + 1 steps from any step; a formation active only while it takes from the condition is not active at each of them and, where its activity does not resume once it stops, it is inactive from that many steps on; a formation that continues alongside another taker does not take all that is given at each of them.",
+      "zh": "竞争排除：取尽所给且持续、以这样的需要依存于该条件的形成，自任何一步起的水平 + 1 步中，不留下每步都从该条件取用的其他形成；只在从该条件取用时才活跃的形成，不在其中每一步都活跃，其活动一旦停止不再恢复之处，它自那么多步之后不再活跃；与另一取用者同在而持续的形成，不在其中每一步都取尽所给。",
+      "declarations": [
+        "Becoming.Web.active_before",
+        "Becoming.Flow.continuing_excludes",
+        "Becoming.Flow.continuing_excludes_active",
+        "Becoming.Flow.continuing_ends_taker",
+        "Becoming.Flow.alongside_not_all"
+      ]
+    },
+    {
+      "en": "Taking jointly within what is given at every step keeps the level at least where it started, and keeps every formation supported where the formations depend on that condition alone, at needs it met at the start.",
+      "zh": "每一步都联合地在所给之内取用，使水平不低于起始；诸形成只依存于该条件、其需要在起始时已满足之处，每个形成都始终被支持。",
+      "declarations": [
+        "Becoming.Flow.level_kept",
+        "Becoming.Flow.supported_of_within"
+      ]
+    },
+    {
+      "en": "Of a renewer giving two units across each step and two takers depending on the condition at need one: where both take two, all end from step two; where the first takes all that is given and the second ends after the first step, the renewer and the first are active at every step, and the ending also follows from the law; where each takes one, all three are supported and active at every step and neither takes all that is given, so the law needs its premise of full taking.",
+      "zh": "一个每步给予两个单位的更新者，与两个以需要一依存于该条件的取用者：两者都取二之处，自第二步起全部终结；第一个取尽所给、第二个在第一步后终结之处，更新者与第一个每步都活跃，且这一终结也由定律推出；各取一之处，三者每步都被支持且活跃，两者都不取尽所给，所以定律需要取尽所给这一前提。",
+      "declarations": [
+        "Becoming.Excluding.level",
+        "Becoming.Excluding.present",
+        "Becoming.Excluding.flow",
+        "Becoming.Excluding.web",
+        "Becoming.Excluding.balances",
+        "Becoming.Excluding.acting",
+        "Becoming.Excluding.level_two",
+        "Becoming.Excluding.dependent",
+        "Becoming.Excluding.gated",
+        "Becoming.Excluding.takes_all",
+        "Becoming.Excluding.continues",
+        "Becoming.Excluding.first_step",
+        "Becoming.Excluding.second_lives",
+        "Becoming.Excluding.second_lasting",
+        "Becoming.Excluding.ends_by_law",
+        "Becoming.Sharing.flow",
+        "Becoming.Sharing.web",
+        "Becoming.Sharing.balances",
+        "Becoming.Sharing.within",
+        "Becoming.Sharing.dependent",
+        "Becoming.Sharing.neither_all",
+        "Becoming.Sharing.full_taking_needed",
+        "Becoming.Excluding.three_courses"
+      ]
+    },
+    {
+      "en": "The levels of the excluding and of the sharing course admit every member at every step, and each level path includes the other, while the second ends in the one and continues in the other: the exclusion acts through the taking, not through the levels the excluded formation needs.",
+      "zh": "排除的进程与分享的进程中，水平每步都容纳每个成员，两条水平路径互相包含，而第二个在前者中终结、在后者中持续：排除经由取用起作用，不经由被排除者所需的水平。",
+      "declarations": [
+        "Becoming.Excluding.admits_all",
+        "Becoming.Excluding.admission_alike"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Balance at the condition; only active formations give; activity needs support; whatever gives to the condition depends on it at the need. For the ending: a formation active only while it takes from the condition, whose activity does not resume once it stops. Natural-number amounts, discrete steps.",
+      "zh": "不加公理。条件处的平衡；只有活跃的形成给予；活动需要支持；给予该条件者以该需要依存于它。就终结而言：只在从该条件取用时才活跃、活动一旦停止不再恢复的形成。自然数的量，离散的步。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Endings forced in the witnesses of section 6.7 (Downstream, Mortal, Clearing) by quantifying over activity: there they stay stipulated; here an ending is derived only for a formation living by taking.",
+      "zh": "在第 6.7 节的见证（Downstream、Mortal、Clearing）中对活动量化而强制的终结：那里仍是规定的；这里只对以取用为生的形成推出终结。",
+      "kind": "scope"
+    },
+    {
+      "en": "How taking all that is given forms (through what it gains, a stronger case of the meta-attractor); reserves and delayed renewal; shares beyond the witnesses.",
+      "zh": "取尽所给如何形成（经由其所得，元吸引子的更强情形）；储备与延迟更新；见证之外的份额。",
+      "kind": "scope"
+    },
+    {
+      "en": "Which course is to be taken: the excluding and the sharing course are not ranked, and the extent derived from the first's want does not separate them.",
+      "zh": "应走哪个进程：排除的进程与分享的进程不被排序，由第一个的想要推出的范围也不区分它们。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean",
+      "detail": {
+        "en": "Excluding.admission_alike: the levels of the excluding course admit the second at every step, and its level path and that of the sharing course include each other, while the second ends from step one; a comparison of level paths by admission does not show an ending through exclusion from taking.",
+        "zh": "Excluding.admission_alike：排除的进程中水平每步都容纳第二个，它的水平路径与分享的进程的互相包含，而第二个自第一步起终结；以容纳比较水平路径，不记下经由被排除于取用之外的终结。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261018T154830.591298Z): the 38 declarations of Becoming.Exclusion, 31 of them theorems, have empty axiom reports; the checker verifies core purity. Author self-review in study section 183; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T154830.591298Z）：Becoming.Exclusion 的 38 项声明（31 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 183 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "Endings forced in the witnesses of section 6.7; how taking all that is given forms other than by a rising take; a comparison of courses that shows an ending through exclusion from taking; an independent review.",
+    "zh": "第 6.7 节见证中强制的终结；取尽所给如何以上升的取用以外的方式形成；记下经由被排除于取用之外的终结的进程比较；独立审查。"
+  },
+  "correspondence": {
+    "en": "The chapter's open programme (section 8.2, \"Continuation (§6.7) and feeding\") named \"a witness in which ending another serves the clearer's continuation (a stronger case of the meta-attractor)\". Ren, 18 October 2026: \"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\" (provenance, not warrant); the AI chose the item. Ending another serves taking all that is given, not continuing as such. The law is the form here of the competitive exclusion principle of ecology, where one formation takes the whole renewal. The reading is D44 of DELEGATED-CHOICES.",
+    "zh": "本章开放纲领（第 8.2 节，“Continuation (§6.7) and feeding”）列出“a witness in which ending another serves the clearer's continuation (a stronger case of the meta-attractor)”。Ren，2026年10月18日：\"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\"（来历，不是根据）；此项由 AI 选定。终结他者服务于取尽所给，而不是延续本身。这一定律是生态学竞争排除原理在此的形式，其中一个形成取走全部更新。读法是 DELEGATED-CHOICES 的 D44。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean",
+  "aliases": [
+    "what taking all that is given excludes",
+    "取尽所给所排除的",
+    "competitive exclusion",
+    "竞争排除",
+    "taking all that is given",
+    "取尽所给",
+    "the joint course that keeps all",
+    "全部保持的联合进程",
+    "admission does not see exclusion",
+    "容纳看不见排除"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "own-count-misses-joint-excess",
+      "detail": {
+        "en": "There joint excess ends the renewal and the formations depending on it at such a need; here a full taker makes every other taker a joint excess, so a full taker that continues excludes them.",
+        "zh": "那里联合超出终结更新与以这样的需要依存者；这里取尽所给者使每个其他取用者都成为联合超出，所以持续的取尽者排除它们。"
+      }
+    },
+    {
+      "id": "derived-extent-limits",
+      "detail": {
+        "en": "There a clearer meeting every requirement derived from its want still ends a dweller, the ending stipulated; here ending another serves taking all that is given, not continuing as such, and the ending of a formation living by taking is derived.",
+        "zh": "那里满足由其想要推出的每项要求的清除者仍终结栖居者，终结是规定的；这里终结他者服务于取尽所给，而不是延续本身，以取用为生的形成的终结是推出的。"
+      }
+    },
+    {
+      "id": "significance-retained-within-margin",
+      "detail": {
+        "en": "There retaining and the margin compare level paths by what they admit; here the levels admit the excluded formation at every step while it ends, so that comparison does not show it.",
+        "zh": "那里保留与余量以所容纳者比较水平路径；这里水平每步都容纳被排除的形成而它终结，所以那一比较不记下它。"
+      }
+    },
+    {
+      "id": "consumption-ends-with-feeders",
+      "detail": {
+        "en": "There a taker ends with its feeders; here a taker ends alongside a full taker while the renewer and the full taker continue.",
+        "zh": "那里取用者随其供给者终结；这里取用者在取尽者旁终结，而更新者与取尽者持续。"
+      }
+    },
+    {
+      "id": "where-a-rising-take-ends",
+      "detail": {
+        "en": "There a full taker that continues excludes every other taker; here a take more than now comes to take all that is given and does not continue.",
+        "zh": "那里持续的取尽者排除每个其他取用者；这里多于此刻的取用达到取尽所给，且不持续。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Excluding.acting",
+        "Becoming.Excluding.admission_alike",
+        "Becoming.Excluding.admits_all",
+        "Becoming.Excluding.balances",
+        "Becoming.Excluding.continues",
+        "Becoming.Excluding.dependent",
+        "Becoming.Excluding.ends_by_law",
+        "Becoming.Excluding.first_step",
+        "Becoming.Excluding.flow",
+        "Becoming.Excluding.gated",
+        "Becoming.Excluding.level",
+        "Becoming.Excluding.level_two",
+        "Becoming.Excluding.present",
+        "Becoming.Excluding.second_lasting",
+        "Becoming.Excluding.second_lives",
+        "Becoming.Excluding.takes_all",
+        "Becoming.Excluding.three_courses",
+        "Becoming.Excluding.web",
+        "Becoming.Flow.TakesAll",
+        "Becoming.Flow.alongside_not_all",
+        "Becoming.Flow.continuing_ends_taker",
+        "Becoming.Flow.continuing_excludes",
+        "Becoming.Flow.continuing_excludes_active",
+        "Becoming.Flow.excess_of_takesAll",
+        "Becoming.Flow.full_taking_ends",
+        "Becoming.Flow.full_taking_ends_at",
+        "Becoming.Flow.level_kept",
+        "Becoming.Flow.supported_of_within",
+        "Becoming.Sharing.balances",
+        "Becoming.Sharing.dependent",
+        "Becoming.Sharing.flow",
+        "Becoming.Sharing.full_taking_needed",
+        "Becoming.Sharing.neither_all",
+        "Becoming.Sharing.web",
+        "Becoming.Sharing.within",
+        "Becoming.Web.active_before",
+        "Becoming.add_le_total_of_mem",
+        "Becoming.mem_of_mem_cons_ne"
+      ],
+      "sha256": "94a18f41ddefa0222801661c72bb5af17f957c1d091f82f9aedaf4a9e9663b61"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T154830.591298Z/verification.json",
+      "role": "receipt",
+      "sha256": "f9617dec9e775b19b288c7a38e3eb6ed9f8358a26ceee8ff99f983b6ceedab45"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
+      "role": "provenance",
+      "sha256": "a5296e9a8fb43255176faf4b9df88bed625bb14a09c2e3a4ec6fc22be3771b86"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T154830.591298Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Exclusion",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "18 October 2026: added (C1), on Ren's \"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\", the AI choosing the item; study section 183; the reading is D44 of DELEGATED-CHOICES.",
+      "zh": "2026年10月18日：新增（C1），按 Ren 的\"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\"，此项由 AI 选定；研究第 183 节；读法是 DELEGATED-CHOICES 的 D44。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): one way taking all that is given forms is stated in where-a-rising-take-ends: a take more than now from a bounded giving, so the next step was narrowed and the record linked. Before: next step \"Endings forced in the witnesses of section 6.7; how taking all that is given forms; a comparison of courses that shows an ending through exclusion from taking; an independent review.\". The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：取尽所给的一种形成方式已在 where-a-rising-take-ends 中陈述：对有界所给的多于此刻的取用，所以下一步收窄并链接该记录；原文见英文。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the \"Seeking, capture and runaway\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, G5 (Becoming.LawThroughChangingCoupling): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，G5（Becoming.LawThroughChangingCoupling）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
+      "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

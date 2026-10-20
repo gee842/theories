@@ -1,0 +1,788 @@
+{
+  "schema_version": 2,
+  "id": "weights-count-situations",
+  "title": {
+    "zh": "权重计数情境",
+    "en": "Weights count situations"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "每一步以其自然数权重那么多的情境被走、每个情境固定这一步时，以情境为动作的律是确定的，历程的权重是走它的情境之数，大数定律计数情境。哪个情境发生，不是计数。",
+    "en": "Where each step is taken in as many situations as its natural weight, each fixing the step, the law with the situation as the move is determined, a course weighs the number of situations taking it, and the law of large numbers counts situations. Which situation happens is not a count."
+  },
+  "laws": [
+    {
+      "zh": "以情境为动作的律是确定的，恰走权重为正的步：步为权重为正者的律，就是它忘掉情境。",
+      "en": "The law whose moves are the situations is determined and takes exactly the steps of positive weight: a law whose steps are those of positive weight is it with the situation forgotten.",
+      "declarations": [
+        "Becoming.Situations.finerLaw",
+        "Becoming.Situations.finerLaw_determined",
+        "Becoming.Situations.finerLaw_step_iff"
+      ]
+    },
+    {
+      "zh": "对每个列出动作与配置、以自然数为步之权重的过程，历程的任一读数在 n 步细历程上之和，是它在历程上、每个乘以其权重之和；所以细历程之数就是历史之和。",
+      "en": "For every process with listed moves and configurations and natural weights of steps, summing any reading of the courses over the finer courses of n steps is summing it over the courses, each times its weight; so the finer courses number the sum over histories.",
+      "declarations": [
+        "Becoming.Situations.upto",
+        "Becoming.Situations.sum_upto",
+        "Becoming.Situations.sum_one",
+        "Becoming.Situations.finerSteps",
+        "Becoming.Situations.finer",
+        "Becoming.Situations.coarse",
+        "Becoming.Situations.sum_finer",
+        "Becoming.Situations.finer_count"
+      ]
+    },
+    {
+      "zh": "两个值、每步 p 个与 q 个情境时，细历程共 (p + q)ⁿ 个；一个历程的权重就是走它的细历程之数，每个历程在历程之列中只出现一次。",
+      "en": "On two values with p and q situations a step, there are (p + q)ⁿ finer courses; the weight of a course is the number of finer courses taking it, each course occurring once among the courses.",
+      "declarations": [
+        "Becoming.Situations.sum_courses_values",
+        "Becoming.Situations.situations_count",
+        "Becoming.Situations.mul_indicator",
+        "Becoming.Situations.total_only",
+        "Becoming.Situations.situations_of_course"
+      ]
+    },
+    {
+      "zh": "大数定律计数情境：历程偏差至少为 d 的细历程之数乘 d 至多 n·p·q·(p + q)ⁿ。",
+      "en": "The law of large numbers counts situations: the finer courses whose course deviates by at least d number, times d, at most n·p·q·(p + q)ⁿ.",
+      "declarations": [
+        "Becoming.Situations.far",
+        "Becoming.Situations.weight_far",
+        "Becoming.Situations.situations_typical"
+      ]
+    },
+    {
+      "zh": "任意多个值经一个事件读作两个值：值上按自然数权重的历程之和，等于两个值的历程以事件之重与其余之重计之和；所以大数定律与指数集中对每个事件计数情境，细历程共 (P + Q)ⁿ 个。",
+      "en": "Through an event, any number of values counts as two: summing over the courses of values, each by its natural weight, is summing over two-valued courses with the event's weight and the rest's; so the law of large numbers and exponential concentration count situations for every event, of (P + Q)ⁿ finer courses.",
+      "declarations": [
+        "Becoming.Situations.keep",
+        "Becoming.Situations.drop",
+        "Becoming.Situations.inside",
+        "Becoming.Situations.outside",
+        "Becoming.Situations.keep_drop",
+        "Becoming.Situations.sum_split",
+        "Becoming.Situations.inside_add_outside",
+        "Becoming.Situations.valueWeight",
+        "Becoming.Situations.seen",
+        "Becoming.Situations.sum_event",
+        "Becoming.Situations.event_typical",
+        "Becoming.Situations.event_concentrated",
+        "Becoming.Situations.event_count"
+      ]
+    },
+    {
+      "zh": "对每个过程，走一个历程的细历程之数是其权重乘它被列出的次数；每个动作与配置只列一次时就是其权重。",
+      "en": "For every process, the finer courses taking a course number its weight times how often the course is listed; where every move and configuration is listed once, they number its weight.",
+      "declarations": [
+        "Becoming.Situations.occ",
+        "Becoming.Situations.sum_only",
+        "Becoming.Situations.situations_take",
+        "Becoming.Situations.occ_map_cons",
+        "Becoming.Situations.occ_map_pair",
+        "Becoming.Situations.occ_openSteps",
+        "Becoming.Situations.occ_courses",
+        "Becoming.Situations.occ_courses_once",
+        "Becoming.Situations.situations_of_course_listed"
+      ]
+    },
+    {
+      "zh": "任何权重中，步之权重是其情境之和时由情境计数；带符号的一步 (P, N) 是 P 个加的与 N 个减的情境，带符号的转移是合成为加与合成为减的细历程之数这一对；带符号的权重抵消之处，情境不抵消。",
+      "en": "In any weights, steps weighing the sum over their situations are counted by them; a signed step (P, N) is P situations that add and N that subtract, and the signed transfer is the pair of the numbers of finer courses composing to adding and to subtracting; where signed weights cancel, the situations do not.",
+      "declarations": [
+        "Becoming.Situations.signs",
+        "Becoming.Situations.sum_mul_right",
+        "Becoming.Situations.sum_finer_weights",
+        "Becoming.Situations.sign",
+        "Becoming.Situations.both",
+        "Becoming.Situations.sum_adding",
+        "Becoming.Situations.sum_signed",
+        "Becoming.Situations.signed_sums",
+        "Becoming.Situations.signed_situations",
+        "Becoming.Situations.signs_unit",
+        "Becoming.Situations.sum_units",
+        "Becoming.Situations.signed_counts",
+        "Becoming.Situations.cancels_situations"
+      ]
+    },
+    {
+      "zh": "更细的进程是更细之律的迹：一列情境恰在有 n 步、是更细之律从 s 出发的迹、只以列出的移动到列出的配置处，是从 s 出发 n 步的更细进程；两值上每个这样的迹都列出。正权之步的律是忘去情境的更细之律，任一方的迹给出另一方的迹；每个移动与配置都列出时，更细进程恰在该律有 n 步之迹处存在。",
+      "en": "The finer courses are the finer law's traces: a list of situations is a finer course of n steps from s exactly where it has n steps, is a finer-law trace from s and takes listed moves to listed configurations; on two values every such trace is listed. The positive-weight law is the finer law with the situation forgotten, traces passing both ways; all listed, finer courses exist where it has a trace of n moves.",
+      "declarations": [
+        "Becoming.FinerTraces.mem_finer_iff",
+        "Becoming.FinerTraces.two_values_mem_iff",
+        "Becoming.ListTests.mem_bools",
+        "Becoming.FinerTraces.supportLaw",
+        "Becoming.FinerTraces.trace_forget",
+        "Becoming.FinerTraces.trace_lift",
+        "Becoming.FinerTraces.nonzero_iff",
+        "Becoming.FinerTraces.finer_exists_iff"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理，不加前提：自然数或带符号的步之权重、列出的动作与配置写在定理中；按历程计数用到历程相等可判定，且要每个动作与配置只列一次（situations_of_course_listed）。",
+      "en": "No axiom and no premise: natural or signed weights of steps and listed moves and configurations, written into the theorems; counting per course uses decided equality of courses, and situations_of_course_listed needs every move and configuration listed once."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "哪个情境实际发生：计数说同类情境中多数如何，不说这一个；它由情境固定，不由计数。",
+      "en": "Which situation actually happens: counting says what most situations of a kind do, not this one; the situation fixes it, not a count.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "实际的权重是情境之数：这是对一个世界的对应，不是定理；带符号的权重是加的与减的情境之数之对，不是一个数；语境依赖的统计不由不依语境的情境计数给出。",
+      "en": "That actual weights are numbers of situations: a correspondence for a world, not a theorem; a signed weight is two counts, adding and subtracting, not one number; context-dependent statistics are not counts of context-free situations.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "实数或复数振幅：它们不是有限个单位之和；无限步。",
+      "en": "Real or complex amplitudes, which are not sums of finitely many units; infinitely many steps.",
+      "kind": "scope"
+    },
+    {
+      "zh": "列举把每个迹只列一次：计数是在列举之上的，列举恰含这些迹，没有定理排除重复。",
+      "en": "That the enumeration lists each trace once: the counts are over the enumeration, which holds exactly the traces, and no theorem excludes repetition.",
+      "kind": "scope",
+      "witness": "Becoming.FinerTraces.mem_finer_iff"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T193101.075446Z）：Becoming.Situations 的 54 项声明（38 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §144 与 §150；经第十八次审查（AI，只读，未重建 Lean）审阅，其更正已处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T193101.075446Z): the 54 declarations of Becoming.Situations, 38 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study sections 144 and 150; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
+  },
+  "next_delta": {
+    "zh": "实数或复数振幅（外围）：给出情境的读法或说明为什么没有；语境依赖的统计与情境（Becoming.Context）。",
+    "en": "Real or complex amplitudes (periphery): a reading by situations, or why there is none; context-dependent statistics and situations (Becoming.Context)."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-16：“we are describing what everything obeys, but at every moment, the actual change depends on the situation … just saying we are all one doesn't make it true, the situation makes it true”，并问对机会的读法怎样处理。已知的结果：以同等可能的情况之数读概率（拉普拉斯），以微观状态之数读宏观的权重（玻尔兹曼），非确定的系统是确定系统在更细状态上的投影。这里在核心中不用公理地给出，对每个过程，接到历史之和与大数定律。读法（AI 对 Ren 的话的读法，Ren 2026-10-16 已取）：核心陈述每个情境所遵从的；实际的变化由情境使之为真；分支的律是忘掉情境的确定的律；机会是同类情境之数，陈述它不需要典型的前提。AI 对形式部分的注：以情境为动作的律之确定由构造成立，因为动作中的情境写明它所通向的配置（finerLaw_determined）；实质是计数：在细历程上求和就是按权重在历程上求和（sum_finer）。AI 的注：相消与语境处，使之为真的情境须包括读它的语境。",
+    "en": "Ren, 16 October 2026: “we are describing what everything obeys, but at every moment, the actual change depends on the situation … just saying we are all one doesn't make it true, the situation makes it true”, asking what this means for the reading of chance. Known results: probability as a number of equally possible cases (Laplace), macroscopic weights as numbers of microstates (Boltzmann), a nondeterministic system as the projection of a deterministic one on finer states. Here it is given in the core with no axiom, for every process, joined to the sum over histories and the law of large numbers. Readings (the AI's reading of Ren's words, taken by Ren on 16 October 2026): the core states what every situation obeys; the situation makes the actual change true; a branching law is a determined law with the situation forgotten; a chance is a number of situations of a kind, and stating it needs no premise of typicality. The AI's note on the formal part: the determination of the law whose moves are situations holds by construction, since the situation in the move names the configuration it leads to (finerLaw_determined); the content is the count, that summing over the finer courses is summing over the courses by weight (sum_finer). The AI's note: where weights cancel or readings depend on context, the situation that makes it true must include the context of the reading."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
+  "aliases": [
+    "Becoming.Situations.upto",
+    "Becoming.Situations.sum_upto",
+    "Becoming.Situations.sum_one",
+    "Becoming.Situations.finerLaw",
+    "Becoming.Situations.finerLaw_determined",
+    "Becoming.Situations.finerLaw_step_iff",
+    "Becoming.Situations.finerSteps",
+    "Becoming.Situations.finer",
+    "Becoming.Situations.coarse",
+    "Becoming.Situations.sum_finer",
+    "Becoming.Situations.finer_count",
+    "Becoming.Situations.sum_courses_values",
+    "Becoming.Situations.situations_count",
+    "Becoming.Situations.mul_indicator",
+    "Becoming.Situations.total_only",
+    "Becoming.Situations.situations_of_course",
+    "Becoming.Situations.far",
+    "Becoming.Situations.weight_far",
+    "Becoming.Situations.situations_typical"
+  ],
+  "dependencies": [
+    {
+      "id": "typicality-by-counting",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 courses、extend、total、total_extend、total_add、total_congr、weight、cross、square、offBy、typical、stepWeight、along_weight、transfer_weight。",
+        "en": "Reuses courses, extend, total, total_extend, total_add, total_congr, weight, cross, square, offBy, typical, stepWeight, along_weight and transfer_weight."
+      },
+      "interface": {
+        "output": {
+          "zh": "偏差至少为 d 的历程之重乘 d 至多 n·p·q·(p + q)ⁿ；以 p、q 计数的自由分支沿历史复合的是历程的权重。",
+          "en": "The courses deviating by at least d weigh, times d, at most n·p·q·(p + q)ⁿ; free branching counted by p and q composes along each history the weight of its course."
+        },
+        "input": {
+          "zh": "细历程之数按历程推前到历程之重。",
+          "en": "The number of finer courses pushed forward to the weights of the courses."
+        },
+        "conditions": {
+          "zh": "两个值、自然数权重。",
+          "en": "Two values, natural weights."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean"
+      }
+    },
+    {
+      "id": "sum-over-histories-exact",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 counting、joinMap、openSteps、courses、Weights.along、Weights.transfer、Weights.sum_courses、Weights.sum_joinMap、Weights.sum_map、Weights.sum_congr、Weights.mul_sum 与 mul_assoc_nat。",
+        "en": "Reuses counting, joinMap, openSteps, courses, Weights.along, Weights.transfer, Weights.sum_courses, Weights.sum_joinMap, Weights.sum_map, Weights.sum_congr, Weights.mul_sum and mul_assoc_nat."
+      },
+      "interface": {
+        "output": {
+          "zh": "以计数加权的历史之和是逐步的转移。",
+          "en": "The sum over histories weighted by counting is the step-by-step transfer."
+        },
+        "input": {
+          "zh": "细历程之数是历史之和。",
+          "en": "The number of finer courses is the sum over histories."
+        },
+        "conditions": {
+          "zh": "列出的动作与配置。",
+          "en": "Listed moves and configurations."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean"
+      }
+    },
+    {
+      "id": "losses-of-the-sum-over-histories",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 signed、Interference.weight 与 Interference.cancels：带符号的权重与相消。",
+        "en": "Reuses signed, Interference.weight and Interference.cancels: signed weights and cancellation."
+      },
+      "interface": {
+        "output": {
+          "zh": "两条历程，一加一减，带符号的转移是 (1, 1)。",
+          "en": "Two courses, one adding and one subtracting, with signed transfer (1, 1)."
+        },
+        "input": {
+          "zh": "带符号的权重是加的与减的情境之数之对；平衡的 (1, 1) 是两个情境。",
+          "en": "Signed weights are pairs of numbers of situations that add and that subtract; the balanced (1, 1) is two situations."
+        },
+        "conditions": {
+          "zh": "列出的动作与配置。",
+          "en": "Listed moves and configurations."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "identification-where-runs-part",
+      "detail": {
+        "zh": "分开处记录与律不固定的，由情境固定；读法按 Ren 的说明改写。",
+        "en": "What the record and the law leave open at a parting the situation fixes; its reading rewritten following Ren's clarification."
+      }
+    },
+    {
+      "id": "contextual-registration",
+      "detail": {
+        "zh": "语境所显示者不总粘成不依语境的赋值；那里使之为真的情境包括语境。",
+        "en": "Readings in context do not always glue into a context-free assignment; there the situation that makes it true includes the context."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
+      "role": "proof",
+      "sha256": "487e86256672becbc60cc9166521e93e14a5e7dc161b05b15efac47def2e0a45",
+      "declarations": [
+        "Becoming.Situations.upto",
+        "Becoming.Situations.sum_upto",
+        "Becoming.Situations.sum_one",
+        "Becoming.Situations.finerLaw",
+        "Becoming.Situations.finerLaw_determined",
+        "Becoming.Situations.finerLaw_step_iff",
+        "Becoming.Situations.finerSteps",
+        "Becoming.Situations.finer",
+        "Becoming.Situations.coarse",
+        "Becoming.Situations.sum_finer",
+        "Becoming.Situations.finer_count",
+        "Becoming.Situations.sum_courses_values",
+        "Becoming.Situations.situations_count",
+        "Becoming.Situations.mul_indicator",
+        "Becoming.Situations.total_only",
+        "Becoming.Situations.situations_of_course",
+        "Becoming.Situations.far",
+        "Becoming.Situations.weight_far",
+        "Becoming.Situations.situations_typical",
+        "Becoming.Situations.keep",
+        "Becoming.Situations.drop",
+        "Becoming.Situations.inside",
+        "Becoming.Situations.outside",
+        "Becoming.Situations.keep_drop",
+        "Becoming.Situations.sum_split",
+        "Becoming.Situations.inside_add_outside",
+        "Becoming.Situations.valueWeight",
+        "Becoming.Situations.seen",
+        "Becoming.Situations.sum_event",
+        "Becoming.Situations.event_typical",
+        "Becoming.Situations.event_concentrated",
+        "Becoming.Situations.event_count",
+        "Becoming.Situations.occ",
+        "Becoming.Situations.sum_only",
+        "Becoming.Situations.situations_take",
+        "Becoming.Situations.occ_map_cons",
+        "Becoming.Situations.occ_map_pair",
+        "Becoming.Situations.occ_openSteps",
+        "Becoming.Situations.occ_courses",
+        "Becoming.Situations.occ_courses_once",
+        "Becoming.Situations.situations_of_course_listed",
+        "Becoming.Situations.signs",
+        "Becoming.Situations.sum_mul_right",
+        "Becoming.Situations.sum_finer_weights",
+        "Becoming.Situations.sign",
+        "Becoming.Situations.both",
+        "Becoming.Situations.sum_adding",
+        "Becoming.Situations.sum_signed",
+        "Becoming.Situations.signed_sums",
+        "Becoming.Situations.signed_situations",
+        "Becoming.Situations.signs_unit",
+        "Becoming.Situations.sum_units",
+        "Becoming.Situations.signed_counts",
+        "Becoming.Situations.cancels_situations"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
+      "role": "proof",
+      "sha256": "555b583aaaaa996146694f4028d9044a52762679b6ce56f5ff6983d8ac6695ed",
+      "declarations": [
+        "Becoming.Typicality.courses",
+        "Becoming.Typicality.extend",
+        "Becoming.Typicality.total",
+        "Becoming.Typicality.total_extend",
+        "Becoming.Typicality.total_add",
+        "Becoming.Typicality.total_congr",
+        "Becoming.Typicality.weight",
+        "Becoming.Typicality.cross",
+        "Becoming.Typicality.square",
+        "Becoming.Typicality.offBy",
+        "Becoming.Typicality.typical",
+        "Becoming.Typicality.stepWeight",
+        "Becoming.Typicality.along_weight",
+        "Becoming.Typicality.transfer_weight",
+        "Becoming.Typicality.atLeast",
+        "Becoming.Typicality.concentrated",
+        "Becoming.Typicality.total_mul"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+      "role": "proof",
+      "sha256": "425ea5103889d17660e1d0cc156ef2bb8092184caf5d19d6d13f773a015a2855",
+      "declarations": [
+        "Becoming.counting",
+        "Becoming.joinMap",
+        "Becoming.openSteps",
+        "Becoming.courses",
+        "Becoming.Weights.along",
+        "Becoming.Weights.transfer",
+        "Becoming.Weights.sum_courses",
+        "Becoming.Weights.sum_joinMap",
+        "Becoming.Weights.sum_map",
+        "Becoming.Weights.sum_congr",
+        "Becoming.Weights.mul_sum",
+        "Becoming.Interference.cancels",
+        "Becoming.signed",
+        "Becoming.pair_eq",
+        "Becoming.Interference.weight"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/WeightedTraces.lean",
+      "role": "proof",
+      "sha256": "96918175152cdb9e183ca66f40f81f0fa1966dec4e7852a4d75873a5ad8b2a51",
+      "declarations": [
+        "Becoming.counting_transfer_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
+      "role": "proof",
+      "sha256": "95eb0059f6d4e69cbe4d803a5300488ffc584126dd66eb6282ce0245972fee0d",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "declarations": [
+        "Becoming.mul_assoc_nat",
+        "Becoming.ListTests.mem_bools",
+        "Becoming.mem_cons_cases",
+        "Becoming.mem_append_cases",
+        "Becoming.preimage_of_mem_map"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "role": "proof",
+      "sha256": "6c54aea85b715cac11048f19fcc0f41cb4219276fb015d6ed12e466e90c8616b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Laws.lean",
+      "role": "proof",
+      "sha256": "5719f92274999e36329507583e71d6f92ad2850222be02027fb846e4ae8104bd",
+      "declarations": [
+        "Becoming.Determined"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md",
+      "role": "provenance",
+      "sha256": "9501978d539ed71b817ab559435158329c183ffbdf1f5c4cd4b1d36107f23248",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json",
+      "role": "receipt",
+      "sha256": "f925b043b6f8fe7ea3ba0f14b5242923eb3e01d545e6c9915fcc6832c4757e8d",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md",
+      "role": "provenance",
+      "sha256": "b2c60f7ef5e8308c08783018c8abb617276c4e6c806bde11cc4d99ca15044f5b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
+      "role": "receipt",
+      "sha256": "b11c84ca126f223c34d56695753c6426ec4bb669f32ce435eed00c446d93a75b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FinerTraces.lean",
+      "role": "proof",
+      "sha256": "5fcd71ab149cad7e086b2f439f2d46a1fabc3d170b56f203bcb227a713023ea6",
+      "declarations": [
+        "Becoming.FinerTraces.mem_finer_iff",
+        "Becoming.FinerTraces.two_values_mem_iff",
+        "Becoming.FinerTraces.supportLaw",
+        "Becoming.FinerTraces.trace_forget",
+        "Becoming.FinerTraces.trace_lift",
+        "Becoming.FinerTraces.nonzero_iff",
+        "Becoming.FinerTraces.finer_exists_iff",
+        "Becoming.FinerTraces.of_mem_joinMap",
+        "Becoming.FinerTraces.lt_of_mem_upto",
+        "Becoming.FinerTraces.mem_upto",
+        "Becoming.FinerTraces.of_mem_openSteps",
+        "Becoming.FinerTraces.of_mem_finerSteps",
+        "Becoming.FinerTraces.mem_finerSteps"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "role": "receipt",
+      "sha256": "2904fa10cde6e9a5fd2db9bc2cfd798f510246af636b3f60985b78e9cb12d4fa",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Situations",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Typicality",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Weighted",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Capture",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FinerTraces.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FinerTraces",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/WeightedTraces.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.WeightedTraces",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Laws.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Laws",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，按 Ren 2026-10-16 的说明（“the situation makes it true”）与其问题（“can you see what to do with my clarification above?”）（P117）；研究 §144。",
+      "en": "16 October 2026: added, following Ren's clarification of 16 October (“the situation makes it true”) and question (“can you see what to do with my clarification above?”) (P117); study section 144."
+    },
+    {
+      "zh": "2026-10-16：Ren 取了这些读法（“yes, i take those readings”）；correspondence 标为 Ren 已取，next_delta 去掉“Ren 对读法的判断”；研究 §144。原文：“读法（AI 对 Ren 的话的读法，待 Ren）”。",
+      "en": "16 October 2026: Ren took these readings (“yes, i take those readings”); correspondence marks them as taken and next_delta drops Ren's judgment on the readings; study section 144. Former wording: “Readings (the AI's reading of Ren's words, pending Ren)”."
+    },
+    {
+      "zh": "2026-10-16：只改措辞，重新绑定哈希：研究 §144 的读法标题由“待 Ren”改为“Ren 同日已取”，来源文件写明“第一条消息”；声明与结论不变。",
+      "en": "16 October 2026: wording only, hashes rebound: study section 144's readings heading now reads “taken by Ren the same day” in place of “pending Ren”, and the source names “the first message”; no declaration or claim changes."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Weighted.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Capture.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Weighted.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Capture.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026-10-16 P119：按 Ren 2026-10-16 的“take 2, and do the open proofs”，加三条规律（任意多个值经一个事件；对每个过程按历程计数；任何权重中由情境计数，带符号的权重是两类情境之数之对）；hypotheses、does_not_show（范围一项已证，移去；对应一项改写）与 next_delta 改写；losses-of-the-sum-over-histories 由 related 移入 dependencies；研究 §150。原对应一项：“……带符号的权重会相消，不是情境之数……”",
+      "en": "16 October 2026, P119: following Ren's “take 2, and do the open proofs” of 16 October, three laws added (any number of values through an event; counting per course for every process; counting by situations in any weights, a signed weight being a pair of numbers of situations); hypotheses, does_not_show (the scope item, now proved, removed; the correspondence item rewritten) and next_delta rewritten; losses-of-the-sum-over-histories moved from related to dependencies; study section 150. The former correspondence item read “… signed weights cancel and are not numbers of situations …”."
+    },
+    {
+      "zh": "2026年10月16日，P119 落地（研究第150节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第150节（P119：分开与计数的开放证明）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P119：在“权重计数情境”之后加“分开与计数的开放证明”一对段落；整体陈述的两条与界一项、§8 的两行状态与“路径分支时”一项、§9 的三行（43、43、38）与术语表一行（被给予世界的学习者）；总数改据新回执）；Situations.lean（P119：加入定理（13 → 38）：经一个事件的任意多个值、对每个过程按历程计数、任意权重中按情境计数、带符号的权重作为情境计数之对；既有声明不变）；Typicality.lean（P119：加入定理（32 → 43）：指数的集中（计数的 Chernoff 界）；既有声明不变）。",
+      "en": "16 October 2026, landing P119 (study section 150): rebound to the new receipt and rehashed: BECOMING-RENEWAL-READING.md (section 150 (P119: the open proofs of parting and counting) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P119: a paragraph pair on the open proofs of parting and counting after “weights count situations”; two bullets and the bound item of the theory stated whole, §8's two status rows and the open item “When the course branches”, §9's three rows (43, 43, 38) and a glossary row (the learner given the world); totals moved to the new receipt); Situations.lean (P119: theorems added (13 → 38): any number of values through an event, counting per course for every process, counting by situations in any weights, signed weights as pairs of counts of situations; existing declarations unchanged); Typicality.lean (P119: theorems added (32 → 43): exponential concentration (the counting Chernoff bound); existing declarations unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：finerLaw 的动作中的情境写明目标配置，所以 finerLaw_determined 由构造成立；读法“分支的律是忘掉情境的确定的律”的形式部分是这一小事实，实质在 sum_finer 的计数（审查第 35 项，P4）。correspondence 加 AI 的注说明这一点；引用“the situation makes it true”时是否说明，由 Ren 决定（第 46 项）。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): in finerLaw the situation in the move names the target configuration, so finerLaw_determined holds by construction; the formal part of the reading “a branching law is a determined law with the situation forgotten” is that small fact, and the substance is the count, sum_finer (review item 35, P4). The correspondence gains the AI's note saying so; whether citations of “the situation makes it true” should say it is Ren's (item 46). Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Situations.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Typicality.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Situations.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Typicality.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.FinerTraces 说所计的情境在基上是什么：更细进程恰是更细之律（一个确定的过程）的迹，忘去情境即正权之律的迹，经 Situations.finer_count 与 Weighted 的 counting_transfer_iff 证明；新增一条律及其 8 项声明（参考列出模块的全部 17 项），并把“计数在列举之上、没有定理排除重复”作为未表明的一项；绑定回执 20261016T124157.989030Z；研究 §165。断言与状态不变。",
+      "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.FinerTraces says what the counted situations are on the base: the finer courses are exactly the traces of the finer law, a determined process, and with the situation forgotten the traces of the law of positive weight, proved through Situations.finer_count and Weighted's counting_transfer_iff; one law with its 8 declarations added (the reference lists all 17 of the module), and that the counts are over the enumeration, with no theorem excluding repetition, added as a scope item; bound to receipt 20261016T124157.989030Z; study section 165. Claim and status unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G3（Becoming.LawAlongRun）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Joint.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Situations.lean, THE-THEORY-OF-BECOMING.md, Typicality.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the \"Seeking, capture and runaway\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, G5 (Becoming.LawThroughChangingCoupling): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，G5（Becoming.LawThroughChangingCoupling）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The eighteenth review counts as the review this record asked for (DELEGATED-CHOICES D45 (4)), so the validation scope says that it reviewed the record (AI, read-only, no Lean rebuild), in place of \"not independently reviewed\". The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：第十八次审查算作本记录所要求的审查（DELEGATED-CHOICES D45 (4)），验证范围写明它审阅了本记录（AI，只读，未重建 Lean），代替“未经独立审查”。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
+      "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R19 (the review of 19 October, fixed): THE-THEORY-OF-BECOMING.md re-pointed after reading the change. R19 changed wording only: living significance is stated as the Lean shows (significance from every standpoint, no valence; the `living` readings do not include further generation); reasons replace Ren's past words where they served as warrant or standing; review bookkeeping was dropped; a link follows a chapter moved to history. No line this record relies on changed its content. The claim is unchanged.",
+      "zh": "2026年10月19日，R19（10月19日审查的修正）：THE-THEORY-OF-BECOMING.md 读过改动后重新指向。R19 只改措辞：生命意义按 Lean 所证陈述（从每个立足点都有意义，不带正负；`living` 的读法不含继续生成）；以理由取代把 Ren 过去的话当作依据或地位之处；删去审查记账；一处链接随移入历史的章节更新。本记录所依的文字内容未变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V (what a collective's continuation needs): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: V added the section 4 subsection on what a collective's continuation needs, answered the section 7.7 question for loops, added a section 8.2 row and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，V（集体延续所需）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 (Becoming.HexagramPlaces): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: Y2 added the section 1 paragraph on the relations of the places with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2（Becoming.HexagramPlaces）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V2 (thresholds of waiting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: V2 added the section 4 paragraph on thresholds of waiting and the laws that restore giving, revised the section 4 table row and reading on cooperation among strangers and the section 8.2 \"Collective continuation\" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，V2（等待的阈值）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: counting_transfer_iff from Weighted.lean to WeightedTraces.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Capture.lean, FinerTraces.lean, Situations.lean, Weighted.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Capture.lean, Weighted.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Capture.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Weighted.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Capture.lean、Weighted.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Capture.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Weighted.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Joint.lean, Weighted.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Joint.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Weighted.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Joint.lean、Weighted.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Joint.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Weighted.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Capture.lean to Prelude.lean, mul_assoc_nat; from Joint.lean to Laws.lean, Determined. Removed, with the statement kept under one name: FinerTraces.mem_append_split (now mem_append_cases; the two differ in universe level only); FinerTraces.mem_cons_split (now mem_cons_cases; the two differ in universe level only); FinerTraces.of_mem_map (now preimage_of_mem_map; the two differ in universe level only); FinerTraces.two_listed (now ListTests.mem_bools). Proof bindings (Capture.lean, FinerTraces.lean, Joint.lean, Typicality.lean, Weighted.lean, WeightedTraces.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Capture.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; FinerTraces.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Joint.lean, Determined moved to Laws.lean; Typicality.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Weighted.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; WeightedTraces.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Capture.lean 到 Prelude.lean：mul_assoc_nat；从 Joint.lean 到 Laws.lean：Determined。删去，陈述以一个名称保留：FinerTraces.mem_append_split（现为 mem_append_cases；二者只在宇宙层级上不同）；FinerTraces.mem_cons_split（现为 mem_cons_cases；二者只在宇宙层级上不同）；FinerTraces.of_mem_map（现为 preimage_of_mem_map；二者只在宇宙层级上不同）；FinerTraces.two_listed（现为 ListTests.mem_bools）。证明绑定（Capture.lean、FinerTraces.lean、Joint.lean、Typicality.lean、Weighted.lean、WeightedTraces.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Capture.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；FinerTraces.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Joint.lean，Determined 移到 Laws.lean；Typicality.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Weighted.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；WeightedTraces.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Capture.lean, Prelude.lean, Typicality.lean, Weighted.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Capture.lean, takes as its final section CaptureWorlds, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Typicality.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Weighted.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Capture.lean、Prelude.lean、Typicality.lean、Weighted.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Capture.lean，以末节收入 CaptureWorlds（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Typicality.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Weighted.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ],
+  "text_versions": []
+}

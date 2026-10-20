@@ -193,36 +193,8 @@
       "zh": "2026年10月19日：新增（RO），按 Ren 关于对应并整合中国思想之关系本体的要求；研究第 207 节；读法 D54。"
     },
     {
-      "en": "19 October 2026, U5 (general laws read on the base): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U5 added study section 208; THE-THEORY-OF-BECOMING.md: U5 added the world reading of J3 to premise card F and section 6, a sentence each on the word half of histories (section 2), narrowing on the pure observation and evidence under fallible witnesses (section 3), a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
-      "zh": "2026年10月19日，U5（在基上读出的一般规律）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.",
-      "zh": "2026年10月19日，U5 后续（段落图）：读过改动后重新指向（BECOMING-RENEWAL-READING.md：研究第 208 节关于 Y1 段落图的一段改为已加入）。论断不变。"
-    },
-    {
       "en": "19 October 2026, Y5: the seventh gap of the chapter's section 8 (the supplements of the hexagram world) is closed by the record hexagram-arrangements-and-laws (study section 209, decision D55); nine passages cite it, and the chapter's claim, quoted from the 易传 chapter, that the order is the orbit of no law is corrected; CHINESE-SOURCES-AND-BECOMING.md, passages.json, THE-THEORY-OF-BECOMING.md re-pointed after reading the change. The claim is unchanged.",
       "zh": "2026年10月19日，Y5：章第 8 节第七项缺口（卦的世界的补充）由记录 hexagram-arrangements-and-laws 补上（研究第 209 节，决定 D55）；九段引之，章中引自易传章的“卦序不是任何律的轨道”之说已更正；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、passages.json、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, SC (a code formed between formations): the second gap closed by Becoming.SharedCodes (a-code-formed-between-formations); four passages re-pointed to its laws (declarations, the record, the sentence of each reading that named the gap) and the gap marked closed in the map and in chapter sections 5.4, 8 and 11; the next step lists the five gaps still open; the counts verify_ro.py reports brought to 578 declarations and 119 records; CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.",
-      "zh": "2026年10月19日，SC（在形成之间形成的编码）：第二项缺口由 Becoming.SharedCodes（a-code-formed-between-formations）补上；四段改指向其律（声明、记录、各读法中指称缺口的那一句），缺口在对应表与章节第 5.4、8、11 节标为已补上；下一步只列尚未补上的五项缺口；verify_ro.py 所报计数更新为 578 个声明、119 份记录；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、THE-THEORY-OF-BECOMING.md、passages.json 重新指向。评估其余不变。"
-    },
-    {
-      "en": "19 October 2026 (RH): the four earlier Chinese chapters were handled passage by passage; each 6–7 October text moved byte for byte to theories/becoming/history/ (move batch RH-chinese-chapters), and the live chapter at its path keeps what this map and the spine do not carry; chapter §9 and §11 say so, and this step left the next delta. CHINESE-SOURCES-AND-BECOMING.md re-pointed after reading: since the reviewed hash only §9 and §11 changed, by this step. The claim is unchanged.",
-      "zh": "2026年10月19日（RH）：四个较早的中国章节按段处理；各章 10月6日至7日的原文逐字节移入 theories/becoming/history/（移动批次 RH-chinese-chapters），同一路径上的现行章留下本映射与脊柱没有承载的部分；本章 §9 与 §11 已据此改写，这一步从下一步中删去。CHINESE-SOURCES-AND-BECOMING.md 读过改动后重新指向：自所审哈希以来只有 §9 与 §11 改动，即这一步。论断不变。"
-    },
-    {
-      "en": "19 October 2026, RO's map guard: verify_ro.py re-pointed after reading the change (it also runs build_passages.py --check where the archives are present, so passages.json is checked to be the build of the mappers' entries and FIXES, and an edit made in place fails). The claim is unchanged.",
-      "zh": "2026年10月19日，RO 对应表的检查：读过改动后，verify_ro.py 重新指向（在存档在场时它也运行 build_passages.py --check，检查 passages.json 就是由映射者条目与 FIXES 构建的结果，就地改动不再通过）。论断不变。"
-    },
-    {
-      "en": "19 October 2026, RC (capture through the rule): the third gap closed by Becoming.RuleCapture (capture-through-the-rule); three passages re-pointed to its laws (declarations, the record, a sentence of each reading) through the build's FIXES and 二柄's gap marked closed, and the gap marked closed in chapter sections 5.7, 8 and 11; the next step lists the four gaps still open; the counts verify_ro.py reports brought to 584 declarations and 120 records; CHINESE-SOURCES-AND-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.",
-      "zh": "2026年10月19日，RC（经由规则的捕获）：第三项缺口由 Becoming.RuleCapture（capture-through-the-rule）补上；三段经构建的 FIXES 改指向其律（声明、记录、各读法中的一句），二柄的缺口标为已补上，章节第 5.7、8、11 节亦然；下一步只列尚未补上的四项缺口；verify_ro.py 所报计数更新为 584 个声明、120 份记录；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、passages.json 重新指向。评估其余不变。"
-    },
-    {
-      "en": "19 October 2026, RG (two-sided regulation and late reading): the first gap closed by Becoming.Regulation (two-sided-regulation-and-late-reading); four passages re-pointed to its laws (declarations, the record, the sentences of each reading that named the gap; 中和 gains a reading of 中节) and the gap marked closed in the map and in chapter sections 8 and 11, two points of the 宽猛 gap left open; the next step lists the 3 gaps still open; the counts verify_ro.py reports brought to 601 declarations and 121 records; CHINESE-SOURCES-AND-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.",
-      "zh": "2026年10月19日，RG（双向调节与迟读）：第一项缺口由 Becoming.Regulation（two-sided-regulation-and-late-reading）补上；四段改指向其律（声明、记录、各读法中指称缺口的句子；中和增一条中节之读），缺口在对应表与章节第 8、11 节标为已补上，宽猛条缺口中的两点仍开放；下一步只列尚未补上的 3 项缺口；verify_ro.py 所报计数更新为 601 个声明、121 份记录；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、passages.json 重新指向。评估其余不变。"
     },
     {
       "en": "19 October 2026, R22 (the names of the nineteenth review): CHINESE-SOURCES-AND-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: CHINESE-SOURCES-AND-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
@@ -233,20 +205,18 @@
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：passages.json，重建：声明与读法中的名称随 R30 改名表，每个如此更正的段落有标注；CHINESE-SOURCES-AND-BECOMING.md，名称随 R30 改名表；逐句对应表为重建之图。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节。论断不变。"
-    },
+      "en": "2026-10-20: 11 bookkeeping notes condensed from 19 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/4b9e3001d3c120a9/chinese-sources-on-the-spine.json and in git.",
+      "zh": "2026-10-20：11 条记账性说明合并（19 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/4b9e3001d3c120a9/chinese-sources-on-the-spine.json 和 git 中。"
+    }
+  ],
+  "text_versions": [
     {
-      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+      "path": "_process/architecture/history/4b9e3001d3c120a9/chinese-sources-on-the-spine.json",
+      "sha256": "4b9e3001d3c120a9e7d5f71102e804bd5c46c7ce4811f0191020c9b5b7c161bf",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
+      }
     }
   ]
 }

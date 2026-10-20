@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "id": "the-last-change-of-a-run",
+  "title": {
+    "zh": "一次运行的最后一次变化",
+    "en": "The last change of a run"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F04",
+  "reviewed_at_utc": "2026-10-18T10:13:17+00:00",
+  "statement": {
+    "en": "In a world a list holds, settling wherever no reachable change can be undone is exactly LPO; a run a list of N holds with no change within a loop changes fewer than N times and, with decidable configurations, is not not settled and settles exactly where each step decides whether it changes again.",
+    "zh": "在由一个列表容纳的世界中，凡没有可达的变化可被撤回之处都安定，恰是 LPO；由 N 个构形的列表容纳、在回路之内没有变化的运行变化少于 N 次；构形可判定时，它不是不安定的，且恰在每一步都判定它是否再变化之处安定。"
+  },
+  "laws": [
+    {
+      "en": "Along a run whose configurations a list of N holds, with no change within a loop, there are fewer than N changes: m + 1 changes leave m + 2 configurations, at the changes and after the last, pairwise apart.",
+      "zh": "沿构形由 N 个构形的列表容纳、且在回路之内没有变化的运行，变化少于 N 次：m + 1 次变化留下 m + 2 个构形（在各次变化处与最后一次之后），两两不同。",
+      "declarations": [
+        "Becoming.LastChange.Changes",
+        "Becoming.LastChange.Changes.add",
+        "Becoming.LastChange.atChanges",
+        "Becoming.LastChange.atChanges_le",
+        "Becoming.LastChange.atChanges_gt",
+        "Becoming.LastChange.changes_lt"
+      ]
+    },
+    {
+      "en": "Such a run settles where, at every step, it is decided whether the run changes again; with decidable configurations, exactly where it is so decided, and within every finite stretch it is decided.",
+      "zh": "这样的运行在每一步都判定它是否再变化之处安定；构形可判定时，恰在如此判定之处安定，且在每个有限的区间之内这是可判定的。",
+      "declarations": [
+        "Becoming.LastChange.ChangesAgain",
+        "Becoming.LastChange.StillFrom",
+        "Becoming.LastChange.settles_of_still",
+        "Becoming.LastChange.settles_or_changes",
+        "Becoming.LastChange.settles_of_decided",
+        "Becoming.LastChange.decided_within",
+        "Becoming.LastChange.settles_iff_decided"
+      ]
+    },
+    {
+      "en": "With decidable configurations and no further premise, whether a run changes again from a step is not not decided, and such a run is not not settled.",
+      "zh": "构形可判定而不加别的前提，一次运行从某步起是否再变化不是不可判定的，这样的运行不是不安定的。",
+      "declarations": [
+        "Becoming.LastChange.not_not_decided",
+        "Becoming.LastChange.not_not_settles_or_changes",
+        "Becoming.LastChange.not_not_settles"
+      ]
+    },
+    {
+      "en": "With the limited principle of omniscience such a run settles, and in a world a list holds every run from a configuration with no reachable change that can be undone settles; conversely, that this holds for every process of decidable configurations in a world a list holds is the limited principle of omniscience.",
+      "zh": "有限全知原理之下，这样的运行安定；在由一个列表容纳的世界中，从没有可达的可撤回变化的构形出发的每次运行都安定；反之，这对由一个列表容纳的世界中每个构形可判定的过程都成立，即是有限全知原理。",
+      "declarations": [
+        "Becoming.LastChange.decided_of_lpo",
+        "Becoming.LastChange.settles_of_lpo",
+        "Becoming.LastChange.noLoop_of_no_undoable",
+        "Becoming.LastChange.settles_of_no_undoable",
+        "Becoming.LastChange.lpo_iff_settles"
+      ]
+    },
+    {
+      "en": "With the limited principle of omniscience, in a world a list holds, every run from a configuration comes to rest with its target met exactly where every reachable configuration with a step that stays meets the target and no reachable change can be undone; with decided configurations alone, each run then does not not rest.",
+      "zh": "有限全知原理之下，在由一个列表容纳的世界中，从一个构形出发的每次运行都停息且目标被满足，恰当每个有停留之步的可达构形都满足目标且没有可达的变化可被撤回；只有构形可判定时，每次运行于是不是不停息的。",
+      "declarations": [
+        "Becoming.LastChange.rests_of_settles",
+        "Becoming.LastChange.assured_iff_of_lpo",
+        "Becoming.LastChange.not_not_rests"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. A process and a configuration; a list holding the run or the world where stated; decidable equality of configurations where stated; the limited principle of omniscience as a hypothesis where stated (the core does not assume it).",
+      "zh": "不加公理。一个过程与一个构形；在写明之处，一个容纳该运行或世界的列表；在写明之处，构形的相等可判定；在写明之处，有限全知原理作为假设（核心不假定它）。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Settling without LPO: the count of changes is bounded, the step of the last change is not; a premise the core accepts that decides settling (a bound on how long a run stays before changing again, say) is not stated.",
+      "zh": "没有有限全知原理的安定：变化的次数有界，最后一次变化的步不是；核心接受的、使安定可判定的前提（例如一次运行再变化之前能停留多久的界）未被陈述。",
+      "kind": "scope"
+    },
+    {
+      "en": "Configurations whose equality is not decided, where the double negation needs stability of equality; worlds no list holds, where change can recur without a loop.",
+      "zh": "相等不可判定的构形，那里双重否定需要相等的稳定性；没有列表容纳的世界，那里变化可无回路而反复出现。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Settling.lean",
+      "detail": {
+        "en": "Settling.OneWay: two configurations with no way back from true; no run keeps changing, each run changes at most once, and every run from false settling gives LPO (Settling.OneWay.lpo_of_settles), which lpo_iff_settles uses for its second direction.",
+        "zh": "Settling.OneWay：两个构形，从 true 无路返回；没有运行不断变化，每次运行至多变化一次，而从 false 出发的每次运行都安定给出 LPO（Settling.OneWay.lpo_of_settles），lpo_iff_settles 的第二个方向用它。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261018T093527.497358Z): the 24 declarations of Becoming.LastChange, 20 of them theorems, have empty axiom reports; the checker verifies core purity. Author self-review in study section 178; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T093527.497358Z）：Becoming.LastChange 的 24 项声明（20 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 178 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "A premise the core accepts under which settling is decided; configurations whose equality is not decided; an independent review.",
+    "zh": "核心接受的、使安定可判定的前提；相等不可判定的构形；独立审查。"
+  },
+  "correspondence": {
+    "en": "The record when-the-runs-of-a-process-settle left \"Whether the limited principle of omniscience with no reachable undoable change gives it is not stated\", and the chapter's open programme (section 8.2, Seeking, capture and runaway) asked \"whether, with the limited principle of omniscience, no reachable change that can be undone gives settling\". Ren, 18 October 2026: \"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\" (provenance, not warrant); the AI chose this item. The answer is yes, and exactly: for every process of decidable configurations in a world a list holds the two are equivalent.",
+    "zh": "记录 when-the-runs-of-a-process-settle 留下“Whether the limited principle of omniscience with no reachable undoable change gives it is not stated”，本章开放纲领（第 8.2 节，寻求、俘获与失控）问“whether, with the limited principle of omniscience, no reachable change that can be undone gives settling”。Ren，2026年10月18日：\"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\"（来历，不是根据）；此项由 AI 选定。答案是肯定的，且精确：对由一个列表容纳的世界中每个构形可判定的过程，两者等价。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LastChange.lean",
+  "aliases": [
+    "the last change of a run",
+    "一次运行的最后一次变化",
+    "fewer than N changes",
+    "变化少于 N 次",
+    "not not settled",
+    "不是不安定",
+    "settling is deciding whether it changes again",
+    "安定即判定是否再变化",
+    "settling is exactly LPO",
+    "安定恰是 LPO"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "when-the-runs-of-a-process-settle",
+      "detail": {
+        "en": "There keeping changing is exact on the process and settling needs LPO already for two configurations; here, with no change within a loop, a run changes fewer than N times, is not not settled, and settling for every such process is exactly LPO.",
+        "zh": "那里不断变化在过程上是精确的，安定在两个构形时已需 LPO；这里在回路之内没有变化时，一次运行变化少于 N 次，不是不安定的，而对每个这样的过程安定恰是 LPO。"
+      }
+    },
+    {
+      "id": "the-boundary-of-enough-under-undetermined-laws",
+      "detail": {
+        "en": "There assured enough is every reachable stay meeting the target and every run settling; here, with LPO, the second part is that no reachable change can be undone.",
+        "zh": "那里确保之够是每个可达的停留满足目标且每次运行都安定；这里在 LPO 之下，后一部分是没有可达的变化可被撤回。"
+      }
+    },
+    {
+      "id": "how-often-couplings-act",
+      "detail": {
+        "en": "There every schedule settling gives LPO through RecursOrStops; here the count of changes is bounded by the list, and settling every run with no reachable undoable change is exactly LPO.",
+        "zh": "那里每个日程都安定经由 RecursOrStops 给出 LPO；这里变化的次数由列表限定，而使每次没有可达可撤回变化的运行都安定，恰是 LPO。"
+      }
+    },
+    {
+      "id": "what-a-method-comes-to-say-in-the-limit",
+      "detail": {
+        "en": "Settling, decided outright here exactly under the limited principle of omniscience, is verified in the limit with decidable configurations and refuted in the limit by no method under Markov's principle.",
+        "zh": "止定在此恰在有限全知原则下被直接判定；构型可判定时它在极限中被证实，在马尔可夫原则下没有方法在极限中否证它。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LastChange.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.LastChange.Changes",
+        "Becoming.LastChange.Changes.add",
+        "Becoming.LastChange.ChangesAgain",
+        "Becoming.LastChange.StillFrom",
+        "Becoming.LastChange.assured_iff_of_lpo",
+        "Becoming.LastChange.atChanges",
+        "Becoming.LastChange.atChanges_gt",
+        "Becoming.LastChange.atChanges_le",
+        "Becoming.LastChange.changes_lt",
+        "Becoming.LastChange.decided_of_lpo",
+        "Becoming.LastChange.decided_within",
+        "Becoming.LastChange.lpo_iff_settles",
+        "Becoming.LastChange.noLoop_of_no_undoable",
+        "Becoming.LastChange.not_not_decided",
+        "Becoming.LastChange.not_not_rests",
+        "Becoming.LastChange.not_not_settles",
+        "Becoming.LastChange.not_not_settles_or_changes",
+        "Becoming.LastChange.rests_of_settles",
+        "Becoming.LastChange.settles_iff_decided",
+        "Becoming.LastChange.settles_of_decided",
+        "Becoming.LastChange.settles_of_lpo",
+        "Becoming.LastChange.settles_of_no_undoable",
+        "Becoming.LastChange.settles_of_still",
+        "Becoming.LastChange.settles_or_changes"
+      ],
+      "sha256": "6834d45f75fc8e1af39d99e65189fecf47f82d015b4d9eafe63a4957c13dc866"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T093527.497358Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b93dc5a1f74da4a1f746423854717e3fc9e2c56277ded5a7c78688c2628f03"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Settling.lean",
+      "role": "counterexample",
+      "sha256": "f4975523875a41fd644bc46f3696fa8971503bad6876a42de1e7b82f48a127e5"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
+      "role": "provenance",
+      "sha256": "a5296e9a8fb43255176faf4b9df88bed625bb14a09c2e3a4ec6fc22be3771b86"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LastChange.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LastChange",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "18 October 2026: added (S3), on Ren's \"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\", the AI choosing the item; study section 178; the reading is D42 of DELEGATED-CHOICES, extended with S3.",
+      "zh": "2026年10月18日：新增（S3），按 Ren 的\"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\"，此项由 AI 选定；研究第 178 节；读法是 DELEGATED-CHOICES 的 D42，以 S3 扩展。"
+    },
+    {
+      "en": "18 October 2026, M1 (chapter section 7, AI alignment): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (M1 restated section 7 (AI alignment) around 明 and pooled coupling as sections 7.1-7.7 in 81f24f981, and a follow-up corrected \"a wrong model excludes what holds\" to \"can exclude\"; no other section changed). The claim is unchanged.",
+      "zh": "2026年10月18日，M1（第7节，AI 对齐）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, M2 (Becoming.SelectionPool): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: M2 added a study section; THE-THEORY-OF-BECOMING.md: M2 added the bullet on what pooled coupling reaches, restated the pooled-coupling route of section 7.3 and section 7.4 around the theorems, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，M2（Becoming.SelectionPool）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G3（Becoming.LawAlongRun）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the \"Seeking, capture and runaway\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, G5 (Becoming.LawThroughChangingCoupling): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，G5（Becoming.LawThroughChangingCoupling）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (2 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（2 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
+      "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, O2: related entry for what-a-method-comes-to-say-in-the-limit (study section 206). The claim is unchanged.",
+      "zh": "2026年10月19日，O2：加入与 what-a-method-comes-to-say-in-the-limit 的关联条目（研究第 206 节）。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (LastChange.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; LastChange.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Settling.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（LastChange.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；LastChange.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Settling.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

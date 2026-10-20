@@ -1,0 +1,738 @@
+{
+  "schema_version": 2,
+  "id": "least-loss-rest",
+  "title": {
+    "en": "The least loss as a premise of rest",
+    "zh": "最小损失作为停息的前提"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T12:45:21+00:00",
+  "statement": {
+    "en": "In Archimedean amounts a closed amount approaches rest with no least loss: few steps lose at least any ε above nothing. Rest needs a least loss at each change counted: halving approaches rest and never reaches it. Whole numbers are the instance with ε one; a loss needs a law that merges.",
+    "zh": "在阿基米德的量中，封闭的量无需最小损失即趋近停息：至少损失任一大于无的 ε 的步只有有限个。停息需要每次被计的变化有最小损失：减半趋近停息而达不到。整数是 ε 为一的实例；损失需要有所合并的规律。"
+  },
+  "laws": [
+    {
+      "en": "Amounts: an addition, associative and commutative with nothing as its unit, and an order that addition keeps and that cancels, with nothing least; no amount need be a whole number, and the order may be dense. The order is a preorder, so no quotient is taken.",
+      "zh": "量：一个加法，结合、交换，以无为单位；一个加法保持并可消去的序，无为最小。量不必是整数，序可以稠密。序是预序，所以不取商。",
+      "declarations": [
+        "Becoming.Amounts",
+        "Becoming.Amounts.times",
+        "Becoming.Amounts.sum",
+        "Becoming.Amounts.add_zero",
+        "Becoming.Amounts.le_of_eq",
+        "Becoming.Amounts.add_le_add_left",
+        "Becoming.Amounts.le_add_right",
+        "Becoming.Amounts.le_add_left",
+        "Becoming.Amounts.add_swap",
+        "Becoming.Amounts.times_le"
+      ]
+    },
+    {
+      "en": "The loss law: where across each step from T on the amount after the step, with the step's loss, is within the amount before, the losses since T, added, are within the amount at T. No least loss is named; the losses of a falling stock are summable in any amounts.",
+      "zh": "损失律：若自 T 起每一步后的量加上该步的损失不超过步前的量，则自 T 起的损失之和不超过 T 时的量。不指定最小损失；在任何量中，下降的存量的损失都可求和。",
+      "declarations": [
+        "Becoming.Amounts.losses_within"
+      ]
+    },
+    {
+      "en": "The least-loss law of rest: where an amount does not rise from T on, falls by at least ε across each step at which P holds, and m copies of ε are not within its value at T, steps at which P holds do not recur; with the premises read as far as can be refuted, it is not the case that after every step a later such step stays unrefuted. The premises are the least loss ε and the bound of the stock by finitely many copies of it.",
+      "zh": "停息的最小损失律：若一个量自 T 起不上升，在 P 成立的每一步至少下降 ε，且 m 份 ε 不在 T 时的量之内，则 P 成立的步不会反复出现；前提按不可否定来读时，并非每一步之后都有一个不被否定的此类后续步。前提是最小损失 ε，以及存量被有限份 ε 所界。",
+      "declarations": [
+        "Becoming.Amounts.still_le",
+        "Becoming.Amounts.loses_times",
+        "Becoming.Amounts.rests_unrefuted",
+        "Becoming.Amounts.rests"
+      ]
+    },
+    {
+      "en": "In Archimedean amounts every amount lies within finitely many copies of any amount above nothing, so a least loss above nothing alone brings rest.",
+      "zh": "在阿基米德的量中，任何量都在任一大于无的量的有限份之内，所以仅有大于无的最小损失就带来停息。",
+      "declarations": [
+        "Becoming.Amounts.Archimedean",
+        "Becoming.Amounts.rests_of_archimedean"
+      ]
+    },
+    {
+      "en": "The approach to rest, with no least loss: where across each step from T on the amount after the step, with the step's loss, is within the amount before, then for any k steps f 0 < f 1 < … from T on, each losing at least ε, k copies of ε are within the amount at T; so where m copies are not, fewer than m steps lose at least ε, a bound on the count with no decision. In Archimedean amounts such an m exists for every ε above nothing: a closed amount comes arbitrarily near rest, and steps losing at least ε do not recur. The Archimedean property is the one structural premise. In whole numbers approach is rest: no more steps lose anything than the stock counts.",
+      "zh": "趋近停息，无需最小损失：若自 T 起每一步后的量加该步损失不超过步前的量，则自 T 起任意 k 个递增的步 f 0 < f 1 < …，各至少损失 ε 时，k 份 ε 在 T 时的量之内；所以 m 份不在其内时，至少损失 ε 的步少于 m 个，这是对个数的界，不需判定。在阿基米德的量中，对每个大于无的 ε 都有这样的 m：封闭的量任意地趋近停息，至少损失 ε 的步不复现。阿基米德性是唯一的结构前提。在整数中趋近即停息：有所损失的步不多于存量之数。",
+      "declarations": [
+        "Becoming.Amounts.still_within",
+        "Becoming.Amounts.still_of_falls",
+        "Becoming.Amounts.large_losses_from",
+        "Becoming.Amounts.large_losses_within",
+        "Becoming.Amounts.few_large_losses",
+        "Becoming.Amounts.few_large_losses_of_archimedean",
+        "Becoming.Amounts.approaches_rest",
+        "Becoming.Amounts.whole_losing_steps"
+      ]
+    },
+    {
+      "en": "A family at rest in any amounts: where from T on the stock after a step with the uptake is within the stock before with the replenishment, the replenishment is within the uptake, at each step at which P holds the replenishment with ε is, and the stock at T lies within fewer than m copies of ε, steps at which P holds do not recur.",
+      "zh": "任何量中的家族停息：若自 T 起，一步后的存量加取用不超过步前的存量加补给，补给不超过取用，在 P 成立的每一步补给加 ε 不超过取用，且 T 时的存量少于 m 份 ε，则 P 成立的步不会反复出现。",
+      "declarations": [
+        "Becoming.Amounts.family_still",
+        "Becoming.Amounts.family_loses",
+        "Becoming.Amounts.family_rests",
+        "Becoming.Amounts.family_rests_of_archimedean"
+      ]
+    },
+    {
+      "en": "Whole numbers are the instance: the least loss is one and every stock lies within its own count of ones plus one, and whole numbers are Archimedean. The rest family is proved as this instance, below the modules that state it: the spine's two descents falls_not_recurring (Becoming.Renewal) and falls_stop_unrefuted (Becoming.Space), Flow.taking_not_recurring_from and Flow.takers_within_on (Becoming.Dissipation) and Flow.change_stops_unrefuted (Becoming.Openness), through which the rest theorem World.rests_unrefuted_enclosed follows.",
+      "zh": "整数是其实例：最小损失为一，每个存量都在其自身个数加一份一之内，整数是阿基米德的。停息诸律作为这一实例证明，在陈述它们的模块之下：脊柱的两个下降 falls_not_recurring（Becoming.Renewal）与 falls_stop_unrefuted（Becoming.Space）、Flow.taking_not_recurring_from 与 Flow.takers_within_on（Becoming.Dissipation）以及 Flow.change_stops_unrefuted（Becoming.Openness），停息定理 World.rests_unrefuted_enclosed 经最后一条推出。",
+      "declarations": [
+        "Becoming.Amounts.whole",
+        "Becoming.Amounts.whole_times_one",
+        "Becoming.Amounts.whole_within",
+        "Becoming.Amounts.whole_archimedean",
+        "Becoming.Amounts.whole_sum",
+        "Becoming.falls_not_recurring",
+        "Becoming.falls_stop_unrefuted",
+        "Becoming.Flow.taking_not_recurring_from",
+        "Becoming.Flow.takers_within_on",
+        "Becoming.Flow.change_stops_unrefuted",
+        "Becoming.World.rests_unrefuted_enclosed"
+      ]
+    },
+    {
+      "en": "Without a least loss: dyadic amounts are dense, every amount above nothing having its half below it and above nothing, and Archimedean; a stock halving in them at every step loses at every step, no amount above nothing is within every loss, and it never rests.",
+      "zh": "没有最小损失：二进分数的量是稠密的（任何大于无的量都有其一半在其下且大于无），并且是阿基米德的；在其中每步减半的存量每步都有损失，没有大于无的量在每个损失之内，它从不停息。",
+      "declarations": [
+        "Becoming.Dyadic",
+        "Becoming.mul_assoc_nat",
+        "Becoming.add_mul_split",
+        "Becoming.Naturals.mul_right_comm",
+        "Becoming.mul_turn",
+        "Becoming.Naturals.pow_add",
+        "Becoming.Dyadic.ext'",
+        "Becoming.Dyadic.add",
+        "Becoming.Dyadic.le",
+        "Becoming.Dyadic.zero",
+        "Becoming.Dyadic.le_trans'",
+        "Becoming.Dyadic.add_assoc'",
+        "Becoming.Dyadic.add_comm'",
+        "Becoming.Dyadic.zero_add'",
+        "Becoming.Dyadic.expand",
+        "Becoming.Dyadic.add_le_add_right'",
+        "Becoming.Dyadic.le_of_add_le_add_right'",
+        "Becoming.Dyadic.zero_le'",
+        "Becoming.Dyadic.amounts",
+        "Becoming.Dyadic.num_pos",
+        "Becoming.Dyadic.half_below",
+        "Becoming.Dyadic.times_ge",
+        "Becoming.Dyadic.archimedean",
+        "Becoming.Halving.stock",
+        "Becoming.Halving.loss",
+        "Becoming.Halving.falls",
+        "Becoming.Halving.loss_positive",
+        "Becoming.Halving.no_least_loss",
+        "Becoming.Halving.falls_strictly",
+        "Becoming.Halving.never_rests",
+        "Becoming.Halving.approaches_without_reaching"
+      ]
+    },
+    {
+      "en": "Without the bound by least losses: in layered amounts, a coarse dyadic layer and a fine whole-number layer counting only where the coarse layers agree, a stock falls by a least loss of one fine unit at every step, lies beyond every multiple of it, and never rests.",
+      "zh": "没有被最小损失所界：在分层的量中（粗层为二进分数，细层为整数，仅在粗层相互不超过时才计），存量每步至少下降一个细单位的最小损失，处于其每一倍数之上，从不停息。",
+      "declarations": [
+        "Becoming.Layered",
+        "Becoming.Layered.ext'",
+        "Becoming.Layered.add",
+        "Becoming.Layered.le",
+        "Becoming.Layered.zero",
+        "Becoming.Layered.le_trans'",
+        "Becoming.Layered.add_le_add_right'",
+        "Becoming.Layered.le_of_add_le_add_right'",
+        "Becoming.Layered.amounts",
+        "Becoming.Layered.stock",
+        "Becoming.Layered.least",
+        "Becoming.Layered.least_positive",
+        "Becoming.Layered.loses",
+        "Becoming.Layered.times_coarse",
+        "Becoming.Layered.beyond_every_multiple",
+        "Becoming.Layered.never_rests",
+        "Becoming.Layered.not_archimedean"
+      ]
+    },
+    {
+      "en": "Rest and return: over finitely many configurations a law that merges nothing returns every configuration, so an amount that does not rise along an orbit is at its start within its value at every step, and where it falls by a loss at each step every loss is nothing. A loss above nothing needs a law that merges: the least loss on which rest turns is a premise of descriptions that lump configurations and dissipate, and a finite law that merges nothing returns rather than rests.",
+      "zh": "停息与回返：在有限多个构形上，不合并任何东西的规律使每个构形回返，所以沿轨道不上升的量在起点不超过其每一步的值；若它每步以一个损失下降，则每个损失都为无。大于无的损失需要有所合并的规律：停息所依的最小损失是归并构形而耗散的描述的前提，不合并任何东西的有限规律回返而不停息。",
+      "declarations": [
+        "Becoming.Law.Lossless.regains",
+        "Becoming.Law.Lossless.loses_nothing",
+        "Becoming.Law.loss_needs_merge",
+        "Becoming.Branching.Lossless.loses_nothing",
+        "Becoming.Branching.loss_needs_merge"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. The least loss ε at each step at which P holds and the bound of the stock at T by m copies of ε are hypotheses of Amounts.rests, Amounts.rests_unrefuted and Amounts.family_rests; in Archimedean amounts the bound follows from ε above nothing, and the approach law asks only the Archimedean property. The amounts' eleven laws are the fields of Amounts; antisymmetry, totality and decidability of the order are not asked.",
+      "zh": "无公理。P 成立的每一步的最小损失 ε，以及 T 时存量被 m 份 ε 所界，是 Amounts.rests、Amounts.rests_unrefuted 与 Amounts.family_rests 的假设；在阿基米德的量中，界由 ε 大于无得出，趋近之律只要求阿基米德性。量的十一条规律是 Amounts 的字段；不要求序的反对称、全序或可判定。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Flow, Web and World with levels in any amounts: the step the rest laws turn on is stated for any amounts, not those structures over any amounts.",
+      "zh": "Flow、Web 与 World 以任何量为水平：停息规律所依赖的那一步对任何量陈述，那些结构本身并未在任何量上重述。",
+      "kind": "scope"
+    },
+    {
+      "en": "That any physical system has a least loss per change; the statistical second law names none, and which physical premises supply one is stated, as a correspondence, in least-loss-from-entropy-production (T1).",
+      "zh": "任何物理系统每次变化有最小损失；统计意义上的第二定律不给出它，哪些物理前提给出它，作为对应，见 least-loss-from-entropy-production（T1）。",
+      "kind": "scope"
+    },
+    {
+      "en": "Real numbers; dyadic amounts witness density in the core, and the reals are not constructed.",
+      "zh": "实数；二进分数的量在核心中见证稠密，实数并未构造。",
+      "kind": "scope"
+    },
+    {
+      "en": "That coming to rest supports or damages 生生.",
+      "zh": "停息支持或损害生生。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean",
+      "detail": {
+        "en": "Halving.never_rests: dense, Archimedean dyadic amounts, every loss above nothing and no least loss, the stock falling at every step.",
+        "zh": "Halving.never_rests：稠密且阿基米德的二进分数量，每个损失都大于无而无最小损失，存量每步都下降。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean",
+      "detail": {
+        "en": "Layered.never_rests: a least loss at every step, the stock beyond every multiple of it, falling at every step; the amounts are not Archimedean (Layered.not_archimedean), so approach fails too.",
+        "zh": "Layered.never_rests：每步都有最小损失，存量处于其每一倍数之上，每步都下降；这些量不是阿基米德的（Layered.not_archimedean），所以趋近也不成立。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean",
+      "detail": {
+        "en": "Halving.approaches_without_reaching: the halving stock approaches rest, few steps losing at least any ε above nothing, and falls at every step, as exponential relaxation does.",
+        "zh": "Halving.approaches_without_reaching：减半的存量趋近停息，至少损失任一大于无的 ε 的步只有有限个，而每步都下降，如指数弛豫。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "discrete-steps",
+    "no-ethical-premise",
+    "no-evaluation",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T124334.350424Z): the 93 declarations of Becoming.LeastLoss have empty axiom reports; the checker verifies core purity. A dependency audit (audit/LeastLossDeps.lean in the development folder) finds every one of 15 named rest laws reaching falls_not_recurring or falls_stop_unrefuted, and the six whole-number restatements with Lean types identical to the theorems they restate. Author self-review in study section 204; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T124334.350424Z）：Becoming.LeastLoss 的 93 项声明公理报告为空；检查器并核对核心纯净。依赖审计（开发目录中的 audit/LeastLossDeps.lean）表明所列 15 条停息规律都经过 falls_not_recurring 或 falls_stop_unrefuted，六个整数重述的 Lean 类型与所重述的定理相同。作者自审见研究第 204 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "Flow and World with levels in any amounts, restating the rest family there with the least loss as the premise of dissipation; a least loss that holds only in expectation over amounts that may be dense; an independent review.",
+    "zh": "以任何量为水平的 Flow 与 World，在其中以最小损失为耗散的前提重述停息族；在可稠密的量上只在期望中成立的最小损失；独立审查。"
+  },
+  "correspondence": {
+    "en": "The outside review of 19 October 2026 (R20) and an outside reader named the rest laws' dependence on whole-number amounts as the main gap between the spine and our universe: with real-valued amounts losses can shrink geometrically. Reading (the AI's): what the whole numbers carry is a floor on the cost of each change counted, and the stock's being finitely many floors deep; where change has no floor a closed system can change ever more slightly for ever without exhausting what it has.",
+    "zh": "2026年10月19日的外部审查（R20）与一位外部读者指出，停息规律依赖整数的量，是脊柱与我们宇宙之间的主要差距：若量取实数，损失可以几何地缩小。读法（AI 的）：整数所承载的是每次被计的变化的代价有一个下限，且存量只有有限个下限之深；变化没有下限之处，封闭系统可以无尽地越来越微小地变化，而不耗尽其所有。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean",
+  "aliases": [
+    "least loss",
+    "最小损失",
+    "approach to rest",
+    "趋近停息",
+    "exponential relaxation",
+    "指数弛豫",
+    "rest over dense amounts",
+    "可稠密的量上的停息",
+    "geometric loss never rests",
+    "几何损失不停息",
+    "Becoming.Amounts.rests",
+    "Becoming.Amounts.rests_unrefuted",
+    "Becoming.Amounts.family_rests",
+    "Becoming.Halving.never_rests",
+    "Becoming.Layered.never_rests",
+    "Becoming.Amounts.approaches_rest",
+    "Becoming.Law.loss_needs_merge"
+  ],
+  "dependencies": [
+    {
+      "id": "no-finite-part-bears-taking",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Flow.DissipatesOn and Flow.DissipatesOn.replenishment_takers to restate Flow.taking_not_recurring_from as the family law at whole-number amounts.",
+        "zh": "复用 Flow.DissipatesOn 与 Flow.DissipatesOn.replenishment_takers，把 Flow.taking_not_recurring_from 重述为整数量上的家族律。"
+      },
+      "interface": {
+        "output": {
+          "en": "Dissipated on, a family's replenishment with its takers is within its uptake.",
+          "zh": "被耗散时，家族的补给加取用者数不超过其取用。"
+        },
+        "input": {
+          "en": "At whole-number amounts, the replenishment within the uptake, and with a least loss of one at each taking step.",
+          "zh": "在整数量上，补给不超过取用，在每个取用步补给加最小损失一不超过取用。"
+        },
+        "conditions": {
+          "en": "Balance on the family and dissipation from T on.",
+          "zh": "自 T 起家族上的平衡与耗散。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean"
+      }
+    },
+    {
+      "id": "continued-change-needs-openness",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses what stands running down (Flow.RunsDown.standing_le, Flow.RunsDown.changes_iff), the census of what stands and enclosure around it to prove Flow.change_stops_unrefuted from the least-loss law, which Becoming.Openness does, World.rests_unrefuted_enclosed following through it.",
+        "zh": "复用所立者的下降（Flow.RunsDown.standing_le、Flow.RunsDown.changes_iff）、所立者的普查与围住它的步，由最小损失律证明 Flow.change_stops_unrefuted（Becoming.Openness 如此证明），World.rests_unrefuted_enclosed 经它推出。"
+      }
+    },
+    {
+      "id": "space-and-its-parts",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "States falls_stop_unrefuted, the descent of the world-level rest laws, as the least-loss law at whole-number amounts with its statement unchanged.",
+        "zh": "把世界层停息规律所用的下降 falls_stop_unrefuted 陈述为整数量上的最小损失律，陈述不变。"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "least-loss-from-entropy-production",
+      "detail": {
+        "en": "There the physical premises that give the spine's least loss are stated (periphery EntropyProduction, a stated correspondence); here the least loss is the exact premise of rest over amounts that may be dense, and approach to rest needs none.",
+        "zh": "那里陈述给出脊柱最小损失的物理前提（外围 EntropyProduction，一种陈述的对应）；这里最小损失是可稠密之量上停息的确切前提，而趋近停息不需要它。"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "detail": {
+        "en": "There a law that merges nothing returns every configuration within finitely many; here that return makes every loss along an orbit nothing, so the least loss of the rest laws needs a law that merges (Law.Lossless.loses_nothing, Law.loss_needs_merge).",
+        "zh": "那里不合并任何东西的规律在有限多个构形中使每个构形回返；这里这一回返使沿轨道的每个损失都为无，所以停息规律的最小损失需要有所合并的规律（Law.Lossless.loses_nothing、Law.loss_needs_merge）。"
+      }
+    },
+    {
+      "id": "rest-at-every-resolution",
+      "detail": {
+        "en": "There the unit may split and the same boundary is read at a refining unit (Asymptote, Dwindle); here amounts have no unit and the least loss is a premise.",
+        "zh": "那里单位可以细分，同一边界在细分的单位下被读出（Asymptote、Dwindle）；这里量没有单位，最小损失是前提。"
+      }
+    },
+    {
+      "id": "rest-with-refinement-counted",
+      "detail": {
+        "en": "There counting the refinement brings rest at every resolution with no premise added; here the premise whole numbers supplied is named for amounts with no unit.",
+        "zh": "那里把细分算入，不添前提就在每一分辨率下带来停息；这里为无单位的量指明整数所供给的前提。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Branching.Lossless.loses_nothing",
+        "Becoming.Branching.loss_needs_merge",
+        "Becoming.Dyadic",
+        "Becoming.Dyadic.add",
+        "Becoming.Dyadic.add_assoc'",
+        "Becoming.Dyadic.add_comm'",
+        "Becoming.Dyadic.add_le_add_right'",
+        "Becoming.Dyadic.amounts",
+        "Becoming.Dyadic.archimedean",
+        "Becoming.Dyadic.expand",
+        "Becoming.Dyadic.ext'",
+        "Becoming.Dyadic.half_below",
+        "Becoming.Dyadic.le",
+        "Becoming.Dyadic.le_of_add_le_add_right'",
+        "Becoming.Dyadic.le_trans'",
+        "Becoming.Dyadic.num_pos",
+        "Becoming.Dyadic.times_ge",
+        "Becoming.Dyadic.zero",
+        "Becoming.Dyadic.zero_add'",
+        "Becoming.Dyadic.zero_le'",
+        "Becoming.Halving.approaches_without_reaching",
+        "Becoming.Halving.falls",
+        "Becoming.Halving.falls_strictly",
+        "Becoming.Halving.loss",
+        "Becoming.Halving.loss_positive",
+        "Becoming.Halving.never_rests",
+        "Becoming.Halving.no_least_loss",
+        "Becoming.Halving.stock",
+        "Becoming.Law.Lossless.loses_nothing",
+        "Becoming.Law.Lossless.regains",
+        "Becoming.Law.loss_needs_merge",
+        "Becoming.Layered",
+        "Becoming.Layered.add",
+        "Becoming.Layered.add_le_add_right'",
+        "Becoming.Layered.amounts",
+        "Becoming.Layered.beyond_every_multiple",
+        "Becoming.Layered.ext'",
+        "Becoming.Layered.le",
+        "Becoming.Layered.le_of_add_le_add_right'",
+        "Becoming.Layered.le_trans'",
+        "Becoming.Layered.least",
+        "Becoming.Layered.least_positive",
+        "Becoming.Layered.loses",
+        "Becoming.Layered.never_rests",
+        "Becoming.Layered.not_archimedean",
+        "Becoming.Layered.stock",
+        "Becoming.Layered.times_coarse",
+        "Becoming.Layered.zero"
+      ],
+      "sha256": "c86df98f2a1246acb96b7390b86012771260e6913d1c6da9140a8f9037a635ce"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "declarations": [
+        "Becoming.mul_assoc_nat",
+        "Becoming.mul_turn",
+        "Becoming.Naturals.mul_right_comm",
+        "Becoming.Naturals.pow_add",
+        "Becoming.add_mul_split"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Amounts.lean",
+      "role": "proof",
+      "sha256": "2291776c8b8642d90b8ce557a35295352ee4c71a361513525066ad21646c63a9",
+      "declarations": [
+        "Becoming.Amounts",
+        "Becoming.Amounts.Archimedean",
+        "Becoming.Amounts.add_le_add_left",
+        "Becoming.Amounts.add_swap",
+        "Becoming.Amounts.add_zero",
+        "Becoming.Amounts.approaches_rest",
+        "Becoming.Amounts.family_loses",
+        "Becoming.Amounts.family_rests",
+        "Becoming.Amounts.family_rests_of_archimedean",
+        "Becoming.Amounts.family_still",
+        "Becoming.Amounts.few_large_losses",
+        "Becoming.Amounts.few_large_losses_of_archimedean",
+        "Becoming.Amounts.large_losses_from",
+        "Becoming.Amounts.large_losses_within",
+        "Becoming.Amounts.le_add_left",
+        "Becoming.Amounts.le_add_right",
+        "Becoming.Amounts.le_of_eq",
+        "Becoming.Amounts.loses_times",
+        "Becoming.Amounts.losses_within",
+        "Becoming.Amounts.rests",
+        "Becoming.Amounts.rests_of_archimedean",
+        "Becoming.Amounts.rests_unrefuted",
+        "Becoming.Amounts.still_le",
+        "Becoming.Amounts.still_of_falls",
+        "Becoming.Amounts.still_within",
+        "Becoming.Amounts.sum",
+        "Becoming.Amounts.times",
+        "Becoming.Amounts.times_le",
+        "Becoming.Amounts.whole",
+        "Becoming.Amounts.whole_archimedean",
+        "Becoming.Amounts.whole_losing_steps",
+        "Becoming.Amounts.whole_times_one",
+        "Becoming.Amounts.whole_within"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T124334.350424Z/verification.json",
+      "role": "receipt",
+      "declarations": [],
+      "sha256": "a3ec5f86cad647867ea14836b8aec021655e224bfac51b42cd44dac37ae8516d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.DissipatesOn",
+        "Becoming.Flow.DissipatesOn.replenishment_takers",
+        "Becoming.Flow.BalancesOn.runs_down",
+        "Becoming.Flow.takers_within_on",
+        "Becoming.Flow.taking_not_recurring_from",
+        "Becoming.Amounts.whole_sum"
+      ],
+      "sha256": "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.change_stops_unrefuted",
+        "Becoming.Flow.Enclosed.aroundStanding_not_not",
+        "Becoming.Flow.AroundStanding.runsDownClosed",
+        "Becoming.World.standingCensus",
+        "Becoming.World.rises_of_arises",
+        "Becoming.World.falls_of_ceases",
+        "Becoming.World.rests_unrefuted_enclosed"
+      ],
+      "sha256": "6ea42b39bc76f22d855bc48b5d7dce0f1fdeea5f33d67df1b62fd8c32de0cf55"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.RunsDown",
+        "Becoming.Flow.RunsDown.standing_le",
+        "Becoming.Flow.RunsDown.changes_iff",
+        "Becoming.Flow.RunsDownClosed.runsDown"
+      ],
+      "sha256": "236b6eb72050fd5c70c720cd5ccd82d732b7c90f423fe12b9f10849cdc4b2ea8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.BalancesOn",
+        "Becoming.Flow.BalancesOn.over"
+      ],
+      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.falls_stop_unrefuted"
+      ],
+      "sha256": "4e25aa0f0c75ac33b47b3b1dd7f0399ba55ec1f5dd5d83fd23e8575e8dc69703"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.falls_not_recurring"
+      ],
+      "sha256": "23efa4c2ed7a38091b2d26cf42aee5a0c6a4c140ed4f67595f5389e8ed6e3382"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Law.orbit",
+        "Becoming.Law.orbit_mul",
+        "Becoming.Law.Lossless",
+        "Becoming.Law.Returns",
+        "Becoming.Law.Lossless.returns",
+        "Becoming.Branching.Lossless",
+        "Becoming.Branching.Lossless.recurs"
+      ],
+      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Branching.law_lossless_iff"
+      ],
+      "sha256": "9408f96fc097057836f4702faccedb6c19fc7615d38a97cb469ab8575c4106af"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/ll1-least-loss/audit/LeastLossDeps.lean",
+      "role": "review",
+      "declarations": [],
+      "sha256": "ba9761a42435b36602e9e36550610b4f7e7dfbaae8aeb9c0dc97f762bc02edf7"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/ll1-least-loss/audit/deps.log",
+      "role": "review",
+      "declarations": [],
+      "sha256": "a27470ccc084da8075749b936d74bf7793b83fc0734a6502f3da8b62f9a2d612"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "declarations": [],
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "declarations": [],
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LeastLoss",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dissipation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Space",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Renewal",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Openness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T124334.350424Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Locality",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Branching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Amounts.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Amounts",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (LL1), after the outside review of 19 October (R20) named the rest laws' dependence on whole-number amounts; study section 204.",
+      "zh": "2026年10月19日：新增（LL1），在 10 月 19 日的外部审查（R20）指出停息规律依赖整数的量之后；研究第 204 节。"
+    },
+    {
+      "en": "19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: O1 and O2 added two study sections; THE-THEORY-OF-BECOMING.md: O1 and O2 added the paragraphs on what a finite stretch verifies and on what a method comes to say in the limit after the one on what a finite stretch refutes, revised the section 8.1 row of the scientific-inquiry target and the section 8.2 \"Origins and refutation\" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，O1 与 O2（有限片段所证实者；方法在极限中所能说出者）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RO (the Chinese sources on the spine): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RO added a study section; THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four section 11 status cells). The claim is unchanged.",
+      "zh": "2026年10月19日，RO（中国思想诸传统在脊柱上）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U5 (general laws read on the base): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U5 added study section 208; THE-THEORY-OF-BECOMING.md: U5 added the world reading of J3 to premise card F and section 6, a sentence each on the word half of histories (section 2), narrowing on the pure observation and evidence under fallible witnesses (section 3), a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U5（在基上读出的一般规律）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.",
+      "zh": "2026年10月19日，U5 后续（段落图）：读过改动后重新指向（BECOMING-RENEWAL-READING.md：研究第 208 节关于 Y1 段落图的一段改为已加入）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y5 (Becoming.HexagramSequences): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y5 added a study section; THE-THEORY-OF-BECOMING.md: Y5 added the section 1 paragraph on the arrangements of the 傳 with its readings, its rerun in the integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.",
+      "zh": "2026年10月19日，Y5（Becoming.HexagramSequences）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SC (a code formed between formations): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SC added a study section; THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，SC（在形成之间形成的编码）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Recurrence.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Branching.Lossless moved from Branching.lean to Recurrence.lean, with its full name. Proof bindings (Branching.lean, LeastLoss.lean, Openness.lean, Recurrence.lean, Space.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Branching.lean, the five notions and four orbit lemmas moved to Recurrence.lean; the five law_*_iff bridges are Iff.rfl; LeastLoss.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Openness.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged; Space.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：Branching.Lossless 从 Branching.lean 移到 Recurrence.lean，名称不变。证明绑定（Branching.lean、LeastLoss.lean、Openness.lean、Recurrence.lean、Space.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Branching.lean，五个概念与四条轨道引理移到 Recurrence.lean；五座 law_*_iff 桥为 Iff.rfl；LeastLoss.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Openness.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变；Space.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Moved with their full names: from Branching.lean to Recurrence.lean, Branching.Lossless.recurs; from LeastLoss.lean to Amounts.lean, Amounts, Amounts.Archimedean, Amounts.add_le_add_left, Amounts.add_swap, Amounts.add_zero, Amounts.approaches_rest, Amounts.family_loses, Amounts.family_rests, Amounts.family_rests_of_archimedean, Amounts.family_still, Amounts.few_large_losses, Amounts.few_large_losses_of_archimedean, Amounts.large_losses_from, Amounts.large_losses_within, Amounts.le_add_left, Amounts.le_add_right, Amounts.le_of_eq, Amounts.loses_times, Amounts.losses_within, Amounts.rests, Amounts.rests_of_archimedean, Amounts.rests_unrefuted, Amounts.still_le, Amounts.still_of_falls, Amounts.still_within, Amounts.sum, Amounts.times, Amounts.times_le, Amounts.whole, Amounts.whole_archimedean, Amounts.whole_losing_steps, Amounts.whole_times_one, Amounts.whole_within; from LeastLoss.lean to Dissipation.lean, Amounts.whole_sum. Removed, with the statement kept under one name: Flow.change_stops_unrefuted_whole (now Flow.change_stops_unrefuted); Flow.takers_within_on_whole (now Flow.takers_within_on); Flow.taking_not_recurring_whole (now Flow.taking_not_recurring_from); World.rests_unrefuted_enclosed_whole (now World.rests_unrefuted_enclosed); whole_falls_not_recurring (now falls_not_recurring); whole_falls_stop_unrefuted (now falls_stop_unrefuted). The sentences that said a removed name proved something cite the kept statement. Proof bindings (Branching.lean, Dissipation.lean, LeastLoss.lean, Openness.lean, Recurrence.lean, Renewal.lean, Space.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Branching.lean, the laws of every process moved to Recurrence.lean; Dissipation.lean, Amounts.whole_sum moved in; Flow.takers_within_on and Flow.taking_not_recurring_from proved through Becoming.Amounts, statements unchanged; LeastLoss.lean, the amounts and their laws moved to Amounts.lean, Amounts.whole_sum to Dissipation.lean; the six whole-number re-proofs removed; the countermodels and the laws of merging kept; Openness.lean, Flow.change_stops_unrefuted proved by Amounts.rests_unrefuted with no decision, statement unchanged; World.Finite.arising_iff_ceasing and World.Finite.comes_to_rest_unrefuted removed (one name per statement); Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; Renewal.lean, imports Becoming.Amounts; falls_not_recurring proved as the whole-number instance of Amounts.rests, statement unchanged; Space.lean, falls_stop_unrefuted proved as the whole-number instance of Amounts.rests_unrefuted, statement unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：连同完整名称移动：从 Branching.lean 到 Recurrence.lean：Branching.Lossless.recurs；从 LeastLoss.lean 到 Amounts.lean：Amounts、Amounts.Archimedean、Amounts.add_le_add_left、Amounts.add_swap、Amounts.add_zero、Amounts.approaches_rest、Amounts.family_loses、Amounts.family_rests、Amounts.family_rests_of_archimedean、Amounts.family_still、Amounts.few_large_losses、Amounts.few_large_losses_of_archimedean、Amounts.large_losses_from、Amounts.large_losses_within、Amounts.le_add_left、Amounts.le_add_right、Amounts.le_of_eq、Amounts.loses_times、Amounts.losses_within、Amounts.rests、Amounts.rests_of_archimedean、Amounts.rests_unrefuted、Amounts.still_le、Amounts.still_of_falls、Amounts.still_within、Amounts.sum、Amounts.times、Amounts.times_le、Amounts.whole、Amounts.whole_archimedean、Amounts.whole_losing_steps、Amounts.whole_times_one、Amounts.whole_within；从 LeastLoss.lean 到 Dissipation.lean：Amounts.whole_sum。删去，陈述以一个名称保留：Flow.change_stops_unrefuted_whole（现为 Flow.change_stops_unrefuted）；Flow.takers_within_on_whole（现为 Flow.takers_within_on）；Flow.taking_not_recurring_whole（现为 Flow.taking_not_recurring_from）；World.rests_unrefuted_enclosed_whole（现为 World.rests_unrefuted_enclosed）；whole_falls_not_recurring（现为 falls_not_recurring）；whole_falls_stop_unrefuted（现为 falls_stop_unrefuted）。说删去之名证明了什么的句子改引保留的陈述。证明绑定（Branching.lean、Dissipation.lean、LeastLoss.lean、Openness.lean、Recurrence.lean、Renewal.lean、Space.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Branching.lean，每个过程之律移到 Recurrence.lean；Dissipation.lean，Amounts.whole_sum 移入；Flow.takers_within_on 与 Flow.taking_not_recurring_from 经 Becoming.Amounts 证明，陈述不变；LeastLoss.lean，量及其律移到 Amounts.lean，Amounts.whole_sum 移到 Dissipation.lean；六个整数重证删去；反模型与合并之律保留；Openness.lean，Flow.change_stops_unrefuted 由 Amounts.rests_unrefuted 不经判定证明，陈述不变；删去 World.Finite.arising_iff_ceasing 与 World.Finite.comes_to_rest_unrefuted（每个陈述一个名称）；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；Renewal.lean，导入 Becoming.Amounts；falls_not_recurring 作为 Amounts.rests 的整数实例证明，陈述不变；Space.lean，falls_stop_unrefuted 作为 Amounts.rests_unrefuted 的整数实例证明，陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Dissipation.lean, Flow.lean, Recurrence.lean, Space.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Space.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Dissipation.lean、Flow.lean、Recurrence.lean、Space.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Dissipation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Space.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Removed, with the statement kept under one name: Dyadic.mul_assoc' (now mul_assoc_nat); Dyadic.mul_left_comm' (now mul_turn); Dyadic.mul_right_comm' (now Naturals.mul_right_comm); Dyadic.pow_add' (now Naturals.pow_add); Dyadic.right_distrib' (now add_mul_split). Proof bindings (Amounts.lean, Branching.lean, LeastLoss.lean, Openness.lean, Space.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Amounts.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Branching.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; LeastLoss.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Openness.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Space.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：删去，陈述以一个名称保留：Dyadic.mul_assoc'（现为 mul_assoc_nat）；Dyadic.mul_left_comm'（现为 mul_turn）；Dyadic.mul_right_comm'（现为 Naturals.mul_right_comm）；Dyadic.pow_add'（现为 Naturals.pow_add）；Dyadic.right_distrib'（现为 add_mul_split）。证明绑定（Amounts.lean、Branching.lean、LeastLoss.lean、Openness.lean、Space.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Amounts.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Branching.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；LeastLoss.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Openness.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Space.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Branching.lean, Openness.lean, Prelude.lean, Recurrence.lean, Space.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Branching.lean, takes as its final section RecurrenceRuns, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Openness.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Space.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Branching.lean、Openness.lean、Prelude.lean、Recurrence.lean、Space.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Branching.lean，以末节收入 RecurrenceRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Openness.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Space.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

@@ -96,12 +96,13 @@ Aliases: —
 - 2026-10-09: continued from finite-support obstruction to actual organizational formation, preserving seven primary statements and checking release/distribution before incorporation; no new mathematics or exclusive theory is claimed.
 - 2026-10-09: extends the same assessment previously titled “Independent continuation formed within shared software activity” with API-change history. Five developer posts and two reread statements distinguish continuation from reorganization control, with current-retrieval/editing limits. LibreOffice evidence, earlier proofs and failures remain; no additional result counted.
 - 2026-10-14 readability migration to schema 2: the claim's first sentence became the statement, and its second (Apollo's ending and different inherited commitments remain) is carried by the counterexample and the third hypothesis; the limitations became 5 typed does-not-show items; the next step's first sentence (both continuation correspondences complete) became 2 anchored progress lines, and the rest is restated positively with the same content. No claim, premise, status, dependency, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/formed-software-continuation.md); the exact earlier record is text_versions[0].
-- 3 rebinding entries (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](formed-software-continuation.json).
+- 2 rebinding entries (2026-10-17 to 2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](formed-software-continuation.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text
 
 - [formed-software-continuation.json](../../../../_process/architecture/history/684c3131cc0de0e5/formed-software-continuation.json) (sha256 `684c3131cc0de0e5…`): Exact record bytes before the readability migration (schema 1).
+- [formed-software-continuation.json](../../../../_process/architecture/history/fc76e9a2a18ddd7a/formed-software-continuation.json) (sha256 `fc76e9a2a18ddd7a…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

@@ -1,0 +1,655 @@
+{
+  "schema_version": 2,
+  "id": "a-code-formed-between-formations",
+  "title": {
+    "en": "A code formed between formations",
+    "zh": "在形成之间形成的编码"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T14:17:58+00:00",
+  "statement": {
+    "en": "Codes changed only by hearing keep agreement exactly through closed hearings; the start and the order fix the form reached; reading across holds where codes agree; no law privileging neither form nor formation settles a symmetric disagreement; imposed and written-back codes stay.",
+    "zh": "只经听取而变的编码，恰经封闭的听取保持相合；所成之形由起点与次序固定；编码相合处可互读；既不特许形式也不特许形成者的律不能解决对称的分歧；强加的与写回的编码保持。"
+  },
+  "laws": [
+    {
+      "en": "Hearing is a process of the spine, a stretch of its run an order of hearings, and every start and sequence of hearings has its run; hearing makes no form, and a step changes a form exactly at its hearer, at the sense heard, where the rule takes the form and the speaker's form differs.",
+      "zh": "听取是脊柱的一个过程，其运行的一段是一个听取次序，每个起点与听取序列都有其运行；听取不造新形，一步恰在其听者、所听之义、规则取形且说者之形不同处改变一形。",
+      "declarations": [
+        "Becoming.SharedCodes.process",
+        "Becoming.SharedCodes.step_at",
+        "Becoming.SharedCodes.window_runBy",
+        "Becoming.SharedCodes.state_hearings",
+        "Becoming.SharedCodes.hearingRun",
+        "Becoming.SharedCodes.run_held",
+        "Becoming.SharedCodes.run_changes_iff"
+      ]
+    },
+    {
+      "en": "A group agreeing at a sense keeps agreeing through every hearing closed for it, exactly unless a member hears the sense, the rule takes the form and the speaker's form is not the group's; along runs so closed no member's form changes, and agreement of all is a rest under every rule.",
+      "zh": "在某义上相合的一组经每个对它封闭的听取保持相合，恰除非某成员听此义、规则取形且说者之形不是该组之形；沿如此封闭的运行，无成员之形改变；全体相合在每条规则下都是静止。",
+      "declarations": [
+        "Becoming.SharedCodes.agreement_kept",
+        "Becoming.SharedCodes.kept_iff",
+        "Becoming.SharedCodes.run_kept_iff",
+        "Becoming.SharedCodes.run_kept",
+        "Becoming.SharedCodes.run_agreement_kept",
+        "Becoming.SharedCodes.pair_kept",
+        "Becoming.SharedCodes.all_agree_rest"
+      ]
+    },
+    {
+      "en": "Under hearings that take the form heard, each formation holds the start's form of its origin; where two forms differ, every run with given hearings agrees from every start exactly where they give all formations one origin; the forms that can become shared are exactly the forms in use.",
+      "zh": "在取所听之形的听取下，每个形成持有起点处其来源之形；两形不同时，有给定听取的每个运行恰在这些听取给所有形成同一来源时从每个起点相合；可成为共有者恰是在用之形。",
+      "declarations": [
+        "Becoming.SharedCodes.run_origin",
+        "Becoming.SharedCodes.run_origin_window",
+        "Becoming.SharedCodes.agrees_every_start_iff",
+        "Becoming.SharedCodes.run_agrees_every_start_iff",
+        "Becoming.SharedCodes.shared_iff_in_use",
+        "Becoming.SharedCodes.run_shared_iff_in_use",
+        "Becoming.SharedCodes.TwoFormations.order_decides"
+      ]
+    },
+    {
+      "en": "Under a pointer law every start agrees at a step exactly where the pointer's paths have met; being joined through couplings is not enough: on the path a – c – b with each following the least-indexed of itself and its couplings, a and b never agree.",
+      "zh": "在指针律下，每个起点恰在指针之路已相遇的那一步相合；经耦合相连并不够：在路 a – c – b 上，各取其自身与所耦合者中编号最小者，a 与 b 永不相合。",
+      "declarations": [
+        "Becoming.SharedCodes.follow",
+        "Becoming.SharedCodes.follow_state",
+        "Becoming.SharedCodes.follow_agrees_iff",
+        "Becoming.SharedCodes.Path.never_agree"
+      ]
+    },
+    {
+      "en": "A formation whose code tells senses apart reads another's form for a sense as that sense, and only it, exactly where their codes agree there, and otherwise as another sense; a hearing keeps the hearer telling senses apart exactly where the form taken is not one it gives another sense, so agreement sense by sense can merge senses.",
+      "zh": "编码分别诸义的形成，恰在两编码于某义相合处把对方此义之形读作此义且只读作此义，否则读作另一义；一次听取恰在所取之形不是听者给另一义之形时，保持听者分别诸义，所以逐义的相合可以合并诸义。",
+      "declarations": [
+        "Becoming.SharedCodes.self_reads_iff",
+        "Becoming.SharedCodes.reads_iff",
+        "Becoming.SharedCodes.reads_other",
+        "Becoming.SharedCodes.run_reads_iff",
+        "Becoming.SharedCodes.run_reads_kept",
+        "Becoming.SharedCodes.keeps_apart_iff",
+        "Becoming.SharedCodes.run_keeps_apart_iff",
+        "Becoming.SharedCodes.TwoFormations.homonym"
+      ]
+    },
+    {
+      "en": "No form is privileged: runs through one order from starts differing by a renaming differ by it at every step, tell apart the same senses, and a renamed description carries a law exactly where the description does.",
+      "zh": "不特许任何形式：经同一次序、起点相差一个改名的运行每步都相差此改名，分别同样的义；改名后的描述恰在原描述承载规律处承载规律。",
+      "declarations": [
+        "Becoming.SharedCodes.hearBy_keeps_renaming",
+        "Becoming.SharedCodes.run_renamed",
+        "Becoming.SharedCodes.reached_differ_iff",
+        "Becoming.SharedCodes.run_renamed_tells_apart_iff",
+        "Becoming.SharedCodes.renamed_goAlike_iff",
+        "Becoming.SharedCodes.renamed_carries_iff"
+      ]
+    },
+    {
+      "en": "Agreement needs a broken symmetry: a law keeping an exchange of formations and a renaming of forms keeps a symmetric start symmetric, so formations it exchanges never agree where the renaming moves every form; a centre, a preferred form and an order of hearing each break one symmetry and bring agreement.",
+      "zh": "相合需要打破对称：保持形成之交换与形式之改名的律使对称的起点保持对称，所以在改名移动每个形之处，它所交换的形成永不相合；中心、偏好之形与听取次序各打破一个对称而带来相合。",
+      "declarations": [
+        "Becoming.Law.KeepsRelation.run",
+        "Becoming.Law.Commutes.keepsRelation",
+        "Becoming.SharedCodes.keeps_both",
+        "Becoming.SharedCodes.agrees_only_fixed",
+        "Becoming.SharedCodes.never_agrees",
+        "Becoming.SharedCodes.never_agrees_of_both",
+        "Becoming.SharedCodes.pair_agrees_only_fixed",
+        "Becoming.SharedCodes.pair_never_agrees",
+        "Becoming.SharedCodes.TwoFormations.crossing_never_agrees",
+        "Becoming.SharedCodes.TwoFormations.three_agree",
+        "Becoming.SharedCodes.TwoFormations.centre_breaks_exchange",
+        "Becoming.SharedCodes.TwoFormations.preferred_breaks_renaming",
+        "Becoming.SharedCodes.TwoFormations.ordered_breaks_exchange"
+      ]
+    },
+    {
+      "en": "An imposed code makes all agree and read each other where it tells senses apart; each formation loses what its code told apart and the imposed code merges, its source nothing; along every later run of hearing this stays, and a merged distinction comes back only from a form kept outside.",
+      "zh": "强加的编码使所有人相合，并在它分别诸义处互读；每个形成失去其编码所分而强加编码所合并者，其来源一无所失；沿此后每个听取运行这些保持，被合并的分别只从外面保留的形式回来。",
+      "declarations": [
+        "Becoming.SharedCodes.impose_agrees",
+        "Becoming.SharedCodes.self_reads_iff",
+        "Becoming.SharedCodes.impose_loses_iff",
+        "Becoming.SharedCodes.source_loses_nothing",
+        "Becoming.SharedCodes.held_stays",
+        "Becoming.SharedCodes.run_imposed_stays",
+        "Becoming.SharedCodes.run_from_imposition",
+        "Becoming.SharedCodes.outside_needed",
+        "Becoming.SharedCodes.outside_returns"
+      ]
+    },
+    {
+      "en": "A resolution written back into the records later generations read rests from the next generation on, merges the histories resolving alike, so no later reading recovers them, and under omission rests away from the target; kept records bar a different resolution, and where records are only added a resolution is lost but never replaced.",
+      "zh": "写回后代所读记录的判定自下一代起静止，合并判定相同的历史，所以后来的读法读不回它们；遗漏之下静止于所指之外；保留的记录阻止不同的判定；记录只增补处，判定可失去而不被替换。",
+      "declarations": [
+        "Becoming.SharedCodes.resolve",
+        "Becoming.SharedCodes.nextCohort",
+        "Becoming.SharedCodes.WritesExactly",
+        "Becoming.SharedCodes.written_rests",
+        "Becoming.SharedCodes.every_cohort_resolves",
+        "Becoming.SharedCodes.resolved_alike_merged",
+        "Becoming.SharedCodes.nextCohort_merges",
+        "Becoming.SharedCodes.no_reading_recovers",
+        "Becoming.SharedCodes.covered_rest",
+        "Becoming.SharedCodes.omitted_rest",
+        "Becoming.SharedCodes.kept_bars",
+        "Becoming.SharedCodes.kept_rests",
+        "Becoming.SharedCodes.adding",
+        "Becoming.SharedCodes.added_never_replaced",
+        "Becoming.SharedCodes.Gloss.taken_up_locks",
+        "Becoming.SharedCodes.Gloss.uptake_loses"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. The codes, the hearings and the rule of adoption are given; every other premise is named where it is used: hearings closed for a group; hearings that take the form heard; two forms that differ; a list of every formation; a rule reading codes alike after a renaming; a law keeping an exchange and a renaming; a renaming moving every form at the sense; records written to offer exactly what was resolved; decided equality of formations and senses where an order is stepped back through.",
+      "zh": "不加公理。编码、听取与采纳规则是给定的；其余每个前提都在用到之处具名：对一组封闭的听取；取所听之形的听取；两个不同的形；列出每个形成的列表；在改名后同样读编码的规则；保持一个交换与一个改名的律；在该义上移动每个形的改名；写下恰提供所判定者的记录；在回溯次序之处形成与义的相等可判定。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Which orders actual exchange takes, with probabilities over orders, and how long agreement takes: the voter model's and the naming game's expectations are not stated.",
+      "zh": "实际交换取哪些次序、次序上的概率，以及相合需要多久：投票者模型与命名博弈的期望未陈述。",
+      "kind": "scope"
+    },
+    {
+      "en": "Codes holding several forms for a sense, rules reading more than the two codes, adoption of whole codes, and an exact step bound for a pointer law on finite sets.",
+      "zh": "一义多形的编码、读两个编码之外内容的规则、整码采纳，以及有限集上指针律的确切步数界。",
+      "kind": "scope"
+    },
+    {
+      "en": "That actual conventions, scripts or the theory's own terms form by hearing in this way, or whether a shared, imposed or kept code supports or damages 生生.",
+      "zh": "实际的约定、文字或理论自己的术语以这种听取方式形成，或共有的、强加的、保留的编码支持还是损害生生。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SharedCodes.lean",
+      "detail": {
+        "en": "The proposed coupling form refuted (Path.never_agree): on the path a – c – b, every two formations joined through couplings and each adopting at once the code of the least-indexed of itself and its couplings, a and b each point to themselves and never agree, so agreement under that law is not equivalent to every coupling closure being the whole.",
+        "zh": "原拟耦合形式之反例（Path.never_agree）：在路 a – c – b 上，任两形成经耦合相连，各即刻取其自身与所耦合者中编号最小者之码，a 与 b 各指向自身，永不相合；所以该律之下的相合不等价于每个耦合闭包为全体。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SharedCodes.lean",
+      "detail": {
+        "en": "A symmetric law never agrees (TwoFormations.crossing_never_agrees): two formations each taking the other's form at once exchange their forms forever.",
+        "zh": "对称的律永不相合（TwoFormations.crossing_never_agrees）：两个形成各即刻取对方之形，永远互换其形。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SharedCodes.lean",
+      "detail": {
+        "en": "Agreement can cost distinctions (TwoFormations.homonym): two codes each telling two senses apart, one hearing the other at one sense, leave the hearer one form for both.",
+        "zh": "相合可以付出分别（TwoFormations.homonym）：两个各分别两义的编码，一方在一义上听另一方，使听者对两义只有一形。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T141645.763808Z): the 163 declarations of Becoming.SharedCodes, 119 of them theorems, have empty axiom reports; the checker verifies core purity. Author review in study section 210; readings D56; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T141645.763808Z）：Becoming.SharedCodes 的 163 项声明（119 项定理）公理报告为空；检查器并核对核心纯净。作者审查见研究第 210 节；读法 D56；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Probabilities over orders and the time agreement takes; codes with several forms for a sense; adoption of whole codes; the step bound of a pointer law on finite sets; an independent review.",
+    "zh": "次序上的概率与相合所需的时间；一义多形的编码；整码采纳；有限集上指针律的步数界；独立审查。"
+  },
+  "correspondence": {
+    "en": "RO's chapter on the Chinese sources found the spine lacking a law of a code formed between formations (荀子 正名: 名无固宜，约定俗成谓之宜; 同则同之，异则异之), of an imposed code (說文叙: 书同文) and of a reading written back (說文: 止戈为武). Hearing by adoption is the voter model and the naming game, the codes those of Lewis signalling systems, the symmetry law equivariance (Curie's principle). The readings onto the texts are the AI's (D56).",
+    "zh": "RO 关于中国思想诸传统的一章发现，脊柱缺在形成之间形成的编码之律（荀子正名：名无固宜，约定俗成谓之宜；同则同之，异则异之）、强加的编码之律（说文叙：书同文）与写回的读法之律（说文：止戈为武）。以采纳而听取即投票者模型与命名博弈，编码即 Lewis 信号系统之编码，对称之律即等变性（居里原理）。对原典的读法是 AI 的（D56）。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SharedCodes.lean",
+  "aliases": [
+    "a code formed between formations",
+    "shared codes",
+    "约定俗成",
+    "在形成之间形成的编码",
+    "agreement needs a broken symmetry",
+    "Becoming.SharedCodes.kept_iff",
+    "Becoming.SharedCodes.run_agrees_every_start_iff",
+    "Becoming.SharedCodes.never_agrees_of_both",
+    "Becoming.SharedCodes.run_from_imposition",
+    "Becoming.SharedCodes.written_rests",
+    "Becoming.SharedCodes.Path.never_agree"
+  ],
+  "dependencies": [
+    {
+      "id": "what-a-commuting-law-keeps-apart",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Uses Law.Commutes and its run laws: Law.Commutes.keepsRelation is the relational form of keeps_fixed, and pair_agrees_only_fixed reads it on two formations.",
+        "zh": "使用 Law.Commutes 及其运行之律：Law.Commutes.keepsRelation 是 keeps_fixed 的关系形式，pair_agrees_only_fixed 在两个形成上读之。"
+      },
+      "interface": {
+        "output": {
+          "en": "A law commuting with a map keeps the relation of a configuration to its image along its runs.",
+          "zh": "与一映射交换的律沿其运行保持构形与其像的关系。"
+        },
+        "input": {
+          "en": "From a pair the joint exchange fixes, the two formations agree only on a form the renaming fixes.",
+          "zh": "从联合交换所固定的一对出发，两个形成只在改名所固定的形上相合。"
+        },
+        "conditions": {
+          "en": "The law commutes with exchanging the two formations together with the forms.",
+          "zh": "律与同时交换两个形成及其形相交换。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean"
+      }
+    },
+    {
+      "id": "projection-carrying-a-law",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Uses carries_law_iff: renamed_carries_iff states that a renamed description carries a law exactly where the description does.",
+        "zh": "使用 carries_law_iff：renamed_carries_iff 说改名后的描述恰在原描述承载规律处承载规律。"
+      },
+      "interface": {
+        "output": {
+          "en": "A projection carries a determined law exactly where configurations alike under it go alike.",
+          "zh": "一个投影恰在其下相同的构形同样变化时承载确定的规律。"
+        },
+        "input": {
+          "en": "Renaming forms by a map telling them apart keeps which descriptions carry a law.",
+          "zh": "以分别诸形的映射改名，保持哪些描述承载规律。"
+        },
+        "conditions": {
+          "en": "The renaming tells forms apart.",
+          "zh": "改名分别诸形。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Uses Law.orbit, Law.run, Law.Merges and Law.merged_stays for the pointer law and the generations of records.",
+        "zh": "对指针律与记录的代际使用 Law.orbit、Law.run、Law.Merges 与 Law.merged_stays。"
+      },
+      "interface": {
+        "output": {
+          "en": "What a law merges stays merged along its runs.",
+          "zh": "律所合并者沿其运行保持合并。"
+        },
+        "input": {
+          "en": "Two histories of records resolving alike are one from the next generation on, and no later reading recovers them.",
+          "zh": "判定相同的两段记录史自下一代起合一，后来的读法读不回它们。"
+        },
+        "conditions": {
+          "en": "Each generation writes a record offering exactly what it resolved.",
+          "zh": "每一代写下恰提供其所判定者的记录。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "chinese-sources-on-the-spine",
+      "detail": {
+        "en": "Closes the second of its seven gaps (a code formed between formations); four passages of its map are re-pointed to these laws.",
+        "zh": "补上其七项缺口中的第二项（在形成之间形成的编码）；其逐句对应中的四段改指向这些律。"
+      }
+    },
+    {
+      "id": "what-finitely-many-labels-fix",
+      "detail": {
+        "en": "A code read off finitely many labels of a given feature: supplied to one side, where here the code forms between formations.",
+        "zh": "从给定特征的有限多个标签读出编码：编码给予一方；此处编码在形成之间形成。"
+      }
+    },
+    {
+      "id": "historical-source-binding",
+      "detail": {
+        "en": "Dated controls separate rival histories; here records kept from before are what bar a reading written back (kept_bars).",
+        "zh": "有日期的对照分开对手的历史；此处是此前保留的记录阻止写回的读法（kept_bars）。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SharedCodes.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Law.Commutes.keepsRelation",
+        "Becoming.Law.KeepsRelation",
+        "Becoming.Law.KeepsRelation.run",
+        "Becoming.SharedCodes.AgreeAt",
+        "Becoming.SharedCodes.Closed",
+        "Becoming.SharedCodes.Gloss.distinct",
+        "Becoming.SharedCodes.Gloss.earlier_rests",
+        "Becoming.SharedCodes.Gloss.exact",
+        "Becoming.SharedCodes.Gloss.offersOne",
+        "Becoming.SharedCodes.Gloss.rep",
+        "Becoming.SharedCodes.Gloss.taken_up_locks",
+        "Becoming.SharedCodes.Gloss.uptake",
+        "Becoming.SharedCodes.Gloss.uptake_loses",
+        "Becoming.SharedCodes.Gloss.zero_ne_one",
+        "Becoming.SharedCodes.Hearing",
+        "Becoming.SharedCodes.Relabels",
+        "Becoming.SharedCodes.KeepsExchange",
+        "Becoming.SharedCodes.KeepsRenaming",
+        "Becoming.SharedCodes.Loses",
+        "Becoming.SharedCodes.Path.Node",
+        "Becoming.SharedCodes.Path.couples",
+        "Becoming.SharedCodes.Path.joined",
+        "Becoming.SharedCodes.Path.least",
+        "Becoming.SharedCodes.Path.least_coupled",
+        "Becoming.SharedCodes.Path.least_least",
+        "Becoming.SharedCodes.Path.never_agree",
+        "Becoming.SharedCodes.Path.rank",
+        "Becoming.SharedCodes.Path.stays_a",
+        "Becoming.SharedCodes.Path.stays_b",
+        "Becoming.SharedCodes.ReadsAs",
+        "Becoming.SharedCodes.TellsApart",
+        "Becoming.SharedCodes.TwoFormations.bor_comm",
+        "Becoming.SharedCodes.TwoFormations.centre",
+        "Becoming.SharedCodes.TwoFormations.centre_breaks_exchange",
+        "Becoming.SharedCodes.TwoFormations.centre_keeps_renaming",
+        "Becoming.SharedCodes.TwoFormations.crossed",
+        "Becoming.SharedCodes.TwoFormations.crossing",
+        "Becoming.SharedCodes.TwoFormations.crossing_keeps_exchange",
+        "Becoming.SharedCodes.TwoFormations.crossing_keeps_renaming",
+        "Becoming.SharedCodes.TwoFormations.crossing_never_agrees",
+        "Becoming.SharedCodes.TwoFormations.homonym",
+        "Becoming.SharedCodes.TwoFormations.order_decides",
+        "Becoming.SharedCodes.TwoFormations.ordered",
+        "Becoming.SharedCodes.TwoFormations.ordered_breaks_exchange",
+        "Becoming.SharedCodes.TwoFormations.ordered_keeps_renaming",
+        "Becoming.SharedCodes.TwoFormations.preferred",
+        "Becoming.SharedCodes.TwoFormations.preferred_breaks_renaming",
+        "Becoming.SharedCodes.TwoFormations.preferred_keeps_exchange",
+        "Becoming.SharedCodes.TwoFormations.start",
+        "Becoming.SharedCodes.TwoFormations.start_symmetric",
+        "Becoming.SharedCodes.TwoFormations.three_agree",
+        "Becoming.SharedCodes.WritesExactly",
+        "Becoming.SharedCodes.added_never_replaced",
+        "Becoming.SharedCodes.adding",
+        "Becoming.SharedCodes.adding_prefix",
+        "Becoming.SharedCodes.agreement_kept",
+        "Becoming.SharedCodes.agrees_every_start_iff",
+        "Becoming.SharedCodes.agrees_only_fixed",
+        "Becoming.SharedCodes.all_agree_rest",
+        "Becoming.SharedCodes.always",
+        "Becoming.SharedCodes.back",
+        "Becoming.SharedCodes.back_from",
+        "Becoming.SharedCodes.back_held",
+        "Becoming.SharedCodes.back_to",
+        "Becoming.SharedCodes.bool_false_ne_true",
+        "Becoming.SharedCodes.broadcast",
+        "Becoming.SharedCodes.broadcast_holds",
+        "Becoming.SharedCodes.broadcast_reaches",
+        "Becoming.SharedCodes.changes_iff",
+        "Becoming.SharedCodes.covered_rest",
+        "Becoming.SharedCodes.every_cohort_resolves",
+        "Becoming.SharedCodes.exchange",
+        "Becoming.SharedCodes.follow",
+        "Becoming.SharedCodes.follow_agrees_iff",
+        "Becoming.SharedCodes.follow_state",
+        "Becoming.SharedCodes.nextCohort",
+        "Becoming.SharedCodes.nextCohort_merges",
+        "Becoming.SharedCodes.nextCohort_of_resolved",
+        "Becoming.SharedCodes.hear",
+        "Becoming.SharedCodes.hearBy",
+        "Becoming.SharedCodes.hearBy_held",
+        "Becoming.SharedCodes.hearBy_keeps_renaming",
+        "Becoming.SharedCodes.hearBy_other",
+        "Becoming.SharedCodes.hearBy_refused",
+        "Becoming.SharedCodes.hearBy_taken",
+        "Becoming.SharedCodes.hear_back",
+        "Becoming.SharedCodes.hear_keeps_renaming",
+        "Becoming.SharedCodes.heardFrom",
+        "Becoming.SharedCodes.hearingRun",
+        "Becoming.SharedCodes.hearings",
+        "Becoming.SharedCodes.hearings_congr",
+        "Becoming.SharedCodes.hearings_listed",
+        "Becoming.SharedCodes.hearings_shift",
+        "Becoming.SharedCodes.held_stays",
+        "Becoming.SharedCodes.impose",
+        "Becoming.SharedCodes.impose_agrees",
+        "Becoming.SharedCodes.impose_loses_iff",
+        "Becoming.SharedCodes.self_reads_iff",
+        "Becoming.SharedCodes.keep",
+        "Becoming.SharedCodes.keep_of_resolved",
+        "Becoming.SharedCodes.keeps_apart_iff",
+        "Becoming.SharedCodes.keeps_both",
+        "Becoming.SharedCodes.kept_at",
+        "Becoming.SharedCodes.kept_bars",
+        "Becoming.SharedCodes.kept_iff",
+        "Becoming.SharedCodes.kept_rests",
+        "Becoming.SharedCodes.listed",
+        "Becoming.SharedCodes.marked",
+        "Becoming.SharedCodes.never_agrees",
+        "Becoming.SharedCodes.never_agrees_of_both",
+        "Becoming.SharedCodes.no_reading_recovers",
+        "Becoming.SharedCodes.omitted_rest",
+        "Becoming.SharedCodes.origin",
+        "Becoming.SharedCodes.outside_needed",
+        "Becoming.SharedCodes.outside_returns",
+        "Becoming.SharedCodes.pair_agrees_only_fixed",
+        "Becoming.SharedCodes.pair_kept",
+        "Becoming.SharedCodes.pair_never_agrees",
+        "Becoming.SharedCodes.process",
+        "Becoming.SharedCodes.reached_differ_iff",
+        "Becoming.SharedCodes.reads_iff",
+        "Becoming.SharedCodes.reads_other",
+        "Becoming.SharedCodes.renamed_carries_iff",
+        "Becoming.SharedCodes.renamed_goAlike_iff",
+        "Becoming.SharedCodes.renamed_tells_apart_iff",
+        "Becoming.SharedCodes.resolve",
+        "Becoming.SharedCodes.resolve_kept",
+        "Becoming.SharedCodes.resolve_mem",
+        "Becoming.SharedCodes.resolve_written",
+        "Becoming.SharedCodes.resolved_alike_merged",
+        "Becoming.SharedCodes.runBy",
+        "Becoming.SharedCodes.runBy_held",
+        "Becoming.SharedCodes.run_agreement_kept",
+        "Becoming.SharedCodes.run_agrees_every_start_iff",
+        "Becoming.SharedCodes.run_changes_iff",
+        "Becoming.SharedCodes.run_from_imposition",
+        "Becoming.SharedCodes.run_held",
+        "Becoming.SharedCodes.run_imposed_stays",
+        "Becoming.SharedCodes.run_keeps_apart_iff",
+        "Becoming.SharedCodes.run_kept",
+        "Becoming.SharedCodes.run_kept_iff",
+        "Becoming.SharedCodes.run_origin",
+        "Becoming.SharedCodes.run_origin_window",
+        "Becoming.SharedCodes.run_reads_iff",
+        "Becoming.SharedCodes.run_reads_kept",
+        "Becoming.SharedCodes.run_renamed",
+        "Becoming.SharedCodes.run_renamed_tells_apart_iff",
+        "Becoming.SharedCodes.run_shared_iff_in_use",
+        "Becoming.SharedCodes.shared_iff_in_use",
+        "Becoming.SharedCodes.source_loses_nothing",
+        "Becoming.SharedCodes.state_hearings",
+        "Becoming.SharedCodes.step_at",
+        "Becoming.SharedCodes.step_from",
+        "Becoming.SharedCodes.window_hearings",
+        "Becoming.SharedCodes.window_runBy",
+        "Becoming.SharedCodes.written_rests"
+      ],
+      "sha256": "92b55b9ce0aa6a5150c0fad3116602f950aa2151236dffcb55c5a40cc7ebe310"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "declarations": [
+        "Becoming.beq_self",
+        "Becoming.ListTests.not_not",
+        "Becoming.ListTests.not_ne_self",
+        "Becoming.ListTests.append_assoc",
+        "Becoming.ListTests.append_nil"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
+      "role": "proof",
+      "sha256": "c16574db68309b48d70f9a755d4e02892541d8b90a238bd4b7d1d590bf8694fe"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "role": "proof",
+      "sha256": "f76c95d000ad47ce325ef58c7891d7536ac3844ddc9deb4ccced572b8a8bd4eb"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CrossSituational.lean",
+      "role": "proof",
+      "sha256": "6032cfc6f2e28111cbd6260feef42c696519897b46a651f64194799ca7c31aa9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T141645.763808Z/verification.json",
+      "role": "receipt",
+      "sha256": "1f0dc623bbcdf288b95c4e6251d58f1ce268ba6d177506bf26e350ac66415c21"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+      "role": "provenance",
+      "sha256": "fb0fe2f00847be4c15585e3b382efb117f41290592c9d9332236d053a6d2107c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
+      "role": "provenance",
+      "sha256": "8d83044cfd7c728aaa21e10b1fa6cf9a113ce31ca0299279c9ec89ba25eb8c5b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SharedCodes.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SharedCodes",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (SC), the second gap of RO's chapter on the Chinese sources; study section 210, readings D56.",
+      "zh": "2026年10月19日：新增（SC），即 RO 关于中国思想诸传统一章的第二项缺口；研究第 210 节，读法 D56。"
+    },
+    {
+      "en": "19 October 2026, RC (capture through the rule): passages.json re-pointed after reading the change (passages.json: RC: 二柄, 据有余而制不足 and 壹 cite Becoming.RuleCapture and its record, and 二柄's gap is marked closed). The claim is unchanged.",
+      "zh": "2026年10月19日，RC（经由规则的捕获）：读过改动后，passages.json 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RC (capture through the rule): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in the collective continuation row of section 8, where RC added capture through the rule (Becoming.RuleCapture) to what is stated, rules that read more than the share to what is open, and its record to the links. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，RC（经由规则的捕获）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节集体延续一行改动：RC 把经由规则的捕获（Becoming.RuleCapture）加入已陈述者，把读出多于份额的规则加入未决者，并加入其记录的链接。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RG (two-sided regulation and late reading): THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts; passages.json: RG added declarations and its record to four passages, replaced the sentences of their readings that named the first gap and marked that gap closed (other passages unchanged)). The claim is unchanged.",
+      "zh": "2026年10月19日，RG（双向调节与迟读）：读过改动后，THE-THEORY-OF-BECOMING.md、passages.json 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Commuting.lean: declarations moved in or out by W2; Mechanism.lean: declarations moved in or out by W2; Recurrence.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：THE-THEORY-OF-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R23 (the refutation laws however a family is listed): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R23 changed them: THE-THEORY-OF-BECOMING.md, the listing paragraph and §8.2 row name Becoming.ListingRefutations; §9 counts and receipt follow R23. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R23（否证律对任何列出方式成立）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R23 改动之处改动：THE-THEORY-OF-BECOMING.md，列出一次一段与 §8.2 行写入 Becoming.ListingRefutations；§9 计数与回执随 R23。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the paragraph on what a finite stretch refutes cites Refutable.not_not, proved in Horizon from the law for points; §9 counts and receipt follow R26. The claim is unchanged.",
+      "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，有限片段所否证者一段改引 Refutable.not_not（Horizon 由点的律证明）；§9 计数与回执随 R26。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R27 (the stepwise classes and loss): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, §6.8 gains the bullet on the stepwise classes and loss; §9 counts and receipt follow R27. The claim is unchanged.",
+      "zh": "2026年10月20日，R27（逐步类别与失去）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，§6.8 新增逐步类别与失去一条；§9 计数与回执随 R27。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (SharedCodes.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Commuting.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Mechanism.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged; SharedCodes.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（SharedCodes.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Commuting.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Mechanism.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变；SharedCodes.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: Commuting.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：Commuting.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: SharedCodes.Image (now SharedCodes.Relabels); SharedCodes.every_generation_resolves (now SharedCodes.every_cohort_resolves); SharedCodes.generation (now SharedCodes.nextCohort); SharedCodes.generation_merges (now SharedCodes.nextCohort_merges); SharedCodes.generation_of_resolved (now SharedCodes.nextCohort_of_resolved). Proof bindings (SharedCodes.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: passages.json, rebuilt: the declarations and the names in the readings follow the R30 table, each so corrected passage marked; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; SharedCodes.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: CHINESE-SOURCES-AND-BECOMING.md, names follow the R30 rename table; the passage tables are the rebuilt map. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：SharedCodes.Image（现为 SharedCodes.Relabels）；SharedCodes.every_generation_resolves（现为 SharedCodes.every_cohort_resolves）；SharedCodes.generation（现为 SharedCodes.nextCohort）；SharedCodes.generation_merges（现为 SharedCodes.nextCohort_merges）；SharedCodes.generation_of_resolved（现为 SharedCodes.nextCohort_of_resolved）。证明绑定（SharedCodes.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：passages.json，重建：声明与读法中的名称随 R30 改名表，每个如此更正的段落有标注；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；SharedCodes.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：CHINESE-SOURCES-AND-BECOMING.md，名称随 R30 改名表；逐句对应表为重建之图。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Removed, with the statement kept under one name: SharedCodes.Gloss.beq_self (now beq_self); SharedCodes.TwoFormations.not_not (now ListTests.not_not). Proof bindings (SharedCodes.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; CrossSituational.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Mechanism.lean, GoAlike moved to Laws.lean, defined as GoAlikeUnder at equality; SharedCodes.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：删去，陈述以一个名称保留：SharedCodes.Gloss.beq_self（现为 beq_self）；SharedCodes.TwoFormations.not_not（现为 ListTests.not_not）。证明绑定（SharedCodes.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；CrossSituational.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Mechanism.lean，GoAlike 移到 Laws.lean，定义为相等处的 GoAlikeUnder；SharedCodes.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: SharedCodes.impose_reads (now SharedCodes.self_reads_iff); SharedCodes.symmetric_kept (now Law.KeepsRelation.run). Removed, with the statement kept under one name: SharedCodes.TwoFormations.not_moves (now ListTests.not_ne_self); SharedCodes.append_assoc (now ListTests.append_assoc); SharedCodes.append_nil (now ListTests.append_nil). Proof bindings (Prelude.lean, SharedCodes.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; CrossSituational.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; SharedCodes.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：SharedCodes.impose_reads（现为 SharedCodes.self_reads_iff）；SharedCodes.symmetric_kept（现为 Law.KeepsRelation.run）。删去，陈述以一个名称保留：SharedCodes.TwoFormations.not_moves（现为 ListTests.not_ne_self）；SharedCodes.append_assoc（现为 ListTests.append_assoc）；SharedCodes.append_nil（现为 ListTests.append_nil）。证明绑定（Prelude.lean、SharedCodes.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；CrossSituational.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；SharedCodes.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

@@ -275,18 +275,8 @@
       "en": "2026-10-13 P104: adds temporal necessity, with final registration based on actual-step requirements; draft and earlier structural/residual receipts retained."
     },
     {
-      "zh": "2026-10-13 P105：原理论段落逐字保留；更新新增划界讨论后的文档指纹，形式主张、前提与原通过回执不变。",
-      "en": "2026-10-13 P105: prior substantive passages are byte-preserved; refresh document bindings after appended demarcation discussion, with formal claims, premises and passed receipts unchanged."
-    },
-    {
       "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `FallibleInquiry.error_budgets_require_timed_reach` → `FallibleInquiry.error_bounds_require_timed_reach`、`FallibleInquiry.unreached_by_deadline_coverage_eq_errors` → `FallibleInquiry.unreached_in_time_coverage_eq_errors`；陈述、证明与定理数不变；Lean 源：TimedResponse、FallibleInquiry 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）。本记录的主张、前提与状态不变，不记作重新证明。",
       "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `FallibleInquiry.error_budgets_require_timed_reach` → `FallibleInquiry.error_bounds_require_timed_reach`, `FallibleInquiry.unreached_by_deadline_coverage_eq_errors` → `FallibleInquiry.unreached_in_time_coverage_eq_errors`; statements, proofs and theorem counts unchanged; Lean sources: TimedResponse, FallibleInquiry only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope). This record's claim, premises and status are unchanged; no reproof is credited."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in SCIENTIFIC-INQUIRY-CONDITIONS.md, SCIENTIFIC-INQUIRY-EVIDENCE.md, SCIENTIFIC-PHILOSOPHY.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): SCIENTIFIC-PHILOSOPHY.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     },
     {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): SCIENTIFIC-PHILOSOPHY.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
@@ -298,12 +288,8 @@
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean, TimedResponse.lean. Rebound to receipt 20261018T235724.886433Z, 20261019T000109.055377Z after reading the change. The claim is unchanged."
     },
     {
-      "en": "19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): SCIENTIFIC-PHILOSOPHY.md re-pointed after reading the change (SCIENTIFIC-PHILOSOPHY.md: O1 added two sentences on the form of insulation after the demarcation paragraph's sentence on systematic insulation). The claim is unchanged.",
-      "zh": "2026年10月19日，O1 与 O2（有限片段所证实者；方法在极限中所能说出者）：读过改动后，SCIENTIFIC-PHILOSOPHY.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (TimedResponse.lean). The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+      "en": "2026-10-20: 5 bookkeeping notes condensed from 2026-10-13 to 19 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/7bdd251d9f5fc567/timely-response-necessity.json and in git.",
+      "zh": "2026-10-20：5 条记账性说明合并（2026-10-13 至 19 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/7bdd251d9f5fc567/timely-response-necessity.json 和 git 中。"
     }
   ]
 }

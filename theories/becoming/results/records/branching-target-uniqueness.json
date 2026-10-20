@@ -244,65 +244,10 @@
       "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
     },
     {
-      "zh": "2026-10-14，整合 I1：在脊柱上陈述。检验分离一个模型，恰当核心的分支检验分离其框架（separated_iff），所以本引理经 sameBranchingTests_iff_same 即 SameBranchingTests.functional；其相同之下的形式为 Alike.functional。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；脊柱运行 20261014T100026.593496Z 亦将其源码作为继承模块编译并绑定。",
-      "en": "14 October 2026, integration I1: stated on the spine. Tests separate a model exactly where the core's branching tests separate its frame (separated_iff), so this lemma is SameBranchingTests.functional read through sameBranchingTests_iff_same; its form for likeness is Alike.functional. Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the spine run 20261014T100026.593496Z also compiles its source as an inherited module and binds it."
-    },
-    {
-      "en": "14 October 2026, batch 5 of the open-issues plan (landing integration I1): the spine modules Becoming.Likeness, Becoming.Bridge are bound to core receipt 20261014T141427.442103Z, which elaborates the new spine alias.",
-      "zh": "2026年10月14日，开放问题计划第五批（整合 I1 落地）：脊柱模块 Becoming.Likeness、Becoming.Bridge 绑定到核心回执 20261014T141427.442103Z，该回执展开新的脊柱别名。"
-    },
-    {
-      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Bridge.lean（整合 I3a：七个外围族的实例节（RelationalGrounding、ProtectionPriorityRival、ChanceAdequacy、FallibleInspection、BecomingReversibility、DynamicConsequences、DerivedHistoryLaw）；原有陈述不变）。",
-      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Bridge.lean (integration I3a: instance sections for seven periphery families (RelationalGrounding, ProtectionPriorityRival, ChanceAdequacy, FallibleInspection, BecomingReversibility, DynamicConsequences, DerivedHistoryLaw); earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Likeness.lean（P83c：新增以类计的深度（AlikeTo.steady_within_classes、alike_iff_alikeTo_classes、两框架的形式、EndOfPath.classes_exact）；导入 Refinement；原有陈述不变）；Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
-      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Likeness.lean (P83c: the depth by classes added (AlikeTo.steady_within_classes, alike_iff_alikeTo_classes, the across forms, EndOfPath.classes_exact); imports Refinement; earlier statements unchanged); Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Likeness.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
-      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Likeness.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
-    },
-    {
-      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Likeness.lean（P129：新增 LLPO（标准形式）、LLPOForDecided 与 EitherThroughout ⇔ LLPOForDecided；同名异义与弱 König ⇔ LLPO 的说明；已有陈述不变）。",
-      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Likeness.lean (P129: LLPO (standard form), LLPOForDecided and EitherThroughout ⇔ LLPOForDecided added; homonym and weak König ⇔ LLPO notes; existing statements unchanged)."
-    },
-    {
-      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
-    },
-    {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Likeness.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     },
     {
-      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
-      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Likeness; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
-      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（Likeness），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
-    },
-    {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Likeness.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
-    },
-    {
-      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
-      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
-    },
-    {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Likeness.lean). The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Likeness.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Likeness.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Likeness.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Likeness.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变。论断不变。"
     },
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Likeness.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Likeness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
@@ -313,12 +258,8 @@
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Likeness.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Likeness.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Likeness.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Likeness.lean, GoAlikeUnder moved to Laws.lean. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Likeness.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Likeness.lean，GoAlikeUnder 移到 Laws.lean。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Likeness.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Likeness.lean, takes as its final section ListedOutcomeFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
-      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Likeness.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Likeness.lean，以末节收入 ListedOutcomeFrames（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+      "en": "2026-10-20: 16 bookkeeping notes condensed from 14 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/9a06aabe1c113759/branching-target-uniqueness.json and in git.",
+      "zh": "2026-10-20：16 条记账性说明合并（14 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/9a06aabe1c113759/branching-target-uniqueness.json 和 git 中。"
     }
   ]
 }

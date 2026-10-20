@@ -363,42 +363,8 @@
       "en": "2026-10-09: independently reviewed and accepted with corrections (GENERATIVE-DISCRIMINATION-REVIEW). Per the review, every_scalar_comparison_trades and no_scalar_represents_priority are renamed every_nat_score_trades and no_nat_score_represents_priority; g0_leaves_ordering_open (G0 does not constrain ordering) and priority_iff are added, and the reviewer's bounded-score argument becomes the checked ratio_agrees_with_priority and bounded_score_represents_priority. The title and claim change from excluding uniform aggregation to excluding natural-number scores while being representable by a bounded score; the ID stays stable; precedents are cited. The first receipt is preserved in generative-discrimination-checks/20261008T185033.210526Z."
     },
     {
-      "zh": "2026年10月9日：G0-WARRANT 由整合会话改动 §2.3 评价者段（依独立审查收窄）并新增“内容刻画”段、§3 表新增 MetaethicalCore 一行、§4 第 4 项与 §5 措辞；本记录所依的 §2.2、§2.3 保护优先段及本模块的表行未变。读过改动后更新哈希；主张、证明与回执不变。",
-      "en": "9 October 2026: the unification session changed G0-WARRANT's §2.3 evaluator paragraph (narrowed after independent review), added a characterization paragraph, a MetaethicalCore row in §3, and rewording in §4 item 4 and §5; the §2.2 text, the §2.3 protection paragraph and this module's table row that this record relies on are unchanged. Hash updated after reading the change; claim, proof and receipt unchanged."
-    },
-    {
-      "zh": "2026-10-09（P5b）：G0-WARRANT 两处指向 MetaethicalCore.lean 的链接改到包路径 Becoming/Metaethics.lean，§3 表行名随之改为 Becoming.Metaethics；正文与本记录所依的段落不变。读过改动后更新哈希；主张、证明与回执不变。",
-      "en": "2026-10-09 (P5b): two G0-WARRANT links to MetaethicalCore.lean now point to the package path Becoming/Metaethics.lean, and the §3 row label reads Becoming.Metaethics; the text and the paragraphs this record relies on are unchanged. Hash updated after reading the change; claim, proof and receipt unchanged."
-    },
-    {
       "zh": "2026-10-14 M4，按计划中为脊柱记录用短标题的建议（Ren 认可：“go with your recommendations”）：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示”",
       "en": "2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score”"
-    },
-    {
-      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心一般定律的实例。核心无前提地证明：严格序满足 C 的自然数评分沿无尽扩展链每一环至少升一（Comparison.climbs），所以对任一配置，链上某一环的评分高于它（Comparison.outgrows）；有界评分不受此约束。此情境中有增益的选项构成无尽扩展链（protection_successor_extension），所以 every_nat_score_trades 即该定律的实例（every_nat_score_trades_by_core），公理报告为空（草稿构建；回执随落地）。力量来自自然数的单位步长，与限制所述一致。外围证明及其回执保持原范围；桥接自此导入 ProtectionPriorityRival，脊柱运行将其作为继承模块编译。",
-      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core proves that a natural-number score whose strict order satisfies C rises by at least one at every link of an endless chain of extensions (Comparison.climbs), so it ranks some link above any configuration whatever (Comparison.outgrows); a bounded score is not constrained so. In this situation the options with gains form such a chain (protection_successor_extension), so every_nat_score_trades is the law's instance (every_nat_score_trades_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The force is the unit step of the natural numbers, as the limitations say. The periphery proof and its receipt keep their scope; the bridge now imports ProtectionPriorityRival, which the spine run compiles as an inherited module."
-    },
-    {
-      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
-      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Metaethics.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
-      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in G0-WARRANT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): G0-WARRANT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     },
     {
       "en": "17 October 2026, wording: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
@@ -407,47 +373,16 @@
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): G0-WARRANT.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     },
     {
-      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean, Metaethics.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
-      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Metaethics.lean). The claim is unchanged.",
-      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
       "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (4 in Becoming.Lexical; 3 in Becoming.Metaethics; 11 in Becoming.ScoreRepresentation), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from ProtectionPriorityRival.lean to ScoreRepresentation.lean. A port restates; the claim is unchanged.",
       "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明，规范来源随之移动。移植只是重述，论断不变。"
-    },
-    {
-      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
-      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
-    },
-    {
-      "en": "19 October 2026, R19 (the review of 19 October, fixed): G0-WARRANT.md re-pointed after reading the change. R19 changed wording only: living significance is stated as the Lean shows (significance from every standpoint, no valence; the `living` readings do not include further generation); reasons replace Ren's past words where they served as warrant or standing; review bookkeeping was dropped; a link follows a chapter moved to history. No line this record relies on changed its content. The claim is unchanged.",
-      "zh": "2026年10月19日，R19（10月19日审查的修正）：G0-WARRANT.md 读过改动后重新指向。R19 只改措辞：生命意义按 Lean 所证陈述（从每个立足点都有意义，不带正负；`living` 的读法不含继续生成）；以理由取代把 Ren 过去的话当作依据或地位之处；删去审查记账；一处链接随移入历史的章节更新。本记录所依的文字内容未变。论断不变。"
-    },
-    {
-      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Metaethics.lean, ScoreRepresentation.lean re-pointed after reading the change (Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; ScoreRepresentation.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
-      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Metaethics.lean、ScoreRepresentation.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
-    },
-    {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: climbs, outgrows, G0, Comparison, Extension from Metaethics.lean to ValuationFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Lexical.lean, ScoreRepresentation.lean). The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
     },
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: G0 (now LivingSignificance); ScoreRepresentation.g0_leaves_ordering_open (now ScoreRepresentation.livingSignificance_leaves_ordering_open); ScoreRepresentation.g0_recognizes_gains (now ScoreRepresentation.livingSignificance_recognizes_gains); g0_leaves_ordering_open (now livingSignificance_leaves_ordering_open). Proof bindings (ScoreRepresentation.lean, ValuationFrames.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: ScoreRepresentation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; ValuationFrames.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; G0-WARRANT.md, names follow the R30 rename table. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：G0（现为 LivingSignificance）；ScoreRepresentation.g0_leaves_ordering_open（现为 ScoreRepresentation.livingSignificance_leaves_ordering_open）；ScoreRepresentation.g0_recognizes_gains（现为 ScoreRepresentation.livingSignificance_recognizes_gains）；g0_leaves_ordering_open（现为 livingSignificance_leaves_ordering_open）。证明绑定（ScoreRepresentation.lean、ValuationFrames.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：ScoreRepresentation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；ValuationFrames.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；G0-WARRANT.md，名称随 R30 改名表。论断不变。"
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from ValuationFrames.lean to Extension.lean, Comparison, Comparison.climbs, Comparison.outgrows, Extension. Proof bindings (Lexical.lean, ScoreRepresentation.lean, ValuationFrames.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Lexical.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; ScoreRepresentation.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; ValuationFrames.lean, C on frames moved to Extension.lean. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 ValuationFrames.lean 到 Extension.lean：Comparison、Comparison.climbs、Comparison.outgrows、Extension。证明绑定（Lexical.lean、ScoreRepresentation.lean、ValuationFrames.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Lexical.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；ScoreRepresentation.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；ValuationFrames.lean，框架上的 C 移到 Extension.lean。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Moved with their full names: from ValuationFrames.lean to Extension.lean, LivingSignificance. Proof bindings (Extension.lean, ScoreRepresentation.lean, ValuationFrames.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: Extension.lean, LivingSignificance stated here, moved unchanged from ValuationFrames; ScoreRepresentation.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged; ValuationFrames.lean, LivingSignificance moved to Extension, unchanged; kept statements unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：连同完整名称移动：从 ValuationFrames.lean 到 Extension.lean：LivingSignificance。证明绑定（Extension.lean、ScoreRepresentation.lean、ValuationFrames.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：Extension.lean，LivingSignificance 在此陈述，自 ValuationFrames 原样移入；ScoreRepresentation.lean，只改说明（任何类型的立场、obs 是第二个给出的关系、固定类型的界、整段的类）或导入；保留的陈述不变；ValuationFrames.lean，LivingSignificance 原样移到 Extension；保留的陈述不变。论断不变。"
+      "en": "2026-10-20: 18 bookkeeping notes condensed from 9 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/f12c8fe25390d9b1/protection-priority-excludes-uniform-aggregation.json and in git.",
+      "zh": "2026-10-20：18 条记账性说明合并（9 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/f12c8fe25390d9b1/protection-priority-excludes-uniform-aggregation.json 和 git 中。"
     }
   ]
 }

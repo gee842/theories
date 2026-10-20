@@ -1,0 +1,453 @@
+{
+  "schema_version": 2,
+  "id": "organizational-formation-from-generative-comparison",
+  "title": {
+    "zh": "完整生成比较下的组织形成要求",
+    "en": "Required organization under whole generative comparison"
+  },
+  "kind": "argument",
+  "status": "reviewed-scoped",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-13T22:45:00+00:00",
+  "statement": {
+    "zh": "在有限非空的合格接续中，若每种缺少某项组织关系的接续都有充分更好的合格构造，则所有未被击败的选择都包含该关系；这可支持建设或增强共同能力而不预定唯一承载。",
+    "en": "In a finite nonempty eligible range, if every continuation lacking an organizational relation has a strictly better eligible construction, every undefeated choice includes that relation. This can warrant building or strengthening shared capacity without fixing one carrier."
+  },
+  "hypotheses": [
+    {
+      "zh": "G0、明确 J1–J4 与完整关系对应；不是从一元本体单独推出伦理。",
+      "en": "G0, explicit J1–J4 and complete relational correspondence; ethics is not deduced from monism alone."
+    },
+    {
+      "zh": "有限非空的合格范围、严格传递比较、每个缺失情形的实际改善见证；规范资格与基本分类仍须辩护。",
+      "en": "A finite nonempty eligible range, irreflexive transitive comparison and actual improvement witnesses for every deficient case; normative eligibility and basic classifications require substantive warrant."
+    }
+  ],
+  "correspondence": {
+    "zh": "同一支持历史形成连接、保留基础并承担休闲损失；甲乙是作用路径。具体模型的合格谓词只表示物理可行，不能独自认证现实权限。",
+    "en": "One support history forms links, retains a basis and bears an opportunity loss; the two carriers are routes. Concrete eligibility means physical feasibility only and does not certify real authority."
+  },
+  "canonical_source": "theories/becoming/chapters/ETHICAL-LEARNING.md",
+  "aliases": [
+    "Becoming.undominated_has_iff",
+    "Becoming.Judgment.required_of_bettered",
+    "Becoming.Courses.extension_frontier_exists"
+  ],
+  "dependencies": [
+    {
+      "id": "practical-judgment-g0-j",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "PracticalJudgment.finite_frontier 与 dominated_excluded 的输出经 formation_required_of_improvable_absence 接成 Required；规范解释继承公开 J 承诺。",
+        "en": "PracticalJudgment.finite_frontier and dominated_excluded feed formation_required_of_improvable_absence to produce Required; normative interpretation inherits the explicit J commitments."
+      }
+    },
+    {
+      "id": "alignment-direction-g0-j",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用已完成的跨智能方向，推进组织形成的具体条件。",
+        "en": "Reuses the completed cross-intelligence direction to advance the conditions of organizational formation."
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "classification-robust-generative-comparison",
+      "detail": {
+        "zh": "后续分类稳健命题补足一类未定分类下的改善输入；不替换原组织结果。",
+        "en": "The later robust-classification result supplies improvement inputs in unsettled cases without replacing the original organizational result."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean",
+      "detail": {
+        "zh": "过度建设实际耗尽生活基础；相同的建设报告不能判定基础。增加真实余量可修复本例的观察遗漏。",
+        "en": "Overbuilding actually depletes the living basis; identical construction reports fail to classify it. Faithful retained-amount information repairs this local omission."
+      }
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "一般生成结构未充分推出陌生新生活的基本内容。",
+      "en": "General generative structure does not supply full basic-content correspondence for unfamiliar new living.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "规范要求不推出必然服从。",
+      "en": "The requirement does not establish inevitable compliance.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "无完整机构权限推导。",
+      "en": "It does not derive complete institutional authority.",
+      "kind": "scope"
+    }
+  ],
+  "standard_boundaries": [
+    "zero-axiom-target-open"
+  ],
+  "progress": [
+    {
+      "zh": "一元重构：组织评价从同一生成历史出发；生生之意义给出正面意义，比较与基本保护优先的承诺给出有范围的比较力度，有限范围给出非空的未被击败选择。",
+      "en": "Monist reconstruction: organizational appraisal starts from one generative history; living significance supplies positive significance, the commitments of comparison and basic-condition priority scoped comparative force, and finite scope a nonempty undefeated range.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#74-the-affirmative-philosophical-proof-and-its-exact-normative-strength"
+    },
+    {
+      "zh": "已检查的组合：实践判断的未被击败范围与支配排除接成组织形成要求；具体历史要求一项协调功能，两种承载均可。",
+      "en": "Checked composition: practical judgment's undefeated range and dominance exclusion yield the formation requirement; a worked history requires a coordinating function that either of two carriers can bear.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#75-mathematical-correspondence-inheritance-and-actual-checks"
+    },
+    {
+      "zh": "检验的界限：过度建设的历史保留，建设报告的观察遗漏已修复；组织必要性、更多结构或当前认识都未提供陌生新生活的基本内容。",
+      "en": "Tested limit: the overbuilding history is kept and the construction-report omission repaired; organizational necessity, more structure or present recognition do not supply the basic content of unfamiliar new living.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#78-the-tested-limit-and-current-status"
+    },
+    {
+      "zh": "分类稳健比较：一类基本地位未定的情形中也得出形成要求（classification-robust-generative-comparison）。",
+      "en": "Robust classification: formation requirements also follow in a class of unsettled-basic-status cases (classification-robust-generative-comparison).",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#79-updated-repository-continuation-identity-and-exact-delta"
+    }
+  ],
+  "validation_scope": {
+    "zh": "13项新 Lean 定理声明／29项声明审计；另重编30项继承定理／46项审计。含应用及定义对应，不是13个规范公理证明。作者反审；无独立 agent 验收。无经验验证。",
+    "en": "13 new Lean theorem declarations/29 declaration audits, with 30 inherited theorems/46 audits separately rebuilt. Includes applications and a definitional identity, not 13 normative-axiom proofs. Author counterreview; no independent-agent acceptance. No empirical validation."
+  },
+  "references": [
+    {
+      "path": "theories/becoming/chapters/ETHICAL-LEARNING.md",
+      "role": "statement",
+      "sha256": "0d0d16fd052ed760abe2b461357b6b517405d7e06e8649097b7f0ca7dba2a8cb",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "role": "review",
+      "sha256": "7d101ae98c63306d3bf5715144acc474e58bde6346f50c0b70be0706dd617c1e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean",
+      "role": "proof",
+      "sha256": "613cf786d49800159d28adda6f56cded41db542bd54c24f9732f5324ead47c05",
+      "declarations": [
+        "RelationalOrganization.formation_required_of_improvable_absence",
+        "RelationalOrganization.coordination_is_required",
+        "RelationalOrganization.neither_named_route_is_required",
+        "RelationalOrganization.no_construction_report_only_basis_judge"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json",
+      "role": "receipt",
+      "sha256": "404cd5af36e8e726fe3596ea69965b7ee56f33d7640ec3f69464c8593d8551f1",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "role": "provenance",
+      "sha256": "e4971470ddececbd5e6d7800a4fb7ae1f3708e680ab6cef8485820bdf31c61da",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "role": "proof",
+      "sha256": "e7c3fd01f372115c0b598aad9aafc697c1974efc81aaef7000a588804ed232a7",
+      "declarations": [
+        "Becoming.WeaklyDecided",
+        "Becoming.Decided.weakly",
+        "Becoming.Undominated",
+        "Becoming.exists_undominated",
+        "Becoming.Undominated.not_not_has",
+        "Becoming.undominated_has",
+        "Becoming.bettered_of_undominated_has",
+        "Becoming.undominated_has_iff",
+        "Becoming.exists_undominated_iff_weakly",
+        "Becoming.undominated_has_iff_em"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
+      "declarations": [
+        "Becoming.Judgment.frontier_iff_undominated",
+        "Becoming.Judgment.frontier_exists",
+        "Becoming.Judgment.required_of_bettered"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "role": "receipt",
+      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean",
+      "role": "proof",
+      "sha256": "ae4e273947ed19b773c148bb2b44cfaa80c1890f9f77a7c04c118a9a6336838a",
+      "declarations": [
+        "Becoming.OrganizationCorrespondence.frontier_iff_undominated",
+        "Becoming.OrganizationCorrespondence.formation_required_by_core",
+        "Becoming.OrganizationCorrespondence.coordination_is_required_by_core"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/organization-correspondence-checks/20261015T163336.437151Z/verification.json",
+      "role": "receipt",
+      "sha256": "a96823f08f28b03ac360192a437d46135eb73d97b77174638eb2ee68642dc73c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_organization_correspondence.py",
+      "role": "provenance",
+      "sha256": "33ab5ef6ae1318c66f4e8047b9869c54f2bbfd6fb849141a9c9b8553023cdb02",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "role": "proof",
+      "sha256": "58a4c83e59a96cc6157d98d3a176c2b1e0d5d49673a0c94fea01d3b4f03e2adf",
+      "declarations": [
+        "Becoming.Courses.extension_frontier_exists"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "role": "receipt",
+      "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+      "role": "proof",
+      "sha256": "bf3ecf28d3d7dd5b196ff64a69e1a8cfc7fcd329c7c35732aa77f650c6648525",
+      "declarations": [
+        "Becoming.Requirement.required_of_bettered",
+        "Becoming.Requirement.Formation.required",
+        "Becoming.Requirement.Formation.no_route_required",
+        "Becoming.Requirement.Formation.no_report_judge",
+        "Becoming.Requirement.frontier_iff_undominated",
+        "Becoming.Requirement.frontier_exists"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json",
+      "sha256_pointer": "/source_sha256/RelationalOrganization",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Decidedness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/organization-correspondence-checks/20261015T163336.437151Z/verification.json",
+      "sha256_pointer": "/source_sha256/OrganizationCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Courses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frontier",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "复用分类稳健比较。具体方案因真实生活作用分类而改变时，落实会改变决定的实质对应；不把全部陌生生活分类设为建设前提。",
+    "en": "Reuse robust classification. Where living-role classification changes implementation, establish decision-relevant substantive correspondence without requiring classification of all unfamiliar living before construction."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：接续生成优先纠正，形成有范围的规范推论及新 Lean 组合；迁移该主张为唯一成果身份，历史来源与反例保留。",
+      "en": "2026-10-08: extends the generative-first correction with a scoped normative argument and new Lean composition; migrates this claim to one result identity while retaining historical sources and countercases."
+    },
+    {
+      "zh": "2026-10-08：核对原理论与研究为保留前缀、共享指示的逆向保留及市场会话新增范围后，接入分类稳健后续并缩小 next_delta；原定理及历史回执不改写。",
+      "en": "2026-10-08: verified original theory/study prefixes, inverse preservation of the shared directive and the concurrent market-session scope; connected robust classification and narrowed next_delta. Original theorems and receipts are unchanged."
+    },
+    {
+      "zh": "2026-10-09：逐项核读共享指示中新增的“接续部分纠正与临界反馈”，并验证此前已审字节完整保留为前缀。新增指示属于市场／元吸引子会话，不改变本成果的 G0/J、分类或组织形成范围。更新该来源的审阅指纹；主张、前提、证明绑定、反例与验证状态保持不变，无新定理或重新验收。",
+      "en": "2026-10-09: reviewed the appended partial-correction and critical-feedback directive and verified that all previously reviewed bytes remain an unchanged prefix. The addition belongs to the market/meta-attractor session and does not change this result’s G0/J, classification or organizational-formation scope. Updated this source-review fingerprint; claims, hypotheses, proof bindings, counterexamples and validation status are unchanged, with no new theorem or renewed scientific acceptance."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13：核读共享研究新增 P95 §85 的及时接续应用；此前全部段落原样保留，本成果主张与冻结证明范围不变。仅更新所读共享来源版本。",
+      "en": "2026-10-13: reviewed appended P95 §85 on timely-continuation application; all earlier sections remain byte-for-byte, and this result’s claim and frozen proof scope are unchanged. Updates only the reviewed shared-source version."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句拆为 3 项分类“未表明”，“无经验验证”移入证据，“已有公理与条件成果保持有效范围”由通用边界 zero-axiom-target-open 承担；4 行“已接通”链接研究第74、75、78、79节；下一步第一句（分类稳健比较已接通）移入第四行“已接通”。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/organizational-formation-from-generative-comparison.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations became 3 typed does-not-show items, “no empirical validation” moved to the evidence, and “existing axioms and conditional results retain their scope” is carried by the standard boundary zero-axiom-target-open; 4 progress lines link study sections 74, 75, 78 and 79; the next step's first sentence (robust classification connected) became the fourth progress line. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/organizational-formation-from-generative-comparison.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "zh": "2026-10-15，整合 I3e（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Decidedness 的列出之选项中不被胜过者，新增，不加前提；桥接 Judgment.required_of_bettered）。一个列出的非空选项表上，比较非自反、传递且在表上弱判定（¬p ∨ ¬¬p，WeaklyDecided；判定者都弱判定，Decided.weakly）时，有不被胜过的选项（exists_undominated）；不被胜过者不能缺少每个缺之者都被胜过的性质（Undominated.not_not_has），该性质判定时不被胜过者都有它（undominated_has）；比较与性质都判定时，不被胜过者都有它，恰当缺之的每个选项都被表上某选项胜过（undominated_has_iff）。在全部关系上，存在之律所需恰是弱排中律（exists_undominated_iff_weakly），去掉性质的判定恰是排中律（undominated_has_iff_em）。桥接：在确切列出的选项表上，PracticalJudgment 的前沿即不被胜过者（Judgment.frontier_iff_undominated），故比较弱判定、任务判定时，前沿非空且每个成员都完成任务（Judgment.required_of_bettered），即 formation_required_of_improvable_absence，不用经典推理。外围实例 OrganizationCorrespondence：以 Lean 的经典判定供给核心所要求者，formation_required_of_improvable_absence 由 exists_undominated 与 undominated_has 给出（formation_required_by_core），所构造的协调情形亦然（coordination_is_required_by_core）。比较、合格性与所构造的历史保持原范围；规范解释继承公开的 J 承诺。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T163336.437151Z），只用标准公理：frontier_iff_undominated 的公理报告为空，formation_required_by_core 与 coordination_is_required_by_core 以 Lean 的经典判定供给核心所要求者、并用外围的 simp 引理（propext、Classical.choice、Quot.sound）；所实例化的核心律与桥接定理由核心运行审计（回执 20261015T163210.426211Z，公理报告为空）。",
+      "en": "15 October 2026, integration I3e (Ren: “a lot proofs are probably not integrated”): stated on the spine (the new laws of Becoming.Decidedness for undominated members of a listed menu, no premise; the bridge’s Judgment.required_of_bettered). On a nonempty listed menu where the comparison is irreflexive, transitive and weakly decided (¬p ∨ ¬¬p, WeaklyDecided; whatever is decided is weakly decided, Decided.weakly), some member is undominated (exists_undominated); an undominated member cannot lack a property every member lacking it is bettered in (Undominated.not_not_has), and has it where the property is decided (undominated_has); where comparison and property are both decided, every undominated member has the property exactly where every member lacking it is bettered by some member (undominated_has_iff). Over all relations, the existence law needs exactly weak excluded middle (exists_undominated_iff_weakly), and dropping the decidedness of the property is exactly excluded middle (undominated_has_iff_em). Bridge: on an exact listed menu the frontier of PracticalJudgment is the undominated members (Judgment.frontier_iff_undominated), so where the comparison is weakly decided and the task decided, the frontier is not empty and every member of it performs the task (Judgment.required_of_bettered): formation_required_of_improvable_absence with no classical reasoning. Periphery instance OrganizationCorrespondence: with Lean’s classical decidedness supplying what the core asks, formation_required_of_improvable_absence follows from exists_undominated and undominated_has (formation_required_by_core), and so does the constructed coordination case (coordination_is_required_by_core). The comparison, eligibility and the constructed history keep their scope; the normative interpretation inherits the explicit J commitments. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T163336.437151Z), standard axioms only: frontier_iff_undominated has an empty report, and formation_required_by_core and coordination_is_required_by_core supply what the core asks by Lean’s classical decidedness and use the periphery’s simp lemmas (propext, Classical.choice, Quot.sound); the core laws and bridge theorems it instantiates are audited by the core run (receipt 20261015T163210.426211Z, empty axiom reports)."
+    },
+    {
+      "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：在框架构型的非空列出选项表上，生成扩展弱判定时，某个构型不被任何成员扩展（extension_frontier_exists）；扩展与任务都判定时，没有成员扩展的每个构型都完成任务，恰当每个缺任务的成员都被某个成员扩展（extension_frontier_has_iff）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
+      "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: on a nonempty listed menu of a frame's configurations where generative extension is weakly decided, some configuration is extended by no member (extension_frontier_exists); with extension and the task decided, every configuration no member extends performs the task exactly when every member lacking it is extended by some member (extension_frontier_has_iff). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Decidedness.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Decidedness.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ETHICAL-LEARNING-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): ETHICAL-LEARNING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): ETHICAL-LEARNING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Courses.lean, six theorems now cite their general forms (Lasting.fixed_avoids, Countdown.Advances.completes, Copying.scan_le, CrossSituational.narrows, CrossSituational.reads_every_iff, Readout.no_judge_of_merged), and inspection_trace_scan is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (6 in Becoming.Frontier), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Courses.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Courses.lean, Decidedness.lean, Frontier.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Courses.lean, Decidedness.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Courses.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Decidedness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Courses.lean、Decidedness.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Courses.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Decidedness.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Courses.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Courses.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Courses.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Courses.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Courses.lean, Decidedness.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Courses.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Decidedness.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Courses.lean、Decidedness.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Courses.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Decidedness.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Courses.extension_frontier_has_iff (now undominated_has_iff). Proof bindings (Courses.lean, Decidedness.lean, Frontier.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Courses.lean, takes as its final sections RetrodictionRuns, CandidateRuns, ReducedRuns, the modules reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Decidedness.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Frontier.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Courses.extension_frontier_has_iff（现为 undominated_has_iff）。证明绑定（Courses.lean、Decidedness.lean、Frontier.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Courses.lean，以末节收入 RetrodictionRuns、CandidateRuns、ReducedRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Decidedness.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Frontier.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/845ff3b58917e254/organizational-formation-from-generative-comparison.json",
+      "sha256": "845ff3b58917e2542307cfd30d9e64fdacae234a3c43eae3518b189925c86580",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
+    }
+  ]
+}

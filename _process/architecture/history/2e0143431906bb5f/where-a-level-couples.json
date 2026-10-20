@@ -1,0 +1,704 @@
+{
+  "schema_version": 2,
+  "id": "where-a-level-couples",
+  "title": {
+    "zh": "水平在何处耦合入形成",
+    "en": "Where a level couples into a formation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-18T09:00:00+00:00",
+  "statement": {
+    "en": "An exchange's response to one level is a coupling of every strength array of the law. For a law reading through the couplings only levels coupled in respond; by threshold only a crossing passes, through the needs' conjunction, and coupling by level is exactly where a level couples within its need.",
+    "zh": "交换对一个水平的回应是律的每个强度阵列的耦合。对经耦合而读的律，只有耦合入的水平被回应；经阈只有跨越得过，且经所需之合取，经水平耦合恰是水平能在所需之内耦合之处。"
+  },
+  "laws": [
+    {
+      "en": "Strength zero is exactly no response: across the step from t, h's exchange with c is coupled to the level of d at s with strength zero exactly where no two histories differing at most in that level give a positive exchange gap. A response forces every strength of the law for that level to be positive, so it is a coupling of every strength array of the law in the sense of Becoming.Loops and a route of length one.",
+      "zh": "强度为零恰是不回应：跨过从 t 起的一步，h 与 c 的交换对 d 在 s 的水平的耦合强度为零，恰当至多在该水平上不同的两段历史不给出正的交换之差。回应使律对该水平的每个强度都为正，所以它是律的每个强度阵列在 Becoming.Loops 意义上的耦合，也是长度为一的路线。",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsTo",
+        "Becoming.ExchangeLaw.respondsWithin_zero_iff",
+        "Becoming.ExchangeLaw.RespondsTo.strength_pos",
+        "Becoming.ExchangeLaw.RespondsTo.couples",
+        "Becoming.ExchangeLaw.RespondsTo.upstream"
+      ]
+    },
+    {
+      "en": "Only what couples into a formation responds: for a law reading through the couplings, a level that couples into a formation outside the part neither by threshold nor by level is coupled into its exchanges with strength zero. A response thus comes from a condition that couples in (as a double negation), is read in every schedule covering what couples in, and is a route of reading and of the law's strengths restricted to that schedule.",
+      "zh": "只有耦合入形成者才被回应：对一个律，若它对部分之外的每个形成只读耦合入该形成者，则既不经阈也不经水平耦合入形成的水平，在每一步以强度零耦合入它与每个条件的交换；所以回应来自耦合入的条件（以双重否定），并在覆盖耦合入者的每个时程中被读，是 Becoming.Observation 的所读路线的耦合，也是律的强度限于该时程后的路线。",
+      "declarations": [
+        "Becoming.ExchangeLaw.Through.respondsWithin_uncoupled",
+        "Becoming.ExchangeLaw.Through.couples_of_respondsTo",
+        "Becoming.ExchangeLaw.Through.reads_of_respondsTo",
+        "Becoming.ExchangeLaw.Through.couples_readCouplings",
+        "Becoming.ExchangeLaw.Through.upstream_restrictInto",
+        "Becoming.Web.alikeThrough_of_levels"
+      ]
+    },
+    {
+      "en": "By threshold, only a crossing passes: for a law reading through the couplings, where a condition couples into a formation outside the part by threshold only, a change of that condition's level at one step that leaves the formation's need for it met alike changes nothing the formation exchanges.",
+      "zh": "经阈只过跨越：对经耦合而读的律，一个条件只经阈耦合入部分之外的形成时，该条件在一步的水平的改变若使形成对它的所需同样得足，则不改变形成所交换的任何东西。",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsByLevel",
+        "Becoming.ExchangeLaw.RespondsByLevel.respondsTo",
+        "Becoming.ExchangeLaw.Through.not_respondsByLevel"
+      ]
+    },
+    {
+      "en": "By threshold, a crossing passes: for a law reading through the couplings, a response to a condition not coupled in by level is a crossing of its need (the requirement not refuted, the two levels not meeting it alike); where the formation requires at a step exactly that condition, with a positive need, a law reading through the couplings responds to a crossing there, at every condition.",
+      "zh": "经阈则跨越得过：对经耦合而读的律，对不经水平耦合入之条件的回应是其所需的跨越（所需不被否定，两个水平不同样满足它）；形成在一步恰只需要该条件且所需为正时，有经耦合而读的律在那里对跨越回应，于每个条件。",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsByCrossing",
+        "Becoming.ExchangeLaw.RespondsByCrossing.respondsTo",
+        "Becoming.ExchangeLaw.Through.crosses_of_unobserved",
+        "Becoming.ble_eq_of_iff",
+        "Becoming.Web.admits_iff_of_sole",
+        "Becoming.thresholdLaw",
+        "Becoming.thresholdLaw_through",
+        "Becoming.loweredAt",
+        "Becoming.thresholdLaw_respondsByCrossing",
+        "Becoming.crossing_passes"
+      ]
+    },
+    {
+      "en": "Among several conditions, a crossing passes through the conjunction: a response of a law reading through the couplings to a condition not coupled in by level changes the formation's admission at that step, only where its other requirements there are met; where admission there is decided, some such law responds to a crossing into every later exchange exactly where the condition is required with a positive need.",
+      "zh": "多个条件之间，跨越经合取而过：经耦合而读的律对不经水平耦合入之条件的回应改变形成在该步的容许，且只在它那一步的其他所需已满足之处；该步容许可判定时，恰在该条件被需要且所需为正之处，有这样的律对跨越回应，及于之后每一步的交换。",
+      "declarations": [
+        "Becoming.ExchangeLaw.Through.admission_changes_of_unobserved",
+        "Becoming.ExchangeLaw.Through.others_met_of_unobserved",
+        "Becoming.ExchangeLaw.RespondsByCrossing.requires_pos",
+        "Becoming.decide_eq_of_iff",
+        "Becoming.admissionLaw",
+        "Becoming.admissionLaw_through",
+        "Becoming.needLoweredAt",
+        "Becoming.admissionLaw_respondsByCrossing",
+        "Becoming.crossing_passes_iff",
+        "Becoming.metAllDec",
+        "Becoming.admitsDecidableOfSupport",
+        "Becoming.crossing_passes_of_support"
+      ]
+    },
+    {
+      "en": "By level, the level passes: where a condition couples into marked formations by level, the law taking its level reads through the couplings and responds to it within the need at every step. So, for a formation outside the part, it is not refuted that the condition couples into it by level exactly where it is not refuted that some law reading through its couplings responds to it by level.",
+      "zh": "经水平则水平得过，经水平耦合恰是它能过之处：一个条件经水平耦合入被标记的形成时，取该条件水平的律经耦合而读，并在每一步、每个条件在所需之内回应该水平；所以对部分之外的形成，该条件经水平耦合入它不被否定，恰当某个经其耦合而读的律经水平回应该条件不被否定。",
+      "declarations": [
+        "Becoming.levelLaw",
+        "Becoming.levelLaw_through",
+        "Becoming.raisedAt",
+        "Becoming.levelLaw_respondsByLevel",
+        "Becoming.not_not_obs_iff_respondsByLevel"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Each theorem states what it needs: a law of exchange; for strengths, strengths of the law and a formation present outside the part, the level listed and no later than the step; for laws through the couplings, the law reading through them and the formation outside the part; a schedule covering what couples in, for reading; decided equality of conditions for the threshold law and the witness, and of formations for the equivalence.",
+      "zh": "不加公理。各定理所需写在定理中：一个交换律；对强度之律，律的强度、部分之外在场的形成，所涉水平列出且不晚于该步；对经耦合之律，律经耦合而读（ExchangeLaw.Through），形成在部分之外；对读，覆盖耦合入者的时程；对阈之律与见证，条件的相等可判定；对等价，形成的相等亦可判定。不需条件有限。"
+    },
+    {
+      "en": "For a crossing among several conditions: the formation's admission at the step decided (a listed support decides it), and equality of conditions and of formations decided, for the witness.",
+      "zh": "对多个条件之间的跨越：形成在该步的容许可判定（列出的支撑即可判定），且条件与形成的相等可判定，用于见证。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "A crossing passing where the formation's admission at the step is not decided: a law responding to it tells the two histories apart, which is not shown to decide admission.",
+      "zh": "形成在该步的容许不可判定时跨越得过：回应它的律分开两段历史，但未表明这判定了容许。",
+      "kind": "scope"
+    },
+    {
+      "en": "That a given law responds to what it may read: a law reading through the couplings may ignore a level that couples in.",
+      "zh": "一个给定的律回应它可读者：经耦合而读的律可以不理会耦合入的水平。",
+      "kind": "scope"
+    },
+    {
+      "en": "The converse without double negation: that a condition couples into a formation by level is recovered from a response by level only as not refuted.",
+      "zh": "去掉双重否定的反方向：由经水平的回应只得出观察不被否定。",
+      "kind": "scope"
+    },
+    {
+      "en": "A strength's size beyond being positive.",
+      "zh": "强度除为正以外的大小。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261018T011212.424412Z): the 41 declarations of Becoming.LevelCoupling, 30 of them theorems, have empty axiom reports; the checker verifies core purity, and THEOREM-CONNECTIVITY.py --check finds none of them apart from the base. Author self-review in study section 168; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T011212.424412Z）：Becoming.LevelCoupling 的 41 项声明（30 项定理）公理报告为空；检查器并核对核心纯净，THEOREM-CONNECTIVITY.py --check 未见其中任何一项离开基底。作者自审见研究 §168；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "The renames adopted in the naming study (N1), prepared as a dry run and awaiting Ren; a crossing where admission is not decided; an independent review.",
+    "zh": "命名研究（N1）采纳的改名，已作试运行，待 Ren；容许不可判定时的跨越；独立审查。"
+  },
+  "correspondence": {
+    "en": "The naming study of 17-18 October (N1, study section 6.2) adopted \"couples into\" for what Web.CoupledInto names, in two grains, and held the level grain back until the supplied relation obs was shown to be a coupling in the sense of Becoming.Loops and Becoming.Observation. Ren: \"Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames.\" This result does that. It also answers, for the level branch, the question observation-is-a-route leaves open, whether observation is a second kind of relation beside dependence, in the sense that both are coupling: obs marks where a level can couple into a formation by level, as dependence marks where it couples by threshold; whether obs could be derived from dependence stays a conjecture there. Reading (the AI's, adopted on 19 October 2026 by its place in one account, DELEGATED-CHOICES D45): obs and dependence are both coupling, by level and by threshold; what couples in bounds what a law can respond to without fixing it (ExchangeLaw.response_not_fixed_by_coupling), and a law's responses are its couplings.",
+    "zh": "10月17–18日的命名研究（N1，研究第 6.2 节）以“耦合入”称 Web.CoupledInto 所名者，分两种粒度，并在给出的关系 obs 被证明为 Becoming.Loops 与 Becoming.Observation 意义上的耦合之前，暂缓经水平一支。Ren：“Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames.” 本结果完成此事。它也就水平一支、在两者都是耦合的意义上，回答 observation-is-a-route 留下的问题，即观察是否为依赖之外的第二种关系：obs 标出水平能经水平耦合入形成之处，如依赖标出经阈耦合之处；obs 能否由依赖推出，在那里仍是猜想。读法（AI 的，2026年10月19日以其在一个说明中的位置采用，DELEGATED-CHOICES D45）：obs 与依赖都是耦合，经水平与经阈；耦合入者界定律能回应者而不确定它（ExchangeLaw.response_not_fixed_by_coupling），律的回应即其耦合。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
+  "aliases": [
+    "where a level couples",
+    "水平在何处耦合",
+    "coupling by level",
+    "经水平耦合",
+    "coupled by threshold",
+    "经阈耦合",
+    "response is a coupling",
+    "回应即耦合",
+    "strength zero is no response",
+    "强度为零即不回应",
+    "only a crossing passes",
+    "只过跨越",
+    "observing is where a level couples",
+    "观察即水平耦合之处",
+    "a crossing passes",
+    "跨越得过",
+    "crossing passes",
+    "threshold law",
+    "阈之律",
+    "crossing through the conjunction",
+    "经合取而过",
+    "admission law",
+    "容许之律",
+    "decided admission"
+  ],
+  "dependencies": [
+    {
+      "id": "how-much-difference-arrives",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses RespondsWithin and exchangeGap: coupling strength.",
+        "zh": "复用 RespondsWithin 与 exchangeGap：耦合强度。"
+      },
+      "interface": {
+        "output": {
+          "en": "Coupling strength of a law for one level.",
+          "zh": "律对一个水平的耦合强度。"
+        },
+        "input": {
+          "en": "Strength zero exactly where no response; a response forces positive strength.",
+          "zh": "强度为零恰无回应；回应使强度为正。"
+        },
+        "conditions": {
+          "en": "None beyond the law.",
+          "zh": "律之外无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean"
+      }
+    },
+    {
+      "id": "how-a-carried-difference-grows",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Couples: a coupling of a strength array.",
+        "zh": "复用 Couples：强度阵列的耦合。"
+      },
+      "interface": {
+        "output": {
+          "en": "Couplings of a strength array.",
+          "zh": "强度阵列的耦合。"
+        },
+        "input": {
+          "en": "A response is a coupling of every strength array of the law.",
+          "zh": "回应是律的每个强度阵列的耦合。"
+        },
+        "conditions": {
+          "en": "Formation present outside the part, level listed, no later than the step.",
+          "zh": "形成在部分之外在场，水平列出，不晚于该步。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean"
+      }
+    },
+    {
+      "id": "observation-is-a-route",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Upstream.single, readCouplings and ReadsInto.respondsWithin_unread through Through.readsAt.",
+        "zh": "复用 Upstream.single、readCouplings，以及经 Through.readsAt 的 ReadsInto.respondsWithin_unread。"
+      },
+      "interface": {
+        "output": {
+          "en": "Routes of reading; strength zero for unread levels.",
+          "zh": "所读路线；未读水平强度为零。"
+        },
+        "input": {
+          "en": "A response is a route of reading in every schedule covering what couples in.",
+          "zh": "回应在覆盖耦合入者的每个时程中是所读路线。"
+        },
+        "conditions": {
+          "en": "Law reading through the couplings; schedule covering what couples in.",
+          "zh": "律经耦合而读；时程覆盖耦合入者。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean"
+      }
+    },
+    {
+      "id": "loops-within-what-a-law-reads",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Through.readsAt and ReadsAt.respondsWithin_unread.",
+        "zh": "复用 Through.readsAt 与 ReadsAt.respondsWithin_unread。"
+      },
+      "interface": {
+        "output": {
+          "en": "A law reading through the couplings reads every schedule covering what couples in.",
+          "zh": "经耦合而读的律读覆盖耦合入者的每个时程。"
+        },
+        "input": {
+          "en": "A response is read in every covering schedule.",
+          "zh": "回应在每个覆盖时程中被读。"
+        },
+        "conditions": {
+          "en": "Schedule covering what couples in.",
+          "zh": "覆盖耦合入者的时程。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean"
+      }
+    },
+    {
+      "id": "testing-within-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Web.CoupledInto, Web.AlikeThrough and Web.alike_of_threshold.",
+        "zh": "复用 Web.CoupledInto、Web.AlikeThrough 与 Web.alike_of_threshold。"
+      },
+      "interface": {
+        "output": {
+          "en": "What couples into a formation; a condition coupled in by threshold only passes only whether its need is met.",
+          "zh": "耦合入形成者；只经阈耦合入的条件只传过所需是否得足。"
+        },
+        "input": {
+          "en": "By threshold only a crossing passes; by level the level passes.",
+          "zh": "经阈只过跨越；经水平则水平得过。"
+        },
+        "conditions": {
+          "en": "Equality of conditions decided for the threshold law.",
+          "zh": "阈之律需条件相等可判定。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses ExchangeLaw and ExchangeLaw.Through.",
+        "zh": "复用 ExchangeLaw 与 ExchangeLaw.Through。"
+      },
+      "interface": {
+        "output": {
+          "en": "Laws of exchange reading through the couplings.",
+          "zh": "经耦合而读的交换律。"
+        },
+        "input": {
+          "en": "Only levels that couple in respond.",
+          "zh": "只有耦合入的水平被回应。"
+        },
+        "conditions": {
+          "en": "Formation outside the part.",
+          "zh": "形成在部分之外。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "subthreshold-registration",
+      "detail": {
+        "en": "There a raise below the threshold of a stock coupled in by threshold only shows nowhere along courses; here no law reading through the couplings responds to it.",
+        "zh": "那里只经阈耦合入的储量在阈下的升高沿进程处处不显出；这里没有经耦合而读的律回应它。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
+      "role": "proof",
+      "sha256": "0286f75247c669f70056b6b223e96e163d81efab9aa27b32032e46ecae457cd4",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsTo",
+        "Becoming.ExchangeLaw.respondsWithin_zero_iff",
+        "Becoming.ExchangeLaw.RespondsTo.strength_pos",
+        "Becoming.ExchangeLaw.RespondsTo.couples",
+        "Becoming.ExchangeLaw.RespondsTo.upstream",
+        "Becoming.ExchangeLaw.Through.respondsWithin_uncoupled",
+        "Becoming.ExchangeLaw.Through.couples_of_respondsTo",
+        "Becoming.ExchangeLaw.Through.reads_of_respondsTo",
+        "Becoming.ExchangeLaw.Through.couples_readCouplings",
+        "Becoming.ExchangeLaw.Through.upstream_restrictInto",
+        "Becoming.Web.alikeThrough_of_levels",
+        "Becoming.ExchangeLaw.RespondsByLevel",
+        "Becoming.ExchangeLaw.RespondsByLevel.respondsTo",
+        "Becoming.ExchangeLaw.Through.not_respondsByLevel",
+        "Becoming.ExchangeLaw.RespondsByCrossing",
+        "Becoming.ExchangeLaw.RespondsByCrossing.respondsTo",
+        "Becoming.ExchangeLaw.Through.crosses_of_unobserved",
+        "Becoming.ble_eq_of_iff",
+        "Becoming.Web.admits_iff_of_sole",
+        "Becoming.thresholdLaw",
+        "Becoming.thresholdLaw_through",
+        "Becoming.loweredAt",
+        "Becoming.thresholdLaw_respondsByCrossing",
+        "Becoming.crossing_passes",
+        "Becoming.ExchangeLaw.Through.admission_changes_of_unobserved",
+        "Becoming.ExchangeLaw.Through.others_met_of_unobserved",
+        "Becoming.ExchangeLaw.RespondsByCrossing.requires_pos",
+        "Becoming.decide_eq_of_iff",
+        "Becoming.admissionLaw",
+        "Becoming.admissionLaw_through",
+        "Becoming.needLoweredAt",
+        "Becoming.admissionLaw_respondsByCrossing",
+        "Becoming.crossing_passes_iff",
+        "Becoming.metAllDec",
+        "Becoming.admitsDecidableOfSupport",
+        "Becoming.crossing_passes_of_support",
+        "Becoming.levelLaw",
+        "Becoming.levelLaw_through",
+        "Becoming.raisedAt",
+        "Becoming.levelLaw_respondsByLevel",
+        "Becoming.not_not_obs_iff_respondsByLevel"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "role": "proof",
+      "sha256": "999c73a26839f1bc5c36c2cd1ca48c49cad0f428b35e6728e73d97b20a95dcf4",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsWithin",
+        "Becoming.ExchangeLaw.exchangeGap",
+        "Becoming.ExchangeLaw.exchangeGap_of_alike",
+        "Becoming.gap_comm",
+        "Becoming.gap_add_self"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "role": "proof",
+      "sha256": "bf7312467205ebaa7b4a2a30150d520bc01edbbc548adc8e50a58dbf2b00106f",
+      "declarations": [
+        "Becoming.Couples"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
+      "role": "proof",
+      "sha256": "8049282015d17b6c40607a8c56a2cf9d5bc777ae18513e921e9b87883ff3fa72",
+      "declarations": [
+        "Becoming.Upstream.single",
+        "Becoming.readCouplings",
+        "Becoming.restrictInto",
+        "Becoming.ExchangeLaw.ReadsInto.restrict",
+        "Becoming.ExchangeLaw.Through.readsInto"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
+      "role": "proof",
+      "sha256": "062babfffda150c6165c8bd8c120bcdd804c51960d19161109a418c6f5a4147d",
+      "declarations": [
+        "Becoming.ExchangeLaw.Through.readsAt",
+        "Becoming.ExchangeLaw.ReadsAt.respondsWithin_unread"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "sha256": "679f7dfa4433804a6230660ebfe0ddd93eb283223ad7d2af5e72112e75879808",
+      "declarations": [
+        "Becoming.Web.CoupledInto",
+        "Becoming.Web.AlikeThrough",
+        "Becoming.Web.alike_of_threshold"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "c4916cbf4ee72134c14a7573780ac76acbde0d256ca2799012253f5e23d89fd8",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.ExchangeLaw.Through"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
+      "role": "provenance",
+      "sha256": "987c95041c3e7bd95923bbaf266a520b7682bb8291cc7bf79acc0929651f6241"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md",
+      "role": "integration",
+      "sha256": "bf90e1864d55f1e1ddccda23cdacade01ad704cd62bac36d15f71740343dc081"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T011212.424412Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c105297106945d4610ee27f483499886da89a22bab02e19f339da9f1b041813"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LevelCoupling",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Propagation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Loops",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Observation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Thresholds",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Testing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "18 October 2026: added, on Ren's \"Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames\" (N2), after the naming study N1; study section 168.",
+      "zh": "2026年10月18日：新增，按 Ren 的“Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames”（N2），在命名研究 N1 之后；研究第 168 节。"
+    },
+    {
+      "en": "18 October 2026: the positive half of the threshold grain added after Ren's \"please continue\" (N3): a response to an unobserved condition is a crossing, and where the support at a step is the one condition a crossing passes; study section 168.",
+      "zh": "2026年10月18日：按 Ren 的“please continue”加入阈粒度的正面一半（N3）：对不观察之条件的回应是跨越，一步的支撑只是该条件时跨越得过；研究第 168 节。"
+    },
+    {
+      "en": "18 October 2026: a crossing among several conditions added after Ren's \"just keep pushing the frontier - 道法自然\" (N4): a response to an unobserved condition changes admission, only where the other requirements are met, and where admission is decided a crossing passes exactly where required with a positive need; study section 168.",
+      "zh": "2026年10月18日：按 Ren 的“just keep pushing the frontier - 道法自然”加入多个条件之间的跨越（N4）：对不观察之条件的回应改变容许，只在其他所需已满足之处；容许可判定时，跨越恰在所需且为正之处得过；研究第 168 节。"
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Counterfactual.lean, LevelCoupling.lean, Observation.lean, Propagation.lean, REGISTRATION-VOCABULARY-STUDY.md, THE-THEORY-OF-BECOMING.md, Testing.lean, Thresholds.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G3（Becoming.LawAlongRun）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Testing.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Counterfactual.lean, LevelCoupling.lean, Observation.lean, Propagation.lean, THE-THEORY-OF-BECOMING.md, Testing.lean, Thresholds.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the \"Seeking, capture and runaway\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, G5 (Becoming.LawThroughChangingCoupling): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，G5（Becoming.LawThroughChangingCoupling）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The open reading is adopted by its place in one account (DELEGATED-CHOICES D45 (3)): it and the conjecture of observation-is-a-route said one thing two ways, and the account keeps both senses apart; observation is no second relation in the sense that obs and dependence are both coupling, and whether obs could be derived from dependence stays a conjecture. Before: \"Reading (the AI's, open): what couples in bounds what a law can respond to, and a law's responses are its couplings\". The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：开放的读法以其在一个说明中的位置采用（DELEGATED-CHOICES D45 (3)）：它与 observation-is-a-route 的猜想以两种方式说同一件事，这个说明把两种意义分开；在 obs 与依赖都是耦合的意义上，观察不是第二种关系，obs 能否由依赖推出仍是猜想。原文见英文。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
+      "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R19 (the review of 19 October, fixed): THE-THEORY-OF-BECOMING.md re-pointed after reading the change. R19 changed wording only: living significance is stated as the Lean shows (significance from every standpoint, no valence; the `living` readings do not include further generation); reasons replace Ren's past words where they served as warrant or standing; review bookkeeping was dropped; a link follows a chapter moved to history. No line this record relies on changed its content. The claim is unchanged.",
+      "zh": "2026年10月19日，R19（10月19日审查的修正）：THE-THEORY-OF-BECOMING.md 读过改动后重新指向。R19 只改措辞：生命意义按 Lean 所证陈述（从每个立足点都有意义，不带正负；`living` 的读法不含继续生成）；以理由取代把 Ren 过去的话当作依据或地位之处；删去审查记账；一处链接随移入历史的章节更新。本记录所依的文字内容未变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V (what a collective's continuation needs): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: V added the section 4 subsection on what a collective's continuation needs, answered the section 7.7 question for loops, added a section 8.2 row and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，V（集体延续所需）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 (Becoming.HexagramPlaces): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: Y2 added the section 1 paragraph on the relations of the places with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2（Becoming.HexagramPlaces）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V2 (thresholds of waiting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: V2 added the section 4 paragraph on thresholds of waiting and the laws that restore giving, revised the section 4 table row and reading on cooperation among strangers and the section 8.2 \"Collective continuation\" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，V2（等待的阈值）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Counterfactual.lean, Propagation.lean, Testing.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): Observation.lean, Propagation.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Observation.lean, documentation only (no name, statement or proof changed): readings labelled D43; Propagation.lean, documentation only (no name, statement or proof changed): readings labelled D39. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Observation.lean、Propagation.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Observation.lean，只改说明（名称、陈述与证明不变）：读法标为 D43；Propagation.lean，只改说明（名称、陈述与证明不变）：读法标为 D39。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Counterfactual.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Counterfactual.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Counterfactual.lean, LevelCoupling.lean, Loops.lean, Observation.lean, Propagation.lean, Thresholds.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Counterfactual.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; LevelCoupling.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Loops.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Observation.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Propagation.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Thresholds.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Counterfactual.lean、LevelCoupling.lean、Loops.lean、Observation.lean、Propagation.lean、Thresholds.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Counterfactual.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；LevelCoupling.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Loops.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Observation.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Propagation.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Thresholds.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Counterfactual.lean, Loops.lean, Propagation.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Counterfactual.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Loops.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Propagation.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Counterfactual.lean、Loops.lean、Propagation.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Counterfactual.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Loops.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Propagation.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Proof bindings (Testing.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; Testing.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：证明绑定（Testing.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；Testing.lean，只改说明（任何类型的立场、obs 是第二个给出的关系、固定类型的界、整段的类）或导入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

@@ -245,34 +245,11 @@
       "en": "2026-10-10: internal names restated in structural words at Ren's request. The record ID aggregate-exit-funding became draws-on-a-shared-stock, with the old ID kept as an alias so historical checks still resolve; the Lean theorems all_coalitions_funded_iff_joint_total and individually_affordable_exits_can_fail_jointly became every_selection_within_iff_total_within and each_within_alone_not_together, with parameters claims and reserve renamed draws and stock. Both Lean checks were rerun and passed; the proofs are unchanged."
     },
     {
-      "zh": "2026-10-15，整合 I3c（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Weighted 的列出论域上的质量律）。前 n 项汲取依后先列出是一个论域（SharedStockInstances.firstDraws），一种选取是其上的事件，汲取是其权重：选取的总和即该事件的质量，总和即全域的质量（selectedTotal_eq_mass、total_eq_mass）。于是每种选取都在存量之内恰当总和在内，即核心的 every_event_within_iff（every_selection_within_iff_total_within）；两项各为二的汲取分别在二之内而合起来不在，全域的质量为四（each_within_alone_not_together，同核心的 entries_within_not_together）。CorrectionDependence 的原证明与回执保持原范围。外围实例模块由其检查器实查（Lean 4.30.0-rc2，回执 20261015T151857.892080Z），五条声明的公理报告都为空；所实例化的核心律由核心运行审计（回执 20261015T150956.178111Z）。",
-      "en": "15 October 2026, integration I3c (Ren: “a lot proofs are probably not integrated”): stated on the spine (Becoming.Weighted’s law of masses on a listed domain). The first n draws listed latest first are a domain (SharedStockInstances.firstDraws), a selection is an event on it and the draws are its weighting: the selected total is the selection’s mass and the total the whole domain’s (selectedTotal_eq_mass, total_eq_mass). So every selection fits within the stock exactly when the total does, which is the core’s every_event_within_iff (every_selection_within_iff_total_within), and two draws of two each fit a stock of two but not together, the whole domain’s mass being four (each_within_alone_not_together, as the core’s entries_within_not_together). CorrectionDependence’s proof and receipt keep their scope. The periphery instance module is checked by its own checker (Lean 4.30.0-rc2, receipt 20261015T151857.892080Z), all five declarations with empty axiom reports; the core law it instantiates is audited by the core run (receipt 20261015T150956.178111Z)."
-    },
-    {
       "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：在网的一步，对一个列出的形成家族，每种选取在一个条件上的需要都在该条件水平之内，恰当整个家族的需要在内（selections_within_iff）；网 twoDrawers 中每个形成在步 0 都被支持，两者的需要合起来却超出条件的水平（supported_not_together）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
       "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: at a step of a web, for a listed family of formations, the needs on one condition of every selection are within the condition's level exactly when the needs of the whole family are (selections_within_iff); in the web twoDrawers each formation is supported at step 0 while their needs together exceed the level (supported_not_together). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
     },
     {
-      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Weighted.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
-      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Weighted.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
-    },
-    {
-      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
-      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
-    },
-    {
-      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): in Courses.lean, six theorems now cite their general forms (Lasting.fixed_avoids, Countdown.Advances.completes, Copying.scan_le, CrossSituational.narrows, CrossSituational.reads_every_iff, Readout.no_judge_of_merged), and inspection_trace_scan is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
-    },
-    {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Courses.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
-    },
-    {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Courses.lean, Weighted.lean). The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Weighted.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Weighted.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Weighted.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Weighted.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变。论断不变。"
     },
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Courses.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Courses.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
@@ -283,12 +260,12 @@
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Courses.lean、Weighted.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Courses.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Weighted.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Courses.lean, Weighted.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Courses.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Weighted.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Courses.lean、Weighted.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Courses.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Weighted.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
-    },
-    {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Courses.selections_within_iff (now every_event_within_iff). Proof bindings (Courses.lean, Weighted.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Courses.lean, takes as its final sections RetrodictionRuns, CandidateRuns, ReducedRuns, the modules reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Weighted.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Courses.selections_within_iff（现为 every_event_within_iff）。证明绑定（Courses.lean、Weighted.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Courses.lean，以末节收入 RetrodictionRuns、CandidateRuns、ReducedRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Weighted.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "2026-10-20: 7 bookkeeping notes condensed from 15 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/47dc93ea7d0babcc/draws-on-a-shared-stock.json and in git.",
+      "zh": "2026-10-20：7 条记账性说明合并（15 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/47dc93ea7d0babcc/draws-on-a-shared-stock.json 和 git 中。"
     }
   ]
 }

@@ -1,0 +1,407 @@
+{
+  "schema_version": 2,
+  "id": "revision-with-an-undecided-value",
+  "title": {
+    "en": "Revision with an undecided value",
+    "zh": "带未定值的修正"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T10:25:15+00:00",
+  "statement": {
+    "en": "With an undecided value below true and false, revision of N sentences speaking only of one another, run from all undecided, settles within N steps, exactly, at the least fixed point. Where two-valued revision has no fixed point, every fixed point leaves a sentence undecided.",
+    "zh": "有一个低于真与假的未定值时，只彼此言说的 N 个句子从全未定起的修正，在 N 步内停于最小不动点，此界确切。二值修正没有不动点时，每个不动点留下一个未定的句子。"
+  },
+  "laws": [
+    {
+      "en": "Three values with u below t and f in information and the strong tables; evaluation is monotone in information and agrees with the two-valued tables on decided values.",
+      "zh": "三个值，信息序上 u 低于 t 与 f，用强表；求值对信息序单调，在已定值上与二值表一致。",
+      "declarations": [
+        "Becoming.Undecided.Value",
+        "Becoming.Undecided.Le",
+        "Becoming.Undecided.Term",
+        "Becoming.Undecided.eval",
+        "Becoming.Undecided.eval_mono",
+        "Becoming.Undecided.eval_mono_below",
+        "Becoming.Undecided.eval_embed"
+      ]
+    },
+    {
+      "en": "A term with no constant is undecided where every sentence is, so a system with no constant stays wholly undecided along its run of revision.",
+      "zh": "不含常量的项在每个句子都未定处未定，所以不含常量的系统沿其修正之运行始终全未定。",
+      "declarations": [
+        "Becoming.Undecided.ConstantFree",
+        "Becoming.Undecided.eval_undecided",
+        "Becoming.Undecided.stays_undecided"
+      ]
+    },
+    {
+      "en": "Revision run from all undecided rises at every step; for N closed sentences it settles within N steps and stays, at the least fixed point; readings on a list that only rise settle by the list's length.",
+      "zh": "从全未定起的修正之运行每步上升；对 N 个封闭句子，它在 N 步内停住并保持，在最小不动点；列表上只升不降的读法按列表长度停住。",
+      "declarations": [
+        "Becoming.Undecided.revise",
+        "Becoming.Undecided.stage",
+        "Becoming.Undecided.Closed",
+        "Becoming.Undecided.Steady",
+        "Becoming.Undecided.stage_up",
+        "Becoming.Undecided.stage_mono",
+        "Becoming.Undecided.settles_within",
+        "Becoming.Undecided.settles",
+        "Becoming.Undecided.settled_from",
+        "Becoming.Undecided.stage_fixed",
+        "Becoming.Undecided.stage_le_fixed",
+        "Becoming.Undecided.least_fixed"
+      ]
+    },
+    {
+      "en": "The bound is exact: in the chain whose first sentence says true and each next denies the one before, N + 1 sentences are steady at step N + 1 and not at N.",
+      "zh": "此界确切：在首句说真、后句各否定前句的链中，N + 1 个句子在第 N + 1 步稳定，在第 N 步不稳定。",
+      "declarations": [
+        "Becoming.Undecided.chain",
+        "Becoming.Undecided.chain_undecided",
+        "Becoming.Undecided.chain_decided",
+        "Becoming.Undecided.chain_exact"
+      ]
+    },
+    {
+      "en": "The liar rests undecided, and a run of its revision rests exactly where it is undecided; the truth-teller keeps its start and rests undecided from all undecided.",
+      "zh": "说谎者停于未定，其修正之运行恰在它未定处停住；诚实者保持其起点，从全未定起停于未定。",
+      "declarations": [
+        "Becoming.Undecided.liar_rests",
+        "Becoming.Undecided.liar_rests_iff",
+        "Becoming.Undecided.truthTeller_keeps",
+        "Becoming.Undecided.truthTeller_rests"
+      ]
+    },
+    {
+      "en": "Where two-valued revision of a closed system has no fixed point, every fixed point and every resting run leaves a sentence undecided; the liar never rests with two values and rests undecided with three.",
+      "zh": "封闭系统的二值修正没有不动点时，每个不动点、每条停住的运行都留下一个未定句子；说谎者二值时从不停息，三值时停于未定。",
+      "declarations": [
+        "Becoming.Undecided.undecided_of_moves",
+        "Becoming.Undecided.least_undecided",
+        "Becoming.Undecided.rest_undecided",
+        "Becoming.Undecided.liar_two_valued_never_rests",
+        "Becoming.Undecided.liar_undecided",
+        "Becoming.Undecided.liar_both_sides"
+      ]
+    },
+    {
+      "en": "No map monotone in information moves every value; the run of a monotone map from the undecided value rests from its first step, so the diagonal's gap needs a map that is not monotone; a family of three-valued readings within what it reads is still incomplete.",
+      "zh": "对信息序单调的映射都不移动每个值；单调映射从未定值出发的运行从第一步起停住，所以对角线的缺口需要不单调的映射；在所读之中的三值读法族仍不完备。",
+      "declarations": [
+        "Becoming.Undecided.monotone_fixed",
+        "Becoming.Undecided.monotone_not_moves",
+        "Becoming.Undecided.neg_not_moves",
+        "Becoming.Undecided.monotone_run_rests",
+        "Becoming.Undecided.never_rests_not_monotone",
+        "Becoming.Undecided.moves_not_monotone",
+        "Becoming.Undecided.incomplete"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom; finitely many sentences closed among themselves (Closed) for the settling laws; the absence of a two-valued fixed point is a hypothesis of the undecided laws.",
+      "zh": "不加公理；停住诸律要求有限个彼此封闭的句子（Closed）；二值不动点不存在是未定诸律的假设。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Infinitely many sentences, where the least fixed point needs a limit stage; fixed points other than the least; how many sentences stay undecided.",
+      "zh": "无穷多个句子，那里最小不动点需要极限阶段；最小者之外的不动点；有多少句子保持未定。",
+      "kind": "scope"
+    },
+    {
+      "en": "That undecided is a third truth, or that the liar is resolved: the undecided value is what revision has not decided.",
+      "zh": "未定是第三种真，或说谎者被解决了：未定值是修正尚未决定者。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T102354.824114Z): the 90 declarations of Becoming.Undecided, 64 of them theorems, have empty axiom reports; the checker verifies core purity. Proved in a scratch kit by the session that claimed SG; author review in study section 199; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T102354.824114Z）：Becoming.Undecided 的 90 项声明（64 项定理）公理报告为空；检查器并核对核心纯净。由认领 SG 的会话在草稿中证明；作者审查见研究第 199 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Infinitely many sentences with a limit stage; a measure of what stays undecided; an independent review.",
+    "zh": "带极限阶段的无穷多个句子；对保持未定者的度量；独立审查。"
+  },
+  "correspondence": {
+    "en": "The earlier 义理·形式逻辑 (§三) states Kleene–Kripke revision and a 三值保守律 (U ⇏ ⊤), proved there only in instances (SSBX review §3.2, G3); the third value is read as 疑, what revision has not decided. Reading the AI's (D52); Ren's words are provenance, not warrant.",
+    "zh": "早期义理·形式逻辑（第三节）陈述 Kleene–Kripke 修正与三值保守律（U ⇏ ⊤），那里只就实例证明（SSBX 审读第 3.2 节 G3）；第三值读作疑，即修正尚未决定者。读法是 AI 的（D52）；Ren 的话是出处，不是依据。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Undecided.lean",
+  "aliases": [
+    "revision with an undecided value",
+    "带未定值的修正",
+    "the gap reappears as undecidedness",
+    "Kleene strong tables",
+    "Kripke least fixed point (finite case)",
+    "Becoming.Undecided.least_fixed",
+    "Becoming.Undecided.undecided_of_moves"
+  ],
+  "dependencies": [
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Law.orbit, orbit_add, orbit_shift and the run of a determined law, Law.run, whose states are the orbit.",
+        "zh": "复用 Law.orbit、orbit_add、orbit_shift 与决定性律的运行 Law.run，其状态即轨道。"
+      },
+      "interface": {
+        "output": {
+          "en": "The course of a determined law as a run of the spine.",
+          "zh": "决定性律的进程作为脊柱的运行。"
+        },
+        "input": {
+          "en": "The runs the laws are stated on.",
+          "zh": "诸定律所陈述的运行。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "registration-within-what-it-registers",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Diagonal.Moves, flip_moves, revision_never_rests, fixed_of_complete and Says.",
+        "zh": "复用 Diagonal.Moves、flip_moves、revision_never_rests、fixed_of_complete 与 Says。"
+      },
+      "interface": {
+        "output": {
+          "en": "A map moving every value never rests under revision; a complete family gives every map a fixed point.",
+          "zh": "移动每个值的映射在修正下从不停息；完备的读法族给每个映射一个不动点。"
+        },
+        "input": {
+          "en": "The fixed-point-free symmetry, the two-valued liar and the three-valued diagonal.",
+          "zh": "无不动点的对称、二值说谎者与三值对角线。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "every-loss-passes-a-juncture",
+      "detail": {
+        "en": "Becoming.Junctures uses settles_within to decide reach on listed configurations.",
+        "zh": "Becoming.Junctures 用 settles_within 在可列配置上判定可达。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Undecided.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Undecided.Bounded",
+        "Becoming.Undecided.Closed",
+        "Becoming.Undecided.ConstantFree",
+        "Becoming.Undecided.Le",
+        "Becoming.Undecided.Le.decided",
+        "Becoming.Undecided.Le.same_or_rises",
+        "Becoming.Undecided.Le.trans",
+        "Becoming.Undecided.Monotone",
+        "Becoming.Undecided.Steady",
+        "Becoming.Undecided.Steady.next",
+        "Becoming.Undecided.Term",
+        "Becoming.Undecided.Value",
+        "Becoming.Undecided.Value.conj",
+        "Becoming.Undecided.Value.decided",
+        "Becoming.Undecided.Value.disj",
+        "Becoming.Undecided.Value.embed",
+        "Becoming.Undecided.Value.neg",
+        "Becoming.Undecided.asBool",
+        "Becoming.Undecided.blank",
+        "Becoming.Undecided.chain",
+        "Becoming.Undecided.chain_closed",
+        "Becoming.Undecided.chain_decided",
+        "Becoming.Undecided.chain_exact",
+        "Becoming.Undecided.chain_undecided",
+        "Becoming.Undecided.conj_embed",
+        "Becoming.Undecided.conj_mono",
+        "Becoming.Undecided.disj_embed",
+        "Becoming.Undecided.disj_mono",
+        "Becoming.Undecided.each_or_some",
+        "Becoming.Undecided.embed_asBool",
+        "Becoming.Undecided.embed_inj",
+        "Becoming.Undecided.eval",
+        "Becoming.Undecided.eval_congr",
+        "Becoming.Undecided.eval_embed",
+        "Becoming.Undecided.eval_mono",
+        "Becoming.Undecided.eval_mono_below",
+        "Becoming.Undecided.eval_undecided",
+        "Becoming.Undecided.eval₂",
+        "Becoming.Undecided.incomplete",
+        "Becoming.Undecided.kept_from",
+        "Becoming.Undecided.least_fixed",
+        "Becoming.Undecided.least_undecided",
+        "Becoming.Undecided.liar",
+        "Becoming.Undecided.liar_both_sides",
+        "Becoming.Undecided.liar_closed",
+        "Becoming.Undecided.liar_rests",
+        "Becoming.Undecided.liar_rests_iff",
+        "Becoming.Undecided.liar_two_valued_moves",
+        "Becoming.Undecided.liar_two_valued_never_rests",
+        "Becoming.Undecided.liar_two_valued_run",
+        "Becoming.Undecided.liar_undecided",
+        "Becoming.Undecided.marked",
+        "Becoming.Undecided.marked_le",
+        "Becoming.Undecided.marked_mono",
+        "Becoming.Undecided.marked_rises",
+        "Becoming.Undecided.mem_upto",
+        "Becoming.Undecided.monotone_fixed",
+        "Becoming.Undecided.monotone_not_moves",
+        "Becoming.Undecided.monotone_run_rests",
+        "Becoming.Undecided.monotone_settles",
+        "Becoming.Undecided.moves_not_monotone",
+        "Becoming.Undecided.neg_decided",
+        "Becoming.Undecided.neg_embed",
+        "Becoming.Undecided.neg_fixed_iff",
+        "Becoming.Undecided.neg_mono",
+        "Becoming.Undecided.neg_monotone",
+        "Becoming.Undecided.neg_not_moves",
+        "Becoming.Undecided.never_rests_not_monotone",
+        "Becoming.Undecided.rest_undecided",
+        "Becoming.Undecided.revise",
+        "Becoming.Undecided.revise₂",
+        "Becoming.Undecided.rotate",
+        "Becoming.Undecided.rotate_moves",
+        "Becoming.Undecided.settled_from",
+        "Becoming.Undecided.settles",
+        "Becoming.Undecided.settles_within",
+        "Becoming.Undecided.some_undecided_or_none",
+        "Becoming.Undecided.stage",
+        "Becoming.Undecided.stage_fixed",
+        "Becoming.Undecided.stage_le_fixed",
+        "Becoming.Undecided.stage_mono",
+        "Becoming.Undecided.stage_up",
+        "Becoming.Undecided.stays_undecided",
+        "Becoming.Undecided.steady_or_rises",
+        "Becoming.Undecided.truthTeller",
+        "Becoming.Undecided.truthTeller_keeps",
+        "Becoming.Undecided.truthTeller_rests",
+        "Becoming.Undecided.undecided_of_moves",
+        "Becoming.Undecided.upto",
+        "Becoming.Undecided.upto_length"
+      ],
+      "sha256": "ac9dfea058ebba6ca364a72eec3033b03329fe73ccbfcb07c36c1d91afe95f8b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
+      "role": "proof",
+      "sha256": "e0bb60720f219d2348299c7ad2bc4eb7a885e1ea82660c9989599c3da7293b4b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T102354.824114Z/verification.json",
+      "role": "receipt",
+      "sha256": "076e24cd85ddc8338f94d8e8b75e3cde29d911a2cfef05c6e70d4ba1a08396f4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md",
+      "role": "provenance",
+      "sha256": "8d59eec11ae07e213b069462f4b2eee39d70571c71dbc368a4ce30005487ed11"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Undecided.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Undecided",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (SG, general law G3 of the review of the earlier 生生不息 repository), on Ren's request that the earlier repository be read for what can be integrated (\"please take a look of this … many insights can be integrated\", abridged as quoted with the review); study section 199.",
+      "zh": "2026年10月19日：新增（SG，早期《生生不息》仓库审读的一般律 G3），按 Ren 要求审读早期仓库中可并入者（“please take a look of this … many insights can be integrated”，节录，随审读引用）；研究第 199 节。"
+    },
+    {
+      "en": "19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198; THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，X1b（护闭诸文合于关节律的确切范围）：BECOMING-RENEWAL-READING.md 重新指向。自本记录所审哈希以来，所引文字只在第 199 节改动：其护闭读法现说保持是在自 s 起的路径上保住 s 的最大闭（`keeping_greatest`），由 X1b 改。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Undecided.lean). Re-pointed after reading the change (Diagonal.lean: declarations moved in or out by W2; Recurrence.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: Diagonal.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：Diagonal.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Diagonal.lean, takes as its final section DiagonalRuns, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Diagonal.lean，以末节收入 DiagonalRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

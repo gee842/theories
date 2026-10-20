@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "id": "joint-decomposition-lifting",
+  "title": {
+    "zh": "从整体代码提升共同分解",
+    "en": "Lifting a joint decomposition from a whole code"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T13:02:25.936140+00:00",
+  "claim": {
+    "zh": "在共同纤维紧致、表示准确且约简时，整体代码的共同分解可从该整体的任一给定原生代表提升。",
+    "en": "Under joint-fiber compactness and an exact reduced presentation, a code-level joint decomposition lifts from any given native representative of the whole code."
+  },
+  "hypotheses": [
+    {
+      "zh": "JointCompact、Exact、Reduced；codeJoint 使用同一模型的原生 joint 关系。",
+      "en": "JointCompact, Exact and Reduced; codeJoint uses the same model’s native joint relation."
+    }
+  ],
+  "correspondence": {
+    "zh": "整体、代码与成对关系的解释是给定的，不假设所有物理实现满足紧致性。",
+    "en": "The whole/code/joint interpretation is supplied; universal physical compactness is not assumed."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
+  "aliases": [
+    "Generative.ExplanatoryJointness.code_joint_lifts_from_whole",
+    "Becoming.code_joint_lifts_from_whole_of_stable",
+    "Becoming.liftsFromEach_iff"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "detail": {
+        "zh": "提升存在部分，不保证任意指定的部分可以替换或重复使用同一支持。",
+        "en": "Lifting provides some parts, not arbitrary substitution of designated parts or duplication of support."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "提升存在部分，不保证任意指定的部分可以替换或重复使用同一支持。",
+    "en": "Lifting provides some parts, not arbitrary substitution of designated parts or duplication of support."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "role": "proof",
+      "sha256": "18f745f8ef8bae379e3fadcf059a68c529caa5af4453adc469182148e4fa4e4f",
+      "declarations": [
+        "Generative.ExplanatoryJointness.code_joint_lifts_from_whole"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
+      "role": "proof",
+      "sha256": "ac52ae2f68ae4451095728d81344c18508bdc9a1887f8af20fc90262fefcd7ef",
+      "declarations": [
+        "Becoming.liftsFromEach_of_exact"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+      "role": "receipt",
+      "sha256": "aa8a37f8bf4539f5d3e90986a1e0a74fdf9568cacc1b1438a2421f3721d6f420",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
+      "role": "proof",
+      "sha256": "de7b9c193bf4b6d4ca7518d1078ac3ac2122533021e536e4437936d41f3f10bb",
+      "declarations": [
+        "Becoming.liftsFromEach_iff",
+        "Becoming.liftsFromEach_of_sameJointTests",
+        "Becoming.matchesParts_of_compact_iff_em"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CompositionBridge.lean",
+      "role": "proof",
+      "sha256": "1ebdb280164ae841ad06d7a66afe36cc7d6c3e8d16bef29a8ec9facee98cc798",
+      "declarations": [
+        "Becoming.code_joint_lifts_from_whole_of_stable"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "role": "receipt",
+      "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "role": "receipt",
+      "sha256": "0a2bacf2db996d0f2da49b75bda0b985f74a5b6849be2b50ab6471033917d914",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+      "sha256_pointer": "/modules/9/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Composition",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CompositionBridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.CompositionBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.JointCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "复用 code_joint_lifts_from_whole 作为递归计划的每节点接口。",
+    "en": "Reuse code_joint_lifts_from_whole as the per-node interface for recursive plans."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述，附加一个假设。新的核心模块 Becoming.Composition（只导入 Becoming.Likeness）加入一配置把两配置作为部分共同持有的关系（JointFrame），以及联合检验、联合相同、紧致、嵌套计划与足迹；Becoming.CompositionBridge 把 ExplanatoryJointness 与 ExplanatoryFootprints 读作实例。描述提升其所读之部分，恰当其所认同的配置把部分匹配到其所认同的配置（liftsFromEach_iff；外围只有一个充分方向）；若描述恰认同通过相同联合检验的配置，部分对紧致且检验稳定，则提升之（liftsFromEach_of_sameJointTests）。精确约化表示恰认同这些配置，codeJoint 即核心的 jointImage，所以在模型检验稳定处 code_joint_lifts_from_whole 在脊柱上成立（code_joint_lifts_from_whole_of_stable）；排中律给出稳定，无稳定时外围以经典方式所走的一步恰是排中律（matchesParts_of_compact_iff_em）。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；有限纤维无排中律是否紧致仍开放。",
+      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine, with one added hypothesis. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. A description lifts the parts it reads exactly where configurations it identifies match parts into configurations it identifies (liftsFromEach_iff; the periphery had one sufficient direction), and where it identifies exactly the configurations passing the same joint tests, the pairs of parts being compact and the tests stable, it lifts them (liftsFromEach_of_sameJointTests). An exact reduced presentation identifies exactly those configurations, and codeJoint is the core's jointImage, so code_joint_lifts_from_whole holds on the spine where the model's tests are stable (code_joint_lifts_from_whole_of_stable); excluded middle gives stability, and without stability the step the periphery takes classically is exactly excluded middle (matchesParts_of_compact_iff_em). Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; whether finite fibres are compact without excluded middle is open."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Composition.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Composition.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (JointCorrespondence; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（JointCorrespondence），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): CompositionBridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Composition.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Composition.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Composition.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Composition.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Composition.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Composition.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Composition.lean, takes as its final section JointPlanFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Composition.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Composition.lean，以末节收入 JointPlanFrames（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+    }
+  ]
+}

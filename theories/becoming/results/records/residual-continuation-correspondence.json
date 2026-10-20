@@ -18,21 +18,6 @@
       "en": "15 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): stated on the spine (what remains, in Becoming.Granularity). Carrying out a recipe part of the way leaves a recipe remaining where the course stands (Recipe.Leaves), and this bookkeeping is an unfolding of its own that adds no move (Recipe.Leaves.trace); resuming what remains completes the recipe, and carrying it out to the end is a partial course leaving nothing (Recipe.Leaves.resume, Recipe.leads_iff_leaves). Partial courses from alike configurations match, keeping what remains, with no premise (Recipe.Leaves.alike); from configurations passing the same tests they need listed outcomes and em (Recipe.Leaves.same_of_em). Inserted moves join a partial course and its resumption into one course without being part of the recipe (Recipe.Leaves.inserted). The witness Midway: testing where the course has arrived and testing at the start give different results; one start leaves different remainders at one configuration, which every description exact for resumption keeps apart; an inserted move can disable what remains (Midway.testing_before_formation_changes_results, Midway.remainder_codes_apart, Midway.inserted_can_disable_resumption). The periphery’s ExplanatoryGranularityBoundary.unfolding is defined by a match with an overlapping wildcard case and compiles through propext, so the witnesses of ExplanatoryResumptionCases are restated on the core’s Midway frame (the same six configurations, three moves and six steps). In the bridge, the periphery’s advances and the core’s correspond one to one (Recipe.advance_ofProgram, Recipe.Advance.toProgram), and a cut is a partial course leaving the same program (cut_iff_leaves); cut_resume, execution_iff_completed_cut and resumption_after_inserted_history hold as stated, partial_history_matches with em; same_preserves_resumption needs no premise (the periphery reads each continuation question as one test, classically; the core as finitely many). Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proofs and their receipts keep their scope."
     },
     {
-      "zh": "2026-10-16，整合 I4c（Ren 选择“Add the notes”）：ExplanatoryResumptionCases.lean 的第一行加一条注释，指向脊柱上陈述其主定理的声明；陈述与证明不变，行号不变。其证明引用改用新的哈希，证明绑定移到 explanatory-resumption 检查器对新字节的回执（20261015T180520.693095Z，通过）；ExplanatoryResiduals 仍绑定原回执。",
-      "en": "16 October 2026, integration I4c (Ren selected “Add the notes”): the first line of ExplanatoryResumptionCases.lean gains a comment naming the spine declarations that state its main theorem; statements, proofs and line numbers are unchanged. Its proof reference takes the new hash, and its proof binding moves to the explanatory-resumption checker's receipt for the new bytes (20261015T180520.693095Z, passed); ExplanatoryResiduals stays bound to the earlier receipt."
-    },
-    {
-      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Granularity.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；GranularityBridge.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
-      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Granularity.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); GranularityBridge.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (GranularityBridge.lean: the fold). The claim is unchanged.",
-      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
       "en": "18 October 2026, F1, the bridge fold, step 3 (Ren: \"please do all\"): the restatement audit of step 0 (development/bridge-fold/RESTATEMENT-AUDIT.md) found ExplanatoryResiduals fully restated by Becoming.Granularity, and its importer ExplanatoryResumptionCases an earlier version whose witnesses Becoming.Midway restates. The canonical source is now the core module; both periphery files keep their path and bytes and stay cited as the earlier statement. The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠第 3 步（Ren：“please do all”）：第 0 步的重述审计（development/bridge-fold/RESTATEMENT-AUDIT.md）查明 ExplanatoryResiduals 已由 Becoming.Granularity 完整重述，导入它的 ExplanatoryResumptionCases 是较早版本，其见证由 Becoming.Midway 重述。规范来源改为核心模块；两个外围文件保留路径与字节，仍作为较早的陈述被引用。论断不变。"
     },
@@ -41,16 +26,8 @@
       "zh": "2026年10月18日，F3 外围移植的清扫：ExplanatoryResiduals 登记为已被取代，离开 Becoming 运行；GranularityBridge 中对它的八条读法随之移除，因此删去对 GranularityBridge 的引用，别名 same_preserves_resumption_by_core 换成它所读的核心定律 SameBranchingTests.leads_iff。两个外围文件保留路径与字节，其收据仍然绑定。论断不变。"
     },
     {
-      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Granularity; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
-      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（Granularity），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
-    },
-    {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Granularity.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Granularity.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Granularity.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Granularity.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Granularity.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Granularity.lean, takes as its final section Grains, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
-      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Granularity.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Granularity.lean，以末节收入 Grains（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+      "en": "2026-10-20: 7 bookkeeping notes condensed from 16 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/94a535e9f1fdc4ed/residual-continuation-correspondence.json and in git.",
+      "zh": "2026-10-20：7 条记账性说明合并（16 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/94a535e9f1fdc4ed/residual-continuation-correspondence.json 和 git 中。"
     }
   ],
   "validation_scope": {

@@ -307,85 +307,20 @@
       "en": "2026-10-09: registers the preparation-budget refinement and application to the existing joint-activation law. Explicitly credits GenerativePossibility’s prior unbounded inference and actual formation witness. Preserves the failed first check and successful corrected receipt; repeated inferences are not independent discoveries."
     },
     {
-      "zh": "2026-10-09接续：同一研究补全作用、支承、维持、转化与结束的解释及实质反审；复用既有依存和端口定理。当前主张、Lean源码与回执不变，不新增数学成果或普遍完成状态。",
-      "en": "2026-10-09 continuation: the same study develops operative support, maintenance, transformation and ending with substantive counterreview, reusing existing dependency and port results. The checked claim, Lean source and receipt remain unchanged; no new mathematical result or universal completion is recorded."
-    },
-    {
-      "zh": "2026-10-09：同一研究接入独立的共同交叉项约化成果并接纳Becoming整体范围澄清；本记录的准备界主张、旧证明及回执未改变。",
-      "en": "2026-10-09: the same study adds the separate joint-cross-contribution reduction and the whole-Becoming scope clarification. This record’s preparation-bound claim, proof and receipt remain unchanged."
-    },
-    {
-      "en": "9 October 2026: the statement chapter gained an appended section on renewing and consuming formation (relational-renewal-classification). The earlier text is byte-identical; this record's claim, proof and receipt are unchanged. Hash updated after reading the change.",
-      "zh": "2026年10月9日：陈述章末尾新增“更新与消耗”一节（relational-renewal-classification）。原有文字逐字节不变；本记录的主张、证明与回执不变。读过改动后更新哈希。"
-    },
-    {
-      "zh": "2026-10-09：核读新增有限修复解释及共享章中不可返回前提的明确化。仅更新所涉陈述／整合来源版本；原主张、证明与回执保持，正净修复不满足旧不可返回的前提。",
-      "en": "2026-10-09: Reviewed the added finite-repair explanation and explicit no-return premise in the shared chapter. Updates only affected statement/integration source versions; prior claims, proofs and receipts remain. Positive net repair does not satisfy the earlier no-return premise."
-    },
-    {
       "zh": "2026-10-09：核读共享章中并行新增的 G0 对象修正及 C 条件比较，并核读其原指令及整合节。该比较属于另项研究，本记录的局部动力学、证明与范围不变；不将它计入本次数学验收。",
       "en": "2026-10-09: Read concurrent clarification of G0’s object and the C-conditional comparison in the shared chapter, with its source instruction and integration section. That comparison belongs to another study; this record’s local dynamics, proof and scope remain unchanged and do not claim its mathematical acceptance."
-    },
-    {
-      "zh": "2026-10-14，整合 I3b（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述。核心（Becoming.Recurrence）对每一过程无前提地证明：一组主张在 n 步内共同实现，指至多 n 步的路径终于实现其每一主张的配置（WithinMoves）；路径携带每一这样的界，计入其自身的步数（WithinMoves.after_course），这正是 within_after_prefix；有某界恰当可达某实现该组的配置（withinMoves_iff_reach），所以沿路径不会出现此前不能共同实现者（together_after_reach），不再能共同实现的组标出无回路的路径（lost_together_not_returns）。RelationalBecoming.Within 按定义即 WithinMoves（within_after_prefix_by_core、eventual_after_prefix_by_core）。在 JointContinuationClassification 的共同激活规律上，一步准备把共同激活的界自两步缩为一步，解除耦合后任何界都不能，所准备的配置可单侧终止（actual_preparation_changes_effective_capacity_by_core、actual_release_loses_eventual_joint_by_core、prepared_capacity_can_end_without_joint_realization_by_core），解除即无回路（release_not_returns）；这些证明不用外围证明所用的 propext 与 Quot.sound。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 RelationalBecoming，脊柱运行将其作为继承模块编译。",
-      "en": "14 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): stated on the spine. The core (Becoming.Recurrence) proves for every process with no premise: a bundle of claims is realized together within n moves where a course of at most n moves ends at a configuration realizing every claim of it (WithinMoves); a course carries every such bound, its own moves counted (WithinMoves.after_course), which is within_after_prefix; some bound exists exactly where a configuration realizing the bundle is reachable (withinMoves_iff_reach), so along a course nothing becomes realizable together that was not before (together_after_reach), and a bundle no longer realizable together marks a course with no way back (lost_together_not_returns). RelationalBecoming.Within is WithinMoves by definition (within_after_prefix_by_core, eventual_after_prefix_by_core). On JointContinuationClassification’s joint-activation law, one preparation step shortens the bound for joint activation from two moves to one, releasing the coupling loses it at every bound, and the prepared configuration can end one-sided (actual_preparation_changes_effective_capacity_by_core, actual_release_loses_eventual_joint_by_core, prepared_capacity_can_end_without_joint_realization_by_core); the release has no way back (release_not_returns). These proofs avoid the propext and Quot.sound of the periphery’s. Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports RelationalBecoming, which the spine run compiles as an inherited module."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
-      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in RELATIONAL-BECOMING-INTEGRATION.md, THEORY-OF-BECOMING.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): THEORY-OF-BECOMING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (Bridge.lean: the fold). The claim is unchanged.",
-      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
     },
     {
       "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (1 in Becoming.Bundles), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
       "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
     },
     {
-      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (ActivationCapacity, Recurrence; verdicts in port-r.md), bound to core receipt 20261018T203356.753598Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
-      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（ActivationCapacity、Recurrence），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
-    },
-    {
-      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
-      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
-    },
-    {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: WithinMoves, before, after_course, withinMoves_iff_reach, together_after_reach, lost_together_not_returns from Recurrence.lean to Labelled.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (ActivationCapacity.lean, Bundles.lean). The alias Becoming.within_after_prefix_by_core is elaborated only in Becoming.Bridge (Bridge.lean, retired by the F3 sweep with its bytes kept), so that file stays bound to receipt 20261018T201753.515165Z, whose hash of it matches. The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Labelled.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Labelled.lean, Law.process moved to Recurrence.lean; Frame.world built by World.of; header. The claim is unchanged.",
-      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Labelled.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Labelled.lean，Law.process 移到 Recurrence.lean；Frame.world 由 World.of 构造；开头说明。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Labelled.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean. The claim is unchanged.",
-      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Labelled.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean。论断不变。"
-    },
-    {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: history_meaning (now twoSteps_meaning). Proof bindings (Bundles.lean, Labelled.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Bundles.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：history_meaning（现为 twoSteps_meaning）。证明绑定（Bundles.lean、Labelled.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Bundles.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Bundles.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Bundles.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Bundles.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Bundles.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+      "en": "2026-10-20: 18 bookkeeping notes condensed from 2026-10-09 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/6b462eb3c6798700/effective-capacity-and-eventual-reachability.json and in git.",
+      "zh": "2026-10-20：18 条记账性说明合并（2026-10-09 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/6b462eb3c6798700/effective-capacity-and-eventual-reachability.json 和 git 中。"
     }
   ]
 }

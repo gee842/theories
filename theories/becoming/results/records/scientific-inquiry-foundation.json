@@ -415,9 +415,6 @@
       "en": "14 October 2026, open-issues plan item 4: the first hypothesis was Ren's direction of 13 October 2026 and working arrangements, not a premise of this result. It now states the revisable hypothesis under test itself (the complete theory is a necessary foundation of scientific inquiry; the outcome may be the complete core, a part of it, or a commitment that needs revision); Ren's direction moves with Ren's words to the correspondence; \"full-theory necessity is not a proof premise\" moves to not-required; \"preserve the scopes of local results and the ethical route\" moves to does-not-show (scope); \"continue in the current conversation without automation\" is a working arrangement, kept here (Ren: “只在当前对话中连续推进，不设自动安排”). Former text: \"Ren explicitly supports continuing as a revisable-hypothesis test on 13 October 2026. Full-theory necessity is not a proof premise; continue in the current conversation without automation. Preserve the scopes of local results and the ethical route.\""
     },
     {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in SCIENTIFIC-INQUIRY-CONDITIONS.md, SCIENTIFIC-INQUIRY-EVIDENCE.md, SCIENTIFIC-PHILOSOPHY.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): SCIENTIFIC-PHILOSOPHY.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     },
     {
@@ -431,48 +428,12 @@
       "zh": "2026年10月19日，O1：为划界对照的形式一面加入进展条目（记录 what-a-finite-stretch-verifies，研究第 205 节）。目标、状态与下一步不变：在实际探究上的对照仍待完成。"
     },
     {
-      "en": "19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): SCIENTIFIC-PHILOSOPHY.md re-pointed after reading the change (SCIENTIFIC-PHILOSOPHY.md: O1 added two sentences on the form of insulation after the demarcation paragraph's sentence on systematic insulation). The claim is unchanged.",
-      "zh": "2026年10月19日，O1 与 O2（有限片段所证实者；方法在极限中所能说出者）：读过改动后，SCIENTIFIC-PHILOSOPHY.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, RO (the Chinese sources on the spine): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RO added a study section). The claim is unchanged.",
-      "zh": "2026年10月19日，RO（中国思想诸传统在脊柱上）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, U5 (general laws read on the base): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U5 added study section 208). The claim is unchanged.",
-      "zh": "2026年10月19日，U5（在基上读出的一般规律）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.",
-      "zh": "2026年10月19日，U5 后续（段落图）：读过改动后重新指向（BECOMING-RENEWAL-READING.md：研究第 208 节关于 Y1 段落图的一段改为已加入）。论断不变。"
-    },
-    {
-      "en": "19 October 2026, Y5 (Becoming.HexagramSequences): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y5 added a study section). The claim is unchanged.",
-      "zh": "2026年10月19日，Y5（Becoming.HexagramSequences）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, SC (a code formed between formations): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SC added a study section). The claim is unchanged.",
-      "zh": "2026年10月19日，SC（在形成之间形成的编码）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+      "en": "2026-10-20: 11 bookkeeping notes condensed from 17 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/67fa6090728d7ffc/scientific-inquiry-foundation.json and in git.",
+      "zh": "2026-10-20：11 条记账性说明合并（17 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/67fa6090728d7ffc/scientific-inquiry-foundation.json 和 git 中。"
     }
   ],
   "text_versions": [
@@ -482,6 +443,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/67fa6090728d7ffc/scientific-inquiry-foundation.json",
+      "sha256": "67fa6090728d7ffc4b150ad20b001502a4a3b535ad796503cec16507afa7c62e",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
   ]

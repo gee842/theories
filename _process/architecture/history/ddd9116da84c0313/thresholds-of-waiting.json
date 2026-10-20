@@ -1,0 +1,470 @@
+{
+  "schema_version": 2,
+  "id": "thresholds-of-waiting",
+  "title": {
+    "en": "Thresholds of waiting",
+    "zh": "等待的阈值"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-20T00:09:49+00:00",
+  "statement": {
+    "en": "Where a formation gives as all but its tolerance of what it waits on gave, a set relying on at most its tolerance outside it keeps giving and a thin withholding passes out in one step; restoring needs a formation sparing all it waits on.",
+    "zh": "一个形成在所等待者中除其容忍数之外都给出时给出，则在集合外至多依赖其容忍数的集合保持给出，稀疏的扣留一步消散；恢复需要一个容忍其全部等待者的形成。"
+  },
+  "laws": [
+    {
+      "en": "All but f members of a list hold s: with f = 0 every member, with f at least the length always; it grows with s and f, finds a member that holds or a list at most f long, and holds of nothing exactly where the list is at most f long.",
+      "zh": "列表中除至多 f 个外都满足 s：f = 0 时为每个成员，f 不小于长度时总成立；它随 s 与 f 增大，找到一个满足者或列表长至多 f，对“无一”成立恰当列表长至多 f。",
+      "declarations": [
+        "Becoming.Tolerance.AllBut",
+        "Becoming.Tolerance.AllBut.mono_set",
+        "Becoming.Tolerance.AllBut.mono_count",
+        "Becoming.Tolerance.AllBut.of_length",
+        "Becoming.Tolerance.AllBut.of_length_le",
+        "Becoming.Tolerance.AllBut.zero_all",
+        "Becoming.Tolerance.AllBut.zero_iff",
+        "Becoming.Tolerance.AllBut.found",
+        "Becoming.Tolerance.AllBut.withheld_iff"
+      ]
+    },
+    {
+      "en": "The tolerating law: a formation gives where all but its tolerance of what it waits on gave; with every tolerance 0 its course is that of answers on the listed waits.",
+      "zh": "容忍律：一个形成在所等待者中除其容忍数之外都给出时给出；容忍数全为 0 时其进程即所列等待上 answers 的进程。",
+      "declarations": [
+        "Becoming.Tolerance.tolerating",
+        "Becoming.Tolerance.Listed",
+        "Becoming.Tolerance.tolerating_zero"
+      ]
+    },
+    {
+      "en": "Restoring needs a formation sparing all it waits on: from total withholding a giving formation finds one; such a formation gives at every step after the start; without one, total withholding stays.",
+      "zh": "恢复需要一个容忍其全部等待者的形成：从全部扣留出发，一个给出的形成找到这样一个；这样的形成在开始之后每一步给出；没有这样的形成时全部扣留保持。",
+      "declarations": [
+        "Becoming.Tolerance.gives_needs_sparing",
+        "Becoming.Tolerance.sparing_gives",
+        "Becoming.Tolerance.total_stays"
+      ]
+    },
+    {
+      "en": "A set giving at the start, each member waiting on at most its tolerance outside it, gives at every step whatever the rest does; where the start gives outside W and every formation waits on at most its tolerance inside W, every formation gives from step 1 on.",
+      "zh": "开始时给出、每个成员在集合外至多等待其容忍数的集合，不论其余如何每一步都给出；开始在 W 之外给出且每个形成在 W 内至多等待其容忍数时，每个形成从第 1 步起给出。",
+      "declarations": [
+        "Becoming.Tolerance.kept_set",
+        "Becoming.Tolerance.thin_absorbed"
+      ]
+    },
+    {
+      "en": "The certificate of Becoming.FaultEnvelopes read as a law of giving keeps a covered set giving under separated envelopes, is available at step 1 exactly where the envelope is separated, and without separation a withholding within an admitted fault set stops a domain.",
+      "zh": "Becoming.FaultEnvelopes 的证书读作给出之律：在分隔的包络下保持被覆盖的集合给出；恰在包络分隔处第 1 步可用；不分隔时，落在一个被容许故障集之内的扣留使一个域停止。",
+      "declarations": [
+        "Becoming.Tolerance.certified",
+        "Becoming.Tolerance.certified_kept",
+        "Becoming.Tolerance.certified_available_iff",
+        "Becoming.Tolerance.certified_blocked"
+      ]
+    },
+    {
+      "en": "In three formations each waiting on the other two, one withholding spreads to all from step 2 with tolerance 0 (at step 1 first still gives), passes out at step 1 with tolerance 1, and with tolerance 1 total withholding is kept at every step.",
+      "zh": "在三个各等待另外两个的形成中，一处扣留在容忍 0 时从第 2 步起扩散到全部（第 1 步 first 仍给出），在容忍 1 时于第 1 步消散，而容忍 1 下全部扣留在每一步保持。",
+      "declarations": [
+        "Becoming.Tolerance.Triad.spreads",
+        "Becoming.Tolerance.Triad.absorbed",
+        "Becoming.Tolerance.Triad.total_kept",
+        "Becoming.Tolerance.Triad.total_at_two"
+      ]
+    },
+    {
+      "en": "On a web whose conditions each depend only on themselves, need k units and are given one by each upstream formation supported the step before, with k at most the number upstream, support is the run of the tolerating law with tolerance the number upstream less k; with k all upstream it is Withholding's law without memory.",
+      "zh": "在每个条件只依赖自身、需要 k 个单位、由上一步每个受支持的上游形成各给一个单位（k 不超过上游数）的网上，支持就是容忍数为上游数减 k 的容忍律之运行；k 取全部上游时即 Withholding 的无记忆之律。",
+      "declarations": [
+        "Becoming.Tolerance.countTrue",
+        "Becoming.Tolerance.countTrue_add_not",
+        "Becoming.Tolerance.allBut_iff_count",
+        "Becoming.Tolerance.allBut_sub_iff",
+        "Becoming.Tolerance.KeepsInclusion.course_iff",
+        "Becoming.Tolerance.web_tolerating",
+        "Becoming.Tolerance.web_activity_tolerating",
+        "Becoming.Tolerance.web_answers",
+        "Becoming.Tolerance.giftLevels",
+        "Becoming.Tolerance.giftWeb",
+        "Becoming.Tolerance.giftWeb_tolerating"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom and no premise about the formations: what each waits on is a given list, so a formation waiting twice on one counts it twice; tolerances are given numbers. The certificate law takes rosters and envelopes as given, as Becoming.FaultEnvelopes does. Every main law is stated on runs Law.run.",
+      "zh": "不加公理，对形成不加前提：每个形成所等待者是给定的列表，故两次等待同一者计两次；容忍数是给定的数。证书律如 Becoming.FaultEnvelopes 一样以名册与包络为给定。每条主要定律都陈述在运行 Law.run 上。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Amounts of giving; thresholds with memory; how tolerances form.",
+      "zh": "给出的数量；有记忆的阈值；容忍数如何形成。",
+      "kind": "scope"
+    },
+    {
+      "en": "That tolerance is good, or how much a collective should tolerate.",
+      "zh": "容忍是好的，或一个集体应容忍多少。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T083316.966154Z): the 65 declarations of Becoming.Tolerance, 52 of them theorems, have empty axiom reports; the checker verifies core purity. Built and reviewed in one session, with no separate reviewer; author review in study section 194; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T083316.966154Z）：Becoming.Tolerance 的 65 项声明（52 项定理）公理报告为空；检查器并核对核心纯净。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 194 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Amounts of giving and thresholds with memory; the tolerating law as an instance of an envelope law; webs whose conditions depend on others than themselves; an independent review.",
+    "zh": "给出的数量与有记忆的阈值；容忍律作为包络律的实例；条件依赖自身以外者的网；独立审查。"
+  },
+  "correspondence": {
+    "en": "An account of social viability Ren brought on 19 October 2026 lists eight constraints and a unifying ninth; V carried the fourth, cooperation among strangers, by Becoming.Withholding and left amounts of giving, thresholds of waiting and fault tolerance as an instance open. Ren's words are provenance, not warrant; the reading onto collectives is the AI's (D48).",
+    "zh": "Ren 于 2026年10月19日带来的一段社会可存续性文字列出八条约束与统一它们的第九条；V 以 Becoming.Withholding 承载第四条（陌生人之间的合作），留下给出的数量、等待的阈值与作为实例的容错待解。Ren 的话是出处，不是依据；读到集体上是 AI 的（D48）。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tolerance.lean",
+  "aliases": [
+    "thresholds of waiting",
+    "等待的阈值",
+    "tolerance",
+    "Becoming.Tolerance.kept_set",
+    "Becoming.Tolerance.thin_absorbed",
+    "fault tolerance in giving (reading)"
+  ],
+  "dependencies": [
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Law.orbit and the run of a determined law, Law.run, whose states are the orbit.",
+        "zh": "复用 Law.orbit 与决定性律的运行 Law.run，其状态即轨道。"
+      },
+      "interface": {
+        "output": {
+          "en": "The course of a determined law as a run of the spine.",
+          "zh": "决定性律的进程作为脊柱的运行。"
+        },
+        "input": {
+          "en": "The courses the laws are stated on.",
+          "zh": "诸定律所陈述的进程。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "giving-that-waits-on-giving",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the laws waitsAll, answers and givesFirst, chains of waits and their closed form answers_closed, and the ring of three.",
+        "zh": "复用 waitsAll、answers 与 givesFirst 三条律、等待链及其闭式 answers_closed，以及三元环。"
+      },
+      "interface": {
+        "output": {
+          "en": "The laws of giving that waits on giving, their chains and the ring.",
+          "zh": "等待给出的给出之律、其链与环。"
+        },
+        "input": {
+          "en": "The family whose restoring is characterized; the ring restated as an instance.",
+          "zh": "其恢复被刻画的族；环被重述为实例。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Withholding.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "restoring-giving-from-the-worst-start",
+      "detail": {
+        "en": "The tolerating law keeps inclusion, so its restoring is read off the course from total withholding.",
+        "zh": "容忍律保持包含，故其恢复由全部扣留出发的进程读出。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tolerance.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Tolerance.AllBut",
+        "Becoming.Tolerance.AllBut.found",
+        "Becoming.Tolerance.AllBut.mono_count",
+        "Becoming.Tolerance.AllBut.mono_set",
+        "Becoming.Tolerance.AllBut.of_length",
+        "Becoming.Tolerance.AllBut.of_length_le",
+        "Becoming.Tolerance.AllBut.withheld_iff",
+        "Becoming.Tolerance.AllBut.zero_all",
+        "Becoming.Tolerance.AllBut.zero_iff",
+        "Becoming.Tolerance.Clear",
+        "Becoming.Tolerance.Clear.append",
+        "Becoming.Tolerance.Clear.chain",
+        "Becoming.Tolerance.Clear.iterate",
+        "Becoming.Tolerance.Clear.last",
+        "Becoming.Tolerance.Clear.last_of_eq",
+        "Becoming.Tolerance.KeepsInclusion",
+        "Becoming.Tolerance.KeepsInclusion.course",
+        "Becoming.Tolerance.Listed",
+        "Becoming.Tolerance.Ring.isFirst_decided",
+        "Becoming.Tolerance.Ring.no_clear_three",
+        "Becoming.Tolerance.Ring.restores_from_three",
+        "Becoming.Tolerance.Triad",
+        "Becoming.Tolerance.Triad.absorbed",
+        "Becoming.Tolerance.Triad.firstOnly",
+        "Becoming.Tolerance.Triad.oneWithheld",
+        "Becoming.Tolerance.Triad.spreads",
+        "Becoming.Tolerance.Triad.step_first",
+        "Becoming.Tolerance.Triad.step_second",
+        "Becoming.Tolerance.Triad.step_third",
+        "Becoming.Tolerance.Triad.tol0",
+        "Becoming.Tolerance.Triad.tol0_spares_none",
+        "Becoming.Tolerance.Triad.tol1",
+        "Becoming.Tolerance.Triad.tol1_spares_none",
+        "Becoming.Tolerance.Triad.total_at_two",
+        "Becoming.Tolerance.Triad.total_kept",
+        "Becoming.Tolerance.Triad.ups",
+        "Becoming.Tolerance.allWithheld",
+        "Becoming.Tolerance.answers_keeps",
+        "Becoming.Tolerance.answers_restores_iff",
+        "Becoming.Tolerance.certified",
+        "Becoming.Tolerance.certified_available_iff",
+        "Becoming.Tolerance.certified_blocked",
+        "Becoming.Tolerance.certified_kept",
+        "Becoming.Tolerance.clear_loop_withholds",
+        "Becoming.Tolerance.clear_withholds",
+        "Becoming.Tolerance.givesFirst_keeps",
+        "Becoming.Tolerance.givesFirst_restores_of_answers",
+        "Becoming.Tolerance.gives_needs_sparing",
+        "Becoming.Tolerance.gives_of_no_clear",
+        "Becoming.Tolerance.kept_set",
+        "Becoming.Tolerance.restored_stays",
+        "Becoming.Tolerance.restores_from",
+        "Becoming.Tolerance.restores_iff",
+        "Becoming.Tolerance.rises_from_withheld",
+        "Becoming.Tolerance.rises_le",
+        "Becoming.Tolerance.sparing_gives",
+        "Becoming.Tolerance.thin_absorbed",
+        "Becoming.Tolerance.tolerating",
+        "Becoming.Tolerance.tolerating_keeps",
+        "Becoming.Tolerance.tolerating_zero",
+        "Becoming.Tolerance.total_stays",
+        "Becoming.Tolerance.waitsAll_keeps",
+        "Becoming.Tolerance.waitsAll_never_restores",
+        "Becoming.Tolerance.withheld_kept",
+        "Becoming.Tolerance.worst_start",
+        "Becoming.Tolerance.countTrue",
+        "Becoming.Tolerance.countTrue_add_not",
+        "Becoming.Tolerance.allBut_iff_count",
+        "Becoming.Tolerance.allBut_sub_iff",
+        "Becoming.Tolerance.KeepsInclusion.course_iff",
+        "Becoming.Tolerance.web_tolerating",
+        "Becoming.Tolerance.web_activity_tolerating",
+        "Becoming.Tolerance.web_answers",
+        "Becoming.Tolerance.giftLevels",
+        "Becoming.Tolerance.giftWeb",
+        "Becoming.Tolerance.giftWeb_tolerating"
+      ],
+      "sha256": "bed16b437b52b61107503ee8f810041295e31ba7dd79194363c5e37999b60145"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FaultEnvelopes.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.FaultEnvelopes.certificate_available",
+        "Becoming.FaultEnvelopes.availability_iff_separated",
+        "Becoming.FaultEnvelopes.correlated_three_blocks"
+      ],
+      "sha256": "92659681418cbe0116d711a2d060919ce26abb3d837351892e3137e545e48ab7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Withholding.lean",
+      "role": "proof",
+      "sha256": "f064373e1adf6dc1355174342c235a0a40d2c371f39153151f4095a47bfa0aa9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083316.966154Z/verification.json",
+      "role": "receipt",
+      "sha256": "3a3ded5d10aeab31161be164deeb33d767f2f529249a89a3adc3152083bc74fc"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
+      "role": "provenance",
+      "sha256": "a47624d5a4b6fae8f4d5a7cb7a47dc0c4ce82c233e5fe59f6dd490ecf35f7db9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "e5da917c9c99ba89e89644785dff84e123847b71ffc8e3c2b5f7f2d26784b210",
+      "declarations": [
+        "Becoming.Web.Supported"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "role": "receipt",
+      "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tolerance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Tolerance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (V2), taking two items of the open remainder that V (study section 193) named in chapter section 8.2, \"Collective continuation\": thresholds of waiting with the laws that restore giving in a general family, and fault tolerance joined to Becoming.FaultEnvelopes; study section 194.",
+      "zh": "2026年10月19日：新增（V2），承接 V（研究第 193 节）在第 8.2 节“集体延续”中列出的开放余项中的两项：等待的阈值与一般族中恢复给出的律，以及与 Becoming.FaultEnvelopes 相接的容错；研究第 194 节。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (theorems apart from the base): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U3 added study section 196; THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, E1 (premises read off one exchange): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: E1 added study section 194; THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3 (Becoming.HexagramLaws): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y3 added a study section). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3（Becoming.HexagramLaws）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section). The claim is unchanged.",
+      "zh": "2026年10月19日，SG（关节、交换之律与第三值）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，X1b（护闭诸文合于关节律的确切范围）：BECOMING-RENEWAL-READING.md 重新指向。自本记录所审哈希以来，所引文字只在第 199 节改动：其护闭读法现说保持是在自 s 起的路径上保住 s 的最大闭（`keeping_greatest`），由 X1b 改。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SC (a code formed between formations): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in sections 4, 8 and 9: SC added a section 4 paragraph on a code formed between formations, a clause to the collective continuation row, a section 8.3 item and a rerun sentence in the integration row, and brought the section 9 receipt and counts to its run. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，SC（在形成之间形成的编码）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 4、8、9 节改动：SC 在第 4 节加入关于在形成之间形成的编码的一段，在集体延续一行加入一句，在 8.3 节加入一项，在整合行加入一句重跑，并把第 9 节的回执与计数更新到其运行。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RC (capture through the rule): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in the collective continuation row of section 8, where RC added capture through the rule (Becoming.RuleCapture) to what is stated, rules that read more than the share to what is open, and its record to the links. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，RC（经由规则的捕获）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节集体延续一行改动：RC 把经由规则的捕获（Becoming.RuleCapture）加入已陈述者，把读出多于份额的规则加入未决者，并加入其记录的链接。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RG (two-sided regulation and late reading): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，RG（双向调节与迟读）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Tolerance.lean). Re-pointed after reading the change (Recurrence.lean: declarations moved in or out by W2; Withholding.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：THE-THEORY-OF-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R23 (the refutation laws however a family is listed): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R23 changed them: THE-THEORY-OF-BECOMING.md, the listing paragraph and §8.2 row name Becoming.ListingRefutations; §9 counts and receipt follow R23. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R23（否证律对任何列出方式成立）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R23 改动之处改动：THE-THEORY-OF-BECOMING.md，列出一次一段与 §8.2 行写入 Becoming.ListingRefutations；§9 计数与回执随 R23。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the paragraph on what a finite stretch refutes cites Refutable.not_not, proved in Horizon from the law for points; §9 counts and receipt follow R26. The claim is unchanged.",
+      "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，有限片段所否证者一段改引 Refutable.not_not（Horizon 由点的律证明）；§9 计数与回执随 R26。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R27 (the stepwise classes and loss): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, §6.8 gains the bullet on the stepwise classes and loss; §9 counts and receipt follow R27. The claim is unchanged.",
+      "zh": "2026年10月20日，R27（逐步类别与失去）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，§6.8 新增逐步类别与失去一条；§9 计数与回执随 R27。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; Withholding.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；Withholding.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; FaultEnvelopes.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；FaultEnvelopes.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Tolerance.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Tolerance.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Withholding.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Tolerance.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Tolerance.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Withholding.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (G7, collective laws on webs): a law added, the tolerance law as the run of a web (web_tolerating, web_activity_tolerating, giftWeb_tolerating) with Withholding as k all upstream (web_answers), in Becoming.Tolerance with no new import; the next step names webs whose conditions depend on others. Study section 224. Also: Proof bindings (Tolerance.lean) rebound to core receipt 20261019T235844.485705Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; Tolerance.lean, the tolerance law as the run of a web (web_tolerating, web_answers, giftWeb_tolerating) added; kept statements unchanged; Withholding.lean, prose follows the joins (predicts where it said rests, factor where it said strength) or imports follow the joined modules; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33.",
+      "zh": "2026年10月20日，R33（G7，网上的集体之律）：新增一条规律，容忍律作为网的运行（web_tolerating、web_activity_tolerating、giftWeb_tolerating），k 取全部上游时即 Withholding（web_answers），在 Becoming.Tolerance 中且不加导入；下一步列出条件依赖他者的网。研究第 224 节。另：证明绑定（Tolerance.lean）改到核心回执 20261019T235844.485705Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；Tolerance.lean，新增容忍律作为网的运行（web_tolerating、web_answers、giftWeb_tolerating）；保留的陈述不变；Withholding.lean，说明随并合（以“预测”代“停于”，以“倍率”代“强度”）或导入随并入的模块；保留的陈述不变；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

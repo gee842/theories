@@ -71,12 +71,13 @@ Aliases: —
 
 - 2026-10-09: followed Ren’s direction to continue with public data, extending the 16-person recovery study with complete 24-person updating correspondence while preserving results against monotonic strengthening.
 - 2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the integration study's updating correspondence. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/context-sensitive-updating-correspondence.md); the exact earlier record is text_versions[0].
-- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](context-sensitive-updating-correspondence.json).
+- 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](context-sensitive-updating-correspondence.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text
 
 - [context-sensitive-updating-correspondence.json](../../../../_process/architecture/history/f6253c93a1da6067/context-sensitive-updating-correspondence.json) (sha256 `f6253c93a1da6067…`): Exact record bytes before the readability migration (schema 1).
+- [context-sensitive-updating-correspondence.json](../../../../_process/architecture/history/b89fa1ce786bb510/context-sensitive-updating-correspondence.json) (sha256 `b89fa1ce786bb510…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

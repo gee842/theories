@@ -1,0 +1,307 @@
+{
+  "schema_version": 2,
+  "id": "formed-software-continuation",
+  "title": {
+    "zh": "共同软件活动的接续与依存限度",
+    "en": "Continuation and dependence within shared software activity"
+  },
+  "kind": "assessment",
+  "status": "reviewed-scoped",
+  "family": "F06",
+  "reviewed_at_utc": "2026-10-13T23:30:00+00:00",
+  "statement": {
+    "zh": "LibreOffice的选定历史说明部分改组和过渡承担可以支撑活动先于最终法人完成；Narwhal的日期化接续进一步显示，运行改造后仍可保留原API依存，其作者对将来改价的顾虑进入月度承诺安排。",
+    "en": "Selected LibreOffice history supports activity under partial reorganization before final incorporation; Narwhal’s dated continuation further shows retained API dependence after operational adaptation, with stated concern about future repricing entering monthly commitments."
+  },
+  "hypotheses": [
+    {
+      "zh": "保留七份LibreOffice相关声明；另新增核读五篇API开发者帖并复核两份旧声明。区分两份新HTML与网页读取表示，现取历史页可能有后期编辑；无完整合同、账目、持续运行测试或匹配对照。",
+      "en": "Retains seven LibreOffice-related statements; additionally examines five API developer posts and rereads two earlier statements. Distinguishes two new HTML responses from web-reader representations; currently retrieved historical pages can be edited. No complete contract, ledger, uptime test or matched comparison."
+    },
+    {
+      "zh": "既有代码、工作、协作和过渡承担是具体形成条件；不将新的组织身份当作独立起始实体，不假定支持种类可互换。",
+      "en": "Existing code, work, coordination and interim support are specific formation conditions; a new organizational identity is not an independent starting entity, and support types are not assumed interchangeable."
+    },
+    {
+      "zh": "技术、订阅、准入与改组条件在同一共同活动中形成；Apollo与Narwhal的旧承担和开发状态不同，公开计划不自动等于有执行保证的安排。",
+      "en": "Technical, subscription, access and reorganization conditions form within shared activity; Apollo and Narwhal differ in inherited commitments and development state, and public plans are not automatically executable assurances."
+    }
+  ],
+  "correspondence": {
+    "zh": "LibreOffice版本接入Ubuntu beta，过渡协会早于基金会法人；Narwhal由未完成计划到公开接续与发布，其主帖明示未来API涨价顾虑影响年度／月度承诺选择。前者是产品—分发接口，后者是声明的条件—承诺规则对应；没有反馈闭环识别或x、β、C适配。",
+    "en": "LibreOffice enters Ubuntu beta before foundation incorporation under interim association support; Narwhal progresses from an incomplete plan to public continuation and release, with its main post explicitly relating anticipated API increases to annual/monthly commitments. These are product-distribution and stated condition-commitment correspondences, not identified feedback closure or x/beta/C adapters."
+  },
+  "canonical_source": "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "market-finite-support-obstruction",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "以既有失败定理的固定扩展／供给范围为边界，检查真实组织改组中被省略的关系；不构造Lean适配。",
+        "en": "Uses the inherited obstruction theorem’s fixed expansion/provision scope to examine relationships omitted by that market account; no Lean adapter is constructed."
+      },
+      "interface": {
+        "output": {
+          "zh": "固定增长与支持规律内的普遍失败区间及其控制范围。",
+          "en": "Universal failure interval and control scope under fixed growth and support laws."
+        },
+        "input": {
+          "zh": "核对实际发布、分发和过渡支持是否仍属于该固定范围。",
+          "en": "Assess whether actual release, distribution and interim support remain inside that fixed scope."
+        },
+        "conditions": {
+          "zh": "原定理不变；新形成关系需要独立证据，个案不提供数量化参数。",
+          "en": "Original theorem unchanged; newly formed relations require independent evidence and the case supplies no quantitative parameters."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "effective-capacity-and-eventual-reachability",
+      "detail": {
+        "zh": "信用准备、当前能力与实际行使的旧区分；本例增加历史对应，不重复证明。",
+        "en": "Credits the inherited distinction between preparation, current capacity and exercise; adds historical correspondence, not a repeated proof."
+      }
+    },
+    {
+      "id": "alignment-direction-g0-j",
+      "detail": {
+        "zh": "对有效承接、机构改变和真实损失的规范应用仍依G0/J/E；历史成功不独自证明整体更好。",
+        "en": "Normative use for effective succession, institutional change and real losses retains G0/J/E; historical success alone does not establish whole improvement."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "detail": {
+        "zh": "保留Apache另一接续、受限本金、实际重构成本及beta范围；Narwhal限制全部第三方退出叙事，却未说明准入控制消失。Apollo停止不证明所有救助不可能；Narwhal成功不证明全部用户损失已被替代。",
+        "en": "Retains Apache’s other continuation, restricted capital, reconstruction costs and beta scope; Narwhal limits universal third-party exit claims without establishing lost access control. Apollo’s ending does not prove every rescue impossible; Narwhal’s success does not establish replacement of all users’ losses."
+      }
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "不是新的普遍规律、数值相变或最低过渡时间。",
+      "en": "It is not a new universal law, numerical phase transition or minimum transition time.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不是因果识别或强零公理奠基。",
+      "en": "It is neither a causal identification nor a strong axiom-free foundation.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "日期化的现取声明不是同期冻结证据或事前预测；未知协商与账目不能补写。",
+      "en": "Dated current statements are not frozen contemporaneous evidence or prospective predictions; undisclosed negotiations and ledgers cannot be supplied.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "运行适应、替换具体依存及改变后续改组控制需分别证明。",
+      "en": "Operational adaptation, replacement of a dependency and changed control over later adaptation need separate evidence.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "当前只有规则影响的下游对应，完整返回闭环仍缺。",
+      "en": "Only downstream rule influence is traced; the return loop is missing.",
+      "kind": "scope"
+    }
+  ],
+  "progress": [
+    {
+      "zh": "经过渡关系的形成：新法人完成前，发布与另一发行关系已由过渡协会的承担承接；改组能力取决于关键关系能否保留、承接或重建。",
+      "en": "Formation through transition: releases and another distribution relation proceed under interim association support before incorporation; reorganization capacity depends on retaining, carrying or rebuilding the key relations.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#43-理论推进形成可以由过渡关系支撑而不必等待最终组织完成"
+    },
+    {
+      "zh": "保留的依存：客户端在原准入关系中改造运行后继续；平台持续接入条件经作者明示理由进入其承诺期限。",
+      "en": "Retained dependence: a client continues after operational adaptation within the original access relation; continuing access conditions enter its commitment horizon through the author's stated reasons.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#49-新连接规则变动进入了进一步承诺的形成"
+    }
+  ],
+  "validation_scope": {
+    "zh": "原七份HTML检查保持；新增八份来源文档的表示、哈希、作者主帖锚点及日期次序核对。作者反审，平台和开发者声明保留利害位置；无新Lean、独立agent、合同审计或软件执行。",
+    "en": "Original seven-HTML checks retained; eight additional documents are checked for representation, hashes, main-author anchors and milestone order. Author counterreview retains operator/developer interests; no new Lean, independent agent, contract audit or software execution."
+  },
+  "references": [
+    {
+      "path": "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "role": "statement",
+      "sha256": "3b483acfdfcaa141c19af92ce271af61002b2b398ff0825ed86052db8fe239ce",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "role": "review",
+      "sha256": "6000245fbadd7a5b1dacc0740efcebedceb6707f2da5db863159e5894590755d",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/libreoffice-formation/README.md",
+      "role": "provenance",
+      "sha256": "0fc2949897365be5c44c5896ecf6e594ff554086e64ce21e9e90839e3889134c",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/libreoffice-formation/manifest.json",
+      "role": "provenance",
+      "sha256": "1a8ecb6a7b754d700cf577ceb2ea058c8f55016141f05e232a4685b959856c24",
+      "declarations": []
+    },
+    {
+      "path": "experiments/market-generativity/formation-correspondence/libreoffice-source-checks.json",
+      "role": "receipt",
+      "sha256": "45374596b090db2ee52af3a0ad0c5ba96fb6d8e012dbc30776ce74c6e1a20063",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/libreoffice-formation/2010-09-28-launch.html",
+      "role": "provenance",
+      "sha256": "504944b79a3cb7fd2df45161f2034a8627233577d0d1707f742b1c003909b99a",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/libreoffice-formation/2011-01-25-first-stable.html",
+      "role": "provenance",
+      "sha256": "3c3a84e4d311db06c28516cb659b4de6af9f49e1b2dd6be941f7693787d9ffc5",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/libreoffice-formation/2011-02-25-endowment.html",
+      "role": "provenance",
+      "sha256": "753b8ddeae8279cd5cb8da63c85eee5e924bea44d720c1ac8ef6f81ffe1ec3ab",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/libreoffice-formation/2011-03-22-continued-release.html",
+      "role": "provenance",
+      "sha256": "59617d7cb1aefb29b7204e65fa98358a6d9bff71b6f646530bb08b7b959d15f3",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/libreoffice-formation/2011-03-31-ubuntu-beta.html",
+      "role": "provenance",
+      "sha256": "450e528c0d5dfa9d2217af65eaea54aa6bb630fdcbc57f063b876557bf2b1311",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/libreoffice-formation/2012-02-20-incorporation.html",
+      "role": "provenance",
+      "sha256": "68bac83fbee628eb9dce51bd600b13e72562c9b2e3104770fc36022efe525c74",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/libreoffice-formation/2012-10-apache-continuation.html",
+      "role": "provenance",
+      "sha256": "48b85c0608701a560cfa3e48bf83e4be59e488c6ee54abbbe9d6cf53faa6bb69",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/api-transition/README.md",
+      "role": "provenance",
+      "sha256": "39e935ff5c9d4ee9f0f06949a57f9965e630f287a0f327cb487f895fd7835697",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/api-transition/manifest.json",
+      "role": "provenance",
+      "sha256": "4a6090f630c67758c1cbe9f50e2b34a36b3117d4c426eec89142689ec9f486d1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/market-generativity/formation-correspondence/api-transition-source-checks.json",
+      "role": "receipt",
+      "sha256": "cbf044e7780ca06c013baf2d88e2f21dff780b35a61a35183f5aee763fbd249f",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/api-transition/2023-06-08-apollo-plan.web.txt",
+      "role": "provenance",
+      "sha256": "72e0df3e39c2cffbd12c0ba6aa069c7e723a56c38195e431b435329e54d85d94",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/api-transition/2023-06-08-narwhal-unfinished.web.txt",
+      "role": "provenance",
+      "sha256": "6fb9daaef750d7d2ee989ef64344af4e270adbe6dda363e01883afc3a9a05dd2",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/api-transition/2023-06-27-narwhal-bridge.web.txt",
+      "role": "provenance",
+      "sha256": "b10d071cd787eb2141e6c77e714a56a00c62b50bd1e742ba5805c446dc3987c7",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/api-transition/2023-09-27-narwhal-release.web.txt",
+      "role": "provenance",
+      "sha256": "3c2d1ddd0c78c65e9e4d29c5ceb12d609497d629bb6fa076835dd967c5eb31f9",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/api-transition/2023-10-09-narwhal-pricing.web.txt",
+      "role": "provenance",
+      "sha256": "894bf245aa6cc9597eb55a53035c3f215cf195c674c08269c78f57d98681fa03",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/api-transition/2023-06-15-reddit-facts.html",
+      "role": "provenance",
+      "sha256": "317dd143aba165f5cdffd06161b5c5bae3a6469bd6894ac722570c74ec5d76ca",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/api-transition/apollo-homepage.html",
+      "role": "provenance",
+      "sha256": "3880df742d6d38674f9ae78798bbd5e7f0140a63ea89aeacabe9109a3725111f",
+      "declarations": []
+    },
+    {
+      "path": "sources/market-generativity/api-transition/post-dates.web.txt",
+      "role": "provenance",
+      "sha256": "227edc303202444bfb1ee88b72f8dadcbe5ec02947be3539374b59389b36ba78",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [],
+  "next_delta": {
+    "zh": "以具体过渡契约／实施记录识别足够时间；另行追踪下游适应或退出返回到规则维持和修改的证据，以检验完整元吸引子机制；数量化适配先给出单位与速率根据。",
+    "en": "Identify sufficient transition time from specific transition agreements and implementation evidence; separately, trace the return from downstream adaptation or exit to rule maintenance and revision to test a full meta-attractor mechanism; warrant units and rates before quantitative adaptation."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：从有限支持阻碍接续实际组织形成，保存七份一手声明并核对发布／分发与法人完成的次序；不把历史对应计为新数学或独占理论。",
+      "en": "2026-10-09: continued from finite-support obstruction to actual organizational formation, preserving seven primary statements and checking release/distribution before incorporation; no new mathematics or exclusive theory is claimed."
+    },
+    {
+      "zh": "2026-10-09：原题“共同软件活动形成独立接续”的同一评估接续API变化史。新增五篇作者帖，复核两份旧声明；明确现取／后改限制，并把存续与改组控制分开。旧LibreOffice材料、原证明和失败情形保留，不新计结果。",
+      "en": "2026-10-09: extends the same assessment previously titled “Independent continuation formed within shared software activity” with API-change history. Five developer posts and two reread statements distinguish continuation from reorganization control, with current-retrieval/editing limits. LibreOffice evidence, earlier proofs and failures remain; no additional result counted."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张第一句成为陈述，第二句（Apollo 的终止和不同旧承担同时保留）由反例与第三条前提承担；限制句拆为 5 项分类“未表明”；下一步第一句（两种接续对应已完成）成为 2 行带锚点的“已接通”，其余改为正面表述，内容不变。主张、前提、状态、依赖、关联、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/formed-software-continuation.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim's first sentence became the statement, and its second (Apollo's ending and different inherited commitments remain) is carried by the counterexample and the third hypothesis; the limitations became 5 typed does-not-show items; the next step's first sentence (both continuation correspondences complete) became 2 anchored progress lines, and the rest is restated positively with the same content. No claim, premise, status, dependency, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/formed-software-continuation.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in MARKETS-AND-GENERATIVE-REGIMES.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): MARKETS-AND-GENERATIVE-REGIMES.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): MARKETS-AND-GENERATIVE-REGIMES.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/684c3131cc0de0e5/formed-software-continuation.json",
+      "sha256": "684c3131cc0de0e58dcb6cab2ed5b4c0ffab827253902147f4c4d79db8a041dd",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
+    }
+  ]
+}

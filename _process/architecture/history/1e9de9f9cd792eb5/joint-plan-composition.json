@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "id": "joint-plan-composition",
+  "title": {
+    "zh": "局部方案的共同接续",
+    "en": "Joint continuation of local plans"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "真实共同作用可投影到局部作用、初始证据覆盖、各局部方案成功且递推共同可实施时，配对方案保持两项终点要求。",
+    "en": "When joint effects project to local effects, initial evidence covers projections, both local plans work and recursive joint executability holds, the zipped plan achieves both endpoint requirements."
+  },
+  "hypotheses": [
+    {
+      "zh": "共同历史 X 的两个投影、同一有限步数；project、初始覆盖、两份 works 及 compatible。",
+      "en": "Two projections of one history X, a common finite horizon, project, initial coverage, both local works hypotheses and compatible."
+    }
+  ],
+  "correspondence": {
+    "zh": "共同活动造成的实际作用必须仍在局部规律中；每个后续记录分支都需可执行。",
+    "en": "Actual joint effects must remain covered by local laws; every subsequent observation branch must be executable."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean",
+  "aliases": [
+    "JointContinuation.joint_plan_composition",
+    "Becoming.Viability.Plan.zip_keeps",
+    "Becoming.Viability.Plan.compatible_of_zip_keeps"
+  ],
+  "dependencies": [
+    {
+      "id": "finite-continuation-plans",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Becoming.Keeping 的方案与保持（Plan、Plan.Keeps）及外围的方案互译（ContinuationCorrespondence.toPlan）；共同方案是两部分方案的合成。",
+        "en": "Reuses Becoming.Keeping’s plans and keeping (Plan, Plan.Keeps) and the periphery’s translation of plans (ContinuationCorrespondence.toPlan); a joint plan composes the parts’ plans."
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "draws-on-a-shared-stock",
+      "detail": {
+        "zh": "共同耗尽关联不等于已证明的类型转换。",
+        "en": "The shared depletion issue does not establish a proved type translation."
+      }
+    },
+    {
+      "id": "exclusive-footprint-support",
+      "detail": {
+        "zh": "共同方案有时间和观察条件，不能由静态叶项支持自动导出。",
+        "en": "Joint plans have timing and observation conditions not automatically supplied by static leaf support."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean",
+      "detail": {
+        "zh": "同一二单位储备上两份两步局部方案会在共同第二步失败；单独成功和改成先后都不自动修复。",
+        "en": "Two locally successful two-step plans on the same two-unit reserve fail at the second joint step; separate success or serialization alone does not repair this."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "同一二单位储备上两份两步局部方案会在共同第二步失败；单独成功和改成先后都不自动修复。",
+    "en": "Two locally successful two-step plans on the same two-unit reserve fail at the second joint step; separate success or serialization alone does not repair this."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean",
+      "role": "proof",
+      "sha256": "e3ef0f5a62365fb29dc2adbd36b3552b17ac85a010905013daefe8ffb3671a30",
+      "declarations": [
+        "JointContinuation.joint_plan_composition",
+        "JointContinuation.joint_second_step_fails",
+        "JointContinuation.serialization_without_renewal_fails"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/joint-continuation-verification.json",
+      "role": "receipt",
+      "sha256": "b94ff50ff09ef8ea75fecdad00eacc59ed838303bebf9acbf8dd8a85d26b8cef",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-CONTINUATION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "7a9a1db3adcaf7d4b1f18ebff8b3c8d7fa6c360818c7ecf86a04a8a8b197bf70",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Keeping.lean",
+      "role": "proof",
+      "sha256": "8911dc0d19d975ee30a0b1a2dbc4d013fe9fe5db846abc88e4d49219f12983b4",
+      "declarations": [
+        "Becoming.Viability.Plan",
+        "Becoming.Viability.Plan.Keeps",
+        "Becoming.Viability.Plan.zip",
+        "Becoming.Viability.jointSense",
+        "Becoming.Viability.Plan.Compatible",
+        "Becoming.Viability.Plan.zip_keeps",
+        "Becoming.Viability.Plan.compatible_of_zip_keeps"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean",
+      "role": "proof",
+      "sha256": "cd28afbeb20d83a45f7940d4e5625465ab15dea71eddf509b1bb5de569d3e9cc",
+      "declarations": [
+        "Becoming.ContinuationCorrespondence.toPlan",
+        "Becoming.ContinuationCorrespondence.toPlan_zip",
+        "Becoming.ContinuationCorrespondence.compatible_iff",
+        "Becoming.ContinuationCorrespondence.joint_plan_composition_by_core",
+        "Becoming.ContinuationCorrespondence.compatibility_necessary_by_core"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-correspondence-checks/20261015T151901.978501Z/verification.json",
+      "role": "receipt",
+      "sha256": "e974b521d60b0f4799acda98f10aef4d768509878d4add899992752842ca823f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/check_continuation_correspondence.py",
+      "role": "provenance",
+      "sha256": "7fc382aeeb75f2af415ca1e0d9ce38b163da35e583957893c978569db9cc1784",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/joint-continuation-verification.json",
+      "sha256_pointer": "/modules/1/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Keeping.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Keeping",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-correspondence-checks/20261015T151901.978501Z/verification.json",
+      "sha256_pointer": "/source_sha256/ContinuationCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "复用一般组合定理；应用需证明实际 project 与 compatible，不能只链接两份局部证明。",
+    "en": "Reuse the composition theorem; applications must establish actual project and compatible, not merely link two local proofs."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-15，整合 I3c（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Keeping 的共同方案）。两部分的方案合成一个成对之步的方案，各部分依自己的登记继续（Plan.zip、jointSense）。每个共同之步投影为各部分之步、共同之类落在两部分方案所保持之类之上、成对之步处处可用（Plan.Compatible）时，共同方案保持两个守卫，不加前提（Plan.zip_keeps）；每个保持守卫的共同方案其成对之步都处处可用（Plan.compatible_of_zip_keeps）。投影与共同可用是分开的条件，都不由两部分各自的方案推出。外围实例：JointContinuation 的配对即核心的 Plan.zip（ContinuationCorrespondence.toPlan_zip），递推的共同可施行即 Plan.Compatible（compatible_iff），故 joint_plan_composition 与 compatibility_necessary 由核心律给出（joint_plan_composition_by_core、compatibility_necessary_by_core）；二者提及以两个带指标方案的匹配定义的 zipPlan，编译后用 propext。外围证明及其回执保持原范围。Becoming.Keeping 由核心运行审计（回执 20261015T150956.178111Z，公理报告为空）；外围实例模块 ContinuationCorrespondence 由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T151901.978501Z）：单一方案的对应与可列举的情形公理报告为空，Classical.choice 只在 classicalChoice 与 viable_iff_plan_by_core 中，共同方案的几条用 propext 与 Quot.sound。",
+      "en": "15 October 2026, integration I3c (Ren: “a lot proofs are probably not integrated”): stated on the spine (the joint plans of Becoming.Keeping). Two parts’ plans run together as one plan of pairs, each part continuing by its own registration (Plan.zip, jointSense). Where every joint step projects onto a step of each part, the joint class lies over classes the parts’ plans keep and the paired moves are usable throughout (Plan.Compatible), the joint plan keeps both guards, with no premise (Plan.zip_keeps); every joint plan that keeps a guard has its paired moves usable throughout (Plan.compatible_of_zip_keeps). Projection and joint usability are separate conditions, neither following from the parts’ plans. Periphery instance: JointContinuation’s pairing is the core’s Plan.zip (ContinuationCorrespondence.toPlan_zip) and recursive joint executability is Plan.Compatible (compatible_iff), so joint_plan_composition and compatibility_necessary follow from the core laws (joint_plan_composition_by_core, compatibility_necessary_by_core); both mention zipPlan, defined by a match on two indexed plans, which compiles through propext. The periphery proofs and their receipts keep their scope. Becoming.Keeping is audited by the core run (receipt 20261015T150956.178111Z, empty axiom reports); the periphery instance module ContinuationCorrespondence is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T151901.978501Z): the single-plan correspondence and the listed case have empty axiom reports, Classical.choice occurs only in classicalChoice and viable_iff_plan_by_core, and the joint-plan declarations use propext and Quot.sound."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Keeping.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Keeping.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    }
+  ]
+}

@@ -77,14 +77,14 @@ Aliases: —
 - 2026-10-08: reviewed added study sections 19–20. A later-retention measure adds an empirical constraint without changing this result’s claim, proof or existing failures. The next correspondence is evidence use after experienced reliability changes.
 - 2026-10-09: reviewed study sections 21–23. Acquired source relations now generate binding alternatives for old naming records through an additional route. Original claims, proofs, empirical results and failures remain; a historical-applicability counterexample sharpens the next connection.
 - 2026-10-09: reviewed the same study’s historical-applicability composition and counterreview. This result’s prior claim, sources and scientific checks remain unchanged; the continuation now targets empirical identification of source–time retention and persistence assumptions.
-- 2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes.
 - 2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence was split into 3 typed does-not-show items, “not an exact replication” moved to the evidence, and “does not change existing conditional theorems” is carried by the dependency note; the connections described in the five history entries above each became one anchored progress line; the next step's third sentence moved to the fifth progress line. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/naming-attention-coverage.md); the exact earlier record is text_versions[0].
-- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](naming-attention-coverage.json).
+- 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](naming-attention-coverage.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text
 
 - [naming-attention-coverage.json](../../../../_process/architecture/history/45318e84ce3a2dd3/naming-attention-coverage.json) (sha256 `45318e84ce3a2dd3…`): Exact record bytes before the readability migration (schema 1).
+- [naming-attention-coverage.json](../../../../_process/architecture/history/f65c811e592b2c47/naming-attention-coverage.json) (sha256 `f65c811e592b2c47…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

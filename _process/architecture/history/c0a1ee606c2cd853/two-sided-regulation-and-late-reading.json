@@ -1,0 +1,614 @@
+{
+  "schema_version": 2,
+  "id": "two-sided-regulation-and-late-reading",
+  "title": {
+    "en": "Two-sided regulation, and regulation that reads late",
+    "zh": "双向调节，与迟读的调节"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T15:28:22+00:00",
+  "statement": {
+    "en": "Opposed from both sides within its gap, which is exactly not overshooting, a level settles at m; read l steps late, every rule needs a band at least 2(l+1)d wide, which the late return keeps; a late relay settles from every start held below exactly where a + (l+1)M <= b + 1.",
+    "zh": "两侧相反且在距离之内（恰是不越过）时，水平定于 m；迟 l 步读时，每个规则所需之带至少宽 2(l+1)d，迟返恰保此带；迟读的阈值调节，自带下保持的每个起点，恰在 a + (l+1)M ≤ b + 1 时定于带内。"
+  },
+  "laws": [
+    {
+      "en": "With balance across a step, the joint exchange departs from evenness by at most the level's gap to m on each side exactly where the next level lies between m and the present one: the bound is exactly no overshoot; for an opposing exchange the cases above, below and at m are exact.",
+      "zh": "一步之间平衡时，合取交换在两侧偏离均衡都不超过水平与 m 的距离，恰是下一水平落在 m 与当前水平之间：界恰是不越过；对相反的交换，高于、低于与等于 m 三种情形都是确切的。",
+      "declarations": [
+        "Becoming.Flow.WithinGap",
+        "Becoming.Flow.Opposes",
+        "Becoming.Regulation.within_iff_between",
+        "Becoming.Flow.withinGap_iff_between",
+        "Becoming.Flow.withinGap_iff_of_above",
+        "Becoming.Flow.withinGap_iff_of_below",
+        "Becoming.Flow.withinGap_iff_of_at"
+      ]
+    },
+    {
+      "en": "Within the gap the gap does not rise and the level never crosses m; within it and opposing, the gap falls by at least one at each step where it is positive, by n over n steps, and the level is m from the step its gap is used up; from below, restoration with the bound reaches m exactly and stays.",
+      "zh": "在距离之内，距离不升，水平永不越过 m；在其内且相反时，距离为正则每步至少降一，n 步降 n，距离用尽之步起水平为 m；自下且有界时，恢复恰到 m 而止。",
+      "declarations": [
+        "Becoming.Flow.gap_le_of_within",
+        "Becoming.Flow.stays_between_at",
+        "Becoming.Flow.gap_falls",
+        "Becoming.Flow.regulates_at",
+        "Becoming.Flow.regulates",
+        "Becoming.Flow.settles_at",
+        "Becoming.Flow.settles_from",
+        "Becoming.Flow.settles",
+        "Becoming.Flow.restores_exactly"
+      ]
+    },
+    {
+      "en": "Beyond the bound an opposing exchange crosses m; a balanced witness opposing the departure at every step and exceeding the gap at every step oscillates about m and is never m.",
+      "zh": "越界的相反交换越过 m；一个平衡、每步都与偏离相反且每步都超出距离的证人在 m 两侧往复，永不为 m。",
+      "declarations": [
+        "Becoming.Flow.crosses_of_above",
+        "Becoming.Flow.crosses_of_below",
+        "Becoming.Regulation.Overshooting.balances",
+        "Becoming.Regulation.Overshooting.opposes",
+        "Becoming.Regulation.Overshooting.beyond",
+        "Becoming.Regulation.Overshooting.oscillates",
+        "Becoming.Regulation.Overshooting.never_at"
+      ]
+    },
+    {
+      "en": "One side is not regulation: a balanced witness meets the premise of the law of restoration from every step and the bound at every step, does not oppose the departure above m, and stays above m.",
+      "zh": "一侧不是调节：一个平衡的证人自每步起满足恢复律的前提、每步都在界内，却不与高于 m 的偏离相反，水平永在 m 之上。",
+      "declarations": [
+        "Becoming.Regulation.OneSided.balances",
+        "Becoming.Regulation.OneSided.within",
+        "Becoming.Regulation.OneSided.restores_premise",
+        "Becoming.Regulation.OneSided.not_opposes",
+        "Becoming.Regulation.OneSided.above"
+      ]
+    },
+    {
+      "en": "A rule reading l steps late answers alike two rests agreeing before T up to step T + l; the levels reached at T + l + 1 differ by exactly what the rests exchange differently over the l + 1 steps from T, so one raising and one lowering by d over the window leave no band narrower than 2(l + 1)d.",
+      "zh": "迟 l 步读的规则，对在 T 之前相同的两种扰动直到 T + l 步都回答相同；在 T + l + 1 所达水平之差恰是两种扰动在自 T 起 l + 1 步中交换之差，所以一升 d、一降 d 时，没有带窄于 2(l + 1)d。",
+      "declarations": [
+        "Becoming.Regulation.Record",
+        "Becoming.Regulation.Rule",
+        "Becoming.Regulation.ReadsLate",
+        "Becoming.Regulation.NetWithin",
+        "Becoming.Flow.FollowsRule",
+        "Becoming.Regulation.ReadsLate.alike",
+        "Becoming.Regulation.levels_alike",
+        "Becoming.Regulation.late_spread",
+        "Becoming.Regulation.late_band"
+      ]
+    },
+    {
+      "en": "On the course a rule generates from a start, no rule reading l late keeps the level within [a, b], 0 < a, under every rest moving it by at most d a step unless a + 2(l + 1)d <= b.",
+      "zh": "在规则自一个起点所生成的进程上，迟 l 步读的规则在每步至多移动 d 的一切扰动下把水平保持于 [a, b]（0 < a），仅当 a + 2(l + 1)d ≤ b。",
+      "declarations": [
+        "Becoming.Regulation.course",
+        "Becoming.Regulation.courseFlow",
+        "Becoming.Regulation.courseWeb",
+        "Becoming.Regulation.courseFlow_follows",
+        "Becoming.Regulation.course_balances_of_pos",
+        "Becoming.Regulation.no_narrower_band"
+      ]
+    },
+    {
+      "en": "The late return, moving back what the rest exchanged l + 1 steps before, reads l late, needs only the level read l steps late and its own exchanges, and keeps every course within (l + 1)d of its start: the least band is attained.",
+      "zh": "迟返把扰动在 l + 1 步之前的交换移回，它迟 l 步读，只需迟 l 步读到的水平与自己的交换，并使每个进程都在其起点的 (l + 1)d 之内：最小带宽可达。",
+      "declarations": [
+        "Becoming.Regulation.lateReturn",
+        "Becoming.Regulation.lateReturn_readsLate",
+        "Becoming.Regulation.lateReturn_reads_levels",
+        "Becoming.Regulation.lateReturn_keeps",
+        "Becoming.Regulation.lateReturn_course_balances",
+        "Becoming.Regulation.lateReturn_band"
+      ]
+    },
+    {
+      "en": "The relay reading l late pushes M for a reading below a, pulls M for one above b and rests within; a level entering the band after l readings below goes on by exactly lM, and its own rise or fall, read late, feeds itself.",
+      "zh": "迟 l 步读的阈值调节，读数低于 a 时推 M，高于 b 时拉 M，带内不动；在 l 次带下读数之后入带的水平恰再走 lM，它自己的升降迟读后自我延续。",
+      "declarations": [
+        "Becoming.Regulation.relay",
+        "Becoming.Flow.RelaysLate",
+        "Becoming.Regulation.push_ramp",
+        "Becoming.Regulation.pull_ramp",
+        "Becoming.Regulation.rest_ramp",
+        "Becoming.Regulation.overshoot",
+        "Becoming.Regulation.undershoot",
+        "Becoming.Regulation.rise_run",
+        "Becoming.Regulation.fall_run"
+      ]
+    },
+    {
+      "en": "From a start held below a for its first l + 1 steps the level rises by M a step, settles where its entry carried lM further is within b, and passes b otherwise.",
+      "zh": "前 l + 1 步保持在 a 之下的起点，水平每步升 M；入带处再走 lM 仍在 b 之内则定于带内，否则越过 b。",
+      "declarations": [
+        "Becoming.Regulation.held_rise",
+        "Becoming.Regulation.held_settles",
+        "Becoming.Regulation.held_leaves"
+      ]
+    },
+    {
+      "en": "An upward crossing is followed by a downward one and that by an upward one, so after every step the level is somewhere above b and somewhere below a; the start held at a - 1 crosses exactly where b + 2 <= a + (l + 1)M.",
+      "zh": "向上越出之后有向下越出，其后又有向上越出，所以每一步之后水平都还会高于 b、也还会低于 a；保持于 a - 1 的起点，恰在 b + 2 ≤ a + (l + 1)M 时越出。",
+      "declarations": [
+        "Becoming.Web.UpCrossing",
+        "Becoming.Web.DownCrossing",
+        "Becoming.Regulation.upCrossing_next",
+        "Becoming.Regulation.downCrossing_next",
+        "Becoming.Regulation.upCrossing_later",
+        "Becoming.Regulation.crossing_oscillates",
+        "Becoming.Regulation.held_crosses",
+        "Becoming.Regulation.held_oscillates"
+      ]
+    },
+    {
+      "en": "The relay has a run from every start where (l + 1)M <= b + 1, by its window law on Law.orbit; for 0 < a <= b and 0 < M, every start held below the band settles in it exactly where a + (l + 1)M <= b + 1.",
+      "zh": "(l + 1)M ≤ b + 1 时，阈值调节以其窗口之律在 Law.orbit 上从每个起点都有运行；0 < a ≤ b、0 < M 时，带下保持的每个起点恰在 a + (l + 1)M ≤ b + 1 时定于带内。",
+      "declarations": [
+        "Becoming.Regulation.held_below_settles",
+        "Becoming.Regulation.relayWindow",
+        "Becoming.Regulation.relayLevel",
+        "Becoming.Regulation.relayFlow",
+        "Becoming.Regulation.relayWeb",
+        "Becoming.Regulation.relay_runs",
+        "Becoming.Regulation.relay_threshold"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Balance at the condition, the bound, opposition, a rule reading l late, a rest within d a step, the relay's step M and band [a, b], and a start held for l + 1 steps are named premises stated where they are used.",
+      "zh": "不加公理。条件处的平衡、界、相反、迟 l 步读的规则、每步至多 d 的扰动、阈值调节的步长 M 与带 [a, b]、保持 l + 1 步的起点，都是在用处陈述的具名前提。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That a given system regulates a level, which level, how late it reads, or the size of its step.",
+      "zh": "某个系统在调节某个水平、是哪个水平、它迟读多少、步长多大。",
+      "kind": "scope"
+    },
+    {
+      "en": "One policy keeping a band from every start in it under late reading; several regulated levels lumped into one; regulation of several conditions at once.",
+      "zh": "迟读下对带中每个起点都保带的单一策略；把几个受调节的水平归并为一个；同时调节几个条件。",
+      "kind": "scope"
+    },
+    {
+      "en": "That holding a level is good: the laws say what holds it and how wide a band it needs.",
+      "zh": "保持一个水平是好的：这些律只说什么保持它、它需要多宽的带。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+      "detail": {
+        "en": "Opposing on both sides without the bound is not regulation: Regulation.Overshooting balances and opposes the departure from m = 1 at every step, its level alternates between 2 and 0 and is never 1 (Overshooting.oscillates, Overshooting.never_at).",
+        "zh": "两侧相反而无界不是调节：Regulation.Overshooting 每步平衡并与对 m = 1 的偏离相反，水平在 2 与 0 之间往复，永不为 1（Overshooting.oscillates、Overshooting.never_at）。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+      "detail": {
+        "en": "The premise of the law of restoration, with the bound, does not give regulation: Regulation.OneSided meets both from every step and its level stays at 2 above m = 1 (OneSided.restores_premise, OneSided.above).",
+        "zh": "恢复律的前提加上界并不给出调节：Regulation.OneSided 自每步起两者都满足，水平停在 2，高于 m = 1（OneSided.restores_premise、OneSided.above）。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+      "detail": {
+        "en": "A relay entering its band does not settle there in general: past b + 2 <= a + (l + 1)M the start held at a - 1 leaves both ends without end (held_oscillates).",
+        "zh": "阈值调节入带并不一般地定于带内：过 b + 2 ≤ a + (l + 1)M，保持于 a - 1 的起点两端越出而无尽（held_oscillates）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T152617.511553Z): the 136 declarations of Becoming.Regulation, 108 of them theorems, have empty axiom reports; the checker verifies core purity. The statements were checked by simulation before the proofs (simulate.py). Author review in study section 214; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T152617.511553Z）：Becoming.Regulation 的 136 项声明（108 项定理）公理报告为空；检查器并核对核心纯净。证明之前已以模拟核对各陈述（simulate.py）。作者审查见研究记录；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "One policy keeping a band from every start under late reading; the lumping of several regulated levels; amounts in a field, where a factor below one closes gradually; an independent review.",
+    "zh": "迟读下对每个起点都保带的单一策略；几个受调节水平的归并；域上的量，其中小于一的因子渐近闭合；独立审查。"
+  },
+  "correspondence": {
+    "en": "The map of Chinese sources onto the spine found no law for a level held from both sides, nor for one held by a rule reading it late (损有余而补不足, 张弓, 冲气以为和, 济其不及以泄其过, 宽猛相济, 中节). These laws are the formal statements it proposed; reading the passages as them is the AI's.",
+    "zh": "中国思想与脊柱的对应没有找到两侧保持水平之律，也没有迟读保持之律（损有余而补不足、张弓、冲气以为和、济其不及以泄其过、宽猛相济、中节）。这些律是它所拟的形式陈述；把这些段落读作这些律是 AI 的读法。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+  "aliases": [
+    "two-sided regulation",
+    "regulation that reads late",
+    "late reading",
+    "late relay",
+    "双向调节",
+    "迟读的调节",
+    "Becoming.Flow.withinGap_iff_between",
+    "Becoming.Flow.settles",
+    "Becoming.Regulation.no_narrower_band",
+    "Becoming.Regulation.lateReturn_band",
+    "Becoming.Regulation.relay_threshold"
+  ],
+  "dependencies": [
+    {
+      "id": "how-much-difference-arrives",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Uses Propagation's gap and its laws (gap_le_iff, gap_total, gap_comm, gap_zero) for the distance to m and the width of a band.",
+        "zh": "以 Propagation 的距离及其定律（gap_le_iff、gap_total、gap_comm、gap_zero）表示与 m 的距离与带宽。"
+      },
+      "interface": {
+        "output": {
+          "en": "The gap between two amounts, bounded exactly by each side, and bounded over a stretch by the gaps summed.",
+          "zh": "两个量之间的距离，恰以两侧为界，在一段之上以诸距离之和为界。"
+        },
+        "input": {
+          "en": "The gap to m falls under regulation; the spread between two courses under a late rule is the exchanged gap.",
+          "zh": "调节下与 m 的距离下降；迟读规则下两个进程之差是所交换之差。"
+        },
+        "conditions": {
+          "en": "Whole-number amounts.",
+          "zh": "整数量。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Uses Law.orbit to iterate the relay's window law into a run from every start.",
+        "zh": "以 Law.orbit 迭代阈值调节的窗口之律，得到自每个起点的运行。"
+      },
+      "interface": {
+        "output": {
+          "en": "The orbit of a law from a state.",
+          "zh": "一个律自一个状态的轨道。"
+        },
+        "input": {
+          "en": "The relay's levels along its run, held for l + 1 steps and then moved by the relay's late reading.",
+          "zh": "阈值调节沿其运行的水平：保持 l + 1 步，此后由迟读移动。"
+        },
+        "conditions": {
+          "en": "(l + 1)M <= b + 1 for the run to balance.",
+          "zh": "(l + 1)M ≤ b + 1，运行才平衡。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "supported-renewal-recovery",
+      "detail": {
+        "en": "Flow.restores is the one-sided law: giving more than taking below m reaches at least m. With the bound it reaches m exactly (Flow.restores_exactly), and without the other side it is not regulation (Regulation.OneSided).",
+        "zh": "Flow.restores 是单侧之律：低于 m 时给多于取，则至少到 m。有界时恰到 m（Flow.restores_exactly），无另一侧则不是调节（Regulation.OneSided）。"
+      }
+    },
+    {
+      "id": "own-count-misses-joint-excess",
+      "detail": {
+        "en": "The excess laws lower a level above a need and raise one below it, each on one side; two-sided regulation holds both sides with a bound.",
+        "zh": "过量之律降低高于需要的水平、提高低于需要的水平，各在一侧；双向调节以界保持两侧。"
+      }
+    },
+    {
+      "id": "assured-route-criterion",
+      "detail": {
+        "en": "AssurancePlans.Regulation has two levels and an immediate response; a response that reads late needs a band growing with the lateness.",
+        "zh": "AssurancePlans.Regulation 只有两档、即时响应；迟读的响应需要随迟而增的带。"
+      }
+    },
+    {
+      "id": "whether-a-loop-closes-a-difference",
+      "detail": {
+        "en": "A loop closes a difference only through a link giving back less; within the gap and opposing, the difference to m closes by at least one a step at one condition.",
+        "zh": "回路只经返还较少的环节闭合差异；在距离之内且相反时，一个条件上与 m 之差每步至少闭合一。"
+      }
+    },
+    {
+      "id": "how-fast-a-rule-may-change",
+      "detail": {
+        "en": "A slow rule reading a fast level at stretches; reading late, here, needs a band of 2(l + 1)d.",
+        "zh": "慢规则分段读快层；这里迟读需要 2(l + 1)d 之带。"
+      }
+    },
+    {
+      "id": "chinese-sources-on-the-spine",
+      "detail": {
+        "en": "Closes the first gap of the map: 损有余而补不足 and 张弓, 冲气以为和, 济其不及以泄其过 and 宽猛相济, and 中节 are re-pointed to these laws.",
+        "zh": "补上对应表的第一项缺口：损有余而补不足与张弓、冲气以为和、济其不及以泄其过与宽猛相济、中节改指向这些律。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.FollowsRule",
+        "Becoming.Flow.Opposes",
+        "Becoming.Flow.RelaysLate",
+        "Becoming.Flow.WithinGap",
+        "Becoming.Flow.accumulates_at",
+        "Becoming.Flow.crosses_of_above",
+        "Becoming.Flow.crosses_of_below",
+        "Becoming.Flow.gap_falls",
+        "Becoming.Flow.gap_le_of_within",
+        "Becoming.Flow.regulates",
+        "Becoming.Flow.regulates_at",
+        "Becoming.Flow.restores_exactly",
+        "Becoming.Flow.settles",
+        "Becoming.Flow.settles_at",
+        "Becoming.Flow.settles_from",
+        "Becoming.Flow.stays_between_at",
+        "Becoming.Flow.withinGap_iff_between",
+        "Becoming.Flow.withinGap_iff_of_above",
+        "Becoming.Flow.withinGap_iff_of_at",
+        "Becoming.Flow.withinGap_iff_of_below",
+        "Becoming.Regulation.Between",
+        "Becoming.Regulation.Between.at_level",
+        "Becoming.Regulation.Between.gap_falls",
+        "Becoming.Regulation.Between.gap_le",
+        "Becoming.Regulation.Between.refl",
+        "Becoming.Regulation.Between.stays",
+        "Becoming.Regulation.Between.trans",
+        "Becoming.Regulation.NetWithin",
+        "Becoming.Regulation.OneSided.above",
+        "Becoming.Regulation.OneSided.balances",
+        "Becoming.Regulation.OneSided.flow",
+        "Becoming.Regulation.OneSided.not_opposes",
+        "Becoming.Regulation.OneSided.opposes_below",
+        "Becoming.Regulation.OneSided.restores_premise",
+        "Becoming.Regulation.OneSided.web",
+        "Becoming.Regulation.OneSided.within",
+        "Becoming.Regulation.Overshooting.amount",
+        "Becoming.Regulation.Overshooting.back",
+        "Becoming.Regulation.Overshooting.balances",
+        "Becoming.Regulation.Overshooting.beyond",
+        "Becoming.Regulation.Overshooting.flow",
+        "Becoming.Regulation.Overshooting.given_eq",
+        "Becoming.Regulation.Overshooting.high",
+        "Becoming.Regulation.Overshooting.high_even",
+        "Becoming.Regulation.Overshooting.never_at",
+        "Becoming.Regulation.Overshooting.opposes",
+        "Becoming.Regulation.Overshooting.oscillates",
+        "Becoming.Regulation.Overshooting.taken_eq",
+        "Becoming.Regulation.Overshooting.web",
+        "Becoming.Regulation.ReadsLate",
+        "Becoming.Regulation.ReadsLate.alike",
+        "Becoming.Regulation.Record",
+        "Becoming.Regulation.Rule",
+        "Becoming.Regulation.course",
+        "Becoming.Regulation.courseFlow",
+        "Becoming.Regulation.courseFlow_follows",
+        "Becoming.Regulation.courseWeb",
+        "Becoming.Regulation.course_balances",
+        "Becoming.Regulation.course_balances_of_pos",
+        "Becoming.Regulation.cross_cancel",
+        "Becoming.Regulation.crossing_oscillates",
+        "Becoming.Regulation.downCrossing_next",
+        "Becoming.Regulation.fall_run",
+        "Becoming.Regulation.first_index",
+        "Becoming.Regulation.first_or_nowhere",
+        "Becoming.Regulation.gap_le_of_add_eq",
+        "Becoming.Regulation.gap_of_ge",
+        "Becoming.Regulation.gap_of_le",
+        "Becoming.Regulation.held_below_settles",
+        "Becoming.Regulation.held_crosses",
+        "Becoming.Regulation.held_leaves",
+        "Becoming.Regulation.held_oscillates",
+        "Becoming.Regulation.held_rise",
+        "Becoming.Regulation.held_settles",
+        "Becoming.Regulation.lateReturn",
+        "Becoming.Regulation.lateReturn_band",
+        "Becoming.Regulation.lateReturn_course_balances",
+        "Becoming.Regulation.lateReturn_early",
+        "Becoming.Regulation.lateReturn_early_sum",
+        "Becoming.Regulation.lateReturn_keeps",
+        "Becoming.Regulation.lateReturn_late",
+        "Becoming.Regulation.lateReturn_readsLate",
+        "Becoming.Regulation.lateReturn_reads_levels",
+        "Becoming.Regulation.lateReturn_window",
+        "Becoming.Regulation.late_band",
+        "Becoming.Regulation.late_spread",
+        "Becoming.Regulation.le_sub_add",
+        "Becoming.Regulation.le_succ_mul",
+        "Becoming.Regulation.levels_alike",
+        "Becoming.Regulation.no_narrower_band",
+        "Becoming.Regulation.overshoot",
+        "Becoming.Regulation.pull_ramp",
+        "Becoming.Regulation.push_ramp",
+        "Becoming.Regulation.relay",
+        "Becoming.Regulation.relayFlow",
+        "Becoming.Regulation.relayFlow_late",
+        "Becoming.Regulation.relayLevel",
+        "Becoming.Regulation.relayLevel_drop",
+        "Becoming.Regulation.relayLevel_drops",
+        "Becoming.Regulation.relayLevel_held",
+        "Becoming.Regulation.relayLevel_step",
+        "Becoming.Regulation.relayWeb",
+        "Becoming.Regulation.relayWindow",
+        "Becoming.Regulation.relayWindow_shift",
+        "Becoming.Regulation.relay_above",
+        "Becoming.Regulation.relay_balances",
+        "Becoming.Regulation.relay_below",
+        "Becoming.Regulation.relay_inside",
+        "Becoming.Regulation.relay_room",
+        "Becoming.Regulation.relay_runs",
+        "Becoming.Regulation.relay_step",
+        "Becoming.Regulation.relay_take_le",
+        "Becoming.Regulation.relay_take_of_le",
+        "Becoming.Regulation.relay_threshold",
+        "Becoming.Regulation.rest_ramp",
+        "Becoming.Regulation.reversal",
+        "Becoming.Regulation.reversal_evens",
+        "Becoming.Regulation.reversal_of_levels",
+        "Becoming.Regulation.rise_run",
+        "Becoming.Regulation.step_above",
+        "Becoming.Regulation.step_below",
+        "Becoming.Regulation.step_inside",
+        "Becoming.Regulation.sub_eq_of_add_eq",
+        "Becoming.Regulation.sub_succ_le_of_gt",
+        "Becoming.Regulation.sub_succ_le_of_lt",
+        "Becoming.Regulation.total_steps_congr",
+        "Becoming.Regulation.total_steps_const",
+        "Becoming.Regulation.total_steps_le",
+        "Becoming.Regulation.undershoot",
+        "Becoming.Regulation.upCrossing_later",
+        "Becoming.Regulation.upCrossing_next",
+        "Becoming.Regulation.window_step",
+        "Becoming.Regulation.within_iff_between",
+        "Becoming.Web.DownCrossing",
+        "Becoming.Web.UpCrossing"
+      ],
+      "sha256": "d44507a9d52e226c3d9f16f7a37abf4cc0df1b5cf0d94cd1ac96e9372e3171cc"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "declarations": [
+        "Becoming.add_mul_split"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "role": "proof",
+      "sha256": "999c73a26839f1bc5c36c2cd1ca48c49cad0f428b35e6728e73d97b20a95dcf4"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T152617.511553Z/verification.json",
+      "role": "receipt",
+      "sha256": "6dea8005a28c8723c7419039a351a056da0f4403f9a1d4709160c2a80e9ba37a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+      "role": "provenance",
+      "sha256": "fb0fe2f00847be4c15585e3b382efb117f41290592c9d9332236d053a6d2107c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
+      "role": "integration",
+      "sha256": "8d83044cfd7c728aaa21e10b1fa6cf9a113ce31ca0299279c9ec89ba25eb8c5b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/rg-regulation/simulate.py",
+      "role": "review",
+      "sha256": "6706ac3974a84ab2a212862416b719203a7e6654e0d7f6c23b6ccb52a6a290b5"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regulation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (RG), the first gap of the map of Chinese sources onto the spine; study section 214.",
+      "zh": "2026年10月19日：新增（RG），即中国思想与脊柱对应表的第一项缺口；研究第 214 节。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (BECOMING-RENEWAL-READING.md: study section 180.14 added; Propagation.lean: declarations moved in or out by W2; Recurrence.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): Propagation.lean re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: Propagation.lean, documentation only (no name, statement or proof changed): readings labelled D39. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Propagation.lean 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：Propagation.lean，只改说明（名称、陈述与证明不变）：读法标为 D39。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): CHINESE-SOURCES-AND-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: CHINESE-SOURCES-AND-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged. THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：CHINESE-SOURCES-AND-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：CHINESE-SOURCES-AND-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：THE-THEORY-OF-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R23 (the refutation laws however a family is listed): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R23 changed them: BECOMING-RENEWAL-READING.md, section 215 added; THE-THEORY-OF-BECOMING.md, the listing paragraph and §8.2 row name Becoming.ListingRefutations; §9 counts and receipt follow R23. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R23（否证律对任何列出方式成立）：BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R23 改动之处改动：BECOMING-RENEWAL-READING.md，新增第 215 节；THE-THEORY-OF-BECOMING.md，列出一次一段与 §8.2 行写入 Becoming.ListingRefutations；§9 计数与回执随 R23。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 216 added; THE-THEORY-OF-BECOMING.md, the paragraph on what a finite stretch refutes cites Refutable.not_not, proved in Horizon from the law for points; §9 counts and receipt follow R26. The claim is unchanged.",
+      "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 216 节；THE-THEORY-OF-BECOMING.md，有限片段所否证者一段改引 Refutable.not_not（Horizon 由点的律证明）；§9 计数与回执随 R26。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R27 (the stepwise classes and loss): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 217 added; THE-THEORY-OF-BECOMING.md, §6.8 gains the bullet on the stepwise classes and loss; §9 counts and receipt follow R27. The claim is unchanged.",
+      "zh": "2026年10月20日，R27（逐步类别与失去）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 217 节；THE-THEORY-OF-BECOMING.md，§6.8 新增逐步类别与失去一条；§9 计数与回执随 R27。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: BECOMING-RENEWAL-READING.md, section 218 added (R25); earlier sections unchanged; THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：BECOMING-RENEWAL-READING.md，新增第 218 节（R25）；前面各节不变；THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 219 added; Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 219 added.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 219 节；Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 219 节。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 220 added; Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 220 节；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: passages.json, rebuilt: the declarations and the names in the readings follow the R30 table, each so corrected passage marked; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; CHINESE-SOURCES-AND-BECOMING.md, names follow the R30 rename table; the passage tables are the rebuilt map; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：passages.json，重建：声明与读法中的名称随 R30 改名表，每个如此更正的段落有标注；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；CHINESE-SOURCES-AND-BECOMING.md，名称随 R30 改名表；逐句对应表为重建之图；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Removed, with the statement kept under one name: Regulation.add_mul' (now add_mul_split). Proof bindings (Regulation.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Propagation.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Regulation.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：删去，陈述以一个名称保留：Regulation.add_mul'（现为 add_mul_split）。证明绑定（Regulation.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Propagation.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Regulation.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Prelude.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Propagation.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Prelude.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Propagation.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

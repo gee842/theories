@@ -1,0 +1,440 @@
+{
+  "schema_version": 2,
+  "id": "premises-that-are-states-of-the-law",
+  "title": {
+    "en": "Dissipation, embodiment and transmission are states of the law",
+    "zh": "耗散、体现与传递是律的状态"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T10:06:36+00:00",
+  "statement": {
+    "en": "Read off laws of exchange, with the rest counted and idle and the four tying premises holding, dissipation, embodiment and bounded transmission are each met by one world and failed by another. With the rest counted, embodiment is balance and each relatum exchanging exactly while it stands.",
+    "zh": "从交换之律读出、算入其余且其余闲置、四个联结前提成立时，耗散、体现与有界传递各有一个满足的世界与一个不满足的世界。算入其余时，体现恰是平衡加上每个关系项恰在它立着时交换。"
+  },
+  "laws": [
+    {
+      "en": "Dissipation is loss: with the rest counted and idle, a world whose formations give nothing dissipates; read off the responsive law the relatum takes its condition's unit and gives it back, and the world does not dissipate.",
+      "zh": "耗散是损失：算入其余且其余闲置，形成什么都不给的世界耗散；从 responsive 律读出，关系项取走其条件的单位又给回，世界不耗散。",
+      "declarations": [
+        "Becoming.World.restFlow_give_zero",
+        "Becoming.World.withRest_dissipative_of_gives_nothing",
+        "Becoming.ExchangeLaw.still",
+        "Becoming.ExchangeLaw.still_levels",
+        "Becoming.ExchangeLaw.stillWorld",
+        "Becoming.ExchangeLaw.responsiveWorld",
+        "Becoming.ExchangeLaw.still_balanced",
+        "Becoming.ExchangeLaw.responsive_balanced",
+        "Becoming.ExchangeLaw.still_closed",
+        "Becoming.ExchangeLaw.responsive_closed",
+        "Becoming.ExchangeLaw.still_dissipative",
+        "Becoming.ExchangeLaw.responsive_not_dissipative"
+      ]
+    },
+    {
+      "en": "Embodiment is closure and no dormancy: with the rest counted, every relatum stands exactly while it is active exactly where the world balances and each relatum exchanges exactly while it stands; read off still from a standing of one the relatum stands and does not exchange, read off responsive it exchanges exactly while it stands.",
+      "zh": "体现是封闭加上没有休眠：算入其余，每个关系项恰在活跃时立着，恰当世界平衡且每个关系项恰在立着时交换；从 still 以水平一读出，关系项立着而不交换，从 responsive 读出，它恰在立着时交换。",
+      "declarations": [
+        "Becoming.World.withRest_embodied_iff",
+        "Becoming.World.withRest_embodied_balanced",
+        "Becoming.ExchangeLaw.still_not_embodied",
+        "Becoming.ExchangeLaw.responsive_embodied"
+      ]
+    },
+    {
+      "en": "Bounded transmission is heredity of response: where nothing comes to stand it holds with any bound; read off the sprouting law, the sprout comes to stand from the source, its exchange then responds to the ground and the source's giving does not, so no bound transmits the dependence, with the rest idle.",
+      "zh": "有界传递是回应的遗传：没有什么开始立着之处它以任何界成立；从 sprouting 律读出，萌芽由源而立，其交换随后回应地，而源的给予不回应，所以没有界传递这一依存，其余闲置。",
+      "declarations": [
+        "Becoming.World.transmitting_of_nothing_comes",
+        "Becoming.ExchangeLaw.nothing_comes",
+        "Becoming.ExchangeLaw.still_transmitting",
+        "Becoming.ExchangeLaw.responsive_transmitting",
+        "Becoming.ExchangeLaw.Sprouting",
+        "Becoming.ExchangeLaw.sprouting",
+        "Becoming.ExchangeLaw.sprouts",
+        "Becoming.ExchangeLaw.groundOne",
+        "Becoming.ExchangeLaw.needOneOf",
+        "Becoming.ExchangeLaw.sproutingWorld",
+        "Becoming.ExchangeLaw.sprouting_nonanticipating",
+        "Becoming.ExchangeLaw.sprouting_feasible",
+        "Becoming.ExchangeLaw.sprouting_closed",
+        "Becoming.ExchangeLaw.sprout_descends",
+        "Becoming.ExchangeLaw.sprout_requires",
+        "Becoming.ExchangeLaw.source_unrequired",
+        "Becoming.ExchangeLaw.sprouting_not_transmitting"
+      ]
+    },
+    {
+      "en": "The three are contingent: three worlds read off laws, each with the rest counted and idle and the four tying premises holding; still meets dissipation and transmission and not embodiment, responsive embodiment and transmission and not dissipation, sprouting not transmission.",
+      "zh": "三者都是偶然的：三个从律读出的世界，各自算入其余且其余闲置、四个联结前提成立；still 满足耗散与传递而不满足体现，responsive 满足体现与传递而不满足耗散，sprouting 不满足传递。",
+      "declarations": [
+        "Becoming.ExchangeLaw.contingent"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom and no premise: each witness is a world read off a law of exchange with the rest counted, the rest shown idle; the general laws (withRest_dissipative_of_gives_nothing, withRest_embodied_iff, transmitting_of_nothing_comes) state their hypotheses.",
+      "zh": "不加公理，不加前提：每个见证都是算入其余、从交换之律读出的世界，其余已示闲置；一般规律（withRest_dissipative_of_gives_nothing、withRest_embodied_iff、transmitting_of_nothing_comes）写明各自的假设。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Which law of exchange holds in an actual unfolding: whether it loses, has dormant relata or passes on what its descendants respond to is empirical.",
+      "zh": "实际展开中哪条交换之律成立：它是否有损失、是否有休眠的关系项、是否传下后代所回应者，是经验问题。",
+      "kind": "scope"
+    },
+    {
+      "en": "That loss, embodiment or heredity is good, or that a law meeting them supports 生生.",
+      "zh": "损失、体现或遗传是好的，或满足它们的律支持生生。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "A reading under which standing is not the level that balance glues to the exchange; under such a reading embodiment would need restating.",
+      "zh": "一种立着不是平衡粘合到交换上的水平的读法；在那种读法下体现需要重述。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+      "detail": {
+        "en": "responsiveWorld fails dissipation; stillWorld fails embodiment; sproutingWorld fails bounded transmission; each with the rest counted and idle and the four tying premises holding.",
+        "zh": "responsiveWorld 不满足耗散；stillWorld 不满足体现；sproutingWorld 不满足有界传递；各自算入其余且其余闲置、四个联结前提成立。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T100412.397267Z): the 78 declarations of Becoming.ExchangePremises, 51 of them theorems, have empty axiom reports; the checker verifies core purity. Author review in study section 197; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T100412.397267Z）：Becoming.ExchangePremises 的 78 项声明（51 项定理）公理报告为空；检查器并核对核心纯净。作者审查见研究第 197 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "The spine's laws that use these premises stated over the laws of exchange that meet them; local conditions on a law that give each; an independent review.",
+    "zh": "用到这些前提的脊柱规律，陈述在满足它们的交换之律上；给出每个前提的律的局部条件；独立审查。"
+  },
+  "correspondence": {
+    "en": "The first open target of chapter §8.1, the deductive necessity of the whole, had no progress entry since the early spine; §125 left four World premises as states of parts. This result settles dissipation, embodiment and bounded transmission: states of the law of exchange, not readings. The classification of the eight premises into readings of one exchange and states of the law is the AI's; the session reviewing the repository on 19 October 2026 set the task.",
+    "zh": "第 8.1 节的首要开放目标，整体的演绎必然性，自早期脊柱以来没有进展条目；§125 把 World 的四个前提留作部分的状态。本结果判定耗散、体现与有界传递：交换之律的状态，不是读法。把八个前提分为一次交换的读法与律的状态是 AI 的；任务由 2026年10月19日审阅仓库的会话提出。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+  "aliases": [
+    "states of the law of exchange",
+    "交换之律的状态",
+    "Becoming.ExchangeLaw.contingent",
+    "Becoming.World.withRest_embodied_iff",
+    "Becoming.ExchangeLaw.sprouting_not_transmitting"
+  ],
+  "dependencies": [
+    {
+      "id": "premises-read-off-the-exchange",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Flow.Exchanging, Flow.readOff, World.withRest, World.restFlow, Flow.present_distinct, World.withRest_exchanging_iff, World.withRest_closed_iff, ExchangeLaw.readWorld and ExchangeLaw.readWorld_glue.",
+        "zh": "复用 Flow.Exchanging、Flow.readOff、World.withRest、World.restFlow、Flow.present_distinct、World.withRest_exchanging_iff、World.withRest_closed_iff、ExchangeLaw.readWorld 与 ExchangeLaw.readWorld_glue。"
+      },
+      "interface": {
+        "output": {
+          "en": "Worlds read off an exchange with the rest counted, the four tying premises holding.",
+          "zh": "算入其余、从交换读出的世界，四个联结前提成立。"
+        },
+        "input": {
+          "en": "The worlds on which each remaining premise is settled.",
+          "zh": "判定每个其余前提所在的世界。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses ExchangeLaw, levels, levels_succ, course, Feasible, Nonanticipating and readWorld_closed_iff.",
+        "zh": "复用 ExchangeLaw、levels、levels_succ、course、Feasible、Nonanticipating 与 readWorld_closed_iff。"
+      },
+      "interface": {
+        "output": {
+          "en": "The course a law generates; the rest idle exactly where a law of what has stood is feasible.",
+          "zh": "律生成的历程；读已立者的律可行之处其余恰闲置。"
+        },
+        "input": {
+          "en": "Witness worlds with the rest idle.",
+          "zh": "其余闲置的见证世界。"
+        },
+        "conditions": {
+          "en": "The law reads what has stood.",
+          "zh": "律只读已立者。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    },
+    {
+      "id": "map-of-premises",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the eight premises World.Dissipative, World.Embodied, World.Counted and World.Transmitting, keep, mem_keep, keep_distinct, beyond and lt_beyond.",
+        "zh": "复用八个前提中的 World.Dissipative、World.Embodied、World.Counted、World.Transmitting，以及 keep、mem_keep、keep_distinct、beyond 与 lt_beyond。"
+      },
+      "interface": {
+        "output": {
+          "en": "The premises and the list operations.",
+          "zh": "前提与列表运算。"
+        },
+        "input": {
+          "en": "What is settled for each premise.",
+          "zh": "每个前提被判定之处。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "map-of-premises",
+      "detail": {
+        "en": "There the eight premises are independent relative to one another; here three of them are contingent on the law with the rest of the readings fixed by it.",
+        "zh": "那里八个前提相对于彼此独立；这里其中三个在其余读法由律固定时取决于律。"
+      }
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "en": "Progress on the first target: what a reading of the exchange makes necessary, and where becoming is contingent in the law.",
+        "zh": "首要目标的进展：交换的读法使什么成为必然，生成在律中何处偶然。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.ExchangeLaw.Sprouting",
+        "Becoming.ExchangeLaw.contingent",
+        "Becoming.ExchangeLaw.course_runs",
+        "Becoming.ExchangeLaw.groundOne",
+        "Becoming.ExchangeLaw.needOneOf",
+        "Becoming.ExchangeLaw.nothing_comes",
+        "Becoming.ExchangeLaw.optionIndex",
+        "Becoming.ExchangeLaw.origin",
+        "Becoming.ExchangeLaw.relation",
+        "Becoming.ExchangeLaw.relation_admits",
+        "Becoming.ExchangeLaw.relation_exchanges",
+        "Becoming.ExchangeLaw.relation_may_iff",
+        "Becoming.ExchangeLaw.relation_readWeb_may",
+        "Becoming.ExchangeLaw.relation_readWeb_requires",
+        "Becoming.ExchangeLaw.relation_responds_iff",
+        "Becoming.ExchangeLaw.responsiveWorld",
+        "Becoming.ExchangeLaw.responsive_balanced",
+        "Becoming.ExchangeLaw.responsive_closed",
+        "Becoming.ExchangeLaw.responsive_embodied",
+        "Becoming.ExchangeLaw.responsive_not_dissipative",
+        "Becoming.ExchangeLaw.responsive_transmitting",
+        "Becoming.ExchangeLaw.source_unrequired",
+        "Becoming.ExchangeLaw.spreading",
+        "Becoming.ExchangeLaw.spreadingWorld",
+        "Becoming.ExchangeLaw.spreading_closed",
+        "Becoming.ExchangeLaw.spreading_counted",
+        "Becoming.ExchangeLaw.spreading_not_enclosed",
+        "Becoming.ExchangeLaw.sprout_descends",
+        "Becoming.ExchangeLaw.sprout_requires",
+        "Becoming.ExchangeLaw.sprouting",
+        "Becoming.ExchangeLaw.sproutingWorld",
+        "Becoming.ExchangeLaw.sprouting_closed",
+        "Becoming.ExchangeLaw.sprouting_feasible",
+        "Becoming.ExchangeLaw.sprouting_nonanticipating",
+        "Becoming.ExchangeLaw.sprouting_not_transmitting",
+        "Becoming.ExchangeLaw.sprouts",
+        "Becoming.ExchangeLaw.still",
+        "Becoming.ExchangeLaw.stillWorld",
+        "Becoming.ExchangeLaw.still_balanced",
+        "Becoming.ExchangeLaw.still_closed",
+        "Becoming.ExchangeLaw.still_dissipative",
+        "Becoming.ExchangeLaw.still_levels",
+        "Becoming.ExchangeLaw.still_not_embodied",
+        "Becoming.ExchangeLaw.still_transmitting",
+        "Becoming.ExchangeRelation",
+        "Becoming.ExchangeRelation.Exchanges",
+        "Becoming.ExchangeRelation.MayRespondBelow",
+        "Becoming.ExchangeRelation.RespondsBelow",
+        "Becoming.ExchangeRelation.Runs",
+        "Becoming.ExchangeRelation.free",
+        "Becoming.ExchangeRelation.free_unsupported",
+        "Becoming.ExchangeRelation.readWeb",
+        "Becoming.ExchangeRelation.readWeb_dependent",
+        "Becoming.ExchangeRelation.reading_glue",
+        "Becoming.ExchangeRelation.takingOne",
+        "Becoming.ExchangeRelation.world",
+        "Becoming.Flow.ExchangesWithin",
+        "Becoming.Flow.cond_pos",
+        "Becoming.Flow.exchangesWithin_decided",
+        "Becoming.Flow.exchanging_iff_within",
+        "Becoming.Flow.listed_at_of_closed",
+        "Becoming.Flow.listed_at_of_enclosed",
+        "Becoming.Flow.listed_iff_lpo",
+        "Becoming.Flow.marking",
+        "Becoming.Flow.marking_exchanging",
+        "Becoming.Flow.memDecided",
+        "Becoming.Flow.not_not_listed_at",
+        "Becoming.Flow.readOff_census_of_closed",
+        "Becoming.World.Finite.withRest_counted",
+        "Becoming.World.restFlow_give_zero",
+        "Becoming.World.transmitting_of_nothing_comes",
+        "Becoming.World.withRest_counted",
+        "Becoming.World.withRest_dissipative_of_gives_nothing",
+        "Becoming.World.withRest_embodied_balanced",
+        "Becoming.World.withRest_embodied_iff",
+        "Becoming.listed_of_em",
+        "Becoming.not_not_listed",
+        "Becoming.of_not_not"
+      ],
+      "sha256": "e0acae7f7a2010316afdc30e920c4b939d44e71874e0d40bd1aa53605ddd12a0"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.World.Dissipative",
+        "Becoming.World.Embodied"
+      ],
+      "sha256": "4e25aa0f0c75ac33b47b3b1dd7f0399ba55ec1f5dd5d83fd23e8575e8dc69703"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.World.Transmitting"
+      ],
+      "sha256": "58a482836d35cffc18e3993a22f183cdb2107b9461cf77bcb97a407b84868bf5"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.ExchangeLaw.responsive",
+        "Becoming.ExchangeLaw.responsive_levels",
+        "Becoming.ExchangeLaw.readWorld_glue"
+      ],
+      "sha256": "597a696fe502aa1fd1d667cef4788e2144612343e162d4fabd05f9fbee71ed16"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "c4916cbf4ee72134c14a7573780ac76acbde0d256ca2799012253f5e23d89fd8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T100412.397267Z/verification.json",
+      "role": "receipt",
+      "sha256": "cb5d67dbba20ce4091b34136b34a0ff68571b8b45ce602c72f992f8859d0ea96"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "57e2c465c2fc8ece2ab597afc3498632e7be97686459e147abc3ad8f1a39f3c0"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ExchangePremises",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (E1), on the first target of chapter §8.1, the deductive necessity of the whole; study section 197.",
+      "zh": "2026年10月19日：新增（E1），针对第 8.1 节的首要目标，整体的演绎必然性；研究第 197 节。"
+    },
+    {
+      "en": "19 October 2026, Y3 (Becoming.HexagramLaws): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y3 added a study section). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3（Becoming.HexagramLaws）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section). The claim is unchanged.",
+      "zh": "2026年10月19日，SG（关节、交换之律与第三值）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，X1b（护闭诸文合于关节律的确切范围）：BECOMING-RENEWAL-READING.md 重新指向。自本记录所审哈希以来，所引文字只在第 199 节改动：其护闭读法现说保持是在自 s 起的路径上保住 s 的最大闭（`keeping_greatest`），由 X1b 改。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Counterfactual.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (ExchangePremises.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: ExchangePremises.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Premises.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Reading.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Space.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（ExchangePremises.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：ExchangePremises.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Premises.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Reading.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Space.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Space.lean, falls_stop_unrefuted proved as the whole-number instance of Amounts.rests_unrefuted, statement unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Space.lean，falls_stop_unrefuted 作为 Amounts.rests_unrefuted 的整数实例证明，陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: Premises.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Space.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：Premises.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Space.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Counterfactual.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Premises.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Reading.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Space.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Counterfactual.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Premises.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Reading.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Space.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (ExchangePremises.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Counterfactual.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; ExchangePremises.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Reading.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Space.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（ExchangePremises.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Counterfactual.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；ExchangePremises.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Reading.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Space.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "schema_version": 1,
+  "id": "market-finite-support-obstruction",
+  "title": {
+    "zh": "有限支持下无法及时恢复的正区间",
+    "en": "Positive seed intervals that finite support cannot rescue in time"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F06",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
+  "claim": {
+    "zh": "对每条带可容许扰动的变化之律，以及被其步耗竭的每个层族（守卫给出第0级；守卫之内的构型经一个可容许步到第k级，则原在第k+1级），低于第n级的起点在每段可容许历史上n步内离开守卫；处于第n级并不足够。量在每个可容许步上的增长受单调映射约束时，它停在该映射的轨道之下；若量的轨道在第k+1步不超过阈值时，每个可容许步使层级降一，则轨道在第n步不超过阈值、且不在第n级的起点，在每段可容许历史上n步内离开守卫。市场是实例（旧定理由此律证明）：份额每步至多乘3/2，份额轨道不超过1/6时每步使存量在底线5之上少一单位。所以对每个有理C₀≥5及整数N>C₀−5，正维护区间0<x₀≤(2/3)^N/6在任意时变β／责任误差及非负支持冲击下均至迟在N失效。同一正初态在β=0、最佳初始责任和无误差／耗用下，运行投影有限恢复而完整守卫历史终止。",
+    "en": "For every law of change with admissible disturbances and every family of levels its steps drain (within the guard is level 0, and a configuration within the guard that one admissible step takes to level k was at level k+1), a start below level n leaves the guard within n steps on every admissible history; being at level n does not suffice. A quantity whose growth on each admissible step is bounded by a monotone map stays below the map's orbit; where each admissible step lowers the level by one while the quantity's orbit k+1 steps on is at or below a threshold, every start whose orbit at step n is at or below the threshold and which is not at level n leaves the guard within n steps on every admissible history. The market is an instance, the old theorem being proved from the law, the share growing at most by 3/2 a step and each step taking one unit of the stock above the floor 5 while the share's orbit stays at or below 1/6: for every rational C0>=5 and integer N>C0-5, all positive seeds 0<x0<=(2/3)^N/6 fail by N under every time-varying beta/quality-error sequence and nonnegative support shock. The same positive state with beta=0, best initial quality and no error/extra consumption has projected finite recovery but full guarded termination."
+  },
+  "hypotheses": [
+    {
+      "zh": "原有理State、shareStep与supportStep、必要支持底线5保留；x₀、q₀在[0,1]，原完整守卫逐步执行。",
+      "en": "The original rational State, shareStep, supportStep and essential-stock floor five remain; initial x and q are in [0,1], with the original guard at each step."
+    },
+    {
+      "zh": "β及责任误差允许任意逐期变化，clip限制q；支持冲击非负，没有直接支持注入、进入、扩展速度改变或组织切换。",
+      "en": "Beta and quality error may vary arbitrarily each step, with q clipped; stock shocks are nonnegative, with no direct stock injection, entry, change of expansion rate or organizational switch."
+    }
+  ],
+  "correspondence": {
+    "zh": "维护与支持是同一步活动的相关坐标；时变控制覆盖已实现反馈所产生的序列，但不解释反馈形成。底线及速率须有现实根据，none仅表示所表示的市场组织停止。",
+    "en": "Renewal and stock are related coordinates updated in the same activity. Time-varying control includes sequences produced by realized feedback but does not explain feedback formation. Floors and rates require actual correspondence; none ends the represented market organization only."
+  },
+  "canonical_source": "experiments/market-generativity/formal/FiniteSupportObstruction.lean",
+  "aliases": [
+    "FiniteSupportObstruction.every_finite_stock_has_obstructed_positive_seeds",
+    "Becoming.Lasting.Drains.leaves",
+    "Becoming.Lasting.exhausts",
+    "Becoming.MarketInstances.forces_failure_instance",
+    "Becoming.MarketInstances.obstructed_seeds_instance",
+    "Becoming.Courses.Drains.leaves_run",
+    "Becoming.Courses.exhausts_run"
+  ],
+  "dependencies": [
+    {
+      "id": "market-supported-finite-transition",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用原扩展上界及正余量有限到达，新增全控制有限支持阻碍。",
+        "en": "Reuses the old growth upper bound and positive-seed finite arrival to prove a new all-control finite-support obstruction."
+      },
+      "interface": {
+        "output": {
+          "zh": "share_growth_upper与positive_seed_finite_landing输出速率界及运行到达。",
+          "en": "share_growth_upper and positive_seed_finite_landing supply a growth bound and projected arrival."
+        },
+        "input": {
+          "zh": "next_share_upper与projected_recovery_and_actual_failure消费这些输出；zero_schedule_is_original_pulse接回原完整守卫。",
+          "en": "next_share_upper and projected_recovery_and_actual_failure consume them; zero_schedule_is_original_pulse reconnects the original full guard."
+        },
+        "conditions": {
+          "zh": "同一增长与支持关系，投影到达不视为完整历史执行。",
+          "en": "Same growth and support relations; projected arrival is not taken as full execution."
+        },
+        "evidence": "experiments/market-generativity/formal/FiniteSupportObstruction.lean"
+      }
+    },
+    {
+      "id": "market-protected-continuation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "以相同有限支持、高维护初态保留可继续的实质对照。",
+        "en": "Retains a continuing high-renewal comparison with the same finite stock."
+      },
+      "interface": {
+        "output": {
+          "zh": "example_certificate及safe_history_never_fails提供原全时保护。",
+          "en": "example_certificate and safe_history_never_fails supply inherited all-time protection."
+        },
+        "input": {
+          "zh": "same_stock_can_support_high_seed构造Safe初态并调用原保护。",
+          "en": "same_stock_can_support_high_seed constructs Safe and invokes that protection."
+        },
+        "conditions": {
+          "zh": "x=q=1、w=0、预算1、C₀≥5，无冲击，原β=1/2。",
+          "en": "x=q=1, w=0, budget one, C0>=5, no shocks, original beta=1/2."
+        },
+        "evidence": "experiments/market-generativity/formal/FiniteSupportObstruction.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "market-partial-correction-boundary",
+      "detail": {
+        "zh": "其无误差普遍投影到达阈值保留；新结果限定同一转变的实际支持。",
+        "en": "Its zero-error universal projected-arrival threshold remains; the new result constrains actual support for that transition."
+      }
+    },
+    {
+      "id": "conditional-foundation-assessment",
+      "detail": {
+        "zh": "复用既有条件基础中的支持限制，推进具体生成—维持—终止连接，不宣告零实质公理。",
+        "en": "Reuses established conditional support limits to advance a concrete formation-maintenance-ending connection without claiming zero substantive axioms."
+      }
+    },
+    {
+      "id": "formed-software-continuation",
+      "detail": {
+        "zh": "实际形成的历史接续，明确原固定律所省略关系；不反驳或数值验证此定理。",
+        "en": "Historical formed continuation identifies relationships omitted by the fixed-law model; it neither refutes nor numerically validates this theorem."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/market-generativity/formal/FiniteSupportObstruction.lean",
+      "detail": {
+        "zh": "projected_recovery_and_actual_failure保留相同正初态投影恢复而实际终止；same_stock_can_support_high_seed反驳有限支持必然失败。",
+        "en": "projected_recovery_and_actual_failure retains projected recovery and actual termination for the same seed; same_stock_can_support_high_seed refutes inevitable failure from finite stock alone."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "detail": {
+        "zh": "Collapse.level_not_lasting：被耗竭的族在第1级含true，而true持续不了一步，所以处于第n级不足以持续。",
+        "en": "Collapse.level_not_lasting: a drained family holds true at level 1, yet true does not last one step, so being at level n does not suffice."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "δ_N是保守失败区间而非精确可恢复域；不排除实际供给、依存转化、进入或更快形成改变边界。未证分岔、R-tipping分类、现实死亡或无附加实质公理奠基。",
+    "en": "The delta_N interval is a conservative obstruction, not an exact viability boundary. Actual provision, dependence change, entry or faster formation may alter it. No bifurcation, R-tipping classification, physical death or zero-added-substantive-axiom foundation is proved."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1实际检查17项新定理／22项声明审计；123项继承定理／153项审计另列。保留标准逻辑公理依赖；作者反审，无独立agent或新市场观察。一般律已由检查器回执绑定。",
+    "en": "Lean 4.29.1 checks 17 new theorems / 22 declaration audits, with 123 inherited theorems / 153 audits separately rebuilt. Standard logical axiom dependencies are retained; author counterreview, no independent agent or new market observations. General laws: checker receipts bound."
+  },
+  "references": [
+    {
+      "path": "experiments/market-generativity/formal/FiniteSupportObstruction.lean",
+      "role": "proof",
+      "sha256": "4d5e2ef8cc147600698d945180d7f402a39d0072120723f8578deebaaaf3230a",
+      "declarations": [
+        "FiniteSupportObstruction.every_finite_stock_has_obstructed_positive_seeds",
+        "FiniteSupportObstruction.finite_support_forces_failure",
+        "FiniteSupportObstruction.support_required_for_small_prefix",
+        "FiniteSupportObstruction.projected_recovery_and_actual_failure",
+        "FiniteSupportObstruction.same_stock_can_support_high_seed"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/formal/RegimeTransition.lean",
+      "role": "proof",
+      "sha256": "9e76cc787e363e0c4ad75e34adc94bf1fe7983076e76a367850d72f65e7bf518",
+      "declarations": [
+        "RegimeTransition.share_growth_upper",
+        "RegimeTransition.positive_seed_finite_landing"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/formal/finite-support-verification.json",
+      "role": "receipt",
+      "sha256": "ebd25fd80d23ce9de8c12b18128c44c0630d1293cc69f8b11f1477048b24232b",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "role": "review",
+      "sha256": "75fee116ec006410ab9f97667b32efecbbb795d56b5ef8f0493ea24bb7ed75e0",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "role": "integration",
+      "sha256": "c8e0e043e7d5287b64dfe9957081850d445991f11d0f0f3e8d09a84e41f32efa",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "role": "proof",
+      "sha256": "cbf879fe16897ff6e7c8ac68c9a2ed8e70f05c049f34e07abf88d67645103812",
+      "declarations": [
+        "Becoming.Lasting.Drains",
+        "Becoming.Lasting.Drains.along",
+        "Becoming.Lasting.Drains.leaves",
+        "Becoming.Lasting.Collapse.level_not_lasting",
+        "Becoming.Lasting.below_orbit",
+        "Becoming.Lasting.stays_below_iff",
+        "Becoming.Lasting.exhausts",
+        "Becoming.Lasting.guarded_none_iff"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/formal/MarketInstances.lean",
+      "role": "proof",
+      "sha256": "c669ced370edfca820dfaabff4b7e037aad8452213d55f0727d8b00ad02344da",
+      "declarations": [
+        "Becoming.MarketInstances.scheduled",
+        "Becoming.MarketInstances.run_eq",
+        "Becoming.MarketInstances.guarded_eq",
+        "Becoming.MarketInstances.orbit_growth",
+        "Becoming.MarketInstances.forces_failure_instance",
+        "Becoming.MarketInstances.obstructed_seeds_instance"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "declarations": []
+    },
+    {
+      "path": "experiments/market-generativity/formal/market-instances-checks/20261014T141058.867757Z/verification.json",
+      "role": "receipt",
+      "sha256": "86c5bd405e45fbf123e8eab5663a08275bea633dae27f137c359de524ca81a32",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "role": "proof",
+      "sha256": "58a4c83e59a96cc6157d98d3a176c2b1e0d5d49673a0c94fea01d3b4f03e2adf",
+      "declarations": [
+        "Becoming.Courses.Drains.leaves_run",
+        "Becoming.Courses.exhausts_run",
+        "Becoming.Courses.run_history",
+        "Becoming.Courses.run_admissible",
+        "Becoming.Courses.historyRun"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "role": "receipt",
+      "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T190408.610189Z/verification.json",
+      "role": "receipt",
+      "sha256": "47259fe19127209f0f481b03f8ab92ae59c7864e4d7f0ea578afc8520eb625f6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/market-generativity/formal/FiniteSupportObstruction.lean",
+      "receipt": "experiments/market-generativity/formal/finite-support-verification.json",
+      "sha256_pointer": "/sources/FiniteSupportObstruction.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/market-generativity/formal/RegimeTransition.lean",
+      "receipt": "experiments/market-generativity/formal/finite-support-verification.json",
+      "sha256_pointer": "/sources/RegimeTransition.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Lasting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/market-generativity/formal/MarketInstances.lean",
+      "receipt": "experiments/market-generativity/formal/market-instances-checks/20261014T141058.867757Z/verification.json",
+      "sha256_pointer": "/source_sha256/MarketInstances",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Courses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "普遍有限支持阻碍已完成，formed-software-continuation已补一个实际组织形成与分发接口。继续取得具体改组中各阶段的真实时间、支持及不可中断条件，才可证明它跨过哪种数量化边界。",
+    "en": "The universal finite-support obstruction is complete, and formed-software-continuation adds an actual organizational formation/distribution interface. Next obtain real timing, support and uninterrupted conditions at each stage of a specific reorganization before proving which quantitative boundary it crosses."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：从单一来不及恢复反例推进到每个有限存量的正区间及全时变责任通道；同初态投影／守卫比较与高维护对照均检查。",
+      "en": "2026-10-09: strengthened one too-late example to positive intervals for every finite stock and all time-varying quality channels; checked same-seed projection/guard and high-renewal comparisons."
+    },
+    {
+      "zh": "2026-10-09：核读既有研究§§41–46的LibreOffice形成对应；原定理、条件和回执均保留，新历史评估另记formed-software-continuation，未作数值映射。",
+      "en": "2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping."
+    },
+    {
+      "zh": "2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。",
+      "en": "2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Lasting：被耗竭的层族中低于第n级的起点在每段可容许历史上n步内离开守卫，逆命题由 Collapse.level_not_lasting 反驳；有界增长给出 exhausts。finite_support_forces_failure 经外围 MarketInstances 成为实例。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Lasting: below level n of a drained family every admissible history leaves the guard within n steps, the converse refuted by Collapse.level_not_lasting; bounded growth gives exhausts. finite_support_forces_failure becomes an instance through the periphery MarketInstances. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Lasting 由核心回执 20261014T044840.291323Z；MarketInstances 由外围回执 20261014T041714.366300Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Lasting by core receipt 20261014T044840.291323Z; MarketInstances by peripheral receipt 20261014T041714.366300Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划（研究第116节）：every_finite_stock_has_obstructed_positive_seeds 现由耗竭律证明（obstructed_seeds_instance：旧证明以 forces_failure_instance 代替 finite_support_forces_failure）；英文主张中的市场措辞改为结构词。Lasting.lean 与 MarketInstances.lean 改动后，第三批核验文件对它们的绑定已移去（核验文件的引用保留），有效范围中一般律的说明改为仅经scratch实编；落地时绑定新的核验文件。另审读改动后对齐研究的哈希（末尾新增第116节及其英文段；其余不变）。",
+      "en": "14 October 2026, open-issues plan (study section 116): every_finite_stock_has_obstructed_positive_seeds is now proved from the exhaustion law (obstructed_seeds_instance: the old proof with forces_failure_instance in place of finite_support_forces_failure); the English claim's market wording became structural. With Lasting.lean and MarketInstances.lean changed, their batch-3 bindings were removed (the referenced verification files stay) and the validation scope's note on the general laws now says scratch builds only; the landing run binds the new verification files. The hash of the study was reconciled after reading its change (section 116 and its English paragraph appended; the rest unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）。新绑定到本批回执的证明：Lasting.lean、MarketInstances.lean；验证范围复为一般律已由检查器回执绑定。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged). New proof bindings to this batch's receipts: Lasting.lean, MarketInstances.lean; the validation scope again says the general laws are bound to checker receipts."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Lasting.lean（第十七次审查 G8：“耗费一级”改为“使水平降低一级”，约束变量 costs 改为 lowers；陈述与证明不变）；MarketInstances.lean（第十七次审查 G11：“耗费储备一个单位”改为“取走储备的一个单位”；陈述与证明不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Lasting.lean (seventeenth review G8: “cost one level” now “lower the level by one”, binder costs → lowers; statements and proofs unchanged); MarketInstances.lean (seventeenth review G11: “costs the stock a unit” now “takes one unit of the stock”; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第125节）：更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study section 125): rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3c 与 P83d 落地（研究第129–130节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第129节（整合 I3c：四项外围记录接入；Becoming.Keeping、共享存量与传递）与第130节（P83d：不加前提的 Moore 界）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing integration I3c and P83d (study sections 129–130): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 129 (integration I3c: four periphery records joined; Becoming.Keeping, the shared stock, transmission) and 130 (P83d: Moore's bound with no premise) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：受扰过程的运行就是其诸步的可容许历史（run_history、run_admissible；反之 historyRun）。于是在被耗竭的家族第 n 级之下的起点，在受扰过程的每个运行上于 n 步之内离开护栏（Drains.leaves_run）；有界增长下的耗竭律对受扰过程的每个运行成立（exhausts_run）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
+      "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: a run of the disturbed process is the admissible history of its moves (run_history, run_admissible; conversely historyRun). So a start below level n of a drained family leaves the guard within n steps on every run of the disturbed process (Drains.leaves_run), and exhaustion by bounded growth holds on every run (exhausts_run). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
+    },
+    {
+      "zh": "2026-10-16，整合 I4b 第四项（Ren 选择“Closest gaps first”）：Lasting.lean 导入 Becoming.Likeness，文件说明加“持续某段进程”一条，其后加同名一节；本记录所引的声明不变。改用新哈希，证明绑定移到核心回执 20261015T190408.610189Z。",
+      "en": "16 October 2026, integration I4b item 4 (Ren chose “Closest gaps first”): Lasting.lean imports Becoming.Likeness, its docstring gains a bullet on lasting some course, and a section of that name follows; the declarations this record cites are unchanged. The reference takes the new hash and its proof binding moves to core receipt 20261015T190408.610189Z."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Lasting.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Lasting.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 bilingual-16 项：英文标题补上“in time”，与中文“无法及时恢复”及主张的“n 步内离开守卫”一致。schema 1，无 text_versions；原文见 git。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item bilingual-16: the English title gains \"in time\", matching the Chinese 无法及时恢复 and the claim's leaving the guard within n steps. Schema 1, no text_versions; earlier text in git."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, MARKET-INTERNET-DEGENERATION.md, MARKETS-AND-GENERATIVE-REGIMES.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md, MARKETS-AND-GENERATIVE-REGIMES.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): in Courses.lean, six theorems now cite their general forms (Lasting.fixed_avoids, Countdown.Advances.completes, Copying.scan_le, CrossSituational.narrows, CrossSituational.reads_every_iff, Readout.no_judge_of_merged), and inspection_trace_scan is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Courses.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Courses.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Courses.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Courses.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Courses.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Courses.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Courses.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Courses.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Courses.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Courses.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Courses.lean, Lasting.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Courses.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Lasting.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Courses.lean、Lasting.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Courses.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Lasting.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Courses.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Courses.lean, takes as its final sections RetrodictionRuns, CandidateRuns, ReducedRuns, the modules reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Courses.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Courses.lean，以末节收入 RetrodictionRuns、CandidateRuns、ReducedRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+    }
+  ]
+}

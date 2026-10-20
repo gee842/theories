@@ -285,13 +285,11 @@
       "en": "2026-10-14 readability migration to schema 2: the claim's first sentence became the statement, and its second (Apollo's ending and different inherited commitments remain) is carried by the counterexample and the third hypothesis; the limitations became 5 typed does-not-show items; the next step's first sentence (both continuation correspondences complete) became 2 anchored progress lines, and the rest is restated positively with the same content. No claim, premise, status, dependency, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/formed-software-continuation.md); the exact earlier record is text_versions[0]."
     },
     {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in MARKETS-AND-GENERATIVE-REGIMES.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): MARKETS-AND-GENERATIVE-REGIMES.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): MARKETS-AND-GENERATIVE-REGIMES.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "2026-10-20: 2 bookkeeping notes condensed of 17 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/fc76e9a2a18ddd7a/formed-software-continuation.json and in git.",
+      "zh": "2026-10-20：2 条记账性说明合并（17 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/fc76e9a2a18ddd7a/formed-software-continuation.json 和 git 中。"
     }
   ],
   "text_versions": [
@@ -301,6 +299,14 @@
       "note": {
         "zh": "可读性迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the readability migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/fc76e9a2a18ddd7a/formed-software-continuation.json",
+      "sha256": "fc76e9a2a18ddd7ac61ba87acc0469ecd715ead0f24b5c97ecca3dab17033a3a",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
   ]

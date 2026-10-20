@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "id": "control-coherence-loss",
+  "title": {
+    "en": "Control-response loss and recovery through retained joint relations",
+    "zh": "控制响应丧失与保留共同关系的恢复"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
+  "claim": {
+    "zh": "对每个约化与观测：观测经约化读出的是单值，恰在观测于约化所合并者之间相同之处；在约化合并的两个构型上，在两处都对的解码器存在恰当观测在那里一致，所以没有映射能恢复它合并的两个不同构型。在明示实振幅片段中，受控 X/Z 次序与完全退相干保留控制分支权重但改变固定测量响应；对角线合并加号响应不同的相干与退化矩阵，故仅凭对角线的解码失败；退相干合并制备与相干矩阵，故没有统一逆映射：两者都是实例。与空白寄存器的可逆交互经约化恰好实现退相干；保留共同状态允许精确反转。",
+    "en": "For every reduction and observable: what the observable reads through the reduction is single-valued exactly where it agrees across what the reduction merges; on two configurations the reduction merges, a decoder right at both exists exactly when the observable agrees there, so no map restores two different configurations it merges. In the specified real-amplitude fragment, controlled X/Z order and complete dephasing preserve control branch weights while changing a fixed measurement response; the diagonal merges the coherent and degraded matrices, whose plus responses differ, so a diagonal-only decoder fails, and dephasing merges the prepared and coherent matrices, so no uniform inverse exists: both are instances. A reversible interaction with a blank register realizes the dephasing on reduction, and retaining the joint state permits exact reversal."
+  },
+  "hypotheses": [
+    {
+      "en": "Integer amplitude and density numerators with explicit normalization; H, X, Z, coherent control, reduction and measurement are specified operations, not derived physical laws. Arbitrary integer matrices are not asserted to be physical states.",
+      "zh": "整数振幅及密度分子具有公开归一化；H、X、Z、相干控制、约化及测量均为明示操作，不是推导出的物理定律。不声称任意整数矩阵均为物理状态。"
+    },
+    {
+      "en": "The no-inverse result requires one map to restore both original preparations from their common reduced output alone. Joint reversal retains the initially blank register and control of the same joint operation.",
+      "zh": "无逆映射结果要求同一映射仅凭共同约化输出恢复两种原制备；共同反转保留最初空白寄存器及对同一共同操作的控制。"
+    }
+  ],
+  "correspondence": {
+    "en": "A restricted algebraic instantiation of standard quantum operations with the control coordinate first. Matrix traces and shared response denominators are explicit. This is a state-interface calculation, not a verified implementation of the full higher-order switch or a laboratory run.",
+    "zh": "标准量子操作的受限代数实例化，以控制坐标为先；矩阵迹和响应共同分母公开。这是状态接口计算，不是完整高阶开关的已验证实现或实验运行。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dephasing.lean",
+  "aliases": [
+    "Generative.OperativeCoherence.switched_density",
+    "Generative.OperativeCoherence.dephase_keeps_response_iff",
+    "Generative.OperativeCoherence.no_diagonal_response_decoder",
+    "Generative.OperativeCoherence.no_uniform_dephase_inverse",
+    "Generative.OperativeCoherence.recording_reduces_to_dephase",
+    "Generative.OperativeCoherence.joint_reversal_restores_control",
+    "Becoming.Readout.reading_single_iff",
+    "Becoming.Readout.decodes_iff_of_section",
+    "Becoming.Readout.decoder_pair_iff",
+    "Becoming.Readout.no_restore",
+    "Becoming.Instances.diagonal_no_decoder",
+    "Becoming.Instances.dephase_no_restore",
+    "Becoming.Courses.runs_no_restore"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "becoming-context-coherence",
+      "detail": {
+        "en": "Extends the operative comparison beyond existential context support; the prior trace theorem is neither imported nor claimed to represent quantum coherence.",
+        "zh": "将作用比较推进到存在性情境支持之外；未导入此前历史定理，也不声称它已表示量子相干性。"
+      }
+    },
+    {
+      "id": "endpoint-loss-and-return",
+      "detail": {
+        "en": "Contrasts loss at a reduced interface with recovery at a retained joint interface; no formal transport to that fixed-law endpoint theorem is claimed.",
+        "zh": "比较约化接口的损失与保留共同接口的恢复；不声称已形式接入固定规律端点定理。"
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+      "detail": {
+        "en": "The prepared, coherent and degraded matrices share diagonal (1,1) but have distinct plus responses. Prepared and coherent matrices dephase to the same matrix, blocking uniform recovery from that matrix alone.",
+        "zh": "已制备、相干与退化矩阵共享对角线(1,1)，但正向响应不同；前两者退相干至同一矩阵，阻断仅凭该矩阵的统一恢复。"
+      }
+    }
+  ],
+  "limitations": {
+    "en": "The checked fragment has real integer amplitudes, selected operations and one response. It proves neither causal nonseparability, arbitrary complex quantum behavior, physical implementation, universal irreversibility, ethical degeneration nor the universal zero-substantive-axiom foundation.",
+    "zh": "所查片段限于实整数振幅、选定操作及一种响应。未证明因果不可分离、任意复数量子行为、物理实现、普遍不可逆、伦理退化或普遍零实质公理根基。"
+  },
+  "validation_scope": {
+    "en": "Fresh Lean 4.29.1 build: 27 theorems and 54 declaration audits. 44 reports empty; 10 use propext, three of those also Quot.sound. No custom postulates or final Classical.choice. Source-bound frozen receipt; author counterreview, no independent acceptance or new empirical result.",
+    "zh": "Lean 4.29.1重新实编27项定理及54项声明审计。44项空，10项含propext，其中3项另含Quot.sound；无自定公理或最终Classical.choice。回执绑定冻结源码；作者反审，无独立验收或新增经验成果。"
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+      "role": "proof",
+      "sha256": "27028964458cad91d16df534203331ae5e9f295375e5ef027bcc9da0eb1394c8",
+      "declarations": [
+        "Generative.OperativeCoherence.preparation_from_blank",
+        "Generative.OperativeCoherence.switched_density",
+        "Generative.OperativeCoherence.coherent_response",
+        "Generative.OperativeCoherence.degraded_response",
+        "Generative.OperativeCoherence.no_diagonal_response_decoder",
+        "Generative.OperativeCoherence.no_uniform_dephase_inverse",
+        "Generative.OperativeCoherence.retained_response_exact",
+        "Generative.OperativeCoherence.dephase_keeps_response_iff",
+        "Generative.OperativeCoherence.recording_reduces_to_dephase",
+        "Generative.OperativeCoherence.joint_reversal_restores_control"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dephasing.lean",
+      "role": "proof",
+      "sha256": "bbe73ccc7ac9c57e78554b8c0c576c39480348221f11a8b333310a36343990d7",
+      "declarations": [
+        "Becoming.Dephasing.preparation_from_blank",
+        "Becoming.Dephasing.switched_density",
+        "Becoming.Dephasing.coherent_response",
+        "Becoming.Dephasing.degraded_response",
+        "Becoming.Dephasing.no_diagonal_response_decoder",
+        "Becoming.Dephasing.no_uniform_dephase_inverse",
+        "Becoming.Dephasing.retained_response_exact",
+        "Becoming.Dephasing.dephase_keeps_response_iff",
+        "Becoming.Dephasing.recording_reduces_to_dephase",
+        "Becoming.Dephasing.joint_reversal_restores_control"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+      "role": "proof",
+      "sha256": "c6a85943044e2fce083a947495cc825a42a381fa7f44e1c1f30c8a3ba33c3843",
+      "declarations": [
+        "Becoming.Readout.Reading",
+        "Becoming.Readout.SingleValued",
+        "Becoming.Readout.reading_single_iff",
+        "Becoming.Readout.Decodes",
+        "Becoming.Readout.lumped_of_decodes",
+        "Becoming.Readout.decodes_iff_of_section",
+        "Becoming.Readout.decoder_pair_iff",
+        "Becoming.Readout.no_restore"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
+      "role": "proof",
+      "sha256": "b442e896d0ea8ec66adf9104b4777278a4764291a48b33e95f1fdebf61590e83",
+      "declarations": [
+        "Becoming.Instances.diagonal_no_decoder",
+        "Becoming.Instances.dephase_no_restore"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-checks/20261008T184345.613262Z/verification.json",
+      "role": "receipt",
+      "sha256": "5235cf9487a839cc50e2f52788bdeb580f585b9970621d5f85969e6a18b4d4ed",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "role": "integration",
+      "sha256": "0c0674eb1cf575c62a8338b7e8f3141547d4c3c5c5f8a9d278b438a622f65f7e",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/BECOMING-FOUNDATION.md",
+      "role": "statement",
+      "sha256": "914b5022297b116dd6332ba1864a6b7bf6599dff38ce2f7eaa3c2340205047bc",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_operative_coherence.py",
+      "role": "review",
+      "sha256": "40eec236f1a32e9d6807c96c5816441cc078e477335185b8a2b6dd38d8dbdd5e",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "role": "receipt",
+      "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "role": "proof",
+      "sha256": "58a4c83e59a96cc6157d98d3a176c2b1e0d5d49673a0c94fea01d3b4f03e2adf",
+      "declarations": [
+        "Becoming.Courses.runs_no_restore",
+        "Becoming.Courses.reducedRun"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "role": "receipt",
+      "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "role": "receipt",
+      "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-checks/20261008T184345.613262Z/verification.json",
+      "sha256_pointer": "/modules/0/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Readout",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Instances",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Courses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dephasing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dephasing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "en": "Use the established difference between local access and retained joint relations in the common constitutive argument. Warrant the universal claim at its full scope instead of promoting this supplied quantum mechanism into universal ontology.",
+    "zh": "将局部可用与保留共同关系的已建立区别用于共同构成论证；取得普遍主张完整范围的根据，不把给定量子机制升格为普遍本体。"
+  },
+  "history": [
+    {
+      "en": "9 October 2026: §18 derives a concrete formation/loss/reversal interface after §17’s source assessment. Preliminary 21- and 26-theorem builds remain development history; the final 27-theorem package is one scoped result.",
+      "zh": "2026年10月9日：第18节在第17节来源评估后推导具体形成／损失／反转接口。21及26定理初步构建保留为开发历史；最终27定理包是一个有范围成果。"
+    },
+    {
+      "en": "9 October 2026: reconciled Ren’s whole/manifold correction. The necessity target is Becoming as a whole, with generativity within it. Earlier chapter/study content and proof sources are preserved; no new theorem or axiom.",
+      "zh": "2026年10月9日：接入Ren关于整体／manifold的修正。必然性对象是Becoming整体，生成性位于其中。保留此前理论、研究及证明源码；无新增定理或公理。"
+    },
+    {
+      "en": "9 October 2026: reviewed the existing whole/manifold insertion and the subsequent whole-deduction audit in the shared theory/study. The local mathematical statement and proof receipt are unchanged; the whole target does not require this particular mechanism everywhere.",
+      "zh": "2026年10月9日：核读共享理论／研究中的整体／manifold插入及后续整体演绎审计。局部数学陈述与证明回执不变；整体目标不要求该机制处处成立。"
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Readout）：对每个约化，解码器恰在观测于合并处一致时存在，合并的不同构型不可恢复；对角解码与退相干逆映射的失败经桥接 Becoming.Instances 成为实例。scratch_build 实编，公理报告为空；回执由落地运行绑定。原定理、回执与范围不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Readout): for every reduction, a decoder exists exactly where the observable agrees across what is merged, and merged different configurations cannot be restored; the diagonal-decoder and dephasing-inverse failures become instances through the bridge Becoming.Instances. Built with scratch_build, empty axiom reports; the landing run binds the receipt. The original theorems, receipt and scope are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：Becoming.Readout、Becoming.Instances 由核心回执 20261013T221720.428753Z，公理报告均为空。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: Becoming.Readout, Becoming.Instances by core receipt 20261013T221720.428753Z, each with empty axiom reports."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Readout.lean（整合 I3a：新增可错见证与经约化的未来；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Readout.lean (integration I3a: fallible witnesses and futures through a reduction added; earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第125节）：更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study section 125): rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3c 与 P83d 落地（研究第129–130节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第129节（整合 I3c：四项外围记录接入；Becoming.Keeping、共享存量与传递）与第130节（P83d：不加前提的 Moore 界）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing integration I3c and P83d (study sections 129–130): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 129 (integration I3c: four periphery records joined; Becoming.Keeping, the shared stock, transmission) and 130 (P83d: Moore's bound with no premise) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Readout.lean（整合 I3d：新增列出之族的判断（LumpedOn、Judges、lumpedOn_of_judges、firstJudge、firstJudge_judges、judges_iff_lumpedOn、no_judge_of_merged）与经由部分的读取（ThroughParts、ReadsDirectly、agree_iff_parts、supplied_agree_iff_parts）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Readout.lean (integration I3d: judging a listed family (LumpedOn, Judges, lumpedOn_of_judges, firstJudge, firstJudge_judges, judges_iff_lumpedOn, no_judge_of_merged) and readings through parts (ThroughParts, ReadsDirectly, agree_iff_parts, supplied_agree_iff_parts) added; earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：约化所保留的运行是经约化而读之律的运行（reducedRun）。约化运行在两个运行不同的日期相同时，约化运行的任何映射都不能在每个日期还原两者（runs_no_restore）；在约化运行相同的日期，对一个观察量在两者上都对的解码存在，恰当观察量在那里相同（runs_decoder_pair_iff）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
+      "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: what a reduction keeps of a run is a run of the law read through it (reducedRun). Where the reduced runs agree at a date at which the runs differ, no map of the reduced runs restores both runs at every date (runs_no_restore); at a date where the reduced runs agree, a decoder right for an observable at both runs exists exactly when the observable agrees on them there (runs_decoder_pair_iff). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, GROUNDING-INFERENCE-AND-PRESENTATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-FOUNDATION.md, BECOMING-RENEWAL-READING.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): in Courses.lean, six theorems now cite their general forms (Lasting.fixed_avoids, Countdown.Advances.completes, Copying.scan_le, CrossSituational.narrows, CrossSituational.reads_every_iff, Readout.no_judge_of_merged), and inspection_trace_scan is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Dephasing; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（Dephasing），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Courses.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Instances.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Courses.lean, Readout.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Dephasing.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Dephasing.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Dephasing.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Dephasing.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Courses.lean, Readout.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Courses.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Readout.lean, Readout.image removed for Image of Becoming.Mechanism. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Courses.lean、Readout.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Courses.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Readout.lean，删去 Readout.image，改用 Becoming.Mechanism 的 Image。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Courses.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Courses.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Courses.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Courses.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Courses.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Courses.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Courses.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Courses.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Courses.runs_decoder_pair_iff (now Readout.decoder_pair_iff). Proof bindings (Courses.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Courses.lean, takes as its final sections RetrodictionRuns, CandidateRuns, ReducedRuns, the modules reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Courses.runs_decoder_pair_iff（现为 Readout.decoder_pair_iff）。证明绑定（Courses.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Courses.lean，以末节收入 RetrodictionRuns、CandidateRuns、ReducedRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+    }
+  ]
+}

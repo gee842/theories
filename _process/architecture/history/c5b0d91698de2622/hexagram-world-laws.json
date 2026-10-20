@@ -1,0 +1,1146 @@
+{
+  "schema_version": 2,
+  "id": "hexagram-world-laws",
+  "title": {
+    "en": "Laws of the hexagram world: the nuclear law, the cast, the four symmetries, the counter, the orbits",
+    "zh": "卦的世界上的律：互、之卦、錯綜、加一、消息之六轨"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T10:40:59+00:00",
+  "statement": {
+    "en": "With no premise, along the runs of the spine: 互 merges and draws every run within two steps into 乾, 坤 and the turns of 既濟 and 未濟, the ends of the received order; turning lines settle in one step; 錯 and 綜 form a four-group of twenty classes; adding one has one orbit, waxing and waning six.",
+    "zh": "不加前提，沿脊柱的运行：互合并，每一运行至迟两步入乾、坤与既濟未濟之相代，即卦序首尾四卦；老爻一步即定；錯綜成四元群，分二十类；加一只一轨；消息之律六轨。"
+  },
+  "laws": [
+    {
+      "en": "The received order lists each configuration once, so a count over it is a count of configurations; a configuration a law leaves as it is stays along its run.",
+      "zh": "所传卦序每一构形只列一次，所以对它的计数就是构形之数；律所不动的构形沿其运行不动。",
+      "declarations": [
+        "Becoming.Hexagram.neither",
+        "Becoming.Hexagram.not_mem_of_memb",
+        "Becoming.Hexagram.distinctb",
+        "Becoming.Hexagram.nodup_of_distinctb",
+        "Becoming.Hexagram.order_nodup",
+        "Becoming.Hexagram.allUnbroken",
+        "Becoming.Hexagram.orbit_still"
+      ]
+    },
+    {
+      "en": "The nuclear law (互) takes lines 2 to 4 as the lower trigram and 3 to 5 as the upper. What it makes of a hexagram is fixed by the four inner lines, so two runs whose starts agree in them are one run from the first step; it merges (剝 and 坤 go on to 坤) and loses a possibility for good.",
+      "zh": "互以二至四爻为下卦、三至五爻为上卦。互之所成由中间四爻定，所以起点中爻相同的两个运行自第一步起即为一个运行；此律合并（剝与坤皆至坤），永失一种可能。",
+      "declarations": [
+        "Becoming.Hexagram.nuclear",
+        "Becoming.Hexagram.inner",
+        "Becoming.Hexagram.nuclear_inner",
+        "Becoming.Hexagram.run_inner",
+        "Becoming.Hexagram.nuclear_merges",
+        "Becoming.Hexagram.nuclear_process_merges",
+        "Becoming.Hexagram.nuclear_loses"
+      ]
+    },
+    {
+      "en": "Two steps of the nuclear law leave only lines 3 and 4, three times over, so two runs whose starts agree in them are one run from the second step. Lines 3 and 4, which swap at every step, are a lumping the law goes alike across; the count of unbroken lines is not (剝 and 比).",
+      "zh": "互两步之后只余三、四两爻，三叠而成卦，所以起点三、四爻相同的两个运行自第二步起即为一个运行。三、四两爻每步互换，是律所同行的归并；阳爻之数不是（剝与比）。",
+      "declarations": [
+        "Becoming.Hexagram.innerPair",
+        "Becoming.Hexagram.thrice",
+        "Becoming.Hexagram.nuclear_two",
+        "Becoming.Hexagram.nuclear_two_lumped",
+        "Becoming.Hexagram.run_two_middle",
+        "Becoming.Hexagram.thrice_inj",
+        "Becoming.Hexagram.innerPair_nuclear",
+        "Becoming.Hexagram.swap_eq",
+        "Becoming.Hexagram.innerPair_lumped",
+        "Becoming.Hexagram.innerPair_goAlike",
+        "Becoming.Hexagram.nuclear_yang_not_lumped",
+        "Becoming.Hexagram.nuclear_yang_not_goAlike"
+      ]
+    },
+    {
+      "en": "Along their runs 乾 and 坤 stay and 既濟 and 未濟 take turns, and a run stays where it starts exactly from 乾 and 坤. Every run is in these four from the second step on and every other configuration is drawn in, so exactly these four return: the first two and the last two of the received order. Four are in them, twelve enter at the first step and forty-eight at the second.",
+      "zh": "沿其运行，乾、坤不动，既濟、未濟相代；运行停在起点，恰当起点为乾或坤。每一运行自第二步起在此四者之中，其余构形皆被吸入，所以恰此四者复返：即所传卦序之首二卦与末二卦。四卦本在其中，十二卦第一步进入，四十八卦第二步进入。",
+      "declarations": [
+        "Becoming.Hexagram.NuclearAttractor",
+        "Becoming.Hexagram.attractorb",
+        "Becoming.Hexagram.attractor_of_attractorb",
+        "Becoming.Hexagram.not_attractor_of_attractorb",
+        "Becoming.Hexagram.thrice_attractor",
+        "Becoming.Hexagram.nuclear_two_attractor",
+        "Becoming.Hexagram.nuclear_allUnbroken",
+        "Becoming.Hexagram.nuclear_allBroken",
+        "Becoming.Hexagram.nuclear_jiJi",
+        "Becoming.Hexagram.nuclear_weiJi",
+        "Becoming.Hexagram.nuclear_two_fixed_one_cycle",
+        "Becoming.Hexagram.nuclear_fixed_iff",
+        "Becoming.Hexagram.nuclear_rests_iff",
+        "Becoming.Hexagram.attractor_absorbing",
+        "Becoming.Hexagram.attractor_returns",
+        "Becoming.Hexagram.outside_drawn",
+        "Becoming.Hexagram.outside_not_returns",
+        "Becoming.Hexagram.returns_iff_attractor",
+        "Becoming.Hexagram.nuclear_process_returns_iff",
+        "Becoming.Hexagram.process_returns_iff_ends",
+        "Becoming.Hexagram.run_in_attractor",
+        "Becoming.Hexagram.entry_counts"
+      ]
+    },
+    {
+      "en": "Lines 3 and 4 tell where a course comes to rest: at every even step from the second on the run is at them three times over; sixteen configurations go to 乾 (both unbroken), sixteen to 坤 (both broken) and thirty-two into the turns of 既濟 and 未濟 (where they differ).",
+      "zh": "三、四两爻决定一个历程归于何处：自第二步起每一偶数步，运行在此两爻之三叠；十六卦归乾（两爻皆阳），十六卦归坤（皆阴），三十二卦入既濟、未濟之相代（两爻相异）。",
+      "declarations": [
+        "Becoming.Hexagram.thrice_back",
+        "Becoming.Hexagram.run_rests_at",
+        "Becoming.Hexagram.basin_iff",
+        "Becoming.Hexagram.and_of_both",
+        "Becoming.Hexagram.or_of_neither",
+        "Becoming.Hexagram.qian_basin",
+        "Becoming.Hexagram.kun_basin",
+        "Becoming.Hexagram.cycle_basin",
+        "Becoming.Hexagram.basin_counts"
+      ]
+    },
+    {
+      "en": "Keeping a hexagram, changing every line (錯), turning it over (綜) and both form a group of four in which each is its own inverse and any two commute. The nuclear law commutes with each, so each takes every run of it to a run of it; no configuration is its own complement, so the runs from a configuration and from its complement never meet, an instance of what a law commuting with a symmetry that moves everything keeps apart.",
+      "zh": "不变、錯（六爻皆变）、綜（倒转）与錯而綜成一四元群，各为自身之逆，两两可交换。互与四者皆交换，故四者各把互的每一运行送为互的运行；没有构形是自身之錯，所以一卦与其錯卦的运行永不相遇，是与移动一切构形之对称交换的律保持分离之一例。",
+      "declarations": [
+        "Becoming.Hexagram.nuclear_complement",
+        "Becoming.Hexagram.nuclear_reverse",
+        "Becoming.Hexagram.complement_reverse",
+        "Becoming.Hexagram.reverse_reverse",
+        "Becoming.Hexagram.reverse_complement_reverse",
+        "Becoming.Hexagram.Symmetry",
+        "Becoming.Hexagram.Symmetry.act",
+        "Becoming.Hexagram.Symmetry.comp",
+        "Becoming.Hexagram.Symmetry.act_comp",
+        "Becoming.Hexagram.Symmetry.comp_self",
+        "Becoming.Hexagram.Symmetry.comp_comm",
+        "Becoming.Hexagram.Symmetry.act_self",
+        "Becoming.Hexagram.nuclear_act",
+        "Becoming.Hexagram.nuclear_run_act",
+        "Becoming.Hexagram.run_complement_apart"
+      ]
+    },
+    {
+      "en": "Named by its member of least binary value, a class holds the hexagrams a symmetry takes one to another: twenty classes, eight of two and twelve of four. The classes are a lumping the nuclear law goes alike across; the law of waxing and waning does not go alike across them, since turning over runs it backward.",
+      "zh": "以二进制值最小之卦为名，一类即诸对称互相可达之卦：二十类，八类各二卦，十二类各四卦。诸类是互所同行的归并；消息之律不同行于诸类，因为倒转使它逆行。",
+      "declarations": [
+        "Becoming.Hexagram.binaryValue",
+        "Becoming.Hexagram.leastOf",
+        "Becoming.Hexagram.classOf",
+        "Becoming.Hexagram.classOf_act",
+        "Becoming.Hexagram.classOf_member",
+        "Becoming.Hexagram.classOf_eq_iff",
+        "Becoming.Hexagram.pairClasses",
+        "Becoming.Hexagram.fourClasses",
+        "Becoming.Hexagram.classes",
+        "Becoming.Hexagram.classSize",
+        "Becoming.Hexagram.classOf_mem",
+        "Becoming.Hexagram.class_census",
+        "Becoming.Hexagram.classes_lumped",
+        "Becoming.Hexagram.classes_goAlike",
+        "Becoming.Hexagram.classes_not_lumped_waxWane",
+        "Becoming.Hexagram.classes_not_goAlike_waxWane"
+      ]
+    },
+    {
+      "en": "The configurations turning over leaves as they are are exactly those the received order pairs by changing every line (乾坤, 頤大過, 坎離, 中孚小過); those turning over and changing every line take to one hexagram are exactly the pairs of the order in which the two agree (泰否, 隨蠱, 漸歸妹, 既濟未濟).",
+      "zh": "倒转不变之卦，恰是所传卦序以錯相配者（乾坤、頤大過、坎離、中孚小過）；倒转与錯所得相同之卦，恰是卦序中两者兼合之对（泰否、隨蠱、漸歸妹、既濟未濟）。",
+      "declarations": [
+        "Becoming.Hexagram.any_sound",
+        "Becoming.Hexagram.pairedByChange",
+        "Becoming.Hexagram.pairedByChange_sound",
+        "Becoming.Hexagram.turn_fixed_iff",
+        "Becoming.Hexagram.pairedByBoth",
+        "Becoming.Hexagram.pairedByBoth_sound",
+        "Becoming.Hexagram.both_fixed_iff"
+      ]
+    },
+    {
+      "en": "A marked line is turning (老) or staying (少); at the next step a turning line changes into its opposite and stays, and a staying one is as it was. Six marked lines show a hexagram (本卦) and, settled, go to one (之卦); settling twice is settling once, and lines are left as they are exactly where none turns.",
+      "zh": "一爻或老（变）或少（不变）；下一步老爻变为其反而不再变，少爻如故。六爻示一卦（本卦），定之则至一卦（之卦）；两次定与一次定相同，诸爻不动，恰当无一爻为老。",
+      "declarations": [
+        "Becoming.Hexagram.Marked",
+        "Becoming.Hexagram.Marked.value",
+        "Becoming.Hexagram.Marked.settle",
+        "Becoming.Hexagram.Marked.stays",
+        "Becoming.Hexagram.Marked.settle_settle",
+        "Becoming.Hexagram.Marked.stays_settle",
+        "Becoming.Hexagram.Marked.settle_of_stays",
+        "Becoming.Hexagram.Marked.turning_ne_staying",
+        "Becoming.Hexagram.Marked.stays_of_settle",
+        "Becoming.Hexagram.MarkedLines",
+        "Becoming.Hexagram.MarkedLines.shown",
+        "Becoming.Hexagram.MarkedLines.settle",
+        "Becoming.Hexagram.MarkedLines.onward",
+        "Becoming.Hexagram.MarkedLines.staysAll",
+        "Becoming.Hexagram.MarkedLines.settle_settle",
+        "Becoming.Hexagram.MarkedLines.staysAll_settle",
+        "Becoming.Hexagram.MarkedLines.settle_fixed_iff"
+      ]
+    },
+    {
+      "en": "The cast is a merging law settled in one step: along every run the lines are settled from the first step on and the run rests; one with a turning line is drawn into those with none, so a configuration returns exactly where no line turns.",
+      "zh": "之卦之律合并，一步即定：沿每一运行，自第一步起诸爻已定，运行静止；有老爻者被吸入无老爻者之中，所以一构形复返，恰当无一爻为老。",
+      "declarations": [
+        "Becoming.Hexagram.MarkedLines.settle_merges",
+        "Becoming.Hexagram.MarkedLines.settle_process_merges",
+        "Becoming.Hexagram.MarkedLines.run_settled",
+        "Becoming.Hexagram.MarkedLines.run_rests",
+        "Becoming.Hexagram.MarkedLines.drawn",
+        "Becoming.Hexagram.MarkedLines.returns_iff",
+        "Becoming.Hexagram.MarkedLines.process_returns_iff"
+      ]
+    },
+    {
+      "en": "The hexagram shown is not a lumping the cast goes alike across (乾 with every line staying and 乾 with its bottom line turning go on to 乾 and 姤); the hexagram the lines go to is. Six unbroken turning lines (用九) show 乾 and from the first step on the run shows 坤; six broken ones (用六) show 坤 and then 乾.",
+      "zh": "本卦不是之卦之律所同行的归并（六爻皆少之乾与初爻为老之乾，分别至乾与姤）；之卦是。六爻皆老阳（用九）示乾，自第一步起运行所示为坤；六爻皆老阴（用六）示坤，而后为乾。",
+      "declarations": [
+        "Becoming.Hexagram.MarkedLines.shown_not_lumped",
+        "Becoming.Hexagram.MarkedLines.shown_not_goAlike",
+        "Becoming.Hexagram.MarkedLines.onward_lumped",
+        "Becoming.Hexagram.MarkedLines.onward_goAlike",
+        "Becoming.Hexagram.MarkedLines.allTurning",
+        "Becoming.Hexagram.MarkedLines.all_nines",
+        "Becoming.Hexagram.MarkedLines.all_sixes"
+      ]
+    },
+    {
+      "en": "Adding one, line 1 the lowest place, turns the lowest broken line and every unbroken line below it; taking one away undoes it, so it merges nothing. It has one orbit of sixty-four: every configuration can be had from every other, and each first comes back at the sixty-fourth step.",
+      "zh": "加一（初爻为最低位）使最低之阴爻变阳、其下诸阳爻变阴；减一还原之，所以此律不合并。它只有一条六十四步之轨：任一构形可由任一构形得到，每一构形首次复返在第六十四步。",
+      "declarations": [
+        "Becoming.Hexagram.carry6",
+        "Becoming.Hexagram.carry5",
+        "Becoming.Hexagram.carry4",
+        "Becoming.Hexagram.carry3",
+        "Becoming.Hexagram.carry2",
+        "Becoming.Hexagram.carry1",
+        "Becoming.Hexagram.carryAt",
+        "Becoming.Hexagram.addOne",
+        "Becoming.Hexagram.borrow6",
+        "Becoming.Hexagram.borrow5",
+        "Becoming.Hexagram.borrow4",
+        "Becoming.Hexagram.borrow3",
+        "Becoming.Hexagram.borrow2",
+        "Becoming.Hexagram.borrow1",
+        "Becoming.Hexagram.subOne",
+        "Becoming.Hexagram.subOne_addOne",
+        "Becoming.Hexagram.addOne_lossless",
+        "Becoming.Hexagram.from_allBroken",
+        "Becoming.Hexagram.to_allBroken",
+        "Becoming.Hexagram.addOne_reach",
+        "Becoming.Hexagram.addOne_sixtyfour",
+        "Becoming.Hexagram.backWithin",
+        "Becoming.Hexagram.not_back",
+        "Becoming.Hexagram.first_return_of",
+        "Becoming.Hexagram.backWithin_addOne",
+        "Becoming.Hexagram.addOne_first_return",
+        "Becoming.Hexagram.addOne_one_orbit"
+      ]
+    },
+    {
+      "en": "Along every run of the counter, 2 ^ (k - 1) steps on the line at place k is turned and the lines below it are as they were.",
+      "zh": "沿加一之律的每一运行，2^(k−1) 步之后第 k 爻翻转，其下诸爻如故。",
+      "declarations": [
+        "Becoming.Hexagram.exponent",
+        "Becoming.Hexagram.period",
+        "Becoming.Hexagram.period_pow",
+        "Becoming.Hexagram.linesBelow",
+        "Becoming.Hexagram.orbit_period",
+        "Becoming.Hexagram.carryAt_turns",
+        "Becoming.Hexagram.carryAt_below",
+        "Becoming.Hexagram.line_turns"
+      ]
+    },
+    {
+      "en": "The rises and falls across the seams (承, 乘), with one more where the bottom and top lines agree, count the changes of line once round; the law of waxing and waning keeps them along every run, and they are one, three or five, on twelve, forty and twelve configurations, so the law, though it merges nothing, does not reach 既濟 from 乾.",
+      "zh": "各缝之承与乘，加上初、上两爻相同之处，数出绕行一周的爻变；消息之律沿每一运行保持此数，其值为一、三或五，分别在十二、四十、十二个构形上，所以此律虽不合并，乾不能至既濟。",
+      "declarations": [
+        "Becoming.Hexagram.changesAround",
+        "Becoming.Hexagram.changesAround_waxWane",
+        "Becoming.Hexagram.changesAround_run",
+        "Becoming.Hexagram.changesAround_invariant",
+        "Becoming.Hexagram.changesAround_values",
+        "Becoming.Hexagram.changesAround_counts",
+        "Becoming.Hexagram.qian_not_reach_jiJi",
+        "Becoming.Hexagram.waxWane_not_reach_every"
+      ]
+    },
+    {
+      "en": "Every configuration is on the orbit of one of six starts, 乾, 屯, 蒙, 需, 隨 and 既濟, which first come back at the twelfth step, or the fourth for 隨; the orbit is a lumping the law goes alike across and is kept by what the law reaches; the six orbits hold twelve, twelve, twelve, twelve, four and twelve configurations, with one, three, three, three, three and five changes around.",
+      "zh": "每一构形在六个起点之一的轨道上：乾、屯、蒙、需、隨、既濟，各于第十二步首次复返，隨于第四步；轨道是律所同行的归并，律之所及保持轨道；六轨各含十二、十二、十二、十二、四、十二个构形，绕行一周之爻变为一、三、三、三、三、五。",
+      "declarations": [
+        "Becoming.Hexagram.zhun",
+        "Becoming.Hexagram.meng",
+        "Becoming.Hexagram.orbitStarts",
+        "Becoming.Hexagram.visitsFrom",
+        "Becoming.Hexagram.visits_sound",
+        "Becoming.Hexagram.onOrbit",
+        "Becoming.Hexagram.onOrbit_sound",
+        "Becoming.Hexagram.onOrbit_all",
+        "Becoming.Hexagram.on_an_orbit",
+        "Becoming.Hexagram.starts_return",
+        "Becoming.Hexagram.indexIn",
+        "Becoming.Hexagram.orbitIndex",
+        "Becoming.Hexagram.orbitIndex_waxWane",
+        "Becoming.Hexagram.orbitIndex_lumped",
+        "Becoming.Hexagram.orbitIndex_goAlike",
+        "Becoming.Hexagram.orbitIndex_invariant",
+        "Becoming.Hexagram.reach_keeps_orbit",
+        "Becoming.Hexagram.orbit_census"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom and no premise: the laws, the marked lines, the symmetries, the classes and the orbits are defined in the module; each spine law is used at its stated hypotheses (Law.Drawn.not_returns with an absorbing region; Learning.goAlike_iff_lumped at the inner pair, the classes, the orbit and the hexagram gone to; Branching.law_returns_iff, law_merges_iff, law_keeps_iff and law_reach_iff on Law.process); the laws along runs hold for every run of the named law.",
+      "zh": "不用公理、不加前提：诸律、带老少之爻、诸对称、诸类与诸轨都在模块中定义；脊柱的每条律按其所列假设使用（Law.Drawn.not_returns 用于吸收区域；Learning.goAlike_iff_lumped 用于三、四两爻、诸类、轨道与之卦；Branching.law_returns_iff、law_merges_iff、law_keeps_iff 与 law_reach_iff 用于 Law.process）；沿运行之律对所述之律的每一运行成立。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "What any passage says beyond these laws; the passage map of the chapter states, passage by passage, agreement, exact scope or divergence, and its readings are the AI's.",
+      "zh": "任何一段在这些律之外所说的；章节的逐句对应逐段写明相合、定域或相分，其读法是 AI 读法。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "The odds of old and young lines in the yarrow-stalk procedure (大衍); why the received order begins and ends where it does (it is not built from the nuclear law here); the nuclear trigrams of the 左傳 and 京房, not preserved here; whether 邵雍's 先天 sequence is the counter read with line 1 the highest digit (said in the module's documentation, not a theorem).",
+      "zh": "大衍筮法中老少之爻的概率；卦序为何以此始终（此处不说它由互而成）；《左傳》与京房的互体，未存于本库；邵雍先天之序是否即以初爻为最高位的加一之律（模块文档中说明，不是定理）。",
+      "kind": "scope"
+    },
+    {
+      "en": "That coming to rest, returning, turning or a class is good, fortunate or supports 生生; the module has no ethical predicate and no judgment of fortune.",
+      "zh": "归于静止、复返、变或某一类是善的、吉的或支持生生；模块没有伦理谓词，也没有吉凶判断。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T103817.145646Z): the 187 declarations of Becoming.HexagramLaws, 130 of them theorems, have empty axiom reports; the checker verifies core purity. Every count was also recomputed by enumeration (development/y1-changes/y3/hexcount.py). The passage map (69 passages, 9 citing this module) is checked by verify_mapping.py against the preserved Wikisource revisions and the receipt's declaration list. Author self-review in study section 198; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T103817.145646Z）：Becoming.HexagramLaws 的 187 项声明（130 项定理）公理报告为空；检查器并核对核心纯净。每一计数另以穷举重算（development/y1-changes/y3/hexcount.py）。逐句对应（69 段，其中 9 段引本模块）由 verify_mapping.py 对照保存的维基文库版本与回执的声明清单检查。作者自审见研究第 198 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "The odds of the cast (大衍: old and young lines with their weights) as a law of a weighted course; the nuclear law read on the sites of place-relations-in-context; 邵雍's 先天 sequence as a theorem; an independent review.",
+    "zh": "之卦的概率（大衍：老少之爻及其权重）作为带权历程之律；在 place-relations-in-context 的位上读互；邵雍先天之序作为定理；独立审查。"
+  },
+  "correspondence": {
+    "en": "Laws H1 to H5 of the review of the earlier 生生不息 repository (SSBX review, section 3.1), whose own proofs used native_decide and Mathlib, proved again in the pure core; continues hexagrams-on-the-spine (Y1) and place-relations-in-context (Y2). The chapter on the 易传 maps 9 passages that cite this module: 4 agreements, 5 exact scopes and 0 divergences. Reading (the AI's, D51): 中爻 are lines 2 to 5, and what 互 makes is fixed by them (《繫辭下》 「非其中爻不備」), its judgment of right and wrong not in the law; the four where 互 rests open and close the received order; 錯 and 綜 name the complement and turning over, later names for what the text's 錯綜 does to numbers; 用九 and 用六 are the casts with every line turning, and 變則通，通則久 holds within the cast; adding one reads the divisions of 太極 as digits.",
+    "zh": "早期《生生不息》仓库审读（SSBX 审读 §3.1）中的律 H1 至 H5，原证明用 native_decide 与 Mathlib，此处在纯核心中重证；接续 hexagrams-on-the-spine（Y1）与 place-relations-in-context（Y2）。论易传的一章中引本模块者 9 段：相合 4、定域 5、相分 0。读法（AI 的，D51）：中爻是二至五爻，互之所成由其定（《繫辭下》“非其中爻不備”），“辨是與非”之判断不在律中；互所归之四卦是卦序之首尾；錯、綜之名指错卦与倒转，是后世之名，经文之“錯綜”说的是数；用九、用六是六爻皆老之卦，“變則通，通則久”在之卦之律中成立；加一把太极之逐层二分读作数位。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
+  "aliases": [
+    "the nuclear law",
+    "互",
+    "互卦",
+    "中爻",
+    "the cast",
+    "之卦",
+    "老少",
+    "用九",
+    "用六",
+    "錯綜",
+    "错综",
+    "錯",
+    "綜",
+    "the four symmetries",
+    "Klein four-group",
+    "the counter adding one",
+    "加一",
+    "the six orbits of waxing and waning",
+    "消息之六轨",
+    "changes around",
+    "Becoming.Hexagram.returns_iff_attractor",
+    "Becoming.Hexagram.process_returns_iff_ends",
+    "Becoming.Hexagram.basin_counts",
+    "Becoming.Hexagram.class_census",
+    "Becoming.Hexagram.MarkedLines.returns_iff",
+    "Becoming.Hexagram.addOne_one_orbit",
+    "Becoming.Hexagram.orbit_census"
+  ],
+  "dependencies": [
+    {
+      "id": "hexagrams-on-the-spine",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the configurations, the received order, complement, reverse, waxWane and allBroken of Becoming.Hexagrams; the delta is four more laws on them and the census of waxWane.",
+        "zh": "复用 Becoming.Hexagrams 的构形、所传卦序、错、综、消息之律与全阴；增量是其上另四条律与消息之律的普查。"
+      },
+      "interface": {
+        "output": {
+          "en": "Six two-valued lines, the received order holding every configuration, the complement, turning over and the law of waxing and waning.",
+          "zh": "六爻二值、含全部构形的所传卦序、错、综与消息之律。"
+        },
+        "input": {
+          "en": "Hexagram, eqb, order, mem_order, complement, reverse, waxWane, allBroken, sui, pairs.",
+          "zh": "Hexagram、eqb、order、mem_order、complement、reverse、waxWane、allBroken、sui、pairs。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean"
+      }
+    },
+    {
+      "id": "place-relations-in-context",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the rises and falls across the seams and the configurations named by their number (xu, jiJi, weiJi) for the census of waxWane and the attractor of the nuclear law.",
+        "zh": "复用各缝之承、乘与以序数命名之卦（需、既濟、未濟），用于消息之律的普查与互之吸引子。"
+      },
+      "interface": {
+        "output": {
+          "en": "riseCount and fallCount; number n, the n-th configuration of the order.",
+          "zh": "riseCount 与 fallCount；number n，卦序之第 n 卦。"
+        },
+        "input": {
+          "en": "changesAround; orbitStarts; NuclearAttractor.",
+          "zh": "changesAround；orbitStarts；NuclearAttractor。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean"
+      }
+    },
+    {
+      "id": "attraction-is-not-returning",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Law.Absorbing, Law.DrawnInto, Law.Absorbing.orbit and Law.Drawn.not_returns for the attractor of the nuclear law and for the cast.",
+        "zh": "对互之吸引子与之卦之律复用 Law.Absorbing、Law.DrawnInto、Law.Absorbing.orbit 与 Law.Drawn.not_returns。"
+      },
+      "interface": {
+        "output": {
+          "en": "What is drawn into a region the law never leaves does not return.",
+          "zh": "被吸入律所不离之区域者不复返。"
+        },
+        "input": {
+          "en": "NuclearAttractor under nuclear; configurations with no turning line under MarkedLines.settle.",
+          "zh": "nuclear 下的 NuclearAttractor；MarkedLines.settle 下无老爻之构形。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean"
+      }
+    },
+    {
+      "id": "returning-where-the-course-branches",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Branching.law_returns_iff, law_merges_iff, law_keeps_iff and law_reach_iff to read each law as a process of the spine.",
+        "zh": "复用 Branching.law_returns_iff、law_merges_iff、law_keeps_iff 与 law_reach_iff，把各律读作脊柱的过程。"
+      },
+      "interface": {
+        "output": {
+          "en": "Returning, merging, keeping and reaching of a law are those of its process.",
+          "zh": "一律的复返、合并、保持与可达，即其过程的复返、合并、保持与可达。"
+        },
+        "input": {
+          "en": "Law.process nuclear, MarkedLines.settle, addOne and waxWane.",
+          "zh": "Law.process 之 nuclear、MarkedLines.settle、addOne 与 waxWane。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean"
+      }
+    },
+    {
+      "id": "generalization-through-lumping",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Learning.Lumped and Learning.goAlike_iff_lumped for the inner pair, the classes, the orbit, the hexagram shown and the hexagram gone to.",
+        "zh": "对三、四两爻、诸类、轨道、本卦与之卦复用 Learning.Lumped 与 Learning.goAlike_iff_lumped。"
+      },
+      "interface": {
+        "output": {
+          "en": "A reading the law goes alike across exactly where it is a lumping.",
+          "zh": "律在其上同行的读法，恰是归并。"
+        },
+        "input": {
+          "en": "innerPair, classOf, orbitIndex, MarkedLines.shown and MarkedLines.onward.",
+          "zh": "innerPair、classOf、orbitIndex、MarkedLines.shown 与 MarkedLines.onward。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Law.orbit, Law.orbit_add, Law.orbit_shift, Law.orbit_mul, Law.Lossless and Law.Returns for the runs of each law.",
+        "zh": "对各律之运行复用 Law.orbit、Law.orbit_add、Law.orbit_shift、Law.orbit_mul、Law.Lossless 与 Law.Returns。"
+      },
+      "interface": {
+        "output": {
+          "en": "Orbits compose and a configuration back after p steps is back after every multiple of p.",
+          "zh": "轨道可组合；p 步后复返者，p 的每一倍数步后皆复返。"
+        },
+        "input": {
+          "en": "nuclear, addOne and waxWane on the sixty-four.",
+          "zh": "六十四卦上的 nuclear、addOne 与 waxWane。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "what-a-commuting-law-keeps-apart",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Law.Commutes.iterate and Law.Commutes.apart with complement_moves: the runs of the nuclear law under a symmetry, and those from a configuration and its complement apart.",
+        "zh": "复用 Law.Commutes.iterate 与 Law.Commutes.apart 及 complement_moves：对称下互之运行，一卦与其錯卦之运行相分。"
+      },
+      "interface": {
+        "output": {
+          "en": "A law commuting with a symmetry that moves every configuration never brings the runs from a configuration and its image to one configuration.",
+          "zh": "与移动每一构形之对称交换的律，从一构形与其像出发的运行永不在同一构形。"
+        },
+        "input": {
+          "en": "nuclear with each symmetry (nuclear_act), and with the complement.",
+          "zh": "nuclear 与各对称（nuclear_act），及与錯。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "necessarily-drawn-is-not-returning",
+      "detail": {
+        "en": "The nuclear law is a case with two fixed configurations and a cycle of two: everything else is drawn in and does not return.",
+        "zh": "互是一例：两个不动之卦与一个二步之环，其余皆被吸入而不复返。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Hexagram.Marked",
+        "Becoming.Hexagram.Marked.settle",
+        "Becoming.Hexagram.Marked.settle_of_stays",
+        "Becoming.Hexagram.Marked.settle_settle",
+        "Becoming.Hexagram.Marked.stays",
+        "Becoming.Hexagram.Marked.stays_of_settle",
+        "Becoming.Hexagram.Marked.stays_settle",
+        "Becoming.Hexagram.Marked.turning_ne_staying",
+        "Becoming.Hexagram.Marked.value",
+        "Becoming.Hexagram.MarkedLines",
+        "Becoming.Hexagram.MarkedLines.allTurning",
+        "Becoming.Hexagram.MarkedLines.all_nines",
+        "Becoming.Hexagram.MarkedLines.all_sixes",
+        "Becoming.Hexagram.MarkedLines.drawn",
+        "Becoming.Hexagram.MarkedLines.onward",
+        "Becoming.Hexagram.MarkedLines.onward_goAlike",
+        "Becoming.Hexagram.MarkedLines.onward_lumped",
+        "Becoming.Hexagram.MarkedLines.process_returns_iff",
+        "Becoming.Hexagram.MarkedLines.returns_iff",
+        "Becoming.Hexagram.MarkedLines.run_rests",
+        "Becoming.Hexagram.MarkedLines.run_settled",
+        "Becoming.Hexagram.MarkedLines.settle",
+        "Becoming.Hexagram.MarkedLines.settle_fixed_iff",
+        "Becoming.Hexagram.MarkedLines.settle_merges",
+        "Becoming.Hexagram.MarkedLines.settle_process_merges",
+        "Becoming.Hexagram.MarkedLines.settle_settle",
+        "Becoming.Hexagram.MarkedLines.shown",
+        "Becoming.Hexagram.MarkedLines.shown_not_goAlike",
+        "Becoming.Hexagram.MarkedLines.shown_not_lumped",
+        "Becoming.Hexagram.MarkedLines.staysAll",
+        "Becoming.Hexagram.MarkedLines.staysAll_settle",
+        "Becoming.Hexagram.NuclearAttractor",
+        "Becoming.Hexagram.Symmetry",
+        "Becoming.Hexagram.Symmetry.act",
+        "Becoming.Hexagram.Symmetry.act_comp",
+        "Becoming.Hexagram.Symmetry.act_self",
+        "Becoming.Hexagram.Symmetry.comp",
+        "Becoming.Hexagram.Symmetry.comp_comm",
+        "Becoming.Hexagram.Symmetry.comp_self",
+        "Becoming.Hexagram.addOne",
+        "Becoming.Hexagram.addOne_first_return",
+        "Becoming.Hexagram.addOne_lossless",
+        "Becoming.Hexagram.addOne_one_orbit",
+        "Becoming.Hexagram.addOne_reach",
+        "Becoming.Hexagram.addOne_sixtyfour",
+        "Becoming.Hexagram.allUnbroken",
+        "Becoming.Hexagram.and_of_both",
+        "Becoming.Hexagram.any_sound",
+        "Becoming.Hexagram.attractor_absorbing",
+        "Becoming.Hexagram.attractor_of_attractorb",
+        "Becoming.Hexagram.attractor_returns",
+        "Becoming.Hexagram.attractorb",
+        "Becoming.Hexagram.backWithin",
+        "Becoming.Hexagram.backWithin_addOne",
+        "Becoming.Hexagram.basin_counts",
+        "Becoming.Hexagram.basin_iff",
+        "Becoming.Hexagram.binaryValue",
+        "Becoming.Hexagram.borrow1",
+        "Becoming.Hexagram.borrow2",
+        "Becoming.Hexagram.borrow3",
+        "Becoming.Hexagram.borrow4",
+        "Becoming.Hexagram.borrow5",
+        "Becoming.Hexagram.borrow6",
+        "Becoming.Hexagram.both_fixed_iff",
+        "Becoming.Hexagram.carry1",
+        "Becoming.Hexagram.carry2",
+        "Becoming.Hexagram.carry3",
+        "Becoming.Hexagram.carry4",
+        "Becoming.Hexagram.carry5",
+        "Becoming.Hexagram.carry6",
+        "Becoming.Hexagram.carryAt",
+        "Becoming.Hexagram.carryAt_below",
+        "Becoming.Hexagram.carryAt_turns",
+        "Becoming.Hexagram.changesAround",
+        "Becoming.Hexagram.changesAround_counts",
+        "Becoming.Hexagram.changesAround_invariant",
+        "Becoming.Hexagram.changesAround_run",
+        "Becoming.Hexagram.changesAround_values",
+        "Becoming.Hexagram.changesAround_waxWane",
+        "Becoming.Hexagram.classOf",
+        "Becoming.Hexagram.classOf_act",
+        "Becoming.Hexagram.classOf_eq_iff",
+        "Becoming.Hexagram.classOf_mem",
+        "Becoming.Hexagram.classOf_member",
+        "Becoming.Hexagram.classSize",
+        "Becoming.Hexagram.class_census",
+        "Becoming.Hexagram.classes",
+        "Becoming.Hexagram.classes_goAlike",
+        "Becoming.Hexagram.classes_lumped",
+        "Becoming.Hexagram.classes_not_goAlike_waxWane",
+        "Becoming.Hexagram.classes_not_lumped_waxWane",
+        "Becoming.Hexagram.complement_reverse",
+        "Becoming.Hexagram.cycle_basin",
+        "Becoming.Hexagram.distinctb",
+        "Becoming.Hexagram.entry_counts",
+        "Becoming.Hexagram.exponent",
+        "Becoming.Hexagram.first_return_of",
+        "Becoming.Hexagram.fourClasses",
+        "Becoming.Hexagram.from_allBroken",
+        "Becoming.Hexagram.indexIn",
+        "Becoming.Hexagram.inner",
+        "Becoming.Hexagram.innerPair",
+        "Becoming.Hexagram.innerPair_goAlike",
+        "Becoming.Hexagram.innerPair_lumped",
+        "Becoming.Hexagram.innerPair_nuclear",
+        "Becoming.Hexagram.kun_basin",
+        "Becoming.Hexagram.leastOf",
+        "Becoming.Hexagram.line_turns",
+        "Becoming.Hexagram.linesBelow",
+        "Becoming.Hexagram.meng",
+        "Becoming.Hexagram.nodup_of_distinctb",
+        "Becoming.Hexagram.not_attractor_of_attractorb",
+        "Becoming.Hexagram.not_back",
+        "Becoming.Hexagram.not_mem_of_memb",
+        "Becoming.Hexagram.nuclear",
+        "Becoming.Hexagram.nuclear_act",
+        "Becoming.Hexagram.nuclear_allBroken",
+        "Becoming.Hexagram.nuclear_allUnbroken",
+        "Becoming.Hexagram.nuclear_complement",
+        "Becoming.Hexagram.nuclear_fixed_iff",
+        "Becoming.Hexagram.nuclear_inner",
+        "Becoming.Hexagram.nuclear_jiJi",
+        "Becoming.Hexagram.nuclear_loses",
+        "Becoming.Hexagram.nuclear_merges",
+        "Becoming.Hexagram.nuclear_process_merges",
+        "Becoming.Hexagram.nuclear_process_returns_iff",
+        "Becoming.Hexagram.nuclear_rests_iff",
+        "Becoming.Hexagram.nuclear_reverse",
+        "Becoming.Hexagram.nuclear_run_act",
+        "Becoming.Hexagram.nuclear_two",
+        "Becoming.Hexagram.nuclear_two_attractor",
+        "Becoming.Hexagram.nuclear_two_fixed_one_cycle",
+        "Becoming.Hexagram.nuclear_two_lumped",
+        "Becoming.Hexagram.nuclear_weiJi",
+        "Becoming.Hexagram.nuclear_yang_not_goAlike",
+        "Becoming.Hexagram.nuclear_yang_not_lumped",
+        "Becoming.Hexagram.onOrbit",
+        "Becoming.Hexagram.onOrbit_all",
+        "Becoming.Hexagram.onOrbit_sound",
+        "Becoming.Hexagram.on_an_orbit",
+        "Becoming.Hexagram.or_of_neither",
+        "Becoming.Hexagram.orbitIndex",
+        "Becoming.Hexagram.orbitIndex_goAlike",
+        "Becoming.Hexagram.orbitIndex_invariant",
+        "Becoming.Hexagram.orbitIndex_lumped",
+        "Becoming.Hexagram.orbitIndex_waxWane",
+        "Becoming.Hexagram.orbitStarts",
+        "Becoming.Hexagram.orbit_census",
+        "Becoming.Hexagram.orbit_period",
+        "Becoming.Hexagram.orbit_still",
+        "Becoming.Hexagram.order_nodup",
+        "Becoming.Hexagram.outside_drawn",
+        "Becoming.Hexagram.outside_not_returns",
+        "Becoming.Hexagram.pairClasses",
+        "Becoming.Hexagram.pairedByBoth",
+        "Becoming.Hexagram.pairedByBoth_sound",
+        "Becoming.Hexagram.pairedByChange",
+        "Becoming.Hexagram.pairedByChange_sound",
+        "Becoming.Hexagram.period",
+        "Becoming.Hexagram.period_pow",
+        "Becoming.Hexagram.process_returns_iff_ends",
+        "Becoming.Hexagram.qian_basin",
+        "Becoming.Hexagram.qian_not_reach_jiJi",
+        "Becoming.Hexagram.reach_keeps_orbit",
+        "Becoming.Hexagram.returns_iff_attractor",
+        "Becoming.Hexagram.reverse_complement_reverse",
+        "Becoming.Hexagram.reverse_reverse",
+        "Becoming.Hexagram.run_complement_apart",
+        "Becoming.Hexagram.run_in_attractor",
+        "Becoming.Hexagram.run_inner",
+        "Becoming.Hexagram.run_rests_at",
+        "Becoming.Hexagram.run_two_middle",
+        "Becoming.Hexagram.starts_return",
+        "Becoming.Hexagram.subOne",
+        "Becoming.Hexagram.subOne_addOne",
+        "Becoming.Hexagram.swap_eq",
+        "Becoming.Hexagram.thrice",
+        "Becoming.Hexagram.thrice_attractor",
+        "Becoming.Hexagram.thrice_back",
+        "Becoming.Hexagram.thrice_inj",
+        "Becoming.Hexagram.to_allBroken",
+        "Becoming.Hexagram.turn_fixed_iff",
+        "Becoming.Hexagram.visitsFrom",
+        "Becoming.Hexagram.visits_sound",
+        "Becoming.Hexagram.waxWane_not_reach_every",
+        "Becoming.Hexagram.zhun"
+      ],
+      "sha256": "e642ea1f30f4b32e49c0952abb0474eca538429d18ed020cf11b85b205771017"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T103817.145646Z/verification.json",
+      "role": "receipt",
+      "declarations": [],
+      "sha256": "173e6c7d4856cb65c74894c0e306d75a15bbee575b0226e0ed99ae5d32ad47e1"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Hexagram",
+        "Becoming.Hexagram.eqb",
+        "Becoming.Hexagram.order",
+        "Becoming.Hexagram.mem_order",
+        "Becoming.Hexagram.complement",
+        "Becoming.Hexagram.reverse",
+        "Becoming.Hexagram.waxWane",
+        "Becoming.Hexagram.allBroken",
+        "Becoming.Hexagram.sui",
+        "Becoming.Hexagram.pairs"
+      ],
+      "sha256": "a638ec73d081088eb8f8c7a6a6ad860f7f5f32223b4c5373931c9a841c9f6b5d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Hexagram.riseCount",
+        "Becoming.Hexagram.fallCount",
+        "Becoming.Hexagram.number",
+        "Becoming.Hexagram.xu",
+        "Becoming.Hexagram.jiJi",
+        "Becoming.Hexagram.weiJi",
+        "Becoming.Hexagram.neither"
+      ],
+      "sha256": "43d2040993b96ea338e2fe272127935a8d99553426ec77cfe2f43ccd511fac1d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Law.Absorbing",
+        "Becoming.Law.DrawnInto",
+        "Becoming.Law.Absorbing.orbit",
+        "Becoming.Law.Drawn.not_returns"
+      ],
+      "sha256": "ed18db86f6aaf95fcf5d0b4898a1f7c062a64b0ae0457206e2f7fc42719af132"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Branching.law_returns_iff",
+        "Becoming.Branching.law_merges_iff",
+        "Becoming.Branching.law_keeps_iff"
+      ],
+      "sha256": "9408f96fc097057836f4702faccedb6c19fc7615d38a97cb469ab8575c4106af"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Learning.Lumped"
+      ],
+      "sha256": "6cc062e616f894f91b5a359f6890f3306de01d9a6f3f45fb8ae43d4e9f937aff"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
+      "role": "proof",
+      "sha256": "e903e39c879952c764c92f844355766dcc9641f6decbd3964c24bb75df274c44",
+      "declarations": [
+        "Becoming.Learning.goAlike_iff_lumped"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "role": "proof",
+      "declarations": [],
+      "sha256": "f76c95d000ad47ce325ef58c7891d7536ac3844ddc9deb4ccced572b8a8bd4eb"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Laws.lean",
+      "role": "proof",
+      "sha256": "5719f92274999e36329507583e71d6f92ad2850222be02027fb846e4ae8104bd",
+      "declarations": [
+        "Becoming.GoAlike"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Law.orbit",
+        "Becoming.Law.orbit_add",
+        "Becoming.Law.orbit_shift",
+        "Becoming.Law.orbit_mul",
+        "Becoming.Law.Lossless",
+        "Becoming.Law.Returns",
+        "Becoming.Law.Merges",
+        "Becoming.Branching.law_reach_iff",
+        "Becoming.Law.process",
+        "Becoming.Law.run",
+        "Becoming.Law.run_state"
+      ],
+      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "role": "proof",
+      "sha256": "94bb18753807b3dd2c6d83c5d2e38e9b1a60d6f23a1b1fa7261c55e8d0e5f53c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Run"
+      ],
+      "sha256": "548b1523ea8f0f9d6b08f6311baa9cc6318669e0097cd2e24605ba3ed8eb9ff2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Law.Commutes",
+        "Becoming.Law.Commutes.iterate",
+        "Becoming.Law.Commutes.apart",
+        "Becoming.Hexagram.complement_moves"
+      ],
+      "sha256": "c16574db68309b48d70f9a755d4e02892541d8b90a238bd4b7d1d590bf8694fe"
+    },
+    {
+      "path": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
+      "role": "statement",
+      "declarations": [],
+      "sha256": "8bf0f584b50901bdcb5b1813a09e28720feb6fa2b57421fb4336dead43b10eda"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
+      "role": "integration",
+      "declarations": [],
+      "sha256": "f310f7dd9976a44f0f6ad4142165b0b5cfec2b8e4769b5e78846e7ffa65e222e"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
+      "role": "integration",
+      "declarations": [],
+      "sha256": "6cceb3cb6f46187ceaec8bde901a074a74b0f8858bb79cc2455ca6c28bbd7525"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/y3/hexcount.py",
+      "role": "integration",
+      "declarations": [],
+      "sha256": "b358c3daca8c8c4cbb40b68a3d9456d4b548eb4ecba687f329c5994966e4fd28"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "declarations": [],
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md",
+      "role": "integration",
+      "declarations": [],
+      "sha256": "8d59eec11ae07e213b069462f4b2eee39d70571c71dbc368a4ce30005487ed11"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "declarations": [],
+      "sha256": "52a7fa74fcdebd31a63c877dbdc5e7e4de59cfb5fc400737f61fdc55f61c46ca"
+    },
+    {
+      "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
+      "role": "provenance",
+      "declarations": [],
+      "sha256": "a3fd3c521e54bcd58cd8d8d95ecef0d6ad59f635aaedd6199328b7e1a611b93f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md",
+      "role": "provenance",
+      "declarations": [],
+      "sha256": "e95b0cb2bd717b74a8025fbfccee17ba0cbfdce2d93c5360b3ff846ea1815b23"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "role": "receipt",
+      "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.HexagramLaws",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.HexagramPlaces",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Hexagrams",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Learning",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Attraction",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Branching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Commuting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LearningRuns",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Labelled",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Laws.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Laws",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (Y3), H1 to H5 of the SSBX review proved in the pure core; study section 198, decision D51.",
+      "zh": "2026年10月19日：新增（Y3），SSBX 审读之 H1 至 H5 在纯核心中证明；研究第 198 节，决定 D51。"
+    },
+    {
+      "en": "19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section; THE-THEORY-OF-BECOMING.md: SG added the section 1 paragraphs on where a configuration is lost and what a commuting law keeps apart, the section 3 item on the liar with a third value, glossary rows, section 8.2 and 8.3 items, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，SG（关节、交换之律与第三值）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3 follow-up after SG: nuclear_run_act and run_complement_apart are stated as instances of Law.Commutes.iterate and Law.Commutes.apart (Becoming.Commuting, with complement_moves), and Y3's own orbit_commutes, the iterate proved again for hexagrams, and complement_ne, which said what complement_moves says, are dropped; statements unchanged; 130 theorems, 187 declarations, empty axiom reports, core receipt 20261019T103817.145646Z; the dependency what-a-commuting-law-keeps-apart added and the general law removed from the next delta (study section 198).",
+      "zh": "2026年10月19日，Y3 补记（SG 之后）：nuclear_run_act 与 run_complement_apart 写作 Law.Commutes.iterate 与 Law.Commutes.apart 的实例（Becoming.Commuting，及 complement_moves），Y3 自己为卦重证一遍的 orbit_commutes 与所说即 complement_moves 之 complement_ne 删去；陈述不变；130 条定理，187 项声明，公理报告为空，核心回执 20261019T103817.145646Z；加上依赖 what-a-commuting-law-keeps-apart，下一步不再列此一般律（研究第 198 节）。"
+    },
+    {
+      "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，X1b（护闭诸文合于关节律的确切范围）：BECOMING-RENEWAL-READING.md 重新指向。自本记录所审哈希以来，所引文字只在第 199 节改动：其护闭读法现说保持是在自 s 起的路径上保住 s 的最大闭（`keeping_greatest`），由 X1b 改。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y4 (Becoming.HexagramSites): passages.json, verify_mapping.py, PROVENANCE.json, YI-ZHUAN-AND-BECOMING.md re-pointed after reading the change (passages.json: Y4 added nineteen passages and revised five; verify_mapping.py: Y4 added the censuses of the second relation, the 彖, the line texts, the 大象 and the 小象's 中; PROVENANCE.json: Y4 added the pages of 王弼's 《周易略例》 and their notes; YI-ZHUAN-AND-BECOMING.md: Y4 added 王弼's readings of the places, their passages and censuses, points, divergences and open items). The claim is unchanged.",
+      "zh": "2026年10月19日，Y4（Becoming.HexagramSites）：读过改动后，passages.json、verify_mapping.py、PROVENANCE.json、YI-ZHUAN-AND-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y4 (Becoming.HexagramSites): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (section 11: the statement-source row of the chapter on the 易传 now also names fixed-places-and-sole-lines; Y4 also added the section 1 paragraph on 王弼's readings of the places after this record's, and the earlier changes since this record bound the file are in sections it does not cite). The claim is unchanged.",
+      "zh": "2026年10月19日，Y4（Becoming.HexagramSites）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（第 11 节易传一章的陈述来源行增列 fixed-places-and-sole-lines；第 1 节在本记录的段落之后增加王弼之读一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, PT1 (place/transition nets on the spine): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: PT1 added a section 8.7 bullet on place/transition nets, a rerun sentence in the section 8.2 integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，PT1（脊柱上的库所/变迁网）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (passages.json: the passage 非覆即變 (feifu) names order_paired_by_law and six_steps beside order_paired, and its reading adds that 變 is six steps along the law of waxing and waning; no other passage changed). The claim is unchanged.",
+      "zh": "2026年10月19日，U5 后续（段落图）：读过改动后重新指向（passages.json：非覆即變一段（feifu）在 order_paired 旁加列 order_paired_by_law 与 six_steps，读法补一句：變即沿消息之律六步；其他段未变）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y5 (Becoming.HexagramSequences): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (section 11: the statement-source row of the chapter on the 易传 now also names hexagram-arrangements-and-laws; section 1 gains the paragraph on the arrangements of the 傳 after 王弼's readings; the earlier changes since this record bound the file are in sections it does not cite). The claim is unchanged.",
+      "zh": "2026年10月19日，Y5（Becoming.HexagramSequences）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（第 11 节易传一章的陈述来源行增列 hexagram-arrangements-and-laws；第 1 节在王弼之读之后增加传中诸排列一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y5 (Becoming.HexagramSequences): passages.json, verify_mapping.py re-pointed after reading the change (passages.json: Y5 added two passages of the 彖 (恒 剛上而柔下, 咸 柔上而剛下); verify_mapping.py: Y5 added check 10, the 雜卦's sequence and the stations of 說卦 ch. 5 against the preserved texts). The claim is unchanged.",
+      "zh": "2026年10月19日，Y5（Becoming.HexagramSequences）：读过改动后，passages.json、verify_mapping.py 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y5 (Becoming.HexagramSequences): YI-ZHUAN-AND-BECOMING.md re-pointed after reading the change (the opening names the fifth module, Becoming.HexagramSequences, and counts 90 passages; section 2 gains a subsection on the arrangements of the 傳, section 5 points, section 7 a reading line, and section 8 corrects the claim that the order is the orbit of no law; the passage table holds two more passages and the U5 follow-up's 非覆即變). The claim is unchanged.",
+      "zh": "2026年10月19日，Y5（Becoming.HexagramSequences）：读过改动后，YI-ZHUAN-AND-BECOMING.md 重新指向（开篇列第五个模块 Becoming.HexagramSequences，计 90 段；第 2 节增传中诸排列一小节，第 5 节增要点，第 7 节增一条读法，第 8 节更正“卦序不是任何律的轨道”之说；对应表增两段，并含 U5 后续对非覆即變的改动）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SC (a code formed between formations): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，SC（在形成之间形成的编码）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: goAlike_iff_lumped from Learning.lean to LearningRuns.lean; run, run_state, process from Recurrence.lean to Labelled.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Attraction.lean, Commuting.lean, HexagramPlaces.lean, Hexagrams.lean, Learning.lean, Mechanism.lean, Recurrence.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): YI-ZHUAN-AND-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: YI-ZHUAN-AND-BECOMING.md, the conditions of the laws read for 生生之謂易 named (O2). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：YI-ZHUAN-AND-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：YI-ZHUAN-AND-BECOMING.md，生生之謂易所读诸律的条件写明（O2）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Branching.law_reach_iff moved from Branching.lean to Recurrence.lean; Law.process moved from Labelled.lean to Recurrence.lean, with its full name. Proof bindings (Attraction.lean, Branching.lean, Commuting.lean, HexagramLaws.lean, Hexagrams.lean, Labelled.lean, Mechanism.lean, Recurrence.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Attraction.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Branching.lean, the five notions and four orbit lemmas moved to Recurrence.lean; the five law_*_iff bridges are Iff.rfl; Commuting.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; HexagramLaws.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Hexagrams.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Labelled.lean, Law.process moved to Recurrence.lean; Frame.world built by World.of; header; Mechanism.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：Branching.law_reach_iff 从 Branching.lean 移到 Recurrence.lean；Law.process 从 Labelled.lean 移到 Recurrence.lean，名称不变。证明绑定（Attraction.lean、Branching.lean、Commuting.lean、HexagramLaws.lean、Hexagrams.lean、Labelled.lean、Mechanism.lean、Recurrence.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Attraction.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Branching.lean，五个概念与四条轨道引理移到 Recurrence.lean；五座 law_*_iff 桥为 Iff.rfl；Commuting.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；HexagramLaws.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Hexagrams.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Labelled.lean，Law.process 移到 Recurrence.lean；Frame.world 由 World.of 构造；开头说明；Mechanism.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Moved with their full names: from HexagramLaws.lean to HexagramPlaces.lean, Hexagram.neither; from Labelled.lean to Recurrence.lean, Law.run, Law.run_state. Proof bindings (Branching.lean, Commuting.lean, HexagramLaws.lean, HexagramPlaces.lean, Labelled.lean, Recurrence.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Branching.lean, the laws of every process moved to Recurrence.lean; Commuting.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; HexagramLaws.lean, Hexagram.neither moved to HexagramPlaces.lean; HexagramPlaces.lean, Hexagram.neither moved in from HexagramLaws.lean; Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean; Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：连同完整名称移动：从 HexagramLaws.lean 到 HexagramPlaces.lean：Hexagram.neither；从 Labelled.lean 到 Recurrence.lean：Law.run、Law.run_state。证明绑定（Branching.lean、Commuting.lean、HexagramLaws.lean、HexagramPlaces.lean、Labelled.lean、Recurrence.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Branching.lean，每个过程之律移到 Recurrence.lean；Commuting.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；HexagramLaws.lean，Hexagram.neither 移到 HexagramPlaces.lean；HexagramPlaces.lean，Hexagram.neither 自 HexagramLaws.lean 移入；Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Labelled.lean, LearningRuns.lean, Recurrence.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: passages.json, the declarations and the names in four readings follow the R30 table; Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; LearningRuns.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; YI-ZHUAN-AND-BECOMING.md, names follow the R30 rename table; the passage table is the renamed map. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Labelled.lean、LearningRuns.lean、Recurrence.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：passages.json，四个读法中的声明与名称随 R30 改名表；Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；LearningRuns.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；YI-ZHUAN-AND-BECOMING.md，名称随 R30 改名表；逐句对应表为改名后之图。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Mechanism.lean to Laws.lean, GoAlike. Proof bindings (Branching.lean, Frame.lean, HexagramLaws.lean, Hexagrams.lean, Learning.lean, LearningRuns.lean, Mechanism.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Branching.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Frame.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; HexagramLaws.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Hexagrams.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Learning.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; LearningRuns.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Mechanism.lean, GoAlike moved to Laws.lean, defined as GoAlikeUnder at equality. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Mechanism.lean 到 Laws.lean：GoAlike。证明绑定（Branching.lean、Frame.lean、HexagramLaws.lean、Hexagrams.lean、Learning.lean、LearningRuns.lean、Mechanism.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Branching.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Frame.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；HexagramLaws.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Hexagrams.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Learning.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；LearningRuns.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Mechanism.lean，GoAlike 移到 Laws.lean，定义为相等处的 GoAlikeUnder。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Branching.lean, HexagramLaws.lean, HexagramPlaces.lean, Hexagrams.lean, Learning.lean, LearningRuns.lean, Recurrence.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Branching.lean, takes as its final section RecurrenceRuns, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; HexagramLaws.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; HexagramPlaces.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Hexagrams.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Learning.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; LearningRuns.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Branching.lean、HexagramLaws.lean、HexagramPlaces.lean、Hexagrams.lean、Learning.lean、LearningRuns.lean、Recurrence.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Branching.lean，以末节收入 RecurrenceRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；HexagramLaws.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；HexagramPlaces.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Hexagrams.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Learning.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；LearningRuns.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Proof bindings (LearningRuns.lean) rebound to core receipt 20261019T235844.485705Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; LearningRuns.lean, pair_first_not_rests and pair_whole_rests renamed pair_first_not_predicts and pair_whole_predicts, statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：证明绑定（LearningRuns.lean）改到核心回执 20261019T235844.485705Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；LearningRuns.lean，pair_first_not_rests、pair_whole_rests 改名 pair_first_not_predicts、pair_whole_predicts，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+    }
+  ]
+}

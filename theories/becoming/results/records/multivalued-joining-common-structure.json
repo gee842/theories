@@ -337,10 +337,6 @@
       "en": "2026-10-08: continued the existing joining-context study; migrated completed claims separately and distinguished new connections from reuse."
     },
     {
-      "zh": "2026-10-08 接续：原主张、前提与回执保持；审读同一研究新增共同细化、无引用退化及保留引用修复，更新后续连接。",
-      "en": "2026-10-08 continuation: retained the original claim, premises and receipts; read the appended refinement, unanchored-collapse and retained-reference repair and updated the next connection."
-    },
-    {
       "zh": "2026-10-09：复用本成果接通固定有限操作粒度；旧主张、假设与证明绑定不变。新前缀遗漏及继续检验见同一研究第22—26节。",
       "en": "2026-10-09: reuse this result in finite-granularity continuation; preserve its claim, hypotheses and proof bindings. New prefix omission and resumption testing appear in the same study §§22–26."
     },
@@ -353,35 +349,16 @@
       "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. The new core module Becoming.Joining, importing only Becoming.Likeness, reads a joining of fragments as frames of the spine, through partners, roles and retained references; a description lifts a joining exactly where having one code is a bisimulation of the partner frame, with no premise (Joining.lifts_iff); Becoming.JoiningBridge reads the joining studies as instances. Two descriptions with one kernel that is a bisimulation are aligned one to one on the codes they use, and the alignment carries one reading of the joining onto the other (Joining.common_structure). An exact reduced branch account lifts the joining exactly where passing the same branching tests is a bisimulation of the partner frame, with no finiteness and no decision (Joining.operation_lifts_iff). The periphery's common_multivalued_structure holds on the spine (Joining.common_multivalued_structure_of_em, operation_lifts_of_em): excluded middle is named as the hypothesis em : ∀ p : Prop, Decided p and used only to identify passing the same branching tests with likeness where outcomes are listed, which is where the periphery reasoned classically; without it, lifting is exactly having one code being a bisimulation (Joining.operation_lifts_iff). Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope."
     },
     {
-      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Joining.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；JoiningBridge.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
-      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Joining.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); JoiningBridge.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (BranchingCorrespondence, Joining, JoiningCodes, Presentations; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
-      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（BranchingCorrespondence、Joining、JoiningCodes、Presentations），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
-    },
-    {
-      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): JoiningBridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
-      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
-    },
-    {
       "en": "19 October 2026, U3 (study section 196): the presentation laws this record cites read on a frame (Becoming.PresentationFrames): exact reduced codes of a frame's branching tests correspond one to one, factor through the canonical one, and the joint relation of a joint frame descends to them exactly where saturated. The claim is unchanged.",
       "zh": "2026年10月19日，U3（研究第 196 节）：本记录所引的呈现规律在框架上读出（Becoming.PresentationFrames）：框架分支检验的精确约简代码一一对应、经典范代码分解，联合框架的联合关系恰在饱和时下降到代码。论断不变。"
     },
     {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Joining.lean). The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Joining.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Joining.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Joining.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Joining.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
-    },
-    {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Moved with their full names: from PresentationFrames.lean to Presentations.lean, PresentationFrames.canonical_kernel. Removed as pure forwarders (each applied one law to its own binders), the law named instead: PresentationFrames.canonical_factor (now Presentations.canonical_factor); PresentationFrames.correspondence (now Presentations.relative_unique_correspondence); PresentationFrames.joint_blocked (now Presentations.separating_relation_blocks_descent); PresentationFrames.joint_descends_iff (now Presentations.relation_descends_iff_saturated); PresentationFrames.joint_image_iff (now Presentations.lift_exact_iff_saturated); PresentationFrames.joint_reading_unique (now Presentations.relational_reading_unique_on_used). Proof bindings (Joining.lean, JoiningCodes.lean, Presentations.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Joining.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; JoiningCodes.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Presentations.lean, takes as its final section PresentationFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：连同完整名称移动：从 PresentationFrames.lean 到 Presentations.lean：PresentationFrames.canonical_kernel。作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：PresentationFrames.canonical_factor（现为 Presentations.canonical_factor）；PresentationFrames.correspondence（现为 Presentations.relative_unique_correspondence）；PresentationFrames.joint_blocked（现为 Presentations.separating_relation_blocks_descent）；PresentationFrames.joint_descends_iff（现为 Presentations.relation_descends_iff_saturated）；PresentationFrames.joint_image_iff（现为 Presentations.lift_exact_iff_saturated）；PresentationFrames.joint_reading_unique（现为 Presentations.relational_reading_unique_on_used）。证明绑定（Joining.lean、JoiningCodes.lean、Presentations.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Joining.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；JoiningCodes.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Presentations.lean，以末节收入 PresentationFrames（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+    },
+    {
+      "en": "2026-10-20: 7 bookkeeping notes condensed from 2026-10-08 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/f472b6b55cea5c62/multivalued-joining-common-structure.json and in git.",
+      "zh": "2026-10-20：7 条记账性说明合并（2026-10-08 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/f472b6b55cea5c62/multivalued-joining-common-structure.json 和 git 中。"
     }
   ]
 }

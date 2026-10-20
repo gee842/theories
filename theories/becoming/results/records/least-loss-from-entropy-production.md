@@ -87,11 +87,14 @@ Aliases: `Becoming.EntropyProduction.ExergyBalance`, `Becoming.EntropyProduction
 ### History
 
 - Added for the question whether the opening's "as in ours" can stand: which accepted physical premises give the spine's dissipation, for which systems (board item T1).
-- 20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: Entropy.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Resolution.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.
-- 20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: Dissipation.lean, Amounts.whole_sum moved in; Flow.takers_within_on and Flow.taking_not_recurring_from proved through Becoming.Amounts, statements unchanged. The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Passing.lossless (now Passing.conserving). Re-pointed after reading the change: Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Entropy.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.
-- 20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: Entropy.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Resolution.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: Entropy.lean, takes as its final section LevelWebs, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Resolution.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.
+- 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](least-loss-from-entropy-production.json).
+
+<a id="earlier-text--早期文本"></a>
+### Earlier text
+
+- [least-loss-from-entropy-production.json](../../../../_process/architecture/history/72ff44232ec67694/least-loss-from-entropy-production.json) (sha256 `72ff44232ec67694…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

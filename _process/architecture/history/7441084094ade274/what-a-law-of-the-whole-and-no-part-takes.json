@@ -1,0 +1,711 @@
+{
+  "schema_version": 2,
+  "id": "what-a-law-of-the-whole-and-no-part-takes",
+  "title": {
+    "zh": "整体而无部分之律所需",
+    "en": "What a law of the whole and no part takes"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
+  "statement": {
+    "zh": "条件编号时，最小的耦合的反例，如每个整体而无部分之律，恰在一个规则判定每个布尔序列是否处处为假之处存在：弱有限全知原则作为规则。消失之判定恰是有限全知原则作为规则。",
+    "en": "With numbered conditions, a counterexample to the least coupling, like every law of the whole and no part, exists exactly where a rule decides of every Boolean sequence whether it is false throughout: WLPO as a rule. The decision of vanishing is exactly LPO as a rule."
+  },
+  "laws": [
+    {
+      "zh": "从水平读出的数，只在一个条件上不同的水平给出相同者，说没有一个条件改变它；这恰是从某个条件起相同的水平给出相同者，其下的条件一次换一个：没有部分改变的，只由尾所定。",
+      "en": "A number read off levels is changed by no condition where levels differing at one condition only give it alike; exactly then levels agreeing from some condition on give it alike, the conditions below changed one at a time: what no part changes, only the tail sets.",
+      "declarations": [
+        "Becoming.ChangedByNoCondition",
+        "Becoming.ChangedByNoCondition.eq_of_agree_from",
+        "Becoming.ChangedByNoCondition.of_agree_from"
+      ]
+    },
+    {
+      "zh": "整体之律在每步与每个条件交换水平在第 0 步所读的数。这个数不被任何条件改变时，律读已立者，不敏感于每个条件，经从任一条件起的各条件而读；这个数有差别时，它不经其敏感而读，不读有限多个条件，没有最小的耦合。尾之律是消失之指示的整体之律。",
+      "en": "The law of a whole exchanges at every step a number read off the levels at step 0. Where no condition changes the number, it reads what has stood, is insensitive to every condition and reads through the conditions from any one on; where the number differs, it does not read through what it is sensitive to, nor finitely many conditions, and has no least coupling. The tail law is that of the indicator of vanishing.",
+      "declarations": [
+        "Becoming.wholeLaw",
+        "Becoming.wholeLaw_nonanticipating",
+        "Becoming.wholeLaw_reads_from",
+        "Becoming.wholeLaw_insensitive",
+        "Becoming.wholeLaw_not_sensitive",
+        "Becoming.wholeLaw_through_from",
+        "Becoming.wholeLaw_not_through_sensitive",
+        "Becoming.wholeLaw_not_readsFinitely",
+        "Becoming.wholeLaw_no_least_coupling",
+        "Becoming.vanishIndicator_changedByNoCondition",
+        "Becoming.tailLaw_eq_wholeLaw"
+      ]
+    },
+    {
+      "zh": "沿一个布尔序列混合两段历史，再比较两个数；比较是判定的，所以混合给出一个规则，对每个布尔序列判定它是否处处为假。在某步不敏感于每个条件而仍有差别的律，与最小的耦合的每个反例，各给出这样的规则；规则给出弱有限全知原则。",
+      "en": "Mixing two histories along a Boolean sequence ends by comparing two numbers, which is decided, so the mix gives a rule deciding, of every Boolean sequence, whether it is false throughout. A law insensitive at a step to every condition that still differs there, and every counterexample to the least registration, each give such a rule; the rule gives the weak limited principle of omniscience.",
+      "declarations": [
+        "Becoming.mixedDecision",
+        "Becoming.insensitiveDiffersDecision",
+        "Becoming.notThroughSensitiveDecision",
+        "Becoming.WLPO.of_rule"
+      ]
+    },
+    {
+      "zh": "给定这样的规则，水平从第 N 个条件起是否消失可判定，水平是否从哪个条件起都不消失由规则再判定一次。这个指示不被任何条件改变，在全为 0 与全为 1 的水平之间不同，与消失之指示（给定时）之和为 1；它的律读已立者，不敏感于每个条件而仍有差别。",
+      "en": "Given such a rule, whether levels vanish from condition N on is decided, and whether they vanish from no condition on is decided by the rule again. This indicator is changed by no condition, tells levels all 0 from levels all 1, and sums to 1 with the indicator of vanishing where that is given; its law reads what has stood, is insensitive to every condition and still differs.",
+      "declarations": [
+        "Becoming.Tail.nonzero",
+        "Becoming.Tail.eq_zero_of_nonzero_false",
+        "Becoming.Tail.levelsFrom",
+        "Becoming.ListTests.false_of_not_true",
+        "Becoming.Tail.add_eq",
+        "Becoming.vanishesFrom",
+        "Becoming.vanishesFrom_true",
+        "Becoming.vanishesFrom_of",
+        "Becoming.vanishesFrom_never_iff",
+        "Becoming.neverIndicator",
+        "Becoming.neverIndicator_eq_one",
+        "Becoming.neverIndicator_eq_zero",
+        "Becoming.neverIndicator_eq_of_agree",
+        "Becoming.neverIndicator_changedByNoCondition",
+        "Becoming.neverIndicator_zeros",
+        "Becoming.neverIndicator_ones",
+        "Becoming.neverIndicator_add_vanishIndicator",
+        "Becoming.neverLaw",
+        "Becoming.neverLaw_nonanticipating",
+        "Becoming.neverLaw_insensitive",
+        "Becoming.neverLaw_not_sensitive",
+        "Becoming.neverLaw_differs"
+      ]
+    },
+    {
+      "zh": "条件以自然数编号时，不被任何条件改变而仍有差别的数、在某步不敏感于每个条件而仍有差别的律、最小的耦合的反例，各恰在一个规则判定每个布尔序列是否处处为假之处存在。",
+      "en": "With the conditions numbered by the natural numbers, a number changed by no condition that still differs, a law insensitive at a step to every condition that still differs there, and a counterexample to the least coupling each exist exactly where a rule decides, of every Boolean sequence, whether it is false throughout.",
+      "declarations": [
+        "Becoming.changedByNoCondition_iff_rule",
+        "Becoming.insensitive_differs_iff_rule",
+        "Becoming.not_through_sensitive_iff_rule"
+      ]
+    },
+    {
+      "zh": "消失之判定给出一个规则，对每个布尔序列判定它是否有真者；这样的规则分两次判定消失：对每个 N 判定从 N 起是否有水平大于 0，再判定是否有某个 N 的回答为否。所以两者恰在同处存在；这个规则给出弱的规则与有限全知原则。",
+      "en": "The decision of vanishing gives a rule deciding, of every Boolean sequence, whether it has a true; such a rule decides vanishing in two passes, whether some level from N on is above 0 for each N, then whether the answer is no for some N. So the two exist exactly together; the rule gives the weak rule and the limited principle of omniscience.",
+      "declarations": [
+        "Becoming.ListTests.false_of_not",
+        "Becoming.ListTests.not_eq_true_of_false",
+        "Becoming.lpoRuleOfVanishDecision",
+        "Becoming.raisedFrom",
+        "Becoming.raisedFrom_false",
+        "Becoming.raisedFrom_of",
+        "Becoming.vanishDecisionOfLPORule",
+        "Becoming.wlpoRuleOfLPORule",
+        "Becoming.LPO.of_rule",
+        "Becoming.vanishDecision_iff_lpoRule"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。规则（对每个布尔序列判定它是否处处为假，或是否有真者）与消失之判定在用到处作为假设写入，不假定；全知的定理以自然数为条件编号。",
+      "en": "No axiom. A rule deciding, of every Boolean sequence, whether it is false throughout (or whether it has a true), and the decision of vanishing, are written in as hypotheses where used, never assumed; the theorems of omniscience number the conditions by the natural numbers."
+    },
+    {
+      "zh": "比较历史时数的相等是判定的，混合条件时条件的相等亦然，如 Becoming.Sensitivity；不另加前提。",
+      "en": "Equality of numbers is decided where histories are compared, and of conditions where they are mixed, as in Becoming.Sensitivity; no premise is added."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "命题 WLPO 给出规则：那一步从关系选出函数，核心不假定；所以当且仅当以规则陈述。",
+      "en": "That the proposition WLPO gives a rule: that step chooses a function from a relation, which the core does not assume; so the equivalences are stated for rules.",
+      "kind": "scope"
+    },
+    {
+      "zh": "弱的规则是否给出有限全知原则的规则或消失之判定，所以尾之律是否严格多取；作为命题，弱有限全知原则推不出有限全知原则（Akama–Berardi–Hayashi–Kohlenbach 2004）。",
+      "en": "Whether the weak rule gives the limited principle's rule or the decision of vanishing, so whether the tail law takes strictly more than a counterexample needs; as propositions WLPO does not give LPO (Akama–Berardi–Hayashi–Kohlenbach 2004).",
+      "kind": "scope"
+    },
+    {
+      "zh": "给定规则时，读已立者不推出经其敏感而读。",
+      "en": "Given the rule, reading what has stood does not imply reading through what one is sensitive to.",
+      "kind": "non-implication",
+      "witness": "Becoming.wholeLaw_not_through_sensitive"
+    },
+    {
+      "zh": "条件不以自然数编号时反例给出什么；按时间先后读的敏感；依存的度量。",
+      "en": "What a counterexample gives where the conditions are not numbered by the natural numbers; sensitivity read in temporal order; a measure of dependence.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean",
+      "detail": {
+        "zh": "永不消失之律（给定规则）：读已立者，不敏感于每个条件而仍有差别：只由弱有限全知原则作为规则造出的最小的耦合的反例。",
+        "en": "The law of levels that never vanish (given the rule): it reads what has stood, is insensitive to every condition and still differs: a counterexample to the least coupling built from the weak limited principle of omniscience as a rule alone."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T224751.654308Z）：Becoming.Tail 的 53 项声明（39 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §160；经第十八次审查（AI，只读，未重建 Lean）审阅，其更正已处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T224751.654308Z): the 53 declarations of Becoming.Tail, 39 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 160; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
+  },
+  "next_delta": {
+    "zh": "弱的规则是否给出有限全知原则的规则（尾之律是否严格多取）；条件不编号时反例给出什么；按时间先后读的敏感；独立审查。",
+    "en": "Whether the weak rule gives the rule of the limited principle (whether the tail law takes strictly more); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 sensitivity-is-the-least-registration 的 next_delta 首项：反例之存在的确切强度。读法（AI 的，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：依存于整体而不依存于其任何部分者，恰在能对每个无尽的是非序列判定它是否全是否之处给出；条件编号时，最小的耦合恰在这一全知处不成立，不需要更多，核心不假定它。读作水平永不消失，这一类整体只需要弱的规则；读作终将消失，一个相关的整体（经典地是其补，在核心中是另一个律）需要有限全知原则的规则。数学是标准的：构造性反推数学中的弱有限全知原则（Bridges 与 Richman 1987；有限全知原则出自 Bishop 1967），这里以规则陈述。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the first item of the next_delta of sensitivity-is-the-least-registration: the exact strength of a counterexample's existence. Readings (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): what depends on the whole and on no part of it is given exactly where it can be decided, of every unending sequence of yes and no, whether it says no throughout; with the conditions numbered, the least coupling fails exactly at this omniscience and needs no more of it, and the core does not assume it. Read as whether levels never vanish, a whole of this kind takes only the weak rule; read as whether they vanish eventually, a related whole, classically its complement but in the core another law, takes the rule of the limited principle. The mathematics is standard: the weak limited principle of omniscience of constructive reverse mathematics (Bridges and Richman 1987; the limited principle is Bishop's, 1967), stated here as a rule."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean",
+  "aliases": [
+    "what a law of the whole and no part takes",
+    "整体而无部分之律所需",
+    "a whole and no part",
+    "整体而无部分",
+    "changed by no condition",
+    "没有一个条件改变",
+    "law of levels that never vanish",
+    "永不消失之律",
+    "WLPO as a rule",
+    "弱有限全知原则作为规则",
+    "exact strength of a counterexample",
+    "反例的确切强度"
+  ],
+  "dependencies": [
+    {
+      "id": "sensitivity-is-the-least-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用消失（VanishFrom）、消失之指示与尾之律、WLPO、seenBy 与其引理、alike_of_agree_from、alike_of_agree_from_sensitive、Sensitivity.cond_either 与 ReadsFinitely.alike_of_insensitive：反例给出规则的证明是其混合，读作数据。",
+        "en": "Reuses vanishing (VanishFrom), the indicator of vanishing and the tail law, WLPO, seenBy and its lemmas, alike_of_agree_from, alike_of_agree_from_sensitive, Sensitivity.cond_either and ReadsFinitely.alike_of_insensitive: the proof that a counterexample gives a rule is its mixing, read as data."
+      },
+      "interface": {
+        "output": {
+          "zh": "消失与其指示；尾之律；沿序列的混合给出相同；弱有限全知原则；读有限多个条件且不敏感者处处给出相同。",
+          "en": "Vanishing and its indicator; the tail law; mixing along a sequence giving alike; the weak limited principle of omniscience; a law reading finitely many conditions and sensitive to none giving alike."
+        },
+        "input": {
+          "zh": "反例与规则的当且仅当；整体之律与其无最小的耦合；尾之律作为实例；永不消失之指示。",
+          "en": "The equivalence of counterexamples and rules; the law of a whole with no least coupling; the tail law as an instance; the indicator of never vanishing."
+        },
+        "conditions": {
+          "zh": "条件以自然数编号；规则与消失之判定作为假设。",
+          "en": "Conditions numbered by the natural numbers; the rule and the decision of vanishing as hypotheses."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用交换律（ExchangeLaw）、给出相同、读已立者、不敏感、敏感与经耦合而读（Through）：反例按这些陈述。",
+        "en": "Reuses laws of exchange (ExchangeLaw), giving alike, reading what has stood, insensitivity, sensitivity and reading through a coupling (Through): the counterexamples are stated through them."
+      },
+      "interface": {
+        "output": {
+          "zh": "交换律；读已立者；一步的不敏感与敏感；经耦合而读。",
+          "en": "Laws of exchange; reading what has stood; insensitivity at a step and sensitivity; reading through a coupling."
+        },
+        "input": {
+          "zh": "整体之律、永不消失之律与反例的当且仅当。",
+          "en": "The law of a whole, the law of levels that never vanish and the equivalences for counterexamples."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    },
+    {
+      "id": "coming-and-ceasing-keep-pace",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用有限全知原则（LPO）：判定是否有真者的规则给出它。",
+        "en": "Reuses the limited principle of omniscience (LPO): a rule deciding whether a sequence has a true gives it."
+      },
+      "interface": {
+        "output": {
+          "zh": "有限全知原则。",
+          "en": "The limited principle of omniscience."
+        },
+        "input": {
+          "zh": "有限全知原则作为规则给出它（LPO.of_rule）。",
+          "en": "The limited principle as a rule giving it (LPO.of_rule)."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "sensitivity-is-the-least-registration",
+      "detail": {
+        "zh": "回答其下一步首项：反例恰在弱有限全知原则作为规则之处存在，由只由规则造出的永不消失之律达到；尾之律所取的消失之判定恰是有限全知原则作为规则。",
+        "en": "Answers the first item of its next step: a counterexample exists exactly where the weak limited principle of omniscience holds as a rule, attained by the law of levels that never vanish, built from the rule alone; the decision of vanishing the tail law takes is exactly the limited principle as a rule."
+      }
+    },
+    {
+      "id": "how-often-couplings-act",
+      "detail": {
+        "zh": "同样确定一个推理原则的确切强度：那里每个时程都安定恰是一个二分，给出有限全知原则；这里反例恰是弱有限全知原则作为规则。",
+        "en": "Likewise fixes the exact strength of a principle of reasoning: there every schedule settling is exactly a dichotomy giving the limited principle of omniscience; here a counterexample is exactly the weak limited principle as a rule."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean",
+      "role": "proof",
+      "sha256": "4d3adabe4c5a253cfe4e3259864ee5eb925011e7dea67f55648d378af4583a85",
+      "declarations": [
+        "Becoming.Tail.nonzero",
+        "Becoming.Tail.eq_zero_of_nonzero_false",
+        "Becoming.Tail.levelsFrom",
+        "Becoming.Tail.add_eq",
+        "Becoming.ChangedByNoCondition",
+        "Becoming.ChangedByNoCondition.eq_of_agree_from",
+        "Becoming.ChangedByNoCondition.of_agree_from",
+        "Becoming.wholeLaw",
+        "Becoming.wholeLaw_nonanticipating",
+        "Becoming.wholeLaw_reads_from",
+        "Becoming.wholeLaw_insensitive",
+        "Becoming.wholeLaw_not_sensitive",
+        "Becoming.wholeLaw_through_from",
+        "Becoming.wholeLaw_not_through_sensitive",
+        "Becoming.wholeLaw_not_readsFinitely",
+        "Becoming.wholeLaw_no_least_coupling",
+        "Becoming.vanishIndicator_changedByNoCondition",
+        "Becoming.tailLaw_eq_wholeLaw",
+        "Becoming.mixedDecision",
+        "Becoming.insensitiveDiffersDecision",
+        "Becoming.notThroughSensitiveDecision",
+        "Becoming.WLPO.of_rule",
+        "Becoming.vanishesFrom",
+        "Becoming.vanishesFrom_true",
+        "Becoming.vanishesFrom_of",
+        "Becoming.vanishesFrom_never_iff",
+        "Becoming.neverIndicator",
+        "Becoming.neverIndicator_eq_one",
+        "Becoming.neverIndicator_eq_zero",
+        "Becoming.neverIndicator_eq_of_agree",
+        "Becoming.neverIndicator_changedByNoCondition",
+        "Becoming.neverIndicator_zeros",
+        "Becoming.neverIndicator_ones",
+        "Becoming.neverIndicator_add_vanishIndicator",
+        "Becoming.neverLaw",
+        "Becoming.neverLaw_nonanticipating",
+        "Becoming.neverLaw_insensitive",
+        "Becoming.neverLaw_not_sensitive",
+        "Becoming.neverLaw_differs",
+        "Becoming.changedByNoCondition_iff_rule",
+        "Becoming.insensitive_differs_iff_rule",
+        "Becoming.not_through_sensitive_iff_rule",
+        "Becoming.lpoRuleOfVanishDecision",
+        "Becoming.raisedFrom",
+        "Becoming.raisedFrom_false",
+        "Becoming.raisedFrom_of",
+        "Becoming.vanishDecisionOfLPORule",
+        "Becoming.wlpoRuleOfLPORule",
+        "Becoming.LPO.of_rule",
+        "Becoming.vanishDecision_iff_lpoRule"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "declarations": [
+        "Becoming.ListTests.false_of_not_true",
+        "Becoming.ListTests.false_of_not",
+        "Becoming.ListTests.not_eq_true_of_false"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
+      "role": "proof",
+      "sha256": "35f17da65ab50da09907d25905e4cf4fce4b825051c103823ec8e71b16aa81a4",
+      "declarations": [
+        "Becoming.VanishFrom",
+        "Becoming.VanishFrom.of_agree",
+        "Becoming.vanishIndicator",
+        "Becoming.vanishIndicator_eq_one",
+        "Becoming.vanishIndicator_eq_zero",
+        "Becoming.vanishIndicator_eq_of_agree",
+        "Becoming.tailLaw",
+        "Becoming.WLPO",
+        "Becoming.seenBy",
+        "Becoming.seenBy_false",
+        "Becoming.seenBy_true",
+        "Becoming.seenBy_exists",
+        "Becoming.alike_of_agree_from",
+        "Becoming.alike_of_agree_from_sensitive",
+        "Becoming.Sensitivity.cond_either",
+        "Becoming.ExchangeLaw.ReadsFinitely",
+        "Becoming.ExchangeLaw.ReadsFinitely.alike_of_insensitive"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "c4916cbf4ee72134c14a7573780ac76acbde0d256ca2799012253f5e23d89fd8",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.ExchangeLaw.GivesAlike",
+        "Becoming.ExchangeLaw.Nonanticipating",
+        "Becoming.ExchangeLaw.InsensitiveAt",
+        "Becoming.ExchangeLaw.Sensitive",
+        "Becoming.ExchangeLaw.Through"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "sha256": "1be380343ae5a2b019fb355cee08c038404c14b9fcb2e1681e6e61b236a3fa00",
+      "declarations": [
+        "Becoming.LPO"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "sha256": "679f7dfa4433804a6230660ebfe0ddd93eb283223ad7d2af5e72112e75879808",
+      "declarations": [
+        "Becoming.Web.AlikeThroughUpTo"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "role": "proof",
+      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe",
+      "declarations": [
+        "Becoming.Web"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
+      "role": "provenance",
+      "sha256": "9a9b77159f5aae64310d30cbd3d48a380777613cc3852e517f1a32524dbcc61c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T224751.654308Z/verification.json",
+      "role": "receipt",
+      "sha256": "94a2d42ff6c894a6dd0537d9c16cf1ef2d9fc926d1b06159c9124423ae8cd90f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Tail",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Sensitivity",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Change",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Testing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.World",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，回答 sensitivity-is-the-least-registration 的 next_delta 首项（反例之存在的确切强度）（P126）；研究 §160。",
+      "en": "16 October 2026: added, answering the first item of the next_delta of sensitivity-is-the-least-registration (the exact strength of a counterexample's existence) (P126); study section 160."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：读法“同一个整体……只需要弱的规则”把 neverIndicator 与 vanishIndicator 当作同一个整体；两者只在经典意义下互补，在核心中是两个律（审查第 28 项，O10）；改为“这一类整体”与“一个相关的整体”。does_not_show 1 原把“弱有限全知原则是否推出有限全知原则”留作开放：作为命题这已知不成立（Akama–Berardi–Hayashi–Kohlenbach 2004，引文依审查），开放的只是规则形式（第 29 项，U2、K3）；correspondence 记 Bishop 1967 与 Bridges–Richman 1987。读法待 Ren。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): the reading “the same whole … takes only the weak rule” treated neverIndicator and vanishIndicator as one whole; they are complements only classically and are two laws in the core (review item 28, O10); it now reads “a whole of this kind” and “a related whole”. does_not_show 1 left open whether WLPO gives LPO: as propositions it is known not to (Akama–Berardi–Hayashi–Kohlenbach 2004, the citation as the review gives it), and only the rule form is open (item 29, U2 and K3); the correspondence names Bishop 1967 and Bridges–Richman 1987. The readings stay pending Ren. Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Tail.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Sensitivity.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Tail.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Sensitivity.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 C10 项：家族由 F07（显式公理下的实践判断，前提 G0/J）改为 F01（关系核心）：本记录不用伦理前提、不用公理，是第一部分的结构结果；会话图尚无第一部分专属家族，F01 是现有家族中正确的一个。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Tail.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Counterfactual.lean, ExchangeLaw.courseWeb is added and ExchangeLaw.world is now World.ofKind of the course's flow and that web, definitionally the same; in Sensitivity.lean, tailLaw_not_through now goes through tailLaw_not_through_sensitive. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Counterfactual.lean, Sensitivity.lean, THE-THEORY-OF-BECOMING.md, Tail.lean, Testing.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the readings, as the eighteenth review narrowed them, taken by Ren (DELEGATED-CHOICES D43). The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：读法按第十八次审查的收窄由 Ren 取（DELEGATED-CHOICES D43）。论断不变。"
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G3（Becoming.LawAlongRun）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: Web from Dependence.lean to World.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Testing.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Counterfactual.lean, Sensitivity.lean, THE-THEORY-OF-BECOMING.md, Tail.lean, Testing.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the \"Seeking, capture and runaway\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, G5 (Becoming.LawThroughChangingCoupling): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，G5（Becoming.LawThroughChangingCoupling）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The eighteenth review counts as the review this record asked for (DELEGATED-CHOICES D45 (4)), so the validation scope says that it reviewed the record (AI, read-only, no Lean rebuild), in place of \"not independently reviewed\". The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：第十八次审查算作本记录所要求的审查（DELEGATED-CHOICES D45 (4)），验证范围写明它审阅了本记录（AI，只读，未重建 Lean），代替“未经独立审查”。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
+      "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, HS (sums over histories by support, horizon and exact order): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: HS added the paragraph on support, splitting, exact orders and the steps between after the orders as a sum over histories, narrowed the open grouping by exactly i responses in the section 8.2 row of laws of exchange, coupling and loops and linked its record there, added a rerun to the section 8.2 integration row, and updated the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，HS（历史之和：支撑、视界与确切阶）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Counterfactual.lean, Testing.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): Tail.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Tail.lean, documentation only (no name, statement or proof changed): readings labelled D43. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Tail.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Tail.lean，只改说明（名称、陈述与证明不变）：读法标为 D43。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (World.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: World.lean, Dependence and WebAt moved in; Web is Dependence Nat; World is a relatum type with its history, a run of every step, read by World.web, World.flow and World.move, built by World.of; imports the frame; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（World.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：World.lean，Dependence 与 WebAt 移入；Web 即 Dependence Nat；World 是关系项类型及其历史（每一步之运行），由 World.web、World.flow、World.move 读出，由 World.of 构造；导入框架；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Counterfactual.lean, Sensitivity.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Sensitivity.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Counterfactual.lean、Sensitivity.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Sensitivity.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Removed, with the statement kept under one name: Tail.false_of_not_eq_true (now ListTests.false_of_not); Tail.false_of_not_true (now ListTests.false_of_not_true); Tail.not_eq_true_of_false (now ListTests.not_eq_true_of_false). Proof bindings (Change.lean, Counterfactual.lean, Tail.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Change.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Counterfactual.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Tail.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：删去，陈述以一个名称保留：Tail.false_of_not_eq_true（现为 ListTests.false_of_not）；Tail.false_of_not_true（现为 ListTests.false_of_not_true）；Tail.not_eq_true_of_false（现为 ListTests.not_eq_true_of_false）。证明绑定（Change.lean、Counterfactual.lean、Tail.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Change.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Counterfactual.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Tail.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Change.lean, Counterfactual.lean, Prelude.lean, Sensitivity.lean, Tail.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Change.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Counterfactual.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Sensitivity.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Tail.lean, takes as its final section TailRuns, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Change.lean、Counterfactual.lean、Prelude.lean、Sensitivity.lean、Tail.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Change.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Counterfactual.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Sensitivity.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Tail.lean，以末节收入 TailRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Proof bindings (Testing.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; Testing.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：证明绑定（Testing.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；Testing.lean，只改说明（任何类型的立场、obs 是第二个给出的关系、固定类型的界、整段的类）或导入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/4e16beec34e9f172/what-a-law-of-the-whole-and-no-part-takes.json",
+      "sha256": "4e16beec34e9f172a4e9fb8e7ffde4c308285245a6b4a2663465339b19ce0e5b",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
+}

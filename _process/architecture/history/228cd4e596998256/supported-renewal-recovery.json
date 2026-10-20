@@ -1,0 +1,450 @@
+{
+  "schema_version": 2,
+  "id": "supported-renewal-recovery",
+  "title": {
+    "zh": "仍受支持的修复与维持关系再形成",
+    "en": "Supported repair and reformation of a sustaining relation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-14T03:30:00+00:00",
+  "statement": {
+    "zh": "恢复是每个平衡流的定律：足够多步的共同净给予使条件水平升到任一目标。支持门控规律中，仍受支持的贡献路径恢复维持活动是其实例；后续输入相同的两段实际历史，一个恢复，一个不恢复。",
+    "en": "Restoration is a law of every balanced flow: joint net giving over enough steps raises a condition's level to any target. In the support-gated law a supported contribution route restores the sustaining activity as an instance, while two actual histories with the same later inputs recover or do not."
+  },
+  "laws": [
+    {
+      "zh": "对每个依存网上的每个平衡流，恢复是一条定律：一步共同净给予使条件水平至少升一；在水平不低于起点的每一步，各形成共同给予多于取走时，m − 水平 步使水平回到至少 m。",
+      "en": "For every balanced flow on every web, restoration is a law: a step of joint net giving raises a condition's level by at least one, and where the formations give jointly more than they take at each step at which the level is not below where it started, m − level steps bring the level to at least m.",
+      "declarations": [
+        "Becoming.Flow.net_give_raises_at",
+        "Becoming.Flow.net_give_bounded_at",
+        "Becoming.Flow.restores_at",
+        "Becoming.Flow.restores"
+      ]
+    },
+    {
+      "zh": "支持门控规律族的每个规律都是其静态网上的这样一个流，所以它恢复维持所需是实例，命题即规律族定理的命题：在既有支持门控规律中，起初仍受支持的贡献路径若在缺口步数内持续有正净贡献，便保持自身支持并恢复维持活动所需的条件。",
+      "en": "Every law of the support-gated family is such a flow on its static web, so its restoration of the sustaining need is an instance, with the statement of the family theorem: within the existing support-gated law, an initially supported contribution route with positive net contribution throughout a deficit-length window keeps its own support and restores the sustaining activity.",
+      "declarations": [
+        "Becoming.SupportGated.renewal",
+        "Becoming.SupportGated.netGive",
+        "Becoming.SupportGated.flow",
+        "Becoming.SupportGated.web",
+        "Becoming.SupportGated.balances",
+        "Becoming.SupportGated.netGive_step",
+        "Becoming.SupportGated.repair_restores",
+        "RenewalRecovery.supported_repair_step",
+        "Becoming.SupportRecovery.repair_step",
+        "RenewalRecovery.repair_window_progress",
+        "Becoming.SupportRecovery.window_progress",
+        "RenewalRecovery.repair_restores_sustaining_support"
+      ]
+    },
+    {
+      "zh": "若两项活动都失去支持，实际水平此后不变，即使后续输入表仍列有贡献。",
+      "en": "If both activities lack support, the reached level remains constant despite later nominal contributions.",
+      "declarations": [
+        "RenewalRecovery.inactive_pair_absorbs",
+        "Becoming.SupportRecovery.absorbs"
+      ]
+    },
+    {
+      "zh": "两个实际取用历史从同一初值出发、后续输入相同，却分别恢复与不恢复；恢复历史既非全程更新型，也非永久消耗型；其受支持的脉冲是恢复定律的实例。",
+      "en": "Two actual draw histories have the same initial level and later inputs but opposite recovery outcomes; the recovered history is neither all-time renewing nor permanently consuming, and its supported pulse is an instance of the law of restoration.",
+      "declarations": [
+        "RenewalRecovery.same_future_inputs",
+        "Becoming.SupportRecovery.same_later_inputs",
+        "RenewalRecovery.two_actual_pulses",
+        "Becoming.SupportRecovery.pulse_levels",
+        "RenewalRecovery.supported_pulse_recovers",
+        "Becoming.SupportRecovery.supported_pulse_recovers",
+        "RenewalRecovery.unsupported_pulse_never_recovers",
+        "Becoming.SupportRecovery.unsupported_pulse_ends",
+        "RenewalRecovery.recovered_history_neither_global_class",
+        "Becoming.SupportRecovery.recovered_neither",
+        "Becoming.SupportGated.pulse_restores",
+        "Becoming.SupportGated.repair_restores"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "一个自然数条件、两项按阈值获得支持的活动及既有更新递推。贡献与取用只在焦点活动受支持时实际进入变化，维持更新也只在维持活动受支持时发生。",
+      "en": "One natural-number condition, two threshold-supported activities and the inherited recurrence. Contribution and drawing enter actual change only while the focal activity is supported; sustaining renewal is likewise support-gated."
+    },
+    {
+      "zh": "有限恢复结论要求初始修复支持，以及随后 needG − level T 步每步 contrib > draw；这一供给安排及其来源不由定理导出。",
+      "en": "Finite recovery requires initial repair support and contrib > draw at each of the next needG − level T steps; the schedule and its source are supplied."
+    },
+    {
+      "zh": "不恢复结论限于两项活动均未获支持、无第三条注入、无阈值修订或条件替代的同一规律；脉冲见证具体给定初值、阈值与输入。",
+      "en": "Non-recovery is restricted to the same law with both activities unsupported, no third injection, threshold revision or condition substitution; pulse witnesses supply exact initial values, thresholds and inputs."
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "The family's balance as a flow holds by construction (the focal take is what the step removes); the instance's content is its supported givers and arithmetic.",
+      "zh": "该族作为流的平衡由构造给出（焦点取用即这一步移去的量）；实例的内容是受支持的给予者与其算术。",
+      "kind": "scope",
+      "witness": "Becoming.SupportGated.balances"
+    },
+    {
+      "zh": "未导出贡献来源、活动选择、物理规律、一般可恢复性、整个 Becoming 的关系构成或伦理必要性；生生之意义、实践承诺与 E 保持明示。",
+      "en": "Does not derive contribution sources, activity selection, physical laws, general recoverability, whole-Becoming relational constitution or ethical necessity; living significance, the practical commitments and E stay explicit.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "有限恢复不保证窗口以后维持。",
+      "en": "Finite recovery does not guarantee later maintenance.",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
+      "detail": {
+        "zh": "unsupported_pulse_never_recovers 反驳仅凭后续贡献表就保证恢复；recovered_history_neither_global_class 保留实际中断，不把全历史标签当作全部变化过程。",
+        "en": "unsupported_pulse_never_recovers refutes guaranteed recovery from a later contribution schedule alone; recovered_history_neither_global_class retains the interruption rather than replacing dynamics with a global label."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+      "detail": {
+        "zh": "旧材料修复、启动障碍及连续恢复域已有成果；新增量限于此既有门控规律中的有限窗口、吸收状态及实际历史比较。",
+        "en": "Earlier material repair, initiation obstructions and continuous recovery basins remain earlier results; the delta is the finite window, absorbing state and actual-history comparison in this inherited gated law."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "zero-axiom-target-open"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 实查 9 项新定理声明／10 项新声明审计，4 空、6 仅标准依赖（propext、Quot.sound）；继承 35 项定理／60 项空审计另列，共 70 项审计、64 空。冻结成功回执绑定双模块源码、检查器、签名及日志。把本结果接到脊柱的一般定律与实例定理（Becoming.Continuation 与 Becoming.RenewalFlow）经合并检查器检查，公理报告为空。作者反审，无独立代理或经验验收。",
+    "en": "Lean 4.29.1 checks nine new theorem declarations / ten declaration audits: four empty, six using only standard dependencies (propext, Quot.sound); 35 inherited theorems / 60 empty audits credited separately (total 70, 64 empty). The frozen successful receipt binds both module sources, checker, signatures and logs. The general laws and instances connecting this result to the spine (Becoming.Continuation, Becoming.RenewalFlow) are checked by the consolidated checker with empty axiom reports. Author counterreview; no independent-agent or empirical acceptance."
+  },
+  "next_delta": {
+    "zh": "把有限修复接口接入关系怎样变化的共同构成论证；保留足够的既有规律解释作为竞争说明，不以另一局部例子替代完整目标。",
+    "en": "Integrate the finite repair interface into the common constitutive account of relational change, retaining adequate law-based explanations as competitors rather than substituting another local example for the full target."
+  },
+  "correspondence": {
+    "zh": "维持、取用与修复是同一展开中分化的作用。旧 Law.level 给出修复窗口起点；每步净增通过 repair_window_progress 接到原维持支持测试。仅第一次取用不同的两段历史改变实际修复支持，后续名义输入并不等于实际供给。没有真实系统的经验对应。",
+    "en": "Sustaining, drawing and repair differentiate roles within one unfolding. The inherited Law.level supplies the repair-window start; per-step progress through repair_window_progress feeds the original sustaining-support test. A first-draw difference changes actual repair support; later nominal inputs are not actual supply. No empirical correspondence to a real system is established."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean",
+  "aliases": [
+    "RenewalRecovery.inactive_pair_absorbs",
+    "RenewalRecovery.supported_repair_step",
+    "RenewalRecovery.repair_window_progress",
+    "RenewalRecovery.repair_restores_sustaining_support",
+    "RenewalRecovery.same_future_inputs",
+    "RenewalRecovery.two_actual_pulses",
+    "RenewalRecovery.supported_pulse_recovers",
+    "RenewalRecovery.unsupported_pulse_never_recovers",
+    "RenewalRecovery.recovered_history_neither_global_class",
+    "Becoming.Flow.restores",
+    "Becoming.SupportGated.repair_restores",
+    "Becoming.SupportGated.pulse_restores"
+  ],
+  "dependencies": [
+    {
+      "id": "relational-renewal-classification",
+      "relation": "application",
+      "detail": {
+        "zh": "应用既有 Law 与展开定义，不把旧不可返回定理当作正面恢复结论的前提。源模块在本次闭包中重新实查。",
+        "en": "Applies the existing Law and unfolding definitions; the prior no-return theorem is not a premise of positive recovery. The source module is freshly checked in this closure."
+      },
+      "interface": {
+        "output": {
+          "zh": "给定输入历史产生的 level T、活动支持及门控递推。",
+          "en": "The input history produces level T, activity support and the gated recurrence."
+        },
+        "input": {
+          "zh": "修复窗口起点的支持及其后有限正净贡献；或两项活动同时失去支持。",
+          "en": "Support at the repair-window start and finite positive net contribution, or simultaneous loss of both supports."
+        },
+        "conditions": {
+          "zh": "同一规律、阈值和递推；无第三条供给。正面定理增加有限窗口前提。",
+          "en": "Same law, thresholds and recurrence; no third supply. The positive theorem adds the finite-window premise."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "renewing-consuming-formation",
+      "detail": {
+        "zh": "另一个已查磨损规律给出耗竭界；本次无导入或模型转换，不认领其原结果。",
+        "en": "A separately checked wear law supplies depletion bounds; no import or model adapter is claimed here."
+      }
+    },
+    {
+      "id": "endpoint-loss-and-return",
+      "detail": {
+        "zh": "关系再形成与完整配置返回是不同目标，恢复不抹去中断历史；仅解释关联。",
+        "en": "Reformation and return to an entire configuration are different targets; recovery does not erase interruption. Interpretive relation only."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
+      "role": "proof",
+      "sha256": "693840cd3b0ff85e82cd093994e748255a2d407498cd89745a62ba3b9b70cfa3",
+      "declarations": [
+        "RenewalRecovery.inactive_pair_absorbs",
+        "RenewalRecovery.supported_repair_step",
+        "RenewalRecovery.repair_window_progress",
+        "RenewalRecovery.repair_restores_sustaining_support",
+        "RenewalRecovery.same_future_inputs",
+        "RenewalRecovery.two_actual_pulses",
+        "RenewalRecovery.supported_pulse_recovers",
+        "RenewalRecovery.unsupported_pulse_never_recovers",
+        "RenewalRecovery.recovered_history_neither_global_class"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+      "role": "proof",
+      "sha256": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json",
+      "role": "receipt",
+      "sha256": "b01d0a46b0231f2316d658be5799d8aac67ec95d620d2398afcc0dce325a4f91",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_renewal_recovery.py",
+      "role": "review",
+      "sha256": "594cfeffc0de6120997d129e51f96c0796cc60aaa09f465e313cca9308b4329d",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+      "role": "statement",
+      "sha256": "ef73b555d35257c387de925b7712f9c96655a6ce8c5a1e6a92a9a8a275a2c9ab",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/history/THEORY-OF-BECOMING.md",
+      "role": "integration",
+      "sha256": "5c6cbf1f50e1ca0cc64c05d135694fd45791910b622e654493d87d5ea7d19d58",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "0ab0815ed90be71d73e427578aeeb623f23a4d2e7055391ab23903e6ac6f3861",
+      "declarations": [
+        "Becoming.Flow.net_give_raises_at",
+        "Becoming.Flow.net_give_bounded_at",
+        "Becoming.Flow.restores_at",
+        "Becoming.Flow.restores"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean",
+      "role": "proof",
+      "sha256": "ae3569b0dcb912f605231c5d903f188480158c35c552bb4cba9ee668be187cf7",
+      "declarations": [
+        "Becoming.SupportGated.pulse_restores"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean",
+      "role": "proof",
+      "sha256": "3ad279914a5e69b6cde77a4b1132a48660dac2a68928bdbbf7bf358e204e6092",
+      "declarations": [
+        "Becoming.SupportGated.renewal",
+        "Becoming.SupportGated.netGive",
+        "Becoming.SupportGated.flow",
+        "Becoming.SupportGated.web",
+        "Becoming.SupportGated.balances",
+        "Becoming.SupportGated.netGive_step",
+        "Becoming.SupportGated.repair_restores",
+        "Becoming.SupportRecovery.absorbs",
+        "Becoming.SupportRecovery.repair_step",
+        "Becoming.SupportRecovery.window_progress",
+        "Becoming.SupportRecovery.same_later_inputs",
+        "Becoming.SupportRecovery.pulse_levels",
+        "Becoming.SupportRecovery.supported_pulse_recovers",
+        "Becoming.SupportRecovery.unsupported_pulse_ends",
+        "Becoming.SupportRecovery.recovered_neither"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "role": "receipt",
+      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "role": "receipt",
+      "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json",
+      "sha256_pointer": "/modules/0/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json",
+      "sha256_pointer": "/modules/1/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RenewalFlow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-09：在既有变化研究第13节应用新近关系更新规律，新增有限修复窗口及双失支持障碍。较早失败编译与最终成功快照均保留；修正共享章中不可返回所需的无正净修复前提，不改变旧证明。",
+      "en": "2026-10-09: §13 of the existing change study applies the recent relational renewal law to a finite repair window and a dual-support-loss obstruction. Earlier failed compilation and final successful snapshot are retained. Makes the no-positive-net-repair premise explicit in the shared chapter without changing the old proof."
+    },
+    {
+      "zh": "2026-10-09：核读共享章中并行新增的 G0 对象修正及 C 条件比较，并核读其原指令及整合节。该比较属于另项研究，本记录的局部动力学、证明与范围不变；不将它计入本次数学验收。",
+      "en": "2026-10-09: Read concurrent clarification of G0’s object and the C-conditional comparison in the shared chapter, with its source instruction and integration section. That comparison belongs to another study; this record’s local dynamics, proof and scope remain unchanged and do not claim its mathematical acceptance."
+    },
+    {
+      "zh": "2026-10-14，一般定律（一般定律计划 L2 流，由整合会话分派；AI 撰写，Claude Opus 5.5）：审计发现本记录的动力学只对支持门控规律族成立。恢复现为每个平衡流的定律（Becoming.Continuation 中的 Flow.surplus_raises_at、surplus_bounded_at、restores_at、restores），新桥接模块 Becoming.RenewalBridge 表明规律族的每个规律都是其静态网上的平衡流（SupportGated.balances），所以 repair_restores_sustaining_support 是实例（SupportGated.repair_restores，命题相同；规律族的证明用 propext 与 Quot.sound，这里公理报告为空），受支持的脉冲也是（SupportGated.pulse_restores）。主张改写为定律在先；规律族模块、其证明与回执不变。新增对 Becoming.Continuation 与 Becoming.RenewalBridge 的合并回执绑定，合并时须改指首个含有它们的回执。",
+      "en": "14 October 2026, general law (general-laws plan, stream L2, assigned by the integrating session; AI-authored, Claude Opus 5.5): the audit found this record's dynamics held only for the support-gated law family. Restoration is now a law of every balanced flow (Flow.surplus_raises_at, surplus_bounded_at, restores_at, restores in Becoming.Continuation), and the new bridge module Becoming.RenewalBridge shows every law of the family to be a balanced flow on its static web (SupportGated.balances), so repair_restores_sustaining_support is an instance (SupportGated.repair_restores, the same statement, with an empty axiom report where the family proof uses propext and Quot.sound) and so is the supported pulse (SupportGated.pulse_restores). The claim is rewritten law first; the family module, its proofs and its receipt are unchanged. Bindings to the consolidated receipt for Becoming.Continuation and Becoming.RenewalBridge are added and must be re-pointed to the receipt that first contains them at landing."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Continuation.lean（新增恢复律 Flow.restores 及其推论，既有陈述不变）；RenewalBridge.lean（新桥接模块，首次由本回执检查）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Continuation.lean (the restoring law Flow.restores and its corollaries added; existing statements unchanged); RenewalBridge.lean (new bridge module, first checked in this receipt)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（一般规律计划：增长棘轮所拦记录的迁移）：标题不变，陈述在先；主张拆为 4 条规律；限制与回执说明分入“未表明”、通用边界、证据段与沿革。前提、反例、状态、证明绑定与来源哈希均未改变。恢复之律写作“使水平回到至少 m”，与 Flow.restores 的结论（m ≤ 水平）一致，旧文“回到 m”。“强零实质公理目标保持明示”改引通用边界 zero-axiom-target-open，“G0/J/E 保持明示”并入第一条“未表明”。旧下一步的“有限修复接口已完成”是状态说明，由状态字段承载，原句留在快照中。每句旧文本的去向见迁移对照表 [supported-renewal-recovery.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/supported-renewal-recovery.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (general-laws plan: migration of the records the growth ratchet stopped): The title is kept, with the statement first; the claim was split into 4 laws; limitations and receipt notes went to does-not-show items, a standard boundary, the evidence paragraph and history. No premise, counterexample, status, proof binding or source hash changed. The law of restoration now says “to at least m”, as Flow.restores concludes (m ≤ level), where the old text said “back to m”. “The strong zero-substantive-axiom target remains explicit” now cites the standard boundary zero-axiom-target-open, and “G0/J/E remain explicit” joined the first does-not-show item. The old next step's “The finite repair interface is complete” is a status note carried by the status field; the sentence stays in the snapshot. Every earlier sentence is mapped in the migration table [supported-renewal-recovery.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/supported-renewal-recovery.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
+      "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：RenewalBridge.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to RenewalBridge.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged)."
+    },
+    {
+      "en": "14 October 2026, seventeenth independent review ([BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)), findings G7 and G9: \"surplus\" is a market word, and the package already says net give; `Flow.surplus_raises_at`, `Flow.surplus_bounded_at`, `SupportGated.surplus`, `surplus_active` and `surplus_step` are renamed `net_give_raises_at`, `net_give_bounded_at`, `netGive`, `netGive_active` and `netGive_step`, and \"joint surplus\" becomes \"joint net giving\". A does-not-show item now says that the family's balance holds by construction (the focal take is defined as what the step removes) and names the instance's content.",
+      "zh": "2026年10月14日，第十七次独立审查（[BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)）发现 G7 与 G9：“盈余”是市场词，包中已有“净给予”；`Flow.surplus_raises_at`、`Flow.surplus_bounded_at`、`SupportGated.surplus`、`surplus_active`、`surplus_step` 改名为 `net_give_raises_at`、`net_give_bounded_at`、`netGive`、`netGive_active`、`netGive_step`，“共同盈余”改为“共同净给予”。新增一条“不表明”项，说明该族的平衡由构造给出（焦点取用被定义为这一步移去的量），并写出实例的内容。"
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Continuation.lean（第十七次审查 G9：Flow.surplus_raises_at、surplus_bounded_at 改名为 net_give_raises_at、net_give_bounded_at，“共同盈余”改为“共同净给予”；陈述与证明不变）；RenewalBridge.lean（第十七次审查 G7, G9：SupportGated.surplus、surplus_active、surplus_step 改名为 netGive、netGive_active、netGive_step；模块说明写明该族的平衡由构造给出；陈述与证明不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Continuation.lean (seventeenth review G9: Flow.surplus_raises_at and surplus_bounded_at renamed net_give_raises_at and net_give_bounded_at, “joint surplus” now “joint net giving”; statements and proofs unchanged); RenewalBridge.lean (seventeenth review G7, G9: SupportGated.surplus, surplus_active, surplus_step renamed netGive, netGive_active, netGive_step; the module doc says the family's balance holds by construction; statements and proofs unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in RELATIONAL-BECOMING-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): THEORY-OF-BECOMING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): the text names the core modules that now hold the declarations it cites (Becoming.Lifting, Becoming.EdgeClosure, Becoming.RenewalFlow). Declarations moved with their full Lean names, statements and proofs unchanged: renewal, netGive, flow, web, balances, netGive_step, repair_restores from RenewalBridge.lean to RenewalFlow.lean. Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean, RenewalBridge.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠（Ren：“so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?”，然后“please do all”）：正文改为指名现在承载所引声明的核心模块（Becoming.Lifting、Becoming.EdgeClosure、Becoming.RenewalFlow）。声明连同完整 Lean 名称、陈述与证明原样移入核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (RenewalFlow, SupportRecovery; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（RenewalFlow、SupportRecovery），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): RenewalBridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Continuation.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Continuation.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Continuation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Continuation.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Continuation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Continuation.lean, RenewalFlow.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Continuation.lean, the witness Clearing moved to Clearing.lean; RenewalFlow.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Continuation.lean、RenewalFlow.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Continuation.lean，见证 Clearing 移到 Clearing.lean；RenewalFlow.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Moved with their full names: from SupportRecovery.lean to RenewalFlow.lean, SupportRecovery.absorbs, SupportRecovery.pulse_levels, SupportRecovery.recovered_neither, SupportRecovery.repair_step, SupportRecovery.same_later_inputs, SupportRecovery.supported_pulse_recovers, SupportRecovery.unsupported_pulse_ends, SupportRecovery.window_progress. The canonical source SupportRecovery.lean was folded into RenewalFlow.lean as its final section; it is now RenewalFlow.lean. Proof bindings (RenewalFlow.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: RenewalFlow.lean, takes as its final section SupportRecovery, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：连同完整名称移动：从 SupportRecovery.lean 到 RenewalFlow.lean：SupportRecovery.absorbs、SupportRecovery.pulse_levels、SupportRecovery.recovered_neither、SupportRecovery.repair_step、SupportRecovery.same_later_inputs、SupportRecovery.supported_pulse_recovers、SupportRecovery.unsupported_pulse_ends、SupportRecovery.window_progress。规范来源 SupportRecovery.lean 已作为末节折入 RenewalFlow.lean，现为 RenewalFlow.lean。证明绑定（RenewalFlow.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：RenewalFlow.lean，以末节收入 SupportRecovery（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/738dba6768361d6c/supported-renewal-recovery.json",
+      "sha256": "738dba6768361d6c46240878cb83ce73ea4fa3dae8c74ae9634c71443bc36b73",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
+    }
+  ]
+}

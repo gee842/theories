@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "id": "finite-continuation-plans",
+  "title": {
+    "zh": "有限接续充分性与分支方案",
+    "en": "Finite continuation adequacy and branching plans"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T13:02:25.936140+00:00",
+  "claim": {
+    "zh": "给定转移、观察、目标与许可时，n 步 viable 等价于存在一个依观察分支且 works 的 n 步方案。",
+    "en": "For supplied transitions, observations, target and admissibility, n-step viable is equivalent to an observation-branching n-step plan satisfying works."
+  },
+  "hypotheses": [
+    {
+      "zh": "有限步数与现有 viable、Plan、works；观察分支的选择使用所列既有逻辑依赖。",
+      "en": "Finite horizon and the existing viable, Plan and works; branch selection retains the recorded logical dependencies."
+    }
+  ],
+  "correspondence": {
+    "zh": "模型中的许可不自动是伦理正当性；作用覆盖与观察校准另需根据。",
+    "en": "Model admissibility is not automatically ethical permission; effect coverage and observation calibration require warrant."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean",
+  "aliases": [
+    "ContinuationAdequacy.viable_iff_plan",
+    "Becoming.Viability.keptFor_iff_plan_of_choice",
+    "Becoming.Viability.keptFor_iff_plan",
+    "Becoming.Viability.plans_iff_choice"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean",
+      "detail": {
+        "zh": "一阶可共同采取的行动不保证第二步；所列盲观察例保留失败。",
+        "en": "A common first response need not support the second step; the blind-observation example retains the failure."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Keeping.lean",
+      "detail": {
+        "zh": "对任意的值，每个被保持之类在每个进程中都有方案，恰是对所保持之值的选择（plans_iff_choice）：外围 viable_iff_plan 的 choose 在一般情形不能去掉；值可列举时不需要（keptFor_iff_plan）。",
+        "en": "For arbitrary values, kept classes having plans in every process is exactly choice over the values kept (plans_iff_choice): the periphery’s choose in viable_iff_plan cannot be dropped in general, and is not needed where the values are listed (keptFor_iff_plan)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "一阶可共同采取的行动不保证第二步；所列盲观察例保留失败。",
+    "en": "A common first response need not support the second step; the blind-observation example retains the failure."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean",
+      "role": "proof",
+      "sha256": "674a3a23358ae3d665345c749d3fc5415645e5e7fcc68cb95c173a397ff80266",
+      "declarations": [
+        "ContinuationAdequacy.viable_iff_plan",
+        "ContinuationAdequacy.blind_second_step_fails"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-adequacy-verification.json",
+      "role": "receipt",
+      "sha256": "96610f9c121fd605b6f8b1002b32d9d3ed37e13eb98c17b5e57153bf1b481ab6",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Keeping.lean",
+      "role": "proof",
+      "sha256": "8911dc0d19d975ee30a0b1a2dbc4d013fe9fe5db846abc88e4d49219f12983b4",
+      "declarations": [
+        "Becoming.Viability.Seen",
+        "Becoming.Viability.Usable",
+        "Becoming.Viability.KeptFor",
+        "Becoming.Viability.Plan",
+        "Becoming.Viability.Plan.Keeps",
+        "Becoming.Viability.Plan.Keeps.keptFor",
+        "Becoming.Viability.ChoiceOver",
+        "Becoming.Viability.choiceOver_fin",
+        "Becoming.Viability.KeptFor.plan_of_choice",
+        "Becoming.Viability.keptFor_iff_plan_of_choice",
+        "Becoming.Viability.keptFor_iff_plan",
+        "Becoming.Viability.plans_iff_choice",
+        "Becoming.Viability.KeptFor.mono",
+        "Becoming.Viability.KeptFor.shorter",
+        "Becoming.Viability.KeptFor.finer",
+        "Becoming.Viability.keptFor_of_closed",
+        "Becoming.Viability.Certificate.keptFor",
+        "Becoming.Viability.Kernel.keptFor",
+        "Becoming.Viability.Matching.keeping_matters"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean",
+      "role": "proof",
+      "sha256": "cd28afbeb20d83a45f7940d4e5625465ab15dea71eddf509b1bb5de569d3e9cc",
+      "declarations": [
+        "Becoming.ContinuationCorrespondence.processOf",
+        "Becoming.ContinuationCorrespondence.successor",
+        "Becoming.ContinuationCorrespondence.post_eq_seen",
+        "Becoming.ContinuationCorrespondence.viable_iff_keptFor",
+        "Becoming.ContinuationCorrespondence.toPlan",
+        "Becoming.ContinuationCorrespondence.ofPlan",
+        "Becoming.ContinuationCorrespondence.works_iff_keeps",
+        "Becoming.ContinuationCorrespondence.keeps_iff_works",
+        "Becoming.ContinuationCorrespondence.viable_iff_plan_by_core",
+        "Becoming.ContinuationCorrespondence.viable_iff_plan_listed"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-correspondence-checks/20261015T151901.978501Z/verification.json",
+      "role": "receipt",
+      "sha256": "e974b521d60b0f4799acda98f10aef4d768509878d4add899992752842ca823f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/check_continuation_correspondence.py",
+      "role": "provenance",
+      "sha256": "7fc382aeeb75f2af415ca1e0d9ce38b163da35e583957893c978569db9cc1784",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-adequacy-verification.json",
+      "sha256_pointer": "/modules/0/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Keeping.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Keeping",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-correspondence-checks/20261015T151901.978501Z/verification.json",
+      "sha256_pointer": "/source_sha256/ContinuationCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "复用有限方案接口；无限接续和实际取得足够观察仍单独研究。",
+    "en": "Reuse the finite-plan interface; infinite continuation and actual acquisition of sufficient observation remain separate."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-15，整合 I3c（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（新核心模块 Becoming.Keeping）。一步可用于一个配置类，指它在每个配置处都被容许且可走（Usable）；该步所登记者使类收窄（Seen，登记可列举时即 InquirySufficiency.After）。一类保持 n 步，指守卫遍及该类，且有某个可用之步无论登记什么都留下保持少一步的类（KeptFor）。依所登记者给出后续之步的方案保持该类其长度之久，不加前提（Plan.Keeps.keptFor）；登记可列举时每个被保持之类都有这样的方案，不加前提（keptFor_iff_plan）；对任意登记，这恰是对登记的选择（plans_iff_choice，选择为具名假设 ChoiceOver）。更细的登记保持更粗的登记所保持者（KeptFor.finer）；Viability 的证书在其中有一步处处可用时使其中每类对每个时程都被保持（Certificate.keptFor、Kernel.keptFor）；登记一个隐藏的位可决定保持与否（Matching.registration_matters）。外围实例：ContinuationAdequacy 的 viable 即以到达的配置为登记的 KeptFor（ContinuationCorrespondence.viable_iff_keptFor），方案两向互译（works_iff_keeps、keeps_iff_works），故 viable_iff_plan 由核心律与 Classical.choice 给出（viable_iff_plan_by_core），观察可列举时不用公理（viable_iff_plan_listed）。外围证明及其回执保持原范围。Becoming.Keeping 由核心运行审计（回执 20261015T150956.178111Z，公理报告为空）；外围实例模块 ContinuationCorrespondence 由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T151901.978501Z）：单一方案的对应与可列举的情形公理报告为空，Classical.choice 只在 classicalChoice 与 viable_iff_plan_by_core 中，共同方案的几条用 propext 与 Quot.sound。",
+      "en": "15 October 2026, integration I3c (Ren: “a lot proofs are probably not integrated”): stated on the spine (new core module Becoming.Keeping). A move is usable from a class of configurations where it is allowed and enabled at each of them (Usable), and what its step registers narrows the class (Seen, which is InquirySufficiency.After where registrations are listed). A class is kept for n steps where the guard holds throughout and some usable move leaves, whatever is registered, a class kept one step fewer (KeptFor). A plan whose later moves follow what was registered keeps the class for its length, with no premise (Plan.Keeps.keptFor); where registrations are listed every kept class has such a plan, with no premise (keptFor_iff_plan); for arbitrary registrations that is exactly choice over the registrations (plans_iff_choice, choice the named hypothesis ChoiceOver). A finer registration keeps what a coarser one keeps (KeptFor.finer); a certificate of Viability with a move usable throughout keeps every class within it for every horizon (Certificate.keptFor, Kernel.keptFor); registering a hidden bit can decide keeping (Matching.registration_matters). Periphery instance: ContinuationAdequacy’s viable is KeptFor with the configuration reached registered (ContinuationCorrespondence.viable_iff_keptFor), plans translate both ways (works_iff_keeps, keeps_iff_works), so viable_iff_plan follows from the core law with Classical.choice (viable_iff_plan_by_core), and with no axiom for listed observations (viable_iff_plan_listed). The periphery proofs and their receipts keep their scope. Becoming.Keeping is audited by the core run (receipt 20261015T150956.178111Z, empty axiom reports); the periphery instance module ContinuationCorrespondence is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T151901.978501Z): the single-plan correspondence and the listed case have empty axiom reports, Classical.choice occurs only in classicalChoice and viable_iff_plan_by_core, and the joint-plan declarations use propext and Quot.sound."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Keeping.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Keeping.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    }
+  ]
+}

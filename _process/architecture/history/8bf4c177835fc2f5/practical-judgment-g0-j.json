@@ -1,0 +1,656 @@
+{
+  "schema_version": 2,
+  "id": "practical-judgment-g0-j",
+  "title": {
+    "zh": "生生之意义与实践承诺下的一般实践判断",
+    "en": "Practical judgment under living significance and the practical commitments"
+  },
+  "kind": "argument",
+  "status": "reviewed-scoped",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-19T13:38:06+00:00",
+  "statement": {
+    "zh": "生生之意义加公开的实践承诺与实际对应，形成保留、转化、实际交接、有限结束及有界责任的一般候选。",
+    "en": "Living significance with the explicit practical commitments and actual correspondence supplies a general candidate for preservation, transformation, actual transfer, finite ending and bounded responsibility."
+  },
+  "hypotheses": [
+    {
+      "zh": "G0 的正面意义条件接口；按当前统一结构，它已折入意义，不另增一条公理。J1–J4 比较、基本条件优先、责任及正当选择承诺均公开而非由形式定义证明。",
+      "en": "The G0 positive-significance interface, folded into significance in the current unified structure rather than added as another axiom. J1–J4 commitments on comparison, basic protection priority, responsibility and legitimate choice remain explicit and are not warranted by formal definitions."
+    },
+    {
+      "zh": "实际分类、有效承担、可行范围与权限的对应 E。",
+      "en": "Correspondence E for actual classifications, valid undertakings, feasibility and authority."
+    }
+  ],
+  "correspondence": {
+    "zh": "角色在共同生活与依存形成中说明；因果、受益和能力不独自分配无限义务。支承对应具体化为实际需要时段、过渡中的接续、替代覆盖与共同可行；回程、焦点存续及终点相同各不足以独自认证共同修复。",
+    "en": "Roles arise through shared living and formed dependence; causation, benefit and capacity alone do not assign unlimited duty. Support correspondence is specified through actual need windows, continuation through transition, replacement coverage and joint feasibility; return, focal persistence and equal endpoints alone do not certify common repair."
+  },
+  "canonical_source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+  "aliases": [
+    "Practical judgment G0/J1–J4",
+    "Becoming.Judgment.better_iff_betterAt",
+    "Becoming.Judgment.frontier_exists",
+    "Becoming.exists_undominated",
+    "J1–J4 in the core",
+    "实践承诺在核心中",
+    "Becoming.FrontierFrames.Priority",
+    "Becoming.FrontierFrames.choice_exists_iff_weakly",
+    "Becoming.FrontierFrames.Priority.kept_required",
+    "Becoming.FrontierWorlds.sole_giver_required",
+    "Becoming.FrontierWorlds.Discharged.no_residual"
+  ],
+  "dependencies": [
+    {
+      "id": "becoming-return-grades",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "P95 复用该结果检验支承与修复的具体内容，不改变原证明范围。",
+        "en": "P95 reuses this result to test the content of support and repair without altering its proof scope."
+      },
+      "interface": {
+        "output": {
+          "zh": "最终回程与有界回程的区别及无统一回程界的见证。",
+          "en": "The distinction between eventual and bounded return and a witness with no uniform return bound."
+        },
+        "input": {
+          "zh": "及时恢复和过渡中支持的实际对应要求。",
+          "en": "Correspondence requirements for timely recovery and support through transition."
+        },
+        "conditions": {
+          "zh": "具体需要时段、储备和生活存续另需论证；不是跨模块组合定理。",
+          "en": "Actual need windows, reserves and living continuity require further warrant; this is not a cross-module composition theorem."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Restoration.lean"
+      }
+    },
+    {
+      "id": "substitution-preserves-consumption",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "P95 复用该结果检验支承与修复的具体内容，不改变原证明范围。",
+        "en": "P95 reuses this result to test the content of support and repair without altering its proof scope."
+      },
+      "interface": {
+        "output": {
+          "zh": "给定支持门控律下焦点替代后持续活跃、维持者永久失去支持。",
+          "en": "Focal persistence after substitution while the sustainer permanently loses support under the supplied support-gated law."
+        },
+        "input": {
+          "zh": "替代是否覆盖原来共同支持的生活，而非只覆盖焦点。",
+          "en": "Whether replacement covers living relations previously supported together, rather than only the focal formation."
+        },
+        "conditions": {
+          "zh": "保留正所需、阈值顺序、支持起点及持续超取前提；替代供给给定、代价未建模；无伦理排序。",
+          "en": "Retains positive needs, threshold order, supported start and persistent overdraw; alternative supply is given and its cost unmodelled, with no ethical ranking."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "universal-practical-warrant",
+      "detail": {
+        "zh": "无公理目标独立保留，不是本成果的未完成条件。",
+        "en": "The independent axiom-free target remains open and is not an unmet completion gate for this result."
+      }
+    },
+    {
+      "id": "protection-priority-excludes-uniform-aggregation",
+      "detail": {
+        "zh": "复用本结果的 Better 与 no_protection_trade_by_count，在一个构造情境中补上 J2 相对 C 的独立性、被排除的自然数评分类与一致的有界评分；本论证不变。",
+        "en": "Reuses this result's Better and no_protection_trade_by_count, adding, in one constructed situation, J2's independence from C, the excluded natural-number score class and an agreeing bounded score; this argument is unchanged."
+      }
+    },
+    {
+      "id": "becoming-spine-instances",
+      "detail": {
+        "zh": "脊柱以 BetterAt 在配置上陈述 J1/J2，按定义即 Better；Robust 即核心的 CommonResponse。",
+        "en": "The spine states J1/J2 on configurations as BetterAt, by definition Better; Robust is the core's CommonResponse."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+      "detail": {
+        "zh": "基本保护优先的强度是附加可修订承诺；交叉基本损失可不排序，不输出通用总效用。",
+        "en": "The strength of the priority of basic conditions is an additional revisable commitment; crossed basic losses may remain incomparable, with no universal utility score."
+      }
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "支承关系给出实践理由的具体对象，不独自决定优先强度。",
+      "en": "Support relations specify the object of a practical reason but do not independently determine its priority.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "需要时段、过渡、替代覆盖和真实损失仍须对应。",
+      "en": "Need windows, transition, replacement coverage and real losses still require correspondence.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "不给出完整的混合排序。",
+      "en": "It does not supply a complete mixed ranking.",
+      "kind": "scope"
+    }
+  ],
+  "standard_boundaries": [
+    "zero-axiom-target-open"
+  ],
+  "progress": [
+    {
+      "zh": "补上的桥接：首次有损比较、有限牺牲上限、四种回应、责任分配、共同义务、实际接替、冲突与不完全证据、忠实修订，各有原则及限定。",
+      "en": "Bridges closed: first mixed comparison, finite sacrifice limit, the four responses, responsibility, joint obligations, actual succession, conflict under imperfect evidence and faithful revision each receive principles with qualifications.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md#2-what-closes-the-previously-named-gaps"
+    },
+    {
+      "zh": "及时接续：回程等级、替代与实际交接给出按需要的支承、替代覆盖与有范围的比较理由；有利理由与基本保护优先分开。",
+      "en": "Timely continuation: return grades, substitution and actual handoff give need-relative support, replacement coverage and scoped comparison reasons; a favorable reason is kept distinct from the priority of basic conditions.",
+      "source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md#timely-continuation-and-support"
+    },
+    {
+      "en": "J1–J4 in the pure core: Becoming.Lexical states J1/J2 as the condition BasicPriority and Becoming.Frontier states J3/J4, every PracticalJudgment declaration with a core counterpart and an empty axiom report; FrontierFrames reads them on a frame, the options of a configuration being what one move reaches, and FrontierWorlds reads service across a handover in a world. The one classical step of PracticalJudgment (finite_frontier) is weak excluded middle, now a hypothesis calibrated on frames (choice_exists_iff_weakly).",
+      "zh": "J1–J4 在纯核心中：Becoming.Lexical 把 J1/J2 陈述为条件 BasicPriority，Becoming.Frontier 陈述 J3/J4，PracticalJudgment 的每项声明在核心中都有对应，公理报告为空；FrontierFrames 在框架上读它们（一个构形的选项是一步移动所达），FrontierWorlds 在世界中读跨交接的服务。PracticalJudgment 唯一的经典步骤（finite_frontier）是弱排中律，现为假设，并在框架上校准（choice_exists_iff_weakly）。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#196-theorems-apart-from-the-base-largest-groups-first-the-practical-commitments-in-the-core-u3-u4"
+    },
+    {
+      "en": "Assignment and discharge read in a world (U5): the joint plan at a step is the world's move, a relatum assigned the giving to a condition where it takes part and gives to it. Where a formation requires the condition at some step, someone gives at each such step and only one relatum does, its giving is required (sole_giver_required), and where only active formations give it is active there (sole_giver_active); an undertaking to give to what a formation requires is discharged where at every required step it is given or the formation no longer acts, and leaves no residual step (Discharged.no_residual).",
+      "zh": "在世界中读分派与了结（U5）：一步的联合计划即世界在该步的移动，某关系项参与并给予某条件，即被分派给予该条件。某构成在某步要求该条件、每个这样的步都有给予者且只有一个关系项给予时，它的给予是被要求的（sole_giver_required）；在只有活跃者给予之处，它在那里活跃（sole_giver_active）；给予某构成所求的担当，若在每个被要求之步都有给予、或该构成不再活跃，则了结，不留余欠之步（Discharged.no_residual）。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#208-general-laws-read-on-the-base-joint-plans-inspection-narrowing-and-the-histories-of-words-u5"
+    }
+  ],
+  "validation_scope": {
+    "en": "Independent completion review accepted the explicit-commitment scope; the 30 theorems of the original package concern its form, not normative warrant. Since 19 October 2026 (receipt 20261019T092027.048735Z) J1–J4 are stated in the pure core (Lexical, Frontier) and read on frames and worlds (FrontierFrames, 22 theorems; FrontierWorlds, 8 since U5), all with empty axiom reports; choice_exists_iff_weakly calibrates the choice at every step as weak excluded middle. Timely continuation is interpretive application. The commitments stay argued, not proved.",
+    "zh": "既有独立完成审查接受明确承诺的一般原则范围；原形式包的 30 项定理关乎形式，不是规范根据。2026年10月19日起（回执 20261019T092027.048735Z），J1–J4 在纯核心中陈述（Lexical、Frontier），并在框架与世界上读出（FrontierFrames 22 项定理，FrontierWorlds 8 项（U5 起）），公理报告皆空；choice_exists_iff_weakly 把每一步有被选者校准为弱排中律。及时接续部分是解释性应用。承诺仍是论证的，不是证明的。"
+  },
+  "references": [
+    {
+      "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+      "role": "statement",
+      "sha256": "69865ccbfde6d46344788d0b27a4baff2fdc92199e460d0e82ff3991674a68d4",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json",
+      "role": "receipt",
+      "sha256": "b9857bbfc496d0133a127a1a0799fd0bff35defd1bbba11dc902d806ab126174",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "role": "proof",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "declarations": [
+        "PracticalJudgment.better_trans",
+        "PracticalJudgment.transfer_requires_actual_successor",
+        "PracticalJudgment.competing_claims_incomparable"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md",
+      "role": "review",
+      "sha256": "544287842225a457a259c573e3667c3aba357a3ab8643a3f832e34039c85e74a",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "fe808ea852679ce01f8886961d3edf9838ee7c6982cc747c756af17a476d6d38",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md",
+      "role": "provenance",
+      "sha256": "2900e16d2a0b4e0a7778078dfc4649854d5a2637480afaace2bb11f96ede5f32"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "d6011b304fddfe6e6e92816dc6f469180e25891e2bff486c385dd4724b68fb41",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Restoration.lean",
+      "role": "counterexample",
+      "sha256": "15ca795c65405065276fa214f3a151c19f31fc9c8923e2e37e37554b17ee8aa7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
+      "role": "counterexample",
+      "sha256": "f4bb6eef0442eb713d5ea97a49d631589732923ee562764fc65b55dee52a92fe",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
+      "declarations": [
+        "Becoming.BetterAt",
+        "Becoming.robust_iff_commonResponse",
+        "Becoming.commonResponse_is_robust",
+        "Becoming.Judgment.frame",
+        "Becoming.Judgment.protecting",
+        "Becoming.Judgment.gaining",
+        "Becoming.Judgment.better_iff_betterAt",
+        "Becoming.Judgment.frontier_iff",
+        "Becoming.Judgment.frontier_iff_undominated",
+        "Becoming.Judgment.frontier_exists"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "role": "receipt",
+      "sha256": "51b9fd45bff2f533ee783f79a81518580a49255bfda8a38a5859129191b3846e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "role": "proof",
+      "sha256": "e7c3fd01f372115c0b598aad9aafc697c1974efc81aaef7000a588804ed232a7",
+      "declarations": [
+        "Becoming.WeaklyDecided",
+        "Becoming.Undominated",
+        "Becoming.exists_undominated",
+        "Becoming.exists_undominated_iff_weakly"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "role": "receipt",
+      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+      "role": "proof",
+      "sha256": "2b1cfc252a2099b5e7ae9da5dae21f20a5c7e1a2c73e8b31abe0c20378c1364b",
+      "declarations": [
+        "Becoming.Lexical.Above.trans",
+        "Becoming.Lexical.BasicPriority.trans",
+        "Becoming.Lexical.Crossed.incomparable",
+        "Becoming.Lexical.basicSide",
+        "Becoming.Lexical.gainSide"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+      "role": "proof",
+      "sha256": "bf3ecf28d3d7dd5b196ff64a69e1a8cfc7fcd329c7c35732aa77f650c6648525",
+      "declarations": [
+        "Becoming.Requirement.Served.successor",
+        "Becoming.Lexical.BasicPriority.frontier_iff",
+        "Becoming.Requirement.frontier_iff_undominated",
+        "Becoming.Requirement.frontier_exists",
+        "Becoming.Requirement.Frontier.excluded",
+        "Becoming.Requirement.Required.performed",
+        "Becoming.Requirement.Required.means"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "role": "proof",
+      "sha256": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
+      "declarations": [
+        "Becoming.commonResponse_judge_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean",
+      "role": "proof",
+      "sha256": "4489746718a276ff4c11dad22b815b702c543d5427f2b153cf6a14b7e70e36d0",
+      "declarations": [
+        "Becoming.FrontierFrames.Priority",
+        "Becoming.FrontierFrames.Options",
+        "Becoming.FrontierFrames.basicPriority_iff_priority",
+        "Becoming.FrontierFrames.Priority.anchor",
+        "Becoming.FrontierFrames.Priority.no_trade",
+        "Becoming.FrontierFrames.Priority.comparison",
+        "Becoming.FrontierFrames.Priority.choice_exists",
+        "Becoming.FrontierFrames.choice_exists_iff_weakly",
+        "Becoming.FrontierFrames.nothing_required",
+        "Becoming.FrontierFrames.Priority.kept_unrefuted",
+        "Becoming.FrontierFrames.Priority.kept_required",
+        "Becoming.Lexical.Frame.Above",
+        "Becoming.Lexical.tierFrame",
+        "Becoming.Lexical.above_iff_frame"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "role": "receipt",
+      "sha256": "de95f96fbdaf4033149b61c99999a701769bbff509915f6fd858b0f6ce24e0f2",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierWorlds.lean",
+      "role": "proof",
+      "sha256": "b115d5a1bbc9ed636f34cb82c5105dc69d53cbb16ea091fbadaeb58930201d40",
+      "declarations": [
+        "Becoming.FrontierWorlds.Served",
+        "Becoming.FrontierWorlds.Served.successor",
+        "Becoming.FrontierWorlds.served_of_handover",
+        "Becoming.FrontierWorlds.Served.not_of_gap",
+        "Becoming.FrontierWorlds.Gives",
+        "Becoming.FrontierWorlds.sole_giver_required",
+        "Becoming.FrontierWorlds.giver_active",
+        "Becoming.FrontierWorlds.sole_giver_active",
+        "Becoming.FrontierWorlds.Discharged",
+        "Becoming.FrontierWorlds.Residual",
+        "Becoming.FrontierWorlds.Discharged.no_residual",
+        "Becoming.FrontierWorlds.residual_of_unfulfilled"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json",
+      "role": "receipt",
+      "sha256": "b66b9f4f542992d9b2d6b9dbb2c42b7b0085f38c3b61ec79a4bb992650a96906",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json",
+      "sha256_pointer": "/source_sha256/PracticalJudgment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "sha256_pointer": "/source_sha256/PracticalJudgment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Decidedness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Lexical",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frontier",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Inquiry",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FrontierFrames",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierWorlds.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FrontierWorlds",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "检验已有 BC/LC/LR 对具体交叉基本损失的覆盖，并识别剩余的比较前提；复用一般责任与交接原则。",
+    "en": "Test existing BC/LC/LR coverage of concrete crossed basic losses and identify any remaining comparison premise, reusing the general responsibility and handoff principles."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "en": "2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.",
+      "zh": "2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。"
+    },
+    {
+      "zh": "2026-10-09：依 Ren 指示，证据行改为说明 Lean 检查承担什么，并引用 J2 排除均匀聚合的新结果；本论证与范围不变。",
+      "en": "2026-10-09: following Ren's direction, the evidence line states what the Lean checks contribute and cites the new result that J2 excludes uniform aggregation; this argument and its scope are unchanged."
+    },
+    {
+      "zh": "2026-10-09：依独立审查（GENERATIVE-DISCRIMINATION-REVIEW X7、P1）修正证据行：补上“在一个构造情境中”，并写明有界评分与 J2 一致。本论证与范围不变。",
+      "en": "2026-10-09: evidence line corrected after independent review (GENERATIVE-DISCRIMINATION-REVIEW X7, P1): it now says \"in one constructed situation\" and that a bounded score agrees with J2. This argument and its scope are unchanged."
+    },
+    {
+      "zh": "2026-10-13，P95：在原研究§85及章节§2.1补上及时接续与支承理由的应用及作者反审；复用回程、替代与实际交接证明，保留 G0 折叠后的条件接口与 J 的强度。不新增独立成果或数学证明。",
+      "en": "2026-10-13, P95: added application and author counterreview of timely continuation and support warrant in the existing study §85 and chapter §2.1; reuses return, substitution and actual handoff proofs, retaining the folded G0 interface and J strengths. No new independent result or mathematical proof."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句第一句与唯一反例逐字相同，由反例承担（反例保留，因交叉基本损失不排序有 competing_claims_incomparable 见证）；第二句拆为 2 项分类“未表明”；下一步中的“已补入”成为第二行“已接通”，“不重开一般责任或交接原则”改写为“复用”，“不视为已完成完整混合排序”成为第三项“未表明”，“整体零实质公理奠基”由通用边界 zero-axiom-target-open 承担；对应与证据中的轮次编号 P95 改为“支承对应”“及时接续部分”，内容不变。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence is verbatim the only counterexample, which carries it (kept, since crossed basic losses staying unranked is witnessed by competing_claims_incomparable); the second became 2 typed does-not-show items; in the next step, “is supplied” became the second progress line, “do not reopen general responsibility or handoff principles” became “reusing” them, “do not claim complete mixed ranking” the third does-not-show item, and “a whole zero-substantive-axiom foundation” is carried by the standard boundary zero-axiom-target-open; the round label P95 in the correspondence and evidence became “support correspondence” and “the timely-continuation part”, with the content unchanged. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Substitution.lean（新增依存改变下消耗保持的规律，既有陈述不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Substitution.lean (the law of consumption kept under changed dependence added; existing statements unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Return.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；Substitution.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Return.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); Substitution.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged)."
+    },
+    {
+      "zh": "2026-10-14，整合 I1：脊柱以 BetterAt 在配置上陈述 J1/J2，按定义即 PracticalJudgment.Better，并把 Robust 读作核心的 CommonResponse（robust_iff_commonResponse、commonResponse_is_robust），所以 better_trans 与稳健回应的定理按原样对配置成立。脊柱运行 20261014T100026.593496Z 将本模块作为继承模块编译；其中 better_trans 与 transfer_requires_actual_successor 公理报告为空，competing_claims_incomparable 用到 propext。J3–J4 与前沿结果未在脊柱上重述。",
+      "en": "14 October 2026, integration I1: the spine states J1/J2 on configurations as BetterAt, by definition PracticalJudgment.Better, and reads Robust as the core's CommonResponse (robust_iff_commonResponse, commonResponse_is_robust), so better_trans and the robust-response theorems hold of configurations as stated. The spine run 20261014T100026.593496Z compiles the module as inherited; there better_trans and transfer_requires_actual_successor have empty axiom reports, and competing_claims_incomparable uses propext. J3–J4 and the frontier results are not restated on the spine."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Bridge.lean（整合 I3a：七个外围族的实例节（RelationalGrounding、ProtectionPriorityRival、ChanceAdequacy、FallibleInspection、BecomingReversibility、DynamicConsequences、DerivedHistoryLaw）；原有陈述不变）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Bridge.lean (integration I3a: instance sections for seven periphery families (RelationalGrounding, ProtectionPriorityRival, ChanceAdequacy, FallibleInspection, BecomingReversibility, DynamicConsequences, DerivedHistoryLaw); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026-10-15，整合 I3e（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（桥接中的确切实例；只改引用、别名与历史）。每个保护优先的比较 PracticalJudgment.Better 都是其选项框架上的 BetterAt，前沿亦同（Judgment.better_iff_betterAt、Judgment.frontier_iff，I3d）。在确切列出的选项表上，前沿即核心的不被胜过者（Judgment.frontier_iff_undominated）；比较非自反、传递且弱判定时前沿非空（Judgment.frontier_exists，由 Becoming.exists_undominated），即 PracticalJudgment.finite_frontier 不用经典推理；在全部关系上，这恰需弱排中律（exists_undominated_iff_weakly）。论断、Ren 的话与 G0 的折叠不变：BetterAt 陈述 J1/J2，即核心之外的公开承诺，这里不用也不断言 G0；Robust 即核心的 CommonResponse（既有）；以需求为指标的覆盖（Covered）在脊柱上没有确切的对应，留在外围（同 I3d）。桥接与 Becoming.Decidedness 由核心运行编译与审计（回执 20261015T163210.426211Z），新增声明的公理报告为空；PracticalJudgment 作为继承模块随运行编译，其既有回执不变。已引用的源随本次整合改哈希：Bridge.lean（整合 I3e：判断的框架一节加 frontier_iff_undominated、frontier_exists、required_of_bettered；原有陈述不变）。",
+      "en": "15 October 2026, integration I3e (Ren: “a lot proofs are probably not integrated”): stated on the spine (exact instances in the bridge; only references, aliases and history change). Every protection-first comparison PracticalJudgment.Better is BetterAt on the frame of its options, with the same frontier (Judgment.better_iff_betterAt, Judgment.frontier_iff, I3d). On an exact listed menu the frontier is the core’s undominated members (Judgment.frontier_iff_undominated), and it is not empty where the comparison is irreflexive, transitive and weakly decided (Judgment.frontier_exists, by Becoming.exists_undominated): PracticalJudgment.finite_frontier with no classical reasoning; over all relations this needs exactly weak excluded middle (exists_undominated_iff_weakly). The claims, Ren’s words and the fold of G0 are unchanged: BetterAt states J1/J2, disclosed commitments outside the core, and G0 is neither used nor asserted here; Robust is the core’s CommonResponse (as before); demand-indexed coverage (Covered) has no exact counterpart on the spine and stays in the periphery (as in I3d). The bridge and Becoming.Decidedness are compiled and audited by the core run (receipt 20261015T163210.426211Z), the new declarations with empty axiom reports; PracticalJudgment compiles in the run as an inherited module, its earlier receipt unchanged. Sources already referenced take the hash of this integration: Bridge.lean (integration I3e: frontier_iff_undominated, frontier_exists and required_of_bettered added to the section on judged frames; earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Decidedness.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Decidedness.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Return.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Return.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ETHICAL-LEARNING-INTEGRATION.md, PRACTICAL-JUDGMENT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): PRACTICAL-JUDGMENT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): PRACTICAL-JUDGMENT.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Re-pointed after reading the change (Return.lean: the fold). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (4 in Becoming.Frontier; 1 in Becoming.Inquiry; 8 in Becoming.Lexical), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U4 (study section 196): J1–J4 recorded as stated in the pure core (Lexical, Frontier, since F3J) and read on frames and worlds (FrontierFrames, FrontierWorlds); the choice at a step calibrated as weak excluded middle; the validation scope restated to say so. The statement and the warrant of the commitments are unchanged.",
+      "zh": "2026年10月19日，U4（研究第 196 节）：记明 J1–J4 已在纯核心中陈述（Lexical、Frontier，自 F3J 起），并在框架与世界上读出（FrontierFrames、FrontierWorlds）；一步中的选择校准为弱排中律；验证范围据此重述。陈述与承诺的根据不变。"
+    },
+    {
+      "en": "19 October 2026, E1 (premises read off one exchange): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: E1 added study section 194). The claim is unchanged.",
+      "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3 (Becoming.HexagramLaws): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y3 added a study section). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3（Becoming.HexagramLaws）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section). The claim is unchanged.",
+      "zh": "2026年10月19日，SG（关节、交换之律与第三值）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U5 (study section 208): FrontierWorlds gains the assignment and discharge laws of Frontier read on the world's moves (sole giver required and active; discharge leaves no residual step); its proof reference and binding move to core receipt 20261019T133615.720595Z. The statement and the warrant of the commitments are unchanged.",
+      "zh": "2026年10月19日，U5（研究第 208 节）：FrontierWorlds 新增在世界移动上读出的 Frontier 分派与了结规律（唯一给予者被要求且活跃；了结不留余欠之步）；其证明引用与绑定移到核心回执 20261019T133615.720595Z。陈述与承诺的根据不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: Above, tierFrame, above_iff_frame from Lexical.lean to FrontierFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Decidedness.lean, Frontier.lean, FrontierFrames.lean, Lexical.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Decidedness.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Decidedness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Decidedness.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Decidedness.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Return.lean (now Restoration.lean). Re-pointed after reading the change: Restoration.lean, the module Return renamed Restoration; Web.Returns and Web.ReturnsWithin are Web.Restored and Web.RestoredWithin; statements unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Return.lean（现为 Restoration.lean）。读过改动后重新指向：Restoration.lean，模块 Return 改名为 Restoration；Web.Returns 与 Web.ReturnsWithin 现为 Web.Restored 与 Web.RestoredWithin；陈述不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Decidedness.lean, FrontierFrames.lean, Lexical.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Decidedness.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; FrontierFrames.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Lexical.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Decidedness.lean、FrontierFrames.lean、Lexical.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Decidedness.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；FrontierFrames.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Lexical.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: FrontierFrames.excluded (now Requirement.Frontier.excluded); FrontierFrames.means (now Requirement.Required.means); FrontierFrames.performed (now Requirement.Required.performed). Proof bindings (Decidedness.lean, Frontier.lean, FrontierFrames.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Decidedness.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Frontier.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; FrontierFrames.lean, takes as its final section AcceptanceFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：FrontierFrames.excluded（现为 Requirement.Frontier.excluded）；FrontierFrames.means（现为 Requirement.Required.means）；FrontierFrames.performed（现为 Requirement.Required.performed）。证明绑定（Decidedness.lean、Frontier.lean、FrontierFrames.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Decidedness.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Frontier.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；FrontierFrames.lean，以末节收入 AcceptanceFrames（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/da5e1ef2a899de9d/practical-judgment-g0-j.json",
+      "sha256": "da5e1ef2a899de9de8b4d9e988c3b5e9cf4aeec4e6f6091471a2187ad24c2ce2",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
+    }
+  ],
+  "overview": {
+    "title": {
+      "en": "General practical judgment with real losses and bounded responsibility",
+      "zh": "保留真实损失与有界责任的一般实践判断"
+    },
+    "summary": {
+      "en": "Living significance with the explicit practical commitments supports preservation, transformation, effective transfer and appropriate ending. The principles recognize generative gains, protect basic living conditions, retain actual losses, and differentiate responsibility through justified undertakings, dependence, authority and feasible response. They provide a partial ordering and bounded practical requirements; crossed basic losses may remain incomparable. The practical commitments are disclosed additional commitments, not consequences of living significance alone.",
+      "zh": "生生之意义加公开的实践承诺支持保留、转化、实际交接与适当结束。原则承认生成增益、保护基本生活条件、保留真实损失，并按正当承担、依存、权限与可行回应区分责任。它们提供偏序和有界实践要求；交叉基本损失可以不排序。这些实践承诺是明示的附加承诺，并非单由生生之意义推出。"
+    },
+    "evidence": {
+      "zh": "一般原则范围获独立验收。Lean 检查所述判断确由生生之意义、实践承诺与对应条件推出，包括交叉基本损失不排序之处。在一个构造的保护对增益情境中，另一项检查说明基本保护优先增加了什么：它满足无损比较，却从不以增益交换基本条件；每一个满足该比较的自然数评分都会交换，而一个有界评分与这一优先一致，所以有界敏感性对手仍然存在。这些实践承诺是经论证的承诺，不是 Lean 的结果。",
+      "en": "Independent acceptance of the general-principles scope. Lean checks that the stated verdicts follow from living significance, the practical commitments and correspondence, including where crossed basic losses stay unranked. In one constructed protection-versus-gains situation, a separate check shows what the priority of basic conditions adds: its ordering satisfies the no-loss comparison yet never trades a basic condition for gains, whereas every natural-number score satisfying that comparison does trade; a bounded score agrees with that priority, so bounded-sensitivity rivals remain. The practical commitments are argued commitments, not Lean results."
+    }
+  }
+}

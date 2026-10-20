@@ -122,23 +122,14 @@ Aliases: —
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: FallibleInquiry.lean. The claim is unchanged.
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean. The claim is unchanged.
 - 19 October 2026, O1: progress entry for the formal side of the demarcation comparison (record what-a-finite-stretch-verifies, study section 205). The target, its status and its next step are unchanged: the comparison on actual inquiries remains.
-- 19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): SCIENTIFIC-PHILOSOPHY.md re-pointed after reading the change (SCIENTIFIC-PHILOSOPHY.md: O1 added two sentences on the form of insulation after the demarcation paragraph's sentence on systematic insulation). The claim is unchanged.
-- 19 October 2026, RO (the Chinese sources on the spine): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RO added a study section). The claim is unchanged.
-- 19 October 2026, U5 (general laws read on the base): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U5 added study section 208). The claim is unchanged.
-- 19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.
-- 19 October 2026, Y5 (Becoming.HexagramSequences): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y5 added a study section). The claim is unchanged.
-- 19 October 2026, SC (a code formed between formations): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SC added a study section). The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
-- 20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added. The claim is unchanged.
-- 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.
-- 20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.
-- 20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.
-- 3 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](scientific-inquiry-foundation.json).
+- 3 rebinding entries (2026-10-14 to 2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](scientific-inquiry-foundation.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text
 
 - [scientific-inquiry-foundation.json](../../../../_process/architecture/history/2260456624cb381e/scientific-inquiry-foundation.json) (sha256 `2260456624cb381e…`): Exact record bytes before the migration (schema 1).
+- [scientific-inquiry-foundation.json](../../../../_process/architecture/history/67fa6090728d7ffc/scientific-inquiry-foundation.json) (sha256 `67fa6090728d7ffc…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

@@ -76,14 +76,14 @@ Aliases: —
 - 2026-10-08: directly reconstructed later target looking from original summaries and the inclusion log, preserving uncertainty, inclusion differences and a positive comparison; integrated with the existing study and full objective.
 - 2026-10-09: reviewed study sections 21–23. Acquired source relations now generate binding alternatives for old naming records through an additional route. Original claims, proofs, empirical results and failures remain; a historical-applicability counterexample sharpens the next connection.
 - 2026-10-09: reviewed the same study’s historical-applicability composition and counterreview. This result’s prior claim, sources and scientific checks remain unchanged; the continuation now targets empirical identification of source–time retention and persistence assumptions.
-- 2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes.
 - 2026-10-14 readability migration to schema 2: the claim's numerical result and its “constrains” clause became the statement, and “establishes neither a retention advantage nor equivalence” the first does-not-show item; the first limitations sentence became 2 more typed items, and the second (75-person primary analysis kept apart from the 77-person sensitivity; intervals without a sequential-design guarantee) repeats hypotheses 1 and 2, which carry it; the connections described in the four history entries above each became one anchored progress line, and the next step's third sentence moved to the fourth. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/encounter-control-and-retention.md); the exact earlier record is text_versions[0].
-- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](encounter-control-and-retention.json).
+- 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](encounter-control-and-retention.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text
 
 - [encounter-control-and-retention.json](../../../../_process/architecture/history/b2563eeef5041aa3/encounter-control-and-retention.json) (sha256 `b2563eeef5041aa3…`): Exact record bytes before the readability migration (schema 1).
+- [encounter-control-and-retention.json](../../../../_process/architecture/history/3ddd8617c0306e43/encounter-control-and-retention.json) (sha256 `3ddd8617c0306e43…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

@@ -506,46 +506,8 @@
       "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence is verbatim the only counterexample, which carries it (kept, since crossed basic losses staying unranked is witnessed by competing_claims_incomparable); the second became 2 typed does-not-show items; in the next step, “is supplied” became the second progress line, “do not reopen general responsibility or handoff principles” became “reusing” them, “do not claim complete mixed ranking” the third does-not-show item, and “a whole zero-substantive-axiom foundation” is carried by the standard boundary zero-axiom-target-open; the round label P95 in the correspondence and evidence became “support correspondence” and “the timely-continuation part”, with the content unchanged. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md); the exact earlier record is text_versions[0]."
     },
     {
-      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Substitution.lean（新增依存改变下消耗保持的规律，既有陈述不变）。",
-      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Substitution.lean (the law of consumption kept under changed dependence added; existing statements unchanged)."
-    },
-    {
-      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Return.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；Substitution.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）。",
-      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Return.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); Substitution.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged)."
-    },
-    {
       "zh": "2026-10-14，整合 I1：脊柱以 BetterAt 在配置上陈述 J1/J2，按定义即 PracticalJudgment.Better，并把 Robust 读作核心的 CommonResponse（robust_iff_commonResponse、commonResponse_is_robust），所以 better_trans 与稳健回应的定理按原样对配置成立。脊柱运行 20261014T100026.593496Z 将本模块作为继承模块编译；其中 better_trans 与 transfer_requires_actual_successor 公理报告为空，competing_claims_incomparable 用到 propext。J3–J4 与前沿结果未在脊柱上重述。",
       "en": "14 October 2026, integration I1: the spine states J1/J2 on configurations as BetterAt, by definition PracticalJudgment.Better, and reads Robust as the core's CommonResponse (robust_iff_commonResponse, commonResponse_is_robust), so better_trans and the robust-response theorems hold of configurations as stated. The spine run 20261014T100026.593496Z compiles the module as inherited; there better_trans and transfer_requires_actual_successor have empty axiom reports, and competing_claims_incomparable uses propext. J3–J4 and the frontier results are not restated on the spine."
-    },
-    {
-      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Bridge.lean（整合 I3a：七个外围族的实例节（RelationalGrounding、ProtectionPriorityRival、ChanceAdequacy、FallibleInspection、BecomingReversibility、DynamicConsequences、DerivedHistoryLaw）；原有陈述不变）。",
-      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Bridge.lean (integration I3a: instance sections for seven periphery families (RelationalGrounding, ProtectionPriorityRival, ChanceAdequacy, FallibleInspection, BecomingReversibility, DynamicConsequences, DerivedHistoryLaw); earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
-      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
-    },
-    {
-      "zh": "2026-10-15，整合 I3e（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（桥接中的确切实例；只改引用、别名与历史）。每个保护优先的比较 PracticalJudgment.Better 都是其选项框架上的 BetterAt，前沿亦同（Judgment.better_iff_betterAt、Judgment.frontier_iff，I3d）。在确切列出的选项表上，前沿即核心的不被胜过者（Judgment.frontier_iff_undominated）；比较非自反、传递且弱判定时前沿非空（Judgment.frontier_exists，由 Becoming.exists_undominated），即 PracticalJudgment.finite_frontier 不用经典推理；在全部关系上，这恰需弱排中律（exists_undominated_iff_weakly）。论断、Ren 的话与 G0 的折叠不变：BetterAt 陈述 J1/J2，即核心之外的公开承诺，这里不用也不断言 G0；Robust 即核心的 CommonResponse（既有）；以需求为指标的覆盖（Covered）在脊柱上没有确切的对应，留在外围（同 I3d）。桥接与 Becoming.Decidedness 由核心运行编译与审计（回执 20261015T163210.426211Z），新增声明的公理报告为空；PracticalJudgment 作为继承模块随运行编译，其既有回执不变。已引用的源随本次整合改哈希：Bridge.lean（整合 I3e：判断的框架一节加 frontier_iff_undominated、frontier_exists、required_of_bettered；原有陈述不变）。",
-      "en": "15 October 2026, integration I3e (Ren: “a lot proofs are probably not integrated”): stated on the spine (exact instances in the bridge; only references, aliases and history change). Every protection-first comparison PracticalJudgment.Better is BetterAt on the frame of its options, with the same frontier (Judgment.better_iff_betterAt, Judgment.frontier_iff, I3d). On an exact listed menu the frontier is the core’s undominated members (Judgment.frontier_iff_undominated), and it is not empty where the comparison is irreflexive, transitive and weakly decided (Judgment.frontier_exists, by Becoming.exists_undominated): PracticalJudgment.finite_frontier with no classical reasoning; over all relations this needs exactly weak excluded middle (exists_undominated_iff_weakly). The claims, Ren’s words and the fold of G0 are unchanged: BetterAt states J1/J2, disclosed commitments outside the core, and G0 is neither used nor asserted here; Robust is the core’s CommonResponse (as before); demand-indexed coverage (Covered) has no exact counterpart on the spine and stays in the periphery (as in I3d). The bridge and Becoming.Decidedness are compiled and audited by the core run (receipt 20261015T163210.426211Z), the new declarations with empty axiom reports; PracticalJudgment compiles in the run as an inherited module, its earlier receipt unchanged. Sources already referenced take the hash of this integration: Bridge.lean (integration I3e: frontier_iff_undominated, frontier_exists and required_of_bettered added to the section on judged frames; earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Decidedness.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
-      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Decidedness.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
-    },
-    {
-      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Return.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
-      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Return.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ETHICAL-LEARNING-INTEGRATION.md, PRACTICAL-JUDGMENT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): PRACTICAL-JUDGMENT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     },
     {
       "en": "17 October 2026, wording: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
@@ -554,55 +516,12 @@
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): PRACTICAL-JUDGMENT.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     },
     {
-      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
-      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Re-pointed after reading the change (Return.lean: the fold). The claim is unchanged.",
-      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
       "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (4 in Becoming.Frontier; 1 in Becoming.Inquiry; 8 in Becoming.Lexical), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
       "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
     },
     {
-      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
-      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
-    },
-    {
       "en": "19 October 2026, U4 (study section 196): J1–J4 recorded as stated in the pure core (Lexical, Frontier, since F3J) and read on frames and worlds (FrontierFrames, FrontierWorlds); the choice at a step calibrated as weak excluded middle; the validation scope restated to say so. The statement and the warrant of the commitments are unchanged.",
       "zh": "2026年10月19日，U4（研究第 196 节）：记明 J1–J4 已在纯核心中陈述（Lexical、Frontier，自 F3J 起），并在框架与世界上读出（FrontierFrames、FrontierWorlds）；一步中的选择校准为弱排中律；验证范围据此重述。陈述与承诺的根据不变。"
-    },
-    {
-      "en": "19 October 2026, E1 (premises read off one exchange): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: E1 added study section 194). The claim is unchanged.",
-      "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, Y3 (Becoming.HexagramLaws): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y3 added a study section). The claim is unchanged.",
-      "zh": "2026年10月19日，Y3（Becoming.HexagramLaws）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section). The claim is unchanged.",
-      "zh": "2026年10月19日，SG（关节、交换之律与第三值）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198). The claim is unchanged.",
-      "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
-      "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
-    },
-    {
-      "en": "19 October 2026, U5 (study section 208): FrontierWorlds gains the assignment and discharge laws of Frontier read on the world's moves (sole giver required and active; discharge leaves no residual step); its proof reference and binding move to core receipt 20261019T133615.720595Z. The statement and the warrant of the commitments are unchanged.",
-      "zh": "2026年10月19日，U5（研究第 208 节）：FrontierWorlds 新增在世界移动上读出的 Frontier 分派与了结规律（唯一给予者被要求且活跃；了结不留余欠之步）；其证明引用与绑定移到核心回执 20261019T133615.720595Z。陈述与承诺的根据不变。"
-    },
-    {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: Above, tierFrame, above_iff_frame from Lexical.lean to FrontierFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Decidedness.lean, Frontier.lean, FrontierFrames.lean, Lexical.lean). The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
     },
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Decidedness.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Decidedness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
@@ -613,20 +532,12 @@
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Return.lean（现为 Restoration.lean）。读过改动后重新指向：Restoration.lean，模块 Return 改名为 Restoration；Web.Returns 与 Web.ReturnsWithin 现为 Web.Restored 与 Web.RestoredWithin；陈述不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Decidedness.lean, FrontierFrames.lean, Lexical.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Decidedness.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; FrontierFrames.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Lexical.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Decidedness.lean、FrontierFrames.lean、Lexical.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Decidedness.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；FrontierFrames.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Lexical.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
-    },
-    {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: FrontierFrames.excluded (now Requirement.Frontier.excluded); FrontierFrames.means (now Requirement.Required.means); FrontierFrames.performed (now Requirement.Required.performed). Proof bindings (Decidedness.lean, Frontier.lean, FrontierFrames.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Decidedness.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Frontier.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; FrontierFrames.lean, takes as its final section AcceptanceFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：FrontierFrames.excluded（现为 Requirement.Frontier.excluded）；FrontierFrames.means（现为 Requirement.Required.means）；FrontierFrames.performed（现为 Requirement.Required.performed）。证明绑定（Decidedness.lean、Frontier.lean、FrontierFrames.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Decidedness.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Frontier.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；FrontierFrames.lean，以末节收入 AcceptanceFrames（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
     },
     {
-      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+      "en": "2026-10-20: 24 bookkeeping notes condensed from 14 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/8bf4c177835fc2f5/practical-judgment-g0-j.json and in git.",
+      "zh": "2026-10-20：24 条记账性说明合并（14 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/8bf4c177835fc2f5/practical-judgment-g0-j.json 和 git 中。"
     }
   ],
   "text_versions": [
@@ -636,6 +547,14 @@
       "note": {
         "zh": "可读性迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the readability migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/8bf4c177835fc2f5/practical-judgment-g0-j.json",
+      "sha256": "8bf4c177835fc2f5b6501b93e88847db4d7516ddc9c21179280665738d523f27",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
   ],

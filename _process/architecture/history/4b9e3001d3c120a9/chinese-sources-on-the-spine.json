@@ -1,0 +1,252 @@
+{
+  "schema_version": 2,
+  "id": "chinese-sources-on-the-spine",
+  "title": {
+    "en": "The Chinese sources on the spine",
+    "zh": "中国思想诸传统在脊柱上"
+  },
+  "kind": "assessment",
+  "status": "reviewed-scoped",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T13:17:43+00:00",
+  "statement": {
+    "en": "248 passages of nine parts of Chinese thought, quoted verbatim, are tied to the spine as agreement, exact scope or divergence. The relational start holds across the lines; their universal forms mostly need a scope; four non-relational overlays recur, each answered inside its tradition.",
+    "zh": "中国思想九个部分的 248 段文字，从所存文本逐字引出，逐段以相合、定域或相分对应到脊柱。关系性的起点贯穿诸线；其全称形式大多需要定域；四种非关系之层反复出现，各在本传统内部得到回应。"
+  },
+  "hypotheses": [
+    {
+      "en": "No Lean and no premise is added: each passage is tied to audited declarations and records as they stand; its kind and reading are the AI's (D54). A passage counts as relational when it reads the relation first and lets the terms differentiate within it, not from a prior ground, a nature or value fixed before relations, a will or single centre, or a contest or rank: a method requirement, not a proof of the ontology.",
+      "zh": "不新增 Lean，不加前提：每段对应到现有的已审计声明与记录，其关系类别与读法是 AI 的（D54）。“关系的”以方法的要求检验：先读关系，让诸项在其中分化；其反面是先在的根据、先于关系而定的性或价值、意志或单一中心、争胜与等级。这是方法的要求，不是本体论的证明。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That any passage is true as stated, or that its authors meant these laws; agreement means the spine has a law of that structure, often under conditions the reading names.",
+      "zh": "任何一段如所说那样为真，或其作者意谓这些律；相合是说脊柱上有结构相同之律，常在读法写明的条件下。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "That one relational ontology is the doctrine of every line or the consensus of the commentaries; it is a dominant thread and a position within each tradition.",
+      "zh": "一种关系本体是每一家的学说或注疏传统的共识；它是一条主导的线索，也是每一传统内部的一个立场。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "That the graphs encode a relational ontology: the script is relational as a system of readings, while most graphs pair a category and a sound. That 武 means 止戈 by origin: the paleographic reading is kept beside the speech's.",
+      "zh": "文字的字形编码了一种关系本体：文字作为读法系统是关系的，而多数字形是类与声的配对。武的本义是止戈：字形史之读与楚庄王之语分开保留。",
+      "kind": "scope"
+    },
+    {
+      "en": "That a divergence of status (a text asserting what the theory gives only under the continuation condition) shows the text wrong; the theory asserts no ethical axiom.",
+      "zh": "地位的相分（原文断言理论只在延续条件之下给出者）说明原文错了；理论不断言伦理公理。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation",
+    "nondual-method-not-proof"
+  ],
+  "validation_scope": {
+    "en": "verify_ro.py passes: 248 passages (95 agreements, 94 exact scopes, 59 divergences), every fragment verbatim in its preserved text (93 files bound by SHA-256), 601 declarations in the current receipt, 121 records, the atlas ids in an excerpt rebuilt from the two archives, and the chapter's tables. Five mappers drafted; the integrator checked every quotation, declaration and record and read every reading, correcting six (study section 207). Not independently reviewed; no collation with a printed edition.",
+    "zh": "verify_ro.py 通过：248 段（相合 95、定域 94、相分 59），每段原文逐字见于所存文本（93 个文件以 SHA-256 绑定），601 个声明在现行回执中，121 份记录，图谱编号在由两个存档重建的摘录中，以及章节之表。五个映射者起草；整合者核对每条引文、声明与记录，通读每条读法，改正六处（研究第 207 节）。未经独立审查；未与刻本对校。"
+  },
+  "next_delta": {
+    "en": "Three gaps, each to be claimed before it is written: a graded order by closure level; division across several conditions; tolerance compared across laws.",
+    "zh": "三项缺口，各先认领再写：以闭包层级分等的次序；跨多个条件的分；跨律比较容忍。"
+  },
+  "correspondence": {
+    "en": "Ren, 19 October 2026, after sharing the 易道体系图 v1.3.0: “整个中国思想的源头，道家，易经，以及整个文字符号系统，包括武（止戈 ），和一些其他的理论体系中，例如儒家，也延续了这一套“relational ontology”，因此，我希望你好好阅读，把两者之间的关系map出来，可以用sub agents，然后再体系性的整合进我们的理论” (provenance, not warrant). The chapter maps 248 passages of the 易传 beyond Y1–Y4, the 老子 with three commentaries and the excavated witnesses, the 儒家 line, the script with 止戈, 庄子 and 玄学, 墨辩 and 名家, 兵家, 法家, 管子 and 纵横, the Buddhist lines received in China, and others. Reading (the AI's, D54): the thesis holds for what the lines start from and observe, its universal forms mostly need a scope, and four non-relational overlays recur, each answered inside its tradition.",
+    "zh": "Ren，2026年10月19日，分享易道体系图 v1.3.0 之后说：“整个中国思想的源头，道家，易经，以及整个文字符号系统，包括武（止戈 ），和一些其他的理论体系中，例如儒家，也延续了这一套“relational ontology”，因此，我希望你好好阅读，把两者之间的关系map出来，可以用sub agents，然后再体系性的整合进我们的理论”（来历，不是根据）。章节对应 248 段：易传（Y1–Y4 之外）、老子及三家注与出土诸本、儒家、文字与止戈、庄子与玄学、墨辩与名家、兵家、法家、管子与纵横、汉传佛教及其他。读法（AI 的，D54）：论题在诸线的起点与观察上成立，其全称形式大多需要定域，四种非关系之层反复出现，各在本传统内部得到回应。"
+  },
+  "canonical_source": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+  "aliases": [
+    "the Chinese sources on the spine",
+    "中国思想诸传统在脊柱上",
+    "relational ontology of Chinese thought",
+    "中国思想的关系本体",
+    "止戈为武",
+    "止戈為武"
+  ],
+  "dependencies": [
+    {
+      "id": "hexagrams-on-the-spine",
+      "relation": "interpretive",
+      "detail": {
+        "en": "Extends the 易传 passage map beyond Y1–Y4 with the same three kinds and its own checked map.",
+        "zh": "以同样的三种关系与另一份已检查的对应，把易传的逐句对应扩展到 Y1–Y4 之外。"
+      }
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "relation": "interpretive",
+      "detail": {
+        "en": "What \"relational\" means in the test: a configuration is how it relates.",
+        "zh": "检验中“关系的”之义：一个构形就是它怎样相关。"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "relative-position-is-zero-sum",
+      "detail": {
+        "en": "Cited by passages of the map.",
+        "zh": "为对应中的段落所引。"
+      }
+    },
+    {
+      "id": "place-relations-in-context",
+      "detail": {
+        "en": "Cited by passages of the map.",
+        "zh": "为对应中的段落所引。"
+      }
+    },
+    {
+      "id": "hexagram-arrangements-and-laws",
+      "detail": {
+        "en": "Closes the seventh gap, the supplements of the hexagram world (Y5).",
+        "zh": "补上第七项缺口，卦的世界的补充（Y5）。"
+      }
+    },
+    {
+      "id": "a-code-formed-between-formations",
+      "detail": {
+        "en": "Closes the second gap (a code formed between formations); the passages 同则同之, 名无固宜, the 說文's 止戈 gloss and 书同文 are re-pointed to its laws.",
+        "zh": "补上第二项缺口（在形成之间形成的编码）；同则同之、名无固宜、说文止戈之释与书同文四段改指向其律。"
+      }
+    },
+    {
+      "id": "capture-through-the-rule",
+      "detail": {
+        "en": "Closes the third gap (capture through the rule); the passages 二柄, 据有余而制不足 and 壹 are re-pointed to its laws.",
+        "zh": "补上第三项缺口（经由规则的捕获）；二柄、据有余而制不足与壹三段改指向其律。"
+      }
+    },
+    {
+      "id": "two-sided-regulation-and-late-reading",
+      "detail": {
+        "en": "Closes the first gap (two-sided regulation of a level and its late-reading form); the passages 天之道 (老子 77), 冲气以为和, 宽猛相济 and 中和 are re-pointed to its laws.",
+        "zh": "补上第一项缺口（水平的双向调节及迟到读法之形）；天之道（老子七十七章）、冲气以为和、宽猛相济与中和四段改指向其律。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+      "role": "statement",
+      "sha256": "ad174d979201d400b9cf42a39d7ea0297172931bb4445d6d60c2a5728bfc55e8"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
+      "role": "integration",
+      "sha256": "8d83044cfd7c728aaa21e10b1fa6cf9a113ce31ca0299279c9ec89ba25eb8c5b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/verify_ro.py",
+      "role": "integration",
+      "sha256": "e5348b6e9515f059da8803af9b9e60a9572a559fb08b5c7e0dda96a4f8d892ff"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/atlas-excerpt.json",
+      "role": "integration",
+      "sha256": "4c50cf22fa255509fa143252735f72379b5eee09e724ca542800c262b19f6c53"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "review",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "52a7fa74fcdebd31a63c877dbdc5e7e4de59cfb5fc400737f61fdc55f61c46ca"
+    },
+    {
+      "path": "sources/chinese-classical-texts/PROVENANCE.json",
+      "role": "provenance",
+      "sha256": "50cc94400b6196e0ee43711cb0f07261e358032a263b1f49dfe977ce7f06b2ed"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-relational-ontology-of-chinese-thought.md",
+      "role": "provenance",
+      "sha256": "4ad31a13fd995838921df5bf591b04c5acead5c21f0c417abb779fdd6d9d631c"
+    }
+  ],
+  "proof_bindings": [],
+  "progress": [
+    {
+      "en": "What the map found, the six corrections and the seven gaps.",
+      "zh": "对应所得、六处改正与七项缺口。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#207-the-chinese-sources-on-the-spine-ro"
+    },
+    {
+      "en": "The first gap closed: a level held from both sides settles exactly where it does not overshoot, and read late it needs a band growing with the lateness (two-sided-regulation-and-late-reading).",
+      "zh": "第一项缺口补上：两侧保持的水平恰在不越过处定下，迟读时所需之带随迟而增（two-sided-regulation-and-late-reading）。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#214-a-level-held-from-both-sides-and-a-level-read-late-rg"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (RO), on Ren's request to map and integrate the relational ontology of Chinese thought; study section 207; readings D54.",
+      "zh": "2026年10月19日：新增（RO），按 Ren 关于对应并整合中国思想之关系本体的要求；研究第 207 节；读法 D54。"
+    },
+    {
+      "en": "19 October 2026, U5 (general laws read on the base): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U5 added study section 208; THE-THEORY-OF-BECOMING.md: U5 added the world reading of J3 to premise card F and section 6, a sentence each on the word half of histories (section 2), narrowing on the pure observation and evidence under fallible witnesses (section 3), a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U5（在基上读出的一般规律）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.",
+      "zh": "2026年10月19日，U5 后续（段落图）：读过改动后重新指向（BECOMING-RENEWAL-READING.md：研究第 208 节关于 Y1 段落图的一段改为已加入）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y5: the seventh gap of the chapter's section 8 (the supplements of the hexagram world) is closed by the record hexagram-arrangements-and-laws (study section 209, decision D55); nine passages cite it, and the chapter's claim, quoted from the 易传 chapter, that the order is the orbit of no law is corrected; CHINESE-SOURCES-AND-BECOMING.md, passages.json, THE-THEORY-OF-BECOMING.md re-pointed after reading the change. The claim is unchanged.",
+      "zh": "2026年10月19日，Y5：章第 8 节第七项缺口（卦的世界的补充）由记录 hexagram-arrangements-and-laws 补上（研究第 209 节，决定 D55）；九段引之，章中引自易传章的“卦序不是任何律的轨道”之说已更正；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、passages.json、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SC (a code formed between formations): the second gap closed by Becoming.SharedCodes (a-code-formed-between-formations); four passages re-pointed to its laws (declarations, the record, the sentence of each reading that named the gap) and the gap marked closed in the map and in chapter sections 5.4, 8 and 11; the next step lists the five gaps still open; the counts verify_ro.py reports brought to 578 declarations and 119 records; CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.",
+      "zh": "2026年10月19日，SC（在形成之间形成的编码）：第二项缺口由 Becoming.SharedCodes（a-code-formed-between-formations）补上；四段改指向其律（声明、记录、各读法中指称缺口的那一句），缺口在对应表与章节第 5.4、8、11 节标为已补上；下一步只列尚未补上的五项缺口；verify_ro.py 所报计数更新为 578 个声明、119 份记录；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、THE-THEORY-OF-BECOMING.md、passages.json 重新指向。评估其余不变。"
+    },
+    {
+      "en": "19 October 2026 (RH): the four earlier Chinese chapters were handled passage by passage; each 6–7 October text moved byte for byte to theories/becoming/history/ (move batch RH-chinese-chapters), and the live chapter at its path keeps what this map and the spine do not carry; chapter §9 and §11 say so, and this step left the next delta. CHINESE-SOURCES-AND-BECOMING.md re-pointed after reading: since the reviewed hash only §9 and §11 changed, by this step. The claim is unchanged.",
+      "zh": "2026年10月19日（RH）：四个较早的中国章节按段处理；各章 10月6日至7日的原文逐字节移入 theories/becoming/history/（移动批次 RH-chinese-chapters），同一路径上的现行章留下本映射与脊柱没有承载的部分；本章 §9 与 §11 已据此改写，这一步从下一步中删去。CHINESE-SOURCES-AND-BECOMING.md 读过改动后重新指向：自所审哈希以来只有 §9 与 §11 改动，即这一步。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RO's map guard: verify_ro.py re-pointed after reading the change (it also runs build_passages.py --check where the archives are present, so passages.json is checked to be the build of the mappers' entries and FIXES, and an edit made in place fails). The claim is unchanged.",
+      "zh": "2026年10月19日，RO 对应表的检查：读过改动后，verify_ro.py 重新指向（在存档在场时它也运行 build_passages.py --check，检查 passages.json 就是由映射者条目与 FIXES 构建的结果，就地改动不再通过）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RC (capture through the rule): the third gap closed by Becoming.RuleCapture (capture-through-the-rule); three passages re-pointed to its laws (declarations, the record, a sentence of each reading) through the build's FIXES and 二柄's gap marked closed, and the gap marked closed in chapter sections 5.7, 8 and 11; the next step lists the four gaps still open; the counts verify_ro.py reports brought to 584 declarations and 120 records; CHINESE-SOURCES-AND-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.",
+      "zh": "2026年10月19日，RC（经由规则的捕获）：第三项缺口由 Becoming.RuleCapture（capture-through-the-rule）补上；三段经构建的 FIXES 改指向其律（声明、记录、各读法中的一句），二柄的缺口标为已补上，章节第 5.7、8、11 节亦然；下一步只列尚未补上的四项缺口；verify_ro.py 所报计数更新为 584 个声明、120 份记录；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、passages.json 重新指向。评估其余不变。"
+    },
+    {
+      "en": "19 October 2026, RG (two-sided regulation and late reading): the first gap closed by Becoming.Regulation (two-sided-regulation-and-late-reading); four passages re-pointed to its laws (declarations, the record, the sentences of each reading that named the gap; 中和 gains a reading of 中节) and the gap marked closed in the map and in chapter sections 8 and 11, two points of the 宽猛 gap left open; the next step lists the 3 gaps still open; the counts verify_ro.py reports brought to 601 declarations and 121 records; CHINESE-SOURCES-AND-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.",
+      "zh": "2026年10月19日，RG（双向调节与迟读）：第一项缺口由 Becoming.Regulation（two-sided-regulation-and-late-reading）补上；四段改指向其律（声明、记录、各读法中指称缺口的句子；中和增一条中节之读），缺口在对应表与章节第 8、11 节标为已补上，宽猛条缺口中的两点仍开放；下一步只列尚未补上的 3 项缺口；verify_ro.py 所报计数更新为 601 个声明、121 份记录；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、passages.json 重新指向。评估其余不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): CHINESE-SOURCES-AND-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: CHINESE-SOURCES-AND-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：CHINESE-SOURCES-AND-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：CHINESE-SOURCES-AND-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: passages.json, rebuilt: the declarations and the names in the readings follow the R30 table, each so corrected passage marked; CHINESE-SOURCES-AND-BECOMING.md, names follow the R30 rename table; the passage tables are the rebuilt map. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：passages.json，重建：声明与读法中的名称随 R30 改名表，每个如此更正的段落有标注；CHINESE-SOURCES-AND-BECOMING.md，名称随 R30 改名表；逐句对应表为重建之图。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+    }
+  ]
+}

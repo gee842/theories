@@ -1,0 +1,736 @@
+{
+  "schema_version": 2,
+  "id": "finite-aggregation-within-restorable-basic-losses",
+  "title": {
+    "zh": "同类可恢复基本损失中的有限合并回应",
+    "en": "Finite responsiveness to aggregation within same-kind recoverable basic losses"
+  },
+  "kind": "argument",
+  "status": "reviewed-scoped",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-14T03:10:21.287278+00:00",
+  "statement": {
+    "en": "FR proposes: among independently specified same-kind recoverable basic losses, where support, burdens and history persist with scale, a finite scale of joint lesser protection should acquire sufficient grounds for choice over a fixed graver loss; strict loss matching laws give its formal content.",
+    "zh": "FR 提议：在独立说明的同类可恢复基本损失中，若支持、负担与历史条件在规模扩展中保持，某个有限的较轻共同保护规模应能取得胜过固定较重损失的充分选择根据；严格损失匹配的规律给出其形式内容。"
+  },
+  "claim": {
+    "en": "Strict loss matching obeys the laws below on every frame (Becoming.LossMatching). On these laws FR proposes that, within an independently specified family of same-kind recoverable basic losses, a fixed graver loss should not retain sufficient priority over arbitrarily many fixed lesser basic protections solely through its gravity difference. Where support, burdens and historical conditions persist under scale expansion, some finite scale of joint protection should acquire sufficient grounds for choice. This is an additional normative candidate beyond LR’s neighborhood, with affirmative defense and author counterreview, not a consequence of existing axioms; the laws state its exact formal content, not its warrant. One repair process is an instance (laws 7–9).",
+    "zh": "严格损失匹配对每个框架服从下列规律（Becoming.LossMatching）。在这些规律之上，FR 提议：在独立说明的同类可恢复基本损失比较族中，固定的较重损失不应仅凭程度差异对任意多项固定的较轻基本保护始终保有充分优先；若支持、负担与历史条件可在规模扩展中保持，则某个有限共同保护规模应能取得充分选择根据。这是超出 LR 近邻的新增规范候选，附正面辩护与作者反审，不是已有公理的推论；规律陈述的是它的确切形式内容，不是它的根据。同一修复过程是实例（规律 7–9）。"
+  },
+  "laws": [
+    {
+      "en": "A generative extension is a strict loss match by identity, so a commitment making strict matching sufficient for strict priority contains comparison principle C, and not conversely: in the repair instance the match of A against B₁ is no extension.",
+      "zh": "生成扩展经恒等就是严格损失匹配，所以使严格匹配足以给出严格优先的承诺包含比较原则 C；反之不然：修复实例中 A 对 B₁ 的匹配不是扩展。",
+      "declarations": [
+        "Becoming.Frame.StrictLossMatch",
+        "Becoming.Frame.strictLossMatch_of_extension",
+        "Becoming.Frame.SufficientMatching",
+        "Becoming.Frame.SufficientMatching.comparison",
+        "Becoming.RepairComparison.a_b1_not_extension",
+        "Becoming.MatchedCourses.a_b1_not_extension"
+      ]
+    },
+    {
+      "en": "The commitment is consistent only where matching is asymmetric; with infinitely many losses a configuration can strictly match itself, so finiteness is needed.",
+      "zh": "该承诺只在匹配不对称时相容；损失无穷多时一个配置可严格匹配自身，所以需要有限。",
+      "declarations": [
+        "Becoming.Frame.SufficientMatching.not_mutual",
+        "Becoming.EndlessLosses.self_match",
+        "Becoming.EndlessLosses.no_sufficient_matching"
+      ]
+    },
+    {
+      "en": "With losses listed once, strict matching is irreflexive and asymmetric: the worse configuration loses strictly more.",
+      "zh": "损失各列一次时严格匹配非自反、不对称：较差的配置失去的严格更多。",
+      "declarations": [
+        "Becoming.Frame.StrictLossMatch.length_lt"
+      ]
+    },
+    {
+      "en": "The counting law: with content read as a class and losses listed once, a strict match exists exactly when the better configuration loses no more in each class and fewer in all; within one class, exactly when it loses fewer.",
+      "zh": "计数律：以类读内容、损失各列一次时，严格匹配存在，恰当较好的配置每类失去的不多于较差者、总数更少；同属一类时，恰当它失去得更少。",
+      "declarations": [
+        "Becoming.Frame.strictLossMatch_iff_counts",
+        "Becoming.Frame.strictLossMatch_iff_length_of_alike"
+      ]
+    },
+    {
+      "en": "Where every claim rests on a common support and claims are finitely listed, a configuration that loses that support is strictly better by matching than no configuration, under any content relation.",
+      "zh": "每个主张都依于同一支持、主张有限列出时，失去这一支持的配置经严格匹配不优于任何配置，对任何内容读法成立。",
+      "declarations": [
+        "Becoming.Frame.not_strictLossMatch_of_base_lost"
+      ]
+    },
+    {
+      "en": "By definition, a frame that reads a claim at its episode time keeps a missed claim missed when support returns, and it reads the claim at that time exactly when the claim's realization is settled from then on; where a claim is missed and later realized again, no support makes the frame read it at the earlier time. Whether an actual frame reads at episode time is the premise.",
+      "zh": "按定义，在主张的时刻读它的框架，支持恢复后仍让错过的主张错过；它在该时刻读主张，恰当主张的实现自那时起已定；主张错过而后又实现时，没有任何支持使框架在较早时刻读它。实际框架是否在片段时刻读，是前提。",
+      "declarations": [
+        "Becoming.Frame.readsAt_iff_settled",
+        "Becoming.Frame.ReadsAt.loss_retained",
+        "Becoming.Frame.not_readsAt_of_recovery"
+      ]
+    },
+    {
+      "en": "Instance: the courses of one repair process are generated from one start and retain two episodes at the same position against one, two or three elsewhere; read as one class of complete episodes, the four courses retain 3, 4, 3 and 2 losses, so by the counting law A strictly matches B₁, B₃ strictly matches A, and B₂ and A match neither way.",
+      "zh": "实例：同一修复过程的各路线由同一初态产生，保留同处两次活动与别处一次、两次、三次活动；读作同一类的完整片段，四条路线的剩余损失为 3、4、3、2，所以由计数律，A 严格匹配 B₁，B₃ 严格匹配 A，B₂ 与 A 两个方向都没有。",
+      "declarations": [
+        "Becoming.RepairComparison.common_start",
+        "Becoming.MatchedCourses.common_start",
+        "Becoming.RepairComparison.generated_trace",
+        "Becoming.MatchedCourses.generated_trace",
+        "Becoming.RepairComparison.separated_same_life",
+        "Becoming.MatchedCourses.separated_same_position",
+        "Becoming.RepairComparison.matches_iff",
+        "Becoming.MatchedCourses.matches_iff",
+        "Becoming.RepairComparison.lost_counts",
+        "Becoming.MatchedCourses.lost_counts",
+        "Becoming.RepairComparison.a_matches_b1",
+        "Becoming.MatchedCourses.a_matches_b1",
+        "Becoming.RepairComparison.b3_matches_a",
+        "Becoming.MatchedCourses.b3_matches_a",
+        "Becoming.RepairComparison.a_matches_b1_by_count",
+        "Becoming.RepairComparison.b3_matches_a_by_count",
+        "Becoming.RepairComparison.b2_a_neither",
+        "Becoming.MatchedCourses.b2_a_neither"
+      ]
+    },
+    {
+      "en": "Under sufficient complete-episode matching one protection is insufficient and three suffice, while two against two supplies only a loss correspondence.",
+      "zh": "完整片段匹配的充分性成立时，一次保护不足、三次足够，二对二只给出损失对应。",
+      "declarations": [
+        "Becoming.RepairComparison.SufficientMatching",
+        "Becoming.Frame.SufficientMatching",
+        "Becoming.RepairComparison.sufficientMatching_iff",
+        "Becoming.RepairComparison.conditional_lower_anchor",
+        "Becoming.MatchedCourses.conditional_lower_anchor",
+        "Becoming.RepairComparison.conditional_upper_anchor",
+        "Becoming.MatchedCourses.conditional_upper_anchor",
+        "Becoming.RepairComparison.b2_loss_correspondence",
+        "Becoming.MatchedCourses.b2_loss_correspondence",
+        "Becoming.RepairComparison.b2_correspondence_involutive",
+        "Becoming.MatchedCourses.b2_correspondence_involutive"
+      ]
+    },
+    {
+      "en": "Where the three-access repair disconnects the common backbone, that course is strictly better by matching than no course.",
+      "zh": "三接入修复断开共同骨干时，该路线经严格匹配不优于任何路线。",
+      "declarations": [
+        "Becoming.RepairComparison.fragile_b3_loses_backbone",
+        "Becoming.MatchedCourses.fragile_b3_loses_base",
+        "Becoming.RepairComparison.fragile_b3_not_matching",
+        "Becoming.MatchedCourses.fragile_b3_not_matching",
+        "Becoming.RepairComparison.fragile_b3_better_than_none",
+        "Becoming.MatchedCourses.fragile_b3_matches_nothing"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "沿用当前意义结构中的 G0 条件接口及 J 的实践范围；FR 是额外、可修订的比较承诺，不新增第一部分定理或第二条基础公理。",
+      "en": "Reuses G0’s interface in the current significance structure and J’s practical scope; FR is an additional revisable comparison commitment, not a new Part I theorem or second fundamental axiom."
+    },
+    {
+      "zh": "H 与固定 L 都是完整、实际的基本损失，属于独立说明的同类阻断；恢复可达及时、过渡支持真实；不遗漏终末毁损、不可重复参与、共同崩塌、不同强迫或承担。",
+      "en": "H and fixed L are complete actual basic losses of an independently described common kind; recovery is reachable and timely, intervening support is real, and terminal harm, unrepeatable participation, common collapse, different coercion and undertakings are not omitted."
+    },
+    {
+      "zh": "实际不同的生活实现、可靠共同可行的保护及独立权限已说明；规模变化的负担与仍有效机会承诺进入比较。现实可扩展性不由 FR 保证。",
+      "en": "Distinct living realizations, reliable jointly feasible protection and independent permission are established; scale-dependent burdens and live chance commitments enter comparison. FR does not guarantee physical scalability."
+    },
+    {
+      "zh": "共同的较轻基本保护可以达到充分选择强度，是 FR 明确承担的规范内容；它未由有限时长、物理连续性或因果依存推出。 否定永久的较重优先本身仍容许未决或双方机会，故不是 FR 充分性承诺的同义表述。",
+      "en": "That joint lesser basic protection can become sufficient for choice is FR’s explicit normative commitment; it is not derived from finite duration, physical continuity or causal dependence. Rejecting permanent gravity priority still permits incomparability or chances on both sides, and is therefore not equivalent to FR’s sufficiency commitment."
+    },
+    {
+      "zh": "修复实例的给定修复律、共同骨干与覆盖能力确定路线；支持可用足以实现相应活动、片段完整相当及无遗漏累积后果仍需独立对应。当前支持恢复不等于全部经历和关系恢复。",
+      "en": "The repair instance supplies a repair law, backbone and coverage capacities. Support sufficiency for the activity, complete equivalent episodes and absence of omitted cumulative consequences require independent correspondence. Current support restoration is not complete experiential or relational recovery."
+    },
+    {
+      "zh": "SufficientMatching 明确增加：在独立说明的 scope 内，保持完整内容的无重复严格损失匹配具有充分选择效力；它加强 LC，也把 BC1 的充分性扩展到本类完整活动片段。只有外侧比较接合另需 Transitive Le。",
+      "en": "SufficientMatching explicitly adds sufficient choice force for a distinct strict loss match preserving complete content within independently established scope. It strengthens LC and extends BC1 sufficiency to these complete activity episodes. Only composition of the outer comparisons additionally requires Transitive Le."
+    },
+    {
+      "zh": "分解与持续损伤说明中的内容完整性相对于真实比较及有证据的决定相关关系。联合后果可分别表示但不因此消失；相同背景仍保留其作用。未知而可能改变判断的后效需辨明或获得有根据的界。",
+      "en": "In the account of decomposition and sustained harm, completeness concerns the actual comparison and evidenced decision-relevant relations. Joint effects may be represented separately without disappearing, and identical background retains its role. Potentially decisive unknown effects require inquiry or warranted bounds."
+    },
+    {
+      "zh": "整段参照必须先有独立充分根据，再以实际改善／恶化接入同一有根据比较及范围内传递性。BC2/LC 的 pro tanto 理由不能代替充分参照；目标自身更轻或更重不能保证全部方案后果保持。",
+      "en": "Whole-course references must first have independently sufficient warrant, then feed actual improvement/worsening into the same warranted comparison and scoped transitivity. BC2/LC pro tanto reasons cannot replace sufficient anchors, and an isolated gravity change does not establish preservation of whole response outcomes."
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "The repair instance treats only the constructed domain where the graver side independently decomposes into two complete equivalent activity losses; it does not calibrate the arbitrary H of FR’s general form.",
+      "zh": "修复实例只处理较重侧可独立分为两次完整相当活动损失的构造范围，未校准 FR 一般形式中的任意 H。",
+      "kind": "scope"
+    },
+    {
+      "en": "No universal exchange rate, global ranking, minimum sufficient number (in the instance or for arbitrary H) or final two-against-two verdict follows.",
+      "zh": "不推出普遍交换率、全域排序、最小充分人数（本例或任意 H）或二对二最终判定。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Neither general FR nor formal consistency with all earlier principles is shown.",
+      "zh": "未表明一般 FR，也未表明与所有旧原则的形式一致性。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "This case cannot dismiss CP claims or valid chances outside its warranted scope.",
+      "zh": "适用范围外不得用本例删除 CP 请求及有效机会承诺。",
+      "kind": "scope"
+    },
+    {
+      "en": "The account of decomposition gives no unique natural partition for every harm and no actual certification of all aftereffects.",
+      "zh": "分解资格不给出每项损伤的唯一自然分割，也不现实认证所有后效。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Either whole reference may be unavailable; needing an upper bound does not warrant one.",
+      "zh": "较轻和较重完整参照都可能缺失；不能用“需要上界”替代上界的独立根据。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "The counting law is an exact criterion only where content is read as a class and losses are listed once; for other content only the necessary direction is proved.",
+      "zh": "计数律只在内容按类读、损失各列一次时给出充要条件；非类内容只证了必要方向。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "detail": {
+        "zh": "饱和合并对手可以计入每项较轻损失而给其合力永久上限；正机会对手要求较重一方始终有机会。两者未被逻辑排除，构成 FR 的实质争论及其所放弃的。",
+        "en": "A saturating rival can count every lesser loss while imposing a permanent ceiling; a chance rival requires a positive chance for the graver claimant at every scale. Neither is logically excluded; they identify substantive disagreement and what FR forgoes."
+      }
+    },
+    {
+      "path": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md",
+      "detail": {
+        "zh": "恢复终点相同仍可能遗漏不可重复损失；扩大人数可能破坏支持或增加强加负担，均可使应用失效。有限不等于伦理上可交换。",
+        "en": "Equal recovery endpoints can conceal unrepeatable losses; scale can undermine support or increase imposed burdens, defeating application. Finitude does not entail ethical exchangeability."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean",
+      "detail": {
+        "zh": "三接入安装实际断开共同骨干的给定设备律下，保护没有兑现且额外共同损失保留；fragile_b3_not_matching 排除原匹配。 一般规律：每个主张都依于骨干时，失去骨干的路线经严格匹配不优于任何路线（not_strictLossMatch_of_base_lost；本例 fragile_b3_better_than_none，对任何内容读法成立）。",
+        "en": "When the supplied equipment law makes the three-access installation disconnect the backbone, protection fails and the common loss remains; fragile_b3_not_matching excludes the original matching. The general law: where every claim rests on the backbone, a course losing it is strictly better by matching than no course (not_strictLossMatch_of_base_lost; here fragile_b3_better_than_none, under any content reading)."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "detail": {
+        "zh": "持续不可分解损伤、累积耗竭或未恢复的信任使完整同等片段对应失效；即便后果相当，损失集中本身也可构成对充分性承诺的规范反对，不能一律归为遗漏事实。",
+        "en": "Continuous nondecomposable damage, cumulative depletion or unrestored trust can defeat episode correspondence. Even with equivalent consequences, concentration may normatively challenge sufficiency and cannot invariably be classified as missing facts."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "detail": {
+        "zh": "同一持续任务中的两次断线不能直接成为两项完整损失；相同终点和短暂恢复不抹去后效。修复实例的恢复间隔改成持续受损时，原不足端可获恶化输入，原三次充分上端却不能自动接续。",
+        "en": "Two disconnections within one sustained task do not automatically become two whole losses; equal endpoints and brief restoration do not erase aftereffects. Filling the repair instance’s recovery gap can supply worsening for its insufficient anchor, but cannot automatically preserve three-protection sufficiency."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean",
+      "detail": {
+        "zh": "EndlessLosses：损失无穷多时一个配置可以严格匹配自身（EndlessLosses.self_match），充分性承诺在那里不相容（EndlessLosses.no_sufficient_matching），所以有限多的完整片段是必要的。",
+        "en": "EndlessLosses: with infinitely many losses a configuration strictly matches itself (EndlessLosses.self_match), and the sufficiency commitment is inconsistent there (EndlessLosses.no_sufficient_matching), so finitely many complete episodes are needed."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "zero-axiom-target-open"
+  ],
+  "progress": [
+    {
+      "en": "Complete-episode domain: activity boundaries, nonduplication, retained cross-episode effects, joint feasibility and substantive equivalence warrant the complete-episode domain of matching.",
+      "zh": "完整片段资格：活动边界、不重复、跨段后效、共同可行及实质相当为完整片段匹配提供适用准则。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md#complete-episodes-and-relational-remainders"
+    },
+    {
+      "en": "Sustained harm: nondecomposable sustained harm can be compared through whole-course repair relations and inherit insufficient or sufficient judgments from independently warranted whole references, without one universal weight for duration.",
+      "zh": "持续损伤：不可分解的持续损伤可按整段修复关系直接比较，并从独立成立的完整参照接续不足或充分判断，毋须统一的时长权重。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md#whole-course-comparison-of-sustained-harm"
+    }
+  ],
+  "validation_scope": {
+    "en": "Lean check: Becoming.LossMatching (34 theorems, 42 audits) and Becoming.RepairComparison (36 theorems, 65 audits) have empty axiom reports and the core closure compiles from the prelude; Frame and GenerativeLossComparison are bound to an earlier receipt (receipts under sources). Actual content correspondence is not formally proved. Decomposition and whole-course comparison: philosophical argument and thought cases reusing two transport theorems, without new Lean, normative axiom or external literature certification. Author counterreview; no independent acceptance or empirical calibration.",
+    "zh": "合并 Lean 检查：Becoming.LossMatching（34 项定理、42 项声明审计）与 Becoming.RepairComparison（36 项定理、65 项审计）公理报告为空，核心闭包从内置前导编译；Frame 与 GenerativeLossComparison 绑定较早回执（回执见来源）。现实内容对应未被形式证明。分解资格与整段比较：复用两项传递定理的哲学论证与思想案例，无新 Lean、规范公理或外部文献认证。含作者反审；无独立验收或经验校准。"
+  },
+  "next_delta": {
+    "en": "For a new numerical threshold for sustained harm, specify its living and protection courses, independently warrant an upper whole reference, and test concentration, chances and scale effects. A Hall-type characterization for content not read as a class is an optional further step.",
+    "zh": "若要取得新的持续损伤数值阈值，应指定其完整生活和保护路线，独立辩护足以覆盖它的上参照，并检验集中损失、机会和规模改变。非类内容的 Hall 型刻画是可选的后续。"
+  },
+  "correspondence": {
+    "zh": "从同一支持活动的形成、失效与修复说明生活位置及完整得失；不把较轻损失随人数缩成微不足道的便利，不重复计算同一生活或依存路径，不以排名定义同类或基本。实际阈值须另获比较根据。 修复实例先由同一 Process／Run 产生各路线，historical_claim_iff_support 核查历史记录与当时实际支持；身份、发生时点及共同骨干均保留。sameEpisode 只编码所提议读法，不认证现实同等性；scope 不能以期望赢家定义。 分解与持续损伤的说明区分按时间叙述、实际损失分化与比较可替换；恢复既非任何分解的必要条件，也非同等计数的充分条件。持续损伤保留当下承受、活动和自护、恢复路径与负担、共同支持及进一步生成；各方面不被预设成可相加分数。",
+    "en": "Identify living positions and complete gains/losses through formation, failure and repair of one support activity; do not shrink L into trivial conveniences with population, duplicate a life or dependency path, or define sameness/basicness by the ranking. Actual sufficiency thresholds require further comparative warrant. The repair instance first generates the courses through one Process/Run; historical_claim_iff_support checks the record against actual support at its episode time, retaining identity, time and the backbone. sameEpisode encodes a proposed reading without certifying real equivalence; scope cannot be defined by a desired winner. The account of decomposition and sustained harm distinguishes temporal narration, differentiated actual losses and comparative substitutability. Restoration is neither necessary for every decomposition nor sufficient for equal counting. Sustained harm retains present experience, activity/self-care, restoration paths/burdens, common support and further generation without treating these aspects as additive scores."
+  },
+  "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+  "aliases": [
+    "FR finite responsiveness to aggregation",
+    "有限合并回应 FR",
+    "Becoming.RepairComparison.common_start",
+    "Becoming.RepairComparison.generated_trace",
+    "Becoming.RepairComparison.separated_same_life",
+    "Becoming.RepairComparison.support_between_episodes",
+    "Becoming.RepairComparison.current_support_restored",
+    "Becoming.RepairComparison.historical_claim_iff_support",
+    "Becoming.RepairComparison.recovery_retains_loss",
+    "Becoming.RepairComparison.a_matches_b1",
+    "Becoming.RepairComparison.b3_matches_a",
+    "Becoming.RepairComparison.b2_loss_correspondence",
+    "Becoming.RepairComparison.b2_correspondence_involutive",
+    "Becoming.RepairComparison.conditional_lower_anchor",
+    "Becoming.RepairComparison.conditional_upper_anchor",
+    "Becoming.RepairComparison.conditional_outer_order",
+    "Becoming.RepairComparison.fragile_b3_loses_backbone",
+    "Becoming.RepairComparison.fragile_a_keeps_backbone",
+    "Becoming.RepairComparison.fragile_b3_not_matching",
+    "Becoming.Frame.strictLossMatch_iff_counts",
+    "Becoming.Frame.SufficientMatching.comparison"
+  ],
+  "dependencies": [
+    {
+      "id": "practical-judgment-g0-j",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用 J 的强度区分、有界选择与 P95 的及时接续内容；这些确定应用输入，不证明 FR 的合并充分性。",
+        "en": "Reuses J’s strength distinctions, bounded choice and P95’s timely-continuation content; these supply application inputs without proving FR’s aggregative sufficiency."
+      },
+      "interface": {
+        "output": {
+          "zh": "正面意义条件、充分比较与实践选择区分，以及实际需要、过渡和替代覆盖。",
+          "en": "Positive-significance conditions, sufficient comparison versus practical selection, and actual needs, transition and replacement coverage."
+        },
+        "input": {
+          "zh": "FR 的支持对应及何时可成为新的充分击败根据。",
+          "en": "FR’s support correspondence and its possible role as a new sufficiently defeating reason."
+        },
+        "conditions": {
+          "zh": "额外承担 FR；保留 J2 的基本／可放弃范围及有效机会历史。此规范依赖是解释性接续；P100 的形式复用另列。",
+          "en": "Adds FR while retaining J2’s basic/optional scope and valid chance history. This normative dependence is interpretive; P100 formal reuse is listed separately."
+        },
+        "evidence": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md"
+      }
+    },
+    {
+      "id": "becoming-spine-instances",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用共享 Frame、Run 及 Run.window_trace，原成果不重记；新外围应用另接旧损失比较 Strict 与 strict_improvement_transport。",
+        "en": "Reuses shared Frame, Run and Run.window_trace without recounting their results; the new peripheral application also uses the earlier loss comparison Strict and strict_improvement_transport."
+      },
+      "interface": {
+        "output": {
+          "zh": "每个实际运行的有限窗口是同一过程的 Trace。",
+          "en": "Every finite run window is a Trace of the same process."
+        },
+        "input": {
+          "zh": "四条修复路线从同一初态生成历史，作为历史损失和匹配的输入。",
+          "en": "Histories of four repair courses from one start feed historical losses and matching."
+        },
+        "conditions": {
+          "zh": "给定共同修复律及相应运行；充分性和生活内容对应不由 Trace 推出。",
+          "en": "A common supplied repair law and its runs; Trace establishes neither sufficiency nor living-content correspondence."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean"
+      }
+    },
+    {
+      "id": "comparison-content-under-regrouping",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用比较内容保真纪律，识别时间切分、损失指认及整段后效之间的差异；不把接纳读法的精确条件外推为一般生活分解定理。",
+        "en": "Reuses comparison-content fidelity to distinguish time partition, loss reference and whole effects, without extending the exact admission-reading condition into a universal decomposition theorem."
+      },
+      "interface": {
+        "output": {
+          "zh": "保持实际内容与遗漏真实差异的分组读法已有区分。",
+          "en": "Faithful regrouping is distinguished from readings that omit real differences."
+        },
+        "input": {
+          "zh": "P100 完整片段同等性与 P102 联合内容保留的对应要求。",
+          "en": "Correspondence requirements for P100 episode equivalence and P102 retention of joint content."
+        },
+        "conditions": {
+          "zh": "解释性接通，非新分组模型或已证明所有分割不变；损失集中和规范充分性单独说明。",
+          "en": "Interpretive application, not a new grouping model or proof of invariance under every partition; concentrated loss and normative sufficiency remain separate."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "protection-priority-excludes-uniform-aggregation",
+      "detail": {
+        "zh": "其独立性及评分范围说明比较强度必须公开；FR 不推翻基本／可放弃之间的 J2，也不由该构造证明。",
+        "en": "Its independence and score-class scope show that comparative strength must be disclosed; FR neither overturns J2 across basic/optional layers nor follows from that construction."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md",
+      "role": "statement",
+      "sha256": "df234b74a833ae0a70f3daa76fc342afeb02b467c24ebdba9ea6e0ec88b8b30d",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "role": "review",
+      "sha256": "55840b0957632f2c2689534ee1cc4e0c926e820fa893067318de30671122ac56",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "cba619a392b4d78e3ea2035a513a24f31d5f81a704a46431b80b0ab37311c867",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+      "role": "statement",
+      "sha256": "69865ccbfde6d46344788d0b27a4baff2fdc92199e460d0e82ff3991674a68d4",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean",
+      "role": "proof",
+      "sha256": "c4ab73db434b95c6a49415326aca0670b55166e1735a2baa4ce83c6177f8ba8d",
+      "declarations": [
+        "Becoming.RepairComparison.Repair",
+        "Becoming.RepairComparison.Life",
+        "Becoming.RepairComparison.Claim",
+        "Becoming.RepairComparison.State",
+        "Becoming.RepairComparison.start",
+        "Becoming.RepairComparison.backboneAfter",
+        "Becoming.RepairComparison.advance",
+        "Becoming.RepairComparison.process",
+        "Becoming.RepairComparison.states",
+        "Becoming.RepairComparison.run",
+        "Becoming.RepairComparison.episodeTime",
+        "Becoming.RepairComparison.lifeOf",
+        "Becoming.RepairComparison.protects",
+        "Becoming.RepairComparison.frame",
+        "Becoming.RepairComparison.decidableRealized",
+        "Becoming.RepairComparison.outageAt",
+        "Becoming.RepairComparison.firstEpisodeOf",
+        "Becoming.RepairComparison.availableNow",
+        "Becoming.RepairComparison.supportedNow",
+        "Becoming.RepairComparison.decidableSupportedNow",
+        "Becoming.RepairComparison.finalState",
+        "Becoming.RepairComparison.common_start",
+        "Becoming.RepairComparison.generated_trace",
+        "Becoming.RepairComparison.separated_same_life",
+        "Becoming.RepairComparison.support_between_episodes",
+        "Becoming.RepairComparison.current_support_restored",
+        "Becoming.RepairComparison.historical_claim_iff_support",
+        "Becoming.RepairComparison.recovery_retains_loss",
+        "Becoming.RepairComparison.sameEpisode",
+        "Becoming.RepairComparison.decidableSameEpisode",
+        "Becoming.RepairComparison.toB1",
+        "Becoming.RepairComparison.a_matches_b1",
+        "Becoming.RepairComparison.toA",
+        "Becoming.RepairComparison.b3_matches_a",
+        "Becoming.RepairComparison.swapB2",
+        "Becoming.RepairComparison.b2_loss_correspondence",
+        "Becoming.RepairComparison.b2_correspondence_involutive",
+        "Becoming.RepairComparison.SufficientMatching",
+        "Becoming.RepairComparison.conditional_lower_anchor",
+        "Becoming.RepairComparison.conditional_upper_anchor",
+        "Becoming.RepairComparison.conditional_outer_order",
+        "Becoming.RepairComparison.fragile_b3_loses_backbone",
+        "Becoming.RepairComparison.fragile_a_keeps_backbone",
+        "Becoming.RepairComparison.fragile_b3_not_matching",
+        "Becoming.RepairComparison.allClaims",
+        "Becoming.RepairComparison.allClaims_distinct",
+        "Becoming.RepairComparison.allClaims_every",
+        "Becoming.RepairComparison.lostCount",
+        "Becoming.RepairComparison.matches_iff",
+        "Becoming.RepairComparison.lost_counts",
+        "Becoming.RepairComparison.a_matches_b1_by_count",
+        "Becoming.RepairComparison.b3_matches_a_by_count",
+        "Becoming.RepairComparison.b2_a_neither",
+        "Becoming.RepairComparison.a_b1_not_extension",
+        "Becoming.RepairComparison.fragile_b3_better_than_none",
+        "Becoming.RepairComparison.sufficientMatching_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MatchedCourses.lean",
+      "role": "proof",
+      "sha256": "0b7433345d7bd4e09685525bd0dd524bdf12ef4096ff6e3fe32e5f6f75a11171",
+      "declarations": [
+        "Becoming.MatchedCourses.Move",
+        "Becoming.MatchedCourses.Position",
+        "Becoming.MatchedCourses.Claim",
+        "Becoming.MatchedCourses.State",
+        "Becoming.MatchedCourses.start",
+        "Becoming.MatchedCourses.baseAfter",
+        "Becoming.MatchedCourses.advance",
+        "Becoming.MatchedCourses.process",
+        "Becoming.MatchedCourses.states",
+        "Becoming.MatchedCourses.run",
+        "Becoming.MatchedCourses.time",
+        "Becoming.MatchedCourses.positionOf",
+        "Becoming.MatchedCourses.covers",
+        "Becoming.MatchedCourses.frame",
+        "Becoming.MatchedCourses.decidableRealized",
+        "Becoming.MatchedCourses.gapAt",
+        "Becoming.MatchedCourses.firstClaimOf",
+        "Becoming.MatchedCourses.supportedAt",
+        "Becoming.MatchedCourses.Supported",
+        "Becoming.MatchedCourses.decidableSupported",
+        "Becoming.MatchedCourses.final",
+        "Becoming.MatchedCourses.common_start",
+        "Becoming.MatchedCourses.generated_trace",
+        "Becoming.MatchedCourses.separated_same_position",
+        "Becoming.MatchedCourses.support_between",
+        "Becoming.MatchedCourses.support_restored",
+        "Becoming.MatchedCourses.claim_iff_support",
+        "Becoming.MatchedCourses.recovery_retains_loss",
+        "Becoming.MatchedCourses.BasicAlike",
+        "Becoming.MatchedCourses.matchB1",
+        "Becoming.MatchedCourses.a_matches_b1",
+        "Becoming.MatchedCourses.matchA",
+        "Becoming.MatchedCourses.b3_matches_a",
+        "Becoming.MatchedCourses.swapB2",
+        "Becoming.MatchedCourses.b2_loss_correspondence",
+        "Becoming.MatchedCourses.b2_correspondence_involutive",
+        "Becoming.MatchedCourses.conditional_lower_anchor",
+        "Becoming.MatchedCourses.conditional_upper_anchor",
+        "Becoming.MatchedCourses.conditional_outer_order",
+        "Becoming.MatchedCourses.fragile_b3_loses_base",
+        "Becoming.MatchedCourses.fragile_a_keeps_base",
+        "Becoming.MatchedCourses.fragile_b3_not_matching",
+        "Becoming.MatchedCourses.allClaims",
+        "Becoming.MatchedCourses.allClaims_distinct",
+        "Becoming.MatchedCourses.allClaims_every",
+        "Becoming.MatchedCourses.lostCount",
+        "Becoming.MatchedCourses.matches_iff",
+        "Becoming.MatchedCourses.lost_counts",
+        "Becoming.MatchedCourses.b2_a_neither",
+        "Becoming.MatchedCourses.a_b1_not_extension",
+        "Becoming.MatchedCourses.fragile_b3_matches_nothing"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "role": "proof",
+      "sha256": "548b1523ea8f0f9d6b08f6311baa9cc6318669e0097cd2e24605ba3ed8eb9ff2",
+      "declarations": [
+        "Becoming.Run.window_trace"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean",
+      "role": "proof",
+      "sha256": "a099877f064827b1d622eb1b9b7ba4a91e24cfb721b00337f2557c560d8144d5",
+      "declarations": [
+        "GenerativeLossComparison.Strict",
+        "GenerativeLossComparison.Transitive",
+        "GenerativeLossComparison.strict_improvement_transport",
+        "GenerativeLossComparison.strict_rejection_transport",
+        "GenerativeLossComparison.Compatible"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StrictTransport.lean",
+      "role": "proof",
+      "sha256": "f5d945b3e51c291482631f00c1d712746027b5c5f482d3416bbf2d6d70acb50e",
+      "declarations": [
+        "Becoming.StrictTransport.Strict",
+        "Becoming.StrictTransport.Transitive",
+        "Becoming.StrictTransport.strict_above_trans",
+        "Becoming.StrictTransport.strict_below_trans",
+        "Becoming.StrictTransport.Compatible"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122128.341270Z/verification.json",
+      "role": "receipt",
+      "sha256": "f30fd393a060e81fd5b19bb761a565eee3ba24ae4d765e051b75b0b99e4a85e9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "role": "receipt",
+      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean",
+      "role": "proof",
+      "sha256": "33e05303079d0c84e68222d58471b4b33e1cd9243b799f96209cf805a43691e1",
+      "declarations": [
+        "Becoming.Frame.StrictLossMatch",
+        "Becoming.Frame.StrictLossMatch.trans",
+        "Becoming.Frame.StrictLossMatch.mono",
+        "Becoming.Frame.strictLossMatch_of_extension",
+        "Becoming.Frame.SufficientMatching",
+        "Becoming.Frame.SufficientMatching.comparison",
+        "Becoming.Frame.SufficientMatching.not_mutual",
+        "Becoming.Frame.StrictLossMatch.length_lt",
+        "Becoming.Frame.strictLossMatch_iff_counts",
+        "Becoming.Frame.strictLossMatch_iff_length_of_alike",
+        "Becoming.Frame.not_strictLossMatch_of_base_lost",
+        "Becoming.Frame.readsAt_iff_settled",
+        "Becoming.Frame.ReadsAt.loss_retained",
+        "Becoming.EndlessLosses.self_match",
+        "Becoming.EndlessLosses.no_sufficient_matching",
+        "Becoming.Frame.not_readsAt_of_recovery"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "role": "receipt",
+      "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RepairComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122128.341270Z/verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeLossComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LossMatching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MatchedCourses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.MatchedCourses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StrictTransport.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.StrictTransport",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-13，P96：承接 Ren 的 continue，在已有交叉损失研究新增 FR 候选；原 BC1/BC2/LC/LR、机会证明及评审逐项保留。新记录只登记这项更强、可争辩的规范内容。",
+      "en": "2026-10-13, P96: following Ren’s continue, added FR in the existing crossed-loss study; BC1/BC2/LC/LR, opportunity proofs and reviews retain their scopes. This record registers only the stronger contestable normative content."
+    },
+    {
+      "zh": "2026-10-13，P100：依 Ren 的“好的”完成一个具体修复关系的条件两端；同一 FR 记录接入形式应用、内容对应和反审，未另建独立结果或把 FR 改报已证明。",
+      "en": "2026-10-13, P100: under Ren’s “好的”, completes conditional anchors within one constructed repair relation; the same FR record receives formal application, correspondence and counterreview, without a separate result or relabeling FR as proved."
+    },
+    {
+      "zh": "2026-10-13，P102：依 Ren 的明确请求，原研究§§12–13完成分解资格及持续损伤直接比较；同一记录接入哲学对应与强反审，未新增独立结果或重记数学。",
+      "en": "2026-10-13, P102: following Ren’s explicit request, study §§12–13 complete decomposition qualification and direct sustained-harm comparison; the same record receives philosophical correspondence and substantive counterreview without another result or mathematical credit."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `RepairComparison.focal_matches_one` → `RepairComparison.a_matches_b1`、`RepairComparison.three_matches_focal` → `RepairComparison.b3_matches_a`、`RepairComparison.two_loss_correspondence` → `RepairComparison.b2_loss_correspondence`、`RepairComparison.two_correspondence_involutive` → `RepairComparison.b2_correspondence_involutive`、`RepairComparison.fragile_three_loses_backbone` → `RepairComparison.fragile_b3_loses_backbone`、`RepairComparison.fragile_focal_keeps_backbone` → `RepairComparison.fragile_a_keeps_backbone`、`RepairComparison.fragile_three_not_matching` → `RepairComparison.fragile_b3_not_matching`、`RepairComparison.Person` → `RepairComparison.Life`、`RepairComparison.owner` → `RepairComparison.lifeOf`、`RepairComparison.personClaim` → `RepairComparison.firstEpisodeOf`、`RepairComparison.toOne` → `RepairComparison.toB1`、`RepairComparison.toFocal` → `RepairComparison.toA`、`RepairComparison.swapTwo` → `RepairComparison.swapB2`；陈述、证明与定理数不变；Lean 源：RepairComparison 换为把修复过程读作 LossMatching 实例的扩展版本，`Frame.StrictLossMatch` 移入 LossMatching，绑定改为新回执（见检查范围）；交叉主张论证只改 §11：加入 LossMatching 一般规律的段落，被改名的声明按新名引用；标题由「同类可恢复基本损失中的有限合并回应：FR 候选」改为「同类可恢复基本损失中的有限合并回应」（FR 留在别名中）；主张改为先陈述严格损失匹配的一般规律（LossMatching：包含 C、需要有限、严格序、计数律、失去共同支持即无匹配），FR 作为规范候选、P100 修复过程作为实例（matches_iff，损失 3/4/3/2）；`Frame.StrictLossMatch` 的引用移到 LossMatching.lean；限制与下一步加入非类内容只证必要方向；新增 EndlessLosses 反例与 LossMatching.lean 的证明绑定（回执 20261013T204910.042715Z）。状态仍为 reviewed-scoped（FR 是规范承诺，规律只陈述其确切内容）；主张按一般规律重写，原例子的陈述与证明不变，不记作对原例子的重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `RepairComparison.focal_matches_one` → `RepairComparison.a_matches_b1`, `RepairComparison.three_matches_focal` → `RepairComparison.b3_matches_a`, `RepairComparison.two_loss_correspondence` → `RepairComparison.b2_loss_correspondence`, `RepairComparison.two_correspondence_involutive` → `RepairComparison.b2_correspondence_involutive`, `RepairComparison.fragile_three_loses_backbone` → `RepairComparison.fragile_b3_loses_backbone`, `RepairComparison.fragile_focal_keeps_backbone` → `RepairComparison.fragile_a_keeps_backbone`, `RepairComparison.fragile_three_not_matching` → `RepairComparison.fragile_b3_not_matching`, `RepairComparison.Person` → `RepairComparison.Life`, `RepairComparison.owner` → `RepairComparison.lifeOf`, `RepairComparison.personClaim` → `RepairComparison.firstEpisodeOf`, `RepairComparison.toOne` → `RepairComparison.toB1`, `RepairComparison.toFocal` → `RepairComparison.toA`, `RepairComparison.swapTwo` → `RepairComparison.swapB2`; statements, proofs and theorem counts unchanged; Lean sources: RepairComparison replaced by the extended version reading the repair process as an instance of LossMatching, with `Frame.StrictLossMatch` moved to LossMatching; bindings move to the new receipts (see validation scope); the crossed-claims argument changes only section 11: paragraphs on the general laws of LossMatching are added and renamed declarations are cited by their new names; title changed from “Finite responsiveness to aggregation within same-kind recoverable basic losses: the FR candidate” to “Finite responsiveness to aggregation within same-kind recoverable basic losses” (FR stays in the aliases); the claim now states the general laws of strict loss matching first (LossMatching: containment of C, finiteness, strict order, the counting law, no match once the common support is lost), with FR as the normative candidate and P100’s repair process as an instance (matches_iff, losses 3/4/3/2); the reference for `Frame.StrictLossMatch` moves to LossMatching.lean; limitations and next step note that for non-class content only the necessary direction is proved; the EndlessLosses counterexample and a proof binding for LossMatching.lean are added (receipt 20261013T204910.042715Z). Status stays reviewed-scoped (FR is a normative commitment; the laws state only its exact content); the claim is rewritten law-first, and the examples keep their statements and proofs, with no reproof credited to them."
+    },
+    {
+      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2, starting from the current law-first record (the earlier readability draft predates it and served only as a style reference). The long claim became a statement, an exact claim and nine laws (six general laws of strict loss matching and three of the repair instance), each with its declarations; the two content connections of P102 became two progress lines anchored in the study; the limitations became seven does-not-show items and the zero-axiom-target-open boundary; the evidence became one paragraph. The round labels P100 and P102 were replaced by what they name (“the repair instance”, “the account of decomposition and sustained harm”) in hypotheses 5 and 7, the correspondence and the fifth counterexample; P96, P100 and P102 left the claim, limitations and evidence with the sentences that carried them. Kept here and in the snapshot rather than in public text: the receipt timestamps 20261013T204910.042715Z and 20261013T122128.341270Z (still in references and proof bindings), the package-wide counts (85 modules, 4861 theorems, 6856 declaration audits, an 86-module core closure), P100’s 17 theorems and 45 declarations (now within RepairComparison’s 36 and 65, renamed only), 2 changed and 368 reused build steps, 49 passed infrastructure tests, the remark that earlier receipts checked the same statements under the former names (plan section 10, listed in the previous entry), that the original eight opportunity theorems and the LR review keep their scopes, that P100’s 17/45 and earlier independent reviews are not recounted, and the earlier next step’s note that complete-episode qualification and the direct whole-course method are complete and not reopened. No premise, status, dependency, related entry, reference, proof binding or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/finite-aggregation-within-restorable-basic-losses.md); the exact earlier record is text_versions[0].",
+      "zh": "2026年10月14日（曼谷时间）：可读性迁移到 schema 2，以当前“规律在先”的记录为起点（较早的可读性草案早于该重写，只作文体参考）。长主张改为陈述、确切主张与九条规律（六条严格损失匹配的一般规律、三条修复实例），各附声明；P102 的两项内容接续改为两行锚定研究章节的“已接通”；限制改为七项“未表明”与 zero-axiom-target-open 通用边界；证据改为一段。第 5 与第 7 项前提、对应及第五个反例中的轮次标记 P100、P102 改为其所指（“修复实例”“分解与持续损伤的说明”）；P96、P100、P102 随承载它们的句子离开主张、限制与证据。以下保留于本沿革与快照而不入公开字段：回执时间戳 20261013T204910.042715Z 与 20261013T122128.341270Z（仍在引用与证明绑定中）、全包计数（85 个模块、4861 项定理、6856 项声明审计、86 个模块的核心闭包）、P100 的 17 项定理与 45 项声明（今在 RepairComparison 的 36 与 65 项之内，只改名）、2 个改动步骤与 368 个复用步骤、49 项基础设施测试通过、较早回执以旧名检查同一陈述（统一计划 §10，见上一条）、原八项机会定理与 LR 评审保持原范围、P100 的 17／45 及历史独立评审不重计，以及原下一步中“完整片段资格与整段直接比较方法已完成，不重开”的说明。前提、状态、依赖、相关条目、引用、证明绑定及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/finite-aggregation-within-restorable-basic-losses.md)；迁移前的完整记录为 text_versions[0]。"
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第10项（复核迁移的判断）：定律3原说严格匹配是“严格序”，但所证只有非自反与不对称（`StrictLossMatch.length_lt`），没有传递性，改为只说所证；定律5原说失去共同支持的配置“在任何配置之下都没有严格匹配”，方向不清，按 `not_strictLossMatch_of_base_lost`（它不作为较好者严格匹配任何配置）改写。定律4、6与陈述经对照 Lean 确认。",
+      "en": "14 October 2026, open-issues plan item 10 (review of the migration's judgment calls): law 3 called strict matching \"a strict order\", but only irreflexivity and asymmetry are proved (`StrictLossMatch.length_lt`), not transitivity, so it now says only what is proved; law 5 said a configuration losing the common support \"is strictly matched below no configuration\", an unclear direction, and is rewritten after `not_strictLossMatch_of_base_lost` (it is the better side of no strict match). Laws 4 and 6 and the statement were confirmed against the Lean."
+    },
+    {
+      "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
+      "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
+    },
+    {
+      "en": "14 October 2026, seventeenth independent review, finding G1 (BECOMING-GENERAL-LAWS-REVIEW.md): item 10 corrected law 5 but left the same inverted wording in law 9 and in the fifth counterexample. \"Strictly matched below no course\" reads as \"the worse side of no strict match\", the converse of `not_strictLossMatch_of_base_lost` and of `RepairComparison.fragile_b3_below_nothing` (the course is the better side of no strict match); a configuration that loses the common support can be the worse side of one. Both now use law 5's wording, \"strictly better by matching than no course\". The Lean statements are unchanged; the Lean docstrings and the declaration name with the same inversion are left to the integrator. No premise, status, dependency, reference, proof binding or source hash changed.",
+      "zh": "2026年10月14日，第十七次独立审查发现 G1（BECOMING-GENERAL-LAWS-REVIEW.md）：第10项改正了定律5，但定律9与第五个反例仍用同一颠倒的说法。“在任何路线之下都没有严格匹配”读作“不是任何严格匹配中较差的一方”，与 `not_strictLossMatch_of_base_lost` 及 `RepairComparison.fragile_b3_below_nothing` 相反（它们说该路线不是任何严格匹配中较好的一方）；失去共同支持的配置可以是严格匹配中较差的一方。两处现都用定律5的说法“经严格匹配不优于任何路线”。Lean 陈述不变；带同一颠倒的 Lean 文档注释与声明名留给整合会话。前提、状态、依赖、引用、证明绑定与来源哈希均未改变。"
+    },
+    {
+      "en": "14 October 2026, seventeenth independent review ([BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)), findings G1 and G6, landed with the next checker run: the theorem `RepairComparison.fragile_b3_below_nothing` is renamed `fragile_b3_better_than_none`, its docstring and those of `LossMatching` now say \"strictly better by matching than no configuration\"; the law on reading at episode time (law 6) now says that the retained loss holds by the definition of `ReadsAt` and that whether an actual frame reads at episode time is the premise, citing `not_readsAt_of_recovery`.",
+      "zh": "2026年10月14日，第十七次独立审查（[BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)）发现 G1 与 G6，随下一次检查运行落地：定理 `RepairComparison.fragile_b3_below_nothing` 改名为 `fragile_b3_better_than_none`，它与 `LossMatching` 的文档注释改为“经严格匹配不优于任何配置”；关于在片段时刻读的定律（第6条）改为说明：损失保留由 `ReadsAt` 的定义给出，实际框架是否在片段时刻读是前提，并引用 `not_readsAt_of_recovery`。"
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：CROSSED-CLAIMS-ARGUMENT.md（第十七次审查 G1：失去共同支持的配置经严格匹配不优于任何配置；fragile_b3_better_than_none；陈述与证明不变）；RepairComparison.lean（第十七次审查 G1：fragile_b3_below_nothing 改名为 fragile_b3_better_than_none，文档注释方向改正；陈述与证明不变）；LossMatching.lean（第十七次审查 G1：文档注释改为失去共同支持的配置经严格匹配不优于任何配置（原文方向说反）；陈述与证明不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: CROSSED-CLAIMS-ARGUMENT.md (seventeenth review G1: a configuration losing the common support is strictly better by matching than no configuration; fragile_b3_better_than_none; statements and proofs unchanged); RepairComparison.lean (seventeenth review G1: fragile_b3_below_nothing renamed fragile_b3_better_than_none, docstring direction corrected; statements and proofs unchanged); LossMatching.lean (seventeenth review G1: docstrings now say a configuration losing the common support is strictly better by matching than no configuration (they said the reverse); statements and proofs unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BASIC-CONFLICT-JUDGMENT.md, CROSSED-CLAIMS-ARGUMENT.md, CROSSED-CLAIMS-INTEGRATION.md, PRACTICAL-JUDGMENT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BASIC-CONFLICT-JUDGMENT.md, CROSSED-CLAIMS-ARGUMENT.md, CROSSED-CLAIMS-INTEGRATION.md, PRACTICAL-JUDGMENT.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): BASIC-CONFLICT-JUDGMENT.md, PRACTICAL-JUDGMENT.md now use the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (LossMatching, MatchedCourses, StrictTransport; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（LossMatching、MatchedCourses、StrictTransport），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): RepairComparison.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. Re-pointed after reading the change (BASIC-CONFLICT-JUDGMENT.md: the fold; CROSSED-CLAIMS-ARGUMENT.md: the fold). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (LossMatching.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Frame.lean, LossMatching.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Frame.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; LossMatching.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Frame.lean、LossMatching.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Frame.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；LossMatching.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (StrictTransport.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: StrictTransport.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（StrictTransport.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：StrictTransport.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/118f5468ef15a9ed/finite-aggregation-within-restorable-basic-losses.json",
+      "sha256": "118f5468ef15a9ed1ffa3ea9644de9879940fe3f04d5c44e406f44e4d97e81bf",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,571 @@
+{
+  "schema_version": 2,
+  "id": "relational-reading-comparison",
+  "title": {
+    "en": "Read relationally, comparison ranks consuming formation below its absence",
+    "zh": "以关系读生成：比较原则把消耗型形成排在其不发生之下"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-14T03:30:00+00:00",
+  "statement": {
+    "zh": "以关系读生成时，没有超额取用者的接续更新每个条件并扩展有它的接续，这是对每个继续族成立的比较之律的实例，所以比较原则 C 把前者严格排在上面；逐事件读取时 C 不作此裁决。",
+    "en": "Read relationally, the course from which an overdrawing formation is absent renews every condition and extends the course with it, an instance of a law of comparison for every family of courses, so comparison principle C ranks it strictly higher; read event by event, C does not decide."
+  },
+  "laws": [
+    {
+      "zh": "对每个继续族，关系（整段）读法下，更新每个条件的继续扩展另一个继续，当且仅当它在另一个所记入的每个事件上活跃，并在另一个所扣下的某个事件上活跃；它每步每个形成都活跃时，当且仅当另一个扣下某个事件。",
+      "en": "For every family of courses, a course that renews every condition extends another under the relational (whole-run) reading exactly when it is active at every event the other includes and at some event the other withholds; where every formation is active at every step of it, exactly when the other withholds some event.",
+      "declarations": [
+        "Becoming.Ranking.renewed_extends_iff",
+        "Becoming.Ranking.renewed_active_extends_iff"
+      ]
+    },
+    {
+      "zh": "以关系读生成，即以不消耗其所参与关系之条件的形成的发生为生成根据：生生之意义恰好肯定这些发生，对消耗者的发生沉默。",
+      "en": "Read relationally, so that the active events of formations not consuming conditions of the relations they participate in are the generative grounds, living significance includes exactly those events and is silent on a consumer's events.",
+      "declarations": [
+        "RenewalComparison.g0_relational",
+        "Becoming.ActiveReading.livingSignificance_wholeRun_iff",
+        "GenerativeComparison.G0"
+      ]
+    },
+    {
+      "zh": "在关系性更新规律族中，凡焦点形成自某步起超出更新取用者，同一展开中该形成不发生的接续都更新每个条件，是有它的接续的生成扩展，为这一定律的实例；依存的（恶性增长）与不依存的（以消耗取胜）焦点形成同样成立。",
+      "en": "For every law of the relational-renewal family in which the focal formation draws beyond renewal from some step on, the same unfolding without that formation renews every condition and is a generative extension of the unfolding with it, an instance of that law; this holds for a dependent (malignant) and an independent (winning) focal formation alike.",
+      "declarations": [
+        "Becoming.SupportGated.overdraw_extension",
+        "Becoming.Ranking.whole_run_extends",
+        "RenewalComparison.overdraw_relational_extension",
+        "GenerativeComparison.GenerativeExtension"
+      ]
+    },
+    {
+      "zh": "因此比较原则 C 把没有超额取用者的接续严格排在上面，任何满足 C 的非对称比较都不能偏好超额取用。",
+      "en": "So the comparison principle C ranks the unfolding without the overdrawing formation strictly higher, and no asymmetric comparison satisfying C prefers the overdraw.",
+      "declarations": [
+        "RenewalComparison.overdraw_comparison_ranks",
+        "Becoming.Ranking.whole_run_ranks",
+        "RenewalComparison.malignant_comparison",
+        "Becoming.ActiveReading.malignant_readings",
+        "GenerativeComparison.ComparisonPrinciple"
+      ]
+    },
+    {
+      "zh": "逐事件读取时，两条接续互不扩展，并存在满足 C、非自反且传递的比较偏好超额取用。",
+      "en": "Read event by event, the two unfoldings are incomparable by extension, and an irreflexive, transitive comparison satisfying C prefers the overdraw.",
+      "declarations": [
+        "RenewalComparison.overdraw_broad_incomparable",
+        "Becoming.ActiveReading.overdraw_unranked",
+        "RenewalComparison.broad_comparison_admits_overdraw",
+        "Becoming.ActiveReading.overdraw_admits_occurrence"
+      ]
+    },
+    {
+      "zh": "两种读法下，共享都是以消耗取胜的生成扩展，是同一定律的实例，逐事件读法下是“读法在扩展者上精确时的扩展之律”的实例。",
+      "en": "Sharing is a generative extension of winning by consumption under both readings, an instance of the same law and, under the event-by-event reading, of the law of extension for a reading exact on the extending course.",
+      "declarations": [
+        "Becoming.SupportGated.contest_extensions",
+        "Becoming.ActiveReading.contest_readings",
+        "RenewalComparison.contest_comparison",
+        "Becoming.Ranking.extendsUnder_iff_of_exact"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "C（ComparisonPrinciple）是排序定理的假设，所以比较使用 C 而非 G0；G0 只出现在接口定理 g0_relational 中。二者原样导入自 GenerativeComparison。",
+      "en": "C (ComparisonPrinciple) is a hypothesis of the ranking theorems, so the comparisons use C, not G0; G0 appears only in the interface theorem g0_relational. Both are imported unchanged from GenerativeComparison."
+    },
+    {
+      "en": "Relational reading: a claim is a formation event (formation, step); in a continuation it is a ground when the formation is active then and is not ConsumingIn that continuation. The classification is over the whole continuation.",
+      "zh": "关系读法：主张是形成发生（形成，步）；在某接续中，该形成此时发生且在该接续中不是 ConsumingIn，即为根据。分类就整条接续而言。"
+    },
+    {
+      "en": "The comparison course without the focal formation keeps the law's start, renewal and support level, with no focal activity and no drawing; the support of the sustaining formation holds at the start (needG ≤ start), and needF ≤ needG, 0 < needG and overdraw from some step T0 are as in relational-renewal-classification.",
+      "zh": "无焦点形成的对照接续保持规律的起始水平、更新与支持阈值，焦点不发生也不取用；起始时维持者受支持（needG ≤ start），并沿用 relational-renewal-classification 中的 needF ≤ needG、0 < needG 及自 T0 起超额取用。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "这里的比较是该定律在一个规律族及其无焦点对照接续中的实例。",
+      "en": "The rankings are the law's instances in one law family and its course without the focal formation.",
+      "kind": "scope"
+    },
+    {
+      "zh": "分类就整条接续而言，所以消耗型形成在超额取用之前的发生也不计为根据；本记录不确定逐步读法。",
+      "en": "Classification is per whole continuation, so a consuming formation's events before its overdraw are not grounds; this record settles no stepwise reading.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不排序混合情形，不判定波动情形。",
+      "en": "Ranks no mixed cases and decides no fluctuating ones.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不确立可行性或义务，也不确立真实对应。",
+      "en": "Establishes neither feasibility nor obligation, nor real correspondence.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "与 renewing-consuming-formation 一样，规律若不表示休息的恢复作用，两种读法下 C 都会把休息排在持续的更新型形成之下；休息不是消耗，但这一比较没有表示它的价值。",
+      "en": "As in renewing-consuming-formation, a law that omits rest's restorative role makes C rank rest below continued renewing formation under either reading; rest is not consumption, but this comparison does not represent its value.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean",
+      "detail": {
+        "en": "broad_comparison_admits_overdraw: under the event-by-event reading, a strict comparison satisfying C prefers the overdraw. C alone, without the relational reading of generation, does not rank malignant growth below its absence.",
+        "zh": "broad_comparison_admits_overdraw：逐事件读法下，有满足 C 的严格比较偏好超额取用。没有对生成的关系读法，单靠 C 不能把恶性增长排在其不发生之下。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "detail": {
+        "en": "tradeoff_has_opposite_strict_appraisals: when each continuation realizes grounds the other lacks, C does not decide; mixed occurrences that renew some conditions and consume others are not ranked here.",
+        "zh": "tradeoff_has_opposite_strict_appraisals：各接续互有对方缺少的根据时，C 不裁决；对部分条件更新、对另一些条件消耗的混合发生，本结果不排序。"
+      }
+    }
+  ],
+  "standard_boundaries": [],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 在共享的 relational-renewal 回执中通过：RenewalComparison 15 项定理／24 项声明审计，公理集全空；GenerativeComparison 原样作为带哈希依赖编译（由自身检查器审计）；另编译 4 个应用例。更新之继续的比较之律（Becoming.Ranking）与桥接模块 Becoming.RenewalBridge 中的实例定理经合并检查器回执 20261013T221720.428753Z 检查，公理报告为空。作者反审，无独立 agent 审查。",
+    "en": "Lean 4.29.1 check passed in the shared relational-renewal receipt: RenewalComparison 15 theorems / 24 declaration audits, every axiom set empty; GenerativeComparison compiled unchanged as a hashed dependency (audited by its own checker); 4 further compiled application examples. The law of comparison with a renewing course (Becoming.Ranking) and the instance theorems in the bridge module Becoming.RenewalBridge are checked in consolidated receipt 20261013T221720.428753Z with empty axiom reports. Author counterreview; no independent-agent review."
+  },
+  "next_delta": {
+    "zh": "多条件及条件间替代（替代保持消耗见 substitution-preserves-consumption）；确定哪些混合情形可由更强比较或 J 层承诺排序，以及需要什么前提。",
+    "en": "Several conditions with substitution (substitution preserves consumption, see substitution-preserves-consumption); which mixed cases a stronger comparison or J commitment ranks, and with what premise."
+  },
+  "correspondence": {
+    "en": "Reading G0's 'generation' relationally follows Ren's G0, whose object is 生生 ('整体中的生及其继续生成'), and Ren's follow-up that generation and degeneration do not overlap; that reading and C's defense as an articulation of 'a whole direction of ever more 生' are philosophical, not established by the audit. The comparison course is the same unfolding without the focal formation, not a feasible alternative; feasibility and selection belong to P/N and the situation.",
+    "zh": "以关系读 G0 的“生成”，依据的是 Ren 的 G0——对象为生生（“整体中的生及其继续生成”）——及其追问“generative 和 degenerate 不 overlap”；这一读法以及把 C 作为“整体的，不断创造更多生的方向”之比较表述的辩护，属于哲学论证，审计不确立。对照接续是同一展开中没有该形成的情形，不是可行选项；可行与选择属于 P/N 与情境。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
+  "aliases": [
+    "RenewalComparison.g0_relational",
+    "RenewalComparison.overdraw_relational_extension",
+    "RenewalComparison.overdraw_broad_incomparable",
+    "RenewalComparison.overdraw_comparison_ranks",
+    "RenewalComparison.broad_comparison_admits_overdraw",
+    "RenewalComparison.malignant_comparison",
+    "RenewalComparison.contest_comparison",
+    "Becoming.SupportGated.overdraw_extension",
+    "Becoming.SupportGated.contest_extensions"
+  ],
+  "dependencies": [
+    {
+      "id": "relational-renewal-classification",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Imports RelationalRenewal and calls overdraw_consuming, within_renewal_renewing, within_renewal_sustains, independent_overdraw_persists and renewing_not_consuming directly.",
+        "zh": "导入 RelationalRenewal，直接调用 overdraw_consuming、within_renewal_renewing、within_renewal_sustains、independent_overdraw_persists 与 renewing_not_consuming。"
+      },
+      "interface": {
+        "output": {
+          "en": "overdraw_consuming: the focal formation is ConsumingIn, and from some step T the sustaining formation is never active.",
+          "zh": "overdraw_consuming：焦点形成为 ConsumingIn，且自某步 T 起维持性形成不再发生。"
+        },
+        "input": {
+          "en": "overdraw_relational_extension excludes the focal events from the grounds and takes the sustaining event at T as the extension's new ground.",
+          "zh": "overdraw_relational_extension 由此把焦点发生排除在根据之外，并以 T 时的维持性发生作为扩展新增的根据。"
+        },
+        "conditions": {
+          "en": "Same Law, 0 < needG, needF ≤ needG, overdraw from T0; additionally needG ≤ start for the course without the focal formation.",
+          "zh": "同一规律，0 < needG，needF ≤ needG，自 T0 起超额取用；另需 needG ≤ start 以支持无焦点的对照接续。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "practical-judgment-g0-j",
+      "detail": {
+        "en": "Interpretive: C is the explicit comparison premise of the G0/J route; this result shows what C decides once G0's generation is read relationally. No Lean input from that record.",
+        "zh": "解释关联：C 是 G0/J 路线中公开的比较前提；本结果说明以关系读 G0 的生成后，C 能裁决什么。未以该记录作 Lean 输入。"
+      }
+    },
+    {
+      "id": "renewing-consuming-formation",
+      "detail": {
+        "en": "Its event_reading_recognizes_both and comparison_does_not_apply give the broad event reading under G0 and C for a wear law: G0 includes both continuations and C does not apply between them, agreeing with overdraw_broad_incomparable here. This record adds that the relational reading lets C rank the overdraw below its absence. No import either way.",
+        "zh": "其 event_reading_recognizes_both 与 comparison_does_not_apply 给出磨损规律下 G0 与 C 的逐事件广义读法：G0 肯定两条接续，C 在二者之间不适用，与此处 overdraw_broad_incomparable 一致。本记录补充的是：关系读法使 C 能把超额取用排在其不发生之下。互不导入。"
+      }
+    },
+    {
+      "id": "relational-generative-comparison",
+      "detail": {
+        "en": "Same pattern: a structural description fed into C decides a case that a coarser description cannot. Different structure (joint bundles there, consumption here); no formal composition.",
+        "zh": "同一模式：把结构描述送入 C，裁决较粗描述无法裁决的情形。结构不同（彼为联合束，此为消耗）；无形式组合。"
+      }
+    },
+    {
+      "id": "positive-ground-open-futures",
+      "detail": {
+        "en": "Interpretive: uses the same G0 predicate; here its inventory is read relationally.",
+        "zh": "解释关联：使用同一 G0 谓词；此处其库存按关系读取。"
+      }
+    },
+    {
+      "id": "becoming-stepwise-reading",
+      "detail": {
+        "zh": "该结果给出逐步与关系层读法；本记录的排序在逐步读法下的命运由 ranking-under-readings 证明。",
+        "en": "That result gives the stepwise and relation-level readings; ranking-under-readings proves what becomes of this record's rankings under the stepwise reading."
+      }
+    },
+    {
+      "id": "ranking-under-readings",
+      "detail": {
+        "zh": "该结果在核心上重述本记录的整段排序，并证明逐步读法下对不在场的排序失去、对共享的排序保持。",
+        "en": "That result restates this record's whole-run ranking on the core and proves that under the stepwise reading the ranking of absence is lost and that of sharing is kept."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean",
+      "role": "proof",
+      "sha256": "438afd1164e6e594b1e3614c120ec2a20d51df37ba6cffcdab802310b51df133",
+      "declarations": [
+        "RenewalComparison.g0_relational",
+        "RenewalComparison.overdraw_relational_extension",
+        "RenewalComparison.overdraw_broad_incomparable",
+        "RenewalComparison.overdraw_comparison_ranks",
+        "RenewalComparison.broad_comparison_admits_overdraw",
+        "RenewalComparison.malignant_comparison",
+        "RenewalComparison.contest_comparison"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
+      "role": "proof",
+      "sha256": "20d009fba262ddd9aa6578449ebb14a5af96a87f20a564b8c1af7f8f116786ad",
+      "declarations": [
+        "Becoming.ActiveReading.livingSignificance_wholeRun_iff",
+        "Becoming.ActiveReading.overdraw_unranked",
+        "Becoming.ActiveReading.overdraw_admits_occurrence",
+        "Becoming.ActiveReading.malignant_readings",
+        "Becoming.ActiveReading.contest_readings"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "role": "proof",
+      "sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+      "declarations": [
+        "GenerativeComparison.G0",
+        "GenerativeComparison.GenerativeExtension",
+        "GenerativeComparison.ComparisonPrinciple"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
+      "role": "proof",
+      "sha256": "6bc824907a09d28fc017c3c5f36f510da6fe8cd532858280abf62a082617dd28",
+      "declarations": [
+        "Becoming.Ranking.extendsUnder_iff_of_exact",
+        "Becoming.Ranking.wholeRun_of_renewed",
+        "Becoming.Ranking.renewed_extends_iff",
+        "Becoming.Ranking.renewed_active_extends_iff",
+        "Becoming.Ranking.whole_run_extends",
+        "Becoming.Ranking.whole_run_ranks"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean",
+      "role": "proof",
+      "sha256": "ae3569b0dcb912f605231c5d903f188480158c35c552bb4cba9ee668be187cf7",
+      "declarations": [
+        "Becoming.SupportGated.overdraw_extension",
+        "Becoming.SupportGated.contest_extensions"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-verification.json",
+      "role": "receipt",
+      "sha256": "09f11601f070fa7d68c619bf380ef45de2d6f2405b47853884c4e181a66ae300",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md",
+      "role": "statement",
+      "sha256": "b71c5a13b054549f723157711072fc058672f758c91e8edc53b2da14282bc854",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/history/THEORY-OF-BECOMING.md",
+      "role": "integration",
+      "sha256": "10b5d1faa826473427818718e609cd5a7ccb253748ffa5154dd43b04d0577160",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
+      "role": "integration",
+      "sha256": "a9b36f167cec36a5712de30abeb7a2bb963d708d6338989135ecf68bb7188ad9",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md",
+      "role": "provenance",
+      "sha256": "a12a64304d9cb974cd3638eab754a43e5ed82b4939834ff7dca82e2378a7c084",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md",
+      "role": "provenance",
+      "sha256": "740126fcca587edb4446b690f8d69bc0258d6ca5338a7ed880585fc419a58940",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "role": "receipt",
+      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "role": "receipt",
+      "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
+      "role": "proof",
+      "sha256": "874721d6fa07e8d14ba5de1fb0f20055939fd784140b38fc5fae578baa62156c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
+      "role": "proof",
+      "sha256": "0d1566a393c85318f80ff11e25f0d12911571f0536e3a4259dcb3a1df9e9ff31",
+      "declarations": [
+        "Becoming.Extension",
+        "Becoming.Comparison",
+        "Becoming.LivingSignificance"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
+      "role": "receipt",
+      "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-verification.json",
+      "sha256_pointer": "/source_sha256/RenewalComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-verification.json",
+      "sha256_pointer": "/dependency_sha256/GenerativeComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Ranking",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ActiveReading",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Extension",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "9 October 2026: created after Ren's follow-up ('为什么？我G0是什么？generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧'), which corrected the AI statements that the positive significance of renewal was still owed by G0 and that consumption was not shown worse.",
+      "zh": "2026年10月9日：依 Ren 追问（“为什么？我G0是什么？generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”）新建；该追问纠正了 AI 关于“更新的正面意义仍是 G0 另欠的工作”及“未证明消耗更坏”的说法。"
+    },
+    {
+      "zh": "2026年10月9日：审查文件仅在 §6 末尾新增“独立审查后的更正”一段（generative-discrimination 会话，回应其独立审查）；本记录所依的 §3.3、§5 文字未变。已读后更新该引用哈希；主张、证明与其他来源不变。",
+      "en": "9 October 2026: the review file gained only a correction paragraph at the end of §6 (generative-discrimination session, after its independent review); the §3.3 and §5 text this record relies on is unchanged. Reference hash updated after reading; claim, proof and other sources unchanged."
+    },
+    {
+      "zh": "2026-10-09：更新下一步与关联：逐步、周期与关系层读法已在 Becoming 脊柱上定义（P6、P7）。本记录的主张、证明与来源不变。",
+      "en": "2026-10-09: updated the next step and links: stepwise, cycle and relation-level readings are now defined on the Becoming spine (P6, P7). This record's claim, proofs and sources are unchanged."
+    },
+    {
+      "zh": "2026-10-09：更新下一步与关联：ranking-under-readings 已证明本记录的排序在逐步读法下的命运。本记录的主张、证明与来源不变。",
+      "en": "2026-10-09: updated the next step and links: ranking-under-readings proves what becomes of this record's rankings under the stepwise reading. This record's claim, proofs and sources are unchanged."
+    },
+    {
+      "zh": "2026-10-09：按第二次独立审查 F15 的范围外意见，英文对应说明中指 Ren 的代词改为“Ren's”；内容不变。",
+      "en": "2026-10-09: following the out-of-scope note in F15 of the second independent review, the English correspondence refers to Ren by name instead of a pronoun; content unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般定律（一般定律计划 L2 流，由整合会话分派；AI 撰写，Claude Opus 5.5）：审计发现超额取用的比较只对支持门控规律族成立。它们是 Becoming.Ranking 中与更新之继续的比较之律的实例，该定律对每个继续族成立（renewed_extends_iff、renewed_active_extends_iff、extendsUnder_iff_of_exact）：新桥接模块 Becoming.RenewalBridge 由它证明 overdraw_relational_extension 的结论与共享的扩展（overdraw_extension、contest_extensions）。逐事件读法下的不可比（overdraw_broad_incomparable）是规律族中的见证，不再重述。主张改写为定律在先；RenewalComparison 的字节、证明与回执不变。新增对 Becoming.Ranking 与 Becoming.RenewalBridge 的合并回执绑定，合并时须改指首个含有新声明的回执。",
+      "en": "14 October 2026, general law (general-laws plan, stream L2, assigned by the integrating session; AI-authored, Claude Opus 5.5): the audit found that the overdraw comparisons held only for the support-gated law family. They are instances of Becoming.Ranking's law of comparison with a renewing course, which holds for every family of courses (renewed_extends_iff, renewed_active_extends_iff, extendsUnder_iff_of_exact): the new bridge module Becoming.RenewalBridge proves overdraw_relational_extension's conclusion and the contest extensions from it (overdraw_extension, contest_extensions). The event-by-event incomparability (overdraw_broad_incomparable) is a family witness and is not restated. The claim is rewritten law first; RenewalComparison's bytes, proofs and receipt are unchanged. Bindings to the consolidated receipt for Becoming.Ranking and Becoming.RenewalBridge are added and must be re-pointed to the receipt that first contains the new declarations at landing."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Ranking.lean（新增比较之律与缓和之律；节制的判断作为其实例重证，陈述不变）；RenewalBridge.lean（新桥接模块，首次由本回执检查）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Ranking.lean (the laws of comparison and easing added; the restraint verdicts re-proved as their instances with statements unchanged); RenewalBridge.lean (new bridge module, first checked in this receipt)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（一般规律计划：增长棘轮所拦记录的迁移）：标题不变，陈述在先；主张拆为 6 条规律；限制与回执说明分入“未表明”、前提、证据段与沿革。规律、前提、反例、状态、证明绑定与来源哈希均未改变。“比较使用 C 而非 G0”并入第一条前提；“不使用 Lean 公理”由证据段的空公理报告承载。旧下一步的前两句（逐步、周期与关系层读法已在脊柱上定义；ranking-under-readings 证明逐步读法下排序的去向）说的是其他记录，相关结果 becoming-stepwise-reading 与 ranking-under-readings 已载其内容，原句留在快照中。每句旧文本的去向见迁移对照表 [relational-reading-comparison.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/relational-reading-comparison.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (general-laws plan: migration of the records the growth ratchet stopped): The title is kept, with the statement first; the claim was split into 6 laws; limitations and receipt notes went to does-not-show items, hypotheses, the evidence paragraph and history. No law, premise, counterexample, status, proof binding or source hash changed. “The comparisons use C, not G0” joined the first hypothesis; “no Lean axiom is used” is carried by the empty axiom reports in the evidence paragraph. The old next step's first two sentences (the stepwise, cycle and relation-level readings defined on the spine; ranking-under-readings proving what becomes of the rankings under the stepwise reading) concern other records; the related results becoming-stepwise-reading and ranking-under-readings carry their content, and the sentences stay in the snapshot. Every earlier sentence is mapped in the migration table [relational-reading-comparison.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/relational-reading-comparison.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "en": "Open-issues plan item 15 (Ren chose “includes”): a reading now includes an event, where it was said to credit it, a market word; the Lean names follow (old and new in the unification plan §10); zh 记入 unchanged.",
+      "zh": "开放问题计划第 15 项（Ren 选定 includes）：读法“记入”事件的英文由市场词 credit 改为 include，Lean 名随之更改（新旧对照见统一计划 §10）；中文“记入”不变。"
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Ranking.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；RenewalBridge.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Ranking.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); RenewalBridge.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged)."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：RenewalBridge.lean（第十七次审查 G7, G9：SupportGated.surplus、surplus_active、surplus_step 改名为 netGive、netGive_active、netGive_step；模块说明写明该族的平衡由构造给出；陈述与证明不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: RenewalBridge.lean (seventeenth review G7, G9: SupportGated.surplus, surplus_active, surplus_step renamed netGive, netGive_active, netGive_step; the module doc says the family's balance holds by construction; statements and proofs unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Ranking.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Ranking.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Ranking.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Ranking.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): THEORY-OF-BECOMING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (RenewalBridge.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (ActiveReading, Ranking; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（ActiveReading、Ranking），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (3 in Becoming.Metaethics), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): RenewalBridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): ActiveReading.lean, Metaethics.lean re-pointed after reading the change (ActiveReading.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，ActiveReading.lean、Metaethics.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: G0, Extension, Comparison from Metaethics.lean to ValuationFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (ActiveReading.lean, Ranking.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: ActiveReading.g0_wholeRun_iff (now ActiveReading.livingSignificance_wholeRun_iff); G0 (now LivingSignificance). Proof bindings (ActiveReading.lean, ValuationFrames.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: ActiveReading.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; ValuationFrames.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：ActiveReading.g0_wholeRun_iff（现为 ActiveReading.livingSignificance_wholeRun_iff）；G0（现为 LivingSignificance）。证明绑定（ActiveReading.lean、ValuationFrames.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：ActiveReading.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；ValuationFrames.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from ValuationFrames.lean to Extension.lean, Comparison, Extension. Proof bindings (ValuationFrames.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: ValuationFrames.lean, C on frames moved to Extension.lean. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 ValuationFrames.lean 到 Extension.lean：Comparison、Extension。证明绑定（ValuationFrames.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：ValuationFrames.lean，框架上的 C 移到 Extension.lean。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): F9 of the twentieth review: Ranking's and ActiveReading's worlds are webs, so the cited Ranking.wholeRun_of_renewed, renewed_extends_iff, renewed_active_extends_iff and ActiveReading.livingSignificance_wholeRun_iff state Web.Renewed and Web.ConsumingIn in place of RelationalRenewal's (study section 225); ActiveReading.livingSignificance_wholeRun_web_iff, the same statement once the world is a web, was removed (development/r34-evaluative-chain/RENAME-TABLE.json). The claim is unchanged. Also: Moved with their full names: from ValuationFrames.lean to Extension.lean, LivingSignificance. Proof bindings (ActiveReading.lean, Extension.lean, Ranking.lean, ValuationFrames.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: ActiveReading.lean, worlds read as webs (restated); livingSignificance_wholeRun_web_iff and absent_web_dependent removed as the same statements as the kept ones; Extension.lean, LivingSignificance stated here, moved unchanged from ValuationFrames; Ranking.lean, worlds read as webs (restated, study section 225); imports Frame and Extension only; stepwise_iff moved to Relevance; ValuationFrames.lean, LivingSignificance moved to Extension, unchanged; kept statements unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：第二十次审查 F9：Ranking 与 ActiveReading 的世界是网，所以所引 Ranking.wholeRun_of_renewed、renewed_extends_iff、renewed_active_extends_iff 与 ActiveReading.livingSignificance_wholeRun_iff 陈述 Web.Renewed 与 Web.ConsumingIn，取代 RelationalRenewal 的（研究第 225 节）；ActiveReading.livingSignificance_wholeRun_web_iff 在世界是网之后是同一陈述，已删去（development/r34-evaluative-chain/RENAME-TABLE.json）。论断不变。另：连同完整名称移动：从 ValuationFrames.lean 到 Extension.lean：LivingSignificance。证明绑定（ActiveReading.lean、Extension.lean、Ranking.lean、ValuationFrames.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：ActiveReading.lean，世界读作网（重述）；livingSignificance_wholeRun_web_iff 与 absent_web_dependent 因与保留者陈述相同而删去；Extension.lean，LivingSignificance 在此陈述，自 ValuationFrames 原样移入；Ranking.lean，世界读作网（重述，见研究第 225 节）；只导入 Frame 与 Extension；stepwise_iff 移到 Relevance；ValuationFrames.lean，LivingSignificance 原样移到 Extension；保留的陈述不变。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/4fe6bb1f04e142dd/relational-reading-comparison.json",
+      "sha256": "4fe6bb1f04e142dda4e6f4fbd67468f722af056767de93cdd233e56b5f98ebc7",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
+    }
+  ]
+}

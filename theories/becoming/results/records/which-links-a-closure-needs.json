@@ -384,76 +384,22 @@
       "zh": "2026年10月19日，K3：读过改动后，Cuts.lean 重新指向：Flow.GrownBy.cond_ne 的同向情形改经 Cuts.Attaches.listed_once，Becoming.Cuts 不再有孤立定理；陈述未变。核心回执 20261019T055924.801141Z；研究第 191 节（补记）与本章第 8.2、9 节随之重新指向。论断不变。"
     },
     {
-      "en": "19 October 2026, Y1 (Becoming.Hexagrams): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y1 added a study section; THE-THEORY-OF-BECOMING.md: Y1 added the section 1 paragraph on the configurations of the Changes with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts and receipt, and the section 11 row). The claim is unchanged.",
-      "zh": "2026年10月19日，Y1（Becoming.Hexagrams）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, V (what a collective's continuation needs): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V added study section 193). The claim is unchanged.",
-      "zh": "2026年10月19日，V（集体延续所需）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, Y2 (Becoming.HexagramPlaces): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y2 added a study section). The claim is unchanged.",
-      "zh": "2026年10月19日，Y2（Becoming.HexagramPlaces）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, V2 (thresholds of waiting): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V2 added study section 194). The claim is unchanged.",
-      "zh": "2026年10月19日，V2（等待的阈值）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, U3 (theorems apart from the base): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U3 added study section 196). The claim is unchanged.",
-      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, E1 (premises read off one exchange): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: E1 added study section 194). The claim is unchanged.",
-      "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, Y3 (Becoming.HexagramLaws): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y3 added a study section). The claim is unchanged.",
-      "zh": "2026年10月19日，Y3（Becoming.HexagramLaws）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section). The claim is unchanged.",
-      "zh": "2026年10月19日，SG（关节、交换之律与第三值）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198). The claim is unchanged.",
-      "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
-      "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
-    },
-    {
-      "en": "19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.",
-      "zh": "2026年10月19日，X1b（护闭诸文合于关节律的确切范围）：BECOMING-RENEWAL-READING.md 重新指向。自本记录所审哈希以来，所引文字只在第 199 节改动：其护闭读法现说保持是在自 s 起的路径上保住 s 的最大闭（`keeping_greatest`），由 X1b 改。重新指向前已读。论断不变。"
-    },
-    {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Feedback.lean). The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, R21 (the nineteenth review's fix list): Cuts.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Cuts.lean, documentation only (no name, statement or proof changed): the bypass stated for a directed link (target within the source's closure). Read before re-pointing. The claim is unchanged. The chapter reference was re-pointed as well, after reading R21's changes to the sections it cites.",
-      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Cuts.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Cuts.lean，只改说明（名称、陈述与证明不变）：绕行按有向联系陈述（终点在起点的闭包之内）。重新指向前已读。论断不变。理论章节的引用也在读过 R21 对其所引各节的改动后重新指向。"
-    },
-    {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Feedback.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Feedback.lean, the conditional theorems moved to BoundedSignificance.lean; comparison_within_reach proved with no condition, statement unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Feedback.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Feedback.lean，条件定理移到 BoundedSignificance.lean；comparison_within_reach 不经条件证明，陈述不变。论断不变。"
-    },
+      "en": "2026-10-20: 17 bookkeeping notes condensed from 19 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/117af3faab146a7b/which-links-a-closure-needs.json and in git.",
+      "zh": "2026-10-20：17 条记账性说明合并（19 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/117af3faab146a7b/which-links-a-closure-needs.json 和 git 中。"
+    }
+  ],
+  "text_versions": [
     {
-      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
-      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+      "path": "_process/architecture/history/117af3faab146a7b/which-links-a-closure-needs.json",
+      "sha256": "117af3faab146a7be11fb634872855c995085b11d6a83a6f915d47d47cfd4c80",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
+      }
     }
   ]
 }

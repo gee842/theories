@@ -1,0 +1,534 @@
+{
+  "schema_version": 2,
+  "id": "capture-through-the-rule",
+  "title": {
+    "en": "Capture through the rule: a selection whose rule reads the share it selects",
+    "zh": "经由规则的捕获：规则读其所选出之份额的选择"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T15:14:45+00:00",
+  "statement": {
+    "en": "Where a selection's rule is read monotonically from the share it selects, the loop locks: share and rule stop falling, a change of the rule's value that keeps its direction is absorbed at the next reading, and only a change of how the rule reads leaves. Without the start condition, it fails.",
+    "zh": "选择的规则从它所选出的份额单调地读出时，回路锁定：份额与规则不再下降，保持方向的规则之值的改变在下一次读取被吸收，只有改变规则怎样读才离开。没有起点条件则不成立。"
+  },
+  "laws": [
+    {
+      "en": "The loop, stated for every pair of orders: on Pace's two-level course, the fast step a selection that does not lower the share under a favouring rule (Raises), the rule read at a reading step a monotone function of the share alone (ReadsShare); a course read from a later step is the course from its configuration there, and the fast configuration after a step is the selection by the rule in force.",
+      "zh": "回路，对每一对序陈述：在 Pace 的两速历程上，快步是在偏向的规则下不降低份额的选择（Raises），读取步所读出的规则只是份额的单调函数（ReadsShare）；从较后一步读起的历程即从它在那里的构形出发的历程，一步之后的快构形是在行规则下的选择。",
+      "declarations": [
+        "Becoming.Pace.paced_shift",
+        "Becoming.Pace.paced_fast_succ",
+        "Becoming.RuleCapture.reverse",
+        "Becoming.RuleCapture.Raises",
+        "Becoming.RuleCapture.ReadsShare",
+        "Becoming.RuleCapture.ReadsShare.reverse"
+      ]
+    },
+    {
+      "en": "Where no rule turns against the reading, the loop locks at its first reading step: where the start's rule and every rule read favour, the share falls at no step from the start and the course is locked from the step after its first reading step. On counts with a margin m (each carrier leaving a + m offspring, each other a), the share falls at no step and, from the step after the first reading step, the margin falls at no step; the share rises strictly at every step whose margin is positive, carriers present, along every course.",
+      "zh": "没有规则反对读法之处，回路在第一个读取步锁定：起点的规则与每个读出的规则都偏向时，从起点起份额在任何一步都不降，进程自第一个读取步之后的那一步起锁定。在带余裕 m 的计数上（每个承载者留 a + m 个后代，其他每个留 a 个），份额在任何一步都不降，自第一个读取步之后的那一步起余裕在任何一步都不降；在每条进程上，余裕为正且有承载者的每一步，份额严格上升。",
+      "declarations": [
+        "Becoming.RuleCapture.favours_throughout",
+        "Becoming.RuleCapture.favouring_locks",
+        "Becoming.RuleCapture.CarrierCounts.margin",
+        "Becoming.RuleCapture.CarrierCounts.margin_favours",
+        "Becoming.RuleCapture.CarrierCounts.margin_le",
+        "Becoming.RuleCapture.CarrierCounts.byMargin",
+        "Becoming.RuleCapture.CarrierCounts.byMargin_reads",
+        "Becoming.RuleCapture.CarrierCounts.margin_course",
+        "Becoming.RuleCapture.CarrierCounts.rises_strictly",
+        "Becoming.RuleCapture.CarrierCounts.rises_strictly_along"
+      ]
+    },
+    {
+      "en": "Locked, the loop does not turn back: favouring kept by every rule not lower, a configuration whose rule favours and is not above what the reading of its share gives stays locked at every later step, and neither the share nor the rule falls across any step, reading steps included, nor is ever again below where it was.",
+      "zh": "锁定之后回路不回转：偏向为每个不更低的规则所保持时，一个规则偏向、且不高于其份额所读出者的构形，此后每一步都保持锁定，份额与规则跨任何一步都不降（读取步也在内），也不再低于它们曾在之处。",
+      "declarations": [
+        "Becoming.RuleCapture.Locked",
+        "Becoming.RuleCapture.turn_locked",
+        "Becoming.RuleCapture.locked_stays",
+        "Becoming.RuleCapture.locked_rises",
+        "Becoming.RuleCapture.locked_not_below"
+      ]
+    },
+    {
+      "en": "A perturbation of the rule that keeps its direction is absorbed: from a locked configuration, with the rule replaced by any favouring one, above or below, at the step after every reading step the rule is at least the rule before the perturbation and the course is locked again.",
+      "zh": "保持方向的规则扰动被吸收：从一个锁定的构形起，把规则换成任何偏向的规则（更高或更低），在每个读取步之后的那一步，规则至少是扰动前的规则，进程重新锁定。",
+      "declarations": [
+        "Becoming.RuleCapture.perturbation_invariant",
+        "Becoming.RuleCapture.perturbation_absorbed"
+      ]
+    },
+    {
+      "en": "Leaving: where the reading favours at every share, every course, whatever its start, is locked from the step after its second reading step, so only a change of the law, of how the rule reads or of the selection, leaves.",
+      "zh": "离开：读法在每个份额都偏向时，每条进程，不论从何开始，自第二个读取步之后的那一步起锁定；所以只有改变律、规则怎样读或选择，才离开。",
+      "declarations": [
+        "Becoming.RuleCapture.favours_after_reading",
+        "Becoming.RuleCapture.uniform_locks"
+      ]
+    },
+    {
+      "en": "Order kept: where selection is monotone in the share and the rule and the reading monotone in the share, two courses keep their order at every step, and a perturbation lowering the rule keeps its course below the course without it; on counts under every monotone reading.",
+      "zh": "次序保持：选择对份额与规则单调、读法对份额单调时，两条进程每一步都保持其次序；降低规则的扰动使其进程保持在没有扰动的进程之下；在计数上对每个单调读法成立。",
+      "declarations": [
+        "Becoming.RuleCapture.order_kept",
+        "Becoming.RuleCapture.perturbation_keeps_below",
+        "Becoming.RuleCapture.CarrierCounts.select_mono",
+        "Becoming.RuleCapture.CarrierCounts.perturbation_keeps_below_counts"
+      ]
+    },
+    {
+      "en": "Counts: two counts, the second positive, ordered by cross-multiplication, the comparison of share_not_lower. Selection multiplies each kind by what the rule gives it; it does not lower the share under a favouring rule nor raise it under a disfavouring one, and favouring and disfavouring are kept upward and downward. Under the proportional reading, from a rule that favours and is not above the population's own proportion, the share and the rule fall at no step; from one that disfavours and is not below it, they rise at none. A threshold reading is monotone where its lower rule is not above its upper one, and favours at every share where both favour.",
+      "zh": "计数：两个计数，第二个为正，以交叉相乘排序，即 share_not_lower 的比较。选择以规则给各类之数乘各类；在偏向的规则下不降低份额，在不偏向的规则下不提高份额，偏向与不偏向分别向上、向下保持。在比例读法下，从一个偏向、且不高于人口自身比例的规则起，份额与规则在任何一步都不降；从一个不偏向、且不低于它的规则起，二者在任何一步都不升。阈值读法在其下规则不高于上规则时单调，二者都偏向时在每个份额都偏向。",
+      "declarations": [
+        "Becoming.RuleCapture.CarrierCounts",
+        "Becoming.Naturals.mul_right_comm",
+        "Becoming.Naturals.mul_mul_mul_comm",
+        "Becoming.RuleCapture.CarrierCounts.order",
+        "Becoming.RuleCapture.CarrierCounts.favours",
+        "Becoming.RuleCapture.CarrierCounts.disfavours",
+        "Becoming.RuleCapture.CarrierCounts.select",
+        "Becoming.RuleCapture.CarrierCounts.raises",
+        "Becoming.RuleCapture.CarrierCounts.lowers",
+        "Becoming.RuleCapture.CarrierCounts.upper",
+        "Becoming.RuleCapture.CarrierCounts.lower",
+        "Becoming.RuleCapture.CarrierCounts.share_not_lower_counts",
+        "Becoming.RuleCapture.CarrierCounts.proportional",
+        "Becoming.RuleCapture.CarrierCounts.proportional_reads",
+        "Becoming.RuleCapture.CarrierCounts.proportional_locks",
+        "Becoming.RuleCapture.CarrierCounts.proportional_locks_down",
+        "Becoming.RuleCapture.CarrierCounts.threshold",
+        "Becoming.RuleCapture.CarrierCounts.threshold_above",
+        "Becoming.RuleCapture.CarrierCounts.threshold_below",
+        "Becoming.RuleCapture.CarrierCounts.threshold_reads",
+        "Becoming.RuleCapture.CarrierCounts.threshold_favours",
+        "Becoming.RuleCapture.CarrierCounts.always_step"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Each statement names its hypotheses: the fast step does not lower the share under a favouring rule (Raises); the rule read is a monotone function of the share alone (ReadsShare); favouring is kept upward; and, as the statement needs, the start locked (Locked), the start's rule and every rule read favouring, or the reading favouring at every share. The order statements add selection monotone in the share and the rule. On counts, offspring numbers per carrier and per other, others present.",
+      "zh": "无公理。每条陈述列出其假设：快步在偏向的规则下不降低份额（Raises）；读出的规则只是份额的单调函数（ReadsShare）；偏向向上保持；以及按陈述所需，起点锁定（Locked）、起点规则与每个读出的规则都偏向，或读法在每个份额都偏向。次序陈述另加选择对份额与规则单调。在计数上，每个承载者与其他每个的后代数，其他者在场。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That any actual rule reads the share it selects, or reads it monotonically: this is the premise ReadsShare, where \"the winner shapes the rule\" of Becoming.Capture enters.",
+      "zh": "任何实际的规则读其所选出的份额，或单调地读：这是前提 ReadsShare，即 Becoming.Capture 的“胜者塑造规则”进入之处。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "That offspring carry their parents' target (a premise as in Becoming.Capture), or that share or rule rises strictly, except on counts under a positive margin.",
+      "zh": "后代携带其亲代的目标（与 Becoming.Capture 同为前提），或份额、规则严格上升（计数上余裕为正时除外）。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Real-valued shares and rates, rules that read more than the share, many levels, or noisy readings.",
+      "zh": "实数份额与比率、读份额以外之物的规则、多层，或有噪声的读法。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean",
+      "detail": {
+        "en": "Without the start condition the lock fails: under the threshold reading hi/lo read at every step, from carriers two to one under lo (a rule in force against the reading, read one step late), the share falls at every even step and the rule at every odd step, without end, and the course is locked neither way at any step (Alternating.alternates, Alternating.never_locked); its start is the locked configuration with its rule reversed (Alternating.before_locked).",
+        "zh": "没有起点条件，锁定不成立：阈值读法 hi/lo 每步都读，从 lo 下二比一的承载者起（一个反对读法、晚一步被读的在行规则），份额在每个偶数步下降、规则在每个奇数步下降，无尽，进程在任何一步两个方向都不锁定（Alternating.alternates、Alternating.never_locked）；其起点是锁定的构形把规则反转（Alternating.before_locked）。"
+      },
+      "declarations": [
+        "Becoming.RuleCapture.CarrierCounts.hi",
+        "Becoming.RuleCapture.CarrierCounts.lo",
+        "Becoming.RuleCapture.CarrierCounts.twoToOne",
+        "Becoming.RuleCapture.CarrierCounts.lo_le_hi",
+        "Becoming.RuleCapture.CarrierCounts.hi_not_le_lo",
+        "Becoming.RuleCapture.Alternating.course",
+        "Becoming.RuleCapture.Alternating.course_step",
+        "Becoming.RuleCapture.Alternating.before_locked",
+        "Becoming.RuleCapture.Alternating.lt_four",
+        "Becoming.RuleCapture.Alternating.from_even",
+        "Becoming.RuleCapture.Alternating.even",
+        "Becoming.RuleCapture.Alternating.odd",
+        "Becoming.RuleCapture.Alternating.alternates",
+        "Becoming.RuleCapture.Alternating.never_locked"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean",
+      "detail": {
+        "en": "A perturbation that reverses the direction is not absorbed: from the same locked configuration, the rule reversed and held for one step before the reading, the share crosses the threshold, the course is locked the other way, neither share nor rule rises again, and the rule after the first reading step is below the rule before the perturbation (Reversed.not_absorbed).",
+        "zh": "反转方向的扰动不被吸收：从同一锁定构形起，规则被反转并在读取前保持一步，份额越过阈值，进程锁向另一方向，份额与规则不再上升，第一个读取步之后的规则低于扰动前的规则（Reversed.not_absorbed）。"
+      },
+      "declarations": [
+        "Becoming.RuleCapture.Reversed.late",
+        "Becoming.RuleCapture.Reversed.course",
+        "Becoming.RuleCapture.Reversed.locked_down",
+        "Becoming.RuleCapture.Reversed.not_absorbed"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean",
+      "detail": {
+        "en": "The bound of uniform_locks is exact: under the threshold reading hi/twoToOne, which favours at every share, read at every step from one to one under lo, the course is not locked at the step after its first reading step and its rule falls across the second (Second.second_exact).",
+        "zh": "uniform_locks 的界是确切的：在每个份额都偏向的阈值读法 hi/twoToOne 下，每步都读，从 lo 下一比一起，进程在第一个读取步之后的那一步不锁定，其规则跨第二个读取步下降（Second.second_exact）。"
+      },
+      "declarations": [
+        "Becoming.RuleCapture.Second.oneToOne",
+        "Becoming.RuleCapture.Second.course",
+        "Becoming.RuleCapture.Second.second_exact",
+        "Becoming.RuleCapture.CarrierCounts.hi_not_le_twoToOne",
+        "Becoming.RuleCapture.CarrierCounts.twoToOne_le_hi"
+      ]
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T151254.157652Z): the 74 declarations of Becoming.RuleCapture, 53 of them theorems, have empty axiom reports; the checker verifies core purity. Author self-review in study section 213; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T151254.157652Z）：Becoming.RuleCapture 的 74 项声明（53 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 213 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "Real-valued shares and rates; rules that read the share and the rule in force, or a history of shares; many levels; noisy or later readings; a join with two-sided regulation of a level (board item RG) once it lands; an independent review.",
+    "zh": "实数份额与比率；读份额与在行规则、或读份额之史的规则；多层；有噪声或更迟的读法；与水平的双向调节（工作板 RG）落地后的连接；独立审查。"
+  },
+  "correspondence": {
+    "en": "Closes the third gap of the map of the Chinese sources onto the spine (record chinese-sources-on-the-spine, chapter CHINESE-SOURCES-AND-BECOMING §8; passages 二柄, 据有余而制不足, 壹赏、壹刑、壹教). RO's proposed statement takes the margin as a natural number; there its claims hold, stronger than stated (at every step, not only at reading steps). Where rules can favour the others, the lock needs a start condition, absorption holds exactly for perturbations keeping the direction, and leaving needs a change of how the rule reads where the reading favours at every share. The readings of the three passages are the AI's, D57.",
+    "zh": "闭合中国思想诸传统对脊柱之映射的第三项缺口（记录 chinese-sources-on-the-spine，《中国思想的关系本体与生成之论》§8；二柄、据有余而制不足、壹赏壹刑壹教诸段）。RO 所拟陈述以自然数为余裕；在其中它的诸论断成立，且强于所述（在每一步，而不只在读取步）。规则可以偏向他者时，锁定需要起点条件，吸收恰对保持方向的扰动成立，读法在每个份额都偏向时离开需要改变规则怎样读。三段的读法是 AI 的，D57。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean",
+  "aliases": [
+    "capture through the rule",
+    "经由规则的捕获",
+    "rule capture",
+    "the winner shapes the rule",
+    "胜者塑造规则",
+    "二柄",
+    "君反制于臣",
+    "据有余而制不足",
+    "壹赏壹刑壹教",
+    "Becoming.RuleCapture.locked_stays",
+    "Becoming.RuleCapture.perturbation_absorbed",
+    "Becoming.RuleCapture.uniform_locks",
+    "Becoming.RuleCapture.favouring_locks",
+    "Becoming.RuleCapture.CarrierCounts.margin_course"
+  ],
+  "dependencies": [
+    {
+      "id": "how-fast-a-rule-may-change",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Builds on Pace's two-level course (Pace.paced, Pace.turn, Pace.paced_succ); adds that a course read from a later step is the course from its configuration there and that the fast configuration after a step is the selection by the rule in force. The delta is a rule read from a share, with a selection as the fast step.",
+        "zh": "建立在 Pace 的两速历程之上（Pace.paced、Pace.turn、Pace.paced_succ）；增加从较后一步读起的历程即从它在那里的构形出发的历程，以及一步之后的快构形是在行规则下的选择。增量是从份额读出的规则，以选择为快步。"
+      },
+      "interface": {
+        "output": {
+          "en": "A two-level course whose rule changes only at reading steps, as a run of one law.",
+          "zh": "规则只在读取步改变的两速历程，作为一条律的运行。"
+        },
+        "input": {
+          "en": "The course on which the lock, absorption and leaving are stated.",
+          "zh": "陈述锁定、吸收与离开所在的历程。"
+        },
+        "conditions": {
+          "en": "None beyond the course's law.",
+          "zh": "除历程之律外无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Pace.lean"
+      }
+    },
+    {
+      "id": "target-capture",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses share_not_lower's comparison as the share order of counts (CarrierCounts.share_not_lower_counts) and mul_assoc_nat; the delta is the rule that Capture supposes holds the outcome, here read from the share and shown to hold it.",
+        "zh": "复用 share_not_lower 的比较作为计数的份额序（CarrierCounts.share_not_lower_counts）与 mul_assoc_nat；增量是 Capture 所设持住结果的规则，这里从份额读出，并证明它持住结果。"
+      },
+      "interface": {
+        "output": {
+          "en": "Where each carrier leaves at least as many offspring as each other parent, the share among offspring is not lower, by cross-multiplication.",
+          "zh": "每个承载者留下的后代不少于其他每个亲代时，后代中的份额以交叉相乘计不更低。"
+        },
+        "input": {
+          "en": "The order of shares on counts.",
+          "zh": "计数上份额的次序。"
+        },
+        "conditions": {
+          "en": "Others present before and after.",
+          "zh": "前后都有其他者在场。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "chinese-sources-on-the-spine",
+      "detail": {
+        "en": "The map that found the gap this record closes; its passages 二柄, 据有余而制不足 and 壹 now cite these laws.",
+        "zh": "发现本记录所闭合之缺口的映射；其二柄、据有余而制不足与壹诸段现引这些定律。"
+      }
+    },
+    {
+      "id": "a-history-read-off-its-finite-stretches",
+      "detail": {
+        "en": "Ideals.Preorder, the order this record's laws are stated for, is defined there.",
+        "zh": "本记录诸律所对之序 Ideals.Preorder 在那里定义。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Pace.paced_fast_succ",
+        "Becoming.Pace.paced_shift",
+        "Becoming.RuleCapture.Alternating.alternates",
+        "Becoming.RuleCapture.Alternating.before_locked",
+        "Becoming.RuleCapture.Alternating.course",
+        "Becoming.RuleCapture.Alternating.course_step",
+        "Becoming.RuleCapture.Alternating.even",
+        "Becoming.RuleCapture.Alternating.from_even",
+        "Becoming.RuleCapture.Alternating.lt_four",
+        "Becoming.RuleCapture.Alternating.never_locked",
+        "Becoming.RuleCapture.Alternating.odd",
+        "Becoming.RuleCapture.CarrierCounts",
+        "Becoming.RuleCapture.CarrierCounts.always_step",
+        "Becoming.RuleCapture.CarrierCounts.byMargin",
+        "Becoming.RuleCapture.CarrierCounts.byMargin_reads",
+        "Becoming.RuleCapture.CarrierCounts.disfavours",
+        "Becoming.RuleCapture.CarrierCounts.favours",
+        "Becoming.RuleCapture.CarrierCounts.hi",
+        "Becoming.RuleCapture.CarrierCounts.hi_not_le_lo",
+        "Becoming.RuleCapture.CarrierCounts.hi_not_le_twoToOne",
+        "Becoming.RuleCapture.CarrierCounts.lo",
+        "Becoming.RuleCapture.CarrierCounts.lo_le_hi",
+        "Becoming.RuleCapture.CarrierCounts.lower",
+        "Becoming.RuleCapture.CarrierCounts.lowers",
+        "Becoming.RuleCapture.CarrierCounts.margin",
+        "Becoming.RuleCapture.CarrierCounts.margin_course",
+        "Becoming.RuleCapture.CarrierCounts.margin_favours",
+        "Becoming.RuleCapture.CarrierCounts.margin_le",
+        "Becoming.RuleCapture.CarrierCounts.order",
+        "Becoming.RuleCapture.CarrierCounts.perturbation_keeps_below_counts",
+        "Becoming.RuleCapture.CarrierCounts.proportional",
+        "Becoming.RuleCapture.CarrierCounts.proportional_locks",
+        "Becoming.RuleCapture.CarrierCounts.proportional_locks_down",
+        "Becoming.RuleCapture.CarrierCounts.proportional_reads",
+        "Becoming.RuleCapture.CarrierCounts.raises",
+        "Becoming.RuleCapture.CarrierCounts.rises_strictly",
+        "Becoming.RuleCapture.CarrierCounts.rises_strictly_along",
+        "Becoming.RuleCapture.CarrierCounts.select",
+        "Becoming.RuleCapture.CarrierCounts.select_mono",
+        "Becoming.RuleCapture.CarrierCounts.share_not_lower_counts",
+        "Becoming.RuleCapture.CarrierCounts.threshold",
+        "Becoming.RuleCapture.CarrierCounts.threshold_above",
+        "Becoming.RuleCapture.CarrierCounts.threshold_below",
+        "Becoming.RuleCapture.CarrierCounts.threshold_favours",
+        "Becoming.RuleCapture.CarrierCounts.threshold_reads",
+        "Becoming.RuleCapture.CarrierCounts.twoToOne",
+        "Becoming.RuleCapture.CarrierCounts.twoToOne_le_hi",
+        "Becoming.RuleCapture.CarrierCounts.upper",
+        "Becoming.RuleCapture.Locked",
+        "Becoming.RuleCapture.Raises",
+        "Becoming.RuleCapture.ReadsShare",
+        "Becoming.RuleCapture.ReadsShare.reverse",
+        "Becoming.RuleCapture.Reversed.course",
+        "Becoming.RuleCapture.Reversed.late",
+        "Becoming.RuleCapture.Reversed.locked_down",
+        "Becoming.RuleCapture.Reversed.not_absorbed",
+        "Becoming.RuleCapture.Second.course",
+        "Becoming.RuleCapture.Second.oneToOne",
+        "Becoming.RuleCapture.Second.second_exact",
+        "Becoming.RuleCapture.favouring_locks",
+        "Becoming.RuleCapture.favours_after_reading",
+        "Becoming.RuleCapture.favours_throughout",
+        "Becoming.RuleCapture.locked_not_below",
+        "Becoming.RuleCapture.locked_rises",
+        "Becoming.RuleCapture.locked_stays",
+        "Becoming.RuleCapture.order_kept",
+        "Becoming.RuleCapture.perturbation_absorbed",
+        "Becoming.RuleCapture.perturbation_invariant",
+        "Becoming.RuleCapture.perturbation_keeps_below",
+        "Becoming.RuleCapture.reverse",
+        "Becoming.RuleCapture.turn_locked",
+        "Becoming.RuleCapture.uniform_locks"
+      ],
+      "sha256": "4d8ceb810c66aba04553ece4a09c3809b9d830d2f9ef5f02bdbd4adc6b14ae9a"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "declarations": [
+        "Becoming.Naturals.mul_mul_mul_comm",
+        "Becoming.Naturals.mul_right_comm",
+        "Becoming.mul_assoc_nat"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Pace.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Pace.paced",
+        "Becoming.Pace.turn",
+        "Becoming.Pace.paced_succ"
+      ],
+      "sha256": "ca6fcb325285ee52e7590a12197432a3ceb98a0788fa387add236a9903c04b44"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.share_not_lower"
+      ],
+      "sha256": "95eb0059f6d4e69cbe4d803a5300488ffc584126dd66eb6282ce0245972fee0d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ideals.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Ideals.Preorder"
+      ],
+      "sha256": "ec046bd626b5cf9424ca668bb7702e173ba92d0567cd6810b24fdbc537ee331e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T151254.157652Z/verification.json",
+      "role": "receipt",
+      "sha256": "666cd7a0bd65e93b343bf2f88a4f4fcc491ef78141d3c67914fc163dfc3c1793"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+      "role": "integration",
+      "sha256": "49d124d967b6e73670a167ded86c900cb020e06fb5638c447b5e22e46bf14945"
+    },
+    {
+      "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+      "role": "integration",
+      "sha256": "fb0fe2f00847be4c15585e3b382efb117f41290592c9d9332236d053a6d2107c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
+      "role": "integration",
+      "sha256": "8d83044cfd7c728aaa21e10b1fa6cf9a113ce31ca0299279c9ec89ba25eb8c5b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RuleCapture",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (RC), the third gap the map of the Chinese sources found, its proposed statement checked, sharpened where rules can favour the others, and refuted there without the start condition; study section 213; readings D57.",
+      "zh": "2026年10月19日：新增（RC），中国思想映射所见的第三项缺口；其所拟陈述经查验，在规则可偏向他者处收紧，在那里没有起点条件则被驳倒；研究第 213 节；读法 D57。"
+    },
+    {
+      "en": "19 October 2026, RG (two-sided regulation and late reading): BECOMING-RENEWAL-READING.md, CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RG added study section 214; CHINESE-SOURCES-AND-BECOMING.md: RG reprinted the passage tables of the traditions it touched, marked the first gap closed in section 8 with a paragraph after the table, and rebuilt the section 11 line of open gaps; THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts; passages.json: RG added declarations and its record to four passages, replaced the sentences of their readings that named the first gap and marked that gap closed (other passages unchanged)). The claim is unchanged.",
+      "zh": "2026年10月19日，RG（双向调节与迟读）：读过改动后，BECOMING-RENEWAL-READING.md、CHINESE-SOURCES-AND-BECOMING.md、THE-THEORY-OF-BECOMING.md、passages.json 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (BECOMING-RENEWAL-READING.md: study section 180.14 added; Capture.lean: declarations moved in or out by W2; Pace.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): DELEGATED-CHOICES.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: DELEGATED-CHOICES.md, dated restatements in current terms (E5, O2); the original decisions kept. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：DELEGATED-CHOICES.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：DELEGATED-CHOICES.md，以现行用语作出的注明日期的重述（E5、O2）；原决定保留。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): DELEGATED-CHOICES.md, CHINESE-SOURCES-AND-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: DELEGATED-CHOICES.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json); CHINESE-SOURCES-AND-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged. THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：DELEGATED-CHOICES.md、CHINESE-SOURCES-AND-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：DELEGATED-CHOICES.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）；CHINESE-SOURCES-AND-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：THE-THEORY-OF-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R23 (the refutation laws however a family is listed): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R23 changed them: BECOMING-RENEWAL-READING.md, section 215 added; THE-THEORY-OF-BECOMING.md, the listing paragraph and §8.2 row name Becoming.ListingRefutations; §9 counts and receipt follow R23. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R23（否证律对任何列出方式成立）：BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R23 改动之处改动：BECOMING-RENEWAL-READING.md，新增第 215 节；THE-THEORY-OF-BECOMING.md，列出一次一段与 §8.2 行写入 Becoming.ListingRefutations；§9 计数与回执随 R23。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 216 added; THE-THEORY-OF-BECOMING.md, the paragraph on what a finite stretch refutes cites Refutable.not_not, proved in Horizon from the law for points; §9 counts and receipt follow R26. The claim is unchanged.",
+      "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 216 节；THE-THEORY-OF-BECOMING.md，有限片段所否证者一段改引 Refutable.not_not（Horizon 由点的律证明）；§9 计数与回执随 R26。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R27 (the stepwise classes and loss): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 217 added; THE-THEORY-OF-BECOMING.md, §6.8 gains the bullet on the stepwise classes and loss; §9 counts and receipt follow R27. The claim is unchanged.",
+      "zh": "2026年10月20日，R27（逐步类别与失去）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 217 节；THE-THEORY-OF-BECOMING.md，§6.8 新增逐步类别与失去一条；§9 计数与回执随 R27。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): BECOMING-RENEWAL-READING.md, DELEGATED-CHOICES.md, THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: BECOMING-RENEWAL-READING.md, section 218 added (R25); earlier sections unchanged; DELEGATED-CHOICES.md, a dated paragraph on what widening counts (a type of formations given in advance; widening over a grown world open); the decisions unchanged; THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：BECOMING-RENEWAL-READING.md、DELEGATED-CHOICES.md、THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：BECOMING-RENEWAL-READING.md，新增第 218 节（R25）；前面各节不变；DELEGATED-CHOICES.md，一段注明日期的说明：扩大计入什么（事先给定的形成类型；在生长的世界上的扩大开放）；各决定不变；THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 219 added; Capture.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Pace.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 219 added.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 219 节；Capture.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Pace.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 219 节。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 220 added; Pace.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 220 节；Pace.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Counts.share_not_lower_counts (now CarrierCounts.share_not_lower_counts); RuleCapture.Counts (now RuleCapture.CarrierCounts); RuleCapture.Counts.always_step (now RuleCapture.CarrierCounts.always_step); RuleCapture.Counts.byMargin (now RuleCapture.CarrierCounts.byMargin); RuleCapture.Counts.byMargin_reads (now RuleCapture.CarrierCounts.byMargin_reads); RuleCapture.Counts.disfavours (now RuleCapture.CarrierCounts.disfavours); RuleCapture.Counts.favours (now RuleCapture.CarrierCounts.favours); RuleCapture.Counts.hi (now RuleCapture.CarrierCounts.hi); RuleCapture.Counts.hi_not_le_lo (now RuleCapture.CarrierCounts.hi_not_le_lo); RuleCapture.Counts.hi_not_le_twoToOne (now RuleCapture.CarrierCounts.hi_not_le_twoToOne); RuleCapture.Counts.lo (now RuleCapture.CarrierCounts.lo); RuleCapture.Counts.lo_le_hi (now RuleCapture.CarrierCounts.lo_le_hi); RuleCapture.Counts.lower (now RuleCapture.CarrierCounts.lower); RuleCapture.Counts.lowers (now RuleCapture.CarrierCounts.lowers); RuleCapture.Counts.margin (now RuleCapture.CarrierCounts.margin); RuleCapture.Counts.margin_course (now RuleCapture.CarrierCounts.margin_course); RuleCapture.Counts.margin_favours (now RuleCapture.CarrierCounts.margin_favours); RuleCapture.Counts.margin_le (now RuleCapture.CarrierCounts.margin_le); RuleCapture.Counts.mul_mul_mul_comm_nat (now RuleCapture.CarrierCounts.mul_mul_mul_comm_nat); RuleCapture.Counts.mul_right_comm_nat (now RuleCapture.CarrierCounts.mul_right_comm_nat); RuleCapture.Counts.order (now RuleCapture.CarrierCounts.order); RuleCapture.Counts.perturbation_keeps_below_counts (now RuleCapture.CarrierCounts.perturbation_keeps_below_counts); RuleCapture.Counts.proportional (now RuleCapture.CarrierCounts.proportional); RuleCapture.Counts.proportional_locks (now RuleCapture.CarrierCounts.proportional_locks); RuleCapture.Counts.proportional_locks_down (now RuleCapture.CarrierCounts.proportional_locks_down); RuleCapture.Counts.proportional_reads (now RuleCapture.CarrierCounts.proportional_reads); RuleCapture.Counts.raises (now RuleCapture.CarrierCounts.raises); RuleCapture.Counts.rises_strictly (now RuleCapture.CarrierCounts.rises_strictly); RuleCapture.Counts.rises_strictly_along (now RuleCapture.CarrierCounts.rises_strictly_along); RuleCapture.Counts.select (now RuleCapture.CarrierCounts.select); RuleCapture.Counts.select_mono (now RuleCapture.CarrierCounts.select_mono); RuleCapture.Counts.share_not_lower_counts (now RuleCapture.CarrierCounts.share_not_lower_counts); RuleCapture.Counts.threshold (now RuleCapture.CarrierCounts.threshold); RuleCapture.Counts.threshold_above (now RuleCapture.CarrierCounts.threshold_above); RuleCapture.Counts.threshold_below (now RuleCapture.CarrierCounts.threshold_below); RuleCapture.Counts.threshold_favours (now RuleCapture.CarrierCounts.threshold_favours); RuleCapture.Counts.threshold_reads (now RuleCapture.CarrierCounts.threshold_reads); RuleCapture.Counts.twoToOne (now RuleCapture.CarrierCounts.twoToOne); RuleCapture.Counts.twoToOne_le_hi (now RuleCapture.CarrierCounts.twoToOne_le_hi); RuleCapture.Counts.upper (now RuleCapture.CarrierCounts.upper). Proof bindings (RuleCapture.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: DELEGATED-CHOICES.md, names follow the R30 rename table; passages.json, rebuilt: the declarations and the names in the readings follow the R30 table, each so corrected passage marked; Ideals.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Pace.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; RuleCapture.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; CHINESE-SOURCES-AND-BECOMING.md, names follow the R30 rename table; the passage tables are the rebuilt map; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Counts.share_not_lower_counts（现为 CarrierCounts.share_not_lower_counts）；RuleCapture.Counts（现为 RuleCapture.CarrierCounts）；RuleCapture.Counts.always_step（现为 RuleCapture.CarrierCounts.always_step）；RuleCapture.Counts.byMargin（现为 RuleCapture.CarrierCounts.byMargin）；RuleCapture.Counts.byMargin_reads（现为 RuleCapture.CarrierCounts.byMargin_reads）；RuleCapture.Counts.disfavours（现为 RuleCapture.CarrierCounts.disfavours）；RuleCapture.Counts.favours（现为 RuleCapture.CarrierCounts.favours）；RuleCapture.Counts.hi（现为 RuleCapture.CarrierCounts.hi）；RuleCapture.Counts.hi_not_le_lo（现为 RuleCapture.CarrierCounts.hi_not_le_lo）；RuleCapture.Counts.hi_not_le_twoToOne（现为 RuleCapture.CarrierCounts.hi_not_le_twoToOne）；RuleCapture.Counts.lo（现为 RuleCapture.CarrierCounts.lo）；RuleCapture.Counts.lo_le_hi（现为 RuleCapture.CarrierCounts.lo_le_hi）；RuleCapture.Counts.lower（现为 RuleCapture.CarrierCounts.lower）；RuleCapture.Counts.lowers（现为 RuleCapture.CarrierCounts.lowers）；RuleCapture.Counts.margin（现为 RuleCapture.CarrierCounts.margin）；RuleCapture.Counts.margin_course（现为 RuleCapture.CarrierCounts.margin_course）；RuleCapture.Counts.margin_favours（现为 RuleCapture.CarrierCounts.margin_favours）；RuleCapture.Counts.margin_le（现为 RuleCapture.CarrierCounts.margin_le）；RuleCapture.Counts.mul_mul_mul_comm_nat（现为 RuleCapture.CarrierCounts.mul_mul_mul_comm_nat）；RuleCapture.Counts.mul_right_comm_nat（现为 RuleCapture.CarrierCounts.mul_right_comm_nat）；RuleCapture.Counts.order（现为 RuleCapture.CarrierCounts.order）；RuleCapture.Counts.perturbation_keeps_below_counts（现为 RuleCapture.CarrierCounts.perturbation_keeps_below_counts）；RuleCapture.Counts.proportional（现为 RuleCapture.CarrierCounts.proportional）；RuleCapture.Counts.proportional_locks（现为 RuleCapture.CarrierCounts.proportional_locks）；RuleCapture.Counts.proportional_locks_down（现为 RuleCapture.CarrierCounts.proportional_locks_down）；RuleCapture.Counts.proportional_reads（现为 RuleCapture.CarrierCounts.proportional_reads）；RuleCapture.Counts.raises（现为 RuleCapture.CarrierCounts.raises）；RuleCapture.Counts.rises_strictly（现为 RuleCapture.CarrierCounts.rises_strictly）；RuleCapture.Counts.rises_strictly_along（现为 RuleCapture.CarrierCounts.rises_strictly_along）；RuleCapture.Counts.select（现为 RuleCapture.CarrierCounts.select）；RuleCapture.Counts.select_mono（现为 RuleCapture.CarrierCounts.select_mono）；RuleCapture.Counts.share_not_lower_counts（现为 RuleCapture.CarrierCounts.share_not_lower_counts）；RuleCapture.Counts.threshold（现为 RuleCapture.CarrierCounts.threshold）；RuleCapture.Counts.threshold_above（现为 RuleCapture.CarrierCounts.threshold_above）；RuleCapture.Counts.threshold_below（现为 RuleCapture.CarrierCounts.threshold_below）；RuleCapture.Counts.threshold_favours（现为 RuleCapture.CarrierCounts.threshold_favours）；RuleCapture.Counts.threshold_reads（现为 RuleCapture.CarrierCounts.threshold_reads）；RuleCapture.Counts.twoToOne（现为 RuleCapture.CarrierCounts.twoToOne）；RuleCapture.Counts.twoToOne_le_hi（现为 RuleCapture.CarrierCounts.twoToOne_le_hi）；RuleCapture.Counts.upper（现为 RuleCapture.CarrierCounts.upper）。证明绑定（RuleCapture.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：DELEGATED-CHOICES.md，名称随 R30 改名表；passages.json，重建：声明与读法中的名称随 R30 改名表，每个如此更正的段落有标注；Ideals.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Pace.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；RuleCapture.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；CHINESE-SOURCES-AND-BECOMING.md，名称随 R30 改名表；逐句对应表为重建之图；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Capture.lean to Prelude.lean, mul_assoc_nat. Removed, with the statement kept under one name: RuleCapture.CarrierCounts.mul_mul_mul_comm_nat (now Naturals.mul_mul_mul_comm); RuleCapture.CarrierCounts.mul_right_comm_nat (now Naturals.mul_right_comm). Proof bindings (RuleCapture.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Capture.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; RuleCapture.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Capture.lean 到 Prelude.lean：mul_assoc_nat。删去，陈述以一个名称保留：RuleCapture.CarrierCounts.mul_mul_mul_comm_nat（现为 Naturals.mul_mul_mul_comm）；RuleCapture.CarrierCounts.mul_right_comm_nat（现为 Naturals.mul_right_comm）。证明绑定（RuleCapture.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Capture.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；RuleCapture.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Prelude.lean, RuleCapture.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Capture.lean, takes as its final section CaptureWorlds, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Ideals.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Pace.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; RuleCapture.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Prelude.lean、RuleCapture.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Capture.lean，以末节收入 CaptureWorlds（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Ideals.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Pace.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；RuleCapture.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; DELEGATED-CHOICES.md, D2 revised (the formation-level reading dropped from \"generative\"), D1 states the GrownBy blocker; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；DELEGATED-CHOICES.md，D2 修订（“生成的”不再取形成层次的读法），D1 写明 GrownBy 的障碍；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

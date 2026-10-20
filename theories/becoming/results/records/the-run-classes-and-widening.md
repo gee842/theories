@@ -86,7 +86,12 @@ Aliases: `the run classes and widening`, `整段的类与扩大`, `Becoming.Flow
 ### History
 
 - 20 October 2026: added (R34, D2 and F13 of the twentieth review): the run classes related to widening under named premises, with Preemption and Untaken as boundaries; study section 225.
-- 20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.
+- 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](the-run-classes-and-widening.json).
+
+<a id="earlier-text--早期文本"></a>
+### Earlier text
+
+- [the-run-classes-and-widening.json](../../../../_process/architecture/history/5c38af11fe02837b/the-run-classes-and-widening.json) (sha256 `5c38af11fe02837b…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

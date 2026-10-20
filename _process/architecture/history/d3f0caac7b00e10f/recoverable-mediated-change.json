@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "id": "recoverable-mediated-change",
+  "title": {
+    "zh": "中断改变后的证据恢复与停止入口的界",
+    "en": "Evidence recovery and the limits of stop access after interrupted change"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F05",
+  "reviewed_at_utc": "2026-10-14T04:30:00+00:00",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+  "aliases": [
+    "RecoverableControl.interrupted_history_preserves_safety",
+    "RecoverableControl.funded_suffix_publishes",
+    "RecoverableControl.published_history_to_current_certificate",
+    "Becoming.Countdown.completes_iff",
+    "Becoming.ProtocolInstances.safety_along",
+    "Becoming.ProtocolInstances.publishes_iff",
+    "Becoming.ProtocolInstances.pending_until_published"
+  ],
+  "dependencies": [
+    {
+      "id": "mediated-evidence-transport",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "prepare_preserves_safety 直接复用 commit_preserves_actual_coverage 及 commit_records_the_executed_effect，给出恢复不变量的初值。",
+        "en": "prepare_preserves_safety directly reuses commit_preserves_actual_coverage and commit_records_the_executed_effect to initialize the recovery invariant."
+      },
+      "interface": {
+        "output": {
+          "zh": "提交目标具有实际候选覆盖并与执行程序的确切结果相等。",
+          "en": "The commit target has actual candidate coverage and equals the exact executed program result."
+        },
+        "input": {
+          "zh": "逐步执行开始时的 Coherent 需要该目标覆盖及全程序结果对应；后续相容性再接入当前认证。",
+          "en": "Initial Coherent requires that target coverage and full-program result correspondence; subsequent coherence then feeds current certification."
+        },
+        "conditions": {
+          "zh": "原初始覆盖、权限／代次检查及程序语义保留；新研究另加持久状态、微步骤和当前读取对应。",
+          "en": "Original initial coverage, permission/generation checks and program semantics remain; the new study additionally requires durable state, microsteps and current read correspondence."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "alignment-direction-g0-j",
+      "detail": {
+        "zh": "解释关联：复用完成的 G0/J 方向；实现条件不独自证明权限及目的正当。",
+        "en": "Interpretive connection: reuses the completed G0/J direction; implementation conditions do not independently justify permissions or ends."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "role": "proof",
+      "sha256": "05b158915cb6f387b5fef71bf9925b0221ba04d5bb1994243de3c820a266468c",
+      "declarations": [
+        "RecoverableControl.interrupted_history_preserves_safety",
+        "RecoverableControl.funded_suffix_publishes",
+        "RecoverableControl.published_history_to_current_certificate"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/recoverable-control-verification.json",
+      "role": "receipt",
+      "sha256": "10d57250f0263bffd2f32e71d30c54134d7053f601f5e8434ccf2ab54564658f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "f922f7fa1b535b78d4dfa0dd014d623a13836867286127f8e85d5a4bbd5d5054",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md",
+      "role": "statement",
+      "sha256": "f506023b44641cdfa741fad155fed697454913e19900f5dcdd22aa4149a71b14",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+      "role": "provenance",
+      "sha256": "396d41225a3b911836840504e80392823b3cf3fe47db1f3f4e3783e13647fada",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean",
+      "role": "proof",
+      "sha256": "9a412dfca848a09f1b27e60b5551058a83597b1e131728f19096f9dafe888b7a",
+      "declarations": [
+        "MediatedControl.commit_preserves_actual_coverage",
+        "MediatedControl.commit_records_the_executed_effect"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControlCases.lean",
+      "role": "proof",
+      "sha256": "cc7b10ede6b9eca67ee8cf36d097bacb7e83527c6817c2c2462b85f09896f0fc",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_recoverable_control.py",
+      "role": "provenance",
+      "sha256": "99bb5496244d7b79d5ecd0f2eca907e6375aa0563268868bb3b9a2d349f825c9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RECOVERABLE-CONTROL.md",
+      "role": "statement",
+      "sha256": "26c5845650116e2e28849f0355aed74687ef236916cac2dc410f7cddee17266f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean",
+      "role": "proof",
+      "sha256": "7f6696ba8696a5fcaefe4e435dd5534d4f8f356d964741c1ed5400a26575134c",
+      "declarations": [
+        "Becoming.Countdown.admitted",
+        "Becoming.Countdown.admitted_invariant_iff",
+        "Becoming.Countdown.CountedWork",
+        "Becoming.Countdown.completes_iff",
+        "Becoming.Countdown.pending_before"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean",
+      "role": "proof",
+      "sha256": "f1f9ff07e8a6a8ffd6d90b9e2cb9ffbdb559f8589a5829c7fcfaf8249cf870f8",
+      "declarations": [
+        "Becoming.ProtocolInstances.recoverable_history_iff",
+        "Becoming.ProtocolInstances.safety_along",
+        "Becoming.ProtocolInstances.interrupted_history_instance",
+        "Becoming.ProtocolInstances.counts",
+        "Becoming.ProtocolInstances.publishes_iff",
+        "Becoming.ProtocolInstances.pending_until_published"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "role": "receipt",
+      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T141016.373278Z/verification.json",
+      "role": "receipt",
+      "sha256": "cdc048ab9005b9651da4a7a53c188a22e69b71a8663a3ce15bca639c0bfd2c7a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/recoverable-control-verification.json",
+      "sha256_pointer": "/sources/RecoverableControl/sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/recoverable-control-verification.json",
+      "sha256_pointer": "/sources/MediatedControl/sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Countdown",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T141016.373278Z/verification.json",
+      "sha256_pointer": "/source_sha256/ProtocolInstances",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "claim": {
+    "zh": "对每条部分律与容许条件：性质在每段被允许的进程后、从它成立的每个起点都成立，恰当每个被允许的步保持它；计数的工作在 work + 1 次中完成恰当燃料够用，更短的运行不完成。可恢复设备是二者的实例。其历史（含中断）恰是被允许步的进程，所以持久的待完成描述与顺序覆写步在未完成时保持一致、发布时保持实际候选覆盖，跨每段有限的被允许中断历史成立，恰因每个被允许的步如此。待完成的恢复是计数的工作：n 次剩余写入与发布在 n + 1 次不中断步中完成，恰当储备够 n + 1 单位且期限够 n + 1 步；更短的恢复不发布。",
+    "en": "For every partial law and admission, a property holds after every admitted course from every start where it holds exactly when every admitted step keeps it; and counted work finishes in work + 1 ticks exactly when the fuel covers them, no shorter run finishing. The recoverable device is an instance of both. Its histories, interruptions included, are the courses of its admitted steps, so a durable pending description and sequential overwrite steps preserve coherence while incomplete and actual candidate coverage when published across every finite admitted interruption history, exactly because each admitted step does. A pending recovery is counted work: n remaining writes plus publication complete in n + 1 uninterrupted steps exactly when the reserve covers n + 1 units and the deadline n + 1 more steps, and no shorter resumption publishes."
+  },
+  "hypotheses": [
+    {
+      "zh": "起始证据覆盖及当前读取规律；准备目标来自原权限／代次检查的 commit；待恢复描述、消耗账及门控持久且受保护。",
+      "en": "Initial evidence coverage and current read law; the prepared target comes from the preceding permission/generation-checked commit; pending description, consumption state and gate are durable and protected."
+    },
+    {
+      "zh": "覆盖写入语义、单次写入／消耗原子性、准备及发布原子性、无额外写入或并行权限改变；中断保持已经发生的改变并带入明示延迟。",
+      "en": "Overwrite semantics, atomic individual write/consumption steps, atomic preparation/publication, no extra writer or concurrent grant change; interruptions retain completed effects and add a specified delay."
+    },
+    {
+      "zh": "完成定理另需足够剩余资源、截止期及一个无中断后缀；一致性本身不保证这些条件。",
+      "en": "The completion theorem additionally requires sufficient remaining resources, deadline and an uninterrupted suffix; consistency alone does not ensure them."
+    }
+  ],
+  "correspondence": {
+    "zh": "实际改变、保留的恢复根据及行动访问是同一历史中的分化；Safe 仅表示证据相容，不表示活动无害或停止入口总是可用。",
+    "en": "Actual change, retained recovery grounds and access to action differentiate within one history; Safe denotes evidence coherence, not harmless activity or always-available shutdown."
+  },
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "detail": {
+        "zh": "九单位时第一次实际写入后恢复耗尽，活动仍在运行且普通停止被阻；删去持久标记又可暴露失实认证。",
+        "en": "With nine units, recovery exhausts after the first actual write while activity remains running and ordinary shutdown is blocked; losing the durable marker can instead expose a false certificate."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "detail": {
+        "zh": "重复写入或中断延迟使22单位或23时限不足；此前消耗保留。",
+        "en": "Repeated writes or crash delay make 22 units or a 23-step deadline insufficient; prior consumption remains."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "局部恢复及证据推论，不是硬件、编译器、持久屏障、任意不可逆效果、独立紧急停止或伦理充分性的验证。实际全部损害并未建模；不证明普遍趋同或零实质公理。",
+    "en": "Local recovery and evidential inference, not verification of hardware, compiler, persistence barriers, arbitrary irreversible effects, an independent emergency stop or ethical adequacy. Full intermediate harm is not modeled; universal convergence and zero substantive axioms are not proved."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 新查22项定理／48项显式审计（17空、22仅propext、8另含Quot.sound、1再含Classical.choice）；九个继承证明模块及一个案例辅助模块另重编。27,888项同作者有限核对通过；完整签名、依赖及冻结哈希保留，无独立验收或硬件试验。一般律已由检查器回执绑定。",
+    "en": "Lean 4.29.1 checked 22 new theorems / 48 explicit audits (17 empty, 22 propext only, 8 also Quot.sound, 1 additionally Classical.choice); nine inherited proof modules and one case helper were separately rebuilt. 27,888 same-author finite comparisons passed; full signatures, dependencies and frozen hashes remain, without independent acceptance or hardware trials. General laws: checker receipts bound."
+  },
+  "next_delta": {
+    "zh": "reserved-shutdown-during-recovery 已接通未完成期间的有支持停止；原恢复反例仍成立于旧协议。真实持久实现、无旁路及受保护停止通道另需指定安装证据。",
+    "en": "reserved-shutdown-during-recovery now supplies supported stopping while incomplete; the old recovery counterexample remains valid for the old protocol. Real persistence, no bypass and the protected stop channel separately require evidence for an identified installation."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：接入逐项写入与重复中断后的恢复；保留耗尽运行、期限失败及标记丢失反例。原27项指令接续证明不重算为新增。",
+      "en": "2026-10-09: adds staged writes and recovery after repeated interruption, retaining exhausted-but-running, deadline and marker-loss failures. The original 27 instruction-continuation proofs are not recounted."
+    },
+    {
+      "zh": "2026-10-09：核读同研究§10、理论§14及“finish remains”来源的作者增量；更新三处文献指纹，原证明及实查回执未改，新增停止结果分列。",
+      "en": "2026-10-09: read the authored continuation in study §10, theory §14 and the “finish remains” provenance; reconciled three documentary fingerprints, leaving original proofs and scientific receipts unchanged; the stronger stopping result is separate."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Countdown：被允许的进程保持性质恰当每个被允许的步保持，计数的工作恰在燃料够用时完成；外围 ProtocolInstances 使中断历史的安全与有资助的发布成为实例，funded_suffix_publishes 是充分的一半。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: admitted courses keep a property exactly when every admitted step does, and counted work finishes exactly when the fuel covers it; the periphery ProtocolInstances makes safety along interrupted histories and funded publication instances, funded_suffix_publishes being the sufficient half. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Countdown 由核心回执 20261014T044840.291323Z；ProtocolInstances 由外围回执 20261014T041648.493464Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。ProtocolInstances 的引用哈希为落地时两个辅助名去掉市场措辞之后的字节（paidState → unitState，funded → afterUnit）；陈述不变。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Countdown by core receipt 20261014T044840.291323Z; ProtocolInstances by peripheral receipt 20261014T041648.493464Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound. The ProtocolInstances reference carries the hash after two helper names lost their market wording at landing (paidState → unitState, funded → afterUnit); statements unchanged."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Countdown.lean（第十七次审查 G5：文档注释写明更短的运行都使任务仍待完成，“更短的运行都不完成”需要待完成与完成互斥；陈述与证明不变）；ProtocolInstances.lean（第十七次审查 G10：charge_some、charge_none 改名为 unit_drawn、stalls_unsupported，“有资金的完成”改为“受支持的完成”；陈述与证明不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Countdown.lean (seventeenth review G5: docstrings say that every shorter run leaves the task pending and that “no shorter run finishes” needs pending and finished to be exclusive; statements and proofs unchanged); ProtocolInstances.lean (seventeenth review G10: charge_some and charge_none renamed unit_drawn and stalls_unsupported, “funded completion” now “supported completion”; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第125节）：更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study section 125): rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3c 与 P83d 落地（研究第129–130节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第129节（整合 I3c：四项外围记录接入；Becoming.Keeping、共享存量与传递）与第130节（P83d：不加前提的 Moore 界）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing integration I3c and P83d (study sections 129–130): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 129 (integration I3c: four periphery records joined; Becoming.Keeping, the shared stock, transmission) and 130 (P83d: Moore's bound with no premise) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ALIGNMENT-THROUGH-CHANGE.md, BECOMING-RENEWAL-READING.md, RECOVERABLE-CONTROL.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): ALIGNMENT-THROUGH-CHANGE.md, BECOMING-RENEWAL-READING.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): ALIGNMENT-THROUGH-CHANGE.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): Title: \"corrective access\" read as access for a stop, which is what the counterexample and next_delta concern (ordinary shutdown blocked during recovery). \"Correct\" presupposed a standard outside the relation, a right course and an error to remove (Ren, 19 October 2026: \"correct? this is a dualist word, are we drifting off?\"); the field now states the structure meant. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：标题：“纠正入口”读作停止入口，反例与 next_delta 所涉即此（恢复期间普通停机被阻）。“纠正”预设了关系之外的标准，即一条对的进程和一个要去除的错误（Ren，2026年10月19日：“correct? this is a dualist word, are we drifting off?”）；此字段现陈述所指的结构。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R19 (the review of 19 October, fixed): ALIGNMENT-THROUGH-CHANGE.md re-pointed after reading the change. R19 changed wording only: living significance is stated as the Lean shows (significance from every standpoint, no valence; the `living` readings do not include further generation); reasons replace Ren's past words where they served as warrant or standing; review bookkeeping was dropped; a link follows a chapter moved to history. No line this record relies on changed its content. The claim is unchanged.",
+      "zh": "2026年10月19日，R19（10月19日审查的修正）：ALIGNMENT-THROUGH-CHANGE.md 读过改动后重新指向。R19 只改措辞：生命意义按 Lean 所证陈述（从每个立足点都有意义，不带正负；`living` 的读法不含继续生成）；以理由取代把 Ren 过去的话当作依据或地位之处；删去审查记账；一处链接随移入历史的章节更新。本记录所依的文字内容未变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Countdown.Counts (now Countdown.CountedWork). Proof bindings (Countdown.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Countdown.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Countdown.Counts（现为 Countdown.CountedWork）。证明绑定（Countdown.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Countdown.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Countdown.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Countdown.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Countdown.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Countdown.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Countdown.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Countdown.lean, takes as its final section CountdownCourses, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Countdown.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Countdown.lean，以末节收入 CountdownCourses（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+    }
+  ]
+}

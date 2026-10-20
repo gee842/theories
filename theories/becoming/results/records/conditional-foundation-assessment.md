@@ -82,12 +82,13 @@ Aliases: —
 - 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.
 - 2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence (verbatim identical to the former first “counterexample”, which was a scope boundary) was split into 3 typed does-not-show items, absorbing that duplicate entry; 2 progress lines link the existing five-condition assessment and root acceptance. No claim, premise, status, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/conditional-foundation-assessment.md); the exact earlier record is text_versions[0].
-- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](conditional-foundation-assessment.json).
+- 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](conditional-foundation-assessment.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text
 
 - [conditional-foundation-assessment.json](../../../../_process/architecture/history/f6f1a702917ff753/conditional-foundation-assessment.json) (sha256 `f6f1a702917ff753…`): Exact record bytes before the readability migration (schema 1).
+- [conditional-foundation-assessment.json](../../../../_process/architecture/history/2ff694982fcbe63b/conditional-foundation-assessment.json) (sha256 `2ff694982fcbe63b…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

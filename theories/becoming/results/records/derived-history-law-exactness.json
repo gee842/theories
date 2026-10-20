@@ -253,49 +253,12 @@
       "zh": "2026年10月9日：接入Ren关于整体／manifold的修正。必然性对象是Becoming整体，生成性位于其中。保留此前理论、研究及证明源码；无新增定理或公理。"
     },
     {
-      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心一般定律的实例。核心（Becoming.Readout）对每一未必确定的规律无前提地证明：经约化读出的规律（image）从每一约化值走的词恰是该配置能走的词，对每一配置皆然，恰当约化所合并的配置能走相同的词（futures_through_iff），即 law_through_iff 的非确定对应。在语言的已承认历史上（每步加一动作；前缀封闭下 admitted_feasible_iff），derivedProcess 即经摘要读出的规律（derived_same_steps），所以 exact_iff_fiber_future 即该定律（exact_iff_fiber_future_by_core），公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 DerivedHistoryLaw，脊柱运行将其与 ContinuationConditions 作为继承模块编译。",
-      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core (Becoming.Readout) proves, for every law that need not be determined, that the law read through a reduction (image) takes from each reduced value exactly the words the configuration can take, for every configuration, exactly when configurations the reduction merges can take the same words (futures_through_iff), the nondeterministic counterpart of law_through_iff. On a language's admitted histories, each step adding one move (admittedProcess; admitted_feasible_iff under prefix closure), derivedProcess is the law read through the summary (derived_same_steps), so exact_iff_fiber_future is that law (exact_iff_fiber_future_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports DerivedHistoryLaw, which the spine run compiles as an inherited module with ContinuationConditions."
-    },
-    {
-      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
-      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Readout.lean（整合 I3d：新增列出之族的判断（LumpedOn、Judges、lumpedOn_of_judges、firstJudge、firstJudge_judges、judges_iff_lumpedOn、no_judge_of_merged）与经由部分的读取（ThroughParts、ReadsDirectly、agree_iff_parts、supplied_agree_iff_parts）；原有陈述不变）；Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Readout.lean (integration I3d: judging a listed family (LumpedOn, Judges, lumpedOn_of_judges, firstJudge, firstJudge_judges, judges_iff_lumpedOn, no_judge_of_merged) and readings through parts (ThroughParts, ReadsDirectly, agree_iff_parts, supplied_agree_iff_parts) added; earlier statements unchanged); Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in DEDUCTIVE-FOUNDATION-TEST.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
-      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "18 October 2026, F2 (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): every theorem of DerivedHistoryLaw.lean is stated in the core (port-f2.md, all graded same or step). The canonical source is now Readout.lean; SummaryFutures.lean states the rest (every_word, futures_through, endpoint_moved). DerivedHistoryLaw.lean keeps its path and bytes and its old receipt; its retirement from the run is the sweep's (F3). The claim is unchanged."
-    },
-    {
-      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
-      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
-    },
-    {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Readout.lean). The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Removed, with the statement kept under one name: Readout.image (now Image). Proof bindings (Readout.lean, SummaryFutures.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Readout.lean, Readout.image removed for Image of Becoming.Mechanism; SummaryFutures.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：删去，陈述以一个名称保留：Readout.image（现为 Image）。证明绑定（Readout.lean、SummaryFutures.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Readout.lean，删去 Readout.image，改用 Becoming.Mechanism 的 Image；SummaryFutures.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变。论断不变。"
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Mechanism.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Mechanism.lean, GoAlike moved to Laws.lean, defined as GoAlikeUnder at equality. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Mechanism.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Mechanism.lean，GoAlike 移到 Laws.lean，定义为相等处的 GoAlikeUnder。论断不变。"
+      "en": "2026-10-20: 11 bookkeeping notes condensed from 14 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/75b9af4fa4074dab/derived-history-law-exactness.json and in git.",
+      "zh": "2026-10-20：11 条记账性说明合并（14 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/75b9af4fa4074dab/derived-history-law-exactness.json 和 git 中。"
     }
   ]
 }

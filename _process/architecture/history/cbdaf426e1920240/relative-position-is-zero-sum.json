@@ -1,0 +1,464 @@
+{
+  "schema_version": 2,
+  "id": "relative-position-is-zero-sum",
+  "title": {
+    "en": "Relative position is zero-sum; a race ends those ahead only through their dependence",
+    "zh": "相对位置是零和的；竞逐只经由依赖终结领先者"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T11:15:08+00:00",
+  "statement": {
+    "en": "A part's position against the others is zero-sum by counting: its rise is the rest's summed fall, whatever the amounts do. A race of joint excess ends a part through its dependence on the condition, not its position; where those ahead do not so depend, they can continue.",
+    "zh": "一个部分相对其余部分的位置按计数是零和的：它升即其余部分之和降，不论各量如何变化。联合超出的竞逐经由一个部分对条件的依赖、而非其位置终结它；领先者若不如此依赖，则可延续。"
+  },
+  "laws": [
+    {
+      "en": "Zero-sum is counting. A part's position is its amount counted once for each part (ahead) against the family's total (behind); over the family the ahead counts total what the behind counts total. Across every change of amounts the rise counts total what the fall counts total, so a part's change of position is the opposite of the change summed over the rest, and where it rises the rest's summed position falls.",
+      "zh": "零和是计数。一个部分的位置，是它的量按部分数计入（在前）对全族之总（在后）；全族的在前计数之和等于在后计数之和。在量的每一变化中，升计数之和等于降计数之和，所以一个部分的位置变化恰是其余部分变化之和的相反；它升，则其余部分的位置之和降。",
+      "declarations": [
+        "Becoming.total_const",
+        "Becoming.RelativePosition.total_split",
+        "Becoming.RelativePosition.positions_balance",
+        "Becoming.RelativePosition.riseCount",
+        "Becoming.RelativePosition.fallCount",
+        "Becoming.RelativePosition.change_balances",
+        "Becoming.RelativePosition.change_opposed",
+        "Becoming.RelativePosition.rest_falls_of_rises"
+      ]
+    },
+    {
+      "en": "No change raises every part's position, and a part's rise needs another part's fall, found by a decided comparison, not by contradiction.",
+      "zh": "没有一个变化使每个部分的位置都升；一个部分升需要另一部分降，后者由可判定的比较找到，而非由反证。",
+      "declarations": [
+        "Becoming.RelativePosition.total_lt_of_mem",
+        "Becoming.RelativePosition.not_all_rise",
+        "Becoming.RelativePosition.below_somewhere_or_not",
+        "Becoming.RelativePosition.rise_needs_fall"
+      ]
+    },
+    {
+      "en": "A nonempty family has a greatest part, no part's amount exceeding its own, and its position is not below the family's.",
+      "zh": "非空的族有一个最大的部分（没有部分的量超过它），其位置不低于全族。",
+      "declarations": [
+        "Becoming.RelativePosition.Greatest",
+        "Becoming.RelativePosition.greatest_exists",
+        "Becoming.RelativePosition.greatest_not_behind"
+      ]
+    },
+    {
+      "en": "On a flow, read by what each part of a family has drawn from a condition, between any two steps, the laws above hold with no hypothesis on the flow; and where every part draws more, a part's position can still fall.",
+      "zh": "在流上，以族中每个部分从一个条件所取之量来读，任意两步之间，上述规律成立，对流不加任何假设；每个部分都取得更多时，一个部分的位置仍可降。",
+      "declarations": [
+        "Becoming.Flow.drawn",
+        "Becoming.Flow.drawn_positions",
+        "Becoming.DrawingMore.flow",
+        "Becoming.DrawingMore.grow_and_fall"
+      ]
+    },
+    {
+      "en": "The dependence that ends a part at the end of a race, exactly: with balance at the condition across n steps of joint excess from T, a part that at T + n requires the condition, at a need greater than the level at T less n, and is active there only while supported, is not active there. Its position does not enter, and no renewal need be gated.",
+      "zh": "在竞逐结束时终结一个部分的依赖，确切地说：条件在自 T 起 n 步联合超出中平衡，一个部分若在 T + n 依赖该条件、其需要大于 T 时水平减 n，且只在被支持时活跃，则它在那时不活跃。它的位置不进入其中，也不需要更新受门控。",
+      "declarations": [
+        "Becoming.Flow.excess_leaves_below",
+        "Becoming.Flow.ends_at_race_end"
+      ]
+    },
+    {
+      "en": "With renewal gated (the hypotheses of Flow.joint_excess_ends), the race changes positions by a zero-sum count while the level falls by at least n, the level stays below m, and every part depending on the condition at a need of at least m is inactive from then on, the greatest parts included; in a family whose parts all so depend, at every later step there is a greatest part and every greatest part is inactive. In Race each part takes within what the step gives and together they take more; the greatest part rises in position across the race and ends with the condition, as does every part.",
+      "zh": "在更新受门控时（Flow.joint_excess_ends 的假设），竞逐以零和计数改变位置，而水平至少降 n，此后保持低于 m，每个以至少 m 之需依赖该条件的部分此后都不活跃，最大的部分也在其中；若族中各部分都如此依赖，则此后每一步都有最大的部分，且每个最大的部分都不活跃。在 Race 中，每个部分所取都在该步所给之内，合起来却取得更多；最大的部分在竞逐中位置上升，却与条件一同终结，每个部分亦然。",
+      "declarations": [
+        "Becoming.Flow.race_ends_greatest",
+        "Becoming.Flow.greatest_end_for_good",
+        "Becoming.Race.Member",
+        "Becoming.Race.level",
+        "Becoming.Race.live",
+        "Becoming.Race.present",
+        "Becoming.Race.flow",
+        "Becoming.Race.web",
+        "Becoming.Race.balances",
+        "Becoming.Race.live_of_present",
+        "Becoming.Race.acting",
+        "Becoming.Race.dependent",
+        "Becoming.Race.gated",
+        "Becoming.Race.drawn_renewer",
+        "Becoming.Race.drawn_second_le",
+        "Becoming.Race.first_greatest",
+        "Becoming.Race.excess",
+        "Becoming.Race.all",
+        "Becoming.Race.first_rises",
+        "Becoming.Race.greatest_ends"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. The counting laws use no premise and hold for every reading of amounts. The end at the race's end needs balance at the condition across the race, joint excess at each step, a start below n plus the part's need, and the part requiring the condition and being active only while supported. The end for good adds Flow.joint_excess_ends' hypotheses: balance, only active formations giving, activity needing support and renewal gated at m. The continuation condition enters only as a hypothesis of Clearing.loss_needs_significance.",
+      "zh": "无公理。计数规律不用任何前提，对每一种量的读法成立。竞逐结束时的终结，需要条件在竞逐中平衡、每步联合超出、起点低于 n 加该部分之需，以及该部分依赖该条件且只在被支持时活跃。持久的终结另加 Flow.joint_excess_ends 的假设：平衡、只有活跃者给予、活跃需要支持，以及更新在 m 处受门控。延续条件只作为 Clearing.loss_needs_significance 的假设出现。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That a race for relative position produces joint excess: that is a premise of the join, not derived from the counting law or from any race dynamic.",
+      "zh": "相对位置的竞逐会产生联合超出：这是连接的前提，并非由计数规律或任何竞逐动力推出。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "That any actual part depends on what its race draws down: for the present race this is the empirical premise the opening calls the entangled Earth.",
+      "zh": "任何实际的部分依赖其竞逐所耗取的：对当前的竞逐，这是开篇称为纠缠的地球的经验前提。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "Positions read as ranks or shares, several shared conditions with different needs, or the dynamics by which parts race.",
+      "zh": "以名次或份额读的位置、需要不同的多个共享条件，或各部分竞逐的动力。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RelativePosition.lean",
+      "detail": {
+        "en": "Gated renewal is needed for the end to last: in Restored a renewer that requires nothing gives at the race's end; the race ends the part, greatest at every step, at its end (through Flow.ends_at_race_end), and the renewal restores it from the next step on (Restored.returns).",
+        "zh": "要终结持久，需要更新受门控：在 Restored 中，一个不依赖任何条件的更新者在竞逐结束时给予；竞逐在结束时终结那个每步都最大的部分（经 Flow.ends_at_race_end），更新使它从下一步起恢复（Restored.returns）。"
+      },
+      "declarations": [
+        "Becoming.Restored.Member",
+        "Becoming.Restored.level",
+        "Becoming.Restored.takeAt",
+        "Becoming.Restored.giveAt",
+        "Becoming.Restored.live",
+        "Becoming.Restored.flow",
+        "Becoming.Restored.web",
+        "Becoming.Restored.balances",
+        "Becoming.Restored.acting",
+        "Becoming.Restored.dependent",
+        "Becoming.Restored.drawn_renewer",
+        "Becoming.Restored.returns"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RelativePosition.lean",
+      "detail": {
+        "en": "Dependence is needed: in the clearer's web, read by what each part has drawn from the habitat, the clearer is the greatest part at every step; the habitat is drawn down jointly beyond what is given to it with renewal there gated, and the dweller, which depends on it, ends, while the clearer, which does not, is active and supported at every step (Clearing.greatest_continues). Its loss is one of significance, and needs one: under the continuation condition it loses the dweller from every standpoint, under no significance nothing (Clearing.loss_needs_significance).",
+        "zh": "需要依赖：在清除者的网中，以每个部分从栖地所取之量来读，清除者每步都是最大的部分；栖地被联合取用超出所给，且那里的更新受门控，依赖它的栖居者终结，而不依赖它的清除者每步都活跃并受支持（Clearing.greatest_continues）。它的损失是意义上的损失，且需要一种意义：在延续条件下，从每一立场它都失去栖居者；在无意义之下则无所失（Clearing.loss_needs_significance）。"
+      },
+      "declarations": [
+        "Becoming.Clearing.acting",
+        "Becoming.Clearing.habitat_ungiven",
+        "Becoming.Clearing.drawn_source",
+        "Becoming.Clearing.drawn_dweller",
+        "Becoming.Clearing.greatest_continues",
+        "Becoming.Clearing.loss_needs_significance"
+      ]
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T110924.527968Z): the 59 declarations of Becoming.RelativePosition, 40 of them theorems, have empty axiom reports; the checker verifies core purity. Author self-review in study section 200; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T110924.527968Z）：Becoming.RelativePosition 的 59 项声明（40 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 200 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "Positions read as ranks or shares; a race dynamic in which parts behind raise their take, and whether it produces joint excess; several shared conditions with different needs; an independent review.",
+    "zh": "以名次或份额读的位置；落后者增加取用的竞逐动力，及其是否产生联合超出；需要不同的多个共享条件；独立审查。"
+  },
+  "correspondence": {
+    "en": "States the counting half of the opening's sentence on the game of winning (OPENING, Ren's voice; provenance, not warrant), which read \"a zero-sum game of relative position, which, as I see it, all its winners will lose\" and whose note [^aligned] had called the zero-sum \"a matter of counting, not yet stated on the formal spine\", and proves the second half under a stated dependence (board item Z1; v7 proposal, edits (j), (ee), (oo) and (oo′)). With this landing, by Ren's agreement to the proposal's third pass, the body reads \"a zero-sum game of relative position, which all its winners will lose wherever they live on what it draws down\" (oo) and \"A race of position cannot raise everyone\" (oo′), and the notes [^aligned] and [^race] cite this record. \"Winner\" is read as a greatest part by the reading of positions, the AI's reading; the note's sentence is in study section 200.",
+    "zh": "陈述开篇“赢的游戏”一句（OPENING，Ren 的口吻；是出处，不是依据）的计数一半：该句原为“a zero-sum game of relative position, which, as I see it, all its winners will lose”，其注 [^aligned] 原称零和“a matter of counting, not yet stated on the formal spine”；并在写明的依赖下证明后一半（工作板 Z1；v7 提案编辑 (j)、(ee)、(oo) 与 (oo′)）。随本次落地，依 Ren 对提案第三轮的同意，正文改为“a zero-sum game of relative position, which all its winners will lose wherever they live on what it draws down”（oo）与“A race of position cannot raise everyone”（oo′），注 [^aligned] 与 [^race] 引本记录。“winner”读作按位置读法最大的部分，此为 AI 的读法；注中的句子见研究第 200 节。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RelativePosition.lean",
+  "aliases": [
+    "the game of relative position",
+    "相对位置的博弈",
+    "zero-sum game of relative position",
+    "relative position is zero-sum",
+    "相对位置是零和的",
+    "position does not protect",
+    "Becoming.RelativePosition.change_balances",
+    "Becoming.RelativePosition.not_all_rise",
+    "Becoming.Flow.race_ends_greatest",
+    "Becoming.Flow.ends_at_race_end"
+  ],
+  "dependencies": [
+    {
+      "id": "own-count-misses-joint-excess",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Flow.joint_excess_ends, Flow.excess_bounded_at, Flow.stays_below and Flow.ends_below_at; the delta is the positions read alongside, the end at the race's end without gating, and the greatest parts.",
+        "zh": "复用 Flow.joint_excess_ends、Flow.excess_bounded_at、Flow.stays_below 与 Flow.ends_below_at；增量是并读的位置、不需门控的竞逐结束时终结，以及最大的部分。"
+      },
+      "interface": {
+        "output": {
+          "en": "Joint excess with balance lowers the level by at least one per step; with renewal gated, a level below m stays below m and every formation depending at a need of at least m is inactive.",
+          "zh": "在平衡下，联合超出每步至少使水平降一；更新受门控时，低于 m 的水平保持低于 m，每个以至少 m 之需依赖者都不活跃。"
+        },
+        "input": {
+          "en": "The race's steps of joint excess at the shared condition and the parts' dependence on it.",
+          "zh": "共享条件上竞逐的联合超出各步，以及各部分对它的依赖。"
+        },
+        "conditions": {
+          "en": "Balance at the condition; for the lasting end, Acting, Dependent and gated renewal.",
+          "zh": "条件处平衡；持久终结另需 Acting、Dependent 与受门控的更新。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
+      }
+    },
+    {
+      "id": "derived-extent-limits",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the clearer's web (Clearing.flow, Clearing.web, Clearing.balances, Clearing.dependent).",
+        "zh": "复用清除者的网（Clearing.flow、Clearing.web、Clearing.balances、Clearing.dependent）。"
+      },
+      "interface": {
+        "output": {
+          "en": "A balanced web in which the clearer draws down the dweller's habitat and continues.",
+          "zh": "一个平衡的网，其中清除者耗取栖居者的栖地而延续。"
+        },
+        "input": {
+          "en": "The counterexample read by what each part has drawn from the habitat.",
+          "zh": "以每个部分从栖地所取之量来读的反例。"
+        },
+        "conditions": {
+          "en": "None beyond the witness.",
+          "zh": "除见证外无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
+      }
+    },
+    {
+      "id": "whole-first-and-bounded-centers",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Clearing.clearer_loses_dweller.",
+        "zh": "复用 Clearing.clearer_loses_dweller。"
+      },
+      "interface": {
+        "output": {
+          "en": "Under the continuation condition the clearer's part loses the dweller from every standpoint.",
+          "zh": "在延续条件下，清除者的那一份从每一立场都失去栖居者。"
+        },
+        "input": {
+          "en": "The loss of the greatest part that does not depend on what it draws down.",
+          "zh": "不依赖其所耗取者的最大部分的损失。"
+        },
+        "conditions": {
+          "en": "The continuation condition, as a hypothesis.",
+          "zh": "延续条件，作为假设。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "raising-what-couples-in-draws-from-beyond",
+      "detail": {
+        "en": "Where the whole gains nothing (a premise), a rise of an observed family's stock is paid from beyond it; rise_needs_fall is the counterpart for position, with no premise, since position is relative by definition.",
+        "zh": "整体无所增益时（一个前提），被观察的族的存量上升由其外支付；rise_needs_fall 是位置上的对应，不需前提，因为位置按定义是相对的。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RelativePosition.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Clearing.acting",
+        "Becoming.Clearing.drawn_dweller",
+        "Becoming.Clearing.drawn_source",
+        "Becoming.Clearing.greatest_continues",
+        "Becoming.Clearing.habitat_ungiven",
+        "Becoming.Clearing.loss_needs_significance",
+        "Becoming.DrawingMore.flow",
+        "Becoming.DrawingMore.grow_and_fall",
+        "Becoming.Flow.drawn",
+        "Becoming.Flow.drawn_positions",
+        "Becoming.Flow.ends_at_race_end",
+        "Becoming.Flow.excess_leaves_below",
+        "Becoming.Flow.greatest_end_for_good",
+        "Becoming.Flow.race_ends_greatest",
+        "Becoming.Race.Member",
+        "Becoming.Race.acting",
+        "Becoming.Race.all",
+        "Becoming.Race.balances",
+        "Becoming.Race.dependent",
+        "Becoming.Race.drawn_renewer",
+        "Becoming.Race.drawn_second_le",
+        "Becoming.Race.excess",
+        "Becoming.Race.first_greatest",
+        "Becoming.Race.first_rises",
+        "Becoming.Race.flow",
+        "Becoming.Race.gated",
+        "Becoming.Race.greatest_ends",
+        "Becoming.Race.level",
+        "Becoming.Race.live",
+        "Becoming.Race.live_of_present",
+        "Becoming.Race.present",
+        "Becoming.Race.web",
+        "Becoming.RelativePosition.Greatest",
+        "Becoming.RelativePosition.below_somewhere_or_not",
+        "Becoming.RelativePosition.change_balances",
+        "Becoming.RelativePosition.change_opposed",
+        "Becoming.RelativePosition.fallCount",
+        "Becoming.RelativePosition.greatest_exists",
+        "Becoming.RelativePosition.greatest_not_behind",
+        "Becoming.RelativePosition.not_all_rise",
+        "Becoming.RelativePosition.positions_balance",
+        "Becoming.RelativePosition.rest_falls_of_rises",
+        "Becoming.RelativePosition.riseCount",
+        "Becoming.RelativePosition.rise_needs_fall",
+        "Becoming.RelativePosition.total_lt_of_mem",
+        "Becoming.RelativePosition.total_split",
+        "Becoming.Restored.Member",
+        "Becoming.Restored.acting",
+        "Becoming.Restored.balances",
+        "Becoming.Restored.dependent",
+        "Becoming.Restored.drawn_renewer",
+        "Becoming.Restored.flow",
+        "Becoming.Restored.giveAt",
+        "Becoming.Restored.level",
+        "Becoming.Restored.live",
+        "Becoming.Restored.returns",
+        "Becoming.Restored.takeAt",
+        "Becoming.Restored.web"
+      ],
+      "sha256": "4eac67fa30ede50817294b8f5c091be07735c2a6539a39a2867f4f6ebbbe566a"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
+      "role": "proof",
+      "sha256": "e67ee59057675ac686f35ff210a01161eff80bad6195b59fc52a286467ac7e7e",
+      "declarations": [
+        "Becoming.total_const"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.joint_excess_ends"
+      ],
+      "sha256": "0ab0815ed90be71d73e427578aeeb623f23a4d2e7055391ab23903e6ac6f3861"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Clearing.clearer_loses_dweller"
+      ],
+      "sha256": "c658db1f65753aa4ad1d547ac13f1864154d2cbad2fce5867bdb82d4cc20ed77"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T110924.527968Z/verification.json",
+      "role": "receipt",
+      "sha256": "687a3c200d7c745c33a556f23fab9788bd521af846d1ea847aaffbed06c56e03"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "cc67ee945ab321ea58a0809d1c72ab63d9a7e10cabb00696319d1a31360ae7ab"
+    },
+    {
+      "path": "theories/becoming/OPENING.md",
+      "role": "provenance",
+      "sha256": "03083d10eebf1301bf4b90707aedfe663ed815da489970389d0fb88b1abe39b4"
+    },
+    {
+      "path": "drafts/2026-10-10-opening/history/OPENING-V7-PROPOSAL.md",
+      "role": "provenance",
+      "sha256": "e2ddf919ebc5b99564193fc19f26a4068fd5652728819d6a50699f5a96b3ce64"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-opening-v7.md",
+      "role": "provenance",
+      "sha256": "25f8fcd495c36dd9129ea1f2f45a97e323c7a71cdc53c9dabbdb4de95d6987a6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RelativePosition.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RelativePosition",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Evolution",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (Z1), to state on the spine what the opening's note [^aligned] called \"a matter of counting, not yet stated on the formal spine\", and to prove where \"all its winners will lose\" holds; study section 200.",
+      "zh": "2026年10月19日：新增（Z1），把开篇注 [^aligned] 称为“a matter of counting, not yet stated on the formal spine”者陈述于脊柱，并证明“all its winners will lose”在何处成立；研究第 200 节。"
+    },
+    {
+      "en": "19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，X1b（护闭诸文合于关节律的确切范围）：BECOMING-RENEWAL-READING.md 重新指向。自本记录所审哈希以来，所引文字只在第 199 节改动：其护闭读法现说保持是在自 s 起的路径上保住 s 的最大闭（`keeping_greatest`），由 X1b 改。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Continuation.lean: declarations moved in or out by W2; Significance.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R27 (the stepwise classes and loss): Re-pointed after reading the change: Significance.lean, a section on the stepwise classes and loss and Preemption.within_renewal_yet_loses added; nothing else changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R27（逐步类别与失去）：读过改动后重新指向：Significance.lean，新增逐步类别与失去一节及 Preemption.within_renewal_yet_loses；其余不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: Significance.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：Significance.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Clearing.free_rider_loses (now Clearing.clearer_loses_dweller). Proof bindings (RelativePosition.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Continuation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; RelativePosition.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Significance.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: OPENING.md, the footnotes name the renamed declarations; the body is unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Clearing.free_rider_loses（现为 Clearing.clearer_loses_dweller）。证明绑定（RelativePosition.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Continuation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；RelativePosition.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Significance.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：OPENING.md，脚注改用改名后的声明名；正文不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, opening version 8 (proposal drafts/2026-10-10-opening/history/OPENING-V8-PROPOSAL.md, forms A(b) and B(b)): OPENING.md re-pointed after reading the change: in the body, the sentence on political realism, neoliberalism and libertarianism says which feature each takes for a law of nature, without \"Within Western thinking\" or \"manifestations of a system captured by the meta-attractor\", and the four \"It is clear that\" read \"It is clear to me that\"; the last sentence of the AI-written note [^no-law] separates the reading of what those theories claim from the diagnosis; the header comment and closing line name version 8. The sentence on the game of winning and \"A race of position cannot raise everyone\", which this record quotes, are unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，开篇第 8 版（提案 drafts/2026-10-10-opening/history/OPENING-V8-PROPOSAL.md，形式 A(b) 与 B(b)）：读过改动后 OPENING.md 重新指向：正文中关于政治现实主义、新自由主义与自由意志主义的句子改为写明各自把哪一特征当作自然律，去掉“Within Western thinking”与“manifestations of a system captured by the meta-attractor”；四处“It is clear that”改为“It is clear to me that”；AI 所写脚注 [^no-law] 的末句把对这些理论所主张者的读法与诊断分开；页首注释与结尾行写明第 8 版。本记录所引的关于赢的游戏的句子与“A race of position cannot raise everyone”不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Continuation.lean, the witness Clearing moved to Clearing.lean; Significance.lean, what takes no condition moved to Retaining.lean and Clearing.lean; the conditional theorems kept, statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Continuation.lean，见证 Clearing 移到 Clearing.lean；Significance.lean，不带条件者移到 Retaining.lean 与 Clearing.lean；条件定理保留，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed, with the statement kept under one name: RelativePosition.total_same (now total_const). Proof bindings (RelativePosition.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; RelativePosition.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：删去，陈述以一个名称保留：RelativePosition.total_same（现为 total_const）。证明绑定（RelativePosition.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；RelativePosition.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; Significance.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged; OPENING.md, the footnote on alignment names the condition for scope and C for order and cites the core schema; the body is unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；Significance.lean，只改说明（任何类型的立场、obs 是第二个给出的关系、固定类型的界、整段的类）或导入；保留的陈述不变；OPENING.md，关于对齐的脚注写明条件定范围、C 定次序并引核心模式；正文不变。论断不变。"
+    }
+  ]
+}

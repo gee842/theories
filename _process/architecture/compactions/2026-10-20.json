@@ -1,0 +1,4150 @@
+{
+ "date": "2026-10-20",
+ "applied": true,
+ "records_read": 282,
+ "records_compacted": 281,
+ "notes_before": 13485,
+ "notes_condensed": 10294,
+ "notes_after": 3472,
+ "classes": {
+  "first": 282,
+  "bookkeeping": 10294,
+  "substantive": 1987,
+  "other": 922
+ },
+ "records": [
+  {
+   "id": "a-code-formed-between-formations",
+   "notes_before": 17,
+   "condensed": 12,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 12,
+    "substantive": 4
+   },
+   "sha256_before": "0d6cbd357ac9c889800fa8dc84b7adac343a5c1087d35455f77e0e03bfaac405",
+   "snapshot": "_process/architecture/history/0d6cbd357ac9c889/a-code-formed-between-formations.json",
+   "sha256_after": "fae43eefac29c0d6ee8eb9f0a5ebffc2224d4e6ba19db6c63ecd7640cf63ca09"
+  },
+  {
+   "id": "a-history-read-off-its-finite-stretches",
+   "notes_before": 21,
+   "condensed": 16,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 16,
+    "substantive": 4
+   },
+   "sha256_before": "b6668c30b848a8fc60dda84d20faea144479d0857166011b66e32d7cc3223397",
+   "snapshot": "_process/architecture/history/b6668c30b848a8fc/a-history-read-off-its-finite-stretches.json",
+   "sha256_after": "e8492e4ab3e3eedb08dba5b5d6860b7023eb81fd3ef06a3675d91652a2117c99"
+  },
+  {
+   "id": "a-law-through-a-projection-along-one-run",
+   "notes_before": 35,
+   "condensed": 27,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 27,
+    "substantive": 7
+   },
+   "sha256_before": "087ed38f3b0dcbcb0211891638a60813b5abc8158a38bc5fa4374d978e64c9e7",
+   "snapshot": "_process/architecture/history/087ed38f3b0dcbcb/a-law-through-a-projection-along-one-run.json",
+   "sha256_after": "52bf6c083eca8012fdd139c60f7bafd3c8fa1fcde8b4c59c17510f3fedb71841"
+  },
+  {
+   "id": "a-law-through-changing-coupling-along-one-run",
+   "notes_before": 24,
+   "condensed": 18,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 18,
+    "substantive": 5
+   },
+   "sha256_before": "64345b8932a5bf2fcc15454b252bde4e7d2ec173159f6706a345beb166639aa5",
+   "snapshot": "_process/architecture/history/64345b8932a5bf2f/a-law-through-changing-coupling-along-one-run.json",
+   "sha256_after": "307d04d47b387830dbc466c7c4ee0133de0e4118dae8e20d862455afa2434a01"
+  },
+  {
+   "id": "a-law-through-coupling-along-one-run",
+   "notes_before": 30,
+   "condensed": 21,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "substantive": 8,
+    "bookkeeping": 21
+   },
+   "sha256_before": "79737785c35cee7d8de99a2e869bd057f73539f5501149dcf3d29ecd722b332d",
+   "snapshot": "_process/architecture/history/79737785c35cee7d/a-law-through-coupling-along-one-run.json",
+   "sha256_after": "45c2c2d855756c768d4948ec5f62f84d279328e19fadfff39ff8e168242ec591"
+  },
+  {
+   "id": "a-pattern-lasts-through-passing",
+   "notes_before": 27,
+   "condensed": 23,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 23,
+    "substantive": 3
+   },
+   "sha256_before": "45a8d0af8cc5eb353ce6ea6cdc517da77f633184620f74ad0b4f1c01079f1b3e",
+   "snapshot": "_process/architecture/history/45a8d0af8cc5eb35/a-pattern-lasts-through-passing.json",
+   "sha256_after": "8fbdba6a9aa05b21f93aea0c5bdedd4ae1d7e4432a0e6ad17474945555933615"
+  },
+  {
+   "id": "acquired-binding-compositional-use",
+   "notes_before": 37,
+   "condensed": 24,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "other": 5,
+    "substantive": 7,
+    "bookkeeping": 24
+   },
+   "sha256_before": "6724a62f5ae97ca4642cc38ffd17d78afa6673d08a98c8e12b0fc015601b5aad",
+   "snapshot": "_process/architecture/history/6724a62f5ae97ca4/acquired-binding-compositional-use.json",
+   "sha256_after": "b52853d22233d2a0e4b2b8f807dafcc6ec5ec1b24d0f2c548b569ee7d129ba38"
+  },
+  {
+   "id": "acquired-revision-of-pending-task",
+   "notes_before": 25,
+   "condensed": 19,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 19,
+    "substantive": 5
+   },
+   "sha256_before": "384523f1e5ec047714cf3ef4def0548d89debaab6cbec0cb14b255e488913f52",
+   "snapshot": "_process/architecture/history/384523f1e5ec0477/acquired-revision-of-pending-task.json",
+   "sha256_after": "45b41ad308bf5cd5722de2599b523eb7fee7ab4433ea20fd64173cafc7d02adf"
+  },
+  {
+   "id": "alignment-direction-g0-j",
+   "notes_before": 23,
+   "condensed": 11,
+   "kept": 12,
+   "classes": {
+    "first": 1,
+    "other": 2,
+    "substantive": 9,
+    "bookkeeping": 11
+   },
+   "sha256_before": "86365d37dc519fc48c718048bb1fa8f7d3c8c380542676710bd8ba574d28c859",
+   "snapshot": "_process/architecture/history/86365d37dc519fc4/alignment-direction-g0-j.json",
+   "sha256_after": "acecabb013523e1286688802bc01c7532d40c93ca95b90a321de88f862632947"
+  },
+  {
+   "id": "assured-route-criterion",
+   "notes_before": 25,
+   "condensed": 21,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "substantive": 3,
+    "bookkeeping": 21
+   },
+   "sha256_before": "026b536b113ea82092e4d32702fcb6ee84a8503bca9ada0d652642824a4c237e",
+   "snapshot": "_process/architecture/history/026b536b113ea820/assured-route-criterion.json",
+   "sha256_after": "a6cc65e6cd2350731b2077ff8cacd10a578515972e12cb836477c85a44aeeda0"
+  },
+  {
+   "id": "attraction-is-not-returning",
+   "notes_before": 87,
+   "condensed": 69,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 69,
+    "other": 7,
+    "substantive": 10
+   },
+   "sha256_before": "9f9926b794418171508f961456959cbb246b45d7cdce1f6277955ece2a272111",
+   "snapshot": "_process/architecture/history/9f9926b794418171/attraction-is-not-returning.json",
+   "sha256_after": "cb224f45d5f9ef6ea9dab51c515a12d7eb85b16979f4636619d865ad924eaf23"
+  },
+  {
+   "id": "axiom-decomposition",
+   "notes_before": 80,
+   "condensed": 60,
+   "kept": 20,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 60,
+    "substantive": 12,
+    "other": 7
+   },
+   "sha256_before": "291490334771f0e5b13e1be170a21bd60db04c47138e1c4474ed4baa361b31a1",
+   "snapshot": "_process/architecture/history/291490334771f0e5/axiom-decomposition.json",
+   "sha256_after": "25b54506a41459073e56eace3a1deaed8204cc22ba1de4a02c25a42b4d179a91"
+  },
+  {
+   "id": "becoming-context-coherence",
+   "notes_before": 18,
+   "condensed": 15,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 15,
+    "substantive": 2
+   },
+   "sha256_before": "c67d9dc790436a3e3e51ce43b2ad495870e170f75bcb994bfef81f74ae72b04b",
+   "snapshot": "_process/architecture/history/c67d9dc790436a3e/becoming-context-coherence.json",
+   "sha256_after": "6f958444a56f8af87bb8cd556d2f8107a072145eec19bb8b4d061aecbfc28078"
+  },
+  {
+   "id": "becoming-dependence-dynamics",
+   "notes_before": 112,
+   "condensed": 95,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "substantive": 12,
+    "bookkeeping": 95,
+    "other": 4
+   },
+   "sha256_before": "0859d4f8f432c4f83239f95e701bcbd81d9c30128941c9493daa20f4684f8282",
+   "snapshot": "_process/architecture/history/0859d4f8f432c4f8/becoming-dependence-dynamics.json",
+   "sha256_after": "88e4d79c94f6e0efb34136ba13a14ba86d89f0fd0f55c9e7e579be72c9c72778"
+  },
+  {
+   "id": "becoming-finite-horizon",
+   "notes_before": 115,
+   "condensed": 97,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 97,
+    "substantive": 15,
+    "other": 2
+   },
+   "sha256_before": "5839b78c8ad40c3bc8f2380fcfd5cac4ff982b5bfc40e2482dc0e5b0aeda5697",
+   "snapshot": "_process/architecture/history/5839b78c8ad40c3b/becoming-finite-horizon.json",
+   "sha256_after": "1e74f6299e53dea0b1fa0106a0a1cf42da340adfc316b725e4c49f4c3139f388"
+  },
+  {
+   "id": "becoming-renewal-reading",
+   "notes_before": 125,
+   "condensed": 108,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "other": 6,
+    "bookkeeping": 108,
+    "substantive": 10
+   },
+   "sha256_before": "7d3648397024ff151ce56f3e45d392dc84d040c0fcd346974f69d6e133553b94",
+   "snapshot": "_process/architecture/history/7d3648397024ff15/becoming-renewal-reading.json",
+   "sha256_after": "77556db9d1e78a5050d5a501a778e201891d1d3e5a12ddde1f5a5bbbf46170ba"
+  },
+  {
+   "id": "becoming-return-grades",
+   "notes_before": 113,
+   "condensed": 96,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 96,
+    "substantive": 12,
+    "other": 4
+   },
+   "sha256_before": "53f27d731d1d3036526cb4216b775c05df41fd6b375da0aa5bc17da6d2e4261b",
+   "snapshot": "_process/architecture/history/53f27d731d1d3036/becoming-return-grades.json",
+   "sha256_after": "255b0f488298d7577cb3af5c3fb32e31f316a6bdcdb2656187ec8c01789395b4"
+  },
+  {
+   "id": "becoming-spine-instances",
+   "notes_before": 116,
+   "condensed": 103,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 103,
+    "other": 2,
+    "substantive": 10
+   },
+   "sha256_before": "cdf613c0e8f3444d2acff1e1413657223d246f60a58db4fc01d75f6a55c1f124",
+   "snapshot": "_process/architecture/history/cdf613c0e8f3444d/becoming-spine-instances.json",
+   "sha256_after": "2530faf9ab3cc1abbc0feb787b0a6cbf54cf873acdf9853a0787badf5e56f070"
+  },
+  {
+   "id": "becoming-stepwise-reading",
+   "notes_before": 120,
+   "condensed": 98,
+   "kept": 22,
+   "classes": {
+    "first": 1,
+    "substantive": 14,
+    "bookkeeping": 98,
+    "other": 7
+   },
+   "sha256_before": "0a594a27c79ad139cdb461b0f9ddb0393387bd5a54e301c345d26159a657ca01",
+   "snapshot": "_process/architecture/history/0a594a27c79ad139/becoming-stepwise-reading.json",
+   "sha256_after": "a19016f47b763d516a8630a7c115bdb175e1467bdb3272fad57f432136fcb33e"
+  },
+  {
+   "id": "binding-preserving-substitution",
+   "notes_before": 14,
+   "condensed": 9,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 9,
+    "substantive": 4
+   },
+   "sha256_before": "aa3cdb27b14d323dc7e1ccd5cfe090d334b25b2fe1a961a91d9dc9a924ac83ce",
+   "snapshot": "_process/architecture/history/aa3cdb27b14d323d/binding-preserving-substitution.json",
+   "sha256_after": "b88c6deeb7cd68a2773046175dd3c064f84477ddfac9f59b5ccdc1464e664b8c"
+  },
+  {
+   "id": "bounded-census-keeps-pace",
+   "notes_before": 104,
+   "condensed": 85,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 85,
+    "substantive": 12,
+    "other": 6
+   },
+   "sha256_before": "ba11e4fc6d30569e50626b146802b28dc40a3caeb1e875497a9369a7f75d328c",
+   "snapshot": "_process/architecture/history/ba11e4fc6d30569e/bounded-census-keeps-pace.json",
+   "sha256_after": "2ef5489e7dd70643c06e8e6722fb160a1284a8e7f455141b895e6d638090d385"
+  },
+  {
+   "id": "branching-target-uniqueness",
+   "notes_before": 21,
+   "condensed": 16,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 16,
+    "substantive": 4
+   },
+   "sha256_before": "9a06aabe1c11375962011232805399894793334e11d12d8bfde8813ce4401741",
+   "snapshot": "_process/architecture/history/9a06aabe1c113759/branching-target-uniqueness.json",
+   "sha256_after": "71a81dd53889e1ef110cb85e3a7f954d61fb9dda116c76ee37866d87f9617725"
+  },
+  {
+   "id": "branching-tests-bisimulation",
+   "notes_before": 21,
+   "condensed": 15,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "substantive": 5,
+    "bookkeeping": 15
+   },
+   "sha256_before": "21c20641d7380b2dae66e9c35390cce7e93f83082a25baa338acd1d476b75542",
+   "snapshot": "_process/architecture/history/21c20641d7380b2d/branching-tests-bisimulation.json",
+   "sha256_after": "fb60c1fcbf109e44d893508048af996c047e7a1e95ffdf1e5099c106224fb085"
+  },
+  {
+   "id": "capture-through-the-rule",
+   "notes_before": 16,
+   "condensed": 10,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 10,
+    "substantive": 5
+   },
+   "sha256_before": "81f986558218e1fa5cd9b883e99f07ff6ec7427db6dff35b2435ee4c07514958",
+   "snapshot": "_process/architecture/history/81f986558218e1fa/capture-through-the-rule.json",
+   "sha256_after": "7d8f0574c3094f680b498fd1a63b6c075a7c4fa82de037129296738a6eb66edb"
+  },
+  {
+   "id": "causal-models-as-processes",
+   "notes_before": 85,
+   "condensed": 68,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 68,
+    "other": 7,
+    "substantive": 9
+   },
+   "sha256_before": "2a31db0923c027aaacc423cef9b9767b07514d2344f4fcb28c5a2d83f2c3f999",
+   "snapshot": "_process/architecture/history/2a31db0923c027aa/causal-models-as-processes.json",
+   "sha256_after": "fa9df6a86754d291198409b507b0e006c638551d354bbe9cd1aa7b2575b35f19"
+  },
+  {
+   "id": "ceasing-needs-arising",
+   "notes_before": 107,
+   "condensed": 86,
+   "kept": 21,
+   "classes": {
+    "first": 1,
+    "substantive": 13,
+    "bookkeeping": 86,
+    "other": 7
+   },
+   "sha256_before": "a710c88a0a6ed2f19743b8888972cf225398c2764cbe6fcd64760207d658e6e0",
+   "snapshot": "_process/architecture/history/a710c88a0a6ed2f1/ceasing-needs-arising.json",
+   "sha256_after": "e4f13109d0f14e606eb559388942d2d5583d21a28d14ebc3ae7af54db8d965db"
+  },
+  {
+   "id": "census-balance-under-continuation",
+   "notes_before": 95,
+   "condensed": 76,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 76,
+    "other": 8,
+    "substantive": 10
+   },
+   "sha256_before": "947823042f0e86b5f43fe009936d4f2b2a0128273eb5840c063fe206ed1e109e",
+   "snapshot": "_process/architecture/history/947823042f0e86b5/census-balance-under-continuation.json",
+   "sha256_after": "709b2ea45233251a418a379cf82dd418dfc2b402dd9505ff1b31ba5d13e3639b"
+  },
+  {
+   "id": "census-balance",
+   "notes_before": 169,
+   "condensed": 147,
+   "kept": 22,
+   "classes": {
+    "first": 1,
+    "substantive": 13,
+    "bookkeeping": 147,
+    "other": 8
+   },
+   "sha256_before": "5d325fa96659cf704b02ceacd77e8ba9bf690b27f5434b11bf48f402791f8a88",
+   "snapshot": "_process/architecture/history/5d325fa96659cf70/census-balance.json",
+   "sha256_after": "a87ae7094a299bf4db78d6360d80bc8921cf9f12de1e8374c77e7dc770f16da2"
+  },
+  {
+   "id": "census-read-off-the-exchange",
+   "notes_before": 14,
+   "condensed": 11,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 11,
+    "substantive": 2
+   },
+   "sha256_before": "eb19bf5a622326fbc2a667406f7c12850ec37b3a38780c239d3a346e25b185ac",
+   "snapshot": "_process/architecture/history/eb19bf5a622326fb/census-read-off-the-exchange.json",
+   "sha256_after": "292a5dee076d069a5f12acc34f8cf93065213373e614764b9bcb20a3218f7f69"
+  },
+  {
+   "id": "chinese-sources-on-the-spine",
+   "notes_before": 15,
+   "condensed": 11,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 11,
+    "substantive": 3
+   },
+   "sha256_before": "4b9e3001d3c120a9e7d5f71102e804bd5c46c7ce4811f0191020c9b5b7c161bf",
+   "snapshot": "_process/architecture/history/4b9e3001d3c120a9/chinese-sources-on-the-spine.json",
+   "sha256_after": "6426cfbdf7f7615c777a95bbd04f3930a252c4f66482adafb1d999605e616249"
+  },
+  {
+   "id": "classification-robust-generative-comparison",
+   "notes_before": 22,
+   "condensed": 11,
+   "kept": 11,
+   "classes": {
+    "first": 1,
+    "substantive": 8,
+    "other": 2,
+    "bookkeeping": 11
+   },
+   "sha256_before": "75c96775a8e7ebb781ce1e6dab0f357c8f31d9688966c7cd958ce8b9125a43d0",
+   "snapshot": "_process/architecture/history/75c96775a8e7ebb7/classification-robust-generative-comparison.json",
+   "sha256_after": "452d386207cbce18b3bd7c41da795d5b77f4f4c0a3824e9b8c38402bf58cb450"
+  },
+  {
+   "id": "closing-needs-net-draw",
+   "notes_before": 84,
+   "condensed": 66,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 66,
+    "other": 7,
+    "substantive": 10
+   },
+   "sha256_before": "e21d3240ea65811a9b2b0edd872099494c61aed85fd2ed5bd27bfe1993b01829",
+   "snapshot": "_process/architecture/history/e21d3240ea65811a/closing-needs-net-draw.json",
+   "sha256_after": "b236923255bd9d3ce8edb1a1dc97707cb85b41cade668912a572df8731bf70d2"
+  },
+  {
+   "id": "closure-verdict-meets-axiom",
+   "notes_before": 85,
+   "condensed": 65,
+   "kept": 20,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 65,
+    "substantive": 12,
+    "other": 7
+   },
+   "sha256_before": "e81dfb90e26d127576cc0c3669faa2af241ba740a013d95f73b4f733d17c99ce",
+   "snapshot": "_process/architecture/history/e81dfb90e26d1275/closure-verdict-meets-axiom.json",
+   "sha256_after": "47fe841f32f530de85de784db13c380447c7609624a7fa3bad2d9fbfd660889c"
+  },
+  {
+   "id": "code-plan-global-support",
+   "notes_before": 9,
+   "condensed": 6,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "substantive": 1,
+    "bookkeeping": 6
+   },
+   "sha256_before": "15883cd9027f1e41cf134490f15789176fbf05e124a53556aee71ec51d5195d4",
+   "snapshot": "_process/architecture/history/15883cd9027f1e41/code-plan-global-support.json",
+   "sha256_after": "898deab759869986fc1405651b07d053a07fbf7f7ccd7c35f74d0bf09521de51"
+  },
+  {
+   "id": "coming-and-ceasing-keep-pace",
+   "notes_before": 96,
+   "condensed": 79,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 79,
+    "other": 5,
+    "substantive": 11
+   },
+   "sha256_before": "84ae761484aaba4ec6162b82585c4dfa093319ebeb6fff95edf8494c5c1318e6",
+   "snapshot": "_process/architecture/history/84ae761484aaba4e/coming-and-ceasing-keep-pace.json",
+   "sha256_after": "ae12588f97aa5ca03cdaafee1544803016e0ffaf303539054a2f75310eec9a54"
+  },
+  {
+   "id": "comparison-by-widening",
+   "notes_before": 71,
+   "condensed": 53,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 53,
+    "substantive": 9,
+    "other": 8
+   },
+   "sha256_before": "a25745ef5d3713093ac0298dd8cf6ea75170a5c8c5f6ef44ccadec505b728944",
+   "snapshot": "_process/architecture/history/a25745ef5d371309/comparison-by-widening.json",
+   "sha256_after": "9837b50ece162ed5a0ce0b362a8a4a8636597460b9b9a22867eb5dc71565940f"
+  },
+  {
+   "id": "comparison-content-under-regrouping",
+   "notes_before": 41,
+   "condensed": 31,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "other": 3,
+    "bookkeeping": 31,
+    "substantive": 6
+   },
+   "sha256_before": "6d920962b63373b1584d23dfd5305a6519c6e10454eb09a19e2f10221a5ca759",
+   "snapshot": "_process/architecture/history/6d920962b63373b1/comparison-content-under-regrouping.json",
+   "sha256_after": "2e65438268955e73cdf8cd82db9b96db705b8234c437e6f678a24346efcf9782"
+  },
+  {
+   "id": "comparison-where-the-rest-responds",
+   "notes_before": 73,
+   "condensed": 52,
+   "kept": 21,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 52,
+    "substantive": 14,
+    "other": 6
+   },
+   "sha256_before": "5adabf46d5c8c7b1ce206f887c17442fec9131be2b8e7459bc81056a2197d1dc",
+   "snapshot": "_process/architecture/history/5adabf46d5c8c7b1/comparison-where-the-rest-responds.json",
+   "sha256_after": "795a216061a10b084da8cb07034d12f2a1fde8b5ae9c485eb285669f2b50e6f7"
+  },
+  {
+   "id": "comparison-within-reach",
+   "notes_before": 79,
+   "condensed": 59,
+   "kept": 20,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 59,
+    "other": 8,
+    "substantive": 11
+   },
+   "sha256_before": "659e43c30a9be16f32a7bf3d896b9179322fe40eb9baffc795e8a9183bb6cca2",
+   "snapshot": "_process/architecture/history/659e43c30a9be16f/comparison-within-reach.json",
+   "sha256_after": "ebd4f2db370c6ed307c544c132b9de3f21e9aa466411b2ff5ca1a636b5b69141"
+  },
+  {
+   "id": "condition-correspondence-discipline",
+   "notes_before": 111,
+   "condensed": 94,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "substantive": 11,
+    "bookkeeping": 94,
+    "other": 5
+   },
+   "sha256_before": "f3af37610a53723976bf5c92b1b487c83826e13863cc6086d5b6803f1538fc4f",
+   "snapshot": "_process/architecture/history/f3af37610a537239/condition-correspondence-discipline.json",
+   "sha256_after": "ec064f580321d7d5d2cc8f03b5d74c0285dcfe378988906bd82bc5f265f88f90"
+  },
+  {
+   "id": "conditional-foundation-assessment",
+   "notes_before": 4,
+   "condensed": 1,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "substantive": 2,
+    "bookkeeping": 1
+   },
+   "sha256_before": "2ff694982fcbe63ba1a4e591f73587a408582941e34bef40789c6c72bbd516a6",
+   "snapshot": "_process/architecture/history/2ff694982fcbe63b/conditional-foundation-assessment.json",
+   "sha256_after": "1136251aa73085b7bb764f7ff2779d9e9a015459c71672399ad0a122bbac37af"
+  },
+  {
+   "id": "conditions-kept-together",
+   "notes_before": 28,
+   "condensed": 23,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 23,
+    "substantive": 4
+   },
+   "sha256_before": "2562ebdf84ae4bf75393b40d717c4c84790937d4ff4808c93839d997e117148c",
+   "snapshot": "_process/architecture/history/2562ebdf84ae4bf7/conditions-kept-together.json",
+   "sha256_after": "202870dc38d298a97108ded0b88b318eed3413a3491d0d655176401fb42ca378"
+  },
+  {
+   "id": "configurations-alike-by-relation",
+   "notes_before": 76,
+   "condensed": 57,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 57,
+    "substantive": 11,
+    "other": 7
+   },
+   "sha256_before": "8c9e7e527ae783bb105fbd9f76540cfcc696d220760d3eb86796632efb131d23",
+   "snapshot": "_process/architecture/history/8c9e7e527ae783bb/configurations-alike-by-relation.json",
+   "sha256_after": "97f8bfaeb91787e48f2bd54c137ba8d11331eef8e9727c794427442bc9f67869"
+  },
+  {
+   "id": "consequence-revised-reference-plan",
+   "notes_before": 44,
+   "condensed": 31,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 31,
+    "substantive": 7,
+    "other": 5
+   },
+   "sha256_before": "2e2cebf759ceb6015586607b316480a1a9c019f9b3ec8ad24ab0baff0cf7ca26",
+   "snapshot": "_process/architecture/history/2e2cebf759ceb601/consequence-revised-reference-plan.json",
+   "sha256_after": "cd5ff474a9bca741d58594032550e4768e4117750126a1269cd647ade6e89d1a"
+  },
+  {
+   "id": "constitutive-binding-assessment",
+   "notes_before": 5,
+   "condensed": 3,
+   "kept": 2,
+   "classes": {
+    "first": 1,
+    "substantive": 1,
+    "bookkeeping": 3
+   },
+   "sha256_before": "357173a340323161c23cfaa05766d027e1e2213e031e9dfde4b2fe7291592f2b",
+   "snapshot": "_process/architecture/history/357173a340323161/constitutive-binding-assessment.json",
+   "sha256_after": "04eadf1e3d98295569d964c99e6ae3a2b052dadd3b8102004a416488a0ba7c7d"
+  },
+  {
+   "id": "consumption-ends-with-feeders",
+   "notes_before": 87,
+   "condensed": 65,
+   "kept": 22,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 65,
+    "substantive": 11,
+    "other": 10
+   },
+   "sha256_before": "9ab850d3c4ed0b669df732108c7b3c2744de0e13a0eb2b08ec691ec9d59b6f8e",
+   "snapshot": "_process/architecture/history/9ab850d3c4ed0b66/consumption-ends-with-feeders.json",
+   "sha256_after": "9f7db34354c2a51f5a0082f66cab5e9e4547271806ba93b25b09e9ed986f38cc"
+  },
+  {
+   "id": "context-sensitive-updating-correspondence",
+   "notes_before": 3,
+   "condensed": 1,
+   "kept": 2,
+   "classes": {
+    "first": 1,
+    "substantive": 1,
+    "bookkeeping": 1
+   },
+   "sha256_before": "b89fa1ce786bb510510792be3d0313afedaa119979fcd9f658d52c8ed3b28074",
+   "snapshot": "_process/architecture/history/b89fa1ce786bb510/context-sensitive-updating-correspondence.json",
+   "sha256_after": "c9fc2b9bfc99222f2e026f5b0ff87116f44f6cf6fc05b22a0f8b31263d124b6f"
+  },
+  {
+   "id": "contextual-registration",
+   "notes_before": 68,
+   "condensed": 50,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 50,
+    "substantive": 9,
+    "other": 8
+   },
+   "sha256_before": "fbcae621772324ac9eb0aa54cebfd460a63b76e3a73cd0191cbf7719c7be480d",
+   "snapshot": "_process/architecture/history/fbcae621772324ac/contextual-registration.json",
+   "sha256_after": "41528f36d5c2f9aca28d599288b960a175096eb5050ffce3a7ee2da693fb9e8b"
+  },
+  {
+   "id": "continued-change-needs-openness",
+   "notes_before": 94,
+   "condensed": 69,
+   "kept": 25,
+   "classes": {
+    "first": 1,
+    "substantive": 20,
+    "bookkeeping": 69,
+    "other": 4
+   },
+   "sha256_before": "88ee2623532550ce9594ec36a822684aeb91a20498a0d8db20ebf968ae2558e2",
+   "snapshot": "_process/architecture/history/88ee2623532550ce/continued-change-needs-openness.json",
+   "sha256_after": "5b02e4e1c10c07ea85044c826e4aafaa882e0e8c37072842718f619c438ad888"
+  },
+  {
+   "id": "continuing-self-fed-from-beyond",
+   "notes_before": 74,
+   "condensed": 61,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "substantive": 9,
+    "bookkeeping": 61,
+    "other": 3
+   },
+   "sha256_before": "f365a8f85951eec6caab5a5829142857c1bcb9276711378e5f1b165fa85b7cef",
+   "snapshot": "_process/architecture/history/f365a8f85951eec6/continuing-self-fed-from-beyond.json",
+   "sha256_after": "a693e825e36d04a4b23a6420f13da371e474605147bf12248e5b4dd7d32fea4e"
+  },
+  {
+   "id": "continuous-time-as-tower",
+   "notes_before": 88,
+   "condensed": 73,
+   "kept": 15,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 73,
+    "substantive": 9,
+    "other": 5
+   },
+   "sha256_before": "20db001509c7d5d6ed59c38ab2e6d3b84447a71c38df525a72830756784e65f2",
+   "snapshot": "_process/architecture/history/20db001509c7d5d6/continuous-time-as-tower.json",
+   "sha256_after": "b3eae5611d3c895148d71d2458ae04436c188dc0c90af0e82e4b88d112611ead"
+  },
+  {
+   "id": "control-coherence-loss",
+   "notes_before": 34,
+   "condensed": 27,
+   "kept": 7,
+   "classes": {
+    "first": 1,
+    "substantive": 6,
+    "bookkeeping": 27
+   },
+   "sha256_before": "71509e34ad583e54cf54dd0d08aaca1f33d163cad4ba8f6116f63ed2ce09c13a",
+   "snapshot": "_process/architecture/history/71509e34ad583e54/control-coherence-loss.json",
+   "sha256_after": "27ae9671300ea3d58ad56fe3522b82bc7b0716e5f65e8ac18a15eae123f6bef3"
+  },
+  {
+   "id": "conveyance-crosses-the-boundary",
+   "notes_before": 71,
+   "condensed": 60,
+   "kept": 11,
+   "classes": {
+    "first": 1,
+    "substantive": 8,
+    "bookkeeping": 60,
+    "other": 2
+   },
+   "sha256_before": "4724d1df32589e4c8a9347dc7a73e2611b5861eee20bdc1e4421c8883ed18ca8",
+   "snapshot": "_process/architecture/history/4724d1df32589e4c/conveyance-crosses-the-boundary.json",
+   "sha256_after": "b522feb084fbd2874811c0d414bc0e24c9e4acfc7b25a029e51d4d17a123e942"
+  },
+  {
+   "id": "counterfactual-is-the-course",
+   "notes_before": 65,
+   "condensed": 46,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 46,
+    "substantive": 11,
+    "other": 7
+   },
+   "sha256_before": "470965a59cdcfd7299474a3170bef2d210a3cbf8e88733291727825814d37f9b",
+   "snapshot": "_process/architecture/history/470965a59cdcfd72/counterfactual-is-the-course.json",
+   "sha256_after": "a34f1a672c3f60b4a82fd84cc74b24170bb37063e4f50e27c673aef85d808d07"
+  },
+  {
+   "id": "counting-standing-and-dependence",
+   "notes_before": 138,
+   "condensed": 120,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 120,
+    "substantive": 12,
+    "other": 5
+   },
+   "sha256_before": "6caa6a4816966d1c813e875e4628d9cd8ee626fc1d2bea4e22288dc9ef893703",
+   "snapshot": "_process/architecture/history/6caa6a4816966d1c/counting-standing-and-dependence.json",
+   "sha256_after": "1281d6b334054e081b4e0dd7637d054608c1792a69570a078170c5de117f6cae"
+  },
+  {
+   "id": "counting-under-enclosure",
+   "notes_before": 93,
+   "condensed": 71,
+   "kept": 22,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 71,
+    "substantive": 15,
+    "other": 6
+   },
+   "sha256_before": "6b5c0e74ca2a57f92bdbb51ccfe40c8f9e207b21fee075c2d6f356639242ba9d",
+   "snapshot": "_process/architecture/history/6b5c0e74ca2a57f9/counting-under-enclosure.json",
+   "sha256_after": "010daf13c2e539e6654a8e6ff72476cf4720cb6f0c2fc3adf750fca18c9299e1"
+  },
+  {
+   "id": "counting-where-the-counts-exist",
+   "notes_before": 24,
+   "condensed": 17,
+   "kept": 7,
+   "classes": {
+    "first": 1,
+    "substantive": 5,
+    "other": 1,
+    "bookkeeping": 17
+   },
+   "sha256_before": "9b9b0bfeb271c2f71ae9cee628010d2812f811131e059a81af8dd3782bbe37aa",
+   "snapshot": "_process/architecture/history/9b9b0bfeb271c2f7/counting-where-the-counts-exist.json",
+   "sha256_after": "8d2fee7a216f96b326e7f4f864b7023f7de9d344da185e2d1ad70a328f6bb190"
+  },
+  {
+   "id": "counts-exist-where-decided",
+   "notes_before": 91,
+   "condensed": 73,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 73,
+    "substantive": 11,
+    "other": 6
+   },
+   "sha256_before": "f422dfabb50df9019182a26fa031b299bcbec010f51de13d6b90f87bf4d3fe8b",
+   "snapshot": "_process/architecture/history/f422dfabb50df901/counts-exist-where-decided.json",
+   "sha256_after": "cac50881750c4e9337123f916f5c974765adf8c618722b679bc5cf5f9d61be48"
+  },
+  {
+   "id": "derivation-soundness",
+   "notes_before": 10,
+   "condensed": 6,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 6,
+    "substantive": 3
+   },
+   "sha256_before": "ac670179d1e2a668d31efcacb15b1807eda9fc415478a73604808d9eacc488b4",
+   "snapshot": "_process/architecture/history/ac670179d1e2a668/derivation-soundness.json",
+   "sha256_after": "fefde254c5c87f003df5eba4db3cf1b8ed5835e3732b96b3a21b3df6d069aefa"
+  },
+  {
+   "id": "derived-extent-limits",
+   "notes_before": 75,
+   "condensed": 58,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "substantive": 10,
+    "bookkeeping": 58,
+    "other": 6
+   },
+   "sha256_before": "22d91e3c1c4dfbadcfa296430bbc98dfc86068d7f17060e6cc607eb2fc707487",
+   "snapshot": "_process/architecture/history/22d91e3c1c4dfbad/derived-extent-limits.json",
+   "sha256_after": "353a6d9708dfcbb2a42bad8545548862fdd44171e7ded6eee310999149e95785"
+  },
+  {
+   "id": "derived-history-law-exactness",
+   "notes_before": 16,
+   "condensed": 11,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "substantive": 3,
+    "other": 1,
+    "bookkeeping": 11
+   },
+   "sha256_before": "75b9af4fa4074dabed6e1b0396e762aeb45ec2f9eb6a234f4d57fac98190e39b",
+   "snapshot": "_process/architecture/history/75b9af4fa4074dab/derived-history-law-exactness.json",
+   "sha256_after": "4855dec76764ab74d7cb8b6148d8cb9e04851a2f2efd5bb887702f324da9af6f"
+  },
+  {
+   "id": "determinacy-up-to-likeness",
+   "notes_before": 60,
+   "condensed": 44,
+   "kept": 16,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 44,
+    "substantive": 9,
+    "other": 6
+   },
+   "sha256_before": "2c0b4bb1a165602a72aa925fd18eb316648f0f1e6444754e1e34a0249b6042aa",
+   "snapshot": "_process/architecture/history/2c0b4bb1a165602a/determinacy-up-to-likeness.json",
+   "sha256_after": "4010852a2c4298c86ffb6c0efe4e701f0a0e5669676e4048a4920f72cd342d8f"
+  },
+  {
+   "id": "draws-on-a-shared-stock",
+   "notes_before": 15,
+   "condensed": 7,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "substantive": 7,
+    "bookkeeping": 7
+   },
+   "sha256_before": "47dc93ea7d0babcc28204a8732913f1afcf455fc885c89aa5d882d14724b65a5",
+   "snapshot": "_process/architecture/history/47dc93ea7d0babcc/draws-on-a-shared-stock.json",
+   "sha256_after": "7ebdc6695acbeb4329e1b2359fdddad10eac6e112e75e1c6b009ca9b61a3debb"
+  },
+  {
+   "id": "effective-capacity-and-eventual-reachability",
+   "notes_before": 22,
+   "condensed": 18,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 18,
+    "other": 1,
+    "substantive": 2
+   },
+   "sha256_before": "6b462eb3c6798700b01575d3bafa9fa85bb1eea0b7843511f61bc4798142ed6e",
+   "snapshot": "_process/architecture/history/6b462eb3c6798700/effective-capacity-and-eventual-reachability.json",
+   "sha256_after": "867caa420b7b9c180f366bcaf2fd69bc7492056b60fd0629cceb2b6311053c8d"
+  },
+  {
+   "id": "enacted-scene-binding",
+   "notes_before": 36,
+   "condensed": 22,
+   "kept": 14,
+   "classes": {
+    "first": 1,
+    "other": 4,
+    "substantive": 9,
+    "bookkeeping": 22
+   },
+   "sha256_before": "8c876dc8a2741c5b0a3c464007b95918d30a4ee047fe2f88428bf38662f4918a",
+   "snapshot": "_process/architecture/history/8c876dc8a2741c5b/enacted-scene-binding.json",
+   "sha256_after": "ab2c1d405b6eccc6adc624d3526f4dea3414b0d55147e1356f5aa78f186d2fad"
+  },
+  {
+   "id": "encounter-control-and-retention",
+   "notes_before": 6,
+   "condensed": 2,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "substantive": 2,
+    "other": 1,
+    "bookkeeping": 2
+   },
+   "sha256_before": "3ddd8617c0306e43d58670271d22db75cc2c49e217cfab8b0168b7175ca6a3b4",
+   "snapshot": "_process/architecture/history/3ddd8617c0306e43/encounter-control-and-retention.json",
+   "sha256_after": "a1dc17cdb2a9cd0d3ee6e8a8632d9fd109cb4eed9f1a085023b1d4083b910ece"
+  },
+  {
+   "id": "encounter-selection-and-revision",
+   "notes_before": 35,
+   "condensed": 22,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "other": 3,
+    "substantive": 9,
+    "bookkeeping": 22
+   },
+   "sha256_before": "250debf51545ca673465ded11ce1c96ebfb3915a23eeba93776371f2b1cf0c1a",
+   "snapshot": "_process/architecture/history/250debf51545ca67/encounter-selection-and-revision.json",
+   "sha256_after": "ff527564c54273e547a65cc19d2086cd6b0beca0c22b8f3c04cf70596a95b217"
+  },
+  {
+   "id": "endpoint-loss-and-return",
+   "notes_before": 14,
+   "condensed": 12,
+   "kept": 2,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 12,
+    "substantive": 1
+   },
+   "sha256_before": "c6d4517c23a99e3a7cea133e59a7551b577111eb2d6537a522bcd7251ec2360e",
+   "snapshot": "_process/architecture/history/c6d4517c23a99e3a/endpoint-loss-and-return.json",
+   "sha256_after": "df24261a613c60370e38fa7a4e14e32db977fda86a4430f67a03eedf2f95a563"
+  },
+  {
+   "id": "entropy-history-and-record",
+   "notes_before": 66,
+   "condensed": 45,
+   "kept": 21,
+   "classes": {
+    "first": 1,
+    "other": 9,
+    "substantive": 11,
+    "bookkeeping": 45
+   },
+   "sha256_before": "0be41b8718b3af7021bfc1a65a1f7d39845e9abf040d6c85be1f8209544a84fd",
+   "snapshot": "_process/architecture/history/0be41b8718b3af70/entropy-history-and-record.json",
+   "sha256_after": "a9da9a9a57fd6acc8686259e1fd79f797edb7e4bcf8a2c623368de706cc0dab0"
+  },
+  {
+   "id": "every-loss-passes-a-juncture",
+   "notes_before": 13,
+   "condensed": 10,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 10,
+    "substantive": 2
+   },
+   "sha256_before": "4cf7dc1c147e65c90c6b852d42be4964daa00b857e42b6bbe2beab42fec814d6",
+   "snapshot": "_process/architecture/history/4cf7dc1c147e65c9/every-loss-passes-a-juncture.json",
+   "sha256_after": "76dcd25588515b620e900b0dcd06d6c1623c9bf0f6ce93ae4f404dadf3aef559"
+  },
+  {
+   "id": "every-origin-passes-the-gate",
+   "notes_before": 51,
+   "condensed": 43,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 43,
+    "other": 1,
+    "substantive": 6
+   },
+   "sha256_before": "68051637b79c87436008f65bda79044692071cfb41d88f2ccfd3891614ed3340",
+   "snapshot": "_process/architecture/history/68051637b79c8743/every-origin-passes-the-gate.json",
+   "sha256_after": "ba948207d10aa4a8e181a44ecd66a95f728b5831fec66bc909a78e4382ca82f3"
+  },
+  {
+   "id": "evolution-on-descent",
+   "notes_before": 84,
+   "condensed": 68,
+   "kept": 16,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 68,
+    "substantive": 11,
+    "other": 4
+   },
+   "sha256_before": "23438deba798cd0b64b335cd34439a58831677bcc7eb70ee132c9fe3460b7d9e",
+   "snapshot": "_process/architecture/history/23438deba798cd0b/evolution-on-descent.json",
+   "sha256_after": "4b8e83df48df135ea3121e58aeac502dcb76d0dc83274ca014ab65c555b64ae8"
+  },
+  {
+   "id": "exchanges-commute-unless-joined",
+   "notes_before": 52,
+   "condensed": 35,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "substantive": 10,
+    "bookkeeping": 35,
+    "other": 6
+   },
+   "sha256_before": "0c54ab04c05650019bd7e99d8c7b008416ddee4e7818de4c478661d0703014c8",
+   "snapshot": "_process/architecture/history/0c54ab04c0565001/exchanges-commute-unless-joined.json",
+   "sha256_after": "0dab47ac932d2bf25a9b963237f865ccb1d0b6498648a560ebd2796d071e0659"
+  },
+  {
+   "id": "exclusive-footprint-support",
+   "notes_before": 8,
+   "condensed": 5,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "substantive": 2,
+    "bookkeeping": 5
+   },
+   "sha256_before": "76503c63461242f82dda6b3e9c4a4bc7bd357aa325a536e4c278da1b59dcd27c",
+   "snapshot": "_process/architecture/history/76503c63461242f8/exclusive-footprint-support.json",
+   "sha256_after": "1d20422062e4f9614a4b78fcc9e9389e1d633d5e85916b4c22a478bca929c0e1"
+  },
+  {
+   "id": "experiment-needs-return",
+   "notes_before": 94,
+   "condensed": 73,
+   "kept": 21,
+   "classes": {
+    "first": 1,
+    "other": 9,
+    "bookkeeping": 73,
+    "substantive": 11
+   },
+   "sha256_before": "13bc4f4836076deb87cedbe8a79e84bfcfb558848a1770bfea6eaf06952eea85",
+   "snapshot": "_process/architecture/history/13bc4f4836076deb/experiment-needs-return.json",
+   "sha256_after": "8794e19565f83655a5f8b3aecafa66c21c1218bf028847d7c68172d0d65a097d"
+  },
+  {
+   "id": "fallible-witness-diagnosability",
+   "notes_before": 23,
+   "condensed": 17,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 17,
+    "substantive": 5
+   },
+   "sha256_before": "fa057404008ca73b0a68fe426d440fe031820d3d59cdcf59e38530c7bf36f437",
+   "snapshot": "_process/architecture/history/fa057404008ca73b/fallible-witness-diagnosability.json",
+   "sha256_after": "57de5c58e73ce6c4623c5f86cac2c9a90b1ddb85a13a53ab72e3866dbaba0c88"
+  },
+  {
+   "id": "feedback-and-reach",
+   "notes_before": 77,
+   "condensed": 57,
+   "kept": 20,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 57,
+    "other": 10,
+    "substantive": 9
+   },
+   "sha256_before": "1b557010efd1da4f39093b82ff99009c4cac6a7a49121ba8609395f7aaaaee0f",
+   "snapshot": "_process/architecture/history/1b557010efd1da4f/feedback-and-reach.json",
+   "sha256_after": "660bd9735c65d0fdcb2d1955cf4d5d2210ba83da0cc98988c0d4f87a063de9ca"
+  },
+  {
+   "id": "feeding-closure",
+   "notes_before": 87,
+   "condensed": 67,
+   "kept": 20,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 67,
+    "substantive": 12,
+    "other": 7
+   },
+   "sha256_before": "4d8b8ec7549013dcd1bec3b719709f4a4e7bf77c369f435e1679d92b93b1e18b",
+   "snapshot": "_process/architecture/history/4d8b8ec7549013dc/feeding-closure.json",
+   "sha256_after": "5b1a3fd1ad1aa4b6999d7a7d00879bb04d3504abf94e9f42fb2297bf243f9dd0"
+  },
+  {
+   "id": "finite-aggregation-within-restorable-basic-losses",
+   "notes_before": 18,
+   "condensed": 7,
+   "kept": 11,
+   "classes": {
+    "first": 1,
+    "other": 4,
+    "substantive": 6,
+    "bookkeeping": 7
+   },
+   "sha256_before": "eac780ef7e97edcee475fbf74ad3cf63e1cb6036f388d5ce5d5fcc5b3454b156",
+   "snapshot": "_process/architecture/history/eac780ef7e97edce/finite-aggregation-within-restorable-basic-losses.json",
+   "sha256_after": "8c1ac772df85ac7106569cdc24d943b98f2dcaef331774737fd9b85903065b99"
+  },
+  {
+   "id": "finite-basis-common-interpretation",
+   "notes_before": 15,
+   "condensed": 7,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "other": 3,
+    "substantive": 4,
+    "bookkeeping": 7
+   },
+   "sha256_before": "7e4b46c78be59fe28d84365deae89bc7071a54336ea25da140c91fa6408dfb2e",
+   "snapshot": "_process/architecture/history/7e4b46c78be59fe2/finite-basis-common-interpretation.json",
+   "sha256_after": "967e74f23c18e6b0a7866d87164e23c835ace9103dc09f9be1bb356764856943"
+  },
+  {
+   "id": "finite-continuation-plans",
+   "notes_before": 4,
+   "condensed": 1,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 1,
+    "substantive": 2
+   },
+   "sha256_before": "f40bca569ace6298a1809c11c77d1bdf7c9b48e13f784c118dfb06daf4929f5f",
+   "snapshot": "_process/architecture/history/f40bca569ace6298/finite-continuation-plans.json",
+   "sha256_after": "98fc768246061823758dfa9b472905914c94cd01b4cef5fd9e9d928ec254fe32"
+  },
+  {
+   "id": "finite-fallible-inquiry-necessity",
+   "notes_before": 14,
+   "condensed": 7,
+   "kept": 7,
+   "classes": {
+    "first": 1,
+    "substantive": 6,
+    "bookkeeping": 7
+   },
+   "sha256_before": "cdaaecc8fafcb0bda2d7fa56a74b92b1d4e5abc355011359f522342b5f2a0551",
+   "snapshot": "_process/architecture/history/cdaaecc8fafcb0bd/finite-fallible-inquiry-necessity.json",
+   "sha256_after": "a05e3afbfc9801f5641d16a20c525c260aa9826a77fb2112c26908ea1a023652"
+  },
+  {
+   "id": "finite-granularity-question-recovery",
+   "notes_before": 11,
+   "condensed": 8,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "substantive": 1,
+    "bookkeeping": 8
+   },
+   "sha256_before": "ff89413324fa6362b83e9cb8c4480d5d1bfd5293c8c1825b935cc0739fe73c2a",
+   "snapshot": "_process/architecture/history/ff89413324fa6362/finite-granularity-question-recovery.json",
+   "sha256_after": "7727882749b5ede872ebc24c7a59f336398c24f23d9a8a3c095c74fc7bf066db"
+  },
+  {
+   "id": "finite-joining-tree-lifting",
+   "notes_before": 12,
+   "condensed": 7,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 7,
+    "substantive": 3,
+    "other": 1
+   },
+   "sha256_before": "b454e7ef6d56f1c7260349205e14deb858f0452a7df0545bdba61c0b36715f4a",
+   "snapshot": "_process/architecture/history/b454e7ef6d56f1c7/finite-joining-tree-lifting.json",
+   "sha256_after": "060ee2b06d9d988471530e6d1ebd004d0a7a9741bbac679aed9ca20bdb0c0361"
+  },
+  {
+   "id": "fixed-places-and-sole-lines",
+   "notes_before": 16,
+   "condensed": 11,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 11,
+    "substantive": 4
+   },
+   "sha256_before": "ef2f6ee77afec00021b26f85e5e20f6b0119ead3054a1f00a8c310c37bfb0248",
+   "snapshot": "_process/architecture/history/ef2f6ee77afec000/fixed-places-and-sole-lines.json",
+   "sha256_after": "a3d2d92d747437f7eb6ee91f6641b7f2a2c1c541d481422adbedc8279b764f52"
+  },
+  {
+   "id": "formed-copying-correction",
+   "notes_before": 29,
+   "condensed": 20,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "substantive": 7,
+    "bookkeeping": 20,
+    "other": 1
+   },
+   "sha256_before": "3bdc007e6cdaa86053c3ba01fc91e1c54012bb8fd15459cfc17211fcb7c405d1",
+   "snapshot": "_process/architecture/history/3bdc007e6cdaa860/formed-copying-correction.json",
+   "sha256_after": "16dacc62b6a2ce854a9fd48909a17df545604088e6db26d1edb640d482ea0100"
+  },
+  {
+   "id": "formed-copying-registration",
+   "notes_before": 30,
+   "condensed": 22,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 22,
+    "substantive": 7
+   },
+   "sha256_before": "531ee55962abe3946bf60e7f86576250868ce40c384abc10d45120155012740f",
+   "snapshot": "_process/architecture/history/531ee55962abe394/formed-copying-registration.json",
+   "sha256_after": "fc3cbba344ed5732f15c047b8876939fe3f2622dbe5461c384611d3e9fe96928"
+  },
+  {
+   "id": "formed-goal-revision-continuation",
+   "notes_before": 25,
+   "condensed": 21,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 21,
+    "substantive": 3
+   },
+   "sha256_before": "018bef596f97ea93a2a13b9ab9ea0b361d70f4338128d7405b38bc82b2fd0f63",
+   "snapshot": "_process/architecture/history/018bef596f97ea93/formed-goal-revision-continuation.json",
+   "sha256_after": "05516e37a46e965fed9e24a092a7ddc561a71f6445877dd46eda8fbec223d85f"
+  },
+  {
+   "id": "formed-software-continuation",
+   "notes_before": 6,
+   "condensed": 2,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "substantive": 2,
+    "bookkeeping": 2
+   },
+   "sha256_before": "fc76e9a2a18ddd7ac61ba87acc0469ecd715ead0f24b5c97ecca3dab17033a3a",
+   "snapshot": "_process/architecture/history/fc76e9a2a18ddd7a/formed-software-continuation.json",
+   "sha256_after": "e818c3d026db6ac08ca869813d1cb6e6e50536439d2c05949f2a9a201f586ac6"
+  },
+  {
+   "id": "four-cases-of-a-part",
+   "notes_before": 90,
+   "condensed": 71,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 71,
+    "other": 8,
+    "substantive": 10
+   },
+   "sha256_before": "6177b9ea302aea86795998db9388629e0cc0efed2af8ee9b3e3092e99d6fcb5c",
+   "snapshot": "_process/architecture/history/6177b9ea302aea86/four-cases-of-a-part.json",
+   "sha256_after": "31dc8b5512b755a4af9df7d1191bec5fb8f1a02041d3dcb0aa55070bde8938e2"
+  },
+  {
+   "id": "fulfillment-chance-floor",
+   "notes_before": 19,
+   "condensed": 13,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 13,
+    "substantive": 5
+   },
+   "sha256_before": "b9d1f8d4d39138c2f617e5b63fba18487bc2508959725ed82b1ac282a8d327e0",
+   "snapshot": "_process/architecture/history/b9d1f8d4d39138c2/fulfillment-chance-floor.json",
+   "sha256_after": "9707fe569938482098972debd93b1f50d16b5f1c8abaf89cc1fb939f3b3c6a83"
+  },
+  {
+   "id": "functional-joining-common-structure",
+   "notes_before": 12,
+   "condensed": 7,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 7,
+    "substantive": 3,
+    "other": 1
+   },
+   "sha256_before": "b5472a159d77905dd4c8c9a822cba5108f06aeca48ec2a193033357cf84951bc",
+   "snapshot": "_process/architecture/history/b5472a159d77905d/functional-joining-common-structure.json",
+   "sha256_after": "9490d51dc91fb4a10aa8a739ed2c8384f17abbdcf7c7b4734b9aa639942f8b11"
+  },
+  {
+   "id": "generalization-through-lumping",
+   "notes_before": 65,
+   "condensed": 48,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 48,
+    "substantive": 10,
+    "other": 6
+   },
+   "sha256_before": "88dcf59fe3d78de4091f929246cced8dc068c0562fbd37b667b6fc5512cf7235",
+   "snapshot": "_process/architecture/history/88dcf59fe3d78de4/generalization-through-lumping.json",
+   "sha256_after": "cc72fd2597cefa08627eead2689044840c992d057cbb97a21ddcf5ba519ed431"
+  },
+  {
+   "id": "generation-is-replenishment",
+   "notes_before": 105,
+   "condensed": 86,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 86,
+    "substantive": 13,
+    "other": 5
+   },
+   "sha256_before": "c58ef2e1d42d271157f17923e181d7d630c3ea2400fed0eab2d4295a72367001",
+   "snapshot": "_process/architecture/history/c58ef2e1d42d2711/generation-is-replenishment.json",
+   "sha256_after": "87a496c678bcc38986ee505bb9fce69579bd28f4d4492b51cf0d844eb905f080"
+  },
+  {
+   "id": "giving-that-waits-on-giving",
+   "notes_before": 28,
+   "condensed": 23,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 23,
+    "substantive": 4
+   },
+   "sha256_before": "6f0de681b54ba6fb75bb608cfa2acf93c45a85909c6983060354bd15b3810a51",
+   "snapshot": "_process/architecture/history/6f0de681b54ba6fb/giving-that-waits-on-giving.json",
+   "sha256_after": "c628a6414ddb0e9f2b298cac028c10c0556f3ac41a72aef9971d46b108b64e1d"
+  },
+  {
+   "id": "gluing-under-parity",
+   "notes_before": 41,
+   "condensed": 31,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 31,
+    "other": 1,
+    "substantive": 8
+   },
+   "sha256_before": "720b9022fac3b95833ed1ea3531f9b51f3a642dd86a8d302903ea4c000e0c20f",
+   "snapshot": "_process/architecture/history/720b9022fac3b958/gluing-under-parity.json",
+   "sha256_after": "a23adb9cb6ced80c292ed5263a1cf2f55789483f4f22f62b72d905af377fc331"
+  },
+  {
+   "id": "growth-constrained-fragmentation",
+   "notes_before": 23,
+   "condensed": 14,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "bookkeeping": 14,
+    "substantive": 7
+   },
+   "sha256_before": "9bf8cef640229343cf27e982af0e6deda6d49bb1e29adf280674a976b872171e",
+   "snapshot": "_process/architecture/history/9bf8cef640229343/growth-constrained-fragmentation.json",
+   "sha256_after": "f3d30c699886a39f8e3800684e84b947c964b3a8a81b7c555c338206f33f3954"
+  },
+  {
+   "id": "guarded-program-question-recovery",
+   "notes_before": 11,
+   "condensed": 9,
+   "kept": 2,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 9,
+    "substantive": 1
+   },
+   "sha256_before": "c295bfe845190e3efeab14a3ee6f2b45bddc0fc87cc7bbdd842087695102360b",
+   "snapshot": "_process/architecture/history/c295bfe845190e3e/guarded-program-question-recovery.json",
+   "sha256_after": "2445fce3fb9c548ba50dc1afff9482e3fb134d4a03bb83e3f8da0e2b157983b7"
+  },
+  {
+   "id": "held-lives-g0-is-centering",
+   "notes_before": 73,
+   "condensed": 60,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "substantive": 10,
+    "bookkeeping": 60,
+    "other": 2
+   },
+   "sha256_before": "62322fd3c7b41f5a5f68ad1f06e0438b6f649682ab23695de8e4e05ebf23efb3",
+   "snapshot": "_process/architecture/history/62322fd3c7b41f5a/held-lives-g0-is-centering.json",
+   "sha256_after": "adc2c3accb20b570c6ffd2b493d70dcbed67cc6657c95058814e8c64c7c39f8b"
+  },
+  {
+   "id": "hexagram-arrangements-and-laws",
+   "notes_before": 14,
+   "condensed": 9,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 9,
+    "substantive": 4
+   },
+   "sha256_before": "6e94ef3da711a6dc8cb790c60314dacee509222b1d0e6095db3a313efd48bfcb",
+   "snapshot": "_process/architecture/history/6e94ef3da711a6dc/hexagram-arrangements-and-laws.json",
+   "sha256_after": "09f5c8a762216e12a8498c361e34b57d0d2979350c14aaff120b643ce806dfec"
+  },
+  {
+   "id": "hexagram-world-laws",
+   "notes_before": 22,
+   "condensed": 16,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 16,
+    "substantive": 5
+   },
+   "sha256_before": "c5b0d91698de26228153bf53ddd8ee9984653e60d96bd0f9c92a74d6e7a909e7",
+   "snapshot": "_process/architecture/history/c5b0d91698de2622/hexagram-world-laws.json",
+   "sha256_after": "f3b4f5c7546ebd1fedcfafb80cbb1130711ab8a70f4ea2cfac6c1d57f81017e3"
+  },
+  {
+   "id": "hexagrams-on-the-spine",
+   "notes_before": 28,
+   "condensed": 22,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 22,
+    "other": 1,
+    "substantive": 4
+   },
+   "sha256_before": "9d81f98aa9c8f96600a3c1dad51a5968bfbd0bc154a8903373ac14955da065eb",
+   "snapshot": "_process/architecture/history/9d81f98aa9c8f966/hexagrams-on-the-spine.json",
+   "sha256_after": "4836e67bfd031d88725a4bfd493a46c06df8cb8f009344d5a3fa2af844f93789"
+  },
+  {
+   "id": "historical-source-binding",
+   "notes_before": 30,
+   "condensed": 21,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 21,
+    "substantive": 7,
+    "other": 1
+   },
+   "sha256_before": "724d5d66dcdfab01425354b66072174660edbd6b27452954029026e4b191e548",
+   "snapshot": "_process/architecture/history/724d5d66dcdfab01/historical-source-binding.json",
+   "sha256_after": "a6dccf62df4734b23a5822948abca81810acf29c004e04db03c868744c48794b"
+  },
+  {
+   "id": "histories-fix-law-up-to-dead-ends",
+   "notes_before": 56,
+   "condensed": 42,
+   "kept": 14,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 42,
+    "substantive": 7,
+    "other": 6
+   },
+   "sha256_before": "68f6c4808a15ea8ad57b2465e524680b7208ed599a52439fed12a01ae135ca91",
+   "snapshot": "_process/architecture/history/68f6c4808a15ea8a/histories-fix-law-up-to-dead-ends.json",
+   "sha256_after": "7d49bb6c1207979b5ecc172e9996580c9eeb56a0241ec368450128aa5bdec342"
+  },
+  {
+   "id": "how-a-carried-difference-grows",
+   "notes_before": 55,
+   "condensed": 39,
+   "kept": 16,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 39,
+    "other": 5,
+    "substantive": 10
+   },
+   "sha256_before": "d1495af6c1cd28b4da94765bc720f6c74e82b5f98053037c140c9aaf94ae020b",
+   "snapshot": "_process/architecture/history/d1495af6c1cd28b4/how-a-carried-difference-grows.json",
+   "sha256_after": "d27f7da0c4291f6251947900a87c6c23f8f0bbdad157f13cb380e8cc0cfb9612"
+  },
+  {
+   "id": "how-fast-a-rule-may-change",
+   "notes_before": 27,
+   "condensed": 22,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 22,
+    "substantive": 4
+   },
+   "sha256_before": "3a0a4b0e7baa5de3ce98b446426313f1bd8aed02fc21feb5a36ca3002ff2cd6a",
+   "snapshot": "_process/architecture/history/3a0a4b0e7baa5de3/how-fast-a-rule-may-change.json",
+   "sha256_after": "a328a23b6c30ad3b0edd01bf8176cd1ab3d4dd4a85f277970f0fa058778d6973"
+  },
+  {
+   "id": "how-loops-form",
+   "notes_before": 42,
+   "condensed": 31,
+   "kept": 11,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 31,
+    "other": 2,
+    "substantive": 8
+   },
+   "sha256_before": "c9a571b48119bffbd684e76961e91a645d503fe8520d3a3b49c6194410e68cf3",
+   "snapshot": "_process/architecture/history/c9a571b48119bffb/how-loops-form.json",
+   "sha256_after": "4fba73b6d10b8c375777aeadae7e699e9f8737b85a22ea4070b42667b8e9e705"
+  },
+  {
+   "id": "how-much-difference-arrives",
+   "notes_before": 45,
+   "condensed": 32,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 32,
+    "other": 4,
+    "substantive": 8
+   },
+   "sha256_before": "fa31c69c474d13bf1fe2990dff93bfbd07ea2ff77bc0f1f4c7eede59df0f42f0",
+   "snapshot": "_process/architecture/history/fa31c69c474d13bf/how-much-difference-arrives.json",
+   "sha256_after": "bbfc8c6d7e4f031c0f2f4ee201df697150f2955f14df8691f8c615b3ee94b9f7"
+  },
+  {
+   "id": "how-often-couplings-act",
+   "notes_before": 48,
+   "condensed": 36,
+   "kept": 12,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 36,
+    "substantive": 11
+   },
+   "sha256_before": "3a06d71ec97f7459ffb11efeb80f8d3892b6005f820d111df48694c1eb73ba83",
+   "snapshot": "_process/architecture/history/3a06d71ec97f7459/how-often-couplings-act.json",
+   "sha256_after": "7e69f130ae9f7e04c337543f752947e28b9f40e8eb060a738d53906c0897be50"
+  },
+  {
+   "id": "identification-where-bounded",
+   "notes_before": 74,
+   "condensed": 51,
+   "kept": 23,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 51,
+    "substantive": 13,
+    "other": 9
+   },
+   "sha256_before": "c575d2e260a620e1d980cede6f8d7c272b90d04815d95ff8cdaf2744aa4292c9",
+   "snapshot": "_process/architecture/history/c575d2e260a620e1/identification-where-bounded.json",
+   "sha256_after": "fc79377943b84504333b6a958e2f6d90efb0049467c43851ceef4c875dfebe35"
+  },
+  {
+   "id": "identification-where-runs-part",
+   "notes_before": 43,
+   "condensed": 33,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "substantive": 7,
+    "other": 2,
+    "bookkeeping": 33
+   },
+   "sha256_before": "bedccea98ecd51635b173377a34b0cfee8971bf3839a0e2d5d18874dfd28c549",
+   "snapshot": "_process/architecture/history/bedccea98ecd5163/identification-where-runs-part.json",
+   "sha256_after": "22b83f6c76d3ca62d6871954a1f29a6f0cac9c733385ee02435e39a48c307578"
+  },
+  {
+   "id": "identity-across-steps",
+   "notes_before": 112,
+   "condensed": 92,
+   "kept": 20,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 92,
+    "substantive": 15,
+    "other": 4
+   },
+   "sha256_before": "d602324498e85ab593fbd50147b63f8d9b81e3e837aeb63f446b6cd201e1aa18",
+   "snapshot": "_process/architecture/history/d602324498e85ab5/identity-across-steps.json",
+   "sha256_after": "e445b2e6fced03bef1cc344374c284fd03ab31296a4a074a42ec511e5ca6474e"
+  },
+  {
+   "id": "imbalance-as-relatum",
+   "notes_before": 90,
+   "condensed": 73,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 73,
+    "substantive": 10,
+    "other": 6
+   },
+   "sha256_before": "38f8c3edb3835a7a27eb43414ec4bcbc845c2b4ff033e5a9eb1aca4982ea1afe",
+   "snapshot": "_process/architecture/history/38f8c3edb3835a7a/imbalance-as-relatum.json",
+   "sha256_after": "0381ab65a6da8b8b5054f6ca56979d91aa0b7a4237bc111dd8b90d0e586b6ac8"
+  },
+  {
+   "id": "incidence-common-refinement",
+   "notes_before": 11,
+   "condensed": 6,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "substantive": 3,
+    "other": 1,
+    "bookkeeping": 6
+   },
+   "sha256_before": "25e9548f7506868934de05683868cfbbbe358573ecbdb4b64ae03f97f068ea42",
+   "snapshot": "_process/architecture/history/25e9548f75068689/incidence-common-refinement.json",
+   "sha256_after": "c872482470c57e50e40b7611d55fc0642001cf622ddcb07c4540d8f4cd21ff2f"
+  },
+  {
+   "id": "inherited-structural-copying",
+   "notes_before": 32,
+   "condensed": 22,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 22,
+    "substantive": 8,
+    "other": 1
+   },
+   "sha256_before": "dfa67bcd56c05cddad85ba672d06f6c7502e634900c9aa9601f9eb86cb0a06b5",
+   "snapshot": "_process/architecture/history/dfa67bcd56c05cdd/inherited-structural-copying.json",
+   "sha256_after": "0796c3b6e17b5caa4fc984eee423e67c0c7d5ba912f2d2d51afbd4af22953585"
+  },
+  {
+   "id": "joining-open-map-factor",
+   "notes_before": 11,
+   "condensed": 6,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "substantive": 3,
+    "other": 1,
+    "bookkeeping": 6
+   },
+   "sha256_before": "7e62f4de90b7a60dd44d9adaf0d3d056966e93e3ed1180809963cf494a8887b7",
+   "snapshot": "_process/architecture/history/7e62f4de90b7a60d/joining-open-map-factor.json",
+   "sha256_after": "ca8d31ba6816d316c04baf69765017d34869d0f6a6bb6fca3cf82f9abfd84cc3"
+  },
+  {
+   "id": "joining-questions-survive-encoding",
+   "notes_before": 12,
+   "condensed": 7,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 7,
+    "substantive": 3,
+    "other": 1
+   },
+   "sha256_before": "394e44da140d1063f4e54321a2133e5db07737e170b9345d87785b5fc1a9f3f1",
+   "snapshot": "_process/architecture/history/394e44da140d1063/joining-questions-survive-encoding.json",
+   "sha256_after": "4cec97d1ba960cb8ab722c0fb9889042ce3c7720084f7903b61cf19d6284c898"
+  },
+  {
+   "id": "joint-code-plan-lifting",
+   "notes_before": 9,
+   "condensed": 5,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "substantive": 2,
+    "bookkeeping": 5
+   },
+   "sha256_before": "94532bc0d0f920196735563ac26d20e4ed2201bf196e2ada95513e9a901c19d2",
+   "snapshot": "_process/architecture/history/94532bc0d0f92019/joint-code-plan-lifting.json",
+   "sha256_after": "4de163b5d4a8e6bf495997e12c3fc973b6acce704185a5071a80aecc2166da29"
+  },
+  {
+   "id": "joint-correlation-reduced-dynamics",
+   "notes_before": 30,
+   "condensed": 25,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 25,
+    "other": 1,
+    "substantive": 3
+   },
+   "sha256_before": "490d8506c2e26266b64c2c39b1641f25cfaa26c7487c26149c58a9bc67f41952",
+   "snapshot": "_process/architecture/history/490d8506c2e26266/joint-correlation-reduced-dynamics.json",
+   "sha256_after": "d6d77e38f33e96349908125f681e695e3e74a8cb4417bc1101fd943243bc80d3"
+  },
+  {
+   "id": "joint-decomposition-lifting",
+   "notes_before": 8,
+   "condensed": 6,
+   "kept": 2,
+   "classes": {
+    "first": 1,
+    "substantive": 1,
+    "bookkeeping": 6
+   },
+   "sha256_before": "12b4256f02b2352c491075db8a42ce4ee6f09c9cb42c4d669684b7cfba5ec467",
+   "snapshot": "_process/architecture/history/12b4256f02b2352c/joint-decomposition-lifting.json",
+   "sha256_after": "55331e33f819566d7df82f505817d25eab20b210cb54b80ebfa8873393500db7"
+  },
+  {
+   "id": "joint-difference-making",
+   "notes_before": 112,
+   "condensed": 95,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 95,
+    "substantive": 13,
+    "other": 3
+   },
+   "sha256_before": "9a2446804d8fd5a40e62faab6e4178b3511cadcc85bb3d983a0900db841adbbe",
+   "snapshot": "_process/architecture/history/9a2446804d8fd5a4/joint-difference-making.json",
+   "sha256_after": "5c509dcc28f2c5ecbccf1dcdce5ae314848548593585b84548a25bb6955a11b7"
+  },
+  {
+   "id": "joint-plan-composition",
+   "notes_before": 4,
+   "condensed": 1,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 1,
+    "substantive": 2
+   },
+   "sha256_before": "1e9de9f9cd792eb5243183f362371cab4b135f217853d662a58c5cae6561a2c7",
+   "snapshot": "_process/architecture/history/1e9de9f9cd792eb5/joint-plan-composition.json",
+   "sha256_after": "13e76a6dc252ad93a1c2e1507c78b4ca034f645693760b0d3c9f10c9b5a9d2ca"
+  },
+  {
+   "id": "joint-practice-forms-continuation",
+   "notes_before": 25,
+   "condensed": 20,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "substantive": 4,
+    "bookkeeping": 20
+   },
+   "sha256_before": "11f32a1cb81d7291333a9e6ec2af92ee934c33a467bfc1de2b0c50823f1efd66",
+   "snapshot": "_process/architecture/history/11f32a1cb81d7291/joint-practice-forms-continuation.json",
+   "sha256_after": "19e61d0bf30c1f1b30b43096b3615e7e66a2728632eebc907f43f48580adc64a"
+  },
+  {
+   "id": "joint-target-uniqueness",
+   "notes_before": 8,
+   "condensed": 6,
+   "kept": 2,
+   "classes": {
+    "first": 1,
+    "substantive": 1,
+    "bookkeeping": 6
+   },
+   "sha256_before": "56743e345ab50bd34acae7ba6321509b7fc522415a0ae0570a6767c63b0ac66f",
+   "snapshot": "_process/architecture/history/56743e345ab50bd3/joint-target-uniqueness.json",
+   "sha256_after": "4e7be90dff868b0c63bf401603a8a750f8fe823245a1fcc7472c860b5af16fe7"
+  },
+  {
+   "id": "laws-at-coarser-steps",
+   "notes_before": 91,
+   "condensed": 73,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 73,
+    "substantive": 10,
+    "other": 7
+   },
+   "sha256_before": "fec1222bf3f1930e3b50e4967e789ccec65da6add5763b0a732ba819c4789659",
+   "snapshot": "_process/architecture/history/fec1222bf3f1930e/laws-at-coarser-steps.json",
+   "sha256_after": "e881f37273ec5cf7324203767534dc138f8d85f5dd56ec294c07cd37f9bfeef1"
+  },
+  {
+   "id": "laws-at-finer-units",
+   "notes_before": 90,
+   "condensed": 73,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 73,
+    "substantive": 10,
+    "other": 6
+   },
+   "sha256_before": "c67d14b89f47a579e3a01bcebe84df7a64325c087749eecf6be4260340c42a15",
+   "snapshot": "_process/architecture/history/c67d14b89f47a579/laws-at-finer-units.json",
+   "sha256_after": "a9752274660c434d3dac1ddda3a1f09c3ea9c5517b3dff8f85591447ef53a6b8"
+  },
+  {
+   "id": "laws-of-one-step-complete",
+   "notes_before": 52,
+   "condensed": 37,
+   "kept": 15,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 37,
+    "substantive": 8,
+    "other": 6
+   },
+   "sha256_before": "4f86e552e23ba6b4b3a981c113a6ba84ecb4c83b25ef2f897be072bc1c0129b6",
+   "snapshot": "_process/architecture/history/4f86e552e23ba6b4/laws-of-one-step-complete.json",
+   "sha256_after": "5b11bffe2790ec39194c002c079776d4d592c1ce1f2bd51b0cdaabc85f24ba3e"
+  },
+  {
+   "id": "laws-of-one-step",
+   "notes_before": 143,
+   "condensed": 120,
+   "kept": 23,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 120,
+    "other": 8,
+    "substantive": 14
+   },
+   "sha256_before": "b8e5b15685dad731bd3ad230943d484f9ed6b65c0215ad012fb24f1878ec423c",
+   "snapshot": "_process/architecture/history/b8e5b15685dad731/laws-of-one-step.json",
+   "sha256_after": "c88abd072d1b046b9c47feb0f223ef9d39a2d0c901be986d84c18e4f0d6cc585"
+  },
+  {
+   "id": "learnable-through-registration",
+   "notes_before": 44,
+   "condensed": 37,
+   "kept": 7,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 37,
+    "other": 2,
+    "substantive": 4
+   },
+   "sha256_before": "1567b3ed7125c018e02b671eca01771f499fc8811bde7bcbecaa6c186f835775",
+   "snapshot": "_process/architecture/history/1567b3ed7125c018/learnable-through-registration.json",
+   "sha256_after": "15a244ef8a559c040ee12bff9eed9704decfd68229edd1db70e0c2567220609b"
+  },
+  {
+   "id": "learned-procedure-transmission",
+   "notes_before": 13,
+   "condensed": 6,
+   "kept": 7,
+   "classes": {
+    "first": 1,
+    "substantive": 5,
+    "other": 1,
+    "bookkeeping": 6
+   },
+   "sha256_before": "3f5342a2bd84d405b7d80641d550db71594c5d3ebcc634589dde5a6fd5794499",
+   "snapshot": "_process/architecture/history/3f5342a2bd84d405/learned-procedure-transmission.json",
+   "sha256_after": "e418ff758ad867be71939e064471ef95682c1cc16800452d4cff5df938d6eedc"
+  },
+  {
+   "id": "learning-by-refutation",
+   "notes_before": 65,
+   "condensed": 48,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 48,
+    "other": 8,
+    "substantive": 8
+   },
+   "sha256_before": "f9be09fc94f10525aa0b9ae2ddcd985b820642beada7a9b3b8013e1b130822b9",
+   "snapshot": "_process/architecture/history/f9be09fc94f10525/learning-by-refutation.json",
+   "sha256_after": "c227eeee7c9de09950b918d17c63378cef1e5da2d9b13e23c1e8ed547882f7c7"
+  },
+  {
+   "id": "learning-through-a-map-is-tracking-in-the-limit",
+   "notes_before": 2,
+   "condensed": 1,
+   "kept": 1,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 1
+   },
+   "sha256_before": "fca4cec915f1ff85c78c771800975e31687bcf98927b9688e0ecbc01511b7277",
+   "snapshot": "_process/architecture/history/fca4cec915f1ff85/learning-through-a-map-is-tracking-in-the-limit.json",
+   "sha256_after": "0f44121d101d41705c7a54f8aa691e9c1e3932ba42a9ebbe0c86874575603058"
+  },
+  {
+   "id": "least-footprint-where-idleness-decided",
+   "notes_before": 50,
+   "condensed": 35,
+   "kept": 15,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 35,
+    "substantive": 9,
+    "other": 5
+   },
+   "sha256_before": "ef8a3370ef4951a6c4c8e7bb3ff8025de26b6f3ffc6a468619c2c2fe696a36a4",
+   "snapshot": "_process/architecture/history/ef8a3370ef4951a6/least-footprint-where-idleness-decided.json",
+   "sha256_after": "5d375a008be57e693302f932571e6df90a8a41263499b71705e28b16f825259b"
+  },
+  {
+   "id": "least-loss-from-entropy-production",
+   "notes_before": 6,
+   "condensed": 3,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 3,
+    "substantive": 2
+   },
+   "sha256_before": "72ff44232ec67694246f40e4647ede7eee437acc5753aa88838565c393cedb37",
+   "snapshot": "_process/architecture/history/72ff44232ec67694/least-loss-from-entropy-production.json",
+   "sha256_after": "d808a51966fb79e81220a898aa3fd82e3a6ecbd445954bff92f968672d746595"
+  },
+  {
+   "id": "least-loss-rest",
+   "notes_before": 16,
+   "condensed": 13,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 13,
+    "substantive": 2
+   },
+   "sha256_before": "e8c0760ae4065391ec374d3a78fda29704a5b51bae13db03f876c5b39396d4fd",
+   "snapshot": "_process/architecture/history/e8c0760ae4065391/least-loss-rest.json",
+   "sha256_after": "5bfa4431073a7af9eae9180666d8665eff95633b5a47a744649c68e319390303"
+  },
+  {
+   "id": "levels-of-closure",
+   "notes_before": 82,
+   "condensed": 63,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 63,
+    "other": 8,
+    "substantive": 10
+   },
+   "sha256_before": "1570b8e162ae79425c19fc91714a45db332a1300e3e0d351fd35a3715c661a93",
+   "snapshot": "_process/architecture/history/1570b8e162ae7942/levels-of-closure.json",
+   "sha256_after": "7a3ba44518f91924138451c6cf7cb4f7fe4d216aedcd5413cfb6d28475c92dd1"
+  },
+  {
+   "id": "life-as-condition-of-life",
+   "notes_before": 109,
+   "condensed": 90,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 90,
+    "other": 6,
+    "substantive": 12
+   },
+   "sha256_before": "af22df0f985d3d0f0cc9e868f7bb3b648751d54ba501f6adb488b63ce275a54d",
+   "snapshot": "_process/architecture/history/af22df0f985d3d0f/life-as-condition-of-life.json",
+   "sha256_after": "4052217bc7f45c820ae7444751c7d3e713382311aa595c091a243fb356f63a97"
+  },
+  {
+   "id": "lifting-where-branching-is-finite",
+   "notes_before": 51,
+   "condensed": 39,
+   "kept": 12,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 39,
+    "other": 2,
+    "substantive": 9
+   },
+   "sha256_before": "773f4d5fae4f7f58bb2eca048fea551ff5fefd4155362a974d3a3252b8ae8429",
+   "snapshot": "_process/architecture/history/773f4d5fae4f7f58/lifting-where-branching-is-finite.json",
+   "sha256_after": "5bad716c285a4ded4a2ca72903483648d647b208bcb457c2e6e6a94735b097e6"
+  },
+  {
+   "id": "listing-once-is-decided-identity",
+   "notes_before": 61,
+   "condensed": 43,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 43,
+    "substantive": 9,
+    "other": 8
+   },
+   "sha256_before": "be0ac957b3e0801045251f1603e0c0b1de11ba6512fa038c690f591152397f7b",
+   "snapshot": "_process/architecture/history/be0ac957b3e08010/listing-once-is-decided-identity.json",
+   "sha256_after": "b9d451dc8809391299646735f6452198ceeda3f502000454af4e492142a96da0"
+  },
+  {
+   "id": "living-on-and-descent",
+   "notes_before": 95,
+   "condensed": 82,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 82,
+    "substantive": 10,
+    "other": 2
+   },
+   "sha256_before": "6b3820f3dbbf8520d6869f04b414d7d404f87d3d750d628315f8f6af2a398f86",
+   "snapshot": "_process/architecture/history/6b3820f3dbbf8520/living-on-and-descent.json",
+   "sha256_after": "94b77a31bc596ba81c93065fd4a285b6fa2a1d09c167bcf55a02ad7ad7af8503"
+  },
+  {
+   "id": "loops-within-what-a-law-reads",
+   "notes_before": 41,
+   "condensed": 31,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "substantive": 8,
+    "other": 1,
+    "bookkeeping": 31
+   },
+   "sha256_before": "eb4b9b9487d823e123a5dda28cf7c12ca4e6ac841221e34b2d5f96665159fef6",
+   "snapshot": "_process/architecture/history/eb4b9b9487d823e1/loops-within-what-a-law-reads.json",
+   "sha256_after": "0499be4347029006516b13371069c2d9863087c262d8cf2c371e5cf6c191186f"
+  },
+  {
+   "id": "loss-beyond-a-region",
+   "notes_before": 89,
+   "condensed": 71,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 71,
+    "substantive": 10,
+    "other": 7
+   },
+   "sha256_before": "76ddb99da5d6935a44b40e69bf22d76448f5628c5ad4a119c46bc755fdb48f76",
+   "snapshot": "_process/architecture/history/76ddb99da5d6935a/loss-beyond-a-region.json",
+   "sha256_after": "b8a83a5657afb57d4e2f99e84ac183a9b96231cc4b063b27c51ece1dc139b328"
+  },
+  {
+   "id": "losses-of-the-sum-over-histories",
+   "notes_before": 53,
+   "condensed": 36,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 36,
+    "substantive": 9,
+    "other": 7
+   },
+   "sha256_before": "6a6e15e86a9cf797418e37e26711477c7eddb39f86a5931d27796c111e7267e2",
+   "snapshot": "_process/architecture/history/6a6e15e86a9cf797/losses-of-the-sum-over-histories.json",
+   "sha256_after": "bf3721e6e37a33e343b5c4a95a3e452e9a8552cbfa953431691e49cb9d3a4726"
+  },
+  {
+   "id": "map-of-premises",
+   "notes_before": 91,
+   "condensed": 74,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 74,
+    "substantive": 12,
+    "other": 4
+   },
+   "sha256_before": "5dccabab278261ef9aaca5961a74f9a17c7d06abf45a6aa04c95606517ee23b3",
+   "snapshot": "_process/architecture/history/5dccabab278261ef/map-of-premises.json",
+   "sha256_after": "5b728297aca70cc80488b37cdf74b32b63efde11fd4d31878261be13d52038cb"
+  },
+  {
+   "id": "market-finite-support-obstruction",
+   "notes_before": 33,
+   "condensed": 23,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "substantive": 8,
+    "bookkeeping": 23,
+    "other": 1
+   },
+   "sha256_before": "a4730fcd6187478009ba984aaec88208196b9ef3e474f4dc70f34bc173dd184e",
+   "snapshot": "_process/architecture/history/a4730fcd61874780/market-finite-support-obstruction.json",
+   "sha256_after": "2d998c0a004b27926aa386146aa228b82b0c17c2f4d408978c119cbda8e269ac"
+  },
+  {
+   "id": "market-partial-correction-boundary",
+   "notes_before": 33,
+   "condensed": 24,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 24,
+    "substantive": 8
+   },
+   "sha256_before": "d806134e99e7584a8b9688d948970fa1035bd4dc29f0a563b3d689b5d0ab81b2",
+   "snapshot": "_process/architecture/history/d806134e99e7584a/market-partial-correction-boundary.json",
+   "sha256_after": "c571aab75ab54a832da11a8d081a780f402752c74307bd1e5a0c7326defae66b"
+  },
+  {
+   "id": "market-protected-continuation",
+   "notes_before": 26,
+   "condensed": 20,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 20,
+    "substantive": 5
+   },
+   "sha256_before": "a67e2a7ff5606344dc45bdf8ecadcf4222f0b09d9f7557d3a51d421014e1920c",
+   "snapshot": "_process/architecture/history/a67e2a7ff5606344/market-protected-continuation.json",
+   "sha256_after": "601200e239090c2b2c62a27ab0ed951226cbbd05e145503df789ef00b4af5ea8"
+  },
+  {
+   "id": "market-supported-finite-transition",
+   "notes_before": 34,
+   "condensed": 25,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 25,
+    "substantive": 8
+   },
+   "sha256_before": "6eb39a520b68465b2eb9ade1fc72e5b14045de6a1189b7f3a402984246bf68f9",
+   "snapshot": "_process/architecture/history/6eb39a520b68465b/market-supported-finite-transition.json",
+   "sha256_after": "84ac2d965524c74f47e6b69ce0f9c2f6db8048fc9eb8c2782be162754efc54ea"
+  },
+  {
+   "id": "material-preparation-output",
+   "notes_before": 13,
+   "condensed": 7,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 7,
+    "substantive": 5
+   },
+   "sha256_before": "69d360a4ab6b0433e33f6f509c000294c07099a59b474f5e3aef9d66c7032fb1",
+   "snapshot": "_process/architecture/history/69d360a4ab6b0433/material-preparation-output.json",
+   "sha256_after": "6e360670bfbb77d8e68bbf95e8acbe75e4a870470ed3679c5ed831ef08ee1a68"
+  },
+  {
+   "id": "mediated-evidence-transport",
+   "notes_before": 25,
+   "condensed": 20,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 20,
+    "substantive": 4
+   },
+   "sha256_before": "947c2efcb9e2f8117f9cd8d676b2da02934f51b386cceb9e17b715fcee3d5173",
+   "snapshot": "_process/architecture/history/947c2efcb9e2f811/mediated-evidence-transport.json",
+   "sha256_after": "2b7bcff80cd80f3505ea94ae8936e57b8b3270f0952f84f0568719affb349026"
+  },
+  {
+   "id": "metaethical-core-characterization",
+   "notes_before": 106,
+   "condensed": 92,
+   "kept": 14,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 92,
+    "other": 4,
+    "substantive": 9
+   },
+   "sha256_before": "3dc86cf4eefbd3fbe1cf474af193406df06a2a4ae7c2ed985c59294b5df8bd37",
+   "snapshot": "_process/architecture/history/3dc86cf4eefbd3fb/metaethical-core-characterization.json",
+   "sha256_after": "7a6ac6470e475a0f833b42216e6689ace98f5ebca9f9bfce0519d186b549094d"
+  },
+  {
+   "id": "more-needs-renewers",
+   "notes_before": 109,
+   "condensed": 90,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "substantive": 10,
+    "bookkeeping": 90,
+    "other": 8
+   },
+   "sha256_before": "54e7d510916a3a6e0aed3bee6b8b6764eb2aef60671923199976a62f1a623979",
+   "snapshot": "_process/architecture/history/54e7d510916a3a6e/more-needs-renewers.json",
+   "sha256_after": "55c408657a8ead7119bb155fe591ba5982f2e15b977b5945bf80b1cab40d1463"
+  },
+  {
+   "id": "multivalued-joining-common-structure",
+   "notes_before": 13,
+   "condensed": 7,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 7,
+    "substantive": 3,
+    "other": 2
+   },
+   "sha256_before": "f472b6b55cea5c628b9ca7aacdcbe2f9e55046e3e6b5e51d2f51c75158a3c129",
+   "snapshot": "_process/architecture/history/f472b6b55cea5c62/multivalued-joining-common-structure.json",
+   "sha256_after": "4542fd11574ed1c63f267405ef330ae9deb2ad840738dd922732698e2ce9e5aa"
+  },
+  {
+   "id": "mutual-dependence-and-its-pace",
+   "notes_before": 18,
+   "condensed": 13,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 13,
+    "substantive": 4
+   },
+   "sha256_before": "0c29a783df44e28e884a1babf59420ea8ca1fd2eb288b8ab7c7266d70f38638d",
+   "snapshot": "_process/architecture/history/0c29a783df44e28e/mutual-dependence-and-its-pace.json",
+   "sha256_after": "b29c303e9fbf4d04e9e998e08a7c6c0b1d6e3788d746fa2acca093ad1ea25732"
+  },
+  {
+   "id": "naming-attention-coverage",
+   "notes_before": 7,
+   "condensed": 2,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "other": 2,
+    "substantive": 2,
+    "bookkeeping": 2
+   },
+   "sha256_before": "f65c811e592b2c478dd609699f1be240cf6076febd08400c80aa3540a04c5c48",
+   "snapshot": "_process/architecture/history/f65c811e592b2c47/naming-attention-coverage.json",
+   "sha256_after": "ed36e07bac2eddcbf60fc87cff879c252e62bc8317bd087edf1bb23cb49da59c"
+  },
+  {
+   "id": "necessarily-drawn-is-not-returning",
+   "notes_before": 60,
+   "condensed": 43,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 43,
+    "substantive": 9,
+    "other": 7
+   },
+   "sha256_before": "0524f4e9feec1a8c3dbdf9c972dea2f0d4af2ef9ca1208d8ff8a2553f3ca55f8",
+   "snapshot": "_process/architecture/history/0524f4e9feec1a8c/necessarily-drawn-is-not-returning.json",
+   "sha256_after": "9f9c20d5c5e2c1ae988ff20199a4fbca94d68c497b8d60ab14b90c1f02f8d352"
+  },
+  {
+   "id": "no-finite-part-bears-taking",
+   "notes_before": 113,
+   "condensed": 92,
+   "kept": 21,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 92,
+    "other": 9,
+    "substantive": 11
+   },
+   "sha256_before": "b7ded038884bcf167d466e3c2cde77a88901b616fc01412112f80980c89c698a",
+   "snapshot": "_process/architecture/history/b7ded038884bcf16/no-finite-part-bears-taking.json",
+   "sha256_after": "dfe27cc574e7861c0de37e490adba09c2102c5d23ec31d3f91d1a2747ecc1ecd"
+  },
+  {
+   "id": "normal-forms-need-decided-apartness",
+   "notes_before": 49,
+   "condensed": 35,
+   "kept": 14,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 35,
+    "substantive": 8,
+    "other": 5
+   },
+   "sha256_before": "4818b4f31d0b826bdcff1c82198109070032d5acf102e38e6531a924a2178655",
+   "snapshot": "_process/architecture/history/4818b4f31d0b826b/normal-forms-need-decided-apartness.json",
+   "sha256_after": "fcce6ee2056e3664e872417b3cb81b76a4807b5859f1cef6c0ff849945d830da"
+  },
+  {
+   "id": "observation-is-a-route",
+   "notes_before": 45,
+   "condensed": 33,
+   "kept": 12,
+   "classes": {
+    "first": 1,
+    "substantive": 7,
+    "bookkeeping": 33,
+    "other": 4
+   },
+   "sha256_before": "3d7a7ba504bdc84e2da5d7bfd5daec7ec7414cdb1f606f1f1c98b4a8c49616a3",
+   "snapshot": "_process/architecture/history/3d7a7ba504bdc84e/observation-is-a-route.json",
+   "sha256_after": "f6d68db093b982e8ac7b7d2d29dc0531fc601d5debbb7c11acb3377165d60865"
+  },
+  {
+   "id": "one-axiom-yields-g0",
+   "notes_before": 98,
+   "condensed": 70,
+   "kept": 28,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 70,
+    "substantive": 19,
+    "other": 8
+   },
+   "sha256_before": "745af610045c87a3d9cc0482248235969b6871a92cadb33dd608e50ebf8cbd47",
+   "snapshot": "_process/architecture/history/745af610045c87a3/one-axiom-yields-g0.json",
+   "sha256_after": "a0e25cdfa2dc598756348dcf0acd2156253138c40a1070a998d85ae07f604fd7"
+  },
+  {
+   "id": "one-step-missing-laws",
+   "notes_before": 49,
+   "condensed": 35,
+   "kept": 14,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 35,
+    "substantive": 6,
+    "other": 7
+   },
+   "sha256_before": "a04c6766ca79c103358c3a62c7e168c2b06750cfb013875fbfdb7a33c92db356",
+   "snapshot": "_process/architecture/history/a04c6766ca79c103/one-step-missing-laws.json",
+   "sha256_after": "d059788a03a59267696f788a07d7d01e3431e0edd5df748bf854d7c6c950cc6b"
+  },
+  {
+   "id": "only-the-order-of-change-registers",
+   "notes_before": 50,
+   "condensed": 34,
+   "kept": 16,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 34,
+    "substantive": 8,
+    "other": 7
+   },
+   "sha256_before": "5ddf3f3c34e25235ffc431f2ae7c36edaf712a5b6e61a5d161996a47d6e68e45",
+   "snapshot": "_process/architecture/history/5ddf3f3c34e25235/only-the-order-of-change-registers.json",
+   "sha256_after": "8f8a9a16b454aafa90918f663834efa042138444de5ea1827adbe320800f0678"
+  },
+  {
+   "id": "open-form-realization-under-revision",
+   "notes_before": 21,
+   "condensed": 13,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "substantive": 7,
+    "bookkeeping": 13
+   },
+   "sha256_before": "11b8ff92007a86fbdf2d016993892c5a2118cb3531b3d89410ea830481099439",
+   "snapshot": "_process/architecture/history/11b8ff92007a86fb/open-form-realization-under-revision.json",
+   "sha256_after": "4a3542ced2dca2643cd5d036163f81dcabbf0c7cc7a0888b72ec50acbbbcb119"
+  },
+  {
+   "id": "order-of-exchanges-is-the-invariant",
+   "notes_before": 52,
+   "condensed": 35,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "other": 8,
+    "bookkeeping": 35,
+    "substantive": 8
+   },
+   "sha256_before": "5e9ecfd06dff3dc71e56d498fdc92c642535edb126aa9a06d49594b2a6854693",
+   "snapshot": "_process/architecture/history/5e9ecfd06dff3dc7/order-of-exchanges-is-the-invariant.json",
+   "sha256_after": "0636f605876f4689be50666316bf669b98c26b39173e7fe856844cf5c02805a0"
+  },
+  {
+   "id": "orders-as-a-sum-over-histories",
+   "notes_before": 43,
+   "condensed": 32,
+   "kept": 11,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 32,
+    "other": 5,
+    "substantive": 5
+   },
+   "sha256_before": "7be985296e69545fea574f317a7d5a8761f230c878c6414d85c506681e8bfc0c",
+   "snapshot": "_process/architecture/history/7be985296e69545f/orders-as-a-sum-over-histories.json",
+   "sha256_after": "0269fc6a7676c4fc57bef16be34ecbbcabadbd9e983bd9006f997b80e90c8941"
+  },
+  {
+   "id": "organizational-formation-from-generative-comparison",
+   "notes_before": 24,
+   "condensed": 11,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 11,
+    "substantive": 11,
+    "other": 1
+   },
+   "sha256_before": "2f7bfadd832a7ac189590427423ee3dfba5e1b69c950b01d3c36f12f2d9d31e9",
+   "snapshot": "_process/architecture/history/2f7bfadd832a7ac1/organizational-formation-from-generative-comparison.json",
+   "sha256_after": "d2dcb1fefc898b5f20bcbfeb048975541487bbf96d81d100a1599cbafdf1f1a4"
+  },
+  {
+   "id": "organizational-rule-inheritance",
+   "notes_before": 30,
+   "condensed": 22,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "substantive": 7,
+    "bookkeeping": 22
+   },
+   "sha256_before": "5c0074b5d009143987c6e3a0a954e02a82722a0f374f4baa4d52843a796ec565",
+   "snapshot": "_process/architecture/history/5c0074b5d0091439/organizational-rule-inheritance.json",
+   "sha256_after": "1127e3f99d1c979126761a993ffd1a2ea4476e8f590e9205fdfe155d77051ec0"
+  },
+  {
+   "id": "own-count-misses-joint-excess",
+   "notes_before": 71,
+   "condensed": 58,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "substantive": 8,
+    "bookkeeping": 58,
+    "other": 4
+   },
+   "sha256_before": "eed0a88ecc23d2a14695520de110b7e809992270cb81418432a4057eb3d2006a",
+   "snapshot": "_process/architecture/history/eed0a88ecc23d2a1/own-count-misses-joint-excess.json",
+   "sha256_after": "62195257c32a8a4a86563a07726d895f603ef5e5e107d68d73fdfa31d9583a99"
+  },
+  {
+   "id": "pending-task-context-applicability",
+   "notes_before": 25,
+   "condensed": 19,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "substantive": 5,
+    "bookkeeping": 19
+   },
+   "sha256_before": "9b2503fd29568a3e04f2b249f3b89ecdfa1b97fbc73691bf17d7ef8233e73945",
+   "snapshot": "_process/architecture/history/9b2503fd29568a3e/pending-task-context-applicability.json",
+   "sha256_after": "6d5caef8721de1d1697918f829d782d303aa5200d013f92f397294ea575b5cef"
+  },
+  {
+   "id": "place-relations-in-context",
+   "notes_before": 27,
+   "condensed": 23,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 23,
+    "substantive": 3
+   },
+   "sha256_before": "4c88922cd0392551f9ea4f72b222d232af09184b0769ed1f480474207d3c7d09",
+   "snapshot": "_process/architecture/history/4c88922cd0392551/place-relations-in-context.json",
+   "sha256_after": "be0a919615503ec058e6cc3496db01f4432083da9831e64f32cbcc9a2b92c7b8"
+  },
+  {
+   "id": "place-transition-nets-on-the-spine",
+   "notes_before": 9,
+   "condensed": 5,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 5,
+    "substantive": 3
+   },
+   "sha256_before": "178aa47506ba9f7b56d5cae7cd5c626ccd8f4edc59ddba0f0240c6586cbf9a15",
+   "snapshot": "_process/architecture/history/178aa47506ba9f7b/place-transition-nets-on-the-spine.json",
+   "sha256_after": "4365a8bd84274e2fcfa1fbe536c115b199f3b351a4bdde23dcd37c68b48b3fc1"
+  },
+  {
+   "id": "positioned-positive-reason",
+   "notes_before": 24,
+   "condensed": 16,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "other": 2,
+    "bookkeeping": 16,
+    "substantive": 5
+   },
+   "sha256_before": "9facc420d9560791d0e0fa2c8da7c27b3b970099ebf88cc014875a69f2e1f1cf",
+   "snapshot": "_process/architecture/history/9facc420d9560791/positioned-positive-reason.json",
+   "sha256_after": "b3cc824f700d1efd07ed40f565f7d0e20a579c630c6574907999bff261170940"
+  },
+  {
+   "id": "positive-ground-open-futures",
+   "notes_before": 26,
+   "condensed": 12,
+   "kept": 14,
+   "classes": {
+    "first": 1,
+    "substantive": 9,
+    "other": 4,
+    "bookkeeping": 12
+   },
+   "sha256_before": "ab4b0b89fcaffe2ee7adc9ee96ef168964486bfac3cd156048b8ed0f6a2ee031",
+   "snapshot": "_process/architecture/history/ab4b0b89fcaffe2e/positive-ground-open-futures.json",
+   "sha256_after": "a52bba176fe24b25846a19f2c7632ba0fd6b39071640b72a850c6ea0d921e32a"
+  },
+  {
+   "id": "practical-judgment-g0-j",
+   "notes_before": 38,
+   "condensed": 24,
+   "kept": 14,
+   "classes": {
+    "first": 1,
+    "substantive": 12,
+    "other": 1,
+    "bookkeeping": 24
+   },
+   "sha256_before": "8bf4c177835fc2f5b6501b93e88847db4d7516ddc9c21179280665738d523f27",
+   "snapshot": "_process/architecture/history/8bf4c177835fc2f5/practical-judgment-g0-j.json",
+   "sha256_after": "36a92dd9caae4621bbc0784b5e6cdf5287f2eb6c14aafdb1b8d0cdef83a2eeca"
+  },
+  {
+   "id": "prefix-observation-loss",
+   "notes_before": 8,
+   "condensed": 5,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "substantive": 1,
+    "bookkeeping": 5
+   },
+   "sha256_before": "bd4e752507c84fa62758a26672bf88e2b08b37e6190fd40cc26c53d3f06fa26f",
+   "snapshot": "_process/architecture/history/bd4e752507c84fa6/prefix-observation-loss.json",
+   "sha256_after": "1daaa2540fb0b87c4ecdf73da0e54cce2bcf19216dd77488ac12a6fdc576b1f8"
+  },
+  {
+   "id": "premises-read-off-the-exchange",
+   "notes_before": 47,
+   "condensed": 35,
+   "kept": 12,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 35,
+    "other": 3,
+    "substantive": 8
+   },
+   "sha256_before": "e18b2cd45c38a347fd3983c8215215d479816dd2e3d0124056036d087a8d6c71",
+   "snapshot": "_process/architecture/history/e18b2cd45c38a347/premises-read-off-the-exchange.json",
+   "sha256_after": "7952ace05c6caca9183cd015d343a1a5fc3364a6e9f39fd6de499badbaba9010"
+  },
+  {
+   "id": "premises-that-are-states-of-the-law",
+   "notes_before": 15,
+   "condensed": 11,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 11,
+    "substantive": 3
+   },
+   "sha256_before": "cd293df19414d7717ae1c360d69be984673d505e9b1f03cf1d2fdbbf38e36d5c",
+   "snapshot": "_process/architecture/history/cd293df19414d771/premises-that-are-states-of-the-law.json",
+   "sha256_after": "c414379ae316e1dfd1493e37963b05dc32273ac6657b9a37a7ab476b327791bf"
+  },
+  {
+   "id": "presupposition-scopes",
+   "notes_before": 78,
+   "condensed": 60,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 60,
+    "substantive": 11,
+    "other": 6
+   },
+   "sha256_before": "329c990b2c7a956081e9c0aac07ececb49dfa6fb72bae220d084bad2ad316039",
+   "snapshot": "_process/architecture/history/329c990b2c7a9560/presupposition-scopes.json",
+   "sha256_after": "3d9c471e00266d30b836835def19048cf98f626ec89ae2be3e8ee08340479b81"
+  },
+  {
+   "id": "process-and-frame-as-readings",
+   "notes_before": 73,
+   "condensed": 56,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 56,
+    "other": 8,
+    "substantive": 8
+   },
+   "sha256_before": "c4277a671ca2bd9d7b043f3fa0108c7e3edaa50f8372c526f0e1e177f18ce619",
+   "snapshot": "_process/architecture/history/c4277a671ca2bd9d/process-and-frame-as-readings.json",
+   "sha256_after": "661776b6f95aecb3c5ca278fdbc195a897f316708cf33f2beffc91e68ee817c9"
+  },
+  {
+   "id": "projection-carrying-a-law",
+   "notes_before": 89,
+   "condensed": 69,
+   "kept": 20,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 69,
+    "other": 8,
+    "substantive": 11
+   },
+   "sha256_before": "63653397a8d9e1c73b9b374af347ad9185f107d8954934258e1aeba72981bf6a",
+   "snapshot": "_process/architecture/history/63653397a8d9e1c7/projection-carrying-a-law.json",
+   "sha256_after": "c1a514c0d65f04cb7920e57d578ac810ecd4fa94a0afc70d4cfcd22441a19564"
+  },
+  {
+   "id": "protection-priority-excludes-uniform-aggregation",
+   "notes_before": 27,
+   "condensed": 18,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "other": 3,
+    "substantive": 5,
+    "bookkeeping": 18
+   },
+   "sha256_before": "f12c8fe25390d9b145ca7e94cc7804ff9eb32fb7a52d88a492f8c0745a6b5c67",
+   "snapshot": "_process/architecture/history/f12c8fe25390d9b1/protection-priority-excludes-uniform-aggregation.json",
+   "sha256_after": "18118f2f64df93f1325a903042b8c8022d406d4adb6fc8de0e5c0d3407b86e8a"
+  },
+  {
+   "id": "raising-what-couples-in-draws-from-beyond",
+   "notes_before": 40,
+   "condensed": 34,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 34,
+    "substantive": 4,
+    "other": 1
+   },
+   "sha256_before": "1b9f9e79fb9893c99e432b6c748e011795f4cdcbe7ac3bf6bc20d9594ce942f3",
+   "snapshot": "_process/architecture/history/1b9f9e79fb9893c9/raising-what-couples-in-draws-from-beyond.json",
+   "sha256_after": "d17b5110f18512674116a2c4450e6973f012224d7cf6c9fcf332ed5af3644621"
+  },
+  {
+   "id": "ranking-under-readings",
+   "notes_before": 120,
+   "condensed": 101,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 101,
+    "substantive": 14,
+    "other": 4
+   },
+   "sha256_before": "d59575f57958b6741070c1acfc7617ee9417147d899fa341553f643f5f21ea1d",
+   "snapshot": "_process/architecture/history/d59575f57958b674/ranking-under-readings.json",
+   "sha256_after": "a30d95cc964828e140442124618122e8abc9f17aa060ed0a4af64794f29ca6c6"
+  },
+  {
+   "id": "recoverable-mediated-change",
+   "notes_before": 26,
+   "condensed": 20,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 20,
+    "substantive": 5
+   },
+   "sha256_before": "d3f0caac7b00e10f01608b68c906c183bb1988475707badd9458869e36e946fb",
+   "snapshot": "_process/architecture/history/d3f0caac7b00e10f/recoverable-mediated-change.json",
+   "sha256_after": "296911786b924765b5a60426dfab12f1b19a53f80d37f034aa93f474ce27b455"
+  },
+  {
+   "id": "recurrence-without-decidedness",
+   "notes_before": 91,
+   "condensed": 72,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 72,
+    "substantive": 11,
+    "other": 7
+   },
+   "sha256_before": "3c8fe02110371cc302053df62fdc548e921f8013ebf3251561ee335e4a50ed7e",
+   "snapshot": "_process/architecture/history/3c8fe02110371cc3/recurrence-without-decidedness.json",
+   "sha256_after": "8f46767403cb25dcd537aa24c974cbfe224a5f8d784a760335d08a62dd95dcda"
+  },
+  {
+   "id": "recurrence-without-premise",
+   "notes_before": 100,
+   "condensed": 83,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 83,
+    "other": 7,
+    "substantive": 9
+   },
+   "sha256_before": "3cd9380cd931b42e4926b1c682c15b055a05369d63f4235c773978cbee1af38f",
+   "snapshot": "_process/architecture/history/3cd9380cd931b42e/recurrence-without-premise.json",
+   "sha256_after": "0b4f3e0145f5683eaa27697d97b9334bcf7a6a1bba89f85bfc9948271ffa5bd3"
+  },
+  {
+   "id": "recurrent-chain-assembly",
+   "notes_before": 28,
+   "condensed": 20,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "other": 2,
+    "bookkeeping": 20,
+    "substantive": 5
+   },
+   "sha256_before": "4911a7b13b9a33948c2e36c03577fd9ecfe929cad8813c5a9e6c780d07beadd9",
+   "snapshot": "_process/architecture/history/4911a7b13b9a3394/recurrent-chain-assembly.json",
+   "sha256_after": "a1c1ba945568ad35b1d99db4d4bf57c1fd35e84b6ce164d67113369e0a268d56"
+  },
+  {
+   "id": "recurring-reference-revision",
+   "notes_before": 132,
+   "condensed": 121,
+   "kept": 11,
+   "classes": {
+    "first": 1,
+    "other": 2,
+    "substantive": 8,
+    "bookkeeping": 121
+   },
+   "sha256_before": "8f28faff67f7e325b7b9ecdeb8393670ba4496036929035067ebfa2ff31f8419",
+   "snapshot": "_process/architecture/history/8f28faff67f7e325/recurring-reference-revision.json",
+   "sha256_after": "5cdb47992e1ce77ea03cf6c4cf2ba1c47dd4baffc87dead66e88e2d904276d5d"
+  },
+  {
+   "id": "registration-within-what-it-registers",
+   "notes_before": 67,
+   "condensed": 51,
+   "kept": 16,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 51,
+    "substantive": 7,
+    "other": 8
+   },
+   "sha256_before": "13db97fd11a9227427f29c7150ddfcc43821b679e0a0742e152d28b86c53db28",
+   "snapshot": "_process/architecture/history/13db97fd11a92274/registration-within-what-it-registers.json",
+   "sha256_after": "b31cc6ff3a08f2a88c5a68d5cf6d7eb25b5366680692f075068ca6940645b1f3"
+  },
+  {
+   "id": "relata-counted-up-to-indiscernibility",
+   "notes_before": 59,
+   "condensed": 42,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 42,
+    "substantive": 9,
+    "other": 7
+   },
+   "sha256_before": "71c487d4dfeb1a1cbf080fd1a6a5b8e07868eddd996a1093ea8838ae301decaf",
+   "snapshot": "_process/architecture/history/71c487d4dfeb1a1c/relata-counted-up-to-indiscernibility.json",
+   "sha256_after": "b58f2aeb6b9a95544bf774a483c50d70718ea8156fa93f75a75306a83e65a3dc"
+  },
+  {
+   "id": "relational-generative-comparison",
+   "notes_before": 16,
+   "condensed": 13,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 13,
+    "substantive": 2
+   },
+   "sha256_before": "0725fa1aa53f6e891c754cd02bcabf38633ba59a441bdebd521f9eaaf840d819",
+   "snapshot": "_process/architecture/history/0725fa1aa53f6e89/relational-generative-comparison.json",
+   "sha256_after": "2741350acc97e20d48298450100b5738dfb3011deb76e65b121dc1e261fde545"
+  },
+  {
+   "id": "relational-reading-comparison",
+   "notes_before": 25,
+   "condensed": 13,
+   "kept": 12,
+   "classes": {
+    "first": 1,
+    "other": 5,
+    "substantive": 6,
+    "bookkeeping": 13
+   },
+   "sha256_before": "7f8800b3864ef4639e79648327dea804b0260609d44fe7767fa9837ad8c43460",
+   "snapshot": "_process/architecture/history/7f8800b3864ef463/relational-reading-comparison.json",
+   "sha256_after": "22a42fc67d346939ee758a365bb37aa46a58b4412d0a256d2d36338efaea2710"
+  },
+  {
+   "id": "relational-renewal-classification",
+   "notes_before": 17,
+   "condensed": 9,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 9,
+    "substantive": 5,
+    "other": 2
+   },
+   "sha256_before": "1f3e61265bc9e495db47cd7c2c7ad2f29b9a45f5408b1fbc56d761b275cfee74",
+   "snapshot": "_process/architecture/history/1f3e61265bc9e495/relational-renewal-classification.json",
+   "sha256_after": "10be1c4ee4a742ebad993363ef6220ba3787c18002134b0110c271462db14bd3"
+  },
+  {
+   "id": "relative-position-is-zero-sum",
+   "notes_before": 11,
+   "condensed": 8,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 8,
+    "substantive": 2
+   },
+   "sha256_before": "cbdaf426e19202400f2e4c9887074868e89cdc8debd4a6b82dc9e2ff1901badb",
+   "snapshot": "_process/architecture/history/cbdaf426e1920240/relative-position-is-zero-sum.json",
+   "sha256_after": "fb7cadc628e5c310ff5d759f6a29c5de917da962ae744f23d411fc191d477c97"
+  },
+  {
+   "id": "renewing-consuming-formation",
+   "notes_before": 23,
+   "condensed": 13,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "other": 2,
+    "bookkeeping": 13,
+    "substantive": 7
+   },
+   "sha256_before": "45f312eec4cbb3db866ad020253eeedeb884c825d0a9fff26167a3f8dace7a40",
+   "snapshot": "_process/architecture/history/45f312eec4cbb3db/renewing-consuming-formation.json",
+   "sha256_after": "bbab00fab1be2e42d1335b9b5ee4fa89f2278957720bc5e3ffe472654eff15d7"
+  },
+  {
+   "id": "represented-boundary-against-dependence",
+   "notes_before": 84,
+   "condensed": 67,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 67,
+    "substantive": 9,
+    "other": 7
+   },
+   "sha256_before": "1bf28b34a00c74f7fa628541a4169af4f04cd7d53bcd42beacf570fc6d5c3b6f",
+   "snapshot": "_process/architecture/history/1bf28b34a00c74f7/represented-boundary-against-dependence.json",
+   "sha256_after": "93d50056d21f6029a243c808a79d47a3b4387a0e5e7895f83f16733e94eb665c"
+  },
+  {
+   "id": "requirement-over-open-exchanges",
+   "notes_before": 15,
+   "condensed": 11,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 11,
+    "substantive": 3
+   },
+   "sha256_before": "5202c9fbe300f61064b0b83d381aa0f88213740ec9a0d9a60b9a1612b5d91fbd",
+   "snapshot": "_process/architecture/history/5202c9fbe300f610/requirement-over-open-exchanges.json",
+   "sha256_after": "dddffc7deb4cce72747ce5d8706b09a9b74baf909b1ae549611848fd45be1451"
+  },
+  {
+   "id": "reserve-defers-ending",
+   "notes_before": 97,
+   "condensed": 82,
+   "kept": 15,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 82,
+    "substantive": 12,
+    "other": 2
+   },
+   "sha256_before": "c2c789691149444917f4de37dc80900f68375e2ad68a55dcf7e3aae1ea49d22d",
+   "snapshot": "_process/architecture/history/c2c7896911494449/reserve-defers-ending.json",
+   "sha256_after": "893e70e790a5a2b0c50bb174995a9faa79d319b74d0876f144e6454b70adaf5d"
+  },
+  {
+   "id": "reserved-shutdown-during-recovery",
+   "notes_before": 31,
+   "condensed": 22,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "substantive": 8,
+    "bookkeeping": 22
+   },
+   "sha256_before": "065b5d646de2f475dc56952d9011c06480c35599c18957fc4fea8c157cc97819",
+   "snapshot": "_process/architecture/history/065b5d646de2f475/reserved-shutdown-during-recovery.json",
+   "sha256_after": "9d375a124600030ad78e74a5d6babe25d1b07796919470056e6f2ad2512bb137"
+  },
+  {
+   "id": "residual-continuation-correspondence",
+   "notes_before": 11,
+   "condensed": 7,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "substantive": 3,
+    "bookkeeping": 7
+   },
+   "sha256_before": "94a535e9f1fdc4edab1ac772f231b13383d1c3f697eb5afa38d648220072d70f",
+   "snapshot": "_process/architecture/history/94a535e9f1fdc4ed/residual-continuation-correspondence.json",
+   "sha256_after": "3f94bac066dc2053b96d9de3f5c13f1f0522efac8b19415ebf398f5d83a003ce"
+  },
+  {
+   "id": "rest-at-every-resolution",
+   "notes_before": 83,
+   "condensed": 61,
+   "kept": 22,
+   "classes": {
+    "first": 1,
+    "other": 10,
+    "substantive": 11,
+    "bookkeeping": 61
+   },
+   "sha256_before": "87b3b8fcc64a79be4b348e9d4b02b96bc697bdf5560701dd0961b9ba7e5ef0f2",
+   "snapshot": "_process/architecture/history/87b3b8fcc64a79be/rest-at-every-resolution.json",
+   "sha256_after": "22f0446b9b4abbac81d6ad0ac93674f33b6647dfc33b4104d0ff40c2e25c8ef4"
+  },
+  {
+   "id": "rest-with-refinement-counted",
+   "notes_before": 85,
+   "condensed": 67,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "other": 7,
+    "bookkeeping": 67,
+    "substantive": 10
+   },
+   "sha256_before": "2c4e25c65938732aee1c8848ffffbcdc7224485b5ed777f71be3894585f89426",
+   "snapshot": "_process/architecture/history/2c4e25c65938732a/rest-with-refinement-counted.json",
+   "sha256_after": "3ca21178d485d928bb09c22363c2285176ee33b361fe555eee0b96e278f39f77"
+  },
+  {
+   "id": "restoring-giving-from-the-worst-start",
+   "notes_before": 25,
+   "condensed": 20,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 20,
+    "substantive": 4
+   },
+   "sha256_before": "d115ebe0386b8669dfb7e668cb0d805b09f27183d2ee98611e4adf373c18cfd9",
+   "snapshot": "_process/architecture/history/d115ebe0386b8669/restoring-giving-from-the-worst-start.json",
+   "sha256_after": "240352b2c2b223865962f337715e6297def8fa302e14f96896f39aa3bb5ccc6a"
+  },
+  {
+   "id": "retained-reference-joining-recovery",
+   "notes_before": 14,
+   "condensed": 8,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "substantive": 4,
+    "other": 1,
+    "bookkeeping": 8
+   },
+   "sha256_before": "444c99a77aa57df3569242eb320dece297f267b5278a8ec110b1680d3db78332",
+   "snapshot": "_process/architecture/history/444c99a77aa57df3/retained-reference-joining-recovery.json",
+   "sha256_after": "a3b358f051daefeb7daa034a9679d7d662edbb5f3761cad16515ab975c540c76"
+  },
+  {
+   "id": "retrospective-source-binding",
+   "notes_before": 32,
+   "condensed": 22,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "bookkeeping": 22,
+    "substantive": 8
+   },
+   "sha256_before": "60bab982118ec398218b03ec58ab8c0b6f47798f2ab21cf71904d6eee6053fca",
+   "snapshot": "_process/architecture/history/60bab982118ec398/retrospective-source-binding.json",
+   "sha256_after": "6667bb44f8d0b6793374deab1815fde3745ffea8544cf2cddb599f8011968d56"
+  },
+  {
+   "id": "returning-novelty-forgetting-on-levels",
+   "notes_before": 43,
+   "condensed": 33,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 33,
+    "other": 3,
+    "substantive": 6
+   },
+   "sha256_before": "1bb2db192c7cda8f8ab6f828a97dea87fa22a00abb493d7115ac8a05708f6949",
+   "snapshot": "_process/architecture/history/1bb2db192c7cda8f/returning-novelty-forgetting-on-levels.json",
+   "sha256_after": "1b6c441f33145d871791dbbfbea05e63eb743dc6ca319a4841f3e3c7b36524f3"
+  },
+  {
+   "id": "returning-where-the-course-branches",
+   "notes_before": 62,
+   "condensed": 45,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 45,
+    "substantive": 9,
+    "other": 7
+   },
+   "sha256_before": "1f681195b50de5ba5667635d972b2c086183deeabd729b994fc60bb3053ca029",
+   "snapshot": "_process/architecture/history/1f681195b50de5ba/returning-where-the-course-branches.json",
+   "sha256_after": "77f8508769da8eee9630fa66535cd6798611a605091ad787e962b9483f038ecf"
+  },
+  {
+   "id": "revision-with-an-undecided-value",
+   "notes_before": 13,
+   "condensed": 10,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 10,
+    "substantive": 2
+   },
+   "sha256_before": "4f7a0e547c422aa8c6ea22d3a0ee737bf50bf3294c6d677a99427aed239618be",
+   "snapshot": "_process/architecture/history/4f7a0e547c422aa8/revision-with-an-undecided-value.json",
+   "sha256_after": "69f8b0360bd7bc47694472be9fb5cd735af708cc88691b439ac920fc50922633"
+  },
+  {
+   "id": "rising-and-falling-in-one-exchange",
+   "notes_before": 91,
+   "condensed": 77,
+   "kept": 14,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 77,
+    "substantive": 9,
+    "other": 4
+   },
+   "sha256_before": "d3be01d53ff21aa0bb23d5b2c26ecf089ffc00479be55c4635f5ace17b2aa5af",
+   "snapshot": "_process/architecture/history/d3be01d53ff21aa0/rising-and-falling-in-one-exchange.json",
+   "sha256_after": "135ae7dfbeed00b829f9ec7639d83e8bc7a9ee754c1244f96a37961bc8dbfe77"
+  },
+  {
+   "id": "risk-certificate-outcome-distinction",
+   "notes_before": 12,
+   "condensed": 6,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "bookkeeping": 6,
+    "substantive": 4
+   },
+   "sha256_before": "67359b32d6b3e1352a9756d1e58eae124f69be5b4cdd77a0b7d6ac56c5fa84ff",
+   "snapshot": "_process/architecture/history/67359b32d6b3e135/risk-certificate-outcome-distinction.json",
+   "sha256_after": "fe03c89304a2903882325aee3fa8650ccd930e1aee2857567d30a14d61c90d83"
+  },
+  {
+   "id": "runaway-distance-unregistered",
+   "notes_before": 84,
+   "condensed": 61,
+   "kept": 23,
+   "classes": {
+    "first": 1,
+    "other": 11,
+    "bookkeeping": 61,
+    "substantive": 11
+   },
+   "sha256_before": "379901eb940d32f4a955f3a41b3fb4bbb9eb52cda2ae34659d6066af8406cfbe",
+   "snapshot": "_process/architecture/history/379901eb940d32f4/runaway-distance-unregistered.json",
+   "sha256_after": "9712435d135322afda8c8b6f614244e35825197c3fb24845f683343d0e4344fe"
+  },
+  {
+   "id": "runs-on-families-chosen-step-by-step",
+   "notes_before": 48,
+   "condensed": 35,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 35,
+    "substantive": 6,
+    "other": 6
+   },
+   "sha256_before": "6cc1d57e2cb43191ce407893cc7392f97af7fb6753d0777a21d142995403437a",
+   "snapshot": "_process/architecture/history/6cc1d57e2cb43191/runs-on-families-chosen-step-by-step.json",
+   "sha256_after": "c4418c93c105648b6e28dbbf059271b6979f9e71b9187c23de694155eb96c35d"
+  },
+  {
+   "id": "scientific-inquiry-foundation",
+   "notes_before": 28,
+   "condensed": 11,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "substantive": 11,
+    "other": 5,
+    "bookkeeping": 11
+   },
+   "sha256_before": "67fa6090728d7ffc4b150ad20b001502a4a3b535ad796503cec16507afa7c62e",
+   "snapshot": "_process/architecture/history/67fa6090728d7ffc/scientific-inquiry-foundation.json",
+   "sha256_after": "4428bb6e95b9db859e9e9cd4c431a848e23f650cc74055fb00ca8bcbcd1dfa5c"
+  },
+  {
+   "id": "seeking-boundary",
+   "notes_before": 81,
+   "condensed": 62,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "other": 8,
+    "bookkeeping": 62,
+    "substantive": 10
+   },
+   "sha256_before": "c3b164b26b78b169e1029c001ac0eade5d2edf1e81267f56147cd79c99d62848",
+   "snapshot": "_process/architecture/history/c3b164b26b78b169/seeking-boundary.json",
+   "sha256_after": "14f2961e4560fd8c73c4303f06bc56ff587d4914a2b4da41f040457459c14191"
+  },
+  {
+   "id": "selection-through-a-model-of-the-options",
+   "notes_before": 67,
+   "condensed": 56,
+   "kept": 11,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 56,
+    "substantive": 8,
+    "other": 2
+   },
+   "sha256_before": "0b5db8bb785514cf5bfaf5c0d55512bead4808531a0389b53d10b21f99c16c64",
+   "snapshot": "_process/architecture/history/0b5db8bb785514cf/selection-through-a-model-of-the-options.json",
+   "sha256_after": "b14b445a67653a0c55e88c52361ac2c43d0b2efd324ceebdddb2068460869b46"
+  },
+  {
+   "id": "selection-through-registration",
+   "notes_before": 94,
+   "condensed": 72,
+   "kept": 22,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 72,
+    "other": 9,
+    "substantive": 12
+   },
+   "sha256_before": "bcd97b01bf7171e67d52df17acb0a8e8935781a06d0cf786ec0d765d950a4b3e",
+   "snapshot": "_process/architecture/history/bcd97b01bf7171e6/selection-through-registration.json",
+   "sha256_after": "21dff7c68da3d186be87f52edee3adb3513de6770a3d61b7408c2039e3f3439f"
+  },
+  {
+   "id": "selection-under-registration-revision",
+   "notes_before": 19,
+   "condensed": 10,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 10,
+    "other": 4,
+    "substantive": 4
+   },
+   "sha256_before": "94f64dec79f3acc7da6728bff7146c15e3b1f3224a37ac4070997ee663d1f6fa",
+   "snapshot": "_process/architecture/history/94f64dec79f3acc7/selection-under-registration-revision.json",
+   "sha256_after": "46c1dfd6920567645c63f2ff7ef075692ad2f1eddb21f6ba1910570d9b961ca2"
+  },
+  {
+   "id": "self-good-reachable-g0",
+   "notes_before": 26,
+   "condensed": 18,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "substantive": 6,
+    "bookkeeping": 18,
+    "other": 1
+   },
+   "sha256_before": "818db1c4ad02a9931ee495558f43b119cc9e1ae6e0f9837fe2a71c9073545d21",
+   "snapshot": "_process/architecture/history/818db1c4ad02a993/self-good-reachable-g0.json",
+   "sha256_after": "3f378593505a6d33f8405e8c848c1acb36b985b84c0788cbe3bc79c265543747"
+  },
+  {
+   "id": "sensitivity-is-the-least-registration",
+   "notes_before": 39,
+   "condensed": 26,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "substantive": 9,
+    "bookkeeping": 26,
+    "other": 3
+   },
+   "sha256_before": "fce289993a3ba0ddb5d6318c12474f991c9986416fd9dfd2b4068128285d412b",
+   "snapshot": "_process/architecture/history/fce289993a3ba0dd/sensitivity-is-the-least-registration.json",
+   "sha256_after": "c61ead41b56d58a56f2196704784ff9ceec8b86051f86ba8d7c8f26a8276c49c"
+  },
+  {
+   "id": "separation-loses-the-relation",
+   "notes_before": 67,
+   "condensed": 50,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 50,
+    "substantive": 9,
+    "other": 7
+   },
+   "sha256_before": "b738d863b458b8673695c94c89599d8c590f554e7407d76bc613b04df53da024",
+   "snapshot": "_process/architecture/history/b738d863b458b867/separation-loses-the-relation.json",
+   "sha256_after": "f5d892c7e37cb06b12a4563eaaacb33d9af2f0f3d2c4a737642957f3fa02f1dd"
+  },
+  {
+   "id": "significance-retained-within-margin",
+   "notes_before": 92,
+   "condensed": 74,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 74,
+    "other": 7,
+    "substantive": 10
+   },
+   "sha256_before": "56a9574d3e276a0bcac47c723bd5aa8b53f662e31deca5773e5ef3a2c9125577",
+   "snapshot": "_process/architecture/history/56a9574d3e276a0b/significance-retained-within-margin.json",
+   "sha256_after": "355ae62963b83a78c157acfe8c4940bbd40a08e5f764118d97ffcccdbdec824e"
+  },
+  {
+   "id": "situated-recovery-empirical-correspondence",
+   "notes_before": 4,
+   "condensed": 2,
+   "kept": 2,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 2,
+    "substantive": 1
+   },
+   "sha256_before": "4cd9e2cf769925bc351c96e83a238689e7f5d39971d75abc80c7dc00d644aa6f",
+   "snapshot": "_process/architecture/history/4cd9e2cf769925bc/situated-recovery-empirical-correspondence.json",
+   "sha256_after": "7abfeaf21e95b7f835241478f5a8178e69a86182c42620e892fa5955e2b4197a"
+  },
+  {
+   "id": "space-and-its-parts",
+   "notes_before": 95,
+   "condensed": 76,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 76,
+    "substantive": 14,
+    "other": 4
+   },
+   "sha256_before": "d28a710a1c794de3dbc44a46226fb06b06bb7906cc5a43f7fafe4e804a6b8ef6",
+   "snapshot": "_process/architecture/history/d28a710a1c794de3/space-and-its-parts.json",
+   "sha256_after": "ba1bcd4c1ee8e267a6d8354d99b8c0f03a734831563b8fa276d0731787fa7188"
+  },
+  {
+   "id": "substitution-preserves-consumption",
+   "notes_before": 111,
+   "condensed": 93,
+   "kept": 18,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 93,
+    "substantive": 11,
+    "other": 6
+   },
+   "sha256_before": "cf8dfa965aa97efaca4bb718c5c9e390b8c82681017050931846507dbf6b1851",
+   "snapshot": "_process/architecture/history/cf8dfa965aa97efa/substitution-preserves-consumption.json",
+   "sha256_after": "0b9533233830be4e2951cbc4f7f8166bbe31c1249b52bb9b3278933a1e82aaaf"
+  },
+  {
+   "id": "subthreshold-registration",
+   "notes_before": 88,
+   "condensed": 71,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 71,
+    "other": 8,
+    "substantive": 8
+   },
+   "sha256_before": "29bbd5bec961a5aae7524d9ec6fff53d7c378f5d37a3833b7bc2f0e0ac247b22",
+   "snapshot": "_process/architecture/history/29bbd5bec961a5aa/subthreshold-registration.json",
+   "sha256_after": "7f406ab450e8f70e28d30302a4d52416ec13a7e44bddc80ee10a81d84f20486a"
+  },
+  {
+   "id": "sum-over-histories-exact",
+   "notes_before": 49,
+   "condensed": 35,
+   "kept": 14,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 35,
+    "substantive": 7,
+    "other": 6
+   },
+   "sha256_before": "d04851275c7e10e894c1014bf4db549d2dd5ff4d5863684c95f6a40e7dfd71de",
+   "snapshot": "_process/architecture/history/d04851275c7e10e8/sum-over-histories-exact.json",
+   "sha256_after": "16b68bcbc731939bd3972534e37997fef823cfbaf3b58e3e2e62b942a0084604"
+  },
+  {
+   "id": "sums-over-histories-by-support-horizon-and-order",
+   "notes_before": 10,
+   "condensed": 7,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 7,
+    "substantive": 2
+   },
+   "sha256_before": "120ed7cf721b96ec3e9a7d5b029afc9f441e492f284d20212baea36b8bf47732",
+   "snapshot": "_process/architecture/history/120ed7cf721b96ec/sums-over-histories-by-support-horizon-and-order.json",
+   "sha256_after": "3f50cbb6c1e0056aa9fa90fcd3077ea51d310900239590187696e2432d1f0aba"
+  },
+  {
+   "id": "support-from-the-supported",
+   "notes_before": 86,
+   "condensed": 67,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 67,
+    "substantive": 11,
+    "other": 7
+   },
+   "sha256_before": "837e4db9bda995adb4236d172d0c5d300ffe7e4ef88cac49b528096560732e44",
+   "snapshot": "_process/architecture/history/837e4db9bda995ad/support-from-the-supported.json",
+   "sha256_after": "f1a50f6f6abc584493cdb4d53a2b7148941706217f34a6217a0eb4f0f90a3434"
+  },
+  {
+   "id": "supported-renewal-recovery",
+   "notes_before": 19,
+   "condensed": 12,
+   "kept": 7,
+   "classes": {
+    "first": 1,
+    "other": 2,
+    "bookkeeping": 12,
+    "substantive": 4
+   },
+   "sha256_before": "228cd4e596998256599a3525373419826a4b8e20740351978d5093e25f524ea0",
+   "snapshot": "_process/architecture/history/228cd4e596998256/supported-renewal-recovery.json",
+   "sha256_after": "8cc3171186a488c88e803300d5b0d31cc9c00892db5006e5b53a0bb2d5f8ed25"
+  },
+  {
+   "id": "target-capture",
+   "notes_before": 83,
+   "condensed": 63,
+   "kept": 20,
+   "classes": {
+    "first": 1,
+    "other": 9,
+    "bookkeeping": 63,
+    "substantive": 10
+   },
+   "sha256_before": "ce9b5dc1d6dda8f2d625da0baa22bf08ce718dfcbacad27d4a3f7a157f2f88f2",
+   "snapshot": "_process/architecture/history/ce9b5dc1d6dda8f2/target-capture.json",
+   "sha256_after": "b4d646f7968563d2d47e25fe5864a4dec58cd02678c3e79a93e4af814713efb3"
+  },
+  {
+   "id": "testing-within-registration",
+   "notes_before": 98,
+   "condensed": 75,
+   "kept": 23,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 75,
+    "other": 9,
+    "substantive": 13
+   },
+   "sha256_before": "0627d07cda90e6bfa05df80641631ce39e4af88b945a45892953fcc7be9e7dc5",
+   "snapshot": "_process/architecture/history/0627d07cda90e6bf/testing-within-registration.json",
+   "sha256_after": "a68b63dca6b848b34417ac1eb559f45a58cc4b8c148c353390597d3c8e0fb182"
+  },
+  {
+   "id": "tests-fix-likeness-where-determined",
+   "notes_before": 63,
+   "condensed": 44,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 44,
+    "substantive": 13,
+    "other": 5
+   },
+   "sha256_before": "ce2a189f8d7fbf1dfbbb16226e1bb3fc09da17a6b0c93f86ec2353c9bcde1b4d",
+   "snapshot": "_process/architecture/history/ce2a189f8d7fbf1d/tests-fix-likeness-where-determined.json",
+   "sha256_after": "3a212ffa7be90b15b7a6ff12e970c847b0cdd93d0048a8616f111ceb96ed7b1d"
+  },
+  {
+   "id": "the-boundary-of-enough-under-undetermined-laws",
+   "notes_before": 30,
+   "condensed": 24,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 24,
+    "substantive": 4,
+    "other": 1
+   },
+   "sha256_before": "94250284056fbd1382e148960decb4b6d58bb41001b0d608e6699d0db6dd353c",
+   "snapshot": "_process/architecture/history/94250284056fbd13/the-boundary-of-enough-under-undetermined-laws.json",
+   "sha256_after": "78e8aac080c62825908a3adb1aa21422e32ec35dfbd17332c73088986eee76d3"
+  },
+  {
+   "id": "the-gap-for-ones-own-act",
+   "notes_before": 44,
+   "condensed": 36,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 36,
+    "substantive": 6,
+    "other": 1
+   },
+   "sha256_before": "d869071fbbcdffa5000dc9a9e7b0324eec631c569689c383c75b33873048fcc5",
+   "snapshot": "_process/architecture/history/d869071fbbcdffa5/the-gap-for-ones-own-act.json",
+   "sha256_after": "9644bd016a5ee7dee2ca721324dd3f5259e0046b249bee8b5270ea9e0572c45b"
+  },
+  {
+   "id": "the-last-change-of-a-run",
+   "notes_before": 25,
+   "condensed": 19,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 19,
+    "substantive": 3,
+    "other": 2
+   },
+   "sha256_before": "ad37a49ef0e7d81b879d0053fc1513bc0be261e0c7533a390aacb67898a0b0d1",
+   "snapshot": "_process/architecture/history/ad37a49ef0e7d81b/the-last-change-of-a-run.json",
+   "sha256_after": "3fe25d5ce8086a5e1840f9261491efcd8096ee988ba43b2596a81cf2758dd59a"
+  },
+  {
+   "id": "the-run-classes-and-widening",
+   "notes_before": 2,
+   "condensed": 1,
+   "kept": 1,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 1
+   },
+   "sha256_before": "5c38af11fe02837bcd1ddf292c990c86a5f40e12e6f6a0aea4010edca03aa360",
+   "snapshot": "_process/architecture/history/5c38af11fe02837b/the-run-classes-and-widening.json",
+   "sha256_after": "b3e8554afce09c89b47994f30c2c70389fc8619a71ac2b69c3aae1499a3559f8"
+  },
+  {
+   "id": "the-split-that-makes-sense",
+   "notes_before": 62,
+   "condensed": 45,
+   "kept": 17,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 45,
+    "substantive": 9,
+    "other": 7
+   },
+   "sha256_before": "60d26132566767b0fd120a7408dec49f9e8018574d50d3c6dbcf85180e6d83eb",
+   "snapshot": "_process/architecture/history/60d26132566767b0/the-split-that-makes-sense.json",
+   "sha256_after": "5f40ab24393d3cd36ce59fe49e57696a87399305c75c528102d9537335960f7a"
+  },
+  {
+   "id": "the-step-index-from-own-courses",
+   "notes_before": 25,
+   "condensed": 20,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "substantive": 4,
+    "bookkeeping": 20
+   },
+   "sha256_before": "265554fec7e8f90c7a88b887d34e4dab746029e7c9556b8451ecacf6659aa9af",
+   "snapshot": "_process/architecture/history/265554fec7e8f90c/the-step-index-from-own-courses.json",
+   "sha256_after": "f466d5c26a0673800f736a8542eb31de525847ab92c816ab7ec4220f38afd90b"
+  },
+  {
+   "id": "the-world-an-interleaving-builds",
+   "notes_before": 2,
+   "condensed": 1,
+   "kept": 1,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 1
+   },
+   "sha256_before": "b89afba8867c43b4f9c8564e9eb8b78f9d96db5691da018a48bc5ef983a7c30d",
+   "snapshot": "_process/architecture/history/b89afba8867c43b4/the-world-an-interleaving-builds.json",
+   "sha256_after": "32681ebfd8a8b149eea7a9ffb7ada6bceceb6cf9639e4dd2228a2a929b54a362"
+  },
+  {
+   "id": "theory-of-becoming-foundation",
+   "notes_before": 21,
+   "condensed": 6,
+   "kept": 15,
+   "classes": {
+    "first": 1,
+    "other": 3,
+    "substantive": 11,
+    "bookkeeping": 6
+   },
+   "sha256_before": "0021d756ea348872b56fb489ca513a8859534d7f6c85951f4902a8325eaef641",
+   "snapshot": "_process/architecture/history/0021d756ea348872/theory-of-becoming-foundation.json",
+   "sha256_after": "cc1c94c87934b045b7cbe98323567e6811021e0834f6cd827e9d35cc18321eae"
+  },
+  {
+   "id": "thresholds-of-waiting",
+   "notes_before": 25,
+   "condensed": 19,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 19,
+    "substantive": 5
+   },
+   "sha256_before": "ddd9116da84c0313cf70b446deef776203ea3a9bee8b052085301886e8b20fdc",
+   "snapshot": "_process/architecture/history/ddd9116da84c0313/thresholds-of-waiting.json",
+   "sha256_after": "f212be7ca07d054c7a88b5a9b05c0a36148fe78c4715b8d65a3ed0120a898768"
+  },
+  {
+   "id": "timely-response-necessity",
+   "notes_before": 10,
+   "condensed": 5,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 5,
+    "substantive": 4
+   },
+   "sha256_before": "7bdd251d9f5fc56761505550db01329aaebcf26fedebc70edfbc74e6c079d456",
+   "snapshot": "_process/architecture/history/7bdd251d9f5fc567/timely-response-necessity.json",
+   "sha256_after": "3449eed178d512eed1734f616cb24a025a7766e916375023a7c0dc8bf3a335bc"
+  },
+  {
+   "id": "trace-law-equivalence",
+   "notes_before": 20,
+   "condensed": 13,
+   "kept": 7,
+   "classes": {
+    "first": 1,
+    "other": 3,
+    "substantive": 3,
+    "bookkeeping": 13
+   },
+   "sha256_before": "ec76bf2019ef86b358e5da084889ac2ec4385f5f5e160283ab9b74fa1456a443",
+   "snapshot": "_process/architecture/history/ec76bf2019ef86b3/trace-law-equivalence.json",
+   "sha256_after": "1e8d00ec94c376ad4facd23644658fc1292650e1b6ef2614afa51c53182d72bd"
+  },
+  {
+   "id": "transition-grouping-word-partition",
+   "notes_before": 31,
+   "condensed": 23,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "substantive": 7,
+    "bookkeeping": 23
+   },
+   "sha256_before": "bd55ab4594c913a0b201972a8968264097f08e2878850100a15696d7e089262d",
+   "snapshot": "_process/architecture/history/bd55ab4594c913a0/transition-grouping-word-partition.json",
+   "sha256_after": "9df17c48697184086aef77ac32170bcc681e9ab717068bdb2057e327e676aec0"
+  },
+  {
+   "id": "transmission-independent-where-it-binds",
+   "notes_before": 50,
+   "condensed": 36,
+   "kept": 14,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 36,
+    "substantive": 7,
+    "other": 6
+   },
+   "sha256_before": "33ef1b54d252b32d431005322574446f4163aebd72203f5c93ff5c3478e05935",
+   "snapshot": "_process/architecture/history/33ef1b54d252b32d/transmission-independent-where-it-binds.json",
+   "sha256_after": "c3f51985ed43df8cd3b99a13a111f590f646a07ee24f9dd1fbcd76923ab5408f"
+  },
+  {
+   "id": "transmission-is-inheritance-and-need",
+   "notes_before": 48,
+   "condensed": 35,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 35,
+    "substantive": 6,
+    "other": 6
+   },
+   "sha256_before": "44a96bac858f75362851f37d1aed4839fb8ea1616d2d2e6b71199c5f06de5857",
+   "snapshot": "_process/architecture/history/44a96bac858f7536/transmission-is-inheritance-and-need.json",
+   "sha256_after": "6c06d7a5d6f8342632b142a25c54818379fcb436258b2cbfacbd5835f7c6f30c"
+  },
+  {
+   "id": "two-act-worlds-carry-the-difference",
+   "notes_before": 16,
+   "condensed": 7,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "other": 2,
+    "bookkeeping": 7,
+    "substantive": 6
+   },
+   "sha256_before": "34b68948981bab7244041af8b8ff995411a393db6da3793c9a5b7c573a24c2db",
+   "snapshot": "_process/architecture/history/34b68948981bab72/two-act-worlds-carry-the-difference.json",
+   "sha256_after": "86ea174d09c5f423a30b7ef8eb8db37f28f555b13484d708bfbb06b9ceea77ba"
+  },
+  {
+   "id": "two-sided-regulation-and-late-reading",
+   "notes_before": 15,
+   "condensed": 11,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 11,
+    "substantive": 3
+   },
+   "sha256_before": "c0a1ee606c2cd853ea143dd8b8dfd3039a639238c8d40284e770298786a2b4ad",
+   "snapshot": "_process/architecture/history/c0a1ee606c2cd853/two-sided-regulation-and-late-reading.json",
+   "sha256_after": "76f73b272bc492b1452ec0eea0a6b0e85a0230b529e8557f156dd73e46b023ea"
+  },
+  {
+   "id": "typicality-by-counting",
+   "notes_before": 43,
+   "condensed": 32,
+   "kept": 11,
+   "classes": {
+    "first": 1,
+    "substantive": 8,
+    "other": 2,
+    "bookkeeping": 32
+   },
+   "sha256_before": "a7f00d85115291829b823ea8637ac1b6093beb5d52914119daf007d9da91f2c2",
+   "snapshot": "_process/architecture/history/a7f00d8511529182/typicality-by-counting.json",
+   "sha256_after": "c7a29014f7f76b32356b5aa418b414481b30f6ce9854ead7df5f7df72f8cc5cf"
+  },
+  {
+   "id": "unanchored-incidence-collapse",
+   "notes_before": 16,
+   "condensed": 7,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "substantive": 6,
+    "other": 2,
+    "bookkeeping": 7
+   },
+   "sha256_before": "7cb9ba681f097abf6697a8c5927b3182c7ba841f749e9f3600c99ab64dea1c9e",
+   "snapshot": "_process/architecture/history/7cb9ba681f097abf/unanchored-incidence-collapse.json",
+   "sha256_after": "0ea9862a32c95644ac2416a0095c8bd068c8d6fce4c30896ce4dd48b83cc4187"
+  },
+  {
+   "id": "unceasing-generation-needs-renewal",
+   "notes_before": 116,
+   "condensed": 94,
+   "kept": 22,
+   "classes": {
+    "first": 1,
+    "other": 11,
+    "bookkeeping": 94,
+    "substantive": 10
+   },
+   "sha256_before": "08d9d9908f3cdc5e819f582fc337f9f9d416d2433fe2bc552c1381bfdb170c6e",
+   "snapshot": "_process/architecture/history/08d9d9908f3cdc5e/unceasing-generation-needs-renewal.json",
+   "sha256_after": "21b1973010b9f9a897c5cc5d6fb2a43b5f9bb49a5469543bf40e123aadfe8bf4"
+  },
+  {
+   "id": "unity-of-readings",
+   "notes_before": 49,
+   "condensed": 36,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 36,
+    "other": 5,
+    "substantive": 7
+   },
+   "sha256_before": "749b3493e879c08a74c378b58ffa38b957852bd7074b042bdbda6203d103c222",
+   "snapshot": "_process/architecture/history/749b3493e879c08a/unity-of-readings.json",
+   "sha256_after": "30f6cf298f9170b7e4da729e29abf260f5935c92453721c05bc43b08243d3020"
+  },
+  {
+   "id": "universal-practical-warrant",
+   "notes_before": 15,
+   "condensed": 2,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "other": 8,
+    "substantive": 4,
+    "bookkeeping": 2
+   },
+   "sha256_before": "4338855735cfa81a89d3a283f9460fd01c0b32aa00ae52c6977495c1842afbb7",
+   "snapshot": "_process/architecture/history/4338855735cfa81a/universal-practical-warrant.json",
+   "sha256_after": "ccf4404ecfe9a7079ace620b882406b21dbf1b3c90f2dec24ed197f9854000cc"
+  },
+  {
+   "id": "versioned-request-completion",
+   "notes_before": 29,
+   "condensed": 21,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "substantive": 6,
+    "bookkeeping": 21
+   },
+   "sha256_before": "2e28c3d1c24dfd37b95df40527adbda86200be491a3e3fda67998dde8c419d1d",
+   "snapshot": "_process/architecture/history/2e28c3d1c24dfd37/versioned-request-completion.json",
+   "sha256_after": "067f48ca0c2b4a571bb82a3da90b5268946aee7da740e8c132c8792dec4a4331"
+  },
+  {
+   "id": "weights-count-situations",
+   "notes_before": 44,
+   "condensed": 34,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "other": 2,
+    "bookkeeping": 34,
+    "substantive": 7
+   },
+   "sha256_before": "4d410962b0fc4d5bcaf219aa7acefca61975f589ba789680aaf7668c2d2654a7",
+   "snapshot": "_process/architecture/history/4d410962b0fc4d5b/weights-count-situations.json",
+   "sha256_after": "2379cf90fc12f8519575a06579b04f8b648476715b6fcaea3d78390a7ae7c455"
+  },
+  {
+   "id": "what-a-commuting-law-keeps-apart",
+   "notes_before": 14,
+   "condensed": 9,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "bookkeeping": 9,
+    "substantive": 3
+   },
+   "sha256_before": "cb8e467411bc670f7f6621fd5177803e10787b33c0a984a48025f0c04f4efde7",
+   "snapshot": "_process/architecture/history/cb8e467411bc670f/what-a-commuting-law-keeps-apart.json",
+   "sha256_after": "f7f66659824b3863c415d39c345f2196ee08e0801180e42f5f72f4579cd859db"
+  },
+  {
+   "id": "what-a-cut-loses",
+   "notes_before": 47,
+   "condensed": 35,
+   "kept": 12,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 35,
+    "substantive": 8,
+    "other": 3
+   },
+   "sha256_before": "331d0f07c4f714b4c59cf867af12bbb2dc40378ad2db01a70ed7be6e41c9dd5d",
+   "snapshot": "_process/architecture/history/331d0f07c4f714b4/what-a-cut-loses.json",
+   "sha256_after": "bd04c379e9a12b35f3f50abdbc818c926e5d991947a6a2ed45e63059db0bd7bc"
+  },
+  {
+   "id": "what-a-finite-history-refutes",
+   "notes_before": 52,
+   "condensed": 43,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 43,
+    "other": 2,
+    "substantive": 6
+   },
+   "sha256_before": "427c61fd2d9708e74b19771c09ee6649d3d332d4f1f85f6c02e7b164a289e1ea",
+   "snapshot": "_process/architecture/history/427c61fd2d9708e7/what-a-finite-history-refutes.json",
+   "sha256_after": "8290c8eedef0b4e20966fafc970ea57dd2d8e6be36eba0ef1b48e3340c1b74b8"
+  },
+  {
+   "id": "what-a-finite-stretch-verifies",
+   "notes_before": 17,
+   "condensed": 13,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 13,
+    "substantive": 3
+   },
+   "sha256_before": "5e34eceb73b331bbd9698ef8c1e2ca6f15f99c24207c50791ce98c91f1cf8ff4",
+   "snapshot": "_process/architecture/history/5e34eceb73b331bb/what-a-finite-stretch-verifies.json",
+   "sha256_after": "0845424bde0ce2e7344c871bb4e7213de82f271fbffa5cf80b27645e70308676"
+  },
+  {
+   "id": "what-a-law-of-the-whole-and-no-part-takes",
+   "notes_before": 38,
+   "condensed": 26,
+   "kept": 12,
+   "classes": {
+    "first": 1,
+    "substantive": 7,
+    "bookkeeping": 26,
+    "other": 4
+   },
+   "sha256_before": "7441084094ade274695b849874d90019299f9d08ea342aa2649e5d93c6df7828",
+   "snapshot": "_process/architecture/history/7441084094ade274/what-a-law-of-the-whole-and-no-part-takes.json",
+   "sha256_after": "bfbde4bd0552d232e02852551bb6ad0ad155498013837dc1e320aa08de0a1325"
+  },
+  {
+   "id": "what-a-method-comes-to-say-in-the-limit",
+   "notes_before": 16,
+   "condensed": 13,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 13,
+    "substantive": 2
+   },
+   "sha256_before": "50a755cdaf9d8aba07dcdee9c82deef02ca712b80c7dd7e53299abac336e12da",
+   "snapshot": "_process/architecture/history/50a755cdaf9d8aba/what-a-method-comes-to-say-in-the-limit.json",
+   "sha256_after": "42f5b481a574a4514607f0a5af4ed08d7d65d1fce24a097b5018e0f0be3821ad"
+  },
+  {
+   "id": "what-a-pools-acts-respond-to",
+   "notes_before": 36,
+   "condensed": 29,
+   "kept": 7,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 29,
+    "substantive": 5,
+    "other": 1
+   },
+   "sha256_before": "25a40ea6998591772b1a2d456f93b9003026a14937b60d40d1223ca09de0a43e",
+   "snapshot": "_process/architecture/history/25a40ea699859177/what-a-pools-acts-respond-to.json",
+   "sha256_after": "18475b95ecf9be03b17f336f8ae5162eb2f312a5ee94e4b2f9756da44ee2e183"
+  },
+  {
+   "id": "what-an-extrapolation-given-nothing-fixes",
+   "notes_before": 21,
+   "condensed": 14,
+   "kept": 7,
+   "classes": {
+    "first": 1,
+    "substantive": 5,
+    "bookkeeping": 14,
+    "other": 1
+   },
+   "sha256_before": "22394a3ae03c79ba26d638caada1982236083b62e66f36018436f936aa6b43d5",
+   "snapshot": "_process/architecture/history/22394a3ae03c79ba/what-an-extrapolation-given-nothing-fixes.json",
+   "sha256_after": "9db20300ed2976a698aaa25596e00776fc712e9652ba52a673f4bdac72fd2ad8"
+  },
+  {
+   "id": "what-finitely-many-labels-fix",
+   "notes_before": 18,
+   "condensed": 13,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "substantive": 3,
+    "bookkeeping": 13,
+    "other": 1
+   },
+   "sha256_before": "a5d06e58be5f52d6a18e7bedf6b0545708a2d5e9d40b37c452559202a243a7d9",
+   "snapshot": "_process/architecture/history/a5d06e58be5f52d6/what-finitely-many-labels-fix.json",
+   "sha256_after": "5cef0e157e83e77d299cc4f1d2479d9e6c2f3b7cac96131b889024297d8c643f"
+  },
+  {
+   "id": "what-pooled-coupling-reaches",
+   "notes_before": 40,
+   "condensed": 32,
+   "kept": 8,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 32,
+    "other": 2,
+    "substantive": 5
+   },
+   "sha256_before": "b487a0e38971a1397751bd2a241be7dfb3ab40af4f121090d0b9801666385884",
+   "snapshot": "_process/architecture/history/b487a0e38971a139/what-pooled-coupling-reaches.json",
+   "sha256_after": "861d3bf4db5ff15696071164a057004a2627e28449959c936554716a8257938e"
+  },
+  {
+   "id": "what-taking-all-excludes",
+   "notes_before": 18,
+   "condensed": 14,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "substantive": 2,
+    "bookkeeping": 14,
+    "other": 1
+   },
+   "sha256_before": "2e45766045bb245316e404e89da520b303c12eda007934c171e3d6b3ba0b9422",
+   "snapshot": "_process/architecture/history/2e45766045bb2453/what-taking-all-excludes.json",
+   "sha256_after": "55d692ae8e5df7d7ba7a261d442272b0a6adbd56e4b82c7c529416da4d80cdc2"
+  },
+  {
+   "id": "when-the-runs-of-a-process-settle",
+   "notes_before": 30,
+   "condensed": 23,
+   "kept": 7,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 23,
+    "substantive": 5,
+    "other": 1
+   },
+   "sha256_before": "bdee51f42ffe58fef0ccf4fb385510c65b5a5723196172b06c8e2f1b140ef0ff",
+   "snapshot": "_process/architecture/history/bdee51f42ffe58fe/when-the-runs-of-a-process-settle.json",
+   "sha256_after": "c164d69e3c0ea6af6a8afa3b15d2ed3dc439e5bb27b7a2edec7721fe2d37eb5a"
+  },
+  {
+   "id": "where-a-level-couples",
+   "notes_before": 35,
+   "condensed": 26,
+   "kept": 9,
+   "classes": {
+    "first": 1,
+    "other": 3,
+    "substantive": 5,
+    "bookkeeping": 26
+   },
+   "sha256_before": "2e0143431906bb5fb2e027b58026c243dbc3f0cddffbd0135bb60999c44f6c38",
+   "snapshot": "_process/architecture/history/2e0143431906bb5f/where-a-level-couples.json",
+   "sha256_after": "9a892244f475737806afda70849d0ce2edc000aa5d6f3da27cb692d5431c4587"
+  },
+  {
+   "id": "where-a-move-is-formed",
+   "notes_before": 65,
+   "condensed": 54,
+   "kept": 11,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 54,
+    "substantive": 8,
+    "other": 2
+   },
+   "sha256_before": "d9fd20ded8e4bb3dcde6460b3a66077980c4887adeb287cdfe3d5ad00e3c6a39",
+   "snapshot": "_process/architecture/history/d9fd20ded8e4bb3d/where-a-move-is-formed.json",
+   "sha256_after": "17f588d446e7b08aafbc9b4fbd0eceb9a2fe50909e6900464798a7bbd465d4e2"
+  },
+  {
+   "id": "where-a-rising-take-ends",
+   "notes_before": 16,
+   "condensed": 13,
+   "kept": 3,
+   "classes": {
+    "first": 1,
+    "substantive": 2,
+    "bookkeeping": 13
+   },
+   "sha256_before": "e73b6799a77ff8d1e02edeb45b533bda52638611dc66abba247dbc179a583c26",
+   "snapshot": "_process/architecture/history/e73b6799a77ff8d1/where-a-rising-take-ends.json",
+   "sha256_after": "9c7504a79b268b487cc3e761ffcc4aa5e69ee20bcb0dccf2b6ae7d41c6f7ab58"
+  },
+  {
+   "id": "where-a-run-goes-on",
+   "notes_before": 40,
+   "condensed": 28,
+   "kept": 12,
+   "classes": {
+    "first": 1,
+    "other": 4,
+    "bookkeeping": 28,
+    "substantive": 7
+   },
+   "sha256_before": "047baa11f0d65a26cd6c55ed65e80527e69b56bd6626978a03a73fa8f07d0aa7",
+   "snapshot": "_process/architecture/history/047baa11f0d65a26/where-a-run-goes-on.json",
+   "sha256_after": "83031514ae9a82419d4244bd633cff5c610f8e3e0a0f3662af4d76bf531d93f6"
+  },
+  {
+   "id": "where-novelty-gain-comes-from",
+   "notes_before": 46,
+   "condensed": 35,
+   "kept": 11,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 35,
+    "substantive": 8,
+    "other": 2
+   },
+   "sha256_before": "4174236c9ae5305db5ba2de12c51cc885020b204524bf8a9bff4ce3df7b15080",
+   "snapshot": "_process/architecture/history/4174236c9ae5305d/where-novelty-gain-comes-from.json",
+   "sha256_after": "6acc4f5b8ab8ca5680879e666c690af808004a67170e75dc66e3bc4315b9503c"
+  },
+  {
+   "id": "where-two-courses-rejoin",
+   "notes_before": 23,
+   "condensed": 18,
+   "kept": 5,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 18,
+    "substantive": 4
+   },
+   "sha256_before": "8310cef1bfb34beac8ce9bdd93f4eac2f51a5755319e9927923292681ca66182",
+   "snapshot": "_process/architecture/history/8310cef1bfb34bea/where-two-courses-rejoin.json",
+   "sha256_after": "2c9c2868ac16242df5366232aadd1ecdc572a07e4de8f510efecbd50a688d4a7"
+  },
+  {
+   "id": "whether-a-loop-closes-a-difference",
+   "notes_before": 28,
+   "condensed": 22,
+   "kept": 6,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 22,
+    "substantive": 5
+   },
+   "sha256_before": "ba11044583f787733066fb55d7de9ddb95ce80221442bc5893fa7b93be1c5ce9",
+   "snapshot": "_process/architecture/history/ba11044583f78773/whether-a-loop-closes-a-difference.json",
+   "sha256_after": "08d2e140bd6650691fddf7af8ffbd81b0bcbe32d82803a64072ac6f9f873213e"
+  },
+  {
+   "id": "which-links-a-closure-needs",
+   "notes_before": 21,
+   "condensed": 17,
+   "kept": 4,
+   "classes": {
+    "first": 1,
+    "other": 1,
+    "substantive": 2,
+    "bookkeeping": 17
+   },
+   "sha256_before": "117af3faab146a7be11fb634872855c995085b11d6a83a6f915d47d47cfd4c80",
+   "snapshot": "_process/architecture/history/117af3faab146a7b/which-links-a-closure-needs.json",
+   "sha256_after": "dd4dcb4909d9b04bfcf878a4033bf9471b76da0e7856a1956c7dc265fa36877e"
+  },
+  {
+   "id": "whole-first-and-bounded-centers",
+   "notes_before": 97,
+   "condensed": 78,
+   "kept": 19,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 78,
+    "other": 8,
+    "substantive": 10
+   },
+   "sha256_before": "c31d02776fce6f4986b72e592e6ba2f64665e4aad138da8d7862177f7c808895",
+   "snapshot": "_process/architecture/history/c31d02776fce6f49/whole-first-and-bounded-centers.json",
+   "sha256_after": "69fd225bf1b665c84c20cf98ed191a0211ba8eff864f83c27127436983bd3110"
+  },
+  {
+   "id": "whole-law-of-counting",
+   "notes_before": 100,
+   "condensed": 72,
+   "kept": 28,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 72,
+    "substantive": 17,
+    "other": 10
+   },
+   "sha256_before": "d49c1429e4fd37f8686e18476859d4d175633b37eced4d94744cc6d5009b6767",
+   "snapshot": "_process/architecture/history/d49c1429e4fd37f8/whole-law-of-counting.json",
+   "sha256_after": "9466d2800fd0da8af8f99f59ec805665157c46119e8837d1704ade3fda6968a4"
+  },
+  {
+   "id": "whole-persists-through-generation",
+   "notes_before": 97,
+   "condensed": 84,
+   "kept": 13,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 84,
+    "substantive": 8,
+    "other": 4
+   },
+   "sha256_before": "b5eb25a70ab76d756b6215abdd28f49baae4569b03b82a3f58ced3aa79587e5d",
+   "snapshot": "_process/architecture/history/b5eb25a70ab76d75/whole-persists-through-generation.json",
+   "sha256_after": "a12bebb70293ea58366f968b2ba07679b06863f8bc7336e46df1a83c158fc509"
+  },
+  {
+   "id": "wisdom-root-part-one",
+   "notes_before": 86,
+   "condensed": 53,
+   "kept": 33,
+   "classes": {
+    "first": 1,
+    "bookkeeping": 53,
+    "other": 18,
+    "substantive": 14
+   },
+   "sha256_before": "b497065841cb88897210b03935a614a1f685a64416c5a9184623090167d2947f",
+   "snapshot": "_process/architecture/history/b497065841cb8889/wisdom-root-part-one.json",
+   "sha256_after": "5fd3e296ea2be0f0b0741b29c27ef04567c14ce7089ef0bea43c10f9f4c1b99a"
+  },
+  {
+   "id": "wisdom-root",
+   "notes_before": 60,
+   "condensed": 25,
+   "kept": 35,
+   "classes": {
+    "first": 1,
+    "other": 19,
+    "substantive": 15,
+    "bookkeeping": 25
+   },
+   "sha256_before": "2eb9534988059c0a6f19ccab4eddb7f568a0ff7b57f6df323b16aa3ce7c9d3f2",
+   "snapshot": "_process/architecture/history/2eb9534988059c0a/wisdom-root.json",
+   "sha256_after": "4e20ee51a8d6f2906f607d22ab8e55f0b9f13169caf7e00b04966b692bff7c4c"
+  },
+  {
+   "id": "worlds-are-runs",
+   "notes_before": 20,
+   "condensed": 10,
+   "kept": 10,
+   "classes": {
+    "first": 1,
+    "substantive": 7,
+    "bookkeeping": 10,
+    "other": 2
+   },
+   "sha256_before": "3f271b4876bd7a389c4f3339ea8b1bb5206bafee434c8916085da89835be6c9d",
+   "snapshot": "_process/architecture/history/3f271b4876bd7a38/worlds-are-runs.json",
+   "sha256_after": "ab4fbdfc42ab48142aa898513c1c238752588cb3e3248febd8680999bf2caddd"
+  }
+ ]
+}

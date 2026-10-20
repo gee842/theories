@@ -16,7 +16,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-from tools.research import registry, navigation, lean_catalogue, reading_catalogue, style, paths, moves, indexes, session_map
+from tools.research import registry, navigation, lean_catalogue, reading_catalogue, style, paths, moves, indexes, session_map, history_notes
 
 
 @contextmanager
@@ -327,6 +327,31 @@ def check_or_render(render=False, base=None, ids=None, strict_fresh=False):
     return (1 if errors else 2 if scoped else 0), result
 
 
+def compact_history(ids=None, apply=False):
+    """E3 (R35): condense the bookkeeping notes of record histories; see tools/research/history_notes.py."""
+    from datetime import date
+    settings = json.loads((ROOT / '_process/research-config.json').read_text())
+    records = sorted(p for d in settings['record_directories'] for p in (ROOT / d).glob('*.json'))
+    if ids:
+        wanted = set(ids)
+        records = [p for p in records if p.stem in wanted]
+        missing = wanted - {p.stem for p in records}
+        if missing:
+            raise ValueError('no record with id ' + ', '.join(sorted(missing)))
+    if apply:
+        dirty = subprocess.run(['git', '-C', str(ROOT), 'status', '--porcelain', '--', *settings['record_directories']],
+                               capture_output=True, text=True, check=True).stdout
+        if dirty.strip():
+            raise ValueError('Refusing to compact with uncommitted record changes; commit them first')
+    receipt = ROOT / '_process/architecture/compactions' / f'{date.today().isoformat()}.json'
+    result = history_notes.compact(ROOT, records, registry.snapshot_record, apply=apply, receipt=receipt)
+    if apply:
+        result['receipt'] = str(receipt.relative_to(ROOT))
+    else:
+        result['records'] = [{k: r[k] for k in ('id', 'notes_before', 'condensed', 'kept')} for r in result['records']]
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
@@ -346,6 +371,9 @@ def main():
     p.add_argument('--ids', nargs='+')
     p = sub.add_parser('snapshot', help='Before migrating a record, store its exact bytes and print the text_versions entry')
     p.add_argument('id')
+    p = sub.add_parser('compact-history', help='Condense bookkeeping history notes of records (dry run unless --apply); snapshot each record first')
+    p.add_argument('--apply', action='store_true')
+    p.add_argument('--ids', nargs='+')
     p = sub.add_parser('move', help='Move files to new paths (dry run unless --apply); rewrite live references; write receipts')
     what = p.add_mutually_exclusive_group(required=True)
     what.add_argument('--plan', help='TSV: old_path<TAB>new_path<TAB>reason')
@@ -398,6 +426,8 @@ def main():
     elif args.command == 'lint':
         result = lint(args.ids, args.changed_since)
         code = 1 if result['errors'] or result['summary']['by_severity'].get('error') else 0
+    elif args.command == 'compact-history':
+        result, code = compact_history(args.ids, args.apply), 0
     elif args.command == 'snapshot':
         result, code = {'text_versions_entry': registry.snapshot_record(args.id),
                         'next': 'Add this entry to the record\'s text_versions, map every earlier sentence, and add a history note.'}, 0

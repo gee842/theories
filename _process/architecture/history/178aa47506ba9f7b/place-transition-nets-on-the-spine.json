@@ -1,0 +1,552 @@
+{
+  "schema_version": 2,
+  "id": "place-transition-nets-on-the-spine",
+  "title": {
+    "en": "Place/transition nets on the spine",
+    "zh": "脊柱上的库所/变迁网"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T12:26:32+00:00",
+  "statement": {
+    "en": "Place/transition nets, defined by their own rules, are an instance of the spine: the flow balances the markings exactly on firing sequences, and dissipation is exactly a strict P-subinvariant on what fires; so rising with falling, bounded taking, rest and the siphon law hold of such nets.",
+    "zh": "按自身规则定义的库所/变迁网是脊柱的一个实例：其流恰在发生序列上与标识平衡，耗散恰是所发生变迁上的严格 P-子不变量；于是此类网上有涨落同在、取用有界、静止与虹吸律。"
+  },
+  "laws": [
+    {
+      "en": "The net is a law of exchange reading nothing, whose course along a schedule is the net's flow and whose levels along a firing sequence are its markings in units.",
+      "zh": "网是什么也不读的交换律，它沿一个调度生成的进程就是网的流，沿发生序列它生成的水平就是按单位计的标识。",
+      "declarations": [
+        "Becoming.Net.law",
+        "Becoming.Net.flow",
+        "Becoming.Net.web",
+        "Becoming.Net.law_nonanticipating",
+        "Becoming.Net.course_eq",
+        "Becoming.Net.Fires.levels_eq",
+        "Becoming.Net.levels_eq_of_enabled"
+      ]
+    },
+    {
+      "en": "Balance is the firing rule: along a firing sequence the flow balances the markings in any units, and with every weight positive it balances exactly where the schedule is a firing sequence.",
+      "zh": "平衡就是发生规则：沿发生序列，流在任何单位下与标识平衡；各权为正时，恰在调度是发生序列之处平衡。",
+      "declarations": [
+        "Becoming.Net.Fires.balances",
+        "Becoming.Net.balances_iff",
+        "Becoming.Net.balance_at_iff"
+      ]
+    },
+    {
+      "en": "Enabling gives the law's feasibility, so course_balances_iff applies; feasibility is enabling exactly for pure nets fired one transition at a time, and a catalyst and a concurrent step are feasible and do not fire.",
+      "zh": "使能推出该律的可行性，因而 course_balances_iff 适用；可行性恰在纯网逐个发生变迁时等于使能，催化剂与并发一步可行而不发生。",
+      "declarations": [
+        "Becoming.Net.Fires.feasible",
+        "Becoming.Net.Fires.course_balances",
+        "Becoming.Net.fires_iff_feasible",
+        "Becoming.Net.catalyst_feasible_not_fires",
+        "Becoming.Net.relay_feasible_not_fires"
+      ]
+    },
+    {
+      "en": "Only active transitions give and take, and only from what they draw on; along a firing sequence activity needs support.",
+      "zh": "只有活动的变迁给出与取用，且只取其所汲取者；沿发生序列，活动需要支撑。",
+      "declarations": [
+        "Becoming.Net.acting",
+        "Becoming.Net.taking",
+        "Becoming.Net.Fires.dependent"
+      ]
+    },
+    {
+      "en": "With finitely many places listed once, the flow is dissipative exactly where every fired transition loses weighted tokens, which a strict P-subinvariant gives; every step is enclosed.",
+      "zh": "有限多个库所各列一次时，流恰在每个所发生变迁都损失加权令牌之处耗散，严格 P-子不变量给出这一点；每一步都被包围。",
+      "declarations": [
+        "Becoming.Net.Loses",
+        "Becoming.Net.StrictSubinvariant",
+        "Becoming.Net.Loses.of_lt",
+        "Becoming.Net.dissipative_iff",
+        "Becoming.Net.StrictSubinvariant.dissipative",
+        "Becoming.Net.enclosed",
+        "Becoming.Net.total_eq_closed"
+      ]
+    },
+    {
+      "en": "Along such a firing sequence a place rises only as another falls, the consuming firings number at most the initial weighted tokens and do not recur, and that the marking stops changing cannot be refuted.",
+      "zh": "沿这样的发生序列，一个库所只随另一库所下降而上升，取用的发生次数不超过初始加权令牌且不复现，标识停止变化不可被驳倒。",
+      "declarations": [
+        "Becoming.Net.rise_with_fall",
+        "Becoming.Net.rise_with_fall_tokens",
+        "Becoming.Net.takers_within",
+        "Becoming.Net.taking_not_recurring",
+        "Becoming.Net.change_stops_unrefuted",
+        "Becoming.Net.marking_stops_unrefuted"
+      ]
+    },
+    {
+      "en": "Read as a world of places and transitions with finitely many transitions, every premise of World.rests_unrefuted_enclosed holds, so that the world rests from some step on cannot be refuted.",
+      "zh": "读作库所与变迁的世界、变迁有限时，World.rests_unrefuted_enclosed 的每个前提都成立，因而世界从某步起静止不可被驳倒。",
+      "declarations": [
+        "Becoming.Net.world",
+        "Becoming.Net.Fires.world_balanced",
+        "Becoming.Net.world_embodied",
+        "Becoming.Net.world_counted",
+        "Becoming.Net.world_dissipative",
+        "Becoming.Net.world_enclosed",
+        "Becoming.Net.rests_unrefuted"
+      ]
+    },
+    {
+      "en": "The siphon law is the joint-excess law: where every producer of a place consumes at least m from it, joint excess starting below n + m leaves every transition consuming m from it dead; an empty such place stays empty.",
+      "zh": "虹吸律就是共同过量律：一个库所的每个生产者都从它取至少 m 时，起于 n + m 之下的共同过量使每个从它取 m 的变迁此后不再发生；这样的空库所保持为空。",
+      "declarations": [
+        "Becoming.Net.Gated",
+        "Becoming.Net.Gated.gates",
+        "Becoming.Net.gated_ends",
+        "Becoming.Net.siphon_empty"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. The net, its schedule, its starting marking and its weights are given; every other premise is a named property of the net stated where it is used: a firing sequence; finitely many places listed once with equality decided; fired transitions that lose weighted tokens; a gated place; finitely many transitions for the world form.",
+      "zh": "不加公理。网、调度、初始标识与权是给定的；其余每个前提都是网的一个具名性质，在用到之处陈述：发生序列；有限多个库所各列一次且相等可判定；所发生变迁损失加权令牌；受门控的库所；世界形式还要求变迁有限。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That a given chemical, biological or computing system is a given net, with which places, transitions and weights: a modelling correspondence outside the Lean.",
+      "zh": "某个化学、生物或计算系统是某个给定的网，有哪些库所、变迁与权：这是 Lean 之外的建模对应。",
+      "kind": "scope"
+    },
+    {
+      "en": "Inhibitor arcs, capacities, timed, stochastic or continuous nets; siphons of more than one place; nets with infinitely many places; deciding reachability.",
+      "zh": "抑制弧、容量、时间网、随机网或连续网；多于一个库所的虹吸；无限多个库所的网；可达性的判定。",
+      "kind": "scope"
+    },
+    {
+      "en": "That every system in our universe loses at each step; dissipation is a property a net has or lacks, as the conservative cycle shows.",
+      "zh": "我们宇宙中的每个系统每步都有损失；耗散是网具有或缺乏的性质，守恒循环即是一例。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PlaceTransitionNets.lean",
+      "detail": {
+        "en": "The conservative cycle (Net.cycle): one token moved back and forth between two places fires forever; every premise of the rest law holds but dissipation (cycle_premises, cycle_not_dissipative), its marking changes at every step (cycle_changes) and its world never rests (cycle_never_rests).",
+        "zh": "守恒循环（Net.cycle）：一个令牌在两个库所之间来回移动，永远发生；静止律除耗散外的每个前提都成立（cycle_premises、cycle_not_dissipative），其标识每步变化（cycle_changes），其世界永不静止（cycle_never_rests）。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PlaceTransitionNets.lean",
+      "detail": {
+        "en": "The fed place (Net.fed): refilled by a transition that does not consume it, it is not gated; its flow balances and one step of joint excess starts below 1 + 1, yet a transition requiring it is active two steps later, so the conclusion of Flow.joint_excess_ends fails (fed_fires, fed_refills).",
+        "zh": "被供给的库所（Net.fed）：被一个不从它取用的变迁补充，因而不受门控；其流平衡，一步共同过量起于 1 + 1 之下，而两步后一个需要它的变迁仍活动，所以 Flow.joint_excess_ends 的结论不成立（fed_fires、fed_refills）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T122417.550535Z): the 106 declarations of Becoming.PlaceTransitionNets, 73 of them theorems, have empty axiom reports; the checker verifies core purity. Author review in study section 203; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T122417.550535Z）：Becoming.PlaceTransitionNets 的 106 项声明（73 项定理）公理报告为空；检查器并核对核心纯净。作者审查见研究第 203 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Stochastic reaction networks pathwise and in expectation; siphons of several places; finite Markov kernels on counts; an independent review.",
+    "zh": "随机反应网络的逐路径与期望形式；多库所的虹吸；计数上的有限马尔可夫核；独立审查。"
+  },
+  "correspondence": {
+    "en": "An outside critique of the opening said the theory proves the rules of its own invented universe and assumes ours runs the same way; the opening proposal's second review ranked an instance theorem for a formalism defined outside the theory as the direct answer. Place/transition nets are such a formalism; the map onto the spine is the identity on what each states.",
+    "zh": "一则对开篇的外部批评说，理论证明了它自己所发明之宇宙的规则，又假定我们的宇宙也如此运行；开篇提案的第二次审查把一个关于理论之外所定义形式体系的实例定理列为直接回应。库所/变迁网就是这样的形式体系；到脊柱的映射在两者各自所述之上是恒等的。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PlaceTransitionNets.lean",
+  "aliases": [
+    "place/transition nets on the spine",
+    "Petri nets on the spine",
+    "脊柱上的库所/变迁网",
+    "siphon law",
+    "Becoming.Net.balances_iff",
+    "Becoming.Net.dissipative_iff",
+    "Becoming.Net.rests_unrefuted",
+    "Becoming.Net.siphon_empty"
+  ],
+  "dependencies": [
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Uses ExchangeLaw.course, levels_succ, Feasible and course_balances_iff for the net's law.",
+        "zh": "对网的律使用 ExchangeLaw.course、levels_succ、Feasible 与 course_balances_iff。"
+      },
+      "interface": {
+        "output": {
+          "en": "The course a law of what has stood generates balances exactly where it is feasible.",
+          "zh": "读已成者之律所生成的进程恰在可行处平衡。"
+        },
+        "input": {
+          "en": "The net's course along a firing sequence balances on the levels it generates.",
+          "zh": "网沿发生序列的进程在其生成的水平上平衡。"
+        },
+        "conditions": {
+          "en": "The net's law reads what has stood (it reads nothing); the schedule is a firing sequence.",
+          "zh": "网的律读已成者（它什么也不读）；调度是发生序列。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    },
+    {
+      "id": "rising-and-falling-in-one-exchange",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Instantiates Flow.rise_with_fall on the net's flow and web.",
+        "zh": "在网的流与网络上实例化 Flow.rise_with_fall。"
+      },
+      "interface": {
+        "output": {
+          "en": "In a balanced flow, a member of a family dissipated on that rises has another that falls.",
+          "zh": "在平衡的流中，被耗散之族的一个成员上升，则另一成员下降。"
+        },
+        "input": {
+          "en": "A place rising across a step of a firing sequence whose fired transitions lose has another falling.",
+          "zh": "在所发生变迁皆损失的发生序列的一步上，一个库所上升则另一个下降。"
+        },
+        "conditions": {
+          "en": "Fires (balance); every fired transition loses over the places (dissipated on).",
+          "zh": "发生（平衡）；每个所发生变迁在诸库所上损失（被耗散）。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean"
+      }
+    },
+    {
+      "id": "no-finite-part-bears-taking",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Instantiates Flow.Balances.takers_within and Flow.Dissipative.finite_taking_not_recurring.",
+        "zh": "实例化 Flow.Balances.takers_within 与 Flow.Dissipative.finite_taking_not_recurring。"
+      },
+      "interface": {
+        "output": {
+          "en": "Dissipated on from a step, the takers over a stretch number at most the stock; with finitely many conditions taking does not recur.",
+          "zh": "自某步起被耗散，一段中的取用者不多于存量；条件有限时取用不复现。"
+        },
+        "input": {
+          "en": "The consuming firings are bounded by the initial weighted tokens and do not recur.",
+          "zh": "取用的发生次数以初始加权令牌为界且不复现。"
+        },
+        "conditions": {
+          "en": "Fires; every fired transition loses; finitely many places listed once.",
+          "zh": "发生；每个所发生变迁损失；有限多个库所各列一次。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean"
+      }
+    },
+    {
+      "id": "continued-change-needs-openness",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Instantiates Flow.change_stops_unrefuted_around and World.rests_unrefuted_enclosed.",
+        "zh": "实例化 Flow.change_stops_unrefuted_around 与 World.rests_unrefuted_enclosed。"
+      },
+      "interface": {
+        "output": {
+          "en": "Under balance, dissipation, a census and enclosure, that change stops (the world rests) cannot be refuted.",
+          "zh": "在平衡、耗散、普查与包围之下，变化停止（世界静止）不可被驳倒。"
+        },
+        "input": {
+          "en": "That a net's marking stops changing, and that its world rests, cannot be refuted.",
+          "zh": "网的标识停止变化、其世界静止，皆不可被驳倒。"
+        },
+        "conditions": {
+          "en": "Fires; fired transitions lose; finitely many places, and for the world finitely many transitions; equality decided.",
+          "zh": "发生；所发生变迁损失；库所有限，世界形式还要求变迁有限；相等可判定。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean"
+      }
+    },
+    {
+      "id": "own-count-misses-joint-excess",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Instantiates Flow.joint_excess_ends and Flow.stays_below as the siphon law.",
+        "zh": "把 Flow.joint_excess_ends 与 Flow.stays_below 实例化为虹吸律。"
+      },
+      "interface": {
+        "output": {
+          "en": "Joint excess ends gated renewal and every formation depending on the condition at the gating need.",
+          "zh": "共同过量结束受门控的更新，以及在门控需要处依赖该条件的每个形成。"
+        },
+        "input": {
+          "en": "Every transition consuming at least m from a gated place is dead after joint excess; an empty gated place stays empty.",
+          "zh": "共同过量之后，每个从受门控库所取至少 m 的变迁不再发生；空的受门控库所保持为空。"
+        },
+        "conditions": {
+          "en": "Fires (balance, acting, dependence); the place is gated at m; unit weights.",
+          "zh": "发生（平衡、给出者活动、依赖）；库所在 m 处受门控；单位权。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "premises-read-off-the-exchange",
+      "detail": {
+        "en": "Read off a law of exchange, the tying premises hold and dissipation is a state of the law; for a net's law that state is exactly a strict P-subinvariant on what fires.",
+        "zh": "从交换律读出时，捆绑前提成立，耗散是律的一种状态；对网的律，这种状态恰是所发生变迁上的严格 P-子不变量。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PlaceTransitionNets.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Net",
+        "Becoming.Net.Enabled",
+        "Becoming.Net.Fires",
+        "Becoming.Net.Fires.balances",
+        "Becoming.Net.Fires.course_balances",
+        "Becoming.Net.Fires.dependent",
+        "Becoming.Net.Fires.feasible",
+        "Becoming.Net.Fires.levels_eq",
+        "Becoming.Net.Fires.world_balanced",
+        "Becoming.Net.Gated",
+        "Becoming.Net.Gated.gates",
+        "Becoming.Net.Loses",
+        "Becoming.Net.Loses.of_lt",
+        "Becoming.Net.Pure",
+        "Becoming.Net.Sequential",
+        "Becoming.Net.StrictSubinvariant",
+        "Becoming.Net.StrictSubinvariant.dissipative",
+        "Becoming.Net.StrictSubinvariant.loses",
+        "Becoming.Net.acting",
+        "Becoming.Net.balance_at_iff",
+        "Becoming.Net.balance_at_iff'",
+        "Becoming.Net.balances_iff",
+        "Becoming.Net.catalyst",
+        "Becoming.Net.catalyst_feasible_not_fires",
+        "Becoming.Net.catalyst_levels",
+        "Becoming.Net.change_stops_unrefuted",
+        "Becoming.Net.consumes",
+        "Becoming.Net.course_eq",
+        "Becoming.Net.cycle",
+        "Becoming.Net.cycleRun",
+        "Becoming.Net.cycleStart",
+        "Becoming.Net.cycle_changes",
+        "Becoming.Net.cycle_fires",
+        "Becoming.Net.cycle_flips",
+        "Becoming.Net.cycle_marking",
+        "Becoming.Net.cycle_never_rests",
+        "Becoming.Net.cycle_not_dissipative",
+        "Becoming.Net.cycle_premises",
+        "Becoming.Net.cycle_step",
+        "Becoming.Net.dissipative_iff",
+        "Becoming.Net.distinct_append'",
+        "Becoming.Net.enabled_of_within",
+        "Becoming.Net.enclosed",
+        "Becoming.Net.fed",
+        "Becoming.Net.fedRun",
+        "Becoming.Net.fed_fires",
+        "Becoming.Net.fed_refills",
+        "Becoming.Net.fire",
+        "Becoming.Net.fire_add_back",
+        "Becoming.Net.fire_scaled",
+        "Becoming.Net.fires_iff_feasible",
+        "Becoming.Net.flow",
+        "Becoming.Net.flow_given",
+        "Becoming.Net.flow_taken",
+        "Becoming.Net.gated_ends",
+        "Becoming.Net.inl_not_mem_inr",
+        "Becoming.Net.law",
+        "Becoming.Net.law_nonanticipating",
+        "Becoming.Net.le_of_fire_add_back",
+        "Becoming.Net.levels_eq_of_enabled",
+        "Becoming.Net.marked",
+        "Becoming.Net.marked_census",
+        "Becoming.Net.marking",
+        "Becoming.Net.marking_stops_unrefuted",
+        "Becoming.Net.one",
+        "Becoming.Net.one_pos_of",
+        "Becoming.Net.produces",
+        "Becoming.Net.relay",
+        "Becoming.Net.relay_feasible_not_fires",
+        "Becoming.Net.relay_levels",
+        "Becoming.Net.relay_pure",
+        "Becoming.Net.rests_unrefuted",
+        "Becoming.Net.rise_with_fall",
+        "Becoming.Net.rise_with_fall_tokens",
+        "Becoming.Net.siphon_empty",
+        "Becoming.Net.takers_eq",
+        "Becoming.Net.takers_within",
+        "Becoming.Net.taking",
+        "Becoming.Net.taking_not_recurring",
+        "Becoming.Net.total_eq_closed",
+        "Becoming.Net.turn",
+        "Becoming.Net.web",
+        "Becoming.Net.world",
+        "Becoming.Net.worldActive",
+        "Becoming.Net.worldAlive",
+        "Becoming.Net.worldGive",
+        "Becoming.Net.worldLevel",
+        "Becoming.Net.worldNeed",
+        "Becoming.Net.worldRequires",
+        "Becoming.Net.worldTake",
+        "Becoming.Net.world_counted",
+        "Becoming.Net.world_dissipative",
+        "Becoming.Net.world_embodied",
+        "Becoming.Net.world_enclosed",
+        "Becoming.Net.world_given",
+        "Becoming.Net.world_taken",
+        "Becoming.Net.world_total_eq"
+      ],
+      "sha256": "1923814427948011a3398090feea17c2287f0f84d0589c48782f5df467234de2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "role": "proof",
+      "sha256": "99ff5358cf88287112db7947dc69504b2bcaa94931dbb172cb400bbd34061e3d",
+      "declarations": [
+        "Becoming.Shuttle.distinct",
+        "Becoming.inl_injective",
+        "Becoming.inr_injective",
+        "Becoming.inr_not_mem"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "declarations": [
+        "Becoming.ListTests.mem_bools",
+        "Becoming.preimage_of_mem_map",
+        "Becoming.mem_append_cases",
+        "Becoming.mem_append_of_left",
+        "Becoming.mem_append_of_right"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "c4916cbf4ee72134c14a7573780ac76acbde0d256ca2799012253f5e23d89fd8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "role": "proof",
+      "sha256": "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "role": "proof",
+      "sha256": "6ea42b39bc76f22d855bc48b5d7dce0f1fdeea5f33d67df1b62fd8c32de0cf55"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "0ab0815ed90be71d73e427578aeeb623f23a4d2e7055391ab23903e6ac6f3861"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T122417.550535Z/verification.json",
+      "role": "receipt",
+      "sha256": "d919ec962fb4cd464c5afa02676a7b8fb2a3f985670345e7ed02143a8c31b251"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "4e5547d2b3e38a0545c17ac38c72e361e230489cc39a04628b2d09cfd2f12e64"
+    },
+    {
+      "path": "drafts/2026-10-10-opening/history/OPENING-V7-PROPOSAL.md",
+      "role": "provenance",
+      "sha256": "e2ddf919ebc5b99564193fc19f26a4068fd5652728819d6a50699f5a96b3ce64"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PlaceTransitionNets.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.PlaceTransitionNets",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Roles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (PT1), the instance theorem the opening proposal's second review ranked second; study section 203.",
+      "zh": "2026年10月19日：新增（PT1），即开篇提案第二次审查列在第二位的实例定理；研究第 203 节。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Continuation.lean: declarations moved in or out by W2; Counterfactual.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (PlaceTransitionNets.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Openness.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; PlaceTransitionNets.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（PlaceTransitionNets.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Openness.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；PlaceTransitionNets.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Dissipation.lean, Amounts.whole_sum moved in; Flow.takers_within_on and Flow.taking_not_recurring_from proved through Becoming.Amounts, statements unchanged; Openness.lean, Flow.change_stops_unrefuted proved by Amounts.rests_unrefuted with no decision, statement unchanged; World.Finite.arising_iff_ceasing and World.Finite.comes_to_rest_unrefuted removed (one name per statement). The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Dissipation.lean，Amounts.whole_sum 移入；Flow.takers_within_on 与 Flow.taking_not_recurring_from 经 Becoming.Amounts 证明，陈述不变；Openness.lean，Flow.change_stops_unrefuted 由 Amounts.rests_unrefuted 不经判定证明，陈述不变；删去 World.Finite.arising_iff_ceasing 与 World.Finite.comes_to_rest_unrefuted（每个陈述一个名称）。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: Continuation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：Continuation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Dissipation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Removed, with the statement kept under one name: Net.bools_every (now ListTests.mem_bools); Net.exists_of_mem_map (now preimage_of_mem_map); Net.mem_append_cases' (now mem_append_cases); Net.mem_append_left' (now mem_append_of_left); Net.mem_append_right' (now mem_append_of_right). Proof bindings (PlaceTransitionNets.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Continuation.lean, the witness Clearing moved to Clearing.lean; Counterfactual.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Openness.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; PlaceTransitionNets.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：删去，陈述以一个名称保留：Net.bools_every（现为 ListTests.mem_bools）；Net.exists_of_mem_map（现为 preimage_of_mem_map）；Net.mem_append_cases'（现为 mem_append_cases）；Net.mem_append_left'（现为 mem_append_of_left）；Net.mem_append_right'（现为 mem_append_of_right）。证明绑定（PlaceTransitionNets.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Continuation.lean，见证 Clearing 移到 Clearing.lean；Counterfactual.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Openness.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；PlaceTransitionNets.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed, with the statement kept under one name: Net.bools_distinct (now Shuttle.distinct); Net.inl_inj (now inl_injective); Net.inr_inj (now inr_injective); Net.inr_not_mem_inl (now inr_not_mem). Proof bindings (PlaceTransitionNets.lean, Prelude.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Counterfactual.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Openness.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; PlaceTransitionNets.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：删去，陈述以一个名称保留：Net.bools_distinct（现为 Shuttle.distinct）；Net.inl_inj（现为 inl_injective）；Net.inr_inj（现为 inr_injective）；Net.inr_not_mem_inl（现为 inr_not_mem）。证明绑定（PlaceTransitionNets.lean、Prelude.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Counterfactual.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Openness.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；PlaceTransitionNets.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+    }
+  ]
+}

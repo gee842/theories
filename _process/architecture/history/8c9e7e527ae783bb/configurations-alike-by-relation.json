@@ -1,0 +1,1028 @@
+{
+  "schema_version": 2,
+  "id": "configurations-alike-by-relation",
+  "title": {
+    "zh": "配置由它怎样关系而定",
+    "en": "A configuration is how it relates"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-14T16:45:00+00:00",
+  "statement": {
+    "zh": "互模拟所联系的配置相同，相同的配置通过同样的检验；有意义的描述恰把相同者等同，框架相同之下确定时它承载规律；作为相等的确定性依赖于命名。",
+    "en": "Configurations related by a bisimulation are alike and pass the same tests; a description makes sense where it identifies exactly the alike ones, and carries a law where the frame is determined up to likeness; determinacy as equality depends on names."
+  },
+  "laws": [
+    {
+      "zh": "设 F 与 G 是配置类型 S 与 S′ 上、动作类型 A 与主张类型 C 相同的框架。关系 B 是它们之间的互模拟，指被联系的配置实现同样的主张，任一方的每一步都由另一方以同一动作到被联系配置的一步相配；s 与 s′ 相同，指有互模拟联系它们。",
+      "en": "Let F and G be frames on configurations S and S′ with the same moves A and claims C. A relation B is a bisimulation between them where related configurations realize the same claims and each step of either is matched by a step of the other by the same move into related configurations; s and s′ are alike where some bisimulation relates them.",
+      "declarations": [
+        "Becoming.Frame",
+        "Becoming.Bisimulation",
+        "Becoming.Alike"
+      ]
+    },
+    {
+      "zh": "相等是互模拟，互模拟的逆是互模拟，两个互模拟可以复合；所以相同是自反、对称、传递的，作为关系陈述，因为商需要 Quot.sound。",
+      "en": "Equality is a bisimulation, the converse of a bisimulation is one, and two compose; so likeness is reflexive, symmetric and transitive, stated as a relation since a quotient needs Quot.sound.",
+      "declarations": [
+        "Becoming.Bisimulation.eq",
+        "Becoming.Bisimulation.converse",
+        "Becoming.Bisimulation.comp",
+        "Becoming.Alike.refl",
+        "Becoming.Alike.symm",
+        "Becoming.Alike.trans"
+      ]
+    },
+    {
+      "zh": "相同的配置实现同样的主张，以同一动作到相同配置的一步彼此相配，每个动作序列都到相同的配置，通过同样的检验：一个动作序列之后的一个主张。",
+      "en": "Alike configurations realize the same claims, match each other's steps by the same move into alike configurations and every course of moves into alike configurations, and pass the same tests, a course of moves followed by a claim.",
+      "declarations": [
+        "Becoming.Alike.realized",
+        "Becoming.Alike.step",
+        "Becoming.Bisimulation.trace",
+        "Becoming.Alike.trace",
+        "Becoming.Alike.tests"
+      ]
+    },
+    {
+      "zh": "框架在 s 处相同之下确定，指 s 处同一动作的任何两个结果相同；确定的框架处处如此；相同之下的确定性沿相同传递，它成立时同一动作把相同的配置带到相同的配置。",
+      "en": "A frame is determined up to likeness at s where any two outcomes of one move at s are alike; a determined frame is so everywhere; determinacy up to likeness passes along likeness, and where it holds the same move takes alike configurations to alike ones.",
+      "declarations": [
+        "Becoming.Determined",
+        "Becoming.DeterminedAt",
+        "Becoming.Determined.at",
+        "Becoming.DeterminedAt.transfer",
+        "Becoming.DeterminedAt.goAlike"
+      ]
+    },
+    {
+      "zh": "Twins 中起点以一个动作有两个后继：它们相同，框架不确定，而它的起点与只有一个后继的框架的起点相同，后者确定，所以双胞胎在起点处相同之下确定。",
+      "en": "In Twins a start has two successors by one move: they are alike, the frame is not determined, and its start is alike to the start of a frame with one successor, which is determined, so the twins are determined up to likeness at the start.",
+      "declarations": [
+        "Becoming.Twins.Config",
+        "Becoming.Twins.frame",
+        "Becoming.Twins.one",
+        "Becoming.Twins.not_determined",
+        "Becoming.Twins.one_determined",
+        "Becoming.Twins.bisimulation",
+        "Becoming.Twins.left_alike_right",
+        "Becoming.Twins.successor_not_start",
+        "Becoming.Twins.bisimulation_one",
+        "Becoming.Twins.alike_one"
+      ]
+    },
+    {
+      "zh": "交换之律经“某个关系项立于某量”这些主张读，在每个关系项上相等是互模拟；水平相同，恰当它们在每个关系项上相等；这条律在每个水平处相同之下确定。",
+      "en": "Under the law of exchange read through the claims that a relatum stands at an amount, agreeing at every relatum is a bisimulation; standings are alike exactly where they agree at every relatum, and the law is determined up to likeness at every standing.",
+      "declarations": [
+        "Becoming.exchangeFrame",
+        "Becoming.exchange_pointwise_bisimulation",
+        "Becoming.exchange_alike_of_pointwise",
+        "Becoming.exchange_pointwise_of_alike",
+        "Becoming.exchange_alike_iff",
+        "Becoming.exchange_determinedAt"
+      ]
+    },
+    {
+      "zh": "配置的一个描述 π 有意义，指它恰把相同的配置等同；它有意义，恰当被它等同这一关系是互模拟且它等同每一对相同者；有意义的描述等同同样的配置。",
+      "en": "A description π of configurations makes sense where it identifies exactly the alike configurations; it does exactly where being identified by it is a bisimulation and it identifies every alike pair; descriptions that make sense identify the same configurations.",
+      "declarations": [
+        "Becoming.IdentifiesAlike",
+        "Becoming.identifiesAlike_iff",
+        "Becoming.IdentifiesAlike.unique"
+      ]
+    },
+    {
+      "zh": "框架处处相同之下确定时，有意义的描述承载规律（经 Becoming.Mechanism 的 carries_law_iff）；以配置自身命名有意义，恰当相同的配置是同一个，双胞胎的命名没有意义。",
+      "en": "Where the frame is determined up to likeness everywhere, a description that makes sense carries a law (through carries_law_iff of Becoming.Mechanism); naming the configurations makes sense exactly where alike configurations are one, and the twins' naming does not.",
+      "declarations": [
+        "Becoming.FactorsThrough",
+        "Becoming.carries_law_iff",
+        "Becoming.IdentifiesAlike.carries",
+        "Becoming.identifiesAlike_id_iff",
+        "Becoming.Twins.naming_not_identifiesAlike"
+      ]
+    },
+    {
+      "zh": "对确定的律经一个映射读（主张是映射之值），配置相同，恰当它们经映射的未来相同，这时有意义的描述承载规律。",
+      "en": "For a determined law read through a map, the claims being the map's value, configurations are alike exactly where their futures through the map are the same, and there a description that makes sense carries a law.",
+      "declarations": [
+        "Becoming.Law.orbit",
+        "Becoming.Law.orbit_shift",
+        "Becoming.Law.process",
+        "Becoming.Law.frameBy",
+        "Becoming.Law.frameBy_determined",
+        "Becoming.Law.SameFuture",
+        "Becoming.Law.alike_future",
+        "Becoming.Law.sameFuture_bisimulation",
+        "Becoming.Law.alike_iff_sameFuture",
+        "Becoming.Law.IdentifiesAlike.carries"
+      ]
+    },
+    {
+      "zh": "外围桥接中：RelationalDynamics 的 Deeper.Bisimulation 就是核心的没有主张的框架之间的互模拟，所以 static 与 toggle 中一方的每个配置都与另一方的每个配置相同。",
+      "en": "In the periphery bridge, Deeper.Bisimulation of RelationalDynamics is the core's bisimulation of frames with no claims, so in static and toggle every configuration of one is alike to every configuration of the other.",
+      "declarations": [
+        "Becoming.Frame.bare",
+        "Becoming.deeper_bisimulation_iff",
+        "Becoming.static_toggle_alike"
+      ]
+    },
+    {
+      "zh": "外围桥接中：ExplanatoryBranching.Bisimulation 就是以模型的条件为主张的框架之间的互模拟，相同的配置通过每个分支检验，否定与合取在内（经 bisimulation_implies_same）。",
+      "en": "In the periphery bridge, ExplanatoryBranching.Bisimulation is the core's bisimulation of frames whose claims are a model's conditions, and alike configurations pass every branching test, negation and conjunction included (through bisimulation_implies_same).",
+      "declarations": [
+        "Becoming.Frame.ofModel",
+        "Becoming.branching_bisimulation_iff",
+        "Becoming.Alike.same"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加前提：相同由互模拟刻画，不是假设，也不取商；Alike.tests、exchange_alike_iff、identifiesAlike_iff 与 identifiesAlike_id_iff 是双向的。",
+      "en": "No premise: likeness is characterized by bisimulation, not assumed, and no quotient is taken; Alike.tests, exchange_alike_iff, identifiesAlike_iff and identifiesAlike_id_iff are two-way."
+    },
+    {
+      "zh": "互模拟比较动作与主张类型相同的框架；检验是一个有限动作序列之后的一个主张；经同样检验推出相同所需的条件由 tests-fix-likeness-where-determined 给出。",
+      "en": "Bisimulation compares frames with the same move and claim types; a test is a claim after a finite course of moves, and the conditions under which passing the same tests makes configurations alike are given by tests-fix-likeness-where-determined."
+    },
+    {
+      "zh": "相同之下的确定性（DeterminedAt）是定义；第一部分以 Determined 陈述的定理以它重述，见 determinacy-up-to-likeness。",
+      "en": "Determinacy up to likeness (DeterminedAt) is a definition; the Part I theorems stated with Determined are restated with it in determinacy-up-to-likeness."
+    },
+    {
+      "zh": "IdentifiesAlike.carries 要框架在每个配置处相同之下确定；有意义的描述是给出的，不推出它存在。",
+      "en": "IdentifiesAlike.carries needs the frame determined up to likeness at every configuration; a description that makes sense is supplied, and that one exists is not derived."
+    },
+    {
+      "zh": "见证的结论：Twins 的框架，以及经 exchangeFrame 读的交换之律。",
+      "en": "For the witnesses: the frames of Twins, and the law of exchange read through exchangeFrame."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "经同样检验的配置相同不在这里陈述；其条件见 tests-fix-likeness-where-determined。",
+      "en": "That configurations passing the same tests are alike is not stated here; its conditions are in tests-fix-likeness-where-determined.",
+      "kind": "converse"
+    },
+    {
+      "zh": "有意义的描述存在没有陈述：以“与哪些相同”描述每个配置，要函数外延性与命题外延性才有意义；按相同取商要 Quot.sound。",
+      "en": "That a description making sense exists is not stated: describing each configuration by what it is alike to makes sense given function and propositional extensionality, and the quotient by likeness needs Quot.sound.",
+      "kind": "scope"
+    },
+    {
+      "zh": "相同不取商，所以“相同的配置是同一个”不是这里的陈述。",
+      "en": "Likeness takes no quotient, so “alike configurations are one and the same” is not stated here.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "detail": {
+        "zh": "作为相等的确定性依赖于命名：Twins 中两个后继在每个关系上相同，框架不确定，而它与一个确定的框架相同（Twins.not_determined、Twins.left_alike_right、Twins.alike_one）。",
+        "en": "Determinacy as equality depends on names: in Twins the two successors are alike in every relation, the frame is not determined, and it is alike to a determined frame (Twins.not_determined, Twins.left_alike_right, Twins.alike_one)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-evaluation",
+    "no-ethical-premise",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Unfolding（回执 20261013T094743.528770Z）与所引桥接的定理公理报告为空，并核对核心纯净。Unfolding、Joint、Mechanism 绑定于 20261013T221720.428753Z，Frame、Experiment、Recurrence 于 20261013T094743.528770Z，Bridge 于 20261014T141427.442103Z，其适配不另计成果。作者反审见整合文档 §91；尚无独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Unfolding (receipt 20261013T094743.528770Z) and the bridge theorems cited here have empty axiom reports, and the checker verifies core purity. Unfolding, Joint and Mechanism are bound by 20261013T221720.428753Z, Frame, Experiment and Recurrence by 20261013T094743.528770Z, Bridge by 20261014T141427.442103Z, its added adapters not being separate results. Author counterreview in §91 of the integration note; no independent review yet."
+  },
+  "next_delta": {
+    "zh": "在相同已判定的有限框架上按相同计数配置，与 relata-counted-up-to-indiscernibility 相连。",
+    "en": "Counting configurations up to likeness on finite frames where likeness is decided, joined to relata-counted-up-to-indiscernibility."
+  },
+  "correspondence": {
+    "zh": "按 Ren 的“yes, put it on the board and start”：从 World 一侧陈述“配置先于其间的关系”这一分割。它把外围的关系的同一（RelationalDynamics，2026-10-06；ExplanatoryBranching 的分支检验）带进核心。那里发现“状态不变”读的是载体的相等（unchanged_reads_carrier_identity）；作为相等的确定性也如此（Twins）。读法（AI 的；Ren 同意）：配置的名字，像关系项的名字（Becoming.Identity）一样，不承载任何东西，能查明的对相同的配置都一样；交换之律下水平在每个关系项上相等就是相同，所以零前提计划以逐点性质代替函数外延性的承诺（§1.2，b(5)）陈述的是水平的关系的同一，函数外延性只再加上相同的水平是同一个。有意义的描述在本模块的定义上，对有分支、带主张的框架重述分支“Current math core (fork)”对一个确定的律检查过的 IdentifiesAlike（其 Saying.lean，回答 Ren 关于框架与成对的问题）。",
+    "en": "Following Ren's “yes, put it on the board and start”: the split “configurations prior to their relation” stated from the world's side. It brings into the core the periphery's relational identity of configurations (RelationalDynamics, 6 October 2026; the branching tests of ExplanatoryBranching). There a step leaving the configuration unchanged was found to read the carrier's equality (unchanged_reads_carrier_identity); so does determinacy as equality (Twins). Readings (the AI's; Ren agreed): the names of configurations, like those of relata (Becoming.Identity), carry nothing, and what can be found out is the same for alike configurations; under the law of exchange, agreeing at every relatum is being alike, so the zero-premise plan's commitment to pointwise properties in place of function extensionality (§1.2, b(5)) states the relational identity of standings, function extensionality adding only that alike standings are one and the same. Descriptions that make sense restate on this module's definitions, for frames that branch and carry claims, the IdentifiesAlike checked for one determined law on the branch \"Current math core (fork)\" (its Saying.lean, answering Ren's questions on framing and pairs)."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+  "aliases": [
+    "Becoming.Bisimulation",
+    "Becoming.Alike",
+    "Becoming.Alike.trace",
+    "Becoming.Alike.tests",
+    "Becoming.DeterminedAt",
+    "Becoming.DeterminedAt.transfer",
+    "Becoming.DeterminedAt.goAlike",
+    "Becoming.Twins.alike_one",
+    "Becoming.exchangeFrame",
+    "Becoming.exchange_alike_iff",
+    "Becoming.exchange_determinedAt",
+    "bisimulation",
+    "互模拟",
+    "relational identity",
+    "关系的同一",
+    "alike",
+    "相同",
+    "determined up to likeness",
+    "相同之下确定",
+    "Becoming.IdentifiesAlike",
+    "Becoming.identifiesAlike_iff",
+    "Becoming.IdentifiesAlike.carries",
+    "Becoming.identifiesAlike_id_iff",
+    "makes sense",
+    "有意义的描述",
+    "Becoming.Law.SameFuture",
+    "Becoming.Law.alike_iff_sameFuture",
+    "same registered future",
+    "所识的未来相同"
+  ],
+  "dependencies": [
+    {
+      "id": "joint-difference-making",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Determined：确定的框架处处相同之下确定（Determined.at）；双胞胎不确定而与确定的框架相同（Twins.alike_one）。",
+        "en": "Reuses Determined: a determined frame is determined up to likeness everywhere (Determined.at); the twins are not determined and are alike to a determined frame (Twins.alike_one)."
+      },
+      "interface": {
+        "output": {
+          "zh": "确定性。",
+          "en": "Determinacy."
+        },
+        "input": {
+          "zh": "相同之下的确定性与它的见证。",
+          "en": "Determinacy up to likeness and its witness."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean"
+      }
+    },
+    {
+      "id": "process-and-frame-as-readings",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用同一模块的交换之律（exchange、exchange_agrees）：在每个关系项上相等是互模拟，这条律相同之下确定。",
+        "en": "Reuses the same module's law of exchange (exchange, exchange_agrees): agreeing at every relatum is a bisimulation, and the law is determined up to likeness."
+      },
+      "interface": {
+        "output": {
+          "zh": "交换之律；它固定一步之后的每个水平。",
+          "en": "The law of exchange; it fixes each standing after a step."
+        },
+        "input": {
+          "zh": "水平的相同。",
+          "en": "Likeness of standings."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    },
+    {
+      "id": "projection-carrying-a-law",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 carries_law_iff：框架处处相同之下确定时，有意义的描述相同者同去，所以承载规律（IdentifiesAlike.carries）。GoAlike 以投影上的相等定义相同者同去；DeterminedAt.goAlike 以互模拟的相同给出同一形式。",
+        "en": "Reuses carries_law_iff: where the frame is determined up to likeness everywhere, a description that makes sense goes alike and so carries a law (IdentifiesAlike.carries). GoAlike defines going alike through equality on a projection; DeterminedAt.goAlike gives the same form with likeness by bisimulation."
+      },
+      "interface": {
+        "output": {
+          "zh": "投影承载规律，恰当相同者同去。",
+          "en": "A projection carries a law exactly where configurations alike under it go alike."
+        },
+        "input": {
+          "zh": "有意义的描述承载规律。",
+          "en": "A description that makes sense carries a law."
+        },
+        "conditions": {
+          "zh": "框架在每个配置处相同之下确定。",
+          "en": "The frame determined up to likeness at every configuration."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Law.orbit、Law.orbit_shift 与 Law.process：确定的律经映射读的框架，经映射的未来相同恰是相同。",
+        "en": "Reuses Law.orbit, Law.orbit_shift and Law.process: for a determined law read through a map, the same future through the map is exactly likeness."
+      },
+      "interface": {
+        "output": {
+          "zh": "确定的律的轨道及其作为过程。",
+          "en": "The orbit of a determined law and the law as a process."
+        },
+        "input": {
+          "zh": "经映射的未来相同与相同的等价。",
+          "en": "The equivalence of the same future through the map with likeness."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "branching-tests-bisimulation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ExplanatoryBranching.Bisimulation、Same 与 bisimulation_implies_same：桥接证明它的互模拟就是核心的，相同的配置通过每个分支检验。反方向（同测推出互模拟）在外围由 same_iff_bisimilar 在像有限时经典地给出；核心在有限、已定的框架上构造性地给出（Becoming.Likeness 的 alike_iff_sameBranchingTests）；核心的分支检验一一对应于外围的检验（桥接的 sameBranchingTests_iff_same），所以有限、已定的模型上外围的同测即相同，不用经典推理（same_iff_alike_of_finiteDecided）。",
+        "en": "Reuses ExplanatoryBranching.Bisimulation, Same and bisimulation_implies_same: the bridge proves its bisimulation is the core's, and alike configurations pass every branching test. The converse (passing the same tests gives a bisimulation) is given classically in the periphery for image-finite models by same_iff_bisimilar, and constructively in the core on finite decided frames (alike_iff_sameBranchingTests of Becoming.Likeness); the core's branching tests correspond one to one to the periphery's (sameBranchingTests_iff_same in the bridge), so on finite decided models the periphery's same tests are likeness with no classical reasoning (same_iff_alike_of_finiteDecided)."
+      },
+      "interface": {
+        "output": {
+          "zh": "分支检验与互模拟；互模拟推出同测。",
+          "en": "Branching tests and bisimulation; bisimulation gives the same tests."
+        },
+        "input": {
+          "zh": "核心的相同通过外围的全部分支检验。",
+          "en": "The core's likeness passing all of the periphery's branching tests."
+        },
+        "conditions": {
+          "zh": "外围桥接导入 ExplanatoryBranching。",
+          "en": "The periphery bridge imports ExplanatoryBranching."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "identity-across-steps",
+      "detail": {
+        "zh": "关系项的标签不承载任何东西，名字跨步的模式承载同一；这里配置的名字同样不承载任何东西：相同的配置能查明的都一样。",
+        "en": "Relata's labels carry nothing, and the pattern of names across steps carries identity; here configurations' names likewise carry nothing: what can be found out is the same for alike configurations."
+      }
+    },
+    {
+      "id": "becoming-spine-instances",
+      "detail": {
+        "zh": "桥接模块：外围的接口是脊柱的实例；外围的两种互模拟在此成为核心的。",
+        "en": "The bridge module: the periphery's interfaces are instances of the spine; the periphery's two bisimulations become the core's there."
+      }
+    },
+    {
+      "id": "tests-fix-likeness-where-determined",
+      "detail": {
+        "zh": "检验固定相同的条件：线性检验要两个框架在相同之下确定，分支检验要两个框架有限、已定。",
+        "en": "The conditions under which tests fix likeness: both frames determined up to likeness for linear tests, both finite and decided for branching tests."
+      }
+    },
+    {
+      "id": "determinacy-up-to-likeness",
+      "detail": {
+        "zh": "第一部分以 Determined 陈述的定理在相同之下的重述，以及需要相等之处的见证。",
+        "en": "The Part I theorems stated with Determined restated up to likeness, with witnesses where equality is needed."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "40e3a36f79faf60560037490d9b849c89349ba9210c42d96fadcca0252004b7c",
+      "declarations": [
+        "Becoming.Determined.at",
+        "Becoming.IdentifiesAlike.carries",
+        "Becoming.Twins.Config",
+        "Becoming.Twins.frame",
+        "Becoming.Twins.not_determined",
+        "Becoming.Twins.one_determined",
+        "Becoming.Twins.bisimulation",
+        "Becoming.Twins.left_alike_right",
+        "Becoming.Twins.successor_not_start",
+        "Becoming.Twins.bisimulation_one",
+        "Becoming.Twins.alike_one",
+        "Becoming.Twins.naming_not_identifiesAlike",
+        "Becoming.Law.frameBy",
+        "Becoming.Law.frameBy_determined",
+        "Becoming.Law.alike_future",
+        "Becoming.Law.sameFuture_bisimulation",
+        "Becoming.Law.alike_iff_sameFuture",
+        "Becoming.Law.IdentifiesAlike.carries",
+        "Becoming.exchange_determinedAt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "role": "proof",
+      "sha256": "94bb18753807b3dd2c6d83c5d2e38e9b1a60d6f23a1b1fa7261c55e8d0e5f53c",
+      "declarations": [
+        "Becoming.Bisimulation",
+        "Becoming.Alike",
+        "Becoming.Bisimulation.eq",
+        "Becoming.Bisimulation.converse",
+        "Becoming.Bisimulation.comp",
+        "Becoming.Alike.refl",
+        "Becoming.Alike.symm",
+        "Becoming.Alike.trans",
+        "Becoming.Alike.realized",
+        "Becoming.Alike.step",
+        "Becoming.Bisimulation.trace",
+        "Becoming.Alike.trace",
+        "Becoming.Alike.tests",
+        "Becoming.DeterminedAt",
+        "Becoming.DeterminedAt.transfer",
+        "Becoming.DeterminedAt.goAlike",
+        "Becoming.IdentifiesAlike",
+        "Becoming.identifiesAlike_iff",
+        "Becoming.IdentifiesAlike.unique",
+        "Becoming.identifiesAlike_id_iff",
+        "Becoming.Twins.one",
+        "Becoming.exchangeFrame",
+        "Becoming.exchange_pointwise_bisimulation",
+        "Becoming.exchange_alike_of_pointwise",
+        "Becoming.exchange_pointwise_of_alike",
+        "Becoming.exchange_alike_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "role": "proof",
+      "sha256": "6c54aea85b715cac11048f19fcc0f41cb4219276fb015d6ed12e466e90c8616b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Laws.lean",
+      "role": "proof",
+      "sha256": "5719f92274999e36329507583e71d6f92ad2850222be02027fb846e4ae8104bd",
+      "declarations": [
+        "Becoming.Determined"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "role": "proof",
+      "sha256": "548b1523ea8f0f9d6b08f6311baa9cc6318669e0097cd2e24605ba3ed8eb9ff2",
+      "declarations": [
+        "Becoming.Frame",
+        "Becoming.Run"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "role": "proof",
+      "sha256": "f76c95d000ad47ce325ef58c7891d7536ac3844ddc9deb4ccced572b8a8bd4eb",
+      "declarations": [
+        "Becoming.carries_law_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "role": "proof",
+      "sha256": "7634077005d8a36d9d0a9c0f85fc408aa7a13a97aa6db60b43a5c4c722086045",
+      "declarations": [
+        "Becoming.FactorsThrough"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b",
+      "declarations": [
+        "Becoming.Law.orbit",
+        "Becoming.Law.orbit_shift",
+        "Becoming.Law.SameFuture",
+        "Becoming.Law.process"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
+      "declarations": [
+        "Becoming.Frame.bare",
+        "Becoming.deeper_bisimulation_iff",
+        "Becoming.static_toggle_alike",
+        "Becoming.Frame.ofModel",
+        "Becoming.branching_bisimulation_iff",
+        "Becoming.Alike.same",
+        "Becoming.sameBranchingTests_iff_same",
+        "Becoming.same_iff_alike_of_finiteDecided"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "role": "proof",
+      "sha256": "ff49f9ef7e458a316898575948fcec763d879ab5412e170c25de56ac94cd7a2e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-relational-starting-point.md",
+      "role": "provenance",
+      "sha256": "ab0832849a0a0315fcc4f34f7bcfca0afb749a82f18a6ae9ef00fcb25952c15b",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md",
+      "role": "provenance",
+      "sha256": "115e7cee47046597ad0cedc3a5a96c77ce99f55bb3ecc940dc38c8fcf233551c",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-framing-evidence/Saying.lean",
+      "role": "provenance",
+      "sha256": "1f97aec46003a0178ff6f45923f79a134eae78b346feb90e0e644bbf63dab3f3",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md",
+      "role": "provenance",
+      "sha256": "5b9475497e67ea0167033d54e29abfea8f409920a6a95ebf8c6899158aa45bbd",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "role": "receipt",
+      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Experiment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Labelled",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Laws.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Laws",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-12 P69：新增，按 Ren“yes, put it on the board and start”（对“is this dualistic?”的回答所附的提议）；律与历史的读法经 Ren 确认（“yes, i do agree with your reading, there are no two realities”）；见整合文档 §91。",
+      "en": "2026-10-12 P69: added, following Ren's ‘yes, put it on the board and start’ (to the proposal answering ‘is this dualistic?’); the reading of law and history confirmed by Ren (‘yes, i do agree with your reading, there are no two realities’); see §91 of the integration note."
+    },
+    {
+      "zh": "2026-10-12 P73：验证范围重新指向合并检查器回执 20261012T012916.201078Z 与外围回执 20261012T013048.258651Z（新增 Becoming.Learning，2895→2970 项定理，包 56→57 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-12 P73: validation scope re-pointed to consolidated receipt 20261012T012916.201078Z and periphery receipt 20261012T013048.258651Z (Becoming.Learning added, 2895 to 2970 theorems, package 56 to 57 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P70–P72/P72q：验证范围重新指向合并检查器回执 20261013T084405.661795Z 与外围回执 20261013T084521.070057Z（新增 Becoming.Description、Diagonal、Context 与 Quantum，2970→3114 项定理，包 57→61 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P70–P72/P72q: validation scope re-pointed to consolidated receipt 20261013T084405.661795Z and periphery receipt 20261013T084521.070057Z (Becoming.Description, Diagonal, Context and Quantum added, 2970 to 3114 theorems, package 57 to 61 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
+      "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P76、P81：next_delta 中检验的构造性条件一项由 tests-fix-likeness-where-determined 回答（§98），相同之下重述一项的主要部分由 determinacy-up-to-likeness 回答（§99）。断言不变。",
+      "en": "2026-10-12 P76, P81: the next_delta item on a constructive condition for tests is answered by tests-fix-likeness-where-determined (§98), and the main part of the item on restating up to likeness by determinacy-up-to-likeness (§99). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
+      "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
+      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+    },
+    {
+      "zh": "2026-10-14 合并：恢复上一条 a643f4fa 隔离提交的复核记录；同时进行的工作树未见该条，其指纹 35b63cdd 绑定的是那次提交的范围。",
+      "en": "14 October 2026 merge: restores the preceding review entry of the isolated commit a643f4fa, which the concurrent working tree had not seen; its fingerprint 35b63cdd bound that commit’s scope."
+    },
+    {
+      "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
+      "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按计划中为脊柱记录用短标题的建议（Ren 认可：“go with your recommendations”）：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“配置由它怎样关系而定：互模拟所联系的配置相同，相同的配置通过同样的检验；有意义的描述恰把相同者等同，并承载规律；作为相等的确定性依赖于命名”",
+      "en": "2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “A configuration is how it relates: configurations related by a bisimulation are alike and pass the same tests; a description makes sense where it identifies exactly the alike ones, and then carries a law; determinacy as equality depends on names”"
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `MakesSense` → `IdentifiesAlike`、`makesSense_iff` → `identifiesAlike_iff`、`MakesSense.unique` → `IdentifiesAlike.unique`、`makesSense_id_iff` → `identifiesAlike_id_iff`、`Twins.naming_senseless` → `Twins.naming_not_identifiesAlike`、`Law.MakesSense.carries` → `Law.IdentifiesAlike.carries`、`Frame.unclaimed` → `Frame.bare`；陈述、证明与定理数不变；Lean 源：Unfolding、Mechanism、Bridge 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `MakesSense` → `IdentifiesAlike`, `makesSense_iff` → `identifiesAlike_iff`, `MakesSense.unique` → `IdentifiesAlike.unique`, `makesSense_id_iff` → `identifiesAlike_id_iff`, `Twins.naming_senseless` → `Twins.naming_not_identifiesAlike`, `Law.MakesSense.carries` → `Law.IdentifiesAlike.carries`, `Frame.unclaimed` → `Frame.bare`; statements, proofs and theorem counts unchanged; Lean sources: Unfolding, Mechanism, Bridge only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Joint.lean（新增若干部分只有一同才造成差别的规律，既有陈述不变）；BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为新模块增改行，总数改据回执 20261013T221720.428753Z；标题、粗体引语、模块表与正文中的工作项编号改为模块、节或成果的名称，旧标题锚点保留为显式锚点；陈述、Lean 名、定理数与链接目标均不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Joint.lean (the laws of a difference made only together by a set of parts added; existing statements unchanged); BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added or updated for the new modules and the §9 totals moved to receipt 20261013T221720.428753Z; work-item numbers removed from headings, bold leads, the module table and in-body references, which now name modules, sections or results, with the old heading anchors kept as explicit anchors; no statement, Lean name, theorem count or link target changed)."
+    },
+    {
+      "zh": "2026-10-14：Becoming.Unfolding、Becoming.Mechanism、Becoming.Bridge 的证明绑定改指合并检查器回执 20261013T221720.428753Z，与有效范围的说明一致；该回执与原回执 20261013T204910.042715Z 绑定相同的字节。",
+      "en": "14 October 2026: the proof bindings of Becoming.Unfolding, Becoming.Mechanism, Becoming.Bridge now point to consolidated receipt 20261013T221720.428753Z, as the validation scope states; it binds the same bytes as the earlier receipt 20261013T204910.042715Z."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为 Becoming.Viability、Countdown、Lasting、Copying、Retrodiction 及五个外围实例模块增行，总数改据回执 20261014T044840.291323Z；其余文字不变）。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
+    },
+    {
+      "zh": "2026-10-14，相同之下补全（工作板“Current math core”的 likeness 一行；Becoming.Likeness）：next_delta 的前两项已回答，余下 Ren 的判断。第一部分以 Determined 陈述而 P81 未重述的定理（Image／FactorsThrough 的刻画、not_fixes_other_of_new、determined_dichotomy、carries_law_iff 的双向形式、实验之律经投影的读法）在 determinacy-up-to-likeness 中重述；分支检验在有限、已定的框架上构造性地固定相同，记于 tests-fix-likeness-where-determined。限制、两条前提、与 branching-tests-bisimulation 的依存说明及两条相关说明相应改写（限制变短）；主张与对应不变。",
+      "en": "14 October 2026, likeness completed (the work board's likeness row of Current math core; Becoming.Likeness): the first two items of the next_delta are answered, leaving Ren's judgment. The Part I theorems stated with Determined that P81 did not restate (the characterization through Image and FactorsThrough, not_fixes_other_of_new, determined_dichotomy, the two-way form of carries_law_iff, the readings of the experiment laws through a projection) are restated in determinacy-up-to-likeness; branching tests fix likeness constructively on finite decided frames, recorded in tests-fix-likeness-where-determined. The limitations, two hypotheses, the dependency note on branching-tests-bisimulation and two related notes were rewritten accordingly (the limitations shorter); the claim and correspondence are unchanged."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（读法“记入”事件处英文改为 includes；§8 审查行写出第一次审查的对象（研究 §§1–6）；为 Becoming.Likeness、Becoming.Learnable、到达律、谱系律及其实例增加第一部分段落、§8 条目与 §9 行；Becoming.CrossSituational 的 §9 行与 MachineInstances、VersionedTaskInstances 两行；§9 总数改据回执 20261014T091930.724493Z）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (“includes” where a reading “credited” an event; the §8 review row names the first review's object (study §§1–6); Part I paragraphs, §8 bullets and §9 rows for Becoming.Likeness, Becoming.Learnable, the reaching law, the lineage law and their instances; the §9 row for Becoming.CrossSituational and the rows of MachineInstances and VersionedTaskInstances; the §9 totals moved to receipt 20261014T091930.724493Z)."
+    },
+    {
+      "zh": "2026-10-14，桥接（Becoming.Bridge 的 Likeness 一节）：与 branching-tests-bisimulation 的依存说明补上核心分支检验与外围检验的一一对应及有限、已定模型上的构造性形式；主张、限制与对应不变。",
+      "en": "14 October 2026, the bridge (the Likeness section of Becoming.Bridge): the dependency note on branching-tests-bisimulation adds the one-to-one correspondence of the core's branching tests with the periphery's and its constructive form on finite decided models; claim, limitations and correspondence unchanged."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）；Bridge.lean（新增核心分支检验与外围检验之间的互译；原有声明逐字节不变）。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z); Bridge.lean (the translation between the core's branching tests and the periphery's tests added; earlier declarations byte-identical)."
+    },
+    {
+      "zh": "2026-10-14，读法（Ren 2026-10-14 同意）：回答 next_delta：配置的同一读作相同，相对于所实现的，作为关系而不是商，并由整个延续固定，所以可超出有限的检验（tests-fix-likeness-where-determined 的规律 9、Unbounded 与规律 12）。next_delta 改为按相同计数配置。主张不变。",
+      "en": "14 October 2026, the reading (Ren agreed on 14 October): answers the next_delta: the identity of configurations reads as likeness, relative to what is realized, carried as a relation rather than a quotient, and fixed by the whole continuation, so that it can outrun finite tests (tests-fix-likeness-where-determined, law 9, Unbounded and law 12). The next_delta is now counting configurations up to likeness. The claim is unchanged."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Bridge.lean（整合 I1：same_iff_bisimilar 作为以排中律为假设的核心定理、separated_iff，以及自身之善第二步即剖面上的 N_rel；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（第十七次审查后更正 §9 各行（Continuation“共同净给予”；LossMatching 的方向；Retrodiction 的两值与两端读数相同；“受支持的完成”）；新增 Postponement 行；总数改据新回执；整合 I1 后的 Likeness 与 Bridge 行）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Bridge.lean (integration I1: same_iff_bisimilar as a core theorem with excluded middle a hypothesis, separated_iff, and the self-good second step as N_rel on profiles; earlier statements unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§9 rows corrected after the seventeenth review (Continuation “joint net giving”; LossMatching direction; Retrodiction's two-valued, same-reading ends; “supported completion”); the Postponement row; totals moved to the new receipt; the Likeness and Bridge rows after integration I1)."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Unfolding.lean（整合 I3a：新增“规律由其迹固定”（same_steps_iff_traces）；原有陈述不变）；Recurrence.lean（整合 I3a：新增“所及保持恰当返回”；原有陈述不变）；Bridge.lean（整合 I3a：七个外围族的实例节（RelationalGrounding、ProtectionPriorityRival、ChanceAdequacy、FallibleInspection、BecomingReversibility、DynamicConsequences、DerivedHistoryLaw）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Unfolding.lean (integration I3a: a law is fixed by its traces (same_steps_iff_traces) added; earlier statements unchanged); Recurrence.lean (integration I3a: reach kept exactly when return added; earlier statements unchanged); Bridge.lean (integration I3a: instance sections for seven periphery families (RelationalGrounding, ProtectionPriorityRival, ChanceAdequacy, FallibleInspection, BecomingReversibility, DynamicConsequences, DerivedHistoryLaw); earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-14 迁移到 schema 2（开放问题计划 F 项：lint 发现最多的 45 条 schema-1 记录的迁移；Ren：“please, do all”，经整合会话转达）：主张拆为 11 条规律；限制分入“未表明”、通用边界、前提与已有的 related 链接；证据成为一段。statement 写出定理的条件：有意义的描述“在框架相同之下确定时”承载规律（IdentifiesAlike.carries 的 determined；旧文本为“并承载规律”）。对应中“P69 的第四项（工作板），”与日期 2026-10-12 移出（首条沿革已记 P69 与该日期），“见整合文档 §91”并入证据；读法的归属“读法（AI 的；Ren 同意）”与 Ren 的原话不变。“不用 Lean 公理”与前提中没有伦理前提，引用通用边界 no-ethical-premise；“不含伦理谓词”引用 no-evaluation。证据按 proof_bindings 写出各来源的绑定回执：旧证据第一句说 Bridge 由 20261013T221720.428753Z 绑定，第五批次后 Bridge 由 20261014T141427.442103Z 绑定（见上一条沿革）。证据中“下文较早的回执以旧名检查了同一陈述，见统一计划 §10”、定理数、模块与审计总数、核心纯净的细节及外围回执 20261011T232716.311380Z 留在回执、改名沿革与 text_versions 末项中；P89 的适配说明并入一句。规律、前提、状态、证明绑定与来源哈希均未改变。每句旧文本的去向见迁移对照表 [configurations-alike-by-relation.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/configurations-alike-by-relation.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026, migrated to schema 2 (item F of the open-issues plan: the migration of the 45 schema-1 records with the most lint findings; Ren: “please, do all”, relayed by the integrating session): the claim became 11 laws; the limitations went to does-not-show items, standard boundaries, the hypotheses and the existing related links; the evidence became one paragraph. The statement now carries the theorem's condition: a description that makes sense carries a law “where the frame is determined up to likeness” (determined of IdentifiesAlike.carries; the old text said “and then carries a law”). In the correspondence “The fourth item of P69 (work board),” and the date 12 October 2026 left (the first history note records P69 and that date) and “See §91 of the integration note” joined the evidence; the attribution “Readings (the AI's; Ren agreed)” and Ren's words are unchanged. “No Lean axiom is used”, with no ethical premise among the hypotheses, cites the standard boundary no-ethical-premise; “contains no ethical predicate” cites no-evaluation. The evidence names each source's binding receipt as the proof bindings have it: the old evidence's first sentence bound Bridge to 20261013T221720.428753Z, and since batch 5 Bridge is bound to 20261014T141427.442103Z (see the preceding history note). “Earlier receipts below checked the same statements under the former names, tabulated in plan section 10”, the theorem, module and audit counts, the core-purity detail and the periphery receipt 20261011T232716.311380Z stay in the receipts, the rename history note and the last text_versions entry; P89's note on the adapters became one clause. No law, premise, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [configurations-alike-by-relation.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/configurations-alike-by-relation.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "zh": "2026年10月15日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第125节）：更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（“完整陈述的理论”第1、3项补上 World 不是起点与前提的独立性；第一部分补上三条规律；§8 的表与 Ren 的选择补上从关系开始的重建；§9 新增 Novelty、Reading、Readings 三行，Imbalance 行与术语表记 Ren 2026-10-14 的采用；总数改据新回执；此外不变）。",
+      "en": "15 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study section 125): rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (the theory stated in full, items 1 and 3 (World is not the start; the independence of the premises); Part I (three laws); the §8 table and Ren's choices (the relation-first re-founding); §9 rows for Novelty, Reading and Readings, and the Imbalance row and glossary recording Ren's adoption of 14 October 2026; totals moved to the new receipt; otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Recurrence.lean（整合 I3b：新增共同实现的界（WithinMoves.after_course、lost_together_not_returns）；原有陈述不变）；Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83b 与 P83c（Identification、Likeness、Refinement）、整合 I3b（Granularity 及其桥接）与 Keeping 的 §9 各行，总数改据新回执）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Recurrence.lean (integration I3b: bounds on realizing a bundle together added (WithinMoves.after_course, lost_together_not_returns); earlier statements unchanged); Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged); BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for P83b and P83c (Identification, Likeness, Refinement), integration I3b (Granularity and its bridge) and Keeping, and the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3c 与 P83d 落地（研究第129–130节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第129节（整合 I3c：四项外围记录接入；Becoming.Keeping、共享存量与传递）与第130节（P83d：不加前提的 Moore 界）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 新增 I3c 的三个外围实例模块的行（SharedStockInstances、ContinuationCorrespondence、TransmissionCorrespondence）并在实例模块一句中列出；P83d 的 Identification 一行与正文；总数改据新回执）。",
+      "en": "15 October 2026, landing integration I3c and P83d (study sections 129–130): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 129 (integration I3c: four periphery records joined; Becoming.Keeping, the shared stock, transmission) and 130 (P83d: Moore's bound with no premise) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for the three I3c periphery instance modules (SharedStockInstances, ContinuationCorrespondence, TransmissionCorrespondence) and the instance-module sentence; P83d's Identification row and text; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P109：§8 中关系起点的进一步证明改为“动作在哪里形成已给出”，Ren 的选择增其读法；§9 一行（Becoming.Coupling）；总数改据新回执）。",
+      "en": "15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P109: in §8 the further proof for the relational starting point becomes \"where a move is formed is given\" and Ren's choices gain its readings; one §9 row (Becoming.Coupling); the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83e：辨识一段与“历史固定什么”“辨识”两行增检验即有界的记录及两个框架之间的恰好性，开放项相应删去，§9 一行（Becoming.Distinguishing）；P83f：辨识一行与 Identification 一行增以最小的界读记录的学习者；总数改据新回执）。",
+      "en": "15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P83e: the identification paragraph and the rows ‘what histories fix’ and ‘identification’ gain the tests as a bounded record and the exactness across two frames, the open items trimmed accordingly, one §9 row (Becoming.Distinguishing); P83f: the identification row and the Identification row gain the learner reading the record by the least bound; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Unfolding.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Mechanism.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Experiment.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Mechanism.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Experiment.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after U: THE-THEORY-OF-BECOMING.md section 8 (the completeness paragraph, the row on worlds as runs, the row on integration of the spine) and section 9 (the current receipt, now 20261017T071851.986246Z) were rewritten for the join modules of U. The integrator read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean, Unfolding.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, source reconciliation after R1 (the step index read off the relata's own courses): THE-THEORY-OF-BECOMING.md section 0 (the premise card row on discrete steps and one shared index gains a sentence on Becoming.Interleavings), section 8 (the row on one relational start and worlds as runs now states R1's result in place of the open item and links its record; the scope of representation in §8.5 gains a sentence; the integration row gains R1's connectivity count) and section 9 (the current receipt, now 20261018T000841.184655Z, and its counts) were edited. The integrator read the change: it adds to these sections and touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md, Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G3（Becoming.LawAlongRun）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: Bisimulation, Alike, eq, converse, comp, refl, symm, trans, realized, step, trace, trace, tests, DeterminedAt, transfer, goAlike, IdentifiesAlike, identifiesAlike_iff, unique, identifiesAlike_id_iff, one, exchangeFrame, exchange_pointwise_bisimulation, exchange_alike_of_pointwise, exchange_pointwise_of_alike, exchange_alike_iff from Unfolding.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Joint.lean, Unfolding.lean). Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 1's paragraph \"One unfolding and its readings\" names Becoming.Labelled, where these readings are now stated, and says the import tree follows the reading). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F2, joins into the core (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): declarations moved with their full Lean names. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Experiment.lean, Mechanism.lean, THE-THEORY-OF-BECOMING.md, Unfolding.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the \"Seeking, capture and runaway\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, G5 (Becoming.LawThroughChangingCoupling): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，G5（Becoming.LawThroughChangingCoupling）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
+      "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 0 (premise card C) or section 8 (the open programme): E1 rewrote card C's bullet on what the independence measures, the necessity row of section 8.1, and added a sentence and three records to the section 8.2 row on one relational start. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，E1（从一次交换读出的前提）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 0 节（前提卡 C）或第 8 节（开放纲领）改动：E1 重写了卡 C 关于独立性度量什么的条目、第 8.1 节的必然性一行，并在第 8.2 节关于从关系开始的一行加入一句与三个记录。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: SameFuture from Unfolding.lean to Recurrence.lean; process from Recurrence.lean to Labelled.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Labelled.lean, Mechanism.lean, Recurrence.lean, Unfolding.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2 (the re-rooting, second batch): THE-THEORY-OF-BECOMING.md re-pointed. In the sections this record cites, the only change bearing on it since the render last passed on main is W2's: W2 extended the sentence on the import tree: no module free of the labelled process imports the frame, and the readings of a module holding both are in Becoming.Labelled, Becoming.LabelledRoles, Becoming.ValuationFrames or the run and trace module that reads it. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，W2（重新定根第二批）：THE-THEORY-OF-BECOMING.md 重新指向。本记录所引各节中，自主线上次通过渲染以来，与本记录相关的改动只有 W2 的：第 1 节（W2 扩充导入树一句：不含带标签过程的模块都不导入框架，兼含两者的模块的读法所在）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：THE-THEORY-OF-BECOMING.md，第十九次审查的修正：措辞对齐 Lean 所陈述的，读法标上其决定，§8.8 与 §9 的根、计数与回执更新。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Law.process moved from Labelled.lean to Recurrence.lean, with its full name. Proof bindings (Labelled.lean, Mechanism.lean, Recurrence.lean, Unfolding.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Labelled.lean, Law.process moved to Recurrence.lean; Frame.world built by World.of; header; Mechanism.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged; Unfolding.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：Law.process 从 Labelled.lean 移到 Recurrence.lean，名称不变。证明绑定（Labelled.lean、Mechanism.lean、Recurrence.lean、Unfolding.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Labelled.lean，Law.process 移到 Recurrence.lean；Frame.world 由 World.of 构造；开头说明；Mechanism.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变；Unfolding.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Labelled.lean, Recurrence.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean; Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Labelled.lean、Recurrence.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Joint.lean, Labelled.lean, Recurrence.lean, Unfolding.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Joint.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Unfolding.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Joint.lean、Labelled.lean、Recurrence.lean、Unfolding.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Joint.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Unfolding.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Joint.lean to Laws.lean, Determined. Proof bindings (Frame.lean, Joint.lean, Mechanism.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Frame.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Joint.lean, Determined moved to Laws.lean; Mechanism.lean, GoAlike moved to Laws.lean, defined as GoAlikeUnder at equality; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Joint.lean 到 Laws.lean：Determined。证明绑定（Frame.lean、Joint.lean、Mechanism.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Frame.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Joint.lean，Determined 移到 Laws.lean；Mechanism.lean，GoAlike 移到 Laws.lean，定义为相等处的 GoAlikeUnder；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Experiment.lean, Recurrence.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Experiment.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Experiment.lean、Recurrence.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Experiment.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/97ead96868c7a724/configurations-alike-by-relation.json",
+      "sha256": "97ead96868c7a72410ac410e542ad6ed43bae3acbd45011774207e02d744f6a5",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
+    }
+  ]
+}

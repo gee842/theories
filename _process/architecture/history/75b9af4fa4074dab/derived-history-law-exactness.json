@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "id": "derived-history-law-exactness",
+  "title": {
+    "zh": "由历史摘要构造局部规律的精确条件",
+    "en": "Exactness of a local law derived from history summaries"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-08T18:20:30.740385+00:00",
+  "claim": {
+    "zh": "给定前缀封闭历史族L和摘要q，从所有已接纳单步延伸构造的局部规律，在每个已接纳历史处精确保留全部有限接续，当且仅当同码历史具有相同接续剖面。",
+    "en": "For a prefix-closed language L and summary q, the local law constructed from admitted one-step extensions preserves all finite continuations at every admitted history exactly iff histories sharing a code have identical continuation profiles."
+  },
+  "hypotheses": [
+    {
+      "zh": "任意事件类型、摘要类型、历史族L及前缀封闭；q为全定义摘要。无需有限性、可判定性或L接受空词。",
+      "en": "Arbitrary event and summary types, a prefix-closed language L, and a total summary q. No finiteness, decidability or empty-word membership is required."
+    },
+    {
+      "zh": "充要条件量化每个已接纳历史；不把只从一个初始代码精确当作同一条件。",
+      "en": "The equivalence quantifies every admitted history; exactness from only one initial code is a different contract."
+    }
+  ],
+  "correspondence": {
+    "zh": "历史和摘要描述同一展开；L的实际可接纳含义和字母划分保持给定。构造不创造实际可能性，也不证明所有过程都具有这个有限词表示。",
+    "en": "Histories and summaries describe one unfolding; actual admissibility and the event articulation remain supplied. Construction neither creates actual possibilities nor proves that every process has this finite-word representation."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+  "aliases": [
+    "Generative.DerivedHistoryLaw.exact_iff_fiber_future",
+    "Becoming.exact_iff_fiber_future_by_core"
+  ],
+  "dependencies": [
+    {
+      "id": "finite-trace-transport",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "admitted_extension_projects直接调用trace_map保持同一事件词；反向接续另由derived_trace_sound证明。",
+        "en": "admitted_extension_projects directly uses trace_map to preserve the event word; derived_trace_sound separately proves continuation soundness."
+      },
+      "interface": {
+        "output": {
+          "zh": "保持单步的映射把原历史送至目标历史。",
+          "en": "A step-preserving map transports the original trace."
+        },
+        "input": {
+          "zh": "history_trace_iff给出已接纳延伸的历史，q的保步由构造证明。",
+          "en": "history_trace_iff provides the admitted-extension trace; q preserves steps by construction."
+        },
+        "conditions": {
+          "zh": "给定L及前缀封闭；实际对应与反向端点提升不由保步取得。",
+          "en": "Supplied L and prefix closure; actual correspondence and converse endpoint lifting do not follow from preservation."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean",
+      "detail": {
+        "zh": "全部布尔词均接纳、只把[false]编码为true时，接续仍精确而编码端点可以错误；错误合并不同剖面则产生具体虚假接续。",
+        "en": "Admitting all Boolean words and coding only [false] as true preserves all continuations but can misrepresent encoded endpoints; merging distinct profiles produces a witnessed false continuation."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只保证有限词存在可行性，不保持端点、分支身份、概率或策略。L为空时条件可真而无实际发生；普遍无假设根基仍未证。",
+    "en": "Finite existential word feasibility only: no endpoint, branch-identity, probability or policy guarantee. An empty L permits vacuous validity without occurrence; the universal assumption-free foundation remains unproved."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1实际编译；6项新定理、5项定义，共11项新空审计，另43项继承空审计。首轮对照摘要编译引入propext；显式构造子分支修复后全空，失败记录保留。作者反审，无独立验收。",
+    "en": "Actually compiled with Lean 4.29.1: 6 new theorems and 5 definitions, 11 new empty audits plus 43 inherited empty audits. The first control-summary compilation introduced propext; explicit constructor cases removed it, with the failed record retained. Author counterreview, no independent acceptance."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean",
+      "role": "proof",
+      "sha256": "29e6215f2b505e0393a4575b7711df3cfb488f4015d555c67f384d44d2005044",
+      "declarations": [
+        "Generative.DerivedHistoryLaw.admitted_extension_projects",
+        "Generative.DerivedHistoryLaw.derived_trace_sound",
+        "Generative.DerivedHistoryLaw.exact_iff_fiber_future",
+        "Generative.DerivedHistoryLaw.distinguishing_merge_creates_false_continuation",
+        "Generative.DerivedHistoryLaw.unrestricted_summary_exact",
+        "Generative.DerivedHistoryLaw.exact_futures_can_change_encoded_endpoint"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/derived-history-law-checks/20261008T181617.432149Z/receipt.json",
+      "role": "receipt",
+      "sha256": "c3cdc99c1cded8123f08be428847a7e483db3468058ff0e1decd2e443bddef96",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "role": "integration",
+      "sha256": "6da279324aeb71029fa00d70b4fdba2365f9397a279a525d3fe2bc92ecf15898",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_derived_history_law.py",
+      "role": "provenance",
+      "sha256": "835e1d3f5c38a1fbdb7f35230f2dc62243d45119dab682b602a2f9de95b5c1aa",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+      "role": "proof",
+      "sha256": "c6a85943044e2fce083a947495cc825a42a381fa7f44e1c1f30c8a3ba33c3843",
+      "declarations": [
+        "Becoming.Readout.SameFutures",
+        "Becoming.Readout.futures_through_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "role": "proof",
+      "sha256": "f76c95d000ad47ce325ef58c7891d7536ac3844ddc9deb4ccced572b8a8bd4eb",
+      "declarations": [
+        "Becoming.Image"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SummaryFutures.lean",
+      "role": "proof",
+      "sha256": "edb4e30a64dca65321e0d2d88a661d97545cc363428e9a05b730fea7367b6905",
+      "declarations": [
+        "Becoming.SummaryFutures.every_word",
+        "Becoming.SummaryFutures.futures_through",
+        "Becoming.SummaryFutures.endpoint_moved"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
+      "declarations": [
+        "Becoming.admittedProcess",
+        "Becoming.admitted_feasible_iff",
+        "Becoming.derived_same_steps",
+        "Becoming.exact_iff_fiber_future_by_core"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "role": "receipt",
+      "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "role": "receipt",
+      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
+      "role": "receipt",
+      "sha256": "d87f0ffbdb0bafc510a5b95de2dd83714570dfc1ed7f1a6261578f8cb9125a79",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/derived-history-law-checks/20261008T181617.432149Z/receipt.json",
+      "sha256_pointer": "/modules/3/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Readout",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SummaryFutures.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SummaryFutures",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "取得共同作用关系及其实际解释的演绎根据；不要求每项具体历史族必然，也不以另一等价编码代替这一根据。",
+    "en": "Establish deductive warrant for the universal operative relationship and its actual interpretation; do not require every particular history language to be necessary or substitute another equivalent encoding for that warrant."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：在原演绎根基研究§22接续；新增构造规律的充要条件，复用旧完整历史及静态摘要成果，不宣称较强根基完成。",
+      "en": "2026-10-09: continued the existing deductive study in §22; added the exact criterion for the constructed local law, crediting prior full-history and static-summary results without claiming foundational completion."
+    },
+    {
+      "zh": "2026-10-09直接闭合审计：保留此前研究全文和证明；区分普遍作用根据与具体规律必然化，本次未闭合根基且无新定理。",
+      "en": "2026-10-09 direct closure audit: preserves all earlier study bytes and proofs; distinguishes universal operative warrant from making particular laws necessary. No foundational closure or new theorem."
+    },
+    {
+      "zh": "2026-10-09：追加从实际形成活动开始的诊断修正；保留此前研究与证明，未新增结果或闭合根基。",
+      "en": "2026-10-09: appended the activity-first diagnostic correction; preserved earlier study and proofs, with no new result or foundational closure."
+    },
+    {
+      "en": "9 October 2026: reconciled Ren’s whole/manifold correction. The necessity target is Becoming as a whole, with generativity within it. Earlier chapter/study content and proof sources are preserved; no new theorem or axiom.",
+      "zh": "2026年10月9日：接入Ren关于整体／manifold的修正。必然性对象是Becoming整体，生成性位于其中。保留此前理论、研究及证明源码；无新增定理或公理。"
+    },
+    {
+      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心一般定律的实例。核心（Becoming.Readout）对每一未必确定的规律无前提地证明：经约化读出的规律（image）从每一约化值走的词恰是该配置能走的词，对每一配置皆然，恰当约化所合并的配置能走相同的词（futures_through_iff），即 law_through_iff 的非确定对应。在语言的已承认历史上（每步加一动作；前缀封闭下 admitted_feasible_iff），derivedProcess 即经摘要读出的规律（derived_same_steps），所以 exact_iff_fiber_future 即该定律（exact_iff_fiber_future_by_core），公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 DerivedHistoryLaw，脊柱运行将其与 ContinuationConditions 作为继承模块编译。",
+      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core (Becoming.Readout) proves, for every law that need not be determined, that the law read through a reduction (image) takes from each reduced value exactly the words the configuration can take, for every configuration, exactly when configurations the reduction merges can take the same words (futures_through_iff), the nondeterministic counterpart of law_through_iff. On a language's admitted histories, each step adding one move (admittedProcess; admitted_feasible_iff under prefix closure), derivedProcess is the law read through the summary (derived_same_steps), so exact_iff_fiber_future is that law (exact_iff_fiber_future_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports DerivedHistoryLaw, which the spine run compiles as an inherited module with ContinuationConditions."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Readout.lean（整合 I3d：新增列出之族的判断（LumpedOn、Judges、lumpedOn_of_judges、firstJudge、firstJudge_judges、judges_iff_lumpedOn、no_judge_of_merged）与经由部分的读取（ThroughParts、ReadsDirectly、agree_iff_parts、supplied_agree_iff_parts）；原有陈述不变）；Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Readout.lean (integration I3d: judging a listed family (LumpedOn, Judges, lumpedOn_of_judges, firstJudge, firstJudge_judges, judges_iff_lumpedOn, no_judge_of_merged) and readings through parts (ThroughParts, ReadsDirectly, agree_iff_parts, supplied_agree_iff_parts) added; earlier statements unchanged); Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in DEDUCTIVE-FOUNDATION-TEST.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F2 (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): every theorem of DerivedHistoryLaw.lean is stated in the core (port-f2.md, all graded same or step). The canonical source is now Readout.lean; SummaryFutures.lean states the rest (every_word, futures_through, endpoint_moved). DerivedHistoryLaw.lean keeps its path and bytes and its old receipt; its retirement from the run is the sweep's (F3). The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Readout.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Removed, with the statement kept under one name: Readout.image (now Image). Proof bindings (Readout.lean, SummaryFutures.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Readout.lean, Readout.image removed for Image of Becoming.Mechanism; SummaryFutures.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：删去，陈述以一个名称保留：Readout.image（现为 Image）。证明绑定（Readout.lean、SummaryFutures.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Readout.lean，删去 Readout.image，改用 Becoming.Mechanism 的 Image；SummaryFutures.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Mechanism.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Mechanism.lean, GoAlike moved to Laws.lean, defined as GoAlikeUnder at equality. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Mechanism.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Mechanism.lean，GoAlike 移到 Laws.lean，定义为相等处的 GoAlikeUnder。论断不变。"
+    }
+  ]
+}

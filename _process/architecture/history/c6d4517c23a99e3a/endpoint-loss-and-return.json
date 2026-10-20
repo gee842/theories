@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "id": "endpoint-loss-and-return",
+  "title": {
+    "en": "Endpoint opportunity loss and return",
+    "zh": "端点可能性丧失与返回"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-08T18:18:08.110836+00:00",
+  "claim": {
+    "en": "Along an actual finite trace under a fixed relational law, all existential endpoint possibilities are preserved exactly when a return path exists. Failure to return has a constructive lost endpoint witness; incomplete questions can hide this loss.",
+    "zh": "沿固定关系规律中的实际有限历史，全部存在性端点可能保留当且仅当存在返回路径。无法返回具有构造性的丧失端点见证；不完整问题集合可以遮蔽此损失。"
+  },
+  "hypotheses": [
+    {
+      "en": "Supplied Process.step, configuration identity, finite Trace and endpoint predicates; an actual forward path for the change interpretation.",
+      "zh": "给定 Process.step、配置身份、有限 Trace 与端点谓词；变化解释需要实际正向路径。"
+    },
+    {
+      "en": "Full endpoint test family is structural, not an omniscient available observation; actual meanings require correspondence.",
+      "zh": "完整端点测试族是结构刻画，不是可用的全知观察；实际含义须有对应。"
+    }
+  ],
+  "correspondence": {
+    "en": "States articulate relations within one unfolding. A return restores precisely the represented configuration; historical harms and distinct projected recovery targets are not erased.",
+    "zh": "状态表达同一展开中的关系。返回仅恢复被表示的配置；历史损害及不同的投影恢复目标不被抹除。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+  "aliases": [
+    "BecomingReversibility.same_endpoint_possibilities_iff_return",
+    "BecomingReversibility.irreversible_iff_endpoint_loss",
+    "Becoming.same_endpoint_possibilities_iff_return_by_core",
+    "Becoming.irreversible_iff_endpoint_loss_by_core"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "trace-law-equivalence",
+      "detail": {
+        "en": "Both retain endpoint distinctions; no import adapter to DynamicConsequences is claimed.",
+        "zh": "两者保留端点区别；未声称导入 DynamicConsequences 的证明转换。"
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean",
+      "detail": {
+        "en": "One occurring step admits both reversible and non-returning declared laws; a constant observation hides non-return. These are weak-description controls, not refutations of a fully specified constitutive account.",
+        "zh": "同一发生步骤容许返回及无返回两种给定规律；常量观察遮蔽无返回。这是弱描述的控制，不反驳完整构成性论述。"
+      }
+    }
+  ],
+  "limitations": {
+    "en": "Fixed-law endpoint reachability only; configuration equality does not erase history. No physical irreversibility, ethical ranking, law origin or zero-substantive-axiom foundation is proved.",
+    "zh": "仅及固定规律下端点可达性；配置相同不抹去历史。未证明物理不可逆、伦理排序、规律起源或零实质公理基础。"
+  },
+  "validation_scope": {
+    "en": "Lean 4.29.1: 10 new theorems / 14 audits, all empty named-axiom dependencies; 23 inherited theorems / 28 audits separately rebuilt. Two application examples. Author counterreview; no independent-agent acceptance or empirical validation.",
+    "zh": "Lean 4.29.1：10项新定理／14项审计，命名公理依赖均空；另重编23项继承定理／28项审计。2项应用例。作者反审，无独立 agent 验收或经验验证。"
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean",
+      "role": "proof",
+      "sha256": "363af50ef3fbac55322d7820c75728bcf30edc8bc785ef95d2c1f454e4553678"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "role": "proof",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-reversibility-verification.json",
+      "role": "receipt",
+      "sha256": "a034c0963319a4992e736b36242ac48e8db54df04d05befe7e7fa1d1f8b6e352"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "a92df67f30def194dbfa22a00f2ed87b65bdfe9f156f226ecc0a6fd7369a9c01"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
+      "role": "provenance",
+      "sha256": "a08597b97e1763ffd369b5d3eec8588b1d174adf793e3e44d2f88b5bd6a28729"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "role": "proof",
+      "sha256": "94bb18753807b3dd2c6d83c5d2e38e9b1a60d6f23a1b1fa7261c55e8d0e5f53c",
+      "declarations": [
+        "Becoming.keeps_reach_iff_returns",
+        "Becoming.same_reach_iff_returns",
+        "Becoming.not_returns_iff_loses"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Irreversibility.lean",
+      "role": "proof",
+      "sha256": "ec9e9c251f39ae0e1dbdcaf7079c575578e2f919311afbd608a05eff60fe2fea",
+      "declarations": [
+        "Becoming.Irreversibility.deadEnd_no_return",
+        "Becoming.Irreversibility.same_change_different_return",
+        "Becoming.Irreversibility.constant_reading_hides_loss"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
+      "declarations": [
+        "Becoming.keeps_possible_iff_keeps_reach",
+        "Becoming.same_endpoint_possibilities_iff_return_by_core",
+        "Becoming.irreversible_iff_endpoint_loss_by_core"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "role": "receipt",
+      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
+      "role": "receipt",
+      "sha256": "d87f0ffbdb0bafc510a5b95de2dd83714570dfc1ed7f1a6261578f8cb9125a79",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-reversibility-verification.json",
+      "sha256_pointer": "/source_sha256/BecomingReversibility",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Irreversibility.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Irreversibility",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Labelled",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "en": "Specify actual target-relative restoration in an existing formation/reconstruction mechanism, preserving support and history; do not reconstruct completed path-composition results.",
+    "zh": "在已有形成／重构机制中落实针对实际目标的恢复，保留支持与历史；不重建已完成的路径组合成果。"
+  },
+  "history": [
+    {
+      "en": "9 October 2026: checked structural connection and author counterreview registered. Helpers and repeated applications are not counted as independent foundational results.",
+      "zh": "2026年10月9日：登记经检查的结构连接及作者反审；辅助声明与重复应用不计作独立基础成果。"
+    },
+    {
+      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心定律的实例。核心（Becoming.Recurrence）对每一过程无前提地证明：自 s 可达的每一配置自 t 仍可达，恰当 t 可回到 s（keeps_reach_iff_returns）；沿自 s 至 t 的路径，两者可达的配置相同，恰当此路径可撤回（same_reach_iff_returns）；无回路即失去一可能，s 本身即见证（not_returns_iff_loses）。BecomingReversibility 的可达即核心的可达，一可能即处于某可达配置（keeps_possible_iff_keeps_reach），所以 same_endpoint_possibilities_iff_return 与 irreversible_iff_endpoint_loss 即这些定律（same_endpoint_possibilities_iff_return_by_core、irreversible_iff_endpoint_loss_by_core），公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 BecomingReversibility，脊柱运行将其作为继承模块编译。",
+      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of core laws. With no premise the core (Becoming.Recurrence) proves, for every process, that every configuration reachable from s stays reachable from t exactly when t leads back to s (keeps_reach_iff_returns), that along a path from s to t the reachable configurations are the same exactly when the path can be undone (same_reach_iff_returns), and that no way back is a lost possibility with s itself as witness (not_returns_iff_loses). BecomingReversibility's reachability is the core's and a possibility is being at some reachable configuration (keeps_possible_iff_keeps_reach), so same_endpoint_possibilities_iff_return and irreversible_iff_endpoint_loss are these laws (same_endpoint_possibilities_iff_return_by_core, irreversible_iff_endpoint_loss_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports BecomingReversibility, which the spine run compiles as an inherited module."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Recurrence.lean（整合 I3b：新增共同实现的界（WithinMoves.after_course、lost_together_not_returns）；原有陈述不变）；Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Recurrence.lean (integration I3b: bounds on realizing a bundle together added (WithinMoves.after_course, lost_together_not_returns); earlier statements unchanged); Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F2 (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): every theorem of BecomingReversibility.lean is stated in the core (port-f2.md, all graded same or step). The canonical source is now Recurrence.lean; Irreversibility.lean states the rest (deadEnd_no_return, same_change_different_return, constant_reading_hides_loss). BecomingReversibility.lean keeps its path and bytes and its old receipt; its retirement from the run is the sweep's (F3). The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: keeps_reach_iff_returns, same_reach_iff_returns, not_returns_iff_loses from Recurrence.lean to Labelled.lean. The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Labelled.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Labelled.lean, Law.process moved to Recurrence.lean; Frame.world built by World.of; header. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Labelled.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Labelled.lean，Law.process 移到 Recurrence.lean；Frame.world 由 World.of 构造；开头说明。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Labelled.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Labelled.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Labelled.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Labelled.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
+    }
+  ]
+}

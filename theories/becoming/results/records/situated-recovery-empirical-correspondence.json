@@ -120,15 +120,12 @@
       "en": "2026-10-08: followed Ren’s direction to use public data, extending the six-study synthesis with actual measurement correspondence and forecast evaluation while retaining small-sample uncertainty and adverse results."
     },
     {
-      "zh": "2026-10-09：已读并整合三个共享来源中新增的24人更新研究；16人恢复主张、原分析及原科学回执不变，新增主张另列，不重复计数。",
-      "en": "2026-10-09: read and reconciled the 24-person updating additions in three shared sources. The 16-person recovery claim, analysis and scientific receipt remain unchanged; the distinct updating claim is recorded separately."
-    },
-    {
       "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句拆为 4 项分类“未表明”；1 行“已接通”链接研究中公开数据分析的整合。主张、前提、状态、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/situated-recovery-empirical-correspondence.md)；迁移前的完整记录为 text_versions[0]。",
       "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the study's integration of the public-data analysis. No claim, premise, status, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/situated-recovery-empirical-correspondence.md); the exact earlier record is text_versions[0]."
     },
     {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in JOINT-RISK-REVISION-INTEGRATION.md, README.md, SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+      "en": "2026-10-20: 2 bookkeeping notes condensed from 2026-10-09 to 17 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/4cd9e2cf769925bc/situated-recovery-empirical-correspondence.json and in git.",
+      "zh": "2026-10-20：2 条记账性说明合并（2026-10-09 至 17 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/4cd9e2cf769925bc/situated-recovery-empirical-correspondence.json 和 git 中。"
     }
   ],
   "text_versions": [
@@ -138,6 +135,14 @@
       "note": {
         "zh": "可读性迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the readability migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/4cd9e2cf769925bc/situated-recovery-empirical-correspondence.json",
+      "sha256": "4cd9e2cf769925bc351c96e83a238689e7f5d39971d75abc80c7dc00d644aa6f",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
   ]

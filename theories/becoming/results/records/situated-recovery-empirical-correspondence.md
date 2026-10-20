@@ -71,14 +71,14 @@ Aliases: —
 ### History
 
 - 2026-10-08: followed Ren’s direction to use public data, extending the six-study synthesis with actual measurement correspondence and forecast evaluation while retaining small-sample uncertainty and adverse results.
-- 2026-10-09: read and reconciled the 24-person updating additions in three shared sources. The 16-person recovery claim, analysis and scientific receipt remain unchanged; the distinct updating claim is recorded separately.
 - 2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the study's integration of the public-data analysis. No claim, premise, status, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/situated-recovery-empirical-correspondence.md); the exact earlier record is text_versions[0].
-- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](situated-recovery-empirical-correspondence.json).
+- 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](situated-recovery-empirical-correspondence.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text
 
 - [situated-recovery-empirical-correspondence.json](../../../../_process/architecture/history/5243779093eba69b/situated-recovery-empirical-correspondence.json) (sha256 `5243779093eba69b…`): Exact record bytes before the readability migration (schema 1).
+- [situated-recovery-empirical-correspondence.json](../../../../_process/architecture/history/4cd9e2cf769925bc/situated-recovery-empirical-correspondence.json) (sha256 `4cd9e2cf769925bc…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

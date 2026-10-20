@@ -156,15 +156,12 @@
       "en": "2026-10-09: reviewed the same study’s historical-applicability composition and counterreview. This result’s prior claim, sources and scientific checks remain unchanged; the continuation now targets empirical identification of source–time retention and persistence assumptions."
     },
     {
-      "zh": "2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。",
-      "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
-    },
-    {
       "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句第一句拆为 3 项分类“未表明”，“非精确复现”移入证据，“不更改既有条件定理”由依赖说明承担；上方五条沿革所述已接通连接各成 1 行带锚点的“已接通”；下一步第三句移入第五行“已接通”。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/naming-attention-coverage.md)；迁移前的完整记录为 text_versions[0]。",
       "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence was split into 3 typed does-not-show items, “not an exact replication” moved to the evidence, and “does not change existing conditional theorems” is carried by the dependency note; the connections described in the five history entries above each became one anchored progress line; the next step's third sentence moved to the fifth progress line. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/naming-attention-coverage.md); the exact earlier record is text_versions[0]."
     },
     {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ACQUIRED-SEGMENTATION-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+      "en": "2026-10-20: 2 bookkeeping notes condensed from 2026-10-09 to 17 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/f65c811e592b2c47/naming-attention-coverage.json and in git.",
+      "zh": "2026-10-20：2 条记账性说明合并（2026-10-09 至 17 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/f65c811e592b2c47/naming-attention-coverage.json 和 git 中。"
     }
   ],
   "text_versions": [
@@ -174,6 +171,14 @@
       "note": {
         "zh": "可读性迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the readability migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/f65c811e592b2c47/naming-attention-coverage.json",
+      "sha256": "f65c811e592b2c478dd609699f1be240cf6076febd08400c80aa3540a04c5c48",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
   ]

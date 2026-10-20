@@ -264,12 +264,6 @@
       "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item bilingual-16: the Chinese title's 普遍实践权威 (authority) becomes 普遍实践根据 (warrant), matching the English warrant and the Chinese statement's 根据 (AGENTS.md keeps warrant and authority distinct). Earlier text in text_versions."
     },
     {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in UNIFIED-ETHICAL-GROUNDING.md, ZERO-AXIOM-PRACTICAL-JUDGMENT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): ZERO-AXIOM-PRACTICAL-JUDGMENT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
       "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     },
     {
@@ -277,6 +271,10 @@
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. The claim is unchanged."
+    },
+    {
+      "en": "2026-10-20: 2 bookkeeping notes condensed of 17 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/4338855735cfa81a/universal-practical-warrant.json and in git.",
+      "zh": "2026-10-20：2 条记账性说明合并（17 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/4338855735cfa81a/universal-practical-warrant.json 和 git 中。"
     }
   ],
   "text_versions": [
@@ -294,6 +292,14 @@
       "note": {
         "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
         "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/4338855735cfa81a/universal-practical-warrant.json",
+      "sha256": "4338855735cfa81a89d3a283f9460fd01c0b32aa00ae52c6977495c1842afbb7",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
   ]

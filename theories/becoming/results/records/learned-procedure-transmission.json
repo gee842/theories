@@ -431,36 +431,18 @@
       "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
     },
     {
-      "zh": "2026-10-15，整合 I3c（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Copying、Becoming.Stock 与 Becoming.Evolution 的一般律）。外围实例模块 TransmissionCorrespondence：容量即一个共享池所释放的最长谱系（lineage_released_iff、reconstruction_builds_longest_lineage，Copying.lineage_all_iff 的实例）；接触与重构是同一进程的两种步，每步之后材料与支持如前，故任意路径都保存二者（course_conserves，Stock.trace_balance 的实例）；忠实重构不升不降，后继中控制位的总数即各家族之位以其容量加权（faithful_selects，Becoming.price），历史中三个后继有两个带响应的更新方式而两个亲代中只有一个（history_selects）。Price 的形式是恒等式，不是适应度的度量；后继数由各家族实际任务成功所留的支持定出。构造的理想化前提保持不变。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T151904.501987Z）：不提及构造之状态的六条声明（kitWord、attach、countOf_replicate、use_kitWord、Move、total_replicate）公理报告为空，其余只有 Mathlib 的标准公理（propext、Classical.choice、Quot.sound）；所实例化的核心律由核心运行审计（回执 20261015T150956.178111Z）。",
-      "en": "15 October 2026, integration I3c (Ren: “a lot proofs are probably not integrated”): stated on the spine (the general laws of Becoming.Copying, Becoming.Stock and Becoming.Evolution). Periphery instance module TransmissionCorrespondence: the capacity is the longest lineage one shared pool releases (lineage_released_iff, reconstruction_builds_longest_lineage, instances of Copying.lineage_all_iff); exposures and reconstructions are two kinds of step of one process across which material and support stand as before, so every course conserves both (course_conserves, an instance of Stock.trace_balance); faithful reconstruction raises and lowers nothing, so the successors’ total of the procedure bit is the families’ bits weighted by their capacities (faithful_selects, Becoming.price), and in the history two of three successors carry the responsive procedure where one of two parents did (history_selects). Price’s form is an identity, not a measure of fitness; the counts are set by the support each family’s actual task success left. The construction’s idealized premises are unchanged. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T151904.501987Z): the six declarations that mention no state of the construction (kitWord, attach, countOf_replicate, use_kitWord, Move, total_replicate) have empty axiom reports, the rest Mathlib’s standard axioms only (propext, Classical.choice, Quot.sound); the core laws it instantiates are audited by the core run (receipt 20261015T150956.178111Z)."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Copying.lean（整合 I3d：新增池用尽之律（countOf_removeAll、nil_iff_countOf_zero、empties_iff）；头注增一句；原有陈述不变）；Stock.lean（整合 I3d：新增所汲取而不补充的水平（FallsBy、trace_falls、falls_iff、trace_exhausts、zero_of_add_le、exhausted_within、draws_nothing_from_empty）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Copying.lean (integration I3d: the law for emptying the pool added (countOf_removeAll, nil_iff_countOf_zero, empties_iff); the docstring gains a sentence; earlier statements unchanged); Stock.lean (integration I3d: a level drawn on and not replenished added (FallsBy, trace_falls, falls_iff, trace_exhausts, zero_of_add_le, exhausted_within, draws_nothing_from_empty); earlier statements unchanged)."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in COGNITION-LEARNING-AND-EVOLUTION.md, LEARNING-SELECTION-COUNTERREVIEW.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): COGNITION-LEARNING-AND-EVOLUTION.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): COGNITION-LEARNING-AND-EVOLUTION.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
-    },
-    {
-      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Stock.lean). The claim is unchanged.",
-      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Copying.lean, Stock.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Copying.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Copying.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Copying.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Copying.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
-    },
-    {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Copying.lean, Stock.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Copying.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Stock.lean, takes as its final section StockTraces, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Copying.lean、Stock.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Copying.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Stock.lean，以末节收入 StockTraces（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+    },
+    {
+      "en": "2026-10-20: 6 bookkeeping notes condensed from 15 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/3f5342a2bd84d405/learned-procedure-transmission.json and in git.",
+      "zh": "2026-10-20：6 条记账性说明合并（15 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/3f5342a2bd84d405/learned-procedure-transmission.json 和 git 中。"
     }
   ],
   "text_versions": [
@@ -470,6 +452,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/3f5342a2bd84d405/learned-procedure-transmission.json",
+      "sha256": "3f5342a2bd84d405b7d80641d550db71594c5d3ebcc634589dde5a6fd5794499",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
   ]

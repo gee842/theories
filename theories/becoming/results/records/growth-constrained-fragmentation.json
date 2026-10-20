@@ -309,67 +309,21 @@
       "en": "2026-10-09: reviewed the added template-copying section in the same study; original proofs and claims remain, with endpoint correspondence and added copying premises separated."
     },
     {
-      "zh": "2026-10-09：重读并接入同一研究的配准形成段；旧数学主张及原回执不变，修正旧比较段中完美复制前提的指称。",
-      "en": "2026-10-09: reconciles the same study’s registration-formation continuation; prior mathematics and receipts remain unchanged, and the old comparison clarifies that perfect copying was this model’s premise."
-    },
-    {
-      "zh": "2026-10-09：已阅读同一研究新增的材料编辑连接；本记录的旧数学及原回执不变，旧无编辑范围不因新增操作而撤销。",
-      "en": "2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope."
-    },
-    {
-      "zh": "2026-10-15，整合 I3d（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Feedback 的闭包证书，新增，不加前提）。一个区域恰是一个形成在关系下的闭包，当且仅当它含该形成、对关系封闭且在闭包之内（closure_iff_certified），在有限情形可由有限计算核查；含一形成而不含另一形成的封闭区域分开二者的闭包（not_within_of_closed）。外围实例 PreparationCorrespondence：由键相连即在对称读取的键之下的闭包内（connected_iff_within）；含根且对每条余下之键封闭的分量即该闭包（component_is_closure），故 certificate_exact_split 由核心律给出（certificate_exact_split_by_core），证书确认的切割分开两端（cut_separates）；组成相同的两个生长图切割回报不同（returns_differ），由 Readout.no_judge_of_merged，亲代摘要的任何函数都不同时给出二者（no_parent_summary_predictor_by_core）。生长史、采样与局部生产律保持原范围。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T161348.626052Z），只用标准公理：unit、use_unit 与 adjacent 等不提及外围构造的声明公理报告为空，置换的对应用库的 Classical.choice；所实例化的核心律由核心运行审计（回执 20261015T161154.555289Z，公理报告为空）。",
-      "en": "15 October 2026, integration I3d (Ren: “a lot proofs are probably not integrated”): stated on the spine (the new closure certificate of Becoming.Feedback, no premise). A region is a formation’s closure under a relation exactly where it holds the formation, is closed under the relation and lies within the closure (closure_iff_certified), which a finite computation can check in the finite case; a closed region holding one formation and not another separates their closures (not_within_of_closed). Periphery instance PreparationCorrespondence: being connected by the bonds is lying within the closure under the bonds read symmetrically (connected_iff_within); a component holding its root and closed on every remaining bond is that closure (component_is_closure), so certificate_exact_split follows from the core law (certificate_exact_split_by_core), and a certified cut leaves its two ends apart (cut_separates); the two grown graphs of matched composition have different mean cut returns (returns_differ), so by Readout.no_judge_of_merged no function of the parent summary gives both (no_parent_summary_predictor_by_core). Growth histories, sampling and the local production law keep their scope. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T161348.626052Z), standard axioms only: unit, use_unit, adjacent and the other declarations that mention no periphery construction have empty axiom reports, and the permutation correspondence uses the library’s Classical.choice; the core laws it instantiates are audited by the core run (receipt 20261015T161154.555289Z, empty axiom reports)."
-    },
-    {
       "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：一个区域是形成 f 的系统（在共同条件中共同参与的闭包，Flow.WithinSystem），恰当它含 f、在共享条件下封闭且在 f 的系统之内（system_iff_certified）；在共享下封闭、含 f 而不含 g 的区域表明 g 不在 f 的系统中（not_within_system_of_closed）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
       "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: a region is the system of formation f (the closure under taking part in a common condition, Flow.WithinSystem) exactly when it holds f, is closed under sharing a condition and lies within f's system (system_iff_certified); a region closed under sharing that holds f but not g shows g is not in f's system (not_within_system_of_closed). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
-    },
-    {
-      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Feedback.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
-      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Feedback.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
-    },
-    {
-      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
-      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in GROWN-FRAGMENTATION-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     },
     {
       "en": "17 October 2026, wording of the public fields: round narration (本轮) replaced by “new”, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     },
     {
-      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Feedback.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Courses.lean, six theorems now cite their general forms (Lasting.fixed_avoids, Countdown.Advances.completes, Copying.scan_le, CrossSituational.narrows, CrossSituational.reads_every_iff, Readout.no_judge_of_merged), and inspection_trace_scan is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
-    },
-    {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Feedback.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
-    },
-    {
-      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Feedback.lean). The claim is unchanged.",
-      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Courses.lean, Feedback.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
     },
     {
-      "en": "19 October 2026, K1: K1 added to PreparationCorrespondence a section reading Becoming.Cuts (study section 190; Ren, 19 October 2026: \"let's make these limited, non general laws, into general ones\"); the earlier declarations are unchanged. The example theorems are now cases of general laws: every bond of every body grown by division separates its ends when cut (bond_cut_separates, every_grown_bond_separates, by Cuts.attached_link_separates), and after one aggregation a grown bond is bypassed exactly where the aggregated bond crosses it (aggregate_cut_unchanged_iff, by Cuts.joined_cut_unchanged_iff), the reinforced chain being a case (reinforced_cut_unchanged). Instance receipt 20261019T052332.277017Z; the claim and its scope are unchanged.",
-      "zh": "2026年10月19日，K1：PreparationCorrespondence 新增一节读 Becoming.Cuts（研究第 190 节）。示例定理成为一般规律的情形：经分裂生长的每个身体的每条键被切断时两端分开，一次聚合后生长出的键被绕过恰在聚合键跨过它之处，加固链是一例。实例回执 20261019T052332.277017Z；论断与范围不变。"
-    },
-    {
-      "en": "19 October 2026, K2: Cuts.lean gained the laws of growth by attachment on the base (study section 191); the two Cuts declarations this record cites are unchanged, and its binding moves to core receipt 20261019T054535.337999Z. The claim is unchanged.",
-      "zh": "2026年10月19日，K2：Cuts.lean 新增依附式生长在基上的规律（研究第 191 节）；本记录所引的两项 Cuts 声明不变，其绑定移到核心回执 20261019T054535.337999Z。论断不变。"
-    },
-    {
       "en": "19 October 2026, K3 (Ren: \"please finish it\"): Cuts.lean re-pointed after reading the change: Flow.GrownBy.cond_ne now reaches its same-orientation case through Cuts.Attaches.listed_once, so no theorem of Becoming.Cuts stands apart; no statement changed. Core receipt 20261019T055924.801141Z; study section 191 (addendum) and the chapter's sections 8.2 and 9 re-pointed with it. The claim is unchanged.",
       "zh": "2026年10月19日，K3：读过改动后，Cuts.lean 重新指向：Flow.GrownBy.cond_ne 的同向情形改经 Cuts.Attaches.listed_once，Becoming.Cuts 不再有孤立定理；陈述未变。核心回执 20261019T055924.801141Z；研究第 191 节（补记）与本章第 8.2、9 节随之重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Courses.lean, Feedback.lean). The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
-      "en": "19 October 2026, R21 (the nineteenth review's fix list): Cuts.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Cuts.lean, documentation only (no name, statement or proof changed): the bypass stated for a directed link (target within the source's closure). Read before re-pointing. The claim is unchanged.",
-      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Cuts.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Cuts.lean，只改说明（名称、陈述与证明不变）：绕行按有向联系陈述（终点在起点的闭包之内）。重新指向前已读。论断不变。"
     },
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Courses.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Courses.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
@@ -380,12 +334,8 @@
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Courses.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Courses.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     },
     {
-      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Courses.lean, Feedback.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Courses.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Feedback.lean, the conditional theorems moved to BoundedSignificance.lean; comparison_within_reach proved with no condition, statement unchanged. The claim is unchanged.",
-      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Courses.lean、Feedback.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Courses.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Feedback.lean，条件定理移到 BoundedSignificance.lean；comparison_within_reach 不经条件证明，陈述不变。论断不变。"
-    },
-    {
-      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Courses.not_within_system_of_closed (now not_within_of_closed); Courses.system_iff_certified (now closure_iff_certified). Proof bindings (Courses.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Courses.lean, takes as its final sections RetrodictionRuns, CandidateRuns, ReducedRuns, the modules reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
-      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Courses.not_within_system_of_closed（现为 not_within_of_closed）；Courses.system_iff_certified（现为 closure_iff_certified）。证明绑定（Courses.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Courses.lean，以末节收入 RetrodictionRuns、CandidateRuns、ReducedRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+      "en": "2026-10-20: 14 bookkeeping notes condensed from 2026-10-09 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/9bf8cef640229343/growth-constrained-fragmentation.json and in git.",
+      "zh": "2026-10-20：14 条记账性说明合并（2026-10-09 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/9bf8cef640229343/growth-constrained-fragmentation.json 和 git 中。"
     }
   ]
 }

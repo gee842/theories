@@ -1,0 +1,888 @@
+{
+  "schema_version": 2,
+  "id": "a-history-read-off-its-finite-stretches",
+  "title": {
+    "zh": "从有限片段读出的历史",
+    "en": "A history read off its finite stretches"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T13:38:06+00:00",
+  "statement": {
+    "en": "For every process, its histories are the ideals of the order of its finite stretches. Adhering is the least closed class; refutable and closed classes pass into each other up to a step that, asked of every process, is exactly double-negation elimination.",
+    "zh": "对每个过程，其历史是其有限片段之序的理想。附着是最小的闭类；可否证类与闭类互相转换，差一步，而对每个过程要求时这一步恰是双重否定消去。"
+  },
+  "laws": [
+    {
+      "en": "An ideal of a preorder of stretches is a nonempty set of stretches, closed downward, in which any two are extended by a third; ideals are ordered by inclusion, and two holding the same stretches are the same history (antisymmetry is not used). A principal ideal is a finite history.",
+      "zh": "片段预序的理想是非空、向下封闭、任两个片段都被第三个延伸的片段集；理想按包含排序，所含片段相同的两个是同一历史（不用反对称性）。主理想是有限历史。",
+      "declarations": [
+        "Becoming.Ideals.Preorder",
+        "Becoming.Ideals.Ideal",
+        "Becoming.Ideals.Ideal.LE",
+        "Becoming.Ideals.Ideal.Same",
+        "Becoming.Ideals.idealOrder",
+        "Becoming.Ideals.principal",
+        "Becoming.Ideals.principal_le_iff"
+      ]
+    },
+    {
+      "en": "For a process, a stretch is a run with a horizon, one extending another where its horizon is later and the two runs agree up to the earlier. A run is the ideal of the stretches it passes through; two runs' ideals lie one below the other exactly where the runs agree at every horizon, and no run's ideal is a finite history.",
+      "zh": "对一个过程，片段是一个运行连同一界；一个片段延伸另一个，当其界更晚且两运行到较早之界一致。运行是它所经片段的理想；两运行的理想一个在另一个之下，恰在两运行于每一界都一致之处；没有运行的理想是有限历史。",
+      "declarations": [
+        "Becoming.stretchOrder",
+        "Becoming.Run.stretches",
+        "Becoming.Run.stretches_le_iff",
+        "Becoming.Run.stretches_not_principal"
+      ]
+    },
+    {
+      "en": "A reading of points is refutable where every point outside it has a stretch that no point of the reading passes through, and a point adheres to it where each of its stretches is a stretch of a point of the reading.",
+      "zh": "点的读法可否证：其外每个点都有一个片段，读法内没有点经过它；点附着于读法：它的每个片段都是读法内某点的片段。",
+      "declarations": [
+        "Becoming.Ideals.RefutableBy",
+        "Becoming.Ideals.AdheresBy"
+      ]
+    },
+    {
+      "en": "A refutable reading holds, up to double negation, at every adhering point; a refutable superset so holds at every point adhering to the subset; where the reading is stable adhering is holding; and a point adhering while outside shows the reading is not refutable.",
+      "zh": "可否证的读法在每个附着点上于双重否定下成立；可否证的超集在附着于子集的点上亦然；读法稳定时附着即成立；附着而在外的点显示读法不可否证。",
+      "declarations": [
+        "Becoming.Ideals.RefutableBy.not_not",
+        "Becoming.Ideals.RefutableBy.adheres_least",
+        "Becoming.Ideals.RefutableBy.adheres_iff",
+        "Becoming.Ideals.not_refutableBy_of_adheres",
+        "Becoming.Ideals.refutableBy_adheres_iff"
+      ]
+    },
+    {
+      "en": "For runs these are refutability and adherence at the runs' ideals, so the laws of Becoming.Horizon on what a finite history refutes follow from them as their case of runs.",
+      "zh": "对运行，这就是在运行的理想上的可否证与附着，所以 Becoming.Horizon 关于有限历史所否证者的律作为其运行情形由此推出。",
+      "declarations": [
+        "Becoming.refutable_iff_refutableBy",
+        "Becoming.adheres_iff_adheresBy",
+        "Becoming.Refutable.not_not",
+        "Becoming.Refutable.adheres_least",
+        "Becoming.Refutable.adheres_iff",
+        "Becoming.not_refutable_of_adheres",
+        "Becoming.refutable_adheres_iff"
+      ]
+    },
+    {
+      "en": "A class of ideals is closed where it is closed downward and under directed unions. It is closed exactly where it is the class of the ideals within a lower set of stretches; that set is unique and is the class's content, the stretches of its ideals.",
+      "zh": "理想的类是闭的：它向下封闭且对有向并封闭。它闭恰在它是落在某个片段下集之内的理想之类之处；该集唯一，就是类的内容，即其理想的片段。",
+      "declarations": [
+        "Becoming.Ideals.ScottClosed",
+        "Becoming.Ideals.Lower",
+        "Becoming.Ideals.Within",
+        "Becoming.Ideals.Content",
+        "Becoming.Ideals.closed_iff_within_principal",
+        "Becoming.Ideals.closed_iff_lower",
+        "Becoming.Ideals.lower_unique",
+        "Becoming.Ideals.lower_iff_content",
+        "Becoming.Ideals.content_lower"
+      ]
+    },
+    {
+      "en": "On runs, a reading holding every run adhering to it is the reading of the runs whose stretches lie in the content of its runs: it is made of tests, one for each stretch, read as propositions. A run lies in a closed class exactly where each of its stretches is a stretch of a history of the class.",
+      "zh": "在运行上，在每个附着于它的运行上成立的读法，是片段都落在其运行之内容中的运行的读法：它由测试构成，每个片段一个，读作命题。运行在闭类中，恰在它的每个片段都是类中某历史的片段之处。",
+      "declarations": [
+        "Becoming.closed_iff_within_lower",
+        "Becoming.Stretches.closed_runs"
+      ]
+    },
+    {
+      "en": "The hull of a class, the ideals each of whose stretches is a stretch of an ideal of the class, is its least closed superclass: closed, holding the class, unique, adding no stretch, and joint, any two stretches of an ideal of the hull being extended by one stretch of one ideal of the class.",
+      "zh": "类的包，即每个片段都是类中某理想之片段的理想，是它最小的闭超类：闭、含该类、唯一、不添片段，且联合：包中理想的任两个片段被类中某一理想的某一片段延伸。",
+      "declarations": [
+        "Becoming.Ideals.Hull",
+        "Becoming.Ideals.AdheresBy.of",
+        "Becoming.Ideals.hull_closed",
+        "Becoming.Ideals.hull_least",
+        "Becoming.Ideals.hull_content",
+        "Becoming.Ideals.hull_unique",
+        "Becoming.Ideals.hull_joint"
+      ]
+    },
+    {
+      "en": "On runs, a run adheres to a reading exactly where its ideal lies in the hull of the reading's runs, that is, in every closed class of histories holding them, with no double negation.",
+      "zh": "在运行上，运行附着于读法，恰在它的理想落在读法之运行的包中之处，即落在每个含这些运行的历史闭类中，没有双重否定。",
+      "declarations": [
+        "Becoming.runClass",
+        "Becoming.adheres_iff_hull",
+        "Becoming.Stretches.adheres_iff_closed",
+        "Becoming.Stretches.adherence_unique",
+        "Becoming.Stretches.adheres_content",
+        "Becoming.Stretches.adheres_joint"
+      ]
+    },
+    {
+      "en": "A refutable class is closed up to double negation, and a closed class is refutable where a history known not to lie within it shows a stretch outside. Asked of every order and class, each step is exactly double-negation elimination.",
+      "zh": "可否证的类于双重否定下是闭的；闭类可否证，在已知不在其内的历史显示一个外面的片段之处。对每个序与类要求时，每一步恰是双重否定消去。",
+      "declarations": [
+        "Becoming.Ideals.Refutable",
+        "Becoming.Ideals.Refutable.closed",
+        "Becoming.Ideals.ScottClosed.refutable_iff",
+        "Becoming.Ideals.within_refutable_iff",
+        "Becoming.Ideals.refutable_closed_iff",
+        "Becoming.Ideals.closed_refutable_iff"
+      ]
+    },
+    {
+      "en": "Asked of every process, each step is again exactly double-negation elimination, with witnesses on the process of (): not being refuted by any finite stretch is not belonging, and a history known not to lie within a closed class does not thereby show the stretch at which it leaves.",
+      "zh": "对每个过程要求时，每一步也恰是双重否定消去，见证在 () 的过程上：未被任何有限片段否证并不就是属于；已知不在闭类之内的历史并不因此显示它离开的片段。",
+      "declarations": [
+        "Becoming.Stretches.unitCut",
+        "Becoming.Stretches.refutable_closed_iff",
+        "Becoming.Stretches.closed_refutable_iff"
+      ]
+    },
+    {
+      "en": "A refutable class of histories is refutable at runs, and asked of every process a refutable reading holds at every run adhering to it exactly under double-negation elimination.",
+      "zh": "可否证的历史类在运行上可否证；对每个过程要求时，可否证读法在每个附着运行上成立恰是双重否定消去。",
+      "declarations": [
+        "Becoming.Stretches.refutable_of_class",
+        "Becoming.Stretches.within_refutable",
+        "Becoming.refutable_holds_iff"
+      ]
+    },
+    {
+      "en": "The ideals avoiding a set of stretches form a closed class, the only closed class holding exactly the finite histories that avoid the set, and refutable where every ideal failing to avoid it holds a stretch of it; on runs, a run adhering to the runs that avoid the set avoids it. These are the safety classes.",
+      "zh": "避开一个片段集的理想构成闭类，是恰含避开该集之有限历史的唯一闭类；在每个不避开它的理想都含其一个片段之处可否证；在运行上，附着于避开该集之运行的运行也避开它。这些是安全性的类。",
+      "declarations": [
+        "Becoming.Ideals.Avoids",
+        "Becoming.Ideals.avoids_iff_within",
+        "Becoming.Ideals.avoids_closed",
+        "Becoming.Ideals.avoids_unique",
+        "Becoming.Ideals.avoids_refutable_of_found",
+        "Becoming.Stretches.avoids_adheres",
+        "Becoming.Stretches.avoids_runs",
+        "Becoming.Stretches.avoids_refutable"
+      ]
+    },
+    {
+      "en": "A lower set of stretches, with the order it inherits, has as its ideals exactly the ideals within it, by lifting and restricting, the order kept; on runs, the histories of the set's order are the process's histories within it, and two runs within it are ordered there exactly where they agree at every horizon.",
+      "zh": "片段的下集连同所继承的序，其理想恰是落在其内的理想，经提升与限制，序不变；在运行上，该集之序的历史就是过程落在其内的历史，落在其内的两个运行在那里有序，恰在它们于每一界一致之处。",
+      "declarations": [
+        "Becoming.Ideals.Preorder.restrict",
+        "Becoming.Ideals.Ideal.restrict",
+        "Becoming.Ideals.Ideal.lift",
+        "Becoming.Ideals.lift_within",
+        "Becoming.Ideals.lift_restrict",
+        "Becoming.Ideals.restrict_lift",
+        "Becoming.Ideals.lift_le_iff",
+        "Becoming.Stretches.inherited_histories",
+        "Becoming.Stretches.within_order_iff"
+      ]
+    },
+    {
+      "en": "The ideals are directed-complete, and the compact ones are exactly the finite histories. A monotone map of stretches into a directed-complete order extends to a continuous map of ideals, unique up to the target's equivalence; a compact basis that generates fixes its completion up to an equivalence the basis fixes; and the readings \"lies above this stretch\" tell ideals apart.",
+      "zh": "理想是有向完备的；紧的恰是有限历史。片段到有向完备序的单调映射延拓为理想的连续映射，在目标的等价下唯一；生成的紧基在基所固定的等价下固定其完备化；读法“在此片段之上”区分理想。",
+      "declarations": [
+        "Becoming.Ideals.DirectedComplete",
+        "Becoming.Ideals.idealComplete",
+        "Becoming.Ideals.Compact",
+        "Becoming.Ideals.compact_iff_principal",
+        "Becoming.Ideals.Monotone",
+        "Becoming.Ideals.Continuous",
+        "Becoming.Ideals.extend",
+        "Becoming.Ideals.unique_continuous_extension",
+        "Becoming.Ideals.CompactBasis",
+        "Becoming.Ideals.OrderEquivalence",
+        "Becoming.Ideals.principal_basis",
+        "Becoming.Ideals.unique_basis_representation",
+        "Becoming.Ideals.above",
+        "Becoming.Ideals.extend_above_iff",
+        "Becoming.Ideals.above_readings_separate"
+      ]
+    },
+    {
+      "en": "On runs: no run is compact; a continuous reading of the histories is fixed at every run by its values on finite histories; finite stretches tell runs apart; the finite histories are a compact basis, and the histories are the completion of the stretches.",
+      "zh": "在运行上：没有运行是紧的；历史的连续读法在每个运行上由其在有限历史上的值固定；有限片段区分运行；有限历史是紧基；历史是片段的完备化。",
+      "declarations": [
+        "Becoming.Stretches.run_not_compact",
+        "Becoming.Stretches.run_reading_unique",
+        "Becoming.Stretches.runs_told_apart",
+        "Becoming.Stretches.finite_basis",
+        "Becoming.Stretches.histories_representation"
+      ]
+    },
+    {
+      "en": "A history settles where one of its stretches reaches the latest horizon among them, and goes on where it has stretches beyond every horizon. One that settles is a finite history; one that goes on, with a stretch beyond each horizon picked, is the history of the run read off the picks.",
+      "zh": "历史止定：它的某个片段达到其中最晚之界；历史继续：它有超出每一界的片段。止定的是有限历史；继续的，挑出超出每一界的片段，就是由所挑者读出之运行的历史。",
+      "declarations": [
+        "Becoming.Stretches.HasLatest",
+        "Becoming.Stretches.GoesOn",
+        "Becoming.Stretches.hasLatest_principal",
+        "Becoming.Stretches.pickedRun",
+        "Becoming.Stretches.goesOn_run"
+      ]
+    },
+    {
+      "en": "So, for every process, a history that settles, or goes on with its stretches picked, is a finite history or a run; a finite history settles and a run's history goes on.",
+      "zh": "所以对每个过程，止定的、或挑出片段而继续的历史，是有限历史或运行；有限历史止定，运行的历史继续。",
+      "declarations": [
+        "Becoming.Stretches.classification",
+        "Becoming.Stretches.principal_hasLatest",
+        "Becoming.Stretches.run_goesOn"
+      ]
+    },
+    {
+      "en": "Telling, of every history of the process of () cut at a Boolean sequence's first true, whether it settles or goes on is exactly the limited principle of omniscience: telling whether a history ends is deciding whether it changes again.",
+      "zh": "对 () 的过程中在布尔序列第一个真处截断的每个历史，判定它止定还是继续，恰是有限全知原则：判定历史是否终结，就是判定它是否还会变化。",
+      "declarations": [
+        "Becoming.Stretches.cut",
+        "Becoming.Stretches.cut_decided_iff_lpo",
+        "Becoming.HistoryIdeals.cut",
+        "Becoming.HistoryIdeals.cut_decided_iff_lpo"
+      ]
+    },
+    {
+      "en": "Words are ordered by prefix; a sequence is the ideal of its initial words. A history, finite or infinite, has an ideal below another's exactly where it is a prefix of it, and the same words make the same history; an ideal of words that settles, or goes on with its words picked, is a history. For the process of all sequences the runs' histories are these, in order, sameness and prefix-closed languages.",
+      "zh": "词按前缀排序；序列是其初始词的理想。有限或无限的历史，其理想在另一个之下，恰在它是另一个的前缀之处；同样的词构成同一历史；止定的、或挑出词而继续的词理想是历史。对所有序列构成的过程，运行的历史就是这些，在序、相同与前缀封闭语言上皆然。",
+      "declarations": [
+        "Becoming.HistoryIdeals.prefixOrder",
+        "Becoming.HistoryIdeals.traceIdeal",
+        "Becoming.HistoryIdeals.History",
+        "Becoming.HistoryIdeals.historyIdeal",
+        "Becoming.HistoryIdeals.history_le_iff",
+        "Becoming.HistoryIdeals.historyIdeal_same_iff",
+        "Becoming.HistoryIdeals.classification",
+        "Becoming.HistoryIdeals.sequence_stretch_iff",
+        "Becoming.Stretches.sequences_le_iff",
+        "Becoming.Stretches.sequences_same_iff",
+        "Becoming.Stretches.sequences_within_iff"
+      ]
+    },
+    {
+      "en": "A prefix-closed language is a lower set of words, so its histories form a closed class; the finite histories with the infinite histories of a property are not refutable where some sequence lies outside it, recurrence among them.",
+      "zh": "前缀封闭语言是词的下集，所以其历史构成闭类；有限历史连同某性质的无限历史，在有序列落在该性质之外处不可否证，复现是其一例。",
+      "declarations": [
+        "Becoming.HistoryIdeals.prefixClosed_iff_lower",
+        "Becoming.HistoryIdeals.history_within_iff",
+        "Becoming.HistoryIdeals.FiniteOr",
+        "Becoming.HistoryIdeals.finiteOr_not_refutable",
+        "Becoming.HistoryIdeals.finiteOr_recurs_not_refutable"
+      ]
+    },
+    {
+      "en": "Instance (periphery, own checker): the completion package's IdealWarrant, CompletionRole and HistoryIdeals read as instances, a poset's order the core's order of stretches and its ideals, classes, content and hull the core's.",
+      "zh": "实例（外围，自有检查器）：完成包的 IdealWarrant、CompletionRole 与 HistoryIdeals 读作实例，偏序的序是核心的片段序，其理想、类、内容与包是核心的。",
+      "declarations": [
+        "Becoming.IdealsCorrespondence.toCore",
+        "Becoming.IdealsCorrespondence.finiteRefutable_iff_refutable",
+        "Becoming.IdealsCorrespondence.scottClosed_iff_closed",
+        "Becoming.IdealsCorrespondence.scottHull_iff_hull"
+      ]
+    },
+    {
+      "en": "W1's Scott closure as a lower basis, W2's least hull and W2a's prohibitions as an avoiding basis follow with empty axiom reports; W1's equivalence of finite refutability and Scott closure, A2, A2a, A3 and A4 follow with the classical and extensionality steps each needs named.",
+      "zh": "W1 中 Scott 闭即下基、W2 的最小包与 W2a 中禁止即避开基由此推出，公理报告为空；W1 中有限可否证与 Scott 闭的等价、A2、A2a、A3 与 A4，连同各自所需的经典与外延步骤而推出。",
+      "declarations": [
+        "Becoming.IdealsCorrespondence.scottClosed_iff_lower_basis_by_core",
+        "Becoming.IdealsCorrespondence.hull_least_by_core",
+        "Becoming.IdealsCorrespondence.respects_iff_admits_avoiding_by_core",
+        "Becoming.IdealsCorrespondence.finiteRefutable_iff_scottClosed_by_core",
+        "Becoming.IdealsCorrespondence.unique_continuous_extension_by_core",
+        "Becoming.IdealsCorrespondence.positive_reading_membership_by_core",
+        "Becoming.IdealsCorrespondence.unique_basis_representation_by_core",
+        "Becoming.IdealsCorrespondence.ideal_classification_by_core",
+        "Becoming.IdealsCorrespondence.history_order_iff_by_core"
+      ]
+    },
+    {
+      "en": "The word half on the courses a process can take: an ideal of courses feasible from a configuration that settles, or goes on with a course of each length picked, is a history of the process from there (one feasible course, or a sequence of moves each of whose initial courses is feasible); a feasible course settles; a run's moves go on, each initial course the trace of its first steps.",
+      "zh": "词的一半读在过程能走的进程上：从某构形可行之进程的理想，止定、或取定每个长度的进程而继续，即过程从那里的历史（一个可行进程，或每个初始进程都可行的移动序列）；可行进程止定；运行的移动继续，每个初始进程都是其最初各步的踪迹。",
+      "declarations": [
+        "Becoming.HistoryIdealsTraces.HistoryOf",
+        "Becoming.HistoryIdealsTraces.classification",
+        "Becoming.HistoryIdealsTraces.course_settles",
+        "Becoming.HistoryIdealsTraces.run_initial_trace",
+        "Becoming.HistoryIdealsTraces.run_goesOn"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. The order is any preorder (antisymmetry is not used, so the same history is two-way inclusion); the process and the readings are arbitrary. The classification takes the decision of settling and the picked stretches as data.",
+      "zh": "不加公理。序是任意预序（不用反对称性，所以同一历史是双向包含）；过程与读法任意。分类把止定的判定与所挑片段作为数据。"
+    },
+    {
+      "en": "Double-negation elimination is the hypothesis of one direction of refutable_closed_iff, closed_refutable_iff and refutable_holds_iff, and the limited principle of omniscience of one direction of cut_decided_iff_lpo. The instance module uses Lean's standard axioms where its declarations name them.",
+      "zh": "双重否定消去是 refutable_closed_iff、closed_refutable_iff 与 refutable_holds_iff 一个方向的假设，有限全知原则是 cut_decided_iff_lpo 一个方向的假设。实例模块在其声明注明处用 Lean 的标准公理。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Which readings of an actual unfolding are refutable or closed: that depends on the process they are read on; the laws say what each gives.",
+      "zh": "实际展开的哪些读法可否证或闭：这取决于读它们的过程；本律说各自给出什么。",
+      "kind": "scope"
+    },
+    {
+      "en": "That every refutable class is closed, or every closed class refutable, without a decision: asked of every process each is exactly double-negation elimination.",
+      "zh": "不经判定，每个可否证类都闭、或每个闭类都可否证：对每个过程要求时，每一个恰是双重否定消去。",
+      "kind": "non-implication",
+      "witness": "Becoming.Stretches.refutable_closed_iff"
+    },
+    {
+      "en": "That every history settles or goes on: asked of the cut histories of the process of () it is exactly the limited principle of omniscience.",
+      "zh": "每个历史止定或继续：对 () 的过程的截断历史要求时，恰是有限全知原则。",
+      "kind": "non-implication",
+      "witness": "Becoming.Stretches.cut_decided_iff_lpo"
+    },
+    {
+      "en": "Boolean tests from the propositional tests a closed reading is made of: that needs each stretch's test decided (compare refutable_passes_iff_markov).",
+      "zh": "由闭读法所含的命题测试得到布尔测试：这需要判定每个片段的测试（参见 refutable_passes_iff_markov）。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
+      "detail": {
+        "en": "On the process of (), the histories passing through the stretch at horizon 1, or all where a proposition holds, are refutable once it is not refuted, and closed only if it holds (refutable_closed_iff); the histories within the stretches at horizon 0 are closed, and the history reaching horizon 1 where the proposition holds shows no refuting stretch unless it holds (unitCut, closed_refutable_iff). The finite histories with the infinite histories of a property are not refutable (finiteOr_not_refutable).",
+        "zh": "在 () 的过程上，经过界 1 处片段的历史，或命题成立时的所有历史，在命题未被否证时可否证，但只有命题成立时才闭（refutable_closed_iff）；落在界 0 片段之内的历史是闭的，而命题成立时到达界 1 的历史，除非命题成立，不显示否证片段（unitCut、closed_refutable_iff）。有限历史连同某性质的无限历史不可否证（finiteOr_not_refutable）。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdealsTraces.lean",
+      "detail": {
+        "en": "A history of feasible courses need not be a run's moves: from no configuration the countdown goes to any count and then counts down, so every course of ()s is feasible from there, and no run starts there (history_without_run).",
+        "zh": "可行进程的历史不必是某运行的移动：倒数过程从无构形可去任何计数再逐一倒数，故从那里每个由 () 组成的进程都可行，却没有运行从那里开始（history_without_run）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise-core-axiom-free",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T020248.454200Z): Becoming.Ideals has 99 theorems and Becoming.HistoryIdeals 80, every declaration with an empty axiom report; the checker verifies core purity. The periphery instance IdealsCorrespondence is checked by its own checker (Lean 4.30.0-rc2, receipt 20261019T020352.033083Z): 92 theorems, 40 of its 103 declarations with empty axiom reports and the rest with standard axioms only; the four package modules match the completion package receipt. Author self-review in study section 189; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T020248.454200Z）：Becoming.Ideals 99 项定理、Becoming.HistoryIdeals 80 项，公理报告皆空。外围实例 IdealsCorrespondence 由其检查器实查（Lean 4.30.0-rc2，回执 20261019T020352.033083Z）：92 项定理，103 个声明中 40 个公理报告为空，其余只用标准公理；包模块与完成包回执一致。作者自审见研究第 189 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "Readings verifiable or refutable in the limit on the order of stretches; an independent review.",
+    "zh": "片段之序上极限中可证实或可否证的读法；独立审查。"
+  },
+  "correspondence": {
+    "en": "Decision D45 (4) joined IdealWarrant with CompletionRole and HistoryIdeals as one core family under structural names (board item A4-L). Ren, 19 October 2026: “integrate all, the theory is a whole, not stitched pieces, go ahead” (provenance, not warrant); his “(a)” of 16 October had kept IdealWarrant outside the spine (study section 153). The ideals of the order of finite stretches are the ideal completion of domain theory (Abramsky and Jung 1994); on runs the closed classes are the safety properties of Alpern and Schneider (1985), and refutation from finite data is that of Kelly (1996), as what-a-finite-history-refutes notes. Classically finite refutability and Scott closure coincide (IdealWarrant's W1); constructively each direction is a step that, asked of every order and class, is exactly double-negation elimination. Readings (the AI's): not being refuted by any finite stretch is not belonging; a history known not to lie within a closed class does not thereby show the stretch at which it leaves; telling whether a history ends is deciding whether it changes again.",
+    "zh": "决定 D45 (4) 把 IdealWarrant 与 CompletionRole、HistoryIdeals 合为结构命名的一个核心族（工作板 A4-L）。Ren，2026年10月19日：“integrate all, the theory is a whole, not stitched pieces, go ahead”（来历，不是根据）；他10月16日的“(a)”曾把 IdealWarrant 留在脊柱外（研究第153节）。有限片段之序的理想就是域论的理想完备化（Abramsky 与 Jung 1994）；在运行上，闭类是 Alpern 与 Schneider（1985）的安全性质，由有限数据否证是 Kelly（1996）的否证，如 what-a-finite-history-refutes 所注。经典地，有限可否证与 Scott 闭一致（IdealWarrant 的 W1）；构造地，每个方向差一步，对每个序与类要求时恰是双重否定消去。读法（AI 的）：未被任何有限片段否证并不就是属于；已知不在闭类之内的历史并不因此显示它离开的片段；判定历史是否终结，就是判定它是否还会变化。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ideals.lean",
+  "aliases": [
+    "a history read off its finite stretches",
+    "从有限片段读出的历史",
+    "ideals of finite stretches",
+    "有限片段的理想",
+    "closed classes of histories",
+    "历史的闭类",
+    "Becoming.Stretches.classification",
+    "Becoming.Stretches.refutable_closed_iff",
+    "Becoming.Stretches.cut_decided_iff_lpo",
+    "Becoming.HistoryIdealsTraces.classification",
+    "Becoming.HistoryIdealsTraces.history_without_run"
+  ],
+  "dependencies": [
+    {
+      "id": "what-a-finite-history-refutes",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Becoming.Horizon's Run.AgreeUpTo, Refutable and Adheres: the order of stretches is agreement up to the earlier horizon, and Horizon's laws are the case of runs of the laws of points, which Becoming.Horizon proves them from (R26).",
+        "zh": "复用 Becoming.Horizon 的 Run.AgreeUpTo、Refutable 与 Adheres：片段之序是到较早之界的一致，Horizon 的律是点的律的运行情形，Becoming.Horizon 由之证明（R26）。"
+      },
+      "interface": {
+        "output": {
+          "en": "Agreement up to a horizon, and refutability and adherence of readings of runs.",
+          "zh": "到一界的一致，以及运行读法的可否证与附着。"
+        },
+        "input": {
+          "en": "The order of stretches, and the readings of runs the laws of ideals are read on.",
+          "zh": "片段之序，以及理想之律所读的运行读法。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "becoming-finite-horizon",
+      "detail": {
+        "en": "There no finite prefix decides the whole-run classification in Renewable; here what a finite stretch refutes in every process, as the closed classes of its histories.",
+        "zh": "那里在 Renewable 中没有有限前缀决定整段分类；这里是每个过程中有限片段所否证者，即其历史的闭类。"
+      }
+    },
+    {
+      "id": "what-a-finite-stretch-verifies",
+      "detail": {
+        "en": "What a finite stretch verifies, the open classes dual to the closed classes here, and the split of every reading into its hull and a remainder no stretch refutes.",
+        "zh": "有限片段所证实者，即与此处闭类对偶的开类，以及每个读法分为其包与无片段能否证的余部。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ideals.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Ideals.AdheresBy",
+        "Becoming.Ideals.Avoids",
+        "Becoming.Ideals.ScottClosed",
+        "Becoming.Ideals.ScottClosed.refutable_iff",
+        "Becoming.Ideals.Compact",
+        "Becoming.Ideals.CompactBasis",
+        "Becoming.Ideals.Content",
+        "Becoming.Ideals.Continuous",
+        "Becoming.Ideals.DirectedComplete",
+        "Becoming.Ideals.Hull",
+        "Becoming.Ideals.Ideal",
+        "Becoming.Ideals.Ideal.LE",
+        "Becoming.Ideals.Ideal.Same",
+        "Becoming.Ideals.Ideal.lift",
+        "Becoming.Ideals.Ideal.restrict",
+        "Becoming.Ideals.Lower",
+        "Becoming.Ideals.Monotone",
+        "Becoming.Ideals.OrderEquivalence",
+        "Becoming.Ideals.Preorder",
+        "Becoming.Ideals.Preorder.restrict",
+        "Becoming.Ideals.Refutable",
+        "Becoming.Ideals.Refutable.closed",
+        "Becoming.Ideals.RefutableBy",
+        "Becoming.Ideals.RefutableBy.adheres_iff",
+        "Becoming.Ideals.RefutableBy.adheres_least",
+        "Becoming.Ideals.RefutableBy.not_not",
+        "Becoming.Ideals.Within",
+        "Becoming.Ideals.above",
+        "Becoming.Ideals.above_readings_separate",
+        "Becoming.Ideals.avoids_closed",
+        "Becoming.Ideals.avoids_iff_within",
+        "Becoming.Ideals.avoids_refutable_of_found",
+        "Becoming.Ideals.avoids_unique",
+        "Becoming.Ideals.closed_iff_lower",
+        "Becoming.Ideals.closed_iff_within_principal",
+        "Becoming.Ideals.closed_refutable_iff",
+        "Becoming.Ideals.compact_iff_principal",
+        "Becoming.Ideals.content_lower",
+        "Becoming.Ideals.extend",
+        "Becoming.Ideals.extend_above_iff",
+        "Becoming.Ideals.hull_closed",
+        "Becoming.Ideals.AdheresBy.of",
+        "Becoming.Ideals.hull_content",
+        "Becoming.Ideals.hull_joint",
+        "Becoming.Ideals.hull_least",
+        "Becoming.Ideals.hull_unique",
+        "Becoming.Ideals.idealComplete",
+        "Becoming.Ideals.idealOrder",
+        "Becoming.Ideals.lift_le_iff",
+        "Becoming.Ideals.lift_restrict",
+        "Becoming.Ideals.lift_within",
+        "Becoming.Ideals.lower_iff_content",
+        "Becoming.Ideals.lower_unique",
+        "Becoming.Ideals.not_refutableBy_of_adheres",
+        "Becoming.Ideals.principal",
+        "Becoming.Ideals.principal_basis",
+        "Becoming.Ideals.principal_le_iff",
+        "Becoming.Ideals.refutableBy_adheres_iff",
+        "Becoming.Ideals.refutable_closed_iff",
+        "Becoming.Ideals.restrict_lift",
+        "Becoming.Ideals.unique_basis_representation",
+        "Becoming.Ideals.unique_continuous_extension",
+        "Becoming.Ideals.within_refutable_iff"
+      ],
+      "sha256": "ec046bd626b5cf9424ca668bb7702e173ba92d0567cd6810b24fdbc537ee331e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.HistoryIdeals.FiniteOr",
+        "Becoming.HistoryIdeals.History",
+        "Becoming.HistoryIdeals.classification",
+        "Becoming.HistoryIdeals.cut",
+        "Becoming.HistoryIdeals.cut_decided_iff_lpo",
+        "Becoming.HistoryIdeals.finiteOr_not_refutable",
+        "Becoming.HistoryIdeals.finiteOr_recurs_not_refutable",
+        "Becoming.HistoryIdeals.historyIdeal",
+        "Becoming.HistoryIdeals.historyIdeal_same_iff",
+        "Becoming.HistoryIdeals.history_le_iff",
+        "Becoming.HistoryIdeals.history_within_iff",
+        "Becoming.HistoryIdeals.prefixClosed_iff_lower",
+        "Becoming.HistoryIdeals.prefixOrder",
+        "Becoming.HistoryIdeals.sequence_stretch_iff",
+        "Becoming.HistoryIdeals.traceIdeal",
+        "Becoming.Run.stretches_le_iff",
+        "Becoming.Run.stretches_not_principal",
+        "Becoming.Stretches.GoesOn",
+        "Becoming.Stretches.HasLatest",
+        "Becoming.Stretches.adherence_unique",
+        "Becoming.Stretches.adheres_content",
+        "Becoming.Stretches.adheres_iff_closed",
+        "Becoming.Stretches.adheres_joint",
+        "Becoming.Stretches.avoids_adheres",
+        "Becoming.Stretches.avoids_refutable",
+        "Becoming.Stretches.avoids_runs",
+        "Becoming.Stretches.classification",
+        "Becoming.Stretches.closed_refutable_iff",
+        "Becoming.Stretches.closed_runs",
+        "Becoming.Stretches.cut",
+        "Becoming.Stretches.cut_decided_iff_lpo",
+        "Becoming.Stretches.finite_basis",
+        "Becoming.Stretches.goesOn_run",
+        "Becoming.Stretches.histories_representation",
+        "Becoming.Stretches.inherited_histories",
+        "Becoming.Stretches.pickedRun",
+        "Becoming.Stretches.principal_hasLatest",
+        "Becoming.Stretches.refutable_closed_iff",
+        "Becoming.Stretches.refutable_of_class",
+        "Becoming.Stretches.run_goesOn",
+        "Becoming.Stretches.run_not_compact",
+        "Becoming.Stretches.run_reading_unique",
+        "Becoming.Stretches.runs_told_apart",
+        "Becoming.Stretches.sequences_le_iff",
+        "Becoming.Stretches.sequences_same_iff",
+        "Becoming.Stretches.sequences_within_iff",
+        "Becoming.Stretches.hasLatest_principal",
+        "Becoming.Stretches.unitCut",
+        "Becoming.Stretches.within_order_iff",
+        "Becoming.Stretches.within_refutable",
+        "Becoming.adheres_iff_hull",
+        "Becoming.closed_iff_within_lower",
+        "Becoming.refutable_holds_iff",
+        "Becoming.runClass"
+      ],
+      "sha256": "258e3db3065bef5514d4f9b10d01ef5af5c5911b66246038844d648ec1026206"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Run.AgreeUpTo",
+        "Becoming.Refutable",
+        "Becoming.Adheres",
+        "Becoming.Refutable.not_not",
+        "Becoming.Refutable.adheres_least",
+        "Becoming.Refutable.adheres_iff",
+        "Becoming.not_refutable_of_adheres",
+        "Becoming.refutable_adheres_iff",
+        "Becoming.Adheres.adheres",
+        "Becoming.Sequences.process",
+        "Becoming.Sequences.agree_iff",
+        "Becoming.Markov",
+        "Becoming.refutable_passes_iff_markov",
+        "Becoming.Run.stretches",
+        "Becoming.adheres_iff_adheresBy",
+        "Becoming.refutable_iff_refutableBy",
+        "Becoming.stretchOrder"
+      ],
+      "sha256": "12a357aa3b8ea6aad625f599fabf7dc64a4fc4b0058173747488e916e9f17f0b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryLanguages.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.HistoryLanguages.PrefixClosed"
+      ],
+      "sha256": "3187b29c6d22fc9483fc3ae9fa6beaea3354f178ba07cb1f20dee36860323b53"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.LPO"
+      ],
+      "sha256": "1be380343ae5a2b019fb355cee08c038404c14b9fcb2e1681e6e61b236a3fa00"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.IdealsCorrespondence.finiteRefutable_iff_refutable",
+        "Becoming.IdealsCorrespondence.finiteRefutable_iff_scottClosed_by_core",
+        "Becoming.IdealsCorrespondence.history_order_iff_by_core",
+        "Becoming.IdealsCorrespondence.hull_least_by_core",
+        "Becoming.IdealsCorrespondence.ideal_classification_by_core",
+        "Becoming.IdealsCorrespondence.positive_reading_membership_by_core",
+        "Becoming.IdealsCorrespondence.respects_iff_admits_avoiding_by_core",
+        "Becoming.IdealsCorrespondence.scottClosed_iff_closed",
+        "Becoming.IdealsCorrespondence.scottClosed_iff_lower_basis_by_core",
+        "Becoming.IdealsCorrespondence.scottHull_iff_hull",
+        "Becoming.IdealsCorrespondence.toCore",
+        "Becoming.IdealsCorrespondence.unique_basis_representation_by_core",
+        "Becoming.IdealsCorrespondence.unique_continuous_extension_by_core"
+      ],
+      "sha256": "b61ff6d862a879d5dff476d7a5753870d8d33c092896b7e8eaa079d31363e596"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean",
+      "role": "proof",
+      "sha256": "d303192f92d8a1cd9366c130cc6162965e6bd24c543c3109c378a0fcfe5ebea8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean",
+      "role": "proof",
+      "sha256": "c5277128c5cb553e3169afd21e508ef76fe5476b72b43dde25cf11a202f784a7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean",
+      "role": "proof",
+      "sha256": "4d73bc8bde12b7eb3a5873e32600a6813087c03f82a14d9fa51dc11f49f53389"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T020248.454200Z/verification.json",
+      "role": "receipt",
+      "sha256": "d4fd34cbe96f8968bf6956f42e5fa9c6e282d58e1219516dbf866c4ce5bef8a3"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/ideals-correspondence-checks/20261019T020352.033083Z/verification.json",
+      "role": "receipt",
+      "sha256": "7dd2e7d320bddc7349779d29e2371b29722529cdcd137ea92cb54e82a136b275"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/verification.json",
+      "role": "receipt",
+      "sha256": "2b41c6771f3836ccb598e4c5e9acbc3a4e3a9ef5bf7fcea21dbb74f40bc33be4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-integrate-all.md",
+      "role": "provenance",
+      "sha256": "6ef29dff41581c16218120329ff7b4c074a2d4e280ecb9af4a6b09b38fcc4021"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+      "role": "provenance",
+      "sha256": "e45d2b8dfd02f5f98b48ed87450752a5e61d887f3a11d6186b61f4779de79d27"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdealsTraces.lean",
+      "role": "proof",
+      "sha256": "beaff249304d68b61a2588ee2c7866363b2ae8bb30ed2d0aceaceebbdde8414d",
+      "declarations": [
+        "Becoming.HistoryIdealsTraces.HistoryOf",
+        "Becoming.HistoryIdealsTraces.classification",
+        "Becoming.HistoryIdealsTraces.course_settles",
+        "Becoming.HistoryIdealsTraces.run_initial_trace",
+        "Becoming.HistoryIdealsTraces.run_goesOn",
+        "Becoming.HistoryIdealsTraces.countdown",
+        "Becoming.HistoryIdealsTraces.history_without_run"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json",
+      "role": "receipt",
+      "sha256": "b66b9f4f542992d9b2d6b9dbb2c42b7b0085f38c3b61ec79a4bb992650a96906",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T172902.786054Z/verification.json",
+      "role": "receipt",
+      "sha256": "9f331d8ca3172c64ce547521d1ec35a491808e6cffc9fa24ae479daffc27464f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ideals.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Ideals",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.HistoryIdeals",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Horizon",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryLanguages.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.HistoryLanguages",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Change",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/ideals-correspondence-checks/20261019T020352.033083Z/verification.json",
+      "sha256_pointer": "/source_sha256/IdealsCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/ideals-correspondence-checks/20261019T020352.033083Z/verification.json",
+      "sha256_pointer": "/source_sha256/IdealWarrant",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/ideals-correspondence-checks/20261019T020352.033083Z/verification.json",
+      "sha256_pointer": "/source_sha256/CompletionRole",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/ideals-correspondence-checks/20261019T020352.033083Z/verification.json",
+      "sha256_pointer": "/source_sha256/HistoryIdeals",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdealsTraces.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.HistoryIdealsTraces",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (A4-L), on decision D45 (4) and Ren's “integrate all, the theory is a whole, not stitched pieces, go ahead” (19 October); study section 189.",
+      "zh": "2026年10月19日：新增（A4-L），依决定 D45 (4) 与 Ren 的“integrate all, the theory is a whole, not stitched pieces, go ahead”（10月19日）；研究第 189 节。"
+    },
+    {
+      "en": "19 October 2026, Y1 (Becoming.Hexagrams): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: Y1 added D47, its index row and its lineage line). The claim is unchanged.",
+      "zh": "2026年10月19日，Y1（Becoming.Hexagrams）：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V (what a collective's continuation needs): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: V added decision D48). The claim is unchanged.",
+      "zh": "2026年10月19日，V（集体延续所需）：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 (Becoming.HexagramPlaces): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: Y2 added D50, its index row and its lineage line). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2（Becoming.HexagramPlaces）：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, O1: the next step taken. What a finite stretch verifies (the open classes) is stated in Becoming.Verification (record what-a-finite-stretch-verifies, study section 205); the scope item saying it was not stated is removed and the next step revised. THE-THEORY-OF-BECOMING.md re-pointed after reading: since this record's reviewed hash the chapter gained the paragraphs on what a finite stretch verifies and on what a method comes to say in the limit (O2, landed with O1) after this record's paragraph, and its section 8 and 9 rows changed. The claim is unchanged.",
+      "zh": "2026年10月19日，O1：下一步已完成。有限片段所证实者（开类）在 Becoming.Verification 中陈述（记录 what-a-finite-stretch-verifies，研究第 205 节）；删去说它未陈述的范围项，修订下一步。读过后 THE-THEORY-OF-BECOMING.md 重新指向：自本记录所审哈希以来，该章在本记录段落之后加入了关于有限片段所证实者与方法在极限中所能说出者（O2，与 O1 同时落地）的段落，第 8、9 节各行有改动。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RO (the Chinese sources on the spine): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four section 11 status cells). The claim is unchanged.",
+      "zh": "2026年10月19日，RO（中国思想诸传统在脊柱上）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U5 (study section 208): the word half read on the courses a process can take (Becoming.HistoryIdealsTraces, 7 theorems, core receipt 20261019T133615.720595Z); one law and one counterexample added (a history of feasible courses that is no run's moves). The statement and the earlier laws are unchanged.",
+      "zh": "2026年10月19日，U5（研究第 208 节）：词的一半读在过程能走的进程上（Becoming.HistoryIdealsTraces，7 项定理，核心回执 20261019T133615.720595Z）；新增一条规律与一个反例（不是任何运行之移动的可行进程历史）。陈述与原规律不变。"
+    },
+    {
+      "en": "19 October 2026, U5 (general laws read on the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U5 added the world reading of J3 to premise card F and section 6, a sentence each on the word half of histories (section 2), narrowing on the pure observation and evidence under fallible witnesses (section 3), a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U5（在基上读出的一般规律）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y5 (Becoming.HexagramSequences): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: Y5 added the section 1 paragraph on the arrangements of the 傳 with its readings, its rerun in the integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.",
+      "zh": "2026年10月19日，Y5（Becoming.HexagramSequences）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SC (a code formed between formations): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，SC（在形成之间形成的编码）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Horizon.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Run.stretches, adheres_iff_adheresBy, refutable_iff_refutableBy, stretchOrder moved from HistoryIdeals.lean to Horizon.lean with their full names and proofs. The removed restatements Stretches.adheres_iff, Stretches.adheres_least, Stretches.not_not, Stretches.not_refutable_of_adheres, Stretches.refutable_adheres_iff are replaced by Horizon's laws, which state the same on runs and are now proved from the laws of points. Proof bindings (HistoryIdeals.lean, Horizon.lean) rebound to core receipt 20261019T172902.786054Z. Re-pointed after reading the change: HistoryIdeals.lean, the four declarations moved to Horizon and the five Stretches restatements of Horizon's laws removed; Horizon.lean, imports Becoming.Ideals; stretchOrder, Run.stretches and the two equivalences moved in; six laws proved from the laws of points, statements unchanged; THE-THEORY-OF-BECOMING.md, the paragraph on what a finite stretch refutes cites Refutable.not_not, proved in Horizon from the law for points; §9 counts and receipt follow R26. The claim is unchanged.",
+      "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：Run.stretches、adheres_iff_adheresBy、refutable_iff_refutableBy、stretchOrder 连同完整名称与证明从 HistoryIdeals.lean 移到 Horizon.lean。删去的重述 Stretches.adheres_iff、Stretches.adheres_least、Stretches.not_not、Stretches.not_refutable_of_adheres、Stretches.refutable_adheres_iff 改为 Horizon 的律，它们在运行上陈述相同，现由点的律证明。证明绑定（HistoryIdeals.lean、Horizon.lean）改到核心回执 20261019T172902.786054Z。读过改动后重新指向：HistoryIdeals.lean，四个声明移到 Horizon，Horizon 之律的五个 Stretches 重述删去；Horizon.lean，导入 Becoming.Ideals；stretchOrder、Run.stretches 与两个等价移入；六条律由点的律证明，陈述不变；THE-THEORY-OF-BECOMING.md，有限片段所否证者一段改引 Refutable.not_not（Horizon 由点的律证明）；§9 计数与回执随 R26。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R27 (the stepwise classes and loss): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, §6.8 gains the bullet on the stepwise classes and loss; §9 counts and receipt follow R27. The claim is unchanged.",
+      "zh": "2026年10月20日，R27（逐步类别与失去）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，§6.8 新增逐步类别与失去一条；§9 计数与回执随 R27。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Horizon.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Horizon.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Horizon.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Horizon.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Ideals.Closed (now Ideals.ScottClosed); Ideals.Closed.refutable_iff (now Ideals.ScottClosed.refutable_iff); Stretches.Settles (now Stretches.HasLatest); Stretches.principal_settles (now Stretches.principal_hasLatest); Stretches.settles_principal (now Stretches.hasLatest_principal). Proof bindings (HistoryIdeals.lean, HistoryIdealsTraces.lean, Horizon.lean, Ideals.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: HistoryIdeals.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; HistoryIdealsTraces.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Horizon.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Ideals.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Ideals.Closed（现为 Ideals.ScottClosed）；Ideals.Closed.refutable_iff（现为 Ideals.ScottClosed.refutable_iff）；Stretches.Settles（现为 Stretches.HasLatest）；Stretches.principal_settles（现为 Stretches.principal_hasLatest）；Stretches.settles_principal（现为 Stretches.hasLatest_principal）。证明绑定（HistoryIdeals.lean、HistoryIdealsTraces.lean、Horizon.lean、Ideals.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：HistoryIdeals.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；HistoryIdealsTraces.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Horizon.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Ideals.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Change.lean, HistoryIdeals.lean, HistoryLanguages.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Change.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; HistoryIdeals.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; HistoryLanguages.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Change.lean、HistoryIdeals.lean、HistoryLanguages.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Change.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；HistoryIdeals.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；HistoryLanguages.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Ideals.hull_contains (now Ideals.AdheresBy.of); Ideals.principal_le_principal_iff (now Ideals.principal_le_iff). Proof bindings (Change.lean, HistoryIdeals.lean, HistoryLanguages.lean, Ideals.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Change.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; HistoryIdeals.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; HistoryLanguages.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Ideals.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Ideals.hull_contains（现为 Ideals.AdheresBy.of）；Ideals.principal_le_principal_iff（现为 Ideals.principal_le_iff）。证明绑定（Change.lean、HistoryIdeals.lean、HistoryLanguages.lean、Ideals.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Change.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；HistoryIdeals.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；HistoryLanguages.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Ideals.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

@@ -137,14 +137,8 @@
       "en": "2026-10-14 readability migration to schema 2: the claim's first sentence became the statement; its second sentence and the limitations became 3 typed does-not-show items (two of scope; one denying an impossibility proof); “a completed assessment of the local argument” is carried by the status; 3 progress lines link the study's section-10 affirmative argument, route assessment and disposition; the next step is restated positively with the same content. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/constitutive-binding-assessment.md); the exact earlier record is text_versions[0]."
     },
     {
-      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 records-a-l-17 项：验证范围原说“复核三份既有 Lean 回执”，而本记录不引用、不绑定任何回执；改为写明三份回执是哪些、复核记在何处，以及本记录不绑定它们。原文见 text_versions。",
-      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item records-a-l-17: the validation scope said it \"checks three existing Lean receipts\", while the record references and binds none; it now names the three receipts, where the recheck is recorded, and that this record binds none of them. Earlier text in text_versions."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in GENERATED-LOGIC.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): GENERATED-LOGIC.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+      "en": "2026-10-20: 3 bookkeeping notes condensed of 17 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/357173a340323161/constitutive-binding-assessment.json and in git.",
+      "zh": "2026-10-20：3 条记账性说明合并（17 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/357173a340323161/constitutive-binding-assessment.json 和 git 中。"
     }
   ],
   "text_versions": [
@@ -162,6 +156,14 @@
       "note": {
         "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
         "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/357173a340323161/constitutive-binding-assessment.json",
+      "sha256": "357173a340323161c23cfaa05766d027e1e2213e031e9dfde4b2fe7291592f2b",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
   ]

@@ -278,8 +278,18 @@
       "zh": "2026年10月20日：新增（R33，第二十次审查 G10，交错构造世界）：构造、其平衡、同一进程之交错共有的所立之串与终点，以及相邻对调；一般的逐步关系待解（研究第 224 节）。"
     },
     {
-      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
-      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+      "en": "2026-10-20: 1 bookkeeping notes condensed of 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/b89afba8867c43b4/the-world-an-interleaving-builds.json and in git.",
+      "zh": "2026-10-20：1 条记账性说明合并（20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/b89afba8867c43b4/the-world-an-interleaving-builds.json 和 git 中。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/b89afba8867c43b4/the-world-an-interleaving-builds.json",
+      "sha256": "b89afba8867c43b4f9c8564e9eb8b78f9d96db5691da018a48bc5ef983a7c30d",
+      "note": {
+        "en": "Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.",
+        "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
+      }
     }
   ]
 }

@@ -111,18 +111,15 @@ Aliases: —
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
 - 19 October 2026, E1: a progress entry and two related records (premises read off one exchange: which premises are readings and which are states of the law); study section 197. The target's wording is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
-- 20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added. The claim is unchanged.
-- 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.
-- 20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.
-- 20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.
 - 20 October 2026, R35: target 1's formal part restated, as proposed in R25 (study section 218) and approved by Ren on 20 October 2026 (2026-10-20-fix-all-twentieth-review): the statement now names the formal part (every central law over every law of exchange) and the philosophical part (the whole's determinations as moments of one unfolding); a progress item states the formal part in full (each World premise a reading of the exchange or a state of the law, the families joined by definition); next_delta restated accordingly; one does_not_show item added (the formal part does not settle the philosophical part, and reaches becoming only as far as it has a law of exchange). The target, its status and the deductive necessity it asks for are unchanged; completeness is checked by K1-K7, adopted the same day.
-- 2 rebinding entries (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](theory-of-becoming-foundation.json).
+- 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](theory-of-becoming-foundation.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text
 
 - [theory-of-becoming-foundation.json](../../../../_process/architecture/history/5d90f904859febd0/theory-of-becoming-foundation.json) (sha256 `5d90f904859febd0…`): Exact record bytes before the migration (schema 1).
 - [theory-of-becoming-foundation.json](../../../../_process/architecture/history/a232c42bba33f89e/theory-of-becoming-foundation.json) (sha256 `a232c42bba33f89e…`): Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2).
+- [theory-of-becoming-foundation.json](../../../../_process/architecture/history/0021d756ea348872/theory-of-becoming-foundation.json) (sha256 `0021d756ea348872…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

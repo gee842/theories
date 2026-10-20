@@ -1,0 +1,1951 @@
+{
+  "schema_version": 2,
+  "id": "wisdom-root",
+  "title": {
+    "zh": "核心作为智慧之根的目标",
+    "en": "Core as the root of wisdom target"
+  },
+  "kind": "target",
+  "status": "open",
+  "family": "F08",
+  "reviewed_at_utc": "2026-10-13T22:45:00+00:00",
+  "statement": {
+    "en": "Target: establish that the core’s common relations are indispensable across all wisdom under discussion, and thereby the foundational status of the whole core.",
+    "zh": "目标：证明 core 的共同关系对所讨论的全部智慧不可省略，从而确立整个 core 的根基地位。"
+  },
+  "hypotheses": [
+    {
+      "zh": "保留获授权的必要关系与生成解释两部分；不能将局部成功条件改名为完整智慧。",
+      "en": "Retain both authorized components, necessary relations and generative explanation; local success conditions cannot simply be renamed full wisdom."
+    },
+    {
+      "zh": "按 Ren 的纠正，以道德评价 becoming、普遍生成原则支撑具体判断为正面路线，不以对手认可为门槛。当前以 Unrestricted 为条件推出 G0（章节 §6.15，理论不断言这一条件）；相应 A、L、J／C、实践解释及真实对应 E 明示，不把它们作为裸动力学的结论。",
+      "en": "Following Ren’s correction, pursue morality as appraisal of becoming through universal generative principles, without requiring a rival’s assent. G0 now follows with Unrestricted as a condition (chapter section 6.15; the theory does not assert the condition); the applicable A, L, J/C, practical articulation and actual correspondence E remain explicit, not conclusions of bare dynamics."
+    }
+  ],
+  "correspondence": {
+    "en": "Each connection of independently specified wisdom content to the core’s formal conditions is listed under Progress with its boundary. Need, actual continuation, fulfillment and discharge cannot be erased. The timed branch excludes differently informative initial states; theoretical or contemplative content without this discrimination commitment keeps its own constitutive burden, and the abstract bound and native physical conditions stay separate. General-Frame G0 and relevance_least already accommodate present realization; the possibility, presence and rest boundaries prevent replacing that content with future feasibility or activity counts. Multivalued recovery keeps richer questions and finiteness. Constitutive binding, acquired content and continuing support keep separate roles; wisdom correspondence across different instances is interpretive, not a formal state composition. Binding, actual history and normative arguments supply the real content of the claims; the formal interfaces are no longer missing mechanisms. Knowledge, reasonable acceptance, practical permission and subsequent responsibility remain distinct; final truth does not replace historical warrant.",
+    "zh": "独立说明的智慧内容与 core 形式条件的每项接通，连同其边界，列于“已接通”。原需要、实际接续、完成与解除不能被删去。及时分支不覆盖不同信息初态；不含此辨别承诺的理论理解与观照内容仍须其自身构成论证，原抽象界与原生物理实现条件分开。一般 Frame 的 G0 及 relevance_least 已容纳当下实现；原可能性／在场／休息边界防止用未来可行性或活动数量替换这些内容。多结果恢复保留更丰富问题与有限性。构成性绑定、习得内容与持续支承按其关系分工；不同实例间的智慧对应为解释性复用，不伪称状态已形式接合。原绑定、实际历史与规范论证负责所用主张的真实内容；纯形式接口不再作为缺失机制。知识、合理接受、实践许可与后续责任分别说明，不以终点真假替代历史根据。"
+  },
+  "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "practical-judgment-g0-j",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "既有G0/J普遍原则解释保留、转化、交接和结束的共同根据；第14节作哲学复用，不新增规范公理或Lean连接。 §31保持认识许可与实践许可的区别，以及错误后的残余责任；不以有限接受自动解除J4要求。",
+        "en": "Existing G0/J principles explain the common grounds of preservation, transformation, transfer and ending; section 14 reuses them philosophically without a new normative axiom or Lean adapter. Section 31 preserves the distinction between epistemic and practical permission and residual responsibility after error; fallible acceptance does not automatically discharge J4."
+      }
+    },
+    {
+      "id": "relational-generative-comparison",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "既有C条件下的关系信息必要性支撑模型须保留共同生成差别的论证；不证明全部伦理根基。",
+        "en": "The existing C-dependent information necessity supports retaining joint-generative differences in appraisal; it does not prove the entire ethical foundation."
+      }
+    },
+    {
+      "id": "positive-ground-open-futures",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "既有G0下的正面未来根据表明，生成形态开放与有根据的评价可以并存；不把正面方面升级为最终许可。",
+        "en": "The existing G0-based positive-future ground supports appraisal with open generative form; a positive aspect is not upgraded to final permission."
+      }
+    },
+    {
+      "id": "wisdom-root-part-one",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用完成的形式支撑，接到第16节独立陈述的智慧内容；对应是解释，不新增形式组合。",
+        "en": "Reuse completed formal support for the independently described wisdom content in Section 16; the correspondence is interpretive, not a new formal composition."
+      }
+    },
+    {
+      "id": "identification-where-bounded",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "有界识别与稳定正确限定“智慧必须永久修订”的过强读法。",
+        "en": "Bounded identification and stable correctness limit the overstrong reading that wisdom must revise perpetually."
+      }
+    },
+    {
+      "id": "the-split-that-makes-sense",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "已有保持经映射的未来与常值描述边界，用于第17节的内容保真检验；不主张实际忘却已由投影定理解释。",
+        "en": "Existing preservation of the future through the map and the constant-description boundary inform Section 17’s content test; actual forgetting is not claimed explained by projection theorems."
+      }
+    },
+    {
+      "id": "comparison-content-under-regrouping",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "§§23–24八项已检查适配直接调用：最低所需范围与任意Frame成立状态的判据分别保留。形式依赖仅及接通命题，不宣称普遍慧根已证。 §29再以原RespectsAt恢复同一互模拟中的主张，三个适配直接接到P69，形式范围不扩大为实际智慧证明。",
+        "en": "Eight checked adapters in Sections 23–24 directly reuse the source: requirement-profile and arbitrary-Frame realization criteria retain separate scopes. Formal reuse concerns the connecting claims, not completed universal wisdom-root necessity. Section 29 additionally uses RespectsAt to recover claims in the same bisimulation, with three direct P69 adapters; this formal scope is not an actual-wisdom proof."
+      },
+      "interface": {
+        "output": {
+          "zh": "接纳保真与最低所需剖面的精确条件，及 Frame 内容恢复。",
+          "en": "Exact admission fidelity and minimum-requirement criterion, plus Frame content recovery."
+        },
+        "input": {
+          "zh": "供应所需剖面同一与分组保真，作为 Through 保留的关系前件。 在R所联系的配置上供应内容保真，使归并前后该同一R为互模拟等价。",
+          "en": "Supply profile identity and regrouping fidelity as the relational premises for Through preservation. Supply fidelity at R-related configurations to preserve and reflect that same bisimulation after regrouping."
+        },
+        "conditions": {
+          "zh": "原Frame/Web、所问内容与分组；最低所需分支要求可判定性，任意Frame成立状态分支不要求。跨配置选择与同一配置中的主张选择不混用；不推出完整意义、实际算法或普遍智慧归属。",
+          "en": "Original Frame/Web, specified content and grouping. The requirement-profile branch needs decidability; arbitrary-Frame status does not. Keep selections across configurations distinct from selections among claims at a configuration; no complete semantics, executable algorithm or universal wisdom attribution is derived."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean"
+      }
+    },
+    {
+      "id": "acquired-binding-compositional-use",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "习得绑定进入解释与实际执行，并保留错误绑定及解释／执行之别；第20节用于定位实际内容作用，不认领完整语义或新形式组合。",
+        "en": "Acquired bindings enter interpretation and execution while wrong binding and the interpretation/execution distinction remain. Section 20 locates operative content without claiming full semantics or a new formal composition."
+      }
+    },
+    {
+      "id": "binding-preserving-substitution",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "原代入的全使用／全位置等价及同值误接检验所称内容依存；仅解释性应用，不是新的组合证明。",
+        "en": "The existing all-consumer/all-position equivalence and equal-value capture test attributed content dependence; interpretive application only, not a new composition proof."
+      }
+    },
+    {
+      "id": "constitutive-binding-assessment",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用局部构成性根据；其更强的零前提元逻辑目标保持独立，不追加为慧根必要关系门槛。",
+        "en": "Reuse local constitutive warrant while keeping the stronger premise-free metalogical goal separate from wisdom necessity."
+      }
+    },
+    {
+      "id": "process-and-frame-as-readings",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用活动、配置及动作保留，核对 Frame.world 不直接承载原生支持／交换的接口范围。",
+        "en": "Reuse realization, configuration and move preservation while auditing the native support/exchange scope of Frame.world."
+      }
+    },
+    {
+      "id": "space-and-its-parts",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用 World.ofRoles 及生起／止息接口；共同类型的表示不独自证明智慧根基。",
+        "en": "Reuse World.ofRoles and arising/ceasing interfaces; a shared representation does not itself establish wisdom-root necessity."
+      }
+    },
+    {
+      "id": "life-as-condition-of-life",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用角色嵌入的支持、更新、消耗和交换保留，并保留原角色同一的界限。",
+        "en": "Reuse the role embedding’s support, renewal, consumption and exchange preservation, retaining its role-identification boundary."
+      }
+    },
+    {
+      "id": "selection-under-registration-revision",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "§§23–24八项已检查适配直接调用：最低所需范围与任意Frame成立状态的判据分别保留。形式依赖仅及接通命题，不宣称普遍慧根已证。",
+        "en": "Eight checked adapters in Sections 23–24 directly reuse the source: requirement-profile and arbitrary-Frame realization criteria retain separate scopes. Formal reuse concerns the connecting claims, not completed universal wisdom-root necessity."
+      },
+      "interface": {
+        "output": {
+          "zh": "经等价关系的所有旧选择保留恰当新关系细化；合并区别的遗失见证。",
+          "en": "All old selections through an equivalence survive exactly under refinement; a loss witness for merged distinctions."
+        },
+        "input": {
+          "zh": "消费 P91 的所需剖面关系，推出保留选择与接纳保真的等价及遗失见证。",
+          "en": "Consume P91 requirement-profile relations to connect selection preservation with admission fidelity and specialize the loss witness."
+        },
+        "conditions": {
+          "zh": "原Frame/Web、所问内容与分组；最低所需分支要求可判定性，任意Frame成立状态分支不要求。跨配置选择与同一配置中的主张选择不混用；不推出完整意义、实际算法或普遍智慧归属。",
+          "en": "Original Frame/Web, specified content and grouping. The requirement-profile branch needs decidability; arbitrary-Frame status does not. Keep selections across configurations distinct from selections among claims at a configuration; no complete semantics, executable algorithm or universal wisdom attribution is derived."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean"
+      }
+    },
+    {
+      "id": "consequence-revised-reference-plan",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "直接复用共同 Process/Trace/Through 上已经完成的取得、修订、安装及实际使用；不重开原机制。",
+        "en": "Directly reuse completed acquisition, revision, installation and actual use on the shared Process/Trace/Through; do not reopen the mechanism."
+      }
+    },
+    {
+      "id": "open-form-realization-under-revision",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "直接复用同一实现见证到正面相关的已完成正式桥接；公开完成对应与 Unrestricted，不泛称仍缺规范连接。",
+        "en": "Directly reuse the completed formal bridge from the same realization witness to positive relevance; disclose completion correspondence and Unrestricted rather than calling the normative link generically missing."
+      }
+    },
+    {
+      "id": "recurring-reference-revision",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§25消费已完成的实际形成、受支持持续及旧区别退役；P99→P103的内部连接已形式检查。本记录不将该过程直接等同智慧或伦理实例。",
+        "en": "Section 25 consumes completed formation, supported continuation and retired distinctions; the internal P99→P103 connection is formally checked. This record does not identify the process outright with wisdom or an ethical instance."
+      },
+      "interface": {
+        "output": {
+          "zh": "从空参考形成接到一个实际无限运行；每轮修订、成功使用、回返、更替及旧区别损失。",
+          "en": "Formation from empty reference joins one actual infinite run, with revision, successful use, productive return, succession and loss of an old distinction."
+        },
+        "input": {
+          "zh": "慧根论证中取得、使用与所称接续的关系，以及全选择保留是否必要的检验。",
+          "en": "Relations between acquisition, use and attributed continuation in the wisdom argument, and the test of whether all-choice preservation is necessary."
+        },
+        "conditions": {
+          "zh": "P103指定的可靠接触、任务政策、开放生产和更替条件；独立智慧内容及规范对应不由运行本身供应。",
+          "en": "P103’s faithful contacts, task policy, open production and succession conditions; independent wisdom content and normative correspondence are not supplied by the run itself."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    },
+    {
+      "id": "finite-fallible-inquiry-necessity",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§26消费已完成证明，检验独立智慧能力承诺中的可错辨别及关系条件；原成果内部形式组合保持，本记录不将全部智慧定义为该统计任务。",
+        "en": "Section 26 consumes completed proofs for fallible discrimination and relational conditions in independent wisdom-capacity claims. Original internal formal compositions remain credited; this record does not define all wisdom as that statistical task."
+      },
+      "interface": {
+        "output": {
+          "zh": "有限可错辨别的覆盖／错误必要界及其已检查动态或及时关系组合。",
+          "en": "Necessary finite coverage/error bounds and their checked adaptive or timely-relational compositions."
+        },
+        "input": {
+          "zh": "原慧根仅凭全分支正确保证不足以覆盖的可错能力声明。",
+          "en": "Fallible capacity claims not covered by the wisdom argument’s perfect-answer guarantees alone."
+        },
+        "conditions": {
+          "zh": "实际二项对比、完整输入、有限自然权重和原能力界；及时分支另需其原前缀平衡、共同初态、耦合及回应条件。理论理解、观照与规范意义不由错误界定义。",
+          "en": "Actual binary contrast, complete input, finite natural weights and the declared capacity bounds; the timed branch additionally needs its prefix-balance, common-start, coupling and response conditions. Error bounds do not define theoretical understanding, contemplation or normative significance."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    },
+    {
+      "id": "timely-response-necessity",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§26消费已完成证明，检验独立智慧能力承诺中的可错辨别及关系条件；原成果内部形式组合保持，本记录不将全部智慧定义为该统计任务。",
+        "en": "Section 26 consumes completed proofs for fallible discrimination and relational conditions in independent wisdom-capacity claims. Original internal formal compositions remain credited; this record does not define all wisdom as that statistical task."
+      },
+      "interface": {
+        "output": {
+          "zh": "有限可错辨别的覆盖／错误必要界及其已检查动态或及时关系组合。",
+          "en": "Necessary finite coverage/error bounds and their checked adaptive or timely-relational compositions."
+        },
+        "input": {
+          "zh": "原慧根仅凭全分支正确保证不足以覆盖的可错能力声明。",
+          "en": "Fallible capacity claims not covered by the wisdom argument’s perfect-answer guarantees alone."
+        },
+        "conditions": {
+          "zh": "实际二项对比、完整输入、有限自然权重和原能力界；及时分支另需其原前缀平衡、共同初态、耦合及回应条件。理论理解、观照与规范意义不由错误界定义。",
+          "en": "Actual binary contrast, complete input, finite natural weights and the declared capacity bounds; the timed branch additionally needs its prefix-balance, common-start, coupling and response conditions. Error bounds do not define theoretical understanding, contemplation or normative significance."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    },
+    {
+      "id": "one-axiom-yields-g0",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§27消费原结果说明当下成就与未来可能性的关系；不重证、不将给定读法直接认证为全部智慧或体验。",
+        "en": "Section 27 consumes the existing result to relate present achievement and future possibilities, without reproving it or certifying a supplied reading as all wisdom or experience."
+      },
+      "interface": {
+        "output": {
+          "zh": "一般Frame在Unrestricted下的G0及最小正面相关，精确包括已实现的living内容。",
+          "en": "General-Frame G0 under Unrestricted and its least positive relevance, exactly including realized living content."
+        },
+        "input": {
+          "zh": "领会、观照与合宜结束的实际内容及其意义，不附加未来产出条件。",
+          "en": "Actual content and significance in apprehension, contemplation and appropriate ending, without an extra productive-sequel condition."
+        },
+        "conditions": {
+          "zh": "所用Frame、living和实际对应公开；规范推论保留Unrestricted及相应实践承诺。可能性／活动排序的例子只检验给定读法，未生成体验或确立全智慧必要性。",
+          "en": "Disclose the Frame, living reading and actual correspondence; normative inferences retain Unrestricted and applicable practical commitments. Possibility/activity ranking examples test supplied readings without generating experience or establishing universal wisdom necessity."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    },
+    {
+      "id": "ranking-under-readings",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§27消费原结果说明当下成就与未来可能性的关系；不重证、不将给定读法直接认证为全部智慧或体验。",
+        "en": "Section 27 consumes the existing result to relate present achievement and future possibilities, without reproving it or certifying a supplied reading as all wisdom or experience."
+      },
+      "interface": {
+        "output": {
+          "zh": "同一原生历程的接纳／实际在场差异，以及以更多活动破同分把停歇排低的边界。",
+          "en": "Admission/presence differences on native courses and the rest boundary of activity-based tie breaking."
+        },
+        "input": {
+          "zh": "领会、观照与合宜结束的实际内容及其意义，不附加未来产出条件。",
+          "en": "Actual content and significance in apprehension, contemplation and appropriate ending, without an extra productive-sequel condition."
+        },
+        "conditions": {
+          "zh": "所用Frame、living和实际对应公开；规范推论保留Unrestricted及相应实践承诺。可能性／活动排序的例子只检验给定读法，未生成体验或确立全智慧必要性。",
+          "en": "Disclose the Frame, living reading and actual correspondence; normative inferences retain Unrestricted and applicable practical commitments. Possibility/activity ranking examples test supplied readings without generating experience or establishing universal wisdom necessity."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    },
+    {
+      "id": "functional-joining-common-structure",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§28直接消费已完成的共同结构证明，核对其在慧根论证中的内容范围，不新增形式组合。",
+        "en": "Section 28 consumes the completed common-structure proof and audits its content scope in the wisdom argument; no new formal composition."
+      },
+      "interface": {
+        "output": {
+          "zh": "精确接合说明的共同因子；唯一结果、精确与约简下的共同操作。",
+          "en": "A common factor for exact joining accounts; a common operation under functional joining, exactness and reducedness."
+        },
+        "input": {
+          "zh": "同一智慧解释中操作关系、内容根据与实际把握的共同必要性。",
+          "en": "Joint necessity of operational relations, content/grounds and actual uptake in one wisdom explanation."
+        },
+        "conditions": {
+          "zh": "原接合及问题范围须对应；精确、约简、唯一或有限结果只在原定理要求处使用。不将语义完整性当作个人全知，不由共同因子认证实际历史或规范意义。",
+          "en": "Correspondence of joining and question scope is required; exactness, reducedness and functional or finite outcomes enter only where stated. Semantic completeness is not personal omniscience, and the factor does not certify actual history or normative significance."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    },
+    {
+      "id": "multivalued-joining-common-structure",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§28直接消费已完成的共同结构证明，核对其在慧根论证中的内容范围，不新增形式组合。",
+        "en": "Section 28 consumes the completed common-structure proof and audits its content scope in the wisdom argument; no new formal composition."
+      },
+      "interface": {
+        "output": {
+          "zh": "有限结果及完整分支问题下的共同结果类与指定输入对提升；源精确说明无需约简即可有共同因子。",
+          "en": "Common output classes and fixed-input lifting under finite outcomes and exact branch questions; a source exact account has a canonical factor without reducedness."
+        },
+        "input": {
+          "zh": "同一智慧解释中操作关系、内容根据与实际把握的共同必要性。",
+          "en": "Joint necessity of operational relations, content/grounds and actual uptake in one wisdom explanation."
+        },
+        "conditions": {
+          "zh": "原接合及问题范围须对应；精确、约简、唯一或有限结果只在原定理要求处使用。不将语义完整性当作个人全知，不由共同因子认证实际历史或规范意义。",
+          "en": "Correspondence of joining and question scope is required; exactness, reducedness and functional or finite outcomes enter only where stated. Semantic completeness is not personal omniscience, and the factor does not certify actual history or normative significance."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    },
+    {
+      "id": "joining-questions-survive-encoding",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§28直接消费已完成的共同结构证明，核对其在慧根论证中的内容范围，不新增形式组合。",
+        "en": "Section 28 consumes the completed common-structure proof and audits its content scope in the wisdom argument; no new formal composition."
+      },
+      "interface": {
+        "output": {
+          "zh": "伙伴也经同一编码翻译时，共同关系内部保留原接合问题。",
+          "en": "Joining questions remain valid within the induced relation when their partners use the same encoding."
+        },
+        "input": {
+          "zh": "同一智慧解释中操作关系、内容根据与实际把握的共同必要性。",
+          "en": "Joint necessity of operational relations, content/grounds and actual uptake in one wisdom explanation."
+        },
+        "conditions": {
+          "zh": "原接合及问题范围须对应；精确、约简、唯一或有限结果只在原定理要求处使用。不将语义完整性当作个人全知，不由共同因子认证实际历史或规范意义。",
+          "en": "Correspondence of joining and question scope is required; exactness, reducedness and functional or finite outcomes enter only where stated. Semantic completeness is not personal omniscience, and the factor does not certify actual history or normative significance."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "§29三个适配直接消费P69的Bisimulation和Alike定义，与P91归并保真连接；形式信用仅及这三项接口。",
+        "en": "Section 29 directly consumes P69 Bisimulation and Alike in three adapters connecting them to P91 fidelity; formal credit is limited to these interfaces."
+      },
+      "interface": {
+        "output": {
+          "zh": "同一个关系同时保留主张成立与步骤后继，以及由其给出的Alike。",
+          "en": "One relation matching realized claims and successor steps, and the Alike relation it witnesses."
+        },
+        "input": {
+          "zh": "归并保留原R；相关位置保真时反射原R；全局保真时保持和反射Alike。",
+          "en": "Regrouping retains R; related-state fidelity reflects R; global fidelity preserves and reflects Alike."
+        },
+        "conditions": {
+          "zh": "同一动作和原主张词汇、同一分组；两侧原过程不变。恢复需要声明的保真条件，不给出原读法的实际充分性或规范根据。",
+          "en": "Shared actions and original claim vocabulary, one grouping and unchanged processes. Reflection needs the stated fidelity, without deriving actual adequacy or normative warrant."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean"
+      }
+    },
+    {
+      "id": "tests-fix-likeness-where-determined",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§29消费原检验恢复与Choosing边界，不重证分支恢复或把反例称作智慧失败。",
+        "en": "Section 29 consumes original test recovery and the Choosing boundary, without reproving branching recovery or calling the witness a wisdom failure."
+      },
+      "interface": {
+        "output": {
+          "zh": "相同之下确定时从线性检验恢复同一关系；Choosing在无此条件时同测但不相同。",
+          "en": "Linear tests recover likeness under determinacy up to likeness; Choosing agrees on tests without likeness when this condition is absent."
+        },
+        "input": {
+          "zh": "区别逐项存在的历程与同一后继关系，核对共同保留的强度。",
+          "en": "Distinguish separately possible courses from one successor-matching relation and audit joint preservation strength."
+        },
+        "conditions": {
+          "zh": "保留原Frame与检验范围；Choosing没有主张，其见证关乎分支时机而非实际认知。",
+          "en": "Retain original Frames and tests; Choosing has no claims and concerns branch timing, not actual cognition."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    },
+    {
+      "id": "causal-models-as-processes",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§30消费记录与模型固定性的区别，检验静态说明；不把自由重定向当成满足完整实际规律的反例。",
+        "en": "Section 30 uses record/model fixation to assess a static account, without treating unrestricted retargeting as a rival satisfying every actual law."
+      },
+      "interface": {
+        "output": {
+          "zh": "未取配置—动作的结果不由记录单独固定；指定模型固定其结果。",
+          "en": "A record alone does not fix an untaken configuration/move; the specified model fixes its outcome."
+        },
+        "input": {
+          "zh": "核对关于替代行动的判断是否只诉诸实际记录，或还保留有根据的规律。",
+          "en": "Check whether an alternative-action judgment relies only on records or also retains warranted laws."
+        },
+        "conditions": {
+          "zh": "原确定过程候选类、未取组合及两个不同配置；没有导出实际律、概率许可或普遍智慧定义。",
+          "en": "Original determined candidate class, untaken pair and two distinct configurations; no derivation of the actual law, probabilistic permission or universal wisdom definition."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "§30将P80共同律产生的替代历程接到生成评价，给保留这些关系的静态说明完整信用。",
+        "en": "Section 30 feeds P80 shared-law alternative courses into generative appraisal and credits static accounts retaining those relations."
+      },
+      "interface": {
+        "output": {
+          "zh": "可行替代行动的历程及回应由同一律产生；行动可在过程内形成，原Loop的两种进程被相应行动固定。",
+          "en": "A shared law generates feasible alternative courses and responses; action can form within the process, and the original Loop courses are fixed by their acts."
+        },
+        "input": {
+          "zh": "供给道德判断becoming所比较的接续内容，不再自由供给第二流。",
+          "en": "Supply the continuation content compared in moral appraisal of becoming, without freely supplying a second flow."
+        },
+        "conditions": {
+          "zh": "原非预知、平衡、可行、共同初态与在场条件；比较保留经耦合及意义覆盖；实际对应与G0/A/L/J/E另明示。",
+          "en": "Original nonanticipation, balance, feasibility, common start and presence; comparison retains coupling and significance coverage; actual correspondence and G0/A/L/J/E remain explicit."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "conditional-foundation-assessment",
+      "detail": {
+        "zh": "已完成候选有自己的有限智慧范围；不能自动升级为本目标。",
+        "en": "The completed candidate has its own bounded wisdom scope, which does not automatically satisfy this target."
+      }
+    },
+    {
+      "id": "risk-certificate-outcome-distinction",
+      "detail": {
+        "zh": "局部结果修正必要性检验强度，不构成整个根基的形式转换或完成证明。",
+        "en": "The local result corrects the strength of the necessity test; it is not a formal adapter or completion proof for the full root."
+      }
+    },
+    {
+      "id": "wisdom-root-part-one",
+      "detail": {
+        "zh": "完成本目标的形式部分：耦合、理（Ren 的读法）、检验、学习与推广、经耦合的选择与训练、够、失控、判断与元层次的规律对每个外推与每个表示成立，不用公理。",
+        "en": "Completes this target's formal part: the laws of coupling, 理 (Ren's reading), testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level hold of every extrapolation and every representation, with no axiom."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+      "detail": {
+        "zh": "足够描述不自动有仍充分的共同最粗表示。",
+        "en": "Sufficient descriptions need not admit a still-sufficient common coarsest representation."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "detail": {
+        "zh": "正确风险界限可伴随实际失败，不能用逐次必胜界定全部智慧。",
+        "en": "A true risk bound can accompany actual failure; infallible success cannot simply define all wisdom."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "detail": {
+        "zh": "已区分的智慧范围与普遍原则路线保留。既有固定选择器在不可比情形中的默认分支只满足非支配要求，不能升级为独优；构造例与已有数学结果也不能替代现实对应或历史覆盖。",
+        "en": "Differentiated wisdom and the universal-principle route are retained. The fixed selector’s default in incomparable cases meets nondomination without unique superiority; constructed applications and existing mathematical results do not substitute for actual correspondence or historical coverage."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "omission-not-refutation",
+    "formal-not-empirical"
+  ],
+  "does_not_show": [
+    {
+      "en": "Reused conditional results and the formal laws of wisdom-root-part-one do not by themselves prove wisdom coverage or complete the root; formal adequacy certifies no wisdom reading or actual acquisition history.",
+      "zh": "所复用的已完成条件成果及 wisdom-root-part-one 的形式规律，本身不证明智慧覆盖，也不完成慧根；形式完备性不认证智慧读法或实际获得历史。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Content validity is not actual understanding, formal binding is not human understanding, and explanatory fidelity alone does not prove constitutive necessity.",
+      "zh": "内容成立不等于有人理解，形式绑定不等同实际人的理解，解释保真不自动证明现实构成必然。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "The three common relations are no exhaustive definition or minimal axiom list; their joint requirement of the full substantive core does not follow from representability or separately suitable readings.",
+      "zh": "三项共同联系不是穷尽定义或最小公理表；其共同要求整个实质 core，不能由可表示性或分别适用的读法推出。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Explaining each basis row of a finite root separately is not explaining its whole closure pointwise.",
+      "zh": "有限根的各基行分别可解释，不等于其整个闭合理论逐项可解释。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Continuing revision and productive return do not alone establish content warrant or ethical purpose.",
+      "zh": "持续修订及其生产回返不自行确立内容根据或伦理目的。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "A common operational factor is no sufficient root for all wisdom content: the history instance agrees on every joining context despite different event words; this bounds the question scope, and the full core keeps the histories.",
+      "zh": "共同操作因子并非全部智慧内容的充分根：原历史实例允许全部接合问题同答而事件字不同；此为指定问题范围的边界，完整 core 仍保留历史。",
+      "kind": "non-implication",
+      "witness": "Generative.ExplanatoryHistoryInterfaces.different_histories_same_required_interface"
+    },
+    {
+      "en": "Preserving state selections across configurations does not certify claim fidelity: a literal reading of the same process keeps the former and fails the latter.",
+      "zh": "跨配置的状态选择保留不认证主张保真：同一过程的字面读法保留前者而不满足后者。",
+      "kind": "non-implication",
+      "witness": "Becoming.Frame.literal_claims_separate_preservation"
+    },
+    {
+      "en": "Shared claim types do not establish adequate meaning, and possible courses certify neither actual acquisition nor duties.",
+      "zh": "共用主张类型不等于意义已充分说明；可能历程不认证实际获得历史，也不推出义务。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "Loop certifies neither moral superiority nor an empirical social law; the constructed archive case supplies evidential adequacy explicitly and does not identify every reasonable belief with wisdom.",
+      "zh": "Loop 不认证道德优越或现实社会规律；构造档案例明确供应证据充分性，未证明所有合理信念都是智慧。",
+      "kind": "scope"
+    }
+  ],
+  "not_required": [
+    {
+      "en": "Actual formation, concern and affect, and sufficiency are distinct parts of the full target, not gates imposed wholesale on this necessity task.",
+      "zh": "实际形成、关切与情感、充分性是完整目标的另外部分，不全部设为本必要性任务的门槛。"
+    },
+    {
+      "en": "Premise-free warrant for all metareasoning, complete mathematical ontology and experience generation are separate goals, not added gates.",
+      "zh": "全部元推理的零前提正当化、完整数学本体论及体验生成是另外的目标，不追加为此处门槛。"
+    },
+    {
+      "en": "No acquisition route is universally prescribed: chance origins may be followed by verification, direct apprehension need not use explicit calculation, and redundant grounds may substitute.",
+      "zh": "不规定发现路线：偶然来源可接到后续核验，直接领会不须显式演算，冗余根据可替代。"
+    },
+    {
+      "en": "Necessary relations require neither explicit rules, maximal information, perpetual revision nor preservation of every old form; fidelity does not demand lossless transformation.",
+      "zh": "必要关系不要求显式规则、最大信息、永久修订或保存每个旧形式；保真不要求转化无损保留一切。"
+    },
+    {
+      "en": "Exact explanatory coverage demands no omniscience of each wise person, and the all-term fidelity criterion does not require each wise episode to preserve every position.",
+      "zh": "精确完整解释不要求每位智慧者全知；全部项的保真判据也不要求每次智慧保留全部位置。"
+    },
+    {
+      "en": "Not every wisdom claim undertakes two-sided error bounds, and counterfactual reasoning is not imposed on every theoretical, contemplative or ending achievement.",
+      "zh": "不要求所有智慧承担双侧错误承诺，也不把反事实推理普遍强加给理论领会、观照与结束。"
+    }
+  ],
+  "progress": [
+    {
+      "en": "Moral judgments: eight constructed applications state grounds, judgments and reversal conditions under fixed living significance, the practical commitments and E; they are philosophical applications, not historical coverage or independent evidence.",
+      "zh": "道德判断：八个构造应用在固定的生生之意义、实践承诺与 E 下写明根据、判断与反转条件；它们是哲学应用，不是历史覆盖或独立证据。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#deriving-a-family-of-moral-judgments"
+    },
+    {
+      "en": "Judgment content: independently specified content, grounds, scope and strength connect five aspects of wisdom to the formal conditions, keeping their differences; bounded identification corrects perpetual-revision readings.",
+      "zh": "判断内容：独立说明的内容、根据、范围与强度把五类智慧接到形式条件，保留其差异；有界识别纠正永久修订的读法。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#necessity-through-judgment-content"
+    },
+    {
+      "en": "Tacit practice and forgetting: descriptive omission is separated from actual transformation; sitting-and-forgetting reduces to neither judgment nor compression, and keeping local skill relations does not show a rival accepts the full core.",
+      "zh": "隐性实践与忘却：描述省略与实际转化分开；坐忘不化约为判断或压缩算法，保留局部熟练联系不证明对手接受全部 core。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#tacit-understanding-and-forgetting"
+    },
+    {
+      "en": "Letting go: one connection separates changed shared support from changed attention/experience; tranquility needs no payoff, fit ending no endless individual continuation; projection theorems do not prove actual forgetting beneficial.",
+      "zh": "放下：一种转化内容的连接区分共同支持的改变与注意／体验的改变；安宁无需外部收益，合宜结束不要求个体无限延续；投影定理不证明实际遗忘有益。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#letting-go-and-operative-relations"
+    },
+    {
+      "en": "Theoretical wisdom: content validity, epistemic warrant and formed understanding are separated, with three candidate common relations among them; the old closure results locate the universal proof burden but supply no wisdom correspondence.",
+      "zh": "理论智慧：区分内容成立、认识根据与理解形成，提出其间的三项候选共同联系；旧闭包结果定位全范围证明负担，但不供应智慧对应。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#one-root-and-distinct-grounds"
+    },
+    {
+      "en": "Grasp: chance discovery, direct apprehension and redundant grounds defeat universal demands for reliable origins or individually indispensable routes; acquired binding locates content use, its meanings, categories and coverage supplied.",
+      "zh": "把握：偶然发现、直接领会与冗余根据排除可靠来源或逐项不可替代路线的普遍要求；习得绑定定位内容的使用，其意义、分类与覆盖仍给定。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#discovery-grasp-and-operative-ground"
+    },
+    {
+      "en": "Content dependence: substitution and equal-value capture results locate attributed dependence; valid derivation beside actual use does not show their joint necessity, and composition under a coarse reading does not certify its grounds.",
+      "zh": "内容依存：代入与同值误接结果定位所声称的依存；有效推导与实际使用并列不证明两者共同必要，粗读法下的接合也不认证其内容根据。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#content-dependence-and-composition"
+    },
+    {
+      "en": "From reading to operative relations: existing interfaces preserve realization and supplied support, but writing wisdom as runs and runs as worlds does not make the whole core necessary; a shared label is no semantic correspondence.",
+      "zh": "从读法到实际关系：既有接口保留实现与所给支持关系；但把智慧写成运行、把运行写成世界，不使整个 core 成为必要，共同标签也不等于语义对应。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#from-reading-to-operative-relations"
+    },
+    {
+      "en": "One connected theory: completed branch results are consumed, not rebuilt; eight pure-core adapters compose content fidelity with selection preservation and loss, for arbitrary Frame content without numerical requirements.",
+      "zh": "同一个理论：直接消费已完成的分支结果而不重建；八项纯核心适配把内容保真与选择的保留和丧失接合，适用于任意 Frame 内容，不要求数值。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-within-one-connected-theory"
+    },
+    {
+      "en": "Continuing revision: checked operations feed successor revision as old distinctions retire, so keeping every choice is unnecessary there; this neither defines wisdom, licenses arbitrary loss, nor guarantees recovering a retired distinction.",
+      "zh": "持续修订：已查操作直接进入后继修订，同时退役旧区别，全选择保留对此并非必要；这不把该成就定义为智慧，不许可任意损失，也不保证重新取得退役的区别。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#grounds-use-and-continuing-revision"
+    },
+    {
+      "en": "Fallible capacity: independent coverage/error commitments constrain how differences enter, allowing error and abstention; this certifies no actual weights and supplies no ethical permission or complete justification of false belief.",
+      "zh": "可错能力：独立的覆盖／错误承诺约束差异的实际进入，允许错误与暂缓；这不认证实际权重，不构成伦理许可或错误信念的完整正当性。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#fallible-capacity-and-necessary-relations"
+    },
+    {
+      "en": "Present realization: theoretical grasp, lived change in contemplation, and fulfillment or release are located; no experience, living reading or ranking is certified; the rest witness omits tranquil experience and shows no actual rest worse.",
+      "zh": "当下实现：理论把握、观照中的实际生活改变、完成与解除分别定位；该接口不认证特定体验、living 读法或总体排序；休息见证未表示安宁体验，也不表明实际休息更坏。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#present-realization-and-constitutive-necessity"
+    },
+    {
+      "en": "Common operational factor: exact accounts of one joining content share unavoidable content without source minimality; internal events that continuation questions alone can omit must be joined to content, grounds and actual uptake.",
+      "zh": "共同操作因子：同一接合内容的不同精确说明有不可绕开的共同内容，源说明不必最简；接续问题单独会遗漏的内部事件，须与内容、根据及实际把握一并接通。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#common-operational-structure-and-wisdom-content"
+    },
+    {
+      "en": "One relation for content and continuation: three pure-core adapters join content fidelity to joint content/step preservation, needing fidelity only where R relates configurations and keeping processes, actions and R.",
+      "zh": "内容与接续的同一关系：三项纯核心适配把内容保真接到内容／步骤的共同保留，只在 R 联系处要求保真，保留两个过程、动作词汇及同一 R。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#one-relation-for-content-and-continuation"
+    },
+    {
+      "en": "Alternative action: records, warranted laws and generated responses are distinguished; static accounts keeping the relations stand equally, and a record class missing actual laws cannot refute the full theory.",
+      "zh": "替代行动：区别实际记录、有根据的规律与由其生成的回应，保留关系的静态说明具有同等地位；未保留一切实际规律的记录类不能据此否定完整理论。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#static-description-and-warranted-alternatives"
+    },
+    {
+      "en": "Fallible acceptance takes up warranted support, not a sufficient ground of truth, resting on the contestable epistemic candidate rather than living significance or an error bound alone; false content is neither knowledge nor automatically excused.",
+      "zh": "可错接受：所承接的是有根据的支持，不必是使结论为真的充分根据，沿既有可争论的认识候选，不由生生之意义或错误率定理独自推出；错误内容既不成为知识，也不自动免责。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#fallible-acceptance-and-operative-grounds"
+    }
+  ],
+  "validation_scope": {
+    "en": "Philosophical correspondence and author counterreview, with limited primary-source readings (Aristotle, Zhuangzi, Dreyfus, Pritchard, Gettier, Tiberius). Formal evidence: declarations reused from 30 bound proof sources, each matched to its passed receipt by source hash, and a pure-core adapter module whose eleven declarations have empty axiom reports, with prelude compilation and kernel checks; some reused peripheral declarations depend on propext, Quot.sound or Classical.choice. Receipts are under sources. No empirical test or independent review.",
+    "zh": "哲学对应与作者反审，并限定核读一手来源（亚里士多德、庄子、Dreyfus、Pritchard、Gettier、Tiberius）。形式证据：复用 30 份绑定证明源中的声明，各以源哈希匹配其通过回执；新增纯核心适配模块的十一项声明公理报告为空，prelude 编译与内核检查通过；部分复用的外围声明依赖 propext、Quot.sound 或 Classical.choice。回执见来源。无经验检验或独立审查。"
+  },
+  "references": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "role": "statement",
+      "sha256": "3bd675ec507d493c7beaa4cb65c8104be1fa2dd93f779449e30f268d78c0f013",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+      "role": "integration",
+      "sha256": "bf9db8d7581967f4cb6ce641ef1cf6e8a1a3e44dac9597d8a7fa673b35598e63",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "role": "integration",
+      "sha256": "f5c69c32f6bcf032dae8149ea877ab136c8fc821c3572570a430d2e26ca68bf6",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "role": "provenance",
+      "sha256": "4a87d84f3f7331d83d01c4f8a04b3c212d95a576fbbe477db232c6f1eff4b2dc",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
+      "role": "integration",
+      "sha256": "14a393d7f52ff04d2e3c22e97c65050b3d2b4f3d1fb3a22d4ad51da8388ce4b0",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean",
+      "role": "proof",
+      "sha256": "d0a79987bd15c3de39f4c109d1d61703df50d3e9b3236c4e46acdd1854ec22ed",
+      "declarations": [
+        "InquiryRoot.derivation_sound",
+        "InquiryRoot.entire_closure_necessary_iff_basis",
+        "InquiryRoot.all_relative_descendants_necessary"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean",
+      "role": "proof",
+      "sha256": "ea2c3feb81457ffeee9eedceb1042fe91faab3227a89bb33345d8b3f121dad40",
+      "declarations": [
+        "Becoming.Derivation.Derives.sound",
+        "Becoming.Derivation.closure_throughout_iff",
+        "Becoming.Derivation.relative_throughout",
+        "Becoming.Derivation.common_basis_iff_common_closure",
+        "Becoming.Derivation.pointwise_iff_common"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean",
+      "role": "proof",
+      "sha256": "b8c6fabc4ed4ff3c63898d1660abca7e6e83d446abe2b2df5975568212a16fac",
+      "declarations": [
+        "InquiryRoot.JointInterpretation.common_basis_iff_common_closure",
+        "InquiryRoot.JointInterpretation.pointwise_closure_iff_common"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-checks/20261008T114133.852211Z/receipt.json",
+      "role": "receipt",
+      "sha256": "84ccd8f9cfbc584fdd568815f1d39f8bccf671420ec5de493a5d4492488f607a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+      "role": "proof",
+      "sha256": "0395ecdcce1d3d4712930497ace63d030279e3fe610a60f945d372e45878946d",
+      "declarations": [
+        "Generative.AcquiredBinding.acquired_binding_and_grouping_compose",
+        "Generative.AcquiredBinding.acquired_bindings_reach_actual_compositional_response",
+        "Generative.AcquiredBinding.omitted_target_can_produce_a_wrong_unique_binding",
+        "Generative.AcquiredBinding.corrected_admission_repairs_use_without_erasing_history",
+        "Generative.AcquiredBinding.interpretation_can_outlast_affordable_execution"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-checks/20261008T125717.615564Z/verification.json",
+      "role": "receipt",
+      "sha256": "397cdc260034c70c0f28aa8f5d96078fc445ffe38777edbea0bbe77f7eefa661",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean",
+      "role": "proof",
+      "sha256": "04ade1d91de4fd7fba789a94728a5aee6792c551c41611fc195e6b30c20f0bcd",
+      "declarations": [
+        "Generative.InferentialGrounds.extract"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181823.552825Z/receipt.json",
+      "role": "receipt",
+      "sha256": "8b574d92284e38f21c192d0ce2258921ca0f5d42bee254af20db5d4525bb7811",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean",
+      "role": "proof",
+      "sha256": "ae06bdfe05171b55c56b935c56499ea7e6c572c360d21aa0970c77b382ad4a0b",
+      "declarations": [
+        "Generative.InferentialSubstitution.all_terms_agree_iff_positions",
+        "Generative.InferentialSubstitution.extract_substitute",
+        "Generative.InferentialSubstitution.discharge_preserves_assessment",
+        "Generative.InferentialSubstitution.typed_capture_changes_answer",
+        "Generative.InferentialSubstitution.matching_values_hide_capture"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "role": "proof",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        "Generative.trace_append_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T113031.597794Z/verification.json",
+      "role": "receipt",
+      "sha256": "cc626367858b7a66f5f32e589de0bd47094be6b21c5b9991983eb1a82ecb6d26",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-13-wisdom-necessity-completion-and-main.md",
+      "role": "provenance",
+      "sha256": "6683d9559d8341476364da2cd041537574b5fe769032a47c5c50a729c0e76e12",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "40e3a36f79faf60560037490d9b849c89349ba9210c42d96fadcca0252004b7c",
+      "declarations": [
+        "Becoming.Frame.arises_iff",
+        "Becoming.Frame.claims_recur_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "role": "proof",
+      "sha256": "94bb18753807b3dd2c6d83c5d2e38e9b1a60d6f23a1b1fa7261c55e8d0e5f53c",
+      "declarations": [
+        "Becoming.withMove",
+        "Becoming.Run.toWithMove",
+        "Becoming.Run.ofWithMove",
+        "Becoming.Run.ofWithMove_toWithMove",
+        "Becoming.Run.toWithMove_ofWithMove",
+        "Becoming.Frame.world",
+        "Becoming.Frame.world_active",
+        "Becoming.Frame.configurations",
+        "Becoming.Frame.world_fixes_run",
+        "Becoming.Bisimulation",
+        "Becoming.Alike",
+        "Becoming.Bisimulation.trace",
+        "Becoming.Alike.trace",
+        "Becoming.Alike.tests",
+        "Becoming.Dependence.along"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "role": "proof",
+      "sha256": "99ff5358cf88287112db7947dc69504b2bcaa94931dbb172cb400bbd34061e3d",
+      "declarations": [
+        "Becoming.Web.roles",
+        "Becoming.Web.roles_supported",
+        "Becoming.Web.roles_dependent",
+        "Becoming.Web.roles_renewed",
+        "Becoming.Web.roles_consumed",
+        "Becoming.Web.roles_undermining",
+        "Becoming.Flow.roles",
+        "Becoming.Flow.roles_taken",
+        "Becoming.Flow.roles_given",
+        "Becoming.Flow.roles_balances",
+        "Becoming.Web.roles_not_embodied",
+        "Becoming.Web.roles_not_selfBearing",
+        "Becoming.Web.roles_unceasing"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "role": "proof",
+      "sha256": "4e25aa0f0c75ac33b47b3b1dd7f0399ba55ec1f5dd5d83fd23e8575e8dc69703",
+      "declarations": [
+        "Becoming.World.ofRoles",
+        "Becoming.World.ceasingRecurs_ofRoles"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "e5da917c9c99ba89e89644785dff84e123847b71ffc8e3c2b5f7f2d26784b210",
+      "declarations": [
+        "Becoming.Web.Supported",
+        "Becoming.Web.Dependent"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125626.097616Z/Becoming.RegroupingSelection.lean",
+      "role": "proof",
+      "sha256": "7a8d9601f8c22864cffdc6cac474abf21a818c6589a9ebb6564ffc6ff5e186a1",
+      "declarations": [
+        "Becoming.Frame.regroup_same_realized_iff",
+        "Becoming.Frame.regroup_through",
+        "Becoming.Web.group_keeps_selections_iff_faithful",
+        "Becoming.Web.merged_requirement_loses_selection"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean",
+      "role": "proof",
+      "sha256": "db44669cad44018e864d9921184c7887303a4da5a473a81338c5a47cbe06de6f",
+      "declarations": [
+        "Becoming.Frame.respectsAt_iff",
+        "Becoming.Web.SameRequirements.respects",
+        "Becoming.Web.regroup_faithful_iff_requiredLevel",
+        "Becoming.Web.SameRequirements.extension_iff_widens"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
+      "role": "proof",
+      "sha256": "364b4b03df4f7c539e5f56bb978962afab2d7797f481a057e136f4ca1e192caf",
+      "declarations": [
+        "Becoming.Learning.Training.keeps_through_iff",
+        "Becoming.Learning.Training.lost_choice",
+        "Becoming.Registration.trace_keeps"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
+      "role": "proof",
+      "sha256": "a3462e8741f4992b1056ae6a6a124603e0f9ebad899d6e2e1208a08a67326da1",
+      "declarations": [
+        "Becoming.ReferencePlan.complete_history",
+        "Becoming.ReferencePlan.first_new_selection",
+        "Becoming.ReferencePlan.second_installed_choice",
+        "Becoming.ReferencePlan.first_use_succeeds",
+        "Becoming.ReferencePlan.second_use_succeeds"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
+      "declarations": [
+        "Becoming.Run.novel_by_handoff",
+        "Becoming.Run.relevance_by_handoff_of_unrestricted"
+      ]
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-13-wisdom-within-one-theory.md",
+      "role": "provenance",
+      "sha256": "82bf0b36f70e39b3a4a5ac7bc1734010bca5b11f0dd26880467c34676c864ce2",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125626.097616Z/verification.json",
+      "role": "receipt",
+      "sha256": "80a4a7a093eff3dc2c77c70bb66d59e84b8db00ef465a805ac1465a8f889f21b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean",
+      "role": "proof",
+      "sha256": "2ef4713ff88f5c3a153dadbe9d8ee76758a69812f37e301b2988e438f0df93de",
+      "declarations": [
+        "Becoming.Frame.regroup_same_realized_iff",
+        "Becoming.Frame.regroup_through",
+        "Becoming.Frame.respectsAt_iff_claims_through",
+        "Becoming.Frame.regroup_keeps_claim_selections_iff",
+        "Becoming.Frame.constant_content_keeps_state_selections",
+        "Becoming.Frame.literal_claims_separate_preservation",
+        "Becoming.Web.group_keeps_selections_iff_faithful",
+        "Becoming.Web.merged_requirement_loses_selection",
+        "Becoming.Frame.regroup_bisimulation",
+        "Becoming.Frame.regroup_bisimulation_iff",
+        "Becoming.Frame.regroup_alike_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T132140.261612Z/verification.json",
+      "role": "receipt",
+      "sha256": "0455824c2a71bf51745e124004e1570d7bb620e8fded613b9a746c2ad1c86b00",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
+      "role": "proof",
+      "sha256": "76859d099381090ca6d3767d948cca91ac6d053667c94af995363eaeaacecf5a",
+      "declarations": [
+        "Becoming.ContinuingRevision.one_cycle",
+        "Becoming.ContinuingRevision.all_cycles",
+        "Becoming.ContinuingRevision.all_cycles_amounts",
+        "Becoming.ContinuingRevision.use_step",
+        "Becoming.ContinuingRevision.renew_step",
+        "Becoming.ContinuingRevision.continuing",
+        "Becoming.ContinuingRevision.formation_to_run",
+        "Becoming.ContinuingRevision.run_at_cycle",
+        "Becoming.ContinuingRevision.run_installs",
+        "Becoming.ContinuingRevision.new_available_choice",
+        "Becoming.ContinuingRevision.retired_choice",
+        "Becoming.ContinuingRevision.cut_stops_next"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "role": "receipt",
+      "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
+      "role": "review",
+      "sha256": "4d67672ab7df1ee71c3cf111d46fb4999bc0fd8ba7e331ad09b75418aa670f03",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "role": "review",
+      "sha256": "7565fa3f6e3f74a2775c05afdc8bd47ce3c02ae1a1fcd53e0f3a6a2370d6f1a0",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean",
+      "role": "proof",
+      "sha256": "d46f15d2e512aca17541c493f224860ab4489f6da5ed8c1fd21bcd1b379e3c14",
+      "declarations": [
+        "Generative.ScientificInquiryNecessity.fallible_inquiry_bound",
+        "Generative.ScientificInquiryNecessity.error_budgets_require_difference",
+        "Generative.ScientificInquiryNecessity.run_preserves_relation",
+        "Generative.ScientificInquiryNecessity.adaptive_blindness_bound",
+        "Generative.ScientificInquiryNecessity.adaptive_service_excludes_blindness",
+        "Generative.ScientificInquiryNecessity.abstention_is_not_discrimination"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/verification.json",
+      "role": "receipt",
+      "sha256": "bae0ba96edb44ba75ee958d8a296a4b87897fa3da54765daebde6c1d95baa04e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
+      "role": "proof",
+      "sha256": "84ea8ff9ff91703d1b5e3f9d7cb064dc93481b0a9b732c35b0ede02ddfdbf5b9",
+      "declarations": [
+        "Becoming.FallibleInquiry.coverage_le_errors_add_timed_reach",
+        "Becoming.FallibleInquiry.error_bounds_require_timed_reach",
+        "Becoming.FallibleInquiry.unreached_in_time_coverage_eq_errors"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T125313.109762Z/verification.json",
+      "role": "receipt",
+      "sha256": "27cf7417826cc785919b437d7e2708bd32672cd7ff84d57bf3cf477c0b8ce55e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
+      "role": "proof",
+      "sha256": "247d0910222d42c9d23862f7828f1b966613e47e1552e40d419dfc9329008a1f",
+      "declarations": [
+        "Becoming.TimedResponse.answer_alike_before",
+        "Becoming.TimedResponse.Delayed.answers_before_and_after",
+        "Becoming.TimedResponse.Delayed.constant_read_ignores"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "role": "review",
+      "sha256": "26d0c1bc43e6a406b8e5d4e9c15378846f284301adffcbb3546a0cfd6a216e13",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
+      "role": "proof",
+      "sha256": "cb5081e849c359a4a1e807eeda1ba05eccd9eeed842158bbb083e524f1feb8ef",
+      "declarations": [
+        "Becoming.Frame.relevance",
+        "Becoming.livingSignificance_of_unrestricted",
+        "Becoming.relevance_least",
+        "Becoming.livingSignificance_relevance_iff",
+        "Becoming.Ranking.possible_tie",
+        "Becoming.Ranking.readings_rank_presence",
+        "Becoming.Ranking.sharing_presence",
+        "Becoming.Ranking.Pause.pause_ranked_below"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md",
+      "role": "review",
+      "sha256": "eb1e8c2739c6ab77454a4b0bc783b85d68c169839436f63dd11129c7070ab2dd",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MATHEMATICS-GROUNDING-RESOLUTION.md",
+      "role": "review",
+      "sha256": "dd17a096576d981e06771c28757f7addd189f3c99b97ac0708a23d64b2a1de24",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean",
+      "role": "proof",
+      "sha256": "1b28083176e41d2e73b5e764b67e12503e693e22df3c40552b2e0f1a40e22571",
+      "declarations": [
+        "Generative.ExplanatoryContextualStructure.different_realization_forces_distinction",
+        "Generative.ExplanatoryContextualStructure.every_exact_account_has_canonical_factor",
+        "Generative.ExplanatoryContextualStructure.unique_common_operational_structure"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningContexts.lean",
+      "role": "proof",
+      "sha256": "a813f8c3528874519a721d0704d20ebeef907c03ac1acce153695fdc0c99083c",
+      "declarations": [
+        "Becoming.Joining.ContextSame.iff_sameTests"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
+      "role": "proof",
+      "sha256": "a409240a36e995d0516c1517ca317c90dd9c499495e3f0f244825ae799dc487a",
+      "declarations": [
+        "Becoming.Joining.common_operation",
+        "Becoming.Joining.image_iff",
+        "Becoming.Joining.FiniteOutcomes.common_structure",
+        "Becoming.Joining.holds_image_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Presentations.lean",
+      "role": "proof",
+      "sha256": "2f142d63b722ca50e4231f3b17e8a73b4636f72207a05ca4c58e9eb2ce79848f",
+      "declarations": [
+        "Becoming.Presentations.canonical_factor",
+        "Becoming.Presentations.reduced_exact_kernel"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodes.lean",
+      "role": "proof",
+      "sha256": "7bb613cf842d21d353576ccd198eb6596a91da87546b44b3e8bec602e534e7e2",
+      "declarations": [
+        "Becoming.Joining.codes_apart_of_possible",
+        "Becoming.Joining.FiniteOutcomes.lifts_of_exact"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryHistoryInterfaces.lean",
+      "role": "proof",
+      "sha256": "dc86c689d1d5a07db6a198474fdd3b27c12e4081db5649da1d1888df69d9268c",
+      "declarations": [
+        "Generative.ExplanatoryHistoryInterfaces.all_joining_contexts_iff_boundaries",
+        "Generative.ExplanatoryHistoryInterfaces.every_exact_joining_account_retains_interfaces",
+        "Generative.ExplanatoryHistoryInterfaces.different_histories_same_required_interface",
+        "Generative.ExplanatoryHistoryInterfaces.all_exact_accounts_factor_through_interfaces"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+      "role": "proof",
+      "sha256": "4c9c2ff814f1e5d2fbd9948a7466833b438ae8875cd5dcb41a2897aa60c9b3f3",
+      "declarations": [
+        "Generative.ExplanatoryJoiningBranches.every_exact_account_has_canonical_factor",
+        "Generative.ExplanatoryJoiningBranches.operation_lifts",
+        "Generative.ExplanatoryJoiningBranches.common_multivalued_structure",
+        "Generative.ExplanatoryJoiningBranches.questions_survive_encoding"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json",
+      "role": "receipt",
+      "sha256": "26402c57ca37b8f231da0f05e992c23835ee526ff387ee13a171983b16243e4a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+      "role": "receipt",
+      "sha256": "ee0939ec4f4f14674312e91690ccd6bf9d436dca03b0d6664ec00c5fde832533",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "role": "review",
+      "sha256": "a78b40420146e1035b468b39f60faf9ac2a768db1df8f63adcdf4b13a3dee56f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T132140.261612Z/Becoming.RegroupingSelection.lean",
+      "role": "proof",
+      "sha256": "77735599f724d9061a49cde83d08ffb32f5313d4c50698ad98c0b41756913df9",
+      "declarations": [
+        "Becoming.Frame.regroup_same_realized_iff",
+        "Becoming.Frame.regroup_through",
+        "Becoming.Frame.respectsAt_iff_claims_through",
+        "Becoming.Frame.regroup_keeps_claim_selections_iff",
+        "Becoming.Frame.constant_content_keeps_state_selections",
+        "Becoming.Frame.literal_claims_separate_preservation",
+        "Becoming.Web.group_keeps_selections_iff_faithful",
+        "Becoming.Web.merged_requirement_loses_selection"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+      "role": "proof",
+      "sha256": "8c23a374071dcca7da22894475ddc902dcf8e89fdd5a936e5cfee6a79d49f8e9",
+      "declarations": [
+        "Becoming.alike_iff_sameTests",
+        "Becoming.Choosing.sameTests",
+        "Becoming.Choosing.not_alike"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "role": "receipt",
+      "sha256": "56724d8ceb2dbe4bf3f4e292590ac7c8e5ee9401deca7c636e4b852e44ee6f82",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "role": "proof",
+      "sha256": "7634077005d8a36d9d0a9c0f85fc408aa7a13a97aa6db60b43a5c4c722086045",
+      "declarations": [
+        "Becoming.Run.Fixes",
+        "Becoming.Run.Takes"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "role": "proof",
+      "sha256": "f76c95d000ad47ce325ef58c7891d7536ac3844ddc9deb4ccced572b8a8bd4eb",
+      "declarations": [
+        "Becoming.inputs_intervention_unfixed",
+        "Becoming.inputs_model_fixes"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+      "role": "proof",
+      "sha256": "fc25cc715d0eb60205939acf67a28ee56f66195a2213ebb3ffeaf4691746827c",
+      "declarations": [
+        "Becoming.Loop.escalation",
+        "Becoming.Loop.quiet",
+        "Becoming.Loop.web",
+        "Becoming.Loop.quietWeb"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "c4916cbf4ee72134c14a7573780ac76acbde0d256ca2799012253f5e23d89fd8",
+      "declarations": [
+        "Becoming.counterfactual_is_course",
+        "Becoming.comparison_with_act",
+        "Becoming.Loop.courses_fixed"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CounterfactualRuns.lean",
+      "role": "proof",
+      "sha256": "e0f81eccb93542aaf0f58c634ba7d9eac34990ceb141474ca5158e0f1738115c",
+      "declarations": [
+        "Becoming.Run.beyond_shown_iff",
+        "Becoming.ExchangeLaw.closedBy_course"
+      ]
+    },
+    {
+      "path": "theories/becoming/chapters/KNOWLEDGE.md",
+      "role": "review",
+      "sha256": "25ca386f9531b9b3216678223c78db3f059f05b66ee366142f5843a6b759cca4",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md",
+      "role": "review",
+      "sha256": "13ee5b1f4958f12abecc913a74c4fdcfce95bb143a8b9746cfbce3d063e159e9",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md",
+      "role": "review",
+      "sha256": "87f7a0ca590d30919b11493061bc43ac46bfd0f2e89915082639d28bc2dcc421",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T205526.452771Z/verification.json",
+      "role": "receipt",
+      "sha256": "26ec20ad76d9c1acd39de927f3400875132b4f3a9a3dbcd1c1c10ffee251afd8",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "role": "receipt",
+      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T063731.167536Z/verification.json",
+      "role": "receipt",
+      "sha256": "211c5aab48e7f1eb987c8180fe2dc979e1b8ffac24ba8777e06b081ecfbd39d7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z/verification.json",
+      "role": "receipt",
+      "sha256": "75429d3bd34fa847dd885fcb4195ab1935845952cc8e0d8f8ddb9c32ae35f2f9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+      "role": "proof",
+      "sha256": "c23cd4eacf3966b21bfb9ffe52ddbe1b9a9352531d8a9025c52d8e0ba7a56d59",
+      "declarations": [
+        "Becoming.Handoff.Run.novel_by_handoff",
+        "Becoming.Handoff.Run.relevance_by_handoff_of_unrestricted"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "role": "receipt",
+      "sha256": "f1dbe8ef5d0cea652a1db7e6120da7bf931376f375f0167ba1ee2ee246b5f4d3",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "role": "receipt",
+      "sha256": "0a2bacf2db996d0f2da49b75bda0b985f74a5b6849be2b50ab6471033917d914",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261019T000109.055377Z/verification.json",
+      "role": "receipt",
+      "sha256": "1e507f72ebb35344b2d1d4e72cee99ad82d3ae46826a4dee5ef2fc023ffabc5d",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
+      "role": "receipt",
+      "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json",
+      "role": "receipt",
+      "sha256": "e404248790d05ebecf72efd2af0313f7fb1167840713dce35fa124a275b40884",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-checks/20261008T114133.852211Z/receipt.json",
+      "sha256_pointer": "/modules/GenerativeClosure/source_sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-checks/20261008T114133.852211Z/receipt.json",
+      "sha256_pointer": "/modules/JointInterpretation/source_sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-checks/20261008T125717.615564Z/verification.json",
+      "sha256_pointer": "/source_sha256/AcquiredBinding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181823.552825Z/receipt.json",
+      "sha256_pointer": "/modules/0/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181823.552825Z/receipt.json",
+      "sha256_pointer": "/modules/1/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T113031.597794Z/verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeCore",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Roles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Space",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125626.097616Z/Becoming.RegroupingSelection.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125626.097616Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RegroupingSelection",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regrouping",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Revision",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ReferencePlan",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RegroupingSelection",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ContinuingRevision",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/verification.json",
+      "sha256_pointer": "/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261019T000109.055377Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FallibleInquiry",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.TimedResponse",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Relevance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json",
+      "sha256_pointer": "/modules/8/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryHistoryInterfaces.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json",
+      "sha256_pointer": "/modules/9/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+      "sha256_pointer": "/modules/12/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T132140.261612Z/Becoming.RegroupingSelection.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T132140.261612Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RegroupingSelection",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Histories",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Experiment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Response",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Labelled",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Derivation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Handoff",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodes.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.JoiningCodes",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Presentations.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Presentations",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joining",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningContexts.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.JoiningContexts",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CounterfactualRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.CounterfactualRuns",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "en": "Complete the substantive necessity of the whole core for independently specified wisdom: align content, grounds, uptake and claimed activity, explain why the selected claims and relations preserve the same achievement, and compare faithful alternatives.",
+    "zh": "完成独立智慧内容对整个 core 的实质必要性：对齐内容、根据、实际把握和所称活动，说明所用主张与关系为何保留同一成就，并比较忠实替代解释。"
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-08：在原目标不变、仍开放的前提下，接入已完成目的评价与本轮有限判断修正；更新实际核读并追加的core来源，不重开已完成机制。",
+      "en": "2026-10-08: retained the unchanged open target while integrating completed goal evaluation and the limited-judgment correction; updated the read and extended core source, without reopening completed mechanisms."
+    },
+    {
+      "zh": "2026-10-08：在同一主研究第12节加入三个原典的有范围比较，区分判断／能力／完整解释；承认忠实对照未被排除，保持完整目标开放。不新增独立成果或数学计数。",
+      "en": "2026-10-08: added scoped comparisons of three primary texts in the existing study, distinguishing episodes, capacities and full explanation. The faithful comparator is not excluded and the full target remains open; no extra result identity or mathematical count."
+    },
+    {
+      "zh": "2026-10-08：第13节将忠实对照落实到两项原典及既有案例，区分实际关系的保留与普遍根据的争议；收窄下一连接，不新建成果身份、不新增定理。",
+      "en": "2026-10-08: section 13 makes the faithful comparison concrete through two primary texts and the existing case, distinguishing retained relations from disputed universal grounding. The next connection is narrowed; no new result identity or theorem."
+    },
+    {
+      "zh": "2026-10-08：Ren明确纠正Dancy导向，以道德判断becoming及本理论普遍原则为正面路线。第14节修订主线并复用既有成果；保留第13节文献及反循环边界，不重开无公理起点或已完成机制。",
+      "en": "2026-10-08: Ren corrects the Dancy-led framing and directs the affirmative route through morality as appraisal of becoming under this theory’s universal principles. Section 14 reuses established results while retaining section 13’s sources and anti-circularity limits; no axiom-free gate or completed mechanism is reopened."
+    },
+    {
+      "zh": "2026-10-08：沿道德评价becoming的主线，第15节固定共同前提展开八种判断，列明改变条件、非唯一选择与错误诊断。新增哲学应用，不重复计算既有定理；角色和情境为明示构造，未冒称独立历史样本。",
+      "en": "2026-10-08: section 15 develops eight judgments from shared premises along the becoming-appraisal route, stating reversal conditions, nonunique choice and error diagnoses. This adds philosophical applications without recounting existing theorems; constructed roles and cases are not independent historical evidence."
+    },
+    {
+      "zh": "2026-10-12 P75：按 Ren“please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”，形式部分在第一部分所及范围内完成，见新记录 wisdom-root-part-one 与整合文档 §93；按登记规则目标仍为目标，开放部分明示为实际形成的对应、关切与情感的形成及充分性；理的读法依 Ren。断言不变。",
+      "en": "2026-10-12 P75: following Ren's “please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”, the formal part is completed at the scope Part I reaches, in the new record wisdom-root-part-one and §93 of the integration note; by the registry's rule the target stays a target, its open part named as the correspondence of actual formation, the formation of concern and affect, and sufficiency; 理 is read as Ren reads it. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13：第16节接通判断内容与必要关系，保留五种智慧的差异、共同回应和有限判断；以有界识别校正永久修订读法，区分已有经验重组与新增外部信息。P75 形式完成得到完整信用，普遍智慧覆盖仍开放；不新增结果身份或数学证明。",
+      "en": "2026-10-13: Section 16 connects judgment content to necessary relations, retaining five differentiated forms, common response and limited judgment. Bounded identification corrects perpetual-revision readings; reorganization of accessible experience is distinguished from new external evidence. P75 retains formal-completion credit, while universal wisdom coverage remains open; no new result identity or mathematical proof."
+    },
+    {
+      "zh": "2026-10-13 接续：第17节具体比较隐性熟练实践，区分不显式表征与关系缺失；以坐忘定位实际转化的覆盖责任。常值描述及保持所识未来的旧证明直接复用，排除空洞的规律承载；无新数学结果或全范围完成。",
+      "en": "2026-10-13 continuation: Section 17 compares tacit skilled practice, distinguishing absence of explicit representation from absent relations, and uses sitting-and-forgetting to locate a transformation coverage obligation. Existing constant-description and registered-future preservation proofs exclude vacuous law-carrying; no new mathematical result or full-scope completion."
+    },
+    {
+      "zh": "2026-10-13 第18节接通放下与结束：从指定原典内容区分共同支持改变、注意与体验改变，复用交接／解除及P91边界，反审善终、自身安宁、适应与冷酷及更彻底无分别的解释。关闭这一局部连接，完整必要性覆盖仍开放；无新数学结果。",
+      "en": "2026-10-13 Section 18 connects letting-go and ending: specified primary content distinguishes changed shared support from changed attention/experience; transfer/discharge and P91 delimit the connection. Counterreview retains appropriate ending, tranquility itself, adaptation without ethical warrant and stronger non-discrimination accounts. This local connection is supplied; full necessity coverage remains open, with no new mathematical result."
+    },
+    {
+      "zh": "2026-10-13 第19节：以理论智慧检验共同论证，保留内容、根据与理解的区别，分列分支条件；直接复用并绑定旧闭包／共同解释的24项空报告。全范围目标转向联合根前提的实质根据，不以逐项例子或术语翻译替代；无新数学成果。",
+      "en": "2026-10-13 Section 19 tests the common argument with theoretical wisdom, separates content/grounds/understanding and branch conditions, and reuses 24 source-bound empty audits from the old closure/joint-interpretation results. Full scope turns on substantive joint root warrant, not more examples or terminological translation; no new mathematical result."
+    },
+    {
+      "zh": "2026-10-13 第20节：实际把握的必要联系与发现路径分开；偶然发现、直接领会和冗余根据修正可靠来源／单链依赖的过强读法。源绑定复用五项习得绑定声明，未新增数学信用；完整必要性目标保持。",
+      "en": "2026-10-13 Section 20 separates operative grasp from discovery routes; chance discovery, direct apprehension and redundant grounds defeat overstrong reliable-source/single-chain readings. Five acquired-binding declarations are reused with source-bound evidence, without new mathematical credit; full necessity remains active."
+    },
+    {
+      "zh": "2026-10-13 第21节：所称依存而非全部表示的必要保留；复用代入、同值误接与核心接合，揭示全使用量词不能移给一次智慧。形式源码及依赖绑定原回执，没有新增数学信用或把零前提元逻辑变成当前门槛。",
+      "en": "2026-10-13 Section 21 requires attributed dependencies rather than the entire representation, reusing substitution, equal-value capture and core composition. The all-consumer quantifier cannot be transferred to one wise episode. Sources and dependency are bound to original receipts, without new mathematical credit or an added premise-free metalogical gate."
+    },
+    {
+      "zh": "2026-10-13 Ren 明确要求完成所讨论全部智慧的必要关系并确立整个 core 根基地位，全部完成后提交 main。当前仍开放，未把局部接通或元数据检查当作结项。",
+      "en": "2026-10-13 Ren explicitly requires necessity across all wisdom under discussion and the foundation of the whole core, followed by a commit to main after full completion. The target remains open; local integrations and metadata checks are not completion."
+    },
+    {
+      "zh": "2026-10-13 §22核对从智慧内容进入整个core的现有接口：Frame.world 与 World.ofRoles 保留不同关系；依存同名不完成语义对应。既有证明已完成，普遍根基必要性仍开放。",
+      "en": "2026-10-13 Section 22 audits existing interfaces from wisdom content to the whole core: Frame.world and World.ofRoles preserve different relations, and a shared dependency label does not establish semantic correspondence. Existing proofs retain completion; universal root necessity remains open."
+    },
+    {
+      "zh": "2026-10-13 按Ren“就是一个理论”的纠正，§23撤去局部接口局限等于全体缺口的表述，正式连接 P91/P93 并接入 P99/P89 的已有完成。四项适配不增独立成果身份；完整必要性仍开放。",
+      "en": "2026-10-13 Ren’s one-theory correction is implemented in Section 23: local interface limits are not whole-theory gaps; P91/P93 are formally composed and completed P99/P89 connections incorporated. Four adapters add no independent result identity; full necessity remains open."
+    },
+    {
+      "zh": "2026-10-13 §24将共同保留判据推广到任意Frame的主张成立状态，并在同一给定过程的字面读法中分开跨配置选择与主张保真；四项新增适配，模块合计八项，不新建模型或独立成果。完整慧根仍开放。",
+      "en": "2026-10-13 Section 24 generalizes the common criterion to arbitrary Frame realization and separates state-selection preservation from claim fidelity on a literal reading of the same supplied process. Four added adapters, eight total, without a new model or independent result; the full wisdom root remains open."
+    },
+    {
+      "zh": "2026-10-13 §25接入P103已完成的同历史持续与真实损失，收束取得→使用→后继修订的既有完成信用。使用原回执，无新定理；全选择保留不再作为这项操作成就的必要条件。目标陈述对齐当前全智慧必要性授权，早期形成研究的独立范围保留。",
+      "en": "2026-10-13 Section 25 consumes completed P103 same-history continuation and real loss, crediting existing acquisition→use→successor revision. Reuses original evidence without a new theorem; all-choice preservation is not necessary for this operational achievement. Aligns the current target statement with authorized universal wisdom necessity while retaining earlier formation work’s separate scope."
+    },
+    {
+      "zh": "2026-10-13 §26将已完成的可错辨别、跨描述动态限制及及时回应接入慧根，移除以逐次正确作为关系必要性前提的要求。三份原证明及44份当前源依赖核对，不新建模型或成果；全部智慧与整个core的共同必要性仍开放。",
+      "en": "2026-10-13 Section 26 integrates completed fallible discrimination, cross-description dynamic bounds and timely response, removing perfect answering as a prerequisite for this relational necessity. Three existing proofs and 44 current source dependencies were checked without a new model or result; universal wisdom and whole-core necessity remain open."
+    },
+    {
+      "zh": "2026-10-13 §27复用一般Frame的当前实现相关及原生排序边界，接通领会、观照和合宜结束；明确未来产出、全部数学本体及体验生成不是本次新增门槛。核对Relevance原证明和32份依赖，不新建模型或数学成果；剩余负担集中到整个core的共同构成必要性。",
+      "en": "2026-10-13 Section 27 consumes general-Frame realization relevance and native ranking boundaries for apprehension, contemplation and ending. Future output, complete mathematical ontology and experience generation are not new gates. Original Relevance evidence and 32 dependencies are verified without a new model or theorem; the remaining burden is the whole core’s joint constitutive necessity."
+    },
+    {
+      "zh": "2026-10-13 §28接入共同接合结构及实际历史界面：区别共同必要因子、约简表示及完整智慧内容；将接续的实际历史边界接回§§24–27。11项原声明、两份原回执保留，无新模型或数学；全目标仍开放。",
+      "en": "2026-10-13 Section 28 joins common joining structure and actual-history interfaces, separating the necessary common factor, reduced representation and full wisdom content. The history boundary connects to sections 24–27. Eleven original declarations and two receipts are retained; no new model or mathematics, and the full target remains open."
+    },
+    {
+      "zh": "2026-10-13 §29新增三个P91→P69纯核心适配，模块11项声明实查通过且空公理；保持同一关系R与原过程。补入P76原边界，保留先前八项源码与回执；未升级普遍慧根结论。",
+      "en": "2026-10-13 Section 29 adds three checked axiom-free P91→P69 adapters, 11 module declarations total, keeping R and the original processes. P76 boundaries and the previous eight-declaration source/receipt are retained; universal wisdom necessity is not upgraded."
+    },
+    {
+      "zh": "2026-10-13 §30将P53/P68/P80已完成证明接入替代说明检验，明确记录省略与完整规律的区别；四份原源码新增证据绑定，未新增数学或升级全部慧根。",
+      "en": "2026-10-13 Section 30 connects completed P53/P68/P80 results to a rival comparison, distinguishing record omission from full laws. Four original source bindings are added, with no new mathematics or upgrade of universal wisdom necessity."
+    },
+    {
+      "zh": "2026-10-13 §31接用认识研究的内容保留、可错支持及历史根据，修正§19可能过强的共同根据读法；既有风险定理和知识真值要求不变。无新数学，全部慧根目标仍开放。",
+      "en": "2026-10-13 Section 31 connects retained content, fallible support and historical warrant from the knowledge studies, correcting a potentially overstrong section 19 reading. Existing risk results and knowledge’s truth requirement remain unchanged. No new mathematics; the whole-root target remains open."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `ContinuingRevision.all_cycles_account` → `ContinuingRevision.all_cycles_amounts`、`FallibleInquiry.error_budgets_require_timed_reach` → `FallibleInquiry.error_bounds_require_timed_reach`、`FallibleInquiry.unreached_by_deadline_coverage_eq_errors` → `FallibleInquiry.unreached_in_time_coverage_eq_errors`；陈述、证明与定理数不变；Lean 源：Unfolding、Bridge、FallibleInquiry、TimedResponse、Mechanism、Response、Counterfactual 只改名（及相应的文档字符串）；Revision 另加入把 `Revising` 读作 Stock 实例的定理；ReferencePlan 另加入作为 Stock 与 Contacts 实例的定理；ContinuingRevision 另加入作为 Stock 实例的定理，循环的燃料与产出成为参数，绑定改为新回执（见检查范围）；WISDOM-AND-CONTEXT 只把 `Law.const_makesSense_iff` 改为 `Law.const_identifiesAlike_iff`；检查范围中第25节“ContinuingRevision 当前源码与 P103 原回执一致”改为第25节时的核对，因其字节已随本批改变。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `ContinuingRevision.all_cycles_account` → `ContinuingRevision.all_cycles_amounts`, `FallibleInquiry.error_budgets_require_timed_reach` → `FallibleInquiry.error_bounds_require_timed_reach`, `FallibleInquiry.unreached_by_deadline_coverage_eq_errors` → `FallibleInquiry.unreached_in_time_coverage_eq_errors`; statements, proofs and theorem counts unchanged; Lean sources: Unfolding, Bridge, FallibleInquiry, TimedResponse, Mechanism, Response, Counterfactual only renamed (with the matching docstrings); Revision with theorems added that read `Revising` as an instance of Stock; ReferencePlan with theorems added as instances of Stock and Contacts; ContinuingRevision with theorems added as instances of Stock, and fuel and yield of the cycle made parameters; bindings move to the new receipts (see validation scope); WISDOM-AND-CONTEXT only renames `Law.const_makesSense_iff` to `Law.const_identifiesAlike_iff`; in the validation scope, section 25’s “current ContinuingRevision bytes match” becomes the check made at section 25, since this batch changed those bytes. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2, starting from the readability draft. The target becomes the statement. The limitations (4,834 characters), the section-by-section correspondence (sections 15–31) and the section-by-section evidence (5,529 characters of receipt matching) become sixteen progress lines with anchored study links, six not-required items, nine does-not-show items, two shared boundaries, a shorter correspondence and one evidence paragraph. Kept here and in the snapshot rather than in public text: section and round labels (P75, P76, P83, P89, P91, P93, P99, P103, P53/P68/P80, P69), receipt timestamps and per-section audit counts, the earlier next step’s instruction not to rebuild the common operational factor and joint content/step preservation, and the remark that the three non-statistical branches are no longer left unaddressed. The third counterexample drops its section labels. No premise, status, dependency, related entry, reference, proof binding or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root.md); the exact earlier record is text_versions[0].",
+      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2，以可读性草案为起点。目标成为陈述。限制（4,834 字符）、逐节对应（第15–31节）与逐节证据（5,529 字符的回执核对）改为十六行带锚点研究链接的“已接通”、六项“不要求”、九项“未表明”、两项通用边界、较短的对应与一段证据。以下保留于本沿革与快照而不入公开字段：章节与轮次标记（P75、P76、P83、P89、P91、P93、P99、P103、P53/P68/P80、P69）、回执时间戳与逐节审计计数、原下一步中“共同操作因子及内容／步骤同一关系保留已接通、不再重建”的指示，以及“三个非统计分支不再列为未处理”的说明。第三个反例去掉章节标记。前提、状态、依赖、相关条目、引用、证明绑定及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root.md)；迁移前的完整记录为 text_versions[0]。"
+    },
+    {
+      "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
+      "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Dependence.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；Relevance.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；Histories.lean（仅改文件头：步与主张可判定的有限框架的构造性证明现由 Becoming.Likeness 给出；陈述与证明不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Dependence.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); Relevance.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); Histories.lean (header only: the constructive proof for finite frames with decided steps and claims is now Becoming.Likeness's; statements and proofs unchanged)."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：Bridge.lean（新增核心分支检验与外围检验之间的互译；原有声明逐字节不变）。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to Bridge.lean (the translation between the core's branching tests and the periphery's tests added; earlier declarations byte-identical)."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Bridge.lean（整合 I1：same_iff_bisimilar 作为以排中律为假设的核心定理、separated_iff，以及自身之善第二步即剖面上的 N_rel；原有陈述不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Bridge.lean (integration I1: same_iff_bisimilar as a core theorem with excluded middle a hypothesis, separated_iff, and the self-good second step as N_rel on profiles; earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Unfolding.lean（整合 I3a：新增“规律由其迹固定”（same_steps_iff_traces）；原有陈述不变）；Bridge.lean（整合 I3a：七个外围族的实例节（RelationalGrounding、ProtectionPriorityRival、ChanceAdequacy、FallibleInspection、BecomingReversibility、DynamicConsequences、DerivedHistoryLaw）；原有陈述不变）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Unfolding.lean (integration I3a: a law is fixed by its traces (same_steps_iff_traces) added; earlier statements unchanged); Bridge.lean (integration I3a: instance sections for seven periphery families (RelationalGrounding, ProtectionPriorityRival, ChanceAdequacy, FallibleInspection, BecomingReversibility, DynamicConsequences, DerivedHistoryLaw); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Unfolding.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Roles.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Space.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Relevance.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Histories.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Experiment.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Mechanism.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Response.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Counterfactual.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Relevance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Histories.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Experiment.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Mechanism.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Response.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Counterfactual.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节，[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)）：此前说“第二部分”断言公理或 G0 为第二部分定理之处，改为“以那一条公理为条件”，指向章节 §6.15；理论不断言这一条件。断言、证明与证据不变。",
+      "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；ReferencePlan.lean（P129：新增 alike_iff_agreeOn（Iff.rfl）与同名异义说明；已有陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); ReferencePlan.lean (P129: alike_iff_agreeOn (Iff.rfl) and a homonym note added; existing statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in CORE-CONSTRAINT-AND-WISDOM.md, EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md, KNOWLEDGE-CONTENT-AND-ERROR.md, KNOWLEDGE-REASONS-AND-STANDARDS.md, KNOWLEDGE.md, MATHEMATICS-GROUNDING-RESOLUTION.md, META-ATTRACTOR-RECONCILIATION.md, SCIENTIFIC-INQUIRY-CONDITIONS.md, WISDOM-AND-CONTEXT.md, WISDOM-RESPONSE-NECESSITY.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): KNOWLEDGE.md, META-ATTRACTOR-RECONCILIATION.md, WISDOM-AND-CONTEXT.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance); authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): KNOWLEDGE.md, WISDOM-AND-CONTEXT.md now use the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean, Relevance.lean, Response.lean, Unfolding.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Counterfactual.lean, ExchangeLaw.courseWeb is added and ExchangeLaw.world is now World.ofKind of the course's flow and that web, definitionally the same; in Space.lean, World.ofKind is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: ContinuingRevision.lean, Counterfactual.lean, FallibleInquiry.lean, ReferencePlan.lean, Response.lean, Revision.lean, TimedResponse.lean, Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z; FallibleInquiry.lean rebound to its own checker's receipt 20261018T063731.167536Z, after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: withMove, toWithMove, ofWithMove, ofWithMove_toWithMove, toWithMove_ofWithMove, world, world_active, configurations, world_fixes_run, Bisimulation, Alike, trace, trace, tests from Unfolding.lean to Labelled.lean; along from Dependence.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (ContinuingRevision.lean, Dependence.lean, Roles.lean, Space.lean, Unfolding.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3Q, the port of the inquiry and composition family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Derivation; verdicts in port-q.md), bound to core receipt 20261018T204907.920360Z. Every core statement has an empty axiom report; where the periphery proof was classical, the core proof is constructive or names its hypothesis (port-q.md). The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3Q 将探究与组合族移入核心：所引声明旁加上核心陈述（Derivation），绑定到核心回执；核心陈述的公理报告皆为空，外围经典证明处核心证明为构造性或明示其假设；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (2 in Becoming.Handoff), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Joining, JoiningCodes, JoiningContexts, Presentations; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（Joining、JoiningCodes、JoiningContexts、Presentations），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Counterfactual.lean, Experiment.lean, FallibleInquiry.lean, Mechanism.lean, ReferencePlan.lean, Response.lean, Revision.lean, TimedResponse.lean, Unfolding.lean. Rebound to receipt 20261018T235724.886433Z, 20261019T000109.055377Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R19 (the review of 19 October, fixed): KNOWLEDGE.md re-pointed after reading the change. R19 changed wording only: living significance is stated as the Lean shows (significance from every standpoint, no valence; the `living` readings do not include further generation); reasons replace Ren's past words where they served as warrant or standing; review bookkeeping was dropped; a link follows a chapter moved to history. No line this record relies on changed its content. The claim is unchanged.",
+      "zh": "2026年10月19日，R19（10月19日审查的修正）：KNOWLEDGE.md 读过改动后重新指向。R19 只改措辞：生命意义按 Lean 所证陈述（从每个立足点都有意义，不带正负；`living` 的读法不含继续生成）；以理由取代把 Ren 过去的话当作依据或地位之处；删去审查记账；一处链接随移入历史的章节更新。本记录所依的文字内容未变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Handoff.lean, Relevance.lean re-pointed after reading the change (Handoff.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; Relevance.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Handoff.lean、Relevance.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: beyond_shown_iff, closedBy_course from Counterfactual.lean to CounterfactualRuns.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Counterfactual.lean, Joining.lean, Labelled.lean, Mechanism.lean, Regrouping.lean, Relevance.lean, Response.lean, Revision.lean, TimedResponse.lean, Unfolding.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): Relevance.lean re-pointed, proof bindings rebound to core receipt 20261019T164609.214116Z. Since the reviewed hash, the cited files changed only where R22 renamed: Relevance.lean, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：Relevance.lean 重新指向，证明绑定改到核心回执 20261019T164609.214116Z。自所审哈希以来，所引文件只在 R22 改名之处改动：Relevance.lean，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Dependence.lean, Labelled.lean, Mechanism.lean, Space.lean, Unfolding.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Dependence.lean, the structure Dependence moved to World.lean; docstrings; Labelled.lean, Law.process moved to Recurrence.lean; Frame.world built by World.of; header; Mechanism.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Space.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Unfolding.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Dependence.lean、Labelled.lean、Mechanism.lean、Space.lean、Unfolding.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Dependence.lean，结构 Dependence 移到 World.lean；说明；Labelled.lean，Law.process 移到 Recurrence.lean；Frame.world 由 World.of 构造；开头说明；Mechanism.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Space.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Unfolding.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Counterfactual.lean, Labelled.lean, ReferencePlan.lean, Space.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean; ReferencePlan.lean, added_keeps, new_contact_choice and trace_conserves carry the proofs through the laws; their _of_law twins removed, statements unchanged; Space.lean, falls_stop_unrefuted proved as the whole-number instance of Amounts.rests_unrefuted, statement unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Counterfactual.lean、Labelled.lean、ReferencePlan.lean、Space.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean；ReferencePlan.lean，added_keeps、new_contact_choice 与 trace_conserves 承载经律的证明；其 _of_law 孪生删去，陈述不变；Space.lean，falls_stop_unrefuted 作为 Amounts.rests_unrefuted 的整数实例证明，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Ranking.Rest.rest_ranked_below (now Ranking.Pause.pause_ranked_below); g0_of_unrestricted (now livingSignificance_of_unrestricted); g0_relevance_iff (now livingSignificance_relevance_iff). Proof bindings (Handoff.lean, Labelled.lean, ReferencePlan.lean, Relevance.lean, Revision.lean, Roles.lean, Space.lean, Unfolding.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Handoff.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; ReferencePlan.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Relevance.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Revision.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Roles.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Space.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Unfolding.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; WISDOM-AND-CONTEXT.md, names follow the R30 rename table. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Ranking.Rest.rest_ranked_below（现为 Ranking.Pause.pause_ranked_below）；g0_of_unrestricted（现为 livingSignificance_of_unrestricted）；g0_relevance_iff（现为 livingSignificance_relevance_iff）。证明绑定（Handoff.lean、Labelled.lean、ReferencePlan.lean、Relevance.lean、Revision.lean、Roles.lean、Space.lean、Unfolding.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Handoff.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；ReferencePlan.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Relevance.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Revision.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Roles.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Space.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Unfolding.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；WISDOM-AND-CONTEXT.md，名称随 R30 改名表。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (ContinuingRevision.lean, Counterfactual.lean, Dependence.lean, Joining.lean, JoiningContexts.lean, Mechanism.lean, ReferencePlan.lean, Regrouping.lean, Response.lean, Roles.lean, Space.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: ContinuingRevision.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Counterfactual.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Dependence.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Joining.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; JoiningContexts.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Mechanism.lean, GoAlike moved to Laws.lean, defined as GoAlikeUnder at equality; ReferencePlan.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Regrouping.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Response.lean, responsive_comparison proves the two excesses itself, with no condition, statement unchanged; Roles.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Space.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（ContinuingRevision.lean、Counterfactual.lean、Dependence.lean、Joining.lean、JoiningContexts.lean、Mechanism.lean、ReferencePlan.lean、Regrouping.lean、Response.lean、Roles.lean、Space.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：ContinuingRevision.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Counterfactual.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Dependence.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Joining.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；JoiningContexts.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Mechanism.lean，GoAlike 移到 Laws.lean，定义为相等处的 GoAlikeUnder；ReferencePlan.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Regrouping.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Response.lean，responsive_comparison 自证两个超出，不经条件，陈述不变；Roles.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Space.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: ReferencePlan.first_installed_choice (now ReferencePlan.first_new_selection); World.arisingRecurs_ofRoles (now Web.roles_unceasing). Proof bindings (Counterfactual.lean, CounterfactualRuns.lean, Dependence.lean, Derivation.lean, Experiment.lean, Histories.lean, Joining.lean, JoiningCodes.lean, Presentations.lean, ReferencePlan.lean, Response.lean, Revision.lean, Space.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Counterfactual.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; CounterfactualRuns.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Dependence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Derivation.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Experiment.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Histories.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Joining.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; JoiningCodes.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Presentations.lean, takes as its final section PresentationFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; ReferencePlan.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Response.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Revision.lean, takes as its final section RevisionRuns, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Space.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：ReferencePlan.first_installed_choice（现为 ReferencePlan.first_new_selection）；World.arisingRecurs_ofRoles（现为 Web.roles_unceasing）。证明绑定（Counterfactual.lean、CounterfactualRuns.lean、Dependence.lean、Derivation.lean、Experiment.lean、Histories.lean、Joining.lean、JoiningCodes.lean、Presentations.lean、ReferencePlan.lean、Response.lean、Revision.lean、Space.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Counterfactual.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；CounterfactualRuns.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Dependence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Derivation.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Experiment.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Histories.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Joining.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；JoiningCodes.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Presentations.lean，以末节收入 PresentationFrames（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；ReferencePlan.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Response.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Revision.lean，以末节收入 RevisionRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Space.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Proof bindings (Relevance.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: Relevance.lean, Web.paths_one_object added; the readings of possibility read worlds as webs (restated, study section 225); Ranking.stepwise_iff moved here. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：证明绑定（Relevance.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：Relevance.lean，新增 Web.paths_one_object；可能性读法把世界读作网（重述，见研究第 225 节）；Ranking.stepwise_iff 移入。论断不变。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/1672b6c823d1d4b0/wisdom-root.json",
+      "sha256": "1672b6c823d1d4b059af4f79224b5fc8a7819e32fa34c59a8ac816dd6be24549",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
+    }
+  ]
+}

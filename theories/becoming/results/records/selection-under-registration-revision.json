@@ -345,18 +345,6 @@
       "en": "P93: records the checked exact revision criterion and local execution interface after actual Lean verification; all prior results and stronger boundaries retained."
     },
     {
-      "zh": "2026-10-13 接续反审：核读已成 CalibrationRenewal 与 LearnedProcedureTransmission，纠正泛化的待做描述，区分选择能力、实际对应和配方修订；旧回执哈希匹配，不重复计为新结果。",
-      "en": "13 October 2026 continuation: rereads completed CalibrationRenewal and LearnedProcedureTransmission, corrects overbroad remaining-work descriptions, and separates choice capacity, actual correspondence and recipe revision. Existing receipt hashes match; no duplicate result is counted."
-    },
-    {
-      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
-      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
-    },
-    {
-      "zh": "P99 结项后更新接续范围；旧回执与证明不变，新同历史连接有自己的成果身份。",
-      "en": "Updates continuation after P99 closure; old receipts and proofs unchanged, with the new same-history connection recorded under its own result identity."
-    },
-    {
       "zh": "P103 完整整合复核：既有主张及冻结证明保持，理论与原研究接通受支持的反复修订；旧未完成表述按日期保留。",
       "en": "P103 integration review preserves existing claims and frozen proofs while the theory/study connect supported recurring revision; older frontiers remain dated history."
     },
@@ -373,43 +361,21 @@
       "en": "14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Revision with theorems added that read `Revising` as an instance of Stock; bindings move to the new receipts (see validation scope); the claim now states the general laws of stock first (Becoming.Stock’s balanced_iff, feasible_iff_covered, product_feasible_iff), with the Revising example as their instance and covered_not_enacted and linked_not_enacted making the distinction of discrimination, support and enactment a law; a proof binding for Stock.lean is added (receipt 20261013T204910.042715Z). Status unchanged; the claim is rewritten law-first, and the examples keep their statements and proofs, with no reproof credited to them."
     },
     {
-      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：LearnedProcedureTransmission.lean（新增运行条件与循环律，既有陈述不变）。对习得程序传递验证文件的引用改为其运行目录 20261008T193434.751521Z，其中正是本记录核验过的字节（哈希相同）；顶层文件现为新传递律的较晚运行 20261013T211356.378776Z。",
-      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to LearnedProcedureTransmission.lean (run conditions and the cycle law added; existing statements unchanged). The reference to the learned-procedure-transmission verification file now names its run folder 20261008T193434.751521Z, which holds the bytes this record verified (same hash); the top-level file now holds the later run 20261013T211356.378776Z for the new transmission laws."
-    },
-    {
-      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Stock.lean（整合 I3d：新增所汲取而不补充的水平（FallsBy、trace_falls、falls_iff、trace_exhausts、zero_of_add_le、exhausted_within、draws_nothing_from_empty）；原有陈述不变）。",
-      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Stock.lean (integration I3d: a level drawn on and not replenished added (FallsBy, trace_falls, falls_iff, trace_exhausts, zero_of_add_le, exhausted_within, draws_nothing_from_empty); earlier statements unchanged)."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EVOLUTION-CALIBRATION-RENEWAL.md, META-ATTRACTOR-RECONCILIATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
-      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): COMMON-ORGANIZATION.md, META-ATTRACTOR-RECONCILIATION.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
-    },
-    {
       "en": "17 October 2026, wording: P-numbers removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Revision.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     },
     {
-      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Stock.lean). The claim is unchanged.",
-      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
-    },
-    {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Revision.lean, Stock.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
-    },
-    {
-      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Revision.lean). The claim is unchanged.",
-      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     },
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Registration.History (now Registration.AlikeUpTo); Registration.history_keeps (now Registration.alikeUpTo_keeps); Registration.through_history_later (now Registration.through_alikeUpTo_later). Proof bindings (Revision.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Revision.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Registration.History（现为 Registration.AlikeUpTo）；Registration.history_keeps（现为 Registration.alikeUpTo_keeps）；Registration.through_history_later（现为 Registration.through_alikeUpTo_later）。证明绑定（Revision.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Revision.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     },
     {
-      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Registration.keeps_iff (now Learning.Training.keeps_through_iff). Proof bindings (Revision.lean, Stock.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Revision.lean, takes as its final section RevisionRuns, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Stock.lean, takes as its final section StockTraces, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
-      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Registration.keeps_iff（现为 Learning.Training.keeps_through_iff）。证明绑定（Revision.lean、Stock.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Revision.lean，以末节收入 RevisionRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Stock.lean，以末节收入 StockTraces（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+      "en": "2026-10-20: 10 bookkeeping notes condensed from 13 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/94f64dec79f3acc7/selection-under-registration-revision.json and in git.",
+      "zh": "2026-10-20：10 条记账性说明合并（13 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/94f64dec79f3acc7/selection-under-registration-revision.json 和 git 中。"
     }
   ]
 }

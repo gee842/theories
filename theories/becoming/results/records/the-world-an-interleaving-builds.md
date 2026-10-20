@@ -80,7 +80,12 @@ Aliases: `the world an interleaving builds`, `交错所构造的世界`, `course
 ### History
 
 - 20 October 2026: added (R33, G10 of the twentieth review, interleavings build the World): the construction, its balance, the course of standings and the end shared by interleavings of the same courses, and the adjacent swap; the general step-by-step relation is open (study section 224).
-- 20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.
+- 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](the-world-an-interleaving-builds.json).
+
+<a id="earlier-text--早期文本"></a>
+### Earlier text
+
+- [the-world-an-interleaving-builds.json](../../../../_process/architecture/history/b89afba8867c43b4/the-world-an-interleaving-builds.json) (sha256 `b89afba8867c43b4…`): Exact record bytes before its history was compacted (R35, E3); every condensed note is kept here.
 
 </details>
 

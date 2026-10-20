@@ -1,0 +1,527 @@
+{
+  "schema_version": 2,
+  "id": "what-a-method-comes-to-say-in-the-limit",
+  "title": {
+    "en": "What a method comes to say in the limit",
+    "zh": "方法在极限中所能说出者"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T13:11:06+00:00",
+  "statement": {
+    "en": "A method fixed by the record verifies in the limit unions of closed readings and refutes meets of open ones. Settling is verified in the limit, at no finite stretch; recurrence is refuted in the limit and, under Markov's principle, verified there by no method.",
+    "zh": "由记录确定的方法在极限中证实闭读法之并、否证开读法之交。止定在极限中被证实，而不在任何有限片段；复现在极限中被否证，在马尔可夫原则下没有方法在极限中证实它。"
+  },
+  "laws": [
+    {
+      "en": "A method guesses yes or no at each horizon of a run; fixed by the record, its guess at k is the same on runs agreeing up to k. It verifies a reading in the limit where it converges to yes exactly inside, and refutes it in the limit where its yes recurs exactly inside; converging to no puts a run outside.",
+      "zh": "方法在运行的每个界上猜是或否；由记录确定时，它在 k 处的猜测在到 k 为止一致的运行上相同。它在极限中证实读法，指它恰在读法之内收敛到是；在极限中否证读法，指它的是恰在读法之内复现；收敛到否则运行在外。",
+      "declarations": [
+        "Becoming.Limit.Method",
+        "Becoming.Limit.ByRecord",
+        "Becoming.Limit.Converges",
+        "Becoming.Limit.YesFrom",
+        "Becoming.Limit.YesAfter",
+        "Becoming.Limit.YesRecurs",
+        "Becoming.Limit.Verifies",
+        "Becoming.Limit.Refutes",
+        "Becoming.Limit.converges_unique",
+        "Becoming.Limit.not_recurs_of_no",
+        "Becoming.Limit.Verifies.outside_of_no",
+        "Becoming.Limit.Refutes.outside_of_no"
+      ]
+    },
+    {
+      "en": "A reading verified in the limit by a method fixed by the record is the union of closed readings \"from n on the guess is yes\"; one refuted in the limit is the meet of verifiable readings \"a yes comes at or after n\".",
+      "zh": "由记录确定的方法在极限中证实的读法，是闭读法“从 n 起猜测为是”之并；在极限中否证的读法，是可证实读法“n 处或之后有一个是”之交。",
+      "declarations": [
+        "Becoming.Limit.verifies_iff_union",
+        "Becoming.Limit.yesFrom_closed",
+        "Becoming.Limit.refutes_iff_meet",
+        "Becoming.Limit.yesAfter_verifiable"
+      ]
+    },
+    {
+      "en": "A reading of tests is verified and refuted in the limit by \"no test has failed so far\", and \"some test succeeds\" by \"some test has succeeded so far\", each fixed by the record for tests fixed by prefixes.",
+      "zh": "测试读法在极限中由“迄今无测试失败”证实并否证，“某测试成功”由“迄今某测试已成功”证实并否证；测试由前缀确定时，二者皆由记录确定。",
+      "declarations": [
+        "Becoming.Limit.noneFailed",
+        "Becoming.Limit.noneFailed_byRecord",
+        "Becoming.Limit.noneFailed_verifies",
+        "Becoming.Limit.noneFailed_refutes",
+        "Becoming.Limit.Succeeds",
+        "Becoming.Limit.someSucceeded",
+        "Becoming.Limit.someSucceeded_byRecord",
+        "Becoming.Limit.someSucceeded_verifies",
+        "Becoming.Limit.someSucceeded_refutes"
+      ]
+    },
+    {
+      "en": "The meet of two readings verified in the limit is verified by the conjunction of the guesses; the meet of two refuted in the limit is refuted by the joint guess, yes where each guess has said yes since the last joint yes.",
+      "zh": "两个在极限中被证实的读法之交，由两猜测之合取证实；两个在极限中被否证的读法之交，由联合猜测否证：自上一次联合的是以来每个猜测都说过是时，它说是。",
+      "declarations": [
+        "Becoming.Limit.both",
+        "Becoming.Limit.both_byRecord",
+        "Becoming.Limit.both_verifies",
+        "Becoming.Limit.pending",
+        "Becoming.Limit.jointly",
+        "Becoming.Limit.jointly_byRecord",
+        "Becoming.Limit.jointly_refutes"
+      ]
+    },
+    {
+      "en": "A guess of values converging on each run to the run's hypothesis verifies and refutes in the limit each reading \"the hypothesis is v\".",
+      "zh": "在每个运行上收敛到该运行之假说的取值猜测，在极限中证实并否证每个读法“假说为 v”。",
+      "declarations": [
+        "Becoming.Limit.Identifies",
+        "Becoming.Limit.says",
+        "Becoming.Limit.says_byRecord",
+        "Becoming.Limit.identifies_verifies",
+        "Becoming.Limit.identifies_refutes"
+      ]
+    },
+    {
+      "en": "With configurations told apart, \"the last step changed nothing\" is fixed by the record and verifies settling in the limit.",
+      "zh": "构型可区分时，“上一步没有改变什么”由记录确定，并在极限中证实止定。",
+      "declarations": [
+        "Becoming.Limit.still",
+        "Becoming.Limit.still_byRecord",
+        "Becoming.Limit.still_verifies",
+        "Becoming.Limit.Free.settles_verified"
+      ]
+    },
+    {
+      "en": "On the free process settling and its complement are dense; settling is neither verifiable nor refutable; under Markov's principle no method fixed by the record refutes it in the limit (the run changing where it says yes).",
+      "zh": "在自由过程上止定及其补集都稠密；止定既不可证实也不可否证；在马尔可夫原则下，没有由记录确定的方法在极限中否证它（在方法说是处改变的运行）。",
+      "declarations": [
+        "Becoming.Limit.Free.settles_dense",
+        "Becoming.Limit.Free.unsettled_dense",
+        "Becoming.Limit.Free.settles_not_verifiable",
+        "Becoming.Limit.Free.settles_not_refutable",
+        "Becoming.Limit.Free.against",
+        "Becoming.Limit.Free.against_state",
+        "Becoming.Limit.Free.settles_not_refuted"
+      ]
+    },
+    {
+      "en": "On the sequences of moves \"the last move was true\" refutes recurrence in the limit and its negation verifies that from some step on every move is false; under Markov's principle no method fixed by the record verifies recurrence in the limit.",
+      "zh": "在步序列上，“上一步为 true”在极限中否证复现，其否定在极限中证实“从某步起每步为 false”；在马尔可夫原则下，没有由记录确定的方法在极限中证实复现。",
+      "declarations": [
+        "Becoming.Limit.Sequences.lastMove",
+        "Becoming.Limit.Sequences.lastMove_byRecord",
+        "Becoming.Limit.Sequences.lastMove_refutes",
+        "Becoming.Limit.Sequences.EventuallyFalse",
+        "Becoming.Limit.Sequences.notLastMove_verifies",
+        "Becoming.Limit.Sequences.not_recurs_of_eventuallyFalse",
+        "Becoming.Limit.Sequences.against",
+        "Becoming.Limit.Sequences.against_act",
+        "Becoming.Limit.Sequences.recurs_not_verified"
+      ]
+    },
+    {
+      "en": "Saying from a run's not recurring that from some step on its moves are false, and saying which of two guesses recurs from their disjunction recurring, each give the limited principle of omniscience.",
+      "zh": "由运行不复现说出从某步起其各步为 false，以及由两猜测之析取复现说出哪个猜测复现，各自给出有限全知原则。",
+      "declarations": [
+        "Becoming.Limit.Sequences.eventuallyFalse_lpo",
+        "Becoming.Limit.Sequences.either_recurs_lpo"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Decidable configurations for settling (still and its laws); Markov's principle as the hypothesis of Free.settles_not_refuted and Sequences.recurs_not_verified; the limited principle of omniscience only as the calibrated conclusion of eventuallyFalse_lpo and either_recurs_lpo. Processes, readings and methods are otherwise arbitrary.",
+      "zh": "不加公理。止定处构型可判定（still 及其定律）；马尔可夫原则作为 Free.settles_not_refuted 与 Sequences.recurs_not_verified 的假设；有限全知原则只作为 eventuallyFalse_lpo 与 either_recurs_lpo 被校准的结论。过程、读法与方法此外任意。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Joins: of readings verified in the limit (the classical dovetail is not stated), and of readings refuted in the limit by the disjunction of the guesses, whose split is the limited principle of omniscience.",
+      "zh": "并：极限中被证实读法之并（未陈述经典的交错构造），以及由猜测之析取给出的极限中被否证读法之并，其拆分即有限全知原则。",
+      "kind": "scope"
+    },
+    {
+      "en": "That the two diagonal laws need Markov's principle: each proof uses it once; whether it can be dropped is open.",
+      "zh": "两条对角定律需要马尔可夫原则：每个证明各用它一次；能否去掉尚未定。",
+      "kind": "scope"
+    },
+    {
+      "en": "That a method can be found for every union of closed readings, or that identification follows from deciding each of finitely many hypotheses in the limit.",
+      "zh": "对闭读法的每个并都能找到方法，或由在极限中判定有限多个假说中的每一个即得辨识。",
+      "kind": "scope"
+    },
+    {
+      "en": "An instance theorem on Becoming.Learnable's orbits: the record notes that Learnable.Predicts is identification in the limit along an orbit through a map.",
+      "zh": "Becoming.Learnable 轨道上的实例定理：记录只注明 Learnable.Predicts 是经一映射沿轨道的极限辨识。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LimitVerification.lean",
+      "detail": {
+        "en": "On the free process, the run that changes where a method says yes and stays where it says no: under Markov's principle it settles exactly where the method's yes does not recur, so no method refutes settling in the limit (Free.settles_not_refuted); on the sequences, the run playing the negation of the guess does the same for verifying recurrence (Sequences.recurs_not_verified).",
+        "zh": "在自由过程上，在方法说是处改变、说否处停留的运行：在马尔可夫原则下，它恰在方法的是不复现时止定，故没有方法在极限中否证止定（Free.settles_not_refuted）；在序列上，下出猜测之否定的运行对证实复现同样如此（Sequences.recurs_not_verified）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T130853.816105Z): the 96 declarations of Becoming.LimitVerification, 65 of them theorems, have empty axiom reports; the checker verifies core purity. Built and reviewed in one session, with no separate reviewer; author review in study section 206; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T130853.816105Z）：Becoming.LimitVerification 的 96 项声明（65 项定理）公理报告为空；检查器并核对核心纯净。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 206 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Joins at the limit levels; whether the diagonal laws need Markov's principle; actual inquiries read at these levels; an independent review.",
+    "zh": "极限层级上的并；对角定律是否需要马尔可夫原则；实际探究读到这些层级上；独立审查。"
+  },
+  "correspondence": {
+    "en": "Readings verified in the limit are the Σ⁰₂ classes and those refuted in the limit the Π⁰₂ classes of the topology of runs; verification and refutation in the limit are those of formal learning theory (Putnam 1965, Gold 1967, Kelly 1996), stated with the positive form of refutation. Readings (the AI's): \"this has stopped changing\" is a claim inquiry can come to make by watching each step, though no step tells it the claim has become final; \"this changes again and again\" cannot be come to even in the limit; locating where a run stopped, from its not going on, is deciding.",
+    "zh": "极限中被证实的读法即运行拓扑的 Σ⁰₂ 类，极限中被否证的即 Π⁰₂ 类；极限中的证实与否证即形式学习理论中的（Putnam 1965、Gold 1967、Kelly 1996），否证取正面形式。读法（AI 的）：“这已不再改变”是探究可以通过逐步观察而得出并保持的主张，但没有哪一步告诉它这一主张已成定论；“这一再改变”即使在极限中也得不出；由运行不再继续而定位它在何处停止，就是判定。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LimitVerification.lean",
+  "aliases": [
+    "what a method comes to say in the limit",
+    "方法在极限中所能说出者",
+    "verification in the limit",
+    "refutation in the limit",
+    "Becoming.Limit.still_verifies",
+    "Becoming.Limit.Free.settles_not_refuted",
+    "Becoming.Limit.Sequences.recurs_not_verified"
+  ],
+  "dependencies": [
+    {
+      "id": "what-a-finite-stretch-verifies",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Becoming.Verification's Dense and its reading of verifiable and refutable readings of runs: the limit levels are stated above them.",
+        "zh": "复用 Becoming.Verification 的 Dense 及其对运行读法可证实与可否证的读法：极限层级陈述于其上。"
+      },
+      "interface": {
+        "output": {
+          "en": "Verifiable, refutable and dense readings of runs.",
+          "zh": "运行的可证实、可否证与稠密读法。"
+        },
+        "input": {
+          "en": "Readings verified or refuted in the limit, and where settling and recurrence sit.",
+          "zh": "极限中被证实或被否证的读法，以及止定与复现的位置。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Verification.lean"
+      }
+    },
+    {
+      "id": "what-a-finite-history-refutes",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Becoming.Horizon's Run.AgreeUpTo, Adheres, tests fixed by prefixes, Markov's principle and the sequences of moves with their recurrence.",
+        "zh": "复用 Becoming.Horizon 的 Run.AgreeUpTo、Adheres、由前缀确定的测试、马尔可夫原则及步序列与其复现。"
+      },
+      "interface": {
+        "output": {
+          "en": "Agreement up to a horizon, tests, Markov's principle, the sequences.",
+          "zh": "到一界的一致、测试、马尔可夫原则、序列。"
+        },
+        "input": {
+          "en": "Methods fixed by the record, readings of tests in the limit, recurrence in the limit.",
+          "zh": "由记录确定的方法、极限中的测试读法、极限中的复现。"
+        },
+        "conditions": {
+          "en": "Markov's principle where a law takes it.",
+          "zh": "定律取之处的马尔可夫原则。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean"
+      }
+    },
+    {
+      "id": "when-the-runs-of-a-process-settle",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Becoming.Enough's Settles and its free process of two configurations with the alternating run.",
+        "zh": "复用 Becoming.Enough 的 Settles 及其两构型的自由过程与交替运行。"
+      },
+      "interface": {
+        "output": {
+          "en": "Settling of runs, the free process, a run that does not settle.",
+          "zh": "运行的止定、自由过程、不止定的运行。"
+        },
+        "input": {
+          "en": "Settling verified in the limit and refuted in the limit by no method.",
+          "zh": "止定在极限中被证实，且在极限中不被任何方法否证。"
+        },
+        "conditions": {
+          "en": "Decidable configurations where stated.",
+          "zh": "所述处构型可判定。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Enough.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "the-last-change-of-a-run",
+      "detail": {
+        "en": "Deciding settling outright is the limited principle of omniscience; here settling is verified in the limit with no premise beyond decidable configurations.",
+        "zh": "直接判定止定即有限全知原则；此处止定在极限中被证实，除构型可判定外无需前提。"
+      }
+    },
+    {
+      "id": "learnable-through-registration",
+      "detail": {
+        "en": "Learnable.Predicts is identification in the limit along an orbit through a map; identification decides each hypothesis in the limit.",
+        "zh": "Learnable.Predicts 是经一映射沿轨道的极限辨识；辨识在极限中判定每个假说。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LimitVerification.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Limit.ByRecord",
+        "Becoming.Limit.Converges",
+        "Becoming.Limit.Free.after",
+        "Becoming.Limit.Free.after_agree",
+        "Becoming.Limit.Free.after_step",
+        "Becoming.Limit.Free.against",
+        "Becoming.Limit.Free.againstNext",
+        "Becoming.Limit.Free.against_state",
+        "Becoming.Limit.Free.agree_after",
+        "Becoming.Limit.Free.run",
+        "Becoming.Limit.Free.settles_dense",
+        "Becoming.Limit.Free.settles_not_refutable",
+        "Becoming.Limit.Free.settles_not_refuted",
+        "Becoming.Limit.Free.settles_not_verifiable",
+        "Becoming.Limit.Free.settles_verified",
+        "Becoming.Limit.Free.toggle",
+        "Becoming.Limit.Free.unsettled_dense",
+        "Becoming.Limit.Identifies",
+        "Becoming.Limit.Method",
+        "Becoming.Limit.Refutes",
+        "Becoming.Limit.Refutes.outside_of_no",
+        "Becoming.Limit.Sequences.EventuallyFalse",
+        "Becoming.Limit.Sequences.against",
+        "Becoming.Limit.Sequences.againstNext",
+        "Becoming.Limit.Sequences.against_act",
+        "Becoming.Limit.Sequences.either_recurs_lpo",
+        "Becoming.Limit.Sequences.eventuallyFalse_lpo",
+        "Becoming.Limit.Sequences.lastMove",
+        "Becoming.Limit.Sequences.lastMove_byRecord",
+        "Becoming.Limit.Sequences.lastMove_refutes",
+        "Becoming.Limit.Sequences.notLastMove",
+        "Becoming.Limit.Sequences.notLastMove_byRecord",
+        "Becoming.Limit.Sequences.notLastMove_verifies",
+        "Becoming.Limit.Sequences.not_recurs_of_eventuallyFalse",
+        "Becoming.Limit.Sequences.or_not_self",
+        "Becoming.Limit.Sequences.recurs_not_verified",
+        "Becoming.Limit.Succeeds",
+        "Becoming.Limit.Verifies",
+        "Becoming.Limit.Verifies.outside_of_no",
+        "Becoming.Limit.YesAfter",
+        "Becoming.Limit.YesFrom",
+        "Becoming.Limit.YesRecurs",
+        "Becoming.Limit.and_congr2",
+        "Becoming.Limit.both",
+        "Becoming.Limit.both_byRecord",
+        "Becoming.Limit.both_verifies",
+        "Becoming.Limit.built",
+        "Becoming.Limit.built_eq",
+        "Becoming.Limit.clear_congr",
+        "Becoming.Limit.clear_false_of_true",
+        "Becoming.Limit.clear_of_below",
+        "Becoming.Limit.converges_unique",
+        "Becoming.Limit.eq_true_of_not_false",
+        "Becoming.Limit.identifies_refutes",
+        "Becoming.Limit.identifies_verifies",
+        "Becoming.Limit.joint",
+        "Becoming.Limit.jointly",
+        "Becoming.Limit.jointly_byRecord",
+        "Becoming.Limit.jointly_refutes",
+        "Becoming.Limit.mark",
+        "Becoming.Limit.mark_carried",
+        "Becoming.Limit.mark_cleared",
+        "Becoming.Limit.mark_kept",
+        "Becoming.Limit.mark_origin",
+        "Becoming.Limit.noneFailed",
+        "Becoming.Limit.noneFailed_byRecord",
+        "Becoming.Limit.noneFailed_refutes",
+        "Becoming.Limit.noneFailed_verifies",
+        "Becoming.Limit.not_recurs_of_no",
+        "Becoming.Limit.or_left'",
+        "Becoming.Limit.or_right'",
+        "Becoming.Limit.pending",
+        "Becoming.Limit.pending_byRecord",
+        "Becoming.Limit.refutes_iff_meet",
+        "Becoming.Limit.says",
+        "Becoming.Limit.says_byRecord",
+        "Becoming.Limit.someSucceeded",
+        "Becoming.Limit.someSucceeded_byRecord",
+        "Becoming.Limit.someSucceeded_of",
+        "Becoming.Limit.someSucceeded_refutes",
+        "Becoming.Limit.someSucceeded_verifies",
+        "Becoming.Limit.stage",
+        "Becoming.Limit.stage_eq",
+        "Becoming.Limit.still",
+        "Becoming.Limit.still_byRecord",
+        "Becoming.Limit.still_verifies",
+        "Becoming.Limit.succeeds_of_some",
+        "Becoming.Limit.true_ne_false'",
+        "Becoming.Limit.true_of_not_clear",
+        "Becoming.Limit.verifies_iff_union",
+        "Becoming.Limit.yesAfter_verifiable",
+        "Becoming.Limit.yesFrom_closed"
+      ],
+      "sha256": "14a4961d46c2925ee55cde73fc94ce44a4eb3f24bee9dcdeca829dff15f4589d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "declarations": [
+        "Becoming.ListTests.false_of_not_true",
+        "Becoming.ListTests.or_cases",
+        "Becoming.ListTests.not_ne_self",
+        "Becoming.ListTests.not_eq_true_of_false"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Verification.lean",
+      "role": "proof",
+      "sha256": "cab47ad5e7f430ba120bb22eb345cd3b0e0c519dea025ab050356865801277c2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+      "role": "proof",
+      "sha256": "12a357aa3b8ea6aad625f599fabf7dc64a4fc4b0058173747488e916e9f17f0b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Enough.lean",
+      "role": "proof",
+      "sha256": "f726f2499ea1f65ccab062c322321a4f1e8b3bc490792129a8cfa3aef040c23c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T130853.816105Z/verification.json",
+      "role": "receipt",
+      "sha256": "1062a4afd43a7c7f6f16eeee2625c5a12ce63ce2971b3bf8f3ebbe7fb69b3236"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "role": "receipt",
+      "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LimitVerification.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LimitVerification",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (O2), the next step of what-a-finite-stretch-verifies (readings verifiable or refutable in the limit, joined to the laws of settling and learning); study section 206.",
+      "zh": "2026年10月19日：新增（O2），承接 what-a-finite-stretch-verifies 的下一步（极限中可证实或可否证的读法，与止定和学习之律相接）；研究第 206 节。"
+    },
+    {
+      "en": "19 October 2026, RO (the Chinese sources on the spine): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RO added a study section; THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four section 11 status cells). The claim is unchanged.",
+      "zh": "2026年10月19日，RO（中国思想诸传统在脊柱上）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U5 (general laws read on the base): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U5 added study section 208; THE-THEORY-OF-BECOMING.md: U5 added the world reading of J3 to premise card F and section 6, a sentence each on the word half of histories (section 2), narrowing on the pure observation and evidence under fallible witnesses (section 3), a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U5（在基上读出的一般规律）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.",
+      "zh": "2026年10月19日，U5 后续（段落图）：读过改动后重新指向（BECOMING-RENEWAL-READING.md：研究第 208 节关于 Y1 段落图的一段改为已加入）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y5 (Becoming.HexagramSequences): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y5 added a study section; THE-THEORY-OF-BECOMING.md: Y5 added the section 1 paragraph on the arrangements of the 傳 with its readings, its rerun in the integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.",
+      "zh": "2026年10月19日，Y5（Becoming.HexagramSequences）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SC (a code formed between formations): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SC added a study section; THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，SC（在形成之间形成的编码）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Horizon.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Re-pointed after reading the change: Horizon.lean, imports Becoming.Ideals; stretchOrder, Run.stretches and the two equivalences moved in; six laws proved from the laws of points, statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：读过改动后重新指向：Horizon.lean，导入 Becoming.Ideals；stretchOrder、Run.stretches 与两个等价移入；六条律由点的律证明，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: Horizon.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：Horizon.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Learnable.Rests (now Learnable.Predicts). Re-pointed after reading the change: Horizon.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Verification.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Learnable.Rests（现为 Learnable.Predicts）。读过改动后重新指向：Horizon.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Verification.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Removed, with the statement kept under one name: Limit.false_of_not_true (now ListTests.false_of_not_true); Limit.or_cases' (now ListTests.or_cases). Proof bindings (LimitVerification.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Enough.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; LimitVerification.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：删去，陈述以一个名称保留：Limit.false_of_not_true（现为 ListTests.false_of_not_true）；Limit.or_cases'（现为 ListTests.or_cases）。证明绑定（LimitVerification.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Enough.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；LimitVerification.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Limit.Free.toggle_true (now ListTests.not_ne_self). Removed, with the statement kept under one name: Limit.not_eq_true_of_false (now ListTests.not_eq_true_of_false). Proof bindings (LimitVerification.lean, Prelude.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Enough.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; LimitVerification.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Verification.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Limit.Free.toggle_true（现为 ListTests.not_ne_self）。删去，陈述以一个名称保留：Limit.not_eq_true_of_false（现为 ListTests.not_eq_true_of_false）。证明绑定（LimitVerification.lean、Prelude.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Enough.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；LimitVerification.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Verification.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Proof bindings (LimitVerification.lean) rebound to core receipt 20261019T235844.485705Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; LimitVerification.lean, Limit.Tracks added; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：证明绑定（LimitVerification.lean）改到核心回执 20261019T235844.485705Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；LimitVerification.lean，新增 Limit.Tracks；保留的陈述不变；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
+    }
+  ]
+}

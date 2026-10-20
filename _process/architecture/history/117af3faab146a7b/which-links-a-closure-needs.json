@@ -1,0 +1,459 @@
+{
+  "schema_version": 2,
+  "id": "which-links-a-closure-needs",
+  "title": {
+    "en": "Which links a closure needs",
+    "zh": "闭包需要哪些联系"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T06:01:48+00:00",
+  "statement": {
+    "en": "A cut leaves every closure as it was exactly where each removed link is bypassed, and a join adds exactly what passes through it. In a world grown by attachment every condition is needed; one added condition frees exactly the grown ones it crosses.",
+    "zh": "切断使每个闭包保持原样，恰当每条被去掉的联系被绕过；连上一条联系，恰好添上经它通过的。在依附式生长的世界中，每个条件都被需要；多一个条件，恰使它跨过的生长出的条件不再被需要。"
+  },
+  "laws": [
+    {
+      "en": "Removing the links of added from a relation leaves every closure as it was exactly where each removed link has its second end within its first end's closure under what remains; for one link read both ways, exactly where each end lies within the other's closure, and under a symmetric relation where one does.",
+      "zh": "从一个关系中去掉 added 的联系，每个闭包保持原样，恰当每条被去掉的联系的后端在余下关系下处于前端的闭包之内；对双向读的一条联系，恰当两端各在对方的闭包之内；在对称关系下，恰当一端在另一端的闭包之内。",
+      "declarations": [
+        "Becoming.Cuts.Joined",
+        "Becoming.Cuts.Link",
+        "Becoming.Cuts.link_symm",
+        "Becoming.Cuts.within_congr",
+        "Becoming.Cuts.within_of_steps",
+        "Becoming.Cuts.closure_unchanged_iff_bypassed",
+        "Becoming.Cuts.link_cut_unchanged_iff",
+        "Becoming.Cuts.link_cut_unchanged_iff_of_symm"
+      ]
+    },
+    {
+      "en": "After a link between a and b is joined, g lies within f's closure exactly where it did, or f reaches one of a, b and the other reaches g; no symmetry and no decision is used.",
+      "zh": "连上 a 与 b 之间的一条联系之后，g 在 f 的闭包之内，恰当它原来就在，或 f 到达 a、b 之一而另一个到达 g；不用对称，也不用判定。",
+      "declarations": [
+        "Becoming.Cuts.within_link_iff"
+      ]
+    },
+    {
+      "en": "A formation that takes part in no link reaches only itself and nothing else reaches it, so attaching it by one link changes no closure among the other formations.",
+      "zh": "不参与任何联系的形成只到达自身，别的也到达不了它；所以以一条联系接上它，不改变其余形成之间的任何闭包。",
+      "declarations": [
+        "Becoming.Cuts.Unlinked",
+        "Becoming.Cuts.within_of_unlinked",
+        "Becoming.Cuts.not_within_unlinked",
+        "Becoming.Cuts.within_attached_iff"
+      ]
+    },
+    {
+      "en": "In a list of links each attaching, to another formation, one that took part in no earlier link, each link is listed once, and removing any one leaves its ends apart, whatever came before or after it.",
+      "zh": "在一列联系中，若每条都把一个此前不参与任何联系的形成接到另一个形成上，则每条联系只列一次，去掉任何一条都使其两端分开，无论之前或之后有什么。",
+      "declarations": [
+        "Becoming.Cuts.Links",
+        "Becoming.Cuts.links_symm",
+        "Becoming.Cuts.links_split",
+        "Becoming.Cuts.links_of_mem",
+        "Becoming.Cuts.Attaches",
+        "Becoming.Cuts.Attaches.suffix",
+        "Becoming.Cuts.Attaches.listed_once",
+        "Becoming.Cuts.attached_link_separates",
+        "Becoming.Cuts.Attaches.distinct",
+        "Becoming.Cuts.links_mem",
+        "Becoming.Cuts.links_of_link",
+        "Becoming.Cuts.mem_split",
+        "Becoming.Cuts.mem_widen",
+        "Becoming.Cuts.mem_set_apart",
+        "Becoming.Cuts.mem_append_cases",
+        "Becoming.Cuts.mem_append_right",
+        "Becoming.Cuts.exists_split",
+        "Becoming.Cuts.append_cons_assoc"
+      ]
+    },
+    {
+      "en": "With one more link joined between a and b, a grown link p–n is bypassed exactly where p reaches one of a, b and the other reaches n without it; cutting it then changes no closure exactly there.",
+      "zh": "再连上 a 与 b 之间的一条联系后，一条生长出的联系 p–n 被绕过，恰当不经它时 p 到达 a、b 之一而另一个到达 n；此时切断它不改变任何闭包，也恰在此处。",
+      "declarations": [
+        "Becoming.Cuts.joined_bypass_iff",
+        "Becoming.Cuts.joined_cut_unchanged_iff"
+      ]
+    },
+    {
+      "en": "On the base, every system is what it is through the conditions other than c exactly where any two formations taking part in c lie in one system through the others; a condition one formation takes part in is needed by no system.",
+      "zh": "在基上，每个系统只经 c 以外的条件仍是原样，恰当任何两个参与 c 的形成经其余条件处于同一系统；只有一个形成参与的条件，任何系统都不需要。",
+      "declarations": [
+        "Becoming.Flow.SharesBeside",
+        "Becoming.Flow.BothTakePart",
+        "Becoming.Flow.shares_iff_beside",
+        "Becoming.Flow.system_unchanged_without_iff",
+        "Becoming.Flow.system_unchanged_of_single"
+      ]
+    },
+    {
+      "en": "Where exactly a and b take part in c, g lies within f's system exactly where it does through the other conditions, or f reaches one of them and the other reaches g; a formation taking part only in c is alone without it, and one taking part in no condition has only itself in its system.",
+      "zh": "恰有 a 与 b 参与 c 时，g 在 f 的系统之内，恰当它经其余条件就在，或 f 到达二者之一而另一个到达 g；只参与 c 的形成，没有 c 就是孤立的；不参与任何条件的形成，其系统只有它自身。",
+      "declarations": [
+        "Becoming.Flow.withinSystem_two_takers_iff",
+        "Becoming.Flow.alone_beside_of_only",
+        "Becoming.Flow.withinSystem_of_no_part"
+      ]
+    },
+    {
+      "en": "In a world grown by attachment, each new formation taking part only in a condition exactly one earlier formation takes part in, the systems are the closures of the grown links; each grown condition is attached at one place and is needed, its two takers lying in one system and apart without it; the latest formation is alone without its condition; and what grew up to any stage is grown by attachment beside the later conditions.",
+      "zh": "在依附式生长的世界中（每个新形成只参与恰有一个先前形成也参与的条件），系统就是生长出的联系的闭包；每个生长出的条件只在一处接上，并且被需要：它的两个参与者处于同一系统，没有它就分开；最后接上的形成没有它的条件就是孤立的；生长到任何阶段为止的部分，在其后接上的条件之旁，也是依附式生长的。",
+      "declarations": [
+        "Becoming.Flow.SharesOutside",
+        "Becoming.Flow.GrownBy",
+        "Becoming.Flow.GrownBy.takes_part_of_link",
+        "Becoming.Flow.GrownBy.link_of_takers",
+        "Becoming.Flow.GrownBy.cond_ne",
+        "Becoming.Flow.GrownBy.attached_only",
+        "Becoming.Flow.GrownBy.outside_step",
+        "Becoming.Flow.GrownBy.outside_of_link",
+        "Becoming.Flow.GrownBy.within_outside_iff",
+        "Becoming.Flow.GrownBy.within_outside_added_iff",
+        "Becoming.Flow.GrownBy.condition_needed",
+        "Becoming.Flow.GrownBy.every_condition_needed",
+        "Becoming.Flow.GrownBy.latest_alone",
+        "Becoming.Flow.GrownBy.suffix"
+      ]
+    },
+    {
+      "en": "With one more condition exactly a and b take part in, the takers p and n of the condition that attached n lie in one system through the other conditions, and every system is what it is without it, exactly where p reaches one of a, b and the other reaches n through the conditions other than these two.",
+      "zh": "再多一个恰有 a 与 b 参与的条件后，接上 n 的那个条件的参与者 p 与 n 经其余条件处于同一系统、且每个系统没有它仍是原样，恰当经这两个条件以外的条件，p 到达 a、b 之一而另一个到达 n。",
+      "declarations": [
+        "Becoming.Flow.within_of_two_takers",
+        "Becoming.Flow.GrownBy.beside_iff",
+        "Becoming.Flow.GrownBy.system_iff",
+        "Becoming.Flow.GrownBy.bypass_iff",
+        "Becoming.Flow.GrownBy.cut_unchanged_iff"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom and no premise beyond the relation in the general laws. On the base, splitting sharing a condition into sharing c and sharing another needs equality of conditions decided, given as DecidableEq C; withinSystem_two_takers_iff and the join law take the list of a condition's takers as a hypothesis; growth by attachment is the hypothesis Flow.GrownBy on a list of entries.",
+      "zh": "一般规律除关系本身外不加公理、不加前提。在基上，把共享条件分成共享 c 与共享其他条件，需要条件相等可判定，以 DecidableEq C 给出；withinSystem_two_takers_iff 与连接规律以一个条件的参与者为假设；依附式生长是对一列条目的假设 Flow.GrownBy。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Which links form or are cut, when, or what a cut or a join takes; the laws take the relation as given.",
+      "zh": "哪些联系形成或被切断、何时，或切断与连接耗去什么；这些规律以关系为给定。",
+      "kind": "scope"
+    },
+    {
+      "en": "Whether a world grew by attachment, or in which order: Flow.GrownBy takes the list as a hypothesis; nor several added conditions at once, or added conditions with more than two takers.",
+      "zh": "一个世界是否依附式生长、以何种次序：Flow.GrownBy 以这列条目为假设；也不涉及同时多加几个条件，或多于两个参与者的新增条件。",
+      "kind": "scope"
+    },
+    {
+      "en": "That keeping, cutting or adding a link supports 生生; a needed link is needed by a closure, not by a valuation.",
+      "zh": "保持、切断或添上一条联系支持生生；被需要的联系是闭包所需，不是评价所需。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "decidability",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T055924.801141Z): the 60 declarations of Becoming.Cuts, 51 of them theorems, have empty axiom reports; the checker verifies core purity. The growth-constrained-fragmentation record holds the periphery instances. Author self-review in study sections 190 and 191; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T055924.801141Z）：Becoming.Cuts 的 60 项声明（51 项定理）公理报告为空；检查器并核对核心纯净。外围实例见 growth-constrained-fragmentation。作者自审见研究第 190、191 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "Several joins at once and the cycle law; added conditions with more than two takers; the count of links or conditions a whole needs; how links form and are cut along a run; an independent review.",
+    "zh": "同时多处连接与回路规律；多于两个参与者的新增条件；一个整体所需的联系或条件数；联系如何沿一次运行形成与被切断；独立审查。"
+  },
+  "correspondence": {
+    "en": "GrownFragmentation proved its bypass and its certified tree cuts for two hand-built bodies by kernel computation. Ren, 19 October 2026, asked \"why these numbers? is this really a proof?\", then which of its theorems are general laws, then \"let's make these limited, non general laws, into general ones\" (provenance, not warrant). Reading (the AI's): a link is needed by a closure exactly where nothing else carries what it carries; growth by attachment alone makes every link needed, and a link that closes a loop makes needless exactly the links on it.",
+    "zh": "GrownFragmentation 以内核计算对两个手工构造的身体证明了其绕行与经认证的树切割。Ren，2026年10月19日，先问 \"why these numbers? is this really a proof?\"，又问其中哪些定理是一般规律，然后说 \"let's make these limited, non general laws, into general ones\"（来历，不是根据）。读法（AI 的）：一条联系为闭包所需，恰在别无他物承载它所承载之处；仅有依附式生长使每条联系都被需要，闭合一个回路的联系恰使回路上的联系不再被需要。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
+  "aliases": [
+    "which links a closure needs",
+    "闭包需要哪些联系",
+    "cut changes no closure exactly where bypassed",
+    "被绕过的切断不改变闭包",
+    "every link grown by attachment is needed",
+    "依附式生长的每条联系都被需要",
+    "which conditions a system needs",
+    "系统需要哪些条件",
+    "Becoming.Cuts.closure_unchanged_iff_bypassed",
+    "Becoming.Cuts.attached_link_separates",
+    "Becoming.Flow.system_unchanged_without_iff",
+    "every condition of a world grown by attachment is needed",
+    "依附式生长的世界的每个条件都被需要",
+    "Becoming.Flow.GrownBy.condition_needed",
+    "Becoming.Flow.GrownBy.cut_unchanged_iff"
+  ],
+  "dependencies": [
+    {
+      "id": "levels-of-closure",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses ClosedUnder, WithinClosure and its laws, Flow.TakesPart, Flow.Shares and Flow.WithinSystem; the delta states which links and which conditions a closure needs.",
+        "zh": "复用 ClosedUnder、WithinClosure 及其规律、Flow.TakesPart、Flow.Shares 与 Flow.WithinSystem；增量是陈述闭包需要哪些联系、系统需要哪些条件。"
+      },
+      "interface": {
+        "output": {
+          "en": "Closures under a relation, and a formation's system as the closure under sharing a condition.",
+          "zh": "关系下的闭包，以及作为共享条件之闭包的形成之系统。"
+        },
+        "input": {
+          "en": "A relation with links removed or joined, and sharing split at one condition.",
+          "zh": "去掉或连上联系的关系，以及在一个条件处分开的共享。"
+        },
+        "conditions": {
+          "en": "DecidableEq C for the split at one condition.",
+          "zh": "在一个条件处分开时需要 DecidableEq C。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "growth-constrained-fragmentation",
+      "detail": {
+        "en": "Its certified tree cuts and its bypass are cases: every bond of a body grown by division is needed, and the reinforced chain's join frees the middle bond it crosses.",
+        "zh": "其经认证的树切割与绕行都是情形：经分裂生长的身体的每条键都被需要，加固链的连接使它跨过的中间键不再被需要。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Cuts.Attaches",
+        "Becoming.Cuts.Attaches.distinct",
+        "Becoming.Cuts.Attaches.listed_once",
+        "Becoming.Cuts.Attaches.suffix",
+        "Becoming.Cuts.Joined",
+        "Becoming.Cuts.Link",
+        "Becoming.Cuts.Links",
+        "Becoming.Cuts.Unlinked",
+        "Becoming.Cuts.append_cons_assoc",
+        "Becoming.Cuts.attached_link_separates",
+        "Becoming.Cuts.closure_unchanged_iff_bypassed",
+        "Becoming.Cuts.exists_split",
+        "Becoming.Cuts.joined_bypass_iff",
+        "Becoming.Cuts.joined_cut_unchanged_iff",
+        "Becoming.Cuts.link_cut_unchanged_iff",
+        "Becoming.Cuts.link_cut_unchanged_iff_of_symm",
+        "Becoming.Cuts.link_symm",
+        "Becoming.Cuts.links_mem",
+        "Becoming.Cuts.links_of_link",
+        "Becoming.Cuts.links_of_mem",
+        "Becoming.Cuts.links_split",
+        "Becoming.Cuts.links_symm",
+        "Becoming.Cuts.mem_append_cases",
+        "Becoming.Cuts.mem_append_right",
+        "Becoming.Cuts.mem_set_apart",
+        "Becoming.Cuts.mem_split",
+        "Becoming.Cuts.mem_widen",
+        "Becoming.Cuts.not_within_unlinked",
+        "Becoming.Cuts.within_attached_iff",
+        "Becoming.Cuts.within_congr",
+        "Becoming.Cuts.within_link_iff",
+        "Becoming.Cuts.within_of_steps",
+        "Becoming.Cuts.within_of_unlinked",
+        "Becoming.Flow.BothTakePart",
+        "Becoming.Flow.GrownBy",
+        "Becoming.Flow.GrownBy.attached_only",
+        "Becoming.Flow.GrownBy.beside_iff",
+        "Becoming.Flow.GrownBy.bypass_iff",
+        "Becoming.Flow.GrownBy.cond_ne",
+        "Becoming.Flow.GrownBy.condition_needed",
+        "Becoming.Flow.GrownBy.cut_unchanged_iff",
+        "Becoming.Flow.GrownBy.every_condition_needed",
+        "Becoming.Flow.GrownBy.latest_alone",
+        "Becoming.Flow.GrownBy.link_of_takers",
+        "Becoming.Flow.GrownBy.outside_of_link",
+        "Becoming.Flow.GrownBy.outside_step",
+        "Becoming.Flow.GrownBy.suffix",
+        "Becoming.Flow.GrownBy.system_iff",
+        "Becoming.Flow.GrownBy.takes_part_of_link",
+        "Becoming.Flow.GrownBy.within_outside_added_iff",
+        "Becoming.Flow.GrownBy.within_outside_iff",
+        "Becoming.Flow.SharesBeside",
+        "Becoming.Flow.SharesOutside",
+        "Becoming.Flow.alone_beside_of_only",
+        "Becoming.Flow.shares_iff_beside",
+        "Becoming.Flow.system_unchanged_of_single",
+        "Becoming.Flow.system_unchanged_without_iff",
+        "Becoming.Flow.withinSystem_of_no_part",
+        "Becoming.Flow.withinSystem_two_takers_iff",
+        "Becoming.Flow.within_of_two_takers"
+      ],
+      "sha256": "3468e1797fb310a4e1fd2d086955d4c6c563ef6d171b5154107b4776b74f4b83"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T055924.801141Z/verification.json",
+      "role": "receipt",
+      "sha256": "9860bab7def57c07ac878f9df94af84b9f9d51753f38fd373c45925adad87554",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json",
+      "role": "receipt",
+      "declarations": [],
+      "sha256": "f6f3160528efc7d709a50d0e28acf9b41650e0a103b23d0e0bb516789697c0e6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.ClosedUnder",
+        "Becoming.WithinClosure",
+        "Becoming.Flow.TakesPart",
+        "Becoming.Flow.Shares",
+        "Becoming.Flow.WithinSystem"
+      ],
+      "sha256": "c9345a3054da6f494ee9209dfcebce5b1abb8577189b730fdda513f1ce3f1baa"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "declarations": [],
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "declarations": [],
+      "sha256": "a96e325b2bf3466d7d5acf04091d6bdec20b8b295d75c714eba482294cf0eaf4"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-general-laws-from-examples.md",
+      "role": "provenance",
+      "declarations": [],
+      "sha256": "547da6aac074f7ce7d3c1521f60e5d70d09bb83af0ea78d705ebdaf8f84d734b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Cuts",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Feedback",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (K1), on Ren's \"let's make these limited, non general laws, into general ones\", after his questions on GrownFragmentation's bypass theorems; study section 190.",
+      "zh": "2026年10月19日：新增（K1），按 Ren 的 \"let's make these limited, non general laws, into general ones\"，在他就 GrownFragmentation 的绕行定理提问之后；研究第 190 节。"
+    },
+    {
+      "en": "19 October 2026, K2: growth by attachment read on the base (Flow.GrownBy): every grown condition is needed, and one added condition frees exactly the grown ones it crosses; laws 8 and 9 added, law 4 gains its list lemmas; study section 191. The earlier laws are unchanged.",
+      "zh": "2026年10月19日，K2：依附式生长在基上的读法（Flow.GrownBy）：每个生长出的条件都被需要，多一个条件恰使它跨过的生长出的条件不再被需要；新增规律 8、9，规律 4 添上其列表引理；研究第 191 节。原有规律不变。"
+    },
+    {
+      "en": "19 October 2026, K3 (Ren: \"please finish it\"): Cuts.lean re-pointed after reading the change: Flow.GrownBy.cond_ne now reaches its same-orientation case through Cuts.Attaches.listed_once, so no theorem of Becoming.Cuts stands apart; no statement changed. Core receipt 20261019T055924.801141Z; study section 191 (addendum) and the chapter's sections 8.2 and 9 re-pointed with it. The claim is unchanged.",
+      "zh": "2026年10月19日，K3：读过改动后，Cuts.lean 重新指向：Flow.GrownBy.cond_ne 的同向情形改经 Cuts.Attaches.listed_once，Becoming.Cuts 不再有孤立定理；陈述未变。核心回执 20261019T055924.801141Z；研究第 191 节（补记）与本章第 8.2、9 节随之重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y1 (Becoming.Hexagrams): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y1 added a study section; THE-THEORY-OF-BECOMING.md: Y1 added the section 1 paragraph on the configurations of the Changes with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts and receipt, and the section 11 row). The claim is unchanged.",
+      "zh": "2026年10月19日，Y1（Becoming.Hexagrams）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V (what a collective's continuation needs): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V added study section 193). The claim is unchanged.",
+      "zh": "2026年10月19日，V（集体延续所需）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 (Becoming.HexagramPlaces): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y2 added a study section). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2（Becoming.HexagramPlaces）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V2 (thresholds of waiting): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V2 added study section 194). The claim is unchanged.",
+      "zh": "2026年10月19日，V2（等待的阈值）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (theorems apart from the base): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U3 added study section 196). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, E1 (premises read off one exchange): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: E1 added study section 194). The claim is unchanged.",
+      "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3 (Becoming.HexagramLaws): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y3 added a study section). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3（Becoming.HexagramLaws）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section). The claim is unchanged.",
+      "zh": "2026年10月19日，SG（关节、交换之律与第三值）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，X1b（护闭诸文合于关节律的确切范围）：BECOMING-RENEWAL-READING.md 重新指向。自本记录所审哈希以来，所引文字只在第 199 节改动：其护闭读法现说保持是在自 s 起的路径上保住 s 的最大闭（`keeping_greatest`），由 X1b 改。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Feedback.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): Cuts.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Cuts.lean, documentation only (no name, statement or proof changed): the bypass stated for a directed link (target within the source's closure). Read before re-pointing. The claim is unchanged. The chapter reference was re-pointed as well, after reading R21's changes to the sections it cites.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Cuts.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Cuts.lean，只改说明（名称、陈述与证明不变）：绕行按有向联系陈述（终点在起点的闭包之内）。重新指向前已读。论断不变。理论章节的引用也在读过 R21 对其所引各节的改动后重新指向。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Feedback.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Feedback.lean, the conditional theorems moved to BoundedSignificance.lean; comparison_within_reach proved with no condition, statement unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Feedback.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Feedback.lean，条件定理移到 BoundedSignificance.lean；comparison_within_reach 不经条件证明，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+    }
+  ]
+}
