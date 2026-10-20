@@ -3,7 +3,7 @@
 6 October 2026. AI-authored prospective protocol, written and hashed before any
 implementation or run of this continuation. It is part of Ren's request to aim
 for a complete alignment solution. It addresses one open item of the
-[alignment completion contract](../../../../../../../../../../../../../../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md):
+[alignment completion contract](../../../../../../../../../../../../../../../../../theories/becoming/history/ALIGNMENT-COMPLETION.md):
 "Fulfillment-sensitive withdrawal in the acquired evaluator remains
 unimplemented." The obligations come from the
 [evaluative application account](../../../../../../../../../../../../../../../../../theories/becoming/history/EVALUATIVE-APPLICATION.md),

@@ -1,6 +1,6 @@
 # Machine-checked typed renewal and support accounting
 
-5 October 2026. These proof-assistant developments cover the ledger and typed forward reactions of the current CF-storage and paid-access branch. They accompany the [formal specification](../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md), not the whole proposed theory.
+5 October 2026. These proof-assistant developments cover the ledger and typed forward reactions of the current CF-storage and paid-access branch. They accompany the [formal specification](../../../theories/becoming/history/FORMAL-SPECIFICATION.md), not the whole proposed theory.
 
 [RenewalLedger.lean](RenewalLedger.lean) compiles with the pinned Lean 4.29.1 toolchain and its standard library. The [execution record](lean-verification.json) and [compiler output](lean-output.txt) preserve the actual successful compilation, source hashes and printed theorem dependencies. No additional package installation was needed.
 
