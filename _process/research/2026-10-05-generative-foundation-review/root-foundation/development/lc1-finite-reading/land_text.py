@@ -23,7 +23,7 @@ ZH = 'theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md'
 BOARD = '_process/BECOMING-WORKBOARD.md'
 HISTORY = '_process/history/workboard/BECOMING-WORKBOARD-2026-10-11_to_2026-10-17.md'
 MOD = 'Becoming.LeastLoss'
-R1, R2 = 'rest-from-a-finite-reading', 'merge-of-a-part-paid-by-the-rest'
+R1, R2 = 'rest-from-a-finite-reading', 'merge-of-a-part-kept-by-the-rest'
 receipt_id, conn_log, base = sys.argv[1], sys.argv[2], sys.argv[3]
 
 
@@ -75,7 +75,7 @@ study = (study.replace('{N}', str(N)).replace('{RECEIPT}', receipt_id).replace('
          .replace('{DECLS}', str(n_mod_decl)).replace('{APART}', apart_text).replace('{CORE_LINE}', core_line))
 (ROOT / STUDY).write_text(stext.rstrip('\n') + '\n\n' + study.rstrip('\n') + '\n', encoding='utf-8')
 print('appended', STUDY, 'section', N)
-SLUG = f'{N}-rest-from-a-finite-reading-and-a-parts-merge-paid-by-the-rest-lc1'
+SLUG = f'{N}-rest-from-a-finite-reading-and-a-parts-merge-kept-by-the-rest-lc1'
 SA = f'../../../{STUDY}#{SLUG}'
 SIGLINK = f'../../../{SIG}#least-loss-check'
 REC1, REC2 = f'[{R1}](../results/records/{R1}.md)', f'[{R2}](../results/records/{R2}.md)'
@@ -93,7 +93,7 @@ C4_OLD = ("4. *Rest needs a least loss* (§1.3). Rest follows from a least loss 
 C4_NEW = ("4. *Rest needs a least loss or a finite reading* (§1.3). Rest follows from a least loss per change and a stock "
           "within finitely many of them, or, with no least loss, from an amount read off finitely many configurations; "
           "approach to rest needs only Archimedean amounts; a law that merges nothing returns rather than rests, and a "
-          "part's merge inside it is paid by the rest.")
+          "part's merge inside it is kept by the rest.")
 W_OLD = ("Rest belongs to the part that dissipates with a least loss per change and a stock within finitely many such "
          "losses;")
 W_NEW = ("Rest belongs to the part that dissipates with a least loss per change and a stock within finitely many such "
@@ -107,12 +107,12 @@ BE_NEW = ("Over finitely many configurations a loss above nothing needs a law th
           "needs no least loss: an amount that does not rise falls strictly at most as often as the list is long, over "
           "any amounts (`Amounts.rests_of_finite_reading`; along a run of every process `Branching.rests_along_run`), so "
           "falls that recur need a reading no list holds, as the halving stock's (`Halving.stock_unlisted`). Inside a "
-          "law that merges nothing, a part's merge is paid by the rest: possibilities kept apart number at most the "
-          "part's count times the rest's (`Law.Lossless.narrowing_paid`), so a part reset at every step needs a whole no "
-          "list holds (`Law.Lossless.reset_unlisted`; `Reset.paid_by_rest`). This is Landauer's count, with no energy "
+          "law that merges nothing, a part's merge is kept by the rest: possibilities kept apart number at most the "
+          "part's count times the rest's (`Law.Lossless.narrowing_spreads`), so a part reset at every step needs a whole no "
+          "list holds (`Law.Lossless.reset_unlisted`; `Reset.kept_by_rest`). This is Landauer's count, with no energy "
           f"([{R1}](../results/records/{R1}.md), [{R2}](../results/records/{R2}.md)).\n")
 ROW_MAP = "| [The map of premises](../results/records/map-of-premises.md) | theorem without premise | — | §1.3 |\n"
-ROW_P = f"| [A part's merge paid by the rest](../results/records/{R2}.md) | theorem without premise | — | §1.3 |\n"
+ROW_P = f"| [A part's merge kept by the rest](../results/records/{R2}.md) | theorem without premise | — | §1.3 |\n"
 ROW_RES = ("| [Rest at every resolution](../results/records/rest-at-every-resolution.md) | theorem under stated premises | "
            "dissipation | §1.3 |\n")
 ROW_F = f"| [Rest from a finite reading](../results/records/{R1}.md) | theorem without premise | — | §1.3 |\n"
@@ -120,12 +120,12 @@ K4_OLD = ("| 4. Rest needs a least loss (§1.3) | Termination by a ranking funct
           "Floyd 1967); Lyapunov functions (1892); the Archimedean property; the halving witness is Zeno's dichotomy |")
 K4_NEW = ("| 4. Rest needs a least loss or a finite reading (§1.3) | Termination by a ranking function into a well-founded "
           "order (Turing 1949; Floyd 1967); Lyapunov functions (1892); the Archimedean property; the halving witness is "
-          "Zeno's dichotomy; on a finite state space the pigeonhole principle; a part's merge paid by the rest is "
+          "Zeno's dichotomy; on a finite state space the pigeonhole principle; a part's merge kept by the rest is "
           "Landauer's (1961) phase-space count |")
 OUT_OLD = ("the thermodynamic correspondence restates that sustained structure needs throughput (Schrödinger 1944; "
            "Prigogine 1977) with Landauer's floor;")
 OUT_NEW = ("the thermodynamic correspondence restates that sustained structure needs throughput (Schrödinger 1944; "
-           "Prigogine 1977) with Landauer's floor, whose count (a part's merge paid by the rest in a law that merges "
+           "Prigogine 1977) with Landauer's floor, whose count (a part's merge kept by the rest in a law that merges "
            "nothing) is Landauer's own argument (1961; Bennett 2003; Ladyman, Presnell, Short and Groisman 2007), and "
            "every least loss physics supplies (a merge, finite time, precision, a finite bath) is a theorem of "
            f"stochastic thermodynamics with premises of its own ([least-loss check]({SIGLINK}));")
@@ -134,9 +134,9 @@ I6_OLD = ("6. **Amounts that may be dense** (further proof). *Open:* whether the
           "units or destruction has Landauer's floor, and dissipation in expectation gives rest almost surely);")
 I6_NEW = ("6. **Amounts that may be dense** (further proof). (Stated: rest needs no least loss where the amount is read "
           "off finitely many configurations, so the least loss is needed only for readings no list holds; inside a law "
-          "that merges nothing a part's merge is paid by the rest, Landauer's count, so the periphery's floor needs "
+          "that merges nothing a part's merge is kept by the rest, Landauer's count, so the periphery's floor needs "
           "from physics only the step from a count to heat, `Amounts.rests_of_finite_reading`, "
-          "`Law.Lossless.narrowing_paid`. Every physical least loss, of a merge, finite time, precision or a finite "
+          "`Law.Lossless.narrowing_spreads`. Every physical least loss, of a merge, finite time, precision or a finite "
           f"bath, is known physics with premises of its own, [least-loss check]({SIGLINK}).) *Open:* a least loss in "
           "energy from the core, which needs a reading of count as energy;")
 I6R_OLD = ("[least-loss-from-entropy-production](../results/records/least-loss-from-entropy-production.md), "
@@ -145,8 +145,8 @@ I6R_NEW = ("[least-loss-from-entropy-production](../results/records/least-loss-f
            f"{REC1}, {REC2}, [entropy-history-and-record]")
 S86_OLD = "Over dense amounts rest needs a least loss and approach to rest only Archimedean amounts (§1.3)."
 S86_NEW = ("Over dense amounts rest needs a least loss, or amounts read off finitely many configurations, and approach "
-           "to rest only Archimedean amounts (§1.3); a part's merge inside a law that merges nothing is paid by the rest "
-           "in count (`Law.Lossless.narrowing_paid`), so Landauer's floor needs from physics only the step from a count "
+           "to rest only Archimedean amounts (§1.3); a part's merge inside a law that merges nothing is kept by the rest "
+           "in count (`Law.Lossless.narrowing_spreads`), so Landauer's floor needs from physics only the step from a count "
            "to heat.")
 ch = (ROOT / CH).read_text(encoding='utf-8')
 OLD_CORE = re.search(r'with the base and its layers: (\d+) modules counting the root `Becoming`\.', ch).group(0)
@@ -186,25 +186,25 @@ edit(CH, [(C4_OLD, C4_NEW), (W_OLD, W_NEW), (B_OLD, B_NEW), (BE_OLD, BE_NEW), (R
 z = (ROOT / ZH).read_text(encoding='utf-8')
 Z4_OLD = "4. *停息需要最小损失*（§1.3）。停息由每次变化的最小损失与在有限多个这样的损失之内的存量推出；趋于停息只需阿基米德的量；不合并的律返回而不停息。"
 Z4_NEW = ("4. *停息需要最小损失或有限的读取*（§1.3）。停息由每次变化的最小损失与在有限多个这样的损失之内的存量推出，或在没有最小损失时，"
-          "由读自有限多个构形的量推出；趋于停息只需阿基米德的量；不合并的律返回而不停息，其中部分的合并由其余部分偿付。")
+          "由读自有限多个构形的量推出；趋于停息只需阿基米德的量；不合并的律返回而不停息，其中部分的合并由其余部分承接。")
 ZW_OLD = "停息属于以每次变化的最小损失耗散、且存量在有限多个这样的损失之内的部分；"
 ZW_NEW = "停息属于以每次变化的最小损失耗散、且存量在有限多个这样的损失之内的部分，或其量读自有限多个构形的部分；"
 ZROW_MAP = "| [前提的地图](../results/records/map-of-premises.md) | 不加前提的定理 | — | §1.3 |\n"
-ZROW_P = f"| [部分的合并由其余部分偿付](../results/records/{R2}.md) | 不加前提的定理 | — | §1.3 |\n"
+ZROW_P = f"| [部分的合并由其余部分承接](../results/records/{R2}.md) | 不加前提的定理 | — | §1.3 |\n"
 ZROW_RES = "| [每一分辨率下的停息](../results/records/rest-at-every-resolution.md) | 在所述前提下的定理 | 耗散 | §1.3 |\n"
 ZROW_F = f"| [由有限的读取而停息](../results/records/{R1}.md) | 不加前提的定理 | — | §1.3 |\n"
 ZK4_OLD = ("| 4. 停息需要最小损失（§1.3） | 以良基序中的排序函数证明终止（Turing 1949；Floyd 1967）；Lyapunov 函数（1892）；"
            "阿基米德性质；折半的见证是 Zeno 的二分 |")
 ZK4_NEW = ("| 4. 停息需要最小损失或有限的读取（§1.3） | 以良基序中的排序函数证明终止（Turing 1949；Floyd 1967）；Lyapunov 函数（1892）；"
-           "阿基米德性质；折半的见证是 Zeno 的二分；有限状态空间上的鸽巢原理；部分的合并由其余部分偿付是 Landauer（1961）的相空间计数 |")
+           "阿基米德性质；折半的见证是 Zeno 的二分；有限状态空间上的鸽巢原理；部分的合并由其余部分承接是 Landauer（1961）的相空间计数 |")
 ZOUT_OLD = "热力学对应重述持续的结构需要通量（Schrödinger 1944；Prigogine 1977）与 Landauer 的下界；"
-ZOUT_NEW = ("热力学对应重述持续的结构需要通量（Schrödinger 1944；Prigogine 1977）与 Landauer 的下界，其计数（在不合并的律中部分的合并由其余部分偿付）"
+ZOUT_NEW = ("热力学对应重述持续的结构需要通量（Schrödinger 1944；Prigogine 1977）与 Landauer 的下界，其计数（在不合并的律中部分的合并由其余部分承接）"
             "就是 Landauer 自己的论证（1961；Bennett 2003；Ladyman、Presnell、Short 与 Groisman 2007），而物理给出的每种最小损失（合并、"
             f"有限时间、精度、有限热库）都是随机热力学中带有自身前提的定理（[最小损失的检查]({SIGLINK})）；")
 ZI6_OLD = "6. **可以稠密的量**（进一步的证明）。*开放：*每次交换的最小损失能否推出而非给出；"
 ZI6_NEW = ("6. **可以稠密的量**（进一步的证明）。（已陈述：量读自有限多个构形时，停息不需要最小损失，所以最小损失只为没有列表容纳的读取所需；"
-           "在不合并的律中，部分的合并由其余部分偿付，即 Landauer 的计数，所以外围的下限从物理只需要由计数到热的一步，"
-           "`Amounts.rests_of_finite_reading`、`Law.Lossless.narrowing_paid`。物理给出的每种最小损失都是带有自身前提的已知物理，"
+           "在不合并的律中，部分的合并由其余部分承接，即 Landauer 的计数，所以外围的下限从物理只需要由计数到热的一步，"
+           "`Amounts.rests_of_finite_reading`、`Law.Lossless.narrowing_spreads`。物理给出的每种最小损失都是带有自身前提的已知物理，"
            f"[最小损失的检查]({SIGLINK})。）*开放：*由核心得出以能量计的最小损失，这需要把计数读作能量；")
 i = z.index('**当前回执**是运行 [`')
 OLDZR = z[i:z.index('\n', i)]
@@ -246,7 +246,7 @@ assert m, 'receipt sentence'
 board = board.replace(m.group(0), f"the latest core receipt is LC1's `{receipt_id}` (20 October 2026)")
 m = re.search(r'- \*\*Queue:\*\* ([^\n]*)', board)
 assert m, 'queue sentence'
-landed = (f'LC1 landed (rest from a finite reading and a part\'s merge paid by the rest, `Becoming.LeastLoss`; core '
+landed = (f'LC1 landed (rest from a finite reading and a part\'s merge kept by the rest, `Becoming.LeastLoss`; core '
           f'receipt `{receipt_id}`, study §{N}, row in the history file)')
 board = board.replace(m.group(0), '- **Queue:** ' + landed + '; ' + m.group(1))
 (ROOT / BOARD).write_text(board, encoding='utf-8')

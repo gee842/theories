@@ -58,14 +58,14 @@ dense, with what the whole numbers supplied named as two premises.
   need a reading no list holds, as the halving stock's values (`Halving.stock_unlisted`). Along a
   run of every process held by a list (`Branching.rests_along_run`), a run's falls come to rest,
   and where the process merges nothing it loses nothing at all.
-* **A part's merge, paid by the rest.** Read a whole's configurations by a part and a rest that
+* **A part's merge, kept by the rest.** Read a whole's configurations by a part and a rest that
   together tell them apart. Under a law that merges nothing, possibilities no two alike stay so
   (`Law.Lossless.keeps_apart`), so `k` of them, their parts held by `ps` and their rests by `es`,
-  number at most `ps.length * es.length` (`Law.distinct_within`, `Law.Lossless.narrowing_paid`): a
-  part narrowed is paid by the rest's spread, Landauer's count with no energy. A part reset to one
+  number at most `ps.length * es.length` (`Law.distinct_within`, `Law.Lossless.narrowing_spreads`): a
+  part narrowed is matched by the rest's spread, Landauer's count with no energy. A part reset to one
   configuration at every step, inside a whole that merges nothing, needs a whole no list holds
   (`Law.Lossless.reset_unlisted`); in `Reset` the part merges at every step, the whole merges
-  nothing, and the rest is the part's kept history, which no list holds (`Reset.paid_by_rest`).
+  nothing, and the rest is the part's kept history, which no list holds (`Reset.kept_by_rest`).
 
 What the whole numbers carry in the rest family is exactly these two premises: a least loss at
 each change, and every stock within finitely many least losses. Approach to rest needs no least
@@ -623,7 +623,7 @@ theorem loss_needs_merge {next : S → S} {all : List S} (every : ∀ s, s ∈ a
 end Law
 
 
-/-! ## A part's merge, paid by the rest -/
+/-! ## A part's merge, kept by the rest -/
 
 namespace Law
 
@@ -656,7 +656,7 @@ theorem Lossless.keeps_apart {next : S → S} (lossless : Lossless next) {h : Na
     ∀ i j, i < j → j < k → orbit next (h i) n ≠ orbit next (h j) n :=
   fun i j lt below same => distinct i j lt below (lossless.cancel n same)
 
-/-- **A part's narrowing is paid by the rest.** Under a law that merges nothing, read every
+/-- **A part's narrowing spreads the rest.** Under a law that merges nothing, read every
 configuration by a part and a rest that together tell configurations apart. Of `k` possibilities
 no two alike, if `n` steps on their parts are held by `ps` and their rests by `es`, then `k` is at
 most `ps.length * es.length`: the possibilities are conserved, so where the part is narrowed to
@@ -665,7 +665,7 @@ are narrowed to one configuration (`ps` of length one), every list holding their
 `k` members, and where every rest lies in a list of `N`, the parts need a list of at least `k / N`.
 This is Landauer's count, with no energy, temperature or probability, from the law's merging
 nothing alone. -/
-theorem Lossless.narrowing_paid {next : S → S} (lossless : Lossless next) {part : S → P}
+theorem Lossless.narrowing_spreads {next : S → S} (lossless : Lossless next) {part : S → P}
     {rest : S → E} (tells : ∀ x y, part x = part y → rest x = rest y → x = y)
     {h : Nat → S} {k : Nat} (distinct : ∀ i j, i < j → j < k → h i ≠ h j) (n : Nat)
     {ps : List P} {es : List E} (inP : ∀ i, i < k → part (orbit next (h i) n) ∈ ps)
@@ -716,10 +716,10 @@ theorem rest_length (x : Bool × List Bool) : ∀ n, (Law.orbit next x n).2.leng
   | 0 => rfl
   | n + 1 => congrArg Nat.succ (rest_length x n)
 
-/-- **The part's merges paid by the rest.** The part merges at every step and the whole merges
+/-- **The part's merges kept by the rest.** The part merges at every step and the whole merges
 nothing; the rest of every run never repeats, so no list holds it, as `Law.Lossless.reset_unlisted`
 requires of every such law. -/
-theorem paid_by_rest :
+theorem kept_by_rest :
     Law.Lossless next ∧ (∀ x, (next x).1 = false) ∧ (next (true, [])).1 = (next (false, [])).1 ∧
     (∀ x, ¬ ∃ l : List (List Bool), ∀ n, (Law.orbit next x n).2 ∈ l) ∧
     ¬ ∃ all : List (Bool × List Bool), ∀ s, s ∈ all :=

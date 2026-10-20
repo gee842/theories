@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write LC1's two records (rest-from-a-finite-reading, merge-of-a-part-paid-by-the-rest) and update the records they
+"""Write LC1's two records (rest-from-a-finite-reading, merge-of-a-part-kept-by-the-rest) and update the records they
 continue (least-loss-rest, least-loss-from-entropy-production):
 python3 -B make_record.py CORE_RECEIPT STUDY_SECTION   (from the checkout root, after land_text.py)
 
@@ -19,13 +19,13 @@ STUDY = f'{RF}/BECOMING-RENEWAL-READING.md'
 SIG = f'{RF}/BECOMING-SIGNIFICANCE-REVIEW.md'
 CHAPTER = 'theories/becoming/chapters/THE-THEORY-OF-BECOMING.md'
 RECORDS = ROOT / 'theories/becoming/results/records'
-R1, R2 = 'rest-from-a-finite-reading', 'merge-of-a-part-paid-by-the-rest'
+R1, R2 = 'rest-from-a-finite-reading', 'merge-of-a-part-kept-by-the-rest'
 core_id, N = sys.argv[1], int(sys.argv[2])
 RECEIPT = f'{PKG}/becoming-checks/{core_id}/verification.json'
 NOW = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
 core = json.loads((ROOT / RECEIPT).read_text())
 assert core['status'] == 'passed'
-HEAD = f"## {N}. Rest from a finite reading, and a part's merge paid by the rest (LC1)"
+HEAD = f"## {N}. Rest from a finite reading, and a part's merge kept by the rest (LC1)"
 assert re.search('^' + re.escape(HEAD) + '$', (ROOT / STUDY).read_text(), re.M)
 
 
@@ -169,8 +169,8 @@ rec1 = {
         {'id': 'least-loss-rest', 'detail': T('There rest needs a least loss over amounts that may be dense; here, read off '
                                               'finitely many configurations, it needs none.',
                                               '那里在可稠密的量上停息需要最小损失；这里读自有限多个构形时不需要。')},
-        {'id': R2, 'detail': T('The other half of LC1: inside a law that merges nothing a part\'s merge is paid by the rest.',
-                               'LC1 的另一半：在不合并的律中部分的合并由其余部分偿付。')},
+        {'id': R2, 'detail': T('The other half of LC1: inside a law that merges nothing a part\'s merge is kept by the rest.',
+                               'LC1 的另一半：在不合并的律中部分的合并由其余部分承接。')},
         {'id': 'least-loss-from-entropy-production',
          'detail': T('There physical premises give a least loss; here finitely many configurations make it unnecessary.',
                      '那里物理前提给出最小损失；这里有限多个构形使它不必要。')}],
@@ -181,17 +181,17 @@ rec1 = {
                   f'section {N}.', f'2026年10月20日：新增（LC1），第 8.1 节第 6 项：最小损失能否推出；研究第 {N} 节。')],
 }
 
-r2_decls = ['Law.distinct_within', 'Law.Lossless.keeps_apart', 'Law.Lossless.narrowing_paid',
+r2_decls = ['Law.distinct_within', 'Law.Lossless.keeps_apart', 'Law.Lossless.narrowing_spreads',
             'Law.Lossless.reset_unlisted', 'Reset.next', 'Reset.lossless', 'Reset.part_merges', 'Reset.rest_length',
-            'Reset.paid_by_rest']
+            'Reset.kept_by_rest']
 rec2 = {
-    'schema_version': 2, 'id': R2, 'title': T("A part's merge paid by the rest", '部分的合并由其余部分偿付'),
+    'schema_version': 2, 'id': R2, 'title': T("A part's merge kept by the rest", '部分的合并由其余部分承接'),
     'kind': 'theorem', 'status': 'recorded-checked', 'family': 'F01', 'reviewed_at_utc': NOW,
     'statement': T('Under a law that merges nothing, possibilities no two alike, read by a part and a rest that tell them '
-                   'apart, number at most the part\'s count times the rest\'s at every step: a part\'s narrowing is paid by '
+                   'apart, number at most the part\'s count times the rest\'s at every step: a part\'s narrowing spreads '
                    'the rest, and a part reset at every step needs a whole no list holds.',
                    '在不合并的律下，两两不同的可能性，由能把它们区分开的部分与其余部分读取，在每一步至多是部分之数乘以其余之数：部分的收窄由其余'
-                   '部分偿付，每一步都被重置的部分需要没有列表容纳的整体。'),
+                   '部分承接，每一步都被重置的部分需要没有列表容纳的整体。'),
     'laws': [
         law('Where a part and a rest together tell configurations apart, k configurations no two of which coincide, their '
             'parts held by ps and their rests by es, number at most ps.length times es.length.',
@@ -203,7 +203,7 @@ rec2 = {
             'of N, the parts need a list of at least k / N.',
             '在不合并的律下，两两不同的可能性在任意多步之后仍然两两不同；所以在每一步，k 个这样的可能性至多是容纳其部分的列表之数乘以容纳其'
             '余部分的列表之数。部分收窄为一个时，容纳其余部分的每个列表至少有 k 个成员；其余部分有 N 个时，部分需要至少 k / N 个。',
-            ['Law.Lossless.keeps_apart', 'Law.Lossless.narrowing_paid']),
+            ['Law.Lossless.keeps_apart', 'Law.Lossless.narrowing_spreads']),
         law('Where a law merges nothing and after every step a part reads one configuration, then if any configuration '
             'has another part no list holds every configuration: a part reset at every step passes what it loses into '
             'a rest that grows without bound.',
@@ -215,7 +215,7 @@ rec2 = {
             'along any run and none holds the whole: the kept history (withHistory) restricted to the part.',
             '见证 Reset：一位的部分每一步都被置为 false，它所持的位传入一个被保存的列表。整体不合并，部分每一步都合并，其余部分每一步增长一，'
             '所以在任何运行上都没有列表容纳它，也没有列表容纳整体：限于该部分的保存历史（withHistory）。',
-            ['Reset.next', 'Reset.lossless', 'Reset.part_merges', 'Reset.rest_length', 'Reset.paid_by_rest'])],
+            ['Reset.next', 'Reset.lossless', 'Reset.part_merges', 'Reset.rest_length', 'Reset.kept_by_rest'])],
     'hypotheses': [T('No axiom. A law that merges nothing; a part and a rest that together tell configurations apart; '
                      'possibilities no two alike; lists holding parts and rests where named. For the reset law, a part '
                      'reading one configuration after every step and some configuration with another part.',
@@ -249,9 +249,9 @@ rec2 = {
                         '是 Reeb 与 Wolf 的有限热库修正（NJP 16，2014）与 Masanes 与 Oppenheim 的不可达性（Nat. Commun. 8，2017）在计数上的投影。'
                         '读法（AI 的）：一个使自身保持收窄的部分，如有组织的系统，把它失去的区分传入周围，而在有限的世界中只能做到某个程度。'),
     'canonical_source': src('LeastLoss'),
-    'aliases': ["a part's merge paid by the rest", '部分的合并由其余部分偿付', "Landauer's count", 'Landauer 的计数',
-                'possibilities conserved by a lossless law', 'Becoming.Law.Lossless.narrowing_paid',
-                'Becoming.Law.Lossless.reset_unlisted', 'Becoming.Reset.paid_by_rest'],
+    'aliases': ["a part's merge kept by the rest", '部分的合并由其余部分承接', "Landauer's count", 'Landauer 的计数',
+                'possibilities conserved by a lossless law', 'Becoming.Law.Lossless.narrowing_spreads',
+                'Becoming.Law.Lossless.reset_unlisted', 'Becoming.Reset.kept_by_rest'],
     'dependencies': [
         {'id': 'recurrence-without-premise', 'relation': 'formal-reuse',
          'detail': T('Reuses Law.Lossless.cancel (merging nothing at a step, merging nothing over any number of steps), '
@@ -302,14 +302,14 @@ d['next_delta'] = T('Flow and World with levels in any amounts, restating the re
 d['related'] += [{'id': R1, 'detail': T('Read off finitely many configurations, rest needs no least loss.',
                                         '读自有限多个构形时，停息不需要最小损失。')},
                  {'id': R2, 'detail': T('The converse of Law.loss_needs_merge: inside a whole that merges nothing, a '
-                                        'part\'s merge is paid by the rest.',
-                                        'Law.loss_needs_merge 的反面：在不合并的整体中，部分的合并由其余部分偿付。')}]
+                                        'part\'s merge is kept by the rest.',
+                                        'Law.loss_needs_merge 的反面：在不合并的整体中，部分的合并由其余部分承接。')}]
 d['history'].append(T(f'20 October 2026, LC1: Becoming.LeastLoss gained rest from a finite reading (record {R1}) and a '
-                      f'part\'s merge paid by the rest (record {R2}); the proof binding re-pointed to receipt {core_id} '
+                      f'part\'s merge kept by the rest (record {R2}); the proof binding re-pointed to receipt {core_id} '
                       f'after reading the change, this record\'s declarations and statements unchanged; the next step '
                       f'names the finite reading beside the least loss and drops the least loss in expectation, which '
                       f'the significance review\'s least-loss check finds known (ranking supermartingales); study section {N}.',
-                      f'2026年10月20日，LC1：Becoming.LeastLoss 增加了由有限读取而停息（记录 {R1}）与部分的合并由其余部分偿付（记录 {R2}）；'
+                      f'2026年10月20日，LC1：Becoming.LeastLoss 增加了由有限读取而停息（记录 {R1}）与部分的合并由其余部分承接（记录 {R2}）；'
                       f'阅读改动后证明绑定改指回执 {core_id}，本记录的声明与陈述不变；下一步在最小损失旁列出有限读取，并去掉期望中的最小损失，'
                       f'意义审查的最小损失检查认定其为已知（排序上鞅）；研究第 {N} 节。'))
 d['reviewed_at_utc'] = NOW

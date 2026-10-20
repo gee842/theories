@@ -28,10 +28,10 @@ edit(PKG / 'README.md',
      'no least loss: an amount read off configurations a list holds that does not rise falls strictly at most as often as '
      'the list is long, over any amounts (Amounts.falls_within_reading, Amounts.rests_of_finite_reading, along a run '
      'Branching.rests_along_run), so falls that recur need a reading no list holds (Halving.stock_unlisted); a part\'s '
-     'merge paid by the rest: under a law merging nothing, possibilities no two alike, read by a part and a rest that '
+     'merge kept by the rest: under a law merging nothing, possibilities no two alike, read by a part and a rest that '
      'tell them apart, number at most the part\'s count times the rest\'s (Law.distinct_within, Law.Lossless.keeps_apart, '
-     'Law.Lossless.narrowing_paid), and a part reset at every step needs a whole no list holds '
-     '(Law.Lossless.reset_unlisted; witness Reset.paid_by_rest) |')
+     'Law.Lossless.narrowing_spreads), and a part reset at every step needs a whole no list holds '
+     '(Law.Lossless.reset_unlisted; witness Reset.kept_by_rest) |')
 
 edit(PKG / 'Becoming.lean',
      '  descriptions that lump and dissipate, and a finite law that merges nothing returns\n'
@@ -39,7 +39,7 @@ edit(PKG / 'Becoming.lean',
      '  descriptions that lump and dissipate, and a finite law that merges nothing returns\n'
      '  (`Becoming.Recurrence`). Read off configurations a list holds, an amount that does not rise\n'
      '  falls strictly at most as often as the list is long, over any amounts, so rest needs no least\n'
-     '  loss there; and under a law that merges nothing a part\'s narrowing is paid by the rest, the\n'
+     '  loss there; and under a law that merges nothing a part\'s narrowing is kept by the rest, the\n'
      '  possibilities being kept apart, so a part reset at every step needs a whole no list holds.\n')
 
 edit(PKG / 'check_becoming.py',
