@@ -1122,11 +1122,6 @@
    "category": "support",
    "reason": "a list lemma proved without `propext`: a filter every member passes keeps the list (F3C's constructive support for the family)"
   },
-  "Becoming.Naturals.add_left_cancel": {
-   "module": "Becoming.Prelude",
-   "category": "support",
-   "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
-  },
   "Becoming.Naturals.ne_of_lt": {
    "module": "Becoming.Prelude",
    "category": "support",
@@ -1707,11 +1702,6 @@
    "category": "model-witness",
    "reason": "a fact about the constructed channel model (exactness surviving compression); the general law is read on runs as `Runs.retained_exact`. It took the entry of `PartialReadout.parity_exact`, the forwarder R32 removed"
   },
-  "Becoming.Interleavings.LocalLaw.standings_of_interleavings": {
-   "module": "Becoming.Interleavings",
-   "category": "general-structure",
-   "reason": "two interleavings of the same own courses give each relatum the same course of standings, for a local law on any state type: the per-relatum course is the module's own vocabulary, which the step-indexed World does not index; what the World reads of it is on the base (`world_final`, `world_swap`, `world_swap_between`)"
-  },
   "Becoming.Frequency.count_from": {
    "module": "Becoming.Frequency",
    "category": "support",
@@ -1726,6 +1716,21 @@
    "module": "Becoming.CensusCounts",
    "category": "general-structure",
    "reason": "the tally is the whole law of counting for any listing of any type, counts as relations: a law of every listed family, with no world; the census tables of Becoming.CensusTable state what a class of worlds adds for the listings a world has, and since R37b no longer go through it"
+  },
+  "Becoming.Interleavings.LocalLaw.index_matches": {
+   "module": "Becoming.Interleavings",
+   "category": "general-structure",
+   "reason": "where a relatum takes an exchange at a step of one interleaving, the index map sends the next step to the step after the same exchange in the other, for a local law on any state type: which exchange stands at a step is the module's own vocabulary (lists of exchanges), which the World an interleaving builds does not record; what the World reads of the index map is on the base (`world_index`, `world_reads_alike`)"
+  },
+  "Becoming.Interleavings.LocalLaw.firstAt_least": {
+   "module": "Becoming.Interleavings",
+   "category": "support",
+   "reason": "the step `firstAt` finds is the least at which the relatum has taken the given number of its own exchanges: an unpacking of the module's own definition, used by `index_matches`"
+  },
+  "Becoming.LoopReturn.Ring.givesExactly": {
+   "module": "Becoming.LoopReturn",
+   "category": "model-witness",
+   "reason": "the ring of m + 2 conditions meets the premise of the exact turn (`GivesExactly`), so `carried_around_exact` applies to it: a fact about one constructed model"
   }
  },
  "instances": {

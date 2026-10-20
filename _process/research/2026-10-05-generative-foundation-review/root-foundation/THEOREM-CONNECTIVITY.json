@@ -1,11 +1,11 @@
 {
- "commit": "236bbadd26b9c3bc52bdbe33e8027900d50a71d2",
+ "commit": "91c3fc66a9773979b3e5c36456027bd7c6efc226",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261020T065352.292900Z",
+ "core_receipt_at_commit": "20261020T070914.793352Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
  "tracked_modules": 284,
- "constants": 35654,
- "spine_theorems": 11428,
+ "constants": 35755,
+ "spine_theorems": 11479,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -26,27 +26,27 @@
   "Process reaches World family": false
  },
  "classes": {
-  "statement on both families": 918,
+  "statement on both families": 925,
   "statement on Process/Frame/Run/Trace": 2862,
-  "statement on World/Flow/Web": 2596,
-  "statement on the base only through a law of its own module": 176,
-  "proof through a base family": 149,
-  "used by a theorem on the base": 4099,
+  "statement on World/Flow/Web": 2600,
+  "statement on the base only through a law of its own module": 180,
+  "proof through a base family": 153,
+  "used by a theorem on the base": 4132,
   "instance on the base recorded": 150,
   "apart: own vocabulary": 446,
-  "apart: prelude-only statement": 32
+  "apart: prelude-only statement": 31
  },
- "apart": 478,
- "apart_general_structure_by_design": 58,
- "apart_otherwise": 420,
+ "apart": 477,
+ "apart_general_structure_by_design": 56,
+ "apart_otherwise": 421,
  "pure_forwarders": {
-  "spine theorems that are pure forwarders": 52,
-  "of them on the base": 45,
+  "spine theorems that are pure forwarders": 55,
+  "of them on the base": 48,
   "their targets, by class": {
    "statement on Process/Frame/Run/Trace": 11,
    "instance on the base recorded": 8,
    "statement on both families": 1,
-   "used by a theorem on the base": 17,
+   "used by a theorem on the base": 20,
    "statement on the base only through a law of its own module": 1,
    "statement on World/Flow/Web": 5
   }
@@ -60,9 +60,9 @@
  "statement_through_own_law_by_module": {
   "Becoming.HexagramLaws": 26,
   "Becoming.Undecided": 23,
+  "Becoming.LoopReturn": 22,
   "Becoming.Pace": 22,
   "Becoming.Withholding": 21,
-  "Becoming.LoopReturn": 18,
   "Becoming.SharedCodes": 15,
   "Becoming.Hexagrams": 15,
   "Becoming.Tolerance": 13,
@@ -71,10 +71,10 @@
   "Becoming.Attraction": 4,
   "Becoming.Recurrence": 3
  },
- "apart_used_by_nothing": 341,
- "apart_roots": 342,
+ "apart_used_by_nothing": 342,
+ "apart_roots": 343,
  "apart_roots_by_category": {
-  "model-witness": 205,
+  "model-witness": 206,
   "support": 80,
   "general-structure": 36,
   "logical-strength": 10,
@@ -109,6 +109,7 @@
   "Becoming.CourseRoles": 10,
   "Becoming.PlaceTransitionNets": 10,
   "Becoming.Listing": 9,
+  "Becoming.Interleavings": 9,
   "Becoming.Direction": 9,
   "Becoming.Joint": 8,
   "Becoming.LabelledRoles": 8,
@@ -125,12 +126,12 @@
   "Becoming.ContextualRuns": 6,
   "Becoming.Horizon": 5,
   "Becoming.Stuttering": 5,
-  "Becoming.Interleavings": 5,
   "Becoming.ParityReadings": 5,
   "Becoming.Unfolding": 4,
   "Becoming.ValuationFrames": 4,
   "Becoming.Tolerance": 4,
   "Becoming.RouteTraces": 4,
+  "Becoming.LoopReturn": 3,
   "Becoming.Readings": 3,
   "Becoming.Propagation": 3,
   "Becoming.StrengthFlows": 3,
@@ -244,10 +245,6 @@
    7,
    44
   ],
-  "Becoming.Interleavings": [
-   7,
-   79
-  ],
   "Becoming.Lexical": [
    7,
    39
@@ -263,6 +260,10 @@
   "Becoming.Verification": [
    6,
    87
+  ],
+  "Becoming.Interleavings": [
+   6,
+   102
   ],
   "Becoming.ChanceFloors": [
    5,
@@ -287,10 +288,6 @@
   "Becoming.Coverage": [
    5,
    22
-  ],
-  "Becoming.Prelude": [
-   4,
-   119
   ],
   "Becoming.MatchedCourses": [
    4,
@@ -323,6 +320,10 @@
   "Becoming.HistorySums": [
    4,
    39
+  ],
+  "Becoming.Prelude": [
+   3,
+   119
   ],
   "Becoming.Decidedness": [
    3,
@@ -460,6 +461,10 @@
    1,
    85
   ],
+  "Becoming.LoopReturn": [
+   1,
+   77
+  ],
   "Becoming.RuleCapture": [
    1,
    51
@@ -524,18 +529,18 @@
  "rings": {
   "core": {
    "modules": 268,
-   "theorems": 10682,
-   "apart": 398,
+   "theorems": 10733,
+   "apart": 397,
    "classes": {
-    "statement on both families": 904,
+    "statement on both families": 911,
     "statement on Process/Frame/Run/Trace": 2651,
-    "statement on World/Flow/Web": 2571,
-    "statement on the base only through a law of its own module": 130,
-    "proof through a base family": 138,
-    "used by a theorem on the base": 3740,
+    "statement on World/Flow/Web": 2575,
+    "statement on the base only through a law of its own module": 134,
+    "proof through a base family": 142,
+    "used by a theorem on the base": 3773,
     "instance on the base recorded": 150,
     "apart: own vocabulary": 367,
-    "apart: prelude-only statement": 31
+    "apart: prelude-only statement": 30
    }
   },
   "instances": {
@@ -662,7 +667,7 @@
   "Becoming.Naturals.le_of_add_le_left": "used by a theorem on the base",
   "Becoming.Naturals.le_of_add_le_right": "used by a theorem on the base",
   "Becoming.Naturals.add_right_cancel": "used by a theorem on the base",
-  "Becoming.Naturals.add_left_cancel": "apart: prelude-only statement",
+  "Becoming.Naturals.add_left_cancel": "used by a theorem on the base",
   "Becoming.Naturals.le_of_add_le_add_right": "used by a theorem on the base",
   "Becoming.Naturals.le_of_add_le_add_left": "used by a theorem on the base",
   "Becoming.Naturals.le_sub_of_add_le": "used by a theorem on the base",
@@ -6008,6 +6013,34 @@
   "Becoming.LoopReturn.selfLoop_carried": "statement on the base only through a law of its own module",
   "Becoming.LoopReturn.selfLoop_gap": "statement on the base only through a law of its own module",
   "Becoming.LoopReturn.carried_around_course": "statement on the base only through a law of its own module",
+  "Becoming.LoopReturn.link_rearranged": "used by a theorem on the base",
+  "Becoming.LoopReturn.carried_along_exact": "proof through a base family",
+  "Becoming.LoopReturn.carried_around_exact": "proof through a base family",
+  "Becoming.LoopReturn.carried_around_excess": "statement on the base only through a law of its own module",
+  "Becoming.LoopReturn.around_course_iff": "statement on the base only through a law of its own module",
+  "Becoming.LoopReturn.ring_even": "proof through a base family",
+  "Becoming.LoopReturn.product_const": "used by a theorem on the base",
+  "Becoming.LoopReturn.one_add_pow_lt": "used by a theorem on the base",
+  "Becoming.LoopReturn.Ring.cycle_start": "used by a theorem on the base",
+  "Becoming.LoopReturn.Ring.cycle_back": "used by a theorem on the base",
+  "Becoming.LoopReturn.Ring.pred_cycle": "used by a theorem on the base",
+  "Becoming.LoopReturn.Ring.pred_mem": "used by a theorem on the base",
+  "Becoming.LoopReturn.Ring.cycle_mem": "used by a theorem on the base",
+  "Becoming.LoopReturn.Ring.total_at": "used by a theorem on the base",
+  "Becoming.LoopReturn.Ring.gives": "used by a theorem on the base",
+  "Becoming.LoopReturn.Ring.coupled": "used by a theorem on the base",
+  "Becoming.LoopReturn.Ring.givesExactly": "apart: own vocabulary",
+  "Becoming.LoopReturn.Ring.amount_eq": "proof through a base family",
+  "Becoming.LoopReturn.Ring.exceeds_course": "statement on the base only through a law of its own module",
+  "Becoming.LoopReturn.Ring.bound_strict": "statement on the base only through a law of its own module",
+  "Becoming.LoopReturn.gap_add_right": "used by a theorem on the base",
+  "Becoming.LoopReturn.gap_succ": "statement on World/Flow/Web",
+  "Becoming.LoopReturn.responds_iff": "statement on World/Flow/Web",
+  "Becoming.LoopReturn.gap_course": "statement on both families",
+  "Becoming.LoopReturn.gap_scaling": "statement on World/Flow/Web",
+  "Becoming.LoopReturn.replenishing_responds": "statement on World/Flow/Web",
+  "Becoming.LoopReturn.replenishing_course": "statement on both families",
+  "Becoming.LoopReturn.replenishing_no_return": "statement on both families",
   "Becoming.Law.Reachable.back": "statement on Process/Frame/Run/Trace",
   "Becoming.Pace.paced_count": "statement on the base only through a law of its own module",
   "Becoming.Pace.paced_run": "statement on the base only through a law of its own module",
@@ -9734,18 +9767,37 @@
   "Becoming.Interleavings.LocalLaw.schedule_some": "used by a theorem on the base",
   "Becoming.Interleavings.LocalLaw.schedule_iff": "used by a theorem on the base",
   "Becoming.Interleavings.LocalLaw.traced_iff": "statement on Process/Frame/Run/Trace",
-  "Becoming.Interleavings.LocalLaw.standings_true": "apart: own vocabulary",
-  "Becoming.Interleavings.LocalLaw.standings_false": "apart: own vocabulary",
-  "Becoming.Interleavings.LocalLaw.standings_agree": "apart: own vocabulary",
-  "Becoming.Interleavings.LocalLaw.standings_move": "apart: own vocabulary",
-  "Becoming.Interleavings.LocalLaw.standings_idle": "apart: own vocabulary",
-  "Becoming.Interleavings.LocalLaw.standings_of_courses": "apart: own vocabulary",
-  "Becoming.Interleavings.LocalLaw.standings_of_interleavings": "apart: own vocabulary",
+  "Becoming.Interleavings.LocalLaw.standings_true": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.standings_false": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.standings_agree": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.standings_move": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.standings_idle": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.standings_of_courses": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.standings_of_interleavings": "used by a theorem on the base",
   "Becoming.Interleavings.LocalLaw.runUpTo_succ": "used by a theorem on the base",
   "Becoming.Interleavings.LocalLaw.runUpTo_whole": "used by a theorem on the base",
   "Becoming.Interleavings.LocalLaw.runUpTo_append_le": "used by a theorem on the base",
   "Becoming.Interleavings.LocalLaw.runUpTo_append": "used by a theorem on the base",
   "Becoming.Interleavings.LocalLaw.runUpTo_agree": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.ownCount_true": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.ownCount_false": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.ownCount_zero": "apart: own vocabulary",
+  "Becoming.Interleavings.LocalLaw.afterOwn_zero": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.runUpTo_own": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.standingAfter_of_interleavings": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.runUpTo_of_own": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.ownCount_le": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.firstAt_true": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.firstAt_false": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.ownCount_firstAt": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.firstAt_least": "apart: own vocabulary",
+  "Becoming.Interleavings.LocalLaw.length_of_interleavings": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.ownCount_index": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.runUpTo_index": "used by a theorem on the base",
+  "Becoming.Interleavings.LocalLaw.exchangeAt_lt": "apart: own vocabulary",
+  "Becoming.Interleavings.LocalLaw.exchangeAt_own": "apart: own vocabulary",
+  "Becoming.Interleavings.LocalLaw.firstAt_succ_step": "apart: own vocabulary",
+  "Becoming.Interleavings.LocalLaw.index_matches": "apart: own vocabulary",
   "Becoming.Interleavings.LocalLaw.world_level": "statement on both families",
   "Becoming.Interleavings.LocalLaw.total_zero_of": "used by a theorem on the base",
   "Becoming.Interleavings.LocalLaw.total_single": "used by a theorem on the base",
@@ -9758,6 +9810,10 @@
   "Becoming.Interleavings.LocalLaw.world_final": "statement on both families",
   "Becoming.Interleavings.LocalLaw.world_swap": "statement on both families",
   "Becoming.Interleavings.LocalLaw.world_swap_between": "statement on both families",
+  "Becoming.Interleavings.LocalLaw.world_own": "statement on both families",
+  "Becoming.Interleavings.LocalLaw.world_index": "statement on both families",
+  "Becoming.Interleavings.LocalLaw.world_of_own": "statement on both families",
+  "Becoming.Interleavings.LocalLaw.world_reads_alike": "statement on both families",
   "Becoming.counted_laws": "apart: own vocabulary",
   "Becoming.World.comings_exist_iff": "statement on both families",
   "Becoming.World.ceasings_exist_iff_listed": "statement on both families",
