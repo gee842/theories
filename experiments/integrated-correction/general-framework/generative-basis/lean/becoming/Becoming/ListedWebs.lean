@@ -35,7 +35,10 @@ states those laws of a web's activity and proves them through the general laws.
   continuation in which no formation continues as two, not every formation active after the step
   continues one active before, exactly when more are active after than before
   (`forced_iff_more`); and across every web, more active after a step forces this exactly under a
-  continuation in which no formation continues as two (`forces_iff_noSplit`).
+  continuation in which no formation continues as two (`forces_iff_noSplit`). Over a run, under a
+  census at every step, it holds at arbitrarily late steps under every continuation without a split
+  exactly when more are active after a step at arbitrarily late steps (`forcedAlong_iff_more`), and
+  a continuation without a split from some step on suffices (`forcedAlong_of_eventually_noSplit`).
 * **Rest, unrefuted.** That a world rests from some step on cannot be refuted exactly when it is
   not the case that after every step a later arising or ceasing stays unrefuted
   (`rests_unrefuted_iff`); no decidedness is needed.
@@ -125,6 +128,49 @@ theorem forces_iff_noSplit [DecidableEq F] {S : F → F → Prop} :
      Becoming.forces_iff_noSplit.mpr noSplit before after distinct more fun f mem =>
        match covered f (now f mem) with
        | ⟨g, active, continues⟩ => ⟨g, listed g active, continues⟩⟩
+
+/-- **Over a run, continuations without a split from some step on make more force arising.** Under
+a census at every step, where more formations are active after a step than before at arbitrarily
+late steps, and from `N` on no formation continues as two under `S`, not every formation active
+after a step continues under `S` one active before it, at arbitrarily late steps. -/
+theorem forcedAlong_of_eventually_noSplit {alive : Nat → List F}
+    (census : ∀ t, Distinct (alive t) ∧ ∀ f, W.active t f ↔ f ∈ alive t)
+    {S : Nat → F → F → Prop} {N : Nat}
+    (noSplit : ∀ t, N ≤ t → ∀ g f f', W.active t g → S t g f → S t g f' →
+      W.active (t + 1) f → W.active (t + 1) f' → f = f')
+    (more : ∀ T, ∃ t, T ≤ t ∧ (alive t).length < (alive (t + 1)).length) :
+    ∀ T, ∃ t, T ≤ t ∧ ¬ ∀ f, W.active (t + 1) f → W.Continues S t f :=
+  fun T => match more (T + N) with
+  | ⟨t, later, grows⟩ =>
+    ⟨t, Nat.le_trans (Nat.le_add_right T N) later, fun covered =>
+      (ListedWebs.forced_iff_more (census t) (census (t + 1))).mpr grows
+        (fun g f => S t g f ∧ W.active t g ∧ W.active (t + 1) f)
+        (fun g f f' continues continues' => noSplit t (Nat.le_trans (Nat.le_add_left N T) later)
+          g f f' continues.2.1 continues.1 continues'.1 continues.2.2 continues'.2.2)
+        fun f active => match covered f active with
+          | ⟨g, before, continues⟩ => ⟨g, before, continues, before, active⟩⟩
+
+/-- **Arising is forced over a run exactly where more are active after a step at arbitrarily late
+steps.** Under a census at every step: under every continuation in which no formation continues as
+two, not every formation active after a step continues one active before it, at arbitrarily late
+steps, exactly when more formations are active after a step than before it at arbitrarily late
+steps. Where more are active at no step from some step on, pairing the lists in order at every
+step continues every formation after each later step, with no split. -/
+theorem forcedAlong_iff_more {alive : Nat → List F}
+    (census : ∀ t, Distinct (alive t) ∧ ∀ f, W.active t f ↔ f ∈ alive t) :
+    (∀ S : Nat → F → F → Prop, W.NoSplit S →
+      ∀ T, ∃ t, T ≤ t ∧ ¬ ∀ f, W.active (t + 1) f → W.Continues S t f) ↔
+      ∀ T, ∃ t, T ≤ t ∧ (alive t).length < (alive (t + 1)).length :=
+  ⟨fun forced T => match forced (fun t => paired (alive t) (alive (t + 1)))
+      (fun t g f f' _ continues continues' _ _ =>
+        paired_noSplit (census t).1 g f f' continues continues') T with
+    | ⟨t, later, notAll⟩ => ⟨t, later, match Nat.decLt (alive t).length (alive (t + 1)).length with
+      | isTrue grows => grows
+      | isFalse notMore => absurd (fun f active =>
+          match paired_covers (Nat.ge_of_not_lt notMore) f (((census (t + 1)).2 f).mp active) with
+          | ⟨g, mem, continues⟩ => ⟨g, ((census t).2 g).mpr mem, continues⟩) notAll⟩,
+   fun more _ noSplit => forcedAlong_of_eventually_noSplit census (N := 0)
+     (fun t _ => noSplit t) more⟩
 
 end Forced
 

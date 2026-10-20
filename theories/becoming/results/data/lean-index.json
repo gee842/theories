@@ -18,18 +18,18 @@
     "classification": "Path-based documentary roles; working-source is not a claim of accepted, complete, canonical or checked status. A file containing only #print axioms and no inventoried named declarations is an audit-driver."
   },
   "statistics": {
-    "lean_paths": 1778,
-    "distinct_byte_contents": 1368,
-    "byte_identical_duplicate_groups": 145,
+    "lean_paths": 1736,
+    "distinct_byte_contents": 1367,
+    "byte_identical_duplicate_groups": 110,
     "roles": {
       "audit-driver": 13,
-      "development-attempt": 874,
+      "development-attempt": 832,
       "historical-draft": 3,
       "imported-archive": 23,
       "working-source": 865
     },
-    "working_named_theorem_lemma_occurrences": 23260,
-    "working_explicit_named_declaration_occurrences": 34852,
+    "working_named_theorem_lemma_occurrences": 23262,
+    "working_explicit_named_declaration_occurrences": 34854,
     "working_groups": {
       "abstraction": 45,
       "becoming-core": 281,
@@ -3910,384 +3910,6 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Admission.lean",
-      "sha256": "5824b1de37fb2fcce72f0f4df0804ddb0802de74a5fa289a6fad95746b72b411",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Amounts.lean",
-      "sha256": "dd51aa6f8eaafe4731e5a64462eb176d5c3e19392a162e25095f58bf4fe2b9f7",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Arising.lean",
-      "sha256": "cf6c388ea4a739f6f3ec97b50c9fe639b77acc73a4b10439481dbe70358435a6",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Boundaries.lean",
-      "sha256": "96f4546f209e766553d27576c5882fd47244912de912c2572c684dc822344bad",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/BoundedSignificance.lean",
-      "sha256": "74ef0fe3da6268dd0ff47f99e8236ccad24596cca007ec358ec928e4790939c6",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Change.lean",
-      "sha256": "9ecb1747568c0ac4dd9befc0cdaad0511321b439cea7e60ecfc4726b57be037f",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Clearing.lean",
-      "sha256": "9f0cf4d878594390bdfa25dd337094d3767faba8cd2ad23782e513a451ede8f1",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Continuation.lean",
-      "sha256": "b7405bce742da657308ed1cb3a962823d9aaa3a560f9aaa92b1c3ad1338b4ed1",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Correspondence.lean",
-      "sha256": "9ccd67d5006b1b4f5fee9914b6fdad62bfee17fb61cb2c95c41ed8e5436f34de",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Dependence.lean",
-      "sha256": "1c85d21fa7ec00debcac668785b51fdd7cdc3a97a66d50c6700047956cdaf5df",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Descent.lean",
-      "sha256": "cbfc20d98db0a3212176293a6f29e4d0b6804041d654e20953effbdc1f8dbec3",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Dissipation.lean",
-      "sha256": "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Evolution.lean",
-      "sha256": "e67ee59057675ac686f35ff210a01161eff80bad6195b59fc52a286467ac7e7e",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Extension.lean",
-      "sha256": "4d3afe46d3d4b297acc6a1e6b126ad2e0f2d08dfa9205fdcf2aa32bb7b5bcbf1",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Feedback.lean",
-      "sha256": "cb86cadd870f66707432b21b9b7f2d469a498fd413ab5cb4d4311d6c371d4f4a",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Flow.lean",
-      "sha256": "790cf03bbfa755bde10d6a0c3086e797844c92ff11e0528e7f4b761eb5d439f4",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Frame.lean",
-      "sha256": "548b1523ea8f0f9d6b08f6311baa9cc6318669e0097cd2e24605ba3ed8eb9ff2",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Inquiry.lean",
-      "sha256": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Interdependence.lean",
-      "sha256": "3497a8d1c8531e36e41a9c1c309beb27cbae3ea0a4493795f138ddd5a9935bc9",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Labelled.lean",
-      "sha256": "f2c55215f94a1ddf795d238cf4a37c041d66540ef56c83ce4a0c3319dfa19d7d",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Locality.lean",
-      "sha256": "236b6eb72050fd5c70c720cd5ccd82d732b7c90f423fe12b9f10849cdc4b2ea8",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Metaethics.lean",
-      "sha256": "659164aee82f74c802700e5e7e4118721400cf4b09233a743c2f9250b3d83584",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Population.lean",
-      "sha256": "df1e36a3a90ebab3af01572de71f5aa14c3d32f1c015b209e29114fda2385e7d",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Prelude.lean",
-      "sha256": "806e95fad20b5a22ad532429698511ec066b63e9160a1018f1b7a736e6724176",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Recurrence.lean",
-      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Regions.lean",
-      "sha256": "a360bf56d40bb977b686bd8756651357f995c5133d22cdd231ed79a71dc5899b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Renewal.lean",
-      "sha256": "23efa4c2ed7a38091b2d26cf42aee5a0c6a4c140ed4f67595f5389e8ed6e3382",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Reserve.lean",
-      "sha256": "b6cf1bcbc4bb2789534857e75e1e3dae51f2a9e60c5eaf6cc61221dd71ee862a",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Restoration.lean",
-      "sha256": "15ca795c65405065276fa214f3a151c19f31fc9c8923e2e37e37554b17ee8aa7",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Retaining.lean",
-      "sha256": "dd483a1fe58158c68d5cef175cee6c31de04a141590d66161cc9e9419168cf4b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Roles.lean",
-      "sha256": "6e0fdea63dbd3bc1d92d6df2d8e68216436e1a916d1f36ce9872da25c3fe64eb",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Significance.lean",
-      "sha256": "c658db1f65753aa4ad1d547ac13f1864154d2cbad2fce5867bdb82d4cc20ed77",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Space.lean",
-      "sha256": "d7cf70544495c135366166d401bf10bdfd0be55bf362bdd59b2b186258cff6cd",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Standpoints.lean",
-      "sha256": "5413cf90f54ac4a76bd0e9fef1296e854df95081bbfd2c0c9c72b8241d3813d1",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/ValuationFrames.lean",
-      "sha256": "874721d6fa07e8d14ba5de1fb0f20055939fd784140b38fc5fae578baa62156c",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Weightings.lean",
-      "sha256": "0b4f25dbf330f034d6d70844c2ac767abe442a1f968fae257a7f3032e51d097b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Witnesses.lean",
-      "sha256": "a9be4cf09e2d1a6a60fd88ed7a72c3799f7919e981a7e1894f4ec48b8637d6db",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/World.lean",
-      "sha256": "9d05b714c28d3497235330e5d5fb4221415ea3ae25ec32d730425299b5479428",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/BecomingWeightingsAxiomAudit.lean",
-      "sha256": "692781cee650c8097fbf6ee0f4633d3e549eed2f60604581021f8fbe5a6aa9a2",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/GenerativeCore.lean",
-      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/InquirySufficiency.lean",
-      "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/RelationalRenewal.lean",
-      "sha256": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/Becoming/Weightings.lean",
       "sha256": "0b4f25dbf330f034d6d70844c2ac767abe442a1f968fae257a7f3032e51d097b",
       "role": "development-attempt",
@@ -7490,7 +7112,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean",
-      "sha256": "ab065938c75985807b292a3412d7904c13fd62f726daa0e2cb5bf611cdbbdc18",
+      "sha256": "65607a907c2b5bd00695022cd05cd53052365bb209be49a40d90958eefa8269c",
       "role": "working-source",
       "group": "becoming-core",
       "receipt_layer": "core",
@@ -152354,6 +151976,64 @@
       },
       "print_axioms_commands": 14
     },
+    "65607a907c2b5bd00695022cd05cd53052365bb209be49a40d90958eefa8269c": {
+      "byte_size": 11590,
+      "line_count": 194,
+      "imports": [
+        "Becoming.Identity",
+        "Becoming.Locality",
+        "Becoming.Space"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "ceasing_not_recurring",
+          "qualified_name_hint": "Becoming.ListedWebs.ceasing_not_recurring",
+          "line": 80
+        },
+        {
+          "kind": "theorem",
+          "name": "forced_iff_more",
+          "qualified_name_hint": "Becoming.ListedWebs.forced_iff_more",
+          "line": 97
+        },
+        {
+          "kind": "theorem",
+          "name": "forces_iff_noSplit",
+          "qualified_name_hint": "Becoming.ListedWebs.forces_iff_noSplit",
+          "line": 114
+        },
+        {
+          "kind": "theorem",
+          "name": "forcedAlong_of_eventually_noSplit",
+          "qualified_name_hint": "Becoming.ListedWebs.forcedAlong_of_eventually_noSplit",
+          "line": 136
+        },
+        {
+          "kind": "theorem",
+          "name": "forcedAlong_iff_more",
+          "qualified_name_hint": "Becoming.ListedWebs.forcedAlong_iff_more",
+          "line": 159
+        },
+        {
+          "kind": "theorem",
+          "name": "rests_unrefuted_iff",
+          "qualified_name_hint": "Becoming.ListedWebs.rests_unrefuted_iff",
+          "line": 182
+        }
+      ],
+      "declaration_counts": {
+        "theorem": 6
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "659164aee82f74c802700e5e7e4118721400cf4b09233a743c2f9250b3d83584": {
       "byte_size": 21677,
       "line_count": 449,
@@ -155093,23 +154773,6 @@
         "unsafe": []
       },
       "print_axioms_commands": 0
-    },
-    "692781cee650c8097fbf6ee0f4633d3e549eed2f60604581021f8fbe5a6aa9a2": {
-      "byte_size": 4687,
-      "line_count": 101,
-      "imports": [
-        "Becoming.Weightings"
-      ],
-      "declarations": [],
-      "declaration_counts": {},
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 100
     },
     "693840cd3b0ff85e82cd093994e748255a2d407498cd89745a62ba3b9b70cfa3": {
       "byte_size": 4951,
@@ -242469,52 +242132,6 @@
         "inductive": 1,
         "structure": 1,
         "theorem": 25
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
-    "ab065938c75985807b292a3412d7904c13fd62f726daa0e2cb5bf611cdbbdc18": {
-      "byte_size": 8176,
-      "line_count": 148,
-      "imports": [
-        "Becoming.Identity",
-        "Becoming.Locality",
-        "Becoming.Space"
-      ],
-      "declarations": [
-        {
-          "kind": "theorem",
-          "name": "ceasing_not_recurring",
-          "qualified_name_hint": "Becoming.ListedWebs.ceasing_not_recurring",
-          "line": 77
-        },
-        {
-          "kind": "theorem",
-          "name": "forced_iff_more",
-          "qualified_name_hint": "Becoming.ListedWebs.forced_iff_more",
-          "line": 94
-        },
-        {
-          "kind": "theorem",
-          "name": "forces_iff_noSplit",
-          "qualified_name_hint": "Becoming.ListedWebs.forces_iff_noSplit",
-          "line": 111
-        },
-        {
-          "kind": "theorem",
-          "name": "rests_unrefuted_iff",
-          "qualified_name_hint": "Becoming.ListedWebs.rests_unrefuted_iff",
-          "line": 136
-        }
-      ],
-      "declaration_counts": {
-        "theorem": 4
       },
       "textual_markers": {
         "sorry": [],
@@ -363685,7 +363302,6 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/NarrowingRuns.lean"
     ],
     "0b4f25dbf330f034d6d70844c2ac767abe442a1f968fae257a7f3032e51d097b": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Weightings.lean",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/Becoming/Weightings.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean"
     ],
@@ -363746,10 +363362,6 @@
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-p73-landing/periphery/LearningCorrespondence.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearningCorrespondence.lean"
     ],
-    "15ca795c65405065276fa214f3a151c19f31fc9c8923e2e37e37554b17ee8aa7": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Restoration.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Restoration.lean"
-    ],
     "1714fb954f27170cbeeb6d300a6c1fe9e35403b514af45f5b1bfbf9ab1c131fa": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/SemanticWitnessFrontier.lean",
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/source-snapshots/SemanticWitnessFrontier.lean"
@@ -363758,22 +363370,10 @@
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/PracticalReach.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean"
     ],
-    "1c85d21fa7ec00debcac668785b51fdd7cdc3a97a66d50c6700047956cdaf5df": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Dependence.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
-    ],
     "21a212f1b6bfa4e995261f71aa28ed8e25f92cbf149b638e91a1e411135ff25a": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251812919283000/SuccessionWitness.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251831853906000/SuccessionWitness.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251872725947000/SuccessionWitness.lean"
-    ],
-    "236b6eb72050fd5c70c720cd5ccd82d732b7c90f423fe12b9f10849cdc4b2ea8": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Locality.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean"
-    ],
-    "23efa4c2ed7a38091b2d26cf42aee5a0c6a4c140ed4f67595f5389e8ed6e3382": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Renewal.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean"
     ],
     "246a8b7e2e1f643c44626e6a5991ec412293fda673422002878d30e2029e6602": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ev4-selection-levels/tree/Becoming/SelectionLevels.lean",
@@ -363867,10 +363467,6 @@
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/completion-applicability/root/attempt-02-GenerativeApplicabilityModel.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean"
     ],
-    "3497a8d1c8531e36e41a9c1c309beb27cbae3ea0a4493795f138ddd5a9935bc9": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Interdependence.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean"
-    ],
     "3bffc03c232e8103bc099447a7355965c4b2b1b09d54d2714b26e712c123660c": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ma1-closed-capture/tree/Becoming/ClosedCapture.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ClosedCapture.lean"
@@ -363919,10 +363515,6 @@
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/variation-warrant-review/20261007T234507.242662Z/Audit.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/variation-warrant-review/20261007T234545.254086Z/Audit.lean"
     ],
-    "4d3afe46d3d4b297acc6a1e6b126ad2e0f2d08dfa9205fdcf2aa32bb7b5bcbf1": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Extension.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean"
-    ],
     "4e6649999c96112c1f746d377fbfdacabe10e6ed2d12a7368f480b3986e38669": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/CutCoverageAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CutCoverageAudit.lean"
@@ -363937,14 +363529,6 @@
     "533a79ef770db2d5675f9f71a940223751740a73a17b40b1c70ec444841e3d46": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ev2-reproduction/tree/Becoming/Reproduction.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reproduction.lean"
-    ],
-    "5413cf90f54ac4a76bd0e9fef1296e854df95081bbfd2c0c9c72b8241d3813d1": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Standpoints.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean"
-    ],
-    "548b1523ea8f0f9d6b08f6311baa9cc6318669e0097cd2e24605ba3ed8eb9ff2": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Frame.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean"
     ],
     "56dcdccc9f4ef2c44e268e688d6f4a804b2c61a9527107c10a417d3bb8ad5538": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254295824849000/PublicationBridge.lean",
@@ -363969,10 +363553,6 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255039697090000/RecipientAction.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255132840263000/RecipientAction.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RecipientAction.lean"
-    ],
-    "5824b1de37fb2fcce72f0f4df0804ddb0802de74a5fa289a6fad95746b72b411": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Admission.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean"
     ],
     "594528f984e6bbbbfe181b52a3a70c0393f3302b665bb34b7da09498e86da1a8": [
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/nondual-applicability/repair-attempt-02.lean",
@@ -364027,10 +363607,6 @@
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/Becoming.Entropy.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-entropy-landing/evidence/Entropy.original.lean"
     ],
-    "659164aee82f74c802700e5e7e4118721400cf4b09233a743c2f9250b3d83584": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Metaethics.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean"
-    ],
     "66346ece4110d7c93e68c6df363679217e36df86327141420745ec7f078aa3e3": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/Yoneda.lean",
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/source-snapshots/Yoneda.lean"
@@ -364045,10 +363621,6 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375135188720000/ConsequenceTransmission.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375322294089000/ConsequenceTransmission.lean"
     ],
-    "6e0fdea63dbd3bc1d92d6df2d8e68216436e1a916d1f36ce9872da25c3fe64eb": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Roles.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean"
-    ],
     "6f53d92de64a31f515df7f128e2c31ebb08a9df6d66627141df5eb258f58c1a7": [
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/DevelopedResponse.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375322294089000/DevelopedResponse.lean"
@@ -364057,21 +363629,9 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254437728380000/PlasticityWitness.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254552886125000/PlasticityWitness.lean"
     ],
-    "74ef0fe3da6268dd0ff47f99e8236ccad24596cca007ec358ec928e4790939c6": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/BoundedSignificance.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/BoundedSignificance.lean"
-    ],
     "75292e115cf526ec42c2ec96102c3902c05999ba5cce5b0fc3624bbf09011394": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/PhiOperator.lean",
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/source-snapshots/PhiOperator.lean"
-    ],
-    "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Recurrence.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
-    ],
-    "790cf03bbfa755bde10d6a0c3086e797844c92ff11e0528e7f4b761eb5d439f4": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Flow.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean"
     ],
     "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254295824849000/ReasonPreparation.lean",
@@ -364088,10 +363648,6 @@
     "7f3950e1311b1be918c6a70a9e60805215f502ec9b3bb6d5d7b7aa485748956a": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/FullGUTNativeFrontier.lean",
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/source-snapshots/FullGUTNativeFrontier.lean"
-    ],
-    "806e95fad20b5a22ad532429698511ec066b63e9160a1018f1b7a736e6724176": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Prelude.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean"
     ],
     "81b813530ac97393e2c914d610989c248c2868ab336daf86bbb6f4c146f19b87": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/CayleyKernel.lean",
@@ -364116,10 +363672,6 @@
     "86ff096d42b7246b74242ba0e68ec90d3624392f14303b0dcd6e8a9c59e42fcd": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/PositiveGroundUncertainty.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean"
-    ],
-    "874721d6fa07e8d14ba5de1fb0f20055939fd784140b38fc5fae578baa62156c": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/ValuationFrames.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean"
     ],
     "89af77e013389b6e12c3e1aab79f102ae978621ec93747ba601714d9ae6d77a2": [
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/completion-applicability/attempt-03.lean",
@@ -364174,29 +363726,9 @@
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/PositionedPositiveReason.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean"
     ],
-    "96f4546f209e766553d27576c5882fd47244912de912c2572c684dc822344bad": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Boundaries.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean"
-    ],
     "9cbffa50aa314afc7e9cd3ebed1270d720b4e755deb079487f11612d85ca7f87": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254295824849000/PlasticityPreparation.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254333566156000/PlasticityPreparation.lean"
-    ],
-    "9ccd67d5006b1b4f5fee9914b6fdad62bfee17fb61cb2c95c41ed8e5436f34de": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Correspondence.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean"
-    ],
-    "9d05b714c28d3497235330e5d5fb4221415ea3ae25ec32d730425299b5479428": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/World.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean"
-    ],
-    "9ecb1747568c0ac4dd9befc0cdaad0511321b439cea7e60ecfc4726b57be037f": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Change.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean"
-    ],
-    "9f0cf4d878594390bdfa25dd337094d3767faba8cd2ad23782e513a451ede8f1": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Clearing.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Clearing.lean"
     ],
     "a002d04a7c7334830a30f22d6c16f2ce6d7d918bc077b132281208b847b80b2b": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/EvaluatorGrounding.lean",
@@ -364207,10 +363739,6 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/history/learning/protocol-completion-development/20261006T011134517329Z/PredictionProtocolCompletion.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/history/learning/protocol-completion-development/preflight-comment-token/PredictionProtocolCompletion.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolCompletion.lean"
-    ],
-    "a360bf56d40bb977b686bd8756651357f995c5133d22cdd231ed79a71dc5899b": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Regions.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean"
     ],
     "a3cedffa92ec8d091466683af8d439154c7350a9cd49c8ddf3424b0d144c35c5": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251476933938000/EvaluativeSuccession.lean",
@@ -364247,10 +363775,6 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PublicationBudget.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean"
     ],
-    "a9be4cf09e2d1a6a60fd88ed7a72c3799f7919e981a7e1894f4ec48b8637d6db": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Witnesses.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Witnesses.lean"
-    ],
     "aa2da76bae0b742b0966d856334ed0cd7e29ccf05ce33b0b674a00e5e0689578": [
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/system-individuation-review/20261007T233530.588639Z/SystemIndividuation.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/variation-warrant-review/20261007T234507.242662Z/SystemIndividuation.lean",
@@ -364285,22 +363809,12 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PaidRecipientReasons.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean"
     ],
-    "b6cf1bcbc4bb2789534857e75e1e3dae51f2a9e60c5eaf6cc61221dd71ee862a": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Reserve.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean"
-    ],
-    "b7405bce742da657308ed1cb3a962823d9aaa3a560f9aaa92b1c3ad1338b4ed1": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Continuation.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
-    ],
     "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/RelationalRenewal.lean",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/RelationalRenewal.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean"
     ],
     "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/Becoming.Inquiry.lean",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Inquiry.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean"
     ],
     "bf401ff23a845430288089d9d43e57420a6afc7d50751bbc27b79a073bdca7ed": [
@@ -364320,25 +363834,9 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255132840263000/RecordedEvidence.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RecordedEvidence.lean"
     ],
-    "c658db1f65753aa4ad1d547ac13f1864154d2cbad2fce5867bdb82d4cc20ed77": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Significance.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean"
-    ],
-    "cb86cadd870f66707432b21b9b7f2d469a498fd413ab5cb4d4311d6c371d4f4a": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Feedback.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean"
-    ],
     "cba6cdd4f7146dcf75091eada0d09329e0586163fbfe6fcb6300eda142d566dd": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/T_GUT.lean",
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/source-snapshots/T_GUT.lean"
-    ],
-    "cbfc20d98db0a3212176293a6f29e4d0b6804041d654e20953effbdc1f8dbec3": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Descent.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean"
-    ],
-    "cf6c388ea4a739f6f3ec97b50c9fe639b77acc73a4b10439481dbe70358435a6": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Arising.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean"
     ],
     "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean",
@@ -364358,16 +363856,11 @@
     ],
     "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/InquirySufficiency.lean",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/InquirySufficiency.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean"
     ],
     "d709bf12b6b76e096f3c919ea70d82665e217dd0ebc5f51cbfcc0a8fbd9e4491": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791250912038566000/SuccessionWitness.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791250934371742000/SuccessionWitness.lean"
-    ],
-    "d7cf70544495c135366166d401bf10bdfd0be55bf362bdd59b2b186258cff6cd": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Space.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean"
     ],
     "d8830043237445543c06727dd85adefb7a0cf783648c877c7dcd639f305c3300": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251310340708000/SuccessionWitness.lean",
@@ -364387,18 +363880,6 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/development/1791254158787477000/ApplicationEvidence.lean"
     ],
-    "dd483a1fe58158c68d5cef175cee6c31de04a141590d66161cc9e9419168cf4b": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Retaining.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean"
-    ],
-    "dd51aa6f8eaafe4731e5a64462eb176d5c3e19392a162e25095f58bf4fe2b9f7": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Amounts.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Amounts.lean"
-    ],
-    "df1e36a3a90ebab3af01572de71f5aa14c3d32f1c015b209e29114fda2385e7d": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Population.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean"
-    ],
     "df54d86981213e4dbb14d6b707793a244971dbe084d2ac9123b21bf49e0b6e9a": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255039697090000/PlasticityWitness.lean",
@@ -364415,7 +363896,6 @@
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/system-individuation-review/20261007T233530.588639Z/GenerativeCore.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/variation-warrant-review/20261007T234507.242662Z/GenerativeCore.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/variation-warrant-review/20261007T234545.254086Z/GenerativeCore.lean",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/GenerativeCore.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375037098271000/GenerativeCore.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375135188720000/GenerativeCore.lean",
@@ -364449,7 +363929,6 @@
     ],
     "e67ee59057675ac686f35ff210a01161eff80bad6195b59fc52a286467ac7e7e": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/Becoming.Evolution.lean",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Evolution.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean"
     ],
     "ecdd47fbd72a3ca56ba3a2c1700b2eb3b9580d819e6776e3bc5681a8fce234e6": [
@@ -364479,14 +363958,6 @@
     "f191c6c5edb18770b0db8657da3f5f25270531f788f8dd81e01fa34e996f9f21": [
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/.build/Becoming/Interleavings.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/Becoming/Interleavings.lean"
-    ],
-    "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Dissipation.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean"
-    ],
-    "f2c55215f94a1ddf795d238cf4a37c041d66540ef56c83ce4a0c3319dfa19d7d": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/iv2-de-se-grades/tree/.build/Becoming/Labelled.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean"
     ],
     "f3801a35fc3357004c282080d28bacb7b586642a82763dd090da561c62d438fe": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791250219383289000/EvaluativeSuccession.lean",

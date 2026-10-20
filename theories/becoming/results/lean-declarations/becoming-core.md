@@ -10177,7 +10177,7 @@ Definitions and types:
 <a id="module-aea2194ee2b8"></a>
 
 <details>
-<summary>ListedWebs.lean — 4 explicit declarations</summary>
+<summary>ListedWebs.lean — 6 explicit declarations</summary>
 
 [Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked
 
@@ -10187,10 +10187,12 @@ Imports: `Becoming.Identity`, `Becoming.Locality`, `Becoming.Space`
 
 | Theorem or lemma | Line |
 |---|---:|
-| [Becoming.ListedWebs.ceasing_not_recurring](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean#L77) | 77 |
-| [Becoming.ListedWebs.forced_iff_more](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean#L94) | 94 |
-| [Becoming.ListedWebs.forces_iff_noSplit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean#L111) | 111 |
-| [Becoming.ListedWebs.rests_unrefuted_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean#L136) | 136 |
+| [Becoming.ListedWebs.ceasing_not_recurring](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean#L80) | 80 |
+| [Becoming.ListedWebs.forced_iff_more](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean#L97) | 97 |
+| [Becoming.ListedWebs.forces_iff_noSplit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean#L114) | 114 |
+| [Becoming.ListedWebs.forcedAlong_of_eventually_noSplit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean#L136) | 136 |
+| [Becoming.ListedWebs.forcedAlong_iff_more](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean#L159) | 159 |
+| [Becoming.ListedWebs.rests_unrefuted_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedWebs.lean#L182) | 182 |
 
 </details>
 
