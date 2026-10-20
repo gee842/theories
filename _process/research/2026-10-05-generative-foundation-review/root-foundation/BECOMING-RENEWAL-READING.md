@@ -10725,6 +10725,8 @@ Output → input: section 7's boundary sharpens from "widening the coupling is n
 
 **Self-review.** The conditions, their classes, the thresholds and the predicted outcomes were fixed from the exact calibration and committed (`8a049b4fb`) before any learning run; a 200-episode code-path test of the analysis was run before the freeze and its untrained numbers were not used (disclosed in the predictions file). Nothing changed after the freeze. The strongest evidence is X1, whose open conditions could have failed as CG1's C2 did and did not, against a named alternative. The two failures are kept as failures; the joint learner's diagnosis is post hoc, one seed's value table and a three-seed control, and suggests a reading the theory had not stated: the rest that outruns can be one's own later policy.
 
+**Correction (20 October 2026).** Section 254 (CG3) refutes the post hoc reading in the Output → input block and the self-review above. In its exact form, one's own later acts are improved together with the present act (policy improvement), not held fixed, and exact policy iteration from the full draw keeps the patch. The joint learner's failure is the sampling of its own courses: its untrained full draw outruns the renewal at the start of a course, before the region where restraint is learned. `Flow.outrun_reading_alike` explains a selection blind to an act where the rest is held fixed, which is this section's result; it does not explain a selector's blindness to its own later acts. The text above is kept as written.
+
 ## 251. The evolution chapter restated from the spine (EV3)
 
 ```text
