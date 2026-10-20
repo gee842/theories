@@ -284,7 +284,7 @@ You need Python 3.9 or later (standard library only), git, and ripgrep for the s
 
 ## Discovery and evidence
 
-[Full reading catalogue](theories/becoming/results/README.md) · [Curated generativity chain](theories/becoming/results/GENERATIVITY-CHAIN.md) · [Dated session map](theories/becoming/results/SESSION-RESULTS.md) · [Broader theory map](MAP.md)
+[Full reading catalogue](theories/becoming/results/README.md) · [Curated generativity chain](theories/becoming/results/GENERATIVITY-CHAIN.md) · [Broader theory map](MAP.md)
 
 ```sh
 make research-check

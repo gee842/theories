@@ -17,7 +17,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 <details>
 <summary>CarrierTurnover.lean — 34 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
 
 `experiments/shared-renewal-capability/formal/CarrierTurnover.lean`
 
@@ -72,7 +72,7 @@ Contains 12 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RenewalLedger.lean — 43 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
 
 `experiments/shared-renewal-capability/formal/RenewalLedger.lean`
 
@@ -136,7 +136,7 @@ Contains 5 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>ReserveTurnover.lean — 8 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
 
 `experiments/shared-renewal-capability/formal/ReserveTurnover.lean`
 
@@ -165,7 +165,7 @@ Contains 5 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>TypedRenewal.lean — 48 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
 
 `experiments/shared-renewal-capability/formal/TypedRenewal.lean`
 
@@ -727,7 +727,7 @@ Contains 33 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ReasonReplay.lean — 128 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean) · [Theory](../../history/HUIGEN.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean`
 
@@ -876,7 +876,7 @@ Contains 58 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ClaimLedger.lean — 35 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean`
 
@@ -989,7 +989,7 @@ Contains 24 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ReasonProtection.lean — 132 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean`
 
@@ -1142,7 +1142,7 @@ Contains 61 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>SelectorRevision.lean — 45 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean`
 
@@ -1208,7 +1208,7 @@ Contains 21 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>UpdaterFormation.lean — 56 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean) · [Theory](../../../meta-attractor/COMMON-ORGANIZATION.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean`
 
@@ -1285,7 +1285,7 @@ Contains 25 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>PredictionAction.lean — 79 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean`
 
@@ -1385,7 +1385,7 @@ Contains 34 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RecipientCorrection.lean — 59 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean`
 
@@ -1797,7 +1797,7 @@ Contains 22 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ActionPreparation.lean — 21 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean`
 
@@ -1839,7 +1839,7 @@ Contains 13 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ActionWitness.lean — 74 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean`
 
@@ -1934,7 +1934,7 @@ Contains 30 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RecipientAction.lean — 62 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean`
 
@@ -2017,7 +2017,7 @@ Contains 36 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>AcquiredEvaluation.lean — 80 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean`
 
@@ -2154,7 +2154,7 @@ Contains 8 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>EvaluationWitness.lean — 55 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean`
 
@@ -2230,7 +2230,7 @@ Contains 28 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>PairedPlasticity.lean — 79 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean`
 
@@ -2366,7 +2366,7 @@ Contains 8 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>PlasticityWitness.lean — 56 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean`
 
@@ -2485,7 +2485,7 @@ Contains 16 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>InquiryRevision.lean — 77 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean`
 
@@ -2607,7 +2607,7 @@ Definitions and types:
 <details>
 <summary>ApplicationEvidence.lean — 33 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean`
 
@@ -2772,7 +2772,7 @@ Contains 47 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>SuccessionHistoryInterface.lean — 25 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean`
 
@@ -2854,7 +2854,7 @@ Contains 8 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>SuccessionWitness.lean — 82 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean`
 
@@ -3026,7 +3026,7 @@ Contains 9 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>FreshRevision.lean — 54 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean`
 
@@ -3101,7 +3101,7 @@ Contains 30 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RevisionPreparation.lean — 17 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean`
 
@@ -3139,7 +3139,7 @@ Contains 10 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RevisionWitness.lean — 56 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean`
 
@@ -3530,7 +3530,7 @@ Contains 20 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>SemanticCalibration.lean — 22 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean`
 
@@ -3573,7 +3573,7 @@ Contains 12 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>InspectionPreparation.lean — 16 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean`
 
@@ -3610,7 +3610,7 @@ Contains 8 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>InspectionWitness.lean — 12 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean`
 
@@ -3643,7 +3643,7 @@ Contains 6 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>PaidPreImport.lean — 29 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean`
 
@@ -3693,7 +3693,7 @@ Contains 15 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>SemanticAction.lean — 31 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean`
 
@@ -3745,7 +3745,7 @@ Contains 16 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RouteDiagnostics.lean — 31 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean) · [Theory](../../history/ROUTE-DIAGNOSTICS.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean`
 
@@ -3797,7 +3797,7 @@ Contains 15 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>FormedRouteMonitor.lean — 73 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean`
 
@@ -3944,7 +3944,7 @@ Contains 18 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RouteRevision.lean — 56 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean`
 
@@ -4021,7 +4021,7 @@ Contains 29 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>SuccessorLearning.lean — 74 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-MATH.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-MATH.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean`
 
@@ -4116,7 +4116,7 @@ Contains 35 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>FormedRecipientRoute.lean — 69 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean) · [Theory](../../history/RECIPIENT-TRANSMISSION.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-MATH.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-MATH.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean`
 
@@ -4206,7 +4206,7 @@ Contains 37 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RenewalLiquidity.lean — 53 explicit declarations</summary>
 
-[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md)
+[Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean`
 

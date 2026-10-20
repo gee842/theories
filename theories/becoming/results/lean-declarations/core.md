@@ -112,7 +112,7 @@ Contains 8 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>CompletionApplicability.lean — 20 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean) · [Theory](../../history/CONNECTED-GENERATIVE-MODEL.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean`
 
@@ -153,7 +153,7 @@ Contains 17 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ConnectedGenerativeModel.lean — 8 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean) · [Theory](../../history/CONNECTED-GENERATIVE-MODEL.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean`
 
@@ -318,7 +318,7 @@ Contains 5 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>EthicalOrientation.lean — 25 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean) · [Theory](../../history/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean`
 
@@ -364,7 +364,7 @@ Contains 17 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>GeneratedSelf.lean — 27 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean) · [Theory](../../history/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean`
 
@@ -412,7 +412,7 @@ Contains 23 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>GenerativeAcquisitionModel.lean — 3 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAcquisitionModel.lean) · [Theory](../../history/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAcquisitionModel.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAcquisitionModel.lean`
 
@@ -433,7 +433,7 @@ Contains 3 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>GenerativeApplicabilityModel.lean — 4 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean) · [Theory](../../history/CONNECTED-GENERATIVE-MODEL.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean`
 
@@ -458,7 +458,7 @@ Contains 4 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>GenerativeAttainableQuestionsModel.lean — 0 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean) · [Theory](../../history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean`
 
@@ -473,7 +473,7 @@ No explicit theorem/lemma scanned; this may be an import, audit or definition mo
 <details>
 <summary>GenerativeCoreTreeModel.lean — 2 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCoreTreeModel.lean) · [Theory](../../history/DEEPER-GENERATIVE-ROOT.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION-REVIEW.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCoreTreeModel.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION-REVIEW.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCoreTreeModel.lean`
 
@@ -493,7 +493,7 @@ Contains 2 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>GenerativeDerivedInquiryModel.lean — 0 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean) · [Theory](../../history/GENERATIVE-CORE-LEAN.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean`
 
@@ -508,7 +508,7 @@ No explicit theorem/lemma scanned; this may be an import, audit or definition mo
 <details>
 <summary>GenerativeDerivedProcessLawModel.lean — 0 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean) · [Theory](../../history/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean`
 
@@ -553,7 +553,7 @@ No explicit theorem/lemma scanned; this may be an import, audit or definition mo
 <details>
 <summary>GenerativeModel.lean — 8 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean) · [Theory](../../history/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean`
 
@@ -635,7 +635,7 @@ Contains 3 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>GenerativePretrainingEvidenceModel.lean — 0 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean) · [Theory](../../history/CONNECTED-GENERATIVE-MODEL.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean`
 
@@ -761,7 +761,7 @@ Contains 16 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>NewPossibilities.lean — 64 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean) · [Theory](../../history/NEW-POSSIBILITIES.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean`
 
@@ -1215,7 +1215,7 @@ Definitions and types:
 <details>
 <summary>BecomingReversibility.lean — 14 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean`
 
@@ -1338,7 +1338,7 @@ Contains 21 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ContextualWisdom.lean — 19 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean`
 
@@ -1378,7 +1378,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ContinuationConditions.lean — 25 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContinuationConditions.lean) · [Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContinuationConditions.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContinuationConditions.lean`
 
@@ -1524,7 +1524,7 @@ Contains 12 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>DeductiveNecessity.lean — 7 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DeductiveNecessity.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DeductiveNecessity.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DeductiveNecessity.lean`
 
@@ -1582,7 +1582,7 @@ Contains 3 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>DerivedHistoryLaw.lean — 11 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean) · [Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean`
 
@@ -1638,7 +1638,7 @@ Contains 6 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>DynamicConsequences.lean — 10 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean) · [Theory](../../history/SESSION-RESULTS-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean`
 
@@ -1717,7 +1717,7 @@ Contains 20 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>DynamicUnderdetermination.lean — 13 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean) · [Theory](../../history/DEEPER-GENERATIVE-ROOT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean`
 
@@ -1751,7 +1751,7 @@ Contains 9 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>EnactedFoundation.lean — 12 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/EnactedFoundation.lean) · [Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/EnactedFoundation.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/EnactedFoundation.lean`
 
@@ -1806,7 +1806,7 @@ Contains 4 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>ExplanatoryBranching.lean — 26 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean`
 
@@ -1932,7 +1932,7 @@ Contains 18 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryCardinalityWall.lean — 28 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCardinalityWall.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCardinalityWall.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCardinalityWall.lean`
 
@@ -1981,7 +1981,7 @@ Contains 22 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryChangingSupport.lean — 21 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryChangingSupport.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryChangingSupport.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryChangingSupport.lean`
 
@@ -2057,7 +2057,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryCompactness.lean — 17 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCompactness.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCompactness.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCompactness.lean`
 
@@ -2201,7 +2201,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryCrossBranch.lean — 21 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCrossBranch.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCrossBranch.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCrossBranch.lean`
 
@@ -2290,7 +2290,7 @@ Contains 17 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryFiniteLogic.lean — 17 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFiniteLogic.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFiniteLogic.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFiniteLogic.lean`
 
@@ -2328,7 +2328,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryFootprints.lean — 18 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean) · [Theory](../../history/SESSION-RESULTS-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean`
 
@@ -2443,7 +2443,7 @@ Contains 13 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryGuardedPrograms.lean — 19 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean`
 
@@ -2840,7 +2840,7 @@ Contains 16 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryJoiningContexts.lean — 22 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean`
 
@@ -2999,7 +2999,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryJointness.lean — 36 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean`
 
@@ -3308,7 +3308,7 @@ Contains 10 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryResiduals.lean — 16 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean`
 
@@ -4044,7 +4044,7 @@ Contains 7 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>InferentialGrounds.lean — 17 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean) · [Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean`
 
@@ -4082,7 +4082,7 @@ Contains 10 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>InferentialSubstitution.lean — 20 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean`
 
@@ -4149,7 +4149,7 @@ Definitions and types:
 <details>
 <summary>MutualGrounding.lean — 11 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/MutualGrounding.lean) · [Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/MutualGrounding.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/MutualGrounding.lean`
 
@@ -4181,7 +4181,7 @@ Contains 10 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>OperationRoles.lean — 37 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperationRoles.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperationRoles.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperationRoles.lean`
 
@@ -4239,7 +4239,7 @@ Contains 37 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>OperativeCoherence.lean — 54 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean`
 
@@ -4341,7 +4341,7 @@ Contains 7 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>RecognitionalBinding.lean — 11 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RecognitionalBinding.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RecognitionalBinding.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RecognitionalBinding.lean`
 
@@ -4471,7 +4471,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RelationalBecoming.lean — 18 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean`
 
@@ -4546,7 +4546,7 @@ Contains 12 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RelationalCoordinates.lean — 25 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalCoordinates.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalCoordinates.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalCoordinates.lean`
 
@@ -4627,7 +4627,7 @@ Contains 13 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RelationalFormation.lean — 31 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalFormation.lean) · [Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalFormation.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalFormation.lean`
 
@@ -4679,7 +4679,7 @@ Contains 31 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RelationalReduction.lean — 25 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean`
 
@@ -4723,7 +4723,7 @@ Definitions and types:
 <details>
 <summary>RenewalComparison.lean — 24 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean`
 
@@ -4766,7 +4766,7 @@ Definitions and types:
 <details>
 <summary>RenewalRecovery.lean — 10 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean`
 
@@ -4873,7 +4873,7 @@ Definitions and types:
 <details>
 <summary>SystemIndividuation.lean — 41 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean`
 
@@ -4982,7 +4982,7 @@ Contains 28 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>VariationWarrant.lean — 21 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/VariationWarrant.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/VariationWarrant.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/VariationWarrant.lean`
 
@@ -5022,7 +5022,7 @@ Definitions and types:
 <details>
 <summary>WisdomFallibleJudgment.lean — 9 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean`
 
@@ -5052,7 +5052,7 @@ Contains 5 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>WisdomResponseStructure.lean — 20 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean`
 

@@ -27,7 +27,7 @@ This page earlier repeated the scope list. Directions, their authorization and t
 <a id="discovery-and-evidence--检索与证据"></a>
 ## Discovery and evidence
 
-[Full reading catalogue](README.md) · [Curated generativity chain](GENERATIVITY-CHAIN.md) · [Dated session map](SESSION-RESULTS.md) · [Broader theory map](../../../MAP.md)
+[Full reading catalogue](README.md) · [Curated generativity chain](GENERATIVITY-CHAIN.md) · [Broader theory map](../../../MAP.md)
 
 ```sh
 make research-check

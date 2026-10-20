@@ -88,4 +88,4 @@ A fresh run compiles more than a thousand Lean steps and takes a while; `BECOMIN
 | [wamotopia-and-the-wamo-protocol](theories/wamotopia-and-the-wamo-protocol/README.md) | Technology amplifies the operating logic it runs under; the Wamo Protocol |
 | [zhishan-intelligence-must-be-good](theories/zhishan-intelligence-must-be-good/README.md) | 智善: competition that selects survivors hands winners the rule |
 
-The [theory map](theories/becoming/results/THEORY-MAP.md) gives the longer branch-by-branch reading of these folders (a dated reading catalogue).
+The [theory map](theories/becoming/history/THEORY-MAP-2026-10-08.md) gives the longer branch-by-branch reading of these folders (a dated reading catalogue).

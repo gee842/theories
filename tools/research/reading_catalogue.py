@@ -7,7 +7,9 @@ From the repository root:
 `make research-render` writes the same pages through the guarded renderer.
 
 Argument prose is edited in the three JSON reading registers (results/data/). This
-script owns results/README.md, THEORY-MAP.md and both ARGUMENTS volumes. The pages show
+script owns results/README.md and the two stubs ARGUMENTS-A-L.md and ARGUMENTS-M-Z.md. The volumes and the
+theory map of 8 October 2026 are frozen in theories/becoming/history/ (R35, E2); the index links them there and the
+stubs keep the old paths for the curated chain's page. The pages show
 the English of each paired field, or the Chinese where no English exists; the Chinese
 stays in the registers.
 
@@ -98,9 +100,17 @@ def rel(path: str) -> str:
     return os.path.relpath(ROOT / path, OUT)
 
 
-def chapter_link(identifier: str) -> str:
+FROZEN = {'A-L': OUT.parent / 'history/ARGUMENTS-A-L-2026-10-08.md', 'M-Z': OUT.parent / 'history/ARGUMENTS-M-Z-2026-10-08.md'}
+THEORY_MAP = OUT.parent / 'history/THEORY-MAP-2026-10-08.md'
+
+
+def chapter_link(identifier: str, source: str | None = None) -> str:
+    """The entry's reading in the frozen volume of 8 October 2026 where it has one, else the chapter itself."""
     volume = 'A-L' if identifier[0].upper() <= 'L' else 'M-Z'
-    return f'ARGUMENTS-{volume}.md#{identifier}'
+    frozen = FROZEN[volume]
+    if frozen.is_file() and identifier in anchors(frozen):
+        return f'{rel(str(frozen.relative_to(ROOT)))}#{identifier}'
+    return rel(source) if source else f'{rel(str(frozen.relative_to(ROOT)))}'
 
 
 def link(label: str, target: str) -> str:
@@ -239,23 +249,23 @@ def index(chapters: list[dict], branches: list[dict], drift: dict | None = None)
              H('##', 'Reading routes', '阅读入口 / Reading routes'), '',
              '| Document | Contents |', '|---|---|',
              '| [Canonical result register](RESULT-REGISTER.md) | One editable record per migrated claim, with premises, evidence, status, dependencies, counterexamples and aliases; reading views are generated. |',
-             '| [Session outcomes and proof reuse](SESSION-RESULTS.md) | Chats mapped to result families, canonical reuse targets, overlap decisions and additional chapters. |',
-             f'| [Theory map](THEORY-MAP.md) | Accounts of the {len(branches)} branches, with significance, status and next steps; includes the method archive. |',
-             '| [Arguments A–L](ARGUMENTS-A-L.md) · [Arguments M–Z](ARGUMENTS-M-Z.md) | Chapter readings with argument, significance, scope, next question, source, Lean and evidence. |',
+             '| [Session outcomes and proof reuse, 8 October 2026](../history/SESSION-RESULTS-2026-10-08.md) (frozen) | Chats mapped to result families, canonical reuse targets, overlap decisions and additional chapters, as of 8 October 2026. |',
+             '| [Theory map, 8 October 2026](../history/THEORY-MAP-2026-10-08.md) (frozen) | Accounts of the branches, with significance, status and next steps; includes the method archive. |',
+             '| [Arguments A–L](../history/ARGUMENTS-A-L-2026-10-08.md) · [Arguments M–Z](../history/ARGUMENTS-M-Z-2026-10-08.md) (frozen, 8 October 2026) | Chapter readings with argument, significance, scope, next question, source, Lean and evidence; the registers in data/ keep them. |',
              '| [Lean modules](LEAN-INDEX.md) · [Declaration names](LEAN-DECLARATIONS.md) | Find modules and named declarations; recorded checks are distinguished from current sources. |',
              '| [Chapter index](../chapters/README.md) | Every chapter file with its status, and where moved chapters now are. |',
              '| [Roadmap](ROADMAP.md) | Established results, ongoing directions and proposed tests. |',
              '| [Claim register](../chapters/CLAIMS.md) | Existing detailed claims, evidence classes and counterexamples. |', '',
              H('##', 'Read by question', '按问题阅读 / Read by question'), '',
              '| Question | Entry points |', '|---|---|',
-             '| What foundation has been established? | [Generative grounding](ARGUMENTS-A-L.md#generative-grounding) · [Foundation premises](ARGUMENTS-A-L.md#foundation-premises) · [The whole theory](ARGUMENTS-M-Z.md#theory) |',
-             '| How do organization, learning and revision form? | [Generative development](ARGUMENTS-A-L.md#generative-development) · [Learning-route revision](ARGUMENTS-A-L.md#learning-route-revision) · [Evaluative succession](ARGUMENTS-A-L.md#evaluative-succession) |',
-             '| Why does generativity matter ethically? | [Unified ethical grounding](ARGUMENTS-M-Z.md#unified-ethical-grounding) · [Evaluative grounding](ARGUMENTS-A-L.md#evaluative-grounding) · [Liangzhi](ARGUMENTS-A-L.md#liangzhi-evolution) |',
-             '| How far do mathematical and general results reach? | [Lean core](ARGUMENTS-A-L.md#generative-core-lean) · [Mathematical root frontier](ARGUMENTS-M-Z.md#mathematical-root-frontier) · [Conditional universality](ARGUMENTS-A-L.md#conditional-universality) |',
-             '| How can the theory be tested or revised? | [Empirical scope](ARGUMENTS-A-L.md#empirical-scope) · [Experimental access](ARGUMENTS-A-L.md#experimental-access) · [Nondual method](ARGUMENTS-M-Z.md#nondual-method) |',
-             '| How does it connect to earlier theories and practice? | [Theory map](THEORY-MAP.md) · [Dao and generativity](ARGUMENTS-A-L.md#dao-and-generativity) · [Wang Yangming](ARGUMENTS-M-Z.md#wang-yangming) |', '',
+             '| What foundation has been established? | [Generative grounding](../history/ARGUMENTS-A-L-2026-10-08.md#generative-grounding) · [Foundation premises](../history/ARGUMENTS-A-L-2026-10-08.md#foundation-premises) · [The whole theory](../history/ARGUMENTS-M-Z-2026-10-08.md#theory) |',
+             '| How do organization, learning and revision form? | [Generative development](../history/ARGUMENTS-A-L-2026-10-08.md#generative-development) · [Learning-route revision](../history/ARGUMENTS-A-L-2026-10-08.md#learning-route-revision) · [Evaluative succession](../history/ARGUMENTS-A-L-2026-10-08.md#evaluative-succession) |',
+             '| Why does generativity matter ethically? | [Unified ethical grounding](../history/ARGUMENTS-M-Z-2026-10-08.md#unified-ethical-grounding) · [Evaluative grounding](../history/ARGUMENTS-A-L-2026-10-08.md#evaluative-grounding) · [Liangzhi](../history/ARGUMENTS-A-L-2026-10-08.md#liangzhi-evolution) |',
+             '| How far do mathematical and general results reach? | [Lean core](../history/ARGUMENTS-A-L-2026-10-08.md#generative-core-lean) · [Mathematical root frontier](../history/ARGUMENTS-M-Z-2026-10-08.md#mathematical-root-frontier) · [Conditional universality](../history/ARGUMENTS-A-L-2026-10-08.md#conditional-universality) |',
+             '| How can the theory be tested or revised? | [Empirical scope](../history/ARGUMENTS-A-L-2026-10-08.md#empirical-scope) · [Experimental access](../history/ARGUMENTS-A-L-2026-10-08.md#experimental-access) · [Nondual method](../history/ARGUMENTS-M-Z-2026-10-08.md#nondual-method) |',
+             '| How does it connect to earlier theories and practice? | [Theory map](../history/THEORY-MAP-2026-10-08.md) · [Dao and generativity](../history/ARGUMENTS-A-L-2026-10-08.md#dao-and-generativity) · [Wang Yangming](../history/ARGUMENTS-M-Z-2026-10-08.md#wang-yangming) |', '',
              H('##', 'Coverage and evidence', '覆盖与证据含义 / Coverage and evidence'), '',
-             f'This reading edition covers **{len(chapters)} chapters** (current and moved to history) and **{len(branches)} branch READMEs** at their recorded source versions. {len(drift)} entries name a source that changed after the reading; they are marked on their pages and await a reread. Additional chapters, changed source versions and session outcomes also appear in the [checkpoint map](SESSION-RESULTS.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.', '',
+             f'This reading edition covers **{len(chapters)} chapters** (current and moved to history) and **{len(branches)} branch READMEs** at their recorded source versions. {len(drift)} entries name a source that changed after the reading; they are marked on their pages and await a reread. The session outcomes of 8 October 2026 are in the frozen [checkpoint map](../history/SESSION-RESULTS-2026-10-08.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.', '',
              '| Category | Meaning |', '|---|---|',
              '| Checked conditional result | Formal inference under specified definitions and hypotheses; correspondence and normative warrant remain separate. |',
              '| Philosophical or textual argument | Argument, criticism and sources; missing direct formalization stays visible. |',
@@ -267,7 +277,7 @@ def index(chapters: list[dict], branches: list[dict], drift: dict | None = None)
              'Identifiers follow source filenames. A Lean link identifies a particular correspondence; it does not certify the entire philosophical claim.', '',
              '| ID | Title | Category |', '|---|---|---|']
     for d in sorted(chapters, key=lambda x: x['id']):
-        lines.append(f"| [`{d['id']}`]({chapter_link(d['id'])}) | {titled(d)} | {category(d)} |")
+        lines.append(f"| [`{d['id']}`]({chapter_link(d['id'], d['source'])}) | {titled(d)} | {category(d)} |")
     lines += ['', H('##', 'Maintenance', '维护 / Maintenance'), '',
               'The entries are kept in the reading registers [A–L](data/arguments-a-l.json), [M–Z](data/arguments-m-z.json) and [branches](data/theory-map.json), with both languages where written. `source_sha256` records the inspected version; a changed source requires a targeted reread before its hash is refreshed. Generated views record `generated-view`; their rows follow the record checks. Continue substantive work in the existing study files.', '',
               '```sh',
@@ -336,9 +346,18 @@ def outputs(chapters: list[dict], branches: list[dict], drift: dict) -> dict[str
     """Repository path -> page body."""
     base = str(OUT.relative_to(ROOT))
     return {base + '/README.md': index(chapters, branches, drift),
-            base + '/THEORY-MAP.md': branch_volume(branches, drift),
-            base + '/ARGUMENTS-A-L.md': chapter_volume([d for d in chapters if d['id'][0].upper() <= 'L'], 'A–L', drift),
-            base + '/ARGUMENTS-M-Z.md': chapter_volume([d for d in chapters if d['id'][0].upper() > 'L'], 'M–Z', drift)}
+            base + '/ARGUMENTS-A-L.md': stub('A–L', FROZEN['A-L']),
+            base + '/ARGUMENTS-M-Z.md': stub('M–Z', FROZEN['M-Z'])}
+
+
+def stub(volume: str, frozen: Path) -> str:
+    """The page left at a frozen volume's old path, which the curated chain's page links (R35, E2)."""
+    target = rel(str(frozen.relative_to(ROOT)))
+    return finish([heading('#', f'Arguments {volume} (frozen)'), '', MARKER, '',
+                   f'The chapter readings {volume} of 8 October 2026 and later are frozen at [{frozen.name}]({target}), '
+                   'unchanged. The readings themselves are kept in the registers in [data/](data/); the live register of '
+                   'results is the [result register](RESULT-REGISTER.md), and every chapter with its status is in the '
+                   '[chapter index](../chapters/README.md).', ''])
 
 
 def render() -> tuple[dict[str, str], list[str], dict]:

@@ -17,7 +17,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 <details>
 <summary>AcquiredBinding.lean — 41 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean`
 
@@ -77,7 +77,7 @@ Definitions and types:
 <details>
 <summary>AcquiredSegmentation.lean — 51 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean`
 
@@ -218,7 +218,7 @@ Definitions and types:
 <details>
 <summary>CompositionalFormation.lean — 65 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalFormation.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalFormation.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalFormation.lean`
 
@@ -302,7 +302,7 @@ Definitions and types:
 <details>
 <summary>CompositionalTransmission.lean — 45 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean`
 
@@ -366,7 +366,7 @@ Definitions and types:
 <details>
 <summary>CoreTreeRearticulation.lean — 7 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean) · [Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION-REVIEW.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION-REVIEW.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean`
 
@@ -442,7 +442,7 @@ Definitions and types:
 <details>
 <summary>EncounterChoice.lean — 46 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean`
 
@@ -507,7 +507,7 @@ Definitions and types:
 <details>
 <summary>FormationSequence.lean — 13 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/FormationSequence.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/FormationSequence.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/FormationSequence.lean`
 
@@ -539,7 +539,7 @@ Definitions and types:
 <details>
 <summary>GenerativeClosure.lean — 20 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean`
 
@@ -580,7 +580,7 @@ Contains 12 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>HistoricalBinding.lean — 36 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean`
 
@@ -712,7 +712,7 @@ Contains 16 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>JointInterpretation.lean — 12 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean) · [Theory](../../history/SESSION-RESULTS-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean`
 
@@ -798,7 +798,7 @@ Definitions and types:
 <details>
 <summary>ModelRevision.lean — 72 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ModelRevision.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ModelRevision.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ModelRevision.lean`
 
@@ -996,7 +996,7 @@ Definitions and types:
 <details>
 <summary>ScientificCompatibility.lean — 18 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean`
 
@@ -1079,7 +1079,7 @@ Definitions and types:
 <details>
 <summary>SelectiveRevision.lean — 32 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean`
 
@@ -1153,7 +1153,7 @@ Definitions and types:
 <details>
 <summary>SourceReliance.lean — 53 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SourceReliance.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SourceReliance.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SourceReliance.lean`
 
@@ -1246,7 +1246,7 @@ Definitions and types:
 <details>
 <summary>WholeTheoryDischarge.lean — 7 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/WholeTheoryDischarge.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/WholeTheoryDischarge.lean) · [Theory](../../history/SESSION-RESULTS-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/WholeTheoryDischarge.lean`
 
@@ -1321,7 +1321,7 @@ Contains 26 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>AttainableQuestions.lean — 43 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean`
 
@@ -2018,7 +2018,7 @@ Contains 35 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>OnePacketQuestions.lean — 40 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean`
 

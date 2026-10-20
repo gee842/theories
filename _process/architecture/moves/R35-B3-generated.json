@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "batch": "R35-B3-generated",
+  "date": "2026-10-20T01:36:36+00:00",
+  "base_commit": "98e0b332a0e3978d817d789708434cd7456d0181",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "theories/becoming/results/THEORY-MAP.md",
+      "new_path": "theories/becoming/history/THEORY-MAP-2026-10-08.md",
+      "sha256": "eeac3c4cba4a03c0b187a229d632756919c8a95a9e727c853fe9de04ae6bcd4e",
+      "blob": "31d06abefd482ee97de547043578d6b6cd89830c",
+      "reason": "R35 (20 October 2026), batch B3: E2: \"Readings of 8 October 2026\" of the September branches",
+      "plan_entry": "theories/becoming/results/THEORY-MAP.md"
+    },
+    {
+      "old_path": "theories/becoming/results/SESSION-RESULTS.md",
+      "new_path": "theories/becoming/history/SESSION-RESULTS-2026-10-08.md",
+      "sha256": "b6d40d3169e16ccbfcc4e41f00d81541d59f5dac52874645b3debd9bb522828b",
+      "blob": "ef2525022c952f683841933ad8bfa7935eb6acbf",
+      "reason": "R35 (20 October 2026), batch B3: E2: \"8 October 2026 … dated chat coverage\"",
+      "plan_entry": "theories/becoming/results/SESSION-RESULTS.md"
+    },
+    {
+      "old_path": "theories/becoming/results/lean-declarations/becoming-bridge.md",
+      "new_path": "theories/becoming/history/lean-declarations/becoming-bridge.md",
+      "sha256": "eb3ef8c29e6ec503da175afd2feae3e78b634c0729e61766e5934dd4822c6cdd",
+      "blob": "b100eb93f686d5f1105139e8872bae12879ce33b",
+      "reason": "R35 (20 October 2026), batch B3: E2: empty group after the F3 sweep (0 modules)",
+      "plan_entry": "theories/becoming/results/lean-declarations/becoming-bridge.md"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "MAP.md",
+      "old_sha256": "c85d1ec3fdf68245528a7d451c803962230b2d305911b3db12e92de1507fa0f0",
+      "new_sha256": "7f17f2d7b38c5c836280cd16ed5f5d87dafd16e76dfb36ad0afc1a42061e0cda",
+      "references": 1
+    },
+    {
+      "path": "_process/RESULT-WORKFLOW.md",
+      "old_sha256": "23f36179e9819a55192183f8252365f3320c5a8cc711499aae22b5fe08b66e8c",
+      "new_sha256": "524a1f45384f8188b3030188a9582770b0567bfde8a61e7f3010e7eb6c1c9cba",
+      "references": 1
+    },
+    {
+      "path": "_process/research-config.json",
+      "old_sha256": "b1d31bfeea9abee3f4df555f89e3672b27cd6774cc820ea2e80389f4d8478bf7",
+      "new_sha256": "82a29328500fabf2f64829c41c0e2d099113185f56b7b3b6de7585496981c592",
+      "references": 3
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.zh.md",
+      "old_sha256": "4534f3cc2bb40e07221515588a34645ccc3b093cd2d77d334a01c8d10d6df0c7",
+      "new_sha256": "fa3347be93556c4fbbeefa72bcc482273f731934739e1b6f34d4c71830e23aee",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "old_sha256": "065d686c4928b0ab7176ba8592ff2bea2f366d369e635dd91d52c4ff77fc94c0",
+      "new_sha256": "905df776fe02bd625e24ffe7feaa0637a24c2a36219a8e1137013b7b4e929178",
+      "references": 1
+    }
+  ],
+  "history_roots": [
+    "theories/becoming/history"
+  ],
+  "generated_pages_to_rerender": [
+    "DEPENDENCIES.md",
+    "GOALS.md",
+    "OPEN-QUESTIONS.md",
+    "README.md",
+    "RESEARCH.md",
+    "RESULTS.md",
+    "_process/BRIEF.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "theories/becoming/README.md",
+    "theories/becoming/chapters/CLAIMS.md",
+    "theories/becoming/results/LEAN-DECLARATIONS.md",
+    "theories/becoming/results/README.md",
+    "theories/becoming/results/RESULT-REGISTER.md",
+    "theories/becoming/results/ROADMAP.md"
+  ],
+  "verification_errors": []
+}

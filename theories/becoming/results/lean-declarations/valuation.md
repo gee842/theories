@@ -103,7 +103,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ClosedLoopValuation.lean — 25 explicit declarations</summary>
 
-[Source](../../../../experiments/valuation-development/lean/ClosedLoopValuation.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
+[Source](../../../../experiments/valuation-development/lean/ClosedLoopValuation.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ClosedLoopValuation.lean`
 
@@ -181,7 +181,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplorationCoverage.lean — 20 explicit declarations</summary>
 
-[Source](../../../../experiments/valuation-development/lean/ExplorationCoverage.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
+[Source](../../../../experiments/valuation-development/lean/ExplorationCoverage.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ExplorationCoverage.lean`
 
@@ -237,7 +237,7 @@ Contains 14 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>LineageInProcess.lean — 17 explicit declarations</summary>
 
-[Source](../../../../experiments/valuation-development/lean/LineageInProcess.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
+[Source](../../../../experiments/valuation-development/lean/LineageInProcess.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/LineageInProcess.lean`
 
@@ -273,7 +273,7 @@ Definitions and types:
 <details>
 <summary>OneProcess.lean — 13 explicit declarations</summary>
 
-[Source](../../../../experiments/valuation-development/lean/OneProcess.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
+[Source](../../../../experiments/valuation-development/lean/OneProcess.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/OneProcess.lean`
 
@@ -322,7 +322,7 @@ Contains 6 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>ValuationBridges.lean — 62 explicit declarations</summary>
 
-[Source](../../../../experiments/valuation-development/lean/ValuationBridges.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
+[Source](../../../../experiments/valuation-development/lean/ValuationBridges.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ValuationBridges.lean`
 
@@ -403,7 +403,7 @@ Definitions and types:
 <details>
 <summary>ValuationCompletion.lean — 38 explicit declarations</summary>
 
-[Source](../../../../experiments/valuation-development/lean/ValuationCompletion.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
+[Source](../../../../experiments/valuation-development/lean/ValuationCompletion.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ValuationCompletion.lean`
 
@@ -460,7 +460,7 @@ Definitions and types:
 <details>
 <summary>ValuationDevelopment.lean — 80 explicit declarations</summary>
 
-[Source](../../../../experiments/valuation-development/lean/ValuationDevelopment.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
+[Source](../../../../experiments/valuation-development/lean/ValuationDevelopment.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ValuationDevelopment.lean`
 
@@ -559,7 +559,7 @@ Definitions and types:
 <details>
 <summary>ValuationRenewal.lean — 15 explicit declarations</summary>
 
-[Source](../../../../experiments/valuation-development/lean/ValuationRenewal.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
+[Source](../../../../experiments/valuation-development/lean/ValuationRenewal.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ValuationRenewal.lean`
 

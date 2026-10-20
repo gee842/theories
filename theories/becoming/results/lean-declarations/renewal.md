@@ -17,7 +17,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 <details>
 <summary>RenewalExamples.lean — 36 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean`
 
@@ -74,7 +74,7 @@ Contains 21 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ResourceContinuation.lean — 29 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean`
 
@@ -124,7 +124,7 @@ Contains 24 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>SupportNecessity.lean — 24 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/SupportNecessity.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/SupportNecessity.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/SupportNecessity.lean`
 

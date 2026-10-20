@@ -22,7 +22,7 @@ Ren 在本次对话中要求：
 
 - [成果首页](../../../../theories/becoming/results/README.md)：按问题阅读和完整逐项列表。
 - [A–L](../../../../theories/becoming/results/ARGUMENTS-A-L.md)与[M–Z](../../../../theories/becoming/results/ARGUMENTS-M-Z.md)：全部107个统一章节的配对阅读版。每条包含论证、意义、范围、后续、原文、Lean 及既有证据；方法、计划和索引另标。
-- [理论分支](../../../../theories/becoming/results/THEORY-MAP.md)：全部17个分支 README，含方法／记忆档案。
+- [理论分支](../../../../theories/becoming/history/THEORY-MAP-2026-10-08.md)：全部17个分支 README，含方法／记忆档案。
 - [Lean 模块](../../../../theories/becoming/results/LEAN-INDEX.md)、[声明导航](../../../../theories/becoming/results/LEAN-DECLARATIONS.md)与十个主题分卷：实际源码位置、具名声明、文档关联和副本分类。
 - [研究路线](../../../../theories/becoming/results/ROADMAP.md)：八个持续或建议方向，连接已有成果及下一检验。
 - [JSON 阅读数据](../../../../theories/becoming/results/data/)：配对内容、稳定 ID、源版本 SHA-256 及形式源码库存。原始详论及实验仍在既有位置。

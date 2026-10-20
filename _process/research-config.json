@@ -9,7 +9,7 @@
   "legacy_catalogues": {
     "reading": "theories/becoming/results/README.md",
     "chain": "theories/becoming/results/GENERATIVITY-CHAIN.md",
-    "sessions": "theories/becoming/results/SESSION-RESULTS.md"
+    "sessions": "theories/becoming/history/SESSION-RESULTS-2026-10-08.md"
   },
   "readme_opening": "theories/becoming/OPENING.md",
   "standard_boundaries": "theories/becoming/results/data/standard-boundaries.json",
@@ -209,13 +209,9 @@
     "note": "tools/research/indexes.py and the catalogue generators (reading_catalogue, lean_catalogue, session_map) render these pages through research.py render. adopted_pages: pages that existed before they joined the guarded writer, with the sha256 of the bytes read on 2026-10-17 (agent G): the catalogue pages were earlier output of their generators, link-rewritten by the move tool; _process/research/README.md was hand prose carried into indexes.STUDIES_LEAD. A page whose bytes differ stops the render as an unincorporated edit.",
     "adopted_pages": {
       "_process/research/README.md": "edaec4dd8435b4e25926ba5fedda27d70a2ce5b42a8554147be98be4805b3416",
-      "theories/becoming/results/ARGUMENTS-A-L.md": "eee259c73a05c35dac72b0017fea18d20db082cacafd6ad828e6abdc906a7b11",
-      "theories/becoming/results/ARGUMENTS-M-Z.md": "33aa020696aa3f0966ce5d469173ddc1b6c2887d5fc6bfa2610944409304e378",
       "theories/becoming/results/LEAN-DECLARATIONS.md": "47a0f8f449d985a0e629f75251baddeee134214e0f96961973ad5a7c0ec46c6f",
       "theories/becoming/results/LEAN-INDEX.md": "3014f26ef76f445a2a8ff394aa7428cb632c54bb16f8c4dff3be153f1ebc716e",
       "theories/becoming/results/README.md": "07c01fe1960dbc14b579552229df3cc44951fb8117f60076122bc6f3cca00133",
-      "theories/becoming/results/SESSION-RESULTS.md": "59004ca33087d2e40010b2e8ca51808fdf3cb43891ea9950af2dbd26a8ee64aa",
-      "theories/becoming/results/THEORY-MAP.md": "9b3ad726ad0d94e3ab65179b9bcfa1e19c300a432a5bd304068b892ca3c7185e",
       "theories/becoming/results/data/lean-index.json": "5fda5db1e5302ba00761bcde1896157a94ff8026ada77f099d0fb11f55d132be",
       "theories/becoming/results/data/source-index.json": "85ab690e5e9a8963b35bd2a1c386fa90b8dc90077fa8ce982fb4402c93b9d0b6",
       "theories/becoming/results/lean-declarations/abstraction.md": "22975aeff76c249df7bbea219ef1345691ed2216967f9781ae077d4de904a1c3",

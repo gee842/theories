@@ -66,6 +66,24 @@
       "plan_entry": "theories/becoming/chapters/ARCHITECTURE-LEARNING.md"
     },
     {
+      "old_path": "theories/becoming/results/ARGUMENTS-A-L.md",
+      "new_path": "theories/becoming/history/ARGUMENTS-A-L-2026-10-08.md",
+      "sha256": "e20558cc75db4f2ebdde00ea1cc46d2817b03aba5bd1114c2e1f5895381b65eb",
+      "blob": "98b8dce5cff669e178385807d043e6c24d8e9015",
+      "batch": "R35-B3-generated-keep",
+      "reason": "R35 (20 October 2026), batch B3: frozen: 8 October reading edition; the live register is RESULTS.md and the chapters README",
+      "plan_entry": "theories/becoming/results/ARGUMENTS-A-L.md"
+    },
+    {
+      "old_path": "theories/becoming/results/ARGUMENTS-M-Z.md",
+      "new_path": "theories/becoming/history/ARGUMENTS-M-Z-2026-10-08.md",
+      "sha256": "d4c452672ed8ed1d852150692b334fc034421d875f303929c75481a50a62f863",
+      "blob": "1250897d588c6faa4381d9396a623a703adf4d65",
+      "batch": "R35-B3-generated-keep",
+      "reason": "R35 (20 October 2026), batch B3: frozen: 8 October reading edition; the live register is RESULTS.md and the chapters README",
+      "plan_entry": "theories/becoming/results/ARGUMENTS-M-Z.md"
+    },
+    {
       "old_path": "theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md",
       "new_path": "theories/becoming/history/ASSUMPTION-FREE-FOUNDATION.md",
       "sha256": "3e26f9fa9f184d5de0ffbcf80eb615120398036acb4c05321bed450c52db8d8b",
@@ -921,6 +939,15 @@
       "plan_entry": "theories/becoming/chapters/SEMANTIC-CALIBRATION.md"
     },
     {
+      "old_path": "theories/becoming/results/SESSION-RESULTS.md",
+      "new_path": "theories/becoming/history/SESSION-RESULTS-2026-10-08.md",
+      "sha256": "b6d40d3169e16ccbfcc4e41f00d81541d59f5dac52874645b3debd9bb522828b",
+      "blob": "ef2525022c952f683841933ad8bfa7935eb6acbf",
+      "batch": "R35-B3-generated",
+      "reason": "R35 (20 October 2026), batch B3: E2: \"8 October 2026 … dated chat coverage\"",
+      "plan_entry": "theories/becoming/results/SESSION-RESULTS.md"
+    },
+    {
       "old_path": "theories/becoming/chapters/SHENGSHENG.md",
       "new_path": "theories/becoming/history/SHENGSHENG.md",
       "sha256": "be510a31ee5d682e40c8f0afc595b473a23e4d2c7f4ef72a3ec0fd82f84ce00e",
@@ -1029,6 +1056,15 @@
       "plan_entry": "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
     },
     {
+      "old_path": "theories/becoming/results/THEORY-MAP.md",
+      "new_path": "theories/becoming/history/THEORY-MAP-2026-10-08.md",
+      "sha256": "eeac3c4cba4a03c0b187a229d632756919c8a95a9e727c853fe9de04ae6bcd4e",
+      "blob": "31d06abefd482ee97de547043578d6b6cd89830c",
+      "batch": "R35-B3-generated",
+      "reason": "R35 (20 October 2026), batch B3: E2: \"Readings of 8 October 2026\" of the September branches",
+      "plan_entry": "theories/becoming/results/THEORY-MAP.md"
+    },
+    {
       "old_path": "theories/becoming/chapters/THEORY-OF-BECOMING.md",
       "new_path": "theories/becoming/history/THEORY-OF-BECOMING.md",
       "sha256": "10b5d1faa826473427818718e609cd5a7ccb253748ffa5154dd43b04d0577160",
@@ -1126,6 +1162,15 @@
       "batch": "R35-B1-chapters",
       "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 9 times) of a chapter whose English edition is canonical; a live document may be English only",
       "plan_entry": "theories/becoming/chapters/WISDOM-AND-CONTEXT.zh.md"
+    },
+    {
+      "old_path": "theories/becoming/results/lean-declarations/becoming-bridge.md",
+      "new_path": "theories/becoming/history/lean-declarations/becoming-bridge.md",
+      "sha256": "eb3ef8c29e6ec503da175afd2feae3e78b634c0729e61766e5934dd4822c6cdd",
+      "blob": "b100eb93f686d5f1105139e8872bae12879ce33b",
+      "batch": "R35-B3-generated",
+      "reason": "R35 (20 October 2026), batch B3: E2: empty group after the F3 sweep (0 modules)",
+      "plan_entry": "theories/becoming/results/lean-declarations/becoming-bridge.md"
     },
     {
       "old_path": "theories/becoming/synthesis-a-downloads-2026.md",

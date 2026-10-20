@@ -243,7 +243,6 @@ def index_outputs(render=False):
     out = dict(indexes.render())
     pages, errors, drift = reading_catalogue.render()
     out.update(pages)
-    out.update(session_map.render_output())
     if render:
         out.update(lean_catalogue.render())
     return out, ['reading catalogue: ' + e for e in errors], drift

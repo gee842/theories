@@ -81,7 +81,7 @@ Definitions and types:
 <details>
 <summary>MarketGenerativity.lean — 71 explicit declarations</summary>
 
-[Source](../../../../experiments/market-generativity/formal/MarketGenerativity.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-LEAN-REVIEW.md) · [Package notes](../../../../experiments/market-generativity/formal/README.md)
+[Source](../../../../experiments/market-generativity/formal/MarketGenerativity.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-LEAN-REVIEW.md) · [Package notes](../../../../experiments/market-generativity/formal/README.md)
 
 `experiments/market-generativity/formal/MarketGenerativity.lean`
 
@@ -366,7 +366,7 @@ Definitions and types:
 <details>
 <summary>RegimeBoundary.lean — 27 explicit declarations</summary>
 
-[Source](../../../../experiments/market-generativity/formal/RegimeBoundary.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md) · [Package notes](../../../../experiments/market-generativity/formal/README.md)
+[Source](../../../../experiments/market-generativity/formal/RegimeBoundary.lean) · [Theory](../../history/SESSION-RESULTS-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md) · [Package notes](../../../../experiments/market-generativity/formal/README.md)
 
 `experiments/market-generativity/formal/RegimeBoundary.lean`
 
@@ -541,7 +541,7 @@ Definitions and types:
 <details>
 <summary>AlignmentSuccession.lean — 35 explicit declarations</summary>
 
-[Source](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[Source](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/AlignmentSuccession.lean`
 
@@ -743,7 +743,7 @@ Definitions and types:
 <details>
 <summary>CommonCauseDiscovery.lean — 84 explicit declarations</summary>
 
-[Source](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[Source](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean) · [Theory](../../history/SESSION-RESULTS-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean`
 
@@ -974,7 +974,7 @@ Definitions and types:
 <details>
 <summary>CorrectionCommitment.lean — 47 explicit declarations</summary>
 
-[Source](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[Source](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean) · [Theory](../../history/SESSION-RESULTS-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/CorrectionCommitment.lean`
 
@@ -1040,7 +1040,7 @@ Definitions and types:
 <details>
 <summary>CorrectionDependence.lean — 61 explicit declarations</summary>
 
-[Source](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md) · [Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[Source](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean) · [Theory](../../history/SESSION-RESULTS-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md) · [Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/CorrectionDependence.lean`
 

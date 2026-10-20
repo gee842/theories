@@ -64,12 +64,10 @@ class ReadingGateTests(unittest.TestCase):
 
 class LeanGroupTests(unittest.TestCase):
     def test_receipt_layers_decide_the_becoming_groups(self):
-        layers = {'x/lean/becoming/Becoming/Frame.lean': ('core', 'h'), 'x/lean/GenerativeCore.lean': ('foundation', 'h'),
-                  'x/lean/becoming/Becoming/Bridge.lean': ('bridge', 'h')}
+        layers = {'x/lean/becoming/Becoming/Frame.lean': ('core', 'h'), 'x/lean/GenerativeCore.lean': ('foundation', 'h')}
         with patch.object(lean_catalogue, 'receipt_layers', return_value=layers):
             self.assertEqual(lean_catalogue.group('x/lean/becoming/Becoming/Frame.lean'), 'becoming-core')
             self.assertEqual(lean_catalogue.group('x/lean/GenerativeCore.lean'), 'becoming-core')
-            self.assertEqual(lean_catalogue.group('x/lean/becoming/Becoming/Bridge.lean'), 'becoming-bridge')
             self.assertEqual(lean_catalogue.group('a/universal-ethics/B.lean'), 'ethics')
 
     def test_receipt_layers_read_paths_relative_to_the_lean_root(self):

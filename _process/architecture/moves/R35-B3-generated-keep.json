@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "batch": "R35-B3-generated-keep",
+  "date": "2026-10-20T01:36:48+00:00",
+  "base_commit": "98e0b332a0e3978d817d789708434cd7456d0181",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "theories/becoming/results/ARGUMENTS-A-L.md",
+      "new_path": "theories/becoming/history/ARGUMENTS-A-L-2026-10-08.md",
+      "sha256": "e20558cc75db4f2ebdde00ea1cc46d2817b03aba5bd1114c2e1f5895381b65eb",
+      "blob": "98b8dce5cff669e178385807d043e6c24d8e9015",
+      "reason": "R35 (20 October 2026), batch B3: frozen: 8 October reading edition; the live register is RESULTS.md and the chapters README",
+      "plan_entry": "theories/becoming/results/ARGUMENTS-A-L.md"
+    },
+    {
+      "old_path": "theories/becoming/results/ARGUMENTS-M-Z.md",
+      "new_path": "theories/becoming/history/ARGUMENTS-M-Z-2026-10-08.md",
+      "sha256": "d4c452672ed8ed1d852150692b334fc034421d875f303929c75481a50a62f863",
+      "blob": "1250897d588c6faa4381d9396a623a703adf4d65",
+      "reason": "R35 (20 October 2026), batch B3: frozen: 8 October reading edition; the live register is RESULTS.md and the chapters README",
+      "plan_entry": "theories/becoming/results/ARGUMENTS-M-Z.md"
+    }
+  ],
+  "keep_references": true,
+  "rewritten": [],
+  "history_roots": [
+    "theories/becoming/history"
+  ],
+  "generated_pages_to_rerender": [
+    "theories/becoming/results/README.md"
+  ],
+  "verification_errors": []
+}

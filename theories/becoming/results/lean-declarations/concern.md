@@ -457,7 +457,7 @@ Contains 16 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>PatientConcern.lean — 57 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean`
 
@@ -734,7 +734,7 @@ Contains 12 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>OddsEnvelope.lean — 13 explicit declarations</summary>
 
-[Source](../../../../experiments/recipient-value-learning/formal/OddsEnvelope.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/recipient-value-learning/formal/README.md)
+[Source](../../../../experiments/recipient-value-learning/formal/OddsEnvelope.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/recipient-value-learning/formal/README.md)
 
 `experiments/recipient-value-learning/formal/OddsEnvelope.lean`
 
@@ -768,7 +768,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>OfferedChoiceBounds.lean — 28 explicit declarations</summary>
 
-[Source](../../../../experiments/recipient-value-learning/formal/OfferedChoiceBounds.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/recipient-value-learning/formal/README.md)
+[Source](../../../../experiments/recipient-value-learning/formal/OfferedChoiceBounds.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/recipient-value-learning/formal/README.md)
 
 `experiments/recipient-value-learning/formal/OfferedChoiceBounds.lean`
 

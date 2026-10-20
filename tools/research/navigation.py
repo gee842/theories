@@ -490,7 +490,7 @@ def render_views(records):
             lines += dependency_lines(records, path)
             lines += [H('##', 'Wider composition evidence', 'Wider composition evidence / 更广组合证据'), '', link(moves.current_path(FOUNDATION_COMPOSITION, ROOT), path, 'Documented joined histories, conditional transport, separate realizations and unresolved interfaces'), '', 'These historical connections retain their own source cutoff and validation scope; they are not automatically upgraded by this index.', '']
         lines += [H('##', 'Discovery and evidence', 'Discovery and evidence / 检索与证据'), '',
-                  ' · '.join(link(p, path, label) for p, label in [(THEORY + '/results/README.md', 'Full reading catalogue'), (THEORY + '/results/GENERATIVITY-CHAIN.md', 'Curated generativity chain'), (THEORY + '/results/SESSION-RESULTS.md', 'Dated session map'), (moves.current_path('MAP.md', ROOT), 'Broader theory map')]), '',
+                  ' · '.join(link(p, path, label) for p, label in [(THEORY + '/results/README.md', 'Full reading catalogue'), (THEORY + '/results/GENERATIVITY-CHAIN.md', 'Curated generativity chain'), (moves.current_path('MAP.md', ROOT), 'Broader theory map')]), '',
                   '```sh', 'make research-check', 'make research-find QUERY=your-topic', 'make research-render', '```', '',
                   'Default discovery excludes frozen copies and failed build attempts. Use `--archives` deliberately to include them. Checks concern metadata and evidence bindings; mathematical changes retain their actual Lean-build requirement.', '']
         if path in history['documents']:

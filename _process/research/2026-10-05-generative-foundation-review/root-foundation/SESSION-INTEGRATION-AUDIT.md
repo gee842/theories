@@ -4,7 +4,7 @@
 
 **成果已有大量分支内整合；跨分支复用现在由一张共同地图明确定位。相同检查副本、同一完成结论的多次验收及已有证明的应用，不另计为独立证明。**
 
-**The [session result map](../../../../theories/becoming/results/SESSION-RESULTS.md) consolidates retrieved outcomes from 44 repository chats into 14 claim families.** Each chat has an attributed outcome, contribution classes, a theory or study entry, and a stated integration status. The map names existing proof reuse targets while retaining differences in hypotheses and realization.
+**The [session result map](../../../../theories/becoming/history/SESSION-RESULTS-2026-10-08.md) consolidates retrieved outcomes from 44 repository chats into 14 claim families.** Each chat has an attributed outcome, contribution classes, a theory or study entry, and a stated integration status. The map names existing proof reuse targets while retaining differences in hypotheses and realization.
 
 ## Coverage and evidence
 

@@ -13,9 +13,9 @@ Readings of 8 October 2026 and later · [Repository home](../../../README.md) ·
 | Document | Contents |
 |---|---|
 | [Canonical result register](RESULT-REGISTER.md) | One editable record per migrated claim, with premises, evidence, status, dependencies, counterexamples and aliases; reading views are generated. |
-| [Session outcomes and proof reuse](SESSION-RESULTS.md) | Chats mapped to result families, canonical reuse targets, overlap decisions and additional chapters. |
-| [Theory map](THEORY-MAP.md) | Accounts of the 17 branches, with significance, status and next steps; includes the method archive. |
-| [Arguments A–L](ARGUMENTS-A-L.md) · [Arguments M–Z](ARGUMENTS-M-Z.md) | Chapter readings with argument, significance, scope, next question, source, Lean and evidence. |
+| [Session outcomes and proof reuse, 8 October 2026](../history/SESSION-RESULTS-2026-10-08.md) (frozen) | Chats mapped to result families, canonical reuse targets, overlap decisions and additional chapters, as of 8 October 2026. |
+| [Theory map, 8 October 2026](../history/THEORY-MAP-2026-10-08.md) (frozen) | Accounts of the branches, with significance, status and next steps; includes the method archive. |
+| [Arguments A–L](../history/ARGUMENTS-A-L-2026-10-08.md) · [Arguments M–Z](../history/ARGUMENTS-M-Z-2026-10-08.md) (frozen, 8 October 2026) | Chapter readings with argument, significance, scope, next question, source, Lean and evidence; the registers in data/ keep them. |
 | [Lean modules](LEAN-INDEX.md) · [Declaration names](LEAN-DECLARATIONS.md) | Find modules and named declarations; recorded checks are distinguished from current sources. |
 | [Chapter index](../chapters/README.md) | Every chapter file with its status, and where moved chapters now are. |
 | [Roadmap](ROADMAP.md) | Established results, ongoing directions and proposed tests. |
@@ -26,17 +26,17 @@ Readings of 8 October 2026 and later · [Repository home](../../../README.md) ·
 
 | Question | Entry points |
 |---|---|
-| What foundation has been established? | [Generative grounding](ARGUMENTS-A-L.md#generative-grounding) · [Foundation premises](ARGUMENTS-A-L.md#foundation-premises) · [The whole theory](ARGUMENTS-M-Z.md#theory) |
-| How do organization, learning and revision form? | [Generative development](ARGUMENTS-A-L.md#generative-development) · [Learning-route revision](ARGUMENTS-A-L.md#learning-route-revision) · [Evaluative succession](ARGUMENTS-A-L.md#evaluative-succession) |
-| Why does generativity matter ethically? | [Unified ethical grounding](ARGUMENTS-M-Z.md#unified-ethical-grounding) · [Evaluative grounding](ARGUMENTS-A-L.md#evaluative-grounding) · [Liangzhi](ARGUMENTS-A-L.md#liangzhi-evolution) |
-| How far do mathematical and general results reach? | [Lean core](ARGUMENTS-A-L.md#generative-core-lean) · [Mathematical root frontier](ARGUMENTS-M-Z.md#mathematical-root-frontier) · [Conditional universality](ARGUMENTS-A-L.md#conditional-universality) |
-| How can the theory be tested or revised? | [Empirical scope](ARGUMENTS-A-L.md#empirical-scope) · [Experimental access](ARGUMENTS-A-L.md#experimental-access) · [Nondual method](ARGUMENTS-M-Z.md#nondual-method) |
-| How does it connect to earlier theories and practice? | [Theory map](THEORY-MAP.md) · [Dao and generativity](ARGUMENTS-A-L.md#dao-and-generativity) · [Wang Yangming](ARGUMENTS-M-Z.md#wang-yangming) |
+| What foundation has been established? | [Generative grounding](../history/ARGUMENTS-A-L-2026-10-08.md#generative-grounding) · [Foundation premises](../history/ARGUMENTS-A-L-2026-10-08.md#foundation-premises) · [The whole theory](../history/ARGUMENTS-M-Z-2026-10-08.md#theory) |
+| How do organization, learning and revision form? | [Generative development](../history/ARGUMENTS-A-L-2026-10-08.md#generative-development) · [Learning-route revision](../history/ARGUMENTS-A-L-2026-10-08.md#learning-route-revision) · [Evaluative succession](../history/ARGUMENTS-A-L-2026-10-08.md#evaluative-succession) |
+| Why does generativity matter ethically? | [Unified ethical grounding](../history/ARGUMENTS-M-Z-2026-10-08.md#unified-ethical-grounding) · [Evaluative grounding](../history/ARGUMENTS-A-L-2026-10-08.md#evaluative-grounding) · [Liangzhi](../history/ARGUMENTS-A-L-2026-10-08.md#liangzhi-evolution) |
+| How far do mathematical and general results reach? | [Lean core](../history/ARGUMENTS-A-L-2026-10-08.md#generative-core-lean) · [Mathematical root frontier](../history/ARGUMENTS-M-Z-2026-10-08.md#mathematical-root-frontier) · [Conditional universality](../history/ARGUMENTS-A-L-2026-10-08.md#conditional-universality) |
+| How can the theory be tested or revised? | [Empirical scope](../history/ARGUMENTS-A-L-2026-10-08.md#empirical-scope) · [Experimental access](../history/ARGUMENTS-A-L-2026-10-08.md#experimental-access) · [Nondual method](../history/ARGUMENTS-M-Z-2026-10-08.md#nondual-method) |
+| How does it connect to earlier theories and practice? | [Theory map](../history/THEORY-MAP-2026-10-08.md) · [Dao and generativity](../history/ARGUMENTS-A-L-2026-10-08.md#dao-and-generativity) · [Wang Yangming](../history/ARGUMENTS-M-Z-2026-10-08.md#wang-yangming) |
 
 <a id="覆盖与证据含义--coverage-and-evidence"></a>
 ## Coverage and evidence
 
-This reading edition covers **142 chapters** (current and moved to history) and **17 branch READMEs** at their recorded source versions. 84 entries name a source that changed after the reading; they are marked on their pages and await a reread. Additional chapters, changed source versions and session outcomes also appear in the [checkpoint map](SESSION-RESULTS.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
+This reading edition covers **142 chapters** (current and moved to history) and **17 branch READMEs** at their recorded source versions. 84 entries name a source that changed after the reading; they are marked on their pages and await a reread. The session outcomes of 8 October 2026 are in the frozen [checkpoint map](../history/SESSION-RESULTS-2026-10-08.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
 
 | Category | Meaning |
 |---|---|
@@ -55,148 +55,148 @@ Identifiers follow source filenames. A Lean link identifies a particular corresp
 
 | ID | Title | Category |
 |---|---|---|
-| [`abstraction-acquisition`](ARGUMENTS-A-L.md#abstraction-acquisition) | Acquiring abstraction from prediction failure | learning |
-| [`alignment-and-governance`](ARGUMENTS-A-L.md#alignment-and-governance) | Conditions of a future in alignment and governance | alignment |
-| [`alignment-axis`](ARGUMENTS-A-L.md#alignment-axis) | A defensible good–evil direction for alignment | ethics |
-| [`alignment-completion`](ARGUMENTS-A-L.md#alignment-completion) | Completion conditions for alignment and governance | roadmap |
-| [`alignment-direction`](ARGUMENTS-A-L.md#alignment-direction) | The direction of AI alignment we propose | alignment |
-| [`alignment-through-change`](ARGUMENTS-A-L.md#alignment-through-change) | Generative alignment through change | alignment |
-| [`architecture-formation`](ARGUMENTS-A-L.md#architecture-formation) | How organization changes the architectures it can form | mechanism |
-| [`architecture-learning`](ARGUMENTS-A-L.md#architecture-learning) | A formed route learns a recipient's difference | learning |
-| [`assumption-free-foundation`](ARGUMENTS-A-L.md#assumption-free-foundation) | An assumption-free foundation of 生生: enactment and its warrant | foundation |
-| [`attainable-mathematical-questions`](ARGUMENTS-A-L.md#attainable-mathematical-questions) | There need not be a most informative feasible inquiry | mathematics |
-| [`autonomous-method-formation`](ARGUMENTS-A-L.md#autonomous-method-formation) | Forming and replacing a mathematical method connection | learning |
-| [`basic-conflict-judgment`](ARGUMENTS-A-L.md#basic-conflict-judgment) | Judgment when basic claims conflict | ethical argument |
-| [`becoming-foundation`](ARGUMENTS-A-L.md#becoming-foundation) | Theory of Becoming: foundational scope | foundation |
-| [`chinese-sources-and-becoming`](ARGUMENTS-A-L.md#chinese-sources-and-becoming) | The relational ontology of Chinese thought and the theory of becoming: the traditions on the spine | classical comparison |
-| [`choice-and-generative-context`](ARGUMENTS-A-L.md#choice-and-generative-context) | Joint choice, limited aggregation and context | ethical argument |
-| [`claims`](ARGUMENTS-A-L.md#claims) | Registered claims and historical ledger | navigation |
-| [`claims-and-paid-action`](ARGUMENTS-A-L.md#claims-and-paid-action) | Claims, actual action and continuing protection | ethics interface |
-| [`cognition-learning-and-evolution`](ARGUMENTS-A-L.md#cognition-learning-and-evolution) | Cognition, learning and evolution within becoming | learning |
-| [`cognition-li-and-reciprocity`](ARGUMENTS-A-L.md#cognition-li-and-reciprocity) | Cognition, li and a conditional account of reciprocity | classical |
-| [`completion-plan`](ARGUMENTS-A-L.md#completion-plan) | Completion plan for physical formation and renewal | roadmap |
-| [`concern-and-correction`](ARGUMENTS-A-L.md#concern-and-correction) | Concern and effective correction | mechanism |
-| [`concern-and-new-reasons`](ARGUMENTS-A-L.md#concern-and-new-reasons) | Extending reasons: when earlier judgments survive | ethics development |
-| [`conditional-universality`](ARGUMENTS-A-L.md#conditional-universality) | Conditional universality from local laws | mathematics |
-| [`connected-generative-model`](ARGUMENTS-A-L.md#connected-generative-model) | Actual connections in one model of becoming | synthesis |
-| [`controlled-refinement`](ARGUMENTS-A-L.md#controlled-refinement) | Controlled refinement without losing the learner | mathematics |
-| [`cost-sensitive-learning`](ARGUMENTS-A-L.md#cost-sensitive-learning) | What real learning data can identify | empirical |
-| [`cybernetics`](ARGUMENTS-A-L.md#cybernetics) | Cybernetics within generative grounding | comparison |
-| [`dao-and-generativity`](ARGUMENTS-A-L.md#dao-and-generativity) | Generativity and dao: generation, de and goodness | classical |
-| [`deeper-generative-root`](ARGUMENTS-A-L.md#deeper-generative-root) | A deeper generative root and immanent explanation | foundation |
-| [`empirical-scope`](ARGUMENTS-A-L.md#empirical-scope) | Evidence scope of the candidate foundation | evidence |
-| [`ethical-foundation`](ARGUMENTS-A-L.md#ethical-foundation) | Why affected beings matter within becoming | ethics |
-| [`ethical-learning`](ARGUMENTS-A-L.md#ethical-learning) | Ethical learning: how concern forms, acquires warrant and keeps changing | ethics development |
-| [`evaluation-and-faithful-reporting`](ARGUMENTS-A-L.md#evaluation-and-faithful-reporting) | Valued futures and faithful reporting | alignment |
-| [`evaluative-application`](ARGUMENTS-A-L.md#evaluative-application) | When acquired understanding warrants action | ethics interface |
-| [`evaluative-grounding`](ARGUMENTS-A-L.md#evaluative-grounding) | How a formed disposition answers a justified claim | ethics interface |
-| [`evaluative-plasticity`](ARGUMENTS-A-L.md#evaluative-plasticity) | Learning and changing an evaluative connection | learning |
-| [`evaluative-succession`](ARGUMENTS-A-L.md#evaluative-succession) | Acquired evaluation, succession and new evidence | learning |
-| [`evaluative-uptake`](ARGUMENTS-A-L.md#evaluative-uptake) | How acquired consequences influence recipient-directed choice | learning |
-| [`evidence-and-institutional-correction`](ARGUMENTS-A-L.md#evidence-and-institutional-correction) | From evidence to institutional correction | governance |
-| [`evolutionary-organization`](ARGUMENTS-A-L.md#evolutionary-organization) | How evolution forms and changes evolutionary organization | mechanism |
-| [`experimental-access`](ARGUMENTS-A-L.md#experimental-access) | A learned model tests its experimental access | learning |
-| [`explanatory-necessity`](ARGUMENTS-A-L.md#explanatory-necessity) | Are relations of becoming indispensable to explanation? | mathematics |
-| [`formal-core`](ARGUMENTS-A-L.md#formal-core) | Formal core of relational generativity | formal compendium |
-| [`formal-specification`](ARGUMENTS-A-L.md#formal-specification) | Specification for formation, renewal and shared capability | formal specification |
-| [`formation`](ARGUMENTS-A-L.md#formation) | How effective correction forms and is prevented | mechanism |
-| [`formation-math`](ARGUMENTS-A-L.md#formation-math) | Mathematics of correction through a constructed alternative | mathematics |
-| [`formation-prior-art`](ARGUMENTS-A-L.md#formation-prior-art) | Prior-art review of effective correction formation | review |
-| [`formed-route-monitor`](ARGUMENTS-A-L.md#formed-route-monitor) | A learner acquires evidence about its learning route | learning |
-| [`foundation-premises`](ARGUMENTS-A-L.md#foundation-premises) | Premises and derived content of the common foundation | methodology |
-| [`g0-warrant`](ARGUMENTS-A-L.md#g0-warrant) | The warrant for G0: how an adopted axiom is supported | normative foundation |
-| [`generated-logic`](ARGUMENTS-A-L.md#generated-logic) | Conditions of becoming and logical rules | mathematics |
-| [`generated-self-and-ethics`](ARGUMENTS-A-L.md#generated-self-and-ethics) | The generated self and ethics without a fundamental owner | foundation |
-| [`generative-core-lean`](ARGUMENTS-A-L.md#generative-core-lean) | Lean realization and public entries of the generative core | formal index |
-| [`generative-development`](ARGUMENTS-A-L.md#generative-development) | Development of regulation, learning and concern | synthesis |
-| [`generative-grounding`](ARGUMENTS-A-L.md#generative-grounding) | Generative grounding of significance, learning and wisdom | programme |
-| [`generative-mathematical-admissibility`](ARGUMENTS-A-L.md#generative-mathematical-admissibility) | Mathematical admissibility through coherent completion | mathematics |
-| [`generative-selection`](ARGUMENTS-A-L.md#generative-selection) | Selection, shared conditions and renewal of correction | selection |
-| [`goal-formation-and-revision`](ARGUMENTS-A-L.md#goal-formation-and-revision) | Understanding and changing one's formative conditions | learning |
-| [`hanzi-and-theory-tree`](ARGUMENTS-A-L.md#hanzi-and-theory-tree) | Hanzi, composition and local mappings to the theory tree | classical |
-| [`huigen`](ARGUMENTS-A-L.md#huigen) | Huigen: necessity of the entire theory | foundation |
-| [`immanent-mathematical-identity`](ARGUMENTS-A-L.md#immanent-mathematical-identity) | Mathematical identity within becoming | mathematics |
-| [`inquiry-and-mathematical-identity`](ARGUMENTS-A-L.md#inquiry-and-mathematical-identity) | Inquiry changes what remains identifiable | mathematics |
-| [`inquiry-revision`](ARGUMENTS-A-L.md#inquiry-revision) | Retained consequences revise further inquiry | learning |
-| [`joint-formation`](ARGUMENTS-A-L.md#joint-formation) | Joint formation and renewal of concern, evidence and power | mechanism |
-| [`joint-formation-math`](ARGUMENTS-A-L.md#joint-formation-math) | Mathematics of jointly formed learning, evidence, power and care | mathematics |
-| [`joint-obstructions`](ARGUMENTS-A-L.md#joint-obstructions) | Obstructions to joint formation without hidden benevolence | review |
-| [`joint-prior-art`](ARGUMENTS-A-L.md#joint-prior-art) | Prior art on joint formation of concern, evidence and power | review |
-| [`knowledge`](ARGUMENTS-A-L.md#knowledge) | Knowledge within becoming | philosophical epistemic |
-| [`learning-interface`](ARGUMENTS-A-L.md#learning-interface) | From consequential difference to accessible revision | mathematics |
-| [`learning-route-revision`](ARGUMENTS-A-L.md#learning-route-revision) | A learner changes and transmits its learning route | learning |
-| [`liangzhi-evolution`](ARGUMENTS-A-L.md#liangzhi-evolution) | Generative evolution of prereflective moral responsiveness | ethics development |
-| [`living-dependencies`](ARGUMENTS-A-L.md#living-dependencies) | Living dependencies within generative continuation | mechanism mathematics |
-| [`market-dynamics-math`](ARGUMENTS-M-Z.md#market-dynamics-math) | Market renewal, selection and capture | mathematical model |
-| [`markets-and-generative-regimes`](ARGUMENTS-M-Z.md#markets-and-generative-regimes) | Keeping markets in generative regimes | application |
-| [`material-prediction-composition`](ARGUMENTS-M-Z.md#material-prediction-composition) | Material construction of prediction and correction | mechanism |
-| [`material-selector-composition`](ARGUMENTS-M-Z.md#material-selector-composition) | Constructing revisable selectors from actual parts | mechanism |
-| [`material-updater-composition`](ARGUMENTS-M-Z.md#material-updater-composition) | Selectors and updaters sharing one material history | mechanism |
-| [`mathematical-core`](ARGUMENTS-M-Z.md#mathematical-core) | A mathematical core for systems predicates and proofs | mathematics |
-| [`mathematical-root-frontier`](ARGUMENTS-M-Z.md#mathematical-root-frontier) | The frontier of mathematical reconstruction | mathematics |
-| [`mathematical-truth-and-the-root`](ARGUMENTS-M-Z.md#mathematical-truth-and-the-root) | Mathematical truth and the generative root | mathematics |
-| [`mathematics-and-generativity`](ARGUMENTS-M-Z.md#mathematics-and-generativity) | Mathematics and generative grounding | mathematics |
-| [`measured-feedback-correspondence`](ARGUMENTS-M-Z.md#measured-feedback-correspondence) | Measured feedback and physical correspondence | empirical identification |
-| [`memory-correction-and-succession`](ARGUMENTS-M-Z.md#memory-correction-and-succession) | Memory correction, selective inheritance and execution | empirical identification |
-| [`meta-revision`](ARGUMENTS-M-Z.md#meta-revision) | Resource and information limits of metarevision | mathematical boundary |
-| [`method-revision`](ARGUMENTS-M-Z.md#method-revision) | Revising mathematical methods through consequences | mechanism |
-| [`model-family-revision`](ARGUMENTS-M-Z.md#model-family-revision) | Revising model families with new evidence | mechanism |
-| [`new-possibilities`](ARGUMENTS-M-Z.md#new-possibilities) | Formation of new possibilities | mechanism |
-| [`nondual-method`](ARGUMENTS-M-Z.md#nondual-method) | The project-wide nondual method | methodology |
-| [`noninstrumental-concern`](ARGUMENTS-M-Z.md#noninstrumental-concern) | Co-formed benevolence and noninstrumental concern | ethical mechanism |
-| [`paid-preimport-evidence`](ARGUMENTS-M-Z.md#paid-preimport-evidence) | Acquiring independent evidence before command import | mechanism |
-| [`philosophical-account`](ARGUMENTS-M-Z.md#philosophical-account) | A philosophy of becoming for knowing and living | synthesis |
-| [`plural-systems-and-correction`](ARGUMENTS-M-Z.md#plural-systems-and-correction) | Responsive transformation: plural systems, shared trials and parent/subsystem relationships | alignment |
-| [`practical-judgment`](ARGUMENTS-M-Z.md#practical-judgment) | Practical judgment: preservation, transformation, transfer, ending and responsibility | ethics |
-| [`pre-qin-and-wenyan`](ARGUMENTS-M-Z.md#pre-qin-and-wenyan) | Competing explanations across pre-Qin and classical Chinese traditions | classical comparison |
-| [`prediction-action`](ARGUMENTS-M-Z.md#prediction-action) | Formed machinery acquires prediction and acts | mechanism |
-| [`prediction-protocol`](ARGUMENTS-M-Z.md#prediction-protocol) | The predictor’s multi-event learning protocol | formal interface |
-| [`protocol-completion`](ARGUMENTS-M-Z.md#protocol-completion) | When an issued operation is guaranteed to complete | formal interface |
-| [`protocol-composition`](ARGUMENTS-M-Z.md#protocol-composition) | Composing physical protocols into learning steps | formal interface |
-| [`proved-connections`](ARGUMENTS-M-Z.md#proved-connections) | Connections among proved results | formal index |
-| [`reason-protection`](ARGUMENTS-M-Z.md#reason-protection) | From current reasons to effective protection | mechanism strategy |
-| [`recipient-correction`](ARGUMENTS-M-Z.md#recipient-correction) | Correcting recipient action without overwriting other conditions | mechanism |
-| [`recipient-cue-grounding`](ARGUMENTS-M-Z.md#recipient-cue-grounding) | External social cues and recipient-directed action | empirical identification |
-| [`recipient-harm-and-action`](ARGUMENTS-M-Z.md#recipient-harm-and-action) | Recipient harm and learned action | empirical identification |
-| [`recipient-reason-action`](ARGUMENTS-M-Z.md#recipient-reason-action) | Actual recipient reasons enter action | mechanism |
-| [`recipient-reason-revision`](ARGUMENTS-M-Z.md#recipient-reason-revision) | Fresh consequences revise recipient reasons and action | mechanism |
-| [`recipient-renewal`](ARGUMENTS-M-Z.md#recipient-renewal) | Recipient-supported learning renewal | mechanism |
-| [`recipient-transmission`](ARGUMENTS-M-Z.md#recipient-transmission) | Formed recipient routes and consequence-funded transmission | mechanism |
-| [`recorded-reasons`](ARGUMENTS-M-Z.md#recorded-reasons) | Recorded evidence, revisable reasons and reconstruction | mechanism |
-| [`relations-across-scales`](ARGUMENTS-M-Z.md#relations-across-scales) | Relations across scales | mechanism mathematics |
-| [`revisable-concern-settlement`](ARGUMENTS-M-Z.md#revisable-concern-settlement) | Selection and succession of revisable concern | mechanism strategy |
-| [`reward-learning-and-recipient-choice`](ARGUMENTS-M-Z.md#reward-learning-and-recipient-choice) | Reward association and recipient-directed choice | empirical identification |
-| [`route-diagnostics`](ARGUMENTS-M-Z.md#route-diagnostics) | Evidence for diagnosing learning routes | formal interface |
-| [`scientific-philosophy`](ARGUMENTS-M-Z.md#scientific-philosophy) | Scientific philosophy and inquiry’s generative conditions | philosophical epistemic |
-| [`selector-revision`](ARGUMENTS-M-Z.md#selector-revision) | Selector revision through its consequences | mechanism |
-| [`semantic-action-composition`](ARGUMENTS-M-Z.md#semantic-action-composition) | Preserving recipient and proposition through action composition | formal interface |
-| [`semantic-calibration`](ARGUMENTS-M-Z.md#semantic-calibration) | Calibrating reasons against acquired records | formal interface |
-| [`shengsheng`](ARGUMENTS-M-Z.md#shengsheng) | 生生: how activity forms further activity | synthesis |
-| [`source-map`](ARGUMENTS-M-Z.md#source-map) | Sources, genealogy and evidence boundaries | navigation |
-| [`start-here`](ARGUMENTS-M-Z.md#start-here) | The unified foundation in brief | navigation |
-| [`stochastic-prediction-composition`](ARGUMENTS-M-Z.md#stochastic-prediction-composition) | Complete continuation distributions including learning failures | formal interface |
-| [`strongest-foundation-claim`](ARGUMENTS-M-Z.md#strongest-foundation-claim) | The strongest foundation claim | research programme |
-| [`successor-learning`](ARGUMENTS-M-Z.md#successor-learning) | A successor learns and transmits its correction | mechanism |
-| [`sustained-living-judgment`](ARGUMENTS-M-Z.md#sustained-living-judgment) | Sustained living organization and collective practical judgment | ethical mechanism |
-| [`synthesis-record`](ARGUMENTS-M-Z.md#synthesis-record) | Synthesis and verification record | navigation |
-| [`system-individuation`](ARGUMENTS-M-Z.md#system-individuation) | Systems, constitutive relationships and possible change | foundation |
-| [`system-warrant`](ARGUMENTS-M-Z.md#system-warrant) | Grounding system relationships and admissible variations | foundation |
-| [`systems-complexity-chaos`](ARGUMENTS-M-Z.md#systems-complexity-chaos) | Systems, complexity and chaos within generative grounding | mathematics |
-| [`the-theory-of-becoming`](ARGUMENTS-M-Z.md#the-theory-of-becoming) | The Theory of Becoming | synthesis |
-| [`the-theory-of-becoming-reference`](ARGUMENTS-M-Z.md#the-theory-of-becoming-reference) | The Theory of Becoming: reference catalogue | formal index |
-| [`the-theory-of-evolution`](ARGUMENTS-M-Z.md#the-theory-of-evolution) | The Theory of Evolution | research programme |
-| [`theory`](ARGUMENTS-M-Z.md#theory) | Relational generativity and the conditions of wisdom | synthesis |
-| [`theory-of-becoming`](ARGUMENTS-M-Z.md#theory-of-becoming) | How relations of becoming change | mechanism |
-| [`tool-evidence-and-authority`](ARGUMENTS-M-Z.md#tool-evidence-and-authority) | External evidence, authority and effective action | empirical identification |
-| [`unified-ethical-grounding`](ARGUMENTS-M-Z.md#unified-ethical-grounding) | Unified ethical grounding within becoming | normative foundation |
-| [`universal-ethical-minimum`](ARGUMENTS-M-Z.md#universal-ethical-minimum) | A universal ethical minimum compatible with plural lives | ethical argument |
-| [`updater-formation`](ARGUMENTS-M-Z.md#updater-formation) | Forming and changing selector updaters | mechanism |
-| [`valuation-development`](ARGUMENTS-M-Z.md#valuation-development) | How valuation develops | mechanism mathematics |
-| [`valuation-identification-bounds`](ARGUMENTS-M-Z.md#valuation-identification-bounds) | Bounds for identifying changed evaluation | identification mathematics |
-| [`wang-yangming`](ARGUMENTS-M-Z.md#wang-yangming) | Wang Yangming, benevolence and situated practice | classical ethical |
-| [`wisdom-and-context`](ARGUMENTS-M-Z.md#wisdom-and-context) | Wisdom, context and the common core | philosophical epistemic |
-| [`yi-zhuan-and-becoming`](ARGUMENTS-M-Z.md#yi-zhuan-and-becoming) | The 易传 and the theory of becoming: the configurations of the 周易 on the spine | classical comparison |
-| [`zero-axiom-practical-judgment`](ARGUMENTS-M-Z.md#zero-axiom-practical-judgment) | Zero-axiom practical judgment | normative foundation |
+| [`abstraction-acquisition`](../history/ARGUMENTS-A-L-2026-10-08.md#abstraction-acquisition) | Acquiring abstraction from prediction failure | learning |
+| [`alignment-and-governance`](../history/ARGUMENTS-A-L-2026-10-08.md#alignment-and-governance) | Conditions of a future in alignment and governance | alignment |
+| [`alignment-axis`](../history/ARGUMENTS-A-L-2026-10-08.md#alignment-axis) | A defensible good–evil direction for alignment | ethics |
+| [`alignment-completion`](../history/ARGUMENTS-A-L-2026-10-08.md#alignment-completion) | Completion conditions for alignment and governance | roadmap |
+| [`alignment-direction`](../history/ARGUMENTS-A-L-2026-10-08.md#alignment-direction) | The direction of AI alignment we propose | alignment |
+| [`alignment-through-change`](../history/ARGUMENTS-A-L-2026-10-08.md#alignment-through-change) | Generative alignment through change | alignment |
+| [`architecture-formation`](../history/ARGUMENTS-A-L-2026-10-08.md#architecture-formation) | How organization changes the architectures it can form | mechanism |
+| [`architecture-learning`](../history/ARGUMENTS-A-L-2026-10-08.md#architecture-learning) | A formed route learns a recipient's difference | learning |
+| [`assumption-free-foundation`](../history/ARGUMENTS-A-L-2026-10-08.md#assumption-free-foundation) | An assumption-free foundation of 生生: enactment and its warrant | foundation |
+| [`attainable-mathematical-questions`](../history/ARGUMENTS-A-L-2026-10-08.md#attainable-mathematical-questions) | There need not be a most informative feasible inquiry | mathematics |
+| [`autonomous-method-formation`](../history/ARGUMENTS-A-L-2026-10-08.md#autonomous-method-formation) | Forming and replacing a mathematical method connection | learning |
+| [`basic-conflict-judgment`](../history/ARGUMENTS-A-L-2026-10-08.md#basic-conflict-judgment) | Judgment when basic claims conflict | ethical argument |
+| [`becoming-foundation`](../history/ARGUMENTS-A-L-2026-10-08.md#becoming-foundation) | Theory of Becoming: foundational scope | foundation |
+| [`chinese-sources-and-becoming`](../history/ARGUMENTS-A-L-2026-10-08.md#chinese-sources-and-becoming) | The relational ontology of Chinese thought and the theory of becoming: the traditions on the spine | classical comparison |
+| [`choice-and-generative-context`](../history/ARGUMENTS-A-L-2026-10-08.md#choice-and-generative-context) | Joint choice, limited aggregation and context | ethical argument |
+| [`claims`](../history/ARGUMENTS-A-L-2026-10-08.md#claims) | Registered claims and historical ledger | navigation |
+| [`claims-and-paid-action`](../history/ARGUMENTS-A-L-2026-10-08.md#claims-and-paid-action) | Claims, actual action and continuing protection | ethics interface |
+| [`cognition-learning-and-evolution`](../history/ARGUMENTS-A-L-2026-10-08.md#cognition-learning-and-evolution) | Cognition, learning and evolution within becoming | learning |
+| [`cognition-li-and-reciprocity`](../history/ARGUMENTS-A-L-2026-10-08.md#cognition-li-and-reciprocity) | Cognition, li and a conditional account of reciprocity | classical |
+| [`completion-plan`](../history/ARGUMENTS-A-L-2026-10-08.md#completion-plan) | Completion plan for physical formation and renewal | roadmap |
+| [`concern-and-correction`](../history/ARGUMENTS-A-L-2026-10-08.md#concern-and-correction) | Concern and effective correction | mechanism |
+| [`concern-and-new-reasons`](../history/ARGUMENTS-A-L-2026-10-08.md#concern-and-new-reasons) | Extending reasons: when earlier judgments survive | ethics development |
+| [`conditional-universality`](../history/ARGUMENTS-A-L-2026-10-08.md#conditional-universality) | Conditional universality from local laws | mathematics |
+| [`connected-generative-model`](../history/ARGUMENTS-A-L-2026-10-08.md#connected-generative-model) | Actual connections in one model of becoming | synthesis |
+| [`controlled-refinement`](../history/ARGUMENTS-A-L-2026-10-08.md#controlled-refinement) | Controlled refinement without losing the learner | mathematics |
+| [`cost-sensitive-learning`](../history/ARGUMENTS-A-L-2026-10-08.md#cost-sensitive-learning) | What real learning data can identify | empirical |
+| [`cybernetics`](../history/ARGUMENTS-A-L-2026-10-08.md#cybernetics) | Cybernetics within generative grounding | comparison |
+| [`dao-and-generativity`](../history/ARGUMENTS-A-L-2026-10-08.md#dao-and-generativity) | Generativity and dao: generation, de and goodness | classical |
+| [`deeper-generative-root`](../history/ARGUMENTS-A-L-2026-10-08.md#deeper-generative-root) | A deeper generative root and immanent explanation | foundation |
+| [`empirical-scope`](../history/ARGUMENTS-A-L-2026-10-08.md#empirical-scope) | Evidence scope of the candidate foundation | evidence |
+| [`ethical-foundation`](../history/ARGUMENTS-A-L-2026-10-08.md#ethical-foundation) | Why affected beings matter within becoming | ethics |
+| [`ethical-learning`](../history/ARGUMENTS-A-L-2026-10-08.md#ethical-learning) | Ethical learning: how concern forms, acquires warrant and keeps changing | ethics development |
+| [`evaluation-and-faithful-reporting`](../history/ARGUMENTS-A-L-2026-10-08.md#evaluation-and-faithful-reporting) | Valued futures and faithful reporting | alignment |
+| [`evaluative-application`](../history/ARGUMENTS-A-L-2026-10-08.md#evaluative-application) | When acquired understanding warrants action | ethics interface |
+| [`evaluative-grounding`](../history/ARGUMENTS-A-L-2026-10-08.md#evaluative-grounding) | How a formed disposition answers a justified claim | ethics interface |
+| [`evaluative-plasticity`](../history/ARGUMENTS-A-L-2026-10-08.md#evaluative-plasticity) | Learning and changing an evaluative connection | learning |
+| [`evaluative-succession`](../history/ARGUMENTS-A-L-2026-10-08.md#evaluative-succession) | Acquired evaluation, succession and new evidence | learning |
+| [`evaluative-uptake`](../history/ARGUMENTS-A-L-2026-10-08.md#evaluative-uptake) | How acquired consequences influence recipient-directed choice | learning |
+| [`evidence-and-institutional-correction`](../history/ARGUMENTS-A-L-2026-10-08.md#evidence-and-institutional-correction) | From evidence to institutional correction | governance |
+| [`evolutionary-organization`](../history/ARGUMENTS-A-L-2026-10-08.md#evolutionary-organization) | How evolution forms and changes evolutionary organization | mechanism |
+| [`experimental-access`](../history/ARGUMENTS-A-L-2026-10-08.md#experimental-access) | A learned model tests its experimental access | learning |
+| [`explanatory-necessity`](../history/ARGUMENTS-A-L-2026-10-08.md#explanatory-necessity) | Are relations of becoming indispensable to explanation? | mathematics |
+| [`formal-core`](../history/ARGUMENTS-A-L-2026-10-08.md#formal-core) | Formal core of relational generativity | formal compendium |
+| [`formal-specification`](../history/ARGUMENTS-A-L-2026-10-08.md#formal-specification) | Specification for formation, renewal and shared capability | formal specification |
+| [`formation`](../history/ARGUMENTS-A-L-2026-10-08.md#formation) | How effective correction forms and is prevented | mechanism |
+| [`formation-math`](../history/ARGUMENTS-A-L-2026-10-08.md#formation-math) | Mathematics of correction through a constructed alternative | mathematics |
+| [`formation-prior-art`](../history/ARGUMENTS-A-L-2026-10-08.md#formation-prior-art) | Prior-art review of effective correction formation | review |
+| [`formed-route-monitor`](../history/ARGUMENTS-A-L-2026-10-08.md#formed-route-monitor) | A learner acquires evidence about its learning route | learning |
+| [`foundation-premises`](../history/ARGUMENTS-A-L-2026-10-08.md#foundation-premises) | Premises and derived content of the common foundation | methodology |
+| [`g0-warrant`](../history/ARGUMENTS-A-L-2026-10-08.md#g0-warrant) | The warrant for G0: how an adopted axiom is supported | normative foundation |
+| [`generated-logic`](../history/ARGUMENTS-A-L-2026-10-08.md#generated-logic) | Conditions of becoming and logical rules | mathematics |
+| [`generated-self-and-ethics`](../history/ARGUMENTS-A-L-2026-10-08.md#generated-self-and-ethics) | The generated self and ethics without a fundamental owner | foundation |
+| [`generative-core-lean`](../history/ARGUMENTS-A-L-2026-10-08.md#generative-core-lean) | Lean realization and public entries of the generative core | formal index |
+| [`generative-development`](../history/ARGUMENTS-A-L-2026-10-08.md#generative-development) | Development of regulation, learning and concern | synthesis |
+| [`generative-grounding`](../history/ARGUMENTS-A-L-2026-10-08.md#generative-grounding) | Generative grounding of significance, learning and wisdom | programme |
+| [`generative-mathematical-admissibility`](../history/ARGUMENTS-A-L-2026-10-08.md#generative-mathematical-admissibility) | Mathematical admissibility through coherent completion | mathematics |
+| [`generative-selection`](../history/ARGUMENTS-A-L-2026-10-08.md#generative-selection) | Selection, shared conditions and renewal of correction | selection |
+| [`goal-formation-and-revision`](../history/ARGUMENTS-A-L-2026-10-08.md#goal-formation-and-revision) | Understanding and changing one's formative conditions | learning |
+| [`hanzi-and-theory-tree`](../history/ARGUMENTS-A-L-2026-10-08.md#hanzi-and-theory-tree) | Hanzi, composition and local mappings to the theory tree | classical |
+| [`huigen`](../history/ARGUMENTS-A-L-2026-10-08.md#huigen) | Huigen: necessity of the entire theory | foundation |
+| [`immanent-mathematical-identity`](../history/ARGUMENTS-A-L-2026-10-08.md#immanent-mathematical-identity) | Mathematical identity within becoming | mathematics |
+| [`inquiry-and-mathematical-identity`](../history/ARGUMENTS-A-L-2026-10-08.md#inquiry-and-mathematical-identity) | Inquiry changes what remains identifiable | mathematics |
+| [`inquiry-revision`](../history/ARGUMENTS-A-L-2026-10-08.md#inquiry-revision) | Retained consequences revise further inquiry | learning |
+| [`joint-formation`](../history/ARGUMENTS-A-L-2026-10-08.md#joint-formation) | Joint formation and renewal of concern, evidence and power | mechanism |
+| [`joint-formation-math`](../history/ARGUMENTS-A-L-2026-10-08.md#joint-formation-math) | Mathematics of jointly formed learning, evidence, power and care | mathematics |
+| [`joint-obstructions`](../history/ARGUMENTS-A-L-2026-10-08.md#joint-obstructions) | Obstructions to joint formation without hidden benevolence | review |
+| [`joint-prior-art`](../history/ARGUMENTS-A-L-2026-10-08.md#joint-prior-art) | Prior art on joint formation of concern, evidence and power | review |
+| [`knowledge`](../history/ARGUMENTS-A-L-2026-10-08.md#knowledge) | Knowledge within becoming | philosophical epistemic |
+| [`learning-interface`](../history/ARGUMENTS-A-L-2026-10-08.md#learning-interface) | From consequential difference to accessible revision | mathematics |
+| [`learning-route-revision`](../history/ARGUMENTS-A-L-2026-10-08.md#learning-route-revision) | A learner changes and transmits its learning route | learning |
+| [`liangzhi-evolution`](../history/ARGUMENTS-A-L-2026-10-08.md#liangzhi-evolution) | Generative evolution of prereflective moral responsiveness | ethics development |
+| [`living-dependencies`](../history/ARGUMENTS-A-L-2026-10-08.md#living-dependencies) | Living dependencies within generative continuation | mechanism mathematics |
+| [`market-dynamics-math`](../history/ARGUMENTS-M-Z-2026-10-08.md#market-dynamics-math) | Market renewal, selection and capture | mathematical model |
+| [`markets-and-generative-regimes`](../history/ARGUMENTS-M-Z-2026-10-08.md#markets-and-generative-regimes) | Keeping markets in generative regimes | application |
+| [`material-prediction-composition`](../history/ARGUMENTS-M-Z-2026-10-08.md#material-prediction-composition) | Material construction of prediction and correction | mechanism |
+| [`material-selector-composition`](../history/ARGUMENTS-M-Z-2026-10-08.md#material-selector-composition) | Constructing revisable selectors from actual parts | mechanism |
+| [`material-updater-composition`](../history/ARGUMENTS-M-Z-2026-10-08.md#material-updater-composition) | Selectors and updaters sharing one material history | mechanism |
+| [`mathematical-core`](../history/ARGUMENTS-M-Z-2026-10-08.md#mathematical-core) | A mathematical core for systems predicates and proofs | mathematics |
+| [`mathematical-root-frontier`](../history/ARGUMENTS-M-Z-2026-10-08.md#mathematical-root-frontier) | The frontier of mathematical reconstruction | mathematics |
+| [`mathematical-truth-and-the-root`](../history/ARGUMENTS-M-Z-2026-10-08.md#mathematical-truth-and-the-root) | Mathematical truth and the generative root | mathematics |
+| [`mathematics-and-generativity`](../history/ARGUMENTS-M-Z-2026-10-08.md#mathematics-and-generativity) | Mathematics and generative grounding | mathematics |
+| [`measured-feedback-correspondence`](../history/ARGUMENTS-M-Z-2026-10-08.md#measured-feedback-correspondence) | Measured feedback and physical correspondence | empirical identification |
+| [`memory-correction-and-succession`](../history/ARGUMENTS-M-Z-2026-10-08.md#memory-correction-and-succession) | Memory correction, selective inheritance and execution | empirical identification |
+| [`meta-revision`](../history/ARGUMENTS-M-Z-2026-10-08.md#meta-revision) | Resource and information limits of metarevision | mathematical boundary |
+| [`method-revision`](../history/ARGUMENTS-M-Z-2026-10-08.md#method-revision) | Revising mathematical methods through consequences | mechanism |
+| [`model-family-revision`](../history/ARGUMENTS-M-Z-2026-10-08.md#model-family-revision) | Revising model families with new evidence | mechanism |
+| [`new-possibilities`](../history/ARGUMENTS-M-Z-2026-10-08.md#new-possibilities) | Formation of new possibilities | mechanism |
+| [`nondual-method`](../history/ARGUMENTS-M-Z-2026-10-08.md#nondual-method) | The project-wide nondual method | methodology |
+| [`noninstrumental-concern`](../history/ARGUMENTS-M-Z-2026-10-08.md#noninstrumental-concern) | Co-formed benevolence and noninstrumental concern | ethical mechanism |
+| [`paid-preimport-evidence`](../history/ARGUMENTS-M-Z-2026-10-08.md#paid-preimport-evidence) | Acquiring independent evidence before command import | mechanism |
+| [`philosophical-account`](../history/ARGUMENTS-M-Z-2026-10-08.md#philosophical-account) | A philosophy of becoming for knowing and living | synthesis |
+| [`plural-systems-and-correction`](../history/ARGUMENTS-M-Z-2026-10-08.md#plural-systems-and-correction) | Responsive transformation: plural systems, shared trials and parent/subsystem relationships | alignment |
+| [`practical-judgment`](../history/ARGUMENTS-M-Z-2026-10-08.md#practical-judgment) | Practical judgment: preservation, transformation, transfer, ending and responsibility | ethics |
+| [`pre-qin-and-wenyan`](../history/ARGUMENTS-M-Z-2026-10-08.md#pre-qin-and-wenyan) | Competing explanations across pre-Qin and classical Chinese traditions | classical comparison |
+| [`prediction-action`](../history/ARGUMENTS-M-Z-2026-10-08.md#prediction-action) | Formed machinery acquires prediction and acts | mechanism |
+| [`prediction-protocol`](../history/ARGUMENTS-M-Z-2026-10-08.md#prediction-protocol) | The predictor’s multi-event learning protocol | formal interface |
+| [`protocol-completion`](../history/ARGUMENTS-M-Z-2026-10-08.md#protocol-completion) | When an issued operation is guaranteed to complete | formal interface |
+| [`protocol-composition`](../history/ARGUMENTS-M-Z-2026-10-08.md#protocol-composition) | Composing physical protocols into learning steps | formal interface |
+| [`proved-connections`](../history/ARGUMENTS-M-Z-2026-10-08.md#proved-connections) | Connections among proved results | formal index |
+| [`reason-protection`](../history/ARGUMENTS-M-Z-2026-10-08.md#reason-protection) | From current reasons to effective protection | mechanism strategy |
+| [`recipient-correction`](../history/ARGUMENTS-M-Z-2026-10-08.md#recipient-correction) | Correcting recipient action without overwriting other conditions | mechanism |
+| [`recipient-cue-grounding`](../history/ARGUMENTS-M-Z-2026-10-08.md#recipient-cue-grounding) | External social cues and recipient-directed action | empirical identification |
+| [`recipient-harm-and-action`](../history/ARGUMENTS-M-Z-2026-10-08.md#recipient-harm-and-action) | Recipient harm and learned action | empirical identification |
+| [`recipient-reason-action`](../history/ARGUMENTS-M-Z-2026-10-08.md#recipient-reason-action) | Actual recipient reasons enter action | mechanism |
+| [`recipient-reason-revision`](../history/ARGUMENTS-M-Z-2026-10-08.md#recipient-reason-revision) | Fresh consequences revise recipient reasons and action | mechanism |
+| [`recipient-renewal`](../history/ARGUMENTS-M-Z-2026-10-08.md#recipient-renewal) | Recipient-supported learning renewal | mechanism |
+| [`recipient-transmission`](../history/ARGUMENTS-M-Z-2026-10-08.md#recipient-transmission) | Formed recipient routes and consequence-funded transmission | mechanism |
+| [`recorded-reasons`](../history/ARGUMENTS-M-Z-2026-10-08.md#recorded-reasons) | Recorded evidence, revisable reasons and reconstruction | mechanism |
+| [`relations-across-scales`](../history/ARGUMENTS-M-Z-2026-10-08.md#relations-across-scales) | Relations across scales | mechanism mathematics |
+| [`revisable-concern-settlement`](../history/ARGUMENTS-M-Z-2026-10-08.md#revisable-concern-settlement) | Selection and succession of revisable concern | mechanism strategy |
+| [`reward-learning-and-recipient-choice`](../history/ARGUMENTS-M-Z-2026-10-08.md#reward-learning-and-recipient-choice) | Reward association and recipient-directed choice | empirical identification |
+| [`route-diagnostics`](../history/ARGUMENTS-M-Z-2026-10-08.md#route-diagnostics) | Evidence for diagnosing learning routes | formal interface |
+| [`scientific-philosophy`](../history/ARGUMENTS-M-Z-2026-10-08.md#scientific-philosophy) | Scientific philosophy and inquiry’s generative conditions | philosophical epistemic |
+| [`selector-revision`](../history/ARGUMENTS-M-Z-2026-10-08.md#selector-revision) | Selector revision through its consequences | mechanism |
+| [`semantic-action-composition`](../history/ARGUMENTS-M-Z-2026-10-08.md#semantic-action-composition) | Preserving recipient and proposition through action composition | formal interface |
+| [`semantic-calibration`](../history/ARGUMENTS-M-Z-2026-10-08.md#semantic-calibration) | Calibrating reasons against acquired records | formal interface |
+| [`shengsheng`](../history/ARGUMENTS-M-Z-2026-10-08.md#shengsheng) | 生生: how activity forms further activity | synthesis |
+| [`source-map`](../history/ARGUMENTS-M-Z-2026-10-08.md#source-map) | Sources, genealogy and evidence boundaries | navigation |
+| [`start-here`](../history/ARGUMENTS-M-Z-2026-10-08.md#start-here) | The unified foundation in brief | navigation |
+| [`stochastic-prediction-composition`](../history/ARGUMENTS-M-Z-2026-10-08.md#stochastic-prediction-composition) | Complete continuation distributions including learning failures | formal interface |
+| [`strongest-foundation-claim`](../history/ARGUMENTS-M-Z-2026-10-08.md#strongest-foundation-claim) | The strongest foundation claim | research programme |
+| [`successor-learning`](../history/ARGUMENTS-M-Z-2026-10-08.md#successor-learning) | A successor learns and transmits its correction | mechanism |
+| [`sustained-living-judgment`](../history/ARGUMENTS-M-Z-2026-10-08.md#sustained-living-judgment) | Sustained living organization and collective practical judgment | ethical mechanism |
+| [`synthesis-record`](../history/ARGUMENTS-M-Z-2026-10-08.md#synthesis-record) | Synthesis and verification record | navigation |
+| [`system-individuation`](../history/ARGUMENTS-M-Z-2026-10-08.md#system-individuation) | Systems, constitutive relationships and possible change | foundation |
+| [`system-warrant`](../history/ARGUMENTS-M-Z-2026-10-08.md#system-warrant) | Grounding system relationships and admissible variations | foundation |
+| [`systems-complexity-chaos`](../history/ARGUMENTS-M-Z-2026-10-08.md#systems-complexity-chaos) | Systems, complexity and chaos within generative grounding | mathematics |
+| [`the-theory-of-becoming`](../history/ARGUMENTS-M-Z-2026-10-08.md#the-theory-of-becoming) | The Theory of Becoming | synthesis |
+| [`the-theory-of-becoming-reference`](../history/ARGUMENTS-M-Z-2026-10-08.md#the-theory-of-becoming-reference) | The Theory of Becoming: reference catalogue | formal index |
+| [`the-theory-of-evolution`](../history/ARGUMENTS-M-Z-2026-10-08.md#the-theory-of-evolution) | The Theory of Evolution | research programme |
+| [`theory`](../history/ARGUMENTS-M-Z-2026-10-08.md#theory) | Relational generativity and the conditions of wisdom | synthesis |
+| [`theory-of-becoming`](../history/ARGUMENTS-M-Z-2026-10-08.md#theory-of-becoming) | How relations of becoming change | mechanism |
+| [`tool-evidence-and-authority`](../history/ARGUMENTS-M-Z-2026-10-08.md#tool-evidence-and-authority) | External evidence, authority and effective action | empirical identification |
+| [`unified-ethical-grounding`](../history/ARGUMENTS-M-Z-2026-10-08.md#unified-ethical-grounding) | Unified ethical grounding within becoming | normative foundation |
+| [`universal-ethical-minimum`](../history/ARGUMENTS-M-Z-2026-10-08.md#universal-ethical-minimum) | A universal ethical minimum compatible with plural lives | ethical argument |
+| [`updater-formation`](../history/ARGUMENTS-M-Z-2026-10-08.md#updater-formation) | Forming and changing selector updaters | mechanism |
+| [`valuation-development`](../history/ARGUMENTS-M-Z-2026-10-08.md#valuation-development) | How valuation develops | mechanism mathematics |
+| [`valuation-identification-bounds`](../history/ARGUMENTS-M-Z-2026-10-08.md#valuation-identification-bounds) | Bounds for identifying changed evaluation | identification mathematics |
+| [`wang-yangming`](../history/ARGUMENTS-M-Z-2026-10-08.md#wang-yangming) | Wang Yangming, benevolence and situated practice | classical ethical |
+| [`wisdom-and-context`](../history/ARGUMENTS-M-Z-2026-10-08.md#wisdom-and-context) | Wisdom, context and the common core | philosophical epistemic |
+| [`yi-zhuan-and-becoming`](../history/ARGUMENTS-M-Z-2026-10-08.md#yi-zhuan-and-becoming) | The 易传 and the theory of becoming: the configurations of the 周易 on the spine | classical comparison |
+| [`zero-axiom-practical-judgment`](../history/ARGUMENTS-M-Z-2026-10-08.md#zero-axiom-practical-judgment) | Zero-axiom practical judgment | normative foundation |
 
 <a id="维护--maintenance"></a>
 ## Maintenance

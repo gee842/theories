@@ -4,7 +4,8 @@
 --capture refreshes the Lean navigation from one inventory and records a dated
 checkpoint. --check checks that checkpoint's rendering and local links and writes
 nothing; changed live sources are reported separately, never silently certified or
-overwritten. `make research-render` writes SESSION-RESULTS.md (render_output).
+overwritten. Historical since R35 (20 October 2026, E2): the map of 8 October 2026 and its inputs are frozen in
+history, `make research-render` no longer writes it, and the paths below are their history paths.
 This tool performs no Lean build or semantic equivalence check.
 """
 from __future__ import annotations
@@ -21,14 +22,14 @@ import re
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
-HERE = ROOT / '_process/research/2026-10-05-generative-foundation-review/root-foundation'
+HERE = ROOT / '_process/research/2026-10-05-generative-foundation-review/history/root-foundation'
 OUT = ROOT / 'theories/becoming/results'
 DATA = OUT / 'data/session-results.json'
 SNAPSHOT = HERE / 'SESSION-OUTCOME-SNAPSHOT.json'
 INVENTORY = HERE / 'SESSION-PROOF-OVERLAP.json'
 BASELINE = HERE / 'SESSION-INTEGRATION-BASELINE.json'
 CHECKS = HERE / 'SESSION-RESULT-MAP-CHECKS.json'
-REPORT = OUT / 'SESSION-RESULTS.md'
+REPORT = ROOT / 'theories/becoming/history/SESSION-RESULTS-2026-10-08.md'
 
 
 def digest(raw: bytes) -> str:
