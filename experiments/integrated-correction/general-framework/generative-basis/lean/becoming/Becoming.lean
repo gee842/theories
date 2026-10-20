@@ -983,6 +983,9 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   supported. Of a renewer and two takers, the first's continuation does not require the
   second's ending (all three continue where each takes one); taking all that is given does.
   The levels admit the second where it ends, so admission does not see the exclusion.
+  Where a part (the rest) takes jointly more than is given, renewal ends whatever a member
+  outside it takes, and with need one every reading after the end is alike under the
+  member's acts: its restraint is invisible to such a reading.
 * `Becoming.Exhaustion` (L1): where a take that is more than now ends, with no ethical premise.
   Read on what a formation takes from a condition, "more than now" (`Becoming.Seeking`) rises by
   at least one at each step, so from a condition given at most `B` at each step the take comes
