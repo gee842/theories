@@ -114,6 +114,7 @@ import Becoming.Counterfactual
 import Becoming.Regrouping
 import Becoming.Selection
 import Becoming.Learning
+import Becoming.PropositionIdentity
 import Becoming.Hexagrams
 import Becoming.HexagramPlaces
 import Becoming.HexagramLaws
@@ -1330,6 +1331,16 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   reads it, the modeling of the laws of structure and of change; the other readings are the AI's,
   adopted on Ren's delegation of 15 October 2026 or, for selection through a model, approved by
   Ren on 16 October 2026.
+* `Becoming.PropositionIdentity` (L1): what identifying interderivable propositions (`propext`)
+  keeps and loses, with no axiom. `propext`, as a proposition, holds exactly where every reading
+  of propositions is lumped (`Learning.Lumped`) by interderivability, read through the two ends
+  of an interderivation, and exactly where the reading by name is; every reading built from
+  relations (atoms, the connectives, quantifiers over any type) respects interderivability, with
+  `↔`, not `=`. Any two witnesses of an interderivation are equal, while `Bool` has two different
+  self-inverse maps, so the identification forgets no witness in `Prop` and would forget one for
+  types. Transport along any equation of propositions with a constant motive keeps the value;
+  that along `propext` it does not reduce is a kernel observation in the record. A leaf: it is
+  about the proof language, not about a web.
 * `Becoming.Hexagrams` (L1): the configurations of the 周易 as a world of the spine, with no
   premise. Six lines, each unbroken or broken, give sixty-four configurations, told apart and
   listed with no axiom; the received order holds every one, and each of its pairs is turned over

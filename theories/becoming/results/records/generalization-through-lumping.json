@@ -291,6 +291,13 @@
         "zh": "经选项模型的选择：模型是一个归并，经它的选择只在要紧者经归并同去之处正确。",
         "en": "Selection through a model of the options: the model is a lumping, and a selection through it is right only where what matters goes alike across the lumping."
       }
+    },
+    {
+      "id": "proposition-identity",
+      "detail": {
+        "en": "propext stated as this lumping: every reading of propositions lumped by interderivability.",
+        "zh": "以这一归并陈述的 propext：命题的每个读法按可互推归并。"
+      }
     }
   ],
   "references": [
@@ -670,6 +677,10 @@
     {
       "en": "2026-10-20: 48 bookkeeping notes condensed from 2026-10-13 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/88dcf59fe3d78de4/generalization-through-lumping.json and in git.",
       "zh": "2026-10-20：48 条记账性说明合并（2026-10-13 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/88dcf59fe3d78de4/generalization-through-lumping.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, PE1: propext is stated through Lumped in Becoming.PropositionIdentity (record proposition-identity, study section 258). The claim is unchanged.",
+      "zh": "2026年10月20日，PE1：propext 经 Lumped 陈述于 Becoming.PropositionIdentity（记录 proposition-identity，研究第 258 节）。论断不变。"
     }
   ],
   "text_versions": [

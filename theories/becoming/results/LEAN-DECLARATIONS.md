@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 280 | 11,183 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 281 | 11,195 |
 | [Becoming instances and applications](lean-declarations/becoming-ring.md) | 13 | 746 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -639,6 +639,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ProfileReach.lean](lean-declarations/becoming-core.md#module-cfe7a096681c) | Becoming pure core |
 | [ProjectedLaws.lean](lean-declarations/becoming-core.md#module-321a4be2da04) | Becoming pure core |
 | [Propagation.lean](lean-declarations/becoming-core.md#module-b54c1e7958f2) | Becoming pure core |
+| [PropositionIdentity.lean](lean-declarations/becoming-core.md#module-bad5c43d98a0) | Becoming pure core |
 | [ProtectedScope.lean](lean-declarations/core.md#module-734a8db29b35) | Generative core and relational structure |
 | [ProtectedScopeLimits.lean](lean-declarations/core.md#module-a915d0fcaf85) | Generative core and relational structure |
 | [ProtectionLedger.lean](lean-declarations/shared.md#module-b0831c6b108c) | Organizational formation through revisable evaluation |

@@ -185,7 +185,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ff58c25213643598d2060d5bf24758de920bfdc1d76e29a32b6e4dbc9d106c0b",
+      "sha256": "1718cb973463da641e0ba8c019ddf63c0a74ff5318e2e5757f9179901070b17b",
       "declarations": []
     }
   ],
@@ -202,6 +202,10 @@
     {
       "en": "20 October 2026: added (R47), section 8.1 item 5's widening over a grown world; study section 257.",
       "zh": "2026年10月20日：新增（R47），第 8.1 节第 5 项在长成的世界上的扩大；研究第 257 节。"
+    },
+    {
+      "en": "20 October 2026, PE1 (what identifying interderivable propositions keeps and loses): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the chapter changed only by PE1's edits: a sentence in section 0's proof-language row, and in section 9 a paragraph on why the core excludes propext, the receipt, counts and layers. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月20日，PE1（等同可互推的命题保留什么、失去什么）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，本章只因 PE1 的改动而变：第 0 节证明语言一行的一句，以及第 9 节关于核心为何不用 propext 的一段、回执、计数与层。重新指向前已读。论断不变。"
     }
   ]
 }

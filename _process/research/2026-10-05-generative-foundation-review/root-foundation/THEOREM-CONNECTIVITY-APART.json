@@ -1921,6 +1921,46 @@
    "module": "Becoming.Exclusion",
    "category": "support",
    "reason": "A list lemma: over a list of distinct members the amounts of two different members sum to at most the total. Used by Flow.excess_of_takesAll until CG2 derived that law as the case of a part of two from Flow.outrun_excess, whose Flow.rest_le_taken bounds any listed part the same way; kept because the record what-taking-all-excludes cites it."
+  },
+  "Becoming.PropositionIdentity.extensional_iff_lumped": {
+   "module": "Becoming.PropositionIdentity",
+   "category": "logical-strength",
+   "reason": "PE1: about the proof language (what identifying interderivable propositions keeps and loses), not a law of the unfolding; propositional extensionality, a logical principle like those the category names, stated exactly as the lumping of every reading of propositions by interderivability"
+  },
+  "Becoming.PropositionIdentity.lumped_of_byName": {
+   "module": "Becoming.PropositionIdentity",
+   "category": "logical-strength",
+   "reason": "PE1: about the proof language (what identifying interderivable propositions keeps and loses), not a law of the unfolding; where the reading by name is lumped by interderivability, propositional extensionality holds and every reading is lumped"
+  },
+  "Becoming.PropositionIdentity.Formula.read_congr": {
+   "module": "Becoming.PropositionIdentity",
+   "category": "general-structure",
+   "reason": "PE1: about the proof language (what identifying interderivable propositions keeps and loses), not a law of the unfolding; every reading through a formula built from relations, on any type of atoms and quantifiers, respects interderivability"
+  },
+  "Becoming.PropositionIdentity.iff_witness_unique": {
+   "module": "Becoming.PropositionIdentity",
+   "category": "support",
+   "reason": "PE1: about the proof language (what identifying interderivable propositions keeps and loses), not a law of the unfolding; proof irrelevance of Prop: any two witnesses of an iff are equal by rfl"
+  },
+  "Becoming.PropositionIdentity.derivation_unique": {
+   "module": "Becoming.PropositionIdentity",
+   "category": "support",
+   "reason": "PE1: about the proof language (what identifying interderivable propositions keeps and loses), not a law of the unfolding; proof irrelevance of Prop: any two derivations of b from a are equal by rfl"
+  },
+  "Becoming.PropositionIdentity.two_equivalences": {
+   "module": "Becoming.PropositionIdentity",
+   "category": "model-witness",
+   "reason": "PE1: about the proof language (what identifying interderivable propositions keeps and loses), not a law of the unfolding; two different self-inverse maps on Bool, showing that an equivalence of types carries content where a witness of iff does not"
+  },
+  "Becoming.PropositionIdentity.transport_const": {
+   "module": "Becoming.PropositionIdentity",
+   "category": "support",
+   "reason": "PE1: about the proof language (what identifying interderivable propositions keeps and loses), not a law of the unfolding; transport along an equation of propositions with a constant motive keeps the value"
+  },
+  "Becoming.PropositionIdentity.transport_refl": {
+   "module": "Becoming.PropositionIdentity",
+   "category": "support",
+   "reason": "PE1: about the proof language (what identifying interderivable propositions keeps and loses), not a law of the unfolding; transport along rfl is the identity by computation"
   }
  },
  "instances": {

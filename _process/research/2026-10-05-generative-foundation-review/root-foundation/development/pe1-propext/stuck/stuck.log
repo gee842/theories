@@ -1,0 +1,23 @@
+$ lean --version
+Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)
+$ lean StuckTransport.lean   (LEAN_PATH: the scratch build of Becoming.PropositionIdentity)
+'viaPropext_eq' depends on axioms: [propext]
+'Becoming.PropositionIdentity.transport_const' does not depend on any axioms
+viaPropext._proof_2 ▸ 0
+0
+StuckTransport.lean:24:28: error: Type mismatch
+  rfl
+has type
+  ?m.5 = ?m.5
+but is expected to have type
+  viaPropext = 0
+StuckTransport.lean:25:31: error: Tactic `decide` failed for proposition
+  viaPropext = 0
+because its `Decidable` instance
+  instDecidableEqNat viaPropext 0
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqNat` and `Nat.decEq`, reduction got stuck at the `Decidable` instance
+  match h : viaPropext.beq 0 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯

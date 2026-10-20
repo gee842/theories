@@ -73,6 +73,7 @@ Aliases: `widening along a reading`, `沿读法的扩大`, `widening over a grow
 ### History
 
 - 20 October 2026: added (R47), section 8.1 item 5's widening over a grown world; study section 257.
+- 20 October 2026, PE1 (what identifying interderivable propositions keeps and loses): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the chapter changed only by PE1's edits: a sentence in section 0's proof-language row, and in section 9 a paragraph on why the core excludes propext, the receipt, counts and layers. Read before re-pointing. The claim is unchanged.
 
 </details>
 
