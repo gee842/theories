@@ -45,7 +45,7 @@ assert not any('R46' in x['en'] for x in d['history']), 'already applied'
 d['statement'] = t(
     'From a local law and a list of exchanges a World of the spine is built whose steps balance. Two interleavings of '
     'the same courses, every exchange touching a relatum, are carried one to the other by one renumbering of the '
-    'steps, under which all that is read at a step on what its exchange touches agrees.',
+    'steps, under which what is read at a step on what its exchange touches agrees.',
     '由局部律与交换之列构造出脊柱的一个世界，其各步平衡。同一进程的两个交错，每个交换都触及某关系项时，由所有步的一个重编号'
     '彼此相带，经此在一步上就其交换所触及者读出的一切都相同。')
 assert len(d['statement']['en']) <= 300 and len(d['statement']['zh']) <= 150, (len(d['statement']['en']),
@@ -73,7 +73,7 @@ agree = [Q + x for x in ('touchAt_renumber', 'runUpTo_untouched', 'runUpTo_renum
 order = [Q + x for x in ('footprinted', 'touchAround', 'bool_or_false_left', 'bool_or_false_right',
                          'bool_or_of_left', 'bool_or_of_right', 'untouched_unmoved', 'touch_contains_iff',
                          'around_contains', 'around_joined', 'keeps_consecutive', 'around_keeps_identity',
-                         'renumber_keeps')]
+                         'renumber_keeps', 'world_renumber_correspondence')]
 witness = [P + x for x in ('touches', 'act', 'keeps', 'reads', 'law', 'start', 'apart_differs',
                            'touch_not_contains', 'idle_unmatched')]
 d['laws'] += [
@@ -109,11 +109,16 @@ d['laws'] += [
            'a step. The footprint around each step, what the exchange at it or at the next touches, contains them, '
            'activity included, but joins every two consecutive exchanges, so the only renumbering of the steps keeping '
            'its order fixes every step: Reordering\'s commutations relate the world of an interleaving to no other '
-           'interleaving\'s world, and the relation between them is the renumbering.',
+           'interleaving\'s world, and the relation between them is the renumbering. On the worlds, '
+           'world_renumber_correspondence gathers the premises of Reordering\'s converse the renumbering meets: the '
+           'reindexing (fixing every step from the length on), the kept order, the same exchange at the renumbered '
+           'step and the moved footprint.',
      'zh': '与 Becoming.Reordering 的对应：重编号保持共享关系项之交换的次序（对触及的足迹为 Keeps；在其中两个交换恰在共同触及某关系项'
            '时相连），且该足迹随重编号移动。它恰在没有关系项在一个不触及它的步之后被触及时包含诸交换，因为世界的活跃是参与跨该步的交换。'
            '每步周围的足迹（该步或下一步的交换所触及者）包含它们，活跃也在内，但连起每两个相邻的交换，所以保持其次序的步之重编号只有使'
-           '每一步不动者：Reordering 的交换不把一个交错的世界关联到任何别的交错的世界，二者之间的关系是这个重编号。',
+           '每一步不动者：Reordering 的交换不把一个交错的世界关联到任何别的交错的世界，二者之间的关系是这个重编号。在世界上，'
+           'world_renumber_correspondence 汇集重编号所满足的 Reordering 之 converse 的前提：重编（从长度起每一步不动）、所保持的'
+           '次序、重编号之步取同一交换、随之移动的足迹。',
      'declarations': order},
 ]
 d['hypotheses'] = [

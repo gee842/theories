@@ -83,6 +83,8 @@ relatum's own (`ownCourse`, `Interleaves`). No premise beyond what each theorem 
   exchanges (`around_joined`), so the only renumbering keeping its order fixes every step
   (`keeps_consecutive`, `around_keeps_identity`): Reordering's commutations relate the world of
   an interleaving to no other interleaving's, and the relation between them is the renumbering.
+  What holds of the premises of Reordering's `converse` is gathered on the worlds in
+  `world_renumber_correspondence`.
 
 Reading (the AI's, D43): the shared index of steps is a reading of the relations, not
 their ground. What each relatum undergoes, and in what order, is its own course; a global index
@@ -2240,15 +2242,17 @@ theorem world_renumber_active {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : 
   congrArg (· = true) (touchAt_renumber listed inL inM touchL touchM t x).symm
 
 /-- **Levels agree through the renumbering** on what the step's exchange touches, before it and
-after it. -/
+after it; on those steps the step after is the relatum's index map (`world_index`). -/
 theorem world_renumber_level {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → List E}
     {L M : List E} (inL : law'.Interleaves c L) (inM : law'.Interleaves c M) (s : X → Nat)
     {t : Nat} {e : E} (at_t : exchangeAt L t = some e) {x : X} (touch : law'.touches e x = true) :
     (world law' xs' L s).web.level t x =
         (world law' xs' M s).web.level (law'.renumber xs L M t) x ∧
       (world law' xs' L s).web.level (t + 1) x =
-        (world law' xs' M s).web.level (law'.renumber xs L M t + 1) x :=
-  runUpTo_renumber listed inL inM s at_t touch
+        (world law' xs' M s).web.level (law'.renumber xs L M t + 1) x ∧
+      law'.indexMap x L M (t + 1) = law'.renumber xs L M t + 1 :=
+  ⟨(runUpTo_renumber listed inL inM s at_t touch).1, (runUpTo_renumber listed inL inM s at_t touch).2,
+   renumber_index listed inL inM at_t touch⟩
 
 /-- **Every relation read at one step on what its exchange touches reads alike through the
 renumbering**, however many relata it reads. -/
@@ -2442,6 +2446,27 @@ theorem renumber_keeps {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → L
   | .inr (.inr ⟨_, _, _, _, requires⟩) => match requires with
     | .inl no => (no : False).elim
     | .inr no => (no : False).elim
+
+/-- **The correspondence with `Becoming.Reordering`, on the worlds.** For two interleavings of the
+same courses, every exchange of each touching a relatum, the renumbering and the renumbering the
+other way `Reindexes` the steps below the length, and the renumbering fixes every step from it on;
+it keeps the order of the footprint of the touches; the renumbered step of the other world takes
+the same exchange; and it touches what the step touches. These are the premises of Reordering's
+`converse` that hold here; its premise `Contains` holds of the footprint of the touches exactly as
+`touch_contains_iff` states. -/
+theorem world_renumber_correspondence {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → List E}
+    {L M : List E} (inL : law'.Interleaves c L) (inM : law'.Interleaves c M)
+    (touchL : law'.Touching L) (touchM : law'.Touching M) (s : X → Nat) :
+    Reindexes 0 L.length (law'.renumber xs L M) (law'.renumber xs M L) ∧
+      (∀ t, L.length ≤ t → law'.renumber xs L M t = t) ∧
+      (footprinted law' xs' L s (law'.touchAt L)).Keeps 0 L.length (law'.renumber xs L M) ∧
+      (∀ t, (footprinted law' xs' L s (law'.touchAt L)).flow.SameExchange t
+        (footprinted law' xs' M s (law'.touchAt M)).flow (law'.renumber xs L M t)) ∧
+      ∀ t x, (footprinted law' xs' M s (law'.touchAt M)).touch (law'.renumber xs L M t) x =
+        (footprinted law' xs' L s (law'.touchAt L)).touch t x :=
+  ⟨renumber_reindexes listed inL inM touchL touchM, fun _ after => renumber_beyond after,
+   renumber_keeps listed inL inM s, world_renumber_flow listed inL inM touchL touchM s,
+   touchAt_renumber listed inL inM touchL touchM⟩
 
 end LocalLaw
 

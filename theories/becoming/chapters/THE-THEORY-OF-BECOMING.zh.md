@@ -63,7 +63,7 @@
 | 承诺 | 内容 | Lean |
 |---|---|---|
 | 证明语言 | Lean 4.29.1 内核。核心只导入 Lean 的 `Init`；每条源声明的公理报告为空：没有 `propext`、`Quot.sound` 或 `Classical.choice`。构造性只需没有 `Classical.choice`，所以核心**比构造性更严**。需要经典原理的定理把它写为假设（排中律、LPO、WLPO、LLPO、Markov 原理、双重否定消去、依赖选择）；校准在 §8.6。 | — |
-| 离散的步，一个共同的步序 | 每个关系项的活动、水平与交换按一个自然数步序索引。除此之外不假定确定的因果次序（§1.4）。经每个关系项自身各步读出者，对同一历程的每个交错都相同（`Interleavings.LocalLaw.world_index`、`world_reads_alike`）；在同一步读几个关系项的关系，在所选的交错上读出（§1.4）。 | `World`、`Web`、`Flow` |
+| 离散的步，一个共同的步序 | 每个关系项的活动、水平与交换按一个自然数步序索引。除此之外不假定确定的因果次序（§1.4）。经每个关系项自身各步读出者，对同一历程的每个交错都相同（`Interleavings.LocalLaw.world_index`、`world_reads_alike`）。每个交换都触及某个关系项时，所有步的一个重编号把一个交错的世界带到另一个的世界（`renumber_reindexes`），在同一步读该步交换所触及诸关系项的关系，不论读几个，对每个交错都相同（`world_renumber_reads`）；在同一步读该处没有交换相连的关系项的关系，在所选的交错上读出（`Pair.apart_differs`，§1.4）。 | `World`、`Web`、`Flow` |
 | 自然数的量 | 水平、所需、取用与给予是自然数，正的量至少一个单位。耗散的最小损失、回路的倍增与新颖需要增益依赖于它；稠密的量上，每步减半的存量永远下降而从不上升（`Halving.approaches_without_reaching`）。一般形式是最小损失之律（`Amounts.rests`）。 | — |
 | 作为命题的活动 | 活动是命题，`active : Nat → F → Prop`。计数或命名一步的规律需要它已定；对每个世界要求而不给已定性时，有些规律恰是排中律，这是对这一承诺的校准（§8.6）。 | `Web.active` |
 | 一类关系项 | 世界是一类关系项，带流（`present`、`take`、`give`）与依存网（`level`、`active`、`requires`、`need`、`draws`）。形成与条件是一个关系项的两种角色。 | `World`、`World.ofRoles` |
@@ -148,9 +148,9 @@
 
 ### 1.4 变化的次序与步序
 
-**要点。** 定理所用的共同步序，是变化的次序：足迹不相交的交换可交换，只有相连交换的偏序显示出来。对局部作用的交换，步序从关系项各自的历程读出；在此之外，它只排序不共享关系项的交换。经每个关系项自身各步读出者不依赖于选哪个交错：这选择移动的是所立落在步序的何处，而非关系项经过哪些所立或按何次序。
+**要点。** 定理所用的共同步序，是变化的次序：足迹不相交的交换可交换，只有相连交换的偏序显示出来。对局部作用的交换，步序从关系项各自的历程读出；在此之外，它只排序不共享关系项的交换。经每个关系项自身各步读出者不依赖于选哪个交错：这选择移动的是所立落在步序的何处，而非关系项经过哪些所立或按何次序。每个交换都触及某个关系项时，所有步的一个重编号使交换的第 k 次在它所触及的每个关系项处相配，在每个这样的关系项的各步上就是该关系项的索引映射（退后一步）；经由它，活跃、交换本身与交换所触及者在其前后的所立都相同，所以在同一步读这些关系项的关系对每个交错都相同；读该步交换不触及的关系项的关系则不然（`Pair.apart_differs`）。这重编号保持共享关系项之交换的次序；触及的足迹恰在没有关系项在一个不触及它的步之后被触及时包含诸交换，每步周围的足迹包含它们却连起每两个相邻的交换，所以 Reordering 的交换不把一个交错的世界关联到另一个交错的世界：二者之间的关系是这个重编号。
 
-**定理。** 本节陈述 `Footprinted.sorts_iff`、`run_of_courses`、`unique_iff`、`world_balances`、`world_swap`、`world_index`、`world_reads_alike`、`OneStep.every_iff`、`Weights.sum_courses`；完整陈述见[英文版 §1.4](THE-THEORY-OF-BECOMING.md#14-the-order-of-change-and-the-step-index)。
+**定理。** 本节陈述 `Footprinted.sorts_iff`、`run_of_courses`、`unique_iff`、`world_balances`、`world_swap`、`world_index`、`world_reads_alike`、`renumber_reindexes`、`world_renumber_reads`、`renumber_keeps`、`touch_contains_iff`、`around_keeps_identity`、`world_renumber_correspondence`、`OneStep.every_iff`、`Weights.sum_courses`；完整陈述见[英文版 §1.4](THE-THEORY-OF-BECOMING.md#14-the-order-of-change-and-the-step-index)。
 
 记录：[only-the-order-of-change-shows](../results/records/only-the-order-of-change-shows.md)、[exchanges-commute-unless-joined](../results/records/exchanges-commute-unless-joined.md)、[order-of-exchanges-is-the-invariant](../results/records/order-of-exchanges-is-the-invariant.md)、[normal-forms-need-decided-apartness](../results/records/normal-forms-need-decided-apartness.md)、[least-footprint-where-idleness-decided](../results/records/least-footprint-where-idleness-decided.md)、[the-step-index-from-own-courses](../results/records/the-step-index-from-own-courses.md)、[the-world-an-interleaving-builds](../results/records/the-world-an-interleaving-builds.md)、[laws-of-one-step-complete](../results/records/laws-of-one-step-complete.md)、[laws-of-one-step](../results/records/laws-of-one-step.md)、[one-step-missing-laws](../results/records/one-step-missing-laws.md)、[runs-on-families-chosen-step-by-step](../results/records/runs-on-families-chosen-step-by-step.md)、[sum-over-histories-exact](../results/records/sum-over-histories-exact.md)、[losses-of-the-sum-over-histories](../results/records/losses-of-the-sum-over-histories.md)。
 
@@ -834,7 +834,7 @@
 <a id="81-the-targets"></a>
 ### 8.1 依次排列的开放项
 
-1. **一个基底，以及对每个交换之律的规律**（进一步的证明；第一目标的形式部分）。基底按定义是一个（§1.1）；在 R37c 树上的连通度量中，11,552 条定理中 503 条与两个基底族都分开，各有所述理由。经每个关系项自身各步读出者对每个交错相同，所以对它们共同步序是一个读法（R38；`world_reads_alike`）。其余方向由指名的构造满足（R43）：每个运行是确定它的世界（`Frame.world_fixes_run`），一种关系项上的每个网与流是一个世界的（`World.of_web`、`World.of_flow`）。
+1. **一个基底，以及对每个交换之律的规律**（进一步的证明；第一目标的形式部分）。基底按定义是一个（§1.1）；在 R37c 树上的连通度量中，11,552 条定理中 503 条与两个基底族都分开，各有所述理由。经每个关系项自身各步读出者对每个交错相同，所以对它们共同步序是一个读法（R38；`world_reads_alike`）；经所有步的一个重编号，在同一步读该步交换所触及诸关系项者亦然（R46，[研究 §251](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#251-one-renumbering-of-the-steps-of-two-interleavings-r46)；`world_renumber_reads`）；在同一步读该处没有交换相连的关系项的规律，在所选的交错上读出，没有重编号能去掉这一点（`Pair.apart_differs`）。其余方向由指名的构造满足（R43）：每个运行是确定它的世界（`Frame.world_fixes_run`），一种关系项上的每个网与流是一个世界的（`World.of_web`、`World.of_flow`）。
 2. **一条评价之链**（进一步的证明）。已落地：逐步类与运行类在所指名的前提下单向接上次序，在水平路径上条件、意义与 C 读同一对象（`Web.paths_one_object`）。R40：在连通、生与否可判定的网上，条件恰是评价的根据加上不生者的意义（`Web.unrestricted_iff_grounds_beyond`），由此得方向的扩大及其池的选择（`Direction.grounded_widening_selected`）。R45：生起之类只作为边界接上次序：成员在起点不活动、整段上不生起的部分不改变能形成者，生起不定次序（`Flow.Balances.keeps_of_not_arising`、`ArisingDrawer.arises_narrows`、`ArisingGiver.arises_widens`）。*开放：*进一步生成的成分能否进入 `living` 的读法。
 3. **评价怎样在展开之内形成**（进一步的证明）。*开放：*中心怎样逐步形成、表示其区域、边界与依存，并认识它所及者；观察是否可由依存推出。
 4. **脊柱上的对齐方向**（进一步的证明）。已落地：作为核心模式的方向（§7.5）；R44：世界的动作读作部分在一条交换之律下的行动，平衡、在场与起点由构造成立（`Direction.exchange_direction`），交接案例作为核心中的形式实例（`Requirement.Handover.direction`）。连同 R40 从评价一行出发的方向，通向对齐之链止于脊柱。*开放：*形式部分无；链所指名的前提是根据与对应的问题。
@@ -890,16 +890,16 @@
 
 所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）17 个。
 
-**当前回执**是运行 [`20261020T094300.398321Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T094300.398321Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 249 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#249-selection-among-groups-by-ending-through-conditions-of-their-own-ev5)）。
+**当前回执**是运行 [`20261020T101000.694725Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T101000.694725Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 251 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#251-one-renumbering-of-the-steps-of-two-interleavings-r46)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 275 个模块，10,984 条定理 |
+| 核心模块（含根 `Becoming`） | 275 个模块，11,043 条定理 |
 | 实例模块 | 7 个模块，567 条定理 |
 | 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 闭包（核心、环与根基） | 291 个模块，11,804 条定理 |
-| 审计的脊柱声明 | 16,166 |
+| 闭包（核心、环与根基） | 291 个模块，11,863 条定理 |
+| 审计的脊柱声明 | 16,234 |
 | 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 189 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 
