@@ -1324,7 +1324,14 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   return map multiplying by `1 + M` is `Becoming.Loops`' carried amount, turn by turn, and the
   gap against the quiet course (`selfLoop_carried`, `selfLoop_gap`); around a cycle of several
   conditions the return map multiplying by one plus the product of the coupling strengths stays
-  at or below the carried amount (`carried_around_course`).
+  at or below the carried amount (`carried_around_course`). Where each link of the cycle gives
+  exactly its strength and nothing else gives there, one turn is exact: that course with what the
+  loop gained over the turn and what the intermediate conditions held, carried on to it, equal to
+  the course exactly where both are nothing (`carried_around_excess`, `around_course_iff`); on a
+  ring of two or more conditions from an even start the bound is strict (`Ring.bound_strict`).
+  Rejoining's gap at one condition is a return map's course exactly where the two courses'
+  exchanges respond to the gap by that map (`gap_course`; linear: `gap_scaling`); across an act
+  it need not be (`replenishing_no_return`).
 * `Becoming.Pace` (L1): how fast a rule may change. A two-level course, the fast
   configuration stepping by a rule that changes only at reading steps, is a run of one law. A
   rule that never reads is kept from then on: nothing the fast level meets reaches it, and under it
@@ -2197,7 +2204,12 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   law on whole-number standings and a list of exchanges, `LocalLaw.world` is a `World` of the
   spine whose steps balance; two interleavings of the same own courses give every relatum the same
   course of standings and the same end, and two adjacent exchanges sharing no relatum, taken in
-  either order, leave the world alike at every step but the one between them.
+  either order, leave the world alike at every step but the one between them. Step by step, for
+  any two interleavings of the same courses: a relatum stands at a step of one world where it
+  stands at the step of the other at which it has taken as many of its own exchanges (the index
+  map, `world_index`), the map sends the step after each of its exchanges to the step after the
+  same exchange in the other (`index_matches`), and what is read through its own steps is the
+  same for every interleaving (`world_reads_alike`).
 * `Becoming.CensusCounts` (L1): the laws of counting where the counts exist, with no decision
   procedure for activity and for every property of the counts. The counts of a census are taken as
   relations (`Counts`); across a step a ceasing or coming count exists exactly where, for each

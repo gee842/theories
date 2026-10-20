@@ -40,20 +40,40 @@ relatum's own (`ownCourse`, `Interleaves`). No premise beyond what each theorem 
   the world alike at every step but the one between them (`world_swap`); at that step each relatum
   either of them touches stands, in one world, where it stands one step later or earlier in the
   other, and one neither touches stands alike (`world_swap_between`).
+* **Any two interleavings, step by step.** A relatum's standing at step `t` is its standing after
+  the own exchanges the first `t` exchanges hold (`ownCount`, `standingAfter`, `runUpTo_own`,
+  `world_own`). So in two interleavings of the same courses a relatum stands alike at any two
+  steps, one in each world, at which it has taken equally many of its own exchanges
+  (`runUpTo_of_own`, `world_of_own`). The index map for a relatum sends a step of one list to the
+  least step of the other at which the relatum has taken as many (`firstAt`, `ownCount_firstAt`,
+  `firstAt_least`, `indexMap`, `ownCount_index`), and the worlds agree through it
+  (`runUpTo_index`, `world_index`); where the relatum takes an exchange at step `t` of one list,
+  the map sends `t + 1` to the step after the one at which it takes the same exchange in the other
+  (`exchangeAt_own`, `firstAt_succ_step`, `index_matches`). Every property of a standing that a
+  relatum has at some step, or at every step, of one world it has at some step, or at every step,
+  of the other (`world_reads_alike`). The map is one for each relatum: no one renumbering of the
+  steps is claimed.
 
 Reading (the AI's, D43): the shared index of steps is a reading of the relations, not
 their ground. What each relatum undergoes, and in what order, is its own course; a global index
 adds only an order between exchanges that share no relatum, and that order changes no
 configuration. The index is derived from the relations exactly where every two exchanges share a
 relatum; elsewhere it is a commitment of the representation, a choice among interleavings that
-the relations leave open and the configurations do not read.
+the relations leave open and the configurations do not read. With the index map, what a world
+says of a relatum is read through the relatum's own steps, and that reading is the same for
+every interleaving: the choice of interleaving moves where on the shared index a standing falls,
+not which standings a relatum passes through or in what order.
 
 Not shown: courses without end (the courses here are finite lists); exchanges that read relata
 they do not change, in a footprint of their own (here what an exchange reads and what it may
-change are one footprint); the correspondence with a world's footprint of `Becoming.Order`; for
-two interleavings of the same courses that differ by more than one exchange of adjacent
-exchanges, a step-by-step relation between their worlds (what is shown for them is the course of
-standings and the end). No ethical predicate, ranking or axiom occurs.
+change are one footprint); one renumbering of all the steps carrying one interleaving's world to
+the other's, which the index maps, one for each relatum, do not give, and with it the
+correspondence with `Becoming.Reordering`'s footprint (`Footprinted`): there a relatum a step
+does not touch must be unmoved across it, activity included, while this world marks a relatum
+active exactly at the steps whose exchange touches it, so the footprint of the exchanges does not
+contain them; and the renumbering `Reindexes` asks for would match each exchange's occurrence in
+the two lists, which needs the maps of the relata an exchange touches to agree. No ethical
+predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -1069,6 +1089,265 @@ theorem runUpTo_agree : ∀ (L : List E) {s s' : X → σ}, (∀ y, s y = s' y) 
   | _ :: _, _, _, same, 0, y => same y
   | e :: L, _, _, same, t + 1, y => runUpTo_agree L (act_agree e same) t y
 
+/-! ## Each relatum's own steps: the index map between interleavings
+
+A relatum's standing at step `t` of a list is its standing after the own exchanges the first `t`
+exchanges hold (`ownCount`), read off its course of standings (`standingAfter`, `runUpTo_own`).
+Two interleavings of the same courses give every relatum the same course of standings, so a
+relatum stands alike at any two steps, one in each, at which it has taken equally many of its own
+exchanges (`runUpTo_of_own`). The index map sends a step of one list to the least step of the
+other at which the relatum has taken as many (`firstAt`, `indexMap`, `runUpTo_index`), and at a
+step where the relatum takes an exchange it sends the step after to the step after the one at
+which it takes the same exchange in the other (`index_matches`). -/
+
+variable (law) in
+/-- How many of a relatum's own exchanges the first `t` exchanges of a list hold. -/
+def ownCount (x : X) : List E → Nat → Nat
+  | [], _ => 0
+  | _ :: _, 0 => 0
+  | e :: L, t + 1 => match law.touches e x with
+    | true => ownCount x L t + 1
+    | false => ownCount x L t
+
+/-- What stands after `n` own exchanges, read off the start `d` and the standings after each:
+`d` after none, the `n`-th standing after `n`, the last past the end. -/
+def afterOwn (d : σ) : List σ → Nat → σ
+  | [], _ => d
+  | _ :: _, 0 => d
+  | a :: as, n + 1 => afterOwn a as n
+
+variable (law) in
+/-- **What a relatum stands at after `n` of its own exchanges** in a list, from a start. -/
+def standingAfter (x : X) (L : List E) (s : X → σ) (n : Nat) : σ :=
+  afterOwn (s x) (law.standings x L s) n
+
+theorem ownCount_true {x : X} {e : E} (L : List E) (t : Nat) (touch : law.touches e x = true) :
+    law.ownCount x (e :: L) (t + 1) = law.ownCount x L t + 1 := by
+  show (match law.touches e x with
+    | true => law.ownCount x L t + 1
+    | false => law.ownCount x L t) = _
+  rw [touch]
+
+theorem ownCount_false {x : X} {e : E} (L : List E) (t : Nat) (touch : law.touches e x = false) :
+    law.ownCount x (e :: L) (t + 1) = law.ownCount x L t := by
+  show (match law.touches e x with
+    | true => law.ownCount x L t + 1
+    | false => law.ownCount x L t) = _
+  rw [touch]
+
+theorem ownCount_zero (x : X) : ∀ L : List E, law.ownCount x L 0 = 0
+  | [] => rfl
+  | _ :: _ => rfl
+
+theorem afterOwn_zero (d : σ) : ∀ ss : List σ, afterOwn d ss 0 = d
+  | [] => rfl
+  | _ :: _ => rfl
+
+/-- **A relatum's standing at a step is its standing after its own exchanges so far.** At step `t`
+of a list, a relatum stands where it stands after the own exchanges the first `t` exchanges hold. -/
+theorem runUpTo_own (x : X) : ∀ (L : List E) (s : X → σ) (t : Nat),
+    law.runUpTo L s t x = law.standingAfter x L s (law.ownCount x L t)
+  | [], _, _ => rfl
+  | e :: L, s, 0 => (afterOwn_zero (s x) (law.standings x (e :: L) s)).symm
+  | e :: L, s, t + 1 => by
+    show law.runUpTo L (law.act e s) t x = _
+    rw [runUpTo_own x L (law.act e s) t]
+    cases touch : law.touches e x with
+    | true =>
+      rw [ownCount_true L t touch]
+      show _ = afterOwn (s x) (law.standings x (e :: L) s) (law.ownCount x L t + 1)
+      rw [standings_true L s touch]
+      rfl
+    | false =>
+      rw [ownCount_false L t touch]
+      show afterOwn (law.act e s x) (law.standings x L (law.act e s)) (law.ownCount x L t) =
+        afterOwn (s x) (law.standings x (e :: L) s) (law.ownCount x L t)
+      rw [standings_false L s touch, law.keeps e s x touch]
+
+/-- **Two interleavings of the same courses read alike through a relatum's own steps**: after `n`
+of its own exchanges a relatum stands alike in both. -/
+theorem standingAfter_of_interleavings {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E}
+    {L M : List E} (inL : law.Interleaves c L) (inM : law.Interleaves c M) (s : X → σ) (x : X)
+    (n : Nat) : law.standingAfter x L s n = law.standingAfter x M s n :=
+  congrArg (fun ss => afterOwn (s x) ss n) (standings_of_interleavings listed inL inM s x)
+
+/-- **Step by step.** In two interleavings of the same courses, a relatum stands at step `t` of
+one where it stands at step `t'` of the other, wherever it has taken equally many of its own
+exchanges by then. -/
+theorem runUpTo_of_own {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) (s : X → σ) (x : X) {t t' : Nat}
+    (same : law.ownCount x L t = law.ownCount x M t') :
+    law.runUpTo L s t x = law.runUpTo M s t' x :=
+  (runUpTo_own x L s t).trans
+    ((standingAfter_of_interleavings listed inL inM s x _).trans
+      ((congrArg (law.standingAfter x M s) same).trans (runUpTo_own x M s t').symm))
+
+/-- The own exchanges the first `t` exchanges hold are at most the relatum's own course. -/
+theorem ownCount_le (x : X) : ∀ (L : List E) (t : Nat),
+    law.ownCount x L t ≤ (law.ownCourse x L).length
+  | [], _ => Nat.zero_le _
+  | _ :: _, 0 => Nat.zero_le _
+  | e :: L, t + 1 => by
+    cases touch : law.touches e x with
+    | true =>
+      rw [ownCount_true L t touch, ownCourse_true L touch]
+      exact Nat.succ_le_succ (ownCount_le x L t)
+    | false =>
+      rw [ownCount_false L t touch, ownCourse_false L touch]
+      exact ownCount_le x L t
+
+variable (law) in
+/-- **The least step of a list at which a relatum has taken `n` of its own exchanges.** -/
+def firstAt (x : X) : List E → Nat → Nat
+  | [], _ => 0
+  | _ :: _, 0 => 0
+  | e :: M, n + 1 => match law.touches e x with
+    | true => firstAt x M n + 1
+    | false => firstAt x M (n + 1) + 1
+
+theorem firstAt_true {x : X} {e : E} (M : List E) (n : Nat) (touch : law.touches e x = true) :
+    law.firstAt x (e :: M) (n + 1) = law.firstAt x M n + 1 := by
+  show (match law.touches e x with
+    | true => law.firstAt x M n + 1
+    | false => law.firstAt x M (n + 1) + 1) = _
+  rw [touch]
+
+theorem firstAt_false {x : X} {e : E} (M : List E) (n : Nat) (touch : law.touches e x = false) :
+    law.firstAt x (e :: M) (n + 1) = law.firstAt x M (n + 1) + 1 := by
+  show (match law.touches e x with
+    | true => law.firstAt x M n + 1
+    | false => law.firstAt x M (n + 1) + 1) = _
+  rw [touch]
+
+/-- By `firstAt x M n` the relatum has taken `n` of its own exchanges, where its course has `n`. -/
+theorem ownCount_firstAt (x : X) : ∀ (M : List E) (n : Nat), n ≤ (law.ownCourse x M).length →
+    law.ownCount x M (law.firstAt x M n) = n
+  | [], _, le => (Nat.eq_zero_of_le_zero le).symm
+  | _ :: _, 0, _ => rfl
+  | e :: M, n + 1, le => by
+    cases touch : law.touches e x with
+    | true =>
+      rw [ownCourse_true M touch] at le
+      rw [firstAt_true M n touch, ownCount_true M _ touch,
+        ownCount_firstAt x M n (Nat.le_of_succ_le_succ le)]
+    | false =>
+      rw [ownCourse_false M touch] at le
+      rw [firstAt_false M n touch, ownCount_false M _ touch, ownCount_firstAt x M (n + 1) le]
+
+/-- And no earlier step has: `firstAt` is the least such step. -/
+theorem firstAt_least (x : X) : ∀ (M : List E) (n t : Nat), law.ownCount x M t = n →
+    law.firstAt x M n ≤ t
+  | [], _, _, _ => Nat.zero_le _
+  | _ :: _, 0, _, _ => Nat.zero_le _
+  | _ :: _, _ + 1, 0, same => Nat.noConfusion same
+  | e :: M, n + 1, t + 1, same => by
+    cases touch : law.touches e x with
+    | true =>
+      rw [ownCount_true M t touch] at same
+      rw [firstAt_true M n touch]
+      exact Nat.succ_le_succ (firstAt_least x M n t (Nat.succ.inj same))
+    | false =>
+      rw [ownCount_false M t touch] at same
+      rw [firstAt_false M n touch]
+      exact Nat.succ_le_succ (firstAt_least x M (n + 1) t same)
+
+variable (law) in
+/-- **The index map for a relatum**: a step of `L` goes to the least step of `M` at which the
+relatum has taken as many of its own exchanges. -/
+def indexMap (x : X) (L M : List E) (t : Nat) : Nat :=
+  law.firstAt x M (law.ownCount x L t)
+
+/-- Interleavings of the same courses give a relatum own courses of one length. -/
+theorem length_of_interleavings {c : X → List E} {L M : List E} (inL : law.Interleaves c L)
+    (inM : law.Interleaves c M) (x : X) :
+    (law.ownCourse x L).length = (law.ownCourse x M).length :=
+  congrArg List.length ((inL x).trans (inM x).symm)
+
+/-- **The index map matches own steps**: at the mapped step the relatum has taken as many of its
+own exchanges as at the step mapped. -/
+theorem ownCount_index {c : X → List E} {L M : List E} (inL : law.Interleaves c L)
+    (inM : law.Interleaves c M) (x : X) (t : Nat) :
+    law.ownCount x M (law.indexMap x L M t) = law.ownCount x L t :=
+  ownCount_firstAt x M _
+    (Nat.le_trans (ownCount_le x L t) (Nat.le_of_eq (length_of_interleavings inL inM x)))
+
+/-- **The configurations of two interleavings agree through the index map**: a relatum stands at
+step `t` of one where it stands at the mapped step of the other. -/
+theorem runUpTo_index {xs : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law.Interleaves c L) (inM : law.Interleaves c M) (s : X → σ) (x : X) (t : Nat) :
+    law.runUpTo L s t x = law.runUpTo M s (law.indexMap x L M t) x :=
+  runUpTo_of_own listed inL inM s x (ownCount_index inL inM x t).symm
+
+/-- A list has an exchange only at a step before its length. -/
+theorem exchangeAt_lt : ∀ {l : List E} {n : Nat} {e : E}, exchangeAt l n = some e → n < l.length
+  | [], _, _, h => nomatch h
+  | _ :: _, 0, _, _ => Nat.succ_pos _
+  | _ :: _, _ + 1, _, h => Nat.succ_lt_succ (exchangeAt_lt h)
+
+/-- At a step where a relatum takes an exchange, the exchange is its own exchange numbered by the
+own exchanges before, and the step adds one to them. -/
+theorem exchangeAt_own (x : X) : ∀ (L : List E) (t : Nat) {e : E}, exchangeAt L t = some e →
+    law.touches e x = true →
+    exchangeAt (law.ownCourse x L) (law.ownCount x L t) = some e ∧
+      law.ownCount x L (t + 1) = law.ownCount x L t + 1
+  | [], _, _, at_t, _ => nomatch at_t
+  | a :: L, 0, e, at_t, touch => by
+    have same : a = e := Option.some.inj at_t
+    subst same
+    rw [ownCourse_true L touch, ownCount_true L 0 touch, ownCount_zero x L, ownCount_zero x (a :: L)]
+    exact ⟨rfl, rfl⟩
+  | a :: L, t + 1, e, at_t, touch => by
+    have inner := exchangeAt_own x L t at_t touch
+    cases touchA : law.touches a x with
+    | true =>
+      rw [ownCourse_true L touchA, ownCount_true L t touchA, ownCount_true L (t + 1) touchA,
+        inner.2]
+      exact ⟨inner.1, rfl⟩
+    | false =>
+      rw [ownCourse_false L touchA, ownCount_false L t touchA, ownCount_false L (t + 1) touchA]
+      exact inner
+
+/-- The least step after which a relatum has taken `n + 1` of its own exchanges follows the step at
+which it takes its own exchange numbered `n`. -/
+theorem firstAt_succ_step (x : X) : ∀ (M : List E) (n : Nat), n < (law.ownCourse x M).length →
+    ∃ p e, law.firstAt x M (n + 1) = p + 1 ∧ exchangeAt M p = some e ∧ law.touches e x = true ∧
+      exchangeAt (law.ownCourse x M) n = some e
+  | [], _, lt => absurd lt (Nat.not_lt_zero _)
+  | a :: M, n, lt => by
+    cases touch : law.touches a x with
+    | true =>
+      rw [ownCourse_true M touch] at lt
+      rw [firstAt_true M n touch, ownCourse_true M touch]
+      match n with
+      | 0 => exact ⟨0, a, by cases M <;> rfl, rfl, touch, rfl⟩
+      | n + 1 =>
+        match firstAt_succ_step x M n (Nat.lt_of_succ_lt_succ lt) with
+        | ⟨p, e, first, at_p, touchE, own⟩ => exact ⟨p + 1, e, by rw [first], at_p, touchE, own⟩
+    | false =>
+      rw [ownCourse_false M touch] at lt
+      rw [firstAt_false M n touch, ownCourse_false M touch]
+      match firstAt_succ_step x M n lt with
+      | ⟨p, e, first, at_p, touchE, own⟩ => exact ⟨p + 1, e, by rw [first], at_p, touchE, own⟩
+
+/-- **The index map matches each relatum's exchanges.** In two interleavings of the same courses,
+where a relatum takes an exchange at step `t` of one, the index map sends `t + 1` to the step after
+the one at which it takes the same exchange in the other. -/
+theorem index_matches {c : X → List E} {L M : List E} (inL : law.Interleaves c L)
+    (inM : law.Interleaves c M) (x : X) {t : Nat} {e : E} (at_t : exchangeAt L t = some e)
+    (touch : law.touches e x = true) :
+    ∃ p, law.indexMap x L M (t + 1) = p + 1 ∧ exchangeAt M p = some e := by
+  have own := exchangeAt_own x L t at_t touch
+  have courses : law.ownCourse x L = law.ownCourse x M := (inL x).trans (inM x).symm
+  have below : law.ownCount x L t < (law.ownCourse x M).length := by
+    rw [← courses]
+    exact exchangeAt_lt own.1
+  match firstAt_succ_step x M _ below with
+  | ⟨p, e', first, at_p, _, ownM⟩ =>
+    have same : e' = e := Option.some.inj (ownM.symm.trans
+      ((congrArg (fun l => exchangeAt l (law.ownCount x L t)) courses).symm.trans own.1))
+    subst same
+    exact ⟨p, by unfold indexMap; rw [own.2]; exact first, at_p⟩
+
 variable (law) in
 /-- The relata of a list that an exchange touches. -/
 def touchedIn (e : E) : List X → List X
@@ -1331,6 +1610,48 @@ theorem world_swap_between {xs : List X} (A B : List E) {e f : E} (apart : law'.
   · show law'.runUpTo (A ++ e :: f :: B) s (A.length + 1) x =
       law'.runUpTo (A ++ f :: e :: B) s (A.length + 1) x
     rw [at1, at1, law'.keeps e _ x touchE, law'.keeps f _ x touchF]
+
+/-! ## The worlds of any two interleavings, step by step -/
+
+/-- **The world's standing, read through a relatum's own steps**: at step `t` a relatum stands
+where it stands after the own exchanges the first `t` exchanges hold. -/
+theorem world_own (xs : List X) (L : List E) (s : X → Nat) (t : Nat) (x : X) :
+    (world law' xs L s).web.level t x = law'.standingAfter x L s (law'.ownCount x L t) :=
+  runUpTo_own x L s t
+
+/-- **The worlds of two interleavings of the same courses, step by step.** With the relata listed,
+a relatum stands at step `t` of the one world where it stands, in the other, at the step the index
+map gives: the least step at which it has taken as many of its own exchanges. -/
+theorem world_index {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law'.Interleaves c L) (inM : law'.Interleaves c M) (s : X → Nat) (x : X) (t : Nat) :
+    (world law' xs' L s).web.level t x = (world law' xs' M s).web.level (law'.indexMap x L M t) x :=
+  runUpTo_index listed inL inM s x t
+
+/-- **And at any two steps at which it has taken equally many of its own exchanges.** -/
+theorem world_of_own {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → List E} {L M : List E}
+    (inL : law'.Interleaves c L) (inM : law'.Interleaves c M) (s : X → Nat) (x : X) {t t' : Nat}
+    (same : law'.ownCount x L t = law'.ownCount x M t') :
+    (world law' xs' L s).web.level t x = (world law' xs' M s).web.level t' x :=
+  runUpTo_of_own listed inL inM s x same
+
+/-- **What is read through a relatum's own steps is the same for every interleaving.** For every
+property of a standing, a relatum has it at some step of one world exactly where it has it at some
+step of the other, and at every step of one exactly where at every step of the other. -/
+theorem world_reads_alike {xs xs' : List X} (listed : ∀ x, x ∈ xs) {c : X → List E}
+    {L M : List E} (inL : law'.Interleaves c L) (inM : law'.Interleaves c M) (s : X → Nat) (x : X)
+    (P : Nat → Prop) :
+    ((∃ t, P ((world law' xs' L s).web.level t x)) ↔
+        ∃ t, P ((world law' xs' M s).web.level t x)) ∧
+      ((∀ t, P ((world law' xs' L s).web.level t x)) ↔
+        ∀ t, P ((world law' xs' M s).web.level t x)) :=
+  ⟨⟨fun ⟨t, holds⟩ => ⟨law'.indexMap x L M t,
+      Eq.mp (congrArg P (world_index (xs' := xs') listed inL inM s x t)) holds⟩,
+    fun ⟨t, holds⟩ => ⟨law'.indexMap x M L t,
+      Eq.mp (congrArg P (world_index (xs' := xs') listed inM inL s x t)) holds⟩⟩,
+   ⟨fun all t => Eq.mp (congrArg P (world_index (xs' := xs') listed inM inL s x t).symm)
+      (all (law'.indexMap x M L t)),
+    fun all t => Eq.mp (congrArg P (world_index (xs' := xs') listed inL inM s x t).symm)
+      (all (law'.indexMap x L M t))⟩⟩
 
 end LocalLaw
 

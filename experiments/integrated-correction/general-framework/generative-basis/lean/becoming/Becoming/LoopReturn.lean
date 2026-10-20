@@ -1,6 +1,7 @@
 import Becoming.Frequency
 import Becoming.Lasting
 import Becoming.Prelude
+import Becoming.Rejoining
 
 /-!
 # LoopReturn: whether a loop closes, keeps or widens a difference
@@ -19,10 +20,11 @@ each link gives on what it receives to the next, and the last gives it back: a l
 link applied first. The course of the difference is the run of the return map,
 `(Law.run f d).state n`, a run of the spine whose states are the orbit `Law.orbit f d n`
 (`Becoming.Recurrence`, `Law.run_state`), the difference after `n` turns from `d`. The difference
-is one number, a simplification of Rejoining's levels at many conditions; no theorem here reads a
-loop of Rejoining as a return map. A link's *factor* is what one turn makes of the difference it
-receives; a *strength* is only a coupling strength of `Becoming.Propagation`, and around a cycle the
-product of the coupling strengths (`Loops.product`). The last section joins the two.
+is one number: the gap at one condition between Rejoining's two courses, which follows a return
+map exactly where the courses' exchanges respond to that gap by a map (the last section). A link's
+*factor* is what one turn makes of the difference it receives; a *strength* is only a coupling
+strength of `Becoming.Propagation`, and around a cycle the product of the coupling strengths
+(`Loops.product`). The later sections join the two.
 
 * **A return map giving back what it receives keeps a difference.** Such a return map keeps
   `d` at every turn (`LoopReturn.kept_of_identity`), and so does a loop each of whose links gives on
@@ -93,14 +95,42 @@ product of the coupling strengths (`Loops.product`). The last section joins the 
   the holding: the carrying law takes nothing, so a condition keeps what it had while the cycle
   returns more. A positive whole-number strength gives a factor of at least `2`, the doubling of
   `carried_doubles_around`.
+* **Around a cycle of several conditions, exactly.** Where each link gives into the next condition
+  exactly its strength times the current level, and nothing else is given there
+  (`LoopReturn.GivesExactly`), one turn is exact: the carried amount at the loop one turn after `t`
+  is the product of the strengths times what the loop held at `t`, with what the loop held at
+  `t + m` and the last strength times what the intermediate conditions held as the turn passed
+  them, carried on (`LoopReturn.heldAlong`; `LoopReturn.carried_along_exact`,
+  `LoopReturn.carried_around_exact`). So it is the return map's course after one turn with what
+  the loop gained over the turn's first `m` steps and what the intermediate conditions give
+  (`LoopReturn.carried_around_excess`), and it equals that course exactly where both are nothing
+  (`LoopReturn.around_course_iff`). On a ring of `m + 2` conditions with a positive strength `w`,
+  every condition starting at a positive `D` (`LoopReturn.Ring`), each condition grows as a
+  self-loop of strength `w` would, `(1 + w) ^ t * D` (`LoopReturn.ring_even`,
+  `LoopReturn.Ring.amount_eq`), and `(1 + w ^ (m + 2)) * D < (1 + w) ^ (m + 2) * D`
+  (`LoopReturn.one_add_pow_lt`): the bound of `carried_around_course` holds and is strict
+  (`LoopReturn.Ring.bound_strict`). For one condition the two agree (`LoopReturn.selfLoop_carried`).
+* **A difference at one condition of `Becoming.Rejoining` as a return map.** Where two flows
+  balance on a condition and, from step `s`, their exchanges respond to the gap between the two
+  courses by a map `f` (`LoopReturn.RespondsByReturn`: each course's level with what it gives and
+  what the other takes stand at `f` of the gap), the gap at `s + n` is `f`'s course after `n` turns,
+  one turn a step (`LoopReturn.gap_course`, from `LoopReturn.gap_succ`). A response linear in the
+  gap is a loop of multiplying links: the gap is the product of the factors to the `n` times the
+  gap at `s` (`LoopReturn.gap_scaling`), so `whole_factors` applies. In Rejoining's witness the
+  responder's exchange responds by taking one off from the act on
+  (`LoopReturn.replenishing_responds`, `LoopReturn.replenishing_course`); from the start, across
+  the act, the gap `0, 1, 0, 0` is the course of no map (`LoopReturn.replenishing_no_return`): the
+  act opens a difference from none, which is not a response to the difference.
 
 What is not derived: which return law a loop follows, which the laws above take as given, as
 `Becoming.Rejoining` leaves the response to the law followed; that a difference is one number,
 rather than many differences at many conditions; how many steps a turn takes (`Becoming.Frequency`);
-the carried amount around a cycle of more than one condition as a return map (intermediate
-conditions hold and keep giving, so a turn is not a map of one number; the bound above is what
-holds); and which of keeping, closing or widening a difference supports the generation of life in
-the whole, which goes through the comparison and the condition of the chapter's §6.15.
+the carried amount around a cycle of more than one condition where links read more than one level
+or other conditions give into the cycle (the exact turn above takes each link to be the only
+giving, at exactly its strength; otherwise the bound is what holds); that the exchanges of
+Rejoining's courses respond to the gap by a map, which `RespondsByReturn` takes as given; and which
+of keeping, closing or widening a difference supports the generation of life in the whole, which
+goes through the comparison and the condition of the chapter's §6.4.
 -/
 
 namespace Becoming
@@ -588,6 +618,409 @@ theorem carried_around_course {F C : Type} {cs : List C} {part : F → Bool}
     (Nat.le_of_eq ((orbit_scaling _ _ R).trans
       (congrArg (fun x => x ^ R * carried cs part σ k present δ t e) (factor_single _))))
     (carried_runaway start back loop t R)
+
+/-! ## Around a cycle of several conditions, exactly
+
+`carried_around_course` is a bound: around a cycle of several conditions the intermediate
+conditions hold what reached them and keep giving it on, so a turn is not a map of one number.
+Where each link gives into the next condition exactly its strength times the current level, and
+nothing else is given there, one turn is exact: the product of the strengths times what the loop
+held at the start, with what each condition along the cycle held as the turn passed it, carried
+on by the strengths after it. The return map's course is the part of this from the loop alone;
+the rest is what the intermediate conditions give. -/
+
+/-- **Each link gives exactly its strength.** For each of the first `j` links of `v`, at every step
+and from any levels, the formations present give into `v (i + 1)` exactly `w i` times the current
+level of `v i`: the link reads that level alone, and nothing else is given there. -/
+def GivesExactly {F C : Type} (cs : List C) (part : F → Bool) (σ : Nat → F → C → Nat)
+    (k : Nat → F → C → Nat → C → Nat) (present : Nat → List F) (v : Nat → C) (w : Nat → Nat)
+    (j : Nat) : Prop :=
+  ∀ i, i < j → ∀ t (l : Nat → C → Nat),
+    total (present t) (fun h => carriedGive cs part σ k t h (v (i + 1)) l) = w i * l t (v i)
+
+/-- **What the conditions along a chain held, carried on to its end.** With no link, nothing; with
+one more link `p`, what the condition it gives into held (`H p`), with the link's strength times
+what was carried on before. -/
+def heldAlong (w : Nat → Nat) (H : Nat → Nat) : Nat → Nat
+  | 0 => 0
+  | p + 1 => H p + w p * heldAlong w H p
+
+/-- One more link, rearranged. -/
+theorem link_rearranged (H w P X h : Nat) : H + w * (P * X + h) = P * w * X + (H + w * h) :=
+  (congrArg (H + ·) (Nat.left_distrib w (P * X) h)).trans
+    ((Nat.add_left_comm H _ _).trans (congrArg (· + (H + w * h)) (Loops.mul_swap P w X).symm))
+
+/-- **Along a chain of exact links, exactly.** Where each of the `p` links gives exactly its
+strength, the carried amount at the chain's end after `p` steps from `t` is the product of the
+strengths times the carried amount at its start at `t`, with what each condition along the chain
+held as the chain passed it (at `t + i`, the condition `v (i + 1)`), carried on by the strengths
+after it. `carried_along`'s bound, with what it leaves out stated. -/
+theorem carried_along_exact {F C : Type} {cs : List C} {part : F → Bool}
+    {σ : Nat → F → C → Nat} {k : Nat → F → C → Nat → C → Nat} {present : Nat → List F}
+    {δ : C → Nat} {v : Nat → C} {w : Nat → Nat} :
+    ∀ {p : Nat}, GivesExactly cs part σ k present v w p → ∀ t,
+      carried cs part σ k present δ (t + p) (v p) =
+        Loops.product w p * carried cs part σ k present δ t (v 0) +
+          heldAlong w (fun i => carried cs part σ k present δ (t + i) (v (i + 1))) p
+  | 0, _, _ => ((Nat.add_zero _).trans (Nat.one_mul _)).symm
+  | p + 1, exact, t =>
+    (carried_succ (t + p) (v (p + 1))).trans
+      ((congrArg (carried cs part σ k present δ (t + p) (v (p + 1)) + ·)
+          ((exact p (Nat.lt_succ_self p) (t + p) (carried cs part σ k present δ)).trans
+            (congrArg (w p * ·)
+              (carried_along_exact (fun i lt => exact i (Nat.lt_succ_of_lt lt)) t)))).trans
+        (link_rearranged _ _ _ _ _))
+
+/-- **Around a cycle of exact links, one turn exactly.** For a cycle of `m + 1` links each giving
+exactly its strength, the carried amount at the loop one turn after `t` is the product of the
+strengths times the carried amount at the loop at `t`, with what the loop itself held at `t + m`
+and the last strength times what the intermediate conditions held as the turn passed them,
+carried on. -/
+theorem carried_around_exact {F C : Type} {cs : List C} {part : F → Bool}
+    {σ : Nat → F → C → Nat} {k : Nat → F → C → Nat → C → Nat} {present : Nat → List F}
+    {δ : C → Nat} {v : Nat → C} {w : Nat → Nat} {m : Nat} {e : C} (start : v 0 = e)
+    (back : v (m + 1) = e) (exact : GivesExactly cs part σ k present v w (m + 1)) (t : Nat) :
+    carried cs part σ k present δ (t + (m + 1)) e =
+      Loops.product w (m + 1) * carried cs part σ k present δ t e +
+        (carried cs part σ k present δ (t + m) e +
+          w m * heldAlong w (fun i => carried cs part σ k present δ (t + i) (v (i + 1))) m) := by
+  have along : carried cs part σ k present δ (t + (m + 1)) (v (m + 1)) =
+      Loops.product w (m + 1) * carried cs part σ k present δ t (v 0) +
+        (carried cs part σ k present δ (t + m) (v (m + 1)) +
+          w m * heldAlong w (fun i => carried cs part σ k present δ (t + i) (v (i + 1))) m) :=
+    carried_along_exact exact t
+  rw [back, start] at along
+  exact along
+
+/-- **The turn is the return map's course with what the intermediate conditions give.** Around a
+cycle of exact links, the carried amount one turn after `t` is the return map's course after one
+turn, one plus the product of the strengths times the carried amount at `t`, with what the loop
+gained over the first `m` steps of the turn and what the intermediate conditions held, carried on
+to it by the last link. -/
+theorem carried_around_excess {F C : Type} {cs : List C} {part : F → Bool}
+    {σ : Nat → F → C → Nat} {k : Nat → F → C → Nat → C → Nat} {present : Nat → List F}
+    {δ : C → Nat} {v : Nat → C} {w : Nat → Nat} {m : Nat} {e : C} (start : v 0 = e)
+    (back : v (m + 1) = e) (exact : GivesExactly cs part σ k present v w (m + 1)) (t : Nat) :
+    carried cs part σ k present δ (t + (m + 1)) e =
+      (Law.run (returnMap (scaling [1 + Loops.product w (m + 1)]))
+          (carried cs part σ k present δ t e)).state 1 +
+        ((carried cs part σ k present δ (t + m) e - carried cs part σ k present δ t e) +
+          w m * heldAlong w (fun i => carried cs part σ k present δ (t + i) (v (i + 1))) m) := by
+  have turn := carried_around_exact (δ := δ) start back exact t
+  have grew : carried cs part σ k present δ t e +
+      (carried cs part σ k present δ (t + m) e - carried cs part σ k present δ t e) =
+      carried cs part σ k present δ (t + m) e :=
+    add_sub_of_le (carried_mono_steps (Nat.le_add_right t m) e)
+  have course : (Law.run (returnMap (scaling [1 + Loops.product w (m + 1)]))
+      (carried cs part σ k present δ t e)).state 1 =
+      carried cs part σ k present δ t e +
+        Loops.product w (m + 1) * carried cs part σ k present δ t e :=
+    Loops.one_add_mul _ _
+  have held : carried cs part σ k present δ (t + m) e +
+      w m * heldAlong w (fun i => carried cs part σ k present δ (t + i) (v (i + 1))) m =
+      carried cs part σ k present δ t e +
+        ((carried cs part σ k present δ (t + m) e - carried cs part σ k present δ t e) +
+          w m * heldAlong w (fun i => carried cs part σ k present δ (t + i) (v (i + 1))) m) :=
+    (congrArg (· + _) grew.symm).trans (Nat.add_assoc _ _ _)
+  exact turn.trans ((congrArg (_ + ·) held).trans ((Nat.add_assoc _ _ _).symm.trans
+    (congrArg (· + _) ((Nat.add_comm _ _).trans course.symm))))
+
+/-- **Exactly when a turn is the return map's course.** Around a cycle of exact links, the carried
+amount one turn after `t` is the return map's course after one turn exactly where the loop gained
+nothing over the first `m` steps of the turn and the last link carries on nothing the intermediate
+conditions held. -/
+theorem around_course_iff {F C : Type} {cs : List C} {part : F → Bool}
+    {σ : Nat → F → C → Nat} {k : Nat → F → C → Nat → C → Nat} {present : Nat → List F}
+    {δ : C → Nat} {v : Nat → C} {w : Nat → Nat} {m : Nat} {e : C} (start : v 0 = e)
+    (back : v (m + 1) = e) (exact : GivesExactly cs part σ k present v w (m + 1)) (t : Nat) :
+    carried cs part σ k present δ (t + (m + 1)) e =
+        (Law.run (returnMap (scaling [1 + Loops.product w (m + 1)]))
+          (carried cs part σ k present δ t e)).state 1 ↔
+      carried cs part σ k present δ (t + m) e = carried cs part σ k present δ t e ∧
+        w m * heldAlong w (fun i => carried cs part σ k present δ (t + i) (v (i + 1))) m = 0 := by
+  have turn := carried_around_excess (δ := δ) start back exact t
+  constructor
+  · intro same
+    have zero := Naturals.add_left_cancel (k := (Law.run (returnMap (scaling
+        [1 + Loops.product w (m + 1)])) (carried cs part σ k present δ t e)).state 1)
+      (turn.symm.trans ((same.trans (Nat.add_zero _).symm)))
+    have gained := Nat.eq_zero_of_add_eq_zero_right zero
+    have carriedOn := Nat.eq_zero_of_add_eq_zero_left zero
+    refine ⟨Nat.le_antisymm ?_ (carried_mono_steps (Nat.le_add_right t m) e), carriedOn⟩
+    exact Nat.le_trans (Nat.le_of_eq (add_sub_of_le (carried_mono_steps (Nat.le_add_right t m) e)).symm)
+      (Nat.le_of_eq ((congrArg (_ + ·) gained).trans (Nat.add_zero _)))
+  · intro ⟨kept, nothing⟩
+    rw [turn, nothing, kept, Nat.sub_self, Nat.add_zero, Nat.add_zero]
+
+/-! ## A ring: the bound is strict around every cycle of two or more conditions -/
+
+/-- **A ring.** Every listed condition receives, at every step and from any levels, exactly `w`
+times the current level of the condition before it (`pred`), and nothing else. -/
+def RingGives {F C : Type} (cs : List C) (part : F → Bool) (σ : Nat → F → C → Nat)
+    (k : Nat → F → C → Nat → C → Nat) (present : Nat → List F) (pred : C → C) (w : Nat) : Prop :=
+  ∀ t c, c ∈ cs → ∀ l : Nat → C → Nat,
+    total (present t) (fun h => carriedGive cs part σ k t h c l) = w * l t (pred c)
+
+/-- **Around a ring from an even start, a self-loop at every condition.** On a ring of strength
+`w` whose listed conditions all start at `D`, the carried amount at every listed condition after
+`t` steps is `(1 + w) ^ t * D`: each condition grows as a self-loop of strength `w` would, one
+turn a step, whatever the ring's length. -/
+theorem ring_even {F C : Type} {cs : List C} {part : F → Bool} {σ : Nat → F → C → Nat}
+    {k : Nat → F → C → Nat → C → Nat} {present : Nat → List F} {δ : C → Nat} {pred : C → C}
+    {w D : Nat} (ring : RingGives cs part σ k present pred w)
+    (closed : ∀ c, c ∈ cs → pred c ∈ cs) (start : ∀ c, c ∈ cs → δ c = D) :
+    ∀ t c, c ∈ cs → carried cs part σ k present δ t c = (1 + w) ^ t * D
+  | 0, c, mem => (start c mem).trans (Nat.one_mul D).symm
+  | t + 1, c, mem =>
+    (carried_succ t c).trans
+      ((Naturals.add_congr (ring_even ring closed start t c mem)
+          ((ring t c mem _).trans
+            (congrArg (w * ·) (ring_even ring closed start t (pred c) (closed c mem))))).trans
+        ((Loops.one_add_mul w _).symm.trans (Loops.mul_swap _ _ _).symm))
+
+/-- The product of `j` equal strengths is the strength to the power `j`. -/
+theorem product_const (w : Nat) : ∀ j, Loops.product (fun _ => w) j = w ^ j
+  | 0 => rfl
+  | j + 1 => congrArg (· * w) (product_const w j)
+
+/-- **One plus a power is below the power of one plus.** For a positive `w` and two or more
+factors, `1 + w ^ (n + 2) < (1 + w) ^ (n + 2)`. -/
+theorem one_add_pow_lt {w : Nat} (pos : 0 < w) (n : Nat) : 1 + w ^ (n + 2) < (1 + w) ^ (n + 2) :=
+  have above : 1 < (1 + w) ^ (n + 1) :=
+    Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right pos)
+      (Nat.le_trans (Nat.le_of_eq (Nat.one_mul (1 + w)).symm)
+        (Nat.pow_le_pow_right (Nat.lt_of_lt_of_le (Nat.succ_pos 0) (Nat.le_add_right 1 w))
+          (Nat.succ_le_succ (Nat.zero_le n))))
+  have power : w ^ (n + 1) * w ≤ (1 + w) ^ (n + 1) * w :=
+    Nat.mul_le_mul_right w (Nat.pow_le_pow_left (Nat.le_add_left w 1) (n + 1))
+  Nat.lt_of_lt_of_le (Nat.add_lt_add_of_lt_of_le above power)
+    (Nat.le_of_eq ((congrArg (· + (1 + w) ^ (n + 1) * w) (Nat.mul_one _).symm).trans
+      (Nat.left_distrib _ 1 w).symm))
+
+namespace Ring
+
+/-- The condition before `c` on the ring `0, 1, …, m`: `m` before `0`. -/
+def pred (m : Nat) : Nat → Nat
+  | 0 => m
+  | c + 1 => c
+
+/-- The conditions of the ring, `0, 1, …, m`. -/
+def conditions (m : Nat) : List Nat := steps 0 (m + 1)
+
+/-- Each condition receives `w` times the current level of the condition before it. -/
+def strengths (m w : Nat) : Nat → Unit → Nat → Nat → Nat → Nat :=
+  fun t _ c s d => if s = t ∧ d = pred m c then w else 0
+
+/-- The carried amount on the ring of `m + 1` conditions with strength `w`, every condition
+starting at `D`, one formation outside the part present at every step. -/
+def amount (m w D : Nat) : Nat → Nat → Nat :=
+  carried (conditions m) (fun _ => false) (fun _ _ _ => 0) (strengths m w) (fun _ => [()])
+    (fun _ => D)
+
+/-- The cycle `0, 1, …, m` and back to `0`. -/
+def cycle (m i : Nat) : Nat := if i ≤ m then i else 0
+
+theorem cycle_start (m : Nat) : cycle m 0 = 0 := if_pos (Nat.zero_le m)
+
+theorem cycle_back (m : Nat) : cycle m (m + 1) = 0 := if_neg (Nat.not_succ_le_self m)
+
+/-- Along the cycle, the condition before the next is this one. -/
+theorem pred_cycle {m i : Nat} (lt : i < m + 1) : pred m (cycle m (i + 1)) = cycle m i :=
+  have here : cycle m i = i := if_pos (Nat.le_of_lt_succ lt)
+  match Nat.decLe (i + 1) m with
+  | isTrue inside =>
+    (congrArg (pred m) (if_pos inside : cycle m (i + 1) = i + 1)).trans here.symm
+  | isFalse outside =>
+    (congrArg (pred m) (if_neg outside : cycle m (i + 1) = 0)).trans
+      ((Nat.le_antisymm (Nat.le_of_lt_succ (Nat.lt_of_not_le outside)) (Nat.le_of_lt_succ lt)).trans
+        here.symm)
+
+theorem pred_mem {m c : Nat} (_ : c ∈ conditions m) : pred m c ∈ conditions m :=
+  match c with
+  | 0 => Propagation.mem_steps_upto (Nat.le_refl m)
+  | c + 1 => Propagation.mem_steps_upto (Nat.le_of_succ_le (Propagation.le_of_mem_steps_upto ‹c + 1 ∈ conditions m›))
+
+theorem cycle_mem (m i : Nat) : cycle m i ∈ conditions m :=
+  match Nat.decLe i m with
+  | isTrue inside => Propagation.mem_steps_upto (Nat.le_trans (Nat.le_of_eq (if_pos inside : cycle m i = i)) inside)
+  | isFalse outside =>
+    Propagation.mem_steps_upto (Nat.le_trans (Nat.le_of_eq (if_neg outside : cycle m i = 0)) (Nat.zero_le m))
+
+/-- A total over a list without repetition of what is nothing except at a listed `a` is its value
+at `a`. -/
+theorem total_at {q : Nat → Nat} {a : Nat} {as : List Nat} (only : ∀ b, b ≠ a → q b = 0)
+    (mem : a ∈ as) (distinct : Distinct as) : total as q = q a :=
+  Nat.le_antisymm
+    (total_le_at (fun b pos =>
+        match Nat.decEq b a with
+        | isTrue same => same
+        | isFalse other =>
+          absurd pos fun lt =>
+            Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le lt (Nat.le_of_eq (only b other))))
+      distinct)
+    (le_total_of_mem mem)
+
+/-- **The ring gives exactly.** -/
+theorem gives (m w : Nat) :
+    RingGives (conditions m) (fun _ => false) (fun _ _ _ => 0) (strengths m w) (fun _ => [()])
+      (pred m) w :=
+  fun t c mem l =>
+    (Nat.add_zero _).trans
+      ((carriedGive_of_rest rfl).trans
+        ((Propagation.total_steps_at (q := fun s => total (conditions m) fun d =>
+            strengths m w t () c s d * l s d)
+          fun s other => total_eq_zero fun d _ =>
+            (congrArg (· * l s d) (if_neg fun both => other both.1)).trans (Nat.zero_mul _)).trans
+          ((total_at (q := fun d => strengths m w t () c t d * l t d)
+              (fun d other => (congrArg (· * l t d) (if_neg fun both => other both.2)).trans
+                (Nat.zero_mul _))
+              (pred_mem mem) (steps_distinct 0 (m + 1))).trans
+            (congrArg (· * l t (pred m c)) (if_pos ⟨rfl, rfl⟩)))))
+
+/-- **The ring is a cycle of `m + 1` couplings of strength `w`**, from `0` back to `0`. -/
+theorem coupled (m w : Nat) :
+    CoupledWith (conditions m) (fun _ => false) (strengths m w) (fun _ => [()]) (cycle m)
+      (fun _ => w) (m + 1) :=
+  fun i lt _ => ⟨(), .head [], rfl, cycle_mem m i,
+    Nat.le_of_eq (if_pos ⟨rfl, (pred_cycle lt).symm⟩).symm⟩
+
+/-- **Its links give exactly.** -/
+theorem givesExactly (m w : Nat) :
+    GivesExactly (conditions m) (fun _ => false) (fun _ _ _ => 0) (strengths m w) (fun _ => [()])
+      (cycle m) (fun _ => w) (m + 1) :=
+  fun i lt t l =>
+    (gives m w t (cycle m (i + 1)) (cycle_mem m (i + 1)) l).trans
+      (congrArg (fun x => w * l t x) (pred_cycle lt))
+
+/-- From an even start, every condition of the ring is at `(1 + w) ^ t * D` at step `t`. -/
+theorem amount_eq (m w D : Nat) : ∀ t c, c ∈ conditions m → amount m w D t c = (1 + w) ^ t * D :=
+  ring_even (gives m w) (fun _ mem => pred_mem mem) (fun _ _ => rfl)
+
+/-- **The bound around a cycle is strict for two or more conditions.** On the ring of `m + 2`
+conditions with a positive strength `w`, every condition starting at a positive `D`, the carried
+amount at `0` one turn on is above the return map's course after one turn,
+`carried_around_course`'s bound for this cycle: `(1 + w ^ (m + 2)) * D < (1 + w) ^ (m + 2) * D`. -/
+theorem exceeds_course (m : Nat) {w D : Nat} (pos : 0 < w) (posD : 0 < D) :
+    (Law.run (returnMap (scaling [1 + Loops.product (fun _ => w) (m + 2)]))
+        (amount (m + 1) w D 0 0)).state 1 < amount (m + 1) w D (0 + (m + 2) * 1) 0 :=
+  have bound : (Law.run (returnMap (scaling [1 + Loops.product (fun _ => w) (m + 2)]))
+      (amount (m + 1) w D 0 0)).state 1 = D * (1 + w ^ (m + 2)) :=
+    (congrArg (· * D) (congrArg (1 + ·) (product_const w (m + 2)))).trans (Nat.mul_comm _ D)
+  have turn : amount (m + 1) w D (0 + (m + 2) * 1) 0 = D * (1 + w) ^ (m + 2) :=
+    (congrArg (fun t => amount (m + 1) w D t 0) ((Nat.zero_add _).trans (Nat.mul_one _))).trans
+      ((amount_eq (m + 1) w D (m + 2) 0 (Propagation.mem_steps_upto (Nat.zero_le _))).trans (Nat.mul_comm _ D))
+  Nat.lt_of_le_of_lt (Nat.le_of_eq bound)
+    (Nat.lt_of_lt_of_le (Loops.mul_lt_mul_of_pos posD (one_add_pow_lt pos m))
+      (Nat.le_of_eq turn.symm))
+
+/-- **And the ring meets the bound's hypotheses**: the cycle from `0` back to `0` is coupled with
+strength `w` at every step, so `carried_around_course` applies, and is strict. -/
+theorem bound_strict (m : Nat) {w D : Nat} (pos : 0 < w) (posD : 0 < D) :
+    (Law.run (returnMap (scaling [1 + Loops.product (fun _ => w) (m + 2)]))
+        (amount (m + 1) w D 0 0)).state 1 ≤ amount (m + 1) w D (0 + (m + 2) * 1) 0 ∧
+      (Law.run (returnMap (scaling [1 + Loops.product (fun _ => w) (m + 2)]))
+        (amount (m + 1) w D 0 0)).state 1 ≠ amount (m + 1) w D (0 + (m + 2) * 1) 0 :=
+  ⟨carried_around_course (cycle_start (m + 1)) (cycle_back (m + 1)) (coupled (m + 1) w) 0 1,
+   Nat.ne_of_lt (exceeds_course m pos posD)⟩
+
+end Ring
+
+/-! ## A difference at one condition of `Becoming.Rejoining` as a return map
+
+`Becoming.Rejoining` reads the difference between the course with an act and the course without
+it at a condition as whether the two levels differ, and shows it changes only through a different
+exchange. Where the two courses' exchanges with the condition respond to the gap between them by
+a map `f`, the gap follows `f`'s course, one turn a step: it is a return map of this module. A
+response linear in the gap is a multiplying link; a response through a loop of links is that
+loop's return map. Without the premise the gap need not follow any return map: an act opens a
+difference from none, which no map of the gap does twice alike. -/
+
+/-- Adding the same amount to both leaves the gap. -/
+theorem gap_add_right (a b : Nat) : ∀ T, gap (a + T) (b + T) = gap a b
+  | 0 => rfl
+  | T + 1 => (Naturals.add_congr (Nat.succ_sub_succ _ _) (Nat.succ_sub_succ _ _)).trans
+      (gap_add_right a b T)
+
+/-- **The two courses' exchanges respond to the gap by `f`.** Across every step from `s`, the first
+course's level of `c` with what it gives `c` and what the second takes, against the second's with
+what it gives and what the first takes, has `f` of the gap before as its gap. -/
+def RespondsByReturn {F C : Type} (L L' : Flow F C) (W W' : Web F C) (c : C) (f : Nat → Nat)
+    (s : Nat) : Prop :=
+  ∀ t, s ≤ t →
+    gap (W.level t c + L.given t c + L'.taken t c) (W'.level t c + L'.given t c + L.taken t c) =
+      f (gap (W.level t c) (W'.level t c))
+
+/-- Across a step at which two flows balance on `c`, the gap after is the gap of the levels before
+with what each gives and the other takes. -/
+theorem gap_succ {F C : Type} {L L' : Flow F C} {W W' : Web F C} {c : C} {t : Nat}
+    (bal : L.BalancesOn W [c] t) (bal' : L'.BalancesOn W' [c] t) :
+    gap (W.level (t + 1) c) (W'.level (t + 1) c) =
+      gap (W.level t c + L.given t c + L'.taken t c) (W'.level t c + L'.given t c + L.taken t c) :=
+  have first : W.level (t + 1) c + (L.taken t c + L'.taken t c) =
+      W.level t c + L.given t c + L'.taken t c :=
+    (Nat.add_assoc _ _ _).symm.trans (congrArg (· + L'.taken t c) (bal c (.head [])))
+  have second : W'.level (t + 1) c + (L.taken t c + L'.taken t c) =
+      W'.level t c + L'.given t c + L.taken t c :=
+    (congrArg (W'.level (t + 1) c + ·) (Nat.add_comm _ _)).trans
+      ((Nat.add_assoc _ _ _).symm.trans (congrArg (· + L.taken t c) (bal' c (.head []))))
+  (gap_add_right _ _ _).symm.trans (Naturals.add_congr
+    (congr (congrArg HSub.hSub first) second) (congr (congrArg HSub.hSub second) first))
+
+/-- **Rejoining's gap follows a return map.** Where two flows balance on `c` and their exchanges
+respond to the gap by `f` from step `s`, the gap at `s + n` is the course of `f` from the gap at
+`s` after `n` turns, one turn a step. -/
+theorem gap_course {F C : Type} {L L' : Flow F C} {W W' : Web F C} {c : C} {f : Nat → Nat}
+    {s : Nat} (bal : ∀ t, L.BalancesOn W [c] t) (bal' : ∀ t, L'.BalancesOn W' [c] t)
+    (responds : RespondsByReturn L L' W W' c f s) :
+    ∀ n, gap (W.level (s + n) c) (W'.level (s + n) c) =
+      (Law.run f (gap (W.level s c) (W'.level s c))).state n
+  | 0 => rfl
+  | n + 1 => (gap_succ (bal (s + n)) (bal' (s + n))).trans
+      ((responds (s + n) (Nat.le_add_right s n)).trans (congrArg f (gap_course bal bal' responds n)))
+
+/-- **A response linear in the gap.** Where the response is a loop of multiplying links, the gap at
+`s + n` is the product of the factors to the `n` times the gap at `s`; so with product `0` it
+closes at the first step, with product `1` it is kept, and with product at least `2` it exceeds
+every bound from a positive gap (`whole_factors`). -/
+theorem gap_scaling {F C : Type} {L L' : Flow F C} {W W' : Web F C} {c : C} {as : List Nat}
+    {s : Nat} (bal : ∀ t, L.BalancesOn W [c] t) (bal' : ∀ t, L'.BalancesOn W' [c] t)
+    (responds : RespondsByReturn L L' W W' c (returnMap (scaling as)) s) (n : Nat) :
+    gap (W.level (s + n) c) (W'.level (s + n) c) = factor as ^ n * gap (W.level s c) (W'.level s c) :=
+  (gap_course bal bal' responds n).trans (orbit_scaling as _ n)
+
+/-- In `Becoming.Rejoining`'s witness, after the act the responder's exchange responds to the gap
+by taking one off. -/
+theorem replenishing_responds :
+    RespondsByReturn (Replenishing.flow true) (Replenishing.flow false) (Replenishing.web true)
+      (Replenishing.web false) Replenishing.Cond.held Nat.pred 1 :=
+  fun t le => match t, le with
+    | 1, _ => rfl
+    | _ + 2, _ => rfl
+
+/-- **So from the act on, the witness's gap is the course of taking one off**: `1`, then `0`. -/
+theorem replenishing_course (n : Nat) :
+    gap ((Replenishing.web true).level (1 + n) Replenishing.Cond.held)
+        ((Replenishing.web false).level (1 + n) Replenishing.Cond.held) =
+      (Law.run Nat.pred 1).state n :=
+  gap_course (fun t => (Replenishing.balances true).on [Replenishing.Cond.held] t)
+    (fun t => (Replenishing.balances false).on [Replenishing.Cond.held] t) replenishing_responds n
+
+/-- **Without the premise, no return map.** In the witness, from the start, the gap is `0`, `1`,
+`0`, `0`: the act opens a difference from none and the response closes it, so the gap is the
+course of no map from its start (a map sending `0` to `1` once would send it there again). -/
+theorem replenishing_no_return :
+    ¬ ∃ f : Nat → Nat, ∀ n,
+      gap ((Replenishing.web true).level n Replenishing.Cond.held)
+          ((Replenishing.web false).level n Replenishing.Cond.held) =
+        (Law.run f (gap ((Replenishing.web true).level 0 Replenishing.Cond.held)
+          ((Replenishing.web false).level 0 Replenishing.Cond.held))).state n :=
+  fun ⟨f, course⟩ =>
+    have opened : 1 = f 0 := course 1
+    have closed : 0 = f (f 0) := course 2
+    have stays : 0 = f (f (f 0)) := course 3
+    have back : f 1 = 0 := (congrArg f opened).trans closed.symm
+    absurd (stays.trans ((congrArg (fun x => f (f x)) opened.symm).trans
+      ((congrArg f back).trans opened.symm))) (by decide)
 
 end LoopReturn
 
