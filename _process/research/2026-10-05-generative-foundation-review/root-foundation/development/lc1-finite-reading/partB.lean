@@ -1,5 +1,5 @@
 
-/-! ## A part's merge, paid by the rest -/
+/-! ## A part's merge, kept by the rest -/
 
 namespace Law
 
@@ -58,14 +58,14 @@ theorem Lossless.keeps_apart {next : S → S} (lossless : Lossless next) {h : Na
     ∀ i j, i < j → j < k → orbit next (h i) n ≠ orbit next (h j) n :=
   fun i j lt below same => distinct i j lt below (lossless.cancel n same)
 
-/-- **A part's narrowing is paid by the rest.** Under a law that merges nothing, read every
+/-- **A part's narrowing is taken up by the rest.** Under a law that merges nothing, read every
 configuration by a part and a rest that together tell configurations apart. Of `k` possibilities
 no two alike, if `n` steps on their parts are held by `ps` and their rests by `es`, then `k` is at
 most `ps.length * es.length`: the possibilities are conserved, so where the part is narrowed to
 fewer configurations the rest must hold correspondingly more. Erasing a part of two
 configurations into one, from every rest of `e`, needs the rest to hold at least `2 e`: Landauer's
 count, with no energy, temperature or probability, from the law's merging nothing alone. -/
-theorem Lossless.narrowing_paid {next : S → S} (lossless : Lossless next) {part : S → P}
+theorem Lossless.narrowing_spreads {next : S → S} (lossless : Lossless next) {part : S → P}
     {rest : S → E} (tells : ∀ x y, part x = part y → rest x = rest y → x = y)
     {h : Nat → S} {k : Nat} (distinct : ∀ i j, i < j → j < k → h i ≠ h j) (n : Nat)
     {ps : List P} {es : List E} (inP : ∀ i, i < k → part (orbit next (h i) n) ∈ ps)
@@ -81,7 +81,7 @@ theorem Lossless.narrowing_floor {next : S → S} (lossless : Lossless next) {pa
     {h : Nat → S} {k : Nat} (distinct : ∀ i j, i < j → j < k → h i ≠ h j) (n : Nat)
     {ps : List P} (inP : ∀ i, i < k → part (orbit next (h i) n) ∈ ps) :
     ¬ ps.length * room.length < k :=
-  lossless.narrowing_paid tells distinct n inP (fun _ _ => finite _)
+  lossless.narrowing_spreads tells distinct n inP (fun _ _ => finite _)
 
 /-- **Resetting a part at every step needs an unbounded whole.** Where a law merges nothing and,
 after every step, a part reads one configuration `p`, then if any configuration has another part,
@@ -127,10 +127,10 @@ theorem rest_length (x : Bool × List Bool) : ∀ n, (Law.orbit next x n).2.leng
   | 0 => rfl
   | n + 1 => congrArg Nat.succ (rest_length x n)
 
-/-- **The part's merges paid by the rest.** The part merges at every step and the whole merges
+/-- **The part's merges kept by the rest.** The part merges at every step and the whole merges
 nothing; the rest of every run never repeats, so no list holds it, as `Law.Lossless.reset_unlisted`
 requires of every such law. -/
-theorem paid_by_rest :
+theorem kept_by_rest :
     Law.Lossless next ∧ (∀ x, (next x).1 = false) ∧ (next (true, [])).1 = (next (false, [])).1 ∧
     (∀ x, ¬ ∃ l : List (List Bool), ∀ n, (Law.orbit next x n).2 ∈ l) ∧
     ¬ ∃ all : List (Bool × List Bool), ∀ s, s ∈ all :=
