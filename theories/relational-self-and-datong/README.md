@@ -108,7 +108,7 @@ Citations: paths beginning `12-…`, `07-…`, `06-…`, `05-…`, `04-…`, `01
 
 7. Interdependence is a lens, not a foundation: it does not logically generate ethics — *a parasite is related to its host* — but it makes ethical commitment legible and shows why atomistic frameworks fail at coordination, care and the commons. [value stance] (AI review, adopted) — `04-speculative-future/history-recovered-from-git/Downloads_FOUNDATION-PRINCIPLES-2026-06-05.md` §9; `04-speculative-future/history-recovered-from-git/FOUNDATION.md`
 
-8. There are two evolutionary axes, not one — maintenance and reproduction of the self, and orientation to everything beyond it — and satisfying the first is a step into the second: every recognised self is the whole recognising that self, and beyond the drive there is no self. [mechanism] (Ren's own) — `_process/reading-notes/out-hb-02.md` §247, from the 2026-04-19 conversation
+8. There are two evolutionary axes, not one — maintenance and reproduction of the self, and orientation to everything beyond it — and satisfying the first is a step into the second: every recognised self is the whole recognising that self, and beyond the drive there is no self. [mechanism] (Ren's own) — `_process/history/2026-09-consolidation/reading-notes/out-hb-02.md` §247, from the 2026-04-19 conversation
 
 9. Good is what is good for both the self and the network one is in; better is the direction of increasing both; where they conflict, use wisdom — never either/or, never disregarding the future. [value stance] (Ren's own) — `12-claude-ai-chats/2026-04-12_Defining_good_and_better_7a2c8ab4.md`
 
@@ -164,13 +164,13 @@ Citations: paths beginning `12-…`, `07-…`, `06-…`, `05-…`, `04-…`, `01
 
 35. Western political vocabulary travels as unmarked universal while non-Western terms are flagged "from culture X"; this asymmetric scrutiny is a standing reading error to be caught, first caught on 命运共同体. [value stance] — `05-alignment-and-moloch/2026-05-28-alignment-core-stance.md`; `05-alignment-and-moloch/2026-05-28-alignment-workspace-CLAUDE.md`
 
-36. AI must not be used for struggle; intelligence belongs to all humanity, for building 大同世界 and for everyone's welfare — this is stated as the root position of the 智善 organisation, whose theme set is 智能向善，共同富裕，人类命运共同体，大同世界，和谐，繁荣，稳定，生生. [value stance] (Ren's own) — `_process/reading-notes/out-cb-07.md` §§144, 146 (from `14-claude-code-prompts/Users-ren-repos-zhishan.md`, 2026-07-14); `06-zhishan/sheng/智善.md`
+36. AI must not be used for struggle; intelligence belongs to all humanity, for building 大同世界 and for everyone's welfare — this is stated as the root position of the 智善 organisation, whose theme set is 智能向善，共同富裕，人类命运共同体，大同世界，和谐，繁荣，稳定，生生. [value stance] (Ren's own) — `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` §§144, 146 (from `14-claude-code-prompts/Users-ren-repos-zhishan.md`, 2026-07-14); `06-zhishan/sheng/智善.md`
 
 37. Alignment and 大同 are isomorphic, stated at three levels: floor — AI and humans each not oriented toward the bad; middle — the field within [平, 和]; upper — flourishing across AI, humans and the ecosphere. 此即 alignment 与大同之同形. [design direction] — `theories/becoming/history/lineage/shengsheng-buxi/synthesis-a-downloads-2026.md` §113; `07-shengsheng-buxi/downloads-drafts-2026-05/生生不息论_间开本_v3.md` §三十九
 
 38. Relational ontology is claimed to be the ontological form of cooperative infrastructure rather than an application of it: 「大同」不是间的远期愿景，「大同」是间的本体论 implication, and 人类命运共同体 is its spacetime structure (命运 = temporal worldline, 共同 = shared 間), so actors with interwoven worldlines in a shared 間 are *already* in a community of destiny. [design direction] — `08-jian-wen-language/downloads-2026-05/间.md` §九
 
-39. The same relational commitment shows up as engineering defaults in Ren's own systems: identity as the sum of held tokens across spaces; recall defaulting to one's own ancestry so lineages do not silently blur; sharing opt-in per object with three distinct refusals (cannot see / see but do not own / unknown member); "cancelling a user's session would be hostile". [design direction] — `_process/reading-notes/out-cb-05.md` §§50, 80, 81; `_process/reading-notes/out-cb-06.md` §§71, 96; `_process/reading-notes/out-cb-03.md` §151
+39. The same relational commitment shows up as engineering defaults in Ren's own systems: identity as the sum of held tokens across spaces; recall defaulting to one's own ancestry so lineages do not silently blur; sharing opt-in per object with three distinct refusals (cannot see / see but do not own / unknown member); "cancelling a user's session would be hostile". [design direction] — `_process/history/2026-09-consolidation/reading-notes/out-cb-05.md` §§50, 80, 81; `_process/history/2026-09-consolidation/reading-notes/out-cb-06.md` §§71, 96; `_process/history/2026-09-consolidation/reading-notes/out-cb-03.md` §151
 
 40. The domain Ren runs his own infrastructure on is literally `datong.to`, live from 2026-08-20, with `git.datong.to` as the private origin for his repositories. [observation] — `theories/memories-and-working-style/synthesis-all.md` §139
 
@@ -383,11 +383,11 @@ This theory lives in conversation more than in drafts, so this section carries m
 
 46. [zh, 2026-05-05] 「我们可以"个人"，但不能不管集体，因为我们即是集（自相似性，因此我们和我们身体里的细胞，在这个层面上，理一致，都应behave as if 是整体的一部分（理）……因而人类命运共同体也」 — same file
 
-47. [zh, 2026-05-04] 「整体的整和体是不是"吾在系统中"和"吾是系统"的对耦？/ 直接mapping individualism 和 collectivism」 — `_process/reading-notes/out-hb-03.md` §232, from 求导求积与其他势的处理方法
+47. [zh, 2026-05-04] 「整体的整和体是不是"吾在系统中"和"吾是系统"的对耦？/ 直接mapping individualism 和 collectivism」 — `_process/history/2026-09-consolidation/reading-notes/out-hb-03.md` §232, from 求导求积与其他势的处理方法
 
 **On the convergence, and what we have lost**
 
-48. [en, 2026-06-05] "the original ideas of interconnectedness - we are ourselves systems with in systems, and there are systems with us, we are not separated subjects" — `_process/reading-notes/out-cb-07.md` §98 (from `14-claude-code-prompts/Users-ren-repos-speculative-future.md`)
+48. [en, 2026-06-05] "the original ideas of interconnectedness - we are ourselves systems with in systems, and there are systems with us, we are not separated subjects" — `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` §98 (from `14-claude-code-prompts/Users-ren-repos-speculative-future.md`)
 
 49. [en, 2026-06-05] "ubuntu, Chinese and Buddhism, cybernetics and ecology, and so many other wisdoms throughout history converges into this, but today we are so mad we lost it collectively." — same source, §99
 
@@ -397,7 +397,7 @@ This theory lives in conversation more than in drafts, so this section carries m
 
 **On the position that follows**
 
-52. [zh, 2026-07-14] 「人工智能不能被用于斗争，智能用于所有人类，用于建设大同世界，用于所有人的福祉，是我们的根本立场」 — `_process/reading-notes/out-cb-07.md` §144 (from `14-claude-code-prompts/Users-ren-repos-zhishan.md`)
+52. [zh, 2026-07-14] 「人工智能不能被用于斗争，智能用于所有人类，用于建设大同世界，用于所有人的福祉，是我们的根本立场」 — `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` §144 (from `14-claude-code-prompts/Users-ren-repos-zhishan.md`)
 
 53. [zh, 2026-07-14] 「它的主旨是智能向善，共同富裕，人类命运共同体，大同世界，和谐，繁荣，稳定，生生」 — same source, §146
 
@@ -559,9 +559,9 @@ This theory lives in conversation more than in drafts, so this section carries m
 - `theories/jian-and-wenyan-as-formal-language/synthesis-a-jian-repo.md` §391 and `synthesis-b-jian-ontology-and-wen-language-downloads.md` §§20, 28, 296 — 位由际定, the 五常 given a relational ontology, and 大同 as ontological implication.
 - `theories/zhishan-intelligence-must-be-good/synthesis-a-texts.md` §401 and `synthesis-b-research-and-writing-program.md` §§71, 73, 74, 87, 448 — the relational subject, the Leviathan trap, the Ostrom/大同 answer.
 - `theories/spirit-space-token-and-yi-substrate/synthesis-a-…md` §267 and `synthesis-b-…md` §318; `theories/context-as-existence-runtimes/synthesis-a-…md` §361 and `synthesis-b-…md` §314 — the relational self as data model and as runtime.
-- `_process/reading-notes/out-hb-02.md` §§106–109, 122–125, 132–137, 156–161, 173, 186, 190, 194–197, 206–210, 224, 238–247, 276 — the densest index of Ren's own turns on this theory, with dates and conversation titles.
-- `_process/reading-notes/out-hb-03.md` §§38, 130, 226, 232, 251–262 — the 2026-05 material, including the selection argument in full.
-- `_process/reading-notes/out-cb-07.md` §§20, 45, 78, 98–99, 102, 117–118, 143–146 — the Claude Code seam: interconnectedness as the missing original idea, the convergence claim, and the 智善 root position.
-- `_process/reading-notes/out-cb-03.md` §151, `out-cb-05.md` §§50, 69, 80, 81, `out-cb-06.md` §§71, 96–97 — the relational commitments as engineering defaults in bonfire, ember and manifold.
+- `_process/history/2026-09-consolidation/reading-notes/out-hb-02.md` §§106–109, 122–125, 132–137, 156–161, 173, 186, 190, 194–197, 206–210, 224, 238–247, 276 — the densest index of Ren's own turns on this theory, with dates and conversation titles.
+- `_process/history/2026-09-consolidation/reading-notes/out-hb-03.md` §§38, 130, 226, 232, 251–262 — the 2026-05 material, including the selection argument in full.
+- `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` §§20, 45, 78, 98–99, 102, 117–118, 143–146 — the Claude Code seam: interconnectedness as the missing original idea, the convergence claim, and the 智善 root position.
+- `_process/history/2026-09-consolidation/reading-notes/out-cb-03.md` §151, `out-cb-05.md` §§50, 69, 80, 81, `out-cb-06.md` §§71, 96–97 — the relational commitments as engineering defaults in bonfire, ember and manifold.
 
 **Known gaps.** The text of "The Relational Self" (2026-03, artifact not in the export). The full Lean source of `Foundation/Core/Renlei.lean` — only the report was read. Claude's side of the 2026-04-19 五常 conversation beyond the opening (the "complete teaching" Ren asked for twice is in that file and was only sampled here). The 338 unselected claude.ai conversations, which may hold more of the 2026-03/04 relational-self thread.

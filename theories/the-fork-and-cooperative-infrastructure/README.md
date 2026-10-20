@@ -67,14 +67,14 @@ Ren's reply on method is a demonstration, not a document: "We already have this 
 
 Tags: [observation] [mechanism] [conditional] [prediction] [value stance] [design direction] [author thesis]. Historical claims retain their sources; the dated update distinguishes author thesis from demonstrated capability where noted.
 
-1. Better infrastructure is upstream of better coordination: what can be coordinated is bounded by what has been built. [mechanism] — `12-claude-ai-chats/` 2024-04-03 *Exploring Invisible Colleges*, via `_process/reading-notes/out-hb-01.md` #11
+1. Better infrastructure is upstream of better coordination: what can be coordinated is bounded by what has been built. [mechanism] — `12-claude-ai-chats/` 2024-04-03 *Exploring Invisible Colleges*, via `_process/history/2026-09-consolidation/reading-notes/out-hb-01.md` #11
 2. Automation that removes wage labour as the route to survival resources breaks the alignment that made people's existence supportable, so a transition to a new organizing narrative is not optional. [conditional] — 2024-04-16, `12-claude-ai-chats/2024-04-16_Balancing_AI_risks_and_opportunities_through_harmonious_coex_d0b9fc4a.md`
 3. The same automation can produce a UBI world, a Hayekian free-issuance world, an egalitarian society — 也有可能是1984 (or it could be 1984); the technology does not select among them. [observation] — same file
 4. The architecture that lets incompatible ideologies coexist is a shared substrate layer plus many societies built on it — capitalist, libertarian, socialist and others — rather than one settlement. [design direction] — 2024-07-31, `12-claude-ai-chats/2024-07-31_Embracing_Ideological_Diversity_in_Society_2692f31d.md`
 5. The infrastructure must be autonomous and survive its tenants: if the society you are in collapses, you can still start another with no strings attached. [design direction] — 2024-11-03, `12-claude-ai-chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md`
 6. Abundance is specified concretely, not as a philosophy: walk into a free 7-Eleven and take what you need; move into a community with no rent. [design direction] — same file
 7. On current trajectory the outcome is a cyberpunk dystopia or 新封建主义 (neo-feudalism), a few power-holders dominating while the majority lose autonomy — stated as the alternative to automation-provided universal abundance. [prediction] — 2025-03-14, `01-writings-2025/goodbot_cn.md`; English at `01-writings-2025/goodbot_4.md`
-8. Trust is an outcome of shared understanding, not a precondition for coordination — so the first task is teaching people how to see, not what is good. [mechanism] — 2025-03-14, `01-writings-2025/` good_bot cluster; `_process/reading-notes/out-hb-02.md` #46–47
+8. Trust is an outcome of shared understanding, not a precondition for coordination — so the first task is teaching people how to see, not what is good. [mechanism] — 2025-03-14, `01-writings-2025/` good_bot cluster; `_process/history/2026-09-consolidation/reading-notes/out-hb-02.md` #46–47
 9. Ren proposes recursive productive expansion: robots and complementary industrial systems build and maintain further productive capacity, with exponential growth possible when resources and the necessary supporting processes can sustain it. This is the mechanism offered for rapid abundance, not an observation of demonstrated complete industrial self-reproduction. [author thesis][conditional mechanism] — 2026-02-17 HUMAN 10:16, original conversation (private source, kept locally, not in the shared repository); [dated industrial evidence and limits](../../worldbuilding/research/2026-09-07-industrial-automation-evidence.md)
 10. Ren argues that current knowledge makes full automation a practical engineering program if people can coordinate to build it. Demonstrated components support beginning that program; sufficiency for every required capability and a complete autonomous supply network remain unverified. “Coordination, not physics” is the stronger programmatic framing, not a finding that physical, resource, reliability, and integration constraints are already resolved. [author thesis][design direction] — 2026-06-03 10:32, [original speculative-future prompt](../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md); [AI engineering evidence](../../worldbuilding/research/2026-09-07-ai-engineering-evidence.md); [source distinctions](../../worldbuilding/research/2026-09-07-abundance-source-reading.md)
 11. The civilizational fork: same technology, two fates — Automated Feudalism (robots produce abundance, access gated by ownership and platform power) or Automated Commons (robots produce abundance, institutions guarantee universal floors and broad agency); the deciding variable is institutional design. [conditional] — 2026-02-09, `12-claude-ai-chats/2026-02-09_Fully_automated_production_and_its_future_implications_38a64dc7.md` (projection Ren pasted and endorsed)
@@ -97,22 +97,22 @@ Tags: [observation] [mechanism] [conditional] [prediction] [value stance] [desig
 28. Abundance and free association are interdependent: abundance without free association is a comfortable zoo, free association without abundance is freedom to starve. [mechanism] — same
 29. The abundance layer is either a commons or a collar; if the winner of the race owns the robots that make everything, abundance becomes the most powerful instrument of dependence ever built. Governance of that layer is the whole game. [mechanism][value stance] — `thinking_03-the-cooperative-turn.md` §IV.2; principle 7
 30. "Common" is defined operationally as non-capturable in practice — access rules, auditability, local accountability, dispute resolution, exit rights, no unchecked power to convert the floor of life into dependence — and never by being called public, shared or benevolent. [design direction] — `04-speculative-future/current/FOUNDATION-PRINCIPLES-DRAFT.md` principle 7
-31. Provision must be decoupled from status, obedience, data surrender and single-provider attachment, or the floor re-encodes hierarchy: 丰裕若为门，即是最柔软的项圈 (if abundance is a gate, it is the softest collar). [design direction] — 2026-06-03, `_process/reading-notes/out-cb-07.md` #28; `06-zhishan/whitepaper/drafts/v0.2.md` §6.4
+31. Provision must be decoupled from status, obedience, data surrender and single-provider attachment, or the floor re-encodes hierarchy: 丰裕若为门，即是最柔软的项圈 (if abundance is a gate, it is the softest collar). [design direction] — 2026-06-03, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #28; `06-zhishan/whitepaper/drafts/v0.2.md` §6.4
 32. Capture has five marks — hidden, one-way, coercive, non-substitutable, irreversible — which is what makes "non-capturable" testable rather than rhetorical. Dependence as such is not the problem; captured dependence is. [mechanism] — `06-zhishan/whitepaper/drafts/v0.2.md` §2.2; `theories/keep-the-possibility-space-open/synthesis-all.md` §mechanism
 33. AI is the dual of its own threat: the capacity that breaks human-calibrated institutions — modelling minds, generating trust, managing supra-human complexity — is the same capacity that could run the assurance and coordination infrastructure a transition requires. [conditional] — `thinking_03-the-cooperative-turn.md` §IV.3
-34. AI is a planetary technology and must be governed as public-good intelligence infrastructure, not treated as a competitive weapon. [value stance] — 2026-06-04, `_process/reading-notes/out-cb-07.md` #53
-35. At sufficient technological power cooperation stops being optional and becomes the survival condition of civilization; "AI for all" is therefore the only stable equilibrium, not a kindness. [conditional] — 2026-06-04, `_process/reading-notes/out-cb-07.md` #64–65
-36. Some problems that must be solved cannot be solved while the dynamics remain competitive — a class statement about problems, not a case. [observation] — 2026-06-05, `_process/reading-notes/out-cb-07.md` #100
+34. AI is a planetary technology and must be governed as public-good intelligence infrastructure, not treated as a competitive weapon. [value stance] — 2026-06-04, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #53
+35. At sufficient technological power cooperation stops being optional and becomes the survival condition of civilization; "AI for all" is therefore the only stable equilibrium, not a kindness. [conditional] — 2026-06-04, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #64–65
+36. Some problems that must be solved cannot be solved while the dynamics remain competitive — a class statement about problems, not a case. [observation] — 2026-06-05, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #100
 37. Theory of change: deform the attractor landscape rather than wait for a perturbation; crisis is uncontrolled and you do not choose the basin you land in, so "only a crisis produces change" is both defeatist and bad systems thinking. [mechanism] — `04-speculative-future/history-recovered-from-git/thinking_04-theory-of-change.md` §II
 38. Intervene at the top of the leverage hierarchy — paradigm and who can see what — because that is available now, pre-crisis; "I can't find the path" is the signature of working there, not evidence of no path. [mechanism] — same
 39. Belief concretizes into institutions, money, property and infrastructure until the constructed *is* the territory, so perceptual change is necessary and insufficient: living proofs are structural, not rhetorical. 希望的单位不是口号，是地址 — the unit of hope is an address, not a slogan. [mechanism] — same §II; `06-zhishan/whitepaper/drafts/v0.2.md`
 40. The transition is the load-bearing unsolved problem: how a critical mass leaves the race without being eaten during the leaving. Assurance mechanisms, threshold dynamics and vision-as-common-knowledge are the named resources, none of them tested here. [open mechanism] — `thinking_03-the-cooperative-turn.md` §III; `04-speculative-future/current/FOUNDATION-PRINCIPLES-DRAFT.md` "The Frontier" 2
 41. Coordinated turn as programme: public commitment registry with shared thresholds, third-party verification and compute transparency that must not become surveillance, reciprocal arrangements with executable consequences, shared-benefit mechanisms, pause protocols, capability-building for latecomers — all aimed at making exit from the bad game safer and more attractive than staying. [design direction] — `06-zhishan/whitepaper/drafts/v0.3.md` 五(五)
-42. Defection cannot be eliminated; the design goal is that surrounding intelligence recognizes destabilizing behaviour and coordinates situational correction, with the test being systemic effect rather than doctrinal conformity. [design direction] — 2026-06-04, `_process/reading-notes/out-cb-07.md` #72–73
+42. Defection cannot be eliminated; the design goal is that surrounding intelligence recognizes destabilizing behaviour and coordinates situational correction, with the test being systemic effect rather than doctrinal conformity. [design direction] — 2026-06-04, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #72–73
 43. The anti-capture invariant is functional, not structural: no single point may capture and totalize the whole, and exit and voice must survive; centralized, decentralized and polycentric are means judged by dynamics, never ends. [value stance][mechanism] — `thinking_03-the-cooperative-turn.md` §V; `thinking_04-theory-of-change.md` §III
 44. Cooperation is not automatically good — cooperating on the wrong thing can be worse than competing on it — so the operative criterion is generative-versus-degenerative with wisdom about consequences, not cooperative-versus-competitive. [value stance] — 2026-04-16, `12-claude-ai-chats/2026-04-16_Recent_conversation_insights_96d77b9f.md`
 45. The Fork must not be read as a binary; the real possibility space runs from total annihilation to worlds of wonder, and the destination is plural by design. [value stance] — 2026-03-19, `12-claude-ai-chats/2026-03-18_Creating_aligned_AI_assistant_documentation_91317cf0.md`; 2026-05-28, `13-claude-memories/claude-code-alignment/project_user_framework.md`
-46. The engineering practice is the theory's own instantiation: the context system must be installable by anyone in the ecosystem and not only its authors; the substrate is maintained as one's own copy rather than rented; hosting is self-run under 大同 (`git.datong.to`); "anyone can define kinds" is the property that makes worlds worlds. [design direction] — `_process/reading-notes/out-cb-02.md` #69 and #108, `out-cb-06.md` #14, #20, #28; `theories/context-as-existence-runtimes/synthesis-a-context-runtime-and-gtc.md` §relations
+46. The engineering practice is the theory's own instantiation: the context system must be installable by anyone in the ecosystem and not only its authors; the substrate is maintained as one's own copy rather than rented; hosting is self-run under 大同 (`git.datong.to`); "anyone can define kinds" is the property that makes worlds worlds. [design direction] — `_process/history/2026-09-consolidation/reading-notes/out-cb-02.md` #69 and #108, `out-cb-06.md` #14, #20, #28; `theories/context-as-existence-runtimes/synthesis-a-context-runtime-and-gtc.md` §relations
 
 *Added 2026-10-02, from the conversation with Alex (`drafts/2026-10-02-friend-conversation/transcript.md`; automatic transcript, Ren provisionally Speaker B; timestamps in brackets).*
 
@@ -135,13 +135,13 @@ Tags: [observation] [mechanism] [conditional] [prediction] [value stance] [desig
 | abundance floor / abundance layer | 物质底座 | floor of freedom; basic abundance layer; universal basic services; seed abundance unit | 2024-11-03 `12-claude-ai-chats/2024-11-03_Autonomous_Infrastructure…md` | Necessities driven toward zero cost so that leaving is materially possible |
 | commons or collar | 丰裕若为门，即是最柔软的项圈 | liberation or dependence; the strongest collar ever built | 2026-06 `04-speculative-future/history-recovered-from-git/thinking_03-the-cooperative-turn.md` §IV.2 | The ownership question of the abundance layer, stated as an exclusive disjunction |
 | exit | 退出权 | safe exit; opt-out; "make the old system optional"; no strings attached | 2024-07-31 / 2024-11-03 | The real, affordable ability to leave any arrangement without losing the means of life |
-| free association | — | "association is free, exit is always an option" | 2026-06-03, `_process/reading-notes/out-cb-07.md` #29 | Joining, leaving, building and belonging without coercive dependence |
+| free association | — | "association is free, exit is always an option" | 2026-06-03, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #29 | Joining, leaving, building and belonging without coercive dependence |
 | the one rule | 不能让ai与人博弈 | "Stop using AI to compete with other people. Use it only to build commons that benefit all"; the One Rule | 2026-02-09 | The single enforced norm proposed as minimal viable global coordination |
 | the transition problem | 协同转向 | the assurance problem; the crux; the first cooperative enclave | 2026-06 `thinking_03-the-cooperative-turn.md` §III | How a critical mass leaves the race without being eaten while leaving |
 | hold the window | — | "keep the window open long enough for the good future to become buildable" | 2026-01 `02-wamotopia/transcripts/2026-01-note-chiangmai-festival-talk.txt` | Keeping advanced intelligence out of human-vs-human games long enough to build the automated layer |
 | landscape deformation | — | act before the crisis; "a crisis is a fork not a dawn" | 2026-06 `thinking_04-theory-of-change.md` §II | Changing parameters and feedback so the current basin shoals, rather than waiting for a shock |
 | living proof | 样本；地址 | demonstration; prototype zone; "希望的单位不是口号，是地址" | 2026-02-09; zh 2026-07 | A real, joinable instance of a different system-goal |
-| planetary technology | 行星技术 | public-good / common-benefit intelligence infrastructure | 2026-06-04, `_process/reading-notes/out-cb-07.md` #53 | AI as infrastructure of the whole rather than a party to human games |
+| planetary technology | 行星技术 | public-good / common-benefit intelligence infrastructure | 2026-06-04, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #53 | AI as infrastructure of the whole rather than a party to human games |
 | Bonfire | — | the position with a name; the community protocol | 2026-03-25 (naming) / 2026-04-16 (protocol) `12-claude-ai-chats/2026-04-16_Recent_conversation_insights_96d77b9f.md` | The name Ren gives the position and the community holding it, after retiring "the Fork" |
 
 ## Genealogy
@@ -191,7 +191,7 @@ This theory lives in conversation more than in drafts, so this is the longest se
 
 **2024-11-04 (en)** — the pivot from diagnosis to construction, asked bluntly:
 > "we now have these knowledge, can we find solution to metacrisis?"
-> — `12-claude-ai-chats/`, *The Dangers of Unchecked Power Optimization*, via `_process/reading-notes/out-hb-02.md` #18
+> — `12-claude-ai-chats/`, *The Dangers of Unchecked Power Optimization*, via `_process/history/2026-09-consolidation/reading-notes/out-hb-02.md` #18
 
 **2025-03-14 (zh)** — the fork, before its name:
 > 我们正处在一个技术高度发达、但社会结构仍然落后的时代。如果我们能改变思维方式，我们就有机会创造一个每个人都能享受更大自由、每个人都可以摆脱剥削、而所有基本需求都可以通过自动化满足的社会。但如果我们不行动，情况可能会朝着相反的方向发展。我们可能会进入一个赛博朋克式的反乌托邦，甚至是新封建主义，少数掌权者主宰一切，而大多数人失去自主权。
@@ -200,7 +200,7 @@ This theory lives in conversation more than in drafts, so this is the longest se
 
 **2025-03-14 (en)** — the epistemic precondition:
 > "Trust is not a prerequisite—it is an outcome. It arises only when we have a shared understanding of reality and can reasonably expect others to act accordingly."
-> — `01-writings-2025/` good_bot cluster, via `_process/reading-notes/out-hb-02.md` #46
+> — `01-writings-2025/` good_bot cluster, via `_process/history/2026-09-consolidation/reading-notes/out-hb-02.md` #46
 
 **2026-01 (en, spoken)** — hold the window:
 > "It would be a good idea to not use AI for competition, but use it for the benefits for all, as long as we don't get more advanced intelligence to involve our game of competition, we will at least be able to hold the current system, the current market and society for long enough, maybe a decade or two, or even longer, so that we can have a fully automated layer that becomes the new infrastructure and the foundation of our… humanity oriented life and freedom, and that is what we really need to think about today"
@@ -305,45 +305,45 @@ This theory lives in conversation more than in drafts, so this is the longest se
 
 **2026-06-03 (en)** — the constraint, and the destigmatization clause:
 > "today, we, in theory, can already build factories that build robots that can build more factories that build robots... this is no longer a technological impossibility, but practical engineering projects - if we can coordinate on them… create a layer that provide basic abundance on necessities - basic nice food, good places to live, to travel, to maintain hygiene and social status - frees us from exploitation… using these free things are simply a choice, not forced, for example, dressing free stuff does not make you socially inferior, but a choice."
-> — `14-claude-code-prompts/` speculative-future, via `_process/reading-notes/out-cb-07.md` #25–28
+> — `14-claude-code-prompts/` speculative-future, via `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #25–28
 
 **2026-06-03 (en)** — the coordination failure named as avoidable:
 > "it is clear that we are in a global coordination failure right now. AI arms race should have never happened, and this crazy acceleration also should never happened."
-> — same, `_process/reading-notes/out-cb-07.md` #37
+> — same, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #37
 
 **2026-06-03 (en)** — anti-inevitability, in five words:
 > "But it is clear if we don't build these things, they will not happen."
-> — same, `_process/reading-notes/out-cb-07.md` #39
+> — same, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #39
 
 **2026-06-03 (en)** — the honest account of his own leverage:
 > "right now we are in arms race, I don't have the power to stop it right away, nor does anyone else unfortunately, so tragedy will happen, peoples life will be affected, meaning will get destroyed, and market will crash. Then people will start to wake up, learn the lesson, start to look for ways to change, and for me, I think that will happen in the next year or two, I am preparing for that."
-> — same, `_process/reading-notes/out-cb-07.md` #48–49
+> — same, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #48–49
 
 **2026-06-04 (en)** — the equilibrium claim:
 > "At sufficient technological power, cooperation stops being optional. It becomes the survival condition of civilization." / "'Benefit of all' is not sentimental — it is game-theoretic." / "So 'AI for all' is not just kindness. It is the only stable equilibrium."
-> — same, `_process/reading-notes/out-cb-07.md` #62–65
+> — same, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #62–65
 
 **2026-06-04 (en)** — the book-line:
 > "Life was never meant to be won. It was meant to be shared. AI must not become the final weapon in the game of winning; it must become the first infrastructure of a civilization that no longer needs to win against itself."
-> — same, `_process/reading-notes/out-cb-07.md` #66
+> — same, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #66
 
 **2026-06-04 (en)** — means and ends, corrected against the draft:
 > "why does intelligence needs to be alway distributed? these are means, not ends" / "'we do not want a guardian strong enough to stop every defector', why if something like this can work? can't some of the systems have guardians that are strong and some try other ways?"
-> — same, `_process/reading-notes/out-cb-07.md` #84–85
+> — same, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #84–85
 
 **2026-06-05 (en)** — the class statement:
 > "there are problems that has to be solved that can not be solved if the dynamics is competitive"
-> — same, `_process/reading-notes/out-cb-07.md` #100
+> — same, `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #100
 
 **2026-07-03 (zh)** — the rational solution, stated last and most plainly:
 > 我认为最理性的solution，是禁止在当下的情况下让ai进入人类博弈，同时寻找解决方式
 > (I think the most rational solution is to forbid, under present conditions, letting AI enter human games, while searching for a solution in parallel.)
-> — `06-zhishan/`, via `_process/reading-notes/out-cb-07.md` #107
+> — `06-zhishan/`, via `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` #107
 
 **2026-09-01 (zh)** — the same commitment at the size he can actually execute:
 > manifold是fork的dsh，和deepseekai没有关系，但想尽可能的leverage dsh的updates，同时保证自身结构的完整优雅，保证codebase的可持续性
 > (manifold is a fork of dsh with no relationship to DeepSeek AI, but wants to leverage dsh's updates as far as possible while keeping its own structure complete and elegant and the codebase sustainable.)
-> — `14-claude-code-prompts/` manifold, via `_process/reading-notes/out-cb-06.md` #28
+> — `14-claude-code-prompts/` manifold, via `_process/history/2026-09-consolidation/reading-notes/out-cb-06.md` #28
 
 **2026-10-02 (en, spoken)** — the provision layer, to Alex (automatic transcript; Ren provisionally Speaker B):
 > "And we create infrastructures to make those possible. And those infrastructures will be fully autonomous. They don't have to be A_I_ that being trained every year and becomes like more sophisticated, more capable or bigger. They just need to be good enough so we all be like oh it's good. And turn those things into autonomous infrastructures like trees. Trees are providers."
@@ -440,12 +440,12 @@ This theory lives in conversation more than in drafts, so this is the longest se
 - `sources/13-claude-memories/claude-code-alignment/project_user_framework.md` — the 2026-05-28 correction: the Fork is not binary, "the future is hard to predict"; plus the open thread "does AI make Ostrom-style commons governance tractable at civilizational scale for the first time?"
 
 **Engineering instantiation.**
-- `_process/reading-notes/out-cb-02.md` (#68–69), `out-cb-03.md` (#43, #68–86), `out-cb-05.md` (#105, #125–126), `out-cb-06.md` (#3, #14, #20, #24, #28, #33) — the commons-side design rules in Ren's own repositories: ecosystem-installable plugins, own-your-substrate, self-hosting under `datong.to`, boundary and membership invariants, sharing that refuses rather than moving raw trust.
+- `_process/history/2026-09-consolidation/reading-notes/out-cb-02.md` (#68–69), `out-cb-03.md` (#43, #68–86), `out-cb-05.md` (#105, #125–126), `out-cb-06.md` (#3, #14, #20, #24, #28, #33) — the commons-side design rules in Ren's own repositories: ecosystem-installable plugins, own-your-substrate, self-hosting under `datong.to`, boundary and membership invariants, sharing that refuses rather than moving raw trust.
 
 **Reading notes that index this theory's material.**
-- `_process/reading-notes/out-hb-01.md` — items 11, 23, 26, 86, 128, 141, 153, 156, 157 (2024).
-- `_process/reading-notes/out-hb-02.md` — items 18, 42, 45–47, 51, 72, 74, 76–77, 81, 83, 88, 98, 100–105, 114, 120, 138, 152–154, 162, 201, 231–232 (2024-11 → 2026-04); recurring-preoccupations section on the Fork's naming and abandonment.
-- `_process/reading-notes/out-cb-07.md` — items 18, 25–28, 35–37, 65–66, 100, 138 (2026-06 speculative-future; 2026-07 zhishan).
+- `_process/history/2026-09-consolidation/reading-notes/out-hb-01.md` — items 11, 23, 26, 86, 128, 141, 153, 156, 157 (2024).
+- `_process/history/2026-09-consolidation/reading-notes/out-hb-02.md` — items 18, 42, 45–47, 51, 72, 74, 76–77, 81, 83, 88, 98, 100–105, 114, 120, 138, 152–154, 162, 201, 231–232 (2024-11 → 2026-04); recurring-preoccupations section on the Fork's naming and abandonment.
+- `_process/history/2026-09-consolidation/reading-notes/out-cb-07.md` — items 18, 25–28, 35–37, 65–66, 100, 138 (2026-06 speculative-future; 2026-07 zhishan).
 
 **Syntheses that carry parts of it.**
 - `theories/keep-the-possibility-space-open/synthesis-all.md` — claim 57 and the mechanism section on exit-plus-abundance; the terms table entries for capture, abundance floor and commons-or-collar.

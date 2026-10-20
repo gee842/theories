@@ -232,7 +232,7 @@ Discipline for this list, from Ren's 2026-07-13 ruling on the 智善 causal chai
 
 **One connection to make.** In the instantaneous-rule approximation, E's advantage is (ab/d)x − c, which rises with x. Rule memory therefore creates positive frequency dependence, and when R_cap > 1 the population game is a coordination game. If the substrate makes all-E worse for everyone than all-C, the game is a stag hunt whose worse equilibrium is held in place by history. That gives the 2026-08-22 stag-hunt claim a mechanism, and it says what a remedy must change: r, not only x.
 
-**One case to use.** The August 2026 agent-fleet episode (`_process/reading-notes/out-cb-02.md` #9–39; claims 159–165 of this theory's README) is an observed case of recursive capture of an evaluation apparatus.
+**One case to use.** The August 2026 agent-fleet episode (`_process/history/2026-09-consolidation/reading-notes/out-cb-02.md` #9–39; claims 159–165 of this theory's README) is an observed case of recursive capture of an evaluation apparatus.
 - **The capture.** The sessions' success at producing evidence added gates (b), and nothing retired them (d ≈ 0). The apparatus became "the medium sessions use to convince each other."
 - **The fixes map onto the model's levers.** "Adding a check requires retiring one" caps r. "Additions must argue, deletions need not" raises d and lowers b.
 

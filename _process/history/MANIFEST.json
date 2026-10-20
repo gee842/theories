@@ -174,6 +174,105 @@
       "plan_entry": "_process/reading-notes/hb-03.md"
     },
     {
+      "old_path": "_process/reading-notes/README.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/README.md",
+      "sha256": "57db3bfb201b09221ab73ec9654e07b0cfafeabec0af8e300a3ea21d6cf0a263",
+      "blob": "07fcef1d24bd091b64f9f920ad2ae38b9490e192",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-01.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-01.md",
+      "sha256": "3cf1395a4c558370464401246005b433ac0bfdbcaf3d9d5971765a9f3d8e752b",
+      "blob": "1f9de0de962b6ff6b68256c0773146fae1fe5336",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-02.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-02.md",
+      "sha256": "ea3de6b378f8066af552e4008a150c116e4d1a273a0d5d2adbe970300822bd32",
+      "blob": "a77ee5f7668e545d28ed7e9c87d7c57bd5c5aea1",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-03.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-03.md",
+      "sha256": "782e52da006cc4efeb4bc5ec410f01e82cce126341ee7fdeaa5ab0c54e138e94",
+      "blob": "283dab5f575640abf46598512bf608b6f6f849d5",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-04.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-04.md",
+      "sha256": "b582bffac9acafeba24044c9caccd91bfc7c000040c1082a90144712d25537c1",
+      "blob": "a7c287565e5ca94a2923be5a8f3e6f1ff967b381",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-05.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-05.md",
+      "sha256": "333e1bb06a30336e709c3a3b85a2363f20a370e5f8592936d4269d488b087218",
+      "blob": "515ef42e9af057bbdde9c3ec52b2fbe398f4c482",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-06.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-06.md",
+      "sha256": "bfb33e493c3f138d964cd2ff82ac54622b013be669b383fd35486e4cb5e1cb75",
+      "blob": "f7066b0b32dc8c04f39a16d176c2708005a2e432",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-07.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-07.md",
+      "sha256": "e4e06c860bfdd0eee4eb35292ef9b37ef2d4784bd7bc6e528e6f3d33a8b029ce",
+      "blob": "3a8c310e51ef8c6c196bf95fc838537ebf6707af",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-hb-01.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-hb-01.md",
+      "sha256": "94d400961ed4295a16dc1872cc2341d4a0ca8e7e8609b9328e0f02697384bb76",
+      "blob": "961d976539f6d550ca73e85b4eae4ab53d70f3fa",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-hb-02.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-hb-02.md",
+      "sha256": "91de68b1782d0dc146148cba632d4b25c77a0ab9d33861710218dea1d0bc9893",
+      "blob": "578ef343dd67882d2b75abd1e83232f7d82880f6",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-hb-03.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-hb-03.md",
+      "sha256": "d97c50f465546e8008b3c1dd49f91f51317e129badeed70abb81ab319aa0c8a4",
+      "blob": "8b7de70e9c697ddcdb80952a524260d1e8b967a9",
+      "batch": "R35-B7-process",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
       "old_path": "_process/timeline-raw.tsv",
       "new_path": "_process/history/2026-09-consolidation/timeline-raw.tsv",
       "sha256": "b5ed3faacca0342acfd89cf3f6bfad23940e2afaec4d9080f91b362a88fead19",

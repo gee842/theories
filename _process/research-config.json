@@ -195,7 +195,8 @@
   "move_rewrite_extra": [],
   "move_rewrite_markdown_mentions": true,
   "move_mentions_exclude": [
-    "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/**"
+    "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/**",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/twentieth-review/**"
   ],
   "secrets_allowlist": [
     {

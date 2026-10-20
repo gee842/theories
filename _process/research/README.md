@@ -78,7 +78,7 @@ Studies retired as a whole are under [`_process/history/`](../history/):
 
 | Retired folder | Files |
 |---|---:|
-| `2026-09-consolidation/` | 20 |
+| `2026-09-consolidation/` | 31 |
 | `2026-10-04-integrated-evolution/` | 58 |
 | `2026-10-05-causal-foundations/` | 13 |
 | `2026-10-05-direction-frontier/` | 14 |

@@ -66,7 +66,7 @@ So that nothing here is redone: scale-explicit 开度 and the cancer counterexam
 
 - The title line 它在开路，还是在据门？ is the closing test of the 2026-07-08 manifesto draft, written to Ren's ruling of 2026-07-07. Its earliest occurrences found are `sources/06-zhishan/writing-program/plans/foundation.md` line 317 (「留下一问：它在开路，还是在据门？」), `writing-program/drafts/baseline/zh-main.md` line 356, and `manifesto/drafts/draft-1.md`; all are writing-program files drafted from Ren's rulings, and whether Ren typed the sentence has not been verified against a session transcript. Treat it exactly as the "Do not close the world" line was treated until it is: adopted, not yet confirmed as authored.
 - AI-drafted formulations quoted in the essay, all marked in place: 使生命必须过门，然后拥有那扇门; 无知而据门，是愚；明知而精炼，是恶; 繁简非开闭之标; 善不在于最大化什么，善在于不闭何处; 丰裕若为门，即是最柔软的项圈; 希望的单位不是口号，是地址; the v2 plan's dominator concession; "we have no model that guarantees such a defense stands down"; "Ember preserves my autobiography much better than it protects my agency."
-- Everything else in quotation marks is Ren, verbatim, dated, typos kept, taken from the *In Ren's own words* sections of the theory READMEs and traceable through `_process/reading-notes/`.
+- Everything else in quotation marks is Ren, verbatim, dated, typos kept, taken from the *In Ren's own words* sections of the theory READMEs and traceable through `_process/history/2026-09-consolidation/reading-notes/`.
 
 ## What must not happen in the writing
 

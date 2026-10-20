@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "batch": "R35-B7-process",
+  "date": "2026-10-20T01:48:27+00:00",
+  "base_commit": "815af1a84175eaf980f14bdadaf644371819d483",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "_process/reading-notes/README.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/README.md",
+      "sha256": "57db3bfb201b09221ab73ec9654e07b0cfafeabec0af8e300a3ea21d6cf0a263",
+      "blob": "07fcef1d24bd091b64f9f920ad2ae38b9490e192",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-01.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-01.md",
+      "sha256": "3cf1395a4c558370464401246005b433ac0bfdbcaf3d9d5971765a9f3d8e752b",
+      "blob": "1f9de0de962b6ff6b68256c0773146fae1fe5336",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-02.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-02.md",
+      "sha256": "ea3de6b378f8066af552e4008a150c116e4d1a273a0d5d2adbe970300822bd32",
+      "blob": "a77ee5f7668e545d28ed7e9c87d7c57bd5c5aea1",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-03.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-03.md",
+      "sha256": "782e52da006cc4efeb4bc5ec410f01e82cce126341ee7fdeaa5ab0c54e138e94",
+      "blob": "283dab5f575640abf46598512bf608b6f6f849d5",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-04.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-04.md",
+      "sha256": "b582bffac9acafeba24044c9caccd91bfc7c000040c1082a90144712d25537c1",
+      "blob": "a7c287565e5ca94a2923be5a8f3e6f1ff967b381",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-05.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-05.md",
+      "sha256": "333e1bb06a30336e709c3a3b85a2363f20a370e5f8592936d4269d488b087218",
+      "blob": "515ef42e9af057bbdde9c3ec52b2fbe398f4c482",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-06.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-06.md",
+      "sha256": "bfb33e493c3f138d964cd2ff82ac54622b013be669b383fd35486e4cb5e1cb75",
+      "blob": "f7066b0b32dc8c04f39a16d176c2708005a2e432",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-cb-07.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-cb-07.md",
+      "sha256": "e4e06c860bfdd0eee4eb35292ef9b37ef2d4784bd7bc6e528e6f3d33a8b029ce",
+      "blob": "3a8c310e51ef8c6c196bf95fc838537ebf6707af",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-hb-01.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-hb-01.md",
+      "sha256": "94d400961ed4295a16dc1872cc2341d4a0ca8e7e8609b9328e0f02697384bb76",
+      "blob": "961d976539f6d550ca73e85b4eae4ab53d70f3fa",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-hb-02.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-hb-02.md",
+      "sha256": "91de68b1782d0dc146148cba632d4b25c77a0ab9d33861710218dea1d0bc9893",
+      "blob": "578ef343dd67882d2b75abd1e83232f7d82880f6",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    },
+    {
+      "old_path": "_process/reading-notes/out-hb-03.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes/out-hb-03.md",
+      "sha256": "d97c50f465546e8008b3c1dd49f91f51317e129badeed70abb81ab319aa0c8a4",
+      "blob": "8b7de70e9c697ddcdb80952a524260d1e8b967a9",
+      "reason": "R35 (20 October 2026), batch B7: E11: 11 September notes; inputs already in history/2026-09-consolidation/reading-notes-inputs",
+      "plan_entry": "_process/reading-notes"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "old_sha256": "e043436008b4d438013017370fd092cb84ac8181e94c73fef25e4b46f4e93e3f",
+      "new_sha256": "75fee116ec006410ab9f97667b32efecbbb795d56b5ef8f0493ea24bb7ed75e0",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/twentieth-review/E-CORPUS.md",
+      "old_sha256": "e482ab4f026f9a5c1f061f716b2cf1118fbc58a81205f8c4339c108b89243e91",
+      "new_sha256": "db098e8ab42bce9b286392919d58ef1af4401563bdf759c7f3503c3badbb1068",
+      "references": 2
+    },
+    {
+      "path": "drafts/2026-09-04-one-work/STRUCTURE.md",
+      "old_sha256": "cf8213bda33be167238b564c263b329b0ecb71be0d3ff31211f27562ecf999f6",
+      "new_sha256": "fca939ecb163fd3124991bff3833feca54e243ff24a93773d051d0e680a72b8e",
+      "references": 1
+    },
+    {
+      "path": "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/DISCUSSION.md",
+      "old_sha256": "2fa71f7839b0f5347ac9a23acc1b75392d49b1d7bb8a40556291d1636190d369",
+      "new_sha256": "d4c6272a7f5b4dad48522e6f7c7c820e3e002c346059d781ae4a635438c5f872",
+      "references": 2
+    },
+    {
+      "path": "theories/alignment-selection-on-cognition/README.md",
+      "old_sha256": "fbe8e4603a9293ad96c8cf9a6596960c6da2022051294d64e0dad4a3d0799b11",
+      "new_sha256": "fa750c848826d0ab93d8ad1955e6757accee5d57dcccae2ff86a1509e165684e",
+      "references": 89
+    },
+    {
+      "path": "theories/alignment-selection-on-cognition/review-2026-09-28-capability-outruns-correction/REVIEW.md",
+      "old_sha256": "5cabd72395d005d86c793a084175ec6f7e6149eb81900aee11ba3613a4a67137",
+      "new_sha256": "87f23dca75c092ca97ed872e03c2cbeefa74a98adac49c9b3a2f4c131035ff15",
+      "references": 1
+    },
+    {
+      "path": "theories/context-as-existence-runtimes/README.md",
+      "old_sha256": "89203ba25bbf4b6b26f5ecde7e7d119e1465fa08ffd42b3c7b0922865ecd162c",
+      "new_sha256": "c2ff34c5f30a925863b916651ef8d0015fffd5a7180d33d083cc2750989fea56",
+      "references": 4
+    },
+    {
+      "path": "theories/drives-narrative-attractors-and-mind/README.md",
+      "old_sha256": "c472a5be52d55cabff6bd541847bcc2efa3d936c5d27b3b8c80cd52190771e1f",
+      "new_sha256": "6fa3690dfeaf2a8d2295c63ab1b1f5e26a9aa638887e6c24ef45eaed074ac118",
+      "references": 4
+    },
+    {
+      "path": "theories/human-solutions-museum/README.md",
+      "old_sha256": "2e5da71d792b1685eca31895613b8ace9235547c2ba4867b25e1421c2656dc8f",
+      "new_sha256": "785bad48d1712df8219aa72a0417e5464f04ab289d3114dda786312327c66c06",
+      "references": 3
+    },
+    {
+      "path": "theories/jian-and-wenyan-as-formal-language/README.md",
+      "old_sha256": "1327f5c7bdf020be8cf2c5ea891792f5d6fef5e4fa4120c5fec53620f3a0680b",
+      "new_sha256": "eb8237f89d44c5c38dde63fcd49b2edb980905efca30495730a4f119ebcba954",
+      "references": 3
+    },
+    {
+      "path": "theories/keep-the-possibility-space-open/README.md",
+      "old_sha256": "77431031945238f85c63ecd70026214d057eeede87262adbe305b22db380df36",
+      "new_sha256": "b4ada6e640c7147636d8cd75cffae080dc95a7112f4c96bcf925f32edb1f0b7f",
+      "references": 110
+    },
+    {
+      "path": "theories/memories-and-working-style/README.md",
+      "old_sha256": "4fa8a925678487d499fdb47dc5bcef09816b816b17a22b54ca4bc06ddc404c9f",
+      "new_sha256": "7de379f96fceb519f2209d77d438a7e9530b612ef3b5b0cebe58e25e3a18bbd1",
+      "references": 9
+    },
+    {
+      "path": "theories/meta-attractor/README.md",
+      "old_sha256": "e680930d5983bf4e163b4b2c69b85dc017b6caf6d1c0fd35281d27fe5461567d",
+      "new_sha256": "2a1d3bbba23588840a0e1328c7b1837495746ff484fc3bf1d1b39f4b809cee50",
+      "references": 9
+    },
+    {
+      "path": "theories/relational-self-and-datong/README.md",
+      "old_sha256": "44729a193c378e826adfd6b632824adb56fcb285a72cac891a5d6d45ce174b44",
+      "new_sha256": "13878d54ae90752b3f00f672d968776a5a7ee06af0b680616f3cb2b41c3c41c8",
+      "references": 12
+    },
+    {
+      "path": "theories/selfishness-spiral-and-narrative-value-frames/README.md",
+      "old_sha256": "361ca3847ac5bed1545010145a65e3555c0003c700fabad38befe3e66163b61f",
+      "new_sha256": "7163d93027ffcda87f02ba59f6f9c2dbcda25d4d068fa73893b84f62c1fabd07",
+      "references": 1
+    },
+    {
+      "path": "theories/spirit-space-token-and-yi-substrate/README.md",
+      "old_sha256": "73f66d9a2b3d36245415a2810ed68b43ec295b59edd3ffadf523e6ba288e7b25",
+      "new_sha256": "ae0d93a2f476bf19fb87ac3c78de57bae5dca8d806394ce554b03be8d0feeb3f",
+      "references": 1
+    },
+    {
+      "path": "theories/the-fork-and-cooperative-infrastructure/README.md",
+      "old_sha256": "162339717ff9eb07a21c933d68b3d727b17fbe0b9ba0f9cfc45c8decfd152def",
+      "new_sha256": "d17b296490483e67103ecf6dc2659758b2d629e9d6cdb9e9312814b2970a753d",
+      "references": 26
+    },
+    {
+      "path": "theories/wamotopia-and-the-wamo-protocol/README.md",
+      "old_sha256": "95ffc72cbe8a41f4cf14076bb0fdc5aac25daba95c088fa71a59cb31d3c31276",
+      "new_sha256": "5c5dc7a99b6e6c82b39c6fd8deadc3b922a643973ac563a0b572ee9dbc097d03",
+      "references": 8
+    },
+    {
+      "path": "theories/zhishan-intelligence-must-be-good/README.md",
+      "old_sha256": "8f713a9a635c3e2741a5ae8d51c3c405ab1d5689aceae3cb903a90f1043202b1",
+      "new_sha256": "c9498f4b3cae85a1e2c35f94966bb4bf48a2e1a256532c755ef2ee403c6628fa",
+      "references": 50
+    }
+  ],
+  "history_roots": [
+    "_process/history"
+  ],
+  "generated_pages_to_rerender": [
+    "DEPENDENCIES.md",
+    "GOALS.md",
+    "OPEN-QUESTIONS.md",
+    "README.md",
+    "RESEARCH.md",
+    "RESULTS.md",
+    "_process/BRIEF.md",
+    "_process/DIRECTIVE-INDEX.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INDEX.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "_process/research/README.md",
+    "theories/becoming/README.md",
+    "theories/becoming/chapters/CLAIMS.md",
+    "theories/becoming/chapters/README.md",
+    "theories/becoming/results/ARGUMENTS-A-L.md",
+    "theories/becoming/results/ARGUMENTS-M-Z.md",
+    "theories/becoming/results/LEAN-INDEX.md",
+    "theories/becoming/results/README.md",
+    "theories/becoming/results/RESULT-REGISTER.md",
+    "theories/becoming/results/ROADMAP.md",
+    "theories/becoming/results/data/source-index.json",
+    "theories/becoming/results/lean-declarations/abstraction.md",
+    "theories/becoming/results/lean-declarations/becoming-core.md",
+    "theories/becoming/results/lean-declarations/concern.md",
+    "theories/becoming/results/lean-declarations/core.md",
+    "theories/becoming/results/lean-declarations/ethics.md",
+    "theories/becoming/results/lean-declarations/inquiry.md",
+    "theories/becoming/results/lean-declarations/learning.md",
+    "theories/becoming/results/lean-declarations/other.md",
+    "theories/becoming/results/lean-declarations/renewal.md",
+    "theories/becoming/results/lean-declarations/shared.md",
+    "theories/becoming/results/lean-declarations/valuation.md",
+    "theories/becoming/results/records/context-sensitive-updating-correspondence.md",
+    "theories/becoming/results/records/contextual-registration.md",
+    "theories/becoming/results/records/encounter-control-and-retention.md",
+    "theories/becoming/results/records/formed-copying-correction.md",
+    "theories/becoming/results/records/formed-software-continuation.md",
+    "theories/becoming/results/records/joint-practice-forms-continuation.md",
+    "theories/becoming/results/records/naming-attention-coverage.md",
+    "theories/becoming/results/records/organizational-rule-inheritance.md",
+    "theories/becoming/results/records/registration-within-what-it-registers.md",
+    "theories/becoming/results/records/separation-loses-the-relation.md",
+    "theories/becoming/results/records/situated-recovery-empirical-correspondence.md",
+    "theories/becoming/results/records/the-split-that-makes-sense.md"
+  ],
+  "verification_errors": []
+}

@@ -104,7 +104,7 @@ The second reading is better supported by the texts, because the loss of the vio
 
 ## Claims
 
-Tags: [observation] [mechanism] [conditional] [prediction] [value stance] [design direction]. Sources cited relative to `/Users/ren/theories/sources/`; voice-note references are to `_process/reading-notes/`.
+Tags: [observation] [mechanism] [conditional] [prediction] [value stance] [design direction]. Sources cited relative to `/Users/ren/theories/sources/`; voice-note references are to `_process/history/2026-09-consolidation/reading-notes/`.
 
 **The research question the museum operationalizes**
 
@@ -358,7 +358,7 @@ The artifacts these documents describe — `data/museum-content.json`, `schemas/
 
 ### Verbatim, from his own messages (chats and Claude Code)
 
-These are Ren's typing hand, dated, from `sources/12-claude-ai-chats/` via the voice notes in `_process/reading-notes/`.
+These are Ren's typing hand, dated, from `sources/12-claude-ai-chats/` via the voice notes in `_process/history/2026-09-consolidation/reading-notes/`.
 
 1. [en] "multicellular organism, if treated as a system, successfully eliminated this pattern, can you explain why and how" — 2024-11-04, *The Dangers of Unchecked Power Optimization*. The museum's founding question.
 2. [en] "can you think of other systems that also prevented this pattern?" / "elaborate on Common Patterns Across These Systems" — 2024-11-04. The method in two moves.
@@ -487,7 +487,7 @@ All six files in `sources/11-human-solutions-museum/` were read in full for this
 - `11-human-solutions-museum/engineering-implementation-spec.md` — the engineering specification (1,126 lines): stack decision superseding the earlier static-file plan, prototype/public mode gate, directory and module boundaries, data contract and canonical sections, per-page specs, deferred search design, aesthetic system and CSS tokens, accessibility requirements, test and quality gates, seven implementation phases, definition of done, the post-completion review loop including adversarial review, migration triggers, nine engineering red lines. [AI-drafted from Ren's ideas]
 - `11-human-solutions-museum/agent.md` — agent working rules: the confirmation boundary with Ren's own Chinese discussion/execution trigger phrases, the git boundary, a recorded prior failure, the current project stage. [Ren-authored in substance; the Chinese trigger vocabulary is his]
 
-Chat and message sources carrying the research question (Ren's own turns; read via `_process/reading-notes/out-hb-02.md`, `out-hb-03.md`, `out-cb-02.md`, `out-cb-04.md`, `out-cb-06.md`, `out-cb-07.md`, and directly for the 奏折 conversation):
+Chat and message sources carrying the research question (Ren's own turns; read via `_process/history/2026-09-consolidation/reading-notes/out-hb-02.md`, `out-hb-03.md`, `out-cb-02.md`, `out-cb-04.md`, `out-cb-06.md`, `out-cb-07.md`, and directly for the 奏折 conversation):
 
 - `12-claude-ai-chats/2024-11-04_The_Dangers_of_Unchecked_Power_Accumulation_in_Complex_Syste_5706010d.md` — the multicellular question and the exception-hunting method.
 - `12-claude-ai-chats/2024-11-03_The_Dangers_of_Unchecked_Power_Accumulation_94a8c4cf.md` — the failure dynamic the question is asked against.

@@ -699,4 +699,4 @@ Read for this document. Paths relative to `sources/`.
 - `14-claude-code-prompts/Users-ren-repos-speculative-future.md` (2026-06-03 to 06-05) — the re-basing: three beliefs, dynamical objection, self-fulfilling gods, unilateral restraint, "the problem is not only bad people, it is the structure", and the four conditions on a good future. [Ren-authored]
 
 **Reading notes consulted**
-- `_process/reading-notes/out-hb-01.md` (2024-03 to 2024-11), `out-hb-02.md` (2024-11 to 2026-05), `out-cb-07.md` (2026-06 to 2026-09) — the tagged voice notes from which the 2024 and 2026 layers above were recovered.
+- `_process/history/2026-09-consolidation/reading-notes/out-hb-01.md` (2024-03 to 2024-11), `out-hb-02.md` (2024-11 to 2026-05), `out-cb-07.md` (2026-06 to 2026-09) — the tagged voice notes from which the 2024 and 2026 layers above were recovered.
