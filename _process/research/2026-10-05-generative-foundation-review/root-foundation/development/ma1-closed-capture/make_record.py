@@ -73,7 +73,7 @@ P = 'ClosedCapture.Proportional.'
 laws = [
     ('What the loop does not read does not change it: on Pace\'s two-level course with the fast configuration a pair, '
      'the share and what lies beyond it, where neither the next share nor the rule read reads what lies beyond (Unread), '
-     'courses from starts alike in share and rule stay alike in both at every step; courses that come apart read beyond '
+     'courses from starts alike in share and rule stay alike in both; courses that come apart read beyond '
      'the share; the share\'s law joined with a step beyond runs exactly as the share\'s law alone.',
      '回路不读的不改变它：在 Pace 的两速历程上，快构形为一对，即份额与份额之外者；下一份额与读出的规则都不读份额之外者时（Unread），'
      '份额与规则相同的起点，其进程每一步在两者上都相同；分开了的进程读份额之外者；带份额之外一步的合并之律与份额自身之律同样运行。',
@@ -92,9 +92,9 @@ laws = [
      '在行的规则不偏向，所以进程在那里不锁定，不论份额如何。',
      [C + 'turned_by_loss']),
     ('The reading read from the share: where how the rule is read is formed from the share at the reading step (mind) and '
-     'the rule read from the share through it (read), monotonically, the rule and its reading are one rule read from the '
+     'the rule read from the share through it (read), monotonically, rule and reading are one rule read from the '
      'share in the order of pairs; locked, none of share, rule and reading falls below where it was; a change of the '
-     'reading, any size, either way, the rule still favouring, is absorbed at the next reading step.',
+     'reading, either way, the rule still favouring, is absorbed at the next reading step.',
      '从份额读出的读法：规则怎样被读在读取步由份额形成（mind），规则经由它从份额读出（read），且都单调时，规则与其读法在对的序中'
      '合为一个从份额读出的规则；锁定时份额、规则与读法都不低于曾在之处；读法的改变，不论大小与方向，只要规则仍偏向，在下一读取步被吸收。',
      [C + 'both', C + 'readers', C + 'byRule', C + 'both_reads', C + 'byRule_raises', C + 'both_upper',
@@ -107,7 +107,7 @@ laws = [
      [C + 'readers_uniform_locks']),
     ('Witnesses: carriers two to one under a rule favouring them four to one, read at every step, each step adding one '
      'to the loss; read from the share alone the course is locked at every step, read from the loss the same selection '
-     'from the same start favours the others from the second step and the share falls at the third. The reading formed '
+     'and start favour the others from the second step and the share falls at the third. The reading formed '
      'as the share\'s own proportion meets every premise, and a reading reversed is absorbed.',
      '见证：承载者对其他二比一，规则偏向承载者四比一，每步读取，每步损失加一；只从份额读出，进程每一步都锁定；从损失读出，'
      '同一选择从同一起点自第二步起偏向其他，份额在第三步下降。读法形成为份额自身的比例时满足每个前提，被反转的读法被吸收。',
@@ -164,9 +164,9 @@ rec = {
                'ReadsShare, on the rule and on mind.',
          'zh': '任何实际的规则或其被读的方式由其所选出的份额形成：这是前提 ReadsShare，在规则上，也在 mind 上。',
          'kind': 'correspondence'},
-        {'en': 'That what lies beyond the share is a loss to any formation: that is a significance\'s to say (section 6); '
+        {'en': 'That what lies beyond the share is a loss to any formation: that is a significance\'s to say; '
                'here it is a count the loop does not read. Nor how fast it grows beyond one a step.',
-         'zh': '份额之外者对任何形成是损失：这要由一种重要性来说（第 6 节）；在此它只是回路不读的一个计数。也不说它比每步一增长得多快。',
+         'zh': '份额之外者对任何形成是损失：这要由一种重要性来说；在此它只是回路不读的一个计数。也不说它比每步一增长得多快。',
          'kind': 'non-implication'},
         {'en': 'That the readers are minds, institutions or a culture: that is a reading (D58).',
          'zh': '读者是心智、机构或文化：这是读法（D58）。', 'kind': 'correspondence'},

@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-284 registered results: 265 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 734 curated edges join 238 results to the results they draw on.
+285 registered results: 266 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 736 curated edges join 239 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -37,6 +37,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [census-read-off-the-exchange][] ← <a id="census-read-off-the-exchange--premises-read-off-the-exchange"></a>[premises-read-off-the-exchange][] · <a id="census-read-off-the-exchange--map-of-premises"></a>[map-of-premises][]
 - [chinese-sources-on-the-spine][] ← <a id="chinese-sources-on-the-spine--hexagrams-on-the-spine"></a>[hexagrams-on-the-spine][] *(interpretive)* · <a id="chinese-sources-on-the-spine--configurations-alike-by-relation"></a>[configurations-alike-by-relation][] *(interpretive)*
 - [classification-robust-generative-comparison][] ← <a id="classification-robust-generative-comparison--practical-judgment-under-living-significance"></a>[practical-judgment-under-living-significance][] · <a id="classification-robust-generative-comparison--organizational-formation-from-generative-comparison"></a>[organizational-formation-from-generative-comparison][] · <a id="classification-robust-generative-comparison--relational-generative-comparison"></a>[relational-generative-comparison][]
+- [closed-capture][] ← <a id="closed-capture--capture-through-the-rule"></a>[capture-through-the-rule][] · <a id="closed-capture--how-fast-a-rule-may-change"></a>[how-fast-a-rule-may-change][]
 - [closing-needs-net-draw][] ← <a id="closing-needs-net-draw--more-needs-renewers"></a>[more-needs-renewers][] · <a id="closing-needs-net-draw--laws-of-one-step"></a>[laws-of-one-step][]
 - [closure-verdict-meets-continuation-condition][] ← <a id="closure-verdict-meets-continuation-condition--continuation-condition-yields-living-significance"></a>[continuation-condition-yields-living-significance][] · <a id="closure-verdict-meets-continuation-condition--significance-retained-within-margin"></a>[significance-retained-within-margin][] · <a id="closure-verdict-meets-continuation-condition--whole-first-and-bounded-centers"></a>[whole-first-and-bounded-centers][] · <a id="closure-verdict-meets-continuation-condition--feeding-closure"></a>[feeding-closure][] · <a id="closure-verdict-meets-continuation-condition--consumption-ends-with-feeders"></a>[consumption-ends-with-feeders][] · <a id="closure-verdict-meets-continuation-condition--loss-beyond-a-region"></a>[loss-beyond-a-region][] · <a id="closure-verdict-meets-continuation-condition--four-cases-of-a-part"></a>[four-cases-of-a-part][]
 - [code-plan-global-support][] ← <a id="code-plan-global-support--joint-code-plan-lifting"></a>[joint-code-plan-lifting][] · <a id="code-plan-global-support--exclusive-footprint-support"></a>[exclusive-footprint-support][]
@@ -280,6 +281,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [chinese-sources-on-the-spine]: theories/becoming/results/records/chinese-sources-on-the-spine.md
 [claims-shown-in-context]: theories/becoming/results/records/claims-shown-in-context.md
 [classification-robust-generative-comparison]: theories/becoming/results/records/classification-robust-generative-comparison.md
+[closed-capture]: theories/becoming/results/records/closed-capture.md
 [closing-needs-net-draw]: theories/becoming/results/records/closing-needs-net-draw.md
 [closure-verdict-meets-continuation-condition]: theories/becoming/results/records/closure-verdict-meets-continuation-condition.md
 [code-plan-global-support]: theories/becoming/results/records/code-plan-global-support.md

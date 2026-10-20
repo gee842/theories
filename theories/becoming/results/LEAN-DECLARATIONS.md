@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 273 | 10,918 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 274 | 10,943 |
 | [Becoming instances and applications](lean-declarations/becoming-ring.md) | 13 | 746 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -121,6 +121,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ClassificationRobustJudgment.lean](lean-declarations/ethics.md#module-6d2ff915d8b9) | Normative grounding and generative direction |
 | [ClassifiedBeliefProcesses.lean](lean-declarations/becoming-core.md#module-0274c995e9a4) | Becoming pure core |
 | [Clearing.lean](lean-declarations/becoming-core.md#module-e9385fb3ee75) | Becoming pure core |
+| [ClosedCapture.lean](lean-declarations/becoming-core.md#module-ce9bd104ba48) | Becoming pure core |
 | [ClosedLoopAudit.lean](lean-declarations/valuation.md#module-a5bbd3ef7a72) | Valuation development and liangzhi |
 | [ClosedLoopValuation.lean](lean-declarations/valuation.md#module-c43d59d00448) | Valuation development and liangzhi |
 | [Closing.lean](lean-declarations/becoming-core.md#module-88d4b75f0562) | Becoming pure core |

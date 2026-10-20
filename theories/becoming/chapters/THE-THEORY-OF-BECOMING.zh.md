@@ -267,7 +267,7 @@
 
 ### 4.1 联合消耗、市场与元吸引子
 
-**要点。** 联合消耗没有单一的消耗者：消耗者与失去支持的形成都参与所汲取的条件，造成差别属于联合的活动。成功者所得的影响削弱对产生成功之策略的约束之处，当下的优势改变未来的选择（[元吸引子](../../meta-attractor/README.md)）。
+**要点。** 联合消耗没有单一的消耗者：消耗者与失去支持的形成都参与所汲取的条件，造成差别属于联合的活动。成功者所得的影响削弱对产生成功之策略的约束之处，当下的优势改变未来的选择（[元吸引子](../../meta-attractor/README.md)）。选择的规则及其被读的方式都由它所选出的份额形成，这一回路陈述于 §4.5。
 
 **定理。** 本节陈述 `consumption_relates`；完整陈述见[英文版 §4.1](THE-THEORY-OF-BECOMING.md#41-joint-consumption-markets-and-the-meta-attractor)。
 
@@ -300,11 +300,11 @@
 
 ### 4.5 传递、共享的代码与经规则的劫持
 
-**要点。** 比其承载者更久的模式只经传递而持续，传递停止后在一个跨度内终结。经听闻在形成之间形成的代码不造出形式：起点与听闻的次序固定所达的形式，没有形式被特别对待，只有中心、偏好的形式或听闻的次序打破对称的分歧。选择的规则从它所选择的份额读出之处，持住结果的是规则怎样读取，不是规则的值，每个读取步都重新设定它。
+**要点。** 比其承载者更久的模式只经传递而持续，传递停止后在一个跨度内终结。经听闻在形成之间形成的代码不造出形式：起点与听闻的次序固定所达的形式，没有形式被特别对待，只有中心、偏好的形式或听闻的次序打破对称的分歧。选择的规则从它所选择的份额读出之处，持住结果的是规则怎样读取，不是规则的值，每个读取步都重新设定它。规则怎样被读本身由份额形成、且回路中没有什么读份额之外者之处，回路闭合：它不读的损失不论增长多大都使它保持锁定，读法的改变如规则之值的改变一样被吸收；离开的是律的改变，例如读到份额之外者的读法。
 
-**定理。** 本节陈述 `Web.ByPassing.ends_within`、`run_agrees_every_start_iff`、`favouring_locks`、`uniform_locks`；完整陈述见[英文版 §4.5](THE-THEORY-OF-BECOMING.md#45-passing-shared-codes-and-capture-through-the-rule)。
+**定理。** 本节陈述 `Web.ByPassing.ends_within`、`run_agrees_every_start_iff`、`favouring_locks`、`uniform_locks`、`ClosedCapture.lock_outlives_loss`（回路不读的损失越过每一界限，锁定仍保持）、`ClosedCapture.reading_absorbed`（由份额形成的读法的改变在下一读取步被吸收）；完整陈述见[英文版 §4.5](THE-THEORY-OF-BECOMING.md#45-passing-shared-codes-and-capture-through-the-rule)。
 
-记录：[a-pattern-lasts-through-passing](../results/records/a-pattern-lasts-through-passing.md)、[a-code-formed-between-formations](../results/records/a-code-formed-between-formations.md)、[capture-through-the-rule](../results/records/capture-through-the-rule.md)、[joint-practice-forms-continuation](../results/records/joint-practice-forms-continuation.md)、[joint-plan-composition](../results/records/joint-plan-composition.md)、[organizational-formation-from-generative-comparison](../results/records/organizational-formation-from-generative-comparison.md)。
+记录：[a-pattern-lasts-through-passing](../results/records/a-pattern-lasts-through-passing.md)、[a-code-formed-between-formations](../results/records/a-code-formed-between-formations.md)、[capture-through-the-rule](../results/records/capture-through-the-rule.md)、[closed-capture](../results/records/closed-capture.md)、[joint-practice-forms-continuation](../results/records/joint-practice-forms-continuation.md)、[joint-plan-composition](../results/records/joint-plan-composition.md)、[organizational-formation-from-generative-comparison](../results/records/organizational-formation-from-generative-comparison.md)。
 
 ### 4.6 因应转化
 
@@ -741,6 +741,7 @@
 | [在形成之间形成的编码](../results/records/a-code-formed-between-formations.md) | 不加前提的定理 | — | §4.5 |
 | [比承载者更持久的样式经传递而持续](../results/records/a-pattern-lasts-through-passing.md) | 不加前提的定理 | — | §4.5 |
 | [经由规则的捕获：规则读其所选出之份额的选择](../results/records/capture-through-the-rule.md) | 不加前提的定理 | — | §4.5 |
+| [闭合的捕获：每一层都只读份额的回路](../results/records/closed-capture.md) | 不加前提的定理 | — | §4.5 |
 | [局部方案的共同接续](../results/records/joint-plan-composition.md) | 不加前提的定理（外围） | — | §4.5 |
 | [共同实践形成后续参与与接续](../results/records/joint-practice-forms-continuation.md) | 不加前提的定理（外围） | — | §4.5 |
 | [完整生成比较下的组织形成要求](../results/records/organizational-formation-from-generative-comparison.md) | 论证 | 见记录 | §4.5 |
@@ -885,16 +886,16 @@
 
 所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）17 个。
 
-**当前回执**是运行 [`20261020T083557.882986Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T083557.882986Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 241 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#241-what-a-rise-draws-from-beyond-dependences-broken-above-the-slack-and-the-share-that-reaches-rb1)）。
+**当前回执**是运行 [`20261020T084801.608407Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T084801.608407Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 242 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#242-the-meta-attractors-loop-closed-on-the-spine-ma1)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 270 个模块，10,844 条定理 |
+| 核心模块（含根 `Becoming`） | 271 个模块，10,869 条定理 |
 | 实例模块 | 7 个模块，567 条定理 |
 | 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 闭包（核心、环与根基） | 286 个模块，11,664 条定理 |
-| 审计的脊柱声明 | 15,958 |
+| 闭包（核心、环与根基） | 287 个模块，11,689 条定理 |
+| 审计的脊柱声明 | 15,997 |
 | 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 189 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 
@@ -1206,7 +1207,7 @@
 | 闭，一般 | 下面开的否定：未、可、应、转都不复存在。闭本身是律从不离开的区域（吸收区域；对过程是不变量），每个确定的律恰吸入不返回的配置。返回者本身是吸收区域，所以闭的区域可以持有所保持者，闭就其形式而言不是损失。语料所说“闭本身不是恶”，结构就是这个。 | `Law.Absorbing`、`Law.drawn_iff_not_returns`、`Law.returning_absorbing` |
 | 成闭（闭而不复开） | 锁定。被吸入吸收区域者不再回来，被吸入的配置永不返回。n 步之后可得者是一个吸收区域，到第 n 步所失去的每种可能都被吸入它。在每个过程之下，一旦进入不变区域，其外者不再可得。 | `Law.DrawnInto.never_back`、`Law.Drawn.not_returns`、`Law.lost_drawn`、`Invariant.locks_out`、`Run.locked_in` |
 | 护闭（暂闭一处以护更大之开） | 在路径分支处去掉那些步：经过它们之后某配置不再可得，使它保持可达。已证明为关节处的保持（`Becoming.Junctures`，D52；§1“配置在何处失去”）：x 对 s 是关节，当 s 可从 x 再得，且 x 既有之后 s 仍可再得的步，也有之后 s 不可再得的步；s 返回时，s 的每次失去都经过一个关节（以双重否定的形式；配置可列、步可判定时为存在）；只保留之后 s 仍可再得的步，保住 s，并且在自 s 起的路径上是保住 s 的最大子过程。另已落地的：可能被吸入的配置可以在另一条历程上返回；离开不变区域需要一个不保持它的动作。照此读法，护闭与成闭是关节处的同一种操作，去掉失去之步或保持之步，二者都不带估值。哪个配置值得保持（早期例子中的膜、拒侵犯、隔传染）不在律中。 | `Branching.Juncture`、`Branching.keeping`、`Branching.keeping_greatest`、`Branching.keeping_removes_at_juncture`；对照 `Branching.possiblyDrawn_iff`、`Branching.OneWay.possibly_not_necessarily`、`Run.leaving_needs` |
-| 元闭（生间之法源冻结） | 规则持住结果（`Becoming.Capture`）。规则保持自身之处，带某一规则的配置是律从不离开的区域。下一配置只依规则而不依状态之处，单扰动状态被吸回规则所持者，从下一步起进程如同未被扰动；扰动规则则改变结果。所以持久的改变与反向回路都须及于规则（§4、§7.3）。规则本身从选择所给的份额读出之处，它的值在每一读取步被重新设定，持住结果的是它的读法：只改其值而保持方向者被吸收，只有改变读法才离开（`Becoming.RuleCapture`，§4）。 | `Law.rule_absorbing`、`Captured.state_perturbation_drawn`、`Law.perturbation_reabsorbed`、`Captured.rule_perturbation_drawn`、`RuleCapture.perturbation_absorbed`、`RuleCapture.uniform_locks` |
+| 元闭（生间之法源冻结） | 规则持住结果（`Becoming.Capture`）。规则保持自身之处，带某一规则的配置是律从不离开的区域。下一配置只依规则而不依状态之处，单扰动状态被吸回规则所持者，从下一步起进程如同未被扰动；扰动规则则改变结果。所以持久的改变与反向回路都须及于规则（§4、§7.3）。规则本身从选择所给的份额读出之处，它的值在每一读取步被重新设定，持住结果的是它的读法：只改其值而保持方向者被吸收，只有改变读法才离开（`Becoming.RuleCapture`，§4）。规则怎样被读本身由份额形成之处，读法的改变也同样被吸收，回路不读的损失使它保持锁定；离开的是律的改变，例如读到份额之外者的读法（`Becoming.ClosedCapture`，§4.5）。 | `Law.rule_absorbing`、`Captured.state_perturbation_drawn`、`Law.perturbation_reabsorbed`、`Captured.rule_perturbation_drawn`、`RuleCapture.perturbation_absorbed`、`RuleCapture.uniform_locks`、`ClosedCapture.reading_absorbed`、`ClosedCapture.lock_outlives_loss` |
 | 伪开（外显为开，内成其闭） | 从部分、一段或状态读出、而整个进程并没有的开。下面三型是取这种读法的三处。早期的“夺”（一个焦点的开度随他者的下降而上升）经按焦点的开度陈述，不对照；作为选择的夺取见“劫持”一行。 | 见下面三行 |
 | 伪开 I：局部开，整体闭 | 部分成立者不决定整体成立者。每个形成可以在该步所给之内取用，而合起来取得更多。更新依存于所更新者之处，使水平落到某需要之下的联合超出，终结这一更新，并终结每个在该需要处依存于该条件的形成，取用者也在其中（`Becoming.Continuation`）。配置的一部分可以承载整体所没有的律（`Coarse`），整体也可以有其状态单独的任何读法都没有的律（`Switching`）。 | `Pair.own_not_joint`、`Flow.joint_excess_ends`、`Coarse.carries`、`Switching.no_state_law` |
 | 伪开 II：短期开，长时闭 | 有限的一段不决定一次运行的类。对每个视界，有两次运行在其前相同，焦点形成在那里的每个事件在两者中都在更新之内，而此后一次在整个运行上更新，另一次消耗（`Becoming.Horizon`）。断裂之前，一个存量只经阈耦合入一个形成之处，耦合入该形成的任何东西都不界定断裂有多近（`Becoming.Runaway`）。 | `Renewable.prefix_does_not_decide`、`Web.break_not_bounded` |

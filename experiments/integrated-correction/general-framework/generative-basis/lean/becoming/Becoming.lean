@@ -117,6 +117,7 @@ import Becoming.Withholding
 import Becoming.LoopReturn
 import Becoming.Pace
 import Becoming.RuleCapture
+import Becoming.ClosedCapture
 import Becoming.PatternPassing
 import Becoming.JointKeeping
 import Becoming.Undecided
@@ -1383,6 +1384,16 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   favour the others the lock needs its start condition: a rule against the reading read one step
   late alternates without end (`Alternating`), and a reversing perturbation carried across a
   threshold locks the course the other way (`Reversed`).
+* `Becoming.ClosedCapture` (L1): a loop whose every level reads only the share. On `RuleCapture`'s
+  two-level course with the fast configuration a pair, the share and what lies beyond it: where
+  neither the next share nor the rule read reads what lies beyond, courses alike in share and rule
+  stay alike in both, and the share's law joined with a step beyond runs exactly as the share's law
+  alone; so a locked loop stays locked while a loss rising by at least one a step passes every bound, and a
+  reading favouring at no loss above a bound turns at the step after the first reading step past it
+  (`Beyond`: the same selection locked read from the share, falling read from the loss). Where how
+  the rule is read is itself formed from the share, rule and reading are one rule read from the
+  share: a change of the reading alone is absorbed at the next reading step, and where the rule read
+  favours at every reading every course locks from its second reading step (`Proportional`).
 * `Becoming.PatternPassing` (L1): a pattern that outlasts each of its carriers lasts only through
   passing. Read on a web whose activity is carrying, a pattern present at every step from `T`
   on with carriers brief for `d` has a carrier beginning within every `d` steps; under the

@@ -1,0 +1,327 @@
+{
+  "schema_version": 2,
+  "id": "closed-capture",
+  "title": {
+    "en": "Closed capture: a loop whose every level reads only the share",
+    "zh": "闭合的捕获：每一层都只读份额的回路"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-20T08:50:15+00:00",
+  "statement": {
+    "en": "In a selection whose rule, and how the rule is read, are read from the share it selects, a loss the loop does not read leaves it locked however large it grows, and a change of the reading is absorbed; what leaves is a change of the law, such as a reading of what lies beyond the share.",
+    "zh": "在规则及规则怎样被读都从所选出份额读出的选择中，回路不读的损失不论多大都使它保持锁定，读法的改变被吸收；离开的是律的改变，例如对份额之外者的读取。"
+  },
+  "laws": [
+    {
+      "en": "What the loop does not read does not change it: on Pace's two-level course with the fast configuration a pair, the share and what lies beyond it, where neither the next share nor the rule read reads what lies beyond (Unread), courses from starts alike in share and rule stay alike in both; courses that come apart read beyond the share; the share's law joined with a step beyond runs exactly as the share's law alone.",
+      "zh": "回路不读的不改变它：在 Pace 的两速历程上，快构形为一对，即份额与份额之外者；下一份额与读出的规则都不读份额之外者时（Unread），份额与规则相同的起点，其进程每一步在两者上都相同；分开了的进程读份额之外者；带份额之外一步的合并之律与份额自身之律同样运行。",
+      "declarations": [
+        "Becoming.ClosedCapture.Unread",
+        "Becoming.ClosedCapture.turn_unread",
+        "Becoming.ClosedCapture.unread_course",
+        "Becoming.ClosedCapture.reads_beyond_of_apart",
+        "Becoming.ClosedCapture.join",
+        "Becoming.ClosedCapture.joinRead",
+        "Becoming.ClosedCapture.join_unread",
+        "Becoming.ClosedCapture.join_alike",
+        "Becoming.ClosedCapture.turn_join",
+        "Becoming.ClosedCapture.join_course"
+      ]
+    },
+    {
+      "en": "A locked loop outlives its loss: where every step adds at least one to what lies beyond (Accrues), from a locked configuration the loss at step t is at least t above where it started, so it passes every bound, while the course stays locked and neither the share nor the rule is ever below where it started.",
+      "zh": "锁定的回路比它的损失更持久：每一步都使份额之外者至少增加一（Accrues）时，从锁定的构形起，第 t 步的损失至少比起点高 t，所以越过每一界限，而进程保持锁定，份额与规则都从不低于起点。",
+      "declarations": [
+        "Becoming.ClosedCapture.Accrues",
+        "Becoming.ClosedCapture.loss_grows",
+        "Becoming.ClosedCapture.lock_outlives_loss"
+      ]
+    },
+    {
+      "en": "A reading that reads the loss turns: where the rule read favours at no configuration whose loss is at least N, and every step adds at least one, at the step after every reading step at which the loss has passed N the rule in force does not favour, so the course is not locked there, whatever the share.",
+      "zh": "读损失的读法转向：在损失至少为 N 的构形上读出的规则都不偏向、且每一步至少增加一时，在损失已越过 N 的每个读取步之后的那一步，在行的规则不偏向，所以进程在那里不锁定，不论份额如何。",
+      "declarations": [
+        "Becoming.ClosedCapture.turned_by_loss"
+      ]
+    },
+    {
+      "en": "The reading read from the share: where how the rule is read is formed from the share at the reading step (mind) and the rule read from the share through it (read), monotonically, rule and reading are one rule read from the share in the order of pairs; locked, none of share, rule and reading falls below where it was; a change of the reading, either way, the rule still favouring, is absorbed at the next reading step.",
+      "zh": "从份额读出的读法：规则怎样被读在读取步由份额形成（mind），规则经由它从份额读出（read），且都单调时，规则与其读法在对的序中合为一个从份额读出的规则；锁定时份额、规则与读法都不低于曾在之处；读法的改变，不论大小与方向，只要规则仍偏向，在下一读取步被吸收。",
+      "declarations": [
+        "Becoming.ClosedCapture.both",
+        "Becoming.ClosedCapture.readers",
+        "Becoming.ClosedCapture.byRule",
+        "Becoming.ClosedCapture.both_reads",
+        "Becoming.ClosedCapture.byRule_raises",
+        "Becoming.ClosedCapture.both_upper",
+        "Becoming.ClosedCapture.readers_not_below",
+        "Becoming.ClosedCapture.reading_absorbed"
+      ]
+    },
+    {
+      "en": "Where the rule read favours at every reading and every share, every course is locked from the step after its second reading step, whatever rule and reading it starts with: within a loop whose every level reads only the share, what leaves is a change of the law, such as a level reading beyond the share.",
+      "zh": "读出的规则在每个读法与每个份额都偏向时，每条进程自第二个读取步之后的那一步起锁定，不论从何种规则与读法开始：在每一层都只读份额的回路中，离开的是律的改变，例如读份额之外者的一层。",
+      "declarations": [
+        "Becoming.ClosedCapture.readers_uniform_locks"
+      ]
+    },
+    {
+      "en": "Witnesses: carriers two to one under a rule favouring them four to one, read at every step, each step adding one to the loss; read from the share alone the course is locked at every step, read from the loss the same selection and start favour the others from the second step and the share falls at the third. The reading formed as the share's own proportion meets every premise, and a reading reversed is absorbed.",
+      "zh": "见证：承载者对其他二比一，规则偏向承载者四比一，每步读取，每步损失加一；只从份额读出，进程每一步都锁定；从损失读出，同一选择从同一起点自第二步起偏向其他，份额在第三步下降。读法形成为份额自身的比例时满足每个前提，被反转的读法被吸收。",
+      "declarations": [
+        "Becoming.ClosedCapture.Beyond.lossStep",
+        "Becoming.ClosedCapture.Beyond.closedRead",
+        "Becoming.ClosedCapture.Beyond.lossRead",
+        "Becoming.ClosedCapture.Beyond.closed",
+        "Becoming.ClosedCapture.Beyond.opened",
+        "Becoming.ClosedCapture.Beyond.closed_locked",
+        "Becoming.ClosedCapture.Beyond.lossRead_turns",
+        "Becoming.ClosedCapture.Beyond.open_turned",
+        "Becoming.ClosedCapture.Beyond.open_falls",
+        "Becoming.ClosedCapture.Beyond.open_reads",
+        "Becoming.ClosedCapture.Proportional.mind",
+        "Becoming.ClosedCapture.Proportional.read",
+        "Becoming.ClosedCapture.Proportional.readMono",
+        "Becoming.ClosedCapture.Proportional.formed",
+        "Becoming.ClosedCapture.Proportional.start_locked",
+        "Becoming.ClosedCapture.Proportional.reform_absorbed"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Each statement names its hypotheses: Unread (neither the next share nor the rule read reads what lies beyond); Accrues (each step adds at least one beyond); RuleCapture's Raises, ReadsShare and favouring kept upward; a locked start; for the readings, the reading formed monotonically from the share (ReadsShare on mind) and the rule read monotonically from the reading and the share.",
+      "zh": "不加公理。各陈述列出其假设：Unread（下一份额与读出的规则都不读份额之外者）；Accrues（每步在份额之外至少加一）；RuleCapture 的 Raises、ReadsShare 与向上保持的偏向；锁定的起点；对读法，读法由份额单调形成（mind 上的 ReadsShare），规则由读法与份额单调读出。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That any actual rule, or how it is read, is formed from the share it selects: this is the premise ReadsShare, on the rule and on mind.",
+      "zh": "任何实际的规则或其被读的方式由其所选出的份额形成：这是前提 ReadsShare，在规则上，也在 mind 上。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "That what lies beyond the share is a loss to any formation: that is a significance's to say; here it is a count the loop does not read. Nor how fast it grows beyond one a step.",
+      "zh": "份额之外者对任何形成是损失：这要由一种重要性来说；在此它只是回路不读的一个计数。也不说它比每步一增长得多快。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "That the readers are minds, institutions or a culture: that is a reading (D58).",
+      "zh": "读者是心智、机构或文化：这是读法（D58）。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "Real-valued shares, noisy or partial readings, readings that read both the share and part of what lies beyond, and the calibration of any of this to the present world.",
+      "zh": "实数份额、有噪声或部分的读取、既读份额又读份额之外一部分的读法，以及其中任何一项对当今世界的校准。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ClosedCapture.lean",
+      "detail": {
+        "en": "Without Unread the loop does not outlive its loss: the same selection from the same locked start, read from the loss instead of the share, favours the others from the second step and its share falls at the third (Beyond.open_turned, Beyond.open_falls).",
+        "zh": "没有 Unread，回路不比其损失更持久：同一选择从同一锁定起点，改从损失而不从份额读出，自第二步起偏向其他，份额在第三步下降（Beyond.open_turned、Beyond.open_falls）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T084801.608407Z): the 39 declarations of Becoming.ClosedCapture, 25 of them theorems, have empty axiom reports; the checker verifies core purity. Built and reviewed in one session, with no separate reviewer; author review in study section 242; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T084801.608407Z）：Becoming.ClosedCapture 的 39 项声明（25 项定理）公理报告为空；检查器并核对核心纯净。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 242 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Readings that read the share and part of what lies beyond, and how much of the loss a reading must read to leave; a loss read late; the reading formed by a selection among readers rather than by a map; real-valued shares; an independent review.",
+    "zh": "既读份额又读份额之外一部分的读法，以及读法须读多少损失才离开；迟读的损失；由读者之间的选择而非由一个映射形成的读法；实数份额；独立审查。"
+  },
+  "correspondence": {
+    "en": "The meta-attractor (theories/meta-attractor): its 2025-08 formalisation separates the state and the rule that scores it, with the rule updated from the state; partial reform re-absorbed is perturbation_absorbed and reading_absorbed, and the metric surviving its own refutation is lock_outlives_loss. Goodhart (1975) says a measure made a target stops measuring; this states why it is kept: what keeps it reads the share it gives, not what it fails to measure. Lock-in under increasing returns (Arthur 1989) and regulatory capture (Stigler 1971) are the closest prior results; the delta is the reading itself read from the share, and the exact condition (Unread) under which a loss leaves the lock.",
+    "zh": "元吸引子（theories/meta-attractor）：其 2025-08 形式化把状态与评分它的规则分开，规则由状态更新；局部改革被吸收即 perturbation_absorbed 与 reading_absorbed，度量在自身被驳倒后仍存即 lock_outlives_loss。Goodhart（1975）说成为目标的度量不再度量；本记录说明它为何被保留：保留它的读的是它给出的份额，不是它没能度量的。递增回报下的锁定（Arthur 1989）与规制俘获（Stigler 1971）是最近的先前结果；增量是读法本身从份额读出，以及损失离开锁定的确切条件（Unread）。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ClosedCapture.lean",
+  "aliases": [
+    "closed capture",
+    "闭合的捕获",
+    "the loop closed in its readings",
+    "the metric outlives its refutation",
+    "the meta-attractor loop",
+    "元吸引子回路",
+    "Becoming.ClosedCapture.lock_outlives_loss",
+    "Becoming.ClosedCapture.reading_absorbed",
+    "Becoming.ClosedCapture.turned_by_loss",
+    "Becoming.ClosedCapture.unread_course"
+  ],
+  "dependencies": [
+    {
+      "id": "capture-through-the-rule",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Applies Becoming.RuleCapture's laws (Raises, ReadsShare, Locked, locked_stays, locked_not_below, perturbation_absorbed, uniform_locks) to the share's own law joined with a step beyond, and to a rule paired with its reading; its counts (CarrierCounts, select, hi, lo, twoToOne) give the witnesses.",
+        "zh": "把 Becoming.RuleCapture 的诸律（Raises、ReadsShare、Locked、locked_stays、locked_not_below、perturbation_absorbed、uniform_locks）用于带份额之外一步的份额自身之律，以及与其读法成对的规则；其计数（CarrierCounts、select、hi、lo、twoToOne）给出见证。"
+      },
+      "interface": {
+        "output": {
+          "en": "The lock, its absorption of a change of the rule's value, and leaving only by a change of how the rule reads.",
+          "zh": "锁定、它对规则之值改变的吸收，以及只有改变规则怎样读才离开。"
+        },
+        "input": {
+          "en": "What the loop does not read, and the reading itself read from the share.",
+          "zh": "回路不读的，以及本身从份额读出的读法。"
+        },
+        "conditions": {
+          "en": "Raises, ReadsShare and favouring kept upward, as each statement names.",
+          "zh": "各陈述所列的 Raises、ReadsShare 与向上保持的偏向。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean"
+      }
+    },
+    {
+      "id": "how-fast-a-rule-may-change",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Builds on Pace's two-level course (Pace.paced, Pace.turn, Pace.paced_succ, Pace.paced_fast_succ).",
+        "zh": "建立在 Pace 的两速历程上（Pace.paced、Pace.turn、Pace.paced_succ、Pace.paced_fast_succ）。"
+      },
+      "interface": {
+        "output": {
+          "en": "A two-level course whose rule changes only at reading steps.",
+          "zh": "规则只在读取步改变的两速历程。"
+        },
+        "input": {
+          "en": "A fast configuration that is a pair, and a rule that is a pair.",
+          "zh": "为一对的快构形，以及为一对的规则。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Pace.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "capture-through-the-rule",
+      "detail": {
+        "en": "The loop this record closes: what it does not read, and the reading read from the share.",
+        "zh": "本记录所闭合的回路：它不读的，以及从份额读出的读法。"
+      }
+    },
+    {
+      "id": "target-capture",
+      "detail": {
+        "en": "The share that rises under selection, and the state re-absorbed where the step does not read it.",
+        "zh": "在选择下上升的份额，以及步不读状态之处被吸收的状态。"
+      }
+    },
+    {
+      "id": "joint-difference-making",
+      "detail": {
+        "en": "What lies beyond the share is drawn jointly; that the loop does not read it does not remove a drawer from the drawing.",
+        "zh": "份额之外者是被联合汲取的；回路不读它，并不使汲取者脱离汲取。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ClosedCapture.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.ClosedCapture.Accrues",
+        "Becoming.ClosedCapture.Beyond.closed",
+        "Becoming.ClosedCapture.Beyond.closedRead",
+        "Becoming.ClosedCapture.Beyond.closed_locked",
+        "Becoming.ClosedCapture.Beyond.lossRead",
+        "Becoming.ClosedCapture.Beyond.lossRead_turns",
+        "Becoming.ClosedCapture.Beyond.lossStep",
+        "Becoming.ClosedCapture.Beyond.open_falls",
+        "Becoming.ClosedCapture.Beyond.open_reads",
+        "Becoming.ClosedCapture.Beyond.open_turned",
+        "Becoming.ClosedCapture.Beyond.opened",
+        "Becoming.ClosedCapture.Proportional.formed",
+        "Becoming.ClosedCapture.Proportional.mind",
+        "Becoming.ClosedCapture.Proportional.read",
+        "Becoming.ClosedCapture.Proportional.readMono",
+        "Becoming.ClosedCapture.Proportional.reform_absorbed",
+        "Becoming.ClosedCapture.Proportional.start_locked",
+        "Becoming.ClosedCapture.Unread",
+        "Becoming.ClosedCapture.both",
+        "Becoming.ClosedCapture.both_reads",
+        "Becoming.ClosedCapture.both_upper",
+        "Becoming.ClosedCapture.byRule",
+        "Becoming.ClosedCapture.byRule_raises",
+        "Becoming.ClosedCapture.join",
+        "Becoming.ClosedCapture.joinRead",
+        "Becoming.ClosedCapture.join_alike",
+        "Becoming.ClosedCapture.join_course",
+        "Becoming.ClosedCapture.join_unread",
+        "Becoming.ClosedCapture.lock_outlives_loss",
+        "Becoming.ClosedCapture.loss_grows",
+        "Becoming.ClosedCapture.readers",
+        "Becoming.ClosedCapture.readers_not_below",
+        "Becoming.ClosedCapture.readers_uniform_locks",
+        "Becoming.ClosedCapture.reading_absorbed",
+        "Becoming.ClosedCapture.reads_beyond_of_apart",
+        "Becoming.ClosedCapture.turn_join",
+        "Becoming.ClosedCapture.turn_unread",
+        "Becoming.ClosedCapture.turned_by_loss",
+        "Becoming.ClosedCapture.unread_course"
+      ],
+      "sha256": "3bffc03c232e8103bc099447a7355965c4b2b1b09d54d2714b26e712c123660c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean",
+      "role": "proof",
+      "sha256": "68bd784a3af4d22a133ba01145857d7850960ddc172193ee55736a9fb68b72a8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Pace.lean",
+      "role": "proof",
+      "sha256": "950af3e13f76620ce65a0cde19ada6bc7c2576eef619d0ce7e6ed664ded449ba"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T084801.608407Z/verification.json",
+      "role": "receipt",
+      "sha256": "55a4cf8e6cb10a7b6f858e23f8a08a4649595aea639f241d3c10bc758b06b328"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "f04fba0ea1172ff2ae3503e219bb2502d2d2e11652b3079a469a8dc87aeda7bc"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "583c21e72e157895a19d57a14fb20a2c94cc0ede0959235b3703efb5df8fca16"
+    },
+    {
+      "path": "theories/becoming/OPENING.md",
+      "role": "statement",
+      "sha256": "9901ed0fc612610a68030bd5d92a520ce85f26a3e4ac2c4b084ebb1674dd070c"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ClosedCapture.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T084801.608407Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ClosedCapture",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "20 October 2026: added (MA1), the meta-attractor's loop closed on the spine: OPENING's note on the meta-attractor said the loop was not on the spine; study section 242; readings D58.",
+      "zh": "2026年10月20日：新增（MA1），元吸引子的回路在主干上闭合：OPENING 关于元吸引子的注说该回路不在主干上；研究第 242 节；读法 D58。"
+    }
+  ]
+}

@@ -60,7 +60,7 @@ An account of social viability Ren brought on 19 October 2026 lists eight constr
   - Preserved conditions: Courses with at most N states. [Identification.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean)
 - related, not a proved adapter: [target-capture](target-capture.md). byRule_reabsorbed is the instance of Law.perturbation_reabsorbed on the two-level course.
 
-**Used by:** [capture-through-the-rule](capture-through-the-rule.md)
+**Used by:** [capture-through-the-rule](capture-through-the-rule.md) · [closed-capture](closed-capture.md)
 
 <a id="sources--来源"></a>
 ### Sources

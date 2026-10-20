@@ -187,7 +187,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1"
+      "sha256": "583c21e72e157895a19d57a14fb20a2c94cc0ede0959235b3703efb5df8fca16"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
@@ -236,6 +236,10 @@
     {
       "en": "2026-10-20: 23 bookkeeping notes condensed from 19 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/45a8d0af8cc5eb35/a-pattern-lasts-through-passing.json and in git.",
       "zh": "2026-10-20：23 条记账性说明合并（19 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/45a8d0af8cc5eb35/a-pattern-lasts-through-passing.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, MA1 (the meta-attractor's loop closed on the spine): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed in section 4 only by MA1's additions: a sentence in 4.1, the law cell of row 6 of 4.3's table, and in 4.5 a sentence of \"In words\", a bullet for Becoming.ClosedCapture, a reading of the meta-attractor and the record list; and section 9's receipt and counts. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月20日，MA1（元吸引子的回路在主干上闭合）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，第 4 节所引文字只因 MA1 的增补而改动：4.1 的一句，4.3 表第 6 行的定律格，4.5 的“要点”一句、Becoming.ClosedCapture 的一条、元吸引子的读法与记录列表；以及第 9 节的回执与计数。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [
