@@ -110,6 +110,8 @@ The chapter's open programme (section 8.2) named a constructive criterion along 
 
 **Used by:** [a-law-through-coupling-along-one-run](a-law-through-coupling-along-one-run.md)
 
+**Law family:** A law along one run (lead: this record). Under an equivalence, a law admits a run's steps up to a step exactly where steps alike under it, by the same move, end alike, and failure persists. The lead states it once; the law through what a formation couples into and the law through coupling that changes along the run were recorded first, are superseded by the lead and are its readings. Members: [a-law-through-coupling-along-one-run](a-law-through-coupling-along-one-run.md) · [a-law-through-changing-coupling-along-one-run](a-law-through-changing-coupling-along-one-run.md).
+
 <a id="sources--来源"></a>
 ### Sources
 

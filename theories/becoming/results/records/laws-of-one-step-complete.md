@@ -59,6 +59,8 @@ Counting active relata, or relata taking part without exchanging, is not in the 
 
 **Used by:** [one-step-missing-laws](one-step-missing-laws.md) · [runs-on-families-chosen-step-by-step](runs-on-families-chosen-step-by-step.md)
 
+**Law family:** The laws of one step (lead: [laws-of-one-step](laws-of-one-step.md)). Each law of one step holds of every world, with the condition its proof uses stated inside it. The members give the laws, show that under each condition they are all the laws of one step (capacity adds one, activity none), and name two laws the stated list misses: something taken has a taker, and nothing is taken beyond what stood with what was given. Members: [laws-of-one-step](laws-of-one-step.md) · [one-step-missing-laws](one-step-missing-laws.md).
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

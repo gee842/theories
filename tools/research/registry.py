@@ -458,6 +458,30 @@ def receipt_declaration_names(data):
 
 
 GROWN = []  # sources changed only outside what the record cites, from the last validate()
+LAW_FAMILIES = 'theories/becoming/results/data/law-families.json'
+
+
+def law_families():
+    """The law families (twentieth review, E7): records stating one law and its readings, with a lead."""
+    path = ROOT / LAW_FAMILIES
+    return json.loads(path.read_text()).get('families', []) if path.is_file() else []
+
+
+def law_family_errors(records):
+    ids, seen, errors = {r.get('id') for r in records}, {}, []
+    for f in law_families():
+        name = f.get('id', '<missing>')
+        if not pair(f.get('title')) or not pair(f.get('statement')):
+            errors.append(f'law family {name}: title and statement need English or Chinese')
+        if f.get('lead') not in f.get('members', []):
+            errors.append(f'law family {name}: the lead must be a member')
+        for m in f.get('members', []):
+            if m not in ids:
+                errors.append(f'law family {name}: unknown record {m}')
+            if m in seen:
+                errors.append(f'law family {name}: {m} is already in law family {seen[m]}')
+            seen[m] = name
+    return errors
 
 
 def validate(records):
@@ -468,6 +492,7 @@ def validate(records):
     ids, aliases = {}, {}
     settings = config()
     errors += validate_standard_boundaries(settings)
+    errors += law_family_errors(records)
     for r in records:
         ident = r.get('id', '<missing>')
         def fail(message):
@@ -691,6 +716,16 @@ FOOTER = ('Hashes in the record bind the reviewed sources; the checker does not 
           'or establish premise warrant, and this page is not a proof receipt.')
 
 
+def law_family_lines(r, result_link):
+    """The law family the record belongs to (data/law-families.json), with its lead and members."""
+    f = r.get('_law_family')
+    if not f:
+        return []
+    others = ' · '.join(result_link(m) for m in f['members'] if m != r['id'])
+    lead = 'this record' if f['lead'] == r['id'] else result_link(f['lead'])
+    return ['', f'**Law family:** {en(f["title"])} (lead: {lead}). {en(f["statement"])} Members: {others}.']
+
+
 def used_by_lines(r, result_link):
     """The reverse edges: results whose records name this one as a dependency."""
     used = r.get('_used_by', [])
@@ -757,6 +792,7 @@ def render_record_v2(r):
         lines += ['- none']
     lines += [f'- related, not a proved adapter: {result_link(e["id"])}. {en(e["detail"])}' for e in r['related']]
     lines += used_by_lines(r, result_link)
+    lines += law_family_lines(r, result_link)
     lines += ['', heading('###', 'Sources', 'Sources / 来源'), '', '| Role | Source | Declarations |', '|---|---|---|']
     lines += [f'| {x["role"]} | {link(x["path"], base)} | {", ".join("`" + d + "`" for d in x.get("declarations", [])) or "—"} |' for x in r['references']]
     lines += ['', 'Aliases: ' + (', '.join('`' + a + '`' for a in r['aliases']) or '—'), '', heading('###', 'History', 'History / 沿革'), '']
@@ -804,6 +840,7 @@ def render_record(r):
         lines += ['No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.', '']
     lines += [f'- Related, not a proved adapter: {result_link(e["id"])}. {en(e["detail"])}' for e in r['related']]
     lines += used_by_lines(r, result_link)
+    lines += law_family_lines(r, result_link)
     lines += ['', heading('##', 'Sources and existing receipts', '来源与既有回执 Sources and existing receipts'), '', '| Role | Source | Declarations |', '|---|---|---|']
     lines += [f'| {x["role"]} | {link(x["path"], base)} | {", ".join("`" + d + "`" for d in x.get("declarations", [])) or "—"} |' for x in r['references']]
     lines += ['', 'Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.', '',
@@ -859,14 +896,19 @@ def load_records():
     for r in records:
         r['_record_links'] = paths
         r['_used_by'] = sorted(used_by.get(r['id'], []))  # reverse edges, shown as "Used by" on the page
+    family = {m: f for f in law_families() for m in f.get('members', [])}
+    for r in records:
+        if r['id'] in family:
+            r['_law_family'] = family[r['id']]
     return sorted(records, key=lambda r: r['id']), errors
 
 
 def affected_ids(records, changed):
     shared = standard_boundaries_path() in changed  # its text renders on every citing page
+    families = LAW_FAMILIES in changed  # its text renders on every member's page
     selected = {r['id'] for r in records if str(record_path(r).relative_to(ROOT)) in changed or any(x['path'] in changed for x in r['references'])
                 or any(v.get('path') in changed for v in r.get('text_versions', []) if isinstance(v, dict))
-                or (shared and r.get('standard_boundaries'))}
+                or (shared and r.get('standard_boundaries')) or (families and r.get('_law_family'))}
     # A changed record's producers list it under "Used by" on their pages.
     selected |= {e['id'] for r in records if r['id'] in selected for e in r['dependencies']}
     while True:

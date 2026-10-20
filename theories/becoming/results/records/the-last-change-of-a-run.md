@@ -58,6 +58,8 @@ The record when-the-runs-of-a-process-settle left "Whether the limited principle
 - related, not a proved adapter: [how-often-couplings-act](how-often-couplings-act.md). There every schedule settling gives LPO through RecursOrStops; here the count of changes is bounded by the list, and settling every run with no reachable undoable change is exactly LPO.
 - related, not a proved adapter: [what-a-method-comes-to-say-in-the-limit](what-a-method-comes-to-say-in-the-limit.md). Settling, decided outright here exactly under the limited principle of omniscience, is verified in the limit with decidable configurations and refuted in the limit by no method under Markov's principle.
 
+**Law family:** Settling (lead: [when-the-runs-of-a-process-settle](when-the-runs-of-a-process-settle.md)). Whether a run settles is whether it is decided that it changes again. The members calibrate settling three ways, and the three differ: that no run keeps changing does not give settling, already LPO for two configurations (the lead); in a world a list holds, settling wherever no reachable change can be undone is exactly LPO (the-last-change-of-a-run); every schedule settling is exactly Σ⁰₂ excluded middle (how-often-couplings-act). Members: [when-the-runs-of-a-process-settle](when-the-runs-of-a-process-settle.md) · [how-often-couplings-act](how-often-couplings-act.md).
+
 <a id="sources--来源"></a>
 ### Sources
 

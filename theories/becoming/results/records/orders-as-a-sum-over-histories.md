@@ -64,6 +64,8 @@ Ren, 12 October 2026, asked about the integration for laws that are not determin
 
 **Used by:** [sums-over-histories-by-support-horizon-and-order](sums-over-histories-by-support-horizon-and-order.md) · [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
 
+**Law family:** Sums over histories (lead: [sum-over-histories-exact](sum-over-histories-exact.md)). For every weighting, the weighted sum over courses of n steps is n steps of the transfer. The members state it exactly, split it by support, horizon and order, say what a truncation or a reading of possibility alone loses, and read the orders of a carried difference as its partial sums. Members: [sum-over-histories-exact](sum-over-histories-exact.md) · [sums-over-histories-by-support-horizon-and-order](sums-over-histories-by-support-horizon-and-order.md) · [losses-of-the-sum-over-histories](losses-of-the-sum-over-histories.md).
+
 <a id="sources--来源"></a>
 ### Sources
 

@@ -65,6 +65,8 @@ The first open target of chapter §8.1, the deductive necessity of the whole, ha
 - related, not a proved adapter: [counting-where-the-counts-exist](counting-where-the-counts-exist.md). Counting over counted censuses takes no decision; here the census itself is read off the exchange.
 - related, not a proved adapter: [theory-of-becoming-foundation](theory-of-becoming-foundation.md). Progress on the first target: what a reading of the exchange makes necessary, and where becoming is contingent in the law.
 
+**Law family:** The census and the laws of counting (lead: [census-balance](census-balance.md)). What comes to be and what ceases are counted against one list: the list at the end with what ceased is the list at the start with what came. The members state that balance and its halves (ceasing needs arising; under a continuation, a bounded census and enclosure), where the counts exist (where what they count is decided), the census read off the exchange, and what the premises add to the tally. Members: [census-balance](census-balance.md) · [whole-law-of-counting](whole-law-of-counting.md) · [bounded-census-keeps-pace](bounded-census-keeps-pace.md) · [census-balance-under-continuation](census-balance-under-continuation.md) · [counting-where-the-counts-exist](counting-where-the-counts-exist.md) · [counts-exist-where-decided](counts-exist-where-decided.md) · [counting-under-enclosure](counting-under-enclosure.md) · [counting-standing-and-dependence](counting-standing-and-dependence.md) · [coming-and-ceasing-keep-pace](coming-and-ceasing-keep-pace.md) · [ceasing-needs-arising](ceasing-needs-arising.md).
+
 <a id="sources--来源"></a>
 ### Sources
 

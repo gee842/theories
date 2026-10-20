@@ -47,6 +47,8 @@ The readings are the AI's, adopted on Ren's delegation; no ethical predicate occ
 
 - Related, not a proved adapter: [laws-of-one-step](laws-of-one-step.md). Locality's stated laws of one step: here two are added.
 
+**Law family:** The laws of one step (lead: [laws-of-one-step](laws-of-one-step.md)). Each law of one step holds of every world, with the condition its proof uses stated inside it. The members give the laws, show that under each condition they are all the laws of one step (capacity adds one, activity none), and name two laws the stated list misses: something taken has a taker, and nothing is taken beyond what stood with what was given. Members: [laws-of-one-step](laws-of-one-step.md) · [laws-of-one-step-complete](laws-of-one-step-complete.md).
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

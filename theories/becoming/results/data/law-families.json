@@ -1,0 +1,55 @@
+{
+  "about": "Law families (twentieth review, E7): records that state one law and its readings, conditions or calibrations, grouped with a lead record and one shared statement. The record pages and RESULTS.md render a family line from this file; the records themselves do not change. `research.py check` verifies that every member and lead is a record, that the lead is a member and that no record sits in two families. `family` in a record is the session-map field and is not this.",
+  "families": [
+    {
+      "id": "census",
+      "title": {"en": "The census and the laws of counting", "zh": "普查与计数之律"},
+      "lead": "census-balance",
+      "members": ["census-balance", "whole-law-of-counting", "bounded-census-keeps-pace", "census-balance-under-continuation", "census-read-off-the-exchange", "counting-where-the-counts-exist", "counts-exist-where-decided", "counting-under-enclosure", "counting-standing-and-dependence", "coming-and-ceasing-keep-pace", "ceasing-needs-arising"],
+      "statement": {
+        "en": "What comes to be and what ceases are counted against one list: the list at the end with what ceased is the list at the start with what came. The members state that balance and its halves (ceasing needs arising; under a continuation, a bounded census and enclosure), where the counts exist (where what they count is decided), the census read off the exchange, and what the premises add to the tally.",
+        "zh": "开始成立的与不再成立的，对着同一个列表计数：终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的。成员陈述这一平衡及其两半（不再成立需要开始成立；在延续、有界普查与围住之下）、计数存在之处（所计者被判定之处）、从交换读出的普查，以及前提给计数添加什么。"
+      }
+    },
+    {
+      "id": "sums-over-histories",
+      "title": {"en": "Sums over histories", "zh": "历史之和"},
+      "lead": "sum-over-histories-exact",
+      "members": ["sum-over-histories-exact", "sums-over-histories-by-support-horizon-and-order", "losses-of-the-sum-over-histories", "orders-as-a-sum-over-histories"],
+      "statement": {
+        "en": "For every weighting, the weighted sum over courses of n steps is n steps of the transfer. The members state it exactly, split it by support, horizon and order, say what a truncation or a reading of possibility alone loses, and read the orders of a carried difference as its partial sums.",
+        "zh": "任何赋权下，n 步历程的加权和就是 n 步的转移。成员精确陈述它，按支持、视界与阶把它分开，说明截断或只读可能性时失去什么，并把携带差异的各阶读为其部分和。"
+      }
+    },
+    {
+      "id": "one-step",
+      "title": {"en": "The laws of one step", "zh": "一步的规律"},
+      "lead": "laws-of-one-step",
+      "members": ["laws-of-one-step", "laws-of-one-step-complete", "one-step-missing-laws"],
+      "statement": {
+        "en": "Each law of one step holds of every world, with the condition its proof uses stated inside it. The members give the laws, show that under each condition they are all the laws of one step (capacity adds one, activity none), and name two laws the stated list misses: something taken has a taker, and nothing is taken beyond what stood with what was given.",
+        "zh": "一步的每条规律对每个世界成立，证明所用的条件写在规律之内。成员给出这些规律，表明在每个条件下它们就是一步的全部规律（容量添一条，活动不添），并指出所列规律漏掉的两条：被取者有取者，所取不超过原先立着的加上所给的。"
+      }
+    },
+    {
+      "id": "law-along-a-run",
+      "title": {"en": "A law along one run", "zh": "沿一个运行的规律"},
+      "lead": "a-law-through-a-projection-along-one-run",
+      "members": ["a-law-through-a-projection-along-one-run", "a-law-through-coupling-along-one-run", "a-law-through-changing-coupling-along-one-run"],
+      "statement": {
+        "en": "Under an equivalence, a law admits a run's steps up to a step exactly where steps alike under it, by the same move, end alike, and failure persists. The lead states it once; the law through what a formation couples into and the law through coupling that changes along the run were recorded first, are superseded by the lead and are its readings.",
+        "zh": "在一个等价关系之下，规律容许一个运行到某步为止的各步，恰在经它相同、动作相同的步终于相同之处，失败持续。主记录一次陈述它；经形成所耦合者的规律与经沿运行改变的耦合的规律先被记录，现被主记录取代，是其读法。"
+      }
+    },
+    {
+      "id": "settling",
+      "title": {"en": "Settling", "zh": "安定"},
+      "lead": "when-the-runs-of-a-process-settle",
+      "members": ["when-the-runs-of-a-process-settle", "the-last-change-of-a-run", "how-often-couplings-act"],
+      "statement": {
+        "en": "Whether a run settles is whether it is decided that it changes again. The members calibrate settling three ways, and the three differ: that no run keeps changing does not give settling, already LPO for two configurations (the lead); in a world a list holds, settling wherever no reachable change can be undone is exactly LPO (the-last-change-of-a-run); every schedule settling is exactly Σ⁰₂ excluded middle (how-often-couplings-act).",
+        "zh": "一个运行是否安定，就是是否判定它还会变化。成员从三方面校准安定，三者不同：没有运行不断变化并不给出安定，两个构形时已是 LPO（主记录）；在由列表容纳的世界中，凡可达变化不可撤回处皆安定，恰是 LPO（the-last-change-of-a-run）；每个调度都安定，恰是 Σ⁰₂ 排中律（how-often-couplings-act）。"
+      }
+    }
+  ]
+}

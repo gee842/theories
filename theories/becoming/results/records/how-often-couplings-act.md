@@ -93,6 +93,8 @@ Ren, 12 October 2026, on the loops: “how how accurate can we do that uh what i
 
 **Used by:** [mutual-dependence-and-its-pace](mutual-dependence-and-its-pace.md) · [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
 
+**Law family:** Settling (lead: [when-the-runs-of-a-process-settle](when-the-runs-of-a-process-settle.md)). Whether a run settles is whether it is decided that it changes again. The members calibrate settling three ways, and the three differ: that no run keeps changing does not give settling, already LPO for two configurations (the lead); in a world a list holds, settling wherever no reachable change can be undone is exactly LPO (the-last-change-of-a-run); every schedule settling is exactly Σ⁰₂ excluded middle (how-often-couplings-act). Members: [when-the-runs-of-a-process-settle](when-the-runs-of-a-process-settle.md) · [the-last-change-of-a-run](the-last-change-of-a-run.md).
+
 <a id="sources--来源"></a>
 ### Sources
 

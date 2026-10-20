@@ -51,6 +51,8 @@ The witnesses are on small worlds; that keeping the whole course makes every wei
 
 **Used by:** [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md) · [sums-over-histories-by-support-horizon-and-order](sums-over-histories-by-support-horizon-and-order.md) (interpretive) · [weights-count-situations](weights-count-situations.md)
 
+**Law family:** Sums over histories (lead: [sum-over-histories-exact](sum-over-histories-exact.md)). For every weighting, the weighted sum over courses of n steps is n steps of the transfer. The members state it exactly, split it by support, horizon and order, say what a truncation or a reading of possibility alone loses, and read the orders of a carried difference as its partial sums. Members: [sum-over-histories-exact](sum-over-histories-exact.md) · [sums-over-histories-by-support-horizon-and-order](sums-over-histories-by-support-horizon-and-order.md) · [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md).
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

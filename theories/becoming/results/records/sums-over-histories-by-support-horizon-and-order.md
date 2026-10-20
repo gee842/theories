@@ -71,6 +71,8 @@ The four laws were listed as candidates (W1–W4) by the review of the explorato
 - related, not a proved adapter: [what-a-cut-loses](what-a-cut-loses.md). Where alternatives commute, a cut at order j loses exactly the exact orders above j; Remainder states what a cut loses for every schedule of couplings.
 - related, not a proved adapter: [how-a-carried-difference-grows](how-a-carried-difference-grows.md). Loops.binom counts the placements of responses; the self-loop's exact order i is binom n i times M^i.
 
+**Law family:** Sums over histories (lead: [sum-over-histories-exact](sum-over-histories-exact.md)). For every weighting, the weighted sum over courses of n steps is n steps of the transfer. The members state it exactly, split it by support, horizon and order, say what a truncation or a reading of possibility alone loses, and read the orders of a carried difference as its partial sums. Members: [sum-over-histories-exact](sum-over-histories-exact.md) · [losses-of-the-sum-over-histories](losses-of-the-sum-over-histories.md) · [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md).
+
 <a id="sources--来源"></a>
 ### Sources
 

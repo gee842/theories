@@ -55,6 +55,8 @@ Where weights come from and which weighting an actual unfolding has are not stat
 
 **Used by:** [losses-of-the-sum-over-histories](losses-of-the-sum-over-histories.md) · [sums-over-histories-by-support-horizon-and-order](sums-over-histories-by-support-horizon-and-order.md) · [typicality-by-counting](typicality-by-counting.md) · [weights-count-situations](weights-count-situations.md)
 
+**Law family:** Sums over histories (lead: this record). For every weighting, the weighted sum over courses of n steps is n steps of the transfer. The members state it exactly, split it by support, horizon and order, say what a truncation or a reading of possibility alone loses, and read the orders of a carried difference as its partial sums. Members: [sums-over-histories-by-support-horizon-and-order](sums-over-histories-by-support-horizon-and-order.md) · [losses-of-the-sum-over-histories](losses-of-the-sum-over-histories.md) · [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md).
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

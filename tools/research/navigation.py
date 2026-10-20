@@ -278,6 +278,20 @@ def register_table(records, base):
     return lines
 
 
+def law_family_table(records, base):
+    """Records that state one law and its readings, with a lead (theories/becoming/results/data/law-families.json)."""
+    by_id = {r['id']: r for r in records}
+    lines = ['Records that state one law and its readings, conditions or calibrations, grouped with a lead record; '
+             'each member page states the family. Source: ' + link(registry.LAW_FAMILIES, base, 'law-families.json') + '.', '',
+             '| Family | Lead | Members |', '|---|---|---|']
+    for f in registry.law_families():
+        lead = by_id.get(f['lead'])
+        members = ' · '.join(link(page_of(by_id[m]), base, f'`{m}`') for m in f['members'] if m in by_id and m != f['lead'])
+        lines += [f'| {registry.en(f["title"])} | ' + (link(page_of(lead), base, registry.en(lead['title'])) if lead else f['lead'])
+                  + f' | {members} |']
+    return lines
+
+
 def counts(records):
     n = lambda status: sum(r['status'] == status for r in records)
     return (f'{len(records)} registered results: {n("recorded-checked")} with a recorded Lean receipt (`recorded-checked`), '
@@ -440,6 +454,7 @@ def render_views(records):
                       'neither certifies a stronger claim. Unmigrated results retain their existing sources; files, checks and repeated acceptances are not independent results. '
                       'Hash drift requires reading the changed source before updating its record.', '',
                       H('##', 'Registered results', '已登记成果 / Registered results'), ''] + register_table(records, path) + ['',
+                      H('##', 'Law families', 'Law families / 规律族'), ''] + law_family_table(records, path) + ['',
                       H('##', 'Where to look first', 'Where to look first'), ''] + WHERE_TO_LOOK + ['']
         if kind in ('stub', 'roadmap'):
             lines += stub_lines(path, kind, goal_records)
