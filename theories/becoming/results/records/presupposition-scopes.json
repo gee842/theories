@@ -301,7 +301,7 @@
       }
     },
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Unrestricted 与 bounded。",
@@ -395,7 +395,7 @@
   ],
   "related": [
     {
-      "id": "axiom-decomposition",
+      "id": "continuation-condition-decomposition",
       "detail": {
         "zh": "宽辖域的预设由覆盖、次真与对边界不变给出；不变承载公理在预设之外的全部内容。",
         "en": "The presupposition at wide scope is given by covering, sub-truth and boundary-invariance; invariance carries all of the axiom's content beyond the presupposition."
@@ -517,7 +517,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

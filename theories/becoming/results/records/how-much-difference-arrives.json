@@ -319,7 +319,7 @@
       }
     },
     {
-      "id": "sensitivity-is-the-least-registration",
+      "id": "sensitivity-is-the-least-coupling",
       "detail": {
         "zh": "其下一步“敏感的度量”：强度为零恰是不敏感，所以强度精化最小的耦合。",
         "en": "Its next step, a measure of sensitivity: strength zero is exactly insensitivity, so the strengths refine the least coupling."
@@ -521,12 +521,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",

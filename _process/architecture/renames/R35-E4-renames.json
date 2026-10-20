@@ -1,0 +1,655 @@
+{
+ "batch": "R35-E4-renames",
+ "date": "2026-10-20",
+ "renames": [
+  {
+   "old": "alignment-direction-g0-j",
+   "new": "alignment-direction-under-widening",
+   "reason": "E4: retired labels G0 and J in the id; the title is AI alignment direction under widening and the practical commitments"
+  },
+  {
+   "old": "practical-judgment-g0-j",
+   "new": "practical-judgment-under-living-significance",
+   "reason": "E4: retired labels G0 and J in the id"
+  },
+  {
+   "old": "held-lives-g0-is-centering",
+   "new": "living-significance-on-held-lives",
+   "reason": "E4: retired label G0 in the id"
+  },
+  {
+   "old": "self-good-reachable-g0",
+   "new": "own-good-to-reachable-living-significance",
+   "reason": "E4: retired label G0 in the id"
+  },
+  {
+   "old": "one-axiom-yields-g0",
+   "new": "continuation-condition-yields-living-significance",
+   "reason": "E4: retired labels (the one axiom, G0) in the id"
+  },
+  {
+   "old": "axiom-decomposition",
+   "new": "continuation-condition-decomposition",
+   "reason": "E4: retired label (the one axiom) in the id"
+  },
+  {
+   "old": "closure-verdict-meets-axiom",
+   "new": "closure-verdict-meets-continuation-condition",
+   "reason": "E4: retired label (the one axiom) in the id"
+  },
+  {
+   "old": "wisdom-root-part-one",
+   "new": "wisdom-root-without-axiom",
+   "reason": "E4: retired label (Part I) in the id"
+  },
+  {
+   "old": "selection-through-registration",
+   "new": "selection-through-couplings",
+   "reason": "E4: registration, replaced in the adopted vocabulary (N5)"
+  },
+  {
+   "old": "testing-within-registration",
+   "new": "testing-within-couplings",
+   "reason": "E4: registration, replaced in the adopted vocabulary (N5)"
+  },
+  {
+   "old": "subthreshold-registration",
+   "new": "differences-below-threshold",
+   "reason": "E4: registration, replaced in the adopted vocabulary (N5)"
+  },
+  {
+   "old": "learnable-through-registration",
+   "new": "learnable-through-a-map",
+   "reason": "E4: registration, replaced in the adopted vocabulary (N5)"
+  },
+  {
+   "old": "contextual-registration",
+   "new": "claims-shown-in-context",
+   "reason": "E4: registration, replaced in the adopted vocabulary (N5)"
+  },
+  {
+   "old": "registration-within-what-it-registers",
+   "new": "readings-within-what-they-read",
+   "reason": "E4: registration, replaced in the adopted vocabulary (N5)"
+  },
+  {
+   "old": "sensitivity-is-the-least-registration",
+   "new": "sensitivity-is-the-least-coupling",
+   "reason": "E4: registration, replaced in the adopted vocabulary (N5)"
+  },
+  {
+   "old": "only-the-order-of-change-registers",
+   "new": "only-the-order-of-change-shows",
+   "reason": "E4: registration, replaced in the adopted vocabulary (N5)"
+  },
+  {
+   "old": "runaway-distance-unregistered",
+   "new": "runaway-distance-uncoupled",
+   "reason": "E4: registration, replaced in the adopted vocabulary (N5)"
+  }
+ ],
+ "files": [
+  {
+   "path": "_process/goals/explicit-axiom-route.json",
+   "sha256_before": "b2de67d9489931ce9706491ab2a00dda57f2aad80eb7cc4ed12a3623ac1c100e",
+   "sha256_after": "debda9a43ebe91054880e37a17b7523806c79f81b2b15d90f6bc6171f00d6cee"
+  },
+  {
+   "path": "_process/goals/generative-alignment.json",
+   "sha256_before": "8d0bec582325829152327f080b64a4ed2b42999d7179cbc47bb700154909cc35",
+   "sha256_after": "83747bec932f025be2ea05f4c50300ac7087c4695275efc40166156de6104ac8"
+  },
+  {
+   "path": "_process/goals/meta-attractor-integration-session.json",
+   "sha256_before": "952d6d8f12755ba32a956b3881771bc68783b69b833fa930aa698b02689bbfda",
+   "sha256_after": "11b79f0becd3cea135bd3070e100a4de89ea247c68051237c57a7bcaad21a999"
+  },
+  {
+   "path": "_process/goals/universal-intelligence-session.json",
+   "sha256_before": "f07da9d6590c5daa6e9fd7a56774f7581a7c9c05252a34e6a66a8219877067fe",
+   "sha256_after": "a7da0227ff11c25e23d05a0669cd8be45a7488e4bbb34adec4fb3522f736961b"
+  },
+  {
+   "path": "_process/research-config.json",
+   "sha256_before": "4aeeb69a26e1bc27d96a13c6b82d1c9fc06f5157d38ba1b5bbe71cddf77185c5",
+   "sha256_after": "11000cf23d033f7d8bfc6e02849947ef8ce7e94002910c1eb33551bcccce1289"
+  },
+  {
+   "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+   "sha256_before": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+   "sha256_after": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
+  },
+  {
+   "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
+   "sha256_before": "d6d722a72fe5166a725c51e0c8165f8596ca71c25b024d55ed42056d5125d1f4",
+   "sha256_after": "ef1fbc9034d929bab4c937ed53ba0fdfb9a46e2caab044982c0c646d87b4ce94"
+  },
+  {
+   "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+   "sha256_before": "448a6b1fb2064554ba1e5efebebfa5788f1977f56cd74841f6a2d3fdc69b1e62",
+   "sha256_after": "dfb7945a69f1d7a2610812f1715b513375cb1bea37d8b1c58f2c88e1c94f16c9"
+  },
+  {
+   "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.zh.md",
+   "sha256_before": "8f70120a1ba446db79c967f8d02832b8b66bab684886655cf0a45b3d719e6cb0",
+   "sha256_after": "57d7ffef2685d79b412eedf131dfef3b741207bfaf16ab7c0f0b1824fde3ca95"
+  },
+  {
+   "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+   "sha256_before": "26d0c1bc43e6a406b8e5d4e9c15378846f284301adffcbb3546a0cfd6a216e13",
+   "sha256_after": "dc3a549bc748c5830c07fb370506dbd20f060b982a010fee238420f45e76b0ef"
+  },
+  {
+   "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+   "sha256_before": "969de27b335bd63b45e32153ee5240c798c9affc7d06d4752c6a6b981783ee56",
+   "sha256_after": "ac2200a278a37b53e58dd5a5c0112f38b369637e049436f180b82bdb1e7f14dc"
+  },
+  {
+   "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+   "sha256_before": "152876b8f784298a511f05d4a05b80d304c047234164768918b98684316c56de",
+   "sha256_after": "2c788e606954c98c36a6977b011cf9e655c1e28c27374103e91eee8306c701e6"
+  },
+  {
+   "path": "theories/becoming/OPENING.md",
+   "sha256_before": "03083d10eebf1301bf4b90707aedfe663ed815da489970389d0fb88b1abe39b4",
+   "sha256_after": "ad1771d8600e63efeae7761e596245bc1479bfdfe8f97aa8193140b18a4c413c"
+  },
+  {
+   "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+   "sha256_before": "ad174d979201d400b9cf42a39d7ea0297172931bb4445d6d60c2a5728bfc55e8",
+   "sha256_after": "61a61e1aec8c27c09945d8fbeb289041ac7bdbfbc027d87a0f02decc0d0d10cb"
+  },
+  {
+   "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
+   "sha256_before": "8044ca187bdd4f0ed07ed66e640294db6c750c0608301347b581de800914447d",
+   "sha256_after": "7c3ca8d1d1b30b4bd8913db7778e27aa5f2ca80e06e8142dd82d573bc7abbec2"
+  },
+  {
+   "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+   "sha256_before": "8bcc6540de8ca6d74faf7b27842883c1e45fc7d3a0753adf9f94b77fc746c1e8",
+   "sha256_after": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad"
+  },
+  {
+   "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+   "sha256_before": "725ec2aba70d52375ce4fa7042ea86fe4f8807ee90e91fa8a6c53a9c34a44fa0",
+   "sha256_after": "df921ac19f5c6af5224ff939121471d928338e22714baf622d19c1b5e1aa57e3"
+  },
+  {
+   "path": "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+   "sha256_before": "182865dc14ceaec645cc70c67ac18d25382f0249663924b9a653730db6475f42",
+   "sha256_after": "59e3543f8b1a77c1d1c9b7449ec261ce009d51b7fb4e5bc522e3702041d4af04"
+  },
+  {
+   "path": "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.zh.md",
+   "sha256_before": "6b315b39104b13d61163a329ce3659f37143a031ebf84d605edfc14507c504b0",
+   "sha256_after": "8323c301d4df635f1e2ee6081613b061b7a763fec524ef879f3af23b2e08fbbe"
+  },
+  {
+   "path": "theories/becoming/results/records/a-law-through-a-projection-along-one-run.json",
+   "sha256_before": "52bf6c083eca8012fdd139c60f7bafd3c8fa1fcde8b4c59c17510f3fedb71841",
+   "sha256_after": "5970da7995d335e51be52366ad926c067164a730b0f9d62e93ecc9aa4b212a5a"
+  },
+  {
+   "path": "theories/becoming/results/records/a-law-through-changing-coupling-along-one-run.json",
+   "sha256_before": "d857151cd8e8d1049d94ded5143196fffa7b763bd58550234bd5d3069e895c69",
+   "sha256_after": "e7591f922533029c121560d9eaa34dd8b429aedeab8cd5003c3bd343a2df0e79"
+  },
+  {
+   "path": "theories/becoming/results/records/a-law-through-coupling-along-one-run.json",
+   "sha256_before": "ba4ba6b035d6be9d7a2ca7d733093ec87620fc0e6861010215bd891a41574ed7",
+   "sha256_after": "9ad05ce03ea98664c04ce9b7e147760af39797879a8111b3d22507a1feb688c0"
+  },
+  {
+   "path": "theories/becoming/results/records/becoming-spine-instances.json",
+   "sha256_before": "d871488e2dd3c93f87a5253d2ae914e5dcb2ccd67b4f1f8e2b288b91e60fddfd",
+   "sha256_after": "419ceb3f4e9c8d9ac189901ed313e3049081c3ded5fe6cf1eb111843b78e56bd"
+  },
+  {
+   "path": "theories/becoming/results/records/classification-robust-generative-comparison.json",
+   "sha256_before": "31649c117406b77b3ebf9f863cee28a79bf22fb7a8da0bd4e7ba2847139105ff",
+   "sha256_after": "aaf0e23c104ac68caec51a28b098d0ebac4f7266b1a4e78982c7d9c6bb635ed1"
+  },
+  {
+   "path": "theories/becoming/results/records/comparison-by-widening.json",
+   "sha256_before": "9837b50ece162ed5a0ce0b362a8a4a8636597460b9b9a22867eb5dc71565940f",
+   "sha256_after": "f0af66498cb63b3dac320df6476dbcc4749759f4bcb45322d4cc99e1ee081da5"
+  },
+  {
+   "path": "theories/becoming/results/records/comparison-where-the-rest-responds.json",
+   "sha256_before": "795a216061a10b084da8cb07034d12f2a1fde8b5ae9c485eb285669f2b50e6f7",
+   "sha256_after": "c73097db3dd3c71922214229b8cb74e8053e146528bc1a256970312b13305117"
+  },
+  {
+   "path": "theories/becoming/results/records/comparison-within-reach.json",
+   "sha256_before": "ebd4f2db370c6ed307c544c132b9de3f21e9aa466411b2ff5ca1a636b5b69141",
+   "sha256_after": "71de2a9b29c34f80295effa1834672f0d987c59ab6a3035a0bab01bda094681d"
+  },
+  {
+   "path": "theories/becoming/results/records/conveyance-crosses-the-boundary.json",
+   "sha256_before": "b522feb084fbd2874811c0d414bc0e24c9e4acfc7b25a029e51d4d17a123e942",
+   "sha256_after": "93e7c301dd6c8142df56a81f2eb5208c9d1aa80f855abbce60c6cfda11f954a8"
+  },
+  {
+   "path": "theories/becoming/results/records/counterfactual-is-the-course.json",
+   "sha256_before": "a34f1a672c3f60b4a82fd84cc74b24170bb37063e4f50e27c673aef85d808d07",
+   "sha256_after": "96577da2e38b7d4bbc5f75ae89dad0069bd7b36a627b542cb5234ef35a85bb89"
+  },
+  {
+   "path": "theories/becoming/results/records/derived-extent-limits.json",
+   "sha256_before": "353a6d9708dfcbb2a42bad8545548862fdd44171e7ded6eee310999149e95785",
+   "sha256_after": "f72e4c8839655dda8cea8e4ee810db5c433f79e6c8b74bd46f130234d3315e38"
+  },
+  {
+   "path": "theories/becoming/results/records/exchanges-commute-unless-joined.json",
+   "sha256_before": "0dab47ac932d2bf25a9b963237f865ccb1d0b6498648a560ebd2796d071e0659",
+   "sha256_after": "18e0459ed004f8602c2bc80fa2b61ac255f09f29d4f314c02415a52d23ef4a26"
+  },
+  {
+   "path": "theories/becoming/results/records/experiment-needs-return.json",
+   "sha256_before": "8794e19565f83655a5f8b3aecafa66c21c1218bf028847d7c68172d0d65a097d",
+   "sha256_after": "0d54cae1d15ef620c0c26cc2679cdd6f1bbdd5aaba04b79910fd6652e694cea3"
+  },
+  {
+   "path": "theories/becoming/results/records/finite-aggregation-within-restorable-basic-losses.json",
+   "sha256_before": "e2d11868b9420cb41ad837d5667a0083428bb9c357ae75fe2d5e323dc500482c",
+   "sha256_after": "698abd9386b47dfe18a66b997414d4de23c0f9524f69bb97473c6fce97aa17fa"
+  },
+  {
+   "path": "theories/becoming/results/records/fixed-places-and-sole-lines.json",
+   "sha256_before": "a3d2d92d747437f7eb6ee91f6641b7f2a2c1c541d481422adbedc8279b764f52",
+   "sha256_after": "7bacbdc98fb2e64c6b86fc41581212b79ba13d9dbaafbeb239b9b0fd90f6f49d"
+  },
+  {
+   "path": "theories/becoming/results/records/formed-software-continuation.json",
+   "sha256_before": "e818c3d026db6ac08ca869813d1cb6e6e50536439d2c05949f2a9a201f586ac6",
+   "sha256_after": "c44c03cd40f339c3d228aa561d81c521ef974d0af452393f3bea3e9a134c8bc1"
+  },
+  {
+   "path": "theories/becoming/results/records/fulfillment-chance-floor.json",
+   "sha256_before": "2df8d731073b038aefa48cb7032962ca6359453d105bc8706eb6a54f5488db56",
+   "sha256_after": "1b5e70f87bce039da6dd0235b3703d7fbee954520c550b7a9787af098fdac769"
+  },
+  {
+   "path": "theories/becoming/results/records/generalization-through-lumping.json",
+   "sha256_before": "cc72fd2597cefa08627eead2689044840c992d057cbb97a21ddcf5ba519ed431",
+   "sha256_after": "399400e8f3da3ad60a1da15fec55635146810cfb8a95d5ec4d7d7275802fed61"
+  },
+  {
+   "path": "theories/becoming/results/records/gluing-under-parity.json",
+   "sha256_before": "a23adb9cb6ced80c292ed5263a1cf2f55789483f4f22f62b72d905af377fc331",
+   "sha256_after": "9ed8fdf29b01182ab39cb346700ec4d537087229cfaf5ced982e160fd0811323"
+  },
+  {
+   "path": "theories/becoming/results/records/how-a-carried-difference-grows.json",
+   "sha256_before": "d27f7da0c4291f6251947900a87c6c23f8f0bbdad157f13cb380e8cc0cfb9612",
+   "sha256_after": "653961bc21f68eba2983fbff4d47c6ec29e145d64c55f422b4b1c5e7a7a3e9e6"
+  },
+  {
+   "path": "theories/becoming/results/records/how-loops-form.json",
+   "sha256_before": "4fba73b6d10b8c375777aeadae7e699e9f8737b85a22ea4070b42667b8e9e705",
+   "sha256_after": "c9d42a1861540aa546cf86702ad055c3fc5a1781f408bf71af3e7eca0bf0bd24"
+  },
+  {
+   "path": "theories/becoming/results/records/how-much-difference-arrives.json",
+   "sha256_before": "bbfc8c6d7e4f031c0f2f4ee201df697150f2955f14df8691f8c615b3ee94b9f7",
+   "sha256_after": "99d9985156c4ca46f5bada67155a332942637e00131db805cbbf05ba426f3714"
+  },
+  {
+   "path": "theories/becoming/results/records/identification-where-bounded.json",
+   "sha256_before": "fc79377943b84504333b6a958e2f6d90efb0049467c43851ceef4c875dfebe35",
+   "sha256_after": "27af8a613f7122fff06e781006c7537c86ddda7d026d8ee18dcc65ec223162cf"
+  },
+  {
+   "path": "theories/becoming/results/records/identification-where-runs-part.json",
+   "sha256_before": "22b83f6c76d3ca62d6871954a1f29a6f0cac9c733385ee02435e39a48c307578",
+   "sha256_after": "0df93d97ac1198b57f1b217c8ade1021fe2d6386f1d2f61d76c151b6a61113dd"
+  },
+  {
+   "path": "theories/becoming/results/records/learning-by-refutation.json",
+   "sha256_before": "c227eeee7c9de09950b918d17c63378cef1e5da2d9b13e23c1e8ed547882f7c7",
+   "sha256_after": "81e0cec8888f713df47f12e9b0a4dce75ddcc2c1dfbc6f562ef25f9d34e068f9"
+  },
+  {
+   "path": "theories/becoming/results/records/learning-through-a-map-is-tracking-in-the-limit.json",
+   "sha256_before": "0f44121d101d41705c7a54f8aa691e9c1e3932ba42a9ebbe0c86874575603058",
+   "sha256_after": "8fa39b35d0a55d58c6dca96698efcfbdb62074c1837cd133af467de009f26a81"
+  },
+  {
+   "path": "theories/becoming/results/records/levels-of-closure.json",
+   "sha256_before": "7a3ba44518f91924138451c6cf7cb4f7fe4d216aedcd5413cfb6d28475c92dd1",
+   "sha256_after": "e20e5d3aa747419e32e369b72249513c86f80a10a41d90e1fe779efaddd1a913"
+  },
+  {
+   "path": "theories/becoming/results/records/loops-within-what-a-law-reads.json",
+   "sha256_before": "0499be4347029006516b13371069c2d9863087c262d8cf2c371e5cf6c191186f",
+   "sha256_after": "547552bfa26728e320bb830559d497069a33fa5f7d23e5d5ef173f50a0905ad9"
+  },
+  {
+   "path": "theories/becoming/results/records/market-partial-correction-boundary.json",
+   "sha256_before": "c571aab75ab54a832da11a8d081a780f402752c74307bd1e5a0c7326defae66b",
+   "sha256_after": "5a35e736e5ba1c19e65700539fd39980ff80f220d64a6fa66e6da757ccff61f1"
+  },
+  {
+   "path": "theories/becoming/results/records/market-supported-finite-transition.json",
+   "sha256_before": "84ac2d965524c74f47e6b69ce0f9c2f6db8048fc9eb8c2782be162754efc54ea",
+   "sha256_after": "721c542315d04f2b2608cb37399dbe3374162d498223b40d76b43dc3cec4198d"
+  },
+  {
+   "path": "theories/becoming/results/records/mediated-evidence-transport.json",
+   "sha256_before": "2b7bcff80cd80f3505ea94ae8936e57b8b3270f0952f84f0568719affb349026",
+   "sha256_after": "5a1c2d93872a54a0d8bbdf1ccf986bcb4d7e3cf0c4ef537e7bba899b0d00d0f9"
+  },
+  {
+   "path": "theories/becoming/results/records/metaethical-core-characterization.json",
+   "sha256_before": "7a6ac6470e475a0f833b42216e6689ace98f5ebca9f9bfce0519d186b549094d",
+   "sha256_after": "721b86d6c1d3e0c4c4b3915e6725e8776d520814e0544279b19b9ae370513160"
+  },
+  {
+   "path": "theories/becoming/results/records/mutual-dependence-and-its-pace.json",
+   "sha256_before": "b29c303e9fbf4d04e9e998e08a7c6c0b1d6e3788d746fa2acca093ad1ea25732",
+   "sha256_after": "2b6268754d9b41e83ba814cd537b0eb9af96be85ed215d6069a3689c67a13562"
+  },
+  {
+   "path": "theories/becoming/results/records/observation-is-a-route.json",
+   "sha256_before": "f6d68db093b982e8ac7b7d2d29dc0531fc601d5debbb7c11acb3377165d60865",
+   "sha256_after": "75016c45de99af96924da68d0ea058a2084ffd9754b1ff687398ef45a4da28e4"
+  },
+  {
+   "path": "theories/becoming/results/records/open-form-realization-under-revision.json",
+   "sha256_before": "7acaf57b7940e23cf94a5376f8867884dd32c6edc3a9dd8ce3139093d386915b",
+   "sha256_after": "6e785aa68834e73179e17f9ff36bcf3af72a487469801aaabeca3c53f9ae3c5b"
+  },
+  {
+   "path": "theories/becoming/results/records/order-of-exchanges-is-the-invariant.json",
+   "sha256_before": "0636f605876f4689be50666316bf669b98c26b39173e7fe856844cf5c02805a0",
+   "sha256_after": "28e773ef0eff087c885899fb95752834529f4d0d41a8661686bf2889a6d0de39"
+  },
+  {
+   "path": "theories/becoming/results/records/organizational-formation-from-generative-comparison.json",
+   "sha256_before": "045f50500826fae83698329fa7083415936f1e5f2e3de1ba0f962fbd39025890",
+   "sha256_after": "4285fd0157246dd29a2139647e809d5c5cd038b1cb318291501aa21eeafee754"
+  },
+  {
+   "path": "theories/becoming/results/records/place-relations-in-context.json",
+   "sha256_before": "be0a919615503ec058e6cc3496db01f4432083da9831e64f32cbcc9a2b92c7b8",
+   "sha256_after": "48a47c949af32aeb4782ba0f298b9c9c34d5db520f21ea737a19289c8899bc35"
+  },
+  {
+   "path": "theories/becoming/results/records/positioned-positive-reason.json",
+   "sha256_before": "d07a6561830e8671961ab4bbc5baf4479caa81ab908448f4b70f7645455ffcb8",
+   "sha256_after": "a31eee202ff683f1c3447a94ca802c7c3a854bfdd32ff9731c23c50cab1438c1"
+  },
+  {
+   "path": "theories/becoming/results/records/positive-ground-open-futures.json",
+   "sha256_before": "26f54b92bdfd6659cdb96561246953328390e26a10a961ccec640f4ba43ba9d7",
+   "sha256_after": "55dae574ce50b964cdfad86be53e302782aef8a6d954274c18d0f011836b227a"
+  },
+  {
+   "path": "theories/becoming/results/records/presupposition-scopes.json",
+   "sha256_before": "3d9c471e00266d30b836835def19048cf98f626ec89ae2be3e8ee08340479b81",
+   "sha256_after": "45f55abca18bee2c1802c98df4befb2678a6fafce9f27b75e90a1d51a8cbdd6f"
+  },
+  {
+   "path": "theories/becoming/results/records/projection-carrying-a-law.json",
+   "sha256_before": "c1a514c0d65f04cb7920e57d578ac810ecd4fa94a0afc70d4cfcd22441a19564",
+   "sha256_after": "a8908d0716d84e95d45d206f32a00a235a2245dd3c9ab30019d68176a548d5d2"
+  },
+  {
+   "path": "theories/becoming/results/records/protection-priority-excludes-uniform-aggregation.json",
+   "sha256_before": "f3f967093b31143d042ed0c35801f6c9e0154e68ca9a42f4a5b20f8dcdb75c94",
+   "sha256_after": "8d1b8c7554f46f111cf21b2279654ca01a9cb1ac52830c3d2353e79ccea5dd7c"
+  },
+  {
+   "path": "theories/becoming/results/records/raising-what-couples-in-draws-from-beyond.json",
+   "sha256_before": "d17b5110f18512674116a2c4450e6973f012224d7cf6c9fcf332ed5af3644621",
+   "sha256_after": "d4e755ee94eaac4d63260f819898bc4ac1fefc9536a24b82cf6963c060f839c4"
+  },
+  {
+   "path": "theories/becoming/results/records/ranking-under-readings.json",
+   "sha256_before": "a80f71c140adb3ba2fdf9e9b8776c11eb09ddae6d5e536bb0a50b0fe2e88e031",
+   "sha256_after": "2e6f2dab69605a77665a6d0d8ba43d902bc6dc5f944a94c4207a29eef68a47f6"
+  },
+  {
+   "path": "theories/becoming/results/records/recoverable-mediated-change.json",
+   "sha256_before": "296911786b924765b5a60426dfab12f1b19a53f80d37f034aa93f474ce27b455",
+   "sha256_after": "d2e0b58a27f16a08c42c9dc8950047fbec0546e8cc793a2c406c3925f7441fd8"
+  },
+  {
+   "path": "theories/becoming/results/records/relational-generative-comparison.json",
+   "sha256_before": "2b92a02eced8078b9b5ee5079b5afb77de4502c1c140e048e7c5c940e8775f15",
+   "sha256_after": "8f84444bccd02ce767c55be6418edff070ebb7aed534de3c936fa7ea9b9ec324"
+  },
+  {
+   "path": "theories/becoming/results/records/relational-reading-comparison.json",
+   "sha256_before": "a9d4b94ddec46ed938a7007e6b2420e88218638e1fb18ebe941e7e8e432044c3",
+   "sha256_after": "dc5d26e3a7c21d2dc9f93c7bb6e7058217a5a535198559a3756c45306c6f6abe"
+  },
+  {
+   "path": "theories/becoming/results/records/renewing-consuming-formation.json",
+   "sha256_before": "fb3fca5e6eaea6308fc5ed5b079896bcc7f8ce9776e3e4672d7894e406d5b893",
+   "sha256_after": "2399961e88414e35b2b05d46acfcc2ea324f46f2ddf8cb1aeca8ccd18df5a352"
+  },
+  {
+   "path": "theories/becoming/results/records/reserved-shutdown-during-recovery.json",
+   "sha256_before": "a255beb057a68eb4aa06299d7b8795e955db1ba5d44ecc425769bd1fc8f4d9cc",
+   "sha256_after": "236f28e490396478ec0a52a61ec8e320f4909b55c83fdaa35394ea15e386e5ff"
+  },
+  {
+   "path": "theories/becoming/results/records/revision-with-an-undecided-value.json",
+   "sha256_before": "69f8b0360bd7bc47694472be9fb5cd735af708cc88691b439ac920fc50922633",
+   "sha256_after": "b926d9c0caea64ad1380241260f84289a7155bbb9067f08799fe31f987dc0bb8"
+  },
+  {
+   "path": "theories/becoming/results/records/scientific-inquiry-foundation.json",
+   "sha256_before": "4428bb6e95b9db859e9e9cd4c431a848e23f650cc74055fb00ca8bcbcd1dfa5c",
+   "sha256_after": "e493f86075925edd3c9feb8a4ad5084e350a102ef1859ed15ddcc701e56b4bc0"
+  },
+  {
+   "path": "theories/becoming/results/records/seeking-boundary.json",
+   "sha256_before": "14f2961e4560fd8c73c4303f06bc56ff587d4914a2b4da41f040457459c14191",
+   "sha256_after": "c8bf5a7257682dac4078439f50b852a8f886dc9bbcc2d4840266ef5426d0a8fb"
+  },
+  {
+   "path": "theories/becoming/results/records/selection-through-a-model-of-the-options.json",
+   "sha256_before": "b14b445a67653a0c55e88c52361ac2c43d0b2efd324ceebdddb2068460869b46",
+   "sha256_after": "375e19a002d80709942221a794a688aa79483c07f6f94c02fd78982f40edf175"
+  },
+  {
+   "path": "theories/becoming/results/records/selection-under-registration-revision.json",
+   "sha256_before": "46c1dfd6920567645c63f2ff7ef075692ad2f1eddb21f6ba1910570d9b961ca2",
+   "sha256_after": "1c08432f4c84e76807b876dbe5aaa3dd404f1e398e67a5b19b367999f605b514"
+  },
+  {
+   "path": "theories/becoming/results/records/separation-loses-the-relation.json",
+   "sha256_before": "f5d892c7e37cb06b12a4563eaaacb33d9af2f0f3d2c4a737642957f3fa02f1dd",
+   "sha256_after": "643a10b98cff2724cb5ad0fe2035621f837f3738867c13510fe18922c765862b"
+  },
+  {
+   "path": "theories/becoming/results/records/significance-retained-within-margin.json",
+   "sha256_before": "355ae62963b83a78c157acfe8c4940bbd40a08e5f764118d97ffcccdbdec824e",
+   "sha256_after": "053b36cafa5d2facf4ce0ad48283c1d159c926ae89007662d3e0af2dd6569a4f"
+  },
+  {
+   "path": "theories/becoming/results/records/the-gap-for-ones-own-act.json",
+   "sha256_before": "9644bd016a5ee7dee2ca721324dd3f5259e0046b249bee8b5270ea9e0572c45b",
+   "sha256_after": "5090fbcf62633e3efb5e257b898484967f6dd79a07aa717549d4042a3fc1dd46"
+  },
+  {
+   "path": "theories/becoming/results/records/the-split-that-makes-sense.json",
+   "sha256_before": "5f40ab24393d3cd36ce59fe49e57696a87399305c75c528102d9537335960f7a",
+   "sha256_after": "19344e35d21cf2c30d5e2862255d8e5299165a766ffc82a64f9f4b37cabb49e9"
+  },
+  {
+   "path": "theories/becoming/results/records/the-step-index-from-own-courses.json",
+   "sha256_before": "f466d5c26a0673800f736a8542eb31de525847ab92c816ab7ec4220f38afd90b",
+   "sha256_after": "15cb4a43ed133672b94777d45723b8ab6b91a15a7fe14c98b18677f34ab2bdca"
+  },
+  {
+   "path": "theories/becoming/results/records/theory-of-becoming-foundation.json",
+   "sha256_before": "9be8cf4a5ec295b37462e8792a3dd3e2f3a90def0c8fd3b406fde38574793853",
+   "sha256_after": "3a6f205bfbd50e7126873ed4d04414198a3f69b88bb712dc42e6f8239b53ca02"
+  },
+  {
+   "path": "theories/becoming/results/records/timely-response-necessity.json",
+   "sha256_before": "3449eed178d512eed1734f616cb24a025a7766e916375023a7c0dc8bf3a335bc",
+   "sha256_after": "7585a382994af8ba7162298936b177f87f97e1611d9d02e88a658412b0c97c35"
+  },
+  {
+   "path": "theories/becoming/results/records/unity-of-readings.json",
+   "sha256_before": "30f6cf298f9170b7e4da729e29abf260f5935c92453721c05bc43b08243d3020",
+   "sha256_after": "40c22757ec96d0c8a1609c515b9bc45ede78f488b01fbc6738a101747db3cbe8"
+  },
+  {
+   "path": "theories/becoming/results/records/universal-practical-warrant.json",
+   "sha256_before": "ccf4404ecfe9a7079ace620b882406b21dbf1b3c90f2dec24ed197f9854000cc",
+   "sha256_after": "60dc1a4875836a87ccafb8f0672ecd0f1b8cc4b1a41ad42e726a01357532c6bb"
+  },
+  {
+   "path": "theories/becoming/results/records/weights-count-situations.json",
+   "sha256_before": "2379cf90fc12f8519575a06579b04f8b648476715b6fcaea3d78390a7ae7c455",
+   "sha256_after": "026e2a49c7266e6c388e4c147c4e2e0731e3879f0212178682fc190cb7337c2b"
+  },
+  {
+   "path": "theories/becoming/results/records/what-a-commuting-law-keeps-apart.json",
+   "sha256_before": "f7f66659824b3863c415d39c345f2196ee08e0801180e42f5f72f4579cd859db",
+   "sha256_after": "ff8925e690c651d0d3004d85ee96333c4f7f7fbbc4d8b975bbe7a2932e3f389a"
+  },
+  {
+   "path": "theories/becoming/results/records/what-a-law-of-the-whole-and-no-part-takes.json",
+   "sha256_before": "bfbde4bd0552d232e02852551bb6ad0ad155498013837dc1e320aa08de0a1325",
+   "sha256_after": "e45fb86556aeba1ad5c58a71ffcb4f79a90898b3e6e7b90b49094fda49f53c13"
+  },
+  {
+   "path": "theories/becoming/results/records/what-a-method-comes-to-say-in-the-limit.json",
+   "sha256_before": "42f5b481a574a4514607f0a5af4ed08d7d65d1fce24a097b5018e0f0be3821ad",
+   "sha256_after": "5f0ff15db03f862571dff31c33e68b5ca7951cca96905b5b20a10b280871c371"
+  },
+  {
+   "path": "theories/becoming/results/records/what-a-pools-acts-respond-to.json",
+   "sha256_before": "18475b95ecf9be03b17f336f8ae5162eb2f312a5ee94e4b2f9756da44ee2e183",
+   "sha256_after": "16150491c2fd78698891e71615e816794c6d84cfbec3bf19cda3797c85c1afc1"
+  },
+  {
+   "path": "theories/becoming/results/records/what-an-extrapolation-given-nothing-fixes.json",
+   "sha256_before": "9db20300ed2976a698aaa25596e00776fc712e9652ba52a673f4bdac72fd2ad8",
+   "sha256_after": "7bbaebf77a7608ae262c799f0337f8e70992bbbb1ce4591bc7dd4b04108e486c"
+  },
+  {
+   "path": "theories/becoming/results/records/what-finitely-many-labels-fix.json",
+   "sha256_before": "5cef0e157e83e77d299cc4f1d2479d9e6c2f3b7cac96131b889024297d8c643f",
+   "sha256_after": "13ba57cd1b8369458e5a95b302316cda12a46c417c0004ba45d10279719a59f5"
+  },
+  {
+   "path": "theories/becoming/results/records/what-pooled-coupling-reaches.json",
+   "sha256_before": "861d3bf4db5ff15696071164a057004a2627e28449959c936554716a8257938e",
+   "sha256_after": "c5003ed54845a28e9bfa46fb1f695ed1e8194e6f300adadd4421a2ef287ad368"
+  },
+  {
+   "path": "theories/becoming/results/records/where-a-level-couples.json",
+   "sha256_before": "9a892244f475737806afda70849d0ce2edc000aa5d6f3da27cb692d5431c4587",
+   "sha256_after": "ba32eba8a4e4cdaf5b576c86a061a1de3fb717f0409da5a0198338a6885f14cc"
+  },
+  {
+   "path": "theories/becoming/results/records/whole-first-and-bounded-centers.json",
+   "sha256_before": "69fd225bf1b665c84c20cf98ed191a0211ba8eff864f83c27127436983bd3110",
+   "sha256_after": "d8f9280b6dc7ea3cf3c7c02d14bbc7f671cd3adc9d8504fe789af6645a6b5a2b"
+  },
+  {
+   "path": "theories/becoming/results/records/wisdom-root.json",
+   "sha256_before": "18a93a57c30707ac31e922e9bc8a032cf05fbd861ffa31eaf725571207e72733",
+   "sha256_after": "6e42425e3712a3a7e069d9febc949af5fee075006df3078ff61e6f7ad98181fd"
+  },
+  {
+   "path": "tools/research/navigation.py",
+   "sha256_before": "52eb593f0c62b0b51c4d77326cad584acacb2ac19ebfa57e9ddf84d5fef24ee2",
+   "sha256_after": "bc8ffd5303fd4ebe7669b63b0e32c5fcee41444c4de26fc24291b51abdfa4a83"
+  },
+  {
+   "path": "theories/becoming/results/records/alignment-direction-under-widening.json",
+   "former_path": "theories/becoming/results/records/alignment-direction-g0-j.json",
+   "sha256_after": "7f08a92d046a57c501e67edfaf4e628758388036fde6222f2527aeecb1df6bf6"
+  },
+  {
+   "path": "theories/becoming/results/records/practical-judgment-under-living-significance.json",
+   "former_path": "theories/becoming/results/records/practical-judgment-g0-j.json",
+   "sha256_after": "d074a7fd8d3b654856b2059ae90f769b100b3ceefc5385c7996c9f3d4f175fe3"
+  },
+  {
+   "path": "theories/becoming/results/records/living-significance-on-held-lives.json",
+   "former_path": "theories/becoming/results/records/held-lives-g0-is-centering.json",
+   "sha256_after": "7bc9c7c72facf799afd48231a6c3090295c3c690d5439b94ba6130631591e7a5"
+  },
+  {
+   "path": "theories/becoming/results/records/own-good-to-reachable-living-significance.json",
+   "former_path": "theories/becoming/results/records/self-good-reachable-g0.json",
+   "sha256_after": "d9596fb8fa69f7eced67c2fc426e3cb6d91d8261a6f64db46b4b9ff981cf02ec"
+  },
+  {
+   "path": "theories/becoming/results/records/continuation-condition-yields-living-significance.json",
+   "former_path": "theories/becoming/results/records/one-axiom-yields-g0.json",
+   "sha256_after": "1eb4d17237fdfc4c2452cee7f5655ac6b8fb14457d83916e3dddb2904edce453"
+  },
+  {
+   "path": "theories/becoming/results/records/continuation-condition-decomposition.json",
+   "former_path": "theories/becoming/results/records/axiom-decomposition.json",
+   "sha256_after": "454f4d0fa2bf2ab1dcc2f42042d4c7e9ac61805a35f3685c9f433608deba2ee9"
+  },
+  {
+   "path": "theories/becoming/results/records/closure-verdict-meets-continuation-condition.json",
+   "former_path": "theories/becoming/results/records/closure-verdict-meets-axiom.json",
+   "sha256_after": "30b3baf4457f70aeac5367bb76894867c8d6ead6118abebd2c7e98536849e328"
+  },
+  {
+   "path": "theories/becoming/results/records/wisdom-root-without-axiom.json",
+   "former_path": "theories/becoming/results/records/wisdom-root-part-one.json",
+   "sha256_after": "757e189529e70638c32ef1f1699d5dfb98f954bca0d76991cf2f24312b1a003d"
+  },
+  {
+   "path": "theories/becoming/results/records/selection-through-couplings.json",
+   "former_path": "theories/becoming/results/records/selection-through-registration.json",
+   "sha256_after": "c6c8d884c89b0e9a8328a18e9f38cebdd63c7ea5033f2134d9a0a3964b559f19"
+  },
+  {
+   "path": "theories/becoming/results/records/testing-within-couplings.json",
+   "former_path": "theories/becoming/results/records/testing-within-registration.json",
+   "sha256_after": "f3392b910e399ab6f57f75f5b51d3c787b7ba5b97a9654418be20deb57156f13"
+  },
+  {
+   "path": "theories/becoming/results/records/differences-below-threshold.json",
+   "former_path": "theories/becoming/results/records/subthreshold-registration.json",
+   "sha256_after": "803d7fecbda25273ce89340787ca8f8ceec2ad513e228328d574397320276829"
+  },
+  {
+   "path": "theories/becoming/results/records/learnable-through-a-map.json",
+   "former_path": "theories/becoming/results/records/learnable-through-registration.json",
+   "sha256_after": "004f66ec37aa90183d6c1511875ed5e72f8ca3646ad6804cbfc6c93107fa89c1"
+  },
+  {
+   "path": "theories/becoming/results/records/claims-shown-in-context.json",
+   "former_path": "theories/becoming/results/records/contextual-registration.json",
+   "sha256_after": "62d9334dfdeccdd1aca2d874d89034ddbf1ecae22930954ccad6a5b340582da6"
+  },
+  {
+   "path": "theories/becoming/results/records/readings-within-what-they-read.json",
+   "former_path": "theories/becoming/results/records/registration-within-what-it-registers.json",
+   "sha256_after": "833cfe92d06e48999588393736202b8c756309a2a92de04e070fb31da40d6100"
+  },
+  {
+   "path": "theories/becoming/results/records/sensitivity-is-the-least-coupling.json",
+   "former_path": "theories/becoming/results/records/sensitivity-is-the-least-registration.json",
+   "sha256_after": "3d42d9b066784d77c541a9808a08dfa9c1ffc7114833361691b4d6107319a462"
+  },
+  {
+   "path": "theories/becoming/results/records/only-the-order-of-change-shows.json",
+   "former_path": "theories/becoming/results/records/only-the-order-of-change-registers.json",
+   "sha256_after": "4b1846d539785edd9aac33af4a3cab4facdb4571d85c27d3136d1ededf698ebc"
+  },
+  {
+   "path": "theories/becoming/results/records/runaway-distance-uncoupled.json",
+   "former_path": "theories/becoming/results/records/runaway-distance-unregistered.json",
+   "sha256_after": "64e63a997eb46e0fcc2a6e52fda20fb405b44b9c3dcd970153f6d6bc1387f0c4"
+  }
+ ],
+ "scope": "Record ids renamed with former_ids kept; live references rewritten; history, evidence and sources keep the old ids, and records/OLD.md is a generated redirect page.",
+ "note": "The renamed records own links to other renamed records were rewritten in the same landing (the tool, fixed after the first application, now does it in run()); sha256_after is the landed state."
+}

@@ -82,12 +82,12 @@ Ren's speculation on 12 October 2026, ‘the full "truth" can be derived, situat
   - Output: Orbits and gaps.
   - Input: Remainders and the lasso world's positions.
   - Preserved conditions: None. [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
-- related, not a proved adapter: [registration-within-what-it-registers](registration-within-what-it-registers.md). There, no family of readings within holds every reading at once; here, a bounded course's law is derived, and a world answering its own extrapolation exceeds the bound.
+- related, not a proved adapter: [readings-within-what-they-read](readings-within-what-they-read.md). There, no family of readings within holds every reading at once; here, a bounded course's law is derived, and a world answering its own extrapolation exceeds the bound.
 - related, not a proved adapter: [generalization-through-lumping](generalization-through-lumping.md). Generalization is exactly where it lumps; here the bound makes finite data fix the whole course.
-- related, not a proved adapter: [wisdom-root-part-one](wisdom-root-part-one.md). Its learning clause says that extrapolation by elimination's coming to rest is unrefuted; held_byElimination_rests states the step, a function of the list's length, which the extrapolation does not have.
+- related, not a proved adapter: [wisdom-root-without-axiom](wisdom-root-without-axiom.md). Its learning clause says that extrapolation by elimination's coming to rest is unrefuted; held_byElimination_rests states the step, a function of the list's length, which the extrapolation does not have.
 - related, not a proved adapter: [identification-where-runs-part](identification-where-runs-part.md). Here for determined laws; there for every process, exactly where its runs do not part, determined laws being the instance.
 
-**Used by:** [how-fast-a-rule-may-change](how-fast-a-rule-may-change.md) · [identification-where-runs-part](identification-where-runs-part.md) · [learnable-through-registration](learnable-through-registration.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [tests-fix-likeness-where-determined](tests-fix-likeness-where-determined.md) · [typicality-by-counting](typicality-by-counting.md) · [wisdom-root](wisdom-root.md) (interpretive) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
+**Used by:** [how-fast-a-rule-may-change](how-fast-a-rule-may-change.md) · [identification-where-runs-part](identification-where-runs-part.md) · [learnable-through-a-map](learnable-through-a-map.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [tests-fix-likeness-where-determined](tests-fix-likeness-where-determined.md) · [typicality-by-counting](typicality-by-counting.md) · [wisdom-root](wisdom-root.md) (interpretive) · [wisdom-root-without-axiom](wisdom-root-without-axiom.md) (interpretive)
 
 <a id="sources--来源"></a>
 ### Sources

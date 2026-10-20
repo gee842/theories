@@ -44,7 +44,7 @@ Sufficient finite-transition conditions, not a complete recovery region or minim
 
 **Preserved conditions:** Same full State, actual remaining stock, budget and original parameters; successor disturbance is noShock with no added reserve. [RegimeTransition.lean](../../../../experiments/market-generativity/formal/RegimeTransition.lean)
 
-- Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). The mechanism informs existing G0/J judgment; stability neither supplies normative grounds nor covers all real losses.
+- Related, not a proved adapter: [alignment-direction-under-widening](alignment-direction-under-widening.md). The mechanism informs existing G0/J judgment; stability neither supplies normative grounds nor covers all real losses.
 - Related, not a proved adapter: [market-partial-correction-boundary](market-partial-correction-boundary.md). The new result relaxes the correction parameter; the original scope remains preserved and reusable.
 - Related, not a proved adapter: [market-finite-support-obstruction](market-finite-support-obstruction.md). Completed finite-support obstruction preserving this record’s narrower result.
 - Related, not a proved adapter: [lifting-where-branching-is-finite](lifting-where-branching-is-finite.md). The dual of kernel_iff_lasts: what no course leaves is what lasts every horizon; for some course, courses of every length give a run where branching is finite, given EitherThroughout and a selection.

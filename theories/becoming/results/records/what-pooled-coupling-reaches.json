@@ -187,7 +187,7 @@
   ],
   "dependencies": [
     {
-      "id": "selection-through-registration",
+      "id": "selection-through-couplings",
       "relation": "formal-reuse",
       "detail": {
         "en": "Reuses Web.SelectsThroughAll, Web.SelectsThrough.all, Web.separates_all, Web.class_selects and Web.admits_through; the delta is a pool's own coupling closure, blindness beyond it, the exactness of what a pool separates, and Flow.unselected_beyond_coupling_all re-derived as the case of one formation.",
@@ -235,7 +235,7 @@
   ],
   "related": [
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "detail": {
         "en": "There one formation's coupling closure, and the clearer's side closed under being affected through what it couples into (Clearing.clearerSide_closed); here a pool's closure is the union of its members', and the clearer's alikeness is derived from a law of exchange.",
         "zh": "那里是一个形成的耦合闭包，以及清除者一侧在经其所耦合入者受影响之下封闭（Clearing.clearerSide_closed）；这里一组的闭包是其成员闭包的并，清除者的无别由交换律推出。"
@@ -408,7 +408,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

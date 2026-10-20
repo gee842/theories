@@ -57,7 +57,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Output: The criterion along one run up to an equivalence, and coupling with fixed conditions.
   - Input: The criterion the changing coupling is taken through, and the fixed coupling it is compared with.
   - Preserved conditions: An equivalence. [LawThroughCoupling.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean)
-- **formal-reuse**: [testing-within-registration](testing-within-registration.md). Reuses Web.AlikeThrough and thresholdOnly: Web.AlikeThrough at one step is the coupling with that step's dependence fixed.
+- **formal-reuse**: [testing-within-couplings](testing-within-couplings.md). Reuses Web.AlikeThrough and thresholdOnly: Web.AlikeThrough at one step is the coupling with that step's dependence fixed.
   - Output: What registers alike in a formation at a step, under two level histories.
   - Input: The coupling of one step compared with the changing coupling.
   - Preserved conditions: None beyond the web. [Testing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
@@ -69,7 +69,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Output: Levels, requirements and needs read off configurations.
   - Input: The conditions fixed at one step.
   - Preserved conditions: None. [Renewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
-- related, not a proved adapter: [subthreshold-registration](subthreshold-registration.md). There a difference below a threshold is not registered; here which thresholds a formation has changes along a run, and with it what it couples into.
+- related, not a proved adapter: [differences-below-threshold](differences-below-threshold.md). There a difference below a threshold is not registered; here which thresholds a formation has changes along a run, and with it what it couples into.
 
 **Law family:** A law along one run (lead: [a-law-through-a-projection-along-one-run](a-law-through-a-projection-along-one-run.md)). Under an equivalence, a law admits a run's steps up to a step exactly where steps alike under it, by the same move, end alike, and failure persists. The lead states it once; the law through what a formation couples into and the law through coupling that changes along the run were recorded first, are superseded by the lead and are its readings. Members: [a-law-through-a-projection-along-one-run](a-law-through-a-projection-along-one-run.md) · [a-law-through-coupling-along-one-run](a-law-through-coupling-along-one-run.md).
 

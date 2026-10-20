@@ -35,7 +35,7 @@
       }
     },
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "interpretive",
       "detail": {
         "zh": "耦合、排除与共同回应给出实际使用的接口；观察关系和实际校准仍须对应。",
@@ -91,7 +91,7 @@
       }
     },
     {
-      "id": "contextual-registration",
+      "id": "claims-shown-in-context",
       "relation": "interpretive",
       "detail": {
         "zh": "带语境的表示保存各语境所显示者，去语境失败不等于整个核心不能表示科学。",
@@ -290,7 +290,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
       "role": "integration",
-      "sha256": "26d0c1bc43e6a406b8e5d4e9c15378846f284301adffcbb3546a0cfd6a216e13",
+      "sha256": "dc3a549bc748c5830c07fb370506dbd20f060b982a010fee238420f45e76b0ef",
       "declarations": []
     },
     {
@@ -357,7 +357,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     }
   ],
   "proof_bindings": [],

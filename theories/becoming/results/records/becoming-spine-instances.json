@@ -99,7 +99,7 @@
       }
     },
     {
-      "id": "practical-judgment-g0-j",
+      "id": "practical-judgment-under-living-significance",
       "detail": {
         "zh": "robust_iff_commonResponse 把 J 的稳健判断等同于探究层的共同回应，因此 J 的稳健性定理可在可靠探究的所见范围上使用；J 的规范前提不因此得到证明。",
         "en": "robust_iff_commonResponse identifies J's robust judgment with the inquiry layer's common response, so J's robustness theorems apply on the scope of a sound inquiry; J's normative premises are not thereby proved."
@@ -120,7 +120,7 @@
       }
     },
     {
-      "id": "self-good-reachable-g0",
+      "id": "own-good-to-reachable-living-significance",
       "detail": {
         "zh": "该路线的 Chain 即边过程上的可达（chain_iff_reach）。",
         "en": "That route's Chain is reachability on the edge process (chain_iff_reach)."
@@ -141,7 +141,7 @@
       }
     },
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "detail": {
         "zh": "桥接的 Discharge 一节在那里：公理之下外围的 G0 对每个清单成立，外围的三项定理由公理推出。",
         "en": "The bridge's Discharge section belongs there: under the axiom the periphery's G0 holds for every inventory, and three of the periphery's theorems follow from the axiom."
@@ -596,7 +596,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

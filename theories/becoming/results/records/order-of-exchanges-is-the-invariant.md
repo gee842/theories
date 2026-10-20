@@ -46,7 +46,7 @@ The footprint in this record is supplied; P88 gives the least footprint with dec
 
 **Preserved conditions:** A footprint containing the exchanges; the exchanges commuted not joined. [Reordering.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean)
 
-- Related, not a proved adapter: [only-the-order-of-change-registers](only-the-order-of-change-registers.md). Stuttering and the removal of idle steps show the step index itself shows nothing; this record shows that within the rest of the order what shows is the partial order of joined exchanges.
+- Related, not a proved adapter: [only-the-order-of-change-shows](only-the-order-of-change-shows.md). Stuttering and the removal of idle steps show the step index itself shows nothing; this record shows that within the rest of the order what shows is the partial order of joined exchanges.
 - Related, not a proved adapter: [normal-forms-need-decided-apartness](normal-forms-need-decided-apartness.md). P88 selects a lexicographic form on a named finite stretch with decided apartness; a complete finite Nat-valued invariant needs exactly that decision.
 - Related, not a proved adapter: [least-footprint-where-idleness-decided](least-footprint-where-idleness-decided.md). P88 reads off the least footprint with decided idleness; its joining and order lie within every containing footprint’s.
 

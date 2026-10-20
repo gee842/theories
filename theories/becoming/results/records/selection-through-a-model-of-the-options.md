@@ -57,7 +57,7 @@ Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification ta
 ### Dependencies
 
 - none
-- related, not a proved adapter: [selection-through-registration](selection-through-registration.md). A law of the same form: selection through the couplings selects alike exactly what is alike through them (Web.selects_alike_iff), and selection through a map separates exactly what the map separates.
+- related, not a proved adapter: [selection-through-couplings](selection-through-couplings.md). A law of the same form: selection through the couplings selects alike exactly what is alike through them (Web.selects_alike_iff), and selection through a map separates exactly what the map separates.
 - related, not a proved adapter: [generalization-through-lumping](generalization-through-lumping.md). The map is a lumping: a selection through it is right only where what matters goes alike across the lumping, the form of lumped_right_iff.
 
 <a id="sources--来源"></a>

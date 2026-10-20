@@ -112,7 +112,7 @@
   ],
   "dependencies": [
     {
-      "id": "selection-through-registration",
+      "id": "selection-through-couplings",
       "relation": "formal-reuse",
       "detail": {
         "en": "Reuses Web.SelectsThrough and the witness Diversion (diverting, supplying, web, gauge, favours, blind_to_source); the delta is the general law of which Diversion.favours is an instance.",
@@ -224,7 +224,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

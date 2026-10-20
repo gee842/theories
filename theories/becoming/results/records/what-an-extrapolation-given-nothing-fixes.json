@@ -122,7 +122,7 @@
   "dependencies": [],
   "related": [
     {
-      "id": "learnable-through-registration",
+      "id": "learnable-through-a-map",
       "detail": {
         "en": "There learnability is characterized with an extrapolation built from the law, given the world and the feature (fromLaw); here what that extrapolation is given beyond the prefix is exactly a reading of the future, and given nothing no extrapolation learns every learnable feature.",
         "zh": "那里以依律所建、被给予世界与特征的外推（fromLaw）刻画可学性；这里该外推在前缀之外被给予的恰是对未来的读法，而不被给予任何东西时没有外推学得每个可学特征。"
@@ -174,7 +174,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

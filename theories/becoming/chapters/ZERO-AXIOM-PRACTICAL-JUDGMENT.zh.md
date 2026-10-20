@@ -492,7 +492,7 @@ Ren 要求完成上轮尚未建立的两项。本轮将先前两个模型接成�
 
 **有害安排可以包含真实学习。** 一个组织可能越来越准确地理解情况、改善手段，却把人们不再需要它视为必须修正的失败。如果这种局部成功又再生产选择同类目的的条件，学习便可能参与维持元吸引组织。它不必拒绝全部反馈，也不必所有人都被蒙蔽。这个概念案例尚不是对任何现实组织的经验判定。
 
-已有[经识的选择](../results/records/selection-through-registration.md)、[登记修订](../results/records/selection-under-registration-revision.md)和[参考计划修订](../results/records/consequence-revised-reference-plan.md)分别保留其准确范围：能够区分，不等于实际据此选择；方法对给定任务的成功，也没有自动说明目的正当。已有机制直接进入这项解释，不重复证明，不改写成伦理证明。
+已有[经识的选择](../results/records/selection-through-couplings.md)、[登记修订](../results/records/selection-under-registration-revision.md)和[参考计划修订](../results/records/consequence-revised-reference-plan.md)分别保留其准确范围：能够区分，不等于实际据此选择；方法对给定任务的成功，也没有自动说明目的正当。已有机制直接进入这项解释，不重复证明，不改写成伦理证明。
 
 肯定方向因而可以问得更具体：**当活动实现其所声称支持的生活时，这个结果能否改变它的任务、选择条件和结束条件？** 学习、恢复与新的参与能力可以使原来合理的介入需要改变。若目的永远只允许手段改变，而不允许生活的实际实现改变自身，便须检验这项限制在维护什么。修订可能是继续支持、转型、转交或结束，没有一个形式预先必然正确。
 

@@ -73,7 +73,7 @@ The whole deduction must warrant relational unity and differentiation, including
 - related, not a proved adapter: [premises-read-off-the-exchange](premises-read-off-the-exchange.md). The premises read off the exchange: the world with the rest counted balances.
 - related, not a proved adapter: [unity-of-readings](unity-of-readings.md). Readings in context make one world; context-free description exists just where they glue.
 - related, not a proved adapter: [worlds-are-runs](worlds-are-runs.md). A world is exactly a run of the law it shows; the correspondence holds largely by unfolding definitions.
-- related, not a proved adapter: [one-axiom-yields-g0](one-axiom-yields-g0.md). Under the condition that everything is significant, G0 follows; the theory does not assert the condition.
+- related, not a proved adapter: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). Under the condition that everything is significant, G0 follows; the theory does not assert the condition.
 - related, not a proved adapter: [premises-that-are-states-of-the-law](premises-that-are-states-of-the-law.md). Where becoming is contingent in the law: dissipation, embodiment and bounded transmission are met by some laws of exchange and failed by others, with the readings fixed.
 - related, not a proved adapter: [census-read-off-the-exchange](census-read-off-the-exchange.md). The census is a reading of the exchange under enclosure.
 - related, not a proved adapter: [conditional-foundation-assessment](conditional-foundation-assessment.md). Credits completed conditional mechanisms and the original five-condition assessment without substituting them for the stronger target.

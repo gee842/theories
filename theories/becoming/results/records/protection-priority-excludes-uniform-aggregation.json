@@ -48,14 +48,14 @@
   "dependencies": [],
   "related": [
     {
-      "id": "practical-judgment-g0-j",
+      "id": "practical-judgment-under-living-significance",
       "detail": {
         "zh": "复用其 Better 与 no_protection_trade_by_count；补上 J2 相对 C 的独立性、被排除的自然数评分类，以及与 J2 一致的有界评分。未修改其证明。",
         "en": "Reuses its Better and no_protection_trade_by_count, adding J2's independence from C, the excluded natural-number score class and a bounded score agreeing with J2. Its proof is unchanged."
       }
     },
     {
-      "id": "alignment-direction-g0-j",
+      "id": "alignment-direction-under-widening",
       "detail": {
         "zh": "把对齐方向 §3 中“J2 不由 G0 推出、代价是拒绝某些聚合补偿”变为检查过的命题。",
         "en": "Turns the alignment direction's §3 statement that J2 is not implied by G0 and rejects some aggregate compensation into a checked claim."

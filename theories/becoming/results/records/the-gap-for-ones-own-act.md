@@ -50,7 +50,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **formal-reuse**: [selection-through-registration](selection-through-registration.md). Reuses Web.SelectsThrough and Flow.unselected_beyond_coupling_responsive; the delta derives its response premise from a law of exchange and adds the act, so the gap holds for any act.
+- **formal-reuse**: [selection-through-couplings](selection-through-couplings.md). Reuses Web.SelectsThrough and Flow.unselected_beyond_coupling_responsive; the delta derives its response premise from a law of exchange and adds the act, so the gap holds for any act.
   - Output: Selection through coupling blind beyond the closure, the rest responding through coupling supplied.
   - Input: The same blindness with the act alone differing beyond the closure.
   - Preserved conditions: Balance on the conditions coupled in; the same formations present; the same start. [Selection.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)
@@ -58,7 +58,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Output: The rest following a law reading through coupling responds through coupling in any two courses; a law with a part acting generates a course, balanced where feasible.
   - Input: The response premise of the gap, derived; the two flows of the course form.
   - Preserved conditions: Nonanticipating laws; feasibility. [Counterfactual.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
-- related, not a proved adapter: [testing-within-registration](testing-within-registration.md). There nothing beyond the closure exchanges with a condition coupled into it (Flow.beyond_coupling); so a difference beyond cannot come back into the closure through a formation outside it.
+- related, not a proved adapter: [testing-within-couplings](testing-within-couplings.md). There nothing beyond the closure exchanges with a condition coupled into it (Flow.beyond_coupling); so a difference beyond cannot come back into the closure through a formation outside it.
 
 **Used by:** [what-pooled-coupling-reaches](what-pooled-coupling-reaches.md)
 

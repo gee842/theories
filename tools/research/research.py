@@ -16,7 +16,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-from tools.research import registry, navigation, lean_catalogue, reading_catalogue, style, paths, moves, indexes, session_map, history_notes
+from tools.research import registry, navigation, lean_catalogue, reading_catalogue, style, paths, moves, indexes, session_map, history_notes, rename_ids
 
 
 @contextmanager
@@ -132,7 +132,7 @@ def search(query, archives=False, limit=30):
     needle = query.casefold()
     results = []
     for r in records:
-        text = json.dumps({k: r.get(k) for k in ('id', 'title', 'statement', 'claim', 'laws', 'does_not_show', 'aliases')}, ensure_ascii=False)
+        text = json.dumps({k: r.get(k) for k in ('id', 'former_ids', 'title', 'statement', 'claim', 'laws', 'does_not_show', 'aliases')}, ensure_ascii=False)
         if needle in text.casefold():
             results.append({'kind': 'result', 'path': str(registry.record_path(r).relative_to(ROOT)), 'id': r['id'], 'summary': registry.en(r['title'])})
     for path in inventory():
@@ -270,6 +270,7 @@ def check_or_render(render=False, base=None, ids=None, strict_fresh=False):
     stale = {d['id'] for d in drift}
     record_outputs = {str(registry.record_path(r).with_suffix('.md').relative_to(ROOT)): registry.render_record(r) for r in records if r['id'] in selected and r['id'] not in stale}
     record_outputs[str((registry.OUT / 'RESULT-REGISTER.md').relative_to(ROOT))] = registry.render_index(records)
+    record_outputs.update({str(p.relative_to(ROOT)): body for p, body in registry.redirect_pages(records).items()})
     # The index pages link one another; a check resolves those links against the pages render would write.
     planned = set(outputs) | set(record_outputs) if render else set(index_pages)
     errors += check_links({**outputs, **record_outputs}, planned)
@@ -374,6 +375,10 @@ def main():
     p = sub.add_parser('compact-history', help='Condense bookkeeping history notes of records (dry run unless --apply); snapshot each record first')
     p.add_argument('--apply', action='store_true')
     p.add_argument('--ids', nargs='+')
+    p = sub.add_parser('rename-id', help='Rename record ids (dry run unless --apply); keep former_ids, rewrite live references, write a receipt')
+    p.add_argument('--plan', required=True, help='TSV: old_id<TAB>new_id<TAB>reason')
+    p.add_argument('--apply', action='store_true')
+    p.add_argument('--batch')
     p = sub.add_parser('move', help='Move files to new paths (dry run unless --apply); rewrite live references; write receipts')
     what = p.add_mutually_exclusive_group(required=True)
     what.add_argument('--plan', help='TSV: old_path<TAB>new_path<TAB>reason')
@@ -426,6 +431,9 @@ def main():
     elif args.command == 'lint':
         result = lint(args.ids, args.changed_since)
         code = 1 if result['errors'] or result['summary']['by_severity'].get('error') else 0
+    elif args.command == 'rename-id':
+        result = rename_ids.run(args.plan, apply=args.apply, batch=args.batch)
+        code = 1 if result.get('errors') or result.get('conflicts') else 0
     elif args.command == 'compact-history':
         result, code = compact_history(args.ids, args.apply), 0
     elif args.command == 'snapshot':

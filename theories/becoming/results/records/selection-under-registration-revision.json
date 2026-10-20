@@ -43,7 +43,7 @@
   ],
   "dependencies": [
     {
-      "id": "selection-through-registration",
+      "id": "selection-through-couplings",
       "relation": "formal-reuse",
       "detail": {
         "zh": "web_keeps_iff 直接适配旧的 SelectsThrough",

@@ -266,7 +266,7 @@
       }
     },
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "formal-reuse",
       "detail": {
         "en": "Reuses Web.CoupledInto, Web.AlikeThrough and Web.alike_of_threshold.",
@@ -314,7 +314,7 @@
   ],
   "related": [
     {
-      "id": "subthreshold-registration",
+      "id": "differences-below-threshold",
       "detail": {
         "en": "There a raise below the threshold of a stock coupled in by threshold only shows nowhere along courses; here no law reading through the couplings responds to it.",
         "zh": "那里只经阈耦合入的储量在阈下的升高沿进程处处不显出；这里没有经耦合而读的律回应它。"
@@ -433,7 +433,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

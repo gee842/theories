@@ -71,7 +71,7 @@ Readings verified in the limit are the Σ⁰₂ classes and those refuted in the
   - Input: Settling verified in the limit and refuted in the limit by no method.
   - Preserved conditions: Decidable configurations where stated. [Enough.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Enough.lean)
 - related, not a proved adapter: [the-last-change-of-a-run](the-last-change-of-a-run.md). Deciding settling outright is the limited principle of omniscience; here settling is verified in the limit with no premise beyond decidable configurations.
-- related, not a proved adapter: [learnable-through-registration](learnable-through-registration.md). Learnable.Predicts is identification in the limit along an orbit through a map; identification decides each hypothesis in the limit.
+- related, not a proved adapter: [learnable-through-a-map](learnable-through-a-map.md). Learnable.Predicts is identification in the limit along an orbit through a map; identification decides each hypothesis in the limit.
 
 **Used by:** [learning-through-a-map-is-tracking-in-the-limit](learning-through-a-map-is-tracking-in-the-limit.md)
 

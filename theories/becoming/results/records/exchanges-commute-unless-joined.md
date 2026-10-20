@@ -62,7 +62,7 @@ Reading (the AI's, adopted on Ren's delegation): within the order, what shows is
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **formal-reuse**: [only-the-order-of-change-registers](only-the-order-of-change-registers.md). The same module's arithmetic and stretch-total lemmas.
+- **formal-reuse**: [only-the-order-of-change-shows](only-the-order-of-change-shows.md). The same module's arithmetic and stretch-total lemmas.
   - Output: Totals and counts over a stretch.
   - Input: Totals and counts after commuting.
   - Preserved conditions: None. [Reordering.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean)

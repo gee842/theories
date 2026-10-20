@@ -84,7 +84,7 @@ Identify living positions and complete gains/losses through formation, failure a
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **interpretive**: [practical-judgment-g0-j](practical-judgment-g0-j.md). Reuses J’s strength distinctions, bounded choice and P95’s timely-continuation content; these supply application inputs without proving FR’s aggregative sufficiency.
+- **interpretive**: [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md). Reuses J’s strength distinctions, bounded choice and P95’s timely-continuation content; these supply application inputs without proving FR’s aggregative sufficiency.
   - Output: Positive-significance conditions, sufficient comparison versus practical selection, and actual needs, transition and replacement coverage.
   - Input: FR’s support correspondence and its possible role as a new sufficiently defeating reason.
   - Preserved conditions: Adds FR while retaining J2’s basic/optional scope and valid chance history. This normative dependence is interpretive; P100 formal reuse is listed separately. [PRACTICAL-JUDGMENT.md](../../chapters/PRACTICAL-JUDGMENT.md)

@@ -404,7 +404,7 @@
   ],
   "related": [
     {
-      "id": "registration-within-what-it-registers",
+      "id": "readings-within-what-they-read",
       "detail": {
         "zh": "那里从内部不能同时持有每个读法；这里有界的历程的律可以推出，回答自己之外推的世界超出界。",
         "en": "There, no family of readings within holds every reading at once; here, a bounded course's law is derived, and a world answering its own extrapolation exceeds the bound."
@@ -418,7 +418,7 @@
       }
     },
     {
-      "id": "wisdom-root-part-one",
+      "id": "wisdom-root-without-axiom",
       "detail": {
         "zh": "其“学习”一项说逐除外推停息这一点不能被否证；held_byElimination_rests 给出这一步，是列表长度的函数，外推自己没有它。",
         "en": "Its learning clause says that extrapolation by elimination's coming to rest is unrefuted; held_byElimination_rests states the step, a function of the list's length, which the extrapolation does not have."
@@ -670,7 +670,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

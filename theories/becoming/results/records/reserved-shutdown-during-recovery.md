@@ -47,7 +47,7 @@ Completes the specified operational connection; does not make the old ordinary w
 
 **Preserved conditions:** Prior overwrite and persistence correspondence remain; add the stop channel, three-step margin, interruption bound, attempt work cost and supervisor execution. [ReservedShutdown.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean)
 
-- Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Interpretive connection: the completed G0/J direction informs preserving response conditions; this stop grant still needs its own normative warrant.
+- Related, not a proved adapter: [alignment-direction-under-widening](alignment-direction-under-widening.md). Interpretive connection: the completed G0/J direction informs preserving response conditions; this stop grant still needs its own normative warrant.
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

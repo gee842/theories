@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "id": "held-lives-g0-is-centering",
+  "id": "living-significance-on-held-lives",
   "title": {
     "en": "Living significance on held lives",
     "zh": "被持有的生命上的生生之意义"
@@ -254,7 +254,7 @@
       }
     },
     {
-      "id": "self-good-reachable-g0",
+      "id": "own-good-to-reachable-living-significance",
       "relation": "interpretive",
       "detail": {
         "zh": "那里留下了从立场相对的意义到规范意义的桥；这里说明在被持有的生命上，G0 超出 S0 的可以集中在 N_std 上。",
@@ -348,7 +348,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
@@ -523,5 +523,8 @@
         "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
+  ],
+  "former_ids": [
+    "held-lives-g0-is-centering"
   ]
 }

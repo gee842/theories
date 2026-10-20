@@ -204,7 +204,7 @@
 <a id="d11-s0公理的辖域与补全--s0-the-range-of-the-axiom-and-the-completion"></a>
 ### D11. S0、公理的辖域与补全
 
-所在：第 8 节第十一项；计划 §6 第 1、6 项；[held-lives-g0-is-centering](../../../../theories/becoming/results/records/held-lives-g0-is-centering.md)。
+所在：第 8 节第十一项；计划 §6 第 1、6 项；[held-lives-g0-is-centering](../../../../theories/becoming/results/records/living-significance-on-held-lives.md)。
 
 **决定。** 一、S0 是“想要”的读法，从“规范前提”一栏移出（计划 §6.6）。二、公理的辖域是任何东西，如 Ren 的原话：“if we want to add one axiom, that is for anything, its continuation into the future has significance”（2026-10-10），也如 §6.8 所读；这是 Ren 的原话所定，此处只是记录。所以无人持有的生命（休眠的种子、昏迷者、不再想活下去的人）从每个立场都有意义。这一意义不决定任何人该做什么：延续之间的实践判断，以及它与一个人自己意愿的关系，仍由 C、L 与 J1–J4 处理（计划 §4.5）。三、在被持有的生命上的两种补全中，采用 S0 加 N_std（立场中立），因为 `Unrestricted` 给出的就是它（§6.8）；连通整体上的 S0 加 N_rel（`significant_of_transmits`）保留为另一种。
 **理由。** 一、提议的“anything that want's its continuation to have significance”就是每个想要之点上的种子；二、Ren 的原话，以及 Ren 2026-10-10 的“so there isn't really who's continuation matters, which requires axiom”；三、N_rel 需要连通，是另一前提。
@@ -233,7 +233,7 @@
 <a id="d14-损的层次与形成的个体化--the-level-of-harm-and-the-individuation-of-formations"></a>
 ### D14. 损的层次与形成的个体化
 
-所在：第 8 节第十一、十二项；计划 §6 第 2 项；[held-lives-g0-is-centering](../../../../theories/becoming/results/records/held-lives-g0-is-centering.md)、[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)、[whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)。
+所在：第 8 节第十一、十二项；计划 §6 第 2 项；[held-lives-g0-is-centering](../../../../theories/becoming/results/records/living-significance-on-held-lives.md)、[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)、[whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)。
 
 **层次由 Ren 回答（不是 AI 的决定）。** 损读在整体的层次，较弱的版本在所在的系统之内，然后是自身（Ren 2026-10-10，见 §0），“整体”是实际的整体，从不是任何中心对它的模型，以包含比较从不许可强加的终结。§6.8 把这一次序给作判断有多完整的次序（`Web.Retains.within`）。整体上的比较就是同时在每个区域内的比较（`Web.includes_iff_within_every`），所以在整体的层次读损，不漏掉任何部分的损失：在任何区域内缩小的，就在整体上缩小。
 **决定（AI 的）：形成的个体化**，它定出什么算作一次损失（§6.8）。形成在 `Becoming.Identity` 所给的两个层次上个体化，各有其用：一、给一个部分归类为退化、中性或生成（D2）时，形成以谱系计，即更新的种类：在更新之内的取用于是不是损，更新的余量就是 D13 的相变边界；二、一个成员的终结仍是那个成员之延续的损失：任何以包含的比较都不许可它；一个部分加上自身的延续而终结一个成员时，是混合的，没有度量就不排序。
@@ -252,7 +252,7 @@
 <a id="d16-读出公理a-与-g0--reading-the-axiom-a-and-g0"></a>
 ### D16. 读出公理、A 与 G0
 
-所在：第 8 节第十二项；[one-axiom-yields-g0](../../../../theories/becoming/results/records/one-axiom-yields-g0.md)、[significance-retained-within-margin](../../../../theories/becoming/results/records/significance-retained-within-margin.md)、[whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)、[comparison-within-reach](../../../../theories/becoming/results/records/comparison-within-reach.md)、[closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-axiom.md)。
+所在：第 8 节第十二项；[one-axiom-yields-g0](../../../../theories/becoming/results/records/continuation-condition-yields-living-significance.md)、[significance-retained-within-margin](../../../../theories/becoming/results/records/significance-retained-within-margin.md)、[whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)、[comparison-within-reach](../../../../theories/becoming/results/records/comparison-within-reach.md)、[closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-continuation-condition.md)。
 
 **决定。** 一、`Unrestricted` 读出公理：形成的索引读“anything”，一个形成在一步的延续读“its continuation into the future”，立场的索引不加限定地读“has significance”，没有中心特殊。二、A 读在活的内容上：这一读法是被迫的（`BareSignificance.bare_forces_reason`），如此读，A 给出 D 与普遍理由（`universal_reason_of_unrestricted`）。三、重述是否替代 G0，已由 Ren 的折叠回答（2026-10-11）：G0 不再是公理，第一部分把它作为条件陈述，第二部分断言公理时它是定理。
 **理由。** 一、逐字合 Ren 的句子，并且它就是对任何东西的 G0（`unrestricted_iff_livingSignificance`）；二、见证迫使它。
@@ -284,7 +284,7 @@
 <a id="d18-路线-b-与公理--route-b-and-the-axiom"></a>
 ### D18. 路线 (b) 与公理
 
-所在：第 8 节第十三项；[closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-axiom.md)、[whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)、[loss-beyond-a-region](../../../../theories/becoming/results/records/loss-beyond-a-region.md)、[represented-boundary-against-dependence](../../../../theories/becoming/results/records/represented-boundary-against-dependence.md)。
+所在：第 8 节第十三项；[closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-continuation-condition.md)、[whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)、[loss-beyond-a-region](../../../../theories/becoming/results/records/loss-beyond-a-region.md)、[represented-boundary-against-dependence](../../../../theories/becoming/results/records/represented-boundary-against-dependence.md)。
 
 **决定。** 路线 (b) 不足以达到 G0 的辖域，两者照现状都保留：到达自身及其所依存者的路线 (b) 属第一部分（不用公理）；那一条公理是第二部分的断言。在 `Clearing` 中闭包的判决与公理的判决分开：所表示的边界恰是其依存的中心仍许可搭便车者（`Clearing.clearer_loses_dweller`），所以路线 (b) 只在整体是一个供给闭包处到达整体。
 **理由。** 已检查的反例决定它；Ren 2026-10-10：“let's aim for a first, then try to archive b”；2026-10-11：先第一部分，再一条公理的情形。
@@ -318,9 +318,9 @@
 <a id="d21-预设覆盖与层级的次序--the-presupposition-covering-and-the-order-of-levels"></a>
 ### D21. 预设、覆盖与层级的次序
 
-所在：第 8 节第十五项；[presupposition-scopes](../../../../theories/becoming/results/records/presupposition-scopes.md)、[axiom-decomposition](../../../../theories/becoming/results/records/axiom-decomposition.md)。
+所在：第 8 节第十五项；[presupposition-scopes](../../../../theories/becoming/results/records/presupposition-scopes.md)、[axiom-decomposition](../../../../theories/becoming/results/records/continuation-condition-decomposition.md)。
 
-**决定。** 一、预设（自身的延续在自身被划在某处时有意义）读出 Ren 的“belief”：“the self is a cognitive model which can not justify itself without some sort of "belief"”（2026-10-10）；它是 S0 的延续形式。二、自身的可容许划法包括整体（Ren 2026-10-10：“the whole can be the self, the collective”），覆盖由此成立。三、Ren 的层级次序读作预设的三种读法：在整体处超真；沿影响次真，在所及闭包处；沿空关系次真，在自身处。四、**不决定：** Ren 是否持有不变的一步，即预设不随自身怎样划、从谁的立场而变。那是 Ren 的陈述。本记录能说的是：这一步是第二部分的断言在预设之外所加的（[axiom-decomposition](../../../../theories/becoming/results/records/axiom-decomposition.md)）；P107 给出规律所满足的同一标准，即对每个部分不论怎样划都成立（`presupposition_iff_all_of_invariant`）；其根据是哲学（§10）。
+**决定。** 一、预设（自身的延续在自身被划在某处时有意义）读出 Ren 的“belief”：“the self is a cognitive model which can not justify itself without some sort of "belief"”（2026-10-10）；它是 S0 的延续形式。二、自身的可容许划法包括整体（Ren 2026-10-10：“the whole can be the self, the collective”），覆盖由此成立。三、Ren 的层级次序读作预设的三种读法：在整体处超真；沿影响次真，在所及闭包处；沿空关系次真，在自身处。四、**不决定：** Ren 是否持有不变的一步，即预设不随自身怎样划、从谁的立场而变。那是 Ren 的陈述。本记录能说的是：这一步是第二部分的断言在预设之外所加的（[axiom-decomposition](../../../../theories/becoming/results/records/continuation-condition-decomposition.md)）；P107 给出规律所满足的同一标准，即对每个部分不论怎样划都成立（`presupposition_iff_all_of_invariant`）；其根据是哲学（§10）。
 **理由。** 一、二、Ren 的句子；三、三者是定理的范围，并合 Ren 的次序。
 **会改变它的。** Ren 的“belief”所指不是预设所陈述的。
 
@@ -368,7 +368,7 @@
 <a id="d25-因果--cause-and-effect"></a>
 ### D25. 因果
 
-所在：第 8 节表中“与一般因果系统的比较”“回应由动力学给出”两行；[selection-through-registration](../../../../theories/becoming/results/records/selection-through-registration.md)、[projection-carrying-a-law](../../../../theories/becoming/results/records/projection-carrying-a-law.md)、[causal-models-as-processes](../../../../theories/becoming/results/records/causal-models-as-processes.md)、[attraction-is-not-returning](../../../../theories/becoming/results/records/attraction-is-not-returning.md)、[counterfactual-is-the-course](../../../../theories/becoming/results/records/counterfactual-is-the-course.md)、[experiment-needs-return](../../../../theories/becoming/results/records/experiment-needs-return.md)。
+所在：第 8 节表中“与一般因果系统的比较”“回应由动力学给出”两行；[selection-through-registration](../../../../theories/becoming/results/records/selection-through-couplings.md)、[projection-carrying-a-law](../../../../theories/becoming/results/records/projection-carrying-a-law.md)、[causal-models-as-processes](../../../../theories/becoming/results/records/causal-models-as-processes.md)、[attraction-is-not-returning](../../../../theories/becoming/results/records/attraction-is-not-returning.md)、[counterfactual-is-the-course](../../../../theories/becoming/results/records/counterfactual-is-the-course.md)、[experiment-needs-return](../../../../theories/becoming/results/records/experiment-needs-return.md)。
 
 **决定。** 以各记录的范围采用其读法：由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及其所识；机制是承载规律的投影；干预是未取的动作，由模型而非记录固定，噪声是未表示的动作；吸引子是区域之外的配置进入的吸收区域，其吸引域是被吸入者；反事实不是实际之外的第二个世界，而是部分以别的方式行动时同一律的进程，可行处存在，由动作固定；实验是在配置（如实验者所读）返回之处变化自己的动作。
 **理由。** 每项是记录的定理所陈述的读法，不加前提；合起来，它们把“there are no two realities”带到因果。
@@ -377,7 +377,7 @@
 <a id="d37-任意多条件下的识与尾--registration-with-any-number-of-conditions-and-the-tail"></a>
 ### D37. 任意多条件下的识与尾
 
-所在：第 8 节“反馈与所及”项之后的读法；[sensitivity-is-the-least-registration](../../../../theories/becoming/results/records/sensitivity-is-the-least-registration.md)、[counterfactual-is-the-course](../../../../theories/becoming/results/records/counterfactual-is-the-course.md)。编号在 D36 之后，因为 P113 在其余各项决定之后落地。
+所在：第 8 节“反馈与所及”项之后的读法；[sensitivity-is-the-least-registration](../../../../theories/becoming/results/records/sensitivity-is-the-least-coupling.md)、[counterfactual-is-the-course](../../../../theories/becoming/results/records/counterfactual-is-the-course.md)。编号在 D36 之后，因为 P113 在其余各项决定之后落地。
 
 **决定。** 两项都以确切范围采用。（1）律在每个历史下读有限多个条件时，`Becoming.Response` 前提中其余经以回应的识，在形式上读作律的敏感：形成恰识其交换所能被改变者，一次一个条件；这是它所经的最小的识（`Becoming.Sensitivity`），取它不在律之外加任何东西。这是形式的读法，如 D26 中理的形式读法；“识”作为 Ren 对 registers 的读法仍属 Ren（§10），识是否恰是敏感、还是多于交换所回应者，由 Ren 判断。条件无穷多时这一读法不适用：尾之律经其读的识没有最小的。（2）依存于整体而不依存于其任何部分者读作尾，取尾事件的确切意义而不带概率：改变任何有限多个条件都不改变它，如终将消失或长程平均；条件以自然数编号时，它与 Kolmogorov 的尾事件相应。每个律都读有限多个条件是 Brouwer 的连续性原则：那是对应，不是读法，核心既不陈述也不驳斥它。
 **理由。** （1）回应的前提需要一个其余经以回应的识；最小的识由律给出，它所经的每个识都包含它，所以取它不加前提，不取它就要另给一个识。（2）“尾”是数学中恰有此义的名称（按 Ren 2026-10-12 的命名规则，在陈述有其确切意义处采用）；核心中的部分是有限多个条件，所以不依存于任何部分恰是对有限的改变不变。
@@ -407,7 +407,7 @@
 <a id="d26-学习与智慧--learning-and-wisdom"></a>
 ### D26. 学习与智慧
 
-所在：第 8 节表中“学习”一行；[learning-by-refutation](../../../../theories/becoming/results/records/learning-by-refutation.md)、[generalization-through-lumping](../../../../theories/becoming/results/records/generalization-through-lumping.md)、[learnable-through-registration](../../../../theories/becoming/results/records/learnable-through-registration.md)、[wisdom-root-part-one](../../../../theories/becoming/results/records/wisdom-root-part-one.md)、[seeking-boundary](../../../../theories/becoming/results/records/seeking-boundary.md)、[target-capture](../../../../theories/becoming/results/records/target-capture.md)、[runaway-distance-unregistered](../../../../theories/becoming/results/records/runaway-distance-unregistered.md)、[subthreshold-registration](../../../../theories/becoming/results/records/subthreshold-registration.md)、[testing-within-registration](../../../../theories/becoming/results/records/testing-within-registration.md)。
+所在：第 8 节表中“学习”一行；[learning-by-refutation](../../../../theories/becoming/results/records/learning-by-refutation.md)、[generalization-through-lumping](../../../../theories/becoming/results/records/generalization-through-lumping.md)、[learnable-through-registration](../../../../theories/becoming/results/records/learnable-through-a-map.md)、[wisdom-root-part-one](../../../../theories/becoming/results/records/wisdom-root-without-axiom.md)、[seeking-boundary](../../../../theories/becoming/results/records/seeking-boundary.md)、[target-capture](../../../../theories/becoming/results/records/target-capture.md)、[runaway-distance-unregistered](../../../../theories/becoming/results/records/runaway-distance-uncoupled.md)、[subthreshold-registration](../../../../theories/becoming/results/records/differences-below-threshold.md)、[testing-within-registration](../../../../theories/becoming/results/records/testing-within-couplings.md)。
 
 **决定。** 以确切范围采用：归纳被分解为规律，而不是被保证；对 Ren 的“理”（对结构与变化之规律的建模）的形式读法：一个关于何者无关的模型恰在世界经其所归并者同行之处正确（`goAlike_iff_lumped`）；“理”本身是 Ren 的读法，不在交托之内；识界定所能学的；规律与智慧诸方面的对应；无明读作使寻求锁定在静止时不能达到的目标上的不见，其边界是 B1；明读作识及支持所不标记者；知足与知止读作边界之内的目标（这些是理论对这些用语的形式读法，不是对其经典出处的解释）；劫持；失控；经审查收窄的阈下之识与检验的读法（收窄的读法采用，不是 Ren 先前接受的措辞）。
 **理由。** 定理的读法；审查的收窄保留。
@@ -522,7 +522,7 @@ L1、S1 与 S2 是 D40-D42。
 <a id="d30-交换与步--exchanges-and-steps"></a>
 ### D30. 交换与步
 
-所在：第 8 节第十九、二十项；[normal-forms-need-decided-apartness](../../../../theories/becoming/results/records/normal-forms-need-decided-apartness.md)、[least-footprint-where-idleness-decided](../../../../theories/becoming/results/records/least-footprint-where-idleness-decided.md)、[exchanges-commute-unless-joined](../../../../theories/becoming/results/records/exchanges-commute-unless-joined.md)、[order-of-exchanges-is-the-invariant](../../../../theories/becoming/results/records/order-of-exchanges-is-the-invariant.md)、[only-the-order-of-change-registers](../../../../theories/becoming/results/records/only-the-order-of-change-registers.md)、[listing-once-is-decided-identity](../../../../theories/becoming/results/records/listing-once-is-decided-identity.md)、[laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md)、[laws-of-one-step-complete](../../../../theories/becoming/results/records/laws-of-one-step-complete.md)、[one-step-missing-laws](../../../../theories/becoming/results/records/one-step-missing-laws.md)、[runs-on-families-chosen-step-by-step](../../../../theories/becoming/results/records/runs-on-families-chosen-step-by-step.md)、[sum-over-histories-exact](../../../../theories/becoming/results/records/sum-over-histories-exact.md)、[losses-of-the-sum-over-histories](../../../../theories/becoming/results/records/losses-of-the-sum-over-histories.md)、[counts-exist-where-decided](../../../../theories/becoming/results/records/counts-exist-where-decided.md)、[recurrence-without-decidedness](../../../../theories/becoming/results/records/recurrence-without-decidedness.md)、[relata-counted-up-to-indiscernibility](../../../../theories/becoming/results/records/relata-counted-up-to-indiscernibility.md)、[imbalance-as-relatum](../../../../theories/becoming/results/records/imbalance-as-relatum.md)。
+所在：第 8 节第十九、二十项；[normal-forms-need-decided-apartness](../../../../theories/becoming/results/records/normal-forms-need-decided-apartness.md)、[least-footprint-where-idleness-decided](../../../../theories/becoming/results/records/least-footprint-where-idleness-decided.md)、[exchanges-commute-unless-joined](../../../../theories/becoming/results/records/exchanges-commute-unless-joined.md)、[order-of-exchanges-is-the-invariant](../../../../theories/becoming/results/records/order-of-exchanges-is-the-invariant.md)、[only-the-order-of-change-registers](../../../../theories/becoming/results/records/only-the-order-of-change-shows.md)、[listing-once-is-decided-identity](../../../../theories/becoming/results/records/listing-once-is-decided-identity.md)、[laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md)、[laws-of-one-step-complete](../../../../theories/becoming/results/records/laws-of-one-step-complete.md)、[one-step-missing-laws](../../../../theories/becoming/results/records/one-step-missing-laws.md)、[runs-on-families-chosen-step-by-step](../../../../theories/becoming/results/records/runs-on-families-chosen-step-by-step.md)、[sum-over-histories-exact](../../../../theories/becoming/results/records/sum-over-histories-exact.md)、[losses-of-the-sum-over-histories](../../../../theories/becoming/results/records/losses-of-the-sum-over-histories.md)、[counts-exist-where-decided](../../../../theories/becoming/results/records/counts-exist-where-decided.md)、[recurrence-without-decidedness](../../../../theories/becoming/results/records/recurrence-without-decidedness.md)、[relata-counted-up-to-indiscernibility](../../../../theories/becoming/results/records/relata-counted-up-to-indiscernibility.md)、[imbalance-as-relatum](../../../../theories/becoming/results/records/imbalance-as-relatum.md)。
 
 **决定。** 以各记录的范围采用其读法：有限的正规形以原世界的步作交换的名字；最小足迹由给定的闲置判定读出；在次序之内所识的是经关系项或依存相连之交换的次序，给定足迹时规律所需的是相连交换的偏序而不是步的序列，步的索引在变化的次序之外不承载任何东西；列出一次读作同一已定；第一部分中被前提约束的规律是每一步及其关系项的规律，前提是使其条件处处成立的一种方式，加上两条缺失的规律后一步的规律是全部；家族不必固定；对 Ren 的“Fermi's diagrams”读作费曼图（[原话](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)），历史之和的形状是：一段历史的权重由其各步的权重复合，诸选择相加，准确的界是四种损失；计数在判定处存在，复现不需判定，关系项以不可分辨为限计数，名称比关系多给出一个已定的同一；不平衡作为关系项（Ren 2026-10-14 采用）的其余读法。其实际对应仍是经验的。
 **理由。** 定理的读法，不加前提。
@@ -549,7 +549,7 @@ L1、S1 与 S2 是 D40-D42。
 <a id="d33-描述保留什么失去什么--what-a-description-keeps-and-loses"></a>
 ### D33. 描述保留什么、失去什么
 
-所在：第 8 节第二十二项；[contextual-registration](../../../../theories/becoming/results/records/contextual-registration.md)、[separation-loses-the-relation](../../../../theories/becoming/results/records/separation-loses-the-relation.md)、[the-split-that-makes-sense](../../../../theories/becoming/results/records/the-split-that-makes-sense.md)、[registration-within-what-it-registers](../../../../theories/becoming/results/records/registration-within-what-it-registers.md)。
+所在：第 8 节第二十二项；[contextual-registration](../../../../theories/becoming/results/records/claims-shown-in-context.md)、[separation-loses-the-relation](../../../../theories/becoming/results/records/separation-loses-the-relation.md)、[the-split-that-makes-sense](../../../../theories/becoming/results/records/the-split-that-makes-sense.md)、[registration-within-what-it-registers](../../../../theories/becoming/results/records/readings-within-what-they-read.md)。
 
 **决定。** 采用为理论的读法（Ren 同意了包含它们的回答，[原话](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）：两个之所以是一对，在于关系；成员从一对中读出；值是语境中的识，一个关系，波与粒子都是向不依语境之值的投影；Ren 推测的“真”是关系的，按情境可推出，不能从一个情境全部说出；不依语境的主张列为表示的承诺。P112 给出奇偶约束的确切规律：不依语境的值恰在没有一组语境矛盾处存在（`ParitySystem.glues_iff`、`ParitySystem.noGlobal_iff`），这一承诺恰在一个可检查的障碍处失效；有矛盾时，不依语境之赋值的每个混合平均至多满足 m 个语境中的 m − 1 个，而按语境索引的读法满足全部 m 个（`ParitySystem.mixture_le`、`ParitySystem.indexed_met`）。相关是一次相遇的记忆；三生万物读作三是整体持有任何部分都不持有之关系的最小数；阴阳读作立着与经过，以及否定的两个状态；庄子的“一与言为二，二与一为三”读作 `Unfolds` 的回归形式；从内部不能一次说出一切。这些是理论的形式读法，不是对经典的解释。
 **理由。** 定理的读法；Ren 对包含它们的回答表示同意；P112 把“不依语境的主张是承诺”变成确切的规律。

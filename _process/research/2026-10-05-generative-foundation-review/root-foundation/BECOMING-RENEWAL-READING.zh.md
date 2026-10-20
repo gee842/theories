@@ -2791,7 +2791,7 @@ Integration: 计划 P34；回答开放纲领“对整个空间成立的规律的
 
 ## 47. 延续的奠基：从想要延续者重述（W1–W5）
 
-2026-10-10。Ren 提议从“想要自身延续者”重述普遍元伦理核心（[原话](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）：想要延续者使其延续有意义；它须计入的整体范围依视角而定，不需要任何公理；加一条公理即闭合整体。AI 把它分为两半：动力学定出想要延续者必须计入的范围，定不出中心；那条公理的唯一作用是让每一点都是中心。Ren 答“exactly”，并说“commit them, then start implementation all the way to full completion”。本节实现[延续奠基计划](../history/root-foundation/CONTINUATION-GROUNDING-PLAN.md)的 W1–W5；阶段以 W 编号，与并行会话的 P 编号分开。成果记录：新增 [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md)、[own-count-misses-joint-excess](../../../../theories/becoming/results/records/own-count-misses-joint-excess.md)、[held-lives-g0-is-centering](../../../../theories/becoming/results/records/held-lives-g0-is-centering.md)、[conveyance-crosses-the-boundary](../../../../theories/becoming/results/records/conveyance-crosses-the-boundary.md)、[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)。
+2026-10-10。Ren 提议从“想要自身延续者”重述普遍元伦理核心（[原话](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）：想要延续者使其延续有意义；它须计入的整体范围依视角而定，不需要任何公理；加一条公理即闭合整体。AI 把它分为两半：动力学定出想要延续者必须计入的范围，定不出中心；那条公理的唯一作用是让每一点都是中心。Ren 答“exactly”，并说“commit them, then start implementation all the way to full completion”。本节实现[延续奠基计划](../history/root-foundation/CONTINUATION-GROUNDING-PLAN.md)的 W1–W5；阶段以 W 编号，与并行会话的 P 编号分开。成果记录：新增 [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md)、[own-count-misses-joint-excess](../../../../theories/becoming/results/records/own-count-misses-joint-excess.md)、[held-lives-g0-is-centering](../../../../theories/becoming/results/records/living-significance-on-held-lives.md)、[conveyance-crosses-the-boundary](../../../../theories/becoming/results/records/conveyance-crosses-the-boundary.md)、[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)。
 
 ```text
 Result(s): 复用 no-finite-part-bears-taking（taking_draws_in、Inward、Around、Lone）、generation-is-replenishment
@@ -3236,7 +3236,7 @@ Ren 此后回答（[来源](../../../../sources/15-codex-theory-conversations/20
 所以本节不按 §47 的读法给每个想要之点放一个中心，而直接陈述 Ren 的原话。
 
 本节是计划 P39（[计划 §10](../history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成；分工经另一会话同意。它在核心中新增模块 `Becoming.Significance`，27 项定理。成果记录新增三项：
-- [one-axiom-yields-g0](../../../../theories/becoming/results/records/one-axiom-yields-g0.md)
+- [one-axiom-yields-g0](../../../../theories/becoming/results/records/continuation-condition-yields-living-significance.md)
 - [significance-retained-within-margin](../../../../theories/becoming/results/records/significance-retained-within-margin.md)
 - [whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)
 
@@ -3424,7 +3424,7 @@ AI 还提出两种不需要前提的机制：“selection between wholes: wholes
 本节是计划 P40（[计划 §10](../history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成。它不加公理，问这条路线到达哪一层。核心新增模块 `Becoming.Interdependence`，28 项定理。不用公理的结果放进第一部分（章节 §2 的“供给与返回”与第一部分的总陈述），路线 (b) 的分析与比较放进第二部分（章节 §6.9）。成果记录新增三项：
 - [feeding-closure](../../../../theories/becoming/results/records/feeding-closure.md)
 - [consumption-ends-with-feeders](../../../../theories/becoming/results/records/consumption-ends-with-feeders.md)
-- [closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-axiom.md)
+- [closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-continuation-condition.md)
 
 另修订三项记录的界限与下一增量，断言不变：
 - [loss-beyond-a-region](../../../../theories/becoming/results/records/loss-beyond-a-region.md)：`alongDependence` 与沿供给推出的范围一致，原是逐项对照，现由 `Clearing.dependenceRegion_iff` 证明；
@@ -3910,7 +3910,7 @@ AI 回答了 P39 与 P40 留下的问题（同一来源，AI 的话）：供给�
 - [comparison-within-reach](../../../../theories/becoming/results/records/comparison-within-reach.md)
 
 另修订四项记录，断言不变：
-- [feeding-closure](../../../../theories/becoming/results/records/feeding-closure.md)、[consumption-ends-with-feeders](../../../../theories/becoming/results/records/consumption-ends-with-feeders.md)、[closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-axiom.md)：撤回把供给闭包也读作 Ren 的“the system that one is in”，为它提供所及闭包；closure-verdict-meets-axiom 由 comparison-within-reach 推进；
+- [feeding-closure](../../../../theories/becoming/results/records/feeding-closure.md)、[consumption-ends-with-feeders](../../../../theories/becoming/results/records/consumption-ends-with-feeders.md)、[closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-continuation-condition.md)：撤回把供给闭包也读作 Ren 的“the system that one is in”，为它提供所及闭包；closure-verdict-meets-axiom 由 comparison-within-reach 推进；
 - [whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)：下一增量中的“路线 (b) 到达自身与所在的系统”改为“自身及其所依存的”。
 
 ```text
@@ -4013,7 +4013,7 @@ AI 在 P42 之前提出（[来源](../../../../sources/15-codex-theory-conversat
 
 本节是计划 P43，由本会话完成。核心新增模块 `Becoming.Boundaries`，47 项定理，导入 `Becoming.Feedback`；内容放进章节 §6.11。结果是公理的精确分解：它定位这一步，不降低公理的内容。审查之前的稿子把它叫作“由三个前提推出公理”，那一说法撤回（§62.1 第 3 项）。成果记录新增两项：
 - [presupposition-scopes](../../../../theories/becoming/results/records/presupposition-scopes.md)
-- [axiom-decomposition](../../../../theories/becoming/results/records/axiom-decomposition.md)
+- [axiom-decomposition](../../../../theories/becoming/results/records/continuation-condition-decomposition.md)
 
 ```text
 Result(s): 复用 metaethical-core-characterization（Valuation.significant_iff）、held-lives-g0-is-centering
@@ -4189,7 +4189,7 @@ Integration: 章节第 3 条、第一部分的总陈述、§8、§9 的脊柱表
 2026-10-11。Ren 的公理：“for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）。P39 表明它推出 G0（§53）。P40 之后，AI 对“是否以这条公理替代 G0”的回答是分两步：先审计 G0 每处用法对 `living` 的读法，再替换；Ren 写道：“continue, let's pursue the strongest claims and complete proof, i think you see the right direction”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md)）。AI 把它读作接受这一次序（AI 的读法，待 Ren）。这是工作次序 (d)。
 
 本节是计划 P44，由本会话完成。核心新增模块 `Becoming.Relevance`，30 项定理，导入 `Becoming.Boundaries` 与 `Becoming.Ranking`；桥接新增 5 项定理；内容放进章节 §6.12。结论：审计是干净的，其中一处读法是被迫的；在公理之下，以可能性读的 C 决定了 `Ranking` 留给读法选择的过度汲取，且不扣下任何事件。替换本身属于 Ren，G0 仍是所采用的公理。成果记录不新增，扩展两项：
-- [one-axiom-yields-g0](../../../../theories/becoming/results/records/one-axiom-yields-g0.md)：G0 的每处用法由公理解除；公理就是对任何东西的 G0；理由前提须读在活的内容上；普遍理由不用连通。
+- [one-axiom-yields-g0](../../../../theories/becoming/results/records/continuation-condition-yields-living-significance.md)：G0 的每处用法由公理解除；公理就是对任何东西的 G0；理由前提须读在活的内容上；普遍理由不用连通。
 - [ranking-under-readings](../../../../theories/becoming/results/records/ranking-under-readings.md)：可能性读法，以及可能性优先的次序。
 
 ```text
@@ -4561,8 +4561,8 @@ AI 的分析与拟议阶段在[计划](../history/root-foundation/REGISTRATION-A
 本节是统一计划 P49（[计划 §10](../history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)）。起草时编为 P47，因 P47 已是 `Becoming.Standing`，在工作板上改为 P49；审查文件保留起草时的编号。它不加公理，属于第一部分。核心新增模块 `Becoming.Testing`，92 项定理，导入 `Becoming.Feedback` 与 `Becoming.Locality`。按[零前提转向](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)与整合者定下的接口，平衡只在被识的条件上逐步假设（`Flow.BalancesOn`）；整体的平衡经 `Flow.Balances.on` 给出它。
 
 成果记录新增两项：
-- [testing-within-registration](../../../../theories/becoming/results/records/testing-within-registration.md)
-- [subthreshold-registration](../../../../theories/becoming/results/records/subthreshold-registration.md)
+- [testing-within-registration](../../../../theories/becoming/results/records/testing-within-couplings.md)
+- [subthreshold-registration](../../../../theories/becoming/results/records/differences-below-threshold.md)
 
 另扩展一项记录：[becoming-finite-horizon](../../../../theories/becoming/results/records/becoming-finite-horizon.md) 加入它的两个推论 `Renewable.no_exact_finite_reading` 与 `finite_reading_withholds_renewal`（审查 F9），原有断言不变。
 
@@ -4871,7 +4871,7 @@ Integration: 计划 P53；回答 P49 的开放项（§70，F6）：何处展开�
 
 2026-10-11。Ren 最初问的是“wisdoms to avoid run away feedbacks”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。P49 把失控读作在一种不见之中运行的回路，并说这是启发，不是陈述（§70）。P53 之后，AI 提议在策略的层面陈述失控问题，Ren 答：“no extra review needed, merge, then continue”。本节是统一计划 P55。它不加公理，只在被识的条件上逐步假设平衡，属于第一部分。核心新增模块 `Becoming.Runaway`，13 项定理，导入 `Becoming.Testing`，不改任何已有模块。
 
-成果记录新增一项：[runaway-distance-unregistered](../../../../theories/becoming/results/records/runaway-distance-unregistered.md)。
+成果记录新增一项：[runaway-distance-unregistered](../../../../theories/becoming/results/records/runaway-distance-uncoupled.md)。
 
 ```text
 Result(s): 复用 subthreshold-registration（Flow.ExchangeFollows、Flow.subthreshold_alike_always、
@@ -5451,7 +5451,7 @@ Integration: 章节（§8 表示的选择、§9 行、术语表）；记录 imba
 
 2026-10-12。Ren 问：“hows cause–effect system comparing to our theory?”，随后贴入一段关于因果系统的说明（作者未注明，读来是别处的 AI 所写，不是 Ren 的话，也不是理论的前提）。AI 把理论与这一框架（`x_{t+1} = F(x_t, u_t, ε_t)`、反馈、改变自身规则的系统、吸引子）作了比较，又提出五项可学之处。Ren 写道：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)）。五项提议是 AI 的；本节是其中第一项：选择只及选择者所识。它在工作板上认领为 P64。它不加公理；平衡只在被识的条件上逐步假设，“选择经识”是写在每条定理中的条件，不推出。它属于第一部分。核心新增模块 `Becoming.Selection`（L4），43 项定理，导入 `Becoming.Testing` 与 `Becoming.Capture`（P62，先于本节落地），不改任何已有模块。
 
-成果记录新增一项：[selection-through-registration](../../../../theories/becoming/results/records/selection-through-registration.md)。
+成果记录新增一项：[selection-through-registration](../../../../theories/becoming/results/records/selection-through-couplings.md)。
 
 ```text
 Result(s): 复用 testing-within-registration（Web.RegistersAlike、Web.RegistersAlikeUpTo、RegistersAlike.refl、
@@ -6086,7 +6086,7 @@ Integration: 计划 P73、P74；把 P49 的 Web.tail_unrefuted 推广为任意�
 
 ## 93. 智慧之根在第一部分所及（P75）
 
-2026-10-12，同一来源。Ren 的“finish wisdom root”指向成果记录 [wisdom-root](../../../../theories/becoming/results/records/wisdom-root.md)：核心不仅约束一般活动，还在所声明范围内构成并解释智慧的实际生成（[主研究 §8](CORE-CONSTRAINT-AND-WISDOM.md#8-明确目标证明这是智慧之根--the-root-of-wisdom-objective)）。§8.4 列出要闭合的四条连接：智慧问题到根部关系（跨表示的必要性）、根部关系到智慧的形成、根部与公开根据到判断的正当性、同一根到持续展开。本节不新增 Lean：它把第一部分已检查的规律（P49、P53、P55、P62、P64、P66 与 §92 的 P73、P74）按这四条连接逐项对上，说明每条现在完成到哪里，什么只有对实际形成的对应才能决定。新增记录 [wisdom-root-part-one](../../../../theories/becoming/results/records/wisdom-root-part-one.md)；目标记录 wisdom-root 按登记规则仍为目标（目标不能标为完成），其形式部分由该记录完成，留下的开放部分明示。
+2026-10-12，同一来源。Ren 的“finish wisdom root”指向成果记录 [wisdom-root](../../../../theories/becoming/results/records/wisdom-root.md)：核心不仅约束一般活动，还在所声明范围内构成并解释智慧的实际生成（[主研究 §8](CORE-CONSTRAINT-AND-WISDOM.md#8-明确目标证明这是智慧之根--the-root-of-wisdom-objective)）。§8.4 列出要闭合的四条连接：智慧问题到根部关系（跨表示的必要性）、根部关系到智慧的形成、根部与公开根据到判断的正当性、同一根到持续展开。本节不新增 Lean：它把第一部分已检查的规律（P49、P53、P55、P62、P64、P66 与 §92 的 P73、P74）按这四条连接逐项对上，说明每条现在完成到哪里，什么只有对实际形成的对应才能决定。新增记录 [wisdom-root-part-one](../../../../theories/becoming/results/records/wisdom-root-without-axiom.md)；目标记录 wisdom-root 按登记规则仍为目标（目标不能标为完成），其形式部分由该记录完成，留下的开放部分明示。
 
 ```text
 Result(s): 复用 testing-within-registration（P49）、experiment-needs-return（P53）、runaway-distance-unregistered（P55）、
@@ -6240,7 +6240,7 @@ Integration: 计划 P70；回答 Ren 关于框架失去什么、什么使切分�
 
 2026-10-12，同一来源（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）。Ren 说框架似乎失去了什么，提到“道可道非常道”；AI 的回答指出第三种失去：一个世界对自身的识由它的部分作出，部分在所识者之中。Ren 后来纠正：“i was speculating there is a "truth", but when we model it, projection is the limitation … i also speculate the full "truth" can be derived, situationally, including the cognition/controller part.”。本节检验其中“从内部”的一半。本节在工作板上认领为 P71。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Diagonal`（L2），26 项定理，导入 `Becoming.Recurrence`，不改任何已有模块。外围的 `RootCoverageBoundary`（数学抽象，`CoverageBoundary.lean`，导入 `Std`）有同一对角线的函数与谓词形式；本模块在核心中不用公理重述它，并加上完备恰在没有差别处、补全的展开与节律。
 
-成果记录新增一项：[registration-within-what-it-registers](../../../../theories/becoming/results/records/registration-within-what-it-registers.md)。
+成果记录新增一项：[registration-within-what-it-registers](../../../../theories/becoming/results/records/readings-within-what-they-read.md)。
 
 ```text
 Result(s): 复用 recurrence-without-premise（Law.orbit、Law.Returns、gap_of_lt；保留历史从不返回的
@@ -6309,7 +6309,7 @@ Integration: 计划 P71；回答 Ren 关于框架失去什么的问题中“从�
 
 2026-10-12，同一来源（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）。Ren 问框架失去的东西是否像“wave/particle”。AI 的回答指出：核心的 `Frame` 在类型上不依语境，一个主张被识得什么，不取决于与它一起被识的是什么；而在 Specker（1960）与 Kochen–Specker（1967）的世界中，不依语境的值根本不存在。AI 提出把它作为一项陈述，Ren 答“push the frontier, as far as possible”。本节在工作板上认领为 P72。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Context`（L2），28 项定理，导入 `Becoming.Frame`，不改任何已有模块；量子实现 `Becoming.Quantum`（37 项定理，只导入本模块）由“Cause–effect system theory comparison”（P64–P68 的所有者）作为 P72q 写成并检查，随本节落地。
 
-成果记录新增一项：[contextual-registration](../../../../theories/becoming/results/records/contextual-registration.md)。
+成果记录新增一项：[contextual-registration](../../../../theories/becoming/results/records/claims-shown-in-context.md)。
 
 ```text
 Result(s): 复用 Becoming.Frame 的 Frame、Process 与 realized；新增上列一项
@@ -6745,7 +6745,7 @@ Integration: 计划 P80；回答本章 §8“反馈与所及”中“他者有�
 
 由本会话的 Opus 子代理构建（266 条定理，公理报告为空）。尚无独立审查。
 
-**复用、产出与检查。** 复用 [laws-at-coarser-steps](../../../../theories/becoming/results/records/laws-at-coarser-steps.md)；本节的确切增量与消费者接口由 [only-the-order-of-change-registers](../../../../theories/becoming/results/records/only-the-order-of-change-registers.md)、[exchanges-commute-unless-joined](../../../../theories/becoming/results/records/exchanges-commute-unless-joined.md)、[order-of-exchanges-is-the-invariant](../../../../theories/becoming/results/records/order-of-exchanges-is-the-invariant.md) 记录。当前 [Becoming.Order](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Order.lean) 的 266 项定理由[合并回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z 覆盖；外围回执 20261013T091033.730173Z 通过。以上边界与给定条件保持，整合没有增加独立审查。
+**复用、产出与检查。** 复用 [laws-at-coarser-steps](../../../../theories/becoming/results/records/laws-at-coarser-steps.md)；本节的确切增量与消费者接口由 [only-the-order-of-change-registers](../../../../theories/becoming/results/records/only-the-order-of-change-shows.md)、[exchanges-commute-unless-joined](../../../../theories/becoming/results/records/exchanges-commute-unless-joined.md)、[order-of-exchanges-is-the-invariant](../../../../theories/becoming/results/records/order-of-exchanges-is-the-invariant.md) 记录。当前 [Becoming.Order](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Order.lean) 的 266 项定理由[合并回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z 覆盖；外围回执 20261013T091033.730173Z 通过。以上边界与给定条件保持，整合没有增加独立审查。
 
 ## 103. 一步与逐步选择家族的全部规律（P79）
 
@@ -8958,7 +8958,7 @@ Integration: §8 的进一步证明“路径分支时”、状态行、Ren 的�
 
 ## 141. 差别到达多少：耦合强度度量敏感，所携带的量是能到达的最大差别（Becoming.Propagation）
 
-2026-10-16。P80 的记录 [counterfactual-is-the-course](../../../../theories/becoming/results/records/counterfactual-is-the-course.md) 的 next_delta 要求差别到达多少的度量，`Becoming.Counterfactual` 把“差别到达多少的任何度量”列为没有导出；[feedback-and-reach](../../../../theories/becoming/results/records/feedback-and-reach.md)、[comparison-where-the-rest-responds](../../../../theories/becoming/results/records/comparison-where-the-rest-responds.md)、[sensitivity-is-the-least-registration](../../../../theories/becoming/results/records/sensitivity-is-the-least-registration.md)（P113：“敏感的度量与差别到达多少”）、[where-a-move-is-formed](../../../../theories/becoming/results/records/where-a-move-is-formed.md)（P109：“耦合的度量（部分形成动作的多少）”）与 [levels-of-closure](../../../../theories/becoming/results/records/levels-of-closure.md)（“耦合的度量”；其范围说共同条件“不度量耦合的强度”）亦列它；理论第 8 节的进一步证明在“反馈与所及”下列“耦合的度量”。Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)），2026-10-15 又说“continue”。本节在第一部分之内回答：不加公理，除各律所写者不加前提。工作板上认领为 P115。
+2026-10-16。P80 的记录 [counterfactual-is-the-course](../../../../theories/becoming/results/records/counterfactual-is-the-course.md) 的 next_delta 要求差别到达多少的度量，`Becoming.Counterfactual` 把“差别到达多少的任何度量”列为没有导出；[feedback-and-reach](../../../../theories/becoming/results/records/feedback-and-reach.md)、[comparison-where-the-rest-responds](../../../../theories/becoming/results/records/comparison-where-the-rest-responds.md)、[sensitivity-is-the-least-registration](../../../../theories/becoming/results/records/sensitivity-is-the-least-coupling.md)（P113：“敏感的度量与差别到达多少”）、[where-a-move-is-formed](../../../../theories/becoming/results/records/where-a-move-is-formed.md)（P109：“耦合的度量（部分形成动作的多少）”）与 [levels-of-closure](../../../../theories/becoming/results/records/levels-of-closure.md)（“耦合的度量”；其范围说共同条件“不度量耦合的强度”）亦列它；理论第 8 节的进一步证明在“反馈与所及”下列“耦合的度量”。Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)），2026-10-15 又说“continue”。本节在第一部分之内回答：不加公理，除各律所写者不加前提。工作板上认领为 P115。
 
 ```text
 Result(s): 新增 how-much-difference-arrives；回答六项记录 next_delta 中的“差别到达多少”与“耦合的度量”：counterfactual-is-the-course、
@@ -9483,7 +9483,7 @@ Integration: §9 Selection 一行（改为双语，陈述与计数）与一个�
 
 ## 152. 所携带的差别怎样增长：上游没有回路处有限阶精确、增长至多是多项式，回路使之失控（Becoming.Loops）
 
-2026-10-16。P115 的记录 [how-much-difference-arrives](../../../../theories/becoming/results/records/how-much-difference-arrives.md) 的 next_delta 首项是“回路的一般理论（绕回路的强度与失控）”，`Becoming.Propagation` 把“回路的一般理论，绕每个回路的强度与其失控，见证之外”列为没有导出；[comparison-where-the-rest-responds](../../../../theories/becoming/results/records/comparison-where-the-rest-responds.md) 要求“回路的一般定义，以及在其中陈述绕回路的强度与失控”，[runaway-distance-unregistered](../../../../theories/becoming/results/records/runaway-distance-unregistered.md)（P55）要求“一般地定义回路……并把失控本身陈述为定理”；理论第 8 节的进一步证明在“反馈与所及”下列“回路的一般理论”。Ren 2026-10-12 把理论比作量子动力学与“Fermi's diagrams”，说：“there are so many patterns and loops but we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）；2026-10-16 又说“continue”。本节在第一部分之内回答：不加公理，除各定理所写的强度不加前提。工作板上认领为 P118。
+2026-10-16。P115 的记录 [how-much-difference-arrives](../../../../theories/becoming/results/records/how-much-difference-arrives.md) 的 next_delta 首项是“回路的一般理论（绕回路的强度与失控）”，`Becoming.Propagation` 把“回路的一般理论，绕每个回路的强度与其失控，见证之外”列为没有导出；[comparison-where-the-rest-responds](../../../../theories/becoming/results/records/comparison-where-the-rest-responds.md) 要求“回路的一般定义，以及在其中陈述绕回路的强度与失控”，[runaway-distance-unregistered](../../../../theories/becoming/results/records/runaway-distance-uncoupled.md)（P55）要求“一般地定义回路……并把失控本身陈述为定理”；理论第 8 节的进一步证明在“反馈与所及”下列“回路的一般理论”。Ren 2026-10-12 把理论比作量子动力学与“Fermi's diagrams”，说：“there are so many patterns and loops but we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）；2026-10-16 又说“continue”。本节在第一部分之内回答：不加公理，除各定理所写的强度不加前提。工作板上认领为 P118。
 
 ```text
 Result(s): 新增 how-a-carried-difference-grows；回答 how-much-difference-arrives 的 next_delta 首项“回路的一般理论”，
@@ -10003,7 +10003,7 @@ theorem apart_only_downstream (r : law.ReadsInto part reads)
 
 ## 160. 整体而无部分之律所需：最小的识之反例的确切强度（Becoming.Tail）
 
-2026-10-16。P113（`Becoming.Sensitivity`，§137）表明：律在每个历史下读有限多个条件时，无论条件多少，敏感都是它所经的最小的识；条件无穷多时这一条件不能去掉：给定水平是否终将消失的判定（它给出有限全知原则），尾之律是反例；条件以自然数编号时，每个反例都给出弱有限全知原则。它留下反例之存在的确切强度，在弱有限全知原则与消失之判定之间（[sensitivity-is-the-least-registration](../../../../theories/becoming/results/records/sensitivity-is-the-least-registration.md) 的下一步首项；第 8 节“反馈与所及”）。Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）。本节回答此项，在第一部分之内：不加公理，除各定理所写者不加前提，按 Ren 2026-10-11 的先求零前提（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)）。工作板上认领为 P126。
+2026-10-16。P113（`Becoming.Sensitivity`，§137）表明：律在每个历史下读有限多个条件时，无论条件多少，敏感都是它所经的最小的识；条件无穷多时这一条件不能去掉：给定水平是否终将消失的判定（它给出有限全知原则），尾之律是反例；条件以自然数编号时，每个反例都给出弱有限全知原则。它留下反例之存在的确切强度，在弱有限全知原则与消失之判定之间（[sensitivity-is-the-least-registration](../../../../theories/becoming/results/records/sensitivity-is-the-least-coupling.md) 的下一步首项；第 8 节“反馈与所及”）。Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）。本节回答此项，在第一部分之内：不加公理，除各定理所写者不加前提，按 Ren 2026-10-11 的先求零前提（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)）。工作板上认领为 P126。
 
 ```text
 Result(s): 新增 what-a-law-of-the-whole-and-no-part-takes；回答 sensitivity-is-the-least-registration 的 next_delta

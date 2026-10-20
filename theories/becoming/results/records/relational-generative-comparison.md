@@ -41,8 +41,8 @@ Excludes only strict comparison through the declared summary, not all scalar eva
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.
 
-- Related, not a proved adapter: [practical-judgment-g0-j](practical-judgment-g0-j.md). Interpretive connection: the established explicit G0/J route explains C's practical role; this record is not a direct Lean input to the composition.
-- Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Interpretive connection: the cross-intelligence direction likewise must retain actual relations and losses; deployment reliability and behavioral convergence are not proved here.
+- Related, not a proved adapter: [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md). Interpretive connection: the established explicit G0/J route explains C's practical role; this record is not a direct Lean input to the composition.
+- Related, not a proved adapter: [alignment-direction-under-widening](alignment-direction-under-widening.md). Interpretive connection: the cross-intelligence direction likewise must retain actual relations and losses; deployment reliability and behavioral convergence are not proved here.
 
 **Used by:** [classification-robust-generative-comparison](classification-robust-generative-comparison.md) · [wisdom-root](wisdom-root.md) (interpretive)
 

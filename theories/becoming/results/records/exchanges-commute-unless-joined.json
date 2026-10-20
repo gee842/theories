@@ -241,7 +241,7 @@
   ],
   "dependencies": [
     {
-      "id": "only-the-order-of-change-registers",
+      "id": "only-the-order-of-change-shows",
       "relation": "formal-reuse",
       "detail": {
         "zh": "同一模块的算术与段上总量的引理。",
@@ -452,13 +452,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad",
       "declarations": []
     },
     {

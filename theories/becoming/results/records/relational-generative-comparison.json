@@ -48,14 +48,14 @@
   "dependencies": [],
   "related": [
     {
-      "id": "practical-judgment-g0-j",
+      "id": "practical-judgment-under-living-significance",
       "detail": {
         "zh": "解释关联：沿既有公开 G0/J 公理路线说明 C 的实践地位；本组合没有以该记录作为直接 Lean 输入。",
         "en": "Interpretive connection: the established explicit G0/J route explains C's practical role; this record is not a direct Lean input to the composition."
       }
     },
     {
-      "id": "alignment-direction-g0-j",
+      "id": "alignment-direction-under-widening",
       "detail": {
         "zh": "解释关联：跨智能方向同样需要保留实际关系及其损失；这里没有证明部署可靠性或行为收敛。",
         "en": "Interpretive connection: the cross-intelligence direction likewise must retain actual relations and losses; deployment reliability and behavioral convergence are not proved here."

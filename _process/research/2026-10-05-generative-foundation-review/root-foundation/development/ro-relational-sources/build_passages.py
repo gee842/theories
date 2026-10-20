@@ -572,6 +572,29 @@ def rename_text(s, table):
 RENAMES = renamed()
 R30_WINDOWS, R30_WORDS = r30_rules()
 
+# Renamed records (R35, E4): a passage's records, and record ids named in its readings, follow the record renames
+# (receipts in _process/architecture/renames/), claims unchanged. Applied after FIXES, so a FIXES entry may still
+# name a former id.
+RECORDS_RENAMED_WHY = 'record ids follow the renamed records (R35; receipts in _process/architecture/renames), claims unchanged'
+
+
+def renamed_records():
+    out = {}
+    for f in sorted((V.ROOT / '_process/architecture/renames').glob('*.json')):
+        for x in json.loads(f.read_text())['renames']:
+            out[x['old']] = x['new']
+    return out
+
+
+def rename_records_text(s, table):
+    import re
+    for old, new in table.items():
+        s = re.sub(r'(?<![A-Za-z0-9_-])' + re.escape(old) + r'(?![A-Za-z0-9_-])', new, s)
+    return s
+
+
+RECORD_RENAMES = renamed_records()
+
 
 def tradition(slice_, e):
     fixed = {'yi': '易传', 'lao': '老子', 'ru': '儒家', 'wen': '文字'}
@@ -665,6 +688,12 @@ def main():
             p['reading_en'] = rename_text_r30(rename_text(p['reading_en'], RENAMES), R30_WINDOWS, R30_WORDS)
             if (p['declarations'], p['reading'], p['reading_en']) != before:
                 p['corrected'] = (p['corrected'] + '; ' if p.get('corrected') else '') + RENAMED_WHY
+            before = (p['records'], p['reading'], p['reading_en'])
+            p['records'] = [RECORD_RENAMES.get(r, r) for r in p['records']]
+            p['reading'] = rename_records_text(p['reading'], RECORD_RENAMES)
+            p['reading_en'] = rename_records_text(p['reading_en'], RECORD_RENAMES)
+            if (p['records'], p['reading'], p['reading_en']) != before:
+                p['corrected'] = (p['corrected'] + '; ' if p.get('corrected') else '') + RECORDS_RENAMED_WHY
             if not src.startswith('wikisource/'):
                 wanted.add(src)
             passages.append(p)

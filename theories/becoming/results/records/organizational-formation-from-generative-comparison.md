@@ -53,8 +53,8 @@ One support history forms links, retains a basis and bears an opportunity loss; 
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **formal-reuse**: [practical-judgment-g0-j](practical-judgment-g0-j.md). PracticalJudgment.finite_frontier and dominated_excluded feed formation_required_of_improvable_absence to produce Required; normative interpretation inherits the explicit J commitments.
-- **interpretive**: [alignment-direction-g0-j](alignment-direction-g0-j.md). Reuses the completed cross-intelligence direction to advance the conditions of organizational formation.
+- **formal-reuse**: [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md). PracticalJudgment.finite_frontier and dominated_excluded feed formation_required_of_improvable_absence to produce Required; normative interpretation inherits the explicit J commitments.
+- **interpretive**: [alignment-direction-under-widening](alignment-direction-under-widening.md). Reuses the completed cross-intelligence direction to advance the conditions of organizational formation.
 - related, not a proved adapter: [classification-robust-generative-comparison](classification-robust-generative-comparison.md). The later robust-classification result supplies improvement inputs in unsettled cases without replacing the original organizational result.
 
 **Used by:** [classification-robust-generative-comparison](classification-robust-generative-comparison.md)

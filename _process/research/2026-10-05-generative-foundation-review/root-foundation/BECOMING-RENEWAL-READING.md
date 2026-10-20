@@ -1445,7 +1445,7 @@ Integration: 计划 P38（第一部分的总陈述：每个前提加了什么）
 
 - “not harm”是“a phase transition with a clear boundary”。
 
-- [one-axiom-yields-g0](../../../../theories/becoming/results/records/one-axiom-yields-g0.md)
+- [one-axiom-yields-g0](../../../../theories/becoming/results/records/continuation-condition-yields-living-significance.md)
 - [significance-retained-within-margin](../../../../theories/becoming/results/records/significance-retained-within-margin.md)
 - [whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)
 
@@ -1527,7 +1527,7 @@ Integration: 计划 P38c（第一部分的总陈述：每个前提都起约束�
 
 - [feeding-closure](../../../../theories/becoming/results/records/feeding-closure.md)
 - [consumption-ends-with-feeders](../../../../theories/becoming/results/records/consumption-ends-with-feeders.md)
-- [closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-axiom.md)
+- [closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-continuation-condition.md)
 
 ```text
 Result(s): 复用 derived-extent-limits（Flow.FedBy、Clearing.fedBy_source）、own-count-misses-joint-excess
@@ -1782,7 +1782,7 @@ Integration: 计划 P42（工作次序 (a)–(b)）；推进 closure-verdict-mee
 <a id="62-公理的分解p43"></a>
 
 - [presupposition-scopes](../../../../theories/becoming/results/records/presupposition-scopes.md)
-- [axiom-decomposition](../../../../theories/becoming/results/records/axiom-decomposition.md)
+- [axiom-decomposition](../../../../theories/becoming/results/records/continuation-condition-decomposition.md)
 
 ```text
 Result(s): 复用 metaethical-core-characterization（Valuation.significant_iff）、held-lives-g0-is-centering
@@ -2033,8 +2033,8 @@ Integration: 章节 §8 的 Ren 的选择加一项（第二部分的结构）；
 >
 > Try again
 
-- [testing-within-registration](../../../../theories/becoming/results/records/testing-within-registration.md)
-- [subthreshold-registration](../../../../theories/becoming/results/records/subthreshold-registration.md)
+- [testing-within-registration](../../../../theories/becoming/results/records/testing-within-couplings.md)
+- [subthreshold-registration](../../../../theories/becoming/results/records/differences-below-threshold.md)
 
 ```text
 Result(s): 复用 feedback-and-reach（Flow.Exchanges、Flow.WithinInfluence、Flow.Balances.unregistered_beyond_influence 的
@@ -5548,7 +5548,7 @@ Ren's "finish wisdom root" points to the target [wisdom-root](../../../../theori
 3. **Warrant.** Unchanged. The ethical direction goes through Part II, where G0 is the theorem of the one axiom (P51). Part I contains no ethical predicate.
 4. **Continuing development.** `merged_unrested` and `diagonal_refutes`: wisdom is never a completed learner, so continuing development is a law, not an added demand. P71, if it lands, strengthens this; it is still scratch evidence and is not counted.
 
-**Result.** The formal part of the target is completed at the scope Part I reaches, in the new record [wisdom-root-part-one](../../../../theories/becoming/results/records/wisdom-root-part-one.md). The target stays open by the registry's rule and, substantively, in three respects:
+**Result.** The formal part of the target is completed at the scope Part I reaches, in the new record [wisdom-root-part-one](../../../../theories/becoming/results/records/wisdom-root-without-axiom.md). The target stays open by the registry's rule and, substantively, in three respects:
 - the correspondence of actual formation;
 - the formation of concern and affect;
 - the sufficiency of these relations for all wisdom.
@@ -5682,7 +5682,7 @@ Not shown:
 
 Built by Opus subagents of the session (266 theorems, empty axiom reports). No independent review yet.
 
-**Reuse, output and verification.** Reuses [laws-at-coarser-steps](../../../../theories/becoming/results/records/laws-at-coarser-steps.md); the exact delta and consumer interfaces are recorded in [only-the-order-of-change-registers](../../../../theories/becoming/results/records/only-the-order-of-change-registers.md), [exchanges-commute-unless-joined](../../../../theories/becoming/results/records/exchanges-commute-unless-joined.md), [order-of-exchanges-is-the-invariant](../../../../theories/becoming/results/records/order-of-exchanges-is-the-invariant.md). The current [Becoming.Order](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Order.lean) has 266 theorems covered by [consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z; periphery receipt 20261013T091033.730173Z passed. The stated conditions and limits remain, and integration adds no independent review.
+**Reuse, output and verification.** Reuses [laws-at-coarser-steps](../../../../theories/becoming/results/records/laws-at-coarser-steps.md); the exact delta and consumer interfaces are recorded in [only-the-order-of-change-registers](../../../../theories/becoming/results/records/only-the-order-of-change-shows.md), [exchanges-commute-unless-joined](../../../../theories/becoming/results/records/exchanges-commute-unless-joined.md), [order-of-exchanges-is-the-invariant](../../../../theories/becoming/results/records/order-of-exchanges-is-the-invariant.md). The current [Becoming.Order](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Order.lean) has 266 theorems covered by [consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z; periphery receipt 20261013T091033.730173Z passed. The stated conditions and limits remain, and integration adds no independent review.
 
 **P79: the laws of one step are all the laws of one step.** Under Ren's "move towards 100%", completeness in the strong sense, which held for counting only (`tally_iff_counted`), is proved for Locality's laws of one step. A new core module `Becoming.OneStep` (imports `Counting` and `Sampling`), no axiom, no premise, no existing module changed.
 - **Exact under each condition.** A pattern (the passages of a family's members, the count of takers, whether something exchanges) is shown by some world exactly when it obeys the law of every step (`OneStep.every_iff`), and on a family balanced on, running down, closed, or both, exactly when it also obeys that condition's law (`OneStep.balance_iff`, `OneStep.runsDown_iff`, `OneStep.closed_iff`, `OneStep.runsDownClosed_iff`); so a property holds of every such step exactly when it holds of every pattern obeying the law (`OneStep.laws`). Across runs on one family the only further law is that what stands after each step stands before the next (`OneStep.Chained`, `OneStep.run_every_iff`).
@@ -9739,6 +9739,6 @@ Output → input: the chain from the unfolding through the condition (scope) and
 
 **Connectivity.** On `395bfa9e5` (the Lean of this landing; kept at `refs/salvage/r34-connectivity-measured-tree`), the measure counts 476 of 11,401 apart (479 of 11,381 before), 56 of them general structure by design; none of the 22 new theorems is apart. The three fewer are the port (`Ranking` 1 → 0, `ActiveReading` 2 → 0); the register entries of `Ranking.active_of_renewed` and `ActiveReading.absent_included` moved to the kit's [apart-retired.json](development/r34-evaluative-chain/apart-retired.json) ([`apart.py`](development/r34-evaluative-chain/apart.py)). Statements on both families 859 → 876, on World/Flow/Web 2,571 → 2,596, on Process/Frame/Run/Trace 2,871 → 2,861; pure forwarders 50 → 52; 340 apart roots (support 82 → 80); 67 dependency components. [THEOREM-CONNECTIVITY §11](THEOREM-CONNECTIVITY.md#11-r32-the-measure-stops-rewarding-restatement) logs the rerun.
 
-**Records.** New: [the-run-classes-and-widening](../../../../theories/becoming/results/records/the-run-classes-and-widening.md) (reusing four-cases-of-a-part, significance-retained-within-margin and life-as-condition-of-life). [comparison-by-widening](../../../../theories/becoming/results/records/comparison-by-widening.md) states `Web.paths_one_object`; [held-lives-g0-is-centering](../../../../theories/becoming/results/records/held-lives-g0-is-centering.md) gains the law of standpoints as formations; [alignment-direction-g0-j](../../../../theories/becoming/results/records/alignment-direction-g0-j.md) is retitled “AI alignment direction under widening and the practical commitments”, its hypotheses name the condition for scope and C for order in place of G0, its laws are the core schema, and the periphery module stays bound as an instance; [ranking-under-readings](../../../../theories/becoming/results/records/ranking-under-readings.md) and [relational-reading-comparison](../../../../theories/becoming/results/records/relational-reading-comparison.md) note the restatements. [`records_r34.py`](development/r34-evaluative-chain/records_r34.py) writes these; `rebind.py` then rebinds the proof bindings of the changed Lean files to the receipt, files the moved declarations and re-points the changed documents, each record with a history note. DELEGATED-CHOICES D2 is revised [AI reading]: the formation-level reading is dropped from “generative”, since the run classes are joined to the order by laws, not identified with it; D1 states the `GrownBy` blocker. OPENING's footnote on alignment (the source of README note 11) names the condition for scope and C for order and cites the schema; the body is unchanged.
+**Records.** New: [the-run-classes-and-widening](../../../../theories/becoming/results/records/the-run-classes-and-widening.md) (reusing four-cases-of-a-part, significance-retained-within-margin and life-as-condition-of-life). [comparison-by-widening](../../../../theories/becoming/results/records/comparison-by-widening.md) states `Web.paths_one_object`; [held-lives-g0-is-centering](../../../../theories/becoming/results/records/living-significance-on-held-lives.md) gains the law of standpoints as formations; [alignment-direction-g0-j](../../../../theories/becoming/results/records/alignment-direction-under-widening.md) is retitled “AI alignment direction under widening and the practical commitments”, its hypotheses name the condition for scope and C for order in place of G0, its laws are the core schema, and the periphery module stays bound as an instance; [ranking-under-readings](../../../../theories/becoming/results/records/ranking-under-readings.md) and [relational-reading-comparison](../../../../theories/becoming/results/records/relational-reading-comparison.md) note the restatements. [`records_r34.py`](development/r34-evaluative-chain/records_r34.py) writes these; `rebind.py` then rebinds the proof bindings of the changed Lean files to the receipt, files the moved declarations and re-points the changed documents, each record with a history note. DELEGATED-CHOICES D2 is revised [AI reading]: the formation-level reading is dropped from “generative”, since the run classes are joined to the order by laws, not identified with it; D1 states the `GrownBy` blocker. OPENING's footnote on alignment (the source of README note 11) names the condition for scope and C for order and cites the schema; the body is unchanged.
 
 **Self-review.** Each new theorem says exactly what is proved: the run-class laws are one direction each under their premises, and the two witnesses show that neither the stepwise class nor the consuming class alone decides; nothing says that renewing widens. `Web.paths_one_object` adds no content beyond its three conjuncts; its point is that the condition, significance and C are stated of one object. `Web.selfValuation` moves the choice of region into the choice of relation; that relation is still supplied. The direction schema is general over webs and moves but takes `Priority` as a premise and reads moves by their outcome levels; it says what a comparison meeting J1/J2 chooses, not that a system chooses so, and the alignment claim stays an argument. F9 leaves one foundation `Unfolding` in `Conditions.along`.

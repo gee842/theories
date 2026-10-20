@@ -37,7 +37,7 @@ Boundary source: [ChanceAdequacy.lean](../../../../experiments/integrated-correc
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.
 
-- Related, not a proved adapter: [practical-judgment-g0-j](practical-judgment-g0-j.md). J3 supports the undertaking interpretation; the pure mass inequality does not itself require that normative premise.
+- Related, not a proved adapter: [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md). J3 supports the undertaking interpretation; the pure mass inequality does not itself require that normative premise.
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

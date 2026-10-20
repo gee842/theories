@@ -60,7 +60,7 @@ The chapter's section 7.4, restated by M1 on 18 October 2026, read "alignment fo
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **formal-reuse**: [selection-through-registration](selection-through-registration.md). Reuses Web.SelectsThroughAll, Web.SelectsThrough.all, Web.separates_all, Web.class_selects and Web.admits_through; the delta is a pool's own coupling closure, blindness beyond it, the exactness of what a pool separates, and Flow.unselected_beyond_coupling_all re-derived as the case of one formation.
+- **formal-reuse**: [selection-through-couplings](selection-through-couplings.md). Reuses Web.SelectsThroughAll, Web.SelectsThrough.all, Web.separates_all, Web.class_selects and Web.admits_through; the delta is a pool's own coupling closure, blindness beyond it, the exactness of what a pool separates, and Flow.unselected_beyond_coupling_all re-derived as the case of one formation.
   - Output: Pooled coupling, and a pool within one formation's closure blind beyond it.
   - Input: The same blindness, and exact separation, for any pool, through the member whose closure holds each formation.
   - Preserved conditions: The rest fixed; balance on the conditions coupled in. [Selection.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)
@@ -68,7 +68,7 @@ The chapter's section 7.4, restated by M1 on 18 October 2026, read "alignment fo
   - Output: The gap for one's own act through any member of the actor's coupling closure.
   - Input: The same gap at a pool's coupling closure, through the member whose closure holds each formation.
   - Preserved conditions: The rest follows a law of exchange reading through coupling; balance; the same formations present; a common start. [SelectionGap.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionGap.lean)
-- related, not a proved adapter: [testing-within-registration](testing-within-registration.md). There one formation's coupling closure, and the clearer's side closed under being affected through what it couples into (Clearing.clearerSide_closed); here a pool's closure is the union of its members', and the clearer's alikeness is derived from a law of exchange.
+- related, not a proved adapter: [testing-within-couplings](testing-within-couplings.md). There one formation's coupling closure, and the clearer's side closed under being affected through what it couples into (Clearing.clearerSide_closed); here a pool's closure is the union of its members', and the clearer's alikeness is derived from a law of exchange.
 - related, not a proved adapter: [raising-what-couples-in-draws-from-beyond](raising-what-couples-in-draws-from-beyond.md). There a selection rewarding a rise of what a group couples into rewards drawing from beyond the group's coupling; here what a pool can separate is bounded by its members' coupling closures.
 - related, not a proved adapter: [tests-fix-likeness-where-determined](tests-fix-likeness-where-determined.md). Its list searches over decided properties (Becoming.Likeness) give the member-level converse: from not every member coupling alike, a member that couples apart.
 - related, not a proved adapter: [what-a-pools-acts-respond-to](what-a-pools-acts-respond-to.md). Derives this record's premise that a selection goes through the pooled coupling for what a pool decides by its acts, where each member's law reads through its coupling, and turns the gap for a pool's act into the gap for its response.

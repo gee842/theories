@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "id": "learnable-through-registration",
+  "id": "learnable-through-a-map",
   "title": {
     "zh": "外推经映射所能学者",
     "en": "What an extrapolation can learn through a map"
@@ -300,14 +300,14 @@
       }
     },
     {
-      "id": "subthreshold-registration",
+      "id": "differences-below-threshold",
       "detail": {
         "zh": "只经阈耦合入的条件只传递是否满足所需；读于外推，阈下的差别只在它在经映射的未来中显现、或从特征中消失之处可学（读法）。",
         "en": "A condition coupled in by threshold only passes only whether it meets the need; read for extrapolations, a difference below threshold is learnable only where it shows in the future through the map or vanishes from the feature (a reading)."
       }
     },
     {
-      "id": "wisdom-root-part-one",
+      "id": "wisdom-root-without-axiom",
       "detail": {
         "zh": "其学习一项经映射来读：外推所能学的，不多于经映射的未来所分辨者。",
         "en": "Its learning clause read through a map: an extrapolation learns no more than the future through the map tells apart."
@@ -399,12 +399,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md",
@@ -618,5 +618,8 @@
         "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
+  ],
+  "former_ids": [
+    "learnable-through-registration"
   ]
 }

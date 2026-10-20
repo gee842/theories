@@ -257,7 +257,7 @@
   ],
   "related": [
     {
-      "id": "runaway-distance-unregistered",
+      "id": "runaway-distance-uncoupled",
       "detail": {
         "zh": "那里观察 obs 是给出的；这里观察是从所观察者出发的所读路线，直接观察是长度为零的路线。",
         "en": "There observation, obs, is given; here it is a route of readings from what is observed, direct observation being the route of length zero."
@@ -446,7 +446,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

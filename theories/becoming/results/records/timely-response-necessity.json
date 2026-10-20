@@ -66,7 +66,7 @@
       }
     },
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用此前耦合入的全部。",
@@ -185,7 +185,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
       "role": "integration",
-      "sha256": "26d0c1bc43e6a406b8e5d4e9c15378846f284301adffcbb3546a0cfd6a216e13",
+      "sha256": "dc3a549bc748c5830c07fb370506dbd20f060b982a010fee238420f45e76b0ef",
       "declarations": []
     },
     {
@@ -197,7 +197,7 @@
     {
       "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
       "role": "statement",
-      "sha256": "8044ca187bdd4f0ed07ed66e640294db6c750c0608301347b581de800914447d",
+      "sha256": "7c3ca8d1d1b30b4bd8913db7778e27aa5f2ca80e06e8142dd82d573bc7abbec2",
       "declarations": []
     },
     {

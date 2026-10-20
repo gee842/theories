@@ -70,7 +70,7 @@ Ren's first confirmed reading: possibilities are what can form next from what ex
 - related, not a proved adapter: [joint-difference-making](joint-difference-making.md). Its but-for test holds the move fixed; this comparison holds the rest of the exchange fixed. A part's contribution here is to what can form, not to an ending.
 - related, not a proved adapter: [own-count-misses-joint-excess](own-count-misses-joint-excess.md). Joint excess compares each step's totals; the difference here follows one part's cumulative net exchange.
 
-**Used by:** [feedback-and-reach](feedback-and-reach.md) · [four-cases-of-a-part](four-cases-of-a-part.md) · [loss-beyond-a-region](loss-beyond-a-region.md) · [one-axiom-yields-g0](one-axiom-yields-g0.md) · [ranking-under-readings](ranking-under-readings.md) · [significance-retained-within-margin](significance-retained-within-margin.md) · [subthreshold-registration](subthreshold-registration.md) · [testing-within-registration](testing-within-registration.md)
+**Used by:** [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md) · [differences-below-threshold](differences-below-threshold.md) · [feedback-and-reach](feedback-and-reach.md) · [four-cases-of-a-part](four-cases-of-a-part.md) · [loss-beyond-a-region](loss-beyond-a-region.md) · [ranking-under-readings](ranking-under-readings.md) · [significance-retained-within-margin](significance-retained-within-margin.md) · [testing-within-couplings](testing-within-couplings.md)
 
 <a id="sources--来源"></a>
 ### Sources

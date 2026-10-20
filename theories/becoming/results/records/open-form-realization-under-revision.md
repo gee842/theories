@@ -40,7 +40,7 @@ A conditional composition with substantive counterexamples, not a universal prod
 ## Dependencies and related results
 
 - **formal-reuse**: [positive-ground-open-futures](positive-ground-open-futures.md). securesNewContent_by_bound directly calls contingent_generation_has_positive_ground; frozen Controls.lean passes newContent_by_bound output into its formation premise.
-- **formal-reuse**: [one-axiom-yields-g0](one-axiom-yields-g0.md). P89 calls inventory_g0_of_unrestricted and livingSignificance_of_unrestricted to complete the exact old positive-ground instance and its form on a shared run.
+- **formal-reuse**: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). P89 calls inventory_g0_of_unrestricted and livingSignificance_of_unrestricted to complete the exact old positive-ground instance and its form on a shared run.
 
 **Output:** Under G0, actual new generation in each history supplies some new positive ground per history without one fixed form.
 
@@ -55,8 +55,8 @@ A conditional composition with substantive counterexamples, not a universal prod
 
 **Preserved conditions:** The same bounded inventory and novel witness, the inherited execution and handoff conditions, with Unrestricted explicit. [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean)
 
-- Related, not a proved adapter: [practical-judgment-g0-j](practical-judgment-g0-j.md). Interpretive connection: specific undertakings and losses remain governed by existing principles; different possible forms do not license arbitrary replacement.
-- Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Interpretive connection: supplies a realization interface for revisable rules while reusing the completed alignment direction, without reproving that direction or universal compliance.
+- Related, not a proved adapter: [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md). Interpretive connection: specific undertakings and losses remain governed by existing principles; different possible forms do not license arbitrary replacement.
+- Related, not a proved adapter: [alignment-direction-under-widening](alignment-direction-under-widening.md). Interpretive connection: supplies a realization interface for revisable rules while reusing the completed alignment direction, without reproving that direction or universal compliance.
 - Related, not a proved adapter: [formed-goal-revision-continuation](formed-goal-revision-continuation.md). Already supplies comparatively warranted end revision and actual continuation; not a generic missing connection.
 - Related, not a proved adapter: [acquired-revision-of-pending-task](acquired-revision-of-pending-task.md). Existing pending-task rewriting retains historical loss and support costs.
 - Related, not a proved adapter: [pending-task-context-applicability](pending-task-context-applicability.md). Existing pre-action checking retains its scope; keeping a task is not satisfying the need, and concrete applications require review.

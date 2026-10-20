@@ -83,7 +83,7 @@ Ren, 15 October 2026: “"What this line doesn’t reach" is also worth doing”
   - Output: Some course of n steps starts at s; courses of every length do.
   - Input: With finitely many configurations, a course of N steps gives courses of every length, with no decidability; the extrapolation built from the process takes a configuration from which a run goes on.
   - Preserved conditions: A list holds every configuration. [Lasting.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean)
-- related, not a proved adapter: [learnable-through-registration](learnable-through-registration.md). The map's limit: configurations with the same future through the map give every extrapolation the same prefix; here, runs with the same past through the map.
+- related, not a proved adapter: [learnable-through-a-map](learnable-through-a-map.md). The map's limit: configurations with the same future through the map give every extrapolation the same prefix; here, runs with the same past through the map.
 - related, not a proved adapter: [experiment-needs-return](experiment-needs-return.md). What an act does is fixed by the record only where taken; here neither the prefix nor the supplied law fixes the branch at a parting (the reading “settled only when taken” is withdrawn).
 - related, not a proved adapter: [returning-where-the-course-branches](returning-where-the-course-branches.md). Returning and drawing for the same branching processes; here, identification in them.
 - related, not a proved adapter: [typicality-by-counting](typicality-by-counting.md). Worlds with weights: a record shows no weight, and counting gives that most courses show the weights.

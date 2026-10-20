@@ -68,6 +68,8 @@ python3 -B tools/research/research.py lint --ids joint-plan-composition
 
 **Law families.** Records that state one law and its readings, conditions or calibrations are grouped in `theories/becoming/results/data/law-families.json`, each family with a lead record and one shared statement. A new record that restates a family's law joins the family there instead of repeating the statement; the record pages and RESULTS.md render the family, and `research.py check` verifies that every member is a record and sits in one family. The record field `family` is the session-map family and is not this.
 
+**Renaming a record.** `research.py rename-id --plan PLAN.tsv` (old_id, new_id, reason; dry run unless `--apply`) moves the record to the new id, keeps the old one in `former_ids`, rewrites links, JSON references and the id's mentions in current-facing text (study logs, reviews and the board keep the id of their time), and writes a receipt to `_process/architecture/renames/`. The old record page becomes a generated redirect, and `research-find` matches former ids. A passage map built by a script (the RO map) follows through its builder, never in place. An id named in the curated chain's data is renamed only through the chain's maintenance record.
+
 **Supersession.** Keep the old record with `status: superseded` and `superseded_by: <id>`, record the exact replacement scope and preserve the old evidence. `withdrawn` needs an explanation in history and a linked boundary; it never deletes the counterexample.
 
 ### Moving a source

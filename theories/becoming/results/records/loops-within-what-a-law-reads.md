@@ -70,7 +70,7 @@ P118's third reading as Ren took it on 16 October 2026, and P122, left open “w
   - Output: Loops formed by a step; a loop forms by closing.
   - Input: A loop forms at a step only through a formation reading there.
   - Preserved conditions: None. [Closing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean)
-- **formal-reuse**: [runaway-distance-unregistered](runaway-distance-unregistered.md). Reuses Flow.PolicyThrough: the courses of a law reading through the couplings are policies through them; the break not coupling in holds for whole laws.
+- **formal-reuse**: [runaway-distance-uncoupled](runaway-distance-uncoupled.md). Reuses Flow.PolicyThrough: the courses of a law reading through the couplings are policies through them; the break not coupling in holds for whole laws.
   - Output: Policies through the couplings; a raise not showing before the break.
   - Input: For every law reading a stock only below a threshold, a raise carried nowhere up to the break.
   - Preserved conditions: The rest following the law (not the rest fixed). [Runaway.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean)

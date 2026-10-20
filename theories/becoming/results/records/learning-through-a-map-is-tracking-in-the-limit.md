@@ -53,7 +53,7 @@ The twentieth review's G5 found two theories of learning in the limit, Learnable
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **formal-reuse**: [learnable-through-registration](learnable-through-registration.md). Reuses LearnableRuns.Predicts, learnable_iff and course_same: what an extrapolation can learn through a map along the runs of a determined law.
+- **formal-reuse**: [learnable-through-a-map](learnable-through-a-map.md). Reuses LearnableRuns.Predicts, learnable_iff and course_same: what an extrapolation can learn through a map along the runs of a determined law.
   - Output: Learnability through a map along runs, and its criterion in a world a list holds.
   - Input: What tracking in the limit is shown equivalent to.
   - Preserved conditions: A world a list holds, for the converse. [LearnableRuns.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean)

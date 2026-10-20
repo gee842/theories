@@ -90,7 +90,7 @@ The two rankings part ways under the stepwise reading. If G0 and C share the ste
   - Output: The law, consumption by overdraw and the sustaining formation's permanent loss of support.
   - Input: Two pairs of continuations under the two readings.
   - Preserved conditions: The law's premises. [RelationalRenewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean)
-- **formal-reuse**: [one-axiom-yields-g0](one-axiom-yields-g0.md). possible_extends_iff takes the axiom Unrestricted as a hypothesis.
+- **formal-reuse**: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). possible_extends_iff takes the axiom Unrestricted as a hypothesis.
   - Output: The axiom.
   - Input: Under the axiom, extension under the possibility reading is retaining and adding.
   - Preserved conditions: The axiom Unrestricted; two courses of one law. [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
@@ -103,7 +103,7 @@ The two rankings part ways under the stepwise reading. If G0 and C share the ste
   - Input: The possibility reading.
   - Preserved conditions: None. [Admission.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
 - related, not a proved adapter: [becoming-finite-horizon](becoming-finite-horizon.md). Withholding an overdrawing formation's events before the loss needs to know how the run continues; that result shows that readings fixed by a finite prefix cannot in general.
-- related, not a proved adapter: [practical-judgment-g0-j](practical-judgment-g0-j.md). Beyond C, J1's priority of basic conditions is one stronger comparison that might yield “better without malignant growth”; this connection is not formalized here.
+- related, not a proved adapter: [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md). Beyond C, J1's priority of basic conditions is one stronger comparison that might yield “better without malignant growth”; this connection is not formalized here.
 
 **Used by:** [wisdom-root](wisdom-root.md) (interpretive)
 

@@ -272,7 +272,7 @@
   ],
   "dependencies": [
     {
-      "id": "contextual-registration",
+      "id": "claims-shown-in-context",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Contextual、Contextual.Glues、Contextual.Respects、Contextual.not_glues、Local、NoGlobal，以及 Specker 与 Square 的可能性、world 与 respects：奇偶系统的可能性是局部的，其实例的可能性就是那里的。",
@@ -529,17 +529,17 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "448a6b1fb2064554ba1e5efebebfa5788f1977f56cd74841f6a2d3fdc69b1e62"
+      "sha256": "dfb7945a69f1d7a2610812f1715b513375cb1bea37d8b1c58f2c88e1c94f16c9"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8bcc6540de8ca6d74faf7b27842883c1e45fc7d3a0753adf9f94b77fc746c1e8"
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md",

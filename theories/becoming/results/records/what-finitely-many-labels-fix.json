@@ -124,7 +124,7 @@
       }
     },
     {
-      "id": "learnable-through-registration",
+      "id": "learnable-through-a-map",
       "detail": {
         "en": "There learnability is characterized with an extrapolation built from the law (fromLaw); here the extrapolation given a finite table learns every learnable feature, and where the map carries the feature along the course every feature is learned given nothing.",
         "zh": "那里以依律所建之外推（fromLaw）刻画可学性；这里被给予有限之表的外推学得每个可学特征，映射沿进程带着特征之处，每个特征都不被给予任何东西而学得。"
@@ -186,7 +186,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

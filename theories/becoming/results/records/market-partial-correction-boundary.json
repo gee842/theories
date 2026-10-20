@@ -101,7 +101,7 @@
   ],
   "related": [
     {
-      "id": "alignment-direction-g0-j",
+      "id": "alignment-direction-under-widening",
       "detail": {
         "zh": "机制解释供既有规范比较使用，动力学阈值不另立义务或普遍伦理。",
         "en": "Mechanism informs the existing normative comparison; a dynamical threshold supplies no new duty or universal ethic."
@@ -237,7 +237,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

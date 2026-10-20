@@ -72,7 +72,7 @@ Conveyance relates events at a common step only, orders no steps, and does not a
 
 **Preserved conditions:** The one-kind reading. [Correspondence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean)
 
-- Related, not a proved adapter: [held-lives-g0-is-centering](held-lives-g0-is-centering.md). Connection and N_rel give another completion and keep a role for unheld lives; conveyance is one candidate relation.
+- Related, not a proved adapter: [living-significance-on-held-lives](living-significance-on-held-lives.md). Connection and N_rel give another completion and keep a role for unheld lives; conveyance is one candidate relation.
 - Related, not a proved adapter: [metaethical-core-characterization](metaethical-core-characterization.md). The definitions of N_rel (transmits) and Neutral.
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>

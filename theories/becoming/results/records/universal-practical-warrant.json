@@ -28,21 +28,21 @@
   "dependencies": [],
   "related": [
     {
-      "id": "practical-judgment-g0-j",
+      "id": "practical-judgment-under-living-significance",
       "detail": {
         "zh": "显式公理路线是已有成果；两者的完成标准不同。",
         "en": "The explicit-axiom route is an established result with a different completion standard."
       }
     },
     {
-      "id": "self-good-reachable-g0",
+      "id": "own-good-to-reachable-living-significance",
       "detail": {
         "zh": "复用已纠正评价者路线：自我、连续性及容差不能单独完成普遍意义。",
         "en": "Reuses the corrected evaluator route: selfhood, continuity and tolerance do not independently establish universal significance."
       }
     },
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "detail": {
         "zh": "信用当前意义／理由分工；G0的正式取得没有解除A的规范工作。",
         "en": "Credits the current significance/reason distinction; deriving G0 does not discharge A’s normative work."
@@ -77,7 +77,7 @@
       }
     },
     {
-      "id": "selection-through-registration",
+      "id": "selection-through-couplings",
       "detail": {
         "zh": "复用经耦合的选择范围，区分不能辨认与能辨认却未选择；不把可表达性当作实际选择或伦理方向。",
         "en": "Reuses the scope of selection through the couplings, distinguishing unavailable discrimination from available but unused selection; expressibility is not enacted choice or ethical direction."
@@ -177,7 +177,7 @@
     {
       "path": "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
       "role": "statement",
-      "sha256": "182865dc14ceaec645cc70c67ac18d25382f0249663924b9a653730db6475f42",
+      "sha256": "59e3543f8b1a77c1d1c9b7449ec261ce009d51b7fb4e5bc522e3702041d4af04",
       "declarations": []
     },
     {

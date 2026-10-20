@@ -75,7 +75,7 @@ In “Truth exist” Ren wrote: “There is a set of universal invariations, tha
   - Output: Significance covering what is reached gives the axiom's comparison.
   - Input: The presupposition sub-true along a relation holding affecting covers what a part within the closure reaches.
   - Preserved conditions: Balance; withheld levels. [Feedback.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
-- **formal-reuse**: [one-axiom-yields-g0](one-axiom-yields-g0.md). Reuses Unrestricted and bounded.
+- **formal-reuse**: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). Reuses Unrestricted and bounded.
   - Output: The axiom and bounded significance.
   - Input: The presupposition super-true is exactly the axiom; route (b) is the least sub-true significance.
   - Preserved conditions: None. [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
@@ -91,10 +91,10 @@ In “Truth exist” Ren wrote: “There is a set of universal invariations, tha
   - Output: Retaining carries over to fewer significances.
   - Input: The part retaining when drawn at the feeding closure in Clearing.own_presupposition.
   - Preserved conditions: None. [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
-- related, not a proved adapter: [axiom-decomposition](axiom-decomposition.md). The presupposition at wide scope is given by covering, sub-truth and boundary-invariance; invariance carries all of the axiom's content beyond the presupposition.
+- related, not a proved adapter: [continuation-condition-decomposition](continuation-condition-decomposition.md). The presupposition at wide scope is given by covering, sub-truth and boundary-invariance; invariance carries all of the axiom's content beyond the presupposition.
 - related, not a proved adapter: [whole-first-and-bounded-centers](whole-first-and-bounded-centers.md). Ren's levels read as three readings of the presupposition: super-true, sub-true along affecting, and sub-true along the empty relation (the AI's reading, adopted on Ren's delegation); significance bounded by the self (bounded_rival, read as Ren's belief) is the presupposition sub-true along the empty relation.
 
-**Used by:** [axiom-decomposition](axiom-decomposition.md)
+**Used by:** [continuation-condition-decomposition](continuation-condition-decomposition.md)
 
 <a id="sources--来源"></a>
 ### Sources

@@ -96,7 +96,7 @@
   ],
   "dependencies": [
     {
-      "id": "selection-through-registration",
+      "id": "selection-through-couplings",
       "relation": "formal-reuse",
       "detail": {
         "en": "Reuses Web.SelectsThrough and Flow.unselected_beyond_coupling_responsive; the delta derives its response premise from a law of exchange and adds the act, so the gap holds for any act.",
@@ -144,7 +144,7 @@
   ],
   "related": [
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "detail": {
         "en": "There nothing beyond the closure exchanges with a condition coupled into it (Flow.beyond_coupling); so a difference beyond cannot come back into the closure through a formation outside it.",
         "zh": "那里闭包之外无物同耦合入闭包的条件交换（Flow.beyond_coupling）；所以闭包之外的差别不能经闭包之外的形成回到闭包之内。"
@@ -204,7 +204,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

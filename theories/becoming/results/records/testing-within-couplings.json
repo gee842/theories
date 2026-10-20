@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "id": "testing-within-registration",
+  "id": "testing-within-couplings",
   "title": {
     "zh": "耦合之内的检验",
     "en": "Testing within the couplings"
@@ -344,7 +344,7 @@
   ],
   "related": [
     {
-      "id": "subthreshold-registration",
+      "id": "differences-below-threshold",
       "detail": {
         "zh": "那里是经阈的耦合与交换随耦合入者时阈下差别的规律；这里是耦合、排除、所及与检验的关系性。",
         "en": "There coupling by threshold and the laws of differences below it where the exchange follows what couples in; here coupling, exclusion, reach and the relational character of testing."
@@ -564,13 +564,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad",
       "declarations": []
     },
     {
@@ -855,5 +855,8 @@
         "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
+  ],
+  "former_ids": [
+    "testing-within-registration"
   ]
 }

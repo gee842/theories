@@ -60,7 +60,7 @@ Ren asked on 12 October 2026 whether what a frame loses is like “wave/particle
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **formal-reuse**: [contextual-registration](contextual-registration.md). Reuses Contextual, Contextual.Glues, Contextual.Respects, Contextual.not_glues, Local and NoGlobal, and the possibilities, world and respects of Specker and Square: a parity system's possibilities are local, and its instances' possibilities are those there.
+- **formal-reuse**: [claims-shown-in-context](claims-shown-in-context.md). Reuses Contextual, Contextual.Glues, Contextual.Respects, Contextual.not_glues, Local and NoGlobal, and the possibilities, world and respects of Specker and Square: a parity system's possibilities are local, and its instances' possibilities are those there.
   - Output: Claims shown in context, gluing, locality and no context-free reading; the possibilities of Specker and Mermin–Peres.
   - Input: A parity system's contradiction gives no context-free reading and no gluing.
   - Preserved conditions: None. [Context.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)

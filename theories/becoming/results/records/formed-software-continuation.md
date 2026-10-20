@@ -57,7 +57,7 @@ LibreOffice enters Ubuntu beta before foundation incorporation under interim ass
   - Input: Assess whether actual release, distribution and interim support remain inside that fixed scope.
   - Preserved conditions: Original theorem unchanged; newly formed relations require independent evidence and the case supplies no quantitative parameters. [MARKET-INTERNET-DEGENERATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md)
 - related, not a proved adapter: [effective-capacity-and-eventual-reachability](effective-capacity-and-eventual-reachability.md). Credits the inherited distinction between preparation, current capacity and exercise; adds historical correspondence, not a repeated proof.
-- related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Normative use for effective succession, institutional change and real losses retains G0/J/E; historical success alone does not establish whole improvement.
+- related, not a proved adapter: [alignment-direction-under-widening](alignment-direction-under-widening.md). Normative use for effective succession, institutional change and real losses retains G0/J/E; historical success alone does not establish whole improvement.
 
 <a id="sources--来源"></a>
 ### Sources

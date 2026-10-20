@@ -52,7 +52,7 @@ The exact boundary concerns the specified zero-error universal positive-state ar
 
 **Preserved conditions:** Same full State, remaining stock and budget; successor uses original beta=1/2 and noShock. [PartialRegimeTransition.lean](../../../../experiments/market-generativity/formal/PartialRegimeTransition.lean)
 
-- Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Mechanism informs the existing normative comparison; a dynamical threshold supplies no new duty or universal ethic.
+- Related, not a proved adapter: [alignment-direction-under-widening](alignment-direction-under-widening.md). Mechanism informs the existing normative comparison; a dynamical threshold supplies no new duty or universal ethic.
 - Related, not a proved adapter: [material-preparation-output](material-preparation-output.md). Actual prepared material is a candidate interface, with no proved adapter to a market renewal share.
 - Related, not a proved adapter: [market-finite-support-obstruction](market-finite-support-obstruction.md). Completed finite-support obstruction preserving this record’s narrower result.
 

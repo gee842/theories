@@ -52,7 +52,7 @@ The chapter's open programme (section 8.2, Learning) named "learning a target fr
 
 - none
 - related, not a proved adapter: [what-an-extrapolation-given-nothing-fixes](what-an-extrapolation-given-nothing-fixes.md). There a learnable feature is a reading of the future, a function on whole futures; here a finite part of it, at most N labelled names of N - 1 values, suffices.
-- related, not a proved adapter: [learnable-through-registration](learnable-through-registration.md). There learnability is characterized with an extrapolation built from the law (fromLaw); here the extrapolation given a finite table learns every learnable feature, and where the map carries the feature along the course every feature is learned given nothing.
+- related, not a proved adapter: [learnable-through-a-map](learnable-through-a-map.md). There learnability is characterized with an extrapolation built from the law (fromLaw); here the extrapolation given a finite table learns every learnable feature, and where the map carries the feature along the course every feature is learned given nothing.
 - related, not a proved adapter: [identification-where-bounded](identification-where-bounded.md). Moore's bound N - 1 (Law.sameFuture_iff_within) gives the length of the names.
 
 <a id="sources--来源"></a>

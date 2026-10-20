@@ -47,11 +47,11 @@ A contributory reason is not permission, duty, an overall ranking or a uniquely 
 **Preserved conditions:** Same G0, inventory and prior content; visible scope indexed by response; no C, global no-loss or Better. [PositionedPositiveReason.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean)
 
 - Related, not a proved adapter: [universal-practical-warrant](universal-practical-warrant.md). This result supplies position-universal contributory reasons under explicit D; the stronger universal practical warrant without added normative premises remains open.
-- Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Interpretive connection: human and AI positions with the same access have the same such reason; no recognition, motivation or compliance follows.
-- Related, not a proved adapter: [one-axiom-yields-g0](one-axiom-yields-g0.md). With G0 from the axiom of Becoming.Significance, this result's main theorem holds with positive relevance read from significance (every_situated_position_has_reason_of_unrestricted).
+- Related, not a proved adapter: [alignment-direction-under-widening](alignment-direction-under-widening.md). Interpretive connection: human and AI positions with the same access have the same such reason; no recognition, motivation or compliance follows.
+- Related, not a proved adapter: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). With G0 from the axiom of Becoming.Significance, this result's main theorem holds with positive relevance read from significance (every_situated_position_has_reason_of_unrestricted).
 - Related, not a proved adapter: [metaethical-core-characterization](metaethical-core-characterization.md). The spine's own route: A gives D, and a sound inquiry gives the universal reason (universal_reason).
 
-**Used by:** [one-axiom-yields-g0](one-axiom-yields-g0.md)
+**Used by:** [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

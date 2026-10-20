@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "id": "self-good-reachable-g0",
+  "id": "own-good-to-reachable-living-significance",
   "title": {
     "zh": "从立场自身之善到可及的生生之意义",
     "en": "From a standpoint's own good to reachable living significance"
@@ -96,7 +96,7 @@
       }
     },
     {
-      "id": "alignment-direction-g0-j",
+      "id": "alignment-direction-under-widening",
       "detail": {
         "zh": "解释关联：以非工具性生成式自我之善为目标一部分的 AI 可被此论证约束；但第一步最先扩展到它自己的复制体与后继者，偏向自身谱系，本身不及人类；正面性不带权重，与对自身谱系的强烈偏倚相容。只工具性自保的系统不受约束，其对齐须靠设计与治理。",
         "en": "Interpretive connection: an AI with non-instrumental generative self-good as part of its aims is argument-reachable, but step one first extends to its own copies and successors, favouring its lineage and not by itself reaching humans; positivity carries no weight and is compatible with strong lineage bias. A merely instrumentally self-preserving system is not reachable; its alignment rests on design and governance."
@@ -218,7 +218,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
       "role": "review",
-      "sha256": "91fb5bbb783742c3b49047d268ee781049876fd88e997d41cd57400251ce490c",
+      "sha256": "e3cb3a8eabf6a15709d4392a2e24d593e3fc4ca1ce0f7c98569f04ead9828039",
       "declarations": []
     },
     {
@@ -447,5 +447,8 @@
       "en": "20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (Bridge, EvaluatorGrounding and GenerativeComparison) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Extension, Becoming.Metaethics, Becoming.ProfileReach and Becoming.ValuationFrames). The retired modules' content is also stated in Becoming.Alternatives, which this record does not cite with declarations. 1 aliases naming retired declarations are marked \"(retired module)\". The claim is unchanged.",
       "zh": "20 October 2026, R35 (twentieth review, E8)：对已被取代的外围模块（Bridge, EvaluatorGrounding and GenerativeComparison）的证明引用改为来源（provenance），保留其声明，删去其绑定；当前证明是本记录仍作为证明引用的模块（Becoming.Extension, Becoming.Metaethics, Becoming.ProfileReach and Becoming.ValuationFrames）。退役模块的内容也陈述于 Becoming.Alternatives，本记录未以声明引用它们。1 个指向退役声明的别名标为“(retired module)”。主张不变。"
     }
+  ],
+  "former_ids": [
+    "self-good-reachable-g0"
   ]
 }

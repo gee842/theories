@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "id": "one-axiom-yields-g0",
+  "id": "continuation-condition-yields-living-significance",
   "title": {
     "zh": "延续条件推出生生之意义",
     "en": "The continuation condition yields living significance"
@@ -306,7 +306,7 @@
       }
     },
     {
-      "id": "held-lives-g0-is-centering",
+      "id": "living-significance-on-held-lives",
       "relation": "interpretive",
       "detail": {
         "zh": "那里 G0 在被持有的生命上恰等于处处 S0 加 N_std（§6.7 的读法：S0 为想要，N_std 为公理）；这里公理更强，给出处处 S0 与 N_std，所以那一读法在这里是推论。",
@@ -702,12 +702,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
@@ -1075,5 +1075,8 @@
         "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
+  ],
+  "former_ids": [
+    "one-axiom-yields-g0"
   ]
 }

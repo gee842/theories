@@ -31,7 +31,7 @@
   "aliases": [],
   "dependencies": [
     {
-      "id": "practical-judgment-g0-j",
+      "id": "practical-judgment-under-living-significance",
       "relation": "interpretive",
       "detail": {
         "zh": "既有G0/J普遍原则解释保留、转化、交接和结束的共同根据；第14节作哲学复用，不新增规范公理或Lean连接。 §31保持认识许可与实践许可的区别，以及错误后的残余责任；不以有限接受自动解除J4要求。",
@@ -55,7 +55,7 @@
       }
     },
     {
-      "id": "wisdom-root-part-one",
+      "id": "wisdom-root-without-axiom",
       "relation": "interpretive",
       "detail": {
         "zh": "复用完成的形式支撑，接到第16节独立陈述的智慧内容；对应是解释，不新增形式组合。",
@@ -258,7 +258,7 @@
       }
     },
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "relation": "interpretive",
       "detail": {
         "zh": "§27消费原结果说明当下成就与未来可能性的关系；不重证、不将给定读法直接认证为全部智慧或体验。",
@@ -481,7 +481,7 @@
       }
     },
     {
-      "id": "wisdom-root-part-one",
+      "id": "wisdom-root-without-axiom",
       "detail": {
         "zh": "完成本目标的形式部分：耦合、理（Ren 的读法）、检验、学习与推广、经耦合的选择与训练、够、失控、判断与元层次的规律对每个外推与每个表示成立，不用公理。",
         "en": "Completes this target's formal part: the laws of coupling, 理 (Ren's reading), testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level hold of every extrapolation and every representation, with no axiom."
@@ -1063,7 +1063,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
       "role": "review",
-      "sha256": "26d0c1bc43e6a406b8e5d4e9c15378846f284301adffcbb3546a0cfd6a216e13",
+      "sha256": "dc3a549bc748c5830c07fb370506dbd20f060b982a010fee238420f45e76b0ef",
       "declarations": []
     },
     {

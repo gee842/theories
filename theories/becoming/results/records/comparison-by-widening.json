@@ -91,7 +91,7 @@
   ],
   "related": [
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "detail": {
         "zh": "那里以公理为条件，在水平路径上 C 以保留且增加有意义者为“更好”成立（Web.paths_livingSignificance_comparison）；这里不用公理，以扩大为“更好”，公理之下二者相同。",
         "en": "There, with the axiom as a condition, C holds on level paths with retaining and adding what has significance as “better” (Web.paths_livingSignificance_comparison); here, with no axiom, with widening as “better”, the two being the same under the axiom."
@@ -191,7 +191,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

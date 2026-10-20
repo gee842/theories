@@ -66,7 +66,7 @@
       }
     },
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "interpretive",
       "detail": {
         "zh": "P49 的 Web.tail_unexcluded（没有模型，有限前段不排除关于其后的主张）是水平历史上的同一规律；这里对任意历程陈述（no_prefix_fixes_next），并给出它的正面一侧：被列表所持的世界中逐除外推的不合有界。",
@@ -112,7 +112,7 @@
       }
     },
     {
-      "id": "learnable-through-registration",
+      "id": "learnable-through-a-map",
       "detail": {
         "zh": "映射不分辨配置之处：某个外推在每个配置上停息，恰当经映射的未来相同的配置其特征从某步起一致；外推仍须分辨经映射的值。",
         "en": "Where the map does not tell configurations apart: some extrapolation rests at every configuration exactly where configurations with the same future through the map have features agreeing from some step on; the extrapolation still tells the values through the map apart."
@@ -245,7 +245,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

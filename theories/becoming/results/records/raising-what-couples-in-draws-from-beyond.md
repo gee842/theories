@@ -51,7 +51,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **formal-reuse**: [selection-through-registration](selection-through-registration.md). Reuses Web.SelectsThrough and the witness Diversion (diverting, supplying, web, gauge, favours, blind_to_source); the delta is the general law of which Diversion.favours is an instance.
+- **formal-reuse**: [selection-through-couplings](selection-through-couplings.md). Reuses Web.SelectsThrough and the witness Diversion (diverting, supplying, web, gauge, favours, blind_to_source); the delta is the general law of which Diversion.favours is an instance.
   - Output: Selection through coupling; the Diversion witness, balanced.
   - Input: That raising an observed family is a selection through coupling; the instance of the law.
   - Preserved conditions: The selector observing the family. [Selection.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)

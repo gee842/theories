@@ -67,7 +67,7 @@ On 16 October 2026 Ren took P118's third reading in its refined form, “which l
   - Output: The levels a law of what has stood generates.
   - Input: The course with read strengths equals the carried amount of the strengths it reads.
   - Preserved conditions: Strengths read the levels up to each step only. [Counterfactual.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
-- related, not a proved adapter: [runaway-distance-unregistered](runaway-distance-unregistered.md). There a runaway's break does not couple in before it; here the formation of the loop that runs away does not show in the amounts it carries either. Joining the two within one law: loops-within-what-a-law-reads.
+- related, not a proved adapter: [runaway-distance-uncoupled](runaway-distance-uncoupled.md). There a runaway's break does not couple in before it; here the formation of the loop that runs away does not show in the amounts it carries either. Joining the two within one law: loops-within-what-a-law-reads.
 - related, not a proved adapter: [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md). The other item of the same day: P118's orders as P82's sum over histories; loops are where both multiply, and here is the moment they form.
 - related, not a proved adapter: [loops-within-what-a-law-reads](loops-within-what-a-law-reads.md). Within one law: loops lie within what is read and form where reading grows; for a law reading a stock only below a threshold there is no loop through the stock before the break, and the loop forms at the break.
 

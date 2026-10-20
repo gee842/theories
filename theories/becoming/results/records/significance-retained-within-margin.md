@@ -43,7 +43,7 @@ Only formations admitted are compared, step by step; withholding a part leaves t
 
 - **formal-reuse**: [closing-needs-net-draw](closing-needs-net-draw.md). Reuses admission, inclusion, exceeding, the withheld levels and the exact phase boundary Flow.Balances.supported_iff_within_margin (and opens_nothing).
 - **formal-reuse**: [four-cases-of-a-part](four-cases-of-a-part.md). Reuses Restoring.Inflow.widens and Transfer.mixed: under the axiom a widening part retains and adds, and a mixed part is unordered.
-- **formal-reuse**: [one-axiom-yields-g0](one-axiom-yields-g0.md). Reuses the axiom Unrestricted.
+- **formal-reuse**: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). Reuses the axiom Unrestricted.
 
 **Output:** A formation is supported exactly when, on every condition it requires, the part's cumulative net draw stays within the margin.
 
@@ -67,7 +67,7 @@ Only formations admitted are compared, step by step; withholding a part leaves t
 
 - Related, not a proved adapter: [becoming-stepwise-reading](becoming-stepwise-reading.md). Preemption shows that living on the stepwise reading (active and not undermining) differs from retaining: the stepwise reading counts only dependences met, retaining also counts what can still form.
 
-**Used by:** [axiom-decomposition](axiom-decomposition.md) · [closure-verdict-meets-axiom](closure-verdict-meets-axiom.md) · [comparison-within-reach](comparison-within-reach.md) · [presupposition-scopes](presupposition-scopes.md) · [ranking-under-readings](ranking-under-readings.md) · [the-run-classes-and-widening](the-run-classes-and-widening.md) · [whole-first-and-bounded-centers](whole-first-and-bounded-centers.md)
+**Used by:** [closure-verdict-meets-continuation-condition](closure-verdict-meets-continuation-condition.md) · [comparison-within-reach](comparison-within-reach.md) · [continuation-condition-decomposition](continuation-condition-decomposition.md) · [presupposition-scopes](presupposition-scopes.md) · [ranking-under-readings](ranking-under-readings.md) · [the-run-classes-and-widening](the-run-classes-and-widening.md) · [whole-first-and-bounded-centers](whole-first-and-bounded-centers.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

@@ -208,7 +208,7 @@
       }
     },
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用延续条件 Unrestricted 与以区域为界的意义 bounded。",
@@ -270,7 +270,7 @@
       }
     },
     {
-      "id": "closure-verdict-meets-axiom",
+      "id": "closure-verdict-meets-continuation-condition",
       "detail": {
         "zh": "不用延续条件时，以供给闭包为界的判断在闭包是整体时就是延续条件的判断；清除者的网中两者分开。",
         "en": "Without the continuation condition, the verdict bounded by the feeding closure is the condition's where the closure is the whole; in the clearer's web the two part."
@@ -358,7 +358,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "id": "axiom-decomposition",
+  "id": "continuation-condition-decomposition",
   "title": {
     "en": "Decomposition of the continuation condition",
     "zh": "延续条件的分解"
@@ -233,7 +233,7 @@
       }
     },
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Unrestricted 与 Valuation.premises_of_unrestricted；P39 把公理读作边界中立，这一步在一个立场上就是边界中立。",
@@ -348,7 +348,7 @@
       }
     },
     {
-      "id": "held-lives-g0-is-centering",
+      "id": "living-significance-on-held-lives",
       "relation": "interpretive",
       "detail": {
         "zh": "并行：Valuation.significant_iff_held 把 G0 分解为处处 S0 加 N_std；预设读作 S0 的延续形式（AI 的读法，依 Ren 的交托采用，DELEGATED-CHOICES D21），没有形式复用。",
@@ -373,7 +373,7 @@
   ],
   "related": [
     {
-      "id": "self-good-reachable-g0",
+      "id": "own-good-to-reachable-living-significance",
       "detail": {
         "zh": "评价者路线以容差连同 Chain 承载 G0 超出 S0 的全部内容；这里对边界不变的一步同样承载公理在预设之外的全部内容，只是一步，所以不继承连锁悖论的反驳（评价者路线的审查 P3）。",
         "en": "The evaluator route's tolerance with Chain carries all of G0's content beyond S0; here the step of boundary-invariance likewise carries all of the axiom's content beyond the presupposition, in one step, so it does not inherit the sorites objection (the evaluator-route review, P3)."
@@ -486,12 +486,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -780,5 +780,8 @@
         "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
+  ],
+  "former_ids": [
+    "axiom-decomposition"
   ]
 }

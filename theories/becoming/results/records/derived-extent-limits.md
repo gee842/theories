@@ -73,7 +73,7 @@ Ren's proposal says “all above does not require any axiom” and that the one 
   - Output: Taking jointly within what is given.
   - Input: The clearer meets this requirement.
   - Preserved conditions: Balance. [Continuation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
-- **formal-reuse**: [held-lives-g0-is-centering](held-lives-g0-is-centering.md). Reuses Web.held_by_formations and Valuation.Held (and through it the definitions of valuations); the center witness is stated on them.
+- **formal-reuse**: [living-significance-on-held-lives](living-significance-on-held-lives.md). Reuses Web.held_by_formations and Valuation.Held (and through it the definitions of valuations); the center witness is stated on them.
   - Output: Read stepwise with each formation's own events its own region, every living event is held; on held lives G0 is exactly S0 everywhere with N_std.
   - Input: The extent derived along dependence does not force N_std.
   - Preserved conditions: Each formation's own events its own region; the derived extent runs along dependence. [Standpoints.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean)

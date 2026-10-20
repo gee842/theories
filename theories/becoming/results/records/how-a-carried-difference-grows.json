@@ -330,7 +330,7 @@
       }
     },
     {
-      "id": "runaway-distance-unregistered",
+      "id": "runaway-distance-uncoupled",
       "detail": {
         "zh": "其下一步“一般地定义回路并把失控本身陈述为定理”，在具有给定耦合强度的交换律上回答：所失控的是能到达的最大差别；那里的失控是保持支持的策略，两者相遇于汲取回应自身所降低的水平之处，这里没有连起来。",
         "en": "Its next step, to define a loop in general and state a runaway as a theorem, is answered for laws of exchange with given coupling strengths: what runs away is the most difference that can arrive; its runaway is a policy keeping support, and the two meet where a draw responds to a level it lowers, not connected here."
@@ -620,7 +620,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

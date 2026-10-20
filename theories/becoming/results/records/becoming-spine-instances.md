@@ -48,16 +48,16 @@ Adds no normative content: bridges transport theorems without proving their prem
 **Preserved conditions:** Same frame and `living` reading; the comparison's direction is flipped from GenerativeComparison's convention to LiftBetter's. [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean)
 
 - Related, not a proved adapter: [classification-robust-generative-comparison](classification-robust-generative-comparison.md). GenerativeComparison's situated reason, coherent selection and continual-improvement results are the deterministic case of this result's lifted theorems (articulation_iff_lifted); this result generalizes them without calling them.
-- Related, not a proved adapter: [practical-judgment-g0-j](practical-judgment-g0-j.md). robust_iff_commonResponse identifies J's robust judgment with the inquiry layer's common response, so J's robustness theorems apply on the scope of a sound inquiry; J's normative premises are not thereby proved.
+- Related, not a proved adapter: [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md). robust_iff_commonResponse identifies J's robust judgment with the inquiry layer's common response, so J's robustness theorems apply on the scope of a sound inquiry; J's normative premises are not thereby proved.
 - Related, not a proved adapter: [positive-ground-open-futures](positive-ground-open-futures.md). The rule-list revision and joint-bundle transport it uses are cases of revise_is_after and Frame.map_preserves_bundles.
 - Related, not a proved adapter: [relational-generative-comparison](relational-generative-comparison.md). With the joint-continuation space taken as a frame's reachable configurations, that result's joint-bundle distinction applies on the spine.
-- Related, not a proved adapter: [self-good-reachable-g0](self-good-reachable-g0.md). That route's Chain is reachability on the edge process (chain_iff_reach).
+- Related, not a proved adapter: [own-good-to-reachable-living-significance](own-good-to-reachable-living-significance.md). That route's Chain is reachability on the edge process (chain_iff_reach).
 - Related, not a proved adapter: [positioned-positive-reason](positioned-positive-reason.md). securesPositiveGround_iff and positionedArticulation_iff show that the core's secured positive ground and D are that result's definitions.
 - Related, not a proved adapter: [levels-of-closure](levels-of-closure.md). The core's closure WithinClosure (Becoming.Feedback) is exactly the seed–edge closure here from one seed (withinClosure_iff_closure, Becoming.EdgeClosure).
-- Related, not a proved adapter: [one-axiom-yields-g0](one-axiom-yields-g0.md). The bridge's Discharge section belongs there: under the axiom the periphery's G0 holds for every inventory, and three of the periphery's theorems follow from the axiom.
+- Related, not a proved adapter: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). The bridge's Discharge section belongs there: under the axiom the periphery's G0 holds for every inventory, and three of the periphery's theorems follow from the axiom.
 - Related, not a proved adapter: [open-form-realization-under-revision](open-form-realization-under-revision.md). The four checked adapters belong to that existing result, with no new result identity.
 
-**Used by:** [finite-aggregation-within-restorable-basic-losses](finite-aggregation-within-restorable-basic-losses.md) · [levels-of-closure](levels-of-closure.md) · [one-axiom-yields-g0](one-axiom-yields-g0.md)
+**Used by:** [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md) · [finite-aggregation-within-restorable-basic-losses](finite-aggregation-within-restorable-basic-losses.md) · [levels-of-closure](levels-of-closure.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

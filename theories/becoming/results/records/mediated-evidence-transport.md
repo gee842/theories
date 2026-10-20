@@ -37,7 +37,7 @@ No protected runtime, physical fault recovery or ethical legitimacy proof; the 2
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.
 
-- Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Interpretive connection: reuses the completed G0/J direction; implementation conditions do not independently justify permissions or ends.
+- Related, not a proved adapter: [alignment-direction-under-widening](alignment-direction-under-widening.md). Interpretive connection: reuses the completed G0/J direction; implementation conditions do not independently justify permissions or ends.
 
 **Used by:** [recoverable-mediated-change](recoverable-mediated-change.md)
 

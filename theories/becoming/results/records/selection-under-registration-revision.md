@@ -37,7 +37,7 @@ The exact criterion preserves all old choices, stronger than preserving one usef
 <a id="依赖与关联-dependencies-and-related-results"></a>
 ## Dependencies and related results
 
-- **formal-reuse**: [selection-through-registration](selection-through-registration.md). web_keeps_iff directly adapts existing SelectsThrough
+- **formal-reuse**: [selection-through-couplings](selection-through-couplings.md). web_keeps_iff directly adapts existing SelectsThrough
 - **formal-reuse**: [generalization-through-lumping](generalization-through-lumping.md). Proves the exact registration-change criterion on the same Through definition
 - **formal-reuse**: [process-and-frame-as-readings](process-and-frame-as-readings.md). trace_keeps, run_keeps and controlled reuse actual intermediate configurations
 

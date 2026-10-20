@@ -346,7 +346,7 @@
       }
     },
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "detail": {
         "zh": "以耦合为投影：经耦合入者的实验何时是对的，就是经耦合无别者是否同去（读法；形式桥接没有陈述）。",
         "en": "With the couplings as the projection: an experiment through what couples in is right exactly where what is alike through the couplings goes alike (a reading; the formal bridge is not stated)."
@@ -472,7 +472,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

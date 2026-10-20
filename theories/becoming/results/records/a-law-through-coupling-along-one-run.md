@@ -60,7 +60,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Output: A process going alike under a relation on descriptions.
   - Input: What the criterion up to a relation characterizes.
   - Preserved conditions: None beyond the process and the relation. [Likeness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean)
-- **formal-reuse**: [testing-within-registration](testing-within-registration.md). Reuses Web.AlikeThrough and thresholdOnly: coupling at a configuration is Web.AlikeThrough on the runs read through fixed conditions.
+- **formal-reuse**: [testing-within-couplings](testing-within-couplings.md). Reuses Web.AlikeThrough and thresholdOnly: coupling at a configuration is Web.AlikeThrough on the runs read through fixed conditions.
   - Output: What is alike through a formation's couplings at a step, under two level histories.
   - Input: The relation the criterion is taken through.
   - Preserved conditions: Fixed conditions. [Testing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
@@ -72,7 +72,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Output: Levels, requirements and needs read off configurations.
   - Input: The conditions coupling is stated on.
   - Preserved conditions: None. [Renewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
-- related, not a proved adapter: [subthreshold-registration](subthreshold-registration.md). There a difference below a threshold does not couple in; here a level outside what a formation couples into decides its next coupling along a run.
+- related, not a proved adapter: [differences-below-threshold](differences-below-threshold.md). There a difference below a threshold does not couple in; here a level outside what a formation couples into decides its next coupling along a run.
 - related, not a proved adapter: [a-law-through-changing-coupling-along-one-run](a-law-through-changing-coupling-along-one-run.md). There the criterion through coupling that changes along the run, of which fixed conditions are the instance; where dependences form or dissolve, the law at the coupling fixed at the start and the law at the changing coupling neither gives the other.
 
 **Used by:** [a-law-through-changing-coupling-along-one-run](a-law-through-changing-coupling-along-one-run.md)

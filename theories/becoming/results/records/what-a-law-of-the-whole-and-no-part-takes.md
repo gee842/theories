@@ -56,7 +56,7 @@ Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **formal-reuse**: [sensitivity-is-the-least-registration](sensitivity-is-the-least-registration.md). Reuses vanishing (VanishFrom), the indicator of vanishing and the tail law, WLPO, seenBy and its lemmas, alike_of_agree_from, alike_of_agree_from_sensitive, Sensitivity.cond_either and ReadsFinitely.alike_of_insensitive: the proof that a counterexample gives a rule is its mixing, read as data.
+- **formal-reuse**: [sensitivity-is-the-least-coupling](sensitivity-is-the-least-coupling.md). Reuses vanishing (VanishFrom), the indicator of vanishing and the tail law, WLPO, seenBy and its lemmas, alike_of_agree_from, alike_of_agree_from_sensitive, Sensitivity.cond_either and ReadsFinitely.alike_of_insensitive: the proof that a counterexample gives a rule is its mixing, read as data.
   - Output: Vanishing and its indicator; the tail law; mixing along a sequence giving alike; the weak limited principle of omniscience; a law reading finitely many conditions and sensitive to none giving alike.
   - Input: The equivalence of counterexamples and rules; the law of a whole with no least coupling; the tail law as an instance; the indicator of never vanishing.
   - Preserved conditions: Conditions numbered by the natural numbers; the rule and the decision of vanishing as hypotheses. [Sensitivity.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean)
@@ -68,7 +68,7 @@ Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents
   - Output: The limited principle of omniscience.
   - Input: The limited principle as a rule giving it (LPO.of_rule).
   - Preserved conditions: None. [Change.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
-- related, not a proved adapter: [sensitivity-is-the-least-registration](sensitivity-is-the-least-registration.md). Answers the first item of its next step: a counterexample exists exactly where the weak limited principle of omniscience holds as a rule, attained by the law of levels that never vanish, built from the rule alone; the decision of vanishing the tail law takes is exactly the limited principle as a rule.
+- related, not a proved adapter: [sensitivity-is-the-least-coupling](sensitivity-is-the-least-coupling.md). Answers the first item of its next step: a counterexample exists exactly where the weak limited principle of omniscience holds as a rule, attained by the law of levels that never vanish, built from the rule alone; the decision of vanishing the tail law takes is exactly the limited principle as a rule.
 - related, not a proved adapter: [how-often-couplings-act](how-often-couplings-act.md). Likewise fixes the exact strength of a principle of reasoning: there every schedule settling is exactly a dichotomy giving the limited principle of omniscience; here a counterexample is exactly the weak limited principle as a rule.
 
 <a id="sources--来源"></a>

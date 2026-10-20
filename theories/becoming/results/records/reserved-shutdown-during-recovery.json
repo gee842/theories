@@ -123,7 +123,7 @@
   ],
   "related": [
     {
-      "id": "alignment-direction-g0-j",
+      "id": "alignment-direction-under-widening",
       "detail": {
         "zh": "解释关联：已完成 G0/J 方向说明为何回应条件应被保留；当前停止授权的正当性仍需单独根据。",
         "en": "Interpretive connection: the completed G0/J direction informs preserving response conditions; this stop grant still needs its own normative warrant."
@@ -260,7 +260,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

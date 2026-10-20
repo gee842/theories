@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "id": "wisdom-root-part-one",
+  "id": "wisdom-root-without-axiom",
   "title": {
     "zh": "智慧之根在无公理的理论中",
     "en": "The root of wisdom in the theory without axiom"
@@ -149,7 +149,7 @@
   ],
   "dependencies": [
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "interpretive",
       "detail": {
         "zh": "耦合、排除与他者的耦合（明）的规律。",
@@ -264,7 +264,7 @@
       }
     },
     {
-      "id": "runaway-distance-unregistered",
+      "id": "runaway-distance-uncoupled",
       "relation": "interpretive",
       "detail": {
         "zh": "失控的规律。",
@@ -287,7 +287,7 @@
       }
     },
     {
-      "id": "selection-through-registration",
+      "id": "selection-through-couplings",
       "relation": "interpretive",
       "detail": {
         "zh": "经耦合的选择与代理的规律。",
@@ -350,7 +350,7 @@
       }
     },
     {
-      "id": "practical-judgment-g0-j",
+      "id": "practical-judgment-under-living-significance",
       "detail": {
         "zh": "判断的伦理正当性走章节 §6.15 的条件（以那一条公理为条件 G0 是定理），本记录不改变它，也不含伦理谓词。",
         "en": "The ethical warrant of judgment goes through the condition of chapter section 6.15 (with the one axiom as a condition, G0 is a theorem); this record does not change it and contains no ethical predicate."
@@ -426,13 +426,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "review",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad",
       "declarations": []
     },
     {
@@ -936,5 +936,8 @@
         "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
+  ],
+  "former_ids": [
+    "wisdom-root-part-one"
   ]
 }

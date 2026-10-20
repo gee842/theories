@@ -264,7 +264,10 @@ class MigrationDraftTests(unittest.TestCase):
             errors, _ = registry.validate(sorted(by_id.values(), key=lambda r: r['id']))
             pages = {str(registry.record_path(r).with_suffix('.md').relative_to(registry.ROOT)): registry.render_record(r) for r in drafts}
         ids = {r['id'] for r in drafts}
-        self.assertEqual([e for e in errors if e.split(':')[0] in ids and 'declaration not found' not in e], [])
+        # The drafts are frozen: their links to records renamed since (R35, E4) name the former ids.
+        formers = {f for r in records for f in r.get('former_ids', [])}
+        renamed = lambda e: e.rpartition('missing or self result link ')[2] in formers
+        self.assertEqual([e for e in errors if e.split(':')[0] in ids and 'declaration not found' not in e and not renamed(e)], [])
         self.assertEqual([e for e in errors if e.split(':')[0] not in ids], [])
         # The drafts are frozen: links to files the restructure moved (move receipts) keep their old paths.
         def moved(error):

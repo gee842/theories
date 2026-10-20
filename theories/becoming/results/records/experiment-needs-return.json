@@ -258,7 +258,7 @@
       }
     },
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "formal-reuse",
       "detail": {
         "zh": "推进 P49 的开放项：一个动作造成什么只相对于模型才可检验（Flow.beyond_needs_model）；这里给出展开自身在何处固定它，所需的模型是确定性加一次返回，或一个投影。",
@@ -297,7 +297,7 @@
       }
     },
     {
-      "id": "subthreshold-registration",
+      "id": "differences-below-threshold",
       "detail": {
         "zh": "那里交换随耦合入者时阈下的差别保持；这里，以耦合为投影，阈下的差别不显出是步骤不经耦合入者分解的情形（读法）。",
         "en": "There a difference below the threshold stays where the exchange follows what couples in; here, with the couplings as the projection, a difference below the threshold not showing is a case where the step does not factor through what couples in (a reading)."
@@ -402,7 +402,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

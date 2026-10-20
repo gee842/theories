@@ -74,7 +74,7 @@ On the whole-run reading substitution preserves the classification, nearly by th
 - related, not a proved adapter: [supported-renewal-recovery](supported-renewal-recovery.md). That result gives recovery in another law, with the renewer supported again. Here recovery does not occur; with the existing results the law family realizes ending and transformation after a loss without return.
 - related, not a proved adapter: [unceasing-generation-needs-renewal](unceasing-generation-needs-renewal.md). When drawing lowers the alternatives and none is renewed, the chain of substitutions ends (substitution_defers, Relay.defers); here drawing does not lower the alternative.
 
-**Used by:** [practical-judgment-g0-j](practical-judgment-g0-j.md) (interpretive)
+**Used by:** [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md) (interpretive)
 
 <a id="sources--来源"></a>
 ### Sources

@@ -1,0 +1,18 @@
+old_id	new_id	reason
+alignment-direction-g0-j	alignment-direction-under-widening	E4: retired labels G0 and J in the id; the title is AI alignment direction under widening and the practical commitments
+practical-judgment-g0-j	practical-judgment-under-living-significance	E4: retired labels G0 and J in the id
+held-lives-g0-is-centering	living-significance-on-held-lives	E4: retired label G0 in the id
+self-good-reachable-g0	own-good-to-reachable-living-significance	E4: retired label G0 in the id
+one-axiom-yields-g0	continuation-condition-yields-living-significance	E4: retired labels (the one axiom, G0) in the id
+axiom-decomposition	continuation-condition-decomposition	E4: retired label (the one axiom) in the id
+closure-verdict-meets-axiom	closure-verdict-meets-continuation-condition	E4: retired label (the one axiom) in the id
+wisdom-root-part-one	wisdom-root-without-axiom	E4: retired label (Part I) in the id
+selection-through-registration	selection-through-couplings	E4: registration, replaced in the adopted vocabulary (N5)
+testing-within-registration	testing-within-couplings	E4: registration, replaced in the adopted vocabulary (N5)
+subthreshold-registration	differences-below-threshold	E4: registration, replaced in the adopted vocabulary (N5)
+learnable-through-registration	learnable-through-a-map	E4: registration, replaced in the adopted vocabulary (N5)
+contextual-registration	claims-shown-in-context	E4: registration, replaced in the adopted vocabulary (N5)
+registration-within-what-it-registers	readings-within-what-they-read	E4: registration, replaced in the adopted vocabulary (N5)
+sensitivity-is-the-least-registration	sensitivity-is-the-least-coupling	E4: registration, replaced in the adopted vocabulary (N5)
+only-the-order-of-change-registers	only-the-order-of-change-shows	E4: registration, replaced in the adopted vocabulary (N5)
+runaway-distance-unregistered	runaway-distance-uncoupled	E4: registration, replaced in the adopted vocabulary (N5)

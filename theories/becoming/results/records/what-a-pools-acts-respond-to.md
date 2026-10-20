@@ -77,7 +77,7 @@ The chapter's section 7.4 read that what any member's acts do beyond its own cou
   - Input: No response of any member of a pool before then.
   - Preserved conditions: Balance, presence and a common start before the deadline; response through coupling outside the source. [TimedResponse.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean)
 - related, not a proved adapter: [the-gap-for-ones-own-act](the-gap-for-ones-own-act.md). There the gap for one's own act, with the response derived from the law; here the response of a pool, and the gap read with the responder as the acting part and the actor as the pool.
-- related, not a proved adapter: [selection-through-registration](selection-through-registration.md). Its pooled selections (Web.SelectsThroughAll) are the selections a pool's acts make where each member's law reads through its coupling.
+- related, not a proved adapter: [selection-through-couplings](selection-through-couplings.md). Its pooled selections (Web.SelectsThroughAll) are the selections a pool's acts make where each member's law reads through its coupling.
 - related, not a proved adapter: [where-two-courses-rejoin](where-two-courses-rejoin.md). States what a response must do for the two courses to rejoin: a difference closes only through a different exchange with the condition, by exactly the gap, and where the rest reads through its coupling, through a formation that couples the two courses apart.
 
 <a id="sources--来源"></a>

@@ -76,7 +76,7 @@ Answering Ren's â€œwhat is that "make sense" itself? what makes a pair, a pair?â
   - Output: Orbits, return, a pigeonhole with no decision.
   - Input: Finitely many states is repetition; a returning configuration has finitely many states.
   - Preserved conditions: None. [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
-- **formal-reuse**: [registration-within-what-it-registers](registration-within-what-it-registers.md). Reuses Diagonal.revision_never_rests and Diagonal.flip_moves: the negation's first two moments differ.
+- **formal-reuse**: [readings-within-what-they-read](readings-within-what-they-read.md). Reuses Diagonal.revision_never_rests and Diagonal.flip_moves: the negation's first two moments differ.
   - Output: Revision never rests.
   - Input: The negation's two states.
   - Preserved conditions: None. [Diagonal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean)

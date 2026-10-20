@@ -310,7 +310,7 @@
       }
     },
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Unrestricted 与 bounded；公理只作为三个见证的假设。",
@@ -358,7 +358,7 @@
   ],
   "related": [
     {
-      "id": "closure-verdict-meets-axiom",
+      "id": "closure-verdict-meets-continuation-condition",
       "detail": {
         "zh": "推进它：那里以区域为界的比较，要求另一条路径接纳的每个形成都在区域之内或被第一条接纳（Web.retains_bounded_iff_includes）；这里只要意义覆盖部分在每步之前已到达的，这一条件就由动力学推出。",
         "en": "Advances it: there the comparison bounded by a region needs every formation the other path admits to lie in the region or be admitted by the first (Web.retains_bounded_iff_includes); here that condition follows from the dynamics wherever significance covers what the part has reached before each step."
@@ -473,12 +473,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",

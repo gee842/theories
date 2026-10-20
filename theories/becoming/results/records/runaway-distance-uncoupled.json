@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "id": "runaway-distance-unregistered",
+  "id": "runaway-distance-uncoupled",
   "title": {
     "en": "Runaway, and the distance to the break that does not couple in",
     "zh": "失控与不耦合入的断裂距离"
@@ -155,7 +155,7 @@
   ],
   "dependencies": [
     {
-      "id": "subthreshold-registration",
+      "id": "differences-below-threshold",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Flow.ExchangeFollows、Flow.subthreshold_alike_always 与 Flow.difference_changes_after_divergence；增量是策略的层面：经耦合的策略加其余交换固定推出交换随耦合入者。",
@@ -178,7 +178,7 @@
       }
     },
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Web.AlikeThrough、Web.CoupledInto 与 Web.observed_level_couples。",
@@ -332,13 +332,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad",
       "declarations": []
     },
     {
@@ -563,5 +563,8 @@
         "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
+  ],
+  "former_ids": [
+    "runaway-distance-unregistered"
   ]
 }

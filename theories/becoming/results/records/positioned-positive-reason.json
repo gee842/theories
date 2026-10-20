@@ -78,14 +78,14 @@
       }
     },
     {
-      "id": "alignment-direction-g0-j",
+      "id": "alignment-direction-under-widening",
       "detail": {
         "zh": "解释关联：人类与 AI 位置在相同通达下具有相同的这一理由；不推出认识、动机或遵循。",
         "en": "Interpretive connection: human and AI positions with the same access have the same such reason; no recognition, motivation or compliance follows."
       }
     },
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "detail": {
         "zh": "G0 由 Becoming.Significance 的公理给出时，以意义读出正面相关，本结果的主定理成立（every_situated_position_has_reason_of_unrestricted）。",
         "en": "With G0 from the axiom of Becoming.Significance, this result's main theorem holds with positive relevance read from significance (every_situated_position_has_reason_of_unrestricted)."

@@ -273,7 +273,7 @@
   ],
   "dependencies": [
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Flow.CoupledFrom、Flow.CoupledFromEither、Flow.WithinCoupling、thresholdOnly、Web.CoupledInto、Web.AlikeThroughUpTo、Flow.exchange_agrees_within 与 Flow.withheld_eq_of_false；限定是 Flow.alike_within_closed 以回应所及之外为区域的实例。",
@@ -390,7 +390,7 @@
   ],
   "related": [
     {
-      "id": "runaway-distance-unregistered",
+      "id": "runaway-distance-uncoupled",
       "detail": {
         "zh": "那里的下一步要求定义回路（水平影响取用、取用又影响水平）并把失控陈述为定理。Loop 只走了一小步：它是比较中一个定义好的两方回路的见证，其中第一个形成的动作经耦合入第二个的水平与它的回应回到第一个自身的支持，而其余固定的比较看不到它（Loop.returns）。它不是回路的一般定义，只有一个动作、一次回应、一个回合，没有增益或放大，也没有失控的定理；那里其余固定的假设在这里换为经其耦合回应。",
         "en": "Its next step asks to define a loop (levels affecting taking, and taking the levels) and to state a runaway itself as a theorem. Loop goes only a small way: it is a witness of a defined two-party loop in the comparison, in which the first formation's act returns to its own support through the level coupled into the second and its response, which the comparison with the rest fixed does not show (Loop.returns). It is not a general definition of a loop; it has one act, one response and one round, no gain or amplification, and no runaway theorem; the rest held fixed there is replaced here by responding through the couplings."
@@ -539,7 +539,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

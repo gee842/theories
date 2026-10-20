@@ -292,7 +292,7 @@
   ],
   "related": [
     {
-      "id": "runaway-distance-unregistered",
+      "id": "runaway-distance-uncoupled",
       "detail": {
         "en": "Nothing coupled in by threshold bounds the distance to the break; half_stands adds that under a draw exceeding everything drawn before, what stands gives no warning.",
         "zh": "经阈耦合入者不界定到断裂的距离；half_stands 补充：在超过此前所取之总的汲取下，所余并不预警。"
@@ -414,12 +414,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "448a6b1fb2064554ba1e5efebebfa5788f1977f56cd74841f6a2d3fdc69b1e62"
+      "sha256": "dfb7945a69f1d7a2610812f1715b513375cb1bea37d8b1c58f2c88e1c94f16c9"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

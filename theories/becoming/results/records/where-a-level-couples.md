@@ -71,7 +71,7 @@ The naming study of 17-18 October (N1, study section 6.2) adopted "couples into"
   - Output: A law reading through the couplings reads every schedule covering what couples in.
   - Input: A response is read in every covering schedule.
   - Preserved conditions: Schedule covering what couples in. [Thresholds.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean)
-- **formal-reuse**: [testing-within-registration](testing-within-registration.md). Reuses Web.CoupledInto, Web.AlikeThrough and Web.alike_of_threshold.
+- **formal-reuse**: [testing-within-couplings](testing-within-couplings.md). Reuses Web.CoupledInto, Web.AlikeThrough and Web.alike_of_threshold.
   - Output: What couples into a formation; a condition coupled in by threshold only passes only whether its need is met.
   - Input: By threshold only a crossing passes; by level the level passes.
   - Preserved conditions: Equality of conditions decided for the threshold law. [Testing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
@@ -79,7 +79,7 @@ The naming study of 17-18 October (N1, study section 6.2) adopted "couples into"
   - Output: Laws of exchange reading through the couplings.
   - Input: Only levels that couple in respond.
   - Preserved conditions: Formation outside the part. [Counterfactual.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
-- related, not a proved adapter: [subthreshold-registration](subthreshold-registration.md). There a raise below the threshold of a stock coupled in by threshold only shows nowhere along courses; here no law reading through the couplings responds to it.
+- related, not a proved adapter: [differences-below-threshold](differences-below-threshold.md). There a raise below the threshold of a stock coupled in by threshold only shows nowhere along courses; here no law reading through the couplings responds to it.
 
 <a id="sources--来源"></a>
 ### Sources

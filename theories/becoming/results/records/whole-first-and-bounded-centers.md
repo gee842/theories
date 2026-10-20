@@ -68,7 +68,7 @@ Ren's statement of the continuation condition, which Ren then called an axiom, i
   - Output: Retaining is a preorder, and what retains is not added to.
   - Input: The whole first and the free rider's loss.
   - Preserved conditions: None. [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
-- **formal-reuse**: [one-axiom-yields-g0](one-axiom-yields-g0.md). Reuses the continuation condition Unrestricted and significance bounded by regions, bounded.
+- **formal-reuse**: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). Reuses the continuation condition Unrestricted and significance bounded by regions, bounded.
   - Output: The continuation condition and its rival.
   - Input: The whole's judgment decides every narrower one.
   - Preserved conditions: None. [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
@@ -78,11 +78,11 @@ Ren's statement of the continuation condition, which Ren then called an axiom, i
   - Preserved conditions: The reading taken by Ren on 18 October 2026, DELEGATED-CHOICES D43. [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md)
 - related, not a proved adapter: [represented-boundary-against-dependence](represented-boundary-against-dependence.md). There represented boundaries are compared with actual dependence; here a center whose represented boundary is exactly its actual dependence still licenses the free rider.
 - related, not a proved adapter: [feeding-closure](feeding-closure.md). Clearing.dependenceRegion is exactly each formation's feeding closure (Clearing.dependenceRegion_iff).
-- related, not a proved adapter: [closure-verdict-meets-axiom](closure-verdict-meets-axiom.md). Without the continuation condition, the verdict bounded by the feeding closure is the condition's where the closure is the whole; in the clearer's web the two part.
+- related, not a proved adapter: [closure-verdict-meets-continuation-condition](closure-verdict-meets-continuation-condition.md). Without the continuation condition, the verdict bounded by the feeding closure is the condition's where the closure is the whole; in the clearer's web the two part.
 - related, not a proved adapter: [presupposition-scopes](presupposition-scopes.md). The order of Retains.within reads as three readings of the presupposition: super-true; sub-true along affecting, at the reach closure; sub-true along the empty relation, at the self (Flow.presupposition_order; the AI's reading, adopted on Ren's delegation).
 - related, not a proved adapter: [levels-of-closure](levels-of-closure.md). The reach closure, not the system, reads Ren's middle level “the system that one is in” (adopted on Ren's delegation): one common condition makes the system the whole.
 
-**Used by:** [closure-verdict-meets-axiom](closure-verdict-meets-axiom.md) · [feeding-closure](feeding-closure.md) · [presupposition-scopes](presupposition-scopes.md) · [relative-position-is-zero-sum](relative-position-is-zero-sum.md)
+**Used by:** [closure-verdict-meets-continuation-condition](closure-verdict-meets-continuation-condition.md) · [feeding-closure](feeding-closure.md) · [presupposition-scopes](presupposition-scopes.md) · [relative-position-is-zero-sum](relative-position-is-zero-sum.md)
 
 <a id="sources--来源"></a>
 ### Sources

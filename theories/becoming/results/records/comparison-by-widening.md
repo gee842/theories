@@ -55,11 +55,11 @@ C holds here by definition on the frame of level paths, with “better” read a
 
 **Preserved conditions:** “Better” read as widening. [ValuationFrames.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean)
 
-- Related, not a proved adapter: [one-axiom-yields-g0](one-axiom-yields-g0.md). There, with the axiom as a condition, C holds on level paths with retaining and adding what has significance as “better” (Web.paths_livingSignificance_comparison); here, with no axiom, with widening as “better”, the two being the same under the axiom.
+- Related, not a proved adapter: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). There, with the axiom as a condition, C holds on level paths with retaining and adding what has significance as “better” (Web.paths_livingSignificance_comparison); here, with no axiom, with widening as “better”, the two being the same under the axiom.
 - Related, not a proved adapter: [ranking-under-readings](ranking-under-readings.md). Courses are compared on possibilities (chapter section 6.12); here, on level paths, the comparison on possibilities itself satisfies C.
 - Related, not a proved adapter: [comparison-content-under-regrouping](comparison-content-under-regrouping.md). P91 supplies local conditions preserving extension under many-to-one regrouping, the exact all-level characterization by minimum requirements, and a generated mixed-loss boundary.
 
-**Used by:** [alignment-direction-g0-j](alignment-direction-g0-j.md) · [comparison-content-under-regrouping](comparison-content-under-regrouping.md)
+**Used by:** [alignment-direction-under-widening](alignment-direction-under-widening.md) · [comparison-content-under-regrouping](comparison-content-under-regrouping.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

@@ -52,7 +52,7 @@ The chapter's open programme (section 8.2, Learning) named "a learner given noth
 ### Dependencies
 
 - none
-- related, not a proved adapter: [learnable-through-registration](learnable-through-registration.md). There learnability is characterized with an extrapolation built from the law, given the world and the feature (fromLaw); here what that extrapolation is given beyond the prefix is exactly a reading of the future, and given nothing no extrapolation learns every learnable feature.
+- related, not a proved adapter: [learnable-through-a-map](learnable-through-a-map.md). There learnability is characterized with an extrapolation built from the law, given the world and the feature (fromLaw); here what that extrapolation is given beyond the prefix is exactly a reading of the future, and given nothing no extrapolation learns every learnable feature.
 - related, not a proved adapter: [identification-where-bounded](identification-where-bounded.md). The bound from which the extrapolation by elimination proposes the next value, and the naming by a finite future of length 2N - 1, are taken from there.
 
 <a id="sources--来源"></a>

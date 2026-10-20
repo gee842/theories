@@ -368,7 +368,7 @@
       }
     },
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Web.CoupledInto、Web.AlikeThrough 与 Web.AlikeThroughUpTo：律经耦合而读与敏感的最小性都以它们陈述。",
@@ -506,7 +506,7 @@
       }
     },
     {
-      "id": "sensitivity-is-the-least-registration",
+      "id": "sensitivity-is-the-least-coupling",
       "detail": {
         "zh": "回答其下一步：凡律在每个历史下读有限多个条件，无论条件多少，敏感都是最小的耦合（ExchangeLaw.ReadsFinitely.least_coupling），条件有限的情形（ExchangeLaw.Nonanticipating.through_sensitive）是其实例；条件无穷多时这一条件不能去掉（tailLaw_no_least_coupling，给定消失之判定），条件编号时每个反例都给出弱有限全知原则（wlpo_of_not_through_sensitive）。",
         "en": "Answers its next step: wherever the law reads finitely many conditions under each history, sensitivity is the least coupling with any number of conditions (ExchangeLaw.ReadsFinitely.least_coupling), the finite case (ExchangeLaw.Nonanticipating.through_sensitive) being its instance; with infinitely many conditions this cannot be dropped (tailLaw_no_least_coupling, given the decision of vanishing), and with numbered conditions every counterexample gives the weak limited principle of omniscience (wlpo_of_not_through_sensitive)."
@@ -736,7 +736,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

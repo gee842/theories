@@ -38,7 +38,7 @@ Tests priority classification of positively understood contents, not universal b
 <a id="依赖与关联-dependencies-and-related-results"></a>
 ## Dependencies and related results
 
-- **formal-reuse**: [practical-judgment-g0-j](practical-judgment-g0-j.md). Reuses comparison, irreflexivity and transitivity without re-proving normative premises.
+- **formal-reuse**: [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md). Reuses comparison, irreflexivity and transitivity without re-proving normative premises.
 - **formal-reuse**: [organizational-formation-from-generative-comparison](organizational-formation-from-generative-comparison.md). Robust improvement witnesses for each q enter the existing organizational theorem.
 - **formal-reuse**: [relational-generative-comparison](relational-generative-comparison.md). Directly uses its structural output, not C or ethical permission as automatic conclusions.
 
@@ -64,7 +64,7 @@ Tests priority classification of positively understood contents, not universal b
 
 - Related, not a proved adapter: [positive-ground-open-futures](positive-ground-open-futures.md). Credits its completed positive-ground result; this stronger comparison criterion is not a new gate for that result or all action.
 
-**Used by:** [one-axiom-yields-g0](one-axiom-yields-g0.md)
+**Used by:** [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

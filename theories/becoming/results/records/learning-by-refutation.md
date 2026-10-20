@@ -40,7 +40,7 @@ Which candidates or classes an actual formation holds, whether its values throug
 ## Dependencies and related results
 
 - **formal-reuse**: [recurrence-without-premise](recurrence-without-premise.md). Reuses Law.orbit, Law.process, revisits_within (within finitely many configurations the orbit returns), unlisted_of_new (a law new at every step is held by no list), gap_of_le, gap_of_lt and mem_cons_split. The delta reads return off the course through a map: the course through a map of an orbit held by a list is a lasso, and the course of a law keeping its whole prefix is the diagonal course.
-- **interpretive**: [testing-within-registration](testing-within-registration.md). P49's Web.tail_unexcluded (without a model no finite prefix excludes a claim about what follows) is the same law for level histories; here it is stated for every course (no_prefix_fixes_next), with its positive side: in a world held by a list extrapolation by elimination misses a bounded number of times.
+- **interpretive**: [testing-within-couplings](testing-within-couplings.md). P49's Web.tail_unexcluded (without a model no finite prefix excludes a claim about what follows) is the same law for level histories; here it is stated for every course (no_prefix_fixes_next), with its positive side: in a world held by a list extrapolation by elimination misses a bounded number of times.
 
 **Output:** Within finitely many configurations the orbit returns; a law new at every step is held by no list.
 
@@ -58,9 +58,9 @@ Which candidates or classes an actual formation holds, whether its values throug
 - Related, not a proved adapter: [experiment-needs-return](experiment-needs-return.md). There the record fixes an act's outcome only where taken; here the prefix fixes no next value, and a lasso's return is the return that lets learning come to rest.
 - Related, not a proved adapter: [generalization-through-lumping](generalization-through-lumping.md). There, when a model of what is irrelevant is right; here, when learning that selects a model from the prefix comes to rest.
 - Related, not a proved adapter: [scientific-inquiry-foundation](scientific-inquiry-foundation.md). The laws of induction are part of the necessary relations of scientific inquiry; this record does not prove the whole core indispensable to science.
-- Related, not a proved adapter: [learnable-through-registration](learnable-through-registration.md). Where the map does not tell configurations apart: some extrapolation rests at every configuration exactly where configurations with the same future through the map have features agreeing from some step on; the extrapolation still tells the values through the map apart.
+- Related, not a proved adapter: [learnable-through-a-map](learnable-through-a-map.md). Where the map does not tell configurations apart: some extrapolation rests at every configuration exactly where configurations with the same future through the map have features agreeing from some step on; the extrapolation still tells the values through the map apart.
 
-**Used by:** [identification-where-bounded](identification-where-bounded.md) · [identification-where-runs-part](identification-where-runs-part.md) · [learnable-through-registration](learnable-through-registration.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [where-a-move-is-formed](where-a-move-is-formed.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
+**Used by:** [identification-where-bounded](identification-where-bounded.md) · [identification-where-runs-part](identification-where-runs-part.md) · [learnable-through-a-map](learnable-through-a-map.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [where-a-move-is-formed](where-a-move-is-formed.md) · [wisdom-root-without-axiom](wisdom-root-without-axiom.md) (interpretive)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

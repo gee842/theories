@@ -73,7 +73,7 @@
       }
     },
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "relation": "formal-reuse",
       "detail": {
         "zh": "P89 调用 inventory_g0_of_unrestricted 与 livingSignificance_of_unrestricted，补齐旧正面根据的正式实例与共同运行上的形式。",
@@ -98,14 +98,14 @@
   ],
   "related": [
     {
-      "id": "practical-judgment-g0-j",
+      "id": "practical-judgment-under-living-significance",
       "detail": {
         "zh": "解释关联：特定承担及损失仍须按既有原则评价；允许不同形成内容不授予任意替代权限。",
         "en": "Interpretive connection: specific undertakings and losses remain governed by existing principles; different possible forms do not license arbitrary replacement."
       }
     },
     {
-      "id": "alignment-direction-g0-j",
+      "id": "alignment-direction-under-widening",
       "detail": {
         "zh": "解释关联：本结果为规则自身修订补充一个实现接口，复用已完成的对齐方向，不重证方向或普遍遵循。",
         "en": "Interpretive connection: supplies a realization interface for revisable rules while reusing the completed alignment direction, without reproving that direction or universal compliance."

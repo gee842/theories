@@ -70,15 +70,15 @@ The open item of testing-within-registration (review F6): what an act does compa
   - Output: Return within finitely many configurations; a kept history never returns.
   - Input: The projection's return; a kept history fixes only what was done.
   - Preserved conditions: None. [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
-- **formal-reuse**: [testing-within-registration](testing-within-registration.md). Advances P49's open item: what an act does is testable only relative to a model (Flow.beyond_needs_model); here the unfolding itself fixes it where it returns, the model needed being determinacy with one return, or a projection.
+- **formal-reuse**: [testing-within-couplings](testing-within-couplings.md). Advances P49's open item: what an act does is testable only relative to a model (Flow.beyond_needs_model); here the unfolding itself fixes it where it returns, the model needed being determinacy with one return, or a projection.
   - Output: Testing an act needs a model.
   - Input: The conditions of experiment.
   - Preserved conditions: None. [Testing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
 - related, not a proved adapter: [scientific-inquiry-foundation](scientific-inquiry-foundation.md). One part of this open target: the structural conditions of experiment, replication and control, stated on the spine; it does not establish the whole target.
 - related, not a proved adapter: [finite-fallible-inquiry-necessity](finite-fallible-inquiry-necessity.md). The periphery's information bound; here on the spine: where the record fixes what an act does.
-- related, not a proved adapter: [subthreshold-registration](subthreshold-registration.md). There a difference below the threshold stays where the exchange follows what couples in; here, with the couplings as the projection, a difference below the threshold not showing is a case where the step does not factor through what couples in (a reading).
+- related, not a proved adapter: [differences-below-threshold](differences-below-threshold.md). There a difference below the threshold stays where the exchange follows what couples in; here, with the couplings as the projection, a difference below the threshold not showing is a case where the step does not factor through what couples in (a reading).
 
-**Used by:** [a-law-through-a-projection-along-one-run](a-law-through-a-projection-along-one-run.md) · [causal-models-as-processes](causal-models-as-processes.md) · [determinacy-up-to-likeness](determinacy-up-to-likeness.md) · [process-and-frame-as-readings](process-and-frame-as-readings.md) · [projection-carrying-a-law](projection-carrying-a-law.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [where-a-move-is-formed](where-a-move-is-formed.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
+**Used by:** [a-law-through-a-projection-along-one-run](a-law-through-a-projection-along-one-run.md) · [causal-models-as-processes](causal-models-as-processes.md) · [determinacy-up-to-likeness](determinacy-up-to-likeness.md) · [process-and-frame-as-readings](process-and-frame-as-readings.md) · [projection-carrying-a-law](projection-carrying-a-law.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [where-a-move-is-formed](where-a-move-is-formed.md) · [wisdom-root-without-axiom](wisdom-root-without-axiom.md) (interpretive)
 
 <a id="sources--来源"></a>
 ### Sources

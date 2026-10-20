@@ -64,7 +64,7 @@ Continues hexagrams-on-the-spine (Y1), which listed the relations of the places 
   - Output: Six two-valued lines, the received order holding every configuration, and the laws of change on them.
   - Input: Hexagram, line, same, order, complement, reverse, flip, waxWane, rising.
   - Preserved conditions: None. [Hexagrams.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean)
-- **formal-reuse**: [contextual-registration](contextual-registration.md). Reuses Contextual, Glues, indexed, indexed_fits, FitsFree and fitsFree_iff, reading the sites of a relation and the two trigrams as contexts.
+- **formal-reuse**: [claims-shown-in-context](claims-shown-in-context.md). Reuses Contextual, Glues, indexed, indexed_fits, FitsFree and fitsFree_iff, reading the sites of a relation and the two trigrams as contexts.
   - Output: What contexts show glues exactly where they agree where they meet; a frame of context-free claims fits exactly where it glues everywhere; the indexed frame always fits.
   - Input: atSites for each relation, halves for the trigrams, home the height itself.
   - Preserved conditions: Every context lies within its home (trivially, within is True). [Context.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)

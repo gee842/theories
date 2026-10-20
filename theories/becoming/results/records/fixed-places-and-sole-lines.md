@@ -70,7 +70,7 @@ Continues place-relations-in-context (Y2), which listed 初上无位, the line a
   - Output: Six two-valued lines and the laws of change on them.
   - Input: Hexagram, line, same, yang, complement, reverse, flip, changes, waxWane, unwaxWane, rising, allBroken, six_steps, run_six_steps.
   - Preserved conditions: None. [Hexagrams.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean)
-- **formal-reuse**: [contextual-registration](contextual-registration.md). Reuses Contextual, Glues, FitsFree and fitsFree_iff, reading the four places between the ends as contexts.
+- **formal-reuse**: [claims-shown-in-context](claims-shown-in-context.md). Reuses Contextual, Glues, FitsFree and fitsFree_iff, reading the four places between the ends as contexts.
   - Output: A frame of context-free claims fits exactly where what the contexts show glues everywhere.
   - Input: atSites betweenPhase, home a place between the ends.
   - Preserved conditions: Every context lies within its home (trivially). [Context.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)

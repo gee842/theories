@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "id": "subthreshold-registration",
+  "id": "differences-below-threshold",
   "title": {
     "zh": "阈下的差别",
     "en": "Differences below the threshold"
@@ -63,7 +63,7 @@
   ],
   "dependencies": [
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Web.CoupledInto、Web.AlikeThrough、Web.AlikeThroughUpTo、thresholdOnly 与 ownStanding。",
@@ -155,7 +155,7 @@
       }
     },
     {
-      "id": "runaway-distance-unregistered",
+      "id": "runaway-distance-uncoupled",
       "detail": {
         "zh": "在断点之前，没有耦合入的量约束到断点的距离；建立在本结果的 subthreshold_alike_always 上。",
         "en": "Before the break no quantity that couples in bounds the distance to it; built on this result's subthreshold_alike_always."
@@ -292,13 +292,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad",
       "declarations": []
     },
     {
@@ -503,5 +503,8 @@
       "en": "2026-10-20: 71 bookkeeping notes condensed from 2026-10-11 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/29bbd5bec961a5aa/subthreshold-registration.json and in git.",
       "zh": "2026-10-20：71 条记账性说明合并（2026-10-11 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/29bbd5bec961a5aa/subthreshold-registration.json 和 git 中。"
     }
+  ],
+  "former_ids": [
+    "subthreshold-registration"
   ]
 }

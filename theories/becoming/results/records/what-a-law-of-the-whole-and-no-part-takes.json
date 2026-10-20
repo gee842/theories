@@ -183,7 +183,7 @@
   ],
   "dependencies": [
     {
-      "id": "sensitivity-is-the-least-registration",
+      "id": "sensitivity-is-the-least-coupling",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用消失（VanishFrom）、消失之指示与尾之律、WLPO、seenBy 与其引理、alike_of_agree_from、alike_of_agree_from_sensitive、Sensitivity.cond_either 与 ReadsFinitely.alike_of_insensitive：反例给出规则的证明是其混合，读作数据。",
@@ -254,7 +254,7 @@
   ],
   "related": [
     {
-      "id": "sensitivity-is-the-least-registration",
+      "id": "sensitivity-is-the-least-coupling",
       "detail": {
         "zh": "回答其下一步首项：反例恰在弱有限全知原则作为规则之处存在，由只由规则造出的永不消失之律达到；尾之律所取的消失之判定恰是有限全知原则作为规则。",
         "en": "Answers the first item of its next step: a counterexample exists exactly where the weak limited principle of omniscience holds as a rule, attained by the law of levels that never vanish, built from the rule alone; the decision of vanishing the tail law takes is exactly the limited principle as a rule."
@@ -400,7 +400,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

@@ -132,7 +132,7 @@
       }
     },
     {
-      "id": "only-the-order-of-change-registers",
+      "id": "only-the-order-of-change-shows",
       "detail": {
         "en": "There renumberings keeping the order of joined exchanges keep every premise of a world; here interleavings of the same own courses reach the same configuration.",
         "zh": "那里保持相连交换次序的重编号保持世界的每个前提；这里同一自身进程的交错到达同一构形。"
@@ -177,7 +177,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

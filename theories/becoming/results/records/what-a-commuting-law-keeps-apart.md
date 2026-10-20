@@ -56,7 +56,7 @@ The earlier 义理·拓扑 (§四, §九) argues that a fixed-point-free symmetr
   - Output: The course of a determined law as a run of the spine.
   - Input: The runs the laws are stated on.
   - Preserved conditions: None. [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
-- **formal-reuse**: [registration-within-what-it-registers](registration-within-what-it-registers.md). Reuses Diagonal.Moves, flip_moves, revision_never_rests, fixed_of_complete and Says.
+- **formal-reuse**: [readings-within-what-they-read](readings-within-what-they-read.md). Reuses Diagonal.Moves, flip_moves, revision_never_rests, fixed_of_complete and Says.
   - Output: A map moving every value never rests under revision; a complete family gives every map a fixed point.
   - Input: The fixed-point-free symmetry, the two-valued liar and the three-valued diagonal.
   - Preserved conditions: None. [Diagonal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean)

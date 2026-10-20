@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "id": "practical-judgment-g0-j",
+  "id": "practical-judgment-under-living-significance",
   "title": {
     "zh": "生生之意义与实践承诺下的一般实践判断",
     "en": "Practical judgment under living significance and the practical commitments"
@@ -377,7 +377,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {
@@ -554,5 +554,8 @@
       "zh": "一般原则范围获独立验收。Lean 检查所述判断确由生生之意义、实践承诺与对应条件推出，包括交叉基本损失不排序之处。在一个构造的保护对增益情境中，另一项检查说明基本保护优先增加了什么：它满足无损比较，却从不以增益交换基本条件；每一个满足该比较的自然数评分都会交换，而一个有界评分与这一优先一致，所以有界敏感性对手仍然存在。这些实践承诺是经论证的承诺，不是 Lean 的结果。",
       "en": "Independent acceptance of the general-principles scope. Lean checks that the stated verdicts follow from living significance, the practical commitments and correspondence, including where crossed basic losses stay unranked. In one constructed protection-versus-gains situation, a separate check shows what the priority of basic conditions adds: its ordering satisfies the no-loss comparison yet never trades a basic condition for gains, whereas every natural-number score satisfying that comparison does trade; a bounded score agrees with that priority, so bounded-sensitivity rivals remain. The practical commitments are argued commitments, not Lean results."
     }
-  }
+  },
+  "former_ids": [
+    "practical-judgment-g0-j"
+  ]
 }

@@ -459,7 +459,7 @@
       }
     },
     {
-      "id": "one-axiom-yields-g0",
+      "id": "continuation-condition-yields-living-significance",
       "relation": "formal-reuse",
       "detail": {
         "zh": "possible_extends_iff 以公理 Unrestricted 为假设。",
@@ -537,7 +537,7 @@
       }
     },
     {
-      "id": "practical-judgment-g0-j",
+      "id": "practical-judgment-under-living-significance",
       "detail": {
         "zh": "在 C 之外，J1 的基本条件优先是可能给出“没有恶性增殖更好”的更强比较之一；这里未形式化这一连接。",
         "en": "Beyond C, J1's priority of basic conditions is one stronger comparison that might yield “better without malignant growth”; this connection is not formalized here."
@@ -714,7 +714,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

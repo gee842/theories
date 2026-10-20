@@ -251,7 +251,7 @@
       }
     },
     {
-      "id": "held-lives-g0-is-centering",
+      "id": "living-significance-on-held-lives",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Web.held_by_formations 与 Valuation.Held（并经它复用估值的定义）；中心的见证在其上陈述。",
@@ -395,7 +395,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.md",

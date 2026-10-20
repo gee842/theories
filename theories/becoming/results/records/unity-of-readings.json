@@ -129,7 +129,7 @@
   ],
   "dependencies": [
     {
-      "id": "contextual-registration",
+      "id": "claims-shown-in-context",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Contextual、Contextual.indexed、Glues、Agree、glues_iff_agree、FitsFree 与 fitsFree_iff。",
@@ -198,7 +198,7 @@
       }
     },
     {
-      "id": "axiom-decomposition",
+      "id": "continuation-condition-decomposition",
       "relation": "formal-reuse",
       "detail": {
         "zh": "重述 boundaryInvariant_iff_conditional 与 boundaryInvariant_iff_all，并引 not_subTrue_of_invariant；不加结果。",
@@ -363,12 +363,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8bcc6540de8ca6d74faf7b27842883c1e45fc7d3a0753adf9f94b77fc746c1e8"
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",

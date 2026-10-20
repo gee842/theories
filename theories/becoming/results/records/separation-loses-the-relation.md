@@ -39,7 +39,7 @@ Relation is stated for wholes of two parts, with parity as the witness for three
 <a id="依赖与关联-dependencies-and-related-results"></a>
 ## Dependencies and related results
 
-- **formal-reuse**: [contextual-registration](contextual-registration.md). Reuses restrict, Glued, PartsDetermine and Specker's boxes and pairs: on the same three pairs parity is a whole its pairs do not give back.
+- **formal-reuse**: [claims-shown-in-context](claims-shown-in-context.md). Reuses restrict, Glued, PartsDetermine and Specker's boxes and pairs: on the same three pairs parity is a whole its pairs do not give back.
 
 **Output:** What a whole allows within a context, what the parts glue to, whether the parts give the whole back; three boxes and three pairs.
 

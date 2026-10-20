@@ -75,7 +75,7 @@ Reads the opening's "the whole Earth has become a highly entangled system", "hea
   - Output: A family of parents each leaving at least a (at most b) offspring leaves at least (at most) a (b) for each.
   - Input: One generation of the iterated selection.
   - Preserved conditions: Transmission, as a hypothesis. [Capture.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean)
-- related, not a proved adapter: [runaway-distance-unregistered](runaway-distance-unregistered.md). Nothing coupled in by threshold bounds the distance to the break; half_stands adds that under a draw exceeding everything drawn before, what stands gives no warning.
+- related, not a proved adapter: [runaway-distance-uncoupled](runaway-distance-uncoupled.md). Nothing coupled in by threshold bounds the distance to the break; half_stands adds that under a draw exceeding everything drawn before, what stands gives no warning.
 - related, not a proved adapter: [relative-position-is-zero-sum](relative-position-is-zero-sum.md). Drawing is a race in which each draws on what the other depends on: mutual dependence without mutual feeding.
 
 <a id="sources--来源"></a>

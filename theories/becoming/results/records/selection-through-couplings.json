@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "id": "selection-through-registration",
+  "id": "selection-through-couplings",
   "title": {
     "zh": "经耦合的选择",
     "en": "Selection through the couplings"
@@ -268,7 +268,7 @@
   ],
   "dependencies": [
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Web.AlikeThrough、Web.AlikeThroughUpTo（refl、symm、earlier、of_obs）、Web.ClassThrough、Web.Excludes（not_meets）、Web.AlikeThroughAll、Flow.WithinCoupling、Flow.withinCoupling_thresholdOnly、Flow.uncoupled_beyond_coupling、Flow.alike_within_coupling，以及见证 Clearing.alike_for_clearer、tested_by_dweller、DwellerEnded、resourceGone、clearerAndDweller。增量是把经耦合无别移到选择上：经耦合的选择恰及耦合入者，耦合闭包之外的不见对每个经耦合的选择成立。",
@@ -362,7 +362,7 @@
   ],
   "related": [
     {
-      "id": "runaway-distance-unregistered",
+      "id": "runaway-distance-uncoupled",
       "detail": {
         "zh": "那里经耦合的策略不能用上只经阈耦合入它的储量的余量；这里经耦合的选择不能对不耦合入选择者的部分作出选择。",
         "en": "There a policy through the couplings cannot use a stock coupled into it by threshold only; here a selection through the couplings cannot select on a part that does not couple into the selector."
@@ -531,13 +531,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad",
       "declarations": []
     },
     {
@@ -794,5 +794,8 @@
         "zh": "历史说明压缩前的记录原始字节（R35，E3）；每条被合并的说明都保存在这里。"
       }
     }
+  ],
+  "former_ids": [
+    "selection-through-registration"
   ]
 }

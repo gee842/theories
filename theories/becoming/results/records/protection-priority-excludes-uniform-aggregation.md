@@ -41,8 +41,8 @@ Checks one constructed situation; what it excludes is natural-number (unit-step)
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.
 
-- Related, not a proved adapter: [practical-judgment-g0-j](practical-judgment-g0-j.md). Reuses its Better and no_protection_trade_by_count, adding J2's independence from C, the excluded natural-number score class and a bounded score agreeing with J2. Its proof is unchanged.
-- Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Turns the alignment direction's §3 statement that J2 is not implied by G0 and rejects some aggregate compensation into a checked claim.
+- Related, not a proved adapter: [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md). Reuses its Better and no_protection_trade_by_count, adding J2's independence from C, the excluded natural-number score class and a bounded score agreeing with J2. Its proof is unchanged.
+- Related, not a proved adapter: [alignment-direction-under-widening](alignment-direction-under-widening.md). Turns the alignment direction's §3 statement that J2 is not implied by G0 and rejects some aggregate compensation into a checked claim.
 - Related, not a proved adapter: [relational-generative-comparison](relational-generative-comparison.md). Uses the same ComparisonPrinciple (C); that result's C-dependent strict comparison keeps its scope.
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>

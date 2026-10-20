@@ -46,7 +46,7 @@ Local recovery and evidential inference, not verification of hardware, compiler,
 
 **Preserved conditions:** Original initial coverage, permission/generation checks and program semantics remain; the new study additionally requires durable state, microsteps and current read correspondence. [RecoverableControl.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean)
 
-- Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Interpretive connection: reuses the completed G0/J direction; implementation conditions do not independently justify permissions or ends.
+- Related, not a proved adapter: [alignment-direction-under-widening](alignment-direction-under-widening.md). Interpretive connection: reuses the completed G0/J direction; implementation conditions do not independently justify permissions or ends.
 
 **Used by:** [reserved-shutdown-during-recovery](reserved-shutdown-during-recovery.md)
 

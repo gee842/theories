@@ -55,13 +55,13 @@ How a target forms or is revised, that a seeker pursues it, and which targets ac
 
 **Preserved conditions:** What stands is listed at each step. [Locality.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
 
-- Related, not a proved adapter: [testing-within-registration](testing-within-registration.md). Part of B3 and B4: a claim is excluded only through a difference in what couples in; nothing beyond the coupling closure couples in.
-- Related, not a proved adapter: [runaway-distance-unregistered](runaway-distance-unregistered.md). B3: before the break, how far off it is does not couple in.
+- Related, not a proved adapter: [testing-within-couplings](testing-within-couplings.md). Part of B3 and B4: a claim is excluded only through a difference in what couples in; nothing beyond the coupling closure couples in.
+- Related, not a proved adapter: [runaway-distance-uncoupled](runaway-distance-uncoupled.md). B3: before the break, how far off it is does not couple in.
 - Related, not a proved adapter: [experiment-needs-return](experiment-needs-return.md). B4: what one's own act does is fixed only where the configuration returns, under a model of what is irrelevant.
 - Related, not a proved adapter: [continuing-self-fed-from-beyond](continuing-self-fed-from-beyond.md). There a finite family that keeps taking cannot, enclosed, go on fed from beyond; here rising without end needs steps at which what stands does not run down.
 - Related, not a proved adapter: [where-a-rising-take-ends](where-a-rising-take-ends.md). There, where what stands runs down, the rises of more than now do not recur; here, read on what a seeker takes from a bounded giving, the seeker itself ends under balance alone.
 
-**Used by:** [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md) · [learnable-through-registration](learnable-through-registration.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
+**Used by:** [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md) · [learnable-through-a-map](learnable-through-a-map.md) · [wisdom-root-without-axiom](wisdom-root-without-axiom.md) (interpretive)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

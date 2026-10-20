@@ -69,7 +69,7 @@ Ren, 16 October 2026: “we are describing what everything obeys, but at every m
   - Input: Signed weights are pairs of numbers of situations that add and that subtract; the balanced (1, 1) is two situations.
   - Preserved conditions: Listed moves and configurations. [Weighted.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean)
 - related, not a proved adapter: [identification-where-runs-part](identification-where-runs-part.md). What the record and the law leave open at a parting the situation fixes; its reading rewritten following Ren's clarification.
-- related, not a proved adapter: [contextual-registration](contextual-registration.md). Readings in context do not always glue into a context-free assignment; there the situation that makes it true includes the context.
+- related, not a proved adapter: [claims-shown-in-context](claims-shown-in-context.md). Readings in context do not always glue into a context-free assignment; there the situation that makes it true includes the context.
 
 <a id="sources--来源"></a>
 ### Sources

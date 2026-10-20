@@ -70,7 +70,7 @@ Ren's long-term objectives: “I want to push the frontier as strong as possible
   - Output: The region of the clearer and its source.
   - Input: Clearing.alongDependence_closed: the dweller lies beyond the clearer's influence closure.
   - Preserved conditions: None. [Regions.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
-- **formal-reuse**: [one-axiom-yields-g0](one-axiom-yields-g0.md). Reuses Unrestricted and bounded, as conclusions only: some bounded significance is exactly the axiom.
+- **formal-reuse**: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). Reuses Unrestricted and bounded, as conclusions only: some bounded significance is exactly the axiom.
   - Output: The axiom Unrestricted and bounded significance.
   - Input: Flow.feeding_unrestricted_of_common, Flow.bounded_system_whole, Clearing.system_whole.
   - Preserved conditions: None. [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
@@ -82,7 +82,7 @@ Ren's long-term objectives: “I want to push the frontier as strong as possible
 - related, not a proved adapter: [feedback-and-reach](feedback-and-reach.md). The influence closure bounds what a formation's own feedback can carry; a part's exchange reaches within the reach closure and the system.
 - related, not a proved adapter: [how-much-difference-arrives](how-much-difference-arrives.md). Answers the measure in its next step: the common condition does not measure the strength of coupling, and the coupling strengths do; the carried amount gives a difference's routes in time (carried_pos_iff).
 
-**Used by:** [axiom-decomposition](axiom-decomposition.md) · [comparison-where-the-rest-responds](comparison-where-the-rest-responds.md) · [comparison-within-reach](comparison-within-reach.md) · [feedback-and-reach](feedback-and-reach.md) · [mutual-dependence-and-its-pace](mutual-dependence-and-its-pace.md) · [presupposition-scopes](presupposition-scopes.md) · [selection-through-registration](selection-through-registration.md) · [subthreshold-registration](subthreshold-registration.md) · [testing-within-registration](testing-within-registration.md) · [which-links-a-closure-needs](which-links-a-closure-needs.md)
+**Used by:** [comparison-where-the-rest-responds](comparison-where-the-rest-responds.md) · [comparison-within-reach](comparison-within-reach.md) · [continuation-condition-decomposition](continuation-condition-decomposition.md) · [differences-below-threshold](differences-below-threshold.md) · [feedback-and-reach](feedback-and-reach.md) · [mutual-dependence-and-its-pace](mutual-dependence-and-its-pace.md) · [presupposition-scopes](presupposition-scopes.md) · [selection-through-couplings](selection-through-couplings.md) · [testing-within-couplings](testing-within-couplings.md) · [which-links-a-closure-needs](which-links-a-closure-needs.md)
 
 <a id="sources--来源"></a>
 ### Sources

@@ -111,11 +111,11 @@ The framework makes the purposes of intelligence, and the rules by which those p
 
 **Next:** Develop situated ways to recognize ethically relevant relations and preserve warranted reasons through learning, changed purposes and action. Test actual correspondence and implementation in concrete cases; normative applicability does not guarantee behavioral convergence.
 
-[alignment-direction-g0-j](theories/becoming/results/records/alignment-direction-g0-j.md): `reviewed-scoped`
+[alignment-direction-under-widening](theories/becoming/results/records/alignment-direction-under-widening.md): `reviewed-scoped`
 
 [open-form-realization-under-revision](theories/becoming/results/records/open-form-realization-under-revision.md): `recorded-checked`
 
-[practical-judgment-g0-j](theories/becoming/results/records/practical-judgment-g0-j.md): `reviewed-scoped`
+[practical-judgment-under-living-significance](theories/becoming/results/records/practical-judgment-under-living-significance.md): `reviewed-scoped`
 
 <a id="generative-foundation"></a>
 <a id="生成基础与持续研究--generative-foundation-and-continuity"></a>
@@ -181,7 +181,7 @@ Complete the authorized theoretical integration and required validation, then co
 
 [recurring-reference-revision](theories/becoming/results/records/recurring-reference-revision.md): `recorded-checked`
 
-[selection-through-registration](theories/becoming/results/records/selection-through-registration.md): `recorded-checked`
+[selection-through-couplings](theories/becoming/results/records/selection-through-couplings.md): `recorded-checked`
 
 [selection-under-registration-revision](theories/becoming/results/records/selection-under-registration-revision.md): `recorded-checked`
 
@@ -307,13 +307,13 @@ We are developing the significance-and-comparison core (section 6) into increasi
 
 [metaethical-core-characterization](theories/becoming/results/records/metaethical-core-characterization.md): `recorded-checked`
 
+[own-good-to-reachable-living-significance](theories/becoming/results/records/own-good-to-reachable-living-significance.md): `recorded-checked`
+
 [positioned-positive-reason](theories/becoming/results/records/positioned-positive-reason.md): `recorded-checked`
 
 [positive-ground-open-futures](theories/becoming/results/records/positive-ground-open-futures.md): `recorded-checked`
 
-[practical-judgment-g0-j](theories/becoming/results/records/practical-judgment-g0-j.md): `reviewed-scoped`
-
-[self-good-reachable-g0](theories/becoming/results/records/self-good-reachable-g0.md): `recorded-checked`
+[practical-judgment-under-living-significance](theories/becoming/results/records/practical-judgment-under-living-significance.md): `reviewed-scoped`
 
 [universal-practical-warrant](theories/becoming/results/records/universal-practical-warrant.md): `open`
 
@@ -365,9 +365,9 @@ Reuse practical judgment and the alignment direction under living significance a
 
 [2026-10-08-alignment-grounding-axiom-correction](sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md) · [PRACTICAL-JUDGMENT](theories/becoming/chapters/PRACTICAL-JUDGMENT.md) · [ALIGNMENT-DIRECTION](theories/becoming/chapters/ALIGNMENT-DIRECTION.md)
 
-[alignment-direction-g0-j](theories/becoming/results/records/alignment-direction-g0-j.md): `reviewed-scoped`
+[alignment-direction-under-widening](theories/becoming/results/records/alignment-direction-under-widening.md): `reviewed-scoped`
 
-[practical-judgment-g0-j](theories/becoming/results/records/practical-judgment-g0-j.md): `reviewed-scoped`
+[practical-judgment-under-living-significance](theories/becoming/results/records/practical-judgment-under-living-significance.md): `reviewed-scoped`
 
 <a id="discovery-and-evidence--检索与证据"></a>
 ## Discovery and evidence

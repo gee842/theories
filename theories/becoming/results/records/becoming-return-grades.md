@@ -78,7 +78,7 @@ The grades distinguish when dependence is met again in one run. Which grade an a
 - related, not a proved adapter: [endpoint-loss-and-return](endpoint-loss-and-return.md). That result characterizes return along a trajectory by preserved endpoint possibilities; this one grades return at the level of dependence by time. No correspondence between them is established.
 - related, not a proved adapter: [becoming-finite-horizon](becoming-finite-horizon.md). Return grades and the formation-level cycle reading are fixed by the whole run and by no finite prefix (Renewable.cycle_reading_not_finite); the event-level cycle reading is fixed by a finite history. That result shows no finite prefix decides whether drawing renews or consumes.
 
-**Used by:** [joint-difference-making](joint-difference-making.md) · [practical-judgment-g0-j](practical-judgment-g0-j.md) (interpretive) · [unceasing-generation-needs-renewal](unceasing-generation-needs-renewal.md)
+**Used by:** [joint-difference-making](joint-difference-making.md) · [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md) (interpretive) · [unceasing-generation-needs-renewal](unceasing-generation-needs-renewal.md)
 
 <a id="sources--来源"></a>
 ### Sources

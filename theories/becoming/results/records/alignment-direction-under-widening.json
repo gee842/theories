@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "id": "alignment-direction-g0-j",
+  "id": "alignment-direction-under-widening",
   "title": {
     "en": "AI alignment direction under widening and the practical commitments",
     "zh": "扩大与实践承诺之下的 AI 对齐方向"
@@ -36,7 +36,7 @@
   ],
   "dependencies": [
     {
-      "id": "practical-judgment-g0-j",
+      "id": "practical-judgment-under-living-significance",
       "detail": {
         "zh": "把既有原则应用到明示 AI 服务关系；形式例直接导入 PracticalJudgment。",
         "en": "Applies the existing principles to declared AI-service relations; the formal example imports PracticalJudgment."
@@ -320,7 +320,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     }
   ],
@@ -495,5 +495,8 @@
         "Becoming.Clearing.direction"
       ]
     }
+  ],
+  "former_ids": [
+    "alignment-direction-g0-j"
   ]
 }

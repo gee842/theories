@@ -54,7 +54,7 @@ Ren, 14 October 2026: “why do we need "World"? wasn't this about the whole and
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **formal-reuse**: [contextual-registration](contextual-registration.md). Reuses Contextual, Contextual.indexed, Glues, Agree, glues_iff_agree, FitsFree and fitsFree_iff.
+- **formal-reuse**: [claims-shown-in-context](claims-shown-in-context.md). Reuses Contextual, Contextual.indexed, Glues, Agree, glues_iff_agree, FitsFree and fitsFree_iff.
   - Output: Claims shown in context; gluing exactly where contexts agree; a frame of context-free claims fitting exactly where they glue everywhere.
   - Input: The readings as one world; the gluing of two readings of change.
   - Preserved conditions: None. [Context.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)
@@ -66,7 +66,7 @@ Ren, 14 October 2026: “why do we need "World"? wasn't this about the whole and
   - Output: Every world with its rest counted balances; balance is exactly the rest never active.
   - Input: Every world is one run of the law of exchange.
   - Preserved conditions: None. [Reading.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean)
-- **formal-reuse**: [axiom-decomposition](axiom-decomposition.md). Restates boundaryInvariant_iff_conditional and boundaryInvariant_iff_all and cites not_subTrue_of_invariant; adds no result.
+- **formal-reuse**: [continuation-condition-decomposition](continuation-condition-decomposition.md). Restates boundaryInvariant_iff_conditional and boundaryInvariant_iff_all and cites not_subTrue_of_invariant; adds no result.
   - Output: Invariance is exactly the conditional from presupposition to axiom.
   - Input: Under the same standard no significance stops at a boundary.
   - Preserved conditions: The whole admissible. [Boundaries.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean)

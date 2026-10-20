@@ -38,7 +38,7 @@ Necessary bound, not sufficient control, complete knowledge or a universal scien
 ## Dependencies and related results
 
 - **formal-reuse**: [comparison-where-the-rest-responds](comparison-where-the-rest-responds.md). Timed reach reconnects to the original responsive closure.
-- **formal-reuse**: [testing-within-registration](testing-within-registration.md). Reuses everything that coupled in before.
+- **formal-reuse**: [testing-within-couplings](testing-within-couplings.md). Reuses everything that coupled in before.
 - **formal-reuse**: [finite-fallible-inquiry-necessity](finite-fallible-inquiry-necessity.md). Reuses the original statistical inequality.
 
 **Output:** Native responsive closure and coupled-exchange edges.

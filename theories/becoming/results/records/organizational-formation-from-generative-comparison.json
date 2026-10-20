@@ -35,7 +35,7 @@
   ],
   "dependencies": [
     {
-      "id": "practical-judgment-g0-j",
+      "id": "practical-judgment-under-living-significance",
       "relation": "formal-reuse",
       "detail": {
         "zh": "PracticalJudgment.finite_frontier 与 dominated_excluded 的输出经 formation_required_of_improvable_absence 接成 Required；规范解释继承公开 J 承诺。",
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "alignment-direction-g0-j",
+      "id": "alignment-direction-under-widening",
       "relation": "interpretive",
       "detail": {
         "zh": "复用已完成的跨智能方向，推进组织形成的具体条件。",

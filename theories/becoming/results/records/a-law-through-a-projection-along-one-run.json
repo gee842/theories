@@ -409,7 +409,7 @@
       }
     },
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "relation": "formal-reuse",
       "detail": {
         "en": "Reuses Web.AlikeThrough and thresholdOnly: coupling at a configuration is Web.AlikeThrough on the runs read through fixed conditions.",
@@ -487,7 +487,7 @@
       }
     },
     {
-      "id": "subthreshold-registration",
+      "id": "differences-below-threshold",
       "detail": {
         "en": "There a difference below a threshold does not couple in; here a level outside what a formation couples into decides its next coupling along a run.",
         "zh": "那里阈值以下的差别不耦合入；这里形成所耦合者之外的水平沿运行决定其下一步的耦合。"
@@ -656,7 +656,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

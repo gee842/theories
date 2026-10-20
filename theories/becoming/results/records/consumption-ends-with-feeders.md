@@ -91,7 +91,7 @@ Route (b) is the AI's wording, which Ren quoted: “No axiom. The theory only de
 - related, not a proved adapter: [support-from-the-supported](support-from-the-supported.md). There every rise is given by a supported formation, and once nothing is supported nothing is supported again; here, where nothing supported gives to the condition consumed, consumption lasts at most as many steps as its level.
 - related, not a proved adapter: [feedback-and-reach](feedback-and-reach.md). A formation's support follows only its exchanges with what it depends on, and nothing beyond the influence closure shows within it (Flow.Balances.uncoupled_beyond_influence); an ending returning through a feeder lies within the influence closure.
 
-**Used by:** [closure-verdict-meets-axiom](closure-verdict-meets-axiom.md)
+**Used by:** [closure-verdict-meets-continuation-condition](closure-verdict-meets-continuation-condition.md)
 
 <a id="sources--来源"></a>
 ### Sources

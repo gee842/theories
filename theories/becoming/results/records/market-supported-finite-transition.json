@@ -67,7 +67,7 @@
   ],
   "related": [
     {
-      "id": "alignment-direction-g0-j",
+      "id": "alignment-direction-under-widening",
       "detail": {
         "zh": "机制结果供既有 G0/J 判断使用；稳定性不提供规范起点或覆盖全部现实损失。",
         "en": "The mechanism informs existing G0/J judgment; stability neither supplies normative grounds nor covers all real losses."
@@ -178,7 +178,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

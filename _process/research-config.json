@@ -24,8 +24,8 @@
     "consumption-ends-with-feeders",
     "feeding-closure",
     "derived-extent-limits",
-    "selection-through-registration",
-    "runaway-distance-unregistered",
+    "selection-through-couplings",
+    "runaway-distance-uncoupled",
     "target-capture",
     "experiment-needs-return",
     "closing-needs-net-draw",
@@ -38,8 +38,8 @@
     "basis": "significance for AI–human alignment and coordination (Ren, 17 October 2026: sources/15-codex-theory-conversations/2026-10-17-ren-words-not-authority.md)",
     "previous": [
       "positive-ground-open-futures",
-      "alignment-direction-g0-j",
-      "practical-judgment-g0-j",
+      "alignment-direction-under-widening",
+      "practical-judgment-under-living-significance",
       "conditional-foundation-assessment"
     ],
     "previous_proposal": [
@@ -52,16 +52,16 @@
       "consumption-ends-with-feeders",
       "entropy-history-and-record",
       "observation-is-a-route",
-      "learnable-through-registration",
+      "learnable-through-a-map",
       "comparison-within-reach",
       "what-a-law-of-the-whole-and-no-part-takes"
     ]
   },
   "readme_conditional_results": [
-    "one-axiom-yields-g0",
+    "continuation-condition-yields-living-significance",
     "positive-ground-open-futures",
-    "practical-judgment-g0-j",
-    "alignment-direction-g0-j"
+    "practical-judgment-under-living-significance",
+    "alignment-direction-under-widening"
   ],
   "readme_research_goals": [
     "theory-of-becoming",

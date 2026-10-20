@@ -60,14 +60,14 @@ Begin with formation, obstruction, sensing, response and transformation; explain
 ### Dependencies
 
 - none
-- related, not a proved adapter: [practical-judgment-g0-j](practical-judgment-g0-j.md). The explicit-axiom route is an established result with a different completion standard.
-- related, not a proved adapter: [self-good-reachable-g0](self-good-reachable-g0.md). Reuses the corrected evaluator route: selfhood, continuity and tolerance do not independently establish universal significance.
-- related, not a proved adapter: [one-axiom-yields-g0](one-axiom-yields-g0.md). Credits the current significance/reason distinction; deriving G0 does not discharge A’s normative work.
+- related, not a proved adapter: [practical-judgment-under-living-significance](practical-judgment-under-living-significance.md). The explicit-axiom route is an established result with a different completion standard.
+- related, not a proved adapter: [own-good-to-reachable-living-significance](own-good-to-reachable-living-significance.md). Reuses the corrected evaluator route: selfhood, continuity and tolerance do not independently establish universal significance.
+- related, not a proved adapter: [continuation-condition-yields-living-significance](continuation-condition-yields-living-significance.md). Credits the current significance/reason distinction; deriving G0 does not discharge A’s normative work.
 - related, not a proved adapter: [open-form-realization-under-revision](open-form-realization-under-revision.md). P89 bounded realization and formal connection are complete, not reopened as a missing mechanism for this target.
 - related, not a proved adapter: [target-capture](target-capture.md). Reuses conditional differential persistence, transmission and rule-bound reabsorption as explanatory inputs, not new proofs.
 - related, not a proved adapter: [selection-under-registration-revision](selection-under-registration-revision.md). Reuses lumping change and expressible-choice scope within one activity, without inferring ethics from preserved discrimination.
 - related, not a proved adapter: [consequence-revised-reference-plan](consequence-revised-reference-plan.md). Reuses the completed interface from consequences through plan revision to actual use; return, reference, support and revision rules remain supplied.
-- related, not a proved adapter: [selection-through-registration](selection-through-registration.md). Reuses the scope of selection through the couplings, distinguishing unavailable discrimination from available but unused selection; expressibility is not enacted choice or ethical direction.
+- related, not a proved adapter: [selection-through-couplings](selection-through-couplings.md). Reuses the scope of selection through the couplings, distinguishing unavailable discrimination from available but unused selection; expressibility is not enacted choice or ethical direction.
 
 <a id="sources--来源"></a>
 ### Sources

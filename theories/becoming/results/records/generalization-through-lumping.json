@@ -233,7 +233,7 @@
       }
     },
     {
-      "id": "selection-through-registration",
+      "id": "selection-through-couplings",
       "relation": "formal-reuse",
       "detail": {
         "zh": "复用 Web.SelectsThrough 与 Web.AlikeThroughUpTo：经耦合的选择是经“经耦合无别”的选择（Training.web_selectsThrough_iff）。增量是把选择移到训练上：损失经数据选择，数据之外的值与类同样自由。",
@@ -272,7 +272,7 @@
       }
     },
     {
-      "id": "testing-within-registration",
+      "id": "testing-within-couplings",
       "detail": {
         "zh": "那里理曾读作“对识负责的模型”（AI 先前的读法），这里依 Ren 读作对结构与变化之规律的建模；模型只经耦合入者被检验仍成立。",
         "en": "There 理 was read as “a model answerable to registration” (the AI's earlier reading); here, on Ren's reading, as the modeling of the laws of structure and change; that a model is tested only through what couples in still holds."
@@ -424,7 +424,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2",
+      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564",
       "declarations": []
     },
     {

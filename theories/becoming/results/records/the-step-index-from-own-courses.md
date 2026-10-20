@@ -53,7 +53,7 @@ The open programme of the chapter left open "deriving the shared index of steps 
 
 - none
 - related, not a proved adapter: [order-of-exchanges-is-the-invariant](order-of-exchanges-is-the-invariant.md). There, for a world given with an index and a footprint, the order of joined exchanges is what the premises keep; here, with no index given, the index is built from the own courses and carries nothing beyond them.
-- related, not a proved adapter: [only-the-order-of-change-registers](only-the-order-of-change-registers.md). There renumberings keeping the order of joined exchanges keep every premise of a world; here interleavings of the same own courses reach the same configuration.
+- related, not a proved adapter: [only-the-order-of-change-shows](only-the-order-of-change-shows.md). There renumberings keeping the order of joined exchanges keep every premise of a world; here interleavings of the same own courses reach the same configuration.
 
 **Used by:** [the-world-an-interleaving-builds](the-world-an-interleaving-builds.md)
 
