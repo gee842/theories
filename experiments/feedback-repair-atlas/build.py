@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the offline atlas from checked source snapshots (Python standard library)."""
+"""Build the offline atlas page from the checked model (Python standard library only)."""
 import argparse
 import hashlib
 import json
@@ -14,40 +14,35 @@ def digest(path):
 
 
 def build():
+    record = json.loads((HERE / 'model/atlas-verification.json').read_text())
+    if record['status'] != 'passed' or record['axiom_dependencies']:
+        raise ValueError('The model is not verified: model/atlas-verification.json')
+    for path, expected in record['own_sha256'].items():
+        if digest(ROOT / path) != expected:
+            raise ValueError('Changed since verification; rerun model/verify_atlas.py: ' + path)
     components = json.loads((HERE / 'components.json').read_text())['components']
     for component in components:
-        source = ROOT / component['path']
-        if digest(source) != component['sha256']:
-            raise ValueError('Component source changed; review its excerpt and binding: ' + component['path'])
-        lines = source.read_text().splitlines()
+        if 'code' in component:
+            # A core excerpt is a snapshot at the commit the model was checked against.
+            if component['commit'] != record['core']['checked_against_commit']:
+                raise ValueError('Core excerpt is from another commit: ' + component['id'])
+            continue
+        if component['path'] not in record['own_sha256']:
+            raise ValueError('Excerpt from an unverified file: ' + component['id'])
+        lines = (ROOT / component['path']).read_text().splitlines()
         if not 1 <= component['line'] <= component['end'] <= len(lines):
             raise ValueError('Invalid source range: ' + component['id'])
-        component.update(file=source.name, code='\n'.join(lines[component['line']-1:component['end']]))
-    receipts = {}
-    for receipt_name, verifier in [('verification.json', 'verify.py'),
-                                   ('interaction-verification.json', 'verify_interaction.py'),
-                                   ('gradual-verification.json', 'verify_gradual.py'),
-                                   ('research-verification.json', 'verify_research.py')]:
-        receipt = json.loads((HERE / 'model' / receipt_name).read_text())
-        if receipt['status'] != 'passed' or receipt['axiom_dependencies']:
-            raise ValueError('Unverified application: ' + receipt_name)
-        if digest(HERE / 'model' / verifier) != receipt['verification_script_sha256']:
-            raise ValueError('Verifier changed: ' + verifier)
-        for path, expected in receipt['source_sha256'].items():
-            if digest(ROOT / path) != expected:
-                raise ValueError('Receipt source changed: ' + path)
-        receipts[receipt_name] = {k: receipt[k] for k in
-                                 ['status', 'checked_at_utc', 'theorems', 'declarations']}
-        receipts[receipt_name]['matching_source_hashes'] = len(receipt['source_sha256'])
-    data = json.dumps(dict(components=components, receipts=receipts,
-                          sourceModel='ResearchInteractionTrial'), ensure_ascii=False).replace('</', '<\\/')
-    fragment = (HERE / 'src/research.fragment.html').read_text() + '<details><summary>Earlier tally model · six abstraction levels</summary>' + (HERE / 'src/atlas.fragment.html').read_text() + '</details>'
-    if fragment.count('__RETRY_DATA__') != 1:
+        component['code'] = '\n'.join(lines[component['line'] - 1:component['end']])
+    verification = {k: record[k] for k in ['checked_at_utc', 'lean_version', 'theorems', 'declarations']}
+    verification['core_commit'] = record['core']['checked_against_commit']
+    data = json.dumps(dict(components=components, verification=verification),
+                      ensure_ascii=False).replace('</', '<\\/')
+    fragment = (HERE / 'src/page.fragment.html').read_text()
+    if fragment.count('__ATLAS_DATA__') != 1:
         raise ValueError('Expected exactly one data placeholder')
-    fragment = fragment.replace('__RETRY_DATA__', data)
-    dynamics = (HERE / 'src/dynamics.js').read_text() + '\n' + (HERE / 'src/research.js').read_text()
-    # Embed before the atlas script; the delivered page needs no modules, APIs or CDNs.
-    fragment = '<script>\n' + dynamics + '\n</script>\n' + fragment
+    fragment = fragment.replace('__ATLAS_DATA__', data)
+    # Inline the dynamics: the delivered page needs no modules, network or CDN.
+    fragment = '<script>\n' + (HERE / 'src/learning.js').read_text() + '\n</script>\n' + fragment
     shell = (HERE / 'src/shell.html').read_text()
     if shell.count('<!--__ATLAS_FRAGMENT__-->') != 1:
         raise ValueError('Expected exactly one fragment placeholder')
@@ -63,7 +58,7 @@ if __name__ == '__main__':
     if args.check:
         if not output.is_file() or output.read_text() != result:
             raise SystemExit('index.html is stale; run python3 -B build.py')
-        print('Atlas is reproducible; component, verifier and transitive receipt hashes match.')
+        print('Atlas is reproducible; the model and its excerpts match the verification record.')
     else:
         output.write_text(result)
         print('Built', output.relative_to(ROOT), '(' + str(output.stat().st_size) + ' bytes)')

@@ -1,8 +1,12 @@
 # Feedback and repair atlas
 
-A worked application of the Becoming proofs: explore how expectation, confidence
-and credibility change a shared exchange under research-informed candidate laws.
-Compare the earlier gradual tally model across six abstraction levels as well.
+This is a checked Lean model of one working exchange, together with an offline page for exploring it. Alex hands back Maya's draft with four words: "This needs work." The model asks three linked questions:
+
+1. **Reading one remark.** What can the wording settle about the situation behind it? There are two separate facts: whether the draft has an error, and whether the delivery was personal.
+2. **Learning across exchanges.** How does each side's reading of the other change as exchanges add up? A reading has three parts: expectation, confidence and credibility.
+3. **The link.** Maya's reply to the next remark comes from her reading. A guarded reply treats the remark as personal, and a constructive reply treats it as not personal. Can any history make that reply right in every situation?
+
+Each part builds on the one before. Part 3 takes Part 1's question and asks it of the readings that Part 2 produces. The answer is no. For every reading, and so for every course of exchanges, the reply misreads some admitted situation. Learning changes which way the reply errs, not whether the remark alone can be read correctly.
 
 Open [index.html](index.html) locally, or serve this directory:
 
@@ -10,114 +14,68 @@ Open [index.html](index.html) locally, or serve this directory:
 python3 -m http.server 8000 --directory experiments/feedback-repair-atlas
 ```
 
-The page is self-contained: no accounts, API calls, network assets, paid services,
-or external JavaScript packages. Browser choices are stored locally when storage
-is available. The trial is also [hosted for exploration](https://feedback-atlas.157-245-144-73.sslip.io/).
+The page is self-contained. It makes no network requests and loads no external scripts, and it stores nothing.
 
-## Six levels, with the same episode selected
+## The model
 
-1. **Raw Lean:** inspect the actual imported components and application proofs.
-2. **Abstraction:** inspect the exact history-to-tally projection.
-3. **Two people:** replay exchanges, supporting experiences, setbacks and retries.
-4. **Evidence and repair:** distinguish a task error from a personal attack.
-5. **Team:** an explicitly unproved extension to coordination and repair practices.
-6. **Society:** an explicitly unproved extension to institutions and wider effects.
+Everything is in a single module, [model/FeedbackAtlas.lean](model/FeedbackAtlas.lean), with 41 theorems and 83 audited declarations.
 
-The same course and completed-exchange count remain selected across levels.
-Choose a preset or branch from any step using clarification, habit, or a defensive
-lapse. Retry is an explicit control input; its availability is assumed.
+| Part | Main statements | What they show |
+|-|-|-|
+| §1 Reading one remark | `no_personal_judge_from_remark`, `task_error_does_not_settle_personal`, `task_judge_exists`, `request_without_verdict`, `confirmed_error_still_not_personal` | The wording settles neither fact. A checked finding settles the error, but not the delivery. Asking for specifics needs no verdict. |
+| §2 Learning across exchanges | `defense_keeps_confidence_low`, `same_lapse_different_updates`, `responder_history_changes_reply`, `initiator_history_interrupts_returned_defense`, `same_explanation_different_effect`, `readings_evolve_without_record` | Under the supplied laws, the same lapse lands differently on different histories, and a run of defense never builds confidence above 2. |
+| §3 The link | `every_reading_misreads_some_case`, `no_reading_settles_personal`, `every_course_misreads_some_case` | No reading, and so no course of exchanges, makes the reply right in every admitted situation. |
 
-## Premises and conclusions
+The update laws are stated in the docstring of `learn` and on the page. [model/EVIDENCE.md](model/EVIDENCE.md) records what each law draws on in trust-learning research, and what the studies do not support. Two choices follow the cited evidence directly:
 
-Alex needs three supporting-evidence units before his own habitual response
-changes; Maya needs two before offering specifics habitually. Supporting
-experiences add one, defense subtracts two (six in the severe-setback course), and
-unresolved experience preserves the tally. These are stipulated weights, not
-measured trust, probabilities, psychological harm, or maturity scores. Receptivity,
-credible engagement, capacity and safety to clarify remain separate assumptions.
+- A defensive move lowers confidence (c′ = ⌊c/2⌋ + 1) as well as expectation. A reading built from defense therefore stays easy to revise, which matches Siegel et al. (2018). The superseded model raised confidence after every move.
+- Credibility has its own evidence weight, so a checked explanation updates it by the same evidence-weighted form as expectation. The superseded model always moved credibility halfway.
 
-An early lapse can re-enter the habitual defensive region. A new clarification
-can restart repair when the required conditions hold. A later lapse can leave
-Maya above threshold so her next cue permits Alex to engage before his own
-expectation changes. Repeated or larger setbacks can remove that margin.
+**What the proofs say exactly.**
 
-These are mathematical consequences of the supplied rules, not validated laws
-of human behavior or obligations to tolerate mistreatment. Evidence of a task
-error does not establish that delivery was nonpersonal. The team and society
-levels are interpretation proposals and carry no inherited formal guarantee.
+- `readings_evolve_without_record` shows that the readings evolve on their own: the update laws never read the records, which are kept only as a trace.
+- Every expectation and credibility stays between 0 and 1 because each one is a `Share` by type. The content of that bound is `weighted_bound`.
+- The examples are synthetic, and each number is checked by `decide`.
 
-## Proof composition and boundaries
+**What the model takes from the Becoming core.** It uses three core laws, and no other law of the theory is carried into this application:
 
-The unchanged application sources are in [model/](model/README.md):
+- `Readout.no_judge_of_merged` (with `judges_iff_lumpedOn`): no reduction can judge between situations that it merges. §1 and §3 apply this.
+- `wholeNext`: both ends change by the one move the whole forms. §2 builds each exchange with it.
+- `Readout.foldl_semiconj`: a reduction that commutes with one move commutes with every course of moves. §2 applies it to the readings.
 
-- `FeedbackReadingTrial.lean`: observational ambiguity and evidence refinement.
-- `InteractionHistoryTrial.lean`: coupled histories and an earlier one-exchange
-  learning rule, retained at its original scope.
-- `GradualInteractionTrial.lean`: accumulated evidence, thresholds, setbacks,
-  retry, and exact abstraction for every finite response plan.
+The module also uses the one-step inquiry (`judgeProcess`, `commonResponse_judge_iff`, `commonResponse_antitone`) and `Naturals.mul_right_comm`.
 
-The gradual application imports `wholeNext`, `Readout.foldl_semiconj`,
-`ExchangeLaw.sub_add_back`, and `Copying.le_sub_of_add`. It adds no core theorem,
-result registration, or claim of empirical validity. This packages the earlier
-uncommitted study trials into an executable experiment without changing their
-Lean statements. No physical conservation law is imposed on human experience.
+**Relational basis.** The joint state is the record of one exchange, read from its two ends. The two readings are not attributes of two independent people: both change through the same formed exchange, and only through what passes between the ends. The split stands for the two ends of that one relation. It leaves out everything else either end takes part in, how the ends came to be, and any change that no observed move carries.
 
-## Reproduce
+**What is supplied.** The situations, the evidence functions, the update laws, the 2/3 decision probe and the example histories are all modelling choices. The proofs establish their consequences. They say nothing about anyone's actual motives, worth or safety, and they create no obligation to remain in an exchange.
 
-Python 3's standard library builds the page. Node.js runs the browser-dynamics
-tests. Lean 4.29.1 is required only to reproduce the formal application checks.
-From the repository root:
+## Verification
 
 ```sh
-LEAN=/absolute/path/to/lean python3 -B experiments/feedback-repair-atlas/model/verify.py
-LEAN=/absolute/path/to/lean python3 -B experiments/feedback-repair-atlas/model/verify_interaction.py
-LEAN=/absolute/path/to/lean python3 -B experiments/feedback-repair-atlas/model/verify_gradual.py
-LEAN=/absolute/path/to/lean python3 -B experiments/feedback-repair-atlas/model/verify_research.py
-python3 -B experiments/feedback-repair-atlas/build.py
+LEAN=/absolute/path/to/lean python3 -B experiments/feedback-repair-atlas/model/verify_atlas.py
 python3 -B experiments/feedback-repair-atlas/build.py --check
 node --test experiments/feedback-repair-atlas/tests/*.cjs
 python3 -B -m unittest discover -s experiments/feedback-repair-atlas/tests -p 'test_*.py'
 ```
 
-The local checks compile the imported closure, reject compiler warnings, and
-audit axiom dependencies of every source declaration in each application. They
-are not the package's full environment/purity audit. Source-bound receipts live
-beside the model, with build artifacts ignored under `.build/`.
+`verify_atlas.py` requires Lean 4.29.1. It compiles the module against the committed core, rejects compiler warnings, audits the axiom dependencies of every declaration, and writes [model/atlas-verification.json](model/atlas-verification.json). The record contains:
 
-`components.json` binds displayed source excerpts by path, line range and SHA-256.
-`build.py` rejects changed source, changed verifier scripts, invalid receipts,
-or stale transitive hashes. After reviewing and checking a source change, update
-the affected excerpt binding and rebuild. Do not refresh hashes to silence a
-failure. `src/dynamics.js` supplies the executable interpretation; tests compare
-its courses with the Lean examples and exercise absent conditions and retained
-history. They do not establish a formal Lean-to-JavaScript compilation theorem.
+- the SHA-256 hashes of the application's own files (`FeedbackAtlas.lean` and `verify_atlas.py`);
+- the core commit and tree the module was checked against.
 
-The static page is generated from `src/atlas.fragment.html`, `src/dynamics.js`,
-`src/shell.html`, component bindings, and verified source excerpts. No Codex
-plugin, local visualization folder, or particular user's home path is needed.
+It does not hash the core's files. A core landing therefore does not invalidate the record, and re-verification is a deliberate step rather than something CI forces. This is a local application check, not the core package's environment and purity audit, which only `check_becoming.py` runs.
 
-The path-filtered `Feedback atlas` CI job checks the deterministic page, source
-and receipt bindings, and executable dynamics. It does not install Lean or rerun
-the formal compiler; reproduce those checks explicitly with the commands above.
+`build.py` refuses to build the page in four cases:
 
-## Research-informed version
+- the record is not passing;
+- an own file has changed since verification;
+- an excerpt comes from an unverified file;
+- a core excerpt comes from a commit other than the one checked.
 
-The first view now uses `ResearchInteractionTrial.lean`: expectation, confidence
-as prior evidence weight, and explanation credibility are distinct. Select each
-partner's short or longer history independently, apply an identical lapse, and
-compare a returned defense, constructive reply, next-turn interruption, or pause.
-High/low verified report histories affect a favorable explanation's weight without
-excusing direct behavior. Select an earlier exchange to branch from it.
+Core excerpts are snapshots stored in [components.json](components.json). [bind_components.py](bind_components.py) writes them with `git show` at the checked commit, and a test compares them with that commit when the clone has it. After a re-verification, rerun `bind_components.py` and then `build.py`. [src/learning.js](src/learning.js) is the browser's copy of §2 and §3. Its tests reproduce every number that the Lean examples check. It is tested, not compiled from Lean.
 
-The earlier six-level tally model remains available in a disclosure, labeled with
-its original supplied assumptions. Its fixed +1/-2 weights are not evidence-fitted.
-The [new walkthrough](model/RESEARCH-INFORMED-MODEL.md) and
-[research map](model/PSYCHOLOGICAL-GROUNDING.md) explain sources and limitations.
-The new candidate is not a volatility model or a calibrated psychological predictor.
+The `Feedback atlas` CI job runs the page, binding and dynamics checks when this directory changes. It does not install Lean.
 
-The new Lean application has 22 theorems and 52 audited declarations (51 transitive
-modules), with empty reported axiom dependencies. Together, the four human
-applications have 75 theorems and 152 source declaration audits. `research.js`
-implements exact rational arithmetic and separate browser checks reproduce the
-Lean examples; there is no formal Lean-to-JavaScript compilation theorem. The
-build now also binds the fourth receipt, verifier and displayed source excerpts.
+## History
+
+The four earlier modules each built a new model rather than refining the one before, and they were joined only by imports. They were consolidated here on 20 October 2026: a Boolean situation model, a Boolean expectation history, a whole-number tally with thresholds, and the three-part fraction model. The six-level page and its unproved team and society views were retired at the same time. All of them are kept unchanged in [history/](history/INDEX.md). The frozen verification logs there contain a local build path from the machine that produced them.

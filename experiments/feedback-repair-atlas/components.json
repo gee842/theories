@@ -1,194 +1,127 @@
 {
-  "components": [
-    {
-      "id": "coupling",
-      "label": "Couple the updates",
-      "name": "Becoming.wholeNext",
-      "line": 349,
-      "boundary": "Imported definition: both updates respond to the exchange formed from the same joint state.",
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
-      "end": 350,
-      "sha256": "aca6c52320693e1a43d7a9293f90cd00ffcf6cc5111482be7c9179f344785c5d"
-    },
-    {
-      "id": "lifting",
-      "label": "Lift the abstraction",
-      "name": "Becoming.Readout.foldl_semiconj",
-      "line": 114,
-      "boundary": "Imported theorem: one-step commutation is a hypothesis; exact agreement for every finite plan follows.",
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
-      "end": 120,
-      "sha256": "08725e834290ab83cfe8f2acf9cb3ede7e8b01b7be233987e4be95ad51d2f94a"
-    },
-    {
-      "id": "observation",
-      "label": "Show information loss",
-      "name": "no_attack_judge_from_remark, real_error_does_not_settle_attack",
-      "line": 32,
-      "boundary": "Application of no_judge_of_merged. Four possibilities and the wording-only observation are stipulated.",
-      "path": "experiments/feedback-repair-atlas/model/FeedbackReadingTrial.lean",
-      "end": 44,
-      "sha256": "d72082a4f943873f74b38897948e2cc35fb0c2f45c8eb3280bee6876090b224c"
-    },
-    {
-      "id": "rules",
-      "label": "Gradual response and learning rules",
-      "name": "Rules, revise, learned, turn, experience updates",
-      "line": 11,
-      "boundary": "Supplied behavioral definitions. The numbers are example evidence weights, not validated units of trust, trauma, maturity, or moral worth.",
-      "path": "experiments/feedback-repair-atlas/model/GradualInteractionTrial.lean",
-      "end": 73,
-      "sha256": "c31a892815ea023f5bb2daea4e69ed5dbe1ad747868f0e2b94cb8fc340ce1266"
-    },
-    {
-      "id": "history",
-      "label": "Retain both histories",
-      "name": "History, view, step, both_pasts_retained",
-      "line": 71,
-      "boundary": "Both history lists grow. Older records contribute through learned; a setback changes their weighted summary without deleting them.",
-      "path": "experiments/feedback-repair-atlas/model/GradualInteractionTrial.lean",
-      "end": 93,
-      "sha256": "c31a892815ea023f5bb2daea4e69ed5dbe1ad747868f0e2b94cb8fc340ce1266"
-    },
-    {
-      "id": "projection",
-      "label": "Exact abstraction across every finite plan",
-      "name": "step_commutes and histories_and_scores_agree",
-      "line": 76,
-      "boundary": "The application imports Readout.foldl_semiconj. Exactness holds for these formal dynamics, not for every model of actual humans.",
-      "path": "experiments/feedback-repair-atlas/model/GradualInteractionTrial.lean",
-      "end": 93,
-      "sha256": "c31a892815ea023f5bb2daea4e69ed5dbe1ad747868f0e2b94cb8fc340ce1266"
-    },
-    {
-      "id": "accumulate",
-      "label": "Repeated support and restoration",
-      "name": "repeated_support and support_can_restore_lapse",
-      "line": 95,
-      "boundary": "General support restoration uses ExchangeLaw.sub_add_back under the bound that enough evidence existed before the lapse. Support must actually be acquired.",
-      "path": "experiments/feedback-repair-atlas/model/GradualInteractionTrial.lean",
-      "end": 109,
-      "sha256": "c31a892815ea023f5bb2daea4e69ed5dbe1ad747868f0e2b94cb8fc340ce1266"
-    },
-    {
-      "id": "basin",
-      "label": "Why habit can restart the loop",
-      "name": "habitual_defense, defensive_basin_closed, defensive_basin_forever",
-      "line": 111,
-      "boundary": "The basin is closed under the supplied habitual policy. A changed policy, environment, or deliberate clarification is outside that closure condition.",
-      "path": "experiments/feedback-repair-atlas/model/GradualInteractionTrial.lean",
-      "end": 155,
-      "sha256": "c31a892815ea023f5bb2daea4e69ed5dbe1ad747868f0e2b94cb8fc340ce1266"
-    },
-    {
-      "id": "margins",
-      "label": "A lapse and the remaining margin",
-      "name": "lapse_cost and margins_absorb_lapse",
-      "line": 152,
-      "boundary": "The sufficient margin theorem applies to arbitrary thresholds and setbacks. It does not assert that every late lapse leaves both above threshold.",
-      "path": "experiments/feedback-repair-atlas/model/GradualInteractionTrial.lean",
-      "end": 167,
-      "sha256": "c31a892815ea023f5bb2daea4e69ed5dbe1ad747868f0e2b94cb8fc340ce1266"
-    },
-    {
-      "id": "retry",
-      "label": "Retry after an early lapse",
-      "name": "early_lapse, early_lapse_habit_traps, early_lapse_repair",
-      "line": 191,
-      "boundary": "The exact retry schedule is three clarifications, a lapse, one new clarification, then three habitual replies. It ends at (3,5) under demoRules.",
-      "path": "experiments/feedback-repair-atlas/model/GradualInteractionTrial.lean",
-      "end": 207,
-      "sha256": "c31a892815ea023f5bb2daea4e69ed5dbe1ad747868f0e2b94cb8fc340ce1266"
-    },
-    {
-      "id": "buffer",
-      "label": "Later recovery and countercases",
-      "name": "buffered_lapse, buffered_lapse_recovers, repeated_lapses_remove_buffer, larger_setback_counterexample",
-      "line": 209,
-      "boundary": "The standard setback is two. The larger-setback counterexample explicitly changes both penalties to six.",
-      "path": "experiments/feedback-repair-atlas/model/GradualInteractionTrial.lean",
-      "end": 224,
-      "sha256": "c31a892815ea023f5bb2daea4e69ed5dbe1ad747868f0e2b94cb8fc340ce1266"
-    },
-    {
-      "id": "evidence",
-      "label": "Accountability and evidence refinement",
-      "name": "updated, sound_update_keeps_actual, confirmed_error_supports_accountability",
-      "line": 112,
-      "boundary": "Task evidence does not establish nonpersonal delivery. Coverage of reality, reliability, and the evidential permission rules are supplied.",
-      "path": "experiments/feedback-repair-atlas/model/FeedbackReadingTrial.lean",
-      "end": 144,
-      "sha256": "d72082a4f943873f74b38897948e2cc35fb0c2f45c8eb3280bee6876090b224c"
-    },
-    {
-      "id": "arithmetic",
-      "label": "Imported setback-margin lemma",
-      "name": "Becoming.Copying.le_sub_of_add",
-      "line": 88,
-      "boundary": "A constructive arithmetic lemma imported by the general margin proof; no psychological meaning is provided by the lemma itself.",
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
-      "end": 90,
-      "sha256": "324c7db4346f4e68afa634ed780cd52ccb6447c27106a9693c871263635417df"
-    },
-    {
-      "id": "restore",
-      "label": "Imported subtraction restoration lemma",
-      "name": "Becoming.ExchangeLaw.sub_add_back",
-      "line": 370,
-      "boundary": "A natural-number arithmetic result. Application to supporting evidence depends on the stipulated revise rule.",
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "end": 375,
-      "sha256": "3120e70adbe3c7159275e7b12de522e71b081571c1259fef1fa0159d5bb0b24e"
-    },
-    {
-      "id": "full",
-      "label": "Full gradual application source",
-      "name": "GradualInteractionTrial.lean",
-      "line": 1,
-      "boundary": "Exact source snapshot of the 23-theorem gradual extension. Earlier Boolean interaction results retain their separate original scope.",
-      "path": "experiments/feedback-repair-atlas/model/GradualInteractionTrial.lean",
-      "end": 226,
-      "sha256": "c31a892815ea023f5bb2daea4e69ed5dbe1ad747868f0e2b94cb8fc340ce1266"
-    },
-    {
-      "id": "research-state",
-      "label": "Separate expectation, confidence and credibility",
-      "name": "Separate expectation, confidence and credibility",
-      "line": 60,
-      "end": 97,
-      "path": "experiments/feedback-repair-atlas/model/ResearchInteractionTrial.lean",
-      "sha256": "592642168bfa6b0bba5d30f9c306df7cf9ed520edb6b4adc554717a32163a910",
-      "boundary": "These are supplied state variables, not measured psychological quantities. Confidence is positive prior evidence weight."
-    },
-    {
-      "id": "research-coupling",
-      "label": "Compose two situated updates",
-      "name": "Compose two situated updates",
-      "line": 138,
-      "end": 166,
-      "path": "experiments/feedback-repair-atlas/model/ResearchInteractionTrial.lean",
-      "sha256": "592642168bfa6b0bba5d30f9c306df7cf9ed520edb6b4adc554717a32163a910",
-      "boundary": "Alex acts, Maya learns and responds, Alex learns from her reply. Core coupling and readout are reused under supplied laws."
-    },
-    {
-      "id": "research-lapse",
-      "label": "Same lapse, different histories",
-      "name": "Same lapse, different histories",
-      "line": 210,
-      "end": 249,
-      "path": "experiments/feedback-repair-atlas/model/ResearchInteractionTrial.lean",
-      "sha256": "592642168bfa6b0bba5d30f9c306df7cf9ed520edb6b4adc554717a32163a910",
-      "boundary": "Exact synthetic histories and fixed response probes; no empirical calibration or obligation to engage."
-    },
-    {
-      "id": "research-credibility",
-      "label": "Same explanation, different credibility",
-      "name": "Same explanation, different credibility",
-      "line": 257,
-      "end": 276,
-      "path": "experiments/feedback-repair-atlas/model/ResearchInteractionTrial.lean",
-      "sha256": "592642168bfa6b0bba5d30f9c306df7cf9ed520edb6b4adc554717a32163a910",
-      "boundary": "Credibility weights fresh favorable reports, not direct behavior. It does not establish motives or truth of a report."
-    }
-  ]
+ "components": [
+  {
+   "id": "remark",
+   "part": 1,
+   "label": "The remark and its four situations",
+   "path": "experiments/feedback-repair-atlas/model/FeedbackAtlas.lean",
+   "line": 44,
+   "end": 59,
+   "boundary": "The situations and evidence functions are supplied."
+  },
+  {
+   "id": "no-judge",
+   "part": 1,
+   "label": "What the wording cannot settle",
+   "path": "experiments/feedback-repair-atlas/model/FeedbackAtlas.lean",
+   "line": 64,
+   "end": 76,
+   "boundary": "Uses the core law no_judge_of_merged."
+  },
+  {
+   "id": "permits",
+   "part": 1,
+   "label": "Which replies the evidence permits",
+   "path": "experiments/feedback-repair-atlas/model/FeedbackAtlas.lean",
+   "line": 98,
+   "end": 126,
+   "boundary": "The permission rules are supplied; the inquiry is the core one-step judgment."
+  },
+  {
+   "id": "reading",
+   "part": 2,
+   "label": "A reading of the other end",
+   "path": "experiments/feedback-repair-atlas/model/FeedbackAtlas.lean",
+   "line": 221,
+   "end": 244,
+   "boundary": "Expectation, confidence and credibility are model quantities, not measurements."
+  },
+  {
+   "id": "learn",
+   "part": 2,
+   "label": "The update laws",
+   "path": "experiments/feedback-repair-atlas/model/FeedbackAtlas.lean",
+   "line": 246,
+   "end": 274,
+   "boundary": "The laws are supplied and not fitted; EVIDENCE.md lists what motivates each."
+  },
+  {
+   "id": "defense",
+   "part": 2,
+   "label": "Defense keeps a reading revisable",
+   "path": "experiments/feedback-repair-atlas/model/FeedbackAtlas.lean",
+   "line": 279,
+   "end": 301,
+   "boundary": "Holds for every reading and every run length, under the supplied law."
+  },
+  {
+   "id": "exchange",
+   "part": 2,
+   "label": "How one exchange forms",
+   "path": "experiments/feedback-repair-atlas/model/FeedbackAtlas.lean",
+   "line": 368,
+   "end": 388,
+   "boundary": "Both ends change by the one move the whole forms (core wholeNext)."
+  },
+  {
+   "id": "readout",
+   "part": 2,
+   "label": "Readings evolve without the record",
+   "path": "experiments/feedback-repair-atlas/model/FeedbackAtlas.lean",
+   "line": 390,
+   "end": 398,
+   "boundary": "The records do no work in these laws; the readings are self-contained."
+  },
+  {
+   "id": "examples",
+   "part": 2,
+   "label": "Worked examples",
+   "path": "experiments/feedback-repair-atlas/model/FeedbackAtlas.lean",
+   "line": 410,
+   "end": 455,
+   "boundary": "Synthetic histories; every number is checked by decide."
+  },
+  {
+   "id": "link",
+   "part": 3,
+   "label": "The link: a reply reads the remark",
+   "path": "experiments/feedback-repair-atlas/model/FeedbackAtlas.lean",
+   "line": 490,
+   "end": 526,
+   "boundary": "Holds for every reading, hence every course of exchanges."
+  },
+  {
+   "id": "core-merged",
+   "part": 0,
+   "label": "Core: no judge through a merging reduction",
+   "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+   "commit": "c3f912268c89ec93c2ba7b723e54824b9eb5bb8f",
+   "line": 287,
+   "end": 292,
+   "boundary": "§1 and §3 apply it.",
+   "code": "/-- **No judge of a family reads through a reduction that merges two of its members the\nobservable tells apart.** -/\ntheorem no_judge_of_merged {family : List S} {π : S → K} {f : S → V} {s s' : S}\n    (mem : s ∈ family) (mem' : s' ∈ family) (merged : π s = π s') (apart : f s ≠ f s') :\n    ¬ ∃ judge, Judges family π f judge :=\n  fun ⟨_, judges⟩ => apart (lumpedOn_of_judges judges s s' mem mem' merged)"
+  },
+  {
+   "id": "core-whole",
+   "part": 0,
+   "label": "Core: the coupled whole",
+   "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveFormation.lean",
+   "commit": "c3f912268c89ec93c2ba7b723e54824b9eb5bb8f",
+   "line": 348,
+   "end": 351,
+   "boundary": "§2 builds each exchange with it.",
+   "code": "/-- The whole's law where the part's and the rest's laws are functions: both go by the move the\nwhole forms. -/\ndef wholeNext (F : S → A → S) (G : E → A → E) (form : S × E → A) (x : S × E) : S × E :=\n  (F x.1 (form x), G x.2 (form x))"
+  },
+  {
+   "id": "core-fold",
+   "part": 0,
+   "label": "Core: a commuting reduction commutes with every course",
+   "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+   "commit": "c3f912268c89ec93c2ba7b723e54824b9eb5bb8f",
+   "line": 114,
+   "end": 121,
+   "boundary": "§2 applies it to readings.",
+   "code": "/-- **A reduced law that commutes with every move commutes with every course of moves.** -/\ntheorem foldl_semiconj (next : S → A → S) (π : S → K) (reduced : K → A → K)\n    (commutes : ∀ s a, π (next s a) = reduced (π s) a) :\n    ∀ (plan : List A) (s : S), π (plan.foldl next s) = plan.foldl reduced (π s)\n  | [], _ => rfl\n  | a :: rest, s =>\n    (foldl_semiconj next π reduced commutes rest (next s a)).trans\n      (congrArg (fun k => rest.foldl reduced k) (commutes s a))"
+  }
+ ]
 }

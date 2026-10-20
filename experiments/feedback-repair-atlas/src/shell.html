@@ -4,17 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="A worked Lean application: explore expectation, confidence, credibility and history-dependent setbacks.">
+<meta name="description" content="One checked Lean model of a working exchange: what one remark can settle, how readings change across exchanges, and how the two connect.">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <title>Feedback and repair atlas</title>
 <style>
-  :root { color-scheme:light dark; --foreground:light-dark(#242424,#ededed); --background:light-dark(#fafafa,#191919); --muted:light-dark(#eeeeec,#282828); --muted-foreground:light-dark(#60605d,#b4b4ad); --border:light-dark(#d2d2ce,#474743); --primary:light-dark(#242424,#ededed); --primary-foreground:light-dark(#fafafa,#191919); --viz-series-1:light-dark(#286a9a,#8dc6ef); --viz-series-2:light-dark(#aa5a26,#edaa72); }
+  :root { color-scheme:light dark;
+    --background:light-dark(rgb(255 255 255),rgb(24 24 24)); --foreground:light-dark(rgb(26 28 31),rgb(255 255 255));
+    --muted:color-mix(in srgb,var(--foreground) 6%,var(--background)); --muted-foreground:light-dark(rgb(26 28 31 / 62%),rgb(255 255 255 / 62%));
+    --border:light-dark(rgb(26 28 31 / 12%),rgb(255 255 255 / 14%));
+    --primary:light-dark(rgb(51 156 255),rgb(131 195 255)); --primary-foreground:light-dark(rgb(255 255 255),rgb(13 13 13));
+    --accent:light-dark(rgb(229 242 255),rgb(13 39 63)); --accent-foreground:light-dark(rgb(20 110 200),rgb(131 195 255));
+    --blue:light-dark(rgb(51 156 255),rgb(51 156 255)); --orange:light-dark(rgb(226 85 7),rgb(251 106 34));
+    --green:light-dark(rgb(0 140 56),rgb(64 201 119)); --red:light-dark(rgb(224 46 42),rgb(255 103 100));
+    --green-soft:color-mix(in srgb,var(--green) 12%,var(--background)); --red-soft:color-mix(in srgb,var(--red) 10%,var(--background));
+    --orange-soft:color-mix(in srgb,var(--orange) 14%,var(--background));
+    --viz-series-1:var(--blue); --viz-series-2:var(--orange); }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--background); color:var(--foreground); font:400 16px/1.5 system-ui,sans-serif; }
   main { max-width:1120px; margin:auto; padding:28px 24px 48px; }
-  h2,h3,strong { font-weight:500; }
+  h2,h3,h4,strong { font-weight:500; }
   h2 { margin:8px 0 16px; font-size:1.65em; }
-  h3 { margin:0 0 8px; font-size:1.15em; }
+  h3 { margin:0 0 8px; font-size:1.3em; }
+  h4 { margin:0 0 8px; font-size:1.05em; }
   p { margin:16px 0; }
   button,input,select { font:inherit; }
   button,select { cursor:pointer; }
@@ -41,18 +52,6 @@
   @media(max-width:520px) { main { padding:20px 16px 36px; } .btn { min-height:44px; } .form-select { min-height:44px; } }
   @media(prefers-reduced-motion:reduce) { .progress-bar { transition:none; } }
 </style>
-<script>
-// Optional local persistence. Failure or disabled storage never blocks the atlas.
-(() => {
-  const key='feedback-repair-atlas-v2';
-  let state=null;
-  try { state=JSON.parse(localStorage.getItem(key)); } catch {}
-  window.openai={widgetState:state,setWidgetState:async next=>{
-    window.openai.widgetState=next;
-    try { localStorage.setItem(key,JSON.stringify(next)); } catch {}
-  }};
-})();
-</script>
 </head>
 <body><main>
 <!--__ATLAS_FRAGMENT__-->
