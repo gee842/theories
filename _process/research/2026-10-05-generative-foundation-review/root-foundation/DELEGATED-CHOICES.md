@@ -97,6 +97,7 @@ On 19 October 2026 Ren answered for the register as a whole, “integrate all, t
 | D57 | the readings of capture through the rule (19 October) | adopted with exact scope: 二柄 a rule read from the share it selects, locked, a perturbation keeping its direction absorbed, left only by a change of how it reads (the divergence kept); 据有余而制不足 the proportional reading; 壹 one reading favouring at every share, every course locked from its second reading step; "the winner shapes the rule" the premise ReadsShare |
 | D58 | the readings of the meta-attractor's loop on the spine (20 October) | adopted with exact scope: the winners writing the next scorecard the premise `ReadsShare`; the winners forming the minds the scorecard reads `ReadsShare` on `mind`; the metric surviving its refutation `lock_outlives_loss` (the refutation lies beyond the share, unread); leaving 明, a reading of what lies beyond the share, or a change of the law; readers as minds a reading |
 | D59 | the readings of the step of invariance and its objections (20 October) | adopted with exact scope: “what wants its continuation” the centers of standpoints, whose own presupposition holds; a standpoint's order a positive weighting, partial in its weights and counting everything; the impartial order what every such weighting shares (C); partiality the mixed comparisons; a weight of zero a denial of scope; the de se question left open |
+| D60 | the readings of the de se question and of graded significance (20 October) | adopted with exact scope: a content held de se Lewis's self-ascribed property, held de dicto one proposition; a grade's positivity standing, the grade status; a formation's level the steps of its continuation admitted; priority a strictly increasing transform of levels, strictly concave up to a bound; sufficiency a transform rising no further from a threshold |
 
 <a id="1-生生与生成的空间--生生-and-the-generative-space"></a>
 ## 1. 生生 and the generative space
@@ -582,6 +583,7 @@ L1, S1 and S2 are D40-D42.
 - The same request, continued by board item RC (capture through the rule, the third gap RO found): D57 ([study section 213](BECOMING-RENEWAL-READING.md#213-capture-through-the-rule-rc)).
 - Ren's message of 20 October 2026 on OPENING's note on the meta-attractor, “this needs to be fully taken care of” ([words](../../../../sources/15-codex-theory-conversations/2026-10-20-meta-attractor-note-taken-care-of.md)): D58 ([study section 242](BECOMING-RENEWAL-READING.md#242-the-meta-attractors-loop-closed-on-the-spine-ma1)).
 - The line toward the aim of 20 October 2026 set by the session that started board item IV1 (no source record of the aim's words; none is quoted): D59 ([study section 256](BECOMING-RENEWAL-READING.md#256-the-step-of-invariance-what-it-reaches-across-standpoints-and-the-order-every-weighting-shares-iv1)).
+- The same line, continued by board item IV2 (the de se question, graded significance): D60 ([study section @N@](BECOMING-RENEWAL-READING.md#@SLUG@)).
 
 <a id="13-一个说明--one-account"></a>
 ## 13. One account
@@ -773,3 +775,17 @@ Where: the chapter [THE-STEP-OF-INVARIANCE](../../../../theories/becoming/chapte
 
 **What would change it.** A reading of wanting, argued from Ren's texts or from the work, under which what wants its continuation is not a center of a standpoint; an order of a standpoint that counts everything and is not monotone in inclusion; an argument that the impartial order is a privileged weighting (equal weights, for instance) rather than what all standpoints share, which would make numbers count.
 
+<a id="d60-the-readings-of-the-de-se-question-and-of-graded-significance"></a>
+### The readings of the de se question and of graded significance
+
+Where: the chapter [THE-STEP-OF-INVARIANCE](../../../../theories/becoming/chapters/THE-STEP-OF-INVARIANCE.md) §4.1, §6.1, §6.2, §6.5 and §7; the canonical chapter §8.9; the records [what-the-step-across-standpoints-reaches](../../../../theories/becoming/results/records/what-the-step-across-standpoints-reaches.md) and [graded-significance-and-priority](../../../../theories/becoming/results/records/graded-significance-and-priority.md); the [significance review's literature check](BECOMING-SIGNIFICANCE-REVIEW.md#de-se-and-grades-check); study section @N@ ([IV2](BECOMING-RENEWAL-READING.md#@SLUG@)). Decided in the one account of D45; continues D59.
+
+**Decision.** Adopted with exact scope.
+1. **De se and de dicto.** A content held de se is read as Lewis's self-ascribed property: each standpoint holds it of its own center (`selfAscribed`). A content held de dicto is one proposition from every standpoint (`shared`). The self's presupposition held de se is the property of the own closure (`ownClosure`). On these readings the egoist reply to Gewirth is the de se reading, the step across standpoints is the de dicto reading (`forced_iff_within_some`), and the two part exactly where centers' closures differ (`selfAscribed_iff_withinSome`).
+2. **Standing and status.** A grade's positivity is read as standing (whether a formation counts) and the grade as status (how much), after Kagan and Sebo. The step as argued gives standing.
+3. **Levels of continuation.** A formation's level in a course is read as the number of its listed items (steps) the course admits (`Weighting.level`). This is a reading of well-being as the length of admitted continuation, and it omits every other dimension of how a formation fares.
+4. **Priority and sufficiency.** Priority is read as a sum of a strictly increasing transform of levels, strictly concave up to a bound (`Weighting.prior`, `Weighting.ConcaveTo`). Sufficiency is read as a transform that rises no further from a threshold (`Weighting.SufficientAt`).
+
+**Reasons.** Each reading names the declarations it rests on and says no more than they prove. Lewis's reading is the standard one, and it makes the de se question a question about which content the presupposition has, which the laws can then answer conditionally. Standing and status is the distinction under which Williams's partiality and Taurek's numbers become one premise (invariance of status). Levels as admitted steps are the measure the comparison already reads, so priority and sufficiency are stated on the same items as C.
+
+**What would change it.** A reading of de se content that is not a self-ascribed property (Castañeda's quasi-indicator, for instance) under which the parting law fails. An argument that the step, as argued, applies to grades. A measure of how a formation fares that is not the length of admitted continuation, under which priority would be stated differently.
