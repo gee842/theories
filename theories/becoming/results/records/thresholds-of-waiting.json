@@ -267,7 +267,18 @@
         "Becoming.Tolerance.waitsAll_keeps",
         "Becoming.Tolerance.waitsAll_never_restores",
         "Becoming.Tolerance.withheld_kept",
-        "Becoming.Tolerance.worst_start"
+        "Becoming.Tolerance.worst_start",
+        "Becoming.Tolerance.countTrue",
+        "Becoming.Tolerance.countTrue_add_not",
+        "Becoming.Tolerance.allBut_iff_count",
+        "Becoming.Tolerance.allBut_sub_iff",
+        "Becoming.Tolerance.KeepsInclusion.course_iff",
+        "Becoming.Tolerance.web_tolerating",
+        "Becoming.Tolerance.web_activity_tolerating",
+        "Becoming.Tolerance.web_answers",
+        "Becoming.Tolerance.giftLevels",
+        "Becoming.Tolerance.giftWeb",
+        "Becoming.Tolerance.giftWeb_tolerating"
       ],
       "sha256": "bed16b437b52b61107503ee8f810041295e31ba7dd79194363c5e37999b60145"
     },

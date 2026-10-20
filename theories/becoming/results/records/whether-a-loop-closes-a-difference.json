@@ -275,7 +275,12 @@
         "Becoming.LoopReturn.sub_const_closes",
         "Becoming.LoopReturn.sub_const_open",
         "Becoming.LoopReturn.two_pow_succ_mul",
-        "Becoming.LoopReturn.whole_factors"
+        "Becoming.LoopReturn.whole_factors",
+        "Becoming.LoopReturn.factor_single",
+        "Becoming.LoopReturn.geomBound_eq_course",
+        "Becoming.LoopReturn.selfLoop_carried",
+        "Becoming.LoopReturn.selfLoop_gap",
+        "Becoming.LoopReturn.carried_around_course"
       ],
       "sha256": "66668b0f7a710e1cbf53539af6ee915cb78887b00c4d6773345c28f0696eb13d"
     },

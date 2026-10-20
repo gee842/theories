@@ -14,9 +14,10 @@ Adapted from R32's rebind (development/r32-folds/rebind.py); the logic is R32's,
   moved declaration is filed under the file of its module in R33's receipt (added, with a proof binding where the
   record has bindings, where the record had none); a reference to a joined module's file (at its old path or in
   the Lean history folder) is dropped once its declarations are filed.
-* The two records R33 superseded (a law through coupling, through changing coupling) are left as they are: their
-  references and bindings are the evidence of what was checked when they were current, and the history file of
-  each joined module holds its bytes.
+* The two records R33 superseded (a law through coupling, through changing coupling) keep their declaration lists,
+  canonical source and references to the joined modules' files in the Lean history folder (the evidence of what was
+  checked when they were current; each history file holds its module's bytes); only their bindings to changed Lean
+  files are rebound and their references to the changed docs re-pointed, so their pages render with their status.
 * Proof bindings to the Lean files R33 changed are rebound to the receipt; references to the files R33 changed
   are re-pointed where they matched BASE (the record was current), where the render log reports drift in sections
   the record cites, after reading the change (WHAT says what changed), and always for the records R33 wrote or
@@ -194,13 +195,12 @@ n = 0
 for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     d = json.load(open(f))
     rid = d['id']
-    if rid in SUPERSEDED:
-        continue
+    light = rid in SUPERSEDED
     before = json.dumps(d, ensure_ascii=False)
     refs = d.get('references', [])
     by = {r['path']: r for r in refs}
     moved, replaced = [], []
-    for law in d.get('laws', []) or []:
+    for law in ([] if light else d.get('laws', []) or []):
         if isinstance(law, dict) and law.get('declarations'):
             law['declarations'] = remap(law['declarations'], replaced)
     if isinstance(d.get('aliases'), list):
@@ -216,7 +216,7 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
         return by[path]
 
     for r in list(refs):
-        if not r.get('declarations'):
+        if not r.get('declarations') or light:
             continue
         keep = []
         for x in r['declarations']:
@@ -237,11 +237,11 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
         r['declarations'] = keep
     canon = d.get('canonical_source')
     new_canon = None
-    if canon in GONE_FILES:
+    if canon in GONE_FILES and not light:
         new_canon = FOLDED_INTO[canon]
         d['canonical_source'] = new_canon
     bound = {b['source'] for b in d.get('proof_bindings', [])}
-    if d.get('proof_bindings'):
+    if d.get('proof_bindings') and not light:
         for path in sorted(filed):
             if path not in bound and by[path].get('declarations'):
                 d['proof_bindings'].append(binding(path))
@@ -266,6 +266,8 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
             r['sha256'] = h(p)
             touched.add(p)
     for r in list(refs):
+        if light:
+            break
         if r['path'] in GONE_FILES:
             assert not r.get('declarations'), (rid, r['path'])
             refs.remove(r)
@@ -274,7 +276,7 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
                 and not any(b['source'] == r['path'] for b in d.get('proof_bindings', [])):
             refs.remove(r)
     paths_fixed = []
-    for c, k in list(strings(d)):
+    for c, k in ([] if light else list(strings(d))):
         if c[k] in GONE_FILES:
             new = FOLDED_INTO[c[k]]
             paths_fixed.append((short(c[k]), short(new)))
