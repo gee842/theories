@@ -219,12 +219,12 @@
         "Becoming.World.premised_counting_counted",
         "Becoming.counted_laws"
       ],
-      "sha256": "bdd45e529bf1a5b12d50938f2555f9e21c564882dcfa1371f6d0f60a20bd192e"
+      "sha256": "e30c5df0fc1d8bff5c0445854b89b2f70c24759c0bac460a9c2e09dd4851a3c6"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "role": "proof",
-      "sha256": "6ec66255167b62c371a69951659be416f36e223e133b241db12a2029392ed074",
+      "sha256": "2692f00f1534f3a09614292b3673b01b396618535e2cc39260d8e7292d50cfc4",
       "declarations": [
         "Becoming.World.active_of_coming_enclosed",
         "Becoming.World.active_of_coming_jointly",
@@ -295,7 +295,7 @@
         "Becoming.World.finite_binding_joint_iff_counted",
         "Becoming.World.standing_iff_counting_counted"
       ],
-      "sha256": "f626c7641e4e9950fbac7f2072017546a19394d4f3bb53e2c3e51df3ccd49db5"
+      "sha256": "94a875cbea7c13a037f39b72fb8033beea8e8256c05b0ea8b41f42af47a03c4f"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T060442.434639Z/verification.json",
@@ -305,12 +305,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
+      "sha256": "9183f3aae0a1a61ad84c80c61c36e796e0efe39f5b781a1a8982d1172c922eb9"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1"
+      "sha256": "b59c66d201fa010236a637bf2408fb10237225c4fc61aa6835c24ebe73f598c7"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -334,19 +334,25 @@
       "role": "receipt",
       "sha256": "a47fa21097a69fd4ab35cecaa0a5ccef5ebb0f2d37b166856bad77506cc4b9af",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T075104.511517Z/verification.json",
+      "role": "receipt",
+      "sha256": "1879ab8d7029858a91ba52ec407d12e537689903ad8d877b68281189fbb8d3ea",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusCounts.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T075104.511517Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.CensusCounts",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusBinding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T075104.511517Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.CensusBinding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -367,7 +373,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T075104.511517Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counting",
       "success_pointer": "/status",
       "success_value": "passed"

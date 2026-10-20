@@ -28,8 +28,8 @@
       "imported-archive": 23,
       "working-source": 856
     },
-    "working_named_theorem_lemma_occurrences": 22909,
-    "working_explicit_named_declaration_occurrences": 34363,
+    "working_named_theorem_lemma_occurrences": 22910,
+    "working_explicit_named_declaration_occurrences": 34364,
     "working_groups": {
       "abstraction": 45,
       "becoming-core": 272,
@@ -4721,7 +4721,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusBinding.lean",
-      "sha256": "f626c7641e4e9950fbac7f2072017546a19394d4f3bb53e2c3e51df3ccd49db5",
+      "sha256": "94a875cbea7c13a037f39b72fb8033beea8e8256c05b0ea8b41f42af47a03c4f",
       "role": "working-source",
       "group": "becoming-core",
       "receipt_layer": "core",
@@ -4737,7 +4737,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusCounts.lean",
-      "sha256": "bdd45e529bf1a5b12d50938f2555f9e21c564882dcfa1371f6d0f60a20bd192e",
+      "sha256": "e30c5df0fc1d8bff5c0445854b89b2f70c24759c0bac460a9c2e09dd4851a3c6",
       "role": "working-source",
       "group": "becoming-core",
       "receipt_layer": "core",
@@ -5150,7 +5150,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
-      "sha256": "6ec66255167b62c371a69951659be416f36e223e133b241db12a2029392ed074",
+      "sha256": "2692f00f1534f3a09614292b3673b01b396618535e2cc39260d8e7292d50cfc4",
       "role": "working-source",
       "group": "becoming-core",
       "receipt_layer": "core",
@@ -66875,6 +66875,2011 @@
       ],
       "declarations": [],
       "declaration_counts": {},
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "2692f00f1534f3a09614292b3673b01b396618535e2cc39260d8e7292d50cfc4": {
+      "byte_size": 308602,
+      "line_count": 5110,
+      "imports": [
+        "Becoming.Openness",
+        "Becoming.Witnesses",
+        "Becoming.CensusTable"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "web",
+          "qualified_name_hint": "Becoming.Queue.web",
+          "line": 222
+        },
+        {
+          "kind": "def",
+          "name": "embodied",
+          "qualified_name_hint": "Becoming.Queue.embodied",
+          "line": 230
+        },
+        {
+          "kind": "def",
+          "name": "lone",
+          "qualified_name_hint": "Becoming.Queue.lone",
+          "line": 234
+        },
+        {
+          "kind": "def",
+          "name": "joins",
+          "qualified_name_hint": "Becoming.Queue.joins",
+          "line": 237
+        },
+        {
+          "kind": "theorem",
+          "name": "lone_tally",
+          "qualified_name_hint": "Becoming.Queue.lone_tally",
+          "line": 240
+        },
+        {
+          "kind": "def",
+          "name": "queue",
+          "qualified_name_hint": "Becoming.World.queue",
+          "line": 249
+        },
+        {
+          "kind": "def",
+          "name": "embodiedQueue",
+          "qualified_name_hint": "Becoming.World.embodiedQueue",
+          "line": 253
+        },
+        {
+          "kind": "theorem",
+          "name": "queue_premised",
+          "qualified_name_hint": "Becoming.World.queue_premised",
+          "line": 264
+        },
+        {
+          "kind": "theorem",
+          "name": "embodiedQueue_premised",
+          "qualified_name_hint": "Becoming.World.embodiedQueue_premised",
+          "line": 273
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_free_witnessed",
+          "qualified_name_hint": "Becoming.World.counting_free_witnessed",
+          "line": 285
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_free",
+          "qualified_name_hint": "Becoming.World.counting_free",
+          "line": 308
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_binds_jointly",
+          "qualified_name_hint": "Becoming.World.counting_binds_jointly",
+          "line": 333
+        },
+        {
+          "kind": "theorem",
+          "name": "active_of_coming_jointly",
+          "qualified_name_hint": "Becoming.World.active_of_coming_jointly",
+          "line": 357
+        },
+        {
+          "kind": "theorem",
+          "name": "active_of_coming_taking",
+          "qualified_name_hint": "Becoming.World.active_of_coming_taking",
+          "line": 368
+        },
+        {
+          "kind": "inductive",
+          "name": "Relatum",
+          "qualified_name_hint": "Becoming.OpenQueue.Relatum",
+          "line": 406
+        },
+        {
+          "kind": "def",
+          "name": "web",
+          "qualified_name_hint": "Becoming.OpenQueue.web",
+          "line": 414
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.OpenQueue.flow",
+          "line": 428
+        },
+        {
+          "kind": "def",
+          "name": "index",
+          "qualified_name_hint": "Becoming.OpenQueue.index",
+          "line": 437
+        },
+        {
+          "kind": "theorem",
+          "name": "outside",
+          "qualified_name_hint": "Becoming.OpenQueue.outside",
+          "line": 442
+        },
+        {
+          "kind": "theorem",
+          "name": "member_inj",
+          "qualified_name_hint": "Becoming.OpenQueue.member_inj",
+          "line": 445
+        },
+        {
+          "kind": "theorem",
+          "name": "ground_not_member",
+          "qualified_name_hint": "Becoming.OpenQueue.ground_not_member",
+          "line": 448
+        },
+        {
+          "kind": "theorem",
+          "name": "front",
+          "qualified_name_hint": "Becoming.OpenQueue.front",
+          "line": 455
+        },
+        {
+          "kind": "theorem",
+          "name": "occupied",
+          "qualified_name_hint": "Becoming.OpenQueue.occupied",
+          "line": 460
+        },
+        {
+          "kind": "theorem",
+          "name": "joined",
+          "qualified_name_hint": "Becoming.OpenQueue.joined",
+          "line": 465
+        },
+        {
+          "kind": "def",
+          "name": "openQueue",
+          "qualified_name_hint": "Becoming.World.openQueue",
+          "line": 477
+        },
+        {
+          "kind": "theorem",
+          "name": "openQueue_census",
+          "qualified_name_hint": "Becoming.World.openQueue_census",
+          "line": 486
+        },
+        {
+          "kind": "theorem",
+          "name": "openQueue_counts",
+          "qualified_name_hint": "Becoming.World.openQueue_counts",
+          "line": 495
+        },
+        {
+          "kind": "theorem",
+          "name": "openQueue_holds",
+          "qualified_name_hint": "Becoming.World.openQueue_holds",
+          "line": 510
+        },
+        {
+          "kind": "theorem",
+          "name": "openQueue_premised",
+          "qualified_name_hint": "Becoming.World.openQueue_premised",
+          "line": 531
+        },
+        {
+          "kind": "theorem",
+          "name": "premised_counting_sound",
+          "qualified_name_hint": "Becoming.World.premised_counting_sound",
+          "line": 554
+        },
+        {
+          "kind": "theorem",
+          "name": "premised_counting_witnessed",
+          "qualified_name_hint": "Becoming.World.premised_counting_witnessed",
+          "line": 566
+        },
+        {
+          "kind": "theorem",
+          "name": "premised_counting",
+          "qualified_name_hint": "Becoming.World.premised_counting",
+          "line": 576
+        },
+        {
+          "kind": "theorem",
+          "name": "openQueue_not_binds",
+          "qualified_name_hint": "Becoming.World.openQueue_not_binds",
+          "line": 586
+        },
+        {
+          "kind": "theorem",
+          "name": "binds_arising",
+          "qualified_name_hint": "Becoming.World.binds_arising",
+          "line": 603
+        },
+        {
+          "kind": "theorem",
+          "name": "binds_adds",
+          "qualified_name_hint": "Becoming.World.binds_adds",
+          "line": 615
+        },
+        {
+          "kind": "def",
+          "name": "driven",
+          "qualified_name_hint": "Becoming.OpenQueue.driven",
+          "line": 632
+        },
+        {
+          "kind": "def",
+          "name": "drivenQueue",
+          "qualified_name_hint": "Becoming.World.drivenQueue",
+          "line": 647
+        },
+        {
+          "kind": "theorem",
+          "name": "drivenQueue_holds",
+          "qualified_name_hint": "Becoming.World.drivenQueue_holds",
+          "line": 657
+        },
+        {
+          "kind": "theorem",
+          "name": "taking_binds_counting",
+          "qualified_name_hint": "Becoming.World.taking_binds_counting",
+          "line": 678
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binds_counting",
+          "qualified_name_hint": "Becoming.World.enclosed_binds_counting",
+          "line": 715
+        },
+        {
+          "kind": "def",
+          "name": "BindsCounting",
+          "qualified_name_hint": "Becoming.World.BindsCounting",
+          "line": 743
+        },
+        {
+          "kind": "theorem",
+          "name": "queue_meets",
+          "qualified_name_hint": "Becoming.World.queue_meets",
+          "line": 748
+        },
+        {
+          "kind": "theorem",
+          "name": "embodiedQueue_meets",
+          "qualified_name_hint": "Becoming.World.embodiedQueue_meets",
+          "line": 762
+        },
+        {
+          "kind": "theorem",
+          "name": "openQueue_meets",
+          "qualified_name_hint": "Becoming.World.openQueue_meets",
+          "line": 777
+        },
+        {
+          "kind": "theorem",
+          "name": "drivenQueue_meets",
+          "qualified_name_hint": "Becoming.World.drivenQueue_meets",
+          "line": 792
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_under_sound",
+          "qualified_name_hint": "Becoming.World.counting_under_sound",
+          "line": 809
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_under_witnessed",
+          "qualified_name_hint": "Becoming.World.counting_under_witnessed",
+          "line": 826
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_under",
+          "qualified_name_hint": "Becoming.World.counting_under",
+          "line": 853
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_binds_iff",
+          "qualified_name_hint": "Becoming.World.counting_binds_iff",
+          "line": 861
+        },
+        {
+          "kind": "theorem",
+          "name": "length_le_stock",
+          "qualified_name_hint": "Becoming.World.length_le_stock",
+          "line": 895
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosure_bounds_change",
+          "qualified_name_hint": "Becoming.World.enclosure_bounds_change",
+          "line": 907
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosure_bounds_change_counted",
+          "qualified_name_hint": "Becoming.World.enclosure_bounds_change_counted",
+          "line": 932
+        },
+        {
+          "kind": "theorem",
+          "name": "active_of_coming_enclosed",
+          "qualified_name_hint": "Becoming.World.active_of_coming_enclosed",
+          "line": 953
+        },
+        {
+          "kind": "def",
+          "name": "store",
+          "qualified_name_hint": "Becoming.EnclosedQueue.store",
+          "line": 983
+        },
+        {
+          "kind": "def",
+          "name": "place",
+          "qualified_name_hint": "Becoming.EnclosedQueue.place",
+          "line": 988
+        },
+        {
+          "kind": "def",
+          "name": "level",
+          "qualified_name_hint": "Becoming.EnclosedQueue.level",
+          "line": 993
+        },
+        {
+          "kind": "def",
+          "name": "web",
+          "qualified_name_hint": "Becoming.EnclosedQueue.web",
+          "line": 997
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.EnclosedQueue.flow",
+          "line": 1006
+        },
+        {
+          "kind": "def",
+          "name": "span",
+          "qualified_name_hint": "Becoming.EnclosedQueue.span",
+          "line": 1012
+        },
+        {
+          "kind": "theorem",
+          "name": "place_pos",
+          "qualified_name_hint": "Becoming.EnclosedQueue.place_pos",
+          "line": 1017
+        },
+        {
+          "kind": "theorem",
+          "name": "place_zero",
+          "qualified_name_hint": "Becoming.EnclosedQueue.place_zero",
+          "line": 1025
+        },
+        {
+          "kind": "theorem",
+          "name": "total_place",
+          "qualified_name_hint": "Becoming.EnclosedQueue.total_place",
+          "line": 1029
+        },
+        {
+          "kind": "theorem",
+          "name": "still_flows",
+          "qualified_name_hint": "Becoming.EnclosedQueue.still_flows",
+          "line": 1045
+        },
+        {
+          "kind": "theorem",
+          "name": "still",
+          "qualified_name_hint": "Becoming.EnclosedQueue.still",
+          "line": 1050
+        },
+        {
+          "kind": "theorem",
+          "name": "empty_stays",
+          "qualified_name_hint": "Becoming.EnclosedQueue.empty_stays",
+          "line": 1057
+        },
+        {
+          "kind": "theorem",
+          "name": "outside_empty",
+          "qualified_name_hint": "Becoming.EnclosedQueue.outside_empty",
+          "line": 1067
+        },
+        {
+          "kind": "theorem",
+          "name": "idle",
+          "qualified_name_hint": "Becoming.EnclosedQueue.idle",
+          "line": 1071
+        },
+        {
+          "kind": "theorem",
+          "name": "quiet_same",
+          "qualified_name_hint": "Becoming.EnclosedQueue.quiet_same",
+          "line": 1078
+        },
+        {
+          "kind": "theorem",
+          "name": "within_span",
+          "qualified_name_hint": "Becoming.EnclosedQueue.within_span",
+          "line": 1098
+        },
+        {
+          "kind": "theorem",
+          "name": "moving_within",
+          "qualified_name_hint": "Becoming.EnclosedQueue.moving_within",
+          "line": 1111
+        },
+        {
+          "kind": "theorem",
+          "name": "closed",
+          "qualified_name_hint": "Becoming.EnclosedQueue.closed",
+          "line": 1119
+        },
+        {
+          "kind": "theorem",
+          "name": "span_distinct",
+          "qualified_name_hint": "Becoming.EnclosedQueue.span_distinct",
+          "line": 1123
+        },
+        {
+          "kind": "theorem",
+          "name": "busy",
+          "qualified_name_hint": "Becoming.EnclosedQueue.busy",
+          "line": 1127
+        },
+        {
+          "kind": "def",
+          "name": "enclosedQueue",
+          "qualified_name_hint": "Becoming.World.enclosedQueue",
+          "line": 1139
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_census",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_census",
+          "line": 1147
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_embodied",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_embodied",
+          "line": 1151
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_balanced",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_balanced",
+          "line": 1155
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_acting",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_acting",
+          "line": 1161
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_taking",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_taking",
+          "line": 1169
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_stock",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_stock",
+          "line": 1177
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_dissipatesOn",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_dissipatesOn",
+          "line": 1199
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_dissipative",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_dissipative",
+          "line": 1248
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_premised",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_premised",
+          "line": 1256
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_enclosed",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_enclosed",
+          "line": 1264
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_counting_sound",
+          "qualified_name_hint": "Becoming.World.enclosed_counting_sound",
+          "line": 1272
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_counting_witnessed",
+          "qualified_name_hint": "Becoming.World.enclosed_counting_witnessed",
+          "line": 1290
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_counting",
+          "qualified_name_hint": "Becoming.World.enclosed_counting",
+          "line": 1303
+        },
+        {
+          "kind": "def",
+          "name": "placesBelow",
+          "qualified_name_hint": "Becoming.placesBelow",
+          "line": 1316
+        },
+        {
+          "kind": "theorem",
+          "name": "mem_placesBelow",
+          "qualified_name_hint": "Becoming.mem_placesBelow",
+          "line": 1320
+        },
+        {
+          "kind": "theorem",
+          "name": "placesBelow_distinct",
+          "qualified_name_hint": "Becoming.placesBelow_distinct",
+          "line": 1341
+        },
+        {
+          "kind": "theorem",
+          "name": "total_placesBelow",
+          "qualified_name_hint": "Becoming.total_placesBelow",
+          "line": 1352
+        },
+        {
+          "kind": "theorem",
+          "name": "places_listed",
+          "qualified_name_hint": "Becoming.places_listed",
+          "line": 1362
+        },
+        {
+          "kind": "def",
+          "name": "size",
+          "qualified_name_hint": "Becoming.FiniteQueue.size",
+          "line": 1373
+        },
+        {
+          "kind": "def",
+          "name": "front",
+          "qualified_name_hint": "Becoming.FiniteQueue.front",
+          "line": 1376
+        },
+        {
+          "kind": "def",
+          "name": "web",
+          "qualified_name_hint": "Becoming.FiniteQueue.web",
+          "line": 1380
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.FiniteQueue.flow",
+          "line": 1388
+        },
+        {
+          "kind": "def",
+          "name": "alive",
+          "qualified_name_hint": "Becoming.FiniteQueue.alive",
+          "line": 1394
+        },
+        {
+          "kind": "theorem",
+          "name": "placed",
+          "qualified_name_hint": "Becoming.FiniteQueue.placed",
+          "line": 1400
+        },
+        {
+          "kind": "theorem",
+          "name": "front_val",
+          "qualified_name_hint": "Becoming.FiniteQueue.front_val",
+          "line": 1404
+        },
+        {
+          "kind": "def",
+          "name": "finiteQueue",
+          "qualified_name_hint": "Becoming.World.finiteQueue",
+          "line": 1414
+        },
+        {
+          "kind": "theorem",
+          "name": "finiteQueue_finite",
+          "qualified_name_hint": "Becoming.World.finiteQueue_finite",
+          "line": 1421
+        },
+        {
+          "kind": "theorem",
+          "name": "finiteQueue_census",
+          "qualified_name_hint": "Becoming.World.finiteQueue_census",
+          "line": 1424
+        },
+        {
+          "kind": "theorem",
+          "name": "finiteQueue_counts",
+          "qualified_name_hint": "Becoming.World.finiteQueue_counts",
+          "line": 1433
+        },
+        {
+          "kind": "theorem",
+          "name": "finiteQueue_premised",
+          "qualified_name_hint": "Becoming.World.finiteQueue_premised",
+          "line": 1448
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_counting_sound",
+          "qualified_name_hint": "Becoming.World.finite_counting_sound",
+          "line": 1487
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_counting_witnessed",
+          "qualified_name_hint": "Becoming.World.finite_counting_witnessed",
+          "line": 1493
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_counting",
+          "qualified_name_hint": "Becoming.World.finite_counting",
+          "line": 1504
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_iff_finite_counting",
+          "qualified_name_hint": "Becoming.World.enclosed_iff_finite_counting",
+          "line": 1514
+        },
+        {
+          "kind": "abbrev",
+          "name": "replaced",
+          "qualified_name_hint": "Becoming.World.replaced",
+          "line": 1523
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_dissipation_binds",
+          "qualified_name_hint": "Becoming.World.finite_dissipation_binds",
+          "line": 1528
+        },
+        {
+          "kind": "theorem",
+          "name": "replaced_attains",
+          "qualified_name_hint": "Becoming.World.replaced_attains",
+          "line": 1544
+        },
+        {
+          "kind": "theorem",
+          "name": "lpo_of_finite_ends",
+          "qualified_name_hint": "Becoming.World.lpo_of_finite_ends",
+          "line": 1559
+        },
+        {
+          "kind": "def",
+          "name": "EnclosedQueue.closing",
+          "qualified_name_hint": "Becoming.EnclosedQueue.closing",
+          "line": 1577
+        },
+        {
+          "kind": "def",
+          "name": "closingQueue",
+          "qualified_name_hint": "Becoming.World.closingQueue",
+          "line": 1586
+        },
+        {
+          "kind": "theorem",
+          "name": "closingQueue_balanced",
+          "qualified_name_hint": "Becoming.World.closingQueue_balanced",
+          "line": 1595
+        },
+        {
+          "kind": "theorem",
+          "name": "closing_flows",
+          "qualified_name_hint": "Becoming.World.closing_flows",
+          "line": 1607
+        },
+        {
+          "kind": "theorem",
+          "name": "closingQueue_enclosed",
+          "qualified_name_hint": "Becoming.World.closingQueue_enclosed",
+          "line": 1614
+        },
+        {
+          "kind": "theorem",
+          "name": "closingQueue_dissipative",
+          "qualified_name_hint": "Becoming.World.closingQueue_dissipative",
+          "line": 1624
+        },
+        {
+          "kind": "def",
+          "name": "BoundsChange",
+          "qualified_name_hint": "Becoming.World.BoundsChange",
+          "line": 1652
+        },
+        {
+          "kind": "theorem",
+          "name": "still_enclosed",
+          "qualified_name_hint": "Becoming.World.still_enclosed",
+          "line": 1656
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_counting_under_sound",
+          "qualified_name_hint": "Becoming.World.enclosed_counting_under_sound",
+          "line": 1664
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_counting_under_witnessed",
+          "qualified_name_hint": "Becoming.World.enclosed_counting_under_witnessed",
+          "line": 1682
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_counting_under",
+          "qualified_name_hint": "Becoming.World.enclosed_counting_under",
+          "line": 1740
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_change_bound_iff",
+          "qualified_name_hint": "Becoming.World.enclosed_change_bound_iff",
+          "line": 1753
+        },
+        {
+          "kind": "def",
+          "name": "slot",
+          "qualified_name_hint": "Becoming.Ring.slot",
+          "line": 1782
+        },
+        {
+          "kind": "theorem",
+          "name": "slot_step",
+          "qualified_name_hint": "Becoming.Ring.slot_step",
+          "line": 1789
+        },
+        {
+          "kind": "theorem",
+          "name": "slot_lt",
+          "qualified_name_hint": "Becoming.Ring.slot_lt",
+          "line": 1794
+        },
+        {
+          "kind": "theorem",
+          "name": "slot_add",
+          "qualified_name_hint": "Becoming.Ring.slot_add",
+          "line": 1802
+        },
+        {
+          "kind": "theorem",
+          "name": "slot_ne",
+          "qualified_name_hint": "Becoming.Ring.slot_ne",
+          "line": 1822
+        },
+        {
+          "kind": "theorem",
+          "name": "slot_apart",
+          "qualified_name_hint": "Becoming.Ring.slot_apart",
+          "line": 1832
+        },
+        {
+          "kind": "theorem",
+          "name": "slot_inj",
+          "qualified_name_hint": "Becoming.Ring.slot_inj",
+          "line": 1844
+        },
+        {
+          "kind": "def",
+          "name": "size",
+          "qualified_name_hint": "Becoming.Ring.size",
+          "line": 1854
+        },
+        {
+          "kind": "def",
+          "name": "seat",
+          "qualified_name_hint": "Becoming.Ring.seat",
+          "line": 1857
+        },
+        {
+          "kind": "def",
+          "name": "seated",
+          "qualified_name_hint": "Becoming.Ring.seated",
+          "line": 1863
+        },
+        {
+          "kind": "def",
+          "name": "holds",
+          "qualified_name_hint": "Becoming.Ring.holds",
+          "line": 1867
+        },
+        {
+          "kind": "def",
+          "name": "web",
+          "qualified_name_hint": "Becoming.Ring.web",
+          "line": 1875
+        },
+        {
+          "kind": "def",
+          "name": "stands",
+          "qualified_name_hint": "Becoming.Ring.stands",
+          "line": 1883
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.Ring.flow",
+          "line": 1888
+        },
+        {
+          "kind": "theorem",
+          "name": "occupied",
+          "qualified_name_hint": "Becoming.Ring.occupied",
+          "line": 1896
+        },
+        {
+          "kind": "theorem",
+          "name": "front_holds",
+          "qualified_name_hint": "Becoming.Ring.front_holds",
+          "line": 1901
+        },
+        {
+          "kind": "theorem",
+          "name": "span_fits",
+          "qualified_name_hint": "Becoming.Ring.span_fits",
+          "line": 1906
+        },
+        {
+          "kind": "theorem",
+          "name": "holds_iff",
+          "qualified_name_hint": "Becoming.Ring.holds_iff",
+          "line": 1914
+        },
+        {
+          "kind": "theorem",
+          "name": "census",
+          "qualified_name_hint": "Becoming.Ring.census",
+          "line": 1928
+        },
+        {
+          "kind": "theorem",
+          "name": "counts",
+          "qualified_name_hint": "Becoming.Ring.counts",
+          "line": 1937
+        },
+        {
+          "kind": "theorem",
+          "name": "taken_held",
+          "qualified_name_hint": "Becoming.Ring.taken_held",
+          "line": 1955
+        },
+        {
+          "kind": "theorem",
+          "name": "given_held",
+          "qualified_name_hint": "Becoming.Ring.given_held",
+          "line": 1960
+        },
+        {
+          "kind": "theorem",
+          "name": "Queue.lone_settles",
+          "qualified_name_hint": "Becoming.Queue.lone_settles",
+          "line": 1967
+        },
+        {
+          "kind": "def",
+          "name": "ring",
+          "qualified_name_hint": "Becoming.World.ring",
+          "line": 1982
+        },
+        {
+          "kind": "def",
+          "name": "embodiedRing",
+          "qualified_name_hint": "Becoming.World.embodiedRing",
+          "line": 1986
+        },
+        {
+          "kind": "def",
+          "name": "balancedRing",
+          "qualified_name_hint": "Becoming.World.balancedRing",
+          "line": 1991
+        },
+        {
+          "kind": "theorem",
+          "name": "ring_premised",
+          "qualified_name_hint": "Becoming.World.ring_premised",
+          "line": 2010
+        },
+        {
+          "kind": "theorem",
+          "name": "embodiedRing_premised",
+          "qualified_name_hint": "Becoming.World.embodiedRing_premised",
+          "line": 2018
+        },
+        {
+          "kind": "theorem",
+          "name": "balancedRing_holds",
+          "qualified_name_hint": "Becoming.World.balancedRing_holds",
+          "line": 2028
+        },
+        {
+          "kind": "theorem",
+          "name": "balancedRing_acting",
+          "qualified_name_hint": "Becoming.World.balancedRing_acting",
+          "line": 2042
+        },
+        {
+          "kind": "theorem",
+          "name": "ring_meets",
+          "qualified_name_hint": "Becoming.World.ring_meets",
+          "line": 2053
+        },
+        {
+          "kind": "theorem",
+          "name": "embodiedRing_meets",
+          "qualified_name_hint": "Becoming.World.embodiedRing_meets",
+          "line": 2067
+        },
+        {
+          "kind": "theorem",
+          "name": "balancedRing_meets",
+          "qualified_name_hint": "Becoming.World.balancedRing_meets",
+          "line": 2082
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_counting_under_sound",
+          "qualified_name_hint": "Becoming.World.finite_counting_under_sound",
+          "line": 2101
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_counting_under_witnessed",
+          "qualified_name_hint": "Becoming.World.finite_counting_under_witnessed",
+          "line": 2122
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_counting_under",
+          "qualified_name_hint": "Becoming.World.finite_counting_under",
+          "line": 2152
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_counting_binds_iff",
+          "qualified_name_hint": "Becoming.World.finite_counting_binds_iff",
+          "line": 2164
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_change_bound_iff",
+          "qualified_name_hint": "Becoming.World.finite_change_bound_iff",
+          "line": 2196
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_iff_finite_tally",
+          "qualified_name_hint": "Becoming.World.enclosed_iff_finite_tally",
+          "line": 2230
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_iff_finite_counting_under",
+          "qualified_name_hint": "Becoming.World.enclosed_iff_finite_counting_under",
+          "line": 2285
+        },
+        {
+          "kind": "theorem",
+          "name": "place_le",
+          "qualified_name_hint": "Becoming.EnclosedQueue.place_le",
+          "line": 2305
+        },
+        {
+          "kind": "theorem",
+          "name": "total_place_le",
+          "qualified_name_hint": "Becoming.EnclosedQueue.total_place_le",
+          "line": 2313
+        },
+        {
+          "kind": "theorem",
+          "name": "total_place_pos",
+          "qualified_name_hint": "Becoming.EnclosedQueue.total_place_pos",
+          "line": 2319
+        },
+        {
+          "kind": "def",
+          "name": "excess",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.excess",
+          "line": 2331
+        },
+        {
+          "kind": "def",
+          "name": "level",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.level",
+          "line": 2335
+        },
+        {
+          "kind": "def",
+          "name": "exchange",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.exchange",
+          "line": 2340
+        },
+        {
+          "kind": "def",
+          "name": "web",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.web",
+          "line": 2345
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.flow",
+          "line": 2356
+        },
+        {
+          "kind": "theorem",
+          "name": "excess_le",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.excess_le",
+          "line": 2363
+        },
+        {
+          "kind": "theorem",
+          "name": "level_le",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.level_le",
+          "line": 2368
+        },
+        {
+          "kind": "theorem",
+          "name": "still_flows",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.still_flows",
+          "line": 2373
+        },
+        {
+          "kind": "theorem",
+          "name": "still",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.still",
+          "line": 2381
+        },
+        {
+          "kind": "theorem",
+          "name": "idle",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.idle",
+          "line": 2388
+        },
+        {
+          "kind": "theorem",
+          "name": "busy",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.busy",
+          "line": 2398
+        },
+        {
+          "kind": "theorem",
+          "name": "moving_within",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.moving_within",
+          "line": 2407
+        },
+        {
+          "kind": "theorem",
+          "name": "closed",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.closed",
+          "line": 2416
+        },
+        {
+          "kind": "theorem",
+          "name": "dependent_any_activity",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.dependent_any_activity",
+          "line": 2423
+        },
+        {
+          "kind": "theorem",
+          "name": "transmits_any_flow",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.transmits_any_flow",
+          "line": 2430
+        },
+        {
+          "kind": "theorem",
+          "name": "not_closed",
+          "qualified_name_hint": "Becoming.OnceClosedQueue.not_closed",
+          "line": 2436
+        },
+        {
+          "kind": "def",
+          "name": "onceClosedQueue",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue",
+          "line": 2450
+        },
+        {
+          "kind": "theorem",
+          "name": "onceClosedQueue_census",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue_census",
+          "line": 2458
+        },
+        {
+          "kind": "theorem",
+          "name": "onceClosedQueue_embodied",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue_embodied",
+          "line": 2462
+        },
+        {
+          "kind": "theorem",
+          "name": "onceClosedQueue_balanced",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue_balanced",
+          "line": 2466
+        },
+        {
+          "kind": "theorem",
+          "name": "onceClosedQueue_acting",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue_acting",
+          "line": 2473
+        },
+        {
+          "kind": "theorem",
+          "name": "onceClosedQueue_taking",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue_taking",
+          "line": 2479
+        },
+        {
+          "kind": "theorem",
+          "name": "onceClosedQueue_exceeds",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue_exceeds",
+          "line": 2488
+        },
+        {
+          "kind": "theorem",
+          "name": "onceClosedQueue_dissipative",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue_dissipative",
+          "line": 2519
+        },
+        {
+          "kind": "theorem",
+          "name": "onceClosedQueue_premised",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue_premised",
+          "line": 2546
+        },
+        {
+          "kind": "theorem",
+          "name": "onceClosedQueue_binds",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue_binds",
+          "line": 2561
+        },
+        {
+          "kind": "theorem",
+          "name": "CountsOf.arising_pos",
+          "qualified_name_hint": "Becoming.World.CountsOf.arising_pos",
+          "line": 2591
+        },
+        {
+          "kind": "theorem",
+          "name": "binds_arising_counted",
+          "qualified_name_hint": "Becoming.World.binds_arising_counted",
+          "line": 2597
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_counting_sound",
+          "qualified_name_hint": "Becoming.World.binding_counting_sound",
+          "line": 2605
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_counting_witnessed",
+          "qualified_name_hint": "Becoming.World.binding_counting_witnessed",
+          "line": 2613
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_counting",
+          "qualified_name_hint": "Becoming.World.binding_counting",
+          "line": 2628
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_contingent",
+          "qualified_name_hint": "Becoming.World.binding_contingent",
+          "line": 2638
+        },
+        {
+          "kind": "def",
+          "name": "saturated",
+          "qualified_name_hint": "Becoming.Web.saturated",
+          "line": 2667
+        },
+        {
+          "kind": "theorem",
+          "name": "saturated_dependent",
+          "qualified_name_hint": "Becoming.Web.saturated_dependent",
+          "line": 2671
+        },
+        {
+          "kind": "theorem",
+          "name": "Flow.transmits_saturated",
+          "qualified_name_hint": "Becoming.Flow.transmits_saturated",
+          "line": 2678
+        },
+        {
+          "kind": "theorem",
+          "name": "Tally.after_pos",
+          "qualified_name_hint": "Becoming.Tally.after_pos",
+          "line": 2683
+        },
+        {
+          "kind": "def",
+          "name": "saturated",
+          "qualified_name_hint": "Becoming.World.saturated",
+          "line": 2693
+        },
+        {
+          "kind": "theorem",
+          "name": "Premised.saturated",
+          "qualified_name_hint": "Becoming.World.Premised.saturated",
+          "line": 2702
+        },
+        {
+          "kind": "theorem",
+          "name": "counts_active",
+          "qualified_name_hint": "Becoming.World.counts_active",
+          "line": 2712
+        },
+        {
+          "kind": "theorem",
+          "name": "counts_arising",
+          "qualified_name_hint": "Becoming.World.counts_arising",
+          "line": 2718
+        },
+        {
+          "kind": "theorem",
+          "name": "CountsOf.active_pos",
+          "qualified_name_hint": "Becoming.World.CountsOf.active_pos",
+          "line": 2727
+        },
+        {
+          "kind": "theorem",
+          "name": "CountsOf.company_binding",
+          "qualified_name_hint": "Becoming.World.CountsOf.company_binding",
+          "line": 2734
+        },
+        {
+          "kind": "theorem",
+          "name": "CountsOf.acts_of_binding",
+          "qualified_name_hint": "Becoming.World.CountsOf.acts_of_binding",
+          "line": 2748
+        },
+        {
+          "kind": "theorem",
+          "name": "CountsOf.joint_of_binding",
+          "qualified_name_hint": "Becoming.World.CountsOf.joint_of_binding",
+          "line": 2763
+        },
+        {
+          "kind": "theorem",
+          "name": "level_le",
+          "qualified_name_hint": "Becoming.OpenQueue.level_le",
+          "line": 2782
+        },
+        {
+          "kind": "def",
+          "name": "exchanged",
+          "qualified_name_hint": "Becoming.LossyQueue.exchanged",
+          "line": 2794
+        },
+        {
+          "kind": "def",
+          "name": "lost",
+          "qualified_name_hint": "Becoming.LossyQueue.lost",
+          "line": 2800
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.LossyQueue.flow",
+          "line": 2807
+        },
+        {
+          "kind": "theorem",
+          "name": "moving",
+          "qualified_name_hint": "Becoming.LossyQueue.moving",
+          "line": 2819
+        },
+        {
+          "kind": "def",
+          "name": "lossyQueue",
+          "qualified_name_hint": "Becoming.World.lossyQueue",
+          "line": 2833
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyQueue_dissipative",
+          "qualified_name_hint": "Becoming.World.lossyQueue_dissipative",
+          "line": 2845
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyQueue_taking",
+          "qualified_name_hint": "Becoming.World.lossyQueue_taking",
+          "line": 2873
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyQueue_acting",
+          "qualified_name_hint": "Becoming.World.lossyQueue_acting",
+          "line": 2881
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyQueue_binds",
+          "qualified_name_hint": "Becoming.World.lossyQueue_binds",
+          "line": 2896
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyQueue_binding",
+          "qualified_name_hint": "Becoming.World.lossyQueue_binding",
+          "line": 2947
+        },
+        {
+          "kind": "def",
+          "name": "level",
+          "qualified_name_hint": "Becoming.RelayQueue.level",
+          "line": 2974
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.RelayQueue.flow",
+          "line": 2982
+        },
+        {
+          "kind": "theorem",
+          "name": "up_to",
+          "qualified_name_hint": "Becoming.RelayQueue.up_to",
+          "line": 2995
+        },
+        {
+          "kind": "theorem",
+          "name": "after",
+          "qualified_name_hint": "Becoming.RelayQueue.after",
+          "line": 3009
+        },
+        {
+          "kind": "def",
+          "name": "relayQueue",
+          "qualified_name_hint": "Becoming.World.relayQueue",
+          "line": 3031
+        },
+        {
+          "kind": "theorem",
+          "name": "relayQueue_balanced",
+          "qualified_name_hint": "Becoming.World.relayQueue_balanced",
+          "line": 3040
+        },
+        {
+          "kind": "theorem",
+          "name": "relayQueue_dissipative",
+          "qualified_name_hint": "Becoming.World.relayQueue_dissipative",
+          "line": 3050
+        },
+        {
+          "kind": "theorem",
+          "name": "relayQueue_acts",
+          "qualified_name_hint": "Becoming.World.relayQueue_acts",
+          "line": 3075
+        },
+        {
+          "kind": "theorem",
+          "name": "relayQueue_binds",
+          "qualified_name_hint": "Becoming.World.relayQueue_binds",
+          "line": 3099
+        },
+        {
+          "kind": "theorem",
+          "name": "relayQueue_binding",
+          "qualified_name_hint": "Becoming.World.relayQueue_binding",
+          "line": 3127
+        },
+        {
+          "kind": "theorem",
+          "name": "onceClosedQueue_binding",
+          "qualified_name_hint": "Becoming.World.onceClosedQueue_binding",
+          "line": 3155
+        },
+        {
+          "kind": "theorem",
+          "name": "openQueue_saturated_binding",
+          "qualified_name_hint": "Becoming.World.openQueue_saturated_binding",
+          "line": 3179
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_counting_under_sound",
+          "qualified_name_hint": "Becoming.World.binding_counting_under_sound",
+          "line": 3208
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_counting_under_witnessed",
+          "qualified_name_hint": "Becoming.World.binding_counting_under_witnessed",
+          "line": 3227
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_counting_under",
+          "qualified_name_hint": "Becoming.World.binding_counting_under",
+          "line": 3304
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_activity_iff",
+          "qualified_name_hint": "Becoming.World.binding_activity_iff",
+          "line": 3326
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_arising_iff",
+          "qualified_name_hint": "Becoming.World.binding_arising_iff",
+          "line": 3356
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_joint_iff",
+          "qualified_name_hint": "Becoming.World.binding_joint_iff",
+          "line": 3377
+        },
+        {
+          "kind": "theorem",
+          "name": "level_le",
+          "qualified_name_hint": "Becoming.EnclosedQueue.level_le",
+          "line": 3414
+        },
+        {
+          "kind": "theorem",
+          "name": "finiteQueue_saturated_binds",
+          "qualified_name_hint": "Becoming.World.finiteQueue_saturated_binds",
+          "line": 3430
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_counting_sound",
+          "qualified_name_hint": "Becoming.World.finite_binding_counting_sound",
+          "line": 3464
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_counting_witnessed",
+          "qualified_name_hint": "Becoming.World.finite_binding_counting_witnessed",
+          "line": 3483
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_counting",
+          "qualified_name_hint": "Becoming.World.finite_binding_counting",
+          "line": 3500
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosedQueue_saturated_binds",
+          "qualified_name_hint": "Becoming.World.enclosedQueue_saturated_binds",
+          "line": 3528
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_counting_sound",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_sound",
+          "line": 3561
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_counting_witnessed",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_witnessed",
+          "line": 3579
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_counting",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_counting",
+          "line": 3596
+        },
+        {
+          "kind": "def",
+          "name": "taken",
+          "qualified_name_hint": "Becoming.RelayRing.taken",
+          "line": 3617
+        },
+        {
+          "kind": "def",
+          "name": "given",
+          "qualified_name_hint": "Becoming.RelayRing.given",
+          "line": 3623
+        },
+        {
+          "kind": "def",
+          "name": "level",
+          "qualified_name_hint": "Becoming.RelayRing.level",
+          "line": 3629
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.RelayRing.flow",
+          "line": 3636
+        },
+        {
+          "kind": "abbrev",
+          "name": "sink",
+          "qualified_name_hint": "Becoming.RelayRing.sink",
+          "line": 3644
+        },
+        {
+          "kind": "abbrev",
+          "name": "source",
+          "qualified_name_hint": "Becoming.RelayRing.source",
+          "line": 3647
+        },
+        {
+          "kind": "def",
+          "name": "relayRing",
+          "qualified_name_hint": "Becoming.World.relayRing",
+          "line": 3657
+        },
+        {
+          "kind": "theorem",
+          "name": "relayRing_balanced",
+          "qualified_name_hint": "Becoming.World.relayRing_balanced",
+          "line": 3666
+        },
+        {
+          "kind": "theorem",
+          "name": "relayRing_dissipative",
+          "qualified_name_hint": "Becoming.World.relayRing_dissipative",
+          "line": 3675
+        },
+        {
+          "kind": "theorem",
+          "name": "relayRing_acts",
+          "qualified_name_hint": "Becoming.World.relayRing_acts",
+          "line": 3699
+        },
+        {
+          "kind": "theorem",
+          "name": "relayRing_binds",
+          "qualified_name_hint": "Becoming.World.relayRing_binds",
+          "line": 3721
+        },
+        {
+          "kind": "theorem",
+          "name": "relayRing_binding",
+          "qualified_name_hint": "Becoming.World.relayRing_binding",
+          "line": 3748
+        },
+        {
+          "kind": "def",
+          "name": "exchanged",
+          "qualified_name_hint": "Becoming.LossyRing.exchanged",
+          "line": 3779
+        },
+        {
+          "kind": "def",
+          "name": "lost",
+          "qualified_name_hint": "Becoming.LossyRing.lost",
+          "line": 3783
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.LossyRing.flow",
+          "line": 3788
+        },
+        {
+          "kind": "theorem",
+          "name": "moving",
+          "qualified_name_hint": "Becoming.LossyRing.moving",
+          "line": 3796
+        },
+        {
+          "kind": "def",
+          "name": "lossyRing",
+          "qualified_name_hint": "Becoming.World.lossyRing",
+          "line": 3810
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyRing_dissipative",
+          "qualified_name_hint": "Becoming.World.lossyRing_dissipative",
+          "line": 3821
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyRing_taking",
+          "qualified_name_hint": "Becoming.World.lossyRing_taking",
+          "line": 3843
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyRing_acting",
+          "qualified_name_hint": "Becoming.World.lossyRing_acting",
+          "line": 3850
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyRing_binds",
+          "qualified_name_hint": "Becoming.World.lossyRing_binds",
+          "line": 3863
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyRing_binding",
+          "qualified_name_hint": "Becoming.World.lossyRing_binding",
+          "line": 3892
+        },
+        {
+          "kind": "def",
+          "name": "exchanged",
+          "qualified_name_hint": "Becoming.Ring.exchanged",
+          "line": 3919
+        },
+        {
+          "kind": "def",
+          "name": "exchanging",
+          "qualified_name_hint": "Becoming.Ring.exchanging",
+          "line": 3924
+        },
+        {
+          "kind": "def",
+          "name": "exchangingRing",
+          "qualified_name_hint": "Becoming.World.exchangingRing",
+          "line": 3937
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingRing_balanced",
+          "qualified_name_hint": "Becoming.World.exchangingRing_balanced",
+          "line": 3946
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingRing_taking",
+          "qualified_name_hint": "Becoming.World.exchangingRing_taking",
+          "line": 3951
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingRing_acting",
+          "qualified_name_hint": "Becoming.World.exchangingRing_acting",
+          "line": 3962
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingRing_binds",
+          "qualified_name_hint": "Becoming.World.exchangingRing_binds",
+          "line": 3982
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingRing_binding",
+          "qualified_name_hint": "Becoming.World.exchangingRing_binding",
+          "line": 4009
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_census",
+          "qualified_name_hint": "Becoming.World.finite_binding_census",
+          "line": 4034
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_counting_under_sound",
+          "qualified_name_hint": "Becoming.World.finite_binding_counting_under_sound",
+          "line": 4047
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_counting_under_witnessed",
+          "qualified_name_hint": "Becoming.World.finite_binding_counting_under_witnessed",
+          "line": 4081
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_counting_under",
+          "qualified_name_hint": "Becoming.World.finite_binding_counting_under",
+          "line": 4166
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_activity_iff",
+          "qualified_name_hint": "Becoming.World.finite_binding_activity_iff",
+          "line": 4187
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_arising_iff",
+          "qualified_name_hint": "Becoming.World.finite_binding_arising_iff",
+          "line": 4218
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_joint_iff",
+          "qualified_name_hint": "Becoming.World.finite_binding_joint_iff",
+          "line": 4240
+        },
+        {
+          "kind": "theorem",
+          "name": "relayQueue_enclosed",
+          "qualified_name_hint": "Becoming.World.relayQueue_enclosed",
+          "line": 4289
+        },
+        {
+          "kind": "theorem",
+          "name": "lossyQueue_enclosed",
+          "qualified_name_hint": "Becoming.World.lossyQueue_enclosed",
+          "line": 4300
+        },
+        {
+          "kind": "def",
+          "name": "exchanged",
+          "qualified_name_hint": "Becoming.EnclosedQueue.exchanged",
+          "line": 4328
+        },
+        {
+          "kind": "def",
+          "name": "exchanging",
+          "qualified_name_hint": "Becoming.EnclosedQueue.exchanging",
+          "line": 4333
+        },
+        {
+          "kind": "def",
+          "name": "exchangingQueue",
+          "qualified_name_hint": "Becoming.World.exchangingQueue",
+          "line": 4346
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingQueue_balanced",
+          "qualified_name_hint": "Becoming.World.exchangingQueue_balanced",
+          "line": 4355
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingQueue_taking",
+          "qualified_name_hint": "Becoming.World.exchangingQueue_taking",
+          "line": 4361
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingQueue_acting",
+          "qualified_name_hint": "Becoming.World.exchangingQueue_acting",
+          "line": 4370
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingQueue_enclosed",
+          "qualified_name_hint": "Becoming.World.exchangingQueue_enclosed",
+          "line": 4381
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingQueue_binds",
+          "qualified_name_hint": "Becoming.World.exchangingQueue_binds",
+          "line": 4394
+        },
+        {
+          "kind": "theorem",
+          "name": "exchangingQueue_binding",
+          "qualified_name_hint": "Becoming.World.exchangingQueue_binding",
+          "line": 4420
+        },
+        {
+          "kind": "theorem",
+          "name": "last_positive",
+          "qualified_name_hint": "Becoming.last_positive",
+          "line": 4442
+        },
+        {
+          "kind": "theorem",
+          "name": "occupied_from",
+          "qualified_name_hint": "Becoming.Tally.occupied_from",
+          "line": 4468
+        },
+        {
+          "kind": "def",
+          "name": "spare",
+          "qualified_name_hint": "Becoming.EnclosedQueue.spare",
+          "line": 4497
+        },
+        {
+          "kind": "def",
+          "name": "held",
+          "qualified_name_hint": "Becoming.EnclosedQueue.held",
+          "line": 4501
+        },
+        {
+          "kind": "def",
+          "name": "sheddingWeb",
+          "qualified_name_hint": "Becoming.EnclosedQueue.sheddingWeb",
+          "line": 4505
+        },
+        {
+          "kind": "def",
+          "name": "shedding",
+          "qualified_name_hint": "Becoming.EnclosedQueue.shedding",
+          "line": 4511
+        },
+        {
+          "kind": "theorem",
+          "name": "sub_add_le",
+          "qualified_name_hint": "Becoming.EnclosedQueue.sub_add_le",
+          "line": 4519
+        },
+        {
+          "kind": "theorem",
+          "name": "store_succ_le",
+          "qualified_name_hint": "Becoming.EnclosedQueue.store_succ_le",
+          "line": 4524
+        },
+        {
+          "kind": "theorem",
+          "name": "spare_zero",
+          "qualified_name_hint": "Becoming.EnclosedQueue.spare_zero",
+          "line": 4528
+        },
+        {
+          "kind": "theorem",
+          "name": "held_outside",
+          "qualified_name_hint": "Becoming.EnclosedQueue.held_outside",
+          "line": 4532
+        },
+        {
+          "kind": "theorem",
+          "name": "shedding_closed",
+          "qualified_name_hint": "Becoming.EnclosedQueue.shedding_closed",
+          "line": 4542
+        },
+        {
+          "kind": "theorem",
+          "name": "shedding_flows",
+          "qualified_name_hint": "Becoming.EnclosedQueue.shedding_flows",
+          "line": 4554
+        },
+        {
+          "kind": "def",
+          "name": "sheddingQueue",
+          "qualified_name_hint": "Becoming.World.sheddingQueue",
+          "line": 4577
+        },
+        {
+          "kind": "theorem",
+          "name": "sheddingQueue_balanced",
+          "qualified_name_hint": "Becoming.World.sheddingQueue_balanced",
+          "line": 4586
+        },
+        {
+          "kind": "theorem",
+          "name": "sheddingQueue_embodied",
+          "qualified_name_hint": "Becoming.World.sheddingQueue_embodied",
+          "line": 4592
+        },
+        {
+          "kind": "theorem",
+          "name": "sheddingQueue_enclosed",
+          "qualified_name_hint": "Becoming.World.sheddingQueue_enclosed",
+          "line": 4602
+        },
+        {
+          "kind": "theorem",
+          "name": "sheddingQueue_level_le",
+          "qualified_name_hint": "Becoming.World.sheddingQueue_level_le",
+          "line": 4614
+        },
+        {
+          "kind": "theorem",
+          "name": "sheddingQueue_exceeds",
+          "qualified_name_hint": "Becoming.World.sheddingQueue_exceeds",
+          "line": 4620
+        },
+        {
+          "kind": "theorem",
+          "name": "sheddingQueue_dissipative",
+          "qualified_name_hint": "Becoming.World.sheddingQueue_dissipative",
+          "line": 4662
+        },
+        {
+          "kind": "theorem",
+          "name": "sheddingQueue_binds",
+          "qualified_name_hint": "Becoming.World.sheddingQueue_binds",
+          "line": 4713
+        },
+        {
+          "kind": "theorem",
+          "name": "sheddingQueue_binding",
+          "qualified_name_hint": "Becoming.World.sheddingQueue_binding",
+          "line": 4747
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_counting_under_sound",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_under_sound",
+          "line": 4771
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_counting_under_witnessed",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_under_witnessed",
+          "line": 4796
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_counting_under",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_under",
+          "line": 4894
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_activity_iff",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_activity_iff",
+          "line": 4915
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_arising_iff",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_arising_iff",
+          "line": 4947
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_joint_iff",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_joint_iff",
+          "line": 4970
+        },
+        {
+          "kind": "def",
+          "name": "Shown",
+          "qualified_name_hint": "Becoming.TallyWorlds.Shown",
+          "line": 5041
+        },
+        {
+          "kind": "theorem",
+          "name": "shown_iff_tally",
+          "qualified_name_hint": "Becoming.TallyWorlds.shown_iff_tally",
+          "line": 5049
+        },
+        {
+          "kind": "theorem",
+          "name": "shown_iff_balance",
+          "qualified_name_hint": "Becoming.TallyWorlds.shown_iff_balance",
+          "line": 5060
+        },
+        {
+          "kind": "theorem",
+          "name": "balance_not_shown",
+          "qualified_name_hint": "Becoming.TallyWorlds.balance_not_shown",
+          "line": 5066
+        },
+        {
+          "kind": "theorem",
+          "name": "occurrences_congr",
+          "qualified_name_hint": "Becoming.TallyWorlds.occurrences_congr",
+          "line": 5072
+        },
+        {
+          "kind": "theorem",
+          "name": "lpo_of_census_ends",
+          "qualified_name_hint": "Becoming.TallyWorlds.lpo_of_census_ends",
+          "line": 5085
+        }
+      ],
+      "declaration_counts": {
+        "abbrev": 3,
+        "def": 77,
+        "inductive": 1,
+        "theorem": 249
+      },
       "textual_markers": {
         "sorry": [],
         "admit": [],
@@ -156409,2005 +158414,6 @@
       },
       "print_axioms_commands": 0
     },
-    "6ec66255167b62c371a69951659be416f36e223e133b241db12a2029392ed074": {
-      "byte_size": 307893,
-      "line_count": 5099,
-      "imports": [
-        "Becoming.Openness",
-        "Becoming.Witnesses",
-        "Becoming.CensusTable"
-      ],
-      "declarations": [
-        {
-          "kind": "def",
-          "name": "web",
-          "qualified_name_hint": "Becoming.Queue.web",
-          "line": 221
-        },
-        {
-          "kind": "def",
-          "name": "embodied",
-          "qualified_name_hint": "Becoming.Queue.embodied",
-          "line": 229
-        },
-        {
-          "kind": "def",
-          "name": "lone",
-          "qualified_name_hint": "Becoming.Queue.lone",
-          "line": 233
-        },
-        {
-          "kind": "def",
-          "name": "joins",
-          "qualified_name_hint": "Becoming.Queue.joins",
-          "line": 236
-        },
-        {
-          "kind": "theorem",
-          "name": "lone_tally",
-          "qualified_name_hint": "Becoming.Queue.lone_tally",
-          "line": 239
-        },
-        {
-          "kind": "def",
-          "name": "queue",
-          "qualified_name_hint": "Becoming.World.queue",
-          "line": 248
-        },
-        {
-          "kind": "def",
-          "name": "embodiedQueue",
-          "qualified_name_hint": "Becoming.World.embodiedQueue",
-          "line": 252
-        },
-        {
-          "kind": "theorem",
-          "name": "queue_premised",
-          "qualified_name_hint": "Becoming.World.queue_premised",
-          "line": 263
-        },
-        {
-          "kind": "theorem",
-          "name": "embodiedQueue_premised",
-          "qualified_name_hint": "Becoming.World.embodiedQueue_premised",
-          "line": 272
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_free_witnessed",
-          "qualified_name_hint": "Becoming.World.counting_free_witnessed",
-          "line": 284
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_free",
-          "qualified_name_hint": "Becoming.World.counting_free",
-          "line": 307
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_binds_jointly",
-          "qualified_name_hint": "Becoming.World.counting_binds_jointly",
-          "line": 332
-        },
-        {
-          "kind": "theorem",
-          "name": "active_of_coming_jointly",
-          "qualified_name_hint": "Becoming.World.active_of_coming_jointly",
-          "line": 356
-        },
-        {
-          "kind": "theorem",
-          "name": "active_of_coming_taking",
-          "qualified_name_hint": "Becoming.World.active_of_coming_taking",
-          "line": 367
-        },
-        {
-          "kind": "inductive",
-          "name": "Relatum",
-          "qualified_name_hint": "Becoming.OpenQueue.Relatum",
-          "line": 405
-        },
-        {
-          "kind": "def",
-          "name": "web",
-          "qualified_name_hint": "Becoming.OpenQueue.web",
-          "line": 413
-        },
-        {
-          "kind": "def",
-          "name": "flow",
-          "qualified_name_hint": "Becoming.OpenQueue.flow",
-          "line": 427
-        },
-        {
-          "kind": "def",
-          "name": "index",
-          "qualified_name_hint": "Becoming.OpenQueue.index",
-          "line": 436
-        },
-        {
-          "kind": "theorem",
-          "name": "outside",
-          "qualified_name_hint": "Becoming.OpenQueue.outside",
-          "line": 441
-        },
-        {
-          "kind": "theorem",
-          "name": "member_inj",
-          "qualified_name_hint": "Becoming.OpenQueue.member_inj",
-          "line": 444
-        },
-        {
-          "kind": "theorem",
-          "name": "ground_not_member",
-          "qualified_name_hint": "Becoming.OpenQueue.ground_not_member",
-          "line": 447
-        },
-        {
-          "kind": "theorem",
-          "name": "front",
-          "qualified_name_hint": "Becoming.OpenQueue.front",
-          "line": 454
-        },
-        {
-          "kind": "theorem",
-          "name": "occupied",
-          "qualified_name_hint": "Becoming.OpenQueue.occupied",
-          "line": 459
-        },
-        {
-          "kind": "theorem",
-          "name": "joined",
-          "qualified_name_hint": "Becoming.OpenQueue.joined",
-          "line": 464
-        },
-        {
-          "kind": "def",
-          "name": "openQueue",
-          "qualified_name_hint": "Becoming.World.openQueue",
-          "line": 476
-        },
-        {
-          "kind": "theorem",
-          "name": "openQueue_census",
-          "qualified_name_hint": "Becoming.World.openQueue_census",
-          "line": 485
-        },
-        {
-          "kind": "theorem",
-          "name": "openQueue_counts",
-          "qualified_name_hint": "Becoming.World.openQueue_counts",
-          "line": 494
-        },
-        {
-          "kind": "theorem",
-          "name": "openQueue_holds",
-          "qualified_name_hint": "Becoming.World.openQueue_holds",
-          "line": 509
-        },
-        {
-          "kind": "theorem",
-          "name": "openQueue_premised",
-          "qualified_name_hint": "Becoming.World.openQueue_premised",
-          "line": 530
-        },
-        {
-          "kind": "theorem",
-          "name": "premised_counting_sound",
-          "qualified_name_hint": "Becoming.World.premised_counting_sound",
-          "line": 553
-        },
-        {
-          "kind": "theorem",
-          "name": "premised_counting_witnessed",
-          "qualified_name_hint": "Becoming.World.premised_counting_witnessed",
-          "line": 565
-        },
-        {
-          "kind": "theorem",
-          "name": "premised_counting",
-          "qualified_name_hint": "Becoming.World.premised_counting",
-          "line": 575
-        },
-        {
-          "kind": "theorem",
-          "name": "openQueue_not_binds",
-          "qualified_name_hint": "Becoming.World.openQueue_not_binds",
-          "line": 585
-        },
-        {
-          "kind": "theorem",
-          "name": "binds_arising",
-          "qualified_name_hint": "Becoming.World.binds_arising",
-          "line": 602
-        },
-        {
-          "kind": "theorem",
-          "name": "binds_adds",
-          "qualified_name_hint": "Becoming.World.binds_adds",
-          "line": 614
-        },
-        {
-          "kind": "def",
-          "name": "driven",
-          "qualified_name_hint": "Becoming.OpenQueue.driven",
-          "line": 631
-        },
-        {
-          "kind": "def",
-          "name": "drivenQueue",
-          "qualified_name_hint": "Becoming.World.drivenQueue",
-          "line": 646
-        },
-        {
-          "kind": "theorem",
-          "name": "drivenQueue_holds",
-          "qualified_name_hint": "Becoming.World.drivenQueue_holds",
-          "line": 656
-        },
-        {
-          "kind": "theorem",
-          "name": "taking_binds_counting",
-          "qualified_name_hint": "Becoming.World.taking_binds_counting",
-          "line": 677
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binds_counting",
-          "qualified_name_hint": "Becoming.World.enclosed_binds_counting",
-          "line": 714
-        },
-        {
-          "kind": "def",
-          "name": "BindsCounting",
-          "qualified_name_hint": "Becoming.World.BindsCounting",
-          "line": 742
-        },
-        {
-          "kind": "theorem",
-          "name": "queue_meets",
-          "qualified_name_hint": "Becoming.World.queue_meets",
-          "line": 747
-        },
-        {
-          "kind": "theorem",
-          "name": "embodiedQueue_meets",
-          "qualified_name_hint": "Becoming.World.embodiedQueue_meets",
-          "line": 761
-        },
-        {
-          "kind": "theorem",
-          "name": "openQueue_meets",
-          "qualified_name_hint": "Becoming.World.openQueue_meets",
-          "line": 776
-        },
-        {
-          "kind": "theorem",
-          "name": "drivenQueue_meets",
-          "qualified_name_hint": "Becoming.World.drivenQueue_meets",
-          "line": 791
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_under_sound",
-          "qualified_name_hint": "Becoming.World.counting_under_sound",
-          "line": 808
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_under_witnessed",
-          "qualified_name_hint": "Becoming.World.counting_under_witnessed",
-          "line": 825
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_under",
-          "qualified_name_hint": "Becoming.World.counting_under",
-          "line": 852
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_binds_iff",
-          "qualified_name_hint": "Becoming.World.counting_binds_iff",
-          "line": 860
-        },
-        {
-          "kind": "theorem",
-          "name": "length_le_stock",
-          "qualified_name_hint": "Becoming.World.length_le_stock",
-          "line": 894
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosure_bounds_change",
-          "qualified_name_hint": "Becoming.World.enclosure_bounds_change",
-          "line": 906
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosure_bounds_change_counted",
-          "qualified_name_hint": "Becoming.World.enclosure_bounds_change_counted",
-          "line": 931
-        },
-        {
-          "kind": "theorem",
-          "name": "active_of_coming_enclosed",
-          "qualified_name_hint": "Becoming.World.active_of_coming_enclosed",
-          "line": 952
-        },
-        {
-          "kind": "def",
-          "name": "store",
-          "qualified_name_hint": "Becoming.EnclosedQueue.store",
-          "line": 982
-        },
-        {
-          "kind": "def",
-          "name": "place",
-          "qualified_name_hint": "Becoming.EnclosedQueue.place",
-          "line": 987
-        },
-        {
-          "kind": "def",
-          "name": "level",
-          "qualified_name_hint": "Becoming.EnclosedQueue.level",
-          "line": 992
-        },
-        {
-          "kind": "def",
-          "name": "web",
-          "qualified_name_hint": "Becoming.EnclosedQueue.web",
-          "line": 996
-        },
-        {
-          "kind": "def",
-          "name": "flow",
-          "qualified_name_hint": "Becoming.EnclosedQueue.flow",
-          "line": 1005
-        },
-        {
-          "kind": "def",
-          "name": "span",
-          "qualified_name_hint": "Becoming.EnclosedQueue.span",
-          "line": 1011
-        },
-        {
-          "kind": "theorem",
-          "name": "place_pos",
-          "qualified_name_hint": "Becoming.EnclosedQueue.place_pos",
-          "line": 1016
-        },
-        {
-          "kind": "theorem",
-          "name": "place_zero",
-          "qualified_name_hint": "Becoming.EnclosedQueue.place_zero",
-          "line": 1024
-        },
-        {
-          "kind": "theorem",
-          "name": "total_place",
-          "qualified_name_hint": "Becoming.EnclosedQueue.total_place",
-          "line": 1028
-        },
-        {
-          "kind": "theorem",
-          "name": "still_flows",
-          "qualified_name_hint": "Becoming.EnclosedQueue.still_flows",
-          "line": 1044
-        },
-        {
-          "kind": "theorem",
-          "name": "still",
-          "qualified_name_hint": "Becoming.EnclosedQueue.still",
-          "line": 1049
-        },
-        {
-          "kind": "theorem",
-          "name": "empty_stays",
-          "qualified_name_hint": "Becoming.EnclosedQueue.empty_stays",
-          "line": 1056
-        },
-        {
-          "kind": "theorem",
-          "name": "outside_empty",
-          "qualified_name_hint": "Becoming.EnclosedQueue.outside_empty",
-          "line": 1066
-        },
-        {
-          "kind": "theorem",
-          "name": "idle",
-          "qualified_name_hint": "Becoming.EnclosedQueue.idle",
-          "line": 1070
-        },
-        {
-          "kind": "theorem",
-          "name": "quiet_same",
-          "qualified_name_hint": "Becoming.EnclosedQueue.quiet_same",
-          "line": 1077
-        },
-        {
-          "kind": "theorem",
-          "name": "within_span",
-          "qualified_name_hint": "Becoming.EnclosedQueue.within_span",
-          "line": 1097
-        },
-        {
-          "kind": "theorem",
-          "name": "moving_within",
-          "qualified_name_hint": "Becoming.EnclosedQueue.moving_within",
-          "line": 1110
-        },
-        {
-          "kind": "theorem",
-          "name": "closed",
-          "qualified_name_hint": "Becoming.EnclosedQueue.closed",
-          "line": 1118
-        },
-        {
-          "kind": "theorem",
-          "name": "span_distinct",
-          "qualified_name_hint": "Becoming.EnclosedQueue.span_distinct",
-          "line": 1122
-        },
-        {
-          "kind": "theorem",
-          "name": "busy",
-          "qualified_name_hint": "Becoming.EnclosedQueue.busy",
-          "line": 1126
-        },
-        {
-          "kind": "def",
-          "name": "enclosedQueue",
-          "qualified_name_hint": "Becoming.World.enclosedQueue",
-          "line": 1138
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_census",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_census",
-          "line": 1146
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_embodied",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_embodied",
-          "line": 1150
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_balanced",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_balanced",
-          "line": 1154
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_acting",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_acting",
-          "line": 1160
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_taking",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_taking",
-          "line": 1168
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_stock",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_stock",
-          "line": 1176
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_dissipatesOn",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_dissipatesOn",
-          "line": 1198
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_dissipative",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_dissipative",
-          "line": 1247
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_premised",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_premised",
-          "line": 1255
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_enclosed",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_enclosed",
-          "line": 1263
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_counting_sound",
-          "qualified_name_hint": "Becoming.World.enclosed_counting_sound",
-          "line": 1271
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_counting_witnessed",
-          "qualified_name_hint": "Becoming.World.enclosed_counting_witnessed",
-          "line": 1289
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_counting",
-          "qualified_name_hint": "Becoming.World.enclosed_counting",
-          "line": 1302
-        },
-        {
-          "kind": "def",
-          "name": "placesBelow",
-          "qualified_name_hint": "Becoming.placesBelow",
-          "line": 1315
-        },
-        {
-          "kind": "theorem",
-          "name": "mem_placesBelow",
-          "qualified_name_hint": "Becoming.mem_placesBelow",
-          "line": 1319
-        },
-        {
-          "kind": "theorem",
-          "name": "placesBelow_distinct",
-          "qualified_name_hint": "Becoming.placesBelow_distinct",
-          "line": 1340
-        },
-        {
-          "kind": "theorem",
-          "name": "total_placesBelow",
-          "qualified_name_hint": "Becoming.total_placesBelow",
-          "line": 1351
-        },
-        {
-          "kind": "theorem",
-          "name": "places_listed",
-          "qualified_name_hint": "Becoming.places_listed",
-          "line": 1361
-        },
-        {
-          "kind": "def",
-          "name": "size",
-          "qualified_name_hint": "Becoming.FiniteQueue.size",
-          "line": 1372
-        },
-        {
-          "kind": "def",
-          "name": "front",
-          "qualified_name_hint": "Becoming.FiniteQueue.front",
-          "line": 1375
-        },
-        {
-          "kind": "def",
-          "name": "web",
-          "qualified_name_hint": "Becoming.FiniteQueue.web",
-          "line": 1379
-        },
-        {
-          "kind": "def",
-          "name": "flow",
-          "qualified_name_hint": "Becoming.FiniteQueue.flow",
-          "line": 1387
-        },
-        {
-          "kind": "def",
-          "name": "alive",
-          "qualified_name_hint": "Becoming.FiniteQueue.alive",
-          "line": 1393
-        },
-        {
-          "kind": "theorem",
-          "name": "placed",
-          "qualified_name_hint": "Becoming.FiniteQueue.placed",
-          "line": 1399
-        },
-        {
-          "kind": "theorem",
-          "name": "front_val",
-          "qualified_name_hint": "Becoming.FiniteQueue.front_val",
-          "line": 1403
-        },
-        {
-          "kind": "def",
-          "name": "finiteQueue",
-          "qualified_name_hint": "Becoming.World.finiteQueue",
-          "line": 1413
-        },
-        {
-          "kind": "theorem",
-          "name": "finiteQueue_finite",
-          "qualified_name_hint": "Becoming.World.finiteQueue_finite",
-          "line": 1420
-        },
-        {
-          "kind": "theorem",
-          "name": "finiteQueue_census",
-          "qualified_name_hint": "Becoming.World.finiteQueue_census",
-          "line": 1423
-        },
-        {
-          "kind": "theorem",
-          "name": "finiteQueue_counts",
-          "qualified_name_hint": "Becoming.World.finiteQueue_counts",
-          "line": 1432
-        },
-        {
-          "kind": "theorem",
-          "name": "finiteQueue_premised",
-          "qualified_name_hint": "Becoming.World.finiteQueue_premised",
-          "line": 1447
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_counting_sound",
-          "qualified_name_hint": "Becoming.World.finite_counting_sound",
-          "line": 1486
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_counting_witnessed",
-          "qualified_name_hint": "Becoming.World.finite_counting_witnessed",
-          "line": 1492
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_counting",
-          "qualified_name_hint": "Becoming.World.finite_counting",
-          "line": 1503
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_iff_finite_counting",
-          "qualified_name_hint": "Becoming.World.enclosed_iff_finite_counting",
-          "line": 1513
-        },
-        {
-          "kind": "abbrev",
-          "name": "replaced",
-          "qualified_name_hint": "Becoming.World.replaced",
-          "line": 1522
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_dissipation_binds",
-          "qualified_name_hint": "Becoming.World.finite_dissipation_binds",
-          "line": 1527
-        },
-        {
-          "kind": "theorem",
-          "name": "replaced_attains",
-          "qualified_name_hint": "Becoming.World.replaced_attains",
-          "line": 1543
-        },
-        {
-          "kind": "theorem",
-          "name": "lpo_of_finite_ends",
-          "qualified_name_hint": "Becoming.World.lpo_of_finite_ends",
-          "line": 1558
-        },
-        {
-          "kind": "def",
-          "name": "EnclosedQueue.closing",
-          "qualified_name_hint": "Becoming.EnclosedQueue.closing",
-          "line": 1576
-        },
-        {
-          "kind": "def",
-          "name": "closingQueue",
-          "qualified_name_hint": "Becoming.World.closingQueue",
-          "line": 1585
-        },
-        {
-          "kind": "theorem",
-          "name": "closingQueue_balanced",
-          "qualified_name_hint": "Becoming.World.closingQueue_balanced",
-          "line": 1594
-        },
-        {
-          "kind": "theorem",
-          "name": "closing_flows",
-          "qualified_name_hint": "Becoming.World.closing_flows",
-          "line": 1606
-        },
-        {
-          "kind": "theorem",
-          "name": "closingQueue_enclosed",
-          "qualified_name_hint": "Becoming.World.closingQueue_enclosed",
-          "line": 1613
-        },
-        {
-          "kind": "theorem",
-          "name": "closingQueue_dissipative",
-          "qualified_name_hint": "Becoming.World.closingQueue_dissipative",
-          "line": 1623
-        },
-        {
-          "kind": "def",
-          "name": "BoundsChange",
-          "qualified_name_hint": "Becoming.World.BoundsChange",
-          "line": 1651
-        },
-        {
-          "kind": "theorem",
-          "name": "still_enclosed",
-          "qualified_name_hint": "Becoming.World.still_enclosed",
-          "line": 1655
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_counting_under_sound",
-          "qualified_name_hint": "Becoming.World.enclosed_counting_under_sound",
-          "line": 1663
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_counting_under_witnessed",
-          "qualified_name_hint": "Becoming.World.enclosed_counting_under_witnessed",
-          "line": 1681
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_counting_under",
-          "qualified_name_hint": "Becoming.World.enclosed_counting_under",
-          "line": 1739
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_change_bound_iff",
-          "qualified_name_hint": "Becoming.World.enclosed_change_bound_iff",
-          "line": 1752
-        },
-        {
-          "kind": "def",
-          "name": "slot",
-          "qualified_name_hint": "Becoming.Ring.slot",
-          "line": 1781
-        },
-        {
-          "kind": "theorem",
-          "name": "slot_step",
-          "qualified_name_hint": "Becoming.Ring.slot_step",
-          "line": 1788
-        },
-        {
-          "kind": "theorem",
-          "name": "slot_lt",
-          "qualified_name_hint": "Becoming.Ring.slot_lt",
-          "line": 1793
-        },
-        {
-          "kind": "theorem",
-          "name": "slot_add",
-          "qualified_name_hint": "Becoming.Ring.slot_add",
-          "line": 1801
-        },
-        {
-          "kind": "theorem",
-          "name": "slot_ne",
-          "qualified_name_hint": "Becoming.Ring.slot_ne",
-          "line": 1821
-        },
-        {
-          "kind": "theorem",
-          "name": "slot_apart",
-          "qualified_name_hint": "Becoming.Ring.slot_apart",
-          "line": 1831
-        },
-        {
-          "kind": "theorem",
-          "name": "slot_inj",
-          "qualified_name_hint": "Becoming.Ring.slot_inj",
-          "line": 1843
-        },
-        {
-          "kind": "def",
-          "name": "size",
-          "qualified_name_hint": "Becoming.Ring.size",
-          "line": 1853
-        },
-        {
-          "kind": "def",
-          "name": "seat",
-          "qualified_name_hint": "Becoming.Ring.seat",
-          "line": 1856
-        },
-        {
-          "kind": "def",
-          "name": "seated",
-          "qualified_name_hint": "Becoming.Ring.seated",
-          "line": 1862
-        },
-        {
-          "kind": "def",
-          "name": "holds",
-          "qualified_name_hint": "Becoming.Ring.holds",
-          "line": 1866
-        },
-        {
-          "kind": "def",
-          "name": "web",
-          "qualified_name_hint": "Becoming.Ring.web",
-          "line": 1874
-        },
-        {
-          "kind": "def",
-          "name": "stands",
-          "qualified_name_hint": "Becoming.Ring.stands",
-          "line": 1882
-        },
-        {
-          "kind": "def",
-          "name": "flow",
-          "qualified_name_hint": "Becoming.Ring.flow",
-          "line": 1887
-        },
-        {
-          "kind": "theorem",
-          "name": "occupied",
-          "qualified_name_hint": "Becoming.Ring.occupied",
-          "line": 1895
-        },
-        {
-          "kind": "theorem",
-          "name": "front_holds",
-          "qualified_name_hint": "Becoming.Ring.front_holds",
-          "line": 1900
-        },
-        {
-          "kind": "theorem",
-          "name": "span_fits",
-          "qualified_name_hint": "Becoming.Ring.span_fits",
-          "line": 1905
-        },
-        {
-          "kind": "theorem",
-          "name": "holds_iff",
-          "qualified_name_hint": "Becoming.Ring.holds_iff",
-          "line": 1913
-        },
-        {
-          "kind": "theorem",
-          "name": "census",
-          "qualified_name_hint": "Becoming.Ring.census",
-          "line": 1927
-        },
-        {
-          "kind": "theorem",
-          "name": "counts",
-          "qualified_name_hint": "Becoming.Ring.counts",
-          "line": 1936
-        },
-        {
-          "kind": "theorem",
-          "name": "taken_held",
-          "qualified_name_hint": "Becoming.Ring.taken_held",
-          "line": 1954
-        },
-        {
-          "kind": "theorem",
-          "name": "given_held",
-          "qualified_name_hint": "Becoming.Ring.given_held",
-          "line": 1959
-        },
-        {
-          "kind": "theorem",
-          "name": "Queue.lone_settles",
-          "qualified_name_hint": "Becoming.Queue.lone_settles",
-          "line": 1966
-        },
-        {
-          "kind": "def",
-          "name": "ring",
-          "qualified_name_hint": "Becoming.World.ring",
-          "line": 1981
-        },
-        {
-          "kind": "def",
-          "name": "embodiedRing",
-          "qualified_name_hint": "Becoming.World.embodiedRing",
-          "line": 1985
-        },
-        {
-          "kind": "def",
-          "name": "balancedRing",
-          "qualified_name_hint": "Becoming.World.balancedRing",
-          "line": 1990
-        },
-        {
-          "kind": "theorem",
-          "name": "ring_premised",
-          "qualified_name_hint": "Becoming.World.ring_premised",
-          "line": 2009
-        },
-        {
-          "kind": "theorem",
-          "name": "embodiedRing_premised",
-          "qualified_name_hint": "Becoming.World.embodiedRing_premised",
-          "line": 2017
-        },
-        {
-          "kind": "theorem",
-          "name": "balancedRing_holds",
-          "qualified_name_hint": "Becoming.World.balancedRing_holds",
-          "line": 2027
-        },
-        {
-          "kind": "theorem",
-          "name": "balancedRing_acting",
-          "qualified_name_hint": "Becoming.World.balancedRing_acting",
-          "line": 2041
-        },
-        {
-          "kind": "theorem",
-          "name": "ring_meets",
-          "qualified_name_hint": "Becoming.World.ring_meets",
-          "line": 2052
-        },
-        {
-          "kind": "theorem",
-          "name": "embodiedRing_meets",
-          "qualified_name_hint": "Becoming.World.embodiedRing_meets",
-          "line": 2066
-        },
-        {
-          "kind": "theorem",
-          "name": "balancedRing_meets",
-          "qualified_name_hint": "Becoming.World.balancedRing_meets",
-          "line": 2081
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_counting_under_sound",
-          "qualified_name_hint": "Becoming.World.finite_counting_under_sound",
-          "line": 2100
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_counting_under_witnessed",
-          "qualified_name_hint": "Becoming.World.finite_counting_under_witnessed",
-          "line": 2121
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_counting_under",
-          "qualified_name_hint": "Becoming.World.finite_counting_under",
-          "line": 2151
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_counting_binds_iff",
-          "qualified_name_hint": "Becoming.World.finite_counting_binds_iff",
-          "line": 2163
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_change_bound_iff",
-          "qualified_name_hint": "Becoming.World.finite_change_bound_iff",
-          "line": 2195
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_iff_finite_counting_under",
-          "qualified_name_hint": "Becoming.World.enclosed_iff_finite_counting_under",
-          "line": 2229
-        },
-        {
-          "kind": "theorem",
-          "name": "place_le",
-          "qualified_name_hint": "Becoming.EnclosedQueue.place_le",
-          "line": 2294
-        },
-        {
-          "kind": "theorem",
-          "name": "total_place_le",
-          "qualified_name_hint": "Becoming.EnclosedQueue.total_place_le",
-          "line": 2302
-        },
-        {
-          "kind": "theorem",
-          "name": "total_place_pos",
-          "qualified_name_hint": "Becoming.EnclosedQueue.total_place_pos",
-          "line": 2308
-        },
-        {
-          "kind": "def",
-          "name": "excess",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.excess",
-          "line": 2320
-        },
-        {
-          "kind": "def",
-          "name": "level",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.level",
-          "line": 2324
-        },
-        {
-          "kind": "def",
-          "name": "exchange",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.exchange",
-          "line": 2329
-        },
-        {
-          "kind": "def",
-          "name": "web",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.web",
-          "line": 2334
-        },
-        {
-          "kind": "def",
-          "name": "flow",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.flow",
-          "line": 2345
-        },
-        {
-          "kind": "theorem",
-          "name": "excess_le",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.excess_le",
-          "line": 2352
-        },
-        {
-          "kind": "theorem",
-          "name": "level_le",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.level_le",
-          "line": 2357
-        },
-        {
-          "kind": "theorem",
-          "name": "still_flows",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.still_flows",
-          "line": 2362
-        },
-        {
-          "kind": "theorem",
-          "name": "still",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.still",
-          "line": 2370
-        },
-        {
-          "kind": "theorem",
-          "name": "idle",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.idle",
-          "line": 2377
-        },
-        {
-          "kind": "theorem",
-          "name": "busy",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.busy",
-          "line": 2387
-        },
-        {
-          "kind": "theorem",
-          "name": "moving_within",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.moving_within",
-          "line": 2396
-        },
-        {
-          "kind": "theorem",
-          "name": "closed",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.closed",
-          "line": 2405
-        },
-        {
-          "kind": "theorem",
-          "name": "dependent_any_activity",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.dependent_any_activity",
-          "line": 2412
-        },
-        {
-          "kind": "theorem",
-          "name": "transmits_any_flow",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.transmits_any_flow",
-          "line": 2419
-        },
-        {
-          "kind": "theorem",
-          "name": "not_closed",
-          "qualified_name_hint": "Becoming.OnceClosedQueue.not_closed",
-          "line": 2425
-        },
-        {
-          "kind": "def",
-          "name": "onceClosedQueue",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue",
-          "line": 2439
-        },
-        {
-          "kind": "theorem",
-          "name": "onceClosedQueue_census",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue_census",
-          "line": 2447
-        },
-        {
-          "kind": "theorem",
-          "name": "onceClosedQueue_embodied",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue_embodied",
-          "line": 2451
-        },
-        {
-          "kind": "theorem",
-          "name": "onceClosedQueue_balanced",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue_balanced",
-          "line": 2455
-        },
-        {
-          "kind": "theorem",
-          "name": "onceClosedQueue_acting",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue_acting",
-          "line": 2462
-        },
-        {
-          "kind": "theorem",
-          "name": "onceClosedQueue_taking",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue_taking",
-          "line": 2468
-        },
-        {
-          "kind": "theorem",
-          "name": "onceClosedQueue_exceeds",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue_exceeds",
-          "line": 2477
-        },
-        {
-          "kind": "theorem",
-          "name": "onceClosedQueue_dissipative",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue_dissipative",
-          "line": 2508
-        },
-        {
-          "kind": "theorem",
-          "name": "onceClosedQueue_premised",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue_premised",
-          "line": 2535
-        },
-        {
-          "kind": "theorem",
-          "name": "onceClosedQueue_binds",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue_binds",
-          "line": 2550
-        },
-        {
-          "kind": "theorem",
-          "name": "CountsOf.arising_pos",
-          "qualified_name_hint": "Becoming.World.CountsOf.arising_pos",
-          "line": 2580
-        },
-        {
-          "kind": "theorem",
-          "name": "binds_arising_counted",
-          "qualified_name_hint": "Becoming.World.binds_arising_counted",
-          "line": 2586
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_counting_sound",
-          "qualified_name_hint": "Becoming.World.binding_counting_sound",
-          "line": 2594
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_counting_witnessed",
-          "qualified_name_hint": "Becoming.World.binding_counting_witnessed",
-          "line": 2602
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_counting",
-          "qualified_name_hint": "Becoming.World.binding_counting",
-          "line": 2617
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_contingent",
-          "qualified_name_hint": "Becoming.World.binding_contingent",
-          "line": 2627
-        },
-        {
-          "kind": "def",
-          "name": "saturated",
-          "qualified_name_hint": "Becoming.Web.saturated",
-          "line": 2656
-        },
-        {
-          "kind": "theorem",
-          "name": "saturated_dependent",
-          "qualified_name_hint": "Becoming.Web.saturated_dependent",
-          "line": 2660
-        },
-        {
-          "kind": "theorem",
-          "name": "Flow.transmits_saturated",
-          "qualified_name_hint": "Becoming.Flow.transmits_saturated",
-          "line": 2667
-        },
-        {
-          "kind": "theorem",
-          "name": "Tally.after_pos",
-          "qualified_name_hint": "Becoming.Tally.after_pos",
-          "line": 2672
-        },
-        {
-          "kind": "def",
-          "name": "saturated",
-          "qualified_name_hint": "Becoming.World.saturated",
-          "line": 2682
-        },
-        {
-          "kind": "theorem",
-          "name": "Premised.saturated",
-          "qualified_name_hint": "Becoming.World.Premised.saturated",
-          "line": 2691
-        },
-        {
-          "kind": "theorem",
-          "name": "counts_active",
-          "qualified_name_hint": "Becoming.World.counts_active",
-          "line": 2701
-        },
-        {
-          "kind": "theorem",
-          "name": "counts_arising",
-          "qualified_name_hint": "Becoming.World.counts_arising",
-          "line": 2707
-        },
-        {
-          "kind": "theorem",
-          "name": "CountsOf.active_pos",
-          "qualified_name_hint": "Becoming.World.CountsOf.active_pos",
-          "line": 2716
-        },
-        {
-          "kind": "theorem",
-          "name": "CountsOf.company_binding",
-          "qualified_name_hint": "Becoming.World.CountsOf.company_binding",
-          "line": 2723
-        },
-        {
-          "kind": "theorem",
-          "name": "CountsOf.acts_of_binding",
-          "qualified_name_hint": "Becoming.World.CountsOf.acts_of_binding",
-          "line": 2737
-        },
-        {
-          "kind": "theorem",
-          "name": "CountsOf.joint_of_binding",
-          "qualified_name_hint": "Becoming.World.CountsOf.joint_of_binding",
-          "line": 2752
-        },
-        {
-          "kind": "theorem",
-          "name": "level_le",
-          "qualified_name_hint": "Becoming.OpenQueue.level_le",
-          "line": 2771
-        },
-        {
-          "kind": "def",
-          "name": "exchanged",
-          "qualified_name_hint": "Becoming.LossyQueue.exchanged",
-          "line": 2783
-        },
-        {
-          "kind": "def",
-          "name": "lost",
-          "qualified_name_hint": "Becoming.LossyQueue.lost",
-          "line": 2789
-        },
-        {
-          "kind": "def",
-          "name": "flow",
-          "qualified_name_hint": "Becoming.LossyQueue.flow",
-          "line": 2796
-        },
-        {
-          "kind": "theorem",
-          "name": "moving",
-          "qualified_name_hint": "Becoming.LossyQueue.moving",
-          "line": 2808
-        },
-        {
-          "kind": "def",
-          "name": "lossyQueue",
-          "qualified_name_hint": "Becoming.World.lossyQueue",
-          "line": 2822
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyQueue_dissipative",
-          "qualified_name_hint": "Becoming.World.lossyQueue_dissipative",
-          "line": 2834
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyQueue_taking",
-          "qualified_name_hint": "Becoming.World.lossyQueue_taking",
-          "line": 2862
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyQueue_acting",
-          "qualified_name_hint": "Becoming.World.lossyQueue_acting",
-          "line": 2870
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyQueue_binds",
-          "qualified_name_hint": "Becoming.World.lossyQueue_binds",
-          "line": 2885
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyQueue_binding",
-          "qualified_name_hint": "Becoming.World.lossyQueue_binding",
-          "line": 2936
-        },
-        {
-          "kind": "def",
-          "name": "level",
-          "qualified_name_hint": "Becoming.RelayQueue.level",
-          "line": 2963
-        },
-        {
-          "kind": "def",
-          "name": "flow",
-          "qualified_name_hint": "Becoming.RelayQueue.flow",
-          "line": 2971
-        },
-        {
-          "kind": "theorem",
-          "name": "up_to",
-          "qualified_name_hint": "Becoming.RelayQueue.up_to",
-          "line": 2984
-        },
-        {
-          "kind": "theorem",
-          "name": "after",
-          "qualified_name_hint": "Becoming.RelayQueue.after",
-          "line": 2998
-        },
-        {
-          "kind": "def",
-          "name": "relayQueue",
-          "qualified_name_hint": "Becoming.World.relayQueue",
-          "line": 3020
-        },
-        {
-          "kind": "theorem",
-          "name": "relayQueue_balanced",
-          "qualified_name_hint": "Becoming.World.relayQueue_balanced",
-          "line": 3029
-        },
-        {
-          "kind": "theorem",
-          "name": "relayQueue_dissipative",
-          "qualified_name_hint": "Becoming.World.relayQueue_dissipative",
-          "line": 3039
-        },
-        {
-          "kind": "theorem",
-          "name": "relayQueue_acts",
-          "qualified_name_hint": "Becoming.World.relayQueue_acts",
-          "line": 3064
-        },
-        {
-          "kind": "theorem",
-          "name": "relayQueue_binds",
-          "qualified_name_hint": "Becoming.World.relayQueue_binds",
-          "line": 3088
-        },
-        {
-          "kind": "theorem",
-          "name": "relayQueue_binding",
-          "qualified_name_hint": "Becoming.World.relayQueue_binding",
-          "line": 3116
-        },
-        {
-          "kind": "theorem",
-          "name": "onceClosedQueue_binding",
-          "qualified_name_hint": "Becoming.World.onceClosedQueue_binding",
-          "line": 3144
-        },
-        {
-          "kind": "theorem",
-          "name": "openQueue_saturated_binding",
-          "qualified_name_hint": "Becoming.World.openQueue_saturated_binding",
-          "line": 3168
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_counting_under_sound",
-          "qualified_name_hint": "Becoming.World.binding_counting_under_sound",
-          "line": 3197
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_counting_under_witnessed",
-          "qualified_name_hint": "Becoming.World.binding_counting_under_witnessed",
-          "line": 3216
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_counting_under",
-          "qualified_name_hint": "Becoming.World.binding_counting_under",
-          "line": 3293
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_activity_iff",
-          "qualified_name_hint": "Becoming.World.binding_activity_iff",
-          "line": 3315
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_arising_iff",
-          "qualified_name_hint": "Becoming.World.binding_arising_iff",
-          "line": 3345
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_joint_iff",
-          "qualified_name_hint": "Becoming.World.binding_joint_iff",
-          "line": 3366
-        },
-        {
-          "kind": "theorem",
-          "name": "level_le",
-          "qualified_name_hint": "Becoming.EnclosedQueue.level_le",
-          "line": 3403
-        },
-        {
-          "kind": "theorem",
-          "name": "finiteQueue_saturated_binds",
-          "qualified_name_hint": "Becoming.World.finiteQueue_saturated_binds",
-          "line": 3419
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_counting_sound",
-          "qualified_name_hint": "Becoming.World.finite_binding_counting_sound",
-          "line": 3453
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_counting_witnessed",
-          "qualified_name_hint": "Becoming.World.finite_binding_counting_witnessed",
-          "line": 3472
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_counting",
-          "qualified_name_hint": "Becoming.World.finite_binding_counting",
-          "line": 3489
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosedQueue_saturated_binds",
-          "qualified_name_hint": "Becoming.World.enclosedQueue_saturated_binds",
-          "line": 3517
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_counting_sound",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_sound",
-          "line": 3550
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_counting_witnessed",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_witnessed",
-          "line": 3568
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_counting",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_counting",
-          "line": 3585
-        },
-        {
-          "kind": "def",
-          "name": "taken",
-          "qualified_name_hint": "Becoming.RelayRing.taken",
-          "line": 3606
-        },
-        {
-          "kind": "def",
-          "name": "given",
-          "qualified_name_hint": "Becoming.RelayRing.given",
-          "line": 3612
-        },
-        {
-          "kind": "def",
-          "name": "level",
-          "qualified_name_hint": "Becoming.RelayRing.level",
-          "line": 3618
-        },
-        {
-          "kind": "def",
-          "name": "flow",
-          "qualified_name_hint": "Becoming.RelayRing.flow",
-          "line": 3625
-        },
-        {
-          "kind": "abbrev",
-          "name": "sink",
-          "qualified_name_hint": "Becoming.RelayRing.sink",
-          "line": 3633
-        },
-        {
-          "kind": "abbrev",
-          "name": "source",
-          "qualified_name_hint": "Becoming.RelayRing.source",
-          "line": 3636
-        },
-        {
-          "kind": "def",
-          "name": "relayRing",
-          "qualified_name_hint": "Becoming.World.relayRing",
-          "line": 3646
-        },
-        {
-          "kind": "theorem",
-          "name": "relayRing_balanced",
-          "qualified_name_hint": "Becoming.World.relayRing_balanced",
-          "line": 3655
-        },
-        {
-          "kind": "theorem",
-          "name": "relayRing_dissipative",
-          "qualified_name_hint": "Becoming.World.relayRing_dissipative",
-          "line": 3664
-        },
-        {
-          "kind": "theorem",
-          "name": "relayRing_acts",
-          "qualified_name_hint": "Becoming.World.relayRing_acts",
-          "line": 3688
-        },
-        {
-          "kind": "theorem",
-          "name": "relayRing_binds",
-          "qualified_name_hint": "Becoming.World.relayRing_binds",
-          "line": 3710
-        },
-        {
-          "kind": "theorem",
-          "name": "relayRing_binding",
-          "qualified_name_hint": "Becoming.World.relayRing_binding",
-          "line": 3737
-        },
-        {
-          "kind": "def",
-          "name": "exchanged",
-          "qualified_name_hint": "Becoming.LossyRing.exchanged",
-          "line": 3768
-        },
-        {
-          "kind": "def",
-          "name": "lost",
-          "qualified_name_hint": "Becoming.LossyRing.lost",
-          "line": 3772
-        },
-        {
-          "kind": "def",
-          "name": "flow",
-          "qualified_name_hint": "Becoming.LossyRing.flow",
-          "line": 3777
-        },
-        {
-          "kind": "theorem",
-          "name": "moving",
-          "qualified_name_hint": "Becoming.LossyRing.moving",
-          "line": 3785
-        },
-        {
-          "kind": "def",
-          "name": "lossyRing",
-          "qualified_name_hint": "Becoming.World.lossyRing",
-          "line": 3799
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyRing_dissipative",
-          "qualified_name_hint": "Becoming.World.lossyRing_dissipative",
-          "line": 3810
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyRing_taking",
-          "qualified_name_hint": "Becoming.World.lossyRing_taking",
-          "line": 3832
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyRing_acting",
-          "qualified_name_hint": "Becoming.World.lossyRing_acting",
-          "line": 3839
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyRing_binds",
-          "qualified_name_hint": "Becoming.World.lossyRing_binds",
-          "line": 3852
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyRing_binding",
-          "qualified_name_hint": "Becoming.World.lossyRing_binding",
-          "line": 3881
-        },
-        {
-          "kind": "def",
-          "name": "exchanged",
-          "qualified_name_hint": "Becoming.Ring.exchanged",
-          "line": 3908
-        },
-        {
-          "kind": "def",
-          "name": "exchanging",
-          "qualified_name_hint": "Becoming.Ring.exchanging",
-          "line": 3913
-        },
-        {
-          "kind": "def",
-          "name": "exchangingRing",
-          "qualified_name_hint": "Becoming.World.exchangingRing",
-          "line": 3926
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingRing_balanced",
-          "qualified_name_hint": "Becoming.World.exchangingRing_balanced",
-          "line": 3935
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingRing_taking",
-          "qualified_name_hint": "Becoming.World.exchangingRing_taking",
-          "line": 3940
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingRing_acting",
-          "qualified_name_hint": "Becoming.World.exchangingRing_acting",
-          "line": 3951
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingRing_binds",
-          "qualified_name_hint": "Becoming.World.exchangingRing_binds",
-          "line": 3971
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingRing_binding",
-          "qualified_name_hint": "Becoming.World.exchangingRing_binding",
-          "line": 3998
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_census",
-          "qualified_name_hint": "Becoming.World.finite_binding_census",
-          "line": 4023
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_counting_under_sound",
-          "qualified_name_hint": "Becoming.World.finite_binding_counting_under_sound",
-          "line": 4036
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_counting_under_witnessed",
-          "qualified_name_hint": "Becoming.World.finite_binding_counting_under_witnessed",
-          "line": 4070
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_counting_under",
-          "qualified_name_hint": "Becoming.World.finite_binding_counting_under",
-          "line": 4155
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_activity_iff",
-          "qualified_name_hint": "Becoming.World.finite_binding_activity_iff",
-          "line": 4176
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_arising_iff",
-          "qualified_name_hint": "Becoming.World.finite_binding_arising_iff",
-          "line": 4207
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_joint_iff",
-          "qualified_name_hint": "Becoming.World.finite_binding_joint_iff",
-          "line": 4229
-        },
-        {
-          "kind": "theorem",
-          "name": "relayQueue_enclosed",
-          "qualified_name_hint": "Becoming.World.relayQueue_enclosed",
-          "line": 4278
-        },
-        {
-          "kind": "theorem",
-          "name": "lossyQueue_enclosed",
-          "qualified_name_hint": "Becoming.World.lossyQueue_enclosed",
-          "line": 4289
-        },
-        {
-          "kind": "def",
-          "name": "exchanged",
-          "qualified_name_hint": "Becoming.EnclosedQueue.exchanged",
-          "line": 4317
-        },
-        {
-          "kind": "def",
-          "name": "exchanging",
-          "qualified_name_hint": "Becoming.EnclosedQueue.exchanging",
-          "line": 4322
-        },
-        {
-          "kind": "def",
-          "name": "exchangingQueue",
-          "qualified_name_hint": "Becoming.World.exchangingQueue",
-          "line": 4335
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingQueue_balanced",
-          "qualified_name_hint": "Becoming.World.exchangingQueue_balanced",
-          "line": 4344
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingQueue_taking",
-          "qualified_name_hint": "Becoming.World.exchangingQueue_taking",
-          "line": 4350
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingQueue_acting",
-          "qualified_name_hint": "Becoming.World.exchangingQueue_acting",
-          "line": 4359
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingQueue_enclosed",
-          "qualified_name_hint": "Becoming.World.exchangingQueue_enclosed",
-          "line": 4370
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingQueue_binds",
-          "qualified_name_hint": "Becoming.World.exchangingQueue_binds",
-          "line": 4383
-        },
-        {
-          "kind": "theorem",
-          "name": "exchangingQueue_binding",
-          "qualified_name_hint": "Becoming.World.exchangingQueue_binding",
-          "line": 4409
-        },
-        {
-          "kind": "theorem",
-          "name": "last_positive",
-          "qualified_name_hint": "Becoming.last_positive",
-          "line": 4431
-        },
-        {
-          "kind": "theorem",
-          "name": "occupied_from",
-          "qualified_name_hint": "Becoming.Tally.occupied_from",
-          "line": 4457
-        },
-        {
-          "kind": "def",
-          "name": "spare",
-          "qualified_name_hint": "Becoming.EnclosedQueue.spare",
-          "line": 4486
-        },
-        {
-          "kind": "def",
-          "name": "held",
-          "qualified_name_hint": "Becoming.EnclosedQueue.held",
-          "line": 4490
-        },
-        {
-          "kind": "def",
-          "name": "sheddingWeb",
-          "qualified_name_hint": "Becoming.EnclosedQueue.sheddingWeb",
-          "line": 4494
-        },
-        {
-          "kind": "def",
-          "name": "shedding",
-          "qualified_name_hint": "Becoming.EnclosedQueue.shedding",
-          "line": 4500
-        },
-        {
-          "kind": "theorem",
-          "name": "sub_add_le",
-          "qualified_name_hint": "Becoming.EnclosedQueue.sub_add_le",
-          "line": 4508
-        },
-        {
-          "kind": "theorem",
-          "name": "store_succ_le",
-          "qualified_name_hint": "Becoming.EnclosedQueue.store_succ_le",
-          "line": 4513
-        },
-        {
-          "kind": "theorem",
-          "name": "spare_zero",
-          "qualified_name_hint": "Becoming.EnclosedQueue.spare_zero",
-          "line": 4517
-        },
-        {
-          "kind": "theorem",
-          "name": "held_outside",
-          "qualified_name_hint": "Becoming.EnclosedQueue.held_outside",
-          "line": 4521
-        },
-        {
-          "kind": "theorem",
-          "name": "shedding_closed",
-          "qualified_name_hint": "Becoming.EnclosedQueue.shedding_closed",
-          "line": 4531
-        },
-        {
-          "kind": "theorem",
-          "name": "shedding_flows",
-          "qualified_name_hint": "Becoming.EnclosedQueue.shedding_flows",
-          "line": 4543
-        },
-        {
-          "kind": "def",
-          "name": "sheddingQueue",
-          "qualified_name_hint": "Becoming.World.sheddingQueue",
-          "line": 4566
-        },
-        {
-          "kind": "theorem",
-          "name": "sheddingQueue_balanced",
-          "qualified_name_hint": "Becoming.World.sheddingQueue_balanced",
-          "line": 4575
-        },
-        {
-          "kind": "theorem",
-          "name": "sheddingQueue_embodied",
-          "qualified_name_hint": "Becoming.World.sheddingQueue_embodied",
-          "line": 4581
-        },
-        {
-          "kind": "theorem",
-          "name": "sheddingQueue_enclosed",
-          "qualified_name_hint": "Becoming.World.sheddingQueue_enclosed",
-          "line": 4591
-        },
-        {
-          "kind": "theorem",
-          "name": "sheddingQueue_level_le",
-          "qualified_name_hint": "Becoming.World.sheddingQueue_level_le",
-          "line": 4603
-        },
-        {
-          "kind": "theorem",
-          "name": "sheddingQueue_exceeds",
-          "qualified_name_hint": "Becoming.World.sheddingQueue_exceeds",
-          "line": 4609
-        },
-        {
-          "kind": "theorem",
-          "name": "sheddingQueue_dissipative",
-          "qualified_name_hint": "Becoming.World.sheddingQueue_dissipative",
-          "line": 4651
-        },
-        {
-          "kind": "theorem",
-          "name": "sheddingQueue_binds",
-          "qualified_name_hint": "Becoming.World.sheddingQueue_binds",
-          "line": 4702
-        },
-        {
-          "kind": "theorem",
-          "name": "sheddingQueue_binding",
-          "qualified_name_hint": "Becoming.World.sheddingQueue_binding",
-          "line": 4736
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_counting_under_sound",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_under_sound",
-          "line": 4760
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_counting_under_witnessed",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_under_witnessed",
-          "line": 4785
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_counting_under",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_under",
-          "line": 4883
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_activity_iff",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_activity_iff",
-          "line": 4904
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_arising_iff",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_arising_iff",
-          "line": 4936
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_joint_iff",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_joint_iff",
-          "line": 4959
-        },
-        {
-          "kind": "def",
-          "name": "Shown",
-          "qualified_name_hint": "Becoming.TallyWorlds.Shown",
-          "line": 5030
-        },
-        {
-          "kind": "theorem",
-          "name": "shown_iff_tally",
-          "qualified_name_hint": "Becoming.TallyWorlds.shown_iff_tally",
-          "line": 5038
-        },
-        {
-          "kind": "theorem",
-          "name": "shown_iff_balance",
-          "qualified_name_hint": "Becoming.TallyWorlds.shown_iff_balance",
-          "line": 5049
-        },
-        {
-          "kind": "theorem",
-          "name": "balance_not_shown",
-          "qualified_name_hint": "Becoming.TallyWorlds.balance_not_shown",
-          "line": 5055
-        },
-        {
-          "kind": "theorem",
-          "name": "occurrences_congr",
-          "qualified_name_hint": "Becoming.TallyWorlds.occurrences_congr",
-          "line": 5061
-        },
-        {
-          "kind": "theorem",
-          "name": "lpo_of_census_ends",
-          "qualified_name_hint": "Becoming.TallyWorlds.lpo_of_census_ends",
-          "line": 5074
-        }
-      ],
-      "declaration_counts": {
-        "abbrev": 3,
-        "def": 77,
-        "inductive": 1,
-        "theorem": 248
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
     "6ec81dacc176ce8265514d410acbb85511c89037d93bb6668ee62e9a7051e4f8": {
       "byte_size": 9894,
       "line_count": 205,
@@ -205840,6 +205846,159 @@
         "def": 7,
         "inductive": 1,
         "theorem": 12
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "94a875cbea7c13a037f39b72fb8033beea8e8256c05b0ea8b41f42af47a03c4f": {
+      "byte_size": 24203,
+      "line_count": 359,
+      "imports": [
+        "Becoming.CensusCounts",
+        "Becoming.Standing"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "binds_adds_counted",
+          "qualified_name_hint": "Becoming.World.binds_adds_counted",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_counting_counted",
+          "qualified_name_hint": "Becoming.World.binding_counting_counted",
+          "line": 70
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_counting_under_counted",
+          "qualified_name_hint": "Becoming.World.binding_counting_under_counted",
+          "line": 81
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_activity_iff_counted",
+          "qualified_name_hint": "Becoming.World.binding_activity_iff_counted",
+          "line": 99
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_arising_iff_counted",
+          "qualified_name_hint": "Becoming.World.binding_arising_iff_counted",
+          "line": 110
+        },
+        {
+          "kind": "theorem",
+          "name": "binding_joint_iff_counted",
+          "qualified_name_hint": "Becoming.World.binding_joint_iff_counted",
+          "line": 121
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_counting_counted",
+          "qualified_name_hint": "Becoming.World.finite_binding_counting_counted",
+          "line": 135
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_counting_counted",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_counted",
+          "line": 150
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_census_counted",
+          "qualified_name_hint": "Becoming.World.finite_binding_census_counted",
+          "line": 164
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_counting_under_counted",
+          "qualified_name_hint": "Becoming.World.finite_binding_counting_under_counted",
+          "line": 174
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_activity_iff_counted",
+          "qualified_name_hint": "Becoming.World.finite_binding_activity_iff_counted",
+          "line": 194
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_arising_iff_counted",
+          "qualified_name_hint": "Becoming.World.finite_binding_arising_iff_counted",
+          "line": 205
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_binding_joint_iff_counted",
+          "qualified_name_hint": "Becoming.World.finite_binding_joint_iff_counted",
+          "line": 217
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_counting_under_counted",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_under_counted",
+          "line": 234
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_activity_iff_counted",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_activity_iff_counted",
+          "line": 254
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_arising_iff_counted",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_arising_iff_counted",
+          "line": 265
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_binding_joint_iff_counted",
+          "qualified_name_hint": "Becoming.World.enclosed_binding_joint_iff_counted",
+          "line": 277
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_free_parts_counted",
+          "qualified_name_hint": "Becoming.World.counting_free_parts_counted",
+          "line": 292
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_binds_jointly_counted",
+          "qualified_name_hint": "Becoming.World.counting_binds_jointly_counted",
+          "line": 314
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_iff_finite_counting_counted",
+          "qualified_name_hint": "Becoming.World.enclosed_iff_finite_counting_counted",
+          "line": 329
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_iff_finite_counting_under_counted",
+          "qualified_name_hint": "Becoming.World.enclosed_iff_finite_counting_under_counted",
+          "line": 337
+        },
+        {
+          "kind": "theorem",
+          "name": "standing_iff_counting_counted",
+          "qualified_name_hint": "Becoming.World.standing_iff_counting_counted",
+          "line": 352
+        }
+      ],
+      "declaration_counts": {
+        "theorem": 22
       },
       "textual_markers": {
         "sorry": [],
@@ -266242,147 +266401,6 @@
       },
       "print_axioms_commands": 25
     },
-    "bdd45e529bf1a5b12d50938f2555f9e21c564882dcfa1371f6d0f60a20bd192e": {
-      "byte_size": 20820,
-      "line_count": 317,
-      "imports": [
-        "Becoming.Counting",
-        "Becoming.Decidedness"
-      ],
-      "declarations": [
-        {
-          "kind": "theorem",
-          "name": "counted_laws",
-          "qualified_name_hint": "Becoming.counted_laws",
-          "line": 70
-        },
-        {
-          "kind": "theorem",
-          "name": "comings_exist_iff",
-          "qualified_name_hint": "Becoming.World.comings_exist_iff",
-          "line": 83
-        },
-        {
-          "kind": "theorem",
-          "name": "ceasings_exist_iff_listed",
-          "qualified_name_hint": "Becoming.World.ceasings_exist_iff_listed",
-          "line": 91
-        },
-        {
-          "kind": "theorem",
-          "name": "comings_exist_iff_listed",
-          "qualified_name_hint": "Becoming.World.comings_exist_iff_listed",
-          "line": 108
-        },
-        {
-          "kind": "theorem",
-          "name": "queue_countsOf",
-          "qualified_name_hint": "Becoming.World.queue_countsOf",
-          "line": 128
-        },
-        {
-          "kind": "theorem",
-          "name": "embodiedQueue_countsOf",
-          "qualified_name_hint": "Becoming.World.embodiedQueue_countsOf",
-          "line": 133
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_free_counted",
-          "qualified_name_hint": "Becoming.World.counting_free_counted",
-          "line": 142
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_under_counted",
-          "qualified_name_hint": "Becoming.World.counting_under_counted",
-          "line": 152
-        },
-        {
-          "kind": "theorem",
-          "name": "premised_counting_counted",
-          "qualified_name_hint": "Becoming.World.premised_counting_counted",
-          "line": 161
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_binds_iff_counted",
-          "qualified_name_hint": "Becoming.World.counting_binds_iff_counted",
-          "line": 168
-        },
-        {
-          "kind": "theorem",
-          "name": "ring_countsOf",
-          "qualified_name_hint": "Becoming.World.ring_countsOf",
-          "line": 189
-        },
-        {
-          "kind": "theorem",
-          "name": "embodiedRing_countsOf",
-          "qualified_name_hint": "Becoming.World.embodiedRing_countsOf",
-          "line": 193
-        },
-        {
-          "kind": "theorem",
-          "name": "balancedRing_countsOf",
-          "qualified_name_hint": "Becoming.World.balancedRing_countsOf",
-          "line": 197
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_counting_counted",
-          "qualified_name_hint": "Becoming.World.enclosed_counting_counted",
-          "line": 204
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_counting_counted",
-          "qualified_name_hint": "Becoming.World.finite_counting_counted",
-          "line": 211
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_counting_under_counted",
-          "qualified_name_hint": "Becoming.World.enclosed_counting_under_counted",
-          "line": 221
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_change_bound_iff_counted",
-          "qualified_name_hint": "Becoming.World.enclosed_change_bound_iff_counted",
-          "line": 231
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_counting_under_counted",
-          "qualified_name_hint": "Becoming.World.finite_counting_under_counted",
-          "line": 254
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_counting_binds_iff_counted",
-          "qualified_name_hint": "Becoming.World.finite_counting_binds_iff_counted",
-          "line": 264
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_change_bound_iff_counted",
-          "qualified_name_hint": "Becoming.World.finite_change_bound_iff_counted",
-          "line": 291
-        }
-      ],
-      "declaration_counts": {
-        "theorem": 20
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
     "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee": {
       "byte_size": 90279,
       "line_count": 1627,
@@ -322287,6 +322305,147 @@
       },
       "print_axioms_commands": 109
     },
+    "e30c5df0fc1d8bff5c0445854b89b2f70c24759c0bac460a9c2e09dd4851a3c6": {
+      "byte_size": 17293,
+      "line_count": 273,
+      "imports": [
+        "Becoming.Counting",
+        "Becoming.Decidedness"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "counted_laws",
+          "qualified_name_hint": "Becoming.counted_laws",
+          "line": 73
+        },
+        {
+          "kind": "theorem",
+          "name": "comings_exist_iff",
+          "qualified_name_hint": "Becoming.World.comings_exist_iff",
+          "line": 86
+        },
+        {
+          "kind": "theorem",
+          "name": "ceasings_exist_iff_listed",
+          "qualified_name_hint": "Becoming.World.ceasings_exist_iff_listed",
+          "line": 94
+        },
+        {
+          "kind": "theorem",
+          "name": "comings_exist_iff_listed",
+          "qualified_name_hint": "Becoming.World.comings_exist_iff_listed",
+          "line": 111
+        },
+        {
+          "kind": "theorem",
+          "name": "queue_countsOf",
+          "qualified_name_hint": "Becoming.World.queue_countsOf",
+          "line": 131
+        },
+        {
+          "kind": "theorem",
+          "name": "embodiedQueue_countsOf",
+          "qualified_name_hint": "Becoming.World.embodiedQueue_countsOf",
+          "line": 136
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_free_counted",
+          "qualified_name_hint": "Becoming.World.counting_free_counted",
+          "line": 145
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_under_counted",
+          "qualified_name_hint": "Becoming.World.counting_under_counted",
+          "line": 155
+        },
+        {
+          "kind": "theorem",
+          "name": "premised_counting_counted",
+          "qualified_name_hint": "Becoming.World.premised_counting_counted",
+          "line": 164
+        },
+        {
+          "kind": "theorem",
+          "name": "counting_binds_iff_counted",
+          "qualified_name_hint": "Becoming.World.counting_binds_iff_counted",
+          "line": 171
+        },
+        {
+          "kind": "theorem",
+          "name": "ring_countsOf",
+          "qualified_name_hint": "Becoming.World.ring_countsOf",
+          "line": 181
+        },
+        {
+          "kind": "theorem",
+          "name": "embodiedRing_countsOf",
+          "qualified_name_hint": "Becoming.World.embodiedRing_countsOf",
+          "line": 185
+        },
+        {
+          "kind": "theorem",
+          "name": "balancedRing_countsOf",
+          "qualified_name_hint": "Becoming.World.balancedRing_countsOf",
+          "line": 189
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_counting_counted",
+          "qualified_name_hint": "Becoming.World.enclosed_counting_counted",
+          "line": 196
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_counting_counted",
+          "qualified_name_hint": "Becoming.World.finite_counting_counted",
+          "line": 203
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_counting_under_counted",
+          "qualified_name_hint": "Becoming.World.enclosed_counting_under_counted",
+          "line": 213
+        },
+        {
+          "kind": "theorem",
+          "name": "enclosed_change_bound_iff_counted",
+          "qualified_name_hint": "Becoming.World.enclosed_change_bound_iff_counted",
+          "line": 223
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_counting_under_counted",
+          "qualified_name_hint": "Becoming.World.finite_counting_under_counted",
+          "line": 238
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_counting_binds_iff_counted",
+          "qualified_name_hint": "Becoming.World.finite_counting_binds_iff_counted",
+          "line": 248
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_change_bound_iff_counted",
+          "qualified_name_hint": "Becoming.World.finite_change_bound_iff_counted",
+          "line": 260
+        }
+      ],
+      "declaration_counts": {
+        "theorem": 20
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "e31921980a618671871e18a99a80663dd930f0111724eaa6b0481382583c9b05": {
       "byte_size": 7591,
       "line_count": 132,
@@ -352503,159 +352662,6 @@
         "def": 6,
         "inductive": 1,
         "theorem": 18
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
-    "f626c7641e4e9950fbac7f2072017546a19394d4f3bb53e2c3e51df3ccd49db5": {
-      "byte_size": 36210,
-      "line_count": 542,
-      "imports": [
-        "Becoming.CensusCounts",
-        "Becoming.Standing"
-      ],
-      "declarations": [
-        {
-          "kind": "theorem",
-          "name": "binds_adds_counted",
-          "qualified_name_hint": "Becoming.World.binds_adds_counted",
-          "line": 57
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_counting_counted",
-          "qualified_name_hint": "Becoming.World.binding_counting_counted",
-          "line": 66
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_counting_under_counted",
-          "qualified_name_hint": "Becoming.World.binding_counting_under_counted",
-          "line": 77
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_activity_iff_counted",
-          "qualified_name_hint": "Becoming.World.binding_activity_iff_counted",
-          "line": 95
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_arising_iff_counted",
-          "qualified_name_hint": "Becoming.World.binding_arising_iff_counted",
-          "line": 125
-        },
-        {
-          "kind": "theorem",
-          "name": "binding_joint_iff_counted",
-          "qualified_name_hint": "Becoming.World.binding_joint_iff_counted",
-          "line": 142
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_counting_counted",
-          "qualified_name_hint": "Becoming.World.finite_binding_counting_counted",
-          "line": 173
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_counting_counted",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_counted",
-          "line": 188
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_census_counted",
-          "qualified_name_hint": "Becoming.World.finite_binding_census_counted",
-          "line": 202
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_counting_under_counted",
-          "qualified_name_hint": "Becoming.World.finite_binding_counting_under_counted",
-          "line": 212
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_activity_iff_counted",
-          "qualified_name_hint": "Becoming.World.finite_binding_activity_iff_counted",
-          "line": 232
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_arising_iff_counted",
-          "qualified_name_hint": "Becoming.World.finite_binding_arising_iff_counted",
-          "line": 264
-        },
-        {
-          "kind": "theorem",
-          "name": "finite_binding_joint_iff_counted",
-          "qualified_name_hint": "Becoming.World.finite_binding_joint_iff_counted",
-          "line": 285
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_counting_under_counted",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_counting_under_counted",
-          "line": 328
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_activity_iff_counted",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_activity_iff_counted",
-          "line": 348
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_arising_iff_counted",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_arising_iff_counted",
-          "line": 380
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_binding_joint_iff_counted",
-          "qualified_name_hint": "Becoming.World.enclosed_binding_joint_iff_counted",
-          "line": 401
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_free_parts_counted",
-          "qualified_name_hint": "Becoming.World.counting_free_parts_counted",
-          "line": 437
-        },
-        {
-          "kind": "theorem",
-          "name": "counting_binds_jointly_counted",
-          "qualified_name_hint": "Becoming.World.counting_binds_jointly_counted",
-          "line": 459
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_iff_finite_counting_counted",
-          "qualified_name_hint": "Becoming.World.enclosed_iff_finite_counting_counted",
-          "line": 474
-        },
-        {
-          "kind": "theorem",
-          "name": "enclosed_iff_finite_counting_under_counted",
-          "qualified_name_hint": "Becoming.World.enclosed_iff_finite_counting_under_counted",
-          "line": 482
-        },
-        {
-          "kind": "theorem",
-          "name": "standing_iff_counting_counted",
-          "qualified_name_hint": "Becoming.World.standing_iff_counting_counted",
-          "line": 535
-        }
-      ],
-      "declaration_counts": {
-        "theorem": 22
       },
       "textual_markers": {
         "sorry": [],
