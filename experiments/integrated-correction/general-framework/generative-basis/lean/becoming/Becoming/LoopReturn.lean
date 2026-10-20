@@ -20,7 +20,9 @@ link applied first. The course of the difference is the run of the return map,
 `(Law.run f d).state n`, a run of the spine whose states are the orbit `Law.orbit f d n`
 (`Becoming.Recurrence`, `Law.run_state`), the difference after `n` turns from `d`. The difference
 is one number, a simplification of Rejoining's levels at many conditions; no theorem here reads a
-loop of Rejoining as a return map.
+loop of Rejoining as a return map. A link's *factor* is what one turn makes of the difference it
+receives; a *strength* is only a coupling strength of `Becoming.Propagation`, and around a cycle the
+product of the coupling strengths (`Loops.product`). The last section joins the two.
 
 * **A return map giving back what it receives keeps a difference.** Such a return map keeps
   `d` at every turn (`LoopReturn.kept_of_identity`), and so does a loop each of whose links gives on
@@ -69,21 +71,36 @@ loop of Rejoining as a return map.
   `runaway_of_roundTrip` turns doubling at returns that come often enough into outgrowing every
   polynomial in the steps. Here the doubling is a property of each link, and the count is of
   turns, not of steps; how many steps a turn takes is what `Becoming.Frequency` adds.
-* **Whole-number strengths have nothing between.** In a loop of links multiplying by whole-number
-  strengths (`LoopReturn.scaling`), the return map multiplies by the product of the strengths
+* **Whole-number factors have nothing between.** In a loop of links multiplying by whole-number
+  factors (`LoopReturn.scaling`), the return map multiplies by the product of the factors
   (`LoopReturn.returnMap_scaling`, `LoopReturn.orbit_scaling`). With product `0` the difference closes
   at the first turn, with product `1` it is kept at every turn, and with product at least `2` it
-  exceeds every bound from a positive start (`LoopReturn.whole_strengths`). So no such loop closes a
+  exceeds every bound from a positive start (`LoopReturn.whole_factors`). So no such loop closes a
   difference gradually: at every turn the course is `0` or no less than at the turn before
   (`LoopReturn.nothing_between`), while taking one off, from `2`, leaves `1` after one turn
-  (`LoopReturn.gradual_needs_another_link`). With whole-number strengths, a loop that closes
+  (`LoopReturn.gradual_needs_another_link`). With whole-number factors, a loop that closes
   gradually needs a link that is not a multiplication.
+* **The return map is the carried amount of `Becoming.Loops`.** For one condition returning its
+  current level to itself with coupling strength `M` (`Loops.SelfLoop.strengths`), the carried
+  amount from a starting gap `D` is, at every step, the course from `D` of the loop of one link with
+  factor `1 + M`, one turn a step (`LoopReturn.selfLoop_carried`, through
+  `LoopReturn.geomBound_eq_course`). The carried amount is attained by the course the carrying law
+  generates, against the quiet course (`carried_attained`), so where the actual response attains the
+  carrying bound the gap itself is that course (`LoopReturn.selfLoop_gap`). Around every cycle of
+  `m + 1` couplings holding at every step, the carried amount after `R` times around is at least the
+  course after `R` turns of the loop of one link with factor one plus the product of the coupling
+  strengths around the cycle (`LoopReturn.carried_around_course`, from `carried_runaway`). The one is
+  the holding: the carrying law takes nothing, so a condition keeps what it had while the cycle
+  returns more. A positive whole-number strength gives a factor of at least `2`, the doubling of
+  `carried_doubles_around`.
 
 What is not derived: which return law a loop follows, which the laws above take as given, as
 `Becoming.Rejoining` leaves the response to the law followed; that a difference is one number,
 rather than many differences at many conditions; how many steps a turn takes (`Becoming.Frequency`);
-and which of keeping, closing or widening a difference supports the generation of life in the
-whole, which goes through the comparison and the condition of the chapter's §6.15.
+the carried amount around a cycle of more than one condition as a return map (intermediate
+conditions hold and keep giving, so a turn is not a map of one number; the bound above is what
+holds); and which of keeping, closing or widening a difference supports the generation of life in
+the whole, which goes through the comparison and the condition of the chapter's §6.15.
 -/
 
 namespace Becoming
@@ -98,13 +115,13 @@ def returnMap : List (Nat → Nat) → Nat → Nat
   | [], x => x
   | g :: gs, x => returnMap gs (g x)
 
-/-- The links that multiply by whole-number strengths. -/
+/-- The links that multiply by whole-number factors. -/
 def scaling (as : List Nat) : List (Nat → Nat) := as.map (fun a x => a * x)
 
-/-- The product of the strengths. -/
-def strength : List Nat → Nat
+/-- The product of the factors. -/
+def factor : List Nat → Nat
   | [] => 1
-  | a :: as => a * strength as
+  | a :: as => a * factor as
 
 /-- A course at a value the return map keeps stays there. -/
 theorem orbit_of_fixed {f : Nat → Nat} {v : Nat} (fixed : f v = v) : ∀ n, (Law.run f v).state n = v
@@ -445,34 +462,34 @@ theorem doubling_exact :
 theorem empty_loop_kept (d : Nat) : ∀ n, (Law.run (returnMap []) d).state n = d :=
   kept_of_identity (fun _ => rfl) d
 
-/-! ## Whole-number strengths -/
+/-! ## Whole-number factors -/
 
-/-- **A loop of multiplying links multiplies by the product of the strengths.** -/
-theorem returnMap_scaling : ∀ (as : List Nat) (x : Nat), returnMap (scaling as) x = strength as * x
+/-- **A loop of multiplying links multiplies by the product of the factors.** -/
+theorem returnMap_scaling : ∀ (as : List Nat) (x : Nat), returnMap (scaling as) x = factor as * x
   | [], x => (Nat.one_mul x).symm
   | a :: as, x =>
     (returnMap_scaling as (a * x)).trans
-      ((mul_assoc_nat (strength as) a x).symm.trans
-        (congrArg (· * x) (Nat.mul_comm (strength as) a)))
+      ((mul_assoc_nat (factor as) a x).symm.trans
+        (congrArg (· * x) (Nat.mul_comm (factor as) a)))
 
 /-- **The course of a loop of multiplying links.** After `n` turns the difference is the product
-of the strengths to the `n` times the difference sent. -/
+of the factors to the `n` times the difference sent. -/
 theorem orbit_scaling (as : List Nat) (d : Nat) :
-    ∀ n, (Law.run (returnMap (scaling as)) d).state n = strength as ^ n * d
+    ∀ n, (Law.run (returnMap (scaling as)) d).state n = factor as ^ n * d
   | 0 => (Nat.one_mul d).symm
   | n + 1 =>
     (returnMap_scaling as _).trans
-      ((congrArg (strength as * ·) (orbit_scaling as d n)).trans
-        ((mul_assoc_nat (strength as) _ d).symm.trans
-          (congrArg (· * d) ((Nat.mul_comm (strength as) _).trans (Nat.pow_succ _ n).symm))))
+      ((congrArg (factor as * ·) (orbit_scaling as d n)).trans
+        ((mul_assoc_nat (factor as) _ d).symm.trans
+          (congrArg (· * d) ((Nat.mul_comm (factor as) _).trans (Nat.pow_succ _ n).symm))))
 
-/-- **Whole-number strengths have nothing between.** In a loop of links multiplying by
-whole-number strengths with product `P`: with `P = 0` the difference closes at the first turn, with
+/-- **Whole-number factors have nothing between.** In a loop of links multiplying by
+whole-number factors with product `P`: with `P = 0` the difference closes at the first turn, with
 `P = 1` it is kept at every turn, and with `P ≥ 2` it exceeds every bound from a positive start. -/
-theorem whole_strengths (as : List Nat) (d : Nat) :
-    (strength as = 0 → ∀ n, (Law.run (returnMap (scaling as)) d).state (n + 1) = 0) ∧
-    (strength as = 1 → ∀ n, (Law.run (returnMap (scaling as)) d).state n = d) ∧
-    (2 ≤ strength as → 0 < d → ∀ B, ∃ n, B < (Law.run (returnMap (scaling as)) d).state n) :=
+theorem whole_factors (as : List Nat) (d : Nat) :
+    (factor as = 0 → ∀ n, (Law.run (returnMap (scaling as)) d).state (n + 1) = 0) ∧
+    (factor as = 1 → ∀ n, (Law.run (returnMap (scaling as)) d).state n = d) ∧
+    (2 ≤ factor as → 0 < d → ∀ B, ∃ n, B < (Law.run (returnMap (scaling as)) d).state n) :=
   ⟨fun zero _ =>
     (returnMap_scaling as _).trans ((congrArg (· * _) zero).trans (Nat.zero_mul _)),
    fun one n =>
@@ -489,11 +506,11 @@ theorem whole_strengths (as : List Nat) (d : Nat) :
 theorem nothing_between (as : List Nat) (d n : Nat) :
     (Law.run (returnMap (scaling as)) d).state (n + 1) = 0 ∨
       (Law.run (returnMap (scaling as)) d).state n ≤ (Law.run (returnMap (scaling as)) d).state (n + 1) :=
-  match h : strength as with
-  | 0 => Or.inl ((whole_strengths as d).1 h n)
+  match h : factor as with
+  | 0 => Or.inl ((whole_factors as d).1 h n)
   | k + 1 =>
     Or.inr (Nat.le_trans (Nat.le_of_eq (Nat.one_mul _).symm)
-      (Nat.le_trans (Nat.mul_le_mul_right _ (h ▸ Nat.succ_pos k : 0 < strength as))
+      (Nat.le_trans (Nat.mul_le_mul_right _ (h ▸ Nat.succ_pos k : 0 < factor as))
         (Nat.le_of_eq (returnMap_scaling as _).symm)))
 
 /-- **A loop that closes gradually needs a link that is not a multiplication.** No loop of
@@ -509,6 +526,68 @@ theorem gradual_needs_another_link :
     | Or.inl closed => Nat.ne_of_gt pos closed
     | Or.inr le => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le lt le),
    ⟨Nat.succ_pos 0, Nat.lt_succ_self 1⟩⟩
+
+/-! ## The return map as the carried amount of `Becoming.Loops`
+
+A link's factor is what one turn makes of the difference the link receives. Under the carrying law
+of `Becoming.Propagation`, which gives what the coupling strengths make of the levels and takes
+nothing, a condition holds what it had and receives what the strengths carry back to it, so one
+turn multiplies by one plus the coupling strength, and around a cycle by at least one plus the
+product of the coupling strengths around it. -/
+
+/-- One link's factor is the factor of the loop of that one link. -/
+theorem factor_single (a : Nat) : factor [a] = a :=
+  Nat.mul_one a
+
+/-- The self-loop's bound, step by step, is the course of the loop of one link with factor
+`1 + M`. -/
+theorem geomBound_eq_course (M D : Nat) :
+    ∀ t, Loops.geomBound M D t = (Law.run (returnMap (scaling [1 + M])) D).state t
+  | 0 => rfl
+  | t + 1 =>
+    show Loops.geomBound M D t + M * Loops.geomBound M D t =
+        (1 + M) * (Law.run (returnMap (scaling [1 + M])) D).state t from
+    (Loops.one_add_mul M _).symm.trans (congrArg ((1 + M) * ·) (geomBound_eq_course M D t))
+
+/-- **A self-loop's carried amount is the course of a return map.** One condition returning its
+current level to itself with coupling strength `M` (`Loops.SelfLoop.strengths`): from a starting gap
+`D`, the carried amount at step `t` is the course from `D`, after `t` turns, of the loop of one link
+with factor `1 + M`, one turn a step. -/
+theorem selfLoop_carried (M D t : Nat) :
+    carried [()] (fun _ => false) (fun _ _ _ => 0) (Loops.SelfLoop.strengths M) (fun _ => [()])
+        (fun _ => D) t () =
+      (Law.run (returnMap (scaling [1 + M])) D).state t :=
+  (Loops.SelfLoop.carried_eq M D t).trans (geomBound_eq_course M D t)
+
+/-- **Where the response attains the carrying bound, the gap is the course of the return map.** The
+course the carrying law generates from `D` has, against the quiet course, exactly the carried
+amount as its gap at every step (`carried_attained`); for the self-loop of coupling strength `M`
+that gap is the course of the loop of one link with factor `1 + M`. -/
+theorem selfLoop_gap (M D t : Nat) :
+    gap (carried [()] (fun _ => false) (fun _ _ _ => 0) (Loops.SelfLoop.strengths M) (fun _ => [()])
+          (fun _ => D) t ())
+        (carried [()] (fun _ => false) (fun _ _ _ => 0) (Loops.SelfLoop.strengths M)
+          (fun _ => [()]) (fun _ => 0) t ()) =
+      (Law.run (returnMap (scaling [1 + M])) D).state t :=
+  (carried_attained t ()).trans (selfLoop_carried M D t)
+
+/-- **Around every cycle, at least the course of one plus the product of the coupling strengths.**
+Where at every step each condition of a loop of `m + 1` couplings is coupled into the next with
+strength at least `w` (`CoupledWith`), the carried amount at the loop after `R` times around is at
+least the course, after `R` turns, of the loop of one link whose factor is one plus the product of
+the coupling strengths around the cycle (`Loops.product`), from what had reached the loop
+(`carried_runaway`). -/
+theorem carried_around_course {F C : Type} {cs : List C} {part : F → Bool}
+    {σ : Nat → F → C → Nat} {k : Nat → F → C → Nat → C → Nat} {present : Nat → List F}
+    {δ : C → Nat} {v : Nat → C} {w : Nat → Nat} {m : Nat} {e : C} (start : v 0 = e)
+    (back : v (m + 1) = e) (loop : CoupledWith cs part k present v w (m + 1)) (t R : Nat) :
+    (Law.run (returnMap (scaling [1 + Loops.product w (m + 1)]))
+        (carried cs part σ k present δ t e)).state R ≤
+      carried cs part σ k present δ (t + (m + 1) * R) e :=
+  Nat.le_trans
+    (Nat.le_of_eq ((orbit_scaling _ _ R).trans
+      (congrArg (fun x => x ^ R * carried cs part σ k present δ t e) (factor_single _))))
+    (carried_runaway start back loop t R)
 
 end LoopReturn
 

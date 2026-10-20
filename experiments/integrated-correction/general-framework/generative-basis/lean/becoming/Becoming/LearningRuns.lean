@@ -49,10 +49,10 @@ identity (`Parting.freeRun`), and every run of a determined law is its orbit
   by `reg` (`Law.frameBy`), a value proposed at a step where the features differ is right on at
   most one (`claim_not_right_on_both`); with the features decided it misses on one, the prefixes
   equal at every step (`missed_on_one`). Along the runs of the law leaving two coordinates
-  unchanged, no extrapolation through the map to the first rests in accord with the second at
-  both `(true, false)` and `(true, true)` (`pair_first_not_rests`), none rests in accord with it
+  unchanged, no extrapolation through the map to the first predicts the second at both
+  `(true, false)` and `(true, true)` (`pair_first_not_predicts`), none predicts it
   along every run (`pair_not_learnable`), and through the map to both, elimination over the lasso
-  candidates rests in accord with the second from step `2` (`pair_whole_rests`).
+  candidates predicts the second from step `2` (`pair_whole_predicts`).
 
 No ethical predicate, ranking or axiom occurs.
 
@@ -418,26 +418,26 @@ theorem pair_world : ∀ s : Bool × Bool, s ∈ [(true, true), (true, false), (
   | (false, true) => List.Mem.tail _ (List.Mem.tail _ (List.Mem.head _))
   | (false, false) => List.Mem.tail _ (List.Mem.tail _ (List.Mem.tail _ (List.Mem.head _)))
 
-/-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
-along the runs from both `(true, false)` and `(true, true)`** of the law leaving each
+/-- **Through the map to the first coordinate, no extrapolation predicts the second along the
+runs from both `(true, false)` and `(true, true)`** of the law leaving each
 configuration unchanged. -/
-theorem pair_first_not_rests (pred : List Bool → Option Bool) :
+theorem pair_first_not_predicts (pred : List Bool → Option Bool) :
     ¬ (LearnableRuns.Predicts Prod.fst Prod.snd pred (Law.run Learnable.Pair.still (true, false)) ∧
       LearnableRuns.Predicts Prod.fst Prod.snd pred (Law.run Learnable.Pair.still (true, true))) :=
   fun ⟨rests, rests'⟩ => Learnable.Pair.first_not_predicts pred
     ⟨(LearnableRuns.predicts_iff _).mp rests, (LearnableRuns.predicts_iff _).mp rests'⟩
 
-/-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
-along every run.** -/
+/-- **Through the map to the first coordinate, no extrapolation predicts the second along every
+run.** -/
 theorem pair_not_learnable :
     ¬ ∃ pred : List Bool → Option Bool, ∀ r : Run (Law.process Learnable.Pair.still),
       LearnableRuns.Predicts Prod.fst Prod.snd pred r :=
   fun learnable => Learnable.Pair.not_lumped
     ((LearnableRuns.still_learnable_iff_lumped (fun _ => rfl) pair_world).mp learnable)
 
-/-- **Through the map to both, elimination over the lasso candidates rests in accord with the
-second along every run from step `2`.** -/
-theorem pair_whole_rests (r : Run (Law.process Learnable.Pair.still)) :
+/-- **Through the map to both, elimination over the lasso candidates predicts the second along
+every run from step `2`.** -/
+theorem pair_whole_predicts (r : Run (Law.process Learnable.Pair.still)) :
     LearnableRuns.PredictsFrom id Prod.snd (fun l => (byElimination lassos l).map Prod.snd) r 2 :=
   (LearnableRuns.predictsFrom_iff r 2).mpr (Learnable.Pair.whole_predicts (r.state 0))
 

@@ -1,0 +1,54 @@
+{
+  "about": "R33, board item of the twentieth review (joins), 20 October 2026: the declarations renamed, statements unchanged; no aliases (the pure core has no `alias`, and a copy would count as a theorem), so this table is the lookup for every old name, as R30's RENAME-TABLE.json is. sigcheck.py reads it.",
+  "renamed": [
+    {
+      "old": "Becoming.LoopReturn.strength",
+      "new": "Becoming.LoopReturn.factor",
+      "kind": "decl",
+      "reason": "G6 (one loop theory): a strength is a coupling strength of Becoming.Propagation, and around a cycle the product of the coupling strengths (Loops.product); what a link of a return map multiplies by is its factor. On a self-coupled condition the factor is one plus the coupling strength (LoopReturn.selfLoop_carried)."
+    },
+    {
+      "old": "Becoming.LoopReturn.whole_strengths",
+      "new": "Becoming.LoopReturn.whole_factors",
+      "kind": "decl",
+      "reason": "G6: the theorem is about links multiplying by whole-number factors, as above."
+    },
+    {
+      "old": "Becoming.LearningRuns.pair_first_not_rests",
+      "new": "Becoming.LearningRuns.pair_first_not_predicts",
+      "kind": "decl",
+      "reason": "G5, completing R30's rename of Learnable.Rests: the statement is LearnableRuns.Predicts; nothing rests, the prediction is right from some step on."
+    },
+    {
+      "old": "Becoming.LearningRuns.pair_whole_rests",
+      "new": "Becoming.LearningRuns.pair_whole_predicts",
+      "kind": "decl",
+      "reason": "G5, as above: the statement is LearnableRuns.PredictsFrom."
+    }
+  ],
+  "not_renamed": [
+    {
+      "names": [
+        "Becoming.Learning.lasso_of_rest",
+        "Becoming.Learning.Alternate.rests",
+        "Becoming.Identification.byElimination_rests",
+        "Becoming.Identification.rests_of_lasso",
+        "Becoming.Identification.held_byElimination_rests",
+        "Becoming.LearningRuns.alternate_rests",
+        "Becoming.LearningRuns.held_rest_unrefuted",
+        "Becoming.LearningRuns.merged_unrested"
+      ],
+      "reason": "Elimination's current candidate does come to rest there (its index stops changing, Learning.index), which is rest in the sense of Seeking and Enough; the names say so."
+    }
+  ],
+  "declarations": {
+    "Becoming.LoopReturn.strength": "Becoming.LoopReturn.factor",
+    "Becoming.LoopReturn.whole_strengths": "Becoming.LoopReturn.whole_factors",
+    "Becoming.LearningRuns.pair_first_not_rests": "Becoming.LearningRuns.pair_first_not_predicts",
+    "Becoming.LearningRuns.pair_whole_rests": "Becoming.LearningRuns.pair_whole_predicts"
+  },
+  "modules": {
+    "Becoming.LawThroughCoupling": "Becoming.LawAlongRun",
+    "Becoming.LawThroughChangingCoupling": "Becoming.LawAlongRun"
+  }
+}

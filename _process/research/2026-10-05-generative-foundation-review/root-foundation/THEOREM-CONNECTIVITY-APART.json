@@ -1137,11 +1137,6 @@
    "category": "support",
    "reason": "a list lemma proved without `propext`: a filter every member passes keeps the list (F3C's constructive support for the family)"
   },
-  "Becoming.Naturals.add_le_of_le_sub": {
-   "module": "Becoming.Prelude",
-   "category": "support",
-   "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
-  },
   "Becoming.Naturals.add_left_cancel": {
    "module": "Becoming.Prelude",
    "category": "support",
@@ -1726,6 +1721,11 @@
    "module": "Becoming.PartialReadout",
    "category": "model-witness",
    "reason": "a fact about the constructed channel model (exactness surviving compression); the general law is read on runs as `Runs.retained_exact`. It took the entry of `PartialReadout.parity_exact`, the forwarder R32 removed"
+  },
+  "Becoming.Interleavings.LocalLaw.standings_of_interleavings": {
+   "module": "Becoming.Interleavings",
+   "category": "general-structure",
+   "reason": "two interleavings of the same own courses give each relatum the same course of standings, for a local law on any state type: the per-relatum course is the module's own vocabulary, which the step-indexed World does not index; what the World reads of it is on the base (`world_final`, `world_swap`, `world_swap_between`)"
   }
  },
  "instances": {

@@ -259,8 +259,6 @@ import Becoming.SelectionReach
 import Becoming.SelectionPool
 import Becoming.PoolResponse
 import Becoming.Rejoining
-import Becoming.LawThroughCoupling
-import Becoming.LawThroughChangingCoupling
 import Becoming.Lexical
 import Becoming.Frontier
 import Becoming.FrontierFrames
@@ -405,14 +403,21 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   and are named sensibly exactly where alike ones are one; determinacy as equality depends on
   names. Ren confirmed the reading of law and history; the other readings are the AI's. The
   readings needing only the frame and the world are stated in `Becoming.Labelled`.
-* `Becoming.LawAlongRun` (L1): a law through a projection along one run, and exactness. Some
-  determined process on a description admits a run's steps read through it up to a step exactly
-  where two of them alike under it, by the same move, reach configurations alike under it; the
-  witness is the record read through the description, the least candidate, and once failed the
-  criterion fails from then on. Through the identity at every step it is `Becoming.Unfolding`'s
-  history law. A run can show a law the process lacks. The image is an exact finite-path
-  projection (`Generative.projection_exact_iff`) exactly where configurations alike match each
-  other's steps up to the description; going alike does not give it.
+* `Becoming.LawAlongRun` (L1): a law along one run, under a relation, and exactness. Under an
+  equivalence, some process going alike under it admits a run's steps up to a step exactly where
+  any two of them alike under it, by the same move, end alike; the record read under it is the
+  witness, and once failed the criterion fails from then on. Its three readings are corollaries:
+  through a projection (equal images), where the witness is the least candidate and through the
+  identity at every step it is `Becoming.Unfolding`'s history law; through coupling that changes
+  along the run, with dependences read off the configuration; and through fixed conditions, where
+  it is `Web.AlikeThrough` on the runs read through them, unchanged dependences giving one
+  criterion. A run can show a law the process lacks. The image is an exact finite-path projection
+  (`Generative.projection_exact_iff`) exactly where configurations alike match each other's steps
+  up to the description; going alike does not give it. In `Unseen` an uncoupled level decides the
+  next coupling and coupling into it restores the law; in `Changing` a dissolving dependence
+  carries a law the coupling fixed at the start lacks, and a forming one breaks a law it has.
+  `Becoming.LawThroughCoupling` and `Becoming.LawThroughChangingCoupling` were joined into it
+  (R33), their declarations kept under their names.
 * `Becoming.Irreversibility` (L1): return belongs to the law, not to the occurring change: the
   dead end never returns, the same change occurs under the dead end and the flip with different
   return, and a constant reading hides the loss. Stated by F2 from `BecomingReversibility`.
@@ -1197,23 +1202,6 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   the responsive reach exchanges with stays as it was. In `Replenishing` a responder reading the
   level gives back what the act took and the courses rejoin. The course without the act is a
   comparison, not a standard.
-* `Becoming.LawThroughCoupling` (L1): a law through what a formation couples into, along one
-  run. Up to an equivalence, some process going alike under it admits a run's steps up to a
-  step exactly where any two of them alike under it, by the same move, end alike; the record
-  read under it is the witness, once failed the criterion fails from then on, and through equal
-  projections it is `Becoming.LawAlongRun`'s. With fixed conditions a formation's coupling at a
-  configuration is such an equivalence and is `Web.AlikeThrough` on the runs read through the
-  conditions. In `Unseen` the process is determined and a level the formation does not couple
-  into decides what it next couples into, so no law holds at its coupling along the run;
-  coupling into that level restores it.
-* `Becoming.LawThroughChangingCoupling` (L1): a law through coupling that changes along the run.
-  With dependences read off the configuration (`Dependence`), what a formation couples into at
-  each occasion, through the dependence it then has, is an equivalence, so the criterion of
-  `Becoming.LawThroughCoupling` holds through it; fixed conditions are the instance, and
-  `Web.AlikeThrough` read at one step fixes the dependence of that step. Where the formation's
-  dependences do not change along the run the two criteria agree. In `Changing`, on one
-  determined process, a dissolving dependence carries a law the coupling fixed at the start
-  lacks, and a forming one breaks a law it has.
 * `Becoming.Learning` (L1): no record fixes the next value: two courses share any record and
   differ at its next step, also among worlds held by a list, and for every learner a course
   refutes each of its claims, the registration of a law keeping its record, so open. Learning by
@@ -1317,8 +1305,13 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   difference, exactly, and a closing loop merges; taking a constant off closes at the least
   turn it covers the difference; a cut closes at once where what follows gives nothing for
   nothing; monotone return maps settle or rise; doubling links run away. With whole-number
-  strengths a loop closes at the first turn, keeps the difference or runs away, nothing
-  between: closing gradually needs a link that is not a multiplication.
+  factors a loop closes at the first turn, keeps the difference or runs away, nothing between:
+  closing gradually needs a link that is not a multiplication. A link's factor is what it
+  multiplies by, not a coupling strength: on a condition coupled to itself with strength `M`, the
+  return map multiplying by `1 + M` is `Becoming.Loops`' carried amount, turn by turn, and the
+  gap against the quiet course (`selfLoop_carried`, `selfLoop_gap`); around a cycle of several
+  conditions the return map multiplying by one plus the product of the coupling strengths stays
+  at or below the carried amount (`carried_around_course`).
 * `Becoming.Pace` (L1): how fast a rule may change. A two-level course, the fast
   configuration stepping by a rule that changes only at reading steps, is a run of one law. A
   rule that never reads is kept from then on: nothing the fast level meets reaches it, and under it
@@ -1364,7 +1357,11 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   waits clear of sources, and a loop clear of sources is never restored; without memory it is
   exactly no chain of `n` waits, and with memory no step restores. The certificate of
   `Becoming.FaultEnvelopes` read as a law of giving keeps a covered set giving under separated
-  envelopes, and is available exactly where they are separated.
+  envelopes, and is available exactly where they are separated. On a web where each condition
+  depends only on itself, needs `k` units, and is given one unit by each upstream formation
+  supported the step before, support is the run of the tolerating law with tolerance the number
+  upstream less `k` (`web_tolerating`), and with `k` all upstream it is `Becoming.Withholding`'s
+  law without memory (`web_answers`).
 * `Becoming.Revision` (L1): Selection when the lumping itself changes.
 * `Becoming.Undecided` (L1): the third value and revision, with no premise. With values true,
   undecided and false, undecided below the decided ones in information, a term with no constant
@@ -1447,9 +1444,9 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   labelling carries over. The readings are the AI's.
 * `Becoming.Learnable` (L1): what a learner can learn through its registration, with no
   premise. Two configurations with the same registered future give every learner the same
-  record, so where their targets differ a claim is right on at most one, and a learner resting
-  on both has targets that agree from some step on. In a world a list holds, some learner rests
-  on a target at every configuration exactly where configurations with the same registered
+  record, so where their targets differ a claim is right on at most one, and a learner
+  predicting both has targets that agree from some step on. In a world a list holds, some learner
+  predicts a target at every configuration exactly where configurations with the same registered
   future have targets that agree from some step on. A target read off the registration is
   learned by the learner over the lasso hypotheses, given nothing, within the bound of
   identification. Where the law leaves every configuration unchanged, the learnable targets are
@@ -2175,7 +2172,11 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   so do two traces of the exchange process; a scheduler builds an interleaving of given courses
   exactly where one exists; and the own courses fix the interleaving exactly where every exchange
   touches a relatum and every two share one. The shared index is a reading of the relations: beyond
-  them it orders only exchanges sharing no relatum, which changes no configuration.
+  them it orders only exchanges sharing no relatum, which changes no configuration. From a local
+  law on whole-number standings and a list of exchanges, `LocalLaw.world` is a `World` of the
+  spine whose steps balance; two interleavings of the same own courses give every relatum the same
+  course of standings and the same end, and two adjacent exchanges sharing no relatum, taken in
+  either order, leave the world alike at every step but the one between them.
 * `Becoming.CensusCounts` (L1): the laws of counting where the counts exist, with no decision
   procedure for activity and for every property of the counts. The counts of a census are taken as
   relations (`Counts`); across a step a ceasing or coming count exists exactly where, for each
@@ -2239,7 +2240,8 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   nothing" verifies settling in the limit; on the free process settling and its complement are
   dense, settling is neither verifiable nor refutable, and under Markov's principle no method
   refutes it in the limit; recurrence is refuted in the limit and under Markov's principle verified
-  by none. Identification in the limit verifies and refutes each hypothesis in the limit. From not
+  by none. Identification in the limit, tracking a constant target, verifies and refutes each
+  hypothesis in the limit. From not
   recurring to stopping, and splitting a recurring disjunction, each give the limited principle of
   omniscience.
 * `Becoming.Frequency` (L1): how often couplings act, with no premise beyond the strengths and the
@@ -2303,14 +2305,18 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   premise. A run of a determined law is its orbit and runs beginning alike in the frame of the
   registration give every learner the same record, so in a world a list holds a target is
   learnable along every run exactly where runs beginning alike have targets that agree from some
-  step on.
+  step on. Learning through a map is `Becoming.LimitVerification`'s tracking in the limit: the
+  extrapolation's guesses, fixed by the record, track the target (`predicts_iff_tracks`, and in a
+  world a list holds `learnable_iff_tracks`); where the target is invariant along the law this is
+  identification in the limit (`learnable_iff_identifies`), and without that premise it is not
+  (`Merge.learnable_not_identifies`).
 * `Becoming.PartialReadout` (L1): partial readout of a feature through a map on a domain (no
   premise beyond what each theorem names; a section of the map is a hypothesis where a reading
   must be built): an exact reading is sound and needs the feature lumped (`ExactWithin.sound`,
   `ExactWithin.lumped`), and with a section one exists exactly then (`PartialReadout.exact_exists_iff`); a sound
   reading stays silent where the map merges two feature values (`SoundWithin.silent`); in the
   channel model the signal alone is read by no exact reading and the signal with a reference is
-  (`signal_no_exact`, `paired_exact`); on runs, an extrapolation rests on the feature from a step
+  (`signal_no_exact`, `paired_exact`); on runs, an extrapolation predicts the feature from a step
   exactly where it reads the prefix exactly from then on (`Runs.exact_iff_predictsFrom`).
 * `Becoming.CodeAcquisition` (L1): acquiring a two-primitive code from probe records (supplied
   code, probes and stock): the probe records give the code exactly and so every expression

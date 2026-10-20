@@ -7,29 +7,30 @@ import Becoming.Seeking
 An extrapolation proposes, from values through a map, a value of a feature the map need not
 take: a map `reg : S → R` of configurations, a feature `val : S → V`, and an extrapolation
 `pred : List R → Option V` that proposes at step `t` of the orbit from `s`, from the prefix
-before `t` of the course through the map (`Becoming.Learning`'s `prefixOf`). It rests in accord
-with the feature from step `T` where it proposes the feature's value at every later step
+before `t` of the course through the map (`Becoming.Learning`'s `prefixOf`). It predicts the
+feature from step `T` where it proposes the feature's value at every later step
 (`PredictsFrom`, `Predicts`). `Becoming.Testing` shows that a claim is excluded at a formation only
 through a difference that couples into it; `Becoming.Learning` that no prefix fixes the next
 value; `Becoming.Identification` that in a world a list holds, elimination over the lasso
-candidates comes to rest in accord with the course through the map within a bound. This module
-states, with no premise, what a map lets an extrapolation come to rest in accord with.
+candidates predicts the course through the map within a bound. This module
+states, with no premise, what a map lets an extrapolation predict.
 
 * **Alike through the map, learned alike.** Two configurations with the same future through the
   map give every extrapolation the same prefix at every step (`prefixes_same`). So at a step
   where their features differ, a proposed value is right on at most one
   (`claim_not_right_on_both`); with the features decided it misses on one, while the two
-  prefixes stay equal at every step (`missed_on_one`). An extrapolation resting on both has
+  prefixes stay equal at every step (`missed_on_one`). An extrapolation predicting on both has
   features that agree from some step on (`agree_of_predicts_both`); where they differ at
-  arbitrarily late steps, no extrapolation rests on both (`not_predicts_on_both`), already for two
+  arbitrarily late steps, no extrapolation predicts on both (`not_predicts_on_both`), already for
+  two
   configurations the law leaves unchanged (`still_not_predicts_on_both`).
 * **What is read off the map is learned by an extrapolation given nothing.** Where the
   feature is read off the map (`val s = g (reg s)`), elimination over the lasso candidates on the
-  values through the map, its proposals read by `g`, rests in accord with the feature in every
+  values through the map, its proposals read by `g`, predicts the feature in every
   world a list holds, from `Becoming.Identification`'s bound on (`predicts_through`). It is given
   neither the configurations, nor their number, nor any value of the feature.
-* **Exactly.** In a world a list holds, some extrapolation from prefixes through the map rests in
-  accord with the feature at every configuration exactly where configurations with the same
+* **Exactly.** In a world a list holds, some extrapolation from prefixes through the map predicts
+  the feature at every configuration exactly where configurations with the same
   future through the map have features that agree from some step on (`learnable_iff`). The
   extrapolation of the second direction is built from the law, the map, the feature and the list
   (`fromLaw`): no extrapolation does better, whatever it is given, since the first direction
@@ -39,13 +40,17 @@ states, with no premise, what a map lets an extrapolation come to rest in accord
   what can be learned through a map is what goes alike across its lumping, the lumping by which
   `Becoming.Learning` states generalization.
 * **Two still configurations** (`Pair`). Through the map to the first of two coordinates, no
-  extrapolation rests in accord with the second at both `(true, false)` and `(true, true)`
+  extrapolation predicts the second at both `(true, false)` and `(true, true)`
   (`Pair.first_not_predicts`), the second not going alike across the first (`Pair.not_lumped`).
-  Through the map to both, elimination over the lasso candidates rests in accord with the second
+  Through the map to both, elimination over the lasso candidates predicts the second
   at every configuration from step 2 (`Pair.whole_predicts`).
 
-Resting in accord with the feature from some step on is what the literature calls
-identification in the limit (Gold 1967), and `learnable_iff` is an observability condition in
+Predicting the feature from some step on is learning in the limit (Gold 1967) through a map. In
+the vocabulary of `Becoming.LimitVerification`, along the runs of the law, the extrapolation's
+guess is fixed by the record through the map and tracks the feature (`Limit.Tracks`,
+`LearnableRuns.predicts_iff_tracks`); it identifies a hypothesis (`Limit.Identifies`) where the law
+leaves the feature unchanged (`LearnableRuns.learnable_iff_identifies`), and not in general
+(`LearnableRuns.Merge.learnable_not_identifies`). `learnable_iff` is an observability condition in
 that setting: its first direction holds of every extrapolation, while the extrapolation of its
 second direction is built from the law, the map, the feature and the list, so that direction
 shows existence, not an extrapolation given nothing.
@@ -74,7 +79,7 @@ def PredictsFrom (next : S → S) (reg : S → R) (val : S → V) (pred : List R
     (T : Nat) : Prop :=
   ∀ t, T ≤ t → pred (Learning.prefixOf (course next reg s) t) = some (val (Law.orbit next s t))
 
-/-- The extrapolation comes to rest in accord with the feature along the orbit from `s`. -/
+/-- The extrapolation predicts the feature along the orbit from `s`. -/
 def Predicts (next : S → S) (reg : S → R) (val : S → V) (pred : List R → Option V) (s : S) : Prop :=
   ∃ T, PredictsFrom next reg val pred s T
 
@@ -121,7 +126,7 @@ theorem missed_on_one [DecidableEq V] (pred : List R → Option V) {s s' : S}
    | isFalse wrong => .inl ⟨w, claims, wrong⟩,
    prefixes_same same⟩
 
-/-- **An extrapolation resting on two configurations alike through the map has features that
+/-- **An extrapolation predicting on two configurations alike through the map has features that
 agree from some step on.** -/
 theorem agree_of_predicts_both {pred : List R → Option V} {s s' : S}
     (same : Law.SameFuture next reg s s') {T T' : Nat}
@@ -132,7 +137,7 @@ theorem agree_of_predicts_both {pred : List R → Option V} {s s' : S}
       (congrArg pred (prefixes_same same t))).trans
       (rests' t (Nat.le_trans (Nat.le_add_left T' T) late)))
 
-/-- **Where their features differ at arbitrarily late steps, no extrapolation rests on both.** -/
+/-- **Where their features differ at arbitrarily late steps, no extrapolation predicts on both.** -/
 theorem not_predicts_on_both (pred : List R → Option V) {s s' : S}
     (same : Law.SameFuture next reg s s')
     (differ : ∀ T, ∃ t, T ≤ t ∧ val (Law.orbit next s t) ≠ val (Law.orbit next s' t)) :
@@ -146,8 +151,8 @@ theorem orbit_of_still {s : S} (still : next s = s) (n : Nat) : Law.orbit next s
   (Law.fixed_rests (target := fun _ => True) still trivial n).1
 
 /-- **Already for two still configurations.** Where the law leaves `s` and `s'` unchanged, the
-map does not tell them apart and their features differ, no extrapolation through the map rests
-in accord with the feature at both. -/
+map does not tell them apart and their features differ, no extrapolation through the map predicts
+the feature at both. -/
 theorem still_not_predicts_on_both (pred : List R → Option V) {s s' : S} (still : next s = s)
     (still' : next s' = s') (alike : reg s = reg s') (differ : val s ≠ val s') :
     ¬ (Predicts next reg val pred s ∧ Predicts next reg val pred s') :=
@@ -182,7 +187,7 @@ variable {S : Type u} {R : Type v} {V : Type w} [DecidableEq R]
 
 /-- **What is read off the map is learned by an extrapolation given nothing.** In a world a
 list holds, where the feature is read off the map, elimination over the lasso candidates on the
-values through the map, its proposals read by `g`, rests in accord with the feature from
+values through the map, its proposals read by `g`, predicts the feature from
 `Becoming.Identification`'s bound on (`held_byElimination_rests`). It is given neither the
 configurations, nor their number, nor any value of the feature. -/
 theorem predicts_through {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
@@ -229,8 +234,8 @@ many steps on as the prefix is long. -/
 def fromLaw (next : S → S) (reg : S → R) (val : S → V) (l : List S) (r : List R) : Option V :=
   fromLawAt next reg val l r.length r
 
-/-- **Exactly.** In a world a list holds, some extrapolation from prefixes through the map rests
-in accord with the feature at every configuration exactly where configurations with the same
+/-- **Exactly.** In a world a list holds, some extrapolation from prefixes through the map predicts
+the feature at every configuration exactly where configurations with the same
 future through the map have features that agree from some step on. The first direction holds of
 every extrapolation, whatever it is given; the extrapolation of the second is built from the
 law, the map, the feature and the list (`fromLaw`). -/
@@ -297,7 +302,7 @@ def still : Bool × Bool → Bool × Bool := fun s => s
 theorem stays (s : Bool × Bool) (n : Nat) : Law.orbit still s n = s :=
   orbit_of_still rfl n
 
-/-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
+/-- **Through the map to the first coordinate, no extrapolation predicts the second
 at both `(true, false)` and `(true, true)`.** -/
 theorem first_not_predicts (pred : List Bool → Option Bool) :
     ¬ (Predicts still Prod.fst Prod.snd pred (true, false) ∧
@@ -308,7 +313,7 @@ theorem first_not_predicts (pred : List Bool → Option Bool) :
 theorem not_lumped : ¬ Learning.Lumped (Prod.fst : Bool × Bool → Bool) Prod.snd :=
   fun lumped => Bool.noConfusion (lumped (true, false) (true, true) rfl)
 
-/-- **Through the map to both, elimination over the lasso candidates rests in accord with the
+/-- **Through the map to both, elimination over the lasso candidates predicts the
 second at every configuration from step 2.** -/
 theorem whole_predicts (s : Bool × Bool) :
     PredictsFrom still id Prod.snd (fun r => (Learning.byElimination Learning.lassos r).map Prod.snd) s 2 :=

@@ -41,7 +41,7 @@ the content of `KnowledgeCorrespondence`, 6 October, and of the joins `ExactReco
   the feature at `t` (`featureAt`); every law above holds of these readings (`PartialReadout.ExactWithin.sound`,
   `PartialReadout.ExactWithin.lumped`, `PartialReadout.SoundWithin.silent`, `PartialReadout.SoundWithin.mono`, `Runs.finer_lumped`,
   `PartialReadout.ExactWithin.retained`, `Runs.silent_sound`, `Runs.silent_not_exact`, `PartialReadout.exact_exists_iff`),
-  and, along the runs of a determined law, an extrapolation rests on the feature from `T` exactly
+  and, along the runs of a determined law, an extrapolation predicts the feature from `T` exactly
   where it reads the prefix exactly at every step from `T` (`Runs.exact_iff_predictsFrom`, through
   `LearnableRuns.PredictsFrom`).
 
@@ -287,7 +287,7 @@ section Law
 
 variable {S : Type u} {R : Type v} {V : Type w} {next : S → S}
 
-/-- **Along the runs of a determined law, an extrapolation rests on the feature from `T` exactly
+/-- **Along the runs of a determined law, an extrapolation predicts the feature from `T` exactly
 where, at every step from `T` on, it reads the prefix exactly on all runs.** -/
 theorem exact_iff_predictsFrom {g : S → R} {f : S → V} {pred : List R → Option V} {T : Nat} :
     (∀ t, T ≤ t → ExactWithin (fun _ : Run (Law.process next) => True) (prefixBefore g t)

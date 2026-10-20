@@ -74,6 +74,10 @@ proposition extensionality. As in `Becoming.Capture`'s `Law.perturbation_reabsor
 perturbed state returns under one rule and escape needs the rule changed, giving is regained here
 only under another law (`givesFirst`), never along a course of `waitsAll`.
 
+On a web, `answers` is the support of the web in which each formation requires its own condition
+at need the number it waits on, and each formation it waits on, where supported, gives one unit to
+that condition (`Tolerance.web_answers`, the case of `Tolerance.web_tolerating`).
+
 No ethical predicate, ranking or axiom occurs. The readings belong to the chapter.
 -/
 

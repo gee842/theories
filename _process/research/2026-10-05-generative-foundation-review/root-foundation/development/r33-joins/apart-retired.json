@@ -1,0 +1,10 @@
+{
+ "about": "Apart-register entries retired by R33 (20 October 2026): each names a theorem that is no longer an apart root, because a theorem on the base now uses it. Bytes as they stood in THEOREM-CONNECTIVITY-APART.json.",
+ "roots": {
+  "Becoming.Naturals.add_le_of_le_sub": {
+   "module": "Becoming.Prelude",
+   "category": "support",
+   "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
+  }
+ }
+}

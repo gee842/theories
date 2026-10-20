@@ -20,12 +20,12 @@ enough, and what labels of the feature along the course give, with no premise be
   with the same future through the map have features agreeing from some step on, the extrapolation
   given the table of the `N` configurations as many steps on as the list is long, each named by
   its first `N - 1` values through the map, from itself on (Moore's bound,
-  `Law.sameFuture_iff_within`), and labelled with its feature, rests in accord with the feature
+  `Law.sameFuture_iff_within`), and labelled with its feature, predicts the feature
   along every orbit, from the bound of the extrapolation given nothing on
   (`Learnable.table_predicts`). So a feature is learnable exactly where the extrapolation given some
   table of at most `N` labelled names of `N - 1` values learns it (`Learnable.learnable_iff_table`).
-* **The labels needed.** Every value the feature takes from the step an extrapolation given a
-  table rests on is a label of the table (`Learnable.label_of_predicts`); where the law leaves every
+* **The labels needed.** Every value the feature takes from the step from which an extrapolation
+  given a table predicts it is a label of the table (`Learnable.label_of_predicts`); where the law leaves every
   configuration unchanged, every value the feature takes is (`Learnable.labels_of_still`).
 * **Labels along the course.** Where the map also carries the feature, every feature is
   learned by the extrapolation given nothing, from the bound on (`Learnable.predicts_with_labels`, an
@@ -38,7 +38,10 @@ enough, and what labels of the feature along the course give, with no premise be
   `LearnableRuns.ahead_with_labels`), through `Becoming.LearnableRuns`.
 
 So what a learnable feature adds to the prefix is a finite object: at most `N` labelled names of
-`N - 1` values. No ethical predicate, ranking or axiom occurs.
+`N - 1` values. In the vocabulary of `Becoming.LimitVerification`, the table's extrapolation is a
+guess fixed by the record through the map that tracks the feature in the limit (`Limit.Tracks`,
+`LearnableRuns.predicts_iff_tracks`): the labels are what learning in the limit through a map adds.
+No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -166,7 +169,7 @@ theorem begins_entryOf {next : S → S} {reg : S → R} {val : S → V} {l : Lis
 
 /-- **`N` names of `N - 1` values are enough.** In a world a list holds, where configurations with
 the same future through the map have features agreeing from some step on, the extrapolation given
-the table of the world rests in accord with the feature along every orbit, from the bound of the
+the table of the world predicts the feature along every orbit, from the bound of the
 extrapolation given nothing on. -/
 theorem table_predicts {next : S → S} {reg : S → R} {val : S → V} {l : List S} (world : ∀ s, s ∈ l)
     (agree : ∀ s s', Law.SameFuture next reg s s' →
@@ -213,7 +216,7 @@ theorem table_predicts {next : S → S} {reg : S → R} {val : S → V} {l : Lis
 
 /-- **Learnable exactly where learned from at most `N` labelled names of `N - 1` values.** In a
 world a list of `N` holds, a feature is learnable through the map exactly where the extrapolation
-given some table of at most `N` labelled names, each of `N - 1` values, rests in accord with it at
+given some table of at most `N` labelled names, each of `N - 1` values, predicts it at
 every configuration; the table of the world is one where any is. -/
 theorem learnable_iff_table {next : S → S} {reg : S → R} {val : S → V} {l : List S}
     (world : ∀ s, s ∈ l) :
@@ -224,8 +227,8 @@ theorem learnable_iff_table {next : S → S} {reg : S → R} {val : S → V} {l 
       tableOf_names next reg val l, fun s => ⟨_, table_predicts world ((learnable_iff world).mp learnable) s⟩⟩,
    fun ⟨tbl, _, _, rests⟩ => ⟨byTable tbl, rests⟩⟩
 
-/-- **The labels needed.** Every value the feature takes from the step an extrapolation given a
-table rests on is a label of an entry of the table. -/
+/-- **The labels needed.** Every value the feature takes from the step from which an extrapolation
+given a table predicts it is a label of an entry of the table. -/
 theorem label_of_predicts {next : S → S} {reg : S → R} {val : S → V} {tbl : List (List R × V)}
     {s : S} {T : Nat} (rests : PredictsFrom next reg val (byTable tbl) s T) :
     ∀ t, T ≤ t → ∃ e, e ∈ tbl ∧ e.2 = val (Law.orbit next s t) :=
@@ -237,7 +240,7 @@ theorem label_of_predicts {next : S → S} {reg : S → R} {val : S → V} {tbl 
     | none => nomatch (congrArg (Option.map Prod.snd) found).symm.trans (rests t late)
 
 /-- **Where the law leaves every configuration unchanged, every value the feature takes is a
-label.** An extrapolation given a table resting in accord with the feature at every configuration
+label.** An extrapolation given a table predicting the feature at every configuration
 has every value of the feature among the table's labels. -/
 theorem labels_of_still {next : S → S} (still : ∀ s, next s = s) {reg : S → R} {val : S → V}
     {tbl : List (List R × V)} (rests : ∀ s, Predicts next reg val (byTable tbl) s) (s : S) :
@@ -256,7 +259,7 @@ variable {S : Type u} {R : Type v} {V : Type w} [DecidableEq R] [DecidableEq V]
 
 /-- **With the feature carried by the map along the course, every feature is learned given
 nothing.** In a world a list holds, the extrapolation by elimination over the lasso candidates,
-reading the map paired with the feature, rests in accord with the feature from the bound on. An
+reading the map paired with the feature, predicts the feature from the bound on. An
 instance of `predicts_through`. -/
 theorem predicts_with_labels {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
     (reg : S → R) (val : S → V) :
@@ -291,7 +294,7 @@ variable {S : Type} {R : Type} {V : Type} [DecidableEq R] {next : S → S}
 
 /-- **`N` names of `N - 1` values are enough, along runs.** In a world a list holds, where runs
 beginning alike in the frame have features agreeing from some step on, the extrapolation given the
-table of the world rests in accord with the feature along every run of the law. -/
+table of the world predicts the feature along every run of the law. -/
 theorem table_predicts {reg : S → R} {val : S → V} {l : List S} (world : ∀ s, s ∈ l)
     (agree : ∀ r r' : Run (Law.process next),
       Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0) →
@@ -318,7 +321,7 @@ theorem learnable_iff_table {reg : S → R} {val : S → V} {l : List S} (world 
    fun ⟨tbl, _, _, rests⟩ => ⟨Learnable.byTable tbl, rests⟩⟩
 
 /-- **Where the law leaves every configuration unchanged, every value the feature takes is a
-label**, of a table whose extrapolation rests in accord with the feature along every run. -/
+label**, of a table whose extrapolation predicts the feature along every run. -/
 theorem labels_of_still (still : ∀ s, next s = s) {reg : S → R} {val : S → V}
     {tbl : List (List R × V)}
     (rests : ∀ r : Run (Law.process next), Predicts reg val (Learnable.byTable tbl) r) (s : S) :

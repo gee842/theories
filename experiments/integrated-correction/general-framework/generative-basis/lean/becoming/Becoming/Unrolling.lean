@@ -4,7 +4,7 @@ import Becoming.LearnableRuns
 # Unrolling: what an extrapolation given nothing fixes
 
 `Becoming.Learnable` states what an extrapolation from prefixes through a map `reg : S → R` can
-come to rest in accord with: a feature `val : S → V` is learnable in a world a list holds exactly
+predict: a feature `val : S → V` is learnable in a world a list holds exactly
 where configurations with the same future through the map have features agreeing from some step
 on (`Learnable.learnable_iff`), the extrapolation of the second direction being built from the
 law, the configurations and the feature (`Learnable.fromLaw`). Given nothing, the extrapolation by
@@ -26,13 +26,13 @@ what it needs to be given, with no premise.
   (`Learning.no_prefix_fixes_next`); what fixes it here is that a list holds the world.
 * **A feature needs its reading.** Where a feature is a reading of the future through the map
   (`Learnable.ReadOff`: `val s` is `G` of the values through the map along the orbit from `s`), the
-  extrapolation given only that reading rests in accord with the feature from the same bound on
+  extrapolation given only that reading predicts the feature from the same bound on
   (`Learnable.reading_predicts`), for a reading respecting values at each step (no function
   extensionality is assumed). This extends `Learnable.predicts_through`, where the feature is read off
   the present value only.
 * **Given nothing, not every learnable feature.** With one configuration and one value through the
   map, the feature `true` and the feature `false` are each learned by the extrapolation given its
-  reading, and no single extrapolation rests in accord with both (`Learnable.given_nothing_not_every`):
+  reading, and no single extrapolation predicts both (`Learnable.given_nothing_not_every`):
   the prefixes are the same in both, so what an extrapolation proposes is the same.
 
 * **Learnable exactly where a reading of the future.** In a world a list holds, a feature is
@@ -53,8 +53,10 @@ what it needs to be given, with no premise.
   `Becoming.LearnableRuns`.
 
 So the prefix alone fixes the future through the map; what a learnable feature adds to it is
-exactly a reading of that future, which an extrapolation given nothing does not have. No ethical
-predicate, ranking or axiom occurs.
+exactly a reading of that future, which an extrapolation given nothing does not have. In the
+vocabulary of `Becoming.LimitVerification`, each extrapolation here is a guess fixed by the record
+through the map, and learning is its tracking the feature in the limit (`Limit.Tracks`,
+`LearnableRuns.learnable_iff_tracks`). No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -135,7 +137,7 @@ def reading (G : (Nat → Option R) → V) (r : List R) : Option V :=
 
 /-- **A feature read off the future is learned given its reading.** In a world a list holds,
 where the feature is read off the future through the map by a reading respecting values at each
-step, the extrapolation given that reading rests in accord with the feature from
+step, the extrapolation given that reading predicts the feature from
 `Becoming.Identification`'s bound on. It is given neither the configurations, nor how many there
 are, nor the law, nor any value of the feature. -/
 theorem reading_predicts {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
@@ -150,8 +152,8 @@ theorem reading_predicts {next : S → S} {s : S} {l : List S} (held : ∀ n, La
 
 /-- **Given nothing, not every learnable feature.** With one configuration and one value through
 the map, the feature `true` and the feature `false` are each learned by the extrapolation given its
-reading (each a reading of the future, by a constant), and no single extrapolation rests in accord
-with both: the prefixes are the same, so are its proposals. -/
+reading (each a reading of the future, by a constant), and no single extrapolation predicts both:
+the prefixes are the same, so are its proposals. -/
 theorem given_nothing_not_every :
     (∀ b : Bool, Predicts (fun _ : Unit => ()) (fun _ => ()) (fun _ => b)
       (reading fun _ => b) ()) ∧
@@ -247,7 +249,7 @@ theorem reads_of_agree {next : S → S} {reg : S → R} {val : S → V} {l : Lis
 /-- **A feature that is a reading of the future from some step on is learned given its reading.**
 In a world a list holds, where from some step on along the orbit from `s` the feature is a reading
 of the future through the map, respecting values at each step, the extrapolation given that
-reading rests in accord with the feature. -/
+reading predicts the feature. -/
 theorem reading_predicts_from {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
     {reg : S → R} {val : S → V} {G : (Nat → Option R) → V}
     (respects : ∀ f f' : Nat → Option R, (∀ k, f k = f' k) → G f = G f') {T : Nat}
@@ -318,7 +320,7 @@ theorem ahead_fixes (r : Run (Law.process next)) {l : List S} (held : ∀ n, r.s
 
 /-- **Given nothing, not every feature learnable along runs.** Along the run of the law on one
 configuration, the feature `true` and the feature `false` are each learned by the extrapolation
-given its reading, and no single extrapolation rests in accord with both. -/
+given its reading, and no single extrapolation predicts both. -/
 theorem given_nothing_not_every :
     (∀ b : Bool, ∀ r : Run (Law.process fun _ : Unit => ()),
       Predicts (fun _ => ()) (fun _ => b) (Learnable.reading fun _ => b) r) ∧
