@@ -10037,7 +10037,8 @@ Evidence: core receipt 20261020T070914.793352Z on main 94e073426 (passed; core 2
        11,553 theorems; audited spine declarations 15,810; every axiom report empty; 7 Lean steps ran, 1,129
        reused); sigcheck against R40's receipt 20261020T065352.292900Z (development/r38-open-joins/sigcheck.log:
        11,428 agree, 0 differ, 0 missing, 51 new); the connectivity rerun on 91c3fc66a (477 of 11,479 apart,
-       register check passes); render, check, links and tests. A first run on main a1fe27740, before R40
+       register check passes; that commit kept at refs/salvage/r38-connectivity-measured-tree, the branch
+       since rebased over a main commit touching only the completion report); render, check, links and tests. A first run on main a1fe27740, before R40
        landed (receipt 20261020T064605.984671Z, passed, the same Lean), and its records and docs are kept at
        refs/salvage/r38-before-r40-rebase; R38 was rebuilt on R40 and checked again.
 Boundary: real factors and strengths; a closed form of a turn around a cycle of several conditions (the
