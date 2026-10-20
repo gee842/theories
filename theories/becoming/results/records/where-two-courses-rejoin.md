@@ -22,7 +22,7 @@
 ## Conditions
 
 - No axiom. Balance at the condition in both flows; the same formations present; for the closer, the law the rest follows and that it reads through coupling (ExchangeLaw.Through, Flow.Follows), and the part acting alike with the condition after the act; for the reach law, the hypotheses of Flow.alike_beyond_response and nothing within the reach exchanging with the condition from the step on.
-- The course without the act is a comparison, not a standard: the laws do not say that rejoining it is better than keeping or widening the difference; which of these supports 生生 goes through the comparison and the condition of the chapter's section 6.15.
+- The course without the act is a comparison, not a standard: the laws do not say that rejoining it is better than keeping or widening the difference; which of these supports 生生 goes through the comparison and the condition of the chapter's section 6.4.
 
 <a id="does-not-show--未表明"></a>
 ## Does not show
@@ -43,7 +43,7 @@ Canonical source: [Rejoining.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-Which law closes rather than widens a difference, and how a member's law comes to (training); which of keeping, closing or widening a difference supports 生生, through section 6.15's comparison; differences at many conditions and the order of their closing; members reading one another's coupling directly; an independent review.
+Which law closes rather than widens a difference, and how a member's law comes to (training); which of keeping, closing or widening a difference supports 生生, through section 6.4's comparison; differences at many conditions and the order of their closing; members reading one another's coupling directly; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -98,6 +98,7 @@ Aliases: `where two courses rejoin`, `两个进程在何处重合`, `rejoining m
 - 20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Prelude.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Counterfactual.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Response.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.
+- 20 October 2026, R36 (the chapter, once): the canonical chapter was restructured, its 20 October edition frozen in theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md; this record's citations of the old section numbering re-pointed by content (section 6.15 to 6.4). The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-two-courses-rejoin.json).
 
 <a id="earlier-text--早期文本"></a>

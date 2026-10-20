@@ -16,7 +16,7 @@ Living significance recognizes living and further generation within the whole as
 
 | Item | Content | Status |
 |---|---|---|
-| Living significance | Living and further generation have positive significance | Follows under the continuation condition (canonical chapter §6.15); not assumed |
+| Living significance | Living and further generation have positive significance | Follows under the continuation condition (canonical chapter §6.4); not assumed |
 | Full comparison | Genuine improvement without countervailing loss has comparative favor; restoration does not erase history | Explicit comparative commitment, continuing C |
 | Priority of basic conditions | Preserving other basic claims, restoring a threatened basic condition takes priority over optional enrichment; optional enrichment cannot license imposed basic deprivation | Additional scoped comparison commitment, not living significance alone |
 | Bounded responsibility | Justified undertakings and accountable changes of dependence ground fulfillment, repair or bounded transition duties; control and capacity constrain their form and cumulative burden | Additional responsibility commitment, not a causal definition |
@@ -50,7 +50,7 @@ The affirmative defense is non-substitution: the basic layer concerns an irrepla
 
 13 October 2026. An application argument written by AI; it reuses the conditional alignment route and the existing dynamics proofs and adds no axiom, mathematical theorem or independent result. See [the original study §85](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#timely-continuation-and-support).
 
-This section reuses the completed conditional alignment route. In the current structure living significance follows under [the continuation condition](THE-THEORY-OF-BECOMING.md#615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance); it is not assumed, and no second axiom is added.
+This section reuses the completed conditional alignment route. In the current structure living significance follows under [the continuation condition](THE-THEORY-OF-BECOMING.md#64-the-continuation-condition); it is not assumed, and no second axiom is added.
 
 Begin with activities changing the conditions of subsequent activity, including the support needed by the activities that maintain those conditions. New support can form and old support can fail. A life, its needs, its supporting activities and positions capable of changing them are differentiated within that unfolding. Support matters through this actual relation of formation, without first assigning separate values to independent owners.
 

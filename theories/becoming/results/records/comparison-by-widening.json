@@ -100,8 +100,8 @@
     {
       "id": "ranking-under-readings",
       "detail": {
-        "zh": "继续之间以可能性比较（章节 §6.12）；这里在水平路径上，以可能性读的比较本身满足 C。",
-        "en": "Courses are compared on possibilities (chapter section 6.12); here, on level paths, the comparison on possibilities itself satisfies C."
+        "zh": "继续之间以可能性比较（章节 §6.5）；这里在水平路径上，以可能性读的比较本身满足 C。",
+        "en": "Courses are compared on possibilities (chapter section 6.5); here, on level paths, the comparison on possibilities itself satisfies C."
       }
     },
     {
@@ -197,7 +197,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
+      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1",
       "declarations": []
     },
     {
@@ -393,6 +393,10 @@
     {
       "en": "2026-10-20: 53 bookkeeping notes condensed from 2026-10-12 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/a25745ef5d371309/comparison-by-widening.json and in git.",
       "zh": "2026-10-20：53 条记账性说明合并（2026-10-12 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/a25745ef5d371309/comparison-by-widening.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R36 (the chapter, once): the canonical chapter was restructured, its 20 October edition frozen in theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md; this record's citations of the old section numbering re-pointed by content (section 6.12 to 6.5). The claim is unchanged.",
+      "zh": "2026年10月20日，R36（本章只陈述一次）：规范章节重排，10月20日版冻结于 theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md；本记录对旧节号的引用按内容重指（§6.12 改为 §6.5）。论断不变。"
     }
   ]
 }

@@ -1,0 +1,51 @@
+{
+ "anchors": {
+  "frozen": 90,
+  "new": 175,
+  "missing": []
+ },
+ "records": {
+  "frozen": 193,
+  "new": 282,
+  "dropped": [],
+  "nonexistent": []
+ },
+ "lean_names": {
+  "chapter": 834,
+  "qualified": 47,
+  "record": 1469,
+  "unaccounted": [
+   "Closure.base",
+   "Closure.induction",
+   "Closure.step",
+   "Frame.realized",
+   "ListTests.all_true_iff",
+   "ListTests.find_none_iff",
+   "Naturals.sub_sub",
+   "SupportGatedWebs.formation_does_not_decide",
+   "_by_core",
+   "_listing",
+   "after_empty_or_inhabited",
+   "classified_of_decidable",
+   "covers_along",
+   "covers_iff",
+   "families_reach_each_other",
+   "fromSeed_of_not_separated_iff_dne",
+   "not_covers_iff",
+   "sufficiency_iff_implication_of_decidable"
+  ],
+  "frozen": 2368
+ },
+ "existence": {
+  "cited": 850,
+  "absent_from_lean_sources": []
+ },
+ "open_units": {
+  "frozen_open_units": 0,
+  "with_something_unaccounted": []
+ },
+ "links": {
+  "checked": 678,
+  "broken": []
+ }
+}

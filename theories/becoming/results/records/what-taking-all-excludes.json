@@ -91,8 +91,8 @@
   ],
   "does_not_show": [
     {
-      "en": "Endings forced in the witnesses of section 6.7 (Downstream, Mortal, Clearing) by quantifying over activity: there they stay stipulated; here an ending is derived only for a formation living by taking.",
-      "zh": "在第 6.7 节的见证（Downstream、Mortal、Clearing）中对活动量化而强制的终结：那里仍是规定的；这里只对以取用为生的形成推出终结。",
+      "en": "Endings forced in the witnesses of section 6.3 (Downstream, Mortal, Clearing) by quantifying over activity: there they stay stipulated; here an ending is derived only for a formation living by taking.",
+      "zh": "在第 6.3 节的见证（Downstream、Mortal、Clearing）中对活动量化而强制的终结：那里仍是规定的；这里只对以取用为生的形成推出终结。",
       "kind": "scope"
     },
     {
@@ -128,8 +128,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T154830.591298Z）：Becoming.Exclusion 的 38 项声明（31 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 183 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Endings forced in the witnesses of section 6.7; how taking all that is given forms other than by a rising take; a comparison of courses that shows an ending through exclusion from taking; an independent review.",
-    "zh": "第 6.7 节见证中强制的终结；取尽所给如何以上升的取用以外的方式形成；记下经由被排除于取用之外的终结的进程比较；独立审查。"
+    "en": "Endings forced in the witnesses of section 6.3; how taking all that is given forms other than by a rising take; a comparison of courses that shows an ending through exclusion from taking; an independent review.",
+    "zh": "第 6.3 节见证中强制的终结；取尽所给如何以上升的取用以外的方式形成；记下经由被排除于取用之外的终结的进程比较；独立审查。"
   },
   "correspondence": {
     "en": "The chapter's open programme (section 8.2, \"Continuation (§6.7) and feeding\") named \"a witness in which ending another serves the clearer's continuation (a stronger case of the meta-attractor)\". Ren, 18 October 2026: \"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\" (provenance, not warrant); the AI chose the item. Ending another serves taking all that is given, not continuing as such. The law is the form here of the competitive exclusion principle of ecology, where one formation takes the whole renewal. The reading is D44 of DELEGATED-CHOICES.",
@@ -245,7 +245,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f"
+      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -281,6 +281,10 @@
     {
       "en": "2026-10-20: 14 bookkeeping notes condensed from 19 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/2e45766045bb2453/what-taking-all-excludes.json and in git.",
       "zh": "2026-10-20：14 条记账性说明合并（19 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/2e45766045bb2453/what-taking-all-excludes.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R36 (the chapter, once): the canonical chapter was restructured, its 20 October edition frozen in theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md; this record's citations of the old section numbering re-pointed by content (section 6.7 to 6.3). The claim is unchanged.",
+      "zh": "2026年10月20日，R36（本章只陈述一次）：规范章节重排，10月20日版冻结于 theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md；本记录对旧节号的引用按内容重指（§6.7 改为 §6.3）。论断不变。"
     }
   ],
   "text_versions": [

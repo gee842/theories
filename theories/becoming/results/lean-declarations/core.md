@@ -4123,7 +4123,7 @@ Contains 9 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>JudgingCorrespondence.lean — 7 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.zh.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean`
 
@@ -4844,7 +4844,7 @@ Contains 28 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>SubstitutionCorrespondence.lean — 10 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SubstitutionCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.zh.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SubstitutionCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SubstitutionCorrespondence.lean`
 

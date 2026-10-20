@@ -5,7 +5,7 @@
 
 [Home](../README.md) · [Start here](../MAP.md) · [Results](../RESULTS.md) · [Scopes](../GOALS.md) · [Connections](../DEPENDENCIES.md) · [Open questions](../OPEN-QUESTIONS.md) · [Contribute](RESULT-WORKFLOW.md)
 
-Canonical entry: [The Theory of Becoming](../theories/becoming/chapters/THE-THEORY-OF-BECOMING.md), with its premise card, the theory without axiom (sections 1–6), the conditional section 6.15, the formal spine and the place of earlier chapters. [The work board](BECOMING-WORKBOARD.md) holds claims and the landing queue.
+Canonical entry: [The Theory of Becoming](../theories/becoming/chapters/THE-THEORY-OF-BECOMING.md), with its premise card, the argument once (sections 1–7, the continuation condition in section 6.4), the theorem map, the open programme, the formal spine and the place of earlier chapters. [The work board](BECOMING-WORKBOARD.md) holds claims and the landing queue.
 
 We investigate how relations form, persist and change within one unfolding of becoming, and how organization, living, knowing, learning, evaluation and wisdom differentiate within it. Real losses, distinct scopes and counterexamples remain explicit; success in a local model does not by itself establish a universal warrant.
 

@@ -115,8 +115,8 @@
     "en": "Relations among claims as the flow and web of Contextual.world; continuous time and real amounts; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-14：“why do we need \"World\"? wasn't this about the whole and its parts, about everything?”，“no hard role has to be so - right now i think we are trapped by our speculative conditions”，“for us, non-Euclidean, or causality, still work”；对从关系开始的三步重建：“please, finish all”。本结果是第三步：一个统一的定理形式，语境中的读法为一般情形，World 为读法粘合的情形；意义以同样的不变标准读作两分。读法（AI 的，依 Ren 的交托采用）：核心在许多类型上陈述的是一个展开的读法；原来世界的一个前提，现在是一个部分的状态：其余是否闲置；那一条公理（§6.15 的条件）在规律所满足的不变之下归于预设，即 Ren 2026-10-10 所说的“belief”，没有它自身“can not justify itself”。最后这一读法只是类比（Ren 2026-10-18 取，DELEGATED-CHOICES D43，审查所见 D-e）：Novelty 对每个家族的量化不是 BoundaryInvariant，所以不支持不变之步，其根据仍开放。",
-    "en": "Ren, 14 October 2026: “why do we need \"World\"? wasn't this about the whole and its parts, about everything?”, “no hard role has to be so - right now i think we are trapped by our speculative conditions”, “for us, non-Euclidean, or causality, still work”; and, to the relation-first re-founding in three steps, “please, finish all”. This result is the third step: one theorem shape for unity, readings in context the general case and World the case where readings glue; significance read as a dichotomy under the same standard of invariance. Readings (the AI's, adopted on Ren's delegation): what the core states on many types are readings of one unfolding; what was a premise of the world is now a state of a part, whether the rest is idle; and under the invariance the laws meet, the one axiom (the condition of section 6.15) comes to the presupposition, the “belief” without which, Ren wrote on 10 October 2026, the self “can not justify itself”. That last reading is an analogy only (taken by Ren on 18 October 2026, DELEGATED-CHOICES D43, review finding D-e): Novelty's quantification over every family is not BoundaryInvariant, so it gives no support to the step of invariance, whose warrant stays open."
+    "zh": "Ren 2026-10-14：“why do we need \"World\"? wasn't this about the whole and its parts, about everything?”，“no hard role has to be so - right now i think we are trapped by our speculative conditions”，“for us, non-Euclidean, or causality, still work”；对从关系开始的三步重建：“please, finish all”。本结果是第三步：一个统一的定理形式，语境中的读法为一般情形，World 为读法粘合的情形；意义以同样的不变标准读作两分。读法（AI 的，依 Ren 的交托采用）：核心在许多类型上陈述的是一个展开的读法；原来世界的一个前提，现在是一个部分的状态：其余是否闲置；那一条公理（§6.4 的条件）在规律所满足的不变之下归于预设，即 Ren 2026-10-10 所说的“belief”，没有它自身“can not justify itself”。最后这一读法只是类比（Ren 2026-10-18 取，DELEGATED-CHOICES D43，审查所见 D-e）：Novelty 对每个家族的量化不是 BoundaryInvariant，所以不支持不变之步，其根据仍开放。",
+    "en": "Ren, 14 October 2026: “why do we need \"World\"? wasn't this about the whole and its parts, about everything?”, “no hard role has to be so - right now i think we are trapped by our speculative conditions”, “for us, non-Euclidean, or causality, still work”; and, to the relation-first re-founding in three steps, “please, finish all”. This result is the third step: one theorem shape for unity, readings in context the general case and World the case where readings glue; significance read as a dichotomy under the same standard of invariance. Readings (the AI's, adopted on Ren's delegation): what the core states on many types are readings of one unfolding; what was a premise of the world is now a state of a part, whether the rest is idle; and under the invariance the laws meet, the one axiom (the condition of section 6.4) comes to the presupposition, the “belief” without which, Ren wrote on 10 October 2026, the self “can not justify itself”. That last reading is an analogy only (taken by Ren on 18 October 2026, DELEGATED-CHOICES D43, review finding D-e): Novelty's quantification over every family is not BoundaryInvariant, so it gives no support to the step of invariance, whose warrant stays open."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
   "aliases": [
@@ -368,7 +368,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad"
+      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",
@@ -603,6 +603,10 @@
     {
       "en": "2026-10-20: 36 bookkeeping notes condensed from 15 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/749b3493e879c08a/unity-of-readings.json and in git.",
       "zh": "2026-10-20：36 条记账性说明合并（15 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/749b3493e879c08a/unity-of-readings.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R36 (the chapter, once): the canonical chapter was restructured, its 20 October edition frozen in theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md; this record's citations of the old section numbering re-pointed by content (section 6.15 to 6.4). The claim is unchanged.",
+      "zh": "2026年10月20日，R36（本章只陈述一次）：规范章节重排，10月20日版冻结于 theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md；本记录对旧节号的引用按内容重指（§6.15 改为 §6.4）。论断不变。"
     }
   ],
   "text_versions": [

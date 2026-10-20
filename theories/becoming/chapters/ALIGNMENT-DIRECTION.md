@@ -20,7 +20,7 @@ The whole requires accountable inclusion of relations and consequences. It confe
 <a id="3-根据比较与行动之间的公开桥梁--the-disclosed-inferential-chain"></a>
 ## 3. The disclosed inferential chain
 
-These are the candidate's normative commitments. Living significance is the foundation: it is not assumed, and it follows under [the continuation condition](THE-THEORY-OF-BECOMING.md#615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance). The practical commitments (full comparison, basic-condition priority, bounded responsibility, practical selection) are the disclosed, AI-authored additions of the completed practical account, not all Ren's own words or deductions from living significance alone.
+These are the candidate's normative commitments. Living significance is the foundation: it is not assumed, and it follows under [the continuation condition](THE-THEORY-OF-BECOMING.md#64-the-continuation-condition). The practical commitments (full comparison, basic-condition priority, bounded responsibility, practical selection) are the disclosed, AI-authored additions of the completed practical account, not all Ren's own words or deductions from living significance alone.
 
 | Role | Content and warrant | Resulting force |
 |---|---|---|

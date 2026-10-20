@@ -19,8 +19,8 @@
       "en": "Retain both authorized components, necessary relations and generative explanation; local success conditions cannot simply be renamed full wisdom."
     },
     {
-      "zh": "按 Ren 的纠正，以道德评价 becoming、普遍生成原则支撑具体判断为正面路线，不以对手认可为门槛。当前以 Unrestricted 为条件推出 G0（章节 §6.15，理论不断言这一条件）；相应 A、L、J／C、实践解释及真实对应 E 明示，不把它们作为裸动力学的结论。",
-      "en": "Following Ren’s correction, pursue morality as appraisal of becoming through universal generative principles, without requiring a rival’s assent. G0 now follows with Unrestricted as a condition (chapter section 6.15; the theory does not assert the condition); the applicable A, L, J/C, practical articulation and actual correspondence E remain explicit, not conclusions of bare dynamics."
+      "zh": "按 Ren 的纠正，以道德评价 becoming、普遍生成原则支撑具体判断为正面路线，不以对手认可为门槛。当前以 Unrestricted 为条件推出 G0（章节 §6.4，理论不断言这一条件）；相应 A、L、J／C、实践解释及真实对应 E 明示，不把它们作为裸动力学的结论。",
+      "en": "Following Ren’s correction, pursue morality as appraisal of becoming through universal generative principles, without requiring a rival’s assent. G0 now follows with Unrestricted as a condition (chapter section 6.4; the theory does not assert the condition); the applicable A, L, J/C, practical articulation and actual correspondence E remain explicit, not conclusions of bare dynamics."
     }
   ],
   "correspondence": {
@@ -1268,7 +1268,7 @@
     {
       "path": "theories/becoming/chapters/KNOWLEDGE.md",
       "role": "review",
-      "sha256": "25ca386f9531b9b3216678223c78db3f059f05b66ee366142f5843a6b759cca4",
+      "sha256": "6bad6ec6e081f03e4817edfbe468c87afee08058f47f7043da7e882d4abbd54c",
       "declarations": []
     },
     {
@@ -1812,6 +1812,10 @@
     {
       "en": "20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (Bridge, ExplanatoryContextualStructure, ExplanatoryJoiningBranches, GenerativeClosure and JointInterpretation) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (AcquiredBinding, Becoming.ContinuingRevision, Becoming.Counterfactual, Becoming.CounterfactualRuns, Becoming.Dependence, Becoming.Derivation, Becoming.Experiment, Becoming.FallibleInquiry, Becoming.Handoff, Becoming.Histories, Becoming.Joining, Becoming.JoiningCodes, Becoming.JoiningContexts, Becoming.Labelled, Becoming.Mechanism, Becoming.Presentations, Becoming.ReferencePlan, Becoming.Regrouping, Becoming.RegroupingSelection, Becoming.Relevance, Becoming.Response, Becoming.Revision, Becoming.Roles, Becoming.Space, Becoming.TimedResponse, Becoming.Unfolding, ExplanatoryHistoryInterfaces, GenerativeCore, InferentialGrounds, InferentialSubstitution and ScientificInquiryNecessity). The retired modules' content is also stated in Becoming.BranchingCorrespondence and Becoming.Likeness, which this record does not cite with declarations. The claim is unchanged.",
       "zh": "20 October 2026, R35 (twentieth review, E8)：对已被取代的外围模块（Bridge, ExplanatoryContextualStructure, ExplanatoryJoiningBranches, GenerativeClosure and JointInterpretation）的证明引用改为来源（provenance），保留其声明，删去其绑定；当前证明是本记录仍作为证明引用的模块（AcquiredBinding, Becoming.ContinuingRevision, Becoming.Counterfactual, Becoming.CounterfactualRuns, Becoming.Dependence, Becoming.Derivation, Becoming.Experiment, Becoming.FallibleInquiry, Becoming.Handoff, Becoming.Histories, Becoming.Joining, Becoming.JoiningCodes, Becoming.JoiningContexts, Becoming.Labelled, Becoming.Mechanism, Becoming.Presentations, Becoming.ReferencePlan, Becoming.Regrouping, Becoming.RegroupingSelection, Becoming.Relevance, Becoming.Response, Becoming.Revision, Becoming.Roles, Becoming.Space, Becoming.TimedResponse, Becoming.Unfolding, ExplanatoryHistoryInterfaces, GenerativeCore, InferentialGrounds, InferentialSubstitution and ScientificInquiryNecessity）。退役模块的内容也陈述于 Becoming.BranchingCorrespondence and Becoming.Likeness，本记录未以声明引用它们。主张不变。"
+    },
+    {
+      "en": "20 October 2026, R36 (the chapter, once): the canonical chapter was restructured, its 20 October edition frozen in theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md; this record's citations of the old section numbering re-pointed by content (section 6.15 to 6.4). The claim is unchanged.",
+      "zh": "2026年10月20日，R36（本章只陈述一次）：规范章节重排，10月20日版冻结于 theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md；本记录对旧节号的引用按内容重指（§6.15 改为 §6.4）。论断不变。"
     }
   ],
   "text_versions": [

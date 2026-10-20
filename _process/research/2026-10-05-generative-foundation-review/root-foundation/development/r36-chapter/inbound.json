@@ -1,0 +1,1909 @@
+{
+ "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+  "anchors_now": [
+   "0-premise-card",
+   "0-前提卡--premise-card",
+   "1-becoming-one-unfolding",
+   "1-生成同一展开--becoming-one-unfolding",
+   "10-glossary",
+   "10-术语表--glossary",
+   "11-where-the-earlier-chapters-stand",
+   "11-既有章节的位置--where-the-earlier-chapters-stand",
+   "2-organization-renewal-and-evolution",
+   "2-组织更新与演化--organization-renewal-and-evolution",
+   "3-knowing-and-inquiry",
+   "3-认识与探究--knowing-and-inquiry",
+   "4-collective-dynamics",
+   "4-集体动力学--collective-dynamics",
+   "5-how-evaluation-forms",
+   "5-评价的形成--how-evaluation-forms",
+   "6-significance-comparison-and-practical-judgment",
+   "6-universal-metaethical-core",
+   "6-universal-metaethical-core--普遍元伦理核心",
+   "61-g0-的内容--what-g0-says",
+   "61-what-g0-says",
+   "61-what-living-significance-says",
+   "610-feedback-reach-and-the-comparison",
+   "610-反馈所及与比较--feedback-reach-and-the-comparison",
+   "610-反馈所及与比较p42-feedback-reach-and-the-comparison-p42",
+   "611-the-axiom-decomposed-the-selfs-presupposition-and-the-step-of-invariance",
+   "611-the-condition-decomposed-the-selfs-presupposition-and-the-step-of-invariance",
+   "611-公理的分解自身的预设与不变的一步--the-axiom-decomposed-the-selfs-presupposition-and-the-step-of-invariance",
+   "611-公理的分解自身的预设与不变的一步p43-the-axiom-decomposed-the-selfs-presupposition-and-the-step-of-invariance-p43",
+   "612-g0-的各处用法在公理之下--g0s-uses-under-the-axiom",
+   "612-g0-的各处用法在公理之下p44-g0s-uses-under-the-axiom-p44",
+   "612-g0s-uses-under-the-condition",
+   "612-the-uses-of-living-significance-under-the-condition",
+   "613-the-generative-space-with-no-axiom",
+   "613-生成的空间不用公理--the-generative-space-with-no-axiom",
+   "613-生成的空间不用公理p56-the-generative-space-with-no-axiom-p56",
+   "614-relational-constraints-on-comparison-content",
+   "614-比较内容怎样由关系约束--relational-constraints-on-comparison-content",
+   "614-比较内容怎样由关系约束p91-relational-constraints-on-comparison-content-p91",
+   "615-if-the-continuation-of-anything-has-significance",
+   "615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance",
+   "62-minimality-and-the-shape-of-rivals",
+   "62-极小性与对手的形状--minimality-and-the-shape-of-rivals",
+   "63-connection-and-consumption-from-the-unfolding",
+   "63-从展开读出连通与消耗--connection-and-consumption-from-the-unfolding",
+   "64-reasons-addressed-to-every-position",
+   "64-向每个立场的理由--reasons-addressed-to-every-position",
+   "65-comparison-lifting-and-practical-judgment",
+   "65-比较提升与实践判断--comparison-lifting-and-practical-judgment",
+   "66-what-it-does-not-do",
+   "66-不做什么--what-it-does-not-do",
+   "67-restating-from-what-wants-its-continuation",
+   "67-restating-from-what-wants-its-continuation-rens-proposal",
+   "67-从想要延续者重述ren-的提议-restating-from-what-wants-its-continuation-rens-proposal",
+   "67-从想要延续者重述ren-的提议待定--restating-from-what-wants-its-continuation-rens-proposal-pending",
+   "68-what-the-continuation-condition-yields",
+   "68-what-the-one-axiom-yields-as-a-condition",
+   "68-一条公理推出什么--what-the-one-axiom-yields",
+   "68-一条公理推出什么p39-what-the-one-axiom-yields-p39",
+   "69-how-far-the-route-without-axiom-reaches",
+   "69-不用公理能走多远--how-far-the-route-without-axiom-reaches",
+   "69-不用公理能走多远p40-how-far-the-route-without-axiom-reaches-p40",
+   "7-ai-alignment",
+   "7-ai-对齐--ai-alignment",
+   "71-what-a-selection-reaches",
+   "72-what-a-selection-cannot-reach-无明-in-alignment",
+   "73-明-coupling-that-reaches-what-support-does-not-mark",
+   "74-alignment-for-all-pooled-coupling-across-intelligences",
+   "75-the-direction-under-the-condition",
+   "76-a-requested-change-must-be-an-executable-sequence",
+   "77-what-is-open",
+   "8-open-programme",
+   "8-开放纲领--open-programme",
+   "81-open-items-ranked",
+   "81-the-targets",
+   "82-further-proofs-by-area",
+   "83-readings-adopted",
+   "83-readings-decided-on-rens-delegation",
+   "84-no-reading-open-texts-that-change-by-proposal",
+   "84-open-readings",
+   "84-what-stays-rens",
+   "85-philosophical-warrant",
+   "86-the-logical-commitment",
+   "87-empirical-correspondence",
+   "88-review-status",
+   "89-objections-not-yet-answered",
+   "9-the-formal-spine",
+   "9-形式脊柱--the-formal-spine",
+   "closing-and-opening-a-crosswalk",
+   "comparison-content-under-regrouping",
+   "complete-episode-comparison-anchors",
+   "crosswalk-to-the-corpus-glossary",
+   "in-one-sentence",
+   "part-i-stated-whole",
+   "retired-labels",
+   "retired-lean-names-18-october-2026",
+   "retired-lean-names-20-october-2026",
+   "the-theory-of-becoming",
+   "the-theory-of-becoming--生成变化之论",
+   "the-theory-stated-in-full",
+   "the-theory-stated-whole",
+   "the-theory-without-axiom-sections-16",
+   "what-a-collectives-continuation-needs",
+   "一句话--in-one-sentence",
+   "理论的完整陈述--the-theory-stated-in-full",
+   "第一部分不用公理--part-i-without-axiom",
+   "第一部分的总陈述--part-i-stated-whole",
+   "第二部分一条公理--part-ii-one-axiom"
+  ],
+  "fragments": {
+   "": {
+    "count": 14394,
+    "roles": {
+     "live": 1694,
+     "generated": 578,
+     "history": 12108,
+     "evidence": 12,
+     "source": 2
+    },
+    "present": true,
+    "files": [
+     "AGENTS.md",
+     "MAP.md",
+     "README.md",
+     "_process/BRIEF.md",
+     "_process/architecture/README.md",
+     "_process/architecture/README.zh.md",
+     "_process/architecture/history/0161ea12b835d5d3/census-balance-under-continuation.json",
+     "_process/architecture/history/0232063e72bf8069/gluing-under-parity.json",
+     "_process/architecture/history/047baa11f0d65a26/where-a-run-goes-on.json",
+     "_process/architecture/history/0524f4e9feec1a8c/necessarily-drawn-is-not-returning.json",
+     "_process/architecture/history/0627d07cda90e6bf/testing-within-registration.json",
+     "_process/architecture/history/087ed38f3b0dcbcb/a-law-through-a-projection-along-one-run.json",
+     "_process/architecture/history/0a96edd6f1b0c8e2/consumption-ends-with-feeders.json",
+     "_process/architecture/history/0af4518fde9bfcb0/closing-needs-net-draw.json",
+     "_process/architecture/history/0b5db8bb785514cf/selection-through-a-model-of-the-options.json",
+     "_process/architecture/history/0be41b8718b3af70/entropy-history-and-record.json",
+     "_process/architecture/history/0c29a783df44e28e/mutual-dependence-and-its-pace.json",
+     "_process/architecture/history/0c54ab04c0565001/exchanges-commute-unless-joined.json",
+     "_process/architecture/history/0d6cbd357ac9c889/a-code-formed-between-formations.json",
+     "_process/architecture/history/0e6b782fd7d88e48/feedback-and-reach.json",
+     "_process/architecture/history/117af3faab146a7b/which-links-a-closure-needs.json",
+     "_process/architecture/history/120ed7cf721b96ec/sums-over-histories-by-support-horizon-and-order.json",
+     "_process/architecture/history/13bc4f4836076deb/experiment-needs-return.json",
+     "_process/architecture/history/13db97fd11a92274/registration-within-what-it-registers.json",
+     "_process/architecture/history/152cd73b20e6e4b4/what-a-finite-history-refutes.json",
+     "_process/architecture/history/1567b3ed7125c018/learnable-through-registration.json",
+     "_process/architecture/history/1570b8e162ae7942/levels-of-closure.json",
+     "_process/architecture/history/15742fd50cfedc40/support-from-the-supported.json",
+     "_process/architecture/history/178aa47506ba9f7b/place-transition-nets-on-the-spine.json",
+     "_process/architecture/history/19132902842e1dd6/comparison-within-reach.json",
+     "_process/architecture/history/1b557010efd1da4f/feedback-and-reach.json",
+     "_process/architecture/history/1b9f9e79fb9893c9/raising-what-couples-in-draws-from-beyond.json",
+     "_process/architecture/history/1bb2db192c7cda8f/returning-novelty-forgetting-on-levels.json",
+     "_process/architecture/history/1bf28b34a00c74f7/represented-boundary-against-dependence.json",
+     "_process/architecture/history/1cdcb3cc570a5e58/whole-law-of-counting.json",
+     "_process/architecture/history/1cf682cbd65f8ea0/how-loops-form.json",
+     "_process/architecture/history/1f681195b50de5ba/returning-where-the-course-branches.json",
+     "_process/architecture/history/20db001509c7d5d6/continuous-time-as-tower.json",
+     "_process/architecture/history/21189426f2e0dadd/exchanges-commute-unless-joined.json",
+     "_process/architecture/history/22394a3ae03c79ba/what-an-extrapolation-given-nothing-fixes.json",
+     "_process/architecture/history/22d27fd4a5298d4d/identification-where-bounded.json",
+     "_process/architecture/history/231c99bfa4224122/tests-fix-likeness-where-determined.json",
+     "_process/architecture/history/2562ebdf84ae4bf7/conditions-kept-together.json",
+     "_process/architecture/history/25a40ea699859177/what-a-pools-acts-respond-to.json",
+     "_process/architecture/history/26135d329daed4be/laws-of-one-step.json",
+     "_process/architecture/history/261bbfa4af71df45/where-a-move-is-formed.json",
+     "_process/architecture/history/265554fec7e8f90c/the-step-index-from-own-courses.json",
+     "_process/architecture/history/290d76e4f87b30ed/lifting-where-branching-is-finite.json",
+     "_process/architecture/history/291490334771f0e5/axiom-decomposition.json",
+     "_process/architecture/history/29bbd5bec961a5aa/subthreshold-registration.json",
+     "_process/architecture/history/29c7149c9522c800/bounded-census-keeps-pace.json",
+     "_process/architecture/history/2a31db0923c027aa/causal-models-as-processes.json",
+     "_process/architecture/history/2c0b4bb1a165602a/determinacy-up-to-likeness.json",
+     "_process/architecture/history/2c4e25c65938732a/rest-with-refinement-counted.json",
+     "_process/architecture/history/2ce9f338b6f6d73c/returning-novelty-forgetting-on-levels.json",
+     "_process/architecture/history/2d1555429878cb3f/projection-carrying-a-law.json",
+     "_process/architecture/history/2e0143431906bb5f/where-a-level-couples.json",
+     "_process/architecture/history/2e2cebf759ceb601/consequence-revised-reference-plan.json",
+     "_process/architecture/history/2e45766045bb2453/what-taking-all-excludes.json",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "_process/architecture/history/32499ab1ffc8c7b4/entropy-history-and-record.json",
+     "_process/architecture/history/329c990b2c7a9560/presupposition-scopes.json",
+     "_process/architecture/history/331d0f07c4f714b4/what-a-cut-loses.json",
+     "_process/architecture/history/33ef1b54d252b32d/transmission-independent-where-it-binds.json",
+     "_process/architecture/history/374ce192cd08d40f/feedback-and-reach.json",
+     "_process/architecture/history/379901eb940d32f4/runaway-distance-unregistered.json",
+     "_process/architecture/history/38f8c3edb3835a7a/imbalance-as-relatum.json",
+     "_process/architecture/history/3a06d71ec97f7459/how-often-couplings-act.json",
+     "_process/architecture/history/3a0a4b0e7baa5de3/how-fast-a-rule-may-change.json",
+     "_process/architecture/history/3b56f0d25ff4c522/loops-within-what-a-law-reads.json",
+     "_process/architecture/history/3c8fe02110371cc3/recurrence-without-decidedness.json",
+     "_process/architecture/history/3cd9380cd931b42e/recurrence-without-premise.json",
+     "_process/architecture/history/3d7a7ba504bdc84e/observation-is-a-route.json",
+     "_process/architecture/history/3dc335532742b115/unity-of-readings.json",
+     "_process/architecture/history/3ecd675234f5776f/axiom-decomposition.json",
+     "_process/architecture/history/4174236c9ae5305d/where-novelty-gain-comes-from.json",
+     "_process/architecture/history/427c61fd2d9708e7/what-a-finite-history-refutes.json",
+     "_process/architecture/history/42d67b8bcd63234a/support-from-the-supported.json",
+     "_process/architecture/history/44a96bac858f7536/transmission-is-inheritance-and-need.json",
+     "_process/architecture/history/45a8d0af8cc5eb35/a-pattern-lasts-through-passing.json",
+     "_process/architecture/history/45aaef17adb1820b/experiment-needs-return.json",
+     "_process/architecture/history/470965a59cdcfd72/counterfactual-is-the-course.json",
+     "_process/architecture/history/4818b4f31d0b826b/normal-forms-need-decided-apartness.json",
+     "_process/architecture/history/4b9e3001d3c120a9/chinese-sources-on-the-spine.json",
+     "_process/architecture/history/4c7581b4a841863e/presupposition-scopes.json",
+     "_process/architecture/history/4c88922cd0392551/place-relations-in-context.json",
+     "_process/architecture/history/4cf7dc1c147e65c9/every-loss-passes-a-juncture.json",
+     "_process/architecture/history/4d338b9e139797e9/levels-of-closure.json",
+     "_process/architecture/history/4d410962b0fc4d5b/weights-count-situations.json",
+     "_process/architecture/history/4d8b8ec7549013dc/feeding-closure.json",
+     "_process/architecture/history/4e16beec34e9f172/what-a-law-of-the-whole-and-no-part-takes.json",
+     "_process/architecture/history/4f7a0e547c422aa8/revision-with-an-undecided-value.json",
+     "_process/architecture/history/4f86e552e23ba6b4/laws-of-one-step-complete.json",
+     "_process/architecture/history/4fc8952b2e12c4a1/how-much-difference-arrives.json",
+     "_process/architecture/history/50a755cdaf9d8aba/what-a-method-comes-to-say-in-the-limit.json",
+     "_process/architecture/history/515adab08df51e90/four-cases-of-a-part.json",
+     "_process/architecture/history/5202c9fbe300f610/requirement-over-open-exchanges.json",
+     "_process/architecture/history/52f4a54bdcd23acb/levels-of-closure.json",
+     "_process/architecture/history/5346b5f069f90257/comparison-where-the-rest-responds.json",
+     "_process/architecture/history/56a9574d3e276a0b/significance-retained-within-margin.json",
+     "_process/architecture/history/5976d4c30c332b20/what-a-cut-loses.json",
+     "_process/architecture/history/5adabf46d5c8c7b1/comparison-where-the-rest-responds.json",
+     "_process/architecture/history/5b530b0e905ac91b/loss-beyond-a-region.json",
+     "_process/architecture/history/5c38af11fe02837b/the-run-classes-and-widening.json",
+     "_process/architecture/history/5c9bdd32fa588fae/entropy-history-and-record.json",
+     "_process/architecture/history/5d325fa96659cf70/census-balance.json",
+     "_process/architecture/history/5ddf3f3c34e25235/only-the-order-of-change-registers.json",
+     "_process/architecture/history/5e34eceb73b331bb/what-a-finite-stretch-verifies.json",
+     "_process/architecture/history/5e9ecfd06dff3dc7/order-of-exchanges-is-the-invariant.json",
+     "_process/architecture/history/5fe270fea40c93bb/necessarily-drawn-is-not-returning.json",
+     "_process/architecture/history/6025cce14a75d45f/determinacy-up-to-likeness.json",
+     "_process/architecture/history/603a60332ab39f09/rest-at-every-resolution.json",
+     "_process/architecture/history/60d26132566767b0/the-split-that-makes-sense.json",
+     "_process/architecture/history/612f374f274312a2/runaway-distance-unregistered.json",
+     "_process/architecture/history/6177b9ea302aea86/four-cases-of-a-part.json",
+     "_process/architecture/history/63653397a8d9e1c7/projection-carrying-a-law.json",
+     "_process/architecture/history/64345b8932a5bf2f/a-law-through-changing-coupling-along-one-run.json",
+     "_process/architecture/history/659e43c30a9be16f/comparison-within-reach.json",
+     "_process/architecture/history/68051637b79c8743/every-origin-passes-the-gate.json",
+     "_process/architecture/history/68f6c4808a15ea8a/histories-fix-law-up-to-dead-ends.json",
+     "_process/architecture/history/6a6e15e86a9cf797/losses-of-the-sum-over-histories.json",
+     "_process/architecture/history/6b5c0e74ca2a57f9/counting-under-enclosure.json",
+     "_process/architecture/history/6bcd7abe2a747e79/counting-standing-and-dependence.json",
+     "_process/architecture/history/6c316b3c54c5f169/closure-verdict-meets-axiom.json",
+     "_process/architecture/history/6caa6a4816966d1c/counting-standing-and-dependence.json",
+     "_process/architecture/history/6caff59eb295dbd8/whole-first-and-bounded-centers.json",
+     "_process/architecture/history/6cc1d57e2cb43191/runs-on-families-chosen-step-by-step.json",
+     "_process/architecture/history/6d920962b63373b1/comparison-content-under-regrouping.json",
+     "_process/architecture/history/6e18cf2e39b523da/every-origin-passes-the-gate.json",
+     "_process/architecture/history/6e94ef3da711a6dc/hexagram-arrangements-and-laws.json",
+     "_process/architecture/history/6f0de681b54ba6fb/giving-that-waits-on-giving.json",
+     "_process/architecture/history/71c487d4dfeb1a1c/relata-counted-up-to-indiscernibility.json",
+     "_process/architecture/history/71e11afe6a063abc/one-axiom-yields-g0.json",
+     "_process/architecture/history/720b9022fac3b958/gluing-under-parity.json",
+     "_process/architecture/history/7441084094ade274/what-a-law-of-the-whole-and-no-part-takes.json",
+     "_process/architecture/history/745af610045c87a3/one-axiom-yields-g0.json",
+     "_process/architecture/history/749b3493e879c08a/unity-of-readings.json",
+     "_process/architecture/history/76ddb99da5d6935a/loss-beyond-a-region.json",
+     "_process/architecture/history/773f4d5fae4f7f58/lifting-where-branching-is-finite.json",
+     "_process/architecture/history/79737785c35cee7d/a-law-through-coupling-along-one-run.json",
+     "_process/architecture/history/7be985296e69545f/orders-as-a-sum-over-histories.json",
+     "_process/architecture/history/81f986558218e1fa/capture-through-the-rule.json",
+     "_process/architecture/history/8310cef1bfb34bea/where-two-courses-rejoin.json",
+     "_process/architecture/history/837e4db9bda995ad/support-from-the-supported.json",
+     "_process/architecture/history/87b3b8fcc64a79be/rest-at-every-resolution.json",
+     "_process/architecture/history/88dcf59fe3d78de4/generalization-through-lumping.json",
+     "_process/architecture/history/8c9e7e527ae783bb/configurations-alike-by-relation.json",
+     "_process/architecture/history/8d71a4b509826f08/where-a-run-goes-on.json",
+     "_process/architecture/history/8f28faff67f7e325/recurring-reference-revision.json",
+     "_process/architecture/history/8f7c1bdf733192d6/identification-where-runs-part.json",
+     "_process/architecture/history/92392615325d81b3/generalization-through-lumping.json",
+     "_process/architecture/history/93fe9aefdb467597/observation-is-a-route.json",
+     "_process/architecture/history/94250284056fbd13/the-boundary-of-enough-under-undetermined-laws.json",
+     "_process/architecture/history/947823042f0e86b5/census-balance-under-continuation.json",
+     "_process/architecture/history/97ead96868c7a724/configurations-alike-by-relation.json",
+     "_process/architecture/history/99c9b58848644440/ceasing-needs-arising.json",
+     "_process/architecture/history/9a4f37ebe969e16a/feeding-closure.json",
+     "_process/architecture/history/9ab850d3c4ed0b66/consumption-ends-with-feeders.json",
+     "_process/architecture/history/9b9b0bfeb271c2f7/counting-where-the-counts-exist.json",
+     "_process/architecture/history/9d81f98aa9c8f966/hexagrams-on-the-spine.json",
+     "_process/architecture/history/9e9241eed47b4880/sensitivity-is-the-least-registration.json",
+     "_process/architecture/history/9f9926b794418171/attraction-is-not-returning.json",
+     "_process/architecture/history/a04c6766ca79c103/one-step-missing-laws.json",
+     "_process/architecture/history/a25745ef5d371309/comparison-by-widening.json",
+     "_process/architecture/history/a5d06e58be5f52d6/what-finitely-many-labels-fix.json",
+     "_process/architecture/history/a710c88a0a6ed2f1/ceasing-needs-arising.json",
+     "_process/architecture/history/a7f00d8511529182/typicality-by-counting.json",
+     "_process/architecture/history/a913174fe2e04c50/counterfactual-is-the-course.json",
+     "_process/architecture/history/acda90c059a49c7d/testing-within-registration.json",
+     "_process/architecture/history/ad37a49ef0e7d81b/the-last-change-of-a-run.json",
+     "_process/architecture/history/b487a0e38971a139/what-pooled-coupling-reaches.json",
+     "_process/architecture/history/b497065841cb8889/wisdom-root-part-one.json",
+     "_process/architecture/history/b6668c30b848a8fc/a-history-read-off-its-finite-stretches.json",
+     "_process/architecture/history/b738d863b458b867/separation-loses-the-relation.json",
+     "_process/architecture/history/b89afba8867c43b4/the-world-an-interleaving-builds.json",
+     "_process/architecture/history/b8e5b15685dad731/laws-of-one-step.json",
+     "_process/architecture/history/ba11044583f78773/whether-a-loop-closes-a-difference.json",
+     "_process/architecture/history/ba11e4fc6d30569e/bounded-census-keeps-pace.json",
+     "_process/architecture/history/bcd97b01bf7171e6/selection-through-registration.json",
+     "_process/architecture/history/bd24f0b7906d6d5f/orders-as-a-sum-over-histories.json",
+     "_process/architecture/history/bde96c651f0b4573/comparison-where-the-rest-responds.json",
+     "_process/architecture/history/bdee51f42ffe58fe/when-the-runs-of-a-process-settle.json",
+     "_process/architecture/history/be0ac957b3e08010/listing-once-is-decided-identity.json",
+     "_process/architecture/history/bedccea98ecd5163/identification-where-runs-part.json",
+     "_process/architecture/history/c0a1ee606c2cd853/two-sided-regulation-and-late-reading.json",
+     "_process/architecture/history/c31d02776fce6f49/whole-first-and-bounded-centers.json",
+     "_process/architecture/history/c3b164b26b78b169/seeking-boundary.json",
+     "_process/architecture/history/c4277a671ca2bd9d/process-and-frame-as-readings.json",
+     "_process/architecture/history/c575d2e260a620e1/identification-where-bounded.json",
+     "_process/architecture/history/c5b0d91698de2622/hexagram-world-laws.json",
+     "_process/architecture/history/c67d14b89f47a579/laws-at-finer-units.json",
+     "_process/architecture/history/c738317088d54539/census-balance.json",
+     "_process/architecture/history/c78c6b37c923bfa0/how-a-carried-difference-grows.json",
+     "_process/architecture/history/c9a571b48119bffb/how-loops-form.json",
+     "_process/architecture/history/c9db479da53fb748/one-axiom-yields-g0.json",
+     "_process/architecture/history/cae8c39c2121e630/axiom-decomposition.json",
+     "_process/architecture/history/cb8e467411bc670f/what-a-commuting-law-keeps-apart.json",
+     "_process/architecture/history/cbdaf426e1920240/relative-position-is-zero-sum.json",
+     "_process/architecture/history/cd293df19414d771/premises-that-are-states-of-the-law.json",
+     "_process/architecture/history/ce2a189f8d7fbf1d/tests-fix-likeness-where-determined.json",
+     "_process/architecture/history/ce9b5dc1d6dda8f2/target-capture.json",
+     "_process/architecture/history/d04851275c7e10e8/sum-over-histories-exact.json",
+     "_process/architecture/history/d0fe65197f275056/how-often-couplings-act.json",
+     "_process/architecture/history/d115ebe0386b8669/restoring-giving-from-the-worst-start.json",
+     "_process/architecture/history/d1495af6c1cd28b4/how-a-carried-difference-grows.json",
+     "_process/architecture/history/d49c1429e4fd37f8/whole-law-of-counting.json",
+     "_process/architecture/history/d52bca486d126519/wisdom-root-part-one.json",
+     "_process/architecture/history/d869071fbbcdffa5/the-gap-for-ones-own-act.json",
+     "_process/architecture/history/d9ab8f141df08722/laws-of-one-step.json",
+     "_process/architecture/history/d9fbce244cb4e380/counting-under-enclosure.json",
+     "_process/architecture/history/d9fd20ded8e4bb3d/where-a-move-is-formed.json",
+     "_process/architecture/history/dbba05d906d8c1aa/comparison-within-reach.json",
+     "_process/architecture/history/ddd9116da84c0313/thresholds-of-waiting.json",
+     "_process/architecture/history/e18b2cd45c38a347/premises-read-off-the-exchange.json",
+     "_process/architecture/history/e21d3240ea65811a/closing-needs-net-draw.json",
+     "_process/architecture/history/e62a92e786475ad0/feeding-closure.json",
+     "_process/architecture/history/e73b6799a77ff8d1/where-a-rising-take-ends.json",
+     "_process/architecture/history/e81dfb90e26d1275/closure-verdict-meets-axiom.json",
+     "_process/architecture/history/e8c0760ae4065391/least-loss-rest.json",
+     "_process/architecture/history/eb19bf5a622326fb/census-read-off-the-exchange.json",
+     "_process/architecture/history/eb4574df70435985/testing-within-registration.json",
+     "_process/architecture/history/eb4b9b9487d823e1/loops-within-what-a-law-reads.json",
+     "_process/architecture/history/ed60c96dae23ccb7/counterfactual-is-the-course.json",
+     "_process/architecture/history/ef2f6ee77afec000/fixed-places-and-sole-lines.json",
+     "_process/architecture/history/ef8a3370ef4951a6/least-footprint-where-idleness-decided.json",
+     "_process/architecture/history/f422dfabb50df901/counts-exist-where-decided.json",
+     "_process/architecture/history/f4acbf8012251a73/wisdom-root-part-one.json",
+     "_process/architecture/history/f54be788a80fc25e/consumption-ends-with-feeders.json",
+     "_process/architecture/history/f8f654707fd426b8/the-split-that-makes-sense.json",
+     "_process/architecture/history/f9a018ab519b6f55/whole-law-of-counting.json",
+     "_process/architecture/history/f9be09fc94f10525/learning-by-refutation.json",
+     "_process/architecture/history/fa31c69c474d13bf/how-much-difference-arrives.json",
+     "_process/architecture/history/fb1187b1aa06afad/attraction-is-not-returning.json",
+     "_process/architecture/history/fbcae621772324ac/contextual-registration.json",
+     "_process/architecture/history/fca4cec915f1ff85/learning-through-a-map-is-tracking-in-the-limit.json",
+     "_process/architecture/history/fce289993a3ba0dd/sensitivity-is-the-least-registration.json",
+     "_process/architecture/history/fd2401d67871101a/selection-through-registration.json",
+     "_process/architecture/history/fec1222bf3f1930e/laws-at-coarser-steps.json",
+     "_process/architecture/moves/H4.json",
+     "_process/architecture/moves/H5.json",
+     "_process/architecture/moves/R19-chapters.json",
+     "_process/architecture/moves/R33-history.json",
+     "_process/architecture/moves/R35-B1-chapters.json",
+     "_process/architecture/moves/R35-B2-reference.json",
+     "_process/architecture/moves/R35-B4-study.json",
+     "_process/architecture/moves/R35-B5-kits.json",
+     "_process/architecture/moves/RD.json",
+     "_process/architecture/moves/RE.json",
+     "_process/architecture/rename-2026-10-09.json",
+     "_process/architecture/renames/R35-E4-renames.json",
+     "_process/navigation/README-LEAD.md",
+     "_process/research-config.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPARISON-CONTENT-INTEGRATION-CHECKS.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETE-EPISODE-COMPARISON-INTEGRATION-CHECKS.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EPISODE-AND-SUSTAINED-HARM-INTEGRATION-CHECKS.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-GRANULARITY-INDEX-EDITS.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FINITE-RESPONSIVENESS-INTEGRATION-CHECKS.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-REFERENCE-PLAN-INTEGRATION-CHECKS.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/OPEN-FORM-BRIDGE-CHECKS.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RETROSPECTIVE-BINDING-CONCURRENT-NOTES.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-PROOF-OVERLAP.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TIMELY-CONTINUATION-INTEGRATION-CHECKS.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/a2-chain/reading.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/a3-chain/reading.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch10.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch11.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch12.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch13.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch14.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch15.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch16.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch17.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch18.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch19.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch2.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch20.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch21.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch22.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch23.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch24.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch25.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch26.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch27.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch28.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch29.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch3.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch30.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch31.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch32.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch33.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch34.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch35.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch4.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch5.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch6.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch7.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch8.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/integration/notes-batch9.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r25-docs-now/edits_a_en.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r25-docs-now/edits_b.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r25-docs-now/edits_c.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r25-docs-now/edits_d_refs.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/s3-last-change/wording-mid-hashes.json",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-FOUNDATION-CORRESPONDENCE-REVIEW.json",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-TIMING-REVIEW.json",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.zh.md",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r35-corpus/chain-pending.json",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r35-corpus/plan/data/history-classes.json",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r35-corpus/plan/data/worktrees.json",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r35-corpus/rerun/data/refscan.json",
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/RESTRUCTURE-REPORT.md",
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json",
+     "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
+     "sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md",
+     "theories/becoming/README.md",
+     "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
+     "theories/becoming/chapters/NONDUAL-METHOD.md",
+     "theories/becoming/chapters/README.md",
+     "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+     "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+     "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
+     "theories/becoming/history/ARGUMENTS-M-Z-2026-10-08.md",
+     "theories/becoming/history/MANIFEST.json",
+     "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md",
+     "theories/becoming/results/GENERATIVITY-CHAIN.md",
+     "theories/becoming/results/LEAN-INDEX.md",
+     "theories/becoming/results/data/arguments-m-z.json",
+     "theories/becoming/results/data/generativity-chain.json",
+     "theories/becoming/results/data/lean-index.json",
+     "theories/becoming/results/data/source-index.json",
+     "theories/becoming/results/data/standard-boundaries.json",
+     "theories/becoming/results/data/theory-map.json",
+     "theories/becoming/results/lean-declarations/abstraction.md",
+     "theories/becoming/results/lean-declarations/becoming-core.md",
+     "theories/becoming/results/lean-declarations/core.md",
+     "theories/becoming/results/lean-declarations/ethics.md",
+     "theories/becoming/results/records/a-code-formed-between-formations.json",
+     "theories/becoming/results/records/a-code-formed-between-formations.md",
+     "theories/becoming/results/records/a-history-read-off-its-finite-stretches.json",
+     "theories/becoming/results/records/a-history-read-off-its-finite-stretches.md",
+     "theories/becoming/results/records/a-law-through-a-projection-along-one-run.json",
+     "theories/becoming/results/records/a-law-through-a-projection-along-one-run.md",
+     "theories/becoming/results/records/a-law-through-changing-coupling-along-one-run.json",
+     "theories/becoming/results/records/a-law-through-changing-coupling-along-one-run.md",
+     "theories/becoming/results/records/a-law-through-coupling-along-one-run.json",
+     "theories/becoming/results/records/a-law-through-coupling-along-one-run.md",
+     "theories/becoming/results/records/a-pattern-lasts-through-passing.json",
+     "theories/becoming/results/records/a-pattern-lasts-through-passing.md",
+     "theories/becoming/results/records/attraction-is-not-returning.json",
+     "theories/becoming/results/records/attraction-is-not-returning.md",
+     "theories/becoming/results/records/bounded-census-keeps-pace.json",
+     "theories/becoming/results/records/bounded-census-keeps-pace.md",
+     "theories/becoming/results/records/capture-through-the-rule.json",
+     "theories/becoming/results/records/capture-through-the-rule.md",
+     "theories/becoming/results/records/causal-models-as-processes.json",
+     "theories/becoming/results/records/causal-models-as-processes.md",
+     "theories/becoming/results/records/ceasing-needs-arising.json",
+     "theories/becoming/results/records/ceasing-needs-arising.md",
+     "theories/becoming/results/records/census-balance-under-continuation.json",
+     "theories/becoming/results/records/census-balance-under-continuation.md",
+     "theories/becoming/results/records/census-balance.json",
+     "theories/becoming/results/records/census-balance.md",
+     "theories/becoming/results/records/census-read-off-the-exchange.json",
+     "theories/becoming/results/records/census-read-off-the-exchange.md",
+     "theories/becoming/results/records/chinese-sources-on-the-spine.json",
+     "theories/becoming/results/records/chinese-sources-on-the-spine.md",
+     "theories/becoming/results/records/claims-shown-in-context.json",
+     "theories/becoming/results/records/claims-shown-in-context.md",
+     "theories/becoming/results/records/closing-needs-net-draw.json",
+     "theories/becoming/results/records/closing-needs-net-draw.md",
+     "theories/becoming/results/records/closure-verdict-meets-continuation-condition.json",
+     "theories/becoming/results/records/closure-verdict-meets-continuation-condition.md",
+     "theories/becoming/results/records/comparison-by-widening.json",
+     "theories/becoming/results/records/comparison-by-widening.md",
+     "theories/becoming/results/records/comparison-content-under-regrouping.json",
+     "theories/becoming/results/records/comparison-content-under-regrouping.md",
+     "theories/becoming/results/records/comparison-where-the-rest-responds.json",
+     "theories/becoming/results/records/comparison-where-the-rest-responds.md",
+     "theories/becoming/results/records/comparison-within-reach.json",
+     "theories/becoming/results/records/comparison-within-reach.md",
+     "theories/becoming/results/records/conditions-kept-together.json",
+     "theories/becoming/results/records/conditions-kept-together.md",
+     "theories/becoming/results/records/configurations-alike-by-relation.json",
+     "theories/becoming/results/records/configurations-alike-by-relation.md",
+     "theories/becoming/results/records/consequence-revised-reference-plan.json",
+     "theories/becoming/results/records/consequence-revised-reference-plan.md",
+     "theories/becoming/results/records/consumption-ends-with-feeders.json",
+     "theories/becoming/results/records/consumption-ends-with-feeders.md",
+     "theories/becoming/results/records/continuation-condition-decomposition.json",
+     "theories/becoming/results/records/continuation-condition-decomposition.md",
+     "theories/becoming/results/records/continuation-condition-yields-living-significance.json",
+     "theories/becoming/results/records/continuation-condition-yields-living-significance.md",
+     "theories/becoming/results/records/continuous-time-as-tower.json",
+     "theories/becoming/results/records/continuous-time-as-tower.md",
+     "theories/becoming/results/records/counterfactual-is-the-course.json",
+     "theories/becoming/results/records/counterfactual-is-the-course.md",
+     "theories/becoming/results/records/counting-standing-and-dependence.json",
+     "theories/becoming/results/records/counting-standing-and-dependence.md",
+     "theories/becoming/results/records/counting-under-enclosure.json",
+     "theories/becoming/results/records/counting-under-enclosure.md",
+     "theories/becoming/results/records/counting-where-the-counts-exist.json",
+     "theories/becoming/results/records/counting-where-the-counts-exist.md",
+     "theories/becoming/results/records/counts-exist-where-decided.json",
+     "theories/becoming/results/records/counts-exist-where-decided.md",
+     "theories/becoming/results/records/determinacy-up-to-likeness.json",
+     "theories/becoming/results/records/determinacy-up-to-likeness.md",
+     "theories/becoming/results/records/differences-below-threshold.json",
+     "theories/becoming/results/records/differences-below-threshold.md",
+     "theories/becoming/results/records/entropy-history-and-record.json",
+     "theories/becoming/results/records/entropy-history-and-record.md",
+     "theories/becoming/results/records/every-loss-passes-a-juncture.json",
+     "theories/becoming/results/records/every-loss-passes-a-juncture.md",
+     "theories/becoming/results/records/every-origin-passes-the-gate.json",
+     "theories/becoming/results/records/every-origin-passes-the-gate.md",
+     "theories/becoming/results/records/exchanges-commute-unless-joined.json",
+     "theories/becoming/results/records/exchanges-commute-unless-joined.md",
+     "theories/becoming/results/records/experiment-needs-return.json",
+     "theories/becoming/results/records/experiment-needs-return.md",
+     "theories/becoming/results/records/feedback-and-reach.json",
+     "theories/becoming/results/records/feedback-and-reach.md",
+     "theories/becoming/results/records/feeding-closure.json",
+     "theories/becoming/results/records/feeding-closure.md",
+     "theories/becoming/results/records/fixed-places-and-sole-lines.json",
+     "theories/becoming/results/records/fixed-places-and-sole-lines.md",
+     "theories/becoming/results/records/four-cases-of-a-part.json",
+     "theories/becoming/results/records/four-cases-of-a-part.md",
+     "theories/becoming/results/records/generalization-through-lumping.json",
+     "theories/becoming/results/records/generalization-through-lumping.md",
+     "theories/becoming/results/records/giving-that-waits-on-giving.json",
+     "theories/becoming/results/records/giving-that-waits-on-giving.md",
+     "theories/becoming/results/records/gluing-under-parity.json",
+     "theories/becoming/results/records/gluing-under-parity.md",
+     "theories/becoming/results/records/hexagram-arrangements-and-laws.json",
+     "theories/becoming/results/records/hexagram-arrangements-and-laws.md",
+     "theories/becoming/results/records/hexagram-world-laws.json",
+     "theories/becoming/results/records/hexagram-world-laws.md",
+     "theories/becoming/results/records/hexagrams-on-the-spine.json",
+     "theories/becoming/results/records/hexagrams-on-the-spine.md",
+     "theories/becoming/results/records/histories-fix-law-up-to-dead-ends.json",
+     "theories/becoming/results/records/histories-fix-law-up-to-dead-ends.md",
+     "theories/becoming/results/records/how-a-carried-difference-grows.json",
+     "theories/becoming/results/records/how-a-carried-difference-grows.md",
+     "theories/becoming/results/records/how-fast-a-rule-may-change.json",
+     "theories/becoming/results/records/how-fast-a-rule-may-change.md",
+     "theories/becoming/results/records/how-loops-form.json",
+     "theories/becoming/results/records/how-loops-form.md",
+     "theories/becoming/results/records/how-much-difference-arrives.json",
+     "theories/becoming/results/records/how-much-difference-arrives.md",
+     "theories/becoming/results/records/how-often-couplings-act.json",
+     "theories/becoming/results/records/how-often-couplings-act.md",
+     "theories/becoming/results/records/identification-where-bounded.json",
+     "theories/becoming/results/records/identification-where-bounded.md",
+     "theories/becoming/results/records/identification-where-runs-part.json",
+     "theories/becoming/results/records/identification-where-runs-part.md",
+     "theories/becoming/results/records/imbalance-as-relatum.json",
+     "theories/becoming/results/records/imbalance-as-relatum.md",
+     "theories/becoming/results/records/laws-at-coarser-steps.json",
+     "theories/becoming/results/records/laws-at-coarser-steps.md",
+     "theories/becoming/results/records/laws-at-finer-units.json",
+     "theories/becoming/results/records/laws-at-finer-units.md",
+     "theories/becoming/results/records/laws-of-one-step-complete.json",
+     "theories/becoming/results/records/laws-of-one-step-complete.md",
+     "theories/becoming/results/records/laws-of-one-step.json",
+     "theories/becoming/results/records/laws-of-one-step.md",
+     "theories/becoming/results/records/learnable-through-a-map.json",
+     "theories/becoming/results/records/learnable-through-a-map.md",
+     "theories/becoming/results/records/learning-by-refutation.json",
+     "theories/becoming/results/records/learning-by-refutation.md",
+     "theories/becoming/results/records/learning-through-a-map-is-tracking-in-the-limit.json",
+     "theories/becoming/results/records/learning-through-a-map-is-tracking-in-the-limit.md",
+     "theories/becoming/results/records/least-footprint-where-idleness-decided.json",
+     "theories/becoming/results/records/least-footprint-where-idleness-decided.md",
+     "theories/becoming/results/records/least-loss-rest.json",
+     "theories/becoming/results/records/least-loss-rest.md",
+     "theories/becoming/results/records/levels-of-closure.json",
+     "theories/becoming/results/records/levels-of-closure.md",
+     "theories/becoming/results/records/lifting-where-branching-is-finite.json",
+     "theories/becoming/results/records/lifting-where-branching-is-finite.md",
+     "theories/becoming/results/records/listing-once-is-decided-identity.json",
+     "theories/becoming/results/records/listing-once-is-decided-identity.md",
+     "theories/becoming/results/records/loops-within-what-a-law-reads.json",
+     "theories/becoming/results/records/loops-within-what-a-law-reads.md",
+     "theories/becoming/results/records/loss-beyond-a-region.json",
+     "theories/becoming/results/records/loss-beyond-a-region.md",
+     "theories/becoming/results/records/losses-of-the-sum-over-histories.json",
+     "theories/becoming/results/records/losses-of-the-sum-over-histories.md",
+     "theories/becoming/results/records/mutual-dependence-and-its-pace.json",
+     "theories/becoming/results/records/mutual-dependence-and-its-pace.md",
+     "theories/becoming/results/records/necessarily-drawn-is-not-returning.json",
+     "theories/becoming/results/records/necessarily-drawn-is-not-returning.md",
+     "theories/becoming/results/records/normal-forms-need-decided-apartness.json",
+     "theories/becoming/results/records/normal-forms-need-decided-apartness.md",
+     "theories/becoming/results/records/observation-is-a-route.json",
+     "theories/becoming/results/records/observation-is-a-route.md",
+     "theories/becoming/results/records/one-step-missing-laws.json",
+     "theories/becoming/results/records/one-step-missing-laws.md",
+     "theories/becoming/results/records/only-the-order-of-change-shows.json",
+     "theories/becoming/results/records/only-the-order-of-change-shows.md",
+     "theories/becoming/results/records/order-of-exchanges-is-the-invariant.json",
+     "theories/becoming/results/records/order-of-exchanges-is-the-invariant.md",
+     "theories/becoming/results/records/orders-as-a-sum-over-histories.json",
+     "theories/becoming/results/records/orders-as-a-sum-over-histories.md",
+     "theories/becoming/results/records/place-relations-in-context.json",
+     "theories/becoming/results/records/place-relations-in-context.md",
+     "theories/becoming/results/records/place-transition-nets-on-the-spine.json",
+     "theories/becoming/results/records/place-transition-nets-on-the-spine.md",
+     "theories/becoming/results/records/premises-read-off-the-exchange.json",
+     "theories/becoming/results/records/premises-read-off-the-exchange.md",
+     "theories/becoming/results/records/premises-that-are-states-of-the-law.json",
+     "theories/becoming/results/records/premises-that-are-states-of-the-law.md",
+     "theories/becoming/results/records/presupposition-scopes.json",
+     "theories/becoming/results/records/presupposition-scopes.md",
+     "theories/becoming/results/records/process-and-frame-as-readings.json",
+     "theories/becoming/results/records/process-and-frame-as-readings.md",
+     "theories/becoming/results/records/projection-carrying-a-law.json",
+     "theories/becoming/results/records/projection-carrying-a-law.md",
+     "theories/becoming/results/records/raising-what-couples-in-draws-from-beyond.json",
+     "theories/becoming/results/records/raising-what-couples-in-draws-from-beyond.md",
+     "theories/becoming/results/records/readings-within-what-they-read.json",
+     "theories/becoming/results/records/readings-within-what-they-read.md",
+     "theories/becoming/results/records/recurrence-without-decidedness.json",
+     "theories/becoming/results/records/recurrence-without-decidedness.md",
+     "theories/becoming/results/records/recurrence-without-premise.json",
+     "theories/becoming/results/records/recurrence-without-premise.md",
+     "theories/becoming/results/records/recurring-reference-revision.json",
+     "theories/becoming/results/records/recurring-reference-revision.md",
+     "theories/becoming/results/records/relata-counted-up-to-indiscernibility.json",
+     "theories/becoming/results/records/relata-counted-up-to-indiscernibility.md",
+     "theories/becoming/results/records/relative-position-is-zero-sum.json",
+     "theories/becoming/results/records/relative-position-is-zero-sum.md",
+     "theories/becoming/results/records/represented-boundary-against-dependence.json",
+     "theories/becoming/results/records/represented-boundary-against-dependence.md",
+     "theories/becoming/results/records/requirement-over-open-exchanges.json",
+     "theories/becoming/results/records/requirement-over-open-exchanges.md",
+     "theories/becoming/results/records/rest-at-every-resolution.json",
+     "theories/becoming/results/records/rest-at-every-resolution.md",
+     "theories/becoming/results/records/rest-with-refinement-counted.json",
+     "theories/becoming/results/records/rest-with-refinement-counted.md",
+     "theories/becoming/results/records/restoring-giving-from-the-worst-start.json",
+     "theories/becoming/results/records/restoring-giving-from-the-worst-start.md",
+     "theories/becoming/results/records/returning-novelty-forgetting-on-levels.json",
+     "theories/becoming/results/records/returning-novelty-forgetting-on-levels.md",
+     "theories/becoming/results/records/returning-where-the-course-branches.json",
+     "theories/becoming/results/records/returning-where-the-course-branches.md",
+     "theories/becoming/results/records/revision-with-an-undecided-value.json",
+     "theories/becoming/results/records/revision-with-an-undecided-value.md",
+     "theories/becoming/results/records/runaway-distance-uncoupled.json",
+     "theories/becoming/results/records/runaway-distance-uncoupled.md",
+     "theories/becoming/results/records/runs-on-families-chosen-step-by-step.json",
+     "theories/becoming/results/records/runs-on-families-chosen-step-by-step.md",
+     "theories/becoming/results/records/seeking-boundary.json",
+     "theories/becoming/results/records/seeking-boundary.md",
+     "theories/becoming/results/records/selection-through-a-model-of-the-options.json",
+     "theories/becoming/results/records/selection-through-a-model-of-the-options.md",
+     "theories/becoming/results/records/selection-through-couplings.json",
+     "theories/becoming/results/records/selection-through-couplings.md",
+     "theories/becoming/results/records/sensitivity-is-the-least-coupling.json",
+     "theories/becoming/results/records/sensitivity-is-the-least-coupling.md",
+     "theories/becoming/results/records/separation-loses-the-relation.json",
+     "theories/becoming/results/records/separation-loses-the-relation.md",
+     "theories/becoming/results/records/significance-retained-within-margin.json",
+     "theories/becoming/results/records/significance-retained-within-margin.md",
+     "theories/becoming/results/records/sum-over-histories-exact.json",
+     "theories/becoming/results/records/sum-over-histories-exact.md",
+     "theories/becoming/results/records/sums-over-histories-by-support-horizon-and-order.json",
+     "theories/becoming/results/records/sums-over-histories-by-support-horizon-and-order.md",
+     "theories/becoming/results/records/support-from-the-supported.json",
+     "theories/becoming/results/records/support-from-the-supported.md",
+     "theories/becoming/results/records/target-capture.json",
+     "theories/becoming/results/records/target-capture.md",
+     "theories/becoming/results/records/testing-within-couplings.json",
+     "theories/becoming/results/records/testing-within-couplings.md",
+     "theories/becoming/results/records/tests-fix-likeness-where-determined.json",
+     "theories/becoming/results/records/tests-fix-likeness-where-determined.md",
+     "theories/becoming/results/records/the-boundary-of-enough-under-undetermined-laws.json",
+     "theories/becoming/results/records/the-boundary-of-enough-under-undetermined-laws.md",
+     "theories/becoming/results/records/the-gap-for-ones-own-act.json",
+     "theories/becoming/results/records/the-gap-for-ones-own-act.md",
+     "theories/becoming/results/records/the-last-change-of-a-run.json",
+     "theories/becoming/results/records/the-last-change-of-a-run.md",
+     "theories/becoming/results/records/the-run-classes-and-widening.json",
+     "theories/becoming/results/records/the-run-classes-and-widening.md",
+     "theories/becoming/results/records/the-split-that-makes-sense.json",
+     "theories/becoming/results/records/the-split-that-makes-sense.md",
+     "theories/becoming/results/records/the-step-index-from-own-courses.json",
+     "theories/becoming/results/records/the-step-index-from-own-courses.md",
+     "theories/becoming/results/records/the-world-an-interleaving-builds.json",
+     "theories/becoming/results/records/the-world-an-interleaving-builds.md",
+     "theories/becoming/results/records/thresholds-of-waiting.json",
+     "theories/becoming/results/records/thresholds-of-waiting.md",
+     "theories/becoming/results/records/transmission-independent-where-it-binds.json",
+     "theories/becoming/results/records/transmission-independent-where-it-binds.md",
+     "theories/becoming/results/records/transmission-is-inheritance-and-need.json",
+     "theories/becoming/results/records/transmission-is-inheritance-and-need.md",
+     "theories/becoming/results/records/two-sided-regulation-and-late-reading.json",
+     "theories/becoming/results/records/two-sided-regulation-and-late-reading.md",
+     "theories/becoming/results/records/typicality-by-counting.json",
+     "theories/becoming/results/records/typicality-by-counting.md",
+     "theories/becoming/results/records/unity-of-readings.json",
+     "theories/becoming/results/records/unity-of-readings.md",
+     "theories/becoming/results/records/weights-count-situations.json",
+     "theories/becoming/results/records/weights-count-situations.md",
+     "theories/becoming/results/records/what-a-commuting-law-keeps-apart.json",
+     "theories/becoming/results/records/what-a-commuting-law-keeps-apart.md",
+     "theories/becoming/results/records/what-a-cut-loses.json",
+     "theories/becoming/results/records/what-a-cut-loses.md",
+     "theories/becoming/results/records/what-a-finite-history-refutes.json",
+     "theories/becoming/results/records/what-a-finite-history-refutes.md",
+     "theories/becoming/results/records/what-a-finite-stretch-verifies.json",
+     "theories/becoming/results/records/what-a-finite-stretch-verifies.md",
+     "theories/becoming/results/records/what-a-law-of-the-whole-and-no-part-takes.json",
+     "theories/becoming/results/records/what-a-law-of-the-whole-and-no-part-takes.md",
+     "theories/becoming/results/records/what-a-method-comes-to-say-in-the-limit.json",
+     "theories/becoming/results/records/what-a-method-comes-to-say-in-the-limit.md",
+     "theories/becoming/results/records/what-a-pools-acts-respond-to.json",
+     "theories/becoming/results/records/what-a-pools-acts-respond-to.md",
+     "theories/becoming/results/records/what-an-extrapolation-given-nothing-fixes.json",
+     "theories/becoming/results/records/what-an-extrapolation-given-nothing-fixes.md",
+     "theories/becoming/results/records/what-finitely-many-labels-fix.json",
+     "theories/becoming/results/records/what-finitely-many-labels-fix.md",
+     "theories/becoming/results/records/what-pooled-coupling-reaches.json",
+     "theories/becoming/results/records/what-pooled-coupling-reaches.md",
+     "theories/becoming/results/records/what-taking-all-excludes.json",
+     "theories/becoming/results/records/what-taking-all-excludes.md",
+     "theories/becoming/results/records/when-the-runs-of-a-process-settle.json",
+     "theories/becoming/results/records/when-the-runs-of-a-process-settle.md",
+     "theories/becoming/results/records/where-a-level-couples.json",
+     "theories/becoming/results/records/where-a-level-couples.md",
+     "theories/becoming/results/records/where-a-move-is-formed.json",
+     "theories/becoming/results/records/where-a-move-is-formed.md",
+     "theories/becoming/results/records/where-a-rising-take-ends.json",
+     "theories/becoming/results/records/where-a-rising-take-ends.md",
+     "theories/becoming/results/records/where-a-run-goes-on.json",
+     "theories/becoming/results/records/where-a-run-goes-on.md",
+     "theories/becoming/results/records/where-novelty-gain-comes-from.json",
+     "theories/becoming/results/records/where-novelty-gain-comes-from.md",
+     "theories/becoming/results/records/where-two-courses-rejoin.json",
+     "theories/becoming/results/records/where-two-courses-rejoin.md",
+     "theories/becoming/results/records/whether-a-loop-closes-a-difference.json",
+     "theories/becoming/results/records/whether-a-loop-closes-a-difference.md",
+     "theories/becoming/results/records/which-links-a-closure-needs.json",
+     "theories/becoming/results/records/which-links-a-closure-needs.md",
+     "theories/becoming/results/records/whole-first-and-bounded-centers.json",
+     "theories/becoming/results/records/whole-first-and-bounded-centers.md",
+     "theories/becoming/results/records/whole-law-of-counting.json",
+     "theories/becoming/results/records/whole-law-of-counting.md",
+     "theories/becoming/results/records/wisdom-root-without-axiom.json",
+     "theories/becoming/results/records/wisdom-root-without-axiom.md"
+    ]
+   },
+   "0": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "0-前提卡--premise-card": {
+    "count": 15,
+    "roles": {
+     "live": 7,
+     "generated": 3,
+     "history": 5
+    },
+    "present": true,
+    "files": [
+     "MAP.md",
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r25-docs-now/edits_a_other.json",
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json",
+     "theories/becoming/OPENING.md",
+     "theories/becoming/chapters/DAO-AND-GENERATIVITY.md"
+    ]
+   },
+   "1-生成同一展开--becoming-one-unfolding": {
+    "count": 2,
+    "roles": {
+     "live": 2
+    },
+    "present": true,
+    "files": [
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
+     "theories/becoming/chapters/DAO-AND-GENERATIVITY.md"
+    ]
+   },
+   "10": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "10-术语表--glossary": {
+    "count": 3,
+    "roles": {
+     "live": 3
+    },
+    "present": true,
+    "files": [
+     "GLOSSARY.md",
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json",
+     "theories/becoming/chapters/HANZI-AND-THEORY-TREE.md"
+    ]
+   },
+   "11-既有章节的位置--where-the-earlier-chapters-stand": {
+    "count": 1,
+    "roles": {
+     "generated": 1
+    },
+    "present": true,
+    "files": [
+     "theories/becoming/chapters/README.md"
+    ]
+   },
+   "3-认识与探究--knowing-and-inquiry": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "theories/becoming/chapters/DAO-AND-GENERATIVITY.md"
+    ]
+   },
+   "4-集体动力学--collective-dynamics": {
+    "count": 3,
+    "roles": {
+     "generated": 1,
+     "history": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "theories/becoming/OPENING.md"
+    ]
+   },
+   "5-评价的形成--how-evaluation-forms": {
+    "count": 2,
+    "roles": {
+     "live": 2
+    },
+    "present": true,
+    "files": [
+     "theories/becoming/chapters/DAO-AND-GENERATIVITY.md"
+    ]
+   },
+   "6-universal-metaethical-core": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "theories/becoming/chapters/DAO-AND-GENERATIVITY.md"
+    ]
+   },
+   "6-universal-metaethical-core--普遍元伦理核心": {
+    "count": 1,
+    "roles": {
+     "generated": 1
+    },
+    "present": true,
+    "files": [
+     "theories/becoming/results/LEAN-INDEX.md"
+    ]
+   },
+   "611-the-axiom-decomposed-the-selfs-presupposition-and-the-step-of-invariance": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "theories/becoming/chapters/DAO-AND-GENERATIVITY.md"
+    ]
+   },
+   "611-the-condition-decomposed-the-selfs-presupposition-and-the-step-of-invariance": {
+    "count": 3,
+    "roles": {
+     "generated": 1,
+     "history": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "theories/becoming/OPENING.md"
+    ]
+   },
+   "613-生成的空间不用公理p56-the-generative-space-with-no-axiom-p56": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md"
+    ]
+   },
+   "615-if-the-continuation-of-anything-has-significance": {
+    "count": 2,
+    "roles": {
+     "generated": 1,
+     "history": 1
+    },
+    "present": true,
+    "files": [
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md"
+    ]
+   },
+   "615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance": {
+    "count": 25,
+    "roles": {
+     "live": 21,
+     "generated": 2,
+     "history": 2
+    },
+    "present": true,
+    "files": [
+     "AGENTS.md",
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "theories/becoming/OPENING.md",
+     "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
+     "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md",
+     "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+     "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md",
+     "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
+     "theories/becoming/chapters/ETHICAL-LEARNING.md",
+     "theories/becoming/chapters/KNOWLEDGE.md",
+     "theories/becoming/chapters/MATHEMATICAL-CORE.md",
+     "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+     "theories/becoming/chapters/WANG-YANGMING.md",
+     "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
+     "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.zh.md",
+     "theories/becoming/results/GENERATIVITY-CHAIN.md",
+     "theories/becoming/results/data/generativity-chain.json"
+    ]
+   },
+   "68-一条公理推出什么p39-what-the-one-axiom-yields-p39": {
+    "count": 3,
+    "roles": {
+     "generated": 1,
+     "history": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "theories/becoming/OPENING.md"
+    ]
+   },
+   "7-ai-对齐--ai-alignment": {
+    "count": 3,
+    "roles": {
+     "generated": 1,
+     "history": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "theories/becoming/OPENING.md"
+    ]
+   },
+   "72-what-a-selection-cannot-reach-无明-in-alignment": {
+    "count": 3,
+    "roles": {
+     "generated": 1,
+     "history": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "theories/becoming/OPENING.md"
+    ]
+   },
+   "75-the-direction-under-the-condition": {
+    "count": 3,
+    "roles": {
+     "generated": 1,
+     "history": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "theories/becoming/OPENING.md"
+    ]
+   },
+   "8": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "8-开放纲领--open-programme": {
+    "count": 5,
+    "roles": {
+     "generated": 1,
+     "history": 1,
+     "live": 3
+    },
+    "present": true,
+    "files": [
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json",
+     "theories/becoming/OPENING.md"
+    ]
+   },
+   "81-the-targets": {
+    "count": 4,
+    "roles": {
+     "generated": 1,
+     "live": 3
+    },
+    "present": true,
+    "files": [
+     "OPEN-QUESTIONS.md",
+     "_process/research-config.json",
+     "theories/becoming/chapters/BECOMING-FOUNDATION.md",
+     "theories/becoming/chapters/BECOMING-FOUNDATION.zh.md"
+    ]
+   },
+   "82-further-proofs-by-area": {
+    "count": 2,
+    "roles": {
+     "generated": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "OPEN-QUESTIONS.md",
+     "_process/research-config.json"
+    ]
+   },
+   "83-readings-decided-on-rens-delegation": {
+    "count": 2,
+    "roles": {
+     "generated": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "OPEN-QUESTIONS.md",
+     "_process/research-config.json"
+    ]
+   },
+   "84-what-stays-rens": {
+    "count": 2,
+    "roles": {
+     "generated": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "OPEN-QUESTIONS.md",
+     "_process/research-config.json"
+    ]
+   },
+   "85-philosophical-warrant": {
+    "count": 2,
+    "roles": {
+     "generated": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "OPEN-QUESTIONS.md",
+     "_process/research-config.json"
+    ]
+   },
+   "86-the-logical-commitment": {
+    "count": 2,
+    "roles": {
+     "generated": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "OPEN-QUESTIONS.md",
+     "_process/research-config.json"
+    ]
+   },
+   "87-empirical-correspondence": {
+    "count": 2,
+    "roles": {
+     "generated": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "OPEN-QUESTIONS.md",
+     "_process/research-config.json"
+    ]
+   },
+   "88-review-status": {
+    "count": 2,
+    "roles": {
+     "generated": 1,
+     "live": 1
+    },
+    "present": true,
+    "files": [
+     "OPEN-QUESTIONS.md",
+     "_process/research-config.json"
+    ]
+   },
+   "9": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "9-the-formal-spine": {
+    "count": 2,
+    "roles": {
+     "live": 2
+    },
+    "present": true,
+    "files": [
+     "experiments/README.md",
+     "experiments/integrated-correction/general-framework/generative-basis/README.md"
+    ]
+   },
+   "9-形式脊柱--the-formal-spine": {
+    "count": 8,
+    "roles": {
+     "live": 4,
+     "generated": 2,
+     "history": 1,
+     "source": 1
+    },
+    "present": true,
+    "files": [
+     "AGENTS.md",
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json",
+     "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
+     "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+     "theories/becoming/OPENING.md",
+     "theories/becoming/results/LEAN-INDEX.md"
+    ]
+   },
+   "9.": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L1049-L1051": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L1077-L1085": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L1101": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L1119": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L1131": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L1131-L1327": {
+    "count": 2,
+    "roles": {
+     "live": 2
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L1131-L1328": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L128-L170": {
+    "count": 2,
+    "roles": {
+     "live": 2
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L143": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L173-L175": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L177-L695": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L213-L217": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L220": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L251-L253": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L271-L273": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L275-L281": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L28-L59": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L30-L32": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L325-L327": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L341-L347": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L467-L510": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L479-L510": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L483-L489": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L503-L505": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L511-L517": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L557-L567": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L565": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L60-L127": {
+    "count": 2,
+    "roles": {
+     "live": 2
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L610-L620": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L628-L633": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L663-L674": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L696": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L696-L1130": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L696-L1328": {
+    "count": 2,
+    "roles": {
+     "live": 2
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L698-L700": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L702-L800": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L73-L77": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L806-L853": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L857-L1043": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "L903-L919": {
+    "count": 1,
+    "roles": {
+     "live": 1
+    },
+    "present": false,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "retired-labels": {
+    "count": 2,
+    "roles": {
+     "live": 2
+    },
+    "present": true,
+    "files": [
+     "GLOSSARY.md",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHAIN-RELABELLING-PENDING-REN.md"
+    ]
+   },
+   "一句话--in-one-sentence": {
+    "count": 2,
+    "roles": {
+     "live": 2
+    },
+    "present": true,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json"
+    ]
+   },
+   "理论的完整陈述--the-theory-stated-in-full": {
+    "count": 6,
+    "roles": {
+     "live": 6
+    },
+    "present": true,
+    "files": [
+     "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/review-data.json",
+     "theories/becoming/chapters/BECOMING-FOUNDATION.md",
+     "theories/becoming/chapters/BECOMING-FOUNDATION.zh.md",
+     "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+    ]
+   },
+   "第一部分的总陈述--part-i-stated-whole": {
+    "count": 8,
+    "roles": {
+     "generated": 2,
+     "history": 2,
+     "live": 4
+    },
+    "present": true,
+    "files": [
+     "README.md",
+     "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+     "theories/becoming/OPENING.md",
+     "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+    ]
+   }
+  }
+ },
+ "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md": {
+  "anchors_now": [
+   "0-前提卡",
+   "0-前提卡--premise-card",
+   "1-生成变化同一展开",
+   "1-生成同一展开--becoming-one-unfolding",
+   "10-术语表",
+   "10-术语表--glossary",
+   "11-既有章节的位置",
+   "11-既有章节的位置--where-the-earlier-chapters-stand",
+   "2-组织更新与演化",
+   "2-组织更新与演化--organization-renewal-and-evolution",
+   "3-认识与探究",
+   "3-认识与探究--knowing-and-inquiry",
+   "4-集体动力学",
+   "4-集体动力学--collective-dynamics",
+   "5-评价的形成",
+   "5-评价的形成--how-evaluation-forms",
+   "6-universal-metaethical-core--普遍元伦理核心",
+   "6-意义比较与实践判断",
+   "61-g0-的内容--what-g0-says",
+   "61-生命意义说什么",
+   "610-反馈所及与比较",
+   "610-反馈所及与比较--feedback-reach-and-the-comparison",
+   "610-反馈所及与比较p42-feedback-reach-and-the-comparison-p42",
+   "611-公理的分解自身的预设与不变的一步--the-axiom-decomposed-the-selfs-presupposition-and-the-step-of-invariance",
+   "611-公理的分解自身的预设与不变的一步p43-the-axiom-decomposed-the-selfs-presupposition-and-the-step-of-invariance-p43",
+   "611-条件的分解自身的预设与不变的一步",
+   "612-g0-的各处用法在公理之下--g0s-uses-under-the-axiom",
+   "612-g0-的各处用法在公理之下p44-g0s-uses-under-the-axiom-p44",
+   "612-生命意义的各处用法在条件之下",
+   "613-生成的空间不用公理",
+   "613-生成的空间不用公理--the-generative-space-with-no-axiom",
+   "613-生成的空间不用公理p56-the-generative-space-with-no-axiom-p56",
+   "614-比较内容怎样由关系约束",
+   "614-比较内容怎样由关系约束--relational-constraints-on-comparison-content",
+   "614-比较内容怎样由关系约束p91-relational-constraints-on-comparison-content-p91",
+   "615-若任何东西的延续都有意义",
+   "615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance",
+   "62-极小性与对手的形状",
+   "62-极小性与对手的形状--minimality-and-the-shape-of-rivals",
+   "63-从展开读出连通与消耗",
+   "63-从展开读出连通与消耗--connection-and-consumption-from-the-unfolding",
+   "64-向每个立场的理由",
+   "64-向每个立场的理由--reasons-addressed-to-every-position",
+   "65-比较提升与实践判断",
+   "65-比较提升与实践判断--comparison-lifting-and-practical-judgment",
+   "66-不做什么",
+   "66-不做什么--what-it-does-not-do",
+   "67-从想要延续者重述",
+   "67-从想要延续者重述ren-的提议-restating-from-what-wants-its-continuation-rens-proposal",
+   "67-从想要延续者重述ren-的提议待定--restating-from-what-wants-its-continuation-rens-proposal-pending",
+   "68-一条公理推出什么--what-the-one-axiom-yields",
+   "68-一条公理推出什么p39-what-the-one-axiom-yields-p39",
+   "68-延续条件推出什么",
+   "69-不用公理能走多远",
+   "69-不用公理能走多远--how-far-the-route-without-axiom-reaches",
+   "69-不用公理能走多远p40-how-far-the-route-without-axiom-reaches-p40",
+   "7-ai-对齐",
+   "7-ai-对齐--ai-alignment",
+   "71-选择及于什么",
+   "72-选择所不能及的对齐中的无明",
+   "73-明及于支持所不标记者的耦合",
+   "74-为一切的对齐跨智能的合起来的耦合",
+   "75-方向在条件之下",
+   "76-所请求的改变须是可执行的序列",
+   "77-仍开放的",
+   "8-开放纲领",
+   "8-开放纲领--open-programme",
+   "81-the-targets",
+   "81-依次排列的开放项",
+   "89-objections-not-yet-answered",
+   "9-形式脊柱",
+   "9-形式脊柱--the-formal-spine",
+   "comparison-content-under-regrouping",
+   "complete-episode-comparison-anchors",
+   "the-theory-of-becoming--生成变化之论",
+   "what-a-collectives-continuation-needs",
+   "一句话",
+   "一句话--in-one-sentence",
+   "不用公理的理论16",
+   "理论的完整陈述",
+   "理论的完整陈述--the-theory-stated-in-full",
+   "理论的总陈述",
+   "生成变化之论",
+   "第一部分不用公理--part-i-without-axiom",
+   "第一部分的总陈述--part-i-stated-whole",
+   "第二部分一条公理--part-ii-one-axiom",
+   "退役的-lean-名2026年10月18日",
+   "退役的-lean-名2026年10月20日",
+   "退役的标签",
+   "闭与开对照"
+  ],
+  "fragments": {
+   "": {
+    "count": 515,
+    "roles": {
+     "history": 131,
+     "evidence": 9,
+     "live": 22,
+     "source": 1,
+     "generated": 352
+    },
+    "present": true,
+    "files": [
+     "_process/architecture/history/047baa11f0d65a26/where-a-run-goes-on.json",
+     "_process/architecture/history/0524f4e9feec1a8c/necessarily-drawn-is-not-returning.json",
+     "_process/architecture/history/0627d07cda90e6bf/testing-within-registration.json",
+     "_process/architecture/history/0b5db8bb785514cf/selection-through-a-model-of-the-options.json",
+     "_process/architecture/history/0be41b8718b3af70/entropy-history-and-record.json",
+     "_process/architecture/history/0c54ab04c0565001/exchanges-commute-unless-joined.json",
+     "_process/architecture/history/13bc4f4836076deb/experiment-needs-return.json",
+     "_process/architecture/history/13db97fd11a92274/registration-within-what-it-registers.json",
+     "_process/architecture/history/1567b3ed7125c018/learnable-through-registration.json",
+     "_process/architecture/history/1570b8e162ae7942/levels-of-closure.json",
+     "_process/architecture/history/1b557010efd1da4f/feedback-and-reach.json",
+     "_process/architecture/history/1bb2db192c7cda8f/returning-novelty-forgetting-on-levels.json",
+     "_process/architecture/history/1bf28b34a00c74f7/represented-boundary-against-dependence.json",
+     "_process/architecture/history/1f681195b50de5ba/returning-where-the-course-branches.json",
+     "_process/architecture/history/20db001509c7d5d6/continuous-time-as-tower.json",
+     "_process/architecture/history/291490334771f0e5/axiom-decomposition.json",
+     "_process/architecture/history/29bbd5bec961a5aa/subthreshold-registration.json",
+     "_process/architecture/history/2a31db0923c027aa/causal-models-as-processes.json",
+     "_process/architecture/history/2c0b4bb1a165602a/determinacy-up-to-likeness.json",
+     "_process/architecture/history/2c4e25c65938732a/rest-with-refinement-counted.json",
+     "_process/architecture/history/2e2cebf759ceb601/consequence-revised-reference-plan.json",
+     "_process/architecture/history/329c990b2c7a9560/presupposition-scopes.json",
+     "_process/architecture/history/331d0f07c4f714b4/what-a-cut-loses.json",
+     "_process/architecture/history/33ef1b54d252b32d/transmission-independent-where-it-binds.json",
+     "_process/architecture/history/379901eb940d32f4/runaway-distance-unregistered.json",
+     "_process/architecture/history/38f8c3edb3835a7a/imbalance-as-relatum.json",
+     "_process/architecture/history/3a06d71ec97f7459/how-often-couplings-act.json",
+     "_process/architecture/history/3c8fe02110371cc3/recurrence-without-decidedness.json",
+     "_process/architecture/history/3cd9380cd931b42e/recurrence-without-premise.json",
+     "_process/architecture/history/3d7a7ba504bdc84e/observation-is-a-route.json",
+     "_process/architecture/history/4174236c9ae5305d/where-novelty-gain-comes-from.json",
+     "_process/architecture/history/427c61fd2d9708e7/what-a-finite-history-refutes.json",
+     "_process/architecture/history/44a96bac858f7536/transmission-is-inheritance-and-need.json",
+     "_process/architecture/history/470965a59cdcfd72/counterfactual-is-the-course.json",
+     "_process/architecture/history/4818b4f31d0b826b/normal-forms-need-decided-apartness.json",
+     "_process/architecture/history/4d410962b0fc4d5b/weights-count-situations.json",
+     "_process/architecture/history/4d8b8ec7549013dc/feeding-closure.json",
+     "_process/architecture/history/4f86e552e23ba6b4/laws-of-one-step-complete.json",
+     "_process/architecture/history/56a9574d3e276a0b/significance-retained-within-margin.json",
+     "_process/architecture/history/5adabf46d5c8c7b1/comparison-where-the-rest-responds.json",
+     "_process/architecture/history/5d325fa96659cf70/census-balance.json",
+     "_process/architecture/history/5ddf3f3c34e25235/only-the-order-of-change-registers.json",
+     "_process/architecture/history/5e9ecfd06dff3dc7/order-of-exchanges-is-the-invariant.json",
+     "_process/architecture/history/60d26132566767b0/the-split-that-makes-sense.json",
+     "_process/architecture/history/6177b9ea302aea86/four-cases-of-a-part.json",
+     "_process/architecture/history/63653397a8d9e1c7/projection-carrying-a-law.json",
+     "_process/architecture/history/659e43c30a9be16f/comparison-within-reach.json",
+     "_process/architecture/history/68051637b79c8743/every-origin-passes-the-gate.json",
+     "_process/architecture/history/68f6c4808a15ea8a/histories-fix-law-up-to-dead-ends.json",
+     "_process/architecture/history/6a6e15e86a9cf797/losses-of-the-sum-over-histories.json",
+     "_process/architecture/history/6b5c0e74ca2a57f9/counting-under-enclosure.json",
+     "_process/architecture/history/6caa6a4816966d1c/counting-standing-and-dependence.json",
+     "_process/architecture/history/6cc1d57e2cb43191/runs-on-families-chosen-step-by-step.json",
+     "_process/architecture/history/6d920962b63373b1/comparison-content-under-regrouping.json",
+     "_process/architecture/history/71c487d4dfeb1a1c/relata-counted-up-to-indiscernibility.json",
+     "_process/architecture/history/720b9022fac3b958/gluing-under-parity.json",
+     "_process/architecture/history/7441084094ade274/what-a-law-of-the-whole-and-no-part-takes.json",
+     "_process/architecture/history/745af610045c87a3/one-axiom-yields-g0.json",
+     "_process/architecture/history/749b3493e879c08a/unity-of-readings.json",
+     "_process/architecture/history/76ddb99da5d6935a/loss-beyond-a-region.json",
+     "_process/architecture/history/773f4d5fae4f7f58/lifting-where-branching-is-finite.json",
+     "_process/architecture/history/7be985296e69545f/orders-as-a-sum-over-histories.json",
+     "_process/architecture/history/837e4db9bda995ad/support-from-the-supported.json",
+     "_process/architecture/history/87b3b8fcc64a79be/rest-at-every-resolution.json",
+     "_process/architecture/history/88dcf59fe3d78de4/generalization-through-lumping.json",
+     "_process/architecture/history/8c9e7e527ae783bb/configurations-alike-by-relation.json",
+     "_process/architecture/history/8f28faff67f7e325/recurring-reference-revision.json",
+     "_process/architecture/history/947823042f0e86b5/census-balance-under-continuation.json",
+     "_process/architecture/history/9ab850d3c4ed0b66/consumption-ends-with-feeders.json",
+     "_process/architecture/history/9f9926b794418171/attraction-is-not-returning.json",
+     "_process/architecture/history/a04c6766ca79c103/one-step-missing-laws.json",
+     "_process/architecture/history/a25745ef5d371309/comparison-by-widening.json",
+     "_process/architecture/history/a710c88a0a6ed2f1/ceasing-needs-arising.json",
+     "_process/architecture/history/a7f00d8511529182/typicality-by-counting.json",
+     "_process/architecture/history/b497065841cb8889/wisdom-root-part-one.json",
+     "_process/architecture/history/b738d863b458b867/separation-loses-the-relation.json",
+     "_process/architecture/history/b8e5b15685dad731/laws-of-one-step.json",
+     "_process/architecture/history/ba11e4fc6d30569e/bounded-census-keeps-pace.json",
+     "_process/architecture/history/bcd97b01bf7171e6/selection-through-registration.json",
+     "_process/architecture/history/be0ac957b3e08010/listing-once-is-decided-identity.json",
+     "_process/architecture/history/bedccea98ecd5163/identification-where-runs-part.json",
+     "_process/architecture/history/c31d02776fce6f49/whole-first-and-bounded-centers.json",
+     "_process/architecture/history/c3b164b26b78b169/seeking-boundary.json",
+     "_process/architecture/history/c4277a671ca2bd9d/process-and-frame-as-readings.json",
+     "_process/architecture/history/c575d2e260a620e1/identification-where-bounded.json",
+     "_process/architecture/history/c67d14b89f47a579/laws-at-finer-units.json",
+     "_process/architecture/history/c9a571b48119bffb/how-loops-form.json",
+     "_process/architecture/history/ce2a189f8d7fbf1d/tests-fix-likeness-where-determined.json",
+     "_process/architecture/history/ce9b5dc1d6dda8f2/target-capture.json",
+     "_process/architecture/history/d04851275c7e10e8/sum-over-histories-exact.json",
+     "_process/architecture/history/d1495af6c1cd28b4/how-a-carried-difference-grows.json",
+     "_process/architecture/history/d49c1429e4fd37f8/whole-law-of-counting.json",
+     "_process/architecture/history/d9fd20ded8e4bb3d/where-a-move-is-formed.json",
+     "_process/architecture/history/e18b2cd45c38a347/premises-read-off-the-exchange.json",
+     "_process/architecture/history/e21d3240ea65811a/closing-needs-net-draw.json",
+     "_process/architecture/history/e81dfb90e26d1275/closure-verdict-meets-axiom.json",
+     "_process/architecture/history/eb4b9b9487d823e1/loops-within-what-a-law-reads.json",
+     "_process/architecture/history/ef8a3370ef4951a6/least-footprint-where-idleness-decided.json",
+     "_process/architecture/history/f422dfabb50df901/counts-exist-where-decided.json",
+     "_process/architecture/history/f9be09fc94f10525/learning-by-refutation.json",
+     "_process/architecture/history/fa31c69c474d13bf/how-much-difference-arrives.json",
+     "_process/architecture/history/fbcae621772324ac/contextual-registration.json",
+     "_process/architecture/history/fce289993a3ba0dd/sensitivity-is-the-least-registration.json",
+     "_process/architecture/history/fec1222bf3f1930e/laws-at-coarser-steps.json",
+     "_process/architecture/moves/F3-sweep.json",
+     "_process/architecture/moves/H4.json",
+     "_process/architecture/moves/H5.json",
+     "_process/architecture/moves/R19-chapters.json",
+     "_process/architecture/moves/R35-B1-chapters.json",
+     "_process/architecture/moves/R35-B4-study.json",
+     "_process/architecture/moves/R35-B5-kits.json",
+     "_process/architecture/moves/RD.json",
+     "_process/architecture/moves/RE.json",
+     "_process/architecture/renames/R35-E4-renames.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/a2-chain/reading.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r25-docs-now/edits_a_zh.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r25-docs-now/edits_b.json",
+     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r25-docs-now/edits_c.json",
+     "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r35-corpus/rerun/data/refscan.json",
+     "sources/15-codex-theory-conversations/2026-10-19-zhonghua-edition.md",
+     "theories/becoming/chapters/README.md",
+     "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md",
+     "theories/becoming/results/LEAN-INDEX.md",
+     "theories/becoming/results/data/generativity-chain.json",
+     "theories/becoming/results/data/lean-index.json",
+     "theories/becoming/results/data/source-index.json",
+     "theories/becoming/results/lean-declarations/abstraction.md",
+     "theories/becoming/results/lean-declarations/becoming-core.md",
+     "theories/becoming/results/lean-declarations/core.md",
+     "theories/becoming/results/lean-declarations/ethics.md",
+     "theories/becoming/results/lean-declarations/learning.md",
+     "theories/becoming/results/lean-declarations/other.md"
+    ]
+   },
+   "第一部分的总陈述--part-i-stated-whole": {
+    "count": 2,
+    "roles": {
+     "live": 2
+    },
+    "present": true,
+    "files": [
+     "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+    ]
+   }
+  }
+ }
+}

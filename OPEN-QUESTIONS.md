@@ -45,7 +45,7 @@ Target: establish that the core’s common relations are indispensable across al
 
 ## Open programme
 
-- [Section 8.1, open items, ranked](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#81-the-targets)
+- [Section 8.1, open items, ranked](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#81-open-items-ranked)
 - [Section 8.2, further proofs, by area](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#82-further-proofs-by-area)
 - [Section 8.5, philosophical warrant](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#85-philosophical-warrant)
 - [Section 8.6, the logical commitment](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#86-the-logical-commitment)
@@ -57,8 +57,8 @@ Target: establish that the core’s common relations are indispensable across al
 
 The readings are decided by argument and can be revised by a better one. What changes only through a proposal is the author's own text and authorizations: the body of the opening, the curated generativity chain, the goal scopes and their states, and the licence. The choice of results featured on the home page is open to revision on argument.
 
-- [Section 8.3, readings adopted, each with its argument](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#83-readings-decided-on-rens-delegation)
-- [Section 8.4, no reading open; the texts that change only by proposal](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#84-what-stays-rens)
+- [Section 8.3, readings adopted, each with its argument](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#83-readings-adopted)
+- [Section 8.4, no reading open; the texts that change only by proposal](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#84-no-reading-open-texts-that-change-by-proposal)
 - [The work board: what changes only by proposal](_process/BECOMING-WORKBOARD.md#decisions-pending-ren)
 - The state of each scope not yet marked: [The Chinese sources and the Theory of Becoming](GOALS.md#chinese-sources-and-becoming), [Connected explanation of cognition, learning and evolutionary psychology](GOALS.md#cognition-learning-evolution), [Common problems and revisable purposes](GOALS.md#collective-problems), [Generative alignment](GOALS.md#generative-alignment), [Generative foundation and continuity](GOALS.md#generative-foundation), [How generative relations change: session objective](GOALS.md#generative-relation-change-session), [Generative evolution of Liangzhi](GOALS.md#liangzhi-evolution), [Complete theoretical integration of meta-attractors](GOALS.md#meta-attractor-integration-session), [Continuing normative grounding direction](GOALS.md#normative-grounding), [Scientific inquiry foundation session](GOALS.md#scientific-inquiry-session), [Theory of Becoming — current first priority](GOALS.md#theory-of-becoming), [The Theory of Evolution](GOALS.md#theory-of-evolution), [Universal metaethics of all intelligence](GOALS.md#universal-intelligence-session), [Constitution and formation of wisdom](GOALS.md#wisdom-root-session), [Independent axiom-free practical judgment](GOALS.md#zero-axiom-session).
 - The choice of [the results featured on the home page](README.md#what-is-established), open to revision.

@@ -50,7 +50,7 @@
 | “后续研究”一行（理与恕） | 恕的手证之界由已检查的 `Learning.selects_right_through` 取代：恕恰在他人之欲跨自己之归并同行之处为对（新章[恕](CHINESE-SOURCES-AND-BECOMING.md#p-ru-lunyu-shu)） |
 | §1 四种对应 | 本页 §1 |
 | §2 武＝止戈，及工作释义“武→有约束的保护能力” | 新章 [§6](CHINESE-SOURCES-AND-BECOMING.md#6-武与止戈)：字形史与用字之义两层分开，部件为什么定不了读法，楚庄王之语的关系结构由诸律陈述，其权力框架的相分明示。工作释义被取代 |
-| §3 第一批候选字词表 | 理论所用之词由[命名研究 §7](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md#7-decisions-18-october-2026)与[规范章术语表](THE-THEORY-OF-BECOMING.md#10-术语表--glossary)决定，单字之读见新章 §5.4；表中以“能力”“保护”“省／改”为纠正的旧词被取代，其“必须保留的区分”今由脊柱之律承载 |
+| §3 第一批候选字词表 | 理论所用之词由[命名研究 §7](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md#7-decisions-18-october-2026)与[规范章术语表](THE-THEORY-OF-BECOMING.md#10-glossary)决定，单字之读见新章 §5.4；表中以“能力”“保护”“省／改”为纠正的旧词被取代，其“必须保留的区分”今由脊柱之律承载 |
 | §4 双字与组合 | 本页 §4 |
 | §5 验收标准 | 本页 §5 |
 | §6 对生成主线的作用与下一步 | 关系标记在本页 §6；“生成派生图”之接口与“知／辨—学／习—择—省／改—仁／义—护／智”的线性工作次序被取代 |

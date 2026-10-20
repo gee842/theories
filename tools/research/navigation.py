@@ -422,10 +422,12 @@ def render_views(records):
                     lines += result_block(r, path, '####')
             if conditional:
                 first, rest = conditional[0], conditional[1:]
-                lines += [H('###', 'Under the condition of section 6.15', 'Under the condition of section 6.15'), '',
-                          'The theory does not assert this condition; ' + link(CANONICAL + '#615-if-the-continuation-of-anything-has-significance', path, 'section 6.15')
+                lines += [H('###', 'Under the continuation condition (section 6.4)', 'Under the condition of section 6.15'), '',
+                          'The theory does not assert this condition; ' + link(CANONICAL + '#64-the-continuation-condition', path, 'section 6.4')
                           + ' states what follows from it. The condition gives the continuation of everything significance from every standpoint, so the results under it '
-                          'are the case of a significance that covers everything; the rules of comparison are derived without it, and the condition adds none. Comparison by widening (C) holds on level paths by definition. '
+                          'are the case of a significance that covers everything; the rules of comparison are derived without it, and the condition adds none. '
+                          'The ethics rests on two premises with two roles: the condition fixes scope, whose losses count, and C, calling widening better, alone orders; '
+                          'C\'s no-loss extension on level paths is widening by definition. '
                           'Open: the warrant of the condition, of C, and of the step of invariance from what one\'s own continuation needs to the continuation of anything.', '']
                 lines += result_block(first, path, '####')
                 if rest:
@@ -444,7 +446,7 @@ def render_views(records):
             lines += ['## Research and repository', '']
         if kind in ('home', 'brief'):
             if kind == 'brief':
-                lines += ['Canonical entry: ' + link(CANONICAL, path, 'The Theory of Becoming') + ', with its premise card, the theory without axiom (sections 1–6), the conditional section 6.15, the formal spine and the place of earlier chapters. ' + link('_process/BECOMING-WORKBOARD.md', path, 'The work board') + ' holds claims and the landing queue.', '']
+                lines += ['Canonical entry: ' + link(CANONICAL, path, 'The Theory of Becoming') + ', with its premise card, the argument once (sections 1–7, the continuation condition in section 6.4), the theorem map, the open programme, the formal spine and the place of earlier chapters. ' + link('_process/BECOMING-WORKBOARD.md', path, 'The work board') + ' holds claims and the landing queue.', '']
             repository = markdown_file('readme_repository', path, config)
             if repository:
                 lines += [repository, '']

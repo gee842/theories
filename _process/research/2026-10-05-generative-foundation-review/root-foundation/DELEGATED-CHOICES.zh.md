@@ -3,14 +3,14 @@
 
 > **中文版（2026-10-17）。** 正典文本是[英文版](DELEGATED-CHOICES.md)；本版由重构时从双语原文拆出，不与英文同步维护，两者有出入时以英文为准。
 
-2026-10-15。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](../history/root-foundation/CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定。本记录是这些决定。全文由 AI 撰写（会话 “Overall progress and claims” [d8df1a]，现为 [6a12d4]），引号中的 Ren 原话除外。每项决定是 **AI 依 Ren 2026-10-15 的交托决定**，不是 Ren 自己的决定；Ren 可以改其中任何一项。D40-D42 依 Ren 2026-10-18 的话决定（§12）。D1、D5、D22 与 D39 经修订，由 Ren 2026-10-18 取；D43 记录 Ren 同日所取的其余读法；各项修订注明日期，列在原决定之下，原文保留。工作板上认领为 P110；同一交托之下推进的证明是 P111（`Becoming.Gain`）与 P112（`Becoming.Gluing`），结果在其记录与研究中。
+2026-10-15。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](../history/root-foundation/CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定。本记录是这些决定。全文由 AI 撰写（会话 “Overall progress and claims” [d8df1a]，现为 [6a12d4]），引号中的 Ren 原话除外。每项决定是 **AI 依 Ren 2026-10-15 的交托决定**，不是 Ren 自己的决定；更好的论证可以修订其中任何一项（D45）。D40-D42 依 Ren 2026-10-18 的话决定（§12）。D1、D5、D22 与 D39 经修订，由 Ren 2026-10-18 取；D43 记录 Ren 同日所取的其余读法；各项修订注明日期，列在原决定之下，原文保留。工作板上认领为 P110；同一交托之下推进的证明是 P111（`Becoming.Gain`）与 P112（`Becoming.Gluing`），结果在其记录与研究中。
 
 2026-10-19，Ren 对整个登记作答：“integrate all, the theory is a whole, not stitched pieces, go ahead”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-19-integrate-all.md)）。这里的每项读法依它在一个说明中的位置决定，即 D45（§13）；这个说明所作的修订注明日期，列在原决定之下，索引在 D45 一行注明。
 
 <a id="0-怎样读这份记录--how-to-read-this-record"></a>
 ## 0. 怎样读这份记录
 
-**一项决定做什么、不做什么。** 它把一个读法从“待 Ren”改为“采用”或“不采用”，写明理由与会改变它的东西。它不改动任何 Lean 陈述或已检查的定理，不给任何规律加前提，也不把读法变成证明；不采用的读法，其定理照旧保留。Ren 改动一项决定，改的是读法，不是数学。
+**一项决定做什么、不做什么。** 它把一个读法从“待 Ren”改为“采用”或“不采用”，写明理由与会改变它的东西。它不改动任何 Lean 陈述或已检查的定理，不给任何规律加前提，也不把读法变成证明；不采用的读法，其定理照旧保留。更好的论证修订一项决定，改的是读法，不是数学。
 
 **所用的标准（AI 的）。**
 1. **Ren 的原话优先。** 原话已定的，照原话并注明；几种读法都合原话时，取 Ren 其他原话与已检查结果所支持的。
@@ -22,9 +22,11 @@
 
 **标准一的重述（2026-10-19，R21；第十九次审查 E5）。** Ren 的话是来源，不是根据（[AGENTS.md](../../../../AGENTS.md)；D45）。读法涉及 Ren 的用语时，他的文本是该用语所指的证据；读法凭它在理论的一个说明中的位置成立或修订，由工作论证。在此之前标准一写作“Ren 的原话优先……照原话”；下面以他的话为定读法者，按这一标准读，在说明中位置不同的由 D45 修订。上面的原文保留。
 
+**用语与节号（2026-10-20，R36；第二十次审查 F11）。** 每项决定保留其日期的措辞，按现行用语读：“公理”“一条公理”“Ren 的公理”是延续条件（`Unrestricted`），理论陈述而不断言它；G0 是生命意义，一个条件；S0 是自身意义；N_rel 与 N_std 是关系中立与立场中立；第一部分是不用条件的理论，第二部分是条件一节；识及、识（registration）是耦合入、耦合；决定中说仍属 Ren、或由 Ren 陈述的问题，在一个说明中决定（D45），因为没有读法等待 Ren。决定中所引理论章节的节号是 R36 之前一版的节号（[保存在历史中](../../../../theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md)）；在现行章节中，其 6.1–6.4 与 6.7 是 §6.2，6.5、6.6 与 6.11 是 §6.5，6.8、6.12 与 6.15 是 §6.4，6.9 与 6.10 是 §6.3，6.13 与 6.14 是 §6.1，旧锚点仍可解析。同日，凡以 Ren 为触发者的“会改变它的”条款，都重述为工作中的条件：由 Ren 的文本论证的用语读法、由工作的论证，或公开采用的前提；原措辞保存在[登记处理](development/r36-chapter/register.py)中。
+
 **问“某读法是否是 Ren 的读法”的项。** 决定只说理论是否采用它为自己的读法，不说 Ren 持有什么；Ren 持有什么是 Ren 的陈述（§10）。
 
-**决定时发现已由 Ren 回答的。** 下列几项在第 8 节或计划中仍列为开放，而 Ren 的原话已经回答；这里照原话记录，它们是 Ren 的决定，不是 AI 的：
+**决定时发现 Ren 的话所涉及的开放项。** 下列几项在第 8 节或计划中仍列为开放，而 Ren 的原话涉及它们；每项在下面作为读法决定，是 AI 的读法，Ren 的话是其来源（按重述的标准一）：
 - 损的层次：Ren 2026-10-10 答“i think it should be the whole, and a weaker version is within the system that one is in, then the self. not saying this is what life does, but what's good for being generative”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)），并确认“整体”是实际的整体，从不是任何中心对它的模型，以包含比较从不许可强加的终结（“yes to both readings”）。见 D14。
 - “不损”的形式：Ren 2026-10-10：“"not harm" - this is a phase transition with a clear boundary, not some "outside will or belief", and actually, there are also neutral and generative dynamics that can be identified (degenerative/neutral/generative)”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md)）。见 D2、D13。
 - 公理的辖域：Ren 的公理原话是“for anything”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）。见 D11。
@@ -46,14 +48,14 @@
 | D8 | 所持条件 | 可能性的读法 |
 | D9 | 以之为生、世系、新的生起 | 已形成的关系，不是直接的估值；不另加次序 |
 | D10 | 逐步读法、以消耗取胜、关系的纪律 | “不侵蚀”保留；判决及于进程；交互保留 |
-| D11 | S0、辖域、补全 | S0 即想要；任何东西（Ren 原话）；N_std |
+| D11 | 自身意义、辖域、补全 | 自身意义即想要；任何东西（措辞是 Ren 的，作为来源）；立场中立 |
 | D12 | 推出的范围、输送 | 沿依存与所及；输送是已形成的关系 |
 | D13 | 不损 | 保留；余量即相变的边界；既非过滤也非主张 |
-| D14 | 损的层次、形成的个体化 | 层次由 Ren 答；分类以谱系，成员的终结仍是损失 |
+| D14 | 损的层次、形成的个体化 | 整体、所在的系统、自身（AI 的读法，Ren 的话是来源）；分类以谱系，成员的终结仍是损失 |
 | D15 | “更多” | 方向：扩大；不最大化 |
-| D16 | 读出公理、A、G0 | `Unrestricted`；A 读在活的内容上；折叠已答 |
+| D16 | 读出条件、A、生命意义 | `Unrestricted`；A 读在活的内容上；生命意义是一个条件 |
 | D17 | 供给闭包 | 读出“what it actually depends on”；跨步供给；约束 |
-| D18 | 路线 (b) | 不足以达到 G0 的辖域；两者都保留 |
+| D18 | 路线 (b) | 不足以达到生命意义的辖域；两者都保留 |
 | D19 | 整体对自身的实现 | 以整体为所表示的边界 |
 | D20 | 所及、所在的系统、觉知 | 所及闭包；较弱的版本；情境的觉知 |
 | D21 | 预设、覆盖、层级 | 采用；不变之步属 Ren 的陈述 |
@@ -69,7 +71,7 @@
 | D31 | 传递与约束 | 读法采用；前提的地图不变 |
 | D32 | 历史与分支 | 采用 |
 | D33 | 描述 | 采用；P112 给出奇偶的确切规律 |
-| D34 | 辨识 | “按情境”不读作界（Ren 2026-10-15 的话）；有限名以确切范围采用 |
+| D34 | 辨识 | “按情境”不读作界（AI 的读法，Ren 2026-10-15 的话是来源）；有限名以确切范围采用 |
 | D35 | 由被支持者支持；关闭与打开 | 采用 |
 | D36 | 名称 | AI 的工作名称采用；Ren 的用语仍属 Ren |
 | D37 | 任意多条件下的识；尾 | 形式上读作律的敏感，识本身属 Ren；尾取确切意义 |
@@ -104,9 +106,9 @@
 
 **决定。** 生生读作生成的空间：能形成者的扩大（`Web.Widens`；以公理为条件，即保留且增加有意义者，`Web.widens_iff_retains_adds`）。Ren 2026-10-07 回答的三种范围（广义的生；生物生命与生态的繁盛；一切能够持续形成新组织的生成过程）读作“什么算作一个形成”的范围：每种给出一个空间，各有其扩大；在每种范围中，生生是那个空间的扩大，不是其中任何一项形成本身。G0 与 C 共用这一读法：继续之间以可能性比较（§6.12）。`living` 的各读法、`Flow.More` 与生起复现保留为所计者的读法，不作为生生的定义。
 **理由。** 一、Ren 以方向所产生者说它：“一种整体的，不断创造更多生的方向，而这个方向产生的可能性，多样性越高，复杂性/复杂结构的复杂度可以不断的上升，就是一个好的方向”（2026-10-07，[原话](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)），以及“being generative is its existence creates more possibilities of becoming - more future, not less”（2026-10-10）；扩大能形成者正是如此，而可能性读作接下来能形成的，Ren 已确认。二、不加前提：以扩大读“更好”，C 在水平路径上对 `living` 的每种读法是规律（`Web.paths_comparison_widens`）。三、它不把任何新组织都算作生生（G0 的对象是生生）：恶性增殖者的事件本身被计入（`Ranking.malignant_possible`），但它的部分使他者能形成的变少，所以不扩大；共享排在以消耗取胜之上（`Ranking.possible_contest`）。四、Ren 说三种范围“我觉得这几个都很有意义，都可以是，并且可能会得到不同的范围”：作为范围保留它们，正合此意。
-**会改变它的。** Ren 另指生生的读法；一个扩大而 Ren 判为退化的部分，或相反；Ren 采用一个给混合部分定序的度量（“更多的未来”是偏序，互相超出者不排序）。
+**会改变它的。** 由 Ren 的文本论证、不同于此的生生读法；一个扩大而由工作的论证表明为退化的部分，或相反；作为扩大之外的前提公开采用、给混合部分定序的度量（“更多的未来”是偏序，互相超出者不排序）。
 
-**修订，由 Ren 取（2026-10-18）。** 生生读作生成者生成新的生成（generation generating generation）：所形成者保存、恢复、传递或创造进一步形成的条件与生成者，所以一个进程连同状态一起改变能形成者与形成的能力。这是 Ren 的《生生不息论》v1 在“生生：生成者生成新的生成”标题下的定义：“这一次生成的结果，又保存、恢复、传递或创造了下一轮生成的条件与生成者。普通生成改变接下来的状态；生生还改变接下来能够形成哪些状态，以及世界能否继续发现新的形成方式”（[原文](../../../../sources/06-zhishan/shengsheng/生生不息论v1/生生不息论.md)）；Ren 2026-10-10 也说“it is about if the continuation of becoming continues itself”。核心以规律陈述这一结构，不以单一谓词：不被给予来自外部的东西时，能形成者只由被支持者所给的打开（D35）；生起消耗有限多个条件时，不息的生成需要展开之内所造成的更新（`Web.Unceasing.activeRenewer_recurs`）；部分会消逝的整体只经由部分的生成而持续（[whole-persists-through-generation](../../../../theories/becoming/results/records/whole-persists-through-generation.md)）；更新的形成不是消耗的（`Web.renewing_not_consuming`）。生成的空间是当下能形成者（论中：“在当下，生显为尚可成为的可能性空间”；D22）。生生的方向，“更多的生”与“more future, not less”，以能形成者的扩大比较（`Web.Widens`），带 D2 的四种情形；论中“生生维护的不是选项数量”与此一致：扩大是包含，不是选项的计数。决定的其余部分不变：三种范围作为所计者的范围，继续之间以可能性比较，生生是伦理方向的对象，而不是任何新组织。Lean 谓词 `living` 不读出生生：它的各读法不含进一步的生成。**改变了什么。** 上面的决定把生生读作生成的空间、能形成者的扩大。空间与空间的扩大是两回事，而扩大只在两条水平路径之间比较论中（状态，可成为之域，生成能力）的一个分量。更新能力与关系的丰富（Ren 2026-10-10）仍是尚未读出的度量（理论 §8.2）。**会改变它的。** Ren 说生生只指方向（那时生生是扩大，生成的空间是被扩大者）；一个更新自身进一步形成之条件与生成者、而 Ren 判为不是生生的情形；采用更新能力或关系的丰富作为“更多”的度量，那是扩大之外的前提，因为它给混合部分定序。论证在[决定简报](../history/root-foundation/READINGS-PENDING-REN.md#a1-生生-d1-and-the-generative-space-d22)中；Ren 的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)）是其来源，不是其根据。上面的原文保留。
+**修订，由 Ren 取（2026-10-18）。** 生生读作生成者生成新的生成（generation generating generation）：所形成者保存、恢复、传递或创造进一步形成的条件与生成者，所以一个进程连同状态一起改变能形成者与形成的能力。这是 Ren 的《生生不息论》v1 在“生生：生成者生成新的生成”标题下的定义：“这一次生成的结果，又保存、恢复、传递或创造了下一轮生成的条件与生成者。普通生成改变接下来的状态；生生还改变接下来能够形成哪些状态，以及世界能否继续发现新的形成方式”（[原文](../../../../sources/06-zhishan/shengsheng/生生不息论v1/生生不息论.md)）；Ren 2026-10-10 也说“it is about if the continuation of becoming continues itself”。核心以规律陈述这一结构，不以单一谓词：不被给予来自外部的东西时，能形成者只由被支持者所给的打开（D35）；生起消耗有限多个条件时，不息的生成需要展开之内所造成的更新（`Web.Unceasing.activeRenewer_recurs`）；部分会消逝的整体只经由部分的生成而持续（[whole-persists-through-generation](../../../../theories/becoming/results/records/whole-persists-through-generation.md)）；更新的形成不是消耗的（`Web.renewing_not_consuming`）。生成的空间是当下能形成者（论中：“在当下，生显为尚可成为的可能性空间”；D22）。生生的方向，“更多的生”与“more future, not less”，以能形成者的扩大比较（`Web.Widens`），带 D2 的四种情形；论中“生生维护的不是选项数量”与此一致：扩大是包含，不是选项的计数。决定的其余部分不变：三种范围作为所计者的范围，继续之间以可能性比较，生生是伦理方向的对象，而不是任何新组织。Lean 谓词 `living` 不读出生生：它的各读法不含进一步的生成。**改变了什么。** 上面的决定把生生读作生成的空间、能形成者的扩大。空间与空间的扩大是两回事，而扩大只在两条水平路径之间比较论中（状态，可成为之域，生成能力）的一个分量。更新能力与关系的丰富（Ren 2026-10-10）仍是尚未读出的度量（理论 §8.2）。**会改变它的。** 由 Ren 的文本论证、生生只指方向的读法（那时生生是扩大，生成的空间是被扩大者）；一个更新自身进一步形成之条件与生成者、而由 Ren 的文本论证的读法表明不是生生的情形；采用更新能力或关系的丰富作为“更多”的度量，那是扩大之外的前提，因为它给混合部分定序。论证在[决定简报](../history/root-foundation/READINGS-PENDING-REN.md#a1-生生-d1-and-the-generative-space-d22)中；Ren 的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)）是其来源，不是其根据。上面的原文保留。
 
 **扩大计入什么（2026-10-20，R25；第二十次审查 D6、F6）。** `Web.Widens` 比较的是：在给定阈值上，水平接纳世界的形成类型 `F`（事先给定）中的哪些成员。一个进程若带来 `F` 之外的一种形成或一种要求，在这一度量上它什么也不扩大；所以上面修订所读的生生，即创造进一步形成的条件与生成者，可以超出扩大所能记入的。在生长的世界上的扩大（`Flow.GrownBy`，`Becoming.Cuts`）仍开放（章节 §8.1 第 5 项）。自这一修订起，只有 C 共用这一读法：`living` 的各读法不含进一步的生成，所以生命意义不读生生（章节 §8.3）。上面的原文保留。
 
@@ -117,7 +119,7 @@
 
 **决定。** 提议中的“生成的”“退化的”指生成的空间的两个方向，在两个层次上读，余量定理把它们联结起来。对一个部分，即它对能形成者做什么：有它的水平扩大无它的水平处是生成的，反之是退化的，互相包含是中性的，互相超出是混合的（§6.13，`Web.Widens`、`Web.Keeps`、`Web.Mixed`，四种情形两两互斥）。对一个形成，即它对所参与关系的继续形成条件做什么：是更新的形成与消耗的形成（Ren 2026-10-09 要求以关系结构分开这两种形成，[原话](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md)；`Web.renewing_not_consuming`）。两层由余量联结：部分的净汲取在余量之内时保留，超出时失去（`Flow.retains_iff_within_margin_at`、`Flow.loses_iff_beyond_margin_at`）。活动的读法（生起复现与止息复现）不采用为“生成的、退化的”：有限世界中两者是同一部分，而 Ren 说“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”；生起／止息仍是活动读法的名称。这也回答“把四种情形读作生成、退化与中性”：扩大是生成的，缩小是退化的，保持不变是中性的；混合不是中性，是需要度量的情形。
 **理由。** 四种情形互斥，所以生成与退化不重叠，如 Ren 所要求；其中不出现意义、立场或边界，是第一部分的读法；Ren 2026-10-10 说“there are also neutral and generative dynamics that can be identified (degenerative/neutral/generative)”，三类恰是扩大、保持与缩小。
-**会改变它的。** 一个 Ren 判为生成而缩小能形成者的部分；Ren 只以形成的层次（更新与消耗）为定义。
+**会改变它的。** 一个缩小能形成者、而由工作的论证表明为生成的部分；由 Ren 的文本论证、只以形成的层次（更新与消耗）为定义的读法。
 
 <a id="d3-第二个生的范围以消耗为条件的生起--the-scope-of-the-second-生-arising-that-depends-on-depletion"></a>
 ### D3. 第二个“生”的范围；以消耗为条件的生起
@@ -126,7 +128,7 @@
 
 **决定。** 第二个“生”的范围是所采用范围（D1）中能形成者：其所要求者被一个继续的水平满足的形成，活跃与否，包括休眠的与尚未形成的。以消耗为条件的生起不单独归类：它在有它的继续扩大能形成者处是生成的，缩小处是退化的，由比较决定（“更坏”经 C）。
 **理由。** 给单个生起归类需要另一前提，并会重叠（同一事件既生起又消耗）；比较不加前提就决定它，并把分解、食腐与死亡之后的接续留在说明之内，而不本身记功；按 [unceasing-generation-needs-renewal](../../../../theories/becoming/results/records/unceasing-generation-needs-renewal.md)，生起消耗有限多个条件时，不息的生成需要更新才复现。
-**会改变它的。** Ren 把“生”限于活的形成或三种范围之一（空间随之缩小，规律不变）。
+**会改变它的。** 由 Ren 的文本论证、把“生”限于活的形成或三种范围之一的读法（空间随之缩小，规律不变）。
 
 **在一个说明中修订（2026-10-19，D45）。** 第二个“生”读作进一步的生成：能形成者，连同进一步形成的条件与生成者；D1 的修订使后者成为生生的一部分（一个进程连同状态一起改变能形成者与形成的能力）。能形成者仍是比较所读的部分，所以以消耗为条件的生起仍经比较分类：有它的进程扩大能形成者处是生成的，缩小处是退化的。形成的能力，其中包括更新的能力与关系的丰富，尚未成为度量（理论 §8.2），所以不进入任何比较。**改变了什么。** 上面的决定只把第二个“生”读作能形成者，比 Ren 2026-10-18 所取的 D1 修订窄。**会改变它的。** 同上；一个形成能力的度量，使比较能读它。上面的原文保留。
 
@@ -137,7 +139,7 @@
 
 **决定。** 体现的关系项（恰在立着时交换）读作“生”：其活就是其立着的形成。生成不限于体现：所持的条件、休眠的形成与关系，凡在能形成者之中，都计入。体现仍是用到它的规律的前提，不是定义（[ZERO-PREMISE-PLAN](../history/root-foundation/ZERO-PREMISE-PLAN.md) §1.4）。
 **理由。** 可能性的读法计入形成，活跃与否（§6.12），所以把生成限于体现会去掉休眠（种子库）与所持的条件；P107 把体现列为部分的一种状态（立着而不交换者休眠）。
-**会改变它的。** Ren 只把“生”读作体现的生命。
+**会改变它的。** 由 Ren 的文本论证、只把“生”读作体现的生命的读法。
 
 <a id="d5-接续与生生不息的层次--succession-and-the-level-of-生生不息"></a>
 ### D5. 接续与生生不息的层次
@@ -146,9 +148,9 @@
 
 **决定。** 接续经延续的已形成关系读：交互、以之为生、世系与输送（D9、D12）；工作读法中的任期如 [identity-across-steps](../../../../theories/becoming/results/records/identity-across-steps.md) 的定理所说经接续延续。后继者继承前任者的损失，恰在接续保持任期之处：前任者在上方被满足的需要在后继者中延续，此后在其下的汲取就是侵蚀（`Succession.readings`）；依存中断之处，读法重新开始（`Gap.lapse_starts_afresh`）。生生不息在整体的层次上读，如 Ren 原话“一种整体的……方向”：不止息的生成，即经更新而复现的生起。在其余闲置的有界整体中，这是回返，不是无尽的新（`Flow.whole_recurs_of_rest_idle`、`Flow.whole_not_new_of_rest_idle`，P111）；无尽的新需要来自每个有界部分之外的增益（`Flow.new_beyond_every`）。谱系、成员与家族是整体之内读延续的层次。
 **理由。** Ren 的原话；P111；Ren 2026-09-25：“we can grow exponentially till we met our need, but we can't compounding forever”（[原话](../../../../sources/16-claude-code-directions/2026-09-25-the-mind-not-the-approach.md)）；部分短暂时持续的整体需要部分不断生起（[whole-persists-through-generation](../../../../theories/becoming/results/records/whole-persists-through-generation.md)），所以在整体的层次上“不断创造”成立，消除了只读作谱系延续时与 Ren 原话的张力。
-**会改变它的。** Ren 把生生不息读作无尽的新（那就需要无界的增益，P111 给出其确切形式），或读在一个成员或一个谱系的层次上；只在成员的层次上读接续时，损失不随任期继承。
+**会改变它的。** 由 Ren 的文本论证、把生生不息读作无尽的新的读法（那就需要无界的增益，P111 给出其确切形式），或读在一个成员或一个谱系的层次上；只在成员的层次上读接续时，损失不随任期继承。
 
-**修订，由 Ren 取（2026-10-18）。** 不息保留上面的读法：生起经更新而复现，生成之源不枯竭。这是论中的不息，“不是永不消亡，而是不使生成之源枯竭”，与其“不绝其源”，论中真正之不息的五条检验作为必要条件（[原文](../../../../sources/06-zhishan/shengsheng/生生不息论v1/生生不息论.md)）。生生不息读作生生（D1）在整体上继续而仍有更多能形成：不是回返为已有形式的复制，论中排除这一点（“不是现有形式的无限复制”）。复杂性可以不断上升，如 Ren 2026-10-07 的回答所说（“复杂性/复杂结构的复杂度可以不断的上升”），但没有什么要求它上升；论中说真正的不息“不是数量的无限增加”，Ren 说“we can't compounding forever”，都排除把它读作增长。只回返的整体有不息而无生生不息。总量保持为一、生起永不止息的闭合循环就是这样的整体（`Recycle.closed_unceasing`）；在第一定律下，其余不净给出的有限整体留在其存量之内（`Flow.whole_bounded_of_rest_idle`），量为自然数时它反复回到曾有的构形（`Flow.whole_recurs_of_rest_idle`）。P111 说出“更多”需要什么，而不重新定义它：在第一定律下，每步都新的家族在任意晚的步得到多于它所取的，来自其余或跨过其边界，每个包含它的有界家族亦然（`Flow.new_beyond_every`）：是来自外部的流入，不是增长。所以一个由外部供给的部分，如地球之于太阳，在流入持续时可以有生生不息；整体只在不是第一定律下的有限整体时才能有；实际的整体是否是这样的整体，是经验对应（理论 §8.7），不是读法。范围：这里的回返由自然数的量迫使，那是表示的一项承诺；量为实数时，有界整体不必确切回到某个构形，那里代替回返的是什么是开放的（理论 §8.5，表示的范围）。接续与整体的层次如上决定。**改变了什么。** 上面的决定把回返算作生生不息。**会改变它的。** Ren 把回返算作生生不息（那时上面的决定成立）；Ren 要求每步都新，而不是仍有更多能形成（同一定理给出那需要什么）；单以“不塞其流”为判据，那时流没有被阻塞的闭合循环就会算作生生不息。论证在[决定简报](../history/root-foundation/READINGS-PENDING-REN.md#a2-生生不息-d5)中；Ren 的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)）是其来源，不是其根据。上面的原文保留。
+**修订，由 Ren 取（2026-10-18）。** 不息保留上面的读法：生起经更新而复现，生成之源不枯竭。这是论中的不息，“不是永不消亡，而是不使生成之源枯竭”，与其“不绝其源”，论中真正之不息的五条检验作为必要条件（[原文](../../../../sources/06-zhishan/shengsheng/生生不息论v1/生生不息论.md)）。生生不息读作生生（D1）在整体上继续而仍有更多能形成：不是回返为已有形式的复制，论中排除这一点（“不是现有形式的无限复制”）。复杂性可以不断上升，如 Ren 2026-10-07 的回答所说（“复杂性/复杂结构的复杂度可以不断的上升”），但没有什么要求它上升；论中说真正的不息“不是数量的无限增加”，Ren 说“we can't compounding forever”，都排除把它读作增长。只回返的整体有不息而无生生不息。总量保持为一、生起永不止息的闭合循环就是这样的整体（`Recycle.closed_unceasing`）；在第一定律下，其余不净给出的有限整体留在其存量之内（`Flow.whole_bounded_of_rest_idle`），量为自然数时它反复回到曾有的构形（`Flow.whole_recurs_of_rest_idle`）。P111 说出“更多”需要什么，而不重新定义它：在第一定律下，每步都新的家族在任意晚的步得到多于它所取的，来自其余或跨过其边界，每个包含它的有界家族亦然（`Flow.new_beyond_every`）：是来自外部的流入，不是增长。所以一个由外部供给的部分，如地球之于太阳，在流入持续时可以有生生不息；整体只在不是第一定律下的有限整体时才能有；实际的整体是否是这样的整体，是经验对应（理论 §8.7），不是读法。范围：这里的回返由自然数的量迫使，那是表示的一项承诺；量为实数时，有界整体不必确切回到某个构形，那里代替回返的是什么是开放的（理论 §8.5，表示的范围）。接续与整体的层次如上决定。**改变了什么。** 上面的决定把回返算作生生不息。**会改变它的。** 由 Ren 的文本论证的读法：把回返算作生生不息（那时上面的决定成立），或要求每步都新，而不是仍有更多能形成（同一定理给出那需要什么）；单以“不塞其流”为判据，那时流没有被阻塞的闭合循环就会算作生生不息。论证在[决定简报](../history/root-foundation/READINGS-PENDING-REN.md#a2-生生不息-d5)中；Ren 的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)）是其来源，不是其根据。上面的原文保留。
 
 <a id="2-终结侵蚀开放与所持条件--endings-underminings-openness-and-held-conditions"></a>
 ## 2. 终结、侵蚀、开放与所持条件
@@ -160,7 +162,7 @@
 
 **决定。** 逐步读法的定义不增不减，它的判定作为定理保留：在承担自身的体现关系项终结之步对它的汲取，断裂它自身的依存（`Embodied.ending_breaks`），所以在逐步读法中汲取者的事件不活，对每个汲取者都如此，不另划一类汲取者；对持续不变的依存的侵蚀，使依存者在该步之后不活跃（`Web.Dependent.inactive_below`），依存者原本活跃时这是它的终结（`Web.Dependent.ceases_below`）。这些判定不作为对汲取者的估值，即不据此判定哪些汲取者更坏。终结或侵蚀是否使一个继续更坏，由可能性的比较决定：比较逐步计水平所容许者，活跃与否，看它使能形成者失去什么，不看对事件的判决。
 **理由。** 判定是定义的定理，不是另加的选择；比较已不用 `living`（§6.12），为它另划汲取者的类，是给一个不用于比较的读法加前提；“更坏”经 C。
-**会改变它的。** Ren 在比较中恢复 `living` 的某个读法，或为逐步读法另划汲取者的类。
+**会改变它的。** 由工作论证的、在比较中用 `living` 的某个读法，或为逐步读法另划的汲取者之类。
 
 <a id="d7-开放与增益--openness-and-gain"></a>
 ### D7. 开放与增益
@@ -169,7 +171,7 @@
 
 **决定。** “开放”指在每个有限家族之外的交换（如 `exposed` 中净量为零）；流入不是开放，是增益，两者分开：持续的变化需要开放（[continued-change-needs-openness](../../../../theories/becoming/results/records/continued-change-needs-openness.md)），新需要增益，在第一律之下增益来自其余或跨过边界（P111，`Flow.rise_from_rest_or_open`、`Flow.new_beyond_every`）。
 **理由。** 定理把两者分开使用：`exposed` 净量为零而开放；把开放读作流入，会使“持续的变化需要开放”弱于已证者，并把它与 P111 证明新所需的增益混同。
-**会改变它的。** Ren 以“开放”指净流入（读法随之为：持续的变化需要外部的交换，新需要流入；定理不变）。
+**会改变它的。** 由 Ren 的文本论证、以“开放”指净流入的读法（读法随之为：持续的变化需要外部的交换，新需要流入；定理不变）。
 
 <a id="d8-所持条件被表示时的估值--valuation-where-a-held-condition-is-represented"></a>
 ### D8. 所持条件被表示时的估值
@@ -187,7 +189,7 @@
 
 **决定。** 以之为生与世系采用为延续的已形成关系（在用到该补全时 N_rel 沿之传递的关系，接续经之而读，D5），不采用为直接的估值。带来新的生起是否使结果更好：它恰在扩大能形成者处排在其不在之上；不增加可能性的形成与其不在不分高下（`Ranking.possible_tie`），理论不另加次序来分：可能性优先也会把一次休息排在不间断的活动之下（`Ranking.Pause.pause_ranked_below`），把停顿算作损失。超出扩大的、使新的生命存在的价值，留在理论之外（§6.6）。
 **理由。** 直接的估值加一个权重（前提），并给延续本身记功；作为关系，它们不带权重地进入范围与意义。
-**会改变它的。** Ren 采用对世系的估值，或一个度量。
+**会改变它的。** 作为前提公开采用的对世系的估值，或一个度量。
 
 <a id="d10-逐步读法以消耗取胜与关系的纪律--the-stepwise-reading-winning-by-consumption-and-the-correspondence-discipline"></a>
 ### D10. 逐步读法、以消耗取胜与关系的纪律
@@ -196,19 +198,25 @@
 
 **决定。** 一、逐步的 living 以“不侵蚀”为其读法，与整段读法、关系层读法并列；比较不用它（D1）。二、对以消耗取胜的判决是对进程的判决：在可能性的比较之下，阈值之前的事件被计入，不被扣下（`Ranking.malignant_possible`），排序来自部分失去的。三、`related` 的对应纪律保留交互（一方汲取、另一方以正的水平依存于同一个可能使其失败的条件）；共同参与作为另一选择留在核心上。公理读作 `Unrestricted`（D16）时，G0 不再需要沿 `related` 传递，这一选择不影响 G0。四、[metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md) 的读法选择，就比较而言由 D1 回答；其哲学论证仍开放（§10）。
 **理由。** 三个候选连同其见证都保留；比较以可能性进行时，选择其中哪一个不再有结论依赖于它；公理直接给出意义，纪律只对另一种补全起作用。
-**会改变它的。** Ren 取共同参与；比较中用到 `living`。
+**会改变它的。** 由工作论证的共同参与；比较中用到 `living`。
+
+**以现行用语重述（2026-10-20，R36；第二十次审查 F11）。** 三中“公理读作 `Unrestricted`（D16）时，G0 不再需要沿 `related` 传递”读作：在延续条件之下（章节 §6.4，理论不断言它），生命意义不需要沿 `related` 传递，所以纪律不影响它；理由中的“公理直接给出意义”同样读。上面的原文保留。
 
 <a id="3-想要延续者与一条公理--what-wants-its-continuation-and-the-one-axiom"></a>
-## 3. 想要延续者与一条公理
+<a id="3-想要延续者与一条公理"></a>
+## 3. 想要延续者与延续条件
 
 <a id="d11-s0公理的辖域与补全--s0-the-range-of-the-axiom-and-the-completion"></a>
-### D11. S0、公理的辖域与补全
+<a id="d11-s0公理的辖域与补全"></a>
+### D11. 自身意义、条件的辖域与补全
 
 所在：第 8 节第十一项；计划 §6 第 1、6 项；[held-lives-g0-is-centering](../../../../theories/becoming/results/records/living-significance-on-held-lives.md)。
 
 **决定。** 一、S0 是“想要”的读法，从“规范前提”一栏移出（计划 §6.6）。二、公理的辖域是任何东西，如 Ren 的原话：“if we want to add one axiom, that is for anything, its continuation into the future has significance”（2026-10-10），也如 §6.8 所读；这是 Ren 的原话所定，此处只是记录。所以无人持有的生命（休眠的种子、昏迷者、不再想活下去的人）从每个立场都有意义。这一意义不决定任何人该做什么：延续之间的实践判断，以及它与一个人自己意愿的关系，仍由 C、L 与 J1–J4 处理（计划 §4.5）。三、在被持有的生命上的两种补全中，采用 S0 加 N_std（立场中立），因为 `Unrestricted` 给出的就是它（§6.8）；连通整体上的 S0 加 N_rel（`significant_of_transmits`）保留为另一种。
 **理由。** 一、提议的“anything that want's its continuation to have significance”就是每个想要之点上的种子；二、Ren 的原话，以及 Ren 2026-10-10 的“so there isn't really who's continuation matters, which requires axiom”；三、N_rel 需要连通，是另一前提。
-**会改变它的。** Ren 把公理限于想要者（那时无人持有的生命只经已形成的关系到达）。
+**会改变它的。** 由 Ren 的文本论证、把延续条件限于想要者的读法（那时无人持有的生命只经已形成的关系到达）。
+
+**以现行用语重述（2026-10-20，R36；第二十次审查 F11）。** 一、S0 是自身意义，即“想要”的读法。二、“公理的辖域是任何东西”读作：延续条件的辖域是任何东西；措辞是 Ren 的，作为来源保留，辖域凭它在说明中的位置成立（D45），不是因为他的话决定了它。这一意义仍不决定任何人该做什么：实践判断仍由 C、L 与 J1–J4 处理。三、S0 加 N_std 是自身意义加立场中立，由条件给出（章节 §6.4）；S0 加 N_rel 是连通整体上的自身意义加关系中立。上面的原文保留。
 
 <a id="d12-推出的范围与输送--the-derived-extent-and-conveyance"></a>
 ### D12. 推出的范围与输送
@@ -217,7 +225,7 @@
 
 **决定。** 一、推出的范围不用公理，向后沿依存，到一个延续所依存的（供给闭包），向前沿所及，到其交换所到达的（所及闭包）；每个已形成的关系只经 N_rel 进入，在另一种补全中。Ren 2026-10-10 的“i think there are two evolution attractor forces, one is for the self(life, and what's within that life, within ecosystem and beyond), and another one is the whole, which is also a force of evolution. and everything exists in between. so this is a relation that is self recursive - system and subsystem”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md)）经五个闭包读：自身、供给闭包、影响闭包在系统之内层层相套，所及闭包也在系统之内（[levels-of-closure](../../../../theories/becoming/results/records/levels-of-closure.md)）。二、输送是已形成的关系，与交互、以之为生与世系并列。
 **理由。** 一、沿每个已形成的关系，范围会包含一个形成所触及的一切，那既不由动力学推出，又是总体化的（[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)）；依存与所及是定理所推出的。二、它使一个持续家族的边界是形成的、实在的，而不是关系中的切断（[conveyance-crosses-the-boundary](../../../../theories/becoming/results/records/conveyance-crosses-the-boundary.md)），读出 Ren 的“how much does one consider something to be a part of its system dynamics”。
-**会改变它的。** 沿另一种关系不用公理推出范围；一种把 Ren 不算作相关者联系起来的输送。
+**会改变它的。** 沿另一种关系不用公理推出范围；一种把由工作的论证表明不相关者联系起来的输送。
 
 <a id="d13-不损--not-harm"></a>
 ### D13. 不损
@@ -226,7 +234,7 @@
 
 **决定。** “不损”读作保留：有一个部分的水平保留无它时有意义者处，部分不损（§6.8）。保留计入尚未形成者（`Preemption`），不读作逐步读法的不侵蚀（那只计已满足的依存）。它既不是过滤（决定哪些延续有意义），也不是一个延续对他者的主张：它是有与无一个部分的水平之间的关系。其边界是余量：部分恰在其净汲取超出余量处失去一个延续（`Flow.loses_iff_beyond_margin_at`），这就是 Ren 所说“a phase transition with a clear boundary, not some "outside will or belief"”的形式。失去经 C 进入判断，C 排序无损的扩展。
 **理由。** 作为对成员延续的过滤，几乎每个生命都会失去意义，因为几乎所有生命都经终结其他生命而延续；作为对他者的主张，它会加上主张的前提（关系，不是权利）；保留在公理之下不加前提，其边界就是 Ren 的相变；逐步读法会把先占的汲取者算作无损（`Preemption.not_undermining_yet_loses`）。
-**会改变它的。** Ren 把“不损”读作对行动的约束，而不是对进程的比较。
+**会改变它的。** 由 Ren 的文本论证、把“不损”读作对行动的约束而不是对进程的比较的读法。
 
 **以现行用语重述（2026-10-19，R21；第十九次审查 E5）。** “保留在公理之下不加前提”读作：保留在理论 §6.15 的延续条件之下不加前提，理论不断言这一条件。退役的标签“公理”只在理论的词汇表中解释一次。上面的原文保留。
 
@@ -235,10 +243,10 @@
 
 所在：第 8 节第十一、十二项；计划 §6 第 2 项；[held-lives-g0-is-centering](../../../../theories/becoming/results/records/living-significance-on-held-lives.md)、[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)、[whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)。
 
-**层次由 Ren 回答（不是 AI 的决定）。** 损读在整体的层次，较弱的版本在所在的系统之内，然后是自身（Ren 2026-10-10，见 §0），“整体”是实际的整体，从不是任何中心对它的模型，以包含比较从不许可强加的终结。§6.8 把这一次序给作判断有多完整的次序（`Web.Retains.within`）。整体上的比较就是同时在每个区域内的比较（`Web.includes_iff_within_every`），所以在整体的层次读损，不漏掉任何部分的损失：在任何区域内缩小的，就在整体上缩小。
+**层次（AI 的读法；Ren 2026-10-10 的话是其来源）。** 损读在整体的层次，较弱的版本在所在的系统之内，然后是自身（Ren 2026-10-10，见 §0），“整体”是实际的整体，从不是任何中心对它的模型，以包含比较从不许可强加的终结。§6.8 把这一次序给作判断有多完整的次序（`Web.Retains.within`）。整体上的比较就是同时在每个区域内的比较（`Web.includes_iff_within_every`），所以在整体的层次读损，不漏掉任何部分的损失：在任何区域内缩小的，就在整体上缩小。
 **决定（AI 的）：形成的个体化**，它定出什么算作一次损失（§6.8）。形成在 `Becoming.Identity` 所给的两个层次上个体化，各有其用：一、给一个部分归类为退化、中性或生成（D2）时，形成以谱系计，即更新的种类：在更新之内的取用于是不是损，更新的余量就是 D13 的相变边界；二、一个成员的终结仍是那个成员之延续的损失：任何以包含的比较都不许可它；一个部分加上自身的延续而终结一个成员时，是混合的，没有度量就不排序。
 **理由。** 只以成员计，几乎每次进食都是损，在更新处也没有相变的边界，不合 Ren 的三类；只以谱系计，成员的终结就什么也不算，这是总体化的读法；两者并用，Ren 的相变有其位置，而没有终结被许可。
-**会改变它的。** Ren 只以成员或只以谱系个体化；一个在可能性之间权衡的度量（另一前提）。
+**会改变它的。** 由工作论证的、只以成员或只以谱系的个体化；一个在可能性之间权衡的度量（另一前提）。
 
 <a id="d15-更多--more"></a>
 ### D15. “更多”
@@ -247,16 +255,17 @@
 
 **决定。** 强式中的“更多”（“continuation into the future needs to create more significance(being generative)”）读作方向：扩大能形成者，弱式的生成情形（§6.8：增加，不用第二条公理）。它不是一个标量的最大化，也不是每一步都增长。多样性与复杂性（Ren 2026-10-07）是能形成者的方面，尚无度量表示，仍开放（第 8 节，进一步的证明）。
 **理由。** Ren 的“方向”；Ren 2026-09-25 的“we can't compounding forever”；P111：在其余闲置的有界整体中，生成是回返（`Flow.whole_recurs_of_rest_idle`），所以新的最大化对它不可得；扩大是偏序（§6.13）。
-**会改变它的。** Ren 采用多样性或复杂性的一个度量（“更多”就是那个度量的方向）。
+**会改变它的。** 作为前提公开采用的多样性或复杂性的一个度量（“更多”就是那个度量的方向）。
 
 <a id="d16-读出公理a-与-g0--reading-the-axiom-a-and-g0"></a>
-### D16. 读出公理、A 与 G0
+<a id="d16-读出公理a-与-g0"></a>
+### D16. 读出条件、A 与生命意义
 
 所在：第 8 节第十二项；[one-axiom-yields-g0](../../../../theories/becoming/results/records/continuation-condition-yields-living-significance.md)、[significance-retained-within-margin](../../../../theories/becoming/results/records/significance-retained-within-margin.md)、[whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)、[comparison-within-reach](../../../../theories/becoming/results/records/comparison-within-reach.md)、[closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-continuation-condition.md)。
 
 **决定。** 一、`Unrestricted` 读出公理：形成的索引读“anything”，一个形成在一步的延续读“its continuation into the future”，立场的索引不加限定地读“has significance”，没有中心特殊。二、A 读在活的内容上：这一读法是被迫的（`BareSignificance.bare_forces_reason`），如此读，A 给出 D 与普遍理由（`universal_reason_of_unrestricted`）。三、重述是否替代 G0，已由 Ren 的折叠回答（2026-10-11）：G0 不再是公理，第一部分把它作为条件陈述，第二部分断言公理时它是定理。
 **理由。** 一、逐字合 Ren 的句子，并且它就是对任何东西的 G0（`unrestricted_iff_livingSignificance`）；二、见证迫使它。
-**会改变它的。** Ren 给“has significance”加限定。
+**会改变它的。** 由 Ren 的文本论证、给“has significance”加限定的读法。
 
 **以现行用语重述（2026-10-19，R21；第十九次审查 E5）。** 一、`Unrestricted` 读出延续条件（曾称“那一条公理”的句子）。三、G0 是生命意义，是条件，不是公理；在理论 §6.15 的延续条件之下它是定理（`livingSignificance_of_unrestricted`），理论两者都不断言。“第一部分”“第二部分”是退役的标签；原文说第二部分断言公理之处，没有任何断言。上面的原文保留。
 
@@ -270,7 +279,8 @@
 **会改变它的。** 记下经由取用之终结的进程比较（在流上，而不是在水平上）；取尽所给如何形成的定律。
 
 <a id="4-不用公理的路线反馈与所及--the-route-without-axiom-feedback-and-reach"></a>
-## 4. 不用公理的路线、反馈与所及
+<a id="4-不用公理的路线反馈与所及"></a>
+## 4. 不用条件的路线、反馈与所及
 
 <a id="d17-供给闭包--the-feeding-closure"></a>
 ### D17. 供给闭包
@@ -282,7 +292,8 @@
 **会改变它的。** 一个供给闭包遗漏的依存。
 
 <a id="d18-路线-b-与公理--route-b-and-the-axiom"></a>
-### D18. 路线 (b) 与公理
+<a id="d18-路线-b-与公理"></a>
+### D18. 路线 (b) 与条件
 
 所在：第 8 节第十三项；[closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-continuation-condition.md)、[whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)、[loss-beyond-a-region](../../../../theories/becoming/results/records/loss-beyond-a-region.md)、[represented-boundary-against-dependence](../../../../theories/becoming/results/records/represented-boundary-against-dependence.md)。
 
@@ -297,7 +308,7 @@
 
 **决定。** Ren 的“there could be the whole realizes itself(like us, we recognize that "we" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself”（2026-10-10）读作以整体为所表示的边界（`bounded_whole`）：区域就是一切时，其判断就是公理的判断。这在实践中怎样发生（Ren：“needs more thoughts”）仍开放。
 **理由。** 这是已检查的、整体以自身为边界时的情形。
-**会改变它的。** Ren 所说的实现不是一个边界的表示，而是另一种关系。
+**会改变它的。** 由 Ren 的文本论证、把“实现”读作边界的表示之外的另一种关系的读法。
 
 **在一个说明中修订（2026-10-19，D45）。** 作为整体的判断保留，并与“在所知之中的知”的规律相接。Ren 的“understanding itself, and updates itself”经这些规律读出。整体对自身的知由它的部分作出，部分在所知者之中（理论第 3 节“在所识之中的识”）。没有框架以自己的构型实现关于其构型的每个断言（`Frame.self_incomplete`）；保留所知、并接着纳入其缺口的知，每一步都不完备，从不返回（`Diagonal.Unfolds.incomplete`、`Diagonal.Unfolds.never_returns`）。所以整体对自身的理解从不完备，它的更新不回到原处。这在实践中怎样发生仍开放。**改变了什么。** 上面的决定只读了边界。**会改变它的。** 同上；一个不由其部分作出的、整体对自身的知。上面的原文保留。
 
@@ -308,12 +319,15 @@
 
 **决定。** 一、所及闭包读出 Ren 的中间层次“the system that one is in”：它指向前方，即一个部分的交换所到达的，不必含中心所依存的（那由供给闭包持有）；两者都在系统之内。二、Ren 的较弱版本读作覆盖中心所及的意义，在所及之内的每个部分上给出公理的比较。三、“situational awareness”读作中心知道其部分在其反馈之外所到达的：反馈至多识及影响闭包。四、形成的区域读作自身、所在的系统与整体；条件的区域读作中心所表示的边界，一个形成所参与与所要求的条件读作其实际的依存。五、一个动作的两种反事实（其余固定；其余经其识回应）与所及闭包的反事实意义采用。
 **理由。** 一、把供给闭包读作系统已由 §6.9 撤回，而系统闭包在一个共同条件成立处就是整体，所以不能是中间层次；所及闭包是二者之外的中间层次；三、它说出反馈不能给的。
-**会改变它的。** Ren 的中间层次是指所依存的。
+**会改变它的。** 由 Ren 的文本论证、把中间层次读作所依存者的读法。
+
+**以现行用语重述（2026-10-20，R36；第二十次审查 F11）。** 二中“给出公理的比较”读作：在所及之内的每个部分上给出延续条件的比较（章节 §6.3；`Flow.Balances.comparison_within_reach`）。Ren 的三个层次（整体、所在的系统、自身）是三个区域的来源，区域凭读出它们的闭包成立。上面的原文保留。
 
 **在一个说明中修订（2026-10-19，D45）。** 一、二、四、五不变，用采用的词汇：说“识及”或“识”处，读作耦合入或耦合（[命名研究](REGISTRATION-VOCABULARY-STUDY.md#7-decisions-18-october-2026)）。三与理论第 7 节相接：情境的觉知是对自身所及的明，即知道自己的部分在其所耦合入者之外所到达的。反馈至多耦合入影响闭包（`Flow.Balances.uncoupled_beyond_influence`）。耦合闭包含影响闭包，只经支持耦合入时就是影响闭包，所以只有经水平的耦合能使它变宽（`Flow.withinCoupling_of_withinInfluence`、`Flow.withinCoupling_thresholdOnly`、`Flow.withinCoupling_mono_obs`）。部分到达其所及闭包。所以情境的觉知要知道的，是 §7.2 第一条规律的缺口，即所及闭包减去耦合闭包；在它之外，经这个形成之耦合的选择什么也不分开（`Flow.unselected_beyond_coupling`）。**改变了什么。** 三原只说反馈不能给的；现在也说什么给它，缺口在哪里。**会改变它的。** 同上。上面的原文保留。
 
 <a id="5-公理的分解与生成的空间--the-axiom-decomposed-and-the-generative-space"></a>
-## 5. 公理的分解与生成的空间
+<a id="5-公理的分解与生成的空间"></a>
+## 5. 条件的分解与生成的空间
 
 <a id="d21-预设覆盖与层级的次序--the-presupposition-covering-and-the-order-of-levels"></a>
 ### D21. 预设、覆盖与层级的次序
@@ -322,7 +336,7 @@
 
 **决定。** 一、预设（自身的延续在自身被划在某处时有意义）读出 Ren 的“belief”：“the self is a cognitive model which can not justify itself without some sort of "belief"”（2026-10-10）；它是 S0 的延续形式。二、自身的可容许划法包括整体（Ren 2026-10-10：“the whole can be the self, the collective”），覆盖由此成立。三、Ren 的层级次序读作预设的三种读法：在整体处超真；沿影响次真，在所及闭包处；沿空关系次真，在自身处。四、**不决定：** Ren 是否持有不变的一步，即预设不随自身怎样划、从谁的立场而变。那是 Ren 的陈述。本记录能说的是：这一步是第二部分的断言在预设之外所加的（[axiom-decomposition](../../../../theories/becoming/results/records/continuation-condition-decomposition.md)）；P107 给出规律所满足的同一标准，即对每个部分不论怎样划都成立（`presupposition_iff_all_of_invariant`）；其根据是哲学（§10）。
 **理由。** 一、二、Ren 的句子；三、三者是定理的范围，并合 Ren 的次序。
-**会改变它的。** Ren 的“belief”所指不是预设所陈述的。
+**会改变它的。** 由 Ren 的文本论证、使“belief”所指不是预设所陈述者的读法。
 
 **在一个说明中修订（2026-10-19，D45）。** 一至三不变。四不是 Ren 的陈述。不变之步是否成立是根据的问题（理论 §6.11、§8.5）；Ren 持有它与否是陈述，按他 2026-10-17 的指示，那是来源，不是根据。这一步作为根据的问题保持开放，不是等待 Ren 的问题。**改变了什么。** 四原要 Ren 的陈述。上面的原文保留。
 
@@ -381,7 +395,7 @@
 
 **决定。** 两项都以确切范围采用。（1）律在每个历史下读有限多个条件时，`Becoming.Response` 前提中其余经以回应的识，在形式上读作律的敏感：形成恰识其交换所能被改变者，一次一个条件；这是它所经的最小的识（`Becoming.Sensitivity`），取它不在律之外加任何东西。这是形式的读法，如 D26 中理的形式读法；“识”作为 Ren 对 registers 的读法仍属 Ren（§10），识是否恰是敏感、还是多于交换所回应者，由 Ren 判断。条件无穷多时这一读法不适用：尾之律经其读的识没有最小的。（2）依存于整体而不依存于其任何部分者读作尾，取尾事件的确切意义而不带概率：改变任何有限多个条件都不改变它，如终将消失或长程平均；条件以自然数编号时，它与 Kolmogorov 的尾事件相应。每个律都读有限多个条件是 Brouwer 的连续性原则：那是对应，不是读法，核心既不陈述也不驳斥它。
 **理由。** （1）回应的前提需要一个其余经以回应的识；最小的识由律给出，它所经的每个识都包含它，所以取它不加前提，不取它就要另给一个识。（2）“尾”是数学中恰有此义的名称（按 Ren 2026-10-12 的命名规则，在陈述有其确切意义处采用）；核心中的部分是有限多个条件，所以不依存于任何部分恰是对有限的改变不变。
-**会改变它的。** （1）一个必须经多于其敏感的识来读的回应（形成识一个其交换不依存的条件），或 Ren 对识的另一读法；（2）核心中出现由无穷多个条件构成的部分，那时“不依存于任何部分”就强于尾。
+**会改变它的。** （1）一个必须经多于其敏感的识来读的回应（形成识一个其交换不依存的条件），或由 Ren 的文本论证的识的另一读法；（2）核心中出现由无穷多个条件构成的部分，那时“不依存于任何部分”就强于尾。
 
 **更正（2026-10-16，第十八次审查，R18）。** （1）中“条件无穷多时这一读法不适用：尾之律经其读的识没有最小的”说过了：尾之律以对消失的判定为参数，这一判定给出有限全知原则（`lpo_of_vanish_decided`），而每个反例都给出弱有限全知原则（`wlpo_of_not_through_sensitive`）。应读作：条件无穷多时，这一读法未被表明适用：给定消失之判定（它给出有限全知原则），尾之律没有最小的识，而每个这样的律都给出弱有限全知原则；单靠核心，连续性条件既未被驳倒，也未被表明可以去掉（条件编号时，`Becoming.Tail` 给出确切的强度：反例恰在作为规则的弱有限全知原则处存在）。此外，律读有限多个条件时，敏感是于双重否定下最小的识（`ExchangeLaw.ReadsFinitely.least_registration` 的结论是双重否定的）。上面的原文保留；其余决定不变。这是 AI 的更正，不是 Ren 的决定；见[第十八次审查](../history/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md)的 O1、O2 与修正清单第 23 项。
 
@@ -394,11 +408,11 @@
 
 **决定。** 四项都以确切范围采用。（1）耦合强度是敏感所缺的度量：交换与一个水平的耦合强度至多 k，是只改这个水平时交换之差至多 k 乘这个水平之差；强度为零恰是不敏感（`ExchangeLaw.insensitiveAt_iff_strength_zero`），敏感说能否，强度说多强。“识的强弱”在形式上读作这一强度，带 D37 的限定：“识”作为 Ren 对 registers 的读法仍属 Ren（§10）。（2）差别到达多少本身是一个进程，由一个律生成，从展开读出而不另加（所携带的量恰好达到，`most_difference_arrives`）：这是 D23 与 D25 的情形。（3）所持的差别不断到达，以其见证的范围采用：经一条链无界地到达，强度为一的回路使它每步加倍；回路的一般理论没有给出。（4）Ren 写道“the whole earth has become a highly entangled system”，同一句接着写“everyone country, every person, is heavily coupled into it”（[OPENING 的来源](../../../../sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md)）；所以一个整体有多纠缠，读作其交换与彼此水平耦合有多强，所携带的量读作一个动作的差别在其中能多远、多快地增长。不采用：把这里的纠缠等同于量子的纠缠（联合状态不可分）；那一线是语境中的识与 Bell 型之界（`Becoming.Readings`、`Becoming.Gluing`），只作类比。OPENING 本身仍属 Ren（§10），这里只说理论怎样读这一度量。
 **理由。** （1）强度由律给出，敏感恰是它为零与否，取它不加前提；（2）P80 已证一个动作的反事实就是律生成的进程，所携带的量是同一进程的界并恰好达到；（3）定理只给见证；（4）Ren 的同一句以耦合说明纠缠；量子的纠缠在核心中有它自己的形式，二者等同需要论证，不是读法。
-**会改变它的。** （1）Ren 对识的另一读法，或一个识的强弱不能由强度度量的情形；（3）回路的一般理论；（4）Ren 对“entangled”的另一说明。
+**会改变它的。** （1）由 Ren 的文本论证的识的另一读法，或一个识的强弱不能由强度度量的情形；（3）回路的一般理论；（4）由 Ren 的文本论证的“entangled”的另一读法。
 
 **更正（2026-10-16，第十八次审查，R18）。** （3）“所持的差别不断到达”所据的见证是携带之律（`ExchangeLaw.carrying`，见证 `Propagation.Chain.keeps_arriving`）：它什么也不取，给出强度乘至今水平之和，所以一旦给出任何量就不是无增益的（`Flow.Gainless`）。所以（3）的范围是：在一个什么也不取、因而创造量的律下，所持的差别不断到达；对无增益的律未表明。同样，（2）中能到达的最大差别（`most_difference_arrives`）是在一切具有这些强度的律上由携带之律达到的，对无增益的律是否紧未表明。（3）是否以这一范围保留，由 Ren 决定（审查修正清单第 48 项）。上面的原文保留；其余决定不变。这是 AI 的更正，不是 Ren 的决定；见[第十八次审查](../history/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md)的 O3 与修正清单第 24 项。
 
-**修订，由 Ren 取（2026-10-18）。** （4）修订。Ren 的这句话有两个分句，由核心中已有的两种结构读出。“heavily coupled into it”是耦合强度，如（1）。“a highly entangled system”说耦合位于贯穿整体的回路上，所以一个动作的差别所做的会绕回来，没有有限的回应阶确定它：全部条件列出时，一个条件上游没有回路处，有限阶在那里精确（`carriedWithin_exact_of_no_loop`）；上游有被供给、且耦合每步成立的回路处，每一阶都有遗漏（`carriedWithin_lt_of_loop`），二者都在 `Becoming.Loops` 中。“highly”于是是回路上的强度与它们作用的频度；差别是否失控取决于两者，复现耦合的回路不必失控（`Frequency.Sparse.polynomial`，P123）。没有回路的强耦合之链是强耦合的，而不是纠缠的。等同于量子的纠缠仍不采用：二者共有的，即整体不能分为各自计算的部分，是类比。（3）以上面更正的范围保留：在什么也不取、因而创造量的律下，所持的差别不断到达；在第一定律下未表明，而在其余不净给出的有限整体中，水平留在存量之内（`Flow.whole_bounded_of_rest_idle`），所以无界的到达需要从外部带入的量，或被创造的量：这是理论对 Ren 的“we can't compounding forever”的形式。（1）与（2）不变。**改变了什么。** 上面的（4）只以强度读“entangled”；（3）现在有其范围。**会改变它的。** Ren 把“a highly entangled system”只读作强度；一个耦合交缠而 Ren 判为不纠缠的整体。论证在[决定简报](../history/root-foundation/READINGS-PENDING-REN.md#a3-entangled-d39-4-and-the-scope-of-d39-3)中；Ren 的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)）是其来源，不是其根据。上面的原文保留。
+**修订，由 Ren 取（2026-10-18）。** （4）修订。Ren 的这句话有两个分句，由核心中已有的两种结构读出。“heavily coupled into it”是耦合强度，如（1）。“a highly entangled system”说耦合位于贯穿整体的回路上，所以一个动作的差别所做的会绕回来，没有有限的回应阶确定它：全部条件列出时，一个条件上游没有回路处，有限阶在那里精确（`carriedWithin_exact_of_no_loop`）；上游有被供给、且耦合每步成立的回路处，每一阶都有遗漏（`carriedWithin_lt_of_loop`），二者都在 `Becoming.Loops` 中。“highly”于是是回路上的强度与它们作用的频度；差别是否失控取决于两者，复现耦合的回路不必失控（`Frequency.Sparse.polynomial`，P123）。没有回路的强耦合之链是强耦合的，而不是纠缠的。等同于量子的纠缠仍不采用：二者共有的，即整体不能分为各自计算的部分，是类比。（3）以上面更正的范围保留：在什么也不取、因而创造量的律下，所持的差别不断到达；在第一定律下未表明，而在其余不净给出的有限整体中，水平留在存量之内（`Flow.whole_bounded_of_rest_idle`），所以无界的到达需要从外部带入的量，或被创造的量：这是理论对 Ren 的“we can't compounding forever”的形式。（1）与（2）不变。**改变了什么。** 上面的（4）只以强度读“entangled”；（3）现在有其范围。**会改变它的。** 由 Ren 的文本论证、把“a highly entangled system”只读作强度的读法；一个耦合交缠而由工作的论证表明不纠缠的整体。论证在[决定简报](../history/root-foundation/READINGS-PENDING-REN.md#a3-entangled-d39-4-and-the-scope-of-d39-3)中；Ren 的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)）是其来源，不是其根据。上面的原文保留。
 
 **在一个说明中修订（2026-10-19，D45）。** （1）中关于识的一句如 D37 的修订回答：耦合强度度量一个形成耦合入一个水平有多强，是耦合的度量，不是识的。用采用的词汇，（1）中的“识的强弱”读作耦合入的强弱。其余如 2026-10-18 所修订，不变。上面的原文保留。
 
@@ -411,7 +425,7 @@
 
 **决定。** 以确切范围采用：归纳被分解为规律，而不是被保证；对 Ren 的“理”（对结构与变化之规律的建模）的形式读法：一个关于何者无关的模型恰在世界经其所归并者同行之处正确（`goAlike_iff_lumped`）；“理”本身是 Ren 的读法，不在交托之内；识界定所能学的；规律与智慧诸方面的对应；无明读作使寻求锁定在静止时不能达到的目标上的不见，其边界是 B1；明读作识及支持所不标记者；知足与知止读作边界之内的目标（这些是理论对这些用语的形式读法，不是对其经典出处的解释）；劫持；失控；经审查收窄的阈下之识与检验的读法（收窄的读法采用，不是 Ren 先前接受的措辞）。
 **理由。** 定理的读法；审查的收窄保留。
-**会改变它的。** Ren 对这些用语的另一读法；一个实际的学习者，其学习不能由这些读法表示。
+**会改变它的。** 由 Ren 的文本论证的这些用语的另一读法；一个实际的学习者，其学习不能由这些读法表示。
 
 **在一个说明中修订（2026-10-19，D45）。** 这些读法不变，并与命名研究的“识”（选项 (b)，[研究](REGISTRATION-VOCABULARY-STUDY.md#7-decisions-18-october-2026)）及理论第 7 节的读法合为一个结构，用采用的词汇。
 - **识与理。** 识是一个形成自己的进一步进程，即其选择、回应或寻求，经它自己的耦合所作的归并而行。理在形式上是世界经之同行的归并：关于何者无关的模型恰在那里正确（`goAlike_iff_lumped`）；经模型的选择，只在要紧者经其归并同行处，对要紧者正确（`Learning.selects_right_through`）。二者是一个结构的两面：进程所经的归并，以及世界是否经它同行。
@@ -439,7 +453,7 @@
 
 **决定。** 以确切范围采用。够是过程与目标的关系，不只是目标的性质。可能之够：从一个构形的某次运行静止且目标被满足，恰当某个可达构形满足目标且有一步停留（`Enough.possibly_rests_iff`）。确保之够：每次运行都如此，恰当此外每个有停留之步的可达构形都满足目标，且每次运行都安定；后一部分不提目标（`Enough.assured_iff`）。“可能”不读作寻求者所能促成者：它是过程的某一进程所允许者，无论什么决定走哪一进程（在分开之处，是情境，D34）；在其余仍不确定时展开的一部分能确保什么，没有陈述，因为 `Becoming.Enough` 不把一步分为一部分与其余。无明不被扩大：D26 对它的读法关乎目标，即静止时不能达到的目标；因运行不断变化而不能静止，是过程一侧的失败，以其结构命名（D42），不算作无明；无明是 Ren 的用语（§10）。
 **理由。** 定理的读法；不采用的读法会加一个前提（选择进程者）或扩大 Ren 的用语。
-**会改变它的。** Ren 把无明读作包括过程一侧；一步在一部分与其余之间划分时的够的定理。
+**会改变它的。** 由 Ren 的文本论证、把无明读作包括过程一侧的读法；一步在一部分与其余之间划分时的够的定理。
 
 <a id="d42-过程的运行何时安定--when-the-runs-of-a-process-settle"></a>
 ### D42. 过程的运行何时安定
@@ -448,7 +462,7 @@
 
 **决定。** 以确切范围采用。在由一个列表容纳的世界中，某次运行是否不断变化是过程的性质：恰当某个可达的变化可被撤回（`Settling.keeps_changing_iff`）。运行不永远变化，并不给出它们自此安定的一步；这一差距是有限全知原理，两个构形时已然（`Settling.OneWay.never_keeps_changing`、`Settling.OneWay.lpo_of_settles`）。读作：在有限的世界中，过程决定其运行是否不断变化，但知道一次运行不会永远变化，不是知道它何时已停。D34 中有有限多个状态而没有界的学习者，静止于它永远不能确证的一步；这一相似作为形式上的类比采用，不是等同。名称：“安定”指自某步起不变，如 `Becoming.Frequency`；“静止”另加目标被满足。
 **理由。** 定理；强度是精确的（不断变化在过程上，安定在有限全知原理），所以读法不加任何东西。
-**会改变它的。** 在核心接受的前提下的构造性安定定理；Ren 对安定更喜欢的名称。
+**会改变它的。** 在核心接受的前提下的构造性安定定理；更确切地陈述安定的名称。
 
 **以 S3 扩展（2026-10-18，`Becoming.LastChange`，[记录](../../../../theories/becoming/results/records/the-last-change-of-a-run.md)，研究第 178 节）。** 这一相似现在在形式上是精确的：沿由列表容纳、在回路之内没有变化的运行，变化少于 N 次；只要构形可判定，运行不是不安定的；而对由一个列表容纳的世界中每个构形可判定的过程，使从没有可达的可撤回变化的构形出发的每次运行都安定，恰是有限全知原理（`LastChange.not_not_settles`、`LastChange.lpo_iff_settles`）。读作：变化的次数有界，最后一次变化的步不是；知道一次运行不会再变化，是关于其整个未来的问题。在这一原理之下，确保之够在过程上陈述：每个可达的停留满足目标，且没有可达的变化可被撤回（`LastChange.assured_iff_of_lpo`）。以同样的范围采用；由 AI 依 Ren 的同一段话决定。
 
@@ -514,7 +528,7 @@ L1、S1 与 S2 是 D40-D42。
 
 **决定。** “熵”指守恒量中的记录：每次交换都精确守恒时上升者。历史是记录所记的。
 **理由。** Ren 2026-10-11：“pure thermodynamics, at atomic level, each exchange between objects holds the conservation of energy, but entropy still rise. zero premises.”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)）：在每次交换守恒时上升的，恰是记录；两种读法下定理都成立（`Flow.balances_withRecord` 是恒等式）。
-**会改变它的。** Ren 以“熵”指历史本身。
+**会改变它的。** 由 Ren 的文本论证、以“熵”指历史本身的读法。
 
 <a id="8-交换步历史描述与辨识--exchanges-steps-histories-descriptions-and-identification"></a>
 ## 8. 交换、步、历史、描述与辨识
@@ -526,7 +540,7 @@ L1、S1 与 S2 是 D40-D42。
 
 **决定。** 以各记录的范围采用其读法：有限的正规形以原世界的步作交换的名字；最小足迹由给定的闲置判定读出；在次序之内所识的是经关系项或依存相连之交换的次序，给定足迹时规律所需的是相连交换的偏序而不是步的序列，步的索引在变化的次序之外不承载任何东西；列出一次读作同一已定；第一部分中被前提约束的规律是每一步及其关系项的规律，前提是使其条件处处成立的一种方式，加上两条缺失的规律后一步的规律是全部；家族不必固定；对 Ren 的“Fermi's diagrams”读作费曼图（[原话](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)），历史之和的形状是：一段历史的权重由其各步的权重复合，诸选择相加，准确的界是四种损失；计数在判定处存在，复现不需判定，关系项以不可分辨为限计数，名称比关系多给出一个已定的同一；不平衡作为关系项（Ren 2026-10-14 采用）的其余读法。其实际对应仍是经验的。
 **理由。** 定理的读法，不加前提。
-**会改变它的。** Ren 对“Fermi's diagrams”的另一所指；一个要求超出这些读法的实际对应。
+**会改变它的。** 由 Ren 的文本论证的“Fermi's diagrams”的另一所指；一个要求超出这些读法的实际对应。
 
 <a id="d31-传递与约束--transmission-and-binding"></a>
 ### D31. 传递与约束
@@ -535,7 +549,7 @@ L1、S1 与 S2 是 D40-D42。
 
 **决定。** 一、传递读作一个世系处依存怎样形成的规律，不是关于整体的额外假设：采用。二、前提的地图中的 `Transmitting`（每个给予者）不弱化为 `TransmitsFromSome`（某个被支持的给予者）；后者作为较弱的、在其约束处成立的规律已陈述并检查。三、“汲取即依存”不采用为形成的规律（那是一个前提，而该联结只是充分的）；它作为已公开的候选，连同其已检查的推论保留。四、约束保留为每个条件的实例（[whole-law-of-counting](../../../../theories/becoming/results/records/whole-law-of-counting.md)）；更强的约束读法不采用。
 **理由。** Ren 2026-10-11：“stop extending the premise-selection tables. New goal: remove premises and derive the most general versions, zero premises first.”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)）：弱化地图或采用更强的约束都会重开选择表；采用形成的规律会加前提。
-**会改变它的。** Ren 重开前提的地图。
+**会改变它的。** 地图不能安放的前提，或重开前提地图的、由工作的论证。
 
 <a id="d32-历史与分支--histories-and-branching"></a>
 ### D32. 历史与分支
@@ -553,16 +567,16 @@ L1、S1 与 S2 是 D40-D42。
 
 **决定。** 采用为理论的读法（Ren 同意了包含它们的回答，[原话](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）：两个之所以是一对，在于关系；成员从一对中读出；值是语境中的识，一个关系，波与粒子都是向不依语境之值的投影；Ren 推测的“真”是关系的，按情境可推出，不能从一个情境全部说出；不依语境的主张列为表示的承诺。P112 给出奇偶约束的确切规律：不依语境的值恰在没有一组语境矛盾处存在（`ParitySystem.glues_iff`、`ParitySystem.noGlobal_iff`），这一承诺恰在一个可检查的障碍处失效；有矛盾时，不依语境之赋值的每个混合平均至多满足 m 个语境中的 m − 1 个，而按语境索引的读法满足全部 m 个（`ParitySystem.mixture_le`、`ParitySystem.indexed_met`）。相关是一次相遇的记忆；三生万物读作三是整体持有任何部分都不持有之关系的最小数；阴阳读作立着与经过，以及否定的两个状态；庄子的“一与言为二，二与一为三”读作 `Unfolds` 的回归形式；从内部不能一次说出一切。这些是理论的形式读法，不是对经典的解释。
 **理由。** 定理的读法；Ren 对包含它们的回答表示同意；P112 把“不依语境的主张是承诺”变成确切的规律。
-**会改变它的。** Ren 对这些说法的另一读法。
+**会改变它的。** 由 Ren 的文本论证的这些说法的另一读法。
 
 <a id="d34-辨识--identification"></a>
 ### D34. 辨识
 
 所在：第 8 节第二十三项；[identification-where-bounded](../../../../theories/becoming/results/records/identification-where-bounded.md)；Ren 2026-10-15 对这一读法的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)）。
 
-**决定。** “按情境”不读作界。Ren 2026-10-15 回答这一读法时写道“not sure what's the reading 1, but reality is always situational”，这一项由 Ren 自己的话决定，不由交托决定。实在总是情境的；状态数的界 N 不是“情境”的意思，而是情境的有限记录确定所识一切的条件：有界 N 时，长 2N − 1 的记录推出所识的一切（两个之间为 N + N′ − 1，对每一对恰好；这一步对每个学习者最优，界只给出沉默，P83f）；有限多个状态而没有界时，学习者在一个它永远不能确认的步静止；没有有限的状态数时，没有学习者在每个世界上静止。所以 Ren 2026-10-12 的推测“the full truth can be derived situationally”在这些定理所说之处成立，在其外不成立；这里按 Ren 的“please keep note, not follow blindly”记下（同一来源）。确定的世界之外的部分由 [identification-where-runs-part](../../../../theories/becoming/results/records/identification-where-runs-part.md) 与 [typicality-by-counting](../../../../theories/becoming/results/records/typicality-by-counting.md) 陈述：有限的记录确定所识者，限于运行不分开之处，权重只经典型的历程显示；“完整的真按情境可推出”是否带这一限定来读，在 Ren 的回答之后提出，仍属 Ren（§10）；Ren 2026-10-16 说明“the situation makes it true”，并取了 AI 对这一说明的读法（[原话](../../../../sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md)）。有界时类的名读作它的有限的未来，曾以确切范围采用，作为“名可名”的一种精确化的类比，不作为对老子的解释；Ren 2026-10-16 取了同一读法（“take 2”，[原话](../../../../sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md)）：定理是有界时类有有限的名，“名可名”只是类比的回响，不是对文本的主张，所以这一项现在由 Ren 的话决定。
-**理由。** Ren 自己的话；定理的读法，带其确切的界。
-**会改变它的。** Ren 对“situational”的进一步说明。
+**决定。** “按情境”不读作界。Ren 2026-10-15 回答这一读法时写道“not sure what's the reading 1, but reality is always situational”，Ren 的话是这一读法的来源，读法凭下面的定理成立（D45）。实在总是情境的；状态数的界 N 不是“情境”的意思，而是情境的有限记录确定所识一切的条件：有界 N 时，长 2N − 1 的记录推出所识的一切（两个之间为 N + N′ − 1，对每一对恰好；这一步对每个学习者最优，界只给出沉默，P83f）；有限多个状态而没有界时，学习者在一个它永远不能确认的步静止；没有有限的状态数时，没有学习者在每个世界上静止。所以 Ren 2026-10-12 的推测“the full truth can be derived situationally”在这些定理所说之处成立，在其外不成立；这里按 Ren 的“please keep note, not follow blindly”记下（同一来源）。确定的世界之外的部分由 [identification-where-runs-part](../../../../theories/becoming/results/records/identification-where-runs-part.md) 与 [typicality-by-counting](../../../../theories/becoming/results/records/typicality-by-counting.md) 陈述：有限的记录确定所识者，限于运行不分开之处，权重只经典型的历程显示；“完整的真按情境可推出”是否带这一限定来读，在 Ren 的回答之后提出，在一个说明中带这一限定决定（D45）；Ren 2026-10-16 说明“the situation makes it true”，并取了 AI 对这一说明的读法（[原话](../../../../sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md)）。有界时类的名读作它的有限的未来，曾以确切范围采用，作为“名可名”的一种精确化的类比，不作为对老子的解释；Ren 2026-10-16 取了同一读法（“take 2”，[原话](../../../../sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md)）：定理是有界时类有有限的名，“名可名”只是类比的回响，不是对文本的主张，所以读法凭定理成立，Ren 取它是其来源。
+**理由。** 定理的读法，带其确切的界；Ren 的话是其来源。
+**会改变它的。** 由 Ren 的文本论证、本决定未涵盖的“situational”的读法。
 
 <a id="d35-由被支持者支持关闭与打开--support-from-the-supported-closing-and-opening"></a>
 ### D35. 由被支持者支持；关闭与打开
@@ -571,7 +585,7 @@ L1、S1 与 S2 是 D40-D42。
 
 **决定。** 只从被支持者获得支持，读出 Ren 的“it is about if the continuation of becoming continues itself”（2026-10-10）：没有外来的给予时，能形成者只由被支持者所给的打开。关闭需要净汲取、打开需要净给予的形式化采用（Ren 已确认其读法）。
 **理由。** 定理的读法。
-**会改变它的。** Ren 的“continues itself”所指不是支持的来源。
+**会改变它的。** 由 Ren 的文本论证、把“continues itself”读作支持的来源之外者的读法。
 
 <a id="d38-细分的计入与分辨率--counting-the-refinement-and-resolution"></a>
 ### D38. 细分的计入与分辨率
@@ -580,7 +594,7 @@ L1、S1 与 S2 是 D40-D42。
 
 **决定。** 两项读法以确切范围采用。（1）算入细分：量是做出的差别，所以更细的分辨本身是一个生成，须有所给予。这是 Ren 2026-10-11 所给方向的展开（Ren 已确认“the case of 0”读作零前提）；它是读法，不是推出的：`Flow.balancesAt_iff_withRefinement` 是恒等式，不算入细分的规律也照旧陈述。（2）不算入细分时，以步 T 的单位计的总水平是有理量，细化单位即以更细的分辨率表示量；按比例的损失是效率的上界，1/p 是计入变化的尺度；在这一读法下，效率有界时，被围住的任何固定尺度的生成都会停止，在围住之内只能越来越细或越来越接近无损而继续。这只对有理量与离散步陈述，连续时间与实数量仍开放。这些不算入细分的规律照 Ren 的选择保留为研究笔记，本决定不改动这一点。
 **理由。** 两项都在定理的确切范围之内，不加前提：（1）展开 Ren 所给的方向，其零前提的读法 Ren 已确认；（2）是有理量下定理的直接读法。
-**会改变它的。** Ren 把细分读作表示的改变（那就属于 Ren 保留的表示决定，§10），或给出量的另一种读法。
+**会改变它的。** 细分是表示的改变的论证（那就属于 §10 的表示决定），或量的另一种读法。
 
 <a id="9-名称--names"></a>
 ## 9. 名称
@@ -593,7 +607,7 @@ L1、S1 与 S2 是 D40-D42。
 **决定。** 按 Ren 2026-10-12 的规则，“let's adopt these names for now, as long as the proof has the exact meaning”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-12-integrator-and-names.md)），本理论中 AI 拟定的工作名称在陈述有其确切意义处采用：世界、上升与下降、同一交换、世系、传递、选择、开放、所立、被围住，英文的 coming to rest（其中文用语仍属 Ren，§10；静止一族的其余名称 Ren 2026-10-12 已同意），以及计划 §6.5 所列（`Becoming.Continuation`、`Becoming.Standpoints`、`Held`、`Unheld`、`Conveys`、`FedFromBeyond`、`Cut`、`WithinOwn`、`WithinJoint`、`Apart`、`Unclaimed`、`Relayed`、`Exceeding`、`Alone`、`Downstream`、`Mortal`、`Totalizer`、`FedBy`、`not_enough`）与各记录中的工作名称。生起／止息作为 arising／ceasing 的中文采用（AI 的译名，现为理论的用语）。规则照旧：不以 Ren 的用语命名形式部分；名称是形式的、科学的或系统的词，不用范围有限或二元框架的词。
 **仍属 Ren：** Ren 自己的用语，见 §10。
 **理由。** Ren 的规则；名称已在检查过的陈述中使用。
-**会改变它的。** 一个名称的确切意义与其陈述不合；Ren 的改名。
+**会改变它的。** 一个名称的确切意义与其陈述不合；依命名标准的更好的名称。
 
 <a id="10-不在交托之内的--not-within-the-delegation"></a>
 ## 10. 不在交托之内的
@@ -613,7 +627,7 @@ L1、S1 与 S2 是 D40-D42。
 
 **改变的。** 理论的读法：理论、研究与记录称为“AI 的读法，待 Ren”的，按上面采用或不采用；第 8 节“属于 Ren 的选择”一类改为“依 Ren 的交托决定”，并列出仍属 Ren 者；记录中请 Ren 判断这些读法的下一步，以一条成对的、注明日期的说明结束。
 
-**没有改变的。** 任何 Lean 陈述或已检查的定理；任何规律的前提；任何证明的状态。不采用的读法保留其定理。Ren 可以改其中任何一项；改动的是读法，不是数学。
+**没有改变的。** 任何 Lean 陈述或已检查的定理；任何规律的前提；任何证明的状态。不采用的读法保留其定理。更好的论证可以修订其中任何一项；改动的是读法，不是数学。
 
 <a id="12-承接--lineage"></a>
 ## 12. 承接
@@ -684,7 +698,7 @@ L1、S1 与 S2 是 D40-D42。
 
 **理由。** Ren 的回答要一个说明。按他 2026-10-17 的指示，他的话是来源，所以他的用语的读法与任何读法一样决定：他的文本是用语之义的证据，工作是其根据。读法冲突处，修订保留定理更强、与其余更相合的那一个。D 部分以同一标准决定：名称依它在这个说明中的确切意义，结构以接入它，归属依工作板的规则，审查以确切说出它做了什么。
 
-**会改变它的。** 对每项读法，其决定所列的。对这个说明，一项它不能无矛盾地安放的读法，或一条表明它的某个接合有误的定理。Ren 可以对他的任何用语另作说明；那时他的话是进一步修订的来源，由工作论证。
+**会改变它的。** 对每项读法，其决定所列的。对这个说明，一项它不能无矛盾地安放的读法，或一条表明它的某个接合有误的定理。Ren 关于他任何用语的进一步文本，是修订的证据，修订由工作论证。
 
 <a id="d46-多于此刻的取用终于何处--where-a-rising-take-ends"></a>
 ### D46. 多于此刻的取用终于何处

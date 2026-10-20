@@ -1,0 +1,32 @@
+{
+ "anchors": {
+  "frozen": 108,
+  "new": 147,
+  "missing": []
+ },
+ "records": {
+  "frozen": 209,
+  "new": 282,
+  "dropped": [],
+  "nonexistent": []
+ },
+ "lean_names": {
+  "chapter": 1627,
+  "qualified": 31,
+  "record": 768,
+  "unaccounted": [],
+  "frozen": 2426
+ },
+ "existence": {
+  "cited": 1576,
+  "absent_from_lean_sources": []
+ },
+ "open_units": {
+  "frozen_open_units": 69,
+  "with_something_unaccounted": []
+ },
+ "links": {
+  "checked": 1055,
+  "broken": []
+ }
+}

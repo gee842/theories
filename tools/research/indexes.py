@@ -142,7 +142,7 @@ def chapters_index(root: Path = ROOT, generated: set[str] | None = None) -> str:
         rows.append((order[status], name, status, table.get(name, ('', ''))[0] if status != 'canonical' else 'Canonical', note))
     counts = Counter(r[2] for r in rows)
     lines = ['# Chapters of the Theory of Becoming', '', marker('Edit the chapters, the canonical chapter’s section 11 or the move receipts, not this page.'), '',
-             f'The [canonical chapter](THE-THEORY-OF-BECOMING.md) states the theory; its [section 11](THE-THEORY-OF-BECOMING.md#11-既有章节的位置--where-the-earlier-chapters-stand) says where each earlier chapter stands, and the role column below repeats it. The [reading catalogue](../results/README.md) gives each chapter’s argument, significance, scope and next question.', '',
+             f'The [canonical chapter](THE-THEORY-OF-BECOMING.md) states the theory; its [section 11](THE-THEORY-OF-BECOMING.md#11-where-the-earlier-chapters-stand) says where each earlier chapter stands, and the role column below repeats it. The [reading catalogue](../results/README.md) gives each chapter’s argument, significance, scope and next question.', '',
              'Status: **canonical** is the entry that states the theory; **reference** keeps material moved out of a chapter; **kept** is a live chapter kept at its own scope; **generated** is written by `make research-render`; **Chinese edition** is a `NAME.zh.md` split from a bilingual original, not maintained in step with the English file, which governs.', '',
              '## Files in this directory', '',
              ', '.join(f'{counts[k]} {k}' for k in sorted(counts, key=lambda k: order[k])) + '.', '',

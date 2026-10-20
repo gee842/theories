@@ -1047,6 +1047,24 @@
       "plan_entry": "theories/becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md"
     },
     {
+      "old_path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "new_path": "theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md",
+      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad",
+      "blob": "7ca92acf602b8655350e353c1b80c882fe184723",
+      "batch": "R36-chapter",
+      "reason": "R36 (20 October 2026): the canonical chapter as it stood before its restructuring, frozen; the restructured chapter takes the live path, every old anchor kept as an alias (preservation audit in study section 227)",
+      "plan_entry": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+      "new_path": "theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.zh.md",
+      "sha256": "df921ac19f5c6af5224ff939121471d928338e22714baf622d19c1b5e1aa57e3",
+      "blob": "06814a23cc40776067a6b9c47e615f2283163bbf",
+      "batch": "R36-chapter",
+      "reason": "R36 (20 October 2026): the Chinese edition as it stood before the restructuring, frozen; the new Chinese edition mirrors the restructured headings and takes the live path, every old anchor kept",
+      "plan_entry": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+    },
+    {
       "old_path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
       "new_path": "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md",
       "sha256": "7e4cc86816a9b2410725f983de9d01442d64f8b404d316b9332293f298e1dd5b",

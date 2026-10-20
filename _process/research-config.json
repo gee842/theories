@@ -73,7 +73,7 @@
   "open_questions": {
     "programme": [
       {
-        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#81-the-targets",
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#81-open-items-ranked",
         "label": "Section 8.1, open items, ranked"
       },
       {
@@ -99,11 +99,11 @@
     ],
     "pending_ren": [
       {
-        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#83-readings-decided-on-rens-delegation",
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#83-readings-adopted",
         "label": "Section 8.3, readings adopted, each with its argument"
       },
       {
-        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#84-what-stays-rens",
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#84-no-reading-open-texts-that-change-by-proposal",
         "label": "Section 8.4, no reading open; the texts that change only by proposal"
       },
       {
@@ -159,6 +159,7 @@
       "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/": "Assessment documents, checkers and receipts of the 2026-10-05 review, last changed in substance on 9 October 2026 (R35, B6): experiments/agentdojo-evidence-boundary/correction-action/FREEZE.json pins ACTION-CORRECTION-DESIGN, -EVIDENCE and -REVIEW and prepare.py reads DESIGN, nine checkers locate the repository by HERE.parents[3], and five market records cite MARKET-INTERNET-DEGENERATION.md, so the folder keeps its place as declared evidence rather than moving to history.",
       "drafts/2026-09-05-generative-foundations/_v11-build/": "Assembly files of the completed v1.1 whitepaper (6 September 2026), written for the assembled WHITEPAPER-v1.1.md, where their links and #chapter anchors resolve; SOURCES-before.md is a saved copy of sources/SOURCES.md.",
       "drafts/2026-09-05-generative-foundations/_v11-parts/": "Chapter sources of the completed v1.1 whitepaper; _v11-build/assemble.py joins them into WHITEPAPER-v1.1.md, where their links resolve.",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r36-chapter/draft/": "Section sources of the canonical chapter restructured by R36 (20 October 2026): assemble.py and assemble_zh.py join them into theories/becoming/chapters/THE-THEORY-OF-BECOMING(.zh).md, where their links and anchors resolve (study section 227).",
       "drafts/2026-09-05-zhishan-foundation/理论主线与组织立场.md": "A recorded earlier file of the generative-foundations whitepaper: history/v1.0-原版校验.json hashes it and _v11-build/verify_v11.py checks it unchanged.",
       "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/": "Assembly inputs of the completed V7.3 edition: verification/v73-input-manifest.json and source-changes.json hash them, and their links are written for the assembled pages in v7.3/.",
       "experiments/agentdojo-evidence-boundary/correction-action/continuation/development/review/PROTOCOL-REVIEW-01.md": "Protocol review 01 as accepted; protocol-review-01.json hashes it.",

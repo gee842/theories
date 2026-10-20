@@ -352,8 +352,8 @@
     {
       "id": "practical-judgment-under-living-significance",
       "detail": {
-        "zh": "判断的伦理正当性走章节 §6.15 的条件（以那一条公理为条件 G0 是定理），本记录不改变它，也不含伦理谓词。",
-        "en": "The ethical warrant of judgment goes through the condition of chapter section 6.15 (with the one axiom as a condition, G0 is a theorem); this record does not change it and contains no ethical predicate."
+        "zh": "判断的伦理正当性走章节 §6.4 的条件（以那一条公理为条件 G0 是定理），本记录不改变它，也不含伦理谓词。",
+        "en": "The ethical warrant of judgment goes through the condition of chapter section 6.4 (with the one axiom as a condition, G0 is a theorem); this record does not change it and contains no ethical predicate."
       }
     },
     {
@@ -432,7 +432,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad",
+      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1",
       "declarations": []
     },
     {
@@ -909,6 +909,10 @@
     {
       "en": "2026-10-20: 53 bookkeeping notes condensed from 2026-10-13 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/b497065841cb8889/wisdom-root-part-one.json and in git.",
       "zh": "2026-10-20：53 条记账性说明合并（2026-10-13 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/b497065841cb8889/wisdom-root-part-one.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R36 (the chapter, once): the canonical chapter was restructured, its 20 October edition frozen in theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md; this record's citations of the old section numbering re-pointed by content (section 6.15 to 6.4). The claim is unchanged.",
+      "zh": "2026年10月20日，R36（本章只陈述一次）：规范章节重排，10月20日版冻结于 theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md；本记录对旧节号的引用按内容重指（§6.15 改为 §6.4）。论断不变。"
     }
   ],
   "text_versions": [

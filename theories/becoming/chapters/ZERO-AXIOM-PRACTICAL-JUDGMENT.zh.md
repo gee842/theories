@@ -11,7 +11,7 @@
 
 > **2026-10-17 重构：** 先前的状态段落、已撤回或被取代的路线（第2、5–7节），以及各轮的“下一连接”、受阻与完成审计段落，已原文移至[轮次历史](../history/ZERO-AXIOM-PRACTICAL-JUDGMENT-rounds-2026-10-17.md)；每处保留锚点与指引。论证、Lean 结果与 Ren 的纠正仍在本页。
 >
-> **2026-10-16 以来：** 本理论不再断言伦理公理；G0 是条件 `Unrestricted` 下的定理（[正典第6.15节](THE-THEORY-OF-BECOMING.md#615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance)）。本页称 G0 为公理或公开前提之处，读作该条件。
+> **2026-10-16 以来：** 本理论不再断言伦理公理；G0 是条件 `Unrestricted` 下的定理（[正典第6.4节](THE-THEORY-OF-BECOMING.md#64-the-continuation-condition)）。本页称 G0 为公理或公开前提之处，读作该条件。
 
 <a id="1-要建立的内容--what-must-be-established"></a>
 ## 1. 要建立的内容

@@ -24,7 +24,7 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- Endings forced in the witnesses of section 6.7 (Downstream, Mortal, Clearing) by quantifying over activity: there they stay stipulated; here an ending is derived only for a formation living by taking.
+- Endings forced in the witnesses of section 6.3 (Downstream, Mortal, Clearing) by quantifying over activity: there they stay stipulated; here an ending is derived only for a formation living by taking.
 - How taking all that is given forms (through what it gains, a stronger case of the meta-attractor); reserves and delayed renewal; shares beyond the witnesses.
 - Which course is to be taken: the excluding and the sharing course are not ranked, and the extent derived from the first's want does not separate them.
 - **Counterexample:** Excluding.admission_alike: the levels of the excluding course admit the second at every step, and its level path and that of the sharing course include each other, while the second ends from step one; a comparison of level paths by admission does not show an ending through exclusion from taking. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean)
@@ -41,7 +41,7 @@ Canonical source: [Exclusion.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-Endings forced in the witnesses of section 6.7; how taking all that is given forms other than by a rising take; a comparison of courses that shows an ending through exclusion from taking; an independent review.
+Endings forced in the witnesses of section 6.3; how taking all that is given forms other than by a rising take; a comparison of courses that shows an ending through exclusion from taking; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -80,6 +80,7 @@ Aliases: `what taking all that is given excludes`, `取尽所给所排除的`, `
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: THE-THEORY-OF-BECOMING.md. The claim is unchanged.
 - 18 October 2026, C2 (Becoming.Exhaustion): one way taking all that is given forms is stated in where-a-rising-take-ends: a take more than now from a bounded giving, so the next step was narrowed and the record linked. Before: next step "Endings forced in the witnesses of section 6.7; how taking all that is given forms; a comparison of courses that shows an ending through exclusion from taking; an independent review.". The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
+- 20 October 2026, R36 (the chapter, once): the canonical chapter was restructured, its 20 October edition frozen in theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md; this record's citations of the old section numbering re-pointed by content (section 6.7 to 6.3). The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-taking-all-excludes.json).
 
 <a id="earlier-text--早期文本"></a>

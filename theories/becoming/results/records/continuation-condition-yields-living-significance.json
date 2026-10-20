@@ -309,8 +309,8 @@
       "id": "living-significance-on-held-lives",
       "relation": "interpretive",
       "detail": {
-        "zh": "那里 G0 在被持有的生命上恰等于处处 S0 加 N_std（§6.7 的读法：S0 为想要，N_std 为公理）；这里公理更强，给出处处 S0 与 N_std，所以那一读法在这里是推论。",
-        "en": "There G0 on held lives is exactly S0 at every standpoint with N_std (the reading of section 6.7: S0 as wanting, N_std as the axiom); here the axiom is stronger and gives S0 at every standpoint and N_std, so that reading is here a consequence."
+        "zh": "那里 G0 在被持有的生命上恰等于处处 S0 加 N_std（§6.2 的读法：S0 为想要，N_std 为公理）；这里公理更强，给出处处 S0 与 N_std，所以那一读法在这里是推论。",
+        "en": "There G0 on held lives is exactly S0 at every standpoint with N_std (the reading of section 6.2: S0 as wanting, N_std as the axiom); here the axiom is stronger and gives S0 at every standpoint and N_std, so that reading is here a consequence."
       },
       "interface": {
         "output": {
@@ -322,8 +322,8 @@
           "en": "Under the axiom both sides of the equivalence hold."
         },
         "conditions": {
-          "zh": "持有；第 6.7 节的读法是 AI 的，依 Ren 的交托采用（DELEGATED-CHOICES D11）。",
-          "en": "Holding; the reading of section 6.7 is the AI's, adopted on Ren's delegation (DELEGATED-CHOICES D11)."
+          "zh": "持有；第 6.2 节的读法是 AI 的，依 Ren 的交托采用（DELEGATED-CHOICES D11）。",
+          "en": "Holding; the reading of section 6.2 is the AI's, adopted on Ren's delegation (DELEGATED-CHOICES D11)."
         },
         "evidence": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
       }
@@ -707,7 +707,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "292171145506933482fb609f13c3e736d808ba64630ea8575c572d6b8783cdad"
+      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
@@ -1048,6 +1048,10 @@
     {
       "en": "20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (Bridge, GenerativeComparison, PositionedPositiveReason and PositiveGroundUncertainty) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Admission, Becoming.Alternatives, Becoming.Dependence, Becoming.Extension, Becoming.Frame, Becoming.Metaethics, Becoming.Relevance, Becoming.Retaining, Becoming.SecuredContent, Becoming.Significance and Becoming.ValuationFrames). The retired modules' content is also stated in Becoming.PositiveGround, which this record does not cite with declarations. The claim is unchanged.",
       "zh": "20 October 2026, R35 (twentieth review, E8)：对已被取代的外围模块（Bridge, GenerativeComparison, PositionedPositiveReason and PositiveGroundUncertainty）的证明引用改为来源（provenance），保留其声明，删去其绑定；当前证明是本记录仍作为证明引用的模块（Becoming.Admission, Becoming.Alternatives, Becoming.Dependence, Becoming.Extension, Becoming.Frame, Becoming.Metaethics, Becoming.Relevance, Becoming.Retaining, Becoming.SecuredContent, Becoming.Significance and Becoming.ValuationFrames）。退役模块的内容也陈述于 Becoming.PositiveGround，本记录未以声明引用它们。主张不变。"
+    },
+    {
+      "en": "20 October 2026, R36 (the chapter, once): the canonical chapter was restructured, its 20 October edition frozen in theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md; this record's citations of the old section numbering re-pointed by content (section 6.7 to 6.2). The claim is unchanged.",
+      "zh": "2026年10月20日，R36（本章只陈述一次）：规范章节重排，10月20日版冻结于 theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md；本记录对旧节号的引用按内容重指（§6.7 改为 §6.2）。论断不变。"
     }
   ],
   "text_versions": [
