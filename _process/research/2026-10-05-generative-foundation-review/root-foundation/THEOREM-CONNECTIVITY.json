@@ -1,11 +1,11 @@
 {
- "commit": "6638dfc42746e5772b005b44dc9e2105d2de9466",
+ "commit": "0c24d5872c267ad7f5d865892437728db7cf6d79",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261020T104831.571462Z",
+ "core_receipt_at_commit": "20261020T111531.545286Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
- "tracked_modules": 291,
- "constants": 36520,
- "spine_theorems": 11803,
+ "tracked_modules": 292,
+ "constants": 36630,
+ "spine_theorems": 11838,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -28,27 +28,27 @@
  "classes": {
   "statement on both families": 941,
   "statement on Process/Frame/Run/Trace": 2881,
-  "statement on World/Flow/Web": 2690,
+  "statement on World/Flow/Web": 2694,
   "statement on the base only through a law of its own module": 182,
   "proof through a base family": 154,
-  "used by a theorem on the base": 4275,
+  "used by a theorem on the base": 4287,
   "instance on the base recorded": 154,
-  "apart: own vocabulary": 493,
-  "apart: prelude-only statement": 33
+  "apart: own vocabulary": 509,
+  "apart: prelude-only statement": 36
  },
- "apart": 526,
- "apart_general_structure_by_design": 92,
- "apart_otherwise": 434,
+ "apart": 545,
+ "apart_general_structure_by_design": 107,
+ "apart_otherwise": 438,
  "pure_forwarders": {
-  "spine theorems that are pure forwarders": 60,
-  "of them on the base": 52,
+  "spine theorems that are pure forwarders": 61,
+  "of them on the base": 53,
   "their targets, by class": {
    "statement on Process/Frame/Run/Trace": 11,
    "instance on the base recorded": 10,
    "statement on both families": 1,
    "used by a theorem on the base": 22,
    "statement on the base only through a law of its own module": 1,
-   "statement on World/Flow/Web": 5
+   "statement on World/Flow/Web": 6
   }
  },
  "recorded_instances": {
@@ -72,12 +72,12 @@
   "Becoming.Recurrence": 3,
   "Becoming.LeastLoss": 2
  },
- "apart_used_by_nothing": 371,
- "apart_roots": 372,
+ "apart_used_by_nothing": 379,
+ "apart_roots": 380,
  "apart_roots_by_category": {
-  "model-witness": 217,
+  "model-witness": 218,
   "support": 79,
-  "general-structure": 55,
+  "general-structure": 62,
   "logical-strength": 10,
   "restates": 9,
   "calibration": 2
@@ -162,6 +162,10 @@
   "Becoming.HexagramPlaces": [
    20,
    109
+  ],
+  "Becoming.Weightings": [
+   19,
+   35
   ],
   "Becoming.Frontier": [
    18,
@@ -550,19 +554,19 @@
  },
  "rings": {
   "core": {
-   "modules": 275,
-   "theorems": 11057,
-   "apart": 446,
+   "modules": 276,
+   "theorems": 11092,
+   "apart": 465,
    "classes": {
     "statement on both families": 927,
     "statement on Process/Frame/Run/Trace": 2670,
-    "statement on World/Flow/Web": 2665,
+    "statement on World/Flow/Web": 2669,
     "statement on the base only through a law of its own module": 136,
     "proof through a base family": 143,
-    "used by a theorem on the base": 3916,
+    "used by a theorem on the base": 3928,
     "instance on the base recorded": 154,
-    "apart: own vocabulary": 414,
-    "apart: prelude-only statement": 32
+    "apart: own vocabulary": 430,
+    "apart: prelude-only statement": 35
    }
   },
   "instances": {
@@ -651,7 +655,7 @@
  "records_by_best_alias_class": {
   "statement on both families": 67,
   "statement on Process/Frame/Run/Trace": 115,
-  "statement on World/Flow/Web": 68,
+  "statement on World/Flow/Web": 70,
   "statement on the base only through a law of its own module": 1,
   "proof through a base family": 1,
   "used by a theorem on the base": 7,
@@ -8982,6 +8986,41 @@
   "Becoming.presupposition_iff_all_of_invariant": "used by a theorem on the base",
   "Becoming.bounded_invariant_iff": "instance on the base recorded",
   "Becoming.BoundaryWorlds.presupposition_iff_all": "statement on both families",
+  "Becoming.Weighting.term_le": "used by a theorem on the base",
+  "Becoming.Weighting.term_lt": "used by a theorem on the base",
+  "Becoming.Weighting.total_lt": "used by a theorem on the base",
+  "Becoming.Weighting.total_congr_on": "apart: own vocabulary",
+  "Becoming.Weighting.weighed_le_of_includes": "used by a theorem on the base",
+  "Becoming.Weighting.weighed_lt_of_widens": "used by a theorem on the base",
+  "Becoming.Weighting.weighed_eq_of_unweighted": "apart: own vocabulary",
+  "Becoming.Weighting.exceeds_or_includes": "used by a theorem on the base",
+  "Becoming.Weighting.cond_pos": "used by a theorem on the base",
+  "Becoming.Weighting.outweighing_positive": "used by a theorem on the base",
+  "Becoming.Weighting.outweighing_term_le_one": "used by a theorem on the base",
+  "Becoming.Weighting.outweighing_term_at": "used by a theorem on the base",
+  "Becoming.Weighting.outweighs": "used by a theorem on the base",
+  "Becoming.Weighting.mixed_either_way": "apart: own vocabulary",
+  "Becoming.Weighting.widens_iff_every_positive": "used by a theorem on the base",
+  "Becoming.Weighting.cond_mul": "apart: prelude-only statement",
+  "Becoming.Weighting.weighed_const": "apart: own vocabulary",
+  "Becoming.Weighting.mul_lt_mul_pos": "apart: prelude-only statement",
+  "Becoming.Weighting.lt_of_mul_lt": "apart: prelude-only statement",
+  "Becoming.Weighting.neutral_ranks_by_number": "apart: own vocabulary",
+  "Becoming.Web.widens_iff_every_weighting": "statement on World/Flow/Web",
+  "Becoming.Web.not_widens_of_closes": "statement on World/Flow/Web",
+  "Becoming.atCenters_standpointInvariant": "apart: own vocabulary",
+  "Becoming.atCenters_presupposed": "apart: own vocabulary",
+  "Becoming.atCenters_least": "apart: own vocabulary",
+  "Becoming.forced_iff_center": "apart: own vocabulary",
+  "Becoming.unrestricted_atCenters_iff": "apart: own vocabulary",
+  "Becoming.forced_iff_within": "apart: own vocabulary",
+  "Becoming.Web.retains_atCenters_iff": "statement on World/Flow/Web",
+  "Becoming.subTrue_every_iff": "apart: own vocabulary",
+  "Becoming.subTrue_every_of_related": "apart: own vocabulary",
+  "Becoming.Chain.third_related": "apart: own vocabulary",
+  "Becoming.Chain.third_not_within": "apart: own vocabulary",
+  "Becoming.Chain.every_not_related": "apart: own vocabulary",
+  "Becoming.Clearing.centers_retain_yet_loses": "statement on World/Flow/Web",
   "Becoming.upto_or_fails": "used by a theorem on the base",
   "Becoming.Web.revisits_of_bounded": "statement on World/Flow/Web",
   "Becoming.Web.revisits_of_nonrising": "statement on World/Flow/Web",
