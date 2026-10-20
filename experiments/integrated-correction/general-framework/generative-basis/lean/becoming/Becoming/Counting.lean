@@ -1,5 +1,6 @@
 import Becoming.Openness
 import Becoming.Witnesses
+import Becoming.CensusTable
 
 /-!
 # Counting: what the premises add to the laws of counting
@@ -200,23 +201,7 @@ namespace Becoming
 
 variable {α : Type}
 
-/-! ## Lists -/
-
-namespace World
-
-variable {w : World}
-
 /-! ## Counting under the premises -/
-
-/-- `Q` holds of the counts of every census of the world: how many are active at each step,
-how many cease and how many arise across it. -/
-def CountsObey (w : World) [∀ t x, Decidable (w.web.active t x)]
-    (Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop) : Prop :=
-  ∀ alive, w.web.Census alive → Q (fun t => (alive t).length)
-    (fun t => ceasings (alive t) (fun x s => w.web.active s x) t)
-    (fun t => comings (alive (t + 1)) (fun x s => w.web.active s x) t)
-
-end World
 
 namespace Queue
 
@@ -282,6 +267,28 @@ theorem embodiedQueue_premised (n c : Nat → Nat) :
    (still_vacuous _).2.2.1, fun _ _ => mark_pos.symm, ⟨_, Queue.listed⟩,
    (still_vacuous _).2.2.2⟩
 
+/-- **The witnesses of free counting.** Every tally is what the census of a queue counts: with
+nothing standing, depending or flowing, the queue meets every premise but embodiment; standing
+while active, every premise but balance. -/
+theorem counting_free_witnessed :
+    Witnessed (fun w x t => w.web.active t x) (fun _ => True) (fun _ _ _ => True) ∧
+    Witnessed (fun w x t => w.web.active t x) (fun w => w.Dependent ∧ w.Balanced ∧ w.Acting ∧
+      w.Taking ∧ w.Dissipative ∧ w.Transmitting) (fun _ _ _ => True) ∧
+    Witnessed (fun w x t => w.web.active t x) (fun w => w.Dependent ∧ w.Acting ∧ w.Taking ∧
+      w.Dissipative ∧ w.Embodied ∧ w.Transmitting) (fun _ _ _ => True) :=
+  ⟨fun n c _ tally _ => ⟨queue n c, fun x t => queue_decided n c t x, Queue.line n c, trivial,
+     Queue.listed, Queue.counts tally⟩,
+   fun n c _ tally _ => match queue_premised n c with
+    | ⟨dependent, balanced, acting, taking, dissipative, _, transmitting⟩ =>
+      ⟨queue n c, fun x t => queue_decided n c t x, Queue.line n c,
+       ⟨dependent, balanced, acting, taking, dissipative, transmitting⟩, Queue.listed,
+       Queue.counts tally⟩,
+   fun n c _ tally _ => match embodiedQueue_premised n c with
+    | ⟨dependent, acting, taking, dissipative, embodied, _, transmitting⟩ =>
+      ⟨embodiedQueue n c, fun x t => embodiedQueue_decided n c t x, Queue.line n c,
+       ⟨dependent, acting, taking, dissipative, embodied, transmitting⟩, Queue.listed,
+       Queue.counts tally⟩⟩
+
 /-- The premises leave counting free. A property of the counts holds of every tally exactly
 when it holds of the census of every world; and already when it holds of the census of
 every world meeting every premise but embodiment, or of every world meeting every premise
@@ -296,21 +303,14 @@ theorem counting_free {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) →
     ((∀ n c a, Tally n c a → Q n c a) ↔
       ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Dependent → w.Acting →
         w.Taking → w.Dissipative → w.Embodied → w.Transmitting → w.CountsObey Q) :=
-  have every : (∀ n c a, Tally n c a → Q n c a) →
-      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.CountsObey Q :=
-    fun law w _ alive census => (counting_laws pointwise).mpr law w.Relatum _ alive census
-  ⟨⟨every, fun law n c _ tally => pointwise (fun t => Queue.counts tally t)
-      (law (queue n c) _ Queue.listed)⟩,
-   ⟨fun law w _ _ _ _ _ _ _ => every law w, fun law n c _ tally =>
-      match queue_premised n c with
-      | ⟨dependent, balanced, acting, taking, dissipative, _, transmitting⟩ =>
-        pointwise (fun t => Queue.counts tally t) (law (queue n c) dependent balanced acting
-          taking dissipative transmitting _ Queue.listed)⟩,
-   ⟨fun law w _ _ _ _ _ _ _ => every law w, fun law n c _ tally =>
-      match embodiedQueue_premised n c with
-      | ⟨dependent, acting, taking, dissipative, embodied, _, transmitting⟩ =>
-        pointwise (fun t => Queue.counts tally t) (law (embodiedQueue n c) dependent acting
-          taking dissipative embodied transmitting _ Queue.listed)⟩⟩
+  ⟨(census_table_obeys_free pointwise counting_free_witnessed.1).trans
+      ⟨fun law w _ => law w trivial, fun law w _ _ => law w⟩,
+   (census_table_obeys_free pointwise counting_free_witnessed.2.1).trans
+      ⟨fun law w _ d b ac tk ds tr => law w ⟨d, b, ac, tk, ds, tr⟩,
+       fun law w _ ⟨d, b, ac, tk, ds, tr⟩ => law w d b ac tk ds tr⟩,
+   (census_table_obeys_free pointwise counting_free_witnessed.2.2).trans
+      ⟨fun law w _ d ac tk ds e tr => law w ⟨d, ac, tk, ds, e, tr⟩,
+       fun law w _ ⟨d, ac, tk, ds, e, tr⟩ => law w d ac tk ds e tr⟩⟩
 
 /-- Together, balance and embodiment bind the counts. Where the flow balances, only active
 relata give and whatever arises is embodied, what arises is given by a relatum active at
@@ -339,6 +339,50 @@ theorem counting_binds_jointly :
         (Queue.comings_eq Queue.lone_tally 0).symm)))
       (Nat.le_of_eq (Queue.counts Queue.lone_tally 0).1))⟩
 
+
+/-- Where the flow balances, only active relata give and whatever arises is embodied, under a
+census something coming to be across a step needs something active at it. -/
+theorem active_of_coming_jointly {w : World} (balanced : w.Balanced) (acting : w.Acting)
+    (embodied : w.ArisingEmbodied) {alive : Nat → List w.Relatum} (census : w.web.Census alive)
+    {t : Nat} {x : w.Relatum} (comes : ComesToBe (fun s => w.web.active s x) t) :
+    0 < (alive t).length :=
+  match Web.Embodied.arises_given balanced acting (embodied t x comes) comes with
+  | ⟨f, active, _⟩ => Nat.lt_of_lt_of_le (total_pos_of_mem (((census t).2 f).mp active)
+      Nat.zero_lt_one) (Nat.le_of_eq (total_ones (alive t)))
+
+/-- Where the flow balances, only active relata take and only from what they draw on, the flow
+dissipates and every relatum is embodied, under a census something coming to be across a step
+needs something active at it, whoever gives. -/
+theorem active_of_coming_taking {w : World} (balanced : w.Balanced) (taking : w.Taking)
+    (dissipative : w.Dissipative) (embodied : w.Embodied) {alive : Nat → List w.Relatum}
+    (census : w.web.Census alive) {t : Nat} {x : w.Relatum} (listed : x ∈ alive (t + 1))
+    (comes : ComesToBe (fun s => w.web.active s x) t) : 0 < (alive t).length :=
+  match Nat.eq_zero_or_pos (alive t).length with
+  | .inr pos => pos
+  | .inl empty =>
+    have idle : ∀ f, ¬ w.web.active t f := fun f active =>
+      Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (Nat.lt_of_lt_of_le
+        (total_pos_of_mem (((census t).2 f).mp active) Nat.zero_lt_one)
+        (Nat.le_of_eq (total_ones (alive t)))) (Nat.le_of_eq empty))
+    have untaken : ∀ f c, f ∈ w.flow.present t → w.flow.take t f c = 0 :=
+      fun f c present => eq_zero_of_not_pos fun takes => idle f (taking t f c present takes).1
+    have flows : ∀ c, w.web.level (t + 1) c = w.flow.given t c := fun c =>
+      (congrArg (w.web.level (t + 1) c + ·)
+          ((total_congr_on (g := fun _ => 0) fun f present => untaken f c present).trans
+            (total_zero _)).symm).trans
+        ((balanced t c).trans ((congrArg (· + w.flow.given t c)
+          (eq_zero_of_not_pos fun stands => idle c ((embodied c t).mpr stands))).trans
+          (Nat.zero_add _)))
+    have closed : w.flow.ClosedAt (alive (t + 1)) t := fun f present c outside =>
+      ⟨untaken f c present, eq_zero_of_not_pos fun gives => outside
+        (((census (t + 1)).2 c).mp ((embodied c (t + 1)).mpr (Nat.lt_of_lt_of_le
+          (Nat.lt_of_lt_of_le gives (le_total_of_mem (q := fun g => w.flow.give t g c)
+            present)) (Nat.le_of_eq (flows c).symm))))⟩
+    False.elim ((dissipative _ t (census (t + 1)).1 closed).still_untaken (balanced.on _ t)
+      (fun c _ => (total_congr_on (g := fun _ => 0) fun f present =>
+        untaken f c present).trans (total_zero _))
+      ⟨x, listed, Nat.lt_of_le_of_lt (Nat.le_of_eq (eq_zero_of_not_pos fun stands =>
+        idle x ((embodied x t).mpr stands))) ((embodied x (t + 1)).mp comes.2)⟩)
 
 end World
 
@@ -493,6 +537,26 @@ theorem openQueue_premised {n c a : Nat → Nat} (tally : Tally n c a)
                 (OpenQueue.front.mp holds) (Nat.le_of_eq empty))).trans (total_zero cs)))
       embodied counted transmitting
 
+/-- **The binding step under the eight premises, for every counted census**: nothing arises
+across a step at which nothing is active (`active_of_coming_jointly`). -/
+theorem premised_counting_sound (w : World) (premised : w.Premised) :
+    w.CountsHold fun n _ a => ∀ t, 0 < a t → 0 < n t :=
+  fun _ _ _ _ census counted t arising => match counted t with
+    | ⟨length, _, came⟩ => match came.exists_of_pos arising with
+      | ⟨_, _, comes⟩ => Nat.lt_of_lt_of_le (active_of_coming_jointly
+          (premised _ (.tail _ (.head _))) (premised _ (.tail _ (.tail _ (.head _))))
+          (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
+            (.head _))))))))
+          census comes) (Nat.le_of_eq length.symm)
+
+/-- **The witness under the eight premises**: every tally in which nothing arises across a step at
+which nothing is active is what the census of an open queue counts. -/
+theorem premised_counting_witnessed :
+    Witnessed (fun w x t => w.web.active t x) (·.Premised)
+      fun n _ a => ∀ t, 0 < a t → 0 < n t :=
+  fun n c _ tally company => ⟨openQueue n c, fun x t => openQueue_decided n c t x, _,
+    openQueue_premised tally company, openQueue_census n c, openQueue_counts tally⟩
+
 /-- Under all eight premises the laws of counting are the tally and that nothing arises
 across a step at which nothing is active: a property of the counts holds of every census of
 every world meeting the eight exactly when it holds of every tally in which something arises
@@ -501,15 +565,7 @@ theorem premised_counting {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat)
     (pointwise : Pointwise Q) :
     (∀ n c a, Tally n c a → (∀ t, 0 < a t → 0 < n t) → Q n c a) ↔
       ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Premised → w.CountsObey Q :=
-  ⟨fun law w _ premised alive census =>
-    law _ _ _ census.tally (counting_binds_jointly.1 w (premised _ (.tail _ (.head _)))
-      (premised _ (.tail _ (.tail _ (.head _))))
-      (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
-        (.head _))))))))
-      alive census),
-   fun law n c _ tally company => pointwise (openQueue_counts tally)
-      (law (openQueue n c) (openQueue_premised tally company) _
-        (openQueue_census n c))⟩
+  census_table_obeys pointwise premised_counting_sound premised_counting_witnessed
 
 /-- In an open queue dissipation, activity needing support and bounded transmission hold
 vacuously. Nothing taking part takes from a closed family: where something is taken the
@@ -734,6 +790,47 @@ theorem drivenQueue_meets (n c : Nat → Nat) {S : Premise → Bool} (giving : S
     | .counted, _ => counted
     | .transmitting, _ => transmitting
 
+/-- **The binding steps, for every counted census.** Under a selection binding counting, the
+counts of every census, counts as relations with no decision procedure, have nothing arising
+across a step at which nothing is active (`active_of_coming_jointly`,
+`active_of_coming_taking`). -/
+theorem counting_under_sound (S : Premise → Bool) (w : World) (meets : w.Meets S) :
+    w.CountsHold fun n _ a => BindsCounting S → ∀ t, 0 < a t → 0 < n t :=
+  fun _ _ _ _ census counted ⟨balanced, embodied, giving⟩ t arising => match counted t with
+    | ⟨length, _, came⟩ => match came.exists_of_pos arising with
+      | ⟨_, listed, comes⟩ => Nat.lt_of_lt_of_le (match giving with
+        | .inl acting => active_of_coming_jointly (meets _ balanced) (meets _ acting)
+            (Embodied.arising (meets _ embodied)) census comes
+        | .inr ⟨taking, dissipative⟩ => active_of_coming_taking (meets _ balanced)
+            (meets _ taking) (meets _ dissipative) (meets _ embodied) census listed comes)
+        (Nat.le_of_eq length.symm)
+
+/-- **The witnesses under each selection.** Every tally, with nothing arising across a step at
+which nothing is active where the selection binds counting, is what the census of a queue meeting
+the selection counts: standing while active where balance is not selected, with nothing standing
+where embodiment is not, open where only active relata giving, or only active relata taking with
+dissipation, is selected, driven by a ground relatum where neither giving nor taking is, and open
+where taking is selected without dissipation. -/
+theorem counting_under_witnessed (S : Premise → Bool) :
+    Witnessed (fun w x t => w.web.active t x) (·.Meets S)
+      fun n _ a => BindsCounting S → ∀ t, 0 < a t → 0 < n t :=
+  fun n c _ tally quiet => match hb : S .balanced, he : S .embodied with
+    | false, _ => ⟨embodiedQueue n c, fun x t => embodiedQueue_decided n c t x, Queue.line n c,
+        embodiedQueue_meets n c hb, Queue.listed, Queue.counts tally⟩
+    | true, false => ⟨queue n c, fun x t => queue_decided n c t x, Queue.line n c,
+        queue_meets n c he, Queue.listed, Queue.counts tally⟩
+    | true, true => match ha : S .acting, ht : S .taking, hd : S .dissipative with
+      | true, _, _ => ⟨openQueue n c, fun x t => openQueue_decided n c t x, _,
+          (openQueue_premised tally (quiet ⟨hb, he, .inl ha⟩)).meets S, openQueue_census n c,
+          openQueue_counts tally⟩
+      | false, true, true => ⟨openQueue n c, fun x t => openQueue_decided n c t x, _,
+          (openQueue_premised tally (quiet ⟨hb, he, .inr ⟨ht, hd⟩⟩)).meets S,
+          openQueue_census n c, openQueue_counts tally⟩
+      | false, false, _ => ⟨drivenQueue n c, fun x t => drivenQueue_decided n c t x, _,
+          drivenQueue_meets n c ha ht, openQueue_census n c, openQueue_counts tally⟩
+      | false, true, false => ⟨openQueue n c, fun x t => openQueue_decided n c t x, _,
+          openQueue_meets n c ha hd, openQueue_census n c, openQueue_counts tally⟩
+
 /-- The laws of counting under each selection of the premises. A property of the counts
 holds of every census of every world meeting the selection exactly when it holds of every
 tally, and, where the selection binds counting, of every tally in which nothing arises across
@@ -745,29 +842,7 @@ theorem counting_under (S : Premise → Bool)
     {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q) :
     (∀ n c a, Tally n c a → (BindsCounting S → ∀ t, 0 < a t → 0 < n t) → Q n c a) ↔
       ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Meets S → w.CountsObey Q :=
-  ⟨fun law w _ meets alive census => law _ _ _ census.tally fun ⟨balanced, embodied, giving⟩ =>
-    match giving with
-    | .inl acting => counting_binds_jointly.1 w (meets _ balanced) (meets _ acting)
-        (Embodied.arising (meets _ embodied)) alive census
-    | .inr ⟨taking, dissipative⟩ => taking_binds_counting w (meets _ balanced)
-        (meets _ taking) (meets _ dissipative) (meets _ embodied) alive census,
-   fun law n c _ tally quiet =>
-    match hb : S .balanced, he : S .embodied with
-    | false, _ => pointwise (fun t => Queue.counts tally t)
-        (law (embodiedQueue n c) (embodiedQueue_meets n c hb) _ Queue.listed)
-    | true, false => pointwise (fun t => Queue.counts tally t)
-        (law (queue n c) (queue_meets n c he) _ Queue.listed)
-    | true, true => match ha : S .acting, ht : S .taking, hd : S .dissipative with
-      | true, _, _ => pointwise (openQueue_counts tally) (law (openQueue n c)
-          ((openQueue_premised tally (quiet ⟨hb, he, .inl ha⟩)).meets S) _
-          (openQueue_census n c))
-      | false, true, true => pointwise (openQueue_counts tally) (law (openQueue n c)
-          ((openQueue_premised tally (quiet ⟨hb, he, .inr ⟨ht, hd⟩⟩)).meets S) _
-          (openQueue_census n c))
-      | false, false, _ => pointwise (openQueue_counts tally) (law (drivenQueue n c)
-          (drivenQueue_meets n c ha ht) _ (openQueue_census n c))
-      | false, true, false => pointwise (openQueue_counts tally) (law (openQueue n c)
-          (openQueue_meets n c ha hd) _ (openQueue_census n c))⟩
+  census_table_obeys pointwise (counting_under_sound S) (counting_under_witnessed S)
 
 /-- Nothing arising across a step at which nothing is active is a law of counting under a
 selection exactly when the selection binds counting. -/

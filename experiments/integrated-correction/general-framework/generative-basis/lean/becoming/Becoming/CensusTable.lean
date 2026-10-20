@@ -1,0 +1,245 @@
+import Becoming.Decidedness
+
+/-!
+# Census tables: what a class of worlds adds to the law of counting, for any listing
+
+`Becoming.Population` shows that the tally is the whole law of counting: a property of the
+counts of a listing holds wherever what holds is listed exactly when it holds of every tally
+(`counting_laws`). The modules that follow ask what a class of worlds adds to that law: the
+worlds meeting a selection of the premises, those enclosed from some step on, the finite ones,
+those where the premises bind (`Becoming.Counting`), for each listing a world has: what is
+active, what stands, what depends (`Becoming.Standing`). Every one of their laws has one shape,
+stated here once for any class of worlds and any listing a world has, a determination
+`L w : X w → Nat → Prop` of what is listed in the world `w`.
+
+* **The counts of a listing.** `n`, `c` and `a` count a listed family where `n` is its length at
+  each step, `c` counts what of it ceases across the step and `a` what after it came to be,
+  counts as relations with no decision procedure (`FamilyCounts`); they are a tally
+  (`FamilyCounts.tally`), and where a procedure decides they are its marks
+  (`familyCounts_decided`). A property holds of a listing of a world where it holds of every
+  listed family and every counts of it (`World.ListingHolds`), and of the marks of every listed
+  family where a procedure decides (`World.ListingObeys`).
+* **A census table.** A class of worlds and a condition on the counts form a table where every
+  listed family of every world of the class has counts meeting the condition (soundness, stated
+  for counts as relations) and every tally meeting the condition is the marks of some listed
+  family of some world of the class with a decision procedure (`World.Witnessed`). Then a
+  property of the counts holds of every listing of every world of the class exactly when it holds
+  of every tally meeting the condition: for every property, with counts as relations
+  (`World.table_holds`), and for every pointwise property, with the marks a procedure gives
+  (`World.table_obeys`). So the decided form of each law of counting is a corollary of the
+  counted soundness and the same witness, and needs no proof of its own; the condition `True`
+  gives the laws with no added condition (`World.table_holds_free`, `World.table_obeys_free`).
+* **The census of activity** is the listing `fun w x t => w.web.active t x`: `World.CountsObey`,
+  `World.CountsOf` and `World.CountsHold` are its forms (stated here, and read by
+  `Becoming.Counting` and `Becoming.CensusCounts`).
+
+No premise beyond what each theorem names. No ethical predicate, ranking or axiom occurs.
+-/
+
+namespace Becoming
+
+variable {α : Type}
+
+/-- Two numbers balancing across a step, the ceased among those before it, are a tally there. -/
+theorem tally_step {n n' c a : Nat} (le : c ≤ n) (across : n' + c = n + a) :
+    ∃ k, n = k + c ∧ n' = k + a :=
+  match exists_add_of_le le with
+  | ⟨k, before⟩ =>
+    ⟨k, before, add_right_cancel c (across.trans
+      ((congrArg (· + a) before).trans (Nat.add_right_comm k c a)))⟩
+
+/-- What a listed family counts across each step, as relations: `n` counts what holds at each
+step, `c` what of it ceases across the step, `a` what holds after the step and came to be across
+it. -/
+def FamilyCounts (p : α → Nat → Prop) (l : Nat → List α) (n c a : Nat → Nat) : Prop :=
+  ∀ t, n t = (l t).length ∧ Counts (l t) (fun x => CeasesToBe (p x) t) (c t) ∧
+    Counts (l (t + 1)) (fun x => ComesToBe (p x) t) (a t)
+
+/-- **The counts of a listed family are a tally**, with no decidedness. -/
+theorem FamilyCounts.tally {p : α → Nat → Prop} {l : Nat → List α} {n c a : Nat → Nat}
+    (listed : Listed p l) (counted : FamilyCounts p l n c a) : Tally n c a := fun t =>
+  match counted t, counted (t + 1) with
+  | ⟨length, ceased, came⟩, ⟨length', _, _⟩ =>
+    have across : (l (t + 1)).length + c t = (l t).length + a t :=
+      Counts.listed_across (p := p) (listed t) (listed (t + 1)) ceased came
+    match tally_step (Nat.le_trans ceased.le_length (Nat.le_of_eq length.symm))
+      ((congrArg (· + c t) length').trans (across.trans (congrArg (· + a t) length.symm))) with
+    | ⟨k, before, after⟩ => ⟨k, before, after⟩
+
+/-- Where a procedure decides, its marks are the counts of a listed family. -/
+theorem familyCounts_decided {p : α → Nat → Prop} [∀ x t, Decidable (p x t)] (l : Nat → List α) :
+    FamilyCounts p l (fun t => (l t).length) (fun t => ceasings (l t) p t)
+      (fun t => comings (l (t + 1)) p t) :=
+  fun _ => ⟨rfl, counts_total _, counts_total _⟩
+
+/-- Counts given by values agreeing with them at each step are counts. -/
+theorem FamilyCounts.of_eq {p : α → Nat → Prop} {l : Nat → List α} {n c a n' c' a' : Nat → Nat}
+    (counted : FamilyCounts p l n c a) (same : ∀ t, n t = n' t ∧ c t = c' t ∧ a t = a' t) :
+    FamilyCounts p l n' c' a' := fun t =>
+  match counted t, same t with
+  | ⟨length, ceased, came⟩, ⟨sameN, sameC, sameA⟩ =>
+    ⟨sameN.symm.trans length, sameC ▸ ceased, sameA ▸ came⟩
+
+namespace World
+
+/-! ## A census table, for any listing -/
+
+section Table
+
+variable {X : World → Type} (L : (w : World) → X w → Nat → Prop)
+
+/-- `Q` holds of every listed family of the world `w` and every counts of it. -/
+def ListingHolds (w : World) (Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop) : Prop :=
+  ∀ l n c a, Listed (L w) l → FamilyCounts (L w) l n c a → Q n c a
+
+/-- `Q` holds of the marks of every listed family of the world `w`, where a procedure decides
+what is listed. -/
+def ListingObeys (w : World) [∀ x t, Decidable (L w x t)]
+    (Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop) : Prop :=
+  ∀ l, Listed (L w) l → Q (fun t => (l t).length) (fun t => ceasings (l t) (L w) t)
+    (fun t => comings (l (t + 1)) (L w) t)
+
+/-- Every tally meeting `C` is the marks of a listed family of some world of the class, with a
+procedure deciding what is listed there. -/
+def Witnessed (Class : World → Prop) (C : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop) :
+    Prop :=
+  ∀ n c a, Tally n c a → C n c a → ∃ (w : World) (_ : ∀ x t, Decidable (L w x t))
+    (l : Nat → List (X w)), Class w ∧ Listed (L w) l ∧
+      ∀ t, (l t).length = n t ∧ ceasings (l t) (L w) t = c t ∧ comings (l (t + 1)) (L w) t = a t
+
+variable {L} {Class : World → Prop} {C Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
+
+/-- **A census table, with counts as relations.** Where every listed family of every world of the
+class has counts meeting `C`, and every tally meeting `C` is witnessed in the class, a property
+holds of every listing of every world of the class exactly when it holds of every tally meeting
+`C`: for every property, with no decidedness. -/
+theorem table_holds (sound : ∀ w, Class w → w.ListingHolds L C)
+    (witnessed : Witnessed L Class C) :
+    (∀ n c a, Tally n c a → C n c a → Q n c a) ↔ ∀ w, Class w → w.ListingHolds L Q :=
+  ⟨fun law w within l n c a listed counted =>
+    law n c a (counted.tally listed) (sound w within l n c a listed counted),
+   fun law n c a tally condition => match witnessed n c a tally condition with
+    | ⟨w, _, l, within, listed, same⟩ =>
+      law w within l n c a listed ((familyCounts_decided l).of_eq same)⟩
+
+/-- **A census table, with the marks a procedure gives.** The same table gives the law for every
+pointwise property of the marks: the decided form is a corollary of the counted soundness and the
+same witness. -/
+theorem table_obeys (pointwise : Pointwise Q) (sound : ∀ w, Class w → w.ListingHolds L C)
+    (witnessed : Witnessed L Class C) :
+    (∀ n c a, Tally n c a → C n c a → Q n c a) ↔
+      ∀ (w : World) [∀ x t, Decidable (L w x t)], Class w → w.ListingObeys L Q :=
+  ⟨fun law w _ within l listed => law _ _ _ ((familyCounts_decided l).tally listed)
+    (sound w within l _ _ _ listed (familyCounts_decided l)),
+   fun law n c a tally condition => match witnessed n c a tally condition with
+    | ⟨w, _, l, within, listed, same⟩ => pointwise same (law w within l listed)⟩
+
+/-- The table with no added condition: a property holds of every listing of every world of the
+class exactly when it holds of every tally, where every tally is witnessed in the class. -/
+theorem table_holds_free (witnessed : Witnessed L Class fun _ _ _ => True) :
+    (∀ n c a, Tally n c a → Q n c a) ↔ ∀ w, Class w → w.ListingHolds L Q :=
+  have table := table_holds (Q := Q) (fun _ _ _ _ _ _ _ _ => trivial) witnessed
+  ⟨fun law => table.mp fun n c a tally _ => law n c a tally,
+   fun law n c a tally => table.mpr law n c a tally trivial⟩
+
+/-- So for the marks a procedure gives, for every pointwise property. -/
+theorem table_obeys_free (pointwise : Pointwise Q) (witnessed : Witnessed L Class fun _ _ _ => True) :
+    (∀ n c a, Tally n c a → Q n c a) ↔
+      ∀ (w : World) [∀ x t, Decidable (L w x t)], Class w → w.ListingObeys L Q :=
+  have table := table_obeys pointwise (fun _ _ _ _ _ _ _ _ => trivial) witnessed
+  ⟨fun law => table.mp fun n c a tally _ => law n c a tally,
+   fun law n c a tally => table.mpr law n c a tally trivial⟩
+
+end Table
+
+/-! ## The census of activity -/
+
+variable {w : World}
+
+/-- `Q` holds of the counts of every census of the world: how many are active at each step,
+how many cease and how many arise across it. -/
+def CountsObey (w : World) [∀ t x, Decidable (w.web.active t x)]
+    (Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop) : Prop :=
+  ∀ alive, w.web.Census alive → Q (fun t => (alive t).length)
+    (fun t => ceasings (alive t) (fun x s => w.web.active s x) t)
+    (fun t => comings (alive (t + 1)) (fun x s => w.web.active s x) t)
+
+/-- `n`, `c` and `a` count the census `alive`: how many are active at each step, how many of
+them cease across it, and how many active after it came to be across it; counts as relations,
+with no decision procedure. -/
+abbrev CountsOf (w : World) (alive : Nat → List w.Relatum) (n c a : Nat → Nat) : Prop :=
+  Becoming.FamilyCounts (fun x s => w.web.active s x) alive n c a
+
+/-- `Q` holds of every census of the world and every counts of it. -/
+def CountsHold (w : World) (Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop) : Prop :=
+  ∀ alive n c a, w.web.Census alive → w.CountsOf alive n c a → Q n c a
+
+/-- **The counts of a census are a tally**, with no decidedness. -/
+theorem CountsOf.tally {alive : Nat → List w.Relatum} {n c a : Nat → Nat}
+    (census : w.web.Census alive) (counted : w.CountsOf alive n c a) : Tally n c a :=
+  Becoming.FamilyCounts.tally census counted
+
+/-- Where a procedure decides activity, its marks count every census. -/
+theorem countsOf_decided [∀ t x, Decidable (w.web.active t x)] (alive : Nat → List w.Relatum) :
+    w.CountsOf alive (fun t => (alive t).length)
+      (fun t => ceasings (alive t) (fun x s => w.web.active s x) t)
+      (fun t => comings (alive (t + 1)) (fun x s => w.web.active s x) t) :=
+  familyCounts_decided alive
+
+/-- What holds of every counted census holds of the census counts a procedure gives. -/
+theorem CountsHold.obey [∀ t x, Decidable (w.web.active t x)]
+    {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (holds : w.CountsHold Q) :
+    w.CountsObey Q :=
+  fun alive census => holds alive _ _ _ census (countsOf_decided alive)
+
+/-- For a pointwise property, what holds of the census counts a procedure gives holds of every
+counted census. -/
+theorem countsHold_of_obey [∀ t x, Decidable (w.web.active t x)]
+    {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q)
+    (obeys : w.CountsObey Q) : w.CountsHold Q :=
+  fun alive _ _ _ census counted => pointwise (fun t =>
+    match counted t, countsOf_decided (w := w) alive t with
+    | ⟨length, ceased, came⟩, ⟨_, ceased', came'⟩ =>
+      ⟨length.symm, ceased'.unique ceased, came'.unique came⟩) (obeys alive census)
+
+/-- The table for the census of activity, with counts as relations (`table_holds`). -/
+theorem census_table_holds {Class : World → Prop} {C Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
+    (sound : ∀ w, Class w → w.CountsHold C)
+    (witnessed : Witnessed (fun w x t => w.web.active t x) Class C) :
+    (∀ n c a, Tally n c a → C n c a → Q n c a) ↔ ∀ w, Class w → w.CountsHold Q :=
+  table_holds sound witnessed
+
+/-- The table for the census of activity, with the marks a procedure gives (`table_obeys`). -/
+theorem census_table_obeys {Class : World → Prop}
+    {C Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q)
+    (sound : ∀ w, Class w → w.CountsHold C)
+    (witnessed : Witnessed (fun w x t => w.web.active t x) Class C) :
+    (∀ n c a, Tally n c a → C n c a → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], Class w → w.CountsObey Q :=
+  have table := table_obeys pointwise sound witnessed
+  ⟨fun law w inst within =>
+    have obeys := table.mp law
+    @obeys w (fun x t => inst t x) within,
+   fun law => table.mpr fun w inst within => @law w (fun t x => inst x t) within⟩
+
+/-- The table for the census of activity with no added condition, counts as relations. -/
+theorem census_table_holds_free {Class : World → Prop}
+    {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
+    (witnessed : Witnessed (fun w x t => w.web.active t x) Class fun _ _ _ => True) :
+    (∀ n c a, Tally n c a → Q n c a) ↔ ∀ w, Class w → w.CountsHold Q :=
+  table_holds_free witnessed
+
+/-- The table for the census of activity with no added condition, with the marks a procedure
+gives. -/
+theorem census_table_obeys_free {Class : World → Prop}
+    {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q)
+    (witnessed : Witnessed (fun w x t => w.web.active t x) Class fun _ _ _ => True) :
+    (∀ n c a, Tally n c a → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], Class w → w.CountsObey Q :=
+  have table := census_table_obeys (Q := Q) pointwise (fun _ _ _ _ _ _ _ _ => trivial) witnessed
+  ⟨fun law => table.mp fun n c a tally _ => law n c a tally,
+   fun law n c a tally => table.mpr law n c a tally trivial⟩
+
+end World
+
+end Becoming
