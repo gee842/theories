@@ -1,7 +1,7 @@
 {
- "commit": "843c3bafb614d1dea9066251647d0874d879a781",
+ "commit": "5e4825932cfd5f87c7a40b8f172a62f78174881c",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261020T051144.879480Z",
+ "core_receipt_at_commit": "20261020T060542.295041Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
  "tracked_modules": 284,
  "constants": 35648,
