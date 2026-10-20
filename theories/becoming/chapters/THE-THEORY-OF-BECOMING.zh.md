@@ -758,6 +758,7 @@
 | [读作扩大的比较 C](../results/records/comparison-by-widening.md) | 不加前提的定理 | — | §6.1 |
 | [比较内容的关系保真：最低所需、分组与真实损失](../results/records/comparison-content-under-regrouping.md) | 不加前提的定理 | — | §6.1 |
 | [一个部分的四种情形](../results/records/four-cases-of-a-part.md) | 不加前提的定理 | — | §6.1 |
+| [余量之内的自身扩大](../results/records/own-widening-within-the-margin.md) | 有所述前提的定理 | 平衡；部分及其自身区域可判定 | §7.2 |
 | [区域之外的损失](../results/records/loss-beyond-a-region.md) | 不加前提的定理 | — | §6.1 |
 | [开放形态下的规则修订与实际生成](../results/records/open-form-realization-under-revision.md) | 定理，条件在其假设中 | 生命意义、条件（一个实例） | §6.1 |
 | [所表示的边界与实际依存](../results/records/represented-boundary-against-dependence.md) | 不加前提的定理 | — | §6.1 |
@@ -886,16 +887,16 @@
 
 所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）17 个。
 
-**当前回执**是运行 [`20261020T084801.608407Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T084801.608407Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 242 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#242-the-meta-attractors-loop-closed-on-the-spine-ma1)）。
+**当前回执**是运行 [`20261020T085940.676690Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T085940.676690Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 243 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#243-own-widening-and-the-margin-where-keeping-options-open-closes-anothers-ow1)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 271 个模块，10,869 条定理 |
+| 核心模块（含根 `Becoming`） | 272 个模块，10,884 条定理 |
 | 实例模块 | 7 个模块，567 条定理 |
 | 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 闭包（核心、环与根基） | 287 个模块，11,689 条定理 |
-| 审计的脊柱声明 | 15,997 |
+| 闭包（核心、环与根基） | 288 个模块，11,704 条定理 |
+| 审计的脊柱声明 | 16,022 |
 | 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 189 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 

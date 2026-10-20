@@ -298,13 +298,15 @@
         "effective-capacity-and-eventual-reachability",
         "becoming-finite-horizon",
         "comparison-by-widening",
-        "significance-retained-within-margin"
+        "significance-retained-within-margin",
+        "own-widening-within-the-margin"
       ],
       "declarations": [
         "Becoming.WithinMoves.after_course",
         "Becoming.Renewable.no_exact_finite_reading",
         "Becoming.Web.paths_extension_iff_widens",
-        "Becoming.Flow.Balances.retains_iff_within_margin"
+        "Becoming.Flow.Balances.retains_iff_within_margin",
+        "Becoming.Flow.Balances.widens_iff_others_within"
       ],
       "status": "proved",
       "open_items": [
@@ -510,7 +512,8 @@
         "the-gap-for-ones-own-act",
         "what-pooled-coupling-reaches",
         "what-a-pools-acts-respond-to",
-        "alignment-direction-under-widening"
+        "alignment-direction-under-widening",
+        "own-widening-within-the-margin"
       ],
       "declarations": [
         "Becoming.Flow.unselected_beyond_coupling",
@@ -518,7 +521,8 @@
         "Becoming.Flow.act_selected_by_pool",
         "Becoming.ExchangeLaw.response_not_fixed_by_coupling",
         "Becoming.Direction.extension_iff_widens",
-        "Becoming.Direction.widening_selected_by_pool"
+        "Becoming.Direction.widening_selected_by_pool",
+        "Becoming.Flow.Balances.widens_iff_others_within"
       ],
       "status": "proved",
       "open_items": [
