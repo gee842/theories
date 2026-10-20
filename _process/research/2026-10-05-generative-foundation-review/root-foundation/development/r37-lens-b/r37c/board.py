@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""R37c: the board at landing. The R37c row, rewritten as landed, moves to the history file after the last row
-there; the queue line and the receipt line name R37c's receipt.
+"""R37c: the board at landing. The R37c row, rewritten as landed, moves to the history file after LK1's row (the
+last landed before it); the queue line and the receipt line name R37c's receipt.
 
 usage (from the checkout root): python3 -B board.py BASE RECEIPT_ID"""
+import re
 import sys
 from pathlib import Path
 
@@ -24,12 +25,12 @@ def rep(s, old, new):
     return s.replace(old, new)
 
 
-b = rep(b, "the latest core receipt is R41's `20261020T073902.295130Z` (20 October 2026).",
-        f"the latest core receipt is R37c's `{RID}` (20 October 2026).")
-b = rep(b, "R37c at the head (checker running on R41's main; statements unchanged);", '')
-b = rep(b, "- **Queue:** R41 landed",
-        f"- **Queue:** empty; R37c landed (the counted corollaries as compositions and one tally lemma, statements unchanged; core receipt `{RID}`, study §236, row in the history file); R41 landed")
-b = b.replace(';  ', '; ').replace('; ;', ';')
+b, _n = re.subn(r"the latest core receipt is [^`]*`[0-9T.Z]+` \(20 October 2026\)\.",
+                f"the latest core receipt is R37c's `{RID}` (20 October 2026).", b)
+assert _n == 1
+b = rep(b, " R37c at the head (checker running on R41's main; statements unchanged);", '')
+b = rep(b, "- **Queue:** ",
+        f"- **Queue:** R37c landed (the counted corollaries as compositions and one tally lemma, statements unchanged; core receipt `{RID}`, study §238, row in the history file); ")
 BOARD.write_text(b)
 
 row = (
@@ -44,12 +45,12 @@ row = (
     "| Claude Code session of 20 October (R37c) "
     f"| landed 2026-10-20 on `{BASE}`: core receipt `{RID}` passed (core 269 modules and 10,806 theorems, instances 7 and 567, "
     "applications 6 and 179; every axiom report empty); connectivity 503 of 11,552 apart, register check passes; render, check, links "
-    "and tests pass; study §236 "
+    "and tests pass; study §238 "
     "| worktree `.claude/worktrees/agitated-jepsen-b093c6`, kit `development/r37-lens-b/r37c/` "
     "| R37b census table → one proof per corollary (rule 9) |")
 h = HIST.read_text()
 assert 'R37c: the counted corollaries' not in h
-anchor = '| **SA1: significance and prior-art audit**'
+anchor = '| **LK1: relation to known results**'
 i = h.index(anchor)
 j = h.index('\n', i)
 h = h[:j + 1] + row + '\n' + h[j + 1:]
