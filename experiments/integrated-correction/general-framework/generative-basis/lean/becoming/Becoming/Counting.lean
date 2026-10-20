@@ -3457,6 +3457,39 @@ theorem finiteQueue_saturated_binds (tally : Tally n c a) (company : ∀ t, 0 < 
     | .transmitting, _ => ⟨T, ⟨x, placed⟩, _, ⟨x, placed⟩, ⟨.head _, gives,
         fun standing => comes.1 (EnclosedQueue.place_pos.mpr standing), stands⟩, trivial⟩
 
+/-- **The steps in finite worlds in which every premise but the census binds, for every counted census**: nothing arises across a step at which
+nothing is active (`active_of_coming_jointly`), change stays within a bound from the first step
+(`enclosure_bounds_change_counted`), and something arises (`binds_arising_counted`). -/
+theorem finite_binding_counting_sound (w : World)
+    (within : w.Premised ∧ w.Finite ∧ ∀ p : Premise, p ≠ .counted → p.Binds w) :
+    w.CountsHold fun n c a =>
+      (∀ t, 0 < a t → 0 < n t) ∧ (∃ B, ChangeBound 0 B n c a) ∧ ∃ t, 0 < a t :=
+  match within with
+  | ⟨premised, finite, binds⟩ => fun alive n c a census counted =>
+    ⟨fun _ => company_of counted fun _ _ comes => active_of_coming_jointly
+        (premised _ (.tail _ (.head _))) (premised _ (.tail _ (.tail _ (.head _))))
+        (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
+          (.head _))))))))
+        census comes,
+      ⟨_, (enclosure_bounds_change_counted census counted
+        (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))))
+        (premised _ (.tail _ (.head _)))
+        (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))
+        (T := 0) fun t _ => finite.enclosed t).from_zero⟩,
+      binds_arising_counted (binds .embodied fun same => nomatch same) alive n c a census counted⟩
+
+/-- **The witnesses in finite worlds in which every premise but the census binds**: finite queues, saturated (`finiteQueue_saturated_binds`). -/
+theorem finite_binding_counting_witnessed :
+    Witnessed (fun w x t => w.web.active t x)
+      (fun w => w.Premised ∧ w.Finite ∧ ∀ p : Premise, p ≠ .counted → p.Binds w)
+      fun n c a => (∀ t, 0 < a t → 0 < n t) ∧ (∃ B, ChangeBound 0 B n c a) ∧ ∃ t, 0 < a t :=
+  fun n c a tally ⟨company, ⟨B, bound⟩, ⟨_, joins⟩⟩ =>
+    ⟨(finiteQueue n c a B).saturated, fun _ _ => inferInstance, _,
+      ⟨(finiteQueue_premised tally company bound).saturated
+          fun t i => EnclosedQueue.level_le (n := n) (c := c) (a := a) (B := B) t i.val,
+        finiteQueue_finite n c a B, finiteQueue_saturated_binds tally company bound joins⟩,
+      finiteQueue_census n c a B, finiteQueue_counts tally bound⟩
+
 /-- In finite worlds in which every premise but the census binds, the laws of counting under
 the eight are those of finite worlds and that something arises: a property of the counts
 holds of every census of every finite world meeting the eight in which every premise but the
@@ -3469,25 +3502,12 @@ theorem finite_binding_counting {Q : (Nat → Nat) → (Nat → Nat) → (Nat �
       (∃ t, 0 < a t) → Q n c a) ↔
       ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Premised → w.Finite →
         (∀ p : Premise, p ≠ .counted → p.Binds w) → w.CountsObey Q :=
-  ⟨fun law w _ premised finite binds alive census =>
-    law _ _ _ census.tally
-      (counting_binds_jointly.1 w (premised _ (.tail _ (.head _)))
-        (premised _ (.tail _ (.tail _ (.head _))))
-        (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
-          (.head _))))))))
-        alive census)
-      ⟨_, (enclosure_bounds_change census
-        (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))))
-        (premised _ (.tail _ (.head _)))
-        (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))
-        (T := 0) fun t _ => finite.enclosed t).from_zero⟩
-      (binds_arising w (binds .embodied fun same => nomatch same) alive census),
-   fun law n c a tally company ⟨B, bound⟩ ⟨_, joins⟩ => pointwise (finiteQueue_counts tally bound)
-      (law (finiteQueue n c a B).saturated
-        ((finiteQueue_premised tally company bound).saturated
-          fun t i => EnclosedQueue.level_le (n := n) (c := c) (a := a) (B := B) t i.val)
-        (finiteQueue_finite n c a B) (finiteQueue_saturated_binds tally company bound joins) _
-        (finiteQueue_census n c a B))⟩
+  have table := census_table_obeys pointwise finite_binding_counting_sound
+    finite_binding_counting_witnessed
+  ⟨fun law w _ premised finite binds => table.mp (fun n c a tally ⟨company, bound, arises⟩ =>
+      law n c a tally company bound arises) w ⟨premised, finite, binds⟩,
+   fun law n c a tally company bound arises => table.mpr (fun w _ ⟨premised, finite, binds⟩ =>
+      law w premised finite binds) n c a tally ⟨company, bound, arises⟩⟩
 
 end World
 
@@ -3534,6 +3554,39 @@ theorem enclosedQueue_saturated_binds (tally : Tally n c a) (company : ∀ t, 0 
     | .transmitting => ⟨T, x, _, x, ⟨.head _, gives,
         fun standing => comes.1 (EnclosedQueue.place_pos.mpr standing), stands⟩, trivial⟩
 
+/-- **The steps under enclosure from some step on, where every premise binds, for every counted census**: nothing arises across a step at which
+nothing is active (`active_of_coming_jointly`), change stays within a bound from the first step
+(`enclosure_bounds_change_counted`), and something arises (`binds_arising_counted`). -/
+theorem enclosed_binding_counting_sound (w : World)
+    (within : w.Premised ∧ (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) ∧ w.Binds) :
+    w.CountsHold fun n c a =>
+      (∀ t, 0 < a t → 0 < n t) ∧ (∃ B, ChangeBound 0 B n c a) ∧ ∃ t, 0 < a t :=
+  match within with
+  | ⟨premised, ⟨_, enclosed⟩, binds⟩ => fun alive n c a census counted =>
+    ⟨fun _ => company_of counted fun _ _ comes => active_of_coming_jointly
+        (premised _ (.tail _ (.head _))) (premised _ (.tail _ (.tail _ (.head _))))
+        (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
+          (.head _))))))))
+        census comes,
+      ⟨_, (enclosure_bounds_change_counted census counted
+        (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))))
+        (premised _ (.tail _ (.head _)))
+        (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))) enclosed).from_zero⟩,
+      binds_arising_counted (binds .embodied) alive n c a census counted⟩
+
+/-- **The witnesses under enclosure from some step on, where every premise binds**: enclosed queues, saturated (`enclosedQueue_saturated_binds`). -/
+theorem enclosed_binding_counting_witnessed :
+    Witnessed (fun w x t => w.web.active t x)
+      (fun w => w.Premised ∧ (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) ∧ w.Binds)
+      fun n c a => (∀ t, 0 < a t → 0 < n t) ∧ (∃ B, ChangeBound 0 B n c a) ∧ ∃ t, 0 < a t :=
+  fun n c a tally ⟨company, ⟨B, bound⟩, ⟨_, joins⟩⟩ =>
+    ⟨(enclosedQueue n c a B).saturated, fun _ _ => inferInstance, _,
+      ⟨(enclosedQueue_premised tally company bound).saturated
+          fun t k => EnclosedQueue.level_le (n := n) (c := c) (a := a) (B := B) t k,
+        ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩,
+        enclosedQueue_saturated_binds tally company bound joins⟩,
+      enclosedQueue_census n c a B, Queue.counts tally⟩
+
 /-- Under all eight premises, with every step from some step on enclosed, where every premise
 binds the laws of counting are those under enclosure and that something arises: a property of
 the counts holds of every census of every such world exactly when it holds of every tally in
@@ -3545,24 +3598,12 @@ theorem enclosed_binding_counting {Q : (Nat → Nat) → (Nat → Nat) → (Nat 
       (∃ t, 0 < a t) → Q n c a) ↔
       ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Premised →
         (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) → w.Binds → w.CountsObey Q :=
-  ⟨fun law w _ premised ⟨_, enclosed⟩ binds alive census =>
-    law _ _ _ census.tally
-      (counting_binds_jointly.1 w (premised _ (.tail _ (.head _)))
-        (premised _ (.tail _ (.tail _ (.head _))))
-        (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
-          (.head _))))))))
-        alive census)
-      ⟨_, (enclosure_bounds_change census
-        (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))))
-        (premised _ (.tail _ (.head _)))
-        (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))) enclosed).from_zero⟩
-      (binds_arising w (binds .embodied) alive census),
-   fun law n c a tally company ⟨B, bound⟩ ⟨_, joins⟩ => pointwise (Queue.counts tally)
-      (law (enclosedQueue n c a B).saturated
-        ((enclosedQueue_premised tally company bound).saturated
-          fun t k => EnclosedQueue.level_le (n := n) (c := c) (a := a) (B := B) t k)
-        ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩
-        (enclosedQueue_saturated_binds tally company bound joins) _ (enclosedQueue_census n c a B))⟩
+  have table := census_table_obeys pointwise enclosed_binding_counting_sound
+    enclosed_binding_counting_witnessed
+  ⟨fun law w _ premised enclosed binds => table.mp (fun n c a tally ⟨company, bound, arises⟩ =>
+      law n c a tally company bound arises) w ⟨premised, enclosed, binds⟩,
+   fun law n c a tally company bound arises => table.mpr (fun w _ ⟨premised, enclosed, binds⟩ =>
+      law w premised enclosed binds) n c a tally ⟨company, bound, arises⟩⟩
 
 end World
 
@@ -3995,6 +4036,123 @@ theorem finite_binding_census {S : Premise → Bool} (counted : S .counted = tru
       (∀ p, S p = true → p.Binds w) → w.CountsObey Q :=
   fun _ _ _ finite binds => absurd finite (binds _ counted)
 
+/-- **The steps in finite worlds where the premises of each selection without the census bind,
+for every counted census**: the counts are bounded (`Finite.census_bounded`); nothing arises
+across a step at which nothing is active (`active_of_coming_jointly`,
+`active_of_coming_enclosed`); change stays within a bound (`enclosure_bounds_change_counted`);
+and the three binding steps of `binding_counting_under_sound`, the last with only active relata
+giving or, in a finite world, with only active relata taking and dissipation
+(`Finite.acting`). -/
+theorem finite_binding_counting_under_sound (S : Premise → Bool) (w : World)
+    (within : w.Meets S ∧ w.Finite ∧ ∀ p, S p = true → p.Binds w) :
+    w.CountsHold fun n c a => (∃ M, ∀ t, n t ≤ M) ∧
+        (BindsCounting S ∨ BoundsChange S → ∀ t, 0 < a t → 0 < n t) ∧
+        (BoundsChange S → ∃ B, ChangeBound 0 B n c a) ∧
+        (S .dependent = true ∨ S .acting = true ∨ S .taking = true → ∃ t, 0 < n t) ∧
+        (S .embodied = true → ∃ t, 0 < a t) ∧
+        (S .embodied = true → S .acting = true ∨ S .taking = true ∧ S .dissipative = true →
+          S .transmitting = true → ∃ t, 0 < n t ∧ 0 < a t) :=
+  match within with
+  | ⟨meets, finite, binds⟩ => fun alive n c a census counted =>
+    ⟨match finite.census_bounded with
+      | ⟨M, bounded⟩ => ⟨M, fun t => Nat.le_trans (Nat.le_of_eq (counted t).1)
+          (bounded alive census t)⟩,
+     fun selected _ => company_of counted fun _ _ comes => match selected with
+      | .inl ⟨balanced, embodied, .inl acting⟩ => active_of_coming_jointly (meets _ balanced)
+          (meets _ acting) (Embodied.arising (meets _ embodied)) census comes
+      | .inl ⟨balanced, embodied, .inr ⟨_, dissipative⟩⟩ | .inr ⟨balanced, embodied, dissipative⟩ =>
+          active_of_coming_enclosed (meets _ balanced) (meets _ dissipative) (meets _ embodied)
+            census (finite.enclosed _) comes,
+     fun ⟨balanced, embodied, dissipative⟩ => ⟨_, enclosure_bounds_change_counted census counted
+      (meets _ embodied) (meets _ balanced) (meets _ dissipative) fun t _ => finite.enclosed t⟩,
+     counted.acts_of_binding meets binds census,
+     fun embodied => binds_arising_counted (binds _ embodied) alive n c a census counted,
+     fun embodied giving transmitting =>
+      have acting : w.Acting := match giving with
+        | .inl acting => meets _ acting
+        | .inr ⟨taking, dissipative⟩ => finite.acting (meets _ taking) (meets _ dissipative)
+      counted.joint_of_binding (meets _ embodied) acting (binds _ transmitting) census⟩
+
+/-- **The witnesses in finite worlds where the premises of each selection without the census
+bind**: a relay beside a ring where embodiment is not selected; where it is, a finite queue,
+saturated, where balance and dissipation are, an exchanging ring where dissipation is not and
+balance or only active relata giving is not, and lossy rings where balance is not. -/
+theorem finite_binding_counting_under_witnessed (S : Premise → Bool)
+    (uncounted : S .counted = false) :
+    Witnessed (fun w x t => w.web.active t x) (fun w => w.Meets S ∧ w.Finite ∧ ∀ p, S p = true → p.Binds w)
+      fun n c a => (∃ M, ∀ t, n t ≤ M) ∧
+        (BindsCounting S ∨ BoundsChange S → ∀ t, 0 < a t → 0 < n t) ∧
+        (BoundsChange S → ∃ B, ChangeBound 0 B n c a) ∧
+        (S .dependent = true ∨ S .acting = true ∨ S .taking = true → ∃ t, 0 < n t) ∧
+        (S .embodied = true → ∃ t, 0 < a t) ∧
+        (S .embodied = true → S .acting = true ∨ S .taking = true ∧ S .dissipative = true →
+          S .transmitting = true → ∃ t, 0 < n t ∧ 0 < a t) :=
+  fun n c a tally ⟨⟨M, bounded⟩, quiet, bounds, acts, arises, joint⟩ =>
+    have within : ∀ {w : World}, w.Finite → (∀ p, S p = true → p.Holds w ∧ p.Binds w) →
+        w.Meets S ∧ w.Finite ∧ ∀ p, S p = true → p.Binds w := fun finite binding =>
+      ⟨fun p selected => (binding p selected).1, finite, fun p selected => (binding p selected).2⟩
+    have wider : ∀ t, n t ≤ M + 1 := fun t => Nat.le_succ_of_le (bounded t)
+    have relayed : S .embodied = false → ∀ U g, (S .dependent = true ∨ S .acting = true ∨
+        S .taking = true → (relayRing n c M U g).web.active U g) →
+        WitnessedAt (fun w x t => w.web.active t x) (fun w => w.Meets S ∧ w.Finite ∧ ∀ p, S p = true → p.Binds w) n c a :=
+      fun disembodied U g active => ⟨relayRing n c M U g, fun _ _ => inferInstance, _,
+        within (places_listed _) (relayRing_binding disembodied uncounted active),
+        Ring.census wider fun t i => RelayRing.level U t i.val, Ring.counts tally wider⟩
+    match he : S .embodied with
+    | false => match hp : S .dependent, ha : S .acting, ht : S .taking with
+      | false, false, false => relayed he 0 (RelayRing.sink M) fun
+          | .inl selected => nomatch hp.symm.trans selected
+          | .inr (.inl selected) => nomatch ha.symm.trans selected
+          | .inr (.inr selected) => nomatch ht.symm.trans selected
+      | true, _, _ => match acts (.inl hp) with
+        | ⟨U, occupied⟩ => relayed he U (Ring.seat (M + 1) (Queue.gone c U)) fun _ =>
+            Ring.front_holds occupied
+      | false, true, _ => match acts (.inr (.inl ha)) with
+        | ⟨U, occupied⟩ => relayed he U (Ring.seat (M + 1) (Queue.gone c U)) fun _ =>
+            Ring.front_holds occupied
+      | false, false, true => match acts (.inr (.inr ht)) with
+        | ⟨U, occupied⟩ => relayed he U (Ring.seat (M + 1) (Queue.gone c U)) fun _ =>
+            Ring.front_holds occupied
+    | true => match arises he with
+      | ⟨T, joins⟩ =>
+        have exchanging : S .dissipative = false → (S .acting = true → ∀ t, 0 < a t → 0 < n t) →
+            WitnessedAt (fun w x t => w.web.active t x) (fun w => w.Meets S ∧ w.Finite ∧ ∀ p, S p = true → p.Binds w) n c a := fun dissipating giving =>
+          ⟨exchangingRing n c M (T + 1), fun _ _ => inferInstance, _,
+           within (places_listed _)
+            (exchangingRing_binding tally bounded joins dissipating uncounted giving),
+           Ring.census bounded (Ring.stands n c M), Ring.counts tally bounded⟩
+        have lossy : ∀ J U, 0 < a J → S .balanced = false →
+            (S .acting = true ∨ S .taking = true → 0 < n U) → (S .transmitting = true → J = U) →
+            WitnessedAt (fun w x t => w.web.active t x) (fun w => w.Meets S ∧ w.Finite ∧ ∀ p, S p = true → p.Binds w) n c a := fun _ U joins unbalanced occupied descends =>
+          ⟨lossyRing n c M U, fun _ _ => inferInstance, _, within (places_listed _)
+            (lossyRing_binding tally bounded joins unbalanced uncounted occupied descends),
+           Ring.census bounded (Ring.stands n c M), Ring.counts tally bounded⟩
+        match hb : S .balanced, hd : S .dissipative, ha : S .acting, ht : S .taking,
+            hr : S .transmitting with
+        | true, true, _, _, _ => match bounds ⟨hb, he, hd⟩ with
+          | ⟨B, bound⟩ =>
+            have company := quiet (.inr ⟨hb, he, hd⟩)
+            ⟨(finiteQueue n c a B).saturated, fun _ _ => inferInstance, _,
+             ⟨((finiteQueue_premised tally company bound).saturated
+                fun t i => EnclosedQueue.level_le (n := n) (c := c) (a := a) (B := B) t i.val).meets S,
+              finiteQueue_finite n c a B,
+              fun p selected => finiteQueue_saturated_binds tally company bound joins p
+                fun same => absurd (uncounted.symm.trans (same ▸ selected)) Bool.noConfusion⟩,
+             finiteQueue_census n c a B, finiteQueue_counts tally bound⟩
+        | true, false, _, _, _ => exchanging hd fun acting => quiet (.inl ⟨hb, he, .inl acting⟩)
+        | false, false, false, _, _ => exchanging hd fun selected => nomatch ha.symm.trans selected
+        | false, _, true, _, true => match joint he (.inl ha) hr with
+          | ⟨U, occupied, here⟩ => lossy U U here hb (fun _ => occupied) fun _ => rfl
+        | false, true, false, true, true => match joint he (.inr ⟨ht, hd⟩) hr with
+          | ⟨U, occupied, here⟩ => lossy U U here hb (fun _ => occupied) fun _ => rfl
+        | false, _, true, _, false => lossy T (T + 1) joins hb (fun _ => tally.after_pos joins)
+            fun selected => nomatch hr.symm.trans selected
+        | false, true, false, true, false => lossy T (T + 1) joins hb
+            (fun _ => tally.after_pos joins) fun selected => nomatch hr.symm.trans selected
+        | false, true, false, false, _ => lossy T T joins hb (fun
+            | .inl selected => nomatch ha.symm.trans selected
+            | .inr selected => nomatch ht.symm.trans selected) fun _ => rfl
+
 /-- The laws of counting in finite worlds where the premises of each selection without the
 census bind. A property of the counts holds of every census of every finite world meeting
 the selection in which each selected premise binds exactly when it holds of every tally
@@ -4015,100 +4173,12 @@ theorem finite_binding_counting_under (S : Premise → Bool) (uncounted : S .cou
         S .transmitting = true → ∃ t, 0 < n t ∧ 0 < a t) → Q n c a) ↔
       ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Meets S → w.Finite →
         (∀ p, S p = true → p.Binds w) → w.CountsObey Q :=
-  ⟨fun law w _ meets finite binds alive census => law _ _ _ census.tally
-    (match finite.census_bounded with
-      | ⟨M, bounded⟩ => ⟨M, bounded alive census⟩)
-    (fun
-      | .inl ⟨balanced, embodied, .inl acting⟩ => counting_binds_jointly.1 w (meets _ balanced)
-          (meets _ acting) (Embodied.arising (meets _ embodied)) alive census
-      | .inl ⟨balanced, embodied, .inr ⟨_, dissipative⟩⟩ | .inr ⟨balanced, embodied, dissipative⟩ =>
-          fun t arising => enclosed_binds_counting w (meets _ balanced) (meets _ dissipative)
-            (meets _ embodied) census (finite.enclosed t) arising)
-    (fun ⟨balanced, embodied, dissipative⟩ => ⟨_, enclosure_bounds_change census
-      (meets _ embodied) (meets _ balanced) (meets _ dissipative) fun t _ => finite.enclosed t⟩)
-    (fun selected => match selected with
-      | .inl dependent => match binds _ dependent with
-        | ⟨t, _, _, active, _, _⟩ => ⟨t, counts_active census active⟩
-      | .inr (.inl acting) => match binds _ acting with
-        | ⟨t, _, _, present, gives⟩ => ⟨t, counts_active census (meets _ acting t _ _ present gives)⟩
-      | .inr (.inr taking) => match binds _ taking with
-        | ⟨t, _, _, present, takes⟩ =>
-          ⟨t, counts_active census (meets _ taking t _ _ present takes).1⟩)
-    (fun embodied => match binds _ embodied with
-      | ⟨t, _, arises⟩ => ⟨t, counts_arising census arises⟩)
-    (fun embodied giving transmitting => match binds _ transmitting with
-      | ⟨t, x, _, _, ⟨present, gives, comes⟩, _⟩ =>
-        have acting : w.Acting := match giving with
-          | .inl acting => meets _ acting
-          | .inr ⟨taking, dissipative⟩ => finite.acting (meets _ taking) (meets _ dissipative)
-        ⟨t, counts_active census (acting t _ _ present gives),
-         counts_arising census ⟨fun active => comes.1 ((meets _ embodied x t).mp active),
-           (meets _ embodied x (t + 1)).mpr comes.2⟩⟩),
-   fun law n c a tally ⟨M, bounded⟩ quiet bounds acts arises joint =>
-    have holds : ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Finite →
-        (∀ p, S p = true → p.Holds w ∧ p.Binds w) → w.CountsObey Q := fun w _ finite binding =>
-      law w (fun p selected => (binding p selected).1) finite fun p selected =>
-        (binding p selected).2
-    have wider : ∀ t, n t ≤ M + 1 := fun t => Nat.le_succ_of_le (bounded t)
-    have relayed : S .embodied = false → ∀ U g, (S .dependent = true ∨ S .acting = true ∨
-        S .taking = true → (relayRing n c M U g).web.active U g) → Q n c a :=
-      fun disembodied U g active => pointwise (Ring.counts tally wider)
-        (holds (relayRing n c M U g) (places_listed _)
-          (relayRing_binding disembodied uncounted active) _
-          (Ring.census wider fun t i => RelayRing.level U t i.val))
-    match he : S .embodied with
-    | false => match hp : S .dependent, ha : S .acting, ht : S .taking with
-      | false, false, false => relayed he 0 (RelayRing.sink M) fun
-          | .inl selected => nomatch hp.symm.trans selected
-          | .inr (.inl selected) => nomatch ha.symm.trans selected
-          | .inr (.inr selected) => nomatch ht.symm.trans selected
-      | true, _, _ => match acts (.inl hp) with
-        | ⟨U, occupied⟩ => relayed he U (Ring.seat (M + 1) (Queue.gone c U)) fun _ =>
-            Ring.front_holds occupied
-      | false, true, _ => match acts (.inr (.inl ha)) with
-        | ⟨U, occupied⟩ => relayed he U (Ring.seat (M + 1) (Queue.gone c U)) fun _ =>
-            Ring.front_holds occupied
-      | false, false, true => match acts (.inr (.inr ht)) with
-        | ⟨U, occupied⟩ => relayed he U (Ring.seat (M + 1) (Queue.gone c U)) fun _ =>
-            Ring.front_holds occupied
-    | true => match arises he with
-      | ⟨T, joins⟩ =>
-        have exchanging : S .dissipative = false → (S .acting = true → ∀ t, 0 < a t → 0 < n t) →
-            Q n c a := fun dissipating giving => pointwise (Ring.counts tally bounded)
-          (holds (exchangingRing n c M (T + 1)) (places_listed _)
-            (exchangingRing_binding tally bounded joins dissipating uncounted giving) _
-            (Ring.census bounded (Ring.stands n c M)))
-        have lossy : ∀ J U, 0 < a J → S .balanced = false →
-            (S .acting = true ∨ S .taking = true → 0 < n U) → (S .transmitting = true → J = U) →
-            Q n c a := fun _ U joins unbalanced occupied descends =>
-          pointwise (Ring.counts tally bounded) (holds (lossyRing n c M U) (places_listed _)
-            (lossyRing_binding tally bounded joins unbalanced uncounted occupied descends) _
-            (Ring.census bounded (Ring.stands n c M)))
-        match hb : S .balanced, hd : S .dissipative, ha : S .acting, ht : S .taking,
-            hr : S .transmitting with
-        | true, true, _, _, _ => match bounds ⟨hb, he, hd⟩ with
-          | ⟨B, bound⟩ =>
-            have company := quiet (.inr ⟨hb, he, hd⟩)
-            pointwise (finiteQueue_counts tally bound) (law (finiteQueue n c a B).saturated
-              (((finiteQueue_premised tally company bound).saturated
-                fun t i => EnclosedQueue.level_le (n := n) (c := c) (a := a) (B := B) t i.val).meets S)
-              (finiteQueue_finite n c a B)
-              (fun p selected => finiteQueue_saturated_binds tally company bound joins p
-                fun same => absurd (uncounted.symm.trans (same ▸ selected)) Bool.noConfusion)
-              _ (finiteQueue_census n c a B))
-        | true, false, _, _, _ => exchanging hd fun acting => quiet (.inl ⟨hb, he, .inl acting⟩)
-        | false, false, false, _, _ => exchanging hd fun selected => nomatch ha.symm.trans selected
-        | false, _, true, _, true => match joint he (.inl ha) hr with
-          | ⟨U, occupied, here⟩ => lossy U U here hb (fun _ => occupied) fun _ => rfl
-        | false, true, false, true, true => match joint he (.inr ⟨ht, hd⟩) hr with
-          | ⟨U, occupied, here⟩ => lossy U U here hb (fun _ => occupied) fun _ => rfl
-        | false, _, true, _, false => lossy T (T + 1) joins hb (fun _ => tally.after_pos joins)
-            fun selected => nomatch hr.symm.trans selected
-        | false, true, false, true, false => lossy T (T + 1) joins hb
-            (fun _ => tally.after_pos joins) fun selected => nomatch hr.symm.trans selected
-        | false, true, false, false, _ => lossy T T joins hb (fun
-            | .inl selected => nomatch ha.symm.trans selected
-            | .inr selected => nomatch ht.symm.trans selected) fun _ => rfl⟩
+  have table := census_table_obeys pointwise (finite_binding_counting_under_sound S)
+    (finite_binding_counting_under_witnessed S uncounted)
+  ⟨fun law w _ meets finite binds => table.mp (fun n c a tally ⟨bounded, quiet, bounds, acts, arises, joint⟩ =>
+      law n c a tally bounded quiet bounds acts arises joint) w ⟨meets, finite, binds⟩,
+   fun law n c a tally bounded quiet bounds acts arises joint => table.mpr (fun w _ ⟨meets, finite, binds⟩ =>
+      law w meets finite binds) n c a tally ⟨bounded, quiet, bounds, acts, arises, joint⟩⟩
 
 /-- So in finite worlds where the premises of a selection without the census bind, something
 is active exactly where activity needing support, only active relata giving, only active
@@ -4693,6 +4763,124 @@ end World
 
 namespace World
 
+/-- **The steps in worlds enclosed from some step on where the premises of each selection
+bind, for every counted census**: those of `binding_counting_under_sound`, with change within a
+bound and nothing arising across a step at which nothing is active from the step on which
+enclosure holds (`enclosure_bounds_change_counted`, `active_of_coming_enclosed`). -/
+theorem enclosed_binding_counting_under_sound (S : Premise → Bool) (w : World)
+    (within : w.Meets S ∧ (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) ∧ ∀ p, S p = true → p.Binds w) :
+    w.CountsHold fun n c a => (BindsCounting S → ∀ t, 0 < a t → 0 < n t) ∧
+        (BoundsChange S → ∃ T B, ChangeBound T B n c a ∧ ∀ t, T ≤ t → 0 < a t → 0 < n t) ∧
+        (S .dependent = true ∨ S .acting = true ∨ S .taking = true → ∃ t, 0 < n t) ∧
+        (S .embodied = true → ∃ t, 0 < a t) ∧
+        (S .embodied = true → S .acting = true → S .transmitting = true →
+          ∃ t, 0 < n t ∧ 0 < a t) :=
+  match within with
+  | ⟨meets, ⟨T, enclosed⟩, binds⟩ => fun alive n c a census counted =>
+    ⟨fun bindsCounting => counted.company_binding meets bindsCounting census,
+     fun ⟨balanced, embodied, dissipative⟩ => ⟨T, _, enclosure_bounds_change_counted census
+      counted (meets _ embodied) (meets _ balanced) (meets _ dissipative) enclosed,
+      fun t later => company_of counted fun _ _ comes => active_of_coming_enclosed
+        (meets _ balanced) (meets _ dissipative) (meets _ embodied) census (enclosed t later)
+        comes⟩,
+     counted.acts_of_binding meets binds census,
+     fun embodied => binds_arising_counted (binds _ embodied) alive n c a census counted,
+     fun embodied acting transmitting => counted.joint_of_binding (meets _ embodied)
+      (meets _ acting) (binds _ transmitting) census⟩
+
+/-- **The witnesses in worlds enclosed from some step on where the premises of each selection
+bind**: a relay queue where embodiment is not selected; where it is and balance is, an
+exchanging queue without dissipation, an enclosed queue, saturated, with only active relata
+giving or taking, and a shedding queue with neither; lossy queues where balance is not. -/
+theorem enclosed_binding_counting_under_witnessed (S : Premise → Bool) :
+    Witnessed (fun w x t => w.web.active t x)
+      (fun w => w.Meets S ∧ (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) ∧ ∀ p, S p = true → p.Binds w)
+      fun n c a => (BindsCounting S → ∀ t, 0 < a t → 0 < n t) ∧
+        (BoundsChange S → ∃ T B, ChangeBound T B n c a ∧ ∀ t, T ≤ t → 0 < a t → 0 < n t) ∧
+        (S .dependent = true ∨ S .acting = true ∨ S .taking = true → ∃ t, 0 < n t) ∧
+        (S .embodied = true → ∃ t, 0 < a t) ∧
+        (S .embodied = true → S .acting = true → S .transmitting = true →
+          ∃ t, 0 < n t ∧ 0 < a t) :=
+  fun n c a tally ⟨quiet, bounded, acts, arises, joint⟩ =>
+    have within : ∀ {w : World}, (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) →
+        (∀ p, S p = true → p.Holds w ∧ p.Binds w) →
+        w.Meets S ∧ (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) ∧ ∀ p, S p = true → p.Binds w :=
+      fun enclosed binding => ⟨fun p selected => (binding p selected).1, enclosed,
+        fun p selected => (binding p selected).2⟩
+    have relayed : S .embodied = false → ∀ U g, (S .dependent = true ∨ S .acting = true ∨
+        S .taking = true → (relayQueue n c U g).web.active U g) →
+        WitnessedAt (fun w x t => w.web.active t x)
+          (fun w => w.Meets S ∧ (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) ∧ ∀ p, S p = true → p.Binds w) n c a :=
+      fun disembodied U g active => ⟨relayQueue n c U g, fun _ _ => inferInstance, _,
+        within ⟨0, fun t _ => relayQueue_enclosed n c _ _ t⟩
+          (relayQueue_binding disembodied active), openQueue_census n c, openQueue_counts tally⟩
+    have lossy : ∀ (T U E : Nat) (gift : Nat → Nat), 0 < a T → 0 < n U → gift U = 0 →
+        (∀ t, E ≤ t → gift t = 0) → S .balanced = false →
+        (S .acting = true → ∀ t, gift t = 0) →
+        (S .transmitting = true → T = U ∨ 0 < gift T) →
+        WitnessedAt (fun w x t => w.web.active t x)
+          (fun w => w.Meets S ∧ (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) ∧ ∀ p, S p = true → p.Binds w) n c a :=
+      fun _ _ _ _ joins occupied shut still unbalanced giving descends =>
+        ⟨_, fun _ _ => inferInstance, _,
+         within ⟨_, fun _ later => lossyQueue_enclosed tally occupied (still _ later)⟩
+          (lossyQueue_binding tally occupied joins shut unbalanced giving descends),
+         openQueue_census n c, openQueue_counts tally⟩
+    match he : S .embodied with
+    | false => match hp : S .dependent, ha : S .acting, ht : S .taking with
+      | false, false, false => relayed he 0 (.ground 1) fun
+          | .inl selected => nomatch hp.symm.trans selected
+          | .inr (.inl selected) => nomatch ha.symm.trans selected
+          | .inr (.inr selected) => nomatch ht.symm.trans selected
+      | true, _, _ => match acts (.inl hp) with
+        | ⟨U, occupied⟩ => relayed he U (.member (Queue.gone c U)) fun _ =>
+            OpenQueue.front.mpr occupied
+      | false, true, _ => match acts (.inr (.inl ha)) with
+        | ⟨U, occupied⟩ => relayed he U (.member (Queue.gone c U)) fun _ =>
+            OpenQueue.front.mpr occupied
+      | false, false, true => match acts (.inr (.inr ht)) with
+        | ⟨U, occupied⟩ => relayed he U (.member (Queue.gone c U)) fun _ =>
+            OpenQueue.front.mpr occupied
+    | true => match arises he with
+      | ⟨T, joins⟩ =>
+        have saturated : S .balanced = true → S .dissipative = true →
+            (∀ t, 0 < a t → 0 < n t) → WitnessedAt (fun w x t => w.web.active t x)
+          (fun w => w.Meets S ∧ (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) ∧ ∀ p, S p = true → p.Binds w) n c a := fun hb hd company =>
+          match changeBound_iff_zero.mp (match bounded ⟨hb, he, hd⟩ with
+            | ⟨T, B, bound, _⟩ => ⟨T, B, bound⟩) with
+          | ⟨B, bound⟩ => ⟨(enclosedQueue n c a B).saturated, fun _ _ => inferInstance, _,
+              within ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩
+                (fun p selected => ⟨((enclosedQueue_premised tally company bound).saturated
+                    fun t k => EnclosedQueue.level_le (n := n) (c := c) (a := a) t k).meets S p
+                      selected,
+                  enclosedQueue_saturated_binds tally company bound joins p⟩),
+              enclosedQueue_census n c a B, Queue.counts tally⟩
+        match hb : S .balanced, hd : S .dissipative, ha : S .acting, ht : S .taking,
+            hr : S .transmitting with
+        | true, false, _, _, _ => ⟨_, fun _ _ => inferInstance, _,
+            within ⟨0, fun t _ => exchangingQueue_enclosed tally (tally.after_pos joins) t⟩
+              (exchangingQueue_binding (B := 0) tally joins hd fun selected =>
+                quiet ⟨hb, he, .inl selected⟩), Queue.listed, Queue.counts tally⟩
+        | true, true, true, _, _ => saturated hb hd (quiet ⟨hb, he, .inl ha⟩)
+        | true, true, false, true, _ => saturated hb hd (quiet ⟨hb, he, .inr ⟨ht, hd⟩⟩)
+        | true, true, false, false, _ => match bounded ⟨hb, he, hd⟩ with
+          | ⟨_, _, bound, company⟩ => match tally.occupied_from company joins with
+            | ⟨_, occupied, company⟩ => ⟨_, fun _ _ => inferInstance, _,
+                within ⟨_, fun _ later => sheddingQueue_enclosed tally occupied later⟩
+                  (sheddingQueue_binding tally bound.from_zero company occupied joins ha ht),
+                Queue.listed, Queue.counts tally⟩
+        | false, _, true, _, true => match joint he ha hr with
+          | ⟨U, occupied, here⟩ => lossy U U 0 (fun _ => 0) here occupied rfl (fun _ _ => rfl)
+              hb (fun _ _ => rfl) fun _ => .inl rfl
+        | false, _, true, _, false => lossy T (T + 1) 0 (fun _ => 0) joins (tally.after_pos joins)
+            rfl (fun _ _ => rfl) hb (fun _ _ => rfl)
+            fun selected => nomatch hr.symm.trans selected
+        | false, _, false, _, _ => lossy T (T + 1) (T + 1) (fun t => mark (t = T)) joins
+            (tally.after_pos joins) (mark_zero (Nat.succ_ne_self T))
+            (fun _ later => mark_zero fun same =>
+              Nat.not_succ_le_self T (Nat.le_trans later (Nat.le_of_eq same)))
+            hb (fun selected => nomatch ha.symm.trans selected)
+            fun _ => .inr (mark_pos.mpr rfl)
+
 /-- The laws of counting in worlds enclosed from some step on where the premises of each
 selection bind. A property of the counts holds of every census of every such world meeting a
 selection in which each selected premise binds exactly when it holds of every tally meeting
@@ -4713,106 +4901,12 @@ theorem enclosed_binding_counting_under (S : Premise → Bool)
       ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Meets S →
         (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) → (∀ p, S p = true → p.Binds w) →
           w.CountsObey Q :=
-  ⟨fun law w _ meets ⟨T, enclosed⟩ binds alive census => law _ _ _ census.tally
-    (fun ⟨balanced, embodied, giving⟩ => match giving with
-      | .inl acting => counting_binds_jointly.1 w (meets _ balanced) (meets _ acting)
-          (Embodied.arising (meets _ embodied)) alive census
-      | .inr ⟨taking, dissipative⟩ => taking_binds_counting w (meets _ balanced)
-          (meets _ taking) (meets _ dissipative) (meets _ embodied) alive census)
-    (fun ⟨balanced, embodied, dissipative⟩ => ⟨T, _, enclosure_bounds_change census
-      (meets _ embodied) (meets _ balanced) (meets _ dissipative) enclosed,
-      fun t later arising => enclosed_binds_counting w (meets _ balanced) (meets _ dissipative)
-        (meets _ embodied) census (enclosed t later) arising⟩)
-    (fun selected => match selected with
-      | .inl dependent => match binds _ dependent with
-        | ⟨t, _, _, active, _, _⟩ => ⟨t, counts_active census active⟩
-      | .inr (.inl acting) => match binds _ acting with
-        | ⟨t, _, _, present, gives⟩ => ⟨t, counts_active census (meets _ acting t _ _ present gives)⟩
-      | .inr (.inr taking) => match binds _ taking with
-        | ⟨t, _, _, present, takes⟩ =>
-          ⟨t, counts_active census (meets _ taking t _ _ present takes).1⟩)
-    (fun embodied => match binds _ embodied with
-      | ⟨t, _, arises⟩ => ⟨t, counts_arising census arises⟩)
-    (fun embodied acting transmitting => match binds _ transmitting with
-      | ⟨t, x, _, _, ⟨present, gives, comes⟩, _⟩ =>
-        ⟨t, counts_active census (meets _ acting t _ _ present gives),
-         counts_arising census ⟨fun active => comes.1 ((meets _ embodied x t).mp active),
-           (meets _ embodied x (t + 1)).mpr comes.2⟩⟩),
-   fun law n c a tally quiet bounded acts arises joint =>
-    have holds : ∀ (w : World) [∀ t x, Decidable (w.web.active t x)],
-        (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) →
-        (∀ p, S p = true → p.Holds w ∧ p.Binds w) → w.CountsObey Q := fun w _ enclosed binding =>
-      law w (fun p selected => (binding p selected).1) enclosed
-        fun p selected => (binding p selected).2
-    have relayed : S .embodied = false → ∀ U g, (S .dependent = true ∨ S .acting = true ∨
-        S .taking = true → (relayQueue n c U g).web.active U g) → Q n c a :=
-      fun disembodied _ _ active => pointwise (openQueue_counts tally)
-        (holds _ ⟨0, fun t _ => relayQueue_enclosed n c _ _ t⟩
-          (relayQueue_binding disembodied active) _ (openQueue_census n c))
-    have lossy : ∀ (T U E : Nat) (gift : Nat → Nat), 0 < a T → 0 < n U → gift U = 0 →
-        (∀ t, E ≤ t → gift t = 0) → S .balanced = false →
-        (S .acting = true → ∀ t, gift t = 0) →
-        (S .transmitting = true → T = U ∨ 0 < gift T) → Q n c a :=
-      fun _ _ _ _ joins occupied shut still unbalanced giving descends =>
-        pointwise (openQueue_counts tally)
-          (holds _ ⟨_, fun _ later => lossyQueue_enclosed tally occupied (still _ later)⟩
-            (lossyQueue_binding tally occupied joins shut unbalanced giving descends) _
-            (openQueue_census n c))
-    match he : S .embodied with
-    | false => match hp : S .dependent, ha : S .acting, ht : S .taking with
-      | false, false, false => relayed he 0 (.ground 1) fun
-          | .inl selected => nomatch hp.symm.trans selected
-          | .inr (.inl selected) => nomatch ha.symm.trans selected
-          | .inr (.inr selected) => nomatch ht.symm.trans selected
-      | true, _, _ => match acts (.inl hp) with
-        | ⟨U, occupied⟩ => relayed he U (.member (Queue.gone c U)) fun _ =>
-            OpenQueue.front.mpr occupied
-      | false, true, _ => match acts (.inr (.inl ha)) with
-        | ⟨U, occupied⟩ => relayed he U (.member (Queue.gone c U)) fun _ =>
-            OpenQueue.front.mpr occupied
-      | false, false, true => match acts (.inr (.inr ht)) with
-        | ⟨U, occupied⟩ => relayed he U (.member (Queue.gone c U)) fun _ =>
-            OpenQueue.front.mpr occupied
-    | true => match arises he with
-      | ⟨T, joins⟩ =>
-        have saturated : S .balanced = true → S .dissipative = true →
-            (∀ t, 0 < a t → 0 < n t) → Q n c a := fun hb hd company =>
-          match changeBound_iff_zero.mp (match bounded ⟨hb, he, hd⟩ with
-            | ⟨T, B, bound, _⟩ => ⟨T, B, bound⟩) with
-          | ⟨B, bound⟩ => pointwise (Queue.counts tally)
-              (holds (enclosedQueue n c a B).saturated
-                ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩
-                (fun p selected => ⟨((enclosedQueue_premised tally company bound).saturated
-                    fun t k => EnclosedQueue.level_le (n := n) (c := c) (a := a) t k).meets S p
-                      selected,
-                  enclosedQueue_saturated_binds tally company bound joins p⟩)
-                _ (enclosedQueue_census n c a B))
-        match hb : S .balanced, hd : S .dissipative, ha : S .acting, ht : S .taking,
-            hr : S .transmitting with
-        | true, false, _, _, _ => pointwise (Queue.counts tally)
-            (holds _ ⟨0, fun t _ => exchangingQueue_enclosed tally (tally.after_pos joins) t⟩
-              (exchangingQueue_binding (B := 0) tally joins hd fun selected =>
-                quiet ⟨hb, he, .inl selected⟩) _ Queue.listed)
-        | true, true, true, _, _ => saturated hb hd (quiet ⟨hb, he, .inl ha⟩)
-        | true, true, false, true, _ => saturated hb hd (quiet ⟨hb, he, .inr ⟨ht, hd⟩⟩)
-        | true, true, false, false, _ => match bounded ⟨hb, he, hd⟩ with
-          | ⟨_, _, bound, company⟩ => match tally.occupied_from company joins with
-            | ⟨_, occupied, company⟩ => pointwise (Queue.counts tally)
-                (holds _ ⟨_, fun _ later => sheddingQueue_enclosed tally occupied later⟩
-                  (sheddingQueue_binding tally bound.from_zero company occupied joins ha ht) _
-                  Queue.listed)
-        | false, _, true, _, true => match joint he ha hr with
-          | ⟨U, occupied, here⟩ => lossy U U 0 (fun _ => 0) here occupied rfl (fun _ _ => rfl)
-              hb (fun _ _ => rfl) fun _ => .inl rfl
-        | false, _, true, _, false => lossy T (T + 1) 0 (fun _ => 0) joins (tally.after_pos joins)
-            rfl (fun _ _ => rfl) hb (fun _ _ => rfl)
-            fun selected => nomatch hr.symm.trans selected
-        | false, _, false, _, _ => lossy T (T + 1) (T + 1) (fun t => mark (t = T)) joins
-            (tally.after_pos joins) (mark_zero (Nat.succ_ne_self T))
-            (fun _ later => mark_zero fun same =>
-              Nat.not_succ_le_self T (Nat.le_trans later (Nat.le_of_eq same)))
-            hb (fun selected => nomatch ha.symm.trans selected)
-            fun _ => .inr (mark_pos.mpr rfl)⟩
+  have table := census_table_obeys pointwise (enclosed_binding_counting_under_sound S)
+    (enclosed_binding_counting_under_witnessed S)
+  ⟨fun law w _ meets enclosed binds => table.mp (fun n c a tally ⟨quiet, bounded, acts, arises, joint⟩ =>
+      law n c a tally quiet bounded acts arises joint) w ⟨meets, enclosed, binds⟩,
+   fun law n c a tally quiet bounded acts arises joint => table.mpr (fun w _ ⟨meets, enclosed, binds⟩ =>
+      law w meets enclosed binds) n c a tally ⟨quiet, bounded, acts, arises, joint⟩⟩
 
 /-- So in worlds enclosed from some step on where the premises of a selection bind, something
 is active exactly where activity needing support, only active relata giving, only active
