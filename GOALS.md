@@ -131,7 +131,7 @@ Explain organization, significance, regulation, learning, selector revision, con
 
 [2026-10-06-unified-generativity-goal-and-continuity](sources/15-codex-theory-conversations/2026-10-06-unified-generativity-goal-and-continuity.md) · [2026-10-06-approved-derivation-path](sources/15-codex-theory-conversations/2026-10-06-approved-derivation-path.md) · [GENERATIVE-GROUNDING](theories/becoming/history/GENERATIVE-GROUNDING.md)
 
-[conditional-foundation-assessment](theories/becoming/results/records/conditional-foundation-assessment.md): `reviewed-scoped`
+[conditional-foundation-assessment](theories/becoming/results/records/conditional-foundation-assessment.md): `superseded`
 
 <a id="generative-relation-change-session"></a>
 <a id="生成关系怎样变化本会话目标--how-generative-relations-change-session-objective"></a>
@@ -243,7 +243,7 @@ Deductive necessity lies in the Theory of Becoming as a whole; generativity is w
 
 [becoming-spine-instances](theories/becoming/results/records/becoming-spine-instances.md): `recorded-checked`
 
-[conditional-foundation-assessment](theories/becoming/results/records/conditional-foundation-assessment.md): `reviewed-scoped`
+[conditional-foundation-assessment](theories/becoming/results/records/conditional-foundation-assessment.md): `superseded`
 
 [endpoint-loss-and-return](theories/becoming/results/records/endpoint-loss-and-return.md): `recorded-checked`
 

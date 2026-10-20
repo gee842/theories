@@ -1,0 +1,2950 @@
+[
+ {
+  "id": "a-law-through-changing-coupling-along-one-run",
+  "status": "superseded",
+  "canonical_source_retired": true,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughChangingCoupling.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughChangingCoupling.lean",
+    "module": "LawThroughChangingCoupling",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T003752.845229Z/verification.json",
+    "n_declarations": 35
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
+    "module": "LawThroughCoupling",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T003752.845229Z/verification.json",
+    "n_declarations": 5
+   }
+  ],
+  "core_proof_refs": 9,
+  "remaining_proof_bindings_after": 9,
+  "stated_by_cited_in_record": [],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "a-law-through-coupling-along-one-run",
+  "status": "superseded",
+  "canonical_source_retired": true,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughCoupling.lean",
+    "module": "LawThroughCoupling",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T200007.370225Z/verification.json",
+    "n_declarations": 28
+   }
+  ],
+  "core_proof_refs": 9,
+  "remaining_proof_bindings_after": 9,
+  "stated_by_cited_in_record": [],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "alignment-direction-g0-j",
+  "status": "reviewed-scoped",
+  "canonical_source_retired": false,
+  "canonical_source": "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean",
+    "module": "AlignmentDirection",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Frontier"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 8
+   }
+  ],
+  "core_proof_refs": 5,
+  "remaining_proof_bindings_after": 5,
+  "stated_by_cited_in_record": [
+   "Becoming.Frontier"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "assured-route-criterion",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/AssurancePlans.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean",
+    "module": "WisdomResponseStructure",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.AssurancePlans"
+    ],
+    "family": "F3R",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
+    "module": "Instances",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+    "n_declarations": 4
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 3,
+  "stated_by_cited_in_record": [
+   "Becoming.AssurancePlans"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "becoming-context-coherence",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingCompatibility.lean",
+    "module": "BecomingCompatibility",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.ContextArrivalTraces"
+    ],
+    "family": "F2",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-compatibility-checks/20261008T181443.483379Z/verification.json",
+    "n_declarations": 7
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
+    "n_declarations": 8
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 3,
+  "stated_by_cited_in_record": [
+   "Becoming.ContextArrivalTraces"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "becoming-renewal-reading",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean",
+    "module": "RenewalComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.ActiveReading"
+    ],
+    "family": "F3R",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 6,
+  "remaining_proof_bindings_after": 7,
+  "stated_by_cited_in_record": [],
+  "stated_by_not_cited": [
+   "Becoming.ActiveReading"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "becoming-spine-instances",
+  "status": "recorded-checked",
+  "canonical_source_retired": true,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 20
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/SeedReachProcesses.lean",
+    "module": "SeedReachProcesses",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean",
+    "module": "WholeGroundCoverage",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.SeedReach",
+     "Becoming.ScopedReach"
+    ],
+    "family": "F2",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CutCoverageAudit.lean",
+    "module": "CutCoverageAudit",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.SeedReach"
+    ],
+    "family": "F2",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
+    "module": "EvaluatorGrounding",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.ProfileReach"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
+    "module": "JointContinuationClassification",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Bundles"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+    "module": "PracticalJudgment",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Lexical",
+     "Becoming.Frontier"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean",
+    "module": "PracticalReach",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.MoveOutcomeProcesses"
+    ],
+    "family": "F2",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean",
+    "module": "StandardsBridge",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Narrowing"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInfrastructure.lean",
+    "module": "CorrectionInfrastructure",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Acceptance",
+     "Becoming.GuardHorizon"
+    ],
+    "family": "F3C",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+    "module": "GenerativeComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Alternatives",
+     "Becoming.Metaethics"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 6
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
+    "module": "PositionedPositiveReason",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.PositiveGround"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 2
+   }
+  ],
+  "core_proof_refs": 13,
+  "remaining_proof_bindings_after": 17,
+  "stated_by_cited_in_record": [
+   "Becoming.Alternatives",
+   "Becoming.Bundles",
+   "Becoming.Lexical",
+   "Becoming.Metaethics",
+   "Becoming.Narrowing"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Acceptance",
+   "Becoming.Frontier",
+   "Becoming.GuardHorizon",
+   "Becoming.MoveOutcomeProcesses",
+   "Becoming.PositiveGround",
+   "Becoming.ProfileReach",
+   "Becoming.ScopedReach",
+   "Becoming.SeedReach"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "branching-target-uniqueness",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+    "module": "ExplanatoryBranching",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.BranchingCorrespondence",
+     "Becoming.Granularity",
+     "Becoming.Labelled",
+     "Becoming.Likeness"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 2
+   }
+  ],
+  "core_proof_refs": 1,
+  "remaining_proof_bindings_after": 1,
+  "stated_by_cited_in_record": [
+   "Becoming.Likeness"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.BranchingCorrespondence",
+   "Becoming.Granularity",
+   "Becoming.Labelled"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "branching-tests-bisimulation",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+    "module": "ExplanatoryBranching",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.BranchingCorrespondence",
+     "Becoming.Granularity",
+     "Becoming.Labelled",
+     "Becoming.Likeness"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 5
+   }
+  ],
+  "core_proof_refs": 1,
+  "remaining_proof_bindings_after": 1,
+  "stated_by_cited_in_record": [
+   "Becoming.Likeness"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.BranchingCorrespondence",
+   "Becoming.Granularity",
+   "Becoming.Labelled"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "classification-robust-generative-comparison",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+    "module": "PracticalJudgment",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Lexical",
+     "Becoming.Frontier"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json",
+    "n_declarations": 30
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ConcernExtension.lean",
+    "module": "ConcernExtension",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Lexical"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json",
+    "n_declarations": 8
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean",
+    "module": "RelationalOrganization",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Frontier"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json",
+    "n_declarations": 13
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
+    "module": "JointContinuationClassification",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Bundles"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json",
+    "n_declarations": 5
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+    "module": "GenerativeComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Alternatives",
+     "Becoming.Metaethics"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json",
+    "n_declarations": 11
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalGrounding.lean",
+    "module": "RelationalGrounding",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Bundles"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json",
+    "n_declarations": 6
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ClassificationRobustJudgment.lean",
+    "module": "ClassificationRobustJudgment",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Lexical",
+     "Becoming.Frontier"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json",
+    "n_declarations": 13
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": false,
+    "receipt": null,
+    "n_declarations": 6
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CoursesBridge.lean",
+    "module": "CoursesBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+    "n_declarations": 3
+   }
+  ],
+  "core_proof_refs": 8,
+  "remaining_proof_bindings_after": 8,
+  "stated_by_cited_in_record": [
+   "Becoming.Alternatives",
+   "Becoming.Bundles",
+   "Becoming.Frontier",
+   "Becoming.Lexical"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Metaethics"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "code-plan-global-support",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+    "module": "ExplanatoryFootprints",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Composition",
+     "Becoming.JointCorrespondence",
+     "Becoming.ListFootprints"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-global-realization-checks/20261008T085919.976102Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CompositionBridge.lean",
+    "module": "CompositionBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.Composition",
+   "Becoming.JointCorrespondence"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.ListFootprints"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "configurations-alike-by-relation",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 8
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+    "module": "ExplanatoryBranching",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.BranchingCorrespondence",
+     "Becoming.Granularity",
+     "Becoming.Labelled",
+     "Becoming.Likeness"
+    ],
+    "family": "F3E",
+    "has_proof_binding": false,
+    "receipt": null,
+    "n_declarations": 0
+   }
+  ],
+  "core_proof_refs": 8,
+  "remaining_proof_bindings_after": 8,
+  "stated_by_cited_in_record": [
+   "Becoming.Labelled"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.BranchingCorrespondence",
+   "Becoming.Granularity",
+   "Becoming.Likeness"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "control-coherence-loss",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dephasing.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+    "module": "OperativeCoherence",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Dephasing"
+    ],
+    "family": "F3R",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-checks/20261008T184345.613262Z/verification.json",
+    "n_declarations": 10
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
+    "module": "Instances",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+    "n_declarations": 2
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 3,
+  "stated_by_cited_in_record": [
+   "Becoming.Dephasing"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "derivation-soundness",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean",
+    "module": "GenerativeClosure",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Derivation"
+    ],
+    "family": "F3Q",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": false,
+    "receipt": null,
+    "n_declarations": 3
+   }
+  ],
+  "core_proof_refs": 1,
+  "remaining_proof_bindings_after": 0,
+  "stated_by_cited_in_record": [
+   "Becoming.Derivation"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": false
+ },
+ {
+  "id": "derived-history-law-exactness",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean",
+    "module": "DerivedHistoryLaw",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.SummaryFutures"
+    ],
+    "family": "F2",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/derived-history-law-checks/20261008T181617.432149Z/receipt.json",
+    "n_declarations": 6
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 4
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 3,
+  "stated_by_cited_in_record": [
+   "Becoming.SummaryFutures"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "effective-capacity-and-eventual-reachability",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActivationCapacity.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+    "module": "RelationalBecoming",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.ActivationCapacity"
+    ],
+    "family": "F3R",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+    "n_declarations": 5
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
+    "module": "JointContinuationClassification",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Bundles"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+    "n_declarations": 7
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.ActivationCapacity",
+   "Becoming.Bundles"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "endpoint-loss-and-return",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean",
+    "module": "BecomingReversibility",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Irreversibility"
+    ],
+    "family": "F2",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-reversibility-verification.json",
+    "n_declarations": 0
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 3
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.Irreversibility"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "exclusive-footprint-support",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+    "module": "ExplanatoryFootprints",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Composition",
+     "Becoming.JointCorrespondence",
+     "Becoming.ListFootprints"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-global-realization-checks/20261008T085919.976102Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CompositionBridge.lean",
+    "module": "CompositionBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.Composition"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.JointCorrespondence",
+   "Becoming.ListFootprints"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "fallible-witness-diagnosability",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/WitnessRefinement.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean",
+    "module": "FallibleInspection",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.WitnessRefinement"
+    ],
+    "family": "F3C",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fallible-inspection-verification.json",
+    "n_declarations": 3
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 3
+   }
+  ],
+  "core_proof_refs": 4,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.WitnessRefinement"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "finite-aggregation-within-restorable-basic-losses",
+  "status": "reviewed-scoped",
+  "canonical_source_retired": false,
+  "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean",
+    "module": "RepairComparison",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+    "n_declarations": 56
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean",
+    "module": "GenerativeLossComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.StrictTransport"
+    ],
+    "family": "F3R",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122128.341270Z/verification.json",
+    "n_declarations": 5
+   }
+  ],
+  "core_proof_refs": 4,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.StrictTransport"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "finite-basis-common-interpretation",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean",
+    "module": "JointInterpretation",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Derivation"
+    ],
+    "family": "F3Q",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": false,
+    "receipt": null,
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 1,
+  "remaining_proof_bindings_after": 1,
+  "stated_by_cited_in_record": [
+   "Becoming.Derivation"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "finite-granularity-question-recovery",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularity.lean",
+    "module": "ExplanatoryGranularity",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Grains",
+     "Becoming.Granularity"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-granularity-checks/20261008T181446.359434Z/receipt.json",
+    "n_declarations": 5
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/GranularityBridge.lean",
+    "module": "GranularityBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+    "n_declarations": 9
+   }
+  ],
+  "core_proof_refs": 1,
+  "remaining_proof_bindings_after": 1,
+  "stated_by_cited_in_record": [
+   "Becoming.Granularity"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Grains"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "finite-joining-tree-lifting",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodes.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+    "module": "ExplanatoryJoiningBranches",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.BranchingCorrespondence",
+     "Becoming.Joining",
+     "Becoming.JoiningCodes",
+     "Becoming.Likeness",
+     "Becoming.Presentations"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
+    "module": "JoiningBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.Joining",
+   "Becoming.JoiningCodes"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.BranchingCorrespondence",
+   "Becoming.Likeness",
+   "Becoming.Presentations"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "fulfillment-chance-floor",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ChanceFloors.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean",
+    "module": "ChanceAdequacy",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.ChanceFloors",
+     "Becoming.Weighted"
+    ],
+    "family": "F3C",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-adequacy-verification.json",
+    "n_declarations": 3
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 3
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 3,
+  "stated_by_cited_in_record": [
+   "Becoming.ChanceFloors",
+   "Becoming.Weighted"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "functional-joining-common-structure",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Presentations.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean",
+    "module": "ExplanatoryContextualStructure",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Joining",
+     "Becoming.JoiningCodes",
+     "Becoming.JoiningContexts",
+     "Becoming.Presentations"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
+    "module": "JoiningBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 3,
+  "stated_by_cited_in_record": [
+   "Becoming.Joining",
+   "Becoming.JoiningContexts",
+   "Becoming.Presentations"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.JoiningCodes"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "guarded-program-question-recovery",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean",
+    "module": "ExplanatoryGuardedPrograms",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Grains",
+     "Becoming.Granularity"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-resumption-checks/20261008T183544.703004Z/receipt.json",
+    "n_declarations": 7
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/GranularityBridge.lean",
+    "module": "GranularityBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+    "n_declarations": 13
+   }
+  ],
+  "core_proof_refs": 1,
+  "remaining_proof_bindings_after": 1,
+  "stated_by_cited_in_record": [
+   "Becoming.Granularity"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Grains"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "incidence-common-refinement",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean",
+    "module": "ExplanatoryJoiningIncidence",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Joining",
+     "Becoming.JoiningRoles"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 5
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+    "module": "ExplanatoryBranching",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.BranchingCorrespondence",
+     "Becoming.Granularity",
+     "Becoming.Labelled",
+     "Becoming.Likeness"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean",
+    "module": "ExplanatoryJoiningAnchors",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Joining",
+     "Becoming.JoiningRoles",
+     "Becoming.Likeness"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
+    "module": "JoiningBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+    "n_declarations": 2
+   }
+  ],
+  "core_proof_refs": 4,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.BranchingCorrespondence",
+   "Becoming.Granularity",
+   "Becoming.Joining",
+   "Becoming.JoiningRoles"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Labelled",
+   "Becoming.Likeness"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "joining-open-map-factor",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean",
+    "module": "ExplanatoryJoiningRefinement",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Joining",
+     "Becoming.JoiningRoles"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 4
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
+    "module": "JoiningBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+    "n_declarations": 2
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.Joining",
+   "Becoming.JoiningRoles"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "joining-questions-survive-encoding",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodes.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+    "module": "ExplanatoryJoiningBranches",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.BranchingCorrespondence",
+     "Becoming.Joining",
+     "Becoming.JoiningCodes",
+     "Becoming.Likeness",
+     "Becoming.Presentations"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
+    "module": "JoiningBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+    "n_declarations": 3
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.Joining",
+   "Becoming.JoiningCodes"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.BranchingCorrespondence",
+   "Becoming.Likeness",
+   "Becoming.Presentations"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "joint-code-plan-lifting",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+    "module": "ExplanatoryJointness",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Composition",
+     "Becoming.JointCorrespondence"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CompositionBridge.lean",
+    "module": "CompositionBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 3,
+  "stated_by_cited_in_record": [
+   "Becoming.Composition",
+   "Becoming.JointCorrespondence"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "joint-correlation-reduced-dynamics",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPhase.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean",
+    "module": "SystemsOrganization",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.ProjectedLaws"
+    ],
+    "family": "F3R",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+    "module": "OperativeCoherence",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Dephasing"
+    ],
+    "family": "F3R",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
+    "n_declarations": 3
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean",
+    "module": "RelationalReduction",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.JointPhase"
+    ],
+    "family": "F3R",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
+    "n_declarations": 7
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
+    "module": "Instances",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+    "n_declarations": 3
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.JointPhase"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Dephasing",
+   "Becoming.ProjectedLaws"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "joint-decomposition-lifting",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+    "module": "ExplanatoryJointness",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Composition",
+     "Becoming.JointCorrespondence"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CompositionBridge.lean",
+    "module": "CompositionBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.Composition",
+   "Becoming.JointCorrespondence"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "joint-target-uniqueness",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+    "module": "ExplanatoryJointness",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Composition",
+     "Becoming.JointCorrespondence"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CompositionBridge.lean",
+    "module": "CompositionBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 1,
+  "remaining_proof_bindings_after": 1,
+  "stated_by_cited_in_record": [
+   "Becoming.Composition"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.JointCorrespondence"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "multivalued-joining-common-structure",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+    "module": "ExplanatoryJoiningBranches",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.BranchingCorrespondence",
+     "Becoming.Joining",
+     "Becoming.JoiningCodes",
+     "Becoming.Likeness",
+     "Becoming.Presentations"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+    "n_declarations": 5
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+    "module": "ExplanatoryBranching",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.BranchingCorrespondence",
+     "Becoming.Granularity",
+     "Becoming.Labelled",
+     "Becoming.Likeness"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
+    "module": "JoiningBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+    "n_declarations": 3
+   }
+  ],
+  "core_proof_refs": 4,
+  "remaining_proof_bindings_after": 5,
+  "stated_by_cited_in_record": [
+   "Becoming.BranchingCorrespondence",
+   "Becoming.Joining",
+   "Becoming.JoiningCodes",
+   "Becoming.Presentations"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Granularity",
+   "Becoming.Labelled",
+   "Becoming.Likeness"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "one-axiom-yields-g0",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 5
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+    "module": "GenerativeComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Alternatives",
+     "Becoming.Metaethics"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
+    "module": "PositiveGroundUncertainty",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.PositiveGround"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
+    "module": "PositionedPositiveReason",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.PositiveGround"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 11,
+  "remaining_proof_bindings_after": 11,
+  "stated_by_cited_in_record": [
+   "Becoming.Alternatives",
+   "Becoming.Metaethics"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.PositiveGround"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "open-form-realization-under-revision",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean",
+    "module": "OpenFutureRevision",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Handoff"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-verification.json",
+    "n_declarations": 10
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean",
+    "module": "ContinuationRenewal",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.RenewalBound"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
+    "module": "PositiveGroundUncertainty",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.PositiveGround"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 4
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 3,
+  "stated_by_cited_in_record": [
+   "Becoming.Handoff",
+   "Becoming.RenewalBound"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.PositiveGround"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "organizational-formation-from-generative-comparison",
+  "status": "reviewed-scoped",
+  "canonical_source_retired": false,
+  "canonical_source": "theories/becoming/chapters/ETHICAL-LEARNING.md",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean",
+    "module": "RelationalOrganization",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Frontier"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json",
+    "n_declarations": 4
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 3
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.Frontier"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "organizational-rule-inheritance",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleHandoff.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/OrganizationalRuleInheritance.lean",
+    "module": "OrganizationalRuleInheritance",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.RuleHandoff"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/verification.json",
+    "n_declarations": 5
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
+    "module": "Instances",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+    "n_declarations": 7
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.RuleHandoff"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "positioned-positive-reason",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
+    "module": "PositionedPositiveReason",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.PositiveGround"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 10
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
+    "module": "PositiveGroundUncertainty",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.PositiveGround"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+    "module": "GenerativeComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Alternatives",
+     "Becoming.Metaethics"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": false,
+    "receipt": null,
+    "n_declarations": 4
+   }
+  ],
+  "core_proof_refs": 4,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.Metaethics"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Alternatives",
+   "Becoming.PositiveGround"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "positive-ground-open-futures",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
+    "module": "PositiveGroundUncertainty",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.PositiveGround"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 9
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+    "module": "GenerativeComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Alternatives",
+     "Becoming.Metaethics"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+    "module": "PracticalJudgment",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Lexical",
+     "Becoming.Frontier"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
+    "module": "JointContinuationClassification",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Bundles"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/positive-ground-uncertainty-verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean",
+    "module": "StandardsBridge",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Narrowing"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/positive-ground-uncertainty-verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": false,
+    "receipt": null,
+    "n_declarations": 6
+   }
+  ],
+  "core_proof_refs": 6,
+  "remaining_proof_bindings_after": 6,
+  "stated_by_cited_in_record": [
+   "Becoming.Bundles",
+   "Becoming.Narrowing"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Alternatives",
+   "Becoming.Frontier",
+   "Becoming.Lexical",
+   "Becoming.Metaethics",
+   "Becoming.PositiveGround"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "practical-judgment-g0-j",
+  "status": "reviewed-scoped",
+  "canonical_source_retired": false,
+  "canonical_source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+    "module": "PracticalJudgment",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Lexical",
+     "Becoming.Frontier"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 3
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 10
+   }
+  ],
+  "core_proof_refs": 6,
+  "remaining_proof_bindings_after": 6,
+  "stated_by_cited_in_record": [
+   "Becoming.Frontier",
+   "Becoming.Lexical"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "prefix-observation-loss",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean",
+    "module": "ExplanatoryGranularityBoundary",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Grains",
+     "Becoming.Granularity",
+     "Becoming.Presentations"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-granularity-checks/20261008T181446.359434Z/receipt.json",
+    "n_declarations": 8
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.Granularity",
+   "Becoming.Presentations"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Grains"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "protection-priority-excludes-uniform-aggregation",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
+    "module": "ProtectionPriorityRival",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.ScoreRepresentation"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
+    "n_declarations": 10
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+    "module": "GenerativeComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Alternatives",
+     "Becoming.Metaethics"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
+    "n_declarations": 3
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+    "module": "PracticalJudgment",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Lexical",
+     "Becoming.Frontier"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 2
+   }
+  ],
+  "core_proof_refs": 4,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.Lexical",
+   "Becoming.ScoreRepresentation"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Alternatives",
+   "Becoming.Frontier",
+   "Becoming.Metaethics"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "ranking-under-readings",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 2
+   }
+  ],
+  "core_proof_refs": 8,
+  "remaining_proof_bindings_after": 7,
+  "stated_by_cited_in_record": [],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "relational-generative-comparison",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalGrounding.lean",
+    "module": "RelationalGrounding",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Bundles"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-verification.json",
+    "n_declarations": 6
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
+    "module": "JointContinuationClassification",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Bundles"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+    "module": "GenerativeComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Alternatives",
+     "Becoming.Metaethics"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 2
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 3,
+  "stated_by_cited_in_record": [
+   "Becoming.Bundles"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Alternatives",
+   "Becoming.Metaethics"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "relational-reading-comparison",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean",
+    "module": "RenewalComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.ActiveReading"
+    ],
+    "family": "F3R",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-verification.json",
+    "n_declarations": 7
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+    "module": "GenerativeComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Alternatives",
+     "Becoming.Metaethics"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-verification.json",
+    "n_declarations": 3
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean",
+    "module": "RenewalBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 2
+   }
+  ],
+  "core_proof_refs": 4,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.ActiveReading"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Alternatives",
+   "Becoming.Metaethics"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "renewing-consuming-formation",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+    "module": "GenerativeComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Alternatives",
+     "Becoming.Metaethics"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 5,
+  "stated_by_cited_in_record": [],
+  "stated_by_not_cited": [
+   "Becoming.Alternatives",
+   "Becoming.Metaethics"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "reserved-shutdown-during-recovery",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+    "module": "EffectiveCommand",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Actuation"
+    ],
+    "family": "F3C",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reserved-shutdown-verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 6,
+  "stated_by_cited_in_record": [
+   "Becoming.Actuation"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "residual-continuation-correspondence",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean",
+    "module": "ExplanatoryResiduals",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Granularity"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-resumption-checks/20261008T183544.703004Z/receipt.json",
+    "n_declarations": 5
+   }
+  ],
+  "core_proof_refs": 1,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.Granularity"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "retained-reference-joining-recovery",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean",
+    "module": "ExplanatoryJoiningRegisters",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Joining",
+     "Becoming.JoiningRoles"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 6
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+    "module": "ExplanatoryBranching",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.BranchingCorrespondence",
+     "Becoming.Granularity",
+     "Becoming.Labelled",
+     "Becoming.Likeness"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean",
+    "module": "ExplanatoryJoiningAnchors",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Joining",
+     "Becoming.JoiningRoles",
+     "Becoming.Likeness"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
+    "module": "JoiningBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 5,
+  "remaining_proof_bindings_after": 5,
+  "stated_by_cited_in_record": [
+   "Becoming.BranchingCorrespondence",
+   "Becoming.Joining",
+   "Becoming.JoiningRoles",
+   "Becoming.Labelled"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Granularity",
+   "Becoming.Likeness"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "self-good-reachable-g0",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
+    "module": "EvaluatorGrounding",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.ProfileReach"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 12
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+    "module": "GenerativeComparison",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Alternatives",
+     "Becoming.Metaethics"
+    ],
+    "family": "F3J",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 7
+   }
+  ],
+  "core_proof_refs": 4,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.Metaethics",
+   "Becoming.ProfileReach"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.Alternatives"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "supported-renewal-recovery",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
+    "module": "RenewalRecovery",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.SupportRecovery"
+    ],
+    "family": "F3R",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json",
+    "n_declarations": 9
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean",
+    "module": "RenewalBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 3,
+  "stated_by_cited_in_record": [],
+  "stated_by_not_cited": [
+   "Becoming.SupportRecovery"
+  ],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "tests-fix-likeness-where-determined",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 10
+   }
+  ],
+  "core_proof_refs": 9,
+  "remaining_proof_bindings_after": 10,
+  "stated_by_cited_in_record": [],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "trace-law-equivalence",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+    "module": "DynamicConsequences",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Carriers",
+     "Becoming.Labelled"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 1
+   }
+  ],
+  "core_proof_refs": 2,
+  "remaining_proof_bindings_after": 2,
+  "stated_by_cited_in_record": [
+   "Becoming.Carriers",
+   "Becoming.Labelled"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "transition-grouping-word-partition",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnedGrouping.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean",
+    "module": "AcquiredSegmentation",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.LearnedGrouping"
+    ],
+    "family": "F3Q",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json",
+    "n_declarations": 4
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
+    "module": "Instances",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+    "n_declarations": 6
+   }
+  ],
+  "core_proof_refs": 3,
+  "remaining_proof_bindings_after": 4,
+  "stated_by_cited_in_record": [
+   "Becoming.LearnedGrouping"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "unanchored-incidence-collapse",
+  "status": "recorded-checked",
+  "canonical_source_retired": false,
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningRoles.lean",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean",
+    "module": "ExplanatoryJoiningAnchors",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Joining",
+     "Becoming.JoiningRoles",
+     "Becoming.Likeness"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 7
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean",
+    "module": "ExplanatoryJoiningRefinement",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Joining",
+     "Becoming.JoiningRoles"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLocalUnits.lean",
+    "module": "ExplanatoryLocalUnits",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.LocalUnits"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean",
+    "module": "ExplanatoryJoining",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Fragments"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
+    "n_declarations": 1
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
+    "module": "JoiningBridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+    "n_declarations": 5
+   }
+  ],
+  "core_proof_refs": 5,
+  "remaining_proof_bindings_after": 5,
+  "stated_by_cited_in_record": [
+   "Becoming.Fragments",
+   "Becoming.Joining",
+   "Becoming.JoiningRoles",
+   "Becoming.Likeness",
+   "Becoming.LocalUnits"
+  ],
+  "stated_by_not_cited": [],
+  "still_valid_after_rerole": true
+ },
+ {
+  "id": "wisdom-root",
+  "status": "open",
+  "canonical_source_retired": false,
+  "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+  "retired_proof_refs": [
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean",
+    "module": "GenerativeClosure",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Derivation"
+    ],
+    "family": "F3Q",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-checks/20261008T114133.852211Z/receipt.json",
+    "n_declarations": 3
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean",
+    "module": "JointInterpretation",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Derivation"
+    ],
+    "family": "F3Q",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-checks/20261008T114133.852211Z/receipt.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+    "module": "Bridge",
+    "in_retire_json": false,
+    "lean_history": true,
+    "stated_by": [],
+    "family": null,
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+    "n_declarations": 2
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean",
+    "module": "ExplanatoryContextualStructure",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.Joining",
+     "Becoming.JoiningCodes",
+     "Becoming.JoiningContexts",
+     "Becoming.Presentations"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json",
+    "n_declarations": 3
+   },
+   {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+    "module": "ExplanatoryJoiningBranches",
+    "in_retire_json": true,
+    "lean_history": false,
+    "stated_by": [
+     "Becoming.BranchingCorrespondence",
+     "Becoming.Joining",
+     "Becoming.JoiningCodes",
+     "Becoming.Likeness",
+     "Becoming.Presentations"
+    ],
+    "family": "F3E",
+    "has_proof_binding": true,
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+    "n_declarations": 4
+   }
+  ],
+  "core_proof_refs": 25,
+  "remaining_proof_bindings_after": 33,
+  "stated_by_cited_in_record": [
+   "Becoming.Derivation",
+   "Becoming.Joining",
+   "Becoming.JoiningCodes",
+   "Becoming.JoiningContexts",
+   "Becoming.Presentations"
+  ],
+  "stated_by_not_cited": [
+   "Becoming.BranchingCorrespondence",
+   "Becoming.Likeness"
+  ],
+  "still_valid_after_rerole": true
+ }
+]

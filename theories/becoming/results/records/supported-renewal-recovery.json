@@ -145,7 +145,7 @@
     "RenewalRecovery.recovered_history_neither_global_class",
     "Becoming.Flow.restores",
     "Becoming.SupportGated.repair_restores",
-    "Becoming.SupportGated.pulse_restores"
+    "Becoming.SupportGated.pulse_restores (retired module)"
   ],
   "dependencies": [
     {
@@ -191,7 +191,7 @@
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
-      "role": "proof",
+      "role": "provenance",
       "sha256": "693840cd3b0ff85e82cd093994e748255a2d407498cd89745a62ba3b9b70cfa3",
       "declarations": [
         "RenewalRecovery.inactive_pair_absorbs",
@@ -248,7 +248,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean",
-      "role": "proof",
+      "role": "provenance",
       "sha256": "ae3569b0dcb912f605231c5d903f188480158c35c552bb4cba9ee668be187cf7",
       "declarations": [
         "Becoming.SupportGated.pulse_restores"
@@ -334,23 +334,9 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json",
-      "sha256_pointer": "/modules/1/source_sha256",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Continuation",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -393,6 +379,10 @@
     {
       "en": "2026-10-20: 12 bookkeeping notes condensed from 14 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/228cd4e596998256/supported-renewal-recovery.json and in git.",
       "zh": "2026-10-20：12 条记账性说明合并（14 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/228cd4e596998256/supported-renewal-recovery.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (RenewalBridge and RenewalRecovery) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Continuation, Becoming.RenewalFlow and RelationalRenewal). The retired modules' content is also stated in Becoming.SupportRecovery, which this record does not cite with declarations. 1 aliases naming retired declarations are marked \"(retired module)\". The claim is unchanged.",
+      "zh": "20 October 2026, R35 (twentieth review, E8)：对已被取代的外围模块（RenewalBridge and RenewalRecovery）的证明引用改为来源（provenance），保留其声明，删去其绑定；当前证明是本记录仍作为证明引用的模块（Becoming.Continuation, Becoming.RenewalFlow and RelationalRenewal）。退役模块的内容也陈述于 Becoming.SupportRecovery，本记录未以声明引用它们。1 个指向退役声明的别名标为“(retired module)”。主张不变。"
     }
   ],
   "text_versions": [

@@ -46,11 +46,11 @@ No dependency on another migrated record is asserted; source imports and supplie
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [ExplanatoryBranching.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean) | `Generative.ExplanatoryBranching.same_iff_bisimilar` |
+| provenance | [ExplanatoryBranching.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean) | `Generative.ExplanatoryBranching.same_iff_bisimilar` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-branching-checks/20261007T233522.275247Z/receipt.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Likeness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean) | `Becoming.Alike.sameBranchingTests`, `Becoming.apart_of_not_sameBranchingTests`, `Becoming.alike_of_sameBranchingTests_of_em`, `Becoming.alike_iff_sameBranchingTests_of_em`, `Becoming.OutcomesListed.alike_iff_sameBranchingTests`, `Becoming.alike_of_sameBranchingTests_outcomes_iff` |
-| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean) | `Becoming.Frame.ofModel`, `Becoming.branching_bisimulation_iff`, `Becoming.sameBranchingTests_iff_same`, `Becoming.same_iff_alike_of_imageFinite`, `Becoming.same_iff_bisimilar_of_em` |
+| provenance | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean) | `Becoming.Frame.ofModel`, `Becoming.branching_bisimulation_iff`, `Becoming.sameBranchingTests_iff_same`, `Becoming.same_iff_alike_of_imageFinite`, `Becoming.same_iff_bisimilar_of_em` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json) | — |
 | provenance | [2026-10-14-likeness-readings.md](../../../../sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
@@ -75,7 +75,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Whether a principle weaker than excluded middle suffices where the moves or conditions are not listed.
 
-Aliases: `Generative.ExplanatoryBranching.same_iff_bisimilar`, `Becoming.same_iff_bisimilar_of_em`
+Aliases: `Generative.ExplanatoryBranching.same_iff_bisimilar (retired module)`, `Becoming.same_iff_bisimilar_of_em (retired module)`
 
 <a id="沿革-history"></a>
 ## History
@@ -86,4 +86,5 @@ Aliases: `Generative.ExplanatoryBranching.same_iff_bisimilar`, `Becoming.same_if
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Likeness.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
 - 20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Likeness.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Likeness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Likeness.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Likeness.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.
+- 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (Bridge and ExplanatoryBranching) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Likeness). The retired modules' content is also stated in Becoming.BranchingCorrespondence, Becoming.Granularity and Becoming.Labelled, which this record does not cite with declarations. 2 aliases naming retired declarations are marked "(retired module)". The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](branching-tests-bisimulation.json).

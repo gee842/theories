@@ -28,6 +28,10 @@
     {
       "en": "2026-10-20: 8 bookkeeping notes condensed from 16 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/ff89413324fa6362/finite-granularity-question-recovery.json and in git.",
       "zh": "2026-10-20：8 条记账性说明合并（16 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/ff89413324fa6362/finite-granularity-question-recovery.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (ExplanatoryGranularity and GranularityBridge) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Granularity). The retired modules' content is also stated in Becoming.Grains, which this record does not cite with declarations. 2 aliases naming retired declarations are marked \"(retired module)\". The claim is unchanged.",
+      "zh": "20 October 2026, R35 (twentieth review, E8)：对已被取代的外围模块（ExplanatoryGranularity and GranularityBridge）的证明引用改为来源（provenance），保留其声明，删去其绑定；当前证明是本记录仍作为证明引用的模块（Becoming.Granularity）。退役模块的内容也陈述于 Becoming.Grains，本记录未以声明引用它们。2 个指向退役声明的别名标为“(retired module)”。主张不变。"
     }
   ],
   "id": "finite-granularity-question-recovery",
@@ -55,10 +59,10 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
   "aliases": [
-    "Generative.ExplanatoryGranularity.cross_granularity_history_matches",
+    "Generative.ExplanatoryGranularity.cross_granularity_history_matches (retired module)",
     "Becoming.Frame.holds_blocks",
     "Becoming.Frame.blocks_history_matches_of_em",
-    "Becoming.cross_granularity_history_matches_of_em"
+    "Becoming.cross_granularity_history_matches_of_em (retired module)"
   ],
   "dependencies": [
     {
@@ -147,7 +151,7 @@
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularity.lean",
-      "role": "proof",
+      "role": "provenance",
       "sha256": "527e39410f2a75eac547216163b388f41b6e24c414315cf3d4728d0d88e0dd94",
       "declarations": [
         "Generative.ExplanatoryGranularity.compile_correct",
@@ -197,7 +201,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/GranularityBridge.lean",
-      "role": "proof",
+      "role": "provenance",
       "sha256": "441e190ce5f748dc5cdf6b925f10276428bf4df4714f5ac46e6d5d1446e677a0",
       "declarations": [
         "Becoming.blocks_ofModel",
@@ -232,23 +236,9 @@
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularity.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-granularity-checks/20261008T181446.359434Z/receipt.json",
-      "sha256_pointer": "/modules/17/sha256",
-      "success_pointer": "/passed",
-      "success_value": true
-    },
-    {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Granularity",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/GranularityBridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.GranularityBridge",
       "success_pointer": "/status",
       "success_value": "passed"
     }

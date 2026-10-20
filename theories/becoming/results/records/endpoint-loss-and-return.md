@@ -45,14 +45,14 @@ No dependency on another migrated record is asserted; source imports and supplie
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [BecomingReversibility.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean) | — |
+| provenance | [BecomingReversibility.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean) | — |
 | proof | [GenerativeCore.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) | — |
 | receipt | [becoming-reversibility-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-reversibility-verification.json) | — |
 | integration | [BECOMING-REVERSIBILITY-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md) | — |
 | provenance | [2026-10-08-theory-of-becoming-priority.md](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) | — |
 | proof | [Labelled.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean) | `Becoming.keeps_reach_iff_returns`, `Becoming.same_reach_iff_returns`, `Becoming.not_returns_iff_loses` |
 | proof | [Irreversibility.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Irreversibility.lean) | `Becoming.Irreversibility.deadEnd_no_return`, `Becoming.Irreversibility.same_change_different_return`, `Becoming.Irreversibility.constant_reading_hides_loss` |
-| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean) | `Becoming.keeps_possible_iff_keeps_reach`, `Becoming.same_endpoint_possibilities_iff_return_by_core`, `Becoming.irreversible_iff_endpoint_loss_by_core` |
+| provenance | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean) | `Becoming.keeps_possible_iff_keeps_reach`, `Becoming.same_endpoint_possibilities_iff_return_by_core`, `Becoming.irreversible_iff_endpoint_loss_by_core` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
@@ -78,4 +78,5 @@ Aliases: `BecomingReversibility.same_endpoint_possibilities_iff_return`, `Becomi
 
 - 9 October 2026: checked structural connection and author counterreview registered. Helpers and repeated applications are not counted as independent foundational results.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Labelled.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.
+- 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (BecomingReversibility and Bridge) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Irreversibility, Becoming.Labelled and GenerativeCore). The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](endpoint-loss-and-return.json).

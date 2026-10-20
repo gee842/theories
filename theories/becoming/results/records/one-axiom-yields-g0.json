@@ -659,7 +659,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
-      "role": "proof",
+      "role": "provenance",
       "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
       "declarations": [
         "Becoming.inventory_g0_of_unrestricted",
@@ -671,7 +671,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
-      "role": "proof",
+      "role": "provenance",
       "sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
       "declarations": [
         "GenerativeComparison.G0",
@@ -680,7 +680,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
-      "role": "proof",
+      "role": "provenance",
       "sha256": "86ff096d42b7246b74242ba0e68ec90d3624392f14303b0dcd6e8a9c59e42fcd",
       "declarations": [
         "PositiveGroundUncertainty.contingent_generation_has_positive_ground"
@@ -688,7 +688,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
-      "role": "proof",
+      "role": "provenance",
       "sha256": "95cf5800f6827d1896cac186113cccf9561768693c6d6e867a3626cd04fc8408",
       "declarations": [
         "PositionedPositiveReason.every_situated_position_has_reason"
@@ -897,34 +897,6 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Bridge",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
-      "sha256_pointer": "/source_sha256/GenerativeComparison",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
-      "sha256_pointer": "/source_sha256/PositiveGroundUncertainty",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
-      "sha256_pointer": "/source_sha256/PositionedPositiveReason",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Alternatives",
@@ -1072,6 +1044,10 @@
     {
       "en": "2026-10-20: 70 bookkeeping notes condensed from 2026-10-10 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/745af610045c87a3/one-axiom-yields-g0.json and in git.",
       "zh": "2026-10-20：70 条记账性说明合并（2026-10-10 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/745af610045c87a3/one-axiom-yields-g0.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (Bridge, GenerativeComparison, PositionedPositiveReason and PositiveGroundUncertainty) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Admission, Becoming.Alternatives, Becoming.Dependence, Becoming.Extension, Becoming.Frame, Becoming.Metaethics, Becoming.Relevance, Becoming.Retaining, Becoming.SecuredContent, Becoming.Significance and Becoming.ValuationFrames). The retired modules' content is also stated in Becoming.PositiveGround, which this record does not cite with declarations. The claim is unchanged.",
+      "zh": "20 October 2026, R35 (twentieth review, E8)：对已被取代的外围模块（Bridge, GenerativeComparison, PositionedPositiveReason and PositiveGroundUncertainty）的证明引用改为来源（provenance），保留其声明，删去其绑定；当前证明是本记录仍作为证明引用的模块（Becoming.Admission, Becoming.Alternatives, Becoming.Dependence, Becoming.Extension, Becoming.Frame, Becoming.Metaethics, Becoming.Relevance, Becoming.Retaining, Becoming.SecuredContent, Becoming.Significance and Becoming.ValuationFrames）。退役模块的内容也陈述于 Becoming.PositiveGround，本记录未以声明引用它们。主张不变。"
     }
   ],
   "text_versions": [

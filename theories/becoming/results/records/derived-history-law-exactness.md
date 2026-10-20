@@ -50,14 +50,14 @@ Finite existential word feasibility only: no endpoint, branch-identity, probabil
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [DerivedHistoryLaw.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean) | `Generative.DerivedHistoryLaw.admitted_extension_projects`, `Generative.DerivedHistoryLaw.derived_trace_sound`, `Generative.DerivedHistoryLaw.exact_iff_fiber_future`, `Generative.DerivedHistoryLaw.distinguishing_merge_creates_false_continuation`, `Generative.DerivedHistoryLaw.unrestricted_summary_exact`, `Generative.DerivedHistoryLaw.exact_futures_can_change_encoded_endpoint` |
+| provenance | [DerivedHistoryLaw.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean) | `Generative.DerivedHistoryLaw.admitted_extension_projects`, `Generative.DerivedHistoryLaw.derived_trace_sound`, `Generative.DerivedHistoryLaw.exact_iff_fiber_future`, `Generative.DerivedHistoryLaw.distinguishing_merge_creates_false_continuation`, `Generative.DerivedHistoryLaw.unrestricted_summary_exact`, `Generative.DerivedHistoryLaw.exact_futures_can_change_encoded_endpoint` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/derived-history-law-checks/20261008T181617.432149Z/receipt.json) | — |
 | integration | [DEDUCTIVE-FOUNDATION-TEST.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) | — |
 | provenance | [check_derived_history_law.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_derived_history_law.py) | — |
 | proof | [Readout.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean) | `Becoming.Readout.SameFutures`, `Becoming.Readout.futures_through_iff` |
 | proof | [Mechanism.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean) | `Becoming.Image` |
 | proof | [SummaryFutures.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SummaryFutures.lean) | `Becoming.SummaryFutures.every_word`, `Becoming.SummaryFutures.futures_through`, `Becoming.SummaryFutures.endpoint_moved` |
-| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean) | `Becoming.admittedProcess`, `Becoming.admitted_feasible_iff`, `Becoming.derived_same_steps`, `Becoming.exact_iff_fiber_future_by_core` |
+| provenance | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean) | `Becoming.admittedProcess`, `Becoming.admitted_feasible_iff`, `Becoming.derived_same_steps`, `Becoming.exact_iff_fiber_future_by_core` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
@@ -74,7 +74,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Establish deductive warrant for the universal operative relationship and its actual interpretation; do not require every particular history language to be necessary or substitute another equivalent encoding for that warrant.
 
-Aliases: `Generative.DerivedHistoryLaw.exact_iff_fiber_future`, `Becoming.exact_iff_fiber_future_by_core`
+Aliases: `Generative.DerivedHistoryLaw.exact_iff_fiber_future (retired module)`, `Becoming.exact_iff_fiber_future_by_core (retired module)`
 
 <a id="沿革-history"></a>
 ## History
@@ -84,4 +84,5 @@ Aliases: `Generative.DerivedHistoryLaw.exact_iff_fiber_future`, `Becoming.exact_
 - 2026-10-09: appended the activity-first diagnostic correction; preserved earlier study and proofs, with no new result or foundational closure.
 - 9 October 2026: reconciled Ren’s whole/manifold correction. The necessity target is Becoming as a whole, with generativity within it. Earlier chapter/study content and proof sources are preserved; no new theorem or axiom.
 - 20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Removed, with the statement kept under one name: Readout.image (now Image). Proof bindings (Readout.lean, SummaryFutures.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Readout.lean, Readout.image removed for Image of Becoming.Mechanism; SummaryFutures.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.
+- 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (Bridge and DerivedHistoryLaw) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Mechanism, Becoming.Readout and Becoming.SummaryFutures). 2 aliases naming retired declarations are marked "(retired module)". The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derived-history-law-exactness.json).

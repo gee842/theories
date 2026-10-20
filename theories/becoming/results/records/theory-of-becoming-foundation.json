@@ -35,14 +35,6 @@
       }
     },
     {
-      "id": "conditional-foundation-assessment",
-      "relation": "interpretive",
-      "detail": {
-        "en": "Credits completed conditional mechanisms and the original five-condition assessment without substituting them for the stronger target.",
-        "zh": "信用已完成条件机制及原五条件验收，不用它们替代更强目标。"
-      }
-    },
-    {
       "id": "control-coherence-loss",
       "relation": "interpretive",
       "detail": {
@@ -120,6 +112,13 @@
       "detail": {
         "en": "The census is a reading of the exchange under enclosure.",
         "zh": "普查在被围住时是交换的读法。"
+      }
+    },
+    {
+      "id": "conditional-foundation-assessment",
+      "detail": {
+        "en": "Credits completed conditional mechanisms and the original five-condition assessment without substituting them for the stronger target.",
+        "zh": "信用已完成条件机制及原五条件验收，不用它们替代更强目标。"
       }
     }
   ],
@@ -349,6 +348,10 @@
     {
       "en": "2026-10-20: 6 bookkeeping notes condensed from 17 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/0021d756ea348872/theory-of-becoming-foundation.json and in git.",
       "zh": "2026-10-20：6 条记账性说明合并（17 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/0021d756ea348872/theory-of-becoming-foundation.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R35 (twentieth review, E8): conditional-foundation-assessment, which this record supersedes, moves from dependencies to related.",
+      "zh": "20 October 2026, R35 (twentieth review, E8)：本记录取代的 conditional-foundation-assessment 从依赖移到相关。"
     }
   ],
   "text_versions": [

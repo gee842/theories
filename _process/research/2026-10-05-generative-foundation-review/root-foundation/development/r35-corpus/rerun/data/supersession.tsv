@@ -1,0 +1,58 @@
+id	status	retired_proof_refs	of_which_bound	core_proof_refs	bindings_left	canonical_retired	retired_modules	stated_by_not_cited	after_rerole
+a-law-through-changing-coupling-along-one-run	superseded	2	2	9	9	yes	LawThroughChangingCoupling LawThroughCoupling		ok
+a-law-through-coupling-along-one-run	superseded	1	1	9	9	yes	LawThroughCoupling		ok
+alignment-direction-g0-j	reviewed-scoped	2	2	5	5		AlignmentDirection Bridge		ok
+assured-route-criterion	recorded-checked	2	2	3	3		Instances WisdomResponseStructure		ok
+becoming-context-coherence	recorded-checked	2	2	2	3		BecomingCompatibility Bridge		ok
+becoming-renewal-reading	recorded-checked	2	2	6	7		Bridge RenewalComparison	Becoming.ActiveReading	ok
+becoming-spine-instances	recorded-checked	12	12	13	17	yes	Bridge CorrectionInfrastructure CutCoverageAudit EvaluatorGrounding GenerativeComparison JointContinuationClassification PositionedPositiveReason PracticalJudgment PracticalReach SeedReachProcesses StandardsBridge WholeGroundCoverage	Becoming.Acceptance Becoming.Frontier Becoming.GuardHorizon Becoming.MoveOutcomeProcesses Becoming.PositiveGround Becoming.ProfileReach Becoming.ScopedReach Becoming.SeedReach	ok
+branching-target-uniqueness	recorded-checked	2	2	1	1		Bridge ExplanatoryBranching	Becoming.BranchingCorrespondence Becoming.Granularity Becoming.Labelled	ok
+branching-tests-bisimulation	recorded-checked	2	2	1	1		Bridge ExplanatoryBranching	Becoming.BranchingCorrespondence Becoming.Granularity Becoming.Labelled	ok
+classification-robust-generative-comparison	recorded-checked	9	8	8	8		Bridge ClassificationRobustJudgment ConcernExtension CoursesBridge GenerativeComparison JointContinuationClassification PracticalJudgment RelationalGrounding RelationalOrganization	Becoming.Metaethics	ok
+code-plan-global-support	recorded-checked	2	2	2	2		CompositionBridge ExplanatoryFootprints	Becoming.ListFootprints	ok
+configurations-alike-by-relation	recorded-checked	2	1	8	8		Bridge ExplanatoryBranching	Becoming.BranchingCorrespondence Becoming.Granularity Becoming.Likeness	ok
+control-coherence-loss	recorded-checked	2	2	3	3		Instances OperativeCoherence		ok
+derivation-soundness	recorded-checked	2	1	1	0		Bridge GenerativeClosure		NEEDS-CORE-BINDING
+derived-history-law-exactness	recorded-checked	2	2	3	3		Bridge DerivedHistoryLaw		ok
+effective-capacity-and-eventual-reachability	recorded-checked	3	3	3	4		Bridge JointContinuationClassification RelationalBecoming		ok
+endpoint-loss-and-return	recorded-checked	2	2	2	2		BecomingReversibility Bridge		ok
+exclusive-footprint-support	recorded-checked	2	2	2	2		CompositionBridge ExplanatoryFootprints	Becoming.JointCorrespondence Becoming.ListFootprints	ok
+fallible-witness-diagnosability	recorded-checked	2	2	4	4		Bridge FallibleInspection		ok
+finite-aggregation-within-restorable-basic-losses	reviewed-scoped	2	2	4	4		GenerativeLossComparison RepairComparison		ok
+finite-basis-common-interpretation	recorded-checked	2	1	1	1		Bridge JointInterpretation		ok
+finite-granularity-question-recovery	recorded-checked	2	2	1	1		ExplanatoryGranularity GranularityBridge	Becoming.Grains	ok
+finite-joining-tree-lifting	recorded-checked	2	2	2	2		ExplanatoryJoiningBranches JoiningBridge	Becoming.BranchingCorrespondence Becoming.Likeness Becoming.Presentations	ok
+fulfillment-chance-floor	recorded-checked	2	2	3	3		Bridge ChanceAdequacy		ok
+functional-joining-common-structure	recorded-checked	2	2	3	3		ExplanatoryContextualStructure JoiningBridge	Becoming.JoiningCodes	ok
+guarded-program-question-recovery	recorded-checked	2	2	1	1		ExplanatoryGuardedPrograms GranularityBridge	Becoming.Grains	ok
+incidence-common-refinement	recorded-checked	4	4	4	4		ExplanatoryBranching ExplanatoryJoiningAnchors ExplanatoryJoiningIncidence JoiningBridge	Becoming.Labelled Becoming.Likeness	ok
+joining-open-map-factor	recorded-checked	2	2	2	2		ExplanatoryJoiningRefinement JoiningBridge		ok
+joining-questions-survive-encoding	recorded-checked	2	2	2	2		ExplanatoryJoiningBranches JoiningBridge	Becoming.BranchingCorrespondence Becoming.Likeness Becoming.Presentations	ok
+joint-code-plan-lifting	recorded-checked	2	2	3	3		CompositionBridge ExplanatoryJointness		ok
+joint-correlation-reduced-dynamics	recorded-checked	4	4	2	4		Instances OperativeCoherence RelationalReduction SystemsOrganization	Becoming.Dephasing Becoming.ProjectedLaws	ok
+joint-decomposition-lifting	recorded-checked	2	2	2	2		CompositionBridge ExplanatoryJointness		ok
+joint-target-uniqueness	recorded-checked	2	2	1	1		CompositionBridge ExplanatoryJointness	Becoming.JointCorrespondence	ok
+multivalued-joining-common-structure	recorded-checked	3	3	4	5		ExplanatoryBranching ExplanatoryJoiningBranches JoiningBridge	Becoming.Granularity Becoming.Labelled Becoming.Likeness	ok
+one-axiom-yields-g0	recorded-checked	4	4	11	11		Bridge GenerativeComparison PositionedPositiveReason PositiveGroundUncertainty	Becoming.PositiveGround	ok
+open-form-realization-under-revision	recorded-checked	4	4	3	3		Bridge ContinuationRenewal OpenFutureRevision PositiveGroundUncertainty	Becoming.PositiveGround	ok
+organizational-formation-from-generative-comparison	reviewed-scoped	2	2	3	4		Bridge RelationalOrganization		ok
+organizational-rule-inheritance	recorded-checked	2	2	2	2		Instances OrganizationalRuleInheritance		ok
+positioned-positive-reason	recorded-checked	4	3	4	4		Bridge GenerativeComparison PositionedPositiveReason PositiveGroundUncertainty	Becoming.Alternatives Becoming.PositiveGround	ok
+positive-ground-open-futures	recorded-checked	6	5	6	6		Bridge GenerativeComparison JointContinuationClassification PositiveGroundUncertainty PracticalJudgment StandardsBridge	Becoming.Alternatives Becoming.Frontier Becoming.Lexical Becoming.Metaethics Becoming.PositiveGround	ok
+practical-judgment-g0-j	reviewed-scoped	2	2	6	6		Bridge PracticalJudgment		ok
+prefix-observation-loss	recorded-checked	1	1	2	2		ExplanatoryGranularityBoundary	Becoming.Grains	ok
+protection-priority-excludes-uniform-aggregation	recorded-checked	4	4	4	4		Bridge GenerativeComparison PracticalJudgment ProtectionPriorityRival	Becoming.Alternatives Becoming.Frontier Becoming.Metaethics	ok
+ranking-under-readings	recorded-checked	1	1	8	7		Bridge		ok
+relational-generative-comparison	recorded-checked	4	4	3	3		Bridge GenerativeComparison JointContinuationClassification RelationalGrounding	Becoming.Alternatives Becoming.Metaethics	ok
+relational-reading-comparison	recorded-checked	3	3	4	4		GenerativeComparison RenewalBridge RenewalComparison	Becoming.Alternatives Becoming.Metaethics	ok
+renewing-consuming-formation	recorded-checked	1	1	3	5		GenerativeComparison	Becoming.Alternatives Becoming.Metaethics	ok
+reserved-shutdown-during-recovery	recorded-checked	1	1	3	6		EffectiveCommand		ok
+residual-continuation-correspondence	recorded-checked	1	1	1	2		ExplanatoryResiduals		ok
+retained-reference-joining-recovery	recorded-checked	4	4	5	5		ExplanatoryBranching ExplanatoryJoiningAnchors ExplanatoryJoiningRegisters JoiningBridge	Becoming.Granularity Becoming.Likeness	ok
+self-good-reachable-g0	recorded-checked	3	3	4	4		Bridge EvaluatorGrounding GenerativeComparison	Becoming.Alternatives	ok
+supported-renewal-recovery	recorded-checked	2	2	2	3		RenewalBridge RenewalRecovery	Becoming.SupportRecovery	ok
+tests-fix-likeness-where-determined	recorded-checked	1	1	9	10		Bridge		ok
+trace-law-equivalence	recorded-checked	2	2	2	2		Bridge DynamicConsequences		ok
+transition-grouping-word-partition	recorded-checked	2	2	3	4		AcquiredSegmentation Instances		ok
+unanchored-incidence-collapse	recorded-checked	5	5	5	5		ExplanatoryJoining ExplanatoryJoiningAnchors ExplanatoryJoiningRefinement ExplanatoryLocalUnits JoiningBridge		ok
+wisdom-root	open	5	5	25	33		Bridge ExplanatoryContextualStructure ExplanatoryJoiningBranches GenerativeClosure JointInterpretation	Becoming.BranchingCorrespondence Becoming.Likeness	ok

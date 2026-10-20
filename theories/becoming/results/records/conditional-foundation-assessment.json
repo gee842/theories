@@ -6,7 +6,7 @@
     "en": "Five-condition acceptance of the conditional foundation"
   },
   "kind": "assessment",
-  "status": "reviewed-scoped",
+  "status": "superseded",
   "family": "F13",
   "reviewed_at_utc": "2026-10-13T21:40:00+00:00",
   "statement": {
@@ -128,6 +128,10 @@
     {
       "en": "2026-10-20: 1 bookkeeping notes condensed of 17 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/2ff694982fcbe63b/conditional-foundation-assessment.json and in git.",
       "zh": "2026-10-20：1 条记账性说明合并（17 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/2ff694982fcbe63b/conditional-foundation-assessment.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R35 (twentieth review, E8): status becomes superseded, superseded by theory-of-becoming-foundation. Its subject, the conditional finish line, is the continuation condition of the canonical chapter (section 6.15), which the theory states as a condition and does not assert; its scoped assessment is kept as written.",
+      "zh": "20 October 2026, R35 (twentieth review, E8)：状态改为已取代，由 theory-of-becoming-foundation 取代。其对象即有条件的终点线，现为规范章节的延续条件（§6.15），理论把它作为条件陈述而不断言；其限定范围的评估按原文保留。"
     }
   ],
   "text_versions": [
@@ -161,5 +165,6 @@
       "en": "Existing integrated assessment and independent reviews of the underlying results. This is a scoped explanatory acceptance, not an additional omnibus theorem or a claim of universal empirical confirmation.",
       "zh": "已有综合验收及底层成果的独立审查。这是有范围的解释性验收，不是另一个总括定理或普遍经验确认。"
     }
-  }
+  },
+  "superseded_by": "theory-of-becoming-foundation"
 }

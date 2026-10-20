@@ -49,14 +49,14 @@ Boundary source: [DynamicConsequences.lean](../../../../experiments/integrated-c
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [DynamicConsequences.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean) | `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Deeper.word_feasibility_does_not_determine_endpoints` |
+| provenance | [DynamicConsequences.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean) | `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Deeper.word_feasibility_does_not_determine_endpoints` |
 | proof | [Carriers.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Carriers.lean) | `Becoming.Carriers.word_feasibility_does_not_determine_endpoints` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/verification.json) | — |
 | integration | [GenerativeModel.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean) | `Generative.Model.laws_iff_endpoint_histories` |
 | review | [SESSION-PROOF-REUSE-SOURCE-CHECKS.json](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Labelled.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean) | `Becoming.same_steps_iff_traces` |
-| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean) | `Becoming.same_steps_iff_endpoint_traces_by_core` |
+| provenance | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean) | `Becoming.same_steps_iff_endpoint_traces_by_core` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
@@ -77,7 +77,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Reuse the original theorem or its existing public wrapper; weaker observational scope needs a separate result.
 
-Aliases: `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Model.laws_iff_endpoint_histories`, `Becoming.same_steps_iff_endpoint_traces_by_core`, `Becoming.same_steps_iff_traces`
+Aliases: `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Model.laws_iff_endpoint_histories (retired module)`, `Becoming.same_steps_iff_endpoint_traces_by_core`, `Becoming.same_steps_iff_traces`
 
 <a id="沿革-history"></a>
 ## History
@@ -89,4 +89,5 @@ Aliases: `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Model.l
 - 16 October 2026, integration I4c (Ren selected “Add the notes”): the first line of GenerativeModel.lean gains a comment naming the spine declarations that state its main theorem; statements, proofs and line numbers are unchanged. Its integration reference takes the new hash.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Labelled.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.
+- 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (Bridge and DynamicConsequences) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Carriers and Becoming.Labelled). 1 aliases naming retired declarations are marked "(retired module)". The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](trace-law-equivalence.json).

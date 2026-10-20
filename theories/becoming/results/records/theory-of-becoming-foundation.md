@@ -65,7 +65,6 @@ The whole deduction must warrant relational unity and differentiation, including
 ### Dependencies
 
 - **interpretive**: [becoming-context-coherence](becoming-context-coherence.md). Supplies a checked coherence constraint on inclusive histories, not the universal constitutive warrant.
-- **interpretive**: [conditional-foundation-assessment](conditional-foundation-assessment.md). Credits completed conditional mechanisms and the original five-condition assessment without substituting them for the stronger target.
 - **interpretive**: [control-coherence-loss](control-coherence-loss.md). Provides a checked operative state interface in which local loss arises through a reversible wider interaction; supports the distinction between reduced access and retained joint relations, not universal grounding.
 - related, not a proved adapter: [endpoint-loss-and-return](endpoint-loss-and-return.md). Concurrent structural research retains endpoint loss and configuration-identity scope; no new physical composition is claimed.
 - related, not a proved adapter: [derived-history-law-exactness](derived-history-law-exactness.md). Credits the derived local law at its supplied-history scope; does not infer universal operational coverage from exact finite-word feasibility.
@@ -77,6 +76,7 @@ The whole deduction must warrant relational unity and differentiation, including
 - related, not a proved adapter: [one-axiom-yields-g0](one-axiom-yields-g0.md). Under the condition that everything is significant, G0 follows; the theory does not assert the condition.
 - related, not a proved adapter: [premises-that-are-states-of-the-law](premises-that-are-states-of-the-law.md). Where becoming is contingent in the law: dissipation, embodiment and bounded transmission are met by some laws of exchange and failed by others, with the readings fixed.
 - related, not a proved adapter: [census-read-off-the-exchange](census-read-off-the-exchange.md). The census is a reading of the exchange under enclosure.
+- related, not a proved adapter: [conditional-foundation-assessment](conditional-foundation-assessment.md). Credits completed conditional mechanisms and the original five-condition assessment without substituting them for the stronger target.
 
 <a id="sources--来源"></a>
 ### Sources
@@ -112,6 +112,7 @@ Aliases: —
 - 19 October 2026, E1: a progress entry and two related records (premises read off one exchange: which premises are readings and which are states of the law); study section 197. The target's wording is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
 - 20 October 2026, R35: target 1's formal part restated, as proposed in R25 (study section 218) and approved by Ren on 20 October 2026 (2026-10-20-fix-all-twentieth-review): the statement now names the formal part (every central law over every law of exchange) and the philosophical part (the whole's determinations as moments of one unfolding); a progress item states the formal part in full (each World premise a reading of the exchange or a state of the law, the families joined by definition); next_delta restated accordingly; one does_not_show item added (the formal part does not settle the philosophical part, and reaches becoming only as far as it has a law of exchange). The target, its status and the deductive necessity it asks for are unchanged; completeness is checked by K1-K7, adopted the same day.
+- 20 October 2026, R35 (twentieth review, E8): conditional-foundation-assessment, which this record supersedes, moves from dependencies to related.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](theory-of-becoming-foundation.json).
 
 <a id="earlier-text--早期文本"></a>

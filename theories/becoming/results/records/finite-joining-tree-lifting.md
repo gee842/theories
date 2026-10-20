@@ -56,12 +56,12 @@ Boundary source: [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](../../../../_proc
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [ExplanatoryJoiningBranches.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean) | `Generative.ExplanatoryJoiningBranches.tree_lifts` |
+| provenance | [ExplanatoryJoiningBranches.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean) | `Generative.ExplanatoryJoiningBranches.tree_lifts` |
 | proof | [JoiningCodes.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodes.lean) | `Becoming.Joining.FiniteOutcomes.lifts_of_exact` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json) | — |
 | integration | [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md) | — |
 | proof | [Joining.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean) | `Becoming.Joining.lifts_iff`, `Becoming.Joining.tree_lifts` |
-| proof | [JoiningBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean) | `Becoming.Joining.tree_lifts_of_em` |
+| provenance | [JoiningBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean) | `Becoming.Joining.tree_lifts_of_em` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
@@ -75,7 +75,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Reuse finite guarded programs and coherent residual recovery; establish warranted residual/guard/formation translation between descriptions with different internal syntax, distinguishing semantic tests from actual acquisition.
 
-Aliases: `Generative.ExplanatoryJoiningBranches.tree_lifts`, `Becoming.Joining.tree_lifts_of_em`, `Becoming.Joining.tree_lifts`
+Aliases: `Generative.ExplanatoryJoiningBranches.tree_lifts (retired module)`, `Becoming.Joining.tree_lifts_of_em (retired module)`, `Becoming.Joining.tree_lifts`
 
 <a id="沿革-history"></a>
 ## History
@@ -85,4 +85,5 @@ Aliases: `Generative.ExplanatoryJoiningBranches.tree_lifts`, `Becoming.Joining.t
 - 2026-10-09 continuation: finite guarded programs, residual recovery and 35 checked declarations added in the same study §§27–32; this result retains its claim, assumptions and proof bindings.
 - 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. The new core module Becoming.Joining, importing only Becoming.Likeness, reads a joining of fragments as frames of the spine, through partners, roles and retained references; a description lifts a joining exactly where having one code is a bisimulation of the partner frame, with no premise (Joining.lifts_iff); Becoming.JoiningBridge reads the joining studies as instances. Where a description lifts the joining, every finite tree of joinings lifts with its own leaves (Joining.tree_lifts). The periphery's tree_lifts holds on the spine (Joining.tree_lifts_of_em): excluded middle is named as the hypothesis em : ∀ p : Prop, Decided p and used only to identify passing the same branching tests with likeness where outcomes are listed, which is where the periphery reasoned classically; without it, lifting is exactly having one code being a bisimulation (Joining.operation_lifts_iff). Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Joining.lean, JoiningCodes.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Joining.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; JoiningCodes.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.
+- 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (ExplanatoryJoiningBranches and JoiningBridge) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Joining and Becoming.JoiningCodes). The retired modules' content is also stated in Becoming.BranchingCorrespondence, Becoming.Likeness and Becoming.Presentations, which this record does not cite with declarations. 2 aliases naming retired declarations are marked "(retired module)". The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](finite-joining-tree-lifting.json).
