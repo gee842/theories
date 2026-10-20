@@ -1,0 +1,17 @@
+old_path	new_path	reason
+theories/becoming/chapters/FORMAL-CORE.md	theories/becoming/history/FORMAL-CORE.md	E14: historical (5 Oct), 0 records; pinned only by a frozen checker
+theories/becoming/chapters/FORMAL-SPECIFICATION.md	theories/becoming/history/FORMAL-SPECIFICATION.md	E14: historical (5 Oct, v0.10), 0 records; pinned only by a frozen checker
+theories/becoming/chapters/ALIGNMENT-COMPLETION.md	theories/becoming/history/ALIGNMENT-COMPLETION.md	E14: 6 Oct conditional-candidate closure, 0 records; pinned only by foundation-assessment/FRONTIER-CHECK.py
+theories/becoming/chapters/MATHEMATICAL-ROOT-FRONTIER.md	theories/becoming/history/MATHEMATICAL-ROOT-FRONTIER.md	E14/E1: superseded by §8 and §9; 0 records
+theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md	theories/becoming/history/PHILOSOPHICAL-ACCOUNT.md	E14/E1: 8 Oct whole-restatement, 0 records
+theories/becoming/chapters/G0-WARRANT.md	theories/becoming/history/G0-WARRANT.md	E14: framing historical (axiom adopted 9 Oct, now a condition, §6.15)
+theories/becoming/chapters/G0-WARRANT.zh.md	theories/becoming/history/G0-WARRANT.zh.md	E14/E5: unmaintained edition titled as if G0 were an adopted axiom
+theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md	theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md	E14: §15 is the live framing; rest superseded; 0 records
+theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.zh.md	theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.zh.md	E14: edition of a retired chapter
+theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md	theories/becoming/history/NONINSTRUMENTAL-CONCERN.md	E14 (judgment): 90 KB, 7 Oct banner, 0 records; overlaps WANG-YANGMING and §5
+theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md	theories/becoming/history/RELATIONS-ACROSS-SCALES.md	E14 (judgment): 0 records, live successors (§2, §4)
+theories/becoming/chapters/RELATIONS-ACROSS-SCALES.zh.md	theories/becoming/history/RELATIONS-ACROSS-SCALES.zh.md	E14: edition of a retired chapter
+theories/becoming/chapters/DAO-AND-GENERATIVITY.md	theories/becoming/history/DAO-AND-GENERATIVITY-2026-10-19.md	superseded: folded into CHINESE-SOURCES-AND-BECOMING as a section (E15); the 6-7 October originals are at history/DAO-AND-GENERATIVITY.md
+theories/becoming/chapters/HANZI-AND-THEORY-TREE.md	theories/becoming/history/HANZI-AND-THEORY-TREE-2026-10-19.md	superseded: folded into CHINESE-SOURCES-AND-BECOMING as a section (E15); the 6-7 October originals are at history/HANZI-AND-THEORY-TREE.md
+theories/becoming/chapters/PRE-QIN-AND-WENYAN.md	theories/becoming/history/PRE-QIN-AND-WENYAN-2026-10-19.md	superseded: folded into CHINESE-SOURCES-AND-BECOMING as a section (E15); the 6-7 October originals are at history/PRE-QIN-AND-WENYAN.md
+theories/becoming/chapters/WANG-YANGMING.md	theories/becoming/history/WANG-YANGMING-2026-10-19.md	superseded: folded into CHINESE-SOURCES-AND-BECOMING as a section (E15); the 6-7 October originals are at history/WANG-YANGMING.md

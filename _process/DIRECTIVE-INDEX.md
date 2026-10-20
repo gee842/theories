@@ -9,7 +9,7 @@ Every record in the directive groups `15-*`, `16-*` of [sources](../sources/READ
 | Date | Record | Kind | Title | In register |
 |---|---|---|---|---|
 | 2026-10-20 | [2026-10-20-opening-v8.md](../sources/15-codex-theory-conversations/2026-10-20-opening-v8.md) | record | Ren: apply the opening's version 8 |  |
-| 2026-10-20 | [2026-10-20-fix-all-twentieth-review.md](../sources/15-codex-theory-conversations/2026-10-20-fix-all-twentieth-review.md) | decision | Ren: a full review toward an elegant, unified theory; fix all; the two goal-scope proposals approved |  |
+| 2026-10-20 | [2026-10-20-fix-all-twentieth-review.md](../sources/15-codex-theory-conversations/2026-10-20-fix-all-twentieth-review.md) | decision | Ren: a full review toward an elegant, unified theory; fix all; the two goal-scope proposals approved | yes |
 | 2026-10-19 | [2026-10-19-zhonghua-edition.md](../sources/15-codex-theory-conversations/2026-10-19-zhonghua-edition.md) | record | Ren: a 中华 edition of the theory, in the Chinese symbol system, and the 《中华思想脉络》 joined to the theories |  |
 | 2026-10-19 | [2026-10-19-the-changes-on-the-spine.md](../sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md) | record | Ren: the Changes and the spine, built into the repository |  |
 | 2026-10-19 | [2026-10-19-relational-ontology-of-chinese-thought.md](../sources/15-codex-theory-conversations/2026-10-19-relational-ontology-of-chinese-thought.md) | record | Ren: the relational ontology of Chinese thought, mapped and integrated |  |

@@ -5,7 +5,7 @@
 
 `theory-of-becoming-foundation` · **open** · target · F01 · [record](theory-of-becoming-foundation.json) · [register](../../../../RESULTS.md)
 
-> Target: establish, with zero added substantive axioms, the deductive necessity of the Theory of Becoming as a whole; explain generativity within its manifold, with persistence, transformation, degeneration, dissolution, life, evolution and evaluation within the same relational unfolding.
+> Target: the deductive necessity of Becoming as a whole, with no added substantive axiom: formally, every central law over every law of exchange; philosophically, its determinations as moments of one unfolding; generation, persistence, degeneration, dissolution, life, evolution, evaluation within it.
 
 <a id="progress--已接通"></a>
 ## Progress
@@ -21,6 +21,7 @@
 9. The theory asserts no axiom: that everything is significant is only the condition of the conditional section, under which living significance follows; the step of invariance remains to be stated. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#162-第二部分折叠进第一部分一个条件小节p128)
 10. One root: every world is a run of the law its webs and exchanges show (worlds-are-runs, largely by definition), frontier laws stated on two-act worlds; the families meet by correspondence, 1,019 of 7,214 theorems apart at landing. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130)
 11. Premises read off one exchange (E1): of the eight World premises, five are readings (the four tying premises, and the census under enclosure, never refuted without it) and three, dissipation, embodiment and bounded transmission, are states of the law of exchange, as closure and enclosure are; the necessary content of the whole cannot include those three. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#197-which-remaining-premises-a-reading-of-the-exchange-settles-e1)
+12. Formal part restated with approval: every central law of the spine stated over every law, or relation, of exchange, each World premise a reading of the exchange or a state of the law, the families joined by definition. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)
 
 <a id="conditions--条件"></a>
 ## Conditions
@@ -37,6 +38,7 @@
 - The checked results reused here do not by themselves supply the deduction of the whole claim.
 - Neither inclusive naming nor universalizing one generative mode supplies the whole deduction; particular mechanisms explain modes within Becoming.
 - Ren’s necessity claim is retained as the target without being installed as an axiom, and no impossibility claim is made.
+- The formal part, complete, would not settle the philosophical part, and it reaches a becoming only where that becoming has a law of exchange with finite courses (the scope of representation).
 - **Counterexample:** A pooled representation can invent unsupported continuations. Its repair and actual context change retain genuine terminality without refuting the full account. [source](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md)
 - **Counterexample:** The primary quantum-switch comparison challenges promotion to definite causal order at every native operational interface. It does not refute temporal implementation or the existing trace theorems. [source](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md)
 
@@ -50,7 +52,7 @@ Canonical source: [BECOMING-FOUNDATION.md](../../chapters/BECOMING-FOUNDATION.md
 <a id="next--下一步"></a>
 ## Next
 
-Establish the passage from determinate articulation to the actual relational constitution of the whole, with its inferential warrant: that every becoming is representable as the Becoming spine represents worlds, and that the whole is relationally constituted, not only consistently stated.
+Formal part: every central law of the spine (K1) stated over every law of exchange, as premises-read-off-the-exchange and premises-that-are-states-of-the-law do for the World premises, the families joined by definition (worlds-are-runs). Philosophical part: the whole relationally constituted, not only consistently stated.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -88,6 +90,7 @@ The whole deduction must warrant relational unity and differentiation, including
 | provenance | [2026-10-09-becoming-whole-generative-manifold.md](../../../../sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md) | — |
 | review | [BECOMING-P23C-P24-P25-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| provenance | [2026-10-20-fix-all-twentieth-review.md](../../../../sources/15-codex-theory-conversations/2026-10-20-fix-all-twentieth-review.md) | — |
 
 Aliases: —
 
@@ -112,6 +115,7 @@ Aliases: —
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.
 - 20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.
 - 20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.
+- 20 October 2026, R35: target 1's formal part restated, as proposed in R25 (study section 218) and approved by Ren on 20 October 2026 (2026-10-20-fix-all-twentieth-review): the statement now names the formal part (every central law over every law of exchange) and the philosophical part (the whole's determinations as moments of one unfolding); a progress item states the formal part in full (each World premise a reading of the exchange or a state of the law, the families joined by definition); next_delta restated accordingly; one does_not_show item added (the formal part does not settle the philosophical part, and reaches becoming only as far as it has a law of exchange). The target, its status and the deductive necessity it asks for are unchanged; completeness is checked by K1-K7, adopted the same day.
 - 2 rebinding entries (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](theory-of-becoming-foundation.json).
 
 <a id="earlier-text--早期文本"></a>

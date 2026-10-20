@@ -21,9 +21,9 @@ Target: test whether the full proposed core is indispensable across the stated s
 
 ### Theory of Becoming: full foundational target
 
-Target: establish, with zero added substantive axioms, the deductive necessity of the Theory of Becoming as a whole; explain generativity within its manifold, with persistence, transformation, degeneration, dissolution, life, evolution and evaluation within the same relational unfolding.
+Target: the deductive necessity of Becoming as a whole, with no added substantive axiom: formally, every central law over every law of exchange; philosophically, its determinations as moments of one unfolding; generation, persistence, degeneration, dissolution, life, evolution, evaluation within it.
 
-**Next:** Establish the passage from determinate articulation to the actual relational constitution of the whole, with its inferential warrant: that every becoming is representable as the Becoming spine represents worlds, and that the whole is relationally constituted, not only consistently stated.
+**Next:** Formal part: every central law of the spine (K1) stated over every law of exchange, as premises-read-off-the-exchange and premises-that-are-states-of-the-law do for the World premises, the families joined by definition (worlds-are-runs). Philosophical part: the whole relationally constituted, not only consistently stated.
 
 `open` · [record](theories/becoming/results/records/theory-of-becoming-foundation.md) · [canonical source](theories/becoming/chapters/BECOMING-FOUNDATION.md)
 

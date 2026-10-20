@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "en": "Target: establish, with zero added substantive axioms, the deductive necessity of the Theory of Becoming as a whole; explain generativity within its manifold, with persistence, transformation, degeneration, dissolution, life, evolution and evaluation within the same relational unfolding.",
-    "zh": "目标：无需附加实质公理，建立Theory of Becoming整体的演绎必然性；说明其manifold中的生成性，并在同一关系展开中说明维持、转化、退化、消解、生命、演化与评价。"
+    "en": "Target: the deductive necessity of Becoming as a whole, with no added substantive axiom: formally, every central law over every law of exchange; philosophically, its determinations as moments of one unfolding; generation, persistence, degeneration, dissolution, life, evolution, evaluation within it.",
+    "zh": "目标：无需附加实质公理，建立Becoming整体的演绎必然性（形式上，每条中心规律都对每个交换之律陈述；哲学上，其诸规定是同一展开中内在相关的环节），生成、维持、转化、退化、消解、生命、演化与评价皆在其中。"
   },
   "hypotheses": [
     {
@@ -154,6 +154,11 @@
       "en": "Ren’s necessity claim is retained as the target without being installed as an axiom, and no impossibility claim is made.",
       "zh": "保留Ren的必然性主张作为目标，不将其作为公理加入，也不作不可能性声明。",
       "kind": "scope"
+    },
+    {
+      "en": "The formal part, complete, would not settle the philosophical part, and it reaches a becoming only where that becoming has a law of exchange with finite courses (the scope of representation).",
+      "zh": "形式部分即使完成，也不解决哲学部分；它只及有有限进程之交换律的生成（表示的范围）。",
+      "kind": "scope"
     }
   ],
   "not_required": [
@@ -217,6 +222,11 @@
       "en": "Premises read off one exchange (E1): of the eight World premises, five are readings (the four tying premises, and the census under enclosure, never refuted without it) and three, dissipation, embodiment and bounded transmission, are states of the law of exchange, as closure and enclosure are; the necessary content of the whole cannot include those three.",
       "zh": "从一次交换读出的前提（E1）：World 的八个前提中五个是读法（四个联结前提，以及被围住时的普查，不被围住时从不被否证），耗散、体现与有界传递三个是交换之律的状态，与封闭和被围住一样；整体的必然内容不能包括这三个。",
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#197-which-remaining-premises-a-reading-of-the-exchange-settles-e1"
+    },
+    {
+      "en": "Formal part restated with approval: every central law of the spine stated over every law, or relation, of exchange, each World premise a reading of the exchange or a state of the law, the families joined by definition.",
+      "zh": "形式部分经批准重述：脊柱的每条中心规律都对每个交换之律或交换关系陈述，每个 World 前提是交换的读法或律的状态，两族由定义相连。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now"
     }
   ],
   "validation_scope": {
@@ -264,12 +274,18 @@
       "role": "integration",
       "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
       "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-20-fix-all-twentieth-review.md",
+      "role": "provenance",
+      "sha256": "5ff15f83cc8b5cee577c84eb5b97f6314a65eefe5051787bb4a49fe4d3249451",
+      "declarations": []
     }
   ],
   "proof_bindings": [],
   "next_delta": {
-    "en": "Establish the passage from determinate articulation to the actual relational constitution of the whole, with its inferential warrant: that every becoming is representable as the Becoming spine represents worlds, and that the whole is relationally constituted, not only consistently stated.",
-    "zh": "建立从确定表达通向整体之实际关系构成的连接及其推论根据：每个生成都能如Becoming脊柱表示世界那样被表示，且整体确由关系构成，而不只是被一致陈述。"
+    "en": "Formal part: every central law of the spine (K1) stated over every law of exchange, as premises-read-off-the-exchange and premises-that-are-states-of-the-law do for the World premises, the families joined by definition (worlds-are-runs). Philosophical part: the whole relationally constituted, not only consistently stated.",
+    "zh": "形式部分：把脊柱的每条中心规律（K1）对每个交换之律陈述，如 premises-read-off-the-exchange 与 premises-that-are-states-of-the-law 对 World 前提所做，两族由定义相连（worlds-are-runs）。哲学部分：整体确由关系构成，而不只是被一致陈述。"
   },
   "history": [
     {
@@ -347,6 +363,10 @@
     {
       "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added. The claim is unchanged.",
       "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R35: target 1's formal part restated, as proposed in R25 (study section 218) and approved by Ren on 20 October 2026 (2026-10-20-fix-all-twentieth-review): the statement now names the formal part (every central law over every law of exchange) and the philosophical part (the whole's determinations as moments of one unfolding); a progress item states the formal part in full (each World premise a reading of the exchange or a state of the law, the families joined by definition); next_delta restated accordingly; one does_not_show item added (the formal part does not settle the philosophical part, and reaches becoming only as far as it has a law of exchange). The target, its status and the deductive necessity it asks for are unchanged; completeness is checked by K1-K7, adopted the same day.",
+      "zh": "2026年10月20日，R35：目标一的形式部分按 R25 的提议（研究第 218 节）重述，2026年10月20日经 Ren 批准（2026-10-20-fix-all-twentieth-review）：陈述现写明形式部分（脊柱的每条中心规律都对每个交换之律或交换关系陈述，每个 World 前提是交换的读法或律的状态，两族由定义相连）与哲学部分（整体的诸规定是同一展开中内在相关的环节）；next_delta 随之重述；新增一条 does_not_show（形式部分不解决哲学部分，且只及有交换之律的生成）。目标、其状态及其所要求的演绎必然性不变；完整性由同日采用的 K1–K7 检查。"
     }
   ],
   "text_versions": [
