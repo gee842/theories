@@ -39,7 +39,7 @@ enclosure and finite worlds over counted censuses: the counts of a census taken 
   (`World.standing_iff_counting_counted`).
 
 Each law is for every property of the counts and with no decidedness. Each is a census table
-(`World.census_table_holds`, `Becoming.CensusTable`) whose counted soundness and witness lemma
+(`World.table_holds`, `Becoming.CensusTable`) whose counted soundness and witness lemma
 are those of the decided law in `Becoming.Counting` (`World.binding_counting_sound`,
 `World.binding_counting_witnessed` and their family), so the counted and the decided form come
 from one proof. Where a procedure decides activity, these laws give the decided ones
@@ -82,7 +82,7 @@ theorem binding_counting_under_counted (S : Premise → Bool)
       (S .embodied = true → S .acting = true → S .transmitting = true →
         ∃ t, 0 < n t ∧ 0 < a t) → Q n c a) ↔
       ∀ w : World, w.Meets S → (∀ p, S p = true → p.Binds w) → w.CountsHold Q :=
-  have table := census_table_holds (Q := Q) (binding_counting_under_sound S)
+  have table := table_holds (Q := Q) (binding_counting_under_sound S)
     (binding_counting_under_witnessed S)
   ⟨fun law w meets binds => table.mp (fun n c a tally ⟨quiet, acts, arises, joint⟩ =>
       law n c a tally quiet acts arises joint) w ⟨meets, binds⟩,
@@ -175,7 +175,7 @@ theorem finite_binding_counting_counted {Q : (Nat → Nat) → (Nat → Nat) →
       (∃ t, 0 < a t) → Q n c a) ↔
       ∀ w : World, w.Premised → w.Finite → (∀ p : Premise, p ≠ .counted → p.Binds w) →
         w.CountsHold Q :=
-  have table := census_table_holds (Q := Q) finite_binding_counting_sound
+  have table := table_holds (Q := Q) finite_binding_counting_sound
     finite_binding_counting_witnessed
   ⟨fun law w premised finite binds => table.mp (fun n c a tally ⟨company, bound, arises⟩ =>
       law n c a tally company bound arises) w ⟨premised, finite, binds⟩,
@@ -190,7 +190,7 @@ theorem enclosed_binding_counting_counted {Q : (Nat → Nat) → (Nat → Nat) �
       (∃ t, 0 < a t) → Q n c a) ↔
       ∀ w : World, w.Premised → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) → w.Binds →
         w.CountsHold Q :=
-  have table := census_table_holds (Q := Q) enclosed_binding_counting_sound
+  have table := table_holds (Q := Q) enclosed_binding_counting_sound
     enclosed_binding_counting_witnessed
   ⟨fun law w premised enclosed binds => table.mp (fun n c a tally ⟨company, bound, arises⟩ =>
       law n c a tally company bound arises) w ⟨premised, enclosed, binds⟩,
@@ -219,7 +219,7 @@ theorem finite_binding_counting_under_counted (S : Premise → Bool) (uncounted 
       (S .embodied = true → S .acting = true ∨ S .taking = true ∧ S .dissipative = true →
         S .transmitting = true → ∃ t, 0 < n t ∧ 0 < a t) → Q n c a) ↔
       ∀ w : World, w.Meets S → w.Finite → (∀ p, S p = true → p.Binds w) → w.CountsHold Q :=
-  have table := census_table_holds (Q := Q) (finite_binding_counting_under_sound S)
+  have table := table_holds (Q := Q) (finite_binding_counting_under_sound S)
     (finite_binding_counting_under_witnessed S uncounted)
   ⟨fun law w meets finite binds => table.mp (fun n c a tally ⟨bounded, quiet, bounds, acts, arises, joint⟩ =>
       law n c a tally bounded quiet bounds acts arises joint) w ⟨meets, finite, binds⟩,
@@ -335,7 +335,7 @@ theorem enclosed_binding_counting_under_counted (S : Premise → Bool)
         ∃ t, 0 < n t ∧ 0 < a t) → Q n c a) ↔
       ∀ w : World, w.Meets S → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) →
         (∀ p, S p = true → p.Binds w) → w.CountsHold Q :=
-  have table := census_table_holds (Q := Q) (enclosed_binding_counting_under_sound S)
+  have table := table_holds (Q := Q) (enclosed_binding_counting_under_sound S)
     (enclosed_binding_counting_under_witnessed S)
   ⟨fun law w meets enclosed binds => table.mp (fun n c a tally ⟨quiet, bounded, acts, arises, joint⟩ =>
       law n c a tally quiet bounded acts arises joint) w ⟨meets, enclosed, binds⟩,
@@ -463,7 +463,7 @@ theorem counting_binds_jointly_counted :
     ¬ (embodiedQueue Queue.lone fun _ => 0).CountsHold
       (fun n _ a => ∀ t, 0 < a t → 0 < n t) :=
   ⟨fun _ balanced acting embodied _ _ _ _ census counted _ =>
-    company_of counted fun _ _ comes => active_of_coming_jointly balanced acting embodied census comes,
+    counted.company fun _ _ comes => active_of_coming_jointly balanced acting embodied census comes,
    fun obeys => Nat.lt_irrefl 0
     (obeys _ _ _ _ Queue.listed (queue_countsOf Queue.lone_tally) 0 Nat.zero_lt_one),
    fun obeys => Nat.lt_irrefl 0

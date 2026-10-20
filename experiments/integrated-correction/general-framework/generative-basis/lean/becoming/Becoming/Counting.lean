@@ -972,13 +972,6 @@ theorem active_of_coming_enclosed (balanced : w.Balanced) (dissipative : w.Dissi
         fun out => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le gives
           (Nat.le_of_eq (closed f present x out).2))
 
-/-- Something coming to be across a step needs something active at it, given a ground. -/
-theorem company_of {alive : Nat → List w.Relatum} {n c a : Nat → Nat}
-    (counted : w.CountsOf alive n c a) {t : Nat}
-    (ground : ∀ x, x ∈ alive (t + 1) → ComesToBe (fun s => w.web.active s x) t →
-      0 < (alive t).length) : 0 < a t → 0 < n t :=
-  counted.company ground
-
 end World
 
 namespace EnclosedQueue
@@ -1280,7 +1273,7 @@ theorem enclosed_counting_sound (w : World) (premised : w.Premised)
     w.CountsHold fun n c a => (∀ t, 0 < a t → 0 < n t) ∧ ∃ B, ChangeBound 0 B n c a :=
   match enclosed with
   | ⟨_, enclosed⟩ => fun _ _ _ _ census counted =>
-    ⟨fun _ => company_of counted fun _ _ comes => active_of_coming_jointly
+    ⟨fun _ => counted.company fun _ _ comes => active_of_coming_jointly
         (premised _ (.tail _ (.head _))) (premised _ (.tail _ (.tail _ (.head _))))
         (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
           (.head _))))))))
@@ -1676,7 +1669,7 @@ theorem enclosed_counting_under_sound (S : Premise → Bool) (w : World) (meets 
     ⟨counting_under_sound S w meets alive n c a census counted,
      fun ⟨balanced, embodied, dissipative⟩ => ⟨T, _, enclosure_bounds_change_counted census
       counted (meets _ embodied) (meets _ balanced) (meets _ dissipative) enclosed,
-      fun t later => company_of counted fun _ _ comes => active_of_coming_enclosed
+      fun t later => counted.company fun _ _ comes => active_of_coming_enclosed
         (meets _ balanced) (meets _ dissipative) (meets _ embodied) census (enclosed t later)
         comes⟩⟩
 
@@ -2113,7 +2106,7 @@ theorem finite_counting_under_sound (S : Premise → Bool) (w : World) (meets : 
     ⟨match finite.census_bounded with
       | ⟨M, bounded⟩ => ⟨M, fun t => Nat.le_trans (Nat.le_of_eq (counted t).1)
           (bounded alive census t)⟩,
-     fun selected _ => company_of counted fun _ _ comes => match selected with
+     fun selected _ => counted.company fun _ _ comes => match selected with
       | .inl ⟨balanced, embodied, .inl acting⟩ => active_of_coming_jointly (meets _ balanced)
           (meets _ acting) (Embodied.arising (meets _ embodied)) census comes
       | .inl ⟨balanced, embodied, .inr ⟨_, dissipative⟩⟩ | .inr ⟨balanced, embodied, dissipative⟩ =>
@@ -2732,7 +2725,7 @@ theorem CountsOf.company_binding {w : World} {S : Premise → Bool} (meets : w.M
     (counted : w.CountsOf alive n c a) (census : w.web.Census alive) :
     ∀ t, 0 < a t → 0 < n t :=
   match binds with
-  | ⟨balanced, embodied, giving⟩ => fun _ => company_of counted fun _ listed comes =>
+  | ⟨balanced, embodied, giving⟩ => fun _ => counted.company fun _ listed comes =>
     match giving with
     | .inl acting => active_of_coming_jointly (meets _ balanced) (meets _ acting)
         (Embodied.arising (meets _ embodied)) census comes
@@ -3463,7 +3456,7 @@ theorem finite_binding_counting_sound (w : World)
       (∀ t, 0 < a t → 0 < n t) ∧ (∃ B, ChangeBound 0 B n c a) ∧ ∃ t, 0 < a t :=
   match within with
   | ⟨premised, finite, binds⟩ => fun alive n c a census counted =>
-    ⟨fun _ => company_of counted fun _ _ comes => active_of_coming_jointly
+    ⟨fun _ => counted.company fun _ _ comes => active_of_coming_jointly
         (premised _ (.tail _ (.head _))) (premised _ (.tail _ (.tail _ (.head _))))
         (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
           (.head _))))))))
@@ -3560,7 +3553,7 @@ theorem enclosed_binding_counting_sound (w : World)
       (∀ t, 0 < a t → 0 < n t) ∧ (∃ B, ChangeBound 0 B n c a) ∧ ∃ t, 0 < a t :=
   match within with
   | ⟨premised, ⟨_, enclosed⟩, binds⟩ => fun alive n c a census counted =>
-    ⟨fun _ => company_of counted fun _ _ comes => active_of_coming_jointly
+    ⟨fun _ => counted.company fun _ _ comes => active_of_coming_jointly
         (premised _ (.tail _ (.head _))) (premised _ (.tail _ (.tail _ (.head _))))
         (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
           (.head _))))))))
@@ -4054,7 +4047,7 @@ theorem finite_binding_counting_under_sound (S : Premise → Bool) (w : World)
     ⟨match finite.census_bounded with
       | ⟨M, bounded⟩ => ⟨M, fun t => Nat.le_trans (Nat.le_of_eq (counted t).1)
           (bounded alive census t)⟩,
-     fun selected _ => company_of counted fun _ _ comes => match selected with
+     fun selected _ => counted.company fun _ _ comes => match selected with
       | .inl ⟨balanced, embodied, .inl acting⟩ => active_of_coming_jointly (meets _ balanced)
           (meets _ acting) (Embodied.arising (meets _ embodied)) census comes
       | .inl ⟨balanced, embodied, .inr ⟨_, dissipative⟩⟩ | .inr ⟨balanced, embodied, dissipative⟩ =>
@@ -4777,7 +4770,7 @@ theorem enclosed_binding_counting_under_sound (S : Premise → Bool) (w : World)
     ⟨fun bindsCounting => counted.company_binding meets bindsCounting census,
      fun ⟨balanced, embodied, dissipative⟩ => ⟨T, _, enclosure_bounds_change_counted census
       counted (meets _ embodied) (meets _ balanced) (meets _ dissipative) enclosed,
-      fun t later => company_of counted fun _ _ comes => active_of_coming_enclosed
+      fun t later => counted.company fun _ _ comes => active_of_coming_enclosed
         (meets _ balanced) (meets _ dissipative) (meets _ embodied) census (enclosed t later)
         comes⟩,
      counted.acts_of_binding meets binds census,

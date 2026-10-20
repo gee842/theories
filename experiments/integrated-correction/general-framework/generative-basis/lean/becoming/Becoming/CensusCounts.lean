@@ -51,7 +51,7 @@ count to exist.
   `Becoming.Counting` (`World.CountsHold.obey`), and for pointwise properties conversely
   (`World.countsHold_of_obey`).
 
-Each law here is a census table (`World.census_table_holds`, `Becoming.CensusTable`): its
+Each law here is a census table (`World.table_holds`, `Becoming.CensusTable`): its
 counted soundness and its witness lemma are those of the decided law of `Becoming.Counting`
 (`World.counting_under_sound`, `World.counting_under_witnessed` and their family), which also
 states the counted binding steps. The laws where the premises bind are stated where the counts
@@ -141,7 +141,7 @@ for every property, with no decidedness (the counted form of the first part of
 `World.counting_free`). -/
 theorem counting_free_counted {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} :
     (∀ n c a, Tally n c a → Q n c a) ↔ ∀ w : World, w.CountsHold Q :=
-  (census_table_holds_free counting_free_witnessed.1).trans
+  (table_holds_free counting_free_witnessed.1).trans
     ⟨fun law w => law w trivial, fun law w _ => law w⟩
 
 /-- **The laws of counting under each selection of the premises, where the counts exist.** A
@@ -153,7 +153,7 @@ theorem counting_under_counted (S : Premise → Bool)
     {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} :
     (∀ n c a, Tally n c a → (BindsCounting S → ∀ t, 0 < a t → 0 < n t) → Q n c a) ↔
       ∀ w : World, w.Meets S → w.CountsHold Q :=
-  census_table_holds (counting_under_sound S) (counting_under_witnessed S)
+  table_holds (counting_under_sound S) (counting_under_witnessed S)
 
 /-- **Under all eight premises, where the counts exist**, the laws of counting are the tally and
 that nothing arises across a step at which nothing is active: for every property, with no
@@ -161,7 +161,7 @@ decidedness. -/
 theorem premised_counting_counted {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} :
     (∀ n c a, Tally n c a → (∀ t, 0 < a t → 0 < n t) → Q n c a) ↔
       ∀ w : World, w.Premised → w.CountsHold Q :=
-  census_table_holds premised_counting_sound premised_counting_witnessed
+  table_holds premised_counting_sound premised_counting_witnessed
 
 /-- Nothing arising across a step at which nothing is active is a law of counting under a
 selection, where the counts exist, exactly when the selection binds counting. -/

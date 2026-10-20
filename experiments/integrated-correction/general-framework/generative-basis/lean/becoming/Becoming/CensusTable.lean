@@ -37,8 +37,8 @@ stated here once for any class of worlds and any listing a world has, a determin
   comes to be across a step needs something held at it, nothing comes to be across a step at
   which nothing is counted (`FamilyCounts.company`).
 * **The census of activity** is the listing `fun w x t => w.web.active t x`: `World.CountsObey`,
-  `World.CountsOf` and `World.CountsHold` are its forms, and `World.census_table_holds`,
-  `World.census_table_obeys` and their forms for two and three hypotheses state the table for
+  `World.CountsOf` and `World.CountsHold` are its forms, and `World.census_table_obeys`,
+  `World.census_table_holds₂` and their forms for two and three hypotheses state the table for
   it (read by `Becoming.Counting`, `Becoming.CensusCounts` and `Becoming.CensusBinding`). What
   stands (`fun w x t => 0 < w.web.level t x`) and what depends (pairs of relata, `requires`) are
   the other listings `Becoming.Standing` reads.
@@ -320,13 +320,6 @@ theorem countsHold_of_obey [∀ t x, Decidable (w.web.active t x)]
     | ⟨length, ceased, came⟩, ⟨_, ceased', came'⟩ =>
       ⟨length.symm, ceased'.unique ceased, came'.unique came⟩) (obeys alive census)
 
-/-- The table for the census of activity, with counts as relations (`table_holds`). -/
-theorem census_table_holds {Class : World → Prop} {C Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
-    (sound : ∀ w, Class w → w.CountsHold C)
-    (witnessed : Witnessed (fun w x t => w.web.active t x) Class C) :
-    (∀ n c a, Tally n c a → C n c a → Q n c a) ↔ ∀ w, Class w → w.CountsHold Q :=
-  table_holds sound witnessed
-
 /-- The table for the census of activity, with the marks a procedure gives (`table_obeys`). -/
 theorem census_table_obeys {Class : World → Prop}
     {C Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q)
@@ -339,13 +332,6 @@ theorem census_table_obeys {Class : World → Prop}
     have obeys := table.mp law
     @obeys w (fun x t => inst t x) within,
    fun law => table.mpr fun w inst within => @law w (fun t x => inst x t) within⟩
-
-/-- The table for the census of activity with no added condition, counts as relations. -/
-theorem census_table_holds_free {Class : World → Prop}
-    {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
-    (witnessed : Witnessed (fun w x t => w.web.active t x) Class fun _ _ _ => True) :
-    (∀ n c a, Tally n c a → Q n c a) ↔ ∀ w, Class w → w.CountsHold Q :=
-  table_holds_free witnessed
 
 /-- The table for the census of activity with no added condition, with the marks a procedure
 gives. -/
@@ -367,7 +353,7 @@ theorem census_table_holds₂ {A B : World → Prop}
       fun n c a => C n c a ∧ D n c a) :
     (∀ n c a, Tally n c a → C n c a → D n c a → Q n c a) ↔
       ∀ w, A w → B w → w.CountsHold Q :=
-  have table := census_table_holds (Q := Q) (fun w within => sound w within.1 within.2) witnessed
+  have table := table_holds (Q := Q) (fun w within => sound w within.1 within.2) witnessed
   ⟨fun law w a b => table.mp (fun n c a tally both => law n c a tally both.1 both.2) w ⟨a, b⟩,
    fun law n c a tally first second => table.mpr (fun w within => law w within.1 within.2) n c a
      tally ⟨first, second⟩⟩
@@ -395,7 +381,7 @@ theorem census_table_holds₃ {A B : World → Prop}
       fun n c a => C n c a ∧ D n c a ∧ E n c a) :
     (∀ n c a, Tally n c a → C n c a → D n c a → E n c a → Q n c a) ↔
       ∀ w, A w → B w → w.CountsHold Q :=
-  have table := census_table_holds (Q := Q) (fun w within => sound w within.1 within.2) witnessed
+  have table := table_holds (Q := Q) (fun w within => sound w within.1 within.2) witnessed
   ⟨fun law w a b => table.mp (fun n c a tally all => law n c a tally all.1 all.2.1 all.2.2) w
       ⟨a, b⟩,
    fun law n c a tally first second third => table.mpr (fun w within => law w within.1 within.2)
