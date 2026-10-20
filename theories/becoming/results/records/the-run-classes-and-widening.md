@@ -5,7 +5,7 @@
 
 `the-run-classes-and-widening` · **recorded-checked** · theorem · F01 · [record](the-run-classes-and-widening.json) · [register](../../../../RESULTS.md)
 
-> Where only active formations take, a part whose draws fall on conditions renewed over the run does not narrow what can form, and a consumed dependence the levels without a part meet makes a part that opens nothing narrow. Neither class decides alone.
+> Where only active formations take, a part drawing only on conditions renewed over the run does not narrow, and a consumed dependence met without a part makes a part opening nothing narrow; a part that never arises changes nothing. No class decides alone.
 
 <a id="laws--规律"></a>
 ## Laws
@@ -14,6 +14,8 @@
 2. Let a dependence held at T be met at no step after it, let the part give each condition at every step no more than it takes, and let the levels without the part admit at a later step the formation whose dependence it was, held there at no smaller need. Then the levels without the part widen those with it. (`Becoming.Flow.Balances.narrows_of_consumed`)
 3. The stepwise class does not decide: in Preemption the drawer's event at the first step is within renewal, the drawer is consuming over the run and does not renew over it, and the levels without its part widen those with it. (`Becoming.Preemption.renewingAt_consuming_narrows`, `Becoming.Preemption.within_renewal_yet_loses`)
 4. The consuming class alone does not narrow: in Untaken a formation draws on a condition that stays at zero below its need, so it is consuming over the run, yet nothing is taken or given, the flow balances, and the levels with and without its part keep what can form the same. (`Becoming.Untaken.flow`, `Becoming.Untaken.web`, `Becoming.Untaken.part`, `Becoming.Untaken.consuming_keeps`)
+5. Arising is where a part's place in the order begins. In a balanced flow where only active formations take, and only from what they draw on, and only active formations give, a part none of whose members is active at the start and none of which arises across any step takes and gives nothing, so the levels with and without it admit alike; a formation not active at the start that never arises is never active. (`Becoming.Web.inactive_of_not_arising`, `Becoming.Flow.Balances.keeps_of_inactive`, `Becoming.Flow.Balances.keeps_of_not_arising`)
+6. The arising class does not decide the order: under the same premises (balance, only active formations taking from what they draw on, only active formations giving), a member not active at the start that arises across the first step then narrows what can form by taking a condition's unit before a dependence on it forms (ArisingDrawer), or widens it by giving a condition the unit a later dependence needs (ArisingGiver). (`Becoming.ArisingDrawer.flow`, `Becoming.ArisingDrawer.web`, `Becoming.ArisingDrawer.arises_narrows`, `Becoming.ArisingGiver.flow`, `Becoming.ArisingGiver.web`, `Becoming.ArisingGiver.arises_widens`)
 
 <a id="conditions--条件"></a>
 ## Conditions
@@ -27,7 +29,7 @@
 - That renewing widens: keeping what can form is not widening; whether a part opens anything is its net give.
 - That consuming alone narrows: Untaken is consuming and keeps what can form. Witness: `Becoming.Untaken.consuming_keeps`.
 - That being within renewal at a step keeps what can form: Preemption's drawer is, and its part narrows. Witness: `Becoming.Preemption.renewingAt_consuming_narrows`.
-- The class of arising over a run and the order; a valuation of either class.
+- A valuation of either class; how far an arisen part widens or narrows, which is its net exchange (the margin laws), not its arising.
 - **Counterexample:** Within renewal at a step, consuming over the run, narrowing: Preemption (renewingAt_consuming_narrows). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean)
 - **Counterexample:** Consuming over the run and keeping what can form: Untaken (consuming_keeps). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean)
 
@@ -36,14 +38,14 @@
 <a id="evidence--证据"></a>
 ## Evidence
 
-Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T005554.047169Z): the cited declarations of Becoming.Retaining have empty axiom reports; the checker verifies core purity. Author self-review in study section 225; not independently reviewed.
+Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T005554.047169Z; the class of arising since R45, receipt 20261020T093308.742793Z): the cited declarations of Becoming.Retaining have empty axiom reports; the checker verifies core purity. Author self-review in study sections 225 and 246; not independently reviewed.
 
 Canonical source: [Retaining.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean)
 
 <a id="next--下一步"></a>
 ## Next
 
-The class of arising over a run and the order; identity from continuity rather than naming, on which a class over a run depends; an independent review.
+Identity from continuity rather than naming, on which a class over a run depends; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -74,18 +76,20 @@ The twentieth review's D2 and F13 asked how a part's class over a run relates to
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [Retaining.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean) | `Becoming.Flow.Balances.includes_of_renewed`, `Becoming.Flow.Balances.not_narrows_of_renewed`, `Becoming.Flow.Balances.includes_of_renewingIn`, `Becoming.Flow.Balances.narrows_of_consumed`, `Becoming.Preemption.renewingAt_consuming_narrows`, `Becoming.Preemption.within_renewal_yet_loses`, `Becoming.Untaken.flow`, `Becoming.Untaken.web`, `Becoming.Untaken.part`, `Becoming.Untaken.consuming_keeps` |
+| proof | [Retaining.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean) | `Becoming.Flow.Balances.includes_of_renewed`, `Becoming.Flow.Balances.not_narrows_of_renewed`, `Becoming.Flow.Balances.includes_of_renewingIn`, `Becoming.Flow.Balances.narrows_of_consumed`, `Becoming.Preemption.renewingAt_consuming_narrows`, `Becoming.Preemption.within_renewal_yet_loses`, `Becoming.Untaken.flow`, `Becoming.Untaken.web`, `Becoming.Untaken.part`, `Becoming.Untaken.consuming_keeps`, `Becoming.Web.inactive_of_not_arising`, `Becoming.Flow.Balances.keeps_of_inactive`, `Becoming.Flow.Balances.keeps_of_not_arising`, `Becoming.ArisingDrawer.flow`, `Becoming.ArisingDrawer.web`, `Becoming.ArisingDrawer.arises_narrows`, `Becoming.ArisingGiver.flow`, `Becoming.ArisingGiver.web`, `Becoming.ArisingGiver.arises_widens` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T093308.742793Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [BECOMING-TWENTIETH-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-TWENTIETH-REVIEW.md) | — |
 
-Aliases: `the run classes and widening`, `整段的类与扩大`, `Becoming.Flow.Balances.not_narrows_of_renewed`, `Becoming.Flow.Balances.narrows_of_consumed`
+Aliases: `the run classes and widening`, `整段的类与扩大`, `Becoming.Flow.Balances.not_narrows_of_renewed`, `Becoming.Flow.Balances.narrows_of_consumed`, `Becoming.Flow.Balances.keeps_of_not_arising`
 
 <a id="history--沿革"></a>
 ### History
 
 - 20 October 2026: added (R34, D2 and F13 of the twentieth review): the run classes related to widening under named premises, with Preemption and Untaken as boundaries; study section 225.
+- 20 October 2026, R45 (study section 246): two laws added, the class of arising over a run (no member active at the start and none arising: nothing that can form changes; Flow.Balances.keeps_of_not_arising) and its boundary (ArisingDrawer, ArisingGiver: arising decides nothing); the does_not_show item on arising replaced and next updated. Receipt 20261020T093308.742793Z.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](the-run-classes-and-widening.json).
 
 <a id="earlier-text--早期文本"></a>

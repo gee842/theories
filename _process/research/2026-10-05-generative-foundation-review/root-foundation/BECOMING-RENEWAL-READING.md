@@ -10504,3 +10504,88 @@ The kit is [`development/ev2-reproduction/`](development/ev2-reproduction/): the
 - **Connectivity and naming.** The general laws reach no base family; those the base laws do not go through are registered as general structure, and the witnesses as model witnesses (`apart.py`). The base laws go through `search`, `fell_step`, `falls_step_iff`, `empty_from`, `ByNumber.sum_eq` and `ByNumber.discord_none`. "Fitness" is not used: the reading is offspring number (`ByNumber`), and nothing calls it worth. The witnesses' definitions list every case (no overlapping patterns), so none depends on `propext`.
 
 **Self-review.** The identities are arithmetic, and the variance form is the standard one; what is new on the spine is that offspring numbers, which `Becoming.SelectionTerm` took as given, are bounded by the flow, and that the bound meets the variance form: a lineage cannot keep selection on offspring number from lowering transmission where nothing flows in. The lineage laws read balance and dissipation only on the family holding the lineage, across the steps used, not on the whole flow. `lineage_ends` needs the premises over stock-plus-one steps; it bounds when, not how, a lineage ends, and an open family escapes it (Relay is lossless, so it escapes by not dissipating; a family with inflow escapes by not being closed, which `Becoming.Dissipation`'s openness laws state). The witnesses are small and stipulated; they show the premises consistent and the dissipation premise needed, not that real lineages meet them.
+
+## 245. The alignment direction on a world's moves (R44)
+
+```text
+Result(s): Direction.exchangeOutcome, Direction.exchange_widening_selected_by_pool, Direction.exchange_direction
+       (Becoming.Direction: the moves of a world as a part's acts under one law of exchange);
+       Requirement.Handover.direction (the handover case as a core instance of the schema); record
+       alignment-direction-under-widening; chapter 7.5 and 8.1 item 4.
+Delta: the direction's schema was stated over any family of moves with outcome levels supplied, and its pool
+       part took balance, presence and start as premises. Now the moves can be a world's own exchanges: a move
+       is the part acting by an act and the rest by one law, from one start, and its outcome is the levels that
+       course generates. Presence and start hold by construction, and balance follows from feasibility. The
+       7 October handover case, a core instance by reading until now, is a theorem about every comparison
+       meeting J1/J2 on its tier frame.
+Premises: none added. The exchange form takes those of act_courses_unselected_pool: the rest and the acts are
+       laws of what has stood, the rest reads through coupling, the first act reads through its members'
+       coupling, the two acts agree on every condition coupled into the group's closure, and both courses are
+       feasible. The direction adds J1/J2 on the moves' frame and the decision whether the widening adds a basic
+       admission.
+Evidence: core receipt 20261020T093308.742793Z (passed, empty axiom reports).
+Boundary: the moves are acts of one part against one fixed law of the rest, from one start. A world whose rest
+       changes its law with the act, or whose acts change the formations present, is not covered. The theorem
+       says what any comparison meeting J1/J2 chooses; it does not say that a system's comparison meets them.
+Output → input: with R40's direction from the evaluation row, the chain from the continuation condition and C
+       to the direction ends on the spine (chapter 8.1 item 4, settled in its formal part); what remains is
+       warrant (C, J) and correspondence (whether actual rests read through coupling).
+```
+
+- **Why the pool part holds without its supplied premises.** `Direction.widening_selected_by_pool` takes two flows following the rest's law, balanced, with the same formations present and the same start. On the courses `(law.withAct part act).course present start`, these hold by construction: the courses follow the law outside the part (`ExchangeLaw.withAct_follows`), both have `present` and both start at `start` (definitionally), and each balances exactly where it is feasible (`ExchangeLaw.course_balances_iff`, with `withAct_nonanticipating`). The part's acting alike within each member's closure follows from the acts agreeing on the closure's conditions and the first act reading through its members' coupling, as in `act_courses_unselected_pool`.
+- **The handover.** `Handover`'s plans compare by `Above protection realization`, the lexical order itself. The new theorem asks only that a comparison meet J1/J2 on the tier frame (`Priority (tierFrame protection realization) basicSide gainSide better`). Through `basicPriority_iff_priority`, such a comparison puts transfer above keeping and above expansion, and so excludes expansion from the frontier of the four plans, while expansion's gain stays real.
+
+**Self-review.** The instance does not hide the pool part's weight. The premises it removes (balance, presence, start) are the ones a world's exchange supplies by construction. The premises that carry the claim, a rest reading through coupling and acts agreeing within the closure, stay explicit. The handover theorem is a modest strengthening: from the lexical order to every comparison meeting J1/J2. The crossed case (`Handover.crossed`) stays unranked and is not touched.
+
+## 246. The class of arising over a run and the order (R45)
+
+```text
+Result(s): Web.inactive_of_not_arising, Flow.Balances.keeps_of_inactive, Flow.Balances.keeps_of_not_arising
+       (Becoming.Retaining); witnesses ArisingDrawer.arises_narrows and ArisingGiver.arises_widens; record
+       the-run-classes-and-widening; chapter 6.4 and 8.1 item 2.
+Delta: the run classes met the order through renewal and consumption (R34); arising, the fourth class the
+       evaluative chain names, had no relation to it. Now: with only active formations taking and giving, a part
+       none of whose members is active at the start and none of which arises over the run changes nothing that
+       can form. A member's arising decides nothing: under the same premises an arisen member narrows what can
+       form in one witness and widens it in the other.
+Premises: none added. Balance, only active formations taking (from what they draw on), only active
+       formations giving (Flow.Acting), and the levels without the part (WithheldLevels).
+Evidence: core receipt 20261020T093308.742793Z (passed, empty axiom reports).
+Boundary: arising here is a formation's activity starting (Web.Arises); a formation active at the start
+       arose before the run and is outside the law's premise. How far an arisen part moves the order is its net
+       exchange, which the margin laws already state; the arising class adds where that can begin, not how far.
+Output → input: chapter 8.1 item 2's first open part is settled as a boundary: the arising class meets the order
+       only through "no arising, no change"; what remains open is whether a component of further generation can
+       enter a reading of living.
+```
+
+- **Why "never active" is enough.** Under `Flow.Taking` a positive take needs activity, and under `Flow.Acting` a positive give does. So a part never active has each member's take and give zero, its totals are zero, and `Flow.Balances.changes_nothing` (part taken = part given) gives the levels with and without it admitting alike.
+- **From arising to activity.** `Web.inactive_of_not_arising` is an induction: inactive at `t` and not arising across `t` means not active at `t + 1`. No decision is used, since `Arises` is a conjunction of inactivity and activity.
+- **The witnesses.** Both are one condition and two formations. A member `true` is inactive at step 0 and active only at step 1. A formation `false` requires the condition at need one from step 2 on. In `ArisingDrawer` the member takes the condition's one unit at step 1, so the levels without its part (always one) widen those with it at step 2: preemption after arising. In `ArisingGiver` the member gives one unit at step 1 to a condition at zero, so the levels with its part widen those without it.
+
+**Self-review.** The law is weak by design and is stated as such: it fixes where arising touches the order, not that arising is good or bad. The witnesses use pattern matches without wildcard overlap: the first draft's overlapping patterns elaborated through `propext`, and so did refuting `0 = 1` through `Nat.succ_ne_zero`. Both were replaced, `Nat.noConfusion` for the refutation, so every report is empty.
+
+## 247. CG1's measured boundary in the alignment section and record (CG1b)
+
+```text
+Result(s): none new; docs and records only. Chapter 7.5 (with 7.4 and 7.7) and record
+       alignment-direction-under-widening carry CG1's measured boundary.
+Delta: study section 240's output → input: where section 7 reads widening the coupling as the
+       route to alignment, the outcome among several self-consistent ones is not decided by the
+       coupling alone.
+Premises: none changed; every law keeps its premises and scope. The learning verdicts are read
+       through CG1's bridges H1 (training is selection through the reward's coupling) and H2
+       (learners come near the best return).
+Evidence: experiments/commons-gated-renewal/README.md; C1 (round 2, 118/118 against 0/2,360) and
+       E3 (80/80) support the selection side; D2b (0% survival, both rounds) bounds the positive
+       reading of the pool part.
+Boundary: tabular Q-learners, no walking or tagging, 20 seeds per condition; the result says the
+       laws are not sufficient for independent learners, not that no route to keeping a stock exists.
+Output → input: which of several self-consistent outcomes learners coupled into a stock reach is
+       open (section 7.7, which law the members follow); a law of selection among mutual best
+       responses is not on the spine. CG2 (board) tests the rest's draw against renewal as the
+       boundary; until its verdicts land the hypothesis is not a claim.
+```
+
+Drafted by the CG1 line and applied with R44, which edits the same section and record, so the text
+stands on R44's version rather than beside it.

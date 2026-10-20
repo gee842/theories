@@ -165,6 +165,13 @@ theorem UnderminingOn.not_retains {l : Nat → C → Nat} {t : Nat} {f : F} {c :
     Nat.not_le_of_gt (Nat.lt_of_lt_of_le below (holds g depends).2)
       (retains (t + 1) g (significant g depends) (admits g depends) c (holds g depends).1)
 
+/-- **Never arising from an inactive start is never being active.** A formation not active at the
+start that arises across no step is active at no step. -/
+theorem inactive_of_not_arising {f : F} (start : ¬ W.active 0 f) (never : ∀ t, ¬ W.Arises t f) :
+    ∀ t, ¬ W.active t f
+  | 0 => start
+  | t + 1 => fun active => never t ⟨inactive_of_not_arising start never t, active⟩
+
 end Web
 
 /-! ## Not harm is an exact boundary -/
@@ -366,6 +373,52 @@ theorem Balances.narrows_of_consumed (balances : L.Balances W) {l : Nat → C �
   ⟨balances.opens_nothing without keeps,
    Web.exceeded_of_below holds.1 (Nat.lt_of_lt_of_le (below t later) holds.2) admits⟩
 
+/-! ### The class of arising
+
+A part's members take and give only while active, so a part's place in the order on what can form
+begins where a member is active: at the start or by arising. A part none of whose members is
+active at the start and none of which arises over the run changes nothing that can form; where a
+member arises, the arising decides nothing, since the arisen member can then narrow what can form
+(`ArisingDrawer.arises_narrows`) or widen it (`ArisingGiver.arises_widens`) under the same
+premises. -/
+
+/-- **A part never active changes nothing that can form.** In a balanced flow where only active
+formations take and give, a part none of whose members is active at any step takes and gives
+nothing, so the levels with and without it admit alike. -/
+theorem Balances.keeps_of_inactive (balances : L.Balances W) (taking : L.Taking W)
+    (acting : L.Acting W) {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    (inactive : ∀ t f, part f = true → ¬ W.active t f) : W.Keeps W.level l :=
+  have none : ∀ (q : Nat → F → C → Nat), (∀ t f c, f ∈ L.present t → 0 < q t f c → W.active t f) →
+      ∀ t c, total (L.present t) (fun f => if part f then q t f c else 0) = 0 :=
+    fun q only t c =>
+      let rec zero : ∀ fs : List F, (∀ f, f ∈ fs → f ∈ L.present t) →
+          total fs (fun f => if part f then q t f c else 0) = 0
+        | [], _ => rfl
+        | f :: fs, within =>
+          have head : (if part f then q t f c else 0) = 0 :=
+            match hp : part f with
+            | true => match Nat.eq_zero_or_pos (q t f c) with
+              | .inl zero => zero
+              | .inr positive => absurd (only t f c (within f (.head _)) positive) (inactive t f hp)
+            | false => rfl
+          (congrArg (· + _) head).trans ((Nat.zero_add _).trans
+            (zero fs fun g mem => within g (.tail f mem)))
+      zero (L.present t) fun _ mem => mem
+  have even : ∀ t c, L.partTaken part t c = L.partGiven part t c := fun t c =>
+    (none L.take (fun t f c present positive => (taking t f c present positive).1) t c).trans
+      (none L.give acting t c).symm
+  balances.changes_nothing without even
+
+/-- **A part that never arises changes nothing that can form.** In a balanced flow where only
+active formations take and give, a part none of whose members is active at the start and none of
+which arises across any step keeps the levels with and without it admitting alike. -/
+theorem Balances.keeps_of_not_arising (balances : L.Balances W) (taking : L.Taking W)
+    (acting : L.Acting W) {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    (start : ∀ f, part f = true → ¬ W.active 0 f)
+    (never : ∀ t f, part f = true → ¬ W.Arises t f) : W.Keeps W.level l :=
+  balances.keeps_of_inactive taking acting without fun t f member =>
+    Web.inactive_of_not_arising (start f member) (fun s => never s f member) t
+
 end Flow
 
 /-! ## Witnesses -/
@@ -491,5 +544,157 @@ theorem consuming_keeps {l : Nat → Unit → Nat} (without : flow.WithheldLevel
    fun t _ admits () requires => Nat.le_trans (admits () requires) (Nat.le_of_eq (same t).symm)⟩
 
 end Untaken
+
+
+/-! A member that arises across the first step and then takes a condition's one unit before any
+dependence on it forms. -/
+
+namespace ArisingDrawer
+
+/-- Across the second step the drawer `true` takes the condition's one unit; nothing gives. -/
+def flow : Flow Bool Unit where
+  present t := match t with
+    | 0 => []
+    | 1 => [true]
+    | _ + 2 => []
+  take t x _ := match t, x with
+    | 0, _ => 0
+    | 1, true => 1
+    | 1, false => 0
+    | _ + 2, _ => 0
+  give _ _ _ := 0
+
+/-- The drawer requires nothing and is active at the second step only. `false` requires the
+condition at need one from the third step on and is never active. -/
+def web : Web Bool Unit where
+  level t _ := match t with
+    | 0 => 1
+    | 1 => 1
+    | _ + 2 => 0
+  active t x := match x with
+    | true => t = 1
+    | false => False
+  requires t x _ := match x with
+    | true => False
+    | false => 1 < t
+  need _ _ _ := 1
+  draws t x _ := match t, x with
+    | 0, _ => False
+    | 1, true => True
+    | 1, false => False
+    | _ + 2, _ => False
+
+/-- The drawer's part. -/
+def part : Bool → Bool := fun x => x
+
+/-- Without the drawer's part the condition stays at one. -/
+theorem withheld : flow.WithheldLevels part web fun _ _ => 1 :=
+  ⟨fun t () => match t with
+    | 0 => rfl
+    | 1 => rfl
+    | _ + 2 => rfl,
+   fun () => rfl⟩
+
+/-- **Arising, then narrowing.** The flow balances, only active formations take, and only from what
+they draw on, and only active formations give; the drawer is not active at the start and arises
+across the first step; and the levels without its part widen those with it. -/
+theorem arises_narrows {l : Nat → Unit → Nat} (without : flow.WithheldLevels part web l) :
+    flow.Balances web ∧ flow.Taking web ∧ flow.Acting web ∧ ¬ web.active 0 true ∧
+      web.Arises 0 true ∧ web.Widens l web.level :=
+  have balances : flow.Balances web := fun t () => match t with
+    | 0 => rfl
+    | 1 => rfl
+    | _ + 2 => rfl
+  ⟨balances,
+   fun t x () _ positive => match t, x with
+    | 0, _ => absurd positive (Nat.lt_irrefl 0)
+    | 1, true => ⟨rfl, trivial⟩
+    | 1, false => absurd positive (Nat.lt_irrefl 0)
+    | _ + 2, _ => absurd positive (Nat.lt_irrefl 0),
+   fun _ _ () _ positive => absurd positive (Nat.lt_irrefl 0),
+   fun no => Nat.noConfusion (show (0 : Nat) = 1 from no),
+   ⟨fun no => Nat.noConfusion (show (0 : Nat) = 1 from no), rfl⟩,
+   ⟨balances.opens_nothing without fun t () => match t with
+      | 0 => Nat.zero_le _
+      | 1 => Nat.zero_le _
+      | _ + 2 => Nat.zero_le _,
+    2, false, fun () _ => Nat.le_of_eq (without.unique withheld 2 ()).symm,
+    fun supported => Nat.not_succ_le_zero 0 (supported () (Nat.lt_succ_self 1))⟩⟩
+
+end ArisingDrawer
+
+/-! A member that arises across the first step and then gives a condition one unit a later
+dependence needs. -/
+
+namespace ArisingGiver
+
+/-- Across the second step the giver `true` gives the condition one unit; nothing takes. -/
+def flow : Flow Bool Unit where
+  present t := match t with
+    | 0 => []
+    | 1 => [true]
+    | _ + 2 => []
+  take _ _ _ := 0
+  give t x _ := match t, x with
+    | 0, _ => 0
+    | 1, true => 1
+    | 1, false => 0
+    | _ + 2, _ => 0
+
+/-- The giver requires nothing and is active at the second step only. `false` requires the
+condition at need one from the third step on and is never active. -/
+def web : Web Bool Unit where
+  level t _ := match t with
+    | 0 => 0
+    | 1 => 0
+    | _ + 2 => 1
+  active t x := match x with
+    | true => t = 1
+    | false => False
+  requires t x _ := match x with
+    | true => False
+    | false => 1 < t
+  need _ _ _ := 1
+  draws _ _ _ := False
+
+/-- The giver's part. -/
+def part : Bool → Bool := fun x => x
+
+/-- Without the giver's part the condition stays at zero. -/
+theorem withheld : flow.WithheldLevels part web fun _ _ => 0 :=
+  ⟨fun t () => match t with
+    | 0 => rfl
+    | 1 => rfl
+    | _ + 2 => rfl,
+   fun () => rfl⟩
+
+/-- **Arising, then widening.** The flow balances, only active formations take, and only from what
+they draw on, and only active formations give; the giver is not active at the start and arises
+across the first step; and the levels with its part widen those without it. -/
+theorem arises_widens {l : Nat → Unit → Nat} (without : flow.WithheldLevels part web l) :
+    flow.Balances web ∧ flow.Taking web ∧ flow.Acting web ∧ ¬ web.active 0 true ∧
+      web.Arises 0 true ∧ web.Widens web.level l :=
+  have balances : flow.Balances web := fun t () => match t with
+    | 0 => rfl
+    | 1 => rfl
+    | _ + 2 => rfl
+  ⟨balances,
+   fun _ _ () _ positive => absurd positive (Nat.lt_irrefl 0),
+   fun t x () _ positive => match t, x with
+    | 0, _ => absurd positive (Nat.lt_irrefl 0)
+    | 1, true => rfl
+    | 1, false => absurd positive (Nat.lt_irrefl 0)
+    | _ + 2, _ => absurd positive (Nat.lt_irrefl 0),
+   fun no => Nat.noConfusion (show (0 : Nat) = 1 from no),
+   ⟨fun no => Nat.noConfusion (show (0 : Nat) = 1 from no), rfl⟩,
+   ⟨balances.closes_nothing without fun t () => match t with
+      | 0 => Nat.zero_le _
+      | 1 => Nat.zero_le _
+      | _ + 2 => Nat.zero_le _,
+    2, false, fun () _ => Nat.le_refl 1,
+    fun admits => Nat.not_succ_le_zero 0
+      (Nat.le_trans (admits () (Nat.lt_succ_self 1)) (Nat.le_of_eq (without.unique withheld 2 ())))⟩⟩
+
+end ArisingGiver
 
 end Becoming

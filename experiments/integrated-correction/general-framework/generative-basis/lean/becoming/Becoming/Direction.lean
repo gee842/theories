@@ -170,6 +170,114 @@ theorem Direction.widening_selected_by_pool (through : law.Through W obs part)
     ⟨s, x, admitted, lost, Flow.act_selected_by_pool through follows follows' balances balances'
       present start acts fun same => lost (same.mpr admitted)⟩
 
+
+/-- **The moves of a world under one law of exchange.** Move `a` is the part acting by `acts a`
+and the rest by `law`, with the formations `present` and from the levels `start`; its outcome is
+the levels that course generates. -/
+def Direction.exchangeOutcome {A : Type} (law : ExchangeLaw F C) (part : F → Bool)
+    (present : Nat → List F) (start : C → Nat) (acts : A → ExchangeLaw F C) : A → Nat → C → Nat :=
+  fun a => (law.withAct part (acts a)).levels present start
+
+/-- **What tells a widening act from a narrowed one, on a world's moves.** The moves are a
+part's acts under one law of exchange (`Direction.exchangeOutcome`). The rest follows a law of
+what has stood reading through coupling; the acts `acts a` and `acts b` are laws of what has
+stood, `acts a` reading through its members' coupling, the two agreeing on every condition coupled
+into the group's coupling closure drawn through the two courses; both courses are feasible. Where
+`b`'s outcome widens `a`'s, some formation is admitted at some step by `b`'s and not by `a`'s; it
+lies beyond the closure; its admission there is a selection through the pooled coupling of every
+group holding it from that step on, and of no group within the closure at any step. Balance,
+presence and start, premises of `Direction.widening_selected_by_pool`, hold here by
+construction or follow from feasibility. -/
+theorem Direction.exchange_widening_selected_by_pool {A : Type} {present : Nat → List F}
+    {start : C → Nat} {acts : A → ExchangeLaw F C} {a b : A} (na : law.Nonanticipating)
+    (naA : (acts a).Nonanticipating) (naB : (acts b).Nonanticipating)
+    (through : law.Through W obs part) (actThrough : (acts a).Through W obs (fun h => !part h))
+    (feasible : (law.withAct part (acts a)).Feasible present start)
+    (feasible' : (law.withAct part (acts b)).Feasible present start)
+    (agree : ∀ t h l c, part h = true →
+      (∃ g, WithinClosureOf (((law.withAct part (acts a)).course present start).CoupledFromEither W
+          ((law.withAct part (acts b)).course present start) obs) group g ∧ W.CoupledInto obs g c) →
+        (acts a).take t h l c = (acts b).take t h l c ∧ (acts a).give t h l c = (acts b).give t h l c)
+    (widens : W.Widens (Direction.exchangeOutcome law part present start acts b)
+      (Direction.exchangeOutcome law part present start acts a)) :
+    ∃ s x, W.Admits (Direction.exchangeOutcome law part present start acts b s) s x ∧
+      ¬ W.Admits (Direction.exchangeOutcome law part present start acts a s) s x ∧
+      ¬ WithinClosureOf (((law.withAct part (acts a)).course present start).CoupledFromEither W
+          ((law.withAct part (acts b)).course present start) obs) group x ∧
+      (∀ pool : F → Prop, pool x → ∀ t, s ≤ t →
+        W.SelectsThroughAll obs pool t (fun l => W.Admits (l s) s x)) ∧
+      ∀ pool : F → Prop,
+        (∀ g, pool g → WithinClosureOf (((law.withAct part (acts a)).course present
+          start).CoupledFromEither W ((law.withAct part (acts b)).course present start) obs) group g) →
+        ∀ t, ¬ W.SelectsThroughAll obs pool t (fun l => W.Admits (l s) s x) :=
+  Direction.widening_selected_by_pool (law := law)
+    (W := W.withLevel (Direction.exchangeOutcome law part present start acts a))
+    (W' := W.withLevel (Direction.exchangeOutcome law part present start acts b)) through
+    (ExchangeLaw.withAct_follows present start) (ExchangeLaw.withAct_follows present start)
+    ((ExchangeLaw.course_balances_iff (ExchangeLaw.withAct_nonanticipating na naA) W).mpr feasible)
+    ((ExchangeLaw.course_balances_iff (ExchangeLaw.withAct_nonanticipating na naB) W).mpr feasible')
+    (fun _ => rfl) (fun _ => rfl)
+    (fun _ inGroup h member _ t alike g' c within' couples =>
+      have same := actThrough h (congrArg Bool.not member) t _ _ alike c
+      have both := agree t h (Direction.exchangeOutcome law part present start acts b) c member
+        ⟨g', WithinClosureOf.of_member inGroup within', couples⟩
+      ⟨(ExchangeLaw.withAct_take_of_part member t _ c).trans (same.1.trans
+          (both.1.trans (ExchangeLaw.withAct_take_of_part member t _ c).symm)),
+       (ExchangeLaw.withAct_give_of_part member t _ c).trans (same.2.trans
+          (both.2.trans (ExchangeLaw.withAct_give_of_part member t _ c).symm))⟩)
+    widens
+
+/-- **The direction on a world's moves.** Under J1/J2 on the frame of a part's acts under one law
+of exchange, and the premises of `Direction.exchange_widening_selected_by_pool`, an act whose
+outcome another act's outcome widens is not chosen, wherever it is decided whether the widening
+adds a basic admission; and what tells the two apart is admitted by the widening act's outcome,
+not by the narrowed one's, beyond the acting group's coupling closure. -/
+theorem Direction.exchange_direction {A : Type} {present : Nat → List F} {start : C → Nat}
+    {acts : A → ExchangeLaw F C} {a b : A} {basic : F × Nat → Prop}
+    {better : (Nat → C → Nat) → (Nat → C → Nat) → Prop}
+    (priority : Priority (Direction.frame W (Direction.exchangeOutcome law part present start acts))
+      basic (fun _ => True) better)
+    (na : law.Nonanticipating)
+    (naA : (acts a).Nonanticipating) (naB : (acts b).Nonanticipating)
+    (through : law.Through W obs part) (actThrough : (acts a).Through W obs (fun h => !part h))
+    (feasible : (law.withAct part (acts a)).Feasible present start)
+    (feasible' : (law.withAct part (acts b)).Feasible present start)
+    (agree : ∀ t h l c, part h = true →
+      (∃ g, WithinClosureOf (((law.withAct part (acts a)).course present start).CoupledFromEither W
+          ((law.withAct part (acts b)).course present start) obs) group g ∧ W.CoupledInto obs g c) →
+        (acts a).take t h l c = (acts b).take t h l c ∧ (acts a).give t h l c = (acts b).give t h l c)
+    (widens : W.Widens (Direction.exchangeOutcome law part present start acts b)
+      (Direction.exchangeOutcome law part present start acts a))
+    (decided : Decided (Included
+      (fun e => basic e ∧ W.Admits (Direction.exchangeOutcome law part present start acts b e.2) e.2 e.1)
+      (fun e => basic e ∧ W.Admits (Direction.exchangeOutcome law part present start acts a e.2) e.2 e.1)))
+    (s0 : Nat → C → Nat) :
+    ¬ Frontier (Options (Direction.frame W (Direction.exchangeOutcome law part present start acts)) s0)
+        better (Direction.exchangeOutcome law part present start acts a) ∧
+      ∃ s x, W.Admits (Direction.exchangeOutcome law part present start acts b s) s x ∧
+        ¬ W.Admits (Direction.exchangeOutcome law part present start acts a s) s x ∧
+        ¬ WithinClosureOf (((law.withAct part (acts a)).course present start).CoupledFromEither W
+          ((law.withAct part (acts b)).course present start) obs) group x :=
+  ⟨Direction.narrowed_not_chosen priority widens decided,
+   match Direction.exchange_widening_selected_by_pool na naA naB through actThrough feasible
+      feasible' agree widens with
+   | ⟨s, x, admitted, lost, beyond, _⟩ => ⟨s, x, admitted, lost, beyond⟩⟩
+
+/-- **The handover case is an instance of the direction's schema.** Every comparison meeting
+J1/J2 on the tier frame of the handover's protections and gains (plans `0` expand, `1` keep, `2`
+transfer, `3` withdraw) puts transfer above keeping service and above expansion, and so leaves
+expansion unchosen, with expansion's real gain kept. -/
+theorem Requirement.Handover.direction {better : Nat → Nat → Prop}
+    (priority : Priority (tierFrame Handover.protection Handover.realization) basicSide gainSide
+      better) :
+    better 2 1 ∧ better 2 0 ∧ ¬ Frontier Handover.eligible better 0 ∧
+      Handover.realization 0 false ∧ ¬ Handover.realization 1 false :=
+  have lexical := basicPriority_iff_priority.mpr priority
+  ⟨(lexical.iff 2 1).mpr Handover.transfer_above_keep,
+   (lexical.iff 2 0).mpr Handover.transfer_above_expansion,
+   Frontier.excluded (show 2 < 4 by decide) ((lexical.iff 2 0).mpr Handover.transfer_above_expansion),
+   Handover.expansion_has_real_gain⟩
+
 end Pool
 
 section Scope

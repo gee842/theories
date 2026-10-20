@@ -33,7 +33,8 @@
     "Becoming.alignment_frontier_iff (retired module)",
     "Becoming.Direction.narrowed_not_chosen",
     "Becoming.Direction.widening_selected_by_pool",
-    "Becoming.Direction.grounded_widening_selected"
+    "Becoming.Direction.grounded_widening_selected",
+    "Becoming.Direction.exchange_direction"
   ],
   "dependencies": [
     {
@@ -129,14 +130,19 @@
       "kind": "non-implication"
     },
     {
-      "en": "A World's exchanges read as the family of moves, or the periphery case as a formal core instance.",
-      "zh": "World 的交换读作这一族动作，或外围案例作为核心中的形式实例。",
+      "en": "Moves beyond one part's acts against one fixed law of the rest from one start: a world whose rest changes its law with the act, or whose acts change the formations present, is not covered.",
+      "zh": "一个部分对固定的其余之律、从同一起点之行动以外的动作：其余随行动改变其律、或行动改变在场形成的世界，不在其内。",
       "kind": "scope"
     },
     {
       "zh": "代理问题之外没有关于对齐的结果：选择的规律定性地陈述它，Zhuang and Hadfield-Menell（NeurIPS 2020）证明了更强的定理。",
       "en": "No result on alignment beyond the known proxy problem: the selection laws state it qualitatively, and Zhuang and Hadfield-Menell (NeurIPS 2020) prove a stronger theorem.",
       "kind": "correspondence"
+    },
+    {
+      "en": "That widening the coupling suffices for what tells two moves apart to be kept: the pool part makes it necessary (selected only through a pool coupled into it) and does not say which of several self-consistent outcomes a selection reaches. In CG1's frozen commons test, three learners each coupled into the stock still emptied it in every episode of both rounds (D2b), harvesting at every step being a mutual best response.",
+      "zh": "扩大耦合足以使区分两个动作者被保持：池的部分使它成为必要（只经耦合入它的池被选择），而不说选择到达几个自洽结果中的哪一个。在 CG1 的冻结公地检验中，三个各自耦合入存量的学习者在两轮的每一回合仍把它取尽（D2b），每一步都收获是相互的最优回应。",
+      "kind": "non-implication"
     }
   ],
   "progress": [
@@ -154,11 +160,21 @@
       "en": "Core schema: on a web's moves, under C read as widening and J1/J2, a narrowed move is not chosen, and the admission that tells it apart is selected only through a pool coupled into it; Clearing is the instance.",
       "zh": "核心模式：在网的动作上，于读作扩大的 C 与 J1/J2 之下，被缩小的动作不被选，区分它的接纳只经耦合入它的组被选择；Clearing 是实例。",
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#225-one-evaluative-chain-r34"
+    },
+    {
+      "en": "A world's moves: the schema instantiated on a part's acts under one law of exchange, with balance, presence and start by construction; the handover case as a formal core instance. With the direction from the evaluation row, the chain to alignment ends on the spine.",
+      "zh": "世界的动作：模式在部分于一条交换之律下的行动上实例化，平衡、在场与起点由构造成立；交接案例作为核心中的形式实例。连同从评价一行出发的方向，通向对齐之链止于脊柱。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#245-the-alignment-direction-on-a-worlds-moves-r44"
+    },
+    {
+      "en": "Measured (CG1, predictions frozen before the runs): the gap's contrast at the end of the coupling held (C1, round 2: an own-reward learner spends the last apple in 118 of 118 decisions, a coupled one in 0 of 2,360), and so did the late-reading band against learned adversaries (E3, 80 of 80); the pool's positive reading failed (D2b): widening the coupling is necessary, not sufficient.",
+      "zh": "已测量（CG1，预测在运行前冻结）：耦合末端差距的对照成立（C1，第二轮：只以自身收获为报酬的学习者在 118 次决定中 118 次取走最后一个苹果，耦合者在 2,360 次中 0 次），迟读之带对学习的对手亦成立（E3，80 中 80）；池的正面读法失败（D2b）：扩大耦合是必要的，不是充分的。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#240-a-commons-with-gated-renewal-the-first-falsifiable-test-on-learning-agents-cg1"
     }
   ],
   "validation_scope": {
-    "en": "The existing independent review accepts the direction argument and independently rebuilt 9 new theorems/16 new audits plus 46 inherited audits. The core schema (Becoming.Direction) is machine-checked with empty axiom reports (receipt 20261020T065352.292900Z, with the direction from the evaluation row since R40); not independently reviewed.",
-    "zh": "既有独立审查接受方向论证，并独立重编译9项新定理／16项新审计及46项继承审计。核心模式（Becoming.Direction）经实查，公理报告为空（回执 20261020T065352.292900Z，自 R40 起含从评价一行出发的方向）；未经独立审查。"
+    "en": "The existing independent review accepts the direction argument and independently rebuilt 9 new theorems/16 new audits plus 46 inherited audits. The core schema (Becoming.Direction) is machine-checked with empty axiom reports (receipt 20261020T093308.742793Z, with the direction from the evaluation row since R40 and a world's exchanges as moves and the handover instance since R44); not independently reviewed. CG1 (study section 240) measured the selection side in a learning commons: C1 and E3 held, D2b failed.",
+    "zh": "既有独立审查接受方向论证，并独立重编译9项新定理／16项新审计及46项继承审计。核心模式（Becoming.Direction）经实查，公理报告为空（回执 20261020T093308.742793Z，自 R40 起含从评价一行出发的方向，自 R44 起含世界的交换作为动作与交接实例）；未经独立审查。CG1（研究第240节）在学习的公地中测量了选择一侧：C1 与 E3 成立，D2b 失败。"
   },
   "references": [
     {
@@ -172,7 +188,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Direction.lean",
       "role": "proof",
-      "sha256": "303428e13cd0548d8de715d6805923f842f26790fc596e56204e546e1d23664f",
+      "sha256": "1037bf6d52dcffd5386403c5b47d08c50e6aaeff33d8c946545e53847531935c",
       "declarations": [
         "Becoming.Direction.frame",
         "Becoming.Direction.options_iff",
@@ -186,7 +202,11 @@
         "Becoming.Clearing.spared_widens",
         "Becoming.Clearing.direction",
         "Becoming.Web.unrestricted_iff_grounds_beyond",
-        "Becoming.Direction.grounded_widening_selected"
+        "Becoming.Direction.grounded_widening_selected",
+        "Becoming.Direction.exchangeOutcome",
+        "Becoming.Direction.exchange_widening_selected_by_pool",
+        "Becoming.Direction.exchange_direction",
+        "Becoming.Requirement.Handover.direction"
       ]
     },
     {
@@ -338,9 +358,21 @@
       "declarations": []
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T093308.742793Z/verification.json",
+      "role": "receipt",
+      "sha256": "d13bb7a8bef2993ffda38f33b45958c5824182e0d2d8e117869c45d403c19a2b",
+      "declarations": []
+    },
+    {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
       "role": "review",
       "sha256": "1e07f9b0f6d13a4b8b6900db28676b9b7824cbeb3031d9c6e16caf2a6e4a3102",
+      "declarations": []
+    },
+    {
+      "path": "experiments/commons-gated-renewal/README.md",
+      "role": "integration",
+      "sha256": "170934471ca4b430fb70835985c1132b697545c133ef72ec119dae2451b46ff2",
       "declarations": []
     }
   ],
@@ -368,7 +400,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Direction.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T065352.292900Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T093308.742793Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Direction",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -447,6 +479,14 @@
     {
       "en": "20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; one does_not_show item added, and the correspondence names the proxy-problem literature with what the laws add (the responsive closure, the pool) and what they do not. The claim and its premises are unchanged.",
       "zh": "2026年10月20日，LK1（研究第237节）：按意义审查（研究 SA1）的裁定指名最接近的先前结果，使本记录不被当作新发现来领头；增加一条 does_not_show，对应中指名代理问题的文献，以及规律加了什么（回应的闭包、池）与没有加什么。主张与其前提不变。"
+    },
+    {
+      "en": "20 October 2026, R44 (study section 245): two laws added. A world's exchanges as the moves (Direction.exchangeOutcome, Direction.exchange_widening_selected_by_pool, Direction.exchange_direction), with balance, presence and start by construction. The handover case as a formal instance (Requirement.Handover.direction). The does_not_show item on both is replaced by the scope the exchange form leaves. Receipt 20261020T093308.742793Z.",
+      "zh": "2026年10月20日，R44（研究第245节）：增加两条规律，世界的交换作为动作（Direction.exchangeOutcome、Direction.exchange_widening_selected_by_pool、Direction.exchange_direction），平衡、在场与起点由构造成立；交接案例作为形式实例（Requirement.Handover.direction）。关于二者的 does_not_show 换成交换形式所留的范围。回执 20261020T093308.742793Z。"
+    },
+    {
+      "en": "20 October 2026, CG1b (study section 247): CG1's measured boundary added (does_not_show, progress, evidence; chapter 7.4, 7.5, 7.7): widening the coupling is necessary, not sufficient; C1 and E3 support the reading, D2b bounds it. No law, premise or status changed.",
+      "zh": "2026年10月20日，CG1b（研究第247节）：加入 CG1 测得的边界（does_not_show、progress、证据；第 7.4、7.5、7.7 节）：扩大耦合是必要的，不是充分的；C1 与 E3 支持此读法，D2b 为其划界。规律、前提与状态都不变。"
     }
   ],
   "text_versions": [
@@ -515,6 +555,15 @@
       ]
     },
     {
+      "en": "The moves can be a world's own exchanges: a move is a part's act under one law of exchange, the rest acting by the law from the same start, its outcome the levels that course generates. With the rest and the acts laws of what has stood, the rest reading through coupling, the acts agreeing on the conditions coupled into the acting group's closure and both courses feasible, balance, presence and start hold by construction; an act whose outcome another's widens is not chosen under J1/J2, wherever it is decided whether the widening adds a basic admission, and the admission telling them apart lies beyond the closure and is selected through every pool holding it and no pool within the closure.",
+      "zh": "动作可以是一个世界自身的交换：一个动作是部分在一条交换之律下的行动，其余按此律、从同一起点行动，其结果是该进程所生成的水平。其余与诸行动都是已立之律，其余经耦合来读，诸行动在耦合入行动之组闭包的条件上一致，两进程都可行时，平衡、在场与起点由构造成立；结果被另一行动之结果扩大的行动在 J1/J2 之下不被选（凡扩大是否增加基本接纳可判定之处），区分二者的接纳在闭包之外，经持有它的每个池被选择，不经闭包内的任何池。",
+      "declarations": [
+        "Becoming.Direction.exchangeOutcome",
+        "Becoming.Direction.exchange_widening_selected_by_pool",
+        "Becoming.Direction.exchange_direction"
+      ]
+    },
+    {
       "en": "On a web whose valuation is connected, with living decided, the continuation condition is exactly the evaluation's grounds (a seed and both neutralities) with significance for what does not live. From these, a widening is an extension of the moves' frame that retains and adds what has significance from every standpoint, and the admission telling the widening world from the narrowed one, the continuation of a formation with significance from every standpoint, is selected through every pool holding it and no pool within the acting group's coupling closure. C's order is not used.",
       "zh": "在估值连通、生与否可判定的网上，延续条件恰是评价的根据（一个种子与两个中立性）加上不生者的意义。由此，扩大是动作框架上的延伸，从每个立场保留并增加有意义者；区分扩大世界与被缩小世界的接纳，即一个从每个立场都有意义的形成之延续，经持有它的每个组被选择，而不经行动组耦合闭包之内的任何组。不用 C 的次序。",
       "declarations": [
@@ -529,6 +578,13 @@
         "Becoming.Clearing.spareOutcome",
         "Becoming.Clearing.spared_widens",
         "Becoming.Clearing.direction"
+      ]
+    },
+    {
+      "en": "The handover case (plans: expand, keep service, transfer, withdraw) is a formal instance of the schema: every comparison meeting J1/J2 on its tier frame puts transfer above keeping service and above expansion and leaves expansion unchosen among the four plans, while expansion's real gain is kept.",
+      "zh": "交接案例（计划：扩张、保留服务、移交、骤然撤出）是该模式的形式实例：在其层框架上满足 J1/J2 的每个比较都把移交置于保留服务与扩张之上，在四个计划中扩张不被选，而扩张的真实增益保留。",
+      "declarations": [
+        "Becoming.Requirement.Handover.direction"
       ]
     }
   ],

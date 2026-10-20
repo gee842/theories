@@ -411,7 +411,7 @@
 <a id="611-条件的分解自身的预设与不变的一步"></a>
 <a id="65-比较提升与实践判断"></a>
 <a id="66-不做什么"></a>
-**定理。** 本节陈述 `Valuation.premises_of_unrestricted`、`unrestricted_iff_livingSignificance`、`Web.retains_iff_includes`、`Preemption.not_undermining_yet_loses`、`Clearing.clearer_loses_dweller`；完整陈述见[英文版 §6.4](THE-THEORY-OF-BECOMING.md#64-the-continuation-condition)。
+**定理。** 本节陈述 `Valuation.premises_of_unrestricted`、`unrestricted_iff_livingSignificance`、`Web.retains_iff_includes`、`Preemption.not_undermining_yet_loses`、`Clearing.clearer_loses_dweller`、`Flow.Balances.keeps_of_not_arising`（只有活动的形成取与给时，成员在起点不活动、整段上不生起的部分不改变能形成者；生起不定次序，见 `ArisingDrawer.arises_narrows` 与 `ArisingGiver.arises_widens`）；完整陈述见[英文版 §6.4](THE-THEORY-OF-BECOMING.md#64-the-continuation-condition)。
 
 记录：[continuation-condition-yields-living-significance](../results/records/continuation-condition-yields-living-significance.md)、[significance-retained-within-margin](../results/records/significance-retained-within-margin.md)、[the-run-classes-and-widening](../results/records/the-run-classes-and-widening.md)、[whole-first-and-bounded-centers](../results/records/whole-first-and-bounded-centers.md)、[ranking-under-readings](../results/records/ranking-under-readings.md)。
 
@@ -468,9 +468,9 @@
 
 ### 7.5 方向，在条件之下
 
-**要点。** 对齐方向是条件路线：延续条件定范围，读作扩大的 C 定次序，实践承诺公开，被选的动作保持某个动作所保持的基本容纳，结果被另一动作之结果扩大的动作不被选。其形式部分是任何依存网上的模式；关于实际 AI 系统的主张仍是论证。
+**要点。** 对齐方向是条件路线：延续条件定范围，读作扩大的 C 定次序，实践承诺公开，被选的动作保持某个动作所保持的基本容纳，结果被另一动作之结果扩大的动作不被选。其形式部分是任何依存网上的模式；关于实际 AI 系统的主张仍是论证。扩大耦合是必要的，不是充分的：池的部分是盲的规律，说区分两个动作者只经耦合入它的池被选择，不说选择到达几个自洽结果中的哪一个。CG1 的冻结检验中，三个各自耦合入存量的学习者在两轮的每一回合仍把共有的斑块取尽（D2b）；在耦合末端差距的对照（C1）与迟读之带（E3）成立（[报告](../../../experiments/commons-gated-renewal/README.md)、[研究 §240](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#240-a-commons-with-gated-renewal-the-first-falsifiable-test-on-learning-agents-cg1)）。
 
-**定理。** 本节陈述 `Direction.extension_iff_widens`、`Direction.narrowed_not_chosen`、`Direction.widening_selected_by_pool`；完整陈述见[英文版 §7.5](THE-THEORY-OF-BECOMING.md#75-the-direction-under-the-condition)。
+**定理。** 本节陈述 `Direction.extension_iff_widens`、`Direction.narrowed_not_chosen`、`Direction.widening_selected_by_pool`、`Direction.exchange_direction`（动作是一个世界自身的交换：部分在一条交换之律下的行动）与 `Requirement.Handover.direction`（交接案例作为核心中的形式实例）；完整陈述见[英文版 §7.5](THE-THEORY-OF-BECOMING.md#75-the-direction-under-the-condition)。
 
 记录：[alignment-direction-under-widening](../results/records/alignment-direction-under-widening.md)。
 
@@ -832,10 +832,10 @@
 <a id="81-the-targets"></a>
 ### 8.1 依次排列的开放项
 
-1. **一个基底，以及对每个交换之律的规律**（进一步的证明；第一目标的形式部分）。基底按定义是一个（§1.1）；在 R37c 树上的连通度量中，11,552 条定理中 503 条与两个基底族都分开，各有所述理由。经每个关系项自身各步读出者对每个交错相同，所以对它们共同步序是一个读法（R38；`world_reads_alike`）。
-2. **一条评价之链**（进一步的证明）。已落地：逐步类与运行类在所指名的前提下单向接上次序，在水平路径上条件、意义与 C 读同一对象（`Web.paths_one_object`）。*开放：*运行上的生起之类与次序；进一步生成的成分能否进入 `living` 的读法。
+1. **一个基底，以及对每个交换之律的规律**（进一步的证明；第一目标的形式部分）。基底按定义是一个（§1.1）；在 R37c 树上的连通度量中，11,552 条定理中 503 条与两个基底族都分开，各有所述理由。经每个关系项自身各步读出者对每个交错相同，所以对它们共同步序是一个读法（R38；`world_reads_alike`）。其余方向由指名的构造满足（R43）：每个运行是确定它的世界（`Frame.world_fixes_run`），一种关系项上的每个网与流是一个世界的（`World.of_web`、`World.of_flow`）。
+2. **一条评价之链**（进一步的证明）。已落地：逐步类与运行类在所指名的前提下单向接上次序，在水平路径上条件、意义与 C 读同一对象（`Web.paths_one_object`）。R40：在连通、生与否可判定的网上，条件恰是评价的根据加上不生者的意义（`Web.unrestricted_iff_grounds_beyond`），由此得方向的扩大及其池的选择（`Direction.grounded_widening_selected`）。R45：生起之类只作为边界接上次序：成员在起点不活动、整段上不生起的部分不改变能形成者，生起不定次序（`Flow.Balances.keeps_of_not_arising`、`ArisingDrawer.arises_narrows`、`ArisingGiver.arises_widens`）。*开放：*进一步生成的成分能否进入 `living` 的读法。
 3. **评价怎样在展开之内形成**（进一步的证明）。*开放：*中心怎样逐步形成、表示其区域、边界与依存，并认识它所及者；观察是否可由依存推出。
-4. **脊柱上的对齐方向**（进一步的证明）。已落地：作为核心模式的方向（§7.5）。*开放：*`World` 的动作读作这样的族，2026 年 10 月 7 日的外围模块作为核心中的形式实例。
+4. **脊柱上的对齐方向**（进一步的证明）。已落地：作为核心模式的方向（§7.5）；R44：世界的动作读作部分在一条交换之律下的行动，平衡、在场与起点由构造成立（`Direction.exchange_direction`），交接案例作为核心中的形式实例（`Requirement.Handover.direction`）。连同 R40 从评价一行出发的方向，通向对齐之链止于脊柱。*开放：*形式部分无；链所指名的前提是根据与对应的问题。
 5. **扩大记入什么**（进一步的证明）。*开放：*沿 `Flow.GrownBy` 在增长的世界上的扩大；混合部分的度量（条件之外的前提，须公开陈述）；更新能力与关系丰富度的比较。
 6. **可以稠密的量**（进一步的证明）。*开放：*每次交换的最小损失能否推出而非给出；任何量上的流、依存网与世界；完成报告所列的每条自然数规律现在都有稠密形式或反例（R40、R41）；实数的强度与倍率。
 7. **哪个律成立，成员的律怎样形成**（进一步的证明）。已落地（R38，[研究第 233 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#233-one-turn-around-a-cycle-and-any-two-interleavings-r38)）：重合进程在一个条件上的差距，恰在其交换按某映射回应它之处，是该映射的进程（`LoopReturn.responds_iff`），这是前提，未由交换律推出；精确环节之回路的一圈精确陈述（`LoopReturn.carried_around_exact`）。*开放：*交换之律本身，带噪声的律及其历程；成员的律怎样形成、怎样回应它所耦合入者；单个回路之外、多个条件同时之处哪个律闭合而非扩大差别；概率学习与隐含偏置。
