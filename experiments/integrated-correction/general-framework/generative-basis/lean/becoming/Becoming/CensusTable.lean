@@ -240,6 +240,64 @@ theorem census_table_obeys_free {Class : World → Prop}
   ⟨fun law => table.mp fun n c a tally _ => law n c a tally,
    fun law n c a tally => table.mpr law n c a tally trivial⟩
 
+/-- The table for the census of activity where the class is given by two hypotheses and the
+condition by two, curried as the laws state them; counts as relations. -/
+theorem census_table_holds₂ {A B : World → Prop}
+    {C D Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
+    (sound : ∀ w, A w → B w → w.CountsHold fun n c a => C n c a ∧ D n c a)
+    (witnessed : Witnessed (fun w x t => w.web.active t x) (fun w => A w ∧ B w)
+      fun n c a => C n c a ∧ D n c a) :
+    (∀ n c a, Tally n c a → C n c a → D n c a → Q n c a) ↔
+      ∀ w, A w → B w → w.CountsHold Q :=
+  have table := census_table_holds (Q := Q) (fun w within => sound w within.1 within.2) witnessed
+  ⟨fun law w a b => table.mp (fun n c a tally both => law n c a tally both.1 both.2) w ⟨a, b⟩,
+   fun law n c a tally first second => table.mpr (fun w within => law w within.1 within.2) n c a
+     tally ⟨first, second⟩⟩
+
+/-- So with the marks a procedure gives, for every pointwise property. -/
+theorem census_table_obeys₂ {A B : World → Prop}
+    {C D Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q)
+    (sound : ∀ w, A w → B w → w.CountsHold fun n c a => C n c a ∧ D n c a)
+    (witnessed : Witnessed (fun w x t => w.web.active t x) (fun w => A w ∧ B w)
+      fun n c a => C n c a ∧ D n c a) :
+    (∀ n c a, Tally n c a → C n c a → D n c a → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], A w → B w → w.CountsObey Q :=
+  have table := census_table_obeys (Q := Q) pointwise (fun w within => sound w within.1 within.2)
+    witnessed
+  ⟨fun law w _ a b => table.mp (fun n c a tally both => law n c a tally both.1 both.2) w ⟨a, b⟩,
+   fun law n c a tally first second => table.mpr (fun w _ within => law w within.1 within.2) n c a
+     tally ⟨first, second⟩⟩
+
+/-- The table for the census of activity with two hypotheses and three conditions; counts as
+relations. -/
+theorem census_table_holds₃ {A B : World → Prop}
+    {C D E Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
+    (sound : ∀ w, A w → B w → w.CountsHold fun n c a => C n c a ∧ D n c a ∧ E n c a)
+    (witnessed : Witnessed (fun w x t => w.web.active t x) (fun w => A w ∧ B w)
+      fun n c a => C n c a ∧ D n c a ∧ E n c a) :
+    (∀ n c a, Tally n c a → C n c a → D n c a → E n c a → Q n c a) ↔
+      ∀ w, A w → B w → w.CountsHold Q :=
+  have table := census_table_holds (Q := Q) (fun w within => sound w within.1 within.2) witnessed
+  ⟨fun law w a b => table.mp (fun n c a tally all => law n c a tally all.1 all.2.1 all.2.2) w
+      ⟨a, b⟩,
+   fun law n c a tally first second third => table.mpr (fun w within => law w within.1 within.2)
+     n c a tally ⟨first, second, third⟩⟩
+
+/-- So with the marks a procedure gives, for every pointwise property. -/
+theorem census_table_obeys₃ {A B : World → Prop}
+    {C D E Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q)
+    (sound : ∀ w, A w → B w → w.CountsHold fun n c a => C n c a ∧ D n c a ∧ E n c a)
+    (witnessed : Witnessed (fun w x t => w.web.active t x) (fun w => A w ∧ B w)
+      fun n c a => C n c a ∧ D n c a ∧ E n c a) :
+    (∀ n c a, Tally n c a → C n c a → D n c a → E n c a → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], A w → B w → w.CountsObey Q :=
+  have table := census_table_obeys (Q := Q) pointwise (fun w within => sound w within.1 within.2)
+    witnessed
+  ⟨fun law w _ a b => table.mp (fun n c a tally all => law n c a tally all.1 all.2.1 all.2.2) w
+      ⟨a, b⟩,
+   fun law n c a tally first second third =>
+     table.mpr (fun w _ within => law w within.1 within.2) n c a tally ⟨first, second, third⟩⟩
+
 end World
 
 end Becoming

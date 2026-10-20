@@ -191,64 +191,6 @@ theorem counting_binds_iff_counted (S : Premise → Bool) :
         | .inr ⟨_, dissipative⟩ => nomatch hd.symm.trans dissipative),
    fun binds => (counting_under_counted S).mp fun _ _ _ _ quiet => quiet binds⟩
 
-/-! ## Enclosure bounds change, where the counts exist -/
-
-/-- **Enclosure bounds change for every counted census.** In a world whose relata are embodied,
-with a balanced, dissipative flow and every step from `T` on enclosed, the total standing at `T`
-bounds the change of every counted census from `T`. No decidedness. -/
-theorem enclosure_bounds_change_counted {alive : Nat → List w.Relatum}
-    (census : w.web.Census alive) {n c a : Nat → Nat} (counted : w.CountsOf alive n c a)
-    (embodied : w.Embodied) (balanced : w.Balanced) (dissipative : w.Dissipative) {T : Nat}
-    (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t) :
-    ChangeBound T (w.web.stock (alive T) T) n c a :=
-  have standing := standingCensus census embodied
-  Flow.runsDown_change_bound standing
-    (fun t later down => (enclosed t later).aroundStanding_not_not alive fun around =>
-      down (around.runsDownClosed balanced dissipative standing).runsDown)
-    (fun t _ => Nat.le_trans (Nat.le_of_eq (counted t).1) (length_le_stock census embodied t))
-    fun t _ changes => match counted t with
-    | ⟨_, ceased, came⟩ => match Nat.eq_zero_or_pos (c t) with
-      | .inr ceasing => match ceased.exists_of_pos ceasing with
-        | ⟨x, _, ceases⟩ => ⟨x, .inr (falls_of_ceases embodied ceases)⟩
-      | .inl still => match came.exists_of_pos (Nat.lt_of_lt_of_le changes (Nat.le_of_eq
-          ((congrArg (· + a t) still).trans (Nat.zero_add _)))) with
-        | ⟨x, _, comes⟩ => ⟨x, .inl (rises_of_arises embodied comes)⟩
-
-/-- At an enclosed step, where the flow balances and dissipates and every relatum is embodied,
-under a census something coming to be across the step needs something active at it, whoever
-gives and whoever takes. -/
-theorem active_of_coming_enclosed (balanced : w.Balanced) (dissipative : w.Dissipative)
-    (embodied : w.Embodied) {alive : Nat → List w.Relatum} (census : w.web.Census alive)
-    {t : Nat} (enclosed : w.flow.Enclosed t) {x : w.Relatum}
-    (comes : ComesToBe (fun s => w.web.active s x) t) : 0 < (alive t).length :=
-  match Nat.eq_zero_or_pos (alive t).length, enclosed with
-  | .inr pos, _ => pos
-  | .inl empty, ⟨cs, distinct, closed⟩ =>
-    have idle : ∀ f, ¬ w.web.active t f := fun f active =>
-      Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (Nat.lt_of_lt_of_le
-        (total_pos_of_mem (((census t).2 f).mp active) Nat.zero_lt_one)
-        (Nat.le_of_eq (total_ones (alive t)))) (Nat.le_of_eq empty))
-    have nothing : w.web.stock cs t = 0 :=
-      total_eq_zero fun c _ => eq_zero_of_not_pos fun stands => idle c ((embodied c t).mpr stands)
-    have stands : w.web.ComesToStand t x :=
-      ⟨fun standing => idle x ((embodied x t).mpr standing), (embodied x (t + 1)).mp comes.2⟩
-    match total_pos _ (Flow.Balances.rise_given balanced stands.rises) with
-    | ⟨f, present, gives⟩ =>
-      absurd (fun mem => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
-          ((balanced.on cs t).comes_from_standing (dissipative cs t distinct closed) mem stands)
-          (Nat.le_of_eq nothing)))
-        fun out => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le gives
-          (Nat.le_of_eq (closed f present x out).2))
-
-/-- Something coming to be across a step needs something active at it, given a ground. -/
-theorem company_of {alive : Nat → List w.Relatum} {n c a : Nat → Nat}
-    (counted : w.CountsOf alive n c a) {t : Nat}
-    (ground : ∀ x, x ∈ alive (t + 1) → ComesToBe (fun s => w.web.active s x) t →
-      0 < (alive t).length) : 0 < a t → 0 < n t := fun arising =>
-  match counted t with
-  | ⟨length, _, came⟩ => match came.exists_of_pos arising with
-    | ⟨x, listed, comes⟩ => Nat.lt_of_lt_of_le (ground x listed comes) (Nat.le_of_eq length.symm)
-
 theorem enclosedQueue_countsOf {n c a : Nat → Nat} (B : Nat) (tally : Tally n c a) :
     (enclosedQueue n c a B).CountsOf (Queue.line n c) n c a :=
   FamilyCounts.of_eq (countsOf_decided (w := enclosedQueue n c a B) (Queue.line n c)) fun t =>
@@ -283,32 +225,13 @@ theorem enclosed_counting_counted {Q : (Nat → Nat) → (Nat → Nat) → (Nat 
     (∀ n c a, Tally n c a → (∀ t, 0 < a t → 0 < n t) → (∃ B, ChangeBound 0 B n c a) →
       Q n c a) ↔
       ∀ w : World, w.Premised → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) → w.CountsHold Q :=
-  ⟨fun law _ premised ⟨_, enclosed⟩ _ n c a census counted =>
-    law n c a (counted.tally census)
-      (fun _ => company_of counted fun _ _ comes => active_of_coming_jointly
-        (premised _ (.tail _ (.head _))) (premised _ (.tail _ (.tail _ (.head _))))
-        (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
-          (.head _))))))))
-        census comes)
-      ⟨_, (enclosure_bounds_change_counted census counted
-        (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))))
-        (premised _ (.tail _ (.head _)))
-        (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))) enclosed).from_zero⟩,
-   fun law n c a tally company ⟨_, bound⟩ =>
-    law (enclosedQueue _ _ _ _) (enclosedQueue_premised tally company bound)
-      ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩ _ n c a (enclosedQueue_census _ _ _ _)
-      (enclosedQueue_countsOf _ tally)⟩
+  census_table_holds₂ enclosed_counting_sound enclosed_counting_witnessed
 
 /-- **Under all eight premises, in finite worlds, where the counts exist**: the same laws. -/
 theorem finite_counting_counted {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} :
     (∀ n c a, Tally n c a → (∀ t, 0 < a t → 0 < n t) → (∃ B, ChangeBound 0 B n c a) →
       Q n c a) ↔ ∀ w : World, w.Premised → w.Finite → w.CountsHold Q :=
-  ⟨fun law w premised finite => enclosed_counting_counted.mp law w premised
-      ⟨0, fun t _ => finite.enclosed t⟩,
-   fun law n c a tally company ⟨_, bound⟩ =>
-    law (finiteQueue _ _ _ _) (finiteQueue_premised tally company bound)
-      (finiteQueue_finite _ _ _ _) _ n c a (finiteQueue_census _ _ _ _)
-      (finiteQueue_countsOf tally bound)⟩
+  census_table_holds₂ finite_counting_sound finite_counting_witnessed
 
 /-- **The laws of counting under each selection, in worlds enclosed from some step on, where
 the counts exist**: the tally, and, where the selection binds counting, nothing arising across a
@@ -321,64 +244,7 @@ theorem enclosed_counting_under_counted (S : Premise → Bool)
       (BoundsChange S → ∃ T B, ChangeBound T B n c a ∧ ∀ t, T ≤ t → 0 < a t → 0 < n t) →
         Q n c a) ↔
       ∀ w : World, w.Meets S → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) → w.CountsHold Q :=
-  ⟨fun law _ meets ⟨T, enclosed⟩ _ n c a census counted => law n c a (counted.tally census)
-    (fun ⟨balanced, embodied, giving⟩ _ => company_of counted fun _ listed comes =>
-      match giving with
-      | .inl acting => active_of_coming_jointly (meets _ balanced) (meets _ acting)
-          (Embodied.arising (meets _ embodied)) census comes
-      | .inr ⟨taking, dissipative⟩ => active_of_coming_taking (meets _ balanced)
-          (meets _ taking) (meets _ dissipative) (meets _ embodied) census listed comes)
-    (fun ⟨balanced, embodied, dissipative⟩ => ⟨T, _, enclosure_bounds_change_counted census
-      counted (meets _ embodied) (meets _ balanced) (meets _ dissipative) enclosed,
-      fun t later => company_of counted fun _ _ comes => active_of_coming_enclosed
-        (meets _ balanced) (meets _ dissipative) (meets _ embodied) census (enclosed t later)
-        comes⟩),
-   fun law n c a tally quiet bounded =>
-    match hb : S .balanced, he : S .embodied with
-    | false, _ => law (embodiedQueue n c) (embodiedQueue_meets n c hb)
-        ⟨0, fun t _ => still_enclosed _ (fun _ => rfl) t⟩ _ n c a Queue.listed
-        (embodiedQueue_countsOf tally)
-    | true, false => law (queue n c) (queue_meets n c he)
-        ⟨0, fun t _ => still_enclosed _ (fun _ => rfl) t⟩ _ n c a Queue.listed
-        (queue_countsOf tally)
-    | true, true => match hd : S .dissipative, ha : S .acting, ht : S .taking with
-      | false, _, _ => law (enclosedQueue n c a 0)
-          (fun
-            | .dependent, _ => fun _ _ _ _ no => (nomatch no)
-            | .balanced, _ => enclosedQueue_balanced n c a 0
-            | .acting, selected => enclosedQueue_acting tally (quiet ⟨hb, he, .inl selected⟩)
-            | .taking, _ => enclosedQueue_taking n c a 0
-            | .dissipative, selected => nomatch hd.symm.trans selected
-            | .embodied, _ => enclosedQueue_embodied n c a 0
-            | .counted, _ => ⟨_, enclosedQueue_census n c a 0⟩
-            | .transmitting, _ => ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩)
-          ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩ _ n c a (enclosedQueue_census n c a 0)
-          (enclosedQueue_countsOf 0 tally)
-      | true, true, _ => match bounded ⟨hb, he, hd⟩ with
-        | ⟨_, _, bound, _⟩ => law (enclosedQueue n c a _)
-            ((enclosedQueue_premised tally (quiet ⟨hb, he, .inl ha⟩) bound.from_zero).meets S)
-            ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩ _ n c a (enclosedQueue_census n c a _)
-            (enclosedQueue_countsOf _ tally)
-      | true, false, true => match bounded ⟨hb, he, hd⟩ with
-        | ⟨_, _, bound, _⟩ => law (enclosedQueue n c a _)
-            ((enclosedQueue_premised tally (quiet ⟨hb, he, .inr ⟨ht, hd⟩⟩)
-              bound.from_zero).meets S)
-            ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩ _ n c a (enclosedQueue_census n c a _)
-            (enclosedQueue_countsOf _ tally)
-      | true, false, false => match bounded ⟨hb, he, hd⟩ with
-        | ⟨T, K, bound, company⟩ =>
-            law (closingQueue n c a (K + T) T)
-              (fun
-                | .dependent, _ => fun _ _ _ _ no => (nomatch no)
-                | .balanced, _ => closingQueue_balanced n c a (K + T) T
-                | .acting, selected => nomatch ha.symm.trans selected
-                | .taking, selected => nomatch ht.symm.trans selected
-                | .dissipative, _ => closingQueue_dissipative tally bound company
-                | .embodied, _ => enclosedQueue_embodied n c a (K + T)
-                | .counted, _ => ⟨_, enclosedQueue_census n c a (K + T)⟩
-                | .transmitting, _ => ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩)
-              ⟨T, fun _ later => closingQueue_enclosed tally later⟩ _ n c a
-              (enclosedQueue_census n c a (K + T)) (closingQueue_countsOf (K + T) T tally)⟩
+  census_table_holds₂ (enclosed_counting_under_sound S) (enclosed_counting_under_witnessed S)
 
 /-- In worlds enclosed from some step on, where the counts exist, a change bound from some step
 is a law of counting under a selection exactly when the selection bounds change. -/
@@ -411,33 +277,7 @@ theorem finite_counting_under_counted (S : Premise → Bool)
       (BindsCounting S ∨ BoundsChange S → ∀ t, 0 < a t → 0 < n t) →
       (BoundsChange S → ∃ B, ChangeBound 0 B n c a) → Q n c a) ↔
       ∀ w : World, w.Meets S → w.Finite → w.CountsHold Q :=
-  ⟨fun law _ meets finite alive n c a census counted => law n c a (counted.tally census)
-    (match finite.census_bounded with
-      | ⟨M, bounded⟩ => ⟨M, fun t => Nat.le_trans (Nat.le_of_eq (counted t).1)
-          (bounded alive census t)⟩)
-    (fun selected _ => company_of counted fun _ _ comes => match selected with
-      | .inl ⟨balanced, embodied, .inl acting⟩ => active_of_coming_jointly (meets _ balanced)
-          (meets _ acting) (Embodied.arising (meets _ embodied)) census comes
-      | .inl ⟨balanced, embodied, .inr ⟨_, dissipative⟩⟩ | .inr ⟨balanced, embodied, dissipative⟩ =>
-          active_of_coming_enclosed (meets _ balanced) (meets _ dissipative) (meets _ embodied)
-            census (finite.enclosed _) comes)
-    (fun ⟨balanced, embodied, dissipative⟩ => ⟨_, enclosure_bounds_change_counted census counted
-      (meets _ embodied) (meets _ balanced) (meets _ dissipative) fun t _ => finite.enclosed t⟩),
-   fun law n c a tally ⟨M, bounded⟩ quiet bounds =>
-    match hb : S .balanced, he : S .embodied with
-    | false, _ => law (embodiedRing n c M) (embodiedRing_meets bounded hb) (places_listed _) _
-        n c a (Ring.census bounded _) (embodiedRing_countsOf tally bounded)
-    | true, false => law (ring n c M) (ring_meets bounded he) (places_listed _) _ n c a
-        (Ring.census bounded _) (ring_countsOf tally bounded)
-    | true, true => match hd : S .dissipative with
-      | false => law (balancedRing n c M)
-          (balancedRing_meets tally bounded (fun ha => quiet (.inl ⟨hb, he, .inl ha⟩)) hd)
-          (places_listed _) _ n c a (Ring.census bounded _) (balancedRing_countsOf tally bounded)
-      | true => match bounds ⟨hb, he, hd⟩ with
-        | ⟨_, bound⟩ => law (finiteQueue _ _ _ _)
-            ((finiteQueue_premised tally (quiet (.inr ⟨hb, he, hd⟩)) bound).meets S)
-            (finiteQueue_finite _ _ _ _) _ n c a (finiteQueue_census _ _ _ _)
-            (finiteQueue_countsOf tally bound)⟩
+  census_table_holds₃ (finite_counting_under_sound S) (finite_counting_under_witnessed S)
 
 /-- In finite worlds, where the counts exist, nothing arising across a step at which nothing is
 active is a law under a selection exactly when the selection binds counting or bounds change. -/
