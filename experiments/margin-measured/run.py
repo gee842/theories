@@ -3,6 +3,8 @@
     python3 run.py all          # every experiment (CPU, standard library, 12 processes)
     python3 run.py measure a1 a2 a3 a4 b
     python3 run.py smoke        # tiny run of every code path into results/smoke/ (not read)
+    python3 run.py round2       # round 2 (PREDICTIONS-2026-10-20-ROUND2.md): a1 and a3 with
+                                # the corrected configurations, into results/round2/
 
 `measure` must run before a1-a4 (they read results/measure.json). Configurations are in CONFIG
 below and are part of the freeze.
@@ -32,6 +34,14 @@ CONFIG = dict(
     a4=dict(dfs=[750, 1400], levels=[0.3, 0.5, 0.7], days=30, reps=400, seed=500000),
     b=dict(seeds=20, episodes=100000, alpha=0.1, eps_end=0.05, explore=0.5, eval_seed=7),
 )
+# Round 2 (PREDICTIONS-2026-10-20-ROUND2.md): A1 with x0 = need + 0.75 margin and H = 1.25 Y
+# (so H < m0); A3 with the standing harvest from day 0. Seeds shifted by 10**6.
+ROUND2 = dict(
+    a1=dict(CONFIG["a1"], harvest=1.25, x0_frac=0.75, seed=CONFIG["a1"]["seed"] + 10 ** 6),
+    a3=dict(CONFIG["a3"], harvest_from_day0=True, seed=CONFIG["a3"]["seed"] + 10 ** 6),
+)
+MODE = {"out": None}
+
 SMOKE = dict(
     measure=dict(reps=8, stationary_reps=8, stationary_day=5, pulse_days=5, yield_days=8,
                  seed=1000),
@@ -44,7 +54,7 @@ SMOKE = dict(
 
 
 def out_dir(smoke):
-    d = os.path.join(RESULTS, "smoke") if smoke else RESULTS
+    d = os.path.join(RESULTS, "smoke") if smoke else (MODE["out"] or RESULTS)
     os.makedirs(d, exist_ok=True)
     return d
 
@@ -55,7 +65,8 @@ def dump(name, obj, smoke):
 
 
 def load(name, smoke):
-    with open(os.path.join(out_dir(smoke), name)) as f:
+    base = os.path.join(RESULTS, "smoke") if smoke else RESULTS   # round 2 reuses round 1's
+    with open(os.path.join(base, name)) as f:
         return json.load(f)
 
 
@@ -89,7 +100,7 @@ def run_measure(cfg, pool, smoke):
 
 def a1_one(args):
     df, history, memory, cfg, m = args
-    x0 = m["need"] + 0.5 * m["margin"]
+    x0 = m["need"] + cfg.get("x0_frac", 0.5) * m["margin"]
     harvest = cfg["harvest"] * m["yield_"]
     seed0 = cfg["seed"] + df * 10 + {"h_long": 0, "h_short": 1, "h_below": 2}[history] * 100000 \
         + (500000 if memory else 0)
@@ -132,8 +143,10 @@ def a3_one(args):
     harvest = mult * m["yield_"]
     seed0 = cfg["seed"] + df * 100 + int(mult * 100)
     lo, hi = m["need"], m["x_star"]
-    frac = lambda x0: Y.survival_fraction(df, x0, seed0, cfg["reps"], harvest_after=harvest,
-                                          days=cfg["days"], need=m["need"])
+    first = harvest if cfg.get("harvest_from_day0") else 0.0
+    frac = lambda x0: Y.survival_fraction(df, x0, seed0, cfg["reps"], harvest_first=first,
+                                          harvest_after=harvest, days=cfg["days"],
+                                          need=m["need"])
     if frac(hi) < 0.5:
         return f"{df}/{mult}", dict(harvest=harvest, point_of_no_return=None)
     while hi - lo > 0.002 * m["x_star"]:
@@ -256,6 +269,10 @@ def main(argv):
     if "all" in argv or (smoke and not names):
         names = list(STEPS)
     cfgs = SMOKE if smoke else CONFIG
+    if "round2" in argv and not smoke:
+        MODE["out"] = os.path.join(RESULTS, "round2")
+        cfgs = ROUND2
+        names = ["a1", "a3"]
     log = []
     with Pool(12) as pool:
         for n in names:

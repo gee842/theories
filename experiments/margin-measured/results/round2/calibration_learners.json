@@ -1,0 +1,180 @@
+{
+ "settings": {
+  "r1": {
+   "episodes": 100000,
+   "alpha": 0.1,
+   "eps_end": 0.05,
+   "explore": 0.5
+  },
+  "visits_0.6": {
+   "episodes": 100000,
+   "eps_end": 0.02,
+   "explore": 0.5,
+   "visit_power": 0.6,
+   "alpha_min": 0.01
+  },
+  "visits_0.8": {
+   "episodes": 100000,
+   "eps_end": 0.02,
+   "explore": 0.5,
+   "visit_power": 0.8,
+   "alpha_min": 0.0
+  },
+  "visits_0.6_200k": {
+   "episodes": 200000,
+   "eps_end": 0.02,
+   "explore": 0.5,
+   "visit_power": 0.6,
+   "alpha_min": 0.01
+  },
+  "visits_0.6_explore0.9": {
+   "episodes": 100000,
+   "eps_end": 0.02,
+   "explore": 0.9,
+   "visit_power": 0.6,
+   "alpha_min": 0.01
+  },
+  "visits_0.6_explore0.9_300k": {
+   "episodes": 300000,
+   "eps_end": 0.02,
+   "explore": 0.9,
+   "visit_power": 0.6,
+   "alpha_min": 0.01
+  }
+ },
+ "best_response": 9,
+ "results": {
+  "r1/blind": {
+   "deliveries": [
+    7,
+    7,
+    7,
+    7,
+    8,
+    8
+   ],
+   "mean": 7.333333333333333
+  },
+  "r1/end": {
+   "deliveries": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean": 7
+  },
+  "visits_0.6/blind": {
+   "deliveries": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "mean": 8
+  },
+  "visits_0.6/end": {
+   "deliveries": [
+    5,
+    5,
+    5,
+    7,
+    7,
+    7
+   ],
+   "mean": 6
+  },
+  "visits_0.6_200k/blind": {
+   "deliveries": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "mean": 8
+  },
+  "visits_0.6_200k/end": {
+   "deliveries": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    8
+   ],
+   "mean": 7.166666666666667
+  },
+  "visits_0.6_explore0.9/blind": {
+   "deliveries": [
+    7,
+    7,
+    7,
+    8,
+    8,
+    8
+   ],
+   "mean": 7.5
+  },
+  "visits_0.6_explore0.9/end": {
+   "deliveries": [
+    4,
+    4,
+    4,
+    5,
+    5,
+    6
+   ],
+   "mean": 4.666666666666667
+  },
+  "visits_0.6_explore0.9_300k/blind": {
+   "deliveries": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    9
+   ],
+   "mean": 8.166666666666666
+  },
+  "visits_0.6_explore0.9_300k/end": {
+   "deliveries": [
+    6,
+    6,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean": 6.666666666666667
+  },
+  "visits_0.8/blind": {
+   "deliveries": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    9
+   ],
+   "mean": 8.166666666666666
+  },
+  "visits_0.8/end": {
+   "deliveries": [
+    5,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean": 6.666666666666667
+  }
+ }
+}

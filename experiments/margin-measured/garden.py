@@ -209,13 +209,17 @@ def table_policy(Qtab, rng=None):
 
 # ---------------------------------------------------------------- learning
 
-def q_learn(kind, variant, seed, episodes=30000, alpha=0.1, eps_end=0.05, explore=0.5):
+def q_learn(kind, variant, seed, episodes=30000, alpha=0.1, eps_end=0.05, explore=0.5,
+            visit_power=None, alpha_min=0.0):
     """Tabular Q-learning over (t, position, levels), undiscounted, epsilon-greedy with epsilon
     falling linearly from 1 to eps_end over 80% of training. With probability `explore` an
     episode starts at a random step, position and pair of levels (exploring starts, as in CG1's
-    round 2); otherwise at the variant's start. The policy changes only through rewards (H1)."""
+    round 2); otherwise at the variant's start. The policy changes only through rewards (H1).
+    With `visit_power` set (MQ1 round 2), the step size of an entry is max(alpha_min,
+    n ** -visit_power) after its n-th update, instead of the constant `alpha`."""
     rng = random.Random(seed)
     Qt = [[[0.0] * NA for _ in range(NS)] for _ in range(H)]
+    visits = [[[0] * NA for _ in range(NS)] for _ in range(H)] if visit_power else None
     for e in range(episodes):
         eps = max(eps_end, 1.0 - (1.0 - eps_end) * e / (0.8 * episodes))
         if rng.random() < explore:
@@ -231,7 +235,12 @@ def q_learn(kind, variant, seed, episodes=30000, alpha=0.1, eps_end=0.05, explor
             q, lv, d, _ = step(t, p, levels, a, variant)
             r = reward(kind, t, d, lv)
             target = r + (max(Qt[t + 1][sidx(q, lv[0], lv[1])]) if t + 1 < H else 0.0)
-            row[a] += alpha * (target - row[a])
+            if visits is not None:
+                visits[t][s][a] += 1
+                step_size = max(alpha_min, visits[t][s][a] ** -visit_power)
+            else:
+                step_size = alpha
+            row[a] += step_size * (target - row[a])
             p, levels = q, lv
     return Qt
 
