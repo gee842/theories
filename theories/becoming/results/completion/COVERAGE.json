@@ -410,6 +410,9 @@
       "instances": {
         "Becoming.SelectionTerm.covariation": [
           "Becoming.SelectionTerm.Flow.support_not_against"
+        ],
+        "Becoming.SelectionLevels.levels": [
+          "Becoming.GroupEnding.Flow.raises_of_inactive"
         ]
       }
     },
@@ -510,7 +513,12 @@
       "open_items": [
         2,
         12
-      ]
+      ],
+      "instances": {
+        "Becoming.Weighting.widens_iff_every_positive": [
+          "Becoming.Web.widens_iff_every_weighting"
+        ]
+      }
     },
     {
       "id": "alignment",

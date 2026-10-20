@@ -7,7 +7,7 @@ The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_pro
 | | Criterion | Met | Findings |
 |---|---|---|---:|
 | K1 | Coverage | no | 4 |
-| K2 | Unity | no | 6 |
+| K2 | Unity | no | 4 |
 | K3 | Premises | yes | 0 |
 | K4 | Representation | yes | 0 |
 | K5 | Enclosure | yes | 0 |
@@ -46,11 +46,9 @@ The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_pro
 ## K2. Unity: not met
 
 - evaluation: Becoming.forced_iff_center: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed
-- evolution: Becoming.SelectionLevels.levels: its statement is not on a base family (used by a theorem on the base) and no base-family instance reaching it is listed
 - evolution: Becoming.SelectionLevels.among_for_of_rises: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed
 - evolution: Becoming.SelectionLevels.rises_exact_iff_levels: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed
 - evolution: Becoming.GroupEnding.rises_iff_ended: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed
-- significance: Becoming.Weighting.widens_iff_every_positive: its statement is not on a base family (used by a theorem on the base) and no base-family instance reaching it is listed
 
 ## K3. Premises: met
 
