@@ -26,7 +26,7 @@ Target: Ren's "unified, complete, enclosed, 0 axiom full theory", following the 
 
 - **Integrator:** not named on this page; rule 3's fallback applies. Name it here only on Ren's or that session's confirmation (review item B7). The 13 October Codex takeover (study §94-§111) is history.
 - **Main and receipts:** the landing queue below names each landing since 17 October with its core receipt; the latest core receipt is R33's `20261019T235844.485705Z` (20 October 2026). This page was rewritten on 17 October 2026 at `1d18d005c`.
-- **Queue:** empty; R33 landed (core receipt `20261019T235844.485705Z`); R34 next.
+- **Queue:** R34 at the head (one evaluative chain: standpoints as formations, `own` as a closure, the direction on the spine, widening over a grown world, the `Unfolding` sites); R33 landed (core receipt `20261019T235844.485705Z`).
 
 ## Open claims
 
