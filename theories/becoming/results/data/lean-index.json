@@ -18,21 +18,22 @@
     "classification": "Path-based documentary roles; working-source is not a claim of accepted, complete, canonical or checked status. A file containing only #print axioms and no inventoried named declarations is an audit-driver."
   },
   "statistics": {
-    "lean_paths": 1704,
-    "distinct_byte_contents": 1340,
+    "lean_paths": 1705,
+    "distinct_byte_contents": 1341,
     "byte_identical_duplicate_groups": 105,
     "roles": {
       "audit-driver": 13,
       "development-attempt": 813,
       "historical-draft": 3,
       "imported-archive": 23,
-      "working-source": 852
+      "working-source": 853
     },
     "working_named_theorem_lemma_occurrences": 22759,
     "working_explicit_named_declaration_occurrences": 34171,
     "working_groups": {
       "abstraction": 45,
-      "becoming-core": 281,
+      "becoming-core": 269,
+      "becoming-ring": 13,
       "concern": 15,
       "core": 137,
       "ethics": 139,
@@ -4379,7 +4380,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
-      "sha256": "31062e6238dbed63c6200cb5019f403d7b8f7e685ad21a0da812270ef5125139",
+      "sha256": "ac841f285fba1bf1a14ab8c1cee11484428697dc732276e96016f8b1308c4d04",
       "role": "working-source",
       "group": "becoming-core",
       "receipt_layer": "core",
@@ -4846,7 +4847,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
-      "sha256": "c16574db68309b48d70f9a755d4e02892541d8b90a238bd4b7d1d590bf8694fe",
+      "sha256": "e0bc05ed9f0bf8c8cda52bb608afc4dedf7593c785c082efc46ec5657c58df65",
       "role": "working-source",
       "group": "becoming-core",
       "receipt_layer": "core",
@@ -5208,8 +5209,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coverage.lean",
       "sha256": "cb6bfd626354610d1bcf6c7a6be3518dd54bd3246db56c806fefb26f8c5d75a6",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "application",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -5405,8 +5406,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dispatch.lean",
       "sha256": "7f8dc9a3228de7b8037381470fed83c37d50de36fd05641133090c16caffa10d",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "application",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -5898,8 +5899,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GuardHorizon.lean",
       "sha256": "1043c114b33c1217dd61f0aa5a64ba30345ca787fd7da00963559fad9a47ac9b",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "application",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -5924,11 +5925,24 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
-      "sha256": "e642ea1f30f4b32e49c0952abb0474eca538429d18ed020cf11b85b205771017",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramCommuting.lean",
+      "sha256": "e7be17eed364692540331b001cef8ff9834c5e9e9e29e73461eba891037cbb9e",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "instance",
+      "receipt_bytes_match": true,
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
+      "direct_documentation_links_from": [
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md"
+      ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
+      "sha256": "b0ad4a1da14f1ec92eac4bc59e174efb9e03fc9f34c6a0b9767ba031317a1c9a",
+      "role": "working-source",
+      "group": "becoming-ring",
+      "receipt_layer": "instance",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -5946,8 +5960,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean",
       "sha256": "43d2040993b96ea338e2fe272127935a8d99553426ec77cfe2f43ccd511fac1d",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "instance",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -5965,8 +5979,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSequences.lean",
       "sha256": "538d70210aac541183f6bea42f9e8e10e7f083adcde42fd4cfc7c0ea58de056e",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "instance",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -5985,8 +5999,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean",
       "sha256": "5ca73db76336f6aebcff022a85a8d85368c96098eda69d9f16baa910187ce7d7",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "instance",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -6004,8 +6018,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
       "sha256": "a638ec73d081088eb8f8c7a6a6ad860f7f5f32223b4c5373931c9a841c9f6b5d",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "instance",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -7358,8 +7372,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PlaceTransitionNets.lean",
       "sha256": "1923814427948011a3398090feea17c2287f0f84d0589c48782f5df467234de2",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "instance",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -7995,8 +8009,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ResponseLearning.lean",
       "sha256": "3f570198fcae3a551c9ca5807d58353cec3d393a00d37a21d89a98c789a725d2",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "application",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -8243,8 +8257,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScopedReach.lean",
       "sha256": "0432efe6bf31ceff196a4d058a6b77710871ed130eb562dc0ad05d00a873e5ae",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "application",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -8289,8 +8303,8 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeedReach.lean",
       "sha256": "6c21f636369688b6247052cb7434aebdd1669dc2dc0ff3a906a2032193deb066",
       "role": "working-source",
-      "group": "becoming-core",
-      "receipt_layer": "core",
+      "group": "becoming-ring",
+      "receipt_layer": "application",
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
@@ -82103,299 +82117,6 @@
         "unsafe": []
       },
       "print_axioms_commands": 38
-    },
-    "31062e6238dbed63c6200cb5019f403d7b8f7e685ad21a0da812270ef5125139": {
-      "byte_size": 201408,
-      "line_count": 2455,
-      "imports": [
-        "Becoming.World",
-        "Becoming.Frame",
-        "Becoming.Laws",
-        "Becoming.Labelled",
-        "Becoming.Inquiry",
-        "Becoming.Derivation",
-        "Becoming.ClassifiedBeliefProcesses",
-        "Becoming.MoveOutcomeProcesses",
-        "Becoming.Recurrence",
-        "Becoming.Diagonal",
-        "Becoming.Context",
-        "Becoming.ContextArrivalTraces",
-        "Becoming.Quantum",
-        "Becoming.Renewal",
-        "Becoming.Dependence",
-        "Becoming.Restoration",
-        "Becoming.Horizon",
-        "Becoming.Joint",
-        "Becoming.Experiment",
-        "Becoming.Mechanism",
-        "Becoming.Unfolding",
-        "Becoming.LawAlongRun",
-        "Becoming.Irreversibility",
-        "Becoming.Histories",
-        "Becoming.Branching",
-        "Becoming.Listing",
-        "Becoming.Stuttering",
-        "Becoming.Reordering",
-        "Becoming.IdleRemoval",
-        "Becoming.OrderNormal",
-        "Becoming.OneStep",
-        "Becoming.Weighted",
-        "Becoming.Transmission",
-        "Becoming.Succession",
-        "Becoming.Attraction",
-        "Becoming.Substitution",
-        "Becoming.Arising",
-        "Becoming.Flow",
-        "Becoming.Stock",
-        "Becoming.Change",
-        "Becoming.Population",
-        "Becoming.Identity",
-        "Becoming.Persistence",
-        "Becoming.Wholes",
-        "Becoming.Dissipation",
-        "Becoming.Locality",
-        "Becoming.Seeking",
-        "Becoming.Roles",
-        "Becoming.LabelledRoles",
-        "Becoming.Reserve",
-        "Becoming.Evolution",
-        "Becoming.Capture",
-        "Becoming.Space",
-        "Becoming.Premises",
-        "Becoming.Sampling",
-        "Becoming.Tower",
-        "Becoming.Openness",
-        "Becoming.Decidedness",
-        "Becoming.Refinement",
-        "Becoming.Counting",
-        "Becoming.Standing",
-        "Becoming.Resolution",
-        "Becoming.Amounts",
-        "Becoming.LeastLoss",
-        "Becoming.Entropy",
-        "Becoming.Units",
-        "Becoming.Imbalance",
-        "Becoming.Continuation",
-        "Becoming.RenewalFlow",
-        "Becoming.Admission",
-        "Becoming.Exclusion",
-        "Becoming.Exhaustion",
-        "Becoming.Regions",
-        "Becoming.Retaining",
-        "Becoming.Clearing",
-        "Becoming.Extension",
-        "Becoming.Metaethics",
-        "Becoming.Lifting",
-        "Becoming.Ranking",
-        "Becoming.ActiveReading",
-        "Becoming.LossMatching",
-        "Becoming.StrictTransport",
-        "Becoming.MatchedCourses",
-        "Becoming.Correspondence",
-        "Becoming.Descent",
-        "Becoming.Standpoints",
-        "Becoming.Significance",
-        "Becoming.ValuationFrames",
-        "Becoming.RelativePosition",
-        "Becoming.Interdependence",
-        "Becoming.Feeding",
-        "Becoming.Feedback",
-        "Becoming.BoundedSignificance",
-        "Becoming.Cuts",
-        "Becoming.EdgeClosure",
-        "Becoming.SeedReach",
-        "Becoming.ScopedReach",
-        "Becoming.Boundaries",
-        "Becoming.Relevance",
-        "Becoming.Testing",
-        "Becoming.Runaway",
-        "Becoming.Response",
-        "Becoming.TimedResponse",
-        "Becoming.Counterfactual",
-        "Becoming.Regrouping",
-        "Becoming.Selection",
-        "Becoming.Learning",
-        "Becoming.Hexagrams",
-        "Becoming.HexagramPlaces",
-        "Becoming.HexagramLaws",
-        "Becoming.HexagramSites",
-        "Becoming.HexagramSequences",
-        "Becoming.Withholding",
-        "Becoming.LoopReturn",
-        "Becoming.Pace",
-        "Becoming.RuleCapture",
-        "Becoming.PatternPassing",
-        "Becoming.JointKeeping",
-        "Becoming.Undecided",
-        "Becoming.Junctures",
-        "Becoming.Commuting",
-        "Becoming.Tolerance",
-        "Becoming.Revision",
-        "Becoming.Contacts",
-        "Becoming.RegroupingSelection",
-        "Becoming.ReferencePlan",
-        "Becoming.ContinuingRevision",
-        "Becoming.Description",
-        "Becoming.Identification",
-        "Becoming.Learnable",
-        "Becoming.Assurance",
-        "Becoming.AssurancePlans",
-        "Becoming.Integers",
-        "Becoming.Segmentation",
-        "Becoming.Readout",
-        "Becoming.Dephasing",
-        "Becoming.ProjectedLaws",
-        "Becoming.JointPhase",
-        "Becoming.SummaryFutures",
-        "Becoming.Gated",
-        "Becoming.Viability",
-        "Becoming.Keeping",
-        "Becoming.Prelude",
-        "Becoming.Ideals",
-        "Becoming.ContingentPlans",
-        "Becoming.Actuation",
-        "Becoming.TreeSearch",
-        "Becoming.Dispatch",
-        "Becoming.FaultEnvelopes",
-        "Becoming.Transactions",
-        "Becoming.Reconfiguration",
-        "Becoming.PooledEnvelopes",
-        "Becoming.WitnessRefinement",
-        "Becoming.WitnessRefinementRuns",
-        "Becoming.ChanceFloors",
-        "Becoming.IntegerOrder",
-        "Becoming.Acceptance",
-        "Becoming.GuardHorizon",
-        "Becoming.Countdown",
-        "Becoming.Lasting",
-        "Becoming.Copying",
-        "Becoming.Retrodiction",
-        "Becoming.CrossSituational",
-        "Becoming.Likeness",
-        "Becoming.Distinguishing",
-        "Becoming.JointPlans",
-        "Becoming.Composition",
-        "Becoming.Joining",
-        "Becoming.Granularity",
-        "Becoming.HistoryLanguages",
-        "Becoming.HistoryIdeals",
-        "Becoming.HistoryIdealsTraces",
-        "Becoming.Verification",
-        "Becoming.Coverage",
-        "Becoming.Presentations",
-        "Becoming.Carriers",
-        "Becoming.BranchingCorrespondence",
-        "Becoming.JointCorrespondence",
-        "Becoming.ListFootprints",
-        "Becoming.Fragments",
-        "Becoming.LocalUnits",
-        "Becoming.JoiningContexts",
-        "Becoming.JoiningCodes",
-        "Becoming.JoiningRoles",
-        "Becoming.Postponement",
-        "Becoming.Novelty",
-        "Becoming.Reading",
-        "Becoming.PlaceTransitionNets",
-        "Becoming.SharedCodes",
-        "Becoming.ExchangePremises",
-        "Becoming.Readings",
-        "Becoming.MoveFormation",
-        "Becoming.Sensitivity",
-        "Becoming.Tail",
-        "Becoming.Courses",
-        "Becoming.Parting",
-        "Becoming.Onward",
-        "Becoming.Typicality",
-        "Becoming.Situations",
-        "Becoming.Propagation",
-        "Becoming.Regulation",
-        "Becoming.ListingRefutations",
-        "Becoming.Loops",
-        "Becoming.Remainder",
-        "Becoming.Routes",
-        "Becoming.Closing",
-        "Becoming.Thresholds",
-        "Becoming.Observation",
-        "Becoming.Frequency",
-        "Becoming.MutualDependence",
-        "Becoming.Gain",
-        "Becoming.Gluing",
-        "Becoming.Runs",
-        "Becoming.CourseWorlds",
-        "Becoming.LearnableRuns",
-        "Becoming.PartialReadout",
-        "Becoming.CodeAcquisition",
-        "Becoming.RouteFormation",
-        "Becoming.ResponseLearning",
-        "Becoming.LearnedGrouping",
-        "Becoming.ParityReadings",
-        "Becoming.FinerTraces",
-        "Becoming.HistorySums",
-        "Becoming.FormedLoops",
-        "Becoming.AttractionRuns",
-        "Becoming.ContactCourses",
-        "Becoming.ContextualRuns",
-        "Becoming.ContinuingRuns",
-        "Becoming.CopyCourses",
-        "Becoming.CounterfactualRuns",
-        "Becoming.CouplingTraces",
-        "Becoming.CourseRoles",
-        "Becoming.HorizonWebs",
-        "Becoming.IdentificationRuns",
-        "Becoming.LastingRuns",
-        "Becoming.LearningRuns",
-        "Becoming.ListedWebs",
-        "Becoming.ReferencePlanTraces",
-        "Becoming.RouteTraces",
-        "Becoming.SeekingRuns",
-        "Becoming.SelectionRuns",
-        "Becoming.SensitivityWebs",
-        "Becoming.SituationTraces",
-        "Becoming.StrengthFlows",
-        "Becoming.TypicalRuns",
-        "Becoming.WeightedTraces",
-        "Becoming.LevelCoupling",
-        "Becoming.Interleavings",
-        "Becoming.CensusCounts",
-        "Becoming.CensusBinding",
-        "Becoming.Unrolling",
-        "Becoming.Labels",
-        "Becoming.Enough",
-        "Becoming.Settling",
-        "Becoming.LastChange",
-        "Becoming.LimitVerification",
-        "Becoming.SelectionGap",
-        "Becoming.SelectionReach",
-        "Becoming.SelectionPool",
-        "Becoming.PoolResponse",
-        "Becoming.Rejoining",
-        "Becoming.Lexical",
-        "Becoming.Frontier",
-        "Becoming.FrontierFrames",
-        "Becoming.FrontierWorlds",
-        "Becoming.Direction",
-        "Becoming.ScoreRepresentation",
-        "Becoming.Alternatives",
-        "Becoming.Bundles",
-        "Becoming.ActivationCapacity",
-        "Becoming.Narrowing",
-        "Becoming.NarrowingRuns",
-        "Becoming.SecuredContent",
-        "Becoming.ProfileReach",
-        "Becoming.RenewalBound",
-        "Becoming.Handoff",
-        "Becoming.RuleHandoff"
-      ],
-      "declarations": [],
-      "declaration_counts": {},
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
     },
     "3187b29c6d22fc9483fc3ae9fa6beaea3354f178ba07cb1f20dee36860323b53": {
       "byte_size": 19258,
@@ -239472,6 +239193,300 @@
       },
       "print_axioms_commands": 0
     },
+    "ac841f285fba1bf1a14ab8c1cee11484428697dc732276e96016f8b1308c4d04": {
+      "byte_size": 201660,
+      "line_count": 2459,
+      "imports": [
+        "Becoming.World",
+        "Becoming.Frame",
+        "Becoming.Laws",
+        "Becoming.Labelled",
+        "Becoming.Inquiry",
+        "Becoming.Derivation",
+        "Becoming.ClassifiedBeliefProcesses",
+        "Becoming.MoveOutcomeProcesses",
+        "Becoming.Recurrence",
+        "Becoming.Diagonal",
+        "Becoming.Context",
+        "Becoming.ContextArrivalTraces",
+        "Becoming.Quantum",
+        "Becoming.Renewal",
+        "Becoming.Dependence",
+        "Becoming.Restoration",
+        "Becoming.Horizon",
+        "Becoming.Joint",
+        "Becoming.Experiment",
+        "Becoming.Mechanism",
+        "Becoming.Unfolding",
+        "Becoming.LawAlongRun",
+        "Becoming.Irreversibility",
+        "Becoming.Histories",
+        "Becoming.Branching",
+        "Becoming.Listing",
+        "Becoming.Stuttering",
+        "Becoming.Reordering",
+        "Becoming.IdleRemoval",
+        "Becoming.OrderNormal",
+        "Becoming.OneStep",
+        "Becoming.Weighted",
+        "Becoming.Transmission",
+        "Becoming.Succession",
+        "Becoming.Attraction",
+        "Becoming.Substitution",
+        "Becoming.Arising",
+        "Becoming.Flow",
+        "Becoming.Stock",
+        "Becoming.Change",
+        "Becoming.Population",
+        "Becoming.Identity",
+        "Becoming.Persistence",
+        "Becoming.Wholes",
+        "Becoming.Dissipation",
+        "Becoming.Locality",
+        "Becoming.Seeking",
+        "Becoming.Roles",
+        "Becoming.LabelledRoles",
+        "Becoming.Reserve",
+        "Becoming.Evolution",
+        "Becoming.Capture",
+        "Becoming.Space",
+        "Becoming.Premises",
+        "Becoming.Sampling",
+        "Becoming.Tower",
+        "Becoming.Openness",
+        "Becoming.Decidedness",
+        "Becoming.Refinement",
+        "Becoming.Counting",
+        "Becoming.Standing",
+        "Becoming.Resolution",
+        "Becoming.Amounts",
+        "Becoming.LeastLoss",
+        "Becoming.Entropy",
+        "Becoming.Units",
+        "Becoming.Imbalance",
+        "Becoming.Continuation",
+        "Becoming.RenewalFlow",
+        "Becoming.Admission",
+        "Becoming.Exclusion",
+        "Becoming.Exhaustion",
+        "Becoming.Regions",
+        "Becoming.Retaining",
+        "Becoming.Clearing",
+        "Becoming.Extension",
+        "Becoming.Metaethics",
+        "Becoming.Lifting",
+        "Becoming.Ranking",
+        "Becoming.ActiveReading",
+        "Becoming.LossMatching",
+        "Becoming.StrictTransport",
+        "Becoming.MatchedCourses",
+        "Becoming.Correspondence",
+        "Becoming.Descent",
+        "Becoming.Standpoints",
+        "Becoming.Significance",
+        "Becoming.ValuationFrames",
+        "Becoming.RelativePosition",
+        "Becoming.Interdependence",
+        "Becoming.Feeding",
+        "Becoming.Feedback",
+        "Becoming.BoundedSignificance",
+        "Becoming.Cuts",
+        "Becoming.EdgeClosure",
+        "Becoming.SeedReach",
+        "Becoming.ScopedReach",
+        "Becoming.Boundaries",
+        "Becoming.Relevance",
+        "Becoming.Testing",
+        "Becoming.Runaway",
+        "Becoming.Response",
+        "Becoming.TimedResponse",
+        "Becoming.Counterfactual",
+        "Becoming.Regrouping",
+        "Becoming.Selection",
+        "Becoming.Learning",
+        "Becoming.Hexagrams",
+        "Becoming.HexagramPlaces",
+        "Becoming.HexagramLaws",
+        "Becoming.HexagramSites",
+        "Becoming.HexagramSequences",
+        "Becoming.Withholding",
+        "Becoming.LoopReturn",
+        "Becoming.Pace",
+        "Becoming.RuleCapture",
+        "Becoming.PatternPassing",
+        "Becoming.JointKeeping",
+        "Becoming.Undecided",
+        "Becoming.Junctures",
+        "Becoming.Commuting",
+        "Becoming.HexagramCommuting",
+        "Becoming.Tolerance",
+        "Becoming.Revision",
+        "Becoming.Contacts",
+        "Becoming.RegroupingSelection",
+        "Becoming.ReferencePlan",
+        "Becoming.ContinuingRevision",
+        "Becoming.Description",
+        "Becoming.Identification",
+        "Becoming.Learnable",
+        "Becoming.Assurance",
+        "Becoming.AssurancePlans",
+        "Becoming.Integers",
+        "Becoming.Segmentation",
+        "Becoming.Readout",
+        "Becoming.Dephasing",
+        "Becoming.ProjectedLaws",
+        "Becoming.JointPhase",
+        "Becoming.SummaryFutures",
+        "Becoming.Gated",
+        "Becoming.Viability",
+        "Becoming.Keeping",
+        "Becoming.Prelude",
+        "Becoming.Ideals",
+        "Becoming.ContingentPlans",
+        "Becoming.Actuation",
+        "Becoming.TreeSearch",
+        "Becoming.Dispatch",
+        "Becoming.FaultEnvelopes",
+        "Becoming.Transactions",
+        "Becoming.Reconfiguration",
+        "Becoming.PooledEnvelopes",
+        "Becoming.WitnessRefinement",
+        "Becoming.WitnessRefinementRuns",
+        "Becoming.ChanceFloors",
+        "Becoming.IntegerOrder",
+        "Becoming.Acceptance",
+        "Becoming.GuardHorizon",
+        "Becoming.Countdown",
+        "Becoming.Lasting",
+        "Becoming.Copying",
+        "Becoming.Retrodiction",
+        "Becoming.CrossSituational",
+        "Becoming.Likeness",
+        "Becoming.Distinguishing",
+        "Becoming.JointPlans",
+        "Becoming.Composition",
+        "Becoming.Joining",
+        "Becoming.Granularity",
+        "Becoming.HistoryLanguages",
+        "Becoming.HistoryIdeals",
+        "Becoming.HistoryIdealsTraces",
+        "Becoming.Verification",
+        "Becoming.Coverage",
+        "Becoming.Presentations",
+        "Becoming.Carriers",
+        "Becoming.BranchingCorrespondence",
+        "Becoming.JointCorrespondence",
+        "Becoming.ListFootprints",
+        "Becoming.Fragments",
+        "Becoming.LocalUnits",
+        "Becoming.JoiningContexts",
+        "Becoming.JoiningCodes",
+        "Becoming.JoiningRoles",
+        "Becoming.Postponement",
+        "Becoming.Novelty",
+        "Becoming.Reading",
+        "Becoming.PlaceTransitionNets",
+        "Becoming.SharedCodes",
+        "Becoming.ExchangePremises",
+        "Becoming.Readings",
+        "Becoming.MoveFormation",
+        "Becoming.Sensitivity",
+        "Becoming.Tail",
+        "Becoming.Courses",
+        "Becoming.Parting",
+        "Becoming.Onward",
+        "Becoming.Typicality",
+        "Becoming.Situations",
+        "Becoming.Propagation",
+        "Becoming.Regulation",
+        "Becoming.ListingRefutations",
+        "Becoming.Loops",
+        "Becoming.Remainder",
+        "Becoming.Routes",
+        "Becoming.Closing",
+        "Becoming.Thresholds",
+        "Becoming.Observation",
+        "Becoming.Frequency",
+        "Becoming.MutualDependence",
+        "Becoming.Gain",
+        "Becoming.Gluing",
+        "Becoming.Runs",
+        "Becoming.CourseWorlds",
+        "Becoming.LearnableRuns",
+        "Becoming.PartialReadout",
+        "Becoming.CodeAcquisition",
+        "Becoming.RouteFormation",
+        "Becoming.ResponseLearning",
+        "Becoming.LearnedGrouping",
+        "Becoming.ParityReadings",
+        "Becoming.FinerTraces",
+        "Becoming.HistorySums",
+        "Becoming.FormedLoops",
+        "Becoming.AttractionRuns",
+        "Becoming.ContactCourses",
+        "Becoming.ContextualRuns",
+        "Becoming.ContinuingRuns",
+        "Becoming.CopyCourses",
+        "Becoming.CounterfactualRuns",
+        "Becoming.CouplingTraces",
+        "Becoming.CourseRoles",
+        "Becoming.HorizonWebs",
+        "Becoming.IdentificationRuns",
+        "Becoming.LastingRuns",
+        "Becoming.LearningRuns",
+        "Becoming.ListedWebs",
+        "Becoming.ReferencePlanTraces",
+        "Becoming.RouteTraces",
+        "Becoming.SeekingRuns",
+        "Becoming.SelectionRuns",
+        "Becoming.SensitivityWebs",
+        "Becoming.SituationTraces",
+        "Becoming.StrengthFlows",
+        "Becoming.TypicalRuns",
+        "Becoming.WeightedTraces",
+        "Becoming.LevelCoupling",
+        "Becoming.Interleavings",
+        "Becoming.CensusCounts",
+        "Becoming.CensusBinding",
+        "Becoming.Unrolling",
+        "Becoming.Labels",
+        "Becoming.Enough",
+        "Becoming.Settling",
+        "Becoming.LastChange",
+        "Becoming.LimitVerification",
+        "Becoming.SelectionGap",
+        "Becoming.SelectionReach",
+        "Becoming.SelectionPool",
+        "Becoming.PoolResponse",
+        "Becoming.Rejoining",
+        "Becoming.Lexical",
+        "Becoming.Frontier",
+        "Becoming.FrontierFrames",
+        "Becoming.FrontierWorlds",
+        "Becoming.Direction",
+        "Becoming.ScoreRepresentation",
+        "Becoming.Alternatives",
+        "Becoming.Bundles",
+        "Becoming.ActivationCapacity",
+        "Becoming.Narrowing",
+        "Becoming.NarrowingRuns",
+        "Becoming.SecuredContent",
+        "Becoming.ProfileReach",
+        "Becoming.RenewalBound",
+        "Becoming.Handoff",
+        "Becoming.RuleHandoff"
+      ],
+      "declarations": [],
+      "declaration_counts": {},
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "ac9db17a6316f10e8d92b60fb8adb5596def1cfb51b94999770d1a3ce43e0629": {
       "byte_size": 25252,
       "line_count": 469,
@@ -245197,6 +245212,1146 @@
         "unsafe": []
       },
       "print_axioms_commands": 3
+    },
+    "b0ad4a1da14f1ec92eac4bc59e174efb9e03fc9f34c6a0b9767ba031317a1c9a": {
+      "byte_size": 63347,
+      "line_count": 1321,
+      "imports": [
+        "Becoming.HexagramPlaces",
+        "Becoming.HexagramCommuting"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "not_mem_of_memb",
+          "qualified_name_hint": "Becoming.Hexagram.not_mem_of_memb",
+          "line": 103
+        },
+        {
+          "kind": "def",
+          "name": "distinctb",
+          "qualified_name_hint": "Becoming.Hexagram.distinctb",
+          "line": 109
+        },
+        {
+          "kind": "theorem",
+          "name": "nodup_of_distinctb",
+          "qualified_name_hint": "Becoming.Hexagram.nodup_of_distinctb",
+          "line": 113
+        },
+        {
+          "kind": "theorem",
+          "name": "order_nodup",
+          "qualified_name_hint": "Becoming.Hexagram.order_nodup",
+          "line": 122
+        },
+        {
+          "kind": "def",
+          "name": "allUnbroken",
+          "qualified_name_hint": "Becoming.Hexagram.allUnbroken",
+          "line": 125
+        },
+        {
+          "kind": "theorem",
+          "name": "orbit_still",
+          "qualified_name_hint": "Becoming.Hexagram.orbit_still",
+          "line": 128
+        },
+        {
+          "kind": "def",
+          "name": "nuclear",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear",
+          "line": 137
+        },
+        {
+          "kind": "def",
+          "name": "inner",
+          "qualified_name_hint": "Becoming.Hexagram.inner",
+          "line": 141
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_inner",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_inner",
+          "line": 144
+        },
+        {
+          "kind": "theorem",
+          "name": "run_inner",
+          "qualified_name_hint": "Becoming.Hexagram.run_inner",
+          "line": 152
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_merges",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_merges",
+          "line": 159
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_process_merges",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_process_merges",
+          "line": 163
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_loses",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_loses",
+          "line": 167
+        },
+        {
+          "kind": "def",
+          "name": "innerPair",
+          "qualified_name_hint": "Becoming.Hexagram.innerPair",
+          "line": 172
+        },
+        {
+          "kind": "def",
+          "name": "thrice",
+          "qualified_name_hint": "Becoming.Hexagram.thrice",
+          "line": 175
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_two",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_two",
+          "line": 179
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_two_lumped",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_two_lumped",
+          "line": 183
+        },
+        {
+          "kind": "theorem",
+          "name": "run_two_middle",
+          "qualified_name_hint": "Becoming.Hexagram.run_two_middle",
+          "line": 187
+        },
+        {
+          "kind": "theorem",
+          "name": "thrice_inj",
+          "qualified_name_hint": "Becoming.Hexagram.thrice_inj",
+          "line": 193
+        },
+        {
+          "kind": "theorem",
+          "name": "innerPair_nuclear",
+          "qualified_name_hint": "Becoming.Hexagram.innerPair_nuclear",
+          "line": 200
+        },
+        {
+          "kind": "theorem",
+          "name": "swap_eq",
+          "qualified_name_hint": "Becoming.Hexagram.swap_eq",
+          "line": 203
+        },
+        {
+          "kind": "theorem",
+          "name": "innerPair_lumped",
+          "qualified_name_hint": "Becoming.Hexagram.innerPair_lumped",
+          "line": 208
+        },
+        {
+          "kind": "theorem",
+          "name": "innerPair_goAlike",
+          "qualified_name_hint": "Becoming.Hexagram.innerPair_goAlike",
+          "line": 212
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_yang_not_lumped",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_yang_not_lumped",
+          "line": 217
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_yang_not_goAlike",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_yang_not_goAlike",
+          "line": 221
+        },
+        {
+          "kind": "def",
+          "name": "NuclearAttractor",
+          "qualified_name_hint": "Becoming.Hexagram.NuclearAttractor",
+          "line": 225
+        },
+        {
+          "kind": "def",
+          "name": "attractorb",
+          "qualified_name_hint": "Becoming.Hexagram.attractorb",
+          "line": 229
+        },
+        {
+          "kind": "theorem",
+          "name": "attractor_of_attractorb",
+          "qualified_name_hint": "Becoming.Hexagram.attractor_of_attractorb",
+          "line": 232
+        },
+        {
+          "kind": "theorem",
+          "name": "not_attractor_of_attractorb",
+          "qualified_name_hint": "Becoming.Hexagram.not_attractor_of_attractorb",
+          "line": 241
+        },
+        {
+          "kind": "theorem",
+          "name": "thrice_attractor",
+          "qualified_name_hint": "Becoming.Hexagram.thrice_attractor",
+          "line": 252
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_two_attractor",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_two_attractor",
+          "line": 259
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_allUnbroken",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_allUnbroken",
+          "line": 262
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_allBroken",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_allBroken",
+          "line": 264
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_jiJi",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_jiJi",
+          "line": 266
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_weiJi",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_weiJi",
+          "line": 268
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_two_fixed_one_cycle",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_two_fixed_one_cycle",
+          "line": 273
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_fixed_iff",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_fixed_iff",
+          "line": 285
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_rests_iff",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_rests_iff",
+          "line": 296
+        },
+        {
+          "kind": "theorem",
+          "name": "attractor_absorbing",
+          "qualified_name_hint": "Becoming.Hexagram.attractor_absorbing",
+          "line": 302
+        },
+        {
+          "kind": "theorem",
+          "name": "attractor_returns",
+          "qualified_name_hint": "Becoming.Hexagram.attractor_returns",
+          "line": 310
+        },
+        {
+          "kind": "theorem",
+          "name": "outside_drawn",
+          "qualified_name_hint": "Becoming.Hexagram.outside_drawn",
+          "line": 317
+        },
+        {
+          "kind": "theorem",
+          "name": "outside_not_returns",
+          "qualified_name_hint": "Becoming.Hexagram.outside_not_returns",
+          "line": 322
+        },
+        {
+          "kind": "theorem",
+          "name": "returns_iff_attractor",
+          "qualified_name_hint": "Becoming.Hexagram.returns_iff_attractor",
+          "line": 327
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_process_returns_iff",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_process_returns_iff",
+          "line": 334
+        },
+        {
+          "kind": "theorem",
+          "name": "process_returns_iff_ends",
+          "qualified_name_hint": "Becoming.Hexagram.process_returns_iff_ends",
+          "line": 340
+        },
+        {
+          "kind": "theorem",
+          "name": "run_in_attractor",
+          "qualified_name_hint": "Becoming.Hexagram.run_in_attractor",
+          "line": 365
+        },
+        {
+          "kind": "theorem",
+          "name": "entry_counts",
+          "qualified_name_hint": "Becoming.Hexagram.entry_counts",
+          "line": 371
+        },
+        {
+          "kind": "theorem",
+          "name": "thrice_back",
+          "qualified_name_hint": "Becoming.Hexagram.thrice_back",
+          "line": 378
+        },
+        {
+          "kind": "theorem",
+          "name": "run_rests_at",
+          "qualified_name_hint": "Becoming.Hexagram.run_rests_at",
+          "line": 383
+        },
+        {
+          "kind": "theorem",
+          "name": "basin_iff",
+          "qualified_name_hint": "Becoming.Hexagram.basin_iff",
+          "line": 390
+        },
+        {
+          "kind": "theorem",
+          "name": "and_of_both",
+          "qualified_name_hint": "Becoming.Hexagram.and_of_both",
+          "line": 395
+        },
+        {
+          "kind": "theorem",
+          "name": "or_of_neither",
+          "qualified_name_hint": "Becoming.Hexagram.or_of_neither",
+          "line": 400
+        },
+        {
+          "kind": "theorem",
+          "name": "qian_basin",
+          "qualified_name_hint": "Becoming.Hexagram.qian_basin",
+          "line": 406
+        },
+        {
+          "kind": "theorem",
+          "name": "kun_basin",
+          "qualified_name_hint": "Becoming.Hexagram.kun_basin",
+          "line": 416
+        },
+        {
+          "kind": "theorem",
+          "name": "cycle_basin",
+          "qualified_name_hint": "Becoming.Hexagram.cycle_basin",
+          "line": 426
+        },
+        {
+          "kind": "theorem",
+          "name": "basin_counts",
+          "qualified_name_hint": "Becoming.Hexagram.basin_counts",
+          "line": 440
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_complement",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_complement",
+          "line": 450
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_reverse",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_reverse",
+          "line": 454
+        },
+        {
+          "kind": "theorem",
+          "name": "complement_reverse",
+          "qualified_name_hint": "Becoming.Hexagram.complement_reverse",
+          "line": 457
+        },
+        {
+          "kind": "theorem",
+          "name": "reverse_reverse",
+          "qualified_name_hint": "Becoming.Hexagram.reverse_reverse",
+          "line": 460
+        },
+        {
+          "kind": "theorem",
+          "name": "reverse_complement_reverse",
+          "qualified_name_hint": "Becoming.Hexagram.reverse_complement_reverse",
+          "line": 463
+        },
+        {
+          "kind": "inductive",
+          "name": "Symmetry",
+          "qualified_name_hint": "Becoming.Hexagram.Symmetry",
+          "line": 468
+        },
+        {
+          "kind": "def",
+          "name": "act",
+          "qualified_name_hint": "Becoming.Hexagram.Symmetry.act",
+          "line": 477
+        },
+        {
+          "kind": "def",
+          "name": "comp",
+          "qualified_name_hint": "Becoming.Hexagram.Symmetry.comp",
+          "line": 484
+        },
+        {
+          "kind": "theorem",
+          "name": "act_comp",
+          "qualified_name_hint": "Becoming.Hexagram.Symmetry.act_comp",
+          "line": 500
+        },
+        {
+          "kind": "theorem",
+          "name": "comp_self",
+          "qualified_name_hint": "Becoming.Hexagram.Symmetry.comp_self",
+          "line": 518
+        },
+        {
+          "kind": "theorem",
+          "name": "comp_comm",
+          "qualified_name_hint": "Becoming.Hexagram.Symmetry.comp_comm",
+          "line": 525
+        },
+        {
+          "kind": "theorem",
+          "name": "act_self",
+          "qualified_name_hint": "Becoming.Hexagram.Symmetry.act_self",
+          "line": 529
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_act",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_act",
+          "line": 535
+        },
+        {
+          "kind": "theorem",
+          "name": "nuclear_run_act",
+          "qualified_name_hint": "Becoming.Hexagram.nuclear_run_act",
+          "line": 542
+        },
+        {
+          "kind": "theorem",
+          "name": "run_complement_apart",
+          "qualified_name_hint": "Becoming.Hexagram.run_complement_apart",
+          "line": 549
+        },
+        {
+          "kind": "def",
+          "name": "binaryValue",
+          "qualified_name_hint": "Becoming.Hexagram.binaryValue",
+          "line": 554
+        },
+        {
+          "kind": "def",
+          "name": "leastOf",
+          "qualified_name_hint": "Becoming.Hexagram.leastOf",
+          "line": 559
+        },
+        {
+          "kind": "def",
+          "name": "classOf",
+          "qualified_name_hint": "Becoming.Hexagram.classOf",
+          "line": 566
+        },
+        {
+          "kind": "theorem",
+          "name": "classOf_act",
+          "qualified_name_hint": "Becoming.Hexagram.classOf_act",
+          "line": 570
+        },
+        {
+          "kind": "theorem",
+          "name": "classOf_member",
+          "qualified_name_hint": "Becoming.Hexagram.classOf_member",
+          "line": 579
+        },
+        {
+          "kind": "theorem",
+          "name": "classOf_eq_iff",
+          "qualified_name_hint": "Becoming.Hexagram.classOf_eq_iff",
+          "line": 590
+        },
+        {
+          "kind": "def",
+          "name": "pairClasses",
+          "qualified_name_hint": "Becoming.Hexagram.pairClasses",
+          "line": 600
+        },
+        {
+          "kind": "def",
+          "name": "fourClasses",
+          "qualified_name_hint": "Becoming.Hexagram.fourClasses",
+          "line": 611
+        },
+        {
+          "kind": "def",
+          "name": "classes",
+          "qualified_name_hint": "Becoming.Hexagram.classes",
+          "line": 626
+        },
+        {
+          "kind": "def",
+          "name": "classSize",
+          "qualified_name_hint": "Becoming.Hexagram.classSize",
+          "line": 629
+        },
+        {
+          "kind": "theorem",
+          "name": "classOf_mem",
+          "qualified_name_hint": "Becoming.Hexagram.classOf_mem",
+          "line": 631
+        },
+        {
+          "kind": "theorem",
+          "name": "class_census",
+          "qualified_name_hint": "Becoming.Hexagram.class_census",
+          "line": 640
+        },
+        {
+          "kind": "theorem",
+          "name": "classes_lumped",
+          "qualified_name_hint": "Becoming.Hexagram.classes_lumped",
+          "line": 649
+        },
+        {
+          "kind": "theorem",
+          "name": "classes_goAlike",
+          "qualified_name_hint": "Becoming.Hexagram.classes_goAlike",
+          "line": 655
+        },
+        {
+          "kind": "theorem",
+          "name": "classes_not_lumped_waxWane",
+          "qualified_name_hint": "Becoming.Hexagram.classes_not_lumped_waxWane",
+          "line": 660
+        },
+        {
+          "kind": "theorem",
+          "name": "classes_not_goAlike_waxWane",
+          "qualified_name_hint": "Becoming.Hexagram.classes_not_goAlike_waxWane",
+          "line": 663
+        },
+        {
+          "kind": "theorem",
+          "name": "any_sound",
+          "qualified_name_hint": "Becoming.Hexagram.any_sound",
+          "line": 666
+        },
+        {
+          "kind": "def",
+          "name": "pairedByChange",
+          "qualified_name_hint": "Becoming.Hexagram.pairedByChange",
+          "line": 676
+        },
+        {
+          "kind": "theorem",
+          "name": "pairedByChange_sound",
+          "qualified_name_hint": "Becoming.Hexagram.pairedByChange_sound",
+          "line": 680
+        },
+        {
+          "kind": "theorem",
+          "name": "turn_fixed_iff",
+          "qualified_name_hint": "Becoming.Hexagram.turn_fixed_iff",
+          "line": 692
+        },
+        {
+          "kind": "def",
+          "name": "pairedByBoth",
+          "qualified_name_hint": "Becoming.Hexagram.pairedByBoth",
+          "line": 712
+        },
+        {
+          "kind": "theorem",
+          "name": "pairedByBoth_sound",
+          "qualified_name_hint": "Becoming.Hexagram.pairedByBoth_sound",
+          "line": 716
+        },
+        {
+          "kind": "theorem",
+          "name": "both_fixed_iff",
+          "qualified_name_hint": "Becoming.Hexagram.both_fixed_iff",
+          "line": 729
+        },
+        {
+          "kind": "inductive",
+          "name": "Marked",
+          "qualified_name_hint": "Becoming.Hexagram.Marked",
+          "line": 751
+        },
+        {
+          "kind": "def",
+          "name": "value",
+          "qualified_name_hint": "Becoming.Hexagram.Marked.value",
+          "line": 758
+        },
+        {
+          "kind": "def",
+          "name": "settle",
+          "qualified_name_hint": "Becoming.Hexagram.Marked.settle",
+          "line": 764
+        },
+        {
+          "kind": "def",
+          "name": "stays",
+          "qualified_name_hint": "Becoming.Hexagram.Marked.stays",
+          "line": 769
+        },
+        {
+          "kind": "theorem",
+          "name": "settle_settle",
+          "qualified_name_hint": "Becoming.Hexagram.Marked.settle_settle",
+          "line": 773
+        },
+        {
+          "kind": "theorem",
+          "name": "stays_settle",
+          "qualified_name_hint": "Becoming.Hexagram.Marked.stays_settle",
+          "line": 777
+        },
+        {
+          "kind": "theorem",
+          "name": "settle_of_stays",
+          "qualified_name_hint": "Becoming.Hexagram.Marked.settle_of_stays",
+          "line": 781
+        },
+        {
+          "kind": "theorem",
+          "name": "turning_ne_staying",
+          "qualified_name_hint": "Becoming.Hexagram.Marked.turning_ne_staying",
+          "line": 785
+        },
+        {
+          "kind": "theorem",
+          "name": "stays_of_settle",
+          "qualified_name_hint": "Becoming.Hexagram.Marked.stays_of_settle",
+          "line": 788
+        },
+        {
+          "kind": "structure",
+          "name": "MarkedLines",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines",
+          "line": 795
+        },
+        {
+          "kind": "def",
+          "name": "shown",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.shown",
+          "line": 806
+        },
+        {
+          "kind": "def",
+          "name": "settle",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.settle",
+          "line": 810
+        },
+        {
+          "kind": "def",
+          "name": "onward",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.onward",
+          "line": 814
+        },
+        {
+          "kind": "def",
+          "name": "staysAll",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.staysAll",
+          "line": 817
+        },
+        {
+          "kind": "theorem",
+          "name": "settle_settle",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.settle_settle",
+          "line": 821
+        },
+        {
+          "kind": "theorem",
+          "name": "staysAll_settle",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.staysAll_settle",
+          "line": 829
+        },
+        {
+          "kind": "theorem",
+          "name": "settle_fixed_iff",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.settle_fixed_iff",
+          "line": 838
+        },
+        {
+          "kind": "theorem",
+          "name": "settle_merges",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.settle_merges",
+          "line": 863
+        },
+        {
+          "kind": "theorem",
+          "name": "settle_process_merges",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.settle_process_merges",
+          "line": 869
+        },
+        {
+          "kind": "theorem",
+          "name": "run_settled",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.run_settled",
+          "line": 873
+        },
+        {
+          "kind": "theorem",
+          "name": "run_rests",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.run_rests",
+          "line": 878
+        },
+        {
+          "kind": "theorem",
+          "name": "drawn",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.drawn",
+          "line": 883
+        },
+        {
+          "kind": "theorem",
+          "name": "returns_iff",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.returns_iff",
+          "line": 889
+        },
+        {
+          "kind": "theorem",
+          "name": "process_returns_iff",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.process_returns_iff",
+          "line": 897
+        },
+        {
+          "kind": "theorem",
+          "name": "shown_not_lumped",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.shown_not_lumped",
+          "line": 903
+        },
+        {
+          "kind": "theorem",
+          "name": "shown_not_goAlike",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.shown_not_goAlike",
+          "line": 911
+        },
+        {
+          "kind": "theorem",
+          "name": "onward_lumped",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.onward_lumped",
+          "line": 915
+        },
+        {
+          "kind": "theorem",
+          "name": "onward_goAlike",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.onward_goAlike",
+          "line": 919
+        },
+        {
+          "kind": "def",
+          "name": "allTurning",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.allTurning",
+          "line": 923
+        },
+        {
+          "kind": "theorem",
+          "name": "all_nines",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.all_nines",
+          "line": 927
+        },
+        {
+          "kind": "theorem",
+          "name": "all_sixes",
+          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.all_sixes",
+          "line": 932
+        },
+        {
+          "kind": "def",
+          "name": "carry6",
+          "qualified_name_hint": "Becoming.Hexagram.carry6",
+          "line": 941
+        },
+        {
+          "kind": "def",
+          "name": "carry5",
+          "qualified_name_hint": "Becoming.Hexagram.carry5",
+          "line": 946
+        },
+        {
+          "kind": "def",
+          "name": "carry4",
+          "qualified_name_hint": "Becoming.Hexagram.carry4",
+          "line": 951
+        },
+        {
+          "kind": "def",
+          "name": "carry3",
+          "qualified_name_hint": "Becoming.Hexagram.carry3",
+          "line": 956
+        },
+        {
+          "kind": "def",
+          "name": "carry2",
+          "qualified_name_hint": "Becoming.Hexagram.carry2",
+          "line": 961
+        },
+        {
+          "kind": "def",
+          "name": "carry1",
+          "qualified_name_hint": "Becoming.Hexagram.carry1",
+          "line": 966
+        },
+        {
+          "kind": "def",
+          "name": "carryAt",
+          "qualified_name_hint": "Becoming.Hexagram.carryAt",
+          "line": 972
+        },
+        {
+          "kind": "def",
+          "name": "addOne",
+          "qualified_name_hint": "Becoming.Hexagram.addOne",
+          "line": 981
+        },
+        {
+          "kind": "def",
+          "name": "borrow6",
+          "qualified_name_hint": "Becoming.Hexagram.borrow6",
+          "line": 984
+        },
+        {
+          "kind": "def",
+          "name": "borrow5",
+          "qualified_name_hint": "Becoming.Hexagram.borrow5",
+          "line": 987
+        },
+        {
+          "kind": "def",
+          "name": "borrow4",
+          "qualified_name_hint": "Becoming.Hexagram.borrow4",
+          "line": 991
+        },
+        {
+          "kind": "def",
+          "name": "borrow3",
+          "qualified_name_hint": "Becoming.Hexagram.borrow3",
+          "line": 995
+        },
+        {
+          "kind": "def",
+          "name": "borrow2",
+          "qualified_name_hint": "Becoming.Hexagram.borrow2",
+          "line": 999
+        },
+        {
+          "kind": "def",
+          "name": "borrow1",
+          "qualified_name_hint": "Becoming.Hexagram.borrow1",
+          "line": 1003
+        },
+        {
+          "kind": "def",
+          "name": "subOne",
+          "qualified_name_hint": "Becoming.Hexagram.subOne",
+          "line": 1008
+        },
+        {
+          "kind": "theorem",
+          "name": "subOne_addOne",
+          "qualified_name_hint": "Becoming.Hexagram.subOne_addOne",
+          "line": 1010
+        },
+        {
+          "kind": "theorem",
+          "name": "addOne_lossless",
+          "qualified_name_hint": "Becoming.Hexagram.addOne_lossless",
+          "line": 1016
+        },
+        {
+          "kind": "theorem",
+          "name": "from_allBroken",
+          "qualified_name_hint": "Becoming.Hexagram.from_allBroken",
+          "line": 1020
+        },
+        {
+          "kind": "theorem",
+          "name": "to_allBroken",
+          "qualified_name_hint": "Becoming.Hexagram.to_allBroken",
+          "line": 1026
+        },
+        {
+          "kind": "theorem",
+          "name": "addOne_reach",
+          "qualified_name_hint": "Becoming.Hexagram.addOne_reach",
+          "line": 1032
+        },
+        {
+          "kind": "theorem",
+          "name": "addOne_sixtyfour",
+          "qualified_name_hint": "Becoming.Hexagram.addOne_sixtyfour",
+          "line": 1037
+        },
+        {
+          "kind": "def",
+          "name": "backWithin",
+          "qualified_name_hint": "Becoming.Hexagram.backWithin",
+          "line": 1043
+        },
+        {
+          "kind": "theorem",
+          "name": "not_back",
+          "qualified_name_hint": "Becoming.Hexagram.not_back",
+          "line": 1047
+        },
+        {
+          "kind": "theorem",
+          "name": "first_return_of",
+          "qualified_name_hint": "Becoming.Hexagram.first_return_of",
+          "line": 1059
+        },
+        {
+          "kind": "theorem",
+          "name": "backWithin_addOne",
+          "qualified_name_hint": "Becoming.Hexagram.backWithin_addOne",
+          "line": 1063
+        },
+        {
+          "kind": "theorem",
+          "name": "addOne_first_return",
+          "qualified_name_hint": "Becoming.Hexagram.addOne_first_return",
+          "line": 1069
+        },
+        {
+          "kind": "theorem",
+          "name": "addOne_one_orbit",
+          "qualified_name_hint": "Becoming.Hexagram.addOne_one_orbit",
+          "line": 1075
+        },
+        {
+          "kind": "def",
+          "name": "exponent",
+          "qualified_name_hint": "Becoming.Hexagram.exponent",
+          "line": 1085
+        },
+        {
+          "kind": "def",
+          "name": "period",
+          "qualified_name_hint": "Becoming.Hexagram.period",
+          "line": 1094
+        },
+        {
+          "kind": "theorem",
+          "name": "period_pow",
+          "qualified_name_hint": "Becoming.Hexagram.period_pow",
+          "line": 1102
+        },
+        {
+          "kind": "def",
+          "name": "linesBelow",
+          "qualified_name_hint": "Becoming.Hexagram.linesBelow",
+          "line": 1111
+        },
+        {
+          "kind": "theorem",
+          "name": "orbit_period",
+          "qualified_name_hint": "Becoming.Hexagram.orbit_period",
+          "line": 1120
+        },
+        {
+          "kind": "theorem",
+          "name": "carryAt_turns",
+          "qualified_name_hint": "Becoming.Hexagram.carryAt_turns",
+          "line": 1126
+        },
+        {
+          "kind": "theorem",
+          "name": "carryAt_below",
+          "qualified_name_hint": "Becoming.Hexagram.carryAt_below",
+          "line": 1132
+        },
+        {
+          "kind": "theorem",
+          "name": "line_turns",
+          "qualified_name_hint": "Becoming.Hexagram.line_turns",
+          "line": 1140
+        },
+        {
+          "kind": "def",
+          "name": "changesAround",
+          "qualified_name_hint": "Becoming.Hexagram.changesAround",
+          "line": 1157
+        },
+        {
+          "kind": "theorem",
+          "name": "changesAround_waxWane",
+          "qualified_name_hint": "Becoming.Hexagram.changesAround_waxWane",
+          "line": 1160
+        },
+        {
+          "kind": "theorem",
+          "name": "changesAround_run",
+          "qualified_name_hint": "Becoming.Hexagram.changesAround_run",
+          "line": 1166
+        },
+        {
+          "kind": "theorem",
+          "name": "changesAround_invariant",
+          "qualified_name_hint": "Becoming.Hexagram.changesAround_invariant",
+          "line": 1172
+        },
+        {
+          "kind": "theorem",
+          "name": "changesAround_values",
+          "qualified_name_hint": "Becoming.Hexagram.changesAround_values",
+          "line": 1177
+        },
+        {
+          "kind": "theorem",
+          "name": "changesAround_counts",
+          "qualified_name_hint": "Becoming.Hexagram.changesAround_counts",
+          "line": 1192
+        },
+        {
+          "kind": "theorem",
+          "name": "qian_not_reach_jiJi",
+          "qualified_name_hint": "Becoming.Hexagram.qian_not_reach_jiJi",
+          "line": 1199
+        },
+        {
+          "kind": "theorem",
+          "name": "waxWane_not_reach_every",
+          "qualified_name_hint": "Becoming.Hexagram.waxWane_not_reach_every",
+          "line": 1204
+        },
+        {
+          "kind": "def",
+          "name": "zhun",
+          "qualified_name_hint": "Becoming.Hexagram.zhun",
+          "line": 1208
+        },
+        {
+          "kind": "def",
+          "name": "meng",
+          "qualified_name_hint": "Becoming.Hexagram.meng",
+          "line": 1211
+        },
+        {
+          "kind": "def",
+          "name": "orbitStarts",
+          "qualified_name_hint": "Becoming.Hexagram.orbitStarts",
+          "line": 1215
+        },
+        {
+          "kind": "def",
+          "name": "visitsFrom",
+          "qualified_name_hint": "Becoming.Hexagram.visitsFrom",
+          "line": 1219
+        },
+        {
+          "kind": "theorem",
+          "name": "visits_sound",
+          "qualified_name_hint": "Becoming.Hexagram.visits_sound",
+          "line": 1223
+        },
+        {
+          "kind": "def",
+          "name": "onOrbit",
+          "qualified_name_hint": "Becoming.Hexagram.onOrbit",
+          "line": 1232
+        },
+        {
+          "kind": "theorem",
+          "name": "onOrbit_sound",
+          "qualified_name_hint": "Becoming.Hexagram.onOrbit_sound",
+          "line": 1236
+        },
+        {
+          "kind": "theorem",
+          "name": "onOrbit_all",
+          "qualified_name_hint": "Becoming.Hexagram.onOrbit_all",
+          "line": 1245
+        },
+        {
+          "kind": "theorem",
+          "name": "on_an_orbit",
+          "qualified_name_hint": "Becoming.Hexagram.on_an_orbit",
+          "line": 1252
+        },
+        {
+          "kind": "theorem",
+          "name": "starts_return",
+          "qualified_name_hint": "Becoming.Hexagram.starts_return",
+          "line": 1258
+        },
+        {
+          "kind": "def",
+          "name": "indexIn",
+          "qualified_name_hint": "Becoming.Hexagram.indexIn",
+          "line": 1276
+        },
+        {
+          "kind": "def",
+          "name": "orbitIndex",
+          "qualified_name_hint": "Becoming.Hexagram.orbitIndex",
+          "line": 1283
+        },
+        {
+          "kind": "theorem",
+          "name": "orbitIndex_waxWane",
+          "qualified_name_hint": "Becoming.Hexagram.orbitIndex_waxWane",
+          "line": 1286
+        },
+        {
+          "kind": "theorem",
+          "name": "orbitIndex_lumped",
+          "qualified_name_hint": "Becoming.Hexagram.orbitIndex_lumped",
+          "line": 1292
+        },
+        {
+          "kind": "theorem",
+          "name": "orbitIndex_goAlike",
+          "qualified_name_hint": "Becoming.Hexagram.orbitIndex_goAlike",
+          "line": 1296
+        },
+        {
+          "kind": "theorem",
+          "name": "orbitIndex_invariant",
+          "qualified_name_hint": "Becoming.Hexagram.orbitIndex_invariant",
+          "line": 1299
+        },
+        {
+          "kind": "theorem",
+          "name": "reach_keeps_orbit",
+          "qualified_name_hint": "Becoming.Hexagram.reach_keeps_orbit",
+          "line": 1304
+        },
+        {
+          "kind": "theorem",
+          "name": "orbit_census",
+          "qualified_name_hint": "Becoming.Hexagram.orbit_census",
+          "line": 1311
+        }
+      ],
+      "declaration_counts": {
+        "def": 54,
+        "inductive": 2,
+        "structure": 1,
+        "theorem": 129
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
     },
     "b11043acff07c69252add45bebb17f56b9f385cd6a2e0ef8a95363d783064fd9": {
       "byte_size": 4371,
@@ -271111,191 +272266,6 @@
         "unsafe": []
       },
       "print_axioms_commands": 33
-    },
-    "c16574db68309b48d70f9a755d4e02892541d8b90a238bd4b7d1d590bf8694fe": {
-      "byte_size": 13704,
-      "line_count": 250,
-      "imports": [
-        "Becoming.Junctures",
-        "Becoming.Hexagrams",
-        "Becoming.LearningRuns"
-      ],
-      "declarations": [
-        {
-          "kind": "def",
-          "name": "Commutes",
-          "qualified_name_hint": "Becoming.Law.Commutes",
-          "line": 75
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.iterate",
-          "qualified_name_hint": "Becoming.Law.Commutes.iterate",
-          "line": 81
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.apart",
-          "qualified_name_hint": "Becoming.Law.Commutes.apart",
-          "line": 88
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.breaks",
-          "qualified_name_hint": "Becoming.Law.Commutes.breaks",
-          "line": 93
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.not_drawn_to_one",
-          "qualified_name_hint": "Becoming.Law.Commutes.not_drawn_to_one",
-          "line": 99
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.keeps_fixed",
-          "qualified_name_hint": "Becoming.Law.Commutes.keeps_fixed",
-          "line": 105
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.rest_paired",
-          "qualified_name_hint": "Becoming.Law.Commutes.rest_paired",
-          "line": 112
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.paired_halfway",
-          "qualified_name_hint": "Becoming.Law.Commutes.paired_halfway",
-          "line": 119
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.pairs_lumped",
-          "qualified_name_hint": "Becoming.Law.Commutes.pairs_lumped",
-          "line": 129
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.pairs_goAlike",
-          "qualified_name_hint": "Becoming.Law.Commutes.pairs_goAlike",
-          "line": 139
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.self_apart",
-          "qualified_name_hint": "Becoming.Law.Commutes.self_apart",
-          "line": 146
-        },
-        {
-          "kind": "def",
-          "name": "Symmetric",
-          "qualified_name_hint": "Becoming.Branching.Symmetric",
-          "line": 157
-        },
-        {
-          "kind": "theorem",
-          "name": "Symmetric.reach",
-          "qualified_name_hint": "Becoming.Branching.Symmetric.reach",
-          "line": 159
-        },
-        {
-          "kind": "theorem",
-          "name": "Symmetric.returns",
-          "qualified_name_hint": "Becoming.Branching.Symmetric.returns",
-          "line": 162
-        },
-        {
-          "kind": "theorem",
-          "name": "Symmetric.juncture",
-          "qualified_name_hint": "Becoming.Branching.Symmetric.juncture",
-          "line": 166
-        },
-        {
-          "kind": "def",
-          "name": "mirror",
-          "qualified_name_hint": "Becoming.Branching.mirror",
-          "line": 174
-        },
-        {
-          "kind": "theorem",
-          "name": "mirror_apart",
-          "qualified_name_hint": "Becoming.Branching.mirror_apart",
-          "line": 178
-        },
-        {
-          "kind": "theorem",
-          "name": "law_symmetric",
-          "qualified_name_hint": "Becoming.Branching.law_symmetric",
-          "line": 183
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.returns_paired",
-          "qualified_name_hint": "Becoming.Law.Commutes.returns_paired",
-          "line": 193
-        },
-        {
-          "kind": "theorem",
-          "name": "Commutes.halfway_returns",
-          "qualified_name_hint": "Becoming.Law.Commutes.halfway_returns",
-          "line": 198
-        },
-        {
-          "kind": "theorem",
-          "name": "complement_moves",
-          "qualified_name_hint": "Becoming.Hexagram.complement_moves",
-          "line": 211
-        },
-        {
-          "kind": "theorem",
-          "name": "waxWane_apart",
-          "qualified_name_hint": "Becoming.Hexagram.waxWane_apart",
-          "line": 215
-        },
-        {
-          "kind": "theorem",
-          "name": "waxWane_halfway",
-          "qualified_name_hint": "Becoming.Hexagram.waxWane_halfway",
-          "line": 220
-        },
-        {
-          "kind": "theorem",
-          "name": "wane_breaks",
-          "qualified_name_hint": "Becoming.Hexagram.wane_breaks",
-          "line": 226
-        },
-        {
-          "kind": "theorem",
-          "name": "flip_complement",
-          "qualified_name_hint": "Becoming.Hexagram.flip_complement",
-          "line": 231
-        },
-        {
-          "kind": "theorem",
-          "name": "changes_symmetric",
-          "qualified_name_hint": "Becoming.Hexagram.changes_symmetric",
-          "line": 240
-        },
-        {
-          "kind": "theorem",
-          "name": "changes_mirror_apart",
-          "qualified_name_hint": "Becoming.Hexagram.changes_mirror_apart",
-          "line": 244
-        }
-      ],
-      "declaration_counts": {
-        "def": 3,
-        "theorem": 24
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
     },
     "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848": {
       "byte_size": 8684,
@@ -313835,6 +314805,148 @@
       },
       "print_axioms_commands": 0
     },
+    "e0bc05ed9f0bf8c8cda52bb608afc4dedf7593c785c082efc46ec5657c58df65": {
+      "byte_size": 11046,
+      "line_count": 201,
+      "imports": [
+        "Becoming.Junctures",
+        "Becoming.LearningRuns"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Commutes",
+          "qualified_name_hint": "Becoming.Law.Commutes",
+          "line": 68
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.iterate",
+          "qualified_name_hint": "Becoming.Law.Commutes.iterate",
+          "line": 74
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.apart",
+          "qualified_name_hint": "Becoming.Law.Commutes.apart",
+          "line": 81
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.breaks",
+          "qualified_name_hint": "Becoming.Law.Commutes.breaks",
+          "line": 86
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.not_drawn_to_one",
+          "qualified_name_hint": "Becoming.Law.Commutes.not_drawn_to_one",
+          "line": 92
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.keeps_fixed",
+          "qualified_name_hint": "Becoming.Law.Commutes.keeps_fixed",
+          "line": 98
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.rest_paired",
+          "qualified_name_hint": "Becoming.Law.Commutes.rest_paired",
+          "line": 105
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.paired_halfway",
+          "qualified_name_hint": "Becoming.Law.Commutes.paired_halfway",
+          "line": 112
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.pairs_lumped",
+          "qualified_name_hint": "Becoming.Law.Commutes.pairs_lumped",
+          "line": 122
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.pairs_goAlike",
+          "qualified_name_hint": "Becoming.Law.Commutes.pairs_goAlike",
+          "line": 132
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.self_apart",
+          "qualified_name_hint": "Becoming.Law.Commutes.self_apart",
+          "line": 139
+        },
+        {
+          "kind": "def",
+          "name": "Symmetric",
+          "qualified_name_hint": "Becoming.Branching.Symmetric",
+          "line": 150
+        },
+        {
+          "kind": "theorem",
+          "name": "Symmetric.reach",
+          "qualified_name_hint": "Becoming.Branching.Symmetric.reach",
+          "line": 152
+        },
+        {
+          "kind": "theorem",
+          "name": "Symmetric.returns",
+          "qualified_name_hint": "Becoming.Branching.Symmetric.returns",
+          "line": 155
+        },
+        {
+          "kind": "theorem",
+          "name": "Symmetric.juncture",
+          "qualified_name_hint": "Becoming.Branching.Symmetric.juncture",
+          "line": 159
+        },
+        {
+          "kind": "def",
+          "name": "mirror",
+          "qualified_name_hint": "Becoming.Branching.mirror",
+          "line": 167
+        },
+        {
+          "kind": "theorem",
+          "name": "mirror_apart",
+          "qualified_name_hint": "Becoming.Branching.mirror_apart",
+          "line": 171
+        },
+        {
+          "kind": "theorem",
+          "name": "law_symmetric",
+          "qualified_name_hint": "Becoming.Branching.law_symmetric",
+          "line": 176
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.returns_paired",
+          "qualified_name_hint": "Becoming.Law.Commutes.returns_paired",
+          "line": 186
+        },
+        {
+          "kind": "theorem",
+          "name": "Commutes.halfway_returns",
+          "qualified_name_hint": "Becoming.Law.Commutes.halfway_returns",
+          "line": 191
+        }
+      ],
+      "declaration_counts": {
+        "def": 3,
+        "theorem": 17
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "e0f81eccb93542aaf0f58c634ba7d9eac34990ceb141474ca5158e0f1738115c": {
       "byte_size": 8540,
       "line_count": 166,
@@ -321942,1146 +323054,6 @@
       },
       "print_axioms_commands": 0
     },
-    "e642ea1f30f4b32e49c0952abb0474eca538429d18ed020cf11b85b205771017": {
-      "byte_size": 63339,
-      "line_count": 1321,
-      "imports": [
-        "Becoming.HexagramPlaces",
-        "Becoming.Commuting"
-      ],
-      "declarations": [
-        {
-          "kind": "theorem",
-          "name": "not_mem_of_memb",
-          "qualified_name_hint": "Becoming.Hexagram.not_mem_of_memb",
-          "line": 103
-        },
-        {
-          "kind": "def",
-          "name": "distinctb",
-          "qualified_name_hint": "Becoming.Hexagram.distinctb",
-          "line": 109
-        },
-        {
-          "kind": "theorem",
-          "name": "nodup_of_distinctb",
-          "qualified_name_hint": "Becoming.Hexagram.nodup_of_distinctb",
-          "line": 113
-        },
-        {
-          "kind": "theorem",
-          "name": "order_nodup",
-          "qualified_name_hint": "Becoming.Hexagram.order_nodup",
-          "line": 122
-        },
-        {
-          "kind": "def",
-          "name": "allUnbroken",
-          "qualified_name_hint": "Becoming.Hexagram.allUnbroken",
-          "line": 125
-        },
-        {
-          "kind": "theorem",
-          "name": "orbit_still",
-          "qualified_name_hint": "Becoming.Hexagram.orbit_still",
-          "line": 128
-        },
-        {
-          "kind": "def",
-          "name": "nuclear",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear",
-          "line": 137
-        },
-        {
-          "kind": "def",
-          "name": "inner",
-          "qualified_name_hint": "Becoming.Hexagram.inner",
-          "line": 141
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_inner",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_inner",
-          "line": 144
-        },
-        {
-          "kind": "theorem",
-          "name": "run_inner",
-          "qualified_name_hint": "Becoming.Hexagram.run_inner",
-          "line": 152
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_merges",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_merges",
-          "line": 159
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_process_merges",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_process_merges",
-          "line": 163
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_loses",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_loses",
-          "line": 167
-        },
-        {
-          "kind": "def",
-          "name": "innerPair",
-          "qualified_name_hint": "Becoming.Hexagram.innerPair",
-          "line": 172
-        },
-        {
-          "kind": "def",
-          "name": "thrice",
-          "qualified_name_hint": "Becoming.Hexagram.thrice",
-          "line": 175
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_two",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_two",
-          "line": 179
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_two_lumped",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_two_lumped",
-          "line": 183
-        },
-        {
-          "kind": "theorem",
-          "name": "run_two_middle",
-          "qualified_name_hint": "Becoming.Hexagram.run_two_middle",
-          "line": 187
-        },
-        {
-          "kind": "theorem",
-          "name": "thrice_inj",
-          "qualified_name_hint": "Becoming.Hexagram.thrice_inj",
-          "line": 193
-        },
-        {
-          "kind": "theorem",
-          "name": "innerPair_nuclear",
-          "qualified_name_hint": "Becoming.Hexagram.innerPair_nuclear",
-          "line": 200
-        },
-        {
-          "kind": "theorem",
-          "name": "swap_eq",
-          "qualified_name_hint": "Becoming.Hexagram.swap_eq",
-          "line": 203
-        },
-        {
-          "kind": "theorem",
-          "name": "innerPair_lumped",
-          "qualified_name_hint": "Becoming.Hexagram.innerPair_lumped",
-          "line": 208
-        },
-        {
-          "kind": "theorem",
-          "name": "innerPair_goAlike",
-          "qualified_name_hint": "Becoming.Hexagram.innerPair_goAlike",
-          "line": 212
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_yang_not_lumped",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_yang_not_lumped",
-          "line": 217
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_yang_not_goAlike",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_yang_not_goAlike",
-          "line": 221
-        },
-        {
-          "kind": "def",
-          "name": "NuclearAttractor",
-          "qualified_name_hint": "Becoming.Hexagram.NuclearAttractor",
-          "line": 225
-        },
-        {
-          "kind": "def",
-          "name": "attractorb",
-          "qualified_name_hint": "Becoming.Hexagram.attractorb",
-          "line": 229
-        },
-        {
-          "kind": "theorem",
-          "name": "attractor_of_attractorb",
-          "qualified_name_hint": "Becoming.Hexagram.attractor_of_attractorb",
-          "line": 232
-        },
-        {
-          "kind": "theorem",
-          "name": "not_attractor_of_attractorb",
-          "qualified_name_hint": "Becoming.Hexagram.not_attractor_of_attractorb",
-          "line": 241
-        },
-        {
-          "kind": "theorem",
-          "name": "thrice_attractor",
-          "qualified_name_hint": "Becoming.Hexagram.thrice_attractor",
-          "line": 252
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_two_attractor",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_two_attractor",
-          "line": 259
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_allUnbroken",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_allUnbroken",
-          "line": 262
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_allBroken",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_allBroken",
-          "line": 264
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_jiJi",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_jiJi",
-          "line": 266
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_weiJi",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_weiJi",
-          "line": 268
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_two_fixed_one_cycle",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_two_fixed_one_cycle",
-          "line": 273
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_fixed_iff",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_fixed_iff",
-          "line": 285
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_rests_iff",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_rests_iff",
-          "line": 296
-        },
-        {
-          "kind": "theorem",
-          "name": "attractor_absorbing",
-          "qualified_name_hint": "Becoming.Hexagram.attractor_absorbing",
-          "line": 302
-        },
-        {
-          "kind": "theorem",
-          "name": "attractor_returns",
-          "qualified_name_hint": "Becoming.Hexagram.attractor_returns",
-          "line": 310
-        },
-        {
-          "kind": "theorem",
-          "name": "outside_drawn",
-          "qualified_name_hint": "Becoming.Hexagram.outside_drawn",
-          "line": 317
-        },
-        {
-          "kind": "theorem",
-          "name": "outside_not_returns",
-          "qualified_name_hint": "Becoming.Hexagram.outside_not_returns",
-          "line": 322
-        },
-        {
-          "kind": "theorem",
-          "name": "returns_iff_attractor",
-          "qualified_name_hint": "Becoming.Hexagram.returns_iff_attractor",
-          "line": 327
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_process_returns_iff",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_process_returns_iff",
-          "line": 334
-        },
-        {
-          "kind": "theorem",
-          "name": "process_returns_iff_ends",
-          "qualified_name_hint": "Becoming.Hexagram.process_returns_iff_ends",
-          "line": 340
-        },
-        {
-          "kind": "theorem",
-          "name": "run_in_attractor",
-          "qualified_name_hint": "Becoming.Hexagram.run_in_attractor",
-          "line": 365
-        },
-        {
-          "kind": "theorem",
-          "name": "entry_counts",
-          "qualified_name_hint": "Becoming.Hexagram.entry_counts",
-          "line": 371
-        },
-        {
-          "kind": "theorem",
-          "name": "thrice_back",
-          "qualified_name_hint": "Becoming.Hexagram.thrice_back",
-          "line": 378
-        },
-        {
-          "kind": "theorem",
-          "name": "run_rests_at",
-          "qualified_name_hint": "Becoming.Hexagram.run_rests_at",
-          "line": 383
-        },
-        {
-          "kind": "theorem",
-          "name": "basin_iff",
-          "qualified_name_hint": "Becoming.Hexagram.basin_iff",
-          "line": 390
-        },
-        {
-          "kind": "theorem",
-          "name": "and_of_both",
-          "qualified_name_hint": "Becoming.Hexagram.and_of_both",
-          "line": 395
-        },
-        {
-          "kind": "theorem",
-          "name": "or_of_neither",
-          "qualified_name_hint": "Becoming.Hexagram.or_of_neither",
-          "line": 400
-        },
-        {
-          "kind": "theorem",
-          "name": "qian_basin",
-          "qualified_name_hint": "Becoming.Hexagram.qian_basin",
-          "line": 406
-        },
-        {
-          "kind": "theorem",
-          "name": "kun_basin",
-          "qualified_name_hint": "Becoming.Hexagram.kun_basin",
-          "line": 416
-        },
-        {
-          "kind": "theorem",
-          "name": "cycle_basin",
-          "qualified_name_hint": "Becoming.Hexagram.cycle_basin",
-          "line": 426
-        },
-        {
-          "kind": "theorem",
-          "name": "basin_counts",
-          "qualified_name_hint": "Becoming.Hexagram.basin_counts",
-          "line": 440
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_complement",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_complement",
-          "line": 450
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_reverse",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_reverse",
-          "line": 454
-        },
-        {
-          "kind": "theorem",
-          "name": "complement_reverse",
-          "qualified_name_hint": "Becoming.Hexagram.complement_reverse",
-          "line": 457
-        },
-        {
-          "kind": "theorem",
-          "name": "reverse_reverse",
-          "qualified_name_hint": "Becoming.Hexagram.reverse_reverse",
-          "line": 460
-        },
-        {
-          "kind": "theorem",
-          "name": "reverse_complement_reverse",
-          "qualified_name_hint": "Becoming.Hexagram.reverse_complement_reverse",
-          "line": 463
-        },
-        {
-          "kind": "inductive",
-          "name": "Symmetry",
-          "qualified_name_hint": "Becoming.Hexagram.Symmetry",
-          "line": 468
-        },
-        {
-          "kind": "def",
-          "name": "act",
-          "qualified_name_hint": "Becoming.Hexagram.Symmetry.act",
-          "line": 477
-        },
-        {
-          "kind": "def",
-          "name": "comp",
-          "qualified_name_hint": "Becoming.Hexagram.Symmetry.comp",
-          "line": 484
-        },
-        {
-          "kind": "theorem",
-          "name": "act_comp",
-          "qualified_name_hint": "Becoming.Hexagram.Symmetry.act_comp",
-          "line": 500
-        },
-        {
-          "kind": "theorem",
-          "name": "comp_self",
-          "qualified_name_hint": "Becoming.Hexagram.Symmetry.comp_self",
-          "line": 518
-        },
-        {
-          "kind": "theorem",
-          "name": "comp_comm",
-          "qualified_name_hint": "Becoming.Hexagram.Symmetry.comp_comm",
-          "line": 525
-        },
-        {
-          "kind": "theorem",
-          "name": "act_self",
-          "qualified_name_hint": "Becoming.Hexagram.Symmetry.act_self",
-          "line": 529
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_act",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_act",
-          "line": 535
-        },
-        {
-          "kind": "theorem",
-          "name": "nuclear_run_act",
-          "qualified_name_hint": "Becoming.Hexagram.nuclear_run_act",
-          "line": 542
-        },
-        {
-          "kind": "theorem",
-          "name": "run_complement_apart",
-          "qualified_name_hint": "Becoming.Hexagram.run_complement_apart",
-          "line": 549
-        },
-        {
-          "kind": "def",
-          "name": "binaryValue",
-          "qualified_name_hint": "Becoming.Hexagram.binaryValue",
-          "line": 554
-        },
-        {
-          "kind": "def",
-          "name": "leastOf",
-          "qualified_name_hint": "Becoming.Hexagram.leastOf",
-          "line": 559
-        },
-        {
-          "kind": "def",
-          "name": "classOf",
-          "qualified_name_hint": "Becoming.Hexagram.classOf",
-          "line": 566
-        },
-        {
-          "kind": "theorem",
-          "name": "classOf_act",
-          "qualified_name_hint": "Becoming.Hexagram.classOf_act",
-          "line": 570
-        },
-        {
-          "kind": "theorem",
-          "name": "classOf_member",
-          "qualified_name_hint": "Becoming.Hexagram.classOf_member",
-          "line": 579
-        },
-        {
-          "kind": "theorem",
-          "name": "classOf_eq_iff",
-          "qualified_name_hint": "Becoming.Hexagram.classOf_eq_iff",
-          "line": 590
-        },
-        {
-          "kind": "def",
-          "name": "pairClasses",
-          "qualified_name_hint": "Becoming.Hexagram.pairClasses",
-          "line": 600
-        },
-        {
-          "kind": "def",
-          "name": "fourClasses",
-          "qualified_name_hint": "Becoming.Hexagram.fourClasses",
-          "line": 611
-        },
-        {
-          "kind": "def",
-          "name": "classes",
-          "qualified_name_hint": "Becoming.Hexagram.classes",
-          "line": 626
-        },
-        {
-          "kind": "def",
-          "name": "classSize",
-          "qualified_name_hint": "Becoming.Hexagram.classSize",
-          "line": 629
-        },
-        {
-          "kind": "theorem",
-          "name": "classOf_mem",
-          "qualified_name_hint": "Becoming.Hexagram.classOf_mem",
-          "line": 631
-        },
-        {
-          "kind": "theorem",
-          "name": "class_census",
-          "qualified_name_hint": "Becoming.Hexagram.class_census",
-          "line": 640
-        },
-        {
-          "kind": "theorem",
-          "name": "classes_lumped",
-          "qualified_name_hint": "Becoming.Hexagram.classes_lumped",
-          "line": 649
-        },
-        {
-          "kind": "theorem",
-          "name": "classes_goAlike",
-          "qualified_name_hint": "Becoming.Hexagram.classes_goAlike",
-          "line": 655
-        },
-        {
-          "kind": "theorem",
-          "name": "classes_not_lumped_waxWane",
-          "qualified_name_hint": "Becoming.Hexagram.classes_not_lumped_waxWane",
-          "line": 660
-        },
-        {
-          "kind": "theorem",
-          "name": "classes_not_goAlike_waxWane",
-          "qualified_name_hint": "Becoming.Hexagram.classes_not_goAlike_waxWane",
-          "line": 663
-        },
-        {
-          "kind": "theorem",
-          "name": "any_sound",
-          "qualified_name_hint": "Becoming.Hexagram.any_sound",
-          "line": 666
-        },
-        {
-          "kind": "def",
-          "name": "pairedByChange",
-          "qualified_name_hint": "Becoming.Hexagram.pairedByChange",
-          "line": 676
-        },
-        {
-          "kind": "theorem",
-          "name": "pairedByChange_sound",
-          "qualified_name_hint": "Becoming.Hexagram.pairedByChange_sound",
-          "line": 680
-        },
-        {
-          "kind": "theorem",
-          "name": "turn_fixed_iff",
-          "qualified_name_hint": "Becoming.Hexagram.turn_fixed_iff",
-          "line": 692
-        },
-        {
-          "kind": "def",
-          "name": "pairedByBoth",
-          "qualified_name_hint": "Becoming.Hexagram.pairedByBoth",
-          "line": 712
-        },
-        {
-          "kind": "theorem",
-          "name": "pairedByBoth_sound",
-          "qualified_name_hint": "Becoming.Hexagram.pairedByBoth_sound",
-          "line": 716
-        },
-        {
-          "kind": "theorem",
-          "name": "both_fixed_iff",
-          "qualified_name_hint": "Becoming.Hexagram.both_fixed_iff",
-          "line": 729
-        },
-        {
-          "kind": "inductive",
-          "name": "Marked",
-          "qualified_name_hint": "Becoming.Hexagram.Marked",
-          "line": 751
-        },
-        {
-          "kind": "def",
-          "name": "value",
-          "qualified_name_hint": "Becoming.Hexagram.Marked.value",
-          "line": 758
-        },
-        {
-          "kind": "def",
-          "name": "settle",
-          "qualified_name_hint": "Becoming.Hexagram.Marked.settle",
-          "line": 764
-        },
-        {
-          "kind": "def",
-          "name": "stays",
-          "qualified_name_hint": "Becoming.Hexagram.Marked.stays",
-          "line": 769
-        },
-        {
-          "kind": "theorem",
-          "name": "settle_settle",
-          "qualified_name_hint": "Becoming.Hexagram.Marked.settle_settle",
-          "line": 773
-        },
-        {
-          "kind": "theorem",
-          "name": "stays_settle",
-          "qualified_name_hint": "Becoming.Hexagram.Marked.stays_settle",
-          "line": 777
-        },
-        {
-          "kind": "theorem",
-          "name": "settle_of_stays",
-          "qualified_name_hint": "Becoming.Hexagram.Marked.settle_of_stays",
-          "line": 781
-        },
-        {
-          "kind": "theorem",
-          "name": "turning_ne_staying",
-          "qualified_name_hint": "Becoming.Hexagram.Marked.turning_ne_staying",
-          "line": 785
-        },
-        {
-          "kind": "theorem",
-          "name": "stays_of_settle",
-          "qualified_name_hint": "Becoming.Hexagram.Marked.stays_of_settle",
-          "line": 788
-        },
-        {
-          "kind": "structure",
-          "name": "MarkedLines",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines",
-          "line": 795
-        },
-        {
-          "kind": "def",
-          "name": "shown",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.shown",
-          "line": 806
-        },
-        {
-          "kind": "def",
-          "name": "settle",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.settle",
-          "line": 810
-        },
-        {
-          "kind": "def",
-          "name": "onward",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.onward",
-          "line": 814
-        },
-        {
-          "kind": "def",
-          "name": "staysAll",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.staysAll",
-          "line": 817
-        },
-        {
-          "kind": "theorem",
-          "name": "settle_settle",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.settle_settle",
-          "line": 821
-        },
-        {
-          "kind": "theorem",
-          "name": "staysAll_settle",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.staysAll_settle",
-          "line": 829
-        },
-        {
-          "kind": "theorem",
-          "name": "settle_fixed_iff",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.settle_fixed_iff",
-          "line": 838
-        },
-        {
-          "kind": "theorem",
-          "name": "settle_merges",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.settle_merges",
-          "line": 863
-        },
-        {
-          "kind": "theorem",
-          "name": "settle_process_merges",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.settle_process_merges",
-          "line": 869
-        },
-        {
-          "kind": "theorem",
-          "name": "run_settled",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.run_settled",
-          "line": 873
-        },
-        {
-          "kind": "theorem",
-          "name": "run_rests",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.run_rests",
-          "line": 878
-        },
-        {
-          "kind": "theorem",
-          "name": "drawn",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.drawn",
-          "line": 883
-        },
-        {
-          "kind": "theorem",
-          "name": "returns_iff",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.returns_iff",
-          "line": 889
-        },
-        {
-          "kind": "theorem",
-          "name": "process_returns_iff",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.process_returns_iff",
-          "line": 897
-        },
-        {
-          "kind": "theorem",
-          "name": "shown_not_lumped",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.shown_not_lumped",
-          "line": 903
-        },
-        {
-          "kind": "theorem",
-          "name": "shown_not_goAlike",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.shown_not_goAlike",
-          "line": 911
-        },
-        {
-          "kind": "theorem",
-          "name": "onward_lumped",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.onward_lumped",
-          "line": 915
-        },
-        {
-          "kind": "theorem",
-          "name": "onward_goAlike",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.onward_goAlike",
-          "line": 919
-        },
-        {
-          "kind": "def",
-          "name": "allTurning",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.allTurning",
-          "line": 923
-        },
-        {
-          "kind": "theorem",
-          "name": "all_nines",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.all_nines",
-          "line": 927
-        },
-        {
-          "kind": "theorem",
-          "name": "all_sixes",
-          "qualified_name_hint": "Becoming.Hexagram.MarkedLines.all_sixes",
-          "line": 932
-        },
-        {
-          "kind": "def",
-          "name": "carry6",
-          "qualified_name_hint": "Becoming.Hexagram.carry6",
-          "line": 941
-        },
-        {
-          "kind": "def",
-          "name": "carry5",
-          "qualified_name_hint": "Becoming.Hexagram.carry5",
-          "line": 946
-        },
-        {
-          "kind": "def",
-          "name": "carry4",
-          "qualified_name_hint": "Becoming.Hexagram.carry4",
-          "line": 951
-        },
-        {
-          "kind": "def",
-          "name": "carry3",
-          "qualified_name_hint": "Becoming.Hexagram.carry3",
-          "line": 956
-        },
-        {
-          "kind": "def",
-          "name": "carry2",
-          "qualified_name_hint": "Becoming.Hexagram.carry2",
-          "line": 961
-        },
-        {
-          "kind": "def",
-          "name": "carry1",
-          "qualified_name_hint": "Becoming.Hexagram.carry1",
-          "line": 966
-        },
-        {
-          "kind": "def",
-          "name": "carryAt",
-          "qualified_name_hint": "Becoming.Hexagram.carryAt",
-          "line": 972
-        },
-        {
-          "kind": "def",
-          "name": "addOne",
-          "qualified_name_hint": "Becoming.Hexagram.addOne",
-          "line": 981
-        },
-        {
-          "kind": "def",
-          "name": "borrow6",
-          "qualified_name_hint": "Becoming.Hexagram.borrow6",
-          "line": 984
-        },
-        {
-          "kind": "def",
-          "name": "borrow5",
-          "qualified_name_hint": "Becoming.Hexagram.borrow5",
-          "line": 987
-        },
-        {
-          "kind": "def",
-          "name": "borrow4",
-          "qualified_name_hint": "Becoming.Hexagram.borrow4",
-          "line": 991
-        },
-        {
-          "kind": "def",
-          "name": "borrow3",
-          "qualified_name_hint": "Becoming.Hexagram.borrow3",
-          "line": 995
-        },
-        {
-          "kind": "def",
-          "name": "borrow2",
-          "qualified_name_hint": "Becoming.Hexagram.borrow2",
-          "line": 999
-        },
-        {
-          "kind": "def",
-          "name": "borrow1",
-          "qualified_name_hint": "Becoming.Hexagram.borrow1",
-          "line": 1003
-        },
-        {
-          "kind": "def",
-          "name": "subOne",
-          "qualified_name_hint": "Becoming.Hexagram.subOne",
-          "line": 1008
-        },
-        {
-          "kind": "theorem",
-          "name": "subOne_addOne",
-          "qualified_name_hint": "Becoming.Hexagram.subOne_addOne",
-          "line": 1010
-        },
-        {
-          "kind": "theorem",
-          "name": "addOne_lossless",
-          "qualified_name_hint": "Becoming.Hexagram.addOne_lossless",
-          "line": 1016
-        },
-        {
-          "kind": "theorem",
-          "name": "from_allBroken",
-          "qualified_name_hint": "Becoming.Hexagram.from_allBroken",
-          "line": 1020
-        },
-        {
-          "kind": "theorem",
-          "name": "to_allBroken",
-          "qualified_name_hint": "Becoming.Hexagram.to_allBroken",
-          "line": 1026
-        },
-        {
-          "kind": "theorem",
-          "name": "addOne_reach",
-          "qualified_name_hint": "Becoming.Hexagram.addOne_reach",
-          "line": 1032
-        },
-        {
-          "kind": "theorem",
-          "name": "addOne_sixtyfour",
-          "qualified_name_hint": "Becoming.Hexagram.addOne_sixtyfour",
-          "line": 1037
-        },
-        {
-          "kind": "def",
-          "name": "backWithin",
-          "qualified_name_hint": "Becoming.Hexagram.backWithin",
-          "line": 1043
-        },
-        {
-          "kind": "theorem",
-          "name": "not_back",
-          "qualified_name_hint": "Becoming.Hexagram.not_back",
-          "line": 1047
-        },
-        {
-          "kind": "theorem",
-          "name": "first_return_of",
-          "qualified_name_hint": "Becoming.Hexagram.first_return_of",
-          "line": 1059
-        },
-        {
-          "kind": "theorem",
-          "name": "backWithin_addOne",
-          "qualified_name_hint": "Becoming.Hexagram.backWithin_addOne",
-          "line": 1063
-        },
-        {
-          "kind": "theorem",
-          "name": "addOne_first_return",
-          "qualified_name_hint": "Becoming.Hexagram.addOne_first_return",
-          "line": 1069
-        },
-        {
-          "kind": "theorem",
-          "name": "addOne_one_orbit",
-          "qualified_name_hint": "Becoming.Hexagram.addOne_one_orbit",
-          "line": 1075
-        },
-        {
-          "kind": "def",
-          "name": "exponent",
-          "qualified_name_hint": "Becoming.Hexagram.exponent",
-          "line": 1085
-        },
-        {
-          "kind": "def",
-          "name": "period",
-          "qualified_name_hint": "Becoming.Hexagram.period",
-          "line": 1094
-        },
-        {
-          "kind": "theorem",
-          "name": "period_pow",
-          "qualified_name_hint": "Becoming.Hexagram.period_pow",
-          "line": 1102
-        },
-        {
-          "kind": "def",
-          "name": "linesBelow",
-          "qualified_name_hint": "Becoming.Hexagram.linesBelow",
-          "line": 1111
-        },
-        {
-          "kind": "theorem",
-          "name": "orbit_period",
-          "qualified_name_hint": "Becoming.Hexagram.orbit_period",
-          "line": 1120
-        },
-        {
-          "kind": "theorem",
-          "name": "carryAt_turns",
-          "qualified_name_hint": "Becoming.Hexagram.carryAt_turns",
-          "line": 1126
-        },
-        {
-          "kind": "theorem",
-          "name": "carryAt_below",
-          "qualified_name_hint": "Becoming.Hexagram.carryAt_below",
-          "line": 1132
-        },
-        {
-          "kind": "theorem",
-          "name": "line_turns",
-          "qualified_name_hint": "Becoming.Hexagram.line_turns",
-          "line": 1140
-        },
-        {
-          "kind": "def",
-          "name": "changesAround",
-          "qualified_name_hint": "Becoming.Hexagram.changesAround",
-          "line": 1157
-        },
-        {
-          "kind": "theorem",
-          "name": "changesAround_waxWane",
-          "qualified_name_hint": "Becoming.Hexagram.changesAround_waxWane",
-          "line": 1160
-        },
-        {
-          "kind": "theorem",
-          "name": "changesAround_run",
-          "qualified_name_hint": "Becoming.Hexagram.changesAround_run",
-          "line": 1166
-        },
-        {
-          "kind": "theorem",
-          "name": "changesAround_invariant",
-          "qualified_name_hint": "Becoming.Hexagram.changesAround_invariant",
-          "line": 1172
-        },
-        {
-          "kind": "theorem",
-          "name": "changesAround_values",
-          "qualified_name_hint": "Becoming.Hexagram.changesAround_values",
-          "line": 1177
-        },
-        {
-          "kind": "theorem",
-          "name": "changesAround_counts",
-          "qualified_name_hint": "Becoming.Hexagram.changesAround_counts",
-          "line": 1192
-        },
-        {
-          "kind": "theorem",
-          "name": "qian_not_reach_jiJi",
-          "qualified_name_hint": "Becoming.Hexagram.qian_not_reach_jiJi",
-          "line": 1199
-        },
-        {
-          "kind": "theorem",
-          "name": "waxWane_not_reach_every",
-          "qualified_name_hint": "Becoming.Hexagram.waxWane_not_reach_every",
-          "line": 1204
-        },
-        {
-          "kind": "def",
-          "name": "zhun",
-          "qualified_name_hint": "Becoming.Hexagram.zhun",
-          "line": 1208
-        },
-        {
-          "kind": "def",
-          "name": "meng",
-          "qualified_name_hint": "Becoming.Hexagram.meng",
-          "line": 1211
-        },
-        {
-          "kind": "def",
-          "name": "orbitStarts",
-          "qualified_name_hint": "Becoming.Hexagram.orbitStarts",
-          "line": 1215
-        },
-        {
-          "kind": "def",
-          "name": "visitsFrom",
-          "qualified_name_hint": "Becoming.Hexagram.visitsFrom",
-          "line": 1219
-        },
-        {
-          "kind": "theorem",
-          "name": "visits_sound",
-          "qualified_name_hint": "Becoming.Hexagram.visits_sound",
-          "line": 1223
-        },
-        {
-          "kind": "def",
-          "name": "onOrbit",
-          "qualified_name_hint": "Becoming.Hexagram.onOrbit",
-          "line": 1232
-        },
-        {
-          "kind": "theorem",
-          "name": "onOrbit_sound",
-          "qualified_name_hint": "Becoming.Hexagram.onOrbit_sound",
-          "line": 1236
-        },
-        {
-          "kind": "theorem",
-          "name": "onOrbit_all",
-          "qualified_name_hint": "Becoming.Hexagram.onOrbit_all",
-          "line": 1245
-        },
-        {
-          "kind": "theorem",
-          "name": "on_an_orbit",
-          "qualified_name_hint": "Becoming.Hexagram.on_an_orbit",
-          "line": 1252
-        },
-        {
-          "kind": "theorem",
-          "name": "starts_return",
-          "qualified_name_hint": "Becoming.Hexagram.starts_return",
-          "line": 1258
-        },
-        {
-          "kind": "def",
-          "name": "indexIn",
-          "qualified_name_hint": "Becoming.Hexagram.indexIn",
-          "line": 1276
-        },
-        {
-          "kind": "def",
-          "name": "orbitIndex",
-          "qualified_name_hint": "Becoming.Hexagram.orbitIndex",
-          "line": 1283
-        },
-        {
-          "kind": "theorem",
-          "name": "orbitIndex_waxWane",
-          "qualified_name_hint": "Becoming.Hexagram.orbitIndex_waxWane",
-          "line": 1286
-        },
-        {
-          "kind": "theorem",
-          "name": "orbitIndex_lumped",
-          "qualified_name_hint": "Becoming.Hexagram.orbitIndex_lumped",
-          "line": 1292
-        },
-        {
-          "kind": "theorem",
-          "name": "orbitIndex_goAlike",
-          "qualified_name_hint": "Becoming.Hexagram.orbitIndex_goAlike",
-          "line": 1296
-        },
-        {
-          "kind": "theorem",
-          "name": "orbitIndex_invariant",
-          "qualified_name_hint": "Becoming.Hexagram.orbitIndex_invariant",
-          "line": 1299
-        },
-        {
-          "kind": "theorem",
-          "name": "reach_keeps_orbit",
-          "qualified_name_hint": "Becoming.Hexagram.reach_keeps_orbit",
-          "line": 1304
-        },
-        {
-          "kind": "theorem",
-          "name": "orbit_census",
-          "qualified_name_hint": "Becoming.Hexagram.orbit_census",
-          "line": 1311
-        }
-      ],
-      "declaration_counts": {
-        "def": 54,
-        "inductive": 2,
-        "structure": 1,
-        "theorem": 129
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
     "e654e58cc8f95725d95cbb6e8bee28086a3eeb08e4826473051da2a7298ca54f": {
       "byte_size": 10103,
       "line_count": 233,
@@ -325163,6 +325135,69 @@
         "def": 5,
         "inductive": 1,
         "theorem": 4
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "e7be17eed364692540331b001cef8ff9834c5e9e9e29e73461eba891037cbb9e": {
+      "byte_size": 3403,
+      "line_count": 74,
+      "imports": [
+        "Becoming.Commuting",
+        "Becoming.Hexagrams"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "complement_moves",
+          "qualified_name_hint": "Becoming.Hexagram.complement_moves",
+          "line": 35
+        },
+        {
+          "kind": "theorem",
+          "name": "waxWane_apart",
+          "qualified_name_hint": "Becoming.Hexagram.waxWane_apart",
+          "line": 39
+        },
+        {
+          "kind": "theorem",
+          "name": "waxWane_halfway",
+          "qualified_name_hint": "Becoming.Hexagram.waxWane_halfway",
+          "line": 44
+        },
+        {
+          "kind": "theorem",
+          "name": "wane_breaks",
+          "qualified_name_hint": "Becoming.Hexagram.wane_breaks",
+          "line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "flip_complement",
+          "qualified_name_hint": "Becoming.Hexagram.flip_complement",
+          "line": 55
+        },
+        {
+          "kind": "theorem",
+          "name": "changes_symmetric",
+          "qualified_name_hint": "Becoming.Hexagram.changes_symmetric",
+          "line": 64
+        },
+        {
+          "kind": "theorem",
+          "name": "changes_mirror_apart",
+          "qualified_name_hint": "Becoming.Hexagram.changes_mirror_apart",
+          "line": 68
+        }
+      ],
+      "declaration_counts": {
+        "theorem": 7
       },
       "textual_markers": {
         "sorry": [],

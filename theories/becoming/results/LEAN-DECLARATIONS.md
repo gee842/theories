@@ -12,7 +12,8 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 281 | 11,475 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 269 | 10,728 |
+| [Becoming instances and applications](lean-declarations/becoming-ring.md) | 13 | 747 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
 | [Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 71 | 1,864 |
@@ -203,7 +204,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [CourseRoles.lean](lean-declarations/becoming-core.md#module-7224645ec593) | Becoming pure core |
 | [CourseWorlds.lean](lean-declarations/becoming-core.md#module-51a97aa7e1ca) | Becoming pure core |
 | [Courses.lean](lean-declarations/becoming-core.md#module-031f22d71259) | Becoming pure core |
-| [Coverage.lean](lean-declarations/becoming-core.md#module-94b92804d399) | Becoming pure core |
+| [Coverage.lean](lean-declarations/becoming-ring.md#module-94b92804d399) | Becoming instances and applications |
 | [CoverageBoundary.lean](lean-declarations/abstraction.md#module-83c27fd36c83) | Abstraction, applicability and constitution |
 | [CoverageBoundary.lean](lean-declarations/abstraction.md#module-e839ddaa98f9) | Abstraction, applicability and constitution |
 | [CrossSituational.lean](lean-declarations/becoming-core.md#module-03b040af0e79) | Becoming pure core |
@@ -229,7 +230,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [DiagnosticTracking.lean](lean-declarations/learning.md#module-000cb4a6ef8b) | Learning, prediction and dynamics |
 | [Diagonal.lean](lean-declarations/becoming-core.md#module-496b9c39d6e2) | Becoming pure core |
 | [Direction.lean](lean-declarations/becoming-core.md#module-0609adcd317a) | Becoming pure core |
-| [Dispatch.lean](lean-declarations/becoming-core.md#module-6ec3e0664f2f) | Becoming pure core |
+| [Dispatch.lean](lean-declarations/becoming-ring.md#module-6ec3e0664f2f) | Becoming instances and applications |
 | [Dissipation.lean](lean-declarations/becoming-core.md#module-adfdfa242506) | Becoming pure core |
 | [Distinguishing.lean](lean-declarations/becoming-core.md#module-f12a895479c7) | Becoming pure core |
 | [DriftMargins.lean](lean-declarations/ethics.md#module-3d946731f17f) | Normative grounding and generative direction |
@@ -402,13 +403,14 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [GroundRelationTransport.lean](lean-declarations/core.md#module-e5e3937cc286) | Generative core and relational structure |
 | [GroundingContract.lean](lean-declarations/concern.md#module-618302908b9f) | Concern and shared activity |
 | [GrownFragmentation.lean](lean-declarations/ethics.md#module-93d3383fc37b) | Normative grounding and generative direction |
-| [GuardHorizon.lean](lean-declarations/becoming-core.md#module-de2c4a4581b2) | Becoming pure core |
+| [GuardHorizon.lean](lean-declarations/becoming-ring.md#module-de2c4a4581b2) | Becoming instances and applications |
 | [Handoff.lean](lean-declarations/becoming-core.md#module-96dbcca36f4a) | Becoming pure core |
-| [HexagramLaws.lean](lean-declarations/becoming-core.md#module-ae9481400f7c) | Becoming pure core |
-| [HexagramPlaces.lean](lean-declarations/becoming-core.md#module-50edc7c0a315) | Becoming pure core |
-| [HexagramSequences.lean](lean-declarations/becoming-core.md#module-148be09ee66c) | Becoming pure core |
-| [HexagramSites.lean](lean-declarations/becoming-core.md#module-90fb1b4b934c) | Becoming pure core |
-| [Hexagrams.lean](lean-declarations/becoming-core.md#module-51d79d79834a) | Becoming pure core |
+| [HexagramCommuting.lean](lean-declarations/becoming-ring.md#module-20b1a3f4f3b4) | Becoming instances and applications |
+| [HexagramLaws.lean](lean-declarations/becoming-ring.md#module-ae9481400f7c) | Becoming instances and applications |
+| [HexagramPlaces.lean](lean-declarations/becoming-ring.md#module-50edc7c0a315) | Becoming instances and applications |
+| [HexagramSequences.lean](lean-declarations/becoming-ring.md#module-148be09ee66c) | Becoming instances and applications |
+| [HexagramSites.lean](lean-declarations/becoming-ring.md#module-90fb1b4b934c) | Becoming instances and applications |
+| [Hexagrams.lean](lean-declarations/becoming-ring.md#module-51d79d79834a) | Becoming instances and applications |
 | [HistoricalBinding.lean](lean-declarations/inquiry.md#module-b3efe142595e) | Attainable inquiry, contact and process laws |
 | [Histories.lean](lean-declarations/becoming-core.md#module-41f2b00bb90e) | Becoming pure core |
 | [HistoryIdeals.lean](lean-declarations/becoming-core.md#module-53b317abd0cf) | Becoming pure core |
@@ -593,7 +595,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PhasePeriodSelection.lean](lean-declarations/inquiry.md#module-96e1d00a32d0) | Attainable inquiry, contact and process laws |
 | [PhasePeriodUniversal.lean](lean-declarations/inquiry.md#module-669a6ea433f9) | Attainable inquiry, contact and process laws |
 | [PhaseRecoveredContact.lean](lean-declarations/inquiry.md#module-b51b3a4c7541) | Attainable inquiry, contact and process laws |
-| [PlaceTransitionNets.lean](lean-declarations/becoming-core.md#module-5e2e120f84b5) | Becoming pure core |
+| [PlaceTransitionNets.lean](lean-declarations/becoming-ring.md#module-5e2e120f84b5) | Becoming instances and applications |
 | [PlasticityPreparation.lean](lean-declarations/shared.md#module-c527ff17c751) | Organizational formation through revisable evaluation |
 | [PlasticityWitness.lean](lean-declarations/shared.md#module-ac933f076498) | Organizational formation through revisable evaluation |
 | [PluralRecords.lean](lean-declarations/abstraction.md#module-2a54e07465df) | Abstraction, applicability and constitution |
@@ -744,7 +746,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ResourceContinuation.lean](lean-declarations/renewal.md#module-b17cc0c41017) | Support and renewal |
 | [Response.lean](lean-declarations/becoming-core.md#module-0593e63d16b3) | Becoming pure core |
 | [ResponseCapacity.lean](lean-declarations/other.md#module-fcd53f73ee36) | Other formal studies |
-| [ResponseLearning.lean](lean-declarations/becoming-core.md#module-4cc32d433d1b) | Becoming pure core |
+| [ResponseLearning.lean](lean-declarations/becoming-ring.md#module-4cc32d433d1b) | Becoming instances and applications |
 | [Restoration.lean](lean-declarations/becoming-core.md#module-2536b93501d1) | Becoming pure core |
 | [Retaining.lean](lean-declarations/becoming-core.md#module-0481ded024d8) | Becoming pure core |
 | [Retention.lean](lean-declarations/shared.md#module-4ab19d4a2066) | Organizational formation through revisable evaluation |
@@ -777,11 +779,11 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ScaleRevision.lean](lean-declarations/learning.md#module-dea38234acec) | Learning, prediction and dynamics |
 | [ScientificCompatibility.lean](lean-declarations/inquiry.md#module-6fa299ebe0e7) | Attainable inquiry, contact and process laws |
 | [ScientificInquiryNecessity.lean](lean-declarations/inquiry.md#module-a906d342f4df) | Attainable inquiry, contact and process laws |
-| [ScopedReach.lean](lean-declarations/becoming-core.md#module-9d70361ccdb8) | Becoming pure core |
+| [ScopedReach.lean](lean-declarations/becoming-ring.md#module-9d70361ccdb8) | Becoming instances and applications |
 | [ScoreRepresentation.lean](lean-declarations/becoming-core.md#module-1ee6f07c7407) | Becoming pure core |
 | [SecondOrder.lean](lean-declarations/abstraction.md#module-438373a5bced) | Abstraction, applicability and constitution |
 | [SecuredContent.lean](lean-declarations/becoming-core.md#module-b5264900f26d) | Becoming pure core |
-| [SeedReach.lean](lean-declarations/becoming-core.md#module-25b9446099f2) | Becoming pure core |
+| [SeedReach.lean](lean-declarations/becoming-ring.md#module-25b9446099f2) | Becoming instances and applications |
 | [SeededContinuation.lean](lean-declarations/learning.md#module-37af2e7fffc1) | Learning, prediction and dynamics |
 | [Seeking.lean](lean-declarations/becoming-core.md#module-543aeee61b83) | Becoming pure core |
 | [SeekingRuns.lean](lean-declarations/becoming-core.md#module-6d45c97c270f) | Becoming pure core |

@@ -11,6 +11,7 @@
 | 环 | 内容 | 约束 |
 |---|---|---|
 | 核心 | 基础 `GenerativeCore`、`InquirySufficiency`、`RelationalRenewal`，加包内三层 | 只导入自身；每条源声明公理报告为空（Lean 为带字段的构造子生成的单射引理 `injEq` 依赖 `propext`，没有源声明使用它们，检查器逐一列出）；只用 Lean 内置前导即可编译 |
+| 实例与应用 | 实例在一个具名载体上读核心的一般规律：《周易》（`Becoming.Hexagrams`、`HexagramPlaces`、`HexagramCommuting`、`HexagramLaws`、`HexagramSites`、`HexagramSequences`）与 `Becoming.PlaceTransitionNets`。应用是核心无一导入的叶子：`Becoming.Dispatch`、`GuardHorizon`、`ResponseLearning`、`Coverage`、`SeedReach`、`ScopedReach`（检查器的 `INSTANCES`、`APPLICATIONS`，R35b） | 与核心同样的条件（只导入核心与本环，公理报告为空，只用前导即可编译）；按方向在核心之外：除根 `Becoming` 外没有核心模块导入本环的模块，没有实例导入应用，检查器断言之 |
 | （桥接） | 自 F3 清扫（2026-10-19）起没有桥接：桥接与接合模块连同字节移入 [`../history/becoming/`](../history/becoming/) | 核心陈述它们所读外围模块的内容；这些模块被取代（检查器的 `SUPERSEDED`），不在运行中 |
 | 外围 | 既有伦理与动力学模块、Mathlib 叶子及其桥接 [`CorrectionInquiry`](../universal-ethics/generative-capacity/CorrectionInquiry.lean)、[`LearningCorrespondence`](../universal-ethics/evolution-connectionism/LearningCorrespondence.lean)、Python 实验 | 可用任何合适的工具；依存方向指向核心 |
 

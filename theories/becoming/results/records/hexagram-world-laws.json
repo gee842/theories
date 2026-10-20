@@ -730,7 +730,7 @@
         "Becoming.Hexagram.waxWane_not_reach_every",
         "Becoming.Hexagram.zhun"
       ],
-      "sha256": "e642ea1f30f4b32e49c0952abb0474eca538429d18ed020cf11b85b205771017"
+      "sha256": "b0ad4a1da14f1ec92eac4bc59e174efb9e03fc9f34c6a0b9767ba031317a1c9a"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T103817.145646Z/verification.json",
@@ -858,10 +858,17 @@
       "declarations": [
         "Becoming.Law.Commutes",
         "Becoming.Law.Commutes.iterate",
-        "Becoming.Law.Commutes.apart",
-        "Becoming.Hexagram.complement_moves"
+        "Becoming.Law.Commutes.apart"
       ],
-      "sha256": "c16574db68309b48d70f9a755d4e02892541d8b90a238bd4b7d1d590bf8694fe"
+      "sha256": "e0bc05ed9f0bf8c8cda52bb608afc4dedf7593c785c082efc46ec5657c58df65"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramCommuting.lean",
+      "role": "proof",
+      "sha256": "e7be17eed364692540331b001cef8ff9834c5e9e9e29e73461eba891037cbb9e",
+      "declarations": [
+        "Becoming.Hexagram.complement_moves"
+      ]
     },
     {
       "path": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
@@ -903,7 +910,7 @@
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1"
+      "sha256": "ff2e8cd2c081c33714f1999d813c7719b4e9aadc26b269f740607b25772f6bfd"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -958,12 +965,18 @@
       "role": "receipt",
       "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T045544.667431Z/verification.json",
+      "role": "receipt",
+      "sha256": "e77f2abe64ec3eea8b341433a870322a6b0b1054dfc651f1118c9f9a863a352c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T045544.667431Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.HexagramLaws",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1026,7 +1039,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T045544.667431Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Commuting",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1049,6 +1062,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Laws.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Laws",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramCommuting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T045544.667431Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.HexagramCommuting",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1081,6 +1101,10 @@
     {
       "en": "2026-10-20: 16 bookkeeping notes condensed from 19 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/c5b0d91698de2622/hexagram-world-laws.json and in git.",
       "zh": "2026-10-20：16 条记账性说明合并（19 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/c5b0d91698de2622/hexagram-world-laws.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R35b (the instance and applications ring: the Changes and place/transition nets as instances, six leaves as applications, both held to the core's conditions and outside it by direction): Moved with their full names: from Commuting.lean to HexagramCommuting.lean, Hexagram.complement_moves. Proof bindings (Commuting.lean, HexagramLaws.lean) rebound to core receipt 20261020T045544.667431Z. Re-pointed after reading the change: Commuting.lean, the namespace Hexagram section (complement_moves, waxWane_apart, waxWane_halfway, wane_breaks, flip_complement, changes_symmetric, changes_mirror_apart) moved unchanged to HexagramCommuting; no longer imports Hexagrams; the general laws unchanged; HexagramLaws.lean, imports HexagramCommuting instead of Commuting; statements unchanged; THE-THEORY-OF-BECOMING.md, section 9: the rings (instances and applications), the receipt and the counts follow R35b. The claim is unchanged.",
+      "zh": "2026年10月20日，R35b（实例与应用环：《周易》与位置/迁移网为实例，六个叶子模块为应用，二者受核心同样的条件约束，按方向在核心之外）：连同完整名称移动：从 Commuting.lean 到 HexagramCommuting.lean：Hexagram.complement_moves。证明绑定（Commuting.lean、HexagramLaws.lean）改到核心回执 20261020T045544.667431Z。读过改动后重新指向：Commuting.lean，namespace Hexagram 一节（complement_moves、waxWane_apart、waxWane_halfway、wane_breaks、flip_complement、changes_symmetric、changes_mirror_apart）原样移到 HexagramCommuting；不再导入 Hexagrams；一般规律不变；HexagramLaws.lean，改导入 HexagramCommuting 而非 Commuting；陈述不变；THE-THEORY-OF-BECOMING.md，§9：环（实例与应用）、回执与计数随 R35b。论断不变。"
     }
   ],
   "text_versions": [

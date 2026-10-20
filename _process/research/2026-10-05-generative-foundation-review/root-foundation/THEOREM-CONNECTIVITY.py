@@ -417,6 +417,13 @@ def main():
         'statements_on_both_by_module': dict(collections.Counter(
             module_of[n] for n in cls if cls[n] == CLASSES[0]).most_common()),
         'apart_by_module': {m: [k, total[m]] for m, k in apart_by_module.most_common()},
+        # The instance and applications ring (R35b): the same classes, split by the checker's rings.
+        'rings': {ring: {'modules': len(ms), 'theorems': sum(total[m] for m in ms),
+                         'apart': sum(apart_by_module[m] for m in ms),
+                         'classes': {c: sum(1 for n, v in cls.items() if v == c and module_of[n] in ms) for c in CLASSES}}
+                  for ring, ms in (('core', [m for m in cb.SPINE if m not in getattr(cb, 'RING', [])]),
+                                   ('instances', getattr(cb, 'INSTANCES', [])),
+                                   ('applications', getattr(cb, 'APPLICATIONS', [])))},
         'components': {'count': count, 'theorems_outside_the_main_component': outside},
         'periphery': {
             'modules': len(periphery), 'theorems': len(periphery_cls),

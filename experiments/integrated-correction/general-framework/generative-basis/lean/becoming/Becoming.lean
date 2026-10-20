@@ -119,6 +119,7 @@ import Becoming.JointKeeping
 import Becoming.Undecided
 import Becoming.Junctures
 import Becoming.Commuting
+import Becoming.HexagramCommuting
 import Becoming.Tolerance
 import Becoming.Revision
 import Becoming.Contacts
@@ -1391,8 +1392,11 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   and returns come in pairs; under an exchange a course holding a pair holds it halfway round a
   return; the law goes alike across the pairs; `Diagonal.revision_never_rests` is the case of a
   map commuting with itself. Symmetric processes carry reach, returning and junctures, and each
-  run has a mirror run never at the same configuration. In the Changes, waxing and waning never
-  merges a hexagram with its complement, and the waning into 坤 breaks the symmetry.
+  run has a mirror run never at the same configuration.
+* `Becoming.HexagramCommuting` (L1, instance ring): the Changes as an instance of a commuting law. Waxing
+  and waning never merges a hexagram with its complement, its six steps to the complement are the
+  pair halfway round a return of twelve, the waning into 坤 breaks the symmetry, and every course of
+  changes has a complementary course.
 * `Becoming.Contacts` (L1): registration through addressed contacts. Registration by agreement
   on data selects a value exactly where its address is in the data, and a change of data keeps
   every old selection exactly where it keeps the old data. A revision rule registers every

@@ -82,13 +82,20 @@ CORE = ["Becoming.Prelude", "Becoming.World", "Becoming.Frame", "Becoming.Laws",
         "Becoming.Regions", "Becoming.Retaining", "Becoming.Clearing", "Becoming.Extension",
         "Becoming.Metaethics", "Becoming.Lifting", "Becoming.Ranking", "Becoming.ActiveReading", "Becoming.LossMatching", "Becoming.StrictTransport", "Becoming.MatchedCourses",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints", "Becoming.ListingRefutations",
-        "Becoming.Significance", "Becoming.ValuationFrames", "Becoming.RelativePosition", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback", "Becoming.BoundedSignificance", "Becoming.Cuts", "Becoming.EdgeClosure", "Becoming.SeedReach", "Becoming.ScopedReach",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.SelectionGap", "Becoming.SelectionReach", "Becoming.SelectionPool", "Becoming.PoolResponse", "Becoming.Rejoining", "Becoming.Learning", "Becoming.Hexagrams", "Becoming.HexagramPlaces", "Becoming.HexagramLaws", "Becoming.HexagramSites", "Becoming.HexagramSequences", "Becoming.Withholding", "Becoming.LoopReturn", "Becoming.Pace", "Becoming.RuleCapture", "Becoming.PatternPassing", "Becoming.JointKeeping", "Becoming.Undecided", "Becoming.Junctures", "Becoming.Commuting", "Becoming.Tolerance", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.AssurancePlans", "Becoming.Integers", "Becoming.Segmentation", "Becoming.Readout", "Becoming.SummaryFutures", "Becoming.Dephasing", "Becoming.ProjectedLaws", "Becoming.JointPhase", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Ideals", "Becoming.ContingentPlans", "Becoming.Actuation", "Becoming.TreeSearch", "Becoming.Dispatch", "Becoming.FaultEnvelopes", "Becoming.Transactions", "Becoming.Reconfiguration", "Becoming.PooledEnvelopes", "Becoming.WitnessRefinement", "Becoming.WitnessRefinementRuns", "Becoming.ChanceFloors", "Becoming.IntegerOrder", "Becoming.Acceptance", "Becoming.GuardHorizon", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.SharedCodes", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.JointPlans", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.HistoryLanguages", "Becoming.HistoryIdeals", "Becoming.HistoryIdealsTraces", "Becoming.Verification", "Becoming.Coverage", "Becoming.Presentations", "Becoming.Carriers", "Becoming.BranchingCorrespondence", "Becoming.JointCorrespondence", "Becoming.ListFootprints", "Becoming.Fragments", "Becoming.LocalUnits", "Becoming.JoiningContexts", "Becoming.JoiningCodes", "Becoming.JoiningRoles", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.PlaceTransitionNets", "Becoming.ExchangePremises", "Becoming.Readings", "Becoming.MoveFormation", "Becoming.Sensitivity", "Becoming.Tail", "Becoming.Courses", "Becoming.Parting", "Becoming.Onward", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Regulation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.LevelCoupling", "Becoming.Interleavings", "Becoming.CensusCounts", "Becoming.CensusBinding", "Becoming.Frequency", "Becoming.MutualDependence", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming.Lexical", "Becoming.Frontier", "Becoming.FrontierFrames", "Becoming.FrontierWorlds", "Becoming.Direction", "Becoming.ScoreRepresentation", "Becoming.Alternatives", "Becoming.Bundles", "Becoming.ActivationCapacity", "Becoming.Narrowing", "Becoming.NarrowingRuns", "Becoming.SecuredContent", "Becoming.ProfileReach", "Becoming.RenewalBound", "Becoming.Handoff", "Becoming.RuleHandoff", "Becoming.Runs", "Becoming.CourseWorlds", "Becoming.LearnableRuns", "Becoming.PartialReadout", "Becoming.CodeAcquisition", "Becoming.RouteFormation", "Becoming.ResponseLearning", "Becoming.LearnedGrouping", "Becoming.Unrolling", "Becoming.Labels", "Becoming.ParityReadings", "Becoming.FinerTraces", "Becoming.HistorySums", "Becoming.FormedLoops", "Becoming.AttractionRuns", "Becoming.ContactCourses", "Becoming.ContextualRuns", "Becoming.ContinuingRuns", "Becoming.CopyCourses", "Becoming.CounterfactualRuns", "Becoming.CouplingTraces", "Becoming.CourseRoles", "Becoming.HorizonWebs", "Becoming.IdentificationRuns", "Becoming.LastingRuns", "Becoming.LearningRuns", "Becoming.ListedWebs", "Becoming.ReferencePlanTraces", "Becoming.RouteTraces", "Becoming.SeekingRuns", "Becoming.Enough", "Becoming.Settling", "Becoming.LastChange", "Becoming.LimitVerification", "Becoming.SelectionRuns", "Becoming.SensitivityWebs", "Becoming.SituationTraces", "Becoming.StrengthFlows", "Becoming.TypicalRuns", "Becoming.WeightedTraces", "Becoming"]
+        "Becoming.Significance", "Becoming.ValuationFrames", "Becoming.RelativePosition", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback", "Becoming.BoundedSignificance", "Becoming.Cuts", "Becoming.EdgeClosure", "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.SelectionGap", "Becoming.SelectionReach", "Becoming.SelectionPool", "Becoming.PoolResponse", "Becoming.Rejoining", "Becoming.Learning", "Becoming.Withholding", "Becoming.LoopReturn", "Becoming.Pace", "Becoming.RuleCapture", "Becoming.PatternPassing", "Becoming.JointKeeping", "Becoming.Undecided", "Becoming.Junctures", "Becoming.Commuting", "Becoming.Tolerance", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.AssurancePlans", "Becoming.Integers", "Becoming.Segmentation", "Becoming.Readout", "Becoming.SummaryFutures", "Becoming.Dephasing", "Becoming.ProjectedLaws", "Becoming.JointPhase", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Ideals", "Becoming.ContingentPlans", "Becoming.Actuation", "Becoming.TreeSearch", "Becoming.FaultEnvelopes", "Becoming.Transactions", "Becoming.Reconfiguration", "Becoming.PooledEnvelopes", "Becoming.WitnessRefinement", "Becoming.WitnessRefinementRuns", "Becoming.ChanceFloors", "Becoming.IntegerOrder", "Becoming.Acceptance", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.SharedCodes", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.JointPlans", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.HistoryLanguages", "Becoming.HistoryIdeals", "Becoming.HistoryIdealsTraces", "Becoming.Verification", "Becoming.Presentations", "Becoming.Carriers", "Becoming.BranchingCorrespondence", "Becoming.JointCorrespondence", "Becoming.ListFootprints", "Becoming.Fragments", "Becoming.LocalUnits", "Becoming.JoiningContexts", "Becoming.JoiningCodes", "Becoming.JoiningRoles", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.ExchangePremises", "Becoming.Readings", "Becoming.MoveFormation", "Becoming.Sensitivity", "Becoming.Tail", "Becoming.Courses", "Becoming.Parting", "Becoming.Onward", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Regulation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.LevelCoupling", "Becoming.Interleavings", "Becoming.CensusCounts", "Becoming.CensusBinding", "Becoming.Frequency", "Becoming.MutualDependence", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming.Lexical", "Becoming.Frontier", "Becoming.FrontierFrames", "Becoming.FrontierWorlds", "Becoming.Direction", "Becoming.ScoreRepresentation", "Becoming.Alternatives", "Becoming.Bundles", "Becoming.ActivationCapacity", "Becoming.Narrowing", "Becoming.NarrowingRuns", "Becoming.SecuredContent", "Becoming.ProfileReach", "Becoming.RenewalBound", "Becoming.Handoff", "Becoming.RuleHandoff", "Becoming.Runs", "Becoming.CourseWorlds", "Becoming.LearnableRuns", "Becoming.PartialReadout", "Becoming.CodeAcquisition", "Becoming.RouteFormation", "Becoming.LearnedGrouping", "Becoming.Unrolling", "Becoming.Labels", "Becoming.ParityReadings", "Becoming.FinerTraces", "Becoming.HistorySums", "Becoming.FormedLoops", "Becoming.AttractionRuns", "Becoming.ContactCourses", "Becoming.ContextualRuns", "Becoming.ContinuingRuns", "Becoming.CopyCourses", "Becoming.CounterfactualRuns", "Becoming.CouplingTraces", "Becoming.CourseRoles", "Becoming.HorizonWebs", "Becoming.IdentificationRuns", "Becoming.LastingRuns", "Becoming.LearningRuns", "Becoming.ListedWebs", "Becoming.ReferencePlanTraces", "Becoming.RouteTraces", "Becoming.SeekingRuns", "Becoming.Enough", "Becoming.Settling", "Becoming.LastChange", "Becoming.LimitVerification", "Becoming.SelectionRuns", "Becoming.SensitivityWebs", "Becoming.SituationTraces", "Becoming.StrengthFlows", "Becoming.TypicalRuns", "Becoming.WeightedTraces", "Becoming"]
+# The instance and applications ring (R35b, 20 October 2026). Instances read general laws of the core
+# on one named carrier (the Changes, place/transition nets); applications are leaves nothing in the
+# core imports. Both are held to the core's conditions (prelude only, empty axiom reports) and sit
+# outside it by direction: no core module but the root `Becoming` imports a ring module, and no
+# instance imports an application (`ring_direction`).
+INSTANCES = ["Becoming.Hexagrams", "Becoming.HexagramPlaces", "Becoming.HexagramCommuting", "Becoming.HexagramLaws", "Becoming.HexagramSites", "Becoming.HexagramSequences", "Becoming.PlaceTransitionNets"]
+APPLICATIONS = ["Becoming.Dispatch", "Becoming.GuardHorizon", "Becoming.ResponseLearning", "Becoming.Coverage", "Becoming.SeedReach", "Becoming.ScopedReach"]
+RING = INSTANCES + APPLICATIONS
 # The bridge: emptied by the F3 sweep (19 October 2026). Every bridge and pure join module is in
 # lean/history/becoming/Becoming/ with its bytes, checked by the receipts before the sweep; the core
 # states the content of the periphery modules they read (SUPERSEDED).
 BRIDGE = []
-SPINE = CORE + BRIDGE
+SPINE = CORE + RING + BRIDGE
 # Periphery joins (U2, 17 October 2026): modules stating periphery theorems' laws of the base through
 # periphery roots whose own axiom reports are not empty. Emptied by the F3 sweep (19 October 2026)
 # with the bridge; each declaration of a join, were one added, may carry only axioms it inherits.
@@ -175,11 +182,17 @@ SUPERSEDED = {
     "WholeGroundCoverage": ["Becoming.ScopedReach", "Becoming.SeedReach"],
     "WisdomResponseStructure": ["Becoming.AssurancePlans"],
 }
-PURE = FOUNDATION + CORE
+PURE = FOUNDATION + CORE + RING
 RECEIPT = HERE / "becoming-verification.json"
 RETAINED = HERE / "becoming-checks"
 
 SCOPE = (
+    "Rings: the core, and around it the instances (the Changes: Hexagrams, HexagramPlaces, "
+    "HexagramCommuting, HexagramLaws, HexagramSites, HexagramSequences; PlaceTransitionNets) and the "
+    "applications nothing in the core imports (Dispatch, GuardHorizon, ResponseLearning, Coverage, "
+    "SeedReach, ScopedReach), held to the core's conditions (prelude only, empty axiom reports) and "
+    "outside it by direction: no core module but the root imports a ring module, and no instance "
+    "imports an application. "
     "World: one base, the run. The import tree starts at the foundation and Becoming.Frame (processes "
     "and their runs); the records of the one unfolding, Becoming.World, import the frame: Dependence, "
     "Web (Dependence Nat), Flow, Exchange and total over Nat and Prop, and World, one kind of relatum "
@@ -2325,6 +2338,18 @@ def imports_of(data):
     return [m.strip() for m in re.findall(r"^import\s+(.+)$", code, re.M) if m.strip() != "Std"]
 
 
+def ring_direction(index):
+    """Imports that cross the ring the wrong way: a core module (the root aside) importing a ring
+    module, or an instance importing an application."""
+    wrong = []
+    for name in CORE + INSTANCES:
+        if name == "Becoming":
+            continue
+        outside = RING if name in CORE else APPLICATIONS
+        wrong += [(name, d) for d in imports_of(index[name][0].read_bytes()) if d in outside]
+    return wrong
+
+
 def closure(index, roots=CHECKED):
     order, seen = [], set()
 
@@ -2732,6 +2757,7 @@ def main():
         "retained_run": shown(retained),
         "spine_modules": SPINE,
         "core_modules": CORE, "foundation_modules": FOUNDATION, "bridge_modules": BRIDGE,
+        "instance_modules": INSTANCES, "application_modules": APPLICATIONS,
         "periphery_join_modules": PERIPHERY_JOINS,
         "core_closure": core_closure,
         "compile_order": order,
@@ -2747,11 +2773,13 @@ def main():
     steps = receipt["lean_steps"] = {"cache": str(CACHE), "fresh": FRESH, "ran": [], "reused": {}, "keys": {}}
     try:
         assert sorted(core_closure) == sorted(PURE), ("core imports outside the core", core_closure)
+        assert not set(CORE) & set(RING) and len(set(RING)) == len(RING), ("ring lists overlap", sorted(set(CORE) & set(RING)))
+        assert not ring_direction(index), ("import against the ring's direction", ring_direction(index))
         # A superseded module stays out of the run, and the core modules said to state it are core.
         assert not set(SUPERSEDED) & set(order), ("superseded module in the run", sorted(set(SUPERSEDED) & set(order)))
         for name, stated_by in SUPERSEDED.items():
             assert len(index.get(name, [])) == 1, ("superseded module not found once", name)
-            assert stated_by and all(m in CORE + FOUNDATION for m in stated_by), ("superseded module not stated by the core", name, stated_by)
+            assert stated_by and all(m in PURE for m in stated_by), ("superseded module not stated by the core", name, stated_by)
         receipt["superseded_modules"] = {
             name: {"source_path": str(index[name][0].relative_to(LEAN_ROOT)),
                    "source_sha256": audit_support.digest(index[name][0].read_bytes()),
@@ -2898,6 +2926,7 @@ def main():
                 records.append({
                     "module": name, "spine": name in SPINE,
                     "layer": ("foundation" if name in FOUNDATION else "core" if name in CORE
+                              else "instance" if name in INSTANCES else "application" if name in APPLICATIONS
                               else "bridge" if name in BRIDGE
                               else "periphery join" if name in PERIPHERY_JOINS else "inherited"),
                     "theorems": sum(x["kind"] == "theorem" for x in registry[name]),
@@ -2953,7 +2982,7 @@ def main():
     print(json.dumps({
         "status": receipt["status"],
         "core_closure": core_closure,
-        "core_axioms": sorted({a for r in records if r["layer"] in ("foundation", "core")
+        "core_axioms": sorted({a for r in records if r["layer"] in ("foundation", "core", "instance", "application")
                                for aa in r["axiom_dependencies"].values() for a in aa}),
         "spine_theorems": {r["module"]: r["theorems"] for r in spine},
         "spine_declaration_audits": sum(len(r["declarations"]) for r in spine),

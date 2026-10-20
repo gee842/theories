@@ -1,5 +1,5 @@
 import Becoming.HexagramPlaces
-import Becoming.Commuting
+import Becoming.HexagramCommuting
 
 /-!
 # Hexagram laws: the nuclear law, orbits, turning lines, symmetries, the counter

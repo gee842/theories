@@ -42,6 +42,7 @@ ROLE_LABELS = {
 CANONICAL = "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
 GROUPS = {
     "becoming-core": ("Becoming pure core", CANONICAL + "#9-形式脊柱--the-formal-spine", "The spine modules the core receipt lists in its core and foundation layers: they import nothing outside the core, every source declaration has an empty axiom report, and they compile from Lean's prelude."),
+    "becoming-ring": ("Becoming instances and applications", CANONICAL + "#9-形式脊柱--the-formal-spine", "The spine modules the core receipt lists in its instance and application layers: held to the core's conditions (prelude only, empty axiom reports), imported by no core module but the root; instances read general laws on one carrier (the Changes, place/transition nets), applications are leaves."),
     "ethics": ("Normative grounding and generative direction", CANONICAL + "#6-universal-metaethical-core--普遍元伦理核心", "Tests explicit inference, coverage and generative conditions; ethical warrant remains a substantive question."),
     "valuation": ("Valuation development and liangzhi", "theories/becoming/chapters/LIANGZHI-EVOLUTION.md", "Connects formation, retention, revision and action, preserving error, failure and transmission conditions."),
     "inquiry": ("Attainable inquiry, contact and process laws", "theories/becoming/chapters/GENERATIVE-CORE-LEAN.md", "Connects reachable paths, evidence acquisition and continuation while exposing apparatus and law premises."),
@@ -66,10 +67,11 @@ FORMER = {
     "other": "其他形式研究 / Other formal studies",
 }
 # The Becoming core receipt (check_becoming.py writes it); its `modules[].layer` and
-# `source_paths` (relative to the Lean root, the receipt's grandparent) decide the two
+# `source_paths` (relative to the Lean root, the receipt's grandparent) decide the three
 # Becoming groups. The config key `lean_receipt` overrides the path.
 LEAN_RECEIPT = "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json"
-RECEIPT_GROUPS = {"core": "becoming-core", "foundation": "becoming-core"}
+RECEIPT_GROUPS = {"core": "becoming-core", "foundation": "becoming-core",
+                  "instance": "becoming-ring", "application": "becoming-ring"}
 
 
 CHAPTERS = "theories/becoming/chapters/"

@@ -853,17 +853,19 @@
 <a id="9-形式脊柱--the-formal-spine"></a>
 ## 9. 形式脊柱
 
-所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 258 个，L2（源码指名条件或估值者）16 个。
+所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 246 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）16 个。
 
-**当前回执**是运行 [`20261020T005554.047169Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查；R35 与本次改组没有改变 Lean。
+**当前回执**是运行 [`20261020T045544.667431Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T045544.667431Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 228 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#228-the-instance-and-applications-ring-r35b)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 278 个模块，11,401 条定理 |
+| 核心模块（含根 `Becoming`） | 266 个模块，10,654 条定理 |
+| 实例模块 | 7 个模块，568 条定理 |
+| 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 核心闭包 | 281 个模块，11,475 条定理 |
+| 闭包（核心、环与根基） | 282 个模块，11,475 条定理 |
 | 审计的脊柱声明 | 15,713 |
-| 在 `propext` 上的生成的 `injEq` 引理 | 核心闭包中 188 条 |
+| 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 188 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 
 <a id="complete-episode-comparison-anchors"></a>
