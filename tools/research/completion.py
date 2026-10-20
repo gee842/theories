@@ -6,8 +6,10 @@ measure, the records and chapter section 8.1, and reports each criterion met or 
 
   K1 coverage        each row names central declarations that exist in the receipt's core, are theorems or
                      definitions of the spine, are not apart (connectivity class), and records that exist
-  K2 unity           every central theorem is in the main dependency component and its statement is on a base
-                     family; `families_reach_each_other` holds in every direction
+  K2 unity           every central theorem is in the main dependency component, and its statement is on a base
+                     family (or through its own module's definitions), or it is a general law with a named
+                     base-family instance whose proof reaches it; the World family reaches the Process family by
+                     definition and every other direction of `families_reach_each_other` has a named construction
   K3 premises        every premise a central statement uses has witnesses meeting and failing it, and they exist;
                      a logical premise (decidedness), which no world can be shown to fail, has instead a witness
                      meeting it, the proof that it is never refuted, and a calibration by an omniscience principle
@@ -108,8 +110,8 @@ def _split(text: str, kind: str):
 
 def parse_module(path: Path) -> list[dict]:
     lines = _strip_comments(path.read_text(encoding='utf-8')).split('\n')
-    # stack entries: (kind, name, variable binders declared in that scope)
-    stack, decls, cur, outer = [], [], None, []
+    # stack entries: (kind, name, variable binders declared in that scope, namespaces opened in it)
+    stack, decls, cur, outer, outer_opens = [], [], None, [], []
     var = None
     for line in lines:
         s = line.strip()
@@ -120,11 +122,11 @@ def parse_module(path: Path) -> list[dict]:
         var = None
         m = re.match(r'^namespace\s+(\S+)', s)
         if m and top:
-            stack.append(('ns', m.group(1), []))
+            stack.append(('ns', m.group(1), [], []))
             continue
         m = re.match(r'^section\b\s*(\S*)', s)
         if m and top:
-            stack.append(('sec', m.group(1), []))
+            stack.append(('sec', m.group(1), [], []))
             continue
         if re.match(r'^end\b', s) and top:
             if stack:
@@ -136,12 +138,19 @@ def parse_module(path: Path) -> list[dict]:
             ns = '.'.join(x[1] for x in stack if x[0] == 'ns' and x[1])
             full = name[len('_root_.'):] if name.startswith('_root_.') else (f'{ns}.{name}' if ns and name else name or ns)
             scope = [b for x in stack for b in x[2]] + outer
-            cur = {'kind': m.group(2), 'full': full, 'text': [line], 'variables': list(scope)}
+            opens = [o for x in stack for o in x[3]] + outer_opens
+            cur = {'kind': m.group(2), 'full': full, 'text': [line], 'variables': list(scope), 'opens': opens}
             decls.append(cur)
             continue
         if top and s.startswith('variable'):
             var = (stack[-1][2] if stack else outer)
             var.append(s[len('variable'):])
+            cur = None
+            continue
+        m = re.match(r'^open\s+(.*)$', s)
+        if m and top and ' in' not in m.group(1):
+            names = [o for o in re.split(r'\s+', re.sub(r'\(.*?\)|hiding.*|renaming.*', '', m.group(1))) if re.match(r'^[A-Z][\w.]*$', o)]
+            (stack[-1][3] if stack else outer_opens).extend(names)
             cur = None
             continue
         if top and re.match(r'^(open|universe|set_option|attribute|#|import|noncomputable section|mutual|deriving)\b', s):
@@ -235,6 +244,8 @@ def validate(cov: dict, decls: dict, record_ids: set) -> list[str]:
     named = [w for p in cov['premises']['items'] for w in p['witnesses']]
     named += [w for p in cov['premises']['items'] for k in ('meets', 'unrefuted', 'calibration') for w in p.get(k, [])]
     named += [x for x in cov['ethics_chain']['steps']]
+    named += [i for row in cov['rows'] for v in row.get('instances', {}).values() for i in v]
+    named += [x for c in cov.get('unity', {}).get('constructions', []) for x in c['declarations']]
     named += [x[k] for x in cov['representation']['natural_number_laws'] for k in ('law', 'dense') if x.get(k)]
     for name in named:
         if name not in decls:
@@ -260,20 +271,39 @@ def k1(cov, decls, conn):
     return findings
 
 
+OWN_MODULE = 'statement on the base only through a law of its own module'
+
+
 def k2(cov, decls, conn):
+    """Every central declaration in the main component and either stated on a base family (directly or through
+    its own module's definitions) or a general law with a named base-family instance whose proof reaches it; the
+    World family reaching the Process family by definition, and every other direction by a named construction
+    (definitions are acyclic, so two families cannot each reach the other by definition)."""
     findings = []
     outside = set(conn.get('components', {}).get('theorems_outside_the_main_component', []))
     classes = conn.get('theorems', {})
     for row in cov['rows']:
+        instances = row.get('instances', {})
         for name in row['declarations']:
             if name in outside:
                 findings.append(f'{row["id"]}: {name} lies outside the main dependency component')
             cls = classes.get(name)
-            if cls is not None and cls not in STATEMENT_CLASSES:
-                findings.append(f'{row["id"]}: {name}: its statement is not on a base family ({cls})')
-    for direction, holds in conn.get('families_reach_each_other', {}).items():
-        if not holds:
-            findings.append(f'families_reach_each_other: {direction} is false')
+            if cls is None or cls in STATEMENT_CLASSES or cls == OWN_MODULE:
+                continue
+            good = [i for i in instances.get(name, []) if classes.get(i) in STATEMENT_CLASSES and reaches(decls, i, name)]
+            if not good:
+                findings.append(f'{row["id"]}: {name}: its statement is not on a base family ({cls}) and no base-family '
+                                'instance reaching it is listed' + (f' (listed: {", ".join(instances[name])})' if instances.get(name) else ''))
+    unity = cov.get('unity', {})
+    reach = conn.get('families_reach_each_other', {})
+    built = {c['direction']: c for c in unity.get('constructions', [])}
+    for direction, holds in reach.items():
+        if holds:
+            continue
+        if direction in unity.get('definitional', []):
+            findings.append(f'families_reach_each_other: {direction} is false, and it is asked by definition')
+        elif direction not in built:
+            findings.append(f'families_reach_each_other: {direction} is false and no construction is listed')
     return findings
 
 
@@ -332,7 +362,7 @@ def k5(cov, decls, chapter):
 
 def _references(decls):
     """Each declaration's proof references, resolved as Lean resolves names: an unqualified or qualified name
-    against the declaration's namespace and each enclosing one, dropping projections after a qualified name
+    against the declaration's namespace and each enclosing one, and in the namespaces its scope opens, dropping projections after a qualified name
     (`Foo.bar_iff.mpr`); otherwise a qualified name (field notation after a
     variable, `W.law`) by its last components where exactly one declaration ends with them."""
     by_last = collections.defaultdict(set)
@@ -340,7 +370,7 @@ def _references(decls):
         by_last[full.rsplit('.', 1)[-1]].add(full)
     ident = re.compile(r"(?<![\w.'])([A-Za-z_][\w'?]*(?:\.[A-Za-z_][\w'?]*)*)")
 
-    def resolve(tok, ns):
+    def resolve(tok, ns, opens=()):
         parts = ns.split('.') if ns else []
         comps = tok.split('.')
         # the whole name, then a qualified name with projections after it dropped (`Foo.bar_iff.mpr`)
@@ -350,6 +380,10 @@ def _references(decls):
                 cand = '.'.join(parts[:i] + [name])
                 if cand in decls:
                     return cand
+                for o in opens:
+                    cand = '.'.join(parts[:i] + [o, name])
+                    if cand in decls:
+                        return cand
         head, _, rest = tok.partition('.')
         if rest:
             hits = [f for f in by_last.get(rest.rsplit('.', 1)[-1], ()) if f.endswith('.' + rest)]
@@ -360,7 +394,8 @@ def _references(decls):
     @lru_cache(maxsize=None)
     def refs(full):
         ns = full.rsplit('.', 1)[0] if '.' in full else ''
-        out = {r for tok in ident.findall(decls[full].get('proof', '')) if (r := resolve(tok, ns))}
+        opens = tuple(decls[full].get('opens', ()))
+        out = {r for tok in ident.findall(decls[full].get('proof', '')) if (r := resolve(tok, ns, opens))}
         out.discard(full)
         return frozenset(out)
     return refs

@@ -33,11 +33,12 @@
       ]
     },
     {
-      "zh": "部分在起始之后不给差、起始之差至多 D、每步进入每个条件的强度合计至多 M 时，无论耦合时程如何，截断所失至多是 Becoming.Loops 的界；自环恰好失去这个界。",
-      "en": "With the part giving no gap after the start, starting gaps at most D and the strengths into each condition summing to at most M at each step, what a cut loses is at most the bound of Becoming.Loops, whatever the schedule of couplings; the self-loop loses exactly that bound.",
+      "zh": "部分在起始之后不给差、起始之差至多 D、每步进入每个条件的强度合计至多 M 时，无论耦合时程如何，截断所失至多是 Becoming.Loops 的界；自环恰好失去这个界。读在承载之律生成的世界上，每个条件的水平在截断所承载的加上这一界之内（carriedWorld_within_cut）。",
+      "en": "With the part giving no gap after the start, starting gaps at most D and the strengths into each condition summing to at most M at each step, what a cut loses is at most the bound of Becoming.Loops, whatever the schedule of couplings; the self-loop loses exactly that bound. Read on the world the carrying law generates, each condition's standing is within what the cut carries with that bound (carriedWorld_within_cut).",
       "declarations": [
         "Becoming.responses_le_missBound",
-        "Becoming.Loops.SelfLoop.responses_eq"
+        "Becoming.Loops.SelfLoop.responses_eq",
+        "Becoming.carriedWorld_within_cut"
       ]
     },
     {
@@ -323,7 +324,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
       "role": "proof",
-      "sha256": "665ab3fcf678fb6185171e434427f714cab81c90b5c962150d9924319bcad206",
+      "sha256": "0a0942a37d780eb598d81232ac40ced6cb232ca5fbe8a1a0ccbc562e80cabe82",
       "declarations": [
         "Becoming.Remainder.mul_pos_nat",
         "Becoming.Remainder.add_left_cancel_nat",
@@ -387,7 +388,8 @@
         "Becoming.Loops.Once.none_from_one",
         "Becoming.Loops.Once.settled",
         "Becoming.Remainder.finite_order_iff_no_loop",
-        "Becoming.gap_within_order_iff"
+        "Becoming.gap_within_order_iff",
+        "Becoming.carriedWorld_within_cut"
       ]
     },
     {
@@ -624,12 +626,18 @@
       "role": "receipt",
       "sha256": "790a8973dbabe58f9bc5f4c27d39589c8827b6fab3fe08a8d342f6ef02bca4a8",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T082411.919148Z/verification.json",
+      "role": "receipt",
+      "sha256": "16700ce917afb8c661619f7cf3516102370bea4eb545893a4a4284ed47419622",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T082411.919148Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Remainder",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -743,6 +751,10 @@
     {
       "en": "20 October 2026, R37 (lens B of the twentieth review: the witness models as instances of one library, one bisimulation theory for a family of relations, the definition twins and copies stated once): Moved with their full names: from Flow.lean to Prelude.lean, steps; from Population.lean to Prelude.lean, Distinct; from World.lean to Prelude.lean, total. Proof bindings (Flow.lean, Loops.lean, Population.lean, Prelude.lean, Propagation.lean, World.lean) rebound to core receipt 20261020T051144.879480Z. Re-pointed after reading the change: Flow.lean, Loops.lean, Population.lean, Propagation.lean, World.lean: twin definitions, witness models or copies replaced by the definition stated once, the instance of Witnesses or the kept name; kept statements unchanged; Prelude.lean: the definitions and statements stated once (Distinct, total, steps, nonzero, Copying.nth, Law.memberAt, Settling.consAct, DistinctUnder, downFrom and their laws) moved here; other statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R37（第二十次评审的 B 视角：见证模型为一个库的实例，为一族关系的一个互模拟理论，孪生定义与副本只陈述一次）：连同完整名称移动：从 Flow.lean 到 Prelude.lean：steps；从 Population.lean 到 Prelude.lean：Distinct；从 World.lean 到 Prelude.lean：total。证明绑定（Flow.lean、Loops.lean、Population.lean、Prelude.lean、Propagation.lean、World.lean）改到核心回执 20261020T051144.879480Z。读过改动后重新指向：Flow.lean、Loops.lean、Population.lean、Propagation.lean、World.lean：孪生定义、见证模型或副本由只陈述一次的定义、Witnesses 的实例或保留的名称取代；保留的陈述不变；Prelude.lean：只陈述一次的定义与陈述（Distinct、total、steps、nonzero、Copying.nth、Law.memberAt、Settling.consAct、DistinctUnder、downFrom 及其规律）移入；其他陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R43 (study section 239): the cut's bound read on the carried world (carriedWorld_within_cut), the base-family instance the completion report's unity criterion asks of responses_le_missBound.",
+      "zh": "2026年10月20日，R43（研究第239节）：截断之界读在承载世界上（carriedWorld_within_cut），即完成报告的统一判据对 responses_le_missBound 所要求的基础族实例。"
     }
   ],
   "text_versions": [

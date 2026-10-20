@@ -54,6 +54,11 @@ class ParserTests(unittest.TestCase):
         self.assertTrue(completion.reaches(self.decls, 'Becoming.Inner.deeper', 'Becoming.Web.base'))
         self.assertFalse(completion.reaches(self.decls, 'Becoming.Web.base', 'Becoming.Web.next'))
 
+    def test_references_resolve_in_opened_namespaces(self):
+        decls = {'Becoming.Other.law': {'proof': 'rfl'},
+                 'Becoming.Flow.uses': {'proof': 'law held', 'opens': ['Other']}}
+        self.assertEqual(completion._references(decls)('Becoming.Flow.uses'), frozenset({'Becoming.Other.law'}))
+
     def test_references_drop_projections_after_a_qualified_name(self):
         decls = {'Becoming.Web.base_iff': {'proof': 'Iff.rfl'},
                  'Becoming.Other.uses': {'proof': 'Web.base_iff.mpr held'}}
@@ -92,6 +97,8 @@ class RegisterTests(unittest.TestCase):
         decls = {n: {} for r in cov['rows'] for n in r['declarations'] if n != 'Becoming.no_such_law'}
         decls.update({w: {} for p in cov['premises']['items'] for w in p['witnesses']})
         decls.update({w: {} for p in cov['premises']['items'] for k in ('meets', 'unrefuted', 'calibration') for w in p.get(k, [])})
+        decls.update({i: {} for r in cov['rows'] for v in r.get('instances', {}).values() for i in v})
+        decls.update({x: {} for c in cov.get('unity', {}).get('constructions', []) for x in c['declarations']})
         decls.update({n: {} for n in cov['ethics_chain']['steps']})
         decls.update({x[k]: {} for x in cov['representation']['natural_number_laws'] for k in ('law', 'dense') if x.get(k)})
         records = {r for row in cov['rows'] for r in row['records']} - {'no-such-record'}

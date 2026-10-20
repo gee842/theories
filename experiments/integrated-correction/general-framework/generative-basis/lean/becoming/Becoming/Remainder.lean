@@ -19,7 +19,8 @@ on decide.
   from the carried amount (`carried_eq_carriedWithin_add`). The proof only adds, since giving is
   additive in the levels read (`carriedGive_add`, `carriedFrom_add`). The loss shrinks as the order
   rises (`responses_antitone`). For every schedule it is at most the bound of `Becoming.Loops`
-  (`responses_le_missBound`), and the self-loop loses exactly that (`Loops.SelfLoop.responses_eq`).
+  (`responses_le_missBound`; read on the world the carrying law generates,
+  `carriedWorld_within_cut`), and the self-loop loses exactly that (`Loops.SelfLoop.responses_eq`).
 * **Where a cut loses.** One response carries something to `c` by step `t` exactly where, at a step
   before `t`, the level of a condition is coupled into `c` (`CouplesAt`) and is positive
   (`responded_pos_iff`). A gap is conveyed to `c` through `j` responses or more
@@ -239,6 +240,17 @@ theorem responses_le_missBound {M D : Nat} (start : ∀ c, δ c ≤ D)
       Loops.missBound M D j t :=
   Remainder.le_of_add_le_add_left_nat _ (Nat.le_trans (Nat.le_of_eq (carried_eq_carriedWithin_add j t c).symm)
     (carried_le_carriedWithin_add start into j t c))
+
+/-- **What a cut loses, read on the world the carrying law generates.** In the carried world with the
+part giving no gap, the standing of each condition at step `t` is within what the cut at order `j`
+carries, with `Loops.missBound M D j t`: the base reading of `responses_le_missBound`, whatever the
+schedule of couplings. -/
+theorem carriedWorld_within_cut {M D : Nat} (start : ∀ c, δ c ≤ D)
+    (into : ∀ t c, inflow cs part k present t c ≤ M) (j t : Nat) (c : C) :
+    (carriedWorld cs part (fun _ _ _ => 0) k present δ).web.level t (.inr c) ≤
+      carriedWithin cs part (fun _ _ _ => 0) k present δ j t c + Loops.missBound M D j t :=
+  Nat.le_trans (Nat.le_of_eq ((carriedWorld_level t c).trans (carried_eq_carriedWithin_add j t c)))
+    (Nat.add_le_add_left (responses_le_missBound start into j t c) _)
 
 end Cut
 

@@ -2,12 +2,12 @@
 
 # The completion criterion, run
 
-The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T075104.511517Z` and the connectivity measure of `d652a7756` (core receipt `20261020T075104.511517Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
+The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T082411.919148Z` and the connectivity measure of `d652a7756` (core receipt `20261020T075104.511517Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
 
 | | Criterion | Met | Findings |
 |---|---|---|---:|
 | K1 | Coverage | yes | 0 |
-| K2 | Unity | no | 19 |
+| K2 | Unity | no | 1 |
 | K3 | Premises | yes | 0 |
 | K4 | Representation | yes | 0 |
 | K5 | Enclosure | yes | 0 |
@@ -22,7 +22,7 @@ The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_pro
 | Maintenance | phase | `Flow.restores`, `Flow.Balances.renewedBy`, `Flow.More.replenishment_unbounded`, `Tolerance.answers_restores_iff`, `Viability.kernel_and_iff` | [supported-renewal-recovery](../records/supported-renewal-recovery.md), [more-needs-renewers](../records/more-needs-renewers.md), [restoring-giving-from-the-worst-start](../records/restoring-giving-from-the-worst-start.md), [conditions-kept-together](../records/conditions-kept-together.md) | §2.1, §2.2, §4.4 | proved | — |
 | Transformation | phase | `Law.drawn_iff_not_returns`, `Law.lossless_iff_returns`, `Flow.change_recurs_iff`, `World.balanced_reidentify_iff`, `Pace.rule_until_reading` | [attraction-is-not-returning](../records/attraction-is-not-returning.md), [recurrence-without-premise](../records/recurrence-without-premise.md), [laws-of-one-step](../records/laws-of-one-step.md), [identity-across-steps](../records/identity-across-steps.md), [how-fast-a-rule-may-change](../records/how-fast-a-rule-may-change.md) | §1.2, §1.3, §2.2, §4.4 | proved | 8 |
 | Degeneration | phase | `Flow.Balances.consumption_ends_with_feeders`, `Flow.Dissipative.opens`, `Flow.continuing_excludes`, `Branching.loss_passes_juncture`, `RuleCapture.favouring_locks` | [consumption-ends-with-feeders](../records/consumption-ends-with-feeders.md), [no-finite-part-bears-taking](../records/no-finite-part-bears-taking.md), [what-taking-all-excludes](../records/what-taking-all-excludes.md), [every-loss-passes-a-juncture](../records/every-loss-passes-a-juncture.md), [capture-through-the-rule](../records/capture-through-the-rule.md) | §1.2, §2.3, §2.5, §4.5 | proved | 10 |
-| Dissolution | phase | `Amounts.rests`, `World.comes_to_rest_unrefuted`, `Web.Carries.active_not_recurring`, `Listed.coming_of_ceasing`, `keep_pace` | [least-loss-rest](../records/least-loss-rest.md), [continued-change-needs-openness](../records/continued-change-needs-openness.md), [reserve-defers-ending](../records/reserve-defers-ending.md), [ceasing-needs-arising](../records/ceasing-needs-arising.md), [coming-and-ceasing-keep-pace](../records/coming-and-ceasing-keep-pace.md) | §1.3, §2.2 | proved | 6 |
+| Dissolution | phase | `Amounts.rests`, `World.comes_to_rest_unrefuted`, `Web.Carries.active_not_recurring`, `Listed.coming_of_ceasing`, `CensusWebs.keep_pace` | [least-loss-rest](../records/least-loss-rest.md), [continued-change-needs-openness](../records/continued-change-needs-openness.md), [reserve-defers-ending](../records/reserve-defers-ending.md), [ceasing-needs-arising](../records/ceasing-needs-arising.md), [coming-and-ceasing-keep-pace](../records/coming-and-ceasing-keep-pace.md), [census-balance](../records/census-balance.md) | §1.3, §2.2 | proved | 6 |
 | Actor | differentiation | `Web.roles_supported`, `Dependence.differenceOnlyTogether_iff`, `counterfactual_is_course`, `partForms_iff` | [life-as-condition-of-life](../records/life-as-condition-of-life.md), [joint-difference-making](../records/joint-difference-making.md), [counterfactual-is-the-course](../records/counterfactual-is-the-course.md), [where-a-move-is-formed](../records/where-a-move-is-formed.md) | §2.2, §2.6, §4.1 | proved | 7 |
 | Patient | differentiation | `Web.roles_dependent`, `Flow.beyond_gives_nothing`, `Flow.withinSystem_of_withinInfluence`, `responses_le_missBound` | [life-as-condition-of-life](../records/life-as-condition-of-life.md), [feeding-closure](../records/feeding-closure.md), [levels-of-closure](../records/levels-of-closure.md), [what-a-cut-loses](../records/what-a-cut-loses.md) | §2.2, §2.5, §2.6 | proved | — |
 | Knowing | differentiation | `Flow.unexcluded_beyond_coupling`, `Run.not_fixes_of_untaken`, `Ideals.verifiableBy_iff_interior`, `Learnable.learnable_iff`, `apart_only_downstream` | [testing-within-couplings](../records/testing-within-couplings.md), [experiment-needs-return](../records/experiment-needs-return.md), [what-a-finite-stretch-verifies](../records/what-a-finite-stretch-verifies.md), [learnable-through-a-map](../records/learnable-through-a-map.md), [observation-is-a-route](../records/observation-is-a-route.md) | §2.6, §3.1, §3.2, §3.3 | proved | 3 |
@@ -42,25 +42,7 @@ No finding.
 
 ## K2. Unity: not met
 
-- generation: Becoming.onLoop_of_closing: its statement is not on a base family (used by a theorem on the base)
-- transformation: Becoming.Pace.rule_until_reading: its statement is not on a base family (statement on the base only through a law of its own module)
-- dissolution: Becoming.Amounts.rests: its statement is not on a base family (used by a theorem on the base)
-- dissolution: Becoming.Listed.coming_of_ceasing: its statement is not on a base family (used by a theorem on the base)
-- dissolution: Becoming.keep_pace: its statement is not on a base family (instance on the base recorded)
-- actor: Becoming.partForms_iff: its statement is not on a base family (used by a theorem on the base)
-- patient: Becoming.responses_le_missBound: its statement is not on a base family (proof through a base family)
-- knowing: Becoming.Ideals.verifiableBy_iff_interior: its statement is not on a base family (used by a theorem on the base)
-- knowing: Becoming.Learnable.learnable_iff: its statement is not on a base family (used by a theorem on the base)
-- evaluation: Becoming.Valuation.significant_iff_held: its statement is not on a base family (used by a theorem on the base)
-- responsibility: Becoming.presupposition_scopes: its statement is not on a base family (used by a theorem on the base)
-- evolution: Becoming.SelectionTerm.covariation: its statement is not on a base family (used by a theorem on the base)
-- learning: Becoming.Learnable.learnable_iff: its statement is not on a base family (used by a theorem on the base)
-- learning: Becoming.Learning.Training.unselected_beyond_data: its statement is not on a base family (used by a theorem on the base)
-- collective: Becoming.Withholding.withholding_spreads: its statement is not on a base family (statement on the base only through a law of its own module)
-- collective: Becoming.RelativePosition.rise_needs_fall: its statement is not on a base family (used by a theorem on the base)
-- families_reach_each_other: Flow reaches Process family is false
-- families_reach_each_other: Web reaches Process family is false
-- families_reach_each_other: Process reaches World family is false
+- patient: Becoming.responses_le_missBound: its statement is not on a base family (proof through a base family) and no base-family instance reaching it is listed (listed: Becoming.carriedWorld_within_cut)
 
 ## K3. Premises: met
 
@@ -72,7 +54,7 @@ No finding.
 
 ## K4. Representation: met
 
-Modelling choices found in central statements: discrete steps (78); natural-number amounts (51); supplied observation (9); a fixed type of formations (8); decidedness (4); naming (1).
+Modelling choices found in central statements: discrete steps (78); natural-number amounts (52); supplied observation (9); a fixed type of formations (8); decidedness (4); naming (1).
 
 Natural-number laws: `falls_not_recurring`: form `Amounts.rests`; `World.comes_to_rest_unrefuted`: form `Amounts.family_rests`; `rising_recurs`: counterexample `Halving.never_rests`; `Flow.excess_bounded`: form `Amounts.losses_within`; `Flow.More.replenishment_unbounded`: form `Amounts.replenishment_unbounded`.
 

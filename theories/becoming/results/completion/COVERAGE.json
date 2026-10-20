@@ -30,7 +30,12 @@
       "status": "proved",
       "open_items": [
         5
-      ]
+      ],
+      "instances": {
+        "Becoming.onLoop_of_closing": [
+          "Becoming.CouplingTraces.measure_loop_at"
+        ]
+      }
     },
     {
       "id": "maintenance",
@@ -128,19 +133,29 @@
         "continued-change-needs-openness",
         "reserve-defers-ending",
         "ceasing-needs-arising",
-        "coming-and-ceasing-keep-pace"
+        "coming-and-ceasing-keep-pace",
+        "census-balance"
       ],
       "declarations": [
         "Becoming.Amounts.rests",
         "Becoming.World.comes_to_rest_unrefuted",
         "Becoming.Web.Carries.active_not_recurring",
         "Becoming.Listed.coming_of_ceasing",
-        "Becoming.keep_pace"
+        "Becoming.CensusWebs.keep_pace"
       ],
       "status": "proved",
       "open_items": [
         6
-      ]
+      ],
+      "instances": {
+        "Becoming.Amounts.rests": [
+          "Becoming.LevelWebs.level_falls_not_recurring",
+          "Becoming.Flow.rising_not_recurring_from"
+        ],
+        "Becoming.Listed.coming_of_ceasing": [
+          "Becoming.Web.arising_of_ceasing_listing"
+        ]
+      }
     },
     {
       "id": "actor",
@@ -166,7 +181,12 @@
       "status": "proved",
       "open_items": [
         7
-      ]
+      ],
+      "instances": {
+        "Becoming.partForms_iff": [
+          "Becoming.MoveRuns.part_policy"
+        ]
+      }
     },
     {
       "id": "patient",
@@ -190,7 +210,12 @@
         "Becoming.responses_le_missBound"
       ],
       "status": "proved",
-      "open_items": []
+      "open_items": [],
+      "instances": {
+        "Becoming.responses_le_missBound": [
+          "Becoming.carriedWorld_within_cut"
+        ]
+      }
     },
     {
       "id": "knowing",
@@ -219,7 +244,15 @@
       "status": "proved",
       "open_items": [
         3
-      ]
+      ],
+      "instances": {
+        "Becoming.Ideals.verifiableBy_iff_interior": [
+          "Becoming.verifiable_iff_verified"
+        ],
+        "Becoming.Learnable.learnable_iff": [
+          "Becoming.LearnableRuns.learnable_iff"
+        ]
+      }
     },
     {
       "id": "evaluation",
@@ -246,7 +279,12 @@
       "status": "proved",
       "open_items": [
         3
-      ]
+      ],
+      "instances": {
+        "Becoming.Valuation.significant_iff_held": [
+          "Becoming.Web.significant_iff_self"
+        ]
+      }
     },
     {
       "id": "capacity",
@@ -299,7 +337,12 @@
       "status": "proved",
       "open_items": [
         11
-      ]
+      ],
+      "instances": {
+        "Becoming.presupposition_scopes": [
+          "Becoming.BoundaryFlows.reach_scopes"
+        ]
+      }
     },
     {
       "id": "life",
@@ -347,7 +390,12 @@
       "status": "proved",
       "open_items": [
         9
-      ]
+      ],
+      "instances": {
+        "Becoming.SelectionTerm.covariation": [
+          "Becoming.SelectionTerm.Flow.support_not_against"
+        ]
+      }
     },
     {
       "id": "learning",
@@ -372,7 +420,15 @@
       "status": "proved",
       "open_items": [
         7
-      ]
+      ],
+      "instances": {
+        "Becoming.Learnable.learnable_iff": [
+          "Becoming.LearnableRuns.learnable_iff"
+        ],
+        "Becoming.Learning.Training.unselected_beyond_data": [
+          "Becoming.LearningRuns.unselected_beyond_prefix"
+        ]
+      }
     },
     {
       "id": "collective",
@@ -401,7 +457,12 @@
       "status": "proved",
       "open_items": [
         7
-      ]
+      ],
+      "instances": {
+        "Becoming.RelativePosition.rise_needs_fall": [
+          "Becoming.Flow.drawn_positions"
+        ]
+      }
     },
     {
       "id": "significance",
@@ -749,6 +810,38 @@
       "further proof",
       "philosophical warrant",
       "empirical"
+    ]
+  },
+  "unity": {
+    "about": "K2's families. A definition can reach another only one way (definitions are acyclic), so families_reach_each_other cannot hold in every direction by definition. The World family reaches the Process family by definition (a world is a run, its history); every other direction is met by a construction, a declaration that reads each object of one family as an object of the other and keeps what it reads.",
+    "definitional": [
+      "World reaches Process family"
+    ],
+    "constructions": [
+      {
+        "direction": "Process reaches World family",
+        "declarations": [
+          "Becoming.Frame.world",
+          "Becoming.Frame.world_fixes_run"
+        ],
+        "note": "every run of every process is a world of its configurations, and the world fixes the run"
+      },
+      {
+        "direction": "Web reaches Process family",
+        "declarations": [
+          "Becoming.World.of",
+          "Becoming.World.of_web"
+        ],
+        "note": "every web is the web of a world, whose history is a run"
+      },
+      {
+        "direction": "Flow reaches Process family",
+        "declarations": [
+          "Becoming.World.of",
+          "Becoming.World.of_flow"
+        ],
+        "note": "every flow is the flow of a world, whose history is a run"
+      }
     ]
   }
 }
