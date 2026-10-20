@@ -374,7 +374,7 @@
     {
       "path": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md",
       "role": "statement",
-      "sha256": "df234b74a833ae0a70f3daa76fc342afeb02b467c24ebdba9ea6e0ec88b8b30d",
+      "sha256": "e4655ee49090cac32f1d47d7f0fae59cd43333ab9f2668d93481ed3f733061b6",
       "declarations": []
     },
     {
@@ -392,7 +392,7 @@
     {
       "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
       "role": "statement",
-      "sha256": "69865ccbfde6d46344788d0b27a4baff2fdc92199e460d0e82ff3991674a68d4",
+      "sha256": "8ad70bb5d1c4dab46b9d8dc6ab1a7907a6582fe88501164d18a4115e39796d96",
       "declarations": []
     },
     {

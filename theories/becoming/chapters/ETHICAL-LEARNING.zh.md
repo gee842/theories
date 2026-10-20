@@ -2,7 +2,7 @@
 
 > **中文版（2026-10-17）。** 本章原以中文写成；本版是重构时从双语原文拆出的中文原文。[英文版](ETHICAL-LEARNING.md)在原路径，含全部中文段落的译文，是今后维护的文本；本版不与英文同步维护。移出的轮次记录原文见[历史文件](../history/ETHICAL-LEARNING-rounds-2026-10-17.md)。
 
-**当前纠正（2026-10-08）：** [§§75–77](#generative-good-before-institutional-power)以整体生成之善评价组织与权力，撤回 §§67–74 将初次授权设为基础之墙的判断。机构扩大、维持或收缩没有预设优先次序；前文条件案例依此限范围使用。
+> **状态：**现行：[organizational-formation-from-generative-comparison](../results/records/organizational-formation-from-generative-comparison.md) 的陈述来源。2026 年 10 月各轮的说明（1 段）原文保存在[轮次历史](../history/ETHICAL-LEARNING-rounds-2026-10-20.zh.md)。
 
 2026-10-08。AI 撰写的理论推进，遵循 [Ren 的继续指示](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#theoretical-continuation)、[非二元方法](NONDUAL-METHOD.md)及已授权的 G0 公理路线。[研究整合与作者反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md)说明新增内容、继承成果与边界。本章提出有辩护的伦理学习候选，不新增数学定理或经验发现。
 

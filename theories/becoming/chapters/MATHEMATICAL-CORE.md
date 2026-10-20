@@ -10,8 +10,7 @@ The central distinction is between **constructing a representation**, **proving 
 
 The account below starts with the philosophical and methodological context, constructs the formal interface, develops its principal consequences, explains predication and prediction, and identifies the exact boundary of the resulting foundation. The [proof and correspondence record](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md) links the claims to executable sources. The accompanying check passes six modules and 61 printed axiom audits, including 12 new pedagogical theorems. These counts are verification records, not a measure of foundational completeness.
 
-**Connected generative articulation, 8 October 2026:** [How activity forms further activity](../history/SHENGSHENG.md) supplies the mechanisms and correspondence through which this general mathematical language articulates 生生. It distinguishes actual joined histories, conditional applications and separate realizations, and keeps normative premises explicit. The generic path theorems below are one contribution to that explanation.
-
+> **Status:** live: an exposition of the foundation module `GenerativeCore`, unchanged since 6 October 2026. Its dated round note of October 2026 is kept verbatim in [its rounds history](../history/MATHEMATICAL-CORE-rounds-2026-10-20.md).
 ## The question this core answers
 
 The broader research asks for a common generative foundation from which organization, significance, regulation, learning, concern and wisdom can be explained. The [working root](../history/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) is:

@@ -1,7 +1,7 @@
 <a id="零公理实践判断正在建立的根据--zero-axiom-practical-judgment"></a>
 # Zero-axiom Practical judgment
 
-**Current focus (13 October 2026):** Following Ren's [focus](../../../sources/15-codex-theory-conversations/2026-10-13-universal-normative-grounding-focus.md) and [monist relational correction](../../../sources/15-codex-theory-conversations/2026-10-13-nondual-normative-grounding-correction.md), [§20](#normative-differentiation-within-activity) reconstructs normative differentiation within one activity, beginning from the common formation of living, understanding, ends, evaluation and response. Sections 18–19 remain earlier attempts; their analytic distinctions must not require independently constituted facts, values and agents plus an external bridge. The universal foundation remains open without declaring a necessary ontological gulf, and the existing conditional results stand. [Section 21](#selective-correction-and-formed-ends) tests how genuine learning can maintain or revise ends. [Correction of the test](#fulfillment-test-counterreview): the fulfillment question is narrowed to a local diagnostic, not certification of ethical direction.
+> **Status:** live: statement source of the open target [universal-practical-warrant](../results/records/universal-practical-warrant.md) (canonical chapter §8.1). Its dated round note of October 2026 is kept verbatim in [its rounds history](../history/ZERO-AXIOM-PRACTICAL-JUDGMENT-rounds-2026-10-20.md).
 
 *The previous-focus and latest-direction status paragraphs of 8 October 2026. Moved verbatim to [history](../history/ZERO-AXIOM-PRACTICAL-JUDGMENT-rounds-2026-10-17.md#零公理实践判断正在建立的根据--zero-axiom-practical-judgment).*
 

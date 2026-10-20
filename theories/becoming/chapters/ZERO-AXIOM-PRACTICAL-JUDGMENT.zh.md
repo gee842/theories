@@ -3,7 +3,7 @@
 
 > **中文版（2026-10-17）。** 正典文本是[英文版](ZERO-AXIOM-PRACTICAL-JUDGMENT.md)；本版由重构时从双语原文拆出，不与英文同步维护，两者有出入时以英文为准。
 
-**当前中心（2026-10-13，P98）：** 按 Ren 的[聚焦](../../../sources/15-codex-theory-conversations/2026-10-13-universal-normative-grounding-focus.md)及[一元关系纠正](../../../sources/15-codex-theory-conversations/2026-10-13-nondual-normative-grounding-correction.md)，[第20节](#normative-differentiation-within-activity)先展开生活、理解、目的、评价与回应的共同形成。第18–19节保留为先前尝试，其“给回应位置理由”不能作为先分立事实、价值及行动者再寻找外部桥梁的强制架构。完整关系的规范说明仍待建立，既有条件成果保持。[第21节](#selective-correction-and-formed-ends)进一步检验真实学习怎样维持或改变目的。[检验修正](#fulfillment-test-counterreview)：完成引发改变仅作局部诊断，不能认证规范方向。
+> **状态：**现行：开放目标 [universal-practical-warrant](../results/records/universal-practical-warrant.md) 的陈述来源（规范章节 §8.1）。2026 年 10 月各轮的说明（1 段）原文保存在[轮次历史](../history/ZERO-AXIOM-PRACTICAL-JUDGMENT-rounds-2026-10-20.zh.md)。
 
 *2026-10-08 的先前中心与最新方向两段状态说明已原文移至[历史](../history/ZERO-AXIOM-PRACTICAL-JUDGMENT-rounds-2026-10-17.md#零公理实践判断正在建立的根据--zero-axiom-practical-judgment)。*
 
