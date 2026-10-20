@@ -1922,7 +1922,7 @@ SCOPE = (
     "the part, any net draw on the condition makes it mixed; with no net draw on what such formations "
     "require, own widening widens the whole, and a comparison over the own region alone still changes; "
     "a decided set at each step is what the web reading each formation as its own condition at need one "
-    "admits; in Drawing one draw widens at one unit of slack and is mixed at none. "
+    "admits; in OwnDrawing one draw widens at one unit of slack and is mixed at none. "
     "Direction: on a web's moves, a move read by the levels it leads to, an extension with every "
     "admission counted is a widening; under J1/J2 a chosen move keeps every basic admission a move "
     "keeping all of them makes, unrefuted and, where listed and decided, required; a move whose "

@@ -91,8 +91,8 @@ laws = [
      'another formation needs the shared condition at one. With one unit of slack the drawer\'s own widening widens '
      'the whole; with none it is mixed.',
      '见证：汲取者从共享条件取一单位并给其库存一单位，其自身的选项需要库存；另一构成以一需要共享条件。有一单位余量时汲取者自身的扩大扩大整体；没有余量时为混合。',
-     ['Drawing.flow', 'Drawing.web', 'Drawing.balances', 'Drawing.withheld', 'Drawing.own_widens',
-      'Drawing.ample_widens', 'Drawing.tight_mixed']),
+     ['OwnDrawing.flow', 'OwnDrawing.web', 'OwnDrawing.balances', 'OwnDrawing.withheld', 'OwnDrawing.own_widens',
+      'OwnDrawing.ample_widens', 'OwnDrawing.tight_mixed']),
 ]
 for en, zh, _ in laws:
     assert len(en) <= 420 and len(zh) <= 190, (en[:40], len(en), len(zh))
@@ -145,10 +145,10 @@ rec = {
          'zh': '哪些构成会超出余量地汲取，或最优的、被训练的智能体会如此：这些规律定位边界，不预测行为。',
          'kind': 'non-implication'}],
     'counterexamples': [{'path': src(MOD), 'detail': {
-        'en': 'Drawing with no slack: the drawer\'s activity opens its option and closes the other formation, which '
-              'needs the shared condition at exactly the level it stands at without the draw (Drawing.tight_mixed); '
+        'en': 'OwnDrawing with no slack: the drawer\'s activity opens its option and closes the other formation, which '
+              'needs the shared condition at exactly the level it stands at without the draw (OwnDrawing.tight_mixed); '
               'own widening alone does not widen the whole.',
-        'zh': '没有余量的 Drawing：汲取者的活动打开其选项并关闭另一构成，后者恰以无汲取时的水平需要共享条件（Drawing.tight_mixed）；仅有自身的扩大并不扩大整体。'}}],
+        'zh': '没有余量的 OwnDrawing：汲取者的活动打开其选项并关闭另一构成，后者恰以无汲取时的水平需要共享条件（OwnDrawing.tight_mixed）；仅有自身的扩大并不扩大整体。'}}],
     'standard_boundaries': ['no-ethical-premise', 'no-evaluation', 'discrete-steps', 'formal-not-empirical',
                             'names-provisional', 'omission-not-refutation'],
     'validation_scope': {

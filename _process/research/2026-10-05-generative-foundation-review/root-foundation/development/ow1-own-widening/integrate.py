@@ -28,7 +28,7 @@ DOC = (
     '  `Flow.Balances.mixed_iff_other_beyond`); with a need met exactly any net draw on it makes own\n'
     '  widening mixed (`Flow.Balances.mixed_of_tight`), and drawing on nothing another admitted formation\n'
     '  requires widens the whole (`Flow.Balances.widens_of_untaken_beyond`). Any reachable set is an\n'
-    '  admitted set (`Web.admits_reachWeb_iff`). Witness `Drawing`: widening at one unit of slack, mixed\n'
+    '  admitted set (`Web.admits_reachWeb_iff`). Witness `OwnDrawing`: widening at one unit of slack, mixed\n'
     '  at none.\n'
 )
 SCOPE = (
@@ -41,7 +41,7 @@ SCOPE = (
     '    "the part, any net draw on the condition makes it mixed; with no net draw on what such formations "\n'
     '    "require, own widening widens the whole, and a comparison over the own region alone still changes; "\n'
     '    "a decided set at each step is what the web reading each formation as its own condition at need one "\n'
-    '    "admits; in Drawing one draw widens at one unit of slack and is mixed at none. "\n')
+    '    "admits; in OwnDrawing one draw widens at one unit of slack and is mixed at none. "\n')
 README_ROW = (
     '| L1 | [`Becoming.OwnWidening`](Becoming/OwnWidening.lean) | where a part\'s widening of what it can reach is the '
     'whole\'s (balance a hypothesis where it enters; the part and its own region decided): widening within a region '
@@ -52,7 +52,7 @@ README_ROW = (
     'met exactly makes any net draw on it mixed (`Flow.Balances.mixed_of_tight`); drawing on nothing another admitted '
     'formation requires widens the whole (`Flow.Balances.widens_of_untaken_beyond`), while a comparison over the own '
     'region alone changes (`Flow.Balances.widens_yet_own_changed`); any reachable set is an admitted set '
-    '(`Web.admits_reachWeb_iff`); witnesses `Drawing.ample_widens`, `Drawing.tight_mixed` |')
+    '(`Web.admits_reachWeb_iff`); witnesses `OwnDrawing.ample_widens`, `OwnDrawing.tight_mixed` |')
 README_ZH_ROW = (
     '| L1 | [`Becoming.OwnWidening`](Becoming/OwnWidening.lean) | 部分对其所能及者的扩大何时即整体的扩大'
     '（平衡为写在定理中的条件；部分及其自身区域为可判定的）：在区域内扩大（`Web.WidensWithin`）在整体上超出，既不保持也不缩小'
@@ -61,7 +61,7 @@ README_ZH_ROW = (
     '（`Flow.Balances.widens_iff_others_within`、`Flow.Balances.mixed_iff_other_beyond`）；需求恰被满足时，其上任何净汲取都使之混合'
     '（`Flow.Balances.mixed_of_tight`）；不在其他被接纳的构成所需之处净汲取，即扩大整体（`Flow.Balances.widens_of_untaken_beyond`），'
     '而只读自身区域的比较仍有变化（`Flow.Balances.widens_yet_own_changed`）；任何可达集都是接纳集（`Web.admits_reachWeb_iff`）；'
-    '见证 `Drawing.ample_widens`、`Drawing.tight_mixed` |')
+    '见证 `OwnDrawing.ample_widens`、`OwnDrawing.tight_mixed` |')
 
 root = (PKG / 'Becoming.lean').read_text()
 assert 'import Becoming.OwnWidening' not in root, 'already integrated'

@@ -27,7 +27,7 @@ asks when that widening is the whole's.
 * **Zero margin.** Where a formation outside the region, admitted without the part, needs a
   condition at exactly the level the part leaves it without its exchange, any net draw of the
   part on that condition makes own widening mixed (`Flow.Balances.mixed_of_tight`).
-* **Drawing on what no other needs.** Where the part's net draw is nothing on every condition
+* **OwnDrawing on what no other needs.** Where the part's net draw is nothing on every condition
   required by a formation outside the region that the levels without it admit, own widening
   widens the whole, whatever the levels (`Flow.Balances.widens_of_untaken_beyond`).
 * **What a measure over the own region reads.** Where own widening widens the whole, the levels
@@ -38,10 +38,10 @@ asks when that widening is the whole's.
   web reading each formation as its own condition, at need one, admits (`Web.admits_reachWeb_iff`).
   No amount is conserved there: balance has content only where reaching an outcome is a threshold
   on amounts that are taken and given.
-* **The witness.** `Drawing`: a drawer takes one unit of a shared condition and gives one to its
+* **The witness.** `OwnDrawing`: a drawer takes one unit of a shared condition and gives one to its
   store, which its own option needs; another formation needs the shared condition at one. With
-  one unit of slack the drawer's own widening widens the whole (`Drawing.ample_widens`); with
-  none it is mixed (`Drawing.tight_mixed`, by `Flow.Balances.mixed_of_tight`).
+  one unit of slack the drawer's own widening widens the whole (`OwnDrawing.ample_widens`); with
+  none it is mixed (`OwnDrawing.tight_mixed`, by `Flow.Balances.mixed_of_tight`).
 
 **Reading (the AI's).** Read the levels without the part as the inaction baseline: what would
 stand had the part taken and given nothing, the rest acting as they did. Read the part's own region
@@ -189,7 +189,7 @@ theorem Balances.mixed_of_tight (balances : L.Balances W) {l : Nat → C → Nat
       (Nat.le_of_eq (congrArg (· + total (steps 0 t) fun s => L.partTaken part s c) tight.symm))
       (margin c requires)))⟩
 
-/-- **Drawing on what no other needs.** In a balanced flow, where the part's activity widens what
+/-- **OwnDrawing on what no other needs.** In a balanced flow, where the part's activity widens what
 can form within its own region and its net draw up to each step is nothing on every condition
 required by a formation outside the region that the levels without it admit, the levels with the
 part widen those without it, whatever the levels. -/
@@ -223,7 +223,7 @@ end Flow
 
 /-! ## The witness: one draw paid from a shared condition -/
 
-namespace Drawing
+namespace OwnDrawing
 
 /-- A drawer, the option its store opens, and another formation needing the shared condition. -/
 inductive Formation where
@@ -342,6 +342,6 @@ theorem tight_mixed : (web 0).Mixed (web 0).level (withheldLevel 0) :=
       | .shared, _ => Nat.le_refl 1
       | .store, no => nomatch no) trivial rfl (Nat.zero_lt_one)
 
-end Drawing
+end OwnDrawing
 
 end Becoming

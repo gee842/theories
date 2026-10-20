@@ -970,7 +970,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   `Flow.Balances.mixed_iff_other_beyond`); with a need met exactly any net draw on it makes own
   widening mixed (`Flow.Balances.mixed_of_tight`), and drawing on nothing another admitted formation
   requires widens the whole (`Flow.Balances.widens_of_untaken_beyond`). Any reachable set is an
-  admitted set (`Web.admits_reachWeb_iff`). Witness `Drawing`: widening at one unit of slack, mixed
+  admitted set (`Web.admits_reachWeb_iff`). Witness `OwnDrawing`: widening at one unit of slack, mixed
   at none.
 * `Becoming.Clearing` (L1): the witness `Clearing`, a source, a clearer and a dweller, with the facts that
   read no more than admission, regions and retaining. The clearer is active and renewed at every
