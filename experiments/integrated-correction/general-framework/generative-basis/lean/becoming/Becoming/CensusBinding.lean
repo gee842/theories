@@ -42,12 +42,8 @@ Each law is for every property of the counts and with no decidedness. Each is a 
 (`World.table_holds`, `Becoming.CensusTable`) whose counted soundness and witness lemma
 are those of the decided law in `Becoming.Counting` (`World.binding_counting_sound`,
 `World.binding_counting_witnessed` and their family), so the counted and the decided form come
-from one proof. Each equivalence saying where a law is one (`…_activity_iff_counted`,
-`…_arising_iff_counted`, `…_joint_iff_counted`) is the counted law, the decided law with a proof
-that its property is pointwise, and the decided equivalence, composed; finite and enclosed worlds
-agree under a selection, for every property and for pointwise ones, by one tally lemma
-(`World.enclosed_iff_finite_tally`). Where a procedure decides activity, these laws give the
-decided ones (`World.CountsHold.obey`). The decided statements stay, with their scope.
+from one proof. Where a procedure decides activity, these laws give the decided ones
+(`World.CountsHold.obey`). The decided statements stay, with their scope.
 -/
 
 namespace Becoming
@@ -100,20 +96,45 @@ theorem binding_activity_iff_counted (S : Premise → Bool) :
     (∀ w : World, w.Meets S → (∀ p, S p = true → p.Binds w) →
       w.CountsHold fun n _ _ => ∃ t, 0 < n t) ↔
       S .dependent = true ∨ S .acting = true ∨ S .taking = true ∨ S .embodied = true :=
-  ((binding_counting_under_counted S).symm.trans
-    (binding_counting_under S
-      (fun same ⟨t, pos⟩ => ⟨t, Nat.lt_of_lt_of_le pos (Nat.le_of_eq (same t).1)⟩))).trans
-    (binding_activity_iff S)
+  ⟨fun law => match hp : S .dependent, ha : S .acting, ht : S .taking, he : S .embodied with
+    | true, _, _, _ => .inl rfl
+    | false, true, _, _ => .inr (.inl rfl)
+    | false, false, true, _ => .inr (.inr (.inl rfl))
+    | false, false, false, true => .inr (.inr (.inr rfl))
+    | false, false, false, false => match (binding_counting_under_counted S
+          (Q := fun n _ _ => ∃ t, 0 < n t)).mpr law
+        (fun _ => 0) (fun _ => 0) (fun _ => 0) (fun _ => ⟨0, rfl, rfl⟩)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied)
+        (fun
+          | .inl selected => nomatch hp.symm.trans selected
+          | .inr (.inl selected) => nomatch ha.symm.trans selected
+          | .inr (.inr selected) => nomatch ht.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected) with
+      | ⟨_, no⟩ => absurd no (Nat.lt_irrefl 0),
+   fun selected => (binding_counting_under_counted S (Q := fun n _ _ => ∃ t, 0 < n t)).mp
+    fun _ _ _ tally _ acts arises _ => match selected with
+    | .inl dependent => acts (.inl dependent)
+    | .inr (.inl acting) => acts (.inr (.inl acting))
+    | .inr (.inr (.inl taking)) => acts (.inr (.inr taking))
+    | .inr (.inr (.inr embodied)) => match arises embodied with
+      | ⟨t, joins⟩ => ⟨t + 1, tally.after_pos joins⟩⟩
 
 /-- Where the counts exist, binding adds that something arises exactly where embodiment is
 selected. -/
 theorem binding_arising_iff_counted (S : Premise → Bool) :
     (∀ w : World, w.Meets S → (∀ p, S p = true → p.Binds w) →
       w.CountsHold fun _ _ a => ∃ t, 0 < a t) ↔ S .embodied = true :=
-  ((binding_counting_under_counted S).symm.trans
-    (binding_counting_under S
-      (fun same ⟨t, pos⟩ => ⟨t, Nat.lt_of_lt_of_le pos (Nat.le_of_eq (same t).2.2)⟩))).trans
-    (binding_arising_iff S)
+  ⟨fun law => match he : S .embodied with
+    | true => rfl
+    | false => match (binding_counting_under_counted S (Q := fun _ _ a => ∃ t, 0 < a t)).mpr law
+        (fun _ => 1) (fun _ => 0) (fun _ => 0) (fun _ => ⟨1, rfl, rfl⟩)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied) (fun _ => ⟨0, Nat.zero_lt_one⟩)
+        (fun selected => nomatch he.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected) with
+      | ⟨_, no⟩ => absurd no (Nat.lt_irrefl 0),
+   fun embodied => (binding_counting_under_counted S (Q := fun _ _ a => ∃ t, 0 < a t)).mp
+     fun _ _ _ _ _ _ arises _ => arises embodied⟩
 
 /-- And, where the counts exist, that something arises across a step at which something is
 active exactly where embodiment is selected and either the selection binds counting or only
@@ -122,12 +143,29 @@ theorem binding_joint_iff_counted (S : Premise → Bool) :
     (∀ w : World, w.Meets S → (∀ p, S p = true → p.Binds w) →
       w.CountsHold fun n _ a => ∃ t, 0 < n t ∧ 0 < a t) ↔
       S .embodied = true ∧ (BindsCounting S ∨ S .acting = true ∧ S .transmitting = true) :=
-  ((binding_counting_under_counted S).symm.trans
-    (binding_counting_under S
-      (fun same ⟨t, active, arising⟩ => ⟨t,
-        Nat.lt_of_lt_of_le active (Nat.le_of_eq (same t).1),
-        Nat.lt_of_lt_of_le arising (Nat.le_of_eq (same t).2.2)⟩))).trans
-    (binding_joint_iff S)
+  ⟨fun law => match he : S .embodied with
+    | false => match (binding_counting_under_counted S
+          (Q := fun n _ a => ∃ t, 0 < n t ∧ 0 < a t)).mpr law (fun _ => 1) (fun _ => 0)
+        (fun _ => 0) (fun _ => ⟨1, rfl, rfl⟩)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied) (fun _ => ⟨0, Nat.zero_lt_one⟩)
+        (fun selected => nomatch he.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected) with
+      | ⟨_, _, no⟩ => absurd no (Nat.lt_irrefl 0)
+    | true => if both : BindsCounting S ∨ S .acting = true ∧ S .transmitting = true then
+        ⟨rfl, both⟩
+      else match (binding_counting_under_counted S
+            (Q := fun n _ a => ∃ t, 0 < n t ∧ 0 < a t)).mpr law Queue.lone (fun _ => 0)
+          Queue.joins Queue.lone_tally (fun binds => absurd (.inl binds) both)
+          (fun _ => ⟨1, Nat.zero_lt_one⟩) (fun _ => ⟨0, Nat.zero_lt_one⟩)
+          (fun _ acting transmitting => absurd (.inr ⟨acting, transmitting⟩) both) with
+        | ⟨0, empty, _⟩ => absurd empty (Nat.lt_irrefl 0)
+        | ⟨_ + 1, _, no⟩ => absurd no (Nat.lt_irrefl 0),
+   fun ⟨embodied, both⟩ => (binding_counting_under_counted S
+      (Q := fun n _ a => ∃ t, 0 < n t ∧ 0 < a t)).mp
+    fun _ _ _ _ quiet _ arises joint => match both with
+    | .inl binds => match arises embodied with
+      | ⟨t, joins⟩ => ⟨t, quiet binds t joins, joins⟩
+    | .inr ⟨acting, transmitting⟩ => joint embodied acting transmitting⟩
 
 /-- **In finite worlds in which every premise but the census binds, where the counts exist**,
 the laws of counting under the eight are those of finite worlds and that something arises: for
@@ -195,20 +233,50 @@ theorem finite_binding_activity_iff_counted (S : Premise → Bool) (uncounted : 
     (∀ w : World, w.Meets S → w.Finite → (∀ p, S p = true → p.Binds w) →
       w.CountsHold fun n _ _ => ∃ t, 0 < n t) ↔
       S .dependent = true ∨ S .acting = true ∨ S .taking = true ∨ S .embodied = true :=
-  ((finite_binding_counting_under_counted S uncounted).symm.trans
-    (finite_binding_counting_under S uncounted
-      (fun same ⟨t, pos⟩ => ⟨t, Nat.lt_of_lt_of_le pos (Nat.le_of_eq (same t).1)⟩))).trans
-    (finite_binding_activity_iff S uncounted)
+  ⟨fun law => match hp : S .dependent, ha : S .acting, ht : S .taking, he : S .embodied with
+    | true, _, _, _ => .inl rfl
+    | false, true, _, _ => .inr (.inl rfl)
+    | false, false, true, _ => .inr (.inr (.inl rfl))
+    | false, false, false, true => .inr (.inr (.inr rfl))
+    | false, false, false, false => match (finite_binding_counting_under_counted S uncounted
+          (Q := fun n _ _ => ∃ t, 0 < n t)).mpr law (fun _ => 0) (fun _ => 0) (fun _ => 0)
+        (fun _ => ⟨0, rfl, rfl⟩)
+        ⟨0, fun _ => Nat.le_refl 0⟩ (fun _ _ no => absurd no (Nat.lt_irrefl 0))
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied)
+        (fun
+          | .inl selected => nomatch hp.symm.trans selected
+          | .inr (.inl selected) => nomatch ha.symm.trans selected
+          | .inr (.inr selected) => nomatch ht.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected) with
+      | ⟨_, no⟩ => absurd no (Nat.lt_irrefl 0),
+   fun selected => (finite_binding_counting_under_counted S uncounted
+      (Q := fun n _ _ => ∃ t, 0 < n t)).mp
+    fun _ _ _ tally _ _ _ acts arises _ => match selected with
+    | .inl dependent => acts (.inl dependent)
+    | .inr (.inl acting) => acts (.inr (.inl acting))
+    | .inr (.inr (.inl taking)) => acts (.inr (.inr taking))
+    | .inr (.inr (.inr embodied)) => match arises embodied with
+      | ⟨t, joins⟩ => ⟨t + 1, tally.after_pos joins⟩⟩
 
 /-- Where the counts exist, in such finite worlds something arises exactly where embodiment is
 selected. -/
 theorem finite_binding_arising_iff_counted (S : Premise → Bool) (uncounted : S .counted = false) :
     (∀ w : World, w.Meets S → w.Finite → (∀ p, S p = true → p.Binds w) →
       w.CountsHold fun _ _ a => ∃ t, 0 < a t) ↔ S .embodied = true :=
-  ((finite_binding_counting_under_counted S uncounted).symm.trans
-    (finite_binding_counting_under S uncounted
-      (fun same ⟨t, pos⟩ => ⟨t, Nat.lt_of_lt_of_le pos (Nat.le_of_eq (same t).2.2)⟩))).trans
-    (finite_binding_arising_iff S uncounted)
+  ⟨fun law => match he : S .embodied with
+    | true => rfl
+    | false => match (finite_binding_counting_under_counted S uncounted
+          (Q := fun _ _ a => ∃ t, 0 < a t)).mpr law (fun _ => 1)
+        (fun _ => 0) (fun _ => 0) (fun _ => ⟨1, rfl, rfl⟩) ⟨1, fun _ => Nat.le_refl 1⟩
+        (fun _ _ _ => Nat.zero_lt_one)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied) (fun _ => ⟨0, Nat.zero_lt_one⟩)
+        (fun selected => nomatch he.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected) with
+      | ⟨_, no⟩ => absurd no (Nat.lt_irrefl 0),
+   fun embodied => (finite_binding_counting_under_counted S uncounted
+      (Q := fun _ _ a => ∃ t, 0 < a t)).mp
+     fun _ _ _ _ _ _ _ _ arises _ => arises embodied⟩
 
 /-- And, where the counts exist, that something arises across a step at which something is
 active exactly where embodiment is selected and either the selection binds counting or bounds
@@ -220,12 +288,38 @@ theorem finite_binding_joint_iff_counted (S : Premise → Bool) (uncounted : S .
       S .embodied = true ∧ (BindsCounting S ∨ BoundsChange S ∨
         (S .acting = true ∨ S .taking = true ∧ S .dissipative = true) ∧
           S .transmitting = true) :=
-  ((finite_binding_counting_under_counted S uncounted).symm.trans
-    (finite_binding_counting_under S uncounted
-      (fun same ⟨t, active, arising⟩ => ⟨t,
-        Nat.lt_of_lt_of_le active (Nat.le_of_eq (same t).1),
-        Nat.lt_of_lt_of_le arising (Nat.le_of_eq (same t).2.2)⟩))).trans
-    (finite_binding_joint_iff S uncounted)
+  ⟨fun law => match he : S .embodied with
+    | false => match (finite_binding_counting_under_counted S uncounted
+          (Q := fun n _ a => ∃ t, 0 < n t ∧ 0 < a t)).mpr law (fun _ => 1)
+        (fun _ => 0) (fun _ => 0) (fun _ => ⟨1, rfl, rfl⟩) ⟨1, fun _ => Nat.le_refl 1⟩
+        (fun _ _ _ => Nat.zero_lt_one)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied) (fun _ => ⟨0, Nat.zero_lt_one⟩)
+        (fun selected => nomatch he.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected) with
+      | ⟨_, _, no⟩ => absurd no (Nat.lt_irrefl 0)
+    | true => if both : BindsCounting S ∨ BoundsChange S ∨
+          (S .acting = true ∨ S .taking = true ∧ S .dissipative = true) ∧
+            S .transmitting = true then ⟨rfl, both⟩
+      else match (finite_binding_counting_under_counted S uncounted
+            (Q := fun n _ a => ∃ t, 0 < n t ∧ 0 < a t)).mpr law Queue.lone
+          (fun _ => 0) Queue.joins Queue.lone_tally
+          ⟨1, fun | 0 => Nat.zero_le 1 | _ + 1 => Nat.le_refl 1⟩
+          (fun bound => absurd (match bound with
+            | .inl binds => .inl binds
+            | .inr bounds => .inr (.inl bounds)) both)
+          (fun bounds => absurd (.inr (.inl bounds)) both) (fun _ => ⟨1, Nat.zero_lt_one⟩)
+          (fun _ => ⟨0, Nat.zero_lt_one⟩)
+          (fun _ giving transmitting => absurd (.inr (.inr ⟨giving, transmitting⟩)) both) with
+        | ⟨0, empty, _⟩ => absurd empty (Nat.lt_irrefl 0)
+        | ⟨_ + 1, _, no⟩ => absurd no (Nat.lt_irrefl 0),
+   fun ⟨embodied, both⟩ => (finite_binding_counting_under_counted S uncounted
+      (Q := fun n _ a => ∃ t, 0 < n t ∧ 0 < a t)).mp
+    fun _ _ _ _ _ quiet _ _ arises joint => match both with
+    | .inl binds => match arises embodied with
+      | ⟨t, joins⟩ => ⟨t, quiet (.inl binds) t joins, joins⟩
+    | .inr (.inl bounds) => match arises embodied with
+      | ⟨t, joins⟩ => ⟨t, quiet (.inr bounds) t joins, joins⟩
+    | .inr (.inr ⟨giving, transmitting⟩) => joint embodied giving transmitting⟩
 
 /-- **The laws of counting under enclosure from some step on, where the premises of each
 selection bind, where the counts exist**: those of `World.enclosed_counting_under_counted` and
@@ -255,10 +349,31 @@ theorem enclosed_binding_activity_iff_counted (S : Premise → Bool) :
     (∀ w : World, w.Meets S → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) →
       (∀ p, S p = true → p.Binds w) → w.CountsHold fun n _ _ => ∃ t, 0 < n t) ↔
       S .dependent = true ∨ S .acting = true ∨ S .taking = true ∨ S .embodied = true :=
-  ((enclosed_binding_counting_under_counted S).symm.trans
-    (enclosed_binding_counting_under S
-      (fun same ⟨t, pos⟩ => ⟨t, Nat.lt_of_lt_of_le pos (Nat.le_of_eq (same t).1)⟩))).trans
-    (enclosed_binding_activity_iff S)
+  ⟨fun law => match hp : S .dependent, ha : S .acting, ht : S .taking, he : S .embodied with
+    | true, _, _, _ => .inl rfl
+    | false, true, _, _ => .inr (.inl rfl)
+    | false, false, true, _ => .inr (.inr (.inl rfl))
+    | false, false, false, true => .inr (.inr (.inr rfl))
+    | false, false, false, false => match (enclosed_binding_counting_under_counted S
+          (Q := fun n _ _ => ∃ t, 0 < n t)).mpr law
+        (fun _ => 0) (fun _ => 0) (fun _ => 0) (fun _ => ⟨0, rfl, rfl⟩)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied)
+        (fun
+          | .inl selected => nomatch hp.symm.trans selected
+          | .inr (.inl selected) => nomatch ha.symm.trans selected
+          | .inr (.inr selected) => nomatch ht.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected) with
+      | ⟨_, no⟩ => absurd no (Nat.lt_irrefl 0),
+   fun selected => (enclosed_binding_counting_under_counted S
+      (Q := fun n _ _ => ∃ t, 0 < n t)).mp
+    fun _ _ _ tally _ _ acts arises _ => match selected with
+    | .inl dependent => acts (.inl dependent)
+    | .inr (.inl acting) => acts (.inr (.inl acting))
+    | .inr (.inr (.inl taking)) => acts (.inr (.inr taking))
+    | .inr (.inr (.inr embodied)) => match arises embodied with
+      | ⟨t, joins⟩ => ⟨t + 1, tally.after_pos joins⟩⟩
 
 /-- Where the counts exist, in such worlds something arises exactly where embodiment is
 selected. -/
@@ -266,10 +381,19 @@ theorem enclosed_binding_arising_iff_counted (S : Premise → Bool) :
     (∀ w : World, w.Meets S → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) →
       (∀ p, S p = true → p.Binds w) → w.CountsHold fun _ _ a => ∃ t, 0 < a t) ↔
       S .embodied = true :=
-  ((enclosed_binding_counting_under_counted S).symm.trans
-    (enclosed_binding_counting_under S
-      (fun same ⟨t, pos⟩ => ⟨t, Nat.lt_of_lt_of_le pos (Nat.le_of_eq (same t).2.2)⟩))).trans
-    (enclosed_binding_arising_iff S)
+  ⟨fun law => match he : S .embodied with
+    | true => rfl
+    | false => match (enclosed_binding_counting_under_counted S
+          (Q := fun _ _ a => ∃ t, 0 < a t)).mpr law (fun _ => 1)
+        (fun _ => 0) (fun _ => 0) (fun _ => ⟨1, rfl, rfl⟩)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied) (fun _ => ⟨0, Nat.zero_lt_one⟩)
+        (fun selected => nomatch he.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected) with
+      | ⟨_, no⟩ => absurd no (Nat.lt_irrefl 0),
+   fun embodied => (enclosed_binding_counting_under_counted S
+      (Q := fun _ _ a => ∃ t, 0 < a t)).mp
+     fun _ _ _ _ _ _ _ arises _ => arises embodied⟩
 
 /-- And, where the counts exist, that something arises across a step at which something is
 active exactly where embodiment is selected and either the selection binds counting or selects
@@ -278,12 +402,33 @@ theorem enclosed_binding_joint_iff_counted (S : Premise → Bool) :
     (∀ w : World, w.Meets S → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) →
       (∀ p, S p = true → p.Binds w) → w.CountsHold fun n _ a => ∃ t, 0 < n t ∧ 0 < a t) ↔
       S .embodied = true ∧ (BindsCounting S ∨ S .acting = true ∧ S .transmitting = true) :=
-  ((enclosed_binding_counting_under_counted S).symm.trans
-    (enclosed_binding_counting_under S
-      (fun same ⟨t, active, arising⟩ => ⟨t,
-        Nat.lt_of_lt_of_le active (Nat.le_of_eq (same t).1),
-        Nat.lt_of_lt_of_le arising (Nat.le_of_eq (same t).2.2)⟩))).trans
-    (enclosed_binding_joint_iff S)
+  ⟨fun law => match he : S .embodied with
+    | false => match (enclosed_binding_counting_under_counted S
+          (Q := fun n _ a => ∃ t, 0 < n t ∧ 0 < a t)).mpr law (fun _ => 1)
+        (fun _ => 0) (fun _ => 0) (fun _ => ⟨1, rfl, rfl⟩)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied)
+        (fun ⟨_, embodied, _⟩ => nomatch he.symm.trans embodied) (fun _ => ⟨0, Nat.zero_lt_one⟩)
+        (fun selected => nomatch he.symm.trans selected)
+        (fun selected => nomatch he.symm.trans selected) with
+      | ⟨_, _, no⟩ => absurd no (Nat.lt_irrefl 0)
+    | true => if both : BindsCounting S ∨ S .acting = true ∧ S .transmitting = true then
+        ⟨rfl, both⟩
+      else match (enclosed_binding_counting_under_counted S
+            (Q := fun n _ a => ∃ t, 0 < n t ∧ 0 < a t)).mpr law Queue.lone (fun _ => 0)
+          Queue.joins Queue.lone_tally (fun binds => absurd (.inl binds) both)
+          (fun _ => ⟨1, 1, Queue.lone_settles, fun
+            | 0, early, _ => absurd early (Nat.not_succ_le_zero 0)
+            | _ + 1, _, _ => Nat.zero_lt_one⟩) (fun _ => ⟨1, Nat.zero_lt_one⟩)
+          (fun _ => ⟨0, Nat.zero_lt_one⟩)
+          (fun _ acting transmitting => absurd (.inr ⟨acting, transmitting⟩) both) with
+        | ⟨0, empty, _⟩ => absurd empty (Nat.lt_irrefl 0)
+        | ⟨_ + 1, _, no⟩ => absurd no (Nat.lt_irrefl 0),
+   fun ⟨embodied, both⟩ => (enclosed_binding_counting_under_counted S
+      (Q := fun n _ a => ∃ t, 0 < n t ∧ 0 < a t)).mp
+    fun _ _ _ _ quiet _ _ arises joint => match both with
+    | .inl binds => match arises embodied with
+      | ⟨t, joins⟩ => ⟨t, quiet binds t joins, joins⟩
+    | .inr ⟨acting, transmitting⟩ => joint embodied acting transmitting⟩
 
 /-- **The premises leave counting free, where the counts exist**: a property of the counts holds
 of every tally exactly when it holds of every counted census of every world meeting every
@@ -339,11 +484,49 @@ theorem enclosed_iff_finite_counting_under_counted (S : Premise → Bool) :
       ((∀ w : World, w.Meets S → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) → w.CountsHold Q) ↔
         ∀ w : World, w.Meets S → w.Finite → w.CountsHold Q)) ↔
       BoundsChange S ∧ BindsCounting S :=
-  Iff.trans ⟨fun law Q _ => (enclosed_counting_under_counted S (Q := Q)).trans
-      ((law Q).trans (finite_counting_under_counted S).symm),
-    fun law Q => (enclosed_counting_under_counted S (Q := Q)).symm.trans
-      ((law Q trivial).trans (finite_counting_under_counted S))⟩
-    (enclosed_iff_finite_tally S (Props := fun _ => True) fun _ _ => trivial)
+  have growing : ¬ BoundsChange S → ¬ ∀ Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop,
+      ((∀ w : World, w.Meets S → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) → w.CountsHold Q) ↔
+        ∀ w : World, w.Meets S → w.Finite → w.CountsHold Q) := fun free law =>
+    match (enclosed_counting_under_counted S (Q := fun n _ _ => ∃ M, ∀ t, n t ≤ M)).mpr
+        ((law _).mpr fun _ _ finite alive _ _ _ census counted =>
+          match finite.census_bounded with
+          | ⟨M, bounded⟩ => ⟨M, fun t => Nat.le_trans (Nat.le_of_eq (counted t).1)
+              (bounded alive census t)⟩)
+        (fun t => t + 1) (fun _ => 0) (fun _ => 1) (fun t => ⟨t + 1, rfl, rfl⟩)
+        (fun _ _ _ => Nat.succ_pos _) (fun bounds => absurd bounds free) with
+    | ⟨M, bounded⟩ => Nat.lt_irrefl M (bounded M)
+  have arising : BoundsChange S → ¬ BindsCounting S → ¬ ∀ Q : (Nat → Nat) → (Nat → Nat) →
+      (Nat → Nat) → Prop,
+      ((∀ w : World, w.Meets S → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) → w.CountsHold Q) ↔
+        ∀ w : World, w.Meets S → w.Finite → w.CountsHold Q) := fun bounds free law =>
+    Nat.lt_irrefl 0 ((enclosed_counting_under_counted S
+        (Q := fun n _ a => ∀ t, 0 < a t → 0 < n t)).mpr ((law _).mpr
+        ((finite_counting_binds_iff_counted S).mpr (.inr bounds))) _ _ _ Queue.lone_tally
+      (fun binds => absurd binds free)
+      (fun _ => ⟨1, 1, Queue.lone_settles, fun t later pos => match t, later, pos with
+        | 0, later, _ => absurd later (Nat.not_succ_le_zero 0)
+        | _ + 1, _, pos => absurd pos (Nat.lt_irrefl 0)⟩)
+      0 Nat.zero_lt_one)
+  ⟨fun law => match hb : S .balanced, he : S .embodied, hd : S .dissipative, ha : S .acting,
+      ht : S .taking with
+    | true, true, true, true, _ => ⟨⟨hb, he, hd⟩, ⟨hb, he, .inl ha⟩⟩
+    | true, true, true, false, true => ⟨⟨hb, he, hd⟩, ⟨hb, he, .inr ⟨ht, hd⟩⟩⟩
+    | true, true, true, false, false => absurd law (arising ⟨hb, he, hd⟩ fun
+        | ⟨_, _, .inl acting⟩ => nomatch ha.symm.trans acting
+        | ⟨_, _, .inr ⟨taking, _⟩⟩ => nomatch ht.symm.trans taking)
+    | false, _, _, _, _ => absurd law (growing fun bounds => nomatch hb.symm.trans bounds.1)
+    | true, false, _, _, _ => absurd law (growing fun bounds => nomatch he.symm.trans bounds.2.1)
+    | true, true, false, _, _ =>
+      absurd law (growing fun bounds => nomatch hd.symm.trans bounds.2.2),
+   fun ⟨bounds, binds⟩ _ => (enclosed_counting_under_counted S).symm.trans
+    (Iff.trans ⟨fun law n c a tally _ quiet bounded => law n c a tally (fun _ => quiet (.inl binds))
+        fun _ => match bounded bounds with
+          | ⟨_, bound⟩ => ⟨0, _, bound, fun t _ => quiet (.inl binds) t⟩,
+      fun law n c a tally quiet bounded => match bounded bounds with
+        | ⟨_, _, bound, _⟩ => law n c a tally ⟨_, fun t => Nat.le_trans (Nat.le_add_right _ _)
+            (bound.from_zero t (Nat.zero_le t))⟩ (fun _ => quiet binds)
+            (fun _ => ⟨_, bound.from_zero⟩)⟩
+      (finite_counting_under_counted S))⟩
 
 /-- **Read on what stands, where the counts exist**: under each selection, a pointwise property
 holds of what stands in every world meeting it exactly when it holds of every counted census of

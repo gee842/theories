@@ -54,11 +54,8 @@ count to exist.
 Each law here is a census table (`World.table_holds`, `Becoming.CensusTable`): its
 counted soundness and its witness lemma are those of the decided law of `Becoming.Counting`
 (`World.counting_under_sound`, `World.counting_under_witnessed` and their family), which also
-states the counted binding steps. Each equivalence saying where a selection binds counting or
-bounds change is the counted law, the decided law and the decided equivalence composed: the
-counted and the decided law have one tally side, and the decided law needs only a proof that the
-property is pointwise. The laws where the premises bind are stated where the counts exist in
-`Becoming.CensusBinding`.
+states the counted binding steps. The laws where the premises bind are stated where the counts
+exist in `Becoming.CensusBinding`.
 
 No premise beyond what each theorem names. No ethical predicate, ranking or axiom occurs.
 -/
@@ -171,12 +168,23 @@ selection, where the counts exist, exactly when the selection binds counting. -/
 theorem counting_binds_iff_counted (S : Premise → Bool) :
     (∀ w : World, w.Meets S → w.CountsHold fun n _ a => ∀ t, 0 < a t → 0 < n t) ↔
       BindsCounting S :=
-  ((counting_under_counted S).symm.trans
-    (counting_under S
-      (fun same law t pos =>
-        Nat.lt_of_lt_of_le (law t (Nat.lt_of_lt_of_le pos (Nat.le_of_eq (same t).2.2.symm)))
-          (Nat.le_of_eq (same t).1)))).trans
-    (counting_binds_iff S)
+  have unbound : ¬ BindsCounting S → ¬ ∀ w : World, w.Meets S →
+      w.CountsHold fun n _ a => ∀ t, 0 < a t → 0 < n t := fun free law =>
+    Nat.lt_irrefl 0 ((counting_under_counted S).mpr law _ _ _ Queue.lone_tally
+      (fun binds => absurd binds free) 0 Nat.zero_lt_one)
+  ⟨fun law => match hb : S .balanced, he : S .embodied, ha : S .acting, ht : S .taking,
+      hd : S .dissipative with
+    | true, true, true, _, _ => ⟨hb, he, .inl ha⟩
+    | true, true, false, true, true => ⟨hb, he, .inr ⟨ht, hd⟩⟩
+    | false, _, _, _, _ => absurd law (unbound fun binds => nomatch hb.symm.trans binds.1)
+    | true, false, _, _, _ => absurd law (unbound fun binds => nomatch he.symm.trans binds.2.1)
+    | true, true, false, false, _ => absurd law (unbound fun binds => match binds.2.2 with
+        | .inl acting => nomatch ha.symm.trans acting
+        | .inr ⟨taking, _⟩ => nomatch ht.symm.trans taking)
+    | true, true, false, true, false => absurd law (unbound fun binds => match binds.2.2 with
+        | .inl acting => nomatch ha.symm.trans acting
+        | .inr ⟨_, dissipative⟩ => nomatch hd.symm.trans dissipative),
+   fun binds => (counting_under_counted S).mp fun _ _ _ _ quiet => quiet binds⟩
 
 theorem ring_countsOf {n c a : Nat → Nat} {M : Nat} (tally : Tally n c a)
     (bounded : ∀ t, n t ≤ M) : (ring n c M).CountsOf (Ring.seated n c M) n c a :=
@@ -223,13 +231,21 @@ is a law of counting under a selection exactly when the selection bounds change.
 theorem enclosed_change_bound_iff_counted (S : Premise → Bool) :
     (∀ w : World, w.Meets S → (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) →
         w.CountsHold fun n c a => ∃ T B, ChangeBound T B n c a) ↔ BoundsChange S :=
-  ((enclosed_counting_under_counted S).symm.trans
-    (enclosed_counting_under S
-      (fun same ⟨T, B, bound⟩ => ⟨T, B, fun t later => Nat.le_trans (Nat.le_of_eq
-          (congr (congrArg (· + ·) (same t).1.symm) (TallyWorlds.occurrences_congr (fun s =>
-            congr (congrArg (· + ·) (same s).2.1.symm) (same s).2.2.symm) t)))
-          (bound t later)⟩))).trans
-    (enclosed_change_bound_iff S)
+  have growing : Tally (fun t => t + 1) (fun _ => 0) (fun _ => 1) := fun t => ⟨t + 1, rfl, rfl⟩
+  ⟨fun law => if bounds : S .balanced = true ∧ S .embodied = true ∧ S .dissipative = true
+      then bounds else
+      match (enclosed_counting_under_counted S
+          (Q := fun n (_ _ : Nat → Nat) => ∃ T B, ∀ t, T ≤ t → n t ≤ B)).mpr
+          (fun w meets enclosed alive n c a census counted =>
+            match law w meets enclosed alive n c a census counted with
+            | ⟨T, B, bound⟩ => ⟨T, B, fun t later =>
+                Nat.le_trans (Nat.le_add_right _ _) (bound t later)⟩)
+          _ _ _ growing (fun _ t _ => Nat.zero_lt_succ t) (fun bound => absurd bound bounds) with
+      | ⟨T, B, bounded⟩ => (Nat.not_succ_le_self B (Nat.le_trans
+          (Nat.succ_le_succ (Nat.le_add_right B T)) (bounded (B + T) (Nat.le_add_left T B)))).elim,
+   fun ⟨balanced, embodied, dissipative⟩ _ meets ⟨T, enclosed⟩ _ _ _ _ census counted =>
+     ⟨T, _, enclosure_bounds_change_counted census counted (meets _ embodied) (meets _ balanced)
+       (meets _ dissipative) enclosed⟩⟩
 
 /-- **The laws of counting under each selection, in finite worlds, where the counts exist**: the
 tally with at most some number active at each step; where the selection binds counting or bounds
@@ -248,25 +264,53 @@ active is a law under a selection exactly when the selection binds counting or b
 theorem finite_counting_binds_iff_counted (S : Premise → Bool) :
     (∀ w : World, w.Meets S → w.Finite →
       w.CountsHold fun n _ a => ∀ t, 0 < a t → 0 < n t) ↔ BindsCounting S ∨ BoundsChange S :=
-  ((finite_counting_under_counted S).symm.trans
-    (finite_counting_under S
-      (fun same law t pos =>
-        Nat.lt_of_lt_of_le (law t (Nat.lt_of_lt_of_le pos (Nat.le_of_eq (same t).2.2.symm)))
-          (Nat.le_of_eq (same t).1)))).trans
-    (finite_counting_binds_iff S)
+  have unbound : ¬ (BindsCounting S ∨ BoundsChange S) → ¬ ∀ w : World, w.Meets S → w.Finite →
+      w.CountsHold fun n _ a => ∀ t, 0 < a t → 0 < n t := fun free law =>
+    Nat.lt_irrefl 0 ((finite_counting_under_counted S).mpr law _ _ _ Queue.lone_tally
+      ⟨1, fun | 0 => Nat.zero_le 1 | _ + 1 => Nat.le_refl 1⟩
+      (fun binds => absurd binds free) (fun bounds => absurd (.inr bounds) free)
+      0 Nat.zero_lt_one)
+  ⟨fun law => match hb : S .balanced, he : S .embodied, ha : S .acting,
+      hd : S .dissipative with
+    | true, true, true, _ => .inl ⟨hb, he, .inl ha⟩
+    | true, true, false, true => .inr ⟨hb, he, hd⟩
+    | false, _, _, _ => absurd law (unbound fun
+        | .inl binds => nomatch hb.symm.trans binds.1
+        | .inr bounds => nomatch hb.symm.trans bounds.1)
+    | true, false, _, _ => absurd law (unbound fun
+        | .inl binds => nomatch he.symm.trans binds.2.1
+        | .inr bounds => nomatch he.symm.trans bounds.2.1)
+    | true, true, false, false => absurd law (unbound fun
+        | .inl ⟨_, _, .inl acting⟩ => nomatch ha.symm.trans acting
+        | .inl ⟨_, _, .inr ⟨_, dissipative⟩⟩ => nomatch hd.symm.trans dissipative
+        | .inr ⟨_, _, dissipative⟩ => nomatch hd.symm.trans dissipative),
+   fun binds => (finite_counting_under_counted S).mp fun _ _ _ _ _ quiet _ => quiet binds⟩
 
 /-- In finite worlds, where the counts exist, a change bound from the first step is a law under a
 selection exactly when the selection bounds change. -/
 theorem finite_change_bound_iff_counted (S : Premise → Bool) :
     (∀ w : World, w.Meets S → w.Finite →
       w.CountsHold fun n c a => ∃ B, ChangeBound 0 B n c a) ↔ BoundsChange S :=
-  ((finite_counting_under_counted S).symm.trans
-    (finite_counting_under S
-      (fun same ⟨B, bound⟩ => ⟨B, fun t later => Nat.le_trans (Nat.le_of_eq
-          (congr (congrArg (· + ·) (same t).1.symm) (TallyWorlds.occurrences_congr (fun s =>
-            congr (congrArg (· + ·) (same s).2.1.symm) (same s).2.2.symm) t)))
-          (bound t later)⟩))).trans
-    (finite_change_bound_iff S)
+  have replaced : Tally (fun _ => 1) (fun _ => 1) (fun _ => 1) := fun _ => ⟨0, rfl, rfl⟩
+  have bounded : ∀ t, (fun _ => 1 : Nat → Nat) t ≤ 1 := fun _ => Nat.le_refl 1
+  have recurring : ¬ ∃ B, ChangeBound 0 B (fun _ => 1) (fun _ => 1) (fun _ => 1) :=
+    fun ⟨_, bound⟩ => bound.not_recurring fun N => ⟨N, Nat.le_refl N,
+      Nat.lt_of_lt_of_le Nat.zero_lt_one (Nat.le_add_right 1 1)⟩
+  ⟨fun law => match hb : S .balanced, he : S .embodied, hd : S .dissipative with
+    | true, true, true => ⟨hb, he, hd⟩
+    | false, _, _ => absurd (law (embodiedRing _ _ 1) (embodiedRing_meets bounded hb)
+        (places_listed _) _ _ _ _ (Ring.census bounded _) (embodiedRing_countsOf replaced bounded))
+        recurring
+    | true, false, _ => absurd (law (ring _ _ 1) (ring_meets bounded he)
+        (places_listed _) _ _ _ _ (Ring.census bounded _) (ring_countsOf replaced bounded))
+        recurring
+    | true, true, false => absurd (law (balancedRing _ _ 1)
+        (balancedRing_meets replaced bounded (fun _ _ _ => Nat.zero_lt_one) hd)
+        (places_listed _) _ _ _ _ (Ring.census bounded _)
+        (balancedRing_countsOf replaced bounded)) recurring,
+   fun ⟨balanced, embodied, dissipative⟩ _ meets finite _ _ _ _ census counted =>
+    ⟨_, enclosure_bounds_change_counted census counted (meets _ embodied) (meets _ balanced)
+      (meets _ dissipative) fun t _ => finite.enclosed t⟩⟩
 
 end World
 
