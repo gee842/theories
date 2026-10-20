@@ -74,6 +74,7 @@ Aliases: `widening along a reading`, `沿读法的扩大`, `widening over a grow
 
 - 20 October 2026: added (R47), section 8.1 item 5's widening over a grown world; study section 257.
 - 20 October 2026, PE1 (what identifying interderivable propositions keeps and loses): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the chapter changed only by PE1's edits: a sentence in section 0's proof-language row, and in section 9 a paragraph on why the core excludes propext, the receipt, counts and layers. Read before re-pointing. The claim is unchanged.
+- 20 October 2026, EV5b (the evolution row's central laws on the base): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only by EV5b's edits: the Becoming.GroupEnding bullet in 2.4 (the law for groups not uniform) and section 9's receipt and counts. Read before re-pointing. The claim is unchanged.
 
 </details>
 

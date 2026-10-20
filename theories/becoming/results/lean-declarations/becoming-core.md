@@ -6358,7 +6358,7 @@ Definitions and types:
 <a id="module-607b442f3647"></a>
 
 <details>
-<summary>GroupEnding.lean — 24 explicit declarations</summary>
+<summary>GroupEnding.lean — 25 explicit declarations</summary>
 
 [Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked
 
@@ -6368,33 +6368,34 @@ Imports: `Becoming.SelectionLevels`, `Becoming.Continuation`
 
 | Theorem or lemma | Line |
 |---|---:|
-| [Becoming.GroupEnding.excess_pos_of_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L67) | 67 |
-| [Becoming.GroupEnding.among_not_against](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L74) | 74 |
-| [Becoming.GroupEnding.rises_iff_ended](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L81) | 81 |
-| [Becoming.GroupEnding.not_against_of_ended](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L91) | 91 |
-| [Becoming.GroupEnding.pairs_pos](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L100) | 100 |
-| [Becoming.GroupEnding.rises_of_ended](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L105) | 105 |
-| [Becoming.GroupEnding.mem_whole](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L120) | 120 |
-| [Becoming.GroupEnding.Flow.inactive_childless](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L132) | 132 |
-| [Becoming.GroupEnding.Flow.excess_childless](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L139) | 139 |
-| [Becoming.GroupEnding.Flow.offspring_zero](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L151) | 151 |
-| [Becoming.GroupEnding.Flow.group_childless](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L159) | 159 |
-| [Becoming.GroupEnding.Flow.ended_of_inactive](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L167) | 167 |
-| [Becoming.GroupEnding.Flow.raises_of_inactive](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L178) | 178 |
-| [Becoming.GroupEnding.Flow.all_end](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L195) | 195 |
-| [Becoming.GroupEnding.uniform](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L217) | 217 |
-| [Becoming.GroupEnding.equal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L225) | 225 |
-| [Becoming.GroupEnding.Outweighed.outweighed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L240) | 240 |
-| [Becoming.GroupEnding.Outweighed.keeping_rises](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L254) | 254 |
-| [Becoming.GroupEnding.Outweighs.outweighs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L279) | 279 |
+| [Becoming.GroupEnding.excess_pos_of_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L69) | 69 |
+| [Becoming.GroupEnding.among_not_against](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L76) | 76 |
+| [Becoming.GroupEnding.rises_iff_ended](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L83) | 83 |
+| [Becoming.GroupEnding.not_against_of_ended](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L93) | 93 |
+| [Becoming.GroupEnding.pairs_pos](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L102) | 102 |
+| [Becoming.GroupEnding.rises_of_ended](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L107) | 107 |
+| [Becoming.GroupEnding.mem_whole](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L122) | 122 |
+| [Becoming.GroupEnding.Flow.inactive_childless](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L134) | 134 |
+| [Becoming.GroupEnding.Flow.excess_childless](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L141) | 141 |
+| [Becoming.GroupEnding.Flow.offspring_zero](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L153) | 153 |
+| [Becoming.GroupEnding.Flow.group_childless](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L161) | 161 |
+| [Becoming.GroupEnding.Flow.ended_of_inactive](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L169) | 169 |
+| [Becoming.GroupEnding.Flow.raises_of_inactive](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L180) | 180 |
+| [Becoming.GroupEnding.Flow.rises_iff_inactive](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L200) | 200 |
+| [Becoming.GroupEnding.Flow.all_end](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L216) | 216 |
+| [Becoming.GroupEnding.uniform](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L238) | 238 |
+| [Becoming.GroupEnding.equal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L246) | 246 |
+| [Becoming.GroupEnding.Outweighed.outweighed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L261) | 261 |
+| [Becoming.GroupEnding.Outweighed.keeping_rises](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L275) | 275 |
+| [Becoming.GroupEnding.Outweighs.outweighs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L300) | 300 |
 
 Definitions and types:
 
-- `def` [Becoming.GroupEnding.Ended](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L63) (L63)
-- `def` [Becoming.GroupEnding.keepingFirst](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L208) (L208)
-- `def` [Becoming.GroupEnding.keeps](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L211) (L211)
-- `def` [Becoming.GroupEnding.Outweighed.offspring](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L231) (L231)
-- `def` [Becoming.GroupEnding.Outweighs.offspring](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L270) (L270)
+- `def` [Becoming.GroupEnding.Ended](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L65) (L65)
+- `def` [Becoming.GroupEnding.keepingFirst](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L229) (L229)
+- `def` [Becoming.GroupEnding.keeps](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L232) (L232)
+- `def` [Becoming.GroupEnding.Outweighed.offspring](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L252) (L252)
+- `def` [Becoming.GroupEnding.Outweighs.offspring](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean#L291) (L291)
 
 </details>
 

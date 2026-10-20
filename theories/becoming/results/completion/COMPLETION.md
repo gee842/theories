@@ -2,12 +2,12 @@
 
 # The completion criterion, run
 
-The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T115028.794691Z` and the connectivity measure of `9ae5a6ae4` (core receipt `20261020T113206.066061Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
+The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T115958.613759Z` and the connectivity measure of `9ae5a6ae4` (core receipt `20261020T113206.066061Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
 
 | | Criterion | Met | Findings |
 |---|---|---|---:|
-| K1 | Coverage | no | 4 |
-| K2 | Unity | no | 4 |
+| K1 | Coverage | no | 2 |
+| K2 | Unity | no | 2 |
 | K3 | Premises | yes | 0 |
 | K4 | Representation | yes | 0 |
 | K5 | Enclosure | yes | 0 |
@@ -30,7 +30,7 @@ The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_pro
 | Capacity | differentiation | `WithinMoves.after_course`, `Renewable.no_exact_finite_reading`, `Web.paths_extension_iff_widens`, `Flow.Balances.retains_iff_within_margin`, `Flow.Balances.widens_iff_others_within` | [effective-capacity-and-eventual-reachability](../records/effective-capacity-and-eventual-reachability.md), [becoming-finite-horizon](../records/becoming-finite-horizon.md), [comparison-by-widening](../records/comparison-by-widening.md), [significance-retained-within-margin](../records/significance-retained-within-margin.md), [own-widening-within-the-margin](../records/own-widening-within-the-margin.md) | §2.1, §6.1 | proved | 5 |
 | Responsibility | differentiation | `Flow.act_unselected`, `act_courses_unselected`, `Flow.Balances.comparison_within_response`, `presupposition_scopes`, `Dependence.Overdetermined.only_together` | [the-gap-for-ones-own-act](../records/the-gap-for-ones-own-act.md), [comparison-where-the-rest-responds](../records/comparison-where-the-rest-responds.md), [presupposition-scopes](../records/presupposition-scopes.md), [joint-difference-making](../records/joint-difference-making.md) | §2.6, §3.4, §4.1, §6.5 | proved | 11 |
 | Life | domain | `Web.roles_alive`, `Web.living_on_reaches`, `Flow.descent_reaches`, `Web.Unceasing.activeRenewer_recurs` | [life-as-condition-of-life](../records/life-as-condition-of-life.md), [living-on-and-descent](../records/living-on-and-descent.md), [unceasing-generation-needs-renewal](../records/unceasing-generation-needs-renewal.md) | §2.2 | proved | — |
-| Evolution | domain | `Flow.selection_within`, `Flow.transmitted_supported`, `Flow.selected_le`, `Web.transmits_at_iff`, `Flow.no_new_dependence`, `SelectionTerm.covariation`, `SelectionTerm.Flow.support_not_lower`, `SelectionTerm.Flow.support_moved_rises`, `Reproduction.Flow.number_within_take`, `Reproduction.Flow.lineage_ends`, `Reproduction.Flow.closed_lineage_lowered`, `SelectionLevels.levels`, `SelectionLevels.among_for_of_rises`, `SelectionLevels.rises_exact_iff_levels`, `GroupEnding.rises_iff_ended`, `GroupEnding.Flow.excess_childless`, `GroupEnding.Flow.all_end` | [evolution-on-descent](../records/evolution-on-descent.md), [selection-term-over-generations](../records/selection-term-over-generations.md), [what-bounds-offspring-numbers](../records/what-bounds-offspring-numbers.md), [selection-within-and-among-groups](../records/selection-within-and-among-groups.md), [selection-among-groups-by-ending](../records/selection-among-groups-by-ending.md), [transmission-is-inheritance-and-need](../records/transmission-is-inheritance-and-need.md) | §2.4 | proved | 9 |
+| Evolution | domain | `Flow.selection_within`, `Flow.transmitted_supported`, `Flow.selected_le`, `Web.transmits_at_iff`, `Flow.no_new_dependence`, `SelectionTerm.covariation`, `SelectionTerm.Flow.support_not_lower`, `SelectionTerm.Flow.support_moved_rises`, `Reproduction.Flow.number_within_take`, `Reproduction.Flow.lineage_ends`, `Reproduction.Flow.closed_lineage_lowered`, `SelectionLevels.levels`, `SelectionLevels.rises_exact_iff_levels`, `GroupEnding.Flow.rises_iff_inactive`, `GroupEnding.Flow.excess_childless`, `GroupEnding.Flow.all_end` | [evolution-on-descent](../records/evolution-on-descent.md), [selection-term-over-generations](../records/selection-term-over-generations.md), [what-bounds-offspring-numbers](../records/what-bounds-offspring-numbers.md), [selection-within-and-among-groups](../records/selection-within-and-among-groups.md), [selection-among-groups-by-ending](../records/selection-among-groups-by-ending.md), [transmission-is-inheritance-and-need](../records/transmission-is-inheritance-and-need.md) | §2.4 | proved | 9 |
 | Learning | domain | `Learning.goAlike_iff_lumped`, `Learnable.learnable_iff`, `LearnableRuns.learnable_iff_tracks`, `Limit.identifies_iff_tracks`, `Learning.Training.unselected_beyond_data` | [generalization-through-lumping](../records/generalization-through-lumping.md), [learnable-through-a-map](../records/learnable-through-a-map.md), [learning-through-a-map-is-tracking-in-the-limit](../records/learning-through-a-map-is-tracking-in-the-limit.md) | §3.2, §3.3 | proved | 7 |
 | Collective | domain | `Flow.mutuallyDependent_iff_reach`, `Withholding.withholding_spreads`, `SharedCodes.run_agrees_every_start_iff`, `RelativePosition.rise_needs_fall`, `RuleCapture.uniform_locks`, `ClosedCapture.lock_outlives_loss` | [mutual-dependence-and-its-pace](../records/mutual-dependence-and-its-pace.md), [giving-that-waits-on-giving](../records/giving-that-waits-on-giving.md), [a-code-formed-between-formations](../records/a-code-formed-between-formations.md), [relative-position-is-zero-sum](../records/relative-position-is-zero-sum.md), [capture-through-the-rule](../records/capture-through-the-rule.md), [closed-capture](../records/closed-capture.md) | §4.2, §4.3, §4.4, §4.5 | proved | 7 |
 | Significance | domain | `unrestricted_iff_livingSignificance`, `Web.widens_iff_retains_adds`, `Web.paths_comparison_widens`, `Web.paths_one_object`, `Weighting.widens_iff_every_positive` | [continuation-condition-yields-living-significance](../records/continuation-condition-yields-living-significance.md), [significance-retained-within-margin](../records/significance-retained-within-margin.md), [comparison-by-widening](../records/comparison-by-widening.md), [continuation-condition-decomposition](../records/continuation-condition-decomposition.md), [widening-as-what-every-weighting-ranks](../records/widening-as-what-every-weighting-ranks.md) | §6.1, §6.2, §6.4, §6.5 | proved | 2, 12 |
@@ -39,20 +39,16 @@ The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_pro
 ## K1. Coverage: not met
 
 - evaluation: Becoming.forced_iff_center stands apart from both base families (apart: own vocabulary)
-- evolution: Becoming.SelectionLevels.among_for_of_rises stands apart from both base families (apart: own vocabulary)
 - evolution: Becoming.SelectionLevels.rises_exact_iff_levels stands apart from both base families (apart: own vocabulary)
-- evolution: Becoming.GroupEnding.rises_iff_ended stands apart from both base families (apart: own vocabulary)
 
 ## K2. Unity: not met
 
 - evaluation: Becoming.forced_iff_center: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed
-- evolution: Becoming.SelectionLevels.among_for_of_rises: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed
-- evolution: Becoming.SelectionLevels.rises_exact_iff_levels: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed
-- evolution: Becoming.GroupEnding.rises_iff_ended: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed
+- evolution: Becoming.SelectionLevels.rises_exact_iff_levels: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed (listed: Becoming.GroupEnding.Flow.rises_iff_inactive)
 
 ## K3. Premises: met
 
-Premises found in central statements: C, the widening comparison (1); a census (2); a reserve (1); a supplied law of exchange (7); activity needing support (10); balance (23); bounded transmission (1); decided (4); dissipation (5); embodiment (1); enclosed (1); living significance (2); only active relata give (11); the continuation condition (3).
+Premises found in central statements: C, the widening comparison (1); a census (2); a reserve (1); a supplied law of exchange (7); activity needing support (10); balance (23); bounded transmission (1); decided (4); dissipation (5); embodiment (1); enclosed (1); living significance (2); only active relata give (12); the continuation condition (3).
 
 Logical premise decided: meets `Decided.exists_below`; unrefuted `not_not_decided`; calibration `HistoryIdeals.cut_decided_iff_lpo`.
 
@@ -60,7 +56,7 @@ No finding.
 
 ## K4. Representation: met
 
-Modelling choices found in central statements: discrete steps (91); natural-number amounts (59); supplied observation (9); a fixed type of formations (9); decidedness (4); naming (1).
+Modelling choices found in central statements: discrete steps (90); natural-number amounts (60); supplied observation (9); a fixed type of formations (9); decidedness (4); naming (1).
 
 Natural-number laws: `falls_not_recurring`: form `Amounts.rests`; `World.comes_to_rest_unrefuted`: form `Amounts.family_rests`; `rising_recurs`: counterexample `Halving.never_rests`; `Flow.excess_bounded`: form `Amounts.losses_within`; `Flow.More.replenishment_unbounded`: form `Amounts.replenishment_unbounded`.
 

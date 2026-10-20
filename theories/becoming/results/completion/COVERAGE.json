@@ -399,9 +399,8 @@
         "Becoming.Reproduction.Flow.lineage_ends",
         "Becoming.Reproduction.Flow.closed_lineage_lowered",
         "Becoming.SelectionLevels.levels",
-        "Becoming.SelectionLevels.among_for_of_rises",
         "Becoming.SelectionLevels.rises_exact_iff_levels",
-        "Becoming.GroupEnding.rises_iff_ended",
+        "Becoming.GroupEnding.Flow.rises_iff_inactive",
         "Becoming.GroupEnding.Flow.excess_childless",
         "Becoming.GroupEnding.Flow.all_end"
       ],
@@ -415,6 +414,9 @@
         ],
         "Becoming.SelectionLevels.levels": [
           "Becoming.GroupEnding.Flow.raises_of_inactive"
+        ],
+        "Becoming.SelectionLevels.rises_exact_iff_levels": [
+          "Becoming.GroupEnding.Flow.rises_iff_inactive"
         ]
       }
     },

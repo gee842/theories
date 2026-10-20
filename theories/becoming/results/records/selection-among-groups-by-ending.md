@@ -14,7 +14,7 @@
 2. With groups uniform in the amount as well, the whole never selects against it, and selects for it wherever a group with more of it leaves offspring beside one with less. (`Becoming.GroupEnding.not_against_of_ended`, `Becoming.GroupEnding.pairs_pos`, `Becoming.GroupEnding.rises_of_ended`)
 3. Where only active formations give, a formation not active at a step leaves no descendant across it; a member depending, at a need of at least m, on a condition whose gated renewal ran into joint excess leaves none from then on. (`Becoming.GroupEnding.Flow.inactive_childless`, `Becoming.GroupEnding.Flow.excess_childless`)
 4. Over generations of descent a member not active has offspring number nothing, a group of such members leaves no offspring, and where the groups with less of the amount are such groups, those groups leave nothing. (`Becoming.GroupEnding.Flow.offspring_zero`, `Becoming.GroupEnding.Flow.group_childless`, `Becoming.GroupEnding.mem_whole`, `Becoming.GroupEnding.Flow.ended_of_inactive`)
-5. With exact transmission and groups uniform in the amount, where the groups with less of it are not active and a group with more of it leaves offspring beside one with less, the mean amount rises across the step. (`Becoming.GroupEnding.Flow.raises_of_inactive`)
+5. With exact transmission and groups uniform in the amount, where the groups with less of it are not active and a group with more of it leaves offspring beside one with less, the mean amount rises across the step. With groups not uniform, the mean rises exactly where k times the within-group discordance is below k times the within-group concordance with the concordance among groups. (`Becoming.GroupEnding.Flow.raises_of_inactive`, `Becoming.GroupEnding.Flow.rises_iff_inactive`)
 6. Where every member of a generation is not active, as where every group depends on one condition that ran into joint excess, the next generation is empty: one shared condition leaves no group to select among. (`Becoming.GroupEnding.Flow.all_end`)
 7. Witnesses: the keeping group and a group whose condition ended. With the member holding back leaving one offspring and its groupmate two, selection among groups outweighs selection within and the whole selects for holding back; with the groupmate leaving five, selection within outweighs and the whole goes against it. (`Becoming.GroupEnding.keepingFirst`, `Becoming.GroupEnding.keeps`, `Becoming.GroupEnding.uniform`, `Becoming.GroupEnding.equal`, `Becoming.GroupEnding.Outweighed.outweighed`, `Becoming.GroupEnding.Outweighed.keeping_rises`, `Becoming.GroupEnding.Outweighs.outweighs`)
 
@@ -36,7 +36,7 @@
 <a id="evidence--证据"></a>
 ## Evidence
 
-Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T094300.398321Z): the 24 declarations of Becoming.GroupEnding, 19 of them theorems, have empty axiom reports; the checker verifies core purity. Built and reviewed in one session, with no separate reviewer; author review in study section 249; not independently reviewed by a person.
+Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T115958.613759Z): the 25 declarations of Becoming.GroupEnding, 20 of them theorems, have empty axiom reports; the checker verifies core purity. Built and reviewed in one session, with no separate reviewer; author review in study section 249; not independently reviewed by a person.
 
 Canonical source: [GroupEnding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean)
 
@@ -71,10 +71,10 @@ Group selection by differential extinction (Wright 1945; Levins 1970 on metapopu
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [GroupEnding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean) | `Becoming.GroupEnding.Ended`, `Becoming.GroupEnding.Flow.all_end`, `Becoming.GroupEnding.Flow.ended_of_inactive`, `Becoming.GroupEnding.Flow.excess_childless`, `Becoming.GroupEnding.Flow.group_childless`, `Becoming.GroupEnding.Flow.inactive_childless`, `Becoming.GroupEnding.Flow.offspring_zero`, `Becoming.GroupEnding.Flow.raises_of_inactive`, `Becoming.GroupEnding.Outweighed.keeping_rises`, `Becoming.GroupEnding.Outweighed.offspring`, `Becoming.GroupEnding.Outweighed.outweighed`, `Becoming.GroupEnding.Outweighs.offspring`, `Becoming.GroupEnding.Outweighs.outweighs`, `Becoming.GroupEnding.among_not_against`, `Becoming.GroupEnding.equal`, `Becoming.GroupEnding.excess_pos_of_lt`, `Becoming.GroupEnding.keepingFirst`, `Becoming.GroupEnding.keeps`, `Becoming.GroupEnding.mem_whole`, `Becoming.GroupEnding.not_against_of_ended`, `Becoming.GroupEnding.pairs_pos`, `Becoming.GroupEnding.rises_iff_ended`, `Becoming.GroupEnding.rises_of_ended`, `Becoming.GroupEnding.uniform` |
+| proof | [GroupEnding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean) | `Becoming.GroupEnding.Ended`, `Becoming.GroupEnding.Flow.all_end`, `Becoming.GroupEnding.Flow.ended_of_inactive`, `Becoming.GroupEnding.Flow.excess_childless`, `Becoming.GroupEnding.Flow.group_childless`, `Becoming.GroupEnding.Flow.inactive_childless`, `Becoming.GroupEnding.Flow.offspring_zero`, `Becoming.GroupEnding.Flow.raises_of_inactive`, `Becoming.GroupEnding.Flow.rises_iff_inactive`, `Becoming.GroupEnding.Outweighed.keeping_rises`, `Becoming.GroupEnding.Outweighed.offspring`, `Becoming.GroupEnding.Outweighed.outweighed`, `Becoming.GroupEnding.Outweighs.offspring`, `Becoming.GroupEnding.Outweighs.outweighs`, `Becoming.GroupEnding.among_not_against`, `Becoming.GroupEnding.equal`, `Becoming.GroupEnding.excess_pos_of_lt`, `Becoming.GroupEnding.keepingFirst`, `Becoming.GroupEnding.keeps`, `Becoming.GroupEnding.mem_whole`, `Becoming.GroupEnding.not_against_of_ended`, `Becoming.GroupEnding.pairs_pos`, `Becoming.GroupEnding.rises_iff_ended`, `Becoming.GroupEnding.rises_of_ended`, `Becoming.GroupEnding.uniform` |
 | proof | [SelectionLevels.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionLevels.lean) | — |
 | proof | [Continuation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean) | — |
-| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T094300.398321Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T115958.613759Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 
@@ -84,6 +84,7 @@ Aliases: `selection among groups by ending`, `经由终止的组间选择`, `gro
 ### History
 
 - 20 October 2026: added (EV5), selection among groups fixed by ending on the base; study section 249.
+- 20 October 2026, EV5b: the base law Flow.rises_iff_inactive added (mixed groups, through SelectionLevels.rises_exact_iff_levels), so the evolution row's central laws reach the base; receipt 20261020T115958.613759Z, study section 259. The claim is unchanged.
 
 </details>
 

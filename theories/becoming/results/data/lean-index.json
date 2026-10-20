@@ -19,8 +19,8 @@
   },
   "statistics": {
     "lean_paths": 1735,
-    "distinct_byte_contents": 1365,
-    "byte_identical_duplicate_groups": 111,
+    "distinct_byte_contents": 1366,
+    "byte_identical_duplicate_groups": 110,
     "roles": {
       "audit-driver": 13,
       "development-attempt": 831,
@@ -28,8 +28,8 @@
       "imported-archive": 23,
       "working-source": 865
     },
-    "working_named_theorem_lemma_occurrences": 23225,
-    "working_explicit_named_declaration_occurrences": 34801,
+    "working_named_theorem_lemma_occurrences": 23226,
+    "working_explicit_named_declaration_occurrences": 34802,
     "working_groups": {
       "abstraction": 45,
       "becoming-core": 281,
@@ -6102,7 +6102,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean",
-      "sha256": "7d0f60ebe4fe95a87b8312af2916172afb185f69a36733af84a03b5ccb5d8595",
+      "sha256": "1849dba544512a5f2196f7b933324d324283dd7334ebf9ffe1e55ae2e0809a9c",
       "role": "working-source",
       "group": "becoming-core",
       "receipt_layer": "core",
@@ -50692,6 +50692,178 @@
       "declaration_counts": {
         "inductive": 1,
         "theorem": 9
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "1849dba544512a5f2196f7b933324d324283dd7334ebf9ffe1e55ae2e0809a9c": {
+      "byte_size": 17513,
+      "line_count": 316,
+      "imports": [
+        "Becoming.SelectionLevels",
+        "Becoming.Continuation"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Ended",
+          "qualified_name_hint": "Becoming.GroupEnding.Ended",
+          "line": 65
+        },
+        {
+          "kind": "theorem",
+          "name": "excess_pos_of_lt",
+          "qualified_name_hint": "Becoming.GroupEnding.excess_pos_of_lt",
+          "line": 69
+        },
+        {
+          "kind": "theorem",
+          "name": "among_not_against",
+          "qualified_name_hint": "Becoming.GroupEnding.among_not_against",
+          "line": 76
+        },
+        {
+          "kind": "theorem",
+          "name": "rises_iff_ended",
+          "qualified_name_hint": "Becoming.GroupEnding.rises_iff_ended",
+          "line": 83
+        },
+        {
+          "kind": "theorem",
+          "name": "not_against_of_ended",
+          "qualified_name_hint": "Becoming.GroupEnding.not_against_of_ended",
+          "line": 93
+        },
+        {
+          "kind": "theorem",
+          "name": "pairs_pos",
+          "qualified_name_hint": "Becoming.GroupEnding.pairs_pos",
+          "line": 102
+        },
+        {
+          "kind": "theorem",
+          "name": "rises_of_ended",
+          "qualified_name_hint": "Becoming.GroupEnding.rises_of_ended",
+          "line": 107
+        },
+        {
+          "kind": "theorem",
+          "name": "mem_whole",
+          "qualified_name_hint": "Becoming.GroupEnding.mem_whole",
+          "line": 122
+        },
+        {
+          "kind": "theorem",
+          "name": "inactive_childless",
+          "qualified_name_hint": "Becoming.GroupEnding.Flow.inactive_childless",
+          "line": 134
+        },
+        {
+          "kind": "theorem",
+          "name": "excess_childless",
+          "qualified_name_hint": "Becoming.GroupEnding.Flow.excess_childless",
+          "line": 141
+        },
+        {
+          "kind": "theorem",
+          "name": "offspring_zero",
+          "qualified_name_hint": "Becoming.GroupEnding.Flow.offspring_zero",
+          "line": 153
+        },
+        {
+          "kind": "theorem",
+          "name": "group_childless",
+          "qualified_name_hint": "Becoming.GroupEnding.Flow.group_childless",
+          "line": 161
+        },
+        {
+          "kind": "theorem",
+          "name": "ended_of_inactive",
+          "qualified_name_hint": "Becoming.GroupEnding.Flow.ended_of_inactive",
+          "line": 169
+        },
+        {
+          "kind": "theorem",
+          "name": "raises_of_inactive",
+          "qualified_name_hint": "Becoming.GroupEnding.Flow.raises_of_inactive",
+          "line": 180
+        },
+        {
+          "kind": "theorem",
+          "name": "rises_iff_inactive",
+          "qualified_name_hint": "Becoming.GroupEnding.Flow.rises_iff_inactive",
+          "line": 200
+        },
+        {
+          "kind": "theorem",
+          "name": "all_end",
+          "qualified_name_hint": "Becoming.GroupEnding.Flow.all_end",
+          "line": 216
+        },
+        {
+          "kind": "def",
+          "name": "keepingFirst",
+          "qualified_name_hint": "Becoming.GroupEnding.keepingFirst",
+          "line": 229
+        },
+        {
+          "kind": "def",
+          "name": "keeps",
+          "qualified_name_hint": "Becoming.GroupEnding.keeps",
+          "line": 232
+        },
+        {
+          "kind": "theorem",
+          "name": "uniform",
+          "qualified_name_hint": "Becoming.GroupEnding.uniform",
+          "line": 238
+        },
+        {
+          "kind": "theorem",
+          "name": "equal",
+          "qualified_name_hint": "Becoming.GroupEnding.equal",
+          "line": 246
+        },
+        {
+          "kind": "def",
+          "name": "offspring",
+          "qualified_name_hint": "Becoming.GroupEnding.Outweighed.offspring",
+          "line": 252
+        },
+        {
+          "kind": "theorem",
+          "name": "outweighed",
+          "qualified_name_hint": "Becoming.GroupEnding.Outweighed.outweighed",
+          "line": 261
+        },
+        {
+          "kind": "theorem",
+          "name": "keeping_rises",
+          "qualified_name_hint": "Becoming.GroupEnding.Outweighed.keeping_rises",
+          "line": 275
+        },
+        {
+          "kind": "def",
+          "name": "offspring",
+          "qualified_name_hint": "Becoming.GroupEnding.Outweighs.offspring",
+          "line": 291
+        },
+        {
+          "kind": "theorem",
+          "name": "outweighs",
+          "qualified_name_hint": "Becoming.GroupEnding.Outweighs.outweighs",
+          "line": 300
+        }
+      ],
+      "declaration_counts": {
+        "def": 5,
+        "theorem": 20
       },
       "textual_markers": {
         "sorry": [],
@@ -362825,10 +362997,6 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255132840263000/ReasonPreparation.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/ReasonPreparation.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean"
-    ],
-    "7d0f60ebe4fe95a87b8312af2916172afb185f69a36733af84a03b5ccb5d8595": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ev5-group-ending/tree/Becoming/GroupEnding.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GroupEnding.lean"
     ],
     "7f3950e1311b1be918c6a70a9e60805215f502ec9b3bb6d5d7b7aa485748956a": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/FullGUTNativeFrontier.lean",

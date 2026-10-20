@@ -185,7 +185,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1718cb973463da641e0ba8c019ddf63c0a74ff5318e2e5757f9179901070b17b",
+      "sha256": "793e7df88160590b5be3b0dcd23a7fd7bde922b168f8e04fbbcc3b5bb13971c9",
       "declarations": []
     }
   ],
@@ -206,6 +206,10 @@
     {
       "en": "20 October 2026, PE1 (what identifying interderivable propositions keeps and loses): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the chapter changed only by PE1's edits: a sentence in section 0's proof-language row, and in section 9 a paragraph on why the core excludes propext, the receipt, counts and layers. Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月20日，PE1（等同可互推的命题保留什么、失去什么）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，本章只因 PE1 的改动而变：第 0 节证明语言一行的一句，以及第 9 节关于核心为何不用 propext 的一段、回执、计数与层。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, EV5b (the evolution row's central laws on the base): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only by EV5b's edits: the Becoming.GroupEnding bullet in 2.4 (the law for groups not uniform) and section 9's receipt and counts. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月20日，EV5b（演化一行的中心之律在流上）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只因 EV5b 的改动而变：2.4 的 Becoming.GroupEnding 一条（各组不均匀时之律）与第 9 节的回执与计数。重新指向前已读。论断不变。"
     }
   ]
 }
