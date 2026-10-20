@@ -1,0 +1,219 @@
+#!/usr/bin/env python3
+"""Write OW1's record own-widening-within-the-margin:
+python3 -B make_record.py CORE_RECEIPT STUDY_SECTION   (from the checkout root, after apply_text.py)
+
+Every declaration cited is resolved against the receipt's audited declarations of Becoming.OwnWidening (a short
+name must match exactly one declaration by suffix), and the receipt must bind the module's current bytes."""
+import datetime
+import hashlib
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path.cwd()
+PKG = 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming'
+STUDY = '_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md'
+REVIEW = '_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md'
+CHAPTER = 'theories/becoming/chapters/THE-THEORY-OF-BECOMING.md'
+RECORDS = ROOT / 'theories/becoming/results/records'
+MOD = 'OwnWidening'
+core_id, N = sys.argv[1], int(sys.argv[2])
+RECEIPT = f'{PKG}/becoming-checks/{core_id}/verification.json'
+NOW = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
+core = json.loads((ROOT / RECEIPT).read_text())
+assert core['status'] == 'passed'
+HEAD = f'## {N}. Own widening and the margin: where keeping options open closes another\'s (OW1)'
+assert re.search('^' + re.escape(HEAD) + '$', (ROOT / STUDY).read_text(), re.M)
+
+
+def sha(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def src(mod):
+    return f'{PKG}/Becoming/{mod}.lean'
+
+
+def decls(mod):
+    m = next(m for m in core['modules'] if m['module'] == f'Becoming.{mod}')
+    assert core['source_sha256'][f'Becoming.{mod}'] == sha(src(mod)), ('receipt does not bind', mod)
+    return m
+
+
+def resolve(mod, names):
+    full = [d['name'] for d in decls(mod)['declarations']]
+    out = []
+    for n in names:
+        hits = [f for f in full if f == 'Becoming.' + n or f.endswith('.' + n)]
+        assert len(hits) == 1, (mod, n, hits)
+        out.append(hits[0])
+    return out
+
+
+m = decls(MOD)
+assert not any(m['axiom_dependencies'].values())
+n_decl, n_thm = len(m['declarations']), sum(1 for d in m['declarations'] if d.get('kind') == 'theorem')
+
+RID = 'own-widening-within-the-margin'
+B = 'Flow.Balances.'
+laws = [
+    ('Within a decided region of formations, one level path widens another where at every step it admits every member '
+     'the other admits there and at some step one more. Such widening exceeds over the whole, so it neither keeps what '
+     'can form the same nor is widened by the other path.',
+     '在可判定的构成区域内，一条水平路径扩大另一条，若每步都接纳另一条在那里接纳的每个成员，且某步多接纳一个。这样的扩大在整体上超出，所以既不保持所能形成者不变，也不被另一条扩大。',
+     ['Web.WidensWithin', 'Web.WidensWithin.exceeds', 'Web.WidensWithin.not_keeps', 'Web.WidensWithin.not_narrowed']),
+    ('In a balanced flow, where the levels with a part admit within a region everything the levels without it admit '
+     'there, they include the levels without it exactly when the part\'s net draw stays within the margin for every '
+     'formation outside the region that the levels without it admit.',
+     '在平衡的流中，有部分的水平在一个区域内接纳无它的水平在那里接纳的一切时，它们恰在部分的净汲取对区域之外、无它的水平所接纳的每个构成都不超出余量时，包含无它的水平。',
+     [B + 'includes_iff_beyond_within']),
+    ('Where a part\'s activity widens what can form within its own region, the levels with it widen those without it '
+     'exactly when its net draw stays within the margin for every formation outside the region that the levels without '
+     'it admit, and the two are mixed exactly when the draw goes beyond for one such formation.',
+     '部分的活动在其自身区域内扩大所能形成者时，有它的水平恰在其净汲取对区域之外、无它的水平所接纳的每个构成都不超出余量时扩大无它的水平；对其中某个构成超出时，两者恰为混合。',
+     [B + 'widens_iff_others_within', B + 'mixed_iff_other_beyond']),
+    ('Zero margin: where a formation outside the own region, admitted without the part, needs a condition at exactly '
+     'the level it stands at without the part\'s exchange, any net draw of the part on that condition makes own '
+     'widening mixed.',
+     '零余量：自身区域之外、无部分时被接纳的构成，若以恰为无部分交换时的水平需要某条件，则部分在该条件上的任何净汲取都使自身的扩大成为混合。',
+     [B + 'mixed_of_tight']),
+    ('Where the part\'s net draw is nothing on every condition required by a formation outside the own region that the '
+     'levels without it admit, own widening widens the whole, whatever the levels; a comparison reading only the own '
+     'region, both ways, then registers a change where nothing is closed.',
+     '部分在区域之外、无它的水平所接纳的构成所需的每个条件上净汲取为零时，自身的扩大即扩大整体，不论水平如何；只读自身区域、两个方向的比较，此时在无所关闭之处记下变化。',
+     [B + 'widens_of_untaken_beyond', B + 'widens_yet_own_changed']),
+    ('Any decided set of formations at each step, a reachable set included, is what the web reading each formation as '
+     'its own condition, at need one, admits; nothing is conserved in that web.',
+     '每步任意可判定的构成集合（包括可达集）都是把每个构成读作其自身条件、需求为一的网所接纳者；该网中没有守恒的量。',
+     ['Web.reachWeb', 'Web.admits_reachWeb_iff']),
+    ('Witness: a drawer takes one unit of a shared condition and gives one to its store, which its own option needs; '
+     'another formation needs the shared condition at one. With one unit of slack the drawer\'s own widening widens '
+     'the whole; with none it is mixed.',
+     '见证：汲取者从共享条件取一单位并给其库存一单位，其自身的选项需要库存；另一构成以一需要共享条件。有一单位余量时汲取者自身的扩大扩大整体；没有余量时为混合。',
+     ['Drawing.flow', 'Drawing.web', 'Drawing.balances', 'Drawing.withheld', 'Drawing.own_widens',
+      'Drawing.ample_widens', 'Drawing.tight_mixed']),
+]
+for en, zh, _ in laws:
+    assert len(en) <= 420 and len(zh) <= 190, (en[:40], len(en), len(zh))
+
+FOUR_DEP = {
+    'id': 'four-cases-of-a-part', 'relation': 'formal-reuse',
+    'detail': {'en': 'Reuses the levels without a part (Flow.WithheldLevels), the margin boundary '
+                     '(Flow.supported_iff_within_margin_at) and the comparison by inclusion (Web.Widens, Web.Mixed, '
+                     'Web.Includes.not_exceeded).',
+               'zh': '复用无部分的水平（Flow.WithheldLevels）、余量边界（Flow.supported_iff_within_margin_at）及以包含的比较（Web.Widens、Web.Mixed、Web.Includes.not_exceeded）。'},
+    'interface': {
+        'output': {'en': 'A formation is supported with the part exactly where its need with the part\'s cumulative take '
+                         'is within the level without it with the part\'s cumulative give.',
+                   'zh': '构成在有部分时被支持，恰当其需求加部分累计所取不超过无它的水平加部分累计所给。'},
+        'input': {'en': 'Own widening read against the others\' margins: widening or mixed.',
+                  'zh': '对照他者余量读出的自身扩大：扩大或混合。'},
+        'conditions': {'en': 'Balance; levels without the part from the same start.', 'zh': '平衡；无部分的水平从同一起点。'},
+        'evidence': src('Retaining')}}
+
+rec = {
+    'schema_version': 2, 'id': RID,
+    'title': {'en': 'Own widening within the margin', 'zh': '余量之内的自身扩大'},
+    'kind': 'theorem', 'status': 'recorded-checked', 'family': 'F01', 'reviewed_at_utc': NOW,
+    'statement': {
+        'en': 'Where a part\'s activity widens what can form within its own region, the whole widens exactly when its '
+              'net draw stays within the margins of what the others need, and is mixed exactly beyond; with no slack, '
+              'any net draw on a needed condition makes it mixed.',
+        'zh': '部分的活动在其自身区域内扩大所能形成者时，整体恰在其净汲取不超出他者所需的余量时扩大，超出时恰为混合；没有余量时，在被需要的条件上任何净汲取都使之混合。'},
+    'laws': [{'en': en, 'zh': zh, 'declarations': resolve(MOD, names)} for en, zh, names in laws],
+    'hypotheses': [{
+        'en': 'No axiom. Balance of the flow; the part and its own region as decided families (Bool-valued); the '
+              'levels without the part as the comparison (the flow with the part\'s taking and giving withheld, the '
+              'rest as it was); reaching an outcome read as admission, a threshold on levels.',
+        'zh': '不加公理。流的平衡；部分及其自身区域为可判定的家族（取值于 Bool）；以无部分的水平为比较（部分的取与给被扣留，其余照旧的流）；达到一个结果读作接纳，即水平上的阈值。'}],
+    'does_not_show': [
+        {'en': 'That gaining reach beyond the margin is worse: the comparison is mixed, and neither the continuation '
+               'condition nor C orders a mixed comparison.',
+         'zh': '超出余量地扩大所及是更坏的：这一比较是混合的，延续条件与 C 都不为混合的比较定序。',
+         'kind': 'non-implication'},
+        {'en': 'POWER as average optimal value, or comparison between two actions of the part: the comparison is with '
+               'the inaction baseline, and no reward, expectation or optimal value is formalized.',
+         'zh': '作为平均最优值的 POWER，或部分两个动作之间的比较：比较对象是不作为的基线，未形式化奖励、期望或最优值。',
+         'kind': 'correspondence'},
+        {'en': 'That a general MDP\'s reachability carries a margin: any reachable set is an admitted set, but balance '
+               'has content only where reaching an outcome is a threshold on amounts taken and given.',
+         'zh': '一般 MDP 的可达性带有余量：任何可达集都是接纳集，但只有当达到结果是取与给之量上的阈值时，平衡才有内容。',
+         'kind': 'scope'},
+        {'en': 'Which formations will draw beyond the margin, or that optimal or trained agents do: the laws locate the '
+               'boundary, they predict no behaviour.',
+         'zh': '哪些构成会超出余量地汲取，或最优的、被训练的智能体会如此：这些规律定位边界，不预测行为。',
+         'kind': 'non-implication'}],
+    'counterexamples': [{'path': src(MOD), 'detail': {
+        'en': 'Drawing with no slack: the drawer\'s activity opens its option and closes the other formation, which '
+              'needs the shared condition at exactly the level it stands at without the draw (Drawing.tight_mixed); '
+              'own widening alone does not widen the whole.',
+        'zh': '没有余量的 Drawing：汲取者的活动打开其选项并关闭另一构成，后者恰以无汲取时的水平需要共享条件（Drawing.tight_mixed）；仅有自身的扩大并不扩大整体。'}}],
+    'standard_boundaries': ['no-ethical-premise', 'no-evaluation', 'discrete-steps', 'formal-not-empirical',
+                            'names-provisional', 'omission-not-refutation'],
+    'validation_scope': {
+        'en': f'Machine-checked by the consolidated Lean 4.29.1 checker (receipt {core_id}): the {n_decl} declarations of '
+              f'Becoming.{MOD}, {n_thm} of them theorems, have empty axiom reports; the checker verifies core purity. '
+              f'The literature check before any Lean is a section of the significance review. Built and reviewed in one '
+              f'session, with no separate reviewer; author review in study section {N}; not independently reviewed by '
+              'a person.',
+        'zh': f'Lean 4.29.1 合并检查器实查（回执 {core_id}）：Becoming.{MOD} 的 {n_decl} 项声明（{n_thm} 项定理）公理报告为空；'
+              f'检查器并核对核心纯净。动手写 Lean 之前的文献核查是显著性审查中的一节。在一个会话中构建并审查，没有另设审查者；'
+              f'作者审查见研究第 {N} 节；未经人的独立审查。'},
+    'next_delta': {
+        'en': 'Comparison between two actions of the part, not only against inaction; a POWER-like maximum over the own '
+              'admitted set in the periphery; several parts drawing at once; an independent review.',
+        'zh': '部分两个动作之间的比较，而不只与不作为相比；外围中对自身接纳集的类 POWER 最大值；多个部分同时汲取；独立审查。'},
+    'correspondence': {
+        'en': 'Turner, Smith, Shah, Critch and Tadepalli (NeurIPS 2021) show optimal policies tend to keep options open '
+              '(POWER, options F(s), Propositions 6.6 and 6.9) and leave open when this disempowers others; own widening '
+              'is option-keeping read as admission, and the law answers when, for conserved amounts. Turner and '
+              'Stavrianos (2021): in constant-sum games POWER sums to a constant at Nash equilibrium, the case with no '
+              'slack. The levels without the part are the inaction baseline of relative reachability (Krakovna et al.) '
+              'and AUP (Turner, Hadfield-Menell and Tadepalli 2020); AUP\'s symmetric penalty over the own set fires on '
+              'every own widening. Benson-Tilsen and Soares\'s resource model is in the threshold class. Analogues: '
+              'Pareto improvement from slack; the Lockean proviso.',
+        'zh': 'Turner、Smith、Shah、Critch 与 Tadepalli（NeurIPS 2021）表明最优策略倾向于保留选项（POWER、选项 F(s)、命题 6.6 与 6.9），并留下这何时剥夺他者之力的问题；自身扩大即读作接纳的保留选项，此律对守恒的量回答了何时。Turner 与 Stavrianos（2021）：常和博弈中 POWER 之和在纳什均衡处为常数，即没有余量的情形。无部分的水平是相对可达性（Krakovna 等）与 AUP（Turner、Hadfield-Menell、Tadepalli 2020）的不作为基线；AUP 在自身集合上的对称惩罚对每次自身扩大都触发。Benson-Tilsen 与 Soares 的资源模型属阈值类。类比：有余量才有帕累托改进；洛克附带条件。'},
+    'canonical_source': src(MOD),
+    'aliases': ['own widening within the margin', '余量之内的自身扩大', 'when keeping options open closes another\'s',
+                'power-seeking and the margin', 'Becoming.Flow.Balances.widens_iff_others_within',
+                'Becoming.Flow.Balances.mixed_iff_other_beyond', 'Becoming.Flow.Balances.mixed_of_tight'],
+    'dependencies': [FOUR_DEP],
+    'related': [
+        {'id': 'loss-beyond-a-region', 'detail': {
+            'en': 'A comparison within a region reads nothing beyond it: in Clearing the part closes nothing within its '
+                  'dependence and loses the dweller beyond it, the case of a penalty over an auxiliary region.',
+            'zh': '区域内的比较读不到区域之外：在 Clearing 中部分在其依存之内不关闭什么，却在其外失去居者，即辅助区域上的惩罚的情形。'}},
+        {'id': 'alignment-direction-under-widening', 'detail': {
+            'en': 'A move whose outcome another\'s widens is not chosen; own widening beyond the margin is mixed against '
+                  'inaction, so neither move\'s outcome widens the other\'s and that law excludes neither.',
+            'zh': '结果被另一动作扩大的动作不被选择；超出余量的自身扩大与不作为相比是混合的，故两者的结果互不扩大，该律两者都不排除。'}}],
+    'references': [{'path': src(MOD), 'role': 'proof', 'declarations': sorted(d['name'] for d in m['declarations']),
+                    'sha256': sha(src(MOD))},
+                   {'path': src('Retaining'), 'role': 'proof', 'sha256': sha(src('Retaining'))},
+                   {'path': src('Admission'), 'role': 'proof', 'sha256': sha(src('Admission'))},
+                   {'path': RECEIPT, 'role': 'receipt', 'sha256': sha(RECEIPT)},
+                   {'path': STUDY, 'role': 'integration', 'sha256': sha(STUDY)},
+                   {'path': REVIEW, 'role': 'integration', 'sha256': sha(REVIEW)},
+                   {'path': CHAPTER, 'role': 'statement', 'sha256': sha(CHAPTER)}],
+    'proof_bindings': [{'source': src(MOD), 'receipt': RECEIPT, 'sha256_pointer': f'/source_sha256/Becoming.{MOD}',
+                        'success_pointer': '/status', 'success_value': 'passed'}],
+    'history': [{
+        'en': f'20 October 2026: added (OW1), the margin law read for a part\'s own region and joined to the formal '
+              f'results on power-seeking and impact measures, after a literature check (significance review, section '
+              f'"option-keeping and the margin"); study section {N}.',
+        'zh': f'2026年10月20日：新增（OW1），把余量之律读到部分自身的区域，并与关于寻求权力和影响度量的形式结果相接，此前做了文献核查（显著性审查“保留选项与余量”一节）；研究第 {N} 节。'}],
+}
+assert len(rec['statement']['en']) <= 300, len(rec['statement']['en'])
+assert len(rec['statement']['zh']) <= 150, len(rec['statement']['zh'])
+assert len(rec['correspondence']['en']) <= 1200, len(rec['correspondence']['en'])
+assert len(rec['correspondence']['zh']) <= 500, len(rec['correspondence']['zh'])
+for x in rec['does_not_show']:
+    assert len(x['en']) <= 240 and len(x['zh']) <= 110, (x['en'][:40], len(x['en']), len(x['zh']))
+assert len(rec['hypotheses'][0]['en']) <= 420 and len(rec['hypotheses'][0]['zh']) <= 190
+assert len(rec['validation_scope']['en']) <= 600 and len(rec['validation_scope']['zh']) <= 260
+assert len(rec['next_delta']['en']) <= 400 and len(rec['next_delta']['zh']) <= 180
+path = RECORDS / f'{RID}.json'
+assert not path.exists(), ('record exists', RID)
+path.write_text(json.dumps(rec, ensure_ascii=False, indent=2) + '\n')
+print('written', RID)
