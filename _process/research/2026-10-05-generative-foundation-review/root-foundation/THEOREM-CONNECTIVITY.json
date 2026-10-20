@@ -1,11 +1,11 @@
 {
- "commit": "efda9c82f52477d9f042db1804697668ace3e64e",
+ "commit": "d652a7756705562e1d35d15ceb90556b8708db08",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261020T073902.295130Z",
+ "core_receipt_at_commit": "20261020T075104.511517Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
  "tracked_modules": 285,
- "constants": 35914,
- "spine_theorems": 11551,
+ "constants": 35838,
+ "spine_theorems": 11552,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -31,7 +31,7 @@
   "statement on World/Flow/Web": 2606,
   "statement on the base only through a law of its own module": 180,
   "proof through a base family": 153,
-  "used by a theorem on the base": 4172,
+  "used by a theorem on the base": 4173,
   "instance on the base recorded": 150,
   "apart: own vocabulary": 468,
   "apart: prelude-only statement": 35
@@ -537,7 +537,7 @@
  "rings": {
   "core": {
    "modules": 269,
-   "theorems": 10805,
+   "theorems": 10806,
    "apart": 423,
    "classes": {
     "statement on both families": 911,
@@ -545,7 +545,7 @@
     "statement on World/Flow/Web": 2581,
     "statement on the base only through a law of its own module": 134,
     "proof through a base family": 142,
-    "used by a theorem on the base": 3813,
+    "used by a theorem on the base": 3814,
     "instance on the base recorded": 150,
     "apart: own vocabulary": 389,
     "apart: prelude-only statement": 34
@@ -4065,6 +4065,7 @@
   "Becoming.World.finite_counting_under": "statement on both families",
   "Becoming.World.finite_counting_binds_iff": "statement on both families",
   "Becoming.World.finite_change_bound_iff": "statement on both families",
+  "Becoming.World.enclosed_iff_finite_tally": "used by a theorem on the base",
   "Becoming.World.enclosed_iff_finite_counting_under": "statement on both families",
   "Becoming.EnclosedQueue.place_le": "used by a theorem on the base",
   "Becoming.EnclosedQueue.total_place_le": "used by a theorem on the base",
