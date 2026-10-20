@@ -9926,8 +9926,14 @@ Evidence: core receipt 20261020T060542.295041Z (passed; core 268 modules and 10,
 Boundary: the queue and ring witnesses are not made one parametrized family. Their worlds differ in kind,
        one for each premise left out (nothing flowing, standing while active, open, driven, enclosed,
        closing, closed once, lossy, relay, exchanging, shedding, waiting, sourced, depending; rings
-       likewise), and a family parametrized by its flow and web would be World.of itself. The shared part is
-       one witness lemma per law, choosing among them by the selection. Lines are not fewer: the five modules
+       likewise). (Corrected by R37c, study section 238: "a family parametrized by its flow and web would
+       be World.of itself" was too quick. A carrier family with its activity fixed, queue places active by
+       Queue.holds and ring seats on Ring.web, exists and would cover about 12 queue and 6 ring witnesses,
+       with waitingQueue, sourcedQueue, activeRing and finiteQueue outside it; it would state the decision
+       once and save about 60 lines, since the census is already shared through the Queue and Ring
+       carriers, and each premise's counterexample would only move into its arguments;
+       development/r37-lens-b/r37b/family/FINDINGS.md.) The shared part is one witness lemma per law,
+       choosing among them by the selection. Lines are not fewer: the five modules
        hold 7,305 lines against 7,089 before (Counting 4,711 → 5,099, Standing 855 → 940, CensusCounts 654 → 317,
        CensusBinding 869 → 542, CensusTable 407 new, part of it moved from CensusCounts and Counting). The counted laws lost their own proofs, while each sound and witness lemma states its
        condition once more. The decided binding lemmas (counting_binds_jointly, taking_binds_counting,
@@ -9946,7 +9952,7 @@ The kit is [`development/r37-lens-b/r37b/`](development/r37-lens-b/r37b/), besid
 - **What the statement check shows.** Of R37's receipt's declarations, 11,373 print the same type, with none differing under its own name. The 9 removed are helpers the tables leave unused, each listed with the name stating its use now: the five `…Queue_countsOf` (`countsOf_decided`), `countsOf_eq` (`FamilyCounts.of_eq`), `embodiedQueue_stands` (`enclosed_standing_counting_under_witnessed`), `Embodied.tally_of_stands` (`Embodied.standsObey_iff`) and `company_of` (`FamilyCounts.company`). Two pure forwarders R37b had introduced (`census_table_holds` and its free form) were removed before landing, as the connectivity measure flagged them. No name is missing. 54 new names: the table and its lemmas, and one sound and one witness lemma per law.
 - **Records and docs.** 4 records whose declaration lists changed have a history note (`rebind.py`), and the hash-only re-points go through `tools/research/repoint.py`, one log line. The module docs of Counting, CensusCounts, CensusBinding and Standing say they read the table, and the root module's notes have one for CensusTable. The module table has its row (`layers37.py`). `counting_laws` (Population) and `counted_laws` (CensusCounts), the tally as the whole law of counting for any listing with no world, are apart roots now that the world laws no longer go through them; both are registered as general structure (`apart.py`).
 
-**Self-review.** The tables change proofs, not statements: the sigcheck is the evidence, and no law was restated. Where a decided law's backward proof had a case with a world chosen by unification, the witness lemma names the world, as `Listed` is not unfolded through a metavariable. The compression is in proofs: each counted law no longer repeats its decided law's proof. It is not in lines or theorem count, since each law now has two named lemmas. The review's estimate of 1–2k fewer lines presumed the one witness family, which the Boundary explains is not there to be had.
+**Self-review.** The tables change proofs, not statements: the sigcheck is the evidence, and no law was restated. Where a decided law's backward proof had a case with a world chosen by unification, the witness lemma names the world, as `Listed` is not unfolded through a metavariable. The compression is in proofs: each counted law no longer repeats its decided law's proof. It is not in lines or theorem count, since each law now has two named lemmas. The review's estimate of 1–2k fewer lines presumed the one witness family, which the Boundary explains is not there to be had (corrected by R37c: a carrier family is there, and saves about 60 lines; the larger duplicate was the counted corollaries, study section 238).
 
 <a id="231-the-completion-criterion-runs-r39"></a>
 ## 231. The completion criterion runs (R39)
@@ -10199,3 +10205,49 @@ Output → input: SA1's follow-ups 1-4 are done; a theorem a specialist would no
 The kit is [`development/lk1-known-results/`](development/lk1-known-results/): `records.py` makes the record edits (idempotent). The section's table follows SA1's ranked table with the chapter's order of central results; SA1's rank 8 (fed from beyond, the nets, entropy), the `Regulation` row and Price's selection term are folded into one paragraph on results outside the ten.
 
 **Self-review.** The section is short on purpose and every verdict is SA1's. Two calls are this item's own: the featured records not in SA1's table were matched by their nearest known result, and the README's heading "Laws of the theory without axiom" was left, since it is in the renderer and accurate in the Lean sense; the featured note now says what that phrase does not.
+
+## 238. The counted corollaries as compositions (R37c)
+
+```text
+Result(s): none new about the unfolding. One tally lemma: the tally conditions of worlds enclosed from some
+       step on and of finite worlds agree under a selection, over any class of properties of the counts
+       holding the pointwise ones, exactly when the selection bounds change and binds counting
+       (World.enclosed_iff_finite_tally)
+Delta: the follow-up R37b left (development/r37-lens-b/r37b/family/FINDINGS.md). Corollaries of the laws
+       of counting were proved twice, decided in Counting and counted in CensusCounts or CensusBinding, with
+       near-identical proofs; fourteen counted forms had a proof of their own. Each counted proof is now the counted law, the decided law and the decided
+       corollary composed; the decided and counted agreement of enclosed and finite worlds are both read from
+       the tally lemma.
+Premises: none. Every kept statement keeps its type (sigcheck below).
+Evidence: core receipt 20261020T075104.511517Z on main 279d55f28 (passed; core 269 modules and 10,806
+       theorems; instances 7 and 567, applications 6 and 179, foundation 3 and 74; closure 285 modules and
+       11,626 theorems; audited spine declarations 15,908; every axiom report empty; 27 Lean steps ran,
+       1,113 reused); sigcheck against R37b's receipt 20261020T060542.295041Z (11,426 agree, 0 differ,
+       0 missing, 126 new: what R40, R38, EV1 and R41 added, and the tally lemma) and against R41's receipt
+       20261020T073902.295130Z (11,551 agree, 0 differ, 0 missing, 1 new); the connectivity rerun on
+       d652a7756 (503 of 11,552 apart, register check passes; that commit kept at
+       refs/salvage/r37c-before-r42-rebase, as R42 and LK1, which touched no Lean, landed before R37c); render, check, links and tests. Two earlier
+       runs with the same Lean passed: on 3bba5c7aa (receipt 20261020T073242.753764Z, its records and docs
+       kept at refs/salvage/r37c-before-ev1-rebase) and on 1dafe9d45 (receipt 20261020T074833.973092Z, superseded and not kept);
+       EV1 and then R41 landed while each was being written up, and R37c was replayed on each.
+Boundary: standing_iff_counting_counted was already the composition (two lines) and is unchanged. The
+       pointwise proofs stay inline, one per composed corollary, as in the decided proofs (thirteen, of
+       five shapes). Three helpers of the counted change-bound proof
+       (ring_countsOf, embodiedRing_countsOf, balancedRing_countsOf) are no longer used and are kept, as no
+       name was to change. The queue and ring witnesses are unchanged: a carrier family would save about
+       60 lines (study section 230, Boundary, corrected).
+Output → input: a new law of counting with a decided and a counted form needs one corollary proof; its
+       counted twin is three lines and a pointwise proof.
+```
+
+The kit is [`development/r37-lens-b/r37c/`](development/r37-lens-b/r37c/): the composition of the counted corollaries (`compose.py`), the tally lemma and the two agreements read from it (`tally_lemma.py`), the statement check (`sigcheck.py`, R37's with R37c's empty `RENAME-TABLE.json`) with its two logs, and the chapter's §9 from the receipt (`s9.py`, R38's with the old values read from the chapter).
+
+- **The compositions.** The decided law and the counted law of each class of worlds have the same tally side (R37b: one counted soundness and one witness lemma), so for a corollary `Q`, `(counted S).symm.trans (decided S pointwise)` carries the counted world side to the decided one, and the decided corollary ends it: `((binding_counting_under_counted S).symm.trans (binding_counting_under S pointwise)).trans (binding_activity_iff S)`. The direction keeps the import order, since CensusCounts and CensusBinding import Counting. Thirteen corollaries are composed this way: `counting_binds_iff_counted`, `finite_counting_binds_iff_counted`, `enclosed_change_bound_iff_counted` and `finite_change_bound_iff_counted` in CensusCounts, and the activity, arising and joint equivalences, in all worlds, in finite worlds and under enclosure, in CensusBinding. Each needs a proof that its property is pointwise: something active, something arising, both at one step, nothing arising where nothing is active (as the decided proofs have), and, for the two change bounds, that a change bound respects the counts' values at each step, through `TallyWorlds.occurrences_congr`.
+- **The exception, through the tally.** `enclosed_iff_finite_counting_under` quantifies over pointwise `Q`, and its counted form over every `Q`, so neither is a composition of the other. `enclosed_iff_finite_tally S (pointwise : ∀ Q, Pointwise Q → Props Q)` states, for any class `Props` holding the pointwise properties, that the enclosed and the finite tally conditions agree for every `Q` in `Props` exactly when `BoundsChange S ∧ BindsCounting S`. Necessity uses only two pointwise properties (a bound on the count, which a growing count breaks where change is not bounded, and nothing arising where nothing is active, which one relatum arising from none breaks where counting is not bound); sufficiency holds for every `Q` (a change bound from some step is one from the first step). The decided form is the lemma with `Props := Pointwise`, read through `enclosed_counting_under` and `finite_counting_under`; the counted form is the lemma with `Props := fun _ => True`, read through their counted forms. The necessity proof no longer goes through `finite_counting_binds_iff`.
+- **Lines.** Counting 5,099 → 5,110 (the tally lemma, 54 lines, against the decided proof, now 5 lines), CensusCounts 317 → 273, CensusBinding 542 → 359: 5,958 → 5,742, 216 fewer. FINDINGS estimated about 370 lines of counted proofs replaced; the compositions with their pointwise proofs take 3 to 8 lines each.
+- **What the statement check shows.** Of R41's receipt's 11,551 theorems all print the same type; none removed or renamed; one new name, `World.enclosed_iff_finite_tally`. Against R37b's receipt, which the claim named, 11,426 agree and 126 are new: the tally lemma and what R40, R38, EV1 and R41 added.
+- **Connectivity** ([THEOREM-CONNECTIVITY.md](THEOREM-CONNECTIVITY.md), "After R37c"): 503 of 11,551 apart → 503 of 11,552; the tally lemma is used by a theorem on the base; no theorem changed class, and the register and the pure forwarders are unchanged. The tracked constants fall 35,914 → 35,838 with the proofs' auxiliary matches.
+- **Records and docs.** No record's claim, premises or declarations changed; the six records citing the three modules, the two whose cited chapter section 8 changed only in the connectivity measure, and selection-term-over-generations, whose cited study section 230 has the corrected Boundary, are re-pointed to their bytes, and the three modules' proof bindings to the receipt, through `tools/research/repoint.py`, one log line. The module docs of Counting, CensusCounts and CensusBinding say the counted equivalences are compositions and name the tally lemma. Chapter §9 is set from the receipt, and §8.1 item 1 (both editions) and §9's connectivity sentence carry this tree's measure, which EV1 and R41 had left at R38's (477 of 11,479, 343 roots); the Chinese §9 counts 17 modules in L2, as the English has since EV1, and the kit's `s9.py` reads L2 from the chapter rather than assuming 16. Study section 230's Boundary is corrected in place, its first wording quoted: "a family parametrized by its flow and web would be World.of itself" was too quick, as a carrier family with fixed activity exists and would save about 60 lines.
+- **A landing slip.** A fast-forward of main for a board edit carried the scratch-built Lean commit along before its checker run (`e78eeafab`); main reverted it at once (`3bba5c7aa`), and the R37c branch re-applied it, so main held the change for about a minute with no receipt, and no commit landed on main in between. Board edits made while a package commit is held go on a branch from main.
+
+**Self-review.** The compositions change proofs, not statements, and the sigcheck is the evidence. A composition's three steps are each a stated law, so the counted corollary now depends on the decided one: where activity is not decided the counted statement still holds, as the decided corollary is used only through the shared tally side, never on a world. The tally lemma's class parameter is the least that lets one statement serve both forms; it hides no weight, since `Props` only bounds which properties are asked about.

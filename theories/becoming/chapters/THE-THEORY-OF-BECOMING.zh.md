@@ -828,7 +828,7 @@
 <a id="81-the-targets"></a>
 ### 8.1 依次排列的开放项
 
-1. **一个基底，以及对每个交换之律的规律**（进一步的证明；第一目标的形式部分）。基底按定义是一个（§1.1）；在 R38 树上的连通度量中，11,479 条定理中 477 条与两个基底族都分开，各有所述理由。经每个关系项自身各步读出者对每个交错相同，所以对它们共同步序是一个读法（R38；`world_reads_alike`）。
+1. **一个基底，以及对每个交换之律的规律**（进一步的证明；第一目标的形式部分）。基底按定义是一个（§1.1）；在 R37c 树上的连通度量中，11,552 条定理中 503 条与两个基底族都分开，各有所述理由。经每个关系项自身各步读出者对每个交错相同，所以对它们共同步序是一个读法（R38；`world_reads_alike`）。
 2. **一条评价之链**（进一步的证明）。已落地：逐步类与运行类在所指名的前提下单向接上次序，在水平路径上条件、意义与 C 读同一对象（`Web.paths_one_object`）。*开放：*运行上的生起之类与次序；进一步生成的成分能否进入 `living` 的读法。
 3. **评价怎样在展开之内形成**（进一步的证明）。*开放：*中心怎样逐步形成、表示其区域、边界与依存，并认识它所及者；观察是否可由依存推出。
 4. **脊柱上的对齐方向**（进一步的证明）。已落地：作为核心模式的方向（§7.5）。*开放：*`World` 的动作读作这样的族，2026 年 10 月 7 日的外围模块作为核心中的形式实例。
@@ -882,18 +882,18 @@
 <a id="9-形式脊柱--the-formal-spine"></a>
 ## 9. 形式脊柱
 
-所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）16 个。
+所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）17 个。
 
-**当前回执**是运行 [`20261020T072647.879143Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T072647.879143Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 234 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#234-the-selection-term-proper-and-its-course-over-generations-ev1)）。
+**当前回执**是运行 [`20261020T075104.511517Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T075104.511517Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 238 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#238-the-counted-corollaries-as-compositions-r37c)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 269 个模块，10,800 条定理 |
+| 核心模块（含根 `Becoming`） | 269 个模块，10,806 条定理 |
 | 实例模块 | 7 个模块，567 条定理 |
 | 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 闭包（核心、环与根基） | 285 个模块，11,620 条定理 |
-| 审计的脊柱声明 | 15,901 |
+| 闭包（核心、环与根基） | 285 个模块，11,626 条定理 |
+| 审计的脊柱声明 | 15,908 |
 | 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 189 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 
