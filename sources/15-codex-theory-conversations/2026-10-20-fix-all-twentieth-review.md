@@ -24,8 +24,13 @@ After the programme and R37 landed and were pushed, with the two open proofs of 
 
 > please
 
+After R38 and R37c landed, with R38's one open part named (one renumbering of interleavings, and Reordering's footprints) and R37's findings commit left on its own branch:
+
+> rebase latest main and continue please
+
 ## Context (AI-authored)
 
 - The review is an AI review, read-only, in seven lenses and one synthesis. Its programme has seven steps; "fix all" is read as authorization to carry out steps 2–6 (board items R28–R36), each through the landing queue with one checker run, and to apply the two goal-scope proposals R25 left pending.
 - Rule 9 was added to the work board in commit `4b0ec28d9`.
 - "please" is read as authorization to take the two named open proofs as board item R38.
+- "rebase latest main and continue please" is read as: apply R37's findings commit onto the latest main, and take R38's open part as board item R46.
