@@ -42,11 +42,6 @@
    "category": "model-witness",
    "reason": "The separation conditions for 0 on the empty record of the repeated repertoire, the companion of Repeated.not_resolved; no natural run reading."
   },
-  "Becoming.CrossSituational.distinct_iff": {
-   "module": "Becoming.Courses",
-   "category": "support",
-   "reason": "a list lemma: the universe-polymorphic and the Type-level definitions of lists without repetition agree"
-  },
   "Becoming.EitherThroughout.of_em": {
    "module": "Becoming.Likeness",
    "category": "logical-strength",
@@ -1716,6 +1711,11 @@
    "module": "Becoming.Interleavings",
    "category": "general-structure",
    "reason": "two interleavings of the same own courses give each relatum the same course of standings, for a local law on any state type: the per-relatum course is the module's own vocabulary, which the step-indexed World does not index; what the World reads of it is on the base (`world_final`, `world_swap`, `world_swap_between`)"
+  },
+  "Becoming.Frequency.count_from": {
+   "module": "Becoming.Frequency",
+   "category": "support",
+   "reason": "a counting lemma of the module's own `count`: marking the steps from `T`, `r` are counted by `T + r`; since R37 the onset's doubling is stated once, by `Closing.Onset.amount_after`, which does not use it"
   }
  },
  "instances": {

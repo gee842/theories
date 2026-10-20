@@ -444,7 +444,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
       "role": "proof",
-      "sha256": "3a956869374db96ac7f48574dddb66c66913ecd947ad43c8320ae252a73279c6",
+      "sha256": "d6c950deed4a243e979261f6fd6ec0273b50e415eaf6baa9758ca6f16e1e4b57",
       "declarations": [
         "Becoming.Flow.GainlessOn",
         "Becoming.Flow.ConservingOn",
@@ -499,7 +499,6 @@
         "Becoming.Flow.RecordsOn.exchanges_le",
         "Becoming.Flow.lost",
         "Becoming.Flow.dissipated",
-        "Becoming.Flow.excess_zero_of_le",
         "Becoming.Flow.GainlessOn.replenishment_le",
         "Becoming.Flow.GainlessOn.replenishment_lost",
         "Becoming.Flow.Balances.stock_lost",
@@ -528,13 +527,11 @@
         "Becoming.splits",
         "Becoming.EntropyLists.joinMap",
         "Becoming.configurations",
-        "Becoming.downFrom",
         "Becoming.configurationsWithin",
         "Becoming.EntropyLists.mem_joinMap",
         "Becoming.head_splits",
         "Becoming.mem_splits",
         "Becoming.mem_configurations",
-        "Becoming.mem_downFrom",
         "Becoming.mem_configurationsWithin",
         "Becoming.EntropyLists.mem_append_cases",
         "Becoming.mem_joinMap_cases",
@@ -548,7 +545,6 @@
         "Becoming.distinct_configurations",
         "Becoming.configurations_exact",
         "Becoming.configurations_examples",
-        "Becoming.le_of_mem_downFrom",
         "Becoming.distinct_downFrom",
         "Becoming.distinct_configurationsWithin",
         "Becoming.Web.config_total",
@@ -678,14 +674,25 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "sha256": "9ecb1747568c0ac4dd9befc0cdaad0511321b439cea7e60ecfc4726b57be037f",
+      "declarations": [
+        "Becoming.Flow.excess_zero_of_le"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
       "role": "proof",
-      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "sha256": "806e95fad20b5a22ad532429698511ec066b63e9160a1018f1b7a736e6724176",
       "declarations": [
         "Becoming.preimage_of_mem_map",
         "Becoming.ListTests.not_not",
         "Becoming.length_map",
-        "Becoming.map_eq_of"
+        "Becoming.map_eq_of",
+        "Becoming.downFrom",
+        "Becoming.mem_downFrom",
+        "Becoming.le_of_mem_downFrom"
       ]
     },
     {
@@ -724,7 +731,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "6ea42b39bc76f22d855bc48b5d7dce0f1fdeea5f33d67df1b62fd8c32de0cf55",
+      "sha256": "0ac04cc1aac333c62a4fd410ede5ddd1e15da0e42e7fe2eb41f5f7696c52735e",
       "declarations": [
         "Becoming.Flow.fall_lowers_on",
         "Becoming.World.rises_of_arises",
@@ -748,7 +755,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024",
+      "sha256": "7364d547b7d4349fe7fcff8868e81ce2464e1ee430387f0918cbfee5ab05a3bd",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.taken",
@@ -760,7 +767,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "4e25aa0f0c75ac33b47b3b1dd7f0399ba55ec1f5dd5d83fd23e8575e8dc69703",
+      "sha256": "d7cf70544495c135366166d401bf10bdfd0be55bf362bdd59b2b186258cff6cd",
       "declarations": [
         "Becoming.World.Finite",
         "Becoming.World.Embodied",
@@ -773,7 +780,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe",
+      "sha256": "9d05b714c28d3497235330e5d5fb4221415ea3ae25ec32d730425299b5479428",
       "declarations": [
         "Becoming.World"
       ]
@@ -873,12 +880,18 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "role": "receipt",
+      "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Entropy",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -899,7 +912,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Openness",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -913,29 +926,36 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Change",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1025,6 +1045,10 @@
     {
       "en": "2026-10-20: 45 bookkeeping notes condensed from 2026-10-13 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/0be41b8718b3af70/entropy-history-and-record.json and in git.",
       "zh": "2026-10-20：45 条记账性说明合并（2026-10-13 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/0be41b8718b3af70/entropy-history-and-record.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R37 (lens B of the twentieth review: the witness models as instances of one library, one bisimulation theory for a family of relations, the definition twins and copies stated once): Moved with their full names: from Entropy.lean to Change.lean, Flow.excess_zero_of_le; from Entropy.lean to Prelude.lean, downFrom, le_of_mem_downFrom, mem_downFrom. Proof bindings (Entropy.lean, Flow.lean, Openness.lean, Prelude.lean, Space.lean, World.lean) rebound to core receipt 20261020T051144.879480Z. Re-pointed after reading the change: Entropy.lean, Flow.lean, Openness.lean, Space.lean, World.lean: twin definitions, witness models or copies replaced by the definition stated once, the instance of Witnesses or the kept name; kept statements unchanged; Prelude.lean: the definitions and statements stated once (Distinct, total, steps, nonzero, Copying.nth, Law.memberAt, Settling.consAct, DistinctUnder, downFrom and their laws) moved here; other statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R37（第二十次评审的 B 视角：见证模型为一个库的实例，为一族关系的一个互模拟理论，孪生定义与副本只陈述一次）：连同完整名称移动：从 Entropy.lean 到 Change.lean：Flow.excess_zero_of_le；从 Entropy.lean 到 Prelude.lean：downFrom、le_of_mem_downFrom、mem_downFrom。证明绑定（Entropy.lean、Flow.lean、Openness.lean、Prelude.lean、Space.lean、World.lean）改到核心回执 20261020T051144.879480Z。读过改动后重新指向：Entropy.lean、Flow.lean、Openness.lean、Space.lean、World.lean：孪生定义、见证模型或副本由只陈述一次的定义、Witnesses 的实例或保留的名称取代；保留的陈述不变；Prelude.lean：只陈述一次的定义与陈述（Distinct、total、steps、nonzero、Copying.nth、Law.memberAt、Settling.consAct、DistinctUnder、downFrom 及其规律）移入；其他陈述不变。论断不变。"
     }
   ],
   "text_versions": [

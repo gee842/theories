@@ -110,6 +110,7 @@ Ren's statement of the continuation condition, which Ren then called an axiom, i
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Aliases: `Becoming.Web.Retains.of_fewer`, `Becoming.Web.retains_bounded_iff`, `Becoming.Web.Retains.within`, `Becoming.Clearing.admitted_all_without`, `Becoming.Clearing.clearer_loses_dweller`, `Becoming.Clearing.dependenceRegion`, `Becoming.Clearing.centers_disagree`
 

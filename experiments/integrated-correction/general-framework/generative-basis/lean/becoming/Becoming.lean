@@ -302,6 +302,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   relata's exchanges (`World.web`, `World.flow`, `World.move` read it; `World.of` builds it),
   over `Nat` and `Prop`, importing the frame. Balance and the other premises are gluings or local
   states stated where they are used (`Becoming.Readings`).
+* `Becoming.Witnesses` (L1): the models the spine builds again and again.
 * `Becoming.Frame` (L0): a frame is a process with realized claims; runs,
   reachability, invariants and new realization.
 * `Becoming.Laws` (L1): the law-level notions the layers share, stated once just after the frame (no premise):
@@ -1394,6 +1395,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   return; the law goes alike across the pairs; `Diagonal.revision_never_rests` is the case of a
   map commuting with itself. Symmetric processes carry reach, returning and junctures, and each
   run has a mirror run never at the same configuration.
+* `Becoming.HexagramCommuting` (L1): The Changes as an instance of a commuting law.
 * `Becoming.HexagramCommuting` (L1, instance ring): the Changes as an instance of a commuting law. Waxing
   and waning never merges a hexagram with its complement, its six steps to the complement are the
   pair halfway round a return of twelve, the waning into 坤 breaks the symmetry, and every course of

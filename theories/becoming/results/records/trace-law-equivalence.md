@@ -69,6 +69,7 @@ Boundary source: [DynamicConsequences.lean](../../../../experiments/integrated-c
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -77,7 +78,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Reuse the original theorem or its existing public wrapper; weaker observational scope needs a separate result.
 
-Aliases: `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Model.laws_iff_endpoint_histories (retired module)`, `Becoming.same_steps_iff_endpoint_traces_by_core`, `Becoming.same_steps_iff_traces`
+Aliases: `Generative.Deeper.same_steps_iff_endpoint_traces (periphery module)`, `Generative.Model.laws_iff_endpoint_histories (retired module)`, `Becoming.same_steps_iff_endpoint_traces_by_core (retired module)`, `Becoming.same_steps_iff_traces`
 
 <a id="沿革-history"></a>
 ## History
@@ -90,4 +91,5 @@ Aliases: `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Model.l
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Labelled.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.
 - 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (Bridge and DynamicConsequences) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Carriers and Becoming.Labelled). 1 aliases naming retired declarations are marked "(retired module)". The claim is unchanged.
+- 20 October 2026, R37 (lens B of the twentieth review): the proof bindings to the Lean files R37 changed rebound to its core receipt; 2 aliases naming declarations of modules no longer in the run, which only the earlier receipt this record was bound to elaborated, marked as R35 (E8) did: Generative.Deeper.same_steps_iff_endpoint_traces (periphery module); Becoming.same_steps_iff_endpoint_traces_by_core (retired module). The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](trace-law-equivalence.json).

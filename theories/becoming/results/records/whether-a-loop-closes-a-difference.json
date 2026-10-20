@@ -287,7 +287,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
       "role": "proof",
-      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "sha256": "806e95fad20b5a22ad532429698511ec066b63e9160a1018f1b7a736e6724176",
       "declarations": [
         "Becoming.sub_eq_zero_of_le",
         "Becoming.SupportGated.sub_pos_of_lt"
@@ -300,7 +300,7 @@
         "Becoming.Lasting.Variant.reaches",
         "Becoming.Lasting.orbit_mono"
       ],
-      "sha256": "cbf879fe16897ff6e7c8ac68c9a2ed8e70f05c049f34e07abf88d67645103812"
+      "sha256": "ead33dc198328da7040d9c39b0a9c3ab27778d268af34ccdeea4500541eba3c9"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
@@ -366,7 +366,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
       "role": "proof",
-      "sha256": "bf7312467205ebaa7b4a2a30150d520bc01edbbc548adc8e50a58dbf2b00106f",
+      "sha256": "750252e9e2d6d4dfa5714a9ac2f797b35d0c792f39616130c32020604e9f430f",
       "declarations": [
         "Becoming.Loops.geomBound",
         "Becoming.Loops.SelfLoop.strengths",
@@ -379,7 +379,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "999c73a26839f1bc5c36c2cd1ca48c49cad0f428b35e6728e73d97b20a95dcf4",
+      "sha256": "077b798206c9cd4c3087d24c77c6eafc264dca96013e3716ee2c44ea0c57f1d3",
       "declarations": [
         "Becoming.carried",
         "Becoming.gap",
@@ -390,6 +390,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
       "role": "receipt",
       "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "role": "receipt",
+      "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
       "declarations": []
     }
   ],
@@ -403,21 +409,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Prelude",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Loops",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"

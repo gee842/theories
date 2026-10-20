@@ -93,6 +93,7 @@ The earlier treatise's 机 (补篇一 §八, §十一), two continuations leadin
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Aliases: `every loss passes a juncture`, `每次失去都经过一个关节`, `机 (AI reading)`, `护闭 as keeping (AI reading)`, `Becoming.Branching.loss_passes_juncture`, `Becoming.Branching.keeping_greatest`, `Becoming.Branching.lpo_of_junctures_found`
 

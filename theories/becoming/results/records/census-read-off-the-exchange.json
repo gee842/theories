@@ -296,7 +296,7 @@
         "Becoming.keep",
         "Becoming.mem_keep"
       ],
-      "sha256": "58a482836d35cffc18e3993a22f183cdb2107b9461cf77bcb97a407b84868bf5"
+      "sha256": "0d3fddd65f43d3ea25d5086497771f0234e484eff60b68690a52264f9c1da74e"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
@@ -304,7 +304,7 @@
       "declarations": [
         "Becoming.LPO"
       ],
-      "sha256": "1be380343ae5a2b019fb355cee08c038404c14b9fcb2e1681e6e61b236a3fa00"
+      "sha256": "9ecb1747568c0ac4dd9befc0cdaad0511321b439cea7e60ecfc4726b57be037f"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",

@@ -215,7 +215,7 @@
         "Becoming.Viability.Kernel.mono",
         "Becoming.Viability.Kernel.run"
       ],
-      "sha256": "99f4095566368bcecc3ce83456ff8fffed3d567f77cdfcd87dadf58a8fa183e6"
+      "sha256": "83fa2be908e4412c877f839c4fcf4763e7e2f36349eb0ccfe844d04bcb75556b"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
@@ -223,7 +223,7 @@
       "declarations": [
         "Becoming.Renewable.class_belongs_to_the_run"
       ],
-      "sha256": "94bb18753807b3dd2c6d83c5d2e38e9b1a60d6f23a1b1fa7261c55e8d0e5f53c"
+      "sha256": "f2c55215f94a1ddf795d238cf4a37c041d66540ef56c83ce4a0c3319dfa19d7d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",

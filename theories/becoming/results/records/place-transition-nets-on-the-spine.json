@@ -346,7 +346,6 @@
         "Becoming.Net.cycle_premises",
         "Becoming.Net.cycle_step",
         "Becoming.Net.dissipative_iff",
-        "Becoming.Net.distinct_append'",
         "Becoming.Net.enabled_of_within",
         "Becoming.Net.enclosed",
         "Becoming.Net.fed",
@@ -404,12 +403,12 @@
         "Becoming.Net.world_taken",
         "Becoming.Net.world_total_eq"
       ],
-      "sha256": "1923814427948011a3398090feea17c2287f0f84d0589c48782f5df467234de2"
+      "sha256": "e6293a8d5ca23f901278b557e5f627df8237ca81f1ea4b376fc49001751130fc"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "99ff5358cf88287112db7947dc69504b2bcaa94931dbb172cb400bbd34061e3d",
+      "sha256": "6e0fdea63dbd3bc1d92d6df2d8e68216436e1a916d1f36ce9872da25c3fe64eb",
       "declarations": [
         "Becoming.Shuttle.distinct",
         "Becoming.inl_injective",
@@ -420,13 +419,14 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
       "role": "proof",
-      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "sha256": "806e95fad20b5a22ad532429698511ec066b63e9160a1018f1b7a736e6724176",
       "declarations": [
         "Becoming.ListTests.mem_bools",
         "Becoming.preimage_of_mem_map",
         "Becoming.mem_append_cases",
         "Becoming.mem_append_of_left",
-        "Becoming.mem_append_of_right"
+        "Becoming.mem_append_of_right",
+        "Becoming.distinct_append"
       ]
     },
     {
@@ -442,12 +442,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "6ea42b39bc76f22d855bc48b5d7dce0f1fdeea5f33d67df1b62fd8c32de0cf55"
+      "sha256": "0ac04cc1aac333c62a4fd410ede5ddd1e15da0e42e7fe2eb41f5f7696c52735e"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "role": "proof",
-      "sha256": "0ab0815ed90be71d73e427578aeeb623f23a4d2e7055391ab23903e6ac6f3861"
+      "sha256": "b7405bce742da657308ed1cb3a962823d9aaa3a560f9aaa92b1c3ad1338b4ed1"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T122417.550535Z/verification.json",
@@ -486,26 +486,32 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "role": "receipt",
+      "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PlaceTransitionNets.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.PlaceTransitionNets",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Prelude",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Roles",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -531,6 +537,10 @@
     {
       "en": "2026-10-20: 5 bookkeeping notes condensed from 19 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/178aa47506ba9f7b/place-transition-nets-on-the-spine.json and in git.",
       "zh": "2026-10-20：5 条记账性说明合并（19 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/178aa47506ba9f7b/place-transition-nets-on-the-spine.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R37 (lens B of the twentieth review: the witness models as instances of one library, one bisimulation theory for a family of relations, the definition twins and copies stated once): Replaced by the name stating it now, the same statement or its general form, or renamed (development/r37-lens-b/RENAME-TABLE.json): Net.distinct_append' (now distinct_append). Proof bindings (PlaceTransitionNets.lean, Prelude.lean, Roles.lean) rebound to core receipt 20261020T051144.879480Z. Re-pointed after reading the change: Continuation.lean, Openness.lean, PlaceTransitionNets.lean, Roles.lean: twin definitions, witness models or copies replaced by the definition stated once, the instance of Witnesses or the kept name; kept statements unchanged; Prelude.lean: the definitions and statements stated once (Distinct, total, steps, nonzero, Copying.nth, Law.memberAt, Settling.consAct, DistinctUnder, downFrom and their laws) moved here; other statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R37（第二十次评审的 B 视角：见证模型为一个库的实例，为一族关系的一个互模拟理论，孪生定义与副本只陈述一次）：以现在陈述它的名称取代（陈述相同或为其一般形式）或改名（development/r37-lens-b/RENAME-TABLE.json）：Net.distinct_append'（现为 distinct_append）。证明绑定（PlaceTransitionNets.lean、Prelude.lean、Roles.lean）改到核心回执 20261020T051144.879480Z。读过改动后重新指向：Continuation.lean、Openness.lean、PlaceTransitionNets.lean、Roles.lean：孪生定义、见证模型或副本由只陈述一次的定义、Witnesses 的实例或保留的名称取代；保留的陈述不变；Prelude.lean：只陈述一次的定义与陈述（Distinct、total、steps、nonzero、Copying.nth、Law.memberAt、Settling.consAct、DistinctUnder、downFrom 及其规律）移入；其他陈述不变。论断不变。"
     }
   ],
   "text_versions": [

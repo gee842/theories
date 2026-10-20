@@ -64,6 +64,7 @@ Boundary source: [ExplanatoryJointness.lean](../../../../experiments/integrated-
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -72,7 +73,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Reuse joint_plan_lifts and supply the application’s leaf correspondence.
 
-Aliases: `Generative.ExplanatoryJointness.joint_plan_lifts`, `Becoming.joint_plan_lifts_of_stable`, `Becoming.JointPlan.realizes_image_iff`
+Aliases: `Generative.ExplanatoryJointness.joint_plan_lifts (periphery module)`, `Becoming.joint_plan_lifts_of_stable (retired module)`, `Becoming.JointPlan.realizes_image_iff`
 
 <a id="沿革-history"></a>
 ## History
@@ -82,4 +83,5 @@ Aliases: `Generative.ExplanatoryJointness.joint_plan_lifts`, `Becoming.joint_pla
 - 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine, with one added hypothesis. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. Where configurations a description identifies match parts into configurations it identifies and the leaves are read correctly, a description realizes a nested plan exactly where every configuration it describes does (JointPlan.realizes_image_iff), and plans lifting from every configuration is matching parts (JointPlan.plans_lift_iff). So joint_plan_lifts holds on the spine where the model's tests are stable (joint_plan_lifts_of_stable); excluded middle gives stability, and without it the classical step is exactly excluded middle. Empty axiom reports (scratch build; the receipt comes with the landing). Each node keeps its own witness; the periphery proof and its receipt keep their scope.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Composition.lean, JointPlans.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Composition.lean, takes as its final section JointPlanFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; JointPlans.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.
 - 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (CompositionBridge and ExplanatoryJointness) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Composition, Becoming.JointCorrespondence and Becoming.JointPlans). The claim is unchanged.
+- 20 October 2026, R37 (lens B of the twentieth review): the proof bindings to the Lean files R37 changed rebound to its core receipt; 2 aliases naming declarations of modules no longer in the run, which only the earlier receipt this record was bound to elaborated, marked as R35 (E8) did: Generative.ExplanatoryJointness.joint_plan_lifts (periphery module); Becoming.joint_plan_lifts_of_stable (retired module). The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](joint-code-plan-lifting.json).

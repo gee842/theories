@@ -25,8 +25,8 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
   "aliases": [
-    "Generative.ExplanatoryJointness.code_joint_lifts_from_whole",
-    "Becoming.code_joint_lifts_from_whole_of_stable",
+    "Generative.ExplanatoryJointness.code_joint_lifts_from_whole (periphery module)",
+    "Becoming.code_joint_lifts_from_whole_of_stable (retired module)",
     "Becoming.liftsFromEach_iff"
   ],
   "dependencies": [],
@@ -60,7 +60,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
       "role": "proof",
-      "sha256": "ac52ae2f68ae4451095728d81344c18508bdc9a1887f8af20fc90262fefcd7ef",
+      "sha256": "17e241e3301af75312e9e921205a9905e85af5e2ba29bf9d38b1a0d523e694a7",
       "declarations": [
         "Becoming.liftsFromEach_of_exact"
       ]
@@ -80,7 +80,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
       "role": "proof",
-      "sha256": "de7b9c193bf4b6d4ca7518d1078ac3ac2122533021e536e4437936d41f3f10bb",
+      "sha256": "08ae38e607c91b205c8b99bbcb49c0678e39f36d89b6cfb9af49bbc602ba4a49",
       "declarations": [
         "Becoming.liftsFromEach_iff",
         "Becoming.liftsFromEach_of_sameJointTests",
@@ -130,19 +130,25 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "role": "receipt",
+      "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Composition",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.JointCorrespondence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -168,6 +174,10 @@
     {
       "en": "20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (CompositionBridge and ExplanatoryJointness) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Composition and Becoming.JointCorrespondence). The claim is unchanged.",
       "zh": "20 October 2026, R35 (twentieth review, E8)：对已被取代的外围模块（CompositionBridge and ExplanatoryJointness）的证明引用改为来源（provenance），保留其声明，删去其绑定；当前证明是本记录仍作为证明引用的模块（Becoming.Composition and Becoming.JointCorrespondence）。主张不变。"
+    },
+    {
+      "en": "20 October 2026, R37 (lens B of the twentieth review): the proof bindings to the Lean files R37 changed rebound to its core receipt; 2 aliases naming declarations of modules no longer in the run, which only the earlier receipt this record was bound to elaborated, marked as R35 (E8) did: Generative.ExplanatoryJointness.code_joint_lifts_from_whole (periphery module); Becoming.code_joint_lifts_from_whole_of_stable (retired module). The claim is unchanged.",
+      "zh": "2026年10月20日，R37（第二十次评审的 B 视角）：对 R37 改动的 Lean 文件的证明绑定改到其核心回执；2 个指向已不在运行中的模块之声明的别名（只有本记录先前绑定的回执列出它们）按 R35（E8）的做法标出：Generative.ExplanatoryJointness.code_joint_lifts_from_whole (periphery module)；Becoming.code_joint_lifts_from_whole_of_stable (retired module)。论断不变。"
     }
   ]
 }

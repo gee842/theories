@@ -90,6 +90,7 @@ An account of social viability Ren brought on 19 October 2026 lists eight constr
 | proof | [Loops.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean) | `Becoming.Loops.geomBound`, `Becoming.Loops.SelfLoop.strengths`, `Becoming.Loops.SelfLoop.carried_eq`, `Becoming.Loops.product`, `Becoming.CoupledWith`, `Becoming.carried_runaway` |
 | proof | [Propagation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean) | `Becoming.carried`, `Becoming.gap`, `Becoming.carried_attained` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Aliases: `whether a loop closes a difference`, `回路是否闭合差别`, `closing needs a link that gives back less`, `Becoming.LoopReturn.closing_needs_less`, `Becoming.LoopReturn.whole_factors`, `bounded conflict (reading)`
 

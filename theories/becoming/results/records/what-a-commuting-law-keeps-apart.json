@@ -342,7 +342,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
       "role": "proof",
-      "sha256": "9408f96fc097057836f4702faccedb6c19fc7615d38a97cb469ab8575c4106af"
+      "sha256": "0f8ef260bc3919fb9468207af73f6128fa71dd88454848d4a8c22ec8059500e8"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
@@ -355,12 +355,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "6cc062e616f894f91b5a359f6890f3306de01d9a6f3f45fb8ae43d4e9f937aff"
+      "sha256": "3d9ad0576877a20f53a72c582acc350355e99e6d0b27bb9075a5422c70aa1aab"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Junctures.lean",
       "role": "proof",
-      "sha256": "a8d773d7f8fbce41d0061d96f533fbb19a4e70770284aeda50e81f6fd49b420e"
+      "sha256": "5b342a5ffb26121ca959115c80f3de78153ee71898429619954d7d154d9d09d0"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T102354.824114Z/verification.json",

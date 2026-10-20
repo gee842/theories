@@ -1,0 +1,52 @@
+moved 26 [('Becoming.Composition', 'Becoming.Likeness'), ('Becoming.Copying', 'Becoming.Prelude'), ('Becoming.Counting', 'Becoming.Prelude'), ('Becoming.Entropy', 'Becoming.Change'), ('Becoming.Entropy', 'Becoming.Prelude'), ('Becoming.Flow', 'Becoming.Prelude'), ('Becoming.Identification', 'Becoming.Prelude'), ('Becoming.Listing', 'Becoming.Prelude'), ('Becoming.OneStep', 'Becoming.Prelude'), ('Becoming.Persistence', 'Becoming.Roles'), ('Becoming.Population', 'Becoming.Prelude'), ('Becoming.Refinement', 'Becoming.Prelude'), ('Becoming.RouteTraces', 'Becoming.Prelude'), ('Becoming.Sampling', 'Becoming.Prelude'), ('Becoming.Settling', 'Becoming.Prelude'), ('Becoming.Situations', 'Becoming.Weighted'), ('Becoming.Stuttering', 'Becoming.Prelude'), ('Becoming.Undecided', 'Becoming.Prelude'), ('Becoming.Weighted', 'Becoming.Prelude'), ('Becoming.World', 'Becoming.Prelude')]
+changed Lean ['Admission.lean', 'Alternatives.lean', 'Arising.lean', 'AssurancePlans.lean', 'Attraction.lean', 'Branching.lean', 'Bundles.lean', 'Carriers.lean', 'Change.lean', 'Clearing.lean', 'Composition.lean', 'Continuation.lean', 'Copying.lean', 'Correspondence.lean', 'Counting.lean', 'CouplingTraces.lean', 'Courses.lean', 'CrossSituational.lean', 'Dependence.lean', 'Enough.lean', 'Entropy.lean', 'Exclusion.lean', 'Exhaustion.lean', 'Extension.lean', 'Feedback.lean', 'Feeding.lean', 'FinerTraces.lean', 'Flow.lean', 'Frequency.lean', 'Granularity.lean', 'Handoff.lean', 'HexagramPlaces.lean', 'HexagramSequences.lean', 'HistorySums.lean', 'Identification.lean', 'Identity.lean', 'Irreversibility.lean', 'Joining.lean', 'JoiningRoles.lean', 'JointCorrespondence.lean', 'Junctures.lean', 'Labelled.lean', 'Lasting.lean', 'LawAlongRun.lean', 'Learning.lean', 'Likeness.lean', 'Listing.lean', 'Loops.lean', 'LossMatching.lean', 'MoveFormation.lean', 'MoveOutcomeProcesses.lean', 'OneStep.lean', 'Openness.lean', 'OrderNormal.lean', 'Pace.lean', 'PatternPassing.lean', 'Persistence.lean', 'PlaceTransitionNets.lean', 'Population.lean', 'Prelude.lean', 'Premises.lean', 'Propagation.lean', 'Ranking.lean', 'Refinement.lean', 'Regulation.lean', 'Rejoining.lean', 'RelativePosition.lean', 'Reordering.lean', 'Reserve.lean', 'Response.lean', 'Roles.lean', 'RouteTraces.lean', 'Routes.lean', 'RuleCapture.lean', 'Sampling.lean', 'Selection.lean', 'Settling.lean', 'SharedCodes.lean', 'SituationTraces.lean', 'Situations.lean', 'Space.lean', 'Stuttering.lean', 'Tail.lean', 'Testing.lean', 'TypicalRuns.lean', 'Typicality.lean', 'Undecided.lean', 'Viability.lean', 'Weighted.lean', 'Wholes.lean', 'Witnesses.lean', 'World.lean']
+census-balance-under-continuation 1 0 ['Change.lean', 'Flow.lean', 'Identity.lean', 'Population.lean'] 4 
+census-balance 2 0 ['Arising.lean', 'Change.lean', 'Dependence.lean', 'Flow.lean', 'Openness.lean', 'Population.lean', 'Prelude.lean', 'World.lean'] 8 
+coming-and-ceasing-keep-pace 2 0 ['Change.lean', 'Prelude.lean', 'World.lean'] 6 
+continued-change-needs-openness 1 1 ['Change.lean', 'Counting.lean', 'Flow.lean', 'Openness.lean', 'Population.lean', 'Prelude.lean', 'Premises.lean', 'Roles.lean', 'Space.lean', 'World.lean'] 10 
+counterfactual-is-the-course 1 0 ['Flow.lean', 'Labelled.lean', 'Population.lean', 'Prelude.lean', 'Response.lean', 'Testing.lean', 'World.lean'] 7 
+counting-under-enclosure 3 0 ['Change.lean', 'Counting.lean', 'Dependence.lean', 'Flow.lean', 'Openness.lean', 'Population.lean', 'Prelude.lean', 'Premises.lean', 'Space.lean', 'World.lean'] 10 
+entropy-history-and-record 4 0 ['Entropy.lean', 'Flow.lean', 'Openness.lean', 'Prelude.lean', 'Space.lean', 'World.lean'] 6 
+exchanges-commute-unless-joined 0 1 ['Dependence.lean', 'Flow.lean', 'OrderNormal.lean', 'Prelude.lean', 'Reordering.lean', 'Roles.lean'] 6 
+generation-is-replenishment 2 0 ['Flow.lean', 'Prelude.lean', 'Reserve.lean', 'Roles.lean', 'World.lean'] 8 
+gluing-under-parity 2 0 ['Flow.lean', 'Population.lean', 'Prelude.lean', 'World.lean'] 4 
+hexagram-arrangements-and-laws 0 1 ['Arising.lean', 'Flow.lean', 'HexagramPlaces.lean', 'HexagramSequences.lean', 'Labelled.lean', 'Learning.lean', 'Prelude.lean', 'World.lean'] 8 
+how-a-carried-difference-grows 3 2 ['Flow.lean', 'Loops.lean', 'Population.lean', 'Prelude.lean', 'Propagation.lean', 'World.lean'] 6 
+how-loops-form 2 0 ['Flow.lean', 'Loops.lean', 'Prelude.lean', 'Propagation.lean', 'World.lean'] 5 
+how-much-difference-arrives 3 1 ['Flow.lean', 'Population.lean', 'Prelude.lean', 'Propagation.lean', 'World.lean'] 5 
+how-often-couplings-act 2 1 ['Change.lean', 'Flow.lean', 'Frequency.lean', 'Loops.lean', 'Prelude.lean', 'Propagation.lean', 'World.lean'] 7 
+identification-where-bounded 2 1 ['Identification.lean', 'Labelled.lean', 'Learning.lean', 'Prelude.lean', 'Refinement.lean'] 5 
+identity-across-steps 3 0 ['Identity.lean', 'Labelled.lean', 'Persistence.lean', 'Prelude.lean', 'World.lean'] 9 
+joint-target-uniqueness 0 1 ['Composition.lean'] 1 
+laws-at-coarser-steps 1 0 ['Change.lean', 'Population.lean', 'Premises.lean', 'Sampling.lean'] 4 
+laws-of-one-step-complete 2 0 ['Flow.lean', 'OneStep.lean', 'Population.lean', 'Prelude.lean', 'Space.lean'] 5 
+learning-by-refutation 0 3 ['Learning.lean', 'Testing.lean'] 2 
+life-as-condition-of-life 1 0 ['Correspondence.lean', 'Roles.lean', 'World.lean'] 6 
+listing-once-is-decided-identity 2 0 ['Listing.lean', 'Openness.lean', 'Population.lean', 'Prelude.lean', 'Space.lean'] 5 
+loops-within-what-a-law-reads 1 0 ['Admission.lean', 'Dependence.lean', 'Feedback.lean', 'Flow.lean', 'Loops.lean', 'Prelude.lean', 'Propagation.lean', 'Testing.lean', 'World.lean'] 9 
+map-of-premises 1 0 ['Population.lean', 'Premises.lean', 'Reserve.lean', 'Roles.lean', 'Space.lean', 'World.lean'] 6 
+more-needs-renewers 3 0 ['Flow.lean', 'Population.lean', 'Prelude.lean', 'World.lean'] 6 
+no-finite-part-bears-taking 3 0 ['Dependence.lean', 'Prelude.lean', 'World.lean'] 7 
+observation-is-a-route 1 0 ['Flow.lean', 'Loops.lean', 'Population.lean', 'Prelude.lean', 'Propagation.lean', 'Testing.lean', 'World.lean'] 7 
+only-the-order-of-change-shows 1 0 ['Prelude.lean', 'Sampling.lean', 'Stuttering.lean'] 3 
+orders-as-a-sum-over-histories 2 1 ['Change.lean', 'Flow.lean', 'Loops.lean', 'Population.lean', 'Prelude.lean', 'Propagation.lean', 'Routes.lean', 'Weighted.lean', 'World.lean'] 9 
+place-transition-nets-on-the-spine 0 1 ['PlaceTransitionNets.lean', 'Prelude.lean', 'Roles.lean'] 5 
+process-and-frame-as-readings 1 0 ['Arising.lean', 'Change.lean', 'Dependence.lean', 'Flow.lean', 'Labelled.lean', 'Prelude.lean', 'World.lean'] 7 
+relata-counted-up-to-indiscernibility 0 4 ['Labelled.lean', 'Listing.lean', 'Sampling.lean'] 3 
+reserve-defers-ending 2 0 ['Prelude.lean', 'Reserve.lean', 'World.lean'] 8 
+rest-at-every-resolution 1 0 ['Change.lean', 'Flow.lean', 'Openness.lean', 'Prelude.lean', 'Premises.lean', 'Reserve.lean', 'Roles.lean', 'Space.lean', 'World.lean'] 9 
+revision-with-an-undecided-value 2 0 ['Undecided.lean'] 1 
+sum-over-histories-exact 1 0 ['Prelude.lean', 'Weighted.lean'] 2 
+sums-over-histories-by-support-horizon-and-order 0 1 ['HistorySums.lean', 'Loops.lean', 'Prelude.lean', 'Routes.lean', 'Weighted.lean'] 5 
+tests-fix-likeness-where-determined 1 2 ['Labelled.lean', 'Likeness.lean', 'Refinement.lean'] 3 
+typicality-by-counting 0 1 ['Identification.lean', 'Prelude.lean', 'TypicalRuns.lean', 'Typicality.lean', 'Weighted.lean'] 5 
+weights-count-situations 1 3 ['FinerTraces.lean', 'Prelude.lean', 'Situations.lean', 'Typicality.lean', 'Weighted.lean'] 5 
+what-a-cut-loses 3 0 ['Flow.lean', 'Loops.lean', 'Population.lean', 'Prelude.lean', 'Propagation.lean', 'World.lean'] 6 
+what-a-law-of-the-whole-and-no-part-takes 0 1 ['Change.lean', 'Prelude.lean', 'Tail.lean', 'Testing.lean', 'World.lean'] 5 
+when-the-runs-of-a-process-settle 1 0 ['Branching.lean', 'Settling.lean'] 2 
+where-a-move-is-formed 0 2 ['Labelled.lean', 'Learning.lean', 'MoveFormation.lean', 'Prelude.lean'] 4 
+where-novelty-gain-comes-from 2 0 ['Arising.lean', 'Dependence.lean', 'Entropy.lean', 'Flow.lean', 'Population.lean', 'Prelude.lean', 'World.lean'] 7 
+where-two-courses-rejoin 2 0 ['Prelude.lean', 'Rejoining.lean'] 6 
+whole-law-of-counting 2 0 ['Change.lean', 'Counting.lean', 'Dependence.lean', 'Flow.lean', 'Openness.lean', 'Population.lean', 'Prelude.lean', 'Premises.lean', 'Roles.lean', 'Space.lean', 'World.lean'] 11 
+whole-persists-through-generation 0 1 ['Wholes.lean', 'World.lean'] 4 
+49 records changed

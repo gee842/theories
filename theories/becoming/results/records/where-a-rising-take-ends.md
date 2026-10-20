@@ -67,6 +67,7 @@ The chapter's open programme (section 8.2, "Seeking, capture and runaway") named
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Aliases: `where a rising take ends`, `多于此刻的取用终于何处`, `exhaustion ends the seeker`, `耗尽终结寻求者`, `a take more than now`, `多于此刻的取用`, `exhaustion of the renewal`, `更新的耗尽`
 

@@ -95,6 +95,7 @@ Ren's first confirmed reading: possibilities are what can form next from what ex
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Aliases: `Becoming.Web.Admits`, `Becoming.Web.supported_iff_admits`, `Becoming.Web.Admits.mono`, `Becoming.Flow.withhold`, `Becoming.Flow.partTaken`, `Becoming.Flow.partGiven`, `Becoming.Flow.WithheldLevels`, `Becoming.Flow.taken_withhold`, `Becoming.Flow.given_withhold`, `Becoming.Flow.WithheldLevels.unique`, `Becoming.Flow.Balances.withheld`, `Becoming.Flow.Balances.supported_iff_within_margin`, `Becoming.Flow.Balances.supported_of_net_give`, `Becoming.Flow.Balances.admits_of_net_draw`
 

@@ -29,7 +29,7 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/AssurancePlans.lean",
   "aliases": [
-    "Generative.WisdomResponseStructure.assured_route_iff",
+    "Generative.WisdomResponseStructure.assured_route_iff (periphery module)",
     "Becoming.Assurance.completes_iff_of_determined",
     "Becoming.Assurance.completes_iff_runs",
     "Becoming.Assurance.runs_of_completes",
@@ -38,9 +38,9 @@
     "Becoming.Assurance.trace_ofPartial_iff",
     "Becoming.Assurance.completes_ofPartial_iff",
     "Becoming.Assurance.Branch.runs_not_completes",
-    "Becoming.Instances.assured_iff_completes",
-    "Becoming.Instances.routes_assured_iff",
-    "Becoming.Instances.regulation_assured_iff"
+    "Becoming.Instances.assured_iff_completes (retired module)",
+    "Becoming.Instances.routes_assured_iff (retired module)",
+    "Becoming.Instances.regulation_assured_iff (retired module)"
   ],
   "dependencies": [],
   "related": [],
@@ -80,7 +80,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/AssurancePlans.lean",
       "role": "proof",
-      "sha256": "7d5fdf294506ca10cd11148e57ba88d09a443a546ad89c51c99dc9f6485ea1d0",
+      "sha256": "86a96eb70b6d92d5b8270810d68eb41fa55c7366d436e9950e4b2962896dcef2",
       "declarations": [
         "Becoming.AssurancePlans.Routes.completes_iff",
         "Becoming.AssurancePlans.Regulation.kept_along"
@@ -161,6 +161,12 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "role": "receipt",
+      "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -173,7 +179,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/AssurancePlans.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.AssurancePlans",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -213,6 +219,10 @@
     {
       "en": "20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (Instances and WisdomResponseStructure) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Assurance, Becoming.AssurancePlans and Becoming.Laws). The claim is unchanged.",
       "zh": "20 October 2026, R35 (twentieth review, E8)：对已被取代的外围模块（Instances and WisdomResponseStructure）的证明引用改为来源（provenance），保留其声明，删去其绑定；当前证明是本记录仍作为证明引用的模块（Becoming.Assurance, Becoming.AssurancePlans and Becoming.Laws）。主张不变。"
+    },
+    {
+      "en": "20 October 2026, R37 (lens B of the twentieth review): the proof bindings to the Lean files R37 changed rebound to its core receipt; 4 aliases naming declarations of modules no longer in the run, which only the earlier receipt this record was bound to elaborated, marked as R35 (E8) did: Generative.WisdomResponseStructure.assured_route_iff (periphery module); Becoming.Instances.assured_iff_completes (retired module); Becoming.Instances.routes_assured_iff (retired module); Becoming.Instances.regulation_assured_iff (retired module). The claim is unchanged.",
+      "zh": "2026年10月20日，R37（第二十次评审的 B 视角）：对 R37 改动的 Lean 文件的证明绑定改到其核心回执；4 个指向已不在运行中的模块之声明的别名（只有本记录先前绑定的回执列出它们）按 R35（E8）的做法标出：Generative.WisdomResponseStructure.assured_route_iff (periphery module)；Becoming.Instances.assured_iff_completes (retired module)；Becoming.Instances.routes_assured_iff (retired module)；Becoming.Instances.regulation_assured_iff (retired module)。论断不变。"
     }
   ]
 }

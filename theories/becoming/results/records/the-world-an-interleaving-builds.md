@@ -73,6 +73,7 @@ The twentieth review's G10 asked that Interleavings, which reads the step index 
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [G-FRONTIER.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/twentieth-review/G-FRONTIER.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Aliases: `the world an interleaving builds`, `交错所构造的世界`, `course of standings`, `所立之串`, `Becoming.Interleavings.LocalLaw.world_swap`, `Becoming.Interleavings.LocalLaw.world_balances`
 

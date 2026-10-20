@@ -272,7 +272,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
       "role": "proof",
-      "sha256": "c23cd4eacf3966b21bfb9ffe52ddbe1b9a9352531d8a9025c52d8e0ba7a56d59",
+      "sha256": "b062315f1166b61ea22a0b6c5b1f832378dad9ae05810b98df271639c409afc8",
       "declarations": [
         "Becoming.Handoff.handed_off_progress",
         "Becoming.Handoff.newContent_by_bound",
@@ -329,12 +329,18 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "role": "receipt",
+      "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Handoff",
       "success_pointer": "/status",
       "success_value": "passed"

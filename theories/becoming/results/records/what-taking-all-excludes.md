@@ -70,6 +70,7 @@ The chapter's open programme (section 8.2, "Continuation (§6.7) and feeding") n
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Aliases: `what taking all that is given excludes`, `取尽所给所排除的`, `competitive exclusion`, `竞争排除`, `taking all that is given`, `取尽所给`, `the joint course that keeps all`, `全部保持的联合进程`, `admission does not see exclusion`, `容纳看不见排除`
 

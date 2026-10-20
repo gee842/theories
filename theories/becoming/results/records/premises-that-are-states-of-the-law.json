@@ -313,7 +313,7 @@
         "Becoming.World.Dissipative",
         "Becoming.World.Embodied"
       ],
-      "sha256": "4e25aa0f0c75ac33b47b3b1dd7f0399ba55ec1f5dd5d83fd23e8575e8dc69703"
+      "sha256": "d7cf70544495c135366166d401bf10bdfd0be55bf362bdd59b2b186258cff6cd"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
@@ -321,7 +321,7 @@
       "declarations": [
         "Becoming.World.Transmitting"
       ],
-      "sha256": "58a482836d35cffc18e3993a22f183cdb2107b9461cf77bcb97a407b84868bf5"
+      "sha256": "0d3fddd65f43d3ea25d5086497771f0234e484eff60b68690a52264f9c1da74e"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
@@ -351,7 +351,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1"
+      "sha256": "d3faffe564ac2a5ed07cf256b8573008d2c4c1832b7d9c62044fb6cded99e09c"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",

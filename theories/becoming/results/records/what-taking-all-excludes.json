@@ -230,7 +230,7 @@
         "Becoming.add_le_total_of_mem",
         "Becoming.mem_of_mem_cons_ne"
       ],
-      "sha256": "94a18f41ddefa0222801661c72bb5af17f957c1d091f82f9aedaf4a9e9663b61"
+      "sha256": "f5ccca1a63e56f58cbd44fd173280c075d7534ab86f2397b78f22171c101e43b"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T154830.591298Z/verification.json",
@@ -251,12 +251,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
       "role": "provenance",
       "sha256": "a5296e9a8fb43255176faf4b9df88bed625bb14a09c2e3a4ec6fc22be3771b86"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "role": "receipt",
+      "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T154830.591298Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Exclusion",
       "success_pointer": "/status",
       "success_value": "passed"

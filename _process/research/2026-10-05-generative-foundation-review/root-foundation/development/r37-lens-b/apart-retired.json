@@ -1,0 +1,10 @@
+{
+ "about": "Apart-register entries retired by R37 (20 October 2026): each names a theorem removed by lens B of the twentieth review (B6), whose statement became trivial once the definition twins were stated once. Bytes as they stood in THEOREM-CONNECTIVITY-APART.json.",
+ "roots": {
+  "Becoming.CrossSituational.distinct_iff": {
+   "module": "Becoming.Courses",
+   "category": "support",
+   "reason": "a list lemma: the universe-polymorphic and the Type-level definitions of lists without repetition agree"
+  }
+ }
+}

@@ -253,7 +253,7 @@
         "Becoming.Replenishing.web",
         "Becoming.exists_apart_of_total_ne"
       ],
-      "sha256": "a00c7d56033c7985142924d3df3cb1a470f42a63841e377b1e3f082bfcbf7d92"
+      "sha256": "0b1f3628d4360420bdb928d801b455e580e6134071b67d5566a80d62f7a5ba56"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
@@ -264,27 +264,27 @@
         "Becoming.Flow.Balances",
         "Becoming.Flow.BalancesOn",
         "Becoming.Flow.Balances.on",
-        "Becoming.total_congr",
-        "Becoming.steps"
+        "Becoming.total_congr"
       ],
-      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024"
+      "sha256": "7364d547b7d4349fe7fcff8868e81ce2464e1ee430387f0918cbfee5ab05a3bd"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
       "declarations": [
         "Becoming.Web",
-        "Becoming.Flow",
-        "Becoming.total"
+        "Becoming.Flow"
       ],
-      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe"
+      "sha256": "9d05b714c28d3497235330e5d5fb4221415ea3ae25ec32d730425299b5479428"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
       "role": "proof",
-      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
+      "sha256": "806e95fad20b5a22ad532429698511ec066b63e9160a1018f1b7a736e6724176",
       "declarations": [
-        "Becoming.add_right_cancel"
+        "Becoming.add_right_cancel",
+        "Becoming.steps",
+        "Becoming.total"
       ]
     },
     {
@@ -307,7 +307,7 @@
         "Becoming.Flow.alike_beyond_response",
         "Becoming.Flow.exchange_alike_beyond_response"
       ],
-      "sha256": "fc25cc715d0eb60205939acf67a28ee56f66195a2213ebb3ffeaf4691746827c"
+      "sha256": "d9f8d20e13767514c7db803bf7b8cdbd97469049eb0a15fae2f6f2e5a39609a0"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
@@ -317,7 +317,7 @@
         "Becoming.Web.AlikeThroughUpTo",
         "Becoming.Web.CoupledInto"
       ],
-      "sha256": "679f7dfa4433804a6230660ebfe0ddd93eb283223ad7d2af5e72112e75879808"
+      "sha256": "aba84f9ec26501aedb0c4f266c90619fcca2305f268e843a82d5603468d51b44"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T004321.279483Z/verification.json",
@@ -369,19 +369,25 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "role": "receipt",
+      "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Rejoining.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T004321.279483Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Rejoining",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Prelude",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -415,6 +421,10 @@
     {
       "en": "20 October 2026, R36 (the chapter, once): the canonical chapter was restructured, its 20 October edition frozen in theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md; this record's citations of the old section numbering re-pointed by content (section 6.15 to 6.4). The claim is unchanged.",
       "zh": "2026年10月20日，R36（本章只陈述一次）：规范章节重排，10月20日版冻结于 theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md；本记录对旧节号的引用按内容重指（§6.15 改为 §6.4）。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R37 (lens B of the twentieth review: the witness models as instances of one library, one bisimulation theory for a family of relations, the definition twins and copies stated once): Moved with their full names: from Flow.lean to Prelude.lean, steps; from World.lean to Prelude.lean, total. Proof bindings (Prelude.lean, Rejoining.lean) rebound to core receipt 20261020T051144.879480Z. Re-pointed after reading the change: Flow.lean, Rejoining.lean, Response.lean, Testing.lean, World.lean: twin definitions, witness models or copies replaced by the definition stated once, the instance of Witnesses or the kept name; kept statements unchanged; Prelude.lean: the definitions and statements stated once (Distinct, total, steps, nonzero, Copying.nth, Law.memberAt, Settling.consAct, DistinctUnder, downFrom and their laws) moved here; other statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R37（第二十次评审的 B 视角：见证模型为一个库的实例，为一族关系的一个互模拟理论，孪生定义与副本只陈述一次）：连同完整名称移动：从 Flow.lean 到 Prelude.lean：steps；从 World.lean 到 Prelude.lean：total。证明绑定（Prelude.lean、Rejoining.lean）改到核心回执 20261020T051144.879480Z。读过改动后重新指向：Flow.lean、Rejoining.lean、Response.lean、Testing.lean、World.lean：孪生定义、见证模型或副本由只陈述一次的定义、Witnesses 的实例或保留的名称取代；保留的陈述不变；Prelude.lean：只陈述一次的定义与陈述（Distinct、total、steps、nonzero、Copying.nth、Law.memberAt、Settling.consAct、DistinctUnder、downFrom 及其规律）移入；其他陈述不变。论断不变。"
     }
   ],
   "text_versions": [

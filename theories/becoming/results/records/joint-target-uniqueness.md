@@ -48,7 +48,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json) | — |
 | integration | [EXPLANATORY-JOINTNESS-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
-| proof | [Composition.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean) | `Becoming.JointFrame`, `Becoming.SameJointTests.functional` |
+| proof | [Composition.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean) | `Becoming.JointFrame` |
+| proof | [Likeness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean) | `Becoming.SameTestsWith.functional` |
 | provenance | [CompositionBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CompositionBridge.lean) | `Becoming.same_target_unique_by_core` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
@@ -56,6 +57,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -64,7 +66,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Reuse for the joint language; designated-part substitution or global concurrency requires further correspondence.
 
-Aliases: `Generative.ExplanatoryJointness.same_target_unique (retired module)`, `Becoming.same_target_unique_by_core (retired module)`, `Becoming.SameJointTests.functional`
+Aliases: `Generative.ExplanatoryJointness.same_target_unique (retired module)`, `Becoming.same_target_unique_by_core (retired module)`, `Becoming.SameTestsWith.functional`
 
 <a id="沿革-history"></a>
 ## History
@@ -72,4 +74,5 @@ Aliases: `Generative.ExplanatoryJointness.same_target_unique (retired module)`, 
 - 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. Where joint tests tell a frame's configurations apart, a configuration passes the same joint tests as at most one of them (SameJointTests.functional); same_target_unique is that law on the model's frame (same_target_unique_by_core), with no added hypothesis and empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof, its receipt and the shared-support counterexample keep their scope.
 - 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (CompositionBridge and ExplanatoryJointness) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Composition). The retired modules' content is also stated in Becoming.JointCorrespondence, which this record does not cite with declarations. 2 aliases naming retired declarations are marked "(retired module)". The claim is unchanged.
+- 20 October 2026, R37 (lens B of the twentieth review: the witness models as instances of one library, one bisimulation theory for a family of relations, the definition twins and copies stated once): Replaced by the name stating it now, the same statement or its general form, or renamed (development/r37-lens-b/RENAME-TABLE.json): SameJointTests.functional (now SameTestsWith.functional). Proof bindings (Composition.lean) rebound to core receipt 20261020T051144.879480Z. Re-pointed after reading the change: Composition.lean: the joint frame is the case of one relation: JointTest, JointAlike, JointBisimulation, SameJointTests abbreviations of the general ones, the parallel laws removed; kept statements unchanged. The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](joint-target-uniqueness.json).

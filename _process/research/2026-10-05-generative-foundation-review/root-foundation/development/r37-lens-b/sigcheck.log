@@ -1,0 +1,101 @@
+kept or replaced: 11375 agree, 2 differ (same name), 23 differ (replaced by a kept name), 0 missing, 1 removed with no replacement
+DIFFER Becoming.distinct_append -> Becoming.distinct_append
+  OLD ∀ {α : Type} {l m : List α}, Becoming.Distinct l → Becoming.Distinct m → (∀ (a : α), a ∈ l → ¬a ∈ m) → Becoming.Distinct (l ++ m)
+  NEW ∀ {α : Type u_1} {l m : List α}, Becoming.Distinct l → Becoming.Distinct m → (∀ (a : α), a ∈ l → ¬a ∈ m) → Becoming.Distinct (l ++ m)
+DIFFER Becoming.Pairing.apart -> Becoming.Pairing.apart
+  OLD Becoming.JointTest.Holds Becoming.Pairing.frame true (Becoming.JointTest.top.together Becoming.JointTest.top) ∧ ¬Becoming.JointTest.Holds Becoming.Pairing.frame false (Becoming.JointTest.top.together Becoming.JointTest.top)
+  NEW Becoming.JointTest.Holds Becoming.Pairing.frame true (Becoming.TestWith.together () Becoming.TestWith.top Becoming.TestWith.top) ∧ ¬Becoming.JointTest.Holds Becoming.Pairing.frame false (Becoming.TestWith.together () Becoming.TestWith.top Becoming.TestWith.top)
+GENERAL Becoming.distinct_append_apart -> Becoming.distinct_append
+  OLD ∀ {α : Type} {l m : List α}, Becoming.Distinct l → Becoming.Distinct m → (∀ (a : α), a ∈ l → ¬a ∈ m) → Becoming.Distinct (l ++ m)
+  NEW ∀ {α : Type u_1} {l m : List α}, Becoming.Distinct l → Becoming.Distinct m → (∀ (a : α), a ∈ l → ¬a ∈ m) → Becoming.Distinct (l ++ m)
+GENERAL Becoming.Learning.mem_upto -> Becoming.mem_downFrom
+  OLD ∀ {m n : Nat}, n ≤ m → n ∈ Becoming.Learning.upto m
+  NEW ∀ {k K : Nat}, k ≤ K → k ∈ Becoming.downFrom K
+GENERAL Becoming.SameJointTests.refl -> Becoming.SameTestsWith.refl
+  OLD ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} (F : Becoming.JointFrame S A C) (s : S), Becoming.SameJointTests F F s s
+  NEW ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {I : Type u_4} (F : Becoming.Frame S A C) (J : I → S → S → S → Prop) (s : S), Becoming.SameTestsWith F F J J s s
+GENERAL Becoming.SameJointTests.symm -> Becoming.SameTestsWith.symm
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {s : S} {s' : S'}, Becoming.SameJointTests F G s s' → Becoming.SameJointTests G F s' s
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {s : S} {s' : S'}, Becoming.SameTestsWith F G J K s s' → Becoming.SameTestsWith G F K J s' s
+GENERAL Becoming.SameJointTests.trans -> Becoming.SameTestsWith.trans
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {S'' : Type u_5} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {H : Becoming.JointFrame S'' A C} {s : S} {s' : S'} {s'' : S''}, Becoming.SameJointTests F G s s' → Becoming.SameJointTests G H s' s'' → Becoming.SameJointTests F H s s''
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {S'' : Type u_5} {I : Type u_6} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {H : Becoming.Frame S'' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {L : I → S'' → S'' → S'' → Prop} {s : S} {s' : S'} {s'' : S''}, Becoming.SameTestsWith F G J K s s' → Becoming.SameTestsWith G H K L s' s'' → Becoming.SameTestsWith F H J L s s''
+GENERAL Becoming.SameJointTests.functional -> Becoming.SameTestsWith.functional
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C}, (∀ (t t' : S'), Becoming.SameJointTests G G t t' → t = t') → ∀ {s : S} {t t' : S'}, Becoming.SameJointTests F G s t → Becoming.SameJointTests F G s t' → t = t'
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop}, (∀ (t t' : S'), Becoming.SameTestsWith G G K K t t' → t = t') → ∀ {s : S} {t t' : S'}, Becoming.SameTestsWith F G J K s t → Becoming.SameTestsWith F G J K s t' → t = t'
+GENERAL Becoming.BranchingTest.holds_toJoint -> Becoming.BranchingTest.holds_toWith
+  OLD ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} (φ : Becoming.BranchingTest A C) (s : S), Becoming.BranchingTest.Holds F.toFrame s φ ↔ Becoming.JointTest.Holds F s φ.toJoint
+  NEW ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {I : Type u_4} {F : Becoming.Frame S A C} {J : I → S → S → S → Prop} (φ : Becoming.BranchingTest A C) (s : S), Becoming.BranchingTest.Holds F s φ ↔ Becoming.TestWith.Holds F J s φ.toWith
+GENERAL Becoming.SameJointTests.sameBranchingTests -> Becoming.SameTestsWith.sameBranchingTests
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {s : S} {s' : S'}, Becoming.SameJointTests F G s s' → Becoming.SameBranchingTests F.toFrame G.toFrame s s'
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {s : S} {s' : S'}, Becoming.SameTestsWith F G J K s s' → Becoming.SameBranchingTests F G s s'
+GENERAL Becoming.JointBisimulation.eq -> Becoming.BisimulationWith.eq
+  OLD ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} (F : Becoming.JointFrame S A C), Becoming.JointBisimulation F F fun s s' => s = s'
+  NEW ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {I : Type u_4} (F : Becoming.Frame S A C) (J : I → S → S → S → Prop), Becoming.BisimulationWith F F J J fun s s' => s = s'
+GENERAL Becoming.JointBisimulation.converse -> Becoming.BisimulationWith.converse
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {B : S → S' → Prop}, Becoming.JointBisimulation F G B → Becoming.JointBisimulation G F fun s' s => B s s'
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {B : S → S' → Prop}, Becoming.BisimulationWith F G J K B → Becoming.BisimulationWith G F K J fun s' s => B s s'
+GENERAL Becoming.JointBisimulation.comp -> Becoming.BisimulationWith.comp
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {S'' : Type u_5} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {H : Becoming.JointFrame S'' A C} {B : S → S' → Prop} {B' : S' → S'' → Prop}, Becoming.JointBisimulation F G B → Becoming.JointBisimulation G H B' → Becoming.JointBisimulation F H fun s s'' => ∃ s', B s s' ∧ B' s' s''
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {S'' : Type u_5} {I : Type u_6} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {H : Becoming.Frame S'' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {L : I → S'' → S'' → S'' → Prop} {B : S → S' → Prop} {B' : S' → S'' → Prop}, Becoming.BisimulationWith F G J K B → Becoming.BisimulationWith G H K L B' → Becoming.BisimulationWith F H J L fun s s'' => ∃ s', B s s' ∧ B' s' s''
+GENERAL Becoming.JointAlike.refl -> Becoming.AlikeWith.refl
+  OLD ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} (F : Becoming.JointFrame S A C) (s : S), Becoming.JointAlike F F s s
+  NEW ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {I : Type u_4} (F : Becoming.Frame S A C) (J : I → S → S → S → Prop) (s : S), Becoming.AlikeWith F F J J s s
+GENERAL Becoming.JointAlike.symm -> Becoming.AlikeWith.symm
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {s : S} {s' : S'}, Becoming.JointAlike F G s s' → Becoming.JointAlike G F s' s
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {s : S} {s' : S'}, Becoming.AlikeWith F G J K s s' → Becoming.AlikeWith G F K J s' s
+GENERAL Becoming.JointAlike.trans -> Becoming.AlikeWith.trans
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {S'' : Type u_5} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {H : Becoming.JointFrame S'' A C} {s : S} {s' : S'} {s'' : S''}, Becoming.JointAlike F G s s' → Becoming.JointAlike G H s' s'' → Becoming.JointAlike F H s s''
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {S'' : Type u_5} {I : Type u_6} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {H : Becoming.Frame S'' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {L : I → S'' → S'' → S'' → Prop} {s : S} {s' : S'} {s'' : S''}, Becoming.AlikeWith F G J K s s' → Becoming.AlikeWith G H K L s' s'' → Becoming.AlikeWith F H J L s s''
+GENERAL Becoming.JointAlike.alike -> Becoming.AlikeWith.alike
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {s : S} {s' : S'}, Becoming.JointAlike F G s s' → Becoming.Alike F.toFrame G.toFrame s s'
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {s : S} {s' : S'}, Becoming.AlikeWith F G J K s s' → Becoming.Alike F G s s'
+GENERAL Becoming.JointAlike.realized -> Becoming.AlikeWith.realized
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {s : S} {s' : S'}, Becoming.JointAlike F G s s' → ∀ (c : C), F.realized s c ↔ G.realized s' c
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {s : S} {s' : S'}, Becoming.AlikeWith F G J K s s' → ∀ (c : C), F.realized s c ↔ G.realized s' c
+GENERAL Becoming.JointAlike.step -> Becoming.AlikeWith.step
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {s : S} {s' : S'}, Becoming.JointAlike F G s s' → ∀ {a : A} {t : S}, F.P.step s a t → ∃ t', G.P.step s' a t' ∧ Becoming.JointAlike F G t t'
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {s : S} {s' : S'}, Becoming.AlikeWith F G J K s s' → ∀ {a : A} {t : S}, F.P.step s a t → ∃ t', G.P.step s' a t' ∧ Becoming.AlikeWith F G J K t t'
+GENERAL Becoming.JointAlike.parts -> Becoming.AlikeWith.parts
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {s : S} {s' : S'}, Becoming.JointAlike F G s s' → ∀ {l r : S}, F.joint s l r → ∃ l' r', G.joint s' l' r' ∧ Becoming.JointAlike F G l l' ∧ Becoming.JointAlike F G r r'
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {s : S} {s' : S'}, Becoming.AlikeWith F G J K s s' → ∀ (i : I) {l r : S}, J i s l r → ∃ l' r', K i s' l' r' ∧ Becoming.AlikeWith F G J K l l' ∧ Becoming.AlikeWith F G J K r r'
+GENERAL Becoming.JointAlike.matchesParts -> Becoming.AlikeWith.matchesParts
+  OLD ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} (F : Becoming.JointFrame S A C), Becoming.MatchesParts F.joint F.joint (Becoming.JointAlike F F)
+  NEW ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {I : Type u_4} (F : Becoming.Frame S A C) (J : I → S → S → S → Prop) (i : I), Becoming.MatchesParts (J i) (J i) (Becoming.AlikeWith F F J J)
+GENERAL Becoming.JointAlike.holds_iff -> Becoming.AlikeWith.holds_iff
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} (φ : Becoming.JointTest A C) {s : S} {s' : S'}, Becoming.JointAlike F G s s' → (Becoming.JointTest.Holds F s φ ↔ Becoming.JointTest.Holds G s' φ)
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} (φ : Becoming.TestWith I A C) {s : S} {s' : S'}, Becoming.AlikeWith F G J K s s' → (Becoming.TestWith.Holds F J s φ ↔ Becoming.TestWith.Holds G K s' φ)
+GENERAL Becoming.JointAlike.sameJointTests -> Becoming.AlikeWith.sameTestsWith
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C} {s : S} {s' : S'}, Becoming.JointAlike F G s s' → Becoming.SameJointTests F G s s'
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop} {s : S} {s' : S'}, Becoming.AlikeWith F G J K s s' → Becoming.SameTestsWith F G J K s s'
+GENERAL Becoming.JointAlike.functional -> Becoming.AlikeWith.functional
+  OLD ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.JointFrame S A C} {G : Becoming.JointFrame S' A C}, (∀ (t t' : S'), Becoming.JointAlike G G t t' → t = t') → ∀ {s : S} {t t' : S'}, Becoming.JointAlike F G s t → Becoming.JointAlike F G s t' → t = t'
+  NEW ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {I : Type u_5} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {J : I → S → S → S → Prop} {K : I → S' → S' → S' → Prop}, (∀ (t t' : S'), Becoming.AlikeWith G G K K t t' → t = t') → ∀ {s : S} {t t' : S'}, Becoming.AlikeWith F G J K s t → Becoming.AlikeWith F G J K s t' → t = t'
+GENERAL Becoming.Net.distinct_append' -> Becoming.distinct_append
+  OLD ∀ {α : Type} {l m : List α}, Becoming.Distinct l → Becoming.Distinct m → (∀ (a : α), a ∈ l → ¬a ∈ m) → Becoming.Distinct (l ++ m)
+  NEW ∀ {α : Type u_1} {l m : List α}, Becoming.Distinct l → Becoming.Distinct m → (∀ (a : α), a ∈ l → ¬a ∈ m) → Becoming.Distinct (l ++ m)
+new names: 24
+NEW Becoming.AlikeWith.alike
+NEW Becoming.AlikeWith.functional
+NEW Becoming.AlikeWith.holds_iff
+NEW Becoming.AlikeWith.matchesParts
+NEW Becoming.AlikeWith.parts
+NEW Becoming.AlikeWith.realized
+NEW Becoming.AlikeWith.refl
+NEW Becoming.AlikeWith.sameTestsWith
+NEW Becoming.AlikeWith.step
+NEW Becoming.AlikeWith.symm
+NEW Becoming.AlikeWith.trans
+NEW Becoming.BisimulationWith.comp
+NEW Becoming.BisimulationWith.converse
+NEW Becoming.BisimulationWith.eq
+NEW Becoming.BranchingTest.holds_toWith
+NEW Becoming.DistinctUnder.decided
+NEW Becoming.DistinctUnder.distinct
+NEW Becoming.DistinctUnder.eq_of
+NEW Becoming.SameTestsWith.functional
+NEW Becoming.SameTestsWith.refl
+NEW Becoming.SameTestsWith.sameBranchingTests
+NEW Becoming.SameTestsWith.symm
+NEW Becoming.SameTestsWith.trans
+NEW Becoming.alikeWith_empty_iff

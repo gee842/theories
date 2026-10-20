@@ -58,6 +58,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -66,7 +67,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Risk applications reuse this completion criterion for every determined process; nondeterministic plans need the full completion condition.
 
-Aliases: `Generative.WisdomResponseStructure.assured_route_iff`, `Becoming.Assurance.completes_iff_of_determined`, `Becoming.Assurance.completes_iff_runs`, `Becoming.Assurance.runs_of_completes`, `Becoming.Assurance.completes_ofMap_iff`, `Becoming.Assurance.completes_ofMap_single`, `Becoming.Assurance.trace_ofPartial_iff`, `Becoming.Assurance.completes_ofPartial_iff`, `Becoming.Assurance.Branch.runs_not_completes`, `Becoming.Instances.assured_iff_completes`, `Becoming.Instances.routes_assured_iff`, `Becoming.Instances.regulation_assured_iff`
+Aliases: `Generative.WisdomResponseStructure.assured_route_iff (periphery module)`, `Becoming.Assurance.completes_iff_of_determined`, `Becoming.Assurance.completes_iff_runs`, `Becoming.Assurance.runs_of_completes`, `Becoming.Assurance.completes_ofMap_iff`, `Becoming.Assurance.completes_ofMap_single`, `Becoming.Assurance.trace_ofPartial_iff`, `Becoming.Assurance.completes_ofPartial_iff`, `Becoming.Assurance.Branch.runs_not_completes`, `Becoming.Instances.assured_iff_completes (retired module)`, `Becoming.Instances.routes_assured_iff (retired module)`, `Becoming.Instances.regulation_assured_iff (retired module)`
 
 <a id="沿革-history"></a>
 ## History
@@ -76,4 +77,5 @@ Aliases: `Generative.WisdomResponseStructure.assured_route_iff`, `Becoming.Assur
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
 - 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (Instances and WisdomResponseStructure) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Assurance, Becoming.AssurancePlans and Becoming.Laws). The claim is unchanged.
+- 20 October 2026, R37 (lens B of the twentieth review): the proof bindings to the Lean files R37 changed rebound to its core receipt; 4 aliases naming declarations of modules no longer in the run, which only the earlier receipt this record was bound to elaborated, marked as R35 (E8) did: Generative.WisdomResponseStructure.assured_route_iff (periphery module); Becoming.Instances.assured_iff_completes (retired module); Becoming.Instances.routes_assured_iff (retired module); Becoming.Instances.regulation_assured_iff (retired module). The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](assured-route-criterion.json).

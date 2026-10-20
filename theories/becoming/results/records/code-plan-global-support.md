@@ -69,6 +69,7 @@ Boundary source: [ExplanatoryFootprints.lean](../../../../experiments/integrated
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -77,7 +78,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Reuse the existing two-stage composition instead of reproving leaf support; identify the same native relation in applications.
 
-Aliases: `Generative.ExplanatoryFootprints.code_plan_has_global_support`, `Becoming.code_plan_has_global_support_of_stable`, `Becoming.JointPlan.supports_of_image`
+Aliases: `Generative.ExplanatoryFootprints.code_plan_has_global_support (periphery module)`, `Becoming.code_plan_has_global_support_of_stable (retired module)`, `Becoming.JointPlan.supports_of_image`
 
 <a id="沿革-history"></a>
 ## History
@@ -86,4 +87,5 @@ Aliases: `Generative.ExplanatoryFootprints.code_plan_has_global_support`, `Becom
 - 2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation.
 - 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine, with one added hypothesis. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. Wherever a plan is realized at a description whose parts lift, what its leaves draw on, joined, repeats nothing and lies within the described whole's footprint (JointPlan.supports_of_image); code_plan_has_global_support is the lifting composed with this law and holds on the spine where the model's tests are stable (code_plan_has_global_support_of_stable), stability being used only by the lifting stage and given by excluded middle. Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope.
 - 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (CompositionBridge and ExplanatoryFootprints) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Composition and Becoming.JointCorrespondence). The retired modules' content is also stated in Becoming.ListFootprints, which this record does not cite with declarations. The claim is unchanged.
+- 20 October 2026, R37 (lens B of the twentieth review): the proof bindings to the Lean files R37 changed rebound to its core receipt; 2 aliases naming declarations of modules no longer in the run, which only the earlier receipt this record was bound to elaborated, marked as R35 (E8) did: Generative.ExplanatoryFootprints.code_plan_has_global_support (periphery module); Becoming.code_plan_has_global_support_of_stable (retired module). The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](code-plan-global-support.json).

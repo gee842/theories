@@ -563,7 +563,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean",
       "role": "proof",
-      "sha256": "33e05303079d0c84e68222d58471b4b33e1cd9243b799f96209cf805a43691e1",
+      "sha256": "78500ebbcb1796ede7fe03dd25341010cb810f3fc55ee2eadc208e4d4f3eeb66",
       "declarations": [
         "Becoming.Frame.StrictLossMatch",
         "Becoming.Frame.StrictLossMatch.trans",
@@ -606,6 +606,12 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "role": "receipt",
+      "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -618,7 +624,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LossMatching",
       "success_pointer": "/status",
       "success_value": "passed"
