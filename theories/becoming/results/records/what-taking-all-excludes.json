@@ -230,7 +230,7 @@
         "Becoming.add_le_total_of_mem",
         "Becoming.mem_of_mem_cons_ne"
       ],
-      "sha256": "f5ccca1a63e56f58cbd44fd173280c075d7534ab86f2397b78f22171c101e43b"
+      "sha256": "32089a7c18c570fc4a3b9e1b972162829b058f82b0a19d5b1240055bc2f8cd3d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T154830.591298Z/verification.json",
@@ -245,7 +245,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1"
+      "sha256": "ff58c25213643598d2060d5bf24758de920bfdc1d76e29a32b6e4dbc9d106c0b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -257,12 +257,18 @@
       "role": "receipt",
       "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T113206.066061Z/verification.json",
+      "role": "receipt",
+      "sha256": "58b39b61edbdf7581eef3c5777012ebd0e2e3a020e48573c07708ffb8338dbd0",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T113206.066061Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Exclusion",
       "success_pointer": "/status",
       "success_value": "passed"

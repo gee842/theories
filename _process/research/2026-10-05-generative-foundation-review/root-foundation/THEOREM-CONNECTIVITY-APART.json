@@ -1916,6 +1916,11 @@
    "module": "Becoming.Weightings",
    "category": "model-witness",
    "reason": "three formations under two relations, where the presupposition along every single relation does not give the one along being related at all; a fact about one constructed family of relations, not a law of the unfolding"
+  },
+  "Becoming.add_le_total_of_mem": {
+   "module": "Becoming.Exclusion",
+   "category": "support",
+   "reason": "A list lemma: over a list of distinct members the amounts of two different members sum to at most the total. Used by Flow.excess_of_takesAll until CG2 derived that law as the case of a part of two from Flow.outrun_excess, whose Flow.rest_le_taken bounds any listed part the same way; kept because the record what-taking-all-excludes cites it."
   }
  },
  "instances": {

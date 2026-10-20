@@ -105,6 +105,7 @@
         "consumption-ends-with-feeders",
         "no-finite-part-bears-taking",
         "what-taking-all-excludes",
+        "the-rest-outruns-the-renewal",
         "every-loss-passes-a-juncture",
         "capture-through-the-rule"
       ],
@@ -112,6 +113,7 @@
         "Becoming.Flow.Balances.consumption_ends_with_feeders",
         "Becoming.Flow.Dissipative.opens",
         "Becoming.Flow.continuing_excludes",
+        "Becoming.Flow.outrun_below",
         "Becoming.Branching.loss_passes_juncture",
         "Becoming.RuleCapture.favouring_locks"
       ],

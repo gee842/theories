@@ -185,9 +185,9 @@
 
 **要点。** 一个家族无尽地取用者，从其外得到供给；各自在一步所给之内的汲取合起来可以超出它，使水平低于更新者之所需的联合超出，终结它们以及在那一需要上依存于该条件的一切。取尽所给者排除其他每个取用者；每步上升的取用耗尽它所取自者并终结。
 
-**定理。** 本节陈述 `Flow.fed_from_beyond`、`Flow.excess_bounded`、`Flow.joint_excess_ends`、`Flow.continuing_excludes`、`Flow.seeking_ends`；完整陈述见[英文版 §2.3](THE-THEORY-OF-BECOMING.md#23-joint-excess-taking-all-and-what-is-fed-from-beyond)。
+**定理。** 本节陈述 `Flow.fed_from_beyond`、`Flow.excess_bounded`、`Flow.joint_excess_ends`、`Flow.continuing_excludes`、`Flow.outrun_below`、`Flow.seeking_ends`；完整陈述见[英文版 §2.3](THE-THEORY-OF-BECOMING.md#23-joint-excess-taking-all-and-what-is-fed-from-beyond)。
 
-记录：[continuing-self-fed-from-beyond](../results/records/continuing-self-fed-from-beyond.md)、[own-count-misses-joint-excess](../results/records/own-count-misses-joint-excess.md)、[derived-extent-limits](../results/records/derived-extent-limits.md)、[what-taking-all-excludes](../results/records/what-taking-all-excludes.md)、[where-a-rising-take-ends](../results/records/where-a-rising-take-ends.md)。
+记录：[continuing-self-fed-from-beyond](../results/records/continuing-self-fed-from-beyond.md)、[own-count-misses-joint-excess](../results/records/own-count-misses-joint-excess.md)、[derived-extent-limits](../results/records/derived-extent-limits.md)、[what-taking-all-excludes](../results/records/what-taking-all-excludes.md)、[the-rest-outruns-the-renewal](../results/records/the-rest-outruns-the-renewal.md)、[where-a-rising-take-ends](../results/records/where-a-rising-take-ends.md)。
 
 ### 2.4 演化与传递
 
@@ -613,6 +613,7 @@
 | [推出范围的界限](../results/records/derived-extent-limits.md) | 不加前提的定理 | — | §2.3 |
 | [只计自身的取用漏掉联合超出](../results/records/own-count-misses-joint-excess.md) | 在所述前提下的定理 | 活动需要支持 | §2.3 |
 | [取尽所给所排除的](../results/records/what-taking-all-excludes.md) | 不加前提的定理 | — | §2.3 |
+| [其余者超出更新](../results/records/the-rest-outruns-the-renewal.md) | 在所述前提下的定理 | 活动需要支持 | §2.3 |
 | [多于此刻的取用终于何处](../results/records/where-a-rising-take-ends.md) | 不加前提的定理 | — | §2.3 |
 | [经世系的演化](../results/records/evolution-on-descent.md) | 在所述前提下的定理 | 平衡、活动需要支持、传递 | §2.4 |
 | [真正的选择项及其在世代中的进程](../results/records/selection-term-over-generations.md) | 在所述前提下的定理 | 恒等式不加前提；支持之律需活动需要支持、传递从不降低 | §2.4 |
@@ -894,17 +895,17 @@
 
 所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）17 个。
 
-**当前回执**是运行 [`20261020T111531.545286Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T111531.545286Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 256 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#256-the-step-of-invariance-what-it-reaches-across-standpoints-and-the-order-every-weighting-shares-iv1)）。
+**当前回执**是运行 [`20261020T113206.066061Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T113206.066061Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 250 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#250-the-rest-outruns-the-renewal-what-decides-the-outcome-learners-reach-on-a-gated-renewal-cg2)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 276 个模块，11,092 条定理 |
+| 核心模块（含根 `Becoming`） | 277 个模块，11,109 条定理 |
 | 实例模块 | 7 个模块，567 条定理 |
 | 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 闭包（核心、环与根基） | 292 个模块，11,912 条定理 |
-| 审计的脊柱声明 | 16,299 |
-| 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 189 条 |
+| 闭包（核心、环与根基） | 293 个模块，11,929 条定理 |
+| 审计的脊柱声明 | 16,323 |
+| 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 190 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 
 <a id="complete-episode-comparison-anchors"></a>

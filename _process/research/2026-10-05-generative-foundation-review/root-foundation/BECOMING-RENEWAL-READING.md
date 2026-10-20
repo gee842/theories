@@ -10727,6 +10727,8 @@ Output → input: section 7's boundary sharpens from "widening the coupling is n
 
 **Correction (20 October 2026).** Section 254 (CG3) refutes the post hoc reading in the Output → input block and the self-review above. In its exact form, one's own later acts are improved together with the present act (policy improvement), not held fixed, and exact policy iteration from the full draw keeps the patch. The joint learner's failure is the sampling of its own courses: its untrained full draw outruns the renewal at the start of a course, before the region where restraint is learned. `Flow.outrun_reading_alike` explains a selection blind to an act where the rest is held fixed, which is this section's result; it does not explain a selector's blindness to its own later acts. The text above is kept as written.
 
+**Landing.** Core receipt `20261020T113206.066061Z` passed on main `fa4f87cdb` with CG2 in the working tree (core 277 modules and 11,109 theorems, instances 7 and 567, applications 6 and 179, foundation 3 and 74; closure 293 modules and 11,929 theorems; every axiom report empty; 13 Lean steps ran, 1,159 reused). `Becoming.Exclusion` has 36 theorems, five new: the four laws above and the lemma `Flow.rest_le_taken` (what a listed part takes is at most what all take); `Flow.excess_of_takesAll` is now the case of a part of two. Record [the-rest-outruns-the-renewal](../../../../theories/becoming/results/records/the-rest-outruns-the-renewal.md); chapter §2.3 and §9 (EN, ZH); coverage row degeneration.
+
 ## 251. The evolution chapter restated from the spine (EV3)
 
 ```text

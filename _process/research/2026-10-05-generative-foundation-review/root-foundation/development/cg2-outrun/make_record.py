@@ -161,7 +161,7 @@ rec = {
             'en': 'The gap read on the rest: the member\'s act differs only where its reading no longer looks once the '
                   'rest has ended the condition, so no selection through that reading tells its acts apart.',
             'zh': '读到其余者上的间隙：其余者终结条件之后，成员行动的差异只在其读取不再看的地方，故经由该读取的选择分不出其各行动。'}}],
-    'references': [{'path': src(MOD), 'role': 'proof', 'declarations': resolve(OWN), 'sha256': sha(src(MOD))},
+    'references': [{'path': src(MOD), 'role': 'proof', 'declarations': resolve(OWN + ['Flow.excess_of_takesAll']), 'sha256': sha(src(MOD))},
                    {'path': src('Continuation'), 'role': 'proof', 'sha256': sha(src('Continuation'))},
                    {'path': RECEIPT, 'role': 'receipt', 'sha256': sha(RECEIPT)},
                    {'path': f'{EXP}/README.md', 'role': 'integration', 'sha256': sha(f'{EXP}/README.md')},

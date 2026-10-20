@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-294 registered results: 275 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 750 curated edges join 248 results to the results they draw on.
+295 registered results: 276 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 752 curated edges join 249 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -217,6 +217,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [testing-within-couplings][] ← <a id="testing-within-couplings--feedback-and-reach"></a>[feedback-and-reach][] · <a id="testing-within-couplings--levels-of-closure"></a>[levels-of-closure][] · <a id="testing-within-couplings--closing-needs-net-draw"></a>[closing-needs-net-draw][] · <a id="testing-within-couplings--four-cases-of-a-part"></a>[four-cases-of-a-part][]
 - [tests-fix-likeness-where-determined][] ← <a id="tests-fix-likeness-where-determined--configurations-alike-by-relation"></a>[configurations-alike-by-relation][] · <a id="tests-fix-likeness-where-determined--identification-where-bounded"></a>[identification-where-bounded][]
 - [the-gap-for-ones-own-act][] ← <a id="the-gap-for-ones-own-act--selection-through-couplings"></a>[selection-through-couplings][] · <a id="the-gap-for-ones-own-act--counterfactual-is-the-course"></a>[counterfactual-is-the-course][]
+- [the-rest-outruns-the-renewal][] ← <a id="the-rest-outruns-the-renewal--own-count-misses-joint-excess"></a>[own-count-misses-joint-excess][] · <a id="the-rest-outruns-the-renewal--what-taking-all-excludes"></a>[what-taking-all-excludes][]
 - [the-run-classes-and-widening][] ← <a id="the-run-classes-and-widening--four-cases-of-a-part"></a>[four-cases-of-a-part][] · <a id="the-run-classes-and-widening--significance-retained-within-margin"></a>[significance-retained-within-margin][] · <a id="the-run-classes-and-widening--life-as-condition-of-life"></a>[life-as-condition-of-life][]
 - [the-split-that-makes-sense][] ← <a id="the-split-that-makes-sense--configurations-alike-by-relation"></a>[configurations-alike-by-relation][] · <a id="the-split-that-makes-sense--projection-carrying-a-law"></a>[projection-carrying-a-law][] · <a id="the-split-that-makes-sense--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="the-split-that-makes-sense--readings-within-what-they-read"></a>[readings-within-what-they-read][]
 - [the-world-an-interleaving-builds][] ← <a id="the-world-an-interleaving-builds--the-step-index-from-own-courses"></a>[the-step-index-from-own-courses][] · <a id="the-world-an-interleaving-builds--worlds-are-runs"></a>[worlds-are-runs][] · <a id="the-world-an-interleaving-builds--order-of-exchanges-is-the-invariant"></a>[order-of-exchanges-is-the-invariant][]
@@ -489,6 +490,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [testing-within-couplings]: theories/becoming/results/records/testing-within-couplings.md
 [tests-fix-likeness-where-determined]: theories/becoming/results/records/tests-fix-likeness-where-determined.md
 [the-gap-for-ones-own-act]: theories/becoming/results/records/the-gap-for-ones-own-act.md
+[the-rest-outruns-the-renewal]: theories/becoming/results/records/the-rest-outruns-the-renewal.md
 [the-run-classes-and-widening]: theories/becoming/results/records/the-run-classes-and-widening.md
 [the-split-that-makes-sense]: theories/becoming/results/records/the-split-that-makes-sense.md
 [the-step-index-from-own-courses]: theories/becoming/results/records/the-step-index-from-own-courses.md
@@ -518,6 +520,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [what-a-rise-draws-from-beyond]: theories/becoming/results/records/what-a-rise-draws-from-beyond.md
 [what-bounds-offspring-numbers]: theories/becoming/results/records/what-bounds-offspring-numbers.md
 [what-pooled-coupling-reaches]: theories/becoming/results/records/what-pooled-coupling-reaches.md
+[what-taking-all-excludes]: theories/becoming/results/records/what-taking-all-excludes.md
 [what-the-step-across-standpoints-reaches]: theories/becoming/results/records/what-the-step-across-standpoints-reaches.md
 [when-the-runs-of-a-process-settle]: theories/becoming/results/records/when-the-runs-of-a-process-settle.md
 [where-a-level-couples]: theories/becoming/results/records/where-a-level-couples.md
