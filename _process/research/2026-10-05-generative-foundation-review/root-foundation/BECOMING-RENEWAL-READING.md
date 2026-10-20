@@ -10678,3 +10678,49 @@ The kit is [`development/ev5-group-ending/`](development/ev5-group-ending/): the
 - **Connectivity and naming.** The base laws (`Flow.*`) go through `Flow.Acting`, `DescendsAt` and the gated laws; the counting laws are used by them. "Altruism", "cooperation" and "group benefit" are not used: the reading is keeping (holding back from a condition) in the counts, and nothing ranks the levels.
 
 **Self-review.** The counting step is short: ending removes the among-group discordance. What the module adds is the base reason for it, through the existing gated-renewal law and the definition of descent, and the shared-condition corollary, which says exactly why one commons shared by every group gives no among-group selection that keeps it. The generational law assumes uniform groups and exact transmission, which keep within-group selection out; `Outweighs` shows that with a mixed surviving group the within part can win. Which groups' conditions run into joint excess is supposed, not derived; the witnesses are counts, not worlds.
+
+## 250. The rest outruns the renewal: what decides the outcome learners reach on a gated renewal (CG2)
+
+```text
+Result(s): new laws Flow.outrun_excess, outrun_below, outrun_ends, outrun_reading_alike in
+       Becoming.Exclusion (scratch-built, every axiom report empty; landing through the queue with
+       the record the-rest-outruns-the-renewal); Flow.excess_of_takesAll derived from outrun_excess
+       (rule 9). An empirical test on learners with predictions frozen at 8a049b4fb.
+Delta: section 247's open output. CG1's D2b failure turns on the rest: where the other members
+       alone take more than the gated renewal gives, the condition ends whatever a member takes,
+       and every reading of it after the end is alike under the member's acts, so no weight of an
+       end reading selects restraint. The equilibrium theorem the brief asked for is known in form
+       (pivotality, threshold coordination, the folk theorem, risk-dominant selection: significance
+       review, "restraint as an equilibrium on a gated renewal"); this is its condition read on the
+       rest, elementary, and the test of whether learners follow it.
+Premises: balance; the gate (whatever gives depends on the condition at the need); givers
+       supported; the rest a list without repetition; for the reading law, need one. In the
+       experiment the class of each setting is computed exactly (dynamic programme over the 512
+       configurations, no learning), and the learning predictions add bridge H3 (learners settle
+       where the reading cannot see restraint, and leave depletion where it is not a best response).
+Verdicts: identity checks passed (outrun windows 22,263, emptied courses 31,639, CG1's checks over
+       337.7M steps; 0 violations). X1 passed: the boundary is the rest's draw, not the whole's
+       (k2s8 kept 0.95, k3s16 kept 1.00, k3s8 and k2s1 depleted 0.00; a whole-capacity account
+       predicts k2s8 and k3s16 depleted). X2 passed: an end reading weighted 32 leaves the lock
+       (0.00). X3 passed: a reading after every step keeps the patch at 3 v* (0.97) and not at
+       v*/2 (0.00), v* = 0.2134. X4 failed on its open side: full sharing leaves the lock at
+       regrowth x1 (0.00, against a sharing-level account) but opens it only half at x8 (0.48 where
+       0.80 was frozen). X5 failed: one learner reading the union emptied the patch in every seed.
+Evidence: experiments/commons-outrun (README with the verdict table, PREDICTIONS, calibration,
+       runs.json, VERDICTS.json); 220 runs, 63 CPU-minutes, Python standard library.
+Boundary: CG1's environment (no walking or tagging, one patch), regrowth scale a manipulation,
+       tabular learners, 20 seeds per condition. Locked says depletion is a best response against
+       a rest that harvests, not that restraint is not also an equilibrium; which equilibrium is
+       reached is H3, tested, not proved. The laws hold course by course; the stochastic class is
+       computed.
+Output → input: section 7's boundary sharpens from "widening the coupling is necessary, not
+       sufficient" to a condition: the coupling has to read the condition before the rest can end
+       it. Post hoc (posthoc_joint.py, not counted): the joint learner's failure is the same
+       blindness inside temporal-difference learning, its own later greedy steps outrunning the
+       renewal before the end reading; so reading the union is not sufficient for a learner that
+       selects step by step. Open: a stochastic form of the law (the probability that the rest
+       outruns before a reading, from the margin and the maximum expected renewal, B2's bound in
+       CG1); which equilibrium learners reach where both exist, as a law rather than a bridge.
+```
+
+**Self-review.** The conditions, their classes, the thresholds and the predicted outcomes were fixed from the exact calibration and committed (`8a049b4fb`) before any learning run; a 200-episode code-path test of the analysis was run before the freeze and its untrained numbers were not used (disclosed in the predictions file). Nothing changed after the freeze. The strongest evidence is X1, whose open conditions could have failed as CG1's C2 did and did not, against a named alternative. The two failures are kept as failures; the joint learner's diagnosis is post hoc, one seed's value table and a three-seed control, and suggests a reading the theory had not stated: the rest that outruns can be one's own later policy.
