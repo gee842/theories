@@ -20,6 +20,17 @@ another serves.
   from a level below `n + m`, ends every formation depending on the condition at a need of at
   least `m`, itself included (`Flow.full_taking_ends_at`, `Flow.full_taking_ends`, from
   `Flow.joint_excess_ends_at`).
+* **The rest outruns the renewal.** Where a part (the rest) takes from a condition jointly more
+  than a step gives to it, the joint taking exceeds what is given, whatever any formation outside
+  the part takes (`Flow.outrun_excess`, from `Flow.rest_le_taken`); `Flow.excess_of_takesAll` is
+  its case of a full taker and one other. Where renewal depends on what it renews, `n` such steps
+  from a level below `n + m` leave the level below `m` from `T + n` on and end every formation
+  depending on the condition at a need of at least `m`, whatever a member outside the part takes
+  (`Flow.outrun_below`, `Flow.outrun_ends`). With need one, two flows in which the rest outruns
+  from a level at most `n` agree on the condition from `T + n` on, so every score reading it only
+  from then on scores them alike, however a member's act differs between them
+  (`Flow.outrun_reading_alike`): a member's restraint is invisible to a reading after the rest's
+  end, and its own take is then the only difference such a score can reward.
 * **Competitive exclusion.** A full taker that continues, depending on the condition at such a
   need, leaves no other formation taking from it at each of the `W.level T c + 1` steps from any
   `T` (`Flow.continuing_excludes`). A formation active only while it takes from the condition is
@@ -97,12 +108,97 @@ from `c` at least all that the step gives to `c`. -/
 def TakesAll (L : Flow F C) (t : Nat) (f : F) (c : C) : Prop :=
   f ∈ L.present t ∧ L.given t c ≤ L.take t f c
 
+/-! ### The rest outruns the renewal -/
+
+/-- **What a part takes, the step takes.** Over a list without repetition of formations, each
+taking part where it takes from `c`, the part's joint take is at most what the step takes. -/
+theorem rest_le_taken {t : Nat} {c : C} {rest : List F} (distinct : Distinct rest)
+    (present : ∀ f, f ∈ rest → 0 < L.take t f c → f ∈ L.present t) :
+    total rest (fun f => L.take t f c) ≤ L.taken t c :=
+  total_le_of_support distinct present
+
+/-- **The rest outruns the renewal, whatever any other formation takes.** Where a part (the rest)
+takes from `c` across a step jointly more than the step gives to it, the joint taking exceeds what
+is given, with no premise on what any formation outside the part takes. -/
+theorem outrun_excess {t : Nat} {c : C} {rest : List F} (distinct : Distinct rest)
+    (present : ∀ f, f ∈ rest → 0 < L.take t f c → f ∈ L.present t)
+    (outruns : L.given t c < total rest fun f => L.take t f c) : L.given t c < L.taken t c :=
+  Nat.lt_of_lt_of_le outruns (rest_le_taken distinct present)
+
+/-- **Where the rest outruns a gated renewal, the condition falls below the need for good,
+whatever a member takes.** Where renewal depends on what it renews, a part taking from `c` jointly
+more than is given at each of `n` steps from `T`, from a level below `n + m`, leaves the level
+below `m` at every step from `T + n` on. Nothing is asked of what any formation outside the part
+takes: it may take nothing at every step. -/
+theorem outrun_below (balances : L.Balances W) (acting : L.Acting W) (dependent : W.Dependent)
+    {c : C} {m : Nat}
+    (gated : ∀ t e, e ∈ L.present t → 0 < L.give t e c → W.requires t e c ∧ m ≤ W.need t e c)
+    {T n : Nat} {rest : List F} (distinct : Distinct rest)
+    (present : ∀ j f, j < n → f ∈ rest → 0 < L.take (T + j) f c → f ∈ L.present (T + j))
+    (outruns : ∀ j, j < n → L.given (T + j) c < total rest fun f => L.take (T + j) f c)
+    (start : W.level T c < n + m) : ∀ k, W.level (T + n + k) c < m :=
+  stays_below balances acting dependent gated
+    (Nat.lt_of_add_lt_add_left (n := n)
+      (Nat.lt_of_le_of_lt
+        (Nat.le_trans (Nat.le_of_eq (Nat.add_comm n _))
+          (excess_bounded_at n (fun j _ => balances.on [c] (T + j))
+            fun j below => outrun_excess distinct (present j · below) (outruns j below)))
+        start))
+
+/-- **Where the rest outruns a gated renewal, every dependent ends, whatever a member takes.**
+Under the premises of `outrun_below`, every formation depending on `c` at a need of at least `m`
+is inactive from `T + n` on, the member and the rest included. -/
+theorem outrun_ends (balances : L.Balances W) (acting : L.Acting W) (dependent : W.Dependent)
+    {c : C} {m : Nat}
+    (gated : ∀ t e, e ∈ L.present t → 0 < L.give t e c → W.requires t e c ∧ m ≤ W.need t e c)
+    {T n : Nat} {rest : List F} (distinct : Distinct rest)
+    (present : ∀ j f, j < n → f ∈ rest → 0 < L.take (T + j) f c → f ∈ L.present (T + j))
+    (outruns : ∀ j, j < n → L.given (T + j) c < total rest fun f => L.take (T + j) f c)
+    (start : W.level T c < n + m) :
+    ∀ k h, W.requires (T + n + k) h c → m ≤ W.need (T + n + k) h c → ¬ W.active (T + n + k) h :=
+  fun k h requires high => ends_below_at (dependent (T + n + k) h)
+    (outrun_below balances acting dependent gated distinct present outruns start k) requires high
+
+/-- **A member's act is invisible to every reading after the rest's end** (need one). Two flows,
+in each of which renewal depends on what it renews at a need of one and a part takes from `c`
+jointly more than is given at each of `n` steps from `T`, from a level at most `n` there: the two
+levels of `c` agree at every step from `T + n` on (both nothing), so every score of level histories
+that reads `c` only from `T + n` on scores the two alike. The member's act may differ between the
+flows in any way, and so may the rest's; only the rest's outrunning is asked. -/
+theorem outrun_reading_alike {L' : Flow F C} {W' : Web F C}
+    (balances : L.Balances W) (acting : L.Acting W) (dependent : W.Dependent)
+    (balances' : L'.Balances W') (acting' : L'.Acting W') (dependent' : W'.Dependent) {c : C}
+    (gated : ∀ t e, e ∈ L.present t → 0 < L.give t e c → W.requires t e c ∧ 1 ≤ W.need t e c)
+    (gated' : ∀ t e, e ∈ L'.present t → 0 < L'.give t e c → W'.requires t e c ∧ 1 ≤ W'.need t e c)
+    {T n : Nat} {rest rest' : List F} (distinct : Distinct rest) (distinct' : Distinct rest')
+    (present : ∀ j f, j < n → f ∈ rest → 0 < L.take (T + j) f c → f ∈ L.present (T + j))
+    (present' : ∀ j f, j < n → f ∈ rest' → 0 < L'.take (T + j) f c → f ∈ L'.present (T + j))
+    (outruns : ∀ j, j < n → L.given (T + j) c < total rest fun f => L.take (T + j) f c)
+    (outruns' : ∀ j, j < n → L'.given (T + j) c < total rest' fun f => L'.take (T + j) f c)
+    (start : W.level T c < n + 1) (start' : W'.level T c < n + 1)
+    {score : (Nat → C → Nat) → Nat}
+    (reads : ∀ l l', (∀ k, l (T + n + k) c = l' (T + n + k) c) → score l = score l') :
+    score W.level = score W'.level :=
+  reads _ _ fun k =>
+    (Nat.eq_zero_of_le_zero (Nat.le_of_lt_succ
+      (outrun_below balances acting dependent gated distinct present outruns start k))).trans
+    (Nat.eq_zero_of_le_zero (Nat.le_of_lt_succ
+      (outrun_below balances' acting' dependent' gated' distinct' present' outruns' start' k))).symm
+
 /-- **Alongside a formation taking all that is given, any other taker makes the joint taking
 exceed what is given.** -/
 theorem excess_of_takesAll {t : Nat} {f g : F} {c : C} (apart : f ≠ g) (all : L.TakesAll t f c)
     (present : g ∈ L.present t) (takes : 0 < L.take t g c) : L.given t c < L.taken t c :=
-  Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt all.2 (Nat.lt_add_of_pos_right takes))
-    (add_le_total_of_mem (q := fun e => L.take t e c) apart all.1 present)
+  have single : ∀ {e : F}, e ∈ [g] → e = g := fun mem => match mem with
+    | .head _ => rfl
+    | .tail _ nm => nomatch nm
+  outrun_excess (rest := [f, g])
+    ⟨fun mem => apart (single mem), (⟨fun mem => (nomatch mem), trivial⟩ : Distinct [g])⟩
+    (fun _ mem _ => match mem with
+      | .head _ => all.1
+      | .tail _ other => (single other) ▸ present)
+    (Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt all.2 (Nat.lt_add_of_pos_right takes))
+      (Nat.le_of_eq (congrArg (L.take t f c + ·) (Nat.add_zero _).symm)))
 
 /-- **Full taking alongside another taker ends every dependent, at the steps it uses.** With
 balance at the condition across the first `n + k` steps from `T`, whatever gives to it there
