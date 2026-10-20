@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-289 registered results: 270 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 743 curated edges join 243 results to the results they draw on.
+291 registered results: 272 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 746 curated edges join 245 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -139,6 +139,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [market-finite-support-obstruction][] ← <a id="market-finite-support-obstruction--market-supported-finite-transition"></a>[market-supported-finite-transition][] · <a id="market-finite-support-obstruction--market-protected-continuation"></a>[market-protected-continuation][]
 - [market-partial-correction-boundary][] ← <a id="market-partial-correction-boundary--market-supported-finite-transition"></a>[market-supported-finite-transition][] · <a id="market-partial-correction-boundary--market-protected-continuation"></a>[market-protected-continuation][]
 - [market-supported-finite-transition][] ← <a id="market-supported-finite-transition--market-protected-continuation"></a>[market-protected-continuation][]
+- [merge-of-a-part-kept-by-the-rest][] ← <a id="merge-of-a-part-kept-by-the-rest--recurrence-without-premise"></a>[recurrence-without-premise][]
 - [more-needs-renewers][] ← <a id="more-needs-renewers--unceasing-generation-needs-renewal"></a>[unceasing-generation-needs-renewal][] · <a id="more-needs-renewers--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][]
 - [multivalued-joining-common-structure][] ← <a id="multivalued-joining-common-structure--branching-tests-bisimulation"></a>[branching-tests-bisimulation][]
 - [mutual-dependence-and-its-pace][] ← <a id="mutual-dependence-and-its-pace--levels-of-closure"></a>[levels-of-closure][] · <a id="mutual-dependence-and-its-pace--comparison-where-the-rest-responds"></a>[comparison-where-the-rest-responds][] · <a id="mutual-dependence-and-its-pace--how-often-couplings-act"></a>[how-often-couplings-act][] · <a id="mutual-dependence-and-its-pace--target-capture"></a>[target-capture][]
@@ -184,6 +185,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [reserved-shutdown-during-recovery][] ← <a id="reserved-shutdown-during-recovery--recoverable-mediated-change"></a>[recoverable-mediated-change][]
 - [residual-continuation-correspondence][] ← <a id="residual-continuation-correspondence--guarded-program-question-recovery"></a>[guarded-program-question-recovery][] · <a id="residual-continuation-correspondence--branching-tests-bisimulation"></a>[branching-tests-bisimulation][] · <a id="residual-continuation-correspondence--finite-trace-transport"></a>[finite-trace-transport][]
 - [rest-at-every-resolution][] ← <a id="rest-at-every-resolution--continued-change-needs-openness"></a>[continued-change-needs-openness][] · <a id="rest-at-every-resolution--no-finite-part-bears-taking"></a>[no-finite-part-bears-taking][] · <a id="rest-at-every-resolution--reserve-defers-ending"></a>[reserve-defers-ending][]
+- [rest-from-a-finite-reading][] ← <a id="rest-from-a-finite-reading--least-loss-rest"></a>[least-loss-rest][] · <a id="rest-from-a-finite-reading--recurrence-without-premise"></a>[recurrence-without-premise][]
 - [rest-with-refinement-counted][] ← <a id="rest-with-refinement-counted--continued-change-needs-openness"></a>[continued-change-needs-openness][] · <a id="rest-with-refinement-counted--rest-at-every-resolution"></a>[rest-at-every-resolution][]
 - [restoring-giving-from-the-worst-start][] ← <a id="restoring-giving-from-the-worst-start--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="restoring-giving-from-the-worst-start--giving-that-waits-on-giving"></a>[giving-that-waits-on-giving][]
 - [retained-reference-joining-recovery][] ← <a id="retained-reference-joining-recovery--branching-tests-bisimulation"></a>[branching-tests-bisimulation][] · <a id="retained-reference-joining-recovery--unanchored-incidence-collapse"></a>[unanchored-incidence-collapse][]
@@ -399,6 +401,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [market-supported-finite-transition]: theories/becoming/results/records/market-supported-finite-transition.md
 [material-preparation-output]: theories/becoming/results/records/material-preparation-output.md
 [mediated-evidence-transport]: theories/becoming/results/records/mediated-evidence-transport.md
+[merge-of-a-part-kept-by-the-rest]: theories/becoming/results/records/merge-of-a-part-kept-by-the-rest.md
 [metaethical-core-characterization]: theories/becoming/results/records/metaethical-core-characterization.md
 [more-needs-renewers]: theories/becoming/results/records/more-needs-renewers.md
 [multivalued-joining-common-structure]: theories/becoming/results/records/multivalued-joining-common-structure.md
@@ -450,6 +453,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [reserved-shutdown-during-recovery]: theories/becoming/results/records/reserved-shutdown-during-recovery.md
 [residual-continuation-correspondence]: theories/becoming/results/records/residual-continuation-correspondence.md
 [rest-at-every-resolution]: theories/becoming/results/records/rest-at-every-resolution.md
+[rest-from-a-finite-reading]: theories/becoming/results/records/rest-from-a-finite-reading.md
 [rest-with-refinement-counted]: theories/becoming/results/records/rest-with-refinement-counted.md
 [restoring-giving-from-the-worst-start]: theories/becoming/results/records/restoring-giving-from-the-worst-start.md
 [retained-reference-joining-recovery]: theories/becoming/results/records/retained-reference-joining-recovery.md

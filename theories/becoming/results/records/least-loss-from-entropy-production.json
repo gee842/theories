@@ -153,7 +153,8 @@
     "en": "Checked by the periphery checker with Lean 4.30.0-rc2 and the pinned Mathlib: 24 theorems and 33 declarations of EntropyProduction, each depending only on propext, Classical.choice and Quot.sound through Mathlib's reals and measures; the core modules it imports match passed receipts. The core does not import it. No independent review."
   },
   "next_delta": {
-    "en": "A core form with rational amounts and no Mathlib for the deterministic laws; the exchange-level Landauer bound from the second law and the memory's entropy; finite-time floors (thermodynamic length, the uncertainty relation) as instances of DestroysAtLeast; the rest family in expectation at a refining unit."
+    "en": "A core form with rational amounts and no Mathlib for the deterministic laws; the exchange-level Landauer bound from the count now in the core (record merge-of-a-part-kept-by-the-rest) with a reading of count as energy. Finite-time floors and the uncertainty relation as instances of DestroysAtLeast would restate known physics (the significance review's least-loss check) and are not planned.",
+    "zh": "确定性规律在核心中以有理量、不用 Mathlib 的形式；由现已在核心中的计数（记录 merge-of-a-part-kept-by-the-rest）加上把计数读作能量，得出交换层面的 Landauer 下限。把有限时间的下限与不确定性关系作为 DestroysAtLeast 的实例，只会重述已知物理（意义审查的最小损失检查），不在计划中。"
   },
   "correspondence": {
     "en": "Physics read onto the spine. Gouy–Stodola: exergy destroyed is T0 times the entropy generated, never negative, so the second law in available work is the spine's first law and the destroyed exergy is the record of Flow.dissipatesOn_iff_conserved; Kelvin–Planck says no exchange draws that record back. Landauer (confirmed by Bérut et al. 2012 and Jun, Gavrilov and Bechhoefer 2014; its general derivation disputed by Norton): erasing a bit at temperature T destroys at least kT ln 2 in expectation, a floor for DestroysAtLeast wherever each taking exchange merges what it held. Whole units: carriers of one free energy each, as ATP or photons of one frequency. Fluctuation theorems (Jarzynski, Crooks, Seifert; observed by Wang et al. 2002 and Collin et al. 2005): single small runs gain, so the premise there is dissipation in expectation. Isolated reversible dynamics (Liouville; Poincaré recurrence) is Passing."
@@ -228,6 +229,13 @@
       "id": "premises-read-off-the-exchange",
       "detail": {
         "en": "There dissipation is a state of the law of exchange, not read off every exchange; here the physical premises under which it holds."
+      }
+    },
+    {
+      "id": "merge-of-a-part-kept-by-the-rest",
+      "detail": {
+        "en": "Landauer's floor, here a physical premise, has its count as a core law there.",
+        "zh": "这里作为物理前提的 Landauer 下限，其计数在那里是核心规律。"
       }
     }
   ],
@@ -338,6 +346,10 @@
     {
       "en": "2026-10-20: 3 bookkeeping notes condensed of 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/72ff44232ec67694/least-loss-from-entropy-production.json and in git.",
       "zh": "2026-10-20：3 条记账性说明合并（20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/72ff44232ec67694/least-loss-from-entropy-production.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, LC1: the next step restated after the least-loss check (study section 255): the count of Landauer's floor is in the core (record merge-of-a-part-kept-by-the-rest); the finite-time and precision floors are known physics and left unbuilt. The claim is unchanged.",
+      "zh": "2026年10月20日，LC1：最小损失检查之后重述下一步（研究第 255 节）：Landauer 下限的计数已在核心中（记录 merge-of-a-part-kept-by-the-rest）；有限时间与精度的下限是已知物理，不予构建。论断不变。"
     }
   ],
   "text_versions": [

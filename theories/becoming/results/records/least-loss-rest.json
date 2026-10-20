@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-19T12:45:21+00:00",
+  "reviewed_at_utc": "2026-10-20T10:51:16+00:00",
   "statement": {
     "en": "In Archimedean amounts a closed amount approaches rest with no least loss: few steps lose at least any ε above nothing. Rest needs a least loss at each change counted: halving approaches rest and never reaches it. Whole numbers are the instance with ε one; a loss needs a law that merges.",
     "zh": "在阿基米德的量中，封闭的量无需最小损失即趋近停息：至少损失任一大于无的 ε 的步只有有限个。停息需要每次被计的变化有最小损失：减半趋近停息而达不到。整数是 ε 为一的实例；损失需要有所合并的规律。"
@@ -245,8 +245,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T124334.350424Z）：Becoming.LeastLoss 的 93 项声明公理报告为空；检查器并核对核心纯净。依赖审计（开发目录中的 audit/LeastLossDeps.lean）表明所列 15 条停息规律都经过 falls_not_recurring 或 falls_stop_unrefuted，六个整数重述的 Lean 类型与所重述的定理相同。作者自审见研究第 204 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Flow and World with levels in any amounts, restating the rest family there with the least loss as the premise of dissipation; a least loss that holds only in expectation over amounts that may be dense; an independent review.",
-    "zh": "以任何量为水平的 Flow 与 World，在其中以最小损失为耗散的前提重述停息族；在可稠密的量上只在期望中成立的最小损失；独立审查。"
+    "en": "Flow and World with levels in any amounts, restating the rest family there with the least loss, or a finite reading (record rest-from-a-finite-reading), as the premise of dissipation; an independent review.",
+    "zh": "以任何量为水平的 Flow 与 World，在其中以最小损失或有限读取（记录 rest-from-a-finite-reading）为耗散的前提重述停息族；独立审查。"
   },
   "correspondence": {
     "en": "The outside review of 19 October 2026 (R20) and an outside reader named the rest laws' dependence on whole-number amounts as the main gap between the spine and our universe: with real-valued amounts losses can shrink geometrically. Reading (the AI's): what the whole numbers carry is a floor on the cost of each change counted, and the stock's being finitely many floors deep; where change has no floor a closed system can change ever more slightly for ever without exhausting what it has.",
@@ -348,6 +348,20 @@
         "en": "Its law that more without end needs replenishment without bound is the whole-number instance of the law over Archimedean amounts with a least take stated here (R41).",
         "zh": "其“不止地更多需要没有界的补充”的规律，是这里在有最小取用的阿基米德量上所述规律的整数实例（R41）。"
       }
+    },
+    {
+      "id": "rest-from-a-finite-reading",
+      "detail": {
+        "en": "Read off finitely many configurations, rest needs no least loss.",
+        "zh": "读自有限多个构形时，停息不需要最小损失。"
+      }
+    },
+    {
+      "id": "merge-of-a-part-kept-by-the-rest",
+      "detail": {
+        "en": "The converse of Law.loss_needs_merge: inside a whole that merges nothing, a part's merge is kept by the rest.",
+        "zh": "Law.loss_needs_merge 的反面：在不合并的整体中，部分的合并由其余部分承接。"
+      }
     }
   ],
   "references": [
@@ -409,7 +423,7 @@
         "Becoming.Halving.takes_within_one",
         "Becoming.Halving.takes_halve"
       ],
-      "sha256": "cda15540f061141b1c92cbbe6512399a2fad23886080ab4b651f47c8a51e54d6"
+      "sha256": "0cae4b8a1e5083af5c86c801ed33922101c81ff697f910e659eec1a6e868412e"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
@@ -572,13 +586,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "6267fa344533726e75ba9e1c9adc6f47cc2247518da3bf9d7d26d9af77cbf564"
+      "sha256": "fc821e5f0ed7b379a28925175c9769b3f7ac46ed0354cbccae48864040586b3b"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "f3ec740f1ed6232f5d1004324f4fbc446ddf7b6a6c2da9cdd1fcb5ab66fa13fb"
+      "sha256": "a0cb65122fdf607bea001aa1d0061c416623e23cba907486fc9f7a5492f56288"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
@@ -627,12 +641,17 @@
       "role": "receipt",
       "sha256": "790a8973dbabe58f9bc5f4c27d39589c8827b6fab3fe08a8d342f6ef02bca4a8",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T104831.571462Z/verification.json",
+      "role": "receipt",
+      "sha256": "0b850f59f635816a1b6cfafe5402f67318038f9a865d5813e5f12b93b7334095"
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T073902.295130Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T104831.571462Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LeastLoss",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -728,6 +747,10 @@
     {
       "en": "20 October 2026, R41 (study section 235): a law added, more without end needs replenishment without bound over Archimedean amounts with a least take (Amounts.replenishment_unbounded), with the whole-number law as its instance and the counterexample with halving takes (Halving.takes_halve); related more-needs-renewers.",
       "zh": "2026年10月20日，R41（研究第235节）：增加一条规律，在有最小取用的阿基米德量上不止地更多需要没有界的补充（Amounts.replenishment_unbounded），整数规律为其实例，并有取用减半的反例（Halving.takes_halve）；关联 more-needs-renewers。"
+    },
+    {
+      "en": "20 October 2026, LC1: Becoming.LeastLoss gained rest from a finite reading (record rest-from-a-finite-reading) and a part's merge kept by the rest (record merge-of-a-part-kept-by-the-rest); the proof binding re-pointed to receipt 20261020T104831.571462Z after reading the change, this record's declarations and statements unchanged; the next step names the finite reading beside the least loss and drops the least loss in expectation, which the significance review's least-loss check finds known (ranking supermartingales); study section 255.",
+      "zh": "2026年10月20日，LC1：Becoming.LeastLoss 增加了由有限读取而停息（记录 rest-from-a-finite-reading）与部分的合并由其余部分承接（记录 merge-of-a-part-kept-by-the-rest）；阅读改动后证明绑定改指回执 20261020T104831.571462Z，本记录的声明与陈述不变；下一步在最小损失旁列出有限读取，并去掉期望中的最小损失，意义审查的最小损失检查认定其为已知（排序上鞅）；研究第 255 节。"
     }
   ],
   "text_versions": [

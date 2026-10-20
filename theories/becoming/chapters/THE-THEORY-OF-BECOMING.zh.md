@@ -38,7 +38,7 @@
 1. *一种变化、三种读法与同步*（§1.2）。生起与止息、依存的形成与消解、开始与不再作为条件而在，是同一种变化；有限家族中开始成立与不再成立同步，不加前提。
 2. *复现与吸引*（§1.2）。在有限多个构形之内，律不合并任何东西，恰当每个构形都返回；一个构形被吸入吸收区域，恰当它不返回；保存自己的历史需要开放的世界。
 3. *前提划出部分*（§1.3）。八个世界前提各有满足与不满足它的世界；从一次交换读出时，五个由构造成立，三个是交换之律的状态。
-4. *停息需要最小损失*（§1.3）。停息由每次变化的最小损失与在有限多个这样的损失之内的存量推出；趋于停息只需阿基米德的量；不合并的律返回而不停息。
+4. *停息需要最小损失或有限的读取*（§1.3）。停息由每次变化的最小损失与在有限多个这样的损失之内的存量推出，或在没有最小损失时，由读自有限多个构形的量推出；趋于停息只需阿基米德的量；不合并的律返回而不停息，其中部分的合并由其余部分承接。
 5. *能形成者的次序*（§6.1）。不加前提，一个部分扩大、缩小、保持或混合；它只经超出其余量的净汲取而关闭某物，只经净给予而打开某物。
 6. *闭包与选择*（§2.6、§3.4）。供给、影响、所及与系统是嵌套的闭包；经耦合的选择恰及于耦合入者，一个合起来的池经其成员耦合的并选择。
 7. *联合超出与相对位置*（§2.3、§4.3）。各自在所给之内的取用者合起来可以超出它，并终结它们所依存的更新者；相对位置按计数相加为零。
@@ -140,7 +140,7 @@
 
 ### 1.3 前提划出部分：计数、停息与开放
 
-**要点。** 不加前提的定理对每个世界成立；§0 C 组的每个前提划出空间的一个真部分，一个部分上成立者由划出它的前提推出。计数时，开始与不再成立在一个列表上平衡。停息属于以每次变化的最小损失耗散、且存量在有限多个这样的损失之内的部分；继续变化需要开放；无尽地继续者从每个有界部分之外得到供给。
+**要点。** 不加前提的定理对每个世界成立；§0 C 组的每个前提划出空间的一个真部分，一个部分上成立者由划出它的前提推出。计数时，开始与不再成立在一个列表上平衡。停息属于以每次变化的最小损失耗散、且存量在有限多个这样的损失之内的部分，或其量读自有限多个构形的部分；继续变化需要开放；无尽地继续者从每个有界部分之外得到供给。
 
 **陈述。** 完整陈述见[英文版 §1.3](THE-THEORY-OF-BECOMING.md#13-premises-carve-parts-counting-rest-and-openness)。
 
@@ -562,8 +562,10 @@
 | [最小损失作为停息的前提](../results/records/least-loss-rest.md) | 不加前提的定理 | — | §1.3 |
 | [列出一次就是已定的同一](../results/records/listing-once-is-decided-identity.md) | 不加前提的定理 | — | §1.3 |
 | [前提的地图](../results/records/map-of-premises.md) | 不加前提的定理 | — | §1.3 |
+| [部分的合并由其余部分承接](../results/records/merge-of-a-part-kept-by-the-rest.md) | 不加前提的定理 | — | §1.3 |
 | [经关系计数的关系项](../results/records/relata-counted-up-to-indiscernibility.md) | 不加前提的定理 | — | §1.3 |
 | [每一分辨率下的停息](../results/records/rest-at-every-resolution.md) | 在所述前提下的定理 | 耗散 | §1.3 |
+| [由有限的读取而停息](../results/records/rest-from-a-finite-reading.md) | 不加前提的定理 | — | §1.3 |
 | [细分算作给予](../results/records/rest-with-refinement-counted.md) | 不加前提的定理 | — | §1.3 |
 | [整体与其部分](../results/records/space-and-its-parts.md) | 在所述前提下的定理 | 耗散 | §1.3 |
 | [计数表是计数的全部规律](../results/records/whole-law-of-counting.md) | 不加前提的定理 | — | §1.3 |
@@ -814,7 +816,7 @@
 | 1. 一次变化，三种读法；同步（§1.2） | 人口平衡方程（末 = 初 + 进入 − 离开）；二值序列的上穿与下穿交替；交换的局部步与次序无关，Mazurkiewicz 迹理论（1977） | 三种读法陈述为一次变化；生起复现而终止不复现的无限族（`World.separate`） | 近乎定义 |
 | 2. 返回与吸引（§1.2） | 有限集的单射自映射是置换，其轨道是环（有限的 Poincaré 返回）；不可逆即非单射，Landauer（1961）；保存历史使任何计算可逆，Bennett, "Logical Reversibility of Computation"（1973） | 不用可判定相等证明的鸽巢原理 | 已知结果的重述 |
 | 3. 前提划分部分（§1.3） | 以反模型证明公理的独立；构造性逆数学的校准（Bishop 1967；Bridges and Richman 1987；Ishihara），其中求至多变化一次之序列此后不变的那一步是 LPO 的典型实例 | 一个模型的完整前提账：每个前提由一个构造的世界满足、由另一个不满足，公理报告为空 | 作为制品是新的；每条定理是已知技术 |
-| 4. 停息需要最小损失（§1.3） | 以良基序中的排序函数证明终止（Turing 1949；Floyd 1967）；Lyapunov 函数（1892）；阿基米德性质；折半的见证是 Zeno 的二分 | 自然数的规律作为阿基米德规律的实例，以及稠密的反例，都是构造性的 | 已知结果的重述 |
+| 4. 停息需要最小损失或有限的读取（§1.3） | 以良基序中的排序函数证明终止（Turing 1949；Floyd 1967）；Lyapunov 函数（1892）；阿基米德性质；折半的见证是 Zeno 的二分；有限状态空间上的鸽巢原理；部分的合并由其余部分承接是 Landauer（1961）的相空间计数 | 自然数的规律作为阿基米德规律的实例，以及稠密的反例，都是构造性的 | 已知结果的重述 |
 | 5. 能形成者的次序（§6.1） | 以包含关系排列机会集及其单调性公理，Pattanaik and Xu（1990）；能力集，Sen（1985）；余量规律是把平衡方程代入接纳不等式 | 守恒方程与机会集比较连在一起，使关闭是超出余量的净汲取 | 近乎定义 |
 | 6. 闭包与选择（§2.6、§3.4、§7） | 观察的函数在观察不记录的变化下不变（Blackwell 1953）；对非祖先的干预（Pearl, *Causality*, 2000）；分布式知识是划分的交（Fagin, Halpern, Moses and Vardi 1995）；对齐方面是代理问题（§7.1） | 回应的闭包（其余者遵循经耦合读取的律，跨时间）与池的形式 | 已知结果的重述；`Web.selects_alike_iff` 按构造成立 |
 | 7. 联合超出与相对位置（§2.3、§4.3） | 公地悲剧（Lloyd 1833；Hardin 1968）；过冲与崩溃（Meadows et al. 1972；Catton 1980）；位置性物品（Hirsch 1976；Frank 1985） | 数学上没有；门控的终结与其他规律陈述在同一模型中 | 近乎定义 |
@@ -822,7 +824,7 @@
 | 9. 意义不在动力学中；范围与次序（§5、§6.4–§6.5） | 是与应当之间的鸿沟（Hume 1739）；开放问题论证（Moore 1903）；从自身能动性出发的普遍化，Gewirth 的类属一致原则（1978），以及 Hare（1963、1981）、Nagel（1970）、Sidgwick（1874）；支配序的不完全（Sen 1970） | 覆盖假设被指名为前提；范围与次序分开，并证明条件单独不排序任何东西 | 近乎定义；已知论证的重述；这一区分是澄清 |
 | 10. 回路（§2.6） | 有向图无环恰当其邻接矩阵幂零，此时 (I + N)ᵗ 是 t 的多项式；正整数权的环使谱半径大于一（Perron–Frobenius）；偏差放大的回路（Maruyama 1963） | 对整数的量与时间表的构造性陈述；稀疏时间表的情形 | 已知结果的重述 |
 
-十项之外的结果：从其外的供给与位置／迁移网的实例是排序函数论证，严格正的 P-次不变量界定每个点火序列（Lautenbach 1975；Memmi and Roucairol 1980；Murata 1989），所以网显示的是与已知理论一致，不是对一般性的独立支持；热力学对应重述持续的结构需要通量（Schrödinger 1944；Prigogine 1977）与 Landauer 的下界；调节重述无差拍控制、有延迟的扰动抑制（Dahleh and Pearson 1987）与必要多样性（Ashby 1956）；选择项是 Price（1970）的；余量之内的自身扩大（§7.2）是在区域上分开的余量之律，对守恒的量回答了寻求权力定理（Turner 等 2021）意义上的保留选项何时关闭他者的选项，常和博弈中的权力稀缺（Turner and Stavrianos 2021）是没有余量的情形，福利经济学中有余量才有帕累托改进是其类比；`Web.break_not_bounded` 成立是因为按假设存量不被观察，存量被观察之处断裂可以预先看到（§3.4）。
+十项之外的结果：从其外的供给与位置／迁移网的实例是排序函数论证，严格正的 P-次不变量界定每个点火序列（Lautenbach 1975；Memmi and Roucairol 1980；Murata 1989），所以网显示的是与已知理论一致，不是对一般性的独立支持；热力学对应重述持续的结构需要通量（Schrödinger 1944；Prigogine 1977）与 Landauer 的下界，其计数（在不合并的律中部分的合并由其余部分承接）就是 Landauer 自己的论证（1961；Bennett 2003；Ladyman、Presnell、Short 与 Groisman 2007），而物理给出的每种最小损失（合并、有限时间、精度、有限热库）都是随机热力学中带有自身前提的定理（[最小损失的检查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md#least-loss-check)）；调节重述无差拍控制、有延迟的扰动抑制（Dahleh and Pearson 1987）与必要多样性（Ashby 1956）；选择项是 Price（1970）的；余量之内的自身扩大（§7.2）是在区域上分开的余量之律，对守恒的量回答了寻求权力定理（Turner 等 2021）意义上的保留选项何时关闭他者的选项，常和博弈中的权力稀缺（Turner and Stavrianos 2021）是没有余量的情形，福利经济学中有余量才有帕累托改进是其类比；`Web.break_not_bounded` 成立是因为按假设存量不被观察，存量被观察之处断裂可以预先看到（§3.4）。
 
 **留下什么。** 三样，都不是发现：前提账及其见证与校准（方法上的；§0、§8.6）；范围与次序分开的伦理，其中普遍化的一步是 Gewirth 的，C 是机会集文献的单调性（§6.4–§6.5）；以及一套词汇，守恒的记账、受观察限制的选择与机会集的比较在其中一起陈述。会改变这些裁定的是：专家不能从定义预见的定理，对实际系统的、可能失败而未失败的预测，或从比文献已有者更弱的东西推出一个前提。
 
@@ -839,7 +841,7 @@
 3. **评价怎样在展开之内形成**（进一步的证明）。*开放：*中心怎样逐步形成、表示其区域、边界与依存，并认识它所及者；观察是否可由依存推出。
 4. **脊柱上的对齐方向**（进一步的证明）。已落地：作为核心模式的方向（§7.5）；R44：世界的动作读作部分在一条交换之律下的行动，平衡、在场与起点由构造成立（`Direction.exchange_direction`），交接案例作为核心中的形式实例（`Requirement.Handover.direction`）。连同 R40 从评价一行出发的方向，通向对齐之链止于脊柱。*开放：*形式部分无；链所指名的前提是根据与对应的问题。
 5. **扩大记入什么**（进一步的证明）。*开放：*沿 `Flow.GrownBy` 在增长的世界上的扩大；混合部分的度量（条件之外的前提，须公开陈述）；更新能力与关系丰富度的比较。
-6. **可以稠密的量**（进一步的证明）。*开放：*每次交换的最小损失能否推出而非给出；任何量上的流、依存网与世界；完成报告所列的每条自然数规律现在都有稠密形式或反例（R40、R41）；实数的强度与倍率。
+6. **可以稠密的量**（进一步的证明）。（已陈述：量读自有限多个构形时，停息不需要最小损失，所以最小损失只为没有列表容纳的读取所需；在不合并的律中，部分的合并由其余部分承接，即 Landauer 的计数，所以外围的下限从物理只需要由计数到热的一步，`Amounts.rests_of_finite_reading`、`Law.Lossless.narrowing_spreads`。物理给出的每种最小损失都是带有自身前提的已知物理，[最小损失的检查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md#least-loss-check)。）*开放：*由核心得出以能量计的最小损失，这需要把计数读作能量；任何量上的流、依存网与世界；完成报告所列的每条自然数规律现在都有稠密形式或反例（R40、R41）；实数的强度与倍率。
 7. **哪个律成立，成员的律怎样形成**（进一步的证明）。已落地（R38，[研究第 233 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#233-one-turn-around-a-cycle-and-any-two-interleavings-r38)）：重合进程在一个条件上的差距，恰在其交换按某映射回应它之处，是该映射的进程（`LoopReturn.responds_iff`），这是前提，未由交换律推出；精确环节之回路的一圈精确陈述（`LoopReturn.carried_around_exact`）。*开放：*交换之律本身，带噪声的律及其历程；成员的律怎样形成、怎样回应它所耦合入者；单个回路之外、多个条件同时之处哪个律闭合而非扩大差别；概率学习与隐含偏置。
 8. **由连续性而非命名的同一**（进一步的证明）。*开放：*所立重合处的同一，或由物质、信息或组织的连续性给出的同一；分裂与合并下的类。
 9. **演化的选择项**（进一步的证明）。（已陈述：计数形式的真正选择项，即消去分母的协方差，以及均值在世代中的进程，均值移动了就有一步有真正的选择或传递，支持从不被逆向选择，`Becoming.SelectionTerm`；对后代数本身的选择、传递精确时的方差形式、受给予与所取之量约束的后代数，以及在被耗散之族内终止、其传递对后代数的降低超过选择之升高的世系，`Becoming.Reproduction`；等大小之组的组内选择与组间选择，`Becoming.SelectionLevels`；由各组自身条件遭遇共同过度的终止所定的组间部分，`Becoming.GroupEnding`。）*开放：*既必要又充分的形成之律；世系新形成的依存；大小不等的组，以及条件相互耦合的组；公分母之外的有理数的量，以及 Fisher 定理的加性部分（后代数对所载之物的回归）。
@@ -890,16 +892,16 @@
 
 所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）17 个。
 
-**当前回执**是运行 [`20261020T101723.692082Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T101723.692082Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 252 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#252-one-renumbering-of-the-steps-of-two-interleavings-r46)）。
+**当前回执**是运行 [`20261020T104831.571462Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T104831.571462Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 255 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#255-rest-from-a-finite-reading-and-a-parts-merge-kept-by-the-rest-lc1)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 275 个模块，11,044 条定理 |
+| 核心模块（含根 `Becoming`） | 275 个模块，11,057 条定理 |
 | 实例模块 | 7 个模块，567 条定理 |
 | 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 闭包（核心、环与根基） | 291 个模块，11,864 条定理 |
-| 审计的脊柱声明 | 16,235 |
+| 闭包（核心、环与根基） | 291 个模块，11,877 条定理 |
+| 审计的脊柱声明 | 16,249 |
 | 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 189 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 

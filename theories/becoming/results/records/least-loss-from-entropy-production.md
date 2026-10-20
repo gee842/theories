@@ -51,7 +51,7 @@ Canonical source: [EntropyProduction.lean](../../../../experiments/integrated-co
 <a id="next--下一步"></a>
 ## Next
 
-A core form with rational amounts and no Mathlib for the deterministic laws; the exchange-level Landauer bound from the second law and the memory's entropy; finite-time floors (thermodynamic length, the uncertainty relation) as instances of DestroysAtLeast; the rest family in expectation at a refining unit.
+A core form with rational amounts and no Mathlib for the deterministic laws; the exchange-level Landauer bound from the count now in the core (record merge-of-a-part-kept-by-the-rest) with a reading of count as energy. Finite-time floors and the uncertainty relation as instances of DestroysAtLeast would restate known physics (the significance review's least-loss check) and are not planned.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -68,6 +68,7 @@ Physics read onto the spine. Gouy–Stodola: exergy destroyed is T0 times the en
 - **formal-reuse**: [continued-change-needs-openness](continued-change-needs-openness.md). Reuses Flow.Dissipative, Flow.ClosedAt, Flow.Balances.over and Flow.DissipatesOn.replenishment_takers; the almost-sure law is the statistical form of Flow.Balances.taking_not_recurring.
 - related, not a proved adapter: [rest-with-refinement-counted](rest-with-refinement-counted.md). There the refinement counted brings rest at every resolution; here a floor in energy counts r units at an r-fold finer unit.
 - related, not a proved adapter: [premises-read-off-the-exchange](premises-read-off-the-exchange.md). There dissipation is a state of the law of exchange, not read off every exchange; here the physical premises under which it holds.
+- related, not a proved adapter: [merge-of-a-part-kept-by-the-rest](merge-of-a-part-kept-by-the-rest.md). Landauer's floor, here a physical premise, has its count as a core law there.
 
 <a id="sources--来源"></a>
 ### Sources
@@ -89,6 +90,7 @@ Aliases: `Becoming.EntropyProduction.ExergyBalance`, `Becoming.EntropyProduction
 - Added for the question whether the opening's "as in ours" can stand: which accepted physical premises give the spine's dissipation, for which systems (board item T1).
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Passing.lossless (now Passing.conserving). Re-pointed after reading the change: Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Entropy.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: Entropy.lean, takes as its final section LevelWebs, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Resolution.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.
+- 20 October 2026, LC1: the next step restated after the least-loss check (study section 255): the count of Landauer's floor is in the core (record merge-of-a-part-kept-by-the-rest); the finite-time and precision floors are known physics and left unbuilt. The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](least-loss-from-entropy-production.json).
 
 <a id="earlier-text--早期文本"></a>
