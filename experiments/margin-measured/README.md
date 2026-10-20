@@ -6,8 +6,8 @@ Thermodynamics became more than formal when temperature and heat became measured
 
 | File | What it is |
 |---|---|
-| [PREDICTIONS-2026-10-20.md](PREDICTIONS-2026-10-20.md) | Step 0 literature table; the exact Lean content; the reading that sets what can be tested; bridges R, H1, H2; predictions A1-A4, D1-D2, B1-B7 with classes and pass rules. Frozen at `b14f7b739` (`6b29f6ac0` before rebasing onto main) |
-| [PREDICTIONS-2026-10-20-ROUND2.md](PREDICTIONS-2026-10-20-ROUND2.md) | Round 2: two configuration corrections (A1's harvest beyond the margin; A3's unharvested first day), criteria unchanged; why no learner round. Frozen at `3b991bb8d` (`037683ad8` before rebasing), after round 1's results |
+| [PREDICTIONS-2026-10-20.md](PREDICTIONS-2026-10-20.md) | Step 0 literature table; the exact Lean content; the reading that sets what can be tested; bridges R, H1, H2; predictions A1-A4, D1-D2, B1-B7 with classes and pass rules. Frozen at `6b29f6ac0`, the commit round 1 ran from (kept as `refs/salvage/mq1-freeze-round1`; on main, rebased, `e6b456cfc`) |
+| [PREDICTIONS-2026-10-20-ROUND2.md](PREDICTIONS-2026-10-20-ROUND2.md) | Round 2: two configuration corrections (A1's harvest beyond the margin; A3's unharvested first day), criteria unchanged; why no learner round. Frozen at `037683ad8`, the commit round 2 ran from (`refs/salvage/mq1-freeze-round2`; on main `0031223b3`), after round 1's results |
 | [yeast.py](yeast.py) | Test bed A: the two-phase growth model, noise, and the measurements by intervention (pulse margin, largest sustained draw, break day, histories) |
 | [garden.py](garden.py) | Test bed B: the lawn gridworld, exact best responses, tabular Q-learners, coupling by intervention, the margin law's band |
 | [run.py](run.py), [analyze.py](analyze.py) | Frozen configurations and verdict rules |
@@ -69,7 +69,7 @@ Classes: *identity* (follows from what the system is built to meet), *identity i
 1. A1 and A1m (round 1) were degenerate: the frozen harvest 1.5Ŷ was at least the starting margin m̂/2. A2's applicability guard (H < m₀) was missing from A1. Round 2 fixed the configuration only.
 2. A3 (round 1) measured a protocol with one unharvested day before the standing harvest, unlike the prediction's wording. Round 2 harvests from day 0.
 3. No learner round 2: a calibration on the reference variant only (6 seeds per setting) found no setting reaching the best response, so a rerun would test H2 again.
-4. Round 1's verdicts stand as frozen; each round's commit is in `results/FROZEN-AT` (hashes before the rebase onto main; the rebased commits are listed in the table above).
+4. Round 1's verdicts stand as frozen; each round's run commit is in `results/FROZEN-AT`. Those are the commits before the rebase onto main, kept reachable as `refs/salvage/mq1-*`; the rebased commits on main are listed in the file table above.
 
 ## Limits
 
