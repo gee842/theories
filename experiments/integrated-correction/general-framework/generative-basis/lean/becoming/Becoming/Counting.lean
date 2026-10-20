@@ -2585,6 +2585,39 @@ theorem onceClosedQueue_binds (tally : Tally n c a) (occupied : 0 < n T) (excess
     | .transmitting => ⟨J, x, _, x, ⟨.head _, gives, fun standing =>
         comes.1 (EnclosedQueue.place_pos.mpr standing), stands⟩, trivial⟩
 
+/-- **Something arising is counted.** Where something arises across a step, a counted census
+counts something arising there. -/
+theorem CountsOf.arising_pos {w : World} {alive : Nat → List w.Relatum} {n c a : Nat → Nat}
+    (counted : w.CountsOf alive n c a) (census : w.web.Census alive) {t : Nat} {x : w.Relatum}
+    (arises : w.web.Arises t x) : 0 < a t :=
+  (counted t).2.2.pos_of_mem (((census (t + 1)).2 x).mp arises.2) arises
+
+/-- Where embodiment binds, every counted census counts something arising. -/
+theorem binds_arising_counted {w : World} (binds : Premise.embodied.Binds w) :
+    w.CountsHold fun _ _ a => ∃ t, 0 < a t :=
+  fun _ _ _ _ census counted => match binds with
+  | ⟨_, _, arises⟩ => ⟨_, counted.arising_pos census arises⟩
+
+/-- **The binding steps where every premise binds, for every counted census**: nothing arises
+across a step at which nothing is active, and something arises (`active_of_coming_jointly`,
+`binds_arising_counted`). -/
+theorem binding_counting_sound (w : World) (premised : w.Premised) (binds : w.Binds) :
+    w.CountsHold fun n _ a => (∀ t, 0 < a t → 0 < n t) ∧ ∃ t, 0 < a t :=
+  fun alive n c a census counted =>
+    ⟨premised_counting_sound w premised alive n c a census counted,
+     binds_arising_counted (binds .embodied) alive n c a census counted⟩
+
+/-- **The witness where every premise binds**: a queue closed once, its front standing more than
+join at the step it closes. -/
+theorem binding_counting_witnessed :
+    Witnessed (fun w x t => w.web.active t x) (fun w => w.Premised ∧ w.Binds)
+      fun n _ a => (∀ t, 0 < a t → 0 < n t) ∧ ∃ t, 0 < a t :=
+  fun n c a tally ⟨company, T, joins⟩ => ⟨onceClosedQueue n c T (a T + 1),
+    fun _ _ => inferInstance, Queue.line n c,
+    ⟨onceClosedQueue_premised tally company (Nat.lt_succ_self _),
+     onceClosedQueue_binds tally (company T joins) (Nat.lt_succ_self _) joins⟩,
+    onceClosedQueue_census _ _ _ _, Queue.counts tally⟩
+
 /-- Where every premise binds, the laws of counting under the eight are the tally, that
 nothing arises across a step at which nothing is active, and that something arises: a
 property of the counts holds of every census of every world meeting the eight and binding
@@ -2596,19 +2629,7 @@ theorem binding_counting {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) 
     (∀ n c a, Tally n c a → (∀ t, 0 < a t → 0 < n t) → (∃ t, 0 < a t) → Q n c a) ↔
       ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Premised → w.Binds →
         w.CountsObey Q :=
-  ⟨fun law w _ premised binds alive census =>
-    law _ _ _ census.tally
-      (counting_binds_jointly.1 w (premised _ (.tail _ (.head _)))
-        (premised _ (.tail _ (.tail _ (.head _))))
-        (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
-          (.head _))))))))
-        alive census)
-      (binds_arising w (binds .embodied) alive census),
-   fun law n c a tally company ⟨T, joins⟩ => pointwise (Queue.counts tally)
-      (law (onceClosedQueue n c T (a T + 1))
-        (onceClosedQueue_premised tally company (Nat.lt_succ_self _))
-        (onceClosedQueue_binds tally (company T joins) (Nat.lt_succ_self _) joins) _
-        (onceClosedQueue_census _ _ _ _))⟩
+  census_table_obeys₂ pointwise binding_counting_sound binding_counting_witnessed
 
 /-- Every premise binding decides neither rest nor change without end: in `hatch` every
 premise binds and arising does not recur (`hatch_rests_unrefuted`); in a queue closed once in which
@@ -2699,6 +2720,54 @@ theorem counts_arising {w : World} [∀ t x, Decidable (w.web.active t x)]
   Nat.lt_of_lt_of_le (mark_pos.mpr arises)
     (le_total_of_mem (q := fun y => mark (ComesToBe (fun s => w.web.active s y) t))
       (((census (t + 1)).2 x).mp arises.2))
+
+/-- **Something active is counted.** Where something is active at a step, a counted census
+counts something active there. -/
+theorem CountsOf.active_pos {w : World} {alive : Nat → List w.Relatum} {n c a : Nat → Nat}
+    (counted : w.CountsOf alive n c a) (census : w.web.Census alive) {t : Nat} {f : w.Relatum}
+    (active : w.web.active t f) : 0 < n t :=
+  Nat.lt_of_lt_of_le (counts_active census active) (Nat.le_of_eq (counted t).1.symm)
+
+/-- Where a selection binds counting, a counted census of a world meeting it counts something
+active at every step across which something arises. -/
+theorem CountsOf.company_binding {w : World} {S : Premise → Bool} (meets : w.Meets S)
+    (binds : BindsCounting S) {alive : Nat → List w.Relatum} {n c a : Nat → Nat}
+    (counted : w.CountsOf alive n c a) (census : w.web.Census alive) :
+    ∀ t, 0 < a t → 0 < n t :=
+  match binds with
+  | ⟨balanced, embodied, giving⟩ => fun _ => company_of counted fun _ listed comes =>
+    match giving with
+    | .inl acting => active_of_coming_jointly (meets _ balanced) (meets _ acting)
+        (Embodied.arising (meets _ embodied)) census comes
+    | .inr ⟨taking, dissipative⟩ => active_of_coming_taking (meets _ balanced)
+        (meets _ taking) (meets _ dissipative) (meets _ embodied) census listed comes
+
+/-- Where activity needing support, only active relata giving or only active relata taking is
+selected and binds, a counted census counts something active at some step. -/
+theorem CountsOf.acts_of_binding {w : World} {S : Premise → Bool} (meets : w.Meets S)
+    (binds : ∀ p, S p = true → p.Binds w) {alive : Nat → List w.Relatum} {n c a : Nat → Nat}
+    (counted : w.CountsOf alive n c a) (census : w.web.Census alive) :
+    S .dependent = true ∨ S .acting = true ∨ S .taking = true → ∃ t, 0 < n t := fun selected =>
+  match selected with
+  | .inl dependent => match binds _ dependent with
+    | ⟨t, _, _, active, _, _⟩ => ⟨t, counted.active_pos census active⟩
+  | .inr (.inl acting) => match binds _ acting with
+    | ⟨t, _, _, present, gives⟩ => ⟨t, counted.active_pos census (meets _ acting t _ _ present gives)⟩
+  | .inr (.inr taking) => match binds _ taking with
+    | ⟨t, _, _, present, takes⟩ =>
+      ⟨t, counted.active_pos census (meets _ taking t _ _ present takes).1⟩
+
+/-- Where every relatum is embodied, only active relata give and bounded transmission binds, a
+counted census counts, at some step, something active and something arising across it. -/
+theorem CountsOf.joint_of_binding {w : World} (embodied : w.Embodied) (acting : w.Acting)
+    (binds : Premise.transmitting.Binds w) {alive : Nat → List w.Relatum} {n c a : Nat → Nat}
+    (counted : w.CountsOf alive n c a) (census : w.web.Census alive) :
+    ∃ t, 0 < n t ∧ 0 < a t :=
+  match binds with
+  | ⟨t, x, _, _, ⟨present, gives, comes⟩, _⟩ =>
+    ⟨t, counted.active_pos census (acting t _ _ present gives),
+     counted.arising_pos census ⟨fun active => comes.1 ((embodied x t).mp active),
+       (embodied x (t + 1)).mpr comes.2⟩⟩
 
 end World
 
@@ -3129,59 +3198,56 @@ theorem openQueue_saturated_binding (tally : Tally n c a) (joins : 0 < a T)
         ⟨T, .member k, _, .member k, ⟨.head _, mark_pos.mpr comes,
           fun standing => comes.1 (mark_pos.mp standing), mark_pos.mpr comes.2⟩, trivial⟩⟩
 
-/-- The laws of counting where the premises of each selection bind. A property of the counts
-holds of every census of every world meeting a selection in which each selected premise binds
-exactly when it holds of every tally meeting the laws of `counting_under` and three more:
-something is active, where activity needing support, only active relata giving or only active
-relata taking is selected; something arises, where embodiment is; and something arises across
-a step at which something is active, where embodiment, only active relata giving and bounded
-transmission are. Binding adds nothing else: each binding is an instance of a condition, and
-these are what the instances leave in the counts. -/
-theorem binding_counting_under (S : Premise → Bool)
-    {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q) :
-    (∀ n c a, Tally n c a → (BindsCounting S → ∀ t, 0 < a t → 0 < n t) →
-      (S .dependent = true ∨ S .acting = true ∨ S .taking = true → ∃ t, 0 < n t) →
-      (S .embodied = true → ∃ t, 0 < a t) →
-      (S .embodied = true → S .acting = true → S .transmitting = true →
-        ∃ t, 0 < n t ∧ 0 < a t) → Q n c a) ↔
-      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Meets S →
-        (∀ p, S p = true → p.Binds w) → w.CountsObey Q :=
-  ⟨fun law w _ meets binds alive census => law _ _ _ census.tally
-    (fun ⟨balanced, embodied, giving⟩ => match giving with
-      | .inl acting => counting_binds_jointly.1 w (meets _ balanced) (meets _ acting)
-          (Embodied.arising (meets _ embodied)) alive census
-      | .inr ⟨taking, dissipative⟩ => taking_binds_counting w (meets _ balanced)
-          (meets _ taking) (meets _ dissipative) (meets _ embodied) alive census)
-    (fun selected => match selected with
-      | .inl dependent => match binds _ dependent with
-        | ⟨t, _, _, active, _, _⟩ => ⟨t, counts_active census active⟩
-      | .inr (.inl acting) => match binds _ acting with
-        | ⟨t, _, _, present, gives⟩ => ⟨t, counts_active census (meets _ acting t _ _ present gives)⟩
-      | .inr (.inr taking) => match binds _ taking with
-        | ⟨t, _, _, present, takes⟩ =>
-          ⟨t, counts_active census (meets _ taking t _ _ present takes).1⟩)
-    (fun embodied => match binds _ embodied with
-      | ⟨t, _, arises⟩ => ⟨t, counts_arising census arises⟩)
-    (fun embodied acting transmitting => match binds _ transmitting with
-      | ⟨t, x, _, _, ⟨present, gives, comes⟩, _⟩ =>
-        ⟨t, counts_active census (meets _ acting t _ _ present gives),
-         counts_arising census ⟨fun active => comes.1 ((meets _ embodied x t).mp active),
-           (meets _ embodied x (t + 1)).mpr comes.2⟩⟩),
-   fun law n c a tally quiet acts arises joint =>
-    have holds : ∀ (w : World) [∀ t x, Decidable (w.web.active t x)],
-        (∀ p, S p = true → p.Holds w ∧ p.Binds w) → w.CountsObey Q := fun w _ binding =>
-      law w (fun p selected => (binding p selected).1) fun p selected => (binding p selected).2
+/-- **The binding steps where the premises of each selection bind, for every counted census**:
+those of `counting_under_sound`; something active where activity needing support, only active
+relata giving or only active relata taking is selected (`CountsOf.acts_of_binding`); something
+arising where embodiment is (`binds_arising_counted`); and something arising across a step at
+which something is active where embodiment, only active relata giving and bounded transmission
+are (`CountsOf.joint_of_binding`). -/
+theorem binding_counting_under_sound (S : Premise → Bool) (w : World)
+    (within : w.Meets S ∧ ∀ p, S p = true → p.Binds w) :
+    w.CountsHold fun n _ a => (BindsCounting S → ∀ t, 0 < a t → 0 < n t) ∧
+        (S .dependent = true ∨ S .acting = true ∨ S .taking = true → ∃ t, 0 < n t) ∧
+        (S .embodied = true → ∃ t, 0 < a t) ∧
+        (S .embodied = true → S .acting = true → S .transmitting = true →
+          ∃ t, 0 < n t ∧ 0 < a t) :=
+  match within with
+  | ⟨meets, binds⟩ => fun alive n c a census counted =>
+    ⟨counting_under_sound S w meets alive n c a census counted,
+     counted.acts_of_binding meets binds census,
+     fun embodied => binds_arising_counted (binds _ embodied) alive n c a census counted,
+     fun embodied acting transmitting => counted.joint_of_binding (meets _ embodied)
+      (meets _ acting) (binds _ transmitting) census⟩
+
+/-- **The witnesses where the premises of each selection bind**: a relay queue where embodiment
+is not selected; where it is, a queue closed once, or, where only active relata giving and
+taking are not both left out, saturated ones (`onceClosedQueue_binding`,
+`openQueue_saturated_binding`), and lossy queues where balance is not selected. -/
+theorem binding_counting_under_witnessed (S : Premise → Bool) :
+    Witnessed (fun w x t => w.web.active t x) (fun w => w.Meets S ∧ ∀ p, S p = true → p.Binds w)
+      fun n _ a => (BindsCounting S → ∀ t, 0 < a t → 0 < n t) ∧
+        (S .dependent = true ∨ S .acting = true ∨ S .taking = true → ∃ t, 0 < n t) ∧
+        (S .embodied = true → ∃ t, 0 < a t) ∧
+        (S .embodied = true → S .acting = true → S .transmitting = true →
+          ∃ t, 0 < n t ∧ 0 < a t) :=
+  fun n c a tally ⟨quiet, acts, arises, joint⟩ =>
+    have within : ∀ {w : World}, (∀ p, S p = true → p.Holds w ∧ p.Binds w) →
+        w.Meets S ∧ ∀ p, S p = true → p.Binds w := fun binding =>
+      ⟨fun p selected => (binding p selected).1, fun p selected => (binding p selected).2⟩
     have relayed : S .embodied = false → ∀ U g, (S .dependent = true ∨ S .acting = true ∨
-        S .taking = true → (relayQueue n c U g).web.active U g) → Q n c a :=
-      fun disembodied _ _ active => pointwise (openQueue_counts tally)
-        (holds _ (relayQueue_binding disembodied active) _ (openQueue_census n c))
+        S .taking = true → (relayQueue n c U g).web.active U g) →
+        WitnessedAt (fun w x t => w.web.active t x) (fun w => w.Meets S ∧ ∀ p, S p = true → p.Binds w) n c a :=
+      fun disembodied _ _ active => ⟨_, fun _ _ => inferInstance, _,
+        within (relayQueue_binding disembodied active), openQueue_census n c,
+        openQueue_counts tally⟩
     have lossy : ∀ (T U : Nat) (gift : Nat → Nat), 0 < a T → 0 < n U → gift U = 0 →
         S .balanced = false →
         (S .acting = true → ∀ t, gift t = 0) →
-        (S .transmitting = true → T = U ∨ 0 < gift T) → Q n c a :=
-      fun _ _ _ joins occupied shut unbalanced giving descends => pointwise (openQueue_counts tally)
-        (holds _ (lossyQueue_binding tally occupied joins shut unbalanced giving descends) _
-          (openQueue_census n c))
+        (S .transmitting = true → T = U ∨ 0 < gift T) →
+        WitnessedAt (fun w x t => w.web.active t x) (fun w => w.Meets S ∧ ∀ p, S p = true → p.Binds w) n c a :=
+      fun _ _ _ joins occupied shut unbalanced giving descends => ⟨_, fun _ _ => inferInstance, _,
+        within (lossyQueue_binding tally occupied joins shut unbalanced giving descends),
+        openQueue_census n c, openQueue_counts tally⟩
     match he : S .embodied with
     | false => match hp : S .dependent, ha : S .acting, ht : S .taking with
       | false, false, false => relayed he 0 (.ground 1) fun
@@ -3199,20 +3265,24 @@ theorem binding_counting_under (S : Premise → Bool)
             OpenQueue.front.mpr occupied
     | true => match arises he with
       | ⟨T, joins⟩ =>
-        have once : (∀ t, 0 < a t → 0 < n t) → Q n c a := fun company =>
-          pointwise (Queue.counts tally) (law (onceClosedQueue n c T (a T + 1))
-            ((onceClosedQueue_premised tally company (Nat.lt_succ_self _)).meets S)
-            (fun p _ => onceClosedQueue_binds tally (company T joins) (Nat.lt_succ_self _) joins p)
-            _ (onceClosedQueue_census _ _ _ _))
+        have once : (∀ t, 0 < a t → 0 < n t) →
+            WitnessedAt (fun w x t => w.web.active t x) (fun w => w.Meets S ∧ ∀ p, S p = true → p.Binds w) n c a := fun company =>
+          ⟨onceClosedQueue n c T (a T + 1), fun _ _ => inferInstance, Queue.line n c,
+           ⟨(onceClosedQueue_premised tally company (Nat.lt_succ_self _)).meets S,
+            fun p _ => onceClosedQueue_binds tally (company T joins) (Nat.lt_succ_self _) joins p⟩,
+           onceClosedQueue_census n c T (a T + 1), Queue.counts tally⟩
         match hb : S .balanced, ha : S .acting, ht : S .taking, hd : S .dissipative,
             hr : S .transmitting with
         | true, true, _, _, _ => once (quiet ⟨hb, he, .inl ha⟩)
         | true, false, true, true, _ => once (quiet ⟨hb, he, .inr ⟨ht, hd⟩⟩)
-        | true, false, false, _, _ => pointwise (Queue.counts tally)
-            (holds _ (onceClosedQueue_binding tally (tally.after_pos joins)
-              (Nat.lt_succ_self (a (T + 1))) joins ha ht) _ (onceClosedQueue_census _ _ _ _))
-        | true, false, true, false, _ => pointwise (openQueue_counts tally)
-            (holds _ (openQueue_saturated_binding tally joins ha hd) _ (openQueue_census n c))
+        | true, false, false, _, _ => ⟨_, fun _ _ => inferInstance, Queue.line n c,
+            within (onceClosedQueue_binding tally (tally.after_pos joins)
+              (Nat.lt_succ_self (a (T + 1))) joins ha ht),
+            onceClosedQueue_census n c (T + 1) (a (T + 1)).succ,
+            Queue.counts tally⟩
+        | true, false, true, false, _ => ⟨_, fun _ _ => inferInstance, _,
+            within (openQueue_saturated_binding tally joins ha hd), openQueue_census n c,
+            openQueue_counts tally⟩
         | false, true, _, _, true => match joint he ha hr with
           | ⟨U, occupied, here⟩ => lossy U U (fun _ => 0) here occupied rfl hb (fun _ _ => rfl)
               fun _ => .inl rfl
@@ -3220,7 +3290,31 @@ theorem binding_counting_under (S : Premise → Bool)
             rfl hb (fun _ _ => rfl) fun selected => nomatch hr.symm.trans selected
         | false, false, _, _, _ => lossy T (T + 1) (fun t => mark (t = T)) joins
             (tally.after_pos joins) (mark_zero (Nat.succ_ne_self T)) hb
-            (fun selected => nomatch ha.symm.trans selected) fun _ => .inr (mark_pos.mpr rfl)⟩
+            (fun selected => nomatch ha.symm.trans selected) fun _ => .inr (mark_pos.mpr rfl)
+
+/-- The laws of counting where the premises of each selection bind. A property of the counts
+holds of every census of every world meeting a selection in which each selected premise binds
+exactly when it holds of every tally meeting the laws of `counting_under` and three more:
+something is active, where activity needing support, only active relata giving or only active
+relata taking is selected; something arises, where embodiment is; and something arises across
+a step at which something is active, where embodiment, only active relata giving and bounded
+transmission are. Binding adds nothing else: each binding is an instance of a condition, and
+these are what the instances leave in the counts. -/
+theorem binding_counting_under (S : Premise → Bool)
+    {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q) :
+    (∀ n c a, Tally n c a → (BindsCounting S → ∀ t, 0 < a t → 0 < n t) →
+      (S .dependent = true ∨ S .acting = true ∨ S .taking = true → ∃ t, 0 < n t) →
+      (S .embodied = true → ∃ t, 0 < a t) →
+      (S .embodied = true → S .acting = true → S .transmitting = true →
+        ∃ t, 0 < n t ∧ 0 < a t) → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Meets S →
+        (∀ p, S p = true → p.Binds w) → w.CountsObey Q :=
+  have table := census_table_obeys pointwise (binding_counting_under_sound S)
+    (binding_counting_under_witnessed S)
+  ⟨fun law w _ meets binds => table.mp (fun n c a tally ⟨quiet, acts, arises, joint⟩ =>
+      law n c a tally quiet acts arises joint) w ⟨meets, binds⟩,
+   fun law n c a tally quiet acts arises joint => table.mpr (fun w _ ⟨meets, binds⟩ =>
+      law w meets binds) n c a tally ⟨quiet, acts, arises, joint⟩⟩
 
 
 instance (S : Premise → Bool) : Decidable (BindsCounting S) :=

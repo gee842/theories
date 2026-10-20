@@ -99,13 +99,18 @@ def ListingObeys (w : World) [∀ x t, Decidable (L w x t)]
   ∀ l, Listed (L w) l → Q (fun t => (l t).length) (fun t => ceasings (l t) (L w) t)
     (fun t => comings (l (t + 1)) (L w) t)
 
+/-- `n`, `c` and `a` are the marks of a listed family of some world of the class, with a
+procedure deciding what is listed there. -/
+def WitnessedAt (Class : World → Prop) (n c a : Nat → Nat) : Prop :=
+  ∃ (w : World) (_ : ∀ x t, Decidable (L w x t)) (l : Nat → List (X w)), Class w ∧
+    Listed (L w) l ∧
+      ∀ t, (l t).length = n t ∧ ceasings (l t) (L w) t = c t ∧ comings (l (t + 1)) (L w) t = a t
+
 /-- Every tally meeting `C` is the marks of a listed family of some world of the class, with a
 procedure deciding what is listed there. -/
 def Witnessed (Class : World → Prop) (C : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop) :
     Prop :=
-  ∀ n c a, Tally n c a → C n c a → ∃ (w : World) (_ : ∀ x t, Decidable (L w x t))
-    (l : Nat → List (X w)), Class w ∧ Listed (L w) l ∧
-      ∀ t, (l t).length = n t ∧ ceasings (l t) (L w) t = c t ∧ comings (l (t + 1)) (L w) t = a t
+  ∀ n c a, Tally n c a → C n c a → WitnessedAt L Class n c a
 
 variable {L} {Class : World → Prop} {C Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
 
