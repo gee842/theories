@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 279 | 11,166 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 280 | 11,178 |
 | [Becoming instances and applications](lean-declarations/becoming-ring.md) | 13 | 746 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -407,6 +407,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [GroundingContract.lean](lean-declarations/concern.md#module-618302908b9f) | Concern and shared activity |
 | [GroupEnding.lean](lean-declarations/becoming-core.md#module-607b442f3647) | Becoming pure core |
 | [GrownFragmentation.lean](lean-declarations/ethics.md#module-93d3383fc37b) | Normative grounding and generative direction |
+| [Growth.lean](lean-declarations/becoming-core.md#module-c06912bbd6f0) | Becoming pure core |
 | [GuardHorizon.lean](lean-declarations/becoming-ring.md#module-de2c4a4581b2) | Becoming instances and applications |
 | [Handoff.lean](lean-declarations/becoming-core.md#module-96dbcca36f4a) | Becoming pure core |
 | [HexagramCommuting.lean](lean-declarations/becoming-ring.md#module-20b1a3f4f3b4) | Becoming instances and applications |

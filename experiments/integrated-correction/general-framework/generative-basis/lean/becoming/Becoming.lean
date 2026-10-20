@@ -77,6 +77,7 @@ import Becoming.Admission
 import Becoming.Exclusion
 import Becoming.Exhaustion
 import Becoming.Regions
+import Becoming.Growth
 import Becoming.Retaining
 import Becoming.OwnWidening
 import Becoming.Clearing
@@ -1000,6 +1001,14 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   it. Renewal over a region of conditions is renewal at the step when the region covers
   every condition the formation takes part in, keeps its own support when it covers what
   it requires, and over a region omitting a requirement can lose its own support.
+* `Becoming.Growth` (L1): widening along a reading of one web's formations in another's
+  (`Web.WidensAlong`), which along the identity is widening (`Web.widensAlong_id_iff`), and widening
+  over a grown world: a growth adds formations and conditions without changing the old formations'
+  requirements (`Web.grow`), and the grown web widens the old along the inclusion exactly where the
+  old levels include and either exceed or admit a new formation (`Web.grow_widensAlong_iff`); with
+  the old levels kept, exactly where a new formation is admitted, while on the old formations nothing
+  widens (`Web.grow_widens_unregistered`); an attachment as in `Flow.GrownBy` widens exactly where
+  its new condition meets the new formation's need (`Web.attach_widensAlong_iff`).
 * `Becoming.Retaining` (L1): retaining and adding, for any significance, with no condition on it
   (`Web.Retains`, `Web.Adds`). Inclusion retains, fewer continuations with significance retain
   more, and significance bounded by a region retains what is admitted within it
