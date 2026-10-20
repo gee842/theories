@@ -75,6 +75,7 @@ import Becoming.Exclusion
 import Becoming.Exhaustion
 import Becoming.Regions
 import Becoming.Retaining
+import Becoming.OwnWidening
 import Becoming.Clearing
 import Becoming.Extension
 import Becoming.Metaethics
@@ -961,6 +962,16 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   and widen them exactly when it also brings one more formation within the margin
   (`Flow.Balances.widens_iff_within_margin`); in `Preemption` a part within renewal does not
   keep what can form (`Preemption.within_renewal_yet_loses`).
+* `Becoming.OwnWidening` (L1): where a part's widening of what it can reach is the whole's. Within a
+  decided region of its own, a part's activity widens what can form against the levels without its
+  exchange (`Web.WidensWithin`); in a balanced flow the whole then widens exactly when the part's
+  net draw stays within the margin for every formation outside the region that the levels without
+  it admit, and is mixed exactly when it goes beyond for one (`Flow.Balances.widens_iff_others_within`,
+  `Flow.Balances.mixed_iff_other_beyond`); with a need met exactly any net draw on it makes own
+  widening mixed (`Flow.Balances.mixed_of_tight`), and drawing on nothing another admitted formation
+  requires widens the whole (`Flow.Balances.widens_of_untaken_beyond`). Any reachable set is an
+  admitted set (`Web.admits_reachWeb_iff`). Witness `Drawing`: widening at one unit of slack, mixed
+  at none.
 * `Becoming.Clearing` (L1): the witness `Clearing`, a source, a clearer and a dweller, with the facts that
   read no more than admission, regions and retaining. The clearer is active and renewed at every
   step while the dweller ends (`Clearing.undermines_within_renewal`); its part loses the dweller
