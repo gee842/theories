@@ -41,6 +41,7 @@ The core, the explicit practical commitments, and warranted AI correspondence pr
 - It does not prove axiom-free necessity of the continuation condition or of C.
 - That a system chooses so: the schema says what any comparison meeting J1/J2 chooses on a web's moves.
 - A World's exchanges read as the family of moves, or the periphery case as a formal core instance.
+- No result on alignment beyond the known proxy problem: the selection laws state it qualitatively, and Zhuang and Hadfield-Menell (NeurIPS 2020) prove a stronger theorem.
 
 <a id="progress--已接通"></a>
 ## Progress
@@ -66,7 +67,7 @@ Investigate specific connections for new ends, institutions and reliable impleme
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-The constructed case distinguishes expansion, service, transfer and abrupt withdrawal; the same relevant relations can apply across intelligence types.
+The constructed case distinguishes expansion, service, transfer and abrupt withdrawal; the same relevant relations can apply across intelligence types. Its selection part restates the proxy problem: Goodhart (1975); Amodei et al., "Concrete Problems in AI Safety" (2016); Manheim and Garrabrant, "Categorizing Variants of Goodhart's Law" (2018); and Zhuang and Hadfield-Menell, "Consequences of Misaligned AI" (NeurIPS 2020), who prove that optimizing a proxy omitting attributes of a utility can, under resource constraints, drive the utility arbitrarily low. The laws add the responsive closure (the rest following a law reading through coupling, the closure drawn over time) and the pool (selection through the union of its members' couplings); they give no bound on that degradation and say nothing of which law training installs.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
@@ -113,6 +114,7 @@ The constructed case distinguishes expansion, service, transfer and abrupt withd
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T065352.292900Z/verification.json) | — |
+| review | [BECOMING-SIGNIFICANCE-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md) | — |
 
 Aliases: `Becoming.alignment_better_iff_betterAt (retired module)`, `Becoming.alignment_frontier_iff (retired module)`, `Becoming.Direction.narrowed_not_chosen`, `Becoming.Direction.widening_selected_by_pool`, `Becoming.Direction.grounded_widening_selected`
 
@@ -132,6 +134,7 @@ Aliases: `Becoming.alignment_better_iff_betterAt (retired module)`, `Becoming.al
 - 20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Rebound to the core (D7 of the twentieth review): the direction is a core schema on a web's moves under C read as widening and J1–J4, with its pool part and the Clearing instance (Direction.lean, bound to the R34 receipt), stated as laws; the hypotheses name the continuation condition for scope and C for order in place of the retired label G0; title restated structurally (was "AI alignment direction from living significance and the practical commitments"). The periphery module AlignmentDirection.lean stays bound as an instance by reading (its comparison is BasicPriority, which on a frame is Priority). The argument's claim and scope are unchanged. Also: Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added.
 - 20 October 2026, R35 (twentieth review, E8): proof references to superseded periphery modules (AlignmentDirection and Bridge) re-roled as provenance, with their declarations kept, and their bindings dropped; the current proof is the modules it still cites as proof (Becoming.Direction, Becoming.Frontier, Becoming.FrontierFrames, Becoming.Lexical and Becoming.Relevance). 2 aliases naming retired declarations are marked "(retired module)". The claim is unchanged.
 - 20 October 2026, R40 (study section 232): a law added, the direction from the evaluation row (Web.unrestricted_iff_grounds_beyond: on a connected web with living decided, the continuation condition is exactly the evaluation's grounds with significance for what does not live; Direction.grounded_widening_selected: from these, the scope of a widening and the pool's selection of its added admission), with its alias; the first hypothesis says where the condition enters. The schema's claim is unchanged; receipt 20261020T065352.292900Z.
+- 20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; one does_not_show item added, and the correspondence names the proxy-problem literature with what the laws add (the responsive closure, the pool) and what they do not. The claim and its premises are unchanged.
 - 2 rebinding entries (2026-10-17 to 2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](alignment-direction-under-widening.json).
 
 <a id="earlier-text--早期文本"></a>
@@ -142,4 +145,4 @@ Aliases: `Becoming.alignment_better_iff_betterAt (retired module)`, `Becoming.al
 
 </details>
 
-Documentary review UTC: `2026-10-13T23:00:00+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.
+Documentary review UTC: `2026-10-20T07:47:06+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.

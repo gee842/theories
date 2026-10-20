@@ -37,6 +37,7 @@
 - The witnesses show their stipulated endings consistent with balance, support and dependence; endings are derived in the general theorems.
 - It evaluates no clearer and does not infer that the clearer ought to protect others.
 - At which level harm is read is a reading (the whole, a weaker version within the system one is in, then the self), not given by this result.
+- Near-definitional: the limits are shown by constructed webs, and a requirement derived from wanting one's own continuation is a hypothetical imperative (Kant 1785).
 - **Counterexample:** The clearer meets every requirement derived here and ends another formation (Clearing.undermines_within_renewal). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
 - **Counterexample:** One way (Downstream.one_way) and the horizon of the want (Mortal.after_its_end; without it the others continue, Mortal.without_continues). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
 - **Counterexample:** Along dependence the center is not derived from the dynamics; transmission along every formed relation fails in the same witness (Clearing.center_not_derived). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean)
@@ -114,6 +115,7 @@ Ren's proposal says “all above does not require any axiom” and that the one 
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
+| review | [BECOMING-SIGNIFICANCE-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md) | — |
 
 Aliases: `Becoming.Downstream.one_way`, `Becoming.Mortal.after_its_end`, `Becoming.Mortal.without_continues`, `Becoming.Clearing.undermines_within_renewal`, `Becoming.Flow.FedBy`, `Becoming.Clearing.fedBy_source`, `Becoming.Clearing.clearer_not_living`, `Becoming.Clearing.center_not_derived`
 
@@ -135,6 +137,7 @@ Aliases: `Becoming.Downstream.one_way`, `Becoming.Mortal.after_its_end`, `Becomi
 - 18 October 2026, C2 (Becoming.Exhaustion): one way taking all that is given forms is stated in where-a-rising-take-ends: a take more than now from a bounded giving, so the next step was narrowed and the record linked. Before: next step "The level of harm (member, lineage, whole) on the witnesses; whether a want across generations passes its horizon; how taking all that is given forms (a stronger case of the meta-attractor); forced endings in these witnesses (quantifying over active); a witness still fed at every step with one source formation removed from the same world; the same limits on the whole-run reading.". The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Continuation.lean, Standpoints.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Continuation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Standpoints.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Dependence.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Dependence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.
+- 20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; one does_not_show item added. The claim and its premises are unchanged.
 - 3 rebinding entries (2026-10-10 to 2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derived-extent-limits.json).
 
 <a id="earlier-text--早期文本"></a>
@@ -146,4 +149,4 @@ Aliases: `Becoming.Downstream.one_way`, `Becoming.Mortal.after_its_end`, `Becomi
 
 </details>
 
-Documentary review UTC: `2026-10-16T18:25:05+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.
+Documentary review UTC: `2026-10-20T07:47:06+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.

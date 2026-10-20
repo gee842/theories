@@ -5,7 +5,7 @@
 
 `runaway-distance-uncoupled` · **recorded-checked** · theorem · F04 · [record](runaway-distance-uncoupled.json) · [register](../../../../RESULTS.md)
 
-> Every policy through the couplings, with the rest of the exchange fixed, that keeps its support leaves unused any larger stock coupled into it by threshold only; before the break, how far off the break is does not couple in.
+> Every policy through the couplings, with the rest of the exchange fixed, that keeps its support leaves unused any larger stock coupled into it by threshold only; for such a stock, how far off the break is does not couple in before the break.
 
 <a id="laws--规律"></a>
 ## Laws
@@ -31,6 +31,8 @@
 - The laws do not derive that a formation draws more than is renewed, wants to keep its support or forms a policy.
 - Loops and gain are not defined, so a runaway remains a reading; what is given here are the two theorems it rests on.
 - The raised world uses the same flow, which after the break need not be what the formation would do.
+- Near-definitional: the raised world is alike through the couplings because the stock is not among what couples in by level.
+- Holds because the stock is unobserved by hypothesis; where it is observed, a break can often be seen coming, as early-warning signals of critical transitions show (Scheffer et al., Nature 2009).
 - **Counterexample:** The rest being fixed is needed: where others respond to the stock itself, a higher stock can end the formation first (Attracting.higher_breaks_first), and T5 over policies fails. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
 
 **Standard boundaries:** Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · No ethical premise and no Lean axiom is used.
@@ -105,6 +107,7 @@ Ren's “wisdoms to avoid run away feedbacks”; testing-within-registration rea
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T073902.295130Z/verification.json) | — |
+| review | [BECOMING-SIGNIFICANCE-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md) | — |
 
 Aliases: `Becoming.Flow.PolicyThrough`, `Becoming.Flow.exchangeFollows_of_policy`, `Becoming.Flow.policy_keeps_difference`, `Becoming.Flow.policy_uses_after_failure`, `Becoming.Web.raise`, `Becoming.Web.alikeThrough_raise`, `Becoming.Web.break_not_bounded`, `Becoming.Web.observed_raise_couples`, `Becoming.SupportDrawn.break_uncoupled`, `runaway`, `失控`, `runaway feedback`, `失控的反馈`
 
@@ -128,6 +131,7 @@ Aliases: `Becoming.Flow.PolicyThrough`, `Becoming.Flow.exchangeFollows_of_policy
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Runaway.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Flow.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Dependence.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Dependence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.
+- 20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; the statement now carries the hypothesis that the stock couples in by threshold only, and two does_not_show items are added (near-definitional; early-warning signals where the stock is observed). The claim and its premises are unchanged.
 - 7 rebinding entries (2026-10-13 to 2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](runaway-distance-uncoupled.json).
 
 <a id="earlier-text--早期文本"></a>
@@ -138,4 +142,4 @@ Aliases: `Becoming.Flow.PolicyThrough`, `Becoming.Flow.exchangeFollows_of_policy
 
 </details>
 
-Documentary review UTC: `2026-10-14T15:20:00+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.
+Documentary review UTC: `2026-10-20T07:47:06+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.

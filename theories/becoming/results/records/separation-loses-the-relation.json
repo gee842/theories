@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-20T07:47:06+00:00",
   "statement": {
     "zh": "分别描述各部分恰在整体为矩形处给回整体；关系只由共同作用形成，在各自无损的律下持续，只由失去或共同作用结束；奇偶是诸对不给回的整体。",
     "en": "Describing the parts separately gives back the whole exactly where it is rectangular; a relation forms only by joint action, lasts under separate laws that lose nothing, and ends only by loss or joint action; parity is a whole its pairs do not give back."
@@ -119,8 +119,8 @@
     }
   ],
   "limitations": {
-    "zh": "关系只对两个部分的整体陈述，三个部分以奇偶为见证；哪些共同的律保持矩形没有刻画；耦合的结束只有一个见证；PartsDetermine 与 separation_faithful_iff 不是实例关系（两个部分的类型不同）；读法是 AI 的；不含伦理谓词。",
-    "en": "Relation is stated for wholes of two parts, with parity as the witness for three; which joint laws keep wholes rectangular is not characterized; a coupling ending a relation has one witness; PartsDetermine and separation_faithful_iff are not related as instance and law (the two parts have different types); the readings are the AI's; contains no ethical predicate."
+    "zh": "关系只对两个部分的整体陈述（矩形即乘积的标准判据），三个部分以奇偶为见证；哪些共同的律保持矩形没有刻画；耦合的结束只有一个见证；PartsDetermine 与 separation_faithful_iff 不是实例关系（两个部分的类型不同）；读法是 AI 的；不含伦理谓词。",
+    "en": "Relation is stated for wholes of two parts (rectangularity is the standard product criterion), parity witnessing three; which joint laws keep wholes rectangular is not characterized; a coupling ending a relation has one witness; PartsDetermine and separation_faithful_iff are not related as instance and law (the two parts have different types); the readings are the AI's; contains no ethical predicate."
   },
   "validation_scope": {
     "zh": "2026-10-14：Becoming.Description 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Description 的 53 项定理全部空依赖，其中含 separation_faithful_iff、separation_admits_extra、whole_not_in_pairs、evenBoxes_glued、evenBoxes_not_determined、Rectangular.image_of_separate、copy_relates、relation_persists、forgetting_unrelates与 coupling_relates_and_unrelates；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §94；独立审查的范围见同节。",
@@ -289,6 +289,12 @@
       "role": "receipt",
       "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
+      "role": "review",
+      "sha256": "1e07f9b0f6d13a4b8b6900db28676b9b7824cbeb3031d9c6e16caf2a6e4a3102",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -388,6 +394,10 @@
     {
       "en": "2026-10-20: 50 bookkeeping notes condensed from 2026-10-13 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/b738d863b458b867/separation-loses-the-relation.json and in git.",
       "zh": "2026-10-20：50 条记账性说明合并（2026-10-13 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/b738d863b458b867/separation-loses-the-relation.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; one limitations clause rewritten within the growth ratchet (this record is not in SA1's table; the match is LK1's judgment). The claim and its premises are unchanged.",
+      "zh": "2026年10月20日，LK1（研究第237节）：按意义审查（研究 SA1）的裁定指名最接近的先前结果，使本记录不被当作新发现来领头；在增长限制之内改写 limitations 的一句（本记录不在 SA1 的表中；这一对应是 LK1 的判断）。主张与其前提不变。"
     }
   ]
 }

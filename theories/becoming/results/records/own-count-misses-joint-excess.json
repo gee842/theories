@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
+  "reviewed_at_utc": "2026-10-20T07:47:06+00:00",
   "statement": {
     "zh": "各自在所给之内取用的形成，合起来可以超出；在自然数的量中，联合超出持续不过原有的。更新者依存于所更新者时，它终结更新与以其所需依存者，取用者以这样的需要依存时也在内。",
     "en": "Formations each taking within what is given can together exceed it; with natural-number amounts, joint excess cannot outlast what was held. Where renewers depend on what they renew, it ends the renewal and those depending at such a need, a taker among them where it so depends."
@@ -136,6 +136,11 @@
       "zh": "不说哪个取用者应当减少。",
       "en": "It does not say which taker ought to take less.",
       "kind": "non-implication"
+    },
+    {
+      "zh": "重述公地悲剧与过冲（Lloyd 1833；Hardin 1968；Meadows 等 1972）；规律是自然数上近乎定义的算术。",
+      "en": "Restates the tragedy of the commons and overshoot (Lloyd 1833, Hardin 1968, Meadows and others 1972); the laws are near-definitional arithmetic over natural numbers.",
+      "kind": "correspondence"
     }
   ],
   "counterexamples": [
@@ -399,6 +404,12 @@
       "role": "receipt",
       "sha256": "790a8973dbabe58f9bc5f4c27d39589c8827b6fab3fe08a8d342f6ef02bca4a8",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
+      "role": "review",
+      "sha256": "1e07f9b0f6d13a4b8b6900db28676b9b7824cbeb3031d9c6e16caf2a6e4a3102",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -472,6 +483,10 @@
     {
       "en": "2026-10-20: 58 bookkeeping notes condensed from 2026-10-10 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/eed0a88ecc23d2a1/own-count-misses-joint-excess.json and in git.",
       "zh": "2026-10-20：58 条记账性说明合并（2026-10-10 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/eed0a88ecc23d2a1/own-count-misses-joint-excess.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; one does_not_show item added. The claim and its premises are unchanged.",
+      "zh": "2026年10月20日，LK1（研究第237节）：按意义审查（研究 SA1）的裁定指名最接近的先前结果，使本记录不被当作新发现来领头；增加一条 does_not_show。主张与其前提不变。"
     }
   ],
   "text_versions": [

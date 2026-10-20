@@ -12,7 +12,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-13T21:30:54.975650+00:00",
+  "reviewed_at_utc": "2026-10-20T07:47:06+00:00",
   "claim": {
     "zh": "在确定的律 next 之下，从 s 出发的轨道从某步起带着满足的目标停息，恰当它到达一个 next 不变、满足目标的状态（Law.rests_iff）；在这样的状态满足的目标此后每步都满足（Law.fixed_rests）。“比现在更多”，即自身的一个量 q 跨过一步上升（MoreThanNow），只由变化满足（more_not_at_rest、Law.more_never_rests）；每步都满足时任意两个较晚的步之间 q 都上升（more_rises），所以每个配置都是新的（more_new），没有列表容纳它们（more_needs_open，unlisted_of_new 的实例）；往上数满足它（succ_more）。“高于一切他者”，即其他每个寻求者的量都低于自己的（AboveAll），在一个状态至多被一个寻求者满足（aboveAll_unique、aboveAll_not_two），所以在任何律之下，没有律所不变的状态对两个寻求者都满足它（Law.aboveAll_never_rests）。所立者每步被列出（Web.StandingCensus）时，在任意晚处上升的条件，需要在任意晚处有所立者不衰减的步（Flow.more_needs_unrun，由 Flow.change_recurs_iff）；所立者从某步起每步衰减时，没有条件在任意晚处上升（Flow.more_exhausted）。不用 Lean 公理。",
     "en": "Under a determined law next, the orbit from s comes to rest with its target met from some step on exactly when it reaches a state next leaves unchanged that meets the target (Law.rests_iff); a target met at such a state is met at every later step (Law.fixed_rests). More than now, a quantity q of one's own rising across the step (MoreThanNow), is met only by change (more_not_at_rest, Law.more_never_rests); met at every step, q rises between any two later steps (more_rises), so every configuration is new (more_new) and no list holds them (more_needs_open, an instance of unlisted_of_new); counting on meets it (succ_more). Above all others, every other seeker's quantity below one's own (AboveAll), is met at a state by at most one seeker (aboveAll_unique, aboveAll_not_two), so under any law no state left unchanged meets it for two seekers (Law.aboveAll_never_rests). Where what stands is listed at each step (Web.StandingCensus), a condition rising at arbitrarily late steps needs, at arbitrarily late steps, steps across which what stands does not run down (Flow.more_needs_unrun, from Flow.change_recurs_iff); where what stands runs down at every step from some step on, no condition rises at arbitrarily late steps (Flow.more_exhausted). No Lean axiom is used."
@@ -153,8 +153,8 @@
     }
   ],
   "limitations": {
-    "zh": "目标怎样形成、怎样修正，寻求者追求其目标，实际形成持有哪些目标，都不推出；劫持（B5）另在 target-capture 中陈述；rests_iff 只对确定的律；B2 只说上升不再复现，耗尽终结寻求者自身没有陈述；B1 的计数是初等的，实质在于把它们陈述为展开之中的目标；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
-    "en": "How a target forms or is revised, that a seeker pursues it, and which targets actual formations hold are not derived; hijacking (B5) is stated separately, in target-capture; rests_iff is for determined laws only; B2 says only that the rises stop recurring, not that exhaustion ends the seekers themselves; the counting of B1 is elementary, and the substance is in stating it of targets within the unfolding; the readings are the AI's, adopted on Ren's delegation; contains no ethical predicate."
+    "zh": "目标怎样形成、怎样修正，寻求者追求其目标，实际形成持有哪些目标，都不推出；劫持（B5）另在 target-capture 中陈述；rests_iff 只对确定的律；B2 只说上升不再复现，耗尽终结寻求者自身没有陈述；B1 是初等的（严格最大者至多一个；衰减下的停息是排序函数的终止）；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
+    "en": "How a target forms or is revised, that a seeker pursues it, and which targets actual formations hold are not derived; hijacking (B5) is stated separately, in target-capture; rests_iff is for determined laws only; B2 says only that the rises stop recurring, not that exhaustion ends the seekers themselves; B1 is elementary (a strict maximum holds of one; rest under run-down is ranking-function termination); the readings are the AI's, adopted on Ren's delegation; contains no ethical predicate."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Seeking 的 13 项定理全部空依赖，其中含 Law.rests_iff、more_needs_open、aboveAll_unique、Flow.more_needs_unrun 与 Flow.more_exhausted；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §83；未作独立审查；需要如第十八次审查的审查（D45 (4)）。",
@@ -336,6 +336,12 @@
       "role": "receipt",
       "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
+      "role": "review",
+      "sha256": "1e07f9b0f6d13a4b8b6900db28676b9b7824cbeb3031d9c6e16caf2a6e4a3102",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -456,6 +462,10 @@
     {
       "en": "2026-10-20: 62 bookkeeping notes condensed from 2026-10-12 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/c3b164b26b78b169/seeking-boundary.json and in git.",
       "zh": "2026-10-20：62 条记账性说明合并（2026-10-12 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/c3b164b26b78b169/seeking-boundary.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; one limitations clause rewritten within the growth ratchet. The claim and its premises are unchanged.",
+      "zh": "2026年10月20日，LK1（研究第237节）：按意义审查（研究 SA1）的裁定指名最接近的先前结果，使本记录不被当作新发现来领头；在增长限制之内改写 limitations 的一句。主张与其前提不变。"
     }
   ]
 }

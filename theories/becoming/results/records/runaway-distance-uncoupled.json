@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-14T15:20:00+00:00",
+  "reviewed_at_utc": "2026-10-20T07:47:06+00:00",
   "statement": {
-    "zh": "每个经耦合、其余交换固定的策略保持支持就永不动用只经阈耦合入它的较多储量；断裂之前，断裂还有多远不耦合入。",
-    "en": "Every policy through the couplings, with the rest of the exchange fixed, that keeps its support leaves unused any larger stock coupled into it by threshold only; before the break, how far off the break is does not couple in."
+    "zh": "每个经耦合、其余交换固定的策略保持支持就永不动用只经阈耦合入它的较多储量；对这样的储量，断裂之前，断裂还有多远不耦合入。",
+    "en": "Every policy through the couplings, with the rest of the exchange fixed, that keeps its support leaves unused any larger stock coupled into it by threshold only; for such a stock, how far off the break is does not couple in before the break."
   },
   "laws": [
     {
@@ -109,6 +109,16 @@
       "zh": "抬高的世界用同一个流，断裂之后它不必是形成所会做的。",
       "en": "The raised world uses the same flow, which after the break need not be what the formation would do.",
       "kind": "scope"
+    },
+    {
+      "zh": "近乎定义：抬高的世界经耦合无别，因为存量不在经水平耦合入者之中。",
+      "en": "Near-definitional: the raised world is alike through the couplings because the stock is not among what couples in by level.",
+      "kind": "scope"
+    },
+    {
+      "zh": "成立是因为按假设存量不被观察；存量被观察之处，断裂常可预先看到，如临界转变的早期预警信号所示（Scheffer et al., Nature 2009）。",
+      "en": "Holds because the stock is unobserved by hypothesis; where it is observed, a break can often be seen coming, as early-warning signals of critical transitions show (Scheffer et al., Nature 2009).",
+      "kind": "correspondence"
     }
   ],
   "counterexamples": [
@@ -430,6 +440,12 @@
       "role": "receipt",
       "sha256": "790a8973dbabe58f9bc5f4c27d39589c8827b6fab3fe08a8d342f6ef02bca4a8",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
+      "role": "review",
+      "sha256": "1e07f9b0f6d13a4b8b6900db28676b9b7824cbeb3031d9c6e16caf2a6e4a3102",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -556,6 +572,10 @@
     {
       "en": "2026-10-20: 61 bookkeeping notes condensed from 2026-10-11 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/379901eb940d32f4/runaway-distance-unregistered.json and in git.",
       "zh": "2026-10-20：61 条记账性说明合并（2026-10-11 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/379901eb940d32f4/runaway-distance-unregistered.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; the statement now carries the hypothesis that the stock couples in by threshold only, and two does_not_show items are added (near-definitional; early-warning signals where the stock is observed). The claim and its premises are unchanged.",
+      "zh": "2026年10月20日，LK1（研究第237节）：按意义审查（研究 SA1）的裁定指名最接近的先前结果，使本记录不被当作新发现来领头；陈述现在带上存量只经阈耦合入的假设，并增加两条 does_not_show（近乎定义；存量被观察处的早期预警信号）。主张与其前提不变。"
     }
   ],
   "text_versions": [

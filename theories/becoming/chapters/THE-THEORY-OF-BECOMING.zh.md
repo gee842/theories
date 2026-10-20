@@ -46,6 +46,8 @@
 9. *意义不在动力学中*（§5、§6.4–§6.5）。动力学的律不确定意义；条件是自身的预设加上不变的一步，它不排序任何东西。
 10. *回路*（§2.6）。能到达的最大差别比每个多项式增长得快，只经由持续的耦合回路，而这样的回路不必失控。
 
+这十项都不是新的数学：每项或近乎定义，或是已知结果在本理论词汇中的重述；[与已知结果的关系](#relation-to-known-results)给出每项最接近的先前结果。
+
 **两个目标，分开。** *整体的演绎必然性*：整体的各规定是同一展开中内在相关的环节，不加实质前提。对每个这样表示的世界成立的定理并不因此是必然的；这一目标仍开放（§8.1 第 1 与第 12 项）。*整体中的伦理方向*：生生（整体中的生及其继续生成）怎样获得规范意义：在延续条件之下经 C，连同公开的实践前提。在其前提下这一目标在一个薄的意义上完成：前提已陈述，由它们推出的已检查，推出的很多是对定义的展开（`Web.paths_comparison_widens`、`livingSignificance_of_unrestricted`）；两个前提的根据仍开放。二者不能互相替代：无伦理公理不等于无实质前提，公理报告为空也不等于没有前提。尚未回答的反驳在 §8.9。
 
 **范围。** 理论计入生成／变化的整个空间，生成的与退化的一样。生成是其中一个部分，不是每个变化都须满足的条件；退化、终结与混合的变化在同一展开中，不被改称为生成（[根基范围](BECOMING-FOUNDATION.md#whole-and-manifold)）。
@@ -244,9 +246,11 @@
 <a id="the-boundary-condition-for-无明"></a>
 ### 3.4 寻求、无明与选择
 
-**要点。** 寻求是朝向在某状态被满足之目标的活动，目标在展开之内形成。目标只在律不改变的状态停息；“比现在更多”需要开放的世界，“高于其他一切”对两者永不停息。损失只经耦合入者到达寻求者，经选择者耦合的选择恰及于耦合入者：在此之外者被同样选择，提高耦合入者从其外汲取，断裂有多远不耦合入。
+**要点。** 寻求是朝向在某状态被满足之目标的活动，目标在展开之内形成。目标只在律不改变的状态停息；“比现在更多”需要开放的世界，“高于其他一切”对两者永不停息。损失只经耦合入者到达寻求者，经选择者耦合的选择恰及于耦合入者：在此之外者被同样选择，提高耦合入者从其外汲取；所汲取的存量只经阈耦合入时，断裂有多远不耦合入。
 
 **定理。** 本节陈述 `Law.rests_iff`、`more_needs_open`、`Law.aboveAll_never_rests`、`Web.break_not_bounded`、`Web.selects_alike_iff`、`Flow.favours_reaching_beyond`；完整陈述见[英文版 §3.4](THE-THEORY-OF-BECOMING.md#34-seeking-无明-and-selection)。
+
+`Web.break_not_bounded` 成立，是因为按假设存量不被观察；存量被观察之处，断裂常可预先看到：早期预警信号的文献表明，接近临界转变的系统经临界慢化显出征兆（Scheffer et al., "Early-warning signals for critical transitions", *Nature* 461, 2009），这正是该假设所排除的情形。
 
 记录：[seeking-boundary](../results/records/seeking-boundary.md)、[the-boundary-of-enough-under-undetermined-laws](../results/records/the-boundary-of-enough-under-undetermined-laws.md)、[when-the-runs-of-a-process-settle](../results/records/when-the-runs-of-a-process-settle.md)、[the-last-change-of-a-run](../results/records/the-last-change-of-a-run.md)、[target-capture](../results/records/target-capture.md)、[runaway-distance-uncoupled](../results/records/runaway-distance-uncoupled.md)、[selection-through-couplings](../results/records/selection-through-couplings.md)、[selection-through-a-model-of-the-options](../results/records/selection-through-a-model-of-the-options.md)、[the-gap-for-ones-own-act](../results/records/the-gap-for-ones-own-act.md)、[raising-what-couples-in-draws-from-beyond](../results/records/raising-what-couples-in-draws-from-beyond.md)、[selection-under-registration-revision](../results/records/selection-under-registration-revision.md)、[consequence-revised-reference-plan](../results/records/consequence-revised-reference-plan.md)、[recurring-reference-revision](../results/records/recurring-reference-revision.md)。
 
@@ -437,6 +441,8 @@
 **要点。** 选择是关于水平历史的任何主张（哪些被保留、奖励、复制或被训练朝向），当经一个形成的耦合无别的历史被同样选择时，它经这些耦合。这时它恰及于耦合入选择者者，经同样的耦合更用力地优化不会及于更远；选择能分开者只随耦合入者增长。
 
 **定理。** 本节陈述 `Web.selects_alike_iff`、`Training.fit_right_iff`、`apart_only_downstream`；完整陈述见[英文版 §7.1](THE-THEORY-OF-BECOMING.md#71-what-a-selection-reaches)。
+
+**代理问题的先前表述。** 经代理的选择对代理所不记录者不见，这是已知的：Goodhart 定律（Goodhart 1975）；副作用与奖励投机（Amodei, Olah, Steinhardt, Christiano, Schulman and Mané, "Concrete Problems in AI Safety", 2016）；Goodhart 定律的诸变体（Manheim and Garrabrant, "Categorizing Variants of Goodhart's Law", 2018）；Zhuang and Hadfield-Menell（"Consequences of Misaligned AI", NeurIPS 2020）证明了更强的结果：在共享资源约束下，优化只涉及效用部分属性的代理，可以使效用任意低，并给出何时如此的条件。这里的规律加了两点。*回应的闭包*：不见不只在其余交换固定时成立，在其余者遵循一个经耦合读取的律时也成立（`Flow.act_unselected`、`ExchangeLaw.response_not_fixed_by_coupling`），其边界是经两个流、跨时间画出的耦合闭包，不是选择者此刻观察到的，所以闭包之内的后果确实返回。*合起来的耦合*：一个池经其成员耦合的并（它们等价关系的交，如分布式知识）选择，分开任一成员所分开者，其缺口在成员闭包的并处（`Web.pool_adds`、`Flow.unselected_beyond_pool`）。它们没有加上：优化使其外者降低多少的界（那里 Zhuang 与 Hadfield-Menell 的定理更强）、训练装入哪个律（§7.7），或对齐的机制；`Web.selects_alike_iff` 按构造成立，实质的前提是某个优化者恰经这些耦合选择，这是给出的（[与已知结果的关系](#relation-to-known-results)第 6 行）。
 
 ### 7.2 选择所不能及的：对齐中的无明
 
@@ -791,6 +797,28 @@
 | [生成与变化之论：完整根基目标](../results/records/theory-of-becoming-foundation.md) | 开放目标 | 见记录 | §11 |
 | [核心作为智慧之根的目标](../results/records/wisdom-root.md) | 开放目标 | 见记录 | §11 |
 <!-- theorem-map:end -->
+
+<a id="relation-to-known-results"></a>
+## 与已知结果的关系
+
+**要点。** 十项中心结果都不是新的数学。每项或近乎定义（几步展开本理论的定义），或是已知结果在本理论词汇中的重述；下表给出每项最接近的先前结果。属于这项工作自己的是制品：一个模型，其中每个前提都被指名，并有满足与不满足的见证；伦理的范围与次序分开；守恒、选择与比较用同一套词汇。裁定来自一次 AI 审查，它对照所知的文献读了每条 Lean 陈述（[意义与先前工作审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md#ranked-table)，2026 年 10 月 20 日）；检索不是穷尽的，日后找到更早的陈述会降低相应的行。
+
+| 中心结果 | 最接近的先前结果 | 本理论加了什么 | 裁定 |
+|---|---|---|---|
+| 1. 一次变化，三种读法；同步（§1.2） | 人口平衡方程（末 = 初 + 进入 − 离开）；二值序列的上穿与下穿交替；交换的局部步与次序无关，Mazurkiewicz 迹理论（1977） | 三种读法陈述为一次变化；生起复现而终止不复现的无限族（`World.separate`） | 近乎定义 |
+| 2. 返回与吸引（§1.2） | 有限集的单射自映射是置换，其轨道是环（有限的 Poincaré 返回）；不可逆即非单射，Landauer（1961）；保存历史使任何计算可逆，Bennett, "Logical Reversibility of Computation"（1973） | 不用可判定相等证明的鸽巢原理 | 已知结果的重述 |
+| 3. 前提划分部分（§1.3） | 以反模型证明公理的独立；构造性逆数学的校准（Bishop 1967；Bridges and Richman 1987；Ishihara），其中求至多变化一次之序列此后不变的那一步是 LPO 的典型实例 | 一个模型的完整前提账：每个前提由一个构造的世界满足、由另一个不满足，公理报告为空 | 作为制品是新的；每条定理是已知技术 |
+| 4. 停息需要最小损失（§1.3） | 以良基序中的排序函数证明终止（Turing 1949；Floyd 1967）；Lyapunov 函数（1892）；阿基米德性质；折半的见证是 Zeno 的二分 | 自然数的规律作为阿基米德规律的实例，以及稠密的反例，都是构造性的 | 已知结果的重述 |
+| 5. 能形成者的次序（§6.1） | 以包含关系排列机会集及其单调性公理，Pattanaik and Xu（1990）；能力集，Sen（1985）；余量规律是把平衡方程代入接纳不等式 | 守恒方程与机会集比较连在一起，使关闭是超出余量的净汲取 | 近乎定义 |
+| 6. 闭包与选择（§2.6、§3.4、§7） | 观察的函数在观察不记录的变化下不变（Blackwell 1953）；对非祖先的干预（Pearl, *Causality*, 2000）；分布式知识是划分的交（Fagin, Halpern, Moses and Vardi 1995）；对齐方面是代理问题（§7.1） | 回应的闭包（其余者遵循经耦合读取的律，跨时间）与池的形式 | 已知结果的重述；`Web.selects_alike_iff` 按构造成立 |
+| 7. 联合超出与相对位置（§2.3、§4.3） | 公地悲剧（Lloyd 1833；Hardin 1968）；过冲与崩溃（Meadows et al. 1972；Catton 1980）；位置性物品（Hirsch 1976；Frank 1985） | 数学上没有；门控的终结与其他规律陈述在同一模型中 | 近乎定义 |
+| 8. 学习与辨认（§3.3） | Hume 的归纳问题；Goodman 的 grue（1955）；没有免费午餐（Wolpert 1996）；可归并性（Kemeny and Snell 1960）；Fine and Wilf（1965）与 Moore（1956）关于一致须持续多久的界；极限中的辨认（Gold 1967；Putnam 1965） | 构造性地证明的界；最小界外推的确切最早一步 | 已知结果的重述 |
+| 9. 意义不在动力学中；范围与次序（§5、§6.4–§6.5） | 是与应当之间的鸿沟（Hume 1739）；开放问题论证（Moore 1903）；从自身能动性出发的普遍化，Gewirth 的类属一致原则（1978），以及 Hare（1963、1981）、Nagel（1970）、Sidgwick（1874）；支配序的不完全（Sen 1970） | 覆盖假设被指名为前提；范围与次序分开，并证明条件单独不排序任何东西 | 近乎定义；已知论证的重述；这一区分是澄清 |
+| 10. 回路（§2.6） | 有向图无环恰当其邻接矩阵幂零，此时 (I + N)ᵗ 是 t 的多项式；正整数权的环使谱半径大于一（Perron–Frobenius）；偏差放大的回路（Maruyama 1963） | 对整数的量与时间表的构造性陈述；稀疏时间表的情形 | 已知结果的重述 |
+
+十项之外的结果：从其外的供给与位置／迁移网的实例是排序函数论证，严格正的 P-次不变量界定每个点火序列（Lautenbach 1975；Memmi and Roucairol 1980；Murata 1989），所以网显示的是与已知理论一致，不是对一般性的独立支持；热力学对应重述持续的结构需要通量（Schrödinger 1944；Prigogine 1977）与 Landauer 的下界；调节重述无差拍控制、有延迟的扰动抑制（Dahleh and Pearson 1987）与必要多样性（Ashby 1956）；选择项是 Price（1970）的；`Web.break_not_bounded` 成立是因为按假设存量不被观察，存量被观察之处断裂可以预先看到（§3.4）。
+
+**留下什么。** 三样，都不是发现：前提账及其见证与校准（方法上的；§0、§8.6）；范围与次序分开的伦理，其中普遍化的一步是 Gewirth 的，C 是机会集文献的单调性（§6.4–§6.5）；以及一套词汇，守恒的记账、受观察限制的选择与机会集的比较在其中一起陈述。会改变这些裁定的是：专家不能从定义预见的定理，对实际系统的、可能失败而未失败的预测，或从比文献已有者更弱的东西推出一个前提。
 
 <a id="8-开放纲领--open-programme"></a>
 ## 8. 开放纲领

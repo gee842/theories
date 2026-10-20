@@ -12,7 +12,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-13T21:30:54.975650+00:00",
+  "reviewed_at_utc": "2026-10-20T07:47:06+00:00",
   "claim": {
     "zh": "一个亲代家族的后代计数（offspringCount）在每个亲代至少（至多）留下若干后代时有相应的界（le_offspringCount、offspringCount_le）。带着目标的亲代 ms 各留下至少 a 个后代、其他亲代 es 各至多 b 个、b ≤ a 时，|ms|·（es 的后代）≤（ms 的后代）·|es|（share_not_lower）；b < a 且两类都在时严格小于（share_rises）。后代带着亲代的目标时，这就是目标在后代中的份额不低于、高于它在亲代中的份额。世系是一次开始而立，即一次上升；所立者每步被列出（Web.StandingCensus）时，任意晚的世系需要任意晚处所立者不衰减的步（Flow.descent_needs_unrun）；所立者从某步起每步衰减时世系不再复现（Flow.descent_exhausted）。在状态与规则的配置上，下一配置取决于规则而不取决于状态时，规则相同的两个配置从下一步起轨道相同（Law.perturbation_reabsorbed）；Captured 中状态随规则、规则保持自身，扰动过的状态立即回来，扰动过的规则改变结果（Captured.state_perturbation_returns、Captured.rule_perturbation_changes）。乘法结合律以递归证明（mul_assoc_nat），因为前导的 Nat.mul_assoc 用 propext。不用 Lean 公理。",
     "en": "The offspring of a family of parents, counted (offspringCount), are bounded where each parent leaves at least or at most so many (le_offspringCount, offspringCount_le). Carriers of a target ms each leaving at least a offspring and the other parents es each at most b, with b ≤ a, |ms|·(es's offspring) ≤ (ms's offspring)·|es| (share_not_lower), strictly where b < a and both kinds are present (share_rises). Where the offspring carry their parents' target, this is the target's share among the offspring not below, or above, its share among the parents. A descent is a coming to stand, so a rise; where what stands is listed at each step (Web.StandingCensus), descent at arbitrarily late steps needs steps at arbitrarily late times across which what stands does not run down (Flow.descent_needs_unrun), and where it runs down at every step from some step on, descent does not recur (Flow.descent_exhausted). On configurations of a state and a rule, where the next configuration depends on the rule and not on the state, two configurations with the same rule have the same orbit from the next step on (Law.perturbation_reabsorbed); in Captured the state follows the rule and the rule keeps itself, a perturbed state returns at once and a perturbed rule changes the outcome (Captured.state_perturbation_returns, Captured.rule_perturbation_changes). Associativity is proved by recursion (mul_assoc_nat), since the prelude's Nat.mul_assoc uses propext. No Lean axiom is used."
@@ -151,8 +151,8 @@
     }
   ],
   "limitations": {
-    "zh": "多取者留下更多后代、后代带着亲代的目标、胜者塑造规则，都是给出的，不推出；份额定理是二值目标的计数；perturbation_reabsorbed 的条件（下一配置不取决于状态）是强的，规则怎样被胜者改写而仍握住结果没有一般地陈述；Captured 是最小的见证；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
-    "en": "That taking more yields more offspring, that offspring carry their parents' target and that winners shape the rule are supplied, not derived; the share theorems are the counting for a two-valued target; the condition of perturbation_reabsorbed (the next configuration not depending on the state) is strong, and how a rule rewritten by its winners still holds the outcome is not stated in general; Captured is a minimal witness; the readings are the AI's, adopted on Ren's delegation; contains no ethical predicate."
+    "zh": "多取者留下更多后代、后代带着亲代的目标、胜者塑造规则，都是给出的，不推出；份额定理是二值目标的 Price 选择差（1970）；perturbation_reabsorbed 的条件（下一配置不取决于状态）是强的，规则怎样被胜者改写而仍握住结果没有一般地陈述；Captured 是最小的见证；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
+    "en": "That taking more yields more offspring, that offspring carry their parents' target and that winners shape the rule are supplied, not derived; the share theorems are Price's selection differential (1970) for a two-valued target; the condition of perturbation_reabsorbed (the next configuration not depending on the state) is strong, and how a rule rewritten by its winners still holds the outcome is not stated in general; Captured is a minimal witness; the readings are the AI's, adopted on Ren's delegation; contains no ethical predicate."
   },
   "validation_scope": {
     "zh": "2026-10-14：Becoming.Capture、Becoming.Mechanism 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Capture 的 11 项定理全部空依赖，其中含 share_not_lower、share_rises、Flow.descent_exhausted 与 Law.perturbation_reabsorbed；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §83；未作独立审查；需要如第十八次审查的审查（D45 (4)）。",
@@ -368,6 +368,12 @@
       "role": "receipt",
       "sha256": "790a8973dbabe58f9bc5f4c27d39589c8827b6fab3fe08a8d342f6ef02bca4a8",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
+      "role": "review",
+      "sha256": "1e07f9b0f6d13a4b8b6900db28676b9b7824cbeb3031d9c6e16caf2a6e4a3102",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -513,6 +519,10 @@
     {
       "en": "2026-10-20: 63 bookkeeping notes condensed from 2026-10-12 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/ce9b5dc1d6dda8f2/target-capture.json and in git.",
       "zh": "2026-10-20：63 条记账性说明合并（2026-10-12 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/ce9b5dc1d6dda8f2/target-capture.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; one limitations clause rewritten within the growth ratchet. The claim and its premises are unchanged.",
+      "zh": "2026年10月20日，LK1（研究第237节）：按意义审查（研究 SA1）的裁定指名最接近的先前结果，使本记录不被当作新发现来领头；在增长限制之内改写 limitations 的一句。主张与其前提不变。"
     }
   ]
 }

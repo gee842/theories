@@ -34,6 +34,7 @@
 - The joint count binds only a want that outlasts what the condition holds, and a taker ends with it only where it depends at such a need.
 - No instance theorem joins this result to the periphery's wear law; the link is interpretive.
 - It does not say which taker ought to take less.
+- Restates the tragedy of the commons and overshoot (Lloyd 1833, Hardin 1968, Meadows and others 1972); the laws are near-definitional arithmetic over natural numbers.
 - **Counterexample:** Each within what is given is not enough to continue: in Exceeding each taker is within what is given and all three end after two steps (Exceeding.all_end); with one taker the same renewer and taker continue (Alone.all_continue). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
 - **Counterexample:** A description in which joint excess goes on for ever is the flow of no balanced web: in Pair no web balances the flow (Pair.no_web). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
 
@@ -98,6 +99,7 @@ Ren's proposal says that the self can become rigid and “has to count the dynam
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T073902.295130Z/verification.json) | — |
+| review | [BECOMING-SIGNIFICANCE-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md) | — |
 
 Aliases: `Becoming.Flow.WithinOwn`, `Becoming.Flow.WithinJoint`, `Becoming.Flow.joint_keeps`, `Becoming.Flow.excess_lowers`, `Becoming.Flow.excess_bounded`, `Becoming.Flow.stays_below`, `Becoming.Flow.ends_below`, `Becoming.Flow.joint_excess_ends`, `Becoming.Pair.no_web`, `Becoming.Exceeding.all_end`, `Becoming.Alone.all_continue`
 
@@ -116,6 +118,7 @@ Aliases: `Becoming.Flow.WithinOwn`, `Becoming.Flow.WithinJoint`, `Becoming.Flow.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
 - 20 October 2026, R25 (the twentieth review's step 1, docs now): Its statement now says that the amounts are natural numbers (twentieth review D5).
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Continuation.lean, Flow.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Continuation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
+- 20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; one does_not_show item added. The claim and its premises are unchanged.
 - 2 rebinding entries (2026-10-13 to 2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](own-count-misses-joint-excess.json).
 
 <a id="earlier-text--早期文本"></a>
@@ -127,4 +130,4 @@ Aliases: `Becoming.Flow.WithinOwn`, `Becoming.Flow.WithinJoint`, `Becoming.Flow.
 
 </details>
 
-Documentary review UTC: `2026-10-16T18:25:05+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.
+Documentary review UTC: `2026-10-20T07:47:06+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.

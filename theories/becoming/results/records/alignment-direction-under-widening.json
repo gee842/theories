@@ -8,7 +8,7 @@
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-13T23:00:00+00:00",
+  "reviewed_at_utc": "2026-10-20T07:47:06+00:00",
   "statement": {
     "zh": "既有实践原则在有根据的 AI 对应下支持生成、修订、交接与适当结束，并保留能力增长的真实好处和损失。",
     "en": "With warranted AI correspondence, the practical principles support generative development, revision, transfer and appropriate ending while retaining capability growth’s real benefits and losses."
@@ -24,8 +24,8 @@
     }
   ],
   "correspondence": {
-    "zh": "构造案例区分增长、服务、转移与突然撤出；同样相关关系可跨智能类型适用。",
-    "en": "The constructed case distinguishes expansion, service, transfer and abrupt withdrawal; the same relevant relations can apply across intelligence types."
+    "zh": "构造案例区分增长、服务、转移与突然撤出；同样相关关系可跨智能类型适用。其选择部分重述代理问题：Goodhart（1975）；Amodei et al.（2016）；Manheim and Garrabrant（2018）；Zhuang and Hadfield-Menell（NeurIPS 2020）证明，在资源约束下优化省略效用某些属性的代理可使效用任意低。规律加了回应的闭包（其余者遵循经耦合读取的律，闭包跨时间画出）与池（经成员耦合之并的选择）；它们不给出那种降低的界，也不说训练装入哪个律。",
+    "en": "The constructed case distinguishes expansion, service, transfer and abrupt withdrawal; the same relevant relations can apply across intelligence types. Its selection part restates the proxy problem: Goodhart (1975); Amodei et al., \"Concrete Problems in AI Safety\" (2016); Manheim and Garrabrant, \"Categorizing Variants of Goodhart's Law\" (2018); and Zhuang and Hadfield-Menell, \"Consequences of Misaligned AI\" (NeurIPS 2020), who prove that optimizing a proxy omitting attributes of a utility can, under resource constraints, drive the utility arbitrarily low. The laws add the responsive closure (the rest following a law reading through coupling, the closure drawn over time) and the pool (selection through the union of its members' couplings); they give no bound on that degradation and say nothing of which law training installs."
   },
   "canonical_source": "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
   "aliases": [
@@ -132,6 +132,11 @@
       "en": "A World's exchanges read as the family of moves, or the periphery case as a formal core instance.",
       "zh": "World 的交换读作这一族动作，或外围案例作为核心中的形式实例。",
       "kind": "scope"
+    },
+    {
+      "zh": "代理问题之外没有关于对齐的结果：选择的规律定性地陈述它，Zhuang and Hadfield-Menell（NeurIPS 2020）证明了更强的定理。",
+      "en": "No result on alignment beyond the known proxy problem: the selection laws state it qualitatively, and Zhuang and Hadfield-Menell (NeurIPS 2020) prove a stronger theorem.",
+      "kind": "correspondence"
     }
   ],
   "progress": [
@@ -331,6 +336,12 @@
       "role": "receipt",
       "sha256": "80d321d88cc38999b97571eff6114af18b9fff9ec2a0dbf0675eef5550787d0f",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
+      "role": "review",
+      "sha256": "1e07f9b0f6d13a4b8b6900db28676b9b7824cbeb3031d9c6e16caf2a6e4a3102",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -432,6 +443,10 @@
     {
       "en": "20 October 2026, R40 (study section 232): a law added, the direction from the evaluation row (Web.unrestricted_iff_grounds_beyond: on a connected web with living decided, the continuation condition is exactly the evaluation's grounds with significance for what does not live; Direction.grounded_widening_selected: from these, the scope of a widening and the pool's selection of its added admission), with its alias; the first hypothesis says where the condition enters. The schema's claim is unchanged; receipt 20261020T065352.292900Z.",
       "zh": "2026年10月20日，R40（研究第232节）：增加一条规律，从评价一行出发的方向（Web.unrestricted_iff_grounds_beyond：在连通、生与否可判定的网上，延续条件恰是评价的根据加上不生者的意义；Direction.grounded_widening_selected：由此得扩大的范围及合起来之耦合对其所增接纳的选择），并加其别名；第一条假设说明条件从何处进入。模式的主张不变；回执 20261020T065352.292900Z。"
+    },
+    {
+      "en": "20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; one does_not_show item added, and the correspondence names the proxy-problem literature with what the laws add (the responsive closure, the pool) and what they do not. The claim and its premises are unchanged.",
+      "zh": "2026年10月20日，LK1（研究第237节）：按意义审查（研究 SA1）的裁定指名最接近的先前结果，使本记录不被当作新发现来领头；增加一条 does_not_show，对应中指名代理问题的文献，以及规律加了什么（回应的闭包、池）与没有加什么。主张与其前提不变。"
     }
   ],
   "text_versions": [

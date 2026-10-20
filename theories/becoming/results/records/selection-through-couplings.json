@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-14T12:10:00+00:00",
+  "reviewed_at_utc": "2026-10-20T07:47:06+00:00",
   "statement": {
     "zh": "两段历史被每个经选择者之耦合的选择选得相同，恰当它们经这些耦合无别。其余交换固定时选择在耦合闭包之外不见；所及闭包之内、耦合闭包之外的终结不被选出，合起来的耦合选出它；伸出而抬高耦合入者的流被选中。",
     "en": "Every selection through a selector's couplings selects histories alike exactly when they are alike through them. With the rest fixed, selection is blind beyond the coupling closure; pooled couplings select an ending beyond it within reach, and a flow raising what couples in from beyond is selected."
@@ -193,6 +193,11 @@
       "zh": "任意物理原语的形成及 Capture 更一般的规则变化保留自身范围。",
       "en": "The formation of arbitrary physical primitives and more general rule-changing capture keep their own scope.",
       "kind": "scope"
+    },
+    {
+      "zh": "即代理问题（Goodhart 1975；Amodei 等 2016；Manheim、Garrabrant 2018）；Zhuang、Hadfield-Menell（2020）证明了更强的定量形式。",
+      "en": "Known as the proxy problem (Goodhart 1975, Amodei and others 2016, Manheim and Garrabrant 2018); Zhuang and Hadfield-Menell (NeurIPS 2020) prove a stronger, quantitative form.",
+      "kind": "correspondence"
     }
   ],
   "counterexamples": [
@@ -652,6 +657,12 @@
       "role": "receipt",
       "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
+      "role": "review",
+      "sha256": "1e07f9b0f6d13a4b8b6900db28676b9b7824cbeb3031d9c6e16caf2a6e4a3102",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -781,6 +792,10 @@
     {
       "en": "2026-10-20: 72 bookkeeping notes condensed from 2026-10-12 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/bcd97b01bf7171e6/selection-through-registration.json and in git.",
       "zh": "2026-10-20：72 条记账性说明合并（2026-10-12 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/bcd97b01bf7171e6/selection-through-registration.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, LK1 (study section 237): the closest prior result named against the significance review's verdicts (study SA1), so that the record is not led with as a new finding; one does_not_show item added. The claim and its premises are unchanged.",
+      "zh": "2026年10月20日，LK1（研究第237节）：按意义审查（研究 SA1）的裁定指名最接近的先前结果，使本记录不被当作新发现来领头；增加一条 does_not_show。主张与其前提不变。"
     }
   ],
   "text_versions": [
