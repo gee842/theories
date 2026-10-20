@@ -26,7 +26,7 @@ Target: Ren's "unified, complete, enclosed, 0 axiom full theory", following the 
 
 - **Integrator:** not named on this page; rule 3's fallback applies. Name it here only on Ren's or that session's confirmation (review item B7). The 13 October Codex takeover (study §94-§111) is history.
 - **Main and receipts:** the landing queue below names each landing since 17 October with its core receipt; the latest core receipt is R34's `20261020T005554.047169Z` (20 October 2026); R35 changed no Lean. This page was rewritten on 17 October 2026 at `1d18d005c`.
-- **Queue:** empty; R35 landed (corpus and records, no Lean and no checker run, study §226; the instance and applications ring left as R35b); R36 next.
+- **Queue:** R36 at the head (the chapter once, reader-first: preface, premise card, body in argument order, theorem map, core vocabulary and index of formal terms, §6 in five sections, the Chinese edition to the same structure; the decision register's "What would change it" clauses); R35 landed (corpus and records, no Lean, study §226; the ring left as R35b).
 
 ## Open claims
 
