@@ -89,12 +89,44 @@ def clean(text):
     return re.sub(r'<[^>]+>', '', text)                                  # tags
 
 
+# Law level (R35, G12): computed from the declarations a passage cites, never stored in passages.json.
+ENCODING = 'Hexagram'  # the hexagram encoding: Becoming.Hexagram lemmas about Fin 64, tables, decide
+LEVEL_ZH = {'general': '一般律', 'encoding': '编码', 'mixed': '兼有', None: '—'}
+
+
+def law_level(p):
+    """'encoding' where every cited declaration is in namespace Becoming.Hexagram, 'general' where none is, 'mixed'
+    where both occur; None for a passage citing no declaration."""
+    names = [d.removeprefix('Becoming.') for d in p.get('declarations', [])]
+    if not names:
+        return None
+    enc = [n.split('.')[0] == ENCODING for n in names]
+    return 'encoding' if all(enc) else 'mixed' if any(enc) else 'general'
+
+
+def level_split(passages, kinds):
+    """{kind: {level: count}} for the summary line."""
+    out = {k: {} for k in kinds}
+    for p in passages:
+        lv = law_level(p)
+        out[p['kind']][lv] = out[p['kind']].get(lv, 0) + 1
+    return out
+
+
+def level_line(passages, kinds):
+    names = {'general': 'general laws', 'encoding': 'the encoding only', 'mixed': 'both', None: 'no declaration'}
+    split = level_split(passages, kinds)
+    return 'by law level: ' + '; '.join(
+        f"{k} {sum(v.values())} (" + ', '.join(f'{v[lv]} through {names[lv]}' for lv in ('general', 'encoding', 'mixed', None) if v.get(lv)) + ')'
+        for k, v in split.items())
+
+
 def table(passages):
-    rows = ['| 经文 | 出处 | 关系 | 脊柱上的声明 | 读法（AI） |', '|---|---|---|---|---|']
+    rows = ['| 经文 | 出处 | 关系 | 律的层次 | 脊柱上的声明 | 读法（AI） |', '|---|---|---|---|---|---|']
     for p in passages:
         text = '……'.join(f'「{f}」' for f in p['fragments'])
         decls = '<br>'.join(f"`{d.removeprefix('Becoming.')}`" for d in p['declarations'])
-        rows.append(f"| <a id=\"p-{p['id']}\"></a>{text} | {p['locator']} | {KIND_ZH[p['kind']]} | {decls} | {p['reading']} |")
+        rows.append(f"| <a id=\"p-{p['id']}\"></a>{text} | {p['locator']} | {KIND_ZH[p['kind']]} | {LEVEL_ZH[law_level(p)]} | {decls} | {p['reading']} |")
     return '\n'.join(rows)
 
 
@@ -524,6 +556,7 @@ def main():
           f"{kinds['divergence']} divergence), {sum(len(p['fragments']) for p in passages)} fragments, "
           f"{len(decls)} declarations; receipt {receipt.parent.name}"
           + (f'; {len(by_source)} Hexagrams names checked against the module source, not yet in the receipt' if by_source else ''))
+    print(level_line(passages, KIND_ZH))
     print('censuses (listed + exceptions): ' + ', '.join(f'{k} {v[0]} + {v[1]}' for k, v in counts.items()))
     print('censuses of HexagramSites: ' + '; '.join(f'{k} {v}' for k, v in sites_counts.items()))
     print('arrangements of HexagramSequences: ' + '; '.join(f'{k} {v}' for k, v in arrangements.items()))

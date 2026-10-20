@@ -924,13 +924,13 @@
       "path": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "8bf0f584b50901bdcb5b1813a09e28720feb6fa2b57421fb4336dead43b10eda"
+      "sha256": "ed5be7fe7a35c9a573fc14943f627b3503290fef6d024c4b7376f37340f6eb7e"
     },
     {
       "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "61a61e1aec8c27c09945d8fbeb289041ac7bdbfbc027d87a0f02decc0d0d10cb"
+      "sha256": "0ace1fb57dbda20df167265f5e70c0c2fe2b8c4ab2ce8fbfe313230bb0028859"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
@@ -942,7 +942,7 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
       "role": "integration",
       "declarations": [],
-      "sha256": "6cceb3cb6f46187ceaec8bde901a074a74b0f8858bb79cc2455ca6c28bbd7525"
+      "sha256": "df8d99e2a281a0717879e836f029559ff6ad0e7ad2be506ad18a577149cb8fad"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
@@ -954,7 +954,7 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/verify_ro.py",
       "role": "integration",
       "declarations": [],
-      "sha256": "e5348b6e9515f059da8803af9b9e60a9572a559fb08b5c7e0dda96a4f8d892ff"
+      "sha256": "bd963dfde041adcdcc5a894dc3f39159b0c8d62191ad0b999918f8f36d61467f"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
