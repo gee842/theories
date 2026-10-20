@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-20T11:17:22+00:00",
+  "reviewed_at_utc": "2026-10-20T12:09:50+00:00",
   "statement": {
     "en": "From each standpoint's presupposition about its own continuation and standpoint-invariance, exactly the centers' continuation is forced to have significance, the continuation condition only where every formation is a center; a standpoint's own presupposition forces exactly its closure.",
     "zh": "由各立场关于自身延续的预设与对立场不变，被迫有意义的恰是诸中心的延续，仅当每个构成都是中心时才是延续条件；一个立场自身的预设恰迫使其闭包。"
@@ -65,6 +65,48 @@
         "Becoming.Web.retains_atCenters_iff",
         "Becoming.Clearing.centers_retain_yet_loses"
       ]
+    },
+    {
+      "en": "A content held de se is a property each standpoint ascribes to its own center; one held de dicto is one proposition from every standpoint. Standpoint-invariance is exactly holding one shared content, and a content held de se is invariant exactly where its readings at the centers agree.",
+      "zh": "从己地持有的内容是每个立场归于其自身中心的性质；从言地持有的内容是从每个立场看都相同的一个命题。对立场不变恰是持有一个共有的内容；从己的内容恰在其于诸中心的读出一致处不变。",
+      "declarations": [
+        "Becoming.selfAscribed",
+        "Becoming.shared",
+        "Becoming.shared_standpointInvariant",
+        "Becoming.standpointInvariant_iff_shared",
+        "Becoming.selfAscribed_standpointInvariant_iff"
+      ]
+    },
+    {
+      "en": "Held de se, the presupposition about the own closure along a relation meets every standpoint's presupposition, is standpoint-invariant exactly where the centers' closures agree, and is the continuation condition exactly where every center's closure is the whole, with no step.",
+      "zh": "从己地持有，关于沿一个关系的自身闭包的预设满足每个立场的预设，恰在诸中心的闭包一致处对立场不变，恰在每个中心的闭包都是整体处是延续条件，无需那一步。",
+      "declarations": [
+        "Becoming.ownClosure",
+        "Becoming.ownClosure_presupposed",
+        "Becoming.ownClosure_standpointInvariant_iff",
+        "Becoming.ownClosure_unrestricted_iff",
+        "Becoming.ownClosure_unrestricted_of_whole"
+      ]
+    },
+    {
+      "en": "Held de dicto, what each standpoint's presupposition at its center's closure and standpoint-invariance force is exactly the union of the closures; on a web, admitting what the step forces is admitting every center, or the union along a relation.",
+      "zh": "从言地持有，各立场在其中心闭包处的预设与对立场不变所迫使者恰是诸闭包之并；在依存网上，接纳那一步所迫使者，即接纳每个中心，或沿一个关系的并。",
+      "declarations": [
+        "Becoming.withinSome",
+        "Becoming.forced_iff_within_some",
+        "Becoming.Web.admitsWithin_forced_iff",
+        "Becoming.Web.admitsWithin_forced_within_some_iff"
+      ]
+    },
+    {
+      "en": "The de se and de dicto readings give significance alike from every standpoint exactly where whatever lies within one center's closure lies within every center's. Witness: two standpoints, each its own center along the empty relation, where they part.",
+      "zh": "从己与从言的读法恰在凡位于一个中心闭包之内者都位于每个中心闭包之内处，从每个立场给出相同的意义。见证：沿空关系、各自为中心的两个立场，两种读法在此分开。",
+      "declarations": [
+        "Becoming.selfAscribed_iff_withinSome",
+        "Becoming.Divided.not_within",
+        "Becoming.Divided.selfAscribed_not_invariant",
+        "Becoming.Divided.withinSome_both"
+      ]
     }
   ],
   "hypotheses": [
@@ -75,8 +117,8 @@
   ],
   "does_not_show": [
     {
-      "en": "The step of invariance itself, or the self's presupposition: both are hypotheses, and whether the presupposition is essentially de se, which decides the narrow or wide scope, is open.",
-      "zh": "不变之步本身，或自我的预设：二者都是假设；预设是否本质上是从己的（de se），这决定窄或宽的辖域，仍未定。",
+      "en": "The step of invariance itself, or the self's presupposition: both are hypotheses. Whether the presupposition is held de se of a self drawn along a relation narrower than being related at all is open.",
+      "zh": "不变之步本身，或自我的预设：二者都是假设。预设是否以从己的方式、关于沿比“有所关联”更窄的关系所画的自我而持有，仍未定。",
       "kind": "non-implication"
     },
     {
@@ -113,12 +155,12 @@
     "formal-not-empirical"
   ],
   "validation_scope": {
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T111531.545286Z): the 50 declarations of Becoming.Weightings, 35 of them theorems, have empty axiom reports; the checker verifies core purity. The literature check before any Lean is a section of the significance review; the argument is the chapter THE-STEP-OF-INVARIANCE. Built and reviewed in one session, no separate reviewer; author review in study section 256; not independently reviewed by a person.",
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T111531.545286Z）：Becoming.Weightings 的 50 项声明（35 项定理）公理报告为空；检查器并核对核心纯净。动手写 Lean 之前的文献核查是显著性审查中的一节；论证见章节 THE-STEP-OF-INVARIANCE。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 256 节；未经人的独立审查。"
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T120729.506720Z): the 100 declarations of Becoming.Weightings, 69 of them theorems, have empty axiom reports; the checker verifies core purity. The literature checks before any Lean are sections of the significance review; the argument is the chapter THE-STEP-OF-INVARIANCE. Built and reviewed in one session, no separate reviewer; author review in study sections 256 and 260; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T120729.506720Z）：Becoming.Weightings 的 100 项声明（69 项定理）公理报告为空；检查器并核对核心纯净。动手写 Lean 之前的文献核查是显著性审查中的两节；论证见章节 THE-STEP-OF-INVARIANCE。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 256 与 260 节；未经人的独立审查。"
   },
   "next_delta": {
-    "en": "Whether the self's presupposition is essentially de se (the narrow or wide scope); which formations are centers on the base (a formation whose activity keeps its own conditions); graded significance across standpoints; an independent philosophical review.",
-    "zh": "自我的预设是否本质上是从己的（窄或宽的辖域）；在基底上哪些构成是中心（其活动维持自身条件的构成）；跨立场的分级意义；独立的哲学审查。"
+    "en": "An argument on the exact de se question (de se of a self drawn along a privileged relation narrower than being related at all); which formations are centers on the base; an independent philosophical review.",
+    "zh": "对确切的从己问题的论证（关于沿比“有所关联”更窄的特许关系所画之自我的从己预设）；在基底上哪些构成是中心；独立的哲学审查。"
   },
   "correspondence": {
     "en": "The step across standpoints is Gewirth's argument from the sufficiency of agency (Reason and Morality, 1978; defended by Beyleveld 1991), with Nagel 1970, Hare 1981 and Korsgaard 1996 as variants; the law says it reaches exactly the centers, and the egoist objection (Williams 1985; Regis, ed., 1984) is the narrow scope (Boundaries' presupposition_scopes). The step across drawings is Parfit's (1984, Part Three) and Siderits's Buddhist reductionism (2003), and Wolf's (1986) point that reductionism can dissolve concern is Boundaries' not_subTrue_of_invariant. Williams's internal reasons (1979) reach exactly the closure (forced_iff_within). The open question is the de se one (Perry 1979, Lewis 1979; Guillot and O'Brien 2023 against Setiya).",
@@ -133,7 +175,11 @@
     "what wants its continuation",
     "Becoming.forced_iff_center",
     "Becoming.forced_iff_within",
-    "Becoming.unrestricted_atCenters_iff"
+    "Becoming.unrestricted_atCenters_iff",
+    "the de se question",
+    "de se and de dicto presupposition",
+    "Becoming.selfAscribed_iff_withinSome",
+    "Becoming.forced_iff_within_some"
   ],
   "dependencies": [
     {
@@ -212,20 +258,49 @@
         "Becoming.Chain.third_not_within",
         "Becoming.Chain.third_related",
         "Becoming.Clearing.centers_retain_yet_loses",
+        "Becoming.Divided.not_within",
+        "Becoming.Divided.selfAscribed_not_invariant",
+        "Becoming.Divided.withinSome_both",
+        "Becoming.LevelTransfer.by_law",
+        "Becoming.LevelTransfer.concave",
+        "Becoming.LevelTransfer.concave_to",
+        "Becoming.LevelTransfer.decided",
+        "Becoming.LevelTransfer.even",
+        "Becoming.LevelTransfer.items",
+        "Becoming.LevelTransfer.mixed",
+        "Becoming.LevelTransfer.owner",
+        "Becoming.LevelTransfer.uneven",
+        "Becoming.Partial.cond_pos",
+        "Becoming.Partial.grade",
+        "Becoming.Partial.not_gradeInvariant",
+        "Becoming.Partial.ranks_differ",
+        "Becoming.Partial.standing",
         "Becoming.Related",
         "Becoming.Web.DecidesAdmission",
         "Becoming.Web.ListsAdmitted",
+        "Becoming.Web.admitsWithin_forced_iff",
+        "Becoming.Web.admitsWithin_forced_within_some_iff",
         "Becoming.Web.not_widens_of_closes",
         "Becoming.Web.retains_atCenters_iff",
         "Becoming.Web.widens_iff_every_weighting",
+        "Becoming.Weighting.ConcaveTo",
         "Becoming.Weighting.ExceedsOn",
+        "Becoming.Weighting.GradeInvariant",
         "Becoming.Weighting.IncludesOn",
         "Becoming.Weighting.MixedOn",
         "Becoming.Weighting.Positive",
+        "Becoming.Weighting.StandingInvariant",
+        "Becoming.Weighting.SufficientAt",
         "Becoming.Weighting.WidensOn",
+        "Becoming.Weighting.concave_gap",
         "Becoming.Weighting.cond_mul",
+        "Becoming.Weighting.cond_one_pos",
         "Becoming.Weighting.cond_pos",
         "Becoming.Weighting.exceeds_or_includes",
+        "Becoming.Weighting.le_of_strict",
+        "Becoming.Weighting.level",
+        "Becoming.Weighting.level_le_of_includes",
+        "Becoming.Weighting.level_lt_of_includes_at",
         "Becoming.Weighting.lt_of_mul_lt",
         "Becoming.Weighting.mixed_either_way",
         "Becoming.Weighting.mul_lt_mul_pos",
@@ -235,12 +310,20 @@
         "Becoming.Weighting.outweighing_term_at",
         "Becoming.Weighting.outweighing_term_le_one",
         "Becoming.Weighting.outweighs",
+        "Becoming.Weighting.perm4",
+        "Becoming.Weighting.prior",
+        "Becoming.Weighting.prior_lt_of_widens",
+        "Becoming.Weighting.prior_transfer",
+        "Becoming.Weighting.ranks_alike_of_gradeInvariant",
+        "Becoming.Weighting.standingInvariant_of_gradeInvariant",
+        "Becoming.Weighting.sufficient_ties",
         "Becoming.Weighting.term_le",
         "Becoming.Weighting.term_lt",
         "Becoming.Weighting.total_congr_on",
         "Becoming.Weighting.total_lt",
         "Becoming.Weighting.weighed",
         "Becoming.Weighting.weighed_const",
+        "Becoming.Weighting.weighed_eq_of_gradeInvariant",
         "Becoming.Weighting.weighed_eq_of_unweighted",
         "Becoming.Weighting.weighed_le_of_includes",
         "Becoming.Weighting.weighed_lt_of_widens",
@@ -251,11 +334,24 @@
         "Becoming.atCenters_standpointInvariant",
         "Becoming.forced_iff_center",
         "Becoming.forced_iff_within",
+        "Becoming.forced_iff_within_some",
+        "Becoming.ownClosure",
+        "Becoming.ownClosure_presupposed",
+        "Becoming.ownClosure_standpointInvariant_iff",
+        "Becoming.ownClosure_unrestricted_iff",
+        "Becoming.ownClosure_unrestricted_of_whole",
+        "Becoming.selfAscribed",
+        "Becoming.selfAscribed_iff_withinSome",
+        "Becoming.selfAscribed_standpointInvariant_iff",
+        "Becoming.shared",
+        "Becoming.shared_standpointInvariant",
+        "Becoming.standpointInvariant_iff_shared",
         "Becoming.subTrue_every_iff",
         "Becoming.subTrue_every_of_related",
-        "Becoming.unrestricted_atCenters_iff"
+        "Becoming.unrestricted_atCenters_iff",
+        "Becoming.withinSome"
       ],
-      "sha256": "fb60ab2f813dfa91a88f5e12c931181bed2f790b0eb67a8561d38ec174be7ac7"
+      "sha256": "0b4f25dbf330f034d6d70844c2ac767abe442a1f968fae257a7f3032e51d097b"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
@@ -268,40 +364,40 @@
       "sha256": "9f0cf4d878594390bdfa25dd337094d3767faba8cd2ad23782e513a451ede8f1"
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T111531.545286Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T120729.506720Z/verification.json",
       "role": "receipt",
-      "sha256": "69e38da580dbe5a539380d1d4999ae19f79b1a3a39d19f230c0b9e86275eea8f"
+      "sha256": "d3ebc0bcd56f3b4d80941b4f4bba76d8bad7ce4b57e8de74a3b64470e69982b0"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2a5a94a4fe364ca676cb0c7843efe6bfdaf4a17a80079546c7a4de2557ad9e2a"
+      "sha256": "e76069f34e230687f2d182bbf2b756cf6468ace454a0cc9f126a8822491dba99"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
       "role": "integration",
-      "sha256": "b7ad5b485acef28db4832bb72bed09c5f3e54deefcf9b7175a1e1c8f582d8178"
+      "sha256": "cbb6b577695259939b9661f3fc9bb71913edb59e53d8b996f43ddefd37244ca6"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "ba031aea4256593b707e0c1d4f040f1978021781a8b0b6822cd779bdcb8e7323"
+      "sha256": "f612265624809b32f0a324f557c44bd03941f14658670e8fa2dc1fa3cde41237"
     },
     {
       "path": "theories/becoming/chapters/THE-STEP-OF-INVARIANCE.md",
       "role": "statement",
-      "sha256": "0b1a9fa3b6d43566e1c12e49442235352b3560d86e0dd1ce02e10aabd585aa89"
+      "sha256": "ac811bb361d47d0e414a048486b14b5d9cc8d4d05677f9fbf5593a6c816b6f46"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "39e879c480c8358298ac086a4a755f4a16c1a9050e55b0a43817cff26a7e0514"
+      "sha256": "6b3c34edef74380ce713ebbd6a98429fd8a33379306d0e6e54a0e6d424a12afd"
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T111531.545286Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T120729.506720Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Weightings",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -311,6 +407,10 @@
     {
       "en": "20 October 2026: added (IV1), stating exactly what the step of invariance reaches when it is taken across standpoints (Gewirth's form) and what a standpoint's own presupposition reaches, after a literature check (significance review, section \"the step of invariance and the literature\"); readings D59; study section 256.",
       "zh": "2026年10月20日：新增（IV1），确切陈述不变之步跨立场（Gewirth 的形式）时达到哪里，以及一个立场自身的预设达到哪里，此前做了文献核查（显著性审查“不变之步与文献”一节）；读法 D59；研究第 256 节。"
+    },
+    {
+      "en": "20 October 2026 (IV2): four laws added, the de se and de dicto readings of the presupposition and where they part, and the web reading of what the step forces (Web.admitsWithin_forced_iff, which puts forced_iff_center on the base); the first non-implication restated in the exact form of the de se question; rebound to receipt 20261020T120729.506720Z; readings D60; study section 260.",
+      "zh": "2026年10月20日（IV2）：新增四条规律，即预设的从己与从言读法及其分开之处，以及那一步所迫使者在依存网上的读法（Web.admitsWithin_forced_iff，使 forced_iff_center 落在基底上）；第一条“不表明”改述为从己问题的确切形式；改绑到回执 20261020T120729.506720Z；读法 D60；研究第 260 节。"
     }
   ]
 }

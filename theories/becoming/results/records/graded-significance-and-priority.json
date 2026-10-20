@@ -1,0 +1,335 @@
+{
+  "schema_version": 2,
+  "id": "graded-significance-and-priority",
+  "title": {
+    "en": "Graded significance and priority",
+    "zh": "分级的意义与优先"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-20T12:09:50+00:00",
+  "statement": {
+    "en": "Invariant grades give invariant standing, not conversely. On levels of continuation, a strictly increasing transform ranks every widening higher, one strictly concave up to a bound decides transfers C leaves mixed, and a threshold of sufficiency ties above it.",
+    "zh": "等级不变则“是否算数”不变，反之不然。在延续的层级上，严格递增的变换把每个扩大排得更高，直到某界严格凹的变换决定 C 留为混合的转移，充足的阈值在其之上持平。"
+  },
+  "laws": [
+    {
+      "en": "A graded significance gives each listed item a natural grade from each standpoint; its standing is whether the grade is positive. Invariant grades give invariant standing and rank alike from every standpoint.",
+      "zh": "分级的意义从每个立场给每个所列项一个自然数等级；其“是否算数”即等级是否为正。等级不变则“是否算数”不变，且从每个立场排序相同。",
+      "declarations": [
+        "Becoming.Weighting.GradeInvariant",
+        "Becoming.Weighting.StandingInvariant",
+        "Becoming.Weighting.standingInvariant_of_gradeInvariant",
+        "Becoming.Weighting.weighed_eq_of_gradeInvariant",
+        "Becoming.Weighting.ranks_alike_of_gradeInvariant"
+      ]
+    },
+    {
+      "en": "Witness: two standpoints grading their own formation two and the other one. Standing is invariant, grades are not, and the two standpoints rank a mixed comparison opposite ways.",
+      "zh": "见证：两个立场把自己的构成评为二、另一个评为一。“是否算数”不变，等级不变不成立，两个立场对一个混合比较的排序相反。",
+      "declarations": [
+        "Becoming.Partial.grade",
+        "Becoming.Partial.standing",
+        "Becoming.Partial.not_gradeInvariant",
+        "Becoming.Partial.ranks_differ"
+      ]
+    },
+    {
+      "en": "A formation's level in a course is how many of its listed items the course admits. Inclusion never lowers a level, and a sum of a strictly increasing transform of the listed formations' levels ranks every widening higher where every item belongs to a listed formation.",
+      "zh": "一个构成在一条进程中的层级，是该进程所接纳的它的所列项之数。包含从不降低层级；每项都属于某个所列构成时，所列构成层级的严格递增变换之和把每个扩大都排得更高。",
+      "declarations": [
+        "Becoming.Weighting.level",
+        "Becoming.Weighting.level_le_of_includes",
+        "Becoming.Weighting.level_lt_of_includes_at",
+        "Becoming.Weighting.prior",
+        "Becoming.Weighting.prior_lt_of_widens"
+      ]
+    },
+    {
+      "en": "A transform strictly concave up to a bound ranks higher a course that moves one step of continuation from a formation at a higher level to one at a lower, every other level the same; no whole-number transform is strictly concave everywhere.",
+      "zh": "直到某个界都严格凹的变换，把从较高层级的构成向较低层级的构成移动一步延续、其余层级不变的进程排得更高；没有整数变换在全域严格凹。",
+      "declarations": [
+        "Becoming.Weighting.ConcaveTo",
+        "Becoming.Weighting.concave_gap",
+        "Becoming.Weighting.prior_transfer"
+      ]
+    },
+    {
+      "en": "A transform that rises no further from a threshold weighs alike two courses whose levels differ only at or above it.",
+      "zh": "从某阈值起不再上升的变换，对层级只在阈值及其之上不同的两条进程给出相同的权衡。",
+      "declarations": [
+        "Becoming.Weighting.SufficientAt",
+        "Becoming.Weighting.sufficient_ties"
+      ]
+    },
+    {
+      "en": "Witness: two formations over three steps, continuing two and two in one course and three and one in the other. The comparison is mixed; a concave transform ranks the even course higher, through the general law as well; the sum of levels ties them; a convex transform ranks the uneven course higher.",
+      "zh": "见证：两个构成、三步，一条进程中各延续二与二，另一条中三与一。比较是混合的；凹变换把均匀的进程排得更高，经一般规律亦然；层级之和持平；凸变换把不均匀的进程排得更高。",
+      "declarations": [
+        "Becoming.LevelTransfer.mixed",
+        "Becoming.LevelTransfer.concave_to",
+        "Becoming.LevelTransfer.by_law",
+        "Becoming.LevelTransfer.decided"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Finite listings of items (steps and formations), each item belonging to a listed formation where stated; two-valued admission; natural grades and natural-valued transforms; strict concavity up to a bound; levels as listed items admitted.",
+      "zh": "不加公理。项（步与构成）的有限列举，所述之处每项属于某个所列构成；接纳取二值；自然数等级与取自然数值的变换；直到某界的严格凹性；层级为所接纳的所列项之数。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That status is invariant across standpoints, or equal: the step as argued gives standing only.",
+      "zh": "地位（算多少）跨立场不变或相等：如所论证的那一步只给出“是否算数”。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "That priority, sufficiency or equal counting is right: each decides only what C leaves mixed, and which decides is not settled.",
+      "zh": "优先、充足或同等计数是对的：每一种只决定 C 留为混合者，哪一种来决定未定。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Well-being beyond the length of admitted continuation, lexical priority, or constraints on acts rather than outcomes.",
+      "zh": "超出所接纳延续之长度的福祉、词典式优先，或对行为而非结果的约束。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean",
+      "detail": {
+        "en": "Partial: standing invariant, grades not, and two standpoints ranking a mixed comparison opposite ways (Partial.ranks_differ). LevelTransfer: a mixed comparison the sum of levels ties and concave and convex transforms rank opposite ways (LevelTransfer.decided).",
+        "zh": "Partial：“是否算数”不变而等级不然，两个立场对一个混合比较排序相反（Partial.ranks_differ）。LevelTransfer：层级之和持平、凹与凸变换排序相反的混合比较（LevelTransfer.decided）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "no-definition-by-verdict",
+    "names-provisional",
+    "formal-not-empirical"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T120729.506720Z): the 100 declarations of Becoming.Weightings, 69 of them theorems, have empty axiom reports; the checker verifies core purity. The literature checks before any Lean are sections of the significance review; the argument is the chapter THE-STEP-OF-INVARIANCE. Built and reviewed in one session, no separate reviewer; author review in study sections 256 and 260; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T120729.506720Z）：Becoming.Weightings 的 100 项声明（69 项定理）公理报告为空；检查器并核对核心纯净。动手写 Lean 之前的文献核查是显著性审查中的两节；论证见章节 THE-STEP-OF-INVARIANCE。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 256 与 260 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Well-being beyond the length of continuation; leximin and its relation to bounded concavity; act constraints as de se rankings of outcomes; an independent review.",
+    "zh": "超出延续长度的福祉；leximin 及其与有界凹性的关系；作为结果之从己排序的行为约束；独立审查。"
+  },
+  "correspondence": {
+    "en": "Standing and status are Kagan's and Sebo's distinction (How to Count Animals, more or less, 2019; McMahan 2002 on graded status). Priority is Parfit's (\"Equality and Priority\", 1997): a sum of a strictly increasing, strictly concave transform, satisfying Pareto (prior_lt_of_widens) and Pigou-Dalton (prior_transfer). Sufficiency is Frankfurt's (1987) and Crisp's (2003); sufficient_ties is Casal's negative thesis (2007). The theory reads well-being as the length of admitted continuation, and sufficiency as a scope denial above its threshold.",
+    "zh": "“是否算数”与“算多少”是 Kagan 与 Sebo 的区分（《如何或多或少地计数动物》2019；McMahan 2002 论分级地位）。优先是 Parfit 的（《平等与优先》1997）：严格递增、严格凹之变换的和，满足 Pareto（prior_lt_of_widens）与 Pigou-Dalton（prior_transfer）。充足是 Frankfurt（1987）与 Crisp（2003）的；sufficient_ties 即 Casal 的否定命题（2007）。本理论把福祉读作所接纳延续的长度，把充足读作阈值之上对范围的否认。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean",
+  "aliases": [
+    "graded significance and priority",
+    "分级的意义与优先",
+    "standing and status",
+    "prioritarianism on levels",
+    "sufficiency as a scope denial",
+    "Becoming.Weighting.prior_transfer",
+    "Becoming.Weighting.prior_lt_of_widens",
+    "Becoming.Weighting.ranks_alike_of_gradeInvariant"
+  ],
+  "dependencies": [
+    {
+      "id": "widening-as-what-every-weighting-ranks",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the weighted count, inclusion and widening on listed items (Weighting.weighed, IncludesOn, WidensOn, weighed_le_of_includes).",
+        "zh": "复用所列项上的加权计数、包含与扩大（Weighting.weighed、IncludesOn、WidensOn、weighed_le_of_includes）。"
+      },
+      "interface": {
+        "output": {
+          "en": "Inclusion never lowers a weighted count, whatever the weights.",
+          "zh": "包含从不降低加权计数，不论权重如何。"
+        },
+        "input": {
+          "en": "Levels as weighted counts of a formation's items; priority as a sum over them.",
+          "zh": "层级即一个构成之项的加权计数；优先即其上的和。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "protection-priority-excludes-uniform-aggregation",
+      "detail": {
+        "en": "Lexical priority of basic conditions is no natural-number score; priority on levels here is.",
+        "zh": "基本条件的词典式优先不是自然数得分；此处层级上的优先是。"
+      }
+    },
+    {
+      "id": "what-the-step-across-standpoints-reaches",
+      "detail": {
+        "en": "The step across standpoints, two-valued, makes standing invariant; status is a further premise.",
+        "zh": "二值的跨立场之步使“是否算数”不变；“算多少”是进一步的前提。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Chain.Formation",
+        "Becoming.Chain.every_not_related",
+        "Becoming.Chain.notThird",
+        "Becoming.Chain.onlyFirst",
+        "Becoming.Chain.rel",
+        "Becoming.Chain.third_not_within",
+        "Becoming.Chain.third_related",
+        "Becoming.Clearing.centers_retain_yet_loses",
+        "Becoming.Divided.not_within",
+        "Becoming.Divided.selfAscribed_not_invariant",
+        "Becoming.Divided.withinSome_both",
+        "Becoming.LevelTransfer.by_law",
+        "Becoming.LevelTransfer.concave",
+        "Becoming.LevelTransfer.concave_to",
+        "Becoming.LevelTransfer.decided",
+        "Becoming.LevelTransfer.even",
+        "Becoming.LevelTransfer.items",
+        "Becoming.LevelTransfer.mixed",
+        "Becoming.LevelTransfer.owner",
+        "Becoming.LevelTransfer.uneven",
+        "Becoming.Partial.cond_pos",
+        "Becoming.Partial.grade",
+        "Becoming.Partial.not_gradeInvariant",
+        "Becoming.Partial.ranks_differ",
+        "Becoming.Partial.standing",
+        "Becoming.Related",
+        "Becoming.Web.DecidesAdmission",
+        "Becoming.Web.ListsAdmitted",
+        "Becoming.Web.admitsWithin_forced_iff",
+        "Becoming.Web.admitsWithin_forced_within_some_iff",
+        "Becoming.Web.not_widens_of_closes",
+        "Becoming.Web.retains_atCenters_iff",
+        "Becoming.Web.widens_iff_every_weighting",
+        "Becoming.Weighting.ConcaveTo",
+        "Becoming.Weighting.ExceedsOn",
+        "Becoming.Weighting.GradeInvariant",
+        "Becoming.Weighting.IncludesOn",
+        "Becoming.Weighting.MixedOn",
+        "Becoming.Weighting.Positive",
+        "Becoming.Weighting.StandingInvariant",
+        "Becoming.Weighting.SufficientAt",
+        "Becoming.Weighting.WidensOn",
+        "Becoming.Weighting.concave_gap",
+        "Becoming.Weighting.cond_mul",
+        "Becoming.Weighting.cond_one_pos",
+        "Becoming.Weighting.cond_pos",
+        "Becoming.Weighting.exceeds_or_includes",
+        "Becoming.Weighting.le_of_strict",
+        "Becoming.Weighting.level",
+        "Becoming.Weighting.level_le_of_includes",
+        "Becoming.Weighting.level_lt_of_includes_at",
+        "Becoming.Weighting.lt_of_mul_lt",
+        "Becoming.Weighting.mixed_either_way",
+        "Becoming.Weighting.mul_lt_mul_pos",
+        "Becoming.Weighting.neutral_ranks_by_number",
+        "Becoming.Weighting.outweighing",
+        "Becoming.Weighting.outweighing_positive",
+        "Becoming.Weighting.outweighing_term_at",
+        "Becoming.Weighting.outweighing_term_le_one",
+        "Becoming.Weighting.outweighs",
+        "Becoming.Weighting.perm4",
+        "Becoming.Weighting.prior",
+        "Becoming.Weighting.prior_lt_of_widens",
+        "Becoming.Weighting.prior_transfer",
+        "Becoming.Weighting.ranks_alike_of_gradeInvariant",
+        "Becoming.Weighting.standingInvariant_of_gradeInvariant",
+        "Becoming.Weighting.sufficient_ties",
+        "Becoming.Weighting.term_le",
+        "Becoming.Weighting.term_lt",
+        "Becoming.Weighting.total_congr_on",
+        "Becoming.Weighting.total_lt",
+        "Becoming.Weighting.weighed",
+        "Becoming.Weighting.weighed_const",
+        "Becoming.Weighting.weighed_eq_of_gradeInvariant",
+        "Becoming.Weighting.weighed_eq_of_unweighted",
+        "Becoming.Weighting.weighed_le_of_includes",
+        "Becoming.Weighting.weighed_lt_of_widens",
+        "Becoming.Weighting.widens_iff_every_positive",
+        "Becoming.atCenters",
+        "Becoming.atCenters_least",
+        "Becoming.atCenters_presupposed",
+        "Becoming.atCenters_standpointInvariant",
+        "Becoming.forced_iff_center",
+        "Becoming.forced_iff_within",
+        "Becoming.forced_iff_within_some",
+        "Becoming.ownClosure",
+        "Becoming.ownClosure_presupposed",
+        "Becoming.ownClosure_standpointInvariant_iff",
+        "Becoming.ownClosure_unrestricted_iff",
+        "Becoming.ownClosure_unrestricted_of_whole",
+        "Becoming.selfAscribed",
+        "Becoming.selfAscribed_iff_withinSome",
+        "Becoming.selfAscribed_standpointInvariant_iff",
+        "Becoming.shared",
+        "Becoming.shared_standpointInvariant",
+        "Becoming.standpointInvariant_iff_shared",
+        "Becoming.subTrue_every_iff",
+        "Becoming.subTrue_every_of_related",
+        "Becoming.unrestricted_atCenters_iff",
+        "Becoming.withinSome"
+      ],
+      "sha256": "0b4f25dbf330f034d6d70844c2ac767abe442a1f968fae257a7f3032e51d097b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T120729.506720Z/verification.json",
+      "role": "receipt",
+      "sha256": "d3ebc0bcd56f3b4d80941b4f4bba76d8bad7ce4b57e8de74a3b64470e69982b0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "e76069f34e230687f2d182bbf2b756cf6468ace454a0cc9f126a8822491dba99"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
+      "role": "integration",
+      "sha256": "cbb6b577695259939b9661f3fc9bb71913edb59e53d8b996f43ddefd37244ca6"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+      "role": "integration",
+      "sha256": "f612265624809b32f0a324f557c44bd03941f14658670e8fa2dc1fa3cde41237"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-STEP-OF-INVARIANCE.md",
+      "role": "statement",
+      "sha256": "ac811bb361d47d0e414a048486b14b5d9cc8d4d05677f9fbf5593a6c816b6f46"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "6b3c34edef74380ce713ebbd6a98429fd8a33379306d0e6e54a0e6d424a12afd"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T120729.506720Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Weightings",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "20 October 2026: added (IV2), graded significance, standing against status, and priority and sufficiency on levels of continuation, after a literature check (significance review, section \"the de se question and graded significance\"); readings D60; study section 260.",
+      "zh": "2026年10月20日：新增（IV2），分级的意义、“是否算数”与“算多少”、延续层级上的优先与充足，此前做了文献核查（显著性审查“从己问题与分级的意义”一节）；读法 D60；研究第 260 节。"
+    }
+  ]
+}

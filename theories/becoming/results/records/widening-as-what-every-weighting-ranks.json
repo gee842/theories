@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-20T11:17:22+00:00",
+  "reviewed_at_utc": "2026-10-20T12:09:50+00:00",
   "statement": {
     "en": "Over a finite listing, one course widens another exactly when every weighting positive on every item ranks it higher; a mixed comparison is decided both ways by positive weightings; a zero weight ties; one weight for all ranks by number.",
     "zh": "在有限列举上，一条进程扩大另一条，恰当每个在每项上为正的加权都把它排得更高；混合的比较由正的加权两个方向都能决定；零权持平；一律同权即按数目排。"
@@ -113,8 +113,8 @@
     "names-provisional"
   ],
   "validation_scope": {
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T111531.545286Z): the 50 declarations of Becoming.Weightings, 35 of them theorems, have empty axiom reports; the checker verifies core purity. The literature check before any Lean is a section of the significance review; the argument is the chapter THE-STEP-OF-INVARIANCE. Built and reviewed in one session, no separate reviewer; author review in study section 256; not independently reviewed by a person.",
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T111531.545286Z）：Becoming.Weightings 的 50 项声明（35 项定理）公理报告为空；检查器并核对核心纯净。动手写 Lean 之前的文献核查是显著性审查中的一节；论证见章节 THE-STEP-OF-INVARIANCE。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 256 节；未经人的独立审查。"
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T120729.506720Z): the 100 declarations of Becoming.Weightings, 69 of them theorems, have empty axiom reports; the checker verifies core purity. The literature checks before any Lean are sections of the significance review; the argument is the chapter THE-STEP-OF-INVARIANCE. Built and reviewed in one session, no separate reviewer; author review in study sections 256 and 260; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T120729.506720Z）：Becoming.Weightings 的 100 项声明（69 项定理）公理报告为空；检查器并核对核心纯净。动手写 Lean 之前的文献核查是显著性审查中的两节；论证见章节 THE-STEP-OF-INVARIANCE。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 256 与 260 节；未经人的独立审查。"
   },
   "next_delta": {
     "en": "Graded significance and weights beyond naturals; orders that are not additive (lexical, threshold) and where they part from the shared order; a base reading of a standpoint's weighting from what its activity keeps; an independent review.",
@@ -188,20 +188,49 @@
         "Becoming.Chain.third_not_within",
         "Becoming.Chain.third_related",
         "Becoming.Clearing.centers_retain_yet_loses",
+        "Becoming.Divided.not_within",
+        "Becoming.Divided.selfAscribed_not_invariant",
+        "Becoming.Divided.withinSome_both",
+        "Becoming.LevelTransfer.by_law",
+        "Becoming.LevelTransfer.concave",
+        "Becoming.LevelTransfer.concave_to",
+        "Becoming.LevelTransfer.decided",
+        "Becoming.LevelTransfer.even",
+        "Becoming.LevelTransfer.items",
+        "Becoming.LevelTransfer.mixed",
+        "Becoming.LevelTransfer.owner",
+        "Becoming.LevelTransfer.uneven",
+        "Becoming.Partial.cond_pos",
+        "Becoming.Partial.grade",
+        "Becoming.Partial.not_gradeInvariant",
+        "Becoming.Partial.ranks_differ",
+        "Becoming.Partial.standing",
         "Becoming.Related",
         "Becoming.Web.DecidesAdmission",
         "Becoming.Web.ListsAdmitted",
+        "Becoming.Web.admitsWithin_forced_iff",
+        "Becoming.Web.admitsWithin_forced_within_some_iff",
         "Becoming.Web.not_widens_of_closes",
         "Becoming.Web.retains_atCenters_iff",
         "Becoming.Web.widens_iff_every_weighting",
+        "Becoming.Weighting.ConcaveTo",
         "Becoming.Weighting.ExceedsOn",
+        "Becoming.Weighting.GradeInvariant",
         "Becoming.Weighting.IncludesOn",
         "Becoming.Weighting.MixedOn",
         "Becoming.Weighting.Positive",
+        "Becoming.Weighting.StandingInvariant",
+        "Becoming.Weighting.SufficientAt",
         "Becoming.Weighting.WidensOn",
+        "Becoming.Weighting.concave_gap",
         "Becoming.Weighting.cond_mul",
+        "Becoming.Weighting.cond_one_pos",
         "Becoming.Weighting.cond_pos",
         "Becoming.Weighting.exceeds_or_includes",
+        "Becoming.Weighting.le_of_strict",
+        "Becoming.Weighting.level",
+        "Becoming.Weighting.level_le_of_includes",
+        "Becoming.Weighting.level_lt_of_includes_at",
         "Becoming.Weighting.lt_of_mul_lt",
         "Becoming.Weighting.mixed_either_way",
         "Becoming.Weighting.mul_lt_mul_pos",
@@ -211,12 +240,20 @@
         "Becoming.Weighting.outweighing_term_at",
         "Becoming.Weighting.outweighing_term_le_one",
         "Becoming.Weighting.outweighs",
+        "Becoming.Weighting.perm4",
+        "Becoming.Weighting.prior",
+        "Becoming.Weighting.prior_lt_of_widens",
+        "Becoming.Weighting.prior_transfer",
+        "Becoming.Weighting.ranks_alike_of_gradeInvariant",
+        "Becoming.Weighting.standingInvariant_of_gradeInvariant",
+        "Becoming.Weighting.sufficient_ties",
         "Becoming.Weighting.term_le",
         "Becoming.Weighting.term_lt",
         "Becoming.Weighting.total_congr_on",
         "Becoming.Weighting.total_lt",
         "Becoming.Weighting.weighed",
         "Becoming.Weighting.weighed_const",
+        "Becoming.Weighting.weighed_eq_of_gradeInvariant",
         "Becoming.Weighting.weighed_eq_of_unweighted",
         "Becoming.Weighting.weighed_le_of_includes",
         "Becoming.Weighting.weighed_lt_of_widens",
@@ -227,11 +264,24 @@
         "Becoming.atCenters_standpointInvariant",
         "Becoming.forced_iff_center",
         "Becoming.forced_iff_within",
+        "Becoming.forced_iff_within_some",
+        "Becoming.ownClosure",
+        "Becoming.ownClosure_presupposed",
+        "Becoming.ownClosure_standpointInvariant_iff",
+        "Becoming.ownClosure_unrestricted_iff",
+        "Becoming.ownClosure_unrestricted_of_whole",
+        "Becoming.selfAscribed",
+        "Becoming.selfAscribed_iff_withinSome",
+        "Becoming.selfAscribed_standpointInvariant_iff",
+        "Becoming.shared",
+        "Becoming.shared_standpointInvariant",
+        "Becoming.standpointInvariant_iff_shared",
         "Becoming.subTrue_every_iff",
         "Becoming.subTrue_every_of_related",
-        "Becoming.unrestricted_atCenters_iff"
+        "Becoming.unrestricted_atCenters_iff",
+        "Becoming.withinSome"
       ],
-      "sha256": "fb60ab2f813dfa91a88f5e12c931181bed2f790b0eb67a8561d38ec174be7ac7"
+      "sha256": "0b4f25dbf330f034d6d70844c2ac767abe442a1f968fae257a7f3032e51d097b"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
@@ -239,40 +289,40 @@
       "sha256": "a360bf56d40bb977b686bd8756651357f995c5133d22cdd231ed79a71dc5899b"
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T111531.545286Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T120729.506720Z/verification.json",
       "role": "receipt",
-      "sha256": "69e38da580dbe5a539380d1d4999ae19f79b1a3a39d19f230c0b9e86275eea8f"
+      "sha256": "d3ebc0bcd56f3b4d80941b4f4bba76d8bad7ce4b57e8de74a3b64470e69982b0"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2a5a94a4fe364ca676cb0c7843efe6bfdaf4a17a80079546c7a4de2557ad9e2a"
+      "sha256": "e76069f34e230687f2d182bbf2b756cf6468ace454a0cc9f126a8822491dba99"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
       "role": "integration",
-      "sha256": "b7ad5b485acef28db4832bb72bed09c5f3e54deefcf9b7175a1e1c8f582d8178"
+      "sha256": "cbb6b577695259939b9661f3fc9bb71913edb59e53d8b996f43ddefd37244ca6"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "ba031aea4256593b707e0c1d4f040f1978021781a8b0b6822cd779bdcb8e7323"
+      "sha256": "f612265624809b32f0a324f557c44bd03941f14658670e8fa2dc1fa3cde41237"
     },
     {
       "path": "theories/becoming/chapters/THE-STEP-OF-INVARIANCE.md",
       "role": "statement",
-      "sha256": "0b1a9fa3b6d43566e1c12e49442235352b3560d86e0dd1ce02e10aabd585aa89"
+      "sha256": "ac811bb361d47d0e414a048486b14b5d9cc8d4d05677f9fbf5593a6c816b6f46"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "39e879c480c8358298ac086a4a755f4a16c1a9050e55b0a43817cff26a7e0514"
+      "sha256": "6b3c34edef74380ce713ebbd6a98429fd8a33379306d0e6e54a0e6d424a12afd"
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T111531.545286Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T120729.506720Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Weightings",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -282,6 +332,10 @@
     {
       "en": "20 October 2026: added (IV1), stating C as the order every positive weighting shares and partiality as the mixed comparisons, after a literature check (significance review, section \"the step of invariance and the literature\"); readings D59; study section 256.",
       "zh": "2026年10月20日：新增（IV1），把 C 陈述为每个正的加权所共有的序，把偏倚陈述为混合的比较，此前做了文献核查（显著性审查“不变之步与文献”一节）；读法 D59；研究第 256 节。"
+    },
+    {
+      "en": "20 October 2026 (IV2): the module grew (grades, levels, priority, sufficiency; record graded-significance-and-priority); this record's laws and declarations are unchanged; rebound to receipt 20261020T120729.506720Z; study section 260.",
+      "zh": "2026年10月20日（IV2）：模块扩充（等级、层级、优先、充足；记录 graded-significance-and-priority）；本记录的规律与声明不变；改绑到回执 20261020T120729.506720Z；研究第 260 节。"
     }
   ]
 }
