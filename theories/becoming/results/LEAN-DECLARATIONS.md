@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 274 | 10,943 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 275 | 10,958 |
 | [Becoming instances and applications](lean-declarations/becoming-ring.md) | 13 | 746 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -568,6 +568,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [OrganizationalRuleInheritance.lean](lean-declarations/ethics.md#module-d6cdb351c744) | Normative grounding and generative direction |
 | [OrganizedScaleLoop.lean](lean-declarations/learning.md#module-fa24e61409c5) | Learning, prediction and dynamics |
 | [OutcomeContinuation.lean](lean-declarations/core.md#module-c48ee824a0b3) | Generative core and relational structure |
+| [OwnWidening.lean](lean-declarations/becoming-core.md#module-4cd46e389136) | Becoming pure core |
 | [Pace.lean](lean-declarations/becoming-core.md#module-f1acf0f3e260) | Becoming pure core |
 | [PacketLawDerivation.lean](lean-declarations/inquiry.md#module-db5cafd783d9) | Attainable inquiry, contact and process laws |
 | [PaidArchiveReader.lean](lean-declarations/shared.md#module-dacef2fbbee5) | Organizational formation through revisable evaluation |

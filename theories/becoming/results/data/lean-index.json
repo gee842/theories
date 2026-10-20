@@ -18,21 +18,21 @@
     "classification": "Path-based documentary roles; working-source is not a claim of accepted, complete, canonical or checked status. A file containing only #print axioms and no inventoried named declarations is an audit-driver."
   },
   "statistics": {
-    "lean_paths": 1713,
-    "distinct_byte_contents": 1351,
-    "byte_identical_duplicate_groups": 103,
+    "lean_paths": 1741,
+    "distinct_byte_contents": 1354,
+    "byte_identical_duplicate_groups": 125,
     "roles": {
       "audit-driver": 13,
-      "development-attempt": 816,
+      "development-attempt": 843,
       "historical-draft": 3,
       "imported-archive": 23,
-      "working-source": 858
+      "working-source": 859
     },
-    "working_named_theorem_lemma_occurrences": 22973,
-    "working_explicit_named_declaration_occurrences": 34453,
+    "working_named_theorem_lemma_occurrences": 22988,
+    "working_explicit_named_declaration_occurrences": 34478,
     "working_groups": {
       "abstraction": 45,
-      "becoming-core": 274,
+      "becoming-core": 275,
       "becoming-ring": 13,
       "concern": 15,
       "core": 137,
@@ -3874,6 +3874,249 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Admission.lean",
+      "sha256": "5824b1de37fb2fcce72f0f4df0804ddb0802de74a5fa289a6fad95746b72b411",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Amounts.lean",
+      "sha256": "dd51aa6f8eaafe4731e5a64462eb176d5c3e19392a162e25095f58bf4fe2b9f7",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Arising.lean",
+      "sha256": "cf6c388ea4a739f6f3ec97b50c9fe639b77acc73a4b10439481dbe70358435a6",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Change.lean",
+      "sha256": "9ecb1747568c0ac4dd9befc0cdaad0511321b439cea7e60ecfc4726b57be037f",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Continuation.lean",
+      "sha256": "b7405bce742da657308ed1cb3a962823d9aaa3a560f9aaa92b1c3ad1338b4ed1",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Dependence.lean",
+      "sha256": "1c85d21fa7ec00debcac668785b51fdd7cdc3a97a66d50c6700047956cdaf5df",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Dissipation.lean",
+      "sha256": "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Evolution.lean",
+      "sha256": "e67ee59057675ac686f35ff210a01161eff80bad6195b59fc52a286467ac7e7e",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Flow.lean",
+      "sha256": "790cf03bbfa755bde10d6a0c3086e797844c92ff11e0528e7f4b761eb5d439f4",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Frame.lean",
+      "sha256": "548b1523ea8f0f9d6b08f6311baa9cc6318669e0097cd2e24605ba3ed8eb9ff2",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Locality.lean",
+      "sha256": "236b6eb72050fd5c70c720cd5ccd82d732b7c90f423fe12b9f10849cdc4b2ea8",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/OwnWidening.lean",
+      "sha256": "5f299091c49d66ea428bbcd3e6213f9ea05ff7850fc6d4770eef807b15adc136",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Population.lean",
+      "sha256": "df1e36a3a90ebab3af01572de71f5aa14c3d32f1c015b209e29114fda2385e7d",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Prelude.lean",
+      "sha256": "806e95fad20b5a22ad532429698511ec066b63e9160a1018f1b7a736e6724176",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Regions.lean",
+      "sha256": "a360bf56d40bb977b686bd8756651357f995c5133d22cdd231ed79a71dc5899b",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Renewal.lean",
+      "sha256": "23efa4c2ed7a38091b2d26cf42aee5a0c6a4c140ed4f67595f5389e8ed6e3382",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Reserve.lean",
+      "sha256": "b6cf1bcbc4bb2789534857e75e1e3dae51f2a9e60c5eaf6cc61221dd71ee862a",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Restoration.lean",
+      "sha256": "15ca795c65405065276fa214f3a151c19f31fc9c8923e2e37e37554b17ee8aa7",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Retaining.lean",
+      "sha256": "09ed88eb0b7acfb3cb5b60d6d2a37c41735de26266b1ff03d5b422a9574a7c28",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Roles.lean",
+      "sha256": "6e0fdea63dbd3bc1d92d6df2d8e68216436e1a916d1f36ce9872da25c3fe64eb",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Space.lean",
+      "sha256": "d7cf70544495c135366166d401bf10bdfd0be55bf362bdd59b2b186258cff6cd",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Witnesses.lean",
+      "sha256": "a9be4cf09e2d1a6a60fd88ed7a72c3799f7919e981a7e1894f4ec48b8637d6db",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/World.lean",
+      "sha256": "9d05b714c28d3497235330e5d5fb4221415ea3ae25ec32d730425299b5479428",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/BecomingOwnWideningAxiomAudit.lean",
+      "sha256": "e28621ec8f94afe543d29ac81f48e68b595f7c97076995d50fa6ccd9fd2e27df",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/RelationalRenewal.lean",
+      "sha256": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/Becoming/OwnWidening.lean",
+      "sha256": "01f7116b710c8185119f36679ad50c9a29e1d8fa85d45d87d17592e415cd230b",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r32-folds/SameStatements.lean",
       "sha256": "a3f9f6b012e34eac81ec8f71f4ab262a2dbb0b68c2d1d833a58a5774aaa39c76",
       "role": "development-attempt",
@@ -4407,7 +4650,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
-      "sha256": "1c6c3e19802a79e92aea0c5f97f5c0883aea85e5bdab612acfeb16db159b0595",
+      "sha256": "9780249c89cd9037a1bf9fa140ea66a01b7c62ca9ab40036c99f024e1b0abb68",
       "role": "working-source",
       "group": "becoming-core",
       "receipt_layer": "core",
@@ -7337,6 +7580,21 @@
         "theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.md",
         "theories/becoming/history/THE-THEORY-OF-BECOMING-2026-10-20.zh.md",
         "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
+      ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OwnWidening.lean",
+      "sha256": "01f7116b710c8185119f36679ad50c9a29e1d8fa85d45d87d17592e415cd230b",
+      "role": "working-source",
+      "group": "becoming-core",
+      "receipt_layer": "core",
+      "receipt_bytes_match": true,
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
+      "direct_documentation_links_from": [
+        "RESULTS.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -20673,6 +20931,178 @@
         "inductive": 1,
         "structure": 3,
         "theorem": 23
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "01f7116b710c8185119f36679ad50c9a29e1d8fa85d45d87d17592e415cd230b": {
+      "byte_size": 18464,
+      "line_count": 347,
+      "imports": [
+        "Becoming.Retaining"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "WidensWithin",
+          "qualified_name_hint": "Becoming.Web.WidensWithin",
+          "line": 74
+        },
+        {
+          "kind": "theorem",
+          "name": "WidensWithin.exceeds",
+          "qualified_name_hint": "Becoming.Web.WidensWithin.exceeds",
+          "line": 81
+        },
+        {
+          "kind": "theorem",
+          "name": "WidensWithin.not_keeps",
+          "qualified_name_hint": "Becoming.Web.WidensWithin.not_keeps",
+          "line": 87
+        },
+        {
+          "kind": "theorem",
+          "name": "WidensWithin.not_narrowed",
+          "qualified_name_hint": "Becoming.Web.WidensWithin.not_narrowed",
+          "line": 92
+        },
+        {
+          "kind": "def",
+          "name": "reachWeb",
+          "qualified_name_hint": "Becoming.Web.reachWeb",
+          "line": 98
+        },
+        {
+          "kind": "theorem",
+          "name": "admits_reachWeb_iff",
+          "qualified_name_hint": "Becoming.Web.admits_reachWeb_iff",
+          "line": 106
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.includes_iff_beyond_within",
+          "qualified_name_hint": "Becoming.Flow.Balances.includes_iff_beyond_within",
+          "line": 128
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.widens_iff_others_within",
+          "qualified_name_hint": "Becoming.Flow.Balances.widens_iff_others_within",
+          "line": 146
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.mixed_iff_other_beyond",
+          "qualified_name_hint": "Becoming.Flow.Balances.mixed_iff_other_beyond",
+          "line": 160
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.mixed_of_tight",
+          "qualified_name_hint": "Becoming.Flow.Balances.mixed_of_tight",
+          "line": 179
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.widens_of_untaken_beyond",
+          "qualified_name_hint": "Becoming.Flow.Balances.widens_of_untaken_beyond",
+          "line": 196
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.widens_yet_own_changed",
+          "qualified_name_hint": "Becoming.Flow.Balances.widens_yet_own_changed",
+          "line": 211
+        },
+        {
+          "kind": "inductive",
+          "name": "Formation",
+          "qualified_name_hint": "Becoming.OwnDrawing.Formation",
+          "line": 229
+        },
+        {
+          "kind": "inductive",
+          "name": "Place",
+          "qualified_name_hint": "Becoming.OwnDrawing.Place",
+          "line": 235
+        },
+        {
+          "kind": "def",
+          "name": "firstStep",
+          "qualified_name_hint": "Becoming.OwnDrawing.firstStep",
+          "line": 240
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.OwnDrawing.flow",
+          "line": 244
+        },
+        {
+          "kind": "def",
+          "name": "drawerPart",
+          "qualified_name_hint": "Becoming.OwnDrawing.drawerPart",
+          "line": 258
+        },
+        {
+          "kind": "def",
+          "name": "own",
+          "qualified_name_hint": "Becoming.OwnDrawing.own",
+          "line": 264
+        },
+        {
+          "kind": "def",
+          "name": "web",
+          "qualified_name_hint": "Becoming.OwnDrawing.web",
+          "line": 271
+        },
+        {
+          "kind": "def",
+          "name": "withheldLevel",
+          "qualified_name_hint": "Becoming.OwnDrawing.withheldLevel",
+          "line": 293
+        },
+        {
+          "kind": "theorem",
+          "name": "balances",
+          "qualified_name_hint": "Becoming.OwnDrawing.balances",
+          "line": 297
+        },
+        {
+          "kind": "theorem",
+          "name": "withheld",
+          "qualified_name_hint": "Becoming.OwnDrawing.withheld",
+          "line": 303
+        },
+        {
+          "kind": "theorem",
+          "name": "own_widens",
+          "qualified_name_hint": "Becoming.OwnDrawing.own_widens",
+          "line": 315
+        },
+        {
+          "kind": "theorem",
+          "name": "ample_widens",
+          "qualified_name_hint": "Becoming.OwnDrawing.ample_widens",
+          "line": 324
+        },
+        {
+          "kind": "theorem",
+          "name": "tight_mixed",
+          "qualified_name_hint": "Becoming.OwnDrawing.tight_mixed",
+          "line": 339
+        }
+      ],
+      "declaration_counts": {
+        "def": 8,
+        "inductive": 2,
+        "theorem": 15
       },
       "textual_markers": {
         "sorry": [],
@@ -53304,305 +53734,6 @@
       "declaration_counts": {
         "theorem": 7
       },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
-    "1c6c3e19802a79e92aea0c5f97f5c0883aea85e5bdab612acfeb16db159b0595": {
-      "byte_size": 207507,
-      "line_count": 2525,
-      "imports": [
-        "Becoming.World",
-        "Becoming.Witnesses",
-        "Becoming.Frame",
-        "Becoming.Laws",
-        "Becoming.Labelled",
-        "Becoming.Inquiry",
-        "Becoming.Derivation",
-        "Becoming.ClassifiedBeliefProcesses",
-        "Becoming.MoveOutcomeProcesses",
-        "Becoming.Recurrence",
-        "Becoming.Diagonal",
-        "Becoming.Context",
-        "Becoming.ContextArrivalTraces",
-        "Becoming.Quantum",
-        "Becoming.Renewal",
-        "Becoming.Dependence",
-        "Becoming.Restoration",
-        "Becoming.Horizon",
-        "Becoming.Joint",
-        "Becoming.Experiment",
-        "Becoming.Mechanism",
-        "Becoming.Unfolding",
-        "Becoming.LawAlongRun",
-        "Becoming.Irreversibility",
-        "Becoming.Histories",
-        "Becoming.Branching",
-        "Becoming.Listing",
-        "Becoming.Stuttering",
-        "Becoming.Reordering",
-        "Becoming.IdleRemoval",
-        "Becoming.OrderNormal",
-        "Becoming.OneStep",
-        "Becoming.Weighted",
-        "Becoming.Transmission",
-        "Becoming.Succession",
-        "Becoming.Attraction",
-        "Becoming.Substitution",
-        "Becoming.Arising",
-        "Becoming.Flow",
-        "Becoming.Stock",
-        "Becoming.Change",
-        "Becoming.Population",
-        "Becoming.Identity",
-        "Becoming.Persistence",
-        "Becoming.Wholes",
-        "Becoming.Dissipation",
-        "Becoming.Locality",
-        "Becoming.Seeking",
-        "Becoming.Roles",
-        "Becoming.LabelledRoles",
-        "Becoming.Reserve",
-        "Becoming.Evolution",
-        "Becoming.Capture",
-        "Becoming.SelectionTerm",
-        "Becoming.Space",
-        "Becoming.Premises",
-        "Becoming.Sampling",
-        "Becoming.Tower",
-        "Becoming.Openness",
-        "Becoming.Decidedness",
-        "Becoming.Refinement",
-        "Becoming.CensusTable",
-        "Becoming.Counting",
-        "Becoming.Standing",
-        "Becoming.Resolution",
-        "Becoming.Amounts",
-        "Becoming.LeastLoss",
-        "Becoming.Entropy",
-        "Becoming.Units",
-        "Becoming.Imbalance",
-        "Becoming.Continuation",
-        "Becoming.RenewalFlow",
-        "Becoming.Admission",
-        "Becoming.Exclusion",
-        "Becoming.Exhaustion",
-        "Becoming.Regions",
-        "Becoming.Retaining",
-        "Becoming.Clearing",
-        "Becoming.Extension",
-        "Becoming.Metaethics",
-        "Becoming.Lifting",
-        "Becoming.Ranking",
-        "Becoming.ActiveReading",
-        "Becoming.LossMatching",
-        "Becoming.StrictTransport",
-        "Becoming.MatchedCourses",
-        "Becoming.Correspondence",
-        "Becoming.Descent",
-        "Becoming.Standpoints",
-        "Becoming.Significance",
-        "Becoming.ValuationFrames",
-        "Becoming.RelativePosition",
-        "Becoming.Interdependence",
-        "Becoming.Feeding",
-        "Becoming.Feedback",
-        "Becoming.BoundedSignificance",
-        "Becoming.Cuts",
-        "Becoming.EdgeClosure",
-        "Becoming.SeedReach",
-        "Becoming.ScopedReach",
-        "Becoming.Boundaries",
-        "Becoming.Relevance",
-        "Becoming.Testing",
-        "Becoming.Runaway",
-        "Becoming.Response",
-        "Becoming.TimedResponse",
-        "Becoming.Counterfactual",
-        "Becoming.Regrouping",
-        "Becoming.Selection",
-        "Becoming.Learning",
-        "Becoming.Hexagrams",
-        "Becoming.HexagramPlaces",
-        "Becoming.HexagramLaws",
-        "Becoming.HexagramSites",
-        "Becoming.HexagramSequences",
-        "Becoming.Withholding",
-        "Becoming.LoopReturn",
-        "Becoming.Pace",
-        "Becoming.RuleCapture",
-        "Becoming.ClosedCapture",
-        "Becoming.PatternPassing",
-        "Becoming.JointKeeping",
-        "Becoming.Undecided",
-        "Becoming.Junctures",
-        "Becoming.Commuting",
-        "Becoming.HexagramCommuting",
-        "Becoming.Tolerance",
-        "Becoming.Revision",
-        "Becoming.Contacts",
-        "Becoming.RegroupingSelection",
-        "Becoming.ReferencePlan",
-        "Becoming.ContinuingRevision",
-        "Becoming.Description",
-        "Becoming.Identification",
-        "Becoming.Learnable",
-        "Becoming.Assurance",
-        "Becoming.AssurancePlans",
-        "Becoming.Integers",
-        "Becoming.Segmentation",
-        "Becoming.Readout",
-        "Becoming.Dephasing",
-        "Becoming.ProjectedLaws",
-        "Becoming.JointPhase",
-        "Becoming.SummaryFutures",
-        "Becoming.Gated",
-        "Becoming.Viability",
-        "Becoming.Keeping",
-        "Becoming.Prelude",
-        "Becoming.Ideals",
-        "Becoming.ContingentPlans",
-        "Becoming.Actuation",
-        "Becoming.TreeSearch",
-        "Becoming.Dispatch",
-        "Becoming.FaultEnvelopes",
-        "Becoming.Transactions",
-        "Becoming.Reconfiguration",
-        "Becoming.PooledEnvelopes",
-        "Becoming.WitnessRefinement",
-        "Becoming.WitnessRefinementRuns",
-        "Becoming.ChanceFloors",
-        "Becoming.IntegerOrder",
-        "Becoming.Acceptance",
-        "Becoming.GuardHorizon",
-        "Becoming.Countdown",
-        "Becoming.Lasting",
-        "Becoming.Copying",
-        "Becoming.Retrodiction",
-        "Becoming.CrossSituational",
-        "Becoming.Likeness",
-        "Becoming.Distinguishing",
-        "Becoming.JointPlans",
-        "Becoming.Composition",
-        "Becoming.Joining",
-        "Becoming.Granularity",
-        "Becoming.HistoryLanguages",
-        "Becoming.HistoryIdeals",
-        "Becoming.HistoryIdealsTraces",
-        "Becoming.Verification",
-        "Becoming.Coverage",
-        "Becoming.Presentations",
-        "Becoming.Carriers",
-        "Becoming.BranchingCorrespondence",
-        "Becoming.JointCorrespondence",
-        "Becoming.ListFootprints",
-        "Becoming.Fragments",
-        "Becoming.LocalUnits",
-        "Becoming.JoiningContexts",
-        "Becoming.JoiningCodes",
-        "Becoming.JoiningRoles",
-        "Becoming.Postponement",
-        "Becoming.Novelty",
-        "Becoming.Reading",
-        "Becoming.PlaceTransitionNets",
-        "Becoming.SharedCodes",
-        "Becoming.ExchangePremises",
-        "Becoming.Readings",
-        "Becoming.MoveFormation",
-        "Becoming.Sensitivity",
-        "Becoming.Tail",
-        "Becoming.Courses",
-        "Becoming.Parting",
-        "Becoming.Onward",
-        "Becoming.Typicality",
-        "Becoming.Situations",
-        "Becoming.Propagation",
-        "Becoming.Regulation",
-        "Becoming.ListingRefutations",
-        "Becoming.Loops",
-        "Becoming.Remainder",
-        "Becoming.Routes",
-        "Becoming.Closing",
-        "Becoming.Thresholds",
-        "Becoming.Observation",
-        "Becoming.Frequency",
-        "Becoming.MutualDependence",
-        "Becoming.Gain",
-        "Becoming.Gluing",
-        "Becoming.Runs",
-        "Becoming.CourseWorlds",
-        "Becoming.LearnableRuns",
-        "Becoming.PartialReadout",
-        "Becoming.CodeAcquisition",
-        "Becoming.RouteFormation",
-        "Becoming.ResponseLearning",
-        "Becoming.LearnedGrouping",
-        "Becoming.ParityReadings",
-        "Becoming.FinerTraces",
-        "Becoming.HistorySums",
-        "Becoming.FormedLoops",
-        "Becoming.AttractionRuns",
-        "Becoming.ContactCourses",
-        "Becoming.ContextualRuns",
-        "Becoming.ContinuingRuns",
-        "Becoming.CopyCourses",
-        "Becoming.CounterfactualRuns",
-        "Becoming.CouplingTraces",
-        "Becoming.CourseRoles",
-        "Becoming.HorizonWebs",
-        "Becoming.IdentificationRuns",
-        "Becoming.LastingRuns",
-        "Becoming.LearningRuns",
-        "Becoming.ListedWebs",
-        "Becoming.ReferencePlanTraces",
-        "Becoming.RouteTraces",
-        "Becoming.SeekingRuns",
-        "Becoming.SelectionRuns",
-        "Becoming.SensitivityWebs",
-        "Becoming.SituationTraces",
-        "Becoming.StrengthFlows",
-        "Becoming.TypicalRuns",
-        "Becoming.WeightedTraces",
-        "Becoming.LevelCoupling",
-        "Becoming.Interleavings",
-        "Becoming.CensusCounts",
-        "Becoming.CensusBinding",
-        "Becoming.Unrolling",
-        "Becoming.Labels",
-        "Becoming.Enough",
-        "Becoming.Settling",
-        "Becoming.LastChange",
-        "Becoming.LimitVerification",
-        "Becoming.SelectionGap",
-        "Becoming.SelectionReach",
-        "Becoming.DrawnBeyond",
-        "Becoming.SelectionPool",
-        "Becoming.PoolResponse",
-        "Becoming.Rejoining",
-        "Becoming.Lexical",
-        "Becoming.Frontier",
-        "Becoming.FrontierFrames",
-        "Becoming.FrontierWorlds",
-        "Becoming.Direction",
-        "Becoming.ScoreRepresentation",
-        "Becoming.Alternatives",
-        "Becoming.Bundles",
-        "Becoming.ActivationCapacity",
-        "Becoming.Narrowing",
-        "Becoming.NarrowingRuns",
-        "Becoming.SecuredContent",
-        "Becoming.ProfileReach",
-        "Becoming.RenewalBound",
-        "Becoming.Handoff",
-        "Becoming.RuleHandoff"
-      ],
-      "declarations": [],
-      "declaration_counts": {},
       "textual_markers": {
         "sorry": [],
         "admit": [],
@@ -140343,6 +140474,178 @@
       },
       "print_axioms_commands": 30
     },
+    "5f299091c49d66ea428bbcd3e6213f9ea05ff7850fc6d4770eef807b15adc136": {
+      "byte_size": 18446,
+      "line_count": 347,
+      "imports": [
+        "Becoming.Retaining"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "WidensWithin",
+          "qualified_name_hint": "Becoming.Web.WidensWithin",
+          "line": 74
+        },
+        {
+          "kind": "theorem",
+          "name": "WidensWithin.exceeds",
+          "qualified_name_hint": "Becoming.Web.WidensWithin.exceeds",
+          "line": 81
+        },
+        {
+          "kind": "theorem",
+          "name": "WidensWithin.not_keeps",
+          "qualified_name_hint": "Becoming.Web.WidensWithin.not_keeps",
+          "line": 87
+        },
+        {
+          "kind": "theorem",
+          "name": "WidensWithin.not_narrowed",
+          "qualified_name_hint": "Becoming.Web.WidensWithin.not_narrowed",
+          "line": 92
+        },
+        {
+          "kind": "def",
+          "name": "reachWeb",
+          "qualified_name_hint": "Becoming.Web.reachWeb",
+          "line": 98
+        },
+        {
+          "kind": "theorem",
+          "name": "admits_reachWeb_iff",
+          "qualified_name_hint": "Becoming.Web.admits_reachWeb_iff",
+          "line": 106
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.includes_iff_beyond_within",
+          "qualified_name_hint": "Becoming.Flow.Balances.includes_iff_beyond_within",
+          "line": 128
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.widens_iff_others_within",
+          "qualified_name_hint": "Becoming.Flow.Balances.widens_iff_others_within",
+          "line": 146
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.mixed_iff_other_beyond",
+          "qualified_name_hint": "Becoming.Flow.Balances.mixed_iff_other_beyond",
+          "line": 160
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.mixed_of_tight",
+          "qualified_name_hint": "Becoming.Flow.Balances.mixed_of_tight",
+          "line": 179
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.widens_of_untaken_beyond",
+          "qualified_name_hint": "Becoming.Flow.Balances.widens_of_untaken_beyond",
+          "line": 196
+        },
+        {
+          "kind": "theorem",
+          "name": "Balances.widens_yet_own_changed",
+          "qualified_name_hint": "Becoming.Flow.Balances.widens_yet_own_changed",
+          "line": 211
+        },
+        {
+          "kind": "inductive",
+          "name": "Formation",
+          "qualified_name_hint": "Becoming.Drawing.Formation",
+          "line": 229
+        },
+        {
+          "kind": "inductive",
+          "name": "Place",
+          "qualified_name_hint": "Becoming.Drawing.Place",
+          "line": 235
+        },
+        {
+          "kind": "def",
+          "name": "firstStep",
+          "qualified_name_hint": "Becoming.Drawing.firstStep",
+          "line": 240
+        },
+        {
+          "kind": "def",
+          "name": "flow",
+          "qualified_name_hint": "Becoming.Drawing.flow",
+          "line": 244
+        },
+        {
+          "kind": "def",
+          "name": "drawerPart",
+          "qualified_name_hint": "Becoming.Drawing.drawerPart",
+          "line": 258
+        },
+        {
+          "kind": "def",
+          "name": "own",
+          "qualified_name_hint": "Becoming.Drawing.own",
+          "line": 264
+        },
+        {
+          "kind": "def",
+          "name": "web",
+          "qualified_name_hint": "Becoming.Drawing.web",
+          "line": 271
+        },
+        {
+          "kind": "def",
+          "name": "withheldLevel",
+          "qualified_name_hint": "Becoming.Drawing.withheldLevel",
+          "line": 293
+        },
+        {
+          "kind": "theorem",
+          "name": "balances",
+          "qualified_name_hint": "Becoming.Drawing.balances",
+          "line": 297
+        },
+        {
+          "kind": "theorem",
+          "name": "withheld",
+          "qualified_name_hint": "Becoming.Drawing.withheld",
+          "line": 303
+        },
+        {
+          "kind": "theorem",
+          "name": "own_widens",
+          "qualified_name_hint": "Becoming.Drawing.own_widens",
+          "line": 315
+        },
+        {
+          "kind": "theorem",
+          "name": "ample_widens",
+          "qualified_name_hint": "Becoming.Drawing.ample_widens",
+          "line": 324
+        },
+        {
+          "kind": "theorem",
+          "name": "tight_mixed",
+          "qualified_name_hint": "Becoming.Drawing.tight_mixed",
+          "line": 339
+        }
+      ],
+      "declaration_counts": {
+        "def": 8,
+        "inductive": 2,
+        "theorem": 15
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "5f530add1a26eea88d24a2185cb082fcc4eca3f8dbad5a200c8152c705ec6983": {
       "byte_size": 29921,
       "line_count": 575,
@@ -211034,6 +211337,306 @@
         "structure": 2,
         "theorem": 37
       },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "9780249c89cd9037a1bf9fa140ea66a01b7c62ca9ab40036c99f024e1b0abb68": {
+      "byte_size": 208442,
+      "line_count": 2536,
+      "imports": [
+        "Becoming.World",
+        "Becoming.Witnesses",
+        "Becoming.Frame",
+        "Becoming.Laws",
+        "Becoming.Labelled",
+        "Becoming.Inquiry",
+        "Becoming.Derivation",
+        "Becoming.ClassifiedBeliefProcesses",
+        "Becoming.MoveOutcomeProcesses",
+        "Becoming.Recurrence",
+        "Becoming.Diagonal",
+        "Becoming.Context",
+        "Becoming.ContextArrivalTraces",
+        "Becoming.Quantum",
+        "Becoming.Renewal",
+        "Becoming.Dependence",
+        "Becoming.Restoration",
+        "Becoming.Horizon",
+        "Becoming.Joint",
+        "Becoming.Experiment",
+        "Becoming.Mechanism",
+        "Becoming.Unfolding",
+        "Becoming.LawAlongRun",
+        "Becoming.Irreversibility",
+        "Becoming.Histories",
+        "Becoming.Branching",
+        "Becoming.Listing",
+        "Becoming.Stuttering",
+        "Becoming.Reordering",
+        "Becoming.IdleRemoval",
+        "Becoming.OrderNormal",
+        "Becoming.OneStep",
+        "Becoming.Weighted",
+        "Becoming.Transmission",
+        "Becoming.Succession",
+        "Becoming.Attraction",
+        "Becoming.Substitution",
+        "Becoming.Arising",
+        "Becoming.Flow",
+        "Becoming.Stock",
+        "Becoming.Change",
+        "Becoming.Population",
+        "Becoming.Identity",
+        "Becoming.Persistence",
+        "Becoming.Wholes",
+        "Becoming.Dissipation",
+        "Becoming.Locality",
+        "Becoming.Seeking",
+        "Becoming.Roles",
+        "Becoming.LabelledRoles",
+        "Becoming.Reserve",
+        "Becoming.Evolution",
+        "Becoming.Capture",
+        "Becoming.SelectionTerm",
+        "Becoming.Space",
+        "Becoming.Premises",
+        "Becoming.Sampling",
+        "Becoming.Tower",
+        "Becoming.Openness",
+        "Becoming.Decidedness",
+        "Becoming.Refinement",
+        "Becoming.CensusTable",
+        "Becoming.Counting",
+        "Becoming.Standing",
+        "Becoming.Resolution",
+        "Becoming.Amounts",
+        "Becoming.LeastLoss",
+        "Becoming.Entropy",
+        "Becoming.Units",
+        "Becoming.Imbalance",
+        "Becoming.Continuation",
+        "Becoming.RenewalFlow",
+        "Becoming.Admission",
+        "Becoming.Exclusion",
+        "Becoming.Exhaustion",
+        "Becoming.Regions",
+        "Becoming.Retaining",
+        "Becoming.OwnWidening",
+        "Becoming.Clearing",
+        "Becoming.Extension",
+        "Becoming.Metaethics",
+        "Becoming.Lifting",
+        "Becoming.Ranking",
+        "Becoming.ActiveReading",
+        "Becoming.LossMatching",
+        "Becoming.StrictTransport",
+        "Becoming.MatchedCourses",
+        "Becoming.Correspondence",
+        "Becoming.Descent",
+        "Becoming.Standpoints",
+        "Becoming.Significance",
+        "Becoming.ValuationFrames",
+        "Becoming.RelativePosition",
+        "Becoming.Interdependence",
+        "Becoming.Feeding",
+        "Becoming.Feedback",
+        "Becoming.BoundedSignificance",
+        "Becoming.Cuts",
+        "Becoming.EdgeClosure",
+        "Becoming.SeedReach",
+        "Becoming.ScopedReach",
+        "Becoming.Boundaries",
+        "Becoming.Relevance",
+        "Becoming.Testing",
+        "Becoming.Runaway",
+        "Becoming.Response",
+        "Becoming.TimedResponse",
+        "Becoming.Counterfactual",
+        "Becoming.Regrouping",
+        "Becoming.Selection",
+        "Becoming.Learning",
+        "Becoming.Hexagrams",
+        "Becoming.HexagramPlaces",
+        "Becoming.HexagramLaws",
+        "Becoming.HexagramSites",
+        "Becoming.HexagramSequences",
+        "Becoming.Withholding",
+        "Becoming.LoopReturn",
+        "Becoming.Pace",
+        "Becoming.RuleCapture",
+        "Becoming.ClosedCapture",
+        "Becoming.PatternPassing",
+        "Becoming.JointKeeping",
+        "Becoming.Undecided",
+        "Becoming.Junctures",
+        "Becoming.Commuting",
+        "Becoming.HexagramCommuting",
+        "Becoming.Tolerance",
+        "Becoming.Revision",
+        "Becoming.Contacts",
+        "Becoming.RegroupingSelection",
+        "Becoming.ReferencePlan",
+        "Becoming.ContinuingRevision",
+        "Becoming.Description",
+        "Becoming.Identification",
+        "Becoming.Learnable",
+        "Becoming.Assurance",
+        "Becoming.AssurancePlans",
+        "Becoming.Integers",
+        "Becoming.Segmentation",
+        "Becoming.Readout",
+        "Becoming.Dephasing",
+        "Becoming.ProjectedLaws",
+        "Becoming.JointPhase",
+        "Becoming.SummaryFutures",
+        "Becoming.Gated",
+        "Becoming.Viability",
+        "Becoming.Keeping",
+        "Becoming.Prelude",
+        "Becoming.Ideals",
+        "Becoming.ContingentPlans",
+        "Becoming.Actuation",
+        "Becoming.TreeSearch",
+        "Becoming.Dispatch",
+        "Becoming.FaultEnvelopes",
+        "Becoming.Transactions",
+        "Becoming.Reconfiguration",
+        "Becoming.PooledEnvelopes",
+        "Becoming.WitnessRefinement",
+        "Becoming.WitnessRefinementRuns",
+        "Becoming.ChanceFloors",
+        "Becoming.IntegerOrder",
+        "Becoming.Acceptance",
+        "Becoming.GuardHorizon",
+        "Becoming.Countdown",
+        "Becoming.Lasting",
+        "Becoming.Copying",
+        "Becoming.Retrodiction",
+        "Becoming.CrossSituational",
+        "Becoming.Likeness",
+        "Becoming.Distinguishing",
+        "Becoming.JointPlans",
+        "Becoming.Composition",
+        "Becoming.Joining",
+        "Becoming.Granularity",
+        "Becoming.HistoryLanguages",
+        "Becoming.HistoryIdeals",
+        "Becoming.HistoryIdealsTraces",
+        "Becoming.Verification",
+        "Becoming.Coverage",
+        "Becoming.Presentations",
+        "Becoming.Carriers",
+        "Becoming.BranchingCorrespondence",
+        "Becoming.JointCorrespondence",
+        "Becoming.ListFootprints",
+        "Becoming.Fragments",
+        "Becoming.LocalUnits",
+        "Becoming.JoiningContexts",
+        "Becoming.JoiningCodes",
+        "Becoming.JoiningRoles",
+        "Becoming.Postponement",
+        "Becoming.Novelty",
+        "Becoming.Reading",
+        "Becoming.PlaceTransitionNets",
+        "Becoming.SharedCodes",
+        "Becoming.ExchangePremises",
+        "Becoming.Readings",
+        "Becoming.MoveFormation",
+        "Becoming.Sensitivity",
+        "Becoming.Tail",
+        "Becoming.Courses",
+        "Becoming.Parting",
+        "Becoming.Onward",
+        "Becoming.Typicality",
+        "Becoming.Situations",
+        "Becoming.Propagation",
+        "Becoming.Regulation",
+        "Becoming.ListingRefutations",
+        "Becoming.Loops",
+        "Becoming.Remainder",
+        "Becoming.Routes",
+        "Becoming.Closing",
+        "Becoming.Thresholds",
+        "Becoming.Observation",
+        "Becoming.Frequency",
+        "Becoming.MutualDependence",
+        "Becoming.Gain",
+        "Becoming.Gluing",
+        "Becoming.Runs",
+        "Becoming.CourseWorlds",
+        "Becoming.LearnableRuns",
+        "Becoming.PartialReadout",
+        "Becoming.CodeAcquisition",
+        "Becoming.RouteFormation",
+        "Becoming.ResponseLearning",
+        "Becoming.LearnedGrouping",
+        "Becoming.ParityReadings",
+        "Becoming.FinerTraces",
+        "Becoming.HistorySums",
+        "Becoming.FormedLoops",
+        "Becoming.AttractionRuns",
+        "Becoming.ContactCourses",
+        "Becoming.ContextualRuns",
+        "Becoming.ContinuingRuns",
+        "Becoming.CopyCourses",
+        "Becoming.CounterfactualRuns",
+        "Becoming.CouplingTraces",
+        "Becoming.CourseRoles",
+        "Becoming.HorizonWebs",
+        "Becoming.IdentificationRuns",
+        "Becoming.LastingRuns",
+        "Becoming.LearningRuns",
+        "Becoming.ListedWebs",
+        "Becoming.ReferencePlanTraces",
+        "Becoming.RouteTraces",
+        "Becoming.SeekingRuns",
+        "Becoming.SelectionRuns",
+        "Becoming.SensitivityWebs",
+        "Becoming.SituationTraces",
+        "Becoming.StrengthFlows",
+        "Becoming.TypicalRuns",
+        "Becoming.WeightedTraces",
+        "Becoming.LevelCoupling",
+        "Becoming.Interleavings",
+        "Becoming.CensusCounts",
+        "Becoming.CensusBinding",
+        "Becoming.Unrolling",
+        "Becoming.Labels",
+        "Becoming.Enough",
+        "Becoming.Settling",
+        "Becoming.LastChange",
+        "Becoming.LimitVerification",
+        "Becoming.SelectionGap",
+        "Becoming.SelectionReach",
+        "Becoming.DrawnBeyond",
+        "Becoming.SelectionPool",
+        "Becoming.PoolResponse",
+        "Becoming.Rejoining",
+        "Becoming.Lexical",
+        "Becoming.Frontier",
+        "Becoming.FrontierFrames",
+        "Becoming.FrontierWorlds",
+        "Becoming.Direction",
+        "Becoming.ScoreRepresentation",
+        "Becoming.Alternatives",
+        "Becoming.Bundles",
+        "Becoming.ActivationCapacity",
+        "Becoming.Narrowing",
+        "Becoming.NarrowingRuns",
+        "Becoming.SecuredContent",
+        "Becoming.ProfileReach",
+        "Becoming.RenewalBound",
+        "Becoming.Handoff",
+        "Becoming.RuleHandoff"
+      ],
+      "declarations": [],
+      "declaration_counts": {},
       "textual_markers": {
         "sorry": [],
         "admit": [],
@@ -323195,6 +323798,23 @@
       },
       "print_axioms_commands": 20
     },
+    "e28621ec8f94afe543d29ac81f48e68b595f7c97076995d50fa6ccd9fd2e27df": {
+      "byte_size": 1183,
+      "line_count": 26,
+      "imports": [
+        "Becoming.OwnWidening"
+      ],
+      "declarations": [],
+      "declaration_counts": {},
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 25
+    },
     "e28963db258319ddb12d447b869841aa593eb36f0999013fc450f3bf7a6e03b1": {
       "byte_size": 2617,
       "line_count": 73,
@@ -359622,9 +360242,17 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251831853906000/SuccessionPreparation.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251872725947000/SuccessionPreparation.lean"
     ],
+    "01f7116b710c8185119f36679ad50c9a29e1d8fa85d45d87d17592e415cd230b": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/Becoming/OwnWidening.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OwnWidening.lean"
+    ],
     "07eaa1fcd796e8c23e75cd1fd2b4df5c4c7cccde9fe8c94380c4099534049147": [
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u5-general-structure/Becoming/NarrowingRuns.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/NarrowingRuns.lean"
+    ],
+    "09ed88eb0b7acfb3cb5b60d6d2a37c41735de26266b1ff03d5b422a9574a7c28": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Retaining.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean"
     ],
     "0d205ad3ce57311bf73fd6bf4266202877c2138ca2980531b8dbe7a1f2da71f3": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/history/learning/protocol-completion-development/20261006T011134517329Z/ProtocolCompletion.lean",
@@ -359679,6 +360307,10 @@
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-p73-landing/periphery/LearningCorrespondence.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearningCorrespondence.lean"
     ],
+    "15ca795c65405065276fa214f3a151c19f31fc9c8923e2e37e37554b17ee8aa7": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Restoration.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Restoration.lean"
+    ],
     "1714fb954f27170cbeeb6d300a6c1fe9e35403b514af45f5b1bfbf9ab1c131fa": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/SemanticWitnessFrontier.lean",
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/source-snapshots/SemanticWitnessFrontier.lean"
@@ -359687,10 +360319,22 @@
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/PracticalReach.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean"
     ],
+    "1c85d21fa7ec00debcac668785b51fdd7cdc3a97a66d50c6700047956cdaf5df": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Dependence.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
+    ],
     "21a212f1b6bfa4e995261f71aa28ed8e25f92cbf149b638e91a1e411135ff25a": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251812919283000/SuccessionWitness.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251831853906000/SuccessionWitness.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251872725947000/SuccessionWitness.lean"
+    ],
+    "236b6eb72050fd5c70c720cd5ccd82d732b7c90f423fe12b9f10849cdc4b2ea8": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Locality.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean"
+    ],
+    "23efa4c2ed7a38091b2d26cf42aee5a0c6a4c140ed4f67595f5389e8ed6e3382": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Renewal.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean"
     ],
     "25e02592bbc0035c29bb6481e2e75f5ac2962f919444e3039e8b0ac8dfbac444": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791249884430117000/EvaluativeSuccession.lean",
@@ -359831,6 +360475,10 @@
       "experiments/recipient-value-learning/formal/development/20261006T013049752318Z/OfferedChoiceBounds.lean",
       "experiments/recipient-value-learning/formal/development/20261006T013145216682Z/OfferedChoiceBounds.lean"
     ],
+    "548b1523ea8f0f9d6b08f6311baa9cc6318669e0097cd2e24605ba3ed8eb9ff2": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Frame.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean"
+    ],
     "56dcdccc9f4ef2c44e268e688d6f4a804b2c61a9527107c10a417d3bb8ad5538": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254295824849000/PublicationBridge.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254333566156000/PublicationBridge.lean",
@@ -359854,6 +360502,10 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255039697090000/RecipientAction.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255132840263000/RecipientAction.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RecipientAction.lean"
+    ],
+    "5824b1de37fb2fcce72f0f4df0804ddb0802de74a5fa289a6fad95746b72b411": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Admission.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean"
     ],
     "594528f984e6bbbbfe181b52a3a70c0393f3302b665bb34b7da09498e86da1a8": [
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/nondual-applicability/repair-attempt-02.lean",
@@ -359922,6 +360574,10 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375135188720000/ConsequenceTransmission.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375322294089000/ConsequenceTransmission.lean"
     ],
+    "6e0fdea63dbd3bc1d92d6df2d8e68216436e1a916d1f36ce9872da25c3fe64eb": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Roles.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean"
+    ],
     "6f53d92de64a31f515df7f128e2c31ebb08a9df6d66627141df5eb258f58c1a7": [
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/DevelopedResponse.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375322294089000/DevelopedResponse.lean"
@@ -359933,6 +360589,10 @@
     "75292e115cf526ec42c2ec96102c3902c05999ba5cce5b0fc3624bbf09011394": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/PhiOperator.lean",
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/source-snapshots/PhiOperator.lean"
+    ],
+    "790cf03bbfa755bde10d6a0c3086e797844c92ff11e0528e7f4b761eb5d439f4": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Flow.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean"
     ],
     "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254295824849000/ReasonPreparation.lean",
@@ -359949,6 +360609,10 @@
     "7f3950e1311b1be918c6a70a9e60805215f502ec9b3bb6d5d7b7aa485748956a": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/FullGUTNativeFrontier.lean",
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/source-snapshots/FullGUTNativeFrontier.lean"
+    ],
+    "806e95fad20b5a22ad532429698511ec066b63e9160a1018f1b7a736e6724176": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Prelude.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean"
     ],
     "81b813530ac97393e2c914d610989c248c2868ab336daf86bbb6f4c146f19b87": [
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/CayleyKernel.lean",
@@ -360031,6 +360695,14 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254295824849000/PlasticityPreparation.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254333566156000/PlasticityPreparation.lean"
     ],
+    "9d05b714c28d3497235330e5d5fb4221415ea3ae25ec32d730425299b5479428": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/World.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean"
+    ],
+    "9ecb1747568c0ac4dd9befc0cdaad0511321b439cea7e60ecfc4726b57be037f": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Change.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean"
+    ],
     "a002d04a7c7334830a30f22d6c16f2ce6d7d918bc077b132281208b847b80b2b": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/EvaluatorGrounding.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean"
@@ -360040,6 +360712,10 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/history/learning/protocol-completion-development/20261006T011134517329Z/PredictionProtocolCompletion.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/history/learning/protocol-completion-development/preflight-comment-token/PredictionProtocolCompletion.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolCompletion.lean"
+    ],
+    "a360bf56d40bb977b686bd8756651357f995c5133d22cdd231ed79a71dc5899b": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Regions.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean"
     ],
     "a3cedffa92ec8d091466683af8d439154c7350a9cd49c8ddf3424b0d144c35c5": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251476933938000/EvaluativeSuccession.lean",
@@ -360076,6 +360752,10 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PublicationBudget.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean"
     ],
+    "a9be4cf09e2d1a6a60fd88ed7a72c3799f7919e981a7e1894f4ec48b8637d6db": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Witnesses.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Witnesses.lean"
+    ],
     "aa2da76bae0b742b0966d856334ed0cd7e29ccf05ce33b0b674a00e5e0689578": [
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/system-individuation-review/20261007T233530.588639Z/SystemIndividuation.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/variation-warrant-review/20261007T234507.242662Z/SystemIndividuation.lean",
@@ -360110,8 +360790,17 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PaidRecipientReasons.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean"
     ],
+    "b6cf1bcbc4bb2789534857e75e1e3dae51f2a9e60c5eaf6cc61221dd71ee862a": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Reserve.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean"
+    ],
+    "b7405bce742da657308ed1cb3a962823d9aaa3a560f9aaa92b1c3ad1338b4ed1": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Continuation.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
+    ],
     "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/RelationalRenewal.lean",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/RelationalRenewal.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean"
     ],
     "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604": [
@@ -360139,6 +360828,10 @@
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/packaged-reproduction/source-snapshots/T_GUT.lean",
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/source-snapshots/T_GUT.lean"
     ],
+    "cf6c388ea4a739f6f3ec97b50c9fe639b77acc73a4b10439481dbe70358435a6": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Arising.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean"
+    ],
     "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254295824849000/RecipientArchive.lean",
@@ -360163,6 +360856,10 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791250912038566000/SuccessionWitness.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791250934371742000/SuccessionWitness.lean"
     ],
+    "d7cf70544495c135366166d401bf10bdfd0be55bf362bdd59b2b186258cff6cd": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Space.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean"
+    ],
     "d8830043237445543c06727dd85adefb7a0cf783648c877c7dcd639f305c3300": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251310340708000/SuccessionWitness.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251332407766000/SuccessionWitness.lean"
@@ -360181,6 +360878,14 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/development/1791254158787477000/ApplicationEvidence.lean"
     ],
+    "dd51aa6f8eaafe4731e5a64462eb176d5c3e19392a162e25095f58bf4fe2b9f7": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Amounts.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Amounts.lean"
+    ],
+    "df1e36a3a90ebab3af01572de71f5aa14c3d32f1c015b209e29114fda2385e7d": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Population.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean"
+    ],
     "df54d86981213e4dbb14d6b707793a244971dbe084d2ac9123b21bf49e0b6e9a": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255039697090000/PlasticityWitness.lean",
@@ -360197,6 +360902,7 @@
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/system-individuation-review/20261007T233530.588639Z/GenerativeCore.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/variation-warrant-review/20261007T234507.242662Z/GenerativeCore.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/variation-warrant-review/20261007T234545.254086Z/GenerativeCore.lean",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/GenerativeCore.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375037098271000/GenerativeCore.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375135188720000/GenerativeCore.lean",
@@ -360230,6 +360936,7 @@
     ],
     "e67ee59057675ac686f35ff210a01161eff80bad6195b59fc52a286467ac7e7e": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/Becoming.Evolution.lean",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Evolution.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean"
     ],
     "ecdd47fbd72a3ca56ba3a2c1700b2eb3b9580d819e6776e3bc5681a8fce234e6": [
@@ -360259,6 +360966,10 @@
     "f191c6c5edb18770b0db8657da3f5f25270531f788f8dd81e01fa34e996f9f21": [
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/.build/Becoming/Interleavings.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/Becoming/Interleavings.lean"
+    ],
+    "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ow1-own-widening/tree/.build/Becoming/Dissipation.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean"
     ],
     "f3801a35fc3357004c282080d28bacb7b586642a82763dd090da561c62d438fe": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791250219383289000/EvaluativeSuccession.lean",
