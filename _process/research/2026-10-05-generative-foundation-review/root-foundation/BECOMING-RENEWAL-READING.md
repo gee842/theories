@@ -10802,3 +10802,60 @@ The kit is [`development/r46-one-renumbering/`](development/r46-one-renumbering/
 - **Records and docs.** [the-world-an-interleaving-builds](../../../../theories/becoming/results/records/the-world-an-interleaving-builds.md) has the laws above with their premises, the three witnesses as counterexamples, the open part replaced by the boundary, and in its correspondence what the renumbering gives the necessity target and §0 block A; a history note (`records_r46.py`); the hash-only re-points through `tools/research/repoint.py`. Chapter, both editions: §0 block A's shared-index row, §1.4 (in words, two bullets, "Not shown", the reading), §8.1 item 1, and §9 from the receipt.
 
 **Self-review.** The premise Touching is the honest one: an exchange touching nothing has no own course to be found in, and the witness shows the courses do not fix it. The positive part of the correspondence is stated with its exact footprint, and the negative part is a theorem (only the identity keeps the around footprint's order), not a failed attempt. That activity is decided (`touchAt`) changes the World's definition, not its content (`world_active_iff`); every kept statement keeps its type (sigcheck). The renumbering's first relatum is a choice in the definition only: `renumber_spec` shows every touched relatum gives the same step.
+## 253. The margin as a measured quantity (MQ1)
+
+```text
+Result(s): none new about the unfolding; the margin operationalized by intervention and the laws
+       written in it tested on two test beds, predictions frozen before the runs (b14f7b739; round 2
+       for A1 and A3, 3b991bb8d) and every verdict kept.
+Delta: SA1 found the central laws near-definitional, and CG1 (section 240) measured one margin and
+       one collapse-rate bound. A margin law holds the rest's exchanges fixed (Flow.WithheldLevels),
+       and under that counterfactual (2) draws add / time to break = margin / net draw and (3) damage
+       iff net draw exceeds the margin are identities (B1: 456 records, 0 mismatches). The testable
+       content lies in the margin measured with the rest responding: pulse margin (largest one-shot
+       removal survived), largest sustained draw Y, the reward's coupling (replay with the condition
+       perturbed), blind draw (draw on a condition with zero measured coupling).
+Premises / bridges: R (between need and level, net renewal is >= 0 and <= Y: the measured gate);
+       H1 (training = selection through the reward); H2 (learners near the best response).
+       Test bed A is a stochastic two-phase simulation of Dai et al. 2012's yeast, parameters set
+       from the paper's reported facts (not its table S1), stated as simulation; test bed B a lawn
+       gridworld with gated, capped regrowth, exact best responses and tabular learners.
+Verdicts: A2 passed 22/22 (mean break day inside [m0/H - 1, (m0 - H)/(H - Y) + 1] with m0 and Y
+       measured, four dilution factors, two starts); A1 passed and A1m passed in round 2 (history adds
+       nothing in a Markov system; a hidden lag state is detected, p to 1e-51; round 1 degenerate, the
+       harvest beyond the margin); A3 passed 12/12 in round 2 (under a standing draw H the point of
+       no return lies above need + H, 1.4-4.1 H above the need; round 1 failed 6/12 on a protocol
+       error); A4a-c passed 12/12 (two harvesters' harms super-additive, about 20% at 0.3Y each,
+       collapse where each within Y and together beyond; draws exactly additive in the frozen-rest
+       accounting). B1 passed; B2 failed (coupling measured on a course is course-relative: 5 joint
+       courses saturate a cell); B3, B4 passed for the best response (side effects in five thin
+       variants predicted out of sample from blind draw in the ample variant, 8/8 and 8/8 in band,
+       reference-outcome baseline 0/8) and failed for learners (H2: 5-7.75 deliveries against 9,
+       behaviour varying with how much the observed lawn varies); B5 failed on one cell (V4's B left
+       at 3, its route shut by A; every route-limiting cell left at level 1, the need) and on the
+       learners' transfer clause (74% < 80%) while learners kept 160/160 cells alive; B6 vacuous for
+       the best response, passed for learners (2 deaths, both at H - 4); B7 passed for the best
+       response (4/5), failed for learners (6/50) and for the band (3/13). D1-D2 on Dai et al.'s
+       Dryad data frozen, not run: Ren approved the download ("please"), Dryad's bot check blocks it.
+Evidence: experiments/margin-measured (README with the verdict table, both freezes, results,
+       VERDICTS.json per round, calibrations); Python standard library, CPU, about 13 minutes over
+       12 cores.
+Boundary: A is a simulation (near-fold fluctuations below the paper's; culture volume assumed;
+       A1m's lag state invented to give the test power); A2 and A3 hold by the mathematics in the
+       deterministic limit, so they test the measurements under noise, not new dynamics. B is small
+       and deterministic; its learners are a bridge that did not hold. No real data were analysed.
+Output → input: the margin is a measurable state quantity of the regime, not of the condition
+       alone: measurable by intervention, and with Y it bounds time to break whatever the history
+       where the state is the level; its need moves with standing draws (A3), so the theory's
+       margin has to take need from the whole flow including them; damage on a shared condition is
+       not additive across parts though draws are (A4), so a part's harm read by removal is not its
+       draw. Blind draw against margin predicts side effects for an optimizer, and coupling makes
+       the optimizer spend the margin to the need (B4, B5): own widening at zero margin
+       (Flow.Balances.mixed_of_tight), the case two such agents together break (B7; post hoc, also
+       V0). CG2's open stochastic form of the law (section 250) has its measured counterpart in A2's
+       band. Open: D1-D2 on real yeast (whether density is the state), a learner that reaches the
+       best response in B, and a statement of the need under standing draws on the spine (the
+       withheld levels' need against the responsive run's).
+```
+
+**Self-review.** Everything in round 1 was frozen and committed before any test run. Before the freeze I ran test bed A's calibration, one best-response solve of the reference variant, a learner timing and a smoke run (all disclosed). Round 1 exposed two configuration errors, both in my code, not in the theory: A1's harvest exceeded the starting margin, and A3 grew one unharvested day. They were corrected in a second freeze that changed configurations only. Round 1's verdicts stand. The strongest results are A4 (beyond the frozen-rest law, could have been sub-additive, was not in any cell) and B4 for the best response (an out-of-sample prediction that the reference outcome gets 0/8 right). The strongest negatives are the learners (B3, B4, B7), whose failures are H2's: CG1's lesson again, in a smaller world. A2 and A3 test measurements, not dynamics. The one test against nature, D1-D2, did not run, so nothing here is yet empirical support beyond a simulation set from a paper.

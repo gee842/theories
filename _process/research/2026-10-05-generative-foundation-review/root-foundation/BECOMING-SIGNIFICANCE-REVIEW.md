@@ -316,3 +316,38 @@ Supplied premises / correspondence: Barrett 2013; Diekert 2017; Laurent-Lucchett
 Evidence: web searches on 20 October 2026; Willis et al. read in the arXiv HTML (definition of s*, the Commons Harvest estimate, PPO, selfish equilibria without exchange); Barrett 2013 and Palfrey-Rosenthal 1984 by abstract; the others by abstract or index
 Boundary: AI check, one session; Barrett's body text not read (PDF text not extractable); dynamic-games literature on stochastic thresholds after 2015 searched only by keyword
 Integration: experiment CG2 (experiments/commons-outrun) and its study section; §7's boundary text through CG1b / R44's owner
+```
+
+---
+
+<a id="margin-measured-check"></a>
+## A check before building: the margin as a measured quantity (20 October 2026, MQ1)
+
+An AI check (one session, started from the significance-aim session), made before any experiment. The question: are the margin's three laws known? They are (1) the margin as a state variable (same margin, same net draw, same time to break, whatever the history); (2) draws on a shared condition add, and time to break = margin / total net draw; (3) damage iff the cumulative (blind) draw exceeds the margin. And what would make the margin a measured quantity rather than a definition? **Verdict: (3) is known as a definition (precariousness; ruin; budgets), (2) as an accounting convention, and (1) is assumed and not tested in the Allee and tipping-point literature. Nothing found states the three as laws of one measured quantity, or ties blind draw to where side effects occur. Built as an experiment, not as Lean** ([experiments/margin-measured](../../../../experiments/margin-measured/README.md), study §253).
+
+| Known form | Where | Bearing |
+|---|---|---|
+| Resilience as basin size; **precariousness** as the current state's distance to a threshold; critical slowing down | Holling 1973; Beisner, Haydon and Cuddington 2003; Walker, Holling, Carpenter and Kinzig, *Ecology and Society* 9:5 (2004); Scheffer et al., *Nature* 461:53 (2009) | (3) as a definition; (1) assumed wherever a one-dimensional landscape is drawn; memory a known caveat (arXiv 2602.20365) |
+| Yeast in sucrose under daily dilution: strong Allee effect, bistable for dilution 500-1600, fold above 1600, salt shock kills near the fold, variance and autocorrelation rise; the stable and unstable points read from pooled day-to-day ratios | Dai, Vorselen, Korolev and Gore, *Science* 336:1175 (2012) (full text read); data on Dryad doi:10.5061/dryad.p2481134 | A measured need that rises with the standing draw; pooling over days assumes (1) |
+| Stability (return rate) and resilience (basin size) decouple under different drivers; slower recovery in space before collapse | Dai, Korolev and Gore, *PNAS* 112:10056 (2015); *Nature* 496:355 (2013) | The margin and the renewal rate are distinct; time to break needs both |
+| Boundaries on control variables, a safe operating space | Rockström et al., *Nature* 461:472 (2009); Richardson et al., *Sci. Adv.* 9:eadh2458 (2023) | A margin per condition by expert assessment; draws summed into a control variable ((2) as convention) |
+| Ruin when cumulative claims exceed surplus plus premiums; Lundberg's bound | Lundberg 1903; Cramér 1930; capital buffers | (2) and (3) as the definition of ruin, with income independent of the level |
+| Surplus production, MSY, depensation | Schaefer 1954; fisheries | The largest sustained draw as a measured number; the point of no return moving with harvest |
+| Side effects against inaction or stepwise baselines; irreversible side effects; AUP in SafeLife | Krakovna et al. 2018; Leike et al. 2017; Turner, Hadfield-Menell and Tadepalli 2020; Turner, Ratzlaff and Tadepalli 2020; Wainwright and Eckersley 2020 | Measured by intervention; no renewable condition, margin, renewal rate or summed draws |
+| Budgets on expected cumulative cost | Altman 1999; Achiam et al. 2017 (CPO) | (3) as a specification, with the cost observed (coupled by construction) |
+| A proxy optimizer drives unmentioned attributes to their bounds | Zhuang and Hadfield-Menell 2020 | The blind-draw half of (3) for an ideal optimizer |
+
+**What the theory's statement adds, read exactly.** The margin law's levels without the part hold every other exchange fixed (`Flow.WithheldLevels`). Under that counterfactual, (2) and (3) are identities of the balance, which is SA1's verdict, now checked in 456 records with no mismatch. A real condition's renewal responds to its level. So the content the theory can contribute is empirical: whether the margin measured by intervention (pulse margin, largest sustained draw, coupling by replay, blind draw) behaves as its laws say.
+
+**What the experiment found** (frozen predictions, two rounds). The pulse margin and the largest sustained draw, both measured, bound time to break in every cell of a simulated Allee system, whatever the history, and the same test detects a hidden state when one is added. Under a standing draw the need rises by more than the draw: the need is the regime's, not the condition's. Harms on a shared renewable condition were super-additive in every cell, though draws add. In a lawn gridworld, the best response's blind draw in an ample-margin variant predicted out of sample which cells die and when in five thin variants (8/8; the reference outcome 0/8), and a coupled reward made the best response spend the route-limiting margin exactly to the need. Tabular learners failed the transfer through H2. The one test on real data (Dai et al.'s published densities: is density the state, and does the need separate fates?) is frozen and not run, because Dryad's bot check blocks the download Ren approved.
+
+**Significance, without inflation.** The operational definitions work, and the qualifications are the substance: the need depends on the standing draws, damage does not add across parts, and blind draw predicts side effects for an optimizer, not for a learner that sees the condition but is far from optimal. None of this is new mathematics. A2 and A3 hold by the mathematics in the deterministic limit. The super-additivity of harm (A4) follows from the renewal curve's concavity once posed, and fisheries and ecology would recognise it. What is new is the frozen, quantitative test of the theory's margin as an operational quantity, and the statement of where its laws need the regime and not the condition.
+
+```text
+Result(s): none new as mathematics; (1)-(3) known as definition, convention and assumption respectively; experiment MQ1
+Delta: the margin's laws tested on the margin measured with the rest responding; the need is the regime's; harms super-additive though draws add; blind draw predicts side effects for an optimizer
+Supplied premises / correspondence: Holling 1973; Beisner et al. 2003; Walker et al. 2004; Scheffer et al. 2009; Dai et al. 2012, 2013, 2015; Rockström et al. 2009; Richardson et al. 2023; Lundberg 1903; Cramér 1930; Schaefer 1954; Krakovna et al. 2018; Leike et al. 2017; Turner et al. 2020 (two); Wainwright-Eckersley 2020; Altman 1999; Achiam et al. 2017; Zhuang-Hadfield-Menell 2020
+Evidence: web searches on 20 October 2026; Dai et al. 2012 read in full; the others by abstract, index or secondary description
+Boundary: AI check, one session; Dai et al.'s supplement (table S1) not available; Walker et al. 2004 and the ruin and fisheries sources from standard knowledge, not reread; the real-data test not run
+Integration: experiments/margin-measured; study §253; board MQ1
+```
