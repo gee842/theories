@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-20T00:09:49+00:00",
+  "reviewed_at_utc": "2026-10-20T07:12:14+00:00",
   "statement": {
-    "en": "A loop closes a difference only through a link that gives back less than it received. A return map below what it receives closes within d turns, exactly. With whole-number factors a loop closes at once, keeps the difference or runs away: nothing between.",
-    "zh": "回路只经一个给回少于所受的环节闭合差别。低于所受的回返映射在 d 圈之内闭合，且恰好如此。整数倍率下，回路立即闭合、保持差别或失控：中间没有。"
+    "en": "A loop closes a difference only through a link giving back less than it received; with whole-number factors it closes at once, keeps it or runs away. Around a cycle of exact links one turn is the return map's course plus what the cycle held, strictly more for two or more conditions.",
+    "zh": "回路只经给回少于所受的环节闭合差别；整数倍率下立即闭合、保持或失控。绕精确环节之回路，一圈是回返映射的进程加回路所持者，两个或更多条件时严格更多。"
   },
   "laws": [
     {
@@ -82,18 +82,77 @@
         "Becoming.LoopReturn.selfLoop_gap",
         "Becoming.LoopReturn.carried_around_course"
       ]
+    },
+    {
+      "en": "Around a cycle of m + 1 links each giving exactly its strength (at every step and from any levels the formations present give into the next condition exactly w i times the current level of the one before, and nothing else), the carried amount at the loop one turn after t is the product of the strengths times the carried amount at t, with what the loop held at t + m and the last strength times what the intermediate conditions held as the turn passed them, carried on by the strengths after them; so it is the return map's course after one turn with what the loop gained over the turn's first m steps and that carried-on amount, and equal to the course exactly where both are nothing. carried_along_exact states carried_along's bound with what it leaves out.",
+      "zh": "绕 m + 1 个环节、每个恰按其强度给出的回路（每一步、对任何水平，在场的形成给下一个条件的恰是 w i 乘前一条件的当前水平，此外无他），t 之后一圈回路所携带的量，是诸强度之积乘 t 时的携带量，加上回路在 t + m 所持，再加最后一个强度乘中间条件在这一圈经过时所持、由其后强度继续传下者；所以它是回返映射一圈后的进程，加上回路在这一圈前 m 步所增与那继续传下的量，二者皆无时恰等于该进程。carried_along_exact 陈述 carried_along 之界及其所略。",
+      "declarations": [
+        "Becoming.LoopReturn.GivesExactly",
+        "Becoming.LoopReturn.heldAlong",
+        "Becoming.LoopReturn.link_rearranged",
+        "Becoming.LoopReturn.carried_along_exact",
+        "Becoming.LoopReturn.carried_around_exact",
+        "Becoming.LoopReturn.carried_around_excess",
+        "Becoming.LoopReturn.around_course_iff"
+      ]
+    },
+    {
+      "en": "On a ring of m + 2 conditions, each receiving exactly w times the current level of the one before, every condition starting at D, each condition grows as a self-loop of strength w would, (1 + w) ^ t * D; since 1 + w ^ (m + 2) < (1 + w) ^ (m + 2) for a positive w, carried_around_course's bound holds on this ring's cycle (it is coupled with strength w at every step) and is strict from a positive D: equality to the return map's course fails around every cycle of two or more conditions, and holds for one (selfLoop_carried).",
+      "zh": "在 m + 2 个条件的环上，每个条件恰收到前一条件当前水平的 w 倍，各条件都从 D 开始，则每个条件都像强度 w 的自回路那样增长，为 (1 + w) ^ t * D；因正的 w 有 1 + w ^ (m + 2) < (1 + w) ^ (m + 2)，carried_around_course 之界在此环的回路上成立（每一步都以强度 w 耦合），且自正的 D 起为严格：绕两个或更多条件的每个回路，与回返映射进程的相等都不成立；一个条件时成立（selfLoop_carried）。",
+      "declarations": [
+        "Becoming.LoopReturn.RingGives",
+        "Becoming.LoopReturn.ring_even",
+        "Becoming.LoopReturn.product_const",
+        "Becoming.LoopReturn.one_add_pow_lt",
+        "Becoming.LoopReturn.Ring.pred",
+        "Becoming.LoopReturn.Ring.conditions",
+        "Becoming.LoopReturn.Ring.strengths",
+        "Becoming.LoopReturn.Ring.amount",
+        "Becoming.LoopReturn.Ring.cycle",
+        "Becoming.LoopReturn.Ring.cycle_start",
+        "Becoming.LoopReturn.Ring.cycle_back",
+        "Becoming.LoopReturn.Ring.pred_cycle",
+        "Becoming.LoopReturn.Ring.pred_mem",
+        "Becoming.LoopReturn.Ring.cycle_mem",
+        "Becoming.LoopReturn.Ring.total_at",
+        "Becoming.LoopReturn.Ring.gives",
+        "Becoming.LoopReturn.Ring.coupled",
+        "Becoming.LoopReturn.Ring.givesExactly",
+        "Becoming.LoopReturn.Ring.amount_eq",
+        "Becoming.LoopReturn.Ring.exceeds_course",
+        "Becoming.LoopReturn.Ring.bound_strict"
+      ]
+    },
+    {
+      "en": "A difference at one condition of Rejoining as a return map: where two flows balance on c and, from step s, each course's level of c with what it gives c and what the other takes stand at f of the gap before (RespondsByReturn, exactly the gap's step, responds_iff), the gap at s + n is f's course after n turns, one turn a step; for a response linear in the gap (a loop of multiplying links) it is the product of the factors to the n times the gap at s, so whole_factors applies. In Rejoining's witness the responder responds by taking one off from the act on; from the start, across the act, the gap 0, 1, 0, 0 is the course of no map.",
+      "zh": "把 Rejoining 在一个条件上的差别读作回返映射：两流在 c 上平衡，且自第 s 步起每条进程的 c 之水平加其给 c 者与另一条所取者，与另一条相应之和的差距为此前差距的 f（RespondsByReturn，恰为差距的一步，responds_iff），则 s + n 时的差距是 f 的 n 圈进程，一步一圈；对差距为线性的回应（相乘环节的回路），它是倍率之积的 n 次方乘 s 时的差距，故 whole_factors 适用。在 Rejoining 的见证中，自该行动起回应者以减一回应；自起点、跨过该行动，差距 0、1、0、0 不是任何映射的进程。",
+      "declarations": [
+        "Becoming.LoopReturn.gap_add_right",
+        "Becoming.LoopReturn.RespondsByReturn",
+        "Becoming.LoopReturn.gap_succ",
+        "Becoming.LoopReturn.responds_iff",
+        "Becoming.LoopReturn.gap_course",
+        "Becoming.LoopReturn.gap_scaling",
+        "Becoming.LoopReturn.replenishing_responds",
+        "Becoming.LoopReturn.replenishing_course",
+        "Becoming.LoopReturn.replenishing_no_return"
+      ]
     }
   ],
   "hypotheses": [
     {
       "en": "No axiom; the difference is a natural number and a link a map of natural numbers; every law is stated on runs Law.run of the return map; the hypotheses each law names (monotonicity, f 0 = 0, links giving nothing for nothing) are hypotheses.",
       "zh": "不加公理；差别是自然数，环节是自然数的映射；每条定律都陈述在回返映射的运行 Law.run 上；各定律所列的条件（单调、f 0 = 0、无来则无往的环节）是假设。"
+    },
+    {
+      "en": "For the exact turn: each link of the cycle is the only giving into the condition it gives to, at exactly its strength, read off the current level (GivesExactly; the ring meets it). For Rejoining's gap: the two flows balance on the condition at every step and their exchanges respond to the gap by a map from step s (RespondsByReturn), which is taken as given, not derived from a law of exchange.",
+      "zh": "精确一圈：回路的每个环节是给其所给条件的唯一给予，恰按其强度、读当前水平（GivesExactly；环满足之）。Rejoining 的差距：两流在该条件上每一步平衡，且自第 s 步起其交换按某映射回应差距（RespondsByReturn），此为所设，非由交换律推出。"
     }
   ],
   "does_not_show": [
     {
-      "en": "A loop of Rejoining read as a return map: the difference here is one number, not levels at many conditions.",
-      "zh": "把 Rejoining 的回路读作回返映射：这里的差别是一个数，不是多个条件上的水平。",
+      "en": "A loop of Rejoining where the difference is many numbers: the reading is of the gap at one condition, and that the exchanges respond to it by a map is a premise.",
+      "zh": "差别为多个数时 Rejoining 的回路：此读法读的是一个条件上的差距，且交换按映射回应它是前提。",
       "kind": "scope"
     },
     {
@@ -102,12 +161,27 @@
       "kind": "non-implication"
     },
     {
-      "en": "The carried amount around a cycle of several conditions exactly: the intermediate conditions hold and keep giving, so only a lower bound by the return map is shown.",
-      "zh": "绕几个条件的回路所携带的量的精确值：中间的条件保持并继续给出，所以只证明了回返映射给出的下界。",
+      "en": "The carried amount around a cycle exactly where links read more than the current level of the one before, or other formations give into the cycle: there the exact turn does not apply and the bound is what holds.",
+      "zh": "环节所读不止前一条件的当前水平、或另有形成给入回路时，绕回路所携带的量的精确值：那里精确一圈不适用，所成立的是界。",
       "kind": "scope"
     }
   ],
-  "counterexamples": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LoopReturn.lean",
+      "detail": {
+        "en": "LoopReturn.Ring.bound_strict: on the ring of m + 2 conditions with a positive strength, every condition starting at the same positive amount, the carried amount one turn on is strictly above the return map's course; equality to the course fails for every cycle of two or more conditions.",
+        "zh": "LoopReturn.Ring.bound_strict：在正强度、各条件自相同的正量出发的 m + 2 个条件之环上，一圈后的携带量严格高于回返映射的进程；对两个或更多条件的每个回路，与进程的相等都不成立。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LoopReturn.lean",
+      "detail": {
+        "en": "LoopReturn.replenishing_no_return: without the premise that the exchanges respond to the gap, the gap at one condition need not be the course of any map (Rejoining's witness, across the act: 0, 1, 0, 0).",
+        "zh": "LoopReturn.replenishing_no_return：没有交换回应差距这一前提，一个条件上的差距不必是任何映射的进程（Rejoining 的见证，跨过该行动：0、1、0、0）。"
+      }
+    }
+  ],
   "standard_boundaries": [
     "no-ethical-premise",
     "no-evaluation",
@@ -121,8 +195,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T064004.300228Z）：Becoming.LoopReturn 的 49 项声明（46 项定理）公理报告为空；检查器并核对核心纯净。由一个 Opus 证明者在草稿中构建，由另一个 Opus 审查者依简报审查并修正；作者审查见研究第 193 节；未经人的独立审查。"
   },
   "next_delta": {
-    "en": "Real factors, where a multiplication below one closes gradually; a loop of Rejoining read as a return map; the carried amount around a cycle of several conditions exactly; an independent review.",
-    "zh": "实数倍率，其中小于一的乘法逐步闭合；把 Rejoining 的回路读作回返映射；绕几个条件之回路所携带的量的精确值；独立审查。"
+    "en": "Real factors, where a multiplication below one closes gradually; a law of exchange whose response is a map of the gap, derived rather than supplied; the difference at many conditions as a return map on their levels; an independent review.",
+    "zh": "实数倍率，其中小于一的乘法逐步闭合；回应为差距之映射的交换律，由推导而非所设；把多个条件上的差别读作其水平上的回返映射；独立审查。"
   },
   "correspondence": {
     "en": "An account of social viability Ren brought on 19 October 2026 lists eight constraints and a unifying ninth; the AI's mapping found this one (bounded conflict) partial: runaway was proved, closing was not; it also answers, for loops, the chapter's open question which law closes rather than widens a difference. Ren's words are provenance, not warrant; the reading onto collectives is the AI's (D48).",
@@ -135,7 +209,12 @@
     "closing needs a link that gives back less",
     "Becoming.LoopReturn.closing_needs_less",
     "Becoming.LoopReturn.whole_factors",
-    "bounded conflict (reading)"
+    "bounded conflict (reading)",
+    "exact turn around a cycle",
+    "回路一圈的精确值",
+    "Becoming.LoopReturn.around_course_iff",
+    "Becoming.LoopReturn.Ring.bound_strict",
+    "Becoming.LoopReturn.gap_course"
   ],
   "dependencies": [
     {
@@ -205,6 +284,29 @@
           "zh": "携带之律之外无。"
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean"
+      }
+    },
+    {
+      "id": "where-two-courses-rejoin",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Rejoining's balanced flows, its witness Replenishing (flow, web, balances) and its reading of the difference at one condition.",
+        "zh": "复用 Rejoining 的平衡流、其见证 Replenishing（流、网、平衡）及其对一个条件上差别的读法。"
+      },
+      "interface": {
+        "output": {
+          "en": "Two balanced flows and the difference at a condition; the witness in which a responder gives back what an act took.",
+          "zh": "两个平衡流及一个条件上的差别；回应者给回行动所取的见证。"
+        },
+        "input": {
+          "en": "The gap at one condition as a return map's course, and the countermodel across the act.",
+          "zh": "一个条件上的差距作为回返映射的进程，及跨过该行动的反模型。"
+        },
+        "conditions": {
+          "en": "The flows balance on the condition; the exchanges respond to the gap by a map.",
+          "zh": "两流在该条件上平衡；交换按映射回应差距。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Rejoining.lean"
       }
     }
   ],
@@ -280,9 +382,46 @@
         "Becoming.LoopReturn.geomBound_eq_course",
         "Becoming.LoopReturn.selfLoop_carried",
         "Becoming.LoopReturn.selfLoop_gap",
-        "Becoming.LoopReturn.carried_around_course"
+        "Becoming.LoopReturn.carried_around_course",
+        "Becoming.LoopReturn.GivesExactly",
+        "Becoming.LoopReturn.heldAlong",
+        "Becoming.LoopReturn.link_rearranged",
+        "Becoming.LoopReturn.carried_along_exact",
+        "Becoming.LoopReturn.carried_around_exact",
+        "Becoming.LoopReturn.carried_around_excess",
+        "Becoming.LoopReturn.around_course_iff",
+        "Becoming.LoopReturn.RingGives",
+        "Becoming.LoopReturn.ring_even",
+        "Becoming.LoopReturn.product_const",
+        "Becoming.LoopReturn.one_add_pow_lt",
+        "Becoming.LoopReturn.Ring.pred",
+        "Becoming.LoopReturn.Ring.conditions",
+        "Becoming.LoopReturn.Ring.strengths",
+        "Becoming.LoopReturn.Ring.amount",
+        "Becoming.LoopReturn.Ring.cycle",
+        "Becoming.LoopReturn.Ring.cycle_start",
+        "Becoming.LoopReturn.Ring.cycle_back",
+        "Becoming.LoopReturn.Ring.pred_cycle",
+        "Becoming.LoopReturn.Ring.pred_mem",
+        "Becoming.LoopReturn.Ring.cycle_mem",
+        "Becoming.LoopReturn.Ring.total_at",
+        "Becoming.LoopReturn.Ring.gives",
+        "Becoming.LoopReturn.Ring.coupled",
+        "Becoming.LoopReturn.Ring.givesExactly",
+        "Becoming.LoopReturn.Ring.amount_eq",
+        "Becoming.LoopReturn.Ring.exceeds_course",
+        "Becoming.LoopReturn.Ring.bound_strict",
+        "Becoming.LoopReturn.gap_add_right",
+        "Becoming.LoopReturn.RespondsByReturn",
+        "Becoming.LoopReturn.gap_succ",
+        "Becoming.LoopReturn.responds_iff",
+        "Becoming.LoopReturn.gap_course",
+        "Becoming.LoopReturn.gap_scaling",
+        "Becoming.LoopReturn.replenishing_responds",
+        "Becoming.LoopReturn.replenishing_course",
+        "Becoming.LoopReturn.replenishing_no_return"
       ],
-      "sha256": "66668b0f7a710e1cbf53539af6ee915cb78887b00c4d6773345c28f0696eb13d"
+      "sha256": "cffc7402a953b17b956a8cae67bcb27f3979cf0d16a684f2d0ef8b5e026e4c7f"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
@@ -320,7 +459,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1"
+      "sha256": "8acb26970ea0f701aa886ca245c7858c56f5554a5f1c907421edb0e8d3992966"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
@@ -397,12 +536,28 @@
       "role": "receipt",
       "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T070914.793352Z/verification.json",
+      "role": "receipt",
+      "sha256": "a9e60aed76c9be0a6a3f06b9f7429e3757254408d256ee5bdcab402b92a82954",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Rejoining.lean",
+      "role": "proof",
+      "sha256": "0b1f3628d4360420bdb928d801b455e580e6134071b67d5566a80d62f7a5ba56",
+      "declarations": [
+        "Becoming.Replenishing.flow",
+        "Becoming.Replenishing.web",
+        "Becoming.Replenishing.balances"
+      ]
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LoopReturn.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T070914.793352Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LoopReturn",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -457,6 +612,10 @@
     {
       "en": "2026-10-20: 22 bookkeeping notes condensed from 19 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/ba11044583f78773/whether-a-loop-closes-a-difference.json and in git.",
       "zh": "2026-10-20：22 条记账性说明合并（19 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/ba11044583f78773/whether-a-loop-closes-a-difference.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R38 (the open parts of R33's G6): three laws added (the exact turn around a cycle of exact links and its excess over the return map's course, with the exact premise of equality; the ring on which the bound is strict, the counterexample to equality for two or more conditions; Rejoining's gap at one condition as a return map where the exchanges respond to it, with the witness's counterexample across the act), the premises they take, two counterexamples, a dependency on where-two-courses-rejoin; the two open items of R33 replaced by what stays open. Proof binding (LoopReturn.lean) rebound to core receipt 20261020T070914.793352Z. Study section 233.",
+      "zh": "2026年10月20日，R38（R33 之 G6 的开放部分）：新增三条规律（精确环节之回路的精确一圈及其超出回返映射进程者，附相等的确切前提；界为严格的环，即两个或更多条件时相等的反例；Rejoining 在一个条件上的差距在交换回应它之处作为回返映射，附跨过行动的见证反例）、其所取前提、两个反例、对 where-two-courses-rejoin 的依赖；R33 的两项开放项换为仍开放者。证明绑定（LoopReturn.lean）改到核心回执 20261020T070914.793352Z。研究第 233 节。"
     }
   ],
   "text_versions": [

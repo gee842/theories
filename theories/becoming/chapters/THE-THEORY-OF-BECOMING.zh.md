@@ -61,7 +61,7 @@
 | 承诺 | 内容 | Lean |
 |---|---|---|
 | 证明语言 | Lean 4.29.1 内核。核心只导入 Lean 的 `Init`；每条源声明的公理报告为空：没有 `propext`、`Quot.sound` 或 `Classical.choice`。构造性只需没有 `Classical.choice`，所以核心**比构造性更严**。需要经典原理的定理把它写为假设（排中律、LPO、WLPO、LLPO、Markov 原理、双重否定消去、依赖选择）；校准在 §8.6。 | — |
-| 离散的步，一个共同的步序 | 每个关系项的活动、水平与交换按一个自然数步序索引。除此之外不假定确定的因果次序（§1.4）。 | `World`、`Web`、`Flow` |
+| 离散的步，一个共同的步序 | 每个关系项的活动、水平与交换按一个自然数步序索引。除此之外不假定确定的因果次序（§1.4）。经每个关系项自身各步读出者，对同一历程的每个交错都相同（`Interleavings.LocalLaw.world_index`、`world_reads_alike`）；在同一步读几个关系项的关系，在所选的交错上读出（§1.4）。 | `World`、`Web`、`Flow` |
 | 自然数的量 | 水平、所需、取用与给予是自然数，正的量至少一个单位。耗散的最小损失、回路的倍增与新颖需要增益依赖于它；稠密的量上，每步减半的存量永远下降而从不上升（`Halving.approaches_without_reaching`）。一般形式是最小损失之律（`Amounts.rests`）。 | — |
 | 作为命题的活动 | 活动是命题，`active : Nat → F → Prop`。计数或命名一步的规律需要它已定；对每个世界要求而不给已定性时，有些规律恰是排中律，这是对这一承诺的校准（§8.6）。 | `Web.active` |
 | 一类关系项 | 世界是一类关系项，带流（`present`、`take`、`give`）与依存网（`level`、`active`、`requires`、`need`、`draws`）。形成与条件是一个关系项的两种角色。 | `World`、`World.ofRoles` |
@@ -146,9 +146,9 @@
 
 ### 1.4 变化的次序与步序
 
-**要点。** 定理所用的共同步序，是变化的次序：足迹不相交的交换可交换，只有相连交换的偏序显示出来。对局部作用的交换，步序从关系项各自的历程读出；在此之外，它只排序不共享关系项的交换。
+**要点。** 定理所用的共同步序，是变化的次序：足迹不相交的交换可交换，只有相连交换的偏序显示出来。对局部作用的交换，步序从关系项各自的历程读出；在此之外，它只排序不共享关系项的交换。经每个关系项自身各步读出者不依赖于选哪个交错：这选择移动的是所立落在步序的何处，而非关系项经过哪些所立或按何次序。
 
-**定理。** 本节陈述 `Footprinted.sorts_iff`、`run_of_courses`、`unique_iff`、`world_balances`、`world_swap`、`OneStep.every_iff`、`Weights.sum_courses`；完整陈述见[英文版 §1.4](THE-THEORY-OF-BECOMING.md#14-the-order-of-change-and-the-step-index)。
+**定理。** 本节陈述 `Footprinted.sorts_iff`、`run_of_courses`、`unique_iff`、`world_balances`、`world_swap`、`world_index`、`world_reads_alike`、`OneStep.every_iff`、`Weights.sum_courses`；完整陈述见[英文版 §1.4](THE-THEORY-OF-BECOMING.md#14-the-order-of-change-and-the-step-index)。
 
 记录：[only-the-order-of-change-shows](../results/records/only-the-order-of-change-shows.md)、[exchanges-commute-unless-joined](../results/records/exchanges-commute-unless-joined.md)、[order-of-exchanges-is-the-invariant](../results/records/order-of-exchanges-is-the-invariant.md)、[normal-forms-need-decided-apartness](../results/records/normal-forms-need-decided-apartness.md)、[least-footprint-where-idleness-decided](../results/records/least-footprint-where-idleness-decided.md)、[the-step-index-from-own-courses](../results/records/the-step-index-from-own-courses.md)、[the-world-an-interleaving-builds](../results/records/the-world-an-interleaving-builds.md)、[laws-of-one-step-complete](../results/records/laws-of-one-step-complete.md)、[laws-of-one-step](../results/records/laws-of-one-step.md)、[one-step-missing-laws](../results/records/one-step-missing-laws.md)、[runs-on-families-chosen-step-by-step](../results/records/runs-on-families-chosen-step-by-step.md)、[sum-over-histories-exact](../results/records/sum-over-histories-exact.md)、[losses-of-the-sum-over-histories](../results/records/losses-of-the-sum-over-histories.md)。
 
@@ -207,11 +207,11 @@
 <a id="the-comparison-where-the-rest-responds"></a>
 ### 2.6 响应、传播与回路
 
-**要点。** 其余响应之处，差别沿耦合承载之处去；给定其余之律，一个动作的反事实就是同一律生成的历程。到达多少差别本身是一条历程，即所携带的量，由一个律达到，所以是能到达的最多。它按响应的阶展开，是回溯时间的路线之和；有限的阶恰在上游没有持续耦合的回路之处精确，能到达的最大差别只经这样的回路比每个多项式增长得快，回路经闭合而形成，不必失控。
+**要点。** 其余响应之处，差别沿耦合承载之处去；给定其余之律，一个动作的反事实就是同一律生成的历程。到达多少差别本身是一条历程，即所携带的量，由一个律达到，所以是能到达的最多。它按响应的阶展开，是回溯时间的路线之和；有限的阶恰在上游没有持续耦合的回路之处精确，能到达的最大差别只经这样的回路比每个多项式增长得快，回路经闭合而形成，不必失控。强度是一个环节对其所读水平每单位所给者，倍率是回返映射一圈乘差别者；绕两个或更多条件的回路，一加强度之积只是一圈的下界，不是其倍率。
 
-**定理。** 本节陈述 `counterfactual_is_course`、`most_difference_arrives`、`finite_order_iff_no_loop`、`carried_eq_carriedWithin_add`、`forms_by_closing`、`break_carried_nowhere`、`runaway_of_roundTrip`、`Frequency.Sparse.polynomial`；完整陈述见[英文版 §2.6](THE-THEORY-OF-BECOMING.md#26-response-propagation-and-loops)。
+**定理。** 本节陈述 `counterfactual_is_course`、`most_difference_arrives`、`finite_order_iff_no_loop`、`carried_eq_carriedWithin_add`、`forms_by_closing`、`break_carried_nowhere`、`runaway_of_roundTrip`、`Frequency.Sparse.polynomial`、`carried_around_exact`、`Ring.bound_strict`；完整陈述见[英文版 §2.6](THE-THEORY-OF-BECOMING.md#26-response-propagation-and-loops)。
 
-记录：[observation-is-a-route](../results/records/observation-is-a-route.md)、[comparison-where-the-rest-responds](../results/records/comparison-where-the-rest-responds.md)、[counterfactual-is-the-course](../results/records/counterfactual-is-the-course.md)、[sensitivity-is-the-least-coupling](../results/records/sensitivity-is-the-least-coupling.md)、[what-a-law-of-the-whole-and-no-part-takes](../results/records/what-a-law-of-the-whole-and-no-part-takes.md)、[how-much-difference-arrives](../results/records/how-much-difference-arrives.md)、[how-a-carried-difference-grows](../results/records/how-a-carried-difference-grows.md)、[what-a-cut-loses](../results/records/what-a-cut-loses.md)、[orders-as-a-sum-over-histories](../results/records/orders-as-a-sum-over-histories.md)、[sums-over-histories-by-support-horizon-and-order](../results/records/sums-over-histories-by-support-horizon-and-order.md)、[how-loops-form](../results/records/how-loops-form.md)、[loops-within-what-a-law-reads](../results/records/loops-within-what-a-law-reads.md)、[where-a-level-couples](../results/records/where-a-level-couples.md)、[how-often-couplings-act](../results/records/how-often-couplings-act.md)、[where-a-move-is-formed](../results/records/where-a-move-is-formed.md)、[timely-response-necessity](../results/records/timely-response-necessity.md)、[two-act-worlds-carry-the-difference](../results/records/two-act-worlds-carry-the-difference.md)。
+记录：[observation-is-a-route](../results/records/observation-is-a-route.md)、[comparison-where-the-rest-responds](../results/records/comparison-where-the-rest-responds.md)、[counterfactual-is-the-course](../results/records/counterfactual-is-the-course.md)、[sensitivity-is-the-least-coupling](../results/records/sensitivity-is-the-least-coupling.md)、[what-a-law-of-the-whole-and-no-part-takes](../results/records/what-a-law-of-the-whole-and-no-part-takes.md)、[how-much-difference-arrives](../results/records/how-much-difference-arrives.md)、[how-a-carried-difference-grows](../results/records/how-a-carried-difference-grows.md)、[what-a-cut-loses](../results/records/what-a-cut-loses.md)、[orders-as-a-sum-over-histories](../results/records/orders-as-a-sum-over-histories.md)、[sums-over-histories-by-support-horizon-and-order](../results/records/sums-over-histories-by-support-horizon-and-order.md)、[how-loops-form](../results/records/how-loops-form.md)、[loops-within-what-a-law-reads](../results/records/loops-within-what-a-law-reads.md)、[where-a-level-couples](../results/records/where-a-level-couples.md)、[how-often-couplings-act](../results/records/how-often-couplings-act.md)、[whether-a-loop-closes-a-difference](../results/records/whether-a-loop-closes-a-difference.md)、[where-a-move-is-formed](../results/records/where-a-move-is-formed.md)、[timely-response-necessity](../results/records/timely-response-necessity.md)、[two-act-worlds-carry-the-difference](../results/records/two-act-worlds-carry-the-difference.md)。
 
 <a id="3-认识与探究--knowing-and-inquiry"></a>
 ## 3. 认识与探究
@@ -507,6 +507,9 @@
 <!-- theorem-map:begin -->
 | 记录 | 地位 | 假设中的 §0 前提 | 节 |
 |---|---|---|---|
+| [从交换读出的前提](../results/records/premises-read-off-the-exchange.md) | 在所述前提下的定理 | 给出的交换之律 | §0 |
+| [耗散、体现与传递是律的状态](../results/records/premises-that-are-states-of-the-law.md) | 不加前提的定理 | — | §0 |
+| [多个交换开放时把要求读作回应](../results/records/requirement-over-open-exchanges.md) | 不加前提的定理 | — | §0 |
 | [保留与变化情境中的相容历史](../results/records/becoming-context-coherence.md) | 不加前提的定理 | — | §1.1 |
 | [配置由它怎样关系而定](../results/records/configurations-alike-by-relation.md) | 不加前提的定理 | — | §1.1 |
 | [控制响应丧失与保留共同关系的恢复](../results/records/control-coherence-loss.md) | 不加前提的定理 | — | §1.1 |
@@ -639,6 +642,7 @@
 | [整体而无部分之律所需](../results/records/what-a-law-of-the-whole-and-no-part-takes.md) | 不加前提的定理 | — | §2.6 |
 | [水平在何处耦合入形成](../results/records/where-a-level-couples.md) | 不加前提的定理 | — | §2.6 |
 | [动作在哪里形成](../results/records/where-a-move-is-formed.md) | 不加前提的定理 | — | §2.6 |
+| [回路闭合、保持还是扩大差别](../results/records/whether-a-loop-closes-a-difference.md) | 不加前提的定理 | — | §2.6 |
 | [沿一个运行、在一个关系之下的规律](../results/records/a-law-through-a-projection-along-one-run.md) | 不加前提的定理 | — | §3.1 |
 | [沿一个运行经改变的耦合的规律](../results/records/a-law-through-changing-coupling-along-one-run.md) | 已被取代 | 见记录 | §3.1 |
 | [沿一个运行经耦合的规律](../results/records/a-law-through-coupling-along-one-run.md) | 已被取代 | 见记录 | §3.1 |
@@ -687,6 +691,7 @@
 | [分支测试等价与双模拟](../results/records/branching-tests-bisimulation.md) | 不加前提的定理 | — | §3.5 |
 | [情境选择性更新的公开数据对应](../results/records/context-sensitive-updating-correspondence.md) | 评估 | 见记录 | §3.5 |
 | [带前提的推导健全性](../results/records/derivation-soundness.md) | 不加前提的定理 | — | §3.5 |
+| [行动形成可供绑定的场景](../results/records/enacted-scene-binding.md) | 不加前提的定理（外围） | — | §3.5 |
 | [局部排他支持推至全部叶项](../results/records/exclusive-footprint-support.md) | 不加前提的定理 | — | §3.5 |
 | [可失实见证的完整辨别条件](../results/records/fallible-witness-diagnosability.md) | 不加前提的定理 | — | §3.5 |
 | [有限根基的共同解释](../results/records/finite-basis-common-interpretation.md) | 不加前提的定理 | — | §3.5 |
@@ -696,15 +701,18 @@
 | [有限接合树从指定片段提升](../results/records/finite-joining-tree-lifting.md) | 不加前提的定理 | — | §3.5 |
 | [单值接合的共同操作结构](../results/records/functional-joining-common-structure.md) | 不加前提的定理 | — | §3.5 |
 | [随到达条件分支的有限展开与问答恢复](../results/records/guarded-program-question-recovery.md) | 不加前提的定理 | — | §3.5 |
+| [来源历史约束旧内容绑定](../results/records/historical-source-binding.md) | 不加前提的定理（外围） | — | §3.5 |
 | [关联问题导出跨分节共同细化](../results/records/incidence-common-refinement.md) | 不加前提的定理 | — | §3.5 |
 | [开放接合映射的保真与唯一共同因子](../results/records/joining-open-map-factor.md) | 不加前提的定理 | — | §3.5 |
 | [接合检验随同一编码保真](../results/records/joining-questions-survive-encoding.md) | 不加前提的定理 | — | §3.5 |
 | [共同实现测试下的目标唯一性](../results/records/joint-target-uniqueness.md) | 不加前提的定理 | — | §3.5 |
 | [实际指令接续候选证据](../results/records/mediated-evidence-transport.md) | 不加前提的定理（外围） | — | §3.5 |
 | [多结果接合的共同关系结构](../results/records/multivalued-joining-common-structure.md) | 不加前提的定理 | — | §3.5 |
+| [命名与所指注视的公开数据边界](../results/records/naming-attention-coverage.md) | 评估 | 见记录 | §3.5 |
 | [全部前缀问答仍可遗漏中途失续](../results/records/prefix-observation-loss.md) | 不加前提的定理 | — | §3.5 |
 | [保留余项的部分展开与真实位置接续](../results/records/residual-continuation-correspondence.md) | 不加前提的定理 | — | §3.5 |
 | [保留共同引用的跨表述形成对应](../results/records/retained-reference-joining-recovery.md) | 不加前提的定理 | — | §3.5 |
+| [后得来源关系接通保留记录的绑定](../results/records/retrospective-source-binding.md) | 不加前提的定理（外围） | — | §3.5 |
 | [科学探究之必要关系基础](../results/records/scientific-inquiry-foundation.md) | 开放目标 | 见记录 | §3.5 |
 | [无共同引用的关联问题丢失真实接续](../results/records/unanchored-incidence-collapse.md) | 不加前提的定理 | — | §3.5 |
 | [共同软件活动的接续与依存限度](../results/records/formed-software-continuation.md) | 评估 | 见记录 | §4.1 |
@@ -722,7 +730,6 @@
 | [从最坏的开始恢复给出](../results/records/restoring-giving-from-the-worst-start.md) | 不加前提的定理 | — | §4.4 |
 | [等待的阈值](../results/records/thresholds-of-waiting.md) | 不加前提的定理 | — | §4.4 |
 | [双向调节，与迟读的调节](../results/records/two-sided-regulation-and-late-reading.md) | 不加前提的定理 | — | §4.4 |
-| [回路闭合、保持还是扩大差别](../results/records/whether-a-loop-closes-a-difference.md) | 不加前提的定理 | — | §4.4 |
 | [在形成之间形成的编码](../results/records/a-code-formed-between-formations.md) | 不加前提的定理 | — | §4.5 |
 | [比承载者更持久的样式经传递而持续](../results/records/a-pattern-lasts-through-passing.md) | 不加前提的定理 | — | §4.5 |
 | [经由规则的捕获：规则读其所选出之份额的选择](../results/records/capture-through-the-rule.md) | 不加前提的定理 | — | §4.5 |
@@ -774,21 +781,14 @@
 | [中断改变后的证据恢复与停止入口的界](../results/records/recoverable-mediated-change.md) | 不加前提的定理（外围） | — | §7.6 |
 | [恢复期间保留停止能力](../results/records/reserved-shutdown-during-recovery.md) | 不加前提的定理（外围） | — | §7.6 |
 | [风险界限与实现结果的区别](../results/records/risk-certificate-outcome-distinction.md) | 不加前提的定理（外围） | — | §7.6 |
-| [有条件统一基础的五项验收](../results/records/conditional-foundation-assessment.md) | 已被取代 | 见记录 | §7.7 |
-| [绑定的构成性说明及无前提推广的限度](../results/records/constitutive-binding-assessment.md) | 评估 | 见记录 | §7.7 |
-| [行动形成可供绑定的场景](../results/records/enacted-scene-binding.md) | 不加前提的定理（外围） | — | §7.7 |
-| [来源历史约束旧内容绑定](../results/records/historical-source-binding.md) | 不加前提的定理（外围） | — | §7.7 |
-| [命名与所指注视的公开数据边界](../results/records/naming-attention-coverage.md) | 评估 | 见记录 | §7.7 |
-| [脊柱上的库所/变迁网](../results/records/place-transition-nets-on-the-spine.md) | 不加前提的定理 | — | §7.7 |
-| [从交换读出的前提](../results/records/premises-read-off-the-exchange.md) | 在所述前提下的定理 | 给出的交换之律 | §7.7 |
-| [耗散、体现与传递是律的状态](../results/records/premises-that-are-states-of-the-law.md) | 不加前提的定理 | — | §7.7 |
-| [多个交换开放时把要求读作回应](../results/records/requirement-over-open-exchanges.md) | 不加前提的定理 | — | §7.7 |
-| [后得来源关系接通保留记录的绑定](../results/records/retrospective-source-binding.md) | 不加前提的定理（外围） | — | §7.7 |
-| [情境恢复的公开数据对应](../results/records/situated-recovery-empirical-correspondence.md) | 评估 | 见记录 | §7.7 |
-| [生成与变化之论：完整根基目标](../results/records/theory-of-becoming-foundation.md) | 开放目标 | 见记录 | §7.7 |
 | [两个进程在何处重合](../results/records/where-two-courses-rejoin.md) | 在所述前提下的定理 | 给出的交换之律 | §7.7 |
-| [核心作为智慧之根的目标](../results/records/wisdom-root.md) | 开放目标 | 见记录 | §7.7 |
-| [智慧之根在无公理的理论中](../results/records/wisdom-root-without-axiom.md) | 论证 | 见记录 | §7.7 |
+| [有条件统一基础的五项验收](../results/records/conditional-foundation-assessment.md) | 已被取代 | 见记录 | §8.1 |
+| [智慧之根在无公理的理论中](../results/records/wisdom-root-without-axiom.md) | 论证 | 见记录 | §8.1 |
+| [脊柱上的库所/变迁网](../results/records/place-transition-nets-on-the-spine.md) | 不加前提的定理 | — | §8.7 |
+| [情境恢复的公开数据对应](../results/records/situated-recovery-empirical-correspondence.md) | 评估 | 见记录 | §8.7 |
+| [绑定的构成性说明及无前提推广的限度](../results/records/constitutive-binding-assessment.md) | 评估 | 见记录 | §11 |
+| [生成与变化之论：完整根基目标](../results/records/theory-of-becoming-foundation.md) | 开放目标 | 见记录 | §11 |
+| [核心作为智慧之根的目标](../results/records/wisdom-root.md) | 开放目标 | 见记录 | §11 |
 <!-- theorem-map:end -->
 
 <a id="8-开放纲领--open-programme"></a>
@@ -799,13 +799,13 @@
 <a id="81-the-targets"></a>
 ### 8.1 依次排列的开放项
 
-1. **一个基底，以及对每个交换之律的规律**（进一步的证明；第一目标的形式部分）。基底按定义是一个（§1.1）；在 R37 树上的连通度量中，11,381 条定理中 476 条与两个基底族都分开，各有所述理由。
+1. **一个基底，以及对每个交换之律的规律**（进一步的证明；第一目标的形式部分）。基底按定义是一个（§1.1）；在 R38 树上的连通度量中，11,479 条定理中 477 条与两个基底族都分开，各有所述理由。经每个关系项自身各步读出者对每个交错相同，所以对它们共同步序是一个读法（R38；`world_reads_alike`）。
 2. **一条评价之链**（进一步的证明）。已落地：逐步类与运行类在所指名的前提下单向接上次序，在水平路径上条件、意义与 C 读同一对象（`Web.paths_one_object`）。*开放：*运行上的生起之类与次序；进一步生成的成分能否进入 `living` 的读法。
 3. **评价怎样在展开之内形成**（进一步的证明）。*开放：*中心怎样逐步形成、表示其区域、边界与依存，并认识它所及者；观察是否可由依存推出。
 4. **脊柱上的对齐方向**（进一步的证明）。已落地：作为核心模式的方向（§7.5）。*开放：*`World` 的动作读作这样的族，2026 年 10 月 7 日的外围模块作为核心中的形式实例。
 5. **扩大记入什么**（进一步的证明）。*开放：*沿 `Flow.GrownBy` 在增长的世界上的扩大；混合部分的度量（条件之外的前提，须公开陈述）；更新能力与关系丰富度的比较。
-6. **可以稠密的量**（进一步的证明）。*开放：*每次交换的最小损失能否推出而非给出；任何量上的流、依存网与世界；其余自然数规律的最小损失形式或良基形式。
-7. **哪个律成立，成员的律怎样形成**（进一步的证明）。*开放：*交换之律本身，带噪声的律及其历程；成员的律怎样形成、怎样回应它所耦合入者；概率学习与隐含偏置。
+6. **可以稠密的量**（进一步的证明）。*开放：*每次交换的最小损失能否推出而非给出；任何量上的流、依存网与世界；其余自然数规律的最小损失形式或良基形式；实数的强度与倍率。
+7. **哪个律成立，成员的律怎样形成**（进一步的证明）。已落地（R38，[研究第 233 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#233-one-turn-around-a-cycle-and-any-two-interleavings-r38)）：重合进程在一个条件上的差距，恰在其交换按某映射回应它之处，是该映射的进程（`LoopReturn.responds_iff`），这是前提，未由交换律推出；精确环节之回路的一圈精确陈述（`LoopReturn.carried_around_exact`）。*开放：*交换之律本身，带噪声的律及其历程；成员的律怎样形成、怎样回应它所耦合入者；单个回路之外、多个条件同时之处哪个律闭合而非扩大差别；概率学习与隐含偏置。
 8. **由连续性而非命名的同一**（进一步的证明）。*开放：*所立重合处的同一，或由物质、信息或组织的连续性给出的同一；分裂与合并下的类。
 9. **演化的选择项**（进一步的证明）。*开放：*既必要又充分的形成之律；世系新形成的依存；多步的选择与传递；有理数的量与协方差形式。
 10. **上升从其外汲取什么**（进一步的证明）。*开放：*所汲取者是否被依存，以及连同传递、世系与开放，及于其外者上升的份额。
@@ -855,16 +855,16 @@
 
 所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）16 个。
 
-**当前回执**是运行 [`20261020T060542.295041Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T060542.295041Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 230 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#230-one-census-table-for-any-listing-r37b)）。
+**当前回执**是运行 [`20261020T070914.793352Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T070914.793352Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 233 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#233-one-turn-around-a-cycle-and-any-two-interleavings-r38)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 268 个模块，10,680 条定理 |
+| 核心模块（含根 `Becoming`） | 268 个模块，10,733 条定理 |
 | 实例模块 | 7 个模块，567 条定理 |
 | 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 闭包（核心、环与根基） | 284 个模块，11,500 条定理 |
-| 审计的脊柱声明 | 15,743 |
+| 闭包（核心、环与根基） | 284 个模块，11,553 条定理 |
+| 审计的脊柱声明 | 15,810 |
 | 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 188 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 

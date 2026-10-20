@@ -66,6 +66,8 @@ what-a-pools-acts-respond-to left open which responses to what a pool separates 
 - related, not a proved adapter: [what-a-pools-acts-respond-to](what-a-pools-acts-respond-to.md). There what a pool's acts can respond to; here what a response must do for the two courses to rejoin, with Loop's widening as the counterpart of Replenishing's rejoining.
 - related, not a proved adapter: [the-gap-for-ones-own-act](the-gap-for-ones-own-act.md). The gap for one's own act says what an act cannot see; closing the difference it made then needs a formation outside the part that couples the difference apart.
 
+**Used by:** [whether-a-loop-closes-a-difference](whether-a-loop-closes-a-difference.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
