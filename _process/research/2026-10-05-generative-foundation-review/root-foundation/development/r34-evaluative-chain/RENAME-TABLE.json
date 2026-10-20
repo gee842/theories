@@ -1,0 +1,32 @@
+{
+  "about": "R34, board item of the twentieth review (one evaluative chain), 20 October 2026: the declarations removed because, once Ranking, Relevance and ActiveReading read their worlds as webs (F9), each became the same statement as another one, which is kept; no aliases (the pure core has no `alias`, and a copy would count as a theorem), so this table is the lookup for every removed name. sigcheck.py reads it. Restated declarations (same name, new statement) are listed in study section 225, old -> new.",
+  "renamed": [],
+  "removed": [
+    {
+      "old": "Becoming.ActiveReading.livingSignificance_wholeRun_web_iff",
+      "kept": "Becoming.ActiveReading.livingSignificance_wholeRun_iff",
+      "kind": "decl",
+      "reason": "F9: wholeRun now reads a world as a web, so the Web form and the Unfolding form are one statement; the kept name states it."
+    },
+    {
+      "old": "Becoming.ActiveReading.absent_web_dependent",
+      "kept": "Becoming.ActiveReading.absent_dependent",
+      "kind": "decl",
+      "reason": "F9: Ranking.absent is now a web, so its dependence is Web.Dependent directly; the kept name states it."
+    }
+  ],
+  "moved": [
+    {
+      "name": "Becoming.LivingSignificance",
+      "from": "Becoming.ValuationFrames",
+      "to": "Becoming.Extension",
+      "reason": "D2(b)/F13: living significance over admission is stated beside Extension, so modules that compare by widening reach it without the frame readings."
+    },
+    {
+      "name": "Becoming.Ranking.stepwise_iff",
+      "from": "Becoming.Ranking",
+      "to": "Becoming.Relevance",
+      "reason": "F9: the stepwise class read through a valuation needs Metaethics, which Ranking no longer imports; the statement now reads a web (restated, study section 225)."
+    }
+  ]
+}

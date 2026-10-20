@@ -5,7 +5,9 @@ import Becoming.Dependence
 
 Evaluation is stated over the same frame as the dynamics. Positions, their own
 regions and their significance are formed within the unfolding; `own` is a region
-of formed relations, not an owner. `related` stands for formed relation
+of formed relations, not an owner. The laws below hold for any type of standpoints (`Pos`); the
+reading that standpoints are formations is the instance `Pos := F`, with each formation's own
+region its closure under a relation of the unfolding (`Web.selfValuation`, `Becoming.Boundaries`). `related` stands for formed relation
 (conditioning, dependence, descent, cooperation) and `living` for the claims read as
 living. Both are inputs of a valuation; 生生 is read separately, by widening what can form. The readings the
 Becoming layer supplies below are narrower: `related` is co-participation in a
@@ -126,7 +128,11 @@ theorem Neutral.within {I : Type} {rule : I → Prop} (neutral : Neutral rule)
 
 /-! ## Significance across formed relations and standpoints -/
 
-/-- The patient and standpoint side of evaluation within one unfolding. -/
+/-- The patient and standpoint side of evaluation within one unfolding. The standpoints are a
+type of their own, so every law stated over `Valuation` holds for any type of standpoints; the
+reading that standpoints are formations is the instance `Pos := F`, stated with each formation's
+own region its closure under a relation of the unfolding in `Web.selfValuation`
+(`Becoming.Boundaries`), where `sig` is the one evaluative parameter supplied. -/
 structure Valuation (Pos C : Type) where
   living : C → Prop
   related : C → C → Prop

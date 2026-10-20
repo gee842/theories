@@ -31,6 +31,18 @@ compares under the continuation condition, stated where it needs nothing.
 * **What has not yet formed counts.** In `Preemption` a drawer takes a condition's unit before
   any dependence on it forms: its event is within renewal and not undermining, yet the part does
   not keep what can form (`Preemption.within_renewal_yet_loses`).
+* **The run classes and widening** (R34, 20 October 2026). In a balanced flow where only active
+  formations take, and only from what they draw on, a part each of whose draws falls on a
+  condition renewed over the run keeps what can form: the levels with it include those without it
+  (`Flow.Balances.includes_of_renewed`), so it does not narrow
+  (`Flow.Balances.not_narrows_of_renewed`); a part of formations renewing over the run is a case
+  (`Flow.Balances.includes_of_renewingIn`). A consuming part narrows where it gives no more than it
+  takes and the levels without it meet the consumed dependence after the loss
+  (`Flow.Balances.narrows_of_consumed`). Each premise marks a boundary: `Preemption`'s drawer is
+  within renewal at its step (the stepwise class) and consuming over the run, and its part narrows
+  (`Preemption.renewingAt_consuming_narrows`), so the stepwise class does not decide; and a part
+  can be consuming over the run, drawing on a condition it never takes from, and keep what can form
+  the same (`Untaken.consuming_keeps`), so the consuming class alone does not narrow.
 
 Every declaration moved here unchanged, with its name, from `Becoming.Significance` in R31
 (20 October 2026); none takes the continuation condition, which `Becoming.Significance` states and
@@ -280,6 +292,80 @@ theorem Balances.widens_iff_within_margin (balances : L.Balances W) {l : Nat →
           l t c + total (steps 0 t) (fun s => L.partGiven part s c)) ∧ ¬ W.Admits (l t) t f :=
   widens_iff_within_margin_at without fun _ _ c _ s _ => balances.on [c] s
 
+/-! ## The run classes and widening
+
+A formation's class over a run (renewing, consuming) and a part's place in the order on what can
+form (keeping, widening, narrowing) read the same levels. Where only active formations take, and
+only from what they draw on, a part takes from a condition only where a member draws on it. So a
+part all of whose members' draws fall on conditions renewed over the whole run closes nothing:
+on a condition it never took from the levels with it stand at least as high as those without it,
+and on a condition it took from every dependence is met at every step. A consuming part narrows
+where it opens nothing and the levels without it meet the consumed dependence after the loss. The
+stepwise class is not enough: `Preemption`'s drawer is within renewal at its step and consuming
+over the run, and its part narrows (`Preemption.renewingAt_consuming_narrows`). Nor is the
+consuming class: a part can draw on a consumed condition without taking from it and change
+nothing that can form (`Untaken.consuming_keeps`). -/
+
+/-- **A part whose draws fall on renewed conditions keeps what can form.** In a balanced flow where
+only active formations take, and only from what they draw on, let every condition a member of the
+part draws on at some step be renewed over the run (every dependence on it kept at every step).
+Then the levels with the part include those without it. -/
+theorem Balances.includes_of_renewed (balances : L.Balances W) (taking : L.Taking W)
+    {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    (renewed : ∀ t f c, part f = true → W.draws t f c → W.Renewed c) : W.Includes W.level l :=
+  fun t g admits c requires =>
+    match Nat.eq_zero_or_pos (total (steps 0 t) fun s => L.partTaken part s c) with
+    | .inl untaken =>
+      Nat.le_trans (admits c requires) (Nat.le_trans
+        (Nat.le_add_right (l t c) (total (steps 0 t) fun s => L.partGiven part s c))
+        (Nat.le_of_eq ((balances.withheld without t c).symm.trans
+          ((congrArg (W.level t c + ·) untaken).trans (Nat.add_zero _)))))
+    | .inr taken =>
+      match total_pos (steps 0 t) taken with
+      | ⟨s, _, takenAt⟩ =>
+        match total_pos (L.present s) takenAt with
+        | ⟨f, present, positive⟩ =>
+          have drawn : part f = true → W.draws s f c := fun member =>
+            (taking s f c present (Nat.lt_of_lt_of_le positive (Nat.le_of_eq
+              (show (if part f then L.take s f c else 0) = L.take s f c from
+                match part f, member with
+                | true, _ => rfl)))).2
+          match hp : part f with
+          | true => (renewed s f c hp (drawn hp) t g requires).1
+          | false => absurd (Nat.lt_of_lt_of_le positive (Nat.le_of_eq
+              (show (if part f then L.take s f c else 0) = 0 from
+                match part f, hp with
+                | false, _ => rfl))) (Nat.lt_irrefl 0)
+
+/-- **So such a part does not narrow**: the levels without it do not widen those with it. -/
+theorem Balances.not_narrows_of_renewed (balances : L.Balances W) (taking : L.Taking W)
+    {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    (renewed : ∀ t f c, part f = true → W.draws t f c → W.Renewed c) : ¬ W.Widens l W.level :=
+  fun widens => (balances.includes_of_renewed taking without renewed).not_exceeded widens.2
+
+/-- **A part of renewing formations keeps what can form.** Where every member renews over the run
+every condition it takes part in (`Web.RenewingIn`), the levels with the part include those
+without it. -/
+theorem Balances.includes_of_renewingIn (balances : L.Balances W) (taking : L.Taking W)
+    {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    (renewing : ∀ f, part f = true → W.RenewingIn f) : W.Includes W.level l :=
+  balances.includes_of_renewed taking without fun t f c member drawn =>
+    renewing f member t c (Or.inr drawn)
+
+/-- **A consuming part narrows where it opens nothing and the levels without it meet the consumed
+dependence.** Let a dependence held at `T` be met at no step after it (as in `Web.Consumed`), let
+the part give each condition at every step no more than it takes, and let the levels without the
+part admit at a later step `t` the formation whose dependence it was, that dependence held there
+at no smaller need. Then the levels without the part widen those with it. -/
+theorem Balances.narrows_of_consumed (balances : L.Balances W) {l : Nat → C → Nat}
+    (without : L.WithheldLevels part W l)
+    (keeps : ∀ t c, L.partGiven part t c ≤ L.partTaken part t c) {g : F} {c : C} {T t : Nat}
+    (below : ∀ t, T < t → W.level t c < W.need T g c) (later : T < t)
+    (holds : W.requires t g c ∧ W.need T g c ≤ W.need t g c) (admits : W.Admits (l t) t g) :
+    W.Widens l W.level :=
+  ⟨balances.opens_nothing without keeps,
+   Web.exceeded_of_below holds.1 (Nat.lt_of_lt_of_le (below t later) holds.2) admits⟩
+
 end Flow
 
 /-! ## Witnesses -/
@@ -345,6 +431,65 @@ theorem within_renewal_yet_loses {l : Nat → Unit → Nat}
      (includes 1 false (fun () _ => Nat.le_of_eq (without.unique withheld 1 ()).symm) ()
        (Nat.succ_pos 0))⟩
 
+/-- **Within renewal at its step, consuming over the run, and narrowing.** The drawer's event at
+the first step is within renewal (the stepwise class), the drawer is consuming over the run (the
+dependence of `false` on the condition, held from the second step, is met at no later step), it
+does not renew over the run, and the levels without its part widen those with it. So the stepwise
+class and the run class overlap at this event, and the run class is the one that tells the part's
+place in the order on what can form (`Flow.Balances.includes_of_renewingIn`). -/
+theorem renewingAt_consuming_narrows {l : Nat → Unit → Nat}
+    (without : flow.WithheldLevels drawerPart web l) :
+    web.RenewingAt 0 true ∧ web.ConsumingIn true ∧ ¬ web.RenewingIn true ∧ web.Widens l web.level :=
+  have balances : flow.Balances web := fun t () => match t with
+    | 0 => rfl
+    | _ + 1 => rfl
+  ⟨(within_renewal_yet_loses without).1,
+   ⟨0, (), trivial, false, 1, Nat.zero_lt_one, fun t later => match t, later with
+     | _ + 2, _ => Nat.zero_lt_one⟩,
+   fun renewing => Nat.not_succ_le_zero 0 ((renewing 0 () (Or.inr trivial) 1 false Nat.zero_lt_one).1),
+   ⟨balances.opens_nothing without fun t _ => match t with
+      | 0 => Nat.zero_le _
+      | _ + 1 => Nat.zero_le _,
+    1, false, fun () _ => Nat.le_of_eq (without.unique withheld 1 ()).symm,
+    fun supported => Nat.not_succ_le_zero 0 (supported () Nat.zero_lt_one)⟩⟩
+
 end Preemption
+
+/-! A part that draws on a condition it never takes from, where the condition never meets the
+dependence on it. -/
+
+namespace Untaken
+
+/-- Nothing takes or gives. -/
+def flow : Flow Unit Unit where
+  present _ := [()]
+  take _ _ _ := 0
+  give _ _ _ := 0
+
+/-- The condition stays at zero; the one formation requires it at need one and draws on it. -/
+def web : Web Unit Unit where
+  level _ _ := 0
+  active _ _ := False
+  requires _ _ _ := True
+  need _ _ _ := 1
+  draws _ _ _ := True
+
+/-- The formation's part. -/
+def part : Unit → Bool := fun _ => true
+
+/-- **Consuming, yet keeping what can form.** The formation is consuming over the run, since the
+condition it draws on meets the dependence on it at no step; the flow balances and only active
+formations take; and the levels with and without its part keep what can form the same. The
+consumption is not the part's: the part takes nothing. -/
+theorem consuming_keeps {l : Nat → Unit → Nat} (without : flow.WithheldLevels part web l) :
+    flow.Balances web ∧ flow.Taking web ∧ web.ConsumingIn () ∧ web.Keeps web.level l :=
+  have same : ∀ t, l t () = 0 := fun t =>
+    without.unique (l' := fun _ _ => 0) ⟨fun _ () => rfl, fun () => rfl⟩ t ()
+  ⟨fun _ () => rfl, fun _ _ _ _ takes => absurd takes (Nat.lt_irrefl 0),
+   ⟨0, (), trivial, (), 0, trivial, fun _ _ => Nat.zero_lt_one⟩,
+   fun t _ admits () requires => Nat.le_trans (admits () requires) (Nat.le_of_eq (same t)),
+   fun t _ admits () requires => Nat.le_trans (admits () requires) (Nat.le_of_eq (same t).symm)⟩
+
+end Untaken
 
 end Becoming

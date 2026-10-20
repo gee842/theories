@@ -1,0 +1,87 @@
+kept names: 11360 agree, 21 differ, 0 missing
+DIFFER Becoming.Ranking.stepwise_iff -> Becoming.Ranking.stepwise_iff
+  OLD ∀ {W F C Pos : Type} (U : W → RelationalRenewal.Unfolding F C) (w : W) (own sig : Pos → F × Nat → Prop) (e : F × Nat), Becoming.Ranking.stepwise U w e ↔ ((Becoming.Web.static (U w)).valuation own sig).living e
+  NEW ∀ {W F C Pos : Type} (U : W → Becoming.Web F C) (w : W) (own sig : Pos → F × Nat → Prop) (e : F × Nat), Becoming.Ranking.stepwise U w e ↔ ((U w).valuation own sig).living e
+DIFFER Becoming.Ranking.wholeRun_of_renewed -> Becoming.Ranking.wholeRun_of_renewed
+  OLD ∀ {W F C : Type} {U : W → RelationalRenewal.Unfolding F C} {w : W}, (∀ (c : C), RelationalRenewal.Renewed (U w) c) → ∀ (e : F × Nat), Becoming.Ranking.wholeRun U w e ↔ (U w).active e.snd e.fst
+  NEW ∀ {W F C : Type} {U : W → Becoming.Web F C} {w : W}, (∀ (c : C), (U w).Renewed c) → ∀ (e : F × Nat), Becoming.Ranking.wholeRun U w e ↔ (U w).active e.snd e.fst
+DIFFER Becoming.Ranking.stepwise_of_renewed -> Becoming.Ranking.stepwise_of_renewed
+  OLD ∀ {W F C : Type} {U : W → RelationalRenewal.Unfolding F C} {w : W}, (∀ (c : C), RelationalRenewal.Renewed (U w) c) → ∀ (e : F × Nat), Becoming.Ranking.stepwise U w e ↔ (U w).active e.snd e.fst
+  NEW ∀ {W F C : Type} {U : W → Becoming.Web F C} {w : W}, (∀ (c : C), (U w).Renewed c) → ∀ (e : F × Nat), Becoming.Ranking.stepwise U w e ↔ (U w).active e.snd e.fst
+DIFFER Becoming.Ranking.renewed_extends_iff -> Becoming.Ranking.renewed_extends_iff
+  OLD ∀ {W F C : Type} {U : W → RelationalRenewal.Unfolding F C} {w w' : W}, (∀ (c : C), RelationalRenewal.Renewed (U w') c) → (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.wholeRun U) w w' ↔ (∀ (e : F × Nat), Becoming.Ranking.wholeRun U w e → (U w').active e.snd e.fst) ∧ ∃ e, (U w').active e.snd e.fst ∧ ¬Becoming.Ranking.wholeRun U w e) ∧ (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise U) w w' ↔ (∀ (e : F × Nat), Becoming.Ranking.stepwise U w e → (U w').active e.snd e.fst) ∧ ∃ e, (U w').active e.snd e.fst ∧ ¬Becoming.Ranking.stepwise U w e)
+  NEW ∀ {W F C : Type} {U : W → Becoming.Web F C} {w w' : W}, (∀ (c : C), (U w').Renewed c) → (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.wholeRun U) w w' ↔ (∀ (e : F × Nat), Becoming.Ranking.wholeRun U w e → (U w').active e.snd e.fst) ∧ ∃ e, (U w').active e.snd e.fst ∧ ¬Becoming.Ranking.wholeRun U w e) ∧ (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise U) w w' ↔ (∀ (e : F × Nat), Becoming.Ranking.stepwise U w e → (U w').active e.snd e.fst) ∧ ∃ e, (U w').active e.snd e.fst ∧ ¬Becoming.Ranking.stepwise U w e)
+DIFFER Becoming.Ranking.renewed_active_extends_iff -> Becoming.Ranking.renewed_active_extends_iff
+  OLD ∀ {W F C : Type} {U : W → RelationalRenewal.Unfolding F C} {w w' : W}, (∀ (c : C), RelationalRenewal.Renewed (U w') c) → (∀ (t : Nat) (f : F), (U w').active t f) → (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.wholeRun U) w w' ↔ ∃ e, ¬Becoming.Ranking.wholeRun U w e) ∧ (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise U) w w' ↔ ∃ e, ¬Becoming.Ranking.stepwise U w e)
+  NEW ∀ {W F C : Type} {U : W → Becoming.Web F C} {w w' : W}, (∀ (c : C), (U w').Renewed c) → (∀ (t : Nat) (f : F), (U w').active t f) → (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.wholeRun U) w w' ↔ ∃ e, ¬Becoming.Ranking.wholeRun U w e) ∧ (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise U) w w' ↔ ∃ e, ¬Becoming.Ranking.stepwise U w e)
+DIFFER Becoming.Ranking.active_of_renewed -> Becoming.Ranking.active_of_renewed
+  OLD ∀ {F C : Type} {U : RelationalRenewal.Unfolding F C}, Becoming.Ranking.ActiveWhereSupported U → (∀ (c : C), RelationalRenewal.Renewed U c) → ∀ (t : Nat) (f : F), U.active t f
+  NEW ∀ {F C : Type} {U : Becoming.Web F C}, Becoming.Ranking.ActiveWhereSupported U → (∀ (c : C), U.Renewed c) → ∀ (t : Nat) (f : F), U.active t f
+DIFFER Becoming.Ranking.wholeRun_mono -> Becoming.Ranking.wholeRun_mono
+  OLD ∀ {W F C : Type} {U : W → RelationalRenewal.Unfolding F C} {w w' : W}, RelationalRenewal.Dependent (U w) → Becoming.Ranking.ActiveWhereSupported (U w') → Becoming.Ranking.Eases (U w) (U w') → ∀ {e : F × Nat}, Becoming.Ranking.wholeRun U w e → Becoming.Ranking.wholeRun U w' e
+  NEW ∀ {W F C : Type} {U : W → Becoming.Web F C} {w w' : W}, (U w).Dependent → Becoming.Ranking.ActiveWhereSupported (U w') → Becoming.Ranking.Eases (U w) (U w') → ∀ {e : F × Nat}, Becoming.Ranking.wholeRun U w e → Becoming.Ranking.wholeRun U w' e
+DIFFER Becoming.Ranking.wholeRun_extends_iff_of_eases -> Becoming.Ranking.wholeRun_extends_iff_of_eases
+  OLD ∀ {W F C : Type} {U : W → RelationalRenewal.Unfolding F C} {w w' : W}, RelationalRenewal.Dependent (U w) → Becoming.Ranking.ActiveWhereSupported (U w') → Becoming.Ranking.Eases (U w) (U w') → (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.wholeRun U) w w' ↔ ∃ e, Becoming.Ranking.wholeRun U w' e ∧ ¬Becoming.Ranking.wholeRun U w e)
+  NEW ∀ {W F C : Type} {U : W → Becoming.Web F C} {w w' : W}, (U w).Dependent → Becoming.Ranking.ActiveWhereSupported (U w') → Becoming.Ranking.Eases (U w) (U w') → (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.wholeRun U) w w' ↔ ∃ e, Becoming.Ranking.wholeRun U w' e ∧ ¬Becoming.Ranking.wholeRun U w e)
+DIFFER Becoming.Ranking.absent_renews -> Becoming.Ranking.absent_renews
+  OLD ∀ (L : RelationalRenewal.Law), L.needF ≤ L.needG → L.needG ≤ L.start → ∀ (c : Unit), RelationalRenewal.Renewed (Becoming.Ranking.course L Becoming.Ranking.Course.absent) c
+  NEW ∀ (L : RelationalRenewal.Law), L.needF ≤ L.needG → L.needG ≤ L.start → ∀ (c : Unit), (Becoming.Ranking.course L Becoming.Ranking.Course.absent).Renewed c
+DIFFER Becoming.Ranking.ThirdParty.dependent -> Becoming.Ranking.ThirdParty.dependent
+  OLD ∀ (level : Nat → Nat), RelationalRenewal.Dependent (Becoming.Ranking.ThirdParty.unfolding level)
+  NEW ∀ (level : Nat → Nat), (Becoming.Ranking.ThirdParty.web level).Dependent
+DIFFER Becoming.Ranking.ThirdParty.restraint_unranked_stepwise -> Becoming.Ranking.ThirdParty.restraint_unranked_stepwise
+  OLD RelationalRenewal.Dependent (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops) ∧ RelationalRenewal.Dependent (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws) ∧ ¬Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses) Becoming.Ranking.Restraint.overdraws Becoming.Ranking.Restraint.stops ∧ ¬Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses) Becoming.Ranking.Restraint.stops Becoming.Ranking.Restraint.overdraws ∧ Becoming.Ranking.ComparisonUnder (Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses) (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses)) ∧ Becoming.Ranking.ExtendsUnder (Becoming.Ranking.wholeRun Becoming.Ranking.ThirdParty.courses) Becoming.Ranking.Restraint.overdraws Becoming.Ranking.Restraint.stops
+  NEW (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops).Dependent ∧ (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws).Dependent ∧ ¬Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses) Becoming.Ranking.Restraint.overdraws Becoming.Ranking.Restraint.stops ∧ ¬Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses) Becoming.Ranking.Restraint.stops Becoming.Ranking.Restraint.overdraws ∧ Becoming.Ranking.ComparisonUnder (Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses) (Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses)) ∧ Becoming.Ranking.ExtendsUnder (Becoming.Ranking.wholeRun Becoming.Ranking.ThirdParty.courses) Becoming.Ranking.Restraint.overdraws Becoming.Ranking.Restraint.stops
+DIFFER Becoming.Ranking.ThirdParty.renewal_needed -> Becoming.Ranking.ThirdParty.renewal_needed
+  OLD ¬RelationalRenewal.Renewed (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops) () ∧ (∀ (e : Becoming.Ranking.ThirdParty.Part × Nat), Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws e → (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops).active e.snd e.fst) ∧ (∃ e, (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops).active e.snd e.fst ∧ ¬Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws e) ∧ ¬Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses) Becoming.Ranking.Restraint.overdraws Becoming.Ranking.Restraint.stops
+  NEW ¬(Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops).Renewed () ∧ (∀ (e : Becoming.Ranking.ThirdParty.Part × Nat), Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws e → (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops).active e.snd e.fst) ∧ (∃ e, (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops).active e.snd e.fst ∧ ¬Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws e) ∧ ¬Becoming.Ranking.ExtendsUnder (Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses) Becoming.Ranking.Restraint.overdraws Becoming.Ranking.Restraint.stops
+DIFFER Becoming.Ranking.ThirdParty.stepwise_not_monotone -> Becoming.Ranking.ThirdParty.stepwise_not_monotone
+  OLD RelationalRenewal.Dependent (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws) ∧ Becoming.Ranking.ActiveWhereSupported (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops) ∧ Becoming.Ranking.Eases (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws) (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops) ∧ Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws (Becoming.Ranking.ThirdParty.Part.focal, 3) ∧ ¬Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops (Becoming.Ranking.ThirdParty.Part.focal, 3) ∧ Becoming.Ranking.ExtendsUnder (Becoming.Ranking.wholeRun Becoming.Ranking.ThirdParty.courses) Becoming.Ranking.Restraint.overdraws Becoming.Ranking.Restraint.stops
+  NEW (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws).Dependent ∧ Becoming.Ranking.ActiveWhereSupported (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops) ∧ Becoming.Ranking.Eases (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws) (Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops) ∧ Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.overdraws (Becoming.Ranking.ThirdParty.Part.focal, 3) ∧ ¬Becoming.Ranking.stepwise Becoming.Ranking.ThirdParty.courses Becoming.Ranking.Restraint.stops (Becoming.Ranking.ThirdParty.Part.focal, 3) ∧ Becoming.Ranking.ExtendsUnder (Becoming.Ranking.wholeRun Becoming.Ranking.ThirdParty.courses) Becoming.Ranking.Restraint.overdraws Becoming.Ranking.Restraint.stops
+DIFFER Becoming.ActiveReading.wholeRun_withholds_consuming -> Becoming.ActiveReading.wholeRun_withholds_consuming
+  OLD ∀ {W F C : Type} (U : W → RelationalRenewal.Unfolding F C) {w : W} {f : F}, RelationalRenewal.ConsumingIn (U w) f → ∀ (t : Nat), ¬Becoming.Ranking.wholeRun U w (f, t)
+  NEW ∀ {W F C : Type} (U : W → Becoming.Web F C) {w : W} {f : F}, (U w).ConsumingIn f → ∀ (t : Nat), ¬Becoming.Ranking.wholeRun U w (f, t)
+DIFFER Becoming.ActiveReading.livingSignificance_wholeRun_iff -> Becoming.ActiveReading.livingSignificance_wholeRun_iff
+  OLD ∀ {W F C : Type} (U : W → RelationalRenewal.Unfolding F C) (relevance : W → F × Nat → Prop), Becoming.LivingSignificance (Becoming.Ranking.frame (Becoming.Ranking.wholeRun U)) (fun x => True) relevance ↔ ∀ (w : W) (f : F) (t : Nat), (U w).active t f → ¬RelationalRenewal.ConsumingIn (U w) f → relevance w (f, t)
+  NEW ∀ {W F C : Type} (U : W → Becoming.Web F C) (relevance : W → F × Nat → Prop), Becoming.LivingSignificance (Becoming.Ranking.frame (Becoming.Ranking.wholeRun U)) (fun x => True) relevance ↔ ∀ (w : W) (f : F) (t : Nat), (U w).active t f → ¬(U w).ConsumingIn f → relevance w (f, t)
+DIFFER Becoming.ActiveReading.livingSignificance_wholeRun_web_iff -> Becoming.ActiveReading.livingSignificance_wholeRun_iff
+  OLD ∀ {W F C : Type} (U : W → RelationalRenewal.Unfolding F C) (relevance : W → F × Nat → Prop), Becoming.LivingSignificance (Becoming.Ranking.frame (Becoming.Ranking.wholeRun U)) (fun x => True) relevance ↔ ∀ (w : W) (f : F) (t : Nat), (Becoming.Web.static (U w)).active t f → ¬(Becoming.Web.static (U w)).ConsumingIn f → relevance w (f, t)
+  NEW ∀ {W F C : Type} (U : W → Becoming.Web F C) (relevance : W → F × Nat → Prop), Becoming.LivingSignificance (Becoming.Ranking.frame (Becoming.Ranking.wholeRun U)) (fun x => True) relevance ↔ ∀ (w : W) (f : F) (t : Nat), (U w).active t f → ¬(U w).ConsumingIn f → relevance w (f, t)
+DIFFER Becoming.ActiveReading.absent_dependent -> Becoming.ActiveReading.absent_dependent
+  OLD ∀ (L : RelationalRenewal.Law), RelationalRenewal.Dependent (Becoming.Ranking.absent L)
+  NEW ∀ (L : RelationalRenewal.Law), (Becoming.Ranking.absent L).Dependent
+DIFFER Becoming.ActiveReading.absent_web_dependent -> Becoming.ActiveReading.absent_dependent
+  OLD ∀ (L : RelationalRenewal.Law), (Becoming.Web.static (Becoming.Ranking.absent L)).Dependent
+  NEW ∀ (L : RelationalRenewal.Law), (Becoming.Ranking.absent L).Dependent
+DIFFER Becoming.ActiveReading.absent_not_consuming -> Becoming.ActiveReading.absent_not_consuming
+  OLD ∀ (L : RelationalRenewal.Law) (p : RelationalRenewal.Law.Part), ¬RelationalRenewal.ConsumingIn (Becoming.Ranking.absent L) p
+  NEW ∀ (L : RelationalRenewal.Law) (p : RelationalRenewal.Law.Part), ¬(Becoming.Ranking.absent L).ConsumingIn p
+DIFFER Becoming.Ranking.possible_of_active -> Becoming.Ranking.possible_of_active
+  OLD ∀ {W F C : Type} {U : W → RelationalRenewal.Unfolding F C} {w : W}, RelationalRenewal.Dependent (U w) → ∀ {e : F × Nat}, (U w).active e.snd e.fst → Becoming.Ranking.possible U w e
+  NEW ∀ {W F C : Type} {U : W → Becoming.Web F C} {w : W}, (U w).Dependent → ∀ {e : F × Nat}, (U w).active e.snd e.fst → Becoming.Ranking.possible U w e
+DIFFER Becoming.Ranking.possibleFirst_order -> Becoming.Ranking.possibleFirst_order
+  OLD ∀ {W F C : Type} (U : W → RelationalRenewal.Unfolding F C) (reading : W → F × Nat → Prop), Becoming.Ranking.ComparisonUnder (Becoming.Ranking.possible U) (Becoming.Ranking.possibleFirst U reading) ∧ (∀ (w : W), ¬Becoming.Ranking.possibleFirst U reading w w) ∧ ∀ (w w' w'' : W), Becoming.Ranking.possibleFirst U reading w w' → Becoming.Ranking.possibleFirst U reading w' w'' → Becoming.Ranking.possibleFirst U reading w w''
+  NEW ∀ {W F C : Type} (U : W → Becoming.Web F C) (reading : W → F × Nat → Prop), Becoming.Ranking.ComparisonUnder (Becoming.Ranking.possible U) (Becoming.Ranking.possibleFirst U reading) ∧ (∀ (w : W), ¬Becoming.Ranking.possibleFirst U reading w w) ∧ ∀ (w w' w'' : W), Becoming.Ranking.possibleFirst U reading w w' → Becoming.Ranking.possibleFirst U reading w' w'' → Becoming.Ranking.possibleFirst U reading w w''
+new names: 22
+NEW Becoming.Clearing.direction
+NEW Becoming.Clearing.spared_widens
+NEW Becoming.Direction.chosen_keeps_basic
+NEW Becoming.Direction.extension_iff_widens
+NEW Becoming.Direction.kept_required
+NEW Becoming.Direction.narrowed_not_chosen
+NEW Becoming.Direction.options_iff
+NEW Becoming.Direction.widening_not_not_better
+NEW Becoming.Direction.widening_selected_by_pool
+NEW Becoming.Flow.Balances.includes_of_renewed
+NEW Becoming.Flow.Balances.includes_of_renewingIn
+NEW Becoming.Flow.Balances.narrows_of_consumed
+NEW Becoming.Flow.Balances.not_narrows_of_renewed
+NEW Becoming.Preemption.renewingAt_consuming_narrows
+NEW Becoming.Untaken.consuming_keeps
+NEW Becoming.Web.paths_one_object
+NEW Becoming.Web.selfValuation_empty_own
+NEW Becoming.Web.selfValuation_feeding_own
+NEW Becoming.Web.selfValuation_held
+NEW Becoming.Web.selfValuation_of_unrestricted
+NEW Becoming.Web.selfValuation_own_least
+NEW Becoming.Web.selfValuation_significant_iff

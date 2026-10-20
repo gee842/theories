@@ -6,6 +6,10 @@ import Becoming.Regions
 C, the comparison of `Becoming.Metaethics`, read on frames and on the level paths of a web, with
 no valuation and no condition.
 
+* **Living significance as a predicate.** Living content realized at a configuration falls under a
+  relevance (`LivingSignificance`); stated here, with no valuation and no condition, since R34
+  (20 October 2026), so that modules that compare readings without the condition need not import
+  the valuations.
 * **On frames.** A configuration extends another when it keeps every claim the other realizes
   and realizes a living claim the other does not (`Extension`); C on a frame says every extension
   is better (`Comparison`), and a description supporting it tells every extension from its base
@@ -38,6 +42,15 @@ and realizes some living claim the first does not. -/
 def Extension (F : Frame S A C) (living : C → Prop) (s t : S) : Prop :=
   (∀ c, F.realized s c → F.realized t c) ∧
     ∃ c, living c ∧ F.realized t c ∧ ¬ F.realized s c
+
+/-- Living significance on the frame: living content realized at a configuration falls under the
+relevance `relevance` there. The parameter carries no valence: read from significance
+(`Frame.relevance`), it is significance from every standpoint. A predicate on a frame, with no
+valuation and no condition; under the continuation condition it holds
+(`livingSignificance_of_unrestricted`, `Web.unrestricted_iff_paths_livingSignificance`, in
+`Becoming.Relevance`), and nothing here assumes it. -/
+def LivingSignificance (F : Frame S A C) (living : C → Prop) (relevance : S → C → Prop) : Prop :=
+  ∀ s c, living c → F.realized s c → relevance s c
 
 /-- C on the frame. `Better s t` says that `t` is strictly better. -/
 def Comparison (F : Frame S A C) (living : C → Prop) (Better : S → S → Prop) : Prop :=

@@ -1,0 +1,15 @@
+{
+ "about": "Apart-register entries retired by R34 (20 October 2026): each names a theorem that is no longer an apart root, because its statement now reads a web (F9 of the twentieth review). Bytes as they stood in THEOREM-CONNECTIVITY-APART.json.",
+ "roots": {
+  "Becoming.Ranking.active_of_renewed": {
+   "module": "Becoming.Ranking",
+   "category": "support",
+   "reason": "a one-line unpacking of ActiveWhereSupported with Renewed in Becoming.Ranking, used by no Lean file; it mentions nothing outside the core, so it is no interface equivalence (fold study, section 3.1)"
+  },
+  "Becoming.ActiveReading.absent_included": {
+   "module": "Becoming.ActiveReading",
+   "category": "support",
+   "reason": "a one-line unpacking: `Ranking.absent_sustains` with `absent_not_consuming`, the course without the focal formation read by the whole-run reading (RenewalComparison.absent_grounds, ported by F3R)"
+  }
+ }
+}

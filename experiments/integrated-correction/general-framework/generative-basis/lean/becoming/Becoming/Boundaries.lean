@@ -1,5 +1,6 @@
 import Becoming.Feedback
 import Becoming.BoundedSignificance
+import Becoming.Standpoints
 
 /-!
 # Boundaries: the self's presupposition, however its boundary is drawn
@@ -21,6 +22,19 @@ does not lower the continuation condition's content.
   boundary and the whole the greatest (`Boundary.closure`, `Boundary.whole`, `Boundary.holds`).
   Where everything lies within the formation's closure, the whole is its only boundary
   (`Boundary.only_whole`).
+* **Standpoints as formations** (R34, 20 October 2026). The valuations of `Becoming.Metaethics`
+  hold for any type of standpoints; their instance with the formations as standpoints, each one's
+  own region its closure under a relation of the unfolding, `living` and `related` the web's
+  stepwise reading, leaves `sig` the only evaluative parameter supplied (`Web.selfValuation`). A
+  self's own region is its least boundary (`Web.selfValuation_own_least`); every event is its own
+  formation's, so living significance is self-significance at every formation with standpoint
+  neutrality, along any relation (`Web.selfValuation_held`, `Web.selfValuation_significant_iff`);
+  along the empty relation the own region is the formation's own events, the case of
+  `Web.significant_iff_self` (`Web.selfValuation_empty_own`); along feeding it is the feeding
+  closure (`Web.selfValuation_feeding_own`); and under the continuation condition every premise of
+  the valuation holds (`Web.selfValuation_of_unrestricted`). The relation is read off the
+  unfolding (feeding, affecting, being affected, sharing a condition, coupling), and which one a
+  center draws its region along is not derived here.
 * **Truth however the boundary is drawn.** A claim about a self is super-true when it holds
   however the boundary is drawn among the admissible ones (`SuperTrue`), sub-true when it holds
   as the boundary is drawn somewhere (`SubTrue`), and boundary-invariant when, holding as drawn
@@ -187,6 +201,79 @@ theorem only_whole {f : F} (connected : ∀ g, WithinClosure rel f g) {region : 
   fun g => boundary.holds (connected g)
 
 end Boundary
+
+/-! ## Standpoints as formations, a self's region as its closure
+
+The valuations of `Becoming.Metaethics` take standpoints of any type, each with a supplied region
+(`own`) and a supplied significance (`sig`). Every law there holds for any type of standpoints; the
+reading that standpoints are formations is the instance with the formations themselves as the
+standpoints. Here that instance is stated with each formation's own region its closure under a
+relation of the unfolding, the least boundary of its self: feeding (`Flow.FedFrom`), affecting
+(`Flow.Affects`, the reach closure), being affected (`Flow.AffectedBy`, the influence closure),
+sharing a condition (`Flow.Shares`, the system) or being affected through what couples in (the
+coupling closure). `living` and `related` are the web's stepwise reading. So the one evaluative
+parameter supplied is `sig`, the significance of a formation's continuation at a step from a
+standpoint, and the continuation condition fills exactly that. -/
+
+section Selves
+
+/-- **The valuation of a web's events from the formations themselves**: the standpoints are the
+formations, each one's own region is its closure under `rel`, `living` and `related` are the
+stepwise reading of `Web.valuation`, and an event's significance from a formation is that of the
+event's formation's continuation at its step. Only `sig` is supplied. -/
+def Web.selfValuation (W : Web F C) (rel : F → F → Prop) (sig : F → Nat → F → Prop) :
+    Valuation F (F × Nat) :=
+  W.valuation (fun f e => WithinClosure rel f e.1) fun f e => sig f e.2 e.1
+
+variable {W : Web F C} {rel : F → F → Prop} {sig : F → Nat → F → Prop}
+
+/-- **A self's own region is its least boundary**: it holds the formation's own events, it is a
+boundary along `rel`, and every boundary along `rel` holds it. -/
+theorem Web.selfValuation_own_least (f : F) :
+    (∀ t, (W.selfValuation rel sig).own f (f, t)) ∧
+      Boundary rel f (fun g => ∀ t, (W.selfValuation rel sig).own f (g, t)) ∧
+      ∀ region, Boundary rel f region → ∀ e, (W.selfValuation rel sig).own f e → region e.1 :=
+  ⟨fun _ => WithinClosure.refl f, ⟨fun _ _ inside related _ => (inside 0).trans (.of_rel related),
+     fun _ => WithinClosure.refl f⟩,
+   fun _ boundary _ own => boundary.holds own⟩
+
+/-- **Every event is its own formation's**: each event lies in the own region of its formation. -/
+theorem Web.selfValuation_held : (W.selfValuation rel sig).Held :=
+  fun e _ => ⟨e.1, WithinClosure.refl e.1⟩
+
+/-- So living significance there is self-significance at every formation with standpoint
+neutrality, along any relation (`Valuation.significant_iff_held`); along the empty relation each
+formation's own region is its own events (`Web.selfValuation_empty_own`), the case of
+`Web.significant_iff_self`. -/
+theorem Web.selfValuation_significant_iff :
+    (W.selfValuation rel sig).Significant ↔
+      (∀ f, (W.selfValuation rel sig).SelfSignificance f) ∧
+        Neutral (W.selfValuation rel sig).shares :=
+  Valuation.significant_iff_held Web.selfValuation_held
+
+/-- Along the empty relation a formation's own region is its own events. -/
+theorem Web.selfValuation_empty_own {f : F} {e : F × Nat} :
+    (W.selfValuation (fun _ _ => False) sig).own f e ↔ e.1 = f :=
+  ⟨fun within => within (· = f) (fun _ _ _ no => no.elim) rfl,
+   fun same => same ▸ WithinClosure.refl e.1⟩
+
+/-- Along feeding a formation's own region is its feeding closure, what its continuation depends
+on. -/
+theorem Web.selfValuation_feeding_own (L : Flow F C) {f : F} {e : F × Nat} :
+    (W.selfValuation (L.FedFrom W) sig).own f e ↔ L.WithinFeeding W f e.1 :=
+  Flow.withinFeeding_iff.symm
+
+/-- **Under the continuation condition the valuation from the formations has every premise**:
+living significance at the level of claims, self-significance at every formation, both
+neutralities and a seed wherever something lives (`Valuation.premises_of_unrestricted`), along any
+relation. -/
+theorem Web.selfValuation_of_unrestricted (unrestricted : Unrestricted sig) :
+    (W.selfValuation rel sig).Significant ∧ (∀ f, (W.selfValuation rel sig).SelfSignificance f) ∧
+      Neutral (W.selfValuation rel sig).transmits ∧ Neutral (W.selfValuation rel sig).shares ∧
+      ∀ e, (W.selfValuation rel sig).living e → F → (W.selfValuation rel sig).Seed :=
+  Valuation.premises_of_unrestricted unrestricted Prod.fst Prod.snd fun _ _ held => held
+
+end Selves
 
 /-! ## Truth however the boundary is drawn -/
 

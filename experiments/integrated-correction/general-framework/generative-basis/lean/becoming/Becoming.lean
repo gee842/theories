@@ -263,6 +263,7 @@ import Becoming.Lexical
 import Becoming.Frontier
 import Becoming.FrontierFrames
 import Becoming.FrontierWorlds
+import Becoming.Direction
 import Becoming.ScoreRepresentation
 import Becoming.Alternatives
 import Becoming.Bundles
@@ -946,12 +947,12 @@ every module importing one of them; L1 holds the rest. No module imports one of 
 * `Becoming.Lifting` (L1): the lifting rule L on a frame's responses: C lifts, P and N hold
   with L, and two countermodels show that the choice of the rule is substantive and that
   transitivity needs a live middle response.
-* `Becoming.Ranking` (L2): what C ranks under each reading. Both the whole-run and the
+* `Becoming.Ranking` (L1): what C ranks under each reading. Both the whole-run and the
   stepwise reading rank sharing above winning by consumption and, in the two-part
   family, restraint above overdraw; for an overdrawing formation with an event that
   leaves every need met, only the whole-run reading ranks its absence above its
   occurrence.
-* `Becoming.ActiveReading` (L2): the reading of every active event beside the whole-run reading
+* `Becoming.ActiveReading` (L1): the reading of every active event beside the whole-run reading
   (no premise): the whole-run reading withholds a consumer's events, and living significance on it
   credits exactly the active events of non-consuming formations (`livingSignificance_wholeRun_iff`); under the
   reading of every active event an overdrawing formation leaves the two courses unranked, so C
@@ -1517,11 +1518,15 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   a handover with no gap serves, and a gap refutes service. Joint plans and undertakings on the
   world's moves: a sole giver to what a formation requires is required, and active where only
   active formations give; a discharged undertaking leaves no residual step.
+* `Becoming.Direction` (L1): the direction on a web's moves. C read as widening on the
+  moves' outcomes; under J1/J2 a chosen move keeps basic admissions and a narrowed move is not
+  chosen where it is decided whether the widening adds a basic admission; the admission that
+  tells two moves apart is selected only through a pool coupled into it. Instance: `Clearing`.
 * `Becoming.FrontierFrames` (L1): scores over the options of a step. Every option best by the
   score with acceptance keeps access exactly where every option best by the base score does;
   restricting to the options loses score, least among them; an option best by an estimate
   within `err` is within `2 * err` of every option.
-* `Becoming.ScoreRepresentation` (L2): C does not yield protection first: every comparison by
+* `Becoming.ScoreRepresentation` (L1): C does not yield protection first: every comparison by
   a natural-number score satisfying C outranks protection by enough gains, while a bounded
   rational score represents the lexical order. Ported from `ProtectionPriorityRival` (F3J).
 * `Becoming.Alternatives` (L2): alternatives of one history realizing configurations; C, P and

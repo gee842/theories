@@ -172,11 +172,6 @@
    "category": "support",
    "reason": "List lemma: both Booleans are members of the witness list `two`."
   },
-  "Becoming.Ranking.active_of_renewed": {
-   "module": "Becoming.Ranking",
-   "category": "support",
-   "reason": "a one-line unpacking of ActiveWhereSupported with Renewed in Becoming.Ranking, used by no Lean file; it mentions nothing outside the core, so it is no interface equivalence (fold study, section 3.1)"
-  },
   "Becoming.RecursOrStops.lpo": {
    "module": "Becoming.Frequency",
    "category": "logical-strength",
@@ -411,11 +406,6 @@
    "module": "Becoming.ScopedReach",
    "category": "model-witness",
    "reason": "every configuration of the three-place witness lies in one of its two scopes' domains; a fact about the constructed domains of the alternating witness, the core counterpart of WholeGroundCoverage's alternating_domains_cover"
-  },
-  "Becoming.ActiveReading.absent_included": {
-   "module": "Becoming.ActiveReading",
-   "category": "support",
-   "reason": "a one-line unpacking: `Ranking.absent_sustains` with `absent_not_consuming`, the course without the focal formation read by the whole-run reading (RenewalComparison.absent_grounds, ported by F3R)"
   },
   "Becoming.Dephasing.no_uniform_dephase_inverse": {
    "module": "Becoming.Dephasing",

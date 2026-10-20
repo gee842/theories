@@ -203,8 +203,12 @@ def ExcludesWithin (admitted : (Nat → C → Nat) → Prop) (obs : F → C → 
   ∀ l', admitted l' → claim l' → ¬ W.AlikeThroughUpTo obs g l l' t
 
 /-- A condition couples into `g` when `g` depends on it, by the threshold of its support, or it
-is coupled into `g` by level (`obs`). The coupling is directed: `c` into `g`.
-(`Becoming.RespectsClaims` of `Becoming.Likeness` is a different relation, on descriptions under
+is coupled into `g` by level (`obs`). The coupling is directed: `c` into `g`. Dependence is read
+off the web; `obs` is the second supplied relation, beside the web, and does not change with the
+step. Where it is empty (`thresholdOnly`) the coupling is dependence alone and the coupling
+closure is the influence closure (`Flow.withinCoupling_thresholdOnly`); that `obs` derives from
+dependence in general is a conjecture (`apart_only_downstream` shows only that what is observed
+lies downstream). (`Becoming.RespectsClaims` of `Becoming.Likeness` is a different relation, on descriptions under
 which related descriptions realize the same claims.) -/
 def CoupledInto (obs : F → C → Prop) (g : F) (c : C) : Prop :=
   W.DependsOn g c ∨ obs g c

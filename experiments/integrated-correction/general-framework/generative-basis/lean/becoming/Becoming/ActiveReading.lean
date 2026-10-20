@@ -1,6 +1,6 @@
 import Becoming.Ranking
 import Becoming.Frame
-import Becoming.ValuationFrames
+import Becoming.Extension
 
 /-!
 # The reading of every active event, beside the whole-run reading
@@ -13,12 +13,12 @@ reading, which includes every active event, and the unfolding lemmas of the whol
 that the core lacked.
 
 * **The whole-run reading.** It withholds every event of a consuming formation
-  (`wholeRun_withholds_consuming`), and living significance on it (`LivingSignificance`) holds exactly where the
-  active events of non-consuming formations fall under `relevance`, a parameter whose
-  name carries no valence (`livingSignificance_wholeRun_iff`). The course without the
-  focal formation is dependent, on its unfolding and its web (`absent_dependent`,
-  `absent_web_dependent`), no formation consumes in it (`absent_not_consuming`), and its
-  sustaining formation's events are included at every step (`absent_included`).
+  (`wholeRun_withholds_consuming`), and living significance on it (`LivingSignificance`, a
+  predicate on the frame of courses, assumed nowhere here) holds exactly where the active events
+  of non-consuming formations fall under `relevance`, a parameter whose name carries no valence
+  (`livingSignificance_wholeRun_iff`). The course without the focal formation is a dependent web
+  (`absent_dependent`), no formation consumes in it (`absent_not_consuming`), and its sustaining
+  formation's events are included at every step (`absent_included`).
 * **The reading of every active event** (`active`). Where the focal formation draws beyond
   renewal, neither course extends the other under it (`overdraw_unranked`): the course without the
   formation lacks the formation's first event, and the course with it lacks the sustaining
@@ -45,43 +45,27 @@ variable {W F C : Type}
 /-! ## The whole-run reading -/
 
 /-- **The whole-run reading withholds every event of a consuming formation.** -/
-theorem wholeRun_withholds_consuming (U : W → Unfolding F C) {w : W} {f : F}
-    (consuming : ConsumingIn (U w) f) (t : Nat) : ¬ Ranking.wholeRun U w (f, t) :=
+theorem wholeRun_withholds_consuming (U : W → Web F C) {w : W} {f : F}
+    (consuming : (U w).ConsumingIn f) (t : Nat) : ¬ Ranking.wholeRun U w (f, t) :=
   fun included => included.2 consuming
 
 /-- **Living significance on the whole-run reading** (`LivingSignificance`) holds exactly where the active events
 of non-consuming formations fall under `relevance`; it says nothing of consumers' events. -/
-theorem livingSignificance_wholeRun_iff (U : W → Unfolding F C) (relevance : W → F × Nat → Prop) :
+theorem livingSignificance_wholeRun_iff (U : W → Web F C) (relevance : W → F × Nat → Prop) :
     LivingSignificance (Ranking.frame (Ranking.wholeRun U)) (fun _ => True) relevance ↔
-      ∀ w f t, (U w).active t f → ¬ ConsumingIn (U w) f → relevance w (f, t) :=
+      ∀ w f t, (U w).active t f → ¬ (U w).ConsumingIn f → relevance w (f, t) :=
   ⟨fun g0 w f t active notConsuming => g0 w (f, t) trivial ⟨active, notConsuming⟩,
    fun h w e _ included => h w e.1 e.2 included.1 included.2⟩
 
-/-- Living significance on the whole-run reading, read on the courses' webs: every active event of a formation
-that does not consume on its course's web falls under `relevance`. -/
-theorem livingSignificance_wholeRun_web_iff (U : W → Unfolding F C) (relevance : W → F × Nat → Prop) :
-    LivingSignificance (Ranking.frame (Ranking.wholeRun U)) (fun _ => True) relevance ↔
-      ∀ w f t, (Web.static (U w)).active t f → ¬ (Web.static (U w)).ConsumingIn f →
-        relevance w (f, t) :=
-  (livingSignificance_wholeRun_iff U relevance).trans
-    ⟨fun relevant w f t active notConsuming => relevant w f t active
-        fun consuming => notConsuming ((Web.static_consumingIn _ _).mpr consuming),
-     fun relevant w f t active notConsuming => relevant w f t active
-        fun consuming => notConsuming ((Web.static_consumingIn _ _).mp consuming)⟩
-
 /-- **The course without the focal formation is dependent.** -/
-theorem absent_dependent (L : Law) : Dependent (Ranking.absent L) :=
+theorem absent_dependent (L : Law) : (Ranking.absent L).Dependent :=
   fun _ p active _ _ => match p, active with
     | .focal, active => False.elim active
     | .sustaining, active => active
 
-/-- The course without the focal formation is a dependent web. -/
-theorem absent_web_dependent (L : Law) : (Web.static (Ranking.absent L)).Dependent :=
-  (Web.static_dependent _).mpr (absent_dependent L)
-
 /-- **No formation consumes in the course without the focal formation**: it draws nothing. -/
-theorem absent_not_consuming (L : Law) (p : Part) : ¬ ConsumingIn (Ranking.absent L) p :=
-  fun ⟨_, draws, _⟩ => draws
+theorem absent_not_consuming (L : Law) (p : Part) : ¬ (Ranking.absent L).ConsumingIn p :=
+  fun ⟨_, _, draws, _⟩ => draws
 
 /-- From a start meeting the sustaining need, the whole-run reading includes the sustaining
 formation's event at every step of the course without the focal formation. -/
@@ -92,7 +76,7 @@ theorem absent_included (L : Law) (gStart : L.needG ≤ L.start) (t : Nat) :
 /-! ## The reading of every active event -/
 
 /-- The reading that includes every active event. -/
-def active (U : W → Unfolding F C) (w : W) (e : F × Nat) : Prop :=
+def active (U : W → Web F C) (w : W) (e : F × Nat) : Prop :=
   (U w).active e.2 e.1
 
 /-- **Under the reading of every active event, neither course extends the other** where the
@@ -160,8 +144,8 @@ theorem winning_active (t : Nat) : active Ranking.contest .wins (.focal, t) :=
 /-- No event of the winning formation is included by the whole-run reading. -/
 theorem winning_withheld (t : Nat) : ¬ Ranking.wholeRun Ranking.contest .wins (.focal, t) :=
   wholeRun_withholds_consuming Ranking.contest (w := .wins)
-    (independent_overdraw_persists winning rfl (Nat.succ_pos 0) (T0 := 0)
-      (fun _ _ => Nat.lt_succ_self 1)).2.2 t
+    ((Web.static_consumingIn _ _).mpr (independent_overdraw_persists winning rfl (Nat.succ_pos 0)
+      (T0 := 0) (fun _ _ => Nat.lt_succ_self 1)).2.2) t
 
 /-- **Sharing extends winning by consumption under both readings**; the reading of every active
 event includes every event of the winner, the whole-run reading none. -/
@@ -175,10 +159,11 @@ theorem contest_readings :
   | ⟨_, T, lost⟩ =>
     have kept := within_renewal_sustains sharing (fun _ => Nat.le_refl 1)
       (Nat.le_succ_of_le (Nat.le_succ 1)) (Nat.zero_le 3)
-    have renews : ∀ c, Renewed (Ranking.contest .shares) c :=
+    have renews : ∀ c, (Ranking.contest .shares).Renewed c :=
       fun _ t g depends => match g, depends with
         | .focal, depends => absurd depends (Nat.lt_irrefl 0)
-        | .sustaining, _ => Nat.le_trans (Nat.le_succ_of_le (Nat.le_succ 1)) (kept t)
+        | .sustaining, _ => ⟨Nat.le_trans (Nat.le_succ_of_le (Nat.le_succ 1)) (kept t),
+            Nat.le_trans (Nat.le_succ_of_le (Nat.le_succ 1)) (kept (t + 1))⟩
     ⟨(Ranking.renewed_active_extends_iff (U := Ranking.contest) (w := .wins) (w' := .shares)
         renews fun t p => (Ranking.sharing_included (p, t)).1).1.mpr
         ⟨(.sustaining, T), fun alive => lost T (Nat.le_refl T) alive.1⟩,

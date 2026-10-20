@@ -78,7 +78,12 @@ this module states what holds under the condition.
   (`Preemption.within_renewal_yet_loses`). Undermining, where the levels without the part meet the
   dependences, is a sign of loss; neither renewal nor its absence of undermining is a sign of
   keeping, and loss itself is exactly a net draw beyond the margin
-  (`Flow.Balances.loses_iff_beyond_margin`).
+  (`Flow.Balances.loses_iff_beyond_margin`). Over the run the class does decide, in one direction:
+  where only active formations take, and only from what they draw on, a part whose draws fall on
+  conditions renewed over the run keeps what can form (`Flow.Balances.includes_of_renewed`, in
+  `Becoming.Retaining`), and a consuming part narrows where it opens nothing and the levels without
+  it meet the consumed dependence (`Flow.Balances.narrows_of_consumed`); the preempting drawer is
+  within renewal at its step and consuming over the run (`Preemption.renewingAt_consuming_narrows`).
 * **The whole first.** Where fewer continuations have significance, more is retained
   (`Web.Retains.of_fewer`). Significance bounded by a region retains what is admitted within
   the region (`Web.retains_bounded_iff`). Under the continuation condition, what retains in the whole retains

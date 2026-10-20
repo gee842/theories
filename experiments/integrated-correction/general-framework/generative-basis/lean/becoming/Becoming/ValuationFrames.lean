@@ -9,8 +9,9 @@ import Becoming.Extension
 `Becoming.Metaethics` states valuations over the relations a web or a flow forms, and
 `Becoming.Significance` states the continuation condition on them; neither imports the frame. This
 module holds their readings on frames and runs of a labelled process: formed relations as a process
-on claims (`Valuation.relations`, `Valuation.Connected`); living significance on a frame (`LivingSignificance`,
-`Valuation.livingSignificance`) and the reason a sound inquiry
+on claims (`Valuation.relations`, `Valuation.Connected`); living significance on a frame
+(`Valuation.livingSignificance`; the predicate `LivingSignificance` itself takes no valuation and
+is stated in `Becoming.Extension` since R34) and the reason a sound inquiry
 gives every position with access (`universal_reason`); access as a realized claim (`AccessAt`);
 the instances on conditions read along a run (`Conditions.valuation` and what follows) and on
 separate formations (`Separate`); the models showing each hypothesis needed (`Model`); and the
@@ -69,12 +70,6 @@ theorem significant_iff (connected : V.Connected) (p₀ : Pos) {c₀ : C}
 end Valuation
 
 variable {S A C Pos : Type}
-
-/-- Living significance on the frame: living content realized at a configuration falls under the
-relevance `relevance` there. The parameter carries no valence: read from significance
-(`Frame.relevance`), it is significance from every standpoint. -/
-def LivingSignificance (F : Frame S A C) (living : C → Prop) (relevance : S → C → Prop) : Prop :=
-  ∀ s c, living c → F.realized s c → relevance s c
 
 /-- Claim-level significance is living significance for the frame, with relevance read as
 significance from every standpoint. -/

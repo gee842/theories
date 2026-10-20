@@ -156,7 +156,9 @@ theorem held_by_formations (sig : F → F × Nat → Prop) :
     (W.valuation (fun f e => e.1 = f) sig).Held :=
   fun e _ => ⟨e.1, rfl⟩
 
-/-- So living significance there is S0 at every formation with standpoint neutrality. -/
+/-- So living significance there is S0 at every formation with standpoint neutrality. This is the
+case of the empty relation of `Web.selfValuation_significant_iff` (`Becoming.Boundaries`), where
+each formation's own region is its closure under a relation of the unfolding. -/
 theorem significant_iff_self (sig : F → F × Nat → Prop) :
     (W.valuation (fun f e => e.1 = f) sig).Significant ↔
       (∀ f, (W.valuation (fun f e => e.1 = f) sig).SelfSignificance f) ∧

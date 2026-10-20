@@ -148,7 +148,9 @@ or boundary enters. -/
 variable (W)
 
 /-- The level path `l` widens `l'`: it admits every formation `l'` admits and, at some step, one
-more. A part whose levels widen those without it is generative. -/
+more. A part whose levels widen those without it is generative. Widening counts admissions of
+members of the fixed type `F` at the needs the web gives: a formation or requirement of a kind not
+in `F` widens nothing, so growth by new kinds (as along `Flow.GrownBy`) is not compared here. -/
 def Widens (l l' : Nat → C → Nat) : Prop :=
   W.Includes l l' ∧ W.Exceeds l l'
 

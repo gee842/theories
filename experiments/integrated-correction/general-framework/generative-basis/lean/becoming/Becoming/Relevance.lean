@@ -20,6 +20,11 @@ generative-capacity modules was audited for what it needs of positive relevance 
   periphery's interface. With no axiom, living significance with this relevance holds exactly where every
   realized living claim's continuation has significance from every standpoint
   (`livingSignificance_relevance_iff`): it is the continuation condition on realized living content.
+* **One evaluative object: admission.** On the level paths of a web the continuation condition is
+  living significance over admission, an extension over admission is a widening, and under the
+  condition widening is retaining and adding from every standpoint (`Web.paths_one_object`): the
+  condition, significance and C read one predicate, a formation's admission at a step. The stepwise
+  `living` is one reading of which admissions to count.
 * **The continuation condition is living significance for anything.** On a frame whose claims are formations at steps, each
   realized at some configuration, the continuation condition holds exactly when living significance holds with every claim living
   and positive relevance read as significance from every standpoint (`unrestricted_iff_livingSignificance`).
@@ -150,6 +155,22 @@ theorem Web.paths_somewhere (W : Web F C) (e : F × Nat) : ∃ l, W.paths.realiz
 theorem Web.unrestricted_iff_paths_livingSignificance (W : Web F C) {sig : Pos → Nat → F → Prop} :
     Unrestricted sig ↔ LivingSignificance W.paths (fun _ => True) (fun _ e => ∀ p, sig p e.2 e.1) :=
   unrestricted_iff_livingSignificance W.paths W.paths_somewhere
+
+/-- **One evaluative object: admission.** On the level paths of a web, with every admitted
+formation at a step taken as a claim, the continuation condition, living significance, C and the
+retaining and adding of what has significance read one predicate, `W.Admits (l t) t f`. The
+condition is living significance over admission (`Web.unrestricted_iff_paths_livingSignificance`);
+an extension over admission is a widening (`Web.paths_extension_iff_widens`), so C read as
+widening ranks exactly the extensions; and under the condition widening is retaining and adding
+from every standpoint (`Web.widens_iff_retains_adds`). The stepwise `living` (active and not
+undermining) is then one reading of which admissions to count, and no part of this chain. -/
+theorem Web.paths_one_object (W : Web F C) {sig : Pos → Nat → F → Prop} :
+    (Unrestricted sig ↔ LivingSignificance W.paths (fun _ => True) (fun _ e => ∀ p, sig p e.2 e.1)) ∧
+      (∀ l l' : Nat → C → Nat, Extension W.paths (fun _ => True) l' l ↔ W.Widens l l') ∧
+      (Unrestricted sig → ∀ (p : Pos) (l l' : Nat → C → Nat),
+        W.Widens l l' ↔ W.Retains sig p l l' ∧ W.Adds sig p l l') :=
+  ⟨W.unrestricted_iff_paths_livingSignificance, fun _ _ => W.paths_extension_iff_widens,
+   fun unrestricted p _ _ => Web.widens_iff_retains_adds unrestricted p⟩
 
 end Paths
 
@@ -301,14 +322,19 @@ open RelationalRenewal RelationalRenewal.Law
 
 variable {W F C : Type}
 
+/-- The stepwise reading is the `living` of `Web.valuation`. -/
+theorem stepwise_iff {Pos : Type} (U : W → Web F C) (w : W) (own sig : Pos → F × Nat → Prop)
+    (e : F × Nat) : stepwise U w e ↔ ((U w).valuation own sig).living e :=
+  Iff.rfl
+
 /-- The possibility reading: a course includes a formation at a step when the course's levels
 admit it there, active or not. -/
-def possible (U : W → Unfolding F C) (w : W) (e : F × Nat) : Prop :=
-  (Web.static (U w)).Admits ((U w).level e.2) e.2 e.1
+def possible (U : W → Web F C) (w : W) (e : F × Nat) : Prop :=
+  (U w).Admits ((U w).level e.2) e.2 e.1
 
 /-- In a dependent course the possibility reading includes every active formation, so every event
 that either reading of `living` includes. -/
-theorem possible_of_active {U : W → Unfolding F C} {w : W} (dependent : Dependent (U w))
+theorem possible_of_active {U : W → Web F C} {w : W} (dependent : (U w).Dependent)
     {e : F × Nat} (active : (U w).active e.2 e.1) : possible U w e :=
   dependent e.2 e.1 active
 
@@ -381,8 +407,8 @@ theorem malignant_possible :
    fun _ _ => Nat.le_succ_of_le (Nat.le_succ_of_le (Nat.le_succ 1)),
    included_before_loss malignant (t := 0)
      (Nat.le_succ_of_le (Nat.le_succ_of_le (Nat.le_succ 1))) (Nat.le_refl 2) (Nat.le_succ 1),
-   fun ⟨_, notConsuming⟩ =>
-     notConsuming (overdraw_consuming malignant Nat.zero_lt_two (Nat.le_succ 1) over).1⟩
+   fun ⟨_, notConsuming⟩ => notConsuming ((Web.static_consumingIn _ _).mpr
+     (overdraw_consuming malignant Nat.zero_lt_two (Nat.le_succ 1) over).1)⟩
 
 /-- Under the possibility reading sharing extends winning by consumption. -/
 theorem possible_contest : ExtendsUnder (possible contest) .wins .shares :=
@@ -390,7 +416,8 @@ theorem possible_contest : ExtendsUnder (possible contest) .wins .shares :=
       (fun _ _ => Nat.lt_succ_self 1) with
   | ⟨_, T, lost⟩ =>
     have shares : ∀ e, possible contest .shares e := fun e =>
-      possible_of_active (U := contest) (w := .shares) (unfolding_dependent sharing)
+      possible_of_active (U := contest) (w := .shares)
+        ((Web.static_dependent _).mpr (unfolding_dependent sharing))
         (sharing_included e).1
     ⟨fun e _ => shares e, (.sustaining, T), trivial, shares (.sustaining, T),
      fun admitted => lost T (Nat.le_refl T) (admitted () trivial)⟩
@@ -474,12 +501,12 @@ theorem sharing_presence :
 /-- Possibilities first, then a reading's included events: the second course is better when it
 extends the first under the possibility reading, or admits the same formations and extends it
 under the reading. -/
-def possibleFirst (U : W → Unfolding F C) (reading : W → F × Nat → Prop) (w w' : W) : Prop :=
+def possibleFirst (U : W → Web F C) (reading : W → F × Nat → Prop) (w w' : W) : Prop :=
   ExtendsUnder (possible U) w w' ∨
     ((∀ e, possible U w e ↔ possible U w' e) ∧ ExtendsUnder reading w w')
 
 /-- It satisfies C under the possibility reading, and it is irreflexive and transitive. -/
-theorem possibleFirst_order (U : W → Unfolding F C) (reading : W → F × Nat → Prop) :
+theorem possibleFirst_order (U : W → Web F C) (reading : W → F × Nat → Prop) :
     ComparisonUnder (possible U) (possibleFirst U reading) ∧
       (∀ w, ¬ possibleFirst U reading w w) ∧
       ∀ w w' w'', possibleFirst U reading w w' → possibleFirst U reading w' w'' →
@@ -529,12 +556,12 @@ step 0, though supported; in the course `false` it is active at every step. -/
 
 namespace Pause
 
-def courses (rests : Bool) : Unfolding Unit Unit where
+def courses (rests : Bool) : Web Unit Unit where
   level _ _ := 1
   active t _ := rests = true → t ≠ 0
-  requires _ _ := True
-  need _ _ := 1
-  draws _ _ := False
+  requires _ _ _ := True
+  need _ _ _ := 1
+  draws _ _ _ := False
 
 /-- The two courses admit the same formations, so neither extends the other under the
 possibility reading; with either reading of `living` second, possibilities first ranks the
@@ -547,8 +574,8 @@ theorem pause_ranked_below :
   have all : ∀ w e, possible courses w e := fun _ _ _ _ => Nat.le_refl 1
   have same : ∀ e, possible courses true e ↔ possible courses false e :=
     fun e => ⟨fun _ => all false e, fun _ => all true e⟩
-  have notConsuming : ∀ w f, ¬ ConsumingIn (courses w) f := fun _ _ ⟨_, drawn, _⟩ => drawn
-  have notUndermining : ∀ w t f, ¬ (Web.static (courses w)).UnderminingAt t f :=
+  have notConsuming : ∀ w f, ¬ (courses w).ConsumingIn f := fun _ _ ⟨_, _, drawn, _⟩ => drawn
+  have notUndermining : ∀ w t f, ¬ (courses w).UnderminingAt t f :=
     fun _ _ _ ⟨_, drawn, _⟩ => drawn
   have active : ∀ e : Unit × Nat, (courses false).active e.2 e.1 := fun _ no => Bool.noConfusion no
   have resting : ¬ (courses true).active 0 () := fun rests => rests rfl rfl

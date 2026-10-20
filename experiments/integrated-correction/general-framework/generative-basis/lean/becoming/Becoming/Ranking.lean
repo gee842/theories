@@ -1,6 +1,5 @@
-import Becoming.Metaethics
 import Becoming.Frame
-import Becoming.ValuationFrames
+import Becoming.Extension
 
 /-!
 # What comparison C ranks under each reading of `living`
@@ -64,6 +63,12 @@ of `living` that keeps that ranking must withhold the formation's events before 
 loss, as the whole-run reading does. Which reading C should use belongs to the choice of
 the reading of 生生.
 
+Each course is a web (`Web F C`): the law's unfolding is read through `Web.static`, whose
+dependences do not change (R34, 20 October 2026; before, a course was the foundation's
+fixed-dependence record). That the stepwise reading is the `living` of `Web.valuation` is stated
+in `Becoming.Relevance` (`Ranking.stepwise_iff`), so this module imports no valuation and no
+condition.
+
 C occurs only as a hypothesis or as the definition `Comparison`. No axiom occurs.
 -/
 
@@ -90,18 +95,15 @@ def ComparisonUnder {W E : Type} (reading : W → E → Prop) (Better : W → W 
 
 variable {W F C : Type}
 
-/-- The whole-run reading of a family of unfoldings: active and not consuming. -/
-def wholeRun (U : W → Unfolding F C) (w : W) (e : F × Nat) : Prop :=
-  (U w).active e.2 e.1 ∧ ¬ ConsumingIn (U w) e.1
+/-- The whole-run reading of a family of courses, each a web: active and not consuming over the
+run. -/
+def wholeRun (U : W → Web F C) (w : W) (e : F × Nat) : Prop :=
+  (U w).active e.2 e.1 ∧ ¬ (U w).ConsumingIn e.1
 
-/-- The stepwise reading: active and not undermining. -/
-def stepwise (U : W → Unfolding F C) (w : W) (e : F × Nat) : Prop :=
-  (Web.static (U w)).active e.2 e.1 ∧ ¬ (Web.static (U w)).UnderminingAt e.2 e.1
-
-/-- The stepwise reading is the `living` of `Web.valuation`. -/
-theorem stepwise_iff {Pos : Type} (U : W → Unfolding F C) (w : W) (own sig : Pos → F × Nat → Prop)
-    (e : F × Nat) : stepwise U w e ↔ ((Web.static (U w)).valuation own sig).living e :=
-  Iff.rfl
+/-- The stepwise reading: active and not undermining. It is the `living` of `Web.valuation`
+(`Ranking.stepwise_iff`, in `Becoming.Relevance`). -/
+def stepwise (U : W → Web F C) (w : W) (e : F × Nat) : Prop :=
+  (U w).active e.2 e.1 ∧ ¬ (U w).UnderminingAt e.2 e.1
 
 /-! ## Laws over every family of courses -/
 
@@ -118,24 +120,24 @@ theorem extendsUnder_iff_of_exact {E : Type} {reading : W → E → Prop} {w w' 
 
 /-- In a course that renews every condition the whole-run reading includes exactly the
 active events: nothing there consumes. -/
-theorem wholeRun_of_renewed {U : W → Unfolding F C} {w : W} (renewed : ∀ c, Renewed (U w) c)
+theorem wholeRun_of_renewed {U : W → Web F C} {w : W} (renewed : ∀ c, (U w).Renewed c)
     (e : F × Nat) : wholeRun U w e ↔ (U w).active e.2 e.1 :=
   ⟨fun included => included.1,
-   fun active => ⟨active, fun ⟨c, _, consumed⟩ => renewed_not_consumed (renewed c) consumed⟩⟩
+   fun active => ⟨active, fun ⟨_, c, _, consumed⟩ => Web.renewed_not_consumed (renewed c) consumed⟩⟩
 
 /-- In a course that renews every condition the stepwise reading includes exactly the active
 events: nothing there undermines. -/
-theorem stepwise_of_renewed {U : W → Unfolding F C} {w : W} (renewed : ∀ c, Renewed (U w) c)
+theorem stepwise_of_renewed {U : W → Web F C} {w : W} (renewed : ∀ c, (U w).Renewed c)
     (e : F × Nat) : stepwise U w e ↔ (U w).active e.2 e.1 :=
   ⟨fun included => included.1,
    fun active => ⟨active, fun ⟨c, _, g, depends, _, fell⟩ =>
-     Nat.not_le_of_gt fell (renewed c (e.2 + 1) g depends)⟩⟩
+     Nat.not_le_of_gt fell (renewed c e.2 g depends).2⟩⟩
 
 /-- The law of comparison with a renewing course, for every family of courses: under either
 reading, a course that renews every condition extends another exactly when it is active at
 every event the other includes and at some event the other withholds. -/
-theorem renewed_extends_iff {U : W → Unfolding F C} {w w' : W}
-    (renewed : ∀ c, Renewed (U w') c) :
+theorem renewed_extends_iff {U : W → Web F C} {w w' : W}
+    (renewed : ∀ c, (U w').Renewed c) :
     (ExtendsUnder (wholeRun U) w w' ↔ (∀ e, wholeRun U w e → (U w').active e.2 e.1) ∧
       ∃ e, (U w').active e.2 e.1 ∧ ¬ wholeRun U w e) ∧
     (ExtendsUnder (stepwise U) w w' ↔ (∀ e, stepwise U w e → (U w').active e.2 e.1) ∧
@@ -145,8 +147,8 @@ theorem renewed_extends_iff {U : W → Unfolding F C} {w w' : W}
 
 /-- Where moreover every formation is active at every step of the renewing course, it
 extends exactly the courses that withhold some event, under either reading. -/
-theorem renewed_active_extends_iff {U : W → Unfolding F C} {w w' : W}
-    (renewed : ∀ c, Renewed (U w') c) (always : ∀ t f, (U w').active t f) :
+theorem renewed_active_extends_iff {U : W → Web F C} {w w' : W}
+    (renewed : ∀ c, (U w').Renewed c) (always : ∀ t f, (U w').active t f) :
     (ExtendsUnder (wholeRun U) w w' ↔ ∃ e, ¬ wholeRun U w e) ∧
     (ExtendsUnder (stepwise U) w w' ↔ ∃ e, ¬ stepwise U w e) :=
   ⟨⟨fun ext => match ((renewed_extends_iff renewed).1.mp ext).2 with
@@ -159,39 +161,40 @@ theorem renewed_active_extends_iff {U : W → Unfolding F C} {w w' : W}
       ⟨fun e _ => always e.2 e.1, e, always e.2 e.1, withheld⟩⟩⟩
 
 /-- A formation is active wherever the conditions it depends on support it. -/
-def ActiveWhereSupported (U : Unfolding F C) : Prop :=
-  ∀ t f, Supported U t f → U.active t f
+def ActiveWhereSupported (U : Web F C) : Prop :=
+  ∀ t f, U.Supported t f → U.active t f
 
 /-- Activity that follows support makes every formation active at every step of a course
 that renews every condition. -/
-theorem active_of_renewed {U : Unfolding F C} (gated : ActiveWhereSupported U)
-    (renewed : ∀ c, Renewed U c) (t : Nat) (f : F) : U.active t f :=
-  gated t f fun c depends => renewed c t f depends
+theorem active_of_renewed {U : Web F C} (gated : ActiveWhereSupported U)
+    (renewed : ∀ c, U.Renewed c) (t : Nat) (f : F) : U.active t f :=
+  gated t f fun c depends => (renewed c t f depends).1
 
 /-- `V` eases `U`: it asks no dependence `U` lacks and no greater need, holds every condition
 at least as high, and draws on nothing `U` does not. -/
-def Eases (U V : Unfolding F C) : Prop :=
-  (∀ f c, V.requires f c → U.requires f c) ∧ (∀ f c, V.need f c ≤ U.need f c) ∧
-    (∀ t c, U.level t c ≤ V.level t c) ∧ ∀ f c, V.draws f c → U.draws f c
+def Eases (U V : Web F C) : Prop :=
+  (∀ t f c, V.requires t f c → U.requires t f c) ∧ (∀ t f c, V.need t f c ≤ U.need t f c) ∧
+    (∀ t c, U.level t c ≤ V.level t c) ∧ ∀ t f c, V.draws t f c → U.draws t f c
 
 /-- Easing never withdraws an event the whole-run reading includes: from a course where
 activity needs support to one where activity follows support and that eases it, every event
 the whole-run reading includes stays included. -/
-theorem wholeRun_mono {U : W → Unfolding F C} {w w' : W} (dependent : Dependent (U w))
+theorem wholeRun_mono {U : W → Web F C} {w w' : W} (dependent : (U w).Dependent)
     (gated : ActiveWhereSupported (U w')) (eases : Eases (U w) (U w')) {e : F × Nat} :
     wholeRun U w e → wholeRun U w' e
   | ⟨active, notConsuming⟩ =>
-    ⟨gated e.2 e.1 fun c depends => Nat.le_trans (eases.2.1 e.1 c)
-        (Nat.le_trans (dependent e.2 e.1 active c (eases.1 e.1 c depends)) (eases.2.2.1 e.2 c)),
-     fun ⟨c, drawn, g, T, depends, lost⟩ => notConsuming ⟨c, eases.2.2.2 e.1 c drawn, g, T,
-       eases.1 g c depends, fun t later => Nat.lt_of_le_of_lt (eases.2.2.1 t c)
-         (Nat.lt_of_lt_of_le (lost t later) (eases.2.1 g c))⟩⟩
+    ⟨gated e.2 e.1 fun c depends => Nat.le_trans (eases.2.1 e.2 e.1 c)
+        (Nat.le_trans (dependent e.2 e.1 active c (eases.1 e.2 e.1 c depends))
+          (eases.2.2.1 e.2 c)),
+     fun ⟨s, c, drawn, g, T, depends, lost⟩ => notConsuming ⟨s, c, eases.2.2.2 s e.1 c drawn, g, T,
+       eases.1 T g c depends, fun t later => Nat.lt_of_le_of_lt (eases.2.2.1 t c)
+         (Nat.lt_of_lt_of_le (lost t later) (eases.2.1 T g c))⟩⟩
 
 /-- The whole-run law of easing: under its conditions the easing course extends the other
 exactly when it includes some event the other withholds. The stepwise reading has no such
 law (`ThirdParty.stepwise_not_monotone`). -/
-theorem wholeRun_extends_iff_of_eases {U : W → Unfolding F C} {w w' : W}
-    (dependent : Dependent (U w)) (gated : ActiveWhereSupported (U w'))
+theorem wholeRun_extends_iff_of_eases {U : W → Web F C} {w w' : W}
+    (dependent : (U w).Dependent) (gated : ActiveWhereSupported (U w'))
     (eases : Eases (U w) (U w')) :
     ExtendsUnder (wholeRun U) w w' ↔ ∃ e, wholeRun U w' e ∧ ¬ wholeRun U w e :=
   ⟨fun ⟨_, e, _, included, withheld⟩ => ⟨e, included, withheld⟩,
@@ -213,18 +216,20 @@ def undisturbed (L : Law) : Nat → Nat
   | 0 => L.start
   | t + 1 => if L.needG ≤ undisturbed L t then undisturbed L t + L.renew else undisturbed L t
 
-/-- The law's unfolding in which the focal formation does not occur and draws nothing. -/
-def absent (L : Law) : Unfolding Part Unit where
+/-- The law's course in which the focal formation does not occur and draws nothing, as a web. -/
+def absent (L : Law) : Web Part Unit where
   level t _ := undisturbed L t
   active t p := match p with
     | .focal => False
     | .sustaining => L.needG ≤ undisturbed L t
-  requires p _ := L.requiresPart p
-  need p _ := L.need p
-  draws _ _ := False
+  requires _ p _ := L.requiresPart p
+  need _ p _ := L.need p
+  draws _ _ _ := False
 
-def course (L : Law) : Course → Unfolding Part Unit
-  | .occurs => L.unfolding
+/-- The two courses of a law as webs: the law's unfolding read as a web with fixed dependences
+(`Web.static`), or the course without the focal formation. -/
+def course (L : Law) : Course → Web Part Unit
+  | .occurs => Web.static L.unfolding
   | .absent => absent L
 
 theorem undisturbed_sustains (L : Law) (gStart : L.needG ≤ L.start) :
@@ -241,10 +246,11 @@ theorem absent_sustains (L : Law) (gStart : L.needG ≤ L.start) (t : Nat) :
 
 /-- The course without the focal formation renews every condition. -/
 theorem absent_renews (L : Law) (fWithin : L.needF ≤ L.needG) (gStart : L.needG ≤ L.start) :
-    ∀ c, Renewed (course L .absent) c :=
+    ∀ c, (course L .absent).Renewed c :=
   fun _ t g _ => match g with
-    | .focal => Nat.le_trans fWithin (absent_sustains L gStart t)
-    | .sustaining => absent_sustains L gStart t
+    | .focal => ⟨Nat.le_trans fWithin (absent_sustains L gStart t),
+        Nat.le_trans fWithin (absent_sustains L gStart (t + 1))⟩
+    | .sustaining => ⟨absent_sustains L gStart t, absent_sustains L gStart (t + 1)⟩
 
 /-- The course without a formation extends the course with it only if the reading
 withholds every event of that formation. -/
@@ -267,7 +273,8 @@ theorem whole_run_extends (L : Law) (positive : 0 < L.needG) (fWithin : L.needF 
     (renewed_extends_iff (U := course L) (w := .occurs) (w' := .absent)
       (absent_renews L fWithin gStart)).1.mpr
       ⟨fun
-        | (.focal, _), ⟨_, notConsuming⟩ => absurd consuming notConsuming
+        | (.focal, _), ⟨_, notConsuming⟩ =>
+          absurd ((Web.static_consumingIn _ _).mpr consuming) notConsuming
         | (.sustaining, t), _ => absent_sustains L gStart t,
        (.sustaining, T), absent_sustains L gStart T, fun alive => lost T (Nat.le_refl T) alive.1⟩
 
@@ -435,9 +442,9 @@ inductive Contest where
   | shares
   | wins
 
-def contest : Contest → Unfolding Part Unit
-  | .shares => sharing.unfolding
-  | .wins => winning.unfolding
+def contest : Contest → Web Part Unit
+  | .shares => Web.static sharing.unfolding
+  | .wins => Web.static winning.unfolding
 
 /-- Sharing includes every event under the stepwise reading: the condition never falls
 below its start. -/
@@ -471,7 +478,8 @@ theorem stepwise_contest :
      (renewed_active_extends_iff (U := contest) (w := .wins) (w' := .shares)
         (fun _ t g depends => match g, depends with
           | .focal, depends => absurd depends (Nat.lt_irrefl 0)
-          | .sustaining, _ => (sharing_included (.sustaining, t)).1)
+          | .sustaining, _ => ⟨(sharing_included (.sustaining, t)).1,
+              (sharing_included (.sustaining, t + 1)).1⟩)
         fun t p => (sharing_included (p, t)).1).2.mpr
       ⟨(.sustaining, T), fun alive => lost T (Nat.le_refl T) alive.1⟩⟩
 
@@ -483,9 +491,9 @@ inductive Restraint where
   | stops
   | overdraws
 
-def restraint (stopping overdrawing : Law) : Restraint → Unfolding Part Unit
-  | .stops => stopping.unfolding
-  | .overdraws => overdrawing.unfolding
+def restraint (stopping overdrawing : Law) : Restraint → Web Part Unit
+  | .stops => Web.static stopping.unfolding
+  | .overdraws => Web.static overdrawing.unfolding
 
 variable {stopping overdrawing : Law}
 
@@ -499,10 +507,10 @@ theorem stops_included (met : ∀ t, stopping.needG ≤ stopping.level t ∧
     match e with
     | (.focal, t) => (met t).2
     | (.sustaining, t) => (met t).1
-  ⟨⟨active, fun ⟨_, _, g, T, _, below⟩ =>
-      match g, below T (Nat.le_refl T) with
-      | .focal, fell => Nat.not_le_of_gt fell (met T).2
-      | .sustaining, fell => Nat.not_le_of_gt fell (met T).1⟩,
+  ⟨⟨active, fun ⟨_, _, _, g, T, _, below⟩ =>
+      match g, below (T + 1) (Nat.lt_succ_self T) with
+      | .focal, fell => Nat.not_le_of_gt fell (met (T + 1)).2
+      | .sustaining, fell => Nat.not_le_of_gt fell (met (T + 1)).1⟩,
    ⟨active, fun ⟨_, _, g, _, _, fell⟩ =>
       match g, fell with
       | .focal, fell => Nat.not_le_of_gt fell (met _).2
@@ -528,8 +536,8 @@ theorem restraint_ranks (met : ∀ t, stopping.needG ≤ stopping.level t ∧
     have laws := renewed_active_extends_iff (U := restraint stopping overdrawing)
       (w := .overdraws) (w' := .stops)
       (fun _ t g _ => match g with
-        | .focal => (met t).2
-        | .sustaining => (met t).1)
+        | .focal => ⟨(met t).2, (met (t + 1)).2⟩
+        | .sustaining => ⟨(met t).1, (met (t + 1)).1⟩)
       fun t p => match p with
         | .focal => (met t).2
         | .sustaining => (met t).1
@@ -605,32 +613,32 @@ def overLevel : Nat → Nat
   | _ + 6 => 0
 
 /-- The focal formation needs nothing and always draws; the sustaining formation needs
-one; the third formation needs seven and draws while active. As in the static web,
-`draws` carries no amount. -/
-def unfolding (level : Nat → Nat) : Unfolding Part Unit where
+one; the third formation needs seven and draws while active. Its dependences do not change with
+the step, and `draws` carries no amount. -/
+def web (level : Nat → Nat) : Web Part Unit where
   level t _ := level t
   active t p := match p with
     | .focal => True
     | .sustaining => 1 ≤ level t
     | .third => 7 ≤ level t
-  requires p _ := match p with
+  requires _ p _ := match p with
     | .focal => False
     | .sustaining => True
     | .third => True
-  need p _ := match p with
+  need _ p _ := match p with
     | .focal => 0
     | .sustaining => 1
     | .third => 7
-  draws p _ := match p with
+  draws _ p _ := match p with
     | .focal => True
     | .sustaining => False
     | .third => True
 
-def courses : Restraint → Unfolding Part Unit
-  | .stops => unfolding stopsLevel
-  | .overdraws => unfolding overLevel
+def courses : Restraint → Web Part Unit
+  | .stops => web stopsLevel
+  | .overdraws => web overLevel
 
-theorem dependent (level : Nat → Nat) : Dependent (unfolding level) :=
+theorem dependent (level : Nat → Nat) : (web level).Dependent :=
   fun _ p active _ depends => match p, active, depends with
   | .sustaining, active, _ => active
   | .third, active, _ => active
@@ -668,23 +676,23 @@ theorem focal_three :
 other, so extension itself is a comparison satisfying C that does not rank restraint
 above overdraw. Under the whole-run reading restraint extends overdraw. -/
 theorem restraint_unranked_stepwise :
-    Dependent (courses .stops) ∧ Dependent (courses .overdraws) ∧
+    (courses .stops).Dependent ∧ (courses .overdraws).Dependent ∧
     ¬ ExtendsUnder (stepwise courses) .overdraws .stops ∧
     ¬ ExtendsUnder (stepwise courses) .stops .overdraws ∧
     ComparisonUnder (stepwise courses) (ExtendsUnder (stepwise courses)) ∧
     ExtendsUnder (wholeRun courses) .overdraws .stops :=
-  have overConsumed : Consumed (courses .overdraws) () :=
+  have overConsumed : (courses .overdraws).Consumed () :=
     ⟨.sustaining, 6, trivial, fun t later => match t, later with
-      | _ + 6, _ => Nat.zero_lt_one⟩
+      | _ + 7, _ => Nat.zero_lt_one⟩
   have sustains : ∀ t, wholeRun courses .stops (.sustaining, t) :=
-    fun t => ⟨stops_supports t, fun ⟨_, drawn, _⟩ => drawn⟩
+    fun t => ⟨stops_supports t, fun ⟨_, _, drawn, _⟩ => drawn⟩
   ⟨dependent stopsLevel, dependent overLevel,
    fun ⟨sub, _⟩ => focal_three.2 (sub _ focal_three.1),
    fun ⟨sub, _⟩ => Nat.not_succ_le_zero 0
      (sub (.sustaining, 6) ⟨stops_supports 6, fun ⟨_, drawn, _⟩ => drawn⟩).1,
    fun _ _ ext => ext,
    ⟨fun e included => match e, included with
-     | (.focal, _), ⟨_, notConsuming⟩ => absurd ⟨(), trivial, overConsumed⟩ notConsuming
+     | (.focal, _), ⟨_, notConsuming⟩ => absurd ⟨0, (), trivial, overConsumed⟩ notConsuming
      | (.sustaining, t), _ => sustains t
      | (.third, _), ⟨active, _⟩ => absurd active (Nat.not_le_of_gt (over_below_seven _)),
     (.sustaining, 6), trivial, sustains 6, fun ⟨active, _⟩ => Nat.not_succ_le_zero 0 active⟩⟩
@@ -693,11 +701,11 @@ theorem restraint_unranked_stepwise :
 is active at every event the overdrawing course includes and at an event it withholds, yet
 does not extend it, since it does not renew the third formation's condition. -/
 theorem renewal_needed :
-    ¬ Renewed (courses .stops) () ∧
+    ¬ (courses .stops).Renewed () ∧
     (∀ e, stepwise courses .overdraws e → (courses .stops).active e.2 e.1) ∧
     (∃ e, (courses .stops).active e.2 e.1 ∧ ¬ stepwise courses .overdraws e) ∧
     ¬ ExtendsUnder (stepwise courses) .overdraws .stops :=
-  ⟨fun renewed => absurd (renewed 0 .third trivial) (by decide),
+  ⟨fun renewed => absurd (renewed 0 .third trivial).1 (by decide),
    fun e included => match e, included with
     | (.focal, _), _ => trivial
     | (.sustaining, t), _ => stops_supports t
@@ -720,7 +728,7 @@ one, activity needs support in both and follows support in the restrained one, y
 stepwise reading includes the focal event at step 3 only in the overdrawing course. The
 whole-run reading ranks restraint higher, as `wholeRun_extends_iff_of_eases` gives. -/
 theorem stepwise_not_monotone :
-    Dependent (courses .overdraws) ∧ ActiveWhereSupported (courses .stops) ∧
+    (courses .overdraws).Dependent ∧ ActiveWhereSupported (courses .stops) ∧
     Eases (courses .overdraws) (courses .stops) ∧
     stepwise courses .overdraws (.focal, 3) ∧ ¬ stepwise courses .stops (.focal, 3) ∧
     ExtendsUnder (wholeRun courses) .overdraws .stops :=
@@ -729,12 +737,12 @@ theorem stepwise_not_monotone :
     | .sustaining => supported () trivial
     | .third => supported () trivial
   have eases : Eases (courses .overdraws) (courses .stops) :=
-    ⟨fun _ _ depends => depends, fun _ _ => Nat.le_refl _, fun t _ => over_le_stops t,
-     fun _ _ drawn => drawn⟩
+    ⟨fun _ _ _ depends => depends, fun _ _ _ => Nat.le_refl _, fun t _ => over_le_stops t,
+     fun _ _ _ drawn => drawn⟩
   ⟨dependent overLevel, gated, eases, focal_three.1, focal_three.2,
    (wholeRun_extends_iff_of_eases (U := courses) (w := .overdraws) (w' := .stops)
      (dependent overLevel) gated eases).mpr
-     ⟨(.sustaining, 6), ⟨stops_supports 6, fun ⟨_, drawn, _⟩ => drawn⟩,
+     ⟨(.sustaining, 6), ⟨stops_supports 6, fun ⟨_, _, drawn, _⟩ => drawn⟩,
       fun ⟨active, _⟩ => Nat.not_succ_le_zero 0 active⟩⟩
 
 end ThirdParty
