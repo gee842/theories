@@ -135,8 +135,8 @@
       "kind": "scope"
     },
     {
-      "en": "The variance form of the response to selection (Fisher's fundamental theorem), a law of forming that is necessary as well as sufficient, dependences newly formed by descent, and how offspring numbers are bounded by what is given.",
-      "zh": "对选择的响应的方差形式（Fisher 的基本定理）、既必要又充分的形成之律、世系新形成的依存，以及后代数如何受给予之量约束。",
+      "en": "A law of forming that is necessary as well as sufficient, and dependences newly formed by descent. The variance form (in the case of exact transmission of offspring number) and how offspring numbers are bounded by what is given are stated in Becoming.Reproduction (record what-bounds-offspring-numbers).",
+      "zh": "既必要又充分的形成之律，以及世系新形成的依存。方差形式（后代数精确传递的情形）与后代数如何受给予之量约束，陈述于 Becoming.Reproduction（记录 what-bounds-offspring-numbers）。",
       "kind": "scope"
     },
     {
@@ -172,8 +172,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T072647.879143Z）：Becoming.SelectionTerm 的 91 项声明（67 项定理）公理报告为空；检查器并核对核心纯净。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 234 节；未经人的独立审查。"
   },
   "next_delta": {
-    "en": "A law of reproduction bounding offspring numbers by what is given; the variance form; a witness of selection proper on a flow; an independent review.",
-    "zh": "以给予之量约束后代数的繁殖之律；方差形式；流上真正选择的见证；独立审查。"
+    "en": "The additive part of Fisher's theorem; a witness of selection proper on a flow with more than one parent; an independent review.",
+    "zh": "Fisher 定理的加性部分；流上有多于一个亲代的真正选择的见证；独立审查。"
   },
   "correspondence": {
     "en": "Price's equation (Price 1970): with mean offspring number w̄, w̄Δz̄ = Cov(w, z) + E(wΔz). Divided by the square of the number of parents, offspring_covariation is this identity; concordance less discordance over ordered pairs is n² Cov(w, z), the pair form of covariance also used for Kendall's concordance. The counting of a moved mean through an unbalanced step is the counting form of the response to selection over generations (Frank 2012). Readings (the AI's): the selection term proper is how far more offspring go with more of an amount; where only the supported give, what reads support is never selected against.",
@@ -243,6 +243,13 @@
       "detail": {
         "en": "The selection term proper that evolution-on-descent left unstated, and selection through support read over generations.",
         "zh": "evolution-on-descent 未陈述的真正选择项，以及在世代中读出的经支持的选择。"
+      }
+    },
+    {
+      "id": "what-bounds-offspring-numbers",
+      "detail": {
+        "en": "Selection on offspring number itself (the variance form), offspring numbers bounded by what is given and taken, and a lineage within a closed family that ends.",
+        "zh": "对后代数本身的选择（方差形式）、受给予与所取之量约束的后代数，以及在封闭族内终止的世系。"
       }
     }
   ],
@@ -373,7 +380,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "b59c66d201fa010236a637bf2408fb10237225c4fc61aa6835c24ebe73f598c7"
+      "sha256": "a927d29b0cb6865209957967bcbcdc1899b145c246bfb564f945ddd7c5dac237"
     }
   ],
   "proof_bindings": [
@@ -389,6 +396,10 @@
     {
       "en": "20 October 2026: added (EV1), section 8.1 item 9's covariance form and its course over many steps; study section 234.",
       "zh": "2026年10月20日：新增（EV1），第 8.1 节第 9 项的协方差形式及其多步进程；研究第 234 节。"
+    },
+    {
+      "en": "20 October 2026, EV2: the variance form and the bound on offspring numbers are stated in Becoming.Reproduction (record what-bounds-offspring-numbers, study section 244); the scope item naming them now points there and the next step is revised. The claim is unchanged.",
+      "zh": "2026年10月20日，EV2：方差形式与后代数之界陈述于 Becoming.Reproduction（记录 what-bounds-offspring-numbers，研究第 244 节）；列出它们的范围项现指向那里，下一步相应修订。论断不变。"
     }
   ]
 }

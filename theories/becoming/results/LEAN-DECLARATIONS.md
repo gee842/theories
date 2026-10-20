@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 275 | 10,958 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 276 | 11,008 |
 | [Becoming instances and applications](lean-declarations/becoming-ring.md) | 13 | 746 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -741,6 +741,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [RenewingCorrespondence.lean](lean-declarations/ethics.md#module-c2db8f7aa255) | Normative grounding and generative direction |
 | [RenewingFormation.lean](lean-declarations/ethics.md#module-0acdeff0007e) | Normative grounding and generative direction |
 | [Reordering.lean](lean-declarations/becoming-core.md#module-11edeaea70ba) | Becoming pure core |
+| [Reproduction.lean](lean-declarations/becoming-core.md#module-ee0dac694148) | Becoming pure core |
 | [ReproductionNetwork.lean](lean-declarations/other.md#module-6a029e611328) | Other formal studies |
 | [Reserve.lean](lean-declarations/becoming-core.md#module-4f6ff4eb4abf) | Becoming pure core |
 | [ReserveTurnover.lean](lean-declarations/shared.md#module-6fd1230f8bb2) | Organizational formation through revisable evaluation |

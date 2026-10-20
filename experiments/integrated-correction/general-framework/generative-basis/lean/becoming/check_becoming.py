@@ -75,7 +75,7 @@ CORE = ["Becoming.Prelude", "Becoming.World", "Becoming.Witnesses", "Becoming.Fr
         "Becoming.Arising", "Becoming.Flow", "Becoming.Stock", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Persistence", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
         "Becoming.Seeking", "Becoming.Roles", "Becoming.LabelledRoles",
-        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.SelectionTerm", "Becoming.Space",
+        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.SelectionTerm", "Becoming.Reproduction", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
         "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.CensusTable", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Amounts", "Becoming.LeastLoss", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
         "Becoming.Continuation", "Becoming.RenewalFlow", "Becoming.Admission", "Becoming.Exclusion", "Becoming.Exhaustion",
@@ -907,6 +907,19 @@ SCOPE = (
     "they raise, is kept or rises over a stretch where it is at every step, and a moved mean has an "
     "unbalanced step, found by deciding each, with selection proper where transmission is exact and "
     "inexact transmission where offspring numbers are uniform. "
+    "Reproduction: read on the weights themselves no pair is discordant, so the number of members "
+    "times the total of the squared weights is the square of the total weight with the squared "
+    "differences over pairs, equal to the square exactly where the weights are uniform; over "
+    "generations read by offspring number a generation's total is the next size, the mean offspring "
+    "number does not fall where transmission lowers none and with exact transmission rises exactly "
+    "where offspring numbers vary; a parent's offspring number is at most what it gives them and, "
+    "its offspring distinct within a family dissipated on, with one more at most what it takes from "
+    "the family; distinct offspring standing within a family balanced and dissipated on number, with "
+    "the formations taking from it, at most its stock; a lineage within a family balanced and "
+    "dissipated on at each step reproduces at most its stock many steps and ends, and read by "
+    "offspring number one that began reproducing has a step at which transmission lowered offspring "
+    "number by more than the concordance and what transmission raised; without dissipation a "
+    "lossless relay keeps a lineage going within a family of stock one. "
     "Space, one structure for Ren's proposal (an AI reading): a world is relata read with one "
     "kind, the flow among them and their web, and the space is every world; the laws stated with "
     "no premise hold of each; in a finite world whose activity is decided, arising recurs exactly "

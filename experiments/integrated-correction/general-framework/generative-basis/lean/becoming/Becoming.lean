@@ -52,6 +52,7 @@ import Becoming.Reserve
 import Becoming.Evolution
 import Becoming.Capture
 import Becoming.SelectionTerm
+import Becoming.Reproduction
 import Becoming.Space
 import Becoming.Premises
 import Becoming.Sampling
@@ -669,6 +670,22 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   they raise; kept, rising or not falling at every step, it is so over the stretch; and a moved
   mean has an unbalanced step, with exact transmission one with selection proper and with
   uniform offspring numbers one with inexact transmission.
+* `Becoming.Reproduction` (L1): what bounds offspring numbers, and selection on offspring number
+  itself (no premise beyond what each theorem names). Read on the weights themselves no pair is
+  discordant, so the number of members times the total of the squared weights is the square of
+  the total weight with the squared differences over pairs, never below it and equal exactly
+  where the weights are uniform: with offspring numbers, over offspring the mean of their
+  parent's offspring number is at least the mean over parents. Over generations read by offspring
+  number, a generation's total is the next size; where transmission lowers no offspring number
+  the mean offspring number does not fall, and with exact transmission it rises exactly where
+  offspring numbers vary (the counting form of Fisher's fundamental theorem with exact
+  transmission). A parent gives each descendant at least one unit, so its offspring number is at
+  most what it gives them, and, its offspring distinct within a family dissipated on, with one
+  more at most what it takes from the family; distinct offspring standing within a family
+  balanced and dissipated on number, with the formations taking from it, at most its stock. A
+  lineage within a family balanced and dissipated on at each step reproduces at most its stock
+  many steps and ends; read by offspring number, one that began reproducing has a step at which
+  transmission lowered offspring number by more than selection on it and what it raised.
 * `Becoming.Space` (L1): the whole and its parts, one structure for Ren's proposal (an AI
   reading). The space is every world, a world being relata read with one kind, their flow
   and their web. The laws stated with no premise hold of every world; in a finite world

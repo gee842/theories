@@ -377,6 +377,7 @@
       "records": [
         "evolution-on-descent",
         "selection-term-over-generations",
+        "what-bounds-offspring-numbers",
         "transmission-is-inheritance-and-need"
       ],
       "declarations": [
@@ -387,7 +388,10 @@
         "Becoming.Flow.no_new_dependence",
         "Becoming.SelectionTerm.covariation",
         "Becoming.SelectionTerm.Flow.support_not_lower",
-        "Becoming.SelectionTerm.Flow.support_moved_rises"
+        "Becoming.SelectionTerm.Flow.support_moved_rises",
+        "Becoming.Reproduction.Flow.number_within_take",
+        "Becoming.Reproduction.Flow.lineage_ends",
+        "Becoming.Reproduction.Flow.closed_lineage_lowered"
       ],
       "status": "proved",
       "open_items": [

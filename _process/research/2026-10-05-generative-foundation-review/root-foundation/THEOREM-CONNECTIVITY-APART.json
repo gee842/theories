@@ -1747,11 +1747,6 @@
    "category": "general-structure",
    "reason": "with uniform offspring numbers a moved mean has a step of inexact transmission: a law of any listed generations, each the offspring of the last, with no world; generations of descent in a flow (Flow.Descended) are one case, read on the base by Flow.support_not_lower and Flow.support_moved_rises"
   },
-  "Becoming.SelectionTerm.Generations.raises_exact_iff": {
-   "module": "Becoming.SelectionTerm",
-   "category": "general-structure",
-   "reason": "with exact transmission a step raises exactly where concordance exceeds discordance: a law of any listed generations, each the offspring of the last, with no world; generations of descent in a flow (Flow.Descended) are one case, read on the base by Flow.support_not_lower and Flow.support_moved_rises"
-  },
   "Becoming.SelectionTerm.selection_exceeds_iff": {
    "module": "Becoming.SelectionTerm",
    "category": "general-structure",
@@ -1796,6 +1791,46 @@
    "module": "Becoming.Flow",
    "category": "support",
    "reason": "an arithmetic lemma bounding a total over steps; its one use, the counting proof of Flow.More.replenishment_unbounded_from, was replaced in R41 by the whole-number instance of Amounts.replenishment_unbounded"
+  },
+  "Becoming.Reproduction.Generations.ByNumber.not_lower_step": {
+   "module": "Becoming.Reproduction",
+   "category": "general-structure",
+   "reason": "where transmission lowers no offspring number the mean offspring number does not fall: a law of any listed generations read by offspring number, with no world; generations of descent in a flow (SelectionTerm.Flow.Descended) are one case, read on the base by Flow.closed_lineage_lowered through ByNumber.sum_eq and ByNumber.discord_none"
+  },
+  "Becoming.Reproduction.Generations.ByNumber.rises_exact_iff": {
+   "module": "Becoming.Reproduction",
+   "category": "general-structure",
+   "reason": "with exact transmission the mean offspring number rises exactly where offspring numbers vary (Fisher's theorem with exact transmission, in counting form): a law of any listed generations read by offspring number, with no world; generations of descent in a flow (SelectionTerm.Flow.Descended) are one case, read on the base by Flow.closed_lineage_lowered through ByNumber.sum_eq and ByNumber.discord_none"
+  },
+  "Becoming.Reproduction.Generations.ByNumber.kept_exact_iff": {
+   "module": "Becoming.Reproduction",
+   "category": "general-structure",
+   "reason": "with exact transmission the mean offspring number is kept exactly where offspring numbers are uniform: a law of any listed generations read by offspring number, with no world; generations of descent in a flow (SelectionTerm.Flow.Descended) are one case, read on the base by Flow.closed_lineage_lowered through ByNumber.sum_eq and ByNumber.discord_none"
+  },
+  "Becoming.Reproduction.concord_self": {
+   "module": "Becoming.Reproduction",
+   "category": "general-structure",
+   "reason": "concordance of the weights with themselves is the squared differences over ordered pairs, by definition: a law of any finite family read with its own weights, with no world; offspring numbers of a generation of descent are one case"
+  },
+  "Becoming.Reproduction.number_variation": {
+   "module": "Becoming.Reproduction",
+   "category": "general-structure",
+   "reason": "selection on offspring number itself is the square of the number of offspring with the squared differences: a law of any finite family read with its own weights, with no world; offspring numbers of a generation of descent are one case"
+  },
+  "Becoming.Reproduction.number_never_against": {
+   "module": "Becoming.Reproduction",
+   "category": "general-structure",
+   "reason": "over offspring the mean parental offspring number is at least the mean over parents: a law of any finite family read with its own weights, with no world; offspring numbers of a generation of descent are one case"
+  },
+  "Becoming.Reproduction.number_none_iff": {
+   "module": "Becoming.Reproduction",
+   "category": "general-structure",
+   "reason": "the two means are equal exactly where offspring numbers are uniform: a law of any finite family read with its own weights, with no world; offspring numbers of a generation of descent are one case"
+  },
+  "Becoming.Reproduction.Spread.spread": {
+   "module": "Becoming.Reproduction",
+   "category": "model-witness",
+   "reason": "a parent with two offspring beside one with none: the squared difference four, the mean parental offspring number two over offspring and one over parents; a fact about one constructed family, not a law of the unfolding"
   }
  },
  "instances": {

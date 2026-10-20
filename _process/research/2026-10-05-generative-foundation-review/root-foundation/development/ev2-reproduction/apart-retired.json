@@ -1,0 +1,7 @@
+{
+ "Becoming.SelectionTerm.Generations.raises_exact_iff": {
+  "module": "Becoming.SelectionTerm",
+  "category": "general-structure",
+  "reason": "with exact transmission a step raises exactly where concordance exceeds discordance: a law of any listed generations, each the offspring of the last, with no world; generations of descent in a flow (Flow.Descended) are one case, read on the base by Flow.support_not_lower and Flow.support_moved_rises"
+ }
+}

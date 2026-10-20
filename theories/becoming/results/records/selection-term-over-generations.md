@@ -29,7 +29,7 @@
 ## Does not show
 
 - The rational reading: the covariance as concordance less discordance over the square of the number of parents, and the standard form of Price's equation, are arithmetic on the identities and not stated; nor are rational amounts beyond a common denominator.
-- The variance form of the response to selection (Fisher's fundamental theorem), a law of forming that is necessary as well as sufficient, dependences newly formed by descent, and how offspring numbers are bounded by what is given.
+- A law of forming that is necessary as well as sufficient, and dependences newly formed by descent. The variance form (in the case of exact transmission of offspring number) and how offspring numbers are bounded by what is given are stated in Becoming.Reproduction (record what-bounds-offspring-numbers).
 - That transmission never lowers a reading is a premise, as TransmitsWithin is; the support laws read a reading highest at the supported members, not support itself carried by descent, and on Drawdown the rise comes from transmission, as its single parent leaves no pair.
 - Fitness is not defined and no amount is said to be better: offspring numbers enter only as weights.
 - **Counterexample:** Two parents each with two offspring carrying their amounts: the weighted total is twice the parents' total, so it moves, while concordance and discordance are both none and the mean is kept (Doubling.doubling). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionTerm.lean)
@@ -46,7 +46,7 @@ Canonical source: [SelectionTerm.lean](../../../../experiments/integrated-correc
 <a id="next--下一步"></a>
 ## Next
 
-A law of reproduction bounding offspring numbers by what is given; the variance form; a witness of selection proper on a flow; an independent review.
+The additive part of Fisher's theorem; a witness of selection proper on a flow with more than one parent; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -67,8 +67,9 @@ Price's equation (Price 1970): with mean offspring number w̄, w̄Δz̄ = Cov(w,
   - Input: Concordance and discordance as products of excesses.
   - Preserved conditions: None. [Change.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
 - related, not a proved adapter: [evolution-on-descent](evolution-on-descent.md). The selection term proper that evolution-on-descent left unstated, and selection through support read over generations.
+- related, not a proved adapter: [what-bounds-offspring-numbers](what-bounds-offspring-numbers.md). Selection on offspring number itself (the variance form), offspring numbers bounded by what is given and taken, and a lineage within a closed family that ends.
 
-**Used by:** [what-a-rise-draws-from-beyond](what-a-rise-draws-from-beyond.md)
+**Used by:** [what-a-rise-draws-from-beyond](what-a-rise-draws-from-beyond.md) · [what-bounds-offspring-numbers](what-bounds-offspring-numbers.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -89,6 +90,7 @@ Aliases: `the selection term proper, over generations`, `真正的选择项及�
 ### History
 
 - 20 October 2026: added (EV1), section 8.1 item 9's covariance form and its course over many steps; study section 234.
+- 20 October 2026, EV2: the variance form and the bound on offspring numbers are stated in Becoming.Reproduction (record what-bounds-offspring-numbers, study section 244); the scope item naming them now points there and the next step is revised. The claim is unchanged.
 
 </details>
 
