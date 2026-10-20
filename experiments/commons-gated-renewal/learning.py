@@ -110,16 +110,21 @@ class QAgent:
         self.q[i] += self.alpha * (target - self.q[i])
 
 
-def episode(env, agents, H, eps, learn, checks=None, log_actions=None):
-    """One episode from full patches.  Returns per-agent harvest, final levels, per-patch
-    level paths."""
+def episode(env, agents, H, eps, learn, checks=None, log_actions=None, start=None):
+    """One episode from full patches, or, with `start` = (t0, apples), from step t0 with
+    the given apples standing (exploring starts, round 2).  Returns per-agent harvest,
+    final levels, per-patch level paths."""
     env.reset(full=True)
+    t0 = 0
+    if start is not None:
+        t0, apples = start
+        env.apple = list(apples)
     npatch = len(env.patches)
     xs = [[env.level(p)] for p in range(npatch)]
     tk = [[] for _ in range(npatch)]
     gv = [[] for _ in range(npatch)]
     harvest = [0] * len(agents)
-    for t in range(H):
+    for t in range(t0, H):
         tau = H - t
         levels = [xs[p][-1] for p in range(npatch)]
         acts = []
@@ -160,9 +165,20 @@ def train_eval(spec):
     E = spec["episodes"]
     ramp = max(1, int(spec["eps_frac"] * E))
     train_return = []
+    # round 2: exploring starts, drawn from one stream of the run that no agent reads
+    starts = random.Random(f"{seed}/starts") if spec.get("explore_starts") else None
     for e in range(E):
         eps = max(spec["eps_end"], 1.0 - (1.0 - spec["eps_end"]) * e / ramp)
-        h, _, _ = episode(env, agents, H, eps, True, checks)
+        start = None
+        if starts is not None:
+            t0 = starts.randrange(H)
+            apples = []
+            for p in env.patch_cells:
+                u = starts.random()
+                apples += [1 if starts.random() < u else 0 for _ in p]
+            # env cells are numbered patch by patch, in patch order
+            start = (t0, apples)
+        h, _, _ = episode(env, agents, H, eps, True, checks, start=start)
         if e >= E - 500:
             train_return.append(sum(h))
     # greedy evaluation on fresh regrowth streams

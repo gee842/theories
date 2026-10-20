@@ -3,6 +3,8 @@
     python3 run.py all            # every experiment (about 15-25 CPU minutes over 12 cores)
     python3 run.py c d1 d2 e ab   # chosen experiments
     python3 run.py smoke          # tiny run of every code path; results not kept
+    python3 run.py round2         # round 2 (PREDICTIONS-2026-10-20-ROUND2.md): c, d1, d2 with
+                                  # exploring starts in training, into results/round2/
 
 Configurations are in CONFIG below and are part of the freeze.
 """
@@ -147,9 +149,10 @@ def run_ab(cfg_rate, cfg_adj):
     return dict(rate=rate, adjoining=adj)
 
 
-def save(name, obj):
-    os.makedirs(RESULTS, exist_ok=True)
-    with open(os.path.join(RESULTS, name), "w") as f:
+def save(name, obj, sub=""):
+    d = os.path.join(RESULTS, sub)
+    os.makedirs(d, exist_ok=True)
+    with open(os.path.join(d, name), "w") as f:
         json.dump(obj, f, separators=(",", ":"))
 
 
@@ -169,6 +172,18 @@ def main(argv):
         run_ab(dict(cfg["rate"], runs=2, H=50), dict(cfg["adjoining"], runs=2))
         print("smoke ok")
         return
+    sub = ""
+    if what == ["round2"]:
+        what = ["c", "d1", "d2"]
+        sub = "round2"
+    elif what == ["smoke2"]:
+        jobs = jobs_c(dict(seeds=1, episodes=3)) + jobs_d1(dict(seeds=1, episodes=3, keep_paths=1))
+        for j in jobs:
+            j[1]["eval_episodes"] = 2
+            j[1]["explore_starts"] = True
+            run_job(j)
+        print("smoke2 ok")
+        return
     if "all" in what:
         what = ["ab", "c", "d1", "d2", "e"]
     meta = dict(config=CONFIG, python=sys.version, started=time.strftime("%Y-%m-%dT%H:%M:%S"))
@@ -183,6 +198,10 @@ def main(argv):
         jobs += jobs_d1(CONFIG["d1"])
     if "d2" in what:
         jobs += jobs_d2(CONFIG["d2"])
+    if sub == "round2":
+        for j in jobs:
+            j[1]["explore_starts"] = True
+        meta["round"] = 2
     if jobs:
         t0 = time.time()
         with Pool(min(11, os.cpu_count() or 1)) as pool:
@@ -191,7 +210,7 @@ def main(argv):
         for key, r in res:
             by.setdefault(key[0], []).append(dict(cond=key[1], seed=key[2], **r))
         for k, v in by.items():
-            save(f"{k}.json", dict(meta=meta, runs=v))
+            save(f"{k}.json", dict(meta=meta, runs=v), sub)
         print("learning", round(time.time() - t0), "s", flush=True)
     if "e" in what:
         t0 = time.time()

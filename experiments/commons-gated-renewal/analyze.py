@@ -11,8 +11,15 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 R = os.path.join(HERE, "results")
 
 
+RESULTS = R
+
+
 def load(name):
+    """From the analysed directory, falling back to results/ (round 2 reuses round 1's
+    scripted and late-reading runs and the calibration, which no learner change touches)."""
     p = os.path.join(R, name)
+    if not os.path.exists(p):
+        p = os.path.join(RESULTS, name)
     if not os.path.exists(p):
         return None
     with open(p) as f:
@@ -192,4 +199,7 @@ def main():
 
 
 if __name__ == "__main__":
+    import sys
+    if len(sys.argv) > 1:
+        R = os.path.join(HERE, sys.argv[1])
     main()
