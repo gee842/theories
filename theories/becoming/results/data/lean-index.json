@@ -1549,6 +1549,24 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/a4l-ideals/Becoming/HistoryIdeals.lean",
+      "sha256": "19161d16cca2039862b97f9f85da653acdde091e0121bca8c7b69024a7b2fdf2",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/a4l-ideals/Becoming/Ideals.lean",
+      "sha256": "e5a22639f61ddca75b88eca04c105ecb83870953fee0e51c850bab1f1fc529e2",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-entropy-landing/evidence/Entropy.original.lean",
       "sha256": "627f0b125beb9fa5d7887ac3d6133c254af556038e0dddc700872978334f10aa",
       "role": "development-attempt",
@@ -1616,6 +1634,15 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/lean/Becoming/Support.lean",
       "sha256": "1125884f641e0fc81b29a854c8e5625120126357be414de1b07363193f9285a9",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-review-probes/ReviewProbeGL.lean",
+      "sha256": "29710a3a0708419c0624b1f0609283a06744b9c273e44a5451c8532105c7e3e0",
       "role": "development-attempt",
       "group": "other",
       "package_readme": "_process/research/README.md",
@@ -2287,6 +2314,42 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/bridge-fold/tools/BridgeInventoryImports.lean",
+      "sha256": "09dd14154ba28618b63adf4dca8385d7a0028d9d6364a44253d297f34fb83553",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/bridge-fold/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/bridge-fold/tools/BridgeMeta.lean",
+      "sha256": "58a8a053eb449fc1f15e9cf0c0b4e64db0ea9f7ac1de2126bb8de2de5bc98bb8",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/bridge-fold/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/c1-exclusion/Becoming/Exclusion.lean",
+      "sha256": "94a18f41ddefa0222801661c72bb5af17f957c1d091f82f9aedaf4a9e9663b61",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/c2-exhaustion/Becoming/Exhaustion.lean",
+      "sha256": "04a6c507346afd2f1d1755b87edfdcf6b55a0e4e5024f1a34fce6444ec83ef3f",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/completion-applicability/attempt-01.lean",
       "sha256": "754f55a9bbc12322c9f4698b890cb65c826cb142831ed5a0e7f5bc660f654bf8",
       "role": "development-attempt",
@@ -2584,6 +2647,15 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/e1-exchange-premises/lean/Becoming/ExchangePremises.lean",
+      "sha256": "c66c599254b18a219bf554f027214bd9656f9e8dff52bfc2873b59f2954c3e5e",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/feedback-memory-review/Audit.lean",
       "sha256": "aa164ad92c72b3370a992611bd10b357dc290ceab1a28a1ab7312526a50f6309",
       "role": "development-attempt",
@@ -2592,6 +2664,51 @@
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FEEDBACK-MEMORY-REVIEW.md"
       ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/g1-selection-gap/Becoming/SelectionGap.lean",
+      "sha256": "400222ef8f8d216a7be6b1314193321808c9ce71d0934e86bbcd615603772ec0",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/g2-selection-reach/Becoming/SelectionReach.lean",
+      "sha256": "41675fb36d500d258685c70186a6323373b108420d26633eae5e830ca18ce005",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/g3-law-along-run/Becoming/LawAlongRun.lean",
+      "sha256": "33263fa9b32a9312ea684a41acd134371429f5d8eb67d2332add0a4933cf4f7b",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/g4-law-through-coupling/Becoming/LawThroughCoupling.lean",
+      "sha256": "348381d9c34513f479875ea171946280f447c5c6c70abefe3f51eac2b2175466",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/g5-changing-coupling/Becoming/LawThroughChangingCoupling.lean",
+      "sha256": "d722292ed358d15e483b87382395eecd243ee5c8f5ab52c7c4bb47e0e6bd7f6b",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
       "proof_status": "not_assessed_by_catalogue"
     },
     {
@@ -2606,6 +2723,96 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/k1-cuts/Becoming/Cuts.lean",
+      "sha256": "96b639c0cdba04c347573dfafff81b4f89200356699edeef6cbf4c6f0831876c",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/k1-cuts/PreparationCorrespondence.lean",
+      "sha256": "4766457e81ff53ef8ab94f4b7109e4b62e138f409b8d239e0d9ecb6695565e85",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/k2-grown-base/Becoming/Cuts.lean",
+      "sha256": "650c1e1511eda6e5a48e2e407a0c65ae2789795425f8490a51c815e0998de6f6",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/l1-unrolling/Becoming/Unrolling.lean",
+      "sha256": "e1f475c25fd877b0ccf8006a5eb06ceb909ad00150fd9ace8b55cc3dad5d3cd0",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/l2-labels/Becoming/Labels.lean",
+      "sha256": "af228924c9d09d8fa60d71b3f19f063c4c3fed4f422137b99ee2f736d8a3468b",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/ll1-least-loss/audit/LeastLossDeps.lean",
+      "sha256": "ba9761a42435b36602e9e36550610b4f7e7dfbaae8aeb9c0dc97f762bc02edf7",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/m2-selection-pool/Becoming/SelectionPool.lean",
+      "sha256": "fb2e947cd684e8fffb1b236608bba9842c2f5e044df0e05bfcb1d0b1303ee8b5",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/m3-pool-response/Becoming/PoolResponse.lean",
+      "sha256": "2e6b7f783c387054999d4efabaf32a4720a6f038636ff7f9d5bfada891f8a90a",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/m4-rejoining/Becoming/Rejoining.lean",
+      "sha256": "a00c7d56033c7985142924d3df3cb1a470f42a63841e377b1e3f082bfcbf7d92",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/md1-mutual-dependence/Becoming/MutualDependence.lean",
+      "sha256": "5b737ea7b7fb5e4799f36200ced5f5078d12b4aa13d8c68475e0fd6a15cf8ca7",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/measured-feedback-review/Audit.lean",
       "sha256": "a4b77321348483b8b112299d17da54c4281c46df91a78f5422162b7694213769",
       "role": "development-attempt",
@@ -2614,6 +2821,15 @@
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEASURED-FEEDBACK-REVIEW.md"
       ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/n2-level-coupling/Becoming/LevelCoupling.lean",
+      "sha256": "a8cf8f8a9796e3bf44bb40076a10f554a9ed062a7bd2c0f7003472d99612144e",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
       "proof_status": "not_assessed_by_catalogue"
     },
     {
@@ -2646,6 +2862,143 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/nondual-applicability/repair-attempt-02.lean",
       "sha256": "594528f984e6bbbbfe181b52a3a70c0393f3302b665bb34b7da09498e86da1a8",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/o1-verification/tree/Becoming/Verification.lean",
+      "sha256": "864d74793ec4b5ac937df3c931e13debc3f59ada31eac2202d028708bee7a036",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/o2-limit/tree/Becoming/LimitVerification.lean",
+      "sha256": "eb3492a1eb97f8df13f1574c25e304510db3ab5256c7c8286152416896ac36e4",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/.build/Becoming/Frame.lean",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/.build/Becoming/Interleavings.lean",
+      "sha256": "f191c6c5edb18770b0db8657da3f5f25270531f788f8dd81e01fa34e996f9f21",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/.build/BecomingInterleavingsAxiomAudit.lean",
+      "sha256": "9b78e3cadae454ea7273371d3d6ca740bc931cac38bb382b9e806d30e77c2cc5",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/.build/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/Becoming/Interleavings.lean",
+      "sha256": "f191c6c5edb18770b0db8657da3f5f25270531f788f8dd81e01fa34e996f9f21",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r2-census-counts/Becoming/CensusCounts.lean",
+      "sha256": "a916296c18dd01401de241f58b8f7fcc6efb928f95b20bf9a8e85853466494e1",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r2b-census-binding/Becoming/CensusBinding.lean",
+      "sha256": "6f4c8b032363f0c37092b2fe0b144d9f21ae1a841a888c0134f0f4884ad01e80",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/rerooting/tools/RerootImports.lean",
+      "sha256": "9400edfd148ee03026b84ef06b62efab14e2c50c9a69bdb625f3473b9374a149",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/rerooting/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/rerooting/tools/RerootMeta.lean",
+      "sha256": "b5300bf58a3b65227a6166396a7e54421027395a9167353b07e42e1fa809351e",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/rerooting/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/rerooting/w2/RangeDump.lean",
+      "sha256": "054d708c83d6691d921a4cb84e2e5fdfc85a38988a03aae492ac428dbd9b0d8f",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/rerooting/README.md",
+      "direct_documentation_links_from": [
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/rerooting/README.md"
+      ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/s1-enough/Becoming/Enough.lean",
+      "sha256": "9ebd81ecb52a33b0b16a2b4602b3eb51059b210472e5323050d3c64c85a54226",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/s2-settling/Becoming/Settling.lean",
+      "sha256": "d43eb4f9e68871c9120b9c98812ee2a93c8b39cd7b9b444844d580c577e0cc33",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/s3-last-change/Becoming/LastChange.lean",
+      "sha256": "bb567ec087aaab4d238e0416a78f35e44e1b720bcb97a8d40d9323de6cc40384",
       "role": "development-attempt",
       "group": "other",
       "package_readme": "_process/research/README.md",
@@ -2708,6 +3061,663 @@
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TUNING-CORRESPONDENCE-REVIEW.md"
       ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P1/Becoming/GuardHorizonProcesses.lean",
+      "sha256": "ad45c42371640f744522d596ce33e3dfa343899b663cf2f13d9ab82ffccaa6f8",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P1/Becoming/GuardHorizonProcessesInherited.lean",
+      "sha256": "e9db9e6e44abd514cc8777b3ecc4170f2943dc83d8adafee558c9e0e60833e22",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P1/Becoming/InstallationTraces.lean",
+      "sha256": "e8ebe2392ecfa6e3c97c6e6e9a331b48edda3f42083987875de72cea4c280273",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P1/Becoming/InstallationTracesInherited.lean",
+      "sha256": "04ec01b3fb950d210d0d11c14f07e8d8b9ec9bb4db4ca0a3cd5681967c6d1fe1",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P1/Becoming/TransactionTracesInherited.lean",
+      "sha256": "7b74e1c6257ff1545c08c9ba4ef356d00a1bfb829109f4d3adb614279ba33baf",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P2/Becoming/DispatchProcessesInherited.lean",
+      "sha256": "99be04f1a15b9d8aee74fcce5289f121a1c435fb1710fc6eec0e6fc836c6d129",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P2/Becoming/InspectionProcessesInherited.lean",
+      "sha256": "12a993bf9c8c26e8b7f2b58a2d770744f83b2ee8ca8f24c832109009f757f2d7",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P2/Becoming/ProbeRunsInherited.lean",
+      "sha256": "6b7b0872c4da11ad1e970bc79cf6fdde5ade07b925fa1fd8822366eb082961a8",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P2/Becoming/ReconfigurationProcesses.lean",
+      "sha256": "798cd9a0419407f3dc2648f6c52e4d90f614cf1b0790a0aa6a4d2181d5f8976d",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P2/Becoming/ReconfigurationProcessesInherited.lean",
+      "sha256": "c4b29bf4af88f15cfa260568e0d24a8bc59c20001fce5ecdc28f7a3e06613672",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P2/Becoming/TreeSearchRuns.lean",
+      "sha256": "10a3c492fdffe9a63a2a525f3eb72f28d61d8ddf60002b2d41bf1cd006719954",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P2/Becoming/TreeSearchRunsInherited.lean",
+      "sha256": "00945344897cc3d4cf43719dad486929fe30fcfb0e14a63d435652b12bb92655",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P3/Becoming/FormationTracesInherited.lean",
+      "sha256": "9bad5826ca02c3834836917815677998b448ae11ec9331ed8ee9c20008c49f56",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P3/Becoming/QueryTraces.lean",
+      "sha256": "e31921980a618671871e18a99a80663dd930f0111724eaa6b0481382583c9b05",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P3/Becoming/QueryTracesInherited.lean",
+      "sha256": "1702082d3b015067f4f9caabf2189e729d114d689da2c4db8746b3138f136b00",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P3/Becoming/TrainingProcessesInherited.lean",
+      "sha256": "5a3f46626b1e7f3d71c1ec9de80f0e6c38a92143c4d50b6ce147c1a76c8ee1a9",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P4/Becoming/DephasingRuns.lean",
+      "sha256": "b4b97b7c3d6bfbf517037a215ee58a6794651b22168340767d299988802170f1",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P4/Becoming/DephasingRunsInherited.lean",
+      "sha256": "e94815edc92f5e5f6b41fdf8a5f7a38b949b9f7421b3e2bb9f1f6dcd4256bfbf",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P4/Becoming/DrawnAmountProcesses.lean",
+      "sha256": "b1c39d150e3badfc8efc85c638be911ede74b498a4b6aabb20cd02de8bdd7937",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P4/Becoming/DrawnAmountProcessesInherited.lean",
+      "sha256": "70763f2990333ff8948049a0e319361b88c993cc5fa4ef0c2281abf637ac667c",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P4/Becoming/ProjectedLawTraces.lean",
+      "sha256": "b75263929eb58272ac8a69aca95dc101a390eb7f50ebf8feb2fda578f3ca354c",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P4/Becoming/RuleHandoffTraces.lean",
+      "sha256": "c2c4d5233ff30013efc72ae99a2b1865b8003a85fe37aea0a871426647a3030b",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P4/Becoming/RuleHandoffTracesInherited.lean",
+      "sha256": "25c9d42d20efaeee962bc062b1823dcbf7726ebe97509f78c8d50ce728ad85d4",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P5/Becoming/ExactRecordRuns.lean",
+      "sha256": "dd59af1bcdb9097013e1f68b8348af09db0c3dae6e812e9ac813f0dbe4c50152",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P5/Becoming/ExactRecordRunsInherited.lean",
+      "sha256": "afbb9b58d95b93707ab03b01a793229459f7027ad4d74f1d712ddbb5cee3f63e",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P5/Becoming/JoiningCodeFrames.lean",
+      "sha256": "91b09adb0b9d0ff54216750529aef302f20ea7eebf312f545d34bb2ddcd1f576",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P5/Becoming/JoiningCodeFramesInherited.lean",
+      "sha256": "b573f61132c4a256c95c18ad1988baa6d43aa05996a9c24d09f07946d2af9a15",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P5/Becoming/JointPhaseTraces.lean",
+      "sha256": "e5b73ba65599aff47c97693439ef42adcc7fefa1eb17216ed176504c08412c2e",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P5/Becoming/JointPhaseTracesInherited.lean",
+      "sha256": "8ba0ca9a9cfb7f6d95e1f1ed268c606fef9b40e1cd8c4e3ac1f755bbc0a7f827",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P5/Becoming/ReceptionTracesInherited.lean",
+      "sha256": "28362d0ee4dfb39d0200b4dbe0bf12863920d1747f4642a63161dfb2e9de2826",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P5/Becoming/TestCodeFrames.lean",
+      "sha256": "1b9c1d93488584329f036f6533a44533ddeb70617951f294a7d5c70c50a442fc",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P5/Becoming/UnitTraces.lean",
+      "sha256": "dc94abb2af383a74b496efffe7cefb552497a7b13ad82e39953a9969ecf4e515",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P6/Becoming/MoveOutcomeProcesses.lean",
+      "sha256": "77781020b64357a810820d0cce7ad39c90ddd1785f6a63ccdcac6114fd4da4bc",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P6/Becoming/MoveOutcomeProcessesInherited.lean",
+      "sha256": "934d6c5f5deba272823fc18fd4ecfc8e9d486888f6c99473b3fed897a78bf2d9",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P6/Becoming/RuleNarrowingProcesses.lean",
+      "sha256": "08994dc0012ce824fac0001a6bf4830bb00337956addda5787949eca4bd50541",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P6/Becoming/RuleNarrowingProcessesInherited.lean",
+      "sha256": "77715de6a6bfe7ea60bf58c6d409444b1f0c171a1f3fae80c15ff92f2fa8d47b",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P6/Becoming/SeedReachProcesses.lean",
+      "sha256": "83434a825f65c68bf3f44b98928fa479bd750950e0f4dbdbea8b6aebd7567d3f",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P7/Becoming/ClassifiedFramesInherited.lean",
+      "sha256": "9f7059a31fb764957eec160113356cb6f4a7b753acbfdd185d1f167f544b9f39",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P7/Becoming/ExtendedClaimFrames.lean",
+      "sha256": "7c41d13900064960bf0a4b3961f33b3677ed7b21d177bf87daa9d9db9e2218ce",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P7/Becoming/ExtensionFrames.lean",
+      "sha256": "e0759f13b488c9531a5c247bd4020b339e784db5529e8c96e3a25c59d03c6fa6",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P7/Becoming/InterfaceTraces.lean",
+      "sha256": "b1f17fce4ebd672110085b2000c0cbd5ea5dfd898618c3914f791fe69e1cbbd1",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P7/Becoming/InterfaceTracesInherited.lean",
+      "sha256": "6c843fcb5fbedbfc37ed9bb5ceb6c8818b73baa8be06bf75d29c14b88fcf852f",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P7/Becoming/ReachableFrames.lean",
+      "sha256": "1ba8ac980c36e55fef8d833b6a9bcbe355b4ada97724d8849213968eb5716c0a",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P7/Becoming/ReachableFramesInherited.lean",
+      "sha256": "aa75435aaf1248f1bdd3b38da1758dcc00f28fcaa8632fe74c12fef8189b37eb",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P7/Becoming/StrictTransportRuns.lean",
+      "sha256": "9a1faf6f080cee6192ddefb691d9f4aa8779b2fc45bce3f97da86534e9f03454",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/ClassifiedBeliefProcesses.lean",
+      "sha256": "5c31f7b23393b28d49936c54134a8fca7ced36f62de9d6a102d3c1929a4e3ede",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/ContextArrivalTraces.lean",
+      "sha256": "69e01dbc70b58bd3dd11f999b7d5fb8bbe03aa2a513dbaa7293a4ca923a3e197",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/ContextArrivalTracesInherited.lean",
+      "sha256": "8a7ab807169991517e64d7106df368261c727f6ce0a8e955ace991aef2245209",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/CouplingHistoryFrames.lean",
+      "sha256": "3a9ad9e744639725f881d46af82aa2322346f89e892dc04af494d4272db96e35",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/CourseExtensionFrames.lean",
+      "sha256": "9fa32377909f8130b8c6a78b54819d958db93a646dd06b605d7a83b95fa74203",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/DerivationScopeProcesses.lean",
+      "sha256": "0c0cd5ae3304e0e5fccf90d0dce4ad3ec438b8f943c3331dd5adad83c5a54627",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/DescentRenewalRuns.lean",
+      "sha256": "b190359d684b65ae4898922232b315e0b1ad4556ee44bbd92c69e10c6061d1a0",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/FeasibleProfileTraces.lean",
+      "sha256": "19061d16a64a6f84e0d66752d054fcf6c4ae95640e9b54251fd7805f621ccf2b",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/RuleRevisionTraces.lean",
+      "sha256": "ee23d7f31be05dd864d8b1cd197500dddd3fa1661dc20d52baa91bc86a267130",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/RuleRevisionTracesInherited.lean",
+      "sha256": "9a5fbd0f0988977569991bd482d839dff48f3c15267cca6372c2eda42afe9a98",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/SupportGatedWebs.lean",
+      "sha256": "cacaf414eae00c9b3aa95ee116010da703c323989c3942c0bffd280d8d37b1f3",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/SupportGatedWebsInherited.lean",
+      "sha256": "33079d825c309f91a24eed0d25a848d0b86db0ddaa8874088570b866d0126f61",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u3-apart-groups/Becoming/AcceptanceFrames.lean",
+      "sha256": "63cf8cf2e03fc63b0dad4ec1fb29715e726ecbc6da73fd54cd487424ad42de56",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u3-apart-groups/Becoming/FrontierFrames.lean",
+      "sha256": "d86d6a921cb05ae244cc600903ae1100b8f1791d0eba7d350be615d7b6dbb550",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u3-apart-groups/Becoming/FrontierWorlds.lean",
+      "sha256": "b551db86b1ae56da175fb0a3c852a94fb4dd915594daf5b8cd71d2a6b3815e2b",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u3-apart-groups/Becoming/Hexagrams.lean",
+      "sha256": "8765e7c838064d509c8ab07a8b09aec9483a06e728fb864913a697df8b72789a",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u3-apart-groups/Becoming/Listing.lean",
+      "sha256": "763de10d8fdc263ae836c510a8b5a8fac0891cdd8401a86999dc08247b23624c",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u3-apart-groups/Becoming/PresentationFrames.lean",
+      "sha256": "5379a0c898101ef2129bf0791038a7685bd4279e15baddff67a3d4de613240c7",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u5-general-structure/Becoming/FrontierWorlds.lean",
+      "sha256": "b115d5a1bbc9ed636f34cb82c5105dc69d53cbb16ea091fbadaeb58930201d40",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u5-general-structure/Becoming/HistoryIdealsTraces.lean",
+      "sha256": "a80e25cb90570d03dbcc766c994d84854f180311b6fa7fe97a3e658161201beb",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u5-general-structure/Becoming/NarrowingRuns.lean",
+      "sha256": "07eaa1fcd796e8c23e75cd1fd2b4df5c4c7cccde9fe8c94380c4099534049147",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u5-general-structure/Becoming/WitnessRefinementRuns.lean",
+      "sha256": "dc0a8a69edaa1d27d548766dd042a7fa16400484c285a008b2c37e57bd463f1f",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/v-collective-continuation/v1/Becoming/Withholding.lean",
+      "sha256": "b56112df45782fd28def6d31b6e6a6d52ec64d665e4f2163f2e1e7da61a01b99",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/v-collective-continuation/v2/Becoming/Widening.lean",
+      "sha256": "55a880e0702332ef6ffe650f5ba30872eae44a4317d7c2056797218ac557abf9",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/v-collective-continuation/v3/Becoming/Pace.lean",
+      "sha256": "6cbf7e185c4d9cc04643b99ec906ff775a4a256086a13e7c825971925cbef5ec",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/v-collective-continuation/v4/Becoming/Passing.lean",
+      "sha256": "da2894e3f8c38f71ca0d08a4bc155f4a94745da7dffa807eb39739b10df62a70",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/v-collective-continuation/v5/Becoming/JointKeeping.lean",
+      "sha256": "6f163c04ea7bae5e065fe609abfcad1930637be5e275c5e69583f44820421745",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/v2-tolerance/tree/Becoming/Tolerance.lean",
+      "sha256": "3b25d41ace43dee151b03139a9df47b464991525fc7d0f2f463ba5f1b2b7eae0",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
       "proof_status": "not_assessed_by_catalogue"
     },
     {
@@ -2812,6 +3822,15 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/z1-relative-position/Becoming/RelativePosition.lean",
+      "sha256": "5f941cb59922ad7b174b1c27ee1129cd2e3f5b4b92ba3380f1a146a4424788f2",
+      "role": "development-attempt",
+      "group": "other",
+      "package_readme": "_process/research/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.lean",
       "sha256": "1daf76580f61ab092cfa5c24aa56dd2c94f43aa40fd66a7ab01e766ba2a10e56",
       "role": "development-attempt",
@@ -2836,1018 +3855,8 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/a4l-ideals/Becoming/HistoryIdeals.lean",
-      "sha256": "19161d16cca2039862b97f9f85da653acdde091e0121bca8c7b69024a7b2fdf2",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/a4l-ideals/Becoming/Ideals.lean",
-      "sha256": "e5a22639f61ddca75b88eca04c105ecb83870953fee0e51c850bab1f1fc529e2",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-review-probes/ReviewProbeGL.lean",
-      "sha256": "29710a3a0708419c0624b1f0609283a06744b9c273e44a5451c8532105c7e3e0",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/tools/BridgeInventoryImports.lean",
-      "sha256": "09dd14154ba28618b63adf4dca8385d7a0028d9d6364a44253d297f34fb83553",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/tools/BridgeMeta.lean",
-      "sha256": "58a8a053eb449fc1f15e9cf0c0b4e64db0ea9f7ac1de2126bb8de2de5bc98bb8",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/c1-exclusion/Becoming/Exclusion.lean",
-      "sha256": "94a18f41ddefa0222801661c72bb5af17f957c1d091f82f9aedaf4a9e9663b61",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/c2-exhaustion/Becoming/Exhaustion.lean",
-      "sha256": "04a6c507346afd2f1d1755b87edfdcf6b55a0e4e5024f1a34fce6444ec83ef3f",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/e1-exchange-premises/lean/Becoming/ExchangePremises.lean",
-      "sha256": "c66c599254b18a219bf554f027214bd9656f9e8dff52bfc2873b59f2954c3e5e",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/g1-selection-gap/Becoming/SelectionGap.lean",
-      "sha256": "400222ef8f8d216a7be6b1314193321808c9ce71d0934e86bbcd615603772ec0",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/g2-selection-reach/Becoming/SelectionReach.lean",
-      "sha256": "41675fb36d500d258685c70186a6323373b108420d26633eae5e830ca18ce005",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/g3-law-along-run/Becoming/LawAlongRun.lean",
-      "sha256": "33263fa9b32a9312ea684a41acd134371429f5d8eb67d2332add0a4933cf4f7b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/g4-law-through-coupling/Becoming/LawThroughCoupling.lean",
-      "sha256": "348381d9c34513f479875ea171946280f447c5c6c70abefe3f51eac2b2175466",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/g5-changing-coupling/Becoming/LawThroughChangingCoupling.lean",
-      "sha256": "d722292ed358d15e483b87382395eecd243ee5c8f5ab52c7c4bb47e0e6bd7f6b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/k1-cuts/Becoming/Cuts.lean",
-      "sha256": "96b639c0cdba04c347573dfafff81b4f89200356699edeef6cbf4c6f0831876c",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/k1-cuts/PreparationCorrespondence.lean",
-      "sha256": "4766457e81ff53ef8ab94f4b7109e4b62e138f409b8d239e0d9ecb6695565e85",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/k2-grown-base/Becoming/Cuts.lean",
-      "sha256": "650c1e1511eda6e5a48e2e407a0c65ae2789795425f8490a51c815e0998de6f6",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/l1-unrolling/Becoming/Unrolling.lean",
-      "sha256": "e1f475c25fd877b0ccf8006a5eb06ceb909ad00150fd9ace8b55cc3dad5d3cd0",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/l2-labels/Becoming/Labels.lean",
-      "sha256": "af228924c9d09d8fa60d71b3f19f063c4c3fed4f422137b99ee2f736d8a3468b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ll1-least-loss/audit/LeastLossDeps.lean",
-      "sha256": "ba9761a42435b36602e9e36550610b4f7e7dfbaae8aeb9c0dc97f762bc02edf7",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/m2-selection-pool/Becoming/SelectionPool.lean",
-      "sha256": "fb2e947cd684e8fffb1b236608bba9842c2f5e044df0e05bfcb1d0b1303ee8b5",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/m3-pool-response/Becoming/PoolResponse.lean",
-      "sha256": "2e6b7f783c387054999d4efabaf32a4720a6f038636ff7f9d5bfada891f8a90a",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/m4-rejoining/Becoming/Rejoining.lean",
-      "sha256": "a00c7d56033c7985142924d3df3cb1a470f42a63841e377b1e3f082bfcbf7d92",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/md1-mutual-dependence/Becoming/MutualDependence.lean",
-      "sha256": "5b737ea7b7fb5e4799f36200ced5f5078d12b4aa13d8c68475e0fd6a15cf8ca7",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/n2-level-coupling/Becoming/LevelCoupling.lean",
-      "sha256": "a8cf8f8a9796e3bf44bb40076a10f554a9ed062a7bd2c0f7003472d99612144e",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/o1-verification/tree/Becoming/Verification.lean",
-      "sha256": "864d74793ec4b5ac937df3c931e13debc3f59ada31eac2202d028708bee7a036",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/o2-limit/tree/Becoming/LimitVerification.lean",
-      "sha256": "eb3492a1eb97f8df13f1574c25e304510db3ab5256c7c8286152416896ac36e4",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r1-interleavings/.build/Becoming/Frame.lean",
-      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r1-interleavings/.build/Becoming/Interleavings.lean",
-      "sha256": "f191c6c5edb18770b0db8657da3f5f25270531f788f8dd81e01fa34e996f9f21",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r1-interleavings/.build/BecomingInterleavingsAxiomAudit.lean",
-      "sha256": "9b78e3cadae454ea7273371d3d6ca740bc931cac38bb382b9e806d30e77c2cc5",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r1-interleavings/.build/GenerativeCore.lean",
-      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r1-interleavings/Becoming/Interleavings.lean",
-      "sha256": "f191c6c5edb18770b0db8657da3f5f25270531f788f8dd81e01fa34e996f9f21",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r2-census-counts/Becoming/CensusCounts.lean",
-      "sha256": "a916296c18dd01401de241f58b8f7fcc6efb928f95b20bf9a8e85853466494e1",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r2b-census-binding/Becoming/CensusBinding.lean",
-      "sha256": "6f4c8b032363f0c37092b2fe0b144d9f21ae1a841a888c0134f0f4884ad01e80",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r32-folds/SameStatements.lean",
       "sha256": "a3f9f6b012e34eac81ec8f71f4ab262a2dbb0b68c2d1d833a58a5774aaa39c76",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/tools/RerootImports.lean",
-      "sha256": "9400edfd148ee03026b84ef06b62efab14e2c50c9a69bdb625f3473b9374a149",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/tools/RerootMeta.lean",
-      "sha256": "b5300bf58a3b65227a6166396a7e54421027395a9167353b07e42e1fa809351e",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/w2/RangeDump.lean",
-      "sha256": "054d708c83d6691d921a4cb84e2e5fdfc85a38988a03aae492ac428dbd9b0d8f",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/README.md",
-      "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/README.md"
-      ],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/s1-enough/Becoming/Enough.lean",
-      "sha256": "9ebd81ecb52a33b0b16a2b4602b3eb51059b210472e5323050d3c64c85a54226",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/s2-settling/Becoming/Settling.lean",
-      "sha256": "d43eb4f9e68871c9120b9c98812ee2a93c8b39cd7b9b444844d580c577e0cc33",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/s3-last-change/Becoming/LastChange.lean",
-      "sha256": "bb567ec087aaab4d238e0416a78f35e44e1b720bcb97a8d40d9323de6cc40384",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P1/Becoming/GuardHorizonProcesses.lean",
-      "sha256": "ad45c42371640f744522d596ce33e3dfa343899b663cf2f13d9ab82ffccaa6f8",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P1/Becoming/GuardHorizonProcessesInherited.lean",
-      "sha256": "e9db9e6e44abd514cc8777b3ecc4170f2943dc83d8adafee558c9e0e60833e22",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P1/Becoming/InstallationTraces.lean",
-      "sha256": "e8ebe2392ecfa6e3c97c6e6e9a331b48edda3f42083987875de72cea4c280273",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P1/Becoming/InstallationTracesInherited.lean",
-      "sha256": "04ec01b3fb950d210d0d11c14f07e8d8b9ec9bb4db4ca0a3cd5681967c6d1fe1",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P1/Becoming/TransactionTracesInherited.lean",
-      "sha256": "7b74e1c6257ff1545c08c9ba4ef356d00a1bfb829109f4d3adb614279ba33baf",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P2/Becoming/DispatchProcessesInherited.lean",
-      "sha256": "99be04f1a15b9d8aee74fcce5289f121a1c435fb1710fc6eec0e6fc836c6d129",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P2/Becoming/InspectionProcessesInherited.lean",
-      "sha256": "12a993bf9c8c26e8b7f2b58a2d770744f83b2ee8ca8f24c832109009f757f2d7",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P2/Becoming/ProbeRunsInherited.lean",
-      "sha256": "6b7b0872c4da11ad1e970bc79cf6fdde5ade07b925fa1fd8822366eb082961a8",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P2/Becoming/ReconfigurationProcesses.lean",
-      "sha256": "798cd9a0419407f3dc2648f6c52e4d90f614cf1b0790a0aa6a4d2181d5f8976d",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P2/Becoming/ReconfigurationProcessesInherited.lean",
-      "sha256": "c4b29bf4af88f15cfa260568e0d24a8bc59c20001fce5ecdc28f7a3e06613672",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P2/Becoming/TreeSearchRuns.lean",
-      "sha256": "10a3c492fdffe9a63a2a525f3eb72f28d61d8ddf60002b2d41bf1cd006719954",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P2/Becoming/TreeSearchRunsInherited.lean",
-      "sha256": "00945344897cc3d4cf43719dad486929fe30fcfb0e14a63d435652b12bb92655",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P3/Becoming/FormationTracesInherited.lean",
-      "sha256": "9bad5826ca02c3834836917815677998b448ae11ec9331ed8ee9c20008c49f56",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P3/Becoming/QueryTraces.lean",
-      "sha256": "e31921980a618671871e18a99a80663dd930f0111724eaa6b0481382583c9b05",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P3/Becoming/QueryTracesInherited.lean",
-      "sha256": "1702082d3b015067f4f9caabf2189e729d114d689da2c4db8746b3138f136b00",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P3/Becoming/TrainingProcessesInherited.lean",
-      "sha256": "5a3f46626b1e7f3d71c1ec9de80f0e6c38a92143c4d50b6ce147c1a76c8ee1a9",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P4/Becoming/DephasingRuns.lean",
-      "sha256": "b4b97b7c3d6bfbf517037a215ee58a6794651b22168340767d299988802170f1",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P4/Becoming/DephasingRunsInherited.lean",
-      "sha256": "e94815edc92f5e5f6b41fdf8a5f7a38b949b9f7421b3e2bb9f1f6dcd4256bfbf",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P4/Becoming/DrawnAmountProcesses.lean",
-      "sha256": "b1c39d150e3badfc8efc85c638be911ede74b498a4b6aabb20cd02de8bdd7937",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P4/Becoming/DrawnAmountProcessesInherited.lean",
-      "sha256": "70763f2990333ff8948049a0e319361b88c993cc5fa4ef0c2281abf637ac667c",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P4/Becoming/ProjectedLawTraces.lean",
-      "sha256": "b75263929eb58272ac8a69aca95dc101a390eb7f50ebf8feb2fda578f3ca354c",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P4/Becoming/RuleHandoffTraces.lean",
-      "sha256": "c2c4d5233ff30013efc72ae99a2b1865b8003a85fe37aea0a871426647a3030b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P4/Becoming/RuleHandoffTracesInherited.lean",
-      "sha256": "25c9d42d20efaeee962bc062b1823dcbf7726ebe97509f78c8d50ce728ad85d4",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P5/Becoming/ExactRecordRuns.lean",
-      "sha256": "dd59af1bcdb9097013e1f68b8348af09db0c3dae6e812e9ac813f0dbe4c50152",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P5/Becoming/ExactRecordRunsInherited.lean",
-      "sha256": "afbb9b58d95b93707ab03b01a793229459f7027ad4d74f1d712ddbb5cee3f63e",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P5/Becoming/JoiningCodeFrames.lean",
-      "sha256": "91b09adb0b9d0ff54216750529aef302f20ea7eebf312f545d34bb2ddcd1f576",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P5/Becoming/JoiningCodeFramesInherited.lean",
-      "sha256": "b573f61132c4a256c95c18ad1988baa6d43aa05996a9c24d09f07946d2af9a15",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P5/Becoming/JointPhaseTraces.lean",
-      "sha256": "e5b73ba65599aff47c97693439ef42adcc7fefa1eb17216ed176504c08412c2e",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P5/Becoming/JointPhaseTracesInherited.lean",
-      "sha256": "8ba0ca9a9cfb7f6d95e1f1ed268c606fef9b40e1cd8c4e3ac1f755bbc0a7f827",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P5/Becoming/ReceptionTracesInherited.lean",
-      "sha256": "28362d0ee4dfb39d0200b4dbe0bf12863920d1747f4642a63161dfb2e9de2826",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P5/Becoming/TestCodeFrames.lean",
-      "sha256": "1b9c1d93488584329f036f6533a44533ddeb70617951f294a7d5c70c50a442fc",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P5/Becoming/UnitTraces.lean",
-      "sha256": "dc94abb2af383a74b496efffe7cefb552497a7b13ad82e39953a9969ecf4e515",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P6/Becoming/MoveOutcomeProcesses.lean",
-      "sha256": "77781020b64357a810820d0cce7ad39c90ddd1785f6a63ccdcac6114fd4da4bc",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P6/Becoming/MoveOutcomeProcessesInherited.lean",
-      "sha256": "934d6c5f5deba272823fc18fd4ecfc8e9d486888f6c99473b3fed897a78bf2d9",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P6/Becoming/RuleNarrowingProcesses.lean",
-      "sha256": "08994dc0012ce824fac0001a6bf4830bb00337956addda5787949eca4bd50541",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P6/Becoming/RuleNarrowingProcessesInherited.lean",
-      "sha256": "77715de6a6bfe7ea60bf58c6d409444b1f0c171a1f3fae80c15ff92f2fa8d47b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P6/Becoming/SeedReachProcesses.lean",
-      "sha256": "83434a825f65c68bf3f44b98928fa479bd750950e0f4dbdbea8b6aebd7567d3f",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P7/Becoming/ClassifiedFramesInherited.lean",
-      "sha256": "9f7059a31fb764957eec160113356cb6f4a7b753acbfdd185d1f167f544b9f39",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P7/Becoming/ExtendedClaimFrames.lean",
-      "sha256": "7c41d13900064960bf0a4b3961f33b3677ed7b21d177bf87daa9d9db9e2218ce",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P7/Becoming/ExtensionFrames.lean",
-      "sha256": "e0759f13b488c9531a5c247bd4020b339e784db5529e8c96e3a25c59d03c6fa6",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P7/Becoming/InterfaceTraces.lean",
-      "sha256": "b1f17fce4ebd672110085b2000c0cbd5ea5dfd898618c3914f791fe69e1cbbd1",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P7/Becoming/InterfaceTracesInherited.lean",
-      "sha256": "6c843fcb5fbedbfc37ed9bb5ceb6c8818b73baa8be06bf75d29c14b88fcf852f",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P7/Becoming/ReachableFrames.lean",
-      "sha256": "1ba8ac980c36e55fef8d833b6a9bcbe355b4ada97724d8849213968eb5716c0a",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P7/Becoming/ReachableFramesInherited.lean",
-      "sha256": "aa75435aaf1248f1bdd3b38da1758dcc00f28fcaa8632fe74c12fef8189b37eb",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P7/Becoming/StrictTransportRuns.lean",
-      "sha256": "9a1faf6f080cee6192ddefb691d9f4aa8779b2fc45bce3f97da86534e9f03454",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/ClassifiedBeliefProcesses.lean",
-      "sha256": "5c31f7b23393b28d49936c54134a8fca7ced36f62de9d6a102d3c1929a4e3ede",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/ContextArrivalTraces.lean",
-      "sha256": "69e01dbc70b58bd3dd11f999b7d5fb8bbe03aa2a513dbaa7293a4ca923a3e197",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/ContextArrivalTracesInherited.lean",
-      "sha256": "8a7ab807169991517e64d7106df368261c727f6ce0a8e955ace991aef2245209",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/CouplingHistoryFrames.lean",
-      "sha256": "3a9ad9e744639725f881d46af82aa2322346f89e892dc04af494d4272db96e35",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/CourseExtensionFrames.lean",
-      "sha256": "9fa32377909f8130b8c6a78b54819d958db93a646dd06b605d7a83b95fa74203",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/DerivationScopeProcesses.lean",
-      "sha256": "0c0cd5ae3304e0e5fccf90d0dce4ad3ec438b8f943c3331dd5adad83c5a54627",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/DescentRenewalRuns.lean",
-      "sha256": "b190359d684b65ae4898922232b315e0b1ad4556ee44bbd92c69e10c6061d1a0",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/FeasibleProfileTraces.lean",
-      "sha256": "19061d16a64a6f84e0d66752d054fcf6c4ae95640e9b54251fd7805f621ccf2b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/RuleRevisionTraces.lean",
-      "sha256": "ee23d7f31be05dd864d8b1cd197500dddd3fa1661dc20d52baa91bc86a267130",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/RuleRevisionTracesInherited.lean",
-      "sha256": "9a5fbd0f0988977569991bd482d839dff48f3c15267cca6372c2eda42afe9a98",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/SupportGatedWebs.lean",
-      "sha256": "cacaf414eae00c9b3aa95ee116010da703c323989c3942c0bffd280d8d37b1f3",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/SupportGatedWebsInherited.lean",
-      "sha256": "33079d825c309f91a24eed0d25a848d0b86db0ddaa8874088570b866d0126f61",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u3-apart-groups/Becoming/AcceptanceFrames.lean",
-      "sha256": "63cf8cf2e03fc63b0dad4ec1fb29715e726ecbc6da73fd54cd487424ad42de56",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u3-apart-groups/Becoming/FrontierFrames.lean",
-      "sha256": "d86d6a921cb05ae244cc600903ae1100b8f1791d0eba7d350be615d7b6dbb550",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u3-apart-groups/Becoming/FrontierWorlds.lean",
-      "sha256": "b551db86b1ae56da175fb0a3c852a94fb4dd915594daf5b8cd71d2a6b3815e2b",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u3-apart-groups/Becoming/Hexagrams.lean",
-      "sha256": "8765e7c838064d509c8ab07a8b09aec9483a06e728fb864913a697df8b72789a",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u3-apart-groups/Becoming/Listing.lean",
-      "sha256": "763de10d8fdc263ae836c510a8b5a8fac0891cdd8401a86999dc08247b23624c",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u3-apart-groups/Becoming/PresentationFrames.lean",
-      "sha256": "5379a0c898101ef2129bf0791038a7685bd4279e15baddff67a3d4de613240c7",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u5-general-structure/Becoming/FrontierWorlds.lean",
-      "sha256": "b115d5a1bbc9ed636f34cb82c5105dc69d53cbb16ea091fbadaeb58930201d40",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u5-general-structure/Becoming/HistoryIdealsTraces.lean",
-      "sha256": "a80e25cb90570d03dbcc766c994d84854f180311b6fa7fe97a3e658161201beb",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u5-general-structure/Becoming/NarrowingRuns.lean",
-      "sha256": "07eaa1fcd796e8c23e75cd1fd2b4df5c4c7cccde9fe8c94380c4099534049147",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u5-general-structure/Becoming/WitnessRefinementRuns.lean",
-      "sha256": "dc0a8a69edaa1d27d548766dd042a7fa16400484c285a008b2c37e57bd463f1f",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/v-collective-continuation/v1/Becoming/Withholding.lean",
-      "sha256": "b56112df45782fd28def6d31b6e6a6d52ec64d665e4f2163f2e1e7da61a01b99",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/v-collective-continuation/v2/Becoming/Widening.lean",
-      "sha256": "55a880e0702332ef6ffe650f5ba30872eae44a4317d7c2056797218ac557abf9",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/v-collective-continuation/v3/Becoming/Pace.lean",
-      "sha256": "6cbf7e185c4d9cc04643b99ec906ff775a4a256086a13e7c825971925cbef5ec",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/v-collective-continuation/v4/Becoming/Passing.lean",
-      "sha256": "da2894e3f8c38f71ca0d08a4bc155f4a94745da7dffa807eb39739b10df62a70",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/v-collective-continuation/v5/Becoming/JointKeeping.lean",
-      "sha256": "6f163c04ea7bae5e065fe609abfcad1930637be5e275c5e69583f44820421745",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/v2-tolerance/tree/Becoming/Tolerance.lean",
-      "sha256": "3b25d41ace43dee151b03139a9df47b464991525fc7d0f2f463ba5f1b2b7eae0",
       "role": "development-attempt",
       "group": "other",
       "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
@@ -3893,15 +3902,6 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/y5/Becoming/HexagramSequences.lean",
       "sha256": "cd630151f70a37b9db04dae1cbf9b659c5cf9b07e1b44e698101c29f4d2e7bde",
-      "role": "development-attempt",
-      "group": "other",
-      "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "direct_documentation_links_from": [],
-      "proof_status": "not_assessed_by_catalogue"
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/Becoming/RelativePosition.lean",
-      "sha256": "5f941cb59922ad7b174b1c27ee1129cd2e3f5b4b92ba3380f1a146a4424788f2",
       "role": "development-attempt",
       "group": "other",
       "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
@@ -9125,7 +9125,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
         "theories/becoming/chapters/BECOMING-FOUNDATION.md",
         "theories/becoming/chapters/BECOMING-FOUNDATION.zh.md",
@@ -9140,7 +9139,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
         "theories/becoming/history/ARGUMENTS-M-Z-2026-10-08.md"
       ],
@@ -9253,7 +9251,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
         "theories/becoming/history/ARGUMENTS-A-L-2026-10-08.md",
         "theories/becoming/history/ASSUMPTION-FREE-FOUNDATION.md"
@@ -9735,7 +9732,6 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
         "theories/becoming/history/ARGUMENTS-A-L-2026-10-08.md"
       ],
@@ -9749,7 +9745,6 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
@@ -10066,7 +10061,6 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
         "theories/becoming/history/ARGUMENTS-M-Z-2026-10-08.md"
       ],
@@ -10127,7 +10121,6 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
         "theories/becoming/history/ARGUMENTS-M-Z-2026-10-08.md"
       ],
@@ -10159,7 +10152,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
         "theories/becoming/history/ARGUMENTS-M-Z-2026-10-08.md"
       ],
@@ -10173,7 +10165,6 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
         "theories/becoming/history/ARGUMENTS-M-Z-2026-10-08.md"
       ],
@@ -10576,7 +10567,6 @@
       "group": "inquiry",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
         "theories/becoming/history/SESSION-RESULTS-2026-10-08.md"
       ],
@@ -11989,7 +11979,6 @@
       "group": "ethics",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
@@ -12401,7 +12390,6 @@
       "group": "ethics",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
         "theories/becoming/history/ARGUMENTS-M-Z-2026-10-08.md"
       ],
@@ -12592,7 +12580,6 @@
       "group": "ethics",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
         "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
         "theories/becoming/history/ALIGNMENT-DIRECTION.zh.md",
@@ -12697,7 +12684,6 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
         "theories/becoming/history/ARGUMENTS-A-L-2026-10-08.md"
       ],
@@ -12760,7 +12746,6 @@
       "group": "ethics",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
         "theories/becoming/history/ARGUMENTS-A-L-2026-10-08.md"
       ],
@@ -12923,7 +12908,6 @@
       "group": "ethics",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
         "theories/becoming/history/ARGUMENTS-A-L-2026-10-08.md"
       ],
@@ -13077,7 +13061,6 @@
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.zh.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
         "theories/becoming/history/ARGUMENTS-M-Z-2026-10-08.md"
       ],
@@ -13255,7 +13238,6 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
         "theories/becoming/history/ARGUMENTS-A-L-2026-10-08.md"
       ],
@@ -13281,7 +13263,6 @@
       "group": "ethics",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
         "theories/becoming/history/ARGUMENTS-A-L-2026-10-08.md",
         "theories/becoming/history/G0-WARRANT.md",
@@ -13338,7 +13319,6 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
         "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
         "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.zh.md",
@@ -13353,7 +13333,6 @@
       "group": "ethics",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
         "theories/becoming/history/ARGUMENTS-A-L-2026-10-08.md",
         "theories/becoming/history/G0-WARRANT.md",
@@ -355847,11 +355826,11 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791251872725947000/SuccessionPreparation.lean"
     ],
     "04a6c507346afd2f1d1755b87edfdcf6b55a0e4e5024f1a34fce6444ec83ef3f": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/c2-exhaustion/Becoming/Exhaustion.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/c2-exhaustion/Becoming/Exhaustion.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exhaustion.lean"
     ],
     "07eaa1fcd796e8c23e75cd1fd2b4df5c4c7cccde9fe8c94380c4099534049147": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u5-general-structure/Becoming/NarrowingRuns.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u5-general-structure/Becoming/NarrowingRuns.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/NarrowingRuns.lean"
     ],
     "0d205ad3ce57311bf73fd6bf4266202877c2138ca2980531b8dbe7a1f2da71f3": [
@@ -356013,11 +355992,11 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RecipientIdentification.lean"
     ],
     "400222ef8f8d216a7be6b1314193321808c9ce71d0934e86bbcd615603772ec0": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/g1-selection-gap/Becoming/SelectionGap.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/g1-selection-gap/Becoming/SelectionGap.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionGap.lean"
     ],
     "41675fb36d500d258685c70186a6323373b108420d26633eae5e830ca18ce005": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/g2-selection-reach/Becoming/SelectionReach.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/g2-selection-reach/Becoming/SelectionReach.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionReach.lean"
     ],
     "434ec5f248c5cabac3acac8e471eaf52527663727dee0a33d749eb7ef55c123f": [
@@ -356033,7 +356012,7 @@
       "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/work/cross-session-completeness/source-snapshots/NatTrans.lean"
     ],
     "4766457e81ff53ef8ab94f4b7109e4b62e138f409b8d239e0d9ecb6695565e85": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/k1-cuts/PreparationCorrespondence.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/k1-cuts/PreparationCorrespondence.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean"
     ],
     "4beae160632276b4995619b5a9715fc346c0b96bd935082cdd2f8e6d3274199b": [
@@ -356088,7 +356067,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean"
     ],
     "5c31f7b23393b28d49936c54134a8fca7ced36f62de9d6a102d3c1929a4e3ede": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/P8/Becoming/ClassifiedBeliefProcesses.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u-unification/u2/P8/Becoming/ClassifiedBeliefProcesses.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ClassifiedBeliefProcesses.lean"
     ],
     "5c3208103713d60fa65e19f0a97e61b13621898deb859549a91666b9c5e1e31b": [
@@ -356147,7 +356126,7 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375322294089000/ConsequenceTransmission.lean"
     ],
     "6f4c8b032363f0c37092b2fe0b144d9f21ae1a841a888c0134f0f4884ad01e80": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r2b-census-binding/Becoming/CensusBinding.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r2b-census-binding/Becoming/CensusBinding.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusBinding.lean"
     ],
     "6f53d92de64a31f515df7f128e2c31ebb08a9df6d66627141df5eb258f58c1a7": [
@@ -356252,7 +356231,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean"
     ],
     "94a18f41ddefa0222801661c72bb5af17f957c1d091f82f9aedaf4a9e9663b61": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/c1-exclusion/Becoming/Exclusion.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/c1-exclusion/Becoming/Exclusion.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean"
     ],
     "95cf5800f6827d1896cac186113cccf9561768693c6d6e867a3626cd04fc8408": [
@@ -356268,7 +356247,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean"
     ],
     "a00c7d56033c7985142924d3df3cb1a470f42a63841e377b1e3f082bfcbf7d92": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/m4-rejoining/Becoming/Rejoining.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/m4-rejoining/Becoming/Rejoining.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Rejoining.lean"
     ],
     "a24c91215991f49372e473761514277e758e48afd1a15268632d613da248e42a": [
@@ -356283,7 +356262,7 @@
     ],
     "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/Becoming.Frame.lean",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r1-interleavings/.build/Becoming/Frame.lean"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/.build/Becoming/Frame.lean"
     ],
     "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37": [
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/continuing-dependency/isolated/FormedSelection.lean",
@@ -356319,7 +356298,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean"
     ],
     "b115d5a1bbc9ed636f34cb82c5105dc69d53cbb16ea091fbadaeb58930201d40": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u5-general-structure/Becoming/FrontierWorlds.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/u5-general-structure/Becoming/FrontierWorlds.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierWorlds.lean"
     ],
     "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1": [
@@ -356425,10 +356404,10 @@
     ],
     "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8": [
       "_process/history/worktree-salvage-2026-10-18/jolly-pike-140c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261011T170859.998618Z/GenerativeCore.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/.build/GenerativeCore.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/system-individuation-review/20261007T233530.588639Z/GenerativeCore.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/variation-warrant-review/20261007T234507.242662Z/GenerativeCore.lean",
       "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/variation-warrant-review/20261007T234545.254086Z/GenerativeCore.lean",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r1-interleavings/.build/GenerativeCore.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375037098271000/GenerativeCore.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/checks/1791375135188720000/GenerativeCore.lean",
@@ -356489,8 +356468,8 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/RecipientContinuationProjection.lean"
     ],
     "f191c6c5edb18770b0db8657da3f5f25270531f788f8dd81e01fa34e996f9f21": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r1-interleavings/.build/Becoming/Interleavings.lean",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r1-interleavings/Becoming/Interleavings.lean"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/.build/Becoming/Interleavings.lean",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/r1-interleavings/Becoming/Interleavings.lean"
     ],
     "f3801a35fc3357004c282080d28bacb7b586642a82763dd090da561c62d438fe": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/history/1791250219383289000/EvaluativeSuccession.lean",

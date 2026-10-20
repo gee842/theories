@@ -14,7 +14,7 @@ Decisions (study section 226):
 * B3: ARGUMENTS-A-L and ARGUMENTS-M-Z move with --keep-references: the curated chain's page links them, so a
   generated stub takes the old path. THEORY-MAP, SESSION-RESULTS and the empty bridge group move.
 * B4: as planned, the nineteenth review included (the twentieth supersedes it and R21 applied its fixes).
-* B5: as planned; the kits of R28-R35, y1-changes, ro-relational-sources, zhonghua and the pinned kit are not in it.
+* B5: as planned, less r22-names, whose rename table the RO map's builder reads; the kits of R28-R35, y1-changes, ro-relational-sources, zhonghua and the pinned kit are not in it.
 * B7: _process/reading-notes moves. The untracked leftovers (_process/handoffs, .claude/tmp_done.txt, the two
   untracked kit folders) are not in this checkout; the coordinator removes them.
 """
@@ -56,5 +56,6 @@ write('R35-B2-reference', [(o, n, f'{DATE}, batch B2: {w}') for o, n, w in rows(
 write('R35-B3-generated-keep', [(o, n, f'{DATE}, batch B3: {w}') for o, n, w in rows('R35-B3-generated-keep')])
 write('R35-B3-generated', [(o, n, f'{DATE}, batch B3: {w}') for o, n, w in rows('R35-B3-generated')])
 write('R35-B4-study', [(o, n, f'{DATE}, batch B4: {w}') for o, n, w in rows('R35-B4-study')])
-write('R35-B5-kits', [(o, n, f'{DATE}, batch B5: {w}') for o, n, w in rows('R35-B5-kits')])
+# r22-names stays: the RO map's builder (ro-relational-sources/build_passages.py) reads its RENAME-TABLE.json.
+write('R35-B5-kits', [(o, n, f'{DATE}, batch B5: {w}') for o, n, w in rows('R35-B5-kits') if '/development/r22-names' not in o])
 write('R35-B7-process', [(o, n, f'{DATE}, batch B7: {w}') for o, n, w in rows('R35-B7-process')])

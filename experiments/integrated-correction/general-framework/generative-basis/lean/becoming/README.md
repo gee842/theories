@@ -305,7 +305,7 @@ The layers are computed (`development/r31-support/layers.py` in the R31 kit, whi
 <a id="periphery-joins"></a>
 ## Periphery joins
 
-U2 (17 October 2026) stated the laws of the periphery modules in the checker's run on the base, each join reading a periphery structure as a process, run, trace, frame or web; joins through periphery proofs with non-empty axiom reports were named `…Inherited`. The port (F3, 18–19 October 2026) stated that content in the core, and the sweep moved every join, with the bridge modules, to [`../history/becoming/Becoming/`](../history/becoming/Becoming/) with its bytes ([port program](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/PORT-PROGRAM.md)). The checker still checks joins (`PERIPHERY_JOINS`), were one added.
+U2 (17 October 2026) stated the laws of the periphery modules in the checker's run on the base, each join reading a periphery structure as a process, run, trace, frame or web; joins through periphery proofs with non-empty axiom reports were named `…Inherited`. The port (F3, 18–19 October 2026) stated that content in the core, and the sweep moved every join, with the bridge modules, to [`../history/becoming/Becoming/`](../history/becoming/Becoming/) with its bytes ([port program](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/bridge-fold/PORT-PROGRAM.md)). The checker still checks joins (`PERIPHERY_JOINS`), were one added.
 
 <a id="检查--verification"></a>
 ## Verification

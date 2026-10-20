@@ -101,7 +101,7 @@ Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents
 | proof | [Thresholds.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean) | `Becoming.ExchangeLaw.ReadsAt`, `Becoming.ExchangeLaw.ReadsBelow`, `Becoming.restrictReads`, `Becoming.ExchangeLaw.ReadsAt.restrict`, `Becoming.unread_carried_nowhere`, `Becoming.break_carried_nowhere` |
 | proof | [Observation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean) | `Becoming.ExchangeLaw.ReadsInto`, `Becoming.readCouplings`, `Becoming.apart_only_downstream` |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
-| integration | [REPORT.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/p130-frontier-on-base/REPORT.md) | — |
+| integration | [REPORT.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/p130-frontier-on-base/REPORT.md) | — |
 | provenance | [2026-10-12-move-towards-100.md](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md) | — |
 | provenance | [2026-10-12-no-two-realities.md](../../../../sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json) | — |

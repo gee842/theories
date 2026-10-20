@@ -89,8 +89,8 @@ The outside review of 19 October 2026 (R20) and an outside reader named the rest
 | proof | [Renewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean) | `Becoming.falls_not_recurring` |
 | proof | [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean) | `Becoming.Law.orbit`, `Becoming.Law.orbit_mul`, `Becoming.Law.Lossless`, `Becoming.Law.Returns`, `Becoming.Law.Lossless.returns`, `Becoming.Branching.Lossless`, `Becoming.Branching.Lossless.recurs` |
 | proof | [Branching.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean) | `Becoming.Branching.law_lossless_iff` |
-| review | [LeastLossDeps.lean](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ll1-least-loss/audit/LeastLossDeps.lean) | — |
-| review | [deps.log](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ll1-least-loss/audit/deps.log) | — |
+| review | [LeastLossDeps.lean](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/ll1-least-loss/audit/LeastLossDeps.lean) | — |
+| review | [deps.log](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/ll1-least-loss/audit/deps.log) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |

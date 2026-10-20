@@ -100,7 +100,7 @@ Say what the result does, then its exact conditions. Write only the boundaries t
 | `history` | Everything about rounds: who asked and when, which round or section, which receipt, what was reused or not recounted. | — |
 | `text_versions` | Hash-bound snapshots of the record's earlier bytes: `path`, `sha256` and a `note`. | — |
 
-Other fields (`id`, `kind`, `status`, `family`, `reviewed_at_utc`, `canonical_source`, `aliases`, `dependencies`, `related`, `references`, `proof_bindings`, `overview`) keep their schema-1 meaning and checks. The [migration drafts](research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/drafts) show three complete schema-2 records with sentence-by-sentence mapping tables (examples, not installed records).
+Other fields (`id`, `kind`, `status`, `family`, `reviewed_at_utc`, `canonical_source`, `aliases`, `dependencies`, `related`, `references`, `proof_bindings`, `overview`) keep their schema-1 meaning and checks. The [migration drafts](research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/drafts) show three complete schema-2 records with sentence-by-sentence mapping tables (examples, not installed records).
 
 **Never in the public fields** (`title`, `statement`, `claim`, `laws`, `does_not_show`, `not_required`, `progress`, `counterexamples`, `next_delta`, `overview`):
 

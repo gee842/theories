@@ -530,13 +530,13 @@
       "sha256": "9408f96fc097057836f4702faccedb6c19fc7615d38a97cb469ab8575c4106af"
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ll1-least-loss/audit/LeastLossDeps.lean",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/ll1-least-loss/audit/LeastLossDeps.lean",
       "role": "review",
       "declarations": [],
       "sha256": "ba9761a42435b36602e9e36550610b4f7e7dfbaae8aeb9c0dc97f762bc02edf7"
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ll1-least-loss/audit/deps.log",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/ll1-least-loss/audit/deps.log",
       "role": "review",
       "declarations": [],
       "sha256": "a27470ccc084da8075749b936d74bf7793b83fc0734a6502f3da8b62f9a2d612"
@@ -545,7 +545,7 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "0f0f4eacce18efd08fac5ac42a40ef853dd828a109b1f03fede2e25bdd30e488"
+      "sha256": "13990873ae4d5b6f76058ba57dff526e0045bed0062e94b5cfea8e126a70f5e2"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",

@@ -14,7 +14,7 @@ from unittest.mock import patch
 
 from tools.research import moves, registry, research, style
 
-DRAFTS = registry.ROOT / ('_process/research/2026-10-05-generative-foundation-review/root-foundation/development/'
+DRAFTS = registry.ROOT / ('_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/'
                           'becoming-general-laws-plan/readability/drafts')
 
 

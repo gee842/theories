@@ -86,7 +86,7 @@ python3 -B _process/research/2026-10-05-generative-foundation-review/root-founda
 <a id="7-落地头上的重跑--the-rerun-on-the-landing-head"></a>
 ## 7. 落地头上的重跑
 
-2026-10-16。整合者在 `land-p130` 的 29a8556d 上重跑（P129 与 P130 都已合入；Lean 源与提交一致；核心回执 20261016T124157.989030Z；215 个被跟踪模块，29,213 个常量，7,214 条脊柱定理）。[JSON](THEOREM-CONNECTIVITY.json) 现为这次以原基所得的结果；扩展基一列由 [connectivity_bases.py](development/p130-frontier-on-base/connectivity_bases.py) 算出，不写入 JSON。
+2026-10-16。整合者在 `land-p130` 的 29a8556d 上重跑（P129 与 P130 都已合入；Lean 源与提交一致；核心回执 20261016T124157.989030Z；215 个被跟踪模块，29,213 个常量，7,214 条脊柱定理）。[JSON](THEOREM-CONNECTIVITY.json) 现为这次以原基所得的结果；扩展基一列由 [connectivity_bases.py](../history/root-foundation/development/p130-frontier-on-base/connectivity_bases.py) 算出，不写入 JSON。
 
 | 类 | 原基 | 扩展 |
 |---|---:|---:|

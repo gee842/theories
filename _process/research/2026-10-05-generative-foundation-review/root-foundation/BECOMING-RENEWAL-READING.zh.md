@@ -10174,7 +10174,7 @@ Integration: P128 收入其第 1、3 项；README 与生成链 C03、M15 读 §6
 
 ## 164. 复核所见的脊柱整理（P129）
 
-2026-10-16。工作板 P129。不加新律，不改已有名称与陈述（[报告](development/p129-review-fixes/REPORT.md)）。
+2026-10-16。工作板 P129。不加新律，不改已有名称与陈述（[报告](../history/root-foundation/development/p129-review-fixes/REPORT.md)）。
 
 ```text
 Result(s): 不新增成果；新增连接定理与 LLPO
@@ -10191,7 +10191,7 @@ Integration: lifting-where-branching-is-finite 新增一条定律记 EitherThrou
 
 ## 165. 一个根：每个基都读作运行，前沿陈述在两种作为的世界上（P130）
 
-2026-10-16。发布准备度复核 §4 指出：脊柱有两个根（Process 与 World），以对应定理相连而非定义；P110–P127 陈述在耦合阵列与 `ExchangeLaw` 上；Quantum 与 Learnable 全部独立；连通测量已过时。工作板 P130。不加公理，只新增模块（[报告](development/p130-frontier-on-base/REPORT.md)）。
+2026-10-16。发布准备度复核 §4 指出：脊柱有两个根（Process 与 World），以对应定理相连而非定义；P110–P127 陈述在耦合阵列与 `ExchangeLaw` 上；Quantum 与 Learnable 全部独立；连通测量已过时。工作板 P130。不加公理，只新增模块（[报告](../history/root-foundation/development/p130-frontier-on-base/REPORT.md)）。
 
 ```text
 Result(s): 新增 worlds-are-runs、two-act-worlds-carry-the-difference；应用于 learnable-through-registration、gluing-under-parity、

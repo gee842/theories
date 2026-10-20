@@ -1530,7 +1530,7 @@ Ren 2026-10-11 问：“can we reduce is "for anything, its continuation into th
 
 ### 退役的 Lean 名（2026年10月18日）
 
-2026年10月18日，带有“registration”与“面对外在世界的认知者”之学习词汇的 Lean 名，按[命名研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md#8-applied-n5-18-october-2026)所采纳的词汇改名（耦合入、经耦合无别、排除、前段、不合与相合、逐除外推）。陈述与证明不变。下表为定义；定理名随之改（如 `Web.RegistersAlike.trans` 现为 `Web.AlikeThrough.trans`）。175 项声明的全表见 [RENAME-TABLE.json](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/n1-migration/RENAME-TABLE.json)。早先的研究、来源与回执保留旧名作为历史。本章的散文用词随后经阅读而改，不由此次改名替换（N6）：识闭包即耦合闭包，经识的选择即经耦合的选择，经识回应即经耦合而应，语境中的识即语境中的主张，（形成对主张的）否证即排除，被识的序列／记录即经映射的历程／前段，按否证学习即逐除外推，给定界或被给予世界的学习者即给定界的外推或依过程所建之外推。识保留给一个形成经其耦合所成之归并的自身历程。
+2026年10月18日，带有“registration”与“面对外在世界的认知者”之学习词汇的 Lean 名，按[命名研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md#8-applied-n5-18-october-2026)所采纳的词汇改名（耦合入、经耦合无别、排除、前段、不合与相合、逐除外推）。陈述与证明不变。下表为定义；定理名随之改（如 `Web.RegistersAlike.trans` 现为 `Web.AlikeThrough.trans`）。175 项声明的全表见 [RENAME-TABLE.json](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/n1-migration/RENAME-TABLE.json)。早先的研究、来源与回执保留旧名作为历史。本章的散文用词随后经阅读而改，不由此次改名替换（N6）：识闭包即耦合闭包，经识的选择即经耦合的选择，经识回应即经耦合而应，语境中的识即语境中的主张，（形成对主张的）否证即排除，被识的序列／记录即经映射的历程／前段，按否证学习即逐除外推，给定界或被给予世界的学习者即给定界的外推或依过程所建之外推。识保留给一个形成经其耦合所成之归并的自身历程。
 
 | 退役的 Lean 名 | 现行 Lean 名 |
 |---|---|
