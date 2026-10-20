@@ -126,85 +126,25 @@ same unfolding; no associativity, order, unit or repetition of parts is assumed.
 structure JointFrame (S : Type u) (A : Type v) (C : Type w) extends Frame S A C where
   joint : S → S → S → Prop
 
-/-- A joint test: nothing, a claim, the failure of a test, two tests together, that some step by a
-move leads to where a test holds, or that the configuration holds together two parts, the first
-passing one test and the second the other. -/
-inductive JointTest (A : Type v) (C : Type w) where
-  | top
-  | claim (c : C)
-  | not (φ : JointTest A C)
-  | both (φ ψ : JointTest A C)
-  | can (a : A) (φ : JointTest A C)
-  | together (φ ψ : JointTest A C)
+/-- A joint test: a test with parts (`TestWith` of `Becoming.Likeness`) for the one relation of a
+joint frame. It is nothing, a claim, the failure of a test, two tests together, that some step by
+a move leads to where a test holds, or that the configuration holds together two parts, the first
+passing one test and the second the other (`.together () φ ψ`). -/
+abbrev JointTest (A : Type v) (C : Type w) := TestWith Unit A C
 
 section Tests
 
-variable {S : Type u} {S' : Type u'} {S'' : Type u''} {A : Type v} {C : Type w}
+variable {S : Type u} {S' : Type u'} {A : Type v} {C : Type w}
 
-/-- Where a joint test holds in a joint frame. -/
-def JointTest.Holds (F : JointFrame S A C) : S → JointTest A C → Prop
-  | _, .top => True
-  | s, .claim c => F.realized s c
-  | s, .not φ => ¬ JointTest.Holds F s φ
-  | s, .both φ ψ => JointTest.Holds F s φ ∧ JointTest.Holds F s ψ
-  | s, .can a φ => ∃ t, F.P.step s a t ∧ JointTest.Holds F t φ
-  | s, .together φ ψ => ∃ l r, F.joint s l r ∧ JointTest.Holds F l φ ∧ JointTest.Holds F r ψ
+/-- Where a joint test holds in a joint frame: `TestWith.Holds` at its relation `joint`. -/
+abbrev JointTest.Holds (F : JointFrame S A C) : S → JointTest A C → Prop :=
+  TestWith.Holds (I := Unit) F.toFrame fun _ => F.joint
 
-/-- Two configurations pass the same joint tests. -/
-def SameJointTests (F : JointFrame S A C) (G : JointFrame S' A C) (s : S) (s' : S') : Prop :=
-  ∀ φ, JointTest.Holds F s φ ↔ JointTest.Holds G s' φ
-
-/-- Passing the same joint tests is an equivalence: every configuration passes its own, -/
-theorem SameJointTests.refl (F : JointFrame S A C) (s : S) : SameJointTests F F s s :=
-  fun _ => Iff.rfl
-
-/-- both ways, -/
-theorem SameJointTests.symm {F : JointFrame S A C} {G : JointFrame S' A C} {s : S} {s' : S'}
-    (same : SameJointTests F G s s') : SameJointTests G F s' s :=
-  fun φ => (same φ).symm
-
-/-- and along. -/
-theorem SameJointTests.trans {F : JointFrame S A C} {G : JointFrame S' A C}
-    {H : JointFrame S'' A C} {s : S} {s' : S'} {s'' : S''} (same : SameJointTests F G s s')
-    (same' : SameJointTests G H s' s'') : SameJointTests F H s s'' :=
-  fun φ => (same φ).trans (same' φ)
-
-/-- **Where joint tests tell apart the configurations of a frame, a configuration passes the same
-joint tests as at most one of them.** -/
-theorem SameJointTests.functional {F : JointFrame S A C} {G : JointFrame S' A C}
-    (separated : ∀ t t', SameJointTests G G t t' → t = t') {s : S} {t t' : S'}
-    (same : SameJointTests F G s t) (same' : SameJointTests F G s t') : t = t' :=
-  separated t t' (same.symm.trans same')
-
-/-- A branching test read as a joint test that never asks for parts. -/
-def BranchingTest.toJoint : BranchingTest A C → JointTest A C
-  | .top => .top
-  | .claim c => .claim c
-  | .not φ => .not φ.toJoint
-  | .both φ ψ => .both φ.toJoint ψ.toJoint
-  | .can a φ => .can a φ.toJoint
-
-/-- **A branching test holds in the frame exactly where its reading as a joint test holds.** -/
-theorem BranchingTest.holds_toJoint {F : JointFrame S A C} :
-    ∀ (φ : BranchingTest A C) (s : S),
-      BranchingTest.Holds F.toFrame s φ ↔ JointTest.Holds F s φ.toJoint
-  | .top, _ => Iff.rfl
-  | .claim _, _ => Iff.rfl
-  | .not φ, s => ⟨fun fails holds => fails ((BranchingTest.holds_toJoint φ s).mpr holds),
-      fun fails holds => fails ((BranchingTest.holds_toJoint φ s).mp holds)⟩
-  | .both φ ψ, s => ⟨fun ⟨first, second⟩ => ⟨(BranchingTest.holds_toJoint φ s).mp first,
-        (BranchingTest.holds_toJoint ψ s).mp second⟩,
-      fun ⟨first, second⟩ => ⟨(BranchingTest.holds_toJoint φ s).mpr first,
-        (BranchingTest.holds_toJoint ψ s).mpr second⟩⟩
-  | .can _ φ, _ => ⟨fun ⟨t, step, holds⟩ => ⟨t, step, (BranchingTest.holds_toJoint φ t).mp holds⟩,
-      fun ⟨t, step, holds⟩ => ⟨t, step, (BranchingTest.holds_toJoint φ t).mpr holds⟩⟩
-
-/-- **Configurations passing the same joint tests pass the same branching tests.** -/
-theorem SameJointTests.sameBranchingTests {F : JointFrame S A C} {G : JointFrame S' A C}
-    {s : S} {s' : S'} (same : SameJointTests F G s s') :
-    SameBranchingTests F.toFrame G.toFrame s s' :=
-  fun φ => (BranchingTest.holds_toJoint φ s).trans
-    ((same φ.toJoint).trans (BranchingTest.holds_toJoint φ s').symm)
+/-- Two configurations pass the same joint tests: `SameTestsWith` at the relations `joint`. Its
+laws are those of `SameTestsWith` (`refl`, `symm`, `trans`, `functional`,
+`sameBranchingTests`). -/
+abbrev SameJointTests (F : JointFrame S A C) (G : JointFrame S' A C) (s : S) (s' : S') : Prop :=
+  SameTestsWith F.toFrame G.toFrame (fun _ : Unit => F.joint) (fun _ => G.joint) s s'
 
 end Tests
 
@@ -212,158 +152,21 @@ end Tests
 
 section JointLikeness
 
-variable {S : Type u} {S' : Type u'} {S'' : Type u''} {A : Type v} {C : Type w}
-
-/-- `B` matches the parts the wholes hold together: where `B` relates two configurations, each pair
-of parts the first holds together under `J` is matched by a pair the second holds together under
-`K`, related part by part. -/
-def MatchesParts (J : S → S → S → Prop) (K : S' → S' → S' → Prop) (B : S → S' → Prop) : Prop :=
-  ∀ s s', B s s' → ∀ l r, J s l r → ∃ l' r', K s' l' r' ∧ B l l' ∧ B r r'
-
-/-- Matching parts passes to any relation holding exactly where the first does. -/
-theorem MatchesParts.transport {J : S → S → S → Prop} {K : S' → S' → S' → Prop}
-    {B B' : S → S' → Prop} (same : ∀ s s', B s s' ↔ B' s s') (matching : MatchesParts J K B) :
-    MatchesParts J K B' :=
-  fun s s' related l r joint =>
-    match matching s s' ((same s s').mpr related) l r joint with
-    | ⟨l', r', joint', left, right⟩ =>
-      ⟨l', r', joint', (same l l').mp left, (same r r').mp right⟩
-
-/-- Matching parts composes. -/
-theorem MatchesParts.comp {J : S → S → S → Prop} {K : S' → S' → S' → Prop}
-    {L : S'' → S'' → S'' → Prop} {B : S → S' → Prop} {B' : S' → S'' → Prop}
-    (matching : MatchesParts J K B) (matching' : MatchesParts K L B') :
-    MatchesParts J L fun s s'' => ∃ s', B s s' ∧ B' s' s'' :=
-  fun s s'' ⟨s', related, related'⟩ l r joint =>
-    match matching s s' related l r joint with
-    | ⟨l', r', joint', left, right⟩ => match matching' s' s'' related' l' r' joint' with
-      | ⟨l'', r'', joint'', left', right'⟩ =>
-        ⟨l'', r'', joint'', ⟨l', left, left'⟩, ⟨r', right, right'⟩⟩
+variable {S : Type u} {S' : Type u'} {A : Type v} {C : Type w}
 
 /-- A joint bisimulation: a bisimulation of the frames that matches, both ways, the parts each
-whole holds together. -/
-def JointBisimulation (F : JointFrame S A C) (G : JointFrame S' A C) (B : S → S' → Prop) : Prop :=
-  Bisimulation F.toFrame G.toFrame B ∧ MatchesParts F.joint G.joint B ∧
-    MatchesParts G.joint F.joint fun s' s => B s s'
-
-/-- Sameness is a joint bisimulation. -/
-theorem JointBisimulation.eq (F : JointFrame S A C) :
-    JointBisimulation F F fun s s' => s = s' :=
-  ⟨Bisimulation.eq F.toFrame,
-   fun _ _ same l r joint =>
-     ⟨l, r, Eq.subst (motive := fun x => F.joint x l r) same joint, rfl, rfl⟩,
-   fun _ _ same l r joint =>
-     ⟨l, r, Eq.subst (motive := fun x => F.joint x l r) same.symm joint, rfl, rfl⟩⟩
-
-/-- The converse of a joint bisimulation is one. -/
-theorem JointBisimulation.converse {F : JointFrame S A C} {G : JointFrame S' A C}
-    {B : S → S' → Prop} (bisim : JointBisimulation F G B) :
-    JointBisimulation G F fun s' s => B s s' :=
-  ⟨bisim.1.converse, bisim.2.2, bisim.2.1⟩
-
-/-- Joint bisimulations compose. -/
-theorem JointBisimulation.comp {F : JointFrame S A C} {G : JointFrame S' A C}
-    {H : JointFrame S'' A C} {B : S → S' → Prop} {B' : S' → S'' → Prop}
-    (bisim : JointBisimulation F G B) (bisim' : JointBisimulation G H B') :
-    JointBisimulation F H fun s s'' => ∃ s', B s s' ∧ B' s' s'' :=
-  ⟨bisim.1.comp bisim'.1, bisim.2.1.comp bisim'.2.1,
-   MatchesParts.transport
-     (fun _ _ => ⟨fun ⟨s', related', related⟩ => ⟨s', related, related'⟩,
-       fun ⟨s', related, related'⟩ => ⟨s', related', related⟩⟩)
-     (bisim'.2.2.comp bisim.2.2)⟩
+whole holds together; `BisimulationWith` at the relations `joint`. -/
+abbrev JointBisimulation (F : JointFrame S A C) (G : JointFrame S' A C) (B : S → S' → Prop) :
+    Prop :=
+  BisimulationWith F.toFrame G.toFrame (fun _ : Unit => F.joint) (fun _ => G.joint) B
 
 /-- Two configurations are jointly alike where some joint bisimulation relates them: they relate
-alike to every continuation and to every pair of parts. -/
-def JointAlike (F : JointFrame S A C) (G : JointFrame S' A C) (s : S) (s' : S') : Prop :=
-  ∃ B, JointBisimulation F G B ∧ B s s'
-
-/-- **Joint likeness is an equivalence:** every configuration is jointly alike to itself, -/
-theorem JointAlike.refl (F : JointFrame S A C) (s : S) : JointAlike F F s s :=
-  ⟨_, JointBisimulation.eq F, rfl⟩
-
-/-- joint likeness runs both ways, -/
-theorem JointAlike.symm {F : JointFrame S A C} {G : JointFrame S' A C} {s : S} {s' : S'} :
-    JointAlike F G s s' → JointAlike G F s' s
-  | ⟨_, bisim, related⟩ => ⟨_, bisim.converse, related⟩
-
-/-- and passes along. -/
-theorem JointAlike.trans {F : JointFrame S A C} {G : JointFrame S' A C} {H : JointFrame S'' A C}
-    {s : S} {s' : S'} {s'' : S''} : JointAlike F G s s' → JointAlike G H s' s'' → JointAlike F H s s''
-  | ⟨_, bisim, related⟩, ⟨_, bisim', related'⟩ => ⟨_, bisim.comp bisim', s', related, related'⟩
-
-/-- **Jointly alike configurations are alike in the frames with the parts forgotten.** -/
-theorem JointAlike.alike {F : JointFrame S A C} {G : JointFrame S' A C} {s : S} {s' : S'} :
-    JointAlike F G s s' → Alike F.toFrame G.toFrame s s'
-  | ⟨B, bisim, related⟩ => ⟨B, bisim.1, related⟩
-
-/-- Jointly alike configurations realize the same claims. -/
-theorem JointAlike.realized {F : JointFrame S A C} {G : JointFrame S' A C} {s : S} {s' : S'}
-    (alike : JointAlike F G s s') (c : C) : F.realized s c ↔ G.realized s' c :=
-  alike.alike.realized c
-
-/-- A step of one is matched by a step of the other by the same move into jointly alike
-configurations. -/
-theorem JointAlike.step {F : JointFrame S A C} {G : JointFrame S' A C} {s : S} {s' : S'}
-    (alike : JointAlike F G s s') {a : A} {t : S} (step : F.P.step s a t) :
-    ∃ t', G.P.step s' a t' ∧ JointAlike F G t t' :=
-  match alike with
-  | ⟨B, bisim, related⟩ => match (bisim.1 s s' related).2.1 a t step with
-    | ⟨t', step', joined⟩ => ⟨t', step', B, bisim, joined⟩
-
-/-- **A pair of parts one holds together is matched by a pair the other holds together, jointly
-alike part by part.** -/
-theorem JointAlike.parts {F : JointFrame S A C} {G : JointFrame S' A C} {s : S} {s' : S'}
-    (alike : JointAlike F G s s') {l r : S} (joint : F.joint s l r) :
-    ∃ l' r', G.joint s' l' r' ∧ JointAlike F G l l' ∧ JointAlike F G r r' :=
-  match alike with
-  | ⟨B, bisim, related⟩ => match bisim.2.1 s s' related l r joint with
-    | ⟨l', r', joint', left, right⟩ => ⟨l', r', joint', ⟨B, bisim, left⟩, ⟨B, bisim, right⟩⟩
-
-/-- Joint likeness in a frame matches parts. -/
-theorem JointAlike.matchesParts (F : JointFrame S A C) :
-    MatchesParts F.joint F.joint (JointAlike F F) :=
-  fun _ _ alike _ _ joint => alike.parts joint
-
-/-- Jointly alike configurations agree on each joint test. -/
-theorem JointAlike.holds_iff {F : JointFrame S A C} {G : JointFrame S' A C} :
-    ∀ (φ : JointTest A C) {s : S} {s' : S'}, JointAlike F G s s' →
-      (JointTest.Holds F s φ ↔ JointTest.Holds G s' φ)
-  | .top, _, _, _ => Iff.rfl
-  | .claim c, _, _, alike => alike.realized c
-  | .not φ, _, _, alike =>
-    ⟨fun fails holds => fails ((JointAlike.holds_iff φ alike).mpr holds),
-     fun fails holds => fails ((JointAlike.holds_iff φ alike).mp holds)⟩
-  | .both φ ψ, _, _, alike =>
-    ⟨fun ⟨holds, holds'⟩ =>
-      ⟨(JointAlike.holds_iff φ alike).mp holds, (JointAlike.holds_iff ψ alike).mp holds'⟩,
-     fun ⟨holds, holds'⟩ =>
-      ⟨(JointAlike.holds_iff φ alike).mpr holds, (JointAlike.holds_iff ψ alike).mpr holds'⟩⟩
-  | .can _ φ, _, _, alike =>
-    ⟨fun ⟨_, step, holds⟩ => match alike.step step with
-      | ⟨t', step', joined⟩ => ⟨t', step', (JointAlike.holds_iff φ joined).mp holds⟩,
-     fun ⟨_, step', holds⟩ => match alike.symm.step step' with
-      | ⟨t, step, joined⟩ => ⟨t, step, (JointAlike.holds_iff φ joined.symm).mpr holds⟩⟩
-  | .together φ ψ, _, _, alike =>
-    ⟨fun ⟨_, _, joint, left, right⟩ => match alike.parts joint with
-      | ⟨l', r', joint', alikeL, alikeR⟩ =>
-        ⟨l', r', joint', (JointAlike.holds_iff φ alikeL).mp left,
-          (JointAlike.holds_iff ψ alikeR).mp right⟩,
-     fun ⟨_, _, joint', left, right⟩ => match alike.symm.parts joint' with
-      | ⟨l, r, joint, alikeL, alikeR⟩ =>
-        ⟨l, r, joint, (JointAlike.holds_iff φ alikeL.symm).mpr left,
-          (JointAlike.holds_iff ψ alikeR.symm).mpr right⟩⟩
-
-/-- **Jointly alike configurations pass the same joint tests.** -/
-theorem JointAlike.sameJointTests {F : JointFrame S A C} {G : JointFrame S' A C} {s : S}
-    {s' : S'} (alike : JointAlike F G s s') : SameJointTests F G s s' :=
-  fun φ => JointAlike.holds_iff φ alike
-
-/-- **Where joint likeness tells apart the configurations of a frame, a configuration is jointly
-alike to at most one of them.** -/
-theorem JointAlike.functional {F : JointFrame S A C} {G : JointFrame S' A C}
-    (separated : ∀ t t', JointAlike G G t t' → t = t') {s : S} {t t' : S'}
-    (alike : JointAlike F G s t) (alike' : JointAlike F G s t') : t = t' :=
-  separated t t' (alike.symm.trans alike')
+alike to every continuation and to every pair of parts; `AlikeWith` at the relations `joint`. Its
+laws are those of `AlikeWith`: an equivalence (`refl`, `symm`, `trans`), likeness of the frames
+with the parts forgotten and more (`alike`), the same claims, steps and parts (`realized`, `step`,
+`parts`), the same joint tests (`holds_iff`, `sameTestsWith`) and `functional`. -/
+abbrev JointAlike (F : JointFrame S A C) (G : JointFrame S' A C) (s : S) (s' : S') : Prop :=
+  AlikeWith F.toFrame G.toFrame (fun _ : Unit => F.joint) (fun _ => G.joint) s s'
 
 end JointLikeness
 
@@ -390,14 +193,14 @@ theorem alike : Alike frame.toFrame frame.toFrame true false :=
 
 /-- `together` tells them apart: `true` holds a pair of parts and `false` holds none. -/
 theorem apart :
-    JointTest.Holds frame true (.together .top .top) ∧
-      ¬ JointTest.Holds frame false (.together .top .top) :=
+    JointTest.Holds frame true (.together () .top .top) ∧
+      ¬ JointTest.Holds frame false (.together () .top .top) :=
   ⟨⟨false, false, Pairs.whole, True.intro, True.intro⟩,
    fun ⟨_, _, (pairs : Pairs false _ _), _⟩ => nomatch pairs⟩
 
 /-- **So they are not jointly alike.** -/
 theorem not_jointAlike : ¬ JointAlike frame frame true false :=
-  fun alike => apart.2 ((JointAlike.holds_iff (.together .top .top) alike).mp apart.1)
+  fun alike => apart.2 ((AlikeWith.holds_iff (.together () .top .top) alike).mp apart.1)
 
 end Pairing
 
@@ -518,7 +321,7 @@ theorem SameJointTests.parts_passing {F : JointFrame S A C} {G : JointFrame S' A
     ∃ l' r', G.joint s' l' r' ∧ (∀ φ, JointTest.Holds F l φ → JointTest.Holds G l' φ) ∧
       ∀ φ, JointTest.Holds F r φ → JointTest.Holds G r' φ :=
   match compact s' (fun q => JointTest.Holds F l q.1 ∧ JointTest.Holds F r q.2) (fun qs all =>
-      match (same (.together (JointTest.firsts qs) (JointTest.seconds qs))).mp
+      match (same (.together () (JointTest.firsts qs) (JointTest.seconds qs))).mp
           ⟨l, r, joint, (JointTest.holds_firsts qs).mpr fun q mem => (all q mem).1,
             (JointTest.holds_seconds qs).mpr fun q mem => (all q mem).2⟩ with
       | ⟨l', r', joint', left, right⟩ =>
@@ -558,10 +361,10 @@ theorem sameJointTests_bisimulation {F : JointFrame S A C} {G : JointFrame S' A 
      fun _ t step => SameJointTests.step steps' same step (stable t),
      fun _ t' step' => match SameJointTests.step steps same.symm step' (stable' t') with
        | ⟨t, step, same'⟩ => ⟨t, step, same'.symm⟩⟩,
-   fun _ _ same _ _ joint => SameJointTests.parts joints' same joint (stable _) (stable _),
+   fun _ => ⟨fun _ _ same _ _ joint => SameJointTests.parts joints' same joint (stable _) (stable _),
    fun _ _ same _ _ joint' =>
      match SameJointTests.parts joints same.symm joint' (stable' _) (stable' _) with
-     | ⟨l, r, joint, left, right⟩ => ⟨l, r, joint, left.symm, right.symm⟩⟩
+     | ⟨l, r, joint, left, right⟩ => ⟨l, r, joint, left.symm, right.symm⟩⟩⟩
 
 /-- **Joint tests fix joint likeness under compactness and stability.** Where both frames' moves
 and pairs of parts are compact and both frames' tests are stable, configurations are jointly alike
@@ -570,7 +373,7 @@ theorem jointAlike_iff_sameJointTests {F : JointFrame S A C} {G : JointFrame S' 
     (steps : F.StepCompact) (steps' : G.StepCompact) (joints : F.JointCompact)
     (joints' : G.JointCompact) (stable : F.TestsStable) (stable' : G.TestsStable) {s : S}
     {s' : S'} : JointAlike F G s s' ↔ SameJointTests F G s s' :=
-  ⟨JointAlike.sameJointTests, fun same =>
+  ⟨AlikeWith.sameTestsWith, fun same =>
     ⟨_, sameJointTests_bisimulation steps steps' joints joints' stable stable', same⟩⟩
 
 /-- For each listed member failing some question of a family, finitely many questions of the
@@ -692,7 +495,7 @@ theorem plain_doubled (p : Prop) : ∀ φ : JointTest Unit Unit,
        fun ⟨holds, holds'⟩ fails => back holds fun first => back' holds' fun second =>
          fails ⟨first, second⟩⟩
   | .can _ _ => ⟨fun ⟨_, never, _⟩ => False.elim never, fun ⟨_, never, _⟩ => False.elim never⟩
-  | .together _ _ =>
+  | .together _ _ _ =>
     ⟨fun ⟨_, _, (joint : Joint .plain _ _), _⟩ => (nomatch joint),
      fun ⟨_, _, (joint : Joint .doubled _ _), _⟩ => (nomatch joint)⟩
 
@@ -706,7 +509,7 @@ theorem sameJointTests (p : Prop) : SameJointTests (frame p) (frame p) .two .one
   | .both φ ψ => ⟨fun ⟨holds, holds'⟩ => ⟨(sameJointTests p φ).mp holds, (sameJointTests p ψ).mp holds'⟩,
       fun ⟨holds, holds'⟩ => ⟨(sameJointTests p φ).mpr holds, (sameJointTests p ψ).mpr holds'⟩⟩
   | .can _ _ => ⟨fun ⟨_, never, _⟩ => False.elim never, fun ⟨_, never, _⟩ => False.elim never⟩
-  | .together φ _ =>
+  | .together _ φ _ =>
     ⟨fun ⟨l, r, joint, left, right⟩ => match l, r, joint, left, right with
       | _, _, .plain, left, right => ⟨.doubled, .rest, .one, (plain_doubled p φ).1 left, right⟩
       | _, _, .doubled, left, right => ⟨.doubled, .rest, .one, left, right⟩,
@@ -764,10 +567,10 @@ theorem jointAlike_of_sameJointTests_iff_em :
         ∀ s s', SameJointTests F F s s' → JointAlike F F s s') ↔ ∀ p : Prop, Decided p :=
   ⟨fun fixes p =>
     match (fixes _ (DoubleNegation.frame (Decided p)) (DoubleNegation.stepCompact _)
-        (DoubleNegation.jointCompact _) .two .one (DoubleNegation.sameJointTests _)).parts
+        (DoubleNegation.jointCompact _) .two .one (DoubleNegation.sameJointTests _)).parts ()
         DoubleNegation.Joint.plain with
     | ⟨_, _, joint, alike, _⟩ =>
-      DoubleNegation.stable_of_parts joint alike.sameJointTests (not_not_decided p),
+      DoubleNegation.stable_of_parts joint alike.sameTestsWith (not_not_decided p),
    fun em _ F steps joints _ _ =>
     (jointAlike_iff_sameJointTests steps steps joints joints (JointFrame.TestsStable.of_em em F)
       (JointFrame.TestsStable.of_em em F)).mpr⟩
@@ -816,7 +619,7 @@ def IdentifiesJointAlike (F : JointFrame S A C) (π : S → K) : Prop :=
 from every configuration it describes**, with no premise. -/
 theorem IdentifiesJointAlike.lifts {F : JointFrame S A C} {π : S → K}
     (sense : IdentifiesJointAlike F π) : LiftsFromEach F.joint π :=
-  (liftsFromEach_iff_of_kernel sense).mpr (JointAlike.matchesParts F)
+  (liftsFromEach_iff_of_kernel sense).mpr (AlikeWith.matchesParts F.toFrame (fun _ => F.joint) ())
 
 /-- **Through a description identifying exactly the configurations passing the same joint tests,
 the parts lift from every configuration it describes**, where the pairs of parts are compact and
@@ -981,7 +784,7 @@ theorem plans_lift_of_jointAlike {F : JointFrame S A C} {π : S → K}
     ∀ (s : S) (plan : JointPlan K),
       JointPlan.Realizes (jointImage F.joint π) (fun k k' => k = k') (π s) plan ↔
         JointPlan.Realizes F.joint (fun x k => π x = k) s plan :=
-  (plans_lift_iff_of_kernel F sense).mpr (JointAlike.matchesParts F)
+  (plans_lift_iff_of_kernel F sense).mpr (AlikeWith.matchesParts F.toFrame (fun _ => F.joint) ())
 
 /-- **Through a description identifying exactly the configurations passing the same joint tests,
 every plan lifts**, where the frame's pairs of parts are compact and its tests stable. -/

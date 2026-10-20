@@ -60,11 +60,11 @@ theorem JointBisimulation.reach {F : JointFrame S A C} {G : JointFrame S' A C}
       | ⟨t', step', joined'⟩ => exact ⟨t', .step reach' step', joined'⟩
   | left _ joint ih =>
     match ih with
-    | ⟨t, reach', joined⟩ => match bisim.2.1 _ t joined _ _ joint with
+    | ⟨t, reach', joined⟩ => match (bisim.2 ()).1 _ t joined _ _ joint with
       | ⟨l', _, joint', left, _⟩ => exact ⟨l', .left reach' joint', left⟩
   | right _ joint ih =>
     match ih with
-    | ⟨t, reach', joined⟩ => match bisim.2.1 _ t joined _ _ joint with
+    | ⟨t, reach', joined⟩ => match (bisim.2 ()).1 _ t joined _ _ joint with
       | ⟨_, r', joint', _, right⟩ => exact ⟨r', .right reach' joint', right⟩
 
 end Reach
@@ -92,9 +92,9 @@ theorem SameJointTests.joint_iff {F : JointFrame S A C} {G : JointFrame S' A C}
   ⟨fun joint => match SameJointTests.parts joints' same joint (stable l) (stable r) with
     | ⟨_, y, joint', atX, atY⟩ =>
       Eq.subst (motive := fun w => G.joint s' l' w)
-        (SameJointTests.functional separated' atY right)
+        (SameTestsWith.functional separated' atY right)
         (Eq.subst (motive := fun w => G.joint s' w y)
-          (SameJointTests.functional separated' atX left) joint'),
+          (SameTestsWith.functional separated' atX left) joint'),
    fun joint' => match SameJointTests.parts joints same.symm joint' (stable' l') (stable' r') with
     | ⟨_, y, joint, atX, atY⟩ =>
       Eq.subst (motive := fun w => F.joint s l w)
@@ -112,7 +112,7 @@ theorem SameJointTests.step_iff {F : JointFrame S A C} {G : JointFrame S' A C}
     F.P.step s a t ↔ G.P.step s' a t' :=
   ⟨fun step => match SameJointTests.step steps' same step (stable t) with
     | ⟨_, step', joined⟩ => Eq.subst (motive := fun w => G.P.step s' a w)
-        (SameJointTests.functional separated' joined same') step',
+        (SameTestsWith.functional separated' joined same') step',
    fun step' => match SameJointTests.step steps same.symm step' (stable' t') with
     | ⟨_, step, joined⟩ => Eq.subst (motive := fun w => F.P.step s a w)
         (SameJointTests.inverse_functional separated joined.symm same') step⟩
@@ -132,7 +132,7 @@ theorem SameJointTests.correspondence {F : JointFrame S A C} {G : JointFrame S' 
   ⟨fun s => match (sameJointTests_bisimulation steps steps' joints joints' stable stable').reach
         same (reach s) with
     | ⟨s', _, joined⟩ => ⟨s', joined, fun _ joined' =>
-        SameJointTests.functional separated' joined' joined⟩,
+        SameTestsWith.functional separated' joined' joined⟩,
    fun s' => match (sameJointTests_bisimulation steps' steps joints' joints stable' stable).reach
         same.symm (reach' s') with
     | ⟨s, _, joined⟩ => ⟨s, joined.symm, fun _ joined' =>
