@@ -64,6 +64,18 @@ class RegisterTests(unittest.TestCase):
     def cov(self):
         return {'rows': [{'id': 'r', 'open_items': [1]}], 'open_register': {'classes': ['further proof', 'philosophical warrant']}}
 
+    def test_logical_premise_needs_meets_unrefuted_and_calibration(self):
+        cov = {'rows': [{'id': 'r', 'declarations': ['Becoming.X.a']}],
+               'premises': {'items': [{'name': 'decided', 'pattern': r'\bDecidable\b', 'kind': 'logical', 'witnesses': [],
+                                       'meets': ['m'], 'unrefuted': [], 'calibration': ['c']}]}}
+        decls = {'Becoming.X.a': {'full': 'Becoming.X.a', 'statement': '[Decidable p] : p'}}
+        findings, used = completion.k3(cov, decls)
+        self.assertEqual(used, {'decided': ['Becoming.X.a']})
+        self.assertEqual(len(findings), 1)
+        self.assertIn('without unrefuted', findings[0])
+        cov['premises']['items'][0]['unrefuted'] = ['u']
+        self.assertEqual(completion.k3(cov, decls)[0], [])
+
     def test_open_register_classes_and_open_parts(self):
         chapter = ('### 8.1 Open items, ranked\n\n1. **A** (further proof; a remark). *Open:* x.\n'
                    '2. **B** (philosophical warrant, §8.5). No formal work.\n3. **A** (guess). x\n\n### 8.2 Next\n')
@@ -79,6 +91,7 @@ class RegisterTests(unittest.TestCase):
         cov['rows'][0]['records'] = cov['rows'][0]['records'] + ['no-such-record']
         decls = {n: {} for r in cov['rows'] for n in r['declarations'] if n != 'Becoming.no_such_law'}
         decls.update({w: {} for p in cov['premises']['items'] for w in p['witnesses']})
+        decls.update({w: {} for p in cov['premises']['items'] for k in ('meets', 'unrefuted', 'calibration') for w in p.get(k, [])})
         decls.update({n: {} for n in cov['ethics_chain']['steps']})
         decls.update({x[k]: {} for x in cov['representation']['natural_number_laws'] for k in ('law', 'dense') if x.get(k)})
         records = {r for row in cov['rows'] for r in row['records']} - {'no-such-record'}

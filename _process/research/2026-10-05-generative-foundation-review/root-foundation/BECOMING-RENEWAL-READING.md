@@ -10140,3 +10140,27 @@ Output → input: K2 and K3 are the completion report's remaining gaps.
 - **The counterexample.** In dyadic amounts, a family keeps a stock of one whole and is given one whole at each step. At the step from `t`, `2^(t+1)` takers take `1/2^(t+1)` each, one whole in all (`Halving.takes_within_one`, through the new bound `Halving.times_le_num`, the converse of `Dyadic.times_ge`). The family is balanced, every take is above nothing and the takers are more without end, yet the replenishment stays at one whole. What fails is the least take (`Halving.no_least_loss`).
 
 **Self-review.** The bound in the general law is measured in least takes. In a total Archimedean order every bound is within finitely many of them, but `Amounts` asks no totality, so the statement says only what the proof gives. This is the third law of the rest family whose whole-number form is an instance of a law over any amounts (after `falls_not_recurring` and the family laws).
+
+## 236. Witnesses for C, and decidedness as a logical premise (R42)
+
+```text
+Result(s): none new. K3 of the completion report met with existing core theorems; the criterion's demand made
+       exact for a premise of logic.
+Delta: C has witnesses meeting and failing it; decidedness gets what can be asked of it instead of a failing
+       witness, which cannot exist. K3 is met; only unity (K2) remains.
+Premises: none added.
+Evidence: tools/research/completion.py (K3 rule, a test), the coverage file, the report; no Lean, no checker run.
+Boundary: C's witnesses say what C asks of a comparison (that it tell an extension from its base), not that
+       calling widening better is warranted; decidedness calibrated by LPO in one family of runs (the cut
+       histories), not in every law that asks it.
+Output → input: K2 (families_reach_each_other and the central laws off a base family) is the report's last gap.
+```
+
+- **C.** Met: on a web's level paths, "better" read as widening satisfies C (`Web.paths_comparison_widens`). This holds by definition, since `Comparison` unfolds to `Extension`, and the record says so. Failed: where retaining a joint possibility extends releasing it while the marginals agree, no comparison read off marginals, comparing none with itself, satisfies C (`Regimes.no_comparison_through_marginals`, through `Comparison.separates`). So C asks of a comparison exactly that it see what an extension adds. That is information a summary may lack.
+- **Why decidedness has no failing witness.** A witness failing a premise is a model where it is refuted. For decidedness that would be a proposition `p` with `¬ (p ∨ ¬ p)`, and the core proves `¬ ¬ (p ∨ ¬ p)` for every `p` (`not_not_decided`). So no model, in any logic, refutes decidedness: classical logic decides everything, and constructive logic refutes no instance. The pure core is not the obstacle. What can be asked is a witness meeting it, its being unrefutable, and a calibration of what asking it uniformly amounts to:
+  - meets: over a finite stretch, what is decided at each step is decided of the stretch (`Decided.exists_below`);
+  - unrefuted: `not_not_decided`;
+  - calibration: settling or going on, asked of every cut history, is exactly the limited principle of omniscience (`HistoryIdeals.cut_decided_iff_lpo`).
+  The coverage file marks such a premise `logical`, and K3 asks these three of it in place of witnesses meeting and failing it.
+
+**Self-review.** The rule for logical premises is weaker than for world premises only where the stronger demand cannot be met by anything. The calibration chosen is one of several in the core (`Frequency`, `Tail`, `Sensitivity`, `ExchangePremises`); any of them would do, and the report names one.

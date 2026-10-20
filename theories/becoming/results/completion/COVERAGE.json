@@ -464,7 +464,7 @@
     }
   ],
   "premises": {
-    "about": "K3. Each premise a central statement may use, the pattern that finds it in a statement, and its witnesses: declarations exhibiting worlds or models that meet it and fail it. A premise with no witnesses listed is reported.",
+    "about": "K3. Each premise a central statement may use, the pattern that finds it in a statement, and its witnesses: declarations exhibiting worlds or models that meet it and fail it. A premise with no witnesses listed is reported. A logical premise (kind logical: decidedness) is one no world can be shown to fail, since no proposition is refuted to be decided; it lists instead a witness meeting it (meets), the proof that it is never refuted (unrefuted), and a calibration: what asking it of every case amounts to (calibration).",
     "items": [
       {
         "name": "balance",
@@ -554,7 +554,17 @@
         "name": "decided",
         "pattern": "\\bDecidable(Eq)?\\b",
         "witnesses": [],
-        "note": "calibrated rather than witnessed: a count exists exactly where what it counts is decided (counts_iff_decided), and asked of every world some laws are exactly omniscience principles (chapter 8.6); no world is exhibited failing it"
+        "note": "a count exists exactly where what it counts is decided (counts_iff_decided); over a finite stretch whatever is decided at each step is decided (meets); no proposition is refuted to be decided, so no world fails it (unrefuted); asked of every run, settling or going on is exactly LPO (calibration)",
+        "kind": "logical",
+        "meets": [
+          "Becoming.Decided.exists_below"
+        ],
+        "unrefuted": [
+          "Becoming.not_not_decided"
+        ],
+        "calibration": [
+          "Becoming.HistoryIdeals.cut_decided_iff_lpo"
+        ]
       },
       {
         "name": "a supplied law of exchange",
@@ -582,8 +592,11 @@
       {
         "name": "C, the widening comparison",
         "pattern": "\\bComparison\\b",
-        "witnesses": [],
-        "note": "an order premise: no theorem exhibits a comparison meeting and one failing it"
+        "witnesses": [
+          "Becoming.Web.paths_comparison_widens",
+          "Becoming.Regimes.no_comparison_through_marginals"
+        ],
+        "note": "meets: on level paths, better read as widening satisfies C; fails: no comparison read off marginals satisfies C where retaining a joint possibility extends releasing it. Meeting and failing C says what C asks of a comparison, not that C is warranted"
       },
       {
         "name": "L, lifting",

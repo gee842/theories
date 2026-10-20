@@ -8,7 +8,9 @@ measure, the records and chapter section 8.1, and reports each criterion met or 
                      definitions of the spine, are not apart (connectivity class), and records that exist
   K2 unity           every central theorem is in the main dependency component and its statement is on a base
                      family; `families_reach_each_other` holds in every direction
-  K3 premises        every premise a central statement uses has witnesses meeting and failing it, and they exist
+  K3 premises        every premise a central statement uses has witnesses meeting and failing it, and they exist;
+                     a logical premise (decidedness), which no world can be shown to fail, has instead a witness
+                     meeting it, the proof that it is never refuted, and a calibration by an omniscience principle
   K4 representation  each central statement's modelling choices, and every natural-number law listed has a form
                      over dense amounts or a counterexample
   K5 enclosure       every parameter a central statement leaves supplied is a named condition that chapter
@@ -231,6 +233,7 @@ def validate(cov: dict, decls: dict, record_ids: set) -> list[str]:
         if axes[axis] != n:
             errors.append(f'coverage: {n} {axis} rows expected, {axes[axis]} found')
     named = [w for p in cov['premises']['items'] for w in p['witnesses']]
+    named += [w for p in cov['premises']['items'] for k in ('meets', 'unrefuted', 'calibration') for w in p.get(k, [])]
     named += [x for x in cov['ethics_chain']['steps']]
     named += [x[k] for x in cov['representation']['natural_number_laws'] for k in ('law', 'dense') if x.get(k)]
     for name in named:
@@ -286,6 +289,12 @@ def k3(cov, decls):
             if re.search(p['pattern'], st):
                 used[p['name']].append(name)
     for p in cov['premises']['items']:
+        if p.get('kind') == 'logical':
+            missing = [k for k in ('meets', 'unrefuted', 'calibration') if not p.get(k)]
+            if p['name'] in used and missing:
+                findings.append(f'{p["name"]}: a logical premise used by {len(set(used[p["name"]]))} central statement(s) '
+                                f'without {", ".join(missing)} listed')
+            continue
         if p['name'] in used and not p['witnesses']:
             findings.append(f'{p["name"]}: used by {len(set(used[p["name"]]))} central statement(s) '
                             f'({", ".join(sorted(set(used[p["name"]]))[:3])}{", ..." if len(set(used[p["name"]])) > 3 else ""}), '
@@ -443,7 +452,7 @@ def evaluate() -> dict:
         'receipt': receipt.get('utc'), 'connectivity_commit': conn.get('commit'),
         'connectivity_receipt': conn.get('core_receipt_at_commit'),
         'met': {k: not v for k, v in criteria.items()}, 'findings': criteria,
-        'rows': cov['rows'], 'natural_number_laws': cov['representation']['natural_number_laws'], 'premises_used': used, 'modelling': tags, 'parameters': params,
+        'rows': cov['rows'], 'natural_number_laws': cov['representation']['natural_number_laws'], 'premises_used': used, 'logical_premises': [p for p in cov['premises']['items'] if p.get('kind') == 'logical'], 'modelling': tags, 'parameters': params,
         'chain_start': cov['ethics_chain']['steps'][0], 'chain': links, 'normative_hypotheses': normative, 'open_items': items,
     }
 
@@ -474,6 +483,10 @@ def render_report(result: dict) -> str:
         if k == 'K3' and result['premises_used']:
             out += ['Premises found in central statements: ' + '; '.join(
                 f'{p} ({len(v)})' for p, v in sorted(result['premises_used'].items())) + '.', '']
+            for p in result['logical_premises']:
+                out += [f'Logical premise {p["name"]}: ' + '; '.join(
+                    f'{k} ' + ', '.join('`' + w.removeprefix('Becoming.') + '`' for w in p.get(k, []))
+                    for k in ('meets', 'unrefuted', 'calibration')) + '.', '']
         if k == 'K4':
             counts = collections.Counter(t for v in result['modelling'].values() for t in v)
             out += ['Modelling choices found in central statements: ' + '; '.join(f'{t} ({n})' for t, n in counts.most_common()) + '.', '']

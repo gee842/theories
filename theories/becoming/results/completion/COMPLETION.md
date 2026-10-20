@@ -8,7 +8,7 @@ The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_pro
 |---|---|---|---:|
 | K1 | Coverage | yes | 0 |
 | K2 | Unity | no | 19 |
-| K3 | Premises | no | 2 |
+| K3 | Premises | yes | 0 |
 | K4 | Representation | yes | 0 |
 | K5 | Enclosure | yes | 0 |
 | K6 | The ethics chain | yes | 0 |
@@ -62,12 +62,13 @@ No finding.
 - families_reach_each_other: Web reaches Process family is false
 - families_reach_each_other: Process reaches World family is false
 
-## K3. Premises: not met
+## K3. Premises: met
 
 Premises found in central statements: C, the widening comparison (1); a census (2); a reserve (1); a supplied law of exchange (7); activity needing support (8); balance (18); bounded transmission (1); decided (4); dissipation (2); embodiment (1); enclosed (1); living significance (2); only active relata give (8); the continuation condition (3).
 
-- decided: used by 4 central statement(s) (Becoming.ExchangeLaw.response_not_fixed_by_coupling, Becoming.Learnable.learnable_iff, Becoming.LearnableRuns.learnable_iff_tracks, ...), no witnesses meeting and failing it listed; calibrated rather than witnessed: a count exists exactly where what it counts is decided (counts_iff_decided), and asked of every world some laws are exactly omniscience principles (chapter 8.6); no world is exhibited failing it
-- C, the widening comparison: used by 1 central statement(s) (Becoming.Web.paths_comparison_widens), no witnesses meeting and failing it listed; an order premise: no theorem exhibits a comparison meeting and one failing it
+Logical premise decided: meets `Decided.exists_below`; unrefuted `not_not_decided`; calibration `HistoryIdeals.cut_decided_iff_lpo`.
+
+No finding.
 
 ## K4. Representation: met
 
