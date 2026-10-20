@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-20T07:12:14+00:00",
+  "reviewed_at_utc": "2026-10-20T10:21:18+00:00",
   "statement": {
-    "en": "From a local law and a list of exchanges a World of the spine is built whose steps balance. For any two interleavings of the same own courses an index map for each relatum matches its standings step by step, so what is read through its own steps is the same for every interleaving.",
-    "zh": "由局部律与交换之列构造出脊柱的一个世界，其各步平衡。对同一自身进程的任意两个交错，每个关系项的索引映射逐步相配其所立，所以经其自身各步读出者对每个交错都相同。"
+    "en": "From a local law and a list of exchanges a World of the spine is built whose steps balance. Two interleavings of the same courses, every exchange touching a relatum, are carried one to the other by one renumbering of the steps, under which what is read at a step on what its exchange touches agrees.",
+    "zh": "由局部律与交换之列构造出脊柱的一个世界，其各步平衡。同一进程的两个交错，每个交换都触及某关系项时，由所有步的一个重编号彼此相带，经此在一步上就其交换所触及者读出的一切都相同。"
   },
   "laws": [
     {
@@ -28,8 +28,8 @@
       ]
     },
     {
-      "en": "The world of a local law on whole-number standings, the relata listed, a list and a start: at step t each relatum stands where the first t exchanges leave it, is active where the exchange at t touches it, and the move at t has present the listed relata it touches, each taking its fall and giving its rise; nothing is required, needed or drawn.",
-      "zh": "整数所立上的局部律、所列关系项、交换之列与起点的世界：在第 t 步每个关系项立于前 t 个交换使它所在之处，被第 t 个交换触及处为活跃，第 t 步之动在场者为它触及的所列关系项，各取其降、给其升；无所求、所需或所汲。",
+      "en": "The world of a local law on whole-number standings, the relata listed, a list and a start: at step t each relatum stands where the first t exchanges leave it, is active where the exchange at t touches it (decided: touchAt), and the move at t has present the listed relata it touches, each taking its fall and giving its rise; nothing is required, needed or drawn.",
+      "zh": "整数所立上的局部律、所列关系项、交换之列与起点的世界：在第 t 步每个关系项立于前 t 个交换使它所在之处，被第 t 个交换触及处为活跃（已判定：touchAt），第 t 步之动在场者为它触及的所列关系项，各取其降、给其升；无所求、所需或所汲。",
       "declarations": [
         "Becoming.Interleavings.LocalLaw.touchedIn",
         "Becoming.Interleavings.LocalLaw.fall",
@@ -42,7 +42,12 @@
         "Becoming.Interleavings.LocalLaw.touchedIn_pairwise",
         "Becoming.Interleavings.LocalLaw.total_zero_of",
         "Becoming.Interleavings.LocalLaw.total_single",
-        "Becoming.Interleavings.LocalLaw.total_absent"
+        "Becoming.Interleavings.LocalLaw.total_absent",
+        "Becoming.Interleavings.LocalLaw.touchAt",
+        "Becoming.Interleavings.LocalLaw.world_active_iff",
+        "Becoming.Interleavings.LocalLaw.touchAt_some",
+        "Becoming.Interleavings.LocalLaw.touchAt_none",
+        "Becoming.Interleavings.LocalLaw.touchAt_iff"
       ]
     },
     {
@@ -126,32 +131,131 @@
       "declarations": [
         "Becoming.Interleavings.LocalLaw.world_reads_alike"
       ]
+    },
+    {
+      "en": "Where every exchange of two interleavings of the same courses touches some relatum (Touching), with the relata listed, the lists have one length, and where one has an exchange at step t the other has the same exchange at exactly one step at which every relatum it touches has taken as many of its own exchanges: the k-th taking of an exchange in one is the k-th in the other at every relatum it touches. The renumbering sends t there (read off the first listed relatum the exchange touches; every relatum it touches gives the same step), and for each such relatum its index map sends t + 1 to the step after. It is undone by the renumbering the other way at every step, sends the steps below the length among themselves and fixes every step from the length on, so the two renumberings Reindex the steps (Becoming.Reordering).",
+      "zh": "同一进程的两个交错，每个交换都触及某个关系项（Touching）、关系项列出时，两列等长；一列在第 t 步有一个交换处，另一列恰在一步有同一交换，在那一步它所触及的每个关系项已取同样多的自身交换：一个交换在一列中的第 k 次取用，在它所触及的每个关系项处就是在另一列中的第 k 次。重编号把 t 送到那里（按该交换所触及的第一个所列关系项读出；它所触及的每个关系项给出同一步），对每个这样的关系项，其索引映射把 t + 1 送到那之后一步。反向的重编号在每一步都把它还原，它把长度以下的步彼此对应，从长度起每一步不动，所以两个重编号对诸步构成 Reindexes（Becoming.Reordering）。",
+      "declarations": [
+        "Becoming.Interleavings.LocalLaw.exchangeAt_mem",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_append_lt",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_append",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_beyond",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_none",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_some",
+        "Becoming.Interleavings.LocalLaw.length_insert",
+        "Becoming.Interleavings.LocalLaw.ownCount_append_le",
+        "Becoming.Interleavings.LocalLaw.ownCount_append",
+        "Becoming.Interleavings.LocalLaw.ownCount_untouched",
+        "Becoming.Interleavings.LocalLaw.ownCount_mono",
+        "Becoming.Interleavings.LocalLaw.step_of_ownCount",
+        "Becoming.Interleavings.LocalLaw.firstAt_after",
+        "Becoming.Interleavings.LocalLaw.occurrence_matches",
+        "Becoming.Interleavings.LocalLaw.Touching",
+        "Becoming.Interleavings.LocalLaw.Touching.tail",
+        "Becoming.Interleavings.LocalLaw.Touching.remove",
+        "Becoming.Interleavings.LocalLaw.length_of_courses",
+        "Becoming.Interleavings.LocalLaw.touches_of_touchedIn",
+        "Becoming.Interleavings.LocalLaw.renumber",
+        "Becoming.Interleavings.LocalLaw.renumber_none",
+        "Becoming.Interleavings.LocalLaw.renumber_lead",
+        "Becoming.Interleavings.LocalLaw.renumber_spec",
+        "Becoming.Interleavings.LocalLaw.renumber_exchange",
+        "Becoming.Interleavings.LocalLaw.renumber_count",
+        "Becoming.Interleavings.LocalLaw.renumber_index",
+        "Becoming.Interleavings.LocalLaw.renumber_renumber",
+        "Becoming.Interleavings.LocalLaw.renumber_beyond",
+        "Becoming.Interleavings.LocalLaw.renumber_lt",
+        "Becoming.Interleavings.LocalLaw.renumber_reindexes"
+      ]
+    },
+    {
+      "en": "Through the renumbering the worlds agree: a relatum is active at step t of one exactly where it is active at the renumbered step of the other, for every relatum at every step; the step takes the same exchange (the same relata present, each taking and giving the same: Flow.SameExchange); and every relatum the exchange touches stands alike before it and after it. So every relation read at one step on the relata its exchange touches, however many, holds at step t of one world exactly where at the renumbered step of the other; this holds for any states, not only whole-number standings.",
+      "zh": "经由重编号，两个世界相同：对每个关系项在每一步，它在一个世界第 t 步活跃，恰当它在另一世界重编号所给之步活跃；该步取同一交换（在场的关系项相同，各取各给相同：Flow.SameExchange）；该交换所触及的每个关系项在其前后所立都相同。所以在一步就其交换所触及诸关系项读出的每个关系，不论读几个，在一个世界第 t 步成立恰当在另一世界重编号所给之步成立；这对任何状态成立，不只是整数所立。",
+      "declarations": [
+        "Becoming.Interleavings.LocalLaw.touchAt_renumber",
+        "Becoming.Interleavings.LocalLaw.runUpTo_untouched",
+        "Becoming.Interleavings.LocalLaw.runUpTo_renumber",
+        "Becoming.Interleavings.LocalLaw.reads_renumber",
+        "Becoming.Interleavings.LocalLaw.change_renumber",
+        "Becoming.Interleavings.LocalLaw.world_renumber_active",
+        "Becoming.Interleavings.LocalLaw.world_renumber_level",
+        "Becoming.Interleavings.LocalLaw.world_renumber_reads",
+        "Becoming.Interleavings.LocalLaw.fall_of_change",
+        "Becoming.Interleavings.LocalLaw.rise_of_change",
+        "Becoming.Interleavings.LocalLaw.world_renumber_flow"
+      ]
+    },
+    {
+      "en": "The correspondence with Becoming.Reordering: the renumbering keeps the order of exchanges sharing a relatum (Keeps, for the footprint of the touches, in which two exchanges are joined exactly where they touch a relatum in common), and that footprint moves with it. It contains the exchanges exactly where no relatum is touched at a step after one not touching it, the world's activity being taking part in the exchange across a step. The footprint around each step, what the exchange at it or at the next touches, contains them, activity included, but joins every two consecutive exchanges, so the only renumbering of the steps keeping its order fixes every step: Reordering's commutations relate the world of an interleaving to no other interleaving's world, and the relation between them is the renumbering. On the worlds, world_renumber_correspondence gathers the premises of Reordering's converse the renumbering meets: the reindexing (fixing every step from the length on), the kept order, the same exchange at the renumbered step and the moved footprint.",
+      "zh": "与 Becoming.Reordering 的对应：重编号保持共享关系项之交换的次序（对触及的足迹为 Keeps；在其中两个交换恰在共同触及某关系项时相连），且该足迹随重编号移动。它恰在没有关系项在一个不触及它的步之后被触及时包含诸交换，因为世界的活跃是参与跨该步的交换。每步周围的足迹（该步或下一步的交换所触及者）包含它们，活跃也在内，但连起每两个相邻的交换，所以保持其次序的步之重编号只有使每一步不动者：Reordering 的交换不把一个交错的世界关联到任何别的交错的世界，二者之间的关系是这个重编号。在世界上，world_renumber_correspondence 汇集重编号所满足的 Reordering 之 converse 的前提：重编（从长度起每一步不动）、所保持的次序、重编号之步取同一交换、随之移动的足迹。",
+      "declarations": [
+        "Becoming.Interleavings.LocalLaw.footprinted",
+        "Becoming.Interleavings.LocalLaw.touchAround",
+        "Becoming.Interleavings.LocalLaw.bool_or_false_left",
+        "Becoming.Interleavings.LocalLaw.bool_or_false_right",
+        "Becoming.Interleavings.LocalLaw.bool_or_of_left",
+        "Becoming.Interleavings.LocalLaw.bool_or_of_right",
+        "Becoming.Interleavings.LocalLaw.untouched_unmoved",
+        "Becoming.Interleavings.LocalLaw.touch_contains_iff",
+        "Becoming.Interleavings.LocalLaw.around_contains",
+        "Becoming.Interleavings.LocalLaw.around_joined",
+        "Becoming.Interleavings.LocalLaw.keeps_consecutive",
+        "Becoming.Interleavings.LocalLaw.around_keeps_identity",
+        "Becoming.Interleavings.LocalLaw.renumber_keeps",
+        "Becoming.Interleavings.LocalLaw.world_renumber_correspondence"
+      ]
     }
   ],
   "hypotheses": [
     {
       "en": "No axiom. A local law on whole-number standings for the world (the laws of own steps hold for any states); the relata listed, once where balance is stated; relata told apart for the move. The courses are finite lists.",
       "zh": "不加公理。世界取整数所立上的局部律（关于自身各步的规律对任何状态成立）；关系项列出，陈述平衡处恰列一次；为动区分关系项。进程是有限列。"
+    },
+    {
+      "en": "For the renumbering: every exchange of both lists touches some relatum (Touching), and the relata are listed. Without the first an exchange touching no relatum has no match (Pair.idle_unmatched).",
+      "zh": "重编号：两列的每个交换都触及某个关系项（Touching），关系项列出。没有前者，不触及任何关系项的交换无可相配（Pair.idle_unmatched）。"
     }
   ],
   "does_not_show": [
     {
-      "en": "One renumbering of all the steps carrying one interleaving's world to the other's: the index maps are one for each relatum, and a relation reading two relata at one step of the shared index (which stand together at a step) is not shown the same for every interleaving.",
-      "zh": "把一个交错之世界带到另一个之世界的、所有步的单一重编号：索引映射是每个关系项各一个，读共同指标同一步上两个关系项的关系（哪些在同一步共同所立）未证对每个交错相同。",
+      "en": "A relation read at one step on relata the step's exchange does not touch: what stands together there is the chosen interleaving's, and no renumbering carries it (Pair.apart_differs).",
+      "zh": "在一步就该步交换不触及的关系项读出的关系：那里谁与谁共同所立属于所选的交错，没有重编号能带过去（Pair.apart_differs）。",
       "kind": "scope"
     },
     {
-      "en": "The correspondence with the footprint of Becoming.Reordering (Footprinted, Reindexes, converse): there a relatum a step does not touch is unmoved across it, activity included, while this world marks a relatum active exactly at the steps whose exchange touches it, so the footprint of the exchanges does not contain them; and Reindexes needs each exchange's occurrence matched in the two lists, which needs the maps of the relata an exchange touches to agree.",
-      "zh": "与 Becoming.Reordering 之足迹（Footprinted、Reindexes、converse）的对应：那里一步不触及的关系项跨此步不动，活跃也包括在内，而此世界恰在其交换触及关系项之步标其为活跃，所以交换的足迹不包含它们；且 Reindexes 需要每个交换在两列中的出现相配，这需要一个交换所触及诸关系项的映射彼此一致。",
+      "en": "A reading of activity as a relatum's state between steps, under which Reordering's commutations could relate two interleavings' worlds; here activity is taking part in the exchange across a step, so the touch footprint contains the exchanges only in the case touch_contains_iff states and the footprint around each step orders every two consecutive steps.",
+      "zh": "把活跃读作关系项在两步之间的状态的读法，在其下 Reordering 的交换可以关联两个交错的世界；此处活跃是参与跨一步的交换，所以触及的足迹只在 touch_contains_iff 所述情形包含诸交换，而每步周围的足迹给每两个相邻的步定序。",
       "kind": "correspondence"
     },
     {
-      "en": "Courses without end; footprints that read relata they do not change.",
-      "zh": "无尽的进程；读而不改关系项的足迹。",
+      "en": "Courses without end; footprints that read relata they do not change; exchanges touching no relatum.",
+      "zh": "无尽的进程；读而不改关系项的足迹；不触及任何关系项的交换。",
       "kind": "scope"
     }
   ],
-  "counterexamples": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
+      "detail": {
+        "en": "Interleavings.Pair.apart_differs: [0, 1] and [1, 0] interleave the same courses of two relata no exchange connects, and the renumbering exchanges their steps; at step 1 of the first world one relatum stands below the other, and at no step of the second does. A relation read at one step on relata the step's exchange does not touch is not the same for every interleaving.",
+        "zh": "Interleavings.Pair.apart_differs：[0, 1] 与 [1, 0] 交错两个无交换相连之关系项的同一进程，重编号对调其两步；在第一个世界第 1 步一个关系项低于另一个，在第二个世界没有一步如此。在一步就该步交换不触及的关系项读出的关系并非对每个交错都相同。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
+      "detail": {
+        "en": "Interleavings.Pair.touch_not_contains: in the world of [0, 1] the footprint of the touches does not contain the exchanges: the relatum true is untouched at step 0 and touched at step 1, so its activity changes across a step not touching it.",
+        "zh": "Interleavings.Pair.touch_not_contains：在 [0, 1] 的世界中，触及的足迹不包含诸交换：关系项 true 在第 0 步不被触及、在第 1 步被触及，所以其活跃跨一个不触及它的步而改变。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
+      "detail": {
+        "en": "Interleavings.Pair.idle_unmatched: [2] and [] give every relatum the same own course, while [2] has at step 0 an exchange touching no relatum that [] has at no step: without Touching there is no renumbering of the steps matching the exchanges.",
+        "zh": "Interleavings.Pair.idle_unmatched：[2] 与 [] 给每个关系项同一自身进程，而 [2] 在第 0 步有一个不触及任何关系项的交换，[] 在任何一步都没有：没有 Touching 就没有使交换相配的步之重编号。"
+      }
+    }
+  ],
   "standard_boundaries": [
     "no-ethical-premise",
     "no-evaluation",
@@ -161,16 +265,16 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T235844.485705Z): the cited declarations of Becoming.Interleavings have empty axiom reports; the checker verifies core purity. Author self-review in study section 224; not independently reviewed.",
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T235844.485705Z）：所引 Becoming.Interleavings 的声明公理报告为空；检查器并核对核心纯净。作者自审见研究第 224 节；未经独立审查。"
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T101723.692082Z): the cited declarations of Becoming.Interleavings have empty axiom reports; the checker verifies core purity. Author self-review in study sections 224, 233 and 252; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T101723.692082Z）：所引 Becoming.Interleavings 的声明公理报告为空；检查器并核对核心纯净。作者自审见研究第 224、233 与 252 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "One renumbering of the steps matching each exchange's occurrence across the relata it touches; then the correspondence with Becoming.Reordering through a footprint containing the world's activity; courses without end; an independent review.",
-    "zh": "与每个交换所触及诸关系项相配其出现的单一步重编号；然后经包含世界之活跃的足迹与 Becoming.Reordering 对应；无尽的进程；独立审查。"
+    "en": "Courses without end; activity read as a relatum's state between steps, under which Reordering's commutations could relate interleavings' worlds; an independent review.",
+    "zh": "无尽的进程；把活跃读作关系项在两步之间的状态，在其下 Reordering 的交换可以关联诸交错的世界；独立审查。"
   },
   "correspondence": {
-    "en": "The twentieth review's G10 asked that Interleavings, which reads the step index off the relata's own courses, construct the World, so that one shared index is a reading on the premise card. Reading (the AI's): the spine's World, with its one index, is what an interleaving of the relata's own courses builds; what the interleaving adds beyond the courses moves only where exchanges share no relatum, and there each relatum stands in one world where it stands a step earlier or later in the other. With the index map (R38), what the world says of each relatum, read through its own steps, is the same for every interleaving: the premise card's one shared index (§0, block A) commits, for what is read per relatum, to no more than a choice among interleavings, which moves where on the index a standing falls and not which standings a relatum passes through or in what order. For the necessity target (the deductive necessity of the whole, item 1 of §8.1, and the representation criterion K4) this makes the shared index a reading wherever a law is read through each relatum's own steps; a law that reads several relata at one step of the index is still read on a chosen interleaving, which is what one renumbering of the steps would settle.",
-    "zh": "第二十次审查 G10 要求从关系项自身进程读出步指标的 Interleavings 构造世界，使唯一的共同指标在前提卡上成为一个读法。读法（AI 的）：带唯一指标的脊柱世界，是关系项自身进程的一个交错所构造者；交错在进程之外所加者只在交换不共享关系项处移动，且在那里每个关系项在一个世界中立于它在另一世界早一步或晚一步所立处。有了索引映射（R38），世界关于每个关系项所说者，经其自身各步读出，对每个交错都相同：前提卡上唯一的共同指标（§0，A 区）对按关系项读出者而言，只承诺在诸交错中作一选择，这选择移动的是所立落在指标的何处，而非关系项经过哪些所立或按何次序。对必然性目标（整体的演绎必然性，§8.1 第 1 项，及表示判据 K4），这使共同指标在每条经各关系项自身各步读出的规律处成为一个读法；在指标同一步读几个关系项的规律仍在所选的交错上读出，这正是单一步重编号将解决者。"
+    "en": "The twentieth review's G10 asked that Interleavings, which reads the step index off the relata's own courses, construct the World, so that one shared index is a reading on the premise card. Reading (the AI's): the spine's World, with its one index, is what an interleaving of the relata's own courses builds; what the interleaving adds beyond the courses moves only where exchanges share no relatum, and there each relatum stands in one world where it stands a step earlier or later in the other. With the index map (R38), what the world says of each relatum, read through its own steps, is the same for every interleaving: the premise card's one shared index (§0, block A) commits, for what is read per relatum, to no more than a choice among interleavings, which moves where on the index a standing falls and not which standings a relatum passes through or in what order. For the necessity target (the deductive necessity of the whole, item 1 of §8.1, and the representation criterion K4) this makes the shared index a reading wherever a law is read through each relatum's own steps; With one renumbering of all the steps (R46), the same holds of every law read at one step on the relata that step's exchange touches, however many: the shared index is a reading for it as well. What remains a commitment of the representation is exactly which relata that no exchange at a step relates stand together there, and Pair.apart_differs shows that this is not carried by any renumbering: it is the choice of interleaving itself, not a gap in the proof. For the necessity target this narrows the index's part of item 1 of §8.1 and of K4 to laws reading, at one step, relata no exchange there relates; and since Reordering's commutations relate no two interleavings' worlds (activity being taking part in the exchange across a step), the renumbering, not a commutation, is the relation between them.",
+    "zh": "第二十次审查 G10 要求从关系项自身进程读出步指标的 Interleavings 构造世界，使唯一的共同指标在前提卡上成为一个读法。读法（AI 的）：带唯一指标的脊柱世界，是关系项自身进程的一个交错所构造者；交错在进程之外所加者只在交换不共享关系项处移动，且在那里每个关系项在一个世界中立于它在另一世界早一步或晚一步所立处。有了索引映射（R38），世界关于每个关系项所说者，经其自身各步读出，对每个交错都相同：前提卡上唯一的共同指标（§0，A 区）对按关系项读出者而言，只承诺在诸交错中作一选择，这选择移动的是所立落在指标的何处，而非关系项经过哪些所立或按何次序。对必然性目标（整体的演绎必然性，§8.1 第 1 项，及表示判据 K4），这使共同指标在每条经各关系项自身各步读出的规律处成为一个读法；有了所有步的一个重编号（R46），在一步就该步交换所触及诸关系项读出的每条规律，不论读几个，也是如此：共同指标对它也是一个读法。仍为表示之承诺者，恰是在一步上没有交换相关联的关系项谁与谁在那里共同所立，而 Pair.apart_differs 表明没有重编号能带过它：这就是交错的选择本身，不是证明的缺口。对必然性目标，这把 §8.1 第 1 项与 K4 中关于指标的部分收窄为在一步读该处无交换相关联之关系项的规律；又因 Reordering 的交换不关联任何两个交错的世界（活跃是参与跨一步的交换），二者之间的关系是这个重编号，而非交换。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
   "aliases": [
@@ -183,7 +287,13 @@
     "index map",
     "索引映射",
     "Becoming.Interleavings.LocalLaw.world_index",
-    "Becoming.Interleavings.LocalLaw.world_reads_alike"
+    "Becoming.Interleavings.LocalLaw.world_reads_alike",
+    "one renumbering of the steps",
+    "步的单一重编号",
+    "Becoming.Interleavings.LocalLaw.renumber_reindexes",
+    "Becoming.Interleavings.LocalLaw.world_renumber_reads",
+    "Becoming.Interleavings.LocalLaw.around_keeps_identity",
+    "Becoming.Interleavings.Pair.apart_differs"
   ],
   "dependencies": [
     {
@@ -231,6 +341,29 @@
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean"
       }
+    },
+    {
+      "id": "order-of-exchanges-is-the-invariant",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Reordering's Footprinted, Contains, Joined, Keeps, Reindexes and Flow.SameExchange: the renumbering is stated in its terms, and its footprints are read on the world an interleaving builds.",
+        "zh": "复用 Reordering 的 Footprinted、Contains、Joined、Keeps、Reindexes 与 Flow.SameExchange：重编号以其术语陈述，其足迹在交错所构造的世界上读出。"
+      },
+      "interface": {
+        "output": {
+          "en": "Footprints, the order of joined exchanges, renumberings of a stretch of steps.",
+          "zh": "足迹、相连交换的次序、一段步的重编号。"
+        },
+        "input": {
+          "en": "The renumbering as a Reindexes keeping the order of the touch footprint; which footprints contain the interleaving world's exchanges.",
+          "zh": "重编号作为保持触及足迹之次序的 Reindexes；哪些足迹包含交错之世界的交换。"
+        },
+        "conditions": {
+          "en": "Every exchange touches a relatum; the relata listed.",
+          "zh": "每个交换都触及某个关系项；关系项列出。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean"
+      }
     }
   ],
   "related": [],
@@ -238,7 +371,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
       "role": "proof",
-      "sha256": "3e22df3f721b7fde69bdec1c47c1ecbdefb3ad0e31c4db2c7cfb2fdb1b5074d9",
+      "sha256": "51958e3a8afa07e2a57253374e81095e5fb2761114b3715d86e55cab1d43d152",
       "declarations": [
         "Becoming.Interleavings.LocalLaw.exchangeAt",
         "Becoming.Interleavings.LocalLaw.runUpTo",
@@ -298,7 +431,76 @@
         "Becoming.Interleavings.LocalLaw.exchangeAt_own",
         "Becoming.Interleavings.LocalLaw.firstAt_succ_step",
         "Becoming.Interleavings.LocalLaw.index_matches",
-        "Becoming.Interleavings.LocalLaw.world_reads_alike"
+        "Becoming.Interleavings.LocalLaw.world_reads_alike",
+        "Becoming.Interleavings.LocalLaw.touchAt",
+        "Becoming.Interleavings.LocalLaw.world_active_iff",
+        "Becoming.Interleavings.LocalLaw.touchAt_some",
+        "Becoming.Interleavings.LocalLaw.touchAt_none",
+        "Becoming.Interleavings.LocalLaw.touchAt_iff",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_mem",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_append_lt",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_append",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_beyond",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_none",
+        "Becoming.Interleavings.LocalLaw.exchangeAt_some",
+        "Becoming.Interleavings.LocalLaw.length_insert",
+        "Becoming.Interleavings.LocalLaw.ownCount_append_le",
+        "Becoming.Interleavings.LocalLaw.ownCount_append",
+        "Becoming.Interleavings.LocalLaw.ownCount_untouched",
+        "Becoming.Interleavings.LocalLaw.ownCount_mono",
+        "Becoming.Interleavings.LocalLaw.step_of_ownCount",
+        "Becoming.Interleavings.LocalLaw.firstAt_after",
+        "Becoming.Interleavings.LocalLaw.occurrence_matches",
+        "Becoming.Interleavings.LocalLaw.Touching",
+        "Becoming.Interleavings.LocalLaw.Touching.tail",
+        "Becoming.Interleavings.LocalLaw.Touching.remove",
+        "Becoming.Interleavings.LocalLaw.length_of_courses",
+        "Becoming.Interleavings.LocalLaw.touches_of_touchedIn",
+        "Becoming.Interleavings.LocalLaw.renumber",
+        "Becoming.Interleavings.LocalLaw.renumber_none",
+        "Becoming.Interleavings.LocalLaw.renumber_lead",
+        "Becoming.Interleavings.LocalLaw.renumber_spec",
+        "Becoming.Interleavings.LocalLaw.renumber_exchange",
+        "Becoming.Interleavings.LocalLaw.renumber_count",
+        "Becoming.Interleavings.LocalLaw.renumber_index",
+        "Becoming.Interleavings.LocalLaw.renumber_renumber",
+        "Becoming.Interleavings.LocalLaw.renumber_beyond",
+        "Becoming.Interleavings.LocalLaw.renumber_lt",
+        "Becoming.Interleavings.LocalLaw.renumber_reindexes",
+        "Becoming.Interleavings.LocalLaw.touchAt_renumber",
+        "Becoming.Interleavings.LocalLaw.runUpTo_untouched",
+        "Becoming.Interleavings.LocalLaw.runUpTo_renumber",
+        "Becoming.Interleavings.LocalLaw.reads_renumber",
+        "Becoming.Interleavings.LocalLaw.change_renumber",
+        "Becoming.Interleavings.LocalLaw.world_renumber_active",
+        "Becoming.Interleavings.LocalLaw.world_renumber_level",
+        "Becoming.Interleavings.LocalLaw.world_renumber_reads",
+        "Becoming.Interleavings.LocalLaw.fall_of_change",
+        "Becoming.Interleavings.LocalLaw.rise_of_change",
+        "Becoming.Interleavings.LocalLaw.world_renumber_flow",
+        "Becoming.Interleavings.LocalLaw.footprinted",
+        "Becoming.Interleavings.LocalLaw.touchAround",
+        "Becoming.Interleavings.LocalLaw.bool_or_false_left",
+        "Becoming.Interleavings.LocalLaw.bool_or_false_right",
+        "Becoming.Interleavings.LocalLaw.bool_or_of_left",
+        "Becoming.Interleavings.LocalLaw.bool_or_of_right",
+        "Becoming.Interleavings.LocalLaw.untouched_unmoved",
+        "Becoming.Interleavings.LocalLaw.touch_contains_iff",
+        "Becoming.Interleavings.LocalLaw.around_contains",
+        "Becoming.Interleavings.LocalLaw.around_joined",
+        "Becoming.Interleavings.LocalLaw.keeps_consecutive",
+        "Becoming.Interleavings.LocalLaw.around_keeps_identity",
+        "Becoming.Interleavings.LocalLaw.renumber_keeps",
+        "Becoming.Interleavings.LocalLaw.world_renumber_correspondence",
+        "Becoming.Interleavings.Pair.touches",
+        "Becoming.Interleavings.Pair.act",
+        "Becoming.Interleavings.Pair.keeps",
+        "Becoming.Interleavings.Pair.reads",
+        "Becoming.Interleavings.Pair.law",
+        "Becoming.Interleavings.Pair.start",
+        "Becoming.Interleavings.Pair.apart_differs",
+        "Becoming.Interleavings.Pair.touch_not_contains",
+        "Becoming.Interleavings.Pair.idle_unmatched"
       ]
     },
     {
@@ -344,12 +546,32 @@
       "role": "receipt",
       "sha256": "a9e60aed76c9be0a6a3f06b9f7429e3757254408d256ee5bdcab402b92a82954",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T101723.692082Z/verification.json",
+      "role": "receipt",
+      "sha256": "b67e032b7f84614716ea36c481759f31a3999b2c4684fae52dfcb84c2ee8643e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean",
+      "role": "proof",
+      "sha256": "72adbc08546ed505f267db376a96975728150ed719f941491095075bfe688f93",
+      "declarations": [
+        "Becoming.Reindexes",
+        "Becoming.Footprinted",
+        "Becoming.Footprinted.Contains",
+        "Becoming.Footprinted.Joined",
+        "Becoming.Footprinted.Keeps",
+        "Becoming.Flow.SameExchange",
+        "Becoming.Web.Unmoved"
+      ]
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T070914.793352Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T101723.692082Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Interleavings",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -374,6 +596,10 @@
     {
       "en": "20 October 2026, R38 (the open part of R33's G10): three laws added (the standing at a step as the standing after own exchanges, so equal own counts stand alike across interleavings; the index map, its exactness and its matching of each relatum's exchanges; the readings through own steps the same for every interleaving), the general step-by-step relation thus proved directly rather than by composing adjacent swaps; the open part restated as one renumbering of the steps and the correspondence with Reordering's footprint, with its blocker; what the relation gives the necessity target and the premise card added to the correspondence. Proof binding (Interleavings.lean) rebound to core receipt 20261020T070914.793352Z. Study section 233.",
       "zh": "2026年10月20日，R38（R33 之 G10 的开放部分）：新增三条规律（某步所立即自身交换之后所立，故自身计数相等者在各交错间所立相同；索引映射、其精确性及其对每个关系项之交换的相配；经自身各步的读法对每个交错相同），一般的逐步关系由此直接证明，而非由相邻对调合成；开放部分改述为单一步重编号及与 Reordering 足迹的对应，附其阻碍；对应部分加入此关系给必然性目标与前提卡者。证明绑定（Interleavings.lean）改到核心回执 20261020T070914.793352Z。研究第 233 节。"
+    },
+    {
+      "en": "20 October 2026, R46 (the open part R38 left): three laws added (one renumbering of all the steps, matching each taking of an exchange at every relatum it touches, each such relatum's index map one step back, a Reindexes of the steps; activity, the exchange and the standings of what it touches agreeing through it, so every relation read at one step on those relata agrees; the correspondence with Reordering: the touch footprint's order kept, its containment exactly characterized, and the footprint around each step containing the exchanges but leaving only the identity renumbering), the premise Touching, three counterexamples, a dependency on order-of-exchanges-is-the-invariant; the world's activity restated as the decided touch (touchAt), equivalent to the earlier form (world_active_iff); the open parts replaced by what stays open; the correspondence's last sentence rewritten. Proof binding (Interleavings.lean) rebound to core receipt 20261020T101723.692082Z. Study section 252.",
+      "zh": "2026年10月20日，R46（R38 所留的开放部分）：新增三条规律（所有步的一个重编号，在交换所触及的每个关系项处相配其每次取用，对每个这样的关系项是其索引映射退后一步，对诸步构成 Reindexes；经由它活跃、交换与其所触及者的所立相同，故在一步就这些关系项读出的每个关系相同；与 Reordering 的对应：保持触及足迹的次序，其包含关系被确切刻画，每步周围的足迹包含诸交换却只留下恒等重编号），前提 Touching，三个反例，对 order-of-exchanges-is-the-invariant 的依赖；世界的活跃改述为已判定的触及（touchAt），与先前形式等价（world_active_iff）；开放部分换为仍开放者；对应部分末句改写。证明绑定（Interleavings.lean）改到核心回执 20261020T101723.692082Z。研究第 252 节。"
     }
   ],
   "text_versions": [

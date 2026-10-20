@@ -7683,147 +7683,216 @@ Definitions and types:
 <a id="module-4429a1ae5e70"></a>
 
 <details>
-<summary>Interleavings.lean — 128 explicit declarations</summary>
+<summary>Interleavings.lean — 197 explicit declarations</summary>
 
 [Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean`
 
-Imports: `Becoming.World`
+Imports: `Becoming.World`, `Becoming.Reordering`
 
 | Theorem or lemma | Line |
 |---|---:|
-| [Becoming.Interleavings.cons_ne_nil](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L89) | 89 |
-| [Becoming.Interleavings.cons_heads](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L92) | 92 |
-| [Becoming.Interleavings.cons_tails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L95) | 95 |
-| [Becoming.Interleavings.bool_absurd](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L98) | 98 |
-| [Becoming.Interleavings.split_first](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L102) | 102 |
-| [Becoming.Interleavings.length_tail_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L120) | 120 |
-| [Becoming.Interleavings.LocalLaw.ownCourse_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L181) | 181 |
-| [Becoming.Interleavings.LocalLaw.ownCourse_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L188) | 188 |
-| [Becoming.Interleavings.LocalLaw.ownCourse_append](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L195) | 195 |
-| [Becoming.Interleavings.LocalLaw.ownCourse_untouched](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L207) | 207 |
-| [Becoming.Interleavings.LocalLaw.act_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L217) | 217 |
-| [Becoming.Interleavings.LocalLaw.run_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L224) | 224 |
-| [Becoming.Interleavings.LocalLaw.Apart.symm](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L229) | 229 |
-| [Becoming.Interleavings.LocalLaw.act_comm](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L236) | 236 |
-| [Becoming.Interleavings.LocalLaw.run_move](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L256) | 256 |
-| [Becoming.Interleavings.LocalLaw.run_idle](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L265) | 265 |
-| [Becoming.Interleavings.LocalLaw.shares_of_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L282) | 282 |
-| [Becoming.Interleavings.LocalLaw.exists_of_shares](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L294) | 294 |
-| [Becoming.Interleavings.LocalLaw.apart_of_shares](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L310) | 310 |
-| [Becoming.Interleavings.LocalLaw.untouched_of_shares](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L317) | 317 |
-| [Becoming.Interleavings.LocalLaw.split_heads](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L326) | 326 |
-| [Becoming.Interleavings.LocalLaw.run_of_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L361) | 361 |
-| [Becoming.Interleavings.LocalLaw.trace_run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L392) | 392 |
-| [Becoming.Interleavings.LocalLaw.run_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L400) | 400 |
-| [Becoming.Interleavings.LocalLaw.trace_of_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L407) | 407 |
-| [Becoming.Interleavings.LocalLaw.trace_of_interleavings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L414) | 414 |
-| [Becoming.Interleavings.LocalLaw.swap_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L422) | 422 |
-| [Becoming.Interleavings.LocalLaw.trace_swap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L435) | 435 |
-| [Becoming.Interleavings.LocalLaw.eq_of_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L442) | 442 |
-| [Becoming.Interleavings.LocalLaw.unique_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L470) | 470 |
-| [Becoming.Interleavings.LocalLaw.traced_unique_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L490) | 490 |
-| [Becoming.Interleavings.LocalLaw.heads_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L556) | 556 |
-| [Becoming.Interleavings.LocalLaw.heads_cons](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L560) | 560 |
-| [Becoming.Interleavings.LocalLaw.ready_heads](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L563) | 563 |
-| [Becoming.Interleavings.LocalLaw.ready_of_heads](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L578) | 578 |
-| [Becoming.Interleavings.LocalLaw.pop_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L590) | 590 |
-| [Becoming.Interleavings.LocalLaw.pop_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L598) | 598 |
-| [Becoming.Interleavings.LocalLaw.done_nil](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L606) | 606 |
-| [Becoming.Interleavings.LocalLaw.not_done](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L620) | 620 |
-| [Becoming.Interleavings.LocalLaw.pick_cons](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L632) | 632 |
-| [Becoming.Interleavings.LocalLaw.pick_nil_head](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L639) | 639 |
-| [Becoming.Interleavings.LocalLaw.pick_cons_head](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L643) | 643 |
-| [Becoming.Interleavings.LocalLaw.pick_spec](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L650) | 650 |
-| [Becoming.Interleavings.LocalLaw.pick_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L679) | 679 |
-| [Becoming.Interleavings.LocalLaw.schedule_zero](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L703) | 703 |
-| [Becoming.Interleavings.LocalLaw.schedule_succ](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L708) | 708 |
-| [Becoming.Interleavings.LocalLaw.schedule_interleaves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L716) | 716 |
-| [Becoming.Interleavings.LocalLaw.pop_interleaves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L774) | 774 |
-| [Becoming.Interleavings.LocalLaw.total_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L791) | 791 |
-| [Becoming.Interleavings.LocalLaw.total_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L797) | 797 |
-| [Becoming.Interleavings.LocalLaw.total_pos](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L812) | 812 |
-| [Becoming.Interleavings.LocalLaw.total_pop](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L823) | 823 |
-| [Becoming.Interleavings.LocalLaw.schedule_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L834) | 834 |
-| [Becoming.Interleavings.LocalLaw.schedule_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L896) | 896 |
-| [Becoming.Interleavings.LocalLaw.traced_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L903) | 903 |
-| [Becoming.Interleavings.LocalLaw.standings_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L922) | 922 |
-| [Becoming.Interleavings.LocalLaw.standings_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L929) | 929 |
-| [Becoming.Interleavings.LocalLaw.standings_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L938) | 938 |
-| [Becoming.Interleavings.LocalLaw.standings_move](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L952) | 952 |
-| [Becoming.Interleavings.LocalLaw.standings_idle](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L981) | 981 |
-| [Becoming.Interleavings.LocalLaw.standings_of_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L996) | 996 |
-| [Becoming.Interleavings.LocalLaw.standings_of_interleavings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1032) | 1032 |
-| [Becoming.Interleavings.LocalLaw.runUpTo_succ](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1053) | 1053 |
-| [Becoming.Interleavings.LocalLaw.runUpTo_whole](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1063) | 1063 |
-| [Becoming.Interleavings.LocalLaw.runUpTo_append_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1070) | 1070 |
-| [Becoming.Interleavings.LocalLaw.runUpTo_append](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1079) | 1079 |
-| [Becoming.Interleavings.LocalLaw.runUpTo_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1086) | 1086 |
-| [Becoming.Interleavings.LocalLaw.ownCount_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1124) | 1124 |
-| [Becoming.Interleavings.LocalLaw.ownCount_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1131) | 1131 |
-| [Becoming.Interleavings.LocalLaw.ownCount_zero](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1138) | 1138 |
-| [Becoming.Interleavings.LocalLaw.afterOwn_zero](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1142) | 1142 |
-| [Becoming.Interleavings.LocalLaw.runUpTo_own](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1148) | 1148 |
-| [Becoming.Interleavings.LocalLaw.standingAfter_of_interleavings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1169) | 1169 |
-| [Becoming.Interleavings.LocalLaw.runUpTo_of_own](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1177) | 1177 |
-| [Becoming.Interleavings.LocalLaw.ownCount_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1186) | 1186 |
-| [Becoming.Interleavings.LocalLaw.firstAt_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1208) | 1208 |
-| [Becoming.Interleavings.LocalLaw.firstAt_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1215) | 1215 |
-| [Becoming.Interleavings.LocalLaw.ownCount_firstAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1223) | 1223 |
-| [Becoming.Interleavings.LocalLaw.firstAt_least](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1238) | 1238 |
-| [Becoming.Interleavings.LocalLaw.length_of_interleavings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1261) | 1261 |
-| [Becoming.Interleavings.LocalLaw.ownCount_index](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1268) | 1268 |
-| [Becoming.Interleavings.LocalLaw.runUpTo_index](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1276) | 1276 |
-| [Becoming.Interleavings.LocalLaw.exchangeAt_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1282) | 1282 |
-| [Becoming.Interleavings.LocalLaw.exchangeAt_own](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1289) | 1289 |
-| [Becoming.Interleavings.LocalLaw.firstAt_succ_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1312) | 1312 |
-| [Becoming.Interleavings.LocalLaw.index_matches](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1335) | 1335 |
-| [Becoming.Interleavings.LocalLaw.world_level](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1386) | 1386 |
-| [Becoming.Interleavings.LocalLaw.total_zero_of](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1391) | 1391 |
-| [Becoming.Interleavings.LocalLaw.total_single](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1399) | 1399 |
-| [Becoming.Interleavings.LocalLaw.total_absent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1413) | 1413 |
-| [Becoming.Interleavings.LocalLaw.touchedIn_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1421) | 1421 |
-| [Becoming.Interleavings.LocalLaw.touchedIn_not_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1438) | 1438 |
-| [Becoming.Interleavings.LocalLaw.touchedIn_mem_of](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1456) | 1456 |
-| [Becoming.Interleavings.LocalLaw.touchedIn_pairwise](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1472) | 1472 |
-| [Becoming.Interleavings.LocalLaw.world_balances](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1485) | 1485 |
-| [Becoming.Interleavings.LocalLaw.world_final](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1529) | 1529 |
-| [Becoming.Interleavings.LocalLaw.world_swap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1539) | 1539 |
-| [Becoming.Interleavings.LocalLaw.world_swap_between](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1563) | 1563 |
-| [Becoming.Interleavings.LocalLaw.world_own](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1618) | 1618 |
-| [Becoming.Interleavings.LocalLaw.world_index](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1625) | 1625 |
-| [Becoming.Interleavings.LocalLaw.world_of_own](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1631) | 1631 |
-| [Becoming.Interleavings.LocalLaw.world_reads_alike](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1640) | 1640 |
+| [Becoming.Interleavings.cons_ne_nil](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L119) | 119 |
+| [Becoming.Interleavings.cons_heads](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L122) | 122 |
+| [Becoming.Interleavings.cons_tails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L125) | 125 |
+| [Becoming.Interleavings.bool_absurd](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L128) | 128 |
+| [Becoming.Interleavings.split_first](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L132) | 132 |
+| [Becoming.Interleavings.length_tail_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L150) | 150 |
+| [Becoming.Interleavings.LocalLaw.ownCourse_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L211) | 211 |
+| [Becoming.Interleavings.LocalLaw.ownCourse_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L218) | 218 |
+| [Becoming.Interleavings.LocalLaw.ownCourse_append](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L225) | 225 |
+| [Becoming.Interleavings.LocalLaw.ownCourse_untouched](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L237) | 237 |
+| [Becoming.Interleavings.LocalLaw.act_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L247) | 247 |
+| [Becoming.Interleavings.LocalLaw.run_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L254) | 254 |
+| [Becoming.Interleavings.LocalLaw.Apart.symm](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L259) | 259 |
+| [Becoming.Interleavings.LocalLaw.act_comm](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L266) | 266 |
+| [Becoming.Interleavings.LocalLaw.run_move](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L286) | 286 |
+| [Becoming.Interleavings.LocalLaw.run_idle](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L295) | 295 |
+| [Becoming.Interleavings.LocalLaw.shares_of_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L312) | 312 |
+| [Becoming.Interleavings.LocalLaw.exists_of_shares](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L324) | 324 |
+| [Becoming.Interleavings.LocalLaw.apart_of_shares](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L340) | 340 |
+| [Becoming.Interleavings.LocalLaw.untouched_of_shares](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L347) | 347 |
+| [Becoming.Interleavings.LocalLaw.split_heads](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L356) | 356 |
+| [Becoming.Interleavings.LocalLaw.run_of_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L391) | 391 |
+| [Becoming.Interleavings.LocalLaw.trace_run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L422) | 422 |
+| [Becoming.Interleavings.LocalLaw.run_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L430) | 430 |
+| [Becoming.Interleavings.LocalLaw.trace_of_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L437) | 437 |
+| [Becoming.Interleavings.LocalLaw.trace_of_interleavings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L444) | 444 |
+| [Becoming.Interleavings.LocalLaw.swap_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L452) | 452 |
+| [Becoming.Interleavings.LocalLaw.trace_swap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L465) | 465 |
+| [Becoming.Interleavings.LocalLaw.eq_of_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L472) | 472 |
+| [Becoming.Interleavings.LocalLaw.unique_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L500) | 500 |
+| [Becoming.Interleavings.LocalLaw.traced_unique_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L520) | 520 |
+| [Becoming.Interleavings.LocalLaw.heads_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L586) | 586 |
+| [Becoming.Interleavings.LocalLaw.heads_cons](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L590) | 590 |
+| [Becoming.Interleavings.LocalLaw.ready_heads](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L593) | 593 |
+| [Becoming.Interleavings.LocalLaw.ready_of_heads](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L608) | 608 |
+| [Becoming.Interleavings.LocalLaw.pop_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L620) | 620 |
+| [Becoming.Interleavings.LocalLaw.pop_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L628) | 628 |
+| [Becoming.Interleavings.LocalLaw.done_nil](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L636) | 636 |
+| [Becoming.Interleavings.LocalLaw.not_done](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L650) | 650 |
+| [Becoming.Interleavings.LocalLaw.pick_cons](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L662) | 662 |
+| [Becoming.Interleavings.LocalLaw.pick_nil_head](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L669) | 669 |
+| [Becoming.Interleavings.LocalLaw.pick_cons_head](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L673) | 673 |
+| [Becoming.Interleavings.LocalLaw.pick_spec](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L680) | 680 |
+| [Becoming.Interleavings.LocalLaw.pick_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L709) | 709 |
+| [Becoming.Interleavings.LocalLaw.schedule_zero](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L733) | 733 |
+| [Becoming.Interleavings.LocalLaw.schedule_succ](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L738) | 738 |
+| [Becoming.Interleavings.LocalLaw.schedule_interleaves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L746) | 746 |
+| [Becoming.Interleavings.LocalLaw.pop_interleaves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L804) | 804 |
+| [Becoming.Interleavings.LocalLaw.total_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L821) | 821 |
+| [Becoming.Interleavings.LocalLaw.total_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L827) | 827 |
+| [Becoming.Interleavings.LocalLaw.total_pos](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L842) | 842 |
+| [Becoming.Interleavings.LocalLaw.total_pop](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L853) | 853 |
+| [Becoming.Interleavings.LocalLaw.schedule_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L864) | 864 |
+| [Becoming.Interleavings.LocalLaw.schedule_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L926) | 926 |
+| [Becoming.Interleavings.LocalLaw.traced_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L933) | 933 |
+| [Becoming.Interleavings.LocalLaw.standings_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L952) | 952 |
+| [Becoming.Interleavings.LocalLaw.standings_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L959) | 959 |
+| [Becoming.Interleavings.LocalLaw.standings_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L968) | 968 |
+| [Becoming.Interleavings.LocalLaw.standings_move](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L982) | 982 |
+| [Becoming.Interleavings.LocalLaw.standings_idle](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1011) | 1011 |
+| [Becoming.Interleavings.LocalLaw.standings_of_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1026) | 1026 |
+| [Becoming.Interleavings.LocalLaw.standings_of_interleavings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1062) | 1062 |
+| [Becoming.Interleavings.LocalLaw.runUpTo_succ](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1083) | 1083 |
+| [Becoming.Interleavings.LocalLaw.runUpTo_whole](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1093) | 1093 |
+| [Becoming.Interleavings.LocalLaw.runUpTo_append_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1100) | 1100 |
+| [Becoming.Interleavings.LocalLaw.runUpTo_append](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1109) | 1109 |
+| [Becoming.Interleavings.LocalLaw.runUpTo_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1116) | 1116 |
+| [Becoming.Interleavings.LocalLaw.ownCount_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1154) | 1154 |
+| [Becoming.Interleavings.LocalLaw.ownCount_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1161) | 1161 |
+| [Becoming.Interleavings.LocalLaw.ownCount_zero](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1168) | 1168 |
+| [Becoming.Interleavings.LocalLaw.afterOwn_zero](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1172) | 1172 |
+| [Becoming.Interleavings.LocalLaw.runUpTo_own](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1178) | 1178 |
+| [Becoming.Interleavings.LocalLaw.standingAfter_of_interleavings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1199) | 1199 |
+| [Becoming.Interleavings.LocalLaw.runUpTo_of_own](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1207) | 1207 |
+| [Becoming.Interleavings.LocalLaw.ownCount_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1216) | 1216 |
+| [Becoming.Interleavings.LocalLaw.firstAt_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1238) | 1238 |
+| [Becoming.Interleavings.LocalLaw.firstAt_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1245) | 1245 |
+| [Becoming.Interleavings.LocalLaw.ownCount_firstAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1253) | 1253 |
+| [Becoming.Interleavings.LocalLaw.firstAt_least](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1268) | 1268 |
+| [Becoming.Interleavings.LocalLaw.length_of_interleavings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1291) | 1291 |
+| [Becoming.Interleavings.LocalLaw.ownCount_index](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1298) | 1298 |
+| [Becoming.Interleavings.LocalLaw.runUpTo_index](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1306) | 1306 |
+| [Becoming.Interleavings.LocalLaw.exchangeAt_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1312) | 1312 |
+| [Becoming.Interleavings.LocalLaw.exchangeAt_own](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1319) | 1319 |
+| [Becoming.Interleavings.LocalLaw.firstAt_succ_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1342) | 1342 |
+| [Becoming.Interleavings.LocalLaw.index_matches](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1365) | 1365 |
+| [Becoming.Interleavings.LocalLaw.world_level](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1425) | 1425 |
+| [Becoming.Interleavings.LocalLaw.total_zero_of](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1430) | 1430 |
+| [Becoming.Interleavings.LocalLaw.total_single](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1438) | 1438 |
+| [Becoming.Interleavings.LocalLaw.total_absent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1452) | 1452 |
+| [Becoming.Interleavings.LocalLaw.touchedIn_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1460) | 1460 |
+| [Becoming.Interleavings.LocalLaw.touchedIn_not_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1477) | 1477 |
+| [Becoming.Interleavings.LocalLaw.touchedIn_mem_of](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1495) | 1495 |
+| [Becoming.Interleavings.LocalLaw.touchedIn_pairwise](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1511) | 1511 |
+| [Becoming.Interleavings.LocalLaw.world_balances](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1524) | 1524 |
+| [Becoming.Interleavings.LocalLaw.world_final](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1568) | 1568 |
+| [Becoming.Interleavings.LocalLaw.world_swap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1578) | 1578 |
+| [Becoming.Interleavings.LocalLaw.world_swap_between](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1602) | 1602 |
+| [Becoming.Interleavings.LocalLaw.world_own](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1657) | 1657 |
+| [Becoming.Interleavings.LocalLaw.world_index](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1664) | 1664 |
+| [Becoming.Interleavings.LocalLaw.world_of_own](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1670) | 1670 |
+| [Becoming.Interleavings.LocalLaw.world_reads_alike](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1679) | 1679 |
+| [Becoming.Interleavings.LocalLaw.exchangeAt_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1714) | 1714 |
+| [Becoming.Interleavings.LocalLaw.exchangeAt_append_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1723) | 1723 |
+| [Becoming.Interleavings.LocalLaw.exchangeAt_append](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1730) | 1730 |
+| [Becoming.Interleavings.LocalLaw.exchangeAt_beyond](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1737) | 1737 |
+| [Becoming.Interleavings.LocalLaw.exchangeAt_none](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1743) | 1743 |
+| [Becoming.Interleavings.LocalLaw.exchangeAt_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1749) | 1749 |
+| [Becoming.Interleavings.LocalLaw.length_insert](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1755) | 1755 |
+| [Becoming.Interleavings.LocalLaw.ownCount_append_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1760) | 1760 |
+| [Becoming.Interleavings.LocalLaw.ownCount_append](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1777) | 1777 |
+| [Becoming.Interleavings.LocalLaw.ownCount_untouched](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1794) | 1794 |
+| [Becoming.Interleavings.LocalLaw.ownCount_mono](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1800) | 1800 |
+| [Becoming.Interleavings.LocalLaw.step_of_ownCount](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1816) | 1816 |
+| [Becoming.Interleavings.LocalLaw.firstAt_after](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1833) | 1833 |
+| [Becoming.Interleavings.LocalLaw.occurrence_matches](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1849) | 1849 |
+| [Becoming.Interleavings.LocalLaw.Touching.tail](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1928) | 1928 |
+| [Becoming.Interleavings.LocalLaw.Touching.remove](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1931) | 1931 |
+| [Becoming.Interleavings.LocalLaw.length_of_courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1941) | 1941 |
+| [Becoming.Interleavings.LocalLaw.touches_of_touchedIn](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1964) | 1964 |
+| [Becoming.Interleavings.LocalLaw.renumber_none](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1992) | 1992 |
+| [Becoming.Interleavings.LocalLaw.renumber_lead](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2001) | 2001 |
+| [Becoming.Interleavings.LocalLaw.renumber_spec](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2019) | 2019 |
+| [Becoming.Interleavings.LocalLaw.renumber_exchange](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2051) | 2051 |
+| [Becoming.Interleavings.LocalLaw.renumber_count](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2065) | 2065 |
+| [Becoming.Interleavings.LocalLaw.renumber_index](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2074) | 2074 |
+| [Becoming.Interleavings.LocalLaw.renumber_renumber](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2081) | 2081 |
+| [Becoming.Interleavings.LocalLaw.renumber_beyond](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2099) | 2099 |
+| [Becoming.Interleavings.LocalLaw.renumber_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2104) | 2104 |
+| [Becoming.Interleavings.LocalLaw.renumber_reindexes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2113) | 2113 |
+| [Becoming.Interleavings.LocalLaw.touchAt_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2130) | 2130 |
+| [Becoming.Interleavings.LocalLaw.touchAt_none](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2137) | 2137 |
+| [Becoming.Interleavings.LocalLaw.touchAt_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2145) | 2145 |
+| [Becoming.Interleavings.LocalLaw.touchAt_renumber](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2154) | 2154 |
+| [Becoming.Interleavings.LocalLaw.runUpTo_untouched](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2166) | 2166 |
+| [Becoming.Interleavings.LocalLaw.runUpTo_renumber](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2181) | 2181 |
+| [Becoming.Interleavings.LocalLaw.reads_renumber](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2195) | 2195 |
+| [Becoming.Interleavings.LocalLaw.change_renumber](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2208) | 2208 |
+| [Becoming.Interleavings.LocalLaw.world_active_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2231) | 2231 |
+| [Becoming.Interleavings.LocalLaw.world_renumber_active](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2237) | 2237 |
+| [Becoming.Interleavings.LocalLaw.world_renumber_level](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2246) | 2246 |
+| [Becoming.Interleavings.LocalLaw.world_renumber_reads](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2259) | 2259 |
+| [Becoming.Interleavings.LocalLaw.fall_of_change](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2269) | 2269 |
+| [Becoming.Interleavings.LocalLaw.rise_of_change](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2274) | 2274 |
+| [Becoming.Interleavings.LocalLaw.world_renumber_flow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2281) | 2281 |
+| [Becoming.Interleavings.LocalLaw.bool_or_false_left](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2316) | 2316 |
+| [Becoming.Interleavings.LocalLaw.bool_or_false_right](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2321) | 2321 |
+| [Becoming.Interleavings.LocalLaw.bool_or_of_left](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2327) | 2327 |
+| [Becoming.Interleavings.LocalLaw.bool_or_of_right](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2331) | 2331 |
+| [Becoming.Interleavings.LocalLaw.untouched_unmoved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2337) | 2337 |
+| [Becoming.Interleavings.LocalLaw.touch_contains_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2359) | 2359 |
+| [Becoming.Interleavings.LocalLaw.around_contains](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2368) | 2368 |
+| [Becoming.Interleavings.LocalLaw.around_joined](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2374) | 2374 |
+| [Becoming.Interleavings.LocalLaw.keeps_consecutive](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2386) | 2386 |
+| [Becoming.Interleavings.LocalLaw.around_keeps_identity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2418) | 2418 |
+| [Becoming.Interleavings.LocalLaw.renumber_keeps](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2427) | 2427 |
+| [Becoming.Interleavings.LocalLaw.world_renumber_correspondence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2457) | 2457 |
+| [Becoming.Interleavings.Pair.keeps](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2491) | 2491 |
+| [Becoming.Interleavings.Pair.reads](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2498) | 2498 |
+| [Becoming.Interleavings.Pair.apart_differs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2518) | 2518 |
+| [Becoming.Interleavings.Pair.touch_not_contains](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2538) | 2538 |
+| [Becoming.Interleavings.Pair.idle_unmatched](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2545) | 2545 |
 
 Definitions and types:
 
-- `structure` [Becoming.Interleavings.LocalLaw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L129) (L129)
-- `def` [Becoming.Interleavings.LocalLaw.run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L143) (L143)
-- `def` [Becoming.Interleavings.LocalLaw.ownCourse](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L148) (L148)
-- `def` [Becoming.Interleavings.LocalLaw.Apart](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L155) (L155)
-- `def` [Becoming.Interleavings.LocalLaw.process](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L160) (L160)
-- `def` [Becoming.Interleavings.LocalLaw.Interleaves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L164) (L164)
-- `def` [Becoming.Interleavings.LocalLaw.shares](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L168) (L168)
-- `def` [Becoming.Interleavings.LocalLaw.Connected](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L173) (L173)
-- `def` [Becoming.Interleavings.LocalLaw.ready](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L505) (L505)
-- `def` [Becoming.Interleavings.LocalLaw.pop](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L516) (L516)
-- `def` [Becoming.Interleavings.LocalLaw.pick](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L524) (L524)
-- `def` [Becoming.Interleavings.LocalLaw.done](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L533) (L533)
-- `def` [Becoming.Interleavings.LocalLaw.total](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L540) (L540)
-- `def` [Becoming.Interleavings.LocalLaw.schedule](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L546) (L546)
-- `def` [Becoming.Interleavings.LocalLaw.standings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L916) (L916)
-- `def` [Becoming.Interleavings.LocalLaw.exchangeAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1040) (L1040)
-- `def` [Becoming.Interleavings.LocalLaw.runUpTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1047) (L1047)
-- `def` [Becoming.Interleavings.LocalLaw.ownCount](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1105) (L1105)
-- `def` [Becoming.Interleavings.LocalLaw.afterOwn](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1114) (L1114)
-- `def` [Becoming.Interleavings.LocalLaw.standingAfter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1121) (L1121)
-- `def` [Becoming.Interleavings.LocalLaw.firstAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1201) (L1201)
-- `def` [Becoming.Interleavings.LocalLaw.indexMap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1257) (L1257)
-- `def` [Becoming.Interleavings.LocalLaw.touchedIn](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1353) (L1353)
-- `def` [Becoming.Interleavings.LocalLaw.fall](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1362) (L1362)
-- `def` [Becoming.Interleavings.LocalLaw.rise](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1365) (L1365)
-- `def` [Becoming.Interleavings.LocalLaw.world](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1372) (L1372)
+- `structure` [Becoming.Interleavings.LocalLaw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L159) (L159)
+- `def` [Becoming.Interleavings.LocalLaw.run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L173) (L173)
+- `def` [Becoming.Interleavings.LocalLaw.ownCourse](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L178) (L178)
+- `def` [Becoming.Interleavings.LocalLaw.Apart](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L185) (L185)
+- `def` [Becoming.Interleavings.LocalLaw.process](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L190) (L190)
+- `def` [Becoming.Interleavings.LocalLaw.Interleaves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L194) (L194)
+- `def` [Becoming.Interleavings.LocalLaw.shares](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L198) (L198)
+- `def` [Becoming.Interleavings.LocalLaw.Connected](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L203) (L203)
+- `def` [Becoming.Interleavings.LocalLaw.ready](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L535) (L535)
+- `def` [Becoming.Interleavings.LocalLaw.pop](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L546) (L546)
+- `def` [Becoming.Interleavings.LocalLaw.pick](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L554) (L554)
+- `def` [Becoming.Interleavings.LocalLaw.done](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L563) (L563)
+- `def` [Becoming.Interleavings.LocalLaw.total](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L570) (L570)
+- `def` [Becoming.Interleavings.LocalLaw.schedule](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L576) (L576)
+- `def` [Becoming.Interleavings.LocalLaw.standings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L946) (L946)
+- `def` [Becoming.Interleavings.LocalLaw.exchangeAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1070) (L1070)
+- `def` [Becoming.Interleavings.LocalLaw.runUpTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1077) (L1077)
+- `def` [Becoming.Interleavings.LocalLaw.ownCount](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1135) (L1135)
+- `def` [Becoming.Interleavings.LocalLaw.afterOwn](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1144) (L1144)
+- `def` [Becoming.Interleavings.LocalLaw.standingAfter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1151) (L1151)
+- `def` [Becoming.Interleavings.LocalLaw.firstAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1231) (L1231)
+- `def` [Becoming.Interleavings.LocalLaw.indexMap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1287) (L1287)
+- `def` [Becoming.Interleavings.LocalLaw.touchAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1384) (L1384)
+- `def` [Becoming.Interleavings.LocalLaw.touchedIn](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1391) (L1391)
+- `def` [Becoming.Interleavings.LocalLaw.fall](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1400) (L1400)
+- `def` [Becoming.Interleavings.LocalLaw.rise](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1403) (L1403)
+- `def` [Becoming.Interleavings.LocalLaw.world](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1411) (L1411)
+- `def` [Becoming.Interleavings.LocalLaw.Touching](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1925) (L1925)
+- `def` [Becoming.Interleavings.LocalLaw.renumber](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L1985) (L1985)
+- `def` [Becoming.Interleavings.LocalLaw.footprinted](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2306) (L2306)
+- `def` [Becoming.Interleavings.LocalLaw.touchAround](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2312) (L2312)
+- `def` [Becoming.Interleavings.Pair.touches](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2479) (L2479)
+- `def` [Becoming.Interleavings.Pair.act](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2486) (L2486)
+- `def` [Becoming.Interleavings.Pair.law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2509) (L2509)
+- `def` [Becoming.Interleavings.Pair.start](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean#L2512) (L2512)
 
 </details>
 
