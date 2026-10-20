@@ -1,5 +1,7 @@
 # foundation-assessment
 
+> **Status:** declared evidence (R35, 20 October 2026; `path_roles.evidence_paths` in [research-config](../../../research-config.json)). The folder last changed in substance on 9 October 2026 and keeps its place because a freeze manifest pins three of its files, its checkers locate the repository by their own path, and five market records cite MARKET-INTERNET-DEGENERATION.md. It is not edited further; move tools leave it as it is.
+
 Review materials for the 2026-10-05 generative-foundation review: assessment documents, per-topic reviews and evidence notes, market/alignment/governance checks, and their verification receipts.
 
 Contents read off the directory on 17 October 2026: 0 Lean modules, 10 checkers, 38 JSON files (1 receipts), 2 subdirectories.
