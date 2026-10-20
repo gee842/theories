@@ -12,6 +12,7 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-06 | [SELECTIVE-HANDOFF-REVIEW.md](SELECTIVE-HANDOFF-REVIEW.md) | Selective reuse of a historical correction: prospective review |
 | 2026-10-10 | [CONTINUATION-GROUNDING-REVIEW.md](CONTINUATION-GROUNDING-REVIEW.md) | Independent review: continuation grounding W1–W5 (plan W8) |
 | 2026-10-19 | [SSBX-REPOSITORY-REVIEW.md](SSBX-REPOSITORY-REVIEW.md) | 早期《生生不息》仓库审读：哪些可以并入生成／变化之论 |
+| 2026-10-20 | [BECOMING-SIGNIFICANCE-REVIEW.md](BECOMING-SIGNIFICANCE-REVIEW.md) | Significance and prior-art review: what the central results establish, and what was known |
 | 2026-10-20 | [BECOMING-TWENTIETH-REVIEW.md](BECOMING-TWENTIETH-REVIEW.md) | Twentieth review: the theory as one whole — completion, unification, coherence, elegance, redundancy |
 
 ## Reviews kept in history
