@@ -1,0 +1,7 @@
+{
+ "Becoming.Naturals.add_left_cancel": {
+  "module": "Becoming.Prelude",
+  "category": "support",
+  "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
+ }
+}

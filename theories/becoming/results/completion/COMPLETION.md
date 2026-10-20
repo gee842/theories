@@ -2,12 +2,12 @@
 
 # The completion criterion, run
 
-The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T070914.793352Z` and the connectivity measure of `91c3fc66a` (core receipt `20261020T070914.793352Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
+The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T072647.879143Z` and the connectivity measure of `6eee7da51` (core receipt `20261020T070914.793352Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
 
 | | Criterion | Met | Findings |
 |---|---|---|---:|
 | K1 | Coverage | yes | 0 |
-| K2 | Unity | no | 18 |
+| K2 | Unity | no | 19 |
 | K3 | Premises | no | 2 |
 | K4 | Representation | no | 1 |
 | K5 | Enclosure | yes | 0 |
@@ -30,7 +30,7 @@ The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_pro
 | Capacity | differentiation | `WithinMoves.after_course`, `Renewable.no_exact_finite_reading`, `Web.paths_extension_iff_widens`, `Flow.Balances.retains_iff_within_margin` | [effective-capacity-and-eventual-reachability](../records/effective-capacity-and-eventual-reachability.md), [becoming-finite-horizon](../records/becoming-finite-horizon.md), [comparison-by-widening](../records/comparison-by-widening.md), [significance-retained-within-margin](../records/significance-retained-within-margin.md) | §2.1, §6.1 | proved | 5 |
 | Responsibility | differentiation | `Flow.act_unselected`, `act_courses_unselected`, `Flow.Balances.comparison_within_response`, `presupposition_scopes`, `Dependence.Overdetermined.only_together` | [the-gap-for-ones-own-act](../records/the-gap-for-ones-own-act.md), [comparison-where-the-rest-responds](../records/comparison-where-the-rest-responds.md), [presupposition-scopes](../records/presupposition-scopes.md), [joint-difference-making](../records/joint-difference-making.md) | §2.6, §3.4, §4.1, §6.5 | proved | 11 |
 | Life | domain | `Web.roles_alive`, `Web.living_on_reaches`, `Flow.descent_reaches`, `Web.Unceasing.activeRenewer_recurs` | [life-as-condition-of-life](../records/life-as-condition-of-life.md), [living-on-and-descent](../records/living-on-and-descent.md), [unceasing-generation-needs-renewal](../records/unceasing-generation-needs-renewal.md) | §2.2 | proved | — |
-| Evolution | domain | `Flow.selection_within`, `Flow.transmitted_supported`, `Flow.selected_le`, `Web.transmits_at_iff`, `Flow.no_new_dependence` | [evolution-on-descent](../records/evolution-on-descent.md), [transmission-is-inheritance-and-need](../records/transmission-is-inheritance-and-need.md) | §2.4 | proved | 9 |
+| Evolution | domain | `Flow.selection_within`, `Flow.transmitted_supported`, `Flow.selected_le`, `Web.transmits_at_iff`, `Flow.no_new_dependence`, `SelectionTerm.covariation`, `SelectionTerm.Flow.support_not_lower`, `SelectionTerm.Flow.support_moved_rises` | [evolution-on-descent](../records/evolution-on-descent.md), [selection-term-over-generations](../records/selection-term-over-generations.md), [transmission-is-inheritance-and-need](../records/transmission-is-inheritance-and-need.md) | §2.4 | proved | 9 |
 | Learning | domain | `Learning.goAlike_iff_lumped`, `Learnable.learnable_iff`, `LearnableRuns.learnable_iff_tracks`, `Limit.identifies_iff_tracks`, `Learning.Training.unselected_beyond_data` | [generalization-through-lumping](../records/generalization-through-lumping.md), [learnable-through-a-map](../records/learnable-through-a-map.md), [learning-through-a-map-is-tracking-in-the-limit](../records/learning-through-a-map-is-tracking-in-the-limit.md) | §3.2, §3.3 | proved | 7 |
 | Collective | domain | `Flow.mutuallyDependent_iff_reach`, `Withholding.withholding_spreads`, `SharedCodes.run_agrees_every_start_iff`, `RelativePosition.rise_needs_fall`, `RuleCapture.uniform_locks` | [mutual-dependence-and-its-pace](../records/mutual-dependence-and-its-pace.md), [giving-that-waits-on-giving](../records/giving-that-waits-on-giving.md), [a-code-formed-between-formations](../records/a-code-formed-between-formations.md), [relative-position-is-zero-sum](../records/relative-position-is-zero-sum.md), [capture-through-the-rule](../records/capture-through-the-rule.md) | §4.2, §4.3, §4.4, §4.5 | proved | 7 |
 | Significance | domain | `unrestricted_iff_livingSignificance`, `Web.widens_iff_retains_adds`, `Web.paths_comparison_widens`, `Web.paths_one_object` | [continuation-condition-yields-living-significance](../records/continuation-condition-yields-living-significance.md), [significance-retained-within-margin](../records/significance-retained-within-margin.md), [comparison-by-widening](../records/comparison-by-widening.md), [continuation-condition-decomposition](../records/continuation-condition-decomposition.md) | §6.1, §6.2, §6.4, §6.5 | proved | 2, 12 |
@@ -53,6 +53,7 @@ No finding.
 - knowing: Becoming.Learnable.learnable_iff: its statement is not on a base family (used by a theorem on the base)
 - evaluation: Becoming.Valuation.significant_iff_held: its statement is not on a base family (used by a theorem on the base)
 - responsibility: Becoming.presupposition_scopes: its statement is not on a base family (used by a theorem on the base)
+- evolution: Becoming.SelectionTerm.covariation: its statement is not on a base family (used by a theorem on the base)
 - learning: Becoming.Learnable.learnable_iff: its statement is not on a base family (used by a theorem on the base)
 - learning: Becoming.Learning.Training.unselected_beyond_data: its statement is not on a base family (used by a theorem on the base)
 - collective: Becoming.Withholding.withholding_spreads: its statement is not on a base family (statement on the base only through a law of its own module)
@@ -63,14 +64,14 @@ No finding.
 
 ## K3. Premises: not met
 
-Premises found in central statements: C, the widening comparison (1); a census (2); a reserve (1); a supplied law of exchange (7); activity needing support (6); balance (18); bounded transmission (1); decided (4); dissipation (2); embodiment (1); enclosed (1); living significance (2); only active relata give (6); the continuation condition (3).
+Premises found in central statements: C, the widening comparison (1); a census (2); a reserve (1); a supplied law of exchange (7); activity needing support (8); balance (18); bounded transmission (1); decided (4); dissipation (2); embodiment (1); enclosed (1); living significance (2); only active relata give (8); the continuation condition (3).
 
 - decided: used by 4 central statement(s) (Becoming.ExchangeLaw.response_not_fixed_by_coupling, Becoming.Learnable.learnable_iff, Becoming.LearnableRuns.learnable_iff_tracks, ...), no witnesses meeting and failing it listed; calibrated rather than witnessed: a count exists exactly where what it counts is decided (counts_iff_decided), and asked of every world some laws are exactly omniscience principles (chapter 8.6); no world is exhibited failing it
 - C, the widening comparison: used by 1 central statement(s) (Becoming.Web.paths_comparison_widens), no witnesses meeting and failing it listed; an order premise: no theorem exhibits a comparison meeting and one failing it
 
 ## K4. Representation: not met
 
-Modelling choices found in central statements: discrete steps (75); natural-number amounts (49); supplied observation (9); a fixed type of formations (8); decidedness (4); naming (1).
+Modelling choices found in central statements: discrete steps (78); natural-number amounts (51); supplied observation (9); a fixed type of formations (8); decidedness (4); naming (1).
 
 Natural-number laws: `falls_not_recurring`: form `Amounts.rests`; `World.comes_to_rest_unrefuted`: form `Amounts.family_rests`; `rising_recurs`: counterexample `Halving.never_rests`; `Flow.excess_bounded`: form `Amounts.losses_within`; `Flow.More.replenishment_unbounded`: none.
 

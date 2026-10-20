@@ -31,7 +31,7 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- The selection term proper, the covariance of offspring number and amount, is not stated: the identity is in additive counting form with natural-number amounts; the covariance form, dividing by the number of parents, needs rationals.
+- The selection term proper is not stated in this module: it is stated in counting form, with its course over generations, in Becoming.SelectionTerm (record selection-term-over-generations).
 - Fitness is not defined, and no need is said to be better: the number of offspring enters only as the weight in the identity, and support only as the condition of giving.
 - Selection is read only as the constraint of support on giving, without reproductive rates, mutation, drift, movement or population dynamics.
 - To the theory of evolution's completion requirement 2, recovering established evolutionary explanations, this contributes only Price's equation in counting form.
@@ -50,7 +50,7 @@ Canonical source: [Evolution.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-A law of forming that is also necessary; rational amounts and the covariance form; how the number of offspring is bounded by the amounts given (a reading of reproduction); the accumulation of selection and transmission over many steps; correspondence theorems to structural copying, reconstruction and the inheritance of organizational rules (periphery).
+A law of forming that is also necessary; how the number of offspring is bounded by the amounts given (a reading of reproduction); correspondence theorems to structural copying, reconstruction and the inheritance of organizational rules (periphery).
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -84,8 +84,9 @@ The unification plan asks for transmission, variation and selection through desc
 - related, not a proved adapter: [reserve-defers-ending](reserve-defers-ending.md). The parent in Unchecked is active beyond its support, that is, with a reserve; a reserve lets a need above the level be transmitted.
 - related, not a proved adapter: [target-capture](target-capture.md). Advances this record: the selection term left unstated here is given for a two-valued target in target-capture (share_not_lower, share_rises).
 - related, not a proved adapter: [transmission-is-inheritance-and-need](transmission-is-inheritance-and-need.md). The exact form of transmission: inheritance with the need within a bound; the evolution bounds at one descent, needing only some supported giver.
+- related, not a proved adapter: [selection-term-over-generations](selection-term-over-generations.md). The selection term proper in counting form, the mean's course over generations, and support never selected against.
 
-**Used by:** [learned-procedure-transmission](learned-procedure-transmission.md) · [map-of-premises](map-of-premises.md) · [space-and-its-parts](space-and-its-parts.md) · [target-capture](target-capture.md) · [transmission-is-inheritance-and-need](transmission-is-inheritance-and-need.md)
+**Used by:** [learned-procedure-transmission](learned-procedure-transmission.md) · [map-of-premises](map-of-premises.md) · [selection-term-over-generations](selection-term-over-generations.md) · [space-and-its-parts](space-and-its-parts.md) · [target-capture](target-capture.md) · [transmission-is-inheritance-and-need](transmission-is-inheritance-and-need.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -131,6 +132,7 @@ Aliases: `Becoming.price`, `Becoming.offspring`, `Becoming.selected`, `Becoming.
 - 19 October 2026, R22 (the names of the nineteenth review): BECOMING-UNIFICATION-PLAN.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: BECOMING-UNIFICATION-PLAN.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Flow.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Change.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Change.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Dependence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.
+- 20 October 2026, EV1: the covariance form and the accumulation over many steps are stated in Becoming.SelectionTerm (record selection-term-over-generations, study section 234); the scope item saying the selection term proper is not stated now points there, and those two parts leave the next step. The claim is unchanged.
 - 3 rebinding entries (2026-10-09 to 2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](evolution-on-descent.json).
 
 <a id="earlier-text--早期文本"></a>

@@ -124,8 +124,8 @@
   ],
   "does_not_show": [
     {
-      "zh": "真正的选择项，即后代数与量的协方差，不在这里陈述：恒等式只以加法计数形式与自然数的量陈述；协方差形式要除以亲代数，需要有理数。",
-      "en": "The selection term proper, the covariance of offspring number and amount, is not stated: the identity is in additive counting form with natural-number amounts; the covariance form, dividing by the number of parents, needs rationals.",
+      "en": "The selection term proper is not stated in this module: it is stated in counting form, with its course over generations, in Becoming.SelectionTerm (record selection-term-over-generations).",
+      "zh": "真正的选择项不在此模块中陈述：它的计数形式及其在世代中的进程陈述于 Becoming.SelectionTerm（记录 selection-term-over-generations）。",
       "kind": "scope"
     },
     {
@@ -169,8 +169,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z): the theorems of Becoming.Evolution, the local forms of the laws among them, have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; the ninth independent review (listed under sources) accepts the mathematics, and its corrections are in the integration note."
   },
   "next_delta": {
-    "zh": "同时是必要条件的形成规律；有理数量与协方差形式；后代数如何受给予的量约束（繁殖的读法）；多步的选择与传递的累积；与结构复制、重构及组织规则继承的对应定理（外围）。",
-    "en": "A law of forming that is also necessary; rational amounts and the covariance form; how the number of offspring is bounded by the amounts given (a reading of reproduction); the accumulation of selection and transmission over many steps; correspondence theorems to structural copying, reconstruction and the inheritance of organizational rules (periphery)."
+    "en": "A law of forming that is also necessary; how the number of offspring is bounded by the amounts given (a reading of reproduction); correspondence theorems to structural copying, reconstruction and the inheritance of organizational rules (periphery).",
+    "zh": "同时是必要条件的形成规律；后代数如何受给予的量约束（繁殖的读法）；与结构复制、重构及组织规则继承的对应定理（外围）。"
   },
   "correspondence": {
     "zh": "整合计划要求在脊柱上给出经世系的传递、变异与选择；演化之论的核心候选说：组织的差异通过实际传递参与后续活动，并改变变异、发育、共同生活与下一轮选择的条件。本结果给出这一候选最小的形式内容：选择是支持（水平满足所需）对谁能给予的约束；传递是后代对亲代依存的承接，由应用给出；变异是所需的差别；活动经平衡改变条件的水平，从而改变后来能传递的（transmitted_within、Drawdown）。price 即 Price 方程（Price 1970）的计数形式，是算术恒等式，两份既有研究笔记手推其协方差形式时已说明这一点（direction-frontier 的 math-note；GENERATED-SELECTION-RECURRENCE-INTEGRATION 引 Frank 2012）；本结果不改进它，只在纯核心中检查它，实质内容在选择与传递的定理中。“世系”“传递”“选择”“变异”的读法是 AI 的表述，按 Ren 的命名规则采用（DELEGATED-CHOICES D36）。",
@@ -333,6 +333,13 @@
       "detail": {
         "zh": "传递的确切形式：承继加所需之界；演化的界在一次世系上，只需某个被支持的给予者。",
         "en": "The exact form of transmission: inheritance with the need within a bound; the evolution bounds at one descent, needing only some supported giver."
+      }
+    },
+    {
+      "id": "selection-term-over-generations",
+      "detail": {
+        "en": "The selection term proper in counting form, the mean's course over generations, and support never selected against.",
+        "zh": "计数形式的真正选择项、均值在世代中的进程，以及支持从不被逆向选择。"
       }
     }
   ],
@@ -598,6 +605,10 @@
     {
       "en": "2026-10-20: 68 bookkeeping notes condensed from 2026-10-09 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/23438deba798cd0b/evolution-on-descent.json and in git.",
       "zh": "2026-10-20：68 条记账性说明合并（2026-10-09 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/23438deba798cd0b/evolution-on-descent.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, EV1: the covariance form and the accumulation over many steps are stated in Becoming.SelectionTerm (record selection-term-over-generations, study section 234); the scope item saying the selection term proper is not stated now points there, and those two parts leave the next step. The claim is unchanged.",
+      "zh": "2026年10月20日，EV1：协方差形式与多步累积陈述于 Becoming.SelectionTerm（记录 selection-term-over-generations，研究第 234 节）；说明真正选择项未陈述的范围项现指向那里，这两部分移出下一步。论断不变。"
     }
   ],
   "text_versions": [

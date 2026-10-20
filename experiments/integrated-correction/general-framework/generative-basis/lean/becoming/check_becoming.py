@@ -75,7 +75,7 @@ CORE = ["Becoming.Prelude", "Becoming.World", "Becoming.Witnesses", "Becoming.Fr
         "Becoming.Arising", "Becoming.Flow", "Becoming.Stock", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Persistence", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
         "Becoming.Seeking", "Becoming.Roles", "Becoming.LabelledRoles",
-        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
+        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.SelectionTerm", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
         "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.CensusTable", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Amounts", "Becoming.LeastLoss", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
         "Becoming.Continuation", "Becoming.RenewalFlow", "Becoming.Admission", "Becoming.Exclusion", "Becoming.Exhaustion",
@@ -891,6 +891,22 @@ SCOPE = (
     "unsupported from its first standing step on, while the one needing less is supported, active "
     "and takes in turn, and without the premise that activity needs support a formation active "
     "beyond its support transmits a need above the level at its giving step. "
+    "SelectionTerm: over any finite family read with weights and amounts, the number of members "
+    "times the weighted total with the discordant pairs is the total weight times the total amount "
+    "with the concordant pairs, so with offspring numbers as weights the weighted total exceeds its "
+    "uniform share exactly where concordance exceeds discordance, uniform offspring numbers or "
+    "amounts leaving neither, and with Price's counting identity the number of parents times the "
+    "offspring's total with what transmission lowered and the discordant pairs is the number of "
+    "offspring times the parents' total with the concordant pairs and what transmission raised; "
+    "where only active formations give and activity needs support a reading highest at the "
+    "supported parents has no discordant pair, and over generations of descent its mean, never "
+    "lowered by transmission, does not fall over any stretch and with exact transmission moves only "
+    "upward, through a step with concordant pairs; over generations each the offspring "
+    "of the last, "
+    "the mean amount is kept across a step exactly where these balance and rises exactly where "
+    "they raise, is kept or rises over a stretch where it is at every step, and a moved mean has an "
+    "unbalanced step, found by deciding each, with selection proper where transmission is exact and "
+    "inexact transmission where offspring numbers are uniform. "
     "Space, one structure for Ren's proposal (an AI reading): a world is relata read with one "
     "kind, the flow among them and their web, and the space is every world; the laws stated with "
     "no premise hold of each; in a finite world whose activity is decided, arising recurs exactly "

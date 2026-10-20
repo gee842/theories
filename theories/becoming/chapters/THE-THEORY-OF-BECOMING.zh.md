@@ -191,7 +191,7 @@
 
 **要点。** 演化指特定的机制（传递、重建、变异、选择），每个由其自身的关系说明；它不是每种变化的同义词。在脊柱上，世系由参与、给予与开始作为条件而在定义，不加估值。预备的材料加入复现的链形成：一个词的拷贝恰在池供给它、支持覆盖其所汲取之处产生它。
 
-**定理。** 本节陈述 `price`、`unsupported_childless`、`transmitted_supported`；完整陈述见[英文版 §2.4](THE-THEORY-OF-BECOMING.md#24-evolution-and-transmission)。
+**定理。** 本节陈述 `price`、`SelectionTerm.covariation`（真正的选择项：成员数乘加权总量加上不一致的对，等于总权重乘总量加上一致的对，即消去分母的协方差）、`SelectionTerm.Generations.moved_unbalanced`（世代中均值移动了，就有一步真正的选择与传递不相抵）、`SelectionTerm.Flow.support_not_lower`（在世系的世代中，在被支持者处最高、传递从不降低的读数，其均值不降）、`unsupported_childless`、`transmitted_supported`；完整陈述见[英文版 §2.4](THE-THEORY-OF-BECOMING.md#24-evolution-and-transmission)。
 
 记录：[evolution-on-descent](../results/records/evolution-on-descent.md)、[transmission-is-inheritance-and-need](../results/records/transmission-is-inheritance-and-need.md)、[transmission-independent-where-it-binds](../results/records/transmission-independent-where-it-binds.md)、[inherited-structural-copying](../results/records/inherited-structural-copying.md)、[formed-copying-registration](../results/records/formed-copying-registration.md)、[formed-copying-correction](../results/records/formed-copying-correction.md)、[growth-constrained-fragmentation](../results/records/growth-constrained-fragmentation.md)、[organizational-rule-inheritance](../results/records/organizational-rule-inheritance.md)、[learned-procedure-transmission](../results/records/learned-procedure-transmission.md)、[material-preparation-output](../results/records/material-preparation-output.md)、[recurrent-chain-assembly](../results/records/recurrent-chain-assembly.md)。
 
@@ -607,6 +607,7 @@
 | [取尽所给所排除的](../results/records/what-taking-all-excludes.md) | 不加前提的定理 | — | §2.3 |
 | [多于此刻的取用终于何处](../results/records/where-a-rising-take-ends.md) | 不加前提的定理 | — | §2.3 |
 | [经世系的演化](../results/records/evolution-on-descent.md) | 在所述前提下的定理 | 平衡、活动需要支持、传递 | §2.4 |
+| [真正的选择项及其在世代中的进程](../results/records/selection-term-over-generations.md) | 在所述前提下的定理 | 恒等式不加前提；支持之律需活动需要支持、传递从不降低 | §2.4 |
 | [形成的编辑关系纠正已成后继](../results/records/formed-copying-correction.md) | 不加前提的定理（外围） | — | §2.4 |
 | [形成的配准关系改变复制保真度](../results/records/formed-copying-registration.md) | 不加前提的定理（外围） | — | §2.4 |
 | [生长限制分割及后继组成](../results/records/growth-constrained-fragmentation.md) | 不加前提的定理（外围） | — | §2.4 |
@@ -807,7 +808,7 @@
 6. **可以稠密的量**（进一步的证明）。*开放：*每次交换的最小损失能否推出而非给出；任何量上的流、依存网与世界；其余自然数规律的最小损失形式或良基形式；实数的强度与倍率。
 7. **哪个律成立，成员的律怎样形成**（进一步的证明）。已落地（R38，[研究第 233 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#233-one-turn-around-a-cycle-and-any-two-interleavings-r38)）：重合进程在一个条件上的差距，恰在其交换按某映射回应它之处，是该映射的进程（`LoopReturn.responds_iff`），这是前提，未由交换律推出；精确环节之回路的一圈精确陈述（`LoopReturn.carried_around_exact`）。*开放：*交换之律本身，带噪声的律及其历程；成员的律怎样形成、怎样回应它所耦合入者；单个回路之外、多个条件同时之处哪个律闭合而非扩大差别；概率学习与隐含偏置。
 8. **由连续性而非命名的同一**（进一步的证明）。*开放：*所立重合处的同一，或由物质、信息或组织的连续性给出的同一；分裂与合并下的类。
-9. **演化的选择项**（进一步的证明）。*开放：*既必要又充分的形成之律；世系新形成的依存；多步的选择与传递；有理数的量与协方差形式。
+9. **演化的选择项**（进一步的证明）。（已陈述：计数形式的真正选择项，即消去分母的协方差，以及均值在世代中的进程，均值移动了就有一步有真正的选择或传递，支持从不被逆向选择，`Becoming.SelectionTerm`。）*开放：*既必要又充分的形成之律；世系新形成的依存；后代数如何受给予之量约束；公分母之外的有理数的量，以及对选择的响应的方差形式。
 10. **上升从其外汲取什么**（进一步的证明）。*开放：*所汲取者是否被依存，以及连同传递、世系与开放，及于其外者上升的份额。
 11. **条件之下的实践前提**（进一步的证明）。*开放：*条件之下 L 的形式；两部分族之外的克制定理；关系层读法下的比较。
 12. **根据**（哲学根据，§8.5）。扩大是否更好（C，定次序），意义是否不止于任何边界（不变的一步，定范围）？连同 A 与两种中立的根据，以及第一目标的哲学部分。没有形式工作能解决它；理论定位每一步（§6.5），并列出尚未回答的反驳（§8.9）。
@@ -855,17 +856,17 @@
 
 所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）16 个。
 
-**当前回执**是运行 [`20261020T070914.793352Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T070914.793352Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 233 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#233-one-turn-around-a-cycle-and-any-two-interleavings-r38)）。
+**当前回执**是运行 [`20261020T072647.879143Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T072647.879143Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 234 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#234-the-selection-term-proper-and-its-course-over-generations-ev1)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 268 个模块，10,733 条定理 |
+| 核心模块（含根 `Becoming`） | 269 个模块，10,800 条定理 |
 | 实例模块 | 7 个模块，567 条定理 |
 | 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 闭包（核心、环与根基） | 284 个模块，11,553 条定理 |
-| 审计的脊柱声明 | 15,810 |
-| 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 188 条 |
+| 闭包（核心、环与根基） | 285 个模块，11,620 条定理 |
+| 审计的脊柱声明 | 15,901 |
+| 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 189 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 
 <a id="complete-episode-comparison-anchors"></a>

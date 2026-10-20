@@ -1731,6 +1731,61 @@
    "module": "Becoming.LoopReturn",
    "category": "model-witness",
    "reason": "the ring of m + 2 conditions meets the premise of the exact turn (`GivesExactly`), so `carried_around_exact` applies to it: a fact about one constructed model"
+  },
+  "Becoming.SelectionTerm.Generations.kept": {
+   "module": "Becoming.SelectionTerm",
+   "category": "general-structure",
+   "reason": "balanced at every step, the mean is kept over the stretch: a law of any listed generations, each the offspring of the last, with no world; generations of descent in a flow (Flow.Descended) are one case, read on the base by Flow.support_not_lower and Flow.support_moved_rises"
+  },
+  "Becoming.SelectionTerm.Generations.rises": {
+   "module": "Becoming.SelectionTerm",
+   "category": "general-structure",
+   "reason": "raising at every step, the mean rises over the stretch: a law of any listed generations, each the offspring of the last, with no world; generations of descent in a flow (Flow.Descended) are one case, read on the base by Flow.support_not_lower and Flow.support_moved_rises"
+  },
+  "Becoming.SelectionTerm.Generations.moved_by_transmission": {
+   "module": "Becoming.SelectionTerm",
+   "category": "general-structure",
+   "reason": "with uniform offspring numbers a moved mean has a step of inexact transmission: a law of any listed generations, each the offspring of the last, with no world; generations of descent in a flow (Flow.Descended) are one case, read on the base by Flow.support_not_lower and Flow.support_moved_rises"
+  },
+  "Becoming.SelectionTerm.Generations.raises_exact_iff": {
+   "module": "Becoming.SelectionTerm",
+   "category": "general-structure",
+   "reason": "with exact transmission a step raises exactly where concordance exceeds discordance: a law of any listed generations, each the offspring of the last, with no world; generations of descent in a flow (Flow.Descended) are one case, read on the base by Flow.support_not_lower and Flow.support_moved_rises"
+  },
+  "Becoming.SelectionTerm.selection_exceeds_iff": {
+   "module": "Becoming.SelectionTerm",
+   "category": "general-structure",
+   "reason": "the weighted total exceeds its uniform share exactly where concordance exceeds discordance: a law of any finite family read with offspring numbers or weights and amounts, with no world; the base reads the covariation it rests on through Flow.support_not_against"
+  },
+  "Becoming.SelectionTerm.selection_none_iff": {
+   "module": "Becoming.SelectionTerm",
+   "category": "general-structure",
+   "reason": "the weighted total is its uniform share exactly where concordance and discordance are equal: a law of any finite family read with offspring numbers or weights and amounts, with no world; the base reads the covariation it rests on through Flow.support_not_against"
+  },
+  "Becoming.SelectionTerm.concord_alike": {
+   "module": "Becoming.SelectionTerm",
+   "category": "general-structure",
+   "reason": "uniform amounts leave nothing concordant: a law of any finite family read with offspring numbers or weights and amounts, with no world; the base reads the covariation it rests on through Flow.support_not_against"
+  },
+  "Becoming.SelectionTerm.discord_alike": {
+   "module": "Becoming.SelectionTerm",
+   "category": "general-structure",
+   "reason": "uniform amounts leave nothing discordant: a law of any finite family read with offspring numbers or weights and amounts, with no world; the base reads the covariation it rests on through Flow.support_not_against"
+  },
+  "Becoming.SelectionTerm.Rising.exact": {
+   "module": "Becoming.SelectionTerm",
+   "category": "model-witness",
+   "reason": "transmission is exact in the witness where the mean rises by selection proper; a fact about one constructed family, not a law of the unfolding"
+  },
+  "Becoming.SelectionTerm.Rising.rising": {
+   "module": "Becoming.SelectionTerm",
+   "category": "model-witness",
+   "reason": "a parent carrying one unit with two offspring beside one carrying none with none: concordance two, discordance none, the mean rising from a half to one; a fact about one constructed family"
+  },
+  "Becoming.SelectionTerm.Doubling.doubling": {
+   "module": "Becoming.SelectionTerm",
+   "category": "model-witness",
+   "reason": "two parents each with two offspring: the weighted total moves while selection proper is none and the mean is kept; a fact about one constructed family"
   }
  },
  "instances": {

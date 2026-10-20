@@ -331,6 +331,7 @@
       ],
       "records": [
         "evolution-on-descent",
+        "selection-term-over-generations",
         "transmission-is-inheritance-and-need"
       ],
       "declarations": [
@@ -338,7 +339,10 @@
         "Becoming.Flow.transmitted_supported",
         "Becoming.Flow.selected_le",
         "Becoming.Web.transmits_at_iff",
-        "Becoming.Flow.no_new_dependence"
+        "Becoming.Flow.no_new_dependence",
+        "Becoming.SelectionTerm.covariation",
+        "Becoming.SelectionTerm.Flow.support_not_lower",
+        "Becoming.SelectionTerm.Flow.support_moved_rises"
       ],
       "status": "proved",
       "open_items": [

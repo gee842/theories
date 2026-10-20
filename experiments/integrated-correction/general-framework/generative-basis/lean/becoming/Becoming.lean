@@ -51,6 +51,7 @@ import Becoming.LabelledRoles
 import Becoming.Reserve
 import Becoming.Evolution
 import Becoming.Capture
+import Becoming.SelectionTerm
 import Becoming.Space
 import Becoming.Premises
 import Becoming.Sampling
@@ -649,6 +650,22 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   where the next configuration depends on the rule and not the state, perturbing the state alone
   is re-absorbed, the instance of `Becoming.Mechanism`'s re-absorption with the rule as the
   projection. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
+* `Becoming.SelectionTerm` (L1): the selection term proper of the counting form of Price's
+  equation, and its course over generations (no premise beyond what each theorem names). Over
+  any finite family read with weights and amounts, the number of members times the weighted
+  total, with the discordant pairs (more weight with less amount), is the total weight times the
+  total amount, with the concordant pairs: the covariance with its denominators cleared. With
+  offspring numbers as weights the weighted total exceeds its uniform share exactly where
+  concordance exceeds discordance, and uniform offspring numbers or amounts leave neither; with
+  `price`, the change of the mean amount is the selection term proper with transmission. Where
+  only active formations give and activity needs support, a reading highest at the supported
+  parents is never selected against; over generations of descent its mean, which transmission
+  never lowers, does not fall, and with exact transmission it moves only upward, through a step
+  of selection proper. Over generations each the offspring of the last, the mean amount is kept
+  across a step exactly where selection proper and transmission balance and rises exactly where
+  they raise; kept, rising or not falling at every step, it is so over the stretch; and a moved
+  mean has an unbalanced step, with exact transmission one with selection proper and with
+  uniform offspring numbers one with inexact transmission.
 * `Becoming.Space` (L1): the whole and its parts, one structure for Ren's proposal (an AI
   reading). The space is every world, a world being relata read with one kind, their flow
   and their web. The laws stated with no premise hold of every world; in a finite world
@@ -1541,7 +1558,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   a handover with no gap serves, and a gap refutes service. Joint plans and undertakings on the
   world's moves: a sole giver to what a formation requires is required, and active where only
   active formations give; a discharged undertaking leaves no residual step.
-* `Becoming.Direction` (L1): the direction on a web's moves. C read as widening on the
+* `Becoming.Direction` (L2): the direction on a web's moves. C read as widening on the
   moves' outcomes; under J1/J2 a chosen move keeps basic admissions and a narrowed move is not
   chosen where it is decided whether the widening adds a basic admission; the admission that
   tells two moves apart is selected only through a pool coupled into it. Instance: `Clearing`.
