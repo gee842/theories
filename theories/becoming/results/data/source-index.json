@@ -425,6 +425,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY-APART.json",
@@ -500,6 +501,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r34-evaluative-chain/records_r34.py",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r34-evaluative-chain/sigcheck.log",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r34-evaluative-chain/sigcheck.py",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r35-corpus",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r35-corpus/chain-pending.json",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r35-corpus/plan/data/worktree-classes.tsv",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/build_passages.py",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/mappers",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/verify_ro.py",
@@ -609,7 +613,10 @@
         "theories/becoming/chapters/HANZI-AND-THEORY-TREE.md",
         "theories/becoming/chapters/PRE-QIN-AND-WENYAN.md",
         "theories/becoming/chapters/WANG-YANGMING.md",
-        "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md"
+        "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
+        "tools/research/history_notes.py",
+        "tools/research/rename_ids.py",
+        "tools/research/repoint.py"
       ]
     },
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md": {
