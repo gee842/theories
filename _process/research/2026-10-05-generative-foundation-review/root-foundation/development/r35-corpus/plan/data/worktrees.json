@@ -1,6 +1,18 @@
 [
  {
-  "worktree": ".claude/worktrees/a2-chain",
+  "worktree": "../../..",
+  "head": "0dc5ec1ad",
+  "branch": "main",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 1,
+  "dirty_sample": [
+   "?? .claude/tmp_done.txt"
+  ],
+  "folder_mtime": "2026-10-20 08:16"
+ },
+ {
+  "worktree": "../a2-chain",
   "head": "2343c774a",
   "branch": "a2-landing2",
   "locked": false,
@@ -15,32 +27,7 @@
   "folder_mtime": "2026-10-19 02:47"
  },
  {
-  "worktree": ".claude/worktrees/agent-ab333e386f6f59ce1",
-  "head": "cb1be1f3c",
-  "branch": "worktree-agent-ab333e386f6f59ce1",
-  "locked": false,
-  "ancestor_of_main": true,
-  "dirty_entries": 0,
-  "dirty_sample": [],
-  "folder_mtime": "2026-10-20 01:27"
- },
- {
-  "worktree": ".claude/worktrees/agent-ae45fd9075b02ccd6",
-  "head": "87ecfdee5",
-  "branch": "worktree-agent-ae45fd9075b02ccd6",
-  "locked": true,
-  "ancestor_of_main": true,
-  "dirty_entries": 12,
-  "dirty_sample": [
-   "M experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
-   " M experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
-   " M experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-   " M experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean"
-  ],
-  "folder_mtime": "2026-10-20 01:32"
- },
- {
-  "worktree": ".claude/worktrees/charming-kirch-c0f953",
+  "worktree": "../charming-kirch-c0f953",
   "head": "a4f936597",
   "branch": "claude/charming-kirch-c0f953",
   "locked": false,
@@ -50,7 +37,7 @@
   "folder_mtime": "2026-10-19 21:14"
  },
  {
-  "worktree": ".claude/worktrees/compassionate-heisenberg-112724",
+  "worktree": "../compassionate-heisenberg-112724",
   "head": "14124cfaa",
   "branch": "claude/compassionate-heisenberg-112724",
   "locked": false,
@@ -69,8 +56,8 @@
    "not_on_main(+)": 3
   },
   "files_changed_on_branch": 69,
-  "same_blob_on_main": 9,
-  "main_changed_since_base": 42,
+  "same_blob_on_main": 8,
+  "main_changed_since_base": 43,
   "only_on_branch": 18,
   "deleted_on_branch": 0,
   "detail_sample": [
@@ -91,18 +78,18 @@
    "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/test-z1.log",
    "main-changed-since-base: _process/research/README.md",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RelativePosition.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
    "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/Becoming.PreludeOnly.log",
    "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/Becoming.RelativePosition.PreludeOnly.log",
    "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/Becoming.RelativePosition.lean",
    "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/Becoming.lean",
    "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/Becoming.log",
-   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/BecomingAxiomAudit.lean",
-   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/BecomingAxiomAudit.log"
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/BecomingAxiomAudit.lean"
   ]
  },
  {
-  "worktree": ".claude/worktrees/distracted-chaum-d62756",
+  "worktree": "../distracted-chaum-d62756",
   "head": "1f65714dc",
   "branch": "u5-passage",
   "locked": false,
@@ -112,7 +99,7 @@
   "folder_mtime": "2026-10-19 20:49"
  },
  {
-  "worktree": ".claude/worktrees/elastic-blackwell-ada9d9",
+  "worktree": "../elastic-blackwell-ada9d9",
   "head": "9b45c889f",
   "branch": "claude/elastic-blackwell-ada9d9",
   "locked": false,
@@ -122,7 +109,7 @@
   "folder_mtime": "2026-10-18 18:55"
  },
  {
-  "worktree": ".claude/worktrees/elegant-dewdney-177e7a",
+  "worktree": "../elegant-dewdney-177e7a",
   "head": "350775007",
   "branch": "t1-land6",
   "locked": false,
@@ -132,7 +119,7 @@
   "folder_mtime": "2026-10-19 19:25"
  },
  {
-  "worktree": ".claude/worktrees/epic-austin-da8891",
+  "worktree": "../epic-austin-da8891",
   "head": "0d6e9b67f",
   "branch": "claude/epic-austin-da8891",
   "locked": false,
@@ -147,7 +134,7 @@
   "folder_mtime": "2026-10-19 20:18"
  },
  {
-  "worktree": ".claude/worktrees/f3c-correction-45e3eb",
+  "worktree": "../f3c-correction-45e3eb",
   "head": "1c35994b0",
   "branch": "claude/f3c-correction-45e3eb",
   "locked": false,
@@ -157,7 +144,7 @@
   "folder_mtime": "2026-10-19 06:52"
  },
  {
-  "worktree": ".claude/worktrees/f3e-explanatory-65da83",
+  "worktree": "../f3e-explanatory-65da83",
   "head": "b2d7e628f",
   "branch": "claude/f3e-explanatory-65da83",
   "locked": false,
@@ -167,7 +154,7 @@
   "folder_mtime": "2026-10-19 05:54"
  },
  {
-  "worktree": ".claude/worktrees/f3j-judgment-cd75fa",
+  "worktree": "../f3j-judgment-cd75fa",
   "head": "529fae88f",
   "branch": "claude/f3j-judgment-cd75fa",
   "locked": false,
@@ -195,9 +182,9 @@
    "not_on_main(+)": 4
   },
   "files_changed_on_branch": 20,
-  "same_blob_on_main": 9,
+  "same_blob_on_main": 8,
   "main_changed_since_base": 11,
-  "only_on_branch": 0,
+  "only_on_branch": 1,
   "deleted_on_branch": 0,
   "detail_sample": [
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
@@ -206,15 +193,16 @@
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
-   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBound.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleHandoff.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py"
   ]
  },
  {
-  "worktree": ".claude/worktrees/f3q-inquiry-b33c94",
+  "worktree": "../f3q-inquiry-b33c94",
   "head": "0217baa38",
   "branch": "claude/f3q-inquiry-b33c94",
   "locked": false,
@@ -226,7 +214,7 @@
   "folder_mtime": "2026-10-19 04:05"
  },
  {
-  "worktree": ".claude/worktrees/f3r-renewal-7dcd3a",
+  "worktree": "../f3r-renewal-7dcd3a",
   "head": "3f89c9114",
   "branch": "claude/f3r-renewal-7dcd3a",
   "locked": false,
@@ -236,7 +224,7 @@
   "folder_mtime": "2026-10-19 03:46"
  },
  {
-  "worktree": ".claude/worktrees/friendly-ellis-b2bb3b",
+  "worktree": "../friendly-ellis-b2bb3b",
   "head": "1cda44a6e",
   "branch": "claude/friendly-ellis-b2bb3b",
   "locked": false,
@@ -265,7 +253,7 @@
   ]
  },
  {
-  "worktree": ".claude/worktrees/g1",
+  "worktree": "../g1",
   "head": "0e48a75d3",
   "branch": "g5-changing-coupling",
   "locked": false,
@@ -277,7 +265,7 @@
   "folder_mtime": "2026-10-19 07:39"
  },
  {
-  "worktree": ".claude/worktrees/goofy-kare-2b3f12",
+  "worktree": "../goofy-kare-2b3f12",
   "head": "d6faa226e",
   "branch": "sc-reland",
   "locked": false,
@@ -287,7 +275,7 @@
   "folder_mtime": "2026-10-19 21:20"
  },
  {
-  "worktree": ".claude/worktrees/goofy-villani-c8882d",
+  "worktree": "../goofy-villani-c8882d",
   "head": "f8635d18a",
   "branch": "claude/goofy-villani-c8882d",
   "locked": false,
@@ -297,7 +285,7 @@
   "folder_mtime": "2026-10-19 21:31"
  },
  {
-  "worktree": ".claude/worktrees/great-stonebraker-6e3c8b",
+  "worktree": "../great-stonebraker-6e3c8b",
   "head": "f1811e2bd",
   "branch": "claude/great-stonebraker-6e3c8b",
   "locked": false,
@@ -309,7 +297,7 @@
   "folder_mtime": "2026-10-19 18:09"
  },
  {
-  "worktree": ".claude/worktrees/inspiring-shtern-118c44",
+  "worktree": "../inspiring-shtern-118c44",
   "head": "c9994fe97",
   "branch": "sg-landing",
   "locked": false,
@@ -319,7 +307,7 @@
   "folder_mtime": "2026-10-19 17:32"
  },
  {
-  "worktree": ".claude/worktrees/keen-jemison-dd6641",
+  "worktree": "../keen-jemison-dd6641",
   "head": "52e6b542f",
   "branch": "claude/keen-jemison-dd6641",
   "locked": false,
@@ -341,19 +329,20 @@
    "not_on_main(+)": 6
   },
   "files_changed_on_branch": 28,
-  "same_blob_on_main": 24,
-  "main_changed_since_base": 4,
+  "same_blob_on_main": 23,
+  "main_changed_since_base": 5,
   "only_on_branch": 0,
   "deleted_on_branch": 0,
   "detail_sample": [
    "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY-APART.json",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py"
   ]
  },
  {
-  "worktree": ".claude/worktrees/keen-margulis-c70e97",
+  "worktree": "../keen-margulis-c70e97",
   "head": "1525ca99e",
   "branch": "claude/keen-margulis-c70e97",
   "locked": false,
@@ -363,7 +352,7 @@
   "folder_mtime": "2026-10-20 00:11"
  },
  {
-  "worktree": ".claude/worktrees/kind-villani-601d6d",
+  "worktree": "../kind-villani-601d6d",
   "head": "22936f729",
   "branch": "a3-landing",
   "locked": false,
@@ -373,7 +362,7 @@
   "folder_mtime": "2026-10-19 05:58"
  },
  {
-  "worktree": ".claude/worktrees/modest-solomon-0b03b5",
+  "worktree": "../modest-solomon-0b03b5",
   "head": "3ced2ba23",
   "branch": "claude/modest-solomon-0b03b5",
   "locked": false,
@@ -383,7 +372,7 @@
   "folder_mtime": "2026-10-19 19:08"
  },
  {
-  "worktree": ".claude/worktrees/n6-reading",
+  "worktree": "../n6-reading",
   "head": "ba1ea3f8b",
   "branch": "n6-reading",
   "locked": false,
@@ -395,7 +384,7 @@
   "folder_mtime": "2026-10-19 07:06"
  },
  {
-  "worktree": ".claude/worktrees/objective-lehmann-38f2c4",
+  "worktree": "../objective-lehmann-38f2c4",
   "head": "0920c8f4b",
   "branch": "claude/objective-lehmann-38f2c4",
   "locked": false,
@@ -405,7 +394,7 @@
   "folder_mtime": "2026-10-19 18:39"
  },
  {
-  "worktree": ".claude/worktrees/quirky-tesla-634712",
+  "worktree": "../quirky-tesla-634712",
   "head": "bc1b19159",
   "branch": "claude/quirky-tesla-634712",
   "locked": false,
@@ -415,7 +404,7 @@
   "folder_mtime": "2026-10-19 16:03"
  },
  {
-  "worktree": ".claude/worktrees/quizzical-ritchie-961d58",
+  "worktree": "../quizzical-ritchie-961d58",
   "head": "9a433b1b9",
   "branch": "e1-land",
   "locked": false,
@@ -425,7 +414,7 @@
   "folder_mtime": "2026-10-19 17:10"
  },
  {
-  "worktree": ".claude/worktrees/reverent-tu-7f9353",
+  "worktree": "../reverent-tu-7f9353",
   "head": "b31bf5a58",
   "branch": "claude/reverent-tu-7f9353",
   "locked": false,
@@ -435,7 +424,7 @@
   "folder_mtime": "2026-10-19 18:06"
  },
  {
-  "worktree": ".claude/worktrees/trusting-ptolemy-25244b",
+  "worktree": "../trusting-ptolemy-25244b",
   "head": "80ef86bdc",
   "branch": "claude/trusting-ptolemy-25244b",
   "locked": false,
@@ -463,7 +452,7 @@
   ]
  },
  {
-  "worktree": ".claude/worktrees/unruffled-mendeleev-6f6ba1",
+  "worktree": "../unruffled-mendeleev-6f6ba1",
   "head": "d379d97d1",
   "branch": "claude/strange-kepler-b3b52e",
   "locked": false,
@@ -485,19 +474,20 @@
    "not_on_main(+)": 6
   },
   "files_changed_on_branch": 21,
-  "same_blob_on_main": 17,
-  "main_changed_since_base": 4,
+  "same_blob_on_main": 16,
+  "main_changed_since_base": 5,
   "only_on_branch": 0,
   "deleted_on_branch": 0,
   "detail_sample": [
    "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY-APART.json",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py"
   ]
  },
  {
-  "worktree": ".claude/worktrees/unruffled-zhukovsky-85b330",
+  "worktree": "../unruffled-zhukovsky-85b330",
   "head": "c92d7b57d",
   "branch": "claude/unruffled-zhukovsky-85b330",
   "locked": false,
@@ -507,7 +497,7 @@
   "folder_mtime": "2026-10-19 07:48"
  },
  {
-  "worktree": ".claude/worktrees/upbeat-lovelace-4991d4",
+  "worktree": "../upbeat-lovelace-4991d4",
   "head": "81e284cb2",
   "branch": "claude/upbeat-lovelace-4991d4",
   "locked": false,
@@ -562,7 +552,7 @@
   ]
  },
  {
-  "worktree": ".claude/worktrees/w-reroot",
+  "worktree": "../w-reroot",
   "head": "c5ab6451f",
   "branch": "w-reroot",
   "locked": false,
@@ -579,8 +569,8 @@
    "not_on_main(+)": 1
   },
   "files_changed_on_branch": 96,
-  "same_blob_on_main": 35,
-  "main_changed_since_base": 61,
+  "same_blob_on_main": 15,
+  "main_changed_since_base": 81,
   "only_on_branch": 0,
   "deleted_on_branch": 0,
   "detail_sample": [
@@ -596,23 +586,23 @@
    "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/w2/w2-plan.json",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/BoundaryWorlds.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextArrivalTraces.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextualRuns.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
    "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
-   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseWorlds.lean",
-   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
-   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
-   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean"
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CounterfactualRuns.lean"
   ]
  },
  {
-  "worktree": ".claude/worktrees/wizardly-goldstine-4e6de8",
+  "worktree": "../wizardly-goldstine-4e6de8",
   "head": "2b80b5500",
   "branch": "claude/wizardly-goldstine-4e6de8",
   "locked": false,
@@ -622,7 +612,7 @@
   "folder_mtime": "2026-10-20 01:01"
  },
  {
-  "worktree": ".claude/worktrees/xenodochial-bouman-18faf8",
+  "worktree": "../xenodochial-bouman-18faf8",
   "head": "f39c658ba",
   "branch": "claude/xenodochial-bouman-18faf8",
   "locked": false,
@@ -632,7 +622,7 @@
   "folder_mtime": "2026-10-19 08:03"
  },
  {
-  "worktree": ".claude/worktrees/zhonghua",
+  "worktree": "../zhonghua",
   "head": "309af1124",
   "branch": "zhonghua",
   "locked": false,
