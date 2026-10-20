@@ -283,7 +283,7 @@ Contains 20 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>CoupledConcernHistory.lean — 26 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean) · [Theory](../../chapters/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean) · [Theory](../../history/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean`
 
@@ -400,7 +400,7 @@ Contains 4 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>NondualFormation.lean — 36 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualFormation.lean) · [Theory](../../chapters/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualFormation.lean) · [Theory](../../history/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualFormation.lean`
 
@@ -632,7 +632,7 @@ Contains 20 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RootGrounding.lean — 37 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/RootGrounding.lean) · [Theory](../../chapters/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/RootGrounding.lean) · [Theory](../../history/FORMAL-CORE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/RootGrounding.lean`
 

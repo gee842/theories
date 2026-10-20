@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "batch": "R35-B1-chapters",
+  "date": "2026-10-20T01:29:14+00:00",
+  "base_commit": "d226045b4913e5ec714d4b531efeef4432d0cefb",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "theories/becoming/chapters/FORMAL-CORE.md",
+      "new_path": "theories/becoming/history/FORMAL-CORE.md",
+      "sha256": "2e7f6197876f29c89940c2b97cf176457f36ef46e1fb6ae4e9a3831597dbc080",
+      "blob": "cbdb348e3445d0bd5dfa3c2097ce5f5cb7521f08",
+      "reason": "R35 (20 October 2026), batch B1: E14: historical (5 Oct), 0 records; pinned only by a frozen checker",
+      "plan_entry": "theories/becoming/chapters/FORMAL-CORE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/FORMAL-SPECIFICATION.md",
+      "new_path": "theories/becoming/history/FORMAL-SPECIFICATION.md",
+      "sha256": "ebb1f2ac7a48f0ef07fb4441206500a723af40a60565cc681d4aa228bf38f9a1",
+      "blob": "32ea57896d6341b303a402c7d0cc72aafc2fedb1",
+      "reason": "R35 (20 October 2026), batch B1: E14: historical (5 Oct, v0.10), 0 records; pinned only by a frozen checker",
+      "plan_entry": "theories/becoming/chapters/FORMAL-SPECIFICATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ALIGNMENT-COMPLETION.md",
+      "new_path": "theories/becoming/history/ALIGNMENT-COMPLETION.md",
+      "sha256": "23631b6bebdce0c422cd26aecbd48c96fc0ccc45c796fee6e0034736718b6f9e",
+      "blob": "2634abb174653f5fd7140ce559736b491efbc09f",
+      "reason": "R35 (20 October 2026), batch B1: E14: 6 Oct conditional-candidate closure, 0 records; pinned only by foundation-assessment/FRONTIER-CHECK.py",
+      "plan_entry": "theories/becoming/chapters/ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/MATHEMATICAL-ROOT-FRONTIER.md",
+      "new_path": "theories/becoming/history/MATHEMATICAL-ROOT-FRONTIER.md",
+      "sha256": "0dc0378d6ec497f3e7e31f1501c29e2cbf7636c846322e20e5355415f6c702cb",
+      "blob": "c3f4740eecbe134e8619fd3f4a5cc171cf19558f",
+      "reason": "R35 (20 October 2026), batch B1: E14/E1: superseded by §8 and §9; 0 records",
+      "plan_entry": "theories/becoming/chapters/MATHEMATICAL-ROOT-FRONTIER.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+      "new_path": "theories/becoming/history/PHILOSOPHICAL-ACCOUNT.md",
+      "sha256": "e3f6dadbaa9fd4a79cf6d680359ded300bf91f9606591b703bb370402917698b",
+      "blob": "c6a6c023daa125d39fcfdf2feba922320c5ce6d1",
+      "reason": "R35 (20 October 2026), batch B1: E14/E1: 8 Oct whole-restatement, 0 records",
+      "plan_entry": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/G0-WARRANT.md",
+      "new_path": "theories/becoming/history/G0-WARRANT.md",
+      "sha256": "4eca9b3040f3b25cf9981bb43acb3767c818e847d04e1e2d9cc1e1a47a2283d4",
+      "blob": "57b26093348fe0efb1638fb5402a2f530c459b84",
+      "reason": "R35 (20 October 2026), batch B1: E14: framing historical (axiom adopted 9 Oct, now a condition, §6.15)",
+      "plan_entry": "theories/becoming/chapters/G0-WARRANT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/G0-WARRANT.zh.md",
+      "new_path": "theories/becoming/history/G0-WARRANT.zh.md",
+      "sha256": "ae8f38e2f3d89560631c8c448e8ae460b24077d4c8011b57a2b4a8300eb5af32",
+      "blob": "7a5a372fff27a9beeef7b6b3391527a62d9f2b63",
+      "reason": "R35 (20 October 2026), batch B1: E14/E5: unmaintained edition titled as if G0 were an adopted axiom",
+      "plan_entry": "theories/becoming/chapters/G0-WARRANT.zh.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md",
+      "new_path": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md",
+      "sha256": "fb7a8fb58dbbe27778ed78330498fd20b1d168caeebbc725bad7a7027eab9727",
+      "blob": "bc686fbd0cf77a04e0a1dcc9d9c15068c799704e",
+      "reason": "R35 (20 October 2026), batch B1: E14: §15 is the live framing; rest superseded; 0 records",
+      "plan_entry": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.zh.md",
+      "new_path": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.zh.md",
+      "sha256": "43ecde07e21d330153aaed606ed65ea228f3ed8e427b5f5c7025e1e7ecbb50b0",
+      "blob": "e87bd70d3a45fa7547d5e5ae51e472be1672da3b",
+      "reason": "R35 (20 October 2026), batch B1: E14: edition of a retired chapter",
+      "plan_entry": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.zh.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.zh.md",
+      "new_path": "theories/becoming/history/PRACTICAL-JUDGMENT.zh.md",
+      "sha256": "fa2c370b54e2df0035350fd19687190dd74766e4db20ba1ceb5c45963e3c73fa",
+      "blob": "70dca6cea44743af624277345bfcc82950b0bef5",
+      "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 18 times) of a chapter whose English edition is canonical; a live document may be English only",
+      "plan_entry": "theories/becoming/chapters/PRACTICAL-JUDGMENT.zh.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.zh.md",
+      "new_path": "theories/becoming/history/BASIC-CONFLICT-JUDGMENT.zh.md",
+      "sha256": "e4a303ece4d17f0f75812035ff62b065a358a5cd83b115d53902b28ce9a94478",
+      "blob": "4d09324a725567e7b432f79ac4bead8b056bf20c",
+      "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 13 times) of a chapter whose English edition is canonical; a live document may be English only",
+      "plan_entry": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.zh.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.zh.md",
+      "new_path": "theories/becoming/history/CHOICE-AND-GENERATIVE-CONTEXT.zh.md",
+      "sha256": "24585dcfd09742c1f4dce44fff77aebc5c61cf5292d2ad815ce1a577c2a1ea60",
+      "blob": "f827e918f1216547c25ac0c4e04656e409395226",
+      "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 9 times) of a chapter whose English edition is canonical; a live document may be English only",
+      "plan_entry": "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.zh.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/WISDOM-AND-CONTEXT.zh.md",
+      "new_path": "theories/becoming/history/WISDOM-AND-CONTEXT.zh.md",
+      "sha256": "d4d1981127245d3fa2c7862a8f62873c6d7ba4910497c08f28b443bffbb653b9",
+      "blob": "f55cdde60d6bdfca4afc26019966c5a44a5744c6",
+      "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 9 times) of a chapter whose English edition is canonical; a live document may be English only",
+      "plan_entry": "theories/becoming/chapters/WISDOM-AND-CONTEXT.zh.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ALIGNMENT-DIRECTION.zh.md",
+      "new_path": "theories/becoming/history/ALIGNMENT-DIRECTION.zh.md",
+      "sha256": "0efb30dc7a3398e674a987e6f004c9725a42ae89d64320de708873afa6e8c638",
+      "blob": "9b14b3701b4b1228ac0605496a7af80a21683306",
+      "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 8 times) of a chapter whose English edition is canonical; a live document may be English only",
+      "plan_entry": "theories/becoming/chapters/ALIGNMENT-DIRECTION.zh.md"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-DESIGN.md",
+      "old_sha256": "46d6af367cca85430da687428227bddfe19ed4dffbaabe2c28464f566d67eb69",
+      "new_sha256": "fdc9ee10e4bd545d9bb6e8caed4c16c95aefcbc6264299f3173da7e111e16dc0",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-COMPLETION-REVIEW.md",
+      "old_sha256": "41eacb089599b8168ccd247ecdea1f01e91e15c2c2c9ab1b417cdcdc3f09e24e",
+      "new_sha256": "df90112015bc13e18346e5d17133f880bd7d72b77ac82756425447e43b46581b",
+      "references": 2
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-COMPOSITION-CHECKPOINT.md",
+      "old_sha256": "7d481b3b821a295dc06a52c86e05cc850af6050273ba90663af2365f5ab55b2f",
+      "new_sha256": "b4c807794af8f043d76a7bd16d3bd0a561031c89c47020899e526894bc366e7c",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-EVIDENCE-CHECKPOINT.md",
+      "old_sha256": "db7a614ae50b52a2dbcddf18b515bc9d1265670c8139f04eeaf4a4f2c8603323",
+      "new_sha256": "ad76e4cd3716c2dc4a783552d2e9e447267bb0775fd7b0c043a44b0a8e46ae1b",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-FRONTIER-ASSESSMENT.md",
+      "old_sha256": "9433c2a6c46ff8be48b2b0bdb6eb9210f17f56987098b843b12f8f315a3878c5",
+      "new_sha256": "a851c11ea77725e599f5935e2d5a318769957a098203fc934f37db3d372c387c",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-REVIEW.md",
+      "old_sha256": "d593b435530f65fe9382d8e3c902bdb865c2c92a5d4710af741294a951d2446c",
+      "new_sha256": "9e93b2f8a950b785d9d6c4c1a872acac874a87b235d479ba3011ab15ee551dd9",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md",
+      "old_sha256": "976d0e6544c3951c8f5d0bf301d79e984cb2416818a10fb9ebdd1eddef4f15b7",
+      "new_sha256": "ba42182ab3d2441a713ab3a5c228cd097e998300ad6457d35f6ce92f837783b0",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "old_sha256": "7d101ae98c63306d3bf5715144acc474e58bde6346f50c0b70be0706dd617c1e",
+      "new_sha256": "80339b3339cc403476ebe2c04f29ed59d8cef9e6b78a73252bb7ad46c3aa9090",
+      "references": 2
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "old_sha256": "3fb41522a4ba6e6177a3baf8462e49deacdb7fbc6dec9441b2227e3292c3c756",
+      "new_sha256": "f38e89a8586253f250e43926544c8a0dab7d7f341bf20f46f50bdee2ad50a705",
+      "references": 2
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-INTEGRATION.md",
+      "old_sha256": "c572105ee56e0a50d69c544e5cac74bb0820fd597378b5d88c01010dac65b33c",
+      "new_sha256": "f02ac07a5153e600beaa460339e2b6e9256d4ba229e6d04ede2ee702e6529fcd",
+      "references": 1
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/PROTOCOL.md",
+      "old_sha256": "94b239760d29dc0ccac5aabb39f455a9bcf9969355f051cbaf04a0647b222b62",
+      "new_sha256": "7dbb8744e25ee82bd5a90c7182ea920b975d77d67e81467160b0d6cf9a0e69ad",
+      "references": 1
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/RESULTS.md",
+      "old_sha256": "b938282b537e243ba0364b351270a26489c9db8ca206a8725dfd955fbe6b60c2",
+      "new_sha256": "7018dade2c27362b4952c749d6a74369448a0ff304fd783d5823845b8e00aed0",
+      "references": 1
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/README.md",
+      "old_sha256": "8c3047aba336c5029ceac9c4385c6f3a7767c5ed7e01746b04ca9d526c748b85",
+      "new_sha256": "0aaf33cdd3eed47d359de3f1ba075cbd73810b9ea066a3b8a6d07fb8137e331a",
+      "references": 1
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/RESULTS.md",
+      "old_sha256": "3b01ca97d05906fde495898b8dacdf14a556f9a51b8abd81d4d231b253a3ce5b",
+      "new_sha256": "07422c511a6a337964ffb8d5c7ddac04e94e489fca4a2072f05ae445662d1e2f",
+      "references": 1
+    },
+    {
+      "path": "experiments/shared-renewal-capability/formal/README.md",
+      "old_sha256": "6bd4c8d4fcb5bf58d6db92b40f2ba6884ec76374ab71993596012881f205e798",
+      "new_sha256": "a06f3feb287257370a9428b2fc68af1bc39c1cdb06f555a7b6996809d61f43c1",
+      "references": 1
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/PROTOCOL.md",
+      "old_sha256": "f77d2681e94f7b4edf78eb7622f1f6f9c4b59e218f021afe0866749124518e59",
+      "new_sha256": "1a0f3a7fd11525d011a99aa46cf09e7fc6405326b75e6dd1235340e37496e94f",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
+      "old_sha256": "c6f9e43681fac136d9f82a786aa9cf0df4298333c77e4ab2a0198e76d1055ef1",
+      "new_sha256": "1483d43b318d511497b2c9f2859566447df2ca537ecf1a676fc302d64fb747c6",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+      "old_sha256": "fb0fe2f00847be4c15585e3b382efb117f41290592c9d9332236d053a6d2107c",
+      "new_sha256": "ad174d979201d400b9cf42a39d7ea0297172931bb4445d6d60c2a5728bfc55e8",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
+      "old_sha256": "f6c7ad38e6c4cc088685d304d3a9c03f09103cb8e20eaba5aaafcd28b1bca6d7",
+      "new_sha256": "43cd1f73b38b4ad243b86e49154104e7eb9c950a7cd574b74096228db5ef15a1",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/chapters/ETHICAL-LEARNING.md",
+      "old_sha256": "83a747dc5e6437d34e901014f9289ebeca81fbc339010c718d6381b4d928d6b4",
+      "new_sha256": "abc5bfa42d86c1fde9c26611f6fb16c05286121f4c7758bc2a416e761460ca6c",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/chapters/ETHICAL-LEARNING.zh.md",
+      "old_sha256": "12ef31a8e0e86233c24f1982caf9d1d7a5fa47a981882660e420736ba5fcc7f6",
+      "new_sha256": "f689e324135768de9a2151cb003f0faf90af12c40c09edbb90a6bb2120995084",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/chapters/KNOWLEDGE.md",
+      "old_sha256": "e9b75434fa6fb591c9d645dffbd9882b0b79694f0d5feafb423e4162e2638435",
+      "new_sha256": "25ca386f9531b9b3216678223c78db3f059f05b66ee366142f5843a6b759cca4",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/chapters/MATHEMATICAL-CORE.md",
+      "old_sha256": "985539d44f8c875d5195a228039e52b84e55e9b401a851c70c26178b6bb13dce",
+      "new_sha256": "e4d110e2b6ccd0f9f972b0c036072140ece2bd00d1a41af9329e6c7d6dee0c84",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md",
+      "old_sha256": "95371fc59817b4196f15e48d007f0c588d10a2ccc20f27a968e215a81a52adfe",
+      "new_sha256": "9ba598b45d73005e3cbdd1a2d7786782536f9a0d122b68926a5b7b079080be3f",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+      "old_sha256": "b8050f1365bbd55561f5ef30009d6779ab25af933d08a468de1865cee1965faa",
+      "new_sha256": "69865ccbfde6d46344788d0b27a4baff2fdc92199e460d0e82ff3991674a68d4",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "old_sha256": "575de1197fafe9db7cf403f4b495853c9f6c1a5497f760dbf52f0a01e1b43759",
+      "new_sha256": "c127600b5448aecc2920bb3e60e3c970e22f749dfddd5d17639ed68491e6ef7e",
+      "references": 10
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+      "old_sha256": "ddbda329b0af8f59c1aa8ce4ca2d7069500028847a175d9ea023932070828d5b",
+      "new_sha256": "95c0212e609facb0110c27a65c0138e997051d39557c2d60ef2fbe79b2a791e5",
+      "references": 6
+    },
+    {
+      "path": "theories/becoming/chapters/WANG-YANGMING.md",
+      "old_sha256": "e60d6b9c74101513fd0756e37bd1c62fcc87d38aaf69b23832ceb5c5f33e216b",
+      "new_sha256": "0b227a9301106629859c1283227844045123040ede89e2f947053a97e21f733b",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/GENERATIVITY-CHAIN.md",
+      "old_sha256": "4262283c75f4438455c94c31fd25f040fbd41ffaf5b8b7a24008ef98a17c47d0",
+      "new_sha256": "4af08742a0dd44d4d50acc7885569e4cbdecfcbe8fca04db1d523e31afde846e",
+      "references": 6
+    },
+    {
+      "path": "theories/becoming/results/data/arguments-a-l.json",
+      "old_sha256": "4ecc2dec0d2cc8065c0f37c541669e260be5d609c38f6c4c204207d9828cf97c",
+      "new_sha256": "9b512089126594d9defb4fcf8d1fc3749ffaa417e6c12a23d3f43a72a299acc5",
+      "references": 4
+    },
+    {
+      "path": "theories/becoming/results/data/arguments-m-z.json",
+      "old_sha256": "1e61fdeeace07117f588be6f0902142654ba55a674e73669b6f1b103acf9cad1",
+      "new_sha256": "38eeb6979792b9dc5d680d48524efbe47f2e90d3f8ede1c0827d7c707430c61a",
+      "references": 3
+    },
+    {
+      "path": "theories/becoming/results/data/generativity-chain.json",
+      "old_sha256": "d7634df3a6662c44d31294dfbca40af954122128f6022753e6ede7b4a0e7ab95",
+      "new_sha256": "c6d6097f6f7b3b79ecde564a7e4fed6ad33d48ca547c0f8e55df4155b8334093",
+      "references": 22
+    },
+    {
+      "path": "theories/becoming/results/data/session-results.json",
+      "old_sha256": "0710048077e9bfa213f0ff875a39026fb66c84ff24ebeb7aed493b01393c1cc8",
+      "new_sha256": "8e098c36607729e3c43a9abc3a36f2bade0449c4ab8cee3c8e0b10c187c6e91a",
+      "references": 3
+    },
+    {
+      "path": "theories/becoming/results/records/protection-priority-excludes-uniform-aggregation.json",
+      "old_sha256": "aa2a677a11c7f7ada603342e896754a68f51d0045a6ed1722e1148337f03c2c4",
+      "new_sha256": "f12c8fe25390d9b145ca7e94cc7804ff9eb32fb7a52d88a492f8c0745a6b5c67",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/renewing-consuming-formation.json",
+      "old_sha256": "4b8c52b25459ab440f592f4c03732b79ed06a60e87ead6c6001405c29833c568",
+      "new_sha256": "45f312eec4cbb3db866ad020253eeedeb884c825d0a9fff26167a3f8dace7a40",
+      "references": 1
+    },
+    {
+      "path": "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
+      "old_sha256": "02e94aa880ec7ce48184ac29599825682e64ff9e265d9cc726d96f3e93ee9b5c",
+      "new_sha256": "51defc725df0815360072a98b4094a9d6f50f38b17d4369a50c5ce9e4d96a6d7",
+      "references": 3
+    },
+    {
+      "path": "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.zh.md",
+      "old_sha256": "23b51727273553ffc02126bbc8fe9ca5ae4be72f0772deb865f041399d8f8ac5",
+      "new_sha256": "33fbee9f0b4c5d9cccf14348c79cd383e299c1f61e1af116ff3a8a8f19cd812e",
+      "references": 1
+    }
+  ],
+  "history_roots": [
+    "theories/becoming/history"
+  ],
+  "generated_pages_to_rerender": [
+    "theories/becoming/chapters/README.md",
+    "theories/becoming/results/ARGUMENTS-A-L.md",
+    "theories/becoming/results/ARGUMENTS-M-Z.md",
+    "theories/becoming/results/LEAN-INDEX.md",
+    "theories/becoming/results/SESSION-RESULTS.md",
+    "theories/becoming/results/data/lean-index.json",
+    "theories/becoming/results/data/source-index.json",
+    "theories/becoming/results/lean-declarations/becoming-core.md",
+    "theories/becoming/results/lean-declarations/concern.md",
+    "theories/becoming/results/lean-declarations/core.md",
+    "theories/becoming/results/lean-declarations/ethics.md",
+    "theories/becoming/results/lean-declarations/inquiry.md",
+    "theories/becoming/results/records/protection-priority-excludes-uniform-aggregation.md",
+    "theories/becoming/results/records/renewing-consuming-formation.md"
+  ],
+  "verification_errors": []
+}

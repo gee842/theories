@@ -60,7 +60,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [GenerativeComparison.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean) | `GenerativeComparison.G0` |
 | receipt | [generative-discrimination-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json) | — |
 | statement | [GENERATIVE-DISCRIMINATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md) | — |
-| integration | [G0-WARRANT.md](../../chapters/G0-WARRANT.md) | — |
+| integration | [G0-WARRANT.md](../../history/G0-WARRANT.md) | — |
 | provenance | [2026-10-09-lean-evidence-roles.md](../../../../sources/15-codex-theory-conversations/2026-10-09-lean-evidence-roles.md) | — |
 | review | [GENERATIVE-DISCRIMINATION-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md) | — |
 | proof | [Stock.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean) | `Becoming.Stock.FallsBy`, `Becoming.Stock.trace_falls`, `Becoming.Stock.falls_iff`, `Becoming.Stock.trace_exhausts`, `Becoming.Stock.zero_of_add_le`, `Becoming.Stock.exhausted_within`, `Becoming.Stock.draws_nothing_from_empty` |

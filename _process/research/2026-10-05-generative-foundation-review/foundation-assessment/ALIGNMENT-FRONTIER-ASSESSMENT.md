@@ -33,7 +33,7 @@ The accepted mathematical and computational work establishes implications under 
 
 Conversely, familiar ingredients and exact conventional equivalence do not make a particular construction empty. A contribution can expose a consequential omitted premise, demonstrate a previously unrecognized obstruction or connect results whose actual inputs fit. It need not outperform its own exact implementation in another vocabulary. A claim of superior intervention performance does require an appropriate matched comparison. These are claim-specific evidential standards, not new completion conditions.
 
-The conditional foundation's [final coordinating acceptance](../root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) under the original five conditions is therefore retained. The stronger [alignment contract](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md) remains open. Its outstanding practical reliability and governance obligations should not be described as missing proofs of already accepted finite formation or bounded concern.
+The conditional foundation's [final coordinating acceptance](../root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) under the original five conditions is therefore retained. The stronger [alignment contract](../../../../theories/becoming/history/ALIGNMENT-COMPLETION.md) remains open. Its outstanding practical reliability and governance obligations should not be described as missing proofs of already accepted finite formation or bounded concern.
 
 ## The next connection to test
 

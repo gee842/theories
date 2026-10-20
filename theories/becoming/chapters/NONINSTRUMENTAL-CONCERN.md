@@ -465,7 +465,7 @@ M/C2 不是运行时被读取或学得的内部变量。实际起作用的是有
 
 模型包已通过 Lean 4.29.1 的新鲜临时构建：复用两个共同核心模块，新模块审计 **66 个声明**，其中过程与资源接口 32 个、伦理契约接口 14 个、具体正反例 20 个。它们的依赖审计没有 `sorry`、自加公理或未证明占位；部分证明使用 Lean 的标准经典与商类型公理。这是明确前提下的证明，不是“没有假设”的证明。完整结果见[构建记录](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/verification.json)与[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-CONCERN-REVIEW.md)。
 
-主要连接可写为：在实际患者条件、C1、C2 和指定回应的 `Eligible` 条件成立时，**同一初态既有患者指向的道德优点，又存在一条真实允许的回应轨迹；终态中同一患者、同一事件的负担为零，终态余额加实际方案费用等于初态资源。** `grounded_eligible_merit` 与 `merit_and_actual_service_compose` 分别承担伦理根据与实际过程的连接。[F14](FORMAL-CORE.md#f14-noninstrumental-patient-reasons-and-paid-response)已将这一结果纳入总形式核心。
+主要连接可写为：在实际患者条件、C1、C2 和指定回应的 `Eligible` 条件成立时，**同一初态既有患者指向的道德优点，又存在一条真实允许的回应轨迹；终态中同一患者、同一事件的负担为零，终态余额加实际方案费用等于初态资源。** `grounded_eligible_merit` 与 `merit_and_actual_service_compose` 分别承担伦理根据与实际过程的连接。[F14](../history/FORMAL-CORE.md#f14-noninstrumental-patient-reasons-and-paid-response)已将这一结果纳入总形式核心。
 
 最小完整示例从没有载体、没有证据和没有选定动作开始。两名患者 p、q 的负担分别为 3、4，私人奖励为零、先前角色与私人采纳均为 false；6 单位资源依次支付形成载体 2、读取 p 的当前状态 1、选择 1、执行 2。余额沿历史为 **6 → 4 → 3 → 2 → 0**；p 的负担变为 0，q 仍为 4。响应程序及调度已经供给，所以这不是无动机行动或自发形成关切的证明。
 

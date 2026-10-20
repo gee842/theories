@@ -55,7 +55,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [PracticalJudgment.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean) | `PracticalJudgment.Better`, `PracticalJudgment.no_protection_trade_by_count` |
 | receipt | [generative-discrimination-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json) | — |
 | statement | [GENERATIVE-DISCRIMINATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md) | — |
-| integration | [G0-WARRANT.md](../../chapters/G0-WARRANT.md) | — |
+| integration | [G0-WARRANT.md](../../history/G0-WARRANT.md) | — |
 | provenance | [2026-10-09-lean-evidence-roles.md](../../../../sources/15-codex-theory-conversations/2026-10-09-lean-evidence-roles.md) | — |
 | review | [GENERATIVE-DISCRIMINATION-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md) | — |
 | proof | [ValuationFrames.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean) | — |

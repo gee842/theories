@@ -161,7 +161,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **ID:** `alignment-completion` · **Category:** roadmap
 
-**Source:** [ALIGNMENT-COMPLETION.md](../chapters/ALIGNMENT-COMPLETION.md)
+**Source:** [ALIGNMENT-COMPLETION.md](../history/ALIGNMENT-COMPLETION.md) · earlier chapter, kept in history at its original scope
 
 **Status:** Seven practical requirements remain open
 
@@ -1107,7 +1107,7 @@ Correspondence covers only the stated premises and subclaims; source existence d
 
 **ID:** `formal-core` · **Category:** formal compendium
 
-**Source:** [FORMAL-CORE.md](../chapters/FORMAL-CORE.md)
+**Source:** [FORMAL-CORE.md](../history/FORMAL-CORE.md) · earlier chapter, kept in history at its original scope
 
 **Status:** Historical hand-proof compendium with scoped Lean extensions
 
@@ -1133,7 +1133,7 @@ Correspondence covers only the stated premises and subclaims; source existence d
 
 **ID:** `formal-specification` · **Category:** formal specification
 
-**Source:** [FORMAL-SPECIFICATION.md](../chapters/FORMAL-SPECIFICATION.md)
+**Source:** [FORMAL-SPECIFICATION.md](../history/FORMAL-SPECIFICATION.md) · earlier chapter, kept in history at its original scope
 
 **Status:** Versioned conditional specification with checked interfaces
 
@@ -1275,7 +1275,7 @@ Correspondence covers only the stated premises and subclaims; source existence d
 
 **ID:** `g0-warrant` · **Category:** normative foundation
 
-**Source:** [G0-WARRANT.md](../chapters/G0-WARRANT.md)
+**Source:** [G0-WARRANT.md](../history/G0-WARRANT.md) · earlier chapter, kept in history at its original scope
 
 **Status:** Comparative support for an adopted axiom; universal practical warrant open
 

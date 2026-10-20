@@ -14,7 +14,7 @@ A final separate read of the saved formulation found no substantive blockers at 
 
 ## Mechanism review
 
-The [governing position](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#contrasting-regimes-inside-one-explanatory-framework) already requires specified dynamics before basin language carries a mathematical claim. The [formal core](../../../../theories/becoming/chapters/FORMAL-CORE.md), F8–F10, separates feasible control, installed performance and stochastic persistence. A desirable region, an available remedy and a process that actually carries out that remedy are distinct.
+The [governing position](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#contrasting-regimes-inside-one-explanatory-framework) already requires specified dynamics before basin language carries a mathematical claim. The [formal core](../../../../theories/becoming/history/FORMAL-CORE.md), F8–F10, separates feasible control, installed performance and stochastic persistence. A desirable region, an available remedy and a process that actually carries out that remedy are distinct.
 
 The [unified theory](../../../../theories/becoming/history/THEORY.md), sections 7–8, supplies private-retention/shared-depletion and recurring-correction funding counterexamples. The [formation study](../../../../theories/becoming/history/FORMATION.md), “Standing and influence have different grounds,” permits sustained production with unaddressed harm to a dispensable patient. These counterexamples prevent market persistence or renewable productive capacity from certifying inclusive generativity.
 

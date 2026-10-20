@@ -1657,7 +1657,7 @@
             {
               "label_zh": "当前理论",
               "label_en": "Current account",
-              "path": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md"
+              "path": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md"
             },
             {
               "label_zh": "整合、证明与反审",
@@ -1682,7 +1682,7 @@
             {
               "label_zh": "因应转化的当前表述",
               "label_en": "Current responsive-transformation account",
-              "path": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#15-responsive-transformation"
+              "path": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md#15-responsive-transformation"
             }
           ]
         }
@@ -4262,7 +4262,7 @@
             {
               "label_zh": "完整哲学候选",
               "label_en": "Connected proposal",
-              "path": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md"
+              "path": "theories/becoming/history/PHILOSOPHICAL-ACCOUNT.md"
             },
             {
               "label_zh": "共同求知与地位",
@@ -4566,7 +4566,7 @@
             {
               "label_zh": "多系统与父子关系",
               "label_en": "Plural systems and parent relations",
-              "path": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md"
+              "path": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md"
             },
             {
               "label_zh": "关系接续、证明与反审",
@@ -4581,7 +4581,7 @@
             {
               "label_zh": "因应转化的当前表述",
               "label_en": "Current responsive-transformation account",
-              "path": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#15-responsive-transformation"
+              "path": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md#15-responsive-transformation"
             },
             {
               "label_zh": "Ren的澄清",
@@ -6980,7 +6980,7 @@
             {
               "label_zh": "因应转化的当前表述",
               "label_en": "Current responsive-transformation account",
-              "path": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#15-responsive-transformation"
+              "path": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md#15-responsive-transformation"
             }
           ]
         },
@@ -7621,7 +7621,7 @@
     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-CHOICE-INTEGRATION.md": "496f2c0cb7facb8704cdcc579d4e896fdde2e4e09907d931773871b19e233721",
     "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean": "2a2c6571d43f13774a8d27ff473bda6f7c363cdb0e972ecb7ebff3a23a238707",
     "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-choice-verification.json": "b1eababbdde2068494f202cc8ca12c44be95929c98a12355ef140255ee39a4f2",
-    "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md": "98b0e36fa0b8444d8e1c2b7de94c383cc20d63ca4c222195eb41c36b0424f59b",
+    "theories/becoming/history/PHILOSOPHICAL-ACCOUNT.md": "98b0e36fa0b8444d8e1c2b7de94c383cc20d63ca4c222195eb41c36b0424f59b",
     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SHARED-INQUIRY-AND-STANDING.md": "05c4fdfa0c60ac50104595255e93830f14cb2f00fb8691adf0db840041fafebe",
     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md": "a62d95877b069b6d291ff67fdfe595b2f37974886fc7ad09fe40a2308d998505",
     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md": "0c0674eb1cf575c62a8338b7e8f3141547d4c3c5c5f8a9d278b438a622f65f7e",
@@ -7895,7 +7895,7 @@
     "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_formation_compilation.py": "c200793631a6c8f9985824dce4c074e99053e371b967dd662680b50b254dee23",
     "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/formation-compilation-verification.json": "5adb28771bb4508fa766406904a9ef96a1bebf6304ea7b783f1a5be20213660b",
     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-GOOD-GROUNDING.md": "2bd6577a9a219b95730bfeb6f0386e30e9f21fce6103ff2e0c43ee0a47a58472",
-    "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md": "fb7a8fb58dbbe27778ed78330498fd20b1d168caeebbc725bad7a7027eab9727",
+    "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md": "fb7a8fb58dbbe27778ed78330498fd20b1d168caeebbc725bad7a7027eab9727",
     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PLURAL-CORRECTION-INTEGRATION.md": "cfefd5e134f143211c65f9db5c7d2678fcb1c21f0bbb4c1b6c9556251ef5f0c1",
     "sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md": "8c5181993ed3b12a325832e22dbb8b9b3ec1abf7b2ef68a1ed97a463b54e865b",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionPopulation.lean": "bd13fad67f759b36bc3800b046a95f6b1dd715328c9574a44af33323acda1de9",
@@ -9535,27 +9535,27 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.zh.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.zh.md",
-    "theories/becoming/chapters/ALIGNMENT-COMPLETION.md",
+    "theories/becoming/history/ALIGNMENT-COMPLETION.md",
     "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
-    "theories/becoming/chapters/ALIGNMENT-DIRECTION.zh.md",
+    "theories/becoming/history/ALIGNMENT-DIRECTION.zh.md",
     "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md",
     "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.zh.md",
     "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md",
-    "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.zh.md",
+    "theories/becoming/history/BASIC-CONFLICT-JUDGMENT.zh.md",
     "theories/becoming/chapters/BECOMING-FOUNDATION.md",
     "theories/becoming/chapters/BECOMING-FOUNDATION.zh.md",
     "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md",
-    "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.zh.md",
+    "theories/becoming/history/CHOICE-AND-GENERATIVE-CONTEXT.zh.md",
     "theories/becoming/chapters/CLAIMS.md",
     "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
     "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.zh.md",
     "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
     "theories/becoming/chapters/ETHICAL-LEARNING.md",
     "theories/becoming/chapters/ETHICAL-LEARNING.zh.md",
-    "theories/becoming/chapters/FORMAL-CORE.md",
-    "theories/becoming/chapters/FORMAL-SPECIFICATION.md",
-    "theories/becoming/chapters/G0-WARRANT.md",
-    "theories/becoming/chapters/G0-WARRANT.zh.md",
+    "theories/becoming/history/FORMAL-CORE.md",
+    "theories/becoming/history/FORMAL-SPECIFICATION.md",
+    "theories/becoming/history/G0-WARRANT.md",
+    "theories/becoming/history/G0-WARRANT.zh.md",
     "theories/becoming/chapters/GENERATED-LOGIC.md",
     "theories/becoming/chapters/GENERATED-LOGIC.zh.md",
     "theories/becoming/chapters/HANZI-AND-THEORY-TREE.md",
@@ -9566,14 +9566,14 @@
     "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
     "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.zh.md",
     "theories/becoming/chapters/MATHEMATICAL-CORE.md",
-    "theories/becoming/chapters/MATHEMATICAL-ROOT-FRONTIER.md",
+    "theories/becoming/history/MATHEMATICAL-ROOT-FRONTIER.md",
     "theories/becoming/chapters/NONDUAL-METHOD.md",
     "theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md",
-    "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
-    "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md",
-    "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.zh.md",
+    "theories/becoming/history/PHILOSOPHICAL-ACCOUNT.md",
+    "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md",
+    "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.zh.md",
     "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
-    "theories/becoming/chapters/PRACTICAL-JUDGMENT.zh.md",
+    "theories/becoming/history/PRACTICAL-JUDGMENT.zh.md",
     "theories/becoming/chapters/PRE-QIN-AND-WENYAN.md",
     "theories/becoming/chapters/README.md",
     "theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md",
@@ -9588,7 +9588,7 @@
     "theories/becoming/history/THEORY-OF-BECOMING.zh.md",
     "theories/becoming/chapters/WANG-YANGMING.md",
     "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
-    "theories/becoming/chapters/WISDOM-AND-CONTEXT.zh.md",
+    "theories/becoming/history/WISDOM-AND-CONTEXT.zh.md",
     "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
     "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.zh.md",
     "theories/becoming/history/ABSTRACTION-ACQUISITION.md",

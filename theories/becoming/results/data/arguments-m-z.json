@@ -165,7 +165,7 @@
   },
   {
     "id": "mathematical-root-frontier",
-    "source": "theories/becoming/chapters/MATHEMATICAL-ROOT-FRONTIER.md",
+    "source": "theories/becoming/history/MATHEMATICAL-ROOT-FRONTIER.md",
     "title_zh": "生成根基的数学重构前沿",
     "title_en": "The frontier of mathematical reconstruction",
     "category": "mathematics",
@@ -519,7 +519,7 @@
     "scope_en": "Complete as a connected, defended synthesis; universal truth, exhaustive semantics and exclusive necessity are not established. Affirmative arguments can support each other cumulatively, but shared premises may not be counted repeatedly as independent evidence. The listed Lean modules are reused; the chapter adds no theorem.",
     "next_zh": "探究的权威本身尚未建立整个实践方案；剩余工作是实际否认的实质根据，而不是强制使用本理论的词汇或普遍同意。",
     "next_en": "Inquiry’s authority alone has not established the whole practical package; the remaining work concerns the substantive grounds of actual denials, not mandatory use of this vocabulary or universal agreement.",
-    "source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+    "source": "theories/becoming/history/PHILOSOPHICAL-ACCOUNT.md",
     "source_sha256": "d441074f1829f6f1387c8d4552012f8798123c58a649f574889bb59e56bc86ce",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean",
@@ -550,7 +550,7 @@
     "scope_en": "Plural-system round 37 theorems / 58 audits; relational round 39/55; request-history round 33/62, with inherited counts listed separately. §§7, 11 and 14 record historical limits of particular models and do not require the inquiry to stop. The §15 condition table synthesizes established results; it is not a newly proved sufficient checklist, and no deployment is claimed.",
     "next_zh": "已取得的根据何时仍支持进行中的实践、何种关系能揭示其失效、有根据的修订怎样进入活动；答案可以是有界保证、可废止判断或明确界限。",
     "next_en": "When acquired grounds still support an ongoing practice, which relations disclose their loss of applicability, and how a warranted revision enters activity; answers may be bounded guarantees, defeasible judgments or explicit limits.",
-    "source": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md",
+    "source": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md",
     "source_sha256": "ac7eef13029afe616c8360492614e5aa2c886e1ab112d11edd721affd799293d",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean",

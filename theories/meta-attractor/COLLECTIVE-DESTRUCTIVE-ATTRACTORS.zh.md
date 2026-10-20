@@ -113,7 +113,7 @@
 
 ### 对 corrigibility 的推进：共同修订任务本身
 
-现有[目的形成与修订](../becoming/history/GOAL-FORMATION-AND-REVISION.md)已经解释在明确条件下认识目的的形成、改变成就判准并让后来行动依赖新目的；[关系纠正与变化中的接续](../becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#12-correction-depends-on-the-requests-history)已经检查请求怎样通过变化中的关系有效到达。两者均为成果，不能重开为一般待做任务。
+现有[目的形成与修订](../becoming/history/GOAL-FORMATION-AND-REVISION.md)已经解释在明确条件下认识目的的形成、改变成就判准并让后来行动依赖新目的；[关系纠正与变化中的接续](../becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md#12-correction-depends-on-the-requests-history)已经检查请求怎样通过变化中的关系有效到达。两者均为成果，不能重开为一般待做任务。
 
 本会话现在要连接的是：**共同活动中取得的新认识，怎样改变正在指导共同活动的问题表述与任务，同时进入已经在执行的调节关系。** 这比“各部分同意旧目标”更具体。供水情境中，原来规定的灌溉请求可能被可靠送达，但后来发现继续照做会破坏当下的生活条件。此时既要保留已知需求和实际依存，也要有根据地撤回、改写或接续原请求。正确传达旧指令不独自回答现在该做什么。
 

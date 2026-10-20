@@ -30,6 +30,24 @@
       "plan_entry": "theories/becoming/chapters/ALIGNMENT-AXIS.md"
     },
     {
+      "old_path": "theories/becoming/chapters/ALIGNMENT-COMPLETION.md",
+      "new_path": "theories/becoming/history/ALIGNMENT-COMPLETION.md",
+      "sha256": "23631b6bebdce0c422cd26aecbd48c96fc0ccc45c796fee6e0034736718b6f9e",
+      "blob": "2634abb174653f5fd7140ce559736b491efbc09f",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E14: 6 Oct conditional-candidate closure, 0 records; pinned only by foundation-assessment/FRONTIER-CHECK.py",
+      "plan_entry": "theories/becoming/chapters/ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ALIGNMENT-DIRECTION.zh.md",
+      "new_path": "theories/becoming/history/ALIGNMENT-DIRECTION.zh.md",
+      "sha256": "0efb30dc7a3398e674a987e6f004c9725a42ae89d64320de708873afa6e8c638",
+      "blob": "9b14b3701b4b1228ac0605496a7af80a21683306",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 8 times) of a chapter whose English edition is canonical; a live document may be English only",
+      "plan_entry": "theories/becoming/chapters/ALIGNMENT-DIRECTION.zh.md"
+    },
+    {
       "old_path": "theories/becoming/chapters/ARCHITECTURE-FORMATION.md",
       "new_path": "theories/becoming/history/ARCHITECTURE-FORMATION.md",
       "sha256": "5728b31b095b70a6c5c141cd1ffc66b49e0109d96194202c8fdce878d91cb647",
@@ -73,6 +91,24 @@
       "batch": "H4",
       "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
       "plan_entry": "theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.zh.md",
+      "new_path": "theories/becoming/history/BASIC-CONFLICT-JUDGMENT.zh.md",
+      "sha256": "e4a303ece4d17f0f75812035ff62b065a358a5cd83b115d53902b28ce9a94478",
+      "blob": "4d09324a725567e7b432f79ac4bead8b056bf20c",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 13 times) of a chapter whose English edition is canonical; a live document may be English only",
+      "plan_entry": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.zh.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.zh.md",
+      "new_path": "theories/becoming/history/CHOICE-AND-GENERATIVE-CONTEXT.zh.md",
+      "sha256": "24585dcfd09742c1f4dce44fff77aebc5c61cf5292d2ad815ce1a577c2a1ea60",
+      "blob": "f827e918f1216547c25ac0c4e04656e409395226",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 9 times) of a chapter whose English edition is canonical; a live document may be English only",
+      "plan_entry": "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.zh.md"
     },
     {
       "old_path": "theories/becoming/chapters/CLAIMS-AND-PAID-ACTION.md",
@@ -291,6 +327,24 @@
       "plan_entry": "theories/becoming/chapters/EXPLANATORY-NECESSITY.md"
     },
     {
+      "old_path": "theories/becoming/chapters/FORMAL-CORE.md",
+      "new_path": "theories/becoming/history/FORMAL-CORE.md",
+      "sha256": "2e7f6197876f29c89940c2b97cf176457f36ef46e1fb6ae4e9a3831597dbc080",
+      "blob": "cbdb348e3445d0bd5dfa3c2097ce5f5cb7521f08",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E14: historical (5 Oct), 0 records; pinned only by a frozen checker",
+      "plan_entry": "theories/becoming/chapters/FORMAL-CORE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/FORMAL-SPECIFICATION.md",
+      "new_path": "theories/becoming/history/FORMAL-SPECIFICATION.md",
+      "sha256": "ebb1f2ac7a48f0ef07fb4441206500a723af40a60565cc681d4aa228bf38f9a1",
+      "blob": "32ea57896d6341b303a402c7d0cc72aafc2fedb1",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E14: historical (5 Oct, v0.10), 0 records; pinned only by a frozen checker",
+      "plan_entry": "theories/becoming/chapters/FORMAL-SPECIFICATION.md"
+    },
+    {
       "old_path": "theories/becoming/chapters/FORMATION-MATH.md",
       "new_path": "theories/becoming/history/FORMATION-MATH.md",
       "sha256": "c65410ed0daf160c49c477efc16c7ed7bf0d1adf41983b77a9f852751ecf7ecf",
@@ -334,6 +388,24 @@
       "batch": "H4",
       "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
       "plan_entry": "theories/becoming/chapters/FOUNDATION-PREMISES.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/G0-WARRANT.md",
+      "new_path": "theories/becoming/history/G0-WARRANT.md",
+      "sha256": "4eca9b3040f3b25cf9981bb43acb3767c818e847d04e1e2d9cc1e1a47a2283d4",
+      "blob": "57b26093348fe0efb1638fb5402a2f530c459b84",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E14: framing historical (axiom adopted 9 Oct, now a condition, §6.15)",
+      "plan_entry": "theories/becoming/chapters/G0-WARRANT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/G0-WARRANT.zh.md",
+      "new_path": "theories/becoming/history/G0-WARRANT.zh.md",
+      "sha256": "ae8f38e2f3d89560631c8c448e8ae460b24077d4c8011b57a2b4a8300eb5af32",
+      "blob": "7a5a372fff27a9beeef7b6b3391527a62d9f2b63",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E14/E5: unmaintained edition titled as if G0 were an adopted axiom",
+      "plan_entry": "theories/becoming/chapters/G0-WARRANT.zh.md"
     },
     {
       "old_path": "theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md",
@@ -534,6 +606,15 @@
       "plan_entry": "theories/becoming/chapters/MATERIAL-UPDATER-COMPOSITION.md"
     },
     {
+      "old_path": "theories/becoming/chapters/MATHEMATICAL-ROOT-FRONTIER.md",
+      "new_path": "theories/becoming/history/MATHEMATICAL-ROOT-FRONTIER.md",
+      "sha256": "0dc0378d6ec497f3e7e31f1501c29e2cbf7636c846322e20e5355415f6c702cb",
+      "blob": "c3f4740eecbe134e8619fd3f4a5cc171cf19558f",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E14/E1: superseded by §8 and §9; 0 records",
+      "plan_entry": "theories/becoming/chapters/MATHEMATICAL-ROOT-FRONTIER.md"
+    },
+    {
       "old_path": "theories/becoming/chapters/MATHEMATICAL-TRUTH-AND-THE-ROOT.md",
       "new_path": "theories/becoming/history/MATHEMATICAL-TRUTH-AND-THE-ROOT.md",
       "sha256": "780a920dcc34412b329cd08bdad791029db9a8dc0fbab52af37a4e669ccf26df",
@@ -613,6 +694,42 @@
       "batch": "H4",
       "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
       "plan_entry": "theories/becoming/chapters/PAID-PREIMPORT-EVIDENCE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+      "new_path": "theories/becoming/history/PHILOSOPHICAL-ACCOUNT.md",
+      "sha256": "e3f6dadbaa9fd4a79cf6d680359ded300bf91f9606591b703bb370402917698b",
+      "blob": "c6a6c023daa125d39fcfdf2feba922320c5ce6d1",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E14/E1: 8 Oct whole-restatement, 0 records",
+      "plan_entry": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md",
+      "new_path": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md",
+      "sha256": "fb7a8fb58dbbe27778ed78330498fd20b1d168caeebbc725bad7a7027eab9727",
+      "blob": "bc686fbd0cf77a04e0a1dcc9d9c15068c799704e",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E14: §15 is the live framing; rest superseded; 0 records",
+      "plan_entry": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.zh.md",
+      "new_path": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.zh.md",
+      "sha256": "43ecde07e21d330153aaed606ed65ea228f3ed8e427b5f5c7025e1e7ecbb50b0",
+      "blob": "e87bd70d3a45fa7547d5e5ae51e472be1672da3b",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E14: edition of a retired chapter",
+      "plan_entry": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.zh.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.zh.md",
+      "new_path": "theories/becoming/history/PRACTICAL-JUDGMENT.zh.md",
+      "sha256": "fa2c370b54e2df0035350fd19687190dd74766e4db20ba1ceb5c45963e3c73fa",
+      "blob": "70dca6cea44743af624277345bfcc82950b0bef5",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 18 times) of a chapter whose English edition is canonical; a live document may be English only",
+      "plan_entry": "theories/becoming/chapters/PRACTICAL-JUDGMENT.zh.md"
     },
     {
       "old_path": "theories/becoming/chapters/PRE-QIN-AND-WENYAN.md",
@@ -991,6 +1108,15 @@
       "batch": "RH-chinese-chapters",
       "reason": "the chapter on 王阳明 as written on 7 October 2026, before the spine; its formal entry through the periphery module SituatedPractice and its old project framing (本然良知 from the generative core, 生成树) are superseded (CHINESE-SOURCES-AND-BECOMING sections 5.3 and 9: 知行合一 on the experiment laws, 心外无事 a divergence); the readings that hold only here (大学问, 心即理 in conduct, 知行, 致良知, 偏蔽 and 复通, 差等 and refusal, the competing explanation) are kept in current terms in a new file at the old path",
       "plan_entry": "theories/becoming/chapters/WANG-YANGMING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/WISDOM-AND-CONTEXT.zh.md",
+      "new_path": "theories/becoming/history/WISDOM-AND-CONTEXT.zh.md",
+      "sha256": "d4d1981127245d3fa2c7862a8f62873c6d7ba4910497c08f28b443bffbb653b9",
+      "blob": "f55cdde60d6bdfca4afc26019966c5a44a5744c6",
+      "batch": "R35-B1-chapters",
+      "reason": "R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 9 times) of a chapter whose English edition is canonical; a live document may be English only",
+      "plan_entry": "theories/becoming/chapters/WISDOM-AND-CONTEXT.zh.md"
     },
     {
       "old_path": "theories/becoming/synthesis-a-downloads-2026.md",

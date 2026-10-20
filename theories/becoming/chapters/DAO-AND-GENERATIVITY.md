@@ -11,7 +11,7 @@
 | 所追问的是“道”这一层次的问题 | 是：本理论研究整个展开的生成、维持、转化、退化与消失，以及生命、演化与评价怎样在它所成的关系中展开 | [规范章 §1](THE-THEORY-OF-BECOMING.md#1-生成同一展开--becoming-one-unfolding) |
 | 与若干古典“道”论在结构上相合 | 是，而且已逐段检查：老子 50 段（经与三家注），相合 20、定域 21、相分 9。相合是脊柱上有一条结构相同的律，不是印证 | 新章 [§4](CHINESE-SOURCES-AND-BECOMING.md#4-三种关系)、[§5.2](CHINESE-SOURCES-AND-BECOMING.md#52-老子) |
 | 准确把握现实中的共同条理 | 律在其表示上已检查；某一实际世界是否满足一条律的条件，是经验问题；真正的假设在建模选择之中（离散的步、自然数之量），公理报告对此无所说 | [规范章 §0](THE-THEORY-OF-BECOMING.md#0-前提卡--premise-card) |
-| 就是唯一完整的道，并已从生成推出善 | 否。理论从不把道等同于任何脊柱之词。它不断言伦理公理：动力学不决定意义（`Web.significance_undetermined`），生命意义只在延续条件之下是定理，而条件的根据与必要性开放 | [规范章 §5](THE-THEORY-OF-BECOMING.md#5-评价的形成--how-evaluation-forms)、[§6.15](THE-THEORY-OF-BECOMING.md#615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance)；[G0-WARRANT](G0-WARRANT.md) |
+| 就是唯一完整的道，并已从生成推出善 | 否。理论从不把道等同于任何脊柱之词。它不断言伦理公理：动力学不决定意义（`Web.significance_undetermined`），生命意义只在延续条件之下是定理，而条件的根据与必要性开放 | [规范章 §5](THE-THEORY-OF-BECOMING.md#5-评价的形成--how-evaluation-forms)、[§6.15](THE-THEORY-OF-BECOMING.md#615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance)；[G0-WARRANT](../history/G0-WARRANT.md) |
 
 前两项不能替后两项作证。理论的符号、模型与它所描述的展开，不能无条件等同。这个区分防两种失误：把结构上的对应贬为词语联想，或把思想上的亲缘抬升为真理的认证。
 
@@ -51,7 +51,7 @@
 | §4 旧稿的桥接 | 谱系审计的发现仍然成立（旧的形式桥接以一个证人定义两边，只建立了所给定义之间的对应）；新章只用已入脊柱之律，自然、无为、齐物各由一条有范围的律代替 |
 | §5.1 在生成之中不等于值得遵循 | 规范章 §5：动力学不决定意义（`Web.significance_undetermined`）；生成与退化不重叠 |
 | §5.2 共同根基不唯一决定评价 | 规范章 §6.1–§6.2：生命意义恰是一个种子加两种中立性（`Valuation.significant_iff`），去掉种子、任一中立性或连通，各有一致的反模型；中立性（对称）本身不给出意义，这一点今已检查 |
-| §6 从生成到善的正面论证 | [G0-WARRANT](G0-WARRANT.md)（起始承诺的几种支持）与规范章 §6.11（自身的预设与不变性一步）、§6.15；根据开放 |
+| §6 从生成到善的正面论证 | [G0-WARRANT](../history/G0-WARRANT.md)（起始承诺的几种支持）与规范章 §6.11（自身的预设与不变性一步）、§6.15；根据开放 |
 | §7 德与无为 | 本页 §3 |
 | §8 会改变判断的结果、§9 下一步 | 历史。仍然开放的一问（对他者之损失的回应怎样形成）由[良知的生成演化](LIANGZHI-EVOLUTION.md)保留，脊柱上没有此定理（新章 [§9](CHINESE-SOURCES-AND-BECOMING.md#9-较早各章的位置)） |
 | §10 阅读、来源与审查 | 下列证据，原样保留在历史中 |

@@ -13,6 +13,7 @@ usage (from the checkout root):
   --paths    sources the author has reread; references to them are set to the current bytes. Without --paths,
              every reference whose bytes changed is a candidate, so give --ids to bound it.
   --ids      only these records (default: every record); --ids-file reads them from a file.
+  --drift-json  the output of research.py check or render; re-points exactly the (record, path) pairs of its source_drift.
   --receipt  a passing receipt (path to verification.json); with --lean, the proof bindings of those Lean files are
              rebound to it, after checking that it binds the file's current sha256 and records success.
   --apply    write the records and the log line; without it, print what would change (dry run).
@@ -83,12 +84,19 @@ def main(argv=None):
     ap.add_argument('--paths', nargs='+')
     ap.add_argument('--ids', nargs='+')
     ap.add_argument('--ids-file', help='a file of record ids, separated by white space')
+    ap.add_argument('--drift-json', help='the JSON output of research.py check or render: re-point exactly its source_drift pairs')
     ap.add_argument('--receipt')
     ap.add_argument('--lean', nargs='+', default=[])
     ap.add_argument('--apply', action='store_true')
     a = ap.parse_args(argv)
     if a.ids_file:
         a.ids = (a.ids or []) + Path(a.ids_file).read_text().split()
+    per = None
+    if a.drift_json:
+        per = {}
+        for x in json.loads(Path(a.drift_json).read_text()).get('source_drift', []):
+            per.setdefault(x['id'], set()).add(x['path'])
+        a.ids = (a.ids or []) + sorted(per)
     if a.lean and not a.receipt:
         ap.error('--lean needs --receipt')
     receipt_data = json.loads((ROOT / a.receipt).read_text()) if a.receipt else None
@@ -109,7 +117,8 @@ def main(argv=None):
             d = json.loads(raw)
             if a.ids and d.get('id') not in a.ids:
                 continue
-            touched, rebound = repoint_record(d, current, paths, a.receipt, a.lean, receipt_data)
+            these = per[d['id']] if per is not None and d['id'] in per else paths
+            touched, rebound = repoint_record(d, current, these, a.receipt, a.lean, receipt_data)
             if touched or rebound:
                 changed[d['id']] = (f, d, sorted(set(touched)), sorted(set(rebound)))
     summary = {'records': len(changed), 'apply': a.apply,

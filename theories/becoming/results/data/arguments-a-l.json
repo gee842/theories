@@ -80,7 +80,7 @@
     "scope_en": "This is a completion contract and status map, not a separate Lean proof; cited results keep their own verification scopes.",
     "next_zh": "正在：从有效证据到有根据、获准且经效果核实的修正；应继续：完整持续流程和经验比较。",
     "next_en": "Ongoing: warranted, authorized correction with verified effects. Proposed: a complete sustained process and empirical comparison.",
-    "source": "theories/becoming/chapters/ALIGNMENT-COMPLETION.md",
+    "source": "theories/becoming/history/ALIGNMENT-COMPLETION.md",
     "source_sha256": "45f1bcdcb8ce2fafdb3a89c16532cd62bb70976a4af664f87b4b2aa16c57f985",
     "lean": [],
     "evidence": [
@@ -1110,7 +1110,7 @@
     "scope_en": "Early F1–F13 were presented as hand proofs; later extensions have their cited Lean scopes. The whole chapter must not be labeled fully machine proved.",
     "next_zh": "正在：规范根据及精确组合；应继续：只迁移当前需要的新数学主张，明确历史证明与已检查对应。",
     "next_en": "Ongoing: normative warrant and precise composition. Proposed: formalize newly needed mathematics while preserving historical and checked correspondence scopes.",
-    "source": "theories/becoming/chapters/FORMAL-CORE.md",
+    "source": "theories/becoming/history/FORMAL-CORE.md",
     "source_sha256": "ae74e3dce99f7ad765011f303054f4c10baae588fa57aef3fb6b1de6a3478ca7",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
@@ -1136,7 +1136,7 @@
     "scope_en": "Version 0.10 retains checked observers and local renewal results; functional recipes and material identification need their own evidence. This is not a full learning or ethical derivation.",
     "next_zh": "应继续：预注册的连续轮次功能维持、混合／转移分别识别，并说明它们对当前规范研究的实际依存贡献。",
     "next_en": "Proposed: prespecified multiround function, separate mixing/transfer identification, and their precise dependency contribution to normative inquiry.",
-    "source": "theories/becoming/chapters/FORMAL-SPECIFICATION.md",
+    "source": "theories/becoming/history/FORMAL-SPECIFICATION.md",
     "source_sha256": "74768fe681f1262a550e9ae971c38dff130134332bc89e48e3be0e88a5295fce",
     "lean": [
       "experiments/shared-renewal-capability/formal/RenewalLedger.lean",
@@ -1276,7 +1276,7 @@
     "scope_en": "The chapter neither proves G0 nor converts it into a theorem. The dynamical theorems are sign-neutral by construction; that the formal readings capture 生生 is a correspondence question, and ‘consuming is worse’ is carried by C. The protection-versus-gains case does not separate J2 from bounded-sensitivity rivals. Revision conditions are listed in §4.",
     "next_zh": "普遍实践根据仍开放：D 分解为外在论表述 A 与立场中立 N_std，二者都尚未从行动者自身立场得到论证；规律类须加入恢复、休息与外部化消耗。",
     "next_en": "The universal practical warrant remains open: D splits into the externalist articulation A and standpoint neutrality N_std, neither yet argued from an agent’s own standpoint; the law class needs recovery, rest and externalized consumption.",
-    "source": "theories/becoming/chapters/G0-WARRANT.md",
+    "source": "theories/becoming/history/G0-WARRANT.md",
     "source_sha256": "49bf5e0350e241cfa522f6981517e8da783d88787925f153a638253ae155748d",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",

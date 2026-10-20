@@ -243,7 +243,7 @@ Correspondence covers only the stated premises and subclaims; source existence d
 
 **ID:** `mathematical-root-frontier` · **Category:** mathematics
 
-**Source:** [MATHEMATICAL-ROOT-FRONTIER.md](../chapters/MATHEMATICAL-ROOT-FRONTIER.md)
+**Source:** [MATHEMATICAL-ROOT-FRONTIER.md](../history/MATHEMATICAL-ROOT-FRONTIER.md) · earlier chapter, kept in history at its original scope
 
 **Status:** Checked results and open questions
 
@@ -529,7 +529,7 @@ Correspondence covers only the stated premises and subclaims; source existence d
 
 **ID:** `philosophical-account` · **Category:** synthesis
 
-**Source:** [PHILOSOPHICAL-ACCOUNT.md](../chapters/PHILOSOPHICAL-ACCOUNT.md)
+**Source:** [PHILOSOPHICAL-ACCOUNT.md](../history/PHILOSOPHICAL-ACCOUNT.md) · earlier chapter, kept in history at its original scope
 
 **Status:** Connected defended proposal complete; universal truth and exclusive necessity unestablished
 
@@ -555,7 +555,7 @@ Correspondence covers only the stated premises and subclaims; source existence d
 
 **ID:** `plural-systems-and-correction` · **Category:** alignment
 
-**Source:** [PLURAL-SYSTEMS-AND-CORRECTION.md](../chapters/PLURAL-SYSTEMS-AND-CORRECTION.md)
+**Source:** [PLURAL-SYSTEMS-AND-CORRECTION.md](../history/PLURAL-SYSTEMS-AND-CORRECTION.md) · earlier chapter, kept in history at its original scope
 
 **Status:** Checked conditional results; unconditional corrigibility no longer the organizing demand
 

@@ -10,7 +10,7 @@
 
 ## 1. 这一连接新增什么
 
-[知识哲学](PHILOSOPHICAL-ACCOUNT.md)已经解释认识、根据、实际使用、共同纠正与有限结束；[实践判断](PRACTICAL-JUDGMENT.md)已经说明比较、责任、目的改变和交接；[相连目标修订](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GOAL-REVISION-CONTINUATION.md)已给出有限条件下的形成、修订与接续。[生的意义范围研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-VALUE-SCOPE.md)也已指出：新关系和理解可以改变什么值得关切。这些都直接复用。
+[知识哲学](../history/PHILOSOPHICAL-ACCOUNT.md)已经解释认识、根据、实际使用、共同纠正与有限结束；[实践判断](PRACTICAL-JUDGMENT.md)已经说明比较、责任、目的改变和交接；[相连目标修订](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GOAL-REVISION-CONTINUATION.md)已给出有限条件下的形成、修订与接续。[生的意义范围研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-VALUE-SCOPE.md)也已指出：新关系和理解可以改变什么值得关切。这些都直接复用。
 
 本章推进的是它们之间一个更明确的伦理连接：**当学习同时改变“我怎样评价”与“实际有什么值得评价”时，怎样说明这次改变获得了根据，而不是以旧偏好或新偏好中的任何一方自封裁判。** 这也是区分成长、误学、操纵及正当安顿的问题。解释范围是 G0 与公开 J1–J4 下的伦理学习；不把所有生成都称为学习，或把所有学习都称为善。
 
@@ -508,7 +508,7 @@ Ren [选择继续这一连接](../../../sources/15-codex-theory-conversations/20
 
 ## 46. 认识尚未完成时，关切仍能取得有范围的实践形式
 
-识别不必只输出“已经有完整地位”或“可以完全忽略”。[现有知识论](PHILOSOPHICAL-ACCOUNT.md#5-the-field-of-inquiry-can-itself-be-corrected)已经区分调查理由与相信理由；[J4 的有限认识程序](PRACTICAL-JUDGMENT.md#5-真实冲突有限认识与及时决定--conflict-and-uncertainty)也已说明及时调查、受限决定、累积负担及复核。本轮将其用于陌生生活，并不另立“只要有一点可能就无限保护”的原则。
+识别不必只输出“已经有完整地位”或“可以完全忽略”。[现有知识论](../history/PHILOSOPHICAL-ACCOUNT.md#5-the-field-of-inquiry-can-itself-be-corrected)已经区分调查理由与相信理由；[J4 的有限认识程序](PRACTICAL-JUDGMENT.md#5-真实冲突有限认识与及时决定--conflict-and-uncertainty)也已说明及时调查、受限决定、累积负担及复核。本轮将其用于陌生生活，并不另立“只要有一点可能就无限保护”的原则。
 
 | 当前已有的根据 | 能支持的回应与不能越过的范围 |
 |---|---|

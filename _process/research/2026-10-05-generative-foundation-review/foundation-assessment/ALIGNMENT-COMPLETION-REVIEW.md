@@ -1,6 +1,6 @@
 # Alignment completion: independent scope audit
 
-6 October 2026. AI-authored review of the existing seven [alignment and governance requirements](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md), the governing [five foundation conditions](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation), and the [fixed finish-line audit](../history/root-foundation/FIXED-FINISH-LINE-AUDIT.md). This is completion accounting, not a new mechanism, scientific rerun or acceptance of another chat's active work.
+6 October 2026. AI-authored review of the existing seven [alignment and governance requirements](../../../../theories/becoming/history/ALIGNMENT-COMPLETION.md), the governing [five foundation conditions](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation), and the [fixed finish-line audit](../history/root-foundation/FIXED-FINISH-LINE-AUDIT.md). This is completion accounting, not a new mechanism, scientific rerun or acceptance of another chat's active work.
 
 **Finding:** substantial local obligations are closed, including the actual acquired-evaluation succession join. Neither a full practical alignment solution nor the complete generative account has yet been established. The next decisions can nevertheless be finite and specific. Accepted results should not be reopened merely because another implementation is imaginable; a smaller release claim must not silently replace the user's larger objective.
 
@@ -60,7 +60,7 @@ This is the independent audit before the parent's completion and assessment edit
 
 | Reviewed document | SHA-256 |
 |---|---|
-| [Alignment completion contract](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md) | `fd9741cc420a7a06cdadee9b007885c7798e924aee1451a2fdf0feacca0e06ed` |
+| [Alignment completion contract](../../../../theories/becoming/history/ALIGNMENT-COMPLETION.md) | `fd9741cc420a7a06cdadee9b007885c7798e924aee1451a2fdf0feacca0e06ed` |
 | [Alignment/governance assessment](../../../../theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md) | `3f07c34e0b5b812e4446b1c06f71e35dd072d7dddb9ab8078c8e0646cc4d1fbc` |
 | [Composition checkpoint](ALIGNMENT-COMPOSITION-CHECKPOINT.md) | `032d0ab72eeb99fb38d3e955b78c1c30fcb7cd3500dd9706bdab18e2cd6c9312` |
 | [Evidence checkpoint](ALIGNMENT-EVIDENCE-CHECKPOINT.md) | `6d96a8da304269fba849960c0c7b33cdcc47d82e2f0d9df4f02a5dae45c7b16e` |

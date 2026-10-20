@@ -40,7 +40,7 @@ SHA-256 snapshot, 2026-10-06 02:17 UTC. Subsequent edits need their own binding;
 | [Finish-line audit][finish] | `708838771586c864ee080b1899e63f6b55555ecf89bc42cc63eb8f42c48b5469` |
 | [Continuation proof][continuation] | `1f74461cada69c3821a9dbe76a8baea0b3120fa74e47e7a5446729e4ccfa1385` |
 
-[completion]: ../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md
+[completion]: ../../../../theories/becoming/history/ALIGNMENT-COMPLETION.md
 [grounding]: ../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
 [premises]: ../../../../theories/becoming/history/FOUNDATION-PREMISES.md
 [uptake]: ../../../../theories/becoming/history/EVALUATIVE-UPTAKE.md

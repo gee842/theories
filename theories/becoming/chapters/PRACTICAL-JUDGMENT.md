@@ -1,7 +1,7 @@
 <a id="实践判断保留转化交接结束与责任--practical-judgment"></a>
 # Practical judgment
 
-> Some passages exist only in the [Chinese edition](PRACTICAL-JUDGMENT.zh.md): where a Chinese paragraph is fuller than its English companion, this file keeps the companion and the Chinese edition keeps the full paragraph.
+> Some passages exist only in the [Chinese edition](../history/PRACTICAL-JUDGMENT.zh.md): where a Chinese paragraph is fuller than its English companion, this file keeps the companion and the Chinese edition keeps the full paragraph.
 
 **Additional conflict comparison, 2026-10-08.** [Equal basic rescue BC1](BASIC-CONFLICT-JUDGMENT.md) directly addresses a class of cross-cutting basic requirements that basic-condition priority in this chapter leaves unordered, and states its opportunity-fairness cost openly. This is an additional philosophical commitment with its own scope, not a theorem of the practical commitments. The existing principles, Lean comparator and prior completion remain unchanged.
 

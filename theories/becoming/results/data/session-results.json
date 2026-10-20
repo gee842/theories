@@ -150,7 +150,7 @@
       "canonical_sources": [
         "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
         "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md",
-        "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+        "theories/becoming/history/PHILOSOPHICAL-ACCOUNT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
       ],
       "reuse_en": "Route foundations, critiques and applications to their stated targets. Repeated acknowledgements of an open premise are not new impossibility proofs.",
@@ -403,7 +403,7 @@
       ],
       "outcome_en": "Flourishing, basic significance and justified continuation are separated; G0 necessity is unproved.",
       "outcome_zh": "区分繁盛、基本意义与整体判断；G0 必然性未证。",
-      "primary_source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+      "primary_source": "theories/becoming/history/PHILOSOPHICAL-ACCOUNT.md",
       "integration": "canonical",
       "evidence_message_ids": [
         "msg_02fe9903dab1d0c8016ac7815e6af48191bd99f03d13ca3b85"
@@ -532,7 +532,7 @@
       ],
       "outcome_en": "Captured routes preserve in-flight requests across updates; queue occupancy can block progress.",
       "outcome_zh": "保留请求路线支持变化中的纠正；队列占用可阻断推进。",
-      "primary_source": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md",
+      "primary_source": "theories/becoming/history/PLURAL-SYSTEMS-AND-CORRECTION.md",
       "integration": "canonical",
       "evidence_message_ids": [
         "msg_074ec044b807145f016ac77a41335081919f6c5ee24d34daa8",

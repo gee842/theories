@@ -8,13 +8,12 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 
 ## Files in this directory
 
-1 canonical, 1 reference, 34 kept, 1 generated, 18 Chinese edition.
+1 canonical, 1 reference, 27 kept, 1 generated, 11 Chinese edition.
 
 | File | Title | Status | Role in section 11 | Note |
 |---|---|---|---|---|
 | [THE-THEORY-OF-BECOMING.md](THE-THEORY-OF-BECOMING.md) | The Theory of Becoming | canonical | Canonical | The canonical entry: states the theory. |
 | [THE-THEORY-OF-BECOMING-REFERENCE.md](THE-THEORY-OF-BECOMING-REFERENCE.md) | The Theory of Becoming: reference catalogue | reference | — | Reference companion of [THE-THEORY-OF-BECOMING](THE-THEORY-OF-BECOMING.md): material moved out of it, nothing new. |
-| [ALIGNMENT-COMPLETION.md](ALIGNMENT-COMPLETION.md) | Working toward a complete alignment and governance account | kept | Historical, pinned | Historical (6 October 2026). It stays in place for now because a check script names its path. |
 | [ALIGNMENT-DIRECTION.md](ALIGNMENT-DIRECTION.md) | The direction of AI alignment we propose | kept | Statement source | Statement source of §7. Its wording on the axiom predates the restatement of the condition as §6.15 (16 October 2026). |
 | [ALIGNMENT-THROUGH-CHANGE.md](ALIGNMENT-THROUGH-CHANGE.md) | Generative alignment through change | kept | Statement source | Cited in §7; statement source of three records. |
 | [BASIC-CONFLICT-JUDGMENT.md](BASIC-CONFLICT-JUDGMENT.md) | Judgment when basic claims conflict | kept | Statement source | Statement source of [finite-aggregation-within-restorable-basic-losses](../results/records/finite-aggregation-within-restorable-basic-losses.md). |
@@ -24,9 +23,6 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | [COGNITION-LEARNING-AND-EVOLUTION.md](COGNITION-LEARNING-AND-EVOLUTION.md) | Cognition, learning and evolution within becoming | kept | Statement source | The active cognition goal; states the laws of learning. |
 | [DAO-AND-GENERATIVITY.md](DAO-AND-GENERATIVITY.md) | 道与生成：生成、德与善怎样相连 | kept | Open direction | What holds only here, in current terms: the four judgments in “the theory explicates 道” with their present answers, the readings of 德 and 无为, and passages the map does not carry. The 6 October text, superseded by CHINESE-SOURCES-AND-BECOMING and sections 5–6, moved to [history](../history/DAO-AND-GENERATIVITY.md) (RH, 19 October 2026). |
 | [ETHICAL-LEARNING.md](ETHICAL-LEARNING.md) | Ethical learning: how concern forms, acquires grounds and keeps changing | kept | Statement source | Statement source of [organizational-formation-from-generative-comparison](../results/records/organizational-formation-from-generative-comparison.md); Ren redirected its sections 55–74. |
-| [FORMAL-CORE.md](FORMAL-CORE.md) | Formal core of relational generativity | kept | Historical, pinned | Historical (5 October 2026), stays for the same reason. |
-| [FORMAL-SPECIFICATION.md](FORMAL-SPECIFICATION.md) | Formal specification for physical formation, renewal and shared capability | kept | Historical, pinned | Historical (5 October 2026), stays for the same reason. |
-| [G0-WARRANT.md](G0-WARRANT.md) | The warrant for living significance: how its starting commitment is supported | kept | Foundation study | Written on 9 October 2026, when living significance was an adopted axiom. It is now a condition, and the former conditional part is §6.15, so its framing is historical. It is kept for its analysis of what each kind of support contributes. |
 | [GENERATED-LOGIC.md](GENERATED-LOGIC.md) | Conditions of becoming and logical rules | kept | Statement source | Statement source of [constitutive-binding-assessment](../results/records/constitutive-binding-assessment.md). |
 | [HANZI-AND-THEORY-TREE.md](HANZI-AND-THEORY-TREE.md) | 汉字、组合与理论树：建立有根据的局部对应 | kept | Open direction | An open method direction: four kinds of correspondence, compounds and relation markers, acceptance criteria. The 6 October text, its 武 reading and vocabulary table replaced by CHINESE-SOURCES-AND-BECOMING §5.4 and §6, moved to [history](../history/HANZI-AND-THEORY-TREE.md) (RH, 19 October 2026). |
 | [KNOWLEDGE.md](KNOWLEDGE.md) | Knowledge within becoming | kept | Statement source | Cited by §3. |
@@ -34,11 +30,8 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | [MARKET-DYNAMICS-MATH.md](MARKET-DYNAMICS-MATH.md) | Market renewal selection and capture | kept | Statement source | Defines the market update law that the four market records take as hypothesis; kept with the chapter above. |
 | [MARKETS-AND-GENERATIVE-REGIMES.md](MARKETS-AND-GENERATIVE-REGIMES.md) | Keeping markets in generative regimes | kept | Statement source | Cited by §4; statement source of the market records. |
 | [MATHEMATICAL-CORE.md](MATHEMATICAL-CORE.md) | A mathematical core for systems predicates and proofs | kept | Mathematics | An exposition of the foundation module `GenerativeCore`, unchanged since 6 October 2026. |
-| [MATHEMATICAL-ROOT-FRONTIER.md](MATHEMATICAL-ROOT-FRONTIER.md) | Reconstructing mathematics from a generative root | kept | Mathematics | Status page of the mathematics line Ren kept outside the spine (16 October 2026). |
 | [NONDUAL-METHOD.md](NONDUAL-METHOD.md) | Nondual method for the core and tree of becoming | kept | Method | Read before all foundation work. |
 | [NONINSTRUMENTAL-CONCERN.md](NONINSTRUMENTAL-CONCERN.md) | 一体之仁与非工具性关切：承受、理解和回应的共同形成 | kept | Statement source | Ren's current line on 一体之仁 and C2. |
-| [PHILOSOPHICAL-ACCOUNT.md](PHILOSOPHICAL-ACCOUNT.md) | A philosophy of becoming for knowing and living | kept | Statement source | The synthesis of knowing and wisdom; cited by §3. |
-| [PLURAL-SYSTEMS-AND-CORRECTION.md](PLURAL-SYSTEMS-AND-CORRECTION.md) | Responsive transformation: plural systems, shared trials and parent/subsystem relationships | kept | Statement source | Its section 15 is Ren's framing of responsive transformation of 9 October 2026, the current formulation. |
 | [PRACTICAL-JUDGMENT.md](PRACTICAL-JUDGMENT.md) | Practical judgment | kept | Statement source | Statement source of the record [practical-judgment-g0-j](../results/records/practical-judgment-g0-j.md). |
 | [PRE-QIN-AND-WENYAN.md](PRE-QIN-AND-WENYAN.md) | 从先秦到文言传统：逐段对应之外的发现与反例 | kept | Open direction | Findings and counterexamples the passage map does not carry (察今 through `Pace` and pooled coupling, 管子 内业, how concern forms, same-word counterexamples, later wenyan, the 维摩经, genre, wenyan as a formal language). The 6 October text, its competing-explanations frame and rights wording superseded, moved to [history](../history/PRE-QIN-AND-WENYAN.md) (RH, 19 October 2026). |
 | [RELATIONS-ACROSS-SCALES.md](RELATIONS-ACROSS-SCALES.md) | Relations across scales | kept | Statement source | Current argument; seven Lean modules, two of them joined to the spine. |
@@ -49,28 +42,21 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | [YI-ZHUAN-AND-BECOMING.md](YI-ZHUAN-AND-BECOMING.md) | 易传与生成／变化之论：周易的构形在脊柱上 | kept | Statement source | The 易传 passage by passage on the spine (19 October 2026); statement source of [hexagrams-on-the-spine](../results/records/hexagrams-on-the-spine.md), [place-relations-in-context](../results/records/place-relations-in-context.md), [hexagram-world-laws](../results/records/hexagram-world-laws.md), [fixed-places-and-sole-lines](../results/records/fixed-places-and-sole-lines.md) and [hexagram-arrangements-and-laws](../results/records/hexagram-arrangements-and-laws.md). |
 | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](ZERO-AXIOM-PRACTICAL-JUDGMENT.md) | Zero-axiom Practical judgment | kept | Statement source | Statement source of the open target [universal-practical-warrant](../results/records/universal-practical-warrant.md) (§8.1). |
 | [CLAIMS.md](CLAIMS.md) | Registered claims and historical ledger | generated | Register | Generated register stub; the [result register](../results/RESULT-REGISTER.md) and its records govern. |
-| [ALIGNMENT-DIRECTION.zh.md](ALIGNMENT-DIRECTION.zh.md) | 我们主张怎样的 AI 对齐方向 | Chinese edition | — | Of [ALIGNMENT-DIRECTION](ALIGNMENT-DIRECTION.md); the English file governs. |
 | [ALIGNMENT-THROUGH-CHANGE.zh.md](ALIGNMENT-THROUGH-CHANGE.zh.md) | 变化中的生成性对齐 | Chinese edition | — | Of [ALIGNMENT-THROUGH-CHANGE](ALIGNMENT-THROUGH-CHANGE.md); the English file governs. |
-| [BASIC-CONFLICT-JUDGMENT.zh.md](BASIC-CONFLICT-JUDGMENT.zh.md) | 基本要求冲突时怎样判断 | Chinese edition | — | Of [BASIC-CONFLICT-JUDGMENT](BASIC-CONFLICT-JUDGMENT.md); the English file governs. |
 | [BECOMING-FOUNDATION.zh.md](BECOMING-FOUNDATION.zh.md) | 生成与变化之论：根基范围 | Chinese edition | — | Of [BECOMING-FOUNDATION](BECOMING-FOUNDATION.md); the English file governs. |
-| [CHOICE-AND-GENERATIVE-CONTEXT.zh.md](CHOICE-AND-GENERATIVE-CONTEXT.zh.md) | 共同选择、有限合并与情境 | Chinese edition | — | Of [CHOICE-AND-GENERATIVE-CONTEXT](CHOICE-AND-GENERATIVE-CONTEXT.md); the English file governs. |
 | [COGNITION-LEARNING-AND-EVOLUTION.zh.md](COGNITION-LEARNING-AND-EVOLUTION.zh.md) | Cognition, learning and evolution within becoming | Chinese edition | — | Of [COGNITION-LEARNING-AND-EVOLUTION](COGNITION-LEARNING-AND-EVOLUTION.md); the English file governs. |
 | [ETHICAL-LEARNING.zh.md](ETHICAL-LEARNING.zh.md) | 伦理学习：关切怎样形成、取得根据并继续改变 | Chinese edition | — | Of [ETHICAL-LEARNING](ETHICAL-LEARNING.md); the English file governs. |
-| [G0-WARRANT.zh.md](G0-WARRANT.zh.md) | G0 的根据：一项采用的公理怎样得到支持 | Chinese edition | — | Of [G0-WARRANT](G0-WARRANT.md); the English file governs. |
 | [GENERATED-LOGIC.zh.md](GENERATED-LOGIC.zh.md) | 生成条件与逻辑规则 | Chinese edition | — | Of [GENERATED-LOGIC](GENERATED-LOGIC.md); the English file governs. |
 | [KNOWLEDGE.zh.md](KNOWLEDGE.zh.md) | 生成中的知识 | Chinese edition | — | Of [KNOWLEDGE](KNOWLEDGE.md); the English file governs. |
 | [MARKETS-AND-GENERATIVE-REGIMES.zh.md](MARKETS-AND-GENERATIVE-REGIMES.zh.md) | 市场与互联网的实际检验（中文节选） | Chinese edition | — | Of [MARKETS-AND-GENERATIVE-REGIMES](MARKETS-AND-GENERATIVE-REGIMES.md); the English file governs. |
-| [PLURAL-SYSTEMS-AND-CORRECTION.zh.md](PLURAL-SYSTEMS-AND-CORRECTION.zh.md) | 因应转化：多系统、共同试验与父子关系 | Chinese edition | — | Of [PLURAL-SYSTEMS-AND-CORRECTION](PLURAL-SYSTEMS-AND-CORRECTION.md); the English file governs. |
-| [PRACTICAL-JUDGMENT.zh.md](PRACTICAL-JUDGMENT.zh.md) | 实践判断：保留、转化、交接、结束与责任 | Chinese edition | — | Of [PRACTICAL-JUDGMENT](PRACTICAL-JUDGMENT.md); the English file governs. |
 | [RELATIONS-ACROSS-SCALES.zh.md](RELATIONS-ACROSS-SCALES.zh.md) | 尺度之间的关系 | Chinese edition | — | Of [RELATIONS-ACROSS-SCALES](RELATIONS-ACROSS-SCALES.md); the English file governs. |
 | [SCIENTIFIC-PHILOSOPHY.zh.md](SCIENTIFIC-PHILOSOPHY.zh.md) | Scientific philosophy and the generative conditions of knowing | Chinese edition | — | Of [SCIENTIFIC-PHILOSOPHY](SCIENTIFIC-PHILOSOPHY.md); the English file governs. |
 | [THE-THEORY-OF-BECOMING.zh.md](THE-THEORY-OF-BECOMING.zh.md) | 生成／变化之论 | Chinese edition | — | Of [THE-THEORY-OF-BECOMING](THE-THEORY-OF-BECOMING.md); the English file governs. |
-| [WISDOM-AND-CONTEXT.zh.md](WISDOM-AND-CONTEXT.zh.md) | 智慧、情境与共同核心 | Chinese edition | — | Of [WISDOM-AND-CONTEXT](WISDOM-AND-CONTEXT.md); the English file governs. |
 | [ZERO-AXIOM-PRACTICAL-JUDGMENT.zh.md](ZERO-AXIOM-PRACTICAL-JUDGMENT.zh.md) | 零公理实践判断：正在建立的根据 | Chinese edition | — | Of [ZERO-AXIOM-PRACTICAL-JUDGMENT](ZERO-AXIOM-PRACTICAL-JUDGMENT.md); the English file governs. |
 
 ## Chapters moved to history
 
-119 files that were in this directory were moved, bytes unchanged, by the move receipts in [`_process/architecture/moves/`](../../../_process/architecture/moves/). Each is kept at its original scope as a record of argument; the receipts give the reason per batch.
+133 files that were in this directory were moved, bytes unchanged, by the move receipts in [`_process/architecture/moves/`](../../../_process/architecture/moves/). Each is kept at its original scope as a record of argument; the receipts give the reason per batch.
 
 **H4** (13 files): 5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)
 
@@ -82,16 +68,46 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 
 **R19-chapters** (1 file): superseded: the argument of 9 October 2026 on how relations of becoming change; its framing (five relational changes, retained form without capacity) and every result it states are held by the canonical chapter section 1 (THE-THEORY-OF-BECOMING.md) and the records effective-capacity-and-eventual-reachability, joint-correlation-reduced-dynamics, relational-renewal-classification, relational-reading-comparison and supported-renewal-recovery; evidence and counterreview stay in the live study RELATIONAL-BECOMING-INTEGRATION.md (Chinese edition)
 
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E14/E1: 8 Oct whole-restatement, 0 records
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E14/E1: superseded by §8 and §9; 0 records
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E14/E5: unmaintained edition titled as if G0 were an adopted axiom
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E14: 6 Oct conditional-candidate closure, 0 records; pinned only by foundation-assessment/FRONTIER-CHECK.py
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E14: edition of a retired chapter
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E14: framing historical (axiom adopted 9 Oct, now a condition, §6.15)
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E14: historical (5 Oct), 0 records; pinned only by a frozen checker
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E14: historical (5 Oct, v0.10), 0 records; pinned only by a frozen checker
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E14: §15 is the live framing; rest superseded; 0 records
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 13 times) of a chapter whose English edition is canonical; a live document may be English only
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 18 times) of a chapter whose English edition is canonical; a live document may be English only
+
+**R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 8 times) of a chapter whose English edition is canonical; a live document may be English only
+
+**R35-B1-chapters** (2 files): R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 9 times) of a chapter whose English edition is canonical; a live document may be English only
+
 | Former path | Now at | Batch |
 |---|---|---|
 | `ABSTRACTION-ACQUISITION.md` | [history/ABSTRACTION-ACQUISITION.md](../history/ABSTRACTION-ACQUISITION.md) | H4 |
 | `ALIGNMENT-AND-GOVERNANCE.md` | [history/ALIGNMENT-AND-GOVERNANCE.md](../history/ALIGNMENT-AND-GOVERNANCE.md) | H4 |
 | `ALIGNMENT-AXIS.md` | [history/ALIGNMENT-AXIS.md](../history/ALIGNMENT-AXIS.md) | H4 |
+| `ALIGNMENT-COMPLETION.md` | [history/ALIGNMENT-COMPLETION.md](../history/ALIGNMENT-COMPLETION.md) | R35-B1-chapters |
+| `ALIGNMENT-DIRECTION.zh.md` | [history/ALIGNMENT-DIRECTION.zh.md](../history/ALIGNMENT-DIRECTION.zh.md) | R35-B1-chapters |
 | `ARCHITECTURE-FORMATION.md` | [history/ARCHITECTURE-FORMATION.md](../history/ARCHITECTURE-FORMATION.md) | H4 |
 | `ARCHITECTURE-LEARNING.md` | [history/ARCHITECTURE-LEARNING.md](../history/ARCHITECTURE-LEARNING.md) | H4 |
 | `ASSUMPTION-FREE-FOUNDATION.md` | [history/ASSUMPTION-FREE-FOUNDATION.md](../history/ASSUMPTION-FREE-FOUNDATION.md) | H4 |
 | `ATTAINABLE-MATHEMATICAL-QUESTIONS.md` | [history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md](../history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md) | H4 |
 | `AUTONOMOUS-METHOD-FORMATION.md` | [history/AUTONOMOUS-METHOD-FORMATION.md](../history/AUTONOMOUS-METHOD-FORMATION.md) | H4 |
+| `BASIC-CONFLICT-JUDGMENT.zh.md` | [history/BASIC-CONFLICT-JUDGMENT.zh.md](../history/BASIC-CONFLICT-JUDGMENT.zh.md) | R35-B1-chapters |
+| `CHOICE-AND-GENERATIVE-CONTEXT.zh.md` | [history/CHOICE-AND-GENERATIVE-CONTEXT.zh.md](../history/CHOICE-AND-GENERATIVE-CONTEXT.zh.md) | R35-B1-chapters |
 | `CLAIMS-AND-PAID-ACTION.md` | [history/CLAIMS-AND-PAID-ACTION.md](../history/CLAIMS-AND-PAID-ACTION.md) | H4 |
 | `COGNITION-LI-AND-RECIPROCITY.md` | [history/COGNITION-LI-AND-RECIPROCITY.md](../history/COGNITION-LI-AND-RECIPROCITY.md) | H4 |
 | `COMPLETION-PLAN.md` | [history/COMPLETION-PLAN.md](../history/COMPLETION-PLAN.md) | H4 |
@@ -115,11 +131,15 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | `EVOLUTIONARY-ORGANIZATION.md` | [history/EVOLUTIONARY-ORGANIZATION.md](../history/EVOLUTIONARY-ORGANIZATION.md) | H4 |
 | `EXPERIMENTAL-ACCESS.md` | [history/EXPERIMENTAL-ACCESS.md](../history/EXPERIMENTAL-ACCESS.md) | H4 |
 | `EXPLANATORY-NECESSITY.md` | [history/EXPLANATORY-NECESSITY.md](../history/EXPLANATORY-NECESSITY.md) | H4 |
+| `FORMAL-CORE.md` | [history/FORMAL-CORE.md](../history/FORMAL-CORE.md) | R35-B1-chapters |
+| `FORMAL-SPECIFICATION.md` | [history/FORMAL-SPECIFICATION.md](../history/FORMAL-SPECIFICATION.md) | R35-B1-chapters |
 | `FORMATION-MATH.md` | [history/FORMATION-MATH.md](../history/FORMATION-MATH.md) | H4 |
 | `FORMATION-PRIOR-ART.md` | [history/FORMATION-PRIOR-ART.md](../history/FORMATION-PRIOR-ART.md) | H4 |
 | `FORMATION.md` | [history/FORMATION.md](../history/FORMATION.md) | H4 |
 | `FORMED-ROUTE-MONITOR.md` | [history/FORMED-ROUTE-MONITOR.md](../history/FORMED-ROUTE-MONITOR.md) | H4 |
 | `FOUNDATION-PREMISES.md` | [history/FOUNDATION-PREMISES.md](../history/FOUNDATION-PREMISES.md) | H4 |
+| `G0-WARRANT.md` | [history/G0-WARRANT.md](../history/G0-WARRANT.md) | R35-B1-chapters |
+| `G0-WARRANT.zh.md` | [history/G0-WARRANT.zh.md](../history/G0-WARRANT.zh.md) | R35-B1-chapters |
 | `GENERATED-SELF-AND-ETHICS.md` | [history/GENERATED-SELF-AND-ETHICS.md](../history/GENERATED-SELF-AND-ETHICS.md) | H4 |
 | `GENERATIVE-CORE-LEAN.md` | [history/GENERATIVE-CORE-LEAN.md](../history/GENERATIVE-CORE-LEAN.md) | H4 |
 | `GENERATIVE-DEVELOPMENT.md` | [history/GENERATIVE-DEVELOPMENT.md](../history/GENERATIVE-DEVELOPMENT.md) | H4 |
@@ -141,6 +161,7 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | `MATERIAL-PREDICTION-COMPOSITION.md` | [history/MATERIAL-PREDICTION-COMPOSITION.md](../history/MATERIAL-PREDICTION-COMPOSITION.md) | H4 |
 | `MATERIAL-SELECTOR-COMPOSITION.md` | [history/MATERIAL-SELECTOR-COMPOSITION.md](../history/MATERIAL-SELECTOR-COMPOSITION.md) | H4 |
 | `MATERIAL-UPDATER-COMPOSITION.md` | [history/MATERIAL-UPDATER-COMPOSITION.md](../history/MATERIAL-UPDATER-COMPOSITION.md) | H4 |
+| `MATHEMATICAL-ROOT-FRONTIER.md` | [history/MATHEMATICAL-ROOT-FRONTIER.md](../history/MATHEMATICAL-ROOT-FRONTIER.md) | R35-B1-chapters |
 | `MATHEMATICAL-TRUTH-AND-THE-ROOT.md` | [history/MATHEMATICAL-TRUTH-AND-THE-ROOT.md](../history/MATHEMATICAL-TRUTH-AND-THE-ROOT.md) | H4 |
 | `MATHEMATICS-AND-GENERATIVITY.md` | [history/MATHEMATICS-AND-GENERATIVITY.md](../history/MATHEMATICS-AND-GENERATIVITY.md) | H4 |
 | `MEASURED-FEEDBACK-CORRESPONDENCE.md` | [history/MEASURED-FEEDBACK-CORRESPONDENCE.md](../history/MEASURED-FEEDBACK-CORRESPONDENCE.md) | H4 |
@@ -150,6 +171,10 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | `MODEL-FAMILY-REVISION.md` | [history/MODEL-FAMILY-REVISION.md](../history/MODEL-FAMILY-REVISION.md) | H4 |
 | `NEW-POSSIBILITIES.md` | [history/NEW-POSSIBILITIES.md](../history/NEW-POSSIBILITIES.md) | H4 |
 | `PAID-PREIMPORT-EVIDENCE.md` | [history/PAID-PREIMPORT-EVIDENCE.md](../history/PAID-PREIMPORT-EVIDENCE.md) | H4 |
+| `PHILOSOPHICAL-ACCOUNT.md` | [history/PHILOSOPHICAL-ACCOUNT.md](../history/PHILOSOPHICAL-ACCOUNT.md) | R35-B1-chapters |
+| `PLURAL-SYSTEMS-AND-CORRECTION.md` | [history/PLURAL-SYSTEMS-AND-CORRECTION.md](../history/PLURAL-SYSTEMS-AND-CORRECTION.md) | R35-B1-chapters |
+| `PLURAL-SYSTEMS-AND-CORRECTION.zh.md` | [history/PLURAL-SYSTEMS-AND-CORRECTION.zh.md](../history/PLURAL-SYSTEMS-AND-CORRECTION.zh.md) | R35-B1-chapters |
+| `PRACTICAL-JUDGMENT.zh.md` | [history/PRACTICAL-JUDGMENT.zh.md](../history/PRACTICAL-JUDGMENT.zh.md) | R35-B1-chapters |
 | `PREDICTION-ACTION.md` | [history/PREDICTION-ACTION.md](../history/PREDICTION-ACTION.md) | H4 |
 | `PREDICTION-PROTOCOL.md` | [history/PREDICTION-PROTOCOL.md](../history/PREDICTION-PROTOCOL.md) | H4 |
 | `PROTOCOL-COMPLETION.md` | [history/PROTOCOL-COMPLETION.md](../history/PROTOCOL-COMPLETION.md) | H4 |
@@ -190,6 +215,7 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | `UPDATER-FORMATION.md` | [history/UPDATER-FORMATION.md](../history/UPDATER-FORMATION.md) | H4 |
 | `VALUATION-DEVELOPMENT.md` | [history/VALUATION-DEVELOPMENT.md](../history/VALUATION-DEVELOPMENT.md) | H4 |
 | `VALUATION-IDENTIFICATION-BOUNDS.md` | [history/VALUATION-IDENTIFICATION-BOUNDS.md](../history/VALUATION-IDENTIFICATION-BOUNDS.md) | H4 |
+| `WISDOM-AND-CONTEXT.zh.md` | [history/WISDOM-AND-CONTEXT.zh.md](../history/WISDOM-AND-CONTEXT.zh.md) | R35-B1-chapters |
 | `verification/check_concern_interface.py` | [history/verification/check_concern_interface.py](../history/verification/check_concern_interface.py) | H4 |
 | `verification/check_concern_interface_independent.py` | [history/verification/check_concern_interface_independent.py](../history/verification/check_concern_interface_independent.py) | H4 |
 | `verification/check_formation_math.py` | [history/verification/check_formation_math.py](../history/verification/check_formation_math.py) | H4 |
