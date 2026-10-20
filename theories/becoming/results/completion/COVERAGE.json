@@ -267,14 +267,16 @@
         "metaethical-core-characterization",
         "living-significance-on-held-lives",
         "represented-boundary-against-dependence",
-        "continuation-condition-yields-living-significance"
+        "continuation-condition-yields-living-significance",
+        "what-the-step-across-standpoints-reaches"
       ],
       "declarations": [
         "Becoming.Valuation.significant_iff",
         "Becoming.Valuation.significant_iff_held",
         "Becoming.Web.selfValuation_significant_iff",
         "Becoming.Web.significance_undetermined",
-        "Becoming.Web.renewingAt_iff_over_all"
+        "Becoming.Web.renewingAt_iff_over_all",
+        "Becoming.forced_iff_center"
       ],
       "status": "proved",
       "open_items": [
@@ -494,13 +496,15 @@
         "continuation-condition-yields-living-significance",
         "significance-retained-within-margin",
         "comparison-by-widening",
-        "continuation-condition-decomposition"
+        "continuation-condition-decomposition",
+        "widening-as-what-every-weighting-ranks"
       ],
       "declarations": [
         "Becoming.unrestricted_iff_livingSignificance",
         "Becoming.Web.widens_iff_retains_adds",
         "Becoming.Web.paths_comparison_widens",
-        "Becoming.Web.paths_one_object"
+        "Becoming.Web.paths_one_object",
+        "Becoming.Weighting.widens_iff_every_positive"
       ],
       "status": "proved",
       "open_items": [

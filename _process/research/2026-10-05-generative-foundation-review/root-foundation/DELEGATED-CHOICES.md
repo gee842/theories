@@ -581,7 +581,7 @@ L1, S1 and S2 are D40-D42.
 - The same request, continued by board item SC (a code formed between formations, RO's second gap): D56 ([study section 210](BECOMING-RENEWAL-READING.md#210-a-code-formed-between-formations-sc)).
 - The same request, continued by board item RC (capture through the rule, the third gap RO found): D57 ([study section 213](BECOMING-RENEWAL-READING.md#213-capture-through-the-rule-rc)).
 - Ren's message of 20 October 2026 on OPENING's note on the meta-attractor, “this needs to be fully taken care of” ([words](../../../../sources/15-codex-theory-conversations/2026-10-20-meta-attractor-note-taken-care-of.md)): D58 ([study section 242](BECOMING-RENEWAL-READING.md#242-the-meta-attractors-loop-closed-on-the-spine-ma1)).
-- The line toward the aim of 20 October 2026 set by the session that started board item IV1 (no source record of the aim's words; none is quoted): D59 ([study section @N@](BECOMING-RENEWAL-READING.md#@SLUG@)).
+- The line toward the aim of 20 October 2026 set by the session that started board item IV1 (no source record of the aim's words; none is quoted): D59 ([study section 256](BECOMING-RENEWAL-READING.md#256-the-step-of-invariance-what-it-reaches-across-standpoints-and-the-order-every-weighting-shares-iv1)).
 
 <a id="13-一个说明--one-account"></a>
 ## 13. One account
@@ -763,7 +763,7 @@ Where: OPENING's note `[^meta]`; the canonical chapter, §4.5 and the glossary's
 <a id="d59-the-readings-of-the-step-of-invariance"></a>
 ### The readings of the step of invariance and its objections
 
-Where: the chapter [THE-STEP-OF-INVARIANCE](../../../../theories/becoming/chapters/THE-STEP-OF-INVARIANCE.md); the canonical chapter §6.5, §8.5 and §8.9; the records [what-the-step-across-standpoints-reaches](../../../../theories/becoming/results/records/what-the-step-across-standpoints-reaches.md) and [widening-as-what-every-weighting-ranks](../../../../theories/becoming/results/records/widening-as-what-every-weighting-ranks.md); the [significance review's literature check](BECOMING-SIGNIFICANCE-REVIEW.md#invariance-check); study section @N@ ([IV1](BECOMING-RENEWAL-READING.md#@SLUG@)). Decided in the one account of D45; continues D21.
+Where: the chapter [THE-STEP-OF-INVARIANCE](../../../../theories/becoming/chapters/THE-STEP-OF-INVARIANCE.md); the canonical chapter §6.5, §8.5 and §8.9; the records [what-the-step-across-standpoints-reaches](../../../../theories/becoming/results/records/what-the-step-across-standpoints-reaches.md) and [widening-as-what-every-weighting-ranks](../../../../theories/becoming/results/records/widening-as-what-every-weighting-ranks.md); the [significance review's literature check](BECOMING-SIGNIFICANCE-REVIEW.md#invariance-check); study section 256 ([IV1](BECOMING-RENEWAL-READING.md#256-the-step-of-invariance-what-it-reaches-across-standpoints-and-the-order-every-weighting-shares-iv1)). Decided in the one account of D45; continues D21.
 
 **Ren's words.** On 10 October 2026: “it can be anything that want's its continuation to have significance” ([words](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)). The reading is the AI's.
 

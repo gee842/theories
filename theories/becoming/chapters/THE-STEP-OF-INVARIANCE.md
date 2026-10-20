@@ -157,14 +157,14 @@ None is settled by formal work. Each is stated so that an argument settles it.
 | Narrow and wide scope | `presupposition_scopes`, `bounded_closure_least` | `Becoming.Boundaries` | landed |
 | Invariance makes the presupposition all or nothing | `not_subTrue_of_invariant` | `Becoming.Boundaries` | landed |
 | Where the closure is the whole, no invariance is needed | `unrestricted_iff_presupposed_of_whole` | `Becoming.Boundaries` | landed |
-| The step across standpoints forces exactly the centers | `forced_iff_center`, `atCenters_least`, `unrestricted_atCenters_iff` | `Becoming.Weightings` | new |
-| A standpoint's own presupposition forces exactly its closure | `forced_iff_within` | `Becoming.Weightings` | new |
-| Every relation one at a time against being related at all | `subTrue_every_iff`, `subTrue_every_of_related`, `Chain.every_not_related` | `Becoming.Weightings` | new |
-| C is what every positive weighting ranks higher | `Weighting.widens_iff_every_positive`, `Web.widens_iff_every_weighting` | `Becoming.Weightings` | new |
-| Mixed comparisons are decided both ways | `Weighting.mixed_either_way`, `Weighting.outweighs` | `Becoming.Weightings` | new |
-| Zero weight ties; equal weights count | `Weighting.weighed_eq_of_unweighted`, `Weighting.neutral_ranks_by_number` | `Becoming.Weightings` | new |
-| Closing is never required | `Web.not_widens_of_closes` | `Becoming.Weightings` | new |
-| The narrower scope's comparison and where it parts from the condition | `Web.retains_atCenters_iff`, `Clearing.centers_retain_yet_loses` | `Becoming.Weightings` | new |
+| The step across standpoints forces exactly the centers | `forced_iff_center`, `atCenters_least`, `unrestricted_atCenters_iff` | `Becoming.Weightings` | landed |
+| A standpoint's own presupposition forces exactly its closure | `forced_iff_within` | `Becoming.Weightings` | landed |
+| Every relation one at a time against being related at all | `subTrue_every_iff`, `subTrue_every_of_related`, `Chain.every_not_related` | `Becoming.Weightings` | landed |
+| C is what every positive weighting ranks higher | `Weighting.widens_iff_every_positive`, `Web.widens_iff_every_weighting` | `Becoming.Weightings` | landed |
+| Mixed comparisons are decided both ways | `Weighting.mixed_either_way`, `Weighting.outweighs` | `Becoming.Weightings` | landed |
+| Zero weight ties; equal weights count | `Weighting.weighed_eq_of_unweighted`, `Weighting.neutral_ranks_by_number` | `Becoming.Weightings` | landed |
+| Closing is never required | `Web.not_widens_of_closes` | `Becoming.Weightings` | landed |
+| The narrower scope's comparison and where it parts from the condition | `Web.retains_atCenters_iff`, `Clearing.centers_retain_yet_loses` | `Becoming.Weightings` | landed |
 
 The records are [what-the-step-across-standpoints-reaches](../results/records/what-the-step-across-standpoints-reaches.md) and [widening-as-what-every-weighting-ranks](../results/records/widening-as-what-every-weighting-ranks.md).
 

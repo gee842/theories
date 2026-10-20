@@ -103,6 +103,7 @@ import Becoming.EdgeClosure
 import Becoming.SeedReach
 import Becoming.ScopedReach
 import Becoming.Boundaries
+import Becoming.Weightings
 import Becoming.Relevance
 import Becoming.Testing
 import Becoming.Runaway
@@ -1588,6 +1589,16 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   N_std. Sub-true along affecting, the presupposition compares every part within the reach
   closure as the continuation condition does, with no invariance. Covering, sub-truth and invariance are
   hypotheses. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
+* `Becoming.Weightings` (L2): what every standpoint's weighting ranks, and what the step across
+  standpoints reaches. Over a finite listing, one course widens another exactly when every weighting
+  positive on every item ranks it higher; a mixed comparison is decided both ways by positive
+  weightings; a weight of zero ties a widening that adds only that item; one weight for every item
+  ranks by number; on a web with decided admission and listed admissions this is `Web.Widens`. From
+  each standpoint's presupposition about its own continuation and standpoint-invariance, exactly the
+  centers' continuation is forced to have significance, the condition only where every formation is a
+  center; a standpoint's own presupposition forces exactly its closure; drawn along being related at
+  all the self can exceed every single relation's closure (`Chain`); in `Clearing` the narrower scope
+  retains where the condition loses the dweller. The readings are the AI's (D59).
 * `Becoming.Relevance` (L2): the uses of living significance under the continuation condition. Read from significance,
   positive relevance is realized living content whose continuation has significance;
   under the continuation condition living significance holds on every frame for every reading of `living`, this relevance

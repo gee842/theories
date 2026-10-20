@@ -786,6 +786,8 @@
 | [实际履行导出同律机会下界](../results/records/fulfillment-chance-floor.md) | 不加前提的定理 | — | §6.5 |
 | [生生之意义与实践承诺下的一般实践判断](../results/records/practical-judgment-under-living-significance.md) | 论证 | 见记录 | §6.5 |
 | [自身之预设的两种辖域](../results/records/presupposition-scopes.md) | 在所述前提下的定理 | 平衡 | §6.5 |
+| [跨立场的一步达到哪里](../results/records/what-the-step-across-standpoints-reaches.md) | 不加前提的定理 | — | §6.5 |
+| [扩大即每个加权所排者](../results/records/widening-as-what-every-weighting-ranks.md) | 在所述前提下的定理 | 有限列举；接纳可判定 | §6.1 |
 | [合起来的耦合及于什么](../results/records/what-pooled-coupling-reaches.md) | 在所述前提下的定理 | 给出的交换之律 | §7.3 |
 | [一组的动作回应什么](../results/records/what-a-pools-acts-respond-to.md) | 在所述前提下的定理 | 给出的交换之律 | §7.4 |
 | [扩大与实践承诺之下的 AI 对齐方向](../results/records/alignment-direction-under-widening.md) | 论证 | 见记录 | §7.5 |
@@ -892,16 +894,16 @@
 
 所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）17 个。
 
-**当前回执**是运行 [`20261020T104831.571462Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T104831.571462Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 255 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#255-rest-from-a-finite-reading-and-a-parts-merge-kept-by-the-rest-lc1)）。
+**当前回执**是运行 [`20261020T111531.545286Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T111531.545286Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 256 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#256-the-step-of-invariance-what-it-reaches-across-standpoints-and-the-order-every-weighting-shares-iv1)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 275 个模块，11,057 条定理 |
+| 核心模块（含根 `Becoming`） | 276 个模块，11,092 条定理 |
 | 实例模块 | 7 个模块，567 条定理 |
 | 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 闭包（核心、环与根基） | 291 个模块，11,877 条定理 |
-| 审计的脊柱声明 | 16,249 |
+| 闭包（核心、环与根基） | 292 个模块，11,912 条定理 |
+| 审计的脊柱声明 | 16,299 |
 | 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 189 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 
