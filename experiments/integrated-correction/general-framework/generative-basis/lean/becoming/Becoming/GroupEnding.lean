@@ -30,7 +30,9 @@ leaves no descendant.
   a group, `Ended` holds (`Flow.ended_of_inactive`).
 * **Over generations.** With exact transmission and groups uniform in the amount, where the groups
   with less of it are not active and a group with more of it leaves offspring beside one with
-  less, the mean amount rises across the step (`Flow.raises_of_inactive`).
+  less, the mean amount rises across the step (`Flow.raises_of_inactive`). With groups not
+  uniform, it rises exactly where `k` times the within-group discordance is below `k` times the
+  within-group concordance with the concordance among groups (`Flow.rises_iff_inactive`).
 * **A condition shared by every group.** Where every member of a generation is not active (every
   group depending on one condition that ran into joint excess), the next generation is empty
   (`Flow.all_end`): one shared condition gives no selection among the groups that keeps it; every
@@ -189,6 +191,25 @@ theorem raises_of_inactive (acting : L.Acting W) {G : Generations X}
     rw [← listed]
     exact rises_of_ended gs _ _ equal uniform (ended_of_inactive acting descended listed inactive)
       mg mh less leaves)
+
+/-- Over generations of descent with exact transmission, where the groups with less of the
+amount are not active, the mean amount rises across the step exactly where `k` times the
+within-group discordance is below `k` times the within-group concordance with the concordance
+among groups: the groups need not be uniform, so selection within the groups that go on can
+outweigh what ending does among them. -/
+theorem rises_iff_inactive (acting : L.Acting W) {G : Generations X}
+    (descended : SelectionTerm.Flow.Descended L W G) {t m : Nat} (gs : List (List X))
+    (listed : whole gs = G.family t) (equal : ∀ g, g ∈ gs → g.length = m)
+    (exact : Exact (G.family t) (G.kids t) (G.amount t) (G.amount (t + 1)))
+    (inactive : ∀ g h, g ∈ gs → h ∈ gs → total h (G.amount t) < total g (G.amount t) →
+      ∀ p, p ∈ h → ¬ W.active t p) :
+    G.Raises t ↔
+      gs.length * discordWithin gs (G.offspringNumber t) (G.amount t) <
+        gs.length * concordWithin gs (G.offspringNumber t) (G.amount t) +
+          concordAmong gs (G.offspringNumber t) (G.amount t) := by
+  have h := rises_exact_iff_levels G gs listed equal exact
+  rw [among_not_against (ended_of_inactive acting descended listed inactive), Nat.add_zero] at h
+  exact h
 
 /-- Where every member of a generation is not active, the next generation is empty: one
 condition shared by every group, once it ends them, leaves no group to select among. -/
