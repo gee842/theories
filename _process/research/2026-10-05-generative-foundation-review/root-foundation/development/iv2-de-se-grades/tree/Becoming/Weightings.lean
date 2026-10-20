@@ -57,7 +57,9 @@ order every standpoint shares when each weighs what can form in its own way.
   (`ownClosure_standpointInvariant_iff`) and is the condition exactly where each is the whole
   (`ownClosure_unrestricted_iff`, `ownClosure_unrestricted_of_whole`). Held de dicto, the step
   across standpoints forces exactly the union of the closures (`withinSome`,
-  `forced_iff_within_some`; `forced_iff_center` along the empty relation). The two readings agree
+  `forced_iff_within_some`; `forced_iff_center` along the empty relation; on a web, admitting what
+  either forces is admitting the centers or the union, `Web.admitsWithin_forced_iff`,
+  `Web.admitsWithin_forced_within_some_iff`). The two readings agree
   exactly where whatever lies within one center's closure lies within every center's
   (`selfAscribed_iff_withinSome`); in `Divided` they part.
 * **Standing and grades.** A graded significance gives each item a natural grade from each
@@ -428,6 +430,20 @@ theorem Web.retains_atCenters_iff {C : Type} {W : Web F C} {center : Pos → F} 
       ∀ t, W.AdmitsWithin (fun g => ∃ q, center q = g) (l t) (l' t) t :=
   Web.retains_bounded_iff
 
+/-- **On a web, admitting what the step across standpoints forces is admitting every center.**
+At a step, levels admit every formation the other levels admit whose continuation has
+significance from `p` under every significance that meets each standpoint's presupposition
+about its own continuation and is standpoint-invariant, exactly when they admit every center the
+other levels admit (`forced_iff_center` read on a web). -/
+theorem Web.admitsWithin_forced_iff {C : Type} {W : Web F C} {center : Pos → F} {p : Pos}
+    {s t : Nat} {l l' : C → Nat} :
+    W.AdmitsWithin (fun g => ∀ sig : Pos → Nat → F → Prop,
+        (∀ q, SubTrue (Boundary (fun _ _ => False) (center q)) (SignificantWithin sig q)) →
+          StandpointInvariant sig → sig p s g) l l' t ↔
+      W.AdmitsWithin (fun g => ∃ q, center q = g) l l' t :=
+  ⟨fun within g centered admits => within g ((forced_iff_center center p s g).mpr centered) admits,
+   fun within g forced admits => within g ((forced_iff_center center p s g).mp forced) admits⟩
+
 /-! ## The self drawn along every relation, and along being related at all -/
 
 section Relations
@@ -605,6 +621,19 @@ theorem forced_iff_within_some (rel : F → F → Prop) (center : Pos → F) (p 
       (shared_standpointInvariant _),
    fun ⟨q, within⟩ _ own invariant =>
      invariant q p t g (subTrue_significantWithin_iff.mp (own q) t g within)⟩
+
+/-- **On a web, admitting what the step forces along a relation is admitting whatever lies
+within some center's closure** (`forced_iff_within_some` read on a web). -/
+theorem Web.admitsWithin_forced_within_some_iff {C : Type} {W : Web F C} {rel : F → F → Prop}
+    {center : Pos → F} {p : Pos} {s t : Nat} {l l' : C → Nat} :
+    W.AdmitsWithin (fun g => ∀ sig : Pos → Nat → F → Prop,
+        (∀ q, SubTrue (Boundary rel (center q)) (SignificantWithin sig q)) →
+          StandpointInvariant sig → sig p s g) l l' t ↔
+      W.AdmitsWithin (fun g => ∃ q, WithinClosure rel (center q) g) l l' t :=
+  ⟨fun within g some admits =>
+     within g ((forced_iff_within_some rel center p s g).mpr some) admits,
+   fun within g forced admits =>
+     within g ((forced_iff_within_some rel center p s g).mp forced) admits⟩
 
 /-- **Where the de se and the de dicto readings part.** The own closure held de se and the union
 of closures held de dicto give significance alike from every standpoint exactly where whatever
