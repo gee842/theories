@@ -259,7 +259,7 @@ Deductive necessity lies in the Theory of Becoming as a whole; generativity is w
 <a id="演化理论--the-theory-of-evolution"></a>
 ### The Theory of Evolution
 
-**State:** `unmarked` · **Scope:** The separately authorized evolutionary-theory programme, made visible in the shared README by Ren; its theoretical focus does not displace other sessions. Ren directs the current organizing-variation continuation to social/organizational systems on 8 October 2026, with no new biological-system examples. On 9 October Ren requires systems thinking: differentiation and feedback within one system and its subsystems, without independently constituted entities connected afterward.
+**State:** `unmarked` · **Scope:** The separately authorized evolutionary-theory programme, shown in the shared README; its theoretical focus does not displace other sessions. Its cases of organizing variation are social and organizational systems, explained as differentiation and feedback within one system and its subsystems, without independently constituted entities connected afterward; its laws of selection are stated on the Becoming spine and read any listed generations.
 
 Establish a generative theory of evolution with a connected account of organization, transmission, reconstruction, development and changing selection, and demonstrate its explanatory and comparative strength.
 
@@ -271,9 +271,9 @@ Establish a generative theory of evolution with a connected account of organizat
 
 **README overview:** Investigating The Theory of Evolution
 
-Explain organizing variation and continuation through differentiation and feedback in social activity. The existing conditional protocol proof remains valid; the systems correction identifies its unclosed dynamics of work, capability, participation and organizational boundaries. The full explanatory and comparative claim remains active.
+The laws of selection now stand on the Becoming spine with the flow: Price's equation and its selection term proper, Fisher's theorem in its exact-transmission case with offspring numbers bounded by what is given and taken, selection within and among groups with groups ending on conditions of their own, and what a rise draws from beyond. Organizing variation is explained through differentiation and feedback in social activity. The full explanatory and comparative claim remains active; the first falsifiable test found widening the coupling necessary, not sufficient.
 
-**Next:** Connect enabled activity to the formation, transformation or loss of the conditions for its continuation and reorganization; compare strong system-dynamics and routine accounts on the same evidence.
+**Next:** Groups whose conditions are coupled, neither wholly their own nor wholly shared: when selection within groups against keeping a condition loses to selection among groups for it, and what the flow decides that the counts leave open. Then the additive part of Fisher's theorem, inexact transmission and drift, and dependences formed by descent.
 
 [growth-constrained-fragmentation](theories/becoming/results/records/growth-constrained-fragmentation.md): `recorded-checked`
 

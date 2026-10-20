@@ -10724,3 +10724,24 @@ Output → input: section 7's boundary sharpens from "widening the coupling is n
 ```
 
 **Self-review.** The conditions, their classes, the thresholds and the predicted outcomes were fixed from the exact calibration and committed (`8a049b4fb`) before any learning run; a 200-episode code-path test of the analysis was run before the freeze and its untrained numbers were not used (disclosed in the predictions file). Nothing changed after the freeze. The strongest evidence is X1, whose open conditions could have failed as CG1's C2 did and did not, against a named alternative. The two failures are kept as failures; the joint learner's diagnosis is post hoc, one seed's value table and a three-seed control, and suggests a reading the theory had not stated: the rest that outruns can be one's own later policy.
+
+## 251. The evolution chapter restated from the spine (EV3)
+
+```text
+Result(s): none new; THE-THEORY-OF-EVOLUTION.md restated from what the spine now states about selection, and the
+       evolution goal's scope and overview with it (docs and the goal record only, no Lean, no checker run).
+Delta: the chapter predated Becoming.SelectionTerm, SelectionReach, DrawnBeyond, Reproduction, SelectionLevels and
+       GroupEnding: its focus named organizational continuations and directives, requirement 2 said Price's equation
+       only in additive form, requirement 5 lacked the first falsifiable test (CG1), and its next connection was the
+       updater line's.
+Changes: the focus states the selection laws with the flow (descent and Price's equation; the selection term
+       proper; selection on offspring number and what bounds it; selection within and among groups and by ending;
+       what selection sees and what a rise draws from) and places them as known results restated in counting form;
+       requirements 2-5 name them, with CG1's verdicts (identity and scope held; the learning extension and the
+       pool's positive reading failed; widening the coupling necessary, not sufficient); the next connections from
+       the spine (groups with coupled conditions, the additive part of Fisher's theorem, mutation and drift,
+       dependences formed by descent) precede the updater line's; framing as reasons, with the source records linked
+       as provenance. The goal record's overview (the README's evolution card) and scope follow.
+Evidence: render, check, links and tests pass.
+Boundary: no requirement is weakened or marked met; the empirical programme and its verdicts are unchanged.
+```

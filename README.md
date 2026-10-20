@@ -248,9 +248,9 @@ We are developing the significance-and-comparison core (section 6) into increasi
 
 ### Investigating The Theory of Evolution
 
-Explain organizing variation and continuation through differentiation and feedback in social activity. The existing conditional protocol proof remains valid; the systems correction identifies its unclosed dynamics of work, capability, participation and organizational boundaries. The full explanatory and comparative claim remains active.
+The laws of selection now stand on the Becoming spine with the flow: Price's equation and its selection term proper, Fisher's theorem in its exact-transmission case with offspring numbers bounded by what is given and taken, selection within and among groups with groups ending on conditions of their own, and what a rise draws from beyond. Organizing variation is explained through differentiation and feedback in social activity. The full explanatory and comparative claim remains active; the first falsifiable test found widening the coupling necessary, not sufficient.
 
-**Next:** Connect enabled activity to the formation, transformation or loss of the conditions for its continuation and reorganization; compare strong system-dynamics and routine accounts on the same evidence.
+**Next:** Groups whose conditions are coupled, neither wholly their own nor wholly shared: when selection within groups against keeping a condition loses to selection among groups for it, and what the flow decides that the counts leave open. Then the additive part of Fisher's theorem, inexact transmission and drift, and dependences formed by descent.
 
 [Scope and authorization](GOALS.md#theory-of-evolution) · [Primary source](sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md)
 
