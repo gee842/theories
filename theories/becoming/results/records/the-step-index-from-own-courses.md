@@ -55,6 +55,8 @@ The open programme of the chapter left open "deriving the shared index of steps 
 - related, not a proved adapter: [order-of-exchanges-is-the-invariant](order-of-exchanges-is-the-invariant.md). There, for a world given with an index and a footprint, the order of joined exchanges is what the premises keep; here, with no index given, the index is built from the own courses and carries nothing beyond them.
 - related, not a proved adapter: [only-the-order-of-change-registers](only-the-order-of-change-registers.md). There renumberings keeping the order of joined exchanges keep every premise of a world; here interleavings of the same own courses reach the same configuration.
 
+**Used by:** [the-world-an-interleaving-builds](the-world-an-interleaving-builds.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -67,6 +69,7 @@ The open programme of the chapter left open "deriving the shared index of steps 
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json) | — |
 
 Aliases: `the step index from own courses`, `步指标读自自身进程`, `interleaving of own courses`, `自身进程的交错`, `equal own courses equal configurations`, `自身进程同则构形同`, `the index is built`, `指标是构造出来的`, `where the courses fix the index`, `进程定下指标之处`, `shared index as commitment`, `共同指标作为承诺`
 
@@ -96,6 +99,7 @@ Aliases: `the step index from own courses`, `步指标读自自身进程`, `inte
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
 - 20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Interleavings.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Interleavings.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.
+- 20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Proof bindings (Interleavings.lean) rebound to core receipt 20261019T235844.485705Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; Interleavings.lean, the world an interleaving builds (LocalLaw.world, world_balances, world_final, world_swap, standings_of_courses) added; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.
 
 </details>
 

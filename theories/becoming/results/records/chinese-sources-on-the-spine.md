@@ -91,6 +91,7 @@ Aliases: `the Chinese sources on the spine`, `中国思想诸传统在脊柱上`
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: passages.json, rebuilt: the declarations and the names in the readings follow the R30 table, each so corrected passage marked; CHINESE-SOURCES-AND-BECOMING.md, names follow the R30 rename table; the passage tables are the rebuilt map. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
 - 20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added. The claim is unchanged.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.
+- 20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.
 
 </details>
 
