@@ -60,13 +60,13 @@
   ],
   "does_not_show": [
     {
-      "en": "How much more than the rise is drawn beyond; whether what is drawn is depended on, or replenished; that drawing from beyond is wrong.",
-      "zh": "取自其外的比上升多出多少；所取者是否被依赖或被补充；取自其外是错的。",
+      "en": "That drawing from beyond is wrong. How much more than the rise is drawn, and whether what is drawn is depended on, are stated in Becoming.DrawnBeyond (record what-a-rise-draws-from-beyond): exactly the loss more, and depended on past the slack of the dependences there.",
+      "zh": "取自其外是错的。比上升多取多少、所取者是否被依存，陈述于 Becoming.DrawnBeyond（记录 what-a-rise-draws-from-beyond）：恰多出损失之量，超出那里诸依存的余量即被依存。",
       "kind": "non-implication"
     },
     {
-      "en": "The rising share of what reaches beyond, with transmission, descent and openness, remains open.",
-      "zh": "在传递、后代与开放之下伸出者份额的上升，仍开放。",
+      "en": "The share of what reaches beyond over generations is stated in Becoming.DrawnBeyond (record what-a-rise-draws-from-beyond), under the premise that more offspring go to raisers; that premise is not derived from the flow.",
+      "zh": "世代中伸向之外者的份额陈述于 Becoming.DrawnBeyond（记录 what-a-rise-draws-from-beyond），前提是后代更多者归于升高者；该前提不由流导出。",
       "kind": "scope"
     }
   ],
@@ -92,8 +92,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T091757.535800Z）：Becoming.SelectionReach 的 13 项定理公理报告为空；检查器并核对核心纯净。作者自审见研究第 177 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Whether what is drawn is depended on (with Becoming.SelectionGap, whether a dependent beyond is ended); how much more than the rise is drawn under dissipation; the rising share of what reaches beyond; an independent review.",
-    "zh": "所取者是否被依赖（与 Becoming.SelectionGap 一起，其外的依赖者是否被终结）；伸出者份额的上升；独立审查。"
+    "en": "Offspring numbers tied to what a formation gives (record what-a-rise-draws-from-beyond); replenishment from outside the whole; an independent review.",
+    "zh": "后代数与构成所给予之量相连（记录 what-a-rise-draws-from-beyond）；来自整体之外的补充；独立审查。"
   },
   "correspondence": {
     "en": "The chapter's open programme (section 8.2, Selection, causes and experiment) named \"the general form of favouring what reaches beyond\". Becoming.Selection had it in the witness Diversion, and Dissipation's rising_draws_in, for rising recurring at arbitrarily late steps under dissipation, in a negative form. Here one step, the weaker premise of gaining nothing (Becoming.Entropy), and a named formation and condition. Ren, 18 October 2026: \"please see what else is there to do - keep pushing the frontier till finishing\" (provenance, not warrant). Reading (the AI's, adopted in one account with the scope of chapter section 7, DELEGATED-CHOICES D45): where nothing comes from nothing, a selection rewarding what it couples into rewards drawing on what lies beyond its coupling, which by Becoming.SelectionGap it does not see; the favour is structural, not intended.",
@@ -172,6 +172,13 @@
         "en": "There what lies beyond the coupling closure enters no selection through it; here a selection rewarding what couples in rewards drawing on what lies beyond.",
         "zh": "那里耦合闭包之外的不进入经它的任何选择；这里奖励所耦合者的选择奖励汲取其外者。"
       }
+    },
+    {
+      "id": "what-a-rise-draws-from-beyond",
+      "detail": {
+        "en": "Whose dependence the draw breaks past the slack, how much is drawn, and the share that reaches beyond.",
+        "zh": "超出余量时汲取打断谁的依存、汲取多少，以及伸向之外者的份额。"
+      }
     }
   ],
   "references": [
@@ -229,7 +236,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "678d0f06a67b91815de825389917bbc6e6b05a606d4c7e40e023c0c979883bd1"
+      "sha256": "ae0aa450a68c6ca6f5b9a684fc60a92752c745c4984d4ffa207f22cf46863eb8"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
@@ -335,6 +342,10 @@
     {
       "en": "2026-10-20: 34 bookkeeping notes condensed from 18 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/1b9f9e79fb9893c9/raising-what-couples-in-draws-from-beyond.json and in git.",
       "zh": "2026-10-20：34 条记账性说明合并（18 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/1b9f9e79fb9893c9/raising-what-couples-in-draws-from-beyond.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, RB1: whether what is drawn is depended on, how much more than the rise is drawn and the rising share of what reaches beyond are stated in Becoming.DrawnBeyond (record what-a-rise-draws-from-beyond, study section 241); the scope items now point there and those parts leave the next step. The claim is unchanged.",
+      "zh": "2026年10月20日，RB1：所取者是否被依存、比上升多取多少、伸向之外者份额的上升，陈述于 Becoming.DrawnBeyond（记录 what-a-rise-draws-from-beyond，研究第 241 节）；范围项现指向那里，这些部分移出下一步。论断不变。"
     }
   ],
   "text_versions": [

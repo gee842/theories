@@ -23,8 +23,8 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- How much more than the rise is drawn beyond; whether what is drawn is depended on, or replenished; that drawing from beyond is wrong.
-- The rising share of what reaches beyond, with transmission, descent and openness, remains open.
+- That drawing from beyond is wrong. How much more than the rise is drawn, and whether what is drawn is depended on, are stated in Becoming.DrawnBeyond (record what-a-rise-draws-from-beyond): exactly the loss more, and depended on past the slack of the dependences there.
+- The share of what reaches beyond over generations is stated in Becoming.DrawnBeyond (record what-a-rise-draws-from-beyond), under the premise that more offspring go to raisers; that premise is not derived from the flow.
 - **Counterexample:** Without nothing from nothing: Diversion's supplying flow balances and raises the store across the first step with nothing taken (Diversion.supplying_raises_untaken). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionReach.lean)
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
@@ -39,7 +39,7 @@ Canonical source: [SelectionReach.lean](../../../../experiments/integrated-corre
 <a id="next--下一步"></a>
 ## Next
 
-Whether what is drawn is depended on (with Becoming.SelectionGap, whether a dependent beyond is ended); how much more than the rise is drawn under dissipation; the rising share of what reaches beyond; an independent review.
+Offspring numbers tied to what a formation gives (record what-a-rise-draws-from-beyond); replenishment from outside the whole; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -61,6 +61,9 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Preserved conditions: None beyond the flow. [Entropy.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean)
 - related, not a proved adapter: [continuing-self-fed-from-beyond](continuing-self-fed-from-beyond.md). There, under dissipation, rising recurring at arbitrarily late steps of a family enclosed around draws in, in a negative form; here one step, the weaker premise of gaining nothing, and a named formation and condition.
 - related, not a proved adapter: [the-gap-for-ones-own-act](the-gap-for-ones-own-act.md). There what lies beyond the coupling closure enters no selection through it; here a selection rewarding what couples in rewards drawing on what lies beyond.
+- related, not a proved adapter: [what-a-rise-draws-from-beyond](what-a-rise-draws-from-beyond.md). Whose dependence the draw breaks past the slack, how much is drawn, and the share that reaches beyond.
+
+**Used by:** [what-a-rise-draws-from-beyond](what-a-rise-draws-from-beyond.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -94,6 +97,7 @@ Aliases: `favouring what reaches beyond`, `偏向伸出`, `raising what couples 
 - 19 October 2026, A4 (Ren 19 October: "integrate all, the theory is a whole, not stitched pieces, go ahead"): The reading is adopted with the scope of chapter section 7, whose readings were marked open until 19 October 2026 (DELEGATED-CHOICES D45 (2)). The claim is unchanged.
 - 19 October 2026, R22 (the names of the nineteenth review): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Entropy.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Entropy.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
+- 20 October 2026, RB1: whether what is drawn is depended on, how much more than the rise is drawn and the rising share of what reaches beyond are stated in Becoming.DrawnBeyond (record what-a-rise-draws-from-beyond, study section 241); the scope items now point there and those parts leave the next step. The claim is unchanged.
 - 1 rebinding entry (2026-10-20): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](raising-what-couples-in-draws-from-beyond.json).
 
 <a id="earlier-text--早期文本"></a>

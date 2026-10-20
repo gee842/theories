@@ -68,6 +68,8 @@ Price's equation (Price 1970): with mean offspring number w̄, w̄Δz̄ = Cov(w,
   - Preserved conditions: None. [Change.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
 - related, not a proved adapter: [evolution-on-descent](evolution-on-descent.md). The selection term proper that evolution-on-descent left unstated, and selection through support read over generations.
 
+**Used by:** [what-a-rise-draws-from-beyond](what-a-rise-draws-from-beyond.md)
+
 <a id="sources--来源"></a>
 ### Sources
 

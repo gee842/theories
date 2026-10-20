@@ -246,13 +246,13 @@
 <a id="the-boundary-condition-for-无明"></a>
 ### 3.4 寻求、无明与选择
 
-**要点。** 寻求是朝向在某状态被满足之目标的活动，目标在展开之内形成。目标只在律不改变的状态停息；“比现在更多”需要开放的世界，“高于其他一切”对两者永不停息。损失只经耦合入者到达寻求者，经选择者耦合的选择恰及于耦合入者：在此之外者被同样选择，提高耦合入者从其外汲取；所汲取的存量只经阈耦合入时，断裂有多远不耦合入。
+**要点。** 寻求是朝向在某状态被满足之目标的活动，目标在展开之内形成。目标只在律不改变的状态停息；“比现在更多”需要开放的世界，“高于其他一切”对两者永不停息。损失只经耦合入者到达寻求者，经选择者耦合的选择恰及于耦合入者：在此之外者被同样选择，提高耦合入者从其外汲取，超出那里的余量就打断依存于它者；所汲取的存量只经阈耦合入时，断裂有多远不耦合入。
 
-**定理。** 本节陈述 `Law.rests_iff`、`more_needs_open`、`Law.aboveAll_never_rests`、`Web.break_not_bounded`、`Web.selects_alike_iff`、`Flow.favours_reaching_beyond`；完整陈述见[英文版 §3.4](THE-THEORY-OF-BECOMING.md#34-seeking-无明-and-selection)。
+**定理。** 本节陈述 `Law.rests_iff`、`more_needs_open`、`Law.aboveAll_never_rests`、`Web.break_not_bounded`、`Web.selects_alike_iff`、`Flow.favours_reaching_beyond`、`Flow.Balances.breaks_beyond`（整体无所增益时，上升连同损失超出其外依存的余量，其中一个依存即被打断）、`Flow.share_not_against`（后代更多者只是升高者时，伸向之外者的份额从不被逆向选择）；完整陈述见[英文版 §3.4](THE-THEORY-OF-BECOMING.md#34-seeking-无明-and-selection)。
 
 `Web.break_not_bounded` 成立，是因为按假设存量不被观察；存量被观察之处，断裂常可预先看到：早期预警信号的文献表明，接近临界转变的系统经临界慢化显出征兆（Scheffer et al., "Early-warning signals for critical transitions", *Nature* 461, 2009），这正是该假设所排除的情形。
 
-记录：[seeking-boundary](../results/records/seeking-boundary.md)、[the-boundary-of-enough-under-undetermined-laws](../results/records/the-boundary-of-enough-under-undetermined-laws.md)、[when-the-runs-of-a-process-settle](../results/records/when-the-runs-of-a-process-settle.md)、[the-last-change-of-a-run](../results/records/the-last-change-of-a-run.md)、[target-capture](../results/records/target-capture.md)、[runaway-distance-uncoupled](../results/records/runaway-distance-uncoupled.md)、[selection-through-couplings](../results/records/selection-through-couplings.md)、[selection-through-a-model-of-the-options](../results/records/selection-through-a-model-of-the-options.md)、[the-gap-for-ones-own-act](../results/records/the-gap-for-ones-own-act.md)、[raising-what-couples-in-draws-from-beyond](../results/records/raising-what-couples-in-draws-from-beyond.md)、[selection-under-registration-revision](../results/records/selection-under-registration-revision.md)、[consequence-revised-reference-plan](../results/records/consequence-revised-reference-plan.md)、[recurring-reference-revision](../results/records/recurring-reference-revision.md)。
+记录：[seeking-boundary](../results/records/seeking-boundary.md)、[the-boundary-of-enough-under-undetermined-laws](../results/records/the-boundary-of-enough-under-undetermined-laws.md)、[when-the-runs-of-a-process-settle](../results/records/when-the-runs-of-a-process-settle.md)、[the-last-change-of-a-run](../results/records/the-last-change-of-a-run.md)、[target-capture](../results/records/target-capture.md)、[runaway-distance-uncoupled](../results/records/runaway-distance-uncoupled.md)、[selection-through-couplings](../results/records/selection-through-couplings.md)、[selection-through-a-model-of-the-options](../results/records/selection-through-a-model-of-the-options.md)、[the-gap-for-ones-own-act](../results/records/the-gap-for-ones-own-act.md)、[raising-what-couples-in-draws-from-beyond](../results/records/raising-what-couples-in-draws-from-beyond.md)、[what-a-rise-draws-from-beyond](../results/records/what-a-rise-draws-from-beyond.md)、[selection-under-registration-revision](../results/records/selection-under-registration-revision.md)、[consequence-revised-reference-plan](../results/records/consequence-revised-reference-plan.md)、[recurring-reference-revision](../results/records/recurring-reference-revision.md)。
 
 ### 3.5 知识与探究的条件
 
@@ -681,6 +681,7 @@
 | [有限多个标签所确定者](../results/records/what-finitely-many-labels-fix.md) | 不加前提的定理 | — | §3.3 |
 | [取得的后果修改下一参考构造计划与实际使用](../results/records/consequence-revised-reference-plan.md) | 不加前提的定理 | — | §3.4 |
 | [抬高所耦合者取自其外](../results/records/raising-what-couples-in-draws-from-beyond.md) | 不加前提的定理 | — | §3.4 |
+| [上升从其外汲取什么](../results/records/what-a-rise-draws-from-beyond.md) | 在所述前提下的定理 | 平衡、整体无所增益、其外的依存被满足；份额之律需后代归于升高者、伸向之外被传递 | §3.4 |
 | [活动形成并重现参考修订](../results/records/recurring-reference-revision.md) | 不加前提的定理 | — | §3.4 |
 | [失控与不耦合入的断裂距离](../results/records/runaway-distance-uncoupled.md) | 在所述前提下的定理 | 平衡 | §3.4 |
 | [寻求在何处停息：“比现在更多”从不停息，“高于一切他者”不对两者停息](../results/records/seeking-boundary.md) | 不加前提的定理 | — | §3.4 |
@@ -837,7 +838,7 @@
 7. **哪个律成立，成员的律怎样形成**（进一步的证明）。已落地（R38，[研究第 233 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#233-one-turn-around-a-cycle-and-any-two-interleavings-r38)）：重合进程在一个条件上的差距，恰在其交换按某映射回应它之处，是该映射的进程（`LoopReturn.responds_iff`），这是前提，未由交换律推出；精确环节之回路的一圈精确陈述（`LoopReturn.carried_around_exact`）。*开放：*交换之律本身，带噪声的律及其历程；成员的律怎样形成、怎样回应它所耦合入者；单个回路之外、多个条件同时之处哪个律闭合而非扩大差别；概率学习与隐含偏置。
 8. **由连续性而非命名的同一**（进一步的证明）。*开放：*所立重合处的同一，或由物质、信息或组织的连续性给出的同一；分裂与合并下的类。
 9. **演化的选择项**（进一步的证明）。（已陈述：计数形式的真正选择项，即消去分母的协方差，以及均值在世代中的进程，均值移动了就有一步有真正的选择或传递，支持从不被逆向选择，`Becoming.SelectionTerm`。）*开放：*既必要又充分的形成之律；世系新形成的依存；后代数如何受给予之量约束；公分母之外的有理数的量，以及对选择的响应的方差形式。
-10. **上升从其外汲取什么**（进一步的证明）。*开放：*所汲取者是否被依存，以及连同传递、世系与开放，及于其外者上升的份额。
+10. **上升从其外汲取什么**（进一步的证明）。（已陈述：其外降低上升之量加上损失；超出其外依存的余量时其中一个被打断，其构成终止或改变，奖励上升的选择看不见地奖励了这一点；升高即伸向之外，在偏向升高者的世代中其份额从不被逆向选择，传递精确时只向上移动；封闭时其外约束上升，`Becoming.DrawnBeyond`。）*开放：*后代数与构成所给予之量相连，使份额之律的前提由流得出（与第 9 项一起）；多个构成同时汲取时哪个依存被打断；来自整体之外的补充及其所维持的上升。
 11. **条件之下的实践前提**（进一步的证明）。*开放：*条件之下 L 的形式；两部分族之外的克制定理；关系层读法下的比较。
 12. **根据**（哲学根据，§8.5）。扩大是否更好（C，定次序），意义是否不止于任何边界（不变的一步，定范围）？连同 A 与两种中立的根据，以及第一目标的哲学部分。没有形式工作能解决它；理论定位每一步（§6.5），并列出尚未回答的反驳（§8.9）。
 
@@ -884,16 +885,16 @@
 
 所有新的形式结果陈述在一条脊柱上；它不能表达某结果之处就扩展它，而不另建模型，既有模块经实例或等价定理相连。核心的要求（§0 A 组）由[合并的检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)在每次运行时执行。核心之外是实例与应用环（R35b）：实例在一个具名载体上读核心的一般规律（《周易》诸模块与 `Becoming.PlaceTransitionNets`，7 个模块），应用是核心无一导入的叶子（`Becoming.Dispatch` 等 6 个模块）；二者受核心同样的条件约束（只用前导编译，公理报告为空），按方向在核心之外：除根 `Becoming` 外没有核心模块导入它们，没有实例导入应用（检查器的 `INSTANCES`、`APPLICATIONS` 与 `ring_direction`）。`Becoming.Commuting` 的实例一节分出为 `Becoming.HexagramCommuting`，没有文件移动。三层由各模块的源码与导入经 [`layers.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/r31-support/layers.py) 计算：L0 基底 3 个模块，L1 核心中 248 个，另有实例与应用环的 13 个模块，皆为 L1，L2（源码指名条件或估值者）17 个。
 
-**当前回执**是运行 [`20261020T075104.511517Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T075104.511517Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 238 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#238-the-counted-corollaries-as-compositions-r37c)）。
+**当前回执**是运行 [`20261020T083557.882986Z`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T083557.882986Z/verification.json)（[当前指针](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)），以 Lean 4.29.1 检查（[研究第 241 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#241-what-a-rise-draws-from-beyond-dependences-broken-above-the-slack-and-the-share-that-reaches-rb1)）。
 
 | 项 | 数 |
 |---|---:|
-| 核心模块（含根 `Becoming`） | 269 个模块，10,806 条定理 |
+| 核心模块（含根 `Becoming`） | 270 个模块，10,844 条定理 |
 | 实例模块 | 7 个模块，567 条定理 |
 | 应用模块 | 6 个模块，179 条定理 |
 | 根基模块 | 3 个模块，74 条定理 |
-| 闭包（核心、环与根基） | 285 个模块，11,626 条定理 |
-| 审计的脊柱声明 | 15,908 |
+| 闭包（核心、环与根基） | 286 个模块，11,664 条定理 |
+| 审计的脊柱声明 | 15,958 |
 | 在 `propext` 上的生成的 `injEq` 引理 | 闭包中 189 条 |
 | 被取代的外围模块（不在运行中，字节保留） | 75 |
 

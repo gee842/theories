@@ -260,6 +260,7 @@ import Becoming.LastChange
 import Becoming.LimitVerification
 import Becoming.SelectionGap
 import Becoming.SelectionReach
+import Becoming.DrawnBeyond
 import Becoming.SelectionPool
 import Becoming.PoolResponse
 import Becoming.Rejoining
@@ -1198,6 +1199,19 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   beyond in full. So every selection
   holding only where what couples in rises holds only on flows reaching beyond the coupling.
   `Diversion` is an instance, and its supplying flow, which gains, shows the premise binds.
+* `Becoming.DrawnBeyond` (L1): whose dependence a rise breaks, and the share that reaches beyond.
+  In a balanced flow, where the family with the conditions beyond it gains nothing across a
+  step, the two stocks after the step with what the whole loses are the two before, so the
+  beyond falls by at least the rise, and under dissipation by one unit more for each taker.
+  Where the rise with the loss exceeds the slack of dependences beyond, met at the step, one of
+  them breaks, conditions nothing depends on counting in full beside the slack; where activity
+  needs support its formation ends or its dependence weakens, and a
+  selection rewarding such a rise holds only where a formation outside the selecting group loses
+  a dependence on a condition no member couples into. Raising the family from nothing new is
+  reaching beyond; over generations whose more offspring go only to raisers the share reaching
+  beyond has no discordant pair, does not fall where reaching is transmitted and with exact
+  transmission moves only upward. Closed over a stretch, the family rises by at most what the
+  beyond loses; a rise above all the whole held needs an open step. Witnesses on `Diversion`.
 * `Becoming.SelectionPool` (L1): what selection through pooled coupling reaches. A pool's
   coupling closure is the union of its members' coupling closures, and with the rest of the
   exchange fixed, a part beyond it is selected alike by every selection through the pooled

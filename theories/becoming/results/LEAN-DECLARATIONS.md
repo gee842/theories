@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 272 | 10,881 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 273 | 10,918 |
 | [Becoming instances and applications](lean-declarations/becoming-ring.md) | 13 | 746 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -234,6 +234,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Dispatch.lean](lean-declarations/becoming-ring.md#module-6ec3e0664f2f) | Becoming instances and applications |
 | [Dissipation.lean](lean-declarations/becoming-core.md#module-adfdfa242506) | Becoming pure core |
 | [Distinguishing.lean](lean-declarations/becoming-core.md#module-f12a895479c7) | Becoming pure core |
+| [DrawnBeyond.lean](lean-declarations/becoming-core.md#module-49214955ec3d) | Becoming pure core |
 | [DriftMargins.lean](lean-declarations/ethics.md#module-3d946731f17f) | Normative grounding and generative direction |
 | [Driver.lean](lean-declarations/other.md#module-db86581947bf) | Other formal studies |
 | [DynamicClassification.lean](lean-declarations/core.md#module-b7c8638a14c9) | Generative core and relational structure |
