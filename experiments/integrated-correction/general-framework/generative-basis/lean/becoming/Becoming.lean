@@ -58,6 +58,7 @@ import Becoming.Tower
 import Becoming.Openness
 import Becoming.Decidedness
 import Becoming.Refinement
+import Becoming.CensusTable
 import Becoming.Counting
 import Becoming.Standing
 import Becoming.Resolution
@@ -724,6 +725,14 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   frames (`Becoming.Likeness`) are its instances. The decisions of finitely many propositions are
   together refuted by nothing. The readings are the AI's, adopted on Ren's delegation of 15 October
   2026.
+* `Becoming.CensusTable` (L1): one census table for any listing a world has, with no premise. A
+  class of worlds and a condition on the counts form a table where every listed family of every
+  world of the class has counts meeting the condition (soundness, counts as relations) and every
+  tally meeting it is the marks of a listed family of some world of the class; then a property
+  holds of every listing of every world of the class exactly when it holds of every tally meeting
+  the condition, with counts as relations and, for pointwise properties, with the marks of a
+  procedure, the decided form a corollary of the same soundness and witness. The laws of
+  counting what is active, what stands and what depends are its instances.
 * `Becoming.Counting` (L1): what the premises add to the laws of counting, the tally being
   the whole law of counting with no premise (`Becoming.Population`). Premises lacking
   balance or embodiment leave counting free: every tally is the census of a world meeting
@@ -2194,9 +2203,9 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   relations (`Counts`); across a step a ceasing or coming count exists exactly where, for each
   relatum listed at one end, whether it is listed at the other is weakly decided. Where they exist
   they are a tally, and the laws under each selection of the premises, under enclosure and in
-  finite worlds hold of them; where a procedure decides activity, its marks are these counts. The
-  laws where every selected premise binds (`World.binding_counting` and its family) still take
-  the procedure.
+  finite worlds hold of them; where a procedure decides activity, its marks are these counts.
+  Each law is the census table of its decided form in `Becoming.Counting`, read with counts as
+  relations.
 * `Becoming.CensusBinding` (L1): the rest of the laws of counting over counted censuses, with no
   decision procedure for activity and for every property of the counts: where every premise
   binds, where the premises of each selection bind (with what binding adds: something active,
@@ -2204,7 +2213,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   equivalences saying where each added law holds; and the premises leaving counting free,
   balance and embodiment binding jointly, the enclosed and finite laws agreeing, and the reading
   on what stands. Each statement is its decided form in `Becoming.Counting` with the procedure
-  and the pointwise condition removed.
+  and the pointwise condition removed, the same census table read with counts as relations.
 * `Becoming.Unrolling` (L1): what an extrapolation given nothing fixes, with no premise. Unrolled
   on its own proposals, the extrapolation by elimination over the lasso candidates proposes, in
   every world a list holds and from the identification bound on, the value through the map at

@@ -29,9 +29,19 @@ stated here once for any class of worlds and any listing a world has, a determin
   (`World.table_obeys`). So the decided form of each law of counting is a corollary of the
   counted soundness and the same witness, and needs no proof of its own; the condition `True`
   gives the laws with no added condition (`World.table_holds_free`, `World.table_obeys_free`).
+* **Agreeing listings.** Determinations agreeing at each step list, count and decide alike
+  (`Listed.congr`, `FamilyCounts.congr`, `ceasings_congr`, `comings_congr`), so a witness under
+  one listing is one under any listing agreeing with it in the worlds of the class
+  (`World.witnessedAt_of`, `World.WitnessedAt.congr`), and the marks of two procedures deciding
+  one listing obey the same pointwise properties (`World.listingObeys_of_obeys`). Where whatever
+  comes to be across a step needs something held at it, nothing comes to be across a step at
+  which nothing is counted (`FamilyCounts.company`).
 * **The census of activity** is the listing `fun w x t => w.web.active t x`: `World.CountsObey`,
-  `World.CountsOf` and `World.CountsHold` are its forms (stated here, and read by
-  `Becoming.Counting` and `Becoming.CensusCounts`).
+  `World.CountsOf` and `World.CountsHold` are its forms, and `World.census_table_holds`,
+  `World.census_table_obeys` and their forms for two and three hypotheses state the table for
+  it (read by `Becoming.Counting`, `Becoming.CensusCounts` and `Becoming.CensusBinding`). What
+  stands (`fun w x t => 0 < w.web.level t x`) and what depends (pairs of relata, `requires`) are
+  the other listings `Becoming.Standing` reads.
 
 No premise beyond what each theorem names. No ethical predicate, ranking or axiom occurs.
 -/
@@ -80,6 +90,71 @@ theorem FamilyCounts.of_eq {p : α → Nat → Prop} {l : Nat → List α} {n c 
   | ⟨length, ceased, came⟩, ⟨sameN, sameC, sameA⟩ =>
     ⟨sameN.symm.trans length, sameC ▸ ceased, sameA ▸ came⟩
 
+/-! ## Agreeing listings -/
+
+/-- Coming to be respects agreement at the step and after it. -/
+theorem comesToBe_congr {p q : Nat → Prop} {t : Nat} (now : p t ↔ q t)
+    (next : p (t + 1) ↔ q (t + 1)) : ComesToBe p t ↔ ComesToBe q t :=
+  ⟨fun comes => ⟨fun holds => comes.1 (now.mpr holds), next.mp comes.2⟩,
+   fun comes => ⟨fun holds => comes.1 (now.mp holds), next.mpr comes.2⟩⟩
+
+/-- So does ceasing to be. -/
+theorem ceasesToBe_congr {p q : Nat → Prop} {t : Nat} (now : p t ↔ q t)
+    (next : p (t + 1) ↔ q (t + 1)) : CeasesToBe p t ↔ CeasesToBe q t :=
+  ⟨fun ceases => ⟨now.mp ceases.1, fun holds => ceases.2 (next.mpr holds)⟩,
+   fun ceases => ⟨now.mpr ceases.1, fun holds => ceases.2 (next.mp holds)⟩⟩
+
+/-- Counts of ceasing agree for determinations that agree at the step and after it. -/
+theorem ceasings_congr {p q : α → Nat → Prop} [∀ a t, Decidable (p a t)]
+    [∀ a t, Decidable (q a t)] (as : List α) {t : Nat}
+    (same : ∀ a, (p a t ↔ q a t) ∧ (p a (t + 1) ↔ q a (t + 1))) :
+    ceasings as p t = ceasings as q t :=
+  total_congr (fun a => mark_iff (ceasesToBe_congr (same a).1 (same a).2)) as
+
+/-- So do counts of coming. -/
+theorem comings_congr {p q : α → Nat → Prop} [∀ a t, Decidable (p a t)]
+    [∀ a t, Decidable (q a t)] (as : List α) {t : Nat}
+    (same : ∀ a, (p a t ↔ q a t) ∧ (p a (t + 1) ↔ q a (t + 1))) :
+    comings as p t = comings as q t :=
+  total_congr (fun a => mark_iff (comesToBe_congr (same a).1 (same a).2)) as
+
+/-- What indicates a proposition indicates one agreeing with it. -/
+theorem Indicates.congr {p q : Prop} {k : Nat} (same : p ↔ q) (indicates : Indicates p k) :
+    Indicates q k :=
+  match indicates with
+  | .inl ⟨holds, one⟩ => .inl ⟨same.mp holds, one⟩
+  | .inr ⟨fails, zero⟩ => .inr ⟨fun holds => fails (same.mpr holds), zero⟩
+
+/-- A count of the members of which `q` holds counts those of which what agrees with `q`
+holds. -/
+theorem Counts.congr {q q' : α → Prop} (same : ∀ a, q a ↔ q' a) :
+    ∀ {as : List α} {n : Nat}, Counts as q n → Counts as q' n
+  | [], _, zero => zero
+  | a :: _, _, ⟨k, m, indicates, rest, sum⟩ =>
+    ⟨k, m, indicates.congr (same a), Counts.congr same rest, sum⟩
+
+/-- A listing of what holds lists what agrees with it. -/
+theorem Listed.congr {p q : α → Nat → Prop} {l : Nat → List α} (same : ∀ x t, p x t ↔ q x t)
+    (listed : Listed p l) : Listed q l :=
+  fun t => ⟨(listed t).1, fun x => (same x t).symm.trans ((listed t).2 x)⟩
+
+/-- The counts of a listed family are its counts under any determination agreeing with it. -/
+theorem FamilyCounts.congr {p q : α → Nat → Prop} {l : Nat → List α} {n c a : Nat → Nat}
+    (same : ∀ x t, p x t ↔ q x t) (counted : FamilyCounts p l n c a) : FamilyCounts q l n c a :=
+  fun t => match counted t with
+  | ⟨length, ceased, came⟩ =>
+    ⟨length, ceased.congr fun x => ceasesToBe_congr (same x t) (same x (t + 1)),
+     came.congr fun x => comesToBe_congr (same x t) (same x (t + 1))⟩
+
+/-- Where whatever comes to be across a step needs something held at it, nothing comes to be
+across a step at which nothing is counted. -/
+theorem FamilyCounts.company {p : α → Nat → Prop} {l : Nat → List α} {n c a : Nat → Nat}
+    (counted : FamilyCounts p l n c a) {t : Nat}
+    (ground : ∀ x, x ∈ l (t + 1) → ComesToBe (p x) t → 0 < (l t).length) : 0 < a t → 0 < n t :=
+  fun arising => match counted t with
+  | ⟨length, _, came⟩ => match came.exists_of_pos arising with
+    | ⟨x, listed, comes⟩ => Nat.lt_of_lt_of_le (ground x listed comes) (Nat.le_of_eq length.symm)
+
 namespace World
 
 /-! ## A census table, for any listing -/
@@ -113,6 +188,44 @@ def Witnessed (Class : World → Prop) (C : (Nat → Nat) → (Nat → Nat) → 
   ∀ n c a, Tally n c a → C n c a → WitnessedAt L Class n c a
 
 variable {L} {Class : World → Prop} {C Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
+
+/-- A listed family of a world of the class, under one listing, witnesses its marks under any
+listing agreeing with it in that world. -/
+theorem witnessedAt_of {L' : (w : World) → X w → Nat → Prop} {Class : World → Prop}
+    {n c a : Nat → Nat} (w : World) [decided : ∀ x t, Decidable (L w x t)] (l : Nat → List (X w))
+    (within : Class w) (same : ∀ x t, L w x t ↔ L' w x t) (listed : Listed (L w) l)
+    (counts : ∀ t, (l t).length = n t ∧ ceasings (l t) (L w) t = c t ∧
+      comings (l (t + 1)) (L w) t = a t) :
+    WitnessedAt L' Class n c a :=
+  have decided' : ∀ x t, Decidable (L' w x t) := fun x t =>
+    @decidable_of_iff _ _ (same x t) (decided x t)
+  have agree : ∀ x t, (L' w x t ↔ L w x t) ∧ (L' w x (t + 1) ↔ L w x (t + 1)) := fun x t =>
+    ⟨(same x t).symm, (same x (t + 1)).symm⟩
+  ⟨w, decided', l, within, listed.congr same, fun t =>
+    ⟨(counts t).1,
+     (@ceasings_congr _ (L' w) (L w) decided' decided (l t) t fun x => agree x t).trans
+       (counts t).2.1,
+     (@comings_congr _ (L' w) (L w) decided' decided (l (t + 1)) t fun x => agree x t).trans
+       (counts t).2.2⟩⟩
+
+/-- So a witness under one listing is one under any listing agreeing with it in the worlds of
+the class. -/
+theorem WitnessedAt.congr {L' : (w : World) → X w → Nat → Prop} {Class : World → Prop}
+    {n c a : Nat → Nat} (same : ∀ w, Class w → ∀ x t, L w x t ↔ L' w x t)
+    (witnessed : WitnessedAt L Class n c a) : WitnessedAt L' Class n c a :=
+  match witnessed with
+  | ⟨w, decided, l, within, listed, counts⟩ =>
+    @witnessedAt_of _ L L' Class n c a w decided l within (same w within) listed counts
+
+/-- Where `Q` is pointwise, what one procedure's marks obey another's obey: marks deciding the
+same listing agree. -/
+theorem listingObeys_of_obeys (pointwise : Pointwise Q) {w : World}
+    {decided decided' : ∀ x t, Decidable (L w x t)}
+    (obeys : @ListingObeys X L w decided Q) : @ListingObeys X L w decided' Q :=
+  fun l listed => pointwise (fun t =>
+    ⟨rfl, @ceasings_congr _ (L w) (L w) decided decided' (l t) t fun _ => ⟨Iff.rfl, Iff.rfl⟩,
+     @comings_congr _ (L w) (L w) decided decided' (l (t + 1)) t fun _ => ⟨Iff.rfl, Iff.rfl⟩⟩)
+    (obeys l listed)
 
 /-- **A census table, with counts as relations.** Where every listed family of every world of the
 class has counts meeting `C`, and every tally meeting `C` is witnessed in the class, a property

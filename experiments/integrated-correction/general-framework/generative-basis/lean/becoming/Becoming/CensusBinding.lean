@@ -11,15 +11,13 @@ enclosure and finite worlds over counted censuses: the counts of a census taken 
 (`World.binding_counting` and its family in `Becoming.Counting`), which quantify over worlds
 `[∀ t x, Decidable (w.web.active t x)]` and hold for pointwise properties only.
 
-* **What binding leaves in the counts.** Where something is active at a step, a counted census
-  counts something there (`World.CountsOf.active_pos`); where something arises across a step, it
-  counts something arising there (`World.CountsOf.arising_pos`). So where embodiment binds,
-  something arises in every counted census (`World.binds_arising_counted`), and under the eight
-  premises that is no law (`World.binds_adds_counted`). A selection binding activity needing
-  support, only active relata giving or only active relata taking leaves something active
-  (`World.CountsOf.acts_of_binding`); binding bounded transmission with only active relata giving
-  and embodiment leaves something arising across a step at which something is active
-  (`World.CountsOf.joint_of_binding`).
+* **What binding leaves in the counts** is stated in `Becoming.Counting`, with the counted
+  soundness of each law there: where something is active at a step a counted census counts
+  something there (`World.CountsOf.active_pos`), where embodiment binds something arises in every
+  counted census (`World.binds_arising_counted`), and the instances leaving something active and
+  something arising across a step at which something is active
+  (`World.CountsOf.acts_of_binding`, `World.CountsOf.joint_of_binding`). Under the eight premises
+  something arising is no law (`World.binds_adds_counted`).
 * **The laws where every premise binds**: the tally, nothing arising across a step at which
   nothing is active, and something arising (`World.binding_counting_counted`); in finite worlds
   and in worlds enclosed from some step on, with a change bound from the first step
@@ -40,10 +38,11 @@ enclosure and finite worlds over counted censuses: the counts of a census taken 
   stands, the laws under each selection are those of counted censuses
   (`World.standing_iff_counting_counted`).
 
-Each law is for every property of the counts and with no decidedness. The forward directions
-take the binding instances to the relata the counts list; the backward directions use the
-witness worlds of `Becoming.Counting`, whose decided marks are counts of their censuses
-(`World.countsOf_eq`). Where a procedure decides activity, these laws give the decided ones
+Each law is for every property of the counts and with no decidedness. Each is a census table
+(`World.census_table_holds`, `Becoming.CensusTable`) whose counted soundness and witness lemma
+are those of the decided law in `Becoming.Counting` (`World.binding_counting_sound`,
+`World.binding_counting_witnessed` and their family), so the counted and the decided form come
+from one proof. Where a procedure decides activity, these laws give the decided ones
 (`World.CountsHold.obey`). The decided statements stay, with their scope.
 -/
 
@@ -52,16 +51,6 @@ namespace Becoming
 namespace World
 
 variable {w : World}
-
-/-- A procedure's marks, equal at each step to given numbers, make those numbers counts of the
-census. -/
-theorem countsOf_eq [∀ t x, Decidable (w.web.active t x)] {alive : Nat → List w.Relatum}
-    {n c a : Nat → Nat}
-    (same : ∀ t, (alive t).length = n t ∧
-      ceasings (alive t) (fun x s => w.web.active s x) t = c t ∧
-      comings (alive (t + 1)) (fun x s => w.web.active s x) t = a t) :
-    w.CountsOf alive n c a :=
-  FamilyCounts.of_eq (countsOf_decided alive) same
 
 /-- Under the eight premises something arising is no law of counting, where the counts exist:
 the empty tally is counted. -/

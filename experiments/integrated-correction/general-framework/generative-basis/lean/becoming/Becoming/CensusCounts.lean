@@ -51,8 +51,11 @@ count to exist.
   `Becoming.Counting` (`World.CountsHold.obey`), and for pointwise properties conversely
   (`World.countsHold_of_obey`).
 
-Not restated here: the laws where the premises bind (`World.binding_counting` and its family in
-`Becoming.Counting`), which still take a decision procedure for activity.
+Each law here is a census table (`World.census_table_holds`, `Becoming.CensusTable`): its
+counted soundness and its witness lemma are those of the decided law of `Becoming.Counting`
+(`World.counting_under_sound`, `World.counting_under_witnessed` and their family), which also
+states the counted binding steps. The laws where the premises bind are stated where the counts
+exist in `Becoming.CensusBinding`.
 
 No premise beyond what each theorem names. No ethical predicate, ranking or axiom occurs.
 -/
@@ -132,14 +135,6 @@ theorem embodiedQueue_countsOf {n c a : Nat → Nat} (tally : Tally n c a) :
   FamilyCounts.of_eq (countsOf_decided (w := embodiedQueue n c) (Queue.line n c)) fun t =>
     Queue.counts tally t
 
-theorem openQueue_countsOf {n c a : Nat → Nat} (tally : Tally n c a) :
-    (openQueue n c).CountsOf (fun t => (Queue.line n c t).map .member) n c a :=
-  FamilyCounts.of_eq (countsOf_decided (w := openQueue n c) _) (openQueue_counts tally)
-
-theorem drivenQueue_countsOf {n c a : Nat → Nat} (tally : Tally n c a) :
-    (drivenQueue n c).CountsOf (fun t => (Queue.line n c t).map .member) n c a :=
-  FamilyCounts.of_eq (countsOf_decided (w := drivenQueue n c) _) (openQueue_counts tally)
-
 /-- **The tally is the whole law of counting of every world, where the counts exist.** A property
 of the counts holds of every counted census of every world exactly when it holds of every tally:
 for every property, with no decidedness (the counted form of the first part of
@@ -190,21 +185,6 @@ theorem counting_binds_iff_counted (S : Premise → Bool) :
         | .inl acting => nomatch ha.symm.trans acting
         | .inr ⟨_, dissipative⟩ => nomatch hd.symm.trans dissipative),
    fun binds => (counting_under_counted S).mp fun _ _ _ _ quiet => quiet binds⟩
-
-theorem enclosedQueue_countsOf {n c a : Nat → Nat} (B : Nat) (tally : Tally n c a) :
-    (enclosedQueue n c a B).CountsOf (Queue.line n c) n c a :=
-  FamilyCounts.of_eq (countsOf_decided (w := enclosedQueue n c a B) (Queue.line n c)) fun t =>
-    Queue.counts tally t
-
-theorem closingQueue_countsOf {n c a : Nat → Nat} (B T : Nat) (tally : Tally n c a) :
-    (closingQueue n c a B T).CountsOf (Queue.line n c) n c a :=
-  FamilyCounts.of_eq (countsOf_decided (w := closingQueue n c a B T) (Queue.line n c)) fun t =>
-    Queue.counts tally t
-
-theorem finiteQueue_countsOf {n c a : Nat → Nat} {B : Nat} (tally : Tally n c a)
-    (bound : ChangeBound 0 B n c a) :
-    (finiteQueue n c a B).CountsOf (FiniteQueue.alive n c B) n c a :=
-  FamilyCounts.of_eq (countsOf_decided (w := finiteQueue n c a B) _) (finiteQueue_counts tally bound)
 
 theorem ring_countsOf {n c a : Nat → Nat} {M : Nat} (tally : Tally n c a)
     (bounded : ∀ t, n t ≤ M) : (ring n c M).CountsOf (Ring.seated n c M) n c a :=

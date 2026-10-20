@@ -188,6 +188,17 @@ rings counting each such tally being the witnesses.
   (`Tally.occupied_from`), has its front shed a spare unit there
   (`World.sheddingQueue_binding`).
 
+Every law of counting here is a census table (`World.census_table_obeys`,
+`Becoming.CensusTable`): a counted soundness, the steps the class of worlds forces on every
+counted census, and a witness lemma, the queues and rings counting each tally meeting them
+(`World.counting_under_sound` and `World.counting_under_witnessed`, and so for each law:
+`…_sound`, `…_witnessed`). The decided law and its counted form in `Becoming.CensusCounts` and
+`Becoming.CensusBinding` are the same table read with the marks of a procedure and with counts
+as relations. The counted binding steps are stated here (`World.active_of_coming_jointly`,
+`World.active_of_coming_taking`, `World.active_of_coming_enclosed`,
+`World.enclosure_bounds_change_counted`, `World.binds_arising_counted`,
+`World.CountsOf.acts_of_binding`, `World.CountsOf.joint_of_binding`).
+
 The counts are of activity; `Becoming.Standing` states what the premises add to the counts
 of what stands and of what depends. Binding here is an instance of each condition; a sense of
 binding in which each premise excludes something the representation allows would be a
@@ -965,10 +976,8 @@ theorem active_of_coming_enclosed (balanced : w.Balanced) (dissipative : w.Dissi
 theorem company_of {alive : Nat → List w.Relatum} {n c a : Nat → Nat}
     (counted : w.CountsOf alive n c a) {t : Nat}
     (ground : ∀ x, x ∈ alive (t + 1) → ComesToBe (fun s => w.web.active s x) t →
-      0 < (alive t).length) : 0 < a t → 0 < n t := fun arising =>
-  match counted t with
-  | ⟨length, _, came⟩ => match came.exists_of_pos arising with
-    | ⟨x, listed, comes⟩ => Nat.lt_of_lt_of_le (ground x listed comes) (Nat.le_of_eq length.symm)
+      0 < (alive t).length) : 0 < a t → 0 < n t :=
+  counted.company ground
 
 end World
 
@@ -1771,18 +1780,6 @@ theorem enclosed_change_bound_iff (S : Premise → Bool) :
 end World
 
 /-! ## Counting under each selection, in finite worlds -/
-
-/-- Coming to be respects agreement at the step and after it. -/
-theorem comesToBe_congr {p q : Nat → Prop} {t : Nat} (now : p t ↔ q t)
-    (next : p (t + 1) ↔ q (t + 1)) : ComesToBe p t ↔ ComesToBe q t :=
-  ⟨fun comes => ⟨fun holds => comes.1 (now.mpr holds), next.mp comes.2⟩,
-   fun comes => ⟨fun holds => comes.1 (now.mp holds), next.mpr comes.2⟩⟩
-
-/-- So does ceasing to be. -/
-theorem ceasesToBe_congr {p q : Nat → Prop} {t : Nat} (now : p t ↔ q t)
-    (next : p (t + 1) ↔ q (t + 1)) : CeasesToBe p t ↔ CeasesToBe q t :=
-  ⟨fun ceases => ⟨now.mp ceases.1, fun holds => ceases.2 (next.mpr holds)⟩,
-   fun ceases => ⟨now.mpr ceases.1, fun holds => ceases.2 (next.mp holds)⟩⟩
 
 namespace Ring
 
