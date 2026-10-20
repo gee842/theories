@@ -1,4 +1,5 @@
 import Becoming.Openness
+import Becoming.Witnesses
 
 /-!
 # Counting: what the premises add to the laws of counting
@@ -245,14 +246,10 @@ def embodied (n c : Nat → Nat) : Web Nat Nat :=
   { web n c with level := fun t k => mark (holds n c k t) }
 
 /-- None at the first step, one from then on. -/
-def lone : Nat → Nat
-  | 0 => 0
-  | _ + 1 => 1
+def lone : Nat → Nat := Witnesses.profile [0] 1
 
 /-- One joins across the first step and none after. -/
-def joins : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def joins : Nat → Nat := Witnesses.profile [1] 0
 
 /-- One relatum comes to be across the first step, from none, and stays. -/
 theorem lone_tally : Tally lone (fun _ => 0) joins

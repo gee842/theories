@@ -1,4 +1,5 @@
 import Becoming.Space
+import Becoming.Witnesses
 
 /-!
 # Admission: what can form next, and what a part opens or closes
@@ -94,17 +95,13 @@ namespace Becoming
 variable {F C : Type}
 
 /-- None at the first step, one after it. -/
-def unitStep : Nat → Nat
-  | 0 => 0
-  | _ + 1 => 1
+def unitStep : Nat → Nat := Witnesses.profile [0] 1
 
 theorem unitStep_pos : ∀ {t : Nat}, 0 < t → 1 ≤ unitStep t
   | _ + 1, _ => Nat.le_refl 1
 
 /-- One at the first step, none after it. -/
-def unitDrop : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def unitDrop : Nat → Nat := Witnesses.profile [1] 0
 
 /-! ## Gaining and losing support -/
 

@@ -237,7 +237,7 @@ theorem level_pos : ∀ t, 1 ≤ level t
 theorem dependent : web.Dependent :=
   fun t _ _ _ _ => level_pos t
 
-theorem present_first : ∀ t, t < 4 → Member.first ∈ present t
+theorem present_first : ∀ t, t < 4 → Witnesses.Member.first ∈ present t
   | 0, _ => .tail _ (.head _)
   | 1, _ => .tail _ (.head _)
   | 2, _ => .tail _ (.head _)
@@ -246,7 +246,7 @@ theorem present_first : ∀ t, t < 4 → Member.first ∈ present t
 
 /-- While active, the first takes part with a take more than now. -/
 theorem seeks : ∀ t, web.active t .first →
-    Member.first ∈ flow.present t ∧ MoreThanNow id (fun s => flow.take s .first ()) t :=
+    Witnesses.Member.first ∈ flow.present t ∧ MoreThanNow id (fun s => flow.take s .first ()) t :=
   fun t active => ⟨present_first t active, Nat.lt_succ_self (t + 1)⟩
 
 /-- The first's activity does not resume once it stops. -/

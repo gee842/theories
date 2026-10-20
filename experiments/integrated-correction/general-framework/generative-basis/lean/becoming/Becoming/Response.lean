@@ -1,4 +1,5 @@
 import Becoming.Testing
+import Becoming.Witnesses
 
 /-!
 # Response: the comparison in which the rest responds is decided within the responsive reach
@@ -515,15 +516,10 @@ def paired : Formation → Place → Prop
   | .second, .ofSecond => True
 
 /-- The act: one unit across the first step. -/
-def act : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def act : Nat → Nat := Witnesses.profile [1] 0
 
 /-- The response: two units across the second step. -/
-def reply : Nat → Nat
-  | 0 => 0
-  | 1 => 2
-  | _ + 2 => 0
+def reply : Nat → Nat := Witnesses.profile [0, 2] 0
 
 /-- With the act: the first takes one unit of the second's condition across the first step, and
 the second, the fall having coupled into it, takes two units of the first's condition across the
@@ -544,21 +540,13 @@ def quiet : Flow Formation Place where
   give _ _ _ := 0
 
 /-- The first's condition: two units, then nothing from the third step on. -/
-def ofFirstLevel : Nat → Nat
-  | 0 => 2
-  | 1 => 2
-  | _ + 2 => 0
+def ofFirstLevel : Nat → Nat := Witnesses.profile [2, 2] 0
 
 /-- The second's condition: two units, then one. -/
-def ofSecondLevel : Nat → Nat
-  | 0 => 2
-  | _ + 1 => 1
+def ofSecondLevel : Nat → Nat := Witnesses.profile [2] 1
 
 /-- With the act, the first is active at the first two steps only. -/
-def firstLive : Nat → Prop
-  | 0 => True
-  | 1 => True
-  | _ + 2 => False
+def firstLive : Nat → Prop := Witnesses.profile [True, True] False
 
 /-- With the act: each formation requires its own condition at need one. -/
 def web : Web Formation Place where

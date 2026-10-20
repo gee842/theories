@@ -1,4 +1,5 @@
 import Becoming.Significance
+import Becoming.Witnesses
 
 /-!
 # Relative position: a counting law, and what it does not protect
@@ -324,20 +325,11 @@ end DrawingMore
 namespace Race
 
 /-- A renewer and two parts sharing one condition. -/
-inductive Member where
-  | renewer
-  | first
-  | second
+abbrev Member := Witnesses.Member
 
-def level : Nat → Nat
-  | 0 => 2
-  | 1 => 1
-  | _ + 2 => 0
+def level : Nat → Nat := Witnesses.profile [2, 1] 0
 
-def live : Nat → Prop
-  | 0 => True
-  | 1 => True
-  | _ + 2 => False
+def live : Nat → Prop := Witnesses.profile [True, True] False
 
 def present : Nat → List Member
   | 0 => [.renewer, .first, .second]
@@ -345,27 +337,10 @@ def present : Nat → List Member
   | _ + 2 => []
 
 /-- The renewer gives two units; the first part takes two and the second one. -/
-def flow : Flow Member Unit where
-  present := present
-  take _ f _ := match f with
-    | .renewer => 0
-    | .first => 2
-    | .second => 1
-  give _ f _ := match f with
-    | .renewer => 2
-    | .first => 0
-    | .second => 0
+def flow : Flow Member Unit := Witnesses.relay present 2 2 1
 
 /-- Each depends on the condition at need one, the renewer included. -/
-def web : Web Member Unit where
-  level t _ := level t
-  active t _ := live t
-  requires _ _ _ := True
-  need _ _ _ := 1
-  draws _ f _ := match f with
-    | .renewer => False
-    | .first => True
-    | .second => True
+def web : Web Member Unit := Witnesses.relayWeb level fun t _ => live t
 
 theorem balances : flow.Balances web
   | 0, () => rfl
@@ -399,7 +374,7 @@ theorem drawn_second_le : ∀ t, flow.drawn () t .second ≤ flow.drawn () t .fi
 
 /-- Read by what each has drawn, the first part is greatest at every step. -/
 theorem first_greatest (t : Nat) :
-    Greatest [Member.renewer, Member.first, Member.second] (flow.drawn () t) .first :=
+    Greatest [Witnesses.Member.renewer, Witnesses.Member.first, Witnesses.Member.second] (flow.drawn () t) .first :=
   fun q _ => match q with
     | .renewer => Nat.le_trans (Nat.le_of_eq (drawn_renewer t)) (Nat.zero_le _)
     | .first => Nat.le_refl _
@@ -428,8 +403,8 @@ theorem greatest_ends :
       (∀ t, Greatest all (flow.drawn () t) .first) ∧
       fallCount all (flow.drawn () 0) (flow.drawn () 2) .first <
         riseCount all (flow.drawn () 0) (flow.drawn () 2) .first ∧
-      total [Member.renewer, Member.second] (riseCount all (flow.drawn () 0) (flow.drawn () 2)) <
-        total [Member.renewer, Member.second] (fallCount all (flow.drawn () 0) (flow.drawn () 2)) ∧
+      total [Witnesses.Member.renewer, Witnesses.Member.second] (riseCount all (flow.drawn () 0) (flow.drawn () 2)) <
+        total [Witnesses.Member.renewer, Witnesses.Member.second] (fallCount all (flow.drawn () 0) (flow.drawn () 2)) ∧
       (∀ k, ¬ web.active (0 + 2 + k) .first) ∧
       ∀ k f, ¬ web.active (0 + 2 + k) f :=
   have within : ∀ t, t < 2 → flow.WithinOwn t ()
@@ -449,7 +424,7 @@ theorem greatest_ends :
     | 1, below => ⟨within 1 below, fun joint => Nat.not_succ_le_self 2 (show 3 ≤ 2 from joint)⟩
     | _ + 2, late => absurd late (Nat.not_lt_of_le (Nat.le_add_left 2 _)),
    first_greatest, first_rises,
-   rest_falls_of_rises (pre := [Member.renewer]) (p := Member.first) (post := [Member.second])
+   rest_falls_of_rises (pre := [Witnesses.Member.renewer]) (p := Witnesses.Member.first) (post := [Witnesses.Member.second])
      first_rises,
    fun k => race.2.2.2 k .first (.tail _ (.head _)) (first_greatest _) trivial (Nat.le_refl 1),
    fun k f => Flow.joint_excess_ends (c := ()) (m := 1) balances acting dependent gated excess
@@ -464,24 +439,13 @@ inductive Member where
   | renewer
   | part
 
-def level : Nat → Nat
-  | 0 => 1
-  | 1 => 0
-  | _ + 2 => 1
+def level : Nat → Nat := Witnesses.profile [1, 0] 1
 
-def takeAt : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def takeAt : Nat → Nat := Witnesses.profile [1] 0
 
-def giveAt : Nat → Nat
-  | 0 => 0
-  | 1 => 1
-  | _ + 2 => 0
+def giveAt : Nat → Nat := Witnesses.profile [0, 1] 0
 
-def live : Nat → Prop
-  | 0 => True
-  | 1 => False
-  | _ + 2 => True
+def live : Nat → Prop := Witnesses.profile [True, False] True
 
 /-- The part takes one unit at the first step; the renewer gives one at the second. -/
 def flow : Flow Member Unit where

@@ -1,4 +1,5 @@
 import Becoming.Arising
+import Becoming.Witnesses
 
 /-!
 # Flow: more generation needs more replenishment
@@ -78,9 +79,7 @@ The structure `Flow` is stated in `Becoming.World`, the base of the core.
 namespace Becoming
 
 /-- One for a positive number, zero for zero. -/
-def sign : Nat → Nat
-  | 0 => 0
-  | _ + 1 => 1
+def sign : Nat → Nat := Witnesses.profile [0] 1
 
 /-- How many members of a finite list a quantity is positive at. -/
 def count {α : Type} (as : List α) (q : α → Nat) : Nat :=
@@ -676,15 +675,10 @@ end Flow
 namespace Growing
 
 /-- A condition rising by one at every step from one. -/
-def web : Web Unit Unit where
-  level t _ := t + 1
-  active _ _ := True
-  requires _ _ _ := False
-  need _ _ _ := 0
-  draws _ _ _ := False
+def web : Web Unit Unit := Witnesses.unrequired (fun t _ => t + 1) (fun _ _ => True)
 
 /-- One formation gives the condition one unit at every step. -/
-def flow : Flow Unit Unit := ⟨fun _ => [()], fun _ _ _ => 0, fun _ _ _ => 1⟩
+def flow : Flow Unit Unit := Witnesses.giving () 1
 
 theorem balances : flow.Balances web := fun _ _ => rfl
 

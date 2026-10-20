@@ -1,4 +1,5 @@
 import Becoming.Roles
+import Becoming.Witnesses
 
 /-!
 # Reserve: activity beyond support, standing beyond activity
@@ -518,18 +519,10 @@ end Web
 namespace Seed
 
 /-- Awake at steps one and three. -/
-def wake : Nat → Nat
-  | 1 => 1
-  | 3 => 1
-  | _ => 0
+def wake : Nat → Nat := Witnesses.profile [0, 1, 0, 1] 0
 
 /-- Two units until the seed first wakes, one until it wakes again, then none. -/
-def reserve : Nat → Nat
-  | 0 => 2
-  | 1 => 2
-  | 2 => 1
-  | 3 => 1
-  | _ => 0
+def reserve : Nat → Nat := Witnesses.profile [2, 2, 1, 1] 0
 
 /-- A seed in the dark, depending on light at need one, awake at steps one and three. -/
 def web : Web Unit Unit where
@@ -578,11 +571,7 @@ end Seed
 namespace Viable
 
 /-- Viability: three units, falling by one at every step until none is left. -/
-def viability : Nat → Nat
-  | 0 => 3
-  | 1 => 2
-  | 2 => 1
-  | _ => 0
+def viability : Nat → Nat := Witnesses.profile [3, 2, 1] 0
 
 /-- A seed in the dark, depending on light at need one, awake only at step two. -/
 def web : Web Unit Unit where
@@ -637,27 +626,16 @@ inductive Relatum where
   | fat
 
 /-- The hare stands at step zero only. -/
-def hare : Nat → Nat
-  | 0 => 1
-  | _ => 0
+def hare : Nat → Nat := Witnesses.profile [1] 0
 
 /-- The fat stands at two units through step one, at one at step two, then at none. -/
-def fat : Nat → Nat
-  | 0 => 2
-  | 1 => 2
-  | 2 => 1
-  | _ => 0
+def fat : Nat → Nat := Witnesses.profile [2, 2, 1] 0
 
 /-- The fox eats the hare across step zero. -/
-def eats : Nat → Nat
-  | 0 => 1
-  | _ => 0
+def eats : Nat → Nat := Witnesses.profile [1] 0
 
 /-- The fox burns a unit of fat across steps one and two. -/
-def burns : Nat → Nat
-  | 1 => 1
-  | 2 => 1
-  | _ => 0
+def burns : Nat → Nat := Witnesses.profile [0, 1, 1] 0
 
 /-- The fox takes part through step two. -/
 def present : Nat → List Relatum
@@ -1018,7 +996,7 @@ def web : Web Unit Unit where
   draws _ _ _ := False
 
 /-- Nothing takes part. -/
-def flow : Flow Unit Unit := ⟨fun _ => [], fun _ _ _ => 0, fun _ _ _ => 0⟩
+def flow : Flow Unit Unit := Witnesses.emptyFlow Unit Unit
 
 /-- Waking from dormancy is arising without coming to stand: the relatum stands as a
 condition throughout and while active, the flow, in which nothing takes part, balances
@@ -1046,10 +1024,7 @@ inductive Relatum where
   | seed
 
 /-- Active from step two on. -/
-def late : Nat → Nat
-  | 0 => 0
-  | 1 => 0
-  | _ => 1
+def late : Nat → Nat := Witnesses.profile [0, 0] 1
 
 /-- The seed stands from step one and is active from step two; the parent is always
 active. Nothing depends on or draws on anything. -/
@@ -1065,9 +1040,7 @@ def web : Web Relatum Relatum where
   draws _ _ _ := False
 
 /-- One unit at step zero. -/
-def provision : Nat → Nat
-  | 0 => 1
-  | _ => 0
+def provision : Nat → Nat := Witnesses.profile [1] 0
 
 /-- The parent gives the seed one unit across step zero. -/
 def flow : Flow Relatum Relatum where

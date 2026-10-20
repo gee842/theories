@@ -1,5 +1,6 @@
 import Becoming.Evolution
 import Becoming.Reserve
+import Becoming.Witnesses
 
 /-!
 # Space: the whole and its parts
@@ -514,16 +515,10 @@ theorem unbalanced_world :
 namespace Idle
 
 /-- One relatum, never active, gives itself a unit across every step. -/
-def flow : Flow Unit Unit :=
-  ⟨fun _ => [()], fun _ _ _ => 0, fun _ _ _ => 1⟩
+def flow : Flow Unit Unit := Witnesses.giving () 1
 
 /-- It stands at the number of steps so far. -/
-def web : Web Unit Unit where
-  level t _ := t
-  active _ _ := False
-  requires _ _ _ := False
-  need _ _ _ := 0
-  draws _ _ _ := False
+def web : Web Unit Unit := Witnesses.unrequired (fun t _ => t) (fun _ _ => False)
 
 end Idle
 
@@ -862,9 +857,7 @@ inductive Relatum where
   | soil
 
 /-- The soil stands at three at the first step and one after it. -/
-def soil : Nat → Nat
-  | 0 => 3
-  | _ + 1 => 1
+def soil : Nat → Nat := Witnesses.profile [3] 1
 
 /-- The drawer stands at one throughout, the seed at nothing. -/
 def level (t : Nat) : Relatum → Nat

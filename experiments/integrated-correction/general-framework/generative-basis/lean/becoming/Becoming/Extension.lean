@@ -1,4 +1,5 @@
 import Becoming.Regions
+import Becoming.Witnesses
 
 /-!
 # Extension: C on frames, with no axiom
@@ -134,7 +135,7 @@ variable {F C : Type}
 /-- The frame of a web's level paths: a claim is a formation at a step, realized along a level
 path when the levels admit it there. Nothing steps. -/
 def Web.paths (W : Web F C) : Frame (Nat → C → Nat) Unit (F × Nat) :=
-  ⟨⟨fun _ _ _ => False⟩, fun l e => W.Admits (l e.2) e.2 e.1⟩
+  ⟨Witnesses.halted _ _, fun l e => W.Admits (l e.2) e.2 e.1⟩
 
 /-- C with no axiom. On level paths, an extension in which every claim counts as living is exactly
 a widening. -/

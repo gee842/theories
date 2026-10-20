@@ -1,5 +1,6 @@
 import Becoming.Recurrence
 import Becoming.Labelled
+import Becoming.Witnesses
 
 /-!
 # Attraction: what is drawn in never comes back, and every law draws exactly what does not return
@@ -449,14 +450,10 @@ theorem locked_in (n : Nat) : ∀ k, atTrue (staying.state (n + k)) :=
   staying.stays (fun _ => keeps) rfl
 
 /-- The configurations of the run that leaves: `true`, then `false`. -/
-def path : Nat → Bool
-  | 0 => true
-  | _ + 1 => false
+def path : Nat → Bool := Witnesses.profile [true] false
 
 /-- The moves of the run that leaves: `true`, then `false`. -/
-def moves : Nat → Bool
-  | 0 => true
-  | _ + 1 => false
+def moves : Nat → Bool := Witnesses.profile [true] false
 
 /-- The run that leaves `{true}` at the first step. -/
 def leaving : Run process :=

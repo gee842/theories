@@ -1,4 +1,5 @@
 import Becoming.Retaining
+import Becoming.Witnesses
 
 /-!
 # Clearing: a source, a clearer and a dweller (a model witness)
@@ -56,20 +57,11 @@ inductive Place where
   | fuel (n : Nat)
 
 /-- The clearer takes one unit of the habitat at each of the first two steps. -/
-def cleared : Nat → Nat
-  | 0 => 1
-  | 1 => 1
-  | _ + 2 => 0
+def cleared : Nat → Nat := Witnesses.profile [1, 1] 0
 
-def habitatLevel : Nat → Nat
-  | 0 => 2
-  | 1 => 1
-  | _ + 2 => 0
+def habitatLevel : Nat → Nat := Witnesses.profile [2, 1] 0
 
-def dwellerLive : Nat → Prop
-  | 0 => True
-  | 1 => True
-  | _ + 2 => False
+def dwellerLive : Nat → Prop := Witnesses.profile [True, True] False
 
 /-- The source burns the `t`th fuel, two units, and gives the resource one; the clearer takes one
 unit of the resource at every step and clears the habitat. -/

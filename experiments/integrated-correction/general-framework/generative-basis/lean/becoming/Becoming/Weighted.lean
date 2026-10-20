@@ -1,5 +1,6 @@
 import Becoming.Capture
 import Becoming.Resolution
+import Becoming.Witnesses
 
 /-!
 # Weighted histories
@@ -336,9 +337,7 @@ theorem mem_openSteps {S : Type u} {A : Type v} {moves : List A} {all : List S} 
   mem_joinMap (fun a => all.map fun m => (a, m)) (mem_mapped (fun m => (a, m)) reached) move
 
 /-- Whether a count is not zero. -/
-def nonzero : Nat → Bool
-  | 0 => false
-  | _ + 1 => true
+def nonzero : Nat → Bool := Witnesses.profile [false] true
 
 /-- **Counting read as possibility loses nothing of what is possible:** a count is not zero
 exactly where possibility holds, since counts of alternatives cannot cancel. -/

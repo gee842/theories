@@ -1,6 +1,7 @@
 import Becoming.Inquiry
 import Becoming.Recurrence
 import Becoming.Labelled
+import Becoming.Witnesses
 
 /-!
 # The outcomes of one move from a configuration
@@ -195,13 +196,13 @@ end Laws
 abbrev toFalse : Process Bool Unit := Law.process (fun _ => false)
 
 /-- The free process: a move may go to any configuration. -/
-def free : Process Bool Unit := ⟨fun _ _ _ => True⟩
+def free : Process Bool Unit := everyStep Bool Unit
 
 /-- The setting process: a move names the next configuration. -/
 def setting : Process Bool Bool := ⟨fun _ a o => o = a⟩
 
 /-- The halted process: no move is enabled. -/
-def halted : Process Bool Unit := ⟨fun _ _ _ => False⟩
+def halted : Process Bool Unit := Witnesses.halted Bool Unit
 
 /-- The constant law's move completes reaching `false`. -/
 theorem toFalse_ensures_false (s : Bool) : Ensures toFalse s (fun o => o = false) :=

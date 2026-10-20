@@ -1,4 +1,5 @@
 import Becoming.Roles
+import Becoming.Witnesses
 
 /-!
 # Continuation: what a continuing formation must count
@@ -472,20 +473,11 @@ end Pair
 namespace Exceeding
 
 /-- A renewer and two takers share one condition. -/
-inductive Member where
-  | renewer
-  | first
-  | second
+abbrev Member := Witnesses.Member
 
-def level : Nat → Nat
-  | 0 => 4
-  | 1 => 2
-  | _ + 2 => 0
+def level : Nat → Nat := Witnesses.profile [4, 2] 0
 
-def live : Nat → Prop
-  | 0 => True
-  | 1 => True
-  | _ + 2 => False
+def live : Nat → Prop := Witnesses.profile [True, True] False
 
 def present : Nat → List Member
   | 0 => [.renewer, .first, .second]
@@ -493,27 +485,10 @@ def present : Nat → List Member
   | _ + 2 => []
 
 /-- The renewer gives two units and each taker takes two, while they take part. -/
-def flow : Flow Member Unit where
-  present := present
-  take _ f _ := match f with
-    | .renewer => 0
-    | .first => 2
-    | .second => 2
-  give _ f _ := match f with
-    | .renewer => 2
-    | .first => 0
-    | .second => 0
+def flow : Flow Member Unit := Witnesses.relay present 2 2 2
 
 /-- Each depends on the condition at need one, the renewer included. -/
-def web : Web Member Unit where
-  level t _ := level t
-  active t _ := live t
-  requires _ _ _ := True
-  need _ _ _ := 1
-  draws _ f _ := match f with
-    | .renewer => False
-    | .first => True
-    | .second => True
+def web : Web Member Unit := Witnesses.relayWeb level fun t _ => live t
 
 theorem balances : flow.Balances web
   | 0, () => rfl
@@ -566,16 +541,7 @@ end Exceeding
 namespace Alone
 
 /-- The same renewer with one taker. -/
-def flow : Flow Exceeding.Member Unit where
-  present _ := [.renewer, .first]
-  take _ f _ := match f with
-    | .renewer => 0
-    | .first => 2
-    | .second => 0
-  give _ f _ := match f with
-    | .renewer => 2
-    | .first => 0
-    | .second => 0
+def flow : Flow Exceeding.Member Unit := Witnesses.relay (fun _ => [.renewer, .first]) 2 2 0
 
 def web : Web Exceeding.Member Unit where
   level _ _ := 4
@@ -614,19 +580,9 @@ inductive Condition where
   | ground
   | output
 
-def outputLevel : Nat → Nat
-  | 0 => 1
-  | 1 => 1
-  | 2 => 1
-  | 3 => 1
-  | _ + 4 => 0
+def outputLevel : Nat → Nat := Witnesses.profile [1, 1, 1, 1] 0
 
-def downLive : Nat → Prop
-  | 0 => True
-  | 1 => True
-  | 2 => True
-  | 3 => True
-  | _ + 4 => False
+def downLive : Nat → Prop := Witnesses.profile [True, True, True, True] False
 
 /-- The self gives the output one unit for three steps; the downstream formation takes one
 unit of it while it is active. -/
@@ -711,11 +667,7 @@ inductive Member where
   | successor
   | mortal
 
-def level : Nat → Nat
-  | 0 => 3
-  | 1 => 2
-  | 2 => 1
-  | _ + 3 => 0
+def level : Nat → Nat := Witnesses.profile [3, 2, 1] 0
 
 def present : Nat → List Member
   | 0 => [.renewer, .successor, .mortal]

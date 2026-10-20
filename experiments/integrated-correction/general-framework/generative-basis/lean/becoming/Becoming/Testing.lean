@@ -1,4 +1,5 @@
 import Becoming.Feedback
+import Becoming.Witnesses
 
 /-!
 # Testing: what couples into a formation, and what it can test
@@ -911,30 +912,16 @@ at two, in the higher at three. -/
 namespace SupportDrawn
 
 /-- The lower stock: two, one, then nothing. -/
-def lowerLevel : Nat → Nat
-  | 0 => 2
-  | 1 => 1
-  | _ + 2 => 0
+def lowerLevel : Nat → Nat := Witnesses.profile [2, 1] 0
 
 /-- The higher stock: three, two, one, then nothing. -/
-def higherLevel : Nat → Nat
-  | 0 => 3
-  | 1 => 2
-  | 2 => 1
-  | _ + 3 => 0
+def higherLevel : Nat → Nat := Witnesses.profile [3, 2, 1] 0
 
 /-- One unit at each supported step of the lower web. -/
-def lowerDraw : Nat → Nat
-  | 0 => 1
-  | 1 => 1
-  | _ + 2 => 0
+def lowerDraw : Nat → Nat := Witnesses.profile [1, 1] 0
 
 /-- One unit at each supported step of the higher web. -/
-def higherDraw : Nat → Nat
-  | 0 => 1
-  | 1 => 1
-  | 2 => 1
-  | _ + 3 => 0
+def higherDraw : Nat → Nat := Witnesses.profile [1, 1, 1] 0
 
 def flow (draw : Nat → Nat) : Flow Unit Unit where
   present _ := [()]
@@ -1012,9 +999,7 @@ def flow (draw : Nat → Nat) : Flow Unit Bool where
   give _ _ _ := 0
 
 /-- One unit at the first step only. -/
-def draw : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def draw : Nat → Nat := Witnesses.profile [1] 0
 
 /-- The stock starts at `s`; the second requirement stands at one at the first step and at
 nothing after. -/
@@ -1092,14 +1077,9 @@ def higherFlow : Flow Formation Unit where
     | taker, _ + 1 => 0
   give _ _ _ := 0
 
-def lowerLevel : Nat → Nat
-  | 0 => 2
-  | 1 => 1
-  | _ + 2 => 0
+def lowerLevel : Nat → Nat := Witnesses.profile [2, 1] 0
 
-def higherLevel : Nat → Nat
-  | 0 => 3
-  | _ + 1 => 0
+def higherLevel : Nat → Nat := Witnesses.profile [3] 0
 
 def web (level : Nat → Nat) : Web Formation Unit where
   level t _ := level t
@@ -1169,9 +1149,7 @@ inductive Relatum where
 open Relatum
 
 /-- The predator takes one unit of the prey's standing at the first step. -/
-def bite : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def bite : Nat → Nat := Witnesses.profile [1] 0
 
 def flow : Flow Relatum Relatum where
   present _ := [predator]
@@ -1184,9 +1162,7 @@ def flow : Flow Relatum Relatum where
   give _ _ _ := 0
 
 /-- The prey's standing: two at the start, one after the bite. -/
-def standing : Nat → Nat
-  | 0 => 2
-  | _ + 1 => 1
+def standing : Nat → Nat := Witnesses.profile [2] 1
 
 def web : Web Relatum Relatum where
   level t c := match c with

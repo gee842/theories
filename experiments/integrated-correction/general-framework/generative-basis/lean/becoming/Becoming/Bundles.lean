@@ -1,6 +1,7 @@
 import Becoming.Lexical
 import Becoming.Frame
 import Becoming.Extension
+import Becoming.Witnesses
 
 /-!
 # Joint bundles: what a region of configurations can realize together
@@ -173,7 +174,7 @@ def realized (h : TwoSteps) : Claim → Prop
   | .rightRealized => h.final = .rightActive ∨ h.final = .bothActive
 
 /-- Complete histories as the configurations of a frame with no moves. -/
-def frame : Frame TwoSteps Unit Claim := ⟨⟨fun _ _ _ => False⟩, realized⟩
+def frame : Frame TwoSteps Unit Claim := ⟨Witnesses.halted _ _, realized⟩
 
 /-- The histories that retain, and those that release, the coupling. -/
 def retained (h : TwoSteps) : Prop := Admissible h ∧ h.first = .retain
@@ -349,7 +350,7 @@ def living (bundle : Claim → Prop) : Prop := ∀ c, bundle c
 /-- The regimes as configurations of a frame with no moves, realizing the bundles jointly
 realizable under them. It records possible joint realization, not actual realization. -/
 def frame : Frame Regime Unit (Claim → Prop) :=
-  ⟨⟨fun _ _ _ => False⟩, fun r bundle => Jointly Activation.frame (histories r) bundle⟩
+  ⟨Witnesses.halted _ _, fun r bundle => Jointly Activation.frame (histories r) bundle⟩
 
 /-- Every released profile is carried under retaining, by one common history. -/
 theorem released_carried :

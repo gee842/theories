@@ -1,5 +1,6 @@
 import Becoming.Sensitivity
 import Becoming.Labelled
+import Becoming.Witnesses
 
 /-!
 # Tail: what a law of the whole and no part takes
@@ -91,9 +92,7 @@ variable {F C : Type}
 namespace Tail
 
 /-- Whether a level is above `0`. -/
-def nonzero : Nat → Bool
-  | 0 => false
-  | _ + 1 => true
+def nonzero : Nat → Bool := Witnesses.profile [false] true
 
 theorem eq_zero_of_nonzero_false : ∀ {x : Nat}, nonzero x = false → x = 0
   | 0, _ => rfl

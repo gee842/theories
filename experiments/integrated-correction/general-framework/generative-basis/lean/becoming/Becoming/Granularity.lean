@@ -1,5 +1,6 @@
 import Becoming.Joining
 import Becoming.Segmentation
+import Becoming.Witnesses
 
 /-!
 # Granularity: one unfolding read at a coarser grain
@@ -534,7 +535,7 @@ theorem Recipe.holds_after {F : Frame S A C} (decided : TestsDecided F) :
 
 /-- The frame whose one claim is realized exactly where `p` holds, with no steps. -/
 def Recipe.claimFrame (p : Prop) : Frame Unit Unit Unit :=
-  ⟨⟨fun _ _ _ => False⟩, fun _ _ => p⟩
+  ⟨Witnesses.halted _ _, fun _ _ => p⟩
 
 /-- **Reading every recipe as one branching test is exact, for every frame, exactly under
 excluded middle.** That the test read after a recipe holds exactly where the recipe leads to where

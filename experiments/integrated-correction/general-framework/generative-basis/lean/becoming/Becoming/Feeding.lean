@@ -1,4 +1,5 @@
 import Becoming.Interdependence
+import Becoming.Witnesses
 
 /-!
 # Feeding: what is given, carried across steps, and feeders that stand in for one another
@@ -448,36 +449,22 @@ inductive Formation where
   | young
 
 /-- What the parent gives the store: one unit across the first step. -/
-def gift : Nat → Nat
-  | 0 => 1
-  | _ => 0
+def gift : Nat → Nat := Witnesses.profile [1] 0
 
 /-- What the young takes from the store: one unit across the third step. -/
-def use : Nat → Nat
-  | 2 => 1
-  | _ => 0
+def use : Nat → Nat := Witnesses.profile [0, 0, 1] 0
 
 /-- The store: nothing at the start, one unit at the second and third steps, then nothing. -/
-def stored : Nat → Nat
-  | 1 => 1
-  | 2 => 1
-  | _ => 0
+def stored : Nat → Nat := Witnesses.profile [0, 1, 1] 0
 
 /-- The first step. -/
-def atFirst : Nat → Prop
-  | 0 => True
-  | _ + 1 => False
+def atFirst : Nat → Prop := Witnesses.profile [True] False
 
 /-- The third step. -/
-def atThird : Nat → Prop
-  | 2 => True
-  | _ => False
+def atThird : Nat → Prop := Witnesses.profile [False, False, True] False
 
 /-- From the third step on. -/
-def fromThird : Nat → Prop
-  | 0 => False
-  | 1 => False
-  | _ + 2 => True
+def fromThird : Nat → Prop := Witnesses.profile [False, False] True
 
 /-- Both take part at every step; the parent gives the store a unit across the first step,
 and the young takes it across the third. -/

@@ -1,6 +1,7 @@
 import Becoming.Unfolding
 import Becoming.Attraction
 import Becoming.Capture
+import Becoming.Witnesses
 
 /-!
 # Branching: what every process keeps, loses, returns to and is drawn into, and determinacy up to likeness
@@ -603,9 +604,7 @@ theorem atTrue_invariant : Invariant process atTrue :=
 def staying : Run process := ⟨fun _ => false, fun _ => false, fun _ => rfl⟩
 
 /-- The configurations of the run that passes: `false`, then `true`. -/
-def passed : Nat → Bool
-  | 0 => false
-  | _ + 1 => true
+def passed : Nat → Bool := Witnesses.profile [false] true
 
 /-- The run that passes at once. -/
 def passing : Run process :=
@@ -1104,9 +1103,7 @@ def flips : Nat → Bool
 def still : Run process := ⟨fun n => (flips n, false), fun _ => (), fun _ => rfl⟩
 
 /-- The second part of the run that turns: `false`, then `true`. -/
-def turnedPart : Nat → Bool
-  | 0 => false
-  | _ + 1 => true
+def turnedPart : Nat → Bool := Witnesses.profile [false] true
 
 /-- The run turning its second part to `true` at the first step. -/
 def turned : Run process := ⟨fun n => (flips n, turnedPart n), fun _ => (), fun _ => rfl⟩

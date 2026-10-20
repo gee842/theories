@@ -1,4 +1,5 @@
 import Becoming.Restoration
+import Becoming.Witnesses
 
 /-!
 # Arising: unceasing arising and renewal
@@ -300,11 +301,7 @@ end Tide
 namespace Growth
 
 /-- Three units, no renewal; each step takes one until none is left. -/
-def left : Nat → Nat
-  | 0 => 3
-  | 1 => 2
-  | 2 => 1
-  | _ + 3 => 0
+def left : Nat → Nat := Witnesses.profile [3, 2, 1] 0
 
 /-- Cell `n` is active after step `n` while the condition supports it: cells 0 and 1
 arise, and the condition is gone before cell 2 can. -/

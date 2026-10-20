@@ -1,5 +1,6 @@
 import Becoming.Frame
 import Becoming.Extension
+import Becoming.Witnesses
 
 /-!
 # What comparison C ranks under each reading of `living`
@@ -595,22 +596,10 @@ inductive Part where
 /-- Restraint: the first step is the same overdraw (6 to 5); then the focal formation
 takes nothing for two steps (5, 6, 7); at step 3 a third formation, supported only at 7,
 takes two (7 to 6); afterwards the focal formation takes the renewal (6). -/
-def stopsLevel : Nat → Nat
-  | 0 => 6
-  | 1 => 5
-  | 2 => 6
-  | 3 => 7
-  | _ + 4 => 6
+def stopsLevel : Nat → Nat := Witnesses.profile [6, 5, 6, 7] 6
 
 /-- Overdraw: the focal formation takes two where one is renewed, down to 0. -/
-def overLevel : Nat → Nat
-  | 0 => 6
-  | 1 => 5
-  | 2 => 4
-  | 3 => 3
-  | 4 => 2
-  | 5 => 1
-  | _ + 6 => 0
+def overLevel : Nat → Nat := Witnesses.profile [6, 5, 4, 3, 2, 1] 0
 
 /-- The focal formation needs nothing and always draws; the sustaining formation needs
 one; the third formation needs seven and draws while active. Its dependences do not change with

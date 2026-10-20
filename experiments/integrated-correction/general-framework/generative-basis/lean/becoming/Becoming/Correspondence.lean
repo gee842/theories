@@ -2,6 +2,7 @@ import Becoming.Labelled
 import Becoming.Metaethics
 import Becoming.Roles
 import Becoming.ValuationFrames
+import Becoming.Witnesses
 
 /-!
 # Which conditions relate: a correspondence discipline
@@ -427,17 +428,13 @@ inductive Formation where
   | second
 
 /-- The user is active at the first step only. -/
-def atStart : Nat → Prop
-  | 0 => True
-  | _ + 1 => False
+def atStart : Nat → Prop := Witnesses.profile [True] False
 
 /-- The condition stays at level one. -/
 def steady : Nat → Nat := fun _ => 1
 
 /-- The condition falls to zero after the first step. -/
-def falling : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def falling : Nat → Nat := Witnesses.profile [1] 0
 
 /-- Two formations depend on one condition at level one and are active while it meets
 their need; a third draws on it at the first step. -/

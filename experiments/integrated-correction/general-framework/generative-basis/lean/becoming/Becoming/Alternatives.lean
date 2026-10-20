@@ -3,6 +3,7 @@ import Becoming.Relevance
 import Becoming.Lifting
 import Becoming.Frame
 import Becoming.ValuationFrames
+import Becoming.Witnesses
 
 /-!
 # Alternatives realizing configurations: C, P and N on them
@@ -207,7 +208,7 @@ def realized : Profile → Bool → Prop
   | p, true => p.2 = true
   | p, false => p.1 = true
 
-def frame : Frame Profile Unit Bool := ⟨⟨fun _ _ _ => False⟩, realized⟩
+def frame : Frame Profile Unit Bool := ⟨Witnesses.halted _ _, realized⟩
 
 def living (_ : Bool) : Prop := True
 

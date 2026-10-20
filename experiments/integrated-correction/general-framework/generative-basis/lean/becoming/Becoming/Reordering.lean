@@ -1,4 +1,5 @@
 import Becoming.Stuttering
+import Becoming.Witnesses
 
 /-!
 # Reordering: exchanges taken in the other order
@@ -907,9 +908,7 @@ theorem Reorders.totals {X : Type} {S m : Nat} {L L' : Flow X X} {W W' : Web X X
 /-! ### What the order of two exchanges carries -/
 
 /-- The first relatum on one side, the others on the other. -/
-def firstSide : Nat → Bool
-  | 0 => true
-  | _ + 1 => false
+def firstSide : Nat → Bool := Witnesses.profile [true] false
 
 namespace Order.Crossing
 

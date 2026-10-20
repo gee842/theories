@@ -1,4 +1,5 @@
 import Becoming.Frame
+import Becoming.Witnesses
 
 /-!
 # Viability: where no course leaves a guard
@@ -106,7 +107,7 @@ theorem Kernel.run {P : Process S A} {guard : S → Prop} (r : Run P)
 namespace Leaves
 
 /-- From `true` one step leads to `false`. -/
-def process : Process Bool Unit := ⟨fun s _ t => s = true ∧ t = false⟩
+def process : Process Bool Unit := Witnesses.single Unit true false
 
 /-- The guard holds at `true`, yet a course from `true` leaves it. -/
 theorem within_not_kernel :

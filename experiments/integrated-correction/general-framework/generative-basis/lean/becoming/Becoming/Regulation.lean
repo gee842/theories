@@ -1,6 +1,7 @@
 import Becoming.Continuation
 import Becoming.Propagation
 import Becoming.Change
+import Becoming.Witnesses
 
 /-!
 # Regulation: a level held from both sides, and a level read late
@@ -496,11 +497,10 @@ restoration (`Flow.restores`) holds from every step, and the level is above `m` 
 namespace OneSided
 
 /-- The flow in which nothing takes part. -/
-def flow : Flow Unit Unit := ⟨fun _ => [], fun _ _ _ => 0, fun _ _ _ => 0⟩
+def flow : Flow Unit Unit := Witnesses.emptyFlow Unit Unit
 
 /-- The web whose level is two at every step. -/
-def web : Web Unit Unit :=
-  ⟨fun _ _ => 2, fun _ _ => True, fun _ _ _ => False, fun _ _ _ => 0, fun _ _ _ => False⟩
+def web : Web Unit Unit := Witnesses.unrequired (fun _ _ => 2) (fun _ _ => True)
 
 /-- The flow balances the web. -/
 theorem balances : flow.Balances web := fun _ _ => rfl

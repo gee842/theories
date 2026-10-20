@@ -1,4 +1,5 @@
 import Becoming.PoolResponse
+import Becoming.Witnesses
 
 /-!
 # Rejoining: where the courses with and without an act come back together
@@ -320,21 +321,13 @@ open Member Cond
 
 /-- The level of the condition with the act: the act lowers it by one across the first step, and
 the responder raises it back across the second. -/
-def lowered : Nat → Nat
-  | 0 => 2
-  | 1 => 1
-  | _ + 2 => 2
+def lowered : Nat → Nat := Witnesses.profile [2, 1] 2
 
 /-- What the act takes across each step: one unit across the first. -/
-def took : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def took : Nat → Nat := Witnesses.profile [1] 0
 
 /-- What the responder gives across each step, with the act: one unit across the second. -/
-def gave : Nat → Nat
-  | 0 => 0
-  | 1 => 1
-  | _ + 2 => 0
+def gave : Nat → Nat := Witnesses.profile [0, 1] 0
 
 /-- The level of the condition, with the act (`true`) or without it. -/
 def level : Bool → Nat → Cond → Nat

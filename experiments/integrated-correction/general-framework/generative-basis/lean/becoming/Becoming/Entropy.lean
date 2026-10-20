@@ -1,5 +1,6 @@
 import Becoming.Resolution
 import Becoming.Recurrence
+import Becoming.Witnesses
 
 /-!
 # Entropy: what becoming leaves, and what holding it costs
@@ -1921,9 +1922,7 @@ namespace Entropy.Settling
 open Passing (holds at_ all)
 
 /-- Where the unit is at step `t`: at `true` at the first step, at `false` after it. -/
-def settled : Nat → Bool
-  | 0 => true
-  | _ + 1 => false
+def settled : Nat → Bool := Witnesses.profile [true] false
 
 /-- The carrier stands at one throughout; a side stands at one while it holds the unit. -/
 def level (t : Nat) : Option Bool → Nat

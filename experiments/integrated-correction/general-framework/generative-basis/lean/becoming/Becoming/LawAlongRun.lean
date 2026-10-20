@@ -1,5 +1,6 @@
 import Becoming.Unfolding
 import Becoming.Testing
+import Becoming.Witnesses
 
 /-!
 # A law along one run, under a relation
@@ -533,7 +534,7 @@ end Run
 namespace Constant
 
 /-- Every step is allowed. -/
-def process : Process Bool Unit := ⟨fun _ _ _ => True⟩
+def process : Process Bool Unit := everyStep Bool Unit
 
 /-- The run that stays at `true`. -/
 def run : Run process := ⟨fun _ => true, fun _ => (), fun _ => trivial⟩
@@ -563,7 +564,7 @@ end Switching
 namespace Stuck
 
 /-- `true` steps to itself; `false` has no step. -/
-def process : Process Bool Unit := ⟨fun s _ u => s = true ∧ u = true⟩
+def process : Process Bool Unit := Witnesses.single Unit true true
 
 /-- **Going alike does not give exactness.** Through the description that tells nothing apart,
 the process goes alike, and its configurations do not match each other's steps. -/

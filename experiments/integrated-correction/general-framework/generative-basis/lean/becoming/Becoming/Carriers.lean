@@ -1,4 +1,5 @@
 import Becoming.Unfolding
+import Becoming.Witnesses
 
 /-!
 # Carriers: one carrier admits incompatible laws, and relations read them as one recurrence
@@ -49,13 +50,13 @@ namespace Carriers
 /-! ## Three laws on one carrier -/
 
 /-- No step. -/
-def idle : Process Bool Unit := ⟨fun _ _ _ => False⟩
+def idle : Process Bool Unit := Witnesses.halted Bool Unit
 
 /-- The configuration stays. -/
 def static : Process Bool Unit := ⟨fun s _ t => s = t⟩
 
 /-- The configuration changes. -/
-def toggle : Process Bool Unit := ⟨fun s _ t => t = !s⟩
+def toggle : Process Bool Unit := Law.process not
 
 theorem idle_no_event (s : Bool) : ¬ Enabled idle s () :=
   fun ⟨_, h⟩ => h
@@ -85,7 +86,7 @@ theorem same_carrier_incompatible_laws :
   ⟨fun h => h, rfl, rfl, fun h => nomatch h⟩
 
 /-- The single recurring move on one configuration. -/
-def singletonLoop : Process Unit Unit := ⟨fun _ _ _ => True⟩
+def singletonLoop : Process Unit Unit := everyStep Unit Unit
 
 theorem event_without_state_distinction :
     singletonLoop.step () () () ∧ ∀ s t : Unit, s = t :=

@@ -1,4 +1,5 @@
 import Becoming.Population
+import Becoming.Witnesses
 
 /-!
 # Identity across steps
@@ -1255,9 +1256,7 @@ def odd : Nat → Bool
   | t + 1 => !odd t
 
 /-- Whether a step comes after the first. -/
-def afterFirst : Nat → Bool
-  | 0 => false
-  | _ + 1 => true
+def afterFirst : Nat → Bool := Witnesses.profile [false] true
 
 /-- Exchange by `swap`, or not. -/
 def turn (swap : F → F) : Bool → F → F
@@ -1295,9 +1294,7 @@ inductive Formation where
   | idle
 
 /-- The pool holds two units and falls to one. -/
-def pool : Nat → Nat
-  | 0 => 2
-  | _ + 1 => 1
+def pool : Nat → Nat := Witnesses.profile [2] 1
 
 /-- The drawer draws the pool. The keeper needs one unit of the spring and draws it. The
 consumer needs two units of the pool and is active at the first step only, while

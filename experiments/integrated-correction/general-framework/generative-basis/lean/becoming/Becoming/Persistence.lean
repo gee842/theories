@@ -1,5 +1,6 @@
 import Becoming.Identity
 import Becoming.Unfolding
+import Becoming.Witnesses
 
 /-!
 # Persistence: identity across dormancy, and identity read off a world's relations
@@ -242,31 +243,19 @@ inductive Condition where
   | pool
 
 /-- Every step but the second. -/
-def awake : Nat → Prop
-  | 1 => False
-  | _ => True
+def awake : Nat → Prop := Witnesses.profile [True, False] True
 
 /-- The second step. -/
-def asleep : Nat → Prop
-  | 1 => True
-  | _ => False
+def asleep : Nat → Prop := Witnesses.profile [False, True] False
 
 /-- The first step. -/
-def first : Nat → Prop
-  | 0 => True
-  | _ => False
+def first : Nat → Prop := Witnesses.profile [True] False
 
 /-- From the third step on. -/
-def foraging : Nat → Prop
-  | 0 => False
-  | 1 => False
-  | _ + 2 => True
+def foraging : Nat → Prop := Witnesses.profile [False, False] True
 
 /-- Whether a step comes after the second. -/
-def fromSecond : Nat → Bool
-  | 0 => false
-  | 1 => false
-  | _ + 2 => true
+def fromSecond : Nat → Bool := Witnesses.profile [false, false] true
 
 /-- Every condition stands at one. The hibernator is active at every step but the second, where
 it is dormant, needing its den; while awake it needs one unit of the spring and draws it. The

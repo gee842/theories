@@ -1,4 +1,5 @@
 import Becoming.Space
+import Becoming.Witnesses
 
 /-!
 # Premises: how the premises carve the space
@@ -448,9 +449,7 @@ inductive Relatum where
   | morsel
 
 /-- One at the first step, nothing after. -/
-def first : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def first : Nat → Nat := Witnesses.profile [1] 0
 
 /-- The eater stands at one throughout; the morsel at one at the first step. -/
 def level (t : Nat) : Relatum → Nat
@@ -638,9 +637,7 @@ def firstly (k : Nat) : Nat → Nat
   | _ + 1 => 0
 
 /-- Nothing at the first step, one after. -/
-def after : Nat → Nat
-  | 0 => 0
-  | _ + 1 => 1
+def after : Nat → Nat := Witnesses.profile [0] 1
 
 /-- The parent stands at one throughout, the fuel at two at the first step, the child at
 one after it. -/

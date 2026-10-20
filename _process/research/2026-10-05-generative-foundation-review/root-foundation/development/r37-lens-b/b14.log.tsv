@@ -1,0 +1,179 @@
+free	AssurancePlans	def process : Process Bool Unit := ⟨fun _ _ _ => True⟩	def process : Process Bool Unit := everyStep Bool Unit
+free	Enough	def process : Process Bool Unit := ⟨fun _ _ _ => True⟩	def process : Process Bool Unit := everyStep Bool Unit
+free	LawAlongRun	def process : Process Bool Unit := ⟨fun _ _ _ => True⟩	def process : Process Bool Unit := everyStep Bool Unit
+free	MoveOutcomeProcesses	def free : Process Bool Unit := ⟨fun _ _ _ => True⟩	def free : Process Bool Unit := everyStep Bool Unit
+free	Carriers	def singletonLoop : Process Unit Unit := ⟨fun _ _ _ => True⟩	def singletonLoop : Process Unit Unit := everyStep Unit Unit
+free	Courses	def loop : Process Unit Bool := ⟨fun _ _ _ => True⟩	def loop : Process Unit Bool := everyStep Unit Bool
+free	Junctures	def process : Process Unit Nat := ⟨fun _ _ _ => True⟩	def process : Process Unit Nat := everyStep Unit Nat
+halted	AssurancePlans	def process : Process Bool Unit := ⟨fun _ _ _ => False⟩	def process : Process Bool Unit := Witnesses.halted Bool Unit
+halted	Carriers	def idle : Process Bool Unit := ⟨fun _ _ _ => False⟩	def idle : Process Bool Unit := Witnesses.halted Bool Unit
+halted	MoveOutcomeProcesses	def halted : Process Bool Unit := ⟨fun _ _ _ => False⟩	def halted : Process Bool Unit := Witnesses.halted Bool Unit
+single	Labelled	def law : Process Bool Unit :=	def law : Process Bool Unit := Witnesses.single Unit false true
+single	Viability	def process : Process Bool Unit := ⟨fun s _ t => s = true ∧ t = false⟩	def process : Process Bool Unit := Witnesses.single Unit true false
+single	LawAlongRun	def process : Process Bool Unit := ⟨fun s _ u => s = true ∧ u = true⟩	def process : Process Bool Unit := Witnesses.single Unit true true
+flip	Carriers	def toggle : Process Bool Unit := ⟨fun s _ t => t = !s⟩	def toggle : Process Bool Unit := Law.process not
+flip	Irreversibility	def flip : Process Bool Unit := ⟨fun s _ t => t = !s⟩	def flip : Process Bool Unit := Law.process not
+halted-frame	Alternatives	⟨⟨fun _ _ _ => False⟩, realized⟩	⟨Witnesses.halted _ _, realized⟩
+halted-frame	Bundles	⟨⟨fun _ _ _ => False⟩, realized⟩	⟨Witnesses.halted _ _, realized⟩
+halted-frame	Bundles	⟨⟨fun _ _ _ => False⟩, fun r bundle =>	⟨Witnesses.halted _ _, fun r bundle =>
+halted-frame	Extension	⟨⟨fun _ _ _ => False⟩, fun l e =>	⟨Witnesses.halted _ _, fun l e =>
+halted-frame	Granularity	⟨⟨fun _ _ _ => False⟩, fun _ _ => p⟩	⟨Witnesses.halted _ _, fun _ _ => p⟩
+halted-frame	Handoff	⟨⟨fun _ _ _ => False⟩, fun h q =>	⟨Witnesses.halted _ _, fun h q =>
+halted-frame	Composition	P := ⟨fun _ _ _ => False⟩	P := Witnesses.halted _ _
+emptyFlow	Regulation	def flow : Flow Unit Unit := ⟨fun _ => [], fun _ _ _ => 0, fun _ _ _ => 0⟩	def flow : Flow Unit Unit := Witnesses.emptyFlow Unit Unit
+emptyFlow	Reserve	def flow : Flow Unit Unit := ⟨fun _ => [], fun _ _ _ => 0, fun _ _ _ => 0⟩	def flow : Flow Unit Unit := Witnesses.emptyFlow Unit Unit
+emptyFlow	Roles	def flow : Flow Unit Unit := ⟨fun _ => [], fun _ _ _ => 0, fun _ _ _ => 0⟩	def flow : Flow Unit Unit := Witnesses.emptyFlow Unit Unit
+giving	Flow	def flow : Flow Unit Unit := ⟨fun _ => [()], fun _ _ _ => 0, fun _ _ _ => 1⟩	def flow : Flow Unit Unit := Witnesses.giving () 1
+giving	Space	def flow : Flow Unit Unit :=	def flow : Flow Unit Unit := Witnesses.giving () 1
+unrequired	Flow	def web : Web Unit Unit where	def web : Web Unit Unit := Witnesses.unrequired (fun t _ => t + 1) (fun _ _ => True)
+unrequired	Space	def web : Web Unit Unit where	def web : Web Unit Unit := Witnesses.unrequired (fun t _ => t) (fun _ _ => False)
+unrequired	Regulation	def web : Web Unit Unit :=	def web : Web Unit Unit := Witnesses.unrequired (fun _ _ => 2) (fun _ _ => True)
+relay	Continuation	/-- A renewer and two takers share one condition. -/	/-- A renewer and two takers share one condition. -/
+relay	RelativePosition	/-- A renewer and two parts sharing one condition. -/	/-- A renewer and two parts sharing one condition. -/
+relay	Continuation	def flow : Flow Member Unit where	def flow : Flow Member Unit := Witnesses.relay present 2 2 2
+relay	Exclusion	def flow : Flow Member Unit where	def flow : Flow Member Unit := Witnesses.relay present 2 2 2
+relay	RelativePosition	def flow : Flow Member Unit where	def flow : Flow Member Unit := Witnesses.relay present 2 2 1
+relay	Continuation	def web : Web Member Unit where	def web : Web Member Unit := Witnesses.relayWeb level fun t _ => live t
+relay	RelativePosition	def web : Web Member Unit where	def web : Web Member Unit := Witnesses.relayWeb level fun t _ => live t
+relay	Exclusion	def web : Web Member Unit where	def web : Web Member Unit := Witnesses.relayWeb level fun t f => match f with
+profile	Admission	def unitStep : Nat → Nat	def unitStep : Nat → Nat := Witnesses.profile [0] 1
+profile	Admission	def unitDrop : Nat → Nat	def unitDrop : Nat → Nat := Witnesses.profile [1] 0
+profile	Arising	def left : Nat → Nat	def left : Nat → Nat := Witnesses.profile [3, 2, 1] 0
+profile	Attraction	def path : Nat → Bool	def path : Nat → Bool := Witnesses.profile [true] false
+profile	Attraction	def moves : Nat → Bool	def moves : Nat → Bool := Witnesses.profile [true] false
+profile	Branching	def passed : Nat → Bool	def passed : Nat → Bool := Witnesses.profile [false] true
+profile	Branching	def turnedPart : Nat → Bool	def turnedPart : Nat → Bool := Witnesses.profile [false] true
+profile	Clearing	def cleared : Nat → Nat	def cleared : Nat → Nat := Witnesses.profile [1, 1] 0
+profile	Clearing	def habitatLevel : Nat → Nat	def habitatLevel : Nat → Nat := Witnesses.profile [2, 1] 0
+profile	Clearing	def dwellerLive : Nat → Prop	def dwellerLive : Nat → Prop := Witnesses.profile [True, True] False
+profile	Continuation	def level : Nat → Nat	def level : Nat → Nat := Witnesses.profile [4, 2] 0
+profile	Continuation	def live : Nat → Prop	def live : Nat → Prop := Witnesses.profile [True, True] False
+profile	Continuation	def outputLevel : Nat → Nat	def outputLevel : Nat → Nat := Witnesses.profile [1, 1, 1, 1] 0
+profile	Continuation	def downLive : Nat → Prop	def downLive : Nat → Prop := Witnesses.profile [True, True, True, True] False
+profile	Continuation	def level : Nat → Nat	def level : Nat → Nat := Witnesses.profile [3, 2, 1] 0
+profile	Correspondence	def atStart : Nat → Prop	def atStart : Nat → Prop := Witnesses.profile [True] False
+profile	Correspondence	def falling : Nat → Nat	def falling : Nat → Nat := Witnesses.profile [1] 0
+profile	Counting	def lone : Nat → Nat	def lone : Nat → Nat := Witnesses.profile [0] 1
+profile	Counting	def joins : Nat → Nat	def joins : Nat → Nat := Witnesses.profile [1] 0
+profile	Dependence	def escalatingState : Nat → Nat	def escalatingState : Nat → Nat := Witnesses.profile [1, 1] 0
+profile	Dependence	def dippingState : Nat → Nat	def dippingState : Nat → Nat := Witnesses.profile [1, 0] 1
+profile	Dependence	def levels : Nat → Nat	def levels : Nat → Nat := Witnesses.profile [1, 1, 0] 1
+profile	Dependence	def dependentActive : Nat → Prop	def dependentActive : Nat → Prop := Witnesses.profile [True, False, False] True
+profile	Dependence	def drawerActive : Nat → Prop	def drawerActive : Nat → Prop := Witnesses.profile [False, True] False
+profile	Entropy	def settled : Nat → Bool	def settled : Nat → Bool := Witnesses.profile [true] false
+profile	Exclusion	def level : Nat → Nat	def level : Nat → Nat := Witnesses.profile [4] 2
+profile	Feedback	def browse : Nat → Nat	def browse : Nat → Nat := Witnesses.profile [2] 0
+profile	Feedback	def hunt : Nat → Nat	def hunt : Nat → Nat := Witnesses.profile [1] 0
+profile	Feedback	def herdLevel : Nat → Nat	def herdLevel : Nat → Nat := Witnesses.profile [1] 0
+profile	Feedback	def deerLive : Nat → Prop	def deerLive : Nat → Prop := Witnesses.profile [True] False
+profile	Feedback	def responsiveBrowse : Nat → Nat	def responsiveBrowse : Nat → Nat := Witnesses.profile [2, 2] 1
+profile	Feedback	def responsiveGrowth : Nat → Nat	def responsiveGrowth : Nat → Nat := Witnesses.profile [2, 1] 0
+profile	Feedback	def forestLive : Nat → Prop	def forestLive : Nat → Prop := Witnesses.profile [True, True] False
+profile	Feeding	def gift : Nat → Nat	def gift : Nat → Nat := Witnesses.profile [1] 0
+profile	Feeding	def use : Nat → Nat	def use : Nat → Nat := Witnesses.profile [0, 0, 1] 0
+profile	Feeding	def stored : Nat → Nat	def stored : Nat → Nat := Witnesses.profile [0, 1, 1] 0
+profile	Feeding	def atFirst : Nat → Prop	def atFirst : Nat → Prop := Witnesses.profile [True] False
+profile	Feeding	def atThird : Nat → Prop	def atThird : Nat → Prop := Witnesses.profile [False, False, True] False
+profile	Feeding	def fromThird : Nat → Prop	def fromThird : Nat → Prop := Witnesses.profile [False, False] True
+profile	Flow	def sign : Nat → Nat	def sign : Nat → Nat := Witnesses.profile [0] 1
+profile	Identity	def afterFirst : Nat → Bool	def afterFirst : Nat → Bool := Witnesses.profile [false] true
+profile	Identity	def pool : Nat → Nat	def pool : Nat → Nat := Witnesses.profile [2] 1
+profile	Labelled	def history : Nat → Nat	def history : Nat → Nat := Witnesses.profile [0, 1, 0] 2
+profile	Persistence	def awake : Nat → Prop	def awake : Nat → Prop := Witnesses.profile [True, False] True
+profile	Persistence	def asleep : Nat → Prop	def asleep : Nat → Prop := Witnesses.profile [False, True] False
+profile	Persistence	def first : Nat → Prop	def first : Nat → Prop := Witnesses.profile [True] False
+profile	Persistence	def foraging : Nat → Prop	def foraging : Nat → Prop := Witnesses.profile [False, False] True
+profile	Persistence	def fromSecond : Nat → Bool	def fromSecond : Nat → Bool := Witnesses.profile [false, false] true
+profile	Premises	def first : Nat → Nat	def first : Nat → Nat := Witnesses.profile [1] 0
+profile	Premises	def after : Nat → Nat	def after : Nat → Nat := Witnesses.profile [0] 1
+profile	Ranking	def stopsLevel : Nat → Nat	def stopsLevel : Nat → Nat := Witnesses.profile [6, 5, 6, 7] 6
+profile	Ranking	def overLevel : Nat → Nat	def overLevel : Nat → Nat := Witnesses.profile [6, 5, 4, 3, 2, 1] 0
+profile	Rejoining	def lowered : Nat → Nat	def lowered : Nat → Nat := Witnesses.profile [2, 1] 2
+profile	Rejoining	def took : Nat → Nat	def took : Nat → Nat := Witnesses.profile [1] 0
+profile	Rejoining	def gave : Nat → Nat	def gave : Nat → Nat := Witnesses.profile [0, 1] 0
+profile	RelativePosition	def level : Nat → Nat	def level : Nat → Nat := Witnesses.profile [2, 1] 0
+profile	RelativePosition	def live : Nat → Prop	def live : Nat → Prop := Witnesses.profile [True, True] False
+profile	RelativePosition	def level : Nat → Nat	def level : Nat → Nat := Witnesses.profile [1, 0] 1
+profile	RelativePosition	def takeAt : Nat → Nat	def takeAt : Nat → Nat := Witnesses.profile [1] 0
+profile	RelativePosition	def giveAt : Nat → Nat	def giveAt : Nat → Nat := Witnesses.profile [0, 1] 0
+profile	RelativePosition	def live : Nat → Prop	def live : Nat → Prop := Witnesses.profile [True, False] True
+profile	Reordering	def firstSide : Nat → Bool	def firstSide : Nat → Bool := Witnesses.profile [true] false
+profile	Reserve	def wake : Nat → Nat	def wake : Nat → Nat := Witnesses.profile [0, 1, 0, 1] 0
+profile	Reserve	def reserve : Nat → Nat	def reserve : Nat → Nat := Witnesses.profile [2, 2, 1, 1] 0
+profile	Reserve	def viability : Nat → Nat	def viability : Nat → Nat := Witnesses.profile [3, 2, 1] 0
+profile	Reserve	def hare : Nat → Nat	def hare : Nat → Nat := Witnesses.profile [1] 0
+profile	Reserve	def fat : Nat → Nat	def fat : Nat → Nat := Witnesses.profile [2, 2, 1] 0
+profile	Reserve	def eats : Nat → Nat	def eats : Nat → Nat := Witnesses.profile [1] 0
+profile	Reserve	def burns : Nat → Nat	def burns : Nat → Nat := Witnesses.profile [0, 1, 1] 0
+profile	Reserve	def late : Nat → Nat	def late : Nat → Nat := Witnesses.profile [0, 0] 1
+profile	Reserve	def provision : Nat → Nat	def provision : Nat → Nat := Witnesses.profile [1] 0
+profile	Response	def act : Nat → Nat	def act : Nat → Nat := Witnesses.profile [1] 0
+profile	Response	def reply : Nat → Nat	def reply : Nat → Nat := Witnesses.profile [0, 2] 0
+profile	Response	def ofFirstLevel : Nat → Nat	def ofFirstLevel : Nat → Nat := Witnesses.profile [2, 2] 0
+profile	Response	def ofSecondLevel : Nat → Nat	def ofSecondLevel : Nat → Nat := Witnesses.profile [2] 1
+profile	Response	def firstLive : Nat → Prop	def firstLive : Nat → Prop := Witnesses.profile [True, True] False
+profile	Roles	def fade : Nat → Nat	def fade : Nat → Nat := Witnesses.profile [0, 0, 1] 0
+profile	Roles	def first : Nat → Nat	def first : Nat → Nat := Witnesses.profile [1] 0
+profile	Roles	def sprout : Nat → Nat	def sprout : Nat → Nat := Witnesses.profile [0] 1
+profile	RuleCapture	def late : Nat → Bool	def late : Nat → Bool := Witnesses.profile [false] true
+profile	Sampling	def first : Nat → Nat	def first : Nat → Nat := Witnesses.profile [1] 0
+profile	Sampling	def lately : Nat → Nat	def lately : Nat → Nat := Witnesses.profile [0, 0] 1
+profile	Selection	def first : Nat → Nat	def first : Nat → Nat := Witnesses.profile [1] 0
+profile	Selection	def drawn : Nat → Nat	def drawn : Nat → Nat := Witnesses.profile [2] 1
+profile	Selection	def raised : Nat → Nat	def raised : Nat → Nat := Witnesses.profile [0] 1
+profile	Space	def soil : Nat → Nat	def soil : Nat → Nat := Witnesses.profile [3] 1
+profile	Tail	def nonzero : Nat → Bool	def nonzero : Nat → Bool := Witnesses.profile [false] true
+profile	Testing	def lowerLevel : Nat → Nat	def lowerLevel : Nat → Nat := Witnesses.profile [2, 1] 0
+profile	Testing	def higherLevel : Nat → Nat	def higherLevel : Nat → Nat := Witnesses.profile [3, 2, 1] 0
+profile	Testing	def lowerDraw : Nat → Nat	def lowerDraw : Nat → Nat := Witnesses.profile [1, 1] 0
+profile	Testing	def higherDraw : Nat → Nat	def higherDraw : Nat → Nat := Witnesses.profile [1, 1, 1] 0
+profile	Testing	def draw : Nat → Nat	def draw : Nat → Nat := Witnesses.profile [1] 0
+profile	Testing	def lowerLevel : Nat → Nat	def lowerLevel : Nat → Nat := Witnesses.profile [2, 1] 0
+profile	Testing	def higherLevel : Nat → Nat	def higherLevel : Nat → Nat := Witnesses.profile [3] 0
+profile	Testing	def bite : Nat → Nat	def bite : Nat → Nat := Witnesses.profile [1] 0
+profile	Testing	def standing : Nat → Nat	def standing : Nat → Nat := Witnesses.profile [2] 1
+profile	Weighted	def nonzero : Nat → Bool	def nonzero : Nat → Bool := Witnesses.profile [false] true
+import	AssurancePlans		import Becoming.Witnesses
+import	LawAlongRun		import Becoming.Witnesses
+import	MoveOutcomeProcesses		import Becoming.Witnesses
+import	Carriers		import Becoming.Witnesses
+import	Labelled		import Becoming.Witnesses
+import	Viability		import Becoming.Witnesses
+import	Alternatives		import Becoming.Witnesses
+import	Bundles		import Becoming.Witnesses
+import	Extension		import Becoming.Witnesses
+import	Granularity		import Becoming.Witnesses
+import	Handoff		import Becoming.Witnesses
+import	Composition		import Becoming.Witnesses
+import	Regulation		import Becoming.Witnesses
+import	Reserve		import Becoming.Witnesses
+import	Roles		import Becoming.Witnesses
+import	Flow		import Becoming.Witnesses
+import	Space		import Becoming.Witnesses
+import	Continuation		import Becoming.Witnesses
+import	RelativePosition		import Becoming.Witnesses
+import	Exclusion		import Becoming.Witnesses
+import	Admission		import Becoming.Witnesses
+import	Arising		import Becoming.Witnesses
+import	Attraction		import Becoming.Witnesses
+import	Branching		import Becoming.Witnesses
+import	Clearing		import Becoming.Witnesses
+import	Correspondence		import Becoming.Witnesses
+import	Counting		import Becoming.Witnesses
+import	Dependence		import Becoming.Witnesses
+import	Entropy		import Becoming.Witnesses
+import	Feedback		import Becoming.Witnesses
+import	Feeding		import Becoming.Witnesses
+import	Identity		import Becoming.Witnesses
+import	Persistence		import Becoming.Witnesses
+import	Premises		import Becoming.Witnesses
+import	Ranking		import Becoming.Witnesses
+import	Rejoining		import Becoming.Witnesses
+import	Reordering		import Becoming.Witnesses
+import	Response		import Becoming.Witnesses
+import	RuleCapture		import Becoming.Witnesses
+import	Sampling		import Becoming.Witnesses
+import	Selection		import Becoming.Witnesses
+import	Tail		import Becoming.Witnesses
+import	Testing		import Becoming.Witnesses
+import	Weighted		import Becoming.Witnesses

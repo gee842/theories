@@ -1,4 +1,5 @@
 import Becoming.Assurance
+import Becoming.Witnesses
 
 /-!
 # Plans under assurance: endpoints, responses and the readings they need
@@ -72,7 +73,7 @@ theorem every_end_of_some_end {P : Process S A} (determined : Determined P) {s :
 namespace Open
 
 /-- Every move goes anywhere. -/
-def process : Process Bool Unit := ⟨fun _ _ _ => True⟩
+def process : Process Bool Unit := everyStep Bool Unit
 
 /-- **Without determinacy, one endpoint in the goal does not put every endpoint there:** one move
 from `false` may end at `true`, and may not. -/
@@ -86,7 +87,7 @@ end Open
 namespace Shut
 
 /-- No move is possible. -/
-def process : Process Bool Unit := ⟨fun _ _ _ => False⟩
+def process : Process Bool Unit := Witnesses.halted Bool Unit
 
 /-- **Where no move is possible, a plan of one move has no trace.** -/
 theorem no_trace : ¬ Feasible process false [()]

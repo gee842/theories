@@ -1,6 +1,7 @@
 import Becoming.Frame
 import Becoming.Arising
 import Becoming.Recurrence
+import Becoming.Witnesses
 
 /-!
 # The labelled process as a reading of the one unfolding
@@ -214,11 +215,7 @@ theorem Shown.runs_of_new {g : Nat → S} {m : Nat → A} (new : ∀ i j, i < j 
 namespace Splice
 
 /-- A history that returns once to where it began and then goes elsewhere for good. -/
-def history : Nat → Nat
-  | 0 => 0
-  | 1 => 1
-  | 2 => 0
-  | _ + 3 => 2
+def history : Nat → Nat := Witnesses.profile [0, 1, 0] 2
 
 /-- Going back and forth between the first two configurations, as the history never did. -/
 def loop : Nat → Nat
@@ -244,8 +241,7 @@ end Splice
 namespace DeadEnd
 
 /-- One step, into a configuration with no continuation. -/
-def law : Process Bool Unit :=
-  ⟨fun s _ t => s = false ∧ t = true⟩
+def law : Process Bool Unit := Witnesses.single Unit false true
 
 /-- **A law can have a step and no history.** No history shows it. -/
 theorem no_history : law.step false () true ∧ (Run law → False) :=

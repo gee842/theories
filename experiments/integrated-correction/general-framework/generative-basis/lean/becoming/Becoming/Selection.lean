@@ -1,5 +1,6 @@
 import Becoming.Testing
 import Becoming.Capture
+import Becoming.Witnesses
 
 /-!
 # Selection: a selection through a formation's couplings reaches exactly what couples in
@@ -830,19 +831,13 @@ inductive Place where
   | store
 
 /-- One unit across the first step, nothing after. -/
-def first : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def first : Nat → Nat := Witnesses.profile [1] 0
 
 /-- The source drawn: two at the start, one after. -/
-def drawn : Nat → Nat
-  | 0 => 2
-  | _ + 1 => 1
+def drawn : Nat → Nat := Witnesses.profile [2] 1
 
 /-- The store raised: nothing at the start, one after. -/
-def raised : Nat → Nat
-  | 0 => 0
-  | _ + 1 => 1
+def raised : Nat → Nat := Witnesses.profile [0] 1
 
 /-- Across the first step the taker takes one unit of the source and gives one to the store. -/
 def diverting : Flow Formation Place where

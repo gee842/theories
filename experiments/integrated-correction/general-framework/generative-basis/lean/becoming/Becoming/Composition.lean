@@ -1,5 +1,6 @@
 import Becoming.Likeness
 import Becoming.JointPlans
+import Becoming.Witnesses
 
 /-!
 # Composition: a whole and the parts it holds together
@@ -376,7 +377,7 @@ inductive Pairs : Bool → Bool → Bool → Prop where
 
 /-- No move, no claim, and one pair of parts. -/
 def frame : JointFrame Bool Unit Empty where
-  P := ⟨fun _ _ _ => False⟩
+  P := Witnesses.halted _ _
   realized := fun _ c => nomatch c
   joint := Pairs
 
@@ -671,7 +672,7 @@ def Marked (p : Prop) : Pos → Unit → Prop
 
 /-- No move; the claim; the pairs of parts. -/
 def frame (p : Prop) : JointFrame Pos Unit Unit where
-  P := ⟨fun _ _ _ => False⟩
+  P := Witnesses.halted _ _
   realized := Marked p
   joint := Joint
 

@@ -1,4 +1,5 @@
 import Becoming.World
+import Becoming.Witnesses
 import Becoming.Frame
 import Becoming.Laws
 import Becoming.Labelled

@@ -379,7 +379,7 @@ end Junctures
 namespace Many
 
 /-- One configuration, a step for each natural number. -/
-def process : Process Unit Nat := ⟨fun _ _ _ => True⟩
+def process : Process Unit Nat := everyStep Unit Nat
 
 theorem options : ∀ n : Nat, process.step () n () := fun _ => trivial
 

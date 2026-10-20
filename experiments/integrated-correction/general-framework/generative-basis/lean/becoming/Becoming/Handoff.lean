@@ -1,5 +1,6 @@
 import Becoming.SecuredContent
 import Becoming.RenewalBound
+import Becoming.Witnesses
 
 /-!
 # A remaining-step certificate handed between revised rules along one history
@@ -58,7 +59,7 @@ theorem handed_off_progress {S : Type} (states : Nat → S) (rank : Nat → S �
 /-- The occurrences formed within the bound, as a frame with no moves. An occurrence's meaning,
 non-duplication and living interpretation are inputs. -/
 def boundedFrame {H Q : Type} (appears : H → Nat → Q → Prop) (bound : Nat) : Frame H Unit Q :=
-  ⟨⟨fun _ _ _ => False⟩, fun h q => ∃ n, n ≤ bound ∧ appears h n q⟩
+  ⟨Witnesses.halted _ _, fun h q => ∃ n, n ≤ bound ∧ appears h n q⟩
 
 /-- **Generation by bound**: each admitted history forms, within the bound, living content absent
 before it. -/

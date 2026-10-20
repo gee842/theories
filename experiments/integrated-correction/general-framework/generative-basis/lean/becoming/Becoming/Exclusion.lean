@@ -1,5 +1,6 @@
 import Becoming.Continuation
 import Becoming.Admission
+import Becoming.Witnesses
 
 /-!
 # Exclusion: what taking all that is given excludes, and the joint course that keeps all
@@ -216,9 +217,7 @@ namespace Excluding
 
 open Exceeding (Member)
 
-def level : Nat → Nat
-  | 0 => 4
-  | _ + 1 => 2
+def level : Nat → Nat := Witnesses.profile [4] 2
 
 def present : Nat → List Member
   | 0 => [.renewer, .first, .second]
@@ -226,31 +225,14 @@ def present : Nat → List Member
 
 /-- The renewer gives two units across each step, and each taker takes two while it takes part;
 the second takes part at the first step only. -/
-def flow : Flow Member Unit where
-  present := present
-  take _ f _ := match f with
-    | .renewer => 0
-    | .first => 2
-    | .second => 2
-  give _ f _ := match f with
-    | .renewer => 2
-    | .first => 0
-    | .second => 0
+def flow : Flow Member Unit := Witnesses.relay present 2 2 2
 
 /-- Each depends on the condition at need one, the renewer included; the second is active at
 the first step only. -/
-def web : Web Member Unit where
-  level t _ := level t
-  active t f := match f with
-    | .renewer => True
-    | .first => True
-    | .second => t = 0
-  requires _ _ _ := True
-  need _ _ _ := 1
-  draws _ f _ := match f with
-    | .renewer => False
-    | .first => True
-    | .second => True
+def web : Web Member Unit := Witnesses.relayWeb level fun t f => match f with
+  | .renewer => True
+  | .first => True
+  | .second => t = 0
 
 theorem balances : flow.Balances web
   | 0, () => rfl

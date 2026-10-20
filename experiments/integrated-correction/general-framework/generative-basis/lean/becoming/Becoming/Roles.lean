@@ -1,4 +1,5 @@
 import Becoming.Locality
+import Becoming.Witnesses
 
 /-!
 # Roles: formations and conditions are roles of one relatum
@@ -865,11 +866,7 @@ inductive Relatum where
   | flower
 
 /-- One unit at step two: the flower's own taking as it wilts. -/
-def fade : Nat → Nat
-  | 0 => 0
-  | 1 => 0
-  | 2 => 1
-  | _ + 3 => 0
+def fade : Nat → Nat := Witnesses.profile [0, 0, 1] 0
 
 /-- The bee stands at one throughout; the flower stands while unwilted, on the schedule
 `Predation.uneaten`. The flower depends on itself at need one and draws on itself; the bee
@@ -975,9 +972,7 @@ def standing : Nat → Nat → Nat
   | x + 1, t + 1 => standing x t
 
 /-- One for zero, zero otherwise. -/
-def first : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def first : Nat → Nat := Witnesses.profile [1] 0
 
 /-- One at the step at which generation `x` is given: the step before it stands. -/
 def birth : Nat → Nat → Nat
@@ -1072,9 +1067,7 @@ inductive Relatum where
   | seed
 
 /-- Zero at step zero, one after. -/
-def sprout : Nat → Nat
-  | 0 => 0
-  | _ + 1 => 1
+def sprout : Nat → Nat := Witnesses.profile [0] 1
 
 /-- The source is always active and stands at zero as a condition; the seed stands, and is
 active, from step one. Nothing depends on or draws on anything. -/
@@ -1575,7 +1568,7 @@ def web : Web Unit Unit where
   draws _ _ _ := False
 
 /-- Nothing takes part. -/
-def flow : Flow Unit Unit := ⟨fun _ => [], fun _ _ _ => 0, fun _ _ _ => 0⟩
+def flow : Flow Unit Unit := Witnesses.emptyFlow Unit Unit
 
 /-- A relatum whose activity is not its standing arises with nothing given to it: one
 relatum is all there is, the flow balances and is dissipative, and generation is

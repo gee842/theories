@@ -28,7 +28,7 @@ open Generative
 namespace Irreversibility
 
 /-- Every configuration goes to its negation. -/
-def flip : Process Bool Unit := ⟨fun s _ t => t = !s⟩
+def flip : Process Bool Unit := Law.process not
 
 /-- **The dead end never returns from `true` to `false`.** -/
 theorem deadEnd_no_return : ¬ Reach DeadEnd.law true false :=

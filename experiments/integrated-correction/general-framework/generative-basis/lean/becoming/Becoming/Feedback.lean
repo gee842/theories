@@ -1,4 +1,5 @@
 import Becoming.Interdependence
+import Becoming.Witnesses
 
 /-!
 # Feedback and reach: what a formation's feedback carries, and what a part reaches
@@ -806,14 +807,10 @@ inductive Place where
 def members : List Formation := [.sun, .forest, .deer, .wolves, .far]
 
 /-- With the wolves, the deer browse two units of the growth across the first step only. -/
-def browse : Nat → Nat
-  | 0 => 2
-  | _ + 1 => 0
+def browse : Nat → Nat := Witnesses.profile [2] 0
 
 /-- The wolves take the herd's one unit across the first step. -/
-def hunt : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def hunt : Nat → Nat := Witnesses.profile [1] 0
 
 /-- The growth stands at two, falls to one across the first step, and then rises by one at each
 step. -/
@@ -822,14 +819,10 @@ def growthLevel : Nat → Nat
   | t + 1 => t + 1
 
 /-- The herd stands at one until the wolves take it. -/
-def herdLevel : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def herdLevel : Nat → Nat := Witnesses.profile [1] 0
 
 /-- With the wolves, the deer are active at the first step only. -/
-def deerLive : Nat → Prop
-  | 0 => True
-  | _ + 1 => False
+def deerLive : Nat → Prop := Witnesses.profile [True] False
 
 /-- With the wolves: across every step the sun gives the growth one unit; across the first step
 the deer take two units of the growth and the wolves take the herd's one unit. -/
@@ -893,22 +886,13 @@ def web : Web Formation Place where
 
 /-- Without the wolves' taking, the deer browse two units of the growth across each of the first
 two steps and one across each later step. -/
-def responsiveBrowse : Nat → Nat
-  | 0 => 2
-  | 1 => 2
-  | _ + 2 => 1
+def responsiveBrowse : Nat → Nat := Witnesses.profile [2, 2] 1
 
 /-- The growth then falls from two to nothing over the first two steps and stays there. -/
-def responsiveGrowth : Nat → Nat
-  | 0 => 2
-  | 1 => 1
-  | _ + 2 => 0
+def responsiveGrowth : Nat → Nat := Witnesses.profile [2, 1] 0
 
 /-- The forest is then active at the first two steps only. -/
-def forestLive : Nat → Prop
-  | 0 => True
-  | 1 => True
-  | _ + 2 => False
+def forestLive : Nat → Prop := Witnesses.profile [True, True] False
 
 /-- The flow in which the deer respond to the wolves' absence: the deer browse as
 `responsiveBrowse` gives; the sun gives as before. -/

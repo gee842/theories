@@ -940,7 +940,7 @@ theorem supported_not_together :
   ⟨fun _ _ _ => Nat.le_refl 2, entries_within_not_together.2⟩
 
 /-- One configuration and two moves back to it. -/
-def loop : Process Unit Bool := ⟨fun _ _ _ => True⟩
+def loop : Process Unit Bool := everyStep Unit Bool
 
 /-- Every word of moves is a course of the loop. -/
 theorem loop_trace : ∀ word : List Bool, Trace loop () word ()

@@ -1,5 +1,6 @@
 import Becoming.Pace
 import Becoming.Ideals
+import Becoming.Witnesses
 
 /-!
 # Rule capture: a selection whose rule reads the share it selects
@@ -754,9 +755,7 @@ namespace Reversed
 open CarrierCounts
 
 /-- No reading at the first step, reading at every step after it. -/
-def late : Nat → Bool
-  | 0 => false
-  | _ + 1 => true
+def late : Nat → Bool := Witnesses.profile [false] true
 
 /-- The course of the threshold reading on that schedule, from carriers two to one under `lo`. -/
 def course (t : Nat) : CarrierCounts × CarrierCounts := paced select (threshold hi lo) late (twoToOne, lo) t

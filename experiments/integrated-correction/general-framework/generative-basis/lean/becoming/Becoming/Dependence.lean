@@ -1,5 +1,6 @@
 import Becoming.Renewal
 import Becoming.World
+import Becoming.Witnesses
 
 /-!
 # Dependence that forms, holds, breaks and transforms
@@ -777,15 +778,9 @@ end Crossing
 
 namespace Renewable
 
-def escalatingState : Nat → Nat
-  | 0 => 1
-  | 1 => 1
-  | _ + 2 => 0
+def escalatingState : Nat → Nat := Witnesses.profile [1, 1] 0
 
-def dippingState : Nat → Nat
-  | 0 => 1
-  | 1 => 0
-  | _ + 2 => 1
+def dippingState : Nat → Nat := Witnesses.profile [1, 0] 1
 
 def pausingState : Nat → Nat
   | 0 => 1
@@ -839,24 +834,13 @@ inductive Formation where
   | drawer
 
 /-- A shared condition dips for one step and is renewed. -/
-def levels : Nat → Nat
-  | 0 => 1
-  | 1 => 1
-  | 2 => 0
-  | _ + 3 => 1
+def levels : Nat → Nat := Witnesses.profile [1, 1, 0] 1
 
 /-- The dependent is active wherever the condition meets its need at both ends of its step. -/
-def dependentActive : Nat → Prop
-  | 0 => True
-  | 1 => False
-  | 2 => False
-  | _ + 3 => True
+def dependentActive : Nat → Prop := Witnesses.profile [True, False, False] True
 
 /-- The drawer draws on the condition once. -/
-def drawerActive : Nat → Prop
-  | 0 => False
-  | 1 => True
-  | _ + 2 => False
+def drawerActive : Nat → Prop := Witnesses.profile [False, True] False
 
 /-- The dependent depends on the condition throughout; the drawer only draws on it. -/
 def web : Web Formation Unit where

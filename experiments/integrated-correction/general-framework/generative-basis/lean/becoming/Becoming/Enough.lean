@@ -163,7 +163,7 @@ end AnyProcess
 namespace Free
 
 /-- Two configurations, every step allowed: each configuration can stay or change. -/
-def process : Process Bool Unit := ⟨fun _ _ _ => True⟩
+def process : Process Bool Unit := everyStep Bool Unit
 
 /-- The alternating configurations. -/
 def alternate : Nat → Bool

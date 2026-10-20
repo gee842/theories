@@ -1,5 +1,6 @@
 import Becoming.Locality
 import Becoming.Premises
+import Becoming.Witnesses
 
 /-!
 # Sampling: the laws of one step at coarser steps
@@ -883,15 +884,10 @@ end Strobe
 namespace Delay
 
 /-- One at the first step, zero after it. -/
-def first : Nat → Nat
-  | 0 => 1
-  | _ + 1 => 0
+def first : Nat → Nat := Witnesses.profile [1] 0
 
 /-- Nothing at the first two steps, one from the third. -/
-def lately : Nat → Nat
-  | 0 => 0
-  | 1 => 0
-  | _ + 2 => 1
+def lately : Nat → Nat := Witnesses.profile [0, 0] 1
 
 /-- The second relatum stands from the third step on; at the third step it depends on the
 first. Nothing is ever active and nothing is drawn on. -/
