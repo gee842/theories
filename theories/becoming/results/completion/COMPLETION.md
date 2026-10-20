@@ -2,12 +2,12 @@
 
 # The completion criterion, run
 
-The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T115958.613759Z` and the connectivity measure of `9ae5a6ae4` (core receipt `20261020T113206.066061Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
+The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T115958.613759Z` and the connectivity measure of `d84fd32b4` (core receipt `20261020T115958.613759Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
 
 | | Criterion | Met | Findings |
 |---|---|---|---:|
-| K1 | Coverage | no | 2 |
-| K2 | Unity | no | 2 |
+| K1 | Coverage | no | 1 |
+| K2 | Unity | no | 1 |
 | K3 | Premises | yes | 0 |
 | K4 | Representation | yes | 0 |
 | K5 | Enclosure | yes | 0 |
@@ -39,12 +39,10 @@ The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_pro
 ## K1. Coverage: not met
 
 - evaluation: Becoming.forced_iff_center stands apart from both base families (apart: own vocabulary)
-- evolution: Becoming.SelectionLevels.rises_exact_iff_levels stands apart from both base families (apart: own vocabulary)
 
 ## K2. Unity: not met
 
 - evaluation: Becoming.forced_iff_center: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed
-- evolution: Becoming.SelectionLevels.rises_exact_iff_levels: its statement is not on a base family (apart: own vocabulary) and no base-family instance reaching it is listed (listed: Becoming.GroupEnding.Flow.rises_iff_inactive)
 
 ## K3. Premises: met
 
