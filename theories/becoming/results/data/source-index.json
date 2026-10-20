@@ -4930,7 +4930,8 @@
         "theories/becoming/history/THEORY-OF-BECOMING.md",
         "theories/becoming/history/WANG-YANGMING.md",
         "theories/meta-attractor/COMMON-ORGANIZATION.md",
-        "theories/meta-attractor/README.md"
+        "theories/meta-attractor/README.md",
+        "tools/research/completion.py"
       ]
     },
     "theories/becoming/chapters/WANG-YANGMING.md": {

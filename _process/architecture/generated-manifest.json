@@ -4,7 +4,7 @@
     "README.md": "3b26d1525d103ba3357e16ebe8bb986cd81c463ac66075d33eb39972804b23c9",
     "RESEARCH.md": "58769f37ec9d2d57dcb31f8cab019a49963ec04a46c283fe5998ad6c25818a74",
     "RESULTS.md": "66c0f0517ef88ad1f2d818e47d659bf60c7a1c8088b8301597282256270c7fc7",
-    "GOALS.md": "f8d85d69f6f763c0ce68804c0fe96d830bd083e14e5c9c4de283f61ab7f930fd",
+    "GOALS.md": "eb43ee7296adec3743f5ac242cbdd1b26d645911107a5377482aad85358c45e6",
     "DEPENDENCIES.md": "7a0d1e661c908122bc86d9f4a00754862057f29632fd4bd4a830078b4577216d",
     "_process/BRIEF.md": "746932ccf78a6acecfdf42f51fae45c5989a474060ec89ebebac2ae6bd81cd38",
     "theories/becoming/README.md": "1b0956e329e311025518754beb399f5ef36711f6bbcbb8cea216d0070324dda3",
@@ -253,7 +253,7 @@
     "theories/becoming/results/ARGUMENTS-A-L.md": "9104da86efbffbbd24287ad57f93c5e41972578788e0167d69c627bea8b38759",
     "theories/becoming/results/ARGUMENTS-M-Z.md": "c173e1b2bb39737f52c5fd357019bffc0d7737d688c8e596b2d11ffeaa61170e",
     "theories/becoming/results/data/lean-index.json": "83a35ee842d1d933037973a77dfb3a618fdee98274c7453936382759d8dcf36f",
-    "theories/becoming/results/data/source-index.json": "fd1571f6171f7708dab991259d6f2efcc56238f35decf13f2c4f328444828f51",
+    "theories/becoming/results/data/source-index.json": "d3e0d1c7df3173d8ea21dbfe9195a492754b9d068665c2c8b7dc2f31281024c0",
     "theories/becoming/results/LEAN-INDEX.md": "340f3a93d5eefdf833c71ea33a45e75148da310cc434ada3734f4eefd381a768",
     "theories/becoming/results/LEAN-DECLARATIONS.md": "f2de5559edeb160e2903464ae674351c18abc738b0aebb94bd4e65064fa0c9f5",
     "theories/becoming/results/lean-declarations/becoming-core.md": "7af92df371b502503ee4158fe3fb884b2219eba040a6f8321d0fb4963dca10bd",
@@ -337,6 +337,7 @@
     "theories/becoming/results/records/sensitivity-is-the-least-coupling.md": "d5378ff4f8a8940d74121064356e7495e000899aea40ae78d604a742dd445ccd",
     "theories/becoming/results/records/testing-within-couplings.md": "450faf537f82ff01adbfd0706abf6f08bac67fceb2ed833eb5727e7db26ee23e",
     "theories/becoming/results/records/wisdom-root-without-axiom.md": "c79deda88ae46e9556463bfa982b32fa747bc672d2544448a40b506b1572d1e4",
-    "theories/becoming/results/lean-declarations/becoming-ring.md": "6aa9b9fc051504062ea0b7fc7134687b95d574371be575702ec03cf0861db786"
+    "theories/becoming/results/lean-declarations/becoming-ring.md": "6aa9b9fc051504062ea0b7fc7134687b95d574371be575702ec03cf0861db786",
+    "theories/becoming/results/completion/COMPLETION.md": "26a57377eeb508ea1ea9326054458bfd5c24fe980783be5d2f56856439c04805"
   }
 }

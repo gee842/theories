@@ -16,7 +16,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-from tools.research import registry, navigation, lean_catalogue, reading_catalogue, style, paths, moves, indexes, session_map, history_notes, rename_ids
+from tools.research import registry, navigation, completion, lean_catalogue, reading_catalogue, style, paths, moves, indexes, session_map, history_notes, rename_ids
 
 
 @contextmanager
@@ -263,6 +263,11 @@ def check_or_render(render=False, base=None, ids=None, strict_fresh=False):
     if errors:
         return 1, {'errors': errors, 'source_drift': drift}
     outputs = navigation.render_views(records)
+    # The completion criterion K1-K7 (R39): its report is a generated view; a malformed coverage file or a
+    # central name the core does not have is an error, an unmet criterion is not.
+    completion_pages, completion_errors = completion.render()
+    outputs.update(completion_pages)
+    errors += completion_errors
     index_pages, index_errors, reading_drift = index_outputs(render or strict_fresh)
     stale_indexes = []
     errors += index_errors

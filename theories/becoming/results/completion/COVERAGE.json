@@ -1,0 +1,730 @@
+{
+  "about": "The completion criterion K1-K7 (adopted 20 October 2026; study section 218), as data the tool tools/research/completion.py reads. K1: one row per phase, differentiation and domain, naming its central core declarations (Lean full names), the records stating them, the chapter sections and a status. K3: witnesses meeting and failing each premise a central statement uses. K4: the natural-number laws and their dense forms or counterexamples. K5: the parameters a central statement may leave supplied, each a named condition of chapter section 0. K6: the ethics chain. Written by AI (R39) from the records and the chapter; the tool checks it, it does not choose it.",
+  "statuses": {
+    "proved": "the row's central laws are theorems on the spine; what of the row is open is named in open_items",
+    "prose": "stated in the chapter or the periphery, not on the spine",
+    "open": "no checked statement yet"
+  },
+  "rows": [
+    {
+      "id": "generation",
+      "axis": "phase",
+      "name": "Generation",
+      "sections": [
+        "2.2",
+        "2.6"
+      ],
+      "records": [
+        "unceasing-generation-needs-renewal",
+        "generation-is-replenishment",
+        "where-novelty-gain-comes-from",
+        "how-loops-form"
+      ],
+      "declarations": [
+        "Becoming.Web.Unceasing.rises",
+        "Becoming.Flow.uptake_needs_replenishment",
+        "Becoming.Web.Embodied.replenishes",
+        "Becoming.Flow.new_beyond_every",
+        "Becoming.onLoop_of_closing"
+      ],
+      "status": "proved",
+      "open_items": [
+        5
+      ]
+    },
+    {
+      "id": "maintenance",
+      "axis": "phase",
+      "name": "Maintenance",
+      "sections": [
+        "2.1",
+        "2.2",
+        "4.4"
+      ],
+      "records": [
+        "supported-renewal-recovery",
+        "more-needs-renewers",
+        "restoring-giving-from-the-worst-start",
+        "conditions-kept-together"
+      ],
+      "declarations": [
+        "Becoming.Flow.restores",
+        "Becoming.Flow.Balances.renewedBy",
+        "Becoming.Flow.More.replenishment_unbounded",
+        "Becoming.Tolerance.answers_restores_iff",
+        "Becoming.Viability.kernel_and_iff"
+      ],
+      "status": "proved",
+      "open_items": []
+    },
+    {
+      "id": "transformation",
+      "axis": "phase",
+      "name": "Transformation",
+      "sections": [
+        "1.2",
+        "1.3",
+        "2.2",
+        "4.4"
+      ],
+      "records": [
+        "attraction-is-not-returning",
+        "recurrence-without-premise",
+        "laws-of-one-step",
+        "identity-across-steps",
+        "how-fast-a-rule-may-change"
+      ],
+      "declarations": [
+        "Becoming.Law.drawn_iff_not_returns",
+        "Becoming.Law.lossless_iff_returns",
+        "Becoming.Flow.change_recurs_iff",
+        "Becoming.World.balanced_reidentify_iff",
+        "Becoming.Pace.rule_until_reading"
+      ],
+      "status": "proved",
+      "open_items": [
+        8
+      ]
+    },
+    {
+      "id": "degeneration",
+      "axis": "phase",
+      "name": "Degeneration",
+      "sections": [
+        "1.2",
+        "2.3",
+        "2.5",
+        "4.5"
+      ],
+      "records": [
+        "consumption-ends-with-feeders",
+        "no-finite-part-bears-taking",
+        "what-taking-all-excludes",
+        "every-loss-passes-a-juncture",
+        "capture-through-the-rule"
+      ],
+      "declarations": [
+        "Becoming.Flow.Balances.consumption_ends_with_feeders",
+        "Becoming.Flow.Dissipative.opens",
+        "Becoming.Flow.continuing_excludes",
+        "Becoming.Branching.loss_passes_juncture",
+        "Becoming.RuleCapture.favouring_locks"
+      ],
+      "status": "proved",
+      "open_items": [
+        10
+      ]
+    },
+    {
+      "id": "dissolution",
+      "axis": "phase",
+      "name": "Dissolution",
+      "sections": [
+        "1.3",
+        "2.2"
+      ],
+      "records": [
+        "least-loss-rest",
+        "continued-change-needs-openness",
+        "reserve-defers-ending",
+        "ceasing-needs-arising",
+        "coming-and-ceasing-keep-pace"
+      ],
+      "declarations": [
+        "Becoming.Amounts.rests",
+        "Becoming.World.comes_to_rest_unrefuted",
+        "Becoming.Web.Carries.active_not_recurring",
+        "Becoming.Listed.coming_of_ceasing",
+        "Becoming.keep_pace"
+      ],
+      "status": "proved",
+      "open_items": [
+        6
+      ]
+    },
+    {
+      "id": "actor",
+      "axis": "differentiation",
+      "name": "Actor",
+      "sections": [
+        "2.2",
+        "2.6",
+        "4.1"
+      ],
+      "records": [
+        "life-as-condition-of-life",
+        "joint-difference-making",
+        "counterfactual-is-the-course",
+        "where-a-move-is-formed"
+      ],
+      "declarations": [
+        "Becoming.Web.roles_supported",
+        "Becoming.Dependence.differenceOnlyTogether_iff",
+        "Becoming.counterfactual_is_course",
+        "Becoming.partForms_iff"
+      ],
+      "status": "proved",
+      "open_items": [
+        7
+      ]
+    },
+    {
+      "id": "patient",
+      "axis": "differentiation",
+      "name": "Patient",
+      "sections": [
+        "2.2",
+        "2.5",
+        "2.6"
+      ],
+      "records": [
+        "life-as-condition-of-life",
+        "feeding-closure",
+        "levels-of-closure",
+        "what-a-cut-loses"
+      ],
+      "declarations": [
+        "Becoming.Web.roles_dependent",
+        "Becoming.Flow.beyond_gives_nothing",
+        "Becoming.Flow.withinSystem_of_withinInfluence",
+        "Becoming.responses_le_missBound"
+      ],
+      "status": "proved",
+      "open_items": []
+    },
+    {
+      "id": "knowing",
+      "axis": "differentiation",
+      "name": "Knowing",
+      "sections": [
+        "2.6",
+        "3.1",
+        "3.2",
+        "3.3"
+      ],
+      "records": [
+        "testing-within-couplings",
+        "experiment-needs-return",
+        "what-a-finite-stretch-verifies",
+        "learnable-through-a-map",
+        "observation-is-a-route"
+      ],
+      "declarations": [
+        "Becoming.Flow.unexcluded_beyond_coupling",
+        "Becoming.Run.not_fixes_of_untaken",
+        "Becoming.Ideals.verifiableBy_iff_interior",
+        "Becoming.Learnable.learnable_iff",
+        "Becoming.apart_only_downstream"
+      ],
+      "status": "proved",
+      "open_items": [
+        3
+      ]
+    },
+    {
+      "id": "evaluation",
+      "axis": "differentiation",
+      "name": "Evaluation",
+      "sections": [
+        "5",
+        "6.1",
+        "6.2"
+      ],
+      "records": [
+        "metaethical-core-characterization",
+        "living-significance-on-held-lives",
+        "represented-boundary-against-dependence",
+        "continuation-condition-yields-living-significance"
+      ],
+      "declarations": [
+        "Becoming.Valuation.significant_iff",
+        "Becoming.Valuation.significant_iff_held",
+        "Becoming.Web.selfValuation_significant_iff",
+        "Becoming.Web.significance_undetermined",
+        "Becoming.Web.renewingAt_iff_over_all"
+      ],
+      "status": "proved",
+      "open_items": [
+        3
+      ]
+    },
+    {
+      "id": "capacity",
+      "axis": "differentiation",
+      "name": "Capacity",
+      "sections": [
+        "2.1",
+        "6.1"
+      ],
+      "records": [
+        "effective-capacity-and-eventual-reachability",
+        "becoming-finite-horizon",
+        "comparison-by-widening",
+        "significance-retained-within-margin"
+      ],
+      "declarations": [
+        "Becoming.WithinMoves.after_course",
+        "Becoming.Renewable.no_exact_finite_reading",
+        "Becoming.Web.paths_extension_iff_widens",
+        "Becoming.Flow.Balances.retains_iff_within_margin"
+      ],
+      "status": "proved",
+      "open_items": [
+        5
+      ]
+    },
+    {
+      "id": "responsibility",
+      "axis": "differentiation",
+      "name": "Responsibility",
+      "sections": [
+        "2.6",
+        "3.4",
+        "4.1",
+        "6.5"
+      ],
+      "records": [
+        "the-gap-for-ones-own-act",
+        "comparison-where-the-rest-responds",
+        "presupposition-scopes",
+        "joint-difference-making"
+      ],
+      "declarations": [
+        "Becoming.Flow.act_unselected",
+        "Becoming.act_courses_unselected",
+        "Becoming.Flow.Balances.comparison_within_response",
+        "Becoming.presupposition_scopes",
+        "Becoming.Dependence.Overdetermined.only_together"
+      ],
+      "status": "proved",
+      "open_items": [
+        11
+      ]
+    },
+    {
+      "id": "life",
+      "axis": "domain",
+      "name": "Life",
+      "sections": [
+        "2.2"
+      ],
+      "records": [
+        "life-as-condition-of-life",
+        "living-on-and-descent",
+        "unceasing-generation-needs-renewal"
+      ],
+      "declarations": [
+        "Becoming.Web.roles_alive",
+        "Becoming.Web.living_on_reaches",
+        "Becoming.Flow.descent_reaches",
+        "Becoming.Web.Unceasing.activeRenewer_recurs"
+      ],
+      "status": "proved",
+      "open_items": []
+    },
+    {
+      "id": "evolution",
+      "axis": "domain",
+      "name": "Evolution",
+      "sections": [
+        "2.4"
+      ],
+      "records": [
+        "evolution-on-descent",
+        "transmission-is-inheritance-and-need"
+      ],
+      "declarations": [
+        "Becoming.Flow.selection_within",
+        "Becoming.Flow.transmitted_supported",
+        "Becoming.Flow.selected_le",
+        "Becoming.Web.transmits_at_iff",
+        "Becoming.Flow.no_new_dependence"
+      ],
+      "status": "proved",
+      "open_items": [
+        9
+      ]
+    },
+    {
+      "id": "learning",
+      "axis": "domain",
+      "name": "Learning",
+      "sections": [
+        "3.2",
+        "3.3"
+      ],
+      "records": [
+        "generalization-through-lumping",
+        "learnable-through-a-map",
+        "learning-through-a-map-is-tracking-in-the-limit"
+      ],
+      "declarations": [
+        "Becoming.Learning.goAlike_iff_lumped",
+        "Becoming.Learnable.learnable_iff",
+        "Becoming.LearnableRuns.learnable_iff_tracks",
+        "Becoming.Limit.identifies_iff_tracks",
+        "Becoming.Learning.Training.unselected_beyond_data"
+      ],
+      "status": "proved",
+      "open_items": [
+        7
+      ]
+    },
+    {
+      "id": "collective",
+      "axis": "domain",
+      "name": "Collective",
+      "sections": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "records": [
+        "mutual-dependence-and-its-pace",
+        "giving-that-waits-on-giving",
+        "a-code-formed-between-formations",
+        "relative-position-is-zero-sum",
+        "capture-through-the-rule"
+      ],
+      "declarations": [
+        "Becoming.Flow.mutuallyDependent_iff_reach",
+        "Becoming.Withholding.withholding_spreads",
+        "Becoming.SharedCodes.run_agrees_every_start_iff",
+        "Becoming.RelativePosition.rise_needs_fall",
+        "Becoming.RuleCapture.uniform_locks"
+      ],
+      "status": "proved",
+      "open_items": [
+        7
+      ]
+    },
+    {
+      "id": "significance",
+      "axis": "domain",
+      "name": "Significance",
+      "sections": [
+        "6.1",
+        "6.2",
+        "6.4",
+        "6.5"
+      ],
+      "records": [
+        "continuation-condition-yields-living-significance",
+        "significance-retained-within-margin",
+        "comparison-by-widening",
+        "continuation-condition-decomposition"
+      ],
+      "declarations": [
+        "Becoming.unrestricted_iff_livingSignificance",
+        "Becoming.Web.widens_iff_retains_adds",
+        "Becoming.Web.paths_comparison_widens",
+        "Becoming.Web.paths_one_object"
+      ],
+      "status": "proved",
+      "open_items": [
+        2,
+        12
+      ]
+    },
+    {
+      "id": "alignment",
+      "axis": "domain",
+      "name": "Alignment",
+      "sections": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5"
+      ],
+      "records": [
+        "selection-through-couplings",
+        "the-gap-for-ones-own-act",
+        "what-pooled-coupling-reaches",
+        "what-a-pools-acts-respond-to",
+        "alignment-direction-under-widening"
+      ],
+      "declarations": [
+        "Becoming.Flow.unselected_beyond_coupling",
+        "Becoming.Flow.unselected_beyond_pool",
+        "Becoming.Flow.act_selected_by_pool",
+        "Becoming.ExchangeLaw.response_not_fixed_by_coupling",
+        "Becoming.Direction.extension_iff_widens",
+        "Becoming.Direction.widening_selected_by_pool"
+      ],
+      "status": "proved",
+      "open_items": [
+        4
+      ]
+    }
+  ],
+  "premises": {
+    "about": "K3. Each premise a central statement may use, the pattern that finds it in a statement, and its witnesses: declarations exhibiting worlds or models that meet it and fail it. A premise with no witnesses listed is reported.",
+    "items": [
+      {
+        "name": "balance",
+        "pattern": "Flow\\.Balances(On)?\\b|World\\.Balanced|\\bBalances(On)?\\b",
+        "witnesses": [
+          "Becoming.World.contingent",
+          "Becoming.World.independent"
+        ]
+      },
+      {
+        "name": "dissipation",
+        "pattern": "\\bDissipative\\b|\\bDissipatesOn\\b",
+        "witnesses": [
+          "Becoming.World.contingent",
+          "Becoming.World.independent"
+        ]
+      },
+      {
+        "name": "embodiment",
+        "pattern": "\\bEmbodied\\b",
+        "witnesses": [
+          "Becoming.World.contingent",
+          "Becoming.World.independent"
+        ]
+      },
+      {
+        "name": "activity needing support",
+        "pattern": "\\bDependent\\b",
+        "witnesses": [
+          "Becoming.World.contingent",
+          "Becoming.World.independent"
+        ]
+      },
+      {
+        "name": "only active relata give",
+        "pattern": "\\bActing\\b",
+        "witnesses": [
+          "Becoming.World.contingent",
+          "Becoming.World.independent"
+        ]
+      },
+      {
+        "name": "only active relata take",
+        "pattern": "\\bTaking\\b",
+        "witnesses": [
+          "Becoming.World.contingent",
+          "Becoming.World.independent"
+        ]
+      },
+      {
+        "name": "a census",
+        "pattern": "\\bCensus\\b|World\\.Counted|\\bStandingCensus\\b",
+        "witnesses": [
+          "Becoming.World.contingent",
+          "Becoming.World.independent"
+        ]
+      },
+      {
+        "name": "bounded transmission",
+        "pattern": "\\bTransmitting\\b|\\bTransmitsWithin\\b",
+        "witnesses": [
+          "Becoming.World.independent"
+        ]
+      },
+      {
+        "name": "a reserve",
+        "pattern": "\\bCarries\\b",
+        "witnesses": [
+          "Becoming.World.contingent"
+        ]
+      },
+      {
+        "name": "finite",
+        "pattern": "World\\.Finite\\b",
+        "witnesses": [],
+        "note": "witnesses exist in the records (accretion, attrition) but are not listed here"
+      },
+      {
+        "name": "enclosed",
+        "pattern": "\\bEnclosed\\b|\\bAroundStanding\\b|Flow\\.Around\\b",
+        "witnesses": [
+          "Becoming.World.exposed_world",
+          "Becoming.Flow.enclosed_of_finite"
+        ]
+      },
+      {
+        "name": "decided",
+        "pattern": "\\bDecidable(Eq)?\\b",
+        "witnesses": [],
+        "note": "calibrated rather than witnessed: a count exists exactly where what it counts is decided (counts_iff_decided), and asked of every world some laws are exactly omniscience principles (chapter 8.6); no world is exhibited failing it"
+      },
+      {
+        "name": "a supplied law of exchange",
+        "pattern": "\\bExchangeLaw\\b",
+        "witnesses": [
+          "Becoming.ExchangeLaw.contingent"
+        ]
+      },
+      {
+        "name": "the continuation condition",
+        "pattern": "\\bUnrestricted\\b",
+        "witnesses": [
+          "Becoming.Flow.feeding_unrestricted_of_common",
+          "Becoming.bounded_rival"
+        ]
+      },
+      {
+        "name": "living significance",
+        "pattern": "\\bLivingSignificance\\b",
+        "witnesses": [
+          "Becoming.Web.significance_undetermined",
+          "Becoming.Apart.not_enough"
+        ]
+      },
+      {
+        "name": "C, the widening comparison",
+        "pattern": "\\bComparison\\b",
+        "witnesses": [],
+        "note": "an order premise: no theorem exhibits a comparison meeting and one failing it"
+      },
+      {
+        "name": "L, lifting",
+        "pattern": "\\bLiftBetter\\b",
+        "witnesses": [],
+        "note": "an order premise: no theorem exhibits a lifting meeting and one failing it"
+      }
+    ]
+  },
+  "representation": {
+    "about": "K4. Modelling choices of chapter section 0, block A, and the pattern that finds each in a central statement; the natural-number laws (whose truth depends on whole-number amounts) with their form over dense amounts or a counterexample. A statement with no choice found is a law over any type (of configurations, claims or standpoints) that uses none of them.",
+    "choices": [
+      {
+        "name": "natural-number amounts",
+        "pattern": "\\bFlow\\b|\\bWeb\\b|\\bWorld\\b|\\blevel\\b|\\bstock\\b"
+      },
+      {
+        "name": "discrete steps",
+        "pattern": "\\bRun\\b|\\bFlow\\b|\\bWeb\\b|\\bWorld\\b|\\bLaw\\b|\\bBranching\\b|\\bProcess\\b|\\borbit\\b|\\bNat\\b"
+      },
+      {
+        "name": "decidedness",
+        "pattern": "\\bDecidable(Eq)?\\b"
+      },
+      {
+        "name": "supplied observation",
+        "pattern": "\\bobs\\b"
+      },
+      {
+        "name": "naming",
+        "pattern": "\\brelabel\\b|\\bReidentify\\b"
+      },
+      {
+        "name": "a fixed type of formations",
+        "pattern": "\\bWidens\\b|\\bAdmits\\b"
+      }
+    ],
+    "natural_number_laws": [
+      {
+        "law": "Becoming.falls_not_recurring",
+        "dense": "Becoming.Amounts.rests",
+        "note": "proved from the least-loss law at whole numbers (whole_falls_not_recurring)"
+      },
+      {
+        "law": "Becoming.World.comes_to_rest_unrefuted",
+        "dense": "Becoming.Amounts.family_rests",
+        "note": "the rest family is the whole-number instance of the least-loss law"
+      },
+      {
+        "law": "Becoming.rising_recurs",
+        "dense": null,
+        "note": "open: a form over dense amounts or a counterexample (chapter 8.1 item 6)"
+      },
+      {
+        "law": "Becoming.Flow.excess_bounded",
+        "dense": null,
+        "note": "open: a form over dense amounts or a counterexample (chapter 8.1 item 6)"
+      },
+      {
+        "law": "Becoming.Flow.More.replenishment_unbounded",
+        "dense": null,
+        "note": "uses that each taker takes at least one unit per step"
+      }
+    ]
+  },
+  "enclosure": {
+    "about": "K5. The parameters a central statement may leave supplied, the pattern that finds each, and the Lean name chapter section 0 states it under; a found parameter not listed here, or listed with a name section 0 does not state, is reported.",
+    "parameters": [
+      {
+        "name": "significance",
+        "pattern": "\\bsig\\b",
+        "section0": "Unrestricted"
+      },
+      {
+        "name": "standpoints and their own regions",
+        "pattern": "\\bown\\b|\\bPos\\b",
+        "section0": "Valuation.Held"
+      },
+      {
+        "name": "observation",
+        "pattern": "\\bobs\\b",
+        "section0": "Frame.realized"
+      },
+      {
+        "name": "the naming",
+        "pattern": "\\brelabel\\b|\\bReidentify\\b",
+        "section0": "relabel"
+      },
+      {
+        "name": "the rest relatum",
+        "pattern": "\\bwithRest\\b|\\bwithImbalance\\b",
+        "section0": "World.withRest"
+      },
+      {
+        "name": "a valuation",
+        "pattern": "\\bValuation\\b",
+        "section0": "Conditions.valuation"
+      },
+      {
+        "name": "a law of exchange",
+        "pattern": "\\bExchangeLaw\\b",
+        "section0": "ExchangeLaw.readWorld_glue"
+      }
+    ]
+  },
+  "ethics_chain": {
+    "about": "K6. One chain from the evaluation row to the conclusions chapter 7.5 uses: each step after the first should reach an earlier step through its proof, so the steps are one derivation rooted at the evaluation row; every normative hypothesis their statements use is named.",
+    "steps": [
+      "Becoming.Valuation.significant_iff",
+      "Becoming.unrestricted_iff_livingSignificance",
+      "Becoming.Web.widens_iff_retains_adds",
+      "Becoming.Web.paths_extension_iff_widens",
+      "Becoming.Web.paths_one_object",
+      "Becoming.Direction.extension_iff_widens",
+      "Becoming.Direction.widening_selected_by_pool"
+    ],
+    "normative_hypotheses": [
+      {
+        "name": "the continuation condition",
+        "pattern": "\\bUnrestricted\\b"
+      },
+      {
+        "name": "C, the widening comparison",
+        "pattern": "\\bComparison\\b"
+      },
+      {
+        "name": "L, lifting",
+        "pattern": "\\bLiftBetter\\b"
+      },
+      {
+        "name": "living significance",
+        "pattern": "\\bLivingSignificance\\b"
+      },
+      {
+        "name": "J1-J4",
+        "pattern": "\\bBasicPriority\\b|\\bFrontier\\b|\\bRequired\\b"
+      }
+    ]
+  },
+  "open_register": {
+    "about": "K7. The classes an open item of chapter 8.1 may have.",
+    "classes": [
+      "further proof",
+      "philosophical warrant",
+      "empirical"
+    ]
+  }
+}
