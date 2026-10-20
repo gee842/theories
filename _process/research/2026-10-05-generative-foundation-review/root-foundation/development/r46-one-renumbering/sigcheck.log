@@ -1,5 +1,5 @@
 kept or replaced: 11730 agree, 0 differ (same name), 0 differ (replaced by a kept name), 0 missing, 0 removed with no replacement
-new names: 59
+new names: 60
 NEW Becoming.Interleavings.LocalLaw.Touching.remove
 NEW Becoming.Interleavings.LocalLaw.Touching.tail
 NEW Becoming.Interleavings.LocalLaw.around_contains
@@ -51,6 +51,7 @@ NEW Becoming.Interleavings.LocalLaw.touches_of_touchedIn
 NEW Becoming.Interleavings.LocalLaw.untouched_unmoved
 NEW Becoming.Interleavings.LocalLaw.world_active_iff
 NEW Becoming.Interleavings.LocalLaw.world_renumber_active
+NEW Becoming.Interleavings.LocalLaw.world_renumber_correspondence
 NEW Becoming.Interleavings.LocalLaw.world_renumber_flow
 NEW Becoming.Interleavings.LocalLaw.world_renumber_level
 NEW Becoming.Interleavings.LocalLaw.world_renumber_reads
