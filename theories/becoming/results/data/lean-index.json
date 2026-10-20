@@ -4317,8 +4317,8 @@
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/README.md",
         "theories/becoming/chapters/MATHEMATICAL-CORE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/history/GENERATIVE-CORE-LEAN.md"
+        "theories/becoming/history/GENERATIVE-CORE-LEAN.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4594,7 +4594,7 @@
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4608,7 +4608,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4623,7 +4623,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4639,7 +4639,7 @@
         "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4653,7 +4653,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4670,9 +4670,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4686,7 +4686,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4719,9 +4719,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4735,8 +4735,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4751,7 +4751,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4767,9 +4767,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4799,9 +4799,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4833,9 +4833,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4849,7 +4849,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4864,7 +4864,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4881,9 +4881,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4897,7 +4897,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4943,7 +4943,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4961,9 +4961,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4977,8 +4977,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5009,9 +5009,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5025,7 +5025,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5057,8 +5057,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5086,8 +5086,8 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5103,9 +5103,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5119,8 +5119,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5147,7 +5147,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5164,10 +5164,10 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
-        "theories/becoming/history/THE-THEORY-OF-BECOMING-6-SUPERSEDED-2026-10-17.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-6-SUPERSEDED-2026-10-17.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5183,8 +5183,8 @@
         "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5224,8 +5224,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5242,8 +5242,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5257,8 +5257,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5276,9 +5276,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5306,9 +5306,9 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5351,7 +5351,7 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5366,8 +5366,8 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5381,7 +5381,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5395,8 +5395,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5428,8 +5428,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5447,9 +5447,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5464,7 +5464,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5479,7 +5479,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5497,9 +5497,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5516,9 +5516,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5534,9 +5534,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5566,7 +5566,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5584,9 +5584,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5601,9 +5601,9 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
@@ -5618,8 +5618,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5650,8 +5650,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5667,9 +5667,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5732,9 +5732,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5764,8 +5764,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5779,7 +5779,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5795,9 +5795,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5812,9 +5812,9 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5829,7 +5829,7 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5847,9 +5847,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5864,7 +5864,7 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5878,7 +5878,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5893,9 +5893,9 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5911,9 +5911,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5927,7 +5927,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5969,8 +5969,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5985,8 +5985,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6002,8 +6002,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6018,8 +6018,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6033,7 +6033,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6048,7 +6048,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6151,9 +6151,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6167,8 +6167,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6197,7 +6197,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6232,8 +6232,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6261,8 +6261,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6279,9 +6279,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6312,9 +6312,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6346,8 +6346,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6362,9 +6362,9 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6378,7 +6378,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6392,7 +6392,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6409,9 +6409,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6442,8 +6442,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6458,8 +6458,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6474,7 +6474,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6488,7 +6488,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6503,7 +6503,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6521,8 +6521,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6537,7 +6537,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6566,7 +6566,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6580,8 +6580,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6612,8 +6612,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6629,9 +6629,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6646,8 +6646,8 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6692,8 +6692,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6753,9 +6753,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6772,7 +6772,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6787,7 +6787,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6804,9 +6804,9 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
         "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6866,7 +6866,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6880,8 +6880,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6896,8 +6896,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6927,7 +6927,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6958,9 +6958,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6974,9 +6974,9 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
@@ -6991,7 +6991,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7007,8 +7007,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7040,9 +7040,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7059,9 +7059,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7075,7 +7075,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7092,9 +7092,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7112,11 +7112,11 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
         "theories/becoming/history/G0-WARRANT.md",
-        "theories/becoming/history/G0-WARRANT.zh.md"
+        "theories/becoming/history/G0-WARRANT.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7132,8 +7132,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7147,8 +7147,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7178,7 +7178,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7209,8 +7209,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7226,9 +7226,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7246,9 +7246,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7264,9 +7264,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7282,9 +7282,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7300,9 +7300,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7332,7 +7332,7 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7346,7 +7346,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7362,9 +7362,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7394,8 +7394,8 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7439,7 +7439,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7455,9 +7455,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7471,8 +7471,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7503,9 +7503,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7520,7 +7520,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7535,7 +7535,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7549,7 +7549,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7565,9 +7565,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7582,9 +7582,9 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7602,9 +7602,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7620,8 +7620,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7637,8 +7637,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7653,8 +7653,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7668,7 +7668,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7684,8 +7684,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7701,8 +7701,8 @@
         "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7730,9 +7730,9 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7749,9 +7749,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7767,9 +7767,9 @@
         "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7784,8 +7784,8 @@
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7848,10 +7848,10 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
-        "theories/becoming/history/THE-THEORY-OF-BECOMING-6-SUPERSEDED-2026-10-17.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-6-SUPERSEDED-2026-10-17.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7867,9 +7867,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7886,9 +7886,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7902,7 +7902,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7917,8 +7917,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7953,9 +7953,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7971,8 +7971,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7989,9 +7989,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8005,7 +8005,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8023,8 +8023,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8056,8 +8056,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8072,8 +8072,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8091,9 +8091,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8107,7 +8107,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8136,9 +8136,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8170,7 +8170,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8187,9 +8187,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8205,9 +8205,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
@@ -8224,8 +8224,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8239,8 +8239,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8255,7 +8255,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8270,7 +8270,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8284,8 +8284,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8302,9 +8302,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8331,8 +8331,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8349,9 +8349,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8425,8 +8425,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8490,9 +8490,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8521,9 +8521,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8540,9 +8540,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8558,8 +8558,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8575,10 +8575,10 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
-        "theories/becoming/history/THE-THEORY-OF-BECOMING-6-SUPERSEDED-2026-10-17.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-6-SUPERSEDED-2026-10-17.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8593,8 +8593,8 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8621,7 +8621,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8655,8 +8655,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8673,9 +8673,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8689,8 +8689,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8706,9 +8706,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8725,9 +8725,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8743,9 +8743,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8760,8 +8760,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8793,8 +8793,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8808,7 +8808,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8826,9 +8826,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8842,7 +8842,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8871,9 +8871,9 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8907,9 +8907,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8925,8 +8925,8 @@
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8955,8 +8955,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8985,8 +8985,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -9004,9 +9004,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -9037,9 +9037,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -9069,7 +9069,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -9099,9 +9099,9 @@
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -10170,8 +10170,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -10359,9 +10359,9 @@
         "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -10413,8 +10413,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -11100,8 +11100,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/history/FORMAL-CORE.md"
+        "theories/becoming/history/FORMAL-CORE.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -12084,8 +12084,8 @@
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -12608,8 +12608,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -12676,8 +12676,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -12988,9 +12988,9 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
         "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -13003,8 +13003,8 @@
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -13217,8 +13217,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -13272,9 +13272,9 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -13670,9 +13670,9 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -13796,8 +13796,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -13894,8 +13894,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -14014,8 +14014,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -14074,8 +14074,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -14429,8 +14429,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/FORMAL-NOTES.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -14508,8 +14508,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -14547,8 +14547,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -14575,8 +14575,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -15029,8 +15029,8 @@
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -15347,8 +15347,8 @@
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -15374,8 +15374,8 @@
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },

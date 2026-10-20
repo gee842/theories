@@ -1456,7 +1456,7 @@ Correspondence covers only the stated premises and subclaims; source existence d
 
 **ID:** `the-theory-of-becoming-reference` · **Category:** formal index
 
-**Source:** [THE-THEORY-OF-BECOMING-REFERENCE.md](../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md)
+**Source:** [THE-THEORY-OF-BECOMING-REFERENCE.md](../history/THE-THEORY-OF-BECOMING-REFERENCE.md) · earlier chapter, kept in history at its original scope
 
 **Status:** Reference and navigation
 

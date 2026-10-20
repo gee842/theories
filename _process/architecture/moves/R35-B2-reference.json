@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "batch": "R35-B2-reference",
+  "date": "2026-10-20T01:33:06+00:00",
+  "base_commit": "af5837f5dcdf1a636c09362842381f8e79012b13",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
+      "new_path": "theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md",
+      "sha256": "7e4cc86816a9b2410725f983de9d01442d64f8b404d316b9332293f298e1dd5b",
+      "blob": "32c8c24b926753f27eb9e87011b0cc8ed83f6d14",
+      "reason": "R35 (20 October 2026), batch B2: E2: verbatim pre-restructure lists (l.1-113) are history; the declaration catalogue (l.114-218) and module table (l.219-475) duplicate LEAN-INDEX and the Lean README; whole file moves, nothing kept live",
+      "plan_entry": "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/RESTRUCTURE-REPORT.md",
+      "old_sha256": "ac018dbc0b8c88e1367280595fb28718c20fcd4209336e24ea2f8ea9be867ac9",
+      "new_sha256": "549bf53fbd119d073c7a1bdc22487ccd37dadd8c9c69c5a56f5c849ed9188009",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "old_sha256": "4fd17c8a63f059404902fefd5bfadb4134be7969c9138d4d77e420a92274fdde",
+      "new_sha256": "f741548c05707025c778d34d85ddeccc21751bc82b39915af3cbafe63e6b8be5",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/results/data/arguments-m-z.json",
+      "old_sha256": "38eeb6979792b9dc5d680d48524efbe47f2e90d3f8ede1c0827d7c707430c61a",
+      "new_sha256": "48502363cee29e7a4dd10b988dedf8f0268bc128f10ce922d17911a6e983a649",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/data/generativity-chain.json",
+      "old_sha256": "c6d6097f6f7b3b79ecde564a7e4fed6ad33d48ca547c0f8e55df4155b8334093",
+      "new_sha256": "219d9eb0cb18ec15915df12de54dab81b80a09589d753ae551e9a9fb9cc8dcdb",
+      "references": 1
+    }
+  ],
+  "history_roots": [
+    "theories/becoming/history"
+  ],
+  "generated_pages_to_rerender": [
+    "theories/becoming/chapters/README.md",
+    "theories/becoming/results/ARGUMENTS-M-Z.md",
+    "theories/becoming/results/LEAN-INDEX.md",
+    "theories/becoming/results/data/lean-index.json",
+    "theories/becoming/results/data/source-index.json",
+    "theories/becoming/results/lean-declarations/abstraction.md",
+    "theories/becoming/results/lean-declarations/becoming-core.md",
+    "theories/becoming/results/lean-declarations/core.md",
+    "theories/becoming/results/lean-declarations/ethics.md",
+    "theories/becoming/results/lean-declarations/learning.md",
+    "theories/becoming/results/lean-declarations/other.md"
+  ],
+  "verification_errors": []
+}

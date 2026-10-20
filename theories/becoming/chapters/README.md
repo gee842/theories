@@ -8,12 +8,11 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 
 ## Files in this directory
 
-1 canonical, 1 reference, 27 kept, 1 generated, 11 Chinese edition.
+1 canonical, 27 kept, 1 generated, 11 Chinese edition.
 
 | File | Title | Status | Role in section 11 | Note |
 |---|---|---|---|---|
 | [THE-THEORY-OF-BECOMING.md](THE-THEORY-OF-BECOMING.md) | The Theory of Becoming | canonical | Canonical | The canonical entry: states the theory. |
-| [THE-THEORY-OF-BECOMING-REFERENCE.md](THE-THEORY-OF-BECOMING-REFERENCE.md) | The Theory of Becoming: reference catalogue | reference | — | Reference companion of [THE-THEORY-OF-BECOMING](THE-THEORY-OF-BECOMING.md): material moved out of it, nothing new. |
 | [ALIGNMENT-DIRECTION.md](ALIGNMENT-DIRECTION.md) | The direction of AI alignment we propose | kept | Statement source | Statement source of §7. Its wording on the axiom predates the restatement of the condition as §6.15 (16 October 2026). |
 | [ALIGNMENT-THROUGH-CHANGE.md](ALIGNMENT-THROUGH-CHANGE.md) | Generative alignment through change | kept | Statement source | Cited in §7; statement source of three records. |
 | [BASIC-CONFLICT-JUDGMENT.md](BASIC-CONFLICT-JUDGMENT.md) | Judgment when basic claims conflict | kept | Statement source | Statement source of [finite-aggregation-within-restorable-basic-losses](../results/records/finite-aggregation-within-restorable-basic-losses.md). |
@@ -56,7 +55,7 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 
 ## Chapters moved to history
 
-133 files that were in this directory were moved, bytes unchanged, by the move receipts in [`_process/architecture/moves/`](../../../_process/architecture/moves/). Each is kept at its original scope as a record of argument; the receipts give the reason per batch.
+134 files that were in this directory were moved, bytes unchanged, by the move receipts in [`_process/architecture/moves/`](../../../_process/architecture/moves/). Each is kept at its original scope as a record of argument; the receipts give the reason per batch.
 
 **H4** (13 files): 5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)
 
@@ -93,6 +92,8 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 **R35-B1-chapters** (1 file): R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 8 times) of a chapter whose English edition is canonical; a live document may be English only
 
 **R35-B1-chapters** (2 files): R35 (20 October 2026), batch B1: E5, an unmaintained Chinese edition (G0 9 times) of a chapter whose English edition is canonical; a live document may be English only
+
+**R35-B2-reference** (1 file): R35 (20 October 2026), batch B2: E2: verbatim pre-restructure lists (l.1-113) are history; the declaration catalogue (l.114-218) and module table (l.219-475) duplicate LEAN-INDEX and the Lean README; whole file moves, nothing kept live
 
 | Former path | Now at | Batch |
 |---|---|---|
@@ -206,6 +207,7 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | `SYSTEM-INDIVIDUATION.md` | [history/SYSTEM-INDIVIDUATION.md](../history/SYSTEM-INDIVIDUATION.md) | H4 |
 | `SYSTEM-WARRANT.md` | [history/SYSTEM-WARRANT.md](../history/SYSTEM-WARRANT.md) | H4 |
 | `SYSTEMS-COMPLEXITY-CHAOS.md` | [history/SYSTEMS-COMPLEXITY-CHAOS.md](../history/SYSTEMS-COMPLEXITY-CHAOS.md) | H4 |
+| `THE-THEORY-OF-BECOMING-REFERENCE.md` | [history/THE-THEORY-OF-BECOMING-REFERENCE.md](../history/THE-THEORY-OF-BECOMING-REFERENCE.md) | R35-B2-reference |
 | `THEORY-OF-BECOMING.md` | [history/THEORY-OF-BECOMING.md](../history/THEORY-OF-BECOMING.md) | R19-chapters |
 | `THEORY-OF-BECOMING.zh.md` | [history/THEORY-OF-BECOMING.zh.md](../history/THEORY-OF-BECOMING.zh.md) | R19-chapters |
 | `THEORY.md` | [history/THEORY.md](../history/THEORY.md) | H4 |
