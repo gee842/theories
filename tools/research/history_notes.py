@@ -43,7 +43,7 @@ BOOK = re.compile(
     r"reviewed only|pinned to (their )?existing|checker was rerun|declarations moved with their full", re.I)
 DATE = re.compile(r'(\d{1,2} (?:January|February|March|April|May|June|July|August|September|October|November|December) 20\d\d'
                   r'|20\d\d-\d\d-\d\d)')
-MARK = 'bookkeeping notes condensed'
+MARK = re.compile(r'bookkeeping notes? condensed')
 
 
 def outer(text):
@@ -64,7 +64,7 @@ def classify(index, note):
     text = note_text(note)
     if index == 0:
         return 'first'
-    if MARK in text:
+    if MARK.search(text):
         return 'other'
     if STRONG.search(outer(text)):
         return 'substantive'
@@ -81,7 +81,7 @@ def dates(notes):
 def condensing_note(count, first, last, snapshot):
     span = f' from {first} to {last}' if first and last and first != last else f' of {first}' if first else ''
     span_zh = f'（{first} 至 {last}）' if first and last and first != last else f'（{first}）' if first else ''
-    return {'en': f'{date.today().isoformat()}: {count} {MARK}{span}: receipts rebound, sources re-pointed or rehashed '
+    return {'en': f'{date.today().isoformat()}: {count} bookkeeping {"note" if count == 1 else "notes"} condensed{span}: receipts rebound, sources re-pointed or rehashed '
                   f'after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot '
                   f'{snapshot} and in git.',
             'zh': f'{date.today().isoformat()}：{count} 条记账性说明合并{span_zh}：收据重绑、来源重指或重算哈希，主张不变。'
