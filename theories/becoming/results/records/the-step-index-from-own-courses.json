@@ -143,7 +143,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
       "role": "proof",
-      "sha256": "e0aba888e9c1ddcb9f49ed889d02a8e28312283c26624c09d8d63158327a9211",
+      "sha256": "bd9c4d334d5a6d3c25b4860d680481f4c60caa063439e2a4877ec019c9051539",
       "declarations": [
         "Becoming.Interleavings.LocalLaw.Connected",
         "Becoming.Interleavings.LocalLaw.act_comm",
@@ -177,12 +177,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a"
+      "sha256": "fc0ec66b6808b0435011789f8768f35c6c87896f5438b142f40c5a3d200cf41d"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec"
+      "sha256": "ac9637b5e87f796d9ee96c6a8f42a6a7dba2d9976e12b5b9a71b3478a4199472"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -200,12 +200,18 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "role": "receipt",
+      "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Interleavings",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -301,6 +307,10 @@
     {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Proof bindings (Interleavings.lean) rebound to core receipt 20261019T235844.485705Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; Interleavings.lean, the world an interleaving builds (LocalLaw.world, world_balances, world_final, world_swap, standings_of_courses) added; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：证明绑定（Interleavings.lean）改到核心回执 20261019T235844.485705Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；Interleavings.lean，新增交错构造的世界（LocalLaw.world、world_balances、world_final、world_swap、standings_of_courses）；保留的陈述不变；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
     }
   ]
 }

@@ -6,9 +6,9 @@
     "en": "A law through coupling that changes along the run"
   },
   "kind": "theorem",
-  "status": "recorded-checked",
+  "status": "superseded",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-19T00:39:24+00:00",
+  "reviewed_at_utc": "2026-10-20T00:09:49+00:00",
   "statement": {
     "en": "Where what a formation depends on forms and dissolves along a run, the law at what it couples into on each occasion and the law at the coupling of one moment agree where nothing it depends on changes; otherwise neither gives the other.",
     "zh": "一个形成所依赖者沿运行形成与消散之处，它在每个场合所耦合者上的规律与某一时刻耦合上的规律，在它所依赖者无变之处一致；否则互不给出。"
@@ -132,14 +132,7 @@
     "zh": "本章开放纲领（第 8.2 节，选择、原因与实验）列出“the criterion through coupling that changes along the run”，a-law-through-coupling-along-one-run 把它列在 does_not_show。Ren，2026年10月18日：“you have permission now, please see what else is there to do - keep pushing the frontier till finishing”；10月19日：“continue”（来历，不是根据）；条目由 AI 选择。读法（AI 的）：沿进程在一个形成耦合上的规律，是在它每个场合所有耦合上的规律；经某一时刻的依赖读进程，可能找到它自己的耦合不承载的规律，也可能错过它承载的规律。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LawThroughChangingCoupling.lean",
-  "aliases": [
-    "law through changing coupling",
-    "经改变的耦合的规律",
-    "forming and dissolving dependence",
-    "形成与消散的依赖",
-    "coupling fixed at one step",
-    "固定于一步的耦合"
-  ],
+  "aliases": [],
   "dependencies": [
     {
       "id": "a-law-through-coupling-along-one-run",
@@ -595,6 +588,11 @@
     {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Dependence.lean, Likeness.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Dependence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Likeness.lean, takes as its final section ListedOutcomeFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Dependence.lean、Likeness.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Dependence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Likeness.lean，以末节收入 ListedOutcomeFrames（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (G4): superseded by a-law-through-a-projection-along-one-run, the one record of a law along one run under a relation; its laws, premises, non-implications, witness, aliases and links are there, its declarations in Becoming.LawAlongRun under their names. The evidence here is kept as it was: the module's bytes in the Lean history folder, bound to the receipts that checked them.",
+      "zh": "2026年10月20日，R33（G4）：由 a-law-through-a-projection-along-one-run 取代，即沿一个运行、在关系之下之规律的唯一记录；本记录的规律、前提、不蕴含、见证、别名与链接都在那里，其声明以原名在 Becoming.LawAlongRun 中。此处证据照旧保留：模块字节在 Lean 历史目录中，绑定到检查过它们的回执。"
     }
-  ]
+  ],
+  "superseded_by": "a-law-through-a-projection-along-one-run"
 }

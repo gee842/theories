@@ -1,0 +1,260 @@
+{
+  "schema_version": 2,
+  "id": "learning-through-a-map-is-tracking-in-the-limit",
+  "title": {
+    "en": "Learning through a map is tracking in the limit",
+    "zh": "经映射的学习是极限中的跟随"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F11",
+  "reviewed_at_utc": "2026-10-20T00:09:49+00:00",
+  "statement": {
+    "en": "An extrapolation predicts a feature along every run exactly where its guess, fixed by the record through the map, tracks the feature in the limit. Where the law leaves the feature unchanged this is identification in the limit; where the law changes it, it need not be.",
+    "zh": "外推沿每个运行预测一个特征，恰当它经映射由记录所定的猜测在极限中跟随该特征。律使特征不变时，这就是极限中的辨识；律改变特征时，未必如此。"
+  },
+  "laws": [
+    {
+      "en": "A guess tracks a target in the limit where, on every run, from some horizon on it is the target's value at the horizon; identifying a hypothesis is tracking a target constant in the horizon, and two targets one guess tracks agree from some horizon on.",
+      "zh": "猜测在极限中跟随目标，是说在每个运行上，从某个视界起它是目标在该视界的值；辨识一个假设就是跟随一个不随视界而变的目标；同一猜测跟随的两个目标从某个视界起一致。",
+      "declarations": [
+        "Becoming.Limit.Tracks",
+        "Becoming.Limit.identifies_iff_tracks",
+        "Becoming.Limit.Tracks.agree"
+      ]
+    },
+    {
+      "en": "An extrapolation's guess at horizon k is what it proposes from the prefix before k of the run's course through the map; it is fixed by the record through the map, so by the record. The extrapolation predicts the feature along every run exactly where its guess tracks it.",
+      "zh": "外推在视界 k 的猜测是它从运行经映射之进程在 k 之前的前段所提出者；它由经映射的记录所定，从而由记录所定。外推沿每个运行预测特征，恰当其猜测跟随该特征。",
+      "declarations": [
+        "Becoming.LearnableRuns.guess",
+        "Becoming.LearnableRuns.FixedThrough",
+        "Becoming.LearnableRuns.guess_fixedThrough",
+        "Becoming.LearnableRuns.FixedThrough.byRecord",
+        "Becoming.LearnableRuns.predicts_iff_tracks"
+      ]
+    },
+    {
+      "en": "A guess fixed by the record through the map that tracks the feature gives runs beginning alike in the frame features agreeing from some step on; learnable through the map, some such guess tracks it, with no premise; in a world a list holds, learnable exactly where some such guess tracks the feature.",
+      "zh": "经映射由记录所定、跟随特征的猜测，给在框架中开始相同的运行从某步起一致的特征；经映射可学，则有这样的猜测跟随它，不加前提；在列表所持的世界中，恰当有这样的猜测跟随特征时可学。",
+      "declarations": [
+        "Becoming.LearnableRuns.agree_of_tracks",
+        "Becoming.LearnableRuns.tracks_of_learnable",
+        "Becoming.LearnableRuns.learnable_iff_tracks"
+      ]
+    },
+    {
+      "en": "Where the law leaves the feature unchanged, it stands along a run as at the start, and in a world a list holds the feature is learnable through the map exactly where some guess fixed by the record through the map identifies in the limit its value at the run's start.",
+      "zh": "律使特征不变之处，特征沿运行如在起点；在列表所持的世界中，特征经映射可学，恰当有经映射由记录所定的猜测在极限中辨识其在运行起点的值。",
+      "declarations": [
+        "Becoming.LearnableRuns.val_invariant",
+        "Becoming.LearnableRuns.learnable_iff_identifies"
+      ]
+    },
+    {
+      "en": "In Merge every configuration goes to 0 and the feature says whether a configuration is 1: through the map that tells nothing apart it is learnable, proposing false from step 1, the law changes it, and no guess fixed by the record identifies its value at the start.",
+      "zh": "Merge 中每个配置都走到 0，特征说配置是否为 1：经什么也不区分的映射它可学（从第 1 步起提出 false），律改变它，而没有由记录所定的猜测辨识它在起点的值。",
+      "declarations": [
+        "Becoming.LearnableRuns.Merge.next",
+        "Becoming.LearnableRuns.Merge.val",
+        "Becoming.LearnableRuns.Merge.at_zero",
+        "Becoming.LearnableRuns.Merge.learnable",
+        "Becoming.LearnableRuns.Merge.not_identifies",
+        "Becoming.LearnableRuns.Merge.learnable_not_identifies"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. The forward directions need no premise. The converse of learnable_iff_tracks takes a world a list holds and decidable equality of the map's values (it goes through learnable_iff); learnable_iff_identifies takes also that the law leaves the feature unchanged.",
+      "zh": "不加公理。正向不需前提。learnable_iff_tracks 的逆向取列表所持的世界与映射之值的相等可判定（经由 learnable_iff）；learnable_iff_identifies 另取律使特征不变。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Tracking without a list holding the world: the converse builds the extrapolation from the law, the map, the feature and the list.",
+      "zh": "无列表所持世界时的跟随：逆向由律、映射、特征与列表构造外推。",
+      "kind": "converse"
+    },
+    {
+      "en": "Identification of a feature the law changes: Merge is learnable and identified by no guess fixed by the record.",
+      "zh": "律所改变之特征的辨识：Merge 可学，却不为由记录所定的任何猜测所辨识。",
+      "kind": "non-implication",
+      "witness": "Becoming.LearnableRuns.Merge.learnable_not_identifies"
+    },
+    {
+      "en": "Which maps actual learners read, or that any formation learns by extrapolation.",
+      "zh": "实际的学习者读哪个映射，或任何形成以外推学习。",
+      "kind": "correspondence"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
+      "detail": {
+        "en": "Learnable through a map, not identification of the start: Merge (Merge.learnable_not_identifies).",
+        "zh": "经映射可学而起点不被辨识：Merge（Merge.learnable_not_identifies）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T235844.485705Z): the cited declarations of Becoming.LearnableRuns and Becoming.LimitVerification have empty axiom reports; the checker verifies core purity. Author self-review in study section 224; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T235844.485705Z）：所引 Becoming.LearnableRuns 与 Becoming.LimitVerification 的声明公理报告为空；检查器并核对核心纯净。作者自审见研究第 224 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "Tracking without a list holding the world, where turning a guess into an extrapolation needs a run chosen per prefix; learnability itself verified or refuted in the limit; an independent review.",
+    "zh": "无列表所持世界时的跟随，此时把猜测变成外推需要为每个前段选一个运行；可学性本身在极限中的验证或否证；独立审查。"
+  },
+  "correspondence": {
+    "en": "The twentieth review's G5 found two theories of learning in the limit, Learnable with Unrolling and Labels, and LimitVerification, unjoined. Learnable's target changes with the step, so the exact bridge is tracking, of which LimitVerification's identification is the case of a constant target. Reading (the AI's): to learn through a map is to come, from the record alone, to say rightly what the feature is now, not what it was at the start; the two agree only where the unfolding leaves the feature as it is.",
+    "zh": "第二十次审查 G5 发现两种极限中学习的理论（Learnable 及 Unrolling、Labels，与 LimitVerification）没有接上。Learnable 的目标随步而变，所以精确的桥是跟随，LimitVerification 的辨识是目标不变的情形。读法（AI 的）：经映射学习，是仅凭记录逐渐正确地说出特征现在是什么，而不是它在起点是什么；两者只在展开让特征保持原样之处一致。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
+  "aliases": [
+    "learning is tracking in the limit",
+    "学习是极限中的跟随",
+    "tracking in the limit",
+    "极限中的跟随",
+    "Becoming.LearnableRuns.learnable_iff_identifies",
+    "Becoming.LearnableRuns.predicts_iff_tracks"
+  ],
+  "dependencies": [
+    {
+      "id": "learnable-through-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses LearnableRuns.Predicts, learnable_iff and course_same: what an extrapolation can learn through a map along the runs of a determined law.",
+        "zh": "复用 LearnableRuns.Predicts、learnable_iff 与 course_same：外推沿确定律的运行经映射能学到什么。"
+      },
+      "interface": {
+        "output": {
+          "en": "Learnability through a map along runs, and its criterion in a world a list holds.",
+          "zh": "沿运行经映射的可学性，及其在列表所持世界中的判据。"
+        },
+        "input": {
+          "en": "What tracking in the limit is shown equivalent to.",
+          "zh": "与极限中的跟随证明等价者。"
+        },
+        "conditions": {
+          "en": "A world a list holds, for the converse.",
+          "zh": "逆向需列表所持的世界。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean"
+      }
+    },
+    {
+      "id": "what-a-method-comes-to-say-in-the-limit",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Limit.Identifies, of which tracking is the generalization to a target changing with the horizon.",
+        "zh": "复用 Limit.Identifies；跟随是它到随视界而变之目标的推广。"
+      },
+      "interface": {
+        "output": {
+          "en": "Identification in the limit over the runs of a process.",
+          "zh": "过程运行上极限中的辨识。"
+        },
+        "input": {
+          "en": "The constant-target case of tracking.",
+          "zh": "跟随中目标不变的情形。"
+        },
+        "conditions": {
+          "en": "None beyond the process.",
+          "zh": "过程之外无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LimitVerification.lean"
+      }
+    }
+  ],
+  "related": [],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
+      "role": "proof",
+      "sha256": "66e6ef0b6ced4f6d2fda0324f57c24f35004c7477e449570b0f3432276fde9e4",
+      "declarations": [
+        "Becoming.LearnableRuns.guess",
+        "Becoming.LearnableRuns.FixedThrough",
+        "Becoming.LearnableRuns.guess_fixedThrough",
+        "Becoming.LearnableRuns.FixedThrough.byRecord",
+        "Becoming.LearnableRuns.predicts_iff_tracks",
+        "Becoming.LearnableRuns.agree_of_tracks",
+        "Becoming.LearnableRuns.tracks_of_learnable",
+        "Becoming.LearnableRuns.val_invariant",
+        "Becoming.LearnableRuns.learnable_iff_tracks",
+        "Becoming.LearnableRuns.learnable_iff_identifies",
+        "Becoming.LearnableRuns.Merge.next",
+        "Becoming.LearnableRuns.Merge.val",
+        "Becoming.LearnableRuns.Merge.at_zero",
+        "Becoming.LearnableRuns.Merge.learnable",
+        "Becoming.LearnableRuns.Merge.not_identifies",
+        "Becoming.LearnableRuns.Merge.learnable_not_identifies"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LimitVerification.lean",
+      "role": "proof",
+      "sha256": "14a4961d46c2925ee55cde73fc94ce44a4eb3f24bee9dcdeca829dff15f4589d",
+      "declarations": [
+        "Becoming.Limit.Tracks",
+        "Becoming.Limit.Identifies",
+        "Becoming.Limit.identifies_iff_tracks",
+        "Becoming.Limit.Tracks.agree"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "role": "receipt",
+      "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "fc0ec66b6808b0435011789f8768f35c6c87896f5438b142f40c5a3d200cf41d",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "ac9637b5e87f796d9ee96c6a8f42a6a7dba2d9976e12b5b9a71b3478a4199472",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/twentieth-review/G-FRONTIER.md",
+      "role": "provenance",
+      "sha256": "da01ce81baf8c68de4024ab741a3fbafdac12546b5d6f6319277e5a2e4060ab1",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LearnableRuns",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LimitVerification.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LimitVerification",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "20 October 2026: added (R33, G5 of the twentieth review, learning in the limit joined): Limit.Tracks and the bridge from learning through a map to tracking and identification in the limit, with Merge; study section 224.",
+      "zh": "2026年10月20日：新增（R33，第二十次审查 G5，极限中的学习接上）：Limit.Tracks，以及从经映射的学习到极限中跟随与辨识的桥，附 Merge；研究第 224 节。"
+    }
+  ]
+}

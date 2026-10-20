@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-19T08:36:13+00:00",
+  "reviewed_at_utc": "2026-10-20T00:09:49+00:00",
   "statement": {
     "en": "Where a formation gives as all but its tolerance of what it waits on gave, a set relying on at most its tolerance outside it keeps giving and a thin withholding passes out in one step; restoring needs a formation sparing all it waits on.",
     "zh": "一个形成在所等待者中除其容忍数之外都给出时给出，则在集合外至多依赖其容忍数的集合保持给出，稀疏的扣留一步消散；恢复需要一个容忍其全部等待者的形成。"
@@ -74,6 +74,23 @@
         "Becoming.Tolerance.Triad.total_kept",
         "Becoming.Tolerance.Triad.total_at_two"
       ]
+    },
+    {
+      "en": "On a web whose conditions each depend only on themselves, need k units and are given one by each upstream formation supported the step before, with k at most the number upstream, support is the run of the tolerating law with tolerance the number upstream less k; with k all upstream it is Withholding's law without memory.",
+      "zh": "在每个条件只依赖自身、需要 k 个单位、由上一步每个受支持的上游形成各给一个单位（k 不超过上游数）的网上，支持就是容忍数为上游数减 k 的容忍律之运行；k 取全部上游时即 Withholding 的无记忆之律。",
+      "declarations": [
+        "Becoming.Tolerance.countTrue",
+        "Becoming.Tolerance.countTrue_add_not",
+        "Becoming.Tolerance.allBut_iff_count",
+        "Becoming.Tolerance.allBut_sub_iff",
+        "Becoming.Tolerance.KeepsInclusion.course_iff",
+        "Becoming.Tolerance.web_tolerating",
+        "Becoming.Tolerance.web_activity_tolerating",
+        "Becoming.Tolerance.web_answers",
+        "Becoming.Tolerance.giftLevels",
+        "Becoming.Tolerance.giftWeb",
+        "Becoming.Tolerance.giftWeb_tolerating"
+      ]
     }
   ],
   "hypotheses": [
@@ -108,8 +125,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T083316.966154Z）：Becoming.Tolerance 的 65 项声明（52 项定理）公理报告为空；检查器并核对核心纯净。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 194 节；未经人的独立审查。"
   },
   "next_delta": {
-    "en": "Amounts of giving and thresholds with memory; the tolerating law as an instance of an envelope law; an independent review.",
-    "zh": "给出的数量与有记忆的阈值；容忍律作为包络律的实例；独立审查。"
+    "en": "Amounts of giving and thresholds with memory; the tolerating law as an instance of an envelope law; webs whose conditions depend on others than themselves; an independent review.",
+    "zh": "给出的数量与有记忆的阈值；容忍律作为包络律的实例；条件依赖自身以外者的网；独立审查。"
   },
   "correspondence": {
     "en": "An account of social viability Ren brought on 19 October 2026 lists eight constraints and a unifying ninth; V carried the fourth, cooperation among strangers, by Becoming.Withholding and left amounts of giving, thresholds of waiting and fault tolerance as an instance open. Ren's words are provenance, not warrant; the reading onto collectives is the AI's (D48).",
@@ -252,7 +269,7 @@
         "Becoming.Tolerance.withheld_kept",
         "Becoming.Tolerance.worst_start"
       ],
-      "sha256": "ee7b43ee63f509c1794d386a8642ec08ca528377846fd6188d1047117106f1dc"
+      "sha256": "bed16b437b52b61107503ee8f810041295e31ba7dd79194363c5e37999b60145"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FaultEnvelopes.lean",
@@ -272,7 +289,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Withholding.lean",
       "role": "proof",
-      "sha256": "b3bcc3c20aef049702fe489c7f8a0eb8dd3d59cf9f7193a3993c12abc42e325e"
+      "sha256": "f064373e1adf6dc1355174342c235a0a40d2c371f39153151f4095a47bfa0aa9"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083316.966154Z/verification.json",
@@ -282,12 +299,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a"
+      "sha256": "fc0ec66b6808b0435011789f8768f35c6c87896f5438b142f40c5a3d200cf41d"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec"
+      "sha256": "ac9637b5e87f796d9ee96c6a8f42a6a7dba2d9976e12b5b9a71b3478a4199472"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
@@ -305,13 +322,34 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "e5da917c9c99ba89e89644785dff84e123847b71ffc8e3c2b5f7f2d26784b210",
+      "declarations": [
+        "Becoming.Web.Supported"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "role": "receipt",
+      "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tolerance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Tolerance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -408,6 +446,10 @@
     {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Tolerance.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Tolerance.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Withholding.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Tolerance.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Tolerance.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Withholding.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (G7, collective laws on webs): a law added, the tolerance law as the run of a web (web_tolerating, web_activity_tolerating, giftWeb_tolerating) with Withholding as k all upstream (web_answers), in Becoming.Tolerance with no new import; the next step names webs whose conditions depend on others. Study section 224. Also: Proof bindings (Tolerance.lean) rebound to core receipt 20261019T235844.485705Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; Tolerance.lean, the tolerance law as the run of a web (web_tolerating, web_answers, giftWeb_tolerating) added; kept statements unchanged; Withholding.lean, prose follows the joins (predicts where it said rests, factor where it said strength) or imports follow the joined modules; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33.",
+      "zh": "2026年10月20日，R33（G7，网上的集体之律）：新增一条规律，容忍律作为网的运行（web_tolerating、web_activity_tolerating、giftWeb_tolerating），k 取全部上游时即 Withholding（web_answers），在 Becoming.Tolerance 中且不加导入；下一步列出条件依赖他者的网。研究第 224 节。另：证明绑定（Tolerance.lean）改到核心回执 20261019T235844.485705Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；Tolerance.lean，新增容忍律作为网的运行（web_tolerating、web_answers、giftWeb_tolerating）；保留的陈述不变；Withholding.lean，说明随并合（以“预测”代“停于”，以“倍率”代“强度”）或导入随并入的模块；保留的陈述不变；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。"
     }
   ]
 }

@@ -380,7 +380,7 @@
         "Becoming.Limit.yesAfter_verifiable",
         "Becoming.Limit.yesFrom_closed"
       ],
-      "sha256": "9dd3ef5cdd9593d672b8e566083400da77891eb7b84b8ef6af0a32627cd7328f"
+      "sha256": "14a4961d46c2925ee55cde73fc94ce44a4eb3f24bee9dcdeca829dff15f4589d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
@@ -416,12 +416,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a"
+      "sha256": "fc0ec66b6808b0435011789f8768f35c6c87896f5438b142f40c5a3d200cf41d"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec"
+      "sha256": "ac9637b5e87f796d9ee96c6a8f42a6a7dba2d9976e12b5b9a71b3478a4199472"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
@@ -434,12 +434,18 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "role": "receipt",
+      "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LimitVerification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LimitVerification",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -508,6 +514,10 @@
     {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Limit.Free.toggle_true (now ListTests.not_ne_self). Removed, with the statement kept under one name: Limit.not_eq_true_of_false (now ListTests.not_eq_true_of_false). Proof bindings (LimitVerification.lean, Prelude.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Enough.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; LimitVerification.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Verification.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Limit.Free.toggle_true（现为 ListTests.not_ne_self）。删去，陈述以一个名称保留：Limit.not_eq_true_of_false（现为 ListTests.not_eq_true_of_false）。证明绑定（LimitVerification.lean、Prelude.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Enough.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；LimitVerification.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Verification.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Proof bindings (LimitVerification.lean) rebound to core receipt 20261019T235844.485705Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; LimitVerification.lean, Limit.Tracks added; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：证明绑定（LimitVerification.lean）改到核心回执 20261019T235844.485705Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；LimitVerification.lean，新增 Limit.Tracks；保留的陈述不变；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
     }
   ]
 }

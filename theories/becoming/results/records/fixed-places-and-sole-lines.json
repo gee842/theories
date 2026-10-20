@@ -650,7 +650,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
       "role": "proof",
-      "sha256": "3a715548d879ab3374975fbbf2d43ab35dbd53dd467b60288c463c5973f75d9a",
+      "sha256": "e903e39c879952c764c92f844355766dcc9641f6decbd3964c24bb75df274c44",
       "declarations": [
         "Becoming.Learning.goAlike_iff_lumped"
       ]
@@ -717,7 +717,7 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a"
+      "sha256": "fc0ec66b6808b0435011789f8768f35c6c87896f5438b142f40c5a3d200cf41d"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -814,6 +814,12 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
+      "role": "receipt",
+      "sha256": "57c0139ea165b67fd429394b5bec52659d195020a5873c68a6d2e8a73ee5d812",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -882,7 +888,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T235844.485705Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LearningRuns",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -965,6 +971,10 @@
     {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Moved with their full names: from HexagramSites.lean to Prelude.lean, Hexagram.and_false_of_true. Proof bindings (HexagramPlaces.lean, HexagramSites.lean, Hexagrams.lean, Learning.lean, LearningRuns.lean, Prelude.lean, Recurrence.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; HexagramPlaces.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; HexagramSites.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Hexagrams.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Learning.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; LearningRuns.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：连同完整名称移动：从 HexagramSites.lean 到 Prelude.lean：Hexagram.and_false_of_true。证明绑定（HexagramPlaces.lean、HexagramSites.lean、Hexagrams.lean、Learning.lean、LearningRuns.lean、Prelude.lean、Recurrence.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；HexagramPlaces.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；HexagramSites.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Hexagrams.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Learning.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；LearningRuns.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Proof bindings (LearningRuns.lean) rebound to core receipt 20261019T235844.485705Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; LearningRuns.lean, pair_first_not_rests and pair_whole_rests renamed pair_first_not_predicts and pair_whole_predicts, statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：证明绑定（LearningRuns.lean）改到核心回执 20261019T235844.485705Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；LearningRuns.lean，pair_first_not_rests、pair_whole_rests 改名 pair_first_not_predicts、pair_whole_predicts，陈述不变。论断不变。"
     }
   ]
 }

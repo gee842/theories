@@ -163,7 +163,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a",
+      "sha256": "fc0ec66b6808b0435011789f8768f35c6c87896f5438b142f40c5a3d200cf41d",
       "declarations": []
     },
     {
@@ -370,6 +370,10 @@
     {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (RuleHandoff.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; RuleHandoff.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（RuleHandoff.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；RuleHandoff.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
     }
   ]
 }
