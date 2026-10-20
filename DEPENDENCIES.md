@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-281 registered results: 262 with a recorded Lean receipt (`recorded-checked`), 13 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 724 curated edges join 235 results to the results they draw on.
+282 registered results: 263 with a recorded Lean receipt (`recorded-checked`), 13 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 728 curated edges join 236 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -19,7 +19,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [a-pattern-lasts-through-passing][] ← <a id="a-pattern-lasts-through-passing--whole-persists-through-generation"></a>[whole-persists-through-generation][]
 - [acquired-binding-compositional-use][] ← <a id="acquired-binding-compositional-use--transition-grouping-word-partition"></a>[transition-grouping-word-partition][]
 - [acquired-revision-of-pending-task][] ← <a id="acquired-revision-of-pending-task--versioned-request-completion"></a>[versioned-request-completion][] · <a id="acquired-revision-of-pending-task--formed-goal-revision-continuation"></a>[formed-goal-revision-continuation][]
-- [alignment-direction-g0-j][] ← <a id="alignment-direction-g0-j--practical-judgment-g0-j"></a>[practical-judgment-g0-j][] *(application)*
+- [alignment-direction-g0-j][] ← <a id="alignment-direction-g0-j--practical-judgment-g0-j"></a>[practical-judgment-g0-j][] *(application)* · <a id="alignment-direction-g0-j--comparison-by-widening"></a>[comparison-by-widening][]
 - [attraction-is-not-returning][] ← <a id="attraction-is-not-returning--recurrence-without-premise"></a>[recurrence-without-premise][]
 - [axiom-decomposition][] ← <a id="axiom-decomposition--presupposition-scopes"></a>[presupposition-scopes][] · <a id="axiom-decomposition--one-axiom-yields-g0"></a>[one-axiom-yields-g0][] · <a id="axiom-decomposition--significance-retained-within-margin"></a>[significance-retained-within-margin][] · <a id="axiom-decomposition--levels-of-closure"></a>[levels-of-closure][] · <a id="axiom-decomposition--feeding-closure"></a>[feeding-closure][] · <a id="axiom-decomposition--metaethical-core-characterization"></a>[metaethical-core-characterization][] *(interpretive)* · <a id="axiom-decomposition--held-lives-g0-is-centering"></a>[held-lives-g0-is-centering][] *(interpretive)*
 - [becoming-context-coherence][] ← <a id="becoming-context-coherence--finite-trace-transport"></a>[finite-trace-transport][]
@@ -210,6 +210,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [testing-within-registration][] ← <a id="testing-within-registration--feedback-and-reach"></a>[feedback-and-reach][] · <a id="testing-within-registration--levels-of-closure"></a>[levels-of-closure][] · <a id="testing-within-registration--closing-needs-net-draw"></a>[closing-needs-net-draw][] · <a id="testing-within-registration--four-cases-of-a-part"></a>[four-cases-of-a-part][]
 - [tests-fix-likeness-where-determined][] ← <a id="tests-fix-likeness-where-determined--configurations-alike-by-relation"></a>[configurations-alike-by-relation][] · <a id="tests-fix-likeness-where-determined--identification-where-bounded"></a>[identification-where-bounded][]
 - [the-gap-for-ones-own-act][] ← <a id="the-gap-for-ones-own-act--selection-through-registration"></a>[selection-through-registration][] · <a id="the-gap-for-ones-own-act--counterfactual-is-the-course"></a>[counterfactual-is-the-course][]
+- [the-run-classes-and-widening][] ← <a id="the-run-classes-and-widening--four-cases-of-a-part"></a>[four-cases-of-a-part][] · <a id="the-run-classes-and-widening--significance-retained-within-margin"></a>[significance-retained-within-margin][] · <a id="the-run-classes-and-widening--life-as-condition-of-life"></a>[life-as-condition-of-life][]
 - [the-split-that-makes-sense][] ← <a id="the-split-that-makes-sense--configurations-alike-by-relation"></a>[configurations-alike-by-relation][] · <a id="the-split-that-makes-sense--projection-carrying-a-law"></a>[projection-carrying-a-law][] · <a id="the-split-that-makes-sense--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="the-split-that-makes-sense--registration-within-what-it-registers"></a>[registration-within-what-it-registers][]
 - [the-world-an-interleaving-builds][] ← <a id="the-world-an-interleaving-builds--the-step-index-from-own-courses"></a>[the-step-index-from-own-courses][] · <a id="the-world-an-interleaving-builds--worlds-are-runs"></a>[worlds-are-runs][]
 - [theory-of-becoming-foundation][] ← <a id="theory-of-becoming-foundation--becoming-context-coherence"></a>[becoming-context-coherence][] *(interpretive)* · <a id="theory-of-becoming-foundation--conditional-foundation-assessment"></a>[conditional-foundation-assessment][] *(interpretive)* · <a id="theory-of-becoming-foundation--control-coherence-loss"></a>[control-coherence-loss][] *(interpretive)*
@@ -470,6 +471,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [testing-within-registration]: theories/becoming/results/records/testing-within-registration.md
 [tests-fix-likeness-where-determined]: theories/becoming/results/records/tests-fix-likeness-where-determined.md
 [the-gap-for-ones-own-act]: theories/becoming/results/records/the-gap-for-ones-own-act.md
+[the-run-classes-and-widening]: theories/becoming/results/records/the-run-classes-and-widening.md
 [the-split-that-makes-sense]: theories/becoming/results/records/the-split-that-makes-sense.md
 [the-step-index-from-own-courses]: theories/becoming/results/records/the-step-index-from-own-courses.md
 [the-world-an-interleaving-builds]: theories/becoming/results/records/the-world-an-interleaving-builds.md

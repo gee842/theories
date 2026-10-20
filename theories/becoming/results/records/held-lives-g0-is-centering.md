@@ -18,6 +18,7 @@
 6. Self-significance already carries each standpoint's significance along any relation into its own region. (`Becoming.Valuation.own_transmission`)
 7. Standpoint neutrality is not the only completion: on a connected whole where every standpoint holds a living claim, self-significance at every standpoint with relational neutrality gives living significance without standpoint neutrality. (`Becoming.Valuation.Connected`, `Becoming.Valuation.reaches`, `Becoming.Valuation.significant_of_transmits`)
 8. Read stepwise with each formation a standpoint whose own region is its own events, every living event is held, so living significance is exactly self-significance at every formation with standpoint neutrality. (`Becoming.Web.held_by_formations`, `Becoming.Web.significant_iff_self`)
+9. With the formations as standpoints, each one's own region its closure under any relation of the unfolding and living and related the stepwise reading, sig is the only evaluative parameter supplied. The own region is the least boundary; every event is held, so living significance is self-significance with standpoint neutrality; the empty relation gives the case above, feeding the feeding closure. (`Becoming.Web.selfValuation`, `Becoming.Web.selfValuation_own_least`, `Becoming.Web.selfValuation_held`, `Becoming.Web.selfValuation_significant_iff`, `Becoming.Web.selfValuation_empty_own`, `Becoming.Web.selfValuation_feeding_own`, `Becoming.Web.selfValuation_of_unrestricted`)
 
 <a id="conditions--条件"></a>
 ## Conditions
@@ -27,6 +28,7 @@
 - significant_of_transmits needs connection and every standpoint holding some living claim.
 - S0, N_std and N_rel are hypotheses, not proved premises; the result says exactly which premises G0 amounts to on held lives and proves none of them.
 - G0 was folded by Ren on 11 October 2026 and is no longer an axiom: on held lives, this characterization is one of the ways Part I states G0 as a condition; the readings of the restatement are decided on Ren's delegation.
+- Standpoints as formations: the laws on valuations hold for any type of standpoints, and this is the instance Pos := F; which relation a center's region is drawn along is supplied, read off the unfolding, not derived.
 
 <a id="does-not-show--未表明"></a>
 ## Does not show
@@ -83,6 +85,7 @@ Ren's proposal says “it can be anything that want's its continuation to have s
 
 | Role | Source | Declarations |
 |---|---|---|
+| proof | [Boundaries.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean) | `Becoming.Web.selfValuation`, `Becoming.Web.selfValuation_own_least`, `Becoming.Web.selfValuation_held`, `Becoming.Web.selfValuation_significant_iff`, `Becoming.Web.selfValuation_empty_own`, `Becoming.Web.selfValuation_feeding_own`, `Becoming.Web.selfValuation_of_unrestricted` |
 | proof | [Standpoints.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean) | `Becoming.Valuation.Held`, `Becoming.Valuation.Unheld`, `Becoming.Valuation.significant_iff_held`, `Becoming.Valuation.significant_iff_reached`, `Becoming.Valuation.own_transmission`, `Becoming.Valuation.significant_of_transmits`, `Becoming.Web.held_by_formations`, `Becoming.Web.significant_iff_self`, `Becoming.Apart.own`, `Becoming.Apart.valuation`, `Becoming.Apart.not_enough`, `Becoming.Unclaimed.own`, `Becoming.Unclaimed.valuation`, `Becoming.Unclaimed.held_is_needed`, `Becoming.Relayed.related`, `Becoming.Relayed.valuation`, `Becoming.Relayed.transmission_is_needed` |
 | proof | [Metaethics.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | `Becoming.Valuation`, `Becoming.Valuation.SelfSignificance`, `Becoming.Valuation.transmits`, `Becoming.Valuation.shares`, `Becoming.Valuation.Significant`, `Becoming.Neutral`, `Becoming.Within` |
 | proof | [ValuationFrames.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean) | `Becoming.Valuation.Connected`, `Becoming.Valuation.reaches` |
@@ -99,6 +102,7 @@ Ren's proposal says “it can be anything that want's its continuation to have s
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json) | — |
 
 Aliases: `Becoming.Valuation.Held`, `Becoming.Valuation.Unheld`, `Becoming.Valuation.significant_iff_held`, `Becoming.Valuation.significant_iff_reached`, `Becoming.Valuation.own_transmission`, `Becoming.Valuation.significant_of_transmits`, `Becoming.Web.held_by_formations`, `Becoming.Web.significant_iff_self`, `Becoming.Apart.not_enough`, `Becoming.Unclaimed.held_is_needed`, `Becoming.Relayed.transmission_is_needed`
 
@@ -125,6 +129,7 @@ Aliases: `Becoming.Valuation.Held`, `Becoming.Valuation.Unheld`, `Becoming.Valua
 - 20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (ValuationFrames.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; ValuationFrames.lean, C on frames moved to Extension.lean. The claim is unchanged.
 - 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.
 - 20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.
+- 20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): A law added (D3 and F7 of the twentieth review): standpoints as formations with each one's own region its closure under a relation of the unfolding (Web.selfValuation and its laws, Boundaries.lean), so that sig is the only supplied evaluative parameter; with a premise naming the instance. The earlier laws are unchanged. Also: Proof bindings (Metaethics.lean, Standpoints.lean, ValuationFrames.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; Metaethics.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged; Standpoints.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged; ValuationFrames.lean, LivingSignificance moved to Extension, unchanged; kept statements unchanged.
 - 52 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](held-lives-g0-is-centering.json).
 
 <a id="earlier-text--早期文本"></a>

@@ -80,6 +80,7 @@ Aliases: `learning is tracking in the limit`, `学习是极限中的跟随`, `tr
 ### History
 
 - 20 October 2026: added (R33, G5 of the twentieth review, learning in the limit joined): Limit.Tracks and the bridge from learning through a map to tracking and identification in the limit, with Merge; study section 224.
+- 20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.
 
 </details>
 
