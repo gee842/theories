@@ -1,11 +1,11 @@
 {
- "commit": "fc98eb36d6be7fe2e582f7e6c18b47cb2c0fb06b",
+ "commit": "fa43f6d539579fa74c5120de25cf02270985c77b",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261020T091125.435056Z",
+ "core_receipt_at_commit": "20261020T093308.742793Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
  "tracked_modules": 289,
- "constants": 36221,
- "spine_theorems": 11680,
+ "constants": 36262,
+ "spine_theorems": 11690,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -26,19 +26,19 @@
   "Process reaches World family": false
  },
  "classes": {
-  "statement on both families": 926,
-  "statement on Process/Frame/Run/Trace": 2876,
-  "statement on World/Flow/Web": 2674,
+  "statement on both families": 927,
+  "statement on Process/Frame/Run/Trace": 2877,
+  "statement on World/Flow/Web": 2682,
   "statement on the base only through a law of its own module": 180,
   "proof through a base family": 154,
-  "used by a theorem on the base": 4202,
+  "used by a theorem on the base": 4206,
   "instance on the base recorded": 150,
-  "apart: own vocabulary": 484,
+  "apart: own vocabulary": 480,
   "apart: prelude-only statement": 34
  },
- "apart": 518,
+ "apart": 514,
  "apart_general_structure_by_design": 88,
- "apart_otherwise": 430,
+ "apart_otherwise": 426,
  "pure_forwarders": {
   "spine theorems that are pure forwarders": 56,
   "of them on the base": 49,
@@ -71,10 +71,10 @@
   "Becoming.Attraction": 4,
   "Becoming.Recurrence": 3
  },
- "apart_used_by_nothing": 362,
- "apart_roots": 363,
+ "apart_used_by_nothing": 361,
+ "apart_roots": 362,
  "apart_roots_by_category": {
-  "model-witness": 211,
+  "model-witness": 210,
   "support": 81,
   "general-structure": 50,
   "logical-strength": 10,
@@ -106,11 +106,11 @@
   "Becoming.Sampling": 15,
   "Becoming.Descent": 15,
   "Becoming.Entropy": 14,
+  "Becoming.Direction": 10,
   "Becoming.CourseRoles": 10,
   "Becoming.PlaceTransitionNets": 10,
   "Becoming.Listing": 9,
   "Becoming.Interleavings": 9,
-  "Becoming.Direction": 9,
   "Becoming.Joint": 8,
   "Becoming.LabelledRoles": 8,
   "Becoming.Regrouping": 8,
@@ -158,10 +158,6 @@
    23,
    98
   ],
-  "Becoming.Frontier": [
-   22,
-   70
-  ],
   "Becoming.SelectionTerm": [
    20,
    67
@@ -169,6 +165,10 @@
   "Becoming.HexagramPlaces": [
    20,
    109
+  ],
+  "Becoming.Frontier": [
+   18,
+   70
   ],
   "Becoming.Reproduction": [
    16,
@@ -542,17 +542,17 @@
  "rings": {
   "core": {
    "modules": 273,
-   "theorems": 10934,
-   "apart": 438,
+   "theorems": 10944,
+   "apart": 434,
    "classes": {
-    "statement on both families": 912,
-    "statement on Process/Frame/Run/Trace": 2665,
-    "statement on World/Flow/Web": 2649,
+    "statement on both families": 913,
+    "statement on Process/Frame/Run/Trace": 2666,
+    "statement on World/Flow/Web": 2657,
     "statement on the base only through a law of its own module": 134,
     "proof through a base family": 143,
-    "used by a theorem on the base": 3843,
+    "used by a theorem on the base": 3847,
     "instance on the base recorded": 150,
-    "apart: own vocabulary": 405,
+    "apart: own vocabulary": 401,
     "apart: prelude-only statement": 33
    }
   },
@@ -4998,6 +4998,7 @@
   "Becoming.Web.UnderminingOn.exceeded": "statement on World/Flow/Web",
   "Becoming.Web.Includes.not_undermining": "statement on World/Flow/Web",
   "Becoming.Web.UnderminingOn.not_retains": "statement on World/Flow/Web",
+  "Becoming.Web.inactive_of_not_arising": "statement on World/Flow/Web",
   "Becoming.Flow.retains_iff_within_margin_at": "statement on World/Flow/Web",
   "Becoming.Flow.loses_iff_beyond_margin_at": "statement on World/Flow/Web",
   "Becoming.Flow.adds_iff_within_margin_at": "statement on World/Flow/Web",
@@ -5010,10 +5011,16 @@
   "Becoming.Flow.Balances.not_narrows_of_renewed": "statement on World/Flow/Web",
   "Becoming.Flow.Balances.includes_of_renewingIn": "statement on World/Flow/Web",
   "Becoming.Flow.Balances.narrows_of_consumed": "statement on World/Flow/Web",
+  "Becoming.Flow.Balances.keeps_of_inactive": "statement on World/Flow/Web",
+  "Becoming.Flow.Balances.keeps_of_not_arising": "statement on World/Flow/Web",
   "Becoming.Preemption.withheld": "statement on World/Flow/Web",
   "Becoming.Preemption.within_renewal_yet_loses": "statement on World/Flow/Web",
   "Becoming.Preemption.renewingAt_consuming_narrows": "statement on World/Flow/Web",
   "Becoming.Untaken.consuming_keeps": "statement on World/Flow/Web",
+  "Becoming.ArisingDrawer.withheld": "statement on World/Flow/Web",
+  "Becoming.ArisingDrawer.arises_narrows": "statement on World/Flow/Web",
+  "Becoming.ArisingGiver.withheld": "statement on World/Flow/Web",
+  "Becoming.ArisingGiver.arises_widens": "statement on World/Flow/Web",
   "Becoming.Web.WidensWithin.exceeds": "statement on World/Flow/Web",
   "Becoming.Web.WidensWithin.not_keeps": "statement on World/Flow/Web",
   "Becoming.Web.WidensWithin.not_narrowed": "statement on World/Flow/Web",
@@ -10406,10 +10413,10 @@
   "Becoming.Requirement.Formation.amount_recovers_basis": "used by a theorem on the base",
   "Becoming.Requirement.Formation.eq_zero_of_sub_eq": "used by a theorem on the base",
   "Becoming.Requirement.Formation.sub_lt_sub_of_lt": "used by a theorem on the base",
-  "Becoming.Requirement.Handover.keep_above_expansion": "apart: own vocabulary",
-  "Becoming.Requirement.Handover.expansion_has_real_gain": "apart: own vocabulary",
-  "Becoming.Requirement.Handover.transfer_above_keep": "apart: own vocabulary",
-  "Becoming.Requirement.Handover.transfer_above_expansion": "apart: own vocabulary",
+  "Becoming.Requirement.Handover.keep_above_expansion": "used by a theorem on the base",
+  "Becoming.Requirement.Handover.expansion_has_real_gain": "used by a theorem on the base",
+  "Becoming.Requirement.Handover.transfer_above_keep": "used by a theorem on the base",
+  "Becoming.Requirement.Handover.transfer_above_expansion": "used by a theorem on the base",
   "Becoming.Requirement.Handover.expansion_excluded": "apart: own vocabulary",
   "Becoming.Requirement.Handover.served": "apart: own vocabulary",
   "Becoming.Requirement.Handover.undelivered_fails": "apart: own vocabulary",
@@ -10484,6 +10491,9 @@
   "Becoming.Direction.narrowed_not_chosen": "statement on both families",
   "Becoming.Direction.widening_not_not_better": "statement on both families",
   "Becoming.Direction.widening_selected_by_pool": "statement on World/Flow/Web",
+  "Becoming.Direction.exchange_widening_selected_by_pool": "statement on World/Flow/Web",
+  "Becoming.Direction.exchange_direction": "statement on both families",
+  "Becoming.Requirement.Handover.direction": "statement on Process/Frame/Run/Trace",
   "Becoming.Web.unrestricted_iff_grounds_beyond": "statement on both families",
   "Becoming.Direction.grounded_widening_selected": "statement on both families",
   "Becoming.Clearing.spared_widens": "statement on World/Flow/Web",

@@ -577,11 +577,6 @@
    "category": "model-witness",
    "reason": "a fact about the constructed handover model: expansion is off the lexical frontier (AlignmentDirection, ported by F3J)"
   },
-  "Becoming.Requirement.Handover.expansion_has_real_gain": {
-   "module": "Becoming.Frontier",
-   "category": "model-witness",
-   "reason": "a fact about the constructed handover model: expansion realizes a gain the alternative lacks (AlignmentDirection, ported by F3J)"
-  },
   "Becoming.Requirement.Handover.served": {
    "module": "Becoming.Frontier",
    "category": "model-witness",
