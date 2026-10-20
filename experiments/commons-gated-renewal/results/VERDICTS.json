@@ -1,0 +1,485 @@
+{
+ "A1": {
+  "verdict": "passed",
+  "checks": {
+   "steps": 559430000,
+   "balance_viol": 0,
+   "gate_given_below": 0,
+   "margin_checked": 564877100,
+   "margin_viol": 0,
+   "je_windows": 5138957,
+   "je_viol": 0,
+   "episodes": 5447100
+  }
+ },
+ "B1": {
+  "verdict": "passed",
+  "margin_checked": 564877100,
+  "margin_viol": 0
+ },
+ "A2": {
+  "verdict": "passed",
+  "gap1": {
+   "crosses": [
+    [
+     0,
+     1
+    ]
+   ],
+   "alone": {
+    "steps": 30000,
+    "balance_viol": 0,
+    "gate_given_below": 141,
+    "margin_checked": 30100,
+    "margin_viol": 0,
+    "je_windows": 679,
+    "je_viol": 679,
+    "episodes": 100
+   },
+   "union": {
+    "steps": 30000,
+    "balance_viol": 0,
+    "gate_given_below": 0,
+    "margin_checked": 30100,
+    "margin_viol": 0,
+    "je_windows": 0,
+    "je_viol": 0,
+    "episodes": 100
+   },
+   "runs_regrew_after_zero": 100
+  },
+  "gap2": {
+   "crosses": [],
+   "alone": {
+    "steps": 30000,
+    "balance_viol": 0,
+    "gate_given_below": 0,
+    "margin_checked": 30100,
+    "margin_viol": 0,
+    "je_windows": 656,
+    "je_viol": 0,
+    "episodes": 100
+   },
+   "runs_regrew_after_zero": 0
+  }
+ },
+ "B2": {
+  "verdict": "passed",
+  "rows": [
+   {
+    "q": 0.5,
+    "bound": 45.0,
+    "mean_collapse": 24.487,
+    "censored": 0,
+    "runs": 1000
+   },
+   {
+    "q": 0.7,
+    "bound": 22.5,
+    "mean_collapse": 15.967,
+    "censored": 0,
+    "runs": 1000
+   },
+   {
+    "q": 1.0,
+    "bound": 12.857,
+    "mean_collapse": 10.336,
+    "censored": 0,
+    "runs": 1000
+   }
+  ]
+ },
+ "sanity_c": {
+  "own_mean_eval_harvest": 16.596,
+  "harvest_always_mean": 10.45,
+  "learned": true
+ },
+ "C1": {
+  "verdict": "not testable",
+  "own_last_step_harvest_rate": null,
+  "coupled_last_step_harvest_rate": null,
+  "decisions": [
+   0,
+   0
+  ]
+ },
+ "C2": {
+  "verdict": "failed",
+  "own": {
+   "mean_final": 0.0,
+   "dead_rate": 1.0
+  },
+  "coupled": {
+   "mean_final": 0.0,
+   "survival": 0.0
+  }
+ },
+ "C3": {
+  "verdict": "failed",
+  "own_alive_at_H_minus_20": 0.0
+ },
+ "C_detail": {
+  "own": {
+   "runs": 20,
+   "last_step_decisions": 0,
+   "last_step_harvest_rate": null,
+   "mean_final": 0.0,
+   "dead_rate": 1.0,
+   "survival": 0.0,
+   "alive_at_probe": 0.0,
+   "mean_eval_harvest": 16.596,
+   "per_seed_survival": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "coupled": {
+   "runs": 20,
+   "last_step_decisions": 0,
+   "last_step_harvest_rate": null,
+   "mean_final": 0.0,
+   "dead_rate": 1.0,
+   "survival": 0.0,
+   "alive_at_probe": 0.0,
+   "mean_eval_harvest": 16.56225,
+   "per_seed_survival": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "D1": {
+  "verdict": "failed",
+  "seeds_identical": 10,
+  "seeds": 10,
+  "B_mean_final": {
+   "B_own": 0.0,
+   "B_coupled": 0.0
+  }
+ },
+ "D2a": {
+  "verdict": "passed",
+  "survival": {
+   "own3": 0.0,
+   "c1own2": 0.0,
+   "c2own1": 0.0,
+   "c3": 0.0,
+   "own2": 0.0,
+   "own1": 0.0,
+   "c1": 0.0
+  }
+ },
+ "D2b": {
+  "verdict": "failed",
+  "survival": {
+   "own3": 0.0,
+   "c1own2": 0.0,
+   "c2own1": 0.0,
+   "c3": 0.0,
+   "own2": 0.0,
+   "own1": 0.0,
+   "c1": 0.0
+  }
+ },
+ "D_detail": {
+  "own3": {
+   "runs": 20,
+   "last_step_decisions": 0,
+   "last_step_harvest_rate": null,
+   "mean_final": 0.0,
+   "dead_rate": 1.0,
+   "survival": 0.0,
+   "alive_at_probe": 0.0,
+   "mean_eval_harvest": 9.389,
+   "per_seed_survival": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "c1own2": {
+   "runs": 20,
+   "last_step_decisions": 0,
+   "last_step_harvest_rate": null,
+   "mean_final": 0.0,
+   "dead_rate": 1.0,
+   "survival": 0.0,
+   "alive_at_probe": 0.0,
+   "mean_eval_harvest": 9.36,
+   "per_seed_survival": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "c2own1": {
+   "runs": 20,
+   "last_step_decisions": 0,
+   "last_step_harvest_rate": null,
+   "mean_final": 0.0,
+   "dead_rate": 1.0,
+   "survival": 0.0,
+   "alive_at_probe": 0.0,
+   "mean_eval_harvest": 9.361,
+   "per_seed_survival": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "c3": {
+   "runs": 20,
+   "last_step_decisions": 0,
+   "last_step_harvest_rate": null,
+   "mean_final": 0.0,
+   "dead_rate": 1.0,
+   "survival": 0.0,
+   "alive_at_probe": 0.0,
+   "mean_eval_harvest": 9.37925,
+   "per_seed_survival": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "own2": {
+   "runs": 20,
+   "last_step_decisions": 0,
+   "last_step_harvest_rate": null,
+   "mean_final": 0.0,
+   "dead_rate": 1.0,
+   "survival": 0.0,
+   "alive_at_probe": 0.0,
+   "mean_eval_harvest": 9.63225,
+   "per_seed_survival": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "own1": {
+   "runs": 20,
+   "last_step_decisions": 0,
+   "last_step_harvest_rate": null,
+   "mean_final": 0.0,
+   "dead_rate": 1.0,
+   "survival": 0.0,
+   "alive_at_probe": 0.0,
+   "mean_eval_harvest": 17.71175,
+   "per_seed_survival": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "c1": {
+   "runs": 20,
+   "last_step_decisions": 0,
+   "last_step_harvest_rate": null,
+   "mean_final": 0.0,
+   "dead_rate": 1.0,
+   "survival": 0.0,
+   "alive_at_probe": 0.0,
+   "mean_eval_harvest": 17.71025,
+   "per_seed_survival": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "E1": {
+  "verdict": "passed",
+  "cells": 40
+ },
+ "E2": {
+  "verdict": "passed",
+  "min_margin": 0
+ },
+ "E3": {
+  "verdict": "passed",
+  "adversary_exit_seeds_of_10": {
+   "ell=0,late_return": 10,
+   "ell=0,learned": 10,
+   "ell=1,late_return": 10,
+   "ell=1,learned": 10,
+   "ell=2,late_return": 10,
+   "ell=2,learned": 10,
+   "ell=3,late_return": 10,
+   "ell=3,learned": 10
+  }
+ },
+ "E_random_rest_exit_rate": {
+  "ell=0,narrow,late_return": 1.0,
+  "ell=0,narrow,learned": 1.0,
+  "ell=0,wide,late_return": 0.0,
+  "ell=0,wide,learned": 1.0,
+  "ell=1,narrow,late_return": 0.977,
+  "ell=1,narrow,learned": 1.0,
+  "ell=1,wide,late_return": 0.0,
+  "ell=1,wide,learned": 0.9994999999999999,
+  "ell=2,narrow,late_return": 0.6400000000000001,
+  "ell=2,narrow,learned": 0.9744999999999999,
+  "ell=2,wide,late_return": 0.0,
+  "ell=2,wide,learned": 0.9345000000000001,
+  "ell=3,narrow,late_return": 0.2705,
+  "ell=3,narrow,learned": 0.6,
+  "ell=3,wide,late_return": 0.0,
+  "ell=3,wide,learned": 0.37849999999999995
+ }
+}

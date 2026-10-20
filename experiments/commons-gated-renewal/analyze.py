@@ -106,9 +106,16 @@ def main():
         out["sanity_c"] = dict(own_mean_eval_harvest=own["mean_eval_harvest"],
                                harvest_always_mean=always, learned=learned)
         nt = "not testable"
+        # Correction after the runs (report, correction 1): the frozen rule did not foresee a
+        # side with no last-step decision at all; such a side is not testable, never passed.
+        if not learned or own["last_step_harvest_rate"] is None \
+                or cou["last_step_harvest_rate"] is None:
+            c1 = nt
+        else:
+            c1 = verdict(own["last_step_harvest_rate"] >= 0.95
+                         and cou["last_step_harvest_rate"] <= 0.05)
         out["C1"] = dict(
-            verdict=(verdict(own["last_step_harvest_rate"] >= 0.95
-                             and cou["last_step_harvest_rate"] <= 0.05) if learned else nt),
+            verdict=c1,
             own_last_step_harvest_rate=own["last_step_harvest_rate"],
             coupled_last_step_harvest_rate=cou["last_step_harvest_rate"],
             decisions=(own["last_step_decisions"], cou["last_step_decisions"]))
