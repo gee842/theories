@@ -1,0 +1,648 @@
+[
+ {
+  "worktree": ".claude/worktrees/a2-chain",
+  "head": "2343c774a",
+  "branch": "a2-landing2",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 31,
+  "dirty_sample": [
+   "M _process/BECOMING-WORKBOARD.md",
+   " M _process/architecture/generated-manifest.json",
+   " M _process/history/workboard/BECOMING-WORKBOARD-2026-10-11_to_2026-10-17.md",
+   " M _process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md"
+  ],
+  "folder_mtime": "2026-10-19 02:47"
+ },
+ {
+  "worktree": ".claude/worktrees/agent-ab333e386f6f59ce1",
+  "head": "cb1be1f3c",
+  "branch": "worktree-agent-ab333e386f6f59ce1",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-20 01:27"
+ },
+ {
+  "worktree": ".claude/worktrees/agent-ae45fd9075b02ccd6",
+  "head": "87ecfdee5",
+  "branch": "worktree-agent-ae45fd9075b02ccd6",
+  "locked": true,
+  "ancestor_of_main": true,
+  "dirty_entries": 12,
+  "dirty_sample": [
+   "M experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+   " M experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+   " M experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+   " M experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean"
+  ],
+  "folder_mtime": "2026-10-20 01:32"
+ },
+ {
+  "worktree": ".claude/worktrees/charming-kirch-c0f953",
+  "head": "a4f936597",
+  "branch": "claude/charming-kirch-c0f953",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 21:14"
+ },
+ {
+  "worktree": ".claude/worktrees/compassionate-heisenberg-112724",
+  "head": "14124cfaa",
+  "branch": "claude/compassionate-heisenberg-112724",
+  "locked": false,
+  "ancestor_of_main": false,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 15:52",
+  "merge_base": "a12e7cc67",
+  "commits_not_on_main": [
+   "14124cfaa 2026-10-19 Z1 text: section 9 receipt sentence names Z1's run (main a12e7cc67), records re-pointed once with an undated count note; reland kit (apply_",
+   "f7289507a 2026-10-19 Z1 text: record relative-position-is-zero-sum, study section 196, chapter bullet in section 6 (en, zh) and section 8.2/9 counts, four recor",
+   "4e9a133dd 2026-10-19 Z1 package: Becoming.RelativePosition (the game of relative position: zero-sum as counting, the dependence that ends a part at a race's end"
+  ],
+  "cherry": {
+   "equivalent_on_main(-)": 0,
+   "not_on_main(+)": 3
+  },
+  "files_changed_on_branch": 69,
+  "same_blob_on_main": 9,
+  "main_changed_since_base": 42,
+  "only_on_branch": 18,
+  "deleted_on_branch": 0,
+  "detail_sample": [
+   "main-changed-since-base: DEPENDENCIES.md",
+   "main-changed-since-base: README.md",
+   "main-changed-since-base: RESULTS.md",
+   "main-changed-since-base: _process/architecture/generated-manifest.json",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/INDEX.md",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/check-z1.log",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/checker-z1.log",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/connectivity-z1.log",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/links-z1.log",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/make_record.py",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/reland.sh",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/render-z1.log",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/study_z1.txt",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/z1-relative-position/test-z1.log",
+   "main-changed-since-base: _process/research/README.md",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/Becoming.PreludeOnly.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/Becoming.RelativePosition.PreludeOnly.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/Becoming.RelativePosition.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/Becoming.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/Becoming.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/BecomingAxiomAudit.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083809.972869Z/BecomingAxiomAudit.log"
+  ]
+ },
+ {
+  "worktree": ".claude/worktrees/distracted-chaum-d62756",
+  "head": "1f65714dc",
+  "branch": "u5-passage",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 20:49"
+ },
+ {
+  "worktree": ".claude/worktrees/elastic-blackwell-ada9d9",
+  "head": "9b45c889f",
+  "branch": "claude/elastic-blackwell-ada9d9",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-18 18:55"
+ },
+ {
+  "worktree": ".claude/worktrees/elegant-dewdney-177e7a",
+  "head": "350775007",
+  "branch": "t1-land6",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 19:25"
+ },
+ {
+  "worktree": ".claude/worktrees/epic-austin-da8891",
+  "head": "0d6e9b67f",
+  "branch": "claude/epic-austin-da8891",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 5,
+  "dirty_sample": [
+   "?? experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090639.306226Z/",
+   "?? experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T091415.197836Z/",
+   "?? experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092140.105515Z/",
+   "?? experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T103629.052124Z/"
+  ],
+  "folder_mtime": "2026-10-19 20:18"
+ },
+ {
+  "worktree": ".claude/worktrees/f3c-correction-45e3eb",
+  "head": "1c35994b0",
+  "branch": "claude/f3c-correction-45e3eb",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 06:52"
+ },
+ {
+  "worktree": ".claude/worktrees/f3e-explanatory-65da83",
+  "head": "b2d7e628f",
+  "branch": "claude/f3e-explanatory-65da83",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 05:54"
+ },
+ {
+  "worktree": ".claude/worktrees/f3j-judgment-cd75fa",
+  "head": "529fae88f",
+  "branch": "claude/f3j-judgment-cd75fa",
+  "locked": false,
+  "ancestor_of_main": false,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 00:01",
+  "merge_base": "5368903bc",
+  "commits_not_on_main": [
+   "529fae88f 2026-10-19 F3J: land_j.py takes a per-module anchor; apart_j.py registers sub-chains 2 and 3's apart roots",
+   "cceb1b97b 2026-10-19 F3J: RenewalBound is L3 in the root's module notes (it imports Becoming.Renewal, an L3 module)",
+   "42c629a0c 2026-10-19 F3J: land_j.py (README and chapter reference rows) and apart_j.py (apart-root register entries), as used for sub-chain 1's landing",
+   "b690a98a0 2026-10-19 F3J: map_s1 points PracticalArticulation at Alternatives.Articulation (the namespaced name)",
+   "952902caa 2026-10-19 F3J sub-chains 2 and 3: PositiveGround, ProfileReach, RenewalBound, Handoff, RuleHandoff in CORE and the root",
+   "632f0527c 2026-10-19 F3J sub-chain 3 (WIP): Becoming.RuleHandoff restates OrganizationalRuleInheritance with the Instances governance section and the RuleHandof",
+   "c2a56c838 2026-10-19 F3J sub-chain 2 (WIP): Becoming.RenewalBound (ContinuationRenewal + DescentRenewalRuns) and Becoming.Handoff (OpenFutureRevision + bridge o",
+   "23113532a 2026-10-19 F3J sub-chain 2 (WIP): Becoming.ProfileReach restates EvaluatorGrounding, its profile valuation and the SeedReachProcesses join declaration",
+   "92966309f 2026-10-19 F3J sub-chain 2 (WIP): Becoming.PositiveGround restates PositiveGroundUncertainty and PositionedPositiveReason with their bridge and join d",
+   "7d1ae8460 2026-10-19 F3J: rebind tool applies the sub-chain maps named on the command line (default map_s1)",
+   "1e4d1a884 2026-10-19 F3J sub-chain 1: core modules Lexical, Frontier (Requirement), ScoreRepresentation, Alternatives, Bundles, Narrowing in CORE; grading port-",
+   "3423414f0 2026-10-19 F3J WIP: core modules Lexical, Frontier, ScoreRepresentation, Alternatives, Bundles"
+  ],
+  "cherry": {
+   "equivalent_on_main(-)": 8,
+   "not_on_main(+)": 4
+  },
+  "files_changed_on_branch": 20,
+  "same_blob_on_main": 9,
+  "main_changed_since_base": 11,
+  "only_on_branch": 0,
+  "deleted_on_branch": 0,
+  "detail_sample": [
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBound.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py"
+  ]
+ },
+ {
+  "worktree": ".claude/worktrees/f3q-inquiry-b33c94",
+  "head": "0217baa38",
+  "branch": "claude/f3q-inquiry-b33c94",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 1,
+  "dirty_sample": [
+   "?? _process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/checks-q/links-q.log"
+  ],
+  "folder_mtime": "2026-10-19 04:05"
+ },
+ {
+  "worktree": ".claude/worktrees/f3r-renewal-7dcd3a",
+  "head": "3f89c9114",
+  "branch": "claude/f3r-renewal-7dcd3a",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 03:46"
+ },
+ {
+  "worktree": ".claude/worktrees/friendly-ellis-b2bb3b",
+  "head": "1cda44a6e",
+  "branch": "claude/friendly-ellis-b2bb3b",
+  "locked": false,
+  "ancestor_of_main": false,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-18 21:16",
+  "merge_base": "08188907c",
+  "commits_not_on_main": [
+   "1cda44a6e 2026-10-18 W step 1 as an executable plan: study §180.6-§180.12 rewritten (W1 the base and the cut, cycle-checked; W2 the 23 mixed modules the world s",
+   "c757c5ab8 2026-10-18 W step 1: study §180, where the spine's import tree starts and a plan to start it at the one unfolding; data and tools in development/reroo"
+  ],
+  "cherry": {
+   "equivalent_on_main(-)": 0,
+   "not_on_main(+)": 2
+  },
+  "files_changed_on_branch": 18,
+  "same_blob_on_main": 15,
+  "main_changed_since_base": 3,
+  "only_on_branch": 0,
+  "deleted_on_branch": 0,
+  "detail_sample": [
+   "main-changed-since-base: _process/BECOMING-WORKBOARD.md",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/README.md"
+  ]
+ },
+ {
+  "worktree": ".claude/worktrees/g1",
+  "head": "0e48a75d3",
+  "branch": "g5-changing-coupling",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 1,
+  "dirty_sample": [
+   "?? experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T003531.346236Z/"
+  ],
+  "folder_mtime": "2026-10-19 07:39"
+ },
+ {
+  "worktree": ".claude/worktrees/goofy-kare-2b3f12",
+  "head": "d6faa226e",
+  "branch": "sc-reland",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 21:20"
+ },
+ {
+  "worktree": ".claude/worktrees/goofy-villani-c8882d",
+  "head": "f8635d18a",
+  "branch": "claude/goofy-villani-c8882d",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 21:31"
+ },
+ {
+  "worktree": ".claude/worktrees/great-stonebraker-6e3c8b",
+  "head": "f1811e2bd",
+  "branch": "claude/great-stonebraker-6e3c8b",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 1,
+  "dirty_sample": [
+   "?? experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T074455.873936Z/"
+  ],
+  "folder_mtime": "2026-10-19 18:09"
+ },
+ {
+  "worktree": ".claude/worktrees/inspiring-shtern-118c44",
+  "head": "c9994fe97",
+  "branch": "sg-landing",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 17:32"
+ },
+ {
+  "worktree": ".claude/worktrees/keen-jemison-dd6641",
+  "head": "52e6b542f",
+  "branch": "claude/keen-jemison-dd6641",
+  "locked": false,
+  "ancestor_of_main": false,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 20:33",
+  "merge_base": "1f65714dc",
+  "commits_not_on_main": [
+   "52e6b542f 2026-10-19 RC kit: board_move.py corrects the aside in the item cell, where it is",
+   "40164ba32 2026-10-19 RC kit: board_move.py, RC's row to the history file in the landing commit with its state built from the receipt and connectivity log, the a",
+   "df7c6a72c 2026-10-19 RC kit: update_goal.py, the scope record of the Chinese sources after RC lands (its record joins the results, capture through the rule join",
+   "2f68daada 2026-10-19 RC kit: rehearsed on f91a7ead0 after SC, RH and RO2 — patch_ro goes through build_passages.py's FIXES (RO2's guard), apply_text writes only",
+   "92e501704 2026-10-19 RC landing kit: study section text, chapter paragraph (en) and bullet (zh), readings decision (en, zh), apply_text.py, patch_ro.py (RO's pa",
+   "657919799 2026-10-19 RC verified on the branch: Becoming.RuleCapture (53 theorems, 74 declarations, empty axiom reports; dry core run 20261019T140540.806407Z pa"
+  ],
+  "cherry": {
+   "equivalent_on_main(-)": 0,
+   "not_on_main(+)": 6
+  },
+  "files_changed_on_branch": 28,
+  "same_blob_on_main": 24,
+  "main_changed_since_base": 4,
+  "only_on_branch": 0,
+  "deleted_on_branch": 0,
+  "detail_sample": [
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY-APART.json",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py"
+  ]
+ },
+ {
+  "worktree": ".claude/worktrees/keen-margulis-c70e97",
+  "head": "1525ca99e",
+  "branch": "claude/keen-margulis-c70e97",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-20 00:11"
+ },
+ {
+  "worktree": ".claude/worktrees/kind-villani-601d6d",
+  "head": "22936f729",
+  "branch": "a3-landing",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 05:58"
+ },
+ {
+  "worktree": ".claude/worktrees/modest-solomon-0b03b5",
+  "head": "3ced2ba23",
+  "branch": "claude/modest-solomon-0b03b5",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 19:08"
+ },
+ {
+  "worktree": ".claude/worktrees/n6-reading",
+  "head": "ba1ea3f8b",
+  "branch": "n6-reading",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 1,
+  "dirty_sample": [
+   "?? _process/research/2026-10-05-generative-foundation-review/root-foundation/development/n6-reading/checks/"
+  ],
+  "folder_mtime": "2026-10-19 07:06"
+ },
+ {
+  "worktree": ".claude/worktrees/objective-lehmann-38f2c4",
+  "head": "0920c8f4b",
+  "branch": "claude/objective-lehmann-38f2c4",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 18:39"
+ },
+ {
+  "worktree": ".claude/worktrees/quirky-tesla-634712",
+  "head": "bc1b19159",
+  "branch": "claude/quirky-tesla-634712",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 16:03"
+ },
+ {
+  "worktree": ".claude/worktrees/quizzical-ritchie-961d58",
+  "head": "9a433b1b9",
+  "branch": "e1-land",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 17:10"
+ },
+ {
+  "worktree": ".claude/worktrees/reverent-tu-7f9353",
+  "head": "b31bf5a58",
+  "branch": "claude/reverent-tu-7f9353",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 18:06"
+ },
+ {
+  "worktree": ".claude/worktrees/trusting-ptolemy-25244b",
+  "head": "80ef86bdc",
+  "branch": "claude/trusting-ptolemy-25244b",
+  "locked": false,
+  "ancestor_of_main": false,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 14:20",
+  "merge_base": "b88c2d972",
+  "commits_not_on_main": [
+   "80ef86bdc 2026-10-19 R20: nineteenth review (read-only, no Lean built): statements against the Lean and readings against their scope for §6.15, §6.8, §6.9, §6.1",
+   "15c2d01f1 2026-10-19 Board: claim R20, the nineteenth review (read-only)"
+  ],
+  "cherry": {
+   "equivalent_on_main(-)": 0,
+   "not_on_main(+)": 2
+  },
+  "files_changed_on_branch": 3,
+  "same_blob_on_main": 1,
+  "main_changed_since_base": 2,
+  "only_on_branch": 0,
+  "deleted_on_branch": 0,
+  "detail_sample": [
+   "main-changed-since-base: _process/BECOMING-WORKBOARD.md",
+   "main-changed-since-base: theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+  ]
+ },
+ {
+  "worktree": ".claude/worktrees/unruffled-mendeleev-6f6ba1",
+  "head": "d379d97d1",
+  "branch": "claude/strange-kepler-b3b52e",
+  "locked": false,
+  "ancestor_of_main": false,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 20:48",
+  "merge_base": "95da974ba",
+  "commits_not_on_main": [
+   "d379d97d1 2026-10-19 RG kit: board_move.py anchors on the end of the landed list in the queue note (RC's board commit changed its tail), as landed in ce980ac0a",
+   "c238e1643 2026-10-19 RG kit: update_goal.py brings the goal record chinese-sources-and-becoming up to RG on top of RC's version (record appended to result_ids, ",
+   "779592eaf 2026-10-19 RG kit: apply_text anchors the collective-continuation row on stable fragments (SC changed its open items and records cell); ro_points writ",
+   "aec3cff66 2026-10-19 RG kit: RO's passage map changes only through build_passages.py's FIXES (the RO kit owner's decision): ro_points.py adds RG's four entries ",
+   "92b92cf6d 2026-10-19 RG kit: numerical checks run before the proofs (simulate.py), integrate script, scratch build log and connectivity check (479 apart of 11,3",
+   "c963dd359 2026-10-19 RG package: core module Becoming.Regulation (a level held from both sides, and a level read late; 108 theorems, 136 declarations, empty axi"
+  ],
+  "cherry": {
+   "equivalent_on_main(-)": 0,
+   "not_on_main(+)": 6
+  },
+  "files_changed_on_branch": 21,
+  "same_blob_on_main": 17,
+  "main_changed_since_base": 4,
+  "only_on_branch": 0,
+  "deleted_on_branch": 0,
+  "detail_sample": [
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY-APART.json",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py"
+  ]
+ },
+ {
+  "worktree": ".claude/worktrees/unruffled-zhukovsky-85b330",
+  "head": "c92d7b57d",
+  "branch": "claude/unruffled-zhukovsky-85b330",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 07:48"
+ },
+ {
+  "worktree": ".claude/worktrees/upbeat-lovelace-4991d4",
+  "head": "81e284cb2",
+  "branch": "claude/upbeat-lovelace-4991d4",
+  "locked": false,
+  "ancestor_of_main": false,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 16:14",
+  "merge_base": "de8cfa7e6",
+  "commits_not_on_main": [
+   "81e284cb2 2026-10-19 PT1 kit: opening_note.py applies the opening's third-pass edit (pp), body sentence with the [^proof] marker at its end, and PT1's sentence ",
+   "741d41e46 2026-10-19 PT1 kit: opening_note.py adds the record's sentence to OPENING's proof note (notes only, the body untouched), run by reland.sh before re-po",
+   "f4b85c596 2026-10-19 PT1 kit: integrate.py inserts the CORE entry right after Becoming.Reading whatever follows it (E1 put ExchangePremises there); rehearsal on",
+   "b3f5ec9b8 2026-10-19 PT1 kit: apply_text.py, rehash_refs.py, repoint_drift.py, reland.sh; record counterexamples as path and detail (rehearsal on de8cfa7e6: ren",
+   "9371ed13d 2026-10-19 PT1 kit: integrate.py, study section text, make_record.py, checker and connectivity logs (receipt 20261019T090539.183632Z; 490 apart of 10,",
+   "e242b30c8 2026-10-19 PT1 package: core module Becoming.PlaceTransitionNets (place/transition nets defined by their own rules, read on the spine: balance exactly"
+  ],
+  "cherry": {
+   "equivalent_on_main(-)": 0,
+   "not_on_main(+)": 6
+  },
+  "files_changed_on_branch": 33,
+  "same_blob_on_main": 7,
+  "main_changed_since_base": 8,
+  "only_on_branch": 18,
+  "deleted_on_branch": 0,
+  "detail_sample": [
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/pt1-place-transition-nets/apply_text.py",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/pt1-place-transition-nets/checker-pt1.log",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/pt1-place-transition-nets/connectivity-pt1.log",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PlaceTransitionNets.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/Becoming.PlaceTransitionNets.PreludeOnly.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/Becoming.PlaceTransitionNets.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/Becoming.PreludeOnly.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/Becoming.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/Becoming.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/BecomingAxiomAudit.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/BecomingAxiomAudit.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/BecomingPlaceTransitionNetsSignatures.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/BecomingPlaceTransitionNetsSignatures.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/BecomingSignatures.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/BecomingSignatures.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/Controls.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/Controls.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/EnvironmentAudit.lean",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/EnvironmentAudit.log",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/check_becoming.py",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/verification.json",
+   "only-branch: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090539.183632Z/version.log",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json"
+  ]
+ },
+ {
+  "worktree": ".claude/worktrees/w-reroot",
+  "head": "c5ab6451f",
+  "branch": "w-reroot",
+  "locked": false,
+  "ancestor_of_main": false,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 05:16",
+  "merge_base": "d22626bf0",
+  "commits_not_on_main": [
+   "c5ab6451f 2026-10-19 W2 (pre-landing, scratch-built on d22626bf0): the modules free of the labelled process no longer import the frame"
+  ],
+  "cherry": {
+   "equivalent_on_main(-)": 0,
+   "not_on_main(+)": 1
+  },
+  "files_changed_on_branch": 96,
+  "same_blob_on_main": 35,
+  "main_changed_since_base": 61,
+  "only_on_branch": 0,
+  "deleted_on_branch": 0,
+  "detail_sample": [
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/README.md",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/tools/rebind_w.py",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/tools/w2_notes.py",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/tools/w2_plan.py",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/tools/w2_register.py",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/w2/plan-args.txt",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/w2/ranges.tsv",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/w2/w2-move.json",
+   "main-changed-since-base: _process/research/2026-10-05-generative-foundation-review/root-foundation/development/rerooting/w2/w2-plan.json",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextArrivalTraces.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextualRuns.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseWorlds.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+   "main-changed-since-base: experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean"
+  ]
+ },
+ {
+  "worktree": ".claude/worktrees/wizardly-goldstine-4e6de8",
+  "head": "2b80b5500",
+  "branch": "claude/wizardly-goldstine-4e6de8",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-20 01:01"
+ },
+ {
+  "worktree": ".claude/worktrees/xenodochial-bouman-18faf8",
+  "head": "f39c658ba",
+  "branch": "claude/xenodochial-bouman-18faf8",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 0,
+  "dirty_sample": [],
+  "folder_mtime": "2026-10-19 08:03"
+ },
+ {
+  "worktree": ".claude/worktrees/zhonghua",
+  "head": "309af1124",
+  "branch": "zhonghua",
+  "locked": false,
+  "ancestor_of_main": true,
+  "dirty_entries": 3,
+  "dirty_sample": [
+   "M sources/SOURCES.md",
+   "?? _process/research/2026-10-05-generative-foundation-review/root-foundation/development/zhonghua/",
+   "?? sources/civilization-thought-v1.0/"
+  ],
+  "folder_mtime": "2026-10-20 00:01"
+ }
+]

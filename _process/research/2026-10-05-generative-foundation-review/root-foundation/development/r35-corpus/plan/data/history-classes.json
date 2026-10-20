@@ -1,0 +1,66 @@
+{
+ "records": 279,
+ "notes_before": 12077,
+ "notes_after": 2939,
+ "condensed": 9416,
+ "classes": {
+  "first": 279,
+  "bookkeeping": 9416,
+  "substantive": 1448,
+  "other": 934
+ },
+ "bytes_before": 17159858,
+ "bytes_after_estimate": 9438996,
+ "records_with_no_bookkeeping": 1,
+ "median_before": 32,
+ "median_after": 9,
+ "samples": {
+  "first": [
+   "market-supported-finite-transition | 2026-10-08: added the formal composition of finite sustained intervention, prefix support and the original protection certificate, retaining zero-seed, timing and support failures.",
+   "renewing-consuming-formation | 2026-10-09: created following Ren's direction that Lean carry substantive content, answering external review §3.3 and §3.5. Unlike Depletion and ResourceContinuation, renewal is produced by an organization in the same unfolding and can be worn by the same acti",
+   "risk-certificate-outcome-distinction | 2026-10-08: recorded a new application/correspondence in the inherited route process. Ordinary probability and information-insufficiency explanations retain credit; five proofs are not five independent theories.",
+   "wisdom-root-part-one | 2026-10-12 P75: added, following Ren's ‘finish wisdom root’ (same message); matches Part I's checked laws to the four connections of the target wisdom-root, adding no Lean (work board P75); see §93 of the integration note."
+  ],
+  "bookkeeping": [
+   "a-code-formed-between-formations | 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Commuting.lean: declarations moved in or out by W2; Mechanism.le",
+   "a-history-read-off-its-finite-stretches | 19 October 2026, RO (the Chinese sources on the spine): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four ",
+   "a-law-through-changing-coupling-along-one-run | 19 October 2026, M4 (Becoming.Rejoining): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: M4 added a study section; THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rej",
+   "a-law-through-coupling-along-one-run | 19 October 2026, M4 (Becoming.Rejoining): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: M4 added a study section; THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rej",
+   "axiom-decomposition | 17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Boundaries.lean, Feedback.lean, Interdependence.lean, Metaethics.lean, Significance.lean, Standpoints.lean changed in comments only (retired labels replaced by the current terms); th",
+   "axiom-decomposition | 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Metaethics.lean, Significance.lean re-pointed after reading the change (Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged;",
+   "becoming-dependence-dynamics | 20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Dependence moved from Dependence.lean to World.lean, with its full name. Proof bindings (Dependence.lean, Labelled.lean, W",
+   "becoming-renewal-reading | 15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_bet",
+   "census-balance | 18 October 2026, S1 (Becoming.Enough): THE-THEORY-OF-BECOMING.md re-pointed after S1 added the bullet on enough under undetermined laws, revised the \"Seeking, capture and runaway\" row of section 8.2 and the section 9 receipt and connectivity text; read before ",
+   "census-balance | 19 October 2026, K1 (Becoming.Cuts): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in sections 8 and 9: K1 added the connectivity rerun on its landing tree to the \"Integration of the spine\" row of section ",
+   "census-balance | 19 October 2026, SG (junctures, commuting laws and the third value): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: SG added the section 1 paragraphs on where a configuration is lost and what a commuting law keeps apa",
+   "census-balance | 19 October 2026, RO (the Chinese sources on the spine): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four "
+  ],
+  "substantive": [
+   "axiom-decomposition | 14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows ",
+   "axiom-decomposition | 17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one ax",
+   "becoming-spine-instances | 2026-10-09: after the core added Becoming.Return, Horizon, Joint and Substitution (P7) and corrected the readings (P6 review), the bridge and classification are unchanged; moved to consolidated receipt 20261009T002925.265132Z and peripheral receipt 20261009T00",
+   "ceasing-needs-arising | 17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one ax",
+   "census-balance-under-continuation | 14 October 2026 readability migration to schema 2 (open-issues plan, stream F: the schema-1 records with the most lint findings): the claim became eleven laws with their declarations; limitations, per-round receipts and process notes went to does-not-show item",
+   "census-balance | 17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one ax",
+   "closing-needs-net-draw | 14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows ",
+   "closing-needs-net-draw | 17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one ax",
+   "closure-verdict-meets-axiom | 14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows ",
+   "closure-verdict-meets-axiom | 17 October 2026, wording of the public fields: outdated labels (G0, the one axiom) replaced by the current vocabulary (living significance, the continuation condition); the fold chronology (“since Ren folded it”) removed, following Ren's 17 October directive t",
+   "closure-verdict-meets-axiom | 17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one ax",
+   "comparison-by-widening | 14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows "
+  ],
+  "other": [
+   "acquired-binding-compositional-use | 2026-10-08: reviewed study sections 11–13; a spatial encounter history formally supplies the original binding inputs. This record’s proof and scope are unchanged; the next connection is updated.",
+   "coming-and-ceasing-keep-pace | 2026-10-12 P58: related record recurrence-without-decidedness added (the forms with no decision procedure); the claim is unchanged. See §84 of the integration note and the inventory page DECIDABILITY-INVENTORY.",
+   "feedback-and-reach | 2026-10-12 P65: with the rest responding through its registration, the comparison is decided within the part's responsive reach, its closure under affecting what is registered; registering support only, with one flow, the responsive reach is the union of the m",
+   "learning-by-refutation | 19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (12 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged.",
+   "projection-carrying-a-law | 2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “A pro",
+   "recurrence-without-premise | 2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “What ",
+   "substitution-preserves-consumption | 2026-10-09: P10 proved that a chain of substitutions ends when the alternatives cost and none is renewed, taking up part of this record's next step; this record's claim and proofs are unchanged, and only its links and next step are updated.",
+   "the-last-change-of-a-run | 19 October 2026, O2: related entry for what-a-method-comes-to-say-in-the-limit (study section 206). The claim is unchanged.",
+   "theory-of-becoming-foundation | 9 October 2026: §19 applies the whole/manifold correction to the actual completion table and central inference, removing the surviving universal-generativity gate. The direct whole-inclusion argument remains incomplete at the passage to relational constitution",
+   "theory-of-becoming-foundation | 19 October 2026, E1: a progress entry and two related records (premises read off one exchange: which premises are readings and which are states of the law); study section 197. The target's wording is unchanged.",
+   "whole-persists-through-generation | 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: Covered.arises_within, Covered.needs_arising and Covered.needs_new (and Whole.needs_arising, needs_new) conclude negated universals; the claim said parts \"arise at arbitraril"
+  ]
+ }
+}

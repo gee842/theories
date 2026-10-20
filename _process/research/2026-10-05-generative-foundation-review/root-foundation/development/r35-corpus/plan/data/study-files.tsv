@@ -1,0 +1,135 @@
+path	first_added	last_commit	canonical_of	ref_roles	pinnedTSV	live_code
+ACQUIRED-SEGMENTATION-INTEGRATION.md	2026-10-08	2026-10-17	-	{"integration": 5, "review": 2}	1	experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/check_integration.py experiments/integrated-corr
+AGENTDOJO-EVIDENCE-REVIEW.md	2026-10-06	2026-10-17	-	{}	1	-
+BECOMING-BRIDGE-FOLD.md	2026-10-18	2026-10-19	-	{}	0	-
+BECOMING-EIGHTEENTH-REVIEW.md	2026-10-16	2026-10-17	-	{}	0	-
+BECOMING-EIGHTEENTH-REVIEW.zh.md	2026-10-17	2026-10-17	-	{}	0	-
+BECOMING-GENERAL-LAWS-REVIEW.md	2026-10-14	2026-10-17	-	{}	0	-
+BECOMING-GENERAL-LAWS-REVIEW.zh.md	2026-10-17	2026-10-17	-	{}	0	-
+BECOMING-INSTANCE-CHECKS.json	2026-10-09	2026-10-10	-	{"integration": 1}	1	-
+BECOMING-NINETEENTH-REVIEW.md	2026-10-19	2026-10-19	-	{}	0	-
+BECOMING-RELEASE-READINESS-REVIEW.md	2026-10-16	2026-10-16	-	{}	0	-
+BECOMING-RENEWAL-READING.md	2026-10-09	2026-10-20	wisdom-root-part-one:reviewed-scoped	{"integration": 210, "review": 2}	0	-
+BECOMING-RENEWAL-READING.zh.md	2026-10-17	2026-10-17	-	{}	0	-
+BECOMING-TWENTIETH-REVIEW.md	2026-10-20	2026-10-20	-	{}	0	-
+BECOMING-UNIFICATION-PLAN.md	2026-10-09	2026-10-19	-	{"statement": 26, "integration": 15}	0	-
+BECOMING-UNIFICATION-PLAN.zh.md	2026-10-17	2026-10-19	-	{}	0	-
+build_generative_chain.py	2026-10-08	2026-10-08	-	{}	0	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/check_market_internet_degeneration.py _process/research/2026-10-05-generative-fo
+build_lean_catalogue.py	2026-10-08	2026-10-08	-	{}	0	tools/research/session_map.py
+build_result_registry.py	2026-10-08	2026-10-08	-	{}	0	tools/research/registry.py tools/research/tests/test_schema2.py
+build_results_catalogue.py	2026-10-08	2026-10-08	-	{}	0	-
+build_session_result_map.py	2026-10-08	2026-10-08	-	{}	0	-
+CHAIN-RELABELLING-PENDING-REN.md	2026-10-19	2026-10-19	-	{}	0	-
+COLLECTIVE-DESTRUCTION-INTEGRATION.md	2026-10-08	2026-10-17	-	{"review": 1, "integration": 1}	1	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/check_market_formation.py
+COMPARISON-CONTENT-INTEGRATION-CHECKS.json	2026-10-14	2026-10-14	-	{}	0	-
+COMPLETE-EPISODE-COMPARISON-INTEGRATION-CHECKS.json	2026-10-14	2026-10-14	-	{}	0	-
+CONTEXTUAL-ESTABLISHMENT-CHECKS.json	2026-10-08	2026-10-08	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/check_record.py
+CONTEXTUAL-ESTABLISHMENT-INDEX-EDITS.json	2026-10-08	2026-10-08	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/check_record.py
+CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md	2026-10-08	2026-10-17	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/check_record.py experiments/integrated-correc
+CONTINUATION-GROUNDING-REVIEW.md	2026-10-10	2026-10-10	-	{"review": 5}	0	-
+CORE-CONSTRAINT-AND-WISDOM.md	2026-10-08	2026-10-17	wisdom-root:open	{"statement": 1, "review": 1}	0	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/check_market_finite_support.py _process/research/2026-10-05-generative-foundatio
+CORE-TREE-CONTINUATION-CHECKS.json	2026-10-07	2026-10-07	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_core_tree_integration.py
+CORE-TREE-CONTINUATION-DOC-EDITS.json	2026-10-07	2026-10-07	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_core_tree_integration.py
+CORE-TREE-CONTINUATION-REVIEW.md	2026-10-07	2026-10-09	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_core_tree_integration.py
+CORE-TREE-CONTINUATION.md	2026-10-07	2026-10-17	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_core_tree_integration.py
+CORE-TREE-SOURCE-READING.md	2026-10-07	2026-10-19	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_core_tree_integration.py
+CORRECTION-INFRASTRUCTURE-PROTOCOL.md	2026-10-08	2026-10-08	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/compare_correction_infrastructure.py
+CROSSED-CLAIMS-ARGUMENT.md	2026-10-08	2026-10-19	finite-aggregation-within-restorable-basic-losses:reviewed-scoped	{"review": 1}	0	-
+CROSSED-CLAIMS-ARGUMENT.zh.md	2026-10-17	2026-10-19	-	{}	0	-
+CROSSED-CLAIMS-INTEGRATION.md	2026-10-08	2026-10-17	-	{"integration": 1}	0	-
+CROSSED-CLAIMS-INTEGRATION.zh.md	2026-10-17	2026-10-17	-	{}	0	-
+DECIDABILITY-INVENTORY.lean	2026-10-12	2026-10-14	-	{}	0	_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py
+DECIDABILITY-INVENTORY.md	2026-10-12	2026-10-17	-	{"integration": 1}	0	_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.lean _process/research/2026-10-05-generative-foundation-review/
+DECIDABILITY-INVENTORY.py	2026-10-12	2026-10-16	-	{}	0	_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.lean
+DECIDABILITY-INVENTORY.zh.md	2026-10-17	2026-10-17	-	{}	0	-
+DELEGATED-CHOICES.md	2026-10-16	2026-10-20	-	{"provenance": 1, "integration": 4}	0	-
+DELEGATED-CHOICES.zh.md	2026-10-17	2026-10-20	-	{}	0	-
+EPISODE-AND-SUSTAINED-HARM-INTEGRATION-CHECKS.json	2026-10-14	2026-10-14	-	{}	0	-
+ETHICAL-LEARNING-INTEGRATION.md	2026-10-08	2026-10-17	-	{"integration": 2, "review": 2}	0	-
+EVALUATIVE-PLASTICITY-MATH.md	2026-10-06	2026-10-17	-	{}	1	-
+EVALUATIVE-PLASTICITY-ORACLE-CONTRACT.md	2026-10-06	2026-10-06	-	{}	1	experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer
+EVALUATIVE-PLASTICITY-REVIEW.md	2026-10-06	2026-10-17	-	{}	1	-
+EVALUATIVE-PLASTICITY-SCOPE.md	2026-10-06	2026-10-17	-	{}	1	experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer
+EVALUATIVE-SUCCESSION-SCOPE.md	2026-10-06	2026-10-17	-	{}	1	-
+EVOLUTION-COMPARISON-PROTOCOL.md	2026-10-08	2026-10-17	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/check.py
+EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md	2026-10-08	2026-10-17	-	{"integration": 12, "review": 1}	1	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/check_market_finite_support.py _process/research/2026-10-05-generative-foundatio
+FINITE-RESPONSIVENESS-INTEGRATION-CHECKS.json	2026-10-14	2026-10-14	-	{}	0	-
+FOUNDATION-ROOT-ACCEPTANCE.json	2026-10-06	2026-10-06	-	{}	1	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/FRONTIER-CHECK.py
+FOUNDATION-ROOT-ACCEPTANCE.md	2026-10-06	2026-10-17	-	{"review": 1}	1	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/FRONTIER-CHECK.py
+GENERATIVITY-CHAIN-INDEX-RECORD.md	2026-10-08	2026-10-19	-	{}	0	-
+GROWN-FRAGMENTATION-INTEGRATION.md	2026-10-08	2026-10-17	-	{"integration": 5}	1	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/check_market_finite_support.py _process/research/2026-10-05-generative-foundatio
+INDEX.md	2026-10-17	2026-10-20	-	{}	0	-
+INFORMATION-AND-RENEWAL.md	2026-10-05	2026-10-17	-	{}	1	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/check_documents.py
+MAT-HISTORY-CHECKS.json	2026-10-08	2026-10-08	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/check_record.py
+MAT-HISTORY-INDEX-EDITS.json	2026-10-08	2026-10-08	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/check_record.py
+MAT-HISTORY-INTEGRATION.md	2026-10-08	2026-10-17	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/check_record.py
+META-ATTRACTOR-COMPLETION-CHECKS.json	2026-10-13	2026-10-13	-	{}	0	-
+META-ATTRACTOR-RECONCILIATION.md	2026-10-08	2026-10-17	-	{"integration": 2, "review": 2}	0	-
+META-ATTRACTOR-RECONCILIATION.zh.md	2026-10-17	2026-10-17	-	{}	0	-
+META-ATTRACTOR-REFERENCE-PLAN-INTEGRATION-CHECKS.json	2026-10-13	2026-10-13	-	{}	0	-
+META-ATTRACTOR-REVISION-INTEGRATION-CHECKS.json	2026-10-13	2026-10-13	-	{}	0	-
+MICROSCOPY-CORRESPONDENCE-CHECKS.json	2026-10-08	2026-10-08	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/check_record.py
+MICROSCOPY-CORRESPONDENCE-INDEX-EDITS.json	2026-10-08	2026-10-08	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/check_record.py
+MICROSCOPY-CORRESPONDENCE-INTEGRATION.md	2026-10-08	2026-10-17	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/check_record.py
+MODULE-CLASSIFICATION.md	2026-10-16	2026-10-17	-	{}	0	drafts/2026-09-05-generative-foundations/formal/ExistenceConditions.lean drafts/2026-09-05-generative-foundations/formal/OpenFuture.lean experiments/integrated-
+MODULE-CLASSIFICATION.zh.md	2026-10-17	2026-10-17	-	{}	0	-
+NONDUAL-CORE-INTEGRATION.md	2026-10-07	2026-10-17	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/check_receipt_integration.py
+OPEN-FORM-BRIDGE-CHECKS.json	2026-10-13	2026-10-13	-	{}	0	-
+PHRASE-READINGS-PENDING-REN.md	2026-10-18	2026-10-19	-	{}	0	-
+READINGS-PENDING-REN.md	2026-10-18	2026-10-19	-	{}	0	-
+README.md	2026-10-05	2026-10-19	-	{}	0	tools/research/navigation.py
+reason-action-evidence	2026-10-06	2026-10-17	-	{}	1	experiments/recipient-cue-grounding/analysis.py experiments/recipient-cue-grounding/check_analysis.py
+RECEIPT-IDENTIFICATION-CHECKS.json	2026-10-07	2026-10-07	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/check_receipt_integration.py
+RECEIPT-IDENTIFICATION-DOC-EDITS.json	2026-10-07	2026-10-07	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/check_receipt_integration.py
+RECIPE-GROUNDING-PRESERVATION.json	2026-10-07	2026-10-07	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/check_independent.py
+REGISTRATION-VOCABULARY-STUDY.md	2026-10-17	2026-10-19	-	{"integration": 1}	0	-
+RELATIONAL-BECOMING-INTEGRATION.md	2026-10-09	2026-10-17	-	{"statement": 1, "integration": 2}	1	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/check_market_formation.py
+RESULTS-CATALOGUE-RECORD.md	2026-10-08	2026-10-17	-	{}	0	tools/research/reading_catalogue.py
+RESULTS-CATALOGUE-RECORD.zh.md	2026-10-17	2026-10-17	-	{}	0	-
+REVIEWS.md	2026-10-17	2026-10-20	-	{}	0	-
+RISK-CONDITIONING-INTEGRATION.md	2026-10-08	2026-10-17	-	{"integration": 1}	0	-
+ROOT-FOUNDATION.md	2026-10-05	2026-10-17	-	{}	1	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/check_documents.py
+ROUTE-REVISION-RESOURCE-MATH.md	2026-10-06	2026-10-17	-	{}	1	experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/handoff/indepe
+SCIENTIFIC-FOUNDATION-CORRESPONDENCE-REVIEW.json	2026-10-14	2026-10-14	-	{"review": 1}	0	-
+SCIENTIFIC-INQUIRY-CONDITIONS.md	2026-10-06	2026-10-17	-	{"integration": 3, "review": 1}	0	-
+SCIENTIFIC-INQUIRY-CONTINUATION-REVIEW.json	2026-10-14	2026-10-14	-	{"review": 1}	0	-
+SCIENTIFIC-INQUIRY-DEMARCATION-REVIEW.json	2026-10-14	2026-10-14	-	{"review": 1}	0	-
+SCIENTIFIC-INQUIRY-EVIDENCE.md	2026-10-06	2026-10-17	-	{"review": 2}	0	-
+SCIENTIFIC-INQUIRY-PREMISE-REVIEW.json	2026-10-14	2026-10-14	-	{}	0	-
+SCIENTIFIC-INQUIRY-RELATIONS-REVIEW.json	2026-10-14	2026-10-14	-	{}	0	-
+SCIENTIFIC-INQUIRY-TIMING-REVIEW.json	2026-10-14	2026-10-14	-	{"review": 2}	0	-
+SCIENTIFIC-INQUIRY-WARRANT-REVIEW.json	2026-10-14	2026-10-14	-	{"review": 1}	0	-
+SELECTIVE-HANDOFF-DESIGN.md	2026-10-06	2026-10-17	-	{}	1	-
+SELECTIVE-HANDOFF-PROVENANCE.md	2026-10-06	2026-10-06	-	{}	1	-
+SELECTIVE-HANDOFF-REVIEW.md	2026-10-06	2026-10-17	-	{}	1	-
+SESSION-CLASSIFIER-CORRECTION.json	2026-10-08	2026-10-08	-	{}	0	-
+SESSION-INTEGRATION-AUDIT.md	2026-10-08	2026-10-17	-	{}	0	tools/research/session_map.py
+SESSION-INTEGRATION-BASELINE.json	2026-10-08	2026-10-08	-	{}	0	tools/research/session_map.py
+SESSION-INTEGRATION-FINAL-CHECKS.json	2026-10-08	2026-10-08	-	{}	0	-
+SESSION-INTEGRATION-NAVIGATION.json	2026-10-08	2026-10-08	-	{}	0	-
+SESSION-OUTCOME-SNAPSHOT.json	2026-10-08	2026-10-08	-	{}	0	tools/research/session_map.py
+SESSION-PROOF-OVERLAP.json	2026-10-08	2026-10-14	-	{}	0	tools/research/session_map.py
+SESSION-PROOF-REUSE-SOURCE-CHECKS.json	2026-10-08	2026-10-08	-	{"review": 2}	0	-
+SESSION-RESULT-MAP-CHECKS.json	2026-10-08	2026-10-14	-	{}	0	tools/research/session_map.py
+SITUATED-KITCHEN-EVIDENCE.md	2026-10-08	2026-10-17	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/situated-kitchen-evidence/check_partial_application.py
+SITUATED-KITCHEN-PARTIAL-CHECKS.json	2026-10-08	2026-10-08	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/situated-kitchen-evidence/check_partial_application.py
+SITUATED-KITCHEN-PARTIAL-INDEX-EDITS.json	2026-10-08	2026-10-08	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/situated-kitchen-evidence/check_partial_application.py
+SITUATED-KITCHEN-PARTIAL-INFORMATION.md	2026-10-08	2026-10-17	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/situated-kitchen-evidence/check_partial_application.py
+SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md	2026-10-08	2026-10-17	-	{"review": 2}	1	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/check_market_formation.py
+SPINE-INTEGRATION.py	2026-10-14	2026-10-16	-	{}	0	-
+SSBX-REPOSITORY-REVIEW.md	2026-10-19	2026-10-19	-	{"provenance": 4, "integration": 1, "review": 1}	0	-
+test_result_registry.py	2026-10-08	2026-10-08	-	{}	0	-
+THEOREM-CONNECTIVITY-APART.json	2026-10-17	2026-10-19	-	{}	0	_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.py
+THEOREM-CONNECTIVITY-DUMP.lean	2026-10-15	2026-10-19	-	{}	0	_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.py
+THEOREM-CONNECTIVITY.json	2026-10-15	2026-10-20	-	{}	0	_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.py _process/research/2026-10-05-generative-foundation-review/root
+THEOREM-CONNECTIVITY.md	2026-10-15	2026-10-20	-	{}	0	-
+THEOREM-CONNECTIVITY.py	2026-10-15	2026-10-17	-	{}	0	_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY-DUMP.lean
+THEOREM-CONNECTIVITY.zh.md	2026-10-17	2026-10-17	-	{}	0	-
+TIMELY-CONTINUATION-INTEGRATION-CHECKS.json	2026-10-14	2026-10-14	-	{}	0	-
+TURNOVER-AND-CLOSURE.md	2026-10-05	2026-10-17	-	{}	1	_process/research/2026-10-05-generative-foundation-review/foundation-assessment/check_documents.py
+V73-INTEGRATION-CHECKS.json	2026-10-07	2026-10-07	-	{}	1	experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_core_tree_integration.py experiments/integrated-correction/general-
+ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md	2026-10-08	2026-10-17	-	{"integration": 1}	0	-
+ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.zh.md	2026-10-17	2026-10-17	-	{}	0	-
+ZERO-PREMISE-INVENTORY.py	2026-10-11	2026-10-11	-	{}	0	-
+ZERO-PREMISE-PLAN.md	2026-10-11	2026-10-17	-	{"integration": 4}	0	_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-INVENTORY.py
+ZERO-PREMISE-PLAN.zh.md	2026-10-17	2026-10-17	-	{}	0	-

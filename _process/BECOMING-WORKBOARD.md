@@ -26,7 +26,7 @@ Target: Ren's "unified, complete, enclosed, 0 axiom full theory", following the 
 
 - **Integrator:** not named on this page; rule 3's fallback applies. Name it here only on Ren's or that session's confirmation (review item B7). The 13 October Codex takeover (study §94-§111) is history.
 - **Main and receipts:** the landing queue below names each landing since 17 October with its core receipt; the latest core receipt is R34's `20261020T005554.047169Z` (20 October 2026). This page was rewritten on 17 October 2026 at `1d18d005c`.
-- **Queue:** empty; R34 landed (core receipt `20261020T005554.047169Z`); R35 next.
+- **Queue:** R35 at the head (corpus and records: the two approved goal-scope proposals applied, moves to history, record histories compacted, supersession, families, ID redirects, banners, agreement grade, instance ring); R34 landed (core receipt `20261020T005554.047169Z`).
 
 ## Open claims
 

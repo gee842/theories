@@ -1,0 +1,2 @@
+old_path	new_path	reason
+theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md	theories/becoming/history/THE-THEORY-OF-BECOMING-REFERENCE.md	E2: verbatim pre-restructure lists (l.1-113) are history; the declaration catalogue (l.114-218) and module table (l.219-475) duplicate LEAN-INDEX and the Lean README; whole file moves, nothing kept live
