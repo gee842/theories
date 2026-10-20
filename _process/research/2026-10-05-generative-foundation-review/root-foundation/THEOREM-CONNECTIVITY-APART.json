@@ -1717,11 +1717,6 @@
    "category": "general-structure",
    "reason": "where a relatum takes an exchange at a step of one interleaving, the index map sends the next step to the step after the same exchange in the other, for a local law on any state type: which exchange stands at a step is the module's own vocabulary (lists of exchanges), which the World an interleaving builds does not record; what the World reads of the index map is on the base (`world_index`, `world_reads_alike`)"
   },
-  "Becoming.Interleavings.LocalLaw.firstAt_least": {
-   "module": "Becoming.Interleavings",
-   "category": "support",
-   "reason": "the step `firstAt` finds is the least at which the relatum has taken the given number of its own exchanges: an unpacking of the module's own definition, used by `index_matches`"
-  },
   "Becoming.LoopReturn.Ring.givesExactly": {
    "module": "Becoming.LoopReturn",
    "category": "model-witness",
@@ -1876,6 +1871,11 @@
    "module": "Becoming.GroupEnding",
    "category": "model-witness",
    "reason": "the same groups with the groupmate leaving five: selection within outweighs and the whole goes against holding back although the other group ended; a fact about one constructed family, not a law of the unfolding"
+  },
+  "Becoming.Interleavings.Pair.idle_unmatched": {
+   "module": "Becoming.Interleavings",
+   "category": "model-witness",
+   "reason": "the lists [2] and [] of the pair give every relatum the same own course, while [2] has at step 0 an exchange that [] has at no step: a fact about one constructed model, showing the premise `Touching` of the renumbering is needed"
   }
  },
  "instances": {
