@@ -1786,6 +1786,16 @@
    "module": "Becoming.SelectionTerm",
    "category": "model-witness",
    "reason": "two parents each with two offspring: the weighted total moves while selection proper is none and the mean is kept; a fact about one constructed family"
+  },
+  "Becoming.Halving.takes_halve": {
+   "module": "Becoming.LeastLoss",
+   "category": "model-witness",
+   "reason": "halving takes in one constructed model of the amounts: takers without bound, each take above nothing, balanced by one whole a step, no least take; the counterexample showing Amounts.replenishment_unbounded needs its least take; not a law of the unfolding"
+  },
+  "Becoming.steps_le": {
+   "module": "Becoming.Flow",
+   "category": "support",
+   "reason": "an arithmetic lemma bounding a total over steps; its one use, the counting proof of Flow.More.replenishment_unbounded_from, was replaced in R41 by the whole-number instance of Amounts.replenishment_unbounded"
   }
  },
  "instances": {
