@@ -17,18 +17,20 @@ ordered, unital or free to repeat a part. Which configurations are read as parts
 representational commitment, as `Becoming.Wholes` says of its part–whole relation.
 
 * **Likeness respecting the parts.** A joint bisimulation is a bisimulation that also matches the
-  parts each whole holds together, part by part (`MatchesParts`, `JointBisimulation`); joint
-  likeness (`JointAlike`) is an equivalence (`JointAlike.refl`, `JointAlike.symm`,
-  `JointAlike.trans`) and is likeness of the frames with the parts forgotten, and more
-  (`JointAlike.alike`). A joint test adds to the branching tests that a configuration holds
+  parts each whole holds together, part by part (`MatchesParts`, `JointBisimulation`). It is the
+  case of one relation of the bisimulations of `Becoming.Likeness` that match a family of such
+  relations (`BisimulationWith`, `AlikeWith`, `TestWith`), whose laws joint likeness and joint
+  tests inherit through abbreviations. Joint likeness (`JointAlike`) is an equivalence (`AlikeWith.refl`, `AlikeWith.symm`,
+  `AlikeWith.trans`) and is likeness of the frames with the parts forgotten, and more
+  (`AlikeWith.alike`). A joint test adds to the branching tests that a configuration holds
   together two parts passing two tests (`JointTest`, `together`); jointly alike configurations
-  pass the same joint tests, with no premise (`JointAlike.sameJointTests`), and passing the same
-  joint tests is passing the same branching tests, and more (`BranchingTest.holds_toJoint`,
-  `SameJointTests.sameBranchingTests`). The parts add distinctions: two configurations with no
+  pass the same joint tests, with no premise (`AlikeWith.sameTestsWith`), and passing the same
+  joint tests is passing the same branching tests, and more (`BranchingTest.holds_toWith`,
+  `SameTestsWith.sameBranchingTests`). The parts add distinctions: two configurations with no
   move and no claim are alike, while only one holds a pair of parts, which `together` sees
   (`Pairing.alike`, `Pairing.not_jointAlike`). Where joint tests or joint likeness tell a frame's
   configurations apart, a configuration passes the same tests as at most one of them
-  (`SameJointTests.functional`, `JointAlike.functional`).
+  (`SameTestsWith.functional`, `AlikeWith.functional`).
 * **Joint tests fix joint likeness where every family of tests met finitely is met, and the tests
   are stable.** A domain is compact for a reading of questions where every family of questions,
   each finitely many of which some member of the domain meets, is met by one member

@@ -1,0 +1,568 @@
+{
+ "removed": [
+  {
+   "old": "Becoming.CrossSituational.Distinct",
+   "kept": "Becoming.Distinct",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Typicality.total",
+   "kept": "Becoming.total",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Tail.nonzero",
+   "kept": "Becoming.nonzero",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Situations.upto",
+   "kept": "Becoming.Undecided.upto",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.skip",
+   "kept": "Becoming.skipAt",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.DistinctBy",
+   "kept": "Becoming.DistinctUnder",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Hexagram.memberAt",
+   "kept": "Becoming.Law.memberAt",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Joining.slot",
+   "kept": "Becoming.Copying.nth",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Learning.back",
+   "kept": "Becoming.Copying.nth",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Shifts.half",
+   "kept": "Becoming.Pulse.half",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.CouplingTraces.consSeq",
+   "kept": "Becoming.Settling.consAct",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Lasting.prepend",
+   "kept": "Becoming.Settling.consAct",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Frequency.SelfLoop.onset_amount",
+   "kept": "Becoming.Closing.Onset.amount_after",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.TypicalRuns.sum_one",
+   "kept": "Becoming.Situations.sum_one",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Courses.counting_sum_one",
+   "kept": "Becoming.Situations.sum_one",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Exposed.holder_after",
+   "kept": "Becoming.Shuttle.next_off",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.OneStep.Chain.excess_of_le",
+   "kept": "Becoming.Flow.excess_zero_of_le",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.HistorySums.nonzero_of_le",
+   "kept": "Becoming.RouteTraces.nonzero_of_le",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Loops.total_steps_shift",
+   "kept": "Becoming.total_steps_succ",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.total_steps_split",
+   "kept": "Becoming.total_steps_add",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.LossMatching.distinct_map_on",
+   "kept": "Becoming.distinct_map_on",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.LossMatching.not_mem_middle",
+   "kept": "Becoming.not_mem_of_middle",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.distinct_append_apart",
+   "kept": "Becoming.distinct_append",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Net.distinct_append'",
+   "kept": "Becoming.distinct_append",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.SituationTraces.distinct_append",
+   "kept": "Becoming.distinct_append",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Propagation.between_of_mem_steps",
+   "kept": "Becoming.between_of_mem_steps",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.skip_le",
+   "kept": "Becoming.skipAt_le",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.SituationTraces.distinct_unit",
+   "kept": "Becoming.Asymptote.distinct",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.SituationTraces.distinct_two",
+   "kept": "Becoming.Shuttle.distinct",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.FinerTraces.mem_upto",
+   "kept": "Becoming.Undecided.mem_upto",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Learning.upto",
+   "kept": "Becoming.downFrom",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Learning.mem_upto",
+   "kept": "Becoming.mem_downFrom",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Law.le_of_mem_upto",
+   "kept": "Becoming.le_of_mem_downFrom",
+   "item": "B6",
+   "why": "the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.CrossSituational.distinct_iff",
+   "kept": null,
+   "item": "B6",
+   "why": "with one Distinct its statement is Distinct l ↔ Distinct l"
+  },
+  {
+   "old": "Becoming.JointAlike.refl",
+   "kept": "Becoming.AlikeWith.refl",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointAlike.symm",
+   "kept": "Becoming.AlikeWith.symm",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointAlike.trans",
+   "kept": "Becoming.AlikeWith.trans",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointAlike.alike",
+   "kept": "Becoming.AlikeWith.alike",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointAlike.realized",
+   "kept": "Becoming.AlikeWith.realized",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointAlike.step",
+   "kept": "Becoming.AlikeWith.step",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointAlike.parts",
+   "kept": "Becoming.AlikeWith.parts",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointAlike.matchesParts",
+   "kept": "Becoming.AlikeWith.matchesParts",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointAlike.holds_iff",
+   "kept": "Becoming.AlikeWith.holds_iff",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointAlike.functional",
+   "kept": "Becoming.AlikeWith.functional",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointAlike.sameJointTests",
+   "kept": "Becoming.AlikeWith.sameTestsWith",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointBisimulation.eq",
+   "kept": "Becoming.BisimulationWith.eq",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointBisimulation.converse",
+   "kept": "Becoming.BisimulationWith.converse",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.JointBisimulation.comp",
+   "kept": "Becoming.BisimulationWith.comp",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.SameJointTests.refl",
+   "kept": "Becoming.SameTestsWith.refl",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.SameJointTests.symm",
+   "kept": "Becoming.SameTestsWith.symm",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.SameJointTests.trans",
+   "kept": "Becoming.SameTestsWith.trans",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.SameJointTests.functional",
+   "kept": "Becoming.SameTestsWith.functional",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.SameJointTests.sameBranchingTests",
+   "kept": "Becoming.SameTestsWith.sameBranchingTests",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.BranchingTest.toJoint",
+   "kept": "Becoming.BranchingTest.toWith",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  },
+  {
+   "old": "Becoming.BranchingTest.holds_toJoint",
+   "kept": "Becoming.BranchingTest.holds_toWith",
+   "item": "B4",
+   "why": "the joint frame is the case of one relation of the general theory in Likeness"
+  }
+ ],
+ "renamed": [
+  {
+   "old": "Becoming.JointTest.top",
+   "new": "Becoming.TestWith.top",
+   "item": "B4",
+   "why": "JointTest is TestWith Unit; its constructors are the general ones"
+  },
+  {
+   "old": "Becoming.JointTest.claim",
+   "new": "Becoming.TestWith.claim",
+   "item": "B4",
+   "why": "JointTest is TestWith Unit; its constructors are the general ones"
+  },
+  {
+   "old": "Becoming.JointTest.not",
+   "new": "Becoming.TestWith.not",
+   "item": "B4",
+   "why": "JointTest is TestWith Unit; its constructors are the general ones"
+  },
+  {
+   "old": "Becoming.JointTest.both",
+   "new": "Becoming.TestWith.both",
+   "item": "B4",
+   "why": "JointTest is TestWith Unit; its constructors are the general ones"
+  },
+  {
+   "old": "Becoming.JointTest.can",
+   "new": "Becoming.TestWith.can",
+   "item": "B4",
+   "why": "JointTest is TestWith Unit; its constructors are the general ones"
+  },
+  {
+   "old": "Becoming.JointTest.together",
+   "new": "Becoming.TestWith.together",
+   "item": "B4",
+   "why": "JointTest is TestWith Unit; its constructors are the general ones"
+  },
+  {
+   "old": "Becoming.Exceeding.Member.renewer",
+   "new": "Becoming.Witnesses.Member.renewer",
+   "item": "B14",
+   "why": "Exceeding.Member is Witnesses.Member; its constructors are the library's"
+  },
+  {
+   "old": "Becoming.Exceeding.Member.first",
+   "new": "Becoming.Witnesses.Member.first",
+   "item": "B14",
+   "why": "Exceeding.Member is Witnesses.Member; its constructors are the library's"
+  },
+  {
+   "old": "Becoming.Exceeding.Member.second",
+   "new": "Becoming.Witnesses.Member.second",
+   "item": "B14",
+   "why": "Exceeding.Member is Witnesses.Member; its constructors are the library's"
+  },
+  {
+   "old": "Becoming.Race.Member.renewer",
+   "new": "Becoming.Witnesses.Member.renewer",
+   "item": "B14",
+   "why": "Race.Member is Witnesses.Member; its constructors are the library's"
+  },
+  {
+   "old": "Becoming.Race.Member.first",
+   "new": "Becoming.Witnesses.Member.first",
+   "item": "B14",
+   "why": "Race.Member is Witnesses.Member; its constructors are the library's"
+  },
+  {
+   "old": "Becoming.Race.Member.second",
+   "new": "Becoming.Witnesses.Member.second",
+   "item": "B14",
+   "why": "Race.Member is Witnesses.Member; its constructors are the library's"
+  },
+  {
+   "old": "Becoming.DistinctBy.decided",
+   "new": "Becoming.DistinctUnder.decided",
+   "item": "B6",
+   "why": "DistinctBy is DistinctUnder; its laws follow the kept name"
+  },
+  {
+   "old": "Becoming.DistinctBy.eq_of",
+   "new": "Becoming.DistinctUnder.eq_of",
+   "item": "B6",
+   "why": "DistinctBy is DistinctUnder; its laws follow the kept name"
+  },
+  {
+   "old": "Becoming.DistinctBy.distinct",
+   "new": "Becoming.DistinctUnder.distinct",
+   "item": "B6",
+   "why": "DistinctBy is DistinctUnder; its laws follow the kept name"
+  }
+ ],
+ "moved": [
+  {
+   "name": "Becoming.Distinct",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.total",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.steps",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.nonzero",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.Undecided.upto",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.DistinctUnder",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.Copying.nth",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.Settling.consAct",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.Law.memberAt",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.not_mem_of_middle",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.distinct_append",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.distinct_map_on",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.total_steps_succ",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.total_steps_add",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.between_of_mem_steps",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.RouteTraces.nonzero_of_le",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.downFrom",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.mem_downFrom",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.le_of_mem_downFrom",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.Undecided.mem_upto",
+   "to": "Becoming.Prelude",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.Flow.excess_zero_of_le",
+   "to": "Becoming.Change",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.Situations.sum_one",
+   "to": "Becoming.Weighted",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.Shuttle.next_off",
+   "to": "Becoming.Roles",
+   "item": "B6"
+  },
+  {
+   "name": "Becoming.MatchesParts",
+   "to": "Becoming.Likeness",
+   "item": "B4"
+  },
+  {
+   "name": "Becoming.MatchesParts.transport",
+   "to": "Becoming.Likeness",
+   "item": "B4"
+  },
+  {
+   "name": "Becoming.MatchesParts.comp",
+   "to": "Becoming.Likeness",
+   "item": "B4"
+  }
+ ],
+ "generalized": [
+  {
+   "name": "Becoming.Distinct",
+   "how": "stated in every universe, as CrossSituational.Distinct was"
+  },
+  {
+   "name": "Becoming.distinct_append",
+   "how": "stated in every universe, as SituationTraces.distinct_append was"
+  }
+ ]
+}

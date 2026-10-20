@@ -36,7 +36,7 @@ declaration's axiom report is empty. Ported from `Generative.ExplanatoryJoiningI
 `ExplanatoryJoiningRefinement`, `ExplanatoryJoiningAnchors` and `ExplanatoryJoiningRegisters`
 (bridge fold F3E, 18 October 2026); the port is a restatement on the core, not a new result. The
 periphery's `spent` is the traced passage `Fragment.passageTrace`, its `coarseJoin` the core's
-`Joining.coarse`, and its `xs[i]?` the core's `Joining.slot`.
+`Joining.coarse`, and its `xs[i]?` the core's `Copying.nth`.
 -/
 
 universe u v w

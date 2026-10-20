@@ -128,6 +128,14 @@ No premise is added; every declaration has an empty axiom report.
   are not alike (`Unbounded.sameBranchingTests`, `Unbounded.not_alike`).
 * **Where likeness tells a frame's configurations apart, a configuration is alike to at most one
   of them** (`Alike.functional`), and so for branching tests (`SameBranchingTests.functional`).
+* **Likeness and its tests are stated once for any family of relations among configurations.**
+  A bisimulation may also match, both ways, the parts each whole holds together under each of a
+  family of relations (`MatchesParts`, `BisimulationWith`, `AlikeWith`), and a test may ask that a
+  configuration hold together, under one of them, two parts passing two tests (`TestWith`).
+  Configurations alike in this sense pass the same tests, with no premise
+  (`AlikeWith.holds_iff`). With no relation this is `Alike` and the branching tests
+  (`alikeWith_empty_iff`, `BranchingTest.holds_toWith`), and `Alike.holds_iff` is proved as that
+  case; the joint frame of `Becoming.Composition` is the case of one relation.
 * **A branching test sees when a choice is made.** The starts of `Choosing.late` and
   `Choosing.early` pass the same tests and are not alike (`Becoming.Histories`); that the first
   move can lead to a configuration where both `b` and `c` can be taken holds at the one and fails

@@ -626,10 +626,10 @@ end TreeSearch
 
 /-! ## Definitions stated once (R37)
 
-Each of these was defined with the same body in two or more modules of the run, or is a definition
-the statements stated once below name; it is stated here once, under the name kept (twentieth
-review, B6). `Distinct` and `distinct_append` are stated in every universe, as the copies they
-replace (`Distinct`, `distinct_append`) were. -/
+Each of these was defined or proved with the same body in two or more core modules, or is a
+definition that the statements stated once below name; it is stated here once, under the name kept
+(twentieth review, B6). `Distinct` and `distinct_append` are stated in every universe, so that one
+statement serves the copies stated for lists of any type. -/
 
 section Once
 

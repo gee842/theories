@@ -63,7 +63,7 @@ every schedule settles is a principle of reasoning, exactly.
 * **Instances.** The self-loop of `Becoming.Loops` couples at every step
   (`Frequency.SelfLoop.always`, `Frequency.SelfLoop.always_carried`). The loop of
   `Becoming.Closing` forming at step `T` couples at the steps from `T` (`Frequency.SelfLoop.onset`),
-  so its doubling after `T` is the rate (`Frequency.SelfLoop.onset_amount`).
+  so its doubling after `T` is the rate (`Closing.Onset.amount_after`).
 
 **Readings (the AI's, D43).**
 - On 12 October Ren asked of the loops "how how accurate can we do that uh what is the limitation do
