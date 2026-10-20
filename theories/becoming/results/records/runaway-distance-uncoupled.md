@@ -104,6 +104,7 @@ Ren's “wisdoms to avoid run away feedbacks”; testing-within-registration rea
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T073902.295130Z/verification.json) | — |
 
 Aliases: `Becoming.Flow.PolicyThrough`, `Becoming.Flow.exchangeFollows_of_policy`, `Becoming.Flow.policy_keeps_difference`, `Becoming.Flow.policy_uses_after_failure`, `Becoming.Web.raise`, `Becoming.Web.alikeThrough_raise`, `Becoming.Web.break_not_bounded`, `Becoming.Web.observed_raise_couples`, `Becoming.SupportDrawn.break_uncoupled`, `runaway`, `失控`, `runaway feedback`, `失控的反馈`
 

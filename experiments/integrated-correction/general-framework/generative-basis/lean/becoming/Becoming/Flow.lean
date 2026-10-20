@@ -622,24 +622,21 @@ theorem Balances.renewers_over {cs : List C} {g K S : Nat} (balances : L.Balance
   renewers_over_on (fun t _ _ => balances.on cs t) capacity many
 
 /-- More without end needs replenishment without bound, from a step on: where the family
-is balanced on from `T₀` on, no bound holding from `T₀` on bounds its replenishment. -/
+is balanced on from `T₀` on, no bound holding from `T₀` on bounds its replenishment. The
+whole-number instance of `Amounts.replenishment_unbounded`, with a least take of one: each taker
+takes at least one. -/
 theorem More.replenishment_unbounded_from {cs : List C} {T₀ : Nat}
     (balances : ∀ t, T₀ ≤ t → L.BalancesOn W cs t) (more : L.More cs) (R : Nat) :
     ¬ ∀ t, T₀ ≤ t → L.replenishment cs t ≤ R :=
-  fun bounded => match more (R + 1) with
-  | ⟨T₁, many⟩ =>
-    let S := T₁ + T₀
-    let N := W.stock cs S + 1
-    have over := replenished_over_on (N := N)
-      (fun t later _ => balances t (Nat.le_trans (Nat.le_add_left T₀ T₁) later))
-      (fun t later => many t (Nat.le_trans (Nat.le_add_right T₁ T₀) later))
-    have given : total (steps S N) (L.replenishment cs) ≤ R * N :=
-      steps_le S N fun t later => bounded t (Nat.le_trans (Nat.le_add_left T₀ T₁) later)
-    have le : R * N + N ≤ W.stock cs S + R * N :=
-      Nat.le_trans (Nat.le_of_eq (Nat.succ_mul R N).symm)
-        (Nat.le_trans over (Nat.add_le_add_left given _))
-    Nat.not_succ_le_self (W.stock cs S + R * N)
-      (Nat.le_trans (Nat.le_of_eq (congrArg Nat.succ (Nat.add_comm _ _))) le)
+  fun bounded => Amounts.replenishment_unbounded (M := Amounts.whole) Amounts.whole_archimedean
+    (s := W.stock cs) (u := L.uptake cs) (ε := 1) (Nat.not_succ_le_zero 0)
+    (fun t later => Nat.le_of_eq (balances t later).over)
+    (fun m => match more m with
+      | ⟨T, many⟩ => ⟨T, fun t later => Eq.subst (motive := fun x => x ≤ L.uptake cs t)
+          (Amounts.whole_times_one m).symm
+          (Nat.le_trans (many t later) (takers_le_uptake cs t))⟩)
+    R (fun t later => Eq.subst (motive := fun x => L.replenishment cs t ≤ x)
+      (Amounts.whole_times_one R).symm (bounded t later))
 
 /-- More without end needs replenishment without bound: no bound holding from some step
 on bounds the family's replenishment. -/

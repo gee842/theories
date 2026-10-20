@@ -10115,3 +10115,28 @@ The kit is [`development/ev1-selection-term/`](development/ev1-selection-term/):
 - **Connectivity and naming.** The general laws reach no base family; those the base laws do not go through are registered as general structure, and the two witnesses as model witnesses (`apart.py`). `Becoming.Naturals.add_left_cancel`, until now an apart root of the prelude, is used on the way to the base laws, so its register entry is retired. The checker's market-word scan flagged a first name `price_covariation`; it is `offspring_covariation`, for what the identity divides. The two `Decidable` instances are named, so the module adds no unnamed instance. The layer tool, rerun for the new module's row, also moved `Becoming.Direction`'s row and note to L2, where R40's grounds made it, and section 9 now counts 17 modules in L2.
 
 **Self-review.** The identities are arithmetic and say nothing about how offspring come about; their use is that the selection term proper is now a named, checked quantity that vanishes exactly where the ninth review asked. The generational laws are stated of listed generations, with descent read in only through `Flow.Descended`, so they hold whatever the listing is, and the base laws carry the support and transmission premises openly. `support_not_lower`'s premise that transmission never lowers the reading is strong: in `Drawdown` it holds for the chosen reading but not for a reading of support itself, since the descendant inheriting its parent's need is unsupported; a reading of support that descent carries would need a law of transmission, as `TransmitsWithin` is supplied. The rise in `SupportedDescent` comes from transmission, not selection, as the single parent leaves no pair: the witness shows the premises consistent on a flow, not selection proper on one.
+## 235. More without end over any amounts (R41)
+
+```text
+Result(s): Amounts.replenishment_unbounded (more without end needs replenishment beyond every multiple of a least
+       take, in Archimedean amounts), Flow.More.replenishment_unbounded_from reproved as its whole-number instance,
+       and Halving.takes_halve (the counterexample with halving takes); records least-loss-rest and
+       more-needs-renewers.
+Delta: the last natural-number law the completion report listed has its dense form, so K4 is met: every
+       natural-number law listed has a form over dense amounts or a counterexample, and the whole-number law is
+       now proved from the general one rather than beside it.
+Premises: amounts with their laws, Archimedean; balance from T0 on; a least take ε above nothing with the uptake,
+       from some step on, at least every multiple of it. The bound excluded is a bound within finitely many
+       copies of ε: the amounts are a preorder, not total, so a bound is not assumed comparable with ε.
+Evidence: core receipt 20261020T073902.295130Z (passed, empty axiom reports); the completion report (K4 met).
+Boundary: Flow, Web and World with levels in any amounts are still not stated (chapter 8.1 item 6); the counter-
+       example reads takers and takes as dyadic amounts beside the whole-number Flow, not as a Flow over dyadic
+       amounts.
+Output → input: K2 and K3 are the completion report's remaining gaps.
+```
+
+- **The law.** Read a family's stock, uptake and replenishment as amounts, balanced from `T₀` on. If for every `m`, from some step on, the uptake is at least `m` copies of a least take `ε` above nothing (as when at least `m` formations take at least `ε` each), then no bound within finitely many copies of `ε` holds of the replenishment from `T₀` on. The proof is the family law of rest: under a bound of `b` copies, from the step where the uptake reaches `b + 1` copies, the replenishment with `ε` is within the uptake, so the family falls by `ε` at every step and, in Archimedean amounts, comes to rest (`Amounts.family_rests_of_archimedean`). That contradicts the steps recurring.
+- **The instance.** In whole numbers the least take is one, and the uptake is at least the number of takers (`Flow.takers_le_uptake`), so `Flow.More` gives the uptake premise. Every bound `R` is `R` copies of one (`Amounts.whole_times_one`). `Flow.More.replenishment_unbounded_from`, and through it `More.replenishment_unbounded` and the renewer laws, now follow from the general law; the earlier direct counting proof is replaced.
+- **The counterexample.** In dyadic amounts, a family keeps a stock of one whole and is given one whole at each step. At the step from `t`, `2^(t+1)` takers take `1/2^(t+1)` each, one whole in all (`Halving.takes_within_one`, through the new bound `Halving.times_le_num`, the converse of `Dyadic.times_ge`). The family is balanced, every take is above nothing and the takers are more without end, yet the replenishment stays at one whole. What fails is the least take (`Halving.no_least_loss`).
+
+**Self-review.** The bound in the general law is measured in least takes. In a total Archimedean order every bound is within finitely many of them, but `Amounts` asks no totality, so the statement says only what the proof gives. This is the third law of the rest family whose whole-number form is an instance of a law over any amounts (after `falls_not_recurring` and the family laws).

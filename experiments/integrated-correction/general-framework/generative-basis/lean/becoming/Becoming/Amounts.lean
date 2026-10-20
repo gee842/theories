@@ -45,6 +45,10 @@ imports only `Becoming.Prelude`, so it lies below every module that reads a leve
   copies of `ε`, steps at which `P` holds do not recur (`Amounts.family_rests`, from
   `Amounts.family_still` and `Amounts.family_loses`; in Archimedean amounts
   `Amounts.family_rests_of_archimedean`).
+* **More needs replenishment without bound.** Balanced, a family whose uptake from some step on
+  exceeds every multiple of a least take above nothing is replenished beyond every multiple of it,
+  in Archimedean amounts (`Amounts.replenishment_unbounded`); `Flow.More.replenishment_unbounded_from`
+  is the whole-number instance.
 * **Whole numbers are the instance.** In whole-number amounts (`Amounts.whole`, Archimedean,
   `Amounts.whole_archimedean`) the least loss is one and every stock lies within its own count of
   ones, plus one (`Amounts.whole_within`).
@@ -243,6 +247,30 @@ theorem family_rests_of_archimedean (archimedean : M.Archimedean) {s u r : Nat �
     ¬ ∀ N, ∃ t, N ≤ t ∧ P t :=
   rests_of_archimedean archimedean positive (family_still balances dissipates)
     (family_loses balances least)
+
+/-- **More without end needs replenishment beyond every multiple of a least take.** Read a family's
+stock, uptake and replenishment as amounts, balanced from `T₀` on: where for every number `m`, from
+some step on, the uptake is at least `m` least takes `ε` above nothing (as when at least `m`
+formations take at least `ε` each), no bound within finitely many least takes holds of the
+replenishment from `T₀` on. In Archimedean amounts the family would otherwise fall by at least
+`ε` at every step from some step on and come to rest (`Amounts.family_rests_of_archimedean`). In
+whole numbers the least take is one and every bound is within its own count of ones, so the bound
+is any bound (`Flow.More.replenishment_unbounded_from`). -/
+theorem replenishment_unbounded (archimedean : M.Archimedean) {s u r : Nat → A} {ε : A}
+    {T₀ : Nat} (positive : ¬ M.le ε M.zero)
+    (balances : ∀ t, T₀ ≤ t → M.le (M.add (s (t + 1)) (u t)) (M.add (s t) (r t)))
+    (more : ∀ m, ∃ T, ∀ t, T ≤ t → M.le (M.times m ε) (u t)) (b : Nat) :
+    ¬ ∀ t, T₀ ≤ t → M.le (r t) (M.times b ε) :=
+  fun bounded => match more (b + 1) with
+  | ⟨T₁, many⟩ =>
+    have least : ∀ t, T₁ + T₀ ≤ t → M.le (M.add (r t) ε) (u t) := fun t later =>
+      M.le_trans (M.add_le_add_right ε (bounded t (Nat.le_trans (Nat.le_add_left T₀ T₁) later)))
+        (many t (Nat.le_trans (Nat.le_add_right T₁ T₀) later))
+    family_rests_of_archimedean archimedean (T := T₁ + T₀) (P := fun _ => True) positive
+      (fun t later => balances t (Nat.le_trans (Nat.le_add_left T₀ T₁) later))
+      (fun t later => M.le_trans (le_add_right (r t) ε) (least t later))
+      (fun t later _ => least t later)
+      (fun N => ⟨N + (T₁ + T₀), Nat.le_add_right N _, trivial⟩)
 
 /-! ### The approach to rest: no least loss -/
 

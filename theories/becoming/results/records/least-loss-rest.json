@@ -80,6 +80,19 @@
       ]
     },
     {
+      "en": "More without end needs replenishment without bound, in any Archimedean amounts with a least take: where a family is balanced and its uptake, from some step on, is at least every multiple of a least take ε above nothing, no bound within finitely many copies of ε holds of its replenishment. The whole-number law Flow.More.replenishment_unbounded_from is proved as its instance (each taker takes at least one). Without a least take it fails: with halving takes, 2^(t+1) takers each take 1/2^(t+1) at the step from t, so the takers are more without end, every take is above nothing, and one whole given at each step balances them.",
+      "zh": "在任何有最小取用的阿基米德量中，不止地更多需要没有界的补充：家族平衡，且从某步起其取用至少是大于无的最小取用 ε 的每个倍数时，其补充不受 ε 的有限份之内的任何界约束。整数规律 Flow.More.replenishment_unbounded_from 作为其实例证明（每个取用者至少取一）。没有最小取用则不成立：取用减半时，从 t 起的那一步有 2^(t+1) 个取用者各取 1/2^(t+1)，于是取用者不止地更多，每个取用都大于无，而每步给予一个整体就平衡它们。",
+      "declarations": [
+        "Becoming.Amounts.replenishment_unbounded",
+        "Becoming.Flow.More.replenishment_unbounded_from",
+        "Becoming.Halving.times_le_num",
+        "Becoming.Halving.le_two_pow",
+        "Becoming.Halving.one",
+        "Becoming.Halving.takes_within_one",
+        "Becoming.Halving.takes_halve"
+      ]
+    },
+    {
       "en": "Whole numbers are the instance: the least loss is one and every stock lies within its own count of ones plus one, and whole numbers are Archimedean. The rest family is proved as this instance, below the modules that state it: the spine's two descents falls_not_recurring (Becoming.Renewal) and falls_stop_unrefuted (Becoming.Space), Flow.taking_not_recurring_from and Flow.takers_within_on (Becoming.Dissipation) and Flow.change_stops_unrefuted (Becoming.Openness), through which the rest theorem World.rests_unrefuted_enclosed follows.",
       "zh": "整数是其实例：最小损失为一，每个存量都在其自身个数加一份一之内，整数是阿基米德的。停息诸律作为这一实例证明，在陈述它们的模块之下：脊柱的两个下降 falls_not_recurring（Becoming.Renewal）与 falls_stop_unrefuted（Becoming.Space）、Flow.taking_not_recurring_from 与 Flow.takers_within_on（Becoming.Dissipation）以及 Flow.change_stops_unrefuted（Becoming.Openness），停息定理 World.rests_unrefuted_enclosed 经最后一条推出。",
       "declarations": [
@@ -328,6 +341,13 @@
         "en": "There counting the refinement brings rest at every resolution with no premise added; here the premise whole numbers supplied is named for amounts with no unit.",
         "zh": "那里把细分算入，不添前提就在每一分辨率下带来停息；这里为无单位的量指明整数所供给的前提。"
       }
+    },
+    {
+      "id": "more-needs-renewers",
+      "detail": {
+        "en": "Its law that more without end needs replenishment without bound is the whole-number instance of the law over Archimedean amounts with a least take stated here (R41).",
+        "zh": "其“不止地更多需要没有界的补充”的规律，是这里在有最小取用的阿基米德量上所述规律的整数实例（R41）。"
+      }
     }
   ],
   "references": [
@@ -382,9 +402,14 @@
         "Becoming.Layered.not_archimedean",
         "Becoming.Layered.stock",
         "Becoming.Layered.times_coarse",
-        "Becoming.Layered.zero"
+        "Becoming.Layered.zero",
+        "Becoming.Halving.times_le_num",
+        "Becoming.Halving.le_two_pow",
+        "Becoming.Halving.one",
+        "Becoming.Halving.takes_within_one",
+        "Becoming.Halving.takes_halve"
       ],
-      "sha256": "c86df98f2a1246acb96b7390b86012771260e6913d1c6da9140a8f9037a635ce"
+      "sha256": "cda15540f061141b1c92cbbe6512399a2fad23886080ab4b651f47c8a51e54d6"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
@@ -401,7 +426,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Amounts.lean",
       "role": "proof",
-      "sha256": "2291776c8b8642d90b8ce557a35295352ee4c71a361513525066ad21646c63a9",
+      "sha256": "dd51aa6f8eaafe4731e5a64462eb176d5c3e19392a162e25095f58bf4fe2b9f7",
       "declarations": [
         "Becoming.Amounts",
         "Becoming.Amounts.Archimedean",
@@ -435,7 +460,8 @@
         "Becoming.Amounts.whole_archimedean",
         "Becoming.Amounts.whole_losing_steps",
         "Becoming.Amounts.whole_times_one",
-        "Becoming.Amounts.whole_within"
+        "Becoming.Amounts.whole_within",
+        "Becoming.Amounts.replenishment_unbounded"
       ]
     },
     {
@@ -487,9 +513,10 @@
       "role": "proof",
       "declarations": [
         "Becoming.Flow.BalancesOn",
-        "Becoming.Flow.BalancesOn.over"
+        "Becoming.Flow.BalancesOn.over",
+        "Becoming.Flow.More.replenishment_unbounded_from"
       ],
-      "sha256": "7364d547b7d4349fe7fcff8868e81ce2464e1ee430387f0918cbfee5ab05a3bd"
+      "sha256": "790cf03bbfa755bde10d6a0c3086e797844c92ff11e0528e7f4b761eb5d439f4"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
@@ -551,7 +578,7 @@
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "8acb26970ea0f701aa886ca245c7858c56f5554a5f1c907421edb0e8d3992966"
+      "sha256": "f3ec740f1ed6232f5d1004324f4fbc446ddf7b6a6c2da9cdd1fcb5ab66fa13fb"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
@@ -594,12 +621,18 @@
       "role": "receipt",
       "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T073902.295130Z/verification.json",
+      "role": "receipt",
+      "sha256": "790a8973dbabe58f9bc5f4c27d39589c8827b6fab3fe08a8d342f6ef02bca4a8",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T073902.295130Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LeastLoss",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -613,7 +646,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T073902.295130Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -662,7 +695,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Amounts.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T073902.295130Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Amounts",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -691,6 +724,10 @@
     {
       "en": "2026-10-20: 13 bookkeeping notes condensed from 19 October 2026 to 20 October 2026: receipts rebound, sources re-pointed or rehashed after reading their changes, with the claim unchanged. Each note is kept verbatim in the snapshot _process/architecture/history/e8c0760ae4065391/least-loss-rest.json and in git.",
       "zh": "2026-10-20：13 条记账性说明合并（19 October 2026 至 20 October 2026）：收据重绑、来源重指或重算哈希，主张不变。每条原文保存在快照 _process/architecture/history/e8c0760ae4065391/least-loss-rest.json 和 git 中。"
+    },
+    {
+      "en": "20 October 2026, R41 (study section 235): a law added, more without end needs replenishment without bound over Archimedean amounts with a least take (Amounts.replenishment_unbounded), with the whole-number law as its instance and the counterexample with halving takes (Halving.takes_halve); related more-needs-renewers.",
+      "zh": "2026年10月20日，R41（研究第235节）：增加一条规律，在有最小取用的阿基米德量上不止地更多需要没有界的补充（Amounts.replenishment_unbounded），整数规律为其实例，并有取用减半的反例（Halving.takes_halve）；关联 more-needs-renewers。"
     }
   ],
   "text_versions": [

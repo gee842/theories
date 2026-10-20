@@ -2,14 +2,14 @@
 
 # The completion criterion, run
 
-The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T072647.879143Z` and the connectivity measure of `6eee7da51` (core receipt `20261020T070914.793352Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
+The criterion K1–K7 adopted on 20 October 2026 ([study §218](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), run by [`completion.py`](../../../../tools/research/completion.py) on the coverage file [`COVERAGE.json`](COVERAGE.json), the core receipt `20261020T073902.295130Z` and the connectivity measure of `6eee7da51` (core receipt `20261020T070914.793352Z`). A criterion is met when it has no finding. Statements are read from the Lean source text, so a premise reached only through a definition the statement unfolds is not found.
 
 | | Criterion | Met | Findings |
 |---|---|---|---:|
 | K1 | Coverage | yes | 0 |
 | K2 | Unity | no | 19 |
 | K3 | Premises | no | 2 |
-| K4 | Representation | no | 1 |
+| K4 | Representation | yes | 0 |
 | K5 | Enclosure | yes | 0 |
 | K6 | The ethics chain | yes | 0 |
 | K7 | Open register | yes | 0 |
@@ -69,13 +69,13 @@ Premises found in central statements: C, the widening comparison (1); a census (
 - decided: used by 4 central statement(s) (Becoming.ExchangeLaw.response_not_fixed_by_coupling, Becoming.Learnable.learnable_iff, Becoming.LearnableRuns.learnable_iff_tracks, ...), no witnesses meeting and failing it listed; calibrated rather than witnessed: a count exists exactly where what it counts is decided (counts_iff_decided), and asked of every world some laws are exactly omniscience principles (chapter 8.6); no world is exhibited failing it
 - C, the widening comparison: used by 1 central statement(s) (Becoming.Web.paths_comparison_widens), no witnesses meeting and failing it listed; an order premise: no theorem exhibits a comparison meeting and one failing it
 
-## K4. Representation: not met
+## K4. Representation: met
 
 Modelling choices found in central statements: discrete steps (78); natural-number amounts (51); supplied observation (9); a fixed type of formations (8); decidedness (4); naming (1).
 
-Natural-number laws: `falls_not_recurring`: form `Amounts.rests`; `World.comes_to_rest_unrefuted`: form `Amounts.family_rests`; `rising_recurs`: counterexample `Halving.never_rests`; `Flow.excess_bounded`: form `Amounts.losses_within`; `Flow.More.replenishment_unbounded`: none.
+Natural-number laws: `falls_not_recurring`: form `Amounts.rests`; `World.comes_to_rest_unrefuted`: form `Amounts.family_rests`; `rising_recurs`: counterexample `Halving.never_rests`; `Flow.excess_bounded`: form `Amounts.losses_within`; `Flow.More.replenishment_unbounded`: form `Amounts.replenishment_unbounded`.
 
-- Becoming.Flow.More.replenishment_unbounded: no form over dense amounts or counterexample (uses that each taker takes at least one unit per step; open: a form with a least take over Archimedean amounts, or a counterexample with takes that halve (chapter 8.1 item 6))
+No finding.
 
 ## K5. Enclosure: met
 

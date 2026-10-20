@@ -37,6 +37,11 @@ dense, with what the whole numbers supplied named as two premises.
   - *Approach without rest.* The halving stock comes arbitrarily near rest, as the approach law
     says, and still falls at every step (`Halving.approaches_without_reaching`): with no least
     loss, approach does not become rest, as in exponential relaxation.
+  - *Takers without bound, replenishment bounded.* With halving takes, `2 ^ (t + 1)` takers each
+    take `1 / 2 ^ (t + 1)` at the step from `t`, one whole in all: the takers are more without
+    end, every take is above nothing, and one whole given at each step balances them
+    (`Halving.takes_halve`). More without end needs replenishment without bound only with a least
+    take (`Amounts.replenishment_unbounded`).
 * **Rest and return.** Over finitely many configurations, a law that merges nothing returns every
   configuration (`Law.Lossless.returns`, `Becoming.Recurrence`), so an amount that does not rise
   along an orbit regains its value (`Law.Lossless.regains`) and every loss along it is nothing
@@ -239,6 +244,50 @@ theorem approaches_without_reaching :
     ⟨Amounts.few_large_losses_of_archimedean Dyadic.archimedean (fun t _ => falls t) positive,
      Amounts.approaches_rest (T := 0) Dyadic.archimedean (fun t _ => falls t) positive⟩,
    falls_strictly⟩
+
+/-- Copies of an amount are at most the amount with its numerator multiplied. -/
+theorem times_le_num (n k : Nat) : ∀ m, Dyadic.le (Dyadic.amounts.times m ⟨n, k⟩) ⟨m * n, k⟩
+  | 0 => Dyadic.zero_le' _
+  | m + 1 => Dyadic.le_trans' (Dyadic.add_le_add_right' ⟨n, k⟩ (times_le_num n k m))
+      (show (m * n * 2 ^ k + n * 2 ^ k) * 2 ^ k ≤ (m + 1) * n * 2 ^ (k + k) from by
+        rw [← add_mul_split, Nat.succ_mul, Naturals.pow_add, mul_assoc_nat]
+        exact Nat.le_refl _)
+
+theorem le_two_pow : ∀ K, K ≤ 2 ^ K
+  | 0 => Nat.zero_le _
+  | K + 1 => Nat.le_trans (Nat.add_le_add (le_two_pow K) (Nat.two_pow_pos K))
+      (Nat.le_of_eq ((Nat.mul_two _).symm.trans (Nat.pow_succ 2 K).symm))
+
+/-- One whole. -/
+def one : Dyadic := ⟨1, 0⟩
+
+/-- At the step from `t`, `2 ^ (t + 1)` takers take `loss t` each, `1 / 2 ^ (t + 1)`: one whole
+in all. -/
+theorem takes_within_one (t : Nat) :
+    Dyadic.amounts.le (Dyadic.amounts.times (2 ^ (t + 1)) (loss t)) one :=
+  Dyadic.le_trans' (times_le_num 1 (t + 1) (2 ^ (t + 1)))
+    (Nat.le_of_eq ((Nat.mul_one _).trans ((Nat.mul_one _).trans (Nat.one_mul _).symm)))
+
+/-- **The counterexample to replenishment without bound, with no least take.** In dyadic amounts,
+dense and Archimedean, a family keeps a stock of one whole and is given one whole at every step;
+at the step from `t`, `2 ^ (t + 1)` takers take `1 / 2 ^ (t + 1)` each. The family is balanced
+(its stock after a step with the uptake is within its stock before with the replenishment), each
+take is above nothing, the takers are more without end (for every number, from some step on at
+least that many take), and the replenishment is one whole at every step; what fails is
+the least take: no amount above nothing is within every take. So the whole-number law
+`Flow.More.replenishment_unbounded` needs that each taker takes at least a least amount, as
+`Amounts.replenishment_unbounded` states. -/
+theorem takes_halve :
+    (∀ t, Dyadic.amounts.le
+      (Dyadic.amounts.add one (Dyadic.amounts.times (2 ^ (t + 1)) (loss t)))
+      (Dyadic.amounts.add one one)) ∧
+    (∀ t, ¬ Dyadic.amounts.le (loss t) Dyadic.amounts.zero) ∧
+    (∀ K, ∃ T, ∀ t, T ≤ t → K ≤ 2 ^ (t + 1)) ∧
+    ∀ ε, ¬ Dyadic.amounts.le ε Dyadic.amounts.zero → ¬ ∀ t, Dyadic.amounts.le ε (loss t) :=
+  ⟨fun t => Amounts.add_le_add_left one (takes_within_one t), loss_positive,
+   fun K => ⟨K, fun _ later => Nat.le_trans (le_two_pow K)
+     (Nat.pow_le_pow_right (Nat.succ_pos 1) (Nat.le_succ_of_le later))⟩,
+   no_least_loss⟩
 
 end Halving
 

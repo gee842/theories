@@ -648,9 +648,9 @@
       },
       {
         "law": "Becoming.Flow.More.replenishment_unbounded",
-        "dense": null,
-        "kind": null,
-        "note": "uses that each taker takes at least one unit per step; open: a form with a least take over Archimedean amounts, or a counterexample with takes that halve (chapter 8.1 item 6)"
+        "dense": "Becoming.Amounts.replenishment_unbounded",
+        "kind": "form",
+        "note": "in Archimedean amounts, uptake beyond every multiple of a least take needs replenishment beyond every multiple of it; the whole-number law is proved as its instance (least take one); without a least take it fails (Halving.takes_halve)"
       }
     ]
   },

@@ -45,8 +45,8 @@
       ]
     },
     {
-      "zh": "生成不止地更多，当对每个数，从某步起每一步至少有那么多形成从家族取用。取用的量是自然数，所以每个取用者每步至少取用一个单位；于是在任意一段至少 K 个形成取用的步上，家族所得的补充每步至少 K，减去开始时的存量；不止地更多需要补充没有最终的界。",
-      "en": "Generation is more without end when, for every number, from some step on at least that many formations take from the family at every step. Amounts are natural numbers, so each taker takes at least one unit per step; over any stretch from which at least K formations take, the family is replenished by at least K per step, less its stock at the start, and more without end needs replenishment with no eventual bound.",
+      "zh": "生成不止地更多，当对每个数，从某步起每一步至少有那么多形成从家族取用。取用的量是自然数，所以每个取用者每步至少取用一个单位；于是在任意一段至少 K 个形成取用的步上，家族所得的补充每步至少 K，减去开始时的存量；不止地更多需要补充没有最终的界。在任何量上，同样的规律在有最小取用的阿基米德量中成立，这里是其整数实例；取用减半时不成立（least-loss-rest）。",
+      "en": "Generation is more without end when, for every number, from some step on at least that many formations take from the family at every step. Amounts are natural numbers, so each taker takes at least one unit per step; over any stretch from which at least K formations take, the family is replenished by at least K per step, less its stock at the start, and more without end needs replenishment with no eventual bound. Over any amounts the same holds with a least take in Archimedean amounts, of which this is the whole-number instance; with takes that halve it fails (least-loss-rest).",
       "declarations": [
         "Becoming.Flow.takers",
         "Becoming.Flow.More",
@@ -383,13 +383,20 @@
         "zh": "局部规律用 laws-of-one-step 的 Flow.BalancesOn；这是证明上的复用。记录之间不设依存边，因为 laws-of-one-step 经其依存链依存于本记录。",
         "en": "The local laws use Flow.BalancesOn of laws-of-one-step; this is reuse in the proof. No dependency edge joins the records, since laws-of-one-step depends on this one through its chain of dependencies."
       }
+    },
+    {
+      "id": "least-loss-rest",
+      "detail": {
+        "en": "Flow.More.replenishment_unbounded_from is proved as the whole-number instance of Amounts.replenishment_unbounded; Halving.takes_halve shows the least take is needed.",
+        "zh": "Flow.More.replenishment_unbounded_from 作为 Amounts.replenishment_unbounded 的整数实例证明；Halving.takes_halve 表明需要最小取用。"
+      }
     }
   ],
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "7364d547b7d4349fe7fcff8868e81ce2464e1ee430387f0918cbfee5ab05a3bd",
+      "sha256": "790cf03bbfa755bde10d6a0c3086e797844c92ff11e0528e7f4b761eb5d439f4",
       "declarations": [
         "Becoming.sign",
         "Becoming.count",
@@ -622,12 +629,18 @@
       "role": "receipt",
       "sha256": "44b9585ada88cf63ea75fd9b0f070b9975e1ea83148a14b78bc4dca27384a8b7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T073902.295130Z/verification.json",
+      "role": "receipt",
+      "sha256": "790a8973dbabe58f9bc5f4c27d39589c8827b6fab3fe08a8d342f6ef02bca4a8",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T051144.879480Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T073902.295130Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -736,6 +749,10 @@
     {
       "en": "20 October 2026, R37 (lens B of the twentieth review: the witness models as instances of one library, one bisimulation theory for a family of relations, the definition twins and copies stated once): Moved with their full names: from Flow.lean to Prelude.lean, steps; from Population.lean to Prelude.lean, Distinct; from World.lean to Prelude.lean, total. Proof bindings (Flow.lean, Population.lean, Prelude.lean, World.lean) rebound to core receipt 20261020T051144.879480Z. Re-pointed after reading the change: Arising.lean, Dependence.lean, Flow.lean, Population.lean, World.lean: twin definitions, witness models or copies replaced by the definition stated once, the instance of Witnesses or the kept name; kept statements unchanged; Prelude.lean: the definitions and statements stated once (Distinct, total, steps, nonzero, Copying.nth, Law.memberAt, Settling.consAct, DistinctUnder, downFrom and their laws) moved here; other statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R37（第二十次评审的 B 视角：见证模型为一个库的实例，为一族关系的一个互模拟理论，孪生定义与副本只陈述一次）：连同完整名称移动：从 Flow.lean 到 Prelude.lean：steps；从 Population.lean 到 Prelude.lean：Distinct；从 World.lean 到 Prelude.lean：total。证明绑定（Flow.lean、Population.lean、Prelude.lean、World.lean）改到核心回执 20261020T051144.879480Z。读过改动后重新指向：Arising.lean、Dependence.lean、Flow.lean、Population.lean、World.lean：孪生定义、见证模型或副本由只陈述一次的定义、Witnesses 的实例或保留的名称取代；保留的陈述不变；Prelude.lean：只陈述一次的定义与陈述（Distinct、total、steps、nonzero、Copying.nth、Law.memberAt、Settling.consAct、DistinctUnder、downFrom 及其规律）移入；其他陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R41 (study section 235): the replenishment law is now proved as the whole-number instance of a law over Archimedean amounts with a least take (in least-loss-rest); the law's text says so. The claim is unchanged.",
+      "zh": "2026年10月20日，R41（研究第235节）：补充之律现在作为有最小取用的阿基米德量上一条规律的整数实例证明（见 least-loss-rest）；规律文字如此说明。主张不变。"
     }
   ],
   "text_versions": [
