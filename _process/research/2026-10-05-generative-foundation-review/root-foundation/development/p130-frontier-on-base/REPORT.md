@@ -1,6 +1,6 @@
 # P130：前沿与离群模块陈述在基上 / The frontier and the apart modules stated on the base
 
-2026-10-16. A report by the P130 subagent (Claude Opus 5.5) for board item P130, claimed in ce808d6a from [the release-readiness review](../../BECOMING-RELEASE-READINESS-REVIEW.md) §4. The lead saved it here, because the harness kept the subagent from writing report files. It is AI work, not Ren's words.
+2026-10-16. A report by the P130 subagent (Claude Opus 5.5) for board item P130, claimed in ce808d6a from [the release-readiness review](../../../history/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md) §4. The lead saved it here, because the harness kept the subagent from writing report files. It is AI work, not Ren's words.
 
 **Branch.** `p130-frontier-on-base`, from ce808d6a. Commits: 44be87ed (Runs, CourseWorlds), 0497eb66 (LearnableRuns), 11a868c9 (ParityReadings), b360ba49 (FinerTraces), d62bd5e5 (root imports, checker `CORE` and scope sentences), 73d2f2bd (FormedLoops), f5940006 (connectivity regenerated, with `connectivity_bases.py`). It is landed through `land-p130`.
 

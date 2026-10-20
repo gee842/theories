@@ -17,7 +17,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 <details>
 <summary>RenewalExamples.lean — 36 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean`
 
@@ -74,7 +74,7 @@ Contains 21 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ResourceContinuation.lean — 29 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean`
 
@@ -124,7 +124,7 @@ Contains 24 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>SupportNecessity.lean — 24 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/SupportNecessity.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/SupportNecessity.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/SupportNecessity.lean`
 
@@ -169,7 +169,7 @@ Contains 18 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>NativePortContinuation.lean — 32 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/NativePortContinuation.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/NativePortContinuation.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/NativePortContinuation.lean`
 
@@ -222,7 +222,7 @@ Contains 27 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RenewalAccounting.lean — 27 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalAccounting.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalAccounting.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalAccounting.lean`
 
@@ -270,7 +270,7 @@ Contains 12 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RenewalBasics.lean — 35 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalBasics.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalBasics.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalBasics.lean`
 
@@ -321,7 +321,7 @@ Contains 35 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RenewalCharacterization.lean — 68 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalCharacterization.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalCharacterization.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalCharacterization.lean`
 
@@ -410,7 +410,7 @@ Contains 55 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RenewalClosure.lean — 25 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalClosure.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalClosure.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalClosure.lean`
 
@@ -456,7 +456,7 @@ Contains 21 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RenewalConfigurations.lean — 37 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalConfigurations.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalConfigurations.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalConfigurations.lean`
 
@@ -514,7 +514,7 @@ Contains 29 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RenewalLink.lean — 24 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalLink.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalLink.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalLink.lean`
 
@@ -559,7 +559,7 @@ Contains 16 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RenewalPremises.lean — 26 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalPremises.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalPremises.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalPremises.lean`
 
@@ -606,7 +606,7 @@ Contains 19 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RenewalSufficiency.lean — 36 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalSufficiency.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalSufficiency.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalSufficiency.lean`
 

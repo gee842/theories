@@ -209,4 +209,4 @@ python3 -B tools/research/reading_catalogue.py --check  # coverage, fields, link
 python3 -B tools/research/lean_catalogue.py --check
 ```
 
-These checks validate documentation, links and snapshots, not Lean proofs. Formal results are reproduced through each package’s own instructions. The earlier editing record is kept in [the root-foundation study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md).
+These checks validate documentation, links and snapshots, not Lean proofs. Formal results are reproduced through each package’s own instructions. The earlier editing record is kept in [the study history](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RESULTS-CATALOGUE-RECORD.md).

@@ -110,8 +110,8 @@ The selection theorems ask which laws the counts obey under a selection of the e
 | proof | [Population.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean) | `Becoming.Listed`, `Becoming.came_between`, `Becoming.not_not_all`, `Becoming.came_between_from` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
-| integration | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
-| integration | [ZERO-PREMISE-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md) | — |
+| integration | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
+| integration | [ZERO-PREMISE-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ZERO-PREMISE-PLAN.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-11-zero-premise-laws.md](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md) | — |
 | provenance | [2026-10-11-one-unified-theory-together.md](../../../../sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md) | — |

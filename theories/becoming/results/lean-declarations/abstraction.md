@@ -17,7 +17,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 <details>
 <summary>AcquiredApplicability.lean — 45 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean`
 
@@ -80,7 +80,7 @@ Definitions and types:
 <details>
 <summary>ApplicabilityGrounding.lean — 6 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean`
 
@@ -107,7 +107,7 @@ Contains 6 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>ApplicabilityProofs.lean — 49 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean`
 
@@ -175,7 +175,7 @@ Definitions and types:
 <details>
 <summary>CalibrationRevision.lean — 68 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean`
 
@@ -264,7 +264,7 @@ Contains 32 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RecipeGrounding.lean — 30 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean`
 
@@ -315,7 +315,7 @@ Contains 16 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RecipeNative.lean — 33 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean`
 
@@ -369,7 +369,7 @@ Contains 13 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ConsequenceInquiry.lean — 17 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean`
 
@@ -407,7 +407,7 @@ Contains 15 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ContinuationScope.lean — 30 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean`
 
@@ -456,7 +456,7 @@ Contains 30 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>CouplingOptima.lean — 28 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean`
 
@@ -503,7 +503,7 @@ Contains 28 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>InquiryRelevance.lean — 11 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean`
 
@@ -535,7 +535,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>InquiryWarrant.lean — 38 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean`
 
@@ -594,7 +594,7 @@ Contains 38 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>KeptSupport.lean — 6 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean`
 
@@ -621,7 +621,7 @@ Contains 6 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>PluralRecords.lean — 49 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean`
 
@@ -689,7 +689,7 @@ Contains 49 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RecordedClaims.lean — 14 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean`
 
@@ -722,7 +722,7 @@ Contains 13 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>RemainingDependency.lean — 80 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean`
 
@@ -823,7 +823,7 @@ Contains 43 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>SelectionRelabelCorrespondence.lean — 13 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.zh.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.zh.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean`
 
@@ -852,7 +852,7 @@ Imports: `Becoming.Selection`, `TieBreaking`
 <details>
 <summary>TieBreaking.lean — 10 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean`
 
@@ -883,7 +883,7 @@ Contains 9 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>CompletionBoundaries.lean — 35 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean`
 
@@ -939,7 +939,7 @@ Contains 26 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>CompletionExamples.lean — 34 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean`
 
@@ -994,7 +994,7 @@ Contains 21 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>CompletionRole.lean — 45 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean`
 
@@ -1060,7 +1060,7 @@ Contains 30 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>FiniteBranching.lean — 9 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean`
 
@@ -1090,7 +1090,7 @@ Contains 6 textual `#print axioms` commands; their results belong to the origina
 <details>
 <summary>FiniteBranchingCorrespondence.lean — 10 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.zh.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.zh.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean`
 
@@ -1119,7 +1119,7 @@ Definitions and types:
 <details>
 <summary>HistoryIdeals.lean — 63 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean`
 
@@ -1203,7 +1203,7 @@ Contains 46 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>IdealWarrant.lean — 68 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean`
 
@@ -1414,7 +1414,7 @@ Definitions and types:
 <details>
 <summary>PrefixSafety.lean — 84 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean) · [Theory](../../history/ARGUMENTS-A-L-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean`
 
@@ -1519,7 +1519,7 @@ Contains 50 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>PrefixSafetyCorrespondence.lean — 9 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.zh.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.zh.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean`
 
@@ -1544,7 +1544,7 @@ Imports: `Becoming.Horizon`, `PrefixSafety`
 <details>
 <summary>Admission.lean — 50 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean`
 
@@ -1613,7 +1613,7 @@ Definitions and types:
 <details>
 <summary>FunctionGraphs.lean — 36 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean`
 
@@ -1668,7 +1668,7 @@ Definitions and types:
 <details>
 <summary>IndexedAssembly.lean — 26 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean`
 
@@ -1713,7 +1713,7 @@ Definitions and types:
 <details>
 <summary>RelationalAssembly.lean — 22 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean`
 
@@ -1754,7 +1754,7 @@ Definitions and types:
 <details>
 <summary>FiniteAdmission.lean — 27 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean`
 
@@ -1800,7 +1800,7 @@ Definitions and types:
 <details>
 <summary>SignatureTruth.lean — 39 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean`
 
@@ -1858,7 +1858,7 @@ Definitions and types:
 <details>
 <summary>DependentCompletion.lean — 35 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean`
 
@@ -1912,7 +1912,7 @@ Definitions and types:
 <details>
 <summary>FamilyAdmission.lean — 17 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean`
 
@@ -1948,7 +1948,7 @@ Definitions and types:
 <details>
 <summary>EqualityGenerativity.lean — 28 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md) · No direct module-documentation link found
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean`
 
@@ -1995,7 +1995,7 @@ Definitions and types:
 <details>
 <summary>WitnessHull.lean — 56 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean`
 
@@ -2072,7 +2072,7 @@ Contains 26 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>CoverageBoundary.lean — 21 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean`
 
@@ -2112,7 +2112,7 @@ Definitions and types:
 <details>
 <summary>SecondOrder.lean — 57 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean`
 
@@ -2188,7 +2188,7 @@ Definitions and types:
 <details>
 <summary>TypedTruth.lean — 40 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean`
 
@@ -2247,7 +2247,7 @@ Definitions and types:
 <details>
 <summary>InductiveDomain.lean — 38 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean`
 
@@ -2304,7 +2304,7 @@ Definitions and types:
 <details>
 <summary>Initiality.lean — 9 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean) · [Theory](../../history/ARGUMENTS-M-Z-2026-10-08.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean`
 
@@ -2332,7 +2332,7 @@ Definitions and types:
 <details>
 <summary>DenseOrder.lean — 57 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean`
 
@@ -2446,7 +2446,7 @@ Definitions and types:
 <details>
 <summary>PotentialTruth.lean — 26 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md)
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean`
 

@@ -1,0 +1,768 @@
+{
+  "schema_version": 1,
+  "batch": "R35-B4-study",
+  "date": "2026-10-20T01:40:55+00:00",
+  "base_commit": "3a2ef5e386f7e9d0dfa949ba1bb579ee336dfb0b",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-BRIDGE-FOLD.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-BRIDGE-FOLD.md",
+      "sha256": "6a758b294903c6cd0b92d52115dc5786923a2895e175160d1f87c4c19434bae4",
+      "blob": "205cc982e9efa16ddc92e8f3c4d636622a111b42",
+      "reason": "R35 (20 October 2026), batch B4: E10: executed (F1-F3 sweep landed 2f8b4d3b3)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-BRIDGE-FOLD.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md",
+      "sha256": "6921df1f53be7ca9e0af51130f70b6a51389e509f9e46edc0214e69b94daaee6",
+      "blob": "a4c48e154fc09e599ca7dd36722309653c51d033",
+      "reason": "R35 (20 October 2026), batch B4: E10: superseded review",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-EIGHTEENTH-REVIEW.zh.md",
+      "sha256": "718699aeaca5a80342376b66231f3ab58beef67fed8d9992a9b87c55c16c438c",
+      "blob": "c9ee80a439512239b5518a97b43d46d3c50699aa",
+      "reason": "R35 (20 October 2026), batch B4: E10: edition",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.zh.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md",
+      "sha256": "b020e72f7e84b5c578e4f8e6170127f28e8efb3682146e5cdbdf96a8696a9d63",
+      "blob": "4314d2ce856f48ed60411817a1edd540ec1ed48a",
+      "reason": "R35 (20 October 2026), batch B4: E10: superseded review (seventeenth)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.zh.md",
+      "sha256": "bffcb22f1580b0a422c520ccefb08ac8837fd603e12910cf9f6a72ef915cfdc3",
+      "blob": "ed7c17673258950f949d42b7bd888dab04276175",
+      "reason": "R35 (20 October 2026), batch B4: E10: edition",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.zh.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-NINETEENTH-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-NINETEENTH-REVIEW.md",
+      "sha256": "9ac4bc68234837f960d2d0e82ff7d7a083b2e3f11f87e9a33c9613214f68c2ba",
+      "blob": "15457eecdf1434af1d9ce6c218587ea3d33e433c",
+      "reason": "R35 (20 October 2026), batch B4: E10 kept it as latest; the twentieth review supersedes it and R21 landed its fixes",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-NINETEENTH-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md",
+      "sha256": "8b9a088b31c9bedec93de806e0328a7a62e7722233959e09f5f3d333debe9265",
+      "blob": "7a24409a6b5cae4a4aac82d8896b7cbfd5e555ae",
+      "reason": "R35 (20 October 2026), batch B4: E10: superseded review",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "sha256": "39481677948c2c7701b1fd6b9c942dabc0003e06f66fc83b9f85912566f87593",
+      "blob": "b5e2b1ffc171f50b2334c91f199f6a53c2588f73",
+      "reason": "R35 (20 October 2026), batch B4: E10: executed plan (P0-P63, I4); still the statement source of 26 records and integration of 15: the tool re-keys them",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-UNIFICATION-PLAN.zh.md",
+      "sha256": "3c3de795b4bfe9a00be0f7ec3ac1ab866012424b37089eb3a0afd46f3f5608c7",
+      "blob": "d32f3151cfe1724c7d05fc841e41d7c4f52d29a7",
+      "reason": "R35 (20 October 2026), batch B4: E10: edition of the executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.zh.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPARISON-CONTENT-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPARISON-CONTENT-INTEGRATION-CHECKS.json",
+      "sha256": "96121d260c44d92d076993b20e2b73f646fac00014fb26679b04efb36e5fede2",
+      "blob": "d96abbb99ae8e7a4bcdeae681e67088bf119fb4e",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (14 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPARISON-CONTENT-INTEGRATION-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-EPISODE-COMPARISON-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETE-EPISODE-COMPARISON-INTEGRATION-CHECKS.json",
+      "sha256": "2765acd6ef9ca5339ee665f6137e86de64685a085f6dac9a51e57db45cffea99",
+      "blob": "9fd6dba37365661d19ad87d20f91fbdcf504df59",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (14 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-EPISODE-COMPARISON-INTEGRATION-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EPISODE-AND-SUSTAINED-HARM-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EPISODE-AND-SUSTAINED-HARM-INTEGRATION-CHECKS.json",
+      "sha256": "c082d877e9604eb486b089d28b197615c9bde19261db7a26f0716d460b0b7994",
+      "blob": "8475842799f0b017ac83a7502e13ea3e4cd54328",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (14 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EPISODE-AND-SUSTAINED-HARM-INTEGRATION-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FINITE-RESPONSIVENESS-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FINITE-RESPONSIVENESS-INTEGRATION-CHECKS.json",
+      "sha256": "66fa15120fc54b26aa3e03f11ff01945abf74ccefeab3ff0dc67e721fe29248c",
+      "blob": "ddb8298e6d2bf08e49ec0dc3323c4697eb3d1f68",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (14 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FINITE-RESPONSIVENESS-INTEGRATION-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-COMPLETION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-COMPLETION-CHECKS.json",
+      "sha256": "d12d386d82d15daa016ca81447d6d032c48f79de97f6ed33510d47c9949ddfed",
+      "blob": "74ce1cd325c104cf2b9295980c20f8dd703ffcce",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (13 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-COMPLETION-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REFERENCE-PLAN-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-REFERENCE-PLAN-INTEGRATION-CHECKS.json",
+      "sha256": "155330367c12055b48e26a7268e0e146ada97416fb88d3325a891b26b2c840df",
+      "blob": "1d0682cf2eaeee7fec13557d7ef04241444f70a0",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (13 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REFERENCE-PLAN-INTEGRATION-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVISION-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-REVISION-INTEGRATION-CHECKS.json",
+      "sha256": "9019dd7d84b19310d16ee2308fcc6388407f357c5d079c83bffdf3878cc68a6a",
+      "blob": "a06dde5027442ca04ac9dd6831b8ced4456b3d37",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (13 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVISION-INTEGRATION-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MODULE-CLASSIFICATION.md",
+      "sha256": "c30adc0af179e1e984513648193e3fbfcd6e1e7948e3770dc1989eba5835802b",
+      "blob": "9d7913055e0981f044db7d0c1bee3a14940668f5",
+      "reason": "R35 (20 October 2026), batch B4: E10: executed by I4 and F3 (\"nothing is marked, moved or deleted before Ren decides\")",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MODULE-CLASSIFICATION.zh.md",
+      "sha256": "24b8871af1b590ea61244a8b7744d1f9b47f18c491649b06016878adca82a24a",
+      "blob": "d23a9d5fde88955f7a3b40e189832853e05906fd",
+      "reason": "R35 (20 October 2026), batch B4: E10: edition",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OPEN-FORM-BRIDGE-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/OPEN-FORM-BRIDGE-CHECKS.json",
+      "sha256": "a5007e4f8a66f54bb1defa1e773a854ea6ffd734b504276188ea4b0f6c1967a0",
+      "blob": "1b82a36fa2e422aad4383465c9b359f9928ebe80",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (13 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OPEN-FORM-BRIDGE-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHRASE-READINGS-PENDING-REN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PHRASE-READINGS-PENDING-REN.md",
+      "sha256": "2d917c7f9dd168afa94e5ae9bb28471d6139b899832eeddd8e93810db78a401e",
+      "blob": "f9114054be490c3b2d3b379b43216459ac0663e6",
+      "reason": "R35 (20 October 2026), batch B4: E10: answered (D45)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHRASE-READINGS-PENDING-REN.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/READINGS-PENDING-REN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/READINGS-PENDING-REN.md",
+      "sha256": "c32a9ae9f8b2992a41c829ab22750ec382f2f19acc66c64c5367fbea29047d6b",
+      "blob": "78a19f22424b7cf850e2581ba51641a74929e875",
+      "reason": "R35 (20 October 2026), batch B4: E10: answered (D45, 19 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/READINGS-PENDING-REN.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RESULTS-CATALOGUE-RECORD.md",
+      "sha256": "992577e4a8c678784cffb1976edae236a7f64141daa6e573cf4c84fa6c2d8425",
+      "blob": "7ceb0116955882c1860a9a6dd6e37e53057b924c",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: editing record of the frozen catalogue volumes",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RESULTS-CATALOGUE-RECORD.zh.md",
+      "sha256": "fa3347be93556c4fbbeefa72bcc482273f731934739e1b6f34d4c71830e23aee",
+      "blob": "9e609ae3c677180aa23c20e4b39699413a55d6f0",
+      "reason": "R35 (20 October 2026), batch B4: edition",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.zh.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-CLASSIFIER-CORRECTION.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-CLASSIFIER-CORRECTION.json",
+      "sha256": "83091ddd2d731fdc786ef62d5315e5612d332c4d756826a50a17f6f8d61deb3b",
+      "blob": "ed21a1c593bf51cd4992b1bf489dd06b83a98753",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map input, frozen with SESSION-RESULTS",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-CLASSIFIER-CORRECTION.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "sha256": "905df776fe02bd625e24ffe7feaa0637a24c2a36219a8e1137013b7b4e929178",
+      "blob": "bccd75cf907c04343ce6af1e99a7c950edc51bc0",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map audit",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-BASELINE.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-INTEGRATION-BASELINE.json",
+      "sha256": "680580b0a945fe4f70d43dd0f943307e1d8d76009b768f4778d5512fa2467914",
+      "blob": "668ca39b0b62bbf8ba6d20d88230a45dea362920",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map input",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-BASELINE.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-FINAL-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-INTEGRATION-FINAL-CHECKS.json",
+      "sha256": "6772f9c461e2f714b7f4966ae5ef3dfa18854037c9b42df3e8fc24c451a46b69",
+      "blob": "6ca09cbd96951fe64f23abd8a1ce36dfa2027a38",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map check output",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-FINAL-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-NAVIGATION.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-INTEGRATION-NAVIGATION.json",
+      "sha256": "916e16450a60ffc884d5e54f3fdf0059d0a12cbc27a06b5698501b1c11f6aa43",
+      "blob": "4ae6e7f9025955d086c3b19d4909609f51a1efc5",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map navigation output",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-NAVIGATION.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-OUTCOME-SNAPSHOT.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-OUTCOME-SNAPSHOT.json",
+      "sha256": "b068868640057777514212ae1f988f0d7cc55ba6c815c7cacaafa92ff2a83692",
+      "blob": "819c1b4d1b3ff8a78398ede1f1e7f562b21f36da",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map input",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-OUTCOME-SNAPSHOT.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-PROOF-OVERLAP.json",
+      "sha256": "2d6d2fd5b74bfd31ab25bd63eb89d3bfe3c87e34b1d90f6ac543844abe834f34",
+      "blob": "e03d671c29ee96d2b37ef89fba16a9c7f6415750",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map inventory",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json",
+      "sha256": "9126a57e70b9c5e3647c77906d0b8712a86a0acc2f567ddf9f274f64f24641cf",
+      "blob": "51fc4d0ec216d96967b024aec40ea47496237fa9",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map check; 2 records cite it (review)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-RESULT-MAP-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-RESULT-MAP-CHECKS.json",
+      "sha256": "305e56923ccf4f4d21a63fd251445820464710ca417a6503eb5b898203b3dd04",
+      "blob": "dc1807262066d6bc558e53c5ef24c1e6f8fdf3a4",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map check output",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-RESULT-MAP-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SPINE-INTEGRATION.py",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SPINE-INTEGRATION.py",
+      "sha256": "f5c61abf7f9589d7d3ca25f04b966c4d6f02999b1286ba2bc25c7018e82b9bd0",
+      "blob": "14ac9dcb83997f9890edb487775265c8b5baf0e2",
+      "reason": "R35 (20 October 2026), batch B4: E10: I4 tool (16 Oct), executed",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SPINE-INTEGRATION.py"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMELY-CONTINUATION-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TIMELY-CONTINUATION-INTEGRATION-CHECKS.json",
+      "sha256": "15b55b6c47760389cfabbf0b2b4d3d7534c47d5abe79ab95669e2f8f3e9acbc7",
+      "blob": "2c28d649dbbd7bf432f43812c6e331b235a8ed7c",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (14 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMELY-CONTINUATION-INTEGRATION-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-INVENTORY.py",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ZERO-PREMISE-INVENTORY.py",
+      "sha256": "ef4993ebc9190189b29fbb8c76c7f0e348bf9e47e10eb3c631d4792b613c3341",
+      "blob": "d7e6084bab2ab12461b6d9543c9fa8dc511a8e9c",
+      "reason": "R35 (20 October 2026), batch B4: E10: the plan's inventory script",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-INVENTORY.py"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ZERO-PREMISE-PLAN.md",
+      "sha256": "4f425c33ebb1e6f733cc7232f28ff35ae37409f1732b123dc92868e6ebbe55fb",
+      "blob": "00706d459deac7f9c51cb6aefaa7af99f5bff85a",
+      "reason": "R35 (20 October 2026), batch B4: E10: executed plan (I4); 4 records cite it (integration)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ZERO-PREMISE-PLAN.zh.md",
+      "sha256": "44e68e14b8c6d96ebc1172e7b3ab5038d269bf74eb0a8e5e82b7f3c49444dc3f",
+      "blob": "66196291ddc3476465fb7708f0c5d59d349b121a",
+      "reason": "R35 (20 October 2026), batch B4: E10: edition of the executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.zh.md"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "_process/RESEARCH-DIRECTIVES.md",
+      "old_sha256": "dee510ddc019823e0ca39e4a973c20d07b0443347e3c16dec2f11dbf42df9d28",
+      "new_sha256": "24432649b47c949432a1ec41515066f24aeeff00a5316b576e9641a7b5aebb77",
+      "references": 5
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "old_sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
+      "new_sha256": "0f0f4eacce18efd08fac5ac42a40ef853dd828a109b1f03fede2e25bdd30e488",
+      "references": 2
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
+      "old_sha256": "dcb6513a4b04e5f19df8d0b44b5559655a6c37d1016b5be546304d06b8bb24f8",
+      "new_sha256": "6e7f8484965fff2517544326724860dcf510974280534250aac1da9088ae269c",
+      "references": 11
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+      "old_sha256": "49d124d967b6e73670a167ded86c900cb020e06fb5638c447b5e22e46bf14945",
+      "new_sha256": "448a6b1fb2064554ba1e5efebebfa5788f1977f56cd74841f6a2d3fdc69b1e62",
+      "references": 13
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.zh.md",
+      "old_sha256": "a4514a3dc38f1add76b60ac6e12bb9817a5a0ac5e4cafa0991b4b5bcbe850ce4",
+      "new_sha256": "8f70120a1ba446db79c967f8d02832b8b66bab684886655cf0a45b3d719e6cb0",
+      "references": 13
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "old_sha256": "80339b3339cc403476ebe2c04f29ed59d8cef9e6b78a73252bb7ad46c3aa9090",
+      "new_sha256": "d6011b304fddfe6e6e92816dc6f469180e25891e2bff486c385dd4724b68fb41",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "old_sha256": "f38e89a8586253f250e43926544c8a0dab7d7f341bf20f46f50bdee2ad50a705",
+      "new_sha256": "b22813f3ead0d3e34a3138b6e5a977effc954257dab340e1843d649f0f1928df",
+      "references": 20
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.md",
+      "old_sha256": "f94685164a262970a4a1ec38a2869a9cda842e10d49d5abd166a145113d84bde",
+      "new_sha256": "480a5c70aa42b032be26b96ba64e2deaf71026d75528de27eb5c5b9eb7a66e9f",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/integration/README.md",
+      "old_sha256": "cf484140e06cc33e23f40ece8b3dfa08d49584c157c36eb17aa13706f2942e30",
+      "new_sha256": "b0f21d1bdb4a1ba51c8c4fa92525f474b5d0ddaa254d23d0e4fcf62af5a975b4",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/PORT-PROGRAM.md",
+      "old_sha256": "4f63427aea51185c42d472acf209181e29f935b461b1854710d93044bcac31c2",
+      "new_sha256": "ce292395208564c0040805e9a62c03c9a06efddcb2027c45e21b6b2d8a3a3588",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/README.md",
+      "old_sha256": "5916f6ebb5ebef8429595fdd20dcee7eed1cce803e39de5a7c8787ffa4937c1b",
+      "new_sha256": "2e2075313b3a06eef1babb419779848602cd7701656e236f88d156250a3bad1b",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/RESTATEMENT-AUDIT.md",
+      "old_sha256": "cceed31ba18961fca762fd7d7f86c0d86025eed1cb05090b8ed1f7d3e451b20b",
+      "new_sha256": "c51b320393180bee120f8d83300281f6515301f509cd487079a2b9bda671a94f",
+      "references": 3
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/i5-checker-reproducible/REPORT.md",
+      "old_sha256": "f1b0c642500ce0d95dee324d37ef288131ba324e3ba77150fa8459eae8d82d65",
+      "new_sha256": "617a1c79a115ac2bce1e9dd4c1bf239b07f2b1a5930f04175ec0865b849c3ea3",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/p129-review-fixes/REPORT.md",
+      "old_sha256": "864ceb12d382033abc4d0e1f7297e675b3d1c5aeb697989263f2fcae89d43979",
+      "new_sha256": "efd066e22bbf4af982246c898d7113d13c7ab039b63418c22fe87af1c3c8bf08",
+      "references": 2
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/p130-frontier-on-base/REPORT.md",
+      "old_sha256": "6d9aae483745388fa573e182229c3c618f5ab8eae810caeb56e62c7cb1e42b21",
+      "new_sha256": "cd324e80ffaf01f5ae5afcfd69076ac5f1c9280975c3d458866410c82fd874f2",
+      "references": 1
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
+      "old_sha256": "72d2df3037941aab82ff31fafa9e9096a1ad7bc190c271ebe0246d0fb6414b9e",
+      "new_sha256": "fbcf6e86aefbb455cf0e2e35e16473404645a432a3c763f50813ca0d86191f6e",
+      "references": 1
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
+      "old_sha256": "e9b2bdce2e7836279a7b4e7b9d66e3df009540ee881ee1811dbe48c102fb94e8",
+      "new_sha256": "df63a08d0645239a8c38fb491878520e520c550563eb1b7e03c9da97c228ed2e",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "old_sha256": "8fbefa6c9604779dd65c773ae21fc5f02df200fc8a21cdbb12de1c85bf0e7e61",
+      "new_sha256": "bd5e3a3928b0f9f1ccaccf685fb6f6b651d9301613c169f4d316144a6b58a682",
+      "references": 10
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+      "old_sha256": "13ee1d6a742121306f172f6dbbf202f598820aff45ad1275d24a219cc2d18a98",
+      "new_sha256": "1b060be8d8c51cc64efda5a10e54f5ce825d188b6d563f91087ca2d9560b2fa9",
+      "references": 5
+    },
+    {
+      "path": "theories/becoming/results/data/arguments-m-z.json",
+      "old_sha256": "48502363cee29e7a4dd10b988dedf8f0268bc128f10ce922d17911a6e983a649",
+      "new_sha256": "8755681ce6ed3a4270b53e38208618236a8a4bef89e952e88ac2076d669a15e0",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/data/generativity-chain.json",
+      "old_sha256": "219d9eb0cb18ec15915df12de54dab81b80a09589d753ae551e9a9fb9cc8dcdb",
+      "new_sha256": "14355b682527fa8f92a5d1be2ceb72478d0f617a41b1ebbecdc1c4ea1ace678d",
+      "references": 17
+    },
+    {
+      "path": "theories/becoming/results/data/session-results.json",
+      "old_sha256": "8e098c36607729e3c43a9abc3a36f2bade0449c4ab8cee3c8e0b10c187c6e91a",
+      "new_sha256": "42d67f6358e866c9a5f3c15c64cd38892a01bc09dcf1004f59b622cbfcd21ace",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/results/records/becoming-dependence-dynamics.json",
+      "old_sha256": "1768678525cb52009be2f081433da714accf4905de44023c0d53536a83abcfd1",
+      "new_sha256": "e3a776cfbdff82ed24bc4e29a83af02ac9d604c38405c845bd8dcce68b9de3af",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/becoming-finite-horizon.json",
+      "old_sha256": "7d37da8b14466a32bee3227c1a1e733bdb520fffc6326c203349f53b5ef1e696",
+      "new_sha256": "2cab6a0d7b2bc92f50de3af8401c225357a8faf0f48bac956a1a8e0a573e22ad",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/becoming-renewal-reading.json",
+      "old_sha256": "9c08d97d8eb232ba2f0402c07a3ab0e4e4651d2c2b8d8a33134ef2903f775e82",
+      "new_sha256": "f946b2b87217c2dc2454e847cb6b5bcfd35b8cf07e7600782d798329ef3300fb",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/becoming-return-grades.json",
+      "old_sha256": "a8c25282cbb64b503fc1c1746666054c880cc03580e1cbc68f8734f621d9a34a",
+      "new_sha256": "65badcf3a61343b6572d64ea0d111add931a8ed162e73e6709a8f902555051d8",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/becoming-spine-instances.json",
+      "old_sha256": "61de97e71cfc1403e7cfa674e82427383a625504d64d7b32b2789799330f428a",
+      "new_sha256": "efba1d827d39eca05383acc23cba857cef6d211899c24a83e54ddc477b4e1cf9",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/becoming-stepwise-reading.json",
+      "old_sha256": "bc3bb87da90d9dc448ece4bdc93aeb006d4b0a3e75305244ed8a293ca645408a",
+      "new_sha256": "d01469ff4b2ac81ccc5e2ed88913801a9ac486eff161652b57b815123cb700ae",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/bounded-census-keeps-pace.json",
+      "old_sha256": "dab47cc0abec05ad7a766bcebbb1c0f335901c1e810d6c1dc05530188d6846e5",
+      "new_sha256": "dfa35f6d76254e7a894c2de8d56f77a42fa8ccda876eb1b84aed72843e3f5083",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/ceasing-needs-arising.json",
+      "old_sha256": "5ba55b0577680f3354cc975d2ed3d637f79cf81f6c17a27f3de4f20ac09cfbc2",
+      "new_sha256": "dbe8c68dbc965a8e1268f6547dd8bcebd9f012a15a6a4bc6453e5853ff795a92",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/census-balance-under-continuation.json",
+      "old_sha256": "51962b7c1039c28b395589d0a9851e054869bb9208e9888b84105b25160c7f84",
+      "new_sha256": "29aa29d751f76dc11c7cb17196abf9304e7cc316d38d8cdfd8ae98e9f192d927",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/census-balance.json",
+      "old_sha256": "34a61ec2b50ca20ab07ce7d285c4d77884504ae18fb5cb8f6fb66d017cf20395",
+      "new_sha256": "6b8d58b506332939d9044ab9adfbef4732d73675956ddc8fabac138df628bfa7",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/coming-and-ceasing-keep-pace.json",
+      "old_sha256": "5d1e65668390cddbe014454a5b8f822d9985bda5c64f53eb77d321aed2d1db3c",
+      "new_sha256": "84ae761484aaba4ec6162b82585c4dfa093319ebeb6fff95edf8494c5c1318e6",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/condition-correspondence-discipline.json",
+      "old_sha256": "838d07c1dc989bcf4aaf17ef2ac06dadec9f1a9d5e8c32c0cdba5fbe866ebcb7",
+      "new_sha256": "2e343059b7f2c123db80e8786667ee3ccb91081a00eff3592cad35b4da0acad4",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/continued-change-needs-openness.json",
+      "old_sha256": "1abecf71c011e8823dbe6563f7e8ac10ea3678b49209d5667befe97f899e044a",
+      "new_sha256": "88ee2623532550ce9594ec36a822684aeb91a20498a0d8db20ebf968ae2558e2",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/continuous-time-as-tower.json",
+      "old_sha256": "381cc5a7b52e4f6a16f2d80f3ae61d7b8ecd9a7973f91302bbe8d9d197ae7a23",
+      "new_sha256": "75485def246678541441b048d70dd07c3918d9807d11285e25b9b7f225d8719a",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/results/records/counting-standing-and-dependence.json",
+      "old_sha256": "dea7b70fb69ea1b4c23f343bf514c891126edf16029410ce0d6d7fa313837794",
+      "new_sha256": "21e73c3f1426a17ca6c5f676be9e0fdbc936a78bb7733ed56fa0bd244933b528",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/counting-under-enclosure.json",
+      "old_sha256": "29cc33712ee6764f628f0fbd728dd6ed1417f7e1ed09e57f8ef829c00921f6ed",
+      "new_sha256": "cc676e620c0482b2df13d6e662638d1ba7bdfd610306fcd5f6aeaab272023075",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/derivation-soundness.json",
+      "old_sha256": "d4df898e3a38843d281044d735248bd867f2741889203a8e5bb99e34788192cc",
+      "new_sha256": "ac670179d1e2a668d31efcacb15b1807eda9fc415478a73604808d9eacc488b4",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/entropy-history-and-record.json",
+      "old_sha256": "c4a8a2a55dd7561c911d92e0ff185fb4d2d15315ade5fa558b514f6f1c602584",
+      "new_sha256": "13c6664f79928007377a4067e3166cfd3d53f03f05525ed7b4a08736b7b64c8a",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/evolution-on-descent.json",
+      "old_sha256": "3841677925c6da40c7d01f9d59bc01347680c501386aa7f002738f8584544055",
+      "new_sha256": "23438deba798cd0b64b335cd34439a58831677bcc7eb70ee132c9fe3460b7d9e",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/generation-is-replenishment.json",
+      "old_sha256": "6547af0f105714c2c8e2d9e1ec75c19cc9bf8393233445b2d2fdff912e49012f",
+      "new_sha256": "c58ef2e1d42d271157f17923e181d7d630c3ea2400fed0eab2d4295a72367001",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/identity-across-steps.json",
+      "old_sha256": "0c2f5e83180b6275b41014470701cb2a18f22e4754c452e5cb2ed833bb872e2b",
+      "new_sha256": "1ff70d8b80f98d95d198da855a865d87620358ac197aca2bc2eaf6727f81666e",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/joint-difference-making.json",
+      "old_sha256": "08fd45a50d56363f7d75e4ab2b915f66018d17f46ddeb01c266e757beecd5e62",
+      "new_sha256": "004affa856e8eafddeb1ad74bef3aaceb38725cdc11c5302c0d62be1be5215cb",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/laws-at-coarser-steps.json",
+      "old_sha256": "a5f613b121f7a62ebc2a9ad988a791e34319e093ec7ce196092878bd4ec2af76",
+      "new_sha256": "3f1871e9241b818bb178a6377c58dc17350049b9f14473c0012092b1cd8b13da",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/results/records/laws-at-finer-units.json",
+      "old_sha256": "8c15f452f8072e6dbfcc1c21bd02a7d7994c3f593810a23d0c35347ea1a032c0",
+      "new_sha256": "da96d99d9280e52525398f3e91ebd2f44ce3b029291b1e96e7655580a5fab21a",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/results/records/laws-of-one-step.json",
+      "old_sha256": "9c14eb7b44d5642eac18e03655336e40b8bad21552ef24bd4d043780ad9b8de6",
+      "new_sha256": "e2ca4ac34ab6d6df0797cbaadf2f5a9bf706b68bb38505dad136e275c33f163c",
+      "references": 2
+    },
+    {
+      "path": "theories/becoming/results/records/life-as-condition-of-life.json",
+      "old_sha256": "1317c3977881b0c82ece797ba9b753580b077a18d93ada7da1daf196c4bfeae3",
+      "new_sha256": "da7552371ba395b84ff8f050907731bb35d0aa0a3943f1321fd0279a914e6f9d",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/living-on-and-descent.json",
+      "old_sha256": "b62805ec8ab116ab4f3559e0b3d6f8cb24c1fdb1dfb64e567dc1ab58056fabd7",
+      "new_sha256": "6b3820f3dbbf8520d6869f04b414d7d404f87d3d750d628315f8f6af2a398f86",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/map-of-premises.json",
+      "old_sha256": "62e7226c00f0d3b825669f004c678afb1bbd8129ef986e7071fa052c0b40395d",
+      "new_sha256": "5dccabab278261ef9aaca5961a74f9a17c7d06abf45a6aa04c95606517ee23b3",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/metaethical-core-characterization.json",
+      "old_sha256": "be3c64639efe455ec2a47e30512f15608693cc7f3de06b9bbfd96e02a41e76c1",
+      "new_sha256": "3dc86cf4eefbd3fbe1cf474af193406df06a2a4ae7c2ed985c59294b5df8bd37",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/more-needs-renewers.json",
+      "old_sha256": "0eeec8d391a70f84ad59ac46523b7c44ae9ae8a52a8206b0554a06053a4e204d",
+      "new_sha256": "80860e8e45a7aab573091f8b0af8ab85c26717a8bba31199d5753f759ea57500",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/no-finite-part-bears-taking.json",
+      "old_sha256": "fb91a56bc1a92c106f59b545f16f8f31d67d015d3ab3f34c7b1ecfe00676e571",
+      "new_sha256": "ef736f30c86b3023daab82e4ec81c7ea26066f330604d0f0f98adc56c6216ef0",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/ranking-under-readings.json",
+      "old_sha256": "22c7a3a9094c538bdd15486728a5bb5804d17960b9ab2dc4c293c68936ca9c37",
+      "new_sha256": "d59575f57958b6741070c1acfc7617ee9417147d899fa341553f643f5f21ea1d",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/recurrence-without-premise.json",
+      "old_sha256": "6a4148156ce7f9fdb20f5470099d506cbf7e79fe970aa6970b4ef01baed346b8",
+      "new_sha256": "f16e1e468aa2012fd49fc2087eaf6338f1f7bfa77e70bbca6e07e43462725d90",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/reserve-defers-ending.json",
+      "old_sha256": "aee43224dba66a6ba3440cd40f47d57203bebce0bb128b2340d752d2776d4563",
+      "new_sha256": "c2c789691149444917f4de37dc80900f68375e2ad68a55dcf7e3aae1ea49d22d",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/rest-at-every-resolution.json",
+      "old_sha256": "25c9f1c21a475668cd32cd07356d3da6a1fc9dfb7bcc210988d80bc7d7bf857c",
+      "new_sha256": "135f1e01bb7d9445a1f60c6df887c9d4b9f5b56eaae1681788a83796c89b9b5b",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/rest-with-refinement-counted.json",
+      "old_sha256": "341fac66f80eb7ce20a34b040fc979abc82491580d7b8acf88e29361ae512281",
+      "new_sha256": "e028bf103b658dd1683ce1f1877493a49f96cc2a2844a1a5e2f116f8ae04f4d7",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/rising-and-falling-in-one-exchange.json",
+      "old_sha256": "ea19e2a379305686694097dabb3f23f633ffaa494746b9230fbfbc30121826c6",
+      "new_sha256": "d3be01d53ff21aa0bb23d5b2c26ecf089ffc00479be55c4635f5ace17b2aa5af",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/space-and-its-parts.json",
+      "old_sha256": "91bff11dbe697d1b4b95359e5ca37d52f138884d7811fe7a5a1e987b0050e3fb",
+      "new_sha256": "d28a710a1c794de3dbc44a46226fb06b06bb7906cc5a43f7fafe4e804a6b8ef6",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/substitution-preserves-consumption.json",
+      "old_sha256": "3f16f7ff64daae3e84c4d9bd300621c17b5474bb62128f1a5b56fd321a2de01c",
+      "new_sha256": "eec6aa576a4b893454e94854b432834ccc5f7309f2f4460a22b1dda0483f4fd6",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/trace-law-equivalence.json",
+      "old_sha256": "08e53b4942b1e882c3892631de8a5b9496e5c7ca1b671f4bb5e7d6c4e821bb55",
+      "new_sha256": "ec76bf2019ef86b358e5da084889ac2ec4385f5f5e160283ab9b74fa1456a443",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/unceasing-generation-needs-renewal.json",
+      "old_sha256": "b0b2f671c69c533ae47ab2d8fe3299c010585dcb5a46c40613d4cd11f7a4fa15",
+      "new_sha256": "0db4ab01bc782451f60aff6578050f4deb7d97c9ff721effa7c5f9b07c47baee",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/whole-law-of-counting.json",
+      "old_sha256": "aa6631e3ddf4e1f977b995d92749d6d91e620f085fa580292e1622dc69acb165",
+      "new_sha256": "bc9757f89a9927162f105c8e8a06230f141107aa23a1eb87f7f29e223525b3c2",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/whole-persists-through-generation.json",
+      "old_sha256": "c50e14e4b6029aba616e364ac285bba3af38abcb67edef62ab4d12b4ec7abf43",
+      "new_sha256": "cb20710015521125f87291b4b8aab5b9326831b8bdae29adee763fd33db24536",
+      "references": 1
+    }
+  ],
+  "history_roots": [
+    "_process/research/2026-10-05-generative-foundation-review/history"
+  ],
+  "generated_pages_to_rerender": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INDEX.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REVIEWS.md",
+    "theories/becoming/results/LEAN-INDEX.md",
+    "theories/becoming/results/README.md",
+    "theories/becoming/results/data/lean-index.json",
+    "theories/becoming/results/data/source-index.json",
+    "theories/becoming/results/lean-declarations/abstraction.md",
+    "theories/becoming/results/lean-declarations/concern.md",
+    "theories/becoming/results/lean-declarations/core.md",
+    "theories/becoming/results/lean-declarations/ethics.md",
+    "theories/becoming/results/lean-declarations/inquiry.md",
+    "theories/becoming/results/lean-declarations/learning.md",
+    "theories/becoming/results/lean-declarations/other.md",
+    "theories/becoming/results/lean-declarations/renewal.md",
+    "theories/becoming/results/lean-declarations/shared.md",
+    "theories/becoming/results/lean-declarations/valuation.md",
+    "theories/becoming/results/records/acquired-revision-of-pending-task.md",
+    "theories/becoming/results/records/becoming-dependence-dynamics.md",
+    "theories/becoming/results/records/becoming-finite-horizon.md",
+    "theories/becoming/results/records/becoming-renewal-reading.md",
+    "theories/becoming/results/records/becoming-return-grades.md",
+    "theories/becoming/results/records/becoming-spine-instances.md",
+    "theories/becoming/results/records/becoming-stepwise-reading.md",
+    "theories/becoming/results/records/bounded-census-keeps-pace.md",
+    "theories/becoming/results/records/ceasing-needs-arising.md",
+    "theories/becoming/results/records/census-balance-under-continuation.md",
+    "theories/becoming/results/records/census-balance.md",
+    "theories/becoming/results/records/coming-and-ceasing-keep-pace.md",
+    "theories/becoming/results/records/condition-correspondence-discipline.md",
+    "theories/becoming/results/records/continued-change-needs-openness.md",
+    "theories/becoming/results/records/continuous-time-as-tower.md",
+    "theories/becoming/results/records/counting-standing-and-dependence.md",
+    "theories/becoming/results/records/counting-under-enclosure.md",
+    "theories/becoming/results/records/derivation-soundness.md",
+    "theories/becoming/results/records/entropy-history-and-record.md",
+    "theories/becoming/results/records/evolution-on-descent.md",
+    "theories/becoming/results/records/finite-aggregation-within-restorable-basic-losses.md",
+    "theories/becoming/results/records/generation-is-replenishment.md",
+    "theories/becoming/results/records/historical-source-binding.md",
+    "theories/becoming/results/records/identity-across-steps.md",
+    "theories/becoming/results/records/inherited-structural-copying.md",
+    "theories/becoming/results/records/joint-difference-making.md",
+    "theories/becoming/results/records/laws-at-coarser-steps.md",
+    "theories/becoming/results/records/laws-at-finer-units.md",
+    "theories/becoming/results/records/laws-of-one-step.md",
+    "theories/becoming/results/records/life-as-condition-of-life.md",
+    "theories/becoming/results/records/living-on-and-descent.md",
+    "theories/becoming/results/records/map-of-premises.md",
+    "theories/becoming/results/records/metaethical-core-characterization.md",
+    "theories/becoming/results/records/more-needs-renewers.md",
+    "theories/becoming/results/records/no-finite-part-bears-taking.md",
+    "theories/becoming/results/records/ranking-under-readings.md",
+    "theories/becoming/results/records/recurrence-without-premise.md",
+    "theories/becoming/results/records/reserve-defers-ending.md",
+    "theories/becoming/results/records/rest-at-every-resolution.md",
+    "theories/becoming/results/records/rest-with-refinement-counted.md",
+    "theories/becoming/results/records/rising-and-falling-in-one-exchange.md",
+    "theories/becoming/results/records/space-and-its-parts.md",
+    "theories/becoming/results/records/substitution-preserves-consumption.md",
+    "theories/becoming/results/records/supported-renewal-recovery.md",
+    "theories/becoming/results/records/trace-law-equivalence.md",
+    "theories/becoming/results/records/unceasing-generation-needs-renewal.md",
+    "theories/becoming/results/records/whole-law-of-counting.md",
+    "theories/becoming/results/records/whole-persists-through-generation.md"
+  ],
+  "verification_errors": []
+}

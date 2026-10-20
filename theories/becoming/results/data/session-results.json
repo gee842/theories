@@ -240,7 +240,7 @@
       "hypotheses_en": "Documentary correctness and source provenance; historical validation scope remains unchanged.",
       "canonical_sources": [
         "theories/becoming/results/README.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RESULTS-CATALOGUE-RECORD.md",
         "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/START-HERE.md"
       ],
       "reuse_en": "Classify navigation, reviews and releases separately from discoveries. V7.3 historical mathematics retains its original checks until explicitly migrated.",
@@ -650,7 +650,7 @@
       ],
       "outcome_en": "Bilingual results catalogue and README release.",
       "outcome_zh": "双语成果目录和首页发布。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RESULTS-CATALOGUE-RECORD.md",
       "integration": "preservation",
       "evidence_message_ids": [
         "msg_0f45dbd6928bbe92016ac696dba1648191932b11c66beca2e5",

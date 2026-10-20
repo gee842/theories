@@ -7,7 +7,7 @@
 
 2026-10-15, Asia/Bangkok. A measurement made by the AI (Claude Opus 5.5) in a Claude Code session, in answer to Ren's question quoted above. It is a measurement, not a check, and registers no result; no record or generated page is changed. The classes and readings below are the AI's, pending Ren.
 
-[Script](THEOREM-CONNECTIVITY.py) · [Lean dump](THEOREM-CONNECTIVITY-DUMP.lean) · [result, with every spine theorem's class](THEOREM-CONNECTIVITY.json) · module-level companion: [SPINE-INTEGRATION.py](SPINE-INTEGRATION.py)
+[Script](THEOREM-CONNECTIVITY.py) · [Lean dump](THEOREM-CONNECTIVITY-DUMP.lean) · [result, with every spine theorem's class](THEOREM-CONNECTIVITY.json) · module-level companion: [SPINE-INTEGRATION.py](../history/root-foundation/SPINE-INTEGRATION.py)
 
 <a id="1-有向无环--directed-and-acyclic"></a>
 ## 1. Directed and acyclic

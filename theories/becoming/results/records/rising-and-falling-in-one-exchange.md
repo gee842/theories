@@ -102,7 +102,7 @@ Ren's proposal asks to explain formation, persistence, transformation, degenerat
 | proof | [Arising.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean) | `Becoming.Web.Rises`, `Becoming.Web.Falls`, `Becoming.Web.Depletes`, `Becoming.Web.stock` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
-| statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
+| statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
 | provenance | [2026-10-08-theory-of-becoming-priority.md](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) | — |
 | provenance | [2026-10-09-complete-theory-of-becoming.md](../../../../sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md) | — |
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |

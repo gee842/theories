@@ -2,7 +2,7 @@
 
 基础设施，不是成果：Lean 源、定理、记录主张与范围均未改动。处理发布准备度审查 §1 的 C1–C4，以及 §6 与 §7 第 4 项中的可复现问题。
 
-Infrastructure, not a result: no Lean source, theorem, record claim or scope changes. Branch `i5-checker-reproducible` (from main `1a78f978`), merged into main after R18. It addresses findings C1–C4 of §1 and the reproducibility items of §6 and §7 (item 4) of the [release-readiness review](../../BECOMING-RELEASE-READINESS-REVIEW.md). Written by the I5 subagent (Opus 5.5) and saved by the lead, because the harness kept the subagent from writing report files.
+Infrastructure, not a result: no Lean source, theorem, record claim or scope changes. Branch `i5-checker-reproducible` (from main `1a78f978`), merged into main after R18. It addresses findings C1–C4 of §1 and the reproducibility items of §6 and §7 (item 4) of the [release-readiness review](../../../history/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md). Written by the I5 subagent (Opus 5.5) and saved by the lead, because the harness kept the subagent from writing report files.
 
 Commits: `575289df` (untrack bytecode), `d65bbeaf` (scanner), `2db481ce` (checker), `eb11cee3` (README, Mathlib pin), `67fb3d93` (FallibleInquiry).
 

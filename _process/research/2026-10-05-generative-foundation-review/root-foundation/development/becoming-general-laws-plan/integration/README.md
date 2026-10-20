@@ -14,7 +14,7 @@ before reuse.
   receipt must also be a hashed `references` entry with role `receipt`.
 - `scope_batch2.py`: in-place replacement of receipt sentences in `validation_scope` for batch 2.
 - `renames.json`: the old → new names of 14 October 2026 (the official table is in
-  [the unification plan §10](../../../BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)).
+  [the unification plan §10](../../../../history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)).
 - `notes-batch2.json`, `notes-batch3.json`, `notes-batch4.json`: the receipts and the per-file change
   notes used for the history entries of batches 2–4.
 - Batch 4 of the open-issues plan (14 October 2026): `b4_bind.py` restores the six B1 records'

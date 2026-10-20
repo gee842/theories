@@ -145,7 +145,7 @@ The rest theorem (ceasing-needs-arising, continued-change-needs-openness) says c
 | proof | [Dependence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
-| integration | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
+| integration | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | review | [BECOMING-P32-P34-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P32-P34-REVIEW.md) | — |
 | review | [BECOMING-P34B-P38C-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P34B-P38C-REVIEW.md) | — |

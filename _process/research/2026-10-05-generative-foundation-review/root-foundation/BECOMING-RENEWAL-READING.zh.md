@@ -3,7 +3,7 @@
 
 > **中文版（2026-10-17）。** 正典文本是[英文版](BECOMING-RENEWAL-READING.md)；本版由重构时从双语原文拆出，不与英文同步维护，两者有出入时以英文为准。
 
-2026-10-09，Asia/Bangkok。AI（Claude）按 Ren 的指示“你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”（[原话与解释](../../../../sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md)）完成[统一计划](BECOMING-UNIFICATION-PLAN.md)的 P3b。成果记录：[becoming-renewal-reading](../../../../theories/becoming/results/records/becoming-renewal-reading.md)。
+2026-10-09，Asia/Bangkok。AI（Claude）按 Ren 的指示“你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”（[原话与解释](../../../../sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md)）完成[统一计划](../history/root-foundation/BECOMING-UNIFICATION-PLAN.md)的 P3b。成果记录：[becoming-renewal-reading](../../../../theories/becoming/results/records/becoming-renewal-reading.md)。
 
 ## 1. 问题
 
@@ -3052,7 +3052,7 @@ Integration: 计划 P35；关闭 whole-law-of-counting 的下一步“有限世�
 - 偏好科学与系统的词；
 - 社会与金融的词不作首选。
 
-见[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)。P35 已按这些标准命名它新增的声明。本节把核心中其余见证的名称改为描述其动力学的名称，作为计划 P36（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)，对照表在那里）。
+见[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)。P35 已按这些标准命名它新增的声明。本节把核心中其余见证的名称改为描述其动力学的名称，作为计划 P36（[计划 §10](../history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)，对照表在那里）。
 
 ```text
 Result(s): 不新增结果；改名所及的记录在其历史中注明
@@ -3091,7 +3091,7 @@ Ren 的确认是：“yes to both readings, go ahead with Part I.”。
 
 此前 Ren 写道，生成的是“its existence creates more possibilities of becoming - more future, not less”，又写道“"not harm" - this is a phase transition with a clear boundary, not some "outside will or belief"”。Ren 还给出层级的次序：整体，较弱的是所在的系统，然后是自身。见[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md)。
 
-本节是计划 P37（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成；分工经另一会话同意。它在核心中新增两个模块：
+本节是计划 P37（[计划 §10](../history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成；分工经另一会话同意。它在核心中新增两个模块：
 - `Becoming.Admission`，38 项定理；
 - `Becoming.Regions`，18 项定理。
 
@@ -3235,7 +3235,7 @@ Ren 此后回答（[来源](../../../../sources/15-codex-theory-conversations/20
 
 所以本节不按 §47 的读法给每个想要之点放一个中心，而直接陈述 Ren 的原话。
 
-本节是计划 P39（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成；分工经另一会话同意。它在核心中新增模块 `Becoming.Significance`，27 项定理。成果记录新增三项：
+本节是计划 P39（[计划 §10](../history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成；分工经另一会话同意。它在核心中新增模块 `Becoming.Significance`，27 项定理。成果记录新增三项：
 - [one-axiom-yields-g0](../../../../theories/becoming/results/records/one-axiom-yields-g0.md)
 - [significance-retained-within-margin](../../../../theories/becoming/results/records/significance-retained-within-margin.md)
 - [whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)
@@ -3421,7 +3421,7 @@ Integration: 计划 P38c（第一部分的总陈述：每个前提都起约束�
 
 AI 还提出两种不需要前提的机制：“selection between wholes: wholes whose parts sustain them outlast others”与“constraint: a part that degrades its whole removes its own supply”。Ren 回答，整体对自身的实现、理解与更新“also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”。对层级，Ren 写道：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”。§53 留给路线 (b) 的问题是：以依存为界的中心容许搭便车者（`Clearing.centers_disagree`）。
 
-本节是计划 P40（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成。它不加公理，问这条路线到达哪一层。核心新增模块 `Becoming.Interdependence`，28 项定理。不用公理的结果放进第一部分（章节 §2 的“供给与返回”与第一部分的总陈述），路线 (b) 的分析与比较放进第二部分（章节 §6.9）。成果记录新增三项：
+本节是计划 P40（[计划 §10](../history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成。它不加公理，问这条路线到达哪一层。核心新增模块 `Becoming.Interdependence`，28 项定理。不用公理的结果放进第一部分（章节 §2 的“供给与返回”与第一部分的总陈述），路线 (b) 的分析与比较放进第二部分（章节 §6.9）。成果记录新增三项：
 - [feeding-closure](../../../../theories/becoming/results/records/feeding-closure.md)
 - [consumption-ends-with-feeders](../../../../theories/becoming/results/records/consumption-ends-with-feeders.md)
 - [closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-axiom.md)
@@ -3904,7 +3904,7 @@ Integration: 章节第 3 条、第一部分的总陈述、§8、§9 的脊柱表
 
 AI 回答了 P39 与 P40 留下的问题（同一来源，AI 的话）：供给闭包对供给是精确的，却漏掉保护，如狼群压住会吃光森林的鹿；一般的对象是对影响形成所需者的一切影响的闭包；所在的系统还更大，`Clearing` 中栖居者在清除者的系统之内、依存之外；所以层次有四个：自身、依存、系统与整体。AI 还提出工作次序 (a)–(d)，前两项是：一个形成自身的反馈能识得哪些损失、不能识得哪些；四个层次与影响闭包。Ren 答：“continue, let's pursue the strongest claims and complete proof, i think you see the right direction, also update project context”。AI 把“i think you see the right direction”读作接受这一框架、各项回答与工作次序（来源中的 AI 读法，待 Ren）。对层级，Ren 此前写过：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)）。
 
-本节是计划 P42（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成。它不加公理。核心新增模块 `Becoming.Feedback`，100 项定理，导入 `Becoming.Interdependence`。不用公理的结果放进第一部分（章节 §2 的“反馈与所及”与第一部分的总陈述），与路线 (b) 和 Ren 的层级的关系放进第二部分（章节 §6.10）。整合之前，P42 与 P43 一起经[第十六次独立审查](../history/root-foundation/BECOMING-P42-P43-REVIEW.md)，十六项更正已处理（§62.1）；结果是五个闭包，不是四个层次，所及闭包是审查之后加上的。成果记录新增三项：
+本节是计划 P42（[计划 §10](../history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成。它不加公理。核心新增模块 `Becoming.Feedback`，100 项定理，导入 `Becoming.Interdependence`。不用公理的结果放进第一部分（章节 §2 的“反馈与所及”与第一部分的总陈述），与路线 (b) 和 Ren 的层级的关系放进第二部分（章节 §6.10）。整合之前，P42 与 P43 一起经[第十六次独立审查](../history/root-foundation/BECOMING-P42-P43-REVIEW.md)，十六项更正已处理（§62.1）；结果是五个闭包，不是四个层次，所及闭包是审查之后加上的。成果记录新增三项：
 - [levels-of-closure](../../../../theories/becoming/results/records/levels-of-closure.md)
 - [feedback-and-reach](../../../../theories/becoming/results/records/feedback-and-reach.md)
 - [comparison-within-reach](../../../../theories/becoming/results/records/comparison-within-reach.md)
@@ -4336,7 +4336,7 @@ Integration: 章节第 4 条、第一部分的总陈述、§8 的开放项与现
 
 *反驳 4：依存的见证是否退化？* 初稿的见证以零所需依存，什么都不立着、不活跃；一个依存什么也不需要，读者可以说它不算依存。改为条件立在一、始终活跃，每个依存需要一个单位且被满足后，定理不变，见证不再依赖零所需，所以只计所需为正的依存或只计被满足的依存，规律也相同。仍然没有什么流动：关于流的前提在那里空成立。这正是结论的内容：前提不给依存本身的计数加规律，它们约束的是依存与活动、水平与世系的联合。
 
-*反驳 5：为何不陈述所选前提都起约束时的规律？* 对活动，起约束加上的是条件的实例（P38c、P45、P46）。对所立者与依存，要逐个选择构造使所选前提都起约束、又实现所立者或依存的每个计数表的见证。按 Ren 2026-10-11 的转向（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)），选择表不再扩展：这些规律改为去掉前提、对每个世界重述，局部条件写在规律之内（[零前提计划](ZERO-PREMISE-PLAN.md)）。模块说明与记录的局限写明它们没有陈述。
+*反驳 5：为何不陈述所选前提都起约束时的规律？* 对活动，起约束加上的是条件的实例（P38c、P45、P46）。对所立者与依存，要逐个选择构造使所选前提都起约束、又实现所立者或依存的每个计数表的见证。按 Ren 2026-10-11 的转向（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)），选择表不再扩展：这些规律改为去掉前提、对每个世界重述，局部条件写在规律之内（[零前提计划](../history/root-foundation/ZERO-PREMISE-PLAN.md)）。模块说明与记录的局限写明它们没有陈述。
 
 *反驳 6：三种计数各自的规律是否就是整体的计数规律？* 不是。三种计数之间有联合规律，例如在平衡与只有活跃者给予之下，没有关系项活跃的一步上没有关系项开始立着；这里没有陈述，记录的局限写明。
 
@@ -4558,7 +4558,7 @@ Integration: 章节 §8 的 Ren 的选择加一项（第二部分的结构）；
 
 AI 的分析与拟议阶段在[计划](../history/root-foundation/REGISTRATION-AND-TESTING-PLAN.md)中。它说经由支持的反馈有三种不见（阈下、视界之外、所及之外）；失控是在其一之中运行的回路；量度、延续的模型与他者之识是跨过它们的方式；可否证性是被展开纠正的条件；理 读作识 心 的反馈所不能识者的模型。它还留给 Ren 四个问题。Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。AI 把这读作接受开始这一阶段、接受名称与 理 的读法（来源中的 AI 读法）。第 4 问，即形成自身的立着是否算作被识，由 AI 探索后决定（§70.1）。独立审查收窄了这些读法（§70.2），所以下面的读法是收窄之后的，不是 Ren 所接受的原文。
 
-本节是统一计划 P49（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)）。起草时编为 P47，因 P47 已是 `Becoming.Standing`，在工作板上改为 P49；审查文件保留起草时的编号。它不加公理，属于第一部分。核心新增模块 `Becoming.Testing`，92 项定理，导入 `Becoming.Feedback` 与 `Becoming.Locality`。按[零前提转向](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)与整合者定下的接口，平衡只在被识的条件上逐步假设（`Flow.BalancesOn`）；整体的平衡经 `Flow.Balances.on` 给出它。
+本节是统一计划 P49（[计划 §10](../history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)）。起草时编为 P47，因 P47 已是 `Becoming.Standing`，在工作板上改为 P49；审查文件保留起草时的编号。它不加公理，属于第一部分。核心新增模块 `Becoming.Testing`，92 项定理，导入 `Becoming.Feedback` 与 `Becoming.Locality`。按[零前提转向](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)与整合者定下的接口，平衡只在被识的条件上逐步假设（`Flow.BalancesOn`）；整体的平衡经 `Flow.Balances.on` 给出它。
 
 成果记录新增两项：
 - [testing-within-registration](../../../../theories/becoming/results/records/testing-within-registration.md)
@@ -7942,7 +7942,7 @@ theorem same_iff_bisimilar_of_em (em : ∀ p : Prop, Decided p)
 
 ## 123. 第十七次审查的更正：文字、改名与一处由构造给出的平衡
 
-2026-10-14。开放问题计划第 19 项（Ren 选“yes, one agent”，并说“please, do all”）：一个独立审查代理审查 10 月 13–14 日加入的一般规律，写成[第十七次审查](BECOMING-GENERAL-LAWS-REVIEW.md)（错误 2、言过 3、陈述 2、命名 4、确认 14）。审查只在记录里改了 G1 与 G2 中不改来源哈希的两处；其余改 Lean、研究或章，随本次检查运行一并落地。
+2026-10-14。开放问题计划第 19 项（Ren 选“yes, one agent”，并说“please, do all”）：一个独立审查代理审查 10 月 13–14 日加入的一般规律，写成[第十七次审查](../history/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)（错误 2、言过 3、陈述 2、命名 4、确认 14）。审查只在记录里改了 G1 与 G2 中不改来源哈希的两处；其余改 Lean、研究或章，随本次检查运行一并落地。
 
 ```text
 Result(s): 改写 finite-aggregation-within-restorable-basic-losses（G1 改名、G6 定律 6）、substitution-preserves-consumption（G3）、
@@ -10158,7 +10158,7 @@ Integration: 章节一句话、两个目标、完整陈述、前提卡、第一�
 
 ## 163. 发布准备度复核与第十八次审查（R18、I5）
 
-2026-10-16。Ren：“spawn teams of sub agents, do a full review over the codebase … are we ready to release our significant proves?”，随后：“please work with it, spawn sub agents with proper effort level, and fix all”。六个复核者（可靠性、主张与证明、整合、代码库、理论状态、新颖性）给出[发布准备度复核](BECOMING-RELEASE-READINESS-REVIEW.md)；[第十八次独立审查](BECOMING-EIGHTEENTH-REVIEW.md)复核 P107–P127 与 I4b。均为 AI 的复核，不是成果。
+2026-10-16。Ren：“spawn teams of sub agents, do a full review over the codebase … are we ready to release our significant proves?”，随后：“please work with it, spawn sub agents with proper effort level, and fix all”。六个复核者（可靠性、主张与证明、整合、代码库、理论状态、新颖性）给出[发布准备度复核](../history/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md)；[第十八次独立审查](../history/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md)复核 P107–P127 与 I4b。均为 AI 的复核，不是成果。
 
 ```text
 Result(s): 不新增成果；复核

@@ -89,7 +89,7 @@ Proves none of S0, N, A, C, L or J and binds no position rejecting them. The uni
 | proof | [Ranking.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean) | `Becoming.Ranking.wholeRun` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
-| statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
+| statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
 | provenance | [2026-10-09-one-theory-unification.md](../../../../sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md) | — |
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |
 | review | [BECOMING-RENEWAL-READING-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md) | — |

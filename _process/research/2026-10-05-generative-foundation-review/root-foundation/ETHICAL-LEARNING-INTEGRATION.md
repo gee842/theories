@@ -1094,7 +1094,7 @@ Reuse the existing `Transfer` relation: initially the first condition has one un
 
 本条的局部完成项是比较内容的保真条件及真实损失检验，不再把它们列作待办。下一条具体工作须指定一项接纳以外、在决策中实际相关的关系内容——例如共同维持或变化中的需要——检验既有动态框架怎样保存它，或提出有根据的混合得失比较。笼统的“再次证明改名无关”与“再造一条反事实路线”不再是新方向。
 
-The work stops short of unique individuation and complete normative grounding. Its completed output is usable now: operative requirements can certify faithful comparison; generated alternatives can expose hidden losses. No new external factual claim, empirical validation or independent-agent acceptance is asserted. [P91 integration checks](COMPARISON-CONTENT-INTEGRATION-CHECKS.json) record proof binding and preservation separately.
+The work stops short of unique individuation and complete normative grounding. Its completed output is usable now: operative requirements can certify faithful comparison; generated alternatives can expose hidden losses. No new external factual claim, empirical validation or independent-agent acceptance is asserted. [P91 integration checks](../history/root-foundation/COMPARISON-CONTENT-INTEGRATION-CHECKS.json) record proof binding and preservation separately.
 
 **Final P91 proof evidence.** The [frozen consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T104720.812252Z/verification.json) passed: 24 new theorems / 33 new source-declaration audits, all empty; the full 78-module pure core compiles from the prelude, and the package has 4,546 theorems / 6,407 source-declaration audits. Twelve Lean steps ran and 345 were reused on identical inputs; 24 inherited peripheral modules remain separately identified. No historical receipt was rewritten. / 最终共享检查通过；本次新增量与继承量分列，核心纯净检查实际执行。
 

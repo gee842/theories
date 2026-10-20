@@ -1,6 +1,6 @@
 # Bridge fold: classification data and tools
 
-Working material for [BECOMING-BRIDGE-FOLD.md](../../BECOMING-BRIDGE-FOLD.md), 18 October 2026. Read-only study: nothing here changes Lean, records or receipts.
+Working material for [BECOMING-BRIDGE-FOLD.md](../../../history/root-foundation/BECOMING-BRIDGE-FOLD.md), 18 October 2026. Read-only study: nothing here changes Lean, records or receipts.
 
 - [`classification.json`](classification.json): one row for each of the 741 declarations (601 theorems) of the 39 bridge modules: module, line, declaration kind, kind (1, 2, 3) and subkind, whether it reaches a periphery constant, the periphery modules in its statement and in its whole dependency through the bridge, the periphery and core theorems its proof cites, the records naming it in a live field (`history` excluded) and the chapter sections naming it.
 - [`periphery-modules.json`](periphery-modules.json): the 67 periphery modules the 39 reach, with theorem counts, how many kind-1 and all bridge declarations reach each, and the live Lean files importing each outside the Becoming package.

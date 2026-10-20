@@ -1,6 +1,6 @@
 # Bridge fold step 0: restatement audit of the 20 leaf periphery modules
 
-18 October 2026. Read-only fold step 0 of [BECOMING-BRIDGE-FOLD.md](../../BECOMING-BRIDGE-FOLD.md#4-fold-plan), over the 20 modules of its [section 3.3](../../BECOMING-BRIDGE-FOLD.md#33-periphery-modules-a-kind-1-reading-could-retire). No Lean, record, receipt or board row changed. The study's decision 4 (whether to run this audit) has no recorded answer. The audit was run because the session that ran it was started to do it, and that start is read as the decision being taken.
+18 October 2026. Read-only fold step 0 of [BECOMING-BRIDGE-FOLD.md](../../../history/root-foundation/BECOMING-BRIDGE-FOLD.md#4-fold-plan), over the 20 modules of its [section 3.3](../../../history/root-foundation/BECOMING-BRIDGE-FOLD.md#33-periphery-modules-a-kind-1-reading-could-retire). No Lean, record, receipt or board row changed. The study's decision 4 (whether to run this audit) has no recorded answer. The audit was run because the session that ran it was started to do it, and that start is read as the decision being taken.
 
 ## 1. Question and inputs
 
@@ -578,7 +578,7 @@ Section 3.3 says the 20 modules "have no live importer". `ExplanatoryResiduals` 
 - The file is outside `history/` and outside the Becoming run, and no Lean file imports it.
 - The study's importer list (`periphery-modules.json`, `importers: []`) most likely missed it because of the trailing comment on the import line. With a pattern that tolerates trailing comments, the other 19 modules show only bridge or join importers inside `becoming/Becoming/`, as the study says.
 
-[MODULE-CLASSIFICATION.md](../../MODULE-CLASSIFICATION.md) marks `ExplanatoryResumptionCases` "earlier version". Its witnesses are restated, graded same, in `Becoming.Midway` (`formation_changes_guard`, `testing_before_formation_changes_results`, `same_start_distinct_remainders`, `remainder_codes_apart`, `inserted_can_disable_resumption`, `inserted_changes_tests`).
+[MODULE-CLASSIFICATION.md](../../../history/root-foundation/MODULE-CLASSIFICATION.md) marks `ExplanatoryResumptionCases` "earlier version". Its witnesses are restated, graded same, in `Becoming.Midway` (`formation_changes_guard`, `testing_before_formation_changes_results`, `same_start_distinct_remainders`, `remainder_codes_apart`, `inserted_can_disable_resumption`, `inserted_changes_tests`).
 
 So retiring `ExplanatoryResiduals` under step 3 also means:
 - marking `ExplanatoryResumptionCases` superseded;

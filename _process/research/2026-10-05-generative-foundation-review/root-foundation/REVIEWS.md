@@ -11,16 +11,12 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-06 | [EVALUATIVE-PLASTICITY-REVIEW.md](EVALUATIVE-PLASTICITY-REVIEW.md) | Prospective review of paid evaluative plasticity |
 | 2026-10-06 | [SELECTIVE-HANDOFF-REVIEW.md](SELECTIVE-HANDOFF-REVIEW.md) | Selective reuse of a historical correction: prospective review |
 | 2026-10-10 | [CONTINUATION-GROUNDING-REVIEW.md](CONTINUATION-GROUNDING-REVIEW.md) | Independent review: continuation grounding W1–W5 (plan W8) |
-| 2026-10-16 | [BECOMING-RELEASE-READINESS-REVIEW.md](BECOMING-RELEASE-READINESS-REVIEW.md) | Release-readiness review of the Theory of Becoming |
-| 2026-10-18 | [BECOMING-NINETEENTH-REVIEW.md](BECOMING-NINETEENTH-REVIEW.md) | Nineteenth review: what was checked after the eighteenth and never reviewed |
 | 2026-10-19 | [SSBX-REPOSITORY-REVIEW.md](SSBX-REPOSITORY-REVIEW.md) | 早期《生生不息》仓库审读：哪些可以并入生成／变化之论 |
 | 2026-10-20 | [BECOMING-TWENTIETH-REVIEW.md](BECOMING-TWENTIETH-REVIEW.md) | Twentieth review: the theory as one whole — completion, unification, coherence, elegance, redundancy |
-|  | [BECOMING-EIGHTEENTH-REVIEW.md](BECOMING-EIGHTEENTH-REVIEW.md) · [Chinese edition](BECOMING-EIGHTEENTH-REVIEW.zh.md) | Eighteenth independent review: P107–P127 and I4b |
-|  | [BECOMING-GENERAL-LAWS-REVIEW.md](BECOMING-GENERAL-LAWS-REVIEW.md) · [Chinese edition](BECOMING-GENERAL-LAWS-REVIEW.zh.md) | Independent review of the general laws (seventeenth) |
 
 ## Reviews kept in history
 
-234 earlier reviews were moved, bytes unchanged, to the study's history folder:
+238 earlier reviews were moved, bytes unchanged, to the study's history folder:
 
 | Date | Review | Title |
 |---|---|---|
@@ -252,6 +248,10 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-10 | [BECOMING-P32-P34-REVIEW.md](../history/root-foundation/BECOMING-P32-P34-REVIEW.md) | Independent review of P32 to P34 and the P35/P36 drafts |
 | 2026-10-10 | [BECOMING-P34B-P38C-REVIEW.md](../history/root-foundation/BECOMING-P34B-P38C-REVIEW.md) | Independent review of P34b to P38c |
 | 2026-10-11 | [BECOMING-R1-R2-REVIEW.md](../history/root-foundation/BECOMING-R1-R2-REVIEW.md) | Independent review of R1, R1b and R2 (`Becoming.Resolution`) |
+| 2026-10-16 | [BECOMING-RELEASE-READINESS-REVIEW.md](../history/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md) | Release-readiness review of the Theory of Becoming |
+| 2026-10-18 | [BECOMING-NINETEENTH-REVIEW.md](../history/root-foundation/BECOMING-NINETEENTH-REVIEW.md) | Nineteenth review: what was checked after the eighteenth and never reviewed |
+|  | [BECOMING-EIGHTEENTH-REVIEW.md](../history/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md) | Eighteenth independent review: P107–P127 and I4b |
+|  | [BECOMING-GENERAL-LAWS-REVIEW.md](../history/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md) | Independent review of the general laws (seventeenth) |
 |  | [BECOMING-P42-P43-REVIEW.md](../history/root-foundation/BECOMING-P42-P43-REVIEW.md) | Independent review of P42–P43: feedback, reach and boundaries |
 |  | [BECOMING-P49-REVIEW.md](../history/root-foundation/BECOMING-P49-REVIEW.md) | Independent review of P47: registration and testing |
 |  | [BECOMING-RENEWAL-READING-REVIEW.md](../history/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md) | Independent review of the relational reading and dependence dynamics |

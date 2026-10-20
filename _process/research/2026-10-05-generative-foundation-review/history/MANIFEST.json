@@ -1173,6 +1173,15 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-RISK-SHARING-INDEX-EDITS.json"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-BRIDGE-FOLD.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-BRIDGE-FOLD.md",
+      "sha256": "6a758b294903c6cd0b92d52115dc5786923a2895e175160d1f87c4c19434bae4",
+      "blob": "205cc982e9efa16ddc92e8f3c4d636622a111b42",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: executed (F1-F3 sweep landed 2f8b4d3b3)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-BRIDGE-FOLD.md"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-COMPATIBILITY-CHECKS.json",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-COMPATIBILITY-CHECKS.json",
       "sha256": "de4b68766cbb94c2fc79ffaebccaa25e5bf06d567dfcc32948413142ecaaf015",
@@ -1191,6 +1200,42 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-COMPATIBILITY-INDEX-EDITS.json"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md",
+      "sha256": "6921df1f53be7ca9e0af51130f70b6a51389e509f9e46edc0214e69b94daaee6",
+      "blob": "a4c48e154fc09e599ca7dd36722309653c51d033",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: superseded review",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-EIGHTEENTH-REVIEW.zh.md",
+      "sha256": "718699aeaca5a80342376b66231f3ab58beef67fed8d9992a9b87c55c16c438c",
+      "blob": "c9ee80a439512239b5518a97b43d46d3c50699aa",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: edition",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.zh.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md",
+      "sha256": "b020e72f7e84b5c578e4f8e6170127f28e8efb3682146e5cdbdf96a8696a9d63",
+      "blob": "4314d2ce856f48ed60411817a1edd540ec1ed48a",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: superseded review (seventeenth)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.zh.md",
+      "sha256": "bffcb22f1580b0a422c520ccefb08ac8837fd603e12910cf9f6a72ef915cfdc3",
+      "blob": "ed7c17673258950f949d42b7bd888dab04276175",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: edition",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.zh.md"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CHECK.py",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-INSTANCE-CHECK.py",
       "sha256": "fb038b366860c126ba400993818c70a1b27e5b382fff8f52e096a064a863df1f",
@@ -1207,6 +1252,15 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-09; record-bound: 1 file (tool rewrites record paths, sha256 unchanged)",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-NINETEENTH-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-NINETEENTH-REVIEW.md",
+      "sha256": "9ac4bc68234837f960d2d0e82ff7d7a083b2e3f11f87e9a33c9613214f68c2ba",
+      "blob": "15457eecdf1434af1d9ce6c218587ea3d33e433c",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10 kept it as latest; the twentieth review supersedes it and R21 landed its fixes",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-NINETEENTH-REVIEW.md"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-OPERATIVE-ORDER-REVIEW.json",
@@ -1380,6 +1434,15 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-R1-R2-REVIEW.md"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md",
+      "sha256": "8b9a088b31c9bedec93de806e0328a7a62e7722233959e09f5f3d333debe9265",
+      "blob": "7a24409a6b5cae4a4aac82d8896b7cbfd5e555ae",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: superseded review",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md",
       "sha256": "68ea868722b81b3ea9f52b369b84f7498faa19a8e7f6909df1a38c4dbdcb7fea",
@@ -1423,6 +1486,24 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-09; record-bound: 1 file (tool rewrites record paths, sha256 unchanged)",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "sha256": "39481677948c2c7701b1fd6b9c942dabc0003e06f66fc83b9f85912566f87593",
+      "blob": "b5e2b1ffc171f50b2334c91f199f6a53c2588f73",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: executed plan (P0-P63, I4); still the statement source of 26 records and integration of 15: the tool re-keys them",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-UNIFICATION-PLAN.zh.md",
+      "sha256": "3c3de795b4bfe9a00be0f7ec3ac1ab866012424b37089eb3a0afd46f3f5608c7",
+      "blob": "d32f3151cfe1724c7d05fc841e41d7c4f52d29a7",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: edition of the executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.zh.md"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-WHOLE-DEDUCTION-REVIEW.json",
@@ -2226,6 +2307,15 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMMON-TASK-REVISION-INDEX-EDITS.json"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPARISON-CONTENT-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPARISON-CONTENT-INTEGRATION-CHECKS.json",
+      "sha256": "96121d260c44d92d076993b20e2b73f646fac00014fb26679b04efb36e5fede2",
+      "blob": "d96abbb99ae8e7a4bcdeae681e67088bf119fb4e",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (14 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPARISON-CONTENT-INTEGRATION-CHECKS.json"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPATIBILITY-SCOPE-CHECK.py",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPATIBILITY-SCOPE-CHECK.py",
       "sha256": "6a16e2def34752a275bd55845f823bf68a479f36539304702a4ff5dbcd3fd94f",
@@ -2251,6 +2341,15 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-08",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPATIBILITY-SCOPE-INDEX-EDITS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-EPISODE-COMPARISON-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETE-EPISODE-COMPARISON-INTEGRATION-CHECKS.json",
+      "sha256": "2765acd6ef9ca5339ee665f6137e86de64685a085f6dac9a51e57db45cffea99",
+      "blob": "9fd6dba37365661d19ad87d20f91fbdcf504df59",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (14 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-EPISODE-COMPARISON-INTEGRATION-CHECKS.json"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-FOUNDATION-DERIVATION-AUDIT.md",
@@ -4692,6 +4791,15 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ENCOUNTER-CHOICE-RECORD-EDITS.json"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EPISODE-AND-SUSTAINED-HARM-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EPISODE-AND-SUSTAINED-HARM-INTEGRATION-CHECKS.json",
+      "sha256": "c082d877e9604eb486b089d28b197615c9bde19261db7a26f0716d460b0b7994",
+      "blob": "8475842799f0b017ac83a7502e13ea3e4cd54328",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (14 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EPISODE-AND-SUSTAINED-HARM-INTEGRATION-CHECKS.json"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-CONSTITUTION-CLOSURE.md",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ETHICAL-CONSTITUTION-CLOSURE.md",
       "sha256": "b07e42d8f2a88fb24aa427ada803abd89b383c38c4d7d1d10b3dfd170154fd27",
@@ -6373,6 +6481,15 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-05",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIGURE-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FINITE-RESPONSIVENESS-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FINITE-RESPONSIVENESS-INTEGRATION-CHECKS.json",
+      "sha256": "66fa15120fc54b26aa3e03f11ff01945abf74ccefeab3ff0dc67e721fe29248c",
+      "blob": "ddb8298e6d2bf08e49ec0dc3323c4697eb3d1f68",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (14 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FINITE-RESPONSIVENESS-INTEGRATION-CHECKS.json"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIRST-PRACTICAL-WARRANT-INDEX-EDITS.json",
@@ -10533,6 +10650,15 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CHECKS.json"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-COMPLETION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-COMPLETION-CHECKS.json",
+      "sha256": "d12d386d82d15daa016ca81447d6d032c48f79de97f6ed33510d47c9949ddfed",
+      "blob": "74ce1cd325c104cf2b9295980c20f8dd703ffcce",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (13 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-COMPLETION-CHECKS.json"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY-INDEX-EDITS.json",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-DISCOVERY-INDEX-EDITS.json",
       "sha256": "94a08d40aeaa5f955c4cee3985547d8b50e0b9264f6d65f1c255639e041d8453",
@@ -10623,6 +10749,15 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION-INDEX-EDITS.json"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REFERENCE-PLAN-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-REFERENCE-PLAN-INTEGRATION-CHECKS.json",
+      "sha256": "155330367c12055b48e26a7268e0e146ada97416fb88d3325a891b26b2c840df",
+      "blob": "1d0682cf2eaeee7fec13557d7ef04241444f70a0",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (13 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REFERENCE-PLAN-INTEGRATION-CHECKS.json"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION-INDEX-EDITS.json",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-REPRODUCTION-INDEX-EDITS.json",
       "sha256": "ed8f98c2aabcfc83cb5164f3166a556354996cf2ce4d222b3c323b9dfe726ba8",
@@ -10648,6 +10783,15 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-08",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVISION-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-REVISION-INTEGRATION-CHECKS.json",
+      "sha256": "9019dd7d84b19310d16ee2308fcc6388407f357c5d079c83bffdf3878cc68a6a",
+      "blob": "a06dde5027442ca04ac9dd6831b8ced4456b3d37",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (13 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVISION-INTEGRATION-CHECKS.json"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING-INDEX-EDITS.json",
@@ -10873,6 +11017,24 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-08",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MODULE-CLASSIFICATION.md",
+      "sha256": "c30adc0af179e1e984513648193e3fbfcd6e1e7948e3770dc1989eba5835802b",
+      "blob": "9d7913055e0981f044db7d0c1bee3a14940668f5",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: executed by I4 and F3 (\"nothing is marked, moved or deleted before Ren decides\")",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MODULE-CLASSIFICATION.zh.md",
+      "sha256": "24b8871af1b590ea61244a8b7744d1f9b47f18c491649b06016878adca82a24a",
+      "blob": "d23a9d5fde88955f7a3b40e189832853e05906fd",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: edition",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MONIST-ORGANIZATION-CHECKS.json",
@@ -11514,6 +11676,15 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OPEN-FORM-BRIDGE-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/OPEN-FORM-BRIDGE-CHECKS.json",
+      "sha256": "a5007e4f8a66f54bb1defa1e773a854ea6ffd734b504276188ea4b0f6c1967a0",
+      "blob": "1b82a36fa2e422aad4383465c9b359f9928ebe80",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (13 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OPEN-FORM-BRIDGE-CHECKS.json"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OPEN-FUTURE-REVISION-CHECKS.json",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/OPEN-FUTURE-REVISION-CHECKS.json",
       "sha256": "b1d65608afb85879d0a7d9ddd3a02017c49bb0177e555f94d17a3434dfbada54",
@@ -12151,6 +12322,15 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-07",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-RECOVERED-CONTACT.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHRASE-READINGS-PENDING-REN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PHRASE-READINGS-PENDING-REN.md",
+      "sha256": "2d917c7f9dd168afa94e5ae9bb28471d6139b899832eeddd8e93810db78a401e",
+      "blob": "f9114054be490c3b2d3b379b43216459ac0663e6",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: answered (D45)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHRASE-READINGS-PENDING-REN.md"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CAPACITY.md",
@@ -12817,6 +12997,15 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-06",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPOSITION-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/READINGS-PENDING-REN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/READINGS-PENDING-REN.md",
+      "sha256": "c32a9ae9f8b2992a41c829ab22750ec382f2f19acc66c64c5367fbea29047d6b",
+      "blob": "78a19f22424b7cf850e2581ba51641a74929e875",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: answered (D45, 19 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/READINGS-PENDING-REN.md"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README-BEFORE-RESULTS-CATALOGUE-LATEST.md",
@@ -14376,6 +14565,24 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-PRESERVATION.json"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RESULTS-CATALOGUE-RECORD.md",
+      "sha256": "992577e4a8c678784cffb1976edae236a7f64141daa6e573cf4c84fa6c2d8425",
+      "blob": "7ceb0116955882c1860a9a6dd6e37e53057b924c",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: editing record of the frozen catalogue volumes",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RESULTS-CATALOGUE-RECORD.zh.md",
+      "sha256": "fa3347be93556c4fbbeefa72bcc482273f731934739e1b6f34d4c71830e23aee",
+      "blob": "9e609ae3c677180aa23c20e4b39699413a55d6f0",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: edition",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.zh.md"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RELEASE-CHECKS.json",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RESULTS-CATALOGUE-RELEASE-CHECKS.json",
       "sha256": "9c336bf736b9a0a2786f6db906e540d8383ced4966e129f1354ed9d999347fd3",
@@ -15762,6 +15969,87 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-CLASSIFIER-CORRECTION.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-CLASSIFIER-CORRECTION.json",
+      "sha256": "83091ddd2d731fdc786ef62d5315e5612d332c4d756826a50a17f6f8d61deb3b",
+      "blob": "ed21a1c593bf51cd4992b1bf489dd06b83a98753",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map input, frozen with SESSION-RESULTS",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-CLASSIFIER-CORRECTION.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "sha256": "905df776fe02bd625e24ffe7feaa0637a24c2a36219a8e1137013b7b4e929178",
+      "blob": "bccd75cf907c04343ce6af1e99a7c950edc51bc0",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map audit",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-BASELINE.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-INTEGRATION-BASELINE.json",
+      "sha256": "680580b0a945fe4f70d43dd0f943307e1d8d76009b768f4778d5512fa2467914",
+      "blob": "668ca39b0b62bbf8ba6d20d88230a45dea362920",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map input",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-BASELINE.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-FINAL-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-INTEGRATION-FINAL-CHECKS.json",
+      "sha256": "6772f9c461e2f714b7f4966ae5ef3dfa18854037c9b42df3e8fc24c451a46b69",
+      "blob": "6ca09cbd96951fe64f23abd8a1ce36dfa2027a38",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map check output",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-FINAL-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-NAVIGATION.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-INTEGRATION-NAVIGATION.json",
+      "sha256": "916e16450a60ffc884d5e54f3fdf0059d0a12cbc27a06b5698501b1c11f6aa43",
+      "blob": "4ae6e7f9025955d086c3b19d4909609f51a1efc5",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map navigation output",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-NAVIGATION.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-OUTCOME-SNAPSHOT.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-OUTCOME-SNAPSHOT.json",
+      "sha256": "b068868640057777514212ae1f988f0d7cc55ba6c815c7cacaafa92ff2a83692",
+      "blob": "819c1b4d1b3ff8a78398ede1f1e7f562b21f36da",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map input",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-OUTCOME-SNAPSHOT.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-PROOF-OVERLAP.json",
+      "sha256": "2d6d2fd5b74bfd31ab25bd63eb89d3bfe3c87e34b1d90f6ac543844abe834f34",
+      "blob": "e03d671c29ee96d2b37ef89fba16a9c7f6415750",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map inventory",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json",
+      "sha256": "9126a57e70b9c5e3647c77906d0b8712a86a0acc2f567ddf9f274f64f24641cf",
+      "blob": "51fc4d0ec216d96967b024aec40ea47496237fa9",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map check; 2 records cite it (review)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-RESULT-MAP-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SESSION-RESULT-MAP-CHECKS.json",
+      "sha256": "305e56923ccf4f4d21a63fd251445820464710ca417a6503eb5b898203b3dd04",
+      "blob": "dc1807262066d6bc558e53c5ef24c1e6f8fdf3a4",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E2/E10: session-map check output",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-RESULT-MAP-CHECKS.json"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-CHECKS.json",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SETTLING-CORRESPONDENCE-CHECKS.json",
       "sha256": "67dff42c3c8165ee834968902a755b2b6a81810de2913edc125c35ddbacb9d41",
@@ -16138,6 +16426,15 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-08; record-bound: 1 file (tool rewrites record paths, sha256 unchanged)",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SOURCE-RELIANCE-INTEGRATION.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SPINE-INTEGRATION.py",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SPINE-INTEGRATION.py",
+      "sha256": "f5c61abf7f9589d7d3ca25f04b966c4d6f02999b1286ba2bc25c7018e82b9bd0",
+      "blob": "14ac9dcb83997f9890edb487775265c8b5baf0e2",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: I4 tool (16 Oct), executed",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SPINE-INTEGRATION.py"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md",
@@ -16570,6 +16867,15 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-08",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMELY-CONTINUATION-INTEGRATION-CHECKS.json",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TIMELY-CONTINUATION-INTEGRATION-CHECKS.json",
+      "sha256": "15b55b6c47760389cfabbf0b2b4d3d7534c47d5abe79ab95669e2f8f3e9acbc7",
+      "blob": "2c28d649dbbd7bf432f43812c6e331b235a8ed7c",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: uncited check output (14 Oct)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMELY-CONTINUATION-INTEGRATION-CHECKS.json"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-CHECK.py",
@@ -18532,6 +18838,33 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-08",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-CHECKS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-INVENTORY.py",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ZERO-PREMISE-INVENTORY.py",
+      "sha256": "ef4993ebc9190189b29fbb8c76c7f0e348bf9e47e10eb3c631d4792b613c3341",
+      "blob": "d7e6084bab2ab12461b6d9543c9fa8dc511a8e9c",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: the plan's inventory script",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-INVENTORY.py"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ZERO-PREMISE-PLAN.md",
+      "sha256": "4f425c33ebb1e6f733cc7232f28ff35ae37409f1732b123dc92868e6ebbe55fb",
+      "blob": "00706d459deac7f9c51cb6aefaa7af99f5bff85a",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: executed plan (I4); 4 records cite it (integration)",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ZERO-PREMISE-PLAN.zh.md",
+      "sha256": "44e68e14b8c6d96ebc1172e7b3ab5038d269bf74eb0a8e5e82b7f3c49444dc3f",
+      "blob": "66196291ddc3476465fb7708f0c5d59d349b121a",
+      "batch": "R35-B4-study",
+      "reason": "R35 (20 October 2026), batch B4: E10: edition of the executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.zh.md"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/check_action_aware_tracking_integration.py",

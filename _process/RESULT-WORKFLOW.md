@@ -62,6 +62,10 @@ python3 -B tools/research/research.py lint --ids joint-plan-composition
 
 **Exit codes and scope of the checker.** A stale record keeps its earlier page; healthy records and shared indexes still render. Exit 1 means invalid metadata, an unincorporated concurrent edit or outdated rendering; exit 2 means source drift in the selected records, with other records' drift reported separately. Changed-file selection follows result dependencies as well as direct references; dependency metadata is always checked globally. No hash is refreshed automatically. The checker verifies structure, references, declaration presence, receipt hash bindings, unique aliases, dependency cycles and generated views. It does not prove semantic equivalence, audit every transitive import or establish the warrant of premises; hypotheses hidden in definitions remain a review obligation.
 
+<a id="record-history"></a>
+
+**Record history.** `history` keeps the notes that say what changed in the record: its creation, a changed statement, title, premise, law or scope, a correction, a supersession, an adopted reading or vocabulary. A re-point or rebinding that changes nothing the record says is not a history note: `tools/research/repoint.py` makes it and logs it once per landing in `_process/architecture/rebinds.jsonl`. The bookkeeping notes written before 20 October 2026 were condensed by `research.py compact-history` (R35): each record keeps one note counting them with their date range, and its full earlier history is stored as a `text_versions` snapshot, so nothing is lost; the classifier is `tools/research/history_notes.py`.
+
 **Supersession.** Keep the old record with `status: superseded` and `superseded_by: <id>`, record the exact replacement scope and preserve the old evidence. `withdrawn` needs an explanation in history and a linked boundary; it never deletes the counterexample.
 
 ### Moving a source

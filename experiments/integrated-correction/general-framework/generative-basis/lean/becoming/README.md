@@ -372,4 +372,4 @@ These declarations were renamed after the fourth independent review (H1, H6, H13
 | `Flow.ledger`, `Flow.accumulates` | `Flow.Balances.over`, `Flow.Balances.accumulates` | a balance, not a ledger |
 | `takers_le_load`, `supply_le`, `More.supply_unbounded` | `takers_le_uptake`, `replenishment_le`, `More.replenishment_unbounded` | as above |
 
-Later renames, among them those of 14 October 2026 (A1–A11, B1–B5 and N of the general-laws plan, e.g. `MakesSense` → `IdentifiesAlike`, `Denial` → `Negation`) are tabulated in [plan §10](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii).
+Later renames, among them those of 14 October 2026 (A1–A11, B1–B5 and N of the general-laws plan, e.g. `MakesSense` → `IdentifiesAlike`, `Denial` → `Negation`) are tabulated in [plan §10](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii).

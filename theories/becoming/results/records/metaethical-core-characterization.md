@@ -65,7 +65,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [InquirySufficiency.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean) | `Generative.InquirySufficiency.Sound`, `Generative.InquirySufficiency.sound_execution_meets_goal` |
 | proof | [GenerativeCore.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) | `Generative.Process`, `Generative.Trace`, `Generative.trace_append_iff` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json) | — |
-| statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
+| statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
 | review | [EVALUATOR-GROUNDING-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md) | — |
 | provenance | [2026-10-09-one-theory-unification.md](../../../../sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md) | — |
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |

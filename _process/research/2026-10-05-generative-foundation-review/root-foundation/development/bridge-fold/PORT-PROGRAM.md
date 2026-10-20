@@ -1,6 +1,6 @@
 # F3: the periphery port, the program
 
-18 October 2026. Board item F3, after F1 (the fold) and beside F2 (six leaf modules). Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification" ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-18-resolve-bridges-unification.md)). This file is the shared plan of the five family sessions and the sweep. It is a sibling of the [fold study](../../BECOMING-BRIDGE-FOLD.md), which it does not edit.
+18 October 2026. Board item F3, after F1 (the fold) and beside F2 (six leaf modules). Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification" ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-18-resolve-bridges-unification.md)). This file is the shared plan of the five family sessions and the sweep. It is a sibling of the [fold study](../../../history/root-foundation/BECOMING-BRIDGE-FOLD.md), which it does not edit.
 
 ## 1. Why the bridges stay after F1
 

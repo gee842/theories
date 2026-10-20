@@ -4,7 +4,7 @@
 
 This is AI work (Opus 5.5), not Ren's words. The P129 subagent wrote it, and the lead saved it, because the harness kept the subagent from writing report files.
 
-The fixes come from the [release-readiness review](../../BECOMING-RELEASE-READINESS-REVIEW.md) §1–§4 and the [eighteenth review](../../BECOMING-EIGHTEENTH-REVIEW.md), fix list items L1–L18, S41 and S43. No existing name or statement changed.
+The fixes come from the [release-readiness review](../../../history/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md) §1–§4 and the [eighteenth review](../../../history/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md), fix list items L1–L18, S41 and S43. No existing name or statement changed.
 
 ## 1. Re-definitions
 
