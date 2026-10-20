@@ -265,7 +265,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
       "role": "proof",
-      "sha256": "73d088bbc1bf0fec27a52cae188ac580e2fe61e3b7280ee0257aa1a4bef096ef",
+      "sha256": "874721d6fa07e8d14ba5de1fb0f20055939fd784140b38fc5fae578baa62156c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
+      "role": "proof",
+      "sha256": "0d1566a393c85318f80ff11e25f0d12911571f0536e3a4259dcb3a1df9e9ff31",
       "declarations": [
         "Becoming.LivingSignificance"
       ]
@@ -311,6 +317,12 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -344,8 +356,15 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Extension",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -437,6 +456,10 @@
     {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Stock.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Stock.lean, takes as its final section StockTraces, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Stock.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Stock.lean，以末节收入 StockTraces（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Moved with their full names: from ValuationFrames.lean to Extension.lean, LivingSignificance. Proof bindings (ValuationFrames.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: ValuationFrames.lean, LivingSignificance moved to Extension, unchanged; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：连同完整名称移动：从 ValuationFrames.lean 到 Extension.lean：LivingSignificance。证明绑定（ValuationFrames.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：ValuationFrames.lean，LivingSignificance 原样移到 Extension；保留的陈述不变。论断不变。"
     }
   ]
 }

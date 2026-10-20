@@ -354,7 +354,7 @@
       "declarations": [
         "Becoming.Clearing.clearer_loses_dweller"
       ],
-      "sha256": "ddd1afe1ef826f426a418e24066e801610d4d99e3300dca8c7fc8aba03fd16e3"
+      "sha256": "c658db1f65753aa4ad1d547ac13f1864154d2cbad2fce5867bdb82d4cc20ed77"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T110924.527968Z/verification.json",
@@ -364,7 +364,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "fc0ec66b6808b0435011789f8768f35c6c87896f5438b142f40c5a3d200cf41d"
+      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -374,7 +374,7 @@
     {
       "path": "theories/becoming/OPENING.md",
       "role": "provenance",
-      "sha256": "aa8699236d072100ea569188143cf62e423cfb146309882314a48df705d5de23"
+      "sha256": "03083d10eebf1301bf4b90707aedfe663ed815da489970389d0fb88b1abe39b4"
     },
     {
       "path": "drafts/2026-10-10-opening/history/OPENING-V7-PROPOSAL.md",
@@ -455,6 +455,10 @@
     {
       "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
       "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; Significance.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged; OPENING.md, the footnote on alignment names the condition for scope and C for order and cites the core schema; the body is unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；Significance.lean，只改说明（任何类型的立场、obs 是第二个给出的关系、固定类型的界、整段的类）或导入；保留的陈述不变；OPENING.md，关于对齐的脚注写明条件定范围、C 定次序并引核心模式；正文不变。论断不变。"
     }
   ]
 }

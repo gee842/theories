@@ -242,7 +242,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
       "role": "proof",
-      "sha256": "463362f413959f2116f1f1b8e619778997b14bb3b9baeff000fd4d38d787bd1e",
+      "sha256": "20d009fba262ddd9aa6578449ebb14a5af96a87f20a564b8c1af7f8f116786ad",
       "declarations": [
         "Becoming.ActiveReading.livingSignificance_wholeRun_iff",
         "Becoming.ActiveReading.overdraw_unranked",
@@ -264,7 +264,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
       "role": "proof",
-      "sha256": "653f8a09ef3566505626c04befae817cf147e8a6fc6e4330c1b4d012ea20ac58",
+      "sha256": "6bc824907a09d28fc017c3c5f36f510da6fe8cd532858280abf62a082617dd28",
       "declarations": [
         "Becoming.Ranking.extendsUnder_iff_of_exact",
         "Becoming.Ranking.wholeRun_of_renewed",
@@ -358,18 +358,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
       "role": "proof",
-      "sha256": "73d088bbc1bf0fec27a52cae188ac580e2fe61e3b7280ee0257aa1a4bef096ef",
-      "declarations": [
-        "Becoming.LivingSignificance"
-      ]
+      "sha256": "874721d6fa07e8d14ba5de1fb0f20055939fd784140b38fc5fae578baa62156c",
+      "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
       "role": "proof",
-      "sha256": "73f33d048dc2e68aa92df80333e378c6638f5081c3693d4c9f5a836e38a8da29",
+      "sha256": "0d1566a393c85318f80ff11e25f0d12911571f0536e3a4259dcb3a1df9e9ff31",
       "declarations": [
         "Becoming.Extension",
-        "Becoming.Comparison"
+        "Becoming.Comparison",
+        "Becoming.LivingSignificance"
       ]
     },
     {
@@ -401,6 +400,12 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -420,7 +425,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Ranking",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -434,21 +439,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ActiveReading",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Extension",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -547,6 +552,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from ValuationFrames.lean to Extension.lean, Comparison, Extension. Proof bindings (ValuationFrames.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: ValuationFrames.lean, C on frames moved to Extension.lean. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 ValuationFrames.lean 到 Extension.lean：Comparison、Extension。证明绑定（ValuationFrames.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：ValuationFrames.lean，框架上的 C 移到 Extension.lean。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): F9 of the twentieth review: Ranking's and ActiveReading's worlds are webs, so the cited Ranking.wholeRun_of_renewed, renewed_extends_iff, renewed_active_extends_iff and ActiveReading.livingSignificance_wholeRun_iff state Web.Renewed and Web.ConsumingIn in place of RelationalRenewal's (study section 225); ActiveReading.livingSignificance_wholeRun_web_iff, the same statement once the world is a web, was removed (development/r34-evaluative-chain/RENAME-TABLE.json). The claim is unchanged. Also: Moved with their full names: from ValuationFrames.lean to Extension.lean, LivingSignificance. Proof bindings (ActiveReading.lean, Extension.lean, Ranking.lean, ValuationFrames.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: ActiveReading.lean, worlds read as webs (restated); livingSignificance_wholeRun_web_iff and absent_web_dependent removed as the same statements as the kept ones; Extension.lean, LivingSignificance stated here, moved unchanged from ValuationFrames; Ranking.lean, worlds read as webs (restated, study section 225); imports Frame and Extension only; stepwise_iff moved to Relevance; ValuationFrames.lean, LivingSignificance moved to Extension, unchanged; kept statements unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：第二十次审查 F9：Ranking 与 ActiveReading 的世界是网，所以所引 Ranking.wholeRun_of_renewed、renewed_extends_iff、renewed_active_extends_iff 与 ActiveReading.livingSignificance_wholeRun_iff 陈述 Web.Renewed 与 Web.ConsumingIn，取代 RelationalRenewal 的（研究第 225 节）；ActiveReading.livingSignificance_wholeRun_web_iff 在世界是网之后是同一陈述，已删去（development/r34-evaluative-chain/RENAME-TABLE.json）。论断不变。另：连同完整名称移动：从 ValuationFrames.lean 到 Extension.lean：LivingSignificance。证明绑定（ActiveReading.lean、Extension.lean、Ranking.lean、ValuationFrames.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：ActiveReading.lean，世界读作网（重述）；livingSignificance_wholeRun_web_iff 与 absent_web_dependent 因与保留者陈述相同而删去；Extension.lean，LivingSignificance 在此陈述，自 ValuationFrames 原样移入；Ranking.lean，世界读作网（重述，见研究第 225 节）；只导入 Frame 与 Extension；stepwise_iff 移到 Relevance；ValuationFrames.lean，LivingSignificance 原样移到 Extension；保留的陈述不变。"
     }
   ],
   "text_versions": [

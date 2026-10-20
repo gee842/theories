@@ -368,7 +368,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
       "role": "proof",
-      "sha256": "45c87ef2119e69e177d3f5f61e90374353b50d52ee876a261e0918a7d64ac6b5",
+      "sha256": "5413cf90f54ac4a76bd0e9fef1296e854df95081bbfd2c0c9c72b8241d3813d1",
       "declarations": [
         "Becoming.Clearing.own",
         "Becoming.Clearing.sig",
@@ -395,7 +395,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "fc0ec66b6808b0435011789f8768f35c6c87896f5438b142f40c5a3d200cf41d"
+      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
@@ -471,6 +471,12 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -483,7 +489,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Standpoints",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -794,6 +800,10 @@
     {
       "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added. The claim is unchanged.",
       "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Proof bindings (Standpoints.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; Standpoints.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：证明绑定（Standpoints.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；Standpoints.lean，只改说明（任何类型的立场、obs 是第二个给出的关系、固定类型的界、整段的类）或导入；保留的陈述不变。论断不变。"
     }
   ],
   "text_versions": [

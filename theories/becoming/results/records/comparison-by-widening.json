@@ -14,8 +14,8 @@
     "en": "On level paths, an extension in which every claim counts as living is exactly a widening of what can form, by unfolding Extension there into Widens; with “better” read as widening, C holds for every reading of living, with no axiom; that widening is better is an open warrant."
   },
   "claim": {
-    "zh": "在依存网的水平路径框架（Web.paths）上，主张是（形成，步），一条水平路径实现它恰当在该步接纳该形成。以每个主张都算作活，水平路径 l 对 l′ 的扩展（Extension：实现 l′ 实现的每个主张，并多实现一个）恰是 l 扩大 l′，即包含且超出它（Web.paths_extension_iff_widens）。对 living 的任何读法，扩展都是以每个主张为活的扩展，所以以“更好”读作扩大，C（每个扩展都更好）成立（Web.paths_comparison_widens），不用公理。在延续条件之下，扩大就是保留且增加有意义者（Web.widens_iff_retains_adds，见 significance-retained-within-margin），所以水平路径上由延续条件推出的 C（Web.paths_livingSignificance_comparison，见 one-axiom-yields-g0）是它在意义上的读法。",
-    "en": "On the frame of a web's level paths (Web.paths), claims are pairs of a formation and a step, and a level path realizes one exactly when it admits the formation at that step. With every claim counting as living, an extension of l′ by l (Extension: realizing every claim l′ realizes, and one more) is exactly l widening l′, including and exceeding it (Web.paths_extension_iff_widens). For any reading of living, an extension is an extension with every claim living, so with “better” read as widening, C, that every extension is better, holds (Web.paths_comparison_widens), with no axiom. Under the continuation condition, widening is retaining and adding what has significance (Web.widens_iff_retains_adds, see significance-retained-within-margin), so the C the continuation condition gives on level paths (Web.paths_livingSignificance_comparison, see one-axiom-yields-g0) is its reading in significance."
+    "zh": "在依存网的水平路径框架（Web.paths）上，主张是（形成，步），一条水平路径实现它恰当在该步接纳该形成。以每个主张都算作活，水平路径 l 对 l′ 的扩展（Extension：实现 l′ 实现的每个主张，并多实现一个）恰是 l 扩大 l′，即包含且超出它（Web.paths_extension_iff_widens）。对 living 的任何读法，扩展都是以每个主张为活的扩展，所以以“更好”读作扩大，C（每个扩展都更好）成立（Web.paths_comparison_widens），不用公理。在延续条件之下，扩大就是保留且增加有意义者（Web.widens_iff_retains_adds，见 significance-retained-within-margin），所以水平路径上由延续条件推出的 C（Web.paths_livingSignificance_comparison，见 one-axiom-yields-g0）是它在意义上的读法。三者是同一个对象，即接纳（Web.paths_one_object）：延续条件是水平路径上以每个主张为活、以从每个立场的意义为相关的生命意义；C 在那里计入每个主张的延伸就是扩大；在条件之下，扩大就是从任一立场保留并增加有意义者。条件定哪些接纳计入；读作扩大的 C 为它们定次序。",
+    "en": "On the frame of a web's level paths (Web.paths), claims are pairs of a formation and a step, and a level path realizes one exactly when it admits the formation at that step. With every claim counting as living, an extension of l′ by l (Extension: realizing every claim l′ realizes, and one more) is exactly l widening l′, including and exceeding it (Web.paths_extension_iff_widens). For any reading of living, an extension is an extension with every claim living, so with “better” read as widening, C, that every extension is better, holds (Web.paths_comparison_widens), with no axiom. Under the continuation condition, widening is retaining and adding what has significance (Web.widens_iff_retains_adds, see significance-retained-within-margin), so the C the continuation condition gives on level paths (Web.paths_livingSignificance_comparison, see one-axiom-yields-g0) is its reading in significance. The three are one object, admission (Web.paths_one_object): the continuation condition is living significance on level paths with every claim living and significance from every standpoint as the relevance, C's extension there with every claim counted is widening, and under the condition widening is retaining and adding what has significance from any standpoint. The condition fixes which admissions count; C read as widening orders them."
   },
   "hypotheses": [
     {
@@ -38,7 +38,8 @@
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
   "aliases": [
     "Becoming.Web.paths_extension_iff_widens",
-    "Becoming.Web.paths_comparison_widens"
+    "Becoming.Web.paths_comparison_widens",
+    "Becoming.Web.paths_one_object"
   ],
   "dependencies": [
     {
@@ -130,9 +131,17 @@
   },
   "references": [
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
+      "role": "proof",
+      "sha256": "cb5081e849c359a4a1e807eeda1ba05eccd9eeed842158bbb083e524f1feb8ef",
+      "declarations": [
+        "Becoming.Web.paths_one_object"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "ddd1afe1ef826f426a418e24066e801610d4d99e3300dca8c7fc8aba03fd16e3",
+      "sha256": "c658db1f65753aa4ad1d547ac13f1864154d2cbad2fce5867bdb82d4cc20ed77",
       "declarations": [
         "Becoming.Web.widens_iff_retains_adds"
       ]
@@ -140,7 +149,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
       "role": "proof",
-      "sha256": "73d088bbc1bf0fec27a52cae188ac580e2fe61e3b7280ee0257aa1a4bef096ef",
+      "sha256": "874721d6fa07e8d14ba5de1fb0f20055939fd784140b38fc5fae578baa62156c",
       "declarations": [
         "Becoming.Web.paths_livingSignificance_comparison"
       ]
@@ -148,7 +157,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
       "role": "proof",
-      "sha256": "73f33d048dc2e68aa92df80333e378c6638f5081c3693d4c9f5a836e38a8da29",
+      "sha256": "0d1566a393c85318f80ff11e25f0d12911571f0536e3a4259dcb3a1df9e9ff31",
       "declarations": [
         "Becoming.Web.paths_extension_iff_widens",
         "Becoming.Web.paths_comparison_widens",
@@ -160,7 +169,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
       "role": "proof",
-      "sha256": "eac24ce5ac1d7c00004ca2d35b61b30a8159913abfa40586b562daeec87eb3bc",
+      "sha256": "a360bf56d40bb977b686bd8756651357f995c5133d22cdd231ed79a71dc5899b",
       "declarations": [
         "Becoming.Web.Widens"
       ]
@@ -182,13 +191,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "fc0ec66b6808b0435011789f8768f35c6c87896f5438b142f40c5a3d200cf41d",
+      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ac9637b5e87f796d9ee96c6a8f42a6a7dba2d9976e12b5b9a71b3478a4199472",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
       "declarations": []
     },
     {
@@ -256,19 +265,25 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Regions",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -282,15 +297,22 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Extension",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Relevance",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -570,6 +592,10 @@
     {
       "en": "20 October 2026, R33 (joins: one law along a run, learning through a map as tracking, one loop theory, the tolerance law on webs, the world an interleaving builds): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 224 added; THE-THEORY-OF-BECOMING.md, the law along one run under a relation in one bullet, learning through a map as tracking, LoopReturn's factor and the join with Loops, the tolerance law on a web, the world an interleaving builds; §9 (receipt, counts, connectivity) follows R33. The claim is unchanged.",
       "zh": "2026年10月20日，R33（并合：运行上的一条规律，经映射的学习即跟随，一个回路理论，网上的容忍律，交错构造的世界）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 224 节；THE-THEORY-OF-BECOMING.md，沿一个运行、在一个关系之下的规律合为一条，经映射的学习即跟随，LoopReturn 的倍率及与 Loops 的并合，网上的容忍律，交错构造的世界；§9（回执、计数、连通性）随 R33。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Web.paths_one_object added to the claim (D2(b) of the twentieth review: the condition, significance and C read one object, admission); its proof binding to Relevance.lean is at the R34 receipt. The earlier claim is unchanged. Also: Proof bindings (Extension.lean, Regions.lean, Significance.lean, ValuationFrames.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; Extension.lean, LivingSignificance stated here, moved unchanged from ValuationFrames; Regions.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged; Significance.lean, docstrings only (standpoints of any type, obs the second supplied relation, the fixed-type limit, the run classes) or an import; kept statements unchanged; ValuationFrames.lean, LivingSignificance moved to Extension, unchanged; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：主张中加入 Web.paths_one_object（第二十次审查 D2(b)：条件、意义与 C 读同一个对象，即接纳）；它在 Relevance.lean 的证明绑定在 R34 的回执上。原有主张不变。另：证明绑定（Extension.lean、Regions.lean、Significance.lean、ValuationFrames.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；Extension.lean，LivingSignificance 在此陈述，自 ValuationFrames 原样移入；Regions.lean，只改说明（任何类型的立场、obs 是第二个给出的关系、固定类型的界、整段的类）或导入；保留的陈述不变；Significance.lean，只改说明（任何类型的立场、obs 是第二个给出的关系、固定类型的界、整段的类）或导入；保留的陈述不变；ValuationFrames.lean，LivingSignificance 原样移到 Extension；保留的陈述不变；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。"
     }
   ]
 }

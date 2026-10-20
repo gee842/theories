@@ -219,13 +219,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "fc0ec66b6808b0435011789f8768f35c6c87896f5438b142f40c5a3d200cf41d",
+      "sha256": "85eb8ab8d6cfe1a43cc3feb9e4152a58e6572d7e08b9b5024fc3984ad2d223f6",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ac9637b5e87f796d9ee96c6a8f42a6a7dba2d9976e12b5b9a71b3478a4199472",
+      "sha256": "991f12dcfc907daef73dbf97739124a5f30209f604629f54a34cc9f9638e809f",
       "declarations": []
     },
     {
@@ -255,6 +255,10 @@
     {
       "en": "20 October 2026: added (R33, G5 of the twentieth review, learning in the limit joined): Limit.Tracks and the bridge from learning through a map to tracking and identification in the limit, with Merge; study section 224.",
       "zh": "2026年10月20日：新增（R33，第二十次审查 G5，极限中的学习接上）：Limit.Tracks，以及从经映射的学习到极限中跟随与辨识的桥，附 Merge；研究第 224 节。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 225 added; THE-THEORY-OF-BECOMING.md, the run classes and widening (§6.8), standpoints as formations (§5, §6, §6.7), one object of admission (§6.12), the GrownBy blocker (§6.13), the direction on the spine (§7.5), §8.1 items 2-5, D2 in §8.3, obs in §8.4 and the glossary row of generative; §9 (receipt, counts, layers, connectivity) follows R34. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 225 节；THE-THEORY-OF-BECOMING.md，整段的类与扩大（§6.8）、以形成为立场（§5、§6、§6.7）、接纳这一个对象（§6.12）、GrownBy 的障碍（§6.13）、脊柱上的方向（§7.5）、§8.1 第 2–5 项、§8.3 的 D2、§8.4 的 obs 与术语表“生成的”一行；§9（回执、计数、层、连通性）随 R34。论断不变。"
     }
   ]
 }

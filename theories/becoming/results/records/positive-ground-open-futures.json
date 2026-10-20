@@ -235,7 +235,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
       "role": "proof",
-      "sha256": "73d088bbc1bf0fec27a52cae188ac580e2fe61e3b7280ee0257aa1a4bef096ef",
+      "sha256": "874721d6fa07e8d14ba5de1fb0f20055939fd784140b38fc5fae578baa62156c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
+      "role": "proof",
+      "sha256": "0d1566a393c85318f80ff11e25f0d12911571f0536e3a4259dcb3a1df9e9ff31",
       "declarations": [
         "Becoming.LivingSignificance"
       ]
@@ -318,6 +324,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
       "declarations": []
     }
   ],
@@ -408,8 +420,15 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Extension",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -515,6 +534,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Bundles.lean, ValuationFrames.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Bundles.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; ValuationFrames.lean, C on frames moved to Extension.lean. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Bundles.lean、ValuationFrames.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Bundles.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；ValuationFrames.lean，框架上的 C 移到 Extension.lean。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Moved with their full names: from ValuationFrames.lean to Extension.lean, LivingSignificance. Proof bindings (ValuationFrames.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: ValuationFrames.lean, LivingSignificance moved to Extension, unchanged; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：连同完整名称移动：从 ValuationFrames.lean 到 Extension.lean：LivingSignificance。证明绑定（ValuationFrames.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：ValuationFrames.lean，LivingSignificance 原样移到 Extension；保留的陈述不变。论断不变。"
     }
   ],
   "overview": {

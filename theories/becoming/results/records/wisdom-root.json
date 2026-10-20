@@ -1069,7 +1069,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
       "role": "proof",
-      "sha256": "996a292e6581262ab219effec8b48c3d5a6d99017ba24144bb3a2071e75b45d6",
+      "sha256": "cb5081e849c359a4a1e807eeda1ba05eccd9eeed842158bbb083e524f1feb8ef",
       "declarations": [
         "Becoming.Frame.relevance",
         "Becoming.livingSignificance_of_unrestricted",
@@ -1423,6 +1423,12 @@
       "role": "receipt",
       "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
+      "role": "receipt",
+      "sha256": "dead8cbc141ae38108fddc4ff56228e537fb1aacb27e96ef14d50647140a2be0",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -1568,7 +1574,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T005554.047169Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Relevance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1926,6 +1932,10 @@
     {
       "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: ReferencePlan.first_installed_choice (now ReferencePlan.first_new_selection); World.arisingRecurs_ofRoles (now Web.roles_unceasing). Proof bindings (Counterfactual.lean, CounterfactualRuns.lean, Dependence.lean, Derivation.lean, Experiment.lean, Histories.lean, Joining.lean, JoiningCodes.lean, Presentations.lean, ReferencePlan.lean, Response.lean, Revision.lean, Space.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Counterfactual.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; CounterfactualRuns.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Dependence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Derivation.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Experiment.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Histories.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Joining.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; JoiningCodes.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Presentations.lean, takes as its final section PresentationFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; ReferencePlan.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Response.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Revision.lean, takes as its final section RevisionRuns, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Space.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：ReferencePlan.first_installed_choice（现为 ReferencePlan.first_new_selection）；World.arisingRecurs_ofRoles（现为 Web.roles_unceasing）。证明绑定（Counterfactual.lean、CounterfactualRuns.lean、Dependence.lean、Derivation.lean、Experiment.lean、Histories.lean、Joining.lean、JoiningCodes.lean、Presentations.lean、ReferencePlan.lean、Response.lean、Revision.lean、Space.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Counterfactual.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；CounterfactualRuns.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Dependence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Derivation.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Experiment.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Histories.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Joining.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；JoiningCodes.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Presentations.lean，以末节收入 PresentationFrames（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；ReferencePlan.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Response.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Revision.lean，以末节收入 RevisionRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Space.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R34 (one evaluative chain: the run classes and widening, one object of admission, standpoints as formations, the direction on a web's moves, worlds read as webs): Proof bindings (Relevance.lean) rebound to core receipt 20261020T005554.047169Z. Re-pointed after reading the change: Relevance.lean, Web.paths_one_object added; the readings of possibility read worlds as webs (restated, study section 225); Ranking.stepwise_iff moved here. The claim is unchanged.",
+      "zh": "2026年10月20日，R34（一条评价之链：整段的类与扩大，接纳这一个对象，以形成为立场，网之动作上的方向，世界读作网）：证明绑定（Relevance.lean）改到核心回执 20261020T005554.047169Z。读过改动后重新指向：Relevance.lean，新增 Web.paths_one_object；可能性读法把世界读作网（重述，见研究第 225 节）；Ranking.stepwise_iff 移入。论断不变。"
     }
   ],
   "text_versions": [
