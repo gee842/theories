@@ -59,7 +59,7 @@ C holds here by definition on the frame of level paths, with “better” read a
 - Related, not a proved adapter: [ranking-under-readings](ranking-under-readings.md). Courses are compared on possibilities (chapter section 6.5); here, on level paths, the comparison on possibilities itself satisfies C.
 - Related, not a proved adapter: [comparison-content-under-regrouping](comparison-content-under-regrouping.md). P91 supplies local conditions preserving extension under many-to-one regrouping, the exact all-level characterization by minimum requirements, and a generated mixed-loss boundary.
 
-**Used by:** [alignment-direction-under-widening](alignment-direction-under-widening.md) · [comparison-content-under-regrouping](comparison-content-under-regrouping.md)
+**Used by:** [alignment-direction-under-widening](alignment-direction-under-widening.md) · [comparison-content-under-regrouping](comparison-content-under-regrouping.md) · [widening-as-what-every-weighting-ranks](widening-as-what-every-weighting-ranks.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

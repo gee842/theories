@@ -8,7 +8,7 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 
 ## Files in this directory
 
-1 canonical, 27 kept, 1 generated, 11 Chinese edition.
+1 canonical, 28 kept, 1 generated, 11 Chinese edition.
 
 | File | Title | Status | Role in section 11 | Note |
 |---|---|---|---|---|
@@ -35,6 +35,7 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | [PRE-QIN-AND-WENYAN.md](PRE-QIN-AND-WENYAN.md) | 从先秦到文言传统：逐段对应之外的发现与反例 | kept | Open direction | Findings and counterexamples the passage map does not carry (察今 through `Pace` and pooled coupling, 管子 内业, how concern forms, same-word counterexamples, later wenyan, the 维摩经, genre, wenyan as a formal language). The 6 October text, its competing-explanations frame and rights wording superseded, moved to [history](../history/PRE-QIN-AND-WENYAN.md) (RH, 19 October 2026). |
 | [RELATIONS-ACROSS-SCALES.md](RELATIONS-ACROSS-SCALES.md) | Relations across scales | kept | Statement source | Current argument; seven Lean modules, two of them joined to the spine. |
 | [SCIENTIFIC-PHILOSOPHY.md](SCIENTIFIC-PHILOSOPHY.md) | Scientific philosophy and the generative conditions of knowing | kept | Statement source | Statement source of the open target on scientific inquiry (§8.1). |
+| [THE-STEP-OF-INVARIANCE.md](THE-STEP-OF-INVARIANCE.md) | The step of invariance: the argument and its objections | kept | Statement source | The argument for the step of invariance and its objections (IV1, 20 October 2026; AI-written): the step's two forms, the literature that already has it, the strongest case for and against, and each objection of §8.9 with its verdict. Statement source of [what-the-step-across-standpoints-reaches](../results/records/what-the-step-across-standpoints-reaches.md) and [widening-as-what-every-weighting-ranks](../results/records/widening-as-what-every-weighting-ranks.md). |
 | [THE-THEORY-OF-EVOLUTION.md](THE-THEORY-OF-EVOLUTION.md) | The Theory of Evolution | kept | Programme chapter | The chapter of the separately authorized evolution programme (goal `theory-of-evolution`), written on 8 and 9 October 2026 and cited by §2 and §8.2. It holds the programme's six completion requirements, its current theoretical focus and its next connection, which this chapter does not restate; two experiment checkers read its requirement rows. |
 | [WANG-YANGMING.md](WANG-YANGMING.md) | 王阳明与生成／变化之论：一体之仁、知行与工夫 | kept | Open direction | The reading of Wang Yangming as one whole (大学问, 心即理 in conduct, 知行, 致良知, 偏蔽, 差等, the competing reading), in current terms; 知行合一 and 心外无事 on the spine in CHINESE-SOURCES-AND-BECOMING. The 7 October text, its formal entry through the periphery module `SituatedPractice` superseded, moved to [history](../history/WANG-YANGMING.md) (RH, 19 October 2026). |
 | [WISDOM-AND-CONTEXT.md](WISDOM-AND-CONTEXT.md) | Wisdom, context and the common core | kept | Statement source | Statement source of the open target [wisdom-root](../results/records/wisdom-root.md) (§8.1). |

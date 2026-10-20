@@ -1,0 +1,316 @@
+{
+  "schema_version": 2,
+  "id": "what-the-step-across-standpoints-reaches",
+  "title": {
+    "en": "What the step across standpoints reaches",
+    "zh": "跨立场的一步达到哪里"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-20T11:17:22+00:00",
+  "statement": {
+    "en": "From each standpoint's presupposition about its own continuation and standpoint-invariance, exactly the centers' continuation is forced to have significance, the continuation condition only where every formation is a center; a standpoint's own presupposition forces exactly its closure.",
+    "zh": "由各立场关于自身延续的预设与对立场不变，被迫有意义的恰是诸中心的延续，仅当每个构成都是中心时才是延续条件；一个立场自身的预设恰迫使其闭包。"
+  },
+  "laws": [
+    {
+      "en": "Let each standpoint's presupposition about its own center's continuation hold (sub-true along the empty relation) and significance be standpoint-invariant. Then from every standpoint the continuation of every center has significance, and the significance of exactly the centers' continuation meets both premises: what they force is exactly that the centers count.",
+      "zh": "设每个立场关于其中心之延续的预设成立（沿空关系为次真），且意义对立场不变。则从每个立场看，每个中心的延续都有意义，而恰好诸中心之延续的意义满足这两个前提：二者所迫使的恰是诸中心算数。",
+      "declarations": [
+        "Becoming.atCenters",
+        "Becoming.atCenters_least",
+        "Becoming.atCenters_presupposed",
+        "Becoming.atCenters_standpointInvariant",
+        "Becoming.forced_iff_center"
+      ]
+    },
+    {
+      "en": "With some standpoint, the significance of the centers' continuation is the continuation condition exactly when every formation is some standpoint's center.",
+      "zh": "只要有一个立场，诸中心之延续的意义恰在每个构成都是某个立场的中心时，就是延续条件。",
+      "declarations": [
+        "Becoming.unrestricted_atCenters_iff"
+      ]
+    },
+    {
+      "en": "Along a relation, what every significance making a standpoint's presupposition sub-true at a formation's closure gives significance to is exactly what lies within that closure: a standpoint's own presupposition, with nothing else, reaches its closure and no further.",
+      "zh": "沿一个关系，凡使某立场的预设在某构成的闭包处为次真的意义所共同赋予意义者，恰是该闭包之内者：立场自身的预设，别无其他时，达到其闭包而不更远。",
+      "declarations": [
+        "Becoming.forced_iff_within"
+      ]
+    },
+    {
+      "en": "The presupposition sub-true along every relation of a family is significance over the union of the closures; drawn along being related by some relation of the family, it gives the presupposition along each.",
+      "zh": "沿一族中每个关系为次真的预设，即在诸闭包之并上的意义；沿“被族中某个关系关联”来画，它给出沿每个关系的预设。",
+      "declarations": [
+        "Becoming.Related",
+        "Becoming.subTrue_every_iff",
+        "Becoming.subTrue_every_of_related"
+      ]
+    },
+    {
+      "en": "Witness: of three formations, the first bears one relation to the second and the second another to the third. The third lies within the first's closure along being related at all and within no closure along a single relation, so the presupposition along every relation one at a time does not give the one along being related.",
+      "zh": "见证：三个构成中，第一个对第二个有一种关系，第二个对第三个有另一种。第三个在第一个沿“有所关联”的闭包之内，却不在沿任何单一关系的闭包之内，所以逐一沿每个关系的预设不给出沿“有所关联”的预设。",
+      "declarations": [
+        "Becoming.Chain.rel",
+        "Becoming.Chain.third_related",
+        "Becoming.Chain.third_not_within",
+        "Becoming.Chain.every_not_related"
+      ]
+    },
+    {
+      "en": "Retaining what has significance at the centers is admitting, at every step, every center the other path admits. In Clearing, with the clearer the only center, the clearer's part retains at the centers against the levels without it, while under the continuation condition it loses the dweller.",
+      "zh": "保留在诸中心处有意义者，即在每一步接纳另一路径所接纳的每个中心。在 Clearing 中，以清除者为唯一中心，清除者的部分相对无它的水平在诸中心处保留，而在延续条件之下它失去居者。",
+      "declarations": [
+        "Becoming.Web.retains_atCenters_iff",
+        "Becoming.Clearing.centers_retain_yet_loses"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Standpoints and formations as types, each standpoint's center given as a function; significance a Prop-valued family indexed by standpoint, step and formation; the presupposition and the step of invariance as hypotheses of the laws they appear in, never asserted.",
+      "zh": "不加公理。立场与构成为类型，每个立场的中心由一个函数给出；意义为按立场、步与构成索引的命题族；预设与不变之步只作为出现它们的规律的假设，从不断言。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "The step of invariance itself, or the self's presupposition: both are hypotheses, and whether the presupposition is essentially de se, which decides the narrow or wide scope, is open.",
+      "zh": "不变之步本身，或自我的预设：二者都是假设；预设是否本质上是从己的（de se），这决定窄或宽的辖域，仍未定。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Which formations are centers, or that every formation is one: \"what wants its continuation\" is read as the centers, and the reading is the AI's (D59).",
+      "zh": "哪些构成是中心，或每个构成都是：“想要其延续者”读作诸中心，此读法是 AI 的（D59）。",
+      "kind": "scope"
+    },
+    {
+      "en": "That gaining what the narrower scope retains is better, or that losing what lies beyond it is worse: scope is fixed, order is C's.",
+      "zh": "较窄范围所保留者的获得是更好的，或失去其外者是更坏的：范围已定，定序属于 C。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "A right or a duty: Gewirth's step from a needed good to a claim on others has no counterpart; significance is from a standpoint and claims nothing of anyone.",
+      "zh": "权利或义务：Gewirth 从所需之善到对他者之要求的那一步在此没有对应；意义是从一个立场而言的，不向任何人要求什么。",
+      "kind": "correspondence"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean",
+      "detail": {
+        "en": "Chain: three formations under two relations, where the presupposition along every relation one at a time leaves the third outside and the one along being related at all includes it (Chain.every_not_related); Clearing, where the narrower scope retains and the condition loses (Clearing.centers_retain_yet_loses).",
+        "zh": "Chain：两种关系下的三个构成，逐一沿每个关系的预设把第三个留在外面，沿“有所关联”的预设则包括它（Chain.every_not_related）；Clearing：较窄的范围保留而条件失去（Clearing.centers_retain_yet_loses）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "significance-related-not-asserted",
+    "no-ethical-premise",
+    "conditional-not-universal",
+    "no-definition-by-verdict",
+    "names-provisional",
+    "formal-not-empirical"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261020T111531.545286Z): the 50 declarations of Becoming.Weightings, 35 of them theorems, have empty axiom reports; the checker verifies core purity. The literature check before any Lean is a section of the significance review; the argument is the chapter THE-STEP-OF-INVARIANCE. Built and reviewed in one session, no separate reviewer; author review in study section 256; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261020T111531.545286Z）：Becoming.Weightings 的 50 项声明（35 项定理）公理报告为空；检查器并核对核心纯净。动手写 Lean 之前的文献核查是显著性审查中的一节；论证见章节 THE-STEP-OF-INVARIANCE。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 256 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Whether the self's presupposition is essentially de se (the narrow or wide scope); which formations are centers on the base (a formation whose activity keeps its own conditions); graded significance across standpoints; an independent philosophical review.",
+    "zh": "自我的预设是否本质上是从己的（窄或宽的辖域）；在基底上哪些构成是中心（其活动维持自身条件的构成）；跨立场的分级意义；独立的哲学审查。"
+  },
+  "correspondence": {
+    "en": "The step across standpoints is Gewirth's argument from the sufficiency of agency (Reason and Morality, 1978; defended by Beyleveld 1991), with Nagel 1970, Hare 1981 and Korsgaard 1996 as variants; the law says it reaches exactly the centers, and the egoist objection (Williams 1985; Regis, ed., 1984) is the narrow scope (Boundaries' presupposition_scopes). The step across drawings is Parfit's (1984, Part Three) and Siderits's Buddhist reductionism (2003), and Wolf's (1986) point that reductionism can dissolve concern is Boundaries' not_subTrue_of_invariant. Williams's internal reasons (1979) reach exactly the closure (forced_iff_within). The open question is the de se one (Perry 1979, Lewis 1979; Guillot and O'Brien 2023 against Setiya).",
+    "zh": "跨立场的一步即 Gewirth 的“行动者之充分性”论证（《理性与道德》1978；Beyleveld 1991 辩护），Nagel 1970、Hare 1981 与 Korsgaard 1996 是其变体；此律说它恰达到诸中心，利己主义的反驳（Williams 1985；Regis 编 1984）即窄辖域（Boundaries 的 presupposition_scopes）。跨画法的一步是 Parfit（1984 第三部分）与 Siderits 的佛教还原论（2003），Wolf（1986）指出还原论也可消解关切，即 Boundaries 的 not_subTrue_of_invariant。Williams 的内在理由（1979）恰达到闭包（forced_iff_within）。悬而未决的是从己问题（Perry 1979、Lewis 1979；Guillot 与 O'Brien 2023 对 Setiya）。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean",
+  "aliases": [
+    "what the step across standpoints reaches",
+    "跨立场的一步达到哪里",
+    "Gewirth's step reaches the centers",
+    "the narrower scope as the centers",
+    "what wants its continuation",
+    "Becoming.forced_iff_center",
+    "Becoming.forced_iff_within",
+    "Becoming.unrestricted_atCenters_iff"
+  ],
+  "dependencies": [
+    {
+      "id": "continuation-condition-decomposition",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses standpoint-invariance (StandpointInvariant), the condition (Unrestricted) and sub-truth along the empty relation (subTrue_empty_iff).",
+        "zh": "复用对立场不变（StandpointInvariant）、条件（Unrestricted）与沿空关系的次真（subTrue_empty_iff）。"
+      },
+      "interface": {
+        "output": {
+          "en": "The presupposition along the empty relation is the significance of the center's own continuation; standpoint-invariance carries significance from one standpoint to another.",
+          "zh": "沿空关系的预设即中心自身延续的意义；对立场不变把意义从一个立场带到另一个。"
+        },
+        "input": {
+          "en": "What the two premises force: exactly the centers.",
+          "zh": "两个前提所迫使者：恰是诸中心。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean"
+      }
+    },
+    {
+      "id": "presupposition-scopes",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the boundary drawn along a relation and its characterization by the closure (subTrue_significantWithin_iff).",
+        "zh": "复用沿一个关系所画的边界及其以闭包的刻画（subTrue_significantWithin_iff）。"
+      },
+      "interface": {
+        "output": {
+          "en": "The presupposition sub-true at a closure is significance over the closure.",
+          "zh": "在闭包处为次真的预设，即在闭包上的意义。"
+        },
+        "input": {
+          "en": "What a standpoint's own presupposition forces, and the union over a family of relations.",
+          "zh": "立场自身的预设所迫使者，以及在一族关系上的并。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "loss-beyond-a-region",
+      "detail": {
+        "en": "Clearing's clearer loses the dweller beyond its dependence; the narrower scope, with the clearer the only center, reads that loss as nothing, and the condition reads it.",
+        "zh": "Clearing 中的清除者在其依存之外失去居者；以清除者为唯一中心的较窄范围把这一损失读作无，条件则读到它。"
+      }
+    },
+    {
+      "id": "widening-as-what-every-weighting-ranks",
+      "detail": {
+        "en": "The same section's order: once scope is fixed, C is what every positive weighting ranks higher.",
+        "zh": "同一节中的序：范围一旦确定，C 即每个正的加权都排得更高者。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Chain.Formation",
+        "Becoming.Chain.every_not_related",
+        "Becoming.Chain.notThird",
+        "Becoming.Chain.onlyFirst",
+        "Becoming.Chain.rel",
+        "Becoming.Chain.third_not_within",
+        "Becoming.Chain.third_related",
+        "Becoming.Clearing.centers_retain_yet_loses",
+        "Becoming.Related",
+        "Becoming.Web.DecidesAdmission",
+        "Becoming.Web.ListsAdmitted",
+        "Becoming.Web.not_widens_of_closes",
+        "Becoming.Web.retains_atCenters_iff",
+        "Becoming.Web.widens_iff_every_weighting",
+        "Becoming.Weighting.ExceedsOn",
+        "Becoming.Weighting.IncludesOn",
+        "Becoming.Weighting.MixedOn",
+        "Becoming.Weighting.Positive",
+        "Becoming.Weighting.WidensOn",
+        "Becoming.Weighting.cond_mul",
+        "Becoming.Weighting.cond_pos",
+        "Becoming.Weighting.exceeds_or_includes",
+        "Becoming.Weighting.lt_of_mul_lt",
+        "Becoming.Weighting.mixed_either_way",
+        "Becoming.Weighting.mul_lt_mul_pos",
+        "Becoming.Weighting.neutral_ranks_by_number",
+        "Becoming.Weighting.outweighing",
+        "Becoming.Weighting.outweighing_positive",
+        "Becoming.Weighting.outweighing_term_at",
+        "Becoming.Weighting.outweighing_term_le_one",
+        "Becoming.Weighting.outweighs",
+        "Becoming.Weighting.term_le",
+        "Becoming.Weighting.term_lt",
+        "Becoming.Weighting.total_congr_on",
+        "Becoming.Weighting.total_lt",
+        "Becoming.Weighting.weighed",
+        "Becoming.Weighting.weighed_const",
+        "Becoming.Weighting.weighed_eq_of_unweighted",
+        "Becoming.Weighting.weighed_le_of_includes",
+        "Becoming.Weighting.weighed_lt_of_widens",
+        "Becoming.Weighting.widens_iff_every_positive",
+        "Becoming.atCenters",
+        "Becoming.atCenters_least",
+        "Becoming.atCenters_presupposed",
+        "Becoming.atCenters_standpointInvariant",
+        "Becoming.forced_iff_center",
+        "Becoming.forced_iff_within",
+        "Becoming.subTrue_every_iff",
+        "Becoming.subTrue_every_of_related",
+        "Becoming.unrestricted_atCenters_iff"
+      ],
+      "sha256": "fb60ab2f813dfa91a88f5e12c931181bed2f790b0eb67a8561d38ec174be7ac7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
+      "role": "proof",
+      "sha256": "96f4546f209e766553d27576c5882fd47244912de912c2572c684dc822344bad"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Clearing.lean",
+      "role": "proof",
+      "sha256": "9f0cf4d878594390bdfa25dd337094d3767faba8cd2ad23782e513a451ede8f1"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T111531.545286Z/verification.json",
+      "role": "receipt",
+      "sha256": "69e38da580dbe5a539380d1d4999ae19f79b1a3a39d19f230c0b9e86275eea8f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "2a5a94a4fe364ca676cb0c7843efe6bfdaf4a17a80079546c7a4de2557ad9e2a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-SIGNIFICANCE-REVIEW.md",
+      "role": "integration",
+      "sha256": "b7ad5b485acef28db4832bb72bed09c5f3e54deefcf9b7175a1e1c8f582d8178"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+      "role": "integration",
+      "sha256": "ba031aea4256593b707e0c1d4f040f1978021781a8b0b6822cd779bdcb8e7323"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-STEP-OF-INVARIANCE.md",
+      "role": "statement",
+      "sha256": "0b1a9fa3b6d43566e1c12e49442235352b3560d86e0dd1ce02e10aabd585aa89"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "39e879c480c8358298ac086a4a755f4a16c1a9050e55b0a43817cff26a7e0514"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weightings.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261020T111531.545286Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Weightings",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "20 October 2026: added (IV1), stating exactly what the step of invariance reaches when it is taken across standpoints (Gewirth's form) and what a standpoint's own presupposition reaches, after a literature check (significance review, section \"the step of invariance and the literature\"); readings D59; study section 256.",
+      "zh": "2026年10月20日：新增（IV1），确切陈述不变之步跨立场（Gewirth 的形式）时达到哪里，以及一个立场自身的预设达到哪里，此前做了文献核查（显著性审查“不变之步与文献”一节）；读法 D59；研究第 256 节。"
+    }
+  ]
+}

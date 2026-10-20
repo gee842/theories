@@ -92,7 +92,7 @@ In “Truth exist” Ren wrote: “There is a set of universal invariations, tha
   - Preserved conditions: None. [Standpoints.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean)
 - related, not a proved adapter: [own-good-to-reachable-living-significance](own-good-to-reachable-living-significance.md). The evaluator route's tolerance with Chain carries all of G0's content beyond S0; here the step of boundary-invariance likewise carries all of the axiom's content beyond the presupposition, in one step, so it does not inherit the sorites objection (the evaluator-route review, P3).
 
-**Used by:** [unity-of-readings](unity-of-readings.md)
+**Used by:** [unity-of-readings](unity-of-readings.md) · [what-the-step-across-standpoints-reaches](what-the-step-across-standpoints-reaches.md)
 
 <a id="sources--来源"></a>
 ### Sources

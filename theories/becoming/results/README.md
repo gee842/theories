@@ -36,7 +36,7 @@ Readings of 8 October 2026 and later · [Repository home](../../../README.md) ·
 <a id="覆盖与证据含义--coverage-and-evidence"></a>
 ## Coverage and evidence
 
-This reading edition covers **142 chapters** (current and moved to history) and **17 branch READMEs** at their recorded source versions. 88 entries name a source that changed after the reading; they are marked on their pages and await a reread. The session outcomes of 8 October 2026 are in the frozen [checkpoint map](../history/SESSION-RESULTS-2026-10-08.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
+This reading edition covers **143 chapters** (current and moved to history) and **17 branch READMEs** at their recorded source versions. 88 entries name a source that changed after the reading; they are marked on their pages and await a reread. The session outcomes of 8 October 2026 are in the frozen [checkpoint map](../history/SESSION-RESULTS-2026-10-08.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
 
 | Category | Meaning |
 |---|---|
@@ -182,6 +182,7 @@ Identifiers follow source filenames. A Lean link identifies a particular corresp
 | [`system-individuation`](../history/ARGUMENTS-M-Z-2026-10-08.md#system-individuation) | Systems, constitutive relationships and possible change | foundation |
 | [`system-warrant`](../history/ARGUMENTS-M-Z-2026-10-08.md#system-warrant) | Grounding system relationships and admissible variations | foundation |
 | [`systems-complexity-chaos`](../history/ARGUMENTS-M-Z-2026-10-08.md#systems-complexity-chaos) | Systems, complexity and chaos within generative grounding | mathematics |
+| [`the-step-of-invariance`](../chapters/THE-STEP-OF-INVARIANCE.md) | The step of invariance: the argument and its objections | ethical argument |
 | [`the-theory-of-becoming`](../history/ARGUMENTS-M-Z-2026-10-08.md#the-theory-of-becoming) | The Theory of Becoming | synthesis |
 | [`the-theory-of-becoming-reference`](../history/ARGUMENTS-M-Z-2026-10-08.md#the-theory-of-becoming-reference) | The Theory of Becoming: reference catalogue | formal index |
 | [`the-theory-of-evolution`](../history/ARGUMENTS-M-Z-2026-10-08.md#the-theory-of-evolution) | The Theory of Evolution | research programme |
