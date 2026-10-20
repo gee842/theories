@@ -1014,12 +1014,6 @@ theorem holder_only : ∀ t g, 0 < stands g t → g = holder t
   | 1, false, _ => rfl
   | t + 2, g, active => holder_only t g (Eq.subst (motive := fun n => 0 < n) (stands_two g t) active)
 
-/-- The holder stands at nothing after its step. -/
-theorem next_off : ∀ t, stands (holder t) (t + 1) = 0
-  | 0 => rfl
-  | 1 => rfl
-  | t + 2 => (stands_two (holder t) (t + 1)).trans (next_off t)
-
 /-- The two sides named as one: their names exchanged at every odd step. -/
 def asOne : Reidentify Bool Bool :=
   .exchanging odd (fun b => !b) fun b => match b with

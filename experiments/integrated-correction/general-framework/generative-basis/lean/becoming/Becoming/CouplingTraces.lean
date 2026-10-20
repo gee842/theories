@@ -80,11 +80,6 @@ section Chains
 
 variable {X : Type u} {L : Type v} {P : Process X L}
 
-/-- A sequence begun at `e`. -/
-def consSeq (e : X) (v : Nat → X) : Nat → X
-  | 0 => e
-  | i + 1 => v i
-
 /-- **A chain of steps along a sequence is a trace**, for every process: a sequence from `e` to
 `c` whose first `j` successive members are steps of the process is a trace of `j` moves. -/
 theorem chain_iff_trace : ∀ (j : Nat) {e c : X},
@@ -111,7 +106,7 @@ theorem chain_iff_trace : ∀ (j : Nat) {e c : X},
         | ⟨m, first, rest⟩ =>
           match (chain_iff_trace j (e := m) (c := c)).mpr ⟨as, Nat.succ.inj len, rest⟩ with
           | ⟨v, start, ends, steps⟩ =>
-            ⟨consSeq e v, rfl, ends, fun i lt => match i, lt with
+            ⟨Settling.consAct e v, rfl, ends, fun i lt => match i, lt with
               | 0, _ => ⟨a, Eq.subst (motive := fun x => P.step e a x) start.symm first⟩
               | i + 1, lt => steps i (Nat.lt_of_succ_lt_succ lt)⟩⟩
 

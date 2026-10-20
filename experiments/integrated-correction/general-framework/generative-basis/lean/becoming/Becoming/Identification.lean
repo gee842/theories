@@ -823,7 +823,7 @@ theorem no_miss_persists {N a b s : Nat} (bound : StatesBelow o N) (within : a +
         (Eq.subst (motive := fun n => a + b + 1 ≤ n) at_t.symm
           (Nat.succ_le_succ (Nat.add_le_add_right
             (Nat.le_trans from_s (Nat.le_add_right s u)) b)))).trans
-        ((congrArg (fun n => Learning.back (Learning.prefixOf o n) b) at_t).trans
+        ((congrArg (fun n => Copying.nth (Learning.prefixOf o n) b) at_t).trans
           (Learning.back_prefix o (s + u) b))
     (Learning.eq_of_not_missed
       (Eq.subst (motive := fun c => ¬ Learning.Misses c (o (s + (u + (b + 1))))) claims
@@ -1684,7 +1684,7 @@ theorem sameFuture_classes_unrefuted {l : List S} (closed : ∀ s, s ∈ l → n
       ((sameFuture_iff_classes closed (fun x y inx iny => values x inx y iny) mem mem').mpr agree n)
 
 /-- The positions `0, …, m` are `m + 1`. -/
-theorem upto_length : ∀ m, (Learning.upto m).length = m + 1
+theorem upto_length : ∀ m, (downFrom m).length = m + 1
   | 0 => rfl
   | m + 1 => congrArg (· + 1) (upto_length m)
 
@@ -1698,21 +1698,21 @@ theorem sameFuture_classes_exact {x y : R} (two : x ≠ y) (M : Nat) :
       o (Law.orbit next 0 M) ≠ o (Law.orbit next 1 M) :=
   let next := Learning.lassoNext (M + 1) 0
   let o : Nat → R := fun p => if p < M + 1 then x else y
-  have closed : ∀ p, next p ∈ Learning.upto (M + 1) := fun p =>
+  have closed : ∀ p, next p ∈ downFrom (M + 1) := fun p =>
     match Nat.lt_or_ge p (M + 1) with
-    | .inl inside => Eq.subst (motive := fun v => v ∈ Learning.upto (M + 1))
-        (if_pos inside : next p = p + 1).symm (Learning.mem_upto inside)
-    | .inr last => Eq.subst (motive := fun v => v ∈ Learning.upto (M + 1))
+    | .inl inside => Eq.subst (motive := fun v => v ∈ downFrom (M + 1))
+        (if_pos inside : next p = p + 1).symm (mem_downFrom inside)
+    | .inr last => Eq.subst (motive := fun v => v ∈ downFrom (M + 1))
         (if_neg (fun inside => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le inside last)) : next p = M + 1).symm
-        (Learning.mem_upto (Nat.le_refl _))
+        (mem_downFrom (Nat.le_refl _))
   have from0 : ∀ n, n ≤ M + 1 → Law.orbit next 0 n = n := fun n le =>
     Identification.lassoPos_early (i := M + 1) (q := 0) n le
   have start : next 0 = 1 := if_pos (Nat.zero_lt_succ M)
   have from1 : ∀ n, n ≤ M → Law.orbit next 1 n = n + 1 := fun n le =>
     (congrArg (fun v => Law.orbit next v n) start.symm).trans
       ((Law.orbit_shift next 0 n).symm.trans (from0 (n + 1) (Nat.succ_le_succ le)))
-  ⟨next, o, Learning.upto (M + 1), upto_length (M + 1), fun p _ => closed p,
-   Learning.mem_upto (Nat.zero_le _), Learning.mem_upto (Nat.succ_le_succ (Nat.zero_le M)),
+  ⟨next, o, downFrom (M + 1), upto_length (M + 1), fun p _ => closed p,
+   mem_downFrom (Nat.zero_le _), mem_downFrom (Nat.succ_le_succ (Nat.zero_le M)),
    fun n early =>
     (congrArg o (from0 n (Nat.le_trans (Nat.le_of_lt early) (Nat.le_succ M)))).trans
       ((if_pos (Nat.lt_succ_of_lt early) : o n = x).trans
@@ -1731,12 +1731,6 @@ end Classes
 section Positions
 
 variable {next : S → S} {o : S → R}
-
-/-- The member at a position of a list, `d` past its end. -/
-def memberAt (d : S) : List S → Nat → S
-  | [], _ => d
-  | x :: _, 0 => x
-  | _ :: r, i + 1 => memberAt d r i
 
 theorem memberAt_mem (d : S) : ∀ {l : List S} {i : Nat}, i < l.length → memberAt d l i ∈ l
   | [], _, lt => absurd lt (Nat.not_lt_zero _)
@@ -1843,14 +1837,6 @@ theorem joinOrbits_joins {f : Nat → Nat} {p p' : Nat} :
           joinOrbits f p p' (k + 1) (Law.orbit f p' m))
         (Nat.le_antisymm (Nat.le_of_lt_succ lt) past).symm (merge_joins _ _ _)
 
-theorem le_of_mem_upto : ∀ {m n : Nat}, n ∈ Learning.upto m → n ≤ m
-  | 0, _, mem => match mem_cons_split mem with
-    | .inl here => Nat.le_of_eq here
-    | .inr later => nomatch later
-  | _ + 1, _, mem => match mem_cons_split mem with
-    | .inl here => Nat.le_of_eq here
-    | .inr later => Nat.le_succ_of_le (le_of_mem_upto later)
-
 theorem lt_of_le_pred : ∀ {N i j : Nat}, j < N → i ≤ N - 1 → i < N
   | 0, _, _, lt, _ => absurd lt (Nat.not_lt_zero _)
   | _ + 1, _, _, _, le => Nat.lt_succ_of_le le
@@ -1881,15 +1867,15 @@ theorem sameFuture_iff_within {l : List S} (closed : ∀ s, s ∈ l → next s �
           (orbit_memberAt follows inp' n).2)
       have sound : SoundFor (fun i => o (memberAt s l i)) (joinOrbits f p p' (l.length - 1)) :=
         joinOrbits_sound _ fun n lt => (along n).symm.trans ((agree n lt).trans (along' n))
-      have positions : ∀ i, i ∈ Learning.upto (l.length - 1) → f i ∈ Learning.upto (l.length - 1) :=
-        fun i inside => Learning.mem_upto
-          (le_pred_of_succ_le (follows i (lt_of_le_pred inp (le_of_mem_upto inside))).1)
+      have positions : ∀ i, i ∈ downFrom (l.length - 1) → f i ∈ downFrom (l.length - 1) :=
+        fun i inside => mem_downFrom
+          (le_pred_of_succ_le (follows i (lt_of_le_pred inp (le_of_mem_downFrom inside))).1)
       have labelled := (sameFuture_iff_classes (next := f) (o := joinOrbits f p p' (l.length - 1))
         positions (fun i j _ _ => match Nat.decEq (joinOrbits f p p' (l.length - 1) i)
           (joinOrbits f p p' (l.length - 1) j) with
           | isTrue same => .inl same
           | isFalse differ => .inr differ)
-        (Learning.mem_upto (le_pred_of_succ_le inp)) (Learning.mem_upto (le_pred_of_succ_le inp'))).mpr
+        (mem_downFrom (le_pred_of_succ_le inp)) (mem_downFrom (le_pred_of_succ_le inp'))).mpr
         fun n early => joinOrbits_joins (l.length - 1) n
           (Eq.subst (motive := fun L => n < L - 1) (upto_length (l.length - 1)) early :
             n < l.length - 1 + 1 - 1)
@@ -1914,13 +1900,13 @@ theorem sameAhead_iff_classes {o : Nat → O} {N : Nat} (bound : StatesBelow o N
     match statesBelow_iff_lasso.mp bound with
     | ⟨i, q, within, lasso⟩ =>
       let next := Learning.lassoNext i q
-      have closed : ∀ p, p ∈ Learning.upto (i + q) → next p ∈ Learning.upto (i + q) := fun p _ =>
+      have closed : ∀ p, p ∈ downFrom (i + q) → next p ∈ downFrom (i + q) := fun p _ =>
         match Nat.lt_or_ge p (i + q) with
-        | .inl inside => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
-            (if_pos inside : next p = p + 1).symm (Learning.mem_upto inside)
-        | .inr last => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
+        | .inl inside => Eq.subst (motive := fun v => v ∈ downFrom (i + q))
+            (if_pos inside : next p = p + 1).symm (mem_downFrom inside)
+        | .inr last => Eq.subst (motive := fun v => v ∈ downFrom (i + q))
             (if_neg (fun inside => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le inside last)) : next p = i).symm
-            (Learning.mem_upto (Nat.le_add_right i q))
+            (mem_downFrom (Nat.le_add_right i q))
       have ahead : ∀ u k, o (Law.orbit next (Law.orbit next 0 u) k) = o (u + k) := fun u k =>
         (congrArg o (Law.orbit_add next 0 u k).symm).trans ((Learning.lasso_realized lasso).2 (u + k))
       have same := (Law.sameFuture_iff_classes (o := o) closed (fun p p' _ _ => values p p')
@@ -1941,13 +1927,13 @@ theorem sameAhead_iff_within {o : Nat → O} {N : Nat} (bound : StatesBelow o N)
     match statesBelow_iff_lasso.mp bound with
     | ⟨i, q, within, lasso⟩ =>
       let next := Learning.lassoNext i q
-      have closed : ∀ p, p ∈ Learning.upto (i + q) → next p ∈ Learning.upto (i + q) := fun p _ =>
+      have closed : ∀ p, p ∈ downFrom (i + q) → next p ∈ downFrom (i + q) := fun p _ =>
         match Nat.lt_or_ge p (i + q) with
-        | .inl inside => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
-            (if_pos inside : next p = p + 1).symm (Learning.mem_upto inside)
-        | .inr last => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
+        | .inl inside => Eq.subst (motive := fun v => v ∈ downFrom (i + q))
+            (if_pos inside : next p = p + 1).symm (mem_downFrom inside)
+        | .inr last => Eq.subst (motive := fun v => v ∈ downFrom (i + q))
             (if_neg (fun inside => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le inside last)) : next p = i).symm
-            (Learning.mem_upto (Nat.le_add_right i q))
+            (mem_downFrom (Nat.le_add_right i q))
       have ahead : ∀ u k, o (Law.orbit next (Law.orbit next 0 u) k) = o (u + k) := fun u k =>
         (congrArg o (Law.orbit_add next 0 u k).symm).trans ((Learning.lasso_realized lasso).2 (u + k))
       have same := (Law.sameFuture_iff_within (o := o) closed

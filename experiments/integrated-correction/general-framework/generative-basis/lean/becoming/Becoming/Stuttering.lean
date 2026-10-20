@@ -76,19 +76,6 @@ theorem excess_of_sum {x y a b : Nat} (sum : x + y = a + b) : excess x a = exces
         ((congrArg (fun k => excess (b + a) k) (Nat.add_comm a y)).trans
           (excess_add_right b y a))))
 
-/-- The total over a stretch of `a + b` steps is the total over its first `a` steps with the
-total over the `b` after them. -/
-theorem total_steps_add (q : Nat → Nat) : ∀ (S a b : Nat),
-    total (steps S (a + b)) q = total (steps S a) q + total (steps (S + a) b) q
-  | S, 0, b => (congrArg (fun k => total (steps S k) q) (Nat.zero_add b)).trans
-      (Nat.zero_add _).symm
-  | S, a + 1, b =>
-    (congrArg (fun k => total (steps S k) q) (Nat.succ_add a b)).trans
-      ((congrArg (q S + ·) (total_steps_add q (S + 1) a b)).trans
-        ((Nat.add_assoc _ _ _).symm.trans
-          (congrArg (fun k => total (steps S (a + 1)) q + total (steps k b) q)
-            (Nat.add_right_comm S 1 a))))
-
 /-! ## Stutterings -/
 
 /-- A stuttering: a reading of steps that starts at the first step, at each of its steps either

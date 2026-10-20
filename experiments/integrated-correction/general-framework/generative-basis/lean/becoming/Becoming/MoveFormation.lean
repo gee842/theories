@@ -492,8 +492,8 @@ def Run.withLasso (r : Run P) {i q : Nat} (lasso : Learning.Lasso r.act i q) :
 
 /-- The rest of `Run.withLasso` is held by the `i + q + 1` positions of the lasso. -/
 theorem Run.withLasso_held (r : Run P) {i q : Nat} (lasso : Learning.Lasso r.act i q) (n : Nat) :
-    ((r.withLasso lasso).state n).2 ∈ Learning.upto (i + q) :=
-  Learning.mem_upto (Learning.lasso_positions lasso n).1
+    ((r.withLasso lasso).state n).2 ∈ downFrom (i + q) :=
+  mem_downFrom (Learning.lasso_positions lasso n).1
 
 /-- Read through the part, the run with its lasso rest is the run. -/
 theorem Run.withLasso_part (r : Run P) {i q : Nat} (lasso : Learning.Lasso r.act i q) (n : Nat) :

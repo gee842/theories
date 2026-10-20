@@ -331,10 +331,7 @@ def level : Nat → Nat := Witnesses.profile [2, 1] 0
 
 def live : Nat → Prop := Witnesses.profile [True, True] False
 
-def present : Nat → List Member
-  | 0 => [.renewer, .first, .second]
-  | 1 => [.renewer, .first, .second]
-  | _ + 2 => []
+def present : Nat → List Member := Exceeding.present
 
 /-- The renewer gives two units; the first part takes two and the second one. -/
 def flow : Flow Member Unit := Witnesses.relay present 2 2 1

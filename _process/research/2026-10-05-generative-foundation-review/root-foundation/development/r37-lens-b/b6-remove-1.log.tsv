@@ -1,0 +1,210 @@
+CouplingTraces.lean	109	consSeq	Settling.consAct	code	⟨consSeq e v, rfl, ends, fun i lt => match i, lt with
+Courses.lean	747	CrossSituational.Distinct	Distinct	code	{rep : List M} (distinct : CrossSituational.Distinct rep) (run : Run P) (n : Nat) {e : M} :
+Courses.lean	761	CrossSituational.Distinct	Distinct	code	{rep : List M} (distinct : CrossSituational.Distinct rep) (run : Run P) (n : Nat) {t : M} (available : t ∈ rep)
+Courses.lean	774	CrossSituational.Distinct	Distinct	code	{rep : List M} (distinct : CrossSituational.Distinct rep) (rs : List R) {s : S}
+Courses.lean	961	counting_sum_one	Situations.sum_one	code	(counting_sum_one _).symm.trans ((Weights.sum_congr _ fun h _ => (along_one () h).symm).trans
+CrossSituational.lean	91	Distinct	Distinct	code	∀ (l : List M), Distinct l → e ∈ l → p e = true →
+CrossSituational.lean	112	Distinct	Distinct	code	theorem filter_eq_singleton_iff {p : M → Bool} {l : List M} (distinct : Distinct l) {e : M} :
+CrossSituational.lean	245	Distinct	Distinct	code	theorem candidates_eq_iff [DecidableEq M] {rep : List M} (distinct : Distinct rep)
+CrossSituational.lean	265	Distinct	Distinct	code	theorem resolves_iff [DecidableEq M] {rep : List M} (distinct : Distinct rep)
+CrossSituational.lean	335	Distinct	Distinct	code	{rep : List M} (distinct : Distinct rep) {rs : List R} {t : M} (available : t ∈ rep)
+CrossSituational.lean	370	Distinct	Distinct	code	(bears : List α → R → Bool) (offers : R → M → Bool) {rep : List M} (distinct : Distinct rep)
+FinerTraces.lean	60	upto	Undecided.upto	code	theorem lt_of_mem_upto : ∀ {n k : Nat}, k ∈ upto n → k < n
+FinerTraces.lean	66	upto	Undecided.upto	code	theorem mem_upto : ∀ {n k : Nat}, k < n → k ∈ upto n
+FinerTraces.lean	69	upto	Undecided.upto	code	| isTrue same => Eq.subst (motive := fun x => x ∈ upto (n + 1)) same.symm (.head (upto n))
+FinerTraces.lean	69	upto	Undecided.upto	code	| isTrue same => Eq.subst (motive := fun x => x ∈ upto (n + 1)) same.symm (.head (upto n))
+FinerTraces.lean	98	upto	Undecided.upto	code	mem_joinMap (fun p => (upto (weight s p.1 p.2)).map fun k => (p.1, p.2, k))
+HexagramSequences.lean	179	memberAt	Law.memberAt	code	| s :: l => ∀ n, n < l.length + 1 → (Law.run next s).state n = memberAt s (s :: l) n
+HexagramSequences.lean	192	memberAt	Law.memberAt	code	∀ {l : List α} {n : Nat}, n < l.length → memberAt d l n = memberAt d' l n
+HexagramSequences.lean	192	memberAt	Law.memberAt	code	∀ {l : List α} {n : Nat}, n < l.length → memberAt d l n = memberAt d' l n
+HexagramSequences.lean	235	memberAt	Law.memberAt	code	theorem memberAt_of_mem {d s : α} : ∀ {l : List α}, s ∈ l → ∃ n, n < l.length ∧ memberAt d l n = s
+HistorySums.lean	732	nonzero_of_le	RouteTraces.nonzero_of_le	code	(nonzero_of_le (exactly_le_transfer ground response moves all f i n s) pos)
+Identification.lean	826	Learning.back	Copying.nth	code	((congrArg (fun n => Learning.back (Learning.prefixOf o n) b) at_t).trans
+Joining.lean	859	slot	Copying.nth	code	⟨⟨fun xs ij ys => ∃ a b z, slot xs ij.1 = some a ∧ slot xs ij.2 = some b ∧ J a b z ∧
+Joining.lean	859	slot	Copying.nth	code	⟨⟨fun xs ij ys => ∃ a b z, slot xs ij.1 = some a ∧ slot xs ij.2 = some b ∧ J a b z ∧
+Joining.lean	922	slot	Copying.nth	code	| xs, (i, j) => match at_i : slot xs i, at_j : slot xs j with
+Joining.lean	922	slot	Copying.nth	code	| xs, (i, j) => match at_i : slot xs i, at_j : slot xs j with
+JoiningRoles.lean	185	slot	Copying.nth	code	{i j : Nat} {a b z : F} (at_i : slot xs i = some a) (at_j : slot xs j = some b) (joined : J a b z) :
+JoiningRoles.lean	185	slot	Copying.nth	code	{i j : Nat} {a b z : F} (at_i : slot xs i = some a) (at_j : slot xs j = some b) (joined : J a b z) :
+JoiningRoles.lean	186	slot	Copying.nth	code	∃ a' b' z', slot ys i = some a' ∧ slot ys j = some b' ∧ K a' b' z' ∧
+JoiningRoles.lean	186	slot	Copying.nth	code	∃ a' b' z', slot ys i = some a' ∧ slot ys j = some b' ∧ K a' b' z' ∧
+Lasting.lean	181	prepend	Settling.consAct	code	(admissible : ∀ k, adm (d k)) : ∀ k, adm (prepend a d k)
+Lasting.lean	205	prepend	Settling.consAct	code	Eq.mp (congrArg guard (history_shift f s (prepend a d) k))
+Lasting.lean	206	prepend	Settling.consAct	code	(every (prepend a d) (prepend_admissible admitted admissible) (k + 1)
+Lasting.lean	646	prepend	Settling.consAct	code	match every (prepend a d) (prepend_admissible admitted admissible) with
+Lasting.lean	649	prepend	Settling.consAct	code	Eq.mp (congrArg target (history_shift f s (prepend a d) k)) later⟩))
+Learning.lean	166	back	Copying.nth	code	theorem back_prefix (o : Nat → O) (u : Nat) : ∀ k, back (prefixOf o (u + k + 1)) k = some (o u)
+Learning.lean	171	back	Copying.nth	code	theorem back_made (o : Nat → O) {k t : Nat} (within : k < t) : ∃ v, back (prefixOf o t) k = some v :=
+Learning.lean	173	back	Copying.nth	code	⟨o d, (congrArg (fun n => back (prefixOf o n) k)
+Learning.lean	579	back	Copying.nth	code	if h.1 + h.2 + 1 ≤ l.length then back l h.2 else none
+Learning.lean	582	back	Copying.nth	code	lasso h (prefixOf o t) = back (prefixOf o t) h.2 :=
+Learning.lean	602	back	Copying.nth	code	((congrArg (fun n => back (prefixOf o n) q) at_t').trans (back_prefix o (i + d) q))
+Learning.lean	1131	back	Copying.nth	code	((congrArg (fun n => back (prefixOf course n) 1) at_t').trans
+Likeness.lean	494	skip	skipAt	code	theorem skip_le : ∀ m j, skip m j ≤ j + 1
+Likeness.lean	500	skip	skipAt	code	theorem skip_side : ∀ m j, skip m j < m ∨ m + 1 ≤ skip m j
+Likeness.lean	500	skip	skipAt	code	theorem skip_side : ∀ m j, skip m j < m ∨ m + 1 ≤ skip m j
+Likeness.lean	508	skip	skipAt	code	theorem skip_succ : ∀ m j, skip m (j + 1) = skip m j + 1 ∨ skip m (j + 1) = skip m j + 2
+Likeness.lean	508	skip	skipAt	code	theorem skip_succ : ∀ m j, skip m (j + 1) = skip m j + 1 ∨ skip m (j + 1) = skip m j + 2
+Likeness.lean	508	skip	skipAt	code	theorem skip_succ : ∀ m j, skip m (j + 1) = skip m j + 1 ∨ skip m (j + 1) = skip m j + 2
+Likeness.lean	508	skip	skipAt	code	theorem skip_succ : ∀ m j, skip m (j + 1) = skip m j + 1 ∨ skip m (j + 1) = skip m j + 2
+Likeness.lean	545	skip	skipAt	code	match stops_decreasing l (fun j => P (skip m j))
+Likeness.lean	549	skip	skipAt	code	(fun j x => decided (skip m j) x) with
+Likeness.lean	551	skip	skipAt	code	⟨skip m k, Nat.le_trans (skip_le m k) (Nat.succ_le_succ within), fun x mem =>
+Likeness.lean	554	skip	skipAt	code	| .inl below => fun _ => Eq.subst (motive := fun z => P (skip m k + 1) z)
+Likeness.lean	557	skip	skipAt	code	(Eq.subst (motive := fun z => P (skip m k) z) same holds)) after
+Listing.lean	616	DistinctBy	DistinctUnder	code	DistinctBy R s ∧ (∀ a, a ∈ l → ∃ b, b ∈ s ∧ R a b) ∧ ∀ b, b ∈ s → ∃ a, a ∈ l ∧ R b a
+Listing.lean	627	DistinctBy	DistinctUnder	code	theorem DistinctBy.decided (like : Equivalence R) : ∀ {s : List α}, DistinctBy R s →
+Listing.lean	640	DistinctBy	DistinctUnder	code	theorem DistinctBy.eq_of (like : Equivalence R) : ∀ {s : List α}, DistinctBy R s →
+Listing.lean	652	DistinctBy	DistinctUnder	code	theorem DistinctBy.distinct (like : Equivalence R) : ∀ {s : List α}, DistinctBy R s → Distinct s
+Listing.lean	717	DistinctBy	DistinctUnder	code	theorem distinctBy_eq_iff : ∀ {s : List α}, DistinctBy Eq s ↔ Distinct s
+Loops.lean	860	total_steps_shift	total_steps_succ	code	(congrArg (binom t 0 * M ^ 0 + ·) (total_steps_shift _ 0 (j + 1))).trans
+LossMatching.lean	284	not_mem_middle	not_mem_of_middle	code	not_mem_middle middle (Eq.subst (motive := fun y => y ∈ p ++ q) same (maps x mem).1)
+OneStep.lean	1551	excess_of_le	Flow.excess_zero_of_le	code	(excess_balance b a).trans ((congrArg (a + ·) (excess_of_le le)).trans (Nat.add_zero a))
+OneStep.lean	1650	total_steps_split	total_steps_add	code	(total_steps_split (fun m => hit (slot (b :: bs) m) i) 0 b (total bs fun x => x)).trans
+Openness.lean	1063	Exposed.holder_after	Shuttle.next_off	code	from Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt (Nat.le_of_eq (Exposed.holder_after t))
+OrderNormal.lean	1106	distinct_append_apart	distinct_append	code	⟨distinct_append_apart (keep_distinct (listed a).1) (keep_distinct (listed b).1)
+PatternPassing.lean	278	Shifts.half	Pulse.half	code	theorem half_odd : ∀ t, odd t = true → Shifts.half (t + 1) = Shifts.half t + 1
+PatternPassing.lean	278	Shifts.half	Pulse.half	code	theorem half_odd : ∀ t, odd t = true → Shifts.half (t + 1) = Shifts.half t + 1
+PatternPassing.lean	286	Shifts.half	Pulse.half	code	active t n := Shifts.half t = n
+PatternPassing.lean	293	Shifts.half	Pulse.half	code	odd t = true ∧ b = Shifts.half t ∧ a = b + 1
+PatternPassing.lean	305	Shifts.half	Pulse.half	code	| true => .inr ⟨Shifts.half t, rfl, parity, rfl, active.symm.trans (half_odd t parity)⟩
+PatternPassing.lean	307	Shifts.half	Pulse.half	code	fun _ t now later => Nat.succ_ne_self (Shifts.half t) (later.trans now.symm),
+PatternPassing.lean	308	Shifts.half	Pulse.half	code	fun t => ⟨Shifts.half t, rfl⟩,
+PlaceTransitionNets.lean	657	distinct_append'	distinct_append	code	⟨distinct_append' (distinct_map inl_injective distinct)
+Prelude.lean	632	CrossSituational.Distinct	Distinct	comment	replace (`CrossSituational.Distinct`, `SituationTraces.distinct_append`) were. -/
+Prelude.lean	632	SituationTraces.distinct_append	distinct_append	comment	replace (`CrossSituational.Distinct`, `SituationTraces.distinct_append`) were. -/
+SharedCodes.lean	1086	CrossSituational.Distinct	Distinct	code	theorem resolve_written [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : CrossSituational.Distinct rep)
+SharedCodes.lean	1094	CrossSituational.Distinct	Distinct	code	theorem written_rests [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : CrossSituational.Distinct rep)
+SharedCodes.lean	1105	CrossSituational.Distinct	Distinct	code	(distinct : CrossSituational.Distinct rep) {rs : List R} {e : M} (h : resolve bears offers rep rs = some e) :
+SharedCodes.lean	1140	CrossSituational.Distinct	Distinct	code	theorem covered_rest [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : CrossSituational.Distinct rep)
+SharedCodes.lean	1151	CrossSituational.Distinct	Distinct	code	theorem omitted_rest [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : CrossSituational.Distinct rep)
+SharedCodes.lean	1432	CrossSituational.Distinct	Distinct	code	theorem distinct : CrossSituational.Distinct rep :=
+SituationTraces.lean	59	CrossSituational.Distinct	Distinct	code	∀ {l : List α}, CrossSituational.Distinct l → CrossSituational.Distinct (l.map g)
+SituationTraces.lean	59	CrossSituational.Distinct	Distinct	code	∀ {l : List α}, CrossSituational.Distinct l → CrossSituational.Distinct (l.map g)
+SituationTraces.lean	62	CrossSituational.Distinct	Distinct	code	show ¬ g a ∈ l.map g ∧ CrossSituational.Distinct (l.map g) from
+SituationTraces.lean	71	CrossSituational.Distinct	Distinct	code	∀ {l : List α}, CrossSituational.Distinct l → (∀ a, a ∈ l → CrossSituational.Distinct (g a)) →
+SituationTraces.lean	71	CrossSituational.Distinct	Distinct	code	∀ {l : List α}, CrossSituational.Distinct l → (∀ a, a ∈ l → CrossSituational.Distinct (g a)) →
+SituationTraces.lean	72	CrossSituational.Distinct	Distinct	code	(∀ a b x, x ∈ g a → x ∈ g b → a = b) → CrossSituational.Distinct (joinMap g l)
+SituationTraces.lean	75	CrossSituational.Distinct	Distinct	code	show CrossSituational.Distinct (g a ++ joinMap g l) from
+SituationTraces.lean	76	distinct_append	distinct_append	code	distinct_append (each a (.head l))
+SituationTraces.lean	82	CrossSituational.Distinct	Distinct	code	theorem distinct_upto : ∀ k, CrossSituational.Distinct (upto k)
+SituationTraces.lean	82	upto	Undecided.upto	code	theorem distinct_upto : ∀ k, CrossSituational.Distinct (upto k)
+SituationTraces.lean	84	upto	Undecided.upto	code	| k + 1 => show ¬ k ∈ upto k ∧ CrossSituational.Distinct (upto k) from
+SituationTraces.lean	84	CrossSituational.Distinct	Distinct	code	| k + 1 => show ¬ k ∈ upto k ∧ CrossSituational.Distinct (upto k) from
+SituationTraces.lean	84	upto	Undecided.upto	code	| k + 1 => show ¬ k ∈ upto k ∧ CrossSituational.Distinct (upto k) from
+SituationTraces.lean	93	CrossSituational.Distinct	Distinct	code	CrossSituational.Distinct l
+SituationTraces.lean	96	CrossSituational.Distinct	Distinct	code	show ¬ x ∈ l ∧ CrossSituational.Distinct l from
+SituationTraces.lean	107	CrossSituational.Distinct	Distinct	code	theorem distinct_unit : CrossSituational.Distinct [()] :=
+SituationTraces.lean	111	CrossSituational.Distinct	Distinct	code	theorem distinct_two : CrossSituational.Distinct [true, false] :=
+SituationTraces.lean	124	CrossSituational.Distinct	Distinct	code	theorem distinct_openSteps {moves : List A} {all : List S} (dm : CrossSituational.Distinct moves)
+SituationTraces.lean	125	CrossSituational.Distinct	Distinct	code	(da : CrossSituational.Distinct all) : CrossSituational.Distinct (openSteps moves all) :=
+SituationTraces.lean	125	CrossSituational.Distinct	Distinct	code	(da : CrossSituational.Distinct all) : CrossSituational.Distinct (openSteps moves all) :=
+SituationTraces.lean	131	CrossSituational.Distinct	Distinct	code	(dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) (s : S) :
+SituationTraces.lean	131	CrossSituational.Distinct	Distinct	code	(dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) (s : S) :
+SituationTraces.lean	132	CrossSituational.Distinct	Distinct	code	CrossSituational.Distinct (finerSteps weight moves all s) :=
+SituationTraces.lean	144	CrossSituational.Distinct	Distinct	code	(dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) :
+SituationTraces.lean	144	CrossSituational.Distinct	Distinct	code	(dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) :
+SituationTraces.lean	145	CrossSituational.Distinct	Distinct	code	∀ n s, CrossSituational.Distinct (finer weight moves all n s)
+SituationTraces.lean	170	CrossSituational.Distinct	Distinct	code	(dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) (n : Nat) (s : S) :
+SituationTraces.lean	170	CrossSituational.Distinct	Distinct	code	(dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) (n : Nat) (s : S) :
+SituationTraces.lean	221	CrossSituational.Distinct	Distinct	code	theorem event_traces_count (wt : V → Nat) (distinct : CrossSituational.Distinct vals)
+SituationTraces.lean	228	CrossSituational.Distinct	Distinct	code	(distinct : CrossSituational.Distinct vals) (listed : Traces (valueWeight wt) [()] vals n s l) :
+SituationTraces.lean	239	CrossSituational.Distinct	Distinct	code	(le : v ≤ u) (distinct : CrossSituational.Distinct vals)
+SituationTraces.lean	282	CrossSituational.Distinct	Distinct	code	(dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) (n : Nat) (s : S)
+SituationTraces.lean	282	CrossSituational.Distinct	Distinct	code	(dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) (n : Nat) (s : S)
+Situations.lean	82	upto	Undecided.upto	code	theorem sum_upto (c : Nat) : ∀ k, counting.sum (upto k) (fun _ => c) = k * c
+Situations.lean	85	upto	Undecided.upto	code	show c + counting.sum (upto k) (fun _ => c) = (k + 1) * c
+Situations.lean	113	upto	Undecided.upto	code	joinMap (fun p => (upto (weight s p.1 p.2)).map fun k => (p.1, p.2, k)) (openSteps moves all)
+Situations.lean	148	upto	Undecided.upto	code	counting.sum ((upto (weight s p.1 p.2)).map fun k => (p.1, p.2, k))
+Situations.lean	185	Typicality.total	total	code	Typicality.total (Typicality.courses n) F
+Situations.lean	191	Typicality.total	total	code	Typicality.total (Typicality.courses n) (fun w => F (b :: w)) :=
+Situations.lean	198	Typicality.total	total	code	Typicality.total (Typicality.extend (Typicality.courses n)) F
+Situations.lean	216	Typicality.total	total	code	Typicality.total (Typicality.courses n) (fun v => if v = w then f v else 0) = f w
+Situations.lean	237	Typicality.total	total	code	show Typicality.total (Typicality.extend (Typicality.courses n)) _ = _
+Situations.lean	271	Typicality.total	total	code	Typicality.total (Typicality.courses n) (Typicality.offBy p q d) :=
+Situations.lean	351	Typicality.total	total	code	Typicality.total (Typicality.courses n)
+Situations.lean	360	Typicality.total	total	code	wt v * Typicality.total (Typicality.courses n)
+Situations.lean	374	Typicality.total	total	code	(sum_split wt event (fun b => Typicality.total (Typicality.courses n)
+Situations.lean	377	Typicality.total	total	code	show _ = Typicality.total (Typicality.extend (Typicality.courses n)) _
+Situations.lean	394	Typicality.total	total	code	Typicality.total (Typicality.courses n)
+Situations.lean	414	Typicality.total	total	code	Typicality.total (Typicality.courses n)
+Situations.lean	555	upto	Undecided.upto	code	(weight : S → A → S → R) (sums : ∀ s a m, weight s a m = W.sum (upto (count s a m)) (σ s a m))
+Situations.lean	572	upto	Undecided.upto	code	W.sum ((upto (count s p.1 p.2)).map fun k => (p.1, p.2, k))
+Situations.lean	614	upto	Undecided.upto	code	signed.sum (upto k) (fun k => if k < P then (1, 0) else (0, 1)) = (k, 0)
+Situations.lean	618	upto	Undecided.upto	code	(signed.sum (upto k) (fun k => if k < P then (1, 0) else (0, 1))) = (k + 1, 0)
+Situations.lean	623	upto	Undecided.upto	code	signed.sum (upto (P + N)) (fun k => if k < P then (1, 0) else (0, 1)) = (P, N)
+Situations.lean	627	upto	Undecided.upto	code	(signed.sum (upto (P + N)) (fun k => if k < P then (1, 0) else (0, 1))) = (P, N + 1)
+Situations.lean	634	upto	Undecided.upto	code	weight s a m = signed.sum (upto (both weight s a m)) (sign weight s a m) :=
+Tail.lean	94	nonzero	nonzero	code	theorem eq_zero_of_nonzero_false : ∀ {x : Nat}, nonzero x = false → x = 0
+Tail.lean	100	nonzero	nonzero	code	fun n => nonzero (α (N + n))
+Tail.lean	296	Tail.nonzero	nonzero	code	(congrArg Tail.nonzero (zero (N + n) (Nat.le_add_right N n)) : _)
+Tail.lean	473	Tail.nonzero	nonzero	code	((congrArg Tail.nonzero (zero (N + n) (Nat.le_add_right N n))).symm.trans yes)
+TypicalRuns.lean	54	CrossSituational.Distinct	Distinct	code	CrossSituational.Distinct l ∧ ∀ x, x ∈ l ↔ M x
+TypicalRuns.lean	77	CrossSituational.Distinct	Distinct	code	∀ {l₁ l₂ : List α}, CrossSituational.Distinct (l₁ ++ a :: l₂) →
+TypicalRuns.lean	78	CrossSituational.Distinct	Distinct	code	¬ a ∈ l₁ ++ l₂ ∧ CrossSituational.Distinct (l₁ ++ l₂)
+TypicalRuns.lean	90	CrossSituational.Distinct	Distinct	code	theorem sum_listing (f : α → Nat) : ∀ {l m : List α}, CrossSituational.Distinct l →
+TypicalRuns.lean	91	CrossSituational.Distinct	Distinct	code	CrossSituational.Distinct m → (∀ x, x ∈ l ↔ x ∈ m) → counting.sum l f = counting.sum m f
+TypicalRuns.lean	97	CrossSituational.Distinct	Distinct	code	have dm' : CrossSituational.Distinct (m₁ ++ a :: m₂) :=
+TypicalRuns.lean	98	CrossSituational.Distinct	Distinct	code	Eq.subst (motive := fun k => CrossSituational.Distinct k) split dm
+TypicalRuns.lean	127	sum_one	Situations.sum_one	code	(sum_one l).symm.trans ((sum_listed listed listed' _).trans (sum_one m))
+TypicalRuns.lean	127	sum_one	Situations.sum_one	code	(sum_one l).symm.trans ((sum_listed listed listed' _).trans (sum_one m))
+TypicalRuns.lean	135	Typicality.total	total	code	Typicality.total ws f = counting.sum ws f
+TypicalRuns.lean	141	Typicality.total	total	code	(listed' : Listing M m) (f : List Bool → Nat) : Typicality.total l f = Typicality.total m f :=
+TypicalRuns.lean	141	Typicality.total	total	code	(listed' : Listing M m) (f : List Bool → Nat) : Typicality.total l f = Typicality.total m f :=
+TypicalRuns.lean	172	CrossSituational.Distinct	Distinct	code	theorem distinct_extend : ∀ {ws : List (List Bool)}, CrossSituational.Distinct ws →
+TypicalRuns.lean	173	CrossSituational.Distinct	Distinct	code	CrossSituational.Distinct (Typicality.extend ws)
+TypicalRuns.lean	182	CrossSituational.Distinct	Distinct	code	CrossSituational.Distinct (Typicality.extend ws)) from
+TypicalRuns.lean	188	CrossSituational.Distinct	Distinct	code	theorem distinct_courses : ∀ n, CrossSituational.Distinct (Typicality.courses n)
+TypicalRuns.lean	213	Typicality.total	total	code	Typicality.total l (Typicality.weight p q) = (p + q) ^ n :=
+TypicalRuns.lean	222	Typicality.total	total	code	Typicality.total l (Typicality.weight p q) :=
+TypicalRuns.lean	228	Typicality.total	total	code	Typicality.total l (fun w => Typicality.weight p q w * Typicality.square p q w) =
+TypicalRuns.lean	229	Typicality.total	total	code	Typicality.total l (fun w => Typicality.weight p q w * Typicality.cross p q w) +
+TypicalRuns.lean	238	Typicality.total	total	code	Typicality.total l (Typicality.offBy p q d) * d ≤ n * (p * q * (p + q) ^ n) :=
+TypicalRuns.lean	245	Typicality.total	total	code	Typicality.total l (Typicality.atLeast p q k) * (u ^ k * v ^ n) ≤ (p * u + q * v) ^ n * v ^ k :=
+TypicalRuns.lean	252	Typicality.total	total	code	Typicality.total l (Typicality.atLeast 1 1 k) * 3 ^ k ≤ 4 ^ n :=
+Typicality.lean	149	total	total	code	total (extend ws) f = total ws (fun w => f (true :: w) + f (false :: w))
+Typicality.lean	149	total	total	code	total (extend ws) f = total ws (fun w => f (true :: w) + f (false :: w))
+Typicality.lean	152	total	total	code	show f (true :: w) + (f (false :: w) + total (extend ws) f) =
+Typicality.lean	153	total	total	code	(f (true :: w) + f (false :: w)) + total ws (fun w => f (true :: w) + f (false :: w))
+Typicality.lean	157	total	total	code	∀ ws : List (List Bool), total ws f = total ws g
+Typicality.lean	157	total	total	code	∀ ws : List (List Bool), total ws f = total ws g
+Typicality.lean	160	total	total	code	show f w + total ws f = g w + total ws g
+Typicality.lean	160	total	total	code	show f w + total ws f = g w + total ws g
+Typicality.lean	164	total	total	code	total ws (fun w => f w + g w) = total ws f + total ws g
+Typicality.lean	164	total	total	code	total ws (fun w => f w + g w) = total ws f + total ws g
+Typicality.lean	164	total	total	code	total ws (fun w => f w + g w) = total ws f + total ws g
+Typicality.lean	167	total	total	code	show (f w + g w) + total ws (fun w => f w + g w) = (f w + total ws f) + (g w + total ws g)
+Typicality.lean	167	total	total	code	show (f w + g w) + total ws (fun w => f w + g w) = (f w + total ws f) + (g w + total ws g)
+Typicality.lean	167	total	total	code	show (f w + g w) + total ws (fun w => f w + g w) = (f w + total ws f) + (g w + total ws g)
+Typicality.lean	171	total	total	code	total ws (fun w => c * f w) = c * total ws f
+Typicality.lean	171	total	total	code	total ws (fun w => c * f w) = c * total ws f
+Typicality.lean	174	total	total	code	show c * f w + total ws (fun w => c * f w) = c * (f w + total ws f)
+Typicality.lean	174	total	total	code	show c * f w + total ws (fun w => c * f w) = c * (f w + total ws f)
+Typicality.lean	178	total	total	code	total ws (fun w => f w * c) = total ws f * c
+Typicality.lean	178	total	total	code	total ws (fun w => f w * c) = total ws f * c
+Typicality.lean	181	total	total	code	show f w * c + total ws (fun w => f w * c) = (f w + total ws f) * c
+Typicality.lean	181	total	total	code	show f w * c + total ws (fun w => f w * c) = (f w + total ws f) * c
+Typicality.lean	185	total	total	code	∀ ws : List (List Bool), total ws f ≤ total ws g
+Typicality.lean	185	total	total	code	∀ ws : List (List Bool), total ws f ≤ total ws g
+Typicality.lean	190	total	total	code	theorem total_weight (p q : Nat) : ∀ n, total (courses n) (weight p q) = (p + q) ^ n
+Typicality.lean	193	total	total	code	show total (extend (courses n)) (weight p q) = (p + q) ^ n * (p + q)
+Typicality.lean	195	total	total	code	show total (courses n) (fun w => p * weight p q w + q * weight p q w) = _
+Typicality.lean	296	total	total	code	total (courses n) (fun w => weight p q w * square p q w) =
+Typicality.lean	297	total	total	code	total (courses n) (fun w => weight p q w * cross p q w) + n * (p * q * (p + q) ^ n)
+Typicality.lean	300	total	total	code	show total (extend (courses n)) (fun w => weight p q w * square p q w) =
+Typicality.lean	301	total	total	code	total (extend (courses n)) (fun w => weight p q w * cross p q w) + _
+Typicality.lean	346	total	total	code	total (courses n) (offBy p q d) * d ≤ n * (p * q * (p + q) ^ n) :=
+Typicality.lean	348	total	total	code	le_of_add_le_add_right (total (courses n) (fun w => weight p q w * cross p q w))
+Typicality.lean	415	total	total	code	∀ ws : List (List Bool), (∀ w, w ∈ ws → f w ≤ g w) → total ws f ≤ total ws g
+Typicality.lean	415	total	total	code	∀ ws : List (List Bool), (∀ w, w ∈ ws → f w ≤ g w) → total ws f ≤ total ws g
+Typicality.lean	420	total	total	code	∀ ws : List (List Bool), (∀ w, w ∈ ws → f w = g w) → total ws f = total ws g
+Typicality.lean	420	total	total	code	∀ ws : List (List Bool), (∀ w, w ∈ ws → f w = g w) → total ws f = total ws g
+Typicality.lean	423	total	total	code	show f w + total ws f = g w + total ws g
+Typicality.lean	423	total	total	code	show f w + total ws f = g w + total ws g
+Typicality.lean	429	total	total	code	total (courses n) (atLeast p q k) * (u ^ k * v ^ n) ≤ (p * u + q * v) ^ n * v ^ k := by
+Typicality.lean	438	total	total	code	theorem few_far_ahead (k n : Nat) : total (courses n) (atLeast 1 1 k) * 3 ^ k ≤ 4 ^ n := by
+Typicality.lean	473	total	total	code	total (Typicality.courses n) (weight p q) :=
+Wholes.lean	286	half	Pulse.half	code	theorem half_even : ∀ t, odd t = false → half (t + 1) = half t
+Wholes.lean	286	half	Pulse.half	code	theorem half_even : ∀ t, odd t = false → half (t + 1) = half t
+Wholes.lean	297	half	Pulse.half	code	| .member n => half t = n
+Wholes.lean	309	half	Pulse.half	code	⟨fun t => ⟨fun _ => ⟨.member (half t), trivial, rfl⟩, fun _ => trivial⟩,

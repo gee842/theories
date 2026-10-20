@@ -604,15 +604,6 @@ def world (y : P → Nat) (σ : Nat → List T) (M₀ : P → Nat) : World :=
 
 variable {N}
 
-theorem distinct_append' {α : Type} : ∀ {l m : List α}, Distinct l → Distinct m →
-    (∀ a, a ∈ l → ¬ a ∈ m) → Distinct (l ++ m)
-  | [], _, _, distinct, _ => distinct
-  | a :: l, _, ⟨fresh, distinct⟩, distinct', apart =>
-    ⟨fun mem => match mem_append_cases mem with
-      | .inl inside => fresh inside
-      | .inr outside => apart a (.head l) outside,
-     distinct_append' distinct distinct' fun b mem => apart b (.tail a mem)⟩
-
 theorem inl_not_mem_inr {f : T} {l : List P} : ¬ (Sum.inl f : T ⊕ P) ∈ l.map Sum.inr :=
   fun mem => match preimage_of_mem_map mem with
   | ⟨_, _, same⟩ => nomatch same
@@ -663,7 +654,7 @@ def worldAlive (y : P → Nat) (σ : Nat → List T) (M₀ : P → Nat) (ts : Li
 theorem world_counted (distinct : Distinct ts) (every : ∀ f, f ∈ ts) (distinct' : Distinct ps)
     (every' : ∀ p, p ∈ ps) : (N.world y σ M₀).Counted :=
   ⟨worldAlive N y σ M₀ ts ps, fun _ =>
-    ⟨distinct_append' (distinct_map inl_injective distinct)
+    ⟨distinct_append (distinct_map inl_injective distinct)
         (distinct_map inr_injective (keep_distinct distinct'))
         fun _ inside outside => match preimage_of_mem_map inside with
           | ⟨_, _, same⟩ => inl_not_mem_inr (Eq.subst (motive := fun x => x ∈ _) same.symm outside),

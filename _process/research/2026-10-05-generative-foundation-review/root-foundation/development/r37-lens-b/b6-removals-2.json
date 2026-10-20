@@ -1,0 +1,39 @@
+{
+ "rows": [
+  {
+   "old": "Becoming.Propagation.between_of_mem_steps",
+   "new": "Becoming.between_of_mem_steps",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.skip_le",
+   "new": "Becoming.skipAt_le",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.SituationTraces.distinct_unit",
+   "new": "Becoming.Asymptote.distinct",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.SituationTraces.distinct_two",
+   "new": "Becoming.Shuttle.distinct",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.FinerTraces.mem_upto",
+   "new": "Becoming.Undecided.mem_upto",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Learning.upto",
+   "new": "Becoming.downFrom",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Learning.mem_upto",
+   "new": "Becoming.mem_downFrom",
+   "why": "R37 B6: the same definition or statement, one name"
+  }
+ ]
+}

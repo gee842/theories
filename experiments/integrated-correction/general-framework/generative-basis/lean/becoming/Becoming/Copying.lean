@@ -88,12 +88,6 @@ theorem append_cancel : ∀ (l : List β) {a b : List β}, l ++ a = l ++ b → a
 theorem ne_append_cons (l : List β) (x : β) (xs : List β) : l ≠ l ++ x :: xs :=
   fun same => nomatch append_cancel l ((ListTests.append_nil l).trans same)
 
-/-- The token at site `i`, if any. -/
-def nth : List β → Nat → Option β
-  | [], _ => none
-  | x :: _, 0 => some x
-  | _ :: xs, i + 1 => nth xs i
-
 /-- The list with the token at site `i` replaced by `x`. -/
 def setAt : List β → Nat → β → List β
   | [], _, _ => []

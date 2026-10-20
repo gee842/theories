@@ -202,18 +202,6 @@ variable {α : Type}
 
 /-! ## Lists -/
 
-/-- Mapping a list one to one on its members keeps it without repetition. -/
-theorem distinct_map_on {β : Type} {g : α → β} :
-    ∀ {l : List α}, (∀ a b, a ∈ l → b ∈ l → g a = g b → a = b) → Distinct l →
-      Distinct (l.map g)
-  | [], _, _ => trivial
-  | a :: l, inj, ⟨fresh, distinct⟩ =>
-    ⟨fun mem => match preimage_of_mem_map mem with
-      | ⟨b, listed, same⟩ => fresh (Eq.subst (motive := (· ∈ l))
-          (inj b a (.tail a listed) (.head l) same) listed),
-     distinct_map_on (fun x y first second => inj x y (.tail a first) (.tail a second))
-       distinct⟩
-
 namespace World
 
 variable {w : World}

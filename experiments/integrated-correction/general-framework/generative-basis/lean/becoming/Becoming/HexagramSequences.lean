@@ -173,16 +173,10 @@ def steps : List α → List (α × α)
 def Follows (next : α → α) (l : List α) : Prop :=
   ∀ q, q ∈ steps l → next q.1 = q.2
 
-/-- The member at `n` of a list, `d` past its end. -/
-def memberAt (d : α) : List α → Nat → α
-  | [], _ => d
-  | s :: _, 0 => s
-  | _ :: l, n + 1 => memberAt d l n
-
 /-- A law runs through a list: its run from the first member holds the list in order. -/
 def RunsThrough (next : α → α) : List α → Prop
   | [] => True
-  | s :: l => ∀ n, n < l.length + 1 → (Law.run next s).state n = memberAt s (s :: l) n
+  | s :: l => ∀ n, n < l.length + 1 → (Law.run next s).state n = Law.memberAt s (s :: l) n
 
 theorem Follows.head {next : α → α} {s t : α} {l : List α} (follows : Follows next (s :: t :: l)) :
     next s = t :=
@@ -195,7 +189,7 @@ theorem Follows.tail {next : α → α} {s t : α} {l : List α} (follows : Foll
 /-- Past the start, the member at a place within a list does not depend on what stands past its
 end. -/
 theorem memberAt_default {d d' : α} :
-    ∀ {l : List α} {n : Nat}, n < l.length → memberAt d l n = memberAt d' l n
+    ∀ {l : List α} {n : Nat}, n < l.length → Law.memberAt d l n = Law.memberAt d' l n
   | [], _, lt => absurd lt (Nat.not_lt_zero _)
   | _ :: _, 0, _ => rfl
   | _ :: l, n + 1, lt => memberAt_default (l := l) (n := n) (Nat.lt_of_succ_lt_succ lt)
@@ -238,7 +232,7 @@ theorem of_followsb {good : α → α → Bool} :
   | _ :: _, h, q, .tail _ mem => of_followsb (bool_of_and_true h).2 q mem
 
 /-- A member of a list is at some place in it. -/
-theorem memberAt_of_mem {d s : α} : ∀ {l : List α}, s ∈ l → ∃ n, n < l.length ∧ memberAt d l n = s
+theorem memberAt_of_mem {d s : α} : ∀ {l : List α}, s ∈ l → ∃ n, n < l.length ∧ Law.memberAt d l n = s
   | _ :: _, .head _ => ⟨0, Nat.zero_lt_succ _, rfl⟩
   | _ :: _, .tail _ mem => match memberAt_of_mem mem with
     | ⟨n, lt, at_n⟩ => ⟨n + 1, Nat.succ_lt_succ lt, at_n⟩

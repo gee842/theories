@@ -278,18 +278,12 @@ end Generations
 
 namespace Shifts
 
-/-- Half the step, rounded down. -/
-def half : Nat → Nat
-  | 0 => 0
-  | 1 => 0
-  | n + 2 => half n + 1
-
 theorem odd_two (t : Nat) : odd (t + 2) = odd t :=
   show (!!odd t) = odd t from match odd t with
   | true => rfl
   | false => rfl
 
-theorem half_even : ∀ t, odd t = false → half (t + 1) = half t
+theorem half_even : ∀ t, odd t = false → Pulse.half (t + 1) = Pulse.half t
   | 0, _ => rfl
   | 1, odd' => (nomatch odd')
   | t + 2, even => congrArg (· + 1) (half_even t ((odd_two t).symm.trans even))
@@ -300,7 +294,7 @@ def web : Web Generations.Formation Unit where
   level _ _ := 0
   active t f := match f with
     | .lineage => True
-    | .member n => half t = n
+    | .member n => Pulse.half t = n
   requires _ _ _ := False
   need _ _ _ := 0
   draws _ _ _ := False
@@ -312,7 +306,7 @@ one: the bound of `Whole.arises_within` is attained. -/
 theorem shifts : web.Whole Generations.parts .lineage ∧
     (∀ p, Generations.parts p → web.Brief 2 p) ∧ (∀ t, web.active t .lineage) ∧
     ∀ t, odd t = false → ∀ p, ¬ web.Arises t p :=
-  ⟨fun t => ⟨fun _ => ⟨.member (half t), trivial, rfl⟩, fun _ => trivial⟩,
+  ⟨fun t => ⟨fun _ => ⟨.member (Pulse.half t), trivial, rfl⟩, fun _ => trivial⟩,
    fun p _ => match p with
     | .member _ => fun _ now later => Nat.succ_ne_self _ (later.trans now.symm),
    fun _ => trivial,

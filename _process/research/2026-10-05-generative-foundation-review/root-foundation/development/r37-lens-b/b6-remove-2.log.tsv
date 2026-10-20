@@ -1,0 +1,46 @@
+FinerTraces.lean	93	mem_upto	Undecided.mem_upto	code	(mem_mapped (fun k => (x.1, x.2.1, k)) (mem_upto within)) (mem_openSteps move reached)
+Identification.lean	1687	Learning.upto	downFrom	code	theorem upto_length : ∀ m, (Learning.upto m).length = m + 1
+Identification.lean	1701	Learning.upto	downFrom	code	have closed : ∀ p, next p ∈ Learning.upto (M + 1) := fun p =>
+Identification.lean	1703	Learning.upto	downFrom	code	| .inl inside => Eq.subst (motive := fun v => v ∈ Learning.upto (M + 1))
+Identification.lean	1704	Learning.mem_upto	mem_downFrom	code	(if_pos inside : next p = p + 1).symm (Learning.mem_upto inside)
+Identification.lean	1705	Learning.upto	downFrom	code	| .inr last => Eq.subst (motive := fun v => v ∈ Learning.upto (M + 1))
+Identification.lean	1707	Learning.mem_upto	mem_downFrom	code	(Learning.mem_upto (Nat.le_refl _))
+Identification.lean	1714	Learning.upto	downFrom	code	⟨next, o, Learning.upto (M + 1), upto_length (M + 1), fun p _ => closed p,
+Identification.lean	1715	Learning.mem_upto	mem_downFrom	code	Learning.mem_upto (Nat.zero_le _), Learning.mem_upto (Nat.succ_le_succ (Nat.zero_le M)),
+Identification.lean	1715	Learning.mem_upto	mem_downFrom	code	Learning.mem_upto (Nat.zero_le _), Learning.mem_upto (Nat.succ_le_succ (Nat.zero_le M)),
+Identification.lean	1840	Learning.upto	downFrom	code	theorem le_of_mem_upto : ∀ {m n : Nat}, n ∈ Learning.upto m → n ≤ m
+Identification.lean	1878	Learning.upto	downFrom	code	have positions : ∀ i, i ∈ Learning.upto (l.length - 1) → f i ∈ Learning.upto (l.length - 1) :=
+Identification.lean	1878	Learning.upto	downFrom	code	have positions : ∀ i, i ∈ Learning.upto (l.length - 1) → f i ∈ Learning.upto (l.length - 1) :=
+Identification.lean	1879	Learning.mem_upto	mem_downFrom	code	fun i inside => Learning.mem_upto
+Identification.lean	1886	Learning.mem_upto	mem_downFrom	code	(Learning.mem_upto (le_pred_of_succ_le inp)) (Learning.mem_upto (le_pred_of_succ_le inp'))).mpr
+Identification.lean	1886	Learning.mem_upto	mem_downFrom	code	(Learning.mem_upto (le_pred_of_succ_le inp)) (Learning.mem_upto (le_pred_of_succ_le inp'))).mpr
+Identification.lean	1911	Learning.upto	downFrom	code	have closed : ∀ p, p ∈ Learning.upto (i + q) → next p ∈ Learning.upto (i + q) := fun p _ =>
+Identification.lean	1911	Learning.upto	downFrom	code	have closed : ∀ p, p ∈ Learning.upto (i + q) → next p ∈ Learning.upto (i + q) := fun p _ =>
+Identification.lean	1913	Learning.upto	downFrom	code	| .inl inside => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
+Identification.lean	1914	Learning.mem_upto	mem_downFrom	code	(if_pos inside : next p = p + 1).symm (Learning.mem_upto inside)
+Identification.lean	1915	Learning.upto	downFrom	code	| .inr last => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
+Identification.lean	1917	Learning.mem_upto	mem_downFrom	code	(Learning.mem_upto (Nat.le_add_right i q))
+Identification.lean	1938	Learning.upto	downFrom	code	have closed : ∀ p, p ∈ Learning.upto (i + q) → next p ∈ Learning.upto (i + q) := fun p _ =>
+Identification.lean	1938	Learning.upto	downFrom	code	have closed : ∀ p, p ∈ Learning.upto (i + q) → next p ∈ Learning.upto (i + q) := fun p _ =>
+Identification.lean	1940	Learning.upto	downFrom	code	| .inl inside => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
+Identification.lean	1941	Learning.mem_upto	mem_downFrom	code	(if_pos inside : next p = p + 1).symm (Learning.mem_upto inside)
+Identification.lean	1942	Learning.upto	downFrom	code	| .inr last => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
+Identification.lean	1944	Learning.mem_upto	mem_downFrom	code	(Learning.mem_upto (Nat.le_add_right i q))
+Learning.lean	540	upto	downFrom	code	(∀ n, Law.orbit (lassoNext i q) 0 n ∈ upto (i + q)) ∧
+Learning.lean	542	mem_upto	mem_downFrom	code	⟨fun n => mem_upto (lasso_positions lasso n).1, fun n => (lasso_positions lasso n).2 0⟩
+Likeness.lean	546	skip_le	skipAt_le	code	⟨skipAt m k, Nat.le_trans (skip_le m k) (Nat.succ_le_succ within), fun x mem =>
+Loops.lean	1393	Propagation.between_of_mem_steps	between_of_mem_steps	code	(Propagation.between_of_mem_steps mem).2 (Nat.le_of_eq (Nat.zero_add _)))
+MoveFormation.lean	495	Learning.upto	downFrom	code	((r.withLasso lasso).state n).2 ∈ Learning.upto (i + q) :=
+MoveFormation.lean	496	Learning.mem_upto	mem_downFrom	code	Learning.mem_upto (Learning.lasso_positions lasso n).1
+Pace.lean	361	Learning.mem_upto	mem_downFrom	code	(held_statesBelow (fun t => Learning.mem_upto
+Propagation.lean	386	between_of_mem_steps	between_of_mem_steps	code	Nat.le_of_lt_succ (Nat.lt_of_lt_of_le (between_of_mem_steps mem).2
+Routes.lean	449	Propagation.between_of_mem_steps	between_of_mem_steps	code	(Nat.le_of_lt (Nat.lt_of_lt_of_le (Propagation.between_of_mem_steps mem).2
+SituationTraces.lean	174	distinct_unit	Asymptote.distinct	code	⟨distinct_finer _ distinct_unit distinct_two n s, FinerTraces.two_values_mem_iff p q n s⟩
+SituationTraces.lean	174	distinct_two	Shuttle.distinct	code	⟨distinct_finer _ distinct_unit distinct_two n s, FinerTraces.two_values_mem_iff p q n s⟩
+SituationTraces.lean	211	distinct_unit	Asymptote.distinct	code	(TypicalRuns.length_listed listed (finer_traces _ distinct_unit distinct n s)).trans
+SituationTraces.lean	222	distinct_unit	Asymptote.distinct	code	(TypicalRuns.sum_listed (finer_traces _ distinct_unit distinct n s) listed _)
+SituationTraces.lean	233	distinct_unit	Asymptote.distinct	code	(TypicalRuns.sum_listed (finer_traces _ distinct_unit distinct n s) listed _)
+SituationTraces.lean	284	distinct_two	Shuttle.distinct	code	(TypicalRuns.length_listed listed (finer_traces _ distinct_two distinct_unit 1 ())).trans
+SituationTraces.lean	284	distinct_unit	Asymptote.distinct	code	(TypicalRuns.length_listed listed (finer_traces _ distinct_two distinct_unit 1 ())).trans
+SituationTraces.lean	297	distinct_two	Shuttle.distinct	code	(signed_traces Interference.weight distinct_two distinct_unit 1 () listed).symm.trans
+SituationTraces.lean	297	distinct_unit	Asymptote.distinct	code	(signed_traces Interference.weight distinct_two distinct_unit 1 () listed).symm.trans

@@ -624,4 +624,184 @@ theorem append_nil {α : Type} : ∀ (a : List α), a ++ [] = a
 
 end TreeSearch
 
+/-! ## Definitions stated once (R37)
+
+Each of these was defined with the same body in two or more modules of the run, or is a definition
+the statements stated once below name; it is stated here once, under the name kept (twentieth
+review, B6). `Distinct` and `distinct_append` are stated in every universe, as the copies they
+replace (`Distinct`, `distinct_append`) were. -/
+
+section Once
+
+variable {α : Type u} {β : Type v}
+
+/-- A list in which no member occurs twice. -/
+def Distinct : List α → Prop
+  | [] => True
+  | a :: as => ¬ a ∈ as ∧ Distinct as
+
+/-- Two lists without repetition and with no member in common join without repetition. -/
+theorem distinct_append : ∀ {l m : List α}, Distinct l → Distinct m →
+    (∀ a, a ∈ l → ¬ a ∈ m) → Distinct (l ++ m)
+  | [], _, _, distinct, _ => distinct
+  | a :: l, _, ⟨fresh, distinctL⟩, distinctM, apart =>
+    ⟨fun mem => match ListTests.mem_append_iff.mp mem with
+      | .inl inside => fresh inside
+      | .inr outside => apart a (.head l) outside,
+     distinct_append distinctL distinctM fun b mem => apart b (.tail a mem)⟩
+
+/-- Members of a list pairwise apart under a relation: no member is related to a later one. -/
+def DistinctUnder (R : α → α → Prop) : List α → Prop
+  | [] => True
+  | x :: s => (∀ y, y ∈ s → ¬ R x y) ∧ DistinctUnder R s
+
+namespace Copying
+
+/-- The member at index `i`, if any. -/
+def nth : List β → Nat → Option β
+  | [], _ => none
+  | x :: _, 0 => some x
+  | _ :: xs, i + 1 => nth xs i
+
+end Copying
+
+namespace Law
+
+/-- The member at index `i`, `d` past the end. -/
+def memberAt (d : α) : List α → Nat → α
+  | [], _ => d
+  | x :: _, 0 => x
+  | _ :: r, i + 1 => memberAt d r i
+
+end Law
+
+namespace Settling
+
+/-- The sequence that starts with `a` and continues as `h`. -/
+def consAct (a : α) (h : Nat → α) : Nat → α
+  | 0 => a
+  | k + 1 => h k
+
+end Settling
+
+end Once
+
+/-- The total of a quantity over a finite list. -/
+def total {α : Type} : List α → (α → Nat) → Nat
+  | [], _ => 0
+  | a :: as, q => q a + total as q
+
+/-- The steps `T`, `T + 1`, …, `T + N - 1`. -/
+def steps : Nat → Nat → List Nat
+  | _, 0 => []
+  | T, N + 1 => T :: steps (T + 1) N
+
+/-- Whether a count is not zero. -/
+def nonzero : Nat → Bool
+  | 0 => false
+  | _ + 1 => true
+
+namespace Undecided
+
+/-- The numbers below `n`, from `n - 1` down. -/
+def upto : Nat → List Nat
+  | 0 => []
+  | n + 1 => n :: upto n
+
+end Undecided
+
+section OnceLists
+
+variable {α β : Type}
+
+/-- In a list without repetition, a member standing in the middle stands nowhere else. -/
+theorem not_mem_of_middle {a : α} : ∀ {p q : List α}, Distinct (p ++ a :: q) → ¬ a ∈ p ++ q
+  | [], _, ⟨fresh, _⟩, mem => fresh mem
+  | _ :: p, q, ⟨fresh, distinct⟩, mem => match mem_cons_cases mem with
+    | .inl ax => fresh (Eq.subst (motive := fun y => y ∈ p ++ a :: q) ax (mem_middle p))
+    | .inr mem => not_mem_of_middle distinct mem
+
+/-- Mapping a list one to one on its members keeps it without repetition. -/
+theorem distinct_map_on {β : Type} {g : α → β} :
+    ∀ {l : List α}, (∀ a b, a ∈ l → b ∈ l → g a = g b → a = b) → Distinct l →
+      Distinct (l.map g)
+  | [], _, _ => trivial
+  | a :: l, inj, ⟨fresh, distinct⟩ =>
+    ⟨fun mem => match preimage_of_mem_map mem with
+      | ⟨b, listed, same⟩ => fresh (Eq.subst (motive := (· ∈ l))
+          (inj b a (.tail a listed) (.head l) same) listed),
+     distinct_map_on (fun x y first second => inj x y (.tail a first) (.tail a second))
+       distinct⟩
+
+end OnceLists
+
+/-- Shifting a stretch of steps by one is shifting the quantity. -/
+theorem total_steps_succ (q : Nat → Nat) :
+    ∀ T n, total (steps (T + 1) n) q = total (steps T n) fun i => q (i + 1)
+  | _, 0 => rfl
+  | T, n + 1 => congrArg (q (T + 1) + ·) (total_steps_succ q (T + 1) n)
+
+/-- The total over a stretch of `a + b` steps is the total over its first `a` steps with the
+total over the `b` after them. -/
+theorem total_steps_add (q : Nat → Nat) : ∀ (S a b : Nat),
+    total (steps S (a + b)) q = total (steps S a) q + total (steps (S + a) b) q
+  | S, 0, b => (congrArg (fun k => total (steps S k) q) (Nat.zero_add b)).trans
+      (Nat.zero_add _).symm
+  | S, a + 1, b =>
+    (congrArg (fun k => total (steps S k) q) (Nat.succ_add a b)).trans
+      ((congrArg (q S + ·) (total_steps_add q (S + 1) a b)).trans
+        ((Nat.add_assoc _ _ _).symm.trans
+          (congrArg (fun k => total (steps S (a + 1)) q + total (steps k b) q)
+            (Nat.add_right_comm S 1 a))))
+
+/-- A member of a stretch of steps lies between its ends. -/
+theorem between_of_mem_steps : ∀ {T N j : Nat}, j ∈ steps T N → T ≤ j ∧ j < T + N
+  | _, 0, _, mem => nomatch mem
+  | T, N + 1, _, mem => match mem_cons_cases mem with
+    | .inl same => ⟨Nat.le_of_eq same.symm,
+        Eq.subst (motive := fun x => x < T + (N + 1)) same.symm
+          (Nat.lt_add_of_pos_right (Nat.succ_pos N))⟩
+    | .inr mem => match between_of_mem_steps mem with
+      | ⟨le, lt⟩ => ⟨Nat.le_of_succ_le le,
+          Nat.lt_of_lt_of_le lt (Nat.le_of_eq (Nat.add_right_comm T 1 N))⟩
+
+namespace RouteTraces
+
+/-- A count at most another that is not zero leaves the other not zero. -/
+theorem nonzero_of_le : ∀ {a b : Nat}, a ≤ b → nonzero a = true → nonzero b = true
+  | 0, _, _, pos => Bool.noConfusion pos
+  | _ + 1, 0, le, _ => absurd le (Nat.not_succ_le_zero _)
+  | _ + 1, _ + 1, _, _ => rfl
+
+end RouteTraces
+
+/-- The numbers from `K` down to zero. -/
+def downFrom : Nat → List Nat
+  | 0 => [0]
+  | K + 1 => (K + 1) :: downFrom K
+
+theorem mem_downFrom : ∀ {k K : Nat}, k ≤ K → k ∈ downFrom K
+  | _, 0, le => Eq.subst (motive := fun k => k ∈ downFrom 0) (Nat.eq_zero_of_le_zero le).symm
+      (.head _)
+  | _, K + 1, le => match Nat.eq_or_lt_of_le le with
+    | .inl same => Eq.subst (motive := fun x => x ∈ downFrom (K + 1)) same.symm (.head _)
+    | .inr lt => .tail _ (mem_downFrom (Nat.le_of_lt_succ lt))
+
+theorem le_of_mem_downFrom : ∀ {K k : Nat}, k ∈ downFrom K → k ≤ K
+  | 0, _, .head _ => Nat.le_refl 0
+  | 0, _, .tail _ no => nomatch no
+  | _ + 1, _, .head _ => Nat.le_refl _
+  | _ + 1, _, .tail _ mem => Nat.le_succ_of_le (le_of_mem_downFrom mem)
+
+namespace Undecided
+
+theorem mem_upto : ∀ {n i : Nat}, i < n → i ∈ upto n
+  | 0, _, lt => absurd lt (Nat.not_lt_zero _)
+  | n + 1, i, lt => match Nat.lt_or_ge i n with
+    | .inl lt' => .tail n (mem_upto lt')
+    | .inr ge => Eq.subst (motive := fun x => x ∈ n :: upto n)
+        (Nat.le_antisymm (Nat.le_of_lt_succ lt) ge).symm (List.Mem.head (upto n))
+
+end Undecided
+
 end Becoming

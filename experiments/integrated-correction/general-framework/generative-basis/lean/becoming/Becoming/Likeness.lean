@@ -491,19 +491,8 @@ theorem drops_somewhere {X : Type u} {P : Nat → X → Prop} {x : X}
     | .inl holds => ⟨N, holds, fails⟩
     | .inr fails' => drops_somewhere decided first N fails'
 
-/-- The steps with step `m` left out: `skip m j` is `j` below `m` and `j + 1` from `m` on. -/
-def skip : Nat → Nat → Nat
-  | 0, j => j + 1
-  | _ + 1, 0 => 0
-  | m + 1, j + 1 => skip m j + 1
-
-theorem skip_le : ∀ m j, skip m j ≤ j + 1
-  | 0, _ => Nat.le_refl _
-  | _ + 1, 0 => Nat.zero_le _
-  | m + 1, j + 1 => Nat.succ_le_succ (skip_le m j)
-
 /-- Leaving out step `m` lands below `m` or above it. -/
-theorem skip_side : ∀ m j, skip m j < m ∨ m + 1 ≤ skip m j
+theorem skip_side : ∀ m j, skipAt m j < m ∨ m + 1 ≤ skipAt m j
   | 0, j => .inr (Nat.succ_le_succ (Nat.zero_le j))
   | m + 1, 0 => .inl (Nat.succ_pos m)
   | m + 1, j + 1 => match skip_side m j with
@@ -511,7 +500,7 @@ theorem skip_side : ∀ m j, skip m j < m ∨ m + 1 ≤ skip m j
     | .inr above => .inr (Nat.succ_le_succ above)
 
 /-- Leaving out one step moves on by one step or, across the step left out, by two. -/
-theorem skip_succ : ∀ m j, skip m (j + 1) = skip m j + 1 ∨ skip m (j + 1) = skip m j + 2
+theorem skip_succ : ∀ m j, skipAt m (j + 1) = skipAt m j + 1 ∨ skipAt m (j + 1) = skipAt m j + 2
   | 0, _ => .inl rfl
   | 1, 0 => .inr rfl
   | _ + 2, 0 => .inl rfl
@@ -548,19 +537,19 @@ theorem stops_decreasing {X : Type u} :
       | .inl first =>
         match drops_somewhere (fun k => decided k y) first (l.length + 1) ends with
         | ⟨m, last, after⟩ =>
-          match stops_decreasing l (fun j => P (skip m j))
+          match stops_decreasing l (fun j => P (skipAt m j))
               (fun j x holds => match skip_succ m j with
                 | .inl one => down _ x (Eq.subst (motive := fun z => P z x) one holds)
                 | .inr two => down _ x (down _ x (Eq.subst (motive := fun z => P z x) two holds)))
-              (fun j x => decided (skip m j) x) with
+              (fun j x => decided (skipAt m j) x) with
           | ⟨k, within, steady⟩ =>
-            ⟨skip m k, Nat.le_trans (skip_le m k) (Nat.succ_le_succ within), fun x mem =>
+            ⟨skipAt m k, Nat.le_trans (skipAt_le m k) (Nat.succ_le_succ within), fun x mem =>
               match mem_cons_split mem with
               | .inl same => match skip_side m k with
-                | .inl below => fun _ => Eq.subst (motive := fun z => P (skip m k + 1) z)
+                | .inl below => fun _ => Eq.subst (motive := fun z => P (skipAt m k + 1) z)
                     same.symm (holds_below down below last)
                 | .inr above => fun holds => absurd (holds_below down above
-                    (Eq.subst (motive := fun z => P (skip m k) z) same holds)) after
+                    (Eq.subst (motive := fun z => P (skipAt m k) z) same holds)) after
               | .inr mem => fun holds => match skip_succ m k with
                 | .inl one => Eq.subst (motive := fun z => P z x) one (steady x mem holds)
                 | .inr two => down _ x

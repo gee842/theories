@@ -55,20 +55,11 @@ section Distinct
 
 variable {α : Type u} {β : Type v}
 
-theorem distinct_append : ∀ {l m : List α}, CrossSituational.Distinct l →
-    CrossSituational.Distinct m → (∀ x, x ∈ l → ¬ x ∈ m) → CrossSituational.Distinct (l ++ m)
-  | [], _, _, dm, _ => dm
-  | a :: l, _, ⟨out, rest⟩, dm, apart =>
-    ⟨fun mem => match ListTests.mem_append_iff.mp mem with
-       | .inl inside => out inside
-       | .inr outside => apart a (.head l) outside,
-     distinct_append rest dm (fun x mem => apart x (.tail a mem))⟩
-
 theorem distinct_map {g : α → β} (inj : ∀ a b, g a = g b → a = b) :
-    ∀ {l : List α}, CrossSituational.Distinct l → CrossSituational.Distinct (l.map g)
+    ∀ {l : List α}, Distinct l → Distinct (l.map g)
   | [], _ => trivial
   | a :: l, ⟨out, rest⟩ =>
-    show ¬ g a ∈ l.map g ∧ CrossSituational.Distinct (l.map g) from
+    show ¬ g a ∈ l.map g ∧ Distinct (l.map g) from
     ⟨fun mem => match ListTests.mem_map_iff.mp mem with
       | ⟨a', inside, same⟩ =>
         out (Eq.subst (motive := fun x => x ∈ l) (inj a' a same) inside),
@@ -77,20 +68,20 @@ theorem distinct_map {g : α → β} (inj : ∀ a b, g a = g b → a = b) :
 /-- **Joining lists without repetition whose members are tagged by where they come from repeats
 nothing.** -/
 theorem distinct_joinMap {g : α → List β} :
-    ∀ {l : List α}, CrossSituational.Distinct l → (∀ a, a ∈ l → CrossSituational.Distinct (g a)) →
-      (∀ a b x, x ∈ g a → x ∈ g b → a = b) → CrossSituational.Distinct (joinMap g l)
+    ∀ {l : List α}, Distinct l → (∀ a, a ∈ l → Distinct (g a)) →
+      (∀ a b x, x ∈ g a → x ∈ g b → a = b) → Distinct (joinMap g l)
   | [], _, _, _ => trivial
   | a :: l, ⟨out, rest⟩, each, tags =>
-    show CrossSituational.Distinct (g a ++ joinMap g l) from
+    show Distinct (g a ++ joinMap g l) from
     distinct_append (each a (.head l))
       (distinct_joinMap rest (fun b mem => each b (.tail a mem)) tags)
       (fun x inside other => match FinerTraces.of_mem_joinMap other with
         | ⟨b, mem, inner⟩ =>
           out (Eq.subst (motive := fun y => y ∈ l) (tags b a x inner inside) mem))
 
-theorem distinct_upto : ∀ k, CrossSituational.Distinct (upto k)
+theorem distinct_upto : ∀ k, Distinct (Undecided.upto k)
   | 0 => trivial
-  | k + 1 => show ¬ k ∈ upto k ∧ CrossSituational.Distinct (upto k) from
+  | k + 1 => show ¬ k ∈ Undecided.upto k ∧ Distinct (Undecided.upto k) from
     ⟨fun mem => Nat.lt_irrefl k (FinerTraces.lt_of_mem_upto mem), distinct_upto k⟩
 
 theorem occ_pos [DecidableEq α] {x : α} : ∀ {k : List α}, x ∈ k → 1 ≤ occ k x
@@ -99,10 +90,10 @@ theorem occ_pos [DecidableEq α] {x : α} : ∀ {k : List α}, x ∈ k → 1 ≤
 
 /-- **Nothing occurring more than once, a list is without repetition.** -/
 theorem distinct_of_occ [DecidableEq α] : ∀ {l : List α}, (∀ a, occ l a ≤ 1) →
-    CrossSituational.Distinct l
+    Distinct l
   | [], _ => trivial
   | x :: l, le =>
-    show ¬ x ∈ l ∧ CrossSituational.Distinct l from
+    show ¬ x ∈ l ∧ Distinct l from
     ⟨fun mem =>
       have here : occ (x :: l) x = 1 + occ l x := congrArg (· + occ l x) (if_pos rfl)
       Nat.not_succ_le_self 1
@@ -112,33 +103,21 @@ theorem distinct_of_occ [DecidableEq α] : ∀ {l : List α}, (∀ a, occ l a �
 
 end Distinct
 
-/-- One value listed. -/
-theorem distinct_unit : CrossSituational.Distinct [()] :=
-  show ¬ () ∈ ([] : List Unit) ∧ True from ⟨fun mem => (nomatch mem), trivial⟩
-
-/-- Two values listed without repetition. -/
-theorem distinct_two : CrossSituational.Distinct [true, false] :=
-  show ¬ true ∈ [false] ∧ (¬ false ∈ ([] : List Bool) ∧ True) from
-  ⟨fun mem => match mem_cons_split mem with
-    | .inl same => Bool.noConfusion same
-    | .inr inside => (nomatch inside),
-   ⟨fun mem => (nomatch mem), trivial⟩⟩
-
 /-! ## Each trace of the finer law once -/
 
 section Finer
 
 variable {S : Type u} {A : Type v}
 
-theorem distinct_openSteps {moves : List A} {all : List S} (dm : CrossSituational.Distinct moves)
-    (da : CrossSituational.Distinct all) : CrossSituational.Distinct (openSteps moves all) :=
+theorem distinct_openSteps {moves : List A} {all : List S} (dm : Distinct moves)
+    (da : Distinct all) : Distinct (openSteps moves all) :=
   distinct_joinMap dm (fun _ _ => distinct_map (fun _ _ same => congrArg Prod.snd same) da)
     (fun _ _ _ ina inb => match ListTests.mem_map_iff.mp ina, ListTests.mem_map_iff.mp inb with
       | ⟨_, _, ea⟩, ⟨_, _, eb⟩ => (congrArg Prod.fst ea).trans (congrArg Prod.fst eb).symm)
 
 theorem distinct_finerSteps (weight : S → A → S → Nat) {moves : List A} {all : List S}
-    (dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) (s : S) :
-    CrossSituational.Distinct (finerSteps weight moves all s) :=
+    (dm : Distinct moves) (da : Distinct all) (s : S) :
+    Distinct (finerSteps weight moves all s) :=
   distinct_joinMap (distinct_openSteps dm da)
     (fun _ _ => distinct_map (fun _ _ same => congrArg (fun y : A × S × Nat => y.2.2) same)
       (distinct_upto _))
@@ -150,8 +129,8 @@ theorem distinct_finerSteps (weight : S → A → S → Nat) {moves : List A} {a
 /-- The finer courses of `n` steps repeat nothing where the moves and configurations are listed
 without repetition. -/
 theorem distinct_finer (weight : S → A → S → Nat) {moves : List A} {all : List S}
-    (dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) :
-    ∀ n s, CrossSituational.Distinct (finer weight moves all n s)
+    (dm : Distinct moves) (da : Distinct all) :
+    ∀ n s, Distinct (finer weight moves all n s)
   | 0, _ => show ¬ ([] : List (A × S × Nat)) ∈ ([] : List (List (A × S × Nat))) ∧ True from
       ⟨fun mem => (nomatch mem), trivial⟩
   | n + 1, s =>
@@ -176,7 +155,7 @@ def Traces (weight : S → A → S → Nat) (moves : List A) (all : List S) (n :
 /-- **The finer courses hold each trace of the finer law once**, where the moves and
 configurations are listed without repetition. -/
 theorem finer_traces (weight : S → A → S → Nat) {moves : List A} {all : List S}
-    (dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) (n : Nat) (s : S) :
+    (dm : Distinct moves) (da : Distinct all) (n : Nat) (s : S) :
     Traces weight moves all n s (finer weight moves all n s) :=
   ⟨distinct_finer weight dm da n s, FinerTraces.mem_finer_iff weight moves all n s⟩
 
@@ -192,7 +171,7 @@ def TwoTraces (p q n : Nat) (s : Bool) (l : List (List (Unit × Bool × Nat))) :
 
 theorem finer_twoTraces (p q n : Nat) (s : Bool) :
     TwoTraces p q n s (finer (Typicality.stepWeight p q) [()] [true, false] n s) :=
-  ⟨distinct_finer _ distinct_unit distinct_two n s, FinerTraces.two_values_mem_iff p q n s⟩
+  ⟨distinct_finer _ Asymptote.distinct Shuttle.distinct n s, FinerTraces.two_values_mem_iff p q n s⟩
 
 section Two
 
@@ -227,31 +206,31 @@ section Event
 variable {V : Type u} {vals : List V} {n : Nat} {s : V} {l : List (List (Unit × V × Nat))}
 
 /-- **The traces of the finer law number the weight of all values to the `n`.** -/
-theorem event_traces_count (wt : V → Nat) (distinct : CrossSituational.Distinct vals)
+theorem event_traces_count (wt : V → Nat) (distinct : Distinct vals)
     (listed : Traces (valueWeight wt) [()] vals n s l) : l.length = (counting.sum vals wt) ^ n :=
-  (TypicalRuns.length_listed listed (finer_traces _ distinct_unit distinct n s)).trans
+  (TypicalRuns.length_listed listed (finer_traces _ Asymptote.distinct distinct n s)).trans
     (event_count vals wt n s)
 
 /-- **The law of large numbers counts the traces of the finer law for every event.** -/
 theorem event_traces_typical (wt : V → Nat) (event : V → Bool) (d : Nat)
-    (distinct : CrossSituational.Distinct vals) (listed : Traces (valueWeight wt) [()] vals n s l) :
+    (distinct : Distinct vals) (listed : Traces (valueWeight wt) [()] vals n s l) :
     counting.sum l
         (fun h => far (inside vals wt event) (outside vals wt event) d (seen event (coarse h))) * d ≤
       n * (inside vals wt event * outside vals wt event *
         (inside vals wt event + outside vals wt event) ^ n) :=
   Eq.subst (motive := fun x => x * d ≤ _)
-    (TypicalRuns.sum_listed (finer_traces _ distinct_unit distinct n s) listed _)
+    (TypicalRuns.sum_listed (finer_traces _ Asymptote.distinct distinct n s) listed _)
     (event_typical vals wt event n d s)
 
 /-- **Exponentially few traces of the finer law run far ahead for every event.** -/
 theorem event_traces_concentrated (wt : V → Nat) (event : V → Bool) (k : Nat) {u v : Nat}
-    (le : v ≤ u) (distinct : CrossSituational.Distinct vals)
+    (le : v ≤ u) (distinct : Distinct vals)
     (listed : Traces (valueWeight wt) [()] vals n s l) :
     counting.sum l (fun h => if k ≤ Typicality.ones (seen event (coarse h)) then 1 else 0) *
         (u ^ k * v ^ n) ≤
       (inside vals wt event * u + outside vals wt event * v) ^ n * v ^ k :=
   Eq.subst (motive := fun x => x * (u ^ k * v ^ n) ≤ _)
-    (TypicalRuns.sum_listed (finer_traces _ distinct_unit distinct n s) listed _)
+    (TypicalRuns.sum_listed (finer_traces _ Asymptote.distinct distinct n s) listed _)
     (event_concentrated vals wt event k n s le)
 
 end Event
@@ -288,7 +267,7 @@ without repetition, the signed transfer counts, among the traces of the finer la
 `P + N` situations of each step, those composing to adding and those composing to
 subtracting. -/
 theorem signed_traces (weight : S → A → S → Nat × Nat) {moves : List A} {all : List S}
-    (dm : CrossSituational.Distinct moves) (da : CrossSituational.Distinct all) (n : Nat) (s : S)
+    (dm : Distinct moves) (da : Distinct all) (n : Nat) (s : S)
     {l : List (List (A × S × Nat))} (listed : Traces (both weight) moves all n s l) :
     signed.transfer weight moves all (fun _ => signed.one) n s =
       (counting.sum l (fun h => if signs signed (Situations.sign weight) s h = (1, 0) then 1 else 0),
@@ -302,7 +281,7 @@ theorem signed_traces (weight : S → A → S → Nat × Nat) {moves : List A} {
 `Interference.cancels` is taken by two traces of one step of the finer law. -/
 theorem cancels_traces {l : List (List (Bool × Unit × Nat))}
     (listed : Traces (both Interference.weight) [true, false] [()] 1 () l) : l.length = 2 :=
-  (TypicalRuns.length_listed listed (finer_traces _ distinct_two distinct_unit 1 ())).trans
+  (TypicalRuns.length_listed listed (finer_traces _ Shuttle.distinct Asymptote.distinct 1 ())).trans
     cancels_situations.2
 
 /-- **Of the two traces of the balanced weighting, one adds and one subtracts.** Counted among the
@@ -315,7 +294,7 @@ theorem cancels_counts {l : List (List (Bool × Unit × Nat))}
       counting.sum l (fun h =>
         if signs signed (Situations.sign Interference.weight) () h = (0, 1) then 1 else 0)) =
       (1, 1) :=
-  (signed_traces Interference.weight distinct_two distinct_unit 1 () listed).symm.trans
+  (signed_traces Interference.weight Shuttle.distinct Asymptote.distinct 1 () listed).symm.trans
     Interference.cancels.2
 
 end Signed

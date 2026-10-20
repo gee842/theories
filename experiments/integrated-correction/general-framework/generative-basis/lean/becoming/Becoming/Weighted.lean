@@ -336,9 +336,6 @@ theorem mem_openSteps {S : Type u} {A : Type v} {moves : List A} {all : List S} 
     (move : a ∈ moves) (reached : m ∈ all) : (a, m) ∈ openSteps moves all :=
   mem_joinMap (fun a => all.map fun m => (a, m)) (mem_mapped (fun m => (a, m)) reached) move
 
-/-- Whether a count is not zero. -/
-def nonzero : Nat → Bool := Witnesses.profile [false] true
-
 /-- **Counting read as possibility loses nothing of what is possible:** a count is not zero
 exactly where possibility holds, since counts of alternatives cannot cancel. -/
 def support : Weights.Hom counting possibility where
@@ -647,5 +644,10 @@ theorem entries_within_not_together :
       (show 4 ≤ 2 from within)))⟩
 
 end Mass
+
+/-- Counting one for each member of a list counts its length. -/
+theorem Situations.sum_one {α : Type u} : ∀ l : List α, counting.sum l (fun _ => 1) = l.length
+  | [] => rfl
+  | _ :: l => (Nat.add_comm 1 _).trans (congrArg (· + 1) (Situations.sum_one l))
 
 end Becoming

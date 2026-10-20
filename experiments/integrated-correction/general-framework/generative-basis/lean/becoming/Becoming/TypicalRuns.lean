@@ -51,7 +51,7 @@ variable {α : Type u}
 
 /-- `l` holds every `x` with `M x`, and nothing else, each once. -/
 def Listing (M : α → Prop) (l : List α) : Prop :=
-  CrossSituational.Distinct l ∧ ∀ x, x ∈ l ↔ M x
+  Distinct l ∧ ∀ x, x ∈ l ↔ M x
 
 /-- A member splits its list. -/
 theorem split_of_mem {a : α} : ∀ {l : List α}, a ∈ l → ∃ l₁ l₂, l = l₁ ++ a :: l₂
@@ -74,8 +74,8 @@ theorem mem_drop_or {a x : α} {l₁ l₂ : List α} (mem : x ∈ l₁ ++ a :: l
 /-- Taking a member out of a list without repetition leaves a list without repetition that does
 not hold it. -/
 theorem distinct_drop {a : α} :
-    ∀ {l₁ l₂ : List α}, CrossSituational.Distinct (l₁ ++ a :: l₂) →
-      ¬ a ∈ l₁ ++ l₂ ∧ CrossSituational.Distinct (l₁ ++ l₂)
+    ∀ {l₁ l₂ : List α}, Distinct (l₁ ++ a :: l₂) →
+      ¬ a ∈ l₁ ++ l₂ ∧ Distinct (l₁ ++ l₂)
   | [], _, ⟨out, rest⟩ => ⟨out, rest⟩
   | b :: l₁, l₂, ⟨out, rest⟩ =>
     match distinct_drop (l₁ := l₁) (l₂ := l₂) rest with
@@ -87,15 +87,15 @@ theorem distinct_drop {a : α} :
 
 /-- **A count does not depend on how the members are listed.** Two lists without repetition
 holding the same members give every reading the same sum. -/
-theorem sum_listing (f : α → Nat) : ∀ {l m : List α}, CrossSituational.Distinct l →
-    CrossSituational.Distinct m → (∀ x, x ∈ l ↔ x ∈ m) → counting.sum l f = counting.sum m f
+theorem sum_listing (f : α → Nat) : ∀ {l m : List α}, Distinct l →
+    Distinct m → (∀ x, x ∈ l ↔ x ∈ m) → counting.sum l f = counting.sum m f
   | [], [], _, _, _ => rfl
   | [], b :: _, _, _, same => nomatch (same b).mpr (.head _)
   | a :: l, _, ⟨out, rest⟩, dm, same =>
     match split_of_mem ((same a).mp (.head l)) with
     | ⟨m₁, m₂, split⟩ =>
-      have dm' : CrossSituational.Distinct (m₁ ++ a :: m₂) :=
-        Eq.subst (motive := fun k => CrossSituational.Distinct k) split dm
+      have dm' : Distinct (m₁ ++ a :: m₂) :=
+        Eq.subst (motive := fun k => Distinct k) split dm
       match distinct_drop dm' with
       | ⟨out', rest'⟩ =>
         have members : ∀ x, x ∈ l ↔ x ∈ m₁ ++ m₂ := fun x =>
@@ -121,14 +121,10 @@ theorem sum_listed {M : α → Prop} {l m : List α} (listed : Listing M l) (lis
     (f : α → Nat) : counting.sum l f = counting.sum m f :=
   sum_listing f listed.1 listed'.1 fun x => (listed.2 x).trans (listed'.2 x).symm
 
-theorem sum_one : ∀ l : List α, counting.sum l (fun _ => 1) = l.length
-  | [] => rfl
-  | _ :: l => (Nat.add_comm 1 _).trans (congrArg (· + 1) (sum_one l))
-
 /-- Two lists each holding every member of one kind once have one length. -/
 theorem length_listed {M : α → Prop} {l m : List α} (listed : Listing M l)
     (listed' : Listing M m) : l.length = m.length :=
-  (sum_one l).symm.trans ((sum_listed listed listed' _).trans (sum_one m))
+  (Situations.sum_one l).symm.trans ((sum_listed listed listed' _).trans (Situations.sum_one m))
 
 end Listing
 
@@ -136,13 +132,13 @@ end Listing
 
 /-- Typicality's sum is the sum of counting. -/
 theorem total_eq_sum (f : List Bool → Nat) : ∀ ws : List (List Bool),
-    Typicality.total ws f = counting.sum ws f
+    total ws f = counting.sum ws f
   | [] => rfl
   | w :: ws => congrArg (f w + ·) (total_eq_sum f ws)
 
 /-- Two lists each holding every member of one kind once give every reading the same total. -/
 theorem total_listing {M : List Bool → Prop} {l m : List (List Bool)} (listed : Listing M l)
-    (listed' : Listing M m) (f : List Bool → Nat) : Typicality.total l f = Typicality.total m f :=
+    (listed' : Listing M m) (f : List Bool → Nat) : total l f = total m f :=
   (total_eq_sum f l).trans ((sum_listed listed listed' f).trans (total_eq_sum f m).symm)
 
 /-- The sequence whose prefix of `w.length` steps is `w`, `false` after it. -/
@@ -173,8 +169,8 @@ theorem mem_courses_iff {n : Nat} {w : List Bool} :
    fun ⟨_, same⟩ => Typicality.mem_courses_iff.mpr
     (Eq.subst (motive := fun k => k.length = n) same (Learning.prefix_length _ n))⟩
 
-theorem distinct_extend : ∀ {ws : List (List Bool)}, CrossSituational.Distinct ws →
-    CrossSituational.Distinct (Typicality.extend ws)
+theorem distinct_extend : ∀ {ws : List (List Bool)}, Distinct ws →
+    Distinct (Typicality.extend ws)
   | [], _ => trivial
   | w :: ws, ⟨out, rest⟩ =>
     have fresh : ∀ b, ¬ (b :: w) ∈ Typicality.extend ws := fun _ mem =>
@@ -183,13 +179,13 @@ theorem distinct_extend : ∀ {ws : List (List Bool)}, CrossSituational.Distinct
         out (Eq.subst (motive := fun x => x ∈ ws) (List.cons.inj same).2.symm inside)
     show ¬ (true :: w) ∈ (false :: w) :: Typicality.extend ws ∧
         (¬ (false :: w) ∈ Typicality.extend ws ∧
-          CrossSituational.Distinct (Typicality.extend ws)) from
+          Distinct (Typicality.extend ws)) from
     ⟨fun mem => match mem_cons_split mem with
       | .inl same => Bool.noConfusion (List.cons.inj same).1
       | .inr inside => fresh true inside,
      ⟨fresh false, distinct_extend rest⟩⟩
 
-theorem distinct_courses : ∀ n, CrossSituational.Distinct (Typicality.courses n)
+theorem distinct_courses : ∀ n, Distinct (Typicality.courses n)
   | 0 => show ¬ ([] : List Bool) ∈ ([] : List (List Bool)) ∧ True from
       ⟨fun mem => (nomatch mem), trivial⟩
   | n + 1 => distinct_extend (distinct_courses n)
@@ -214,7 +210,7 @@ theorem records_count (listed : Records n l) : l.length = 2 ^ n :=
 
 /-- **The prefixes of `n` steps weigh `(p + q) ^ n` together.** -/
 theorem records_weight (listed : Records n l) (p q : Nat) :
-    Typicality.total l (Typicality.weight p q) = (p + q) ^ n :=
+    total l (Typicality.weight p q) = (p + q) ^ n :=
   (total_listing listed (courses_records n) _).trans (Typicality.total_weight p q n)
 
 /-- **The sum over histories of `Becoming.Weighted` is the weight of the prefixes.** The sum over
@@ -223,14 +219,14 @@ weight of the prefixes of `n` steps of its runs. -/
 theorem histories_records (listed : Records n l) (p q : Nat) (s : Bool) :
     counting.sum (Becoming.courses [()] [true, false] n)
         (counting.along (Typicality.stepWeight p q) (fun _ => 1) s) =
-      Typicality.total l (Typicality.weight p q) :=
+      total l (Typicality.weight p q) :=
   (Typicality.sum_courses_weight p q n s).trans (total_listing (courses_records n) listed _)
 
 /-- **The spread over the prefixes of runs is exact.** Over the prefixes of `n` steps, each
 weighted, `x·x + y·y` adds up to `2·x·y` plus `n·p·q·(p + q)^n`. -/
 theorem records_spread (listed : Records n l) (p q : Nat) :
-    Typicality.total l (fun w => Typicality.weight p q w * Typicality.square p q w) =
-      Typicality.total l (fun w => Typicality.weight p q w * Typicality.cross p q w) +
+    total l (fun w => Typicality.weight p q w * Typicality.square p q w) =
+      total l (fun w => Typicality.weight p q w * Typicality.cross p q w) +
         n * (p * q * (p + q) ^ n) :=
   (total_listing listed (courses_records n) _).trans
     ((Typicality.spread p q n).trans
@@ -239,21 +235,21 @@ theorem records_spread (listed : Records n l) (p q : Nat) :
 /-- **Most prefixes of runs show the weights.** The prefixes of `n` steps whose squared deviation
 is at least `d` weigh, times `d`, at most `n·p·q·(p + q)^n`, out of `(p + q)^n` for all. -/
 theorem records_typical (listed : Records n l) (p q d : Nat) :
-    Typicality.total l (Typicality.offBy p q d) * d ≤ n * (p * q * (p + q) ^ n) :=
+    total l (Typicality.offBy p q d) * d ≤ n * (p * q * (p + q) ^ n) :=
   Eq.subst (motive := fun x => x * d ≤ n * (p * q * (p + q) ^ n))
     (total_listing (courses_records n) listed _) (Typicality.typical p q n d)
 
 /-- **Concentration over the prefixes of runs is exponential.** For every `u ≥ v`, the prefixes of
 `n` steps with at least `k` ones weigh, times `u ^ k · v ^ n`, at most `(p·u + q·v) ^ n · v ^ k`. -/
 theorem records_concentrated (listed : Records n l) (p q k : Nat) {u v : Nat} (le : v ≤ u) :
-    Typicality.total l (Typicality.atLeast p q k) * (u ^ k * v ^ n) ≤ (p * u + q * v) ^ n * v ^ k :=
+    total l (Typicality.atLeast p q k) * (u ^ k * v ^ n) ≤ (p * u + q * v) ^ n * v ^ k :=
   Eq.subst (motive := fun x => x * (u ^ k * v ^ n) ≤ (p * u + q * v) ^ n * v ^ k)
     (total_listing (courses_records n) listed _) (Typicality.concentrated p q k n le)
 
 /-- **Exponentially few runs run far ahead.** Of the `2 ^ n` prefixes of `n` steps, those with at
 least `k` ones number, times `3 ^ k`, at most `4 ^ n`. -/
 theorem records_few_far_ahead (listed : Records n l) (k : Nat) :
-    Typicality.total l (Typicality.atLeast 1 1 k) * 3 ^ k ≤ 4 ^ n :=
+    total l (Typicality.atLeast 1 1 k) * 3 ^ k ≤ 4 ^ n :=
   Eq.subst (motive := fun x => x * 3 ^ k ≤ 4 ^ n)
     (total_listing (courses_records n) listed _) (Typicality.few_far_ahead k n)
 

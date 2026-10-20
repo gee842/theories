@@ -177,13 +177,8 @@ theorem lasts_iff_of_exact {C : Nat → S → Prop} (ladder : Ladder f adm guard
 
 /-! ### Histories -/
 
-/-- A disturbance put before a course of disturbances. -/
-def prepend (a : A) (d : Nat → A) : Nat → A
-  | 0 => a
-  | k + 1 => d k
-
 theorem prepend_admissible {a : A} {d : Nat → A} (admitted : adm a)
-    (admissible : ∀ k, adm (d k)) : ∀ k, adm (prepend a d k)
+    (admissible : ∀ k, adm (d k)) : ∀ k, adm (Settling.consAct a d k)
   | 0 => admitted
   | k + 1 => admissible k
 
@@ -207,8 +202,8 @@ theorem lasts_of_histories {a₀ : A} (h₀ : adm a₀) : ∀ {n : Nat} {s : S},
   | 0, _, every => every (fun _ => a₀) (fun _ => h₀) 0 (Nat.le_refl 0)
   | _ + 1, s, every => And.intro (every (fun _ => a₀) (fun _ => h₀) 0 (Nat.zero_le _))
       (fun a admitted => lasts_of_histories h₀ (fun d admissible k bound =>
-        Eq.mp (congrArg guard (history_shift f s (prepend a d) k))
-          (every (prepend a d) (prepend_admissible admitted admissible) (k + 1)
+        Eq.mp (congrArg guard (history_shift f s (Settling.consAct a d) k))
+          (every (Settling.consAct a d) (prepend_admissible admitted admissible) (k + 1)
             (Nat.succ_le_succ bound))))
 
 /-- **Given one admissible disturbance, a start lasts `n` steps exactly when every admissible
@@ -648,10 +643,10 @@ theorem reaches_of_histories [DecidablePred target] {a₀ : A} (h₀ : adm a₀)
   | _ + 1, s, every =>
     if inside : target s then .inl inside else
     .inr (fun a admitted => reaches_of_histories h₀ (fun d admissible =>
-      match every (prepend a d) (prepend_admissible admitted admissible) with
+      match every (Settling.consAct a d) (prepend_admissible admitted admissible) with
       | ⟨0, _, first⟩ => absurd first inside
       | ⟨k + 1, bound, later⟩ => ⟨k, Nat.le_of_succ_le_succ bound,
-          Eq.mp (congrArg target (history_shift f s (prepend a d) k)) later⟩))
+          Eq.mp (congrArg target (history_shift f s (Settling.consAct a d) k)) later⟩))
 
 /-- **Given one admissible disturbance and a decided target, a start reaches the target within
 `n` steps exactly when every admissible history meets it within its first `n` steps.**

@@ -760,12 +760,6 @@ end Around
 
 namespace Loops
 
-/-- Totals over the steps from `T + 1` are totals over the steps from `T`, shifted. -/
-theorem total_steps_shift (q : Nat → Nat) :
-    ∀ (T N : Nat), total (steps (T + 1) N) q = total (steps T N) fun i => q (i + 1)
-  | _, 0 => rfl
-  | T, N + 1 => congrArg (q (T + 1) + ·) (total_steps_shift q (T + 1) N)
-
 /-- What routes of at most `j` responses can carry, at most, over `t` steps, with starting gaps at
 most `D` and the strengths into each condition summing to at most `M` at each step. -/
 def withinBound (M D : Nat) : Nat → Nat → Nat
@@ -863,7 +857,7 @@ theorem pow_step (b M i : Nat) : b * M ^ (i + 1) = M * (b * M ^ i) :=
 /-- The order sum split at its first term. -/
 theorem orderSum_succ (M j t : Nat) :
     orderSum M (j + 1) t = 1 + total (steps 0 (j + 1)) fun i => binom t (i + 1) * M ^ (i + 1) :=
-  (congrArg (binom t 0 * M ^ 0 + ·) (total_steps_shift _ 0 (j + 1))).trans
+  (congrArg (binom t 0 * M ^ 0 + ·) (total_steps_succ _ 0 (j + 1))).trans
     (congrArg (· * M ^ 0 + _) (binom_zero t))
 
 theorem orderSum_start (M : Nat) : ∀ j, orderSum M j 0 = 1
@@ -1396,7 +1390,7 @@ theorem orderSum_le_poly (M n t : Nat) :
     orderSum M n t ≤ (n + 1) * (1 + M) ^ n * (t + 1) ^ n :=
   Nat.le_trans (total_le _ fun i mem =>
       have le : i ≤ n := Nat.le_of_lt_succ (Nat.lt_of_lt_of_le
-        (Propagation.between_of_mem_steps mem).2 (Nat.le_of_eq (Nat.zero_add _)))
+        (between_of_mem_steps mem).2 (Nat.le_of_eq (Nat.zero_add _)))
       Nat.le_trans (Nat.mul_le_mul (Nat.le_trans (binom_le_pow t i)
           (pow_le_pow_exp (Nat.succ_pos t) le))
         (Nat.le_trans (pow_le_pow_base (Nat.le_add_left M 1) i)

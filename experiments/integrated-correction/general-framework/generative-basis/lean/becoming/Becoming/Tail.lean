@@ -91,9 +91,6 @@ variable {F C : Type}
 
 namespace Tail
 
-/-- Whether a level is above `0`. -/
-def nonzero : Nat → Bool := Witnesses.profile [false] true
-
 theorem eq_zero_of_nonzero_false : ∀ {x : Nat}, nonzero x = false → x = 0
   | 0, _ => rfl
   | _ + 1, no => Bool.noConfusion no
@@ -296,7 +293,7 @@ theorem vanishesFrom_true {α : Nat → Nat} {N : Nat} (yes : vanishesFrom decid
 theorem vanishesFrom_of {α : Nat → Nat} {N : Nat} (zero : ∀ m, N ≤ m → α m = 0) :
     vanishesFrom decides α N = true :=
   @decide_eq_true _ (decides (Tail.levelsFrom α N)) fun n =>
-    (congrArg Tail.nonzero (zero (N + n) (Nat.le_add_right N n)) : _)
+    (congrArg nonzero (zero (N + n) (Nat.le_add_right N n)) : _)
 
 /-- **The levels vanish from no condition on exactly where the rule's answers are all `false`.** -/
 theorem vanishesFrom_never_iff {α : Nat → Nat} :
@@ -473,7 +470,7 @@ theorem raisedFrom_of {α : Nat → Nat} {N : Nat} (zero : ∀ m, N ≤ m → α
     raisedFrom decides α N = false :=
   @decide_eq_false _ (decides (Tail.levelsFrom α N)) fun ⟨n, yes⟩ =>
     Bool.noConfusion
-      ((congrArg Tail.nonzero (zero (N + n) (Nat.le_add_right N n))).symm.trans yes)
+      ((congrArg nonzero (zero (N + n) (Nat.le_add_right N n))).symm.trans yes)
 
 /-- **The limited principle as a rule decides vanishing**, in two passes: whether some level from
 `N` on is above `0`, for each `N`, and whether the answer is no for some `N`. -/

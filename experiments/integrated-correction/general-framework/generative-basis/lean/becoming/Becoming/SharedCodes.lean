@@ -1083,7 +1083,7 @@ theorem nextCohort_of_resolved {rs : List R} {e : M} (h : resolve bears offers r
   rw [h]
 
 /-- **A record of `e` alone resolves the form to `e`.** -/
-theorem resolve_written [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : CrossSituational.Distinct rep)
+theorem resolve_written [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : Distinct rep)
     {e : M} (mem : e ∈ rep) : resolve bears offers rep [writes e] = some e :=
   (resolves_iff distinct).mpr
     ⟨mem, fun _ inr _ => (mem_singleton inr) ▸ (exact e).2.1,
@@ -1091,7 +1091,7 @@ theorem resolve_written [DecidableEq M] (exact : WritesExactly bears offers writ
 
 /-- **A resolution written back rests.** Where the records resolve the form to `e`, every later
 generation's records are the record of `e`. -/
-theorem written_rests [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : CrossSituational.Distinct rep)
+theorem written_rests [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : Distinct rep)
     {rs : List R} {e : M} (h : resolve bears offers rep rs = some e) :
     ∀ n, (Law.run (nextCohort bears offers rep writes) rs).state (n + 1) = [writes e]
   | 0 => nextCohort_of_resolved h
@@ -1102,7 +1102,7 @@ theorem written_rests [DecidableEq M] (exact : WritesExactly bears offers writes
 /-- **The decision locks**: every generation from the first resolution on resolves the form
 alike. -/
 theorem every_cohort_resolves [DecidableEq M] (exact : WritesExactly bears offers writes)
-    (distinct : CrossSituational.Distinct rep) {rs : List R} {e : M} (h : resolve bears offers rep rs = some e) :
+    (distinct : Distinct rep) {rs : List R} {e : M} (h : resolve bears offers rep rs = some e) :
     ∀ n, resolve bears offers rep ((Law.run (nextCohort bears offers rep writes) rs).state n) = some e
   | 0 => h
   | n + 1 => (congrArg (resolve bears offers rep) (written_rests exact distinct h n)).trans
@@ -1137,7 +1137,7 @@ theorem nextCohort_merges {rs rs' : List R} (apart : rs ≠ rs') {e : M}
 
 /-- **Under coverage, the rest is the target**: where every first record bearing on the form
 offers the target, the resolution written back is the target. -/
-theorem covered_rest [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : CrossSituational.Distinct rep)
+theorem covered_rest [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : Distinct rep)
     {rs : List R} {t e : M} (available : t ∈ rep)
     (covered : ∀ r, r ∈ rs → bears r = true → offers r t = true)
     (h : resolve bears offers rep rs = some e) (n : Nat) :
@@ -1148,7 +1148,7 @@ theorem covered_rest [DecidableEq M] (exact : WritesExactly bears offers writes)
 /-- **Under omission, the rest excludes the target for good.** Where the records resolve the form
 to `e` other than `t`, at every later generation `t` is no candidate and `e` is: no later record
 excludes `e` or offers `t`. -/
-theorem omitted_rest [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : CrossSituational.Distinct rep)
+theorem omitted_rest [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : Distinct rep)
     {rs : List R} {t e : M} (ne : t ≠ e) (h : resolve bears offers rep rs = some e) (n : Nat) :
     t ∉ candidates bears offers rep ((Law.run (nextCohort bears offers rep writes) rs).state (n + 1)) ∧
       e ∈ candidates bears offers rep ((Law.run (nextCohort bears offers rep writes) rs).state (n + 1)) :=
@@ -1429,7 +1429,7 @@ theorem exact : WritesExactly (fun _ : Nat => true) offersOne id :=
 
 theorem zero_ne_one : (0 : Nat) ≠ 1 := fun h => Bool.noConfusion (congrArg (fun n => Nat.beq n 0) h)
 
-theorem distinct : CrossSituational.Distinct rep :=
+theorem distinct : Distinct rep :=
   ⟨fun mem => zero_ne_one (CrossSituational.mem_singleton mem), (fun mem => nomatch mem), trivial⟩
 
 /-- Records of the earlier sense resolve the form to it, and written back it rests. -/

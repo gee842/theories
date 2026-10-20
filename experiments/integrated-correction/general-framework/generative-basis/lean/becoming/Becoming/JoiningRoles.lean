@@ -182,8 +182,8 @@ two extended configurations pass the same tests with equally many slots. -/
 theorem retained_pair_matches_of_em (em : ∀ p : Prop, Decided p) {J : Joining F} {K : Joining G}
     (finite' : K.FiniteOutcomes) {xs : List F} {ys : List G}
     (same : SameBranchingTests J.retainedFrame K.retainedFrame xs ys) (slots : xs.length = ys.length)
-    {i j : Nat} {a b z : F} (at_i : slot xs i = some a) (at_j : slot xs j = some b) (joined : J a b z) :
-    ∃ a' b' z', slot ys i = some a' ∧ slot ys j = some b' ∧ K a' b' z' ∧
+    {i j : Nat} {a b z : F} (at_i : Copying.nth xs i = some a) (at_j : Copying.nth xs j = some b) (joined : J a b z) :
+    ∃ a' b' z', Copying.nth ys i = some a' ∧ Copying.nth ys j = some b' ∧ K a' b' z' ∧
       (xs ++ [z]).length = (ys ++ [z']).length ∧
       SameBranchingTests J.retainedFrame K.retainedFrame (xs ++ [z]) (ys ++ [z']) :=
   match SameBranchingTests.step_of_em (a := (i, j)) (t := xs ++ [z]) em finite'.retained_outcomes same

@@ -427,21 +427,9 @@ end Counting
 
 /-! ## Revision of a system of sentences -/
 
-/-- The first `n` sentences, listed. -/
-def upto : Nat → List Nat
-  | 0 => []
-  | n + 1 => n :: upto n
-
 theorem upto_length : ∀ n, (upto n).length = n
   | 0 => rfl
   | n + 1 => congrArg Nat.succ (upto_length n)
-
-theorem mem_upto : ∀ {n i : Nat}, i < n → i ∈ upto n
-  | 0, _, lt => absurd lt (Nat.not_lt_zero _)
-  | n + 1, i, lt => match Nat.lt_or_ge i n with
-    | .inl lt' => .tail n (mem_upto lt')
-    | .inr ge => Eq.subst (motive := fun x => x ∈ n :: upto n)
-        (Nat.le_antisymm (Nat.le_of_lt_succ lt) ge).symm (List.Mem.head (upto n))
 
 /-- A system of sentences: sentence `i` says `sys i`. One revision gives each sentence the value
 of what it says. -/

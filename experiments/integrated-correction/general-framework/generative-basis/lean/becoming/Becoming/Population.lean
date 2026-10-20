@@ -98,12 +98,6 @@ variable {α β : Type}
 
 /-! ## Lists without repetition -/
 
-/-- A list in which no member occurs twice. `Becoming.CrossSituational.Distinct` is the same
-notion for lists in every universe (`Becoming.CrossSituational.distinct_iff`). -/
-def Distinct : List α → Prop
-  | [] => True
-  | a :: as => ¬ a ∈ as ∧ Distinct as
-
 theorem mem_map_of {g : α → β} {a : α} : ∀ {l : List α}, a ∈ l → g a ∈ l.map g
   | _ :: _, .head _ => .head _
   | _ :: _, .tail _ mem => .tail _ (mem_map_of mem)

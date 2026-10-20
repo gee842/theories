@@ -446,7 +446,7 @@ theorem routeSum_eq_carriedWithin {T : Nat} :
     (routeSum_level T (j + 1) τ c).trans
       ((congrArg (_ + ·) (total_congr_on fun s mem => total_congr (fun d =>
           congrArg (responseWeight part k present τ c s d * ·) (routeSum_eq_carriedWithin j s
-            (Nat.le_of_lt (Nat.lt_of_lt_of_le (Propagation.between_of_mem_steps mem).2
+            (Nat.le_of_lt (Nat.lt_of_lt_of_le (between_of_mem_steps mem).2
               (Nat.le_of_eq (Nat.zero_add T)))) d)) cs)).trans
         (carriedFrom_eq_routes (carriedWithin cs part σ k present δ j) τ le c).symm)
 

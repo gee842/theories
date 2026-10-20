@@ -275,7 +275,7 @@ theorem stopped_relay (T : Nat) : (stopped T).ByPassing (passesUntil T) ∧
    fun _ later => (stopped_by_passing T).ends_within (stopped_brief T) (stopped_quiet T) later⟩
 
 /-- Half of the step after an odd one is one more than half of it. -/
-theorem half_odd : ∀ t, odd t = true → Shifts.half (t + 1) = Shifts.half t + 1
+theorem half_odd : ∀ t, odd t = true → Pulse.half (t + 1) = Pulse.half t + 1
   | 0, odd' => (nomatch odd')
   | 1, _ => rfl
   | t + 2, odd' => congrArg (· + 1) (half_odd t ((Shifts.odd_two t).symm.trans odd'))
@@ -283,14 +283,14 @@ theorem half_odd : ∀ t, odd t = true → Shifts.half (t + 1) = Shifts.half t +
 /-- Carriers in shifts: the `n`th carries the pattern at steps `2n` and `2n + 1`. -/
 def shifted : Web Nat Unit where
   level _ _ := 0
-  active t n := Shifts.half t = n
+  active t n := Pulse.half t = n
   requires _ _ _ := False
   need _ _ _ := 0
   draws _ _ _ := False
 
 /-- Across each odd step, the carrier of that shift gives the pattern to the next. -/
 def passesOdd (t b a : Nat) : Prop :=
-  odd t = true ∧ b = Shifts.half t ∧ a = b + 1
+  odd t = true ∧ b = Pulse.half t ∧ a = b + 1
 
 /-- **The bounds of `Web.begins_within` and `Web.ByPassing.passes_within` are attained.**
 Carriers in shifts of two steps, each giving the pattern to the next across an odd step: the
@@ -302,10 +302,10 @@ theorem shifts : shifted.ByPassing passesOdd ∧ (∀ n, shifted.Brief 2 n) ∧
     (∀ t, shifted.Present t) ∧ (∀ t, odd t = false → ¬ shifted.PassesAt passesOdd t) ∧
     ∀ t, odd t = false → ∀ n, ¬ shifted.Arises t n :=
   ⟨fun t _ active => match parity : odd t with
-    | true => .inr ⟨Shifts.half t, rfl, parity, rfl, active.symm.trans (half_odd t parity)⟩
+    | true => .inr ⟨Pulse.half t, rfl, parity, rfl, active.symm.trans (half_odd t parity)⟩
     | false => .inl ((Shifts.half_even t parity).symm.trans active),
-   fun _ t now later => Nat.succ_ne_self (Shifts.half t) (later.trans now.symm),
-   fun t => ⟨Shifts.half t, rfl⟩,
+   fun _ t now later => Nat.succ_ne_self (Pulse.half t) (later.trans now.symm),
+   fun t => ⟨Pulse.half t, rfl⟩,
    ⟨fun _ even ⟨_, _, _, ⟨odd', _⟩, _⟩ => (nomatch even.symm.trans odd'),
    fun t even _ arises => arises.1 ((Shifts.half_even t even).symm.trans arises.2)⟩⟩
 

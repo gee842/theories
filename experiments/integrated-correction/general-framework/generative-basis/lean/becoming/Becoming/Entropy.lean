@@ -568,11 +568,6 @@ with its record conserves exactly (`Flow.GainlessOn.residues_lost`). -/
 def dissipated (L : Flow F C) (cs : List C) (T N : Nat) : Nat :=
   total (steps T N) (L.lost cs)
 
-/-- Of two numbers, the first exceeds the second by nothing where it is at most the
-second. -/
-theorem excess_zero_of_le {a b : Nat} (le : a ≤ b) : excess a b = 0 :=
-  eq_zero_of_not_pos fun pos => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le (excess_pos.mp pos) le)
-
 /-- Gaining nothing, the family gets back at most what is taken from it. -/
 theorem GainlessOn.replenishment_le (gainless : L.GainlessOn cs t) :
     L.replenishment cs t ≤ L.uptake cs t :=
@@ -832,11 +827,6 @@ def configurations : Nat → Nat → List (List Nat)
   | 0, _ + 1 => []
   | n + 1, K => EntropyLists.joinMap (splits K) fun p => (configurations n p.2).map (p.1 :: ·)
 
-/-- The numbers from `K` down to zero. -/
-def downFrom : Nat → List Nat
-  | 0 => [0]
-  | K + 1 => (K + 1) :: downFrom K
-
 /-- The configurations of `n` amounts totalling at most `K`. -/
 def configurationsWithin (n K : Nat) : List (List Nat) :=
   EntropyLists.joinMap (downFrom K) (configurations n)
@@ -860,13 +850,6 @@ theorem mem_configurations : ∀ l : List Nat, l ∈ configurations l.length (to
   | [] => .head _
   | a :: l => EntropyLists.mem_joinMap (mem_splits a (total l fun x => x))
       (mem_map_of (g := (a :: ·)) (mem_configurations l))
-
-theorem mem_downFrom : ∀ {k K : Nat}, k ≤ K → k ∈ downFrom K
-  | _, 0, le => Eq.subst (motive := fun k => k ∈ downFrom 0) (Nat.eq_zero_of_le_zero le).symm
-      (.head _)
-  | _, K + 1, le => match Nat.eq_or_lt_of_le le with
-    | .inl same => Eq.subst (motive := fun x => x ∈ downFrom (K + 1)) same.symm (.head _)
-    | .inr lt => .tail _ (mem_downFrom (Nat.le_of_lt_succ lt))
 
 theorem mem_configurationsWithin {l : List Nat} {K : Nat} (le : total l (fun x => x) ≤ K) :
     l ∈ configurationsWithin l.length K :=
@@ -983,12 +966,6 @@ members in six. -/
 theorem configurations_examples :
     (configurations 2 3).length = 4 ∧ (configurations 3 2).length = 6 :=
   ⟨rfl, rfl⟩
-
-theorem le_of_mem_downFrom : ∀ {K k : Nat}, k ∈ downFrom K → k ≤ K
-  | 0, _, .head _ => Nat.le_refl 0
-  | 0, _, .tail _ no => nomatch no
-  | _ + 1, _, .head _ => Nat.le_refl _
-  | _ + 1, _, .tail _ mem => Nat.le_succ_of_le (le_of_mem_downFrom mem)
 
 theorem distinct_downFrom : ∀ K, Distinct (downFrom K)
   | 0 => ⟨fun no => (nomatch no), trivial⟩

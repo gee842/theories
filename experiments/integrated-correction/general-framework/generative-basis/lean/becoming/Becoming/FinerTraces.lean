@@ -57,17 +57,11 @@ theorem of_mem_joinMap {g : α → List β} {b : β} :
 
 end Lists
 
-theorem lt_of_mem_upto : ∀ {n k : Nat}, k ∈ upto n → k < n
+theorem lt_of_mem_upto : ∀ {n k : Nat}, k ∈ Undecided.upto n → k < n
   | 0, _, mem => nomatch mem
   | n + 1, _, mem => match ListTests.mem_cons_iff.mp mem with
     | .inl same => Eq.subst (motive := fun x => x < n + 1) same.symm (Nat.lt_succ_self n)
     | .inr rest => Nat.lt_trans (lt_of_mem_upto rest) (Nat.lt_succ_self n)
-
-theorem mem_upto : ∀ {n k : Nat}, k < n → k ∈ upto n
-  | 0, _, lt => absurd lt (Nat.not_lt_zero _)
-  | n + 1, k, lt => match Nat.decEq k n with
-    | isTrue same => Eq.subst (motive := fun x => x ∈ upto (n + 1)) same.symm (.head (upto n))
-    | isFalse other => .tail n (mem_upto (Nat.lt_of_le_of_ne (Nat.le_of_lt_succ lt) other))
 
 section Finer
 
@@ -95,8 +89,8 @@ theorem of_mem_finerSteps {weight : S → A → S → Nat} {moves : List A} {all
 theorem mem_finerSteps {weight : S → A → S → Nat} {moves : List A} {all : List S} {s : S}
     {x : A × S × Nat} (move : x.1 ∈ moves) (reached : x.2.1 ∈ all)
     (within : x.2.2 < weight s x.1 x.2.1) : x ∈ finerSteps weight moves all s :=
-  mem_joinMap (fun p => (upto (weight s p.1 p.2)).map fun k => (p.1, p.2, k))
-    (mem_mapped (fun k => (x.1, x.2.1, k)) (mem_upto within)) (mem_openSteps move reached)
+  mem_joinMap (fun p => (Undecided.upto (weight s p.1 p.2)).map fun k => (p.1, p.2, k))
+    (mem_mapped (fun k => (x.1, x.2.1, k)) (Undecided.mem_upto within)) (mem_openSteps move reached)
 
 /-- **The finer courses are the finer law's traces.** A list of situations is a finer course of
 `n` steps from `s` exactly where it has `n` steps, is a trace of the finer law from `s`, and takes

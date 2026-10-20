@@ -102,17 +102,6 @@ theorem Strict.comp {σ τ : Nat → Nat} (strict : Strict σ) (strict' : Strict
 def span (σ : Nat → Nat) (s : Nat) : List Nat :=
   steps (σ s) (σ (s + 1) - σ s)
 
-/-- A member of a stretch of steps lies between its ends. -/
-theorem between_of_mem_steps : ∀ {T N j : Nat}, j ∈ steps T N → T ≤ j ∧ j < T + N
-  | _, 0, _, mem => nomatch mem
-  | T, N + 1, _, mem => match mem_cons_cases mem with
-    | .inl same => ⟨Nat.le_of_eq same.symm,
-        Eq.subst (motive := fun x => x < T + (N + 1)) same.symm
-          (Nat.lt_add_of_pos_right (Nat.succ_pos N))⟩
-    | .inr mem => match between_of_mem_steps mem with
-      | ⟨le, lt⟩ => ⟨Nat.le_of_succ_le le,
-          Nat.lt_of_lt_of_le lt (Nat.le_of_eq (Nat.add_right_comm T 1 N))⟩
-
 theorem mem_span {σ : Nat → Nat} (strict : Strict σ) {s j : Nat} (mem : j ∈ span σ s) :
     σ s ≤ j ∧ j < σ (s + 1) :=
   match between_of_mem_steps mem with

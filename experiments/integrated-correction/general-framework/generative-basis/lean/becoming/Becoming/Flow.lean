@@ -85,11 +85,6 @@ def sign : Nat → Nat := Witnesses.profile [0] 1
 def count {α : Type} (as : List α) (q : α → Nat) : Nat :=
   total as fun a => sign (q a)
 
-/-- The steps `T`, `T + 1`, …, `T + N - 1`. -/
-def steps : Nat → Nat → List Nat
-  | _, 0 => []
-  | T, N + 1 => T :: steps (T + 1) N
-
 section Totals
 
 variable {α β : Type}

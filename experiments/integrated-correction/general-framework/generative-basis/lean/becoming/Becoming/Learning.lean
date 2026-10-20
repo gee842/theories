@@ -162,21 +162,15 @@ theorem prefix_congr {o o' : Nat → O} : ∀ {t : Nat}, (∀ n, n < t → o n =
       congr (congrArg List.cons (same t (Nat.lt_succ_self t)))
         (prefix_congr fun n lt => same n (Nat.lt_trans lt (Nat.lt_succ_self t)))
 
-/-- The value `k + 1` steps back in a prefix, latest first. -/
-def back : List O → Nat → Option O
-  | [], _ => none
-  | v :: _, 0 => some v
-  | _ :: l, k + 1 => back l k
-
 /-- In the prefix before `u + k + 1`, the value `k + 1` steps back is the value at `u`. -/
-theorem back_prefix (o : Nat → O) (u : Nat) : ∀ k, back (prefixOf o (u + k + 1)) k = some (o u)
+theorem back_prefix (o : Nat → O) (u : Nat) : ∀ k, Copying.nth (prefixOf o (u + k + 1)) k = some (o u)
   | 0 => rfl
   | k + 1 => back_prefix o u k
 
 /-- Before `t`, every value `k + 1 ≤ t` steps back is in the prefix. -/
-theorem back_made (o : Nat → O) {k t : Nat} (within : k < t) : ∃ v, back (prefixOf o t) k = some v :=
+theorem back_made (o : Nat → O) {k t : Nat} (within : k < t) : ∃ v, Copying.nth (prefixOf o t) k = some v :=
   let ⟨d, at_t⟩ := gap_of_lt within
-  ⟨o d, (congrArg (fun n => back (prefixOf o n) k)
+  ⟨o d, (congrArg (fun n => Copying.nth (prefixOf o n) k)
     (at_t.trans (congrArg Nat.succ (Nat.add_comm k d)))).trans (back_prefix o d k)⟩
 
 /-- A proposal, made or not (silence), misses a value: a value was proposed and the value that
@@ -509,21 +503,6 @@ theorem lasso_of_held {S : Type v} {next : S → S} {s : S} {l : List S}
               ((Law.orbit_add next s i d).symm.trans
                 (congrArg (Law.orbit next s) at_u.symm))))))⟩
 
-/-- The positions `0, …, m`. -/
-def upto : Nat → List Nat
-  | 0 => [0]
-  | m + 1 => (m + 1) :: upto m
-
-theorem mem_upto : ∀ {m n : Nat}, n ≤ m → n ∈ upto m
-  | 0, n, le =>
-    Eq.subst (motive := fun k => k ∈ upto 0) (Nat.le_antisymm (Nat.zero_le n) le)
-      (List.Mem.head [])
-  | m + 1, _, le =>
-    match le_succ_cases le with
-    | .inl le' => List.Mem.tail (m + 1) (mem_upto le')
-    | .inr at_top => Eq.subst (motive := fun k => k ∈ upto (m + 1)) at_top.symm
-        (List.Mem.head (upto m))
-
 /-- The law of a lasso world: positions `0, …, i + q`, each going to the next, the last to `i`. -/
 def lassoNext (i q : Nat) (n : Nat) : Nat := if n < i + q then n + 1 else i
 
@@ -558,9 +537,9 @@ theorem lasso_positions {o : Nat → O} {i q : Nat} (lasso : Lasso o i q) :
 `0, …, i + q` is held by the list of its positions and, read through `o`, takes the values of
 `o` at every step. -/
 theorem lasso_realized {o : Nat → O} {i q : Nat} (lasso : Lasso o i q) :
-    (∀ n, Law.orbit (lassoNext i q) 0 n ∈ upto (i + q)) ∧
+    (∀ n, Law.orbit (lassoNext i q) 0 n ∈ downFrom (i + q)) ∧
       ∀ n, o (Law.orbit (lassoNext i q) 0 n) = o n :=
-  ⟨fun n => mem_upto (lasso_positions lasso n).1, fun n => (lasso_positions lasso n).2 0⟩
+  ⟨fun n => mem_downFrom (lasso_positions lasso n).1, fun n => (lasso_positions lasso n).2 0⟩
 
 /-- A course held at one value from step `t` on repeats from `t` with period `1`. -/
 theorem holdFrom_lasso (o : Nat → O) (t : Nat) (x : O) : Lasso (holdFrom o t x) t 0 :=
@@ -582,10 +561,10 @@ theorem no_prefix_fixes_next_finite (pred : List O → Option O) (o : Nat → O)
 /-- The lasso candidate `h = (i, q)`: at a step `t` with `i + q + 1 ≤ t` it proposes the value
 `q + 1` steps back; before, it stays silent. -/
 def lasso (h : Nat × Nat) (l : List O) : Option O :=
-  if h.1 + h.2 + 1 ≤ l.length then back l h.2 else none
+  if h.1 + h.2 + 1 ≤ l.length then Copying.nth l h.2 else none
 
 theorem lasso_claims {o : Nat → O} {h : Nat × Nat} {t : Nat} (within : h.1 + h.2 + 1 ≤ t) :
-    lasso h (prefixOf o t) = back (prefixOf o t) h.2 :=
+    lasso h (prefixOf o t) = Copying.nth (prefixOf o t) h.2 :=
   if_pos (Eq.subst (motive := fun n => h.1 + h.2 + 1 ≤ n) (prefix_length o t).symm within)
 
 theorem lasso_silent {o : Nat → O} {h : Nat × Nat} {t : Nat} (early : t < h.1 + h.2 + 1) :
@@ -605,7 +584,7 @@ theorem lasso_accords {o : Nat → O} {i q : Nat} (repeats : Lasso o i q) : Acco
           (congrArg Nat.succ (Nat.add_right_comm i q d)))
       have value : lasso (i, q) (prefixOf o t) = some (o (i + d)) :=
         (lasso_claims (o := o) (h := (i, q)) within).trans
-          ((congrArg (fun n => back (prefixOf o n) q) at_t').trans (back_prefix o (i + d) q))
+          ((congrArg (fun n => Copying.nth (prefixOf o n) q) at_t').trans (back_prefix o (i + d) q))
       differs ((Option.some.inj (claims.symm.trans value)).trans
         ((repeats (i + d) (Nat.le_add_right i d)).symm.trans (congrArg o at_t'.symm)))
 
@@ -1134,7 +1113,7 @@ theorem rests : ∀ t, 3 ≤ t → byElimination lassos (prefixOf course t) = so
     have at_t' : t = d + 1 + 1 := at_t.trans (Nat.add_comm 2 d)
     (congrArg (fun n => lasso (pairAt n) (prefixOf course t)) held).trans
       ((lasso_claims (h := (0, 1)) (Nat.le_trans (Nat.le_succ 2) later)).trans
-        ((congrArg (fun n => back (prefixOf course n) 1) at_t').trans
+        ((congrArg (fun n => Copying.nth (prefixOf course n) 1) at_t').trans
           ((back_prefix course d 1).trans
             (congrArg some ((repeats d (Nat.zero_le d)).symm.trans
               (congrArg course at_t'.symm))))))

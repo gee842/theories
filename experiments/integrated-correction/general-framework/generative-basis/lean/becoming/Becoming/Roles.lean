@@ -1582,4 +1582,14 @@ theorem flicker : flow.Balances web ∧ flow.Dissipative ∧ web.Unceasing ∧
 
 end Flicker
 
+namespace Shuttle
+
+/-- The holder stands at nothing after its step. -/
+theorem next_off : ∀ t, stands (holder t) (t + 1) = 0
+  | 0 => rfl
+  | 1 => rfl
+  | t + 2 => (stands_two (holder t) (t + 1)).trans (next_off t)
+
+end Shuttle
+
 end Becoming

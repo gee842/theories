@@ -49,13 +49,6 @@ section Lists
 
 variable {M : Type v}
 
-/-- No meaning occurs twice. This is `Becoming.Distinct` of `Becoming.Population`, stated here for
-lists in every universe because this module imports only `Becoming.Segmentation`; the two agree
-on every list in `Type` (`Becoming.CrossSituational.distinct_iff`, in `Becoming.Courses`). -/
-def Distinct : List M → Prop
-  | [] => True
-  | m :: ms => ¬ m ∈ ms ∧ Distinct ms
-
 /-- Exactly one element: the resolution of a list of candidates. -/
 def unique : List M → Option M
   | [] => none

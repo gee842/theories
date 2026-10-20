@@ -97,11 +97,6 @@ def courses : Nat → List (List Bool)
   | 0 => [[]]
   | n + 1 => extend (courses n)
 
-/-- The sum of `f` over a list of courses. -/
-def total : List (List Bool) → (List Bool → Nat) → Nat
-  | [], _ => 0
-  | w :: ws, f => f w + total ws f
-
 theorem mem_extend_true {w : List Bool} : ∀ {ws : List (List Bool)}, w ∈ ws →
     (true :: w) ∈ extend ws ∧ (false :: w) ∈ extend ws
   | _ :: _, .head _ => ⟨.head _, .tail _ (.head _)⟩

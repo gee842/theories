@@ -1,0 +1,129 @@
+{
+ "rows": [
+  {
+   "old": "Becoming.CrossSituational.Distinct",
+   "new": "Becoming.Distinct",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Typicality.total",
+   "new": "Becoming.total",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Tail.nonzero",
+   "new": "Becoming.nonzero",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Situations.upto",
+   "new": "Becoming.Undecided.upto",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.skip",
+   "new": "Becoming.skipAt",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.DistinctBy",
+   "new": "Becoming.DistinctUnder",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Hexagram.memberAt",
+   "new": "Becoming.Law.memberAt",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Joining.slot",
+   "new": "Becoming.Copying.nth",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Learning.back",
+   "new": "Becoming.Copying.nth",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Shifts.half",
+   "new": "Becoming.Pulse.half",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.CouplingTraces.consSeq",
+   "new": "Becoming.Settling.consAct",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Lasting.prepend",
+   "new": "Becoming.Settling.consAct",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Frequency.SelfLoop.onset_amount",
+   "new": "Becoming.Closing.Onset.amount_after",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.TypicalRuns.sum_one",
+   "new": "Becoming.Situations.sum_one",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Courses.counting_sum_one",
+   "new": "Becoming.Situations.sum_one",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Exposed.holder_after",
+   "new": "Becoming.Shuttle.next_off",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.OneStep.Chain.excess_of_le",
+   "new": "Becoming.Flow.excess_zero_of_le",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.HistorySums.nonzero_of_le",
+   "new": "Becoming.RouteTraces.nonzero_of_le",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Loops.total_steps_shift",
+   "new": "Becoming.total_steps_succ",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.total_steps_split",
+   "new": "Becoming.total_steps_add",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.LossMatching.distinct_map_on",
+   "new": "Becoming.distinct_map_on",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.LossMatching.not_mem_middle",
+   "new": "Becoming.not_mem_of_middle",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.distinct_append_apart",
+   "new": "Becoming.distinct_append",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.Net.distinct_append'",
+   "new": "Becoming.distinct_append",
+   "why": "R37 B6: the same definition or statement, one name"
+  },
+  {
+   "old": "Becoming.SituationTraces.distinct_append",
+   "new": "Becoming.distinct_append",
+   "why": "R37 B6: the same definition or statement, one name"
+  }
+ ]
+}

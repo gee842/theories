@@ -1084,14 +1084,6 @@ end Footprinted
 
 section Census
 
-theorem distinct_append_apart {α : Type} : ∀ {l m : List α}, Distinct l → Distinct m →
-    (∀ a, a ∈ l → ¬ a ∈ m) → Distinct (l ++ m)
-  | [], _, _, distinct, _ => distinct
-  | b :: _, _, ⟨fresh, distinct⟩, distinct', apart => ⟨fun mem => match mem_append_cases mem with
-      | .inl here => fresh here
-      | .inr there => apart b (.head _) there,
-    distinct_append_apart distinct distinct' fun a mem => apart a (.tail _ mem)⟩
-
 /-- A listing with the listing at the step after `t` replaced by the first side of the listing at
 `a` and the other side of the listing at `b`. -/
 def spliceAt {α : Type} (l : Nat → List α) (t : Nat) (side : α → Bool) (a b : Nat) (n : Nat) :
@@ -1111,7 +1103,7 @@ theorem listed_splice {α : Type} {p p' : α → Nat → Prop} {l : Nat → List
     Eq.subst (motive := fun k => Distinct (spliceAt l t side a b k) ∧
         ∀ x, p' x k ↔ x ∈ spliceAt l t side a b k) here.symm
       (Eq.subst (motive := fun q => Distinct q ∧ ∀ x, p' x (t + 1) ↔ x ∈ q) (if_pos rfl).symm
-        ⟨distinct_append_apart (keep_distinct (listed a).1) (keep_distinct (listed b).1)
+        ⟨distinct_append (keep_distinct (listed a).1) (keep_distinct (listed b).1)
            fun _ here there => Bool.noConfusion ((mem_keep.mp here).2.symm.trans (mem_keep.mp there).2),
          fun x => ⟨fun holds => match (mix x).mp holds with
              | .inl ⟨yes, at_a⟩ => mem_append_of_left _ (mem_keep.mpr ⟨((listed a).2 x).mp at_a, yes⟩)

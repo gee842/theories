@@ -185,13 +185,6 @@ theorem of_listsOnce {B : Prop} {l : List α} (decided : IdentityDecided l)
 
 /-! ## Sums and counts once per member -/
 
-/-- In a list without repetition, a member standing in the middle stands nowhere else. -/
-theorem not_mem_of_middle {a : α} : ∀ {p q : List α}, Distinct (p ++ a :: q) → ¬ a ∈ p ++ q
-  | [], _, ⟨fresh, _⟩, mem => fresh mem
-  | _ :: p, q, ⟨fresh, distinct⟩, mem => match mem_cons_cases mem with
-    | .inl ax => fresh (Eq.subst (motive := fun y => y ∈ p ++ a :: q) ax (mem_middle p))
-    | .inr mem => not_mem_of_middle distinct mem
-
 /-- **Sums once per member are one number**: two lists without repetition with the same
 members have the same total of any quantity. -/
 theorem total_eq_of_same {q : α → Nat} : ∀ {s s' : List α}, Distinct s → Distinct s' →
@@ -617,15 +610,10 @@ theorem repeated_same (a : α) : (∀ x, x ∈ [a, a] ↔ x ∈ [a]) ∧ [a].len
 
 /-! ### Identity read through relations -/
 
-/-- No two members of a list are related by `R`. -/
-def DistinctBy (R : α → α → Prop) : List α → Prop
-  | [] => True
-  | a :: as => (∀ b, b ∈ as → ¬ R a b) ∧ DistinctBy R as
-
 /-- `s` lists the members of `l` once up to `R`: no two of its members are related, each member
 of `l` is related to one of its members, and each of its members to a member of `l`. -/
 def ListsOnceBy (R : α → α → Prop) (s l : List α) : Prop :=
-  DistinctBy R s ∧ (∀ a, a ∈ l → ∃ b, b ∈ s ∧ R a b) ∧ ∀ b, b ∈ s → ∃ a, a ∈ l ∧ R b a
+  DistinctUnder R s ∧ (∀ a, a ∈ l → ∃ b, b ∈ s ∧ R a b) ∧ ∀ b, b ∈ s → ∃ a, a ∈ l ∧ R b a
 
 /-- `n` numbers the relata `l` holds, read up to `R`. -/
 def NumbersBy (R : α → α → Prop) (l : List α) (n : Nat) : Prop :=
@@ -636,7 +624,7 @@ section Likeness
 variable {R : α → α → Prop}
 
 /-- A list no two of whose members are alike decides likeness among them. -/
-theorem DistinctBy.decided (like : Equivalence R) : ∀ {s : List α}, DistinctBy R s →
+theorem DistinctUnder.decided (like : Equivalence R) : ∀ {s : List α}, DistinctUnder R s →
     ∀ a b, a ∈ s → b ∈ s → Decided (R a b)
   | [], _, _, _, mem, _ => nomatch mem
   | _ :: _, ⟨fresh, distinct⟩, a, b, ma, mb => match mem_cons_cases ma, mem_cons_cases mb with
@@ -646,10 +634,10 @@ theorem DistinctBy.decided (like : Equivalence R) : ∀ {s : List α}, DistinctB
       .inr fun related => fresh b mb' (Eq.subst (motive := fun y => R y b) ha related)
     | .inr ma', .inl hb =>
       .inr fun related => fresh a ma' (like.symm (Eq.subst (motive := fun y => R a y) hb related))
-    | .inr ma', .inr mb' => DistinctBy.decided like distinct a b ma' mb'
+    | .inr ma', .inr mb' => DistinctUnder.decided like distinct a b ma' mb'
 
 /-- Two alike members of a list no two of whose members are alike stand at one place. -/
-theorem DistinctBy.eq_of (like : Equivalence R) : ∀ {s : List α}, DistinctBy R s →
+theorem DistinctUnder.eq_of (like : Equivalence R) : ∀ {s : List α}, DistinctUnder R s →
     ∀ a b, a ∈ s → b ∈ s → R a b → a = b
   | [], _, _, _, mem, _, _ => nomatch mem
   | _ :: _, ⟨fresh, distinct⟩, a, b, ma, mb, related =>
@@ -658,13 +646,13 @@ theorem DistinctBy.eq_of (like : Equivalence R) : ∀ {s : List α}, DistinctBy 
     | .inl ha, .inr mb' => absurd (Eq.subst (motive := fun y => R y b) ha related) (fresh b mb')
     | .inr ma', .inl hb =>
       absurd (like.symm (Eq.subst (motive := fun y => R a y) hb related)) (fresh a ma')
-    | .inr ma', .inr mb' => DistinctBy.eq_of like distinct a b ma' mb' related
+    | .inr ma', .inr mb' => DistinctUnder.eq_of like distinct a b ma' mb' related
 
 /-- A list no two of whose members are alike is without repetition. -/
-theorem DistinctBy.distinct (like : Equivalence R) : ∀ {s : List α}, DistinctBy R s → Distinct s
+theorem DistinctUnder.distinct (like : Equivalence R) : ∀ {s : List α}, DistinctUnder R s → Distinct s
   | [], _ => trivial
   | a :: _, ⟨fresh, distinct⟩ =>
-    ⟨fun mem => fresh a mem (like.refl a), DistinctBy.distinct like distinct⟩
+    ⟨fun mem => fresh a mem (like.refl a), DistinctUnder.distinct like distinct⟩
 
 /-- A list listing another once up to likeness decides likeness among the other's members. -/
 theorem ListsOnceBy.decided (like : Equivalence R) {s l : List α} (lists : ListsOnceBy R s l) :
@@ -726,7 +714,7 @@ theorem numbersBy_iff_decided (like : Equivalence R) {l : List α} :
 end Likeness
 
 /-- Listing once up to identity of names is listing without repetition. -/
-theorem distinctBy_eq_iff : ∀ {s : List α}, DistinctBy Eq s ↔ Distinct s
+theorem distinctBy_eq_iff : ∀ {s : List α}, DistinctUnder Eq s ↔ Distinct s
   | [] => Iff.rfl
   | a :: s =>
     ⟨fun ⟨fresh, rest⟩ => ⟨fun mem => fresh a mem rfl, (distinctBy_eq_iff (s := s)).mp rest⟩,

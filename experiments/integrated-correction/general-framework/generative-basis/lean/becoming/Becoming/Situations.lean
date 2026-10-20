@@ -78,24 +78,12 @@ universe u v
 
 /-! ## Counting the first `k` numbers -/
 
-/-- The first `k` numbers, the last first. -/
-def upto : Nat → List Nat
-  | 0 => []
-  | k + 1 => k :: upto k
-
 /-- A reading constant over the first `k` numbers sums to `k` times it. -/
-theorem sum_upto (c : Nat) : ∀ k, counting.sum (upto k) (fun _ => c) = k * c
+theorem sum_upto (c : Nat) : ∀ k, counting.sum (Undecided.upto k) (fun _ => c) = k * c
   | 0 => (Nat.zero_mul c).symm
   | k + 1 => by
-    show c + counting.sum (upto k) (fun _ => c) = (k + 1) * c
+    show c + counting.sum (Undecided.upto k) (fun _ => c) = (k + 1) * c
     rw [sum_upto c k, Nat.succ_mul, Nat.add_comm]
-
-/-- Counting ones over a list gives its length. -/
-theorem sum_one {α : Type u} : ∀ l : List α, counting.sum l (fun _ => 1) = l.length
-  | [] => rfl
-  | _ :: l => by
-    show 1 + counting.sum l (fun _ => 1) = l.length + 1
-    rw [sum_one l, Nat.add_comm]
 
 /-! ## The law with the situation as the move -/
 
@@ -122,7 +110,7 @@ theorem finerLaw_step_iff (weight : S → A → S → Nat) {s m : S} {a : A} :
 `weight s a m` situations taking it. -/
 def finerSteps (weight : S → A → S → Nat) (moves : List A) (all : List S) (s : S) :
     List (A × S × Nat) :=
-  joinMap (fun p => (upto (weight s p.1 p.2)).map fun k => (p.1, p.2, k)) (openSteps moves all)
+  joinMap (fun p => (Undecided.upto (weight s p.1 p.2)).map fun k => (p.1, p.2, k)) (openSteps moves all)
 
 /-- The finer courses of `n` steps from `s`: every sequence of situations, each taken from where
 the one before leads. -/
@@ -157,7 +145,7 @@ theorem sum_finer (weight : S → A → S → Nat) (moves : List A) (all : List 
       fun x => (Weights.sum_map _ _ _).trans
         (sum_finer weight moves all n x.2.1 fun c => g ((x.1, x.2.1) :: c))
     have each : ∀ p : A × S,
-        counting.sum ((upto (weight s p.1 p.2)).map fun k => (p.1, p.2, k))
+        counting.sum ((Undecided.upto (weight s p.1 p.2)).map fun k => (p.1, p.2, k))
             (fun x => counting.sum (courses moves all n)
               (fun c => counting.along weight (fun _ => 1) x.2.1 c * g ((x.1, x.2.1) :: c))) =
           counting.sum (courses moves all n)
@@ -194,20 +182,20 @@ end Finer
 over the histories of `n` steps is summing it over the courses of `n` steps. -/
 theorem sum_courses_values (F : List Bool → Nat) : ∀ n,
     counting.sum (Becoming.courses [()] [true, false] n) (fun c => F (c.map Prod.snd)) =
-      Typicality.total (Typicality.courses n) F
+      total (Typicality.courses n) F
   | 0 => rfl
   | n + 1 =>
     have each : ∀ b : Bool,
         counting.sum ((Becoming.courses [()] [true, false] n).map fun h => ((), b) :: h)
             (fun c => F (c.map Prod.snd)) =
-          Typicality.total (Typicality.courses n) (fun w => F (b :: w)) :=
+          total (Typicality.courses n) (fun w => F (b :: w)) :=
       fun b => (Weights.sum_map _ _ _).trans (sum_courses_values (fun w => F (b :: w)) n)
     (Weights.sum_joinMap _ _ _).trans <| by
       show counting.sum ((Becoming.courses [()] [true, false] n).map fun h => ((), true) :: h)
             (fun c => F (c.map Prod.snd)) +
           (counting.sum ((Becoming.courses [()] [true, false] n).map fun h => ((), false) :: h)
             (fun c => F (c.map Prod.snd)) + 0) =
-        Typicality.total (Typicality.extend (Typicality.courses n)) F
+        total (Typicality.extend (Typicality.courses n)) F
       rw [each true, each false, Nat.add_zero, Typicality.total_extend, Typicality.total_add]
 
 /-- **There are `(p + q) ^ n` finer courses of `n` steps.** With `p` situations for one value
@@ -225,7 +213,7 @@ theorem mul_indicator (x : Nat) (c : Prop) [Decidable c] :
 /-- Each course of `n` steps occurs once among the courses: a reading kept at `w` alone sums
 to its value at `w`. -/
 theorem total_only (f : List Bool → Nat) : ∀ (n : Nat) (w : List Bool), w.length = n →
-    Typicality.total (Typicality.courses n) (fun v => if v = w then f v else 0) = f w
+    total (Typicality.courses n) (fun v => if v = w then f v else 0) = f w
   | 0, [], _ => by
     show (if ([] : List Bool) = [] then f [] else 0) + 0 = f []
     rw [if_pos rfl, Nat.add_zero]
@@ -246,7 +234,7 @@ theorem total_only (f : List Bool → Nat) : ∀ (n : Nat) (w : List Bool), w.le
       else by
         rw [if_neg (fun e => here (List.cons.inj e).2), if_neg (fun e => here (List.cons.inj e).2),
           if_neg here]
-    show Typicality.total (Typicality.extend (Typicality.courses n)) _ = _
+    show total (Typicality.extend (Typicality.courses n)) _ = _
     rw [Typicality.total_extend, Typicality.total_congr same]
     exact total_only (fun v => f (b :: v)) n w (Nat.succ.inj len)
 
@@ -280,7 +268,7 @@ theorem situations_typical (p q n d : Nat) (s : Bool) :
         (fun h => far p q d ((coarse h).map Prod.snd)) * d ≤ n * (p * q * (p + q) ^ n) := by
   have count : counting.sum (finer (Typicality.stepWeight p q) [()] [true, false] n s)
         (fun h => far p q d ((coarse h).map Prod.snd)) =
-      Typicality.total (Typicality.courses n) (Typicality.offBy p q d) :=
+      total (Typicality.courses n) (Typicality.offBy p q d) :=
     (sum_finer _ _ _ n s fun c => far p q d (c.map Prod.snd)).trans <|
       (Weights.sum_congr _ fun c _ =>
         congrArg (· * far p q d (c.map Prod.snd)) (Typicality.along_weight p q s c)).trans <|
@@ -360,7 +348,7 @@ theorem sum_event (vals : List V) (wt : V → Nat) (event : V → Bool) : ∀ (n
     (F : List Bool → Nat),
     counting.sum (Becoming.courses [()] vals n)
         (fun c => counting.along (valueWeight wt) (fun _ => 1) s c * F (seen event c)) =
-      Typicality.total (Typicality.courses n)
+      total (Typicality.courses n)
         (fun w => Typicality.weight (inside vals wt event) (outside vals wt event) w * F w)
   | 0, _, F => by
     show 1 * F [] + 0 = 1 * F [] + 0
@@ -369,7 +357,7 @@ theorem sum_event (vals : List V) (wt : V → Nat) (event : V → Bool) : ∀ (n
     have each : ∀ v : V,
         counting.sum ((Becoming.courses [()] vals n).map fun h => ((), v) :: h)
             (fun c => counting.along (valueWeight wt) (fun _ => 1) s c * F (seen event c)) =
-          wt v * Typicality.total (Typicality.courses n)
+          wt v * total (Typicality.courses n)
             (fun w => Typicality.weight (inside vals wt event) (outside vals wt event) w *
               F (event v :: w)) :=
       fun v => (Weights.sum_map _ _ _).trans <|
@@ -383,10 +371,10 @@ theorem sum_event (vals : List V) (wt : V → Nat) (event : V → Bool) : ∀ (n
     (Weights.sum_joinMap _ _ _).trans <|
       (steps _).trans <|
       (Weights.sum_congr _ fun v _ => each v).trans <|
-      (sum_split wt event (fun b => Typicality.total (Typicality.courses n)
+      (sum_split wt event (fun b => total (Typicality.courses n)
         (fun w => Typicality.weight (inside vals wt event) (outside vals wt event) w *
           F (b :: w))) vals).trans <| by
-      show _ = Typicality.total (Typicality.extend (Typicality.courses n)) _
+      show _ = total (Typicality.extend (Typicality.courses n)) _
       rw [Typicality.total_extend, Typicality.total_add, ← Typicality.total_mul,
         ← Typicality.total_mul]
       exact congr (congrArg _ (Typicality.total_congr (fun w => (mul_assoc_nat _ _ _).symm) _))
@@ -403,7 +391,7 @@ theorem event_typical (vals : List V) (wt : V → Nat) (event : V → Bool) (n d
         (inside vals wt event + outside vals wt event) ^ n) := by
   have count : counting.sum (finer (valueWeight wt) [()] vals n s)
         (fun h => far (inside vals wt event) (outside vals wt event) d (seen event (coarse h))) =
-      Typicality.total (Typicality.courses n)
+      total (Typicality.courses n)
         (Typicality.offBy (inside vals wt event) (outside vals wt event) d) :=
     (sum_finer _ _ _ n s fun c =>
         far (inside vals wt event) (outside vals wt event) d (seen event c)).trans <|
@@ -423,7 +411,7 @@ theorem event_concentrated (vals : List V) (wt : V → Nat) (event : V → Bool)
       (inside vals wt event * u + outside vals wt event * v) ^ n * v ^ k := by
   have count : counting.sum (finer (valueWeight wt) [()] vals n s)
         (fun h => if k ≤ Typicality.ones (seen event (coarse h)) then 1 else 0) =
-      Typicality.total (Typicality.courses n)
+      total (Typicality.courses n)
         (Typicality.atLeast (inside vals wt event) (outside vals wt event) k) :=
     (sum_finer _ _ _ n s fun c => if k ≤ Typicality.ones (seen event c) then 1 else 0).trans <|
       (sum_event vals wt event n s _).trans
@@ -564,7 +552,7 @@ of steps in which each step weighs the sum of what its situations contribute, su
 of the courses over the finer courses, each with what its situations compose to, is summing it
 over the courses, each with its weight. -/
 theorem sum_finer_weights (W : Weights R) (count : S → A → S → Nat) (σ : S → A → S → Nat → R)
-    (weight : S → A → S → R) (sums : ∀ s a m, weight s a m = W.sum (upto (count s a m)) (σ s a m))
+    (weight : S → A → S → R) (sums : ∀ s a m, weight s a m = W.sum (Undecided.upto (count s a m)) (σ s a m))
     (moves : List A) (all : List S) : ∀ (n : Nat) (s : S) (g : List (A × S) → R),
       W.sum (finer count moves all n s) (fun h => W.mul (signs W σ s h) (g (coarse h))) =
         W.sum (courses moves all n) (fun c => W.mul (W.along weight (fun _ => W.one) s c) (g c))
@@ -581,7 +569,7 @@ theorem sum_finer_weights (W : Weights R) (count : S → A → S → Nat) (σ : 
           (congrArg (W.mul _) (sum_finer_weights W count σ weight sums moves all n x.2.1
             fun c => g ((x.1, x.2.1) :: c)))
     have each : ∀ p : A × S,
-        W.sum ((upto (count s p.1 p.2)).map fun k => (p.1, p.2, k))
+        W.sum ((Undecided.upto (count s p.1 p.2)).map fun k => (p.1, p.2, k))
             (fun x => W.mul (σ s x.1 x.2.1 x.2.2) (W.sum (courses moves all n)
               (fun c => W.mul (W.along weight (fun _ => W.one) x.2.1 c)
                 (g ((x.1, x.2.1) :: c))))) =
@@ -623,27 +611,27 @@ def both (weight : S → A → S → Nat × Nat) (s : S) (a : A) (m : S) : Nat :
   (weight s a m).1 + (weight s a m).2
 
 theorem sum_adding (P : Nat) : ∀ k, k ≤ P →
-    signed.sum (upto k) (fun k => if k < P then (1, 0) else (0, 1)) = (k, 0)
+    signed.sum (Undecided.upto k) (fun k => if k < P then (1, 0) else (0, 1)) = (k, 0)
   | 0, _ => rfl
   | k + 1, le => by
     show signed.add (if k < P then (1, 0) else (0, 1))
-      (signed.sum (upto k) (fun k => if k < P then (1, 0) else (0, 1))) = (k + 1, 0)
+      (signed.sum (Undecided.upto k) (fun k => if k < P then (1, 0) else (0, 1))) = (k + 1, 0)
     rw [if_pos (show k < P from le), sum_adding P k (Nat.le_of_succ_le le)]
     exact pair_eq (Nat.add_comm 1 k) rfl
 
 theorem sum_signed (P : Nat) : ∀ N,
-    signed.sum (upto (P + N)) (fun k => if k < P then (1, 0) else (0, 1)) = (P, N)
+    signed.sum (Undecided.upto (P + N)) (fun k => if k < P then (1, 0) else (0, 1)) = (P, N)
   | 0 => sum_adding P P (Nat.le_refl P)
   | N + 1 => by
     show signed.add (if P + N < P then (1, 0) else (0, 1))
-      (signed.sum (upto (P + N)) (fun k => if k < P then (1, 0) else (0, 1))) = (P, N + 1)
+      (signed.sum (Undecided.upto (P + N)) (fun k => if k < P then (1, 0) else (0, 1))) = (P, N + 1)
     rw [if_neg (fun lt => Nat.lt_irrefl P (Nat.lt_of_le_of_lt (Nat.le_add_right P N) lt)),
       sum_signed P N]
     exact pair_eq (Nat.zero_add P) (Nat.add_comm 1 N)
 
 /-- A signed weight is the sum of its situations. -/
 theorem signed_sums (weight : S → A → S → Nat × Nat) (s : S) (a : A) (m : S) :
-    weight s a m = signed.sum (upto (both weight s a m)) (sign weight s a m) :=
+    weight s a m = signed.sum (Undecided.upto (both weight s a m)) (sign weight s a m) :=
   (sum_signed (weight s a m).1 (weight s a m).2).symm
 
 /-- **Signed weights count signed situations.** The signed transfer is the sum, over the finer

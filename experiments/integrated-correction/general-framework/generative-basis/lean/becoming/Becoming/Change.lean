@@ -638,4 +638,10 @@ theorem nothing_arises : ∀ t f, ¬ web.Arises t f :=
 
 end Attrition
 
+/-- An amount at most another leaves no excess over it. -/
+theorem Flow.excess_zero_of_le : ∀ {a b : Nat}, a ≤ b → excess a b = 0
+  | 0, _, _ => rfl
+  | _ + 1, 0, le => absurd le (Nat.not_succ_le_zero _)
+  | a + 1, b + 1, le => Flow.excess_zero_of_le (a := a) (b := b) (Nat.le_of_succ_le_succ le)
+
 end Becoming

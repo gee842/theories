@@ -375,14 +375,6 @@ end Strength
 
 namespace Propagation
 
-/-- A step among the `N` steps from `T` is from `T` on and before `T + N`. -/
-theorem between_of_mem_steps : ∀ {T N j : Nat}, j ∈ steps T N → T ≤ j ∧ j < T + N
-  | T, N + 1, _, .head _ => ⟨Nat.le_refl T, Nat.lt_add_of_pos_right (Nat.succ_pos N)⟩
-  | T, N + 1, _, .tail _ mem =>
-    have inner := between_of_mem_steps mem
-    ⟨Nat.le_of_lt inner.1,
-     Nat.lt_of_lt_of_le inner.2 (Nat.le_of_eq (Nat.add_right_comm T 1 N))⟩
-
 /-- A step up to `t` is among the first `t + 1` steps. -/
 theorem mem_steps_upto {s t : Nat} (le : s ≤ t) : s ∈ steps 0 (t + 1) :=
   steps_of_within (Nat.zero_le s)

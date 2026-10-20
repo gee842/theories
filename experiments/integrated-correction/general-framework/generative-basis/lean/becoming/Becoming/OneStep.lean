@@ -121,25 +121,10 @@ variable {α β γ : Type} {F C : Type}
 
 /-! ## Lists and numbers -/
 
-/-- Two lists without repetition and with no member in common join without repetition. -/
-theorem distinct_append : ∀ {l m : List α}, Distinct l → Distinct m →
-    (∀ a, a ∈ l → ¬ a ∈ m) → Distinct (l ++ m)
-  | [], _, _, distinct, _ => distinct
-  | a :: l, _, ⟨fresh, distinctL⟩, distinctM, apart =>
-    ⟨fun mem => match mem_append_cases mem with
-      | .inl inside => fresh inside
-      | .inr outside => apart a (.head l) outside,
-     distinct_append distinctL distinctM fun b mem => apart b (.tail a mem)⟩
-
 theorem steps_succ_map (g : Nat → α) :
     ∀ T n, (steps (T + 1) n).map g = (steps T n).map fun i => g (i + 1)
   | _, 0 => rfl
   | T, n + 1 => congrArg (g (T + 1) :: ·) (steps_succ_map g (T + 1) n)
-
-theorem total_steps_succ (q : Nat → Nat) :
-    ∀ T n, total (steps (T + 1) n) q = total (steps T n) fun i => q (i + 1)
-  | _, 0 => rfl
-  | T, n + 1 => congrArg (q (T + 1) + ·) (total_steps_succ q (T + 1) n)
 
 theorem sign_eq_one : ∀ {n : Nat}, 0 < n → sign n = 1
   | 0, pos => absurd pos (Nat.lt_irrefl 0)
@@ -523,10 +508,7 @@ def Part.up : Part → Part
   | .outer => .outer
 
 /-- The passage at position `i`, idle beyond the list. -/
-def pick : List Passage → Nat → Passage
-  | [], _ => Passage.idle
-  | p :: _, 0 => p
-  | _ :: P, i + 1 => pick P i
+def pick : List Passage → Nat → Passage := Law.memberAt Passage.idle
 
 /-- The lesser of two numbers. -/
 def least : Nat → Nat → Nat
@@ -1500,17 +1482,6 @@ variable {α β γ : Type} {F C : Type}
 
 /-! ## Stretches of steps, split and shifted -/
 
-/-- A total over a stretch of `a + n` steps is the total over its first `a` steps with the total
-over the `n` after them. -/
-theorem total_steps_split (q : Nat → Nat) (T a : Nat) : ∀ n,
-    total (steps T (a + n)) q = total (steps T a) q + total (steps (T + a) n) q
-  | 0 => (Nat.add_zero _).symm
-  | n + 1 => (steps_last q T (a + n)).trans
-      ((congrArg (· + q (T + (a + n))) (total_steps_split q T a n)).trans
-        ((Nat.add_assoc _ _ _).trans (congrArg (total (steps T a) q + ·)
-          ((congrArg (total (steps (T + a) n) q + ·) (congrArg q (Nat.add_assoc T a n).symm)).trans
-            (steps_last q (T + a) n).symm))))
-
 /-- A total over a stretch starting later is the total over the stretch shifted back. -/
 theorem total_steps_shift (q : Nat → Nat) (c : Nat) : ∀ T n,
     total (steps (T + c) n) q = total (steps T n) fun m => q (m + c)
@@ -1575,14 +1546,9 @@ theorem least_cases : ∀ a b, (least a b = a ∧ a ≤ b) ∨ (least a b = b �
     | .inl ⟨same, le⟩ => .inl ⟨congrArg (· + 1) same, Nat.succ_le_succ le⟩
     | .inr ⟨same, le⟩ => .inr ⟨congrArg (· + 1) same, Nat.succ_le_succ le⟩
 
-theorem excess_of_le : ∀ {a b : Nat}, a ≤ b → excess a b = 0
-  | 0, _, _ => rfl
-  | _ + 1, 0, le => absurd le (Nat.not_succ_le_zero _)
-  | a + 1, b + 1, le => excess_of_le (a := a) (b := b) (Nat.le_of_succ_le_succ le)
-
 /-- What `a` exceeds `b` by, with `b`, is `a`, where `b ≤ a`. -/
 theorem add_excess {a b : Nat} (le : b ≤ a) : b + excess a b = a :=
-  (excess_balance b a).trans ((congrArg (a + ·) (excess_of_le le)).trans (Nat.add_zero a))
+  (excess_balance b a).trans ((congrArg (a + ·) (Flow.excess_zero_of_le le)).trans (Nat.add_zero a))
 
 theorem sign_le_sign {a b : Nat} (pos : 0 < a → 0 < b) : sign a ≤ sign b :=
   match a, b, pos with
@@ -1681,7 +1647,7 @@ theorem blocks : ∀ (bs : List Nat) (i : Nat),
       match i with
       | 0 => (congrArg (b * 1 + ·) (total_zero _)).trans (Nat.mul_one b)
       | i + 1 => (congrArg (· + _) (Nat.mul_zero b)).trans ((Nat.zero_add _).trans (blocks bs i))
-    (total_steps_split (fun m => hit (slot (b :: bs) m) i) 0 b (total bs fun x => x)).trans
+    (total_steps_add (fun m => hit (slot (b :: bs) m) i) 0 b (total bs fun x => x)).trans
       ((congr (congrArg (· + ·) first) second).trans tail)
 
 /-- What relatum `a` moves at member `i`: of the units laid out at once in the blocks `d` (one

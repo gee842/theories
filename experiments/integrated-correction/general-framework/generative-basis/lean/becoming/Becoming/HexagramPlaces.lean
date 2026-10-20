@@ -335,10 +335,7 @@ theorem halves_no_free_frame {A : Type} (P : Process Hexagram A) :
 /-! ## The configurations named in the passage map -/
 
 /-- The member of a list at an index counted from zero, all broken past its end. -/
-def nth : List Hexagram → Nat → Hexagram
-  | [], _ => allBroken
-  | s :: _, 0 => s
-  | _ :: l, n + 1 => nth l n
+def nth : List Hexagram → Nat → Hexagram := Law.memberAt allBroken
 
 /-- The configuration numbered `n` (1 to 64) in the received order. -/
 def number (n : Nat) : Hexagram := nth order (n - 1)

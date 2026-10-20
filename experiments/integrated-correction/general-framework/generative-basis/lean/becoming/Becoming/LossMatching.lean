@@ -41,22 +41,6 @@ namespace LossMatching
 
 variable {α β : Type}
 
-/-- Mapping a list by a function one to one on its members keeps it without repetition. -/
-theorem distinct_map_on {g : α → β} : ∀ {l : List α},
-    (∀ a b, a ∈ l → b ∈ l → g a = g b → a = b) → Distinct l → Distinct (l.map g)
-  | [], _, _ => trivial
-  | a :: l, inj, ⟨fresh, distinct⟩ =>
-    ⟨fun mem => match preimage_of_mem_map mem with
-      | ⟨x, inL, same⟩ =>
-        fresh (Eq.subst (motive := fun y => y ∈ l) (inj x a (.tail a inL) (.head l) same) inL),
-     distinct_map_on (fun x y mx my => inj x y (.tail a mx) (.tail a my)) distinct⟩
-
-theorem not_mem_middle {a : α} : ∀ {p q : List α}, Distinct (p ++ a :: q) → ¬ a ∈ p ++ q
-  | [], _, ⟨fresh, _⟩, mem => fresh mem
-  | _ :: p, q, ⟨fresh, distinct⟩, mem => match mem_cons_cases mem with
-    | .inl ax => fresh (Eq.subst (motive := fun y => y ∈ p ++ a :: q) ax (mem_middle p))
-    | .inr mem => not_mem_middle distinct mem
-
 /-- The total over a list with one member taken out of the middle. -/
 theorem total_middle (f : α → Nat) (a : α) (p q : List α) :
     total (p ++ a :: q) f = f a + total (p ++ q) f :=
@@ -297,7 +281,7 @@ theorem matching_of_counts [DecidableEq C] (κ : C → K) :
           have intoW : ∀ y, y ∈ p ++ q → y ∈ lw := fun y mem =>
             Eq.subst (motive := fun l => y ∈ l) split.symm (mem_insert mem)
           have notD : ∀ x, x ∈ lb → ¬ image x = d := fun x mem same =>
-            not_mem_middle middle (Eq.subst (motive := fun y => y ∈ p ++ q) same (maps x mem).1)
+            not_mem_of_middle middle (Eq.subst (motive := fun y => y ∈ p ++ q) same (maps x mem).1)
           ⟨fun x => if x = c then d else image x,
            fun x mem => match mem_cons_cases mem with
             | .inl same => Eq.subst (motive := fun y => y ∈ lw ∧ κ x = κ y) (if_pos same).symm

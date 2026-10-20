@@ -973,12 +973,6 @@ theorem holder_one : ∀ t, Shuttle.stands (Shuttle.holder t) t = 1
   | 1 => rfl
   | t + 2 => (Shuttle.stands_two (Shuttle.holder t) t).trans (holder_one t)
 
-/-- And stands at nothing after the step. -/
-theorem holder_after : ∀ t, Shuttle.stands (Shuttle.holder t) (t + 1) = 0
-  | 0 => rfl
-  | 1 => rfl
-  | t + 2 => (Shuttle.stands_two (Shuttle.holder t) (t + 1)).trans (holder_after t)
-
 end Exposed
 
 namespace Holding
@@ -1066,7 +1060,7 @@ theorem exposed_standing :
   ⟨standingCensus Exposed.census fun _ _ => Iff.rfl,
    fun t => show Shuttle.stands (Shuttle.holder t) t + 0 = 1 from Exposed.holder_one t,
    fun t => show Shuttle.stands (Shuttle.holder t) (t + 1) < Shuttle.stands (Shuttle.holder t) t
-     from Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt (Nat.le_of_eq (Exposed.holder_after t))
+     from Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt (Nat.le_of_eq (Shuttle.next_off t))
        Nat.zero_lt_one) (Nat.le_of_eq (Exposed.holder_one t).symm),
    fun ⟨all, _, every⟩ => Exposed.outside all (every _)⟩
 

@@ -35,12 +35,6 @@ open Generative
 
 namespace RouteTraces
 
-/-- A count at most another that is not zero leaves the other not zero. -/
-theorem nonzero_of_le : ∀ {a b : Nat}, a ≤ b → nonzero a = true → nonzero b = true
-  | 0, _, _, pos => Bool.noConfusion pos
-  | _ + 1, 0, le, _ => absurd le (Nat.not_succ_le_zero _)
-  | _ + 1, _ + 1, _, _ => rfl
-
 section Orders
 
 variable {S A : Type}

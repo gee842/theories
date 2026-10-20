@@ -625,12 +625,6 @@ end Between
 
 namespace HistorySums
 
-/-- A count at most another that is not zero leaves the other not zero. -/
-theorem nonzero_of_le : ∀ {a b : Nat}, a ≤ b → nonzero a = true → nonzero b = true
-  | 0, _, _, pos => Bool.noConfusion pos
-  | _ + 1, 0, le, _ => absurd le (Nat.not_succ_le_zero _)
-  | _ + 1, _ + 1, _, _ => rfl
-
 /-- A count of one alternative is at most the count of all. -/
 theorem le_sum_of_mem {α : Type u} {F : α → Nat} {x : α} :
     ∀ {l : List α}, x ∈ l → F x ≤ counting.sum l F
@@ -735,7 +729,7 @@ theorem exactly_trace (P : Process S A) (ground response : S → A → S → Nat
     ∃ as t, as.length = n ∧ Trace P s as t ∧ nonzero (f t) = true :=
   (counting_transfer_iff P (fun s a t => ground s a t + response s a t) reads moves all every_move
       every f n s).mp
-    (nonzero_of_le (exactly_le_transfer ground response moves all f i n s) pos)
+    (RouteTraces.nonzero_of_le (exactly_le_transfer ground response moves all f i n s) pos)
 
 /-- **Read as possibility, each exact order holds only along courses the process has.** -/
 theorem possibility_exactly_trace (P : Process S A) (ground response : S → A → S → Nat)

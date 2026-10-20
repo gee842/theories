@@ -983,12 +983,6 @@ theorem SelfLoop.always_carried (M D t : Nat) :
 theorem SelfLoop.onset (T : Nat) :
     SelfLoop.strengths (Nat.ble T) 1 = Closing.Onset.strengths T := rfl
 
-/-- So it carries the starting gap doubled at each step from `T`: `D * 2 ^ r` at `T + r`
-(`Closing.Onset.amount_after`). -/
-theorem SelfLoop.onset_amount (T D r : Nat) : Closing.Onset.amount T D (T + r) = D * 2 ^ r :=
-  (SelfLoop.carried_eq (Nat.ble T) 1 D (T + r)).trans
-    (congrArg (fun n => D * 2 ^ n) (count_from T r))
-
 end Frequency
 
 /-! ## For every law -/

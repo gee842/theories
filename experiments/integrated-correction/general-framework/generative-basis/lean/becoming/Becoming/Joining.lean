@@ -853,16 +853,10 @@ theorem common_refinement_of_em (em : ∀ p : Prop, Decided p) {J : Joining F} {
 
 /-! ### The joining read through retained references -/
 
-/-- The fragment at a slot of a configuration of retained fragments. -/
-def slot : List F → Nat → Option F
-  | [], _ => none
-  | a :: _, 0 => some a
-  | _ :: l, n + 1 => slot l n
-
 /-- The joining read through retained references: a configuration keeps every fragment formed, a
 move names two of its slots, and its outcome appends a fragment the two join into. -/
 def retainedFrame (J : Joining F) : Frame (List F) (Nat × Nat) Empty :=
-  ⟨⟨fun xs ij ys => ∃ a b z, slot xs ij.1 = some a ∧ slot xs ij.2 = some b ∧ J a b z ∧
+  ⟨⟨fun xs ij ys => ∃ a b z, Copying.nth xs ij.1 = some a ∧ Copying.nth xs ij.2 = some b ∧ J a b z ∧
       ys = xs ++ [z]⟩, fun _ c => nomatch c⟩
 
 /-- **A retained configuration keeps what it had**: along every course it is extended, by one
@@ -925,7 +919,7 @@ theorem retained_codes_apart {J : Joining F} {π : List F → K}
 references has listed outcomes. -/
 theorem FiniteOutcomes.retained_outcomes {J : Joining F} (finite : J.FiniteOutcomes) :
     ∀ xs ij, ∃ l : List (List F), ∀ ys, J.retainedFrame.P.step xs ij ys ↔ ys ∈ l
-  | xs, (i, j) => match at_i : slot xs i, at_j : slot xs j with
+  | xs, (i, j) => match at_i : Copying.nth xs i, at_j : Copying.nth xs j with
     | some a, some b => match finite a b with
       | ⟨zs, listed⟩ => ⟨zs.map (fun z => xs ++ [z]), fun _ =>
         ⟨fun ⟨_, _, z, at_a, at_b, joined, formed⟩ => by

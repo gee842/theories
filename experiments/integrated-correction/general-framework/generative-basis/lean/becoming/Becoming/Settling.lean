@@ -239,11 +239,6 @@ def consSeq {α : Type u} (x : α) (g : Nat → α) : Nat → α
   | 0 => x
   | k + 1 => g k
 
-/-- The actions of a path prefixed by a step. -/
-def consAct (a : A) (h : Nat → A) : Nat → A
-  | 0 => a
-  | k + 1 => h k
-
 /-- A finite path prefixed to configurations and actions admissible for `N` steps. -/
 theorem path_then {x y : S} {as : List A} (path : Trace P x as y) {N : Nat} {g : Nat → S}
     {h : Nat → A} (start : g 0 = y) (steps : ∀ k, k < N → P.step (g k) (h k) (g (k + 1))) :

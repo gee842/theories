@@ -40,11 +40,6 @@ section Refinement
 
 variable {X : Type u}
 
-/-- Members of a list pairwise apart under a relation: no member is related to a later one. -/
-def DistinctUnder (R : X → X → Prop) : List X → Prop
-  | [] => True
-  | x :: s => (∀ y, y ∈ s → ¬ R x y) ∧ DistinctUnder R s
-
 /-- Apart under a relation, members are apart under every relation it contains. -/
 theorem DistinctUnder.mono {R R' : X → X → Prop} (within : ∀ x y, R' x y → R x y) :
     ∀ {s : List X}, DistinctUnder R s → DistinctUnder R' s

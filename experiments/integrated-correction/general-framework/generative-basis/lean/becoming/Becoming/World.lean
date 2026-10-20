@@ -62,11 +62,6 @@ structure Flow (F C : Type) where
   take : Nat → F → C → Nat
   give : Nat → F → C → Nat
 
-/-- The total of a quantity over a finite list. -/
-def total {α : Type} : List α → (α → Nat) → Nat
-  | [], _ => 0
-  | a :: as, q => q a + total as q
-
 section Exchange
 
 variable {R : Type}

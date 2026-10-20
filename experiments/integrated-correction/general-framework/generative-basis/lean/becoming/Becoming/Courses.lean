@@ -106,9 +106,8 @@ unfolding's courses and not of a separate model.
   extends performs the task exactly when every member lacking it is extended by some member
   (`undominated_has_iff`).
 * **One notion, one definition.** The process in which every change is admitted is free branching
-  of `Becoming.Parting` (`anyChange_eq_free`, by definition), and the lists without repetition of
-  `Becoming.CrossSituational` are those of `Becoming.Population` on every list in `Type`
-  (`CrossSituational.distinct_iff`).
+  of `Becoming.Parting` (`anyChange_eq_free`, by definition); the lists without repetition are
+  one definition, `Distinct` of `Becoming.Prelude` (R37).
 
 No premise is added; the module changes no definition and every declaration has an empty axiom
 report. `Becoming.CoursesBridge`, outside the core, reads the comparison under every
@@ -744,7 +743,7 @@ theorem run_stays_iff {bears : A → Bool} {offers : A → M → Bool} {run : Ru
 resolves to `e` after the first `n` moves of a run exactly when `e` is in the repertoire, every
 bearing move offers it, and every other meaning is missing from some bearing move. -/
 theorem run_resolves_iff [DecidableEq M] (bears : A → Bool) (offers : A → M → Bool)
-    {rep : List M} (distinct : CrossSituational.Distinct rep) (run : Run P) (n : Nat) {e : M} :
+    {rep : List M} (distinct : Distinct rep) (run : Run P) (n : Nat) {e : M} :
     unique (candidates bears offers rep (run.window 0 n)) = some e ↔
       e ∈ rep ∧ (∀ a, a ∈ run.window 0 n → bears a = true → offers a e = true) ∧
         ∀ m, m ∈ rep → m ≠ e → ∃ a, a ∈ run.window 0 n ∧ bears a = true ∧ offers a m = false :=
@@ -758,7 +757,7 @@ out by some bearing move that no family world with that meaning explains. -/
 theorem run_resolves_explained_iff [DecidableEq M] {Wd : Type x} (bears : A → Bool)
     (offers : A → M → Bool) (family : Wd → Prop) (target : Wd → M) (explains : A → Wd → Prop)
     (offered : ∀ a m, offers a m = true ↔ ∃ w, family w ∧ target w = m ∧ explains a w)
-    {rep : List M} (distinct : CrossSituational.Distinct rep) (run : Run P) (n : Nat) {t : M} (available : t ∈ rep)
+    {rep : List M} (distinct : Distinct rep) (run : Run P) (n : Nat) {t : M} (available : t ∈ rep)
     (actual : ∀ a, a ∈ run.window 0 n → bears a = true →
       ∃ w, family w ∧ target w = t ∧ explains a w) :
     candidates bears offers rep (run.window 0 n) = [t] ↔
@@ -771,7 +770,7 @@ to `s` and grouping recovers the words, reading each group by resolution gives t
 the words of every course of words exactly when each word's records separate its meaning. -/
 theorem course_resolves_every_iff [DecidableEq M] {W : Type x} {R : Type y} (r : A → A → Bool)
     (word : W → List A) (meaning : W → M) (bears : List A → R → Bool) (offers : R → M → Bool)
-    {rep : List M} (distinct : CrossSituational.Distinct rep) (rs : List R) {s : S}
+    {rep : List M} (distinct : Distinct rep) (rs : List R) {s : S}
     (loops : ∀ w, Trace P s (word w) s)
     (segments : ∀ ws, Segmentation.chunks r (Segmentation.encode word ws) = ws.map word) :
     (∀ ws as, Trace P s as s → as = Segmentation.encode word ws →
@@ -952,17 +951,13 @@ theorem along_one {S : Type u} {A : Type v} (s : S) :
   | [] => rfl
   | p :: h => (congrArg (Nat.mul 1) (along_one p.2 h)).trans (Nat.mul_one 1)
 
-theorem counting_sum_one {α : Type u} : ∀ l : List α, counting.sum l (fun _ => 1) = l.length
-  | [] => rfl
-  | _ :: l => (congrArg (Nat.add 1) (counting_sum_one l)).trans (Nat.add_comm 1 l.length)
-
 /-- **Around the loop the courses double at every step, on courses.** The courses of `n` moves
 the sum over histories goes through are courses of the loop, and there are `2 ^ n` of them. -/
 theorem loop_courses_double (n : Nat) :
     (∀ h, h ∈ courses [true, false] [()] n → Trace loop () (h.map Prod.fst) ()) ∧
       (courses [true, false] [()] n).length = 2 ^ n :=
   ⟨fun h _ => loop_trace (h.map Prod.fst),
-   (counting_sum_one _).symm.trans ((Weights.sum_congr _ fun h _ => (along_one () h).symm).trans
+   (Situations.sum_one _).symm.trans ((Weights.sum_congr _ fun h _ => (along_one () h).symm).trans
      ((Weights.sum_courses (W := counting) (fun _ _ _ => 1) [true, false] [()] (fun _ => 1) n ()).trans
        (Weighted.Loop.courses_double n)))⟩
 
@@ -1096,16 +1091,6 @@ end Courses
 repetition for every universe; `Becoming.Population` states them for `Type`. This module sees
 both, and they agree. -/
 
-namespace CrossSituational
-
-/-- **Lists without repetition are one notion.** `CrossSituational.Distinct` is
-`Becoming.Distinct` on every list in `Type`. -/
-theorem distinct_iff {M : Type} : ∀ l : List M, Distinct l ↔ Becoming.Distinct l
-  | [] => Iff.rfl
-  | _ :: ms => ⟨fun ⟨out, rest⟩ => ⟨out, (distinct_iff ms).mp rest⟩,
-      fun ⟨out, rest⟩ => ⟨out, (distinct_iff ms).mpr rest⟩⟩
-
-end CrossSituational
 
 end Becoming
 

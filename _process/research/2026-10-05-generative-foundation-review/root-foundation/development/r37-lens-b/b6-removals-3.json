@@ -1,0 +1,9 @@
+{
+ "rows": [
+  {
+   "old": "Becoming.Law.le_of_mem_upto",
+   "new": "Becoming.le_of_mem_downFrom",
+   "why": "R37 B6: the same statement, one name"
+  }
+ ]
+}
