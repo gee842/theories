@@ -56,8 +56,8 @@ dense, with what the whole numbers supplied named as two premises.
   least loss, no Archimedean property, no totality and no decision. A strict fall leaves a
   configuration the amount never reads again (pigeonhole, `revisits_within`). So falls that recur
   need a reading no list holds, as the halving stock's values (`Halving.stock_unlisted`). Along a
-  run of every process held by a list (`Branching.rests_along_run`), a run loses nothing where the
-  process merges nothing and otherwise comes to rest.
+  run of every process held by a list (`Branching.rests_along_run`), a run's falls come to rest,
+  and where the process merges nothing it loses nothing at all.
 * **A part's merge, paid by the rest.** Read a whole's configurations by a part and a rest that
   together tell them apart. Under a law that merges nothing, possibilities no two alike stay so
   (`Law.Lossless.keeps_apart`), so `k` of them, their parts held by `ps` and their rests by `es`,
